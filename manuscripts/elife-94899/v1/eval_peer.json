@@ -1,0 +1,202 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C92"
+    ],
+    "result": "The study identified correlations between immune markers and HIV reservoir measures, with 69 variables showing unadjusted correlations (p<0.05), reducing to 31 for total HIV DNA, 3 for intact HIV DNA, and 4 for percentage intact after multiple comparison correction. The correlations were generally weak to moderate in magnitude (mean Spearman coefficients 0.31-0.35).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged these findings, noting that 'the spearman coefficients are ~0.3, (somewhat weak, and acknowledged as such)' and that 'despite the detailed experiments and methods, there was not a very strong signal.' The authors explicitly acknowledged this limitation, and reviewers accepted this characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C21",
+      "C22",
+      "C24",
+      "C26",
+      "C110",
+      "C112"
+    ],
+    "result": "Total HIV DNA frequency showed positive correlations with T cell activation/exhaustion markers and negative correlations with naive T cell frequencies. Immune parameters were more strongly associated with total HIV proviral frequencies than intact proviral frequencies, supporting that larger reservoirs are associated with immune activation and naive T cell depletion.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge these correlation findings. They noted that 'immune parameters were more strongly associated with total HIV proviral frequencies than intact proviral frequencies' and acknowledged the overall pattern, though emphasizing the weak magnitude of associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C25",
+      "C27",
+      "C113"
+    ],
+    "result": "CD127 expression on CD4 T cells showed unique association with the intact reservoir rather than total reservoir, with CD127- CD4 T cells positively correlated with intact but not total HIV DNA, and CD127+ cells showing stronger correlation with intact reservoir.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not question this finding. The manuscript identified this as a notable exception to the general pattern, and reviewers accepted it as 'certain markers were identified for further investigation,' acknowledging CD127 as one such marker.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The percentage of intact proviruses versus time on therapy exhibited a biphasic decay pattern with breakpoints at 1.6 and 9 years of ART. Early ART participants (0-6 years) showed high fractions of intact proviruses (50-90%), while after 6 years most had low fractions (0-30%).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge this finding. The biphasic decay pattern is consistent with previous reports cited in the manuscript, and the modeling approach was not questioned in the reviews.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "ROC curve analysis identified the most effective individual immune markers for classification, with AUC values ranging from 0.65-0.72. More variables achieved AUC >0.6 for total reservoir (44 variables) than intact reservoir (19 variables) or percent intact (23 variables).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not dispute these specific AUC values or the differential performance across reservoir measures. The findings align with the overall pattern of stronger associations with total versus intact reservoir that reviewers acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Decision tree models achieved 82-84% accuracy for classifying high versus low reservoir status using only 4-5 immune variables. The total HIV DNA tree used CD8 T frequency, CD4 nadir, %CD38+HLA-DR- CD8 T, and %NKG2A+ CD4 T to achieve 83.5% accuracy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers noted the models 'reach 70-80% prediction levels,' they expressed concern that 'categorical classification is for now hard to interpret' and questioned 'the value of categorical classification (vs continuous measurement) of reservoir size.' The high training accuracy may not reflect true predictive utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Machine learning models predicted with approximately 70% accuracy (test data) whether participants had high or low reservoir levels, with Logistic Regression performing best (69.31% for total, 65.17% for intact reservoir).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers noted that 'predictive models reach 70-80% prediction levels' but emphasized that 'the more powerful ML algorithms do not seem to outperform more classic regression methods' and that 'despite the attempt to leverage powerful ML algorithms, they are not magical and cannot reveal strong relationships that fundamentally do not exist.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C114"
+    ],
+    "result": "Unsupervised dimension reduction identified two distinct clusters of PWH with different reservoir and immune characteristics. Cluster 1 (n=50) had smaller total reservoir but higher percentage intact, while Cluster 2 (n=65) had larger total reservoir, lower percentage intact, more immune exhaustion markers, older age, and longer ART duration.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge the clustering analysis or its characterization. They acknowledged that 'unsupervised dimension reduction analysis identified two main clusters of PWH with distinct immune and reservoir characteristics' as part of the study's findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "LOCO inference analysis identified age and race as important covariates for several immunophenotypes, particularly naive and central memory T cell compartments and KLRG1. Biological sex was important for NK cell NKG2A expression, and HIV DNA frequencies were important predictors of specific immune phenotypes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not dispute these findings from the LOCO analysis. The identification of demographic and clinical variables as important covariates aligns with the study's comprehensive approach that reviewers acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "No significant differences in HIV reservoir size were observed based on biological sex or race.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge this finding. While they noted the cohort 'consists of mostly male participants, which could bias the results,' they did not dispute the reported lack of significant differences by sex or race.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C93",
+      "C94"
+    ],
+    "result": "The study has inherent limitations including its cross-sectional observational design, potential confounding bias, small cohort size for ML models, and sex bias (77% male).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly noted these limitations, stating 'the cohort is likely too small to generate accurate predictive ML models' and that it 'consists of mostly male participants, which could bias the results.' They also emphasized the cross-sectional nature and potential for confounding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The stronger relationship between immune phenotypes and total reservoir (versus intact reservoir) could be driven by defective proviruses promoting inflammation through innate sensing or greater transcriptional activity, or alternatively may reflect persistent pre-therapy immune damage rather than ongoing interactions during therapy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative interpretations that reviewers did not explicitly evaluate. The manuscript presents these as possible explanations requiring further investigation, and reviewers noted that 'an overall non-obvious relationship between immune markers and HIV reservoirs has been shown previously.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The findings suggest a complex interplay of immune recovery, HIV reservoir dynamics, and host factors shaping immunophenotype during ART, supporting a model where ongoing reservoir-immune interactions drive persistent CD4 T cell activation, with both intact and defective proviruses contributing.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers did not explicitly support or refute these interpretive conclusions. They noted the study shows 'an overall non-obvious relationship' and that 'it remains relatively hard to evaluate the utility of this kind of study,' suggesting uncertainty about the mechanistic interpretations.",
+    "result_type": "MAJOR"
+  }
+]

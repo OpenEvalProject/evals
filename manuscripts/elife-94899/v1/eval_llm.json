@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C108"
+    ],
+    "result": "The study cohort consisted of 115 participants with HIV infection on long-term ART (median 9 years), recruited from two clinical sites (Duke University and UNC Chapel Hill). The cohort was 77% male, 60% black, with a median age of 45 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C108 provide consistent demographic and clinical characteristics of the study cohort with specific quantitative measures. These are straightforward descriptive statistics directly reported from the data collection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The percentage of intact proviruses exhibited a biphasic decay pattern over time on ART, with breakpoints at 1.6 and 9 years. Early in treatment (0-6 years), participants showed high fractions of intact proviruses (50-90%), while after 6 years, most had low fractions (0-30%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 describe a coherent pattern of intact provirus decay supported by piece-wise linear modeling (R\u00b2=44.18% vs 16.3% for linear model) and visual inspection of Figure 1C. The biphasic pattern is consistent with cited prior work and the model fit improvement is substantial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C26"
+    ],
+    "result": "Total HIV DNA frequency was significantly correlated with multiple immune parameters: negatively with naive CD4/CD8 T cells and CD4/CD8 ratio, and positively with activation/exhaustion markers (NKG2A+, PD-1+, HLA-DR+ on CD4/CD8 T cells) and memory T cell subsets (Tcm, Tem). These findings support that larger reservoirs are associated with immune activation and naive T cell depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 and C26 report consistent correlations with appropriate statistical corrections (Benjamini-Hochberg FDR 5%, Table 2). While correlations are weak-to-moderate (mean |r|=0.31), they are statistically significant and biologically coherent. The inference in C26 is appropriately cautious given the correlative nature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C113"
+    ],
+    "result": "Immune parameters showed differential associations with intact versus total HIV DNA. CD127 expression on CD4 T cells was uniquely and more strongly correlated with intact (but not total) HIV DNA, while most other immune parameters showed stronger correlations with total HIV DNA. Percentage intact HIV DNA was negatively correlated with bifunctional HIV-specific CD4 T cell responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25, C27, and C113 identify a key differential pattern supported by Table 2 data. The CD127 finding (C25) is particularly notable as an exception to the general pattern (C24), with appropriate statistical support. This represents a novel observation warranting further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34"
+    ],
+    "result": "LOCO inference analysis identified age, race, and biological sex as important covariates for predicting specific immunophenotypes. Total and intact HIV DNA frequencies were important predictors for certain immune markers, while percentage intact HIV DNA contributed less to predictive power, likely due to correlation with years of ART.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 and C34 describe LOCO analysis results shown in Figure 2. The methodology is appropriate for assessing variable importance while accounting for confounders. The models show weak explanatory power (R\u00b2 range -11% to 35%), which is acknowledged, and the interpretation about percentage intact (C34) includes appropriate speculation about collinearity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "ROC curve analysis identified distinct immune markers for classifying high versus low reservoir characteristics. For total HIV DNA, top markers included %NKG2A+CD4 T (AUC=0.70) and %PD-1+Tn CD4 T (AUC=0.68). For intact HIV DNA, %CD127+ CD4 T (AUC=0.71) was most effective. More variables achieved AUC>0.6 for total (44) than intact (19) or percent intact (23) HIV DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 report ROC analysis results with specific AUC values from Figure 3. The differential performance across reservoir metrics is consistent with correlation analyses. AUC values are modest but above random (0.5), indicating some discriminatory ability. The pattern of more predictive variables for total vs intact reservoir is consistent throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C114"
+    ],
+    "result": "Unsupervised dimension reduction (PaCMAP) using total HIV DNA-associated features identified two distinct clusters of participants. Cluster 1 (n=50) had smaller total reservoirs but higher percentage intact, while Cluster 2 (n=65) had larger total reservoirs but lower percentage intact. Cluster 2 was characterized by older age, longer ART duration, lower CD4 nadir, lower naive T cells, and higher exhaustion markers. Cannabis users were enriched in Cluster 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 and C114 describe coherent clustering results shown in Figure 4. The clusters show statistically significant differences in reservoir characteristics (p<0.05) and multiple clinical/immune parameters. The clustering was only observed with total HIV DNA features, not intact or percent intact, which is an important specificity. The cannabis association (C46) is interesting but based on a subset with available data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Decision tree models (GOSDT) achieved >82% accuracy in classifying participants by reservoir characteristics using limited variables. Total HIV DNA classification used 4 variables (83.5% accuracy), intact HIV DNA used 5 variables (82.6% accuracy), and percentage intact used 4 variables (82.4% accuracy). Each model identified distinct combinations of immune and clinical parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 report decision tree performance with specific accuracy values and variables shown in Figure 5. The models are descriptive (trained on full dataset) rather than predictive, which is appropriately acknowledged. The accuracy levels are reasonable and the models show statistically significant separation between high/low groups (Mann-Whitney p<0.001 for all three).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Machine learning models predicted high versus low reservoir characteristics with approximately 70% test accuracy. Logistic Regression performed best for total HIV DNA (69.31% test accuracy) and intact HIV DNA (65.17% test accuracy). Models used combinations of immune and clinical parameters to achieve these predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 report ML prediction performance from Figure 6 using proper train-test splits (10 random splits). The ~70% accuracy is modest but above chance (50%) and represents genuine out-of-sample prediction. The authors appropriately acknowledge limitations due to sample size (n=115) and note that continuous prediction performed poorly (Figure 6 supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Spearman correlation analysis identified 69 host variables with unadjusted significant correlations (p<0.05) to HIV reservoir characteristics. After multiple comparison correction (Benjamini-Hochberg FDR 5%), 31 variables correlated with total HIV DNA, 3 with intact HIV DNA, and 4 with percentage intact. Correlations were generally weak to moderate in magnitude (mean |r|=0.31-0.35).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 report correlation analysis with appropriate multiple testing correction. The reduction from 69 to 31/3/4 significant variables after correction is expected and demonstrates proper statistical rigor. The acknowledgment of weak-to-moderate correlation magnitudes (C55) is important for interpretation and is consistent with the complex biology being studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "No significant differences in HIV reservoir characteristics were observed based on biological sex or race.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 reports negative findings referenced in Supplementary file 1a. This is an important null result given that sex and race were identified as important covariates for immunophenotypes in other analyses. The finding suggests reservoir size is not directly determined by these demographic factors, though they may influence immune responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The study has several acknowledged limitations: cross-sectional observational design susceptible to confounding, weak correlation magnitudes despite statistical significance, small sample size (n=115) limiting ML model accuracy, male bias (77%), potential confounding by pre-ART infection duration, restriction to chronic infection treatment, and analysis limited to peripheral blood rather than tissue reservoirs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C99 represent appropriate self-critical assessment of study limitations. The authors acknowledge key methodological constraints including study design (C90-C91), effect sizes (C92), sample characteristics (C93-C94), unmeasured confounders (C95-C97), and biological sampling limitations (C98-C99). This transparent discussion of limitations is essential for proper interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Study strengths include a highly detailed 25-color flow cytometry panel enabling high-resolution immune subset quantification, and use of IPDA to separately examine intact versus total HIV DNA. However, IPDA has limitations including potential failure to detect some sequences due to polymorphisms and inclusion of some defective proviruses due to limited amplicon specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 provide balanced assessment of methodological strengths and limitations. The flow panel detail (C101) and IPDA capability (C102) are genuine advantages over prior work. The IPDA limitations (C103-C104) are well-established in the literature (cited) and appropriately acknowledged, demonstrating awareness of assay constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The study findings suggest complex interactions between immune recovery, HIV reservoir dynamics, and host factors (age, sex) shape immunophenotype during long-term ART. Both intact and total proviral DNA were positively correlated with T cell activation/exhaustion, with total DNA showing stronger associations. Years of ART and bifunctional HIV-specific CD4 responses were negatively correlated with percentage intact proviruses. These findings support ongoing reservoir-immune system interactions during ART.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 and C110-C112 represent appropriate synthesis of the study's main findings. The inferences are cautious and acknowledge the correlative nature of the data (C106 notes associations are 'relatively minor'). The differential associations between total and intact reservoir (C112) is a consistent finding throughout multiple analyses. The conclusions are well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "NKG2A expression on CD4 T cells showed a novel correlation with total reservoir size. Only a small percentage (<1%) of CD4 T cells express NKG2A, and while NKG2A functions as an inhibitory receptor on NK and CD8 T cells, its role in CD4 T cells is unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 identify a novel finding with appropriate context. The correlation is statistically significant (Table 2) and identified as novel by the authors. The acknowledgment of uncertainty about biological significance (C78) and limited understanding of NKG2A function in CD4 T cells (C79) is appropriate given the small cell frequency and lack of mechanistic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors speculate that stronger associations of total versus intact reservoir with immune phenotypes could be driven by more numerous defective proviruses promoting inflammation through innate sensing or having greater transcriptional activity. Alternatively, this pattern may reflect persistent pre-therapy immune damage rather than ongoing reservoir-immune interactions during therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C82 are explicitly speculative hypotheses to explain observed patterns. While the speculation is reasonable and biologically plausible, no direct evidence is provided to test these mechanisms. The authors appropriately present alternative explanations (C82), acknowledging the limitation of inferring causality from correlative data. These remain hypotheses requiring future mechanistic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors provide biological context for the CD127 finding: CD127 (IL-7 receptor alpha) is expressed on long-lived memory T cells depleted during untreated HIV infection, increases slowly post-ART, is enriched in latent infection in tissues, and IL-7 is associated with slower reservoir decay. IL-7 signaling drives VLA-4 expression, which enriches for intact inducible proviruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 provide literature-based context (with appropriate citations) for interpreting the CD127 finding. These are established facts from prior work rather than new findings from this study. The synthesis helps explain why CD127 might uniquely associate with the intact reservoir, providing biological plausibility for the observed correlation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "The authors speculate that the two identified clusters may correspond to previously proposed reservoir types: smaller reservoirs enriched in Tcm cells with lower activation versus larger reservoirs enriched in Ttm cells with higher activation, though they could not directly test this hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C89 is explicitly speculative, connecting current findings to prior work (Chomont et al., 2009). While the parallel is interesting, the authors acknowledge they could not examine provirus frequencies within specific T cell subsets (Tcm vs Ttm) to test this hypothesis. The speculation is reasonable but remains unverified in this dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C100",
+      "C115"
+    ],
+    "result": "The authors suggest future work using single-cell RNAseq could reveal deeper associations invisible to surface marker analysis, and that the ML techniques described may be useful for analyzing high-dimensional data in HIV reservoir and other complex biology studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100 and C115 represent reasonable forward-looking statements about future research directions and methodological contributions. The suggestion for scRNAseq (C100) addresses acknowledged limitations of surface marker analysis. The claim about methodological utility (C115) is supported by the successful application of multiple ML approaches (dimension reduction, decision trees, predictive models) to this dataset.",
+    "result_type": "MINOR"
+  }
+]
