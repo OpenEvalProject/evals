@@ -1,0 +1,2070 @@
+{
+  "submission": {
+    "id": "de74ef69-4dfd-468f-82b7-56fb6c01aebb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:13:33.129609Z",
+    "updated_at": "2025-12-04T04:13:33.129609Z"
+  },
+  "content": [
+    {
+      "id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "submission_id": "de74ef69-4dfd-468f-82b7-56fb6c01aebb",
+      "content_type": "manuscript",
+      "content_text": "# Tempo and mode of gene expression evolution in the brain across primates\n\n## Authors\n\n- Katherine Rickelton<sup>1</sup> ([ORCID: 0000-0001-6059-7505](https://orcid.org/0000-0001-6059-7505)) \u2020\n- Trisha M Zintel<sup>1</sup>\n- Jason Pizzollo<sup>1</sup>\n- Emily Miller<sup>1</sup>\n- John J Ely<sup>3</sup>\n- Mary Ann Raghanti<sup>5</sup>\n- William D Hopkins<sup>6</sup>\n- Patrick R Hof<sup>7</sup>\n- Chet C Sherwood<sup>3</sup>\n- Amy L Bauernfeind<sup>9</sup> ([ORCID: 0000-0001-8518-3819](https://orcid.org/0000-0001-8518-3819))\n- Courtney C Babbitt<sup>1</sup> ([ORCID: 0000-0001-8793-4364](https://orcid.org/0000-0001-8793-4364)) \u2020\n\n### Affiliations\n\n1. Department of Biology, University of Massachusetts Amherst Amherst United States ([ROR:0072zz521](https://ror.org/0072zz521))\n2. Molecular and Cellular Biology Graduate Program, University of Massachusetts Amherst Amherst United States ([ROR:0072zz521](https://ror.org/0072zz521))\n3. Department of Anthropology and Center for the Advanced Study of Human Paleobiology, The George Washington University Washington United States ([ROR:00y4zzh67](https://ror.org/00y4zzh67))\n4. MAEBIOS Epidemiology Unit Alamogordo United States\n5. Department of Anthropology, School of Biomedical Sciences, and Brain Health Research Institute, Kent State University Kent United States ([ROR:049pfb863](https://ror.org/049pfb863))\n6. Department of Comparative Medicine, Michale E. Keeling Center for Comparative Medicine,The University of Texas M D Anderson Cancer Centre Bastrop United States ([ROR:04twxam07](https://ror.org/04twxam07))\n7. New York Consortium in Evolutionary Primatology New York United States ([ROR:03p65m515](https://ror.org/03p65m515))\n8. Nash Family Department of Neuroscience and Friedman Brain Institute, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))\n9. Department of Neuroscience, Washington University School of Medicine St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))\n10. Department of Anthropology, Washington University in St. Louis St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPrimate evolution has led to a remarkable diversity of behavioral specializations and pronounced brain size variation among species (Barton, 2012; DeCasien and Higham, 2019; Powell et al., 2017). Gene expression provides a promising opportunity for studying the molecular basis of brain evolution, but it has been explored in very few primate species to date (e.g. Khaitovich et al., 2005; Khrameeva et al., 2020; Ma et al., 2022; Somel et al., 2009). To understand the landscape of gene expression evolution across the primate lineage, we generated and analyzed RNA-seq data from four brain regions in an unprecedented eighteen species. Here, we show a remarkable level of variation in gene expression among hominid species, including humans and chimpanzees, despite their relatively recent divergence time from other primates. We found that individual genes display a wide range of expression dynamics across evolutionary time reflective of the diverse selection pressures acting on genes within primate brain tissue. Using our samples that represent a 190-fold difference in primate brain size, we identified genes with variation in expression most correlated with brain size. Our study extensively broadens the phylogenetic context of what is known about the molecular evolution of the brain across primates and identifies novel candidate genes for the study of genetic regulation of brain evolution.\n\n## Introduction\n\nPrimates are distinguished from other mammals by their large brains relative to body size (Boddy et al., 2012; Martin, 1981; Smaers et al., 2021). Among the diversity of primate species, there is remarkable variation in behavioral specializations, including differences in social structure, spatial, dietary and visual ecology, and locomotion (Powell et al., 2017; Barton, 2012; DeCasien and Higham, 2019). Despite the impressive array of cognitive attributes displayed by primates, molecular and cellular studies investigating various aspects of brain evolution tend to sample from a small number of species to address questions of how humans are unique. In large part, the emphasis on human brain evolution is warranted. Humans are unmatched in possessing exceptionally large brains and unparalleled cognitive abilities, such as language (Konopka and Roberts, 2016; Rilling, 2014). While valuable, the limited number of species included in prior research lacks a comprehensive perspective of the phylogenetic context in which the human brain evolved within the diversity of primates.\n\nAlthough researchers have used a variety of approaches to assess whether the human brain is unique (Stout and Hecht, 2017) and how it might have evolved (Hrvoj-Mihic et al., 2013; Sousa et al., 2017a), the full potential for using gene expression to evaluate patterns of brain evolution in primates has not yet been met. Upon observing the remarkable similarity between human and chimpanzee protein sequences, King and Wilson, 1975 proposed that the basis of the physical and behavioral phenotypic differences between these two species must be found in changes within gene regulatory regions that drive expression. Previous studies have explored how changes in regulatory regions can influence gene expression but have often sampled various organs from species across broad spans of evolutionary time, such as mammals or vertebrates (Brawand et al., 2011; Breschi et al., 2016). In studies focusing on gene expression in primate brain tissues, research has mostly focused on the neocortex and cerebellum in human, chimpanzee, and rhesus macaque (Babbitt et al., 2010; Blekhman et al., 2010; Khaitovich et al., 2005; Khaitovich et al., 2004; Khrameeva et al., 2020; Konopka et al., 2012; Ma et al., 2022; Somel et al., 2009; Sousa et al., 2017b). However, new insights can be gained by sampling at greater neuroanatomical resolution from a broader array of primates. Examining gene expression of the brain from a more comprehensive landscape empowers novel inquiry in primate brain evolution, including questions pertaining to the sources of variation that drive expression differences, rates of expression change across the primate phylogenetic tree, and genes that correlate with brain size across primates.\n\nIn the current study, we sampled prefrontal cortex (PFC), primary visual cortex (V1), hippocampus (HIP), and lateral cerebellum (CBL) from 18 primate species, the broadest diversity of primates sampled in any study of gene expression in the brain to date, including species from several rarely-studied lineages. Our dataset represents 70\u201390 million years (Perelman et al., 2011) of primate evolution, providing a more thorough understanding of the evolution of gene expression across primates and allowing for an unprecedented view of how gene expression in the brain has changed over time across all major clades of primate phylogeny.\n\n## Results\n\n### Most variation can be explained at the species level, not by brain region\n\nTo understand how gene expression in the brain has evolved across the primate lineage, we generated and analyzed RNA-seq data from 18 primate species (including five hominoids, four cercopithecoids, four platyrrhines, and five strepsirrhines, with 1\u20133 biological replicates) across four brain regions, including PFC, V1, HIP, and CBL (Figure 1, Supplementary file 1). The transcriptomes and gene models were assembled de novo (Haas et al., 2013) (see Materials and methods). We quantified the expression of 15,017 orthologs within hominoids, and 3432 on-to-one orthologs across all 18 species (Supplementary files 2 and 3). Variation in interspecific mammalian gene expression has been shown to be less pronounced than that observed across samples from different organs, reflecting the diversity of underlying organ physiology (Brawand et al., 2011; Sudmant et al., 2015). Furthermore, it has been reported that the rate of gene expression divergence evolved more slowly within the cerebral cortex and cerebellum compared to other organ systems from developmentally distinct germ layers (Brawand et al., 2011; Khaitovich et al., 2005). To explore the variability of gene expression from distinct regions of the brain across our broad sampling of primates, we constructed a pairwise distance matrix of the 500 most variable protein-coding genes based on the standard deviation of expression across samples (Methods). This subset of genes was enriched with glycoproteins, signal peptides, and plasma membrane proteins, with roles in immune function, molecular trafficking, and cell signaling. Using this distance matrix, we performed a principal coordinates analysis (PCoA) on data from all brain regions. Because our samples represent disparate regions of the same organ, we expected less variation to be attributed to brain regions than primate species or taxa, reflecting the similarity in physiology of brain tissues. Unsurprisingly, the variation from our complex gene expression dataset is represented across multiple axes of the PCoA (Supplementary file 4).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70276/elife-70276-fig1-v2.jpg)\n\n**Figure 1.:** The scale bar for the branch lengths represents 10 million years of evolution. The phylogenetic tree is a consensus tree of 1000 iterations produced from 10kTrees v.3 (https://10ktrees.nunn-lab.org) based on data from GenBank. The insets demonstrate the approximate locations of the four brain regions sampled on a coronal section, midsagittal view, and lateral view (displayed left to right, respectively) of a schematized adult human brain.\n\nWe plotted the first three axes and created polygons around data derived from samples sharing a common taxa (Figure 2a\u2013c) or region (Figure 2d\u2013f). As predicted, taxon assignment explains a large amount of variation to the dataset, with clear trends emerging independent of brain region. We find the greatest divergence in expression patterns among hominoid and strepsirrhine species, while there is more similarity observed among cercopithecoids and platyrrhines. The hominoids, displaying the greatest level of diversity of any primate phylogenetic group, demonstrate variation that is particularly apparent along Axis 1 and largely driven by human and chimpanzee expression patterns (Figure 2A, B). Strepsirrhines also exhibit a large amount of variation, especially apparent along Axis 2, which can mostly be attributed to the three species of lorises. When Axis 1 and 2 of the PCoA are plotted on the same bivariate plot (Figure 2a), the hominoids display more variation than the strepsirrhines by about 24% (Supplementary file 5). However, a large portion of the variation in the strepsirrhines is attributed to evolutionary divergence over about 63 million years (since the last common ancestor of lemurs and lorises), whereas the variation within hominoids has largely accrued over only 9 million years (since humans and chimpanzees shared an ancestor with gorillas). The hominoid and strepsirrhine samples represent similar variation in terms of sex and life stage, suggesting that these factors do not account for the variability seen in these taxa. Therefore, a remarkable finding of this analysis is how much variation is represented by hominoids, despite the fact that this lineage represents a much shorter evolutionary divergence time.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70276/elife-70276-fig2-v2.jpg)\n\n**Figure 2.:** The first three axes of a principal coordinates analysis (PCoA) are plotted in both rows but have different symbols and colors to emphasize expression patterns specific to taxa (upper row, a\u2013c) and regions (lower row, d-f). Polygons in each plot surround the data points for taxa (upper row) and regions (lower row). Axes 1, 2, and 3 represent 12.8, 10.3, and 9.4% of variance, respectively.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70276/elife-70276-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** This is the same plot as Figure 2 of the main text except here each species is plotted as a different color.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70276/elife-70276-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The phenogram was constructed from neighboring-joining tree estimation based on log2 fold-change distances of the 500 most variable genes based on standard deviation (the same distance matrix that constructed the principal coordinates analysis (PCoA)). Reproducibility of the nodes of the tree were estimated using a bootstrap analysis of 1000 iterations. Species common names are color-coded to indicate taxa (hominoid, pink; cercopithecoid, green; platyrrhine, blue; strepsirrhine, gray).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70276/elife-70276-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The phenograms were constructed using the same techniques as Supplementary data Figure 2. Species common names are color-coded to indicate taxa (hominoid, pink; cercopithecoid, green; platyrrhine, blue; strepsirrhine, gray).\n\n### The cerebellum differs most significantly from the other three sampled brain regions\n\nWe observed trends in gene expression by brain region that are predominantly seen along Axis 3 (Figure 2e\u2013f). Here, we observe that the variation attributed to CBL is distinguished from that of PFC, V1, and HIP, which are very similar in their distributions. The fact that CBL differs in its pattern of gene expression from other brain regions (Hawrylycz et al., 2015; Hawrylycz et al., 2012; It\u00f5, 2012) is not surprising given that it is the only sampled region that develops from a different part of the embryonic neural tube (namely, the hindbrain vs. forebrain) and exhibits a neuronal packing density (predominantly glutamatergic granule cells) that far exceeds these other brain regions (Azevedo et al., 2009; Herculano-Houzel, 2011; Ito\u0304, 2012). Enrichments for cerebellar gene expression reveal expression changes to categories such as \u2018Cell Surface Receptor Signaling Pathway,\u2019 \u2018Cell Projection Organization,\u2019 and \u2018Wnt Signaling Pathway.\u2019 This is true for humans in relation to chimpanzees as well as other species with deeper evolutionary relationships. (Supplementary files 6 and 7). Notably, genes involved in cell migration and cell surface receptor signaling Emera et al., 2016 have been shown to mediate the cell-cell interactions necessary for axon guidance (Koropouli and Kolodkin, 2014). Although all the brain regions surveyed show some enrichment for categories related to cell signaling, the cerebellum shows a unique increase in signaling activity-related terms (both in the number of enrichment categories and the degree of change associated with these categories). This is indicative of region-specific differential expression.\n\n### Gene expression profiles accurately replicate phylogenetic relationships\n\nTo determine whether gene expression profiles can reconstruct known phylogenetic relationships among primates, we built expression phenograms (Methods) for all brain regions combined (Figure 2\u2014figure supplement 2) and each region separately (Figure 2\u2014figure supplement 3). Samples that were derived from individuals of the same species tended to be grouped together, regardless of brain region, revealing that inter-individual differences are minor compared to other sources of variation. Gene expression profiles also replicated the phylogenetic relationships of closely related species (e.g. humans and chimpanzees; pig-tailed and rhesus macaques) when all regions were considered, but these relationships became less phylogenetically structured in the phenograms constructed using expression data from individual brain regions. All neighbor-joining phenograms accurately represent cercopithecoids and strepsirrhines as monophyletic groups; however, expression data produces paraphyletic groups of hominoid and platyrrhine species. This result potentially reflects the fact that taxa with longer periods of independent evolution (i.e. strepsirrhines) are more likely to show divergent patterns of gene expression than more closely related groups. Meanwhile, a more dense sampling of cercopithecoids (three individuals per species), permits a fairly accurate reconstruction of this taxon.\n\n### Differential expression in the context of the Ornstein-Uhlenbeck model\n\nPrevious studies have used a variety of different approaches to model gene expression changes over time (Brawand et al., 2011; Perry et al., 2012). Here, we used a recently described Ornstein\u2013Uhlenbeck (OU) model to analyze neutral and conserved processes as determined by changing gene expression levels (Chen et al., 2019). OU processes have been proposed to model gene expression evolution as they model both drift and stabilizing selection (Rohlfs et al., 2014). Previous studies have shown how models that incorporate stabilizing selection are more accurately able to predict gene expression evolution in mammals than models that account only for neutral drift (Chen et al., 2019). Across all expressed one-to-one orthologs represented in the sampled primates, we found that ~15\u201320% of genes show differential expression across all species-to-species comparisons (q-value <0.05). As expected, the relative amount of differential expression increases over evolutionary time, both between species and clades (Figure 3 and Figure 3\u2014figure supplement 1 ). However, both the species and clade-wise comparisons show larger numbers of differentially expressed (DE) genes in the comparisons when strepsirrhines are included in the contrast, a result of the more than 60 million years of independent evolution of this taxon. In the prefrontal cortex, we see slightly smaller DE in humans as compared to siamang and baboon; however, in total number, this DE is not appreciably different (DE Human-Siamang n=251, DE Human-Baboon n=255) to other comparisons (DE Human-Rhesus Macaque n=315). Upset plots allow us to further analyze these unique patterns of differential expression (Figure 3\u2014figure supplement 2). In the cerebellum, the lemur, baboon, and human samples are particularly unique and show relatively higher levels of DE compared to other species. However, in the hippocampus, visual cortex, and prefrontal cortex, the chimpanzees appear to show higher DE than the human samples. This suggests again that the cerebellum is a particularly unique brain structure and that chimpanzee gene expression is significantly different in the other three brain regions studied, warranting further analysis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70276/elife-70276-fig3-v2.jpg)\n\n**Figure 3.:** Each row represents one of the four brain regions examined. The size of the circle represents the number of DE genes seen at q<0.05 (5% FDR). The comparisons on the left are between exemplar species or sets of species, comparisons on the right are between clades of primates.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70276/elife-70276-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The plot shows how each species\u2019 expression patterns (rhesus macaque, baboon, and lemur) correlate with the DEGs of human and chimpanzee (yellow and green, respectively) samples for each brain region.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70276/elife-70276-fig3-figsupp2-v2.jpg)\n\n### Human-specific enrichment for metabolic processes, neural development, and gene regulation\n\nWhen comparing gene expression in the PFC of humans relative to other primates, human PFC shows an enrichment of metabolic processes, including \u2018regulation of cellular metabolic process\u2019 and \u2018regulation of macromolecule metabolic process\u2019 (Supplementary files 6 and 7). Comparing human and chimpanzee PFC reveals that categories that support neural growth and development (e.g. \u2018neuron projection morphogenesis,\u2019 \u2018cell morphogenesis involved in neuron differentiation\u2019), gene regulation, and metabolic processes are enriched as differentially expressed in human PFC relative to chimpanzees.\n\nIn addition to examining human and chimpanzee data in isolation, we also analyzed human-specific changes in expression within the context of other outgroup species. Using the Ornstein-Uhlenbeck process as a model of continuous trait evolution across our 18-species primate phylogeny, we again observe similar categories of enriched processes for the human prefrontal cortex in comparison to that of chimpanzees. These terms include \u2018Nervous System Development,\u2019 \u2018Neurogenesis,\u2019 \u2018Glial Cell Differentiation,\u2019 \u2018Neuron Projection Morphogenesis,\u2019 \u2018Regulation of Gene Expression,\u2019 and \u2018Metabolism.\u2019 To further validate our results, we also looked at the human PFC in comparison to other primate species. In analyzing differential expression between the human and siamang PFC, we note that similar trends for enrichment are also found, such as \u2018Neural Growth and Development\u2019 and \u2018Metabolic Processes,\u2019 and \u2018Gene Regulation.\u2019 Of interest, under the category of \u2018Positive Regulation of Transcription by RNA polymerase II\u2019 we find several genes that appear to be upregulated in humans compared to siamang: APP (amyloid precursor protein, related to plaque formation in Alzheimer\u2019s disease) as well as PRKN (found to be causal in Parkinson\u2019s disease) (Funayama et al., 2023). This supports the idea that these enrichments are human-specific, have relevance to important human neurodegenerative disease states, and are not a reflection of changes occurring within the chimpanzee lineage.\n\n### Broader species comparisons show similar trends across evolutionary time\n\nBeyond human and chimpanzee comparisons, we also note many interesting broader temporal trends observed from the EVEE-based differential expression analysis. When examining Hominini (humans and chimpanzees) compared to other Great Apes, terms related to \u2018Regulation of Metabolic Process,\u2019 \u2018Nervous System Development,\u2019 and \u2018Biosynthetic processes\u2019 are all enriched within the hippocampus. Meanwhile, \u2018Negative Regulation of Synaptic Transmission\u2019 was enriched in the other ape species. In comparing the PFC of the Hominoid clade to that of the Strepsirrhine clade, we found that \u2018Neuron Development and Differentiation\u2019 was enriched. Overall, among various species and clade comparisons, there is a general trend of decreasing specificity in enrichment categories over increasing evolutionary time. Using PFC data, we found that the relationship between humans and chimpanzees, some of the closest relatives in our dataset, shows terms related to \u2018Synapse Assembly,\u2019 \u2018Regulation of Glial Cell Differentiation,\u2019 \u2018Regulation of Astrocyte Differentiation,\u2019 \u2018Axonogenesis,\u2019 and \u2018Neuron Projection Morphogenesis.\u2019 Looking at a more distantly related species pair, the human and rhesus macaque comparison shows enrichment for terms related to \u2018Cell Growth,\u2019 \u2018Cell Development,\u2019 \u2018Biological Regulation,\u2019 \u2018Neuron Projection Development,\u2019 \u2018Regulation of Neurogenesis,\u2019 and \u2018Positive Regulation of RNA Biosynthetic Processes.\u2019 The most distantly related species, humans and lemurs, have overall the largest number of differentially expressed genes, and with that, the broadest categories of enrichment. These include categories such as \u2018Regulation of Developmental Processes,\u2019 \u2018Regulation of Nervous System Development,\u2019 \u2018Cell Development,\u2019 and \u2018Multicellular Organism Development\u2019.\n\nOur PCoA analyses showed that gene expression in brain regions sampled from the lorises (i.e. the slender loris, slow loris, and pygmy slow loris) diverged from other strepsirrhines, and other primates more generally (Figure 2\u2014figure supplement 1). When strepsirrhines are compared to other primates in differential expression analyses, transcription factors, and other genes involved in gene transcription and translation and multiple biosynthetic pathways involved in cellular metabolism are among the categories of DE genes (Supplementary files 6 and 7).\n\n### Evolutionary rates of expression change across clades and brain regions\n\nUsing the OU model, we found that individual genes exhibit wide variation in expression dynamics across the primate lineage (Figure 4a). Enrichments for genes showing low variation or stabilizing selection (q=0.05) reveal categories related to transport and cellular localization (GO Biological Processes, Supplementary files 6 and 7). In contrast, genes that are less constrained or neutrally evolving (q>0.05) have a number of processes related to neuron morphogenesis, plasticity, and cell death. Yet, unlike sequence evolution, gene expression is not linear across evolutionary time but a saturation point in pairwise comparisons of gene expression is reached due to stabilizing selection pressures. Here, we find that pairwise expression differences between humans and the other species increasingly diverge with evolutionary distance in all brain regions sampled (Figure 4b); however, these pairwise comparisons do not seem to saturate with evolutionary time across the primate comparisons (Chen et al., 2019). We note that the saturation of pairwise expression differences from humans may be found at a phylogenetic node ancestral to primates (Figure 3\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70276/elife-70276-fig4-v2.jpg)\n\n**Figure 4.:** a. Exemplar genes that show constraint (left panel) and variation (right panel) across primates (colors as in Figure 2). b. Mean squared expression difference plotted by evolutionary distance to humans across all orthologs that were expressed. Shapes denote the four brain regions, and the colors represent the four major primate clades represented in our samples.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70276/elife-70276-fig4-figsupp1-v2.jpg)\n\n### Expression of a majority of genes evolves under stabilizing selection\n\nWe utilized EVEE-tools, developed in the context of the Ornstein-Uhlenbeck process of continuous trait evolution, to classify genes as primarily under the effects of stabilizing selection vs. a model of neutral drift (Chen et al., 2019). In this analysis, we found that across tissues, on average, 64% of genes fit better under stabilizing selection (64% CBL, 59% HIP, 72% PFC, and 60% V1; FDR-corrected q-value calculated via the BH procedure to correct for multiple hypothesis testing; FDR threshold of 5% to determine significance). In the context of the OU model of continuous trait evolution, we found that the overall phylogenetic signal in brain expression divergence was slightly smaller than observed with edgeR over the entire combined dataset (EVEE: 4\u20136.7% across all single species comparisons using a logFC of +/-2; edgeR: 15\u201320%). However, the relative amount of differential expression does increase gradually with evolutionary distance (as expected based on results in edgeR). The only exception to this is the human and chimpanzee comparison, which shows considerable variation in differential expression across the four brain regions. Representing such a short period of evolutionary divergence, this increase in DE suggests direction selection within that lineage.\n\n### Evidence of potential directional selection in human and chimpanzee data\n\nTo better understand the outlier gene expression in this dataset, and overall to gain insight into genes that may be subject to directional selection pressures, we again used the EVEE-tools OU-based model to score our dataset for outlier expression. This requires the determination of the evolutionary mean and variance for each gene across our entire expression dataset, from which we then can compare to individual species expression data. Using this method, we found a small subset of genes to be defined as having an expression that deviates from the optimal OU-distribution (Z-score >2 or < \u20132, p-value <0.05) (Figure 4Figure 4\u2014figure supplement 1). It is important to note that a significant FDR (<5%) was not reached in this dataset, among all species comparisons. This is expected based on previous applications of this package, in which a mammalian dataset was also unable to reach an FDR below 18% (Chen et al., 2019). This is likely a reflection of the limitations of our phylogeny, and suggests that future projects should aim to sample even more broadly.\n\nIn our outlier expression analysis, we found that patterns of outlier gene expression occur in a species and tissue-specific manner (Supplementary file 10). For example, in the PFC, the chimpanzee and marmoset samples appear to have the highest number of outlier genes deviating from average expression patterns (compared to human, siamang, baboon, rhesus macaque, and marmoset samples). We found this to be true regardless of how the dataset was normalized in order to determine the average expression for each gene (via defining a reference species). This is particularly interesting and, in combination with differential expression analysis, highlights the chimpanzee PFC as a particularly divergent structure. In contrast to the PFC, outlier analysis in the CBL reveals that the human and lemur samples have the highest number of outlier genes.\n\nUpon gene set category enrichment analysis, we find that many of these genes that are deemed \u2018outliers\u2019 are related to functions in development, transcription, nervous system development, neurogenesis, and metabolism. For example, the chimpanzee PFC shows a significant upregulation in genes involved in energy storage and transfer, such as ETFA and NDUFS4, which are both involved in electron transport for ATP generation, as well as ANKH, implicated in phosphate transport (Szeri et al., 2020; Henriques et al., 2021; Shil et al., 2021) We also see that the chimpanzee PFC shows unique expression patterns in genes related to synaptic activity and neurotransmitter release, including significant downregulation of GABRA4 and SYN1 (Fassio et al., 2011; Fan et al., 2020 Fan et al., 2020; Fassio et al., 2011). In contrast, the human CBL and PFC both display a significant upregulation of genes related to Amyloid protein production (APP), a major component of many neurodegenerative diseases with functions in synaptic signaling (O\u2019Brien and Wong, 2011). Unique to the human CBL we also see enrichments in genes related to neurogenesis and synaptic activity, including SDK1, FZD5, and CDH10 (Redies et al., 2012; Slater et al., 2013; Bagot et al., 2016) This is suggestive of directional selection pressures occurring in a tissue-specific manner and encourages future investigation of these outlier genes.\n\n### Implications of using humans as a reference species\n\nWe continue to use humans as a reference species in these analyses as, compared with other primates, humans have exceptionally large brain sizes and unique cognitive abilities. However, we do recognize that there are some implications for having humans as a reference, especially given our data that would suggest human gene expression as being largely different from the rest of our primate dataset. To address this, we repeated analyses using EVEE-tools by including two additional reference species: siamang and rhesus macaque. The percentage of genes that fit better under the model of stabilizing selection (in comparison to neutral drift) is not statistically different from those observed when using humans as a reference (on average, 58\u201364% across all four major brain regions). We additionally looked at pairwise species comparisons to determine if the general trends of directional selection and differential gene expression were comparable to the human-reference data, and again confirmed that the effects of the reference species used for normalization here are negligible in terms of analyzing differential expression across our primate tree.\n\n### Correlation of gene expression to brain size and their change over evolutionary time\n\nBecause an increase in absolute brain size is one of the most striking characteristics of humans, we asked what subset of genes is correlated with this important biological trait across the primate tree. Our dataset provides a unique opportunity to evaluate this question, since the average brain size across our study species varies by ~190 fold. Using multivariate analysis (Methods), we defined gene lists most strongly correlated with brain size in each brain region (Supplementary file 8). Results indicate that the same genes rank among those with the strongest positive correlation in PFC, V1, and HIP. CBL also shares some of these same genes but includes more variation among the genes most strongly correlated to overall brain size than the other three brain regions (Figure 5, Supplementary file 9), potentially reflecting the more recent expansion of the CBL relative to the rest of the neocortex (Miller et al., 2019; Smaers et al., 2018).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/70276/elife-70276-fig5-v2.jpg)\n\n**Figure 5.:** A clustering and heatmap of the loadings from PC2 of genes for the four regions examined (V1, HIP, PFC, and CBL).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70276/elife-70276-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Symbols delineate the current study\u2019s tissue samples from primary cell data. Colors distinguish cell type or brain region. Tissue-level human samples from all regions do not exhibit biased expression for either neurons or astrocytes.\n\n## Discussion\n\nWe performed RNA-seq on four brain regions from 18 primate species, representing the broadest sampling for any gene expression study in primate brain tissue to date. Through more representative sampling of primate species, we found substantial variation in gene expression levels within the hominoid and strepsirrhine lineages, with the diversity among hominoids particularly impressive due to the recent divergence of this taxon. Using the OU model, we found that a substantial proportion of genes showed differential expression across species. The relative amount of differential expression increased over evolutionary time, both between species and clades. Additionally, when comparing gene expression across broader species and clade comparisons, we observed trends related to brain development, nervous system regulation, and cellular metabolism.\n\nOur findings point to human-specific enrichment for metabolic processes, neural development, and gene regulation. The considerable diversity of gene expression in human and chimpanzee brain tissue has profound implications for understanding the distinct evolutionary processes that have acted upon the brains of the ancestral species of these two lineages. We observed a wide variety of expression dynamics of individual genes in the pairwise comparisons of humans to other primate species. Enrichments for genes under stabilizing selection indicated processes related to transport and cellular localization, while less constrained genes were associated with neuron morphogenesis, plasticity, and cell death. Importantly, gene expression evolution did follow a linear pattern, but did not reach a saturation point due to stabilizing selection pressures as seen in other studies (Chen et al., 2019). Less constrained, neutrally evolving patterns appeared to be the most prevalent pattern in each brain region studied, preventing a saturation point of stabilizing pressures to be reached within Primates with increased phylogenetic distance from humans. Lastly, we identified genes that are correlated with brain size across all major primate taxa, providing candidates for further inquiry.\n\nOur deeper analysis of gene expression has revealed evolutionary patterns that were inaccessible with a more limited sampling of primate brain tissue. We anticipate that the candidate genes and data provided by this study will serve as a resource for many other lines of inquiry into human and non-human primate brain evolution.\n\n## Materials and methods\n\n### Biological sample collection and RNA extraction\n\nThe sample includes brain tissue from human and nonhuman primates. All samples were obtained from adult individuals free from known neurological disease. If available, the right hemisphere was preferentially sampled. Human brain samples were obtained from the National Institute for Child Health and Human Development Brain and Tissue Bank for Developmental Disorders at the University of Maryland (Baltimore, MD). Chimpanzee brain tissue was obtained from the National Chimpanzee Brain Resource (https://www.chimpanzeebrain.org, supported by NIH grant NS092988). All other sources of brain tissue are listed in Supplementary file 1.\n\nFrom each individual, we sampled four regions of the brain, including PFC, V1, HIP, and CBL. PFC was sampled from the frontal pole, corresponding to Brodmann\u2019s area 10 in humans. In other primates, the PFC region sampled more broadly encompassed prefrontal cortical areas but was limited to the most anteriorly projecting part of the frontal pole. All V1 samples were dissected around the calcarine sulcus to include primary visual cortex (Brodmann\u2019s area 17). Samples from both PFC and V1 contained all cortical layers and a small amount of underlying white matter (<10%). The HIP was sampled from the medial aspect of the temporal lobe and included all hippocampal subfields. The CBL was sampled from the most laterally projecting region of lateral hemisphere in all primates. In humans, the CBL region corresponded to Crus I or Crus II. CBL samples contained all layers of cerebellar cortex and a small amount of underlying white matter (<10%). Each sample was briefly homogenized using a Tissuelyzer (Qiagen), and the total RNA was isolated using an RNAeasy kit (Qiagen) with a DnaseI treatment.\n\n### Library preparation and sequencing\n\nSingle-end RNA-seq libraries were made using the NEBNext mRNA Library Prep Reagent Set for Illumina. Libraries were prepared in batches of 4\u20138 samples of randomly sampled species and brain regions. Library sizes were checked on the Bioanalyzer (Agilent). RNA-seq libraries were multiplexed on the NextSeq500 (Illumina) in the Genomics Resource Laboratory at the University of Massachusetts Amherst, also randomly distributed across NextSeq500 runs. All fastq files have been submitted to the SRA: https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA639850.\n\n### Mapping and transcriptome analysis\n\nSequencing reads were assembled into species-specific transcriptomes (containing the reads from all four brain regions) using Trinity (Grabherr et al., 2011). With Trinity assembly, fragments of the original RNA reads for each species are compiled and clustered into groups based on sequence similarity, which eventually are extended to reconstruct full-length transcripts (Grabherr et al., 2011). These transcripts were then blasted against the human blast nt database, with the alignment thresholds for the top hits from different clades listed in Supplementary file 2, similar to the approach in Perry et al., 2012. Individual libraries were then mapped to the species-specific transcriptome using bowtie (Langmead et al., 2009) in RSEM, and count tables were generated using RSEM (Li and Dewey, 2011). Orthology assignments were additionally checked using the Ensemble one-to-one orthology alignments as a guide for the subset of species with a publicly available genome. Transcriptome quality was assessed using BUSCO to determine assembly and annotation completeness (Seppey et al., 2019), Supplementary file 3. We recognize that some of the species transcriptomes show relatively lower BUSCO completeness scores (namely the Slender Loris at 35.8% complete). We hypothesize that this is likely a reflection of the limited tissue sampling in this dataset of only brain tissue. Previous studies have shown that transcriptome assemblies from single tissue regions on average have lower completeness scores than assemblies composed of reads from a variety of tissue types (Sim\u00e3o et al., 2015). This is likely a reflection of tissue-specific gene expression. As evidence of this, we further analyzed reads deemed as \u2018missing\u2019 by BUSCO and found that many of these showed little to no expression across the human brain (Uhl\u00e9n et al., 2015) and Human Protein Atlas proteinatlas.org. We do not make any major conclusions about the Loris species in this manuscript and thus do not believe these BUSCO scores significantly affect the conclusions made in this manuscript. We only consider Loris data in concert with Lemurs, which by comparison have much more complete transcriptomes.\n\n### Distance-based data analyses (PCoA and phenograms)\n\nWe performed principal coordinates analyses (PCoA) based on a pairwise distance matrix of all 137 samples. The distance matrix was comprised of the top 500 most variably expressed protein-coding genes. Pairwise distances were calculated by leading log2 fold change, providing a symmetrical representation of the expression ratio centered around 0 (i.e. log2(2)=1 while log2(0.5) = \u20131) (Robinson et al., 2010). Creating the distance matrix and plotting the PCoA were performed using the plotMDS.DGElist function (based in limma) in the edgeR package in R. Although variation is represented across more than 20 axes (Supplementary file 4), the first three axes were plotted to compare patterns across primate taxa and brain region sampled (Figure 2, Figure 2\u2014figure supplements 1\u20133). Polygons overlap the data points representing taxa or brain region. The area of each polygon was computed using functions in the sp package of R. The chull() function was used to define the points around the perimeter of each polygon, and the Polygon() function calculated the area of each. Relative areas of each polygon are listed in Supplementary file 5. Figure 3 displays the same data as the PCoA but uses an array of colors allowing the data from each individual species to be visualized.\n\nThe same log2 fold change distance matrix was then used to create phenograms representing the similarity of gene expression profiles among samples. The minimum distance neighbor-joining function in the \u2018ape\u2019 package of R created a tree based on the method proposed by Saitou and Nei, 1987. The boot.phylo function estimated the reliability of given nodes of the tree by resampling over 1000 iterations. Although our objective in this analysis was to investigate patterns of evolution across the primate order and the brain regions, our sample included multiple individuals from the same species. By treating these samples separately, our analyses represent both within- and between-species variability in gene expression over time.\n\n#### Analyzing differential expression\n\nCounts were filtered and normalized using edgeR (Robinson et al., 2010), with any multispecies comparisons using the GLM functionality (McCarthy et al., 2012). Gene Ontology enrichments were performed using the DAVID gene ontology tool 6.8 (Huang et al., 2009a; Huang et al., 2009b) and g:Profiler (Reimand et al., 2016). Supplementary files 6 and 7 shows results from ordered g:profiler enrichments (g:GOSt) performed on DE genes where q<0.05 (note, this is not ranked on polarity of expression, just absolute change) with all genes expressed in this study used as background.\n\nDifferential Expression was also analyzed using the package EVEE-tools to incorporate the Ornstein-Uhlenbeck model (Chen et al., 2019). Evolutionary means and variance values were calculated for each gene across the entire phylogeny for individual brain-region datasets as well as the entire RNA-seq bulk dataset in the context of the Ornstein-Uhlenbeck model. Differential expression was determined using a multivariate OU model. Regimes were defined by species/clades of interest (i.e. in human vs. chimpanzee comparisons, the human samples represent one regime in one model to compare to all other samples, represented by a second regime. In comparison, the chimpanzee samples would be represented as an additional model and a separate regime.) p-values were calculated to represent the fit of each OU model (i.e. Human or Chimp-specific expression patterns) against a Brownian motion model. These were then corrected for multiple hypothesis testing using the Benjamini-Hochberg FDR procedure. We used an FDR threshold of 0.05 to define significance. Additionally, Akaike and Bayesian Information Criterion (AIC and BIC) scores were calculated for each gene for each model, and only genes with AIC and BIC scores significant against the null were considered in further analysis. Directionality of differential expression was further determined by comparing estimated mean expression levels for each regime in each model.\n\nWe also looked at differential expression beyond pairwise comparisons, again using EVEE-tools, to see how each individual species differed across the entire dataset. With this, one species of interest was treated as a single regime while all 17 other species were grouped as a second regime. The same criteria as above were used to determine significant differential expression, and this data was utilized to construct UpSet plots using the UpsetR package (Conway et al., 2017). We included only relevant species in these UpSet plots (representing each major primate clade) to simplify the graphs. Each graph is also separated by brain region, similar to previous analyses (Figure 3\u2014figure supplement 2).\n\nWe also analyzed sources of variation in our data to determine how significant of an effect species differences have compared to other factors, including primate families and individual variation. For this, we conducted a correlation analysis utilizing the non-parametric Mann-Whitney U (MWU) test on the differentially expressed genes between humans and chimpanzees to other primate species. We focused this analysis on only those species with three individuals per brain region (olive baboon, rhesus macaque, and lemurs). Using the set of human-chimpanzee DEGs, we calculated the Spearman rank-based correlation coefficient between each species to either human or chimpanzee expression. We determined whether or not these correlation coefficients were significantly different across species and across brain regions using the Mann-Whitney U test. We determined that there was no significant correlation between any of the three species to human or chimpanzee expression in any of the four brain regions (Figure 3\u2014figure supplement 1; Yapar et al., 2021). This suggests that the expression profiles of these more distantly related primates are equally similar to human and chimpanzee expression patterns. We also conducted additional Analysis of Covariates (ANCOVA) to confirm that other factors, namely age and sex, were not significant sources of variation in our gene expression analyses. These analyses, along with our PCoA plots, show that taxon identity and brain region are the two most significant determinants for DE. Additionally, differences in samples from the same individual are defined by differences at the level of brain region. ANCOVA analyses showed minor residual effects that we deemed as random and were not further analyzed for the purposes of this manuscript.\n\nOutlier expression was determined using the scoreGenes.R script from the EVEE-Tools script suite (Chen et al., 2019). We compared the total dataset-normalized mean expression of a single gene to that of a single select species, in the context of the overall mean expression and variance across the dataset. We specifically analyzed outlier expression in a brain region-specific manner, looking at the datasets subset by individual brain region. To normalize the expression of the entire dataset, a single species was selected to be used as a reference in TMM normalization. For all outlier analyses except for humans, the human samples were used as a reference. For the human outlier analysis, the rhesus samples were used as a reference for normalization. Importantly, we tested the use of different reference species for dataset normalization and did not find a significant difference in the number of outlier genes and the enrichment categories associated. Z-scores were calculated for genes whose expression patterns fit an OU model (in comparison to the null model of Brownian Motion) and whose evolutionary mean is above 5 CPM for the entire dataset (Chen et al., 2019). In order to determine significant outliers, an FDR threshold of 0.05 was again employed, however at this level limited significance was found. Supplementary file 10 shows the results of this analysis for the CBL and PFC brain regions.\n\n### Phylogenetic and evolutionary distance analysis\n\nCategorical enrichments for the contrasts between species and clades are in Supplementary file 6. The phylogenetic tree for primates was downloaded from the UCSC Genome Browser (30 primate species) (Kent et al., 2002). Distances between species were extracted using the Environment for Tree Exploration Toolkit (Huerta-Cepas et al., 2010). The residuals and mean squared expression differences of all orthologs across 18 species were found using the package EVEE (Chen et al., 2019), and in all contrasts, humans were used as the reference species. We then analyzed the subset of genes showing either broadly defined conserved (low) or neutral (higher) variation across species (low <q = 0.05, high q>0.05), with categorical enrichments for these two groups in Supplementary file 7.\n\n### Comparisons of the heterogenous tissues used and single-cell gene expression data\n\nIn any study that derives results from homogenized tissue samples, the composition heterogeneity of the samples may drive differences in gene expression (Montgomery and Mank, 2016). To address this issue, we compared the expression of our tissue samples to recent studies that have performed single-cell RNA-seq on neurons and astrocytes. RNA-seq data from primary neurons and astrocytes were obtained from NCBI\u2019s Gene Expression Omnibus (GEO) and processed in the same manner as the tissue samples for all human samples. These included four hippocampal astrocytes, four cortical astrocytes, and one cortical neuron from Zhang et al., 2016 (GEO accession number GSE73721) and three pyramidal neuron samples isolated from an unspecified brain region by the ENCODE project (ENCODE Project Consortium, 2012; Davis et al., 2018) (accession numbers GSM2071331, GSM2071332, and GSM2071418). Only genes with counts greater than zero in all samples and (CPM)>1 in all 23 samples were included in this analysis (n=7111). A PCoA was made from a distance matrix of the top 500 most variably expressed genes by the pairwise biological coefficient of variation (method = \u201cbcv\u201d) across samples (Robinson et al., 2010). Creating the distance matrix and plotting the PCoA were performed using the plotMDS.DGElistfunction in the edgeR package in R. The PCoA of our human samples in comparison to primary neurons and astrocytes suggests that our heterogeneous tissue samples are not biased to contain more neurons or astrocytes as compared to each other (i.e. one tissue is not biased within this small sample set) (Figure 5\u2014figure supplement 1), and is consistent with other neural cell and brain tissue comparisons (Khrameeva et al., 2020).\n\nAdditionally, prior knowledge of variation across primates in cell type composition of the brain is informative in interpreting bulk RNA-seq data. It is well known that neuron densities tend to decrease as brain size increases (Sherwood et al., 2020). This suggests that larger brains accommodate a smaller number of neurons per unit volume compared to smaller brains. However, it is interesting to note that other structural elements, such as astrocytes (Munger et al., 2022), microglia (Dos Santos et al., 2020), and synapses (Sherwood et al., 2020), exhibit a relatively invariant density per unit volume across species. Despite changes in brain size, these essential components involved in neural communication and support maintain a consistent presence, emphasizing their crucial role in brain function regardless of the species' brain size. Thus, based on this previous research, in cross-species comparisons of bulk tissue, we can tentatively interpret differences in gene expression to reflect generally similar proportions of major cell types, except for neurons, which are expected to decrease in proportion with larger brain sizes.\n\n### Brain size analyses\n\nAverage species endocranial volumes (ECVs) were obtained primarily from Kamilar and Cooper, 2013 and Isler et al., 2008 from the mean of male and female volumes. ECVs were used since reliable brain size data does not exist for all species samples. The data for human ECV (also averaged from male and female data points) was previously published by Coqueugniot and Hublin, 2012. Isler et al., 2008 reported a minimal error when ECV was transformed to brain mass using the correction factor of 1.036 g/ml (Stephan, 1960), and we used this conversion to obtain brain mass estimates from ECVs for all species (Supplementary file 8).\n\nWithin each brain region, we performed a PCA on the species average gene expression of the 500 most variable genes by standard deviation, using the prcomp function in R. For each regional PCA, 14 PCs were required to account for about 90% of the variance in gene expression. We performed multiple regression analyses to determine which of the PCs could predict brain size. Using all 14 PCs accounted for at least 95% of the variation in each brain region. Akaike information criterion was applied. However, it was noted that for each brain region, PC2 was the most predictive of brain size by low (regional adjusted R2 values for PC2 against brain size were: PFC, 0.42; V1, 0.56; HIP, 0.50; CBL, 0.36). The 500 genes and their loadings on PC2 are listed in Supplementary file 9. Across the four sampled regions, we find general uniformity in the extent to which individual genes affect brain size, but the cerebellum displays the most unique signature of the regions sampled (Figure 5).\n",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "89ccb937-60a1-4441-907f-af265a51409e",
+      "submission_id": "de74ef69-4dfd-468f-82b7-56fb6c01aebb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jenny Tung, https://ror.org/00py81415 Duke University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70276.sa0](https://doi.org/10.7554/eLife.70276.sa0)\n\nThis is an important study that represents a significant contribution to our understanding of how gene expression in the primate brain has evolved across the extant primate phylogeny. It provides solid evidence for potential links between gene expression variation and brain size, although these are somewhat limited by the focus only on adult brains, since many key changes likely occur during development. Nevertheless, both the taxonomically broad data set and the analysis are likely to be of broad interest to the evolutionary biology, anthropology, and comparative neuroscience communities.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jenny Tung, https://ror.org/00py81415 Duke University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70276.sa1](https://doi.org/10.7554/eLife.70276.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Tempo and mode of gene expression evolution in the brain across Primates\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Patricia Wittkopp as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Mehmet Somel (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Control for phylogenetic structure in analyzing gene expression changes across the phylogeny, especially in association with brain size. Strongly consider whether phylogenetically informed analysis methods provide greater insight (and reduce the potential for confounding) over pairwise comparisons, especially given advantages afforded by broad sampling across the primate order.\n\n2) Provide key missing detail on criteria for defining orthologues; demonstrate robustness of results to decisions about cut-offs (e.g., for defining highly variable genes) and cell type compositional heterogeneity between species.\n\n3) Address methodological questions raised by the reviewers regarding multiple hypothesis testing correction and enrichment analyses.\n\n4) Test human-specific changes in expression in relationship to outgroup species as well as chimpanzee.\n\nReviewer #1 (Recommendations for the authors):\n\n1. Trinity output is extremely noisy and returns many isoforms with poor support, or virtually undistinguishable from each other except for a couple of base pairs here and there, especially when run in a de novo mode. How did the authors prioritise the many isoforms, and determine which are credible and worth analysing further? Similarly, since many of the primates lack a reference genome, how did the authors define the set of 3432 testable one-on-one isoforms, or the 15017 genes testable across hominoids? Is it simply on the basis of pairwise orthology to human using BLAST or\u2026? Did the authors control for gene duplication (eg reciprocal BLAST)? In addition, the thresholds for orthology seem very permissive, on the basis of overall coding sequence conservation amongst mammalian species (eg see supp Figure 1B of Chen et al. 2019, where mean coding sequence identity between humans and non-primate one-to-one orthologs is ~85%).\n\n2. Many conclusions are based on data from the top 500 most variable genes (generally defined on the basis of SD, but not always \u2013 the sanity check against scRNA from astrocytes and neurons uses CoV). Why 500? How robust are all of the results presented to this choice of threshold? Is there a particular species driving this variance (on the basis of PCoA results I dare speculate it's chimpanzees and humans)? How do these observations (PCoA, phenograms) compare to those made on the entire dataset of 3432 testable genes across the entire dataset? It seems to me that the number of genes in the whole data set is not so large as to be worth focusing only on an arbitrarily chosen threshold, and that it would be more informative to consider the entire dataset in these analyses. Similarly, when looking at positive selection, the authors only focus on the top 200 genes DE between human and chimpanzee. Why these limitations?\n\n3. The authors test the possibility that compositional heterogenity across samples may be biasing their results (line 723 onwards), which I commend, but nonetheless find somewhat incomplete as it currently stands. The only test performed is a comparison of human bulk RNA samples to a small number of astrocyte and neuron RNA-seq samples, which they say proves their tissues are not biased towards either cell type. But combining bulk RNA and scRNA data is not trivial, and since the PCoA shows samples clustering by technology/study (I presume the outlier neuron comes from the same dataset as the astroctyes), it's unclear how to interpret it. Regardless, there's no mention of what I think is the more interesting source of heterogeneity: is there an expectation that the composition of the same tissue type would vary substantially between species? e.g., an excess of, say, glia in the PFC of humans relative to lemurs or loris that could skew results (totally hypothetical example)? I am not sure if this is possible to taste with existing datasets, but it seems to at least be worth discussing?\n\n4. DE testing: As above, I would like to see more detail in the methods here to better contextualise the results. First, I do not think CPM is the accurate unit for comparison here, since it does not control for differences in gene length between species, which may be substantial at some of the orthology thresholds set by the authors \u2013 RPKM might be better suited. Second, how many genes were testable between each of the comparisons summarised by figure 3? Was this testing done using in a pairwise fashion, using all genes testable between the pair of species being compared (as suggested by line 190), or using a single model matrix with many different contrasts to leverage information across the entire data set? Altough the latter represents a substantial trade off in terms of testable genes, might provide additional insights in terms of polarising results and perhaps even pinpointing the emergence of expression divergence through the tree for specific genes or families. Since subsequent analyses focus primarily on genes identified as DE between human and chimp, I think it would be worth delving a bit more here into the broader temporal trends, or by comparing other interesting pairs of primates.\n\n5. Evolutionary mode of expression levels: as mentioned above, I think the authors do themselves a disservice by not examining their data deeply, eg, by not placing results in a broader evolutionary context or clearly distinguishing between genes that appear to evolve neutrally vs those that exhibit other trends (are there any?). I think this is where the potential of the dataset most shines, and so I strongly encourage the authors to examine the EVEE output in greater detail and see if there's anything interesting hiding in there, although I am cognisant that this might fall outside the scope of the manuscript as they see it, and thus leave it up to them to decide what to do. Nonetheless, some possible questions: can the authors tease out genes evolving under positive selection or showing bursts of accelerated evolution from the overwhelming sea of neutrality? While it's obvious why the authors choose to focus on humans, is anything interesting happening in any other primate lineage?\n\n6. Brain size and positive selection: the authors use mean expression within a species for PCA this time around, as opposed to just all available data points \u2013 but it seems to me that this might obscure some trends? Again, the reason for focusing on humans in these sections is obvious \u2013 the change in brain size between human and chimp is monumental \u2013 but I wonder if this obscures more subtle signals in the data.\n\nReviewer #2 (Recommendations for the authors):\n\nHaving commended the authors for compiling this remarkable dataset, I need to share a number of concerns, with regards to data analyses and also interpretation.\n\n1) In general, the analyses and interpretation alternate between investigating general patterns of evolutionary divergence across primate brain regions, and investigating human-specific expression divergence (e.g. Figure 3 is human-based). It may be better to separate the two questions and the analyses used to address them. The authors could start by quantifying the overall phylogenetic signal in brain expression divergence, e.g. using the Chen et al. 2018 model.\n\nIn general, I think that performing pairwise DE tests makes little sense with such data (except for cases where specific hypotheses are tested). It would be preferable if the authors studied human-specific expression changes also within an OU-based phylogenetic model that can also incorporate lineage-specific positive selection (e.g. https://doi.org/10.1093/sysbio/syv042).\n\nAlso, in analyses about human-specific expression changes, the authors should preferably rely on gene sets which show human-specific upregulation relative to chimpanzees and outgroup species, not just DE gene sets between human and chimpanzee, especially if they wish to interpret the results in the context of other observations (e.g. human-specific positive selection in promoters of semaphorin genes, or increased white matter connectivity).\n\n2) Regarding the analyses on expression patterns correlated with brain size expansions, I would suggest to use some type of phylogenetic residuals analysis, because both brain size and expression will reflect phylogenetic relatedness. So, no surprise that the same genes show correlation across brain regions.\n\nMoreover, it is not clear if the gene list presented in Table 1 and discussed in detail is indeed of statistical significance \u2013 multiple testing correction has not been applied.\n\n3) A large number of expression changes may be driven by changes in cell type composition, especially in evolutionary time. At least there should be some discussion on this point in the main text.\n\nCurrently the only mention is the supplement, and the content is suboptimal \u2013 human brain region bulk transcriptome profiles are compared with cell type-specific transcriptomes of neurons and astrocytes, whereas it is still highly possible that DE genes across species reflect changes in composition. This could be studied explicitly: e.g. https://www.biorxiv.org/content/10.1101/010553v2.\n\n4) Humans are used as reference species in a large number of analyses, but the motivation and rationale behind this is not explained. In fact for questions about general expression divergence in the brain, humans may not be a good reference.\n\n5) Many methodological details are lacking, including crucial information on RNA-seq data quality, how different gene sets were defined, and motivations behind different cutoff choices used, etc. Overall rewriting of methods would be helpful.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Tempo and mode of gene expression evolution in the brain across Primates\" for further consideration by eLife. Your revised article has been evaluated by George Perry (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved in the revision process, and both reviewers note their appreciation for your responsiveness to the previous round of reviews. I am therefore returning it so that you can address some final issues regarding methodological clarity identified by Reviewer 1, and to give you the opportunity to fix some errors identified by Reviewer 2. In addition, I noticed that even though you have removed the analysis of positive selection on regulatory regions from the manuscript, it is still referenced in your abstract--so please do a thorough read-through for consistency throughout.\n\nReviewer #1 (Recommendations for the authors):\n\nI thank the authors for their reply to my comments and the accompanying revisions and additional details \u2013 it's good to see this paper again, as I remain impressed by the dataset and by the scope of the questions the authors are hoping to address.\n\nMy responses focus primarily on the points they have addressed in this revision, to avoid dragging this process on forever; I have tried hard to ask only for clarifications, or the absolute minimum, when I have asked for something new. As last time, most of my questions center on methods, so I've brought those to the top, but in all cases, they're requests for additional detail, not for things to be repeated or rerun, so despite the length of the comments I hope they're not too onerous.\n\n1. Trinity output: I would still like a bit more detail on this. Did the authors simply take the best scoring match to a given human gene from the blastnt search? Were there any controls for length or similar? The BUSCO scores are a welcome addition, but some of them are quite low, so additional clarity would be good to help understand what was done. Please note that I am not saying 'redo everything with different thresholds,' but I think more detail would be valuable in parsing the surprisingly low number of genes with data \u2013 if 50-70% of the transcriptome is evolving under stabilising selection, but that only covers the 3000 testable genes with one-to-one orthology across the clade, that's actually not a lot of genes at all\u2026\n\n2. PCoA etc: I thank the authors for the additional detail, but I confess I am a bit confused as to how they did what they have done. Line 476 (and 570 for the scRNA data) states that the distance metric is based on log2 fold change distances and that it was generated with plotMDS, but that is not what plotMDS does (plotMDS, by the way, is a limma function, not an edgeR function; limma is loaded in the background when edgeR is loaded). As per the Limma manual, \"The distance between each pair of samples (columns) is the root-mean-square deviation (Euclidean distance) for the top genes. Distances on the plot can be interpreted as leading log2-fold-change, meaning the typical (root-mean-square) log2-fold-change between the samples for the genes that distinguish those samples.\"\n\nIf this is not what was done and the authors used a different approach to calculating the distance matrix, why was this done, and how should it be interpreted, especially in light of figure 2? Are the trends reported in this figure (and associated supplements) contingent on the distance metric choice?\n\n3. DE testing methods: It's not clear from the text whether any additional covariates (eg known covariates such as sex or age of the individuals, batches even though they were randomised,) were included in the model or whether samples from the same individual were treated as random effects. As above, I am not asking for a redo at this point, but I think it is important to state these details clearly to ensure reproducibility.\n\n4. Outlier detection: It's not clear to me how this works, from the text (especially as it suggests the opposite of that is described in the response to my original comment). The authors first calculate a mean and sd, and then choose humans as a reference species against which to make comparisons. Does this mean that an outlier gene between humans and chimps is an outlier in the chimpanzee lineage? How can it be an outlier in the human lineage if the human is the reference? I do really appreciate the authors for discussing (line 351) the implications of using humans as the reference, given the general evolutionary shifts we naively expect in the human brain, but in that case, can the data please be included as a supplement?\n\nOther questions:\n\n1. Line 182: Since hominoid expression levels are driving so much of the variation in the PCoA analyses, why do the authors think that this isn't showing up in the phenograms?\n\n2. Line 224: Why are the differences between human and siamang treated as human-specific, rather than informative about all great apes? I do not see how this can be disambiguated with the current setup\u2026\n\n3. Figure 3: I think an upset plot or similar here could be an effective way of visualising results, in terms of exploring how far down the phylogeny some signals are shared, but this is optional.\n\n4. Discussion: I think the sentences beginning in 404 and 407 are fundamentally contradictory, and only 407 seems to truly reflect the results above. Is a reference or a word missing from 404?\n",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e6b77415-c175-43bc-acb8-92ff294f0018",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C1",
+      "claim": "Primate evolution has led to a remarkable diversity of behavioral specializations among species.",
+      "claim_type": "EXPLICIT",
+      "source": "Primate evolution has led to a remarkable diversity of behavioral specializations and pronounced brain size variation among species (Barton, 2012; DeCasien and Higham, 2019; Powell et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Barton 2012, DeCasien and Higham 2019, and Powell et al. 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "0b417fe7-a6a6-489c-a2f5-4cc5cf2444c7",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C2",
+      "claim": "Primate evolution has led to pronounced brain size variation among species.",
+      "claim_type": "EXPLICIT",
+      "source": "Primate evolution has led to a remarkable diversity of behavioral specializations and pronounced brain size variation among species (Barton, 2012; DeCasien and Higham, 2019; Powell et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Barton 2012, DeCasien and Higham 2019, and Powell et al. 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "b6b33af9-e1ca-42c0-b93b-17d9ee167a5a",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C3",
+      "claim": "Gene expression has been explored in very few primate species to date.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene expression provides a promising opportunity for studying the molecular basis of brain evolution, but it has been explored in very few primate species to date (e.g. Khaitovich et al., 2005; Khrameeva et al., 2020; Ma et al., 2022; Somel et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (Khaitovich et al. 2005, Khrameeva et al. 2020, Ma et al. 2022, Somel et al. 2009)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "73a9eeb6-2799-4d2d-a427-b41b06fda83d",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C4",
+      "claim": "The study generated and analyzed RNA-seq data from four brain regions in eighteen primate species.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand the landscape of gene expression evolution across the primate lineage, we generated and analyzed RNA-seq data from four brain regions in an unprecedented eighteen species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the study's methodology and sample size",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "50052928-3adb-49e3-9a11-ed4bf13bf865",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C5",
+      "claim": "There is a remarkable level of variation in gene expression among hominid species, including humans and chimpanzees.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show a remarkable level of variation in gene expression among hominid species, including humans and chimpanzees, despite their relatively recent divergence time from other primates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the study's RNA-seq data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "f77fee54-da48-4ad5-b199-b67737fcfc93",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C6",
+      "claim": "Individual genes display a wide range of expression dynamics across evolutionary time.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that individual genes display a wide range of expression dynamics across evolutionary time reflective of the diverse selection pressures acting on genes within primate brain tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the study's analysis of gene expression patterns",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "a396a8cf-8180-4f9c-a442-1873782b595e",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C7",
+      "claim": "The study samples represent a 190-fold difference in primate brain size.",
+      "claim_type": "EXPLICIT",
+      "source": "Using our samples that represent a 190-fold difference in primate brain size, we identified genes with variation in expression most correlated with brain size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the range of brain sizes in the sample",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "1c46f29c-d7d5-4058-9c53-60e6b2f1f145",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C8",
+      "claim": "Primates are distinguished from other mammals by their large brains relative to body size.",
+      "claim_type": "EXPLICIT",
+      "source": "Primates are distinguished from other mammals by their large brains relative to body size (Boddy et al., 2012; Martin, 1981; Smaers et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Boddy et al. 2012, Martin 1981, and Smaers et al. 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "59c0b1ed-2e7f-4fde-bf8b-a429c3b97936",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C9",
+      "claim": "There is remarkable variation in behavioral specializations among primate species, including differences in social structure, spatial, dietary and visual ecology, and locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the diversity of primate species, there is remarkable variation in behavioral specializations, including differences in social structure, spatial, dietary and visual ecology, and locomotion (Powell et al., 2017; Barton, 2012; DeCasien and Higham, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Powell et al. 2017, Barton 2012, and DeCasien and Higham 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "871e3c5f-a095-4ec6-8d42-9903f24a1554",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C10",
+      "claim": "Humans possess exceptionally large brains.",
+      "claim_type": "EXPLICIT",
+      "source": "Humans are unmatched in possessing exceptionally large brains and unparalleled cognitive abilities, such as language (Konopka and Roberts, 2016; Rilling, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Konopka and Roberts 2016 and Rilling 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "5d77f4b5-5ba4-48da-bbb5-42c3d26c7936",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C11",
+      "claim": "Humans possess unparalleled cognitive abilities, such as language.",
+      "claim_type": "EXPLICIT",
+      "source": "Humans are unmatched in possessing exceptionally large brains and unparalleled cognitive abilities, such as language (Konopka and Roberts, 2016; Rilling, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Konopka and Roberts 2016 and Rilling 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "bc8092cc-be5f-49c4-8957-c473eca810c2",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C12",
+      "claim": "King and Wilson (1975) proposed that the basis of physical and behavioral phenotypic differences between humans and chimpanzees must be found in changes within gene regulatory regions that drive expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon observing the remarkable similarity between human and chimpanzee protein sequences, King and Wilson, 1975 proposed that the basis of the physical and behavioral phenotypic differences between these two species must be found in changes within gene regulatory regions that drive expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct citation to King and Wilson 1975",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "97abe1bf-4463-4348-aab7-408ac05753d6",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C13",
+      "claim": "Previous studies on gene expression in primate brain tissues have mostly focused on the neocortex and cerebellum in human, chimpanzee, and rhesus macaque.",
+      "claim_type": "EXPLICIT",
+      "source": "In studies focusing on gene expression in primate brain tissues, research has mostly focused on the neocortex and cerebellum in human, chimpanzee, and rhesus macaque (Babbitt et al., 2010; Blekhman et al., 2010; Khaitovich et al., 2005; Khaitovich et al., 2004; Khrameeva et al., 2020; Konopka et al., 2012; Ma et al., 2022; Somel et al., 2009; Sousa et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "f14a0526-a255-4b77-b180-55b80367246a",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C14",
+      "claim": "The study sampled prefrontal cortex, primary visual cortex, hippocampus, and lateral cerebellum from 18 primate species.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current study, we sampled prefrontal cortex (PFC), primary visual cortex (V1), hippocampus (HIP), and lateral cerebellum (CBL) from 18 primate species, the broadest diversity of primates sampled in any study of gene expression in the brain to date, including species from several rarely-studied lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the study's sampling methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "f5620381-0225-4a65-bc99-fb970f9032b2",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C15",
+      "claim": "This study represents the broadest diversity of primates sampled in any study of gene expression in the brain to date.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current study, we sampled prefrontal cortex (PFC), primary visual cortex (V1), hippocampus (HIP), and lateral cerebellum (CBL) from 18 primate species, the broadest diversity of primates sampled in any study of gene expression in the brain to date, including species from several rarely-studied lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement comparing this study to previous work",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "31a1d771-c647-4961-817a-7a321d80d578",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C16",
+      "claim": "The dataset represents 70\u201390 million years of primate evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Our dataset represents 70\u201390 million years (Perelman et al., 2011) of primate evolution, providing a more thorough understanding of the evolution of gene expression across primates and allowing for an unprecedented view of how gene expression in the brain has changed over time across all major clades of primate phylogeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Perelman et al. 2011 for evolutionary timescale",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "78e25f79-9b4a-4ef4-862d-16fbcd9cb830",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C17",
+      "claim": "The study generated RNA-seq data from 18 primate species including five hominoids, four cercopithecoids, four platyrrhines, and five strepsirrhines, with 1\u20133 biological replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand how gene expression in the brain has evolved across the primate lineage, we generated and analyzed RNA-seq data from 18 primate species (including five hominoids, four cercopithecoids, four platyrrhines, and five strepsirrhines, with 1\u20133 biological replicates) across four brain regions, including PFC, V1, HIP, and CBL (Figure 1, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the study's sample composition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "f2dcb35e-1ca8-42c5-8f53-66e4dfae3fa0",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C18",
+      "claim": "The study quantified the expression of 15,017 orthologs within hominoids.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified the expression of 15,017 orthologs within hominoids, and 3432 on-to-one orthologs across all 18 species (Supplementary files 2 and 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the number of orthologs analyzed",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "a72a6776-ba5c-44cd-9813-7cc300c3c37d",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C19",
+      "claim": "The study quantified the expression of 3432 one-to-one orthologs across all 18 species.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified the expression of 15,017 orthologs within hominoids, and 3432 on-to-one orthologs across all 18 species (Supplementary files 2 and 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the number of orthologs analyzed",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "8b20302b-06c2-4e31-8593-9d5f2fad02b3",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C20",
+      "claim": "Variation in interspecific mammalian gene expression has been shown to be less pronounced than that observed across samples from different organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Variation in interspecific mammalian gene expression has been shown to be less pronounced than that observed across samples from different organs, reflecting the diversity of underlying organ physiology (Brawand et al., 2011; Sudmant et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Brawand et al. 2011 and Sudmant et al. 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "bedd162d-e986-47b0-89d3-7327558c1699",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C21",
+      "claim": "The rate of gene expression divergence evolved more slowly within the cerebral cortex and cerebellum compared to other organ systems from developmentally distinct germ layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it has been reported that the rate of gene expression divergence evolved more slowly within the cerebral cortex and cerebellum compared to other organ systems from developmentally distinct germ layers (Brawand et al., 2011; Khaitovich et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Brawand et al. 2011 and Khaitovich et al. 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "8aa27702-11b8-46c8-9e68-492049d62a7f",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C22",
+      "claim": "The 500 most variable protein-coding genes were enriched with glycoproteins, signal peptides, and plasma membrane proteins, with roles in immune function, molecular trafficking, and cell signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "This subset of genes was enriched with glycoproteins, signal peptides, and plasma membrane proteins, with roles in immune function, molecular trafficking, and cell signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the study's enrichment analysis of the most variable genes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "d1302cf1-9f95-4e6c-a072-31a7a0c9e606",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C23",
+      "claim": "Taxon assignment explains a large amount of variation in the dataset, with clear trends emerging independent of brain region.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, taxon assignment explains a large amount of variation to the dataset, with clear trends emerging independent of brain region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the PCoA analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "773e64fa-d720-4b5f-95f4-815b6eb6199c",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C24",
+      "claim": "The greatest divergence in expression patterns is observed among hominoid and strepsirrhine species.",
+      "claim_type": "EXPLICIT",
+      "source": "We find the greatest divergence in expression patterns among hominoid and strepsirrhine species, while there is more similarity observed among cercopithecoids and platyrrhines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the PCoA analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "9b5c666c-f91d-468a-aed2-1691f043f616",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C25",
+      "claim": "More similarity in expression patterns is observed among cercopithecoids and platyrrhines.",
+      "claim_type": "EXPLICIT",
+      "source": "We find the greatest divergence in expression patterns among hominoid and strepsirrhine species, while there is more similarity observed among cercopithecoids and platyrrhines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the PCoA analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "31eb40c2-4fc2-44be-95ff-e020de261682",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C26",
+      "claim": "Hominoids display the greatest level of diversity of any primate phylogenetic group.",
+      "claim_type": "EXPLICIT",
+      "source": "The hominoids, displaying the greatest level of diversity of any primate phylogenetic group, demonstrate variation that is particularly apparent along Axis 1 and largely driven by human and chimpanzee expression patterns (Figure 2A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the PCoA analysis and Figure 2A, B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "e1da77b0-ad7b-4f71-a6e3-d6e1f9a28e72",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C27",
+      "claim": "Hominoid variation in gene expression is largely driven by human and chimpanzee expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "The hominoids, displaying the greatest level of diversity of any primate phylogenetic group, demonstrate variation that is particularly apparent along Axis 1 and largely driven by human and chimpanzee expression patterns (Figure 2A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the PCoA analysis and Figure 2A, B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "8230e3cb-839e-4954-97bd-71404a1213f8",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C28",
+      "claim": "Hominoids display more variation than strepsirrhines by about 24%.",
+      "claim_type": "EXPLICIT",
+      "source": "When Axis 1 and 2 of the PCoA are plotted on the same bivariate plot (Figure 2a), the hominoids display more variation than the strepsirrhines by about 24% (Supplementary file 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative analysis of PCoA data shown in Figure 2a and Supplementary file 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "a871e8c3-a20f-48a2-8286-acb48596e54a",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C29",
+      "claim": "A large portion of the variation in strepsirrhines is attributed to evolutionary divergence over about 63 million years.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a large portion of the variation in the strepsirrhines is attributed to evolutionary divergence over about 63 million years (since the last common ancestor of lemurs and lorises), whereas the variation within hominoids has largely accrued over only 9 million years (since humans and chimpanzees shared an ancestor with gorillas).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on known evolutionary timescales",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "bdeb53fb-da69-4541-9165-00ae1ddd2060",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C30",
+      "claim": "The variation within hominoids has largely accrued over only 9 million years.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a large portion of the variation in the strepsirrhines is attributed to evolutionary divergence over about 63 million years (since the last common ancestor of lemurs and lorises), whereas the variation within hominoids has largely accrued over only 9 million years (since humans and chimpanzees shared an ancestor with gorillas).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on known evolutionary timescales",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "76a06fbb-8549-4b78-8511-fbc0577c6fea",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C31",
+      "claim": "Hominoids show remarkable variation despite representing a much shorter evolutionary divergence time compared to strepsirrhines.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, a remarkable finding of this analysis is how much variation is represented by hominoids, despite the fact that this lineage represents a much shorter evolutionary divergence time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the comparison of variation and divergence times",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "8cb1216c-f361-44bf-a73e-267a97828af9",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C32",
+      "claim": "The variation attributed to the cerebellum is distinguished from that of prefrontal cortex, primary visual cortex, and hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we observe that the variation attributed to CBL is distinguished from that of PFC, V1, and HIP, which are very similar in their distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the PCoA analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "1876915d-e39b-4b93-9ea1-1a0400136766",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C33",
+      "claim": "The cerebellum develops from a different part of the embryonic neural tube (the hindbrain) compared to other sampled brain regions (forebrain).",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that CBL differs in its pattern of gene expression from other brain regions (Hawrylycz et al., 2015; Hawrylycz et al., 2012; It\u00f5, 2012) is not surprising given that it is the only sampled region that develops from a different part of the embryonic neural tube (namely, the hindbrain vs. forebrain) and exhibits a neuronal packing density (predominantly glutamatergic granule cells) that far exceeds these other brain regions (Azevedo et al., 2009; Herculano-Houzel, 2011; It\u014d, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to developmental neuroscience literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "273b43d1-c84c-4376-a626-e37cdea59c95",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C34",
+      "claim": "The cerebellum exhibits a neuronal packing density that far exceeds other sampled brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that CBL differs in its pattern of gene expression from other brain regions (Hawrylycz et al., 2015; Hawrylycz et al., 2012; It\u00f5, 2012) is not surprising given that it is the only sampled region that develops from a different part of the embryonic neural tube (namely, the hindbrain vs. forebrain) and exhibits a neuronal packing density (predominantly glutamatergic granule cells) that far exceeds these other brain regions (Azevedo et al., 2009; Herculano-Houzel, 2011; It\u014d, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Azevedo et al. 2009, Herculano-Houzel 2011, and It\u014d 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "f6988587-5f65-450c-a157-287d2ec81ed8",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C35",
+      "claim": "Enrichments for cerebellar gene expression reveal expression changes to categories such as 'Cell Surface Receptor Signaling Pathway,' 'Cell Projection Organization,' and 'Wnt Signaling Pathway.'",
+      "claim_type": "EXPLICIT",
+      "source": "Enrichments for cerebellar gene expression reveal expression changes to categories such as 'Cell Surface Receptor Signaling Pathway,' 'Cell Projection Organization,' and 'Wnt Signaling Pathway.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene ontology enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "2f03964b-ee4c-4881-a6e2-b8e5c686816c",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C37",
+      "claim": "The cerebellum shows a unique increase in signaling activity-related terms compared to other brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Although all the brain regions surveyed show some enrichment for categories related to cell signaling, the cerebellum shows a unique increase in signaling activity-related terms (both in the number of enrichment categories and the degree of change associated with these categories).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparative enrichment analysis across brain regions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "973312c0-951e-42f4-8be7-e3acd083a99d",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C38",
+      "claim": "Samples derived from individuals of the same species tended to be grouped together in expression phenograms, regardless of brain region.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples that were derived from individuals of the same species tended to be grouped together, regardless of brain region, revealing that inter-individual differences are minor compared to other sources of variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the phenogram analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "1c5420e7-3414-4b68-bb49-c9e0c8d06a9b",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C39",
+      "claim": "Inter-individual differences in gene expression are minor compared to other sources of variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples that were derived from individuals of the same species tended to be grouped together, regardless of brain region, revealing that inter-individual differences are minor compared to other sources of variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the phenogram clustering patterns",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "c7b66126-fbc7-4e95-9afb-7ed44f6d7972",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C40",
+      "claim": "Gene expression profiles replicated the phylogenetic relationships of closely related species when all regions were considered.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene expression profiles also replicated the phylogenetic relationships of closely related species (e.g. humans and chimpanzees; pig-tailed and rhesus macaques) when all regions were considered, but these relationships became less phylogenetically structured in the phenograms constructed using expression data from individual brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the phenogram analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "362f2522-124f-47bb-a0fc-e48d18228f8f",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C41",
+      "claim": "All neighbor-joining phenograms accurately represent cercopithecoids and strepsirrhines as monophyletic groups.",
+      "claim_type": "EXPLICIT",
+      "source": "All neighbor-joining phenograms accurately represent cercopithecoids and strepsirrhines as monophyletic groups; however, expression data produces paraphyletic groups of hominoid and platyrrhine species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the phenogram analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "f98d0b01-8071-462b-b94f-4f23238ff186",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C42",
+      "claim": "Expression data produces paraphyletic groups of hominoid and platyrrhine species.",
+      "claim_type": "EXPLICIT",
+      "source": "All neighbor-joining phenograms accurately represent cercopithecoids and strepsirrhines as monophyletic groups; however, expression data produces paraphyletic groups of hominoid and platyrrhine species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the phenogram analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "e94ed879-c763-42a5-a82e-019839c0f1f0",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C43",
+      "claim": "Taxa with longer periods of independent evolution are more likely to show divergent patterns of gene expression than more closely related groups.",
+      "claim_type": "EXPLICIT",
+      "source": "This result potentially reflects the fact that taxa with longer periods of independent evolution (i.e. strepsirrhines) are more likely to show divergent patterns of gene expression than more closely related groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the phenogram results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "0bc89318-d629-44f7-b5b6-b1021cd378b5",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C44",
+      "claim": "Models that incorporate stabilizing selection are more accurately able to predict gene expression evolution in mammals than models that account only for neutral drift.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown how models that incorporate stabilizing selection are more accurately able to predict gene expression evolution in mammals than models that account only for neutral drift (Chen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen et al. 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "1e53da27-1fde-464f-aa2a-a39de2986e68",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C45",
+      "claim": "Approximately 15\u201320% of genes show differential expression across all species-to-species comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all expressed one-to-one orthologs represented in the sampled primates, we found that ~15\u201320% of genes show differential expression across all species-to-species comparisons (q-value <0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the differential expression analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "9e64c002-e71f-43ad-87e1-596bbf1fb81f",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C46",
+      "claim": "The relative amount of differential expression increases over evolutionary time, both between species and clades.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the relative amount of differential expression increases over evolutionary time, both between species and clades (Figure 3 and Figure 3\u2014figure supplement 1 ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the differential expression analysis and Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "23b1c2b5-e803-43ab-ba2c-5447f6a29fee",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C47",
+      "claim": "Species and clade-wise comparisons show larger numbers of differentially expressed genes when strepsirrhines are included in the contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both the species and clade-wise comparisons show larger numbers of differentially expressed (DE) genes in the comparisons when strepsirrhines are included in the contrast, a result of the more than 60 million years of independent evolution of this taxon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the differential expression analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "3b728b3e-18ca-4f7a-91fc-93da06cc375d",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C48",
+      "claim": "In the cerebellum, the lemur, baboon, and human samples show relatively higher levels of differential expression compared to other species.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cerebellum, the lemur, baboon, and human samples are particularly unique and show relatively higher levels of DE compared to other species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the UpSet plot analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "88f8c92f-85e6-42f9-a8fd-317ab0cdae2a",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C49",
+      "claim": "In the hippocampus, visual cortex, and prefrontal cortex, chimpanzees show higher differential expression than human samples.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the hippocampus, visual cortex, and prefrontal cortex, the chimpanzees appear to show higher DE than the human samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the UpSet plot analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "76ac9914-14a5-4e83-b69a-3993fa6cd5ef",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C50",
+      "claim": "The cerebellum is a particularly unique brain structure in terms of gene expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests again that the cerebellum is a particularly unique brain structure and that chimpanzee gene expression is significantly different in the other three brain regions studied, warranting further analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the differential expression patterns",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "61261856-177d-49fb-96f9-99465eb248fd",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C51",
+      "claim": "Human prefrontal cortex shows an enrichment of metabolic processes when compared to other primates.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing gene expression in the PFC of humans relative to other primates, human PFC shows an enrichment of metabolic processes, including 'regulation of cellular metabolic process' and 'regulation of macromolecule metabolic process' (Supplementary files 6 and 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene ontology enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "63bc349a-fda2-46d6-813c-9164be463dc0",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C52",
+      "claim": "Comparing human and chimpanzee prefrontal cortex reveals that categories supporting neural growth and development are enriched as differentially expressed in human PFC relative to chimpanzees.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing human and chimpanzee PFC reveals that categories that support neural growth and development (e.g. 'neuron projection morphogenesis,' 'cell morphogenesis involved in neuron differentiation'), gene regulation, and metabolic processes are enriched as differentially expressed in human PFC relative to chimpanzees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene ontology enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "a5874bba-ca8e-4afd-83ab-a8b04a728592",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C53",
+      "claim": "APP (amyloid precursor protein) appears to be upregulated in humans compared to siamang under the category of 'Positive Regulation of Transcription by RNA polymerase II'.",
+      "claim_type": "EXPLICIT",
+      "source": "Of interest, under the category of 'Positive Regulation of Transcription by RNA polymerase II' we find several genes that appear to be upregulated in humans compared to siamang: APP (amyloid precursor protein, related to plaque formation in Alzheimer's disease) as well as PRKN (found to be causal in Parkinson's disease) (Funayama et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by differential expression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "7c97aba2-3f57-4ac6-8a99-728e04a87e12",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C54",
+      "claim": "PRKN appears to be upregulated in humans compared to siamang under the category of 'Positive Regulation of Transcription by RNA polymerase II'.",
+      "claim_type": "EXPLICIT",
+      "source": "Of interest, under the category of 'Positive Regulation of Transcription by RNA polymerase II' we find several genes that appear to be upregulated in humans compared to siamang: APP (amyloid precursor protein, related to plaque formation in Alzheimer's disease) as well as PRKN (found to be causal in Parkinson's disease) (Funayama et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by differential expression analysis and citation to Funayama et al. 2023",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "0fd9ab7d-4075-48db-90e1-0c02d93b4f70",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C55",
+      "claim": "When examining Hominini compared to other Great Apes, terms related to 'Regulation of Metabolic Process,' 'Nervous System Development,' and 'Biosynthetic processes' are all enriched within the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "When examining Hominini (humans and chimpanzees) compared to other Great Apes, terms related to 'Regulation of Metabolic Process,' 'Nervous System Development,' and 'Biosynthetic processes' are all enriched within the hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene ontology enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "7d6ec68b-c336-4180-90d4-e3d03531571c",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C56",
+      "claim": "'Negative Regulation of Synaptic Transmission' was enriched in other ape species compared to Hominini.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, 'Negative Regulation of Synaptic Transmission' was enriched in the other ape species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene ontology enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "8ed45498-1897-418d-95ee-7d9f1de9138b",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C57",
+      "claim": "There is a general trend of decreasing specificity in enrichment categories over increasing evolutionary time among various species and clade comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, among various species and clade comparisons, there is a general trend of decreasing specificity in enrichment categories over increasing evolutionary time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from comparative enrichment analysis across evolutionary distances",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "3837b378-f879-4e00-b6e0-ebd883c977cb",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C58",
+      "claim": "Gene expression in brain regions sampled from the lorises diverged from other strepsirrhines and other primates more generally.",
+      "claim_type": "EXPLICIT",
+      "source": "Our PCoA analyses showed that gene expression in brain regions sampled from the lorises (i.e. the slender loris, slow loris, and pygmy slow loris) diverged from other strepsirrhines, and other primates more generally (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by PCoA analysis and Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "9f034eca-1731-4ffb-9857-a33601d40a56",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C59",
+      "claim": "Individual genes exhibit wide variation in expression dynamics across the primate lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the OU model, we found that individual genes exhibit wide variation in expression dynamics across the primate lineage (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by OU model analysis and Figure 4a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "eff8b4bc-d440-466f-9e1e-2f5086d92b88",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C60",
+      "claim": "Genes showing low variation or stabilizing selection are enriched for categories related to transport and cellular localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Enrichments for genes showing low variation or stabilizing selection (q=0.05) reveal categories related to transport and cellular localization (GO Biological Processes, Supplementary files 6 and 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene ontology enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "3dae279d-56bf-457b-a9b3-e6d450056fd8",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C61",
+      "claim": "Genes that are less constrained or neutrally evolving have processes related to neuron morphogenesis, plasticity, and cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, genes that are less constrained or neutrally evolving (q>0.05) have a number of processes related to neuron morphogenesis, plasticity, and cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene ontology enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "09217b62-57d4-4fad-a791-b2f2faa19309",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C62",
+      "claim": "Pairwise expression differences between humans and other species increasingly diverge with evolutionary distance in all brain regions sampled.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we find that pairwise expression differences between humans and the other species increasingly diverge with evolutionary distance in all brain regions sampled (Figure 4b); however, these pairwise comparisons do not seem to saturate with evolutionary time across the primate comparisons (Chen et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis of pairwise expression differences and Figure 4b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "3fefa8d5-6af8-48a5-a1d4-f8dc6d30f0b8",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C63",
+      "claim": "Pairwise expression comparisons do not saturate with evolutionary time across the primate comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we find that pairwise expression differences between humans and the other species increasingly diverge with evolutionary distance in all brain regions sampled (Figure 4b); however, these pairwise comparisons do not seem to saturate with evolutionary time across the primate comparisons (Chen et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis of pairwise expression differences and Figure 4b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "ea1ccbc9-8b53-4d9a-9f77-d4c11a9e8972",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C64",
+      "claim": "Across tissues, on average, 64% of genes fit better under stabilizing selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In this analysis, we found that across tissues, on average, 64% of genes fit better under stabilizing selection (64% CBL, 59% HIP, 72% PFC, and 60% V1; FDR-corrected q-value calculated via the BH procedure to correct for multiple hypothesis testing; FDR threshold of 5% to determine significance).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by EVEE-tools analysis using the OU model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "30015fa9-e70a-41e7-89fa-564efdffea64",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C65",
+      "claim": "The overall phylogenetic signal in brain expression divergence using the OU model was slightly smaller than observed with edgeR.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of the OU model of continuous trait evolution, we found that the overall phylogenetic signal in brain expression divergence was slightly smaller than observed with edgeR over the entire combined dataset (EVEE: 4\u20136.7% across all single species comparisons using a logFC of +/-2; edgeR: 15\u201320%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of results from two different analytical methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "2cae781e-af96-4685-917d-55bfdb2dd826",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C66",
+      "claim": "The relative amount of differential expression increases gradually with evolutionary distance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the relative amount of differential expression does increase gradually with evolutionary distance (as expected based on results in edgeR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by EVEE-tools analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "374acde0-729f-4ec1-bc75-dd68a8a13f5c",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C67",
+      "claim": "The human and chimpanzee comparison shows considerable variation in differential expression across the four brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The only exception to this is the human and chimpanzee comparison, which shows considerable variation in differential expression across the four brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by differential expression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "7dd3f589-0c5c-4df8-acd2-2645cdb0ffe9",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C68",
+      "claim": "The increase in differential expression between humans and chimpanzees suggests directional selection within that lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Representing such a short period of evolutionary divergence, this increase in DE suggests direction selection within that lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the pattern of differential expression relative to divergence time",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "e025c28b-f461-4b79-8d8f-4b7d07d8eab8",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C69",
+      "claim": "A significant FDR (<5%) was not reached in the outlier expression dataset among all species comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that a significant FDR (<5%) was not reached in this dataset, among all species comparisons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "2b0e7164-e65a-4294-a854-e47992676743",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C70",
+      "claim": "A mammalian dataset was unable to reach an FDR below 18% in previous applications of the EVEE package.",
+      "claim_type": "EXPLICIT",
+      "source": "This is expected based on previous applications of this package, in which a mammalian dataset was also unable to reach an FDR below 18% (Chen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen et al. 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "20e840f3-7ab7-477e-9dd2-b00ab09020ac",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C71",
+      "claim": "Patterns of outlier gene expression occur in a species and tissue-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In our outlier expression analysis, we found that patterns of outlier gene expression occur in a species and tissue-specific manner (Supplementary file 10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by outlier expression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "f2c4822a-50bb-4245-b7a5-1ec4f07bbd37",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C72",
+      "claim": "In the prefrontal cortex, the chimpanzee and marmoset samples have the highest number of outlier genes deviating from average expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the PFC, the chimpanzee and marmoset samples appear to have the highest number of outlier genes deviating from average expression patterns (compared to human, siamang, baboon, rhesus macaque, and marmoset samples).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by outlier expression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "4c7ad10e-b6fc-4890-a519-66258e3b44c5",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C73",
+      "claim": "Outlier analysis in the cerebellum reveals that the human and lemur samples have the highest number of outlier genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the PFC, outlier analysis in the CBL reveals that the human and lemur samples have the highest number of outlier genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by outlier expression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "27dcbf0d-3018-4456-9b83-e3f2d539afb6",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C74",
+      "claim": "Many outlier genes are related to functions in development, transcription, nervous system development, neurogenesis, and metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon gene set category enrichment analysis, we find that many of these genes that are deemed 'outliers' are related to functions in development, transcription, nervous system development, neurogenesis, and metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene ontology enrichment analysis of outlier genes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "8778928c-6a82-49af-9a7c-611128d1c902",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C75",
+      "claim": "The chimpanzee prefrontal cortex shows a significant upregulation in genes involved in energy storage and transfer, such as ETFA and NDUFS4.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the chimpanzee PFC shows a significant upregulation in genes involved in energy storage and transfer, such as ETFA and NDUFS4, which are both involved in electron transport for ATP generation, as well as ANKH, implicated in phosphate transport (Szeri et al., 2020; Henriques et al., 2021; Shil et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by differential expression analysis and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "40d9e3d4-0c36-4a0b-9a33-482caaeb27de",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C76",
+      "claim": "The chimpanzee prefrontal cortex shows unique expression patterns in genes related to synaptic activity and neurotransmitter release, including significant downregulation of GABRA4 and SYN1.",
+      "claim_type": "EXPLICIT",
+      "source": "We also see that the chimpanzee PFC shows unique expression patterns in genes related to synaptic activity and neurotransmitter release, including significant downregulation of GABRA4 and SYN1 (Fassio et al., 2011; Fan et al., 2020 Fan et al., 2020; Fassio et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by differential expression analysis and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "2488fe62-b9e8-4f6b-9e07-bee7751ac955",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C77",
+      "claim": "The human cerebellum and prefrontal cortex both display a significant upregulation of genes related to Amyloid protein production (APP).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the human CBL and PFC both display a significant upregulation of genes related to Amyloid protein production (APP), a major component of many neurodegenerative diseases with functions in synaptic signaling (O'Brien and Wong, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by differential expression analysis and citation to O'Brien and Wong 2011",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "dc75a703-d056-427e-9c85-04668eb8daf9",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C78",
+      "claim": "The human cerebellum shows enrichments in genes related to neurogenesis and synaptic activity, including SDK1, FZD5, and CDH10.",
+      "claim_type": "EXPLICIT",
+      "source": "Unique to the human CBL we also see enrichments in genes related to neurogenesis and synaptic activity, including SDK1, FZD5, and CDH10 (Redies et al., 2012; Slater et al., 2013; Bagot et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by differential expression analysis and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "dd8f79b4-d489-4763-b8f9-4d3128bdf627",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C79",
+      "claim": "The percentage of genes that fit better under the model of stabilizing selection is not statistically different when using different reference species (human, siamang, or rhesus macaque).",
+      "claim_type": "EXPLICIT",
+      "source": "The percentage of genes that fit better under the model of stabilizing selection (in comparison to neutral drift) is not statistically different from those observed when using humans as a reference (on average, 58\u201364% across all four major brain regions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparative analysis using different reference species",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "5f56d8a6-b50b-4b7f-8cec-c96ce0c3107f",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C80",
+      "claim": "The effects of the reference species used for normalization are negligible in terms of analyzing differential expression across the primate tree.",
+      "claim_type": "EXPLICIT",
+      "source": "We additionally looked at pairwise species comparisons to determine if the general trends of directional selection and differential gene expression were comparable to the human-reference data, and again confirmed that the effects of the reference species used for normalization here are negligible in terms of analyzing differential expression across our primate tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparative analysis using different reference species",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "8288713a-6152-468f-8060-3fdcaccd0c14",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C81",
+      "claim": "The average brain size across the study species varies by approximately 190 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Our dataset provides a unique opportunity to evaluate this question, since the average brain size across our study species varies by ~190 fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the range of brain sizes in the sample",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "580ac3d3-23bc-4b6c-af49-b04a1fe6b597",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C82",
+      "claim": "The same genes rank among those with the strongest positive correlation to brain size in prefrontal cortex, primary visual cortex, and hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Results indicate that the same genes rank among those with the strongest positive correlation in PFC, V1, and HIP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multivariate analysis of gene expression and brain size",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "e0fd11bf-098c-49b4-b3a0-77e760dddd5d",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C83",
+      "claim": "The cerebellum includes more variation among the genes most strongly correlated to overall brain size than the other three brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "CBL also shares some of these same genes but includes more variation among the genes most strongly correlated to overall brain size than the other three brain regions (Figure 5, Supplementary file 9), potentially reflecting the more recent expansion of the CBL relative to the rest of the neocortex (Miller et al., 2019; Smaers et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by multivariate analysis and Figure 5, with citations to Miller et al. 2019 and Smaers et al. 2018",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "390f03c8-8b1e-4fad-9384-638a99e329e2",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C85",
+      "claim": "Through more representative sampling of primate species, substantial variation in gene expression levels was found within the hominoid and strepsirrhine lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Through more representative sampling of primate species, we found substantial variation in gene expression levels within the hominoid and strepsirrhine lineages, with the diversity among hominoids particularly impressive due to the recent divergence of this taxon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the study's RNA-seq data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "94fa5fef-0cf6-4fc2-a503-49a72fe58c10",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C86",
+      "claim": "Using the OU model, a substantial proportion of genes showed differential expression across species.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the OU model, we found that a substantial proportion of genes showed differential expression across species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the OU model analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "4c7ff1d5-eac7-4ede-b03f-28f530a3484e",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C87",
+      "claim": "The considerable diversity of gene expression in human and chimpanzee brain tissue has profound implications for understanding the distinct evolutionary processes that have acted upon the brains of the ancestral species of these two lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "The considerable diversity of gene expression in human and chimpanzee brain tissue has profound implications for understanding the distinct evolutionary processes that have acted upon the brains of the ancestral species of these two lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the observed diversity in gene expression",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "7fcea9b9-df05-4006-9ac5-aba7e111bc91",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C88",
+      "claim": "Gene expression evolution followed a linear pattern but did not reach a saturation point due to stabilizing selection pressures within Primates.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, gene expression evolution did follow a linear pattern, but did not reach a saturation point due to stabilizing selection pressures as seen in other studies (Chen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the study's analysis and comparison to Chen et al. 2019",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "67ee22b5-617f-4dc5-be6a-ff3f4fecf33b",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C89",
+      "claim": "Less constrained, neutrally evolving patterns appeared to be the most prevalent pattern in each brain region studied.",
+      "claim_type": "EXPLICIT",
+      "source": "Less constrained, neutrally evolving patterns appeared to be the most prevalent pattern in each brain region studied, preventing a saturation point of stabilizing pressures to be reached within Primates with increased phylogenetic distance from humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the OU model analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "2f4c274b-9457-4a06-bf5f-2d641b00c18f",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C90",
+      "claim": "All samples were obtained from adult individuals free from known neurological disease.",
+      "claim_type": "EXPLICIT",
+      "source": "All samples were obtained from adult individuals free from known neurological disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about sample selection criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "010288a5-7889-481f-b2b4-35158eafbd64",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C91",
+      "claim": "If available, the right hemisphere was preferentially sampled.",
+      "claim_type": "EXPLICIT",
+      "source": "If available, the right hemisphere was preferentially sampled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about sampling methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "925ebc29-124f-4a7e-ae27-5eb9cee9ac95",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C92",
+      "claim": "Prefrontal cortex was sampled from the frontal pole, corresponding to Brodmann's area 10 in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "PFC was sampled from the frontal pole, corresponding to Brodmann's area 10 in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about anatomical sampling location",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "71b5b27d-472c-4c3a-9121-9f03c758aebc",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C93",
+      "claim": "All primary visual cortex samples were dissected around the calcarine sulcus to include primary visual cortex (Brodmann's area 17).",
+      "claim_type": "EXPLICIT",
+      "source": "All V1 samples were dissected around the calcarine sulcus to include primary visual cortex (Brodmann's area 17).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about anatomical sampling location",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "e86f5cad-e5fd-4b1a-b937-0ccf1808eef9",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C94",
+      "claim": "Samples from both prefrontal cortex and primary visual cortex contained all cortical layers and a small amount of underlying white matter (<10%).",
+      "claim_type": "EXPLICIT",
+      "source": "Samples from both PFC and V1 contained all cortical layers and a small amount of underlying white matter (<10%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about tissue composition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "125ad52a-7d2c-4eea-aebb-1282e733b814",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C95",
+      "claim": "The hippocampus was sampled from the medial aspect of the temporal lobe and included all hippocampal subfields.",
+      "claim_type": "EXPLICIT",
+      "source": "The HIP was sampled from the medial aspect of the temporal lobe and included all hippocampal subfields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about anatomical sampling location",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "3b7c1c6e-7cbd-49f6-a99a-67fefb59ecd7",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C96",
+      "claim": "The cerebellum was sampled from the most laterally projecting region of lateral hemisphere in all primates.",
+      "claim_type": "EXPLICIT",
+      "source": "The CBL was sampled from the most laterally projecting region of lateral hemisphere in all primates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about anatomical sampling location",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "e4b1e7a7-ede8-47e2-9f6a-8e8fc2a2c6e6",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C97",
+      "claim": "Cerebellum samples contained all layers of cerebellar cortex and a small amount of underlying white matter (<10%).",
+      "claim_type": "EXPLICIT",
+      "source": "CBL samples contained all layers of cerebellar cortex and a small amount of underlying white matter (<10%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about tissue composition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "b2451f80-f84f-4aa9-9c32-b0afeb8020dd",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C98",
+      "claim": "Neuron densities tend to decrease as brain size increases.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that neuron densities tend to decrease as brain size increases (Sherwood et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sherwood et al. 2020",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "56f16a22-7e12-4d92-8bc7-ce3b624cacb3",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C99",
+      "claim": "Larger brains accommodate a smaller number of neurons per unit volume compared to smaller brains.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that larger brains accommodate a smaller number of neurons per unit volume compared to smaller brains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the relationship between neuron density and brain size",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "24e4b0e5-e00d-4f49-99fa-76a947a84da6",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C100",
+      "claim": "Astrocytes exhibit a relatively invariant density per unit volume across species despite changes in brain size.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is interesting to note that other structural elements, such as astrocytes (Munger et al., 2022), microglia (Dos Santos et al., 2020), and synapses (Sherwood et al., 2020), exhibit a relatively invariant density per unit volume across species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Munger et al. 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "007a1746-0b5e-4c24-b2e7-c2674287a233",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C101",
+      "claim": "Microglia exhibit a relatively invariant density per unit volume across species despite changes in brain size.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is interesting to note that other structural elements, such as astrocytes (Munger et al., 2022), microglia (Dos Santos et al., 2020), and synapses (Sherwood et al., 2020), exhibit a relatively invariant density per unit volume across species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dos Santos et al. 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "479f9075-2f3e-4657-8a48-0974fe008d9f",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C102",
+      "claim": "Synapses exhibit a relatively invariant density per unit volume across species despite changes in brain size.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is interesting to note that other structural elements, such as astrocytes (Munger et al., 2022), microglia (Dos Santos et al., 2020), and synapses (Sherwood et al., 2020), exhibit a relatively invariant density per unit volume across species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sherwood et al. 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "809c5163-2c8e-41b8-b6c9-0f6d6577e340",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C103",
+      "claim": "For each regional PCA, 14 PCs were required to account for about 90% of the variance in gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "For each regional PCA, 14 PCs were required to account for about 90% of the variance in gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about PCA results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "4fff9c39-6810-43c4-849c-c38c42ac8193",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C104",
+      "claim": "Using all 14 PCs accounted for at least 95% of the variation in brain size in each brain region.",
+      "claim_type": "EXPLICIT",
+      "source": "Using all 14 PCs accounted for at least 95% of the variation in each brain region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about multiple regression analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "33f14739-6164-4884-8d80-8f935be7b691",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C105",
+      "claim": "PC2 was the most predictive of brain size by low AIC for each brain region.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it was noted that for each brain region, PC2 was the most predictive of brain size by low (regional adjusted R2 values for PC2 against brain size were: PFC, 0.42; V1, 0.56; HIP, 0.50; CBL, 0.36).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Akaike information criterion analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "4107b967-5bff-41d7-8dc1-f1c7b849f95c",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "claim_id": "C106",
+      "claim": "There is general uniformity across the four sampled regions in the extent to which individual genes affect brain size, but the cerebellum displays the most unique signature.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the four sampled regions, we find general uniformity in the extent to which individual genes affect brain size, but the cerebellum displays the most unique signature of the regions sampled (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis of gene loadings on PC2 and Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3c193205-ad60-4a94-9854-f625650d3bae",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study generated RNA-seq data from four brain regions (prefrontal cortex, primary visual cortex, hippocampus, and cerebellum) across 18 primate species representing the broadest phylogenetic sampling in any primate brain gene expression study to date. The dataset includes 15,017 orthologs within hominoids and 3,432 one-to-one orthologs across all species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C14, C15, C17, C18, and C19 collectively establish the scope and scale of the dataset. The methodology is clearly described, sample sizes are stated, and the claim of broadest diversity is reasonable given the 18 species across major primate clades. The ortholog quantification provides specific data outputs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "026589ac-abaf-4602-b22f-3d020c7b798c",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Principal coordinates analysis reveals that taxon assignment explains substantial variation in gene expression, with hominoids displaying the greatest diversity among primate groups despite representing only ~9 million years of divergence, compared to strepsirrhines which show variation accumulated over ~63 million years. Hominoids display ~24% more variation than strepsirrhines, with human and chimpanzee expression patterns driving much of this diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C31 are well-supported by PCoA analysis shown in Figure 2. The quantitative comparison (24% more variation) is explicitly stated and referenced to supplementary data. The evolutionary timescales are based on established knowledge. The conclusion about remarkable hominoid variation relative to divergence time is a reasonable inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "bb092aa9-0a5f-41fa-9c3c-c5e1b669553e",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The cerebellum shows distinct gene expression patterns compared to the three forebrain regions (prefrontal cortex, visual cortex, hippocampus), with unique enrichment in signaling activity-related terms. This distinction is consistent with the cerebellum's developmental origin from the hindbrain and its exceptionally high neuronal packing density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37 are supported by PCoA analysis and gene ontology enrichment. The developmental and anatomical explanations (C33, C34) are well-cited. The enrichment analysis provides specific functional categories. The comparative statement about signaling terms is appropriately qualified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "526ea55d-ce16-4fd1-abf1-230372ab5f9e",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Expression phenograms show that samples from the same species cluster together regardless of brain region, indicating inter-individual variation is minor compared to species differences. Gene expression profiles accurately replicate phylogenetic relationships for closely related species and represent cercopithecoids and strepsirrhines as monophyletic groups, though hominoids and platyrrhines form paraphyletic groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 are supported by phenogram analysis (Figure 2 supplements). The clustering patterns are clearly described. The inference about minor inter-individual variation (C39) follows logically from the clustering. The phylogenetic accuracy is appropriately nuanced, noting both successes and limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "5a58bd7a-6af0-45e3-b44a-4a5899be6bce",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Approximately 15-20% of genes show differential expression across species-to-species comparisons, with the amount increasing over evolutionary time. Strepsirrhine comparisons show larger numbers of differentially expressed genes. The cerebellum shows unique patterns with lemur, baboon, and human having high differential expression, while in other brain regions chimpanzees show higher differential expression than humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50 are supported by differential expression analysis using the OU model and edgeR, with results shown in Figure 3 and supplements. The percentages are specific and q-value thresholds are stated. The patterns across species and regions are described with appropriate detail from UpSet plot analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "e9507572-b518-49b7-af52-befdd4351e37",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Human prefrontal cortex shows enrichment for metabolic processes, neural growth and development, and gene regulation compared to other primates and chimpanzees. Specific genes including APP and PRKN are upregulated in humans compared to siamang. Broader taxonomic comparisons show a general trend of decreasing specificity in enrichment categories with increasing evolutionary distance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C57 are supported by gene ontology enrichment analysis across multiple species comparisons. The functional categories are consistently identified across comparisons. Specific gene examples (C53, C54) are provided with appropriate citations. The trend observation (C57) is a reasonable inference from the comparative data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "ec451615-f3eb-4c18-8252-c73032b9d3c9",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Individual genes exhibit wide variation in expression dynamics across primates. Genes under stabilizing selection are enriched for transport and cellular localization functions, while less constrained genes relate to neuron morphogenesis, plasticity, and cell death. Pairwise expression differences increase with evolutionary distance but do not saturate across primate comparisons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 are supported by OU model analysis shown in Figure 4. The enrichment patterns for different gene categories are clearly described. The lack of saturation (C63) is explicitly stated and contrasts with expectations from other studies, which is appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "bceafee6-62ca-40ee-8334-7964de457823",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "On average, 64% of genes fit better under stabilizing selection than neutral drift across brain regions. The phylogenetic signal in brain expression divergence was 4-6.7% using EVEE compared to 15-20% with edgeR. Differential expression increases gradually with evolutionary distance, except for the human-chimpanzee comparison which shows considerable variation across brain regions, suggesting directional selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 are supported by EVEE-tools analysis with appropriate statistical thresholds (FDR 5%). The comparison between methods (C65) is transparent. The inference of directional selection (C68) is reasonable given the short divergence time and high variation, though it remains somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "2560cd85-052b-40cb-853d-de1538a6bf19",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Outlier gene expression analysis reveals species- and tissue-specific patterns, with chimpanzee and marmoset prefrontal cortex and human and lemur cerebellum showing the highest numbers of outlier genes. These outliers are enriched for developmental, transcriptional, and metabolic functions. Specific examples include upregulation of energy metabolism genes in chimpanzee PFC and APP in human cerebellum and PFC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C69-C78 describe outlier analysis results, but C69 explicitly states that significant FDR (<5%) was not reached, which is a critical limitation. While patterns are described and specific genes identified, the lack of statistical significance means these findings are exploratory. The authors acknowledge this limitation by citing similar issues in prior work (C70), but this undermines confidence in the specific outlier gene identifications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "2f5bd806-6f49-4ba9-995c-d47e94450d80",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The choice of reference species (human, siamang, or rhesus macaque) for normalization does not significantly affect the percentage of genes under stabilizing selection or the general trends of differential expression and directional selection across the primate phylogeny.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79 and C80 demonstrate methodological robustness by testing different reference species. The consistency of results across references strengthens confidence in the findings. This is an important control that addresses potential biases from using humans as the primary reference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "6e85a463-c082-4533-a149-5482ce881383",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Using samples representing a ~190-fold variation in brain size, multivariate analysis identified genes correlated with brain size. PC2 was most predictive of brain size in each region (R\u00b2 0.36-0.56). The same genes show strong positive correlation with brain size in prefrontal cortex, visual cortex, and hippocampus, while the cerebellum shows more variation in brain size-correlated genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 and C103-C106 describe a systematic analysis correlating gene expression with brain size. The methodology (PCA followed by regression) is appropriate. The R\u00b2 values are provided for each region. The finding that cerebellum differs is consistent with other results in the paper and is supported by citations about cerebellar expansion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "e3db46be-87df-41b7-a3d0-bf48b8cb5930",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study found substantial variation in gene expression within hominoid and strepsirrhine lineages, with a substantial proportion of genes showing differential expression across species. Gene expression evolution followed a linear pattern without reaching saturation, with neutrally evolving patterns being most prevalent, preventing stabilization within Primates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C89 summarize major findings from the Discussion. These are well-supported by the analyses presented throughout the Results section. The lack of saturation (C88) is explicitly compared to other studies. The prevalence of neutral evolution (C89) is consistent with the OU model results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "e945fe03-082f-4dec-94aa-b49ef6c25ab4",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Samples were obtained from adult individuals free from neurological disease, with preferential sampling of the right hemisphere. Specific anatomical locations were sampled for each brain region: frontal pole (PFC/BA10), calcarine sulcus (V1/BA17), medial temporal lobe (hippocampus with all subfields), and lateral cerebellar hemisphere. Cortical samples contained all layers with <10% white matter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C97 describe the sampling methodology in detail. These are straightforward methodological statements that establish sample quality and anatomical precision. The specificity about tissue composition and anatomical landmarks is appropriate for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "42130229-04c6-47d2-b7fd-d94b9563e283",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Neuron densities decrease as brain size increases, meaning larger brains have fewer neurons per unit volume. However, astrocytes, microglia, and synapses maintain relatively invariant densities per unit volume across species despite brain size changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C102 cite established literature about cellular composition scaling with brain size. These are well-supported by multiple citations and represent accepted knowledge in the field. This information provides important context for interpreting bulk tissue RNA-seq data across species with different brain sizes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "ba1c6ae9-93c9-4bfd-aaed-6b91b48f5be3",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work has established that primate evolution led to diversity in behavioral specializations and brain size variation, that primates have large brains relative to body size, and that humans possess exceptionally large brains and unique cognitive abilities. Previous gene expression studies in primate brains have been limited in species sampling, focusing mainly on humans, chimpanzees, and rhesus macaques.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C8-C13, C16, C20-C21, and C44 establish the background and rationale for the study through citations to prior work. These are appropriately cited and represent accurate characterizations of the literature. The claims about limited prior sampling (C3, C13) justify the current study's broader approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "f0ce139d-bb78-42e7-9ff5-e5e794b01ee9",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study demonstrates remarkable variation in gene expression among hominid species including humans and chimpanzees, with individual genes displaying a wide range of expression dynamics across evolutionary time. The samples represent a 190-fold difference in primate brain size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 are high-level summary statements supported by the detailed analyses throughout the paper. The remarkable variation among hominids (C5) is demonstrated by PCoA and differential expression analyses. The range of expression dynamics (C6) is shown by OU model results. The brain size range (C7) is a factual statement about the sample.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "5ebc7f88-e40d-48a4-883a-6d1eb5c2f921",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The 500 most variable protein-coding genes are enriched for glycoproteins, signal peptides, and plasma membrane proteins with roles in immune function, molecular trafficking, and cell signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C22 describes enrichment analysis of the most variable genes used for PCoA. This is a straightforward result from gene ontology analysis. The functional categories are specific and biologically interpretable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    },
+    {
+      "id": "fd136f03-a0eb-4595-ae88-434027660652",
+      "content_id": "7c4c4188-9cbd-4d04-8325-d71ffbb93e19",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Gene expression in brain regions from lorises (slender loris, slow loris, pygmy slow loris) diverged from other strepsirrhines and primates more generally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 is supported by PCoA analysis shown in Figure 2\u2014figure supplement 1. This observation about loris divergence is noted but not extensively analyzed, which is appropriate given the acknowledged limitations in loris transcriptome completeness mentioned in the Methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:13:33.129609Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "73a9eeb6-2799-4d2d-a427-b41b06fda83d",
+      "result_id": "3c193205-ad60-4a94-9854-f625650d3bae"
+    },
+    {
+      "claim_id": "f14a0526-a255-4b77-b180-55b80367246a",
+      "result_id": "3c193205-ad60-4a94-9854-f625650d3bae"
+    },
+    {
+      "claim_id": "f5620381-0225-4a65-bc99-fb970f9032b2",
+      "result_id": "3c193205-ad60-4a94-9854-f625650d3bae"
+    },
+    {
+      "claim_id": "78e25f79-9b4a-4ef4-862d-16fbcd9cb830",
+      "result_id": "3c193205-ad60-4a94-9854-f625650d3bae"
+    },
+    {
+      "claim_id": "f2dcb35e-1ca8-42c5-8f53-66e4dfae3fa0",
+      "result_id": "3c193205-ad60-4a94-9854-f625650d3bae"
+    },
+    {
+      "claim_id": "a72a6776-ba5c-44cd-9813-7cc300c3c37d",
+      "result_id": "3c193205-ad60-4a94-9854-f625650d3bae"
+    },
+    {
+      "claim_id": "d1302cf1-9f95-4e6c-a072-31a7a0c9e606",
+      "result_id": "026589ac-abaf-4602-b22f-3d020c7b798c"
+    },
+    {
+      "claim_id": "773e64fa-d720-4b5f-95f4-815b6eb6199c",
+      "result_id": "026589ac-abaf-4602-b22f-3d020c7b798c"
+    },
+    {
+      "claim_id": "9b5c666c-f91d-468a-aed2-1691f043f616",
+      "result_id": "026589ac-abaf-4602-b22f-3d020c7b798c"
+    },
+    {
+      "claim_id": "31eb40c2-4fc2-44be-95ff-e020de261682",
+      "result_id": "026589ac-abaf-4602-b22f-3d020c7b798c"
+    },
+    {
+      "claim_id": "e1da77b0-ad7b-4f71-a6e3-d6e1f9a28e72",
+      "result_id": "026589ac-abaf-4602-b22f-3d020c7b798c"
+    },
+    {
+      "claim_id": "8230e3cb-839e-4954-97bd-71404a1213f8",
+      "result_id": "026589ac-abaf-4602-b22f-3d020c7b798c"
+    },
+    {
+      "claim_id": "a871e8c3-a20f-48a2-8286-acb48596e54a",
+      "result_id": "026589ac-abaf-4602-b22f-3d020c7b798c"
+    },
+    {
+      "claim_id": "bdeb53fb-da69-4541-9165-00ae1ddd2060",
+      "result_id": "026589ac-abaf-4602-b22f-3d020c7b798c"
+    },
+    {
+      "claim_id": "76a06fbb-8549-4b78-8511-fbc0577c6fea",
+      "result_id": "026589ac-abaf-4602-b22f-3d020c7b798c"
+    },
+    {
+      "claim_id": "8cb1216c-f361-44bf-a73e-267a97828af9",
+      "result_id": "bb092aa9-0a5f-41fa-9c3c-c5e1b669553e"
+    },
+    {
+      "claim_id": "1876915d-e39b-4b93-9ea1-1a0400136766",
+      "result_id": "bb092aa9-0a5f-41fa-9c3c-c5e1b669553e"
+    },
+    {
+      "claim_id": "273b43d1-c84c-4376-a626-e37cdea59c95",
+      "result_id": "bb092aa9-0a5f-41fa-9c3c-c5e1b669553e"
+    },
+    {
+      "claim_id": "f6988587-5f65-450c-a157-287d2ec81ed8",
+      "result_id": "bb092aa9-0a5f-41fa-9c3c-c5e1b669553e"
+    },
+    {
+      "claim_id": "2f03964b-ee4c-4881-a6e2-b8e5c686816c",
+      "result_id": "bb092aa9-0a5f-41fa-9c3c-c5e1b669553e"
+    },
+    {
+      "claim_id": "973312c0-951e-42f4-8be7-e3acd083a99d",
+      "result_id": "526ea55d-ce16-4fd1-abf1-230372ab5f9e"
+    },
+    {
+      "claim_id": "1c5420e7-3414-4b68-bb49-c9e0c8d06a9b",
+      "result_id": "526ea55d-ce16-4fd1-abf1-230372ab5f9e"
+    },
+    {
+      "claim_id": "c7b66126-fbc7-4e95-9afb-7ed44f6d7972",
+      "result_id": "526ea55d-ce16-4fd1-abf1-230372ab5f9e"
+    },
+    {
+      "claim_id": "362f2522-124f-47bb-a0fc-e48d18228f8f",
+      "result_id": "526ea55d-ce16-4fd1-abf1-230372ab5f9e"
+    },
+    {
+      "claim_id": "f98d0b01-8071-462b-b94f-4f23238ff186",
+      "result_id": "526ea55d-ce16-4fd1-abf1-230372ab5f9e"
+    },
+    {
+      "claim_id": "e94ed879-c763-42a5-a82e-019839c0f1f0",
+      "result_id": "526ea55d-ce16-4fd1-abf1-230372ab5f9e"
+    },
+    {
+      "claim_id": "1e53da27-1fde-464f-aa2a-a39de2986e68",
+      "result_id": "5a58bd7a-6af0-45e3-b44a-4a5899be6bce"
+    },
+    {
+      "claim_id": "9e64c002-e71f-43ad-87e1-596bbf1fb81f",
+      "result_id": "5a58bd7a-6af0-45e3-b44a-4a5899be6bce"
+    },
+    {
+      "claim_id": "23b1c2b5-e803-43ab-ba2c-5447f6a29fee",
+      "result_id": "5a58bd7a-6af0-45e3-b44a-4a5899be6bce"
+    },
+    {
+      "claim_id": "3b728b3e-18ca-4f7a-91fc-93da06cc375d",
+      "result_id": "5a58bd7a-6af0-45e3-b44a-4a5899be6bce"
+    },
+    {
+      "claim_id": "88f8c92f-85e6-42f9-a8fd-317ab0cdae2a",
+      "result_id": "5a58bd7a-6af0-45e3-b44a-4a5899be6bce"
+    },
+    {
+      "claim_id": "76ac9914-14a5-4e83-b69a-3993fa6cd5ef",
+      "result_id": "5a58bd7a-6af0-45e3-b44a-4a5899be6bce"
+    },
+    {
+      "claim_id": "61261856-177d-49fb-96f9-99465eb248fd",
+      "result_id": "e9507572-b518-49b7-af52-befdd4351e37"
+    },
+    {
+      "claim_id": "63bc349a-fda2-46d6-813c-9164be463dc0",
+      "result_id": "e9507572-b518-49b7-af52-befdd4351e37"
+    },
+    {
+      "claim_id": "a5874bba-ca8e-4afd-83ab-a8b04a728592",
+      "result_id": "e9507572-b518-49b7-af52-befdd4351e37"
+    },
+    {
+      "claim_id": "7c97aba2-3f57-4ac6-8a99-728e04a87e12",
+      "result_id": "e9507572-b518-49b7-af52-befdd4351e37"
+    },
+    {
+      "claim_id": "0fd9ab7d-4075-48db-90e1-0c02d93b4f70",
+      "result_id": "e9507572-b518-49b7-af52-befdd4351e37"
+    },
+    {
+      "claim_id": "7d6ec68b-c336-4180-90d4-e3d03531571c",
+      "result_id": "e9507572-b518-49b7-af52-befdd4351e37"
+    },
+    {
+      "claim_id": "8ed45498-1897-418d-95ee-7d9f1de9138b",
+      "result_id": "e9507572-b518-49b7-af52-befdd4351e37"
+    },
+    {
+      "claim_id": "9f034eca-1731-4ffb-9857-a33601d40a56",
+      "result_id": "ec451615-f3eb-4c18-8252-c73032b9d3c9"
+    },
+    {
+      "claim_id": "eff8b4bc-d440-466f-9e1e-2f5086d92b88",
+      "result_id": "ec451615-f3eb-4c18-8252-c73032b9d3c9"
+    },
+    {
+      "claim_id": "3dae279d-56bf-457b-a9b3-e6d450056fd8",
+      "result_id": "ec451615-f3eb-4c18-8252-c73032b9d3c9"
+    },
+    {
+      "claim_id": "09217b62-57d4-4fad-a791-b2f2faa19309",
+      "result_id": "ec451615-f3eb-4c18-8252-c73032b9d3c9"
+    },
+    {
+      "claim_id": "3fefa8d5-6af8-48a5-a1d4-f8dc6d30f0b8",
+      "result_id": "ec451615-f3eb-4c18-8252-c73032b9d3c9"
+    },
+    {
+      "claim_id": "ea1ccbc9-8b53-4d9a-9f77-d4c11a9e8972",
+      "result_id": "bceafee6-62ca-40ee-8334-7964de457823"
+    },
+    {
+      "claim_id": "30015fa9-e70a-41e7-89fa-564efdffea64",
+      "result_id": "bceafee6-62ca-40ee-8334-7964de457823"
+    },
+    {
+      "claim_id": "2cae781e-af96-4685-917d-55bfdb2dd826",
+      "result_id": "bceafee6-62ca-40ee-8334-7964de457823"
+    },
+    {
+      "claim_id": "374acde0-729f-4ec1-bc75-dd68a8a13f5c",
+      "result_id": "bceafee6-62ca-40ee-8334-7964de457823"
+    },
+    {
+      "claim_id": "7dd3f589-0c5c-4df8-acd2-2645cdb0ffe9",
+      "result_id": "bceafee6-62ca-40ee-8334-7964de457823"
+    },
+    {
+      "claim_id": "e025c28b-f461-4b79-8d8f-4b7d07d8eab8",
+      "result_id": "2560cd85-052b-40cb-853d-de1538a6bf19"
+    },
+    {
+      "claim_id": "2b0e7164-e65a-4294-a854-e47992676743",
+      "result_id": "2560cd85-052b-40cb-853d-de1538a6bf19"
+    },
+    {
+      "claim_id": "20e840f3-7ab7-477e-9dd2-b00ab09020ac",
+      "result_id": "2560cd85-052b-40cb-853d-de1538a6bf19"
+    },
+    {
+      "claim_id": "f2c4822a-50bb-4245-b7a5-1ec4f07bbd37",
+      "result_id": "2560cd85-052b-40cb-853d-de1538a6bf19"
+    },
+    {
+      "claim_id": "4c7ad10e-b6fc-4890-a519-66258e3b44c5",
+      "result_id": "2560cd85-052b-40cb-853d-de1538a6bf19"
+    },
+    {
+      "claim_id": "27dcbf0d-3018-4456-9b83-e3f2d539afb6",
+      "result_id": "2560cd85-052b-40cb-853d-de1538a6bf19"
+    },
+    {
+      "claim_id": "8778928c-6a82-49af-9a7c-611128d1c902",
+      "result_id": "2560cd85-052b-40cb-853d-de1538a6bf19"
+    },
+    {
+      "claim_id": "40d9e3d4-0c36-4a0b-9a33-482caaeb27de",
+      "result_id": "2560cd85-052b-40cb-853d-de1538a6bf19"
+    },
+    {
+      "claim_id": "2488fe62-b9e8-4f6b-9e07-bee7751ac955",
+      "result_id": "2560cd85-052b-40cb-853d-de1538a6bf19"
+    },
+    {
+      "claim_id": "dc75a703-d056-427e-9c85-04668eb8daf9",
+      "result_id": "2560cd85-052b-40cb-853d-de1538a6bf19"
+    },
+    {
+      "claim_id": "dd8f79b4-d489-4763-b8f9-4d3128bdf627",
+      "result_id": "2f5bd806-6f49-4ba9-995c-d47e94450d80"
+    },
+    {
+      "claim_id": "5f56d8a6-b50b-4b7f-8cec-c96ce0c3107f",
+      "result_id": "2f5bd806-6f49-4ba9-995c-d47e94450d80"
+    },
+    {
+      "claim_id": "8288713a-6152-468f-8060-3fdcaccd0c14",
+      "result_id": "6e85a463-c082-4533-a149-5482ce881383"
+    },
+    {
+      "claim_id": "580ac3d3-23bc-4b6c-af49-b04a1fe6b597",
+      "result_id": "6e85a463-c082-4533-a149-5482ce881383"
+    },
+    {
+      "claim_id": "e0fd11bf-098c-49b4-b3a0-77e760dddd5d",
+      "result_id": "6e85a463-c082-4533-a149-5482ce881383"
+    },
+    {
+      "claim_id": "809c5163-2c8e-41b8-b6c9-0f6d6577e340",
+      "result_id": "6e85a463-c082-4533-a149-5482ce881383"
+    },
+    {
+      "claim_id": "4fff9c39-6810-43c4-849c-c38c42ac8193",
+      "result_id": "6e85a463-c082-4533-a149-5482ce881383"
+    },
+    {
+      "claim_id": "33f14739-6164-4884-8d80-8f935be7b691",
+      "result_id": "6e85a463-c082-4533-a149-5482ce881383"
+    },
+    {
+      "claim_id": "4107b967-5bff-41d7-8dc1-f1c7b849f95c",
+      "result_id": "6e85a463-c082-4533-a149-5482ce881383"
+    },
+    {
+      "claim_id": "390f03c8-8b1e-4fad-9384-638a99e329e2",
+      "result_id": "e3db46be-87df-41b7-a3d0-bf48b8cb5930"
+    },
+    {
+      "claim_id": "94fa5fef-0cf6-4fc2-a503-49a72fe58c10",
+      "result_id": "e3db46be-87df-41b7-a3d0-bf48b8cb5930"
+    },
+    {
+      "claim_id": "4c7ff1d5-eac7-4ede-b03f-28f530a3484e",
+      "result_id": "e3db46be-87df-41b7-a3d0-bf48b8cb5930"
+    },
+    {
+      "claim_id": "7fcea9b9-df05-4006-9ac5-aba7e111bc91",
+      "result_id": "e3db46be-87df-41b7-a3d0-bf48b8cb5930"
+    },
+    {
+      "claim_id": "67ee22b5-617f-4dc5-be6a-ff3f4fecf33b",
+      "result_id": "e3db46be-87df-41b7-a3d0-bf48b8cb5930"
+    },
+    {
+      "claim_id": "2f4c274b-9457-4a06-bf5f-2d641b00c18f",
+      "result_id": "e945fe03-082f-4dec-94aa-b49ef6c25ab4"
+    },
+    {
+      "claim_id": "010288a5-7889-481f-b2b4-35158eafbd64",
+      "result_id": "e945fe03-082f-4dec-94aa-b49ef6c25ab4"
+    },
+    {
+      "claim_id": "925ebc29-124f-4a7e-ae27-5eb9cee9ac95",
+      "result_id": "e945fe03-082f-4dec-94aa-b49ef6c25ab4"
+    },
+    {
+      "claim_id": "71b5b27d-472c-4c3a-9121-9f03c758aebc",
+      "result_id": "e945fe03-082f-4dec-94aa-b49ef6c25ab4"
+    },
+    {
+      "claim_id": "e86f5cad-e5fd-4b1a-b937-0ccf1808eef9",
+      "result_id": "e945fe03-082f-4dec-94aa-b49ef6c25ab4"
+    },
+    {
+      "claim_id": "125ad52a-7d2c-4eea-aebb-1282e733b814",
+      "result_id": "e945fe03-082f-4dec-94aa-b49ef6c25ab4"
+    },
+    {
+      "claim_id": "3b7c1c6e-7cbd-49f6-a99a-67fefb59ecd7",
+      "result_id": "e945fe03-082f-4dec-94aa-b49ef6c25ab4"
+    },
+    {
+      "claim_id": "e4b1e7a7-ede8-47e2-9f6a-8e8fc2a2c6e6",
+      "result_id": "e945fe03-082f-4dec-94aa-b49ef6c25ab4"
+    },
+    {
+      "claim_id": "b2451f80-f84f-4aa9-9c32-b0afeb8020dd",
+      "result_id": "42130229-04c6-47d2-b7fd-d94b9563e283"
+    },
+    {
+      "claim_id": "56f16a22-7e12-4d92-8bc7-ce3b624cacb3",
+      "result_id": "42130229-04c6-47d2-b7fd-d94b9563e283"
+    },
+    {
+      "claim_id": "24e4b0e5-e00d-4f49-99fa-76a947a84da6",
+      "result_id": "42130229-04c6-47d2-b7fd-d94b9563e283"
+    },
+    {
+      "claim_id": "007a1746-0b5e-4c24-b2e7-c2674287a233",
+      "result_id": "42130229-04c6-47d2-b7fd-d94b9563e283"
+    },
+    {
+      "claim_id": "479f9075-2f3e-4657-8a48-0974fe008d9f",
+      "result_id": "42130229-04c6-47d2-b7fd-d94b9563e283"
+    },
+    {
+      "claim_id": "e6b77415-c175-43bc-acb8-92ff294f0018",
+      "result_id": "ba1c6ae9-93c9-4bfd-aaed-6b91b48f5be3"
+    },
+    {
+      "claim_id": "0b417fe7-a6a6-489c-a2f5-4cc5cf2444c7",
+      "result_id": "ba1c6ae9-93c9-4bfd-aaed-6b91b48f5be3"
+    },
+    {
+      "claim_id": "b6b33af9-e1ca-42c0-b93b-17d9ee167a5a",
+      "result_id": "ba1c6ae9-93c9-4bfd-aaed-6b91b48f5be3"
+    },
+    {
+      "claim_id": "1c46f29c-d7d5-4058-9c53-60e6b2f1f145",
+      "result_id": "ba1c6ae9-93c9-4bfd-aaed-6b91b48f5be3"
+    },
+    {
+      "claim_id": "59c0b1ed-2e7f-4fde-bf8b-a429c3b97936",
+      "result_id": "ba1c6ae9-93c9-4bfd-aaed-6b91b48f5be3"
+    },
+    {
+      "claim_id": "871e3c5f-a095-4ec6-8d42-9903f24a1554",
+      "result_id": "ba1c6ae9-93c9-4bfd-aaed-6b91b48f5be3"
+    },
+    {
+      "claim_id": "5d77f4b5-5ba4-48da-bbb5-42c3d26c7936",
+      "result_id": "ba1c6ae9-93c9-4bfd-aaed-6b91b48f5be3"
+    },
+    {
+      "claim_id": "bc8092cc-be5f-49c4-8957-c473eca810c2",
+      "result_id": "ba1c6ae9-93c9-4bfd-aaed-6b91b48f5be3"
+    },
+    {
+      "claim_id": "97abe1bf-4463-4348-aab7-408ac05753d6",
+      "result_id": "ba1c6ae9-93c9-4bfd-aaed-6b91b48f5be3"
+    },
+    {
+      "claim_id": "31a1d771-c647-4961-817a-7a321d80d578",
+      "result_id": "ba1c6ae9-93c9-4bfd-aaed-6b91b48f5be3"
+    },
+    {
+      "claim_id": "8b20302b-06c2-4e31-8593-9d5f2fad02b3",
+      "result_id": "ba1c6ae9-93c9-4bfd-aaed-6b91b48f5be3"
+    },
+    {
+      "claim_id": "bedd162d-e986-47b0-89d3-7327558c1699",
+      "result_id": "ba1c6ae9-93c9-4bfd-aaed-6b91b48f5be3"
+    },
+    {
+      "claim_id": "0bc89318-d629-44f7-b5b6-b1021cd378b5",
+      "result_id": "ba1c6ae9-93c9-4bfd-aaed-6b91b48f5be3"
+    },
+    {
+      "claim_id": "50052928-3adb-49e3-9a11-ed4bf13bf865",
+      "result_id": "f0ce139d-bb78-42e7-9ff5-e5e794b01ee9"
+    },
+    {
+      "claim_id": "f77fee54-da48-4ad5-b199-b67737fcfc93",
+      "result_id": "f0ce139d-bb78-42e7-9ff5-e5e794b01ee9"
+    },
+    {
+      "claim_id": "a396a8cf-8180-4f9c-a442-1873782b595e",
+      "result_id": "f0ce139d-bb78-42e7-9ff5-e5e794b01ee9"
+    },
+    {
+      "claim_id": "8aa27702-11b8-46c8-9e68-492049d62a7f",
+      "result_id": "5ebc7f88-e40d-48a4-883a-6d1eb5c2f921"
+    },
+    {
+      "claim_id": "3837b378-f879-4e00-b6e0-ebd883c977cb",
+      "result_id": "fd136f03-a0eb-4595-ae88-434027660652"
+    }
+  ],
+  "comparisons": []
+}

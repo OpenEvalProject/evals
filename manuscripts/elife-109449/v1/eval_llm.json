@@ -1,0 +1,101 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The authors discovered that one firefly flash recording from a 20-firefly experiment on June 7, 2020 had been mislabeled. This recording was from a separate LED-based entrainment experiment conducted simultaneously that was not part of the reported study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide a clear and internally consistent account of the data labeling error. The authors explicitly identify the problematic dataset (C1, C2), describe the experimental context (C3), and explain why the data was incorrectly included (C4, C5). The transparency in reporting this error and its source is appropriate for a correction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C21"
+    ],
+    "result": "The correction to the dataset only affected the 20-firefly condition, with distributions for 5, 10, and 15 fireflies remaining unchanged. Only panel D of Figure 1 was updated, using a 3-second bin size for interburst interval distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, and C21 are explicitly stated and supported by the visual comparison in Figure 1. The authors clearly specify which data remained unchanged (C6), the analytical parameter used (C7), and which figure panel was modified (C21). This is verifiable from the provided figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C20"
+    ],
+    "result": "After removing the problematic data recordings, the comparison between theoretical predictions and experimental data remained robust, with no effect on the main conclusions of the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C20 are supported by Figure 2, which shows the theory-experiment comparison after data correction. The authors demonstrate that their theoretical model still fits the corrected experimental data well. However, the evaluation is qualitative rather than quantitative (no statistical measures of fit are provided).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The corrected experimental dataset includes 10 individual fireflies observed for 5-85 minutes, showing flash trains at ~2 Hz with randomly distributed interburst intervals (seconds to tens of minutes). Three experimental sets with 5, 10, 15, and 20 fireflies were conducted using 9-15 minute segments, with collective burst flashing appearing at approximately 15 fireflies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 provide corrected experimental parameters that are explicitly stated in the text. The observation durations, flash frequencies, and group sizes are clearly specified. Claim C15 references prior work and is confirmed by the current data, providing appropriate context for the threshold behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C16",
+      "C17"
+    ],
+    "result": "The theoretical model was regenerated using revised single-firefly interburst intervals, resulting in updated beta parameter values (\u03b2=0.16, 0.16, 0.20, 0.30 for N=5, 10, 15, 20) that differ substantially from the original values (\u03b2=0.18, 0.13, 0.12, 0.64).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C17, and C22 document the recalculation of model parameters. The corrected beta values show a more consistent trend with increasing N compared to the original values, particularly the dramatic reduction in \u03b2 for N=20 (from 0.64 to 0.30). The updated Figure 3 visually supports these parameter changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "Two errors in the computational analysis were identified and corrected: Figure 7 displayed difference in medians instead of the Kolmogorov-Smirnov test statistic, and the number of simulation trials was 30 (not 10 as originally stated).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C10 explicitly identify errors in the original manuscript. The correction of the statistical metric (C9) is significant as it changes the interpretation of model-data comparison. The trial number correction (C10) affects the statistical power of the simulations but does not change the results since 30 trials were actually performed in both versions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Both original and corrected datasets are publicly available, and all analyses were repeated to confirm that findings remain unaffected by the corrections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C19 demonstrate appropriate scientific transparency and validation. The authors made both datasets available for independent verification and state they repeated all analyses. However, the claim that findings are \"unaffected\" (C19) is somewhat general and would benefit from more specific quantitative comparisons beyond the figures shown.",
+    "result_type": "MINOR"
+  }
+]

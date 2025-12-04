@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "TIFM was formulated to contain 115 metabolites at concentrations matching those in murine PDAC tumor interstitial fluid, and LC-MS validation confirmed metabolites were present at expected concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 together establish that TIFM was successfully formulated based on prior IF measurements and validated by quantitative LC-MS. The correlation shown in Figure 1B (r\u00b2=0.9745, p<0.0001) provides strong evidence that the formulation accurately recapitulates the intended metabolite concentrations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "mPDAC cells adapted to TIFM can proliferate in this medium, but cells maintained in standard RPMI medium lose the ability to grow when transferred to TIFM, suggesting loss of adaptations to TME nutrient stress during long-term standard culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 demonstrate that TIFM-adapted cells maintain proliferative capacity in TIFM (albeit slower than RPMI), while RPMI-adapted cells show near-complete growth arrest upon TIFM transfer. This asymmetric behavior supports the inference that standard culture conditions lead to loss of TME-relevant metabolic adaptations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "PDAC cells cultured in TIFM exhibit transcriptional profiles that more closely resemble in vivo tumor cells compared to cells cultured in standard RPMI medium, demonstrating that physiological nutrient availability is a major driver of cancer cell state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 and C52-C54 collectively show that: (1) the majority of transcripts differ between in vivo and RPMI conditions, (2) TIFM culture enriches for in vivo gene signatures, and (3) most top gene signatures in TIFM vs RPMI match in vivo vs RPMI patterns. The GSEA analyses (Figures 1G-I) and correlation data (Figure 1\u2014figure supplement 3, r=0.3733) provide convergent evidence that TIFM better recapitulates in vivo transcriptional states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "The main transcriptional differences between PDAC cells in TIFM and in vivo relate to cell-cell communication, immune system regulation, and response to biotic stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 is supported by GSEA analysis (Figure 1J) identifying specific GO pathways differentially expressed between TIFM and in vivo conditions. These differences are logically attributable to the absence of immune and stromal cells in the TIFM culture system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The amino acid deprivation signature is enriched in TIFM-cultured PDAC cells, with ASS1 (the rate-limiting enzyme in arginine biosynthesis) being the most differentially expressed gene in this signature and showing upregulation at both mRNA and protein levels in TIFM, in vivo murine tumors, and human PDAC tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 provide convergent evidence from transcriptomics (GSEA, leading edge analysis), immunoblotting, and immunohistochemistry that ASS1 is upregulated under TME nutrient conditions. Claims C15-C16 provide established biochemical context. The data consistently show ASS1 upregulation across multiple experimental systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "PDAC cells in TIFM actively synthesize arginine de novo from citrulline via ASS1, with this pathway contributing substantially to intracellular arginine pools and being essential for cell proliferation under arginine-limited conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23 provide multiple lines of evidence: (1) arginine is severely depleted in PDAC TME (C17), (2) cells selectively consume citrulline (C18), (3) isotope tracing shows ~50% of arginine is synthesized de novo (C19-C20), (4) blocking synthesis by substrate deprivation reduces arginine 10-fold and impairs proliferation (C21-C22), and (5) citrulline is the key substrate (C23). The convergent metabolic, isotope tracing, and functional data strongly support this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Genetic knockout of Ass1 impairs mPDAC proliferation in TIFM, which can be rescued by arginine supplementation or Ass1 re-expression, and arginine supplementation rescues the growth defect of RPMI-adapted cells transferred to TIFM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 provide genetic validation that ASS1-mediated arginine synthesis is functionally important for PDAC cell growth under arginine-limited conditions. The rescue experiments with arginine supplementation and Ass1 re-expression provide strong evidence for specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "PDAC tumors actively synthesize arginine in vivo, as demonstrated by greater 15N-enrichment in tumor arginine compared to plasma after 15N2-glutamine injection, and tumors accumulate higher arginine concentrations than present in the interstitial fluid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 use in vivo isotope tracing to demonstrate active arginine synthesis in tumors. The observation that tumor arginine shows greater 15N-enrichment than can be explained by plasma labeling (C26-C27) provides evidence for intratumoral synthesis. The finding that intratumoral arginine exceeds IF levels (C28-C29) further supports active synthesis and accumulation. However, the authors appropriately note that non-steady-state labeling cannot quantify the fractional contribution of synthesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Despite active arginine biosynthesis in PDAC tumors, genetic knockout of Ass1 does not impair tumor growth in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 report a surprising negative result: Ass1 KO does not affect tumor growth despite low TME arginine levels. This is well-supported by the tumor growth data (Figure 2\u2014figure supplement 3A, B) but creates an apparent paradox with the in vitro TIFM findings. The authors acknowledge this discrepancy and discuss potential compensatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C35"
+    ],
+    "result": "Macropinocytosis does not contribute significantly to arginine homeostasis in TIFM-cultured mPDAC cells, even when arginine synthesis is inhibited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 and C35 show that both genetic (Sdc1 knockdown) and pharmacological (hydroxychloroquine) inhibition of macropinocytosis do not affect arginine levels or proliferation in TIFM, nor do they exacerbate effects of arginine synthesis inhibition. The data support the conclusion that macropinocytosis is not a major arginine source in this system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "When arginine synthesis is inhibited, mPDAC cells compensate by upregulating arginine transporter expression and increasing arginine uptake, and eliminating extracellular arginine completely blocks proliferation under these conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 demonstrate an adaptive response: cells upregulate arginine transporters (C37) and increase uptake (C38) when synthesis is blocked, and removing extracellular arginine under these conditions abolishes growth (C39). This identifies compensatory arginine uptake as the mechanism allowing survival when synthesis is inhibited, explaining the in vivo Ass1 KO phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Myeloid-derived arginase-1 activity is responsible for arginine depletion in the PDAC tumor microenvironment, as demonstrated by genetic and pharmacological inhibition experiments showing ~9-fold increases in IF arginine upon arginase inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 provide convergent evidence from immunohistochemistry (C41-C42), genetic knockout (C43-C45), and pharmacological inhibition (C46) that myeloid arginase-1 drives TME arginine depletion. The ~9-fold increase in IF arginine in Lyz2-Cre+/+; Arg1fl/fl tumors with corresponding ornithine decrease provides strong quantitative evidence for this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Arginine synthesis in PDAC tumors is constitutively active and does not respond to changes in TME arginine availability, as ASS1 expression and synthesis rates are similar in arginine-depleted and arginine-replete tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 show that raising TME arginine by myeloid Arg1 deletion does not alter ASS1 expression (C48) or arginine synthesis rates measured by 15N2-glutamine tracing (C49-C50). This supports the conclusion that arginine synthesis is constitutively active rather than regulated by arginine availability, though the mechanism of regulation remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The role of ASS1 and arginine biosynthesis in cancer is context-dependent: while ASS1 can act as a tumor suppressor in arginine-replete conditions, it becomes tumor-supportive under microenvironmental arginine deprivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 synthesize findings from multiple cited studies showing that ASS1 can be either tumor suppressive or tumor supportive depending on context. The citations support examples of ASS1 reactivation enabling resistance to arginine depletion therapy (C56), metastasis to arginine-limited sites (C57), and adaptation to low arginine (C58). This provides important context for interpreting the PDAC findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Arginine depletion in the TME impairs anti-tumor immune responses, and pharmacological strategies to increase TME arginine have shown promise in improving immunotherapy outcomes in preclinical models and PDAC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by citations to prior work showing that lymphocytes require arginine but cannot upregulate synthesis (C60), that arginine availability limits immune responses (C61), and that increasing TME arginine improves immunotherapy in multiple models including PDAC (C62-C63). These claims appropriately cite prior work rather than presenting new data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Multiple stromal cell types including myeloid cells, fibroblasts, and neurons regulate metabolite availability in the tumor microenvironment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 cite prior studies demonstrating that various stromal populations regulate TME metabolites. These claims provide context for the finding that myeloid cells regulate arginine, situating it within a broader understanding of stromal metabolic regulation. The claims are appropriately supported by citations.",
+    "result_type": "MINOR"
+  }
+]

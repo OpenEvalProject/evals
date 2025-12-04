@@ -1,0 +1,902 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Globular bushy cells (GBCs) of the cochlear nucleus play central roles in the temporal processing of sound.",
+    "claim_type": "EXPLICIT",
+    "source": "Globular bushy cells (GBCs) of the cochlear nucleus play central roles in the temporal processing of sound.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement from the abstract that is supported by the subsequent detailed analysis and modeling in the manuscript.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "GBC somata have eccentrically located nuclei with non-indented nuclear envelopes.",
+    "claim_type": "EXPLICIT",
+    "source": "Segmentation of neurons from the image volume revealed BC somata as having eccentrically located nuclei (25/26 BCs) with non-indented nuclear envelopes (25/26 BCs; the one indented nuclear envelope was eccentrically located), and stacks of endoplasmic reticulum only along the nuclear envelope facing the bulk of the cell cytoplasm (26/26 BCs; Figure 1B\u2013C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a direct observation from the EM segmentation data, with quantification provided (25/26 cells).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The population of GBC somatic surface areas was slightly skewed from a Gaussian distribution with a mean of 1352 (SD 168.1) \u03bcm\u00b2.",
+    "claim_type": "EXPLICIT",
+    "source": "The population of GBC somatic surface areas was slightly skewed from a Gaussian distribution (1352 (SD 168.1) \u03bcm2), with one outlier (cell with indented nucleus) near 2000 \u03bcm2 (Figure 1E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative measurement from the computational meshes shown in Figure 1E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Both spherical and globular subpopulations of bushy cells encode temporal fine structure and modulation of sound with high fidelity, but GBCs do so with greater precision.",
+    "claim_type": "EXPLICIT",
+    "source": "Both spherical and globular subpopulations of bushy cells (BCs) of the cochlear nucleus (CN) encode temporal fine structure and modulation of sound with high fidelity, but the globular bushy cells (GBCs) do so with greater precision. (Bourk, 1976; Joris et al., 1994a; Joris et al., 1994b; Wei et al., 2017; Spirou et al., 1990; Smith et al., 1991).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations to previous literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "GBCs are essential for binaural processing and are a key cell type that defines and drives the early stages of the lemniscal auditory pathway.",
+    "claim_type": "EXPLICIT",
+    "source": "GBCs, many of which are located in the auditory nerve fiber (ANF) entry zone, play central roles in hearing as they are essential for binaural processing and are a key cell type that defines and drives the early stages of the lemniscal auditory pathway (Warr, 1966; Tolbert et al., 1982; Smith et al., 1991; Yin et al., 2019; Spirou et al., 1990).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations to previous literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "The temporal encoding capabilities of GBCs arise from a convergence circuit motif whereby many ANFs project, via large terminals called endbulbs that contain multiple active synaptic zones, onto the cell body.",
+    "claim_type": "EXPLICIT",
+    "source": "The temporal encoding capabilities of GBCs arise from a convergence circuit motif whereby many ANFs project, via large terminals called endbulbs that contain multiple active synaptic zones, onto the cell body. (Tolbert and Morest, 1982; Ryugo and Fekete, 1982; Ryugo and Sento, 1991; Ryugo et al., 1993; Sento and Ryugo, 1989; Spirou et al., 2005; Cant and Morest, 1979a; Nicol and Walmsley, 2002; Lauer et al., 2013; Held, 1893).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations to previous literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "The BC membrane has low threshold K+ channels and a hyperpolarization-activated conductance that together constrain synaptic integration by forcing a <2ms membrane time constant.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, the BC membrane has low threshold K+ channels and a hyperpolarization-activated conductance (Rothman and Manis, 2003a; Manis and Marx, 1991; Cao et al., 2007; Cao and Oertel, 2011) that together constrain synaptic integration by forcing a <2ms membrane time constant and actively abbreviate synaptic potentials.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations to previous literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "A minimum in the distribution of input sizes occurred at ~25\u201335 \u03bcm\u00b2, so all inputs larger than 35 \u03bcm\u00b2 were defined as large terminals of the endbulb class.",
+    "claim_type": "EXPLICIT",
+    "source": "A minimum in the distribution occurred at \u223c25\u201335 \u03bcm2, so all inputs larger than 35 \u03bcm2 were defined as large terminals of the endbulb class (Figure 2C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a methodological decision based on the histogram of input sizes shown in Figure 2C.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "The range of endbulb convergence onto GBCs is 5\u201312 inputs.",
+    "claim_type": "EXPLICIT",
+    "source": "After validating the size range for the endbulb class, we found a range of 5\u201312 convergent endings (Figure 2D, right).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a direct measurement from the EM data shown in Figure 2D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "The range of 5-12 endbulb inputs exceeds prior estimates of 4\u20136 inputs based on physiological measures in mouse.",
+    "claim_type": "EXPLICIT",
+    "source": "This range exceeds prior estimates of 4\u20136 inputs, based on physiological measures in mouse (Cao and Oertel, 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison with previous literature cited.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Two groups of GBCs can be defined based on whether their largest input was greater than or less than 180 \u03bcm\u00b2.",
+    "claim_type": "EXPLICIT",
+    "source": "Inspecting the largest input onto each cell revealed, however, two groups of GBCs, which could be defined based on whether their largest input was greater than or less than 180 \u03bcm2 (histogram along left ordinate in Figure 2D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from the data analysis shown in Figure 2D.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "One group of GBCs follows the coincidence detection model where all inputs are subthreshold (12/21 cells).",
+    "claim_type": "EXPLICIT",
+    "source": "We hypothesized from this structural analysis that one group of GBCs follows the coincidence detection (CD) model depicted in Figure 2A where all inputs are subthreshold (12/21 cells; red lines in Figure 2D), and a second group of GBCs follows a mixed coincidence-detection / latency detector model (mixed-mode, MM) where one or two inputs are suprathreshold and the remainder are subthreshold (9/21 cells; black lines in Figure 2D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a hypothesis based on structural analysis of the data shown in Figure 2D.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "A second group of GBCs follows a mixed-mode model where one or two inputs are suprathreshold and the remainder are subthreshold (9/21 cells).",
+    "claim_type": "EXPLICIT",
+    "source": "We hypothesized from this structural analysis that one group of GBCs follows the coincidence detection (CD) model depicted in Figure 2A where all inputs are subthreshold (12/21 cells; red lines in Figure 2D), and a second group of GBCs follows a mixed coincidence-detection / latency detector model (mixed-mode, MM) where one or two inputs are suprathreshold and the remainder are subthreshold (9/21 cells; black lines in Figure 2D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a hypothesis based on structural analysis of the data shown in Figure 2D.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "No cells strictly matched the latency detector model (all suprathreshold inputs).",
+    "claim_type": "EXPLICIT",
+    "source": "No cells strictly matched the latency detector model (all suprathreshold inputs) depicted in Figure 2B.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct observation from the structural analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "The majority (98/158) of endbulbs could be traced along axon branches to parent ANFs constituting fascicles within the image volume.",
+    "claim_type": "EXPLICIT",
+    "source": "The majority (98/158) of end bulbs could be traced along axon branches to parent ANFs constituting fascicles within the image volume.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct count from the EM reconstruction.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Nine fascicles were identified in the image volume, containing in total 1100 axons.",
+    "claim_type": "EXPLICIT",
+    "source": "We identified nine fascicles in the image volume, containing in total 1100 axons (based on a section taken through middle of volume), which is 7\u201315% of the total number of ANFs in mouse (7,300\u201316,600) (Burda et al., 1988; Anniko and Arnesen, 1988; Camarero et al., 2001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct count from the EM data, with comparison to literature values.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Branches were thinner than the parent ANFs (1.4 (SD 0.33) vs 2.7 (SD 0.30) \u03bcm diameter).",
+    "claim_type": "EXPLICIT",
+    "source": "Branches were thinner than the parent ANFs, (1.4 (SD 0.33) vs 2.7 (SD 0.30) \u03bcm diameter), and both the parent ANF and branches had the same g-ratio of fiber (including myelin) to axon diameter (Figure 3F; ratio 0.76 across all axons).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a direct measurement from the EM data shown in Figure 3F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Both the parent ANF and branches had the same g-ratio of fiber to axon diameter (ratio 0.76 across all axons).",
+    "claim_type": "EXPLICIT",
+    "source": "Branches were thinner than the parent ANFs, (1.4 (SD 0.33) vs 2.7 (SD 0.30) \u03bcm diameter), and both the parent ANF and branches had the same g-ratio of fiber (including myelin) to axon diameter (Figure 3F; ratio 0.76 across all axons).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a direct measurement from the EM data shown in Figure 3F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "The conduction velocity range for ANF branches is 2.3\u20138.9 m/s.",
+    "claim_type": "EXPLICIT",
+    "source": "From these data, we applied a conversion of 4.6 * fiber diameter in \u03bcm (Boyd and Kalu, 1979; Waxman and Bennett, 1972) to the distribution of fiber lengths, yielding a conduction velocity range of 2.3\u20138.9 m/s, and a delay range of 0 (en passant terminal) - 15.9 \u03bcs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a calculation based on measured fiber diameters and a conversion factor from the literature.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The predicted SD of the first spike latency in the model varied from 0.232 to 0.404ms.",
+    "claim_type": "EXPLICIT",
+    "source": "The predicted SD of the first spike latency in the model varied from 0.232 to 0.404ms (Figure 4\u2014figure supplement 4), while the coefficient of variation of interpsike intervals ranged from 0.45 to 0.73.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from the computational model simulations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "The coefficient of variation of interspike intervals in the model ranged from 0.45 to 0.73.",
+    "claim_type": "EXPLICIT",
+    "source": "The predicted SD of the first spike latency in the model varied from 0.232 to 0.404ms (Figure 4\u2014figure supplement 4), while the coefficient of variation of interpsike intervals ranged from 0.45 to 0.73.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from the computational model simulations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "The model predictions for first spike latency SD and coefficient of variation are similar to values reported for mouse CN in vivo.",
+    "claim_type": "EXPLICIT",
+    "source": "These ranges are similar to values reported for mouse CN in vivo (Roos and May, 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison of model results with published experimental data.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "GBCs could be divided into two groups based on the pattern of efficacy growth with input size.",
+    "claim_type": "EXPLICIT",
+    "source": "GBCs could be divided into two groups based on the pattern of efficacy growth with input size. GBCs 09, 11, 13 and 17 formed one group, and GBCs 02, 05, 06, 10, 18, and 30 formed a second group with overall lower efficacy.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from the model simulations shown in Figure 5D.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The group with greater excitability had half-maximal size for input ASAs of 148.6 (SD 1.1) \u03bcm\u00b2 and a maximal efficacy of 0.72 (SD 0.01).",
+    "claim_type": "EXPLICIT",
+    "source": "The group with the greater excitability had half-maximal size for input ASAs of 148.6 (SD 1.1) \u03bcm2 and a maximal efficacy of 0.72 (SB 0.01) \u03bcm2, with a slope factor of 14.3 (SD 1.1)/\u03bcm2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from fitting logistic functions to the model data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The group with lesser excitability had half-maximal size of 204.3 (SD 4.7) \u03bcm\u00b2 and a slope factor of 19.8 (SD 2.2)/\u03bcm\u00b2.",
+    "claim_type": "EXPLICIT",
+    "source": "The fit to the group with lesser excitability (Figure 5D, light blue line) yielded a half-maximal size of 204.3 (SD 4.7) \u03bcm2, and with a slope factor of 19.8 (SD 2.2)/\u03bcm2.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from fitting logistic functions to the model data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The smaller inputs have a higher relative participation at 30 dB SPL than larger inputs.",
+    "claim_type": "EXPLICIT",
+    "source": "The smaller inputs have a higher relative participation at 30 dB SPL than larger inputs (Figure 5F), suggesting a rate-based increase in coincidence among weaker inputs at higher intensities.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from the model simulations shown in Figure 5F.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Dendrite surface area is highly correlated with action potential threshold (p < 0.001, r\u00b2 = 0.94).",
+    "claim_type": "EXPLICIT",
+    "source": "Threshold was highly correlated with dendrite surface area (p < 0.001, r2 = 0.94, Figure 5I), but modestly correlated with soma surface area (p < 0.121, r2 = 0.352, Figure 5J) or the ratio of dendrite to soma surface areas (p < 0.046, r2 = 0.511).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statistical analysis of the relationship between morphological features and model predictions.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Soma surface area is modestly correlated with action potential threshold (p < 0.121, r\u00b2 = 0.352).",
+    "claim_type": "EXPLICIT",
+    "source": "Threshold was highly correlated with dendrite surface area (p < 0.001, r2 = 0.94, Figure 5I), but modestly correlated with soma surface area (p < 0.121, r2 = 0.352, Figure 5J) or the ratio of dendrite to soma surface areas (p < 0.046, r2 = 0.511).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statistical analysis of the relationship between morphological features and model predictions.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "The axon hillock was short (2.3 (SD 0.9) \u03bcm measured in all 21 GBCs with reconstructed endbulbs).",
+    "claim_type": "EXPLICIT",
+    "source": "The axon hillock was short (2.3 (SD 0.9) \u03bcm measured in all 21 GBCs with reconstructed endbulbs).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct measurement from the EM data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The AIS length averaged 16.8 (SD 6.3) \u03bcm (range 14.2-21.4 \u03bcm; n=16).",
+    "claim_type": "EXPLICIT",
+    "source": "The AIS length averaged 16.8 (SD 6.3) \u03bcm (range 14.2-21.4 \u03bcm ; n=16, the remaining five axons exited the volume before becoming myelinated) and was thinner than the myelinated axon.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct measurement from the EM data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "For each cell the threshold to a somatic current pulse decreased by nearly 40% with increasing AIS length across the measured range of values.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, for each cell the threshold to a somatic current pulse decreased by nearly 40% with increasing AIS length across the measured range of values (Figure 5K).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from the computational model simulations shown in Figure 5K.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "In 20 of 21 cells for which all large inputs were reconstructed, at least one endbulb terminal (range 1\u20134) extended onto the axon (hillock and/or the AIS).",
+    "claim_type": "EXPLICIT",
+    "source": "In 20 of 21 cells for which all large inputs were reconstructed, at least one endbulb terminal (range 1\u20134) extended onto the axon (hillock and/or the AIS), contacting an average of 18.5 (SD 10) \u03bcm2 of the axonal surface (range 0.7-35.2 \u03bcm2 ).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct observation from the EM reconstructions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The combined hillock/initial segment of every cell was also innervated by 11.8 (SD 5.6) smaller terminals (range 4-22; n=16).",
+    "claim_type": "EXPLICIT",
+    "source": "The combined hillock/initial segment of every cell was also innervated by 11.8 (SD 5.6) smaller terminals (range 4-22; n=16).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct count from the EM reconstructions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "GBCs had higher VS at low modulation frequencies (<300 Hz), and lower VS at higher modulation frequencies (>300 Hz) compared to ANFs.",
+    "claim_type": "EXPLICIT",
+    "source": "We then compared responses of GBCs to ANFs across a range of modulation frequencies from 50 to 1000 Hz at 15 dB SPL, which revealed the tuning of GBCs to SAM tones. GBCs had higher VS at low modulation frequencies (<300 Hz), and lower VS at higher modulation frequencies (>300 Hz).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the computational model simulations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Coincidence-detection GBCs had enhanced VS relative to ANFs at 100 and 200 Hz.",
+    "claim_type": "EXPLICIT",
+    "source": "Responses varied by convergence motif, whereby coincidence-detection GBCs had enhanced VS relative to ANFs at 100 and 200 Hz (Figure 6O1\u2013O2, GBC02 and GBC30), but mixed-mode GBCs only at 200 Hz (blue lines in Figure 6 O3\u2013O4, GBC09 and GBC17).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from the computational model simulations shown in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Mixed-mode GBCs had enhanced VS relative to ANFs only at 200 Hz.",
+    "claim_type": "EXPLICIT",
+    "source": "Responses varied by convergence motif, whereby coincidence-detection GBCs had enhanced VS relative to ANFs at 100 and 200 Hz (Figure 6O1\u2013O2, GBC02 and GBC30), but mixed-mode GBCs only at 200 Hz (blue lines in Figure 6 O3\u2013O4, GBC09 and GBC17).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from the computational model simulations shown in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Removing the largest input for mixed mode cells improved VS at 50 and 100 Hz.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, this modification improved VS at 50 and 100 Hz, and the tuning profile broadened to resemble the coincidence detection GBCs (green, purple traces in Figure 6 O3-4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from the computational model simulations shown in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Of the 26 GBCs, 24 extended a single proximal dendrite and 2 extended two proximal dendrites.",
+    "claim_type": "EXPLICIT",
+    "source": "Of the 26 GBCs, 24 extended a single proximal dendrite (although one dendrite branched after 1.8 m), and 2 extended two proximal dendrites.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct observation from the EM reconstructions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Proximal dendrite length ranged from 3.2-19.6 \u03bcm (mean 12.9 (SD 6.2) \u03bcm) for 22/26 GBCs.",
+    "claim_type": "EXPLICIT",
+    "source": "Proximal dendrite length was measured for 22/26 GBCs (proximal dendrites of remaining 4 cells exited image volume), and could reach up to 20 \u03bcm (range 3.2-19.6 \u03bcm; mean 12.9 (SD 6.2) \u03bcm) from the cell body.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct measurement from the EM data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Proximal dendrites expanded into a structure from which at least 2 and up to 14 branches extend (7.0 SD (3.8), n=10).",
+    "claim_type": "EXPLICIT",
+    "source": "Proximal dendrites expanded into a structure from which at least 2 and up to 14 branches extend (7.0 SD (3.8), n=10). We name these structures hubs, due to their high node connectivity (7 branches visible in Figure 7G).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a direct observation from the EM reconstructions, with quantification.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "One-half (11/22 GBCs) of primary hubs contained a core of filaments that extended through the middle of the structure.",
+    "claim_type": "EXPLICIT",
+    "source": "One-half (11/22 GBCs) of primary, and some secondary hubs contained a core of filaments that extended through the middle of the structure. This filamentous core was in contact with multiple mitochondria oriented along its axis (Figure 7J; and Figure 7\u2014figure supplement 1), and was also found in a thickened region of a second order dendrite of one of the two large MCs.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a direct observation from the EM images.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Swellings were more numerous than hubs (range 51\u2013126, mean = 74.9 (SD 26.8)).",
+    "claim_type": "EXPLICIT",
+    "source": "Dendrites, as noted previously, have many swellings (Figure 7H) along higher order branches. Swellings were more numerous than hubs (range 51\u2013126, mean = 74.9 (SD 26.8)), and were not correlated with the number of hubs (r2 < 0.001; Figure 7H).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a direct count from the EM reconstructions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "In rank order, dendrite surface area was comprised of dendritic shafts (58%), swellings (28%), hubs (10%), and the proximal dendrite (4%).",
+    "claim_type": "EXPLICIT",
+    "source": "In rank order, dendrite surface area was comprised of dendritic shafts (58%), swellings (28%), hubs (10%), and the proximal dendrite (4%; Figure 7K).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a calculation based on the EM reconstructions shown in Figure 7K.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "GBC09 had 8 endbulb inputs from ANFs and 97 small terminals contacting the cell body.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition to 8 endbulb inputs from ANFs, 97 small terminals contacted the cell body. Together these inputs covered 83% of its somatic surface (Figure 8C and D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a direct count from the complete synaptic map of GBC09.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "GBC09 had 224 inputs across all dendritic compartments.",
+    "claim_type": "EXPLICIT",
+    "source": "This neuron had 224 inputs across all dendritic compartments (shaft, swelling, hub, proximal dendrite) (Figure 8H).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a direct count from the complete synaptic map of GBC09.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Innervation density was similar across most compartments (hubs, 10.4/100 \u03bcm\u00b2; swellings, 9.3/100 \u03bcm\u00b2; shafts 9.1/100 \u03bcm\u00b2), and greatest on the proximal dendrite (24/100 \u03bcm\u00b2).",
+    "claim_type": "EXPLICIT",
+    "source": "However, in our reconstruction, innervation density was similar across most compartments (hubs, 10.4/100 \u03bcm2; swellings, 9.3/100 \u03bcm2; shafts 9.1/100 \u03bcm2), and greatest on the proximal dendrite (24/100 \u03bcm2; Figure 8A, E, G and H).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a calculation based on the complete synaptic map of GBC09.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "At least one endbulb (typically 1 but up to 3) on nearly all GBCs (20/21) extended onto the proximal dendrite (mean = 14.5% of endbulb ASA).",
+    "claim_type": "EXPLICIT",
+    "source": "At least one endbulb (typically 1 but up to 3) on nearly all GBCs (20/21) extended onto the proximal dendrite (mean = 14.5% of endbulb ASA; black arrow in Figure 8A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a direct observation from the EM reconstructions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Entire dendrite branches could be devoid of innervation.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, entire dendrite branches could be devoid of innervation (black arrows in Figure 8B), and instead were wrapped by glial cells, or extended into bundles of myelinated axons (Figure 8F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a direct observation from the complete synaptic map of GBC09.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Pruning non-innervated dendrites increased the input resistance from 20.2 to 25.1 M\u03a9.",
+    "claim_type": "EXPLICIT",
+    "source": "Pruning increased the input resistance from 20.2 to 25.1 M\u03a9, (Figure 8I and J) and increased the time constant from 1.47 ms to 1.65 ms.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from the computational model simulations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Pruning non-innervated dendrites decreased the threshold for action potential generation from 0.439 to 0.348 nA.",
+    "claim_type": "EXPLICIT",
+    "source": "The threshold for action potential generation for short current pulses decreased from 0.439 to 0.348 nA (Figure 8J), but the cell maintained its phasic firing pattern to current pulses (Figure 8I compared to Figure 4\u2014figure supplement 3, \"Half-active\").",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from the computational model simulations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Pruning non-innervated dendrites increased the efficacy for the four largest inputs by 14%, 216%, 733%, and 871% respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "These seemingly subtle changes in biophysical parameters increased the efficacy for the four largest inputs (0.689\u20130.786 (14%); 0.136\u20130.431 (216%); 0.021\u20130.175 (733%);, 0.00092\u20130.00893 (871%); Figure 8K and L).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from the computational model simulations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Volume EM offers solutions to fundamental questions about network connectivity not accessible by LM.",
+    "claim_type": "EXPLICIT",
+    "source": "Volume EM offers solutions to fundamental questions about network connectivity not accessible by LM, by revealing in unbiased sampling all cells and their intracellular structures, including sites of chemical synaptic transmission (for reviews, see Briggman and Bock, 2012; Abbott et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about the capabilities of volume EM, supported by citations.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The image volume contained nearly 2,000 serial sections and visualized a volume of over 100 \u03bcm in each dimension.",
+    "claim_type": "EXPLICIT",
+    "source": "By acquiring nearly 2,000 serial sections and visualizing a volume of over 100 \u03bcm in each dimension, we provided reconstruction of the largest number of GBCs to date, permitting more detailed analysis than was possible with previous EM methods that subsampled tissue regions using serial sections (Nicol and Walmsley, 2002; Spirou et al., 2008; Ostapoff and Morest, 1991).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the methods used in the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The cytological features of the GBCs in this study define a subpopulation more similar to globular (G)BCs than spherical (S)BCs as defined in larger mammals.",
+    "claim_type": "EXPLICIT",
+    "source": "These cytological features, except for ER patterns, define a subpopulation of GBCs in mice more similar to globular (G)BCs than spherical (S)BCs as defined in larger mammals (Cant and Morest, 1979b; Cant and Morest, 1979a; Tolbert et al., 1982; Osen, 1969; Hackney et al., 1990) and are also consistent with criteria based on a larger number of endbulb inputs onto GBCs (Lauer et al., 2013) than BCs located in the rostral AVCN of rat (likely spherical bushy cells; see Nicol and Walmsley, 2002).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison of the current findings with previous literature.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "In cat, the number of endbulb inputs onto GBCs is large (mean 22.9) and exceeds the number onto spherical bushy cells (typically 2).",
+    "claim_type": "EXPLICIT",
+    "source": "In cat, the number of endbulb inputs onto GBCs is also large (Spirou et al., 2005, mean 22.9) and exceeds the number onto spherical bushy cells (Ryugo and Sento, 1991, typically 2).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison with previous literature on cat GBCs.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The models predict auditory nerve input profiles whereby all endbulbs onto a GBC are subthreshold (coincidence detection mode), or one or two inputs are suprathreshold (mixed mode).",
+    "claim_type": "EXPLICIT",
+    "source": "With these constraints, the models predict auditory nerve input profiles whereby all endbulbs onto a GBC are subthreshold (coincidence detection mode), or one or two inputs are suprathreshold (mixed mode).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction from the computational models.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The models predict the relative importance of dendrite geometry, soma size, and axon initial segment length in setting action potential threshold and generating heterogeneity in sound-evoked responses.",
+    "claim_type": "EXPLICIT",
+    "source": "The models also predict the relative importance of dendrite geometry, soma size, and axon initial segment length in setting action potential threshold and generating heterogeneity in sound-evoked responses, and thereby propose mechanisms by which GBCs may homeostatically adjust their excitability.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction from the computational models.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Volume EM reveals new dendritic structures and dendrites that lack innervation.",
+    "claim_type": "EXPLICIT",
+    "source": "Volume EM also reveals new dendritic structures and dendrites that lack innervation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct observation from the EM data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The mouse CN is compact, permitting the evaluation of a larger fraction of the circuit in a prescribed EM volume.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, the mouse CN is compact, permitting the evaluation of a larger fraction of the circuit in a prescribed EM volume.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a justification for the choice of mouse as the model organism.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The tools available for mouse genetics provide an advantage for future studies to identify cells and classes of synapses.",
+    "claim_type": "EXPLICIT",
+    "source": "Third, the tools available for mouse genetics provide an advantage for future studies to identify cells and classes of synapses, which can be mapped onto the current image volume.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a justification for the choice of mouse as the model organism.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "The image volume was taken from the auditory nerve entry zone of the mouse CN, which has a high concentration of BCs.",
+    "claim_type": "EXPLICIT",
+    "source": "The image volume was taken from the auditory nerve entry zone of the mouse CN, which has a high concentration of BCs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the location of the imaged tissue.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "A volume of 148 \u03bcm x 158 \u03bcm x 111 \u03bcm was imaged with an in-plane pixel resolution of 5.5 nm.",
+    "claim_type": "EXPLICIT",
+    "source": "A volume of 148 \u03bcm x 158 \u03bcm x 111 \u03bcm was imaged with an in-plane pixel resolution of 5.5 nm.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the imaging parameters.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Voxel averaging at 2x2 binning increased the dimensions of each voxel to 11.0nm x 11.0 nm x 60.0 nm.",
+    "claim_type": "EXPLICIT",
+    "source": "Voxel averaging at 2x2 binning increased the dimensions of each voxel to 11.0nm x 11.0 nm x 60.0 nm.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the image processing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "With these imaging parameters, synaptic vesicles can be identified and, in many cases, a post-synaptic density.",
+    "claim_type": "EXPLICIT",
+    "source": "With these imaging parameters, synaptic vesicles can be identified and, in many cases, a post-synaptic density, which appears as darkening on the post-synaptic membrane.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the resolution of the imaging.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Synapses were defined by collections of vesicles near the presynaptic membrane across at least 3 sections and with at least one vesicle in contact with the membrane.",
+    "claim_type": "EXPLICIT",
+    "source": "Synapses were defined by collections of vesicles near the presynaptic membrane across at least 3 sections and with at least one vesicle in contact with the membrane (Jackson et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the criteria used to identify synapses.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  }
+]

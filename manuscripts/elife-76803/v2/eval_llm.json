@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C22",
+      "C23",
+      "C33",
+      "C34",
+      "C52"
+    ],
+    "result": "Multiple visual cortical areas (EVC, LO, V3A/B, hMT+) showed differential BOLD responses that could discriminate the double-drift illusion from a matched control condition. When attention was directed to fixation rather than the stimulus, decoding remained significant in LO, V3A/B, and hMT+ but dropped to chance in early visual cortex (EVC), suggesting that EVC decoding reflects attentional effects while higher areas encode perceived position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C21-23, C33-34, and C52 collectively demonstrate that multiple visual areas respond differentially to the illusion, with appropriate controls for attention (Experiment 2). The experimental design properly controls for low-level stimulus properties and attention, and the decoding analyses with permutation testing provide robust statistical support. The inference that EVC reflects attention while higher areas encode perception is well-justified by the differential effects of the attention manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C24",
+      "C25",
+      "C35",
+      "C60",
+      "C68"
+    ],
+    "result": "Only area hMT+ could decode the illusory trajectory direction (leftward vs. rightward drift paths), despite the stimulus remaining at a constant retinal location during smooth pursuit. This suggests that hMT+ integrates retinal and extraretinal information to construct a spatiotopic representation of the perceived stimulus position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C24-25, C35, C60, and C68 provide converging evidence that hMT+ uniquely encodes the illusory trajectory. The experimental design with retinally-stabilized stimuli during smooth pursuit is critical: since retinal position was constant, successful decoding of trajectory direction necessarily implies non-retinotopic encoding. Multiple control experiments (pursuit-selective voxels, local motion controls, eye tracking) rule out alternative explanations. The conclusion of spatiotopic representation in hMT+ is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Concurrent eye tracking confirmed accurate pursuit, and multiple control analyses ruled out oculomotor explanations for the fMRI decoding results. The illusory trajectory could not be decoded from eye position measurements, pursuit-selective voxels showed no trajectory information, and microsaccade characteristics did not differ between conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-7, C26-30 provide comprehensive controls for oculomotor confounds. The convergence of evidence from multiple independent analyses (eye tracking decoding, pursuit-selective voxel analysis, microsaccade analysis) strongly supports the conclusion that oculomotor behavior does not explain the fMRI findings. The experimental design and statistical analyses appear rigorous, though the sample size for concurrent eye tracking (n=5-6) is relatively small.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "A control experiment (Experiment 3) demonstrated that local motion alone, without the global trajectory and illusion, could not be decoded in hMT+, ruling out the possibility that trajectory decoding was due solely to differences in local motion patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-32 describe a critical control that addresses whether the temporal sequence of local motion directions could explain trajectory decoding. The inability to decode local motion alone while successfully decoding the illusion trajectory provides strong evidence that the decodable information in hMT+ specifically relates to the illusory percept rather than low-level motion features. This control is well-designed and the conclusion is justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C36",
+      "C48",
+      "C49",
+      "C59"
+    ],
+    "result": "The results provide evidence for a perceptual representation in human visual cortex that incorporates extraretinal information and suggest spatiotopic processing. During smooth pursuit, the stimulus envelope only has a trajectory in spatiotopic coordinates, and the persistence of the illusion with retinal stabilization implies spatiotopic processing distinct from perisaccadic remapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C36, C48-49, and C59 represent the main conclusions of the study. These are well-supported by the experimental findings showing trajectory decoding despite constant retinal position (C5, C24), the control experiments ruling out confounds (C26-32), and the theoretical argument that smooth pursuit requires different mechanisms than saccadic remapping (C57-59). The logic connecting retinal stabilization during pursuit to spatiotopic encoding is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C47"
+    ],
+    "result": "The authors discuss two potential mechanisms for trajectory decoding in hMT+: a fovea-centered motion bias or topographic organization reflecting differences in perceived eccentricity between leftward and rightward drift paths. They argue the fovea-centered bias is unlikely given the balanced design, and suggest the topographic account implies explicit representation of perceived position in hMT+ but veridical encoding in EVC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37-43 and C47 present speculative interpretations of the mechanism underlying trajectory decoding. While the authors appropriately cite relevant literature (C37-39, C41) and provide logical arguments against the fovea-centered bias (C40), the topographic explanation (C41-43) remains speculative without direct evidence. The claim that this implies differential encoding between EVC and hMT+ (C43, C47) is an interesting hypothesis but requires additional experiments to test directly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The authors propose that spatiotopic processing could be accomplished either through an explicit spatiotopic reference frame or through combining retinotopic input with eye position gain fields, but acknowledge their data do not distinguish between these mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-51 present two plausible computational mechanisms for spatiotopic processing, both supported by citations to relevant literature. However, the authors explicitly state their data cannot distinguish between these possibilities. This is an appropriate acknowledgment of the study's limitations. The claims are speculative regarding mechanism but honest about what the current data can and cannot address.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C65"
+    ],
+    "result": "Attention and task demands impact the spatial encoding of the double-drift illusion, as demonstrated by differential decoding patterns between attend-stimulus and attend-fixation conditions. Multiple factors including spatial attention may influence the ability to decode illusory motion paths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-54 and C65 are supported by the comparison between Experiments 1 and 2, which systematically manipulated attention while controlling other factors. The finding that EVC decoding dropped to chance when attention was directed away from the stimulus (C21-22, C34) while higher areas maintained significant decoding provides clear evidence for attentional modulation. This is an important methodological contribution highlighting the need to control attentional state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors argue that their spatiotopic findings reflect a different mechanism than perisaccadic remapping, reasoning that remapping is relevant only for discrete saccades and cannot account for continuous smooth pursuit. They conclude that spatiotopic signals robust to smooth pursuit provide evidence for spatiotopic representation rather than remapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-60 present a logical argument distinguishing spatiotopic representation from remapping mechanisms. The reasoning is sound: remapping requires discrete events (saccades) with time for receptive field shifts and returns, which is incompatible with continuous smooth pursuit (C57-58). The experimental design using smooth pursuit without saccades (C57) appropriately tests this distinction. While C58 is somewhat speculative, the overall argument is well-reasoned and supported by the experimental approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors critically evaluate a previous study (Liu et al., 2019) that used the double-drift illusion without smooth pursuit, noting inconsistencies in that study's results and arguing that their own study uniquely addresses reference frame encoding because smooth pursuit ensures spatiotopic rather than potentially retinotopic encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-68 provide a critical but fair evaluation of related prior work. The authors correctly identify methodological differences (fixation vs. pursuit) that affect interpretation regarding reference frames (C66-68). The criticism of inconsistencies in Liu et al.'s results (C64) is based on comparing their reported figures. The distinction that the current study uniquely addresses spatiotopic encoding due to the smooth pursuit design (C68) is valid and important for contextualizing the contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The study employed 19 participants across multiple experiments, used carefully controlled Gabor stimuli with specific motion parameters, acquired 7T fMRI data with appropriate preprocessing, defined ROIs using anatomical templates, and performed decoding analyses with maximum likelihood classifiers using leave-one-run-out cross-validation and permutation testing for statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-85 describe the methodological details of the study. The methods appear rigorous and appropriate: adequate sample sizes for fMRI (though smaller for eye tracking controls), well-specified stimulus parameters (C70-73), standard fMRI acquisition and preprocessing (C78), validated ROI definition approach (C79-81), and appropriate statistical methods including cross-validation and permutation testing (C83-85). The behavioral performance data (C76-77) confirm task engagement. These methodological claims are well-documented and standard for the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The double-drift illusion is characterized by local motion within a moving window altering the perceived path, persists during smooth pursuit with retinal stabilization, can deviate up to 45\u00b0 from veridical trajectory, and implies integration of retinal and non-retinal eye-movement signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-3 and C16-18 describe established properties of the double-drift illusion based on prior literature (C17-18 cite multiple studies). These are accurate characterizations of the phenomenon that provide essential background for the study. The inference that the illusion involves integration of retinal and extraretinal signals (C3) is a reasonable interpretation of the persistence during retinal stabilization (C2, C18).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C19",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors review prior literature on visual reference frames, noting that while neurons encode retinal position and perception is stable across eye movements, evidence for spatiotopic representations is mixed, with some studies supporting spatiotopic encoding in areas like VIP and hMT+ while others find retinotopic encoding, and factors like attention and task demands may influence reference frame.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-15, C19, C45-46 accurately summarize the state of the literature on visual reference frames, appropriately citing relevant studies for each claim. The authors present a balanced view of conflicting findings in the field (spatiotopic vs. retinotopic encoding) and note important moderating factors like attention (C14-15). This provides appropriate context for their study and accurately represents the scientific debate in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "A previous fMRI study (Maus et al., 2013) reported that BOLD activity in hMT+ reflects illusory position during motion-induced position shift, consistent with the current study's interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 cites a specific prior study that supports the interpretation that hMT+ can encode illusory rather than veridical position. This is an appropriate citation of relevant prior work that provides convergent evidence for the current findings. The claim accurately represents the cited work.",
+    "result_type": "MINOR"
+  }
+]

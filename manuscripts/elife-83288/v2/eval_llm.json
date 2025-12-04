@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C146"
+    ],
+    "result": "The study employed a paternal obesity mouse model where C57BL/6J male mice were fed either a control or high-fat diet for 10-12 weeks starting at 6 weeks of age, then mated with control-fed females to generate pregnancies. Sperm and placentas were collected at E14.5 for ChIP-seq targeting H3K4me3 and RNA-seq analysis, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C3, and C146 describe the experimental design and methodology, which are clearly stated in the abstract and methods sections. The experimental approach is well-documented with appropriate sample collection timepoints and analytical methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Paternal obesity induced alterations in sperm H3K4me3 enrichment at 35,184 genomic regions, with the top 5% obesity-sensitive regions (n=1,760) showing predominantly increased enrichment (71.4%). These regions were characterized by distinct genomic features: regions losing H3K4me3 were located >5kb from TSS with low CpG density, while regions gaining H3K4me3 were near TSS (<1kb) with high CpG density. The altered regions were enriched at gene promoters involved in metabolic processes, cellular stress responses, transcription, and development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C45-C53 collectively demonstrate obesity-associated changes in sperm H3K4me3 with detailed characterization of genomic features, locations, and functional enrichment. The data include appropriate statistical analyses (PCA, Fisher's exact test) and are supported by figures showing heatmaps, profile plots, and GO analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Specific genes showing differential H3K4me3 enrichment in obese sperm included Cbx7, Prdx6, Slc19a1, and the imprinted gene Igf2. Igf2, a paternally expressed gene essential for placental growth, was previously shown to be differentially expressed in placentas from obese males and has been linked to metabolic disease and obesity. Other imprinted genes with altered H3K4me3 included Otx2 and Kcnq1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 identify specific genes with altered H3K4me3 and provide functional context. The identification of Igf2 is particularly well-supported with cross-validation from prior work (C58) and established functional relevance (C59). The gene descriptions are consistent with established knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C5"
+    ],
+    "result": "Differential H3K4me3 enrichment in HFD-sperm occurred at putative enhancers, including placenta-specific enhancers. Three genes potentially regulated by placenta-specific enhancers showing altered H3K4me3 were paternally expressed imprinted genes: TMEM174, PLAGL1, and PDGFB, which are involved in cell growth suppression and angiogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C63, and C5 demonstrate that obesity-associated H3K4me3 changes localize to functional regulatory elements including placental enhancers. The identification of three paternally expressed imprinted genes at these enhancers is supported by appropriate genomic annotations and citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Regions gaining H3K4me3 in HFD-sperm were significantly enriched for 202 transcription factor binding motifs (p<0.05, q<0.05), with top motifs belonging to ETS, THAP, and ZF families. Notable enriched motifs included SP1 (associated with recurrent miscarriage, p=1e-16) and ATF7 (associated with oxidative stress-induced epigenetic changes, p=1e-3). Regions losing H3K4me3 showed no significant TF motif enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 present motif enrichment analysis with appropriate statistical testing (binomial test with q-value correction). The identification of specific TFs with biological relevance (SP1, ATF7) is well-supported with citations linking them to reproductive and stress-related phenotypes. The asymmetry between gained and lost regions is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C6"
+    ],
+    "result": "Paternal obesity was associated with differential expression of 2,035 genes in female placentas and 2,365 genes in male placentas. Significantly enriched pathways included genes involved in cholesterol transport, angiogenesis, neurogenesis, and nutrient/vitamin transport. The gene Irs1 was differentially expressed, validating previous findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 and C6 demonstrate sex-specific transcriptomic changes in placentas from obese sires with appropriate RNA-seq analysis and GO enrichment. The validation of Irs1 differential expression provides internal consistency with prior characterization of the model. The functional categories align with known placental functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "In placentas from HFD-sired pregnancies, 23 imprinted genes were differentially expressed in females and 28 in males. While 359 DEGs overlapped between sexes (Fisher's exact test p=1.5e-19), the majority of DEGs were sex-specific: 82% of female DEGs and 85% of male DEGs were uniquely de-regulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 demonstrate sex-specific effects of paternal obesity on placental gene expression, particularly for imprinted genes. The statistical analysis appropriately quantifies overlap and sex-specificity. The high proportion of sex-specific DEGs is clearly documented and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C47"
+    ],
+    "result": "A subset of de-regulated genes in placentas showed changes in H3K4me3 in sperm at corresponding promoters. Of the top 5% deH3K4me3 regions, 128 overlapped with those identified in a previous study (Pepin et al., 2022, Fisher's exact test p=2.2e-16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C7 claims a connection between sperm H3K4me3 and placental DEGs, the manuscript explicitly states the overlap was not statistically significant (Figure 4\u2014figure supplement 1D, Fisher's exact test p=0.62 and p=0.94). The authors acknowledge this limited overlap and discuss potential biological explanations, but the direct mechanistic link remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C8"
+    ],
+    "result": "Deconvolution analysis revealed that paternal obesity altered placental cellular composition, specifically trophoblast cell lineage specification. Female placentas showed a significant decrease in invasive SPT cells (p=0.02), while both male and female placentas showed increased high-Hsd11b2 SPT cells (p=0.01 and p=0.06, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C81, and C8 demonstrate altered trophoblast cell populations using deconvolution analysis of bulk RNA-seq data. The statistical analysis (beta regression) is appropriate for compositional data. However, the p=0.06 for females in C81 is marginally non-significant, which should be noted as a trend rather than a definitive finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "After adjusting for placental cellular composition using PCA on cell-type proportions, 423 DEGs were detected in female placentas and 1,487 in male placentas. The reduction in DEGs after adjustment suggests that changes in cell-type proportions partly drive tissue-level differential expression, consistent with findings in pre-eclampsia studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 demonstrate the impact of cellular heterogeneity on differential expression analysis. The approach of adjusting for cell-type composition using PCA is methodologically sound and the interpretation (C84) is appropriately cautious. The validation through comparison with pre-eclampsia studies (C85) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Comparative analysis with a hypoxia-induced IUGR mouse model revealed similar placental phenotypes. Both paternal obesity and hypoxia models showed decreased invasive SPT cells (p=0.02 and p=0.003, respectively) and comparable cell-type proportions across 17 detected cell types. Hypoxic placentas also showed increased progenitor trophoblast, PE lineage, erythroblast, and endodermal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 demonstrate convergent placental pathology between paternal obesity and hypoxia models through deconvolution analysis of published data. The similar cellular composition changes across independent models strengthen the biological interpretation. Statistical significance is appropriately reported for cell-type changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "After adjusting for cell-type proportions, 1,477 DEGs were detected in hypoxic placentas, with 207 overlapping with paternal obesity-induced DEGs in male placentas (Fisher's exact test p=5.1e-16). Key shared dysregulated genes included the imprinted gene Igf2. Both models resulted in offspring metabolic disturbances, supporting the role of placental pathology in paternally induced metabolic maladaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 demonstrate significant transcriptomic overlap between hypoxic and obese-sired placentas with appropriate statistical validation. The identification of Igf2 as a shared dysregulated gene provides mechanistic insight. However, C99 relies on prior published data for offspring phenotypes rather than direct measurement in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C101"
+    ],
+    "result": "The study demonstrates that paternal obesity is associated with altered sperm H3K4me3 and changes in the placental transcriptome, providing evidence that paternal obesity influences placental development as one mechanism underlying paternally induced placental pathogenesis and adult-onset metabolic phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 summarize the main findings of the study. While the sperm epigenetic changes and placental transcriptomic alterations are well-documented, the mechanistic link between them remains uncertain (as noted in the evaluation of C7). The conclusion is appropriately cautious in stating this is \"one mechanism\" rather than claiming direct causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Paternal HFD-induced obesity altered the placental transcriptome in a sex-specific manner, with 82-85% of DEGs being sex-specific. The findings suggest that some postnatal metabolic disturbances observed in offspring may originate from sex-specific placental programming, consistent with known sex disparities in metabolic phenotypes driven by chromosomes, hormones, microbiome, and differential fetal programming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 demonstrate sex-specific effects with strong quantitative evidence (C79). The interpretation (C107) is appropriately presented as a suggestion rather than definitive proof. The contextual claims (C105-C106) are well-supported by review citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Several differentially expressed imprinted genes identified in this study have been previously linked to placental defects and fetal growth restriction in mice, including Htra3, Copg2, Snx14, Zdbf2, Slc38a2, and Tle3. The differential expression of these imprinted genes could at least partly explain the metabolic phenotypes observed in offspring from obese fathers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C117 connect the observed imprinted gene dysregulation to known placental phenotypes through appropriate citations. The interpretation (C117) is appropriately cautious (\"could at least partly explain\") and relies on prior phenotypic characterization of the model. The biological plausibility is well-established through the cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Changes in sperm DNA methylation upon HFD feeding have been previously reported, and ETS motifs enriched in obesity-associated H3K4me3 regions are DNA methylation sensitive. Given the interplay between H3K4me3 and DNA methylation, HFD-induced epimutations at either mark could influence one another and alter TF functions, similar to mechanisms described in paternal low-protein diet models involving oxidative stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C122 present a speculative mechanistic model connecting H3K4me3 changes, DNA methylation, and TF function. While the individual components are supported by citations (C118, C119, C121, C122), the proposed interplay (C120) is explicitly presented as speculation (\"it is conceivable\") without direct experimental evidence in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The limited overlap between sperm deH3K4me3 and placenta DEGs may reflect the terminally differentiated state of E14.5 placenta, and greater correspondence might be observed at earlier developmental timepoints. Previous work showed that H3K4me3 regions in sperm correlate with TE expression. GO analysis revealed enrichment of inflammatory processes in obesity-induced sperm deH3K4me3, suggesting potential influence on placental inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C127 provide speculative explanations for the limited sperm-placenta correlation. While C125 cites prior work supporting sperm-TE connections, C124 and C127 are explicitly speculative (\"may reflect,\" \"might be,\" \"suggesting\"). The GO enrichment for inflammatory processes (C126) is data-supported, but the connection to placental inflammation (C127) remains hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Many DEGs in paternal obese-sired placentas were involved in heart and brain regulation, consistent with literature linking paternal obesity to neurological, cardiovascular, and metabolic disease in offspring. The brain-placenta and heart-placenta developmental axes are mediated by trophoblast-produced hormones, neurotransmitters, and growth factors. Neural crest cells, which are of ectodermal origin arising from TE, contribute to both heart and brain development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C134 connect the observed placental gene expression changes to potential offspring phenotypes through well-established developmental biology. C128 is data-supported, while C129-C134 provide appropriate biological context through citations. The developmental connections between TE, neural crest cells, and organ development are well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Potential mechanisms by which TE dysfunction may contribute to paternal effects include: (1) altered placental gene expression in TE influencing neural crest cell specification, (2) TE signaling altering neural crest cell function, and (3) altered trophoblast endocrine function influencing cardiac and neurodevelopment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C137 present speculative mechanistic hypotheses without direct experimental evidence. These are appropriately presented in the Discussion as potential routes for future investigation, but they remain untested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The observed changes in SPT cell populations have functional implications: invasive SPT are critical for maternal arterial remodeling, and improper invasion is linked to obstetrical complications. HSD11B2 regulates fetal glucocorticoid exposure, and Hsd11b2 dysregulation has been observed in fetal growth restriction models. These cellular composition changes suggest paternal diet can induce placental defects associated with cardiometabolic phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C142 connect the observed cellular changes to functional consequences through appropriate citations. The biological functions of invasive SPT (C138-C139) and HSD11B2 (C140-C141) are well-established. The interpretation (C142) appropriately integrates the findings with known biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Studies have shown paternal obesity alters preimplantation development including TE versus ICM allocation. Future work investigating multiple earlier timepoints would reveal the dynamic trajectory of paternally induced transcriptomic and epigenetic changes. Translation to humans would further emphasize paternal preconception contributions to pregnancy outcomes and offspring health.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C145 appropriately contextualize the findings and suggest future directions. C143 is supported by citation, while C144-C145 are reasonable suggestions for future work based on the study's findings and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The HFD-fed males in this study developed obesity with significant metabolic impairments including increased weight (~40g), elevated adiposity, fasting glucose, glucose intolerance, hyperinsulinemia, and insulin resistance. These males had impaired mating efficiency and sired offspring with impaired energetics, glucose intolerance, and placentas showing hypoxic characteristics with altered blood vessel integrity and hypoxia signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147, C148, C42-C44 describe the phenotypic characterization of the model, all supported by citation to prior work (Jazwiec et al., 2022). While these are not new findings in this manuscript, they provide essential validation that the model was successfully established and are appropriately referenced.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The manuscript provides background on cerebellar anatomy and function, establishing that PCs are inhibitory neurons that converge onto CbN neurons, and that there is ongoing debate about whether PCs use rate codes, timing codes, or both to convey information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge in the field and are appropriately supported by citations to prior work (C13-C19). They provide necessary context for the study but do not constitute novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C20",
+      "C21",
+      "C22",
+      "C59"
+    ],
+    "result": "PC to CbN synapses are highly variable in size, with greater variability in juvenile mice (P23-32, CV=1.0) compared to young mice (P10-20, CV=0.7), and the distributions are significantly different (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is well-supported by experimental measurements shown in Figure 1, with appropriate statistical testing (Kolmogorov-Smirnov test, C22). The sample sizes are adequate (n=74 for young, n=83 for juvenile mice), and the methodology for isolating unitary inputs is clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "The developmental increase in PC-CbN synapse variability indicates synaptic refinement during maturation, potentially due to plasticity mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the developmental observation is supported by data (C59), the mechanistic interpretation regarding plasticity is speculative and based only on citations to other studies. No direct evidence for plasticity mechanisms is provided in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C23",
+      "C24",
+      "C25",
+      "C64",
+      "C65"
+    ],
+    "result": "Individual PC inputs regulate both the rate and timing of CbN firing in a size-dependent manner, with large inputs (30 nS) transiently eliminating CbN firing for several milliseconds and small inputs (3 nS) reducing firing by ~40%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is well-supported by dynamic clamp experiments shown in Figure 2. The cross-correlation analyses provide quantitative evidence for the size-dependent effects on CbN firing timing and magnitude. The experimental approach is appropriate and the findings are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C26",
+      "C27",
+      "C29",
+      "C66",
+      "C74"
+    ],
+    "result": "The refractory period of PCs leads to a brief elevation of CbN firing prior to suppression, with the magnitude of this disinhibition positively correlated with PC input size and firing rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This counterintuitive finding is well-supported by dynamic clamp experiments (Figures 2-3) and is mechanistically explained by the autocorrelation properties of PC firing. The result is replicated across different PC firing patterns and is consistent between experiments and simulations (C28).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "A simple integrate-and-fire model successfully recapitulates the dynamic clamp experimental findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between simulation and experimental results shown in Figures 2 and throughout the manuscript demonstrates good agreement. This is notable given the simplicity of the model relative to the known complexity of CbN neuron ion channels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C39",
+      "C62",
+      "C63",
+      "C73"
+    ],
+    "result": "Individual PC-CbN synapses can concurrently convey rate codes and generate precisely timed responses, with single large PCs capable of regulating CbN firing from 35 to 125 spikes/s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is well-supported by the combined evidence from Figures 2-5, including both dynamic clamp experiments and simulations. The inverse linear relationship between PC and CbN firing rates is clearly demonstrated (C36-C38), and the size-dependence is quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C12",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C75"
+    ],
+    "result": "Variable input sizes elevate baseline CbN firing rates by increasing the variability (CV) of the inhibitory conductance, with firing rates strongly dependent on conductance CV rather than just mean conductance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is well-supported by systematic dynamic clamp experiments shown in Figure 4, where input size and number were varied while maintaining constant total conductance. The relationship between CV and firing rate is clearly demonstrated (C34, Figure 4g).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The elevated basal firing rates of CbN neurons generated by nonuniform inputs help explain the relatively high in vivo firing rates (10-50 Hz) despite strong PC inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the experimental finding about elevated firing rates with nonuniform inputs is supported (C12, C75), the connection to in vivo firing rates is inferential and relies on citations to other studies. Direct in vivo validation is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Synchronous firing of PCs promotes CbN neuron firing on rapid time scales, but is less effective for nonuniform inputs than uniform inputs due to higher baseline firing rates. The effects depend primarily on the total amplitude of synchronized inputs rather than the percentage synchronized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is comprehensively supported by dynamic clamp experiments and simulations shown in Figure 6. The comparison between uniform and nonuniform inputs is systematic, with appropriate statistical testing (p<0.0001, C44). The finding that synchronizing two large inputs is more effective than synchronizing many small inputs is clearly demonstrated (C47, C70).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "PC synchrony and single large inputs are functionally equivalent in controlling CbN spike timing, with effects depending on the total size of synchronized inputs for nonuniform input distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is well-supported by dynamic clamp experiments shown in Figure 7, demonstrating that 50% synchrony of uniform inputs produces similar cross-correlograms to single large inputs. The quantitative analysis of excitation, inhibition magnitude, and duration supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C72"
+    ],
+    "result": "Brief pauses in PC firing evoke transient increases in CbN neuron firing, with effects determined by the total amplitude of paused inputs. Pauses are less effective for nonuniform inputs due to higher baseline firing rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is well-supported by dynamic clamp experiments and simulations shown in Figure 8. The systematic comparison of pausing different size ranges of inputs provides clear evidence for the amplitude-dependence. The distinction between transient and sustained effects is appropriately noted (C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Studies that fail to detect high PC synchrony in vivo do not exclude the physiological relevance of PC synchrony in regulating CbN neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim is an inference based on the finding that synchronizing a small number of large inputs can be effective (C70). However, it requires knowledge of the actual distribution of input sizes and synchrony patterns in vivo, which is not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "PCs in zebrin- regions fire faster than those in zebrin+ regions, suggesting different timing control of CbN neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is appropriately attributed to prior work (Zhou et al., 2014) and is used to contextualize the findings about how PC firing rates affect CbN timing control (C66). It represents established knowledge rather than a novel finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Variable input sizes have the secondary effect of reducing the efficacy of synchronous firing and synchronous pauses in elevating CbN firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is supported by the combined evidence from Figures 6-8, showing that the relative increases in firing are smaller for nonuniform inputs due to elevated baseline rates. This is a logical consequence of the findings in C12 and C69.",
+    "result_type": "MAJOR"
+  }
+]

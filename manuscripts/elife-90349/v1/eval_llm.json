@@ -1,0 +1,454 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Differential expression analysis identified 40 genes differentially expressed between IIIM and YM male heads, with one gene (LOC105261916) encoding an odorant binding protein (Obp56h) upregulated in YM males. Seven of eight additional Obp56h family genes showed trends toward higher expression in YM males, with 8/9 Obp56h genes showing higher expression in YM males\u2014a significantly greater fraction than other genes genome-wide (Fisher's exact test, p=0.019).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C36 are well-supported by RNA-seq differential expression analysis with appropriate statistical testing (FDR correction, Fisher's exact test). The identification of Obp56h genes as differentially expressed is based on standard bioinformatics methods with clear statistical thresholds. The enrichment analysis comparing Obp56h genes to genome-wide patterns provides additional statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "IIIM males showed significantly greater mating success than YM males in competitive courtship assays regardless of developmental temperature (18\u00b0C or 29\u00b0C; ANOVA \u03c7\u00b2=20.7, p=6.53\u00d710\u207b\u2076). Males reared at 18\u00b0C outcompeted those reared at 29\u00b0C regardless of genotype (ANOVA \u03c7\u00b2=13.1, p=2.93\u00d710\u207b\u2074), but these effects were independent. At 22\u00b0C, IIIM males mated nearly three times faster than YM males (Cox model HR=2.92, 95% CI=1.42-6.03), and a significantly greater proportion of IIIM males mated within 4 hours (61.7% vs 28.3%, p=1.21\u00d710\u207b\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C53 are supported by multiple complementary behavioral assays (competitive courtship, copulation latency measurements) with appropriate statistical analyses (ANOVA, Cox proportional hazards regression, Z-tests). The use of survival analysis to handle censored data (unmated males) is methodologically sound. Sample sizes appear adequate based on the reported statistics, and the consistency of results across different analytical approaches strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "IIIM males from the CS genetic background showed significantly greater mating success than YM males from the unrelated LPR strain (Z-test, p=0.038), demonstrating that the IIIM courtship advantage overwhelms potential effects of co-adaptation between proto-Y chromosome and genetic background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by experimental comparison of IIIM males with LPR YM males, which controls for potential co-adaptation effects. The statistical significance (p=0.038) and the experimental design (using males from different genetic backgrounds) provide evidence for the claim, though the high variability in LPR males noted in the text suggests some caution in interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "WGCNA identified 27 co-expression modules, with one module of 122 genes significantly differentially expressed between YM and IIIM males (pADJ=0.001) and containing three differentially expressed Obp56h genes. This module was significantly enriched for chromosome III genes (31 vs 38 on other chromosomes, Fisher's exact test p<1\u00d710\u207b\u2075), differentially expressed genes (16 vs 24 in other modules, p<1\u00d710\u207b\u2075), and Obp56h genes relative to other Obp genes (p=5.1\u00d710\u207b\u00b3). The top five hub genes were LOC101887703 (CG8745), LOC105262120 (CG10514), LOC101894501 (Md-Gr35), LOC101893264 (gd), and LOC101893651 (CG2120).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 are supported by WGCNA analysis with appropriate statistical testing (Fisher's exact tests) for enrichment. The methods describe standard WGCNA parameters (soft-threshold \u03b2=7, minimum module size 30, merging threshold 0.2), and the identification of hub genes using intramodular connectivity (kWithin) is a standard approach. The multiple significant enrichments provide converging evidence for the biological relevance of this module.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Among the 100 genes with highest Obp56h connection scores (top 0.55% covarying genes), 26 were on chromosome III\u2014a significant enrichment (Fisher's exact test, p=2.0\u00d710\u207b\u2074) that was robust to varying thresholds (1%, 5%, or 10% all p<0.05). This supports the hypothesis that trans regulatory variants on IIIM chromosome III are responsible for differential Obp56h expression between IIIM and YM males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by statistical analysis of gene co-expression patterns with appropriate testing (Fisher's exact test) and robustness checks across multiple thresholds. The inference that trans regulatory variants on chromosome III regulate Obp56h is reasonable given the chromosomal enrichment, though it remains a hypothesis requiring further experimental validation (as acknowledged in C68's inference classification).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Analysis of published Obp56h knockdown RNA-seq data from D. melanogaster revealed a male-specific excess of X chromosome differentially expressed genes in both head (Fisher's exact test, p=0.011) and body (p=0.038) tissues, but not in female tissues (both p>0.49), suggesting male-specific trans regulatory control of X-linked genes by Obp56h.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by reanalysis of published data with appropriate statistical testing. The sex-specific pattern (significant enrichment in males but not females) strengthens the inference of male-specific trans regulation. However, the analysis relies on published data from another study, and the authors should verify that the original experimental design and data quality are appropriate for this secondary analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Genes downregulated upon Obp56h knockdown in D. melanogaster have house fly orthologs that are more downregulated in IIIM males than expected by chance (p=5.60\u00d710\u207b\u00b3). The GO term 'response to stress' is significantly enriched among genes with strong Obp56h connection scores in both species. Together, these results suggest an evolutionarily conserved trans regulatory feedback loop involving Obp56h and Muller element A in both species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by comparative analysis between house fly and D. melanogaster with appropriate statistical testing (permutation test for C73, GO enrichment for C74). The convergent evidence from multiple species strengthens the inference of evolutionary conservation, though the mechanistic details of the regulatory loop remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "LOC101893264 (Md-gd), orthologous to D. melanogaster gd (a predicted positive regulator of Toll signaling), is among the top 5 hub genes, located on chromosome III, and upregulated in IIIM males (adj. p=0.022). Allele-specific expression analysis showed the IIIM allele is significantly more highly expressed than the III allele in IIIM males at all seven diagnostic SNPs (all p=0.021) and more highly expressed than both III alleles in YM males at six of seven sites (all p=0.021), consistent with cis regulatory divergence and possibly monoallelic expression of the IIIM allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 are supported by WGCNA hub gene identification, differential expression analysis, and allele-specific expression measurements with appropriate statistical testing (Wilcoxon rank sum tests). The allele-specific expression pattern provides strong evidence for cis regulatory divergence. However, C82's claim of monoallelic expression is appropriately noted as requiring further confirmation, as complete absence of expression from one allele could also result from technical limitations or other factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "LOC101893651, orthologous to D. melanogaster CG2120 and predicted to encode a transcription factor, is among the most central genes in the co-expression module and strongly upregulated in IIIM males (log2 fold-change: 1.33, pADJ=0.033). Allele-specific expression analysis showed the IIIM allele is significantly more highly expressed than the III allele in IIIM males at all four diagnostic sites (all p=0.021) and more highly expressed than both III alleles in YM males (all p\u22640.027). Within the WGCNA module, Obp56h expression is most strongly correlated with LOC101893651, and ChIP-seq data shows CG2120 protein binds both upstream and downstream of Obp56h in D. melanogaster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C90 are well-supported by multiple lines of evidence: WGCNA analysis, differential expression, allele-specific expression, and published ChIP-seq data. The convergent evidence from network analysis, expression patterns, and direct binding data (from cited ChIP-seq) provides strong support for LOC101893651/CG2120 as a candidate trans regulator of Obp56h. The allele-specific expression patterns are consistent with cis regulatory divergence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "LOC101894501 (Md-Gr35), a gustatory receptor gene homologous to D. melanogaster Gr98c, is a hub in the co-expression module and upregulated in IIIM males (pADJ=0.037). Allele-specific expression analysis at four exonic SNPs showed significantly greater expression of the IIIM allele than the III allele in IIIM males at two sites, and the IIIM allele in IIIM males was expressed higher than both III alleles in YM males. However, the III allele was expressed significantly higher in IIIM males than YM males at two sites, suggesting both cis and trans regulatory effects on Md-Gr35 expression consistent with a trans regulatory loop between Obp56h and chromosome III.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 are supported by WGCNA analysis, differential expression, and allele-specific expression measurements. The pattern of both cis and trans effects is well-documented by the allele-specific expression data, though the statistical significance is not consistent across all four SNP sites. The inference of a regulatory loop (C98) is reasonable given the combined cis and trans effects, but remains a hypothesis requiring further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "LOC101887703, orthologous to D. melanogaster CG8745 (predicted to encode an ethanolamine-phosphate phospho-lyase broadly expressed in many tissues), is upregulated in IIIM males (log2 fold-change: 2.21, pADJ=0.016). In both D. melanogaster and house fly, Obp56h expression is significantly negatively correlated with CG8745/LOC101887703 expression. Obp56h knockdown flies show greater expression of CG8745 than controls (Welch's t-test, t=\u22124.27, p=5.53\u00d710\u207b\u00b3), suggesting that Obp56h downregulation causes CG8745 upregulation and that similar molecular mechanisms may underlie the trans regulatory effect of Obp56h in both species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 are supported by differential expression analysis, correlation analysis in both species, and analysis of published knockdown data with appropriate statistical testing. The convergent evidence from multiple species and the experimental manipulation (knockdown) strengthen the inference of a regulatory relationship. However, the direction of causality (C104) is inferred from the knockdown experiment, which is appropriate but could be further validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Analysis of tissue-specific expression data confirmed that Obp56h is highly expressed in adult D. melanogaster head, with expression most pronounced in the labellum (proboscis). The labellum is the only head component in which all five hub genes are expressed, suggesting the module may function in regulating responses to external chemical stimuli, though similar tissue-specific expression data from M. domestica would be needed for stronger evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 are supported by analysis of published tissue-specific expression data from D. melanogaster. The observation that all five hub genes are co-expressed in the labellum provides circumstantial evidence for the functional hypothesis (C108), though the authors appropriately note that this remains speculative without corresponding data from house fly. The inference is reasonable but requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Analysis of developmental and tissue-specific expression data showed that CG2120 expression oscillates over the D. melanogaster life history (increasing throughout embryonic development, decreasing with each larval instar, then increasing in pupa and some adult tissues). CG2120 is predominantly expressed in digestive tissues in adults with much lower expression in nervous tissues, but is more highly expressed in male than female heads, consistent with a regulatory effect on male courtship behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 are supported by analysis of published developmental and tissue-specific expression data (microarray and RNA-seq from multiple sources). The sex-specific expression pattern in heads (C111) provides circumstantial support for a role in male courtship behavior, though this remains correlative evidence. The data sources and analysis methods are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "CRISPRa-mediated upregulation of CG2120 in D. melanogaster showed no significant difference in copulation latency when expression was activated in fat body cells, but CG2120 upregulated males mated significantly faster than controls when expression was activated in neurons using the elav driver. This is consistent with CG2120 activation in neurons negatively regulating Obp56h, which then reduces copulation latency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 are supported by experimental manipulation using CRISPRa with tissue-specific drivers and copulation latency measurements. The tissue-specific effect (significant in neurons but not fat body) strengthens the inference that CG2120 acts in neurons to regulate courtship behavior. However, the claim that CG2120 negatively regulates Obp56h (C114) is an inference based on the behavioral phenotype and does not directly measure Obp56h expression levels in the CRISPRa experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The results provide evidence that Obp56h expression affects copulation latency in house fly (consistent with D. melanogaster), and that LOC101893651 (CG2120), Md-gd, and/or Md-Gr35 negatively regulate Obp56h expression while Obp56h negatively regulates CG8745. Together, these suggest a trans regulatory loop in which Obp56h is both regulated by and regulates expression of genes on Muller element A. CG2120 was experimentally validated to affect copulation latency consistent with negative regulation of Obp56h in D. melanogaster neurons, and is named speed date (spdt) because its expression reduces copulation latency. Repression of Obp56h expression reduces copulation latency, which is associated with an advantage in male-male competition for female mates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C121 synthesize multiple lines of evidence from the study. The experimental validation of CG2120/spdt effects on copulation latency (C119) is well-supported by the CRISPRa experiments. The hypothesized regulatory relationships (C116-C118) are supported by network analysis, allele-specific expression, and comparative data, though they remain hypotheses requiring further direct experimental validation. The association between Obp56h repression and mating advantage (C121) is supported by the behavioral assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C128",
+      "C131",
+      "C134"
+    ],
+    "result": "The authors hypothesize that the regulatory architecture associated with Obp56h expression creates evolutionary constraints that inhibit selection to reduce expression in YM males and D. melanogaster. Obp56h exists within a complex regulatory network including trans feedback that is conserved between species. This network architecture likely constrains the evolution of trans regulators and creates downstream pleiotropic effects that create correlations between traits and weaken the response to selection. Specific constraints may include pleiotropic effects of upregulating negative regulators (e.g., gd in Toll signaling, spdt with 6142 binding locations) and potential negative fitness effects of Obp56h downregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C134 are primarily hypotheses about evolutionary constraints based on the observed regulatory network complexity and known functions of the genes involved. While the network complexity is well-documented (C123 is SUPPORTED), the claims about evolutionary constraints (C122, C124, C125, C128, C131, C134) are speculative inferences that would require additional experiments (e.g., experimental evolution, fitness measurements across environments) to validate. The reasoning is plausible but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Md-Gr35 is a hub gene in the co-expression module with expression levels negatively correlated with Obp56h. Evidence for both cis and trans effects on Md-Gr35 upregulation suggests possible feedback from Obp56h downregulation. Obps typically interact with chemosensory receptors in detecting chemical cues, and Md-Gr35 is the only chemosensory receptor in the co-expression module, suggesting Md-Gr35 and Obp56h are likely interacting partners. Chemosensory binding proteins and receptors are known to co-regulate one another, with negative correlations previously reported in genes modulating Drosophila mating behavior. The interactions between these genes may constrain selection on Obp56h expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C137 are SUPPORTED by the data (WGCNA analysis and allele-specific expression). However, claims C138-C144 are largely inferences based on known functions of Obps and chemosensory receptors from the literature. While the inference that Md-Gr35 and Obp56h interact (C140, C143) is reasonable given their co-expression and the known biology, this remains a hypothesis requiring direct experimental validation (e.g., co-immunoprecipitation, functional assays). The constraint hypothesis (C144) is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "CHCs are lipid compounds used for both chemical communication and resistance to environmental stressors including desiccation. Obp56h expression is associated with CHC profiles in D. melanogaster, and LOC105262120 (a hub gene) is homologous to CG10514 whose expression correlates with CHC production in D. serrata. CHCs are often under strong sexual selection and serve as mating cues. GO enrichment analysis revealed that Obp56h expression correlates with genes involved in general stress responses in both species. The dual role of CHCs in mating and desiccation resistance suggests sexual selection on Obp56h expression could be pleiotropically constrained by trade-offs with stress response, potentially reducing the response to selection on male copulation latency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C145-C151 about CHC functions and associations are SUPPORTED by citations to previous literature. Claims C153 about GO enrichment is SUPPORTED by the data. However, claims C149, C152, and C154 about pleiotropic constraints and trade-offs are inferences/hypotheses that are not directly tested in this study. While the reasoning is plausible given the known biology, demonstrating actual trade-offs would require measuring both mating success and stress resistance phenotypes in the same individuals or experimental manipulation of CHC profiles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Obps have myriad functions beyond chemical detection, and Obp56h specifically has been shown to affect mating behavior, avoidance of bitter tastants, and expression of genes related to immune response and heat stress. Single base pair changes at Obp56h in D. melanogaster cause sex-specific effects on fitness-related traits including heat resistance. The results provide evidence that pleiotropy can reduce the response to sexual selection by creating genetic covariation among unrelated traits. One expected consequence of pleiotropic constraints is genetic variance for sexually selected traits in natural populations, which is observed as variation in copulation latency between IIIM and YM males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 are SUPPORTED by citations to previous literature documenting the diverse functions of Obps and Obp56h specifically. Claims C158 and C161 appropriately connect the observed variation in copulation latency to theoretical predictions about pleiotropy and sexual selection, with C161 supported by both citations and the observed data. Claims C159-C160 about constraints on selection are reasonable inferences from the regulatory complexity but remain somewhat speculative without direct tests of selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The results suggest IIIM males may have overcome pleiotropic constraints associated with Obp56h expression via Y-linkage of at least one trans regulator. Three candidate trans regulators on the IIIM chromosome (Md-spdt, Md-gd, and Md-Gr35) could be inhibitors of Obp56h expression. This is consistent with previous work suggesting male-beneficial trans regulatory alleles could be important for fitness effects of the IIIM chromosome. More generally, trans regulation of autosomal and X chromosome expression appears to be an important feature of phenotypic and fitness effects of Y chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C163 are supported by the identification of trans regulators on IIIM through network analysis, allele-specific expression, and chromosomal location. Claim C164 is supported by citation to previous work. Claim C165 is supported by multiple citations to previous studies showing trans regulatory effects of Y chromosomes. The inference that IIIM males have overcome constraints (C162) is reasonable given the data but remains somewhat speculative without direct fitness measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "The authors hypothesize that pleiotropic constraints associated with Obp56h regulation are a source of sexual antagonism, with deleterious fitness effects potentially affecting both males and females from both upregulation of negative regulators and downregulation of Obp56h. However, downregulation of Obp56h confers a fitness benefit to males that may offset costs, and IIIM males can realize this benefit because the IIIM chromosome carries at least one negative trans regulator. The results provide evidence that sexual antagonism can arise via conflicts between sexual selection in males and opposing pleiotropic effects in females, and the intersexual conflict over Obp56h expression was at least partially resolved with Y-linkage of trans regulators in IIIM males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C166-C172 are primarily hypotheses about sexual antagonism and its resolution. While the identification of trans regulators on IIIM (C170) is SUPPORTED by the data, and the mating advantage of IIIM males (C169) is SUPPORTED by behavioral assays, the claims about sexual antagonism (C166, C171) and fitness costs in females (C167, C168) are not directly tested. Demonstrating sexual antagonism would require measuring fitness effects in both sexes, which is not done in this study. The reasoning is plausible but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "Upregulation of IIIM alleles of Md-spdt, Md-gd, and/or Md-Gr35 alone cannot fully resolve intersexual conflict for two reasons: (1) YM males do not carry a IIIM chromosome and remain evolutionarily constrained in Obp56h expression, suggesting other fitness benefits maintain the YM chromosome, and (2) previous work suggests temperature-dependent fitness differences with YM males having higher fitness at colder temperatures. The IIIM courtship advantage may be temperature-sensitive, creating context-dependent fitness effects favoring YM males in specific environments, consistent with predictions that genotype-by-environment interactions can maintain variation in sexually selected traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C174 is a logical inference from the genetic differences. Claims C175-C176 are supported by citations to previous work. However, claims C173, C177, and C178 about incomplete resolution of conflict and temperature-sensitivity are somewhat inconsistent with the experimental results showing IIIM advantage at both temperatures tested (C41, C44). The hypothesis about temperature-dependent effects is reasonable given cited previous work, but the current study's data do not strongly support temperature-sensitivity of the courtship advantage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "Female house flies can carry the IIIM chromosome if they also carry Md-traD (a dominant allele desensitized to the male-determining gene Mdmd). Females with IIIM and Md-traD may suffer fitness costs from upregulation of Md-spdt, Md-gd, and Md-Gr35 and/or downregulation of Obp56h. Therefore, even though the putatively sexually antagonistic alleles are Y-linked, they can still be carried by females, leaving the conflict unresolved. Previous work has determined that sexually antagonistic fitness effects of proto-Y chromosomes could contribute to maintaining the YM-IIIM polymorphism, and the current results provide a mechanism by which the IIIM chromosome could confer sexually antagonistic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C179 is SUPPORTED by citations to previous work on house fly sex determination. Claim C182 is SUPPORTED by citations to previous work. However, claims C180-C181 about fitness costs in females are speculative and not tested in this study. Claim C183 appropriately frames the current work as providing a potential mechanism, but the sexual antagonism hypothesis remains untested without direct fitness measurements in both sexes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "The results provide evidence that gene duplication is important for acquiring genes with male-specific functions during Y chromosome evolution. LOC101887703 has a paralog (LOC101890114) predicted to be on chromosome III, both homologous to D. melanogaster CG8745. The two transcripts are <1% diverged, suggesting recent duplication. CG8745 is broadly expressed in many D. melanogaster tissues, and broadly expressed genes often give rise to paralogs with sex-specific expression. The authors hypothesize one paralog has evolved a male-specific function, resolving an intersexual conflict associated with CG8745 and Obp56h coregulation. Such duplications often involve sex chromosomes, and the only identified differences between house fly YM and X chromosomes thus far have been autosome-to-Y duplications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C184-C188 and C191-C192 are SUPPORTED by the data (identification of paralogs, sequence divergence) and citations to previous literature. However, claims C189-C190 about one paralog evolving male-specific function to resolve intersexual conflict are speculative hypotheses not tested in this study. Demonstrating this would require showing sex-specific expression of the paralogs and functional differences between them, which is not done. The reasoning is plausible given the literature on gene duplication and sex chromosome evolution, but remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C201",
+      "C202",
+      "C203"
+    ],
+    "result": "The results suggest intersexual conflict may have been an important factor in the convergent evolution of Muller element A into a sex chromosome in both Drosophila and house fly. Element F was the ancestral X chromosome, and element A became the Drosophila X after divergence from most other flies and recently became a sex chromosome in house fly when it acquired Mdmd. Element A has also become a sex chromosome in at least two other dipteran lineages (Glossina and Anopheles), raising the possibility that element A is primed for recruitment as a sex chromosome. The authors hypothesize element A may be convergently recruited because trans regulatory connections with Obp56h create sexually antagonistic effects related to male mating behavior. Sexually antagonistic alleles are expected to be important selective forces in forming new sex chromosomes because sex-limited inheritance can resolve intersexual conflict. The results suggest an enrichment of genes in a regulatory network with sexually antagonistic effects could promote sex-linkage of the same chromosome in distantly related species without convergent evolution of a master sex determiner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C194-C197 about the evolutionary history of Muller elements are SUPPORTED by citations to previous work. Claim C202 about sexually antagonistic alleles and sex chromosome formation is SUPPORTED by citations to theoretical work. However, claims C193, C198, C201, and C203 are speculative hypotheses about the role of the Obp56h regulatory network in convergent sex chromosome evolution. While the hypothesis is creative and the regulatory network is well-characterized, demonstrating this would require comparative analyses across multiple species and direct tests of sexual antagonism, which are not done. The hypothesis is plausible but highly speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C204"
+    ],
+    "result": "This is the first time, to the authors' knowledge, that a mechanism has been ascribed to the observation that fitness effects of Y chromosomes can manifest via trans effects on autosomal genes affecting male courtship and other sexually selected traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C204 is supported by the comprehensive characterization of the regulatory mechanism (identification of specific trans regulators, network analysis, allele-specific expression, experimental validation in D. melanogaster) combined with citations showing that previous work had observed trans effects but not identified specific mechanisms. The claim of novelty is appropriately qualified ('to our knowledge') and supported by the citations provided.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,220 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript provides background on grid cells, place cells, and head-direction cells as established components of the spatial navigation system, noting that direct recordings of grid cells from humans are rare due to practical limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C17 represent well-established scientific knowledge supported by appropriate citations to foundational studies (O'Keefe and Dostrovsky 1971; Taube et al. 1990; Hafting et al. 2005; Jacobs et al. 2013). These are background claims that accurately reflect the current state of knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C4"
+    ],
+    "result": "The manuscript establishes that fMRI studies have developed an indirect measure of grid-cell activity through hexadirectional modulation, which has been replicated, but the underlying mechanisms remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C18-C20 accurately describe the development and replication of fMRI methods for detecting grid cells (Doeller et al. 2010; Kunz et al. 2015; Bellmund et al. 2016) and correctly identify the knowledge gap regarding mechanisms, which motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Three hypotheses are proposed to explain macroscopic grid-like representations: conjunctive grid by HD cell hypothesis, repetition suppression hypothesis, and structure-function mapping hypothesis, each with specific empirical foundations and theoretical predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C35 accurately describe the three hypotheses with appropriate citations to supporting empirical work (Sargolini et al. 2006; Doeller et al. 2010; Stensola et al. 2012; Heys et al. 2014; Gu et al. 2018; Kunz et al. 2019). The theoretical predictions are logically derived from the empirical observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The study implements three types of navigation trajectories (star-like walks, piecewise linear walks, and random walks) with specific properties regarding path hexasymmetry, with star-like and piecewise linear walks designed to have zero path hexasymmetry and random walks exhibiting path hexasymmetry that decreases with trajectory length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C52 describe the simulation methodology with clear specifications documented in Table 1 and demonstrated in figures. The properties of each trajectory type (e.g., zero path hexasymmetry for star-like walks C39, decreasing path hexasymmetry with length for random walks C52) are both theoretically derived and empirically demonstrated in Figure 1\u2014figure supplement 4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C9",
+      "C38"
+    ],
+    "result": "The emergence of grid-like representations based on the conjunctive hypothesis is robust across navigation strategies, while the repetition suppression and structure-function mapping hypotheses are sensitive to navigation type, indicating that navigation patterns significantly influence hexadirectional modulation magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C38, C54-C56 represent key findings demonstrated across Figures 2-5. The robustness of the conjunctive hypothesis across trajectory types is shown in Figure 2B-D and Figure 5, while the sensitivity of the other hypotheses is demonstrated in Figures 3-5 with statistical support (Mann-Whitney U tests, p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C98",
+      "C101"
+    ],
+    "result": "For the conjunctive grid by HD cell hypothesis with ideal parameters, all three navigation trajectory types (star-like, piecewise linear, random) produce significant hexadirectional modulation with directions of maximal activity aligned with grid axes, and this holds for both ideal and realistic parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62, C98, C101 are supported by simulations in Figure 2B-D showing clear hexadirectional modulation across trajectory types, with statistical significance confirmed by Mann-Whitney U tests (all U=0, all p<0.001) as reported in Figure 5. The analytical derivations (Equation 40) match numerical results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C36",
+      "C37"
+    ],
+    "result": "Hexadirectional modulation is best explained by head-direction tuning aligned to grid axes, with all three hypotheses capable of producing macroscopic grid-like representations under ideal conditions but with hexasymmetry strengths varying by orders of magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C36-C37 represent the main conclusion, supported by comprehensive simulations in Figures 2-5. Figure 5 directly demonstrates the orders of magnitude difference in hexasymmetry values across hypotheses (conjunctive: ~1000 spk/s ideal, repetition suppression: ~10-20 spk/s ideal, structure-function mapping: ~10-60 spk/s ideal with strong clustering).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C69",
+      "C73",
+      "C99",
+      "C100",
+      "C102"
+    ],
+    "result": "The repetition suppression hypothesis produces significant hexadirectional modulation for star-like and piecewise linear walks but not for random walks, with a characteristic 30\u00b0 shift in apparent preferred grid orientation due to stronger suppression when moving aligned with grid axes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66, C69, C73, C99-C100, C102 are supported by simulations in Figure 3 and statistical tests in Figure 5 (Mann-Whitney U tests: star-like and piecewise linear p<0.001, random walks p>0.405). The 30\u00b0 shift is demonstrated in Figure 3C-D and explained mechanistically in Figure 3A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "Firing-rate adaptation can result in hexadirectional modulation, but available cellular data is insufficient to clearly support or refute this hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 are supported by simulations in Figure 3 demonstrating that adaptation can produce hexadirectional modulation, while the text acknowledges the lack of detailed measurements of adaptation parameters (\u03c4r and wr) in grid cells, making biological plausibility uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C79",
+      "C81",
+      "C82",
+      "C86",
+      "C87",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Hexadirectional modulation is not clearly supported by phase offset clustering, as realistic clustering parameters (\u03bas\u22480.1) result in substantially reduced hexasymmetries compared to ideal clustering (\u03bas=10), with values much lower than the conjunctive and repetition suppression hypotheses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C79, C81-C82, C86-C87, C94-C97 are supported by random-field simulations in Figure 4G-S showing realistic clustering parameters (\u03bas\u22480.014-0.052) are much lower than ideal values (\u03bas=10), and Figure 5 demonstrating substantially reduced hexasymmetries for realistic parameters compared to other hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "For the structure-function mapping hypothesis, significant results for piecewise linear and random walks result from inhomogeneous sampling of movement directions rather than true neural hexasymmetries, with true hexasymmetry only occurring for star-like walks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93, C103-C109 are supported by analysis in Figure 4T showing hexasymmetry decreases as 1/\u221aM for piecewise linear walks, indicating path hexasymmetry contribution. The authors provide clear reasoning that only star-like walks produce true neural hexasymmetry for this hypothesis, with appropriate cautions about interpreting statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Environment size, shape, and orientation have negligible effects on hexasymmetry strength for random walks, suggesting experiments can use various environment types to investigate hexadirectional modulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 are supported by simulations in Figure 1\u2014figure supplement 2 and Figure 1\u2014figure supplement 3 showing minimal dependence of hexasymmetry on boundary size (30-180 cm) and rotation angle (0-360\u00b0) for circular and square environments.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1833 @@
+{
+  "submission": {
+    "id": "923f5b7c-78ea-49cf-bcda-e2211ece2176",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:56:13.834824Z",
+    "updated_at": "2025-12-04T02:56:13.834824Z"
+  },
+  "content": [
+    {
+      "id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "submission_id": "923f5b7c-78ea-49cf-bcda-e2211ece2176",
+      "content_type": "manuscript",
+      "content_text": "# Force propagation between epithelial cells depends on active coupling and mechano-structural polarization\n\n## Authors\n\n- Artur Ruppel<sup>1</sup> ([ORCID: 0000-0002-2541-8257](https://orcid.org/0000-0002-2541-8257))\n- Dennis W\u00f6rthmu\u0308ller<sup>2</sup> ([ORCID: 0000-0001-6443-0112](https://orcid.org/0000-0001-6443-0112))\n- Vladimir Misiak<sup>1</sup> ([ORCID: 0000-0001-6637-8071](https://orcid.org/0000-0001-6637-8071))\n- Manasi Kelkar<sup>4</sup>\n- Ir\u00e8ne Wang<sup>1</sup>\n- Philippe Moreau<sup>1</sup>\n- Adrien M\u00e9ry<sup>1</sup> ([ORCID: 0000-0001-9582-0519](https://orcid.org/0000-0001-9582-0519))\n- Jean R\u00e9villoud<sup>1</sup>\n- Guillaume Charras<sup>4</sup> ([ORCID: 0000-0002-7902-0279](https://orcid.org/0000-0002-7902-0279))\n- Giovanni Cappello<sup>1</sup> ([ORCID: 0000-0002-5012-367X](https://orcid.org/0000-0002-5012-367X))\n- Thomas Boudou<sup>1</sup> ([ORCID: 0000-0002-6821-2937](https://orcid.org/0000-0002-6821-2937))\n- Ulrich S Schwarz<sup>2</sup> ([ORCID: 0000-0003-1483-640X](https://orcid.org/0000-0003-1483-640X)) \u2020\n- Martial Balland<sup>1</sup> ([ORCID: 0000-0002-6585-9735](https://orcid.org/0000-0002-6585-9735)) \u2020\n\n### Affiliations\n\n1. Universit\u00e9 Grenoble Alpes, CNRS, LIPhy Grenoble France ([ROR:02rx3b187](https://ror.org/02rx3b187))\n2. Institute for Theoretical Physics, Heidelberg University Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))\n3. BioQuant\u2013Center for Quantitative Biology, Heidelberg University Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))\n4. London Centre for Nanotechnology, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))\n5. Department of Cell and Developmental Biology, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))\n6. Institute for the Physics of Living Systems, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCell-generated forces play a major role in coordinating the large-scale behavior of cell assemblies, in particular during development, wound healing, and cancer. Mechanical signals propagate faster than biochemical signals, but can have similar effects, especially in epithelial tissues with strong cell\u2013cell adhesion. However, a quantitative description of the transmission chain from force generation in a sender cell, force propagation across cell\u2013cell boundaries, and the concomitant response of receiver cells is missing. For a quantitative analysis of this important situation, here we propose a minimal model system of two epithelial cells on an H-pattern (\u2018cell doublet\u2019). After optogenetically activating RhoA, a major regulator of cell contractility, in the sender cell, we measure the mechanical response of the receiver cell by traction force and monolayer stress microscopies. In general, we find that the receiver cells show an active response so that the cell doublet forms a coherent unit. However, force propagation and response of the receiver cell also strongly depend on the mechano-structural polarization in the cell assembly, which is controlled by cell\u2013matrix adhesion to the adhesive micropattern. We find that the response of the receiver cell is stronger when the mechano-structural polarization axis is oriented perpendicular to the direction of force propagation, reminiscent of the Poisson effect in passive materials. We finally show that the same effects are at work in small tissues. Our work demonstrates that cellular organization and active mechanical response of a tissue are key to maintain signal strength and lead to the emergence of elasticity, which means that signals are not dissipated like in a viscous system, but can propagate over large distances.\n\n## Introduction\n\nCell-generated forces are essential for tissue morphodynamics, when eukaryotic cells change number, shape, and positions to build a multicellular tissue. Tissue morphogenesis is a dominant process during development, but also occurs in adult physiology and disease, in particular during wound healing and cancer, respectively. In addition to driving cell shape change and movement, force-producing processes allow cells to probe the mechanical and geometrical properties of their environment (Discher et al., 2005; Luciano et al., 2021), feeding back on to major cellular processes, such as differentiation (Engler et al., 2006; McBeath et al., 2004; Wen et al., 2014; Kilian et al., 2010), fate (Chen et al., 1997; Th\u00e9ry et al., 2005; Nelson et al., 2005), or migration (Pathak and Kumar, 2012; Sunyer and Trepat, 2020; Shellard and Mayor, 2021). Generation of contractile force is a universal property of mammalian cells due to the ubiquitous expression of non-muscle myosin II (Vicente-Manzanares et al., 2009). It is less clear, however, how this force is propagated through tissues and how long-ranged its effects are. Fast and long-ranged propagation of mechanical force seems to be essential during development, when morphogenesis has to be coordinated across the embryo (Ho et al., 2019; Desprat et al., 2008). For example, the onset of migration of neural crest cells in Xenopus appears controlled by the stiffening of the underlying mesoderm resulting from axis elongation (Barriga et al., 2018). An example of a more mature tissue is the epithelium of the juvenile esophagus in mice, whose transition from growth to homeostasis is mediated by the mechanotransduction of progressively increasing mechanical strain at the organ level (McGinn et al., 2021).\n\nDespite these interesting observations for development, it is not clear how force is propagated across tissues in general and whether propagation is passive or sustained by mechanochemical feedback loops. Force propagation across tissues suffers from the same challenge as any other information propagation through a passive medium. Whether it be an electrical signal transmitted through a telegraph line or an action potential originating in the soma of a neuron, the signal typically attenuates with distance until it becomes indistinguishable from noise (Kholodenko et al., 2010). The main measure to counteract such attenuation are active processes that restore signal strength, like the opening of voltage-gated ion channels along the axon for action potentials. In addition to electrical currents, mechanical waves have also been observed to propagate along lengths several orders of magnitude larger than the cell size in confined epithelial tissues (Di Talia and Vergassola, 2022). These waves require active cellular behaviors such as contractility and F-actin polymerization to propagate, suggesting that cells actively respond to external forces to maintain the strength of the signal as it propagates through the tissue (Serra-Picamal et al., 2012; Peyret et al., 2019; Petrolli et al., 2019). Furthermore, it has been shown that passive cells in an epithelial tissue act as obstacle for mechanical wave propagation (Ng et al., 2014). Despite these studies, our knowledge of force propagation remains largely qualitative because of the lack of a model system that allows for precise spatiotemporal control of force generation and quantitative characterization of the propagation of the mechanical signal across intercellular junctions. As a result, we know little of how far force signals can propagate from their origin or whether signal propagation efficiency depends on tissue organization. Indeed, in some tissues, such as the hydra ectoderm, stress fibers within the cells of the ectoderm form a nematic system (Maroudas-Sacks et al., 2021). This high degree of alignment of force-generating subcellular structures suggests that tissues may display anisotropic propagation of stresses.\n\nHere, we introduce such a sought-after minimal biophysical system for force propagation in epithelia, consisting of two interacting cells in which force generation is controlled by an optogenetic actuator of contractility and force propagation is quantitatively monitored using traction and monolayer force microscopies. To place the two cells next to each other with a stable cell\u2013cell boundary, we make use of adhesive micropatterning (Th\u00e9ry et al., 2006; Mandal et al., 2014). Moreover, the adhesive micropatterning allows us to control the aspect ratio of the cells and the structural organization of their cytoskeleton. Using this system, we show that intercellular force propagation is an active mechanism, with the receiver cell actively adapting to the signal from the sender cell. We then demonstrate how the degree of active coupling is controlled by key morphological parameters, such as junction length and the degree and orientation of mechanical polarization. Strikingly, force propagation is amplified perpendicularly to the axis of mechano-structural polarization, similar to the Poisson effect in passive material. Finally, we verify that our findings in these cell doublets can be generalized to larger cell clusters. Overall, we show that active cellular responses to incoming forces can maintain signal strength and lead to the emergence of an apparent elastic behavior that allows signals to be propagated over large distances, as in an elastic material, rather than be dissipated, as in a viscous material.\n\n## Results\n\n### The intercellular junction decreases the mechano-structural polarization\n\nThe most important feature of epithelial tissue is strong cell\u2013cell adhesion, which makes the epithelial monolayer a coherent sheet that can effectively separate different compartments, like the outside and inside of a body or organ. Therefore, we first characterized how the presence of an intercellular junction influences cellular organization and force generation. To this end, we compared cell pairs (\u2018doublets\u2019) with single cells (\u2018singlets\u2019) grown on identical micropatterns (Figure 1A). The H-pattern is known to be able to accommodate both doublets and singlets, which in both cases form an hour-glass shape (Figure 1B and C, respectively). Note that most doublets form from a single cell that has divided on the pattern.\n\nWe found that when plated on H-shaped micropatterns, singlets formed prominent stress fibers around the cell contour (peripheral stress fibers), as well as some smaller internal stress fibers which resulted from the spreading process (Figure 1C and Figure 1\u2014figure supplement 1). Vertical stress fibers at the edge of the patterns, along the vertical bars of the H, were straight and strongly coupled to the substrate (adherent stress fibers), while peripheral stress fibers located above the non-adhesive regions of the micropattern, in between the vertical bars of the H, were curved due to the inward pull of the cell cortex (free stress fibers). Focal adhesions were primarily located in the corners of the pattern, although some were present on the middle bar of the H-pattern, which is required for the cells to spread over the whole pattern. A similar pattern of organization was observed in doublets, with the addition of a prominent cell\u2013cell junction in the center of the H-pattern, parallel to the lateral bars of the H (Figure 1B), consistent with previous work (Tseng et al., 2012).\n\nBy quantifying cell-generated forces using traction force microscopy (TFM), we found that the magnitude of traction forces is very similar between doublets and singlets (Figure 1D). When we quantified the overall contractility by calculating the strain energy stored in the substrate, we found that it is even slightly higher for singlets than for doublets, despite spreading over the same surface area (Figure 1F). This is likely because singlets have to spread a smaller volume over the same surface as doublets, leading to higher tension, both in the actomyosin machinery (Hippler et al., 2020) and in the cell membrane (Pontes et al., 2017). Moreover, they do not have to accommodate any cell\u2013cell junction and therefore could be coupled better to the substrate (Tseng et al., 2012).\n\nNext we calculated stresses born by the cells using monolayer stress microscopy (MSM), which converts the TFM data into an estimate for intracellular stress (Figure 1E, Tambe et al., 2011; Bauer et al., 2021). Although MSM assumes linear elasticity of the cell layer (Tambe et al., 2013), it is generally believed to give a good representation of the spatial distribution of stress in the interior of adherent cells (Ng et al., 2014). In doublets, the normal stresses in x- and y-direction ($\\sigma_{xx}$ and $\\sigma_{yy}$) were comparable, whereas in singlets $\\sigma_{xx}$ was much larger than $\\sigma_{yy}$ (Figure 1F). To quantitatively compare the cellular stress distribution of these systems, we computed the mechanical polarization as ($\\sigma_{xx}\u2212\\sigma_{yy})/(\\sigma_{xx}+\\sigma_{yy}$). With this quantification, a system polarized vertically has a polarization of \u20131, 0 reflects an unpolarized system and 1 a horizontally polarized system. Doublets were unpolarized (average degree of polarization of 0), whereas singlets were horizontally polarized with an average degree of polarization of almost 0.5. Next, we measured the polarization of the actin structures with a homemade algorithm using the structure tensor (see \u2018Materials and methods\u2019 section for details). We found the same trend and a strong correlation between mechanical and structural polarization, meaning that the stress fibers in singlets are largely organized horizontally, whereas in doublets they are directed more toward the center (Figure 3\u2014figure supplement 1). Our results suggest that intercellular junctions may act as a barrier preventing the horizontal organization of stress fibers that exist in singlets, thus strongly altering the mechanical polarization of the system.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83588/elife-83588-fig1-v2.jpg)\n\n**Figure 1.:** (A) Cartoon of the micropatterning process on soft substrates, allowing to control cell shape and measure forces at the same time by embedding fluorescent microbeads into the gel and measuring their displacement. The middle panel shows the used pattern geometry, an H with dimensions of $45\\mum$ \u00d7 $45\\mum$. (B, C) Immunostaining of opto-MDCK cells plated on H-patterns and incubated for $24h$ before fixing. Actin is shown in black, E-cadherin in green, vinculin in violet, and the nucleus in orange. (B) The left and right images show a representative example of a doublet. (C) A representative example of a singlet. (D) Traction stress and force maps of doublets (top) and singlets (bottom) with a representative example on the left and an average on the right. (E) Cell stress maps calculated by applying a monolayer stress microscopy algorithm to the traction stress maps, with a representative example on the left and an average on the right. (F) From left to right, boxplots of spreading size, measured within the boundary defined by the stress fibers. Strain energy, calculated by summing up the squared scalar product of traction force and displacement field divided by two xx-stress and yy-stress calculated by averaging the stress maps obtained with monolayer stress microscopy. Degree of polarization, defined as the difference of the average xx- and yy-stress normalized by their sum. Doublets are shown in yellow and singlets are shown in green. The figure shows data from n = 106 doublets from N = 10 samples and n = 72 singlets from N = 12 samples. All scale bars are $10\\mum$ long.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83588/elife-83588-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Immunostaining of opto-MDCK cells plated on H-patterns and incubated for $24hr$ before fixing.Actin, E-cadherin, vinculin, and the nucleus are shown. The top and middle rows show a representative example of a doublet, and the bottom row shows a representative example of a singlet. Scale bar is $10\\mum$ long.\n\n### The presence of an intercellular junction leads to a redistribution of tension from free to adherent peripheral stress fiber\n\nAn inherent limitation of TFM is that it only quantifies tension transmitted to the substrate while forces internally balanced are not detected. Although this is partially remedied by MSM, which estimates an internal stress distribution based on the TFM results, this method lacks spatial resolution to take into account the precise organization of the cell. In order to address this important aspect, we therefore turn to a contour model (CA) that focuses on the role of the peripheral stress fibers (Figure 2A).\n\nWe previously showed that the curvature of a free stress fiber results from a balance between an isotropic surface tension pulling the stress fibers toward the cell center and a line tension acting along the fibers, tending to straighten them (Bischofs et al., 2008; Bischofs et al., 2009). The radius of curvature is then given by the ratio of the line to the surface tension. As the line tension can be calculated from the TFM data and the radius of curvature can be measured, the surface tension can be inferred. One key assumption of our previous work was that cellular tension is isotropic. As we showed that single cells are mechanically polarized (Figure 1F), we generalized our circular arc model to anisotropic systems (anisotropic tension model [ATM]) (Pomp et al., 2018), allowing to compute surface tensions in the x- and y-directions by measuring the surface tension in x-direction on the TFM maps and then fitting the surface tension in y-direction until the resulting ellipse fits to the fiber (Figure 2A and theory supplement).In the ATM, line tension $\\lambda$ becomes position-dependent, as seen in Figure 2B; on the left-hand side, a large value of $\\sigma_{y}$ pulls the contour in, while on the right-hand side, a smaller value of $\\sigma_{y}$ leads to less invaginated cell contour. In both cases, one clearly sees that the contour is not circular, but elliptical (Pomp et al., 2018). The color code shows that anisotropic surface tension comes with spatial variation in the line tension. Application of this approach to experimental data allowed us to infer anisotropic surface tensions for both doublets and singlets (Figure 2C).\n\nThe combination of contour analysis and TFM showed that stress fibers in singlets are subjected to a larger stress along the x-direction than in doublets and conversely that stress fibers in doublets are subjected to higher stresses in the y-direction than singlets (Figure 2D). Consistent with this, singlets possessed a significantly larger line tension in their free stress fibers than doublets. In contrast, the force exerted by adherent stress fibers displayed the opposite behavior: it was higher in doublets than in singlets (Figure 2E). These two forces were computed by integrating the traction stresses in each corner, correcting for the contribution of the surface tension along the adherent fiber and then projecting these forces onto the stress fibers (see theory supplement for details). These results are consistent with the MSM analysis from Figure 1. It should be noted that the anisotropic surface tensions obtained from the contour model are not directly related to MSM measurements since MSM focuses on the bulk and the contour models on the boundaries. Yet, a strong correlation between MSM measurements and anisotropic surface tensions was found (Figure 2D), suggesting that there is some indirect relationship between the two. Indeed, $\\sigma_{xx}$ (which corresponds roughly to the free stress fiber since it is approximately parallel to the x-axis) is higher in singlets and $\\sigma_{yy}$ (which corresponds roughly to the adherent stress fiber since it is parallel to the y-axis) is higher in doublets (Figure 1E).We conclude that the presence of cell\u2013cell junction leads to a redistribution of tension from the free to adherent peripheral stress fibers.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83588/elife-83588-fig2-v2.jpg)\n\n**Figure 2.:** (A) Cartoon of the contour model used to analyze the shape of the doublets and singlets. (B) Finite element method (FEM) simulation of the contour with $\\sigma_{y}>\\sigma_{x}$ left and $\\sigma_{x}>\\sigma_{y}$ right. (C) Actin images of doublets (left) and singlets (right) with traction stresses (arrows), tracking of the free fiber (blue circles), elliptical contour fitted to the fiber tracks (green line), and tangents to the contour at adhesion point (white dashed line). The scale bar is $10\\mum$ long. (D) Correlation plot of monolayer stress microscopy (MSM) stresses and CM surface tensions. MSM stresses were calculated by averaging the stress maps obtained with monolayer stress microscopy, and the surface tensions were obtained by the contour model analysis, where $\\sigma_{x}$ was measured on the traction force microscopy (TFM) maps by summing up the x-traction stresses in a window around the center of the vertical fiber and $\\sigma_{y}$ was determined by fitting the resulting ellipse to the tracking data of the free fiber. Doublets are shown as yellow dots, and singlets are shown as green crosses. The black line shows the linear regression of the data, and the shaded area shows the 95% confidence interval for this regression. The R-value shown corresponds to the Pearson correlation coefficient. (E) Boxplots of line tension $\\lambda$ (left) and force of adherent fiber $F_{a}$ (right) as defined in panel (A). Both values were calculated by first calculating the force in each corner by summing up all forces in a radius of $12\\mum$ around the peak value and then projecting the resulting force onto the tangent of the contour for the line tension and onto the y-axis for the force of adherent fiber. Doublets are shown in yellow, and singlets are shown in green. The figure shows data from n = 106 doublets from N = 10 samples and n = 72 singlets from N = 12 samples. All scale bars are $10\\mum$ long.\n\n### Force increase through local activation of RhoA in one cell leads to active force increase in neighboring cell in doublets\n\nIn order to study signal propagation, it is important to generate a well-defined input whose propagation can be followed in space and time. Although this is a notoriously difficult issue in cellular force generation, a new tool was recently established which allows just that, namely non-neuronal optogenetics. In order to switch on cell contractility in a controlled manner, we activated RhoA, a major regulator of cell contractility, with an optogenetic actuator that relocalizes a RhoGEF domain to the membrane in response to $488nm$ light (Figure 3A, Valon et al., 2017; Andersen et al., 2023; M\u00e9ry et al., 2023).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83588/elife-83588-fig3-v2.jpg)\n\n**Figure 3.:** (A) Cartoon of the optogenetic CIBN/CRY2 construction used to locally activate RhoA. (B) Cartoon of the FEM continuum model used to explain optogenetic experiments. (C) Difference of average traction force maps after and before photoactivation of cell doublets (top) and singlets (bottom). Maps on the left show the traction force microscopy (TFM) data, and maps on the right show the result of the FEM simulations with an active response of the right cell. (D) Relative strain energies of doublets (top) and singlets (bottom) with local photoactivation, divided into left half (bright) and right half (dark). One frame per minute was acquired for 60 min, and cells were photoactivated with one pulse per minute for 10 min between minute 20 and minute 30. Strain energy curves were normalized by first subtracting the individual baseline energies (average of the first 20 min) and then dividing by the average baseline energy of all cell doublets/singlets in the corresponding datasets. Data is shown as circles with the mean \u00b1 SEM. Boxplots on the right show the value of the relative strain energy curves 2 min after photoactivation, that is, at minute 32. (E) Difference of actin images after and before photoactivation of doublets (top) and singlets (bottom), with an example on the left and the average on the bottom. All scale bars are $10\\mum$ long. (F) LifeAct intensity measurement inside the cells over time (left) of left half (bright) vs. right half (dark) of doublets (top) and singlets (bottom) after local photoactivation. Boxplots on the right show the relative actin intensity value after 2 min after photoactivation of activated vs. nonactivated half. The figure shows data from n = 17 doublets from N = 2 samples and n = 17 singlets from N = 6 samples. All scale bars are $10\\mum$ long.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83588/elife-83588-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) LifeAct images of some example opto-MDCK doublets (left) and singlets (right) plated on H-patterns. (B) Correlation plot of mechanical and structural polarization. The black line shows the linear regression of the data, and the shaded area shows the 95% confidence interval for this regression. The R-value shown corresponds to the Pearson correlation coefficient. Scale bar is $10\\mum$ long. (C) LifeAct intensity measurement on periphery of cells over time (left) of left half (bright) vs. right half (dark) of doublets (top) and singlets (bottom) after local photoactivation. Boxplots on the right show the relative actin intensity value after 2 min after photoactivation of activated vs. nonactivated half.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83588/elife-83588-fig3-figsupp2-v2.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/83588/elife-83588-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Fluorescence images of CRY2 in MDCK cell doublets in response to photoactivation pulse of increasing power. (B) CRY2 recruitment from the cytosol to the plasma membrane, quantified by measuring the ratio of intensities in the lamellipodium vs. the cytosol.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/83588/elife-83588-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Fluorescence image of a homogeneously coated coverslip, illuminated on a rectangular zone with a digitial micromirror device (DMD) and the horizontal intensity profile. The background was subtracted from the image before making the measurements. The peak intensity drops to 6% over a distance of $10\\mum$, so all local activation routines were placed $10\\mum$ away from the junction. (B) Left: a cartoon describing the experiment. First, the whole doublet is activated at low light intensity ($0.054mWmm^{-2}$) and then only the left cell is activated with higher intensity ($0.9mWmm^{-2}$). The intensity of the first activation routine corresponds to the intensity right at the junction from the second activation routine. Right: curves show the strain energy stored in the substrate under the left cell (left) and under the right cell (right). The strain energy curves were normalized by the strain energy level before photoactivation. Red curves show the average, and gray curves show the individual doublets.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/83588/elife-83588-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A) Difference of average traction force maps after and before photoactivation of cell doublets (top) and singlets (bottom). Maps on the left show the traction force microscopy (TFM) data and maps on the right show the result of the FEM simulations without any active reaction of the right cell. (B) Relative strain energies of doublets (top) and singlets (bottom) with local photoactivation, divided in left half (bright) and right half (dark). One frame per minute was acquired for 60 min, and cells were photoactivated with one pulse per minute for 10 min between minute 20 and minute 30. Strain energy curves were normalized by first subtracting the individual baseline energies (average of the first 20 min) and then dividing by the average baseline energy of all cell doublets/singlets in the corresponding datasets. Data is shown as circles with the mean \u00b1 SEM, and simulated curves are shown as solid lines. (C) A cartoon showing the basic elements of the FEM simulation. Acute fluidization is modeled as a switch from Kelvin\u2013Voigt to Maxwell elements. (D) Relative strain energies of singlets with local photoactivation, ddivided in left half (bright) and right half (dark). One frame per minute was acquired for 60 min, and cells were photoactivated with one pulse per minute for 10 min between minute 20 and minute 30. Strain energy curves were normalized by first subtracting the individual baseline energies (average of the first 20 min) and then dividing by the average baseline energy of all cell doublets/singlets in the corresponding datasets. Data is shown as circles with the mean \u00b1 SEM, and the result of an FEM simulation is shown as a solid line.\n\nAs previous work has shown that this tool allows localized activation of RhoA signaling within single cells (Valon et al., 2015) and we used it to activate the left half of doublets and singlets to determine how the localized stress created by activation propagated to the other side of the system. First, we compared global photoactivation of doublets and singlets (shown in 1\u20143) with their local photoactivation (Figure 3\u2014figure supplement 2). Then, to make sure we do not accidentally activate the right cell, we first looked at CRY2 recruitment in left and right cell after photoactivation of only the left cell for different light intensities (Animation 4). We identified $0.9mWmm^{-2}$ to be the right intensity where recruitment in the left cell is saturated and recruitment in the right cell is much smaller. To further minimize photoactivation of the right cell, we estimated how much light it receives by measuring the intensity profile of the photoactivation region (Figure 3\u2014figure supplement 3A) and saw that the light intensity right at the border of the activation region is still at 50% of its maximal value. We then decided to move the activation region $10\\mum$ away from the junction because there the intensity drops to 6%, that is, $0.054mWmm^{-2}$. The light the right cell receives in this condition is less than the first activation seen in Figure 3\u2014figure supplement 2, where no recruitment of the right cell was measured. Finally, to make sure that the light seen by the right cell is not sufficient to trigger a force response, we globally photoactivated a doublet with $0.054mWmm^{-2}$ and then locally only the left cell with $10\\mum$ distance from the center, with $0.9mWmm^{-2}$ (Figure 3\u2014figure supplement 3B). The right cell sees more light in the first condition, but a force response was only measured in the second condition, so we concluded that stray light activation cannot explain the force increase of the nonactivated cell.\n\n![Animation 1.](https://cdn.elifesciences.org/articles/83588/elife-83588-animation1-v2.gif.jpg)\n\n![Animation 2.](https://cdn.elifesciences.org/articles/83588/elife-83588-animation2-v2.gif.jpg)\n\n**Animation 2.:** Actin is shown in black, traction forces are overlaid as colored arrows, the tracked contour in blue circles, the tangents in white dashed lines, and the fitted ellipse in green.\n\n![Animation 3.](https://cdn.elifesciences.org/articles/83588/elife-83588-animation3-v2.gif.jpg)\n\n**Animation 3.:** Actin is shown in black, traction forces are overlaid as colored arrows, the tracked contour in blue circles, the tangents in white dashed lines, and the fitted ellipse in green.\n\n![Animation 4.](https://cdn.elifesciences.org/articles/83588/elife-83588-animation4-v2.gif.jpg)\n\nThe stress propagation differed markedly between doublets and singlets. In doublets, traction forces increased both in the activated and the nonactivated region. In the singlets, on the other hand, traction forces increased slightly and very locally in the activated region, but decreased in the nonactivated region (Figure 3C and D, Animations 4 and 5). We conclude that in contrast to singlets, doublets can establish stable contraction patterns under half-activation of contractility. To rule out that this is simply an effect of different expression levels of optogenetic receptors and actuators in doublets vs. singlets, we compared photoactivation of the whole doublet with photoactivation of the whole singlet. Here, the relative strain energy increase was very similar between doublets and singlets (Figure 3\u2014figure supplement 2).\n\n![Animation 5.](https://cdn.elifesciences.org/articles/83588/elife-83588-animation5-v2.gif.jpg)\n\nWe hypothesized that this behavior may originate from differences in the reorganization of contractile elements within the cytoskeleton in singlets and doublets. Therefore, we imaged the behavior of the actin cytoskeleton during the light stimulation by comparing the fluorescence intensity distribution of the F-actin reporter LifeAct before and during stimulation. In doublets, LifeAct fluorescence increases slightly inside and decreases slightly outside of the doublet. The decrease outside of the doublet is mostly due to fiber movement. When we measure the LifeAct intensity following its movement, the intensity remains mostly constant (Figure 3\u2014figure supplement 1C). In contrast, in singlets, LifeAct fluorescence redistributed from the unstimulated side to the stimulated side, both inside of the cell as well as on the periphery (Figure 3E and F, Figure 3\u2014figure supplement 1C).\n\nTo determine whether the behavior of the doublets could arise from a passive response of the nonactivated region, we developed a finite element (FE) continuum model to predict stress propagation (Figure 3B) (details in theory supplement). Based on previous work characterizing cell rheology (Edwards and Schwarz, 2011; Banerjee and Marchetti, 2012; Oakes et al., 2014; Oakes et al., 2017), our continuum model consists of a network of Kelvin\u2013Voigt elements that are each connected to an elastic substrate. Each Kelvin\u2013Voigt element also possesses an active element, which describes the contractility of myosin motors that can be increased to simulate optogenetic activation of contractility. In order to fix the parameters of the model, we performed an experiment where we photoactivated the whole singlet/doublet (see theory supplement and 1\u20143 for details). We used this model to predict the spatiotemporal evolution of traction stress in the system. Comparison of the FE results to the experimental data shows that the behavior of the nonactivated region cannot be reproduced with a purely passive reaction (Figure 3\u2014figure supplement 5A and B). Therefore, we hypothesized that active coupling takes place perhaps due to mechanotransductory signaling pathways. To test this idea, we introduced an active coupling element into the FEM model between the left and the right half. We then used this coupling term as a fitting parameter to qualitatively reproduce the experimental traction maps. Again, doublets differed from singlets. Coupling in doublets was positive, meaning that the right half contracts in response to the contraction of the left half; whereas it was negative in singlets, meaning that the right half relaxes in response to the contraction of the left half.\n\nTogether, these data indicate that cells in the doublet are actively coupled, with the unstimulated cell responding to the contraction of the stimulated cell by actively contracting, in agreement with previous qualitative reports (Liu et al., 2010; Hino et al., 2020). Strikingly, traction force generated by doublets shows a homeostatic response to this transient increase of RhoA activity. Indeed, once activation is stopped, the traction force generated on the pattern returns to its initial level. In singlets on the other hand, transient and local RhoA activation has a destabilizing effect. The local increase in traction stress and the local accumulation of F-actin in the photoactivated region is compensated with a decrease in stress and F-actin in the nonactivated region. Furthermore, rather than displaying a homeostatic behavior, the traction stress keeps decreasing even after the activation is stopped. We hypothesize that this may occur because the actin structures acutely fluidize in response to the local stress increase, as previously reported (Krishnan et al., 2009; Andreu et al., 2021). Since there is no junction and thus no barrier for mass transport in singlets, the imbalance in stress induced by optogenetic activation may lead to a flow of F-actin from the nonactivated to the activated region, consistent with our observations (Figure 3E and F). As a qualitative test, we exchanged the Kelvin\u2013Voigt elements in our model of the cell body for Maxwell elements after photoactivation. This led to a behavior consistent with our observations (Figure 3\u2014figure supplement 5C and D).\n\nOverall, our data show that the cytoskeleton possesses active coupling and that the degree of coupling depends on the presence of an intercellular junction. The intercellular junction allows efficient propagation of stress across the whole micropattern, probably due to mechanotransductory pathways and by impeding fluidization.\n\n### Strong active coupling is present in the actin cortex of doublets\n\nHaving shown that the unstimulated cell in doublets reacts actively to the contraction of the stimulated cell, we sought to quantify the strength of this active response. To this end, we sought to quantitatively reproduce the distribution of cell stresses obtained by MSM in photoactivated doublets using our FEM model (Figure 4A\u2013C). To simulate optogenetic activation, we increased the level of contractility of the activated left-hand side of the doublet compared to the baseline found in unstimulated conditions. Then to simulate coupling, we tuned the degree of contractility on the unstimulated right-hand side of the doublet. The ratio of contractility of the right half to the left half corresponds to the degree of active coupling between the cells in the doublet. An active coupling of 0 means no contraction of the right half, 1 indicates a contraction of the right half of the same magnitude as the left, and \u20131 means relaxation of the right half with same magnitude as the increase on the left. To allow comparison of experiments to simulations, we normalize the stress increase of the right cell by the total stress increase (Figure 4C). For each experiment, we determined the degree of coupling that best reproduced the experimental cellular stress distribution in the x- and y-directions (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83588/elife-83588-fig4-v2.jpg)\n\n**Figure 4.:** (A) Difference of average cell stress maps after and before photoactivation of cell doublets, calculated with monolayer stress microscopy (MSM) (top) and simulated with the FEM continuum model (bottom). Stress in x-direction is shown on the left, and stress in y-direction is shown on the right. (B) Average over the y-axis of the maps in (A). Data is shown as circles with the mean \u00b1 SEM. In the simulation, the right half of the cell was progressively activated to obtain the family of curves shown in the bottom. (C) Response of the right half (normalized by the total response), obtained from the model (gray line), as a function of the degree of active coupling. The experimental MSM value is placed on the curve to extract the degree of active response of the right cell in the experiment. (D) Contour analysis of the free stress fiber. In the experiment, the distance between the free fibers as a function of x is measured, as shown in the image on the left. An example for a contour model simulations is shown in the right. (E) The contour strain after photoactivation is calculated from the distance measurements shown in (D) by dividing the distance between the free stress fibers for each point in x-direction after and before photoactivation. Similarly to the FEM simulation, in the contour simulation, the right half of the contour is progressively activated to obtain the curve family shown in the right plot. (F) Response of the right half (normalized by the total response), obtained from the model (gray line), as a function of the degree of active coupling. The experimental strain value is placed on the curve to extract the degree of active response of the right cell in the experiment. (G) A cartoon showing our interpretation of the results shown in panels (A\u2013F). The traction force analysis only measures forces that are transmitted to the substrate, which are dominated by the activity of the stress fibers. The contour of the free fiber is determined by the activity of the actin cortex and the free stress fiber. Thus, the strong active coupling in the contour suggests strong active coupling of the cortices and the comparatively weak active coupling of the forces suggests a weak active coupling of the stress fibers. The figure shows data from n = 17 doublets from N = 2 samples. All scale bars are $10\\mum$ long.\n\nInterestingly, this analysis showed different coupling behaviors in the x- and y-directions. We found positive active coupling in the y-direction (0.2), but negative coupling in the x-direction (\u20130.05) (yellow square, Figure 4C). This may be because all forces in y-direction are balanced between the cell and the substrate, but not across the junction. This signifies that each cell can contract independently from one another in this direction. In contrast, the forces in the x-direction must always be balanced by interaction between the cells across the junction, similar to a \u2018tug of war.\n\nTo test our hypothesis of independent contraction in the y-direction, we measured the distance between the free stress fibers along the x-axis (Figure 4D) to get a readout for cortical tensions not transmitted to the substrate. The ratio of the inter-stress fiber distance during and before photoactivation defines a contour strain along the x-direction (Figure 4E). We compared experimental contour strain to the contour strain in simulations, in which we again progressively activated the right half of the contour (Figure 4D and E) and repeated the same analysis as in Figure 4C. We found a degree of coupling of 0.8, indicating a global active contraction of the unstimulated cell (Figure 4F). This is consistent with the active positive coupling measured in the y-direction using MSM (Figure 4C). Overall both TFM and surface tension analyses showed active coupling between the two regions. However, active coupling was weaker in TFM measurements, perhaps because the cortices of the two cells are more strongly actively coupled than the stress fibers.\n\nIn conclusion, traction forces, as measured by TFM, show weaker active coupling between activated and nonactivated region than cortical tensions, as inferred by measurement of contour strain. The traction forces are dominated by the activity of the stress fibers, both internal and on the periphery, because most forces are found in the corners of the doublet. The only area where the cortex can transmit forces to the substrate is along the vertical fiber in horizontal direction. If this force were substantial, it should point much more horizontally and be much more constant, without the strong hotspots in the corners. The contour of the free fiber, on the other hand, is determined by the activity of the actin cortex and the free stress fiber. Thus, contour analysis suggests strong active coupling of the cortices and the comparatively weaker active coupling observed in cellular stress distributions may occur because internal stress fibers are coupled to the substrate and transmit little stress across the cell junction (Figure 4G).\n\n### Mechanical stresses transmit most efficiently perpendicularly to the axis of mechanical and structural polarization in doublets\n\nOur data indicated that active coupling of contractions in the y-direction is much higher in doublets than in the x-direction. We hypothesized that active coupling may be modulated by mechanical and structural polarization of the cells. To test this, we sought to vary structural and mechanical polarization of doublets by changing the aspect ratio of the underlying micropatterns from 1 to 2, 1 to 1, and to 2 to 1 (y to x ratio) while maintaining a constant spreading area. Mechanical polarization and structural polarization were quantified as previously. We found that structural and mechanical polarization are tightly correlated and vary greatly in between the three different aspect ratios (Figure 5A\u2013C). For example, on micropatterns with 1 to 2 aspect ratio, both stress fibers and force patterns were oriented horizontally whereas on 2 to 1 they were oriented vertically.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/83588/elife-83588-fig5-v2.jpg)\n\n**Figure 5.:** (A) Actin images (left) and average traction stress and force maps (right) of cell doublets on H-patterns with different aspect ratios (1 to 2, 1 to 1, and 2 to 1). (B) Average cell stress maps calculated by applying a monolayer stress microscopy algorithm to the traction stress maps. (C) Correlation plot of mechanical and structural polarization. The black line shows the linear regression of the data, and the shaded area shows the 95% confidence interval for this regression. The R-value shown corresponds to the Pearson correlation coefficient. (D) Stress maps of the difference of xx-stress (left) and yy-stress (right) before and after photoactivation. (E) Average over the y-axis of the maps in (D). Data is shown as circles with the mean \u00b1 SEM. (F) Response of the right half (normalized by the total response), obtained from the model (gray line), as a function of the degree of active coupling. The experimental monolayer stress microscopy (MSM) value is placed on the curve to extract the degree of active response of the right cell in the experiment. All scale bars are $10\\mum$ long. (G) The degree of active coupling plotted against the average mechanical and structural polarization. (H) A cartoon showing our interpretation of the data shown in panels (A\u2013F). The relative response of the right cell in response to the activation of the left cell varies strongly in the different aspect ratios. In the 1 to 2 doublet, where polarization and transmission direction are aligned, the right cell relaxes, whereas in the 2 to 1 doublet, where the polarization axis is perpendicular to the transmission direction, the right cell contracts almost as strongly as the left cell. The figure shows data from n = 43 1 to 2 doublets from N = 6 samples, n = 29 1 to 1 doublets from N = 2 samples, and n = 18 2 to 1 doublets from N = 3 samples. For the analysis of the optogenetic data, doublets with unstable stress behavior before photoactivation were excluded. All scale bars are $10\\mum$ long.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83588/elife-83588-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Contour analysis of the free stress fiber. In the experiment, the distance between the free fibers as a function of x is measured, as shown in the image on the left. (B) The contour strain after photoactivation is calculated from the distance measurements shown in (A), by dividing the distance between the free stress fibers for each point in x-direction after and before photoactivation. (C) Response of the right half (normalized by the total response), obtained from the model (solid lines), as a function of the degree of active coupling. The experimental strain value is placed on the curve to extract the degree of active response of the right cell in the experiment.\n\nNext, we examined the link between structural polarization and stress transmission. For each aspect ratio, we repeated the local activation experiments (Figure 4, Figure 5D\u2013F, Animation 6). These optogenetically induced stresses transmit from the sender cell to the receiver cell, that is, from left to right. We observed markedly different behavior depending on aspect ratio. In 1 to 2 doublets, cells are polarized mechanically and structurally along the direction of stress transmission and, after activation of left hand cell, the right cell reacts by relaxing. In contrast, in 2 to 1 doublets, cells are polarized mechanically and structurally perpendicular to the direction of stress transmission and activation of the left-hand cell leads to contraction of the right-hand cell. We then computed the degree of active coupling as previously and found that the degree of active coupling increased with increasing mechanical and structural polarization (Figure 5D\u2013G).\n\n![Animation 6.](https://cdn.elifesciences.org/articles/83588/elife-83588-animation6-v2.gif.jpg)\n\nWe then investigated whether a similar effect could be observed for cortical tensions and performed the contour analysis as in Figure 4. Here we saw, in agreement with Figure 4E, that the contour deformation is very symmetrical in both the 1 to 1 and the 2 to 1 doublets, but much less in the 1 to 2 doublets, where the degree of active coupling is lower. The quantification of the degree of active coupling here is lower for the 2 to 1 than for the 1 to 1, but the uncertainty of this quantification is quite high because the contour strain is small, so this is likely due to the noise in the strain measurements (Figure 5\u2014figure supplement 1). Altogether, we conclude that mechanical stresses transmit most efficiently perpendicularly to the axis of mechanical and structural polarization in doublets (Figure 5G).\n\n### Mechanical stresses transmit most efficiently perpendicularly to the axis of mechanical and structural polarization in small cell clusters\n\nFinally, we investigated whether this conclusion is generalizable to larger systems. Because it is very challenging to position three or four cells on appropriate patterns, we turned to small monolayers. We confined about 10\u201320 cells on $150\\mum$ \u00d7 $40\\mum$ rectangular micropatterns. We again performed TFM and MSM experiments as well as live imaging of F-actin and quantified the mechanical and structural polarization for micropatterns with aspect ratios of 1:4. We observed prominent actin cables at the periphery of the small monolayers with less marked stress fibers internally. In these conditions, the tissue is mechanically and structurally polarized along the long axis of the pattern (Figure 6A\u2013C, Figure 6\u2014figure supplement 1).\n\nWe then characterized the efficiency of stress propagation parallel and perpendicular to the axis of tissue polarization. To this end, we photoactivated either the top half or the left half of the tissues. In our experiments, we observed again an increase in traction forces and cell stress both in the activated and in the nonactivated region. We computed the degree of active coupling in the same way as for doublets using our FEM model and found that active coupling is higher, when the direction of stress propagation is perpendicular to the axis of mechanical and structural polarization of the tissue. Additionally, we measured the distance $d$ over which the stress attenuates to 20% of its maximum and found that $d$ is, on average, threefold larger when the direction of stress propagation is perpendicular to the axis of polarization (Figure 6D\u2013F). We conclude the correlation between mechano-structural polarization and active coupling observed in doublets is also present in larger groups of cells. In summary, active coupling and its correlation with mechanical and structural polarization seem to be typical for epithelia, independent of size (Figure 6G).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/83588/elife-83588-fig6-v2.jpg)\n\n**Figure 6.:** (A) Representative (top) and average (bottom) maps of traction forces and stresses of a small monolayer on rectangular micropattern. (B) Representative example and average cell stress maps calculated by applying a monolayer stress microscopy algorithm to the traction stress maps. (C) Correlation plot of mechanical and structural polarization across all conditions. The black line shows the linear regression of the data, and the shaded area shows the 95% confidence interval for this regression. The R-value shown corresponds to the Pearson correlation coefficient. (D) Stress maps of the difference of xx-stress (left) and yy-stress (right) before and after photoactivation. (E) Average over the y-axis of the maps in (D). Data is shown as circles with the mean \u00b1 SEM. (F) Response of the right half (normalized by the total response), obtained from the model (gray line), as a function of the degree of active coupling. The experimental monolayer stress microscopy (MSM) value is placed on the curve to extract the degree of active response of the right cell in the experiment. (G) The degree of active coupling plotted against the average mechanical and structural polarization. All scale bars are $10\\mum$ long. The figure shows data from n = 13 tissues from N = 2 samples photoactivated on the left and from n = 60 tissues from N = 3 samples photoactivated on the top. All scale bars are $10\\mum$ long.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83588/elife-83588-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Scale bar is $10\\mum$ long.\n\n## Discussion\n\nIntercellular forces play a major role in regulating and coordinating tissue morphogenesis. Recent work has shown that mechanical forces participate in long-range signaling, propagating over large distances at which they can be received and interpreted by other cells (Vishwakarma et al., 2018). However, we have little quantitative insight of how cell-generated forces propagate across intercellular junctions or which cellular structures modulate propagation. This is because direct measurement of intercellular forces and cell internal stresses within embryos or tissues is very challenging and most of our knowledge of the distribution of these forces is inferred from theoretical models (Roffay et al., 2021; Yang et al., 2017; Saias et al., 2015; Brodland et al., 2010). By combining quantitative measurements of cellular stresses and cell shape with optogenetic control of contractility and mathematical modeling, here we showed that force signal propagation within cellular assemblies is an active process whose amplification mechanism is controlled by the mechano-structural polarization of the system.\n\nOur results revealed the presence of active coupling between cells. This was demonstrated before by Liu et al., 2010, but a thorough quantification of this active coupling has been lacking. Photoactivation of one cell in our doublet leads to contraction, sending a force signal. The receiver cell reacts to this signal with an active contractile response. We quantified the response of the receiver cell by comparing experimental traction force and cell stress data with an FEM model. We found that a purely passive reaction of the receiver cell cannot account for the data and therefore concluded that the receiver cell reacts actively. This active coupling mechanism increases the spatial range a mechanical signal can travel to about one or two cell lengths according to our data. Furthermore, analysis of the cell shape showed very high symmetry of shape deformation despite the asymmetrical photoactivation. This shape deformation is dominated by the activity of the actin cortex, and a comparison of this measurement with a mathematical contour model led us to conclude that the active coupling of the cortices is stronger than that of stress fibers. However, this is probably strongly influenced by tissue and cell mechanical properties and by geometry and mechanical properties of the substrate. Additionally, we tested only transient signals. Maintaining signal strength over longer periods of time could also lead to farther transmission of force signals. Compared to chemical signals, these mechanical signals can travel very fast: indeed, with our temporal resolution of one frame per minute, no delay between receiver and sender cell was apparent. In contrast, when we carried out the same activation protocol on a single cell that had the same area as the doublets, the nonactivated region displayed acute fluidization of the actin structure. Thus, in the absence of an intercellular junction, localized contraction leads to actin flow instead of the stress buildup observed in doublets. Therefore, cellularization of the tissue may allow compartmentalization of stress and efficient transmission of stress, allowing the tissue to act as an elastic material rather than a viscous fluid.\n\nSeveral subcellular features determined the efficiency of active coupling. Indeed, our experiments revealed that intercellular coupling strongly depends on the anisotropy of F-actin organization and force distribution. We found that the magnitude of contraction of the receiving cells relative to the sender cells depends on the direction and magnitude of its mechano-structural polarization. If the tissue\u2019s or doublet\u2019s polarization axis is perpendicular to the axis between sender and receiver cells, the receiver cells react more strongly and the signal travels farther. However, determining the exact contribution of subcellular structures remains challenging because the cell forms a highly coupled system comprising dynamic mechanotransduction feedback loops. Future work will be necessary to determine the molecular mechanisms detecting the mechanical signal, transducing it, and amplifying it. In particular, it will be interesting to investigate how the active contraction of the receiver cell depends on its own mechano-structural polarization and that of the sender cell. Currently, the nature of the stimulus detected by the receiver cell is unclear. We note that mechanics and biochemistry are closely coupled because strain can change biochemistry by changing concentrations and spatial localization, and stress on single molecules can open cryptic binding sites or increase dissociation constants. One important element that could be studied in future work is the role of E-cadherin in this active coupling, which is highly likely to be important for this process. Knockdown or overexpression studies, although technically challenging, could give important clues to understand the molecular mechanisms behind the active coupling between cells.\n\nFinally, our study of epithelial monolayers shows that the supracellular organization of actin is a major regulator of force propagation within tissues. Forces are transmitted more efficiently in a direction perpendicular to the axis of actin polarity also in small monolayers. These results give rise to several interesting conclusions. First, recent studies have proposed that groups of cells can behave as a \u2018supracellular unit,\u2019 which share many of the characteristics of the individual cells that it consists of (Vedula et al., 2013; Khalilgharibi et al., 2019; Shellard et al., 2018). Some emerging mesoscale phenomena, such as collective gradient sensing, might be explained by common principles, such as supracellular polarity and supracellular force transmission (Sunyer et al., 2016; Tambe et al., 2011; Trepat et al., 2009; Vedula et al., 2014; van Helvert et al., 2018). Our findings complement those results, as we show that the correlation between mechano-structural polarization and force signal transmission distance holds true across scales. Second, at a much larger scale, we speculate that propagation through active coupling may have important implications in developmental processes, such as convergent extension in the Xenopus mesoderm. In these tissues, cells are planary polarized in a direction perpendicular to the extension of the tissue, and the convergence and extension of the tissue are driven by directed contraction and migration of the cells (Wallingford et al., 2000). Our results suggest that preferential transmission of active contraction perpendicular to the polarization axis of the cells could amplify this mechanism and contribute to the robustness of the process.\n\n## Materials and methods\n\n### Cell culture\n\nOpto-MDCK and opto-MDCK LifeAct cells have been kindly provided by Manasi Kelkar and Guillaume Charras. Both cell lines were cultured at 37\u00b0C and in 5% CO2 atmosphere in DMEM (Life Technologies) medium containing 10% heat-inactivated FBS (Life Technologies) and 1% penicillin/streptomycin (Sigma-Aldrich). Between 20,000 and 50,000 cells were plated on the micropatterned hydrogels. After $1hr$, cells were checked for their adhesion to the hydrogels. In case of excessive amount of cells, the sample was rinsed with fresh medium to wash off the nonadhered cells. Cells were let spread on patterns for 16\u201328 hr. Data from timelapse experiments (not shown here) showed that on average most doublets seen on the sample at this point have started as single cells and divided on the pattern to form a doublet. However, we did not control for this, so it is possible that some of the doublets in this study were two different cells to begin with. Some timelapses of forming doublets are shown in Animation 7 and Animation 8. Cells were checked for mycoplasm contamination and tested negative.\n\n![Animation 7.](https://cdn.elifesciences.org/articles/83588/elife-83588-animation7-v2.gif.jpg)\n\n**Animation 7.:** First pulse: $0.18mWmm^{\u22122}$; second pulse: $0.9mWmm^{\u22122}$; third pulse: $1.8mWmm^{\u22122}$; fourth pulse: $3.6mWmm^{\u22122}$; fifth pulse: $9mWmm^{\u22122}$; sixth pulse: $18mWmm^{\u22122}$.\n\n![Animation 8.](https://cdn.elifesciences.org/articles/83588/elife-83588-animation8-v2.gif.jpg)\n\n### Cell fixing and immunostaining\n\nFirst, cells were fixed for $10min$ with 4% PFA diluted in PBS. Next, the cell membrane was permeabilized with 0.5% Triton X-100 for $5min$. Cells were then washed twice with TBS and blocked at room temperature for $1hr$ with a blocking buffer solution containing TBS, 1% bovine serum albumin (BSA, Sigma-Aldrich), and $50mM$ glycine (Sigma-Aldrich). Then, cells were incubated for $2hr$ in a dilution of primary antibodies with blocking buffer. For E-cadherin stainings, a 1:200 dilution of DECMA-1 (Thermo Fisher 14-3249-82) was used and for vinculin stainings a 1:400 dilution of hVIN-1 (Sigma-Aldrich V9131) was used. Cells were then washed three times with TBS for $10min$ each. Then cells were incubated in a dilution of secondary antibodies, Alexa 555-conjugated phalloidin and DAPI in blocking buffer. For E-cadherin stainings, a 1:1000 dilution of Alexa 647-conjugated anti-rat (Sigma-Aldrich SAB4600186) was used; for vinculin stainings, a 1:1000 dilution of Alexa 647-conjugated anti-mouse (Thermo Fisher A-21235) and a 1:1000 dilution for phalloidin and DAPI. Fixed cells were then mounted with Mowiol 4-88 (Polysciences, Inc) onto glass slides and kept at $4\u00b0C$\u00b0C until imaging.\n\n### Preparation of micropatterned polyacrylamide gels\n\nPatterned PAA hydrogels were prepared according to the glass method described previously in Vignaud et al., 2014. In short, $32mm$ coverslips were first plasma cleaned for $60s$ and then incubated with a drop of PLL-PEG $0.1mgmL^{-1}$ in HEPES $10mM$, pH 7.4 for $30min$ at room temperature. Then, coverslips were rinsed with a squirt bottle of MilliQ water and carefully dried with a nitrogen gun. The coverslips were then placed on a quartz photomask (Toppan) on a $10\\muL$ drop of MilliQ water. Excess water was removed by placing a kimwipe on the coverslips, a flat surface on top (e.g. the lid of a petridish) and then pressing gently. The coverslips on the photomask were then exposed to deep-UV for $5min$. After recovery from the photomasks, the coverslips are incubated with $20\u00b5\u2062gmL^{-1}$ fibronectin (Sigma-Aldrich) and $20\u00b5\u2062gmL^{-1}$ Alexa 488-conjugated fibrinogen (Invitrogen) in $100mM$ sodium bicarbonate buffer for $30min$ at room temperature. To prepare the gels, a $47\\muL$ drop of $20kPa$ mix of polyacrylamide and bis-acrylamide (Sigma-Aldrich) was prepared (see Tse and Engler, 2010 for the proportions). To perform TFM, carboxylate-modified polystyrene fluorescent microbeads (Invitrogen F-8807) were added to the polyacrylamide premix and sonicated for $3min$ to break bead aggregates. A second coverslip of the same size is then placed on top, after previous silanization with a solution of $5mL$ 100% ethanol, $18.5\\muL$ Bind Silane (GE Healthcare Life Sciences) and $161\\muL$ 10% acetic acid (Sigma-Aldrich) for $5min$. During the polymerization process, the hydrogel adheres to the silanized coverslip and fibronectin proteins are trapped within the polyacrylamide mesh. The silanized coverslip is finally detached by wetting it with MilliQ water, letting the gel rehydrate for $5min$, and lifting it up with a scalpel. Hydrogels were stored in $100mM$ sodium bicarbonate buffer at 4\u00b0C for maximum 2 d before cell seeding.\n\n### Imaging and optogenetic photoactivation\n\nAll experiments were conducted 16\u201328 hr after seeding the cells on the sample. Then the cells were observed on an inverted Nikon Ti-E2 microscope with an Orca Flash 4.0 sCMOS camera (Hamamatsu), a temperature control system set at 37\u00b0C, a humidifier, and a CO 2 controller. For the opto-experiments on cell doublets and singlets, a Nikon \u00d760 oil objective was used and for the opto-experiments on tissues a Nikon \u00d740 air objective was used. The E-cadherin and vinculin staining images were taken with an Eclipse Ti inverted confocal microscope (Nikon France Instruments, Champigny sur Marne, France), equipped with sCMOS prime camera (Photometrics), a \u00d760 objective, and a CSU X1 spinning disk (Yokogawa, Roper Scientific, Lisses, France). MetaMorph software was used for controlling the microscope (Universal Imaging Corporation, Roper Scientific, Lisses, France). Unless otherwise stated, all photoactivations were done with one pulse per min for $10min$, and each pulse had a duration of $200ms$, a power density of $0.9mWmm^{-2}$, and a wavelength of $470nm$. The power density was measured with a power meter right after the objective by shining light on a surface of a given size and dividing the measured power by this size. Photoactivation regions were aligned with respect to the micropattern to ensure reproducibility.\n\n### Traction force microscopy and monolayer stress microscopy\n\nForce measurements were performed using a method described previously (Tseng et al., 2011). In short, fluorescent beads were embedded in a polyacrylamide substrate with 20 kPa rigidity and images of those beads were taken before, during, and after photoactivation. At the end of the experiment, cells were removed with 2.5% Trypsin and an unstressed reference image of the beads was taken. The displacement field analysis was done using a homemade algorithm based on the combination of particle image velocimetry and single-particle tracking. After correcting for experimental drift, bead images were divided into smaller subimages of $13.8\\mum$ width. The displacement between corresponding bead subimages was obtained by cross-correlation. After shifting the stressed subimages to correct for this displacements, the window size is divided by 2 and new displacement values are determined by cross-correlations on the smaller subimages. This procedure is repeated twice. On the final subimages, single-particle tracking was performed: this ensures that the displacement measurement has the best possible spatial resolution at a given bead density. Erroneous vectors were detected by calculating the vector difference of each vector with the surrounding vectors. If the vector magnitude was higher than $2.5\\mum$ or the vector difference higher than $1\\mum$, the vector was discarded and replaced by the mean value of the neighboring vectors. Only the first frame of each movie was compared to the unstressed reference image. All subsequent frames were compared to their predecessor. This leads to more precise measurements because the displacements are much smaller. From the bead displacement measurements, a displacement field was then interpolated on a regular grid with $1.3\\mum$ spacing. Cellular traction forces were calculated using Fourier transform traction cytometry with zero-order regularization (Milloud et al., 2017; Sabass et al., 2008) under the assumption that the substrate is a linear elastic half-space and considering only displacement and stress tangential to the substrate. To calculate the strain energy stored in the substrate, the scalar product of the stress and displacement vector fields was integrated over the surface of the whole cell. The algorithm was implemented in MATLAB and is available in Ruppel et al., 2023. For the contour model, $\\sigma_{x}$ was measured on the TFM maps by summing up the x-traction stresses in a window around the center of the vertical fiber. Within the MSM framework, cell internal stresses were calculated from the traction stress with the code from Bauer et al., 2021. To do this calculation, the cell is assumed to behave like a thin, elastic sheet that is attached to a substrate and then contracts. Equilibrium shape is reached, when the active stress that leads to the contraction is balanced by the elastic stress that builds up within the sheet and in the substrate. The resulting stress is the sum of the active and the passive stress in the elastic sheet and is independent of its elastic modulus.\n\n### Estimation of active coupling in doublets and tissues\n\nIn order to estimate the active coupling present in the doublets and tissues, we performed simulations for different levels of active coupling, ranging from \u20131 to 1, and calculated stress maps. We then subtracted the stress maps obtained before photoactivation from those obtained after photoactivation. These results were averaged along the y-axis, and the resulting curves are plotted in Figure 4B. To compare with experimental data, we also calculated the corresponding curves in the experiment using stress maps obtained through MSM, which are plotted in Figures 4B\u20136E\u20146. We repeated this process for the contour model and contour strain, yielding the plot in Figure 4E. To compare the theoretical and experimental curves, we normalized the stress response of the right half by integrating the area under each curve in the right half and dividing it by the total area. We then plotted the resulting normalized stress response against the degree of active coupling in the simulation, yielding the plots in Figures 4C, F\u20146F, and Figure 5\u2014figure supplement 1C. Finally, we compared these plots with the normalized stress and strain responses from the experiment by placing the experimental value on the theoretical curve and reading the corresponding degree of active coupling on the x-axis.\n\n### Fiber tracking\n\nA semi-automatic procedure was used to detect and track the actin fibers at the cell contour over time. First, the operator clicks on the endpoints of each fiber on the first image of a timelapse. The adherent fibers are very static and straight, so, in this case, we just draw a straight line between the two end points. The free fibers are curved and move over time. To follow the shape of a given fiber over time, we used a custom script: on each image, parallel line profiles are drawn at regular intervals in between the two defined endpoints, in a direction perpendicular to the overall fiber direction; each profile is analyzed to detect the point where it intersects the fiber using intensity variation as criterion. The line linking these points describes the actin fiber position at each time point. In order to filter out badly detected points, the consistency of the resulting positions is analyzed over both time and space. Temporal filtering consists of first a median filter over five time points and the removal of outliers. Within a moving time window of 10 time points, positions distant from the average value by more than two times the standard deviation are deleted. Spatial filtering includes also removal of outliers, defined as being distant from the spatial average position by more than three times the standard deviation. Then the angle of lines joining adjacent points is computed at each position and badly tracked points are excluded by ensuring that these angles stay below 15\u00b0. Finally, we use this tracking data to create a stack of masks for each cell which accurately describes the complete contour of the cell. The algorithm was implemented in MATLAB and is available in Ruppel et al., 2023.\n\n### Actin polarization analysis\n\nTo measure the average polarization of the internal actin network, we analyze the orientation of the internal actin network using the structure tensor formalism (J\u00e4hne, 1995). For each pixel with intensity $I\u2062(x,y)$, the structure tensor $J$ is calculated over a Gaussian local neighborhood $w\u2062(x,y)$ with a waist of 3 pixels, according to Equation (1).\n\n$$\nJ_{11}=\u222cw(x,y)(\\frac{\u2202I(x,y)}{\u2202x})^{2}dxdyJ_{22}=\u222cw(x,y)(\\frac{\u2202I(x,y)}{\u2202y})^{2}dxdyJ_{12}=J_{21}=\u222cw(x,y)(\\frac{\u2202I(x,y)}{\u2202x})(\\frac{\u2202I(x,y)}{\u2202y})dxdy\n$$\n\nThe orientation angle $\\theta$ on this local neighborhood corresponds to the direction of the main eigenvector of the structure tensor and is obtained by Equation (2).\n\n$$\ntan\u2061(2\\theta)=\\frac{2J_{12}}{J_{22}\u2212J_{11}}\n$$\n\nThis angle is only meaningful if the image shows oriented structures in this neighborhood. This confidence can be estimated from the coherency, which quantifies the degree of anisotropy and is calculated from the structure tensor according to Equation (3). Values with a coherency value under 0.4 were excluded before averaging the orientation angles over the cell to obtain the mean direction of the actin network. The degree of polarization is then obtained according to Equation (4). The algorithm was implemented in MATLAB and was used before by Mandal et al., 2014. The version used for this work is available in Ruppel et al., 2023.\n\n$$\nCoherency=\\frac{\\sqrt{(J_{22}\u2212J_{11})^{2}+4J_{12}^{2}}}{J_{11}+J_{22}}\n$$\n\n\n\n$$\nPolarization=<cos\u2061(2(\\theta\u2212\\theta_{mean}))>\n$$\n\n### Actin intensity measurement\n\nTo measure the actin intensity in the left and the right half of the doublet/singlet, we first segment the cells using the masks obtained from the fiber tracking. We reduce its size a little bit to exclude the external stress fibers from the measurement. We then divide the doublet/singlet vertically in two halves and sum up all the intensity values within the region of interest, yielding one intensity value per frame and per half. This intensity over time is then normalized by the intensity value of the average over the first 20 frames before photoactivation.\n\n### Statistical analysis and boxplots\n\nAll boxplots show the inner quartile range as boxes and the whiskers extend to 1.5 times the inner quartile range. The notches show the 95% confidence interval for the median, and the white dot shows the sample mean. The Mann\u2013Whitney\u2013Wilcoxon U test was used to test for differences between singlets and doublets, with ns: p>0.05, *p<0.05, **p<0.01,***p<0.001, and ****p<0.0001.\n\n### Data exclusion for optogenetic experiments\n\nMany of the cells showed an unstable baseline energy level, which made it difficult to judge the impact of the optogenetic activation. Thus, we quantified the baseline stability of each cell by applying a linear regression to the relative strain energy curve before photoactivation and excluded all cells with a slope larger in absolute value than a threshold value. For Figure 3, this process excluded 16 globally activated doublets, 7 globally activated singlets, 12 locally activated doublets, and 17 locally activated singlets. For Figure 5D\u2013F, this process excluded 22 1 to 2 doublets, 7 1 to 1 doublets, and 2 2 to 1 doublets.\n",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "8a109567-d8f9-49d7-a38c-bd629b11a5ee",
+      "submission_id": "923f5b7c-78ea-49cf-bcda-e2211ece2176",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Karsten Kruse, https://ror.org/01swzsf04 University of Geneva Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83588.sa0](https://doi.org/10.7554/eLife.83588.sa0)\n\nUsing surface micropatterning, optical activation, and theoretical analysis, the authors provide compelling evidence that adjacent cells actively propagate mechanical stress in epithelial tissues. The response of the receiver cell is active and enhanced when the principal stress direction is perpendicular to the orientation of actin fibers. This work is important and a must read for everybody wanting to understand tissue mechanics.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Karsten Kruse, https://ror.org/01swzsf04 University of Geneva Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83588.sa1](https://doi.org/10.7554/eLife.83588.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Force propagation between epithelial cells depends on active coupling and mechano-structural polarization\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Jonathan Cooper as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The link between the supplementary information and the main text needs to be improved as the connection between some SM sections and the corresponding figures or claims in the main text is sometimes unclear. In many figures, it remains unclear which theoretical description was used, what is the underlying hypothesis that was made, or the parameter values. This limits the reproducibility of results. See the report of Reviewer #2 for details.\n\n2) Clarify that MSM relays on some hypothesis (linear elasticity) to infer stresses. See the report of Reviewer #2 for details.\n\nReviewer #2 (Recommendations for the authors):\n\nThere are a few concerns. The linkage between the supplementary material and the main text can be improved (see point 1). To reproduce the theoretical panels, additional details are required (see point 1). Comparison of MSM stresses and theory (see point 2).\n\n1. The linkage between the supplementary information and the main text can be improved. The connection between some SM sections and the corresponding figures or claims in the main text is unclear in many cases. In many figures, it is unclear which was the theoretical description used, the underlying hypothesis made, or the values of parameters, which limits the reproducibility of some results.\n\n1.1. In Figure 2A, the authors provide a schematic of the contour plot. According to Equation 48 in SM, the total traction force F_s is a combination of the tension of the free edge, the tension (\u03c3_x) of the vertical fiber, and a force F_ad (in the schematic is called F_a, is the same?). In the SM, F_ad is undefined. No details on how was \u03c3_x estimated can be found. Is there a contribution of \u03c3_y in the force balance 48? In Section 2.1, the authors define \u03c3_x and \u03c3_y as anisotropic surface tension. Are these related to the stresses obtained from MSM? In Section 2.2.1, can the authors explain in more detail how was \u03c3_x estimated from TFM data and explain how the center of the ellipse was set?\n\n1.2. In Figure 3C, can the authors explain how were the two theoretical panels obtained and what parameter values used? In Section 1.4 of the SM, there is confusion between u, Y, and us and Ys. Can the authors clarify the physical definition of each of them? It is unclear to me that the tractions can be linearly related to the displacement of the substrate without approximations. In A. F. Mertz (2011), the authors write a similar expression by ignoring non-local elastic effects. Can the authors comment on this point? In Equations 21, the authors assume that the displacement of the cell and the substrate are equal but no justification for this approximation is provided. The derivation of the effective substrate height Equation 20 was not found. It is unclear why the substrate height depends on the cell layer size, can the authors comment on this point?\n\n1.3. In Figure 4, a scale of the active coupling f for panels B and E is missing. Can the authors add them? Can the authors provide a physical explanation for why the S_xx on the left half depends on f, and S_yy on the left half does not? According to Equation (15), it seems that the \u03a3_opto is isotropic. It is unclear how do the author obtain a different active coupling for S_xx in panel C top and for S_yy in panel C bottom. This comment applies also to Figure 5F and 6F. Can the authors provide more detail on how f was estimated? Besides, I was not able to understand how were panels 4E and 4F obtained. Can the authors explain this in SM?\n\n1.4. Similar comments apply to Supplementary figures, S4A, B and D, and S5C. Besides in S4, the authors use a Maxwell model instead of the Kelvin-Voigt that is used in the main text, however, no details on the SM could be found for the Maxwell model (values of the parameters, theoretical description, numerical solvers).\n\nSeveral of the above concerns arise because the linkage between the SM and the main text can be improved. I would recommend making sections in the SM that focus in more detail on how each theoretical panel was obtained with enough detail so that these panels can be reproduced. Then these sections can be referenced in the main text or captions for the corresponding analyses. Note also that the order of SM sections does not correspond to the order of appearance in the main text.\n\n2. The authors use MSM data to compare with their theory. MSM is a method that infers stresses from traction force data by assuming that the material behaves as a linear elastic material with a fixed elastic modulus and Poisson ratio. In several parts of the main text, it should be clarified that MSM relays on some hypothesis (linear elasticity) to infer stresses (page 7 below Section \"The presence of an intercellular\u2026\"). The MSM stress data are compared to theoretical predictions of a Kelvin-Voigt viscoelastic model with anisotropic active stresses. There are simple configurations where both models have different stress distributions for the same traction force distribution and the same boundary conditions. It is unclear to me that the two stresses can be expected to be comparable in the geometry of the experiments (2d square). Can the authors comment on this point?\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Force propagation between epithelial cells depends on active coupling and mechano-structural polarization\" for further consideration by eLife. Your revised article has been evaluated by Jonathan Cooper (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nUnfortunately, we had not previously managed to secure a review by an experimentalist on the original manuscript. We have now obtained a report commenting specifically on the experimental part and we invite you to consider the recommendations given by this referee (Reviewer #3). The reviewer requests additional control experiments that seem straightforward and will significantly support the conclusions.\n\nReviewer #3 (Recommendations for the authors):\n\nIn this paper, Ruppel and colleagues explore the transmission of forces from cell to cell using a minimalistic cellular system consisting of two epithelial cells seeded on a H micropatterned shape. With this strategy, they unravel a longstanding question of the active or passive nature of force transmission in epithelia. By comparing doublets of cells with single cells and using optogenetics to stimulate contraction, the authors elegantly demonstrate that cells actively propagate forces from neighboring cells. They do precise measurements with traction force microscopy and monolayer stress microscopy. Finally, they complement their analysis with computational modeling and a mini epithelial system constituted by 10-20 cells.\n\nThis is an elegant piece of research, addressing the transmission of forces in epithelial cells with a minimalistic system. This system has the clear advantage of being very controlled and allowing precise and repeatable measurements. The demonstration that a cell (the receiver in the optogenetic experiments) can actively receive and produce forces in response to its neighbor (the sender in the optogenetic experiments), is in our opinion the most important finding of the paper and justifies per se the publication.\n\nWhile this is a significant demonstration, the simplicity of the system might overlook the complexity of force transmission on a real epithelial tissue in a living organism that has different mechanical properties.\n\nBecause of our expertise and the request of the editors, we will focus our analysis only on the experimental part. This complements the reviews of the other reviewers that focused more on the computational modeling part.\n\nWe think that this paper is compelling and provides significant advances in the field of epithelial biology. For this reason, we consider it appropriate for eLife and important for the scientific community in the field.\n\nHowever, we feel that some more controls and experiments are needed to fully support the claims of the article. We will be glad to recommend the article for publication if the authors can answer our concerns 1, 2, and 3 by experiments, and 4 and 5 by discussion.\n\nThe optogenetic experiment (activation of the left cell and the observed contraction of the right cell) is central to this article, and the accidental activation of the right cells by light should be more carefully excluded. Indeed, various occurrences can lead to the accidental activation of the right cell, such as light scattering or protrusions. The demonstration that the authors provide in Figure 3 suppl 2, doesn't fully exclude accidental activation of the right cell.\n\n1. Protrusions. Cells could emit protrusions that go from the right cell underneath the left cell and thereby being activated when the left cell is stimulated. Especially in the context of Figure 5 where the degree of active coupling is not only correlated with structural/mechanical polarization, but also the length of the shared border between cells (larger area where protrusions might be accidentally activated in 2 to1 patterns vs 1to2 patterns). This can be excluded by, for instance, using a genetically-encoded membrane marker expressed only in one of the two cells.\n\n2. Accidental light on the right cell. This could be easily confuted by having doublets with only the right cell expressing the optogenetic RhoA tool and illuminating the left cell that doesn't have the tool. In this case, no contraction should be observed in the right cell.\n\n3. If we assume a similar expression of optogenetic tool in each cell, the density of optogenetic receptors per area in doublets should be twice the density of singlets, leading to stronger activation of RhoA. Could this effect e.g. explain a larger increase of strain in doublets vs singlets? Or would results remain the same if light dose was halved in doublets?\n\n4. While not clear what the molecular mechanism of transmission is (and out of the scope of this study), inhibition of e-cadherins binding (or similar) could be a way to disrupt force propagation into neighboring cells. If no force response is measured in the neighboring cell, this would also help the claim that the neighboring cell does not receive sufficient light to activate the optogenetic system. Also, such a result would demonstrate that cells require direct contact and no soluble factor is involved in the activation of the receiver. Have the authors done any attempt to perturb the signal propagation using drugs? If not, can the authors discuss this important aspect?\n\n5. On the formation of doublets: In the text, it is explained that: \"most doublets have started as single cells and divided on the pattern to form a doublet.\"\n\nWas this difference controlled for? How did the rest of the doublets form? Were they seeded as doublets initially? Is there a factor (e.g. cell size) that biases which cells seed as doublets vs cells that seed alone?\n\nFor the doublets formed after division: Is there any bias comparing cells after mitosis (in doublet) vs cells before mitosis (singlet), could cell cycle state explain e.g. the increased abundance of stress fibers in singlets? Thoughts about synchronizing cell cycle state?\n\nFrom the text, some questions remain regarding the method of selecting stimulation regions in optogenetic experiments.\n\nWere the regions selected automatically or manually?\n\nIf the stimulation area was aligned using fluorescent Fibrinogen Alexa488, does this not activate the CRY2 system? If aligned on actin marker, how were stimulations kept of consistent area between repeats?\n\nHow was stimulated, a single plane in confocal?\n",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "73a9ced4-b8d5-4802-b8e9-f0841d117a04",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C1",
+      "claim": "Cell-generated forces play a major role in coordinating the large-scale behavior of cell assemblies during development, wound healing, and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-generated forces play a major role in coordinating the large-scale behavior of cell assemblies, in particular during development, wound healing, and cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract that references established scientific understanding about the role of cell-generated forces in biological processes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "ae6227dc-4d18-4c4b-84ce-521790454a25",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C2",
+      "claim": "Mechanical signals propagate faster than biochemical signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanical signals propagate faster than biochemical signals, but can have similar effects, especially in epithelial tissues with strong cell\u2013cell adhesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact in the abstract without specific experimental data or citation in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "18757126-6d2d-4250-869f-35fc040b162d",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C3",
+      "claim": "Mechanical signals can have similar effects to biochemical signals, especially in epithelial tissues with strong cell\u2013cell adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanical signals propagate faster than biochemical signals, but can have similar effects, especially in epithelial tissues with strong cell\u2013cell adhesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "8e7a985a-cd35-494b-a3a1-f8fabe20e915",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C4",
+      "claim": "After optogenetically activating RhoA in the sender cell, the receiver cell shows an active response so that the cell doublet forms a coherent unit.",
+      "claim_type": "EXPLICIT",
+      "source": "After optogenetically activating RhoA, a major regulator of cell contractility, in the sender cell, we measure the mechanical response of the receiver cell by traction force and monolayer stress microscopies. In general, we find that the receiver cells show an active response so that the cell doublet forms a coherent unit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements using traction force and monolayer stress microscopies after optogenetic activation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "ebe5f0d6-99da-42eb-86f1-61bb1a8009dd",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C5",
+      "claim": "Force propagation and response of the receiver cell depend on the mechano-structural polarization in the cell assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "However, force propagation and response of the receiver cell also strongly depend on the mechano-structural polarization in the cell assembly, which is controlled by cell\u2013matrix adhesion to the adhesive micropattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the study based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "2dc9bfca-b02d-4c29-8789-a5c7274996b5",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C6",
+      "claim": "The response of the receiver cell is stronger when the mechano-structural polarization axis is oriented perpendicular to the direction of force propagation.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the response of the receiver cell is stronger when the mechano-structural polarization axis is oriented perpendicular to the direction of force propagation, reminiscent of the Poisson effect in passive materials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct experimental finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "e422b70c-028e-41c2-a322-acbd6fe5d352",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C7",
+      "claim": "The same effects observed in cell doublets are at work in small tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "We finally show that the same effects are at work in small tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from experiments on small tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "9a77922f-e346-4994-971d-de81f443afa2",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C8",
+      "claim": "Cellular organization and active mechanical response of a tissue are key to maintain signal strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work demonstrates that cellular organization and active mechanical response of a tissue are key to maintain signal strength and lead to the emergence of elasticity, which means that signals are not dissipated like in a viscous system, but can propagate over large distances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "e18dd295-48d4-4585-877d-042a84f324c0",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C9",
+      "claim": "Active mechanical response leads to the emergence of elasticity, allowing signals to propagate over large distances rather than being dissipated.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work demonstrates that cellular organization and active mechanical response of a tissue are key to maintain signal strength and lead to the emergence of elasticity, which means that signals are not dissipated like in a viscous system, but can propagate over large distances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study based on experimental observations and modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "4da6caa8-4930-431f-98ee-7c75afa542b6",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C10",
+      "claim": "Cell-generated forces allow cells to probe the mechanical and geometrical properties of their environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to driving cell shape change and movement, force-producing processes allow cells to probe the mechanical and geometrical properties of their environment (Discher et al., 2005; Luciano et al., 2021), feeding back on to major cellular processes, such as differentiation (Engler et al., 2006; McBeath et al., 2004; Wen et al., 2014; Kilian et al., 2010), fate (Chen et al., 1997; Th\u00e9ry et al., 2005; Nelson et al., 2005), or migration (Pathak and Kumar, 2012; Sunyer and Trepat, 2020; Shellard and Mayor, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "6139b264-1999-463c-b019-40549c39da81",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C11",
+      "claim": "Force-producing processes feed back on major cellular processes such as differentiation, fate, and migration.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to driving cell shape change and movement, force-producing processes allow cells to probe the mechanical and geometrical properties of their environment (Discher et al., 2005; Luciano et al., 2021), feeding back on to major cellular processes, such as differentiation (Engler et al., 2006; McBeath et al., 2004; Wen et al., 2014; Kilian et al., 2010), fate (Chen et al., 1997; Th\u00e9ry et al., 2005; Nelson et al., 2005), or migration (Pathak and Kumar, 2012; Sunyer and Trepat, 2020; Shellard and Mayor, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "be1f7798-d216-4253-9a3e-f3ebfa1b568b",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C12",
+      "claim": "Generation of contractile force is a universal property of mammalian cells due to the ubiquitous expression of non-muscle myosin II.",
+      "claim_type": "EXPLICIT",
+      "source": "Generation of contractile force is a universal property of mammalian cells due to the ubiquitous expression of non-muscle myosin II (Vicente-Manzanares et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "7f3dfa1d-1455-4b63-b667-a86a926fd571",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C13",
+      "claim": "Fast and long-ranged propagation of mechanical force seems to be essential during development when morphogenesis has to be coordinated across the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Fast and long-ranged propagation of mechanical force seems to be essential during development, when morphogenesis has to be coordinated across the embryo (Ho et al., 2019; Desprat et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "478baae0-6850-4c28-8815-cfa531c56ccf",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C14",
+      "claim": "The onset of migration of neural crest cells in Xenopus appears controlled by the stiffening of the underlying mesoderm resulting from axis elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the onset of migration of neural crest cells in Xenopus appears controlled by the stiffening of the underlying mesoderm resulting from axis elongation (Barriga et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "eaa6d314-90b5-44dc-8dbf-1bab4537b631",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C15",
+      "claim": "The transition from growth to homeostasis in the epithelium of the juvenile esophagus in mice is mediated by the mechanotransduction of progressively increasing mechanical strain at the organ level.",
+      "claim_type": "EXPLICIT",
+      "source": "An example of a more mature tissue is the epithelium of the juvenile esophagus in mice, whose transition from growth to homeostasis is mediated by the mechanotransduction of progressively increasing mechanical strain at the organ level (McGinn et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "77d0dbc8-fee8-4819-8231-b6a612bb1198",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C16",
+      "claim": "Mechanical waves propagate along lengths several orders of magnitude larger than the cell size in confined epithelial tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to electrical currents, mechanical waves have also been observed to propagate along lengths several orders of magnitude larger than the cell size in confined epithelial tissues (Di Talia and Vergassola, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "de090c23-ea73-4040-9a52-f88c10d359be",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C17",
+      "claim": "Mechanical waves require active cellular behaviors such as contractility and F-actin polymerization to propagate.",
+      "claim_type": "EXPLICIT",
+      "source": "These waves require active cellular behaviors such as contractility and F-actin polymerization to propagate, suggesting that cells actively respond to external forces to maintain the strength of the signal as it propagates through the tissue (Serra-Picamal et al., 2012; Peyret et al., 2019; Petrolli et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "ab4a209b-d6d4-48c3-8223-ce12c8e17149",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C18",
+      "claim": "Passive cells in an epithelial tissue act as obstacle for mechanical wave propagation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it has been shown that passive cells in an epithelial tissue act as obstacle for mechanical wave propagation (Ng et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "f075119d-2ea1-4207-bcee-937b1545db6e",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C19",
+      "claim": "In the hydra ectoderm, stress fibers within the cells form a nematic system.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in some tissues, such as the hydra ectoderm, stress fibers within the cells of the ectoderm form a nematic system (Maroudas-Sacks et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "2ebd37ad-a624-4eef-a38e-394b26c34e34",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C20",
+      "claim": "When plated on H-shaped micropatterns, singlets formed prominent stress fibers around the cell contour (peripheral stress fibers), as well as some smaller internal stress fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that when plated on H-shaped micropatterns, singlets formed prominent stress fibers around the cell contour (peripheral stress fibers), as well as some smaller internal stress fibers which resulted from the spreading process (Figure 1C and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 1C and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "77b98c88-8186-4ce7-a689-c629bd76a3fb",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C21",
+      "claim": "Vertical stress fibers at the edge of the patterns, along the vertical bars of the H, were straight and strongly coupled to the substrate (adherent stress fibers).",
+      "claim_type": "EXPLICIT",
+      "source": "Vertical stress fibers at the edge of the patterns, along the vertical bars of the H, were straight and strongly coupled to the substrate (adherent stress fibers), while peripheral stress fibers located above the non-adhesive regions of the micropattern, in between the vertical bars of the H, were curved due to the inward pull of the cell cortex (free stress fibers).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "2cc4453b-f26e-440d-aa79-9bacac3668c7",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C22",
+      "claim": "Peripheral stress fibers located above the non-adhesive regions of the micropattern were curved due to the inward pull of the cell cortex (free stress fibers).",
+      "claim_type": "EXPLICIT",
+      "source": "Vertical stress fibers at the edge of the patterns, along the vertical bars of the H, were straight and strongly coupled to the substrate (adherent stress fibers), while peripheral stress fibers located above the non-adhesive regions of the micropattern, in between the vertical bars of the H, were curved due to the inward pull of the cell cortex (free stress fibers).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data with an inference about the cause of curvature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "ad15b14b-e7a9-410a-92ad-2571b5d98a67",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C23",
+      "claim": "Focal adhesions were primarily located in the corners of the pattern, although some were present on the middle bar of the H-pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Focal adhesions were primarily located in the corners of the pattern, although some were present on the middle bar of the H-pattern, which is required for the cells to spread over the whole pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "43edf385-9529-4ff4-a828-c121f3a4584a",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C24",
+      "claim": "A similar pattern of organization was observed in doublets, with the addition of a prominent cell\u2013cell junction in the center of the H-pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar pattern of organization was observed in doublets, with the addition of a prominent cell\u2013cell junction in the center of the H-pattern, parallel to the lateral bars of the H (Figure 1B), consistent with previous work (Tseng et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data shown in Figure 1B, supported by a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "d235692c-4216-4048-94c2-3d3c0d26cfeb",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C25",
+      "claim": "The magnitude of traction forces is very similar between doublets and singlets.",
+      "claim_type": "EXPLICIT",
+      "source": "By quantifying cell-generated forces using traction force microscopy (TFM), we found that the magnitude of traction forces is very similar between doublets and singlets (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by TFM measurements shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "e85665be-9ddb-4ae7-9711-2c2bbefc5587",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C26",
+      "claim": "The strain energy stored in the substrate is slightly higher for singlets than for doublets, despite spreading over the same surface area.",
+      "claim_type": "EXPLICIT",
+      "source": "When we quantified the overall contractility by calculating the strain energy stored in the substrate, we found that it is even slightly higher for singlets than for doublets, despite spreading over the same surface area (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by strain energy calculations shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "4ea8c7af-335b-40f7-9e44-9a8e2c809cbe",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C27",
+      "claim": "Singlets have to spread a smaller volume over the same surface as doublets, leading to higher tension.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely because singlets have to spread a smaller volume over the same surface as doublets, leading to higher tension, both in the actomyosin machinery (Hippler et al., 2020) and in the cell membrane (Pontes et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference to explain the observation, supported by citations to previous research.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "fe14d80f-7561-49ee-a8d8-5eb38dcf6461",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C29",
+      "claim": "Doublets were unpolarized (average degree of polarization of 0), whereas singlets were horizontally polarized with an average degree of polarization of almost 0.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Doublets were unpolarized (average degree of polarization of 0), whereas singlets were horizontally polarized with an average degree of polarization of almost 0.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on quantitative analysis of the stress distribution data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "c71fb3ce-5c8f-4aa3-b7f4-7782ba2a2615",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C30",
+      "claim": "There is a strong correlation between mechanical and structural polarization.",
+      "claim_type": "EXPLICIT",
+      "source": "We found the same trend and a strong correlation between mechanical and structural polarization, meaning that the stress fibers in singlets are largely organized horizontally, whereas in doublets they are directed more toward the center (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "d4530068-380a-4838-a1d4-53add3da5d44",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C31",
+      "claim": "Intercellular junctions may act as a barrier preventing the horizontal organization of stress fibers that exist in singlets.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that intercellular junctions may act as a barrier preventing the horizontal organization of stress fibers that exist in singlets, thus strongly altering the mechanical polarization of the system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "d7286583-294b-491a-a5bd-b7cfa0c3b61d",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C32",
+      "claim": "The curvature of a free stress fiber results from a balance between an isotropic surface tension pulling the stress fibers toward the cell center and a line tension acting along the fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that the curvature of a free stress fiber results from a balance between an isotropic surface tension pulling the stress fibers toward the cell center and a line tension acting along the fibers, tending to straighten them (Bischofs et al., 2008; Bischofs et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "4dc16202-4360-4449-9eb6-d4e6afe728d2",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C33",
+      "claim": "The radius of curvature is given by the ratio of the line to the surface tension.",
+      "claim_type": "EXPLICIT",
+      "source": "The radius of curvature is then given by the ratio of the line to the surface tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical relationship from the contour model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "8897edce-cf70-489d-9414-2f9d7a260d0e",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C34",
+      "claim": "Stress fibers in singlets are subjected to a larger stress along the x-direction than in doublets.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of contour analysis and TFM showed that stress fibers in singlets are subjected to a larger stress along the x-direction than in doublets and conversely that stress fibers in doublets are subjected to higher stresses in the y-direction than singlets (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by combined contour analysis and TFM data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "8e1e6648-d521-43e2-81a7-c7506da4f6cb",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C35",
+      "claim": "Stress fibers in doublets are subjected to higher stresses in the y-direction than singlets.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of contour analysis and TFM showed that stress fibers in singlets are subjected to a larger stress along the x-direction than in doublets and conversely that stress fibers in doublets are subjected to higher stresses in the y-direction than singlets (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by combined contour analysis and TFM data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "54ff6c4c-cd32-42b1-9238-da8fb55b8f5c",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C36",
+      "claim": "Singlets possessed a significantly larger line tension in their free stress fibers than doublets.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, singlets possessed a significantly larger line tension in their free stress fibers than doublets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by contour model analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "f26b8d98-ab98-462b-940a-15a6369c7c5c",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C37",
+      "claim": "The force exerted by adherent stress fibers was higher in doublets than in singlets.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the force exerted by adherent stress fibers displayed the opposite behavior: it was higher in doublets than in singlets (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by force measurements shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "433ab634-60a0-48d5-bf8d-e34e8d87d143",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C38",
+      "claim": "The presence of cell\u2013cell junction leads to a redistribution of tension from the free to adherent peripheral stress fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the presence of cell\u2013cell junction leads to a redistribution of tension from the free to adherent peripheral stress fibers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on stress fiber tensions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "6dd2d3b5-a694-41eb-8ec9-b5d190af1bc3",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C39",
+      "claim": "In doublets, traction forces increased both in the activated and the nonactivated region after optogenetic activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In doublets, traction forces increased both in the activated and the nonactivated region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the optogenetic experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "3deb56d4-9fe5-47eb-8856-fe846a73df02",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C40",
+      "claim": "In singlets, traction forces increased slightly and very locally in the activated region, but decreased in the nonactivated region after optogenetic activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the singlets, on the other hand, traction forces increased slightly and very locally in the activated region, but decreased in the nonactivated region (Figure 3C and D, Animations 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the optogenetic experiments shown in Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "09d84745-a271-434b-ba57-78d86c6afe3a",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C41",
+      "claim": "Doublets can establish stable contraction patterns under half-activation of contractility, in contrast to singlets.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that in contrast to singlets, doublets can establish stable contraction patterns under half-activation of contractility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the optogenetic experiments comparing doublets and singlets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "b5763753-b2d2-45b8-9f89-5cd23bf4b823",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C42",
+      "claim": "In doublets, LifeAct fluorescence increases slightly inside and decreases slightly outside of the doublet after photoactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "In doublets, LifeAct fluorescence increases slightly inside and decreases slightly outside of the doublet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from LifeAct imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "aebedecf-a673-496c-be70-4e07061c8374",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C43",
+      "claim": "In singlets, LifeAct fluorescence redistributed from the unstimulated side to the stimulated side after photoactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in singlets, LifeAct fluorescence redistributed from the unstimulated side to the stimulated side, both inside of the cell as well as on the periphery (Figure 3E and F, Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from LifeAct imaging experiments shown in Figure 3E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "e91188ad-af2b-484e-95b2-870ce67f659a",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C44",
+      "claim": "The behavior of the nonactivated region in doublets cannot be reproduced with a purely passive reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the FE results to the experimental data shows that the behavior of the nonactivated region cannot be reproduced with a purely passive reaction (Figure 3\u2014figure supplement 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from comparing FEM simulations with experimental data shown in Figure 3\u2014figure supplement 5A and B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "9211e123-506f-44f8-8609-47b0787b24df",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C45",
+      "claim": "Coupling in doublets was positive, meaning that the right half contracts in response to the contraction of the left half.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, doublets differed from singlets. Coupling in doublets was positive, meaning that the right half contracts in response to the contraction of the left half; whereas it was negative in singlets, meaning that the right half relaxes in response to the contraction of the left half.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the FEM modeling analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "d30ee823-e792-43f6-82b7-083c68cc8d3f",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C46",
+      "claim": "Coupling in singlets was negative, meaning that the right half relaxes in response to the contraction of the left half.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, doublets differed from singlets. Coupling in doublets was positive, meaning that the right half contracts in response to the contraction of the left half; whereas it was negative in singlets, meaning that the right half relaxes in response to the contraction of the left half.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the FEM modeling analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "102c66a5-d5be-4bb3-9668-358d7524bb77",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C47",
+      "claim": "Cells in the doublet are actively coupled, with the unstimulated cell responding to the contraction of the stimulated cell by actively contracting.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that cells in the doublet are actively coupled, with the unstimulated cell responding to the contraction of the stimulated cell by actively contracting, in agreement with previous qualitative reports (Liu et al., 2010; Hino et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the experimental data, supported by citations to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "c75591c9-f517-46db-bb91-984a36448eb5",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C48",
+      "claim": "Traction force generated by doublets shows a homeostatic response to transient increase of RhoA activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, traction force generated by doublets shows a homeostatic response to this transient increase of RhoA activity. Indeed, once activation is stopped, the traction force generated on the pattern returns to its initial level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the optogenetic experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "239c27b4-0036-45f1-8303-3bafe4e382dd",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C49",
+      "claim": "In singlets, transient and local RhoA activation has a destabilizing effect.",
+      "claim_type": "EXPLICIT",
+      "source": "In singlets on the other hand, transient and local RhoA activation has a destabilizing effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the optogenetic experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "f11f6ec9-c7f3-488a-8acc-79cf0cd59ee4",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C50",
+      "claim": "The traction stress in singlets keeps decreasing even after the activation is stopped.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, rather than displaying a homeostatic behavior, the traction stress keeps decreasing even after the activation is stopped.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the optogenetic experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "eb393785-4ab5-4777-adad-487d989d2013",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C51",
+      "claim": "The cytoskeleton possesses active coupling and the degree of coupling depends on the presence of an intercellular junction.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our data show that the cytoskeleton possesses active coupling and that the degree of coupling depends on the presence of an intercellular junction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data comparing doublets and singlets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "63536d38-c64b-455b-a1ed-1fde64176952",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C52",
+      "claim": "The intercellular junction allows efficient propagation of stress across the whole micropattern, probably due to mechanotransductory pathways and by impeding fluidization.",
+      "claim_type": "EXPLICIT",
+      "source": "The intercellular junction allows efficient propagation of stress across the whole micropattern, probably due to mechanotransductory pathways and by impeding fluidization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data with speculation about the mechanisms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "6d3b0bd2-8c5d-454c-a2c6-c6fee491663d",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C53",
+      "claim": "Active coupling in doublets showed different behaviors in the x- and y-directions, with positive coupling in the y-direction (0.2) and negative coupling in the x-direction (\u20130.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this analysis showed different coupling behaviors in the x- and y-directions. We found positive active coupling in the y-direction (0.2), but negative coupling in the x-direction (\u20130.05) (yellow square, Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the FEM model fitting to experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "63d2f01c-75da-4623-8644-e978c7c9d4ca",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C54",
+      "claim": "All forces in y-direction are balanced between the cell and the substrate, but not across the junction.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be because all forces in y-direction are balanced between the cell and the substrate, but not across the junction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference to explain the observed coupling behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "01f11aad-bb38-4c2b-b97a-0e491ca82830",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C55",
+      "claim": "The forces in the x-direction must always be balanced by interaction between the cells across the junction, similar to a 'tug of war'.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the forces in the x-direction must always be balanced by interaction between the cells across the junction, similar to a 'tug of war.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference to explain the observed coupling behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "9dbae53c-1e29-4f6d-9bd5-0ed98d326526",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C56",
+      "claim": "The degree of coupling from contour strain analysis was 0.8, indicating a global active contraction of the unstimulated cell.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a degree of coupling of 0.8, indicating a global active contraction of the unstimulated cell (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the contour model fitting to experimental data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "baad755f-db37-4903-84e2-c2ac87bcd9eb",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C57",
+      "claim": "Active coupling was weaker in TFM measurements than in cortical tension measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, traction forces, as measured by TFM, show weaker active coupling between activated and nonactivated region than cortical tensions, as inferred by measurement of contour strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing TFM and contour strain analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "1b2214f0-7d3c-4b80-a154-ff74ceeb88b6",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C58",
+      "claim": "Traction forces are dominated by the activity of the stress fibers, both internal and on the periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "The traction forces are dominated by the activity of the stress fibers, both internal and on the periphery, because most forces are found in the corners of the doublet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the spatial distribution of traction forces.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "f52c4efa-d2a6-430a-a678-0abbba495a5a",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C59",
+      "claim": "The contour of the free fiber is determined by the activity of the actin cortex and the free stress fiber.",
+      "claim_type": "EXPLICIT",
+      "source": "The contour of the free fiber, on the other hand, is determined by the activity of the actin cortex and the free stress fiber.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the contour model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "d9306012-778f-4fc5-b500-0770281dfcb2",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C60",
+      "claim": "Structural and mechanical polarization are tightly correlated and vary greatly between the three different aspect ratios.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that structural and mechanical polarization are tightly correlated and vary greatly in between the three different aspect ratios (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from experiments with different aspect ratio micropatterns shown in Figure 5A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "967de2ca-802b-4115-9ed5-60b7cf31d9e9",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C61",
+      "claim": "On micropatterns with 1 to 2 aspect ratio, both stress fibers and force patterns were oriented horizontally.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, on micropatterns with 1 to 2 aspect ratio, both stress fibers and force patterns were oriented horizontally whereas on 2 to 1 they were oriented vertically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experiments with different aspect ratio micropatterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "6d8564af-530d-4767-b55d-613cae0a6021",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C62",
+      "claim": "On micropatterns with 2 to 1 aspect ratio, both stress fibers and force patterns were oriented vertically.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, on micropatterns with 1 to 2 aspect ratio, both stress fibers and force patterns were oriented horizontally whereas on 2 to 1 they were oriented vertically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experiments with different aspect ratio micropatterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "f7c67b13-42d8-4b61-a179-cba1ab5e5445",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C63",
+      "claim": "In 1 to 2 doublets, where cells are polarized mechanically and structurally along the direction of stress transmission, the right cell reacts by relaxing after activation of the left cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In 1 to 2 doublets, cells are polarized mechanically and structurally along the direction of stress transmission and, after activation of left hand cell, the right cell reacts by relaxing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from optogenetic experiments with 1 to 2 aspect ratio doublets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "1aa51c53-266a-449a-b5a5-3043adab9cf8",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C64",
+      "claim": "In 2 to 1 doublets, where cells are polarized mechanically and structurally perpendicular to the direction of stress transmission, activation of the left-hand cell leads to contraction of the right-hand cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in 2 to 1 doublets, cells are polarized mechanically and structurally perpendicular to the direction of stress transmission and activation of the left-hand cell leads to contraction of the right-hand cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from optogenetic experiments with 2 to 1 aspect ratio doublets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "bb58407b-e1a6-4cbf-9b96-9f70638bb36e",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C65",
+      "claim": "The degree of active coupling increased with increasing mechanical and structural polarization.",
+      "claim_type": "EXPLICIT",
+      "source": "We then computed the degree of active coupling as previously and found that the degree of active coupling increased with increasing mechanical and structural polarization (Figure 5D\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analyzing optogenetic experiments with different aspect ratios shown in Figure 5D\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "5bc15acd-6e0e-420c-ae1d-df91c2ba02e1",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C66",
+      "claim": "Mechanical stresses transmit most efficiently perpendicularly to the axis of mechanical and structural polarization in doublets.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, we conclude that mechanical stresses transmit most efficiently perpendicularly to the axis of mechanical and structural polarization in doublets (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the experiments with different aspect ratios shown in Figure 5G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "1db5bca4-5538-49c6-a86a-1a7edbd000b8",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C67",
+      "claim": "In small monolayers on rectangular micropatterns with aspect ratios of 1:4, the tissue is mechanically and structurally polarized along the long axis of the pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "We again performed TFM and MSM experiments as well as live imaging of F-actin and quantified the mechanical and structural polarization for micropatterns with aspect ratios of 1:4. We observed prominent actin cables at the periphery of the small monolayers with less marked stress fibers internally. In these conditions, the tissue is mechanically and structurally polarized along the long axis of the pattern (Figure 6A\u2013C, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from experiments with small monolayers shown in Figure 6A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "7b25bc39-3c2f-45af-9458-d49480af90f3",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C68",
+      "claim": "In small monolayers, an increase in traction forces and cell stress was observed both in the activated and in the nonactivated region after photoactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments, we observed again an increase in traction forces and cell stress both in the activated and in the nonactivated region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from optogenetic experiments with small monolayers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "8afd1a87-60f6-498e-8fd4-89fe2f25a1de",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C69",
+      "claim": "In small monolayers, active coupling is higher when the direction of stress propagation is perpendicular to the axis of mechanical and structural polarization of the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "We computed the degree of active coupling in the same way as for doublets using our FEM model and found that active coupling is higher, when the direction of stress propagation is perpendicular to the axis of mechanical and structural polarization of the tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from FEM model analysis of optogenetic experiments with small monolayers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "d5fc2c5c-a730-4671-b3b8-0b517b8335a5",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C71",
+      "claim": "The correlation between mechano-structural polarization and active coupling observed in doublets is also present in larger groups of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude the correlation between mechano-structural polarization and active coupling observed in doublets is also present in larger groups of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing doublet and small monolayer experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "bffda4de-a54f-46a5-9dca-e4f5301c06a9",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C72",
+      "claim": "Active coupling and its correlation with mechanical and structural polarization seem to be typical for epithelia, independent of size.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, active coupling and its correlation with mechanical and structural polarization seem to be typical for epithelia, independent of size (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from experiments across different system sizes shown in Figure 6G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "20fbe356-f184-4f00-9e75-021c7492911c",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C73",
+      "claim": "Intercellular forces play a major role in regulating and coordinating tissue morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Intercellular forces play a major role in regulating and coordinating tissue morphogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the Discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "53011be4-ecd6-4736-a431-a60734c302ea",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C74",
+      "claim": "Mechanical forces participate in long-range signaling, propagating over large distances at which they can be received and interpreted by other cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work has shown that mechanical forces participate in long-range signaling, propagating over large distances at which they can be received and interpreted by other cells (Vishwakarma et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "c6cbc9ec-aeb3-4590-908e-7ee754351fc2",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C75",
+      "claim": "Force signal propagation within cellular assemblies is an active process whose amplification mechanism is controlled by the mechano-structural polarization of the system.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining quantitative measurements of cellular stresses and cell shape with optogenetic control of contractility and mathematical modeling, here we showed that force signal propagation within cellular assemblies is an active process whose amplification mechanism is controlled by the mechano-structural polarization of the system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion from the study based on experimental data and modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "784e2cbd-8bed-4c28-b016-faef6ebc4c25",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C76",
+      "claim": "Active coupling between cells was demonstrated before by Liu et al., 2010, but a thorough quantification of this active coupling has been lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results revealed the presence of active coupling between cells. This was demonstrated before by Liu et al., 2010, but a thorough quantification of this active coupling has been lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges previous work and identifies a gap that the current study addresses.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "659158fc-58a7-4ec1-aefe-525d92845b67",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C77",
+      "claim": "The active coupling mechanism increases the spatial range a mechanical signal can travel to about one or two cell lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "This active coupling mechanism increases the spatial range a mechanical signal can travel to about one or two cell lengths according to our data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "4016c0e1-a28c-46d1-9573-213bcea50885",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C78",
+      "claim": "With temporal resolution of one frame per minute, no delay between receiver and sender cell was apparent.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we tested only transient signals. Maintaining signal strength over longer periods of time could also lead to farther transmission of force signals. Compared to chemical signals, these mechanical signals can travel very fast: indeed, with our temporal resolution of one frame per minute, no delay between receiver and sender cell was apparent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "e35cae4e-bc4d-4d2b-9281-0d68067a979d",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C79",
+      "claim": "In the absence of an intercellular junction, localized contraction leads to actin flow instead of the stress buildup observed in doublets.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when we carried out the same activation protocol on a single cell that had the same area as the doublets, the nonactivated region displayed acute fluidization of the actin structure. Thus, in the absence of an intercellular junction, localized contraction leads to actin flow instead of the stress buildup observed in doublets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing optogenetic experiments in doublets and singlets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "65e9c54d-5f65-4e08-a2c8-09a188217244",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C80",
+      "claim": "Cellularization of the tissue may allow compartmentalization of stress and efficient transmission of stress, allowing the tissue to act as an elastic material rather than a viscous fluid.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, cellularization of the tissue may allow compartmentalization of stress and efficient transmission of stress, allowing the tissue to act as an elastic material rather than a viscous fluid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations with speculation about the implications.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "2f799fbc-c162-4f06-bb02-7c04c3112917",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C81",
+      "claim": "The magnitude of contraction of the receiving cells relative to the sender cells depends on the direction and magnitude of its mechano-structural polarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our experiments revealed that intercellular coupling strongly depends on the anisotropy of F-actin organization and force distribution. We found that the magnitude of contraction of the receiving cells relative to the sender cells depends on the direction and magnitude of its mechano-structural polarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the experiments with different aspect ratios.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "d2e91742-a6dc-4f4d-89fd-5172d3f121dc",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C82",
+      "claim": "If the tissue's or doublet's polarization axis is perpendicular to the axis between sender and receiver cells, the receiver cells react more strongly and the signal travels farther.",
+      "claim_type": "EXPLICIT",
+      "source": "If the tissue's or doublet's polarization axis is perpendicular to the axis between sender and receiver cells, the receiver cells react more strongly and the signal travels farther.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the experiments with different aspect ratios and tissue orientations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "f6b18edf-c4c6-422c-8b3d-730fe80a46cf",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C83",
+      "claim": "The supracellular organization of actin is a major regulator of force propagation within tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our study of epithelial monolayers shows that the supracellular organization of actin is a major regulator of force propagation within tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the experiments with small monolayers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "f22e0b89-c830-4e3f-8be6-24e8f11e8745",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C84",
+      "claim": "Forces are transmitted more efficiently in a direction perpendicular to the axis of actin polarity also in small monolayers.",
+      "claim_type": "EXPLICIT",
+      "source": "Forces are transmitted more efficiently in a direction perpendicular to the axis of actin polarity also in small monolayers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from experiments with small monolayers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "91bf8250-9d53-4edb-bb85-6b6be35c018c",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C85",
+      "claim": "Groups of cells can behave as a 'supracellular unit,' which share many of the characteristics of the individual cells that it consists of.",
+      "claim_type": "EXPLICIT",
+      "source": "First, recent studies have proposed that groups of cells can behave as a 'supracellular unit,' which share many of the characteristics of the individual cells that it consists of (Vedula et al., 2013; Khalilgharibi et al., 2019; Shellard et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "e99e4a10-f6a5-4231-bd4a-2eb3209f4f19",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C86",
+      "claim": "The correlation between mechano-structural polarization and force signal transmission distance holds true across scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings complement those results, as we show that the correlation between mechano-structural polarization and force signal transmission distance holds true across scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing experiments at different scales.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "4842e6af-d9f5-43ae-af6d-30e8c380148a",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C87",
+      "claim": "In Xenopus mesoderm during convergent extension, cells are planary polarized in a direction perpendicular to the extension of the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "In these tissues, cells are planary polarized in a direction perpendicular to the extension of the tissue, and the convergence and extension of the tissue are driven by directed contraction and migration of the cells (Wallingford et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "8ca0a736-1622-42c2-b661-cdaf1df227d7",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C88",
+      "claim": "Preferential transmission of active contraction perpendicular to the polarization axis of the cells could amplify the convergent extension mechanism and contribute to the robustness of the process.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that preferential transmission of active contraction perpendicular to the polarization axis of the cells could amplify this mechanism and contribute to the robustness of the process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the implications of the findings for developmental processes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "f19e926b-38b1-45af-a292-b6595c35fbfc",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C89",
+      "claim": "Opto-MDCK and opto-MDCK LifeAct cells were cultured at 37\u00b0C and in 5% CO2 atmosphere in DMEM medium containing 10% heat-inactivated FBS and 1% penicillin/streptomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Both cell lines were cultured at 37\u00b0C and in 5% CO2 atmosphere in DMEM (Life Technologies) medium containing 10% heat-inactivated FBS (Life Technologies) and 1% penicillin/streptomycin (Sigma-Aldrich).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "8c62595b-cd90-4c33-a1a6-28c719ba9a9f",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C90",
+      "claim": "Between 20,000 and 50,000 cells were plated on the micropatterned hydrogels.",
+      "claim_type": "EXPLICIT",
+      "source": "Between 20,000 and 50,000 cells were plated on the micropatterned hydrogels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "1b038d3c-f4fd-4c0e-8773-abe647eb17f4",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C91",
+      "claim": "Cells were let spread on patterns for 16\u201328 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were let spread on patterns for 16\u201328 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "cf50dbe6-b482-47cd-9fb5-aada71b73b1e",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C92",
+      "claim": "On average most doublets seen on the sample at 16-28 hours have started as single cells and divided on the pattern to form a doublet.",
+      "claim_type": "EXPLICIT",
+      "source": "Data from timelapse experiments (not shown here) showed that on average most doublets seen on the sample at this point have started as single cells and divided on the pattern to form a doublet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from timelapse experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "225476f0-d41c-4e45-8d8e-ef7267328adf",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C93",
+      "claim": "Cells were checked for mycoplasm contamination and tested negative.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were checked for mycoplasm contamination and tested negative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about quality control of the cell cultures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "9b032a65-d01b-4999-a6ca-8f1dc22947f4",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C94",
+      "claim": "Patterned PAA hydrogels were prepared according to the glass method described previously in Vignaud et al., 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "Patterned PAA hydrogels were prepared according to the glass method described previously in Vignaud et al., 2014.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references a previously published method.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "9a5ff47e-396d-4059-ba8e-31316c655cdb",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C96",
+      "claim": "Force measurements were performed using traction force microscopy with fluorescent beads embedded in a polyacrylamide substrate with 20 kPa rigidity.",
+      "claim_type": "EXPLICIT",
+      "source": "Force measurements were performed using a method described previously (Tseng et al., 2011). In short, fluorescent beads were embedded in a polyacrylamide substrate with 20 kPa rigidity and images of those beads were taken before, during, and after photoactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used, with a citation to a previous method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "e6ff9550-0cb4-4cf4-ae23-94614feaeb84",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C97",
+      "claim": "Cellular traction forces were calculated using Fourier transform traction cytometry with zero-order regularization.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular traction forces were calculated using Fourier transform traction cytometry with zero-order regularization (Milloud et al., 2017; Sabass et al., 2008) under the assumption that the substrate is a linear elastic half-space and considering only displacement and stress tangential to the substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational methods used, with citations to previous methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "920a8231-1f07-475a-8d64-bb775e4ddf83",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "claim_id": "C98",
+      "claim": "Within the MSM framework, cell internal stresses were calculated from the traction stress assuming the cell behaves like a thin, elastic sheet that is attached to a substrate and then contracts.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the MSM framework, cell internal stresses were calculated from the traction stress with the code from Bauer et al., 2021. To do this calculation, the cell is assumed to behave like a thin, elastic sheet that is attached to a substrate and then contracts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational methods used, with a citation to the code source.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "de399939-18c5-4a37-b96d-dd7f1d963ce1",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The presence of cell-cell junctions in doublets alters cellular organization and mechanical properties compared to singlets. Doublets show unpolarized stress distribution (polarization ~0) while singlets are horizontally polarized (polarization ~0.5), with intercellular junctions acting as barriers to horizontal stress fiber organization. Despite similar traction force magnitudes, singlets store slightly higher strain energy than doublets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C31 provide converging evidence from multiple measurement modalities (TFM, MSM, immunostaining, contour analysis) showing consistent differences between doublets and singlets. The structural observations (C20-C24) align with quantitative mechanical measurements (C25-C26, C29), and the strong correlation between mechanical and structural polarization (C30) supports the inference about junction function (C31). Sample sizes are adequate (n=106 doublets, n=72 singlets).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "cf5f67a0-251a-4439-a8a2-fc579af3d9dd",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cell-cell junctions cause redistribution of tension from free to adherent peripheral stress fibers. Singlets have higher line tension in free stress fibers and lower forces in adherent fibers compared to doublets, which show the opposite pattern. This is explained by an anisotropic tension model where stress fiber curvature reflects the balance between surface and line tensions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C38 combine theoretical modeling (C32-C33) with experimental measurements (C34-C37) to reach a mechanistic conclusion (C38). The contour model is based on prior validated work (C32), and the experimental data from combined TFM and contour analysis (C34-C37, Figure 2D-E) provide quantitative support. The conclusion logically follows from the data pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "3006c4e4-7d50-4a54-9c90-4ae0aa5a54a8",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Doublets exhibit active mechanical coupling where the non-activated cell actively contracts in response to optogenetic activation of the neighboring cell, while singlets show passive relaxation and cytoskeletal fluidization. This active coupling in doublets enables stable contraction patterns and homeostatic force recovery, mediated by intercellular junctions that prevent fluidization and enable mechanotransduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C52 present a comprehensive characterization using multiple techniques (TFM, LifeAct imaging, FEM modeling). The experimental observations (C39-C43, C48-C50) are consistent across methods, and FEM modeling (C44-C46) demonstrates that passive mechanisms cannot explain the data. Controls for stray light activation are described (Figure 3 supplements). The conclusion about active coupling (C47, C51) is well-supported, though the mechanistic speculation (C52) is appropriately qualified as probable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "01f5ff13-6757-4198-8102-4ba7969495c5",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Active coupling in doublets is anisotropic, with positive coupling in the y-direction (0.2) and negative coupling in the x-direction (-0.05) for traction forces, but strong positive coupling (0.8) for cortical tensions measured by contour strain. This difference arises because traction forces reflect stress fiber activity while contour deformation reflects cortical activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C59 quantify directional differences in coupling using two complementary methods (MSM/TFM and contour analysis). The quantitative values (C53, C56) are derived from model fitting to experimental data (Figure 4). The mechanical explanation for directional differences (C54-C55) is reasonable, and the interpretation of differential coupling between stress fibers and cortex (C57-C59) logically reconciles the different measurements. Sample size is adequate (n=17 doublets).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "964811d3-c791-4bda-a87c-b9e5afb819f9",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The degree of active coupling depends on mechano-structural polarization orientation relative to force propagation direction. When polarization is perpendicular to force transmission (2:1 aspect ratio), coupling is positive and strong; when parallel (1:2 aspect ratio), coupling is negative. Active coupling increases with increasing perpendicular polarization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C66 systematically vary micropattern aspect ratio to test the relationship between polarization and coupling. The tight correlation between structural and mechanical polarization (C60) validates the approach. The opposite responses in different geometries (C63-C64) and the quantitative relationship (C65) are supported by data from multiple aspect ratios (n=43, 29, 18 doublets). The conclusion (C66) is well-supported by the systematic variation and is reminiscent of the Poisson effect mentioned in the abstract.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "11c9d3b7-d8cb-40a1-88d2-6dca47e23965",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The relationship between mechano-structural polarization and active coupling observed in doublets extends to small epithelial monolayers (10-20 cells). In tissues polarized along the long axis, active coupling is higher when stress propagates perpendicular to the polarization axis, demonstrating scale-independence of this principle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72 extend the doublet findings to larger systems using the same experimental and analytical approaches. The observations in monolayers (C67-C69) parallel those in doublets, and the conclusion about scale-independence (C71-C72) is supported by consistent results across system sizes. Sample sizes are adequate (n=13 and n=60 tissues). This demonstrates generalizability of the main finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "7858387c-0ef3-4f00-8e4e-0f549e2ac8f6",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Force signal propagation in epithelial assemblies is an active process controlled by mechano-structural polarization, with signals propagating most efficiently perpendicular to the polarization axis. Active coupling extends signal range to 1-2 cell lengths and occurs rapidly (no detectable delay at 1 min resolution). This mechanism enables elastic-like signal propagation over large distances rather than viscous dissipation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims synthesize the main findings from the doublet and tissue experiments. The core conclusions (C4-C9, C75) are supported by the detailed experimental results in other claim groups. The quantitative estimates (C77-C78) are stated with appropriate caveats about temporal resolution and signal duration. The mechanistic insights (C81-C84, C86) follow logically from the systematic variation of polarization and measurement of coupling. This represents the paper's central contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "24db4f55-7bd9-4d4e-b69d-df570203ee9d",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Intercellular junctions enable compartmentalization of stress and prevent cytoskeletal fluidization, allowing tissues to behave elastically rather than as viscous fluids. Without junctions, localized contraction leads to actin flow rather than stress buildup.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 compare singlet and doublet responses to draw conclusions about junction function. The observation of fluidization in singlets vs. stress buildup in doublets (C79) is supported by the LifeAct data (C42-C43) and force measurements (C39-C40). The broader implication about elastic vs. viscous behavior (C80) is a reasonable inference, though somewhat speculative. The conclusion is appropriately qualified with 'may allow.'",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "394d4355-32da-449c-adc8-31d2568ac55b",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background context establishing that cell-generated forces coordinate tissue behavior, mechanical signals propagate faster than biochemical signals, and force propagation is important in development and tissue organization. These are established facts from prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C10-C19, C73-C74, C85, C87 provide background context supported by appropriate citations to prior work. These establish the scientific context and motivation for the study. The claims are properly attributed to previous research and represent accepted knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "823fa724-3e0a-4de0-bc43-1cc4f357f717",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Active coupling between cells was previously demonstrated qualitatively but lacked thorough quantification, representing a gap this study addresses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C76 appropriately acknowledges prior work (Liu et al., 2010) while identifying the specific contribution of the current study (quantification). This accurately frames the novelty of the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "9f2c5b0c-72cf-479a-b489-51dd2be14167",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The preferential transmission of active contraction perpendicular to cell polarization could amplify convergent extension mechanisms in Xenopus mesoderm and contribute to process robustness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C88 is explicitly speculative ('Our results suggest') and extrapolates the findings to a developmental context not directly tested. While the speculation is reasonable given the findings and the known biology of convergent extension (C87), it remains untested and would require additional experiments in the relevant developmental system to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    },
+    {
+      "id": "f077ce60-5ca6-4fc8-8c0e-f3404e7f3d30",
+      "content_id": "8cbe2157-0c16-4d4d-9024-b7e2aa2fddaf",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Methodological details including cell culture conditions, micropatterning protocols, force measurement techniques, and computational analysis methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C98 describe experimental methods with appropriate detail and citations to established protocols. Quality control measures are mentioned (C93). The methods are standard in the field and appropriately referenced. These provide necessary technical information for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:56:13.834824Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2ebd37ad-a624-4eef-a38e-394b26c34e34",
+      "result_id": "de399939-18c5-4a37-b96d-dd7f1d963ce1"
+    },
+    {
+      "claim_id": "77b98c88-8186-4ce7-a689-c629bd76a3fb",
+      "result_id": "de399939-18c5-4a37-b96d-dd7f1d963ce1"
+    },
+    {
+      "claim_id": "2cc4453b-f26e-440d-aa79-9bacac3668c7",
+      "result_id": "de399939-18c5-4a37-b96d-dd7f1d963ce1"
+    },
+    {
+      "claim_id": "ad15b14b-e7a9-410a-92ad-2571b5d98a67",
+      "result_id": "de399939-18c5-4a37-b96d-dd7f1d963ce1"
+    },
+    {
+      "claim_id": "43edf385-9529-4ff4-a828-c121f3a4584a",
+      "result_id": "de399939-18c5-4a37-b96d-dd7f1d963ce1"
+    },
+    {
+      "claim_id": "d235692c-4216-4048-94c2-3d3c0d26cfeb",
+      "result_id": "de399939-18c5-4a37-b96d-dd7f1d963ce1"
+    },
+    {
+      "claim_id": "e85665be-9ddb-4ae7-9711-2c2bbefc5587",
+      "result_id": "de399939-18c5-4a37-b96d-dd7f1d963ce1"
+    },
+    {
+      "claim_id": "4ea8c7af-335b-40f7-9e44-9a8e2c809cbe",
+      "result_id": "de399939-18c5-4a37-b96d-dd7f1d963ce1"
+    },
+    {
+      "claim_id": "fe14d80f-7561-49ee-a8d8-5eb38dcf6461",
+      "result_id": "de399939-18c5-4a37-b96d-dd7f1d963ce1"
+    },
+    {
+      "claim_id": "c71fb3ce-5c8f-4aa3-b7f4-7782ba2a2615",
+      "result_id": "de399939-18c5-4a37-b96d-dd7f1d963ce1"
+    },
+    {
+      "claim_id": "d4530068-380a-4838-a1d4-53add3da5d44",
+      "result_id": "de399939-18c5-4a37-b96d-dd7f1d963ce1"
+    },
+    {
+      "claim_id": "d7286583-294b-491a-a5bd-b7cfa0c3b61d",
+      "result_id": "cf5f67a0-251a-4439-a8a2-fc579af3d9dd"
+    },
+    {
+      "claim_id": "4dc16202-4360-4449-9eb6-d4e6afe728d2",
+      "result_id": "cf5f67a0-251a-4439-a8a2-fc579af3d9dd"
+    },
+    {
+      "claim_id": "8897edce-cf70-489d-9414-2f9d7a260d0e",
+      "result_id": "cf5f67a0-251a-4439-a8a2-fc579af3d9dd"
+    },
+    {
+      "claim_id": "8e1e6648-d521-43e2-81a7-c7506da4f6cb",
+      "result_id": "cf5f67a0-251a-4439-a8a2-fc579af3d9dd"
+    },
+    {
+      "claim_id": "54ff6c4c-cd32-42b1-9238-da8fb55b8f5c",
+      "result_id": "cf5f67a0-251a-4439-a8a2-fc579af3d9dd"
+    },
+    {
+      "claim_id": "f26b8d98-ab98-462b-940a-15a6369c7c5c",
+      "result_id": "cf5f67a0-251a-4439-a8a2-fc579af3d9dd"
+    },
+    {
+      "claim_id": "433ab634-60a0-48d5-bf8d-e34e8d87d143",
+      "result_id": "cf5f67a0-251a-4439-a8a2-fc579af3d9dd"
+    },
+    {
+      "claim_id": "6dd2d3b5-a694-41eb-8ec9-b5d190af1bc3",
+      "result_id": "3006c4e4-7d50-4a54-9c90-4ae0aa5a54a8"
+    },
+    {
+      "claim_id": "3deb56d4-9fe5-47eb-8856-fe846a73df02",
+      "result_id": "3006c4e4-7d50-4a54-9c90-4ae0aa5a54a8"
+    },
+    {
+      "claim_id": "09d84745-a271-434b-ba57-78d86c6afe3a",
+      "result_id": "3006c4e4-7d50-4a54-9c90-4ae0aa5a54a8"
+    },
+    {
+      "claim_id": "b5763753-b2d2-45b8-9f89-5cd23bf4b823",
+      "result_id": "3006c4e4-7d50-4a54-9c90-4ae0aa5a54a8"
+    },
+    {
+      "claim_id": "aebedecf-a673-496c-be70-4e07061c8374",
+      "result_id": "3006c4e4-7d50-4a54-9c90-4ae0aa5a54a8"
+    },
+    {
+      "claim_id": "e91188ad-af2b-484e-95b2-870ce67f659a",
+      "result_id": "3006c4e4-7d50-4a54-9c90-4ae0aa5a54a8"
+    },
+    {
+      "claim_id": "9211e123-506f-44f8-8609-47b0787b24df",
+      "result_id": "3006c4e4-7d50-4a54-9c90-4ae0aa5a54a8"
+    },
+    {
+      "claim_id": "d30ee823-e792-43f6-82b7-083c68cc8d3f",
+      "result_id": "3006c4e4-7d50-4a54-9c90-4ae0aa5a54a8"
+    },
+    {
+      "claim_id": "102c66a5-d5be-4bb3-9668-358d7524bb77",
+      "result_id": "3006c4e4-7d50-4a54-9c90-4ae0aa5a54a8"
+    },
+    {
+      "claim_id": "c75591c9-f517-46db-bb91-984a36448eb5",
+      "result_id": "3006c4e4-7d50-4a54-9c90-4ae0aa5a54a8"
+    },
+    {
+      "claim_id": "239c27b4-0036-45f1-8303-3bafe4e382dd",
+      "result_id": "3006c4e4-7d50-4a54-9c90-4ae0aa5a54a8"
+    },
+    {
+      "claim_id": "f11f6ec9-c7f3-488a-8acc-79cf0cd59ee4",
+      "result_id": "3006c4e4-7d50-4a54-9c90-4ae0aa5a54a8"
+    },
+    {
+      "claim_id": "eb393785-4ab5-4777-adad-487d989d2013",
+      "result_id": "3006c4e4-7d50-4a54-9c90-4ae0aa5a54a8"
+    },
+    {
+      "claim_id": "63536d38-c64b-455b-a1ed-1fde64176952",
+      "result_id": "3006c4e4-7d50-4a54-9c90-4ae0aa5a54a8"
+    },
+    {
+      "claim_id": "6d3b0bd2-8c5d-454c-a2c6-c6fee491663d",
+      "result_id": "01f5ff13-6757-4198-8102-4ba7969495c5"
+    },
+    {
+      "claim_id": "63d2f01c-75da-4623-8644-e978c7c9d4ca",
+      "result_id": "01f5ff13-6757-4198-8102-4ba7969495c5"
+    },
+    {
+      "claim_id": "01f11aad-bb38-4c2b-b97a-0e491ca82830",
+      "result_id": "01f5ff13-6757-4198-8102-4ba7969495c5"
+    },
+    {
+      "claim_id": "9dbae53c-1e29-4f6d-9bd5-0ed98d326526",
+      "result_id": "01f5ff13-6757-4198-8102-4ba7969495c5"
+    },
+    {
+      "claim_id": "baad755f-db37-4903-84e2-c2ac87bcd9eb",
+      "result_id": "01f5ff13-6757-4198-8102-4ba7969495c5"
+    },
+    {
+      "claim_id": "1b2214f0-7d3c-4b80-a154-ff74ceeb88b6",
+      "result_id": "01f5ff13-6757-4198-8102-4ba7969495c5"
+    },
+    {
+      "claim_id": "f52c4efa-d2a6-430a-a678-0abbba495a5a",
+      "result_id": "01f5ff13-6757-4198-8102-4ba7969495c5"
+    },
+    {
+      "claim_id": "d9306012-778f-4fc5-b500-0770281dfcb2",
+      "result_id": "964811d3-c791-4bda-a87c-b9e5afb819f9"
+    },
+    {
+      "claim_id": "967de2ca-802b-4115-9ed5-60b7cf31d9e9",
+      "result_id": "964811d3-c791-4bda-a87c-b9e5afb819f9"
+    },
+    {
+      "claim_id": "6d8564af-530d-4767-b55d-613cae0a6021",
+      "result_id": "964811d3-c791-4bda-a87c-b9e5afb819f9"
+    },
+    {
+      "claim_id": "f7c67b13-42d8-4b61-a179-cba1ab5e5445",
+      "result_id": "964811d3-c791-4bda-a87c-b9e5afb819f9"
+    },
+    {
+      "claim_id": "1aa51c53-266a-449a-b5a5-3043adab9cf8",
+      "result_id": "964811d3-c791-4bda-a87c-b9e5afb819f9"
+    },
+    {
+      "claim_id": "bb58407b-e1a6-4cbf-9b96-9f70638bb36e",
+      "result_id": "964811d3-c791-4bda-a87c-b9e5afb819f9"
+    },
+    {
+      "claim_id": "5bc15acd-6e0e-420c-ae1d-df91c2ba02e1",
+      "result_id": "964811d3-c791-4bda-a87c-b9e5afb819f9"
+    },
+    {
+      "claim_id": "1db5bca4-5538-49c6-a86a-1a7edbd000b8",
+      "result_id": "11c9d3b7-d8cb-40a1-88d2-6dca47e23965"
+    },
+    {
+      "claim_id": "7b25bc39-3c2f-45af-9458-d49480af90f3",
+      "result_id": "11c9d3b7-d8cb-40a1-88d2-6dca47e23965"
+    },
+    {
+      "claim_id": "8afd1a87-60f6-498e-8fd4-89fe2f25a1de",
+      "result_id": "11c9d3b7-d8cb-40a1-88d2-6dca47e23965"
+    },
+    {
+      "claim_id": "d5fc2c5c-a730-4671-b3b8-0b517b8335a5",
+      "result_id": "11c9d3b7-d8cb-40a1-88d2-6dca47e23965"
+    },
+    {
+      "claim_id": "bffda4de-a54f-46a5-9dca-e4f5301c06a9",
+      "result_id": "11c9d3b7-d8cb-40a1-88d2-6dca47e23965"
+    },
+    {
+      "claim_id": "8e7a985a-cd35-494b-a3a1-f8fabe20e915",
+      "result_id": "7858387c-0ef3-4f00-8e4e-0f549e2ac8f6"
+    },
+    {
+      "claim_id": "ebe5f0d6-99da-42eb-86f1-61bb1a8009dd",
+      "result_id": "7858387c-0ef3-4f00-8e4e-0f549e2ac8f6"
+    },
+    {
+      "claim_id": "2dc9bfca-b02d-4c29-8789-a5c7274996b5",
+      "result_id": "7858387c-0ef3-4f00-8e4e-0f549e2ac8f6"
+    },
+    {
+      "claim_id": "e422b70c-028e-41c2-a322-acbd6fe5d352",
+      "result_id": "7858387c-0ef3-4f00-8e4e-0f549e2ac8f6"
+    },
+    {
+      "claim_id": "9a77922f-e346-4994-971d-de81f443afa2",
+      "result_id": "7858387c-0ef3-4f00-8e4e-0f549e2ac8f6"
+    },
+    {
+      "claim_id": "e18dd295-48d4-4585-877d-042a84f324c0",
+      "result_id": "7858387c-0ef3-4f00-8e4e-0f549e2ac8f6"
+    },
+    {
+      "claim_id": "c6cbc9ec-aeb3-4590-908e-7ee754351fc2",
+      "result_id": "7858387c-0ef3-4f00-8e4e-0f549e2ac8f6"
+    },
+    {
+      "claim_id": "659158fc-58a7-4ec1-aefe-525d92845b67",
+      "result_id": "7858387c-0ef3-4f00-8e4e-0f549e2ac8f6"
+    },
+    {
+      "claim_id": "4016c0e1-a28c-46d1-9573-213bcea50885",
+      "result_id": "7858387c-0ef3-4f00-8e4e-0f549e2ac8f6"
+    },
+    {
+      "claim_id": "2f799fbc-c162-4f06-bb02-7c04c3112917",
+      "result_id": "7858387c-0ef3-4f00-8e4e-0f549e2ac8f6"
+    },
+    {
+      "claim_id": "d2e91742-a6dc-4f4d-89fd-5172d3f121dc",
+      "result_id": "7858387c-0ef3-4f00-8e4e-0f549e2ac8f6"
+    },
+    {
+      "claim_id": "f6b18edf-c4c6-422c-8b3d-730fe80a46cf",
+      "result_id": "7858387c-0ef3-4f00-8e4e-0f549e2ac8f6"
+    },
+    {
+      "claim_id": "f22e0b89-c830-4e3f-8be6-24e8f11e8745",
+      "result_id": "7858387c-0ef3-4f00-8e4e-0f549e2ac8f6"
+    },
+    {
+      "claim_id": "e99e4a10-f6a5-4231-bd4a-2eb3209f4f19",
+      "result_id": "7858387c-0ef3-4f00-8e4e-0f549e2ac8f6"
+    },
+    {
+      "claim_id": "e35cae4e-bc4d-4d2b-9281-0d68067a979d",
+      "result_id": "24db4f55-7bd9-4d4e-b69d-df570203ee9d"
+    },
+    {
+      "claim_id": "65e9c54d-5f65-4e08-a2c8-09a188217244",
+      "result_id": "24db4f55-7bd9-4d4e-b69d-df570203ee9d"
+    },
+    {
+      "claim_id": "73a9ced4-b8d5-4802-b8e9-f0841d117a04",
+      "result_id": "394d4355-32da-449c-adc8-31d2568ac55b"
+    },
+    {
+      "claim_id": "ae6227dc-4d18-4c4b-84ce-521790454a25",
+      "result_id": "394d4355-32da-449c-adc8-31d2568ac55b"
+    },
+    {
+      "claim_id": "18757126-6d2d-4250-869f-35fc040b162d",
+      "result_id": "394d4355-32da-449c-adc8-31d2568ac55b"
+    },
+    {
+      "claim_id": "4da6caa8-4930-431f-98ee-7c75afa542b6",
+      "result_id": "394d4355-32da-449c-adc8-31d2568ac55b"
+    },
+    {
+      "claim_id": "6139b264-1999-463c-b019-40549c39da81",
+      "result_id": "394d4355-32da-449c-adc8-31d2568ac55b"
+    },
+    {
+      "claim_id": "be1f7798-d216-4253-9a3e-f3ebfa1b568b",
+      "result_id": "394d4355-32da-449c-adc8-31d2568ac55b"
+    },
+    {
+      "claim_id": "7f3dfa1d-1455-4b63-b667-a86a926fd571",
+      "result_id": "394d4355-32da-449c-adc8-31d2568ac55b"
+    },
+    {
+      "claim_id": "478baae0-6850-4c28-8815-cfa531c56ccf",
+      "result_id": "394d4355-32da-449c-adc8-31d2568ac55b"
+    },
+    {
+      "claim_id": "eaa6d314-90b5-44dc-8dbf-1bab4537b631",
+      "result_id": "394d4355-32da-449c-adc8-31d2568ac55b"
+    },
+    {
+      "claim_id": "77d0dbc8-fee8-4819-8231-b6a612bb1198",
+      "result_id": "394d4355-32da-449c-adc8-31d2568ac55b"
+    },
+    {
+      "claim_id": "de090c23-ea73-4040-9a52-f88c10d359be",
+      "result_id": "394d4355-32da-449c-adc8-31d2568ac55b"
+    },
+    {
+      "claim_id": "ab4a209b-d6d4-48c3-8223-ce12c8e17149",
+      "result_id": "394d4355-32da-449c-adc8-31d2568ac55b"
+    },
+    {
+      "claim_id": "f075119d-2ea1-4207-bcee-937b1545db6e",
+      "result_id": "394d4355-32da-449c-adc8-31d2568ac55b"
+    },
+    {
+      "claim_id": "20fbe356-f184-4f00-9e75-021c7492911c",
+      "result_id": "394d4355-32da-449c-adc8-31d2568ac55b"
+    },
+    {
+      "claim_id": "53011be4-ecd6-4736-a431-a60734c302ea",
+      "result_id": "394d4355-32da-449c-adc8-31d2568ac55b"
+    },
+    {
+      "claim_id": "91bf8250-9d53-4edb-bb85-6b6be35c018c",
+      "result_id": "394d4355-32da-449c-adc8-31d2568ac55b"
+    },
+    {
+      "claim_id": "4842e6af-d9f5-43ae-af6d-30e8c380148a",
+      "result_id": "394d4355-32da-449c-adc8-31d2568ac55b"
+    },
+    {
+      "claim_id": "784e2cbd-8bed-4c28-b016-faef6ebc4c25",
+      "result_id": "823fa724-3e0a-4de0-bc43-1cc4f357f717"
+    },
+    {
+      "claim_id": "8ca0a736-1622-42c2-b661-cdaf1df227d7",
+      "result_id": "9f2c5b0c-72cf-479a-b489-51dd2be14167"
+    },
+    {
+      "claim_id": "f19e926b-38b1-45af-a292-b6595c35fbfc",
+      "result_id": "f077ce60-5ca6-4fc8-8c0e-f3404e7f3d30"
+    },
+    {
+      "claim_id": "8c62595b-cd90-4c33-a1a6-28c719ba9a9f",
+      "result_id": "f077ce60-5ca6-4fc8-8c0e-f3404e7f3d30"
+    },
+    {
+      "claim_id": "1b038d3c-f4fd-4c0e-8773-abe647eb17f4",
+      "result_id": "f077ce60-5ca6-4fc8-8c0e-f3404e7f3d30"
+    },
+    {
+      "claim_id": "cf50dbe6-b482-47cd-9fb5-aada71b73b1e",
+      "result_id": "f077ce60-5ca6-4fc8-8c0e-f3404e7f3d30"
+    },
+    {
+      "claim_id": "225476f0-d41c-4e45-8d8e-ef7267328adf",
+      "result_id": "f077ce60-5ca6-4fc8-8c0e-f3404e7f3d30"
+    },
+    {
+      "claim_id": "9b032a65-d01b-4999-a6ca-8f1dc22947f4",
+      "result_id": "f077ce60-5ca6-4fc8-8c0e-f3404e7f3d30"
+    },
+    {
+      "claim_id": "9a5ff47e-396d-4059-ba8e-31316c655cdb",
+      "result_id": "f077ce60-5ca6-4fc8-8c0e-f3404e7f3d30"
+    },
+    {
+      "claim_id": "e6ff9550-0cb4-4cf4-ae23-94614feaeb84",
+      "result_id": "f077ce60-5ca6-4fc8-8c0e-f3404e7f3d30"
+    },
+    {
+      "claim_id": "920a8231-1f07-475a-8d64-bb775e4ddf83",
+      "result_id": "f077ce60-5ca6-4fc8-8c0e-f3404e7f3d30"
+    }
+  ],
+  "comparisons": []
+}

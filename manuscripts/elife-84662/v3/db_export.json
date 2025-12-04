@@ -1,0 +1,1368 @@
+{
+  "submission": {
+    "id": "48d6dbdf-926e-47cd-8256-3ae3ae37ea52",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:55:23.604547Z",
+    "updated_at": "2025-12-04T04:55:23.604547Z"
+  },
+  "content": [
+    {
+      "id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "submission_id": "48d6dbdf-926e-47cd-8256-3ae3ae37ea52",
+      "content_type": "manuscript",
+      "content_text": "# Variation in thermal physiology can drive the temperature-dependence of microbial community richness\n\n## Authors\n\n- Tom Clegg<sup>1</sup> ([ORCID: 0000-0002-8381-3132](https://orcid.org/0000-0002-8381-3132)) \u2020\n- Samraat Pawar<sup>3</sup>\n\n### Affiliations\n\n1. Helmholtz Institute for Functional Marine Biodiversity at the University of Oldenburg (HIFMB) Oldenburg Germany ([ROR:00tea5y39](https://ror.org/00tea5y39))\n2. Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research (AWI) Bremerhaven Germany ([ROR:032e6b942](https://ror.org/032e6b942))\n3. Department of Life Sciences, Silwood Park Campus, Imperial College London Ascot United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPredicting how species diversity changes along environmental gradients is an enduring problem in ecology. In microbes, current theories tend to invoke energy availability and enzyme kinetics as the main drivers of temperature-richness relationships. Here, we derive a general empirically-grounded theory that can explain this phenomenon by linking microbial species richness in competitive communities to variation in the temperature-dependence of their interaction and growth rates. Specifically, the shape of the microbial community temperature-richness relationship depends on how rapidly the strength of effective competition between species pairs changes with temperature relative to the variance of their growth rates. Furthermore, it predicts that a thermal specialist-generalist tradeoff in growth rates alters coexistence by shifting this balance, causing richness to peak at relatively higher temperatures. Finally, we show that the observed patterns of variation in thermal performance curves of metabolic traits across extant bacterial taxa is indeed sufficient to generate the variety of community-level temperature-richness responses observed in the real world. Our results provide a new and general mechanism that can help explain temperature-diversity gradients in microbial communities, and provide a quantitative framework for interlinking variation in the thermal physiology of microbial species to their community-level diversity.\n\n## Introduction\n\nThe effect of temperature on biodiversity has long been a topic of interest in ecology. Starting with the pioneering work of Alexander von Humboldt, who in the 19th century identified temperature as a major environmental driver of plant richness along elevational gradients in the Andes (Humboldt and Bonpland, 2010), temperature has been recognized as a key driver of the geographical gradients in taxonomic richness are seen across practically all organismal groups (Rohde, 1992; Gaston, 2000). In recent years, the relationship between species richness in microbial communities and temperature has become a topic of particular interest. This has come together with an increase in awareness of the importance of these microbes to ecosystem functioning (Schimel, 2013; Graham et al., 2016; Antwis et al., 2017), and new DNA sequencing technologies that allow community \u2018snapshots\u2019 to be characterised with relative ease (Zimmerman et al., 2014). Studies on microbial community richness, often measured in numbers of OTUs (operational taxonomic units), have generally found varying responses to changes in environmental temperature. For example, while Zhou et al., 2016 found that soil microbe richness increased across a continental temperature gradient in North America, others have found unimodal responses (richness peaking at intermediate temperatures) in soils as well as other environments (Milici et al., 2016; Sharp et al., 2014; Thompson et al., 2017). Indeed, as demonstrated in the data synthesis by Hendershot et al., 2017, the temperature responses of microbial richness or diversity are \u2018consistently inconsistent,\u2019 with no single pattern in terms of shape (monotonic or unimodal) or direction (positive or negative) dominating.\n\nCurrently, there are two mechanistic explanations relevant to microbial temperature-richness gradients, both of which focus on energy availability in the environment. The first is the metabolic theory of biodiversity (MTB) (Allen et al., 2002), which predicts monotonic increases in species richness with temperature due to increasing cellular kinetic energy at higher temperatures. This allows more individuals to survive in a given community, which in turn supports higher species richness. This work was later extended by Arroyo et al., 2022 who were able to produce a variety of temperature-diversity responses by including a more complex model of enzyme kinetics allowing for unimodal responses. The MTB and its newer applications are able to recreate various temperature-diversity patterns but rely on three key assumptions: (1) all populations have the same rate of energy use (energy equivalence), (2) identical temperature dependence across taxa (the \u2018Universal Temperature Dependence\u2019 or \u2018UTD\u2019), and (3) non-interacting populations. Whilst there is some evidence for the energy equivalence in phytoplankton communities (Ghedini et al., 2020) its validity remains, to the best of our knowledge, untested in heterotrophic microbes. Support for the other assumptions is weaker and there is now extensive evidence for significant functional variation in thermal sensitivities across the microbial tree of life (Smith et al., 2019; Dell et al., 2011; Kontopoulos et al., 2020) emphasising the fact that the UTD is at best an approximation (Savage, 2004). Likewise, extensive theoretical and empirical evidence shows that resource-mediated species interactions among microbes are the norm and drive community species dynamics and diversity (Goldford et al., 2018; Marsland et al., 2019; Ratzke et al., 2020; Cook et al., 2021; Lech\u00f3n et al., 2021).\n\nA second explanation for temperature-diversity gradients is the metabolic niche hypothesis (Sharp et al., 2014) which posits that there are more energetically viable ways to make a living at intermediate (non-extreme) temperatures. This allows for species coexistence and in turn produces an unimodal temperature-diversity response (Clarke and Gaston, 2006). This mechanism was modelled phenomenologically by Marsland et al., 2020 who imposed additional mortality on consumers to represent less-favorable environmental conditions, recovering the expected unimodal patterns of richness. Overall the metabolic niche hypothesis assumes that the size of the feasible niche space follows a specific pattern over temperature and is thus unable to explain other richness-temperature relationships. Likewise, it is unable to explain how these effects arise explicitly from the action of temperature on individual populations and their thermal responses.\n\nA key weakness in these current explanations is the UTD assumption; that focusing on the average of thermal responses is an appropriate approximation (Savage, 2004). We posit that the variation in thermal responses will in fact be important in determining the responses of microbial community richness to temperature. In addition to its ubiquity (Smith et al., 2019; Smith et al., 2021; Kontopoulos et al., 2020) variations on thermal responses may act in two ways. First, the nonlinear thermal responses of metabolic traits means that inter-specific variation in thermal sensitivity will likely drive significant changes in realised trait-value distributions and species interactions at different temperatures. Second, differences in thermal responses of traits between interacting populations (\u2018physiological mismatches\u2019) may have non-trivial effects on microbial community dynamics and coexistence (Dell et al., 2014; Bestion et al., 2018; Garc\u00eda et al., 2023).\n\nIn this paper, we derive a new theory that predicts the response of species richness of microbial communities to temperature while accounting for variation in thermal sensitivity of metabolic traits across populations. We focus on competitive interactions which have been shown to have string effects on coexistence and richness in microbial communities (Marsland et al., 2019; Goldford et al., 2018; Ratzke et al., 2020; Lech\u00f3n et al., 2021). We first derive a mathematical expression that links the distribution of population thermal performance curves to the number of species that can feasibly coexist within a community. Then, using empirical data to parameterise the model, we ask whether the extant variation in thermal responses of bacterial metabolic traits is sufficient to be a key drivers of patterns of species richness across temperature gradients in the real world.\n\n## Results\n\n### Theory\n\nIn order to investigate the effects of temperature on community richness we first link the effects of the community-level distributions of two key traits\u2014maximal population growth rate $r_{i}(T)$ and pairwise interaction strengths $a_{ij}(T)$ \u2014to the probability of feasibility ($P_{feas}$): the probability that the community will support all species\u2019 populations at non-zero abundance at equilibrium. Feasibility is a necessary condition for stable population coexistence and generally falls as richness increases, placing an upper bound on community size (Goh and Jennings, 1977; Grilli et al., 2017; Dougoud et al., 2018). We then determine how temperature, acting through its effect on metabolic rate, affects the distributions of traits across the community, accounting for the variation in thermal responses across species in the community. Finally, we combine these to determine the effect of temperature on feasibility and thus the maximal richness. Figure 1 provides an overview of the theory.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84662/elife-84662-fig1-v3.jpg)\n\n**Figure 1.:** (A) Trait values increase with temperature following the Boltzmann-Arrhenius equation (boltz_maintext), with the shape governed by two parameters: $B_{0}$ - trait value ($r$ or $a$) at a reference temperature $T_{ref}$ and $E$ - thermal sensitivity. (B) The joint distribution of $E$ and $log\u2061(B_{0})$ (here with empirically realistic negative covariance) determines how trait distributions vary across temperatures (C). (D) The distribution of trait values in turn determines the probability of feasibility $P_{feas}$ (and thus richness; Feas_sp_maintext). Specifically, $P_{feas}$ is determined by the proportion of relative growth rates ($r_{i}^{\u2032}$; blue shaded area) that are greater than the bound (solid black line) set by mean interaction strength ($\u27e8a\u27e9$). Populations with relative growth rates below this bound (red shaded area) are unfeasible (cannot persist in the community). All else being equal, the size of the unfeasible region (i.e. richness), decreases with increasing variance in the growth rate distribution ($Var(r_{i}^{\u2032})$) and increasing interaction strength (which shifts the $f(\u27e8a\u27e9(T))$ bound upwards). (E\u2013H) The effects of varying different aspects of the joint distribution of $B_{0}$ and $E$ of $r$ and $a$ on the emergent trait distribution across temperatures. Each panel shows the effect of altering the labeled parameter relative to the baseline case (far left), with inset plots showing the effect on the resulting temperature-richness relationship.\n\n#### Community-level trait distributions determine species richness\n\nIn order to determine the maximal community richness we start with the generalised Lotka-Volterra model (GLV) which describes the population dynamics of a $N$ species community\n\n$$\n\\frac{1}{x_{i}}\\frac{dx_{i}}{dt}=r_{i}(T)\u2212a_{ii}(T)x_{i}\u2212\\sumj=0Na_{ij}(T)x_{j}\n$$\n\nwhere $x_{i}$ is the biomass of the species $i$, $r_{i}(T)$ is its mass-specific growth rate, and $a_{ij}(T)$ and $a_{ii}(T)$ are the inter- and intraspecific interaction strengths between and within populations. Note these parameters are expressed as functions of temperature $T$, the form of which will be discussed later.\n\nUsing a mean-field approximation (Wilson et al., 2003; Rossberg, 2013) we derive a condition for community feasibility which depends on the distributions of the parameters $r$, $a_{ij}$, and $a_{ii}$ across the community. This approximation assumes that the community we consider is large such that interactions can be considered in terms of their average value and the effect of any individual interaction is small. We discuss these assumptions in more detail in SEC:Methods. The approximation lets us write an expression for the probability that a community of a given size is feasible $P_{feas}$ as\n\n$$\nP_{feas}=P(r_{i}^{\u2032}(T)>\\frac{(N\u22121)\u27e8a\u27e9(T)}{1+(N\u22121)\u27e8a\u27e9(T)})^{N}.\n$$\n\nHere $r_{i}^{\u2032}(T)=r_{i}(T)/\u27e8r_{i}\u27e9(T)$ is the normalised growth rate (i.e. growth rate relative to the average of all $N$ populations), and $\u27e8a\u27e9(T)=\u27e8a_{ij}\u27e9(T)\u27e8a_{ii}^{\u22121}\u27e9(T)$ is the effective interspecific interaction strength (normalised by intraspecific interactions $\u27e8a_{ii}^{\u22121}\u27e9(T)$). The inequality inside the brackets represents the probability that a given population is feasible (i.e. has non-zero biomass) with the $Nth$ power term representing the fact that all populations must meet this criteria for a community to be feasible.\n\nFeas_sp_maintext shows that community feasibility changes with system size in two ways. First, assuming that the average strength of individual competitive interactions is constant, the addition of new species to a community will result in the overall strength of competition increasing ($(N\u22121)\u27e8a\u27e9(T)$). This reduces the chance that the inequality in Feas_sp_maintext holds and each individual population is feasible. Second, the inequality must hold across all $N$ species, the probability of which falls as system size increases, reducing $P_{feas}$. Together, these two mechanisms place an upper limit on the size of a community that is likely to remain feasible. This limit can be calculated by setting an threshold value for $P_{feas}$ and then solving Feas_sp_maintext for $N$ (see below).\n\n#### Variation in thermal physiology determines temperature-specific trait distributions\n\nHaving derived the condition for feasibility and the limit it places on richness, we now consider how the distributions of and variation in growth rate $r$ and interaction strengths $a_{ij}$ and $a_{ii}$, change with temperature, and how this, in turn, affects the richness of species through $P_{feas}$. We use the Boltzmann-Arrhenius equation which describes the change in a given trait over temperature (Figure 1A; Gillooly et al., 2001):\n\n$$\nB(T)=B_{0}e^{\u2212\\frac{E}{k}(\\frac{1}{kT}\u2212\\frac{1}{kT_{ref}})}\n$$\n\nwhere $B(T)$ is the trait value, $T$ is the temperature in Kelvin, $B_{0}$ is the normalisation constant which defines the trait value at some chosen reference temperature $T_{ref}$, $E$ (eV) is the thermal sensitivity which determines the change in trait value to a unit change of $1/kT$, and $k$ is the Boltzmann constant.\n\nThe Boltzmann-Arrhenius equation is a sufficiently accurate model for the temperature dependence of metabolically \u2018higher-level\u2019 traits such as interaction and growth rates, because these ultimately emerge from cellular biochemical kinetics (Gillooly et al., 2001; Savage, 2004; Dell et al., 2011; Dell et al., 2014; Arroyo et al., 2022) (see SEC:Methods). The empirical validity of Boltzmann for $r$ is now well-established (Smith et al., 2019; Kontopoulos et al., 2020). In contrast, there is currently no empirical evidence that directly supports its validity for the temperature dependence of interaction strengths $a_{ij}$ and $a_{ii}$ for heterotrophic microbes. We posit that a Boltzmann-Arrhenius (or at least exponential-like) temperature dependence of interaction strength is likely to be a good description, however, because pairwise microbial competitive interactions are ultimately driven by the two species\u2019 resource uptake rates, as shown by the derivation of effective interaction strengths in more mechanistic consumer-resource models of microbial communities (Marsland et al., 2020). As uptake rates are known to follow a Boltzmann-Arrhenius form within the OTR (Smith et al., 2021; Bestion et al., 2018) it follows that the interaction strength may follow this exponential-like form too. Finally, we note that we implicitly assume that variation in growth and interaction rates stem from cellular metabolic processes unlimited by resource supply (Savage et al., 2004), i.e., we are assuming here that resource supply is sufficient to maintain positive growth rates across the community.\n\nTo derive an expression for the temperature-dependent distribution of traits we consider how $E$ and the logarithm of $B_{0}$ vary across the community. We assume these follow a bivariate normal distribution parameterised by the means $\\mu_{B_{0}}$ and $\\mu_{E}$, variances $\\sigma_{B_{0}}^{2}$ and $\\sigma_{E}^{2}$, and covariance $\\sigma_{B_{0},E}$ (theoryB). A bivariate normal distribution captures the mean and variance of the thermal dependence of these traits across the community, as well as the covariance between them. This covariance is important and generally expected to be negative due to the well-known thermal specialist-generalist trade-off (Huey and Hertz, 1984; Angilletta, 2009; Kontopoulos et al., 2020) that individuals cannot perform equally well at all temperatures; as a result, they can either increase performance across a narrow range of temperatures (specialist with high sensitivity $E$ but low-performance $B_{0}$) or perform at a lower level across a wider range of temperatures (low $E$, high $B_{0}$). Applying Boltzmann to these traits yields an expression for $B(T)$ that follows a log-normal distribution:\n\n$$\nlog\u2061(B(T))\u223cN(\\mu_{B}(T),\\sigma_{B}^{2}(T))where\\mu_{B}(T)=\\mu_{B_{0}}\u2212\\mu_{E}(\\frac{1}{kT}\u2212\\frac{1}{kT_{ref}})\\sigma_{B}^{2}(T)=\\sigma_{B_{0}}^{2}+\\sigma_{E}^{2}(\\frac{1}{kT}\u2212\\frac{1}{kT_{ref}})^{2}\u22122\\sigma_{B_{0},E}(\\frac{1}{kT}\u2212\\frac{1}{kT_{ref}}).\n$$\n\nIt is important to note that because $B(T)$ is log-normally distributed, its moments depend on both the underlying mean and variance, $\\mu_{B}(T)$ and $\\sigma_{B}(T)$, respectively. boltz_maintext reveals three key insights into the effects of temperature on the distributions of the two key traits:\n\nWe can also derive a condition for the point at which this variation is sufficient to induce a unimodal response in the mean trait value, $\\sigma_{E}^{2}>\\mu_{E}+\\sigma_{B_{0},E}$, that is the variation in thermal sensitivity must be larger than its average over the community plus the effects of covariance. As the covariance is expected to be negative this relaxes the bound, and reduce the degree of variation needed for a unimodal response.\n\n#### Temperature determines richness by altering community-level trait distributions\n\nWith the expression for the temperature distribution of traits in hand, we now apply boltz_maintext to the two traits that determine feasibility (and thus richness) $\u27e8a\u27e9$ and $r_{i}^{\u2032}$ (see SEC:Methods for full derivation):\n\n$$\nlog\u2061(r_{i}^{\u2032}(T))\u223cN(\u2212\\frac{\\sigma_{r}(T)^{2}}{2},\\sigma_{r}(T))\u00a0and\n$$\n\n\n\n$$\n\u27e8a\u27e9(T)=exp(\\mu_{aij}(T)\u2212\\mu_{aii}(T)+\\frac{\\sigma_{aij}(T)^{2}+\\sigma_{aii}(T)^{2}}{2}).\n$$\n\nEquations 5 and 6 show how the distribution of relative growth rate $r_{i}^{\u2032}$ at a given temperature is determined solely by the variance in $r$, while mean competitive interaction strength $\u27e8a\u27e9$ is determined by both the mean and variance of inter- and intraspecific interaction strength $a_{ij}$ and $a_{ii}$.\n\nBy substituting Equation 5 and Equation 6 into the feasibility condition Equation 2, we can now predict the temperature-richness relationship in terms of the distributions of thermal physiology traits across species in the community Figure 2. This leads to three key insights.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84662/elife-84662-fig2-v3.jpg)\n\n**Figure 2.:** The analytical predictions (solid lines) are plotted along with the maximum richness reached in the numerical simulations (dots). (A) Mean thermal sensitivity of interactions $\u27e8a\u27e9$ determines the direction and steepness of the temperature-richness relationship. (B) Increasing variance of thermal sensitivity increases unimodality. (C) Negative covariance between $B_{0}$ and $E$ shifts the peak of richness to higher temperatures. Parameter values used were: $\\mu_{r0}=0.0,\\sigma_{r0}^{2}=\\sigma_{a0}^{2}=0.2,\\mu_{E_{r}}=\\mu_{E_{a}}=0.6,\\sigma_{E_{r}}^{2}=\\sigma_{E_{a}}^{2}=0.01,\\sigma_{B_{0},E_{r}}=\\sigma_{B_{0},E_{a}}=0.0$.\n\nIn order to visualise and test the predictions arising from Feas_sp_maintext we compared species richness patterns and the effects of changing the various thermal physiology parameters to numerical simulations using the full GLV model. To generate predictions, we selected reasonable values for thermal physiology parameters of growth rates $r$ and interaction terms $a_{ij}$ and $a_{ii}$ and substituted them into Trait_distributions_r and Trait_distributions_a. We then substituted the relevant quantities into Feas_sp_maintext across multiple temperatures and calculated $P_{feas}$ across multiple values of $N$. Then, setting a threshold value of $P_{feas}=0.5$ (with no loss of generality) we find the maximum $N$ value a community can reach and remain above this value. To test these with numerical simulations we took the same thermal physiology parameters and generated 50 replicate communities across a temperature range with varying system sizes (sampling $r$, $a_{ij}$ and $a_{ii}$ from distributions as described by boltz_maintext). We then solved for the steady state of these communities (using the matrix form solution $x^{*}=A^{\u22121}r$) and determined which were feasible (i.e. those with no extinctions). As with the predictions we then calculated the maximum richness by calculating the $P_{feas}$ values (the proportion of replicate communities that were feasible) and selecting the largest community above or at the 0.5 threshold. Figure 2 shows that the analytical predictions match the simulated results well and that the changes in richness over temperature respond to changes in the thermal physiology parameters as expected.\n\n### Sensitivity analysis\n\nWe also performed a sensitivity analysis to determine the conditions under which the predictions of the theory break down. In general, we expect this will occur when the assumptions of the mean field approximation are not met, primarily when interactions are strong or their variation is large and the coupling between individual populations dominates dynamics (see SEC:Methods for more detail). To test the sensitivity of the results we generated 10,000 random communities with means and variances of the various thermal physiology parameters randomly sampled from reasonable ranges. For each community we generated the predicted and observed richness as above and then calculated the root mean squared error, the square root of the average squared difference of predicted vs simulated diversity. We normalised this error by dividing by the average richness observed (to avoid biasing the estimates with system size) and then calculated the Pearson correlation coefficient of each parameter value with the error. The choice of the measure of error or correlation is in principle not important and one could use other metrics such as $R^{2}$ instead. This method provides an efficient and concise way to evaluate the performance of our model and summarise the relative effect of different parameters. For a given parameter positive correlation values indicate that increasing its value leads to higher error, reducing the ability of the model to match the simulated data. conversely, a negative correlation indicates that the model performs better when the parameter is large. Overall the results are in agreement with the expectations Figure 3. Increasing variation in trait values $\\sigma_{B_{0}}$ leads to increasing error in all three traits. Likewise high average strength of interspecific interactions increases error whilst increasing the average strength of intraspecific interactions decreases error.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84662/elife-84662-fig3-v3.jpg)\n\n**Figure 3.:** Bar plots show the Pearson correlation coefficient $\u03c1=(x,y)/\\sigma_{x}\\sigma_{y}$ of each thermal physiology parameter with the root mean squared error between the theory and numerical simulations across replicate communities. Positive correlations indicate that increasing the parameter value tends to increase the error whilst negative values indicate error decreases the parameter value increases. Each panel shows the effect of a given parameter.\n\n### Real-world variation in thermal physiology predicts unimodal bacterial temperature-richness relationships\n\nWe next parameterised our model with empirical data on bacterial traits to determine the temperature-richness relationship predicted under realistic levels of variation in thermal physiology Figure 4. We used data on bacterial growth rates from two sources: an experimental dataset in which the growth rates of 27-soil bacteria strains were measured across a range of temperatures (Smith et al., 2021) and, a literature-synthesised dataset which was constructed by digitsising existing data on prokaryotic growth across 482 strains (Smith et al., 2019). We refer the reader to the respective papers for more details on how these data were collected. For each dataset, we refit TPCs to obtain estimates for the joint distribution of $B_{0}$ and $E$. Both datasets showed considerable variation in TPCs thorough variation in both $B_{0}$ and $E$ and a negative covariance between $log\u2061(B_{0})$ (for a $T_{ref}=13^{\u2218}$ C) and $E$ values (Figure 4A-D). Fits to the multivariate-normal distribution using MLE yielded estimates of $\\mu_{E}=1.0$, $\\sigma_{B_{0}}^{2}=0.95$, $\\sigma_{E}^{2}=0.25$, and $\\sigma_{B_{0},E}=\u22120.42$ for the experimental dataset and $\\mu_{E}=0.82$, $\\sigma_{B_{0}}^{2}=1.0$, $\\sigma_{E}^{2}=0.11$, and $\\sigma_{B_{0},E}=\u22120.1$ for the data-synthesis. Parameterising our theory with these values (using the same thermal response for growth rates and interactions) predicts unimodal temperature-richness responses due to this combination of variance and negative covariance Figure 4E. Due to its larger variance in $E$ as well as stronger negative covariance, the response based on the experimental data shows a sharper increase in richness, and peaks at a higher temperature of \u223c20\u00b0C, than that based on the data-synthesis which has a shallower, broader temperature-richness curve peaking at \u223c9\u00b0C.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84662/elife-84662-fig4-v3.jpg)\n\n**Figure 4.:** (A) The relationship between $log\u2061(B_{0})$ and $E$ for growth rate in the experimental thermal performance curve (TPC) data from Smith et al., 2021. Dots show each pair of $B_{0}$ and $E$ values estimated for a given species/strain with histograms showing the marginal distributions. Ellipses show the 95% quantiles of the fitted bivariate normal distribution. (B) The actual growth-rate TPCs (solid lines) from the dataset as well as the fitted trait-distributions across temperature (box plots). The dashed line shows the point of minimum variance in growth rates which occurs towards the upper end of the temperature range. (C\u2013D) Analogous plots for the dataset from the literature synthesis (Smith et al., 2019). (E) The analytically- (solid line) and simulation- (points) predicted temperature-richness curves based on the TPC variation seen in both these experimental (blue) and literature-synthesised (red) empirical data. Both are generated using the parameters from their respective fitted distributions and mean normalisation constants of $\\mu_{r_{0}}=0.0$ and $\\mu_{a_{0}}=\u22125.0$. We set the normalisation constants such that the magnitude of richness values is not too large to perform the numerical simulations.\n\n## Discussion\n\nWe have investigated how variation in species-level thermal responses (TPCs) affects the temperature dependence of species richness in microbial communities. We show how the shapes of the across-species distributions of thermal sensitivity ($E$), the normalisation constants ($B_{0}$), and their covariance can determine changes in species richness over temperature. These patterns emerge as the relative strength of competition and variation in population growth rates change with temperature and can be linked directly to specific features of the thermal performance trait distributions.\n\nA key new insight from our theory is that variance in thermal sensitivity of growth rate, $\\sigma_{E,r}$, can drive unimodal patterns of temperature-richness curve (Figure 2). This is due to the non-linear temperature dependence of trait variance (Equation 4) and its effects on the community-level traits that determine richness (Equations 5 and 6). Furthermore, the temperature at which richness peaks is governed by the covariance between the thermal sensitivity ($E_{r}$) and baseline value ($r_{0}$) of growth rate, with negative covariance values shifting peak richness towards higher temperatures. This negative covariance case is consistent with a thermal generalist-specialist trade-off seen in existing data analysed here; Smith et al., 2019; Smith et al., 2021 and suggests richness should peak towards the higher end of the operational temperature ranges (OTRs) of most mesophilic bacteria. We expect the variance and covariance of thermal response traits to play a key role in determining patterns of richness due to the extensive variation in the thermal sensitivity $E$ of metabolic traits across the microbial tree of life, as well as negative covariance between this parameter and the normalisation constant ($B_{0}$) (Kontopoulos et al., 2020; Smith et al., 2019).\n\nThe mechanism we present here provides an alternate explanation for the existence of temperature diversity patterns and is based on ecological processes (i.e. competition). This represents a new type of mechanism compared to previous explanations invoking energy availability, such as the use of enzyme kinetics in the MTB (Arroyo et al., 2022) or the reduction in feasible niche space in the metabolic niche hypothesis (Clarke and Gaston, 2006). Furthermore, our model is able to produce richness peaks below the thermal optima of the underlying rates unlike the previous explanations which assume declines in richness happen due to a reduction in performance at the population level. This peak of richness below the thermal optima of individual population rates is consistent with observations of unimodal temperature-richness relationships (Milici et al., 2016; Sharp et al., 2014; Thompson et al., 2017) which tend to be below estimates of microbial thermal optima (Smith et al., 2019). Crucially we would like to stress that these mechanisms are not mutually exclusive and that the patterns of diversity observed in nature are likely the product of multiple processes acting in unison.\n\nOverall we expect that the mechanism we propose here will be particularly relevant to predicting the temperature-richness relationship in: (i) communities where system dynamics are driven primarily by species interactions (as opposed to scenarios where dynamic assembly and processes such as environmental filtering or neutral processes dominate); (ii) environments where species typically experience temperatures within their OTR (arguably the most common scenario on planet Earth); (iii) At scales where trait TPC distributions are relatively constant across communities and thus independent of the local environment. At larger scales, we expect that processes such as local adaptation are likely to alter these distributions (Kontopoulos et al., 2018) as organisms adapt to local temperature regimes. More work is required to test this more explicitly, however, and will require datasets explicitly measuring the within-community variation of thermal responses across taxa.\n\nWe found that the data from the single lab experiment (Smith et al., 2021) show a greater variance in $E_{r}$ as well as a stronger covariance between $B_{0,r}$ and $E_{r}$ than the literature-synthesised (Smith et al., 2019) data (Figure 4). This drives a constriction of growth rate variation at \u223c23\u00b0C in the experimental data, which in turn results in a higher predicted peak of species richness at \u223c23\u00b0C these data. Estimates for $E_{r}$ and $B_{0,r}$ in both datasets were obtained using comparable methods, so this difference most likely reflects biological and experimental differences between them. Given that the single experimental dataset is for a far more restricted set of thermal taxa from a specific habitat (soil), it is surprising that the TPCs vary more that single community than across the wider diversity of taxa in the literature-synthesised dataset. This either reflects some sort of systematic bias in the literature data, that the local community sampled in the single experiment is a non-random set of co-evolved taxa, or both. In particular, the temperature at which the growth rate variation constricts in the lab dataset is almost identical to the temperature at which those strains were maintained, suggesting a role of species sorting, acclimation or evolution. The literature-synthesised dataset on the other hand represents a much more random set of taxa. Interestingly, the predicted \u223c9\u00b0C peak in species richness based on these data is almost identical to that observed by Thompson et al., 2017 from a wide range of environmental samples, which also presumably emerges from a heterogeneous set of taxa.\n\nIn our model we use feasibility as the main constraint on species richness. We argue that feasibility is an important limit as only feasible fixed points allow the coexistence of populations within the community. Feasibility has long been discussed in the literature in this way, going back to Goh and Jennings, 1977 who showed the scaling of system size with feasibility in GLV communities based on random parameterisations. In contrast to this previous work we provide a more mechanistic basis for the parameters in the model allowing us to derive limits on richness based on an environmental driver, temperature. A natural next step in this work would be to consider other properties of these equilibria such as their stability (capacity to resist perturbation) (May, 1972; Allesina and Tang, 2012; Grilli et al., 2017) or reactivity (the degree to which perturbations are amplified within the system) (Neubert and Caswell, 1997; Arnoldi et al., 2018). This would allow greater understanding of the dynamic behaviour of these systems across temperatures and allow us to identify whether and when microbial communities are more susceptible to disturbances at different points along thermal gradients. In this context, it is worth noting that feasible fixed points in the GLV are almost always stable (Gibbs et al., 2018), suggesting that patterns of stability-constrained richness should follow the same temperature response.\n\nWe also note that the GLV underlying our theory assumes a physically well-mixed system, that is, the spatial structure does not play a role. As such, spatial structure will impact species coexistence, for instance, by localising competitive exclusion to spatial \u2018pockets.\u2019 We expect that future work incorporating spatial structure in our framework may reveal differences in the thermal responses of microbial species richness between environments with contrasting spatial structures (e.g. soil versus water).\n\nFinally, we acknowledge that we have only considered competitive interactions here. Whilst it has been argued that competitive interactions dominate in microbial communities (Foster and Bell, 2012) there has more recently been a recognition of the importance of cooperative interactions that develop through cross-feeding between strains on their metabolic-by-products (Goldford et al., 2018; Marsland et al., 2019; Lech\u00f3n et al., 2021). Though positive interactions can be considered in the GLV model framework this still represents an approximation of the resource dynamics that underlie cooperation in real communities (Bunin, 2017). Our approach towards determining the temperature dependence of trait distributions could, however, be applied to other models such as the recently-introduced microbial consumer-resource models (Marsland et al., 2019), which would allow explicit characterisation of resource-mediated interactions and thus the higher-order interactions and indirect effects that arise. We do not use this class of models here due to the additional complexity resource dynamics add and the existence of many analytical techniques to study the GLV. However, we would still expect the broad effects of distributions of thermal response parameters to have similar effects (as the thermal responses of traits are independent of the system dynamics) though the exact mapping of trait distributions (and the traits that need to be considered) on to richness may change.\n\nOverall, our results provide a compelling theoretical basis and empirical evidence that the temperature-richness relationship in microbial communities can be strongly driven by variations in thermal physiology across species. Whilst often ignored, quantifying this variation in local communities are likely to be key to predicting the effects of temperature fluctuations on microbial community diversity across space and time.\n\n## Methods\n\n### Derivation of the theory\n\nWe begin with the GLV model of an N-species community where the biomass growth of the ith species given by\n\n$$\n\\frac{1}{x_{i}}\\frac{dx_{i}}{dt}=r_{i}(T)\u2212a_{ii}(T)x_{i}\u2212\\sumj\\neqiNa_{ij}(T)x_{j},\n$$\n\nwhich is GLV_maintext in the main text. Here, $x_{i}$ is its biomass density (abundance) ($mass\u22c5volume^{\u22121}$), $r_{i}(T)$ it\u2019s intrinsic growth rate ($time^{\u22121}$), $a_{ij}(T)$ is the effect of interaction with the jth species\u2019 population ($volume\u22c5mass^{\u22121}\u22c5time^{\u22121}$) (and thus $a_{ii}(T)$ is the strength of its intraspecific interactions).\n\n#### Mean-field approximation of the Lotka-Volterra Model\n\nTo determine the feasibility of a community in terms of the parameters in GLV_maintext and species richness, we need to first derive an expression for equilibrium biomass, $x_{i}^{*}$. Whilst it is possible to write GLV_maintext in matrix form and solve via inversion of the interaction matrix, this does not give a solution that is easily interpretable in terms of the parameters. As such we use a mean-field approximation which allows us to explicitly link the distributions of parameters to the equilibrium biomasses $x_{i}^{*}$(Wilson et al., 2003; Wilson and Lundberg, 2004; Rossberg, 2013). By focusing on the averaged effect of interactions on each population\u2019s abundance, this approximation allows us to relate the equilibrium abundance vector to the mean pairwise interaction strengths $\u27e8a_{ij}\u27e9$ across the community. We start by rewriting the summed interactions term for the ith species in the GLV model as:\n\n$$\n\\frac{\\sumi\\neqjNa_{ij}x_{j}}{N\u22121}=\u27e8a_{ij}x\u27e9,i.e.,\u00a0\\sumi\\neqjNa_{ij}x_{j}=(N\u22121)\u27e8a\u27e9_{ij}\u27e8x\u27e9+(N\u22121)Cov(a_{ij},x),\n$$\n\nwhere the bar notation represents the average of the quantity across the $N\u22121$ other species that the focal population can interact with (ignoring self-interaction). mean_int partitions the effects of interactions on the ith species\u2019 population into the average effect, $\u27e8a_{ij}\u27e9\u27e8x\u27e9$, and the covariance between strengths of the interactions and the heterospecifics\u2019 biomasses, $cov(a_{ij},x)$. This mean-field approximation assumes that system ($N$) is large, which ensures that the difference between the average heterospecific\u2019s biomasses and that of the focal species is small (as it is of order $N^{\u22121}$) and can thus be ignored. It also assumes that the second covariance term is negligible, which is equivalent to saying that any individual interaction between the focal species and another species\u2019 population has a small effect on its biomass abundance. Another way of framing this is that the variance in interaction strengths is not too large, a feature which can be seen by decomposing the covariance term into the correlation $\u03c1_{x,a_{ij}}$ and variance terms $\\sigma_{x}$ and $\\sigma_{a_{ij}}$\n\n$$\ncov(a_{ij},x)=\u03c1_{x,a_{ij}}\\sigma_{x}^{2}\\sigma_{a_{ij}}^{2}\n$$\n\nThus, the covariance term will be small as long as the correlation and the variation in interaction strengths are small.\n\nCombining GLV_maintext and mean_int, we can express each species\u2019 population dynamics in terms the average interaction strength, giving the full mean-field model:\n\n$$\n\\frac{1}{x_{i}}\\frac{dx_{i}}{dt}\u2248r_{i}\u2212a_{ii}x_{i}\u2212(N\u22121)\u27e8a_{ij}\u27e9\u27e8x\u27e9.\n$$\n\nNext, we obtain an expression for the community\u2019s dynamic equilibrium by setting Equation 9 equal to zero and solving for $x_{i}$, giving:\n\n$$\nx_{i}^{\u2217}=\\frac{r_{i}}{a_{ii}}\u2212(N\u22121)\\frac{\u27e8a_{ij}\u27e9}{a_{ii}}\u27e8x\u27e9^{\u2217}\n$$\n\nThen, taking the average across the $N$ populations and rearranging, the average biomass in the community is:\n\n$$\n\u27e8x\u27e9^{*}=\u27e8\\frac{r}{a_{ii}}\u27e9\\frac{1}{1+(N\u22121)\u27e8a\u27e9}.\n$$\n\nAssuming that the growth rates and intraspecific interactions are independent i.e., $cov(r_{i},a_{ii})\u22480$ we can write this as:\n\n$$\n\u27e8x\u27e9^{*}=\u27e8r\u27e9\u27e8a_{ii}^{\u22121}\u27e9\\frac{1}{1+(N\u22121)\u27e8a\u27e9}.\n$$\n\nwhere $\u27e8a_{ii}^{\u22121}\u27e9$ denotes the average inverse intraspecific interaction strength and $\u27e8a\u27e9=\u27e8a_{ij}\u27e9\u27e8a_{ii}^{\u22121}\u27e9$ the product of the average of interspecific interaction and the inverse intraspecific interactions. By expressing interactions in this way the new term $\u27e8a\u27e9$ measures the effective strength of competition in a community. This aligns with classic results from the ecological theory that species coexistence is based on the ratio of inter- and intraspecific competition. We can then substitute the expression for $\u27e8x\u27e9$ into MF_partial to get equilibrium biomass:\n\n$$\nx_{i}^{*}=\\frac{r_{i}}{a_{ii}}\u2212\\frac{\u27e8r\u27e9}{a_{ii}}\\frac{(N\u22121)\u27e8a\u27e9}{1+(N\u22121)\u27e8a\u27e9}.\n$$\n\nMF_equi shows how the equilibrium abundance reached by a population is a balance between its own growth and intraspecific interaction strength in the first term (which can be shown to be its carrying capacity by setting $a_{ij}=0$ in GLV_maintext) minus the negative effect of interactions in the second. This second term includes both the average growth rate across the community as well as a saturating function of interactions. Biologically this makes sense because the effect of competition on a focal species\u2019 biomass depends on the abundance of its competitors in the environment (captured in the $\u27e8r\u27e9$ term) and the strength of its interactions with them (captured by $(N\u22121)\u27e8a\u27e9$). Because we assume interactions are competitive, they will always reduce population biomass relative to intrinsic carrying capacity.\n\n#### Condition for feasibility\n\nNext, we use MF_equi to derive an expression for community feasibility\u2014which sets the upper bound on species richness $N$\u2014, in terms of species-level traits (i.e. the $r_{i}$\u2019s and $a_{ij}$\u2019s). A community is feasible if all its populations have non-zero equilibrium biomasses (i.e. $x_{i}^{*}>0$) letting us write,\n\n$$\nr_{i}^{\u2032}>\\frac{(N\u22121)\u27e8a\u27e9}{1+(N\u22121)\u27e8a\u27e9}for alli=[1,2,3,\u2026,N]\n$$\n\nHere, $r_{i}^{\u2032}=r_{i}/\u27e8r\u27e9$ is the relative growth rate of the ith species (i.e. its value relative to the average across all $N$ populations). Feas_sp states that a community is feasible as long as the negative effects of competition on each population (RHS) do not outweigh its relative growth rate (LHS).\n\nUsing Feas_sp we next derive an expression for $P_{feas}$, the probability that a $N$-species community is feasible given the distribution of community-level trait values ($r_{i}^{\u2032}$\u2019s and $a$\u2019s). To do so we treat $r_{i}^{\u2032}$ and $a$ in Feas_sp as random variables that follow specific distributions (across species) in the community (denoted by the loss of subscript). This allows us to consider $r_{i}^{\u2032}$\u2019s cumulative density function (CDF) which gives the probability that any given value of $r_{i}^{\u2032}$ is less than or equal to some value: $F_{r_{i}^{\u2032}}(x)=P(r_{i}^{\u2032}\\leqx)$. Because the condition for feasibility states that $r_{i}^{\u2032}$ must be greater than the (negative) effect of interactions, we can use this CDF and the condition in Feas_sp to express $P_{feas}$ as\n\n$$\nP_{feas}=P(r_{i}^{\u2032}>\\frac{(N\u22121)\u27e8a\u27e9}{1+(N\u22121)\u27e8a\u27e9})^{N}=[1\u2212F_{r_{i}^{\u2032}}(\\frac{(N\u22121)\u27e8a\u27e9}{1+(N\u22121)\u27e8a\u27e9})]^{N},\n$$\n\ngiving the probability of feasibility of an ecosystem as a function of species\u2019 traits. The expression is raised to the $N^{th}$ power because all $N$ populations within a community must themselves be feasible (the term in the brackets) for a system to be feasible.\n\n#### Incorporating thermal responses of traits\n\nWe now turn to the effect of temperature. First, we consider how the distribution of a given trait changes over temperature. We derive the distributions of the trait value in terms of the distributions of the thermal physiology parameters, which determine the shape of the thermal performance curve (TPC). We use the Boltzmann-Arrhenius equation to represent the temperature dependence of traits (Gillooly et al., 2001; Savage, 2004; Dell et al., 2011; Dell et al., 2014):\n\n$$\nB(T)=B_{0}e^{\u2212\\frac{E}{k}(\\frac{1}{kT}\u2212\\frac{1}{kT_{ref}})}.\n$$\n\nHere, $B(T)$ is the trait value, $T$ is temperature in Kelvin, $B_{0}$ is the normalisation constant, i.e., the trait value at some reference temperature ($T_{ref}$, which we set to the middle of the OTR with no loss of generality, we can always obtain the same TPC for a given $T_{ref}$ by normalising $B_{0}$, $E$ (eV) is the thermal sensitivity which determines the change in trait value to a unit change of $1kT$, and $k$ is the Boltzmann constant. Although species-level thermal performance curves are generally unimodal, the Boltzmann-Arrhenius equation captures the rising portion (before the temperature of peak performance) of TPCs, which is also the temperature range within which populations typically operate (or experience) (the \u2018Operational Temperature Range,\u2019 or OTR; Dell et al., 2011; Smith et al., 2019; Smith et al., 2021). Indeed, the thermal optima of growth rates of mesophilic prokaryotes in laboratory experiments are typically 5\u201310\u00b0C higher than their (constant) ambient temperature Smith et al., 2019). Thus, focusing on the Boltzmann-Arrhenius portion of TPCs is relevant to the dynamics of real microbial communities, and also, conveniently, affords us analytic tractability.\n\nWe now consider how the TPC parameters $B_{0}$ and $E$ of growth ($r_{i}$\u2019s) and interaction rates ($a_{ij}$\u2019s) vary across species within the community and how this variation is propagated through Boltzmann to give the community-level distributions of these two traits at different temperatures. We begin with the natural log of Boltzmann:\n\n$$\nlog\u2061(B(T))=log\u2061(B_{0})\u2212\\frac{E}{k}(\\frac{1}{kT}\u2212\\frac{1}{kT_{ref}}).\n$$\n\nNext, we assume that $log\u2061(B_{0})$ and $E$ are distributed as a multivariate normal distribution such that:\n\n$$\n[log\u2061(B_{0})E]\u223cN([\\mu_{B_{0}}\\mu_{E}],[\\sigma_{B_{0}}^{2}\\sigma_{B_{0},E}\\sigma_{B_{0},E}\\sigma_{E}^{2}])\n$$\n\nwhere $\\mu_{B_{0}}$ and $\\mu_{E}$ are the respective means and $\\sigma_{B_{0}}^{2}$ and $\\sigma_{E}^{2}$ the variances of the normalisation constant and thermal sensitivity, respectively, and $\\sigma_{B_{0},E}$ is the covariance between them. $B_{0}$ is indeed expected to be log-normally distributed for growth and interaction rates (Kontopoulos et al., 2020; Dell et al., 2014; Bestion et al., 2018). On the other hand, $E$ distributions tend to be right-skewed (Kontopoulos et al., 2020; Smith et al., 2019; Dell et al., 2011), but we use the normal distribution here as an adequate approximation. Then, because LogBoltzmann is a linear combination of two co-varying normally-distributed random variables, $log\u2061(B(T))$ will itself be normally distributed as\n\n$$\nlog\u2061(B(T))\u223cN(\\mu_{B}(T),\\sigma_{B}^{2}(T))where\\mu_{B}(T)=\\mu_{B_{0}}\u2212\\mu_{E}(\\frac{1}{kT}\u2212\\frac{1}{kT_{ref}})\\sigma_{B}^{2}(T)=\\sigma_{B_{0}}^{2}+\\sigma_{E}^{2}(\\frac{1}{kT}\u2212\\frac{1}{kT_{ref}})^{2}\u22122\\sigma_{B_{0},E}(\\frac{1}{kT}\u2212\\frac{1}{kT_{ref}}).\n$$\n\nThat is, the temperature-specific trait values across species in a community for either growth or interaction rate can be represented by a log-normal distribution. boltz_maintext shows how:\n\nThe temperature of the lowest trait variation determined by boltz_maintext is key because it determines the location of the peak of the temperature-richness relationship, as we will show below. Henceforth, we choose $T_{ref}$ to always be the center of the OTR (\u223c13\u00b0C based on our empirical data synthesis; see below). Note that our results are qualitatively independent of our choice of $T_{ref}$ as one can always recover the same trait distribution by altering the variance $\\sigma_{B_{0}}^{2}$ and covariance $\\sigma_{B_{0},E}^{2}$ terms.\n\nIt is useful to consider the exact conditions under which the variance in a trait is sufficient to cause unimodal responses. Using the definition for the average of a log-normal distribution $m=exp\u2061(\\mu+\\sigma^{2}/2)$ and substituting the expressions in boltz_maintext we obtain\n\n$$\nm=exp\u2061(\\frac{\\sigma_{E}^{2}\u0394_{T}^{2}}{2}\u2212(\\mu_{E}+\\sigma_{B_{0},E})\u0394_{T}+\\mu_{B_{0}}+\\frac{\\sigma_{B_{0}}^{2}}{2})\n$$\n\nwhere $\u0394_{T}=(1/kT_{ref}\u22121/kT)$. To consider the unimodality we can then consider the point at which the square term above dominates. For ecologically relevant temperatures (0\u201340\u00b0C) and a reference temperature at 20\u00b0 the value of $\u0394_{T}$ will vary from \u223c2.9\u20132.5 so we can consider the case when $|\u0394_{T}|=2$ giving the condition\n\n$$\n\\sigma_{E}^{2}>\\mu_{E}+\\sigma_{B_{0},E}.\n$$\n\nThis shows a lower bound amount of variation in thermal sensitivity to observe unimodal responses. The degree of variation must be greater than the average thermal sensitivity plus any covariance. Note that as the covariance is expected to be negative, increasing covariance increases the unimodality of the thermal response.\n\n#### Temperature dependence of species richness\n\nNext, we use (boltz_maintext) to derive the distribution of $r_{i}^{\u2032}$ as well as the value of $\u27e8a\u27e9$, which together determine feasibility (Equation 2; Figure 1D). First, recall that:\n\n$$\nr_{i}^{\u2032}(T)=\\frac{r_{i}(T)}{\u27e8r\u27e9(T)}.\n$$\n\nThen, because $r_{i}(T)$\u2019s TPC follows a Boltzmann-Arrhenius relationship, its TPC parameters are distributed as in boltz_maintext and its mean (as a log-normally distributed variable) is given as:\n\n$$\n\u27e8r\u27e9(T)=e^{\\mu_{r}(T)+\\frac{\\sigma_{r}(T)^{2}}{2}}.\n$$\n\nSubstituting this into Equation 16 and taking the natural log gives:\n\n$$\nlog\u2061(r_{i}^{\u2032}(T))=log\u2061(r_{i}(T))\u2212\\mu_{r}(T)\u2212\\frac{\\sigma_{r}(T)^{2}}{2}.\n$$\n\nas $log\u2061(r^{\u2032})(T)$ is normally distributed this represents a simple shift in its mean giving,\n\n$$\nlog\u2061(r_{i}(T))\u223cN(\u2212\\frac{\\sigma_{r}(T)^{2}}{2},\\sigma_{r}(T)).\n$$\n\nNext consider the thermal dependence of $\u27e8a\u27e9$ which depends on the interaction strength distributions $a_{ij}(T)$ and $a_{ii}(T)$ . Because the interactions are also assumed to follow a Boltzmann-Arrhenius response, their distributions are also log-normally distributed as in boltz_maintext. We can, therefore, obtain its average with the expression\n\n$$\n\u27e8a\u27e9(T)=\u27e8a_{ij}\u27e9(T)\u27e8a_{ii}^{\u2212}\u27e9(T)=[exp\u2061(\\mu_{a_{ij}}(T)+\\frac{\\sigma_{a_{ij}}(T)^{2}}{2})][exp\u2061(\u2212\\mu_{a_{ii}}(T)+\\frac{\\sigma_{a_{ii}}(T)^{2}}{2})]=exp\u2061(\\mu_{a_{ij}}(T)\u2212\\mu_{a_{ii}}(T)+\\frac{\\sigma_{a_{ij}}(T)^{2}+\\sigma_{a_{ii}}(T)^{2}}{2}).\n$$\n\nNote the negative sign of the average intraspecific interaction strength which arises as we consider the mean of the inverse of $a_{i}i$. The two equations, Equations 5 and 6, show how the thermal responses of $r_{i}^{\u2032}$ and $\u27e8a\u27e9$ are both driven by the variance in the underlying log-trait distribution (and thus the variance in thermal sensitivity $\\sigma_{E}^{2}$ and covariance $\\sigma_{B_{0},E}$) with $\u27e8a\u27e9$ additionally being driven by the average log-trait value (and therefore, its average thermal sensitivity, $\\mu_{E,a}$). The effects of this on richness are detailed in the main text.\n\n### Empirical data\n\nIn order to obtain empirically relevant estimates of the mean, variance, and covariance of $B_{0}$ and $E$ we used data from both Smith et al., 2021 who experimentally measured the thermal performance (growth rate) of 29 strains of environmentally isolated bacteria and Smith et al., 2019 who synthesised data from existing bacterial thermal performance experiments for 422 stains. For both datasets, took the original data and fit the Sharpe Schoolfield model which describes the unimodal thermal response of traits to temperature (including $B_{0}$ and $E$ values) using the rTPC package (Schoolfield et al., 1981; Padfield et al., 2021). We rejected any fits that had non-significant ($p<0.05$) parameter estimates or did not converge. Taking the fitted $B_{0}$ and $E$ values, normalised the $B_{0}$ values by dividing by the mean to allow comparison across the datasets, and filtered out the values of $log\u2061(B_{0})$ larger than \u201315. We then fitted the multivariate-normal distribution using maximum likelihood estimation (MLE; Besan\u00e7on et al., 2021) giving estimates for the means and variance-covariance matrix, which can be used to generate temperature-dependent distributions of growth rate across the community boltz_maintext. We used these parameters to estimate temperature-richness relationships using the method described in the previous section with both $r$ and $a$ TPC parameters set to the same values except for the $\\mu_{B_{0}}$ values which were set to 0.0 and \u20135.0 for $log\u2061(r_{0})$ and $log\u2061(a_{0})$, respectively.\n",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "c375af83-e1a8-4b5f-aa3d-6fe665ffa6dd",
+      "submission_id": "48d6dbdf-926e-47cd-8256-3ae3ae37ea52",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anne-Florence Bitbol, https://ror.org/02s376052 Ecole Polytechnique Federale de Lausanne (EPFL) Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84662.sa0](https://doi.org/10.7554/eLife.84662.sa0)\n\nThis important study proposes a phenomenologically motivated theoretical framework to explain observed patterns of the temperature dependence of microbial diversity. The methodology is overall convincing. The manuscript should be of interest to microbial ecologists.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Anne-Florence Bitbol, https://ror.org/02s376052 Ecole Polytechnique Federale de Lausanne (EPFL) Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84662.sa1](https://doi.org/10.7554/eLife.84662.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Variation in thermal physiology can drive the temperature-dependence of microbial community richness\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions (for the authors):\n\n1) Please clarify, and spell out in detail, what assumptions and approximations are made in calculations, and at what stages. In the presentation of the mean-field approximation, it should be explicitly said that extra have been made approximations (e.g. when computing the mean of the inverse). Moreover, given these approximations, it is important to clarify when they break down and when they work well, both with explanations and concrete examples.\n\n2) Please clarify the manuscript. In particular, please clearly define each notation and motivate parameter or function choices. Please address all of the reviewers' points to improve this.\n\n3) Please discuss why a consumer-resource model was not chosen and what it might change. Please also discuss the motivation of the temperature dependence of the interaction parameters.\n\nReviewer #1 (Recommendations for the authors):\n\n1) The derivation of the mean field result is not correct. It may hold in some specific conditions that are not properly discussed. The problem is after Eq. (8) of the Methods section. Tacking the average across the N populations does not lead to the following equation for the average stationary population. In fact, denoting by \u2329\u2219\u232a the average, then the mean field consistency equation should read: x\u2217\u00af=\u27e8riaii\u27e9+(N\u22121)aij\u00af\u27e81aii\u27e9x\u2217\u00af but \u27e8riaii\u27e9 \u2260 \u27e8ri\u27e9\u27e8aii\u27e9 and \u27e81aii\u27e9 \u2260 1\u27e8aii\u27e9. Therefore, the mean field result presented in the paper, in general are not correct. In some specific cases, e.g. the random variables aii is sharply peaked around its mean, then it may hold that \u27e8riaii\u27e9 \u2248 \u27e8ri\u27e9\u27e8aii\u27e9 and \u27e81aii\u27e9 \u2248 1\u27e8aii\u27e9.\n\nDecision letter images 1, 2 and 3 show numerically the comparison of \u27e8riaii\u27e9 with \u27e8ri\u27e9\u27e8aii\u27e9 \u2329ariii\u232a with \u2329\u2329ariii\u232a\u232a and of \u27e81aii\u27e9 with 1\u27e8aii\u27e9 for three different cases (mean and variances highlighted as plot label):\n\nSo it is clear that actually, in the log-normal case, that should be the actual distribution from where ri and aii have been drawn, the average of the ratio of the two random variables cannot be substituted with the ratio of the averages.\n\nRelatedly, given the above results, it is not clear to me, how it is possible that the approximation proposed by the authors work so well, for example in Figure 2. Moreover, it is not clear to me how ri, aij and aii are chosen in the numerical simulation of the full GLV. Are they drawn from a LogNormal distribution? Just after Eq. 2 it seems that indeed they are lognormal distributed, but this should be specified better in the Figures and also it is necessary adding information about which parameters have been used. Moreover, how much the goodness of the analytical approximation depends on the specific choices of the parameters? I think that a sensitivity analysis and related discussion on the limitation of the analytical approximations are needed.\n\nIn general, I think that it should have been more appropriate to perform a more advanced mean field approximation, for example following the work \u201cCollapse of resilience patterns in generalized Lotka-Volterra dynamics and beyond\u201d (Tu, C., Grilli, J., Schuessler, F., and Suweis, S. (2017). Physical Review E, 95(6), 062307), from which a similar approximation of the effective average population could be derived. Moreover, using this approximation, it is possible to go beyond purely competitive ecosystems, as it holds also for communities with mutualistic interactions. In fact, the statement that GLV only works for competitive communities is not correct (there are many works using GLV with (also) positive interactions (e.g. Rohr, Rudolf P., Serguei Saavedra, and Jordi Bascompte). \"On the structural stability of mutualistic systems.\" Science 345.6195 (2014): 1253497; Suweis, S., Simini, F., Banavar, J. R., and Maritan, A. (2013). Emergence of structural and dynamical properties of ecological mutualistic networks. Nature, 500(7463), 449-452.).\n\nWhile it is quite clear the physiological dependence of the growth rate on temperature, it is not quite evident why also the interactions strengths should depend on the interactions strengths aij. How the works conclusions would change if only ri depends on time (see also Abreu, C. I., Dal Bello, M., Bunse, C., Pinhassi, J., and Gore, J. (2022). Warmer temperatures favor slower-growing bacteria in natural marine communities. bioRxiv).\n\nThe section The theory holds in dynamically-assembled communities is hard to read, as it lacks of the definition of what is a dynamically-assembled community, how it is mathematically defined and why you also want to explore such a case. Some information must be available in the main text, some other you can refer (but please explicitly put the link) to the Methods section.\n\nReviewer #2 (Recommendations for the authors):\n\nIn their paper Variation in thermal physiology can drive the temperature dependence of microbial community richness, Clegg and Parwar present a relatively simple phenomenological model for explaining the wide variety of empirically observed relationships between temperature and diversity in the microbial world. Previous theories such as the Metabolic theory of biodiversity (MTB) and the metabolic niche hypothesis have emphasized the role of energy through either more efficient cellular kinetics or temperature dependent niches. This paper builds on these works by showing that if one accounts for variation of temperature sensitivity across species, one can get a much richer set of behaviors consistent with empirical observations.\n\nOverall, I find the manuscript quite compelling and the model presented as a very nice summary of how variability in temperature dependence, simple Arrhenius scaling, and arguments based on modern coexistence theory can be combined to explain empirical observations of species abundance distributions and temperature. I find Figures 2 and 3 quite interesting and they have the virtue of resolving a major puzzle in the current literature and proposing concrete mechanistic hypothesis. For all these reasons, I think this manuscript makes an important contribution to the literature and I recommend publishing in eLife.\n\nHowever, I do have some comments and concerns that I think would be helpful for the authors to address.\n\nI feel like the manuscript is too terse and hard to follow. For example, the parameter E is not defined explicitly anywhere in the main text. I would suggest that the incorporating thermal responses of traits (including Equations 13 and 14) be moved to the main text and this discussion greatly expanded. I could not follow what was going on.\n\nI do not understand the physical/ecological motivation for logB0 and E are anti-correlated. Does this follow from theory or empirical fits? How do we know that the experiments from Smith et al. hold more generally?\n\nCurrently, parameters are drawn from a log-normal distribution. This means that it is long-tailed. Do the general trends they hold for non-long tailed distributions. I understand that the ri must be positive, but this can be done by for example, using a truncated Gaussian. If the long tails are essential, could you please explain why the tails matter? The form of \u00afr below Eq. 15 would suggest that the results here may depend very strongly on the long tailed distribution assumption. It would be nice to understand how the phenomenology changes if this is not the case.\n\nI feel like the averages below equation 7 are done sloppily. The agreements with numerics suggest these are small effects but in reality we have that\n\nx\u2217=1N\u2211ixi\u2217=1N\u2211i(riaii\u2212(N\u22121)1N)\u2211ia\u00afIIaiix\u00af\u2217 (1)\n\nNotice that in general that\n\n1N\u2211i(riaii\u2260r\u00afa\u00afii,) (2)\n\nsince this is not how averages work. A similar thing holds for the second term. For this reason, the expressions are not correct even under the MFT assumption. Numerics suggest this does not matter but this approximation should be made more clear.\n\nThe caption for Figure 4 seems to be cut-off.\n\nCan the author please discuss why they think the predictions of Figures 3b,c fail in greater detail?\n\nReviewer #3 (Recommendations for the authors):\n\nI think the paper does make inroads into an important question, and the focus on the temperature-dependence of species interactions does go beyond what has been assumed e.g. in metabolic theory. My main questions are detailed in the public review. Namely:\n\n- To what extent is the mean-field approximation for x* (which I think can be interpreted as an approximation for the inverse of a matrix with entries a_ij) valid for the full range of values of a_ij.\n\nThere is also a long literature on feasibility analyses, going back at least to the `70s (e.g. Goh and Jennings, 1977, Ecological Modeling), and some of this is pertinent e.g. in relating to the authors' results for the probability of feasibility and how this depends on the number of species present. It would be helpful to engage with this literature.\n\n- In general, I do not fully understand the justification for the functional forms of growth rate and interaction rate on temperature. The latter (the way the a_ij are assumed to depend on the temperature) seems particularly difficult to pin down. Is there any clear justification for this form?\n\n- Whatever the temperature dependence, in Lotka-Volterra it seems inevitable that this will be a phenomenological assumption. The way the authors build up in the introduction, I thought they were headed towards a consumer-resource model, maybe even with intracellular dynamics determining the temperature dependence of interactions. This would be the approach e.g. of the Droop model (also going back to the 70s), or e.g. work from a couple of years ago (Muscarella and O'Dwyer, 2020). I am not claiming that we can't drop explicit resources, reduce to Lotka-Volterra, and make progress. But it makes it hard to understand how robust the results are to the authors' assumptions about the way Lotka-Volterra parameters change with environmental context.\n",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d3c4e0e5-6284-47c3-a476-de44925c84a5",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C1",
+      "claim": "Temperature has been recognized as a key driver of geographical gradients in taxonomic richness across practically all organismal groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Starting with the pioneering work of Alexander von Humboldt, who in the 19th century identified temperature as a major environmental driver of plant richness along elevational gradients in the Andes (Humboldt and Bonpland, 2010), temperature has been recognized as a key driver of the geographical gradients in taxonomic richness are seen across practically all organismal groups (Rohde, 1992; Gaston, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Humboldt and Bonpland (2010), Rohde (1992), and Gaston (2000).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "28846da2-0fea-4e14-9189-766c911e8c97",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C2",
+      "claim": "Zhou et al., 2016 found that soil microbe richness increased across a continental temperature gradient in North America.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, while Zhou et al., 2016 found that soil microbe richness increased across a continental temperature gradient in North America, others have found unimodal responses (richness peaking at intermediate temperatures) in soils as well as other environments (Milici et al., 2016; Sharp et al., 2014; Thompson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhou et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "a0435264-d458-4e4e-b57f-a9227942316b",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C3",
+      "claim": "Some studies have found unimodal responses (richness peaking at intermediate temperatures) in soils and other environments.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, while Zhou et al., 2016 found that soil microbe richness increased across a continental temperature gradient in North America, others have found unimodal responses (richness peaking at intermediate temperatures) in soils as well as other environments (Milici et al., 2016; Sharp et al., 2014; Thompson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Milici et al. (2016), Sharp et al. (2014), and Thompson et al. (2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "4f10d995-96d5-4d78-b7de-844998adbcf0",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C4",
+      "claim": "The temperature responses of microbial richness or diversity are 'consistently inconsistent,' with no single pattern in terms of shape or direction dominating.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, as demonstrated in the data synthesis by Hendershot et al., 2017, the temperature responses of microbial richness or diversity are 'consistently inconsistent,' with no single pattern in terms of shape (monotonic or unimodal) or direction (positive or negative) dominating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hendershot et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "409922a8-dc99-41c0-8f33-9294de41b5db",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C5",
+      "claim": "The metabolic theory of biodiversity (MTB) predicts monotonic increases in species richness with temperature due to increasing cellular kinetic energy at higher temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "The first is the metabolic theory of biodiversity (MTB) (Allen et al., 2002), which predicts monotonic increases in species richness with temperature due to increasing cellular kinetic energy at higher temperatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Allen et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "b2ff5251-ba35-49f5-ba52-751172e229df",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C6",
+      "claim": "Arroyo et al., 2022 were able to produce a variety of temperature-diversity responses by including a more complex model of enzyme kinetics allowing for unimodal responses.",
+      "claim_type": "EXPLICIT",
+      "source": "This work was later extended by Arroyo et al., 2022 who were able to produce a variety of temperature-diversity responses by including a more complex model of enzyme kinetics allowing for unimodal responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Arroyo et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "e192054f-8d1e-41e8-ad42-c3b121a25964",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C7",
+      "claim": "The MTB relies on three key assumptions: (1) all populations have the same rate of energy use (energy equivalence), (2) identical temperature dependence across taxa (the 'Universal Temperature Dependence' or 'UTD'), and (3) non-interacting populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The MTB and its newer applications are able to recreate various temperature-diversity patterns but rely on three key assumptions: (1) all populations have the same rate of energy use (energy equivalence), (2) identical temperature dependence across taxa (the 'Universal Temperature Dependence' or 'UTD'), and (3) non-interacting populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the assumptions of MTB.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "0add1f78-4496-4b0b-b625-9f87c1ef3b24",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C8",
+      "claim": "There is some evidence for energy equivalence in phytoplankton communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst there is some evidence for the energy equivalence in phytoplankton communities (Ghedini et al., 2020) its validity remains, to the best of our knowledge, untested in heterotrophic microbes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ghedini et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "bbd3a19e-744b-46b4-aa32-73abd2de7556",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C9",
+      "claim": "The validity of energy equivalence remains untested in heterotrophic microbes.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst there is some evidence for the energy equivalence in phytoplankton communities (Ghedini et al., 2020) its validity remains, to the best of our knowledge, untested in heterotrophic microbes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the lack of testing in heterotrophic microbes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "b299c27d-06d1-4b3a-97a5-64becd5ee170",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C10",
+      "claim": "There is extensive evidence for significant functional variation in thermal sensitivities across the microbial tree of life.",
+      "claim_type": "EXPLICIT",
+      "source": "Support for the other assumptions is weaker and there is now extensive evidence for significant functional variation in thermal sensitivities across the microbial tree of life (Smith et al., 2019; Dell et al., 2011; Kontopoulos et al., 2020) emphasising the fact that the UTD is at best an approximation (Savage, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Smith et al. (2019), Dell et al. (2011), and Kontopoulos et al. (2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "4c49627e-7be6-4510-820e-0ed95c5e08f5",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C11",
+      "claim": "The Universal Temperature Dependence (UTD) is at best an approximation.",
+      "claim_type": "EXPLICIT",
+      "source": "Support for the other assumptions is weaker and there is now extensive evidence for significant functional variation in thermal sensitivities across the microbial tree of life (Smith et al., 2019; Dell et al., 2011; Kontopoulos et al., 2020) emphasising the fact that the UTD is at best an approximation (Savage, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Savage (2004) and inference from evidence of variation in thermal sensitivities.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "9e3947d2-f702-4699-a774-9f0ae004569f",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C12",
+      "claim": "Extensive theoretical and empirical evidence shows that resource-mediated species interactions among microbes are the norm and drive community species dynamics and diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, extensive theoretical and empirical evidence shows that resource-mediated species interactions among microbes are the norm and drive community species dynamics and diversity (Goldford et al., 2018; Marsland et al., 2019; Ratzke et al., 2020; Cook et al., 2021; Lech\u00f3n et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Goldford et al. (2018), Marsland et al. (2019), Ratzke et al. (2020), Cook et al. (2021), and Lech\u00f3n et al. (2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "1e24bcd1-da97-4edc-885e-330dd8129d07",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C13",
+      "claim": "The metabolic niche hypothesis posits that there are more energetically viable ways to make a living at intermediate (non-extreme) temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "A second explanation for temperature-diversity gradients is the metabolic niche hypothesis (Sharp et al., 2014) which posits that there are more energetically viable ways to make a living at intermediate (non-extreme) temperatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sharp et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "a40fdd53-4eb3-46d5-84f1-fe196e15b84d",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C14",
+      "claim": "The metabolic niche hypothesis allows for species coexistence and produces an unimodal temperature-diversity response.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows for species coexistence and in turn produces an unimodal temperature-diversity response (Clarke and Gaston, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Clarke and Gaston (2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "5c469630-6896-4310-aef0-ee71bef4cbab",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C15",
+      "claim": "Marsland et al., 2020 modelled the metabolic niche hypothesis phenomenologically by imposing additional mortality on consumers to represent less-favorable environmental conditions, recovering the expected unimodal patterns of richness.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism was modelled phenomenologically by Marsland et al., 2020 who imposed additional mortality on consumers to represent less-favorable environmental conditions, recovering the expected unimodal patterns of richness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Marsland et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "d6832c28-5841-42b5-b810-6fbac8d14c7e",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C16",
+      "claim": "The metabolic niche hypothesis is unable to explain richness-temperature relationships other than unimodal patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall the metabolic niche hypothesis assumes that the size of the feasible niche space follows a specific pattern over temperature and is thus unable to explain other richness-temperature relationships.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the stated assumptions of the metabolic niche hypothesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "c356b172-5a46-480f-a9d6-a7fd814e336b",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C17",
+      "claim": "The metabolic niche hypothesis is unable to explain how effects arise explicitly from the action of temperature on individual populations and their thermal responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, it is unable to explain how these effects arise explicitly from the action of temperature on individual populations and their thermal responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about limitations of the metabolic niche hypothesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "4770fd42-b3de-41c1-9d44-c954d59b55f1",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C18",
+      "claim": "Variation in thermal responses is ubiquitous across microbial taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "We posit that the variation in thermal responses will in fact be important in determining the responses of microbial community richness to temperature. In addition to its ubiquity (Smith et al., 2019; Smith et al., 2021; Kontopoulos et al., 2020) variations on thermal responses may act in two ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Smith et al. (2019), Smith et al. (2021), and Kontopoulos et al. (2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "c06804f1-6a7b-4307-9b60-4f93c967d4b1",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C19",
+      "claim": "Nonlinear thermal responses of metabolic traits mean that inter-specific variation in thermal sensitivity will likely drive significant changes in realised trait-value distributions and species interactions at different temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the nonlinear thermal responses of metabolic traits means that inter-specific variation in thermal sensitivity will likely drive significant changes in realised trait-value distributions and species interactions at different temperatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the nonlinear nature of thermal responses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "67d37f89-0ef3-4922-961a-a86ebc7feb99",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C20",
+      "claim": "Differences in thermal responses of traits between interacting populations ('physiological mismatches') may have non-trivial effects on microbial community dynamics and coexistence.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, differences in thermal responses of traits between interacting populations ('physiological mismatches') may have non-trivial effects on microbial community dynamics and coexistence (Dell et al., 2014; Bestion et al., 2018; Garc\u00eda et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dell et al. (2014), Bestion et al. (2018), and Garc\u00eda et al. (2023).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "2e2e813f-f394-4e3e-b854-58f343f1872a",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C21",
+      "claim": "Competitive interactions have been shown to have strong effects on coexistence and richness in microbial communities.",
+      "claim_type": "EXPLICIT",
+      "source": "We focus on competitive interactions which have been shown to have string effects on coexistence and richness in microbial communities (Marsland et al., 2019; Goldford et al., 2018; Ratzke et al., 2020; Lech\u00f3n et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Marsland et al. (2019), Goldford et al. (2018), Ratzke et al. (2020), and Lech\u00f3n et al. (2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "aba1dd36-ab61-4756-bb51-636aba1fe52f",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C22",
+      "claim": "Feasibility is a necessary condition for stable population coexistence.",
+      "claim_type": "EXPLICIT",
+      "source": "Feasibility is a necessary condition for stable population coexistence and generally falls as richness increases, placing an upper bound on community size (Goh and Jennings, 1977; Grilli et al., 2017; Dougoud et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Goh and Jennings (1977), Grilli et al. (2017), and Dougoud et al. (2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "5426abcf-dbd7-4ab6-97ba-34be7366e3f3",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C23",
+      "claim": "Feasibility generally falls as richness increases, placing an upper bound on community size.",
+      "claim_type": "EXPLICIT",
+      "source": "Feasibility is a necessary condition for stable population coexistence and generally falls as richness increases, placing an upper bound on community size (Goh and Jennings, 1977; Grilli et al., 2017; Dougoud et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Goh and Jennings (1977), Grilli et al. (2017), and Dougoud et al. (2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "6af6ab7b-2070-4ff1-b6c5-f33452b2ed05",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C27",
+      "claim": "The Boltzmann-Arrhenius equation is a sufficiently accurate model for the temperature dependence of metabolically 'higher-level' traits such as interaction and growth rates.",
+      "claim_type": "EXPLICIT",
+      "source": "The Boltzmann-Arrhenius equation is a sufficiently accurate model for the temperature dependence of metabolically 'higher-level' traits such as interaction and growth rates, because these ultimately emerge from cellular biochemical kinetics (Gillooly et al., 2001; Savage, 2004; Dell et al., 2011; Dell et al., 2014; Arroyo et al., 2022) (see SEC:Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gillooly et al. (2001), Savage (2004), Dell et al. (2011), Dell et al. (2014), and Arroyo et al. (2022).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "6525d7d6-89e4-4bf0-929b-3bb2e72b691a",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C28",
+      "claim": "The empirical validity of Boltzmann for growth rate (r) is now well-established.",
+      "claim_type": "EXPLICIT",
+      "source": "The empirical validity of Boltzmann for r is now well-established (Smith et al., 2019; Kontopoulos et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Smith et al. (2019) and Kontopoulos et al. (2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "b99d524f-47cb-4f6d-a06c-d1bdd92bd9f0",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C30",
+      "claim": "A Boltzmann-Arrhenius (or at least exponential-like) temperature dependence of interaction strength is likely to be a good description because pairwise microbial competitive interactions are ultimately driven by the two species' resource uptake rates.",
+      "claim_type": "EXPLICIT",
+      "source": "We posit that a Boltzmann-Arrhenius (or at least exponential-like) temperature dependence of interaction strength is likely to be a good description, however, because pairwise microbial competitive interactions are ultimately driven by the two species' resource uptake rates, as shown by the derivation of effective interaction strengths in more mechanistic consumer-resource models of microbial communities (Marsland et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference supported by citation to Marsland et al. (2020).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "60be6893-1f42-4c5e-b8a7-ca886fb51954",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C31",
+      "claim": "Uptake rates are known to follow a Boltzmann-Arrhenius form within the OTR.",
+      "claim_type": "EXPLICIT",
+      "source": "As uptake rates are known to follow a Boltzmann-Arrhenius form within the OTR (Smith et al., 2021; Bestion et al., 2018) it follows that the interaction strength may follow this exponential-like form too.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Smith et al. (2021) and Bestion et al. (2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "d5db9911-257c-4d50-b1f9-868d4bfea732",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C32",
+      "claim": "A bivariate normal distribution captures the mean and variance of the thermal dependence of traits across the community, as well as the covariance between them.",
+      "claim_type": "EXPLICIT",
+      "source": "A bivariate normal distribution captures the mean and variance of the thermal dependence of these traits across the community, as well as the covariance between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the properties of the bivariate normal distribution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "43d58c21-15ee-4662-87ef-fcea7f668637",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C38",
+      "claim": "Negative covariance relaxes the bound for unimodal response and reduces the degree of variation needed for a unimodal response.",
+      "claim_type": "EXPLICIT",
+      "source": "As the covariance is expected to be negative this relaxes the bound, and reduce the degree of variation needed for a unimodal response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the mathematical condition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "df060460-d2f6-4f33-872d-f412712e9860",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C41",
+      "claim": "Mean thermal sensitivity of interactions \u27e8a\u27e9 determines the direction and steepness of the temperature-richness relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "(A) Mean thermal sensitivity of interactions \u27e8a\u27e9 determines the direction and steepness of the temperature-richness relationship.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 2A with analytical predictions and numerical simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "e346b32a-abd6-4895-90c8-2a5f91d3c925",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C42",
+      "claim": "Increasing variance of thermal sensitivity increases unimodality in the temperature-richness relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "(B) Increasing variance of thermal sensitivity increases unimodality.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 2B with analytical predictions and numerical simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "ddfc6881-b0f2-4038-9934-d54b6db3b99f",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C44",
+      "claim": "The analytical predictions match the simulated results well.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2 shows that the analytical predictions match the simulated results well and that the changes in richness over temperature respond to changes in the thermal physiology parameters as expected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison between analytical predictions (solid lines) and numerical simulations (dots) in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "acd7c0d7-8aa0-4f9c-837a-e6ff9053af30",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C45",
+      "claim": "The predictions of the theory break down when the assumptions of the mean field approximation are not met, primarily when interactions are strong or their variation is large.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, we expect this will occur when the assumptions of the mean field approximation are not met, primarily when interactions are strong or their variation is large and the coupling between individual populations dominates dynamics (see SEC:Methods for more detail).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the assumptions of the mean field approximation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "83e132e5-66c8-49de-bb9e-aa37050f916b",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C47",
+      "claim": "High average strength of interspecific interactions increases error.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise high average strength of interspecific interactions increases error whilst increasing the average strength of intraspecific interactions decreases error.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 3 sensitivity analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "4b01c983-0bdb-4512-9f55-a568c48e37b5",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C48",
+      "claim": "Increasing the average strength of intraspecific interactions decreases error.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise high average strength of interspecific interactions increases error whilst increasing the average strength of intraspecific interactions decreases error.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 3 sensitivity analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "8b3ad651-d533-4084-83a9-93fd4fe4fbac",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C52",
+      "claim": "Parameterising the theory with empirical values predicts unimodal temperature-richness responses due to the combination of variance and negative covariance.",
+      "claim_type": "EXPLICIT",
+      "source": "Parameterising our theory with these values (using the same thermal response for growth rates and interactions) predicts unimodal temperature-richness responses due to this combination of variance and negative covariance Figure 4E.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 4E with predictions based on empirical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "f9197b6a-c6b3-4974-89d3-68383d9a1479",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C53",
+      "claim": "The response based on the experimental data shows a sharper increase in richness and peaks at a higher temperature of \u223c20\u00b0C than that based on the data-synthesis which peaks at \u223c9\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its larger variance in E as well as stronger negative covariance, the response based on the experimental data shows a sharper increase in richness, and peaks at a higher temperature of \u223c20\u00b0C, than that based on the data-synthesis which has a shallower, broader temperature-richness curve peaking at \u223c9\u00b0C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 4E comparing predictions from two datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "db167afb-2cba-451b-9876-946681136f6a",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C55",
+      "claim": "The unimodal pattern is due to the non-linear temperature dependence of trait variance (Equation 4) and its effects on the community-level traits that determine richness (Equations 5 and 6).",
+      "claim_type": "EXPLICIT",
+      "source": "This is due to the non-linear temperature dependence of trait variance (Equation 4) and its effects on the community-level traits that determine richness (Equations 5 and 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the mathematical derivations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "84bbd71c-2aca-4011-913f-80001218dab6",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C57",
+      "claim": "The negative covariance case is consistent with a thermal generalist-specialist trade-off seen in existing data.",
+      "claim_type": "EXPLICIT",
+      "source": "This negative covariance case is consistent with a thermal generalist-specialist trade-off seen in existing data analysed here; Smith et al., 2019; Smith et al., 2021 and suggests richness should peak towards the higher end of the operational temperature ranges (OTRs) of most mesophilic bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Smith et al. (2019) and Smith et al. (2021) and shown in Figure 4.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "70ffa4c9-af9b-4143-8e06-96c055643b42",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C58",
+      "claim": "The mechanism presented provides an alternate explanation for the existence of temperature diversity patterns based on ecological processes (i.e. competition).",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism we present here provides an alternate explanation for the existence of temperature diversity patterns and is based on ecological processes (i.e. competition).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the nature of the mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "172413ad-3d4e-4d05-b7eb-2c363d046f5c",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C59",
+      "claim": "The model is able to produce richness peaks below the thermal optima of the underlying rates unlike previous explanations which assume declines in richness happen due to a reduction in performance at the population level.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our model is able to produce richness peaks below the thermal optima of the underlying rates unlike the previous explanations which assume declines in richness happen due to a reduction in performance at the population level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with previous theories and inference from the model results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "b797b2a5-a712-41de-84a9-8b17b3e881cb",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C60",
+      "claim": "The peak of richness below the thermal optima of individual population rates is consistent with observations of unimodal temperature-richness relationships which tend to be below estimates of microbial thermal optima.",
+      "claim_type": "EXPLICIT",
+      "source": "This peak of richness below the thermal optima of individual population rates is consistent with observations of unimodal temperature-richness relationships (Milici et al., 2016; Sharp et al., 2014; Thompson et al., 2017) which tend to be below estimates of microbial thermal optima (Smith et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Milici et al. (2016), Sharp et al. (2014), Thompson et al. (2017), and Smith et al. (2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "c9e87f42-5e32-4d73-916d-dd6f21bb2269",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C61",
+      "claim": "The mechanisms proposed are not mutually exclusive with previous explanations and patterns of diversity observed in nature are likely the product of multiple processes acting in unison.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially we would like to stress that these mechanisms are not mutually exclusive and that the patterns of diversity observed in nature are likely the product of multiple processes acting in unison.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the nature of ecological processes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "5f2e6269-0064-437c-83bd-0c661ea6b530",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C62",
+      "claim": "The proposed mechanism will be particularly relevant in communities where system dynamics are driven primarily by species interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall we expect that the mechanism we propose here will be particularly relevant to predicting the temperature-richness relationship in: (i) communities where system dynamics are driven primarily by species interactions (as opposed to scenarios where dynamic assembly and processes such as environmental filtering or neutral processes dominate);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the applicability of the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "ee992df6-2c58-42f4-ba57-79b5347aa777",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C63",
+      "claim": "The proposed mechanism will be particularly relevant in environments where species typically experience temperatures within their OTR.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) environments where species typically experience temperatures within their OTR (arguably the most common scenario on planet Earth);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the applicability of the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "5b35ee7a-c154-4ca2-834c-47f6dc432a91",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C64",
+      "claim": "The proposed mechanism will be particularly relevant at scales where trait TPC distributions are relatively constant across communities and thus independent of the local environment.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) At scales where trait TPC distributions are relatively constant across communities and thus independent of the local environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the applicability of the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "03034c6f-f603-45ef-b68f-2d6ee3009325",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C65",
+      "claim": "At larger scales, processes such as local adaptation are likely to alter TPC distributions as organisms adapt to local temperature regimes.",
+      "claim_type": "EXPLICIT",
+      "source": "At larger scales, we expect that processes such as local adaptation are likely to alter these distributions (Kontopoulos et al., 2018) as organisms adapt to local temperature regimes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation supported by citation to Kontopoulos et al. (2018).",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "e3f02240-088c-4690-983b-8aac3e37691b",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C67",
+      "claim": "The constriction of growth rate variation at \u223c23\u00b0C in the experimental data results in a higher predicted peak of species richness at \u223c23\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "This drives a constriction of growth rate variation at \u223c23\u00b0C in the experimental data, which in turn results in a higher predicted peak of species richness at \u223c23\u00b0C these data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the data analysis and model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "b452c832-0e0b-4051-95ac-fb8bc4d5a6b8",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C68",
+      "claim": "The temperature at which the growth rate variation constricts in the lab dataset is almost identical to the temperature at which those strains were maintained, suggesting a role of species sorting, acclimation or evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the temperature at which the growth rate variation constricts in the lab dataset is almost identical to the temperature at which those strains were maintained, suggesting a role of species sorting, acclimation or evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on the observed pattern in the data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "93698bd7-f133-496c-a529-6e88d133f633",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C69",
+      "claim": "The predicted \u223c9\u00b0C peak in species richness based on the literature-synthesised data is almost identical to that observed by Thompson et al., 2017 from a wide range of environmental samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the predicted \u223c9\u00b0C peak in species richness based on these data is almost identical to that observed by Thompson et al., 2017 from a wide range of environmental samples, which also presumably emerges from a heterogeneous set of taxa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with empirical observations from Thompson et al. (2017).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "5194243e-781e-4014-83e8-14e9e493d1e1",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C70",
+      "claim": "Feasibility is an important limit as only feasible fixed points allow the coexistence of populations within the community.",
+      "claim_type": "EXPLICIT",
+      "source": "We argue that feasibility is an important limit as only feasible fixed points allow the coexistence of populations within the community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the definition of feasibility.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "578d93c9-f32b-46df-baf9-696cf10e33db",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C71",
+      "claim": "Goh and Jennings, 1977 showed the scaling of system size with feasibility in GLV communities based on random parameterisations.",
+      "claim_type": "EXPLICIT",
+      "source": "Feasibility has long been discussed in the literature in this way, going back to Goh and Jennings, 1977 who showed the scaling of system size with feasibility in GLV communities based on random parameterisations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Goh and Jennings (1977).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "ba3d545d-3bb2-4af1-a60f-1ae660d3c36a",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C72",
+      "claim": "Feasible fixed points in the GLV are almost always stable.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, it is worth noting that feasible fixed points in the GLV are almost always stable (Gibbs et al., 2018), suggesting that patterns of stability-constrained richness should follow the same temperature response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gibbs et al. (2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "a1aa2058-d22f-4fd8-b157-9c3c450aa20a",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C73",
+      "claim": "The GLV underlying the theory assumes a physically well-mixed system where spatial structure does not play a role.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that the GLV underlying our theory assumes a physically well-mixed system, that is, the spatial structure does not play a role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the assumptions of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "beef8e93-ae70-45bc-b606-7c833496cf8f",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C74",
+      "claim": "Spatial structure will impact species coexistence, for instance, by localising competitive exclusion to spatial 'pockets.'",
+      "claim_type": "EXPLICIT",
+      "source": "As such, spatial structure will impact species coexistence, for instance, by localising competitive exclusion to spatial 'pockets.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the effects of spatial structure.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "5e6c3b1c-441d-49bc-bbb9-6401ff692445",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C75",
+      "claim": "It has been argued that competitive interactions dominate in microbial communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst it has been argued that competitive interactions dominate in microbial communities (Foster and Bell, 2012) there has more recently been a recognition of the importance of cooperative interactions that develop through cross-feeding between strains on their metabolic-by-products (Goldford et al., 2018; Marsland et al., 2019; Lech\u00f3n et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Foster and Bell (2012), Goldford et al. (2018), Marsland et al. (2019), and Lech\u00f3n et al. (2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "97c82b39-63b2-404d-9444-86b9263b329e",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C76",
+      "claim": "There has been a recognition of the importance of cooperative interactions that develop through cross-feeding between strains on their metabolic-by-products.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst it has been argued that competitive interactions dominate in microbial communities (Foster and Bell, 2012) there has more recently been a recognition of the importance of cooperative interactions that develop through cross-feeding between strains on their metabolic-by-products (Goldford et al., 2018; Marsland et al., 2019; Lech\u00f3n et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Goldford et al. (2018), Marsland et al. (2019), and Lech\u00f3n et al. (2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "27069d35-51a1-4f21-9da7-d3a89d4a56cd",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C77",
+      "claim": "The approach towards determining the temperature dependence of trait distributions could be applied to other models such as microbial consumer-resource models.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach towards determining the temperature dependence of trait distributions could, however, be applied to other models such as the recently-introduced microbial consumer-resource models (Marsland et al., 2019), which would allow explicit characterisation of resource-mediated interactions and thus the higher-order interactions and indirect effects that arise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about future applications supported by citation to Marsland et al. (2019).",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "f9d5d847-c978-4d43-a136-515fffab69e9",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C78",
+      "claim": "The broad effects of distributions of thermal response parameters are expected to have similar effects in consumer-resource models though the exact mapping of trait distributions on to richness may change.",
+      "claim_type": "EXPLICIT",
+      "source": "We do not use this class of models here due to the additional complexity resource dynamics add and the existence of many analytical techniques to study the GLV. However, we would still expect the broad effects of distributions of thermal response parameters to have similar effects (as the thermal responses of traits are independent of the system dynamics) though the exact mapping of trait distributions (and the traits that need to be considered) on to richness may change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the generality of the results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "93d2fba7-044d-476b-8e8f-87294663b4b0",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C79",
+      "claim": "The temperature-richness relationship in microbial communities can be strongly driven by variations in thermal physiology across species.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results provide a compelling theoretical basis and empirical evidence that the temperature-richness relationship in microbial communities can be strongly driven by variations in thermal physiology across species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement based on the theoretical and empirical results presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "21e1016e-6448-4fcd-b233-490f11d53781",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C80",
+      "claim": "Quantifying variation in thermal physiology in local communities is likely to be key to predicting the effects of temperature fluctuations on microbial community diversity across space and time.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst often ignored, quantifying this variation in local communities are likely to be key to predicting the effects of temperature fluctuations on microbial community diversity across space and time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the importance of quantifying variation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "caa0a631-a348-4842-9acb-060ee57aeb01",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C81",
+      "claim": "The mean-field approximation assumes that the community is large such that interactions can be considered in terms of their average value and the effect of any individual interaction is small.",
+      "claim_type": "EXPLICIT",
+      "source": "This approximation assumes that the community we consider is large such that interactions can be considered in terms of their average value and the effect of any individual interaction is small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the assumptions of the mean-field approximation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "8b7d9ec5-dc75-4851-bd8c-a5d0e938bdbb",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C83",
+      "claim": "The mean-field approximation assumes that the covariance term is negligible, which is equivalent to saying that any individual interaction between the focal species and another species' population has a small effect on its biomass abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "It also assumes that the second covariance term is negligible, which is equivalent to saying that any individual interaction between the focal species and another species' population has a small effect on its biomass abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the assumptions of the mean-field approximation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "53e02f29-3134-4fc3-9aa7-0cdff3f909a3",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C84",
+      "claim": "The covariance term will be small as long as the correlation and the variation in interaction strengths are small.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the covariance term will be small as long as the correlation and the variation in interaction strengths are small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the decomposition of covariance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "96a9e09c-f5bd-42a0-9aa5-1dc4c3af3e77",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C85",
+      "claim": "The thermal optima of growth rates of mesophilic prokaryotes in laboratory experiments are typically 5\u201310\u00b0C higher than their (constant) ambient temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the thermal optima of growth rates of mesophilic prokaryotes in laboratory experiments are typically 5\u201310\u00b0C higher than their (constant) ambient temperature Smith et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Smith et al. (2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "1208ec8f-ec35-45fb-a9e3-4f812def80c4",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "claim_id": "C87",
+      "claim": "E distributions tend to be right-skewed.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, E distributions tend to be right-skewed (Kontopoulos et al., 2020; Smith et al., 2019; Dell et al., 2011), but we use the normal distribution here as an adequate approximation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kontopoulos et al. (2020), Smith et al. (2019), and Dell et al. (2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d0bc3643-9697-4596-9ffc-294b5b26e458",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior work has established temperature as a key driver of taxonomic richness across organisms, but microbial communities show inconsistent temperature-richness patterns with no single dominant shape or direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 accurately summarize prior literature on temperature-diversity relationships. The citations provided (Humboldt and Bonpland 2010, Rohde 1992, Gaston 2000, Zhou et al. 2016, Milici et al. 2016, Sharp et al. 2014, Thompson et al. 2017, Hendershot et al. 2017) are appropriate and the characterization of inconsistent microbial patterns is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "cc592b8b-4104-4918-a9d0-402b7ea5bce4",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The metabolic theory of biodiversity (MTB) relies on three key assumptions (energy equivalence, universal temperature dependence, non-interacting populations), but these assumptions have weak empirical support, particularly for heterotrophic microbes where significant variation in thermal sensitivities exists.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C11 provide an accurate critical assessment of MTB assumptions. The citations supporting variation in thermal sensitivities (Smith et al. 2019, Dell et al. 2011, Kontopoulos et al. 2020) and the acknowledgment that energy equivalence remains untested in heterotrophic microbes are appropriately cautious and well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "edd22838-26be-4cc3-bb12-79e9ba180a92",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The metabolic niche hypothesis predicts unimodal temperature-diversity responses but is limited in its ability to explain other patterns and lacks explicit mechanistic links between temperature effects on individual populations and community-level outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 accurately characterize the metabolic niche hypothesis and its limitations. The citations (Sharp et al. 2014, Clarke and Gaston 2006, Marsland et al. 2020) are appropriate, and the critique that this hypothesis cannot explain non-unimodal patterns is logically sound given its assumptions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "a3b4c1cc-ac9f-4856-a798-9f195b6b7c13",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Variation in thermal responses across microbial taxa is ubiquitous and may drive changes in trait distributions and species interactions at different temperatures, with competitive interactions having strong effects on coexistence and richness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 establish the empirical basis for the study's focus on thermal response variation. The citations supporting ubiquity of variation (Smith et al. 2019, 2021, Kontopoulos et al. 2020) and importance of competition (Marsland et al. 2019, Goldford et al. 2018, Ratzke et al. 2020) are appropriate and well-established in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "21554c2e-e58b-467b-9e81-82ebd378b294",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors develop a theoretical framework linking feasibility (a necessary condition for coexistence that decreases with richness) to temperature through Boltzmann-Arrhenius thermal performance curves, using bivariate normal distributions to capture variation in thermal sensitivity and baseline trait values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C32 describe the theoretical foundation appropriately. The use of feasibility as a constraint is well-established (Goh and Jennings 1977, Grilli et al. 2017), and the Boltzmann-Arrhenius framework for growth rates is empirically validated (Smith et al. 2019, Kontopoulos et al. 2020). However, C30-C31 acknowledge that the application to interaction strengths is less empirically validated, which is an appropriate caveat.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "16704c80-164e-45a5-bf88-666f84537794",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The theory predicts that mean thermal sensitivity determines the direction and steepness of temperature-richness relationships, variance in thermal sensitivity increases unimodality, and negative covariance shifts peaks to higher temperatures, with analytical predictions matching numerical simulations well.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C44 present the core theoretical predictions with supporting evidence from Figure 2. The match between analytical predictions and simulations (C44) provides validation of the mathematical framework. The predictions are logically derived from the mathematical model presented in the Methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "6ab4a0b9-3ff3-4cf6-8878-f19859ba0711",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The theory's predictions break down when mean-field approximation assumptions are violated (strong interactions or large variation), with sensitivity analysis showing that high interspecific interaction strength increases error while high intraspecific interaction strength decreases error.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 appropriately characterize the limitations of the mean-field approximation and are supported by the sensitivity analysis in Figure 3. The identification of conditions under which the theory breaks down demonstrates appropriate scientific rigor in assessing model validity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "b2d59f86-b0f5-4597-aef8-3fc1aeb51b32",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Parameterizing the theory with empirical bacterial growth rate data predicts unimodal temperature-richness responses, with experimental data (peaking at ~20\u00b0C) showing sharper responses than literature-synthesized data (peaking at ~9\u00b0C), consistent with a thermal specialist-generalist trade-off and matching observed patterns from Thompson et al. 2017.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C69 present the empirical validation using two datasets (Smith et al. 2019, 2021) shown in Figure 4. The predictions of unimodal responses and the match with Thompson et al. 2017 observations provide empirical support. However, the interpretation of differences between datasets (C67-C68) involves speculation about species sorting, acclimation, or evolution that requires further testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "d38890ae-798d-4fb7-bed3-b2d986b72637",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The mechanism produces unimodal patterns through non-linear temperature dependence of trait variance affecting community-level traits, providing an ecological (competition-based) explanation that can generate richness peaks below thermal optima of individual rates, consistent with empirical observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C60 describe the mechanistic insights from the model. The ability to produce peaks below thermal optima (C59-C60) is a novel prediction that distinguishes this work from prior theories and is consistent with empirical observations (Milici et al. 2016, Sharp et al. 2014, Thompson et al. 2017, Smith et al. 2019).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "451c9dcc-5069-40cf-8b50-d9c0c0808e9d",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The proposed mechanism is not mutually exclusive with previous explanations and is expected to be most relevant in interaction-driven communities within operational temperature ranges at scales where trait distributions are relatively constant, with local adaptation potentially altering distributions at larger scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 appropriately contextualize the scope and limitations of the theory. The acknowledgment that multiple mechanisms may act together (C61) and the specification of conditions where the mechanism is most relevant (C62-C64) demonstrate appropriate scientific caution. The speculation about local adaptation (C65) is appropriately framed as expectation requiring further work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "2f93294b-46f7-45e6-b32e-9f428ccc4546",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model uses feasibility as the main constraint on richness in the GLV framework, which assumes well-mixed systems without spatial structure, though spatial structure could localize competitive exclusion and feasible points are almost always stable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C74 appropriately discuss the choice of feasibility as a constraint and model assumptions. The citations supporting feasibility-richness relationships (Goh and Jennings 1977) and stability of feasible points (Gibbs et al. 2018) are appropriate. The acknowledgment of spatial structure limitations (C73-C74) is an important caveat.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "2e528080-90af-43ef-bc6f-b42e5327751d",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "While the model focuses on competitive interactions, cooperative interactions through cross-feeding are increasingly recognized as important, and the approach could be extended to consumer-resource models to capture resource-mediated interactions, though the broad effects of thermal response distributions are expected to be similar.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C78 appropriately acknowledge the limitation of focusing only on competition and discuss potential extensions. The citations supporting the importance of cooperation (Foster and Bell 2012, Goldford et al. 2018, Marsland et al. 2019) are appropriate, and the speculation about applicability to other models (C77-C78) is appropriately framed as expectation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "35f4a07a-7182-481b-8ed2-e54bfb43860e",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The results provide theoretical and empirical evidence that temperature-richness relationships in microbial communities can be strongly driven by variations in thermal physiology across species, suggesting that quantifying this variation is key to predicting effects of temperature fluctuations on diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 appropriately summarize the main conclusions. The theoretical framework is mathematically sound, matches simulations well (Figure 2), and predictions using empirical data (Figure 4) are consistent with observed patterns. However, C80's claim about being 'key' to predictions is somewhat speculative and would benefit from direct empirical validation in natural communities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    },
+    {
+      "id": "752cc674-67aa-4eb7-87db-d664bd38bf3d",
+      "content_id": "f0709340-4f3f-4c6c-8f20-035e733dc598",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The mean-field approximation assumes large communities where individual interactions have small effects and covariance terms are negligible, which holds when correlation and variation in interaction strengths are small, and the Boltzmann-Arrhenius framework is appropriate within the operational temperature range where prokaryotes typically operate 5-10\u00b0C below their thermal optima.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C87 describe methodological assumptions and justifications. The mean-field approximation assumptions (C81-C84) are clearly stated and their validity conditions are specified. The justification for using Boltzmann-Arrhenius within the OTR (C85) is supported by Smith et al. 2019. The acknowledgment that E distributions are right-skewed but approximated as normal (C87) is an appropriate simplification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:55:23.604547Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d3c4e0e5-6284-47c3-a476-de44925c84a5",
+      "result_id": "d0bc3643-9697-4596-9ffc-294b5b26e458"
+    },
+    {
+      "claim_id": "28846da2-0fea-4e14-9189-766c911e8c97",
+      "result_id": "d0bc3643-9697-4596-9ffc-294b5b26e458"
+    },
+    {
+      "claim_id": "a0435264-d458-4e4e-b57f-a9227942316b",
+      "result_id": "d0bc3643-9697-4596-9ffc-294b5b26e458"
+    },
+    {
+      "claim_id": "4f10d995-96d5-4d78-b7de-844998adbcf0",
+      "result_id": "d0bc3643-9697-4596-9ffc-294b5b26e458"
+    },
+    {
+      "claim_id": "409922a8-dc99-41c0-8f33-9294de41b5db",
+      "result_id": "cc592b8b-4104-4918-a9d0-402b7ea5bce4"
+    },
+    {
+      "claim_id": "b2ff5251-ba35-49f5-ba52-751172e229df",
+      "result_id": "cc592b8b-4104-4918-a9d0-402b7ea5bce4"
+    },
+    {
+      "claim_id": "e192054f-8d1e-41e8-ad42-c3b121a25964",
+      "result_id": "cc592b8b-4104-4918-a9d0-402b7ea5bce4"
+    },
+    {
+      "claim_id": "0add1f78-4496-4b0b-b625-9f87c1ef3b24",
+      "result_id": "cc592b8b-4104-4918-a9d0-402b7ea5bce4"
+    },
+    {
+      "claim_id": "bbd3a19e-744b-46b4-aa32-73abd2de7556",
+      "result_id": "cc592b8b-4104-4918-a9d0-402b7ea5bce4"
+    },
+    {
+      "claim_id": "b299c27d-06d1-4b3a-97a5-64becd5ee170",
+      "result_id": "cc592b8b-4104-4918-a9d0-402b7ea5bce4"
+    },
+    {
+      "claim_id": "4c49627e-7be6-4510-820e-0ed95c5e08f5",
+      "result_id": "cc592b8b-4104-4918-a9d0-402b7ea5bce4"
+    },
+    {
+      "claim_id": "9e3947d2-f702-4699-a774-9f0ae004569f",
+      "result_id": "edd22838-26be-4cc3-bb12-79e9ba180a92"
+    },
+    {
+      "claim_id": "1e24bcd1-da97-4edc-885e-330dd8129d07",
+      "result_id": "edd22838-26be-4cc3-bb12-79e9ba180a92"
+    },
+    {
+      "claim_id": "a40fdd53-4eb3-46d5-84f1-fe196e15b84d",
+      "result_id": "edd22838-26be-4cc3-bb12-79e9ba180a92"
+    },
+    {
+      "claim_id": "5c469630-6896-4310-aef0-ee71bef4cbab",
+      "result_id": "edd22838-26be-4cc3-bb12-79e9ba180a92"
+    },
+    {
+      "claim_id": "d6832c28-5841-42b5-b810-6fbac8d14c7e",
+      "result_id": "edd22838-26be-4cc3-bb12-79e9ba180a92"
+    },
+    {
+      "claim_id": "c356b172-5a46-480f-a9d6-a7fd814e336b",
+      "result_id": "edd22838-26be-4cc3-bb12-79e9ba180a92"
+    },
+    {
+      "claim_id": "4770fd42-b3de-41c1-9d44-c954d59b55f1",
+      "result_id": "a3b4c1cc-ac9f-4856-a798-9f195b6b7c13"
+    },
+    {
+      "claim_id": "c06804f1-6a7b-4307-9b60-4f93c967d4b1",
+      "result_id": "a3b4c1cc-ac9f-4856-a798-9f195b6b7c13"
+    },
+    {
+      "claim_id": "67d37f89-0ef3-4922-961a-a86ebc7feb99",
+      "result_id": "a3b4c1cc-ac9f-4856-a798-9f195b6b7c13"
+    },
+    {
+      "claim_id": "2e2e813f-f394-4e3e-b854-58f343f1872a",
+      "result_id": "a3b4c1cc-ac9f-4856-a798-9f195b6b7c13"
+    },
+    {
+      "claim_id": "aba1dd36-ab61-4756-bb51-636aba1fe52f",
+      "result_id": "21554c2e-e58b-467b-9e81-82ebd378b294"
+    },
+    {
+      "claim_id": "5426abcf-dbd7-4ab6-97ba-34be7366e3f3",
+      "result_id": "21554c2e-e58b-467b-9e81-82ebd378b294"
+    },
+    {
+      "claim_id": "6af6ab7b-2070-4ff1-b6c5-f33452b2ed05",
+      "result_id": "21554c2e-e58b-467b-9e81-82ebd378b294"
+    },
+    {
+      "claim_id": "6525d7d6-89e4-4bf0-929b-3bb2e72b691a",
+      "result_id": "21554c2e-e58b-467b-9e81-82ebd378b294"
+    },
+    {
+      "claim_id": "b99d524f-47cb-4f6d-a06c-d1bdd92bd9f0",
+      "result_id": "21554c2e-e58b-467b-9e81-82ebd378b294"
+    },
+    {
+      "claim_id": "60be6893-1f42-4c5e-b8a7-ca886fb51954",
+      "result_id": "21554c2e-e58b-467b-9e81-82ebd378b294"
+    },
+    {
+      "claim_id": "d5db9911-257c-4d50-b1f9-868d4bfea732",
+      "result_id": "21554c2e-e58b-467b-9e81-82ebd378b294"
+    },
+    {
+      "claim_id": "43d58c21-15ee-4662-87ef-fcea7f668637",
+      "result_id": "16704c80-164e-45a5-bf88-666f84537794"
+    },
+    {
+      "claim_id": "df060460-d2f6-4f33-872d-f412712e9860",
+      "result_id": "16704c80-164e-45a5-bf88-666f84537794"
+    },
+    {
+      "claim_id": "e346b32a-abd6-4895-90c8-2a5f91d3c925",
+      "result_id": "16704c80-164e-45a5-bf88-666f84537794"
+    },
+    {
+      "claim_id": "ddfc6881-b0f2-4038-9934-d54b6db3b99f",
+      "result_id": "16704c80-164e-45a5-bf88-666f84537794"
+    },
+    {
+      "claim_id": "acd7c0d7-8aa0-4f9c-837a-e6ff9053af30",
+      "result_id": "6ab4a0b9-3ff3-4cf6-8878-f19859ba0711"
+    },
+    {
+      "claim_id": "83e132e5-66c8-49de-bb9e-aa37050f916b",
+      "result_id": "6ab4a0b9-3ff3-4cf6-8878-f19859ba0711"
+    },
+    {
+      "claim_id": "4b01c983-0bdb-4512-9f55-a568c48e37b5",
+      "result_id": "6ab4a0b9-3ff3-4cf6-8878-f19859ba0711"
+    },
+    {
+      "claim_id": "8b3ad651-d533-4084-83a9-93fd4fe4fbac",
+      "result_id": "b2d59f86-b0f5-4597-aef8-3fc1aeb51b32"
+    },
+    {
+      "claim_id": "f9197b6a-c6b3-4974-89d3-68383d9a1479",
+      "result_id": "b2d59f86-b0f5-4597-aef8-3fc1aeb51b32"
+    },
+    {
+      "claim_id": "84bbd71c-2aca-4011-913f-80001218dab6",
+      "result_id": "b2d59f86-b0f5-4597-aef8-3fc1aeb51b32"
+    },
+    {
+      "claim_id": "e3f02240-088c-4690-983b-8aac3e37691b",
+      "result_id": "b2d59f86-b0f5-4597-aef8-3fc1aeb51b32"
+    },
+    {
+      "claim_id": "b452c832-0e0b-4051-95ac-fb8bc4d5a6b8",
+      "result_id": "b2d59f86-b0f5-4597-aef8-3fc1aeb51b32"
+    },
+    {
+      "claim_id": "93698bd7-f133-496c-a529-6e88d133f633",
+      "result_id": "b2d59f86-b0f5-4597-aef8-3fc1aeb51b32"
+    },
+    {
+      "claim_id": "db167afb-2cba-451b-9876-946681136f6a",
+      "result_id": "d38890ae-798d-4fb7-bed3-b2d986b72637"
+    },
+    {
+      "claim_id": "70ffa4c9-af9b-4143-8e06-96c055643b42",
+      "result_id": "d38890ae-798d-4fb7-bed3-b2d986b72637"
+    },
+    {
+      "claim_id": "172413ad-3d4e-4d05-b7eb-2c363d046f5c",
+      "result_id": "d38890ae-798d-4fb7-bed3-b2d986b72637"
+    },
+    {
+      "claim_id": "b797b2a5-a712-41de-84a9-8b17b3e881cb",
+      "result_id": "d38890ae-798d-4fb7-bed3-b2d986b72637"
+    },
+    {
+      "claim_id": "c9e87f42-5e32-4d73-916d-dd6f21bb2269",
+      "result_id": "451c9dcc-5069-40cf-8b50-d9c0c0808e9d"
+    },
+    {
+      "claim_id": "5f2e6269-0064-437c-83bd-0c661ea6b530",
+      "result_id": "451c9dcc-5069-40cf-8b50-d9c0c0808e9d"
+    },
+    {
+      "claim_id": "ee992df6-2c58-42f4-ba57-79b5347aa777",
+      "result_id": "451c9dcc-5069-40cf-8b50-d9c0c0808e9d"
+    },
+    {
+      "claim_id": "5b35ee7a-c154-4ca2-834c-47f6dc432a91",
+      "result_id": "451c9dcc-5069-40cf-8b50-d9c0c0808e9d"
+    },
+    {
+      "claim_id": "03034c6f-f603-45ef-b68f-2d6ee3009325",
+      "result_id": "451c9dcc-5069-40cf-8b50-d9c0c0808e9d"
+    },
+    {
+      "claim_id": "5194243e-781e-4014-83e8-14e9e493d1e1",
+      "result_id": "2f93294b-46f7-45e6-b32e-9f428ccc4546"
+    },
+    {
+      "claim_id": "578d93c9-f32b-46df-baf9-696cf10e33db",
+      "result_id": "2f93294b-46f7-45e6-b32e-9f428ccc4546"
+    },
+    {
+      "claim_id": "ba3d545d-3bb2-4af1-a60f-1ae660d3c36a",
+      "result_id": "2f93294b-46f7-45e6-b32e-9f428ccc4546"
+    },
+    {
+      "claim_id": "a1aa2058-d22f-4fd8-b157-9c3c450aa20a",
+      "result_id": "2f93294b-46f7-45e6-b32e-9f428ccc4546"
+    },
+    {
+      "claim_id": "beef8e93-ae70-45bc-b606-7c833496cf8f",
+      "result_id": "2f93294b-46f7-45e6-b32e-9f428ccc4546"
+    },
+    {
+      "claim_id": "5e6c3b1c-441d-49bc-bbb9-6401ff692445",
+      "result_id": "2e528080-90af-43ef-bc6f-b42e5327751d"
+    },
+    {
+      "claim_id": "97c82b39-63b2-404d-9444-86b9263b329e",
+      "result_id": "2e528080-90af-43ef-bc6f-b42e5327751d"
+    },
+    {
+      "claim_id": "27069d35-51a1-4f21-9da7-d3a89d4a56cd",
+      "result_id": "2e528080-90af-43ef-bc6f-b42e5327751d"
+    },
+    {
+      "claim_id": "f9d5d847-c978-4d43-a136-515fffab69e9",
+      "result_id": "2e528080-90af-43ef-bc6f-b42e5327751d"
+    },
+    {
+      "claim_id": "93d2fba7-044d-476b-8e8f-87294663b4b0",
+      "result_id": "35f4a07a-7182-481b-8ed2-e54bfb43860e"
+    },
+    {
+      "claim_id": "21e1016e-6448-4fcd-b233-490f11d53781",
+      "result_id": "35f4a07a-7182-481b-8ed2-e54bfb43860e"
+    },
+    {
+      "claim_id": "caa0a631-a348-4842-9acb-060ee57aeb01",
+      "result_id": "752cc674-67aa-4eb7-87db-d664bd38bf3d"
+    },
+    {
+      "claim_id": "8b7d9ec5-dc75-4851-bd8c-a5d0e938bdbb",
+      "result_id": "752cc674-67aa-4eb7-87db-d664bd38bf3d"
+    },
+    {
+      "claim_id": "53e02f29-3134-4fc3-9aa7-0cdff3f909a3",
+      "result_id": "752cc674-67aa-4eb7-87db-d664bd38bf3d"
+    },
+    {
+      "claim_id": "96a9e09c-f5bd-42a0-9aa5-1dc4c3af3e77",
+      "result_id": "752cc674-67aa-4eb7-87db-d664bd38bf3d"
+    },
+    {
+      "claim_id": "1208ec8f-ec35-45fb-a9e3-4f812def80c4",
+      "result_id": "752cc674-67aa-4eb7-87db-d664bd38bf3d"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,2438 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Intracortical brain computer interfaces (iBCIs) transform neural activity into control signals capable of restoring movement to persons with paralysis.",
+    "claim_type": "EXPLICIT",
+    "source": "Existing intracortical brain computer interfaces (iBCIs) transform neural activity into control signals capable of restoring movement to persons with paralysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of established capability of iBCIs, representing general knowledge in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "The accuracy of the iBCI decoder typically degrades over time due to turnover of recorded neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the accuracy of the 'decoder' at the heart of the iBCI typically degrades over time due to turnover of recorded neurons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a known problem in the iBCI field, supported by established knowledge and citations throughout the manuscript.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Decoders can be recalibrated to compensate for decoder degradation, but this requires the user to spend extra time and effort to provide the necessary data, then learn the new dynamics.",
+    "claim_type": "EXPLICIT",
+    "source": "To compensate, decoders can be recalibrated, but this requires the user to spend extra time and effort to provide the necessary data, then learn the new dynamics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a known limitation of recalibration approaches, based on established understanding of iBCI systems.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "As the recorded neurons change, one can think of the underlying movement intent signal being expressed in changing coordinates.",
+    "claim_type": "EXPLICIT",
+    "source": "As the recorded neurons change, one can think of the underlying movement intent signal being expressed in changing coordinates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conceptual framework proposed by the authors to explain neural turnover.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "If a mapping can be computed between the different coordinate systems, it may be possible to stabilize the original decoder's mapping from brain to behavior without recalibration.",
+    "claim_type": "EXPLICIT",
+    "source": "If a mapping can be computed between the different coordinate systems, it may be possible to stabilize the original decoder's mapping from brain to behavior without recalibration.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a hypothesis proposed by the authors about a potential solution.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "The authors previously proposed a method based on Generalized Adversarial Networks (GANs), called 'Adversarial Domain Adaptation Network' (ADAN), which aligns the distributions of latent signals within underlying low-dimensional neural manifolds.",
+    "claim_type": "EXPLICIT",
+    "source": "We previously proposed a method based on Generalized Adversarial Networks (GANs), called 'Adversarial Domain Adaptation Network' (ADAN), which aligns the distributions of latent signals within underlying low-dimensional neural manifolds.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This refers to the authors' prior work, which is cited elsewhere in the manuscript.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "ADAN was tested on only a very limited dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "However, we tested ADAN on only a very limited dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the limitations of prior work by the authors.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "The authors propose a method based on Cycle-Consistent Adversarial Networks (Cycle-GAN), which aligns the distributions of the full-dimensional neural recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "Here we propose a method based on Cycle-Consistent Adversarial Networks (Cycle-GAN), which aligns the distributions of the full-dimensional neural recordings.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the new method proposed in this study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "The authors tested both Cycle-GAN and ADAN on data from multiple monkeys and behaviors.",
+    "claim_type": "EXPLICIT",
+    "source": "We tested both Cycle-GAN and ADAN on data from multiple monkeys and behaviors and compared them to a third, quite different method based on Procrustes alignment of axes provided by Factor Analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design of the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "All three methods (Cycle-GAN, ADAN, and PAF) are unsupervised and require little data, making them practical in real life.",
+    "claim_type": "EXPLICIT",
+    "source": "All three methods are unsupervised and require little data, making them practical in real life.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the properties of the methods, supported by data presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Overall, Cycle-GAN had the best performance and was easier to train and more robust than ADAN, making it ideal for stabilizing iBCI systems over time.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, Cycle-GAN had the best performance and was easier to train and more robust than ADAN, making it ideal for stabilizing iBCI systems over time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the main conclusion of the study, supported by experimental data presented throughout the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "The relative micromotion between the electrode tip and the brain tissue could contribute to instabilities in neural recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "The relative micromotion between the electrode tip and the brain tissue (Sussillo et al., 2016b), the changes of regional extracellular environment (Perge et al., 2013), or even the active and inactive state shifts of neurons (Volgushev et al., 2006) could contribute to such instabilities, resulting in the turnover of signals picked by the chronically implanted electrodes on a time scale of days or even a few hours (Downey et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior research.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Changes of regional extracellular environment could contribute to instabilities in neural recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "The relative micromotion between the electrode tip and the brain tissue (Sussillo et al., 2016b), the changes of regional extracellular environment (Perge et al., 2013), or even the active and inactive state shifts of neurons (Volgushev et al., 2006) could contribute to such instabilities, resulting in the turnover of signals picked by the chronically implanted electrodes on a time scale of days or even a few hours (Downey et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior research.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Active and inactive state shifts of neurons could contribute to instabilities in neural recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "The relative micromotion between the electrode tip and the brain tissue (Sussillo et al., 2016b), the changes of regional extracellular environment (Perge et al., 2013), or even the active and inactive state shifts of neurons (Volgushev et al., 2006) could contribute to such instabilities, resulting in the turnover of signals picked by the chronically implanted electrodes on a time scale of days or even a few hours (Downey et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior research.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Neural instabilities result in the turnover of signals picked by chronically implanted electrodes on a time scale of days or even a few hours.",
+    "claim_type": "EXPLICIT",
+    "source": "The relative micromotion between the electrode tip and the brain tissue (Sussillo et al., 2016b), the changes of regional extracellular environment (Perge et al., 2013), or even the active and inactive state shifts of neurons (Volgushev et al., 2006) could contribute to such instabilities, resulting in the turnover of signals picked by the chronically implanted electrodes on a time scale of days or even a few hours (Downey et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior research.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Given changes in neural recordings, a decoder could produce inaccurate predictions of the user's intent leading to degraded iBCI performance.",
+    "claim_type": "EXPLICIT",
+    "source": "Given these changes, a decoder could produce inaccurate predictions of the user's intent leading to the degraded iBCI performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference from the instability of neural recordings.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "A disadvantage of decoder recalibration is that during recalibration, normal use would be interrupted.",
+    "claim_type": "EXPLICIT",
+    "source": "A disadvantage of this strategy is that during recalibration, normal use would be interrupted.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a known limitation of recalibration approaches.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "The recalibration process likely means the user would need to learn the dynamics of the new decoder, imposing additional time and cognitive burden.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, the recalibration process likely means the user would need to learn the dynamics of the new decoder, imposing additional time and cognitive burden.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the consequences of recalibration.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "For persons with paralysis to live more independently, an ideal iBCI would accommodate the gradual drift in neural recordings without supervision, thereby minimizing the need to periodically learn new decoders.",
+    "claim_type": "EXPLICIT",
+    "source": "For persons with paralysis to live more independently, an ideal iBCI would accommodate the gradual drift in neural recordings without supervision, thereby minimizing the need to periodically learn new decoders.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the desired properties of an ideal iBCI system.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "For the performance of the initial 'day-0' decoder to be maintained, an additional component, an 'input stabilizer', would need to be added to transform the neural recordings made on a later day ('day-k') such that they take on the statistics of the day-0 recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "For the performance of the initial 'day-0' decoder to be maintained, an additional component, an \"input stabilizer\", would need to be added to transform the neural recordings made on a later day ('day-k') such that they take on the statistics of the day-0 recordings.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a proposed solution based on the authors' reasoning.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "There has been a great deal of interest in the concept of a low-dimensional neural manifold embedded within the neural space that is defined by the full set of recorded neurons, and the 'latent signals' that can be computed in it.",
+    "claim_type": "EXPLICIT",
+    "source": "Recently there has been a great deal of interest in the concept of a low-dimensional neural manifold embedded within the neural space that is defined by the full set of recorded neurons, and the 'latent signals' that can be computed in it (Gallego et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about trends in the field, supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "A previous paper from the authors' group demonstrated that by aligning the day-k and day-0 latent signals using canonical correlation analysis (CCA), the performance of a fixed day-0 decoder could be maintained over months and even years, despite turnover of the neural recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "A previous paper from our group demonstrated that by aligning the day-k and day-0 latent signals using canonical correlation analysis (CCA), the performance of a fixed day-0 decoder could be maintained over months and even years, despite turnover of the neural recordings.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This refers to prior work by the authors' group.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "CCA has a couple significant limitations.",
+    "claim_type": "EXPLICIT",
+    "source": "Unfortunately, CCA has a couple significant limitations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the limitations of CCA, which are then elaborated.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "CCA is a linear process, not able to account for the nonlinear mappings that have been demonstrated between high-dimensional neural recordings and their low-dimensional manifolds.",
+    "claim_type": "EXPLICIT",
+    "source": "For one, it is a linear process, not able to account for the nonlinear mappings that have been demonstrated between high-dimensional neural recordings and their low-dimensional manifolds (Altan et al., 2021; Naufel et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a known property of CCA, and the existence of nonlinear mappings is supported by citations.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The use of CCA in a real-life scenario would be cumbersome.",
+    "claim_type": "EXPLICIT",
+    "source": "Also, its use in a real-life scenario would be cumbersome.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assessment by the authors, which is then explained.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "CCA can be thought of as rotating two sets of neural signals 'spatially' to achieve optimal overlap (and thus temporal correlation).",
+    "claim_type": "EXPLICIT",
+    "source": "This application of CCA can be thought of as rotating two sets of neural signals 'spatially' to achieve optimal overlap (and thus temporal correlation).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conceptual explanation of how CCA works.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "CCA requires cropping or resampling the single-trial data of behaviors on day-0 and day-k such that the paired trials correspond to the same behavior and contain the same number of timepoints, start condition, and end condition.",
+    "claim_type": "EXPLICIT",
+    "source": "To do so requires cropping or resampling the single-trial data of behaviors on day-0 and day-k such that the paired trials correspond to the same behavior and contain the same number of timepoints, start condition, and end condition.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a requirement of CCA based on how the method works.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Without trial-alignment, no amount of spatial rotation will achieve a correlation between the neural signals.",
+    "claim_type": "EXPLICIT",
+    "source": "Without trial-alignment, no amount of spatial rotation will achieve a correlation between the neural signals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical consequence of how CCA operates.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Motor behaviors in daily life are typically not well structured, with well-defined onsets and offsets, making trial alignment difficult, if not impossible.",
+    "claim_type": "EXPLICIT",
+    "source": "However, motor behaviors in daily life are typically not well structured, with well-defined onsets and offsets, making trial alignment difficult, if not impossible.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the nature of real-world motor behaviors.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Where CCA has been used successfully, it has been with highly stereotypic behaviors with distinct trial structure.",
+    "claim_type": "EXPLICIT",
+    "source": "Where this method has been used successfully, it has been with highly stereotypic behaviors with distinct trial structure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation about the conditions under which CCA has been successful.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Another recently published linear method for decoder stabilization uses a Procrustes-based alignment on low-dimensional manifolds obtained from the neural activity using Factor Analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "Another recently published linear method for decoder stabilization uses a Procrustes-based (Gower and Dijksterhuis, 2004) alignment on low-dimensional manifolds obtained from the neural activity using Factor Analysis (Degenhart et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a method from the literature, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "PAF successfully stabilized online iBCI cursor control with a fixed decoder.",
+    "claim_type": "EXPLICIT",
+    "source": "This approach, which we will refer to as 'Procrustes Alignment of Factors' (PAF), successfully stabilized online iBCI cursor control with a fixed decoder.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the performance of PAF from prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Trial alignment is not needed for PAF, as it aligns the coordinate axes for the manifolds directly.",
+    "claim_type": "EXPLICIT",
+    "source": "Trial alignment is not needed for PAF, as it aligns the coordinate axes for the manifolds directly.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a property of the PAF method.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "PAF requires a subset of the coordinate axes in which the manifold is embedded (the neural recording channels) to be unchanged between days 0 and k.",
+    "claim_type": "EXPLICIT",
+    "source": "However, it does require a subset of the coordinate axes in which the manifold is embedded (the neural recording channels) to be unchanged between days 0 and k.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of the PAF method.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The use of a Procrustes-based transformation means that PAF cannot correct for nonlinear changes in the neural manifold across days.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, the use of a Procrustes-based transformation means that this strategy cannot correct for nonlinear changes in the neural manifold across days.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical consequence of the linear nature of Procrustes transformations.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The authors view changes in neural recordings as arbitrary shifts in the distribution of population firing rates.",
+    "claim_type": "EXPLICIT",
+    "source": "In another approach to decoder stabilization, we view changes in neural recordings as arbitrary shifts in the distribution of population firing rates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conceptual framework adopted by the authors.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "From the perspective of viewing changes as distribution shifts, the reason for poor cross-day performance of decoders is clear: a decoder that is trained only on observations from a given distribution (e.g. those of 'day-0') won't perform well on data from other distributions (i.e. 'day-k').",
+    "claim_type": "EXPLICIT",
+    "source": "From this perspective, the reason for poor cross-day performance of decoders is clear: a decoder that is trained only on observations from a given distribution (e.g. those of 'day-0') won't perform well on data from other distributions (i.e. 'day-k').",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference from the distribution shift perspective.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "A machine learning approach termed 'domain adaptation' has been used to cope with distribution mismatches by learning a transformation that minimizes the difference between the transformed distributions.",
+    "claim_type": "EXPLICIT",
+    "source": "A machine learning approach termed 'domain adaptation' has been used to cope with such distribution mismatches by learning a transformation that minimizes the difference between the transformed distributions; this permits a model trained on one distribution to generalize to another (Farahani et al., 2021; Pan et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a machine learning approach, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Domain adaptation permits a model trained on one distribution to generalize to another.",
+    "claim_type": "EXPLICIT",
+    "source": "A machine learning approach termed 'domain adaptation' has been used to cope with such distribution mismatches by learning a transformation that minimizes the difference between the transformed distributions; this permits a model trained on one distribution to generalize to another (Farahani et al., 2021; Pan et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the purpose of domain adaptation, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Domain adaptation can be implemented with Generative Adversarial Networks (GANs).",
+    "claim_type": "EXPLICIT",
+    "source": "Domain adaptation can be implemented with Generative Adversarial Networks (GANs; Goodfellow et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about how domain adaptation can be implemented, supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "GANs use two networks \u2013 a generator trained to transform a source distribution into a target distribution, and a discriminator trained to do the opposite: determine whether a given distribution is real or synthesized by the generator.",
+    "claim_type": "EXPLICIT",
+    "source": "GANs use two networks \u2013 a generator trained to transform a source distribution into a target distribution, and a discriminator trained to do the opposite: determine whether a given distribution is real or synthesized by the generator.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the architecture of GANs, which is established knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The adversarial nature of the generator and discriminator enables the model to be trained in an unsupervised manner.",
+    "claim_type": "EXPLICIT",
+    "source": "The adversarial nature of the generator and discriminator enables the model to be trained in an unsupervised manner (Ganin and Lempitsky, 2015; Tzeng et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a property of GANs, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "GAN-based domain adaptation has been applied to computer vision problems, like adapting a classifier trained to recognize the digits of one style for use in recognizing those of another style.",
+    "claim_type": "EXPLICIT",
+    "source": "GAN-based domain adaptation has been applied to computer vision problems, like adapting a classifier trained to recognize the digits of one style for use in recognizing those of another style (Tzeng et al., 2017), or translating images in the style of one domain to another (e.g. colorizing black-and-white photos, Isola et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes applications of GANs in computer vision, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "GAN-based domain adaptation has been applied to translating images in the style of one domain to another (e.g. colorizing black-and-white photos).",
+    "claim_type": "EXPLICIT",
+    "source": "GAN-based domain adaptation has been applied to computer vision problems, like adapting a classifier trained to recognize the digits of one style for use in recognizing those of another style (Tzeng et al., 2017), or translating images in the style of one domain to another (e.g. colorizing black-and-white photos, Isola et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes applications of GANs in computer vision, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The authors recently developed an approach named Adversarial Domain Adaptation Network (ADAN) that used a GAN to perform domain adaptation to enable a fixed day-0 iBCI decoder to work accurately on input signals recorded on day-k.",
+    "claim_type": "EXPLICIT",
+    "source": "We recently developed an approach we named Adversarial Domain Adaptation Network (ADAN; Farshchian et al., 2018), that used a GAN to perform domain adaptation to enable a fixed day-0 iBCI decoder to work accurately on input signals recorded on day-k.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the authors' prior work, supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "ADAN finds low-dimensional manifolds using a nonlinear autoencoder.",
+    "claim_type": "EXPLICIT",
+    "source": "ADAN finds low-dimensional manifolds using a nonlinear autoencoder, and aligns the empirical distribution of the day-k recordings (the source domain) to those of day-0 (the target domain) by aligning the distributions of residuals (as in Zhao et al., 2016) between neural firing rates and their nonlinear autoencoder reconstructions (that is, the portion of neurons' activity not predicted from the manifold).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how ADAN works.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "ADAN aligns the empirical distribution of the day-k recordings to those of day-0 by aligning the distributions of residuals between neural firing rates and their nonlinear autoencoder reconstructions.",
+    "claim_type": "EXPLICIT",
+    "source": "ADAN finds low-dimensional manifolds using a nonlinear autoencoder, and aligns the empirical distribution of the day-k recordings (the source domain) to those of day-0 (the target domain) by aligning the distributions of residuals (as in Zhao et al., 2016) between neural firing rates and their nonlinear autoencoder reconstructions (that is, the portion of neurons' activity not predicted from the manifold).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how ADAN works, with citation to the method it builds upon.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Compared to PAF, ADAN performs the alignment in the high-dimensional space of reconstructed firing rates, but requires the computation of a low-dimensional manifold to do so.",
+    "claim_type": "EXPLICIT",
+    "source": "Note that, compared to PAF, ADAN performs the alignment in the high-dimensional space of reconstructed firing rates, but requires the computation of a low-dimensional manifold to do so.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison between ADAN and PAF made by the authors.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "In the earlier study, the authors found that ADAN outperforms both CCA and an alignment process that minimized the KL divergence between the distributions of the day-k and day-0 latent spaces (KLDM).",
+    "claim_type": "EXPLICIT",
+    "source": "In the earlier study we found that ADAN outperforms both CCA and an alignment process that minimized the KL divergence between the distributions of the day-k and day-0 latent spaces (Kullback-Leibler Divergence Minimization, KLDM; Farshchian et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This refers to findings from the authors' prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "ADAN was only tested on data from a single monkey and a single task, for just 2 weeks.",
+    "claim_type": "EXPLICIT",
+    "source": "However, ADAN was only tested on data from a single monkey and a single task, for just 2 weeks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of the prior ADAN study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The authors' subsequent exploration into applying ADAN to other datasets suggests that, while it can work in other settings, its performance is quite sensitive to model hyperparameter settings.",
+    "claim_type": "EXPLICIT",
+    "source": "Our subsequent exploration into applying ADAN to other datasets suggests that, while it can work in other settings, its performance is quite sensitive to model hyperparameter settings.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the authors' subsequent work.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Previous reports indicate that GANs can be highly dependent on choice of architecture and a variety of hyperparameter settings.",
+    "claim_type": "EXPLICIT",
+    "source": "This is consistent with previous reports that GANs can be highly dependent on choice of architecture and a variety of hyperparameter settings (Farnia and Ozdaglar, 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about GANs in general, supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The authors sought alternative GAN-based approaches that might offer more robust performance.",
+    "claim_type": "EXPLICIT",
+    "source": "We therefore sought alternative GAN-based approaches that might offer more robust performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the motivation for the current study.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Zhu et al., 2017 developed a novel GAN architecture named Cycle-Consistent Adversarial Networks (Cycle-GAN) in the context of image domain adaptation.",
+    "claim_type": "EXPLICIT",
+    "source": "Recently, Zhu et al., 2017 developed a novel GAN architecture named Cycle-Consistent Adversarial Networks (Cycle-GAN) in the context of image domain adaptation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes prior work by other researchers.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "Cycle-GAN introduced a mechanism termed 'cycle-consistency', which helps to regularize model performance.",
+    "claim_type": "EXPLICIT",
+    "source": "Cycle-GAN introduced a mechanism termed 'cycle-consistency', which helps to regularize model performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a feature of Cycle-GAN.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Cycle-GAN implements both forward and inverse mappings between a pair of domains: the forward mapping translates data in the source domain to the target domain, while the inverse mapping brings the translated data back to the source domain.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, Cycle-GAN implements both forward and inverse mappings between a pair of domains: the forward mapping translates data in the source domain to the target domain, while the inverse mapping brings the translated data back to the source domain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how Cycle-GAN works.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The cycle-consistency regularization mechanism forces the learned transformation between the source and the target distributions to be a bijection, thereby reducing the search space of possible transformations.",
+    "claim_type": "EXPLICIT",
+    "source": "This regularization mechanism forces the learned transformation between the source and the target distributions to be a bijection, thereby reducing the search space of possible transformations (Almahairi et al., 2018; Zhu et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the effect of cycle-consistency, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Cycle-GAN is unique among neural alignment methods in that it does not rely on projection of neural population activity to a low-dimensional manifold: rather, it aligns the full-dimensional distributions of the day-0 and day-k recordings directly.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition to its promise of greater robustness, Cycle-GAN is to our knowledge unique among neural alignment methods in that it does not rely on projection of neural population activity to a low-dimensional manifold: rather, it aligns the full-dimensional distributions of the day-0 and day-k recordings directly.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the uniqueness of Cycle-GAN based on the authors' knowledge of the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Other alignment methods that the authors have explored (CCA, PAF, KLDM, and ADAN) all work with low-dimensional latent signals.",
+    "claim_type": "EXPLICIT",
+    "source": "Other alignment methods that we have explored (CCA, PAF, KLDM, and ADAN) all work with low-dimensional latent signals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the properties of other methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Aligning on full-dimensional data leads to the advantage that the (small) information loss caused by dimensionality reduction can be avoided.",
+    "claim_type": "EXPLICIT",
+    "source": "Aligning on full-dimensional data leads to the advantage that the (small) information loss caused by dimensionality reduction can be avoided.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the advantage of full-dimensional alignment.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "As most existing iBCI decoders are computed directly from the full-dimensional neural recordings, no extra transformation of neural recordings is required between alignment and decoding.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, as most existing iBCI decoders are computed directly from the full-dimensional neural recordings, no extra transformation of neural recordings is required between alignment and decoding.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the compatibility of full-dimensional alignment with existing decoders.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "In this study, the authors compare Cycle-GAN, ADAN, and PAF using datasets from several monkeys, spanning a broad variety of motor behaviors, and spanning several months.",
+    "claim_type": "EXPLICIT",
+    "source": "In this study, we compare Cycle-GAN, ADAN, and PAF using datasets from several monkeys, spanning a broad variety of motor behaviors, and spanning several months.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the scope of the current study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "The authors chose not to test CCA, as it requires trial alignment of the data.",
+    "claim_type": "EXPLICIT",
+    "source": "We chose not to test CCA, as it requires trial alignment of the data, and it (as well as KLDM) was outperformed by ADAN in our earlier study (Farshchian et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains why CCA was not included in the comparison.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "CCA (as well as KLDM) was outperformed by ADAN in the authors' earlier study.",
+    "claim_type": "EXPLICIT",
+    "source": "We chose not to test CCA, as it requires trial alignment of the data, and it (as well as KLDM) was outperformed by ADAN in our earlier study (Farshchian et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This refers to findings from the authors' prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The authors found that both GAN-based methods outperformed PAF.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that both GAN-based methods outperformed PAF.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a main finding of the study, supported by data presented in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "The authors demonstrated that the addition of cycle-consistency improved the alignment and made training much less dependent on hyperparameters.",
+    "claim_type": "EXPLICIT",
+    "source": "We also demonstrated that the addition of cycle-consistency improved the alignment and made training much less dependent on hyperparameters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a main finding of the study, supported by data presented in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Six monkeys were trained to perform five tasks: power and key grasping, center-out target reaching using isometric wrist torque, and center-out and random-target reaching movements.",
+    "claim_type": "EXPLICIT",
+    "source": "We trained six monkeys to perform five tasks: power and key grasping, center-out target reaching using isometric wrist torque, and center-out and random-target reaching movements (Figure 2\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the experimental setup, with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "After training, each monkey was implanted with a 96-channel microelectrode array in either the hand or arm area of M1.",
+    "claim_type": "EXPLICIT",
+    "source": "After training, each monkey was implanted with a 96-channel microelectrode array in either the hand or arm area of M1.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "Four animals (monkeys J, S, G, P) were also implanted with intramuscular leads in forearm and hand muscles contralateral to the cortical implant; these were used to record electromyograms (EMGs).",
+    "claim_type": "EXPLICIT",
+    "source": "Four animals (monkeys J, S, G, P) were also implanted with intramuscular leads in forearm and hand muscles contralateral to the cortical implant; these were used to record electromyograms (EMGs).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "The authors recorded multi-unit activity on each M1 electrode together with motor output (EMGs and/or hand trajectories) for many sessions across multiple days.",
+    "claim_type": "EXPLICIT",
+    "source": "We recorded multi-unit activity on each M1 electrode together with motor output (EMGs and/or hand trajectories) for many sessions across multiple days.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data collection procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "All recording sessions for a specific task and an individual monkey were taken together to form a dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "All recording sessions for a specific task and an individual monkey were taken together to form a dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how datasets were defined.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "The authors collected a total of seven datasets, and the recording sessions in each of them spanned from ~30 to~100 days.",
+    "claim_type": "EXPLICIT",
+    "source": "We collected a total of seven datasets, and the recording sessions in each of them spanned from ~30 to~100 days (See Materials and methods; Figure 2\u2014source data 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the scope of the data collection.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "As in previous studies, the authors found substantial instability in the M1 neurons they recorded over time, even though the motor outputs and task performance were generally stable.",
+    "claim_type": "EXPLICIT",
+    "source": "As in previous studies (Gallego et al., 2020; Sussillo et al., 2016b), we found substantial instability in the M1 neurons we recorded over time, even though the motor outputs and task performance were generally stable (Figure 2\u2014figure supplements 2 and 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the study, consistent with prior work, and supported by data shown in figures.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The authors fit a Wiener filter decoder with data recorded on a reference day (designated 'day-0').",
+    "claim_type": "EXPLICIT",
+    "source": "We fit a Wiener filter decoder with data recorded on a reference day (designated 'day-0'; Figure 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the experimental procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "The authors used the day-0 decoder to predict the motor outputs from M1 neural recordings on later days ('day-k') and computed the coefficient of determination (R2) between the predictions and the actual data.",
+    "claim_type": "EXPLICIT",
+    "source": "We then used this decoder to predict the motor outputs from M1 neural recordings on later days ('day-k') and computed the coefficient of determination (R2) between the predictions and the actual data (see Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "In all cases, both EMG (top row) and kinematic (bottom row) decoders could reconstruct movement trajectories with high accuracy on held-out trials from the day of training ('day-0').",
+    "claim_type": "EXPLICIT",
+    "source": "In all cases, both EMG (top row) and kinematic (bottom row) decoders could reconstruct movement trajectories with high accuracy on held-out trials from the day of training ('day-0').",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the study, shown in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "The calibrated day-0 decoders consistently failed to predict EMGs or hand trajectories accurately on day-k.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the calibrated day-0 decoders consistently failed to predict EMGs or hand trajectories accurately on day-k.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the study, shown in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The degradation of the performance across time occurred for all behavioral tasks and monkeys, and could be substantial even a few days after decoder training.",
+    "claim_type": "EXPLICIT",
+    "source": "The degradation of the performance across time occurred for all behavioral tasks and monkeys, and could be substantial even a few days after decoder training (Figure 2\u2014figure supplement 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the study, shown in a supplementary figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "The authors proposed to use generative adversarial network (GAN) based domain adaptation to address the problem of decoder degradation.",
+    "claim_type": "EXPLICIT",
+    "source": "We proposed to use generative adversarial network (GAN) based domain adaptation (Figure 1B) to address the problem described above.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the approach taken in the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The authors tested two different architectures: Adversarial Domain Adaptation Network (ADAN) and Cycle-Consistent Adversarial Networks (Cycle-GAN).",
+    "claim_type": "EXPLICIT",
+    "source": "We tested two different architectures: Adversarial Domain Adaptation Network (ADAN) (Farshchian et al., 2018), and Cycle-Consistent Adversarial Networks (Cycle-GAN) (Zhu et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the methods tested in the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "As both ADAN and Cycle-GAN were trained to reduce the discrepancy between the neural recordings on day-0 and those on day-k by aligning their probability density functions (PDFs), the authors call them 'aligners'.",
+    "claim_type": "EXPLICIT",
+    "source": "As both ADAN and Cycle-GAN were trained to reduce the discrepancy between the neural recordings on day-0 and those on day-k by aligning their probability density functions (PDFs), we call them 'aligners'.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This defines terminology used in the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "Both ADAN and Cycle-GAN are static methods, trained only on instantaneous neural activity datapoints with no knowledge of dynamics.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, both ADAN and Cycle-GAN are static methods, trained only on instantaneous neural activity datapoints with no knowledge of dynamics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a property of the methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "Both ADAN and Cycle-GAN methods are causal and can be used in real time.",
+    "claim_type": "EXPLICIT",
+    "source": "Both methods are causal and can be used in real time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a property of the methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "The authors used the dataset with the longest recording timespan (monkey J, isometric wrist task, spanning 95 days) to determine appropriate choices of the hyperparameters for neural network training.",
+    "claim_type": "EXPLICIT",
+    "source": "We used the dataset with the longest recording timespan (monkey J, isometric wrist task, spanning 95 days) to determine appropriate choices of the hyperparameters for neural network training, which are presented in detail in a later section.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "The authors used the resulting hyperparameter values for the tests of all other monkeys and tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "We used the resulting hyperparameter values for the tests of all other monkeys and tasks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "For comparison, the authors also used all datasets to test another type of 'aligner' that aimed to align the low-dimensional neural manifolds between day-0 and day-k, which they termed 'Procrustes Alignment of Factors' (PAF).",
+    "claim_type": "EXPLICIT",
+    "source": "For comparison, we also used all datasets to test another type of 'aligner' that aimed to align the low-dimensional neural manifolds between day-0 and day-k (Degenhart et al., 2020), which we termed 'Procrustes Alignment of Factors' (PAF).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "Unlike ADAN and PAF, Cycle-GAN alignment does not require computation of a latent representation from neural recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "Unlike ADAN and PAF, Cycle-GAN alignment does not require computation of a latent representation from neural recordings.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a property of Cycle-GAN.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "As a result, Cycle-GAN is naturally suited to a decoder trained on the full-dimensional neural firing rate signals.",
+    "claim_type": "EXPLICIT",
+    "source": "As a result, Cycle-GAN is naturally suited to a decoder trained on the full-dimensional neural firing rate signals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the suitability of Cycle-GAN.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "It is theoretically possible to use a full-dimensional decoder with ADAN and PAF as well, by training on firing rates reconstructed from the latent spaces of the ADAN autoencoder and PAF factors respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "It is theoretically possible to use a full-dimensional decoder with ADAN and PAF as well, by training on firing rates reconstructed from the latent spaces of the ADAN autoencoder and PAF factors respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the theoretical possibilities for using ADAN and PAF.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "The authors found that the performance of full-dimensional decoders for ADAN and PAF was inferior to that of a decoder trained on the inferred latent signals.",
+    "claim_type": "EXPLICIT",
+    "source": "However, we found that the performance of these full-dimensional decoders was inferior to that of a decoder trained on the inferred latent signals (Figure 3\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the study, shown in a supplementary figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The authors also tested a decoder trained on Cycle-GAN-generated firing rates projected into a low-dimensional manifold obtained using Factor Analysis; as expected, its performance was slightly worse than that of a full-dimensional decoder, but still better than ADAN and PAF with a low-dimensional decoder.",
+    "claim_type": "EXPLICIT",
+    "source": "For completeness, we also tested a decoder trained on Cycle-GAN-generated firing rates projected into a low-dimensional manifold obtained using Factor Analysis; as expected, its performance was slightly worse than that of a full-dimensional decoder, but still better than ADAN and PAF with a low-dimensional decoder (Figure 3\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the study, shown in a supplementary figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "The authors compare the better-performing of the two potential decoder input formats for each alignment method: full-dimensional for Cycle-GAN, and low-dimensional for ADAN and PAF.",
+    "claim_type": "EXPLICIT",
+    "source": "In light of the analysis above, we here compare the better-performing of the two potential decoder input formats for each alignment method: full-dimensional for Cycle-GAN, and low-dimensional for ADAN and PAF (Figure 3, see Materials and methods for details).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the comparison strategy used in the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "Aside from the difference of input dimensionality, the architecture of the day-0 decoder (a Wiener filter) was the same for all aligners.",
+    "claim_type": "EXPLICIT",
+    "source": "Aside from this difference of input dimensionality, the architecture of the day-0 decoder (a Wiener filter) was the same for all aligners.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "The within-day accuracy of the day-0 decoders of the three aligners was modestly but significantly different across tasks (ADAN: R2=0.73 \u00b1 0.009 (mean \u00b1 s.e.); Cycle-GAN: R2=0.72 \u00b1 0.009; PAF: R2=0.71 \u00b1 0.009; p=0.008).",
+    "claim_type": "EXPLICIT",
+    "source": "The within-day accuracy of the day-0 decoders of the three aligners was modestly but significantly different across tasks (Figure 3A): ADAN: R2=0.73 \u00b1 0.009 (mean \u00b1 s.e.); Cycle-GAN: R2=0.72 \u00b1 0.009; PAF: R2=0.71 \u00b1 0.009 (p=0.008, linear mixed-effect model with the type of aligner as fixed and the type of task as random factor, n=204 samples, where each sample is one aligner/task/day-0/day-k combination).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the study, supported by statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "The performance drop of the day-0 decoder on data collected on the day immediately following day-0 (i.e. day-1) after alignment was significantly different across the aligners (Cycle-GAN: \u20130.02\u00b10.004 (mean \u00b1 s.e.); ADAN: \u20130.06\u00b10.005; PAF: \u20130.11\u00b10.005; p~0).",
+    "claim_type": "EXPLICIT",
+    "source": "The performance drop of the day-0 decoder on data collected on the day immediately following day-0 (i.e. day-1) after alignment was significantly different across the aligners (Cycle-GAN: \u20130.02\u00b10.004 (mean \u00b1 s.e.); ADAN: \u20130.06\u00b10.005; PAF: \u20130.11\u00b10.005; p~0).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the study, supported by statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "Cycle-GAN significantly outperformed both ADAN (p~0) and PAF (p~0) on day-1.",
+    "claim_type": "EXPLICIT",
+    "source": "Cycle-GAN significantly outperformed both ADAN (p~0) and PAF (p~0).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the study, supported by statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "ADAN also significantly outperformed PAF on day-1 (p~0).",
+    "claim_type": "EXPLICIT",
+    "source": "ADAN also significantly outperformed PAF (p~0).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the study, supported by statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "The performance degradation of day-0 decoders for periods greater than one day was mitigated by all three alignment methods, although to different extents.",
+    "claim_type": "EXPLICIT",
+    "source": "The performance degradation of day-0 decoders for periods greater than one day (Figure 2\u2014figure supplement 4) was also mitigated by all three alignment methods, although to different extents.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the study, shown in figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "There remained a significant and increasing performance drop over time after alignment.",
+    "claim_type": "EXPLICIT",
+    "source": "Nonetheless, there remained a significant and increasing performance drop over time (Figure 3A and B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the study, shown in figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "The authors found a significant interaction between time and alignment method (p=0.026), indicating that there was a difference between methods in performance drop over time.",
+    "claim_type": "EXPLICIT",
+    "source": "We found a significant interaction between time and alignment method (p=0.026), indicating that there was a difference between methods in performance drop over time, and a post-hoc comparison showed that Cycle-GAN had the least overall performance degradation, significantly better than PAF, and better, but not significantly so, than ADAN (p=0.008 vs PAF; p=0.328 vs ADAN).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the study, supported by statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "A post-hoc comparison showed that Cycle-GAN had the least overall performance degradation, significantly better than PAF (p=0.008), and better, but not significantly so, than ADAN (p=0.328).",
+    "claim_type": "EXPLICIT",
+    "source": "We found a significant interaction between time and alignment method (p=0.026), indicating that there was a difference between methods in performance drop over time, and a post-hoc comparison showed that Cycle-GAN had the least overall performance degradation, significantly better than PAF, and better, but not significantly so, than ADAN (p=0.008 vs PAF; p=0.328 vs ADAN).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the study, supported by statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "ADAN was better, but not significantly, than PAF (p=0.091).",
+    "claim_type": "EXPLICIT",
+    "source": "ADAN was better, but not significantly, than PAF (p=0.091).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the study, supported by statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "This analysis shows that Cycle-GAN moderately outperforms both ADAN and PAF.",
+    "claim_type": "EXPLICIT",
+    "source": "Taken together, this analysis shows that Cycle-GAN moderately outperforms both ADAN and PAF (see also Figure 3C; Figure 3\u2014figure supplement 2B, C), and furthermore that the two nonlinear alignment methods tend to be more stable over time than PAF (see also Figure 3C; Figure 3\u2014figure supplement 2A, B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a conclusion drawn from the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "The two nonlinear alignment methods (Cycle-GAN and ADAN) tend to be more stable over time than PAF.",
+    "claim_type": "EXPLICIT",
+    "source": "Taken together, this analysis shows that Cycle-GAN moderately outperforms both ADAN and PAF (see also Figure 3C; Figure 3\u2014figure supplement 2B, C), and furthermore that the two nonlinear alignment methods tend to be more stable over time than PAF (see also Figure 3C; Figure 3\u2014figure supplement 2A, B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a conclusion drawn from the data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "While CCA-style trial alignment is not required by Cycle-GAN, ADAN, or PAF, the authors did preprocess the data to exclude behaviors not related to the investigated task (inter-trial data) and used data only from the beginning to the end of each trial.",
+    "claim_type": "EXPLICIT",
+    "source": "While CCA-style trial alignment is not required by Cycle-GAN, ADAN, or PAF, we did preprocess the data to exclude behaviors not related to the investigated task (inter-trial data) and used data only from the beginning to the end of each trial (see Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data preprocessing procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "Among other advantages, excluding inter-trial data helped to unify behavior across monkeys and behavioral tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "Among other advantages, this helped to unify behavior across monkeys and behavioral tasks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the rationale for the preprocessing.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "In a true iBCI setting, the user has uninterrupted control, so it would be ideal to train the aligner on that data, without the need to classify and exclude portions of a recording session that are not task-related.",
+    "claim_type": "EXPLICIT",
+    "source": "However, in a true iBCI setting, the user has uninterrupted control, so it would be ideal to train the aligner on that data, without the need to classify and exclude portions of a recording session that are not task-related.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the ideal conditions for iBCI use.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "The authors also tested aligners on the continuous neural recordings on the isometric wrist task data of monkey J.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, we also tested aligners on the continuous neural recordings on the isometric wrist task data of monkey J (Figure 3\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes an additional analysis performed in the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "Under the condition of continuous neural recordings, Cycle-GAN was clearly superior to ADAN and PAF.",
+    "claim_type": "EXPLICIT",
+    "source": "Under this condition, Cycle-GAN was clearly superior to ADAN and PAF.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the additional analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "For continuous recordings, the accuracy of the day-0 decoder on day-1 after alignment was significantly different across the aligners (Cycle-GAN: \u20130.05\u00b10.015 (mean \u00b1s.e.); ADAN: \u20130.14\u00b10.023; PAF: \u20130.18\u00b10.019; p~0).",
+    "claim_type": "EXPLICIT",
+    "source": "We fit a linear mixed-effect model with type of aligner and days as fixed factors (n=531 samples) and found that the accuracy of the day-0 decoder on day-1 after alignment was significantly different across the aligners (Cycle-GAN: \u20130.05\u00b10.015 (mean \u00b1s.e.); ADAN: \u20130.14\u00b10.023; PAF: \u20130.18\u00b10.019; p~0).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the additional analysis, supported by statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "For continuous recordings, Cycle-GAN significantly outperformed both ADAN (p~0) and PAF (p~0).",
+    "claim_type": "EXPLICIT",
+    "source": "Cycle-GAN significantly outperformed both ADAN (p~0) and PAF (p~0), while ADAN outperformed PAF, but not significantly (p=0.134).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the additional analysis, supported by statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "For continuous recordings, ADAN outperformed PAF, but not significantly (p=0.134).",
+    "claim_type": "EXPLICIT",
+    "source": "Cycle-GAN significantly outperformed both ADAN (p~0) and PAF (p~0), while ADAN outperformed PAF, but not significantly (p=0.134).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the additional analysis, supported by statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "For continuous recordings, the authors did not find a significant interaction between time and alignment method (p=0.56), indicating that the performance degradation over time was mitigated in a similar way by all three methods.",
+    "claim_type": "EXPLICIT",
+    "source": "On the other hand, we did not find a significant interaction between time and alignment method (p=0.56), indicating that the performance degradation over time was mitigated in a similar way by all three methods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the additional analysis, supported by statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "GANs can present a training challenge: choosing suitable hyperparameters is important, for example, to balance the learning process and prevent either of the two networks (the generator or discriminator) from dominating the loss function.",
+    "claim_type": "EXPLICIT",
+    "source": "While they can be powerful, GANs can present a training challenge: choosing suitable hyperparameters is important, for example, to balance the learning process and prevent either of the two networks (the generator or discriminator) from dominating the loss function.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a known challenge with GANs, based on established knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "High sensitivity of model performance to hyperparameter values would pose a potential barrier to the adoption of either ADAN or Cycle-GAN as a tool for cross-day alignment.",
+    "claim_type": "EXPLICIT",
+    "source": "High sensitivity of model performance to hyperparameter values would pose a potential barrier to the adoption of either ADAN or Cycle-GAN as a tool for cross-day alignment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the implications of hyperparameter sensitivity.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "The authors assessed sensitivity to hyperparameters by testing the impact of batch size and learning rates on alignment performance.",
+    "claim_type": "EXPLICIT",
+    "source": "As in Ghosh et al., 2020, we assessed sensitivity to hyperparameters by testing the impact of batch size and learning rates on alignment performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the approach taken to assess hyperparameter sensitivity.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "Because hyperparameter sweeps are very computationally expensive, the authors evaluated them using only the single dataset with the greatest span of time.",
+    "claim_type": "EXPLICIT",
+    "source": "Because these hyperparameter sweeps are very computationally expensive, we evaluated them using only the single dataset with the greatest span of time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains the rationale for the limited scope of the hyperparameter analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "The authors trained both ADAN and Cycle-GAN aligners on day-k data relative to four selected day-0 reference days.",
+    "claim_type": "EXPLICIT",
+    "source": "We trained both ADAN and Cycle-GAN aligners on day-k data relative to four selected day-0 reference days.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure for the hyperparameter analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "The authors found that ADAN maintained good performance when batch size was small, but that performance started to drop significantly for larger batch sizes (64: \u20130.13\u00b10.0096 (mean \u00b1 s.e.); 256: \u20130.17\u00b10.013; p~0, Wilcoxon's signed rank test, n=76).",
+    "claim_type": "EXPLICIT",
+    "source": "We found that ADAN maintained good performance when batch size was small, but that performance started to drop significantly for larger batch sizes (64: \u20130.13\u00b10.0096 (mean \u00b1 s.e.); 256: \u20130.17\u00b10.013; p~0, Wilcoxon's signed rank test, n=76; Figure 4A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the hyperparameter analysis, supported by statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "In contrast, Cycle-GAN based aligners performed consistently at all tested batch sizes.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, Cycle-GAN based aligners performed consistently at all tested batch sizes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the hyperparameter analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "These results suggest that ADAN may need a small batch size, while Cycle-GAN-based aligners have no strong requirement.",
+    "claim_type": "EXPLICIT",
+    "source": "These results suggest that ADAN may need a small batch size, while Cycle-GAN-based aligners have no strong requirement.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the hyperparameter analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "Neural network training time is inversely proportional to batch size - therefore given two batch size options that give comparable model performance, the larger of the two will yield faster training.",
+    "claim_type": "EXPLICIT",
+    "source": "Neural network training time is inversely proportional to batch size - therefore given two batch size options that give comparable model performance, the larger of the two will yield faster training.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the relationship between batch size and training time, based on established knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "The authors found that Cycle-GAN was slower than ADAN for smaller batch sizes, although neither method required more than a few minutes when operating within their optimal batch size range.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that Cycle-GAN was slower than ADAN for smaller batch sizes, although neither method required more than a few minutes when operating within their optimal batch size range (Figure 4B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the training time analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "The authors set the ADAN batch size for subsequent analyses to 8 and for Cycle-GAN to 256.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, we set the ADAN batch size for subsequent analyses to 8 and for Cycle-GAN to 256.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the hyperparameter choices made for the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "The authors could have increased the batch size for ADAN, but decided instead to use a conservative value further from its region of decreased performance at the expense of slower training.",
+    "claim_type": "EXPLICIT",
+    "source": "Although we could have increased the batch size for ADAN, we decided instead to use a conservative value further from its region of decreased performance at the expense of slower training.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains the rationale for the batch size choice for ADAN.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "The authors computed the execution time of PAF, which was much faster than both ADAN and Cycle-GAN as it has a closed form solution.",
+    "claim_type": "EXPLICIT",
+    "source": "For reference, we also computed the execution time of PAF, which was much faster than both ADAN and Cycle-GAN (Figure 4B, dashed blue line) as it has a closed form solution (Sch\u00f6nemann, 1966).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the training time analysis, with citation to the method.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "The inference time (i.e. the time it takes to transform data once the aligner is trained) for both Cycle-GAN and ADAN is well under 1 ms per 50 ms sample of neural firing rates.",
+    "claim_type": "EXPLICIT",
+    "source": "We also note that the inference time (i.e. the time it takes to transform data once the aligner is trained) for both Cycle-GAN and ADAN is well under 1 ms per 50 ms sample of neural firing rates\u2013 this is because the forward map in both models consists simply of a fully connected network with only two hidden layers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding about the inference time of the methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "The forward map in both Cycle-GAN and ADAN consists simply of a fully connected network with only two hidden layers.",
+    "claim_type": "EXPLICIT",
+    "source": "We also note that the inference time (i.e. the time it takes to transform data once the aligner is trained) for both Cycle-GAN and ADAN is well under 1 ms per 50 ms sample of neural firing rates\u2013 this is because the forward map in both models consists simply of a fully connected network with only two hidden layers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the architecture of the methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "The authors examined the effect of learning rates for each aligner.",
+    "claim_type": "EXPLICIT",
+    "source": "We next examined the effect of learning rates for each aligner.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the next analysis performed.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "ADAN achieved good performance when LRG was set to 1e-5 and 1e-4 but did not work well if LRG was set to 1e-3.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 4C, ADAN achieved good performance when LRG was set to 1e-5 and 1e-4 but did not work well if LRG was set to 1e-3.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the learning rate analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "Cycle-GAN maintained stable performance when LRG was set to 1e-3 and 1e-4, and had a significant performance drop when LRG was 1e-5 (1e-4: \u20130.064\u00b10.0062 (mean \u00b1 s.e.); 1e-5: \u20130.095\u00b10.0068; p~0, Wilcoxon's signed rank test, n=76), but still significantly better than ADAN with the same LRG (Cycle-GAN: \u20130.095\u00b10.0068 (mean \u00b1 s.e.); ADAN: \u20130.15\u00b10.011; p~0, Wilcoxon's signed rank test, n=76).",
+    "claim_type": "EXPLICIT",
+    "source": "Cycle-GAN maintained stable performance when LRG was set to 1e-3 and 1e-4, and had a significant performance drop when LRG was 1e-5 (1e-4: \u20130.064\u00b10.0062 (mean \u00b1 s.e.); 1e-5: \u20130.095\u00b10.0068; p~0, Wilcoxon's signed rank test, n=76), but still significantly better than ADAN with the same LRG (Cycle-GAN: \u20130.095\u00b10.0068 (mean \u00b1 s.e.); ADAN: \u20130.15\u00b10.011; p~0, Wilcoxon's signed rank test, n=76).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the learning rate analysis, supported by statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "ADAN could only be trained well when LRD was equal to or smaller than LRG.",
+    "claim_type": "EXPLICIT",
+    "source": "As Figure 4D shows, ADAN could only be trained well when LRD was equal to or smaller than LRG.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the learning rate analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C133",
+    "claim": "The performance of a Cycle-GAN based aligner remained stable for all tested LRD/LRG values.",
+    "claim_type": "EXPLICIT",
+    "source": "On the other hand, the performance of a Cycle-GAN based aligner remained stable for all tested LRD/LRG values.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the learning rate analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C134",
+    "claim": "Aligners in practical iBCI applications must be fast to train and perhaps more importantly, require little training data.",
+    "claim_type": "EXPLICIT",
+    "source": "Aligners in practical iBCI applications must be fast to train and perhaps more importantly, require little training data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the requirements for practical iBCI applications.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C135",
+    "claim": "The authors investigated the aligner performance with limited training data.",
+    "claim_type": "EXPLICIT",
+    "source": "Here we investigated the aligner performance with limited training data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the next analysis performed.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C136",
+    "claim": "The authors trained ADAN, Cycle-GAN, and PAF to align the data on each day-k to four selected day-0s using randomly selected subsets of the full 120-trial training set from Monkey J.",
+    "claim_type": "EXPLICIT",
+    "source": "We trained ADAN, Cycle-GAN, and PAF to align the data on each day-k to four selected day-0s using randomly selected subsets of the full 120-trial training set from Monkey J.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure for the limited data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C137",
+    "claim": "All three aligners improved the performance of day-0 decoders with 20 or fewer training trials.",
+    "claim_type": "EXPLICIT",
+    "source": "As Figure 5A shows, all three aligners improved the performance of day-0 decoders with 20 or fewer training trials.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the limited data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C138",
+    "claim": "Performance increased as more training trials were included but started to plateau near 40 trials.",
+    "claim_type": "EXPLICIT",
+    "source": "Performance increased as more training trials were included but started to plateau near 40 trials.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the limited data analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C139",
+    "claim": "When using only 10 trials, both ADAN and Cycle-GAN significantly outperformed PAF (Cycle-GAN: \u20130.19\u00b10.0076 (mean \u00b1 s.e.); ADAN: \u20130.21\u00b10.011; PAF: \u20130.26\u00b10.011; p~0, Wilcoxon's signed rank test, n=76), with Cycle-GAN significantly outperforming ADAN (p=0.003, Wilcoxon's signed rank test, n=76).",
+    "claim_type": "EXPLICIT",
+    "source": "When using only 10 trials, both ADAN and Cycle-GAN significantly outperformed PAF (Cycle-GAN: \u20130.19\u00b10.0076 (mean \u00b1 s.e.); ADAN: \u20130.21\u00b10.011; PAF: \u20130.26\u00b10.011; p~0, Wilcoxon's signed rank test, n=76), with Cycle-GAN significantly outperforming ADAN (p=0.003, Wilcoxon's signed rank test, n=76).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the limited data analysis, supported by statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C140",
+    "claim": "ADAN and Cycle-GAN trained with only 20 trials significantly outperformed PAF trained with the full training set of 120 trials (Cycle-GAN trained with 20 trials: \u20130.10\u00b10.0083 (mean \u00b1s.e.); ADAN trained with 20 trials: \u20130.16\u00b10.0096; PAF trained with 120 trials: \u20130.20\u00b10.011; p~0, Wilcoxon's signed rank test, n=76).",
+    "claim_type": "EXPLICIT",
+    "source": "It is also worth noting that ADAN and Cycle-GAN trained with only 20 trials significantly outperformed PAF trained with the full training set of 120 trials (Cycle-GAN trained with 20 trials: \u20130.10\u00b10.0083 (mean \u00b1s.e.); ADAN trained with 20 trials: \u20130.16\u00b10.0096; PAF trained with 120 trials: \u20130.20\u00b10.011; p~0, Wilcoxon's signed rank test, n=76) (Figure 5B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the limited data analysis, supported by statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C141",
+    "claim": "Both ADAN and Cycle-GAN generate reconstructed versions of the aligned day-k single neuron signals, agnostic to downstream use.",
+    "claim_type": "EXPLICIT",
+    "source": "Both ADAN and Cycle-GAN generate reconstructed versions of the aligned day-k single neuron signals, agnostic to downstream use.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a property of ADAN and Cycle-GAN.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C142",
+    "claim": "The objective of decoder stabilization does not require that the full distribution of day-0 responses be recovered: only signals that are relevant to the decoding dimension need to be recovered.",
+    "claim_type": "EXPLICIT",
+    "source": "However, our objective of decoder stabilization does not require that the full distribution of day-0 responses be recovered: we need only recover signals that are relevant to the decoding dimension.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the requirements for decoder stabilization.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C143",
+    "claim": "Decoder performance alone does not provide a complete picture of the quality of neural alignment.",
+    "claim_type": "EXPLICIT",
+    "source": "Decoder performance alone therefore does not provide a complete picture of the quality of neural alignment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the limitations of decoder performance as a metric.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C144",
+    "claim": "To more thoroughly investigate the extent to which distribution alignment introduces biases or artifacts in predicted neural responses, the authors first compared aligner predictions of single-neuron with those of their recorded day-0 analogs.",
+    "claim_type": "EXPLICIT",
+    "source": "To more thoroughly investigate the extent to which distribution alignment introduces biases or artifacts in predicted neural responses, we first compared aligner predictions of single-neuron with those of their recorded day-0 analogs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the next analysis performed.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C145",
+    "claim": "Because PAF operates directly on the low-dimensional neural manifold, it can only generate single-neuron responses in the aligned representation by projecting back out from the manifold.",
+    "claim_type": "EXPLICIT",
+    "source": "Because PAF operates directly on the low-dimensional neural manifold, it can only generate single-neuron responses in the aligned representation by projecting back out from the manifold.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a property of PAF.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C146",
+    "claim": "The authors found that a stabilized day-0 decoder that uses reconstructed firing rates from the latent space of the PAF factors performs poorly.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that a stabilized day-0 decoder that uses these reconstructed firing rates from the latent space of the PAF factors performs poorly (Figure 3\u2014figure supplement 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the study, shown in a supplementary figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C147",
+    "claim": "In contrast to PAF, Cycle-GAN and ADAN each generate synthetic firing rates for the full neural population (although ADAN still relies on a low-dimensional manifold as an intermediate step).",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast to PAF, Cycle-GAN and ADAN each generate synthetic firing rates for the full neural population (although ADAN still relies on a low-dimensional manifold as an intermediate step).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a property of Cycle-GAN and ADAN.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C148",
+    "claim": "The authors restricted their analysis of single-neuron properties on the outputs of ADAN and Cycle-GAN.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, we restricted our analysis of single-neuron properties on the outputs of ADAN and Cycle-GAN.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the scope of the single-neuron analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C149",
+    "claim": "The authors asked how response properties of the day-k 'aligned neurons' differed from those of the neurons recorded on the same electrode on day-0.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, we asked how response properties of the day-k 'aligned neurons' differed from those of the neurons recorded on the same electrode on day-0.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the question addressed in the single-neuron analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C150",
+    "claim": "The authors examined the aligned neural representations generated by Cycle-GAN and ADAN, again using the 95-day isometric wrist task dataset of monkey J.",
+    "claim_type": "EXPLICIT",
+    "source": "To do so, we examined the aligned neural representations generated by Cycle-GAN and ADAN, again using the 95-day isometric wrist task dataset of monkey J.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data used for the single-neuron analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C151",
+    "claim": "The authors first compared the peri-event time histograms (PETHs) of firing rates before and after alignment, to determine how the aligners altered day-k neural activity at the level of single electrodes.",
+    "claim_type": "EXPLICIT",
+    "source": "We first compared the peri-event time histograms (PETHs) of firing rates before and after alignment, to determine how the aligners altered day-k neural activity at the level of single electrodes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the approach taken in the single-neuron analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C152",
+    "claim": "Electrode E35 is an example of neuron drop-out, in which the activity captured on day-0 was not observed on day-95.",
+    "claim_type": "EXPLICIT",
+    "source": "Electrode E35 is an example of neuron drop-out, in which the activity captured on day-0 was not observed on day-95.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes an observation from the single-neuron analysis, shown in Figure 6A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C153",
+    "claim": "The PETHs of aligned day-95 data matched those of day-0 for all force directions for electrode E35, demonstrating that on day 95 both ADAN and Cycle-GAN aligners synthesized appropriate neural activity.",
+    "claim_type": "EXPLICIT",
+    "source": "The PETHs of aligned day-95 data matched those of day-0 for all force directions, demonstrating that on day 95 both ADAN and Cycle-GAN aligners synthesized appropriate neural activity (Figure 6A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the single-neuron analysis, shown in Figure 6A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C154",
+    "claim": "E73 is an example of activity not present on day-0, but recorded on day-95.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, E73 is an example of activity not present on day-0, but recorded on day-95.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes an observation from the single-neuron analysis, shown in Figure 6A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C155",
+    "claim": "For electrode E73, the day-95 activity was suppressed to match that on day-0.",
+    "claim_type": "EXPLICIT",
+    "source": "In this case, the day-95 activity was suppressed to match that on day-0.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the single-neuron analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C156",
+    "claim": "E60 is an example of consistent neural activity over the two days, which the aligners left unchanged.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, E60 is an example of consistent neural activity over the two days, which the aligners left unchanged.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes an observation from the single-neuron analysis, shown in Figure 6A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C157",
+    "claim": "The authors also examined the distributions of the recovered single-electrode activity by computing the Maximum Mean Discrepancy (MMD) between all pairs of sessions.",
+    "claim_type": "EXPLICIT",
+    "source": "We also examined the distributions of the recovered single-electrode activity by computing the Maximum Mean Discrepancy (MMD Gretton et al., 2012a, see Materials and methods) between all pairs of sessions (Figure 6B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the next analysis performed.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C158",
+    "claim": "Before alignment, the between-day MMDs were significantly larger than the within-day MMDs (orange, between-day MMD: 1.42\u00b10.029 (mean \u00b1 s.e.); purple, within-day MMD: 0.059\u00b10.0054; p~0, Wilcoxon's rank sum test, n=171).",
+    "claim_type": "EXPLICIT",
+    "source": "Before alignment, the between-day MMDs were significantly larger than the within-day MMDs (orange, between-day MMD: 1.42\u00b10.029 (mean \u00b1 s.e.); purple, within-day MMD: 0.059\u00b10.0054; p~0, Wilcoxon's rank sum test, n=171).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the MMD analysis, supported by statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C159",
+    "claim": "After alignment, the between-day MMDs were substantially reduced by both Cycle-GAN and ADAN, becoming comparable to the within-day MMDs (ADAN: red, 0.19\u00b10.0065 (mean \u00b1s.e.); Cycle-GAN: green, 0.091\u00b10.0024; within-day: purple, 0.059\u00b10.0054).",
+    "claim_type": "EXPLICIT",
+    "source": "After alignment, the between-day MMDs were substantially reduced by both Cycle-GAN and ADAN, becoming comparable to the within-day MMDs (ADAN: red, 0.19\u00b10.0065 (mean \u00b1s.e.); Cycle-GAN: green, 0.091\u00b10.0024; within-day: purple, 0.059\u00b10.0054).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the MMD analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C160",
+    "claim": "Cycle-GAN based aligners generally achieved a significantly lower between-day MMD than ADAN across the entire timespan (p~0, Wilcoxon's rank sum test, n=171).",
+    "claim_type": "EXPLICIT",
+    "source": "Cycle-GAN based aligners generally achieved a significantly lower between-day MMD than ADAN across the entire timespan (p~0, Wilcoxon's rank sum test, n=171).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the MMD analysis, supported by statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C161",
+    "claim": "While Cycle-GAN works only with the full-dimensional neural recordings, ADAN, whose discriminator is essentially an autoencoder, computes a low-dimensional neural manifold from which it reconstructs the high-level signals it needs to align the high-level residuals.",
+    "claim_type": "EXPLICIT",
+    "source": "While Cycle-GAN works only with the full-dimensional neural recordings, ADAN, whose discriminator is essentially an autoencoder, computes a low-dimensional neural manifold from which it reconstructs the high-level signals it needs to align the high-level residuals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a difference between Cycle-GAN and ADAN.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C162",
+    "claim": "The authors wanted to explore to what extent each method also altered the low-dimensional representations.",
+    "claim_type": "EXPLICIT",
+    "source": "Consequently, we wanted to explore to what extent each method also altered the low-dimensional representations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the motivation for the next analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C163",
+    "claim": "The authors applied Principal Component Analysis (PCA) to the firing rates recorded for the 95-day isometric wrist task of monkey J on four selected day-0s and examined the trajectories of M1 neural activity within the neural subspaces defined by the principal components (PCs).",
+    "claim_type": "EXPLICIT",
+    "source": "We applied Principal Component Analysis (PCA) to the firing rates recorded for the 95-day isometric wrist task of monkey J on four selected day-0s and examined the trajectories of M1 neural activity within the neural subspaces defined by the principal components (PCs, see Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the approach taken in the manifold analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C164",
+    "claim": "The authors then projected the firing rates of the remaining day-k's onto the neural subspace defined by the corresponding day-0 PCs.",
+    "claim_type": "EXPLICIT",
+    "source": "We then projected the firing rates of the remaining day-k's onto the neural subspace defined by the corresponding day-0 PCs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the approach taken in the manifold analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C165",
+    "claim": "Generally, the day-k neural trajectories projected onto the top two day-0 PCs did not match those of day-0.",
+    "claim_type": "EXPLICIT",
+    "source": "Generally, the day-k neural trajectories projected onto the top two day-0 PCs did not match those of day-0 (Figure 7A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the manifold analysis, shown in Figure 7A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C166",
+    "claim": "After alignment (3rd and 4th columns), the day-k trajectories closely resemble those of day-0.",
+    "claim_type": "EXPLICIT",
+    "source": "However, after alignment (3rd and 4th columns), the day-k trajectories closely resemble those of day-0.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the manifold analysis, shown in Figure 7A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C167",
+    "claim": "To directly quantify the similarity between the neural manifolds of day-0 and an aligned day-k, the authors calculated the principal angles between the neural subspaces for all sessions relative to the selected day-0.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, to directly quantify the similarity between the neural manifolds of day-0 and an aligned day-k, we calculated the principal angles (Knyazev and Argentati, 2002) between the neural subspaces for all sessions relative to the selected day-0 (see Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the approach taken to quantify manifold similarity.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C168",
+    "claim": "To interpret the magnitude of the overlap between a given pair of days, the authors compared the observed angle with an upper bound provided by the principal angles across random subspaces that preserved the covariance of the day-0 and day-95 neural data, using the method described in Elsayed et al., 2016.",
+    "claim_type": "EXPLICIT",
+    "source": "To interpret the magnitude of the overlap between a given pair of days, we compared the observed angle with an upper bound provided by the principal angles across random subspaces that preserved the covariance of the day-0 and day-95 neural data, using the method described in Elsayed et al., 2016.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the approach taken to interpret the principal angles, with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C169",
+    "claim": "The authors also found a 'within-day' bound by computing the angles between the day-0 neural recordings of even-numbered trials and odd-numbered trials (this was done to reduce the effect of any within-day drift).",
+    "claim_type": "EXPLICIT",
+    "source": "We also found a 'within-day' bound by computing the angles between the day-0 neural recordings of even-numbered trials and odd-numbered trials (this was done to reduce the effect of any within-day drift).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the approach taken to establish a within-day bound.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C170",
+    "claim": "The authors found that alignment with either Cycle-GAN or ADAN made the neural manifolds of any day-k substantially more similar to those of day-0.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that alignment with either Cycle-GAN or ADAN made the neural manifolds of any day-k substantially more similar to those of day-0.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the principal angles analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C171",
+    "claim": "In particular, after applying Cycle-GAN-based aligners, the population subspaces highly overlapped.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, after applying Cycle-GAN-based aligners, the population subspaces highly overlapped (Figure 7B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the principal angles analysis, shown in Figure 7B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C172",
+    "claim": "The authors previously demonstrated the utility of a GAN-based method, ADAN, to 'align' M1 data across time, thereby allowing a fixed iBCI decoder to be used for weeks without re-calibration, despite a gradual change in the neurons recorded over the same period.",
+    "claim_type": "EXPLICIT",
+    "source": "We previously demonstrated the utility of a GAN-based method, ADAN, to 'align' M1 data across time, thereby allowing a fixed iBCI decoder to be used for weeks without re-calibration, despite a gradual change in the neurons recorded over the same period (Farshchian et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This refers to the authors' prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C173",
+    "claim": "The authors had tested ADAN on a very limited dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "However, we had tested ADAN on a very limited dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of the prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C174",
+    "claim": "Because GANs are notoriously sensitive to hyperparameter settings, it was unclear how robust ADAN would be in practice.",
+    "claim_type": "EXPLICIT",
+    "source": "Because GANs are notoriously sensitive to hyperparameter settings (Farnia and Ozdaglar, 2020; Ghosh et al., 2020; Kurach et al., 2018), it was unclear how robust ADAN would be in practice.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the uncertainty regarding ADAN's robustness, based on known properties of GANs.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C175",
+    "claim": "Another promising method, PAF, had been tested primarily in terms of two monkeys' online iBCI performance.",
+    "claim_type": "EXPLICIT",
+    "source": "Another promising method, PAF, had been tested primarily in terms of two monkeys' online iBCI performance (Degenhart et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the prior testing of PAF, with citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C176",
+    "claim": "The authors wished to compare both ADAN and PAF approaches directly, using a very diverse dataset including recordings from six monkeys and five tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "We wished to compare both approaches directly, using a very diverse dataset including recordings from six monkeys and five tasks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the motivation for the current study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C177",
+    "claim": "The authors also compared a third approach based on a more recent GAN architecture, Cycle-GAN.",
+    "claim_type": "EXPLICIT",
+    "source": "We also compared a third approach based on a more recent GAN architecture, Cycle-GAN (Zhu et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the scope of the comparison.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C178",
+    "claim": "Cycle-GAN has the potential advantage over ADAN that it reduces the search space of aligners by encouraging the learned transformation to be a bijection, which might help stabilize its performance.",
+    "claim_type": "EXPLICIT",
+    "source": "Cycle-GAN has the potential advantage over ADAN that it reduces the search space of aligners by encouraging the learned transformation to be a bijection, which might help stabilize its performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a hypothesis about the advantage of Cycle-GAN.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C179",
+    "claim": "Unlike ADAN and PAF, the Cycle-GAN architecture does not require computation of a low-dimensional manifold underlying the neural population activity, allowing its straightforward use with spike-rate based decoders.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, unlike ADAN and PAF, the Cycle-GAN architecture does not require computation of a low-dimensional manifold underlying the neural population activity, allowing its straightforward use with spike-rate based decoders.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an advantage of Cycle-GAN.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C180",
+    "claim": "Both ADAN and Cycle-GAN achieved higher performance than PAF, but each method had tradeoffs.",
+    "claim_type": "EXPLICIT",
+    "source": "Both ADAN and Cycle-GAN achieved higher performance than PAF, but each method had tradeoffs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the findings.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C181",
+    "claim": "Although ADAN needed less time to train than Cycle-GAN, PAF was much faster to train than both GAN methods.",
+    "claim_type": "EXPLICIT",
+    "source": "Although ADAN needed less time to train than Cycle-GAN, PAF was much faster to train than both GAN methods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C182",
+    "claim": "While slower, Cycle-GAN was easier to train than ADAN, in the sense that it was less sensitive to hyperparameter values and therefore likely to be more effective 'out-of-the-box', and when working with different data binning and sampling rates.",
+    "claim_type": "EXPLICIT",
+    "source": "But while slower, Cycle-GAN was easier to train than ADAN, in the sense that it was less sensitive to hyperparameter values and therefore likely to be more effective 'out-of-the-box', and when working with different data binning and sampling rates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the hyperparameter analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C183",
+    "claim": "Importantly, Cycle-GAN also had clearly superior performance compared to both ADAN and PAF when tested with continuously recorded data (with no trial segmentation).",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, Cycle-GAN also had clearly superior performance compared to both ADAN and PAF when tested with continuously recorded data (with no trial segmentation).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the continuous recording analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C184",
+    "claim": "Overall, the authors' work suggests that GAN-based alignment, and Cycle-GAN in particular, is a promising method for improving the stability of an iBCI over time.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, our work suggests that GAN-based alignment, and Cycle-GAN in particular, is a promising method for improving the stability of an iBCI over time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the main conclusion of the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

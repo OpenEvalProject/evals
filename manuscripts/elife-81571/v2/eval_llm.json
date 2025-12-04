@@ -1,0 +1,223 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C44",
+      "C87"
+    ],
+    "result": "Unrestrained all-atom MD simulations reveal that the amphipathic helix (AH) domains of M2 are highly dynamic and spontaneously break fourfold symmetry on microsecond timescales, while the transmembrane (TM) domain remains stable. This flexibility is robust across different membrane packing conditions and provides distance distributions closer to experimental DEER measurements than static structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C34, C36-C39, C44, and C87 collectively demonstrate AH domain flexibility through quantitative RMSD measurements (~7 \u00c5 for AH vs ~1 \u00c5 for TM), comparison with DEER data, and reproducibility across multiple simulation conditions. The MD simulations directly show symmetry breaking and the energetic favorability of AH reorientation, with consistent results before and after membrane repacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C88"
+    ],
+    "result": "Initial MD simulations exhibited significant differential leaflet tensions (-10.8 mN/m upper, 24.6 mN/m lower) due to improper lipid packing around the asymmetric M2 protein. Rebalancing to 200 upper/183 lower lipids restored leaflet tension symmetry while membrane shape remained robust across packing conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 and C88 document a methodological issue and its resolution with quantitative pressure tensor analysis. The identification of differential tension, systematic repacking studies, and demonstration that membrane shape is insensitive to packing while other properties change substantially provides important validation of the simulation protocol and highlights technical considerations for asymmetric membrane proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C61",
+      "C62",
+      "C63",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "All three M2 conformations (fourfold 2L0J, twofold parallel AH, twofold 2N70) induce pronounced curvature and pinching (4-8 \u00c5) in the extracellular leaflet while the cytoplasmic leaflet remains flat with significant lipid tilt (up to 30\u00b0) around the AH domains. The twofold symmetric conformations produce anisotropic deformation patterns reflecting their symmetry, while 2L0J produces radially symmetric patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C45-C49, C61-C63, C73-C75 describe consistent membrane deformation patterns across three protein conformations with quantitative measurements from restrained MD simulations. The mechanistic explanation (lipid tail wrapping around AH domains reduces vertical reach, upper leaflet compensates) is supported by atomic-level snapshots and surface analysis. The correlation between protein symmetry and membrane deformation pattern is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Lipid tilt analysis reveals asymmetric behavior between leaflets: the lower leaflet exhibits strong tilt (up to 30\u00b0 at protein, decaying to 15\u00b0 at boundary) while the upper leaflet shows minimal tilt. The fourfold 2L0J produces rotationally symmetric tilt patterns, while twofold structures produce less symmetric patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C69-C72 provide quantitative tilt measurements from MD simulations with clear spatial patterns. The asymmetry between upper and lower leaflets is consistently observed across all three conformations, and the correlation between protein symmetry and tilt pattern symmetry is well-documented through 2D surface plots and radial distribution analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "A continuum elastic membrane model based on Helfrich energy functional and mattress model, parametrized with MD-derived boundary conditions, reproduces MD membrane shapes remarkably well and predicts membrane deformation energies of 36-115 kT for the three M2 conformations in cholesterol-rich membranes (15-39 kT in cholesterol-free membranes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 and C77-C79 describe the continuum model methodology and its validation against MD results. The qualitative and quantitative agreement between MD and continuum surfaces (Figure 10) supports the model's validity. The energy predictions are substantial but fall within ranges reported for other membrane proteins. Differences between methods are appropriately attributed to boundary conditions and system size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C52",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C91"
+    ],
+    "result": "All three M2 conformations are strongly destabilized in outward-budding convex spherical caps (30-52 kT penalty at 125 \u00c5 radius) and stabilized in inward-budding concave caps. This explains the experimental observation that M2 is excluded from the convex cap of budding virions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C52, C80-C83, C91 present consistent continuum model predictions across all three conformations with quantitative energy values. The mechanistic explanation (upper leaflet pinching opposes convex cap curvature) is clear and supported by visualization. The corroboration with experimental observations of M2 exclusion from viral caps (C82, citing Rossman et al. 2010) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C89",
+      "C90",
+      "C92",
+      "C93"
+    ],
+    "result": "The twofold symmetric parallel AH domain model is uniquely stabilized in negative Gaussian curvature (NGC) saddles by 4 kT at ~33 nm radius, potentially leading to 50-400-fold enrichment at budding necks. The fourfold 2L0J and twofold 2N70 structures are not stabilized in NGC. C2 symmetry is necessary but not sufficient for NGC stabilization; full folding and insertion of AH domains is also required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C53-C56, C89-C90, C92-C93 provide the key mechanistic insight for M2 curvature sensing. The 4 kT stabilization energy and ~33 nm optimal radius closely match the ~25 nm stalled bud size observed experimentally. The comparative analysis showing that 2N70 (also C2) is not stabilized demonstrates that symmetry alone is insufficient. The mechanistic explanation invoking strain relief (C92) is consistent with the MD-derived deformation patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Membrane composition significantly affects curvature sensing: in thinner, cholesterol-free membranes (28.5 \u00c5), all energies are reduced in magnitude, NGC stabilization of the parallel AH model is diminished, and proteins become destabilized in concave membranes compared to thick, cholesterol-rich membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 describe systematic continuum model calculations with varied membrane parameters. The results are qualitatively consistent with expectations based on reduced moduli and better hydrophobic matching in thinner membranes. This analysis appropriately addresses the limitation that simulated membranes differ from viral membrane composition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C96"
+    ],
+    "result": "The viral membrane composition (enriched in sphingolipids, cholesterol, PE, and PS compared to the simulated PC/PG/cholesterol mixture) would likely rigidify the membrane and enhance the reported energies, though the exact effects of sphingolipids and headgroup changes remain uncertain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57 and C96 acknowledge compositional differences between simulated and viral membranes with appropriate citations. However, C96's prediction about cholesterol effects is speculative, and the authors correctly note uncertainty about how other compositional changes would affect results. Additional simulations would be needed to quantify these effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The MD simulations failed to identify cholesterol binding events or hotspots on the microsecond timescale, despite experimental evidence for cholesterol binding to M2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 reports a negative result with appropriate caveats about potential causes (backbone restraints, inadequate sampling). The authors appropriately cite experimental evidence (Elkins et al. 2017) showing cholesterol binding exists, making this a limitation rather than a contradiction. The timescale and restraint issues are plausible explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "M2 proton channels stabilize regions of high negative Gaussian curvature at budding virion necks through their cytoplasm-facing amphipathic helix, with constructs containing the transmembrane helix showing enhanced curvature generation compared to AH alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 summarize the main findings supported by the computational results (C7, C54-C55) showing 4 kT stabilization in NGC saddles for the parallel AH model. The statement about TM enhancement (C3) is supported by prior experimental work (citations) and consistent with the finding that the parallel AH model (which includes TM-mediated tetramerization) shows NGC stabilization while isolated AH domains would not.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The 2L0J structure may represent M2 in flat membranes while 2N70 may represent M2 in highly curved environments, and many structural differences could be explained by considering membrane mimetic curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C95 are explicitly speculative hypotheses about structural states. While the continuum model results showing different curvature preferences provide some support, the authors appropriately mark these as suppositions. The hypothesis is plausible but would require additional experimental or computational validation to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C58"
+    ],
+    "result": "Full-length M2 is likely more dynamic in the C-terminal region than the conductance domain constructs studied, with DEER studies suggesting greater propensity to explore C2 conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C58 extrapolate from CD construct simulations to full-length protein behavior. While C58 cites DEER evidence (Herneisen et al. 2017) supporting greater C2 propensity in full-length M2, C97's speculation about increased dynamics is reasonable but unvalidated. The authors appropriately express uncertainty about structural implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Future therapeutic strategies could target M2's membrane-bending function through higher-affinity ligands for the alternate rimantadine site or the cholesterol binding groove, and combining unrestrained MD with continuum calculations may identify optimal drug-binding conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C100 propose future research directions. While C99 cites experimental evidence for cholesterol binding at tetramer interfaces, the therapeutic potential (C98) and methodological suggestions (C100) are speculative. These are reasonable proposals but represent future work rather than supported conclusions from the current study.",
+    "result_type": "MINOR"
+  }
+]

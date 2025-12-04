@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C84",
+      "C85"
+    ],
+    "result": "The manuscript establishes the biological context of adult neurogenesis in the dentate gyrus, describing how immature granule cells (GCs) develop distinct properties over time and integrate into hippocampal circuitry. These claims summarize prior knowledge about neurogenesis, connectivity, electrophysiological properties, in vivo activity patterns, and behavioral contributions to pattern separation, primarily supported by citations to previous literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C27, C84-C85 provide comprehensive background on adult neurogenesis and immature GC properties, all supported by appropriate citations to established literature. These claims accurately represent prior work and provide necessary context for the current study. No experimental data from the current manuscript is required to support these background claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Passive electrophysiological properties (input resistance and time constant) of GCs decrease with age, and immature GCs fire at higher frequencies than mature GCs when injected with depolarizing current steps of the same amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by experimental data shown in Figure 1\u2014figure supplement 1 and are consistent with previous reports (Mongiat et al., 2009; Yang et al., 2015). The measurements use standard electrophysiological techniques with appropriate controls, and the findings replicate established observations, validating the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Cross-correlation analysis between stimulus and response reveals that GCs' responses become faster (decreased lag) and more strongly aligned with the stimulus (increased peak value) with maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are supported by cross-correlation analysis shown in Figure 1F. The negative correlation between lag and age (\u03c1=-0.30, p=0.010) and positive correlation between peak value and age (\u03c1=0.25, p=0.047) provide statistical support. The inference that responses become faster and more aligned is logically derived from these correlations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C37",
+      "C4"
+    ],
+    "result": "Immature GCs produce less reliable responses than mature GCs, exhibiting imprecise spike timings across repeated stimulation. Older pairs of GCs show larger coincidence ratios, indicating more similar responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C35, C37 are supported by coincidence ratio and reliability analyses (Figure 1H-J). Reliability increased with age (\u03c1=0.44, p=2.7\u00d710\u207b\u2074), and this effect persisted after controlling for firing rate differences (Figure 1\u2014figure supplement 2). The coincidence ratio analysis provides a rigorous quantitative measure of response variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C48",
+      "C49",
+      "C50",
+      "C86",
+      "C87",
+      "C95"
+    ],
+    "result": "Spike response model (SRM) fitting reveals that immature GCs integrate stimuli over longer time scales, have larger input resistance, faster membranes, and exhibit weaker postspike refractory effects compared to mature GCs. The longer time constants partly explain the lower reliability of immature GCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42, C48-C50, C86-C87, C95 are supported by SRM parameter analysis (Figure 2). The model successfully captures both subthreshold and spiking responses (Figure 2H, Figure 2\u2014figure supplement 1). The correlation between time constant and reliability (Figure 2J, \u03c1=-0.61, p=6.4\u00d710\u207b\u2077) provides strong evidence for the mechanistic link. The SRM parameters are validated against passive properties and show expected biophysical relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C88",
+      "C5"
+    ],
+    "result": "SRM parameters can discriminate GCs' ages with cross-validated accuracies of 0.72 for mGCs and 0.75 for 4wGCs using linear discriminant analysis (LDA). The parameters indicate that immature GCs perform differential encoding of stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C45-C47, C88 are supported by LDA classification results (Figure 2L). The classification accuracies are substantially above chance (0.33 for three classes), and the observation that 5wGCs are closer to 4wGCs than mGCs in parameter space is consistent with their intermediate maturation state. The claim about differential encoding (C5) is a reasonable inference from the distinct parameter values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C60",
+      "C89"
+    ],
+    "result": "Single-cell decoding analysis shows that mature GCs reduce uncertainty about the stimulus more than immature GCs before a spike, produce more precise stimulus reconstructions, and convey more information about the stimulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C60, C89 are supported by model-based Bayesian decoding analysis (Figure 3). The minimum uncertainty reduction correlates with age (Figure 3C, \u03c1=-0.51, p=6.0\u00d710\u207b\u2075). Both r\u00b2 and mutual information improve with maturation even after controlling for firing rate (Figure 3F). The decoding framework is appropriately applied and validated against experimental data (Figure 3\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C96"
+    ],
+    "result": "Immature GCs benefit more from using multiple trials for decoding due to their noisier responses, and reliable neurons generally achieve better decoding performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C96 are supported by multi-trial decoding analysis (Figure 3G-J, Figure 3\u2014figure supplement 2). The correlation between reliability and both r\u00b2 (\u03c1=0.71, p=1.2\u00d710\u207b\u2079) and information (\u03c1=0.62, p=5.1\u00d710\u207b\u2077) when equalizing spike counts (Figure 3I-J) provides strong evidence. The observation that immature GCs benefit more from multiple trials is a logical consequence of their higher trial-to-trial variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Mature GCs mostly increase decoding performance when paired with other mature GCs rather than with immature ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by pair decoding analysis (Figure 3\u2014figure supplement 3). Same-age mature pairs achieved higher r\u00b2 and information values than mixed-age pairs containing mature GCs. This result is consistent with the individual performance differences but contrasts with the later population-level findings, setting up an important observation about synergistic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C90",
+      "C97",
+      "C106"
+    ],
+    "result": "A greedy algorithm for constructing optimal populations unexpectedly selects immature GCs from the third step onward with increasing preference. Final 12-neuron populations contain approximately 43% mature, 32% 5-week, and 25% 4-week GCs. Decoding performance results from non-trivial synergy between GCs, and optimal populations are not simply composed of the best individual neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64, C66-C67, C90, C97, C106 are supported by greedy population construction analysis (Figure 4A-E, Figure 4\u2014figure supplement 1). The preferential selection of immature GCs despite their worse individual performance is a key finding. The observation that 51% of SGCs were never selected and that highly selected immature GCs often performed poorly individually (Figure 4E) provides strong evidence for synergistic effects. The greedy algorithm is appropriate for this optimization problem.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C75",
+      "C6"
+    ],
+    "result": "Mixed-age populations achieve a 3% improvement in stimulus reconstruction (r\u00b2) compared to mature-only populations. Despite individual unreliability, immature GCs enhance the fidelity of population-encoded signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C69, C75 are supported by population decoding comparison (Figure 4F-H). The steady decrease in relative reconstruction error reaching 3% improvement (Figure 4H) is statistically meaningful given the large number of decoding iterations (\u226520 per population). The result is robust across different population sizes and holds even with theta-modulated stimuli (Figure 4\u2014figure supplement 3). This is the central finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Populations of mature SGCs achieved larger mutual information values than mixed-age populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by Figure 4G. However, the authors appropriately note that mutual information and reconstruction fidelity (r\u00b2) measure different aspects of encoding. The higher information in mature populations despite worse reconstruction suggests that mutual information alone may not capture all relevant aspects of stimulus representation. This nuanced finding is well-explained in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C76"
+    ],
+    "result": "In the presence of theta rhythms, stimulus decoding is improved by immature SGCs. The diversity contributed by immature GCs could be beneficial for transmitting distinct properties of stimuli with rich temporal structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C76 are supported by theta-modulated stimulus analysis (Figure 4\u2014figure supplement 3). The SRM successfully extrapolates to theta-modulated stimuli, and mixed-age populations show improved r\u00b2 compared to mature-only populations. The inference about benefits for temporally structured stimuli (C76) is reasonable given the results with both white noise and theta-modulated inputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C7",
+      "C91"
+    ],
+    "result": "Mixed-age populations outperform mature-only populations at discriminating stimuli with medium degrees of separation, but not at high or low separation. This suggests that age heterogeneity can be leveraged for pattern separation of time-varying stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C77-C80, C91 are supported by pattern discrimination analysis (Figure 5B). The differential performance at medium separation (p=1.0\u00d710\u207b\u00b2) is consistent with behavioral studies showing that neurogenesis affects fine but not coarse discrimination (Clelland et al., 2009). The discrimination task appropriately tests pattern separation in the temporal domain. The inference about leveraging age heterogeneity (C80) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C103"
+    ],
+    "result": "Adding noise is detrimental to discrimination performance, but mixed-age populations consistently outperform mature-only populations for moderate amounts of noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82, C103 are supported by noise corruption analysis (Figure 5C). The consistent advantage of mixed-age populations at moderate noise levels (p=3.6\u00d710\u207b\u00b3 at 0.25 noise, p=2.3\u00d710\u207b\u00b2 at 0.5 noise) demonstrates robustness of the population benefit. The experimental design appropriately tests whether diversity helps average out uncorrelated noise.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C109"
+    ],
+    "result": "Immature GCs introduce heterogeneity at the population level that can be leveraged to reconstruct incoming stimuli better and discriminate them from others. The intrinsic diversity of immature GCs is, by itself, beneficial for stimulus representation and discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C109 represent the main conclusions of the study, synthesizing results from population decoding and discrimination analyses. These conclusions are well-supported by the collective evidence from claims C6-C7, C62-C82, C90-C91, C103. The study provides strong computational evidence for functional benefits of age heterogeneity introduced by neurogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C104",
+      "C105",
+      "C107",
+      "C108"
+    ],
+    "result": "The manuscript discusses potential mechanisms and in vivo implications, including that immature GCs are less controlled by inhibitory circuits, connections are still maturing at 4 weeks, network effects could further increase reliability differences, higher in vivo firing rates would improve immature GC contributions, and immature GCs may code different stimulus aspects or modulate mature GC activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C94, C98-C99, C100-C102, C104-C105, C107-C108 are primarily speculative or cite prior work to contextualize findings. While these discussions are reasonable and well-grounded in the literature, they represent hypotheses and interpretations rather than direct findings of the current study. Some claims (C100-C101) cite prior in vivo work appropriately. The speculative claims (C94, C99, C102, C104, C107-C108) are clearly presented as possibilities requiring future investigation.",
+    "result_type": "MINOR"
+  }
+]

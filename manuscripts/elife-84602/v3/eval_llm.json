@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C7",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "EEG/MEG recordings are noisy but temporally precise, making them valuable for neurolinguistic studies. Frequency tagging addresses this noisiness by isolating responses at specific frequencies, providing more robust signals than traditional ERP paradigms, which are particularly difficult to obtain in language studies due to semantic satiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C7, C22-C24 establish well-known properties of EEG/MEG and frequency tagging based on general knowledge and citations. These are background claims that provide context for the study and are appropriately supported by the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Frequency tagging has been extensively applied across multiple domains including vision, audition, somatosensation, nociception, and various cognitive phenomena. It has also been used in clinical assessment of disorders and proposed as a mechanism for neural signal routing, assembly formation, and coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C21 are all supported by appropriate citations to prior work. These establish the broad applicability and theoretical importance of frequency tagging and phase coherence, providing necessary background for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "In the Burroughs et al. 2021 phrase experiment, words were presented at 3.125 Hz (syllable rate) with a phrase frequency of 1.5625 Hz. The AN (adjective-noun) condition showed a significant neural response at the phrase rate compared to AV (adjective-verb), as measured by ITPC, suggesting sensitivity to grammatical phrase structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C34, C101-C104 describe the experimental design and ITPC results from Burroughs et al. 2021. These are appropriately cited and the ITPC analysis is shown in Figure 2, providing empirical support for the phrase-rate response in the AN condition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C40",
+      "C41"
+    ],
+    "result": "Standard statistical approaches to the phrase data have limitations: uncorrected tests yield many significant comparisons (54/480), cluster-based permutation testing cannot make claims about individual electrodes, and ITPC is a summary statistic that hides individual trial information in a two-stage analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C40-C41 identify specific limitations of traditional approaches. C35 provides concrete statistical results, C40 cites appropriate literature (Sassenhagen and Draschkow, 2019) on cluster-based testing limitations, and C41 correctly characterizes ITPC as a summary statistic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Classical circular statistics approaches like the Rayleigh test are incompatible with the neurolinguistic study because it would be difficult to specify an expected phase, given the high variability of mean phase angles across participants (as shown in Figure 4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 correctly describe the Rayleigh test and explain why it's unsuitable for this application. The high variability in mean phase across participants is demonstrated in Figure 4, supporting the argument that classical approaches requiring an expected phase are inappropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The Bayesian approach provides advantages over ITPC: it permits per-item analysis, provides an explicit interpretable generative model, quantifies uncertainty, and describes the putative stochastic process generating the data while stating underlying assumptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C47-C49 describe theoretical advantages of the Bayesian approach. These are standard benefits of Bayesian methods and are demonstrated through the subsequent analysis. The per-item analysis is shown throughout the results, and uncertainty quantification is evident in the HDI plots.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The wrapped Cauchy distribution has a closed form and a well-defined convenient value for the mean resultant, making it suitable for modeling circular phase data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 state mathematical properties of the wrapped Cauchy distribution. These are correct mathematical facts, and the equations provided in the manuscript support these claims. The choice is well-justified for the application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C110"
+    ],
+    "result": "The Bayesian model was implemented using NUTS sampling in Stan with 4 chains of 4000 iterations (half warmup). Convergence diagnostics showed good mixing with all R-hat values <1.006.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55, C110 describe the computational implementation and diagnostics. Figure 9 shows the diagnostic plots supporting good convergence. The R-hat values and other diagnostics indicate successful sampling without pathological behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61"
+    ],
+    "result": "Bayesian analysis of the phrase data shows a phase peak at 1.5625 Hz for AN but not other conditions, with higher mean resultant length for AN. The response is localized to left temporal and right parietal regions and appears specific to adjective-noun phrases rather than phrases in general.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58, C60-C61 describe the main Bayesian results for the phrase data, supported by Figure 6. The HDI analysis clearly shows AN differs from other conditions, and the electrode-level analysis (Figure 6C) shows clearer spatial localization than ITPC. The specificity to AN (not MP) supports the interpretation about phrase type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C62",
+      "C63"
+    ],
+    "result": "The MP condition (mixed phrases) shows no response despite containing grammatical phrases, with higher across-participant variation than AN or unstructured conditions. Specific electrodes (P4, T7) show clear differences between AN and AV conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C62-C63 provide additional details about the Bayesian results. Figure 7B shows the variation patterns across conditions, and Figure 7D shows the electrode-specific posteriors for P4 and T7, supporting these claims with appropriate uncertainty quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C66",
+      "C112",
+      "C115"
+    ],
+    "result": "The Bayesian approach is more data-efficient than standard approaches, detecting real differences with smaller participant numbers and fewer trials. Simulations show the Bayesian model can detect signals with at least half the trials required by frequentist approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C66, C112, C115 assert superior data efficiency. Figures 12-14 provide simulation and subsampling evidence supporting these claims. Figure 12A shows bias reduction and better detection at low sample sizes, while Figure 14A demonstrates detection with half the trials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The statistical learning dataset presented syllables at 4 Hz (pseudoword frequency 1.33 Hz) to 39 participants with 64 electrodes. The EXP condition had six pseudowords with within-word transition probability of 1 and between-word probability of 0.2, while BL used the same syllables with different transition rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71, C105-C109 describe the statistical learning experimental design. These are factual descriptions of the dataset from Pinto et al. 2022, appropriately cited and illustrated in Figure 3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "ITPC analysis of the statistical learning data shows strong responses at 4 Hz for both conditions, with increases at 1.33 Hz and 5.33 Hz. Cluster-based testing found no significant clusters at the pseudoword frequency or first harmonic, but a mid-to-frontal cluster at the second harmonic (EXP>BL) and a frontal cluster at syllable rate (BL>EXP).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74, C76-C78 describe ITPC results for the statistical learning data, shown in Figure 10. The statistical tests and cluster analysis are appropriately conducted, though the results show a complex pattern with the strongest effect at the second harmonic rather than the fundamental frequency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Bayesian analysis of the statistical learning data (2000 iterations per chain) shows weak evidence at the pseudoword rate (1.33 Hz, zero ~1.6 SD from mean), no difference at the first harmonic (2.66 Hz), the largest difference at the second harmonic (5.33 Hz, zero ~3.24 SD from mean), and BL>EXP at syllable rate (4 Hz, zero ~1.59 SD from mean).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C82, C84-C88 describe the Bayesian results for statistical learning, shown in Figure 11A and Table 1. The posterior distributions and standard deviation calculations are clearly presented. The pattern matches the ITPC results but provides more nuanced uncertainty quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "At the second harmonic, every electrode shows higher mean resultant length for EXP vs BL, with a frontal response at syllable rate. Evidence for statistical learning is strongest at the second harmonic, with weaker evidence at the pseudoword frequency, limited by some participants showing opposite effects. Individual participant evidence for statistical learning is difficult to find.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 provide interpretation of the statistical learning results. Figure 11B shows the electrode-level effects, and the claim about participant variability is supported by the posterior distributions. The citation to Pinto et al. 2022 (C94) appropriately contextualizes the difficulty of finding individual-level effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "The Bayesian approach reprises the original conclusions of the phrase data analysis but does so in a more expressive and natural way.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 is supported by the comparison between Figures 2 and 6, showing that the Bayesian analysis reaches similar conclusions (AN shows phrase-rate response) but with clearer spatial localization and better uncertainty quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The Bayesian approach is more computationally demanding and requires careful model formulation and prior selection, but is superior due to its clarity, complete presentation of evidence, and data efficiency. Bayesian methods are particularly valuable when data are limited and noisy with high uncertainty, and when datasets have strong structure. These properties make Bayesian methods likely to be helpful for EEG data generally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 provide a balanced assessment of the Bayesian approach. The computational demands are acknowledged (C95-C96), the advantages are demonstrated throughout the results (C97), and the conditions favoring Bayesian methods (C98-C99) are well-established principles. The application to EEG (C100) is a reasonable inference given the demonstrated benefits.",
+    "result_type": "MAJOR"
+  }
+]

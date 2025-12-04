@@ -1,0 +1,2332 @@
+{
+  "submission": {
+    "id": "c81d9f27-82ab-45e1-bc37-1b0a1af11a69",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:50:48.018654Z",
+    "updated_at": "2025-12-04T03:50:48.018654Z"
+  },
+  "content": [
+    {
+      "id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "submission_id": "c81d9f27-82ab-45e1-bc37-1b0a1af11a69",
+      "content_type": "manuscript",
+      "content_text": "# Pancreatic cancer symptom trajectories from Danish registry data and free text in electronic health records\n\n## Authors\n\n- Jessica Xin Hjaltelin<sup>1</sup> ([ORCID: 0000-0002-7878-7830](https://orcid.org/0000-0002-7878-7830))\n- Sif Ingibergsd\u00f3ttir Novitski<sup>1</sup> ([ORCID: 0000-0003-2577-155X](https://orcid.org/0000-0003-2577-155X))\n- Isabella Friis J\u00f8rgensen<sup>1</sup>\n- Troels Siggaard<sup>1</sup> ([ORCID: 0000-0003-0235-6150](https://orcid.org/0000-0003-0235-6150))\n- Siri Amalie Vulpius<sup>1</sup>\n- David Westergaard<sup>1</sup>\n- Julia Sidenius Johansen<sup>2</sup>\n- Inna M Chen<sup>2</sup>\n- Lars Juhl Jensen<sup>1</sup>\n- S\u00f8ren Brunak<sup>1</sup> ([ORCID: 0000-0003-0316-5866](https://orcid.org/0000-0003-0316-5866)) \u2020\n\n### Affiliations\n\n1. Novo Nordisk Foundation Center for Protein Research, Faculty of Health and Medical Sciences, University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))\n2. Department of Oncology, Copenhagen University Hospital - Herlev and Gentofte Herlev Denmark ([ROR:05bpbnx46](https://ror.org/05bpbnx46))\n3. Copenhagen University Hospital, Rigshospitalet, Blegdamsvej Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPancreatic cancer is one of the deadliest cancer types with poor treatment options. Better detection of early symptoms and relevant disease correlations could improve pancreatic cancer prognosis. In this retrospective study, we used symptom and disease codes (ICD-10) from the Danish National Patient Registry (NPR) encompassing 6.9 million patients from 1994 to 2018,, of whom 23,592 were diagnosed with pancreatic cancer. The Danish cancer registry included 18,523 of these patients. To complement and compare the registry diagnosis codes with deeper clinical data, we used a text mining approach to extract symptoms from free text clinical notes in electronic health records (3078 pancreatic cancer patients and 30,780 controls). We used both data sources to generate and compare symptom disease trajectories to uncover temporal patterns of symptoms prior to pancreatic cancer diagnosis for the same patients. We show that the text mining of the clinical notes was able to complement the registry-based symptoms by capturing more symptoms prior to pancreatic cancer diagnosis. For example, \u2018Blood pressure reading without diagnosis\u2019, \u2018Abnormalities of heartbeat\u2019, and \u2018Intestinal obstruction\u2019 were not found for the registry-based analysis. Chaining symptoms together in trajectories identified two groups of patients with lower median survival (<90 days) following the trajectories \u2018Cough\u2192Jaundice\u2192Intestinal obstruction\u2019 and \u2018Pain\u2192Jaundice\u2192Abnormal results of function studies\u2019. These results provide a comprehensive comparison of the two types of pancreatic cancer symptom trajectories, which in combination can leverage the full potential of the health data and ultimately provide a fuller picture for detection of early risk factors for pancreatic cancer.\n\n## Introduction\n\nPancreatic cancer has been predicted to become the second leading cause of cancer deaths, surpassing breast, colorectal, and prostate cancer (Rahib et al., 2021). It has few and generic symptoms resulting in late diagnosis (Chari et al., 2015; Kim and Ahuja, 2015) and poor prognosis with a 5-year survival rate of 11% (American Cancer Society, 2020). Hence, improved knowledge of symptoms and diseases occurring early is of high importance to treat this cancer type at a curable stage and provide better prognosis and guide screening programs for pancreatic cancer (Risch et al., 2015). If the cancer is detected at an early stage, where surgical removal of the tumour is possible, the survival rate increases to 42% (\u2018American Cancer Society\u2019, 2020). The patients with stage I disease have the highest 5-year survival of 83.7% (Blackford et al., 2020).\n\nSymptoms of pancreatic cancer are often mistaken for signs of less severe illnesses and overlooked in clinical practice. Some of the most frequent symptoms linked to pancreatic cancer are weight loss, abdominal pain, and anorexia (Hidalgo, 2010; Mizrahi et al., 2020; Park et al., 2021). Others include upper abdominal pain, cholestasis, nausea (Hidalgo, 2010), and dark urine and thirst (Liao et al., 2021). New-onset diabetes has additionally been found to co-occur with pancreatic cancer when accompanied by weight loss (Yuan et al., 2020; Hart et al., 2011; Bruenderman and Martin, 2015).\n\nNational or regional disease registries hold longitudinal data on disease development. The registries in the Nordic countries are of high quality and among the oldest covering treatment in one-payer health care systems (Laugesen et al., 2021). The National Danish Patient Registry (NPR) contains hospital diagnoses since 1977 and allows for large data-driven studies to detect temporal disease progression patterns relevant in the context of stratified medicine (Jensen et al., 2014; Siggaard et al., 2020, Lademann et al., 2019). Recent examples are the characterization of multimorbidity correlations across cancer types (Hu et al., 2019) and the detection of pancreatic cancer using artificial intelligence (Placido et al., 2023). However, much of the deeper phenotypic patient information resides within the free text of the electronic health records (EHRs; Jensen et al., 2012; Eriksson et al., 2014; Soguero-Ruiz et al., 2016; Delespierre et al., 2017). A small-scale study using 4080 mixed types of cancers attempted to build more general \u2018event trajectories\u2019 using text mining and pooled analysis (Jensen et al., 2017). A prospective study investigating initial symptoms and diagnostic interval (time from onset to diagnosis) for known pancreatic cancer symptoms found no difference between pancreatic cancer patients and patients suspected of having pancreatic cancer (Walter et al., 2016). It has also been suggested that symptoms appear sporadically, adding to the complex nature of the disease manifestation (Evans et al., 2014). Other studies used primary care EHRs to detect pancreatic cancer symptoms and found jaundice (Stapley et al., 2013), back pain, lethargy, and new-onset diabetes to be linked to pancreatic cancer (Keane et al., 2014). These studies detected pancreatic cancer symptoms using a single-disease approach, not considering the temporal ordering of symptoms or diseases.\n\nIn this paper, we present a large-scale study to investigate pancreatic cancer symptoms longitudinally. We cover all symptoms included in the International Classification of Disease (ICD-10) terminology symptom chapter 18. Additionally, we also include in the text mining vocabulary other known or suggested pancreatic cancer symptoms. We generate and compare disease and symptom trajectories using registry data and clinical notes in EHRs to characterize the temporal ordering of symptoms across data sources.\n\n## Results\n\n### Extracting patient-level data from the Danish National Patient Registry and free text electronic health records\n\nThe Danish National Patient Registry (NPR) data spans the period 1994\u20132018, while the electronic health records (EHRs) used here are from 2006 to 2016. The NPR includes 6.9 million patients where 23,592 patients are diagnosed with pancreatic cancer. Of these we used 18,523 patients which also were confirmed by the Danish Cancer Registry. (Table 1). For a subset of 3078 patients, we extracted their corresponding EHRs. Almost as many females as males are identified with pancreatic cancer both in NPR and the EHRs (Table 1).\n\n**Table 1.**\n Data set and patient characteristics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>General cohort information</th>\n      <th>The National Patient Registry (NPR)</th>\n      <th>Electronic Health Records (EHRs)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data set timeline</td>\n      <td>1994\u20132018</td>\n      <td>2006\u20132016</td>\n    </tr>\n    <tr>\n      <td>N pancreatic cancer patients</td>\n      <td>23,592</td>\n      <td>3078</td>\n    </tr>\n    <tr>\n      <td>N controls</td>\n      <td>6.9 million</td>\n      <td>30,780</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Pancreatic cancer cohort information</td>\n    </tr>\n    <tr>\n      <td>Female</td>\n      <td>9328 (50.4%)</td>\n      <td>1506 (48.9%)</td>\n    </tr>\n    <tr>\n      <td>Male</td>\n      <td>9195 (49.6%)</td>\n      <td>1572 (51.1%)</td>\n    </tr>\n    <tr>\n      <td>Mean age at diagnosis (female/male)</td>\n      <td>73/69</td>\n      <td>72/70</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Age distributions (years)</td>\n    </tr>\n    <tr>\n      <td>&lt;40</td>\n      <td>139 (0.8%)</td>\n      <td>16 (0.52%)</td>\n    </tr>\n    <tr>\n      <td>40\u201350</td>\n      <td>733 (4.0%)</td>\n      <td>107 (3.48%)</td>\n    </tr>\n    <tr>\n      <td>50\u201360</td>\n      <td>2523 (13.6%)</td>\n      <td>352 (11.4%)</td>\n    </tr>\n    <tr>\n      <td>60\u201370</td>\n      <td>5288 (28.5%)</td>\n      <td>941 (30.6%)</td>\n    </tr>\n    <tr>\n      <td>70\u201380</td>\n      <td>6017 (32.5%)</td>\n      <td>1037 (33.7%)</td>\n    </tr>\n    <tr>\n      <td>&gt;80</td>\n      <td>3821 (20.6%)</td>\n      <td>625 (20.3%)</td>\n    </tr>\n  </tbody>\n</table>\n\nWe text-mined the pancreatic cancer patient symptom history in clinical notes five years prior to the cancer. We compared these symptoms to the most frequent symptoms in the NRP (Figure 1). These are counts and show an overview of identified symptoms, which could also be present in the control population. The text mining approach was able to identify 16 unique symptoms in the clinical notes, not registered in NPR (Figure 1A). The most frequent symptoms exclusively found in the clinical notes were conditions related to \u2018Intestinal disorders\u2019, \u2018Dorsalgia\u2019 and \u2018Embolisms\u2019 (Figure 1B). NPR contained 24 ICD-10 symptoms not found by text mining (Figure 1A). Frequent symptoms exclusively identified in the NPR data comprised findings related to \u2018Functional capacity\u2019, \u2018Dysphagia\u2019, \u2018Abnormal laboratory findings\u2019, \u2018Oedema\u2019, and \u2018Abnormal findings on medical images\u2019 (Figure 1C). In NPR and free text clinical notes, 57 symptoms were identified that occurred in both sources. Of these, the 15 most frequent symptoms from the free text clinical notes and the NPR were compared (Figure 1D). Amongst these, we could identify \u2018Pain\u2019, \u2018Nausea and vomiting\u2019, \u2018Abnormal blood-pressure reading\u2019, \u2018Abdominal and pelvic pain\u2019, and \u2018Symptoms and signs concerning food and fluid intake\u2019. From the hierarchical structure of the ICD-10 chapters, different levels of coding detail can be retrieved. In the symptom block \u2018Symptoms and signs concerning food and fluid intake\u2019, the majority of patients represent the subgroups \u2018Abnormal weight loss\u2019 (R63.4) and \u2018Anorexia\u2019 (R63.0). \u2018Nausea and vomiting\u2019, \u2018Abnormal blood-pressure reading\u2019 and \u2018Weight loss\u2019 were frequent symptoms in the free-text clinical notes, but have low occurrences in NPR. On the contrary, \u2018Abdominal and pelvic pain\u2019 was more frequent in NPR than in the clinical notes (Figure 1D). We also compared these symptoms to well-known pancreatic cancer symptoms (Figure 1\u2014figure supplement 1) showing that most of these are also identified via the two data types.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84919/elife-84919-fig1-v1.jpg)\n\n**Figure 1.:** (A) Symptoms before the pancreatic cancer diagnosis identified in NPR (NNPR = 24), by text mining of clinical notes from EHRs (Nnotes = 16) or in both data sources (Nboth = 57). (B) The top 10 most frequent symptoms that are only found in the clinical notes. (C) The top 10 most frequent symptoms in NPR. (D) The most frequent symptoms from the clinical notes and NPR, from the list of 57 overlapping symptoms. *Some symptom names have been shortened for overview (see Supplementary file 1b).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84919/elife-84919-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Type 2 diabetes/new-onset diabetes was not included in the well-known symptoms list (Supplementary file 1a), since this is coded as a disease in the ICD-10 chapter. This comparison only covers the ICD-10 symptom chapter (R chapter).\n\n### Temporality of symptoms from clinical notes\n\nThe distribution of symptoms registered over time can be seen for the most frequent symptoms that occur significantly more often in the pancreatic cancer patients compared to the matched control cohort (Figure 2). The symptom distributions are covering a five-year period before the pancreatic cancer diagnosis; the number of patients and p-values included in these can be found in Supplementary file 1c. If a symptom is registered multiple times in one hospital encounter it is only included once. All occurrences of a symptom during the five-year period are included for a patient. Some of the most frequent symptoms identified are symptoms related to \u2018Pain\u2019, \u2018Abdominal and pelvic pain\u2019, \u2018Nausea and vomiting\u2019, and \u2018Jaundice\u2019. Additionally, we also found \u2018Fever\u2019, \u2018Intestinal obstruction\u2019 and \u2018Anorexia\u2019 to be frequent and significant symptoms among the pancreatic cancer patients.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84919/elife-84919-fig2-v1.jpg)\n\n**Figure 2.:** The most common and significant (p<0.05) symptoms in the text-mined clinical notes are shown with survival information and time to pancreatic cancer diagnosis (Supplementary file 3). The symptoms are extracted over a 5-year period up to the time of the first pancreatic cancer diagnosis. If a symptom is noted more than once in one hospital encounter, the symptom is counted once only. The purple bars indicate patients with survival \u226490 days and the green bars indicate patients with a survival >90 days. Symptom names may have been shortened for overview (see Supplementary file 1b). Tumor stage has been calculated using the Danish cancer registry and the pancreatic cancer TNM staging classification version 7. Outlier dots have been removed to safeguard patient-sensitive information.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84919/elife-84919-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Significant symptoms are filtered so only those prior to a pancreatic cancer diagnosis with a RR>1 and p-value<0.05. Outlier dots has been removed to safeguard patient-sensitive information.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84919/elife-84919-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Pancreatic cancer cases with at least one clinical note 5 years prior to the cancer diagnosis. (B) Pancreatic cancer patients without any clinical notes 5 years prior to the cancer diagnosis. The information was extracted from the Danish Cancer Registry.\n\nSymptoms such as \u2018Jaundice\u2019, \u2018Disorders of porphyrin and bilirubin metabolism\u2019, and \u2018Intestinal obstruction\u2019 were observed closest to the pancreatic cancer diagnosis. The more general symptoms such as \u2018Pain\u2019, \u2018Intestinal disorders\u2019, \u2018Heartburn\u2019, and \u2018Fever\u2019 were found more distant in time to the pancreatic cancer diagnosis. \u2018Hepatomegali and splenomegali\u2019 was found to have the most differing distributions in time between the short and longer survival patient groups. For the short survival death group (\u226490 days), this symptom was detected closer to the cancer diagnosis, whereas the longer survival group had the symptom detected much further back in time to the cancer diagnosis. A similar pattern is seen for \u2018Intestinal disorders\u2019 and \u2018Heartburn\u2019.\n\nWe added cancer staging information from the Danish cancer registry (Gjerstorff, 2011) and calculated the stage via the pancreatic cancer TNM version 7 classification, showing that many of the patients have unknown staging information. However, we do see that there is a slight over representation of longer survival patients in the Jaundice symptoms patient group.\n\n### Text mining validation\n\nIn total, 2867 out of 3078 (93%) of the pancreatic cancer patients in clinical notes have at least one symptom identified by text mining. A control group of 30,780 patients was generated by matching birth year, diagnosis year, age and sex. From these, 25,085 patients (82%) had a match for at least one symptom from a general symptom dictionary generated by combining general symptoms from the (1) ICD-10 chapter 18, (2) known pancreatic cancer symptoms from the literature, and (3) a systematic review of clinical notes for pancreatic cancer patients. Text mining the clinical notes identified 73 unique level-3 coded symptoms for the pancreatic cancer cases and 79 unique symptoms for the control group. The performance of the text mining methodology, using symptoms in clinical notes, was validated to check that the text mining method can correctly identify general symptoms. We used a test corpus comprising a random extraction of 200 clinical notes from 200 different patients. In these notes, a total of 807 symptoms were manually annotated and the text mining method was able to identify 675 correctly and 132 symptoms were not found. This yielded a sensitivity score of 83.4%. A specificity score of 99.8% was obtained since most clinical notes comprise non-symptom words describing the patient\u2019s contact with the hospital. Symptoms incorrectly matched to the dictionary (false positives) constitute a total of 53 words and for example captured symptoms where the text mining did not catch the meaning of a negation.\n\n### Pancreatic cancer trajectories from NPR\n\nLongitudinal disease trajectories were generated for the pancreatic cancer patients, where significant directional diagnosis pairs were joined to represent patients that traverse a complete disease path. The width of the trajectories illustrates the size of a patient group that moves through a particular path. A patient can follow multiple paths. The ICD-10 disease codes from NPR were used to generate disease-wide trajectories (Figure 3\u2014figure supplement 1). In total 3863 patients followed at least one symptom trajectory which corresponds to 21% of all the pancreatic cancer cases (Supplementary file 1d). For comparison purposes, we show only significant symptom trajectories with codes from chapter 18 \u2018Symptoms, signs, and abnormal clinical and laboratory findings\u2019 in Figure 3. Most of the codes from the symptoms chapter appear after the diagnosis of pancreatic cancer, such as \u2018General disability\u2019, \u2018Malaise and fatigue\u2019, and \u2018Cachexia\u2019, whereas fewer symptoms are found prior to the cancer such as \u2018Jaundice\u2019, \u2018Haemorrhage\u2019, and \u2018Pain\u2019 (throat, chest, abdomen, and pelvis; Figure 3A). We picked 90 days to distinguish between the early and late death patient groups to investigate survival patterns for the trajectories, since only a small fraction of patients are resectable at time of diagnosis (Sgouros and Maraveyas, 2008; Berkman et al., 2023).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84919/elife-84919-fig3-v1.jpg)\n\n**Figure 3.:** (A) The registry symptom trajectories consist of significant disease pairs with a Relative Risk (RR) >1 (Supplementary file 1d). Each trajectory has a minimum of 100 patients. (B) Symptom trajectories from clinical notes consisting of significant disease pairs with Odds Ratio (OR) >1 (Supplementary file 1e). Each trajectory is followed by a minimum of 20 patients. The width of the trajectories indicates visually the number of patients. The purple-coloured trajectories represent patient groups with median survival \u226490 days. The green-coloured trajectories represent patient groups with median survival >90. Some symptoms names have been shortened for overview.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84919/elife-84919-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Significant length 3 and length 4 trajectories for the registry-based analysis using the 18,523 pancreatic cancer cases from the Danish National Patient Registry. The diseases and chapters are from the ICD-10 classification system. The length 4 trajectories have min. 80 patients per trajectory. The length 3 trajectories have min. 400 patients per trajectory.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84919/elife-84919-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Survival in months for patients in the registry-based disease trajectories for both length 3 and 4 (N=10,542). (B) Survival in months for patients in the text-mined symptom trajectories (N=311). The pancreatic cancer patient cohort from (B) is a subset of the pancreatic cancer patient cohort in A.\n\nFor the registry-based trajectories we could identify known symptoms related to pancreatic cancer such as \u2018Abdominal and pelvic pain\u2019, \u2018Syncope (fainting) and dizziness\u2019, \u2018Jaundice\u2019, \u2018Signs involving digestive system and abdomen\u2019, \u2018Signs involving urinary system\u2019 prior to the pancreatic cancer diagnosis. We also identified less known symptoms such as \u2018Haemorrhage\u2019 in respiratory pathways, \u2018Haematuria\u2019 (blood in urine) and \u2018Pain in throat and chest\u2019. Using the NPR registry, we also analysed significant pancreatic cancer disease trajectories across all disease chapters in the ICD-10 classification system (Figure 3\u2014figure supplement 1). We detected several disease associations in the cardiovascular chapter (Chapter 9) such as \u2018Angina pectoris\u2019 (chest pain), \u2018Acute myocardial infarction\u2019, \u2018Chronic ischemic heart disease\u2019, and \u2018Hypertension\u2019. We also found the well-known risk factor \u2018Type 2 Diabetes\u2019. Other disease associations found are part of the Digestive system chapter 11 including \u2018Cholelithiasis\u2019 (gallstones) and \u2018Disorders of lipoprotein metabolism\u2019. From both length three and four trajectories, we can observe that patients having several cardiovascular diseases prior to pancreatic cancer tend to have worse survival. We additionally looked into the temporality of the significant symptoms prior to the pancreatic cancer diagnosis (Figure 2\u2014figure supplement 1). We found \u2018Headache\u2019 and \u2018Enlarged lymph nodes\u2019 to be one of the symptoms furthest away from the cancer diagnosis, \u2018Abnormalities of heartbeat\u2019 and \u2018Pain in throat and chest\u2019 being detected closer, and \u2018Visible peristalsis\u2019 and \u2018Abdominal and pelvic pain\u2019 being detected closest to cancer diagnosis.\n\n### Pancreatic cancer trajectories from clinical notes\n\nThe symptom trajectories were generated for the pancreatic cancer patients with available clinical notes 5 years prior to the diagnosis (Figure 3B). All trajectories shown are significant in terms of direction with at least 20 patients following the complete path of three symptoms (Supplementary file 1e). In total 311 text-mined patients followed at least one trajectory which corresponds to 10% of all the pancreatic cancer cases. A patient can follow several symptom paths. Most of the trajectories begin with \u2018Pain\u2019. From the Pain symptom, a large group traverses into \u2018Jaundice\u2019 from which most patients either end up with \u2018Disorders of porphyrin and bilirubin metabolism\u2019, \u2018Fever\u2019, and \u2018Intestinal obstruction\u2019. Patient groups that follow the trajectory starting with \u2018Cough\u2019 leading to \u2018Jaundice\u2019 and ending up with \u2018Intestinal obstruction\u2019 have shorter median survival (median survival \u226490 days). Also, the trajectory starting with \u2018Pain\u2019 progressing into \u2018Jaundice\u2019 and ending with \u2018Abnormal results of function studies\u2019 shows lower survival.\n\nOverall, the trajectories progress from generic symptoms such as \u2018Pain\u2019, \u2018Abnormalities of heartbeat\u2019, \u2018Dizziness\u2019 and \u2018Polyuria\u2019 into more known risk factors of pancreatic cancer involving \u2018Abdominal and pelvic pain\u2019, \u2018Anorexia\u2019, and \u2018Jaundice\u2019. The survival distribution of the patients following the text-mined symptom trajectories (Figure 3\u2014figure supplement 2A) resembles the survival distribution for the patients following the registry-based trajectories (Figure 3\u2014figure supplement 2B). We also checked the survival curves of the pancreatic cancer patients with (Figure 2\u2014figure supplement 2A) and without clinical notes (Figure 2\u2014figure supplement 2) 5 years prior to pancreatic cancer to conclude that no obvious biases are introduced when analysing only the group of patients with clinical notes.\n\n## Discussion\n\nThis study uncovered statistically significant disease and symptom trajectories prior to pancreatic cancer that may be further assessed as early risk factors for pancreatic cancer for screening purposes. We complemented pancreatic cancer symptoms from hospital diagnosis codes with symptoms extracted by text mining using free text in EHRs. We observed that symptoms were more abundant in the EHRs opposed to the NPR. For example, more than 2000 patients out of 3078 text-mined pancreatic cancer cases had \u2018Pain\u2019 according to the free text clinical notes but in the registry, it was less than 500 patients out of the 18,523 pancreatic cancer cases. On the contrary, there were some symptoms identified more abundantly in the NPR compared to the clinical notes.\n\nFrom our trajectory analysis, we detected mainly symptom trajectories for patients in the longer survival group (>90 days). This could be because patients in the short survival group (\u226490 days) have fewer symptoms detected and thus will not show up in the symptom trajectories. For the text-mined symptom trajectories, we could detect more symptoms prior to the cancer diagnosis than in the registry-based trajectories using the NPR, despite the text-mining cohort being much smaller.\n\n\u2018Jaundice\u2019 can in some cases be a symptom of a late-stage cancer and thus poor survival (Strasberg et al., 2014), but in other cases contribute as a clearer cancer symptom compared to the other more generic pancreatic cancer symptoms. Studies have found the diagnostic interval to be shorter for jaundice compared to for example weight loss for pancreatic cancer patients (Walter et al., 2016; Gobbi et al., 2013). It could therefore indicate a faster diagnosis but not necessarily a longer survival. We furthermore observed that disease trajectories including several cardiovascular diseases show lower survival, and it has been suggested in previous studies that cardiovascular diseases can play a role in pancreatic cancer prognosis (\u00d6gren et al., 2006; Bertero et al., 2018; Liu et al., 2019). Additionally, cardiovascular diseases have been indicated as a risk factor for certain other cancers (Lau et al., 2021, Strongman et al., 2019), and contrariwise it is also discussed whether cancer should be included in cardiovascular risk prediction tools (Blaes and Shenoy, 2019).\n\nA limitation of this study is that our data is strictly hospital contacts, which may result in a set of identified symptoms and diagnoses occurring not at the earliest disease stage. By including data from general practitioners, future studies could potentially identify even earlier symptom patterns prior to pancreatic cancer. Causal patterns cannot be directly inferred from the trajectories (Jensen et al., 2014). Confounders could for example be medication or other risk factors that are not accounted for in the analyses. In this type of trajectory study, we can only assess the association between diseases, but actual causal relationships will need to be validated by other types of studies, such as Mendelian randomization using genetics. Furthermore, the available period for the clinical notes (2006\u20132016) was shorter compared to the NPR (1994\u20132018). A direct comparison between the two data sources can be challenging since registry terms are not coded exactly as in the free text clinical notes. One example is acute abdomen in the symptom block \u2018Abdominal and pelvic pain\u2019, which describes a condition with severe abdominal pain that demands immediate medical attention. A clinical note might contain text that the patient was admitted with severe stomach pain but code it as the ICD-10 code \u2018R10.0 - Acute abdomen\u2019 in NPR which essentially would mean the same. Our text mining procedure had a sensitivity error of 83.4% which is in the expected range for the program Tagcorpus (Pafilis et al., 2013; Pafilis et al., 2015). Also, information bias may exist in the coding procedure within NPR and it might not always be trivial to code the correct symptom or diagnosis (Schmidt et al., 2015; Lynge et al., 2011). From our study, we show that the inclusion of symptoms text-mined from clinical notes largely complemented ICD-10-coded symptoms from the patient registry.\n\nThis study showed that deep phenotypical information stored in registry data and free text EHRs can be useful for detecting temporal patterns prior to pancreatic cancer diagnosis. Furthermore, our study reveals a notable increase in the prevalence of early symptoms within EHRs suggesting the possibility of harnessing the complete potential of health data by incorporating multi-modality symptom trajectories derived from both EHRs and registry-based codes. This integrated approach provides a comprehensive representation of the symptomatology, enabling a more accurate assessment of disease trajectories and potentially facilitating early detection and intervention. Overall, our findings underscore the importance of comprehensive symptom assessment for improved prediction and patient outcomes in pancreatic cancer.\n\nThe sequence of events that leads up till the pancreatic cancer diagnosis supports that symptoms may appear in a messy and complex order. Patients start experiencing general and unspecific symptoms, which then become more specific and severe as the cancer advances. Future applications could leverage this knowledge and use AI and advanced text mining techniques to build longitudinal multi-modal trajectories for improved symptom extraction and early prediction of pancreatic cancer in the clinics. In clinical settings, this could ultimately serve as a guide for better screening procedures and improve the lives of pancreatic cancer patients.\n\n## Methods\n\n### Study design\n\nFor the generation of the trajectories, we used disease codes from the hierarchical International Classification of Diseases (ICD) system. ICD version 10 codes at level 3 were used for this study. The case cohort of pancreatic cancer patients was defined based on the pancreatic cancer code C25. We only included pancreatic cancer patients that had a confirmed diagnosis in the Danish Cancer Registry.\n\n### Patient cohorts\n\nFrom the Danish NPR, all hospital encounters in Denmark during the period 1994\u20132018 were used in the analyses, comprising 6.9 million patients. The ICD-10 Chapter 18 \u2018Symptoms, signs and abnormal clinical and laboratory findings\u2019 was used as vocabulary for extraction of symptoms from both NPR and the clinical notes. ICD version 10 codes at level 3 were used for this study. The EHR data comprising clinical notes included all records from the Capital Region of Denmark and Region Zealand from the period of 2006\u20132016. The clinical notes contain information regarding a hospital encounter such as the reason for admission, findings, symptoms, operations, and treatments. Only patients with at least one clinical note within a five-year time interval before diagnosis were included. A control group was sampled to match sex, age, birth year and diagnosis year for a hospital contact with 10 control patients per pancreatic cancer patient. Diagnosis year was used instead of the specific date since a date limited the possible control matches. The clinical notes for the control group were additionally analysed in a five-year time interval before the hospital contact. This was done to ensure that the pancreatic cancer patients were compared with a similar age group and time-span. The registries and EHRs could be linked through a pseudo-anonymized version of the Central Personal Register (CPR) number, which all Danish citizens possess.\n\n### Preprocessing of patient cohorts\n\nStatus codes 01 and 90 have been included in the analysis, excluding the rest of the status codes to make sure only active residents in Denmark (01) and inactive dead individuals (90) are a part of the cohort. Furthermore, diagnosis types H and M (referral and temporary diagnosis) were excluded from the data for the extraction of disease and symptom frequencies and for the construction of trajectories. This was to ensure that the analysis was based on the main medically relevant diagnoses in NPR.\n\n### Text mining clinical notes\n\nA dictionary was constructed by including all symptoms from the ICD-10 symptom chapter 18. Known pancreatic cancer symptoms that were not already a part of chapter 18, were added to the vocabulary by both systematic review of pancreatic cancer clinical notes and literature studies. The final symptom dictionary comprised 691 symptoms. The symptoms were initially written in their singular forms and afterwards suffixes were added to ensure different variants of a symptom such as plural forms. Other word endings like \u2018condition\u2019 or \u2018symptom\u2019 were also added since these are sometimes put behind a symptom in Danish (Figure 4). Afterwards, the extended dictionary and the clinical notes from the patients and the control group were tokenized. The unique tokens from each were then compared to extract spelling errors on words longer or equal to five characters. To extract words with spelling errors, the tokens from the dictionary were fuzzy matched against the tokens from the clinical notes using the Python package fuzzysearch (Einat, 2020).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84919/elife-84919-fig4-v1.jpg)\n\n**Figure 4.:** A dictionary was generated with symptoms and expanded with word endings to capture multiple forms of the same symptom. Afterwards, the dictionary and the corpus (clinical notes) were tokenized to extract spelling errors. The spelling errors were then added to the dictionary. Finally, the program Tagcorpus (Pafilis et al., 2013) was used to tag the symptoms in the corpus. The text mining performance was then evaluated.\n\nThe metric used to measure similarities was Levenshtein\u2019s distance. In this case, a maximum value of distance between two words was set to 1 to allow for either one substitution, one deletion or one addition of a character of the word. When the fuzzy matching was complete, all outcomes were further assessed and rechecked so that wrong matches could be removed.\n\nAfter the extraction of variations for the synonyms, the program Tagcorpus (Pafilis et al., 2013) was used to tag the corpus (the clinical notes) for the pancreatic cancer patients and the control patients. It is a fast program written in C++, which for example is able to process thousands of PubMed abstracts per second (Pafilis and Jensen, 2016). A post-processing step was applied that removed sentences with negations and mentioning of other persons than the patient (Eriksson et al., 2014). This ensures that whenever there is a negation word in a sentence the word will not be tagged. For example, not, never, and no are a part of the negation dictionary. From the other person\u2019s filter, the symptom will not be tagged if a sentence contains for example mother, brother etc. since it might relate to another person and not to the patient in question. The evaluation of the text mining was done using a confusion matrix of 200 randomly selected clinical notes. These were checked manually for incorrectly and correctly matched symptoms. Afterwards, the metrics sensitivity and specificity were calculated. The sensitivity is defined as,\n\n$$\nSensitivity=\\frac{TP}{TP+FN}\n$$\n\nwhere TP are the true positives and FN the false negatives. The sensitivity describes the fraction of correctly matched symptoms opposed to all symptoms. Specificity is the fraction of correctly matched words that are not symptoms opposed to all the non-symptom words in the clinical notes and is defined by,\n\n$$\nSpecificity=\\frac{TN}{TN+FP}\n$$\n\n### Generating pancreas cancer trajectories\n\nWe calculated significant disease trajectories for the population of pancreatic cancer patients using the methodology from Jensen et al., 2014. Here, the Relative Risk (RR) was calculated (Equation 3) for the strength of an association between two diseases in the exposed group compared to a comparison group. The exposed group was matched with the same age and sex group as the comparison group and seasonal changes were accounted for by taking samples from the comparison group disease discharge to have the same week as the disease 1 (D1) discharge in the exposed group. The count for the exposed group is denoted Cexposed and the corresponding i\u2019th comparison group as Ci where i \u03f5 {1,..,N} and N is the number of comparison groups.\n\n$$\nRR=\\frac{C_{exposed}}{\\frac{1}{N}\\sumiC_{i}}\n$$\n\nP-values for RR were calculated using binomial tests, where the average probability of sampling a control patient with D2 was compared with Cexposed. Afterwards, the diagnosis pairs (D1, D2) were tested for directionality with binomial tests to decide if the direction is significant for the significant disease pairs found. The patients having the direction (D1\u2192 D2) or the other direction (D2\u2192 D1) were counted. Patients having D1 and D2 at the same time were also counted and the total count constitutes N samples with 50% probability of having either one of the directions. The p-values were afterwards Bonferroni corrected.\n\nTo find significant text-mined symptoms, we sampled 10 control patients for every pancreatic cancer case patient. The 30,780 control patients were stratified based on sex, birth year and age at diagnosis. We ensured that the control patients were diagnosed with another disease at the same age as the cases and extracted their clinical notes five years before that diagnosis. This was done to make sure the notes for the control and the case group originated at a similar period during their lifetime and up to a diagnosis. For the construction of the symptom trajectories the odds ratios (ORs) were calculated using a logistic regression model with all possible symptom pairs and stratified by the selection criteria for the controls.\n\nSubsequently, each symptom pair, with OR >1 and a significant p-value <0.05, was tested for directionality and Bonferroni-corrected based on the same approach as Jensen et al., 2014. For the text-mined symptoms, the day of admission was used as the time registered for the symptom, since capturing the symptom as early as possible is crucial for the purpose of this study.\n\n### Approvals\n\nThe work was approved as a registry study that does not require ethical permissions in Denmark as well as patient consent. Access to the data was approved by the Danish Data Protection Agency (ref: 514-0255/18-3000, 514-0254/18-3000, SUND-2016\u201350), the Danish Health Data Authority (ref: FSEID-00003724 and FSEID-00003092), and the Danish Patient Safety Authority (3-3013-1731/1/).\n\n### Code availability\n\nThe methodology and the data analysis have been carried out using Python software (version 3.8) and R version 3.6. The code for the text mining method is available at https://github.com/larsjuhljensen/tagger, (copy archived at, Jensen, 2023) The key algorithm for creation of disease trajectories have been described in detail in the published studies (Jensen et al., 2014; Siggaard et al., 2020) and (Siggaard et al., 2020).\n",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "02dfc89c-d105-4f86-bf15-48bd6c6cd788",
+      "submission_id": "c81d9f27-82ab-45e1-bc37-1b0a1af11a69",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nicolas Schlecht, https://ror.org/0499dwk57 Roswell Park Comprehensive Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84919.sa0](https://doi.org/10.7554/eLife.84919.sa0)\n\nThis article presents valuable findings on the symptoms and disease trajectories preceding a diagnosis of pancreatic cancer in Denmark. The evidence is convincing and the study employed appropriate and validated methodology in line with current state-of-the-art. The work will be of interest to public health researchers and clinicians working on pancreatic cancer.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Nicolas Schlecht, https://ror.org/0499dwk57 Roswell Park Comprehensive Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84919.sa1](https://doi.org/10.7554/eLife.84919.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Pancreatic cancer symptom trajectories from Danish registry data and free text in electronic health records\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nAs is customary in eLife, the reviewers have discussed their critiques with one another. What follows below is the Reviewing Editor's edited compilation of the essential and ancillary points provided by reviewers in their critiques and in their interaction post-review.\n\nEssential revisions:\n\nThis study presents valuable and solid findings on the symptoms and disease trajectories preceding a diagnosis of pancreatic cancer. Please address the major concerns of both reviewers. Revisions should include, (1) an error analysis for the text mining evaluation results with information on recall errors, and (2) a discussion on how the findings of this work could be applied in practice towards early detection and prognosis of pancreatic cancer.\n\nReviewer #1 (Recommendations for the authors):\n\n1) It is difficult to compare results from the free-text entries and diagnosis codes, as the former are based on only a small subset of patients. If possible, the authors should examine the subset of NPR data relating to patients with free-text clinical records available. Such an analysis could help show a lot more directly what is captured by free-text entries versus diagnosis codes.\n\nThis analysis would also allow us to examine free-text notes and diagnosis codes together \u2013 if the aim is to help detect pancreatic cancer earlier, and especially if free-text notes and diagnosis code entries capture different symptoms and early-warning signs, using more of the available information could be highly advantageous.\n\n2) \"We found that for patients with short survival ({less than or equal to}90 days), symptoms could be tracked further back in the clinical notes, whereas patients with longer survival showed symptoms appearing closer to diagnosis. This could indicate that the pancreatic cancer had metastasized further in the patients with short survival.\". Could cancer stage or spread at diagnosis be obtained from the NPR or clinical notes? That would allow for the testing of this hypothesis.\n\nReviewer #2 (Recommendations for the authors):\n\nFor the results in Figure 1, raw frequency of symptom occurrence was used to depict their relevance to the disease. However, it should be noted that some symptoms may be common for both pancreatic cancer patients and controls. In fact, your text mining method detected at least one symptom in the clinical notes of nearly 90% of the control group. Therefore, the authors may consider moving results in Figure 3 immediately after Figure 1 results.\n\nRegarding Figure 3, I noticed that for each symptom, there are two color bars representing each patient group based on their median survival days. I'm curious why the purple bar is typically longer in this figure. Additionally, could you please clarify the meaning of the black dots mentioned in the figure caption, as they are not entirely self-explanatory?\n\nSymptoms in Figure 2 are color-coded by their higher-level groups. Can this be done also for Figure 1 results, so that it makes it more obvious to tell the differences in the two data sources?\n\nTypo in Table 1. Pancer should be cancer.\n\nTable S2 uses specific ICD-10 codes for symptoms. For the convenience of the readers, they need to be accompanied by names. For example, what symptoms are C25, R50, and R52 in the first row?\n\nS2. For example, it is stated that \"One of the trajectory groups is formed by cardiovascular diseases (1720 patients)\" but it's unclear which rows in S2 correspond to this number.\n\nThe equations in the Methods section are not displayed well in PDF.\n",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2d433cd2-6d2a-40cd-9850-31648cc092f3",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C1",
+      "claim": "Pancreatic cancer has been predicted to become the second leading cause of cancer deaths, surpassing breast, colorectal, and prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Pancreatic cancer has been predicted to become the second leading cause of cancer deaths, surpassing breast, colorectal, and prostate cancer (Rahib et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Rahib et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "adb82ba7-b4fc-49ca-a046-382cad0b285c",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C2",
+      "claim": "Pancreatic cancer has few and generic symptoms resulting in late diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "It has few and generic symptoms resulting in late diagnosis (Chari et al., 2015; Kim and Ahuja, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Chari et al., 2015 and Kim and Ahuja, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "7aa42e30-c568-4886-82bf-9a2f2744b364",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C3",
+      "claim": "Pancreatic cancer has a 5-year survival rate of 11%.",
+      "claim_type": "EXPLICIT",
+      "source": "poor prognosis with a 5-year survival rate of 11% (American Cancer Society, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to American Cancer Society, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "360686e4-270c-4c59-a5ef-812968dc5561",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C4",
+      "claim": "If pancreatic cancer is detected at an early stage where surgical removal of the tumour is possible, the survival rate increases to 42%.",
+      "claim_type": "EXPLICIT",
+      "source": "If the cancer is detected at an early stage, where surgical removal of the tumour is possible, the survival rate increases to 42% ('American Cancer Society', 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to American Cancer Society, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "5b4ad9cb-9922-42ad-bcfb-d9ab7639944a",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C5",
+      "claim": "Patients with stage I pancreatic cancer have the highest 5-year survival of 83.7%.",
+      "claim_type": "EXPLICIT",
+      "source": "The patients with stage I disease have the highest 5-year survival of 83.7% (Blackford et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Blackford et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "61448443-190e-451a-aa9c-e3828ca8ebb9",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C6",
+      "claim": "Weight loss, abdominal pain, and anorexia are some of the most frequent symptoms linked to pancreatic cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the most frequent symptoms linked to pancreatic cancer are weight loss, abdominal pain, and anorexia (Hidalgo, 2010; Mizrahi et al., 2020; Park et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Hidalgo, 2010; Mizrahi et al., 2020; and Park et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "d256c836-b534-4069-b318-e4c12b67d117",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C7",
+      "claim": "Upper abdominal pain, cholestasis, and nausea are symptoms of pancreatic cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Others include upper abdominal pain, cholestasis, nausea (Hidalgo, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hidalgo, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "cb6ad1cc-9480-48cf-ab10-b3436562fba1",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C8",
+      "claim": "Dark urine and thirst are symptoms of pancreatic cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "and dark urine and thirst (Liao et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Liao et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "e52331c9-f0e2-405d-b1ea-f2071411ce6c",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C9",
+      "claim": "New-onset diabetes has been found to co-occur with pancreatic cancer when accompanied by weight loss.",
+      "claim_type": "EXPLICIT",
+      "source": "New-onset diabetes has additionally been found to co-occur with pancreatic cancer when accompanied by weight loss (Yuan et al., 2020; Hart et al., 2011; Bruenderman and Martin, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Yuan et al., 2020; Hart et al., 2011; and Bruenderman and Martin, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "686c6208-109a-476b-985d-ffd95caa253e",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C10",
+      "claim": "The registries in the Nordic countries are of high quality and among the oldest covering treatment in one-payer health care systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The registries in the Nordic countries are of high quality and among the oldest covering treatment in one-payer health care systems (Laugesen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Laugesen et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "8bc65242-8e2e-4ae2-8a34-49980a3130eb",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C11",
+      "claim": "The National Danish Patient Registry (NPR) contains hospital diagnoses since 1977.",
+      "claim_type": "EXPLICIT",
+      "source": "The National Danish Patient Registry (NPR) contains hospital diagnoses since 1977",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a fact about the NPR database.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "f2a3845d-40e6-4357-8ad8-72750d82f5b1",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C12",
+      "claim": "The NPR allows for large data-driven studies to detect temporal disease progression patterns relevant in the context of stratified medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "and allows for large data-driven studies to detect temporal disease progression patterns relevant in the context of stratified medicine (Jensen et al., 2014; Siggaard et al., 2020, Lademann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Jensen et al., 2014; Siggaard et al., 2020; and Lademann et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "8fe43e17-7179-496a-9493-7bb96b3f7323",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C13",
+      "claim": "Much of the deeper phenotypic patient information resides within the free text of the electronic health records (EHRs).",
+      "claim_type": "EXPLICIT",
+      "source": "However, much of the deeper phenotypic patient information resides within the free text of the electronic health records (EHRs; Jensen et al., 2012; Eriksson et al., 2014; Soguero-Ruiz et al., 2016; Delespierre et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Jensen et al., 2012; Eriksson et al., 2014; Soguero-Ruiz et al., 2016; and Delespierre et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "fc427473-2256-4ba0-8e1d-cea4723e2e12",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C14",
+      "claim": "A small-scale study using 4080 mixed types of cancers attempted to build more general 'event trajectories' using text mining and pooled analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "A small-scale study using 4080 mixed types of cancers attempted to build more general 'event trajectories' using text mining and pooled analysis (Jensen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Jensen et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "0d89f2b9-67a1-4201-9963-1ae1778cde62",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C15",
+      "claim": "A prospective study found no difference in initial symptoms and diagnostic interval between pancreatic cancer patients and patients suspected of having pancreatic cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "A prospective study investigating initial symptoms and diagnostic interval (time from onset to diagnosis) for known pancreatic cancer symptoms found no difference between pancreatic cancer patients and patients suspected of having pancreatic cancer (Walter et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Walter et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "84a037f1-74ba-4a4d-8405-0882df4400c2",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C16",
+      "claim": "It has been suggested that pancreatic cancer symptoms appear sporadically, adding to the complex nature of the disease manifestation.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been suggested that symptoms appear sporadically, adding to the complex nature of the disease manifestation (Evans et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Evans et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "0114c6bb-ca3f-42e1-b746-c9d40b9a78b4",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C17",
+      "claim": "Studies using primary care EHRs found jaundice to be linked to pancreatic cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies used primary care EHRs to detect pancreatic cancer symptoms and found jaundice (Stapley et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Stapley et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "3d275292-d4c0-41e6-9387-e3f9d9e6ce68",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C18",
+      "claim": "Back pain, lethargy, and new-onset diabetes were found to be linked to pancreatic cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "back pain, lethargy, and new-onset diabetes to be linked to pancreatic cancer (Keane et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Keane et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "1218a0b3-2bf0-45c7-8bea-66b6171577d1",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C19",
+      "claim": "The Danish National Patient Registry (NPR) data spans the period 1994\u20132018.",
+      "claim_type": "EXPLICIT",
+      "source": "The Danish National Patient Registry (NPR) data spans the period 1994\u20132018",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the temporal coverage of the NPR data used in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "7ad63cc2-d568-409a-830d-f803270091fd",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C20",
+      "claim": "The electronic health records (EHRs) used in this study are from 2006 to 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "while the electronic health records (EHRs) used here are from 2006 to 2016.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the temporal coverage of the EHR data used in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "0292ebb9-be9a-4bbc-aa5d-73ab7465be2e",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C21",
+      "claim": "The NPR includes 6.9 million patients where 23,592 patients are diagnosed with pancreatic cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "The NPR includes 6.9 million patients where 23,592 patients are diagnosed with pancreatic cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides patient counts from the NPR database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "36477a4c-684d-47bf-9410-29424d1cbb7f",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C22",
+      "claim": "18,523 pancreatic cancer patients from NPR were confirmed by the Danish Cancer Registry.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these we used 18,523 patients which also were confirmed by the Danish Cancer Registry. (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides patient counts confirmed by the Danish Cancer Registry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "d47c406c-173c-440b-8cde-69224ab28dd6",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C23",
+      "claim": "For a subset of 3078 patients, their corresponding EHRs were extracted.",
+      "claim_type": "EXPLICIT",
+      "source": "For a subset of 3078 patients, we extracted their corresponding EHRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides the number of patients with EHR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "6ab319cd-9d6a-41ee-b608-0af5f469abdf",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C24",
+      "claim": "Almost as many females as males are identified with pancreatic cancer both in NPR and the EHRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Almost as many females as males are identified with pancreatic cancer both in NPR and the EHRs (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "c62a4188-81ad-4a35-a676-8c2ec53881d4",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C25",
+      "claim": "The text mining approach was able to identify 16 unique symptoms in the clinical notes not registered in NPR.",
+      "claim_type": "EXPLICIT",
+      "source": "The text mining approach was able to identify 16 unique symptoms in the clinical notes, not registered in NPR (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "ce1c1b0a-eb2d-4a92-ab95-7c3ac6499809",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C26",
+      "claim": "The most frequent symptoms exclusively found in the clinical notes were conditions related to 'Intestinal disorders', 'Dorsalgia' and 'Embolisms'.",
+      "claim_type": "EXPLICIT",
+      "source": "The most frequent symptoms exclusively found in the clinical notes were conditions related to 'Intestinal disorders', 'Dorsalgia' and 'Embolisms' (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "d8135440-6488-4e3c-bcfc-4c5d1d5a7942",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C27",
+      "claim": "NPR contained 24 ICD-10 symptoms not found by text mining.",
+      "claim_type": "EXPLICIT",
+      "source": "NPR contained 24 ICD-10 symptoms not found by text mining (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "aa2941c5-a130-4e6b-b4c5-755840aeeacb",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C28",
+      "claim": "Frequent symptoms exclusively identified in the NPR data comprised findings related to 'Functional capacity', 'Dysphagia', 'Abnormal laboratory findings', 'Oedema', and 'Abnormal findings on medical images'.",
+      "claim_type": "EXPLICIT",
+      "source": "Frequent symptoms exclusively identified in the NPR data comprised findings related to 'Functional capacity', 'Dysphagia', 'Abnormal laboratory findings', 'Oedema', and 'Abnormal findings on medical images' (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "c3c646c6-0051-49fc-8911-477afe9a6b45",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C29",
+      "claim": "57 symptoms were identified that occurred in both NPR and free text clinical notes.",
+      "claim_type": "EXPLICIT",
+      "source": "In NPR and free text clinical notes, 57 symptoms were identified that occurred in both sources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides a count of overlapping symptoms between data sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "1aa1dec0-c701-4587-b433-07c83007e4f5",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C30",
+      "claim": "'Pain', 'Nausea and vomiting', 'Abnormal blood-pressure reading', 'Abdominal and pelvic pain', and 'Symptoms and signs concerning food and fluid intake' were identified amongst the most frequent symptoms from both the free text clinical notes and the NPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst these, we could identify 'Pain', 'Nausea and vomiting', 'Abnormal blood-pressure reading', 'Abdominal and pelvic pain', and 'Symptoms and signs concerning food and fluid intake'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of the 15 most frequent overlapping symptoms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "bd293314-75fd-42e3-a250-3c5cd9bff041",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C31",
+      "claim": "In the symptom block 'Symptoms and signs concerning food and fluid intake', the majority of patients represent the subgroups 'Abnormal weight loss' (R63.4) and 'Anorexia' (R63.0).",
+      "claim_type": "EXPLICIT",
+      "source": "In the symptom block 'Symptoms and signs concerning food and fluid intake', the majority of patients represent the subgroups 'Abnormal weight loss' (R63.4) and 'Anorexia' (R63.0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the composition of a symptom category based on ICD-10 codes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "e3c7fcc6-c09e-4ea1-8823-09af6120af8d",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C32",
+      "claim": "'Nausea and vomiting', 'Abnormal blood-pressure reading' and 'Weight loss' were frequent symptoms in the free-text clinical notes, but have low occurrences in NPR.",
+      "claim_type": "EXPLICIT",
+      "source": "'Nausea and vomiting', 'Abnormal blood-pressure reading' and 'Weight loss' were frequent symptoms in the free-text clinical notes, but have low occurrences in NPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares symptom frequencies between data sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "2f61dae9-5ff4-4347-a8d0-4fc8fa202273",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C33",
+      "claim": "'Abdominal and pelvic pain' was more frequent in NPR than in the clinical notes.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, 'Abdominal and pelvic pain' was more frequent in NPR than in the clinical notes (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "55ac8c02-7458-4306-9d7a-7cd65d388b47",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C34",
+      "claim": "2867 out of 3078 (93%) of the pancreatic cancer patients in clinical notes have at least one symptom identified by text mining.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 2867 out of 3078 (93%) of the pancreatic cancer patients in clinical notes have at least one symptom identified by text mining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides statistics on symptom identification coverage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "3a27b666-9087-4300-b57d-2f691ae8ec98",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C35",
+      "claim": "A control group of 30,780 patients was generated by matching birth year, diagnosis year, age and sex.",
+      "claim_type": "EXPLICIT",
+      "source": "A control group of 30,780 patients was generated by matching birth year, diagnosis year, age and sex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the control group generation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "f8c2e7a5-8ae4-415a-8360-8536ead4d253",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C36",
+      "claim": "25,085 control patients (82%) had a match for at least one symptom from a general symptom dictionary.",
+      "claim_type": "EXPLICIT",
+      "source": "From these, 25,085 patients (82%) had a match for at least one symptom from a general symptom dictionary generated by combining general symptoms from the (1) ICD-10 chapter 18, (2) known pancreatic cancer symptoms from the literature, and (3) a systematic review of clinical notes for pancreatic cancer patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides statistics on symptom identification in the control group.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "1694c9a7-47a2-44fb-90de-15703e60a44f",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C37",
+      "claim": "Text mining the clinical notes identified 73 unique level-3 coded symptoms for the pancreatic cancer cases and 79 unique symptoms for the control group.",
+      "claim_type": "EXPLICIT",
+      "source": "Text mining the clinical notes identified 73 unique level-3 coded symptoms for the pancreatic cancer cases and 79 unique symptoms for the control group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides counts of unique symptoms identified by text mining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "1bd6e3c1-36db-401b-8225-8913e470a406",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C38",
+      "claim": "The text mining method achieved a sensitivity score of 83.4% in identifying symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "In these notes, a total of 807 symptoms were manually annotated and the text mining method was able to identify 675 correctly and 132 symptoms were not found. This yielded a sensitivity score of 83.4%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on validation using manually annotated clinical notes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "faa4d118-dbb2-44c8-8539-a4fdb146bac0",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C39",
+      "claim": "The text mining method achieved a specificity score of 99.8%.",
+      "claim_type": "EXPLICIT",
+      "source": "A specificity score of 99.8% was obtained since most clinical notes comprise non-symptom words describing the patient's contact with the hospital.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on validation using manually annotated clinical notes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "74ca2771-d12a-421c-9047-f4e396059c66",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C40",
+      "claim": "In total 3863 patients followed at least one symptom trajectory which corresponds to 21% of all the pancreatic cancer cases.",
+      "claim_type": "EXPLICIT",
+      "source": "In total 3863 patients followed at least one symptom trajectory which corresponds to 21% of all the pancreatic cancer cases (Supplementary file 1d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides statistics on trajectory coverage in the registry-based analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "05aa1dc7-8924-4b5c-8a8e-5b41501e9b8e",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C41",
+      "claim": "Most of the codes from the symptoms chapter appear after the diagnosis of pancreatic cancer, such as 'General disability', 'Malaise and fatigue', and 'Cachexia'.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the codes from the symptoms chapter appear after the diagnosis of pancreatic cancer, such as 'General disability', 'Malaise and fatigue', and 'Cachexia'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes temporal patterns of symptoms relative to diagnosis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "8715480d-405d-47ba-80cd-0c3490c3fac0",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C42",
+      "claim": "Fewer symptoms are found prior to pancreatic cancer such as 'Jaundice', 'Haemorrhage', and 'Pain' (throat, chest, abdomen, and pelvis).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas fewer symptoms are found prior to the cancer such as 'Jaundice', 'Haemorrhage', and 'Pain' (throat, chest, abdomen, and pelvis; Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "61ccdf25-8957-4d56-9d3b-4d585b8f14cb",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C43",
+      "claim": "For the registry-based trajectories, known symptoms related to pancreatic cancer such as 'Abdominal and pelvic pain', 'Syncope (fainting) and dizziness', 'Jaundice', 'Signs involving digestive system and abdomen', 'Signs involving urinary system' were identified prior to the pancreatic cancer diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "For the registry-based trajectories we could identify known symptoms related to pancreatic cancer such as 'Abdominal and pelvic pain', 'Syncope (fainting) and dizziness', 'Jaundice', 'Signs involving digestive system and abdomen', 'Signs involving urinary system' prior to the pancreatic cancer diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes symptoms identified in registry-based trajectory analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "4ffccaf4-ea79-423e-bfa7-4b871af5c4bd",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C44",
+      "claim": "Less known symptoms such as 'Haemorrhage' in respiratory pathways, 'Haematuria' (blood in urine) and 'Pain in throat and chest' were identified in registry-based trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "We also identified less known symptoms such as 'Haemorrhage' in respiratory pathways, 'Haematuria' (blood in urine) and 'Pain in throat and chest'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes symptoms identified in registry-based trajectory analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "ffa1c57d-2139-4a14-a10c-f659a96c18f4",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C45",
+      "claim": "Several disease associations in the cardiovascular chapter (Chapter 9) such as 'Angina pectoris' (chest pain), 'Acute myocardial infarction', 'Chronic ischemic heart disease', and 'Hypertension' were detected in pancreatic cancer disease trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected several disease associations in the cardiovascular chapter (Chapter 9) such as 'Angina pectoris' (chest pain), 'Acute myocardial infarction', 'Chronic ischemic heart disease', and 'Hypertension'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes disease associations found in trajectory analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "5aed92c7-fc4f-40b8-b270-7b973c49b480",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C46",
+      "claim": "The well-known risk factor 'Type 2 Diabetes' was found in pancreatic cancer disease trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found the well-known risk factor 'Type 2 Diabetes'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a disease association found in trajectory analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "194b3dba-d6da-4784-a387-6d6086f71fde",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C47",
+      "claim": "Other disease associations found are part of the Digestive system chapter 11 including 'Cholelithiasis' (gallstones) and 'Disorders of lipoprotein metabolism'.",
+      "claim_type": "EXPLICIT",
+      "source": "Other disease associations found are part of the Digestive system chapter 11 including 'Cholelithiasis' (gallstones) and 'Disorders of lipoprotein metabolism'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes disease associations found in trajectory analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "e993cd02-b783-495c-9ace-ed0861e1208d",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C48",
+      "claim": "Patients having several cardiovascular diseases prior to pancreatic cancer tend to have worse survival.",
+      "claim_type": "EXPLICIT",
+      "source": "From both length three and four trajectories, we can observe that patients having several cardiovascular diseases prior to pancreatic cancer tend to have worse survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of trajectory data and survival outcomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "748a0184-8851-4a0b-a81d-7422f5701de2",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C49",
+      "claim": "'Headache' and 'Enlarged lymph nodes' were found to be one of the symptoms furthest away from the cancer diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "We found 'Headache' and 'Enlarged lymph nodes' to be one of the symptoms furthest away from the cancer diagnosis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on temporal analysis of symptom occurrence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "a9b68077-0c58-4ca6-b802-daf87a8a36e0",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C50",
+      "claim": "'Abnormalities of heartbeat' and 'Pain in throat and chest' were detected closer to pancreatic cancer diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "'Abnormalities of heartbeat' and 'Pain in throat and chest' being detected closer",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on temporal analysis of symptom occurrence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "8600ad72-1a0d-42e9-907c-bfca9bd93baf",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C51",
+      "claim": "'Visible peristalsis' and 'Abdominal and pelvic pain' were detected closest to cancer diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "and 'Visible peristalsis' and 'Abdominal and pelvic pain' being detected closest to cancer diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on temporal analysis of symptom occurrence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "7f6a1f80-ddfe-4d83-aa0a-6a6920359701",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C52",
+      "claim": "In total 311 text-mined patients followed at least one trajectory which corresponds to 10% of all the pancreatic cancer cases.",
+      "claim_type": "EXPLICIT",
+      "source": "In total 311 text-mined patients followed at least one trajectory which corresponds to 10% of all the pancreatic cancer cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides statistics on trajectory coverage in the text-mining analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "acce5a8e-63be-4a72-bcca-836e4883d749",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C53",
+      "claim": "Most of the trajectories begin with 'Pain'.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the trajectories begin with 'Pain'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a pattern observed in text-mined symptom trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "5269545f-88a6-490e-910c-1a98b2ade247",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C54",
+      "claim": "From the Pain symptom, a large group traverses into 'Jaundice' from which most patients either end up with 'Disorders of porphyrin and bilirubin metabolism', 'Fever', and 'Intestinal obstruction'.",
+      "claim_type": "EXPLICIT",
+      "source": "From the Pain symptom, a large group traverses into 'Jaundice' from which most patients either end up with 'Disorders of porphyrin and bilirubin metabolism', 'Fever', and 'Intestinal obstruction'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes symptom progression patterns in trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "dd06a0cc-3fb4-4172-a031-1e30b905f337",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C55",
+      "claim": "Patient groups that follow the trajectory starting with 'Cough' leading to 'Jaundice' and ending up with 'Intestinal obstruction' have shorter median survival (median survival \u226490 days).",
+      "claim_type": "EXPLICIT",
+      "source": "Patient groups that follow the trajectory starting with 'Cough' leading to 'Jaundice' and ending up with 'Intestinal obstruction' have shorter median survival (median survival \u226490 days).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of trajectory data and survival outcomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "1539f306-728f-4584-8167-fed22b0fdb95",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C56",
+      "claim": "The trajectory starting with 'Pain' progressing into 'Jaundice' and ending with 'Abnormal results of function studies' shows lower survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the trajectory starting with 'Pain' progressing into 'Jaundice' and ending with 'Abnormal results of function studies' shows lower survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of trajectory data and survival outcomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "99cc111d-243d-4e7d-9b6a-3b13684d7cbc",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C57",
+      "claim": "The trajectories progress from generic symptoms such as 'Pain', 'Abnormalities of heartbeat', 'Dizziness' and 'Polyuria' into more known risk factors of pancreatic cancer involving 'Abdominal and pelvic pain', 'Anorexia', and 'Jaundice'.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the trajectories progress from generic symptoms such as 'Pain', 'Abnormalities of heartbeat', 'Dizziness' and 'Polyuria' into more known risk factors of pancreatic cancer involving 'Abdominal and pelvic pain', 'Anorexia', and 'Jaundice'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes general patterns observed in symptom trajectories.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "ddd7419c-5ef4-48b3-bb5a-6d31a8242145",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C58",
+      "claim": "Symptoms were more abundant in the EHRs opposed to the NPR.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that symptoms were more abundant in the EHRs opposed to the NPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of symptom frequencies between data sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "2fe7a412-32ad-4715-8f0d-aeecb0fa861f",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C59",
+      "claim": "More than 2000 patients out of 3078 text-mined pancreatic cancer cases had 'Pain' according to the free text clinical notes but in the registry, it was less than 500 patients out of the 18,523 pancreatic cancer cases.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, more than 2000 patients out of 3078 text-mined pancreatic cancer cases had 'Pain' according to the free text clinical notes but in the registry, it was less than 500 patients out of the 18,523 pancreatic cancer cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides specific patient counts comparing symptom frequencies between data sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "38abc130-02a1-4a10-bd34-f4538a244881",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C60",
+      "claim": "For the text-mined symptom trajectories, more symptoms prior to the cancer diagnosis were detected than in the registry-based trajectories using the NPR, despite the text-mining cohort being much smaller.",
+      "claim_type": "EXPLICIT",
+      "source": "For the text-mined symptom trajectories, we could detect more symptoms prior to the cancer diagnosis than in the registry-based trajectories using the NPR, despite the text-mining cohort being much smaller.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares symptom detection capabilities between data sources.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "6f4aa0c5-e46b-4ef6-a55a-7fe6d5d553c9",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C61",
+      "claim": "Mainly symptom trajectories for patients in the longer survival group (>90 days) were detected from the trajectory analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "From our trajectory analysis, we detected mainly symptom trajectories for patients in the longer survival group (>90 days).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a pattern observed in trajectory analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "60fd71f0-d303-426a-9da4-b211f3632eb1",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C62",
+      "claim": "Patients in the short survival group (\u226490 days) have fewer symptoms detected and thus will not show up in the symptom trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be because patients in the short survival group (\u226490 days) have fewer symptoms detected and thus will not show up in the symptom trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides a speculative explanation for the observed pattern.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "13801621-e78e-4c06-a2f4-ac71c6cb8606",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C63",
+      "claim": "'Jaundice' can in some cases be a symptom of a late-stage cancer and thus poor survival.",
+      "claim_type": "EXPLICIT",
+      "source": "'Jaundice' can in some cases be a symptom of a late-stage cancer and thus poor survival (Strasberg et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Strasberg et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "14efa135-e991-4334-b0aa-019fb3b34577",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C64",
+      "claim": "Studies have found the diagnostic interval to be shorter for jaundice compared to for example weight loss for pancreatic cancer patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have found the diagnostic interval to be shorter for jaundice compared to for example weight loss for pancreatic cancer patients (Walter et al., 2016; Gobbi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Walter et al., 2016 and Gobbi et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "c9613498-38b0-4223-87c8-3cacdd5f29fd",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C65",
+      "claim": "It has been suggested in previous studies that cardiovascular diseases can play a role in pancreatic cancer prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "it has been suggested in previous studies that cardiovascular diseases can play a role in pancreatic cancer prognosis (\u00d6gren et al., 2006; Bertero et al., 2018; Liu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to \u00d6gren et al., 2006; Bertero et al., 2018; and Liu et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "d9cfd1d6-fc02-41ed-af97-ff150d4bb35a",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C66",
+      "claim": "Cardiovascular diseases have been indicated as a risk factor for certain other cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, cardiovascular diseases have been indicated as a risk factor for certain other cancers (Lau et al., 2021, Strongman et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Lau et al., 2021 and Strongman et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "15ee50cd-ef63-4cc4-a059-973ed2c8c95c",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C67",
+      "claim": "It is discussed whether cancer should be included in cardiovascular risk prediction tools.",
+      "claim_type": "EXPLICIT",
+      "source": "and contrariwise it is also discussed whether cancer should be included in cardiovascular risk prediction tools (Blaes and Shenoy, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Blaes and Shenoy, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "05955a37-c62c-4fba-adf6-5022ba323d43",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C68",
+      "claim": "The data is strictly hospital contacts, which may result in a set of identified symptoms and diagnoses occurring not at the earliest disease stage.",
+      "claim_type": "EXPLICIT",
+      "source": "A limitation of this study is that our data is strictly hospital contacts, which may result in a set of identified symptoms and diagnoses occurring not at the earliest disease stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a limitation of the study design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "3055e736-73bd-4519-a279-ae88d0daae86",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C69",
+      "claim": "By including data from general practitioners, future studies could potentially identify even earlier symptom patterns prior to pancreatic cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "By including data from general practitioners, future studies could potentially identify even earlier symptom patterns prior to pancreatic cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative statement about future research possibilities.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "531a3a9c-1336-4057-b062-68937f72b1dc",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C70",
+      "claim": "Causal patterns cannot be directly inferred from the trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "Causal patterns cannot be directly inferred from the trajectories (Jensen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Jensen et al., 2014 and describes a methodological limitation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "cf56a9ab-3ee7-4474-b230-2270165cc2e6",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C71",
+      "claim": "In this type of trajectory study, we can only assess the association between diseases, but actual causal relationships will need to be validated by other types of studies, such as Mendelian randomization using genetics.",
+      "claim_type": "EXPLICIT",
+      "source": "In this type of trajectory study, we can only assess the association between diseases, but actual causal relationships will need to be validated by other types of studies, such as Mendelian randomization using genetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the limitations of the trajectory methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "06a0f8aa-89b2-4f40-8d69-70e3a4af69ab",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C72",
+      "claim": "The available period for the clinical notes (2006\u20132016) was shorter compared to the NPR (1994\u20132018).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the available period for the clinical notes (2006\u20132016) was shorter compared to the NPR (1994\u20132018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a difference in data availability between sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "ed0a9574-5518-402a-b860-e20e6a599f0e",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C73",
+      "claim": "A direct comparison between the two data sources can be challenging since registry terms are not coded exactly as in the free text clinical notes.",
+      "claim_type": "EXPLICIT",
+      "source": "A direct comparison between the two data sources can be challenging since registry terms are not coded exactly as in the free text clinical notes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a methodological challenge in comparing data sources.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "fefa8bd6-b099-4cab-a98c-c53447ed742a",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C74",
+      "claim": "Information bias may exist in the coding procedure within NPR and it might not always be trivial to code the correct symptom or diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, information bias may exist in the coding procedure within NPR and it might not always be trivial to code the correct symptom or diagnosis (Schmidt et al., 2015; Lynge et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Schmidt et al., 2015 and Lynge et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "afdd4262-8ecb-4712-8811-085797d3b7e9",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C75",
+      "claim": "The inclusion of symptoms text-mined from clinical notes largely complemented ICD-10-coded symptoms from the patient registry.",
+      "claim_type": "EXPLICIT",
+      "source": "From our study, we show that the inclusion of symptoms text-mined from clinical notes largely complemented ICD-10-coded symptoms from the patient registry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes a key finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "b19e78b4-5f61-4dfb-a5e8-a59cbf3df377",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C76",
+      "claim": "Deep phenotypical information stored in registry data and free text EHRs can be useful for detecting temporal patterns prior to pancreatic cancer diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "This study showed that deep phenotypical information stored in registry data and free text EHRs can be useful for detecting temporal patterns prior to pancreatic cancer diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes a key conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "24717d1d-b0f0-4e5a-81b6-08a2161586b8",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C77",
+      "claim": "There is a notable increase in the prevalence of early symptoms within EHRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our study reveals a notable increase in the prevalence of early symptoms within EHRs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes a key finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "30ee0c24-f1f3-43cd-b53f-e896dd2aea3e",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C78",
+      "claim": "The sequence of events that leads up till the pancreatic cancer diagnosis supports that symptoms may appear in a messy and complex order.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequence of events that leads up till the pancreatic cancer diagnosis supports that symptoms may appear in a messy and complex order.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of the trajectory patterns observed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "8491697a-6724-401f-b91b-d45a29de52c5",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C79",
+      "claim": "Patients start experiencing general and unspecific symptoms, which then become more specific and severe as the cancer advances.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients start experiencing general and unspecific symptoms, which then become more specific and severe as the cancer advances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a general pattern observed in symptom trajectories.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "6d69a0bf-6499-4b01-b9bf-a52020412946",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C80",
+      "claim": "Future applications could leverage this knowledge and use AI and advanced text mining techniques to build longitudinal multi-modal trajectories for improved symptom extraction and early prediction of pancreatic cancer in the clinics.",
+      "claim_type": "EXPLICIT",
+      "source": "Future applications could leverage this knowledge and use AI and advanced text mining techniques to build longitudinal multi-modal trajectories for improved symptom extraction and early prediction of pancreatic cancer in the clinics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative statement about future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "1db01b2c-4671-4680-904b-4ed646b48fcd",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C81",
+      "claim": "In clinical settings, this could ultimately serve as a guide for better screening procedures and improve the lives of pancreatic cancer patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In clinical settings, this could ultimately serve as a guide for better screening procedures and improve the lives of pancreatic cancer patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative statement about potential clinical impact.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "427c1633-7132-4aa6-9ba6-048f672e1311",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C82",
+      "claim": "The case cohort of pancreatic cancer patients was defined based on the pancreatic cancer code C25.",
+      "claim_type": "EXPLICIT",
+      "source": "The case cohort of pancreatic cancer patients was defined based on the pancreatic cancer code C25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the case definition used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "7bbbe54e-aefa-4151-b4d0-5c5ae7e441a6",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C83",
+      "claim": "Only pancreatic cancer patients that had a confirmed diagnosis in the Danish Cancer Registry were included.",
+      "claim_type": "EXPLICIT",
+      "source": "We only included pancreatic cancer patients that had a confirmed diagnosis in the Danish Cancer Registry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes an inclusion criterion for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "958bdf83-5601-4b8c-9a99-2d610fee1994",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C84",
+      "claim": "The ICD-10 Chapter 18 'Symptoms, signs and abnormal clinical and laboratory findings' was used as vocabulary for extraction of symptoms from both NPR and the clinical notes.",
+      "claim_type": "EXPLICIT",
+      "source": "The ICD-10 Chapter 18 'Symptoms, signs and abnormal clinical and laboratory findings' was used as vocabulary for extraction of symptoms from both NPR and the clinical notes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the symptom vocabulary used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "44d53161-93e4-4b8e-a2d5-b82a6f30b20b",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C85",
+      "claim": "Only patients with at least one clinical note within a five-year time interval before diagnosis were included.",
+      "claim_type": "EXPLICIT",
+      "source": "Only patients with at least one clinical note within a five-year time interval before diagnosis were included.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes an inclusion criterion for the EHR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "ebdd42e5-9434-4c3c-9672-bd2efb00d1fd",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C86",
+      "claim": "A control group was sampled to match sex, age, birth year and diagnosis year for a hospital contact with 10 control patients per pancreatic cancer patient.",
+      "claim_type": "EXPLICIT",
+      "source": "A control group was sampled to match sex, age, birth year and diagnosis year for a hospital contact with 10 control patients per pancreatic cancer patient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the control group matching methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "889517af-11d2-474b-8820-1fdf430bd2ef",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C87",
+      "claim": "The registries and EHRs could be linked through a pseudo-anonymized version of the Central Personal Register (CPR) number, which all Danish citizens possess.",
+      "claim_type": "EXPLICIT",
+      "source": "The registries and EHRs could be linked through a pseudo-anonymized version of the Central Personal Register (CPR) number, which all Danish citizens possess.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the data linkage methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "a8de59af-f0ee-4b8d-be72-76ebdce75950",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C88",
+      "claim": "Status codes 01 and 90 have been included in the analysis, excluding the rest of the status codes to make sure only active residents in Denmark (01) and inactive dead individuals (90) are a part of the cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Status codes 01 and 90 have been included in the analysis, excluding the rest of the status codes to make sure only active residents in Denmark (01) and inactive dead individuals (90) are a part of the cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes data preprocessing criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "ff5519b4-08fb-42ab-a9eb-a10451c80f35",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C89",
+      "claim": "Diagnosis types H and M (referral and temporary diagnosis) were excluded from the data for the extraction of disease and symptom frequencies and for the construction of trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, diagnosis types H and M (referral and temporary diagnosis) were excluded from the data for the extraction of disease and symptom frequencies and for the construction of trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes data preprocessing criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "feb70f29-569e-4bb1-b779-4f10a8149e41",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C90",
+      "claim": "A dictionary was constructed by including all symptoms from the ICD-10 symptom chapter 18.",
+      "claim_type": "EXPLICIT",
+      "source": "A dictionary was constructed by including all symptoms from the ICD-10 symptom chapter 18.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the dictionary construction methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "f2df413a-1246-4c2a-a486-3a88f37eadfb",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C91",
+      "claim": "Known pancreatic cancer symptoms that were not already a part of chapter 18, were added to the vocabulary by both systematic review of pancreatic cancer clinical notes and literature studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Known pancreatic cancer symptoms that were not already a part of chapter 18, were added to the vocabulary by both systematic review of pancreatic cancer clinical notes and literature studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the dictionary expansion methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "861a8b30-babf-4737-9a46-7b407777a95f",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C92",
+      "claim": "The final symptom dictionary comprised 691 symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "The final symptom dictionary comprised 691 symptoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides the size of the symptom dictionary.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "cb76aa37-37c6-4248-9c96-d7b51759d79c",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C93",
+      "claim": "The program Tagcorpus is a fast program written in C++, which for example is able to process thousands of PubMed abstracts per second.",
+      "claim_type": "EXPLICIT",
+      "source": "It is a fast program written in C++, which for example is able to process thousands of PubMed abstracts per second (Pafilis and Jensen, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Pafilis and Jensen, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "81e723cc-77c5-413c-8922-39b3337e9d12",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C94",
+      "claim": "A post-processing step was applied that removed sentences with negations and mentioning of other persons than the patient.",
+      "claim_type": "EXPLICIT",
+      "source": "A post-processing step was applied that removed sentences with negations and mentioning of other persons than the patient (Eriksson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the text mining methodology with a citation to Eriksson et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "31859154-95bf-4b52-8be2-cf381cd15e26",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C95",
+      "claim": "The evaluation of the text mining was done using a confusion matrix of 200 randomly selected clinical notes.",
+      "claim_type": "EXPLICIT",
+      "source": "The evaluation of the text mining was done using a confusion matrix of 200 randomly selected clinical notes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the validation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "dd04d271-1cfc-4c02-abcf-1eb0a0fed78b",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C96",
+      "claim": "The Relative Risk (RR) was calculated for the strength of an association between two diseases in the exposed group compared to a comparison group.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the Relative Risk (RR) was calculated (Equation 3) for the strength of an association between two diseases in the exposed group compared to a comparison group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the statistical methodology used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "c658d4d8-0612-4396-a465-a4c43702a4f5",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C97",
+      "claim": "P-values for RR were calculated using binomial tests.",
+      "claim_type": "EXPLICIT",
+      "source": "P-values for RR were calculated using binomial tests",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the statistical methodology used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "8c5be651-c186-41a2-aa0d-891624bc1fda",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C98",
+      "claim": "The diagnosis pairs (D1, D2) were tested for directionality with binomial tests to decide if the direction is significant for the significant disease pairs found.",
+      "claim_type": "EXPLICIT",
+      "source": "Afterwards, the diagnosis pairs (D1, D2) were tested for directionality with binomial tests to decide if the direction is significant for the significant disease pairs found.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the statistical methodology used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "d191c146-1a60-41bd-ad00-187aeb78fa05",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C99",
+      "claim": "The odds ratios (ORs) were calculated using a logistic regression model with all possible symptom pairs and stratified by the selection criteria for the controls.",
+      "claim_type": "EXPLICIT",
+      "source": "For the construction of the symptom trajectories the odds ratios (ORs) were calculated using a logistic regression model with all possible symptom pairs and stratified by the selection criteria for the controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the statistical methodology used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "a8c1fab1-1700-4504-831b-f5cae7374bc0",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C100",
+      "claim": "Each symptom pair, with OR >1 and a significant p-value <0.05, was tested for directionality and Bonferroni-corrected.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, each symptom pair, with OR >1 and a significant p-value <0.05, was tested for directionality and Bonferroni-corrected based on the same approach as Jensen et al., 2014.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the statistical methodology used with a citation to Jensen et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "5b3ad1be-dd3b-4dc4-b143-56a652b3fe46",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C101",
+      "claim": "For the text-mined symptoms, the day of admission was used as the time registered for the symptom.",
+      "claim_type": "EXPLICIT",
+      "source": "For the text-mined symptoms, the day of admission was used as the time registered for the symptom, since capturing the symptom as early as possible is crucial for the purpose of this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a methodological choice in temporal assignment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "f0711883-64a0-4ffd-87dc-510beff14987",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C102",
+      "claim": "The work was approved as a registry study that does not require ethical permissions in Denmark as well as patient consent.",
+      "claim_type": "EXPLICIT",
+      "source": "The work was approved as a registry study that does not require ethical permissions in Denmark as well as patient consent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the ethical approval status.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "0ecbb733-91ec-4520-8295-a04bc89993ef",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C103",
+      "claim": "Access to the data was approved by the Danish Data Protection Agency (ref: 514-0255/18-3000, 514-0254/18-3000, SUND-2016\u201350), the Danish Health Data Authority (ref: FSEID-00003724 and FSEID-00003092), and the Danish Patient Safety Authority (3-3013-1731/1/).",
+      "claim_type": "EXPLICIT",
+      "source": "Access to the data was approved by the Danish Data Protection Agency (ref: 514-0255/18-3000, 514-0254/18-3000, SUND-2016\u201350), the Danish Health Data Authority (ref: FSEID-00003724 and FSEID-00003092), and the Danish Patient Safety Authority (3-3013-1731/1/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the data access approvals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "11f8a3f9-d901-4d9c-acc8-545221dc113f",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C104",
+      "claim": "The methodology and the data analysis have been carried out using Python software (version 3.8) and R version 3.6.",
+      "claim_type": "EXPLICIT",
+      "source": "The methodology and the data analysis have been carried out using Python software (version 3.8) and R version 3.6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the software used for analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "4a94adfa-8b37-4962-bf00-6e981a8b016c",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C105",
+      "claim": "Symptoms such as 'Jaundice', 'Disorders of porphyrin and bilirubin metabolism', and 'Intestinal obstruction' were observed closest to the pancreatic cancer diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Symptoms such as 'Jaundice', 'Disorders of porphyrin and bilirubin metabolism', and 'Intestinal obstruction' were observed closest to the pancreatic cancer diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on temporal analysis of symptom occurrence from text-mined data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "96e92bd4-0ac2-4979-8cb2-8a35d918e839",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C106",
+      "claim": "The more general symptoms such as 'Pain', 'Intestinal disorders', 'Heartburn', and 'Fever' were found more distant in time to the pancreatic cancer diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The more general symptoms such as 'Pain', 'Intestinal disorders', 'Heartburn', and 'Fever' were found more distant in time to the pancreatic cancer diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on temporal analysis of symptom occurrence from text-mined data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "7b2b193d-e633-4c8f-b96a-90da9df847ba",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C107",
+      "claim": "'Hepatomegali and splenomegali' was found to have the most differing distributions in time between the short and longer survival patient groups.",
+      "claim_type": "EXPLICIT",
+      "source": "'Hepatomegali and splenomegali' was found to have the most differing distributions in time between the short and longer survival patient groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of symptom timing relative to survival groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "1cbb5cd3-fa97-4c0a-91fc-5746b265f0ee",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C108",
+      "claim": "For the short survival death group (\u226490 days), 'Hepatomegali and splenomegali' was detected closer to the cancer diagnosis, whereas the longer survival group had the symptom detected much further back in time to the cancer diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "For the short survival death group (\u226490 days), this symptom was detected closer to the cancer diagnosis, whereas the longer survival group had the symptom detected much further back in time to the cancer diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of symptom timing relative to survival groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "7b7d6d29-e4cb-4e06-bb9f-2e4a5bf6be6c",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C109",
+      "claim": "A similar pattern is seen for 'Intestinal disorders' and 'Heartburn'.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar pattern is seen for 'Intestinal disorders' and 'Heartburn'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of symptom timing relative to survival groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "2162c8e9-8620-4681-96b3-5b9a3ca68978",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C110",
+      "claim": "Many of the patients have unknown staging information.",
+      "claim_type": "EXPLICIT",
+      "source": "showing that many of the patients have unknown staging information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on cancer staging data from the Danish cancer registry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "f69fd3fe-f5a2-4a12-baaf-76c64212f5bb",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C111",
+      "claim": "There is a slight over representation of longer survival patients in the Jaundice symptoms patient group.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we do see that there is a slight over representation of longer survival patients in the Jaundice symptoms patient group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of survival patterns in symptom groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "7510e3cf-f98d-448e-964f-30f5b08f17ed",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C112",
+      "claim": "The survival distribution of the patients following the text-mined symptom trajectories resembles the survival distribution for the patients following the registry-based trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "The survival distribution of the patients following the text-mined symptom trajectories (Figure 3\u2014figure supplement 2A) resembles the survival distribution for the patients following the registry-based trajectories (Figure 3\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on comparison of survival distributions shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "50b1f23e-474b-43f5-9425-9f6b7f3838d4",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C113",
+      "claim": "No obvious biases are introduced when analysing only the group of patients with clinical notes.",
+      "claim_type": "EXPLICIT",
+      "source": "We also checked the survival curves of the pancreatic cancer patients with (Figure 2\u2014figure supplement 2A) and without clinical notes (Figure 2\u2014figure supplement 2) 5 years prior to pancreatic cancer to conclude that no obvious biases are introduced when analysing only the group of patients with clinical notes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on comparison of survival curves between patient groups with and without clinical notes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "084fbb02-8af9-48b3-975c-62a170f291e6",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C114",
+      "claim": "90 days was picked to distinguish between the early and late death patient groups to investigate survival patterns for the trajectories, since only a small fraction of patients are resectable at time of diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "We picked 90 days to distinguish between the early and late death patient groups to investigate survival patterns for the trajectories, since only a small fraction of patients are resectable at time of diagnosis (Sgouros and Maraveyas, 2008; Berkman et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Sgouros and Maraveyas, 2008 and Berkman et al., 2023.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "57d08ab0-3f3b-4467-89f7-e12a36c33171",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C115",
+      "claim": "The text mining of the clinical notes was able to complement the registry-based symptoms by capturing more symptoms prior to pancreatic cancer diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the text mining of the clinical notes was able to complement the registry-based symptoms by capturing more symptoms prior to pancreatic cancer diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes a key finding from the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "c3722abc-6ad6-49f3-9d99-2352b1c97c70",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C116",
+      "claim": "'Blood pressure reading without diagnosis', 'Abnormalities of heartbeat', and 'Intestinal obstruction' were not found for the registry-based analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, 'Blood pressure reading without diagnosis', 'Abnormalities of heartbeat', and 'Intestinal obstruction' were not found for the registry-based analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is from the abstract describing symptoms found only in text-mined data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "65f19d8b-4ca9-48d3-9d7a-9569a6dc2dce",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C117",
+      "claim": "Chaining symptoms together in trajectories identified two groups of patients with lower median survival (<90 days) following the trajectories 'Cough\u2192Jaundice\u2192Intestinal obstruction' and 'Pain\u2192Jaundice\u2192Abnormal results of function studies'.",
+      "claim_type": "EXPLICIT",
+      "source": "Chaining symptoms together in trajectories identified two groups of patients with lower median survival (<90 days) following the trajectories 'Cough\u2192Jaundice\u2192Intestinal obstruction' and 'Pain\u2192Jaundice\u2192Abnormal results of function studies'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is from the abstract describing trajectory findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "7897848c-2a86-4378-9df8-0297c5f9c926",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "claim_id": "C118",
+      "claim": "The results provide a comprehensive comparison of the two types of pancreatic cancer symptom trajectories, which in combination can leverage the full potential of the health data.",
+      "claim_type": "EXPLICIT",
+      "source": "These results provide a comprehensive comparison of the two types of pancreatic cancer symptom trajectories, which in combination can leverage the full potential of the health data and ultimately provide a fuller picture for detection of early risk factors for pancreatic cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is from the abstract summarizing the study's contribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5e856622-2b62-4a7e-ac9b-b253b75ede2a",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study utilized two large Danish health data sources: the National Patient Registry (NPR) covering 1994-2018 with 23,592 pancreatic cancer patients (18,523 confirmed by Danish Cancer Registry), and electronic health records (EHRs) from 2006-2016 with 3,078 pancreatic cancer patients. Gender distribution was approximately equal in both datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 provide clear descriptive statistics about the data sources used in the study. The temporal coverage, patient counts, and demographic characteristics are explicitly stated and internally consistent. These are straightforward data descriptions that form the foundation of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "95cf2490-c263-414f-85e1-ca3149491061",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Text mining of clinical notes identified 16 unique symptoms not found in NPR, while NPR contained 24 symptoms not found by text mining. 57 symptoms were identified in both sources. Symptoms like 'Pain', 'Nausea and vomiting', and 'Abnormal blood-pressure reading' were more frequent in clinical notes, while 'Abdominal and pelvic pain' was more frequent in NPR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C33 describe the complementary nature of the two data sources with specific counts and examples supported by Figure 1. The findings demonstrate that text mining and registry data capture different aspects of symptom presentation, which is a key methodological result of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "29fefb89-7d6d-412c-8925-7d6f7f87e542",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The text mining approach achieved 93% coverage of pancreatic cancer patients (2,867/3,078) and identified 73 unique symptoms in cases versus 79 in controls (30,780 matched patients). Validation on 200 clinical notes showed 83.4% sensitivity and 99.8% specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 provide validation metrics for the text mining methodology. The sensitivity of 83.4% is reasonable for NLP tasks, and the specificity of 99.8% is expected given the high proportion of non-symptom text. The validation sample size (200 notes, 807 symptoms) is adequate for performance estimation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "66cf9587-f495-4b24-b12d-7edbb1ecda73",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Registry-based trajectory analysis covering 3,863 patients (21% of cases) identified temporal patterns of symptoms before pancreatic cancer diagnosis. Known symptoms like 'Jaundice', 'Abdominal and pelvic pain', and 'Haemorrhage' appeared prior to diagnosis, with symptoms like 'Headache' and 'Enlarged lymph nodes' appearing earliest, while 'Visible peristalsis' and 'Abdominal and pelvic pain' appeared closest to diagnosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44, C49-C51 describe registry-based trajectory findings with temporal ordering of symptoms. The statistical methodology (RR, binomial tests, Bonferroni correction) is appropriate for identifying directional disease pairs. The findings are supported by Figure 3A and supplementary data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "ea2e456a-b456-405f-be91-2439ce8325f3",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Text-mined symptom trajectories covering 311 patients (10% of cases) showed progression from generic symptoms like 'Pain' to more specific symptoms like 'Jaundice'. Two specific trajectories ('Cough\u2192Jaundice\u2192Intestinal obstruction' and 'Pain\u2192Jaundice\u2192Abnormal results of function studies') were associated with shorter median survival (\u226490 days).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C57 describe text-mined trajectory patterns with survival associations. The use of logistic regression with OR>1 and p<0.05 thresholds, followed by directionality testing and Bonferroni correction, is methodologically sound. The survival associations are clearly stated and supported by Figure 3B.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "9746b7e5-5f82-40ff-be8e-64da40e9247e",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Disease trajectory analysis identified associations between pancreatic cancer and cardiovascular diseases (angina pectoris, myocardial infarction, chronic ischemic heart disease, hypertension), Type 2 Diabetes, and digestive system disorders (cholelithiasis, disorders of lipoprotein metabolism). Patients with multiple cardiovascular diseases prior to pancreatic cancer showed worse survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 describe disease associations found in trajectory analysis. The cardiovascular-pancreatic cancer association is supported by cited literature (C65-C67). However, the survival claim (C48) is observational and lacks statistical testing details. The associations are descriptive rather than causal, which is appropriately acknowledged in C70-C71.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "9f8673e2-54dc-4ade-ab20-c32e277b9ffd",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Text mining of clinical notes captured more symptoms prior to pancreatic cancer diagnosis than registry data, despite the smaller cohort size (3,078 vs 18,523). For example, 'Pain' was documented in >2,000/3,078 text-mined cases but <500/18,523 registry cases. Symptoms like 'Blood pressure reading without diagnosis', 'Abnormalities of heartbeat', and 'Intestinal obstruction' were found only in text-mined data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60, C75, C115-C116 demonstrate the complementary value of text mining versus structured registry data. The specific examples and patient counts support the conclusion that clinical notes capture more symptom information. This is a key finding showing the added value of NLP approaches for symptom detection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "11d40239-33e5-4c3a-a685-6bf49a63f9a7",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Temporal analysis of text-mined symptoms showed that specific symptoms like 'Jaundice', 'Disorders of porphyrin and bilirubin metabolism', and 'Intestinal obstruction' appeared closest to diagnosis, while general symptoms like 'Pain', 'Intestinal disorders', 'Heartburn', and 'Fever' appeared earlier. 'Hepatomegaly and splenomegaly' showed different temporal distributions between short (\u226490 days) and longer survival groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C109 describe temporal patterns of symptoms relative to diagnosis and survival. The findings are supported by Figure 2 showing symptom distributions over time. The observation about differential timing by survival group is clinically plausible and adds prognostic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "db0c51bb-0f5d-47b3-a472-62bf0b1ea104",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Trajectory analysis predominantly detected symptom patterns in patients with longer survival (>90 days), potentially because patients with short survival (\u226490 days) had fewer documented symptoms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61-C62 identify a potential bias in trajectory detection. While C61 is observational, C62 is explicitly speculative ('This could be because'). The explanation is plausible but not empirically validated. This represents an important limitation that could affect interpretation of trajectory findings, particularly for early detection applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "fadfda9e-8884-40c3-9eba-cd9635bb2047",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Many patients had unknown staging information. There was slight overrepresentation of longer survival patients in the jaundice symptom group. Survival distributions were similar between patients with and without clinical notes, and between text-mined and registry-based trajectory cohorts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110-C113 address potential biases in the study. The staging data limitation (C110) is acknowledged. The survival comparisons (C112-C113) supported by Figure 2-supplement 2 and Figure 3-supplement 2 help validate that the EHR subcohort is representative, strengthening the generalizability of text-mining findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "da41e69b-1140-4aca-8809-6c62ae9f02c1",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study used ICD-10 code C25 to define pancreatic cancer cases, confirmed by Danish Cancer Registry. Symptoms were extracted using ICD-10 Chapter 18 vocabulary, expanded with literature-based pancreatic cancer symptoms to create a 691-symptom dictionary. Controls were matched 10:1 on sex, age, birth year, and diagnosis year. Data preprocessing excluded temporary diagnoses and non-residents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C92 describe the study design and methodology. The case definition, symptom vocabulary construction, control matching strategy, and data preprocessing steps are clearly specified. The 10:1 matching ratio provides adequate statistical power. The methodology is transparent and reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "a2635692-4878-440f-b827-415b8f838933",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Text mining used Tagcorpus software with post-processing to remove negations and references to other persons. Statistical analysis employed Relative Risk with binomial tests for registry data and logistic regression with odds ratios for text-mined data, with directionality testing and Bonferroni correction. Validation used 200 randomly selected clinical notes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C101 describe the computational and statistical methods. The use of Tagcorpus is appropriate and cited. The statistical approaches (RR for registry, OR for text-mined data) are suitable for the respective data types. Bonferroni correction addresses multiple testing. The validation sample size is adequate for performance estimation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "4852f00b-ef96-4481-a0cf-c531c931b049",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Study limitations include: data restricted to hospital contacts (not capturing earliest symptoms), shorter EHR period (2006-2016) versus NPR (1994-2018), challenges in direct comparison between data sources, potential information bias in NPR coding, and inability to infer causality from trajectories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C74 appropriately acknowledge study limitations. The restriction to hospital data (C68) is a significant limitation for early detection. The inability to infer causality (C70-C71) is correctly stated and important for interpretation. The information bias concern (C74) is supported by citations. These limitations are honestly reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "3caf7c98-b212-49ef-9caf-075de99b46ff",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study demonstrates that combining registry data and text-mined EHRs provides comprehensive temporal patterns of symptoms prior to pancreatic cancer diagnosis, revealing increased prevalence of early symptoms in EHRs. Symptoms appear in complex, messy order, progressing from general/unspecific to more specific and severe as cancer advances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C79, C118 summarize the main conclusions. The complementary value of combining data sources is well-supported by the results (C25-C33, C58-C60). The characterization of symptom progression from general to specific (C79) is supported by trajectory analyses (C57, C105-C106). These represent the core contributions of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "57fbdbd9-432b-4a24-a441-5c65d152a2fd",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The 90-day survival threshold was chosen to distinguish early and late death groups because only a small fraction of patients are resectable at diagnosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C114 justifies the 90-day survival cutoff with citations to Sgouros and Maraveyas, 2008 and Berkman et al., 2023. While the choice is somewhat arbitrary, it is clinically motivated and consistently applied throughout the analysis. The rationale is reasonable for distinguishing prognostic groups.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "0602e8f3-b058-425a-a50b-4744b72b7b6a",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Literature supports that jaundice can indicate late-stage cancer with poor survival but also enables shorter diagnostic intervals compared to other symptoms. Cardiovascular diseases have been suggested to play a role in pancreatic cancer prognosis and as risk factors for other cancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 provide literature context for interpreting findings. The dual nature of jaundice (late-stage indicator vs. diagnostic facilitator) is appropriately nuanced with citations. The cardiovascular-cancer associations are supported by multiple citations, providing context for the trajectory findings in C45-C48.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "de5ec81f-3958-4872-a2bc-656482331ecb",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Future applications could use AI and advanced text mining to build longitudinal multi-modal trajectories for improved symptom extraction and early prediction of pancreatic cancer, potentially serving as a guide for better screening procedures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81 are explicitly speculative statements about future applications. While the current study provides foundational evidence for the value of multi-modal data, the proposed AI applications remain hypothetical. These are appropriate forward-looking statements based on the demonstrated proof-of-concept.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "37376846-e518-4ea1-87ee-a4138fd12d3f",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background literature establishes that pancreatic cancer is predicted to become the second leading cause of cancer deaths, has few generic symptoms resulting in late diagnosis, 11% 5-year survival (42% if detected early, 83.7% for stage I), with common symptoms including weight loss, abdominal pain, anorexia, jaundice, and new-onset diabetes with weight loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 provide background context from cited literature. These are standard epidemiological and clinical facts about pancreatic cancer that motivate the study. All claims are supported by appropriate citations. This background establishes the clinical importance of early symptom detection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "f390e0b4-3144-48d4-9b11-ffa0bca73625",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Prior work establishes that Nordic registries are high-quality, the Danish NPR enables temporal disease pattern studies, EHRs contain deeper phenotypic information, and previous studies have identified various pancreatic cancer symptoms but found symptoms appear sporadically with no difference in diagnostic interval between confirmed and suspected cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C18 review prior work on registry quality, EHR value, and pancreatic cancer symptom studies. All claims are supported by citations. This literature review appropriately positions the current study's contribution: combining registry and EHR data for comprehensive temporal symptom analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    },
+    {
+      "id": "fc0d5e72-aee4-4cd9-95af-94834b5834ca",
+      "content_id": "b8123231-cff2-4569-bc99-caf9a0daaa1d",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The study received appropriate regulatory approvals from Danish Data Protection Agency, Health Data Authority, and Patient Safety Authority. Analysis was conducted using Python 3.8 and R 3.6.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C104 document ethical approvals and software versions. The regulatory approvals are appropriate for registry research in Denmark. Software versions are specified, supporting reproducibility. These are standard methodological details.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:50:48.018654Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1218a0b3-2bf0-45c7-8bea-66b6171577d1",
+      "result_id": "5e856622-2b62-4a7e-ac9b-b253b75ede2a"
+    },
+    {
+      "claim_id": "7ad63cc2-d568-409a-830d-f803270091fd",
+      "result_id": "5e856622-2b62-4a7e-ac9b-b253b75ede2a"
+    },
+    {
+      "claim_id": "0292ebb9-be9a-4bbc-aa5d-73ab7465be2e",
+      "result_id": "5e856622-2b62-4a7e-ac9b-b253b75ede2a"
+    },
+    {
+      "claim_id": "36477a4c-684d-47bf-9410-29424d1cbb7f",
+      "result_id": "5e856622-2b62-4a7e-ac9b-b253b75ede2a"
+    },
+    {
+      "claim_id": "d47c406c-173c-440b-8cde-69224ab28dd6",
+      "result_id": "5e856622-2b62-4a7e-ac9b-b253b75ede2a"
+    },
+    {
+      "claim_id": "6ab319cd-9d6a-41ee-b608-0af5f469abdf",
+      "result_id": "5e856622-2b62-4a7e-ac9b-b253b75ede2a"
+    },
+    {
+      "claim_id": "c62a4188-81ad-4a35-a676-8c2ec53881d4",
+      "result_id": "95cf2490-c263-414f-85e1-ca3149491061"
+    },
+    {
+      "claim_id": "ce1c1b0a-eb2d-4a92-ab95-7c3ac6499809",
+      "result_id": "95cf2490-c263-414f-85e1-ca3149491061"
+    },
+    {
+      "claim_id": "d8135440-6488-4e3c-bcfc-4c5d1d5a7942",
+      "result_id": "95cf2490-c263-414f-85e1-ca3149491061"
+    },
+    {
+      "claim_id": "aa2941c5-a130-4e6b-b4c5-755840aeeacb",
+      "result_id": "95cf2490-c263-414f-85e1-ca3149491061"
+    },
+    {
+      "claim_id": "c3c646c6-0051-49fc-8911-477afe9a6b45",
+      "result_id": "95cf2490-c263-414f-85e1-ca3149491061"
+    },
+    {
+      "claim_id": "1aa1dec0-c701-4587-b433-07c83007e4f5",
+      "result_id": "95cf2490-c263-414f-85e1-ca3149491061"
+    },
+    {
+      "claim_id": "bd293314-75fd-42e3-a250-3c5cd9bff041",
+      "result_id": "95cf2490-c263-414f-85e1-ca3149491061"
+    },
+    {
+      "claim_id": "e3c7fcc6-c09e-4ea1-8823-09af6120af8d",
+      "result_id": "95cf2490-c263-414f-85e1-ca3149491061"
+    },
+    {
+      "claim_id": "2f61dae9-5ff4-4347-a8d0-4fc8fa202273",
+      "result_id": "95cf2490-c263-414f-85e1-ca3149491061"
+    },
+    {
+      "claim_id": "55ac8c02-7458-4306-9d7a-7cd65d388b47",
+      "result_id": "29fefb89-7d6d-412c-8925-7d6f7f87e542"
+    },
+    {
+      "claim_id": "3a27b666-9087-4300-b57d-2f691ae8ec98",
+      "result_id": "29fefb89-7d6d-412c-8925-7d6f7f87e542"
+    },
+    {
+      "claim_id": "f8c2e7a5-8ae4-415a-8360-8536ead4d253",
+      "result_id": "29fefb89-7d6d-412c-8925-7d6f7f87e542"
+    },
+    {
+      "claim_id": "1694c9a7-47a2-44fb-90de-15703e60a44f",
+      "result_id": "29fefb89-7d6d-412c-8925-7d6f7f87e542"
+    },
+    {
+      "claim_id": "1bd6e3c1-36db-401b-8225-8913e470a406",
+      "result_id": "29fefb89-7d6d-412c-8925-7d6f7f87e542"
+    },
+    {
+      "claim_id": "faa4d118-dbb2-44c8-8539-a4fdb146bac0",
+      "result_id": "29fefb89-7d6d-412c-8925-7d6f7f87e542"
+    },
+    {
+      "claim_id": "74ca2771-d12a-421c-9047-f4e396059c66",
+      "result_id": "66cf9587-f495-4b24-b12d-7edbb1ecda73"
+    },
+    {
+      "claim_id": "05aa1dc7-8924-4b5c-8a8e-5b41501e9b8e",
+      "result_id": "66cf9587-f495-4b24-b12d-7edbb1ecda73"
+    },
+    {
+      "claim_id": "8715480d-405d-47ba-80cd-0c3490c3fac0",
+      "result_id": "66cf9587-f495-4b24-b12d-7edbb1ecda73"
+    },
+    {
+      "claim_id": "61ccdf25-8957-4d56-9d3b-4d585b8f14cb",
+      "result_id": "66cf9587-f495-4b24-b12d-7edbb1ecda73"
+    },
+    {
+      "claim_id": "4ffccaf4-ea79-423e-bfa7-4b871af5c4bd",
+      "result_id": "66cf9587-f495-4b24-b12d-7edbb1ecda73"
+    },
+    {
+      "claim_id": "748a0184-8851-4a0b-a81d-7422f5701de2",
+      "result_id": "66cf9587-f495-4b24-b12d-7edbb1ecda73"
+    },
+    {
+      "claim_id": "a9b68077-0c58-4ca6-b802-daf87a8a36e0",
+      "result_id": "66cf9587-f495-4b24-b12d-7edbb1ecda73"
+    },
+    {
+      "claim_id": "8600ad72-1a0d-42e9-907c-bfca9bd93baf",
+      "result_id": "66cf9587-f495-4b24-b12d-7edbb1ecda73"
+    },
+    {
+      "claim_id": "7f6a1f80-ddfe-4d83-aa0a-6a6920359701",
+      "result_id": "ea2e456a-b456-405f-be91-2439ce8325f3"
+    },
+    {
+      "claim_id": "acce5a8e-63be-4a72-bcca-836e4883d749",
+      "result_id": "ea2e456a-b456-405f-be91-2439ce8325f3"
+    },
+    {
+      "claim_id": "5269545f-88a6-490e-910c-1a98b2ade247",
+      "result_id": "ea2e456a-b456-405f-be91-2439ce8325f3"
+    },
+    {
+      "claim_id": "dd06a0cc-3fb4-4172-a031-1e30b905f337",
+      "result_id": "ea2e456a-b456-405f-be91-2439ce8325f3"
+    },
+    {
+      "claim_id": "1539f306-728f-4584-8167-fed22b0fdb95",
+      "result_id": "ea2e456a-b456-405f-be91-2439ce8325f3"
+    },
+    {
+      "claim_id": "99cc111d-243d-4e7d-9b6a-3b13684d7cbc",
+      "result_id": "ea2e456a-b456-405f-be91-2439ce8325f3"
+    },
+    {
+      "claim_id": "ffa1c57d-2139-4a14-a10c-f659a96c18f4",
+      "result_id": "9746b7e5-5f82-40ff-be8e-64da40e9247e"
+    },
+    {
+      "claim_id": "5aed92c7-fc4f-40b8-b270-7b973c49b480",
+      "result_id": "9746b7e5-5f82-40ff-be8e-64da40e9247e"
+    },
+    {
+      "claim_id": "194b3dba-d6da-4784-a387-6d6086f71fde",
+      "result_id": "9746b7e5-5f82-40ff-be8e-64da40e9247e"
+    },
+    {
+      "claim_id": "e993cd02-b783-495c-9ace-ed0861e1208d",
+      "result_id": "9746b7e5-5f82-40ff-be8e-64da40e9247e"
+    },
+    {
+      "claim_id": "ddd7419c-5ef4-48b3-bb5a-6d31a8242145",
+      "result_id": "9f8673e2-54dc-4ade-ab20-c32e277b9ffd"
+    },
+    {
+      "claim_id": "2fe7a412-32ad-4715-8f0d-aeecb0fa861f",
+      "result_id": "9f8673e2-54dc-4ade-ab20-c32e277b9ffd"
+    },
+    {
+      "claim_id": "38abc130-02a1-4a10-bd34-f4538a244881",
+      "result_id": "9f8673e2-54dc-4ade-ab20-c32e277b9ffd"
+    },
+    {
+      "claim_id": "afdd4262-8ecb-4712-8811-085797d3b7e9",
+      "result_id": "9f8673e2-54dc-4ade-ab20-c32e277b9ffd"
+    },
+    {
+      "claim_id": "57d08ab0-3f3b-4467-89f7-e12a36c33171",
+      "result_id": "9f8673e2-54dc-4ade-ab20-c32e277b9ffd"
+    },
+    {
+      "claim_id": "c3722abc-6ad6-49f3-9d99-2352b1c97c70",
+      "result_id": "9f8673e2-54dc-4ade-ab20-c32e277b9ffd"
+    },
+    {
+      "claim_id": "4a94adfa-8b37-4962-bf00-6e981a8b016c",
+      "result_id": "11d40239-33e5-4c3a-a685-6bf49a63f9a7"
+    },
+    {
+      "claim_id": "96e92bd4-0ac2-4979-8cb2-8a35d918e839",
+      "result_id": "11d40239-33e5-4c3a-a685-6bf49a63f9a7"
+    },
+    {
+      "claim_id": "7b2b193d-e633-4c8f-b96a-90da9df847ba",
+      "result_id": "11d40239-33e5-4c3a-a685-6bf49a63f9a7"
+    },
+    {
+      "claim_id": "1cbb5cd3-fa97-4c0a-91fc-5746b265f0ee",
+      "result_id": "11d40239-33e5-4c3a-a685-6bf49a63f9a7"
+    },
+    {
+      "claim_id": "7b7d6d29-e4cb-4e06-bb9f-2e4a5bf6be6c",
+      "result_id": "11d40239-33e5-4c3a-a685-6bf49a63f9a7"
+    },
+    {
+      "claim_id": "6f4aa0c5-e46b-4ef6-a55a-7fe6d5d553c9",
+      "result_id": "db0c51bb-0f5d-47b3-a472-62bf0b1ea104"
+    },
+    {
+      "claim_id": "60fd71f0-d303-426a-9da4-b211f3632eb1",
+      "result_id": "db0c51bb-0f5d-47b3-a472-62bf0b1ea104"
+    },
+    {
+      "claim_id": "2162c8e9-8620-4681-96b3-5b9a3ca68978",
+      "result_id": "fadfda9e-8884-40c3-9eba-cd9635bb2047"
+    },
+    {
+      "claim_id": "f69fd3fe-f5a2-4a12-baaf-76c64212f5bb",
+      "result_id": "fadfda9e-8884-40c3-9eba-cd9635bb2047"
+    },
+    {
+      "claim_id": "7510e3cf-f98d-448e-964f-30f5b08f17ed",
+      "result_id": "fadfda9e-8884-40c3-9eba-cd9635bb2047"
+    },
+    {
+      "claim_id": "50b1f23e-474b-43f5-9425-9f6b7f3838d4",
+      "result_id": "fadfda9e-8884-40c3-9eba-cd9635bb2047"
+    },
+    {
+      "claim_id": "427c1633-7132-4aa6-9ba6-048f672e1311",
+      "result_id": "da41e69b-1140-4aca-8809-6c62ae9f02c1"
+    },
+    {
+      "claim_id": "7bbbe54e-aefa-4151-b4d0-5c5ae7e441a6",
+      "result_id": "da41e69b-1140-4aca-8809-6c62ae9f02c1"
+    },
+    {
+      "claim_id": "958bdf83-5601-4b8c-9a99-2d610fee1994",
+      "result_id": "da41e69b-1140-4aca-8809-6c62ae9f02c1"
+    },
+    {
+      "claim_id": "44d53161-93e4-4b8e-a2d5-b82a6f30b20b",
+      "result_id": "da41e69b-1140-4aca-8809-6c62ae9f02c1"
+    },
+    {
+      "claim_id": "ebdd42e5-9434-4c3c-9672-bd2efb00d1fd",
+      "result_id": "da41e69b-1140-4aca-8809-6c62ae9f02c1"
+    },
+    {
+      "claim_id": "889517af-11d2-474b-8820-1fdf430bd2ef",
+      "result_id": "da41e69b-1140-4aca-8809-6c62ae9f02c1"
+    },
+    {
+      "claim_id": "a8de59af-f0ee-4b8d-be72-76ebdce75950",
+      "result_id": "da41e69b-1140-4aca-8809-6c62ae9f02c1"
+    },
+    {
+      "claim_id": "ff5519b4-08fb-42ab-a9eb-a10451c80f35",
+      "result_id": "da41e69b-1140-4aca-8809-6c62ae9f02c1"
+    },
+    {
+      "claim_id": "feb70f29-569e-4bb1-b779-4f10a8149e41",
+      "result_id": "da41e69b-1140-4aca-8809-6c62ae9f02c1"
+    },
+    {
+      "claim_id": "f2df413a-1246-4c2a-a486-3a88f37eadfb",
+      "result_id": "da41e69b-1140-4aca-8809-6c62ae9f02c1"
+    },
+    {
+      "claim_id": "861a8b30-babf-4737-9a46-7b407777a95f",
+      "result_id": "da41e69b-1140-4aca-8809-6c62ae9f02c1"
+    },
+    {
+      "claim_id": "cb76aa37-37c6-4248-9c96-d7b51759d79c",
+      "result_id": "a2635692-4878-440f-b827-415b8f838933"
+    },
+    {
+      "claim_id": "81e723cc-77c5-413c-8922-39b3337e9d12",
+      "result_id": "a2635692-4878-440f-b827-415b8f838933"
+    },
+    {
+      "claim_id": "31859154-95bf-4b52-8be2-cf381cd15e26",
+      "result_id": "a2635692-4878-440f-b827-415b8f838933"
+    },
+    {
+      "claim_id": "dd04d271-1cfc-4c02-abcf-1eb0a0fed78b",
+      "result_id": "a2635692-4878-440f-b827-415b8f838933"
+    },
+    {
+      "claim_id": "c658d4d8-0612-4396-a465-a4c43702a4f5",
+      "result_id": "a2635692-4878-440f-b827-415b8f838933"
+    },
+    {
+      "claim_id": "8c5be651-c186-41a2-aa0d-891624bc1fda",
+      "result_id": "a2635692-4878-440f-b827-415b8f838933"
+    },
+    {
+      "claim_id": "d191c146-1a60-41bd-ad00-187aeb78fa05",
+      "result_id": "a2635692-4878-440f-b827-415b8f838933"
+    },
+    {
+      "claim_id": "a8c1fab1-1700-4504-831b-f5cae7374bc0",
+      "result_id": "a2635692-4878-440f-b827-415b8f838933"
+    },
+    {
+      "claim_id": "5b3ad1be-dd3b-4dc4-b143-56a652b3fe46",
+      "result_id": "a2635692-4878-440f-b827-415b8f838933"
+    },
+    {
+      "claim_id": "05955a37-c62c-4fba-adf6-5022ba323d43",
+      "result_id": "4852f00b-ef96-4481-a0cf-c531c931b049"
+    },
+    {
+      "claim_id": "3055e736-73bd-4519-a279-ae88d0daae86",
+      "result_id": "4852f00b-ef96-4481-a0cf-c531c931b049"
+    },
+    {
+      "claim_id": "531a3a9c-1336-4057-b062-68937f72b1dc",
+      "result_id": "4852f00b-ef96-4481-a0cf-c531c931b049"
+    },
+    {
+      "claim_id": "cf56a9ab-3ee7-4474-b230-2270165cc2e6",
+      "result_id": "4852f00b-ef96-4481-a0cf-c531c931b049"
+    },
+    {
+      "claim_id": "06a0f8aa-89b2-4f40-8d69-70e3a4af69ab",
+      "result_id": "4852f00b-ef96-4481-a0cf-c531c931b049"
+    },
+    {
+      "claim_id": "ed0a9574-5518-402a-b860-e20e6a599f0e",
+      "result_id": "4852f00b-ef96-4481-a0cf-c531c931b049"
+    },
+    {
+      "claim_id": "fefa8bd6-b099-4cab-a98c-c53447ed742a",
+      "result_id": "4852f00b-ef96-4481-a0cf-c531c931b049"
+    },
+    {
+      "claim_id": "b19e78b4-5f61-4dfb-a5e8-a59cbf3df377",
+      "result_id": "3caf7c98-b212-49ef-9caf-075de99b46ff"
+    },
+    {
+      "claim_id": "24717d1d-b0f0-4e5a-81b6-08a2161586b8",
+      "result_id": "3caf7c98-b212-49ef-9caf-075de99b46ff"
+    },
+    {
+      "claim_id": "30ee0c24-f1f3-43cd-b53f-e896dd2aea3e",
+      "result_id": "3caf7c98-b212-49ef-9caf-075de99b46ff"
+    },
+    {
+      "claim_id": "8491697a-6724-401f-b91b-d45a29de52c5",
+      "result_id": "3caf7c98-b212-49ef-9caf-075de99b46ff"
+    },
+    {
+      "claim_id": "7897848c-2a86-4378-9df8-0297c5f9c926",
+      "result_id": "3caf7c98-b212-49ef-9caf-075de99b46ff"
+    },
+    {
+      "claim_id": "084fbb02-8af9-48b3-975c-62a170f291e6",
+      "result_id": "57fbdbd9-432b-4a24-a441-5c65d152a2fd"
+    },
+    {
+      "claim_id": "13801621-e78e-4c06-a2f4-ac71c6cb8606",
+      "result_id": "0602e8f3-b058-425a-a50b-4744b72b7b6a"
+    },
+    {
+      "claim_id": "14efa135-e991-4334-b0aa-019fb3b34577",
+      "result_id": "0602e8f3-b058-425a-a50b-4744b72b7b6a"
+    },
+    {
+      "claim_id": "c9613498-38b0-4223-87c8-3cacdd5f29fd",
+      "result_id": "0602e8f3-b058-425a-a50b-4744b72b7b6a"
+    },
+    {
+      "claim_id": "d9cfd1d6-fc02-41ed-af97-ff150d4bb35a",
+      "result_id": "0602e8f3-b058-425a-a50b-4744b72b7b6a"
+    },
+    {
+      "claim_id": "15ee50cd-ef63-4cc4-a059-973ed2c8c95c",
+      "result_id": "0602e8f3-b058-425a-a50b-4744b72b7b6a"
+    },
+    {
+      "claim_id": "6d69a0bf-6499-4b01-b9bf-a52020412946",
+      "result_id": "de5ec81f-3958-4872-a2bc-656482331ecb"
+    },
+    {
+      "claim_id": "1db01b2c-4671-4680-904b-4ed646b48fcd",
+      "result_id": "de5ec81f-3958-4872-a2bc-656482331ecb"
+    },
+    {
+      "claim_id": "2d433cd2-6d2a-40cd-9850-31648cc092f3",
+      "result_id": "37376846-e518-4ea1-87ee-a4138fd12d3f"
+    },
+    {
+      "claim_id": "adb82ba7-b4fc-49ca-a046-382cad0b285c",
+      "result_id": "37376846-e518-4ea1-87ee-a4138fd12d3f"
+    },
+    {
+      "claim_id": "7aa42e30-c568-4886-82bf-9a2f2744b364",
+      "result_id": "37376846-e518-4ea1-87ee-a4138fd12d3f"
+    },
+    {
+      "claim_id": "360686e4-270c-4c59-a5ef-812968dc5561",
+      "result_id": "37376846-e518-4ea1-87ee-a4138fd12d3f"
+    },
+    {
+      "claim_id": "5b4ad9cb-9922-42ad-bcfb-d9ab7639944a",
+      "result_id": "37376846-e518-4ea1-87ee-a4138fd12d3f"
+    },
+    {
+      "claim_id": "61448443-190e-451a-aa9c-e3828ca8ebb9",
+      "result_id": "37376846-e518-4ea1-87ee-a4138fd12d3f"
+    },
+    {
+      "claim_id": "d256c836-b534-4069-b318-e4c12b67d117",
+      "result_id": "37376846-e518-4ea1-87ee-a4138fd12d3f"
+    },
+    {
+      "claim_id": "cb6ad1cc-9480-48cf-ab10-b3436562fba1",
+      "result_id": "37376846-e518-4ea1-87ee-a4138fd12d3f"
+    },
+    {
+      "claim_id": "e52331c9-f0e2-405d-b1ea-f2071411ce6c",
+      "result_id": "37376846-e518-4ea1-87ee-a4138fd12d3f"
+    },
+    {
+      "claim_id": "686c6208-109a-476b-985d-ffd95caa253e",
+      "result_id": "f390e0b4-3144-48d4-9b11-ffa0bca73625"
+    },
+    {
+      "claim_id": "8bc65242-8e2e-4ae2-8a34-49980a3130eb",
+      "result_id": "f390e0b4-3144-48d4-9b11-ffa0bca73625"
+    },
+    {
+      "claim_id": "f2a3845d-40e6-4357-8ad8-72750d82f5b1",
+      "result_id": "f390e0b4-3144-48d4-9b11-ffa0bca73625"
+    },
+    {
+      "claim_id": "8fe43e17-7179-496a-9493-7bb96b3f7323",
+      "result_id": "f390e0b4-3144-48d4-9b11-ffa0bca73625"
+    },
+    {
+      "claim_id": "fc427473-2256-4ba0-8e1d-cea4723e2e12",
+      "result_id": "f390e0b4-3144-48d4-9b11-ffa0bca73625"
+    },
+    {
+      "claim_id": "0d89f2b9-67a1-4201-9963-1ae1778cde62",
+      "result_id": "f390e0b4-3144-48d4-9b11-ffa0bca73625"
+    },
+    {
+      "claim_id": "84a037f1-74ba-4a4d-8405-0882df4400c2",
+      "result_id": "f390e0b4-3144-48d4-9b11-ffa0bca73625"
+    },
+    {
+      "claim_id": "0114c6bb-ca3f-42e1-b746-c9d40b9a78b4",
+      "result_id": "f390e0b4-3144-48d4-9b11-ffa0bca73625"
+    },
+    {
+      "claim_id": "3d275292-d4c0-41e6-9387-e3f9d9e6ce68",
+      "result_id": "f390e0b4-3144-48d4-9b11-ffa0bca73625"
+    },
+    {
+      "claim_id": "f0711883-64a0-4ffd-87dc-510beff14987",
+      "result_id": "fc0d5e72-aee4-4cd9-95af-94834b5834ca"
+    },
+    {
+      "claim_id": "0ecbb733-91ec-4520-8295-a04bc89993ef",
+      "result_id": "fc0d5e72-aee4-4cd9-95af-94834b5834ca"
+    },
+    {
+      "claim_id": "11f8a3f9-d901-4d9c-acc8-545221dc113f",
+      "result_id": "fc0d5e72-aee4-4cd9-95af-94834b5834ca"
+    }
+  ],
+  "comparisons": []
+}

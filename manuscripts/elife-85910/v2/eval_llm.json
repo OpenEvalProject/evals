@@ -1,0 +1,447 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C52",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors developed a modular flow chamber system that generates spatially patterned airborne odor landscapes through controlled airflow, with odor concentration measured by a spatially distributed array of digital metal-oxide gas sensors. The system allows continuous monitoring of odor profiles during behavioral experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C52, C61-C74 collectively demonstrate the development and validation of the flow chamber and sensor array system. The experimental data in Figures 1-2 show successful generation of various odor landscapes (cone, narrow cone, inverse cone) with different odorants. The system design is well-documented with publicly available fabrication plans, and the modular nature is demonstrated through interchangeable inserts and flexible configurations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C106"
+    ],
+    "result": "Metal-oxide odor sensors (SGP30) were calibrated against photo-ionization detectors (PIDs) and demonstrated reliable, stable measurements with one-to-one correspondence, no hysteresis, and appropriate temporal response for non-turbulent odor landscapes. The sensor array achieved ~1 cm spatial resolution at 1 Hz sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C93, C106 are well-supported by calibration data in Figure 1 supplements showing linear relationships between sensor readings and PID measurements across multiple odorants. The temporal stability and lack of hysteresis are demonstrated empirically. However, the claim of 'well matched' temporal response (C85) is somewhat qualitative and could benefit from more quantitative characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The odor sensor array accurately reports odor concentration, as validated by comparison with a convection-diffusion model. Odor profiles were established within minutes and remained stable over 30-minute timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 are supported by Figure 1f-g showing good agreement between measured concentrations and the fitted convection-diffusion model, particularly in the central experimental region. The model serves as independent validation. Temporal stability is demonstrated in Figure 1\u2014figure supplement 5. The validation is appropriate for the artificially simple gradient tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C107",
+      "C108",
+      "C110"
+    ],
+    "result": "The flow chamber enables flexible control of complex odor landscapes beyond simple point sources, demonstrated with multiple configurations (narrow cone, inverse cone) and multiple odorants (butanone, benzaldehyde, ethanol, ethyl butyrate) spanning different vapor pressures and water solubilities. The profiles are stationary and reproducible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C110 are well-supported by experimental data in Figure 2 showing various odor landscape configurations with different odorants. Each odorant was separately calibrated (Figure 2\u2014figure supplement 1). The claim about compatibility with 'most volatile organic compounds' (C107) is reasonable but somewhat speculative, as only four odorants were tested. The acknowledgment of profile skewing (C108-C109) demonstrates appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C113",
+      "C114",
+      "C116",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Agar gel dramatically disrupts applied butanone gradients. Without agar, a butanone droplet equilibrates to uniform concentration within 3 minutes via gas-phase diffusion. With agar present, a persistent local maximum forms around the droplet instead of uniform distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C113-C121 are strongly supported by direct measurements in Figure 3 showing dramatic differences in odor distribution with and without agar. The uniform distribution without agar matches theoretical expectations for gas-phase diffusion. The persistent gradient with agar is consistent across perturbations (Figure 3\u2014figure supplement 1). This is a key finding that challenges assumptions in classical droplet assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Agar absorbs airborne butanone molecules, drastically altering downstream odor landscapes while having little effect upstream. The airborne concentration fails to reach equilibrium on experimental timescales, making it impractical to simply wait for equilibrium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C128 are well-supported by Figure 4 showing upstream vs downstream measurements and pulse-chase experiments (Figure 4\u2014figure supplement 1b). The absorption is consistent with butanone's high water solubility (275 g/L). The long equilibration times (Figure 4e-f) justify the conclusion that waiting for equilibrium is impractical. This represents a significant experimental challenge that the authors address with their pre-equilibration protocol.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "A pre-equilibration protocol was developed that briefly exposes agar to higher-than-desired odor concentration, then switches to target concentration once downstream sensors reach desired levels. This achieves quasi-equilibrium within ~10 minutes and generates stable gradients matching those without agar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C129-C135 are well-supported by experimental data in Figure 4 showing that pre-equilibration restores downstream profiles to match upstream and no-agar conditions. The ~10 minute timescale is demonstrated in Figure 4\u2014figure supplement 1c. This is a practical solution to the agar absorption problem, though the protocol requires monitoring and manual switching between odor sources.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "At quasi-equilibrium, if airborne odor concentration along boundaries matches the profile without agar, the interior concentration above agar should also match. This is justified by differential equation theory: matching boundary conditions and equations implies identical interior distributions, unless sources/sinks are precisely arranged (which is unlikely and temporally unstable).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C144 present a logical argument based on mathematical principles of differential equations (C138) with reference to Appendix 1 (C143). The reasoning about boundary conditions determining interior solutions is sound for systems governed by convection-diffusion equations. The argument about unlikely/unstable source-sink arrangements (C141-C142) is reasonable. However, this remains a theoretical argument that requires empirical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C145",
+      "C146"
+    ],
+    "result": "A numerical reaction-convection-diffusion model shows that after pre-equilibration, the with-agar odor landscape matches the without-agar landscape, providing qualitative agreement with empirical observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C146 are supported by Figure 5 showing simulation results. The model incorporates odor-agar interactions (absorption/emission) and demonstrates that pre-equilibration can restore the no-agar profile. The 'qualitative agreement' (C146) is appropriately cautious, as the model makes assumptions about absorption/emission rates that are not independently validated. The model supports but does not prove the boundary condition argument.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "After pre-equilibration, measured airborne concentration with agar matched measurements without agar to within <10% fractional difference in the animal crawling area. This agreement validates that monitoring boundary odor profiles can identify stable, known odor landscapes. The presence of worms did not noticeably alter odor concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C152 are strongly supported by direct empirical measurements in Figure 6 using the full sensor array opposite the agar. The <10% agreement (C147) provides quantitative validation of the boundary monitoring approach. Figure 6\u2014figure supplement 1 shows worms don't affect concentration. The control without pre-equilibration (C152, Figure 6c) appropriately shows mismatch before quasi-steady state. This is critical validation of the method's core premise.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C57",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C167"
+    ],
+    "result": "C. elegans use both biased random walk (modulating turn frequency based on bearing to gradient) and weathervaning (curving trajectories toward gradient when moving perpendicular) to navigate airborne butanone gradients. Both strategies were absent in control experiments without odor. This is the first quantitative characterization of these strategies for airborne butanone in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C57-C165, C167 are well-supported by behavioral data in Figure 7. Turn probability modulation (C161, Figure 7e) and trajectory curvature skewing (C162-C164, Figure 7f) provide clear signatures of both strategies. Controls without odor (C165, Figure 7\u2014figure supplement 1) appropriately show absence of these behaviors. The claim of novelty (C167) appears reasonable based on literature review. Sample sizes are adequate (~100 worms/experiment, 6 experiments, >90 animal-hours).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "AIB-inhibited C. elegans still climbed butanone gradients but with altered strategies: turn probability remained biased by gradient (suggesting retained biased random walk, though with lower overall turning rate), but weathervaning was dramatically down-regulated. This implicates AIB as important for turning rate and weathervaning strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C172-C176 are supported by behavioral data in Figure 8 comparing AIB-inhibited to wild-type animals. The reduced weathervaning is clearly shown by less orientation-dependent trajectory curvature (C175, Figure 8d vs Figure 7f). The retained but reduced biased random walk (C173) is shown in Figure 8c. However, the sample size for AIB-inhibited animals (~100 worms, 3 experiments, 51 animal-hours) is smaller than wild-type, and the genetic manipulation (chronic inhibition via twk-18(gf)) could have pleiotropic effects beyond AIB function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "Drift velocity as a function of local gradient steepness captures overall gradient climbing performance from all navigational strategies. This analysis provides information relevant to chemotaxis index but additionally describes quantitatively how animals respond to local gradients and on what timescale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C180 are supported by Figure 9 showing drift velocity analysis. The approach appropriately integrates both biased random walk and weathervaning contributions. The claim that this is 'only possible' with odor concentration knowledge (C180) is correct. However, the statistical analysis could be more rigorous\u2014while significance is claimed (p<0.001), the methods for calculating error bars and testing differences between bins are not fully detailed in the figure legend.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C59",
+      "C183",
+      "C184",
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "Drosophila larvae moved toward higher butanone concentrations using similar navigational strategies to C. elegans: modulating turning rate (higher when headed down-gradient) and reorientation direction (toward gradient). This is the first characterization of larval navigation strategies for butanone. Chemotaxis efficiency is much higher in larvae than worms due to ~10\u00d7 faster run velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C59, C183-C189 are supported by behavioral data in Figure 10 (59 larvae, 6 experiments, ~7 min/larva average). Turn rate modulation and directed reorientations are clearly shown. The novelty claim (C188) appears reasonable. However, the sample size is notably smaller than for C. elegans experiments (~6.8 vs >90 animal-hours), and the analysis is less detailed (no weathervaning analysis, no mutant analysis). The efficiency comparison (C189) is a reasonable inference from velocity differences but lacks formal quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C190",
+      "C191",
+      "C209",
+      "C222",
+      "C225"
+    ],
+    "result": "The ability to continuously monitor odor profiles during experiments, combined with understanding of odor-agar interactions, provides confident knowledge of odor experienced by animals over time. This is especially important for time-varying navigation behavior and removes ambiguity between odor landscape changes and behavioral strategy changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C190-C191, C209, C222, C225 are supported by the demonstrated capability throughout the manuscript. The continuous monitoring via boundary sensors is validated in Figures 4-6. The importance for time-varying behavior (C191) is appropriately cited. However, the actual behavioral experiments presented (Figures 7-10) focus on quasi-steady-state conditions, so the value for time-varying scenarios remains somewhat speculative despite being well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "The method allows worms to crawl freely on agar (unlike microfluidic chips), enables direct comparison to classical chemotaxis assays, and makes it straightforward to flexibly adjust spatial patterns without redesigning the chamber. More precise odor measurements may better constrain investigations into neural mechanisms underlying navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C193-C197 are supported by the demonstrated system capabilities and appropriate citations. The agar compatibility (C195-C196) is clearly demonstrated. The flexibility (C197) is shown through multiple configurations in Figure 2. The potential for better constraining neural mechanism investigations (C194) is reasonable speculation supported by citations, though not directly demonstrated in this work. The comparison to microfluidics is fair and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C198",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206"
+    ],
+    "result": "The setup uses low flow rates (5 mm/s wind speed) to avoid anemotaxis. Drosophila larvae do not exhibit anemotaxis at these speeds (only at 200-1000\u00d7 higher speeds), and C. elegans are not thought to respond to airflow. Control experiments confirmed no anemotaxis in C. elegans at 5 mm/s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C198, C200-C206 are well-supported by appropriate citations and control experiments (Figure 7\u2014figure supplement 1). The flow rates are clearly specified and justified. The citations to prior work on larval anemotaxis thresholds (C200-C202) are appropriate. The C. elegans control (C206) provides direct evidence. This addresses an important potential confound. However, no direct anemotaxis control is shown for larvae in this specific setup.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C207",
+      "C208",
+      "C210",
+      "C212",
+      "C213",
+      "C214",
+      "C215"
+    ],
+    "result": "Butanone's high vapor pressure and water solubility cause strong agar interactions, making it difficult to infer odor landscapes a priori when agar is present. Continuous boundary monitoring overcomes this challenge. The flow-based approach with monitoring should allow use of a wider range of odors and is more robust against unforeseen odor interactions with chamber materials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C207-C208, C213-C215 are well-supported by the demonstrated butanone-agar interactions (Figures 3-4) and successful 30-min stable gradients (Figure 1\u2014figure supplement 5). The speculation about other odorants (C210, C212, C214-C215) is reasonable and partially supported by demonstrations with four different odorants (Figure 2), though the claim about 'wider range' remains somewhat speculative. The comparison to ethyl butyrate stability (C212) is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220"
+    ],
+    "result": "The biophysical processes governing odor sensing in C. elegans are not fully understood. Worms carry a moisture layer and it's unclear whether they sense odorant in agar vs air. The reaction-convection-diffusion model suggests that at quasi-equilibrium, agar odor concentration relates to airborne concentration by a constant scalar, so even if worms only sense agar odor, the experienced concentration differs only by a scaling factor from airborne estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C216-C220 acknowledge important uncertainties about the biophysical basis of worm olfaction. The modeling prediction (C219) is reasonable but not empirically validated ('we have not measured this empirically,' C220). The conclusion about scaling factors (C220) is logical given the model assumptions, but those assumptions (constant scalar relationship) are not independently verified. This represents an important caveat to the interpretation of the C. elegans behavioral results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The introduction establishes the importance of olfactory navigation, reviews existing methods for odor control and measurement (droplet assays, microfluidics, flow cells, infrared spectroscopy, metal-oxide sensors), and identifies key challenges: difficulty controlling and measuring odor environments for small animals, limitations of existing approaches, lack of concurrent spatial odor measurement during behavior, and sensitivity to environmental perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C51 provide appropriate background and motivation, supported by extensive citations to relevant literature. The review of existing methods is fair and accurately represents their capabilities and limitations based on the cited work. The identification of challenges (C16-C18, C31-C33, C42-C45) appropriately motivates the current work. These are primarily literature review claims that set context rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C60",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C181",
+      "C182"
+    ],
+    "result": "Background on butanone and prior navigation studies: butanone is a water-soluble odorant found in food sources, commonly used in navigation studies, and of interest for olfactory learning. C. elegans are known to climb butanone gradients using biased random walk in liquid microfluidic environments and weathervaning for other airborne odors, but weathervaning for airborne butanone and navigation with known concentrations had not been characterized. AIB's role in butanone navigation was unknown. Butanone is attractive to larval flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C153-C156, C60, C167-C171, C181-C182 provide appropriate background supported by relevant citations. The identification of gaps in knowledge (C60, C156, C167-C168, C171) appropriately motivates the behavioral experiments. The claims about prior work are accurately represented based on the citations. These establish the novelty of the current behavioral characterizations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C221",
+      "C223",
+      "C224"
+    ],
+    "result": "Future work is needed to improve concurrent animal tracking, design more miniaturized sensors, and generalize to 3D environments. Knowing odor concentration will be crucial for studying changes in navigational strategy in contexts like associative learning, sensory adaptation, and behavioral states, where disambiguating odor landscape changes from strategy changes is critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C221, C223-C224 appropriately identify limitations and future directions. The need for improved tracking (C221) is evident from Figure 1\u2014figure supplement 6 showing tracking challenges with full sensor array. The potential applications (C223) are well-supported by relevant citations. These represent reasonable speculation about future applications rather than current results.",
+    "result_type": "MINOR"
+  }
+]

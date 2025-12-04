@@ -1,0 +1,1581 @@
+{
+  "submission": {
+    "id": "e11230f5-659d-4d37-84e2-231f8827927f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T01:34:50.951472Z",
+    "updated_at": "2025-12-04T01:34:50.951472Z"
+  },
+  "content": [
+    {
+      "id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "submission_id": "e11230f5-659d-4d37-84e2-231f8827927f",
+      "content_type": "manuscript",
+      "content_text": "# Are single-peaked tuning curves tuned for speed rather than accuracy?\n\n## Authors\n\n- Movitz Lenninger<sup>1</sup> ([ORCID: 0000-0002-6165-4900](https://orcid.org/0000-0002-6165-4900)) \u2020\n- Mikael Skoglund<sup>1</sup>\n- Pawel Andrzej Herman<sup>2</sup> ([ORCID: 0000-0001-6553-823X](https://orcid.org/0000-0001-6553-823X))\n- Arvind Kumar<sup>2</sup> ([ORCID: 0000-0002-8044-9195](https://orcid.org/0000-0002-8044-9195)) \u2020\n\n### Affiliations\n\n1. Division of Information Science and Engineering, KTH Royal Institute of Technology Stockholm Sweden ([ROR:026vcq606](https://ror.org/026vcq606))\n2. Division of Computational Science and Technology, KTH Royal Institute of Technology Stockholm Sweden ([ROR:026vcq606](https://ror.org/026vcq606))\n3. Science for Life Laboratory Stockholm Sweden ([ROR:04ev03g22](https://ror.org/04ev03g22))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAccording to the efficient coding hypothesis, sensory neurons are adapted to provide maximal information about the environment, given some biophysical constraints. In early visual areas, stimulus-induced modulations of neural activity (or tunings) are predominantly single-peaked. However, periodic tuning, as exhibited by grid cells, has been linked to a significant increase in decoding performance. Does this imply that the tuning curves in early visual areas are sub-optimal? We argue that the time scale at which neurons encode information is imperative to understand the advantages of single-peaked and periodic tuning curves, respectively. Here, we show that the possibility of catastrophic (large) errors creates a trade-off between decoding time and decoding ability. We investigate how decoding time and stimulus dimensionality affect the optimal shape of tuning curves for removing catastrophic errors. In particular, we focus on the spatial periods of the tuning curves for a class of circular tuning curves. We show an overall trend for minimal decoding time to increase with increasing Fisher information, implying a trade-off between accuracy and speed. This trade-off is reinforced whenever the stimulus dimensionality is high, or there is ongoing activity. Thus, given constraints on processing speed, we present normative arguments for the existence of the single-peaked tuning organization observed in early visual areas.\n\n## Introduction\n\nOne of the fundamental problems in systems neuroscience is understanding how sensory information can be represented in the spiking activity of an ensemble of neurons. The problem is exacerbated by the fact that individual neurons are highly noisy and variable in their responses, even to identical stimuli (Arieli et al., 1996). A common feature of early sensory representation is that the neocortical neurons in primary sensory areas change their average responses only to a small range of features of the sensory stimulus. For instance, some neurons in the primary visual cortex respond to moving bars oriented at specific angles (Hubel and Wiesel, 1962). This observation has led to the notion of tuning curves. Together, a collection of tuning curves provides a possible basis for a neural code.\n\nA considerable emphasis has been put on understanding how the structure of noise and correlations affect stimulus representation given a set of tuning curves (Shamir and Sompolinsky, 2004; Averbeck and Lee, 2006; Franke et al., 2016; Zylberberg et al., 2016; Moreno-Bote et al., 2014; Kohn et al., 2016). More recently, the issue of local and catastrophic errors, dating back to the work of Shannon (Shannon, 1949), has been raised in the context of neuroscience (e.g. Xie, 2002; Sreenivasan and Fiete, 2011). Intuitively, local errors are small estimation errors that depend on the trial-by-trial variability of the neural responses and the local shapes of the tuning curves surrounding the true stimulus condition (Figure 1a bottom plot, see s1). On the other hand, catastrophic errors are very large estimation errors that depend on the trial-by-trial variability and the global shape of the tuning curves (Figure 1a bottom plot, see s2). While a significant effort has been put into studying how stimulus tuning and different noise structures affect local errors, less is known about the interactions with catastrophic errors. For example, Fisher information is a common measure of the accuracy of a neural code (Brunel and Nadal, 1998; Abbott and Dayan, 1999; Guigon, 2003; Moreno-Bote et al., 2014; Benichoux et al., 2017). The Cram\u00e9r-Rao bound states that a lower limit of the minimal mean squared error (MSE) for any unbiased estimator is given by the inverse of Fisher information (Lehmann and Casella, 1998). Thus, increasing Fisher information reduces the lower bound on MSE. However, because Fisher information can only capture local errors, the true MSE might be considerably larger in the presence of catastrophic errors (Xie, 2002; Kostal et al., 2015; Malerba et al., 2022), especially if the available decoding time is short (Bethge et al., 2002; Finkelstein et al., 2018).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84531/elife-84531-fig1-v3.jpg)\n\n**Figure 1.:** (a) Top: A two-neuron system encoding a single variable using single-peaked tuning curves ($\\lambda=1$). Bottom: The tuning curves create a one-dimensional activity trajectory embedded in a two-dimensional neural activity space (black trajectory). Decoding the two stimulus conditions, s1 and s2, illustrates the two types of estimation errors that can occur due to trial-by-trial variability, local ($s^_{1}$) and catastrophic ($s^_{2}$). (b) Same as in (a) but for periodic tuning curves ($\\lambda=0.5$). Notice that the stimulus conditions are intermingled and that the stimulus can not be determined from the firing rates. (c) Time evolution of the root mean squared error (RMSE) using maximum likelihood estimation (solid line) and the Cram\u00e9r-Rao bound (dashed line) for a population of single-peaked tuning curves ($N=600$, $w=0.3$, average evoked firing rate $f_{s\u2062t\u2062i\u2062m}\u00af=20\u2062exp\u2061(-1/w)\u2062B_{0}\u2062(1/w)$ sp/s, and $b=2$ sp/s). For about 50 ms the RMSE is significantly larger than the predicted lower bound. (d) The empirical error distributions for the time point indicated in (c), where the RMSE strongly deviates from the predicted lower bound. Inset: A non-zero empirical error probability spans the entire stimulus domain. (e) Same as in (d) when the RMSE roughly converges to the Cram\u00e9r-Rao bound. Notice the absence of large estimation errors.\n\nA curious observation is that the tuning curves in early visual areas predominately use single-peaked firing fields, whereas grid cells in the entorhinal cortex are known for their periodically distributed firing fields (Hafting et al., 2005). It has been shown that the multiple firing locations of grid cells increase the precision of the neural code compared to single-peaked tuning curves (Sreenivasan and Fiete, 2011; Mathis et al., 2012; Wei et al., 2015). This raises the question of why periodic firing fields are not a prominent organization of early visual processing too?\n\nThe theoretical arguments in favor of periodic tuning curves have mostly focused on local errors under the assumption that catastrophic errors are negligible (Sreenivasan and Fiete, 2011). However, given the response variability, it takes a finite amount of time to accumulate a sufficient number of spikes to decode the stimulus. Given that fast processing speed is a common feature of visual processing (Thorpe et al., 1996; Fabre-Thorpe et al., 2001; Rolls and Tovee, 1994; Resulaj et al., 2018), it is crucial that each neural population in the processing chain can quickly produce a reliable stimulus-evoked signal. Therefore, the time required to produce signals without catastrophic errors will likely put fundamental constraints on any neural code, especially in early visual areas.\n\nHere, we contrast Fisher information with the minimal decoding time required to remove catastrophic errors (i.e. the time until Fisher information becomes a reasonable descriptor of the MSE). We base the results on the maximum likelihood estimator for uniformly distributed stimuli (i.e., the maximum a posteriori estimator) using populations of tuning curves with different numbers of peaks. We show that the minimal decoding time tends to increase with increasing Fisher information in the case of independent Poissonian noise to each neuron. This suggests a trade-off between the decoding accuracy of a neural population and the speed by which it can produce a reliable signal. Furthermore, we show that the difference in minimal decoding time grows with the number of jointly encoded stimulus features (stimulus dimensionality) and in the presence of ongoing (non-specific) activity. Thus, single-peaked tuning curves require shorter decoding times and are more robust to ongoing activity than periodic tuning curves. Finally, we illustrate the issue of large estimation errors and periodic tuning in simple spiking neural network model tracking either a step-like stimulus change or a continuously time-varying stimulus.\n\n## Results\n\n### Shapes of tuning curves, Fisher information, and catastrophic errors\n\nTo enable a comparison between single-peaked and periodic (multi-peaked) tuning curves, we consider circular tuning curves responding to a D-dimensional stimulus, $s$, according to\n\n$$\nf_{i}(s)=a_{i}\\prodj=1Dexp\u2061(\\frac{1}{w}(cos\u2061(\\frac{2\\pi}{\\lambda_{i}}(s_{j}\u2212s_{i,j}^{\u2032}))\u22121))+b\n$$\n\nwhere ai is the peak amplitude of the stimulus-related tuning curve $i$, $w$ is a width scaling parameter, $\\lambda_{i}$ defines the spatial period of the tuning curve, $s_{i,j}^{\u2032}$ determines the location of the peak(s) in the $j$:th stimulus dimension, and $b$ determines the amount of ongoing activity (see Figure 1a\u2013b, top panels). The parameters are kept fixed for each neuron, thus ignoring any effect of learning or plasticity. In the following, the stimulus domain is set to $s\\in[0,1)^{D}$ for simplicity. To avoid boundary effects, we assume that the stimulus has periodic boundaries (i.e. $s_{j}=0$ and $s_{j}=1$ are the same stimulus condition) and adjust any decoded value to lie within the stimulus domain, for example,\n\n$$\ns^_{ML}=1+0.1(mod1)=0.1,\n$$\n\nsee Materials and methods - \u2019Implementation of maximum likelihood estimator\u2019 for details.\n\nWe assume that the stimulus is uniformly distributed across its domain and that its dimensions are independent. This can be seen as a worst-case scenario as it maximizes the entropy of the stimulus. In a single trial, we assume that the number of emitted spikes for each neuron is conditionally independent, and follows a Poisson distribution, given some stimulus-dependent rate $f_{i}\u2062(s)$. Thus, the probability of observing a particular activity pattern, $r$, in a population of $N$ neurons given the stimulus-dependent rates and decoding time, $T$, is\n\n$$\np(r|s,T)=\\prodi=1Np(r_{i}|Tf_{i}(s))=\\prodi=1N\\frac{(Tf_{i}(s))^{r_{i}}exp\u2061(\u2212Tf_{i}(s))}{r_{i}!}.\n$$\n\nGiven a model of neural responses, the Cram\u00e9r-Rao bound provides a lower bound on the accuracy by which the population can communicate a signal as the inverse of the Fisher information. For sufficiently large populations, using the population and spike count models in Equation 1 and Equation 3, Fisher information is given by (for $a_{i}=a$ and $b=0$ for all neurons, see Sreenivasan and Fiete, 2011 or Appendix 2 - 'Fisher information and the Cram\u00e9r-Rao bound' for details)\n\n$$\nJ\u2248(2\\pi)^{2}\\frac{aTN}{w}B_{0}(1/w)^{D\u22121}B_{1}(1/w)exp\u2061(\u2212D/w)\\lambda^{\u22122}\u00af\n$$\n\nwhere $\\lambda^{\u22122}\u00af$ denotes the sample average of the squared inverse of the (relative) spatial periods across the population, and $B_{\\alpha}\u2062(\u22c5)$ denotes the modified Bessel functions of the first kind. Equation 4 (and similar expressions) suggests that populations consisting of periodic tuning curves, for which $\\lambda^{\u22122}\u00af\u226b1$, are superior at communicating a stimulus signal than a population using tuning curves with only single peaks, where $\\lambda^{\u22122}\u00af=1$. However, (inverse) Fisher information only predicts the amount of local errors for an efficient estimator. Hence, the presence of catastrophic errors (Figure 1a, bottom) can be identified by large deviations from the predicted MSE for an asymptotically efficient estimator (Figure 1c\u2013d). Therefore, we define minimal decoding time as the shortest time required to approach the Cram\u00e9r-Rao bound (Figure 1c and e).\n\n### Periodic tuning curves and stimulus ambiguity\n\nTo understand why the amount of catastrophic error can differ with different spatial periods, consider first the problem of stimulus ambiguity that can arise with periodic tuning curves. If all tuning curves in the population share the same relative spatial period, $\\lambda$, then the stimulus-evoked responses can only provide unambiguous information about the stimulus in the range $[0,\\lambda)$. Beyond this range, the response distributions are no longer unique. Thus, single-peaked tuning curves ($\\lambda=1$) provide unambiguous information about the stimulus. Periodic tuning curves ($\\lambda<1$), on the other hand, require the use of tuning curves with two or more distinct spatial periods to resolve the stimulus ambiguity (Fiete et al., 2008; Mathis et al., 2012; Wei et al., 2015). In the following, we assume the tuning curves are organized into discrete modules, where all tuning curves within a module share spatial period (Figure 1b) mimicking the organization of grid cells (Stensola et al., 2012). For convenience, assume that $\\lambda_{1}>\\lambda_{2}>...>\\lambda_{L}$ where $L$ is the number of modules. Thus, the first module provides the most coarse-grained resolution of the stimulus interval, and each successive module provides an increasingly fine-grained resolution. It has been suggested that a geometric progression of spatial periods, such that $\\lambda_{i}=c\u2062\\lambda_{i-1}$ for some spatial factor $0<c\\leq1$, may be optimal for maximizing the resolution of the stimulus while reducing the required number of neurons (Mathis et al., 2012; Wei et al., 2015). However, trial-by-trial variability can still cause stimulus ambiguity and catastrophic errors - at least for short decoding times, as we show later, even when using multiple modules with different spatial periods.\n\n### (Very) Short decoding times - when both Fisher information and MSE fails\n\nWhile it is known that Fisher information is not an accurate predictor of the MSE when the decoding time is short (Bethge et al., 2002), less has been discussed about the issue of MSE. Although MSE is often interpreted as a measure of accuracy, its insensitivity to rare outliers makes it a poor measure of reliability. Therefore, comparing MSE directly between populations can be a misleading measure of reliability if the distributions of errors are qualitatively different. If the amounts of local errors differ, lower MSE does not necessarily imply fewer catastrophic errors. This is exemplified in Figure 2, comparing a single-peaked and a periodic population encoding a two-dimensional stimulus using the suggested optimal scale factor, $c\u22481/1.44$ (Wei et al., 2015). During the first $\u224830$ ms, the single-peaked population has the lowest MSE of the two populations despite having lower Fisher information (Figure 2a). Furthermore, comparing the error distribution after the periodic population achieves a lower MSE (the black circle in Figure 2a) shows that the periodic population still suffers from rare errors that span the entire stimulus range (Figure 2b\u2013c, insets). As we will show, a comparison of MSE, as a measure of reliability, only becomes valid once catastrophic errors are removed. Here we assume that catastrophic errors should strongly affect the usability of a neural code. Therefore, we argue that the first criterion for any rate-based neural code should be to satisfy its constraint on decoding time to avoid catastrophic errors.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84531/elife-84531-fig2-v3.jpg)\n\n**Figure 2.:** (a) Time evolution of root mean squared error (RMSE), averaged across trials and stimulus dimensions, using maximum likelihood estimation (solid lines) for two populations (blue: $\\lambda_{1}=1$, $c=1$, red: $\\lambda_{1}=1$, $c=1/1.44$). Dashed lines indicate the lower bound predicted by Cram\u00e9r-Rao. The black circle indicates the point where the periodic population has become optimal in terms of MSE. (b) The empirical distribution of errors for the time indicated by the black circle in (a). The single-peaked population (blue) has a wider distribution of errors centered around 0 compared to the periodic population (red), as suggested by having a higher MSE. Inset: Zooming in on rare error events reveals that while the periodic population has a narrower distribution of errors around 0, it also has occasional errors across large parts of the stimulus domain. (c) The empirical CDF of the errors for the same two populations as in (b). Inset: a zoomed-in version (last 1%) of the empirical CDF highlights the heavy-tailed distribution of errors for the periodic population. Parameters used in the simulations: stimulus dimensionality $D=2$, the number of modules $L=5$, number of neurons $N=600$, average evoked firing rate $f_{s\u2062t\u2062i\u2062m}\u00af=20\u2062exp\u2061(-1/w)\u2062B_{0}\u2062(1/w)$ sp/s, ongoing activity $b=2$ sp/s, and width parameter $w=0.3$. Note that the estimation errors for the two stimulus dimensions are pooled together.\n\n### Minimal decoding times in populations with two modules\n\nHow does the choice of spatial periods impact the required decoding time to remove catastrophic errors? To get some intuition, we first consider the case of populations encoding a one-dimensional stimulus using only two different spatial scales, $\\lambda_{1}$ and $\\lambda_{2}$. From the perspective of a probabilistic decoder (Seung and Sompolinsky, 1993; Deneve et al., 1999; Ma et al., 2006), assuming that the stimulus is uniformly distributed, the maximum likelihood (ML) estimator is Bayesian optimal (and asymptotically efficient). The maximum likelihood estimator aims at finding the stimulus condition which is the most likely cause of the observed activity, $r$, or\n\n$$\ns^_{ML}=argmaxs\u2061p(r|s),\n$$\n\nwhere $p\u2062(r|s)$ is called the likelihood function. The likelihood function equals the probability of observing the observed neural activity, $r$, assuming that the stimulus condition was $s$. In the case of independent Poisson spike counts (or at least independence across modules), each module contributes to the joint likelihood function $p\u2062(r|s)$ with individual likelihood functions, Q1 and Q2 (Wei et al., 2015). Thus, the joint likelihood function can be seen as the product of the two individual likelihood functions, where each likelihood is $\\lambda_{i}$-periodic\n\n$$\np(r|s)=Q_{1}(r|s)Q_{2}(r|s).\n$$\n\nIn this sense, each module provides its own ML-estimate of the stimulus, $s_{M\u2062L}^{(1)}=arg\u2062max_{s}\u2061Q_{1}\u2062(r|s)$ and $s_{M\u2062L}^{(2)}=arg\u2062max_{s}\u2061Q_{2}\u2062(r|s)$. Because of the periodicity of the tuning curves, there can be multiple modes for each of the likelihoods (e.g. Figure 3a and b, top panels). For the largest mode of the joint likelihood function to also be centered close to the true stimulus condition, the distance $\\delta$ between $s_{M\u2062L}^{(1)}$ and $s_{M\u2062L}^{(2)}$ must be smaller than between any other pair of modes of Q1 and Q2. Thus, to avoid catastrophic errors, $\\delta$ must be smaller than some largest allowed distance $\\delta^{*}$ which guarantees this relation (see Equations 25\u201330 for calculation of $\\delta^{*}$ assuming the stimulus is in the middle of the domain). As $\\delta$ varies from trial to trial, we limit the probability of the decoder experiencing catastrophic errors to some small error probability, $p_{e\u2062r\u2062r\u2062o\u2062r}$, by imposing that\n\n$$\nPr(|\\delta|>\\delta^{\u2217})<p_{error}.\n$$\n\nAssuming that the estimation of each module becomes efficient before the joint estimation, Equation 7 can be reinterpreted as a lower bound on the required decoding time before the estimation based on the joint likelihood function becomes efficient\n\n$$\nT_{th}>2(\\frac{erfinv(1\u2212p_{error})}{\\delta^{\u2217}})^{2}(\\frac{1}{J_{1,norm}}+\\frac{1}{J_{2,norm}}),\n$$\n\nwhere $erfinv\u2062(\u22c5)$ is the inverse of the error function and $J_{k,n\u2062o\u2062r\u2062m}$ refers to the time-normalized Fisher information of module $k$ (see Materials and methods for derivation). Thus, the spatial periods of the modules influence the minimal decoding time by determining: (1) the largest allowed distance $\\delta^{*}$ between the estimates of the modules and (2) the variances of the estimations given by the inverse of their respective Fisher information.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84531/elife-84531-fig3-v3.jpg)\n\n**Figure 3.:** (a) Top: Sampled individual likelihood functions of two modules with very different spatial periods. Bottom: The sampled joint likelihood function for the individual likelihood functions in the top panel. (b\u2013c) Same as in (a) but for spatial periods that are similar but not identical and for a single-peaked population, respectively. (d) Bottom: The dependence of the scale factor c on the minimal decoding time for $\\lambda_{1}=1$. Blue circles indicate the simulated minimal decoding times, and the black line indicates the estimation of the minimal decoding times according to Equation 8, with $p_{e\u2062r\u2062r\u2062o\u2062r}=10^{-4}$. Top left: The predicted value of $1/\\delta^{*}$. Top right: The inverse of the Fisher information. (e) Same as (d) but for $\\lambda_{1}=1/2$. (f) RMSE (lines), the 99.8th percentile (filled circles), and the maximal error (open circles) of the error distribution for several choices of scale factor, $c$, and decoding time. The color code is the same as in panels (d-e). The parameters used in (d-f) are: population size $N=600$, number of modules $L=2$, scale factors $c=0.05-1$, width parameter $w=0.3$, average evoked firing rate $f_{s\u2062t\u2062i\u2062m}\u00af=20\u2062exp\u2061(-1/w)\u2062B_{0}\u2062(1/w)$ sp/s, ongoing activity $b=0$ sp/s, and threshold factor $\\alpha=2$.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84531/elife-84531-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Top: Sampled likelihood functions of two modules with $\\lambda_{1}=1$ and $\\lambda_{2}=1/2.3$. Bottom: The joint likelihood function is shifted across the periodic boundary. Such shifts across the periodic boundary can become more pronounced when $\\lambda_{2}$ is slightly below a multiple of $\\lambda_{1}$.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84531/elife-84531-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Same as (Figure 2d\u2013e) but using threshold factor $\\alpha=1.2$.Notice the stronger deviations from the predicted minimal decoding time for $\\lambda_{1}=1$ when c is slightly below $1/2,1/3,1/4,\u2026$, etc.\n\nTo give some intuition of the approximation, if the spatial periods of the modules are very different, $\\lambda_{2}\u226a\\lambda_{1}$, then there exist many peaks of Q2 around the peak of Q1 (Figure 3a). Additionally, there can be modes of Q1 and Q2 far away from the true stimulus close together. Thus, $\\lambda_{2}\u226a\\lambda_{1}$ can create a highly multi-modal joint likelihood function where small deviations in $s_{M\u2062L}^{(1)}$ and $s_{M\u2062L}^{(2)}$ can cause a shift, or a change, of the maximal mode of the joint likelihood. To avoid this, $\\delta^{*}$ must be small, leading to longer decoding times by Equation 8. Furthermore, suppose the two modules have similar spatial periods $\\lambda_{2}\u223c\\lambda_{1}$, or $\\lambda_{1}$ is close to a multiple of $\\lambda_{2}$. In that case, the distance between the peaks a few periods away is also small, again leading to longer decoding times (Figure 3b). In other words, periodic tuning suffers from the dilemma that small shifts in the individual stimulus estimates can cause catastrophic shifts in the joint likelihood function. Although these might be rare events, the possibility of such errors increases the probability of catastrophic errors. Thus, assuming $\\lambda_{1}<1$, both small and large scale factors $c$ can lead to long decoding times. When $\\lambda_{1}=1$, however, only small-scale factors $c$ pose such problems, at least unless the stimulus is close to the periodic edge (i.e. $s\u22480$ or $s\u22481$, see Figure 3\u2014figure supplement 1). On the other hand, compared to single-peaked tuning curves, periodic tuning generally leads to sharper likelihood functions, increasing the accuracy of the estimates once catastrophic errors are removed (e.g., compare the widths of the joint likelihood functions in Figure 3a\u2013c).\n\nTo test the approximation in Equation 8, we simulated a set of populations ($N=600$ neurons) with different spatial periods. The populations were created using identical tuning parameters except for the spatial periods, whose distribution varied across the populations, and the amplitudes, which were adjusted to ensure an equal average firing rate (across all stimulus conditions) for all neurons (see Materials and methods for details on simulations). As described above, the spatial periods were related by a scale factor $c$. Different values of $c$ were tested for the largest period being either $\\lambda_{1}=1$ or $\\lambda_{1}=1/2$. Furthermore, only populations with unambiguous codes over the stimulus interval were included (i.e. $c\\neq1/2,1/3,1/4,\u2026$ for $\\lambda_{1}=1/2$; Mathis et al., 2012). Note, however, that there is no restriction on the periodicity of the tuning curves to align with the periodicity of the stimulus (i.e. $1/\\lambda_{i}$ does not need to be an integer). For each population, the minimal decoding time was found by gradually increasing the decoding time until the empirical MSE was lower than twice the predicted lower bound (i.e. $\\alpha=2$, see Equation 10 and Materials and methods for details). Limiting the probability of catastrophic errors to $p_{e\u2062r\u2062r\u2062o\u2062r}=10^{-4}$, Equation 8 is a good predictor of the minimal decoding time (Figure 3d\u2013e, bottom panels, coefficient of determination $R^{2}\u22480.92$ and $R^{2}\u22480.95$ for $\\lambda_{1}=1$ and $\\lambda_{1}=1/2$, respectively). For both $\\lambda_{1}=1$ and $\\lambda_{1}=1/2$, the minimal decoding time increases overall with decreasing scale factor, $c$ (see Figure 3d\u2013e). However, especially for $\\lambda_{1}=1/2$, the trend is interrupted by large peaks (Figure 3e). For $\\lambda_{1}=1$, there are deviations from the predicted minimal decoding time for small scale factors, $c$. They occur whenever $\\lambda_{2}$ is slightly below a multiple of $\\lambda_{1}=1$, and get more pronounced when increasing the sensitivity to the threshold factor $\\alpha=1.2$ (see Figure 3\u2014figure supplement 2). We believe one cause of these deviations is the additional shifts across the periodic boundary (as in Figure 3\u2014figure supplement 1) that can occur when $c$ is just below $1/2,1/3,1/4,\u2026$, etc.\n\nTo confirm that the estimated minimal decoding times have some predictive power on the error distributions, we re-simulated a subset of the populations for various decoding times, $T$, using 15,000 randomly sampled stimulus conditions (Figure 3f). Both the RMSE and outlier errors (99.8th percentile and the maximal error, that is, 100th percentile) agree with the shape of minimal decoding times, suggesting that a single-peaked population is good at removing large errors at very short time scales.\n\n### Minimal decoding times for populations with more than two modules\n\nFrom the two-module case above, it is clear that the choice of scale factor influences the minimal decoding time. However, Equation 8 is difficult to interpret and is only valid for two-module systems ($L=2$). To approximate how the minimal decoding time scales with the distribution of spatial periods in populations with more than two modules, we extended the approximation method first introduced by Xie (Xie, 2002). The method was originally used to assess the number of neurons required to reach the Cram\u00e9r-Rao bound for single-peaked tuning curves with additive Gaussian noise for the ML estimator. In addition, it only considered encoding a one-dimensional stimulus variable. We adapted this method to approximate the required decoding time for stimuli with arbitrary dimensions, Poisson-distributed spike counts, and tuning curves with arbitrary spatial periods. In this setting, the scaling of minimum decoding time with the spatial periods, $\\lambda_{1},\u2026,\\lambda_{L}$, can be approximated as (see Materials and methods for derivation)\n\n$$\nT_{th}\u226bA(w)\\frac{1}{aN}\\frac{exp\u2061(D/w)}{B_{0}(1/w)^{(D\u22121)}}\\frac{\\lambda^{\u22123}\u00af^{2}}{\\lambda^{\u22122}\u00af^{3}}\u2243\\frac{A^{\u2217}(w)}{Nf_{stim}(D)\u00af}\\frac{\\lambda^{\u22123}\u00af^{2}}{\\lambda^{\u22122}\u00af^{3}},\n$$\n\nwhere $\\lambda^{\u22122}\u00af$ and $\\lambda^{\u22123}\u00af$ indicate the sample average across the inverse spatial periods (squared or cubed, respectively) in the population, $f_{stim}(D)\u00af$ is the average evoked firing rate across the stimulus domain, and $A(w)$ (or $A^{\u2217}(w)$) is a function of $w$ (see Materials and methods for detailed expression). The last approximation holds with equality whenever all tuning curves have an integer number of peaks. The derivation was carried out assuming the absence of ongoing activity and that the amplitudes within each population are similar, $a_{1}\u2248\u2026\u2248a_{N}$. Importantly, the approximation also assumes the existence of a unique solution to the maximum likelihood equations. Therefore, it is ill-equipped to predict the issues of stimulus ambiguity. Thus, going back to the two-module cases, Equation 9 cannot capture the additional effects of $\\lambda_{2}\u226a\\lambda_{1}$ or when $\\lambda_{1}$ is close to a multiple of $\\lambda_{2}$, as in Figure 3d\u2013e. On the other hand, complementing the theory presented in Equation 8, Equation 9 provides a more interpretable expression of the scaling of minimal decoding time. For $c\\leq1$, the minimal decoding time, $T_{t\u2062h}$, is expected to increase with decreasing scale factor, $c$ (see Equation 47). The scaling should also be similar for different choices of $\\lambda_{1}$. Furthermore, assuming all other parameters are constant, the minimal decoding time should grow roughly exponentially with the number of stimulus dimensions.\n\nTo confirm the validity of Equation 9, we simulated populations of $N=600$ tuning curves across $L=5$ modules. Again, the spatial periods across the modules were related by a scale factor, $c$ (Figure 4a). To avoid the effects of $c\u226a1$, we limited the range of the scale factor to $0.3\\leqc\\leq1$. The upper bound on $c$ was kept (for $\\lambda_{1}=1$) to include entirely single-peaked populations. Again, the assumption of homogeneous amplitudes in Equation 9 was dropped in simulations (Figure 4b, left column) to ensure that the average firing rate across the stimulus domain is equal for all neurons (see Figure 4b, right column, for the empirical average firing rates). This had little effect on Fisher information, where the theoretical prediction was based on the average amplitudes across all populations with the same $\\lambda_{1}$ and stimulus dimensionality $D$ (see Figure 4c, inset). As before, Fisher information grows with decreasing scale factor, $c$, and with decreasing spatial period $\\lambda_{1}$. As expected, increasing the stimulus dimensionality decreases Fisher information if all other parameters are kept constant. On the other hand, the minimal decoding time increases with decreasing spatial periods and increases with stimulus dimensionality (Figure 4c). The increase in decoding time between $D=1$ and $D=2$ is also very well predicted by Equation 9, at least for $c>0.5$ (Figure 4\u2014figure supplement 1a). In these simulations, the choice of width parameter is compatible with experimental data (Ringach et al., 2002), but similar trends were found for a range of different width parameters (although the differences become smaller for small $w$, see Figure 4\u2014figure supplement 1b\u2013d).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84531/elife-84531-fig4-v3.jpg)\n\n**Figure 4.:** (a) Illustration of the likelihood functions of a population with $L=5$ modules using scale factor $c=0.7$. (b) The peak stimulus-evoked amplitudes of each neuron (left column) were selected such that all neurons shared the same expected firing rate for a given stimulus condition (right column). (c) Inset: Plot of average Fisher information as a function of the scale factor $c$ (colored lines: estimations from simulation data, black lines: theoretical approximations). Main plot: Plot of minimal decoding time as a function of scale factor $c$. Minimal decoding time tends to increase with decreasing grid scales (colored lines: estimated minimal decoding time from simulations, black lines: fitted theoretical predictions using Equation 47). The gray color corresponds to points with large discrepancies between the predicted and the simulated minimal decoding times. (d) Plot of the average Fisher information against the minimal decoding time. Points colored in gray are the same as in panel (c). (e) RMSE (lines), the 99.8th percentile (filled circles), and the maximal error (open circles) of the error distribution when decoding a 1-dimensional stimulus for several choices of decoding time. The color code is the same as above. (f) same as (e) but for a two-dimensional stimulus. Note that the error distributions across stimulus dimensions are pooled together. Parameters used in panels (a-d): population size $N=600$, number of modules $L=5$, scale factors $c=0.3-1$, width parameter $w=0.3$, average evoked firing rate $f_{s\u2062t\u2062i\u2062m}\u00af=20\u2062exp\u2061(-D/w)\u2062B_{0}\u2062(1/w)^{D}$ sp/s, ongoing activity $b=0$ sp/s, and threshold factor $\\alpha=2$.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84531/elife-84531-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) The predicted minimal decoding time from $D=1$ scaled by $\\frac{exp\u2061(1/w)}{B_{0}\u2062(1/w)}$ provides a reasonable prediction of the minimal decoding time for $D=2$. The data used is the same as in Figure 4c (solid lines with circles, color code the same as in the main figure). (b\u2013d) Minimal decoding times for various width parameters $w$. As in Figure 4c, there is a trend of increasing minimal decoding time with decreasing scale factor $c$. However, the range of minimal decoding times decreases with decreasing widths (for $D=1$).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84531/elife-84531-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Same as Figure 4a\u2013d in the main text, but simulated using threshold factor. For each $T$, the MSE is evaluated based on 15,000 random stimulus samples.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84531/elife-84531-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Same as Figure 4a\u2013d in the main text, but simulated using the one-sided KS-test for determining minimal decoding time (see main text for details). For each $T$, the MSE is evaluated based on 15,000 random stimulus samples.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/84531/elife-84531-fig4-figsupp4-v3.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (a) Time evolution of the RMSE (non-transparent lines) for periodic and single-peaked populations and the lower bound set by the Cram\u00e9r-Rao bound (transparent lines) when decoding a $D=1$ stimulus. (b) Same as in (a) but for the 99.8th (non-transparent lines) and the 100th (transparent lines) percentiles of the root squared error distributions. (c\u2013d) same as (a-b) but for a $D=2$ stimulus. For each decoding time $T$, the RMSE and outliers are evaluated based on 15,000 random stimulus samples.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/84531/elife-84531-fig4-figsupp5-v3.jpg)\n\n**Figure 4\u2014figure supplement 5.:** Plot of the mean spike counts (summed over the population) required to remove catastrophic errors for the populations in Figure 4. Each circle indicates the minimal spike count for a single population with a constant scale factor encoding either a one-dimensional (x-axis) or a two-dimensional stimulus (y-axis). Blue circles indicate $\\lambda_{1}=1$ and red circles $\\lambda_{1}=1/2$. Being on the grey line corresponds to having the same required spike count for both stimulus cases.\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/84531/elife-84531-fig4-figsupp6-v3.jpg)\n\n**Figure 4\u2014figure supplement 6.:** Same as Figure 4c, e and f, but only using tuning curves with an integer number of peaks, that is, being all integers. Thus, there is no common scale factor relating the spatial frequencies of the modules within a population. The populations here have $1/\\lambda=[1]$, $[1,2]$, $[1,3]$, $[1,4]$, $[1,2,3]$, $[1,2,4]$, $[1,3,4]$, or $[1,2,3,4]$. Note that for the single-peaked population, $\\lambda^{\u22123}\u00af^{2}/\\lambda^{\u22122}\u00af^{3}=1$. (a) Shows the RMSE (solid lines) and the outliers, 99.8th (filled circles) and 100th (open circles) percentiles, for a $D=1$ stimulus. (b) Same as (a) but for a $D=2$ stimulus. (c) Same as Figure 4c but for the integer peaked populations listed above (blue: $D=1$, green: $D=2$).\n\nFrom Equation 9, we fitted two constants, K1 (regressor) and K2 (intercept), using least square regression across populations sharing the same largest period, $\\lambda_{1}$, and stimulus dimensionality, $D$ (see Equation 47). Within the simulated range of scale factors, the regressions provide reasonable fits for the populations with $\\lambda_{1}=1$ (Figure 4c, coefficient of determination $R^{2}\u22480.89$ and $R^{2}\u22480.90$ for $D=1$ and $D=2$, respectively). For the populations with $\\lambda_{1}=1/2$, Equation 9 becomes increasingly unable to predict the behavior of the minimal decoding time as $c$ approaches 1 (see the red and yellow lines in Figure 4c\u2013d). On the other hand, as was suggested above, the scaling of the minimal decoding time with $c$ is, in fact, similar for $\\lambda_{1}=1$ and $\\lambda_{1}=1/2$ whenever $c$ is less than $\u22480.9$. As suggested by Figure 4d, there is also a strong correlation between Fisher information and minimal decoding time, again indicating a speed-accuracy trade-off. Furthermore, similar results are obtained when either decreasing the threshold factor to $\\alpha=1.2$ (Figure 4\u2014figure supplement 2) or changing the minimal decoding time criterion to a one-sided Kolmogorov\u2013Smirnov test (KS-test) between the empirical distribution of errors and the Gaussian error distribution predicted by the Cram\u00e9r-Rao bound (Figure 4\u2014figure supplement 3, using an ad-hoc Bonferroni-type correction for multiple sequential testing, $\\alpha/j$, where $j$ is the $j$ th time comparison and $\\alpha=0.05$ is the significance level.)\n\nTo further illustrate the relationship between minimum decoding time and the distribution of catastrophic errors, we re-simulated the same populations using fixed decoding times, evaluating the RMSE together with the 99.8th and 100th (maximal error) percentiles of the root squared error distributions across 15,000 new uniformly sampled stimuli (Figure 4e\u2013f). As suggested by the minimal decoding times, there is a clear trade-off between minimizing RMSE over longer decoding times and removing outliers, especially the maximal error, over shorter decoding times. Figure 4\u2014figure supplement 4 shows the time evolution for a few of these populations.\n\nAdditionally, to verify that the minimal decoding times are good predictors of the decoding time necessary to suppress large estimation errors, we compared the same error percentiles as in Figure 4e\u2013f (i.e. the 99.8th and 100th percentiles) against the minimal decoding times, $T_{t\u2062h}$, estimated in Figure 4c. For each population, we expect a strong reduction in the magnitude of the largest errors when the decoding time, $T$, is larger than the minimal decoding time, $T_{t\u2062h}$. Figure 5 shows a clear difference in large estimation errors between populations for which $T_{th}<T$ and populations with $T_{th}>T$ (circles to the left and right of the magenta lines in Figure 5, respectively). Thus, although only using the difference between MSE and Fisher information, our criterion on minimal decoding time still carries important information about the presence of large estimation errors.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/84531/elife-84531-fig5-v3.jpg)\n\n**Figure 5.:** (a) The 99.8th percentile (filled circles) and the maximal error (i.e., 100th percentile, open circles) of the root squared error distributions for $D=1$ against the estimated minimal decoding time for the corresponding populations ($\\alpha=2$) for various choices of decoding time, $T$ (indicted by the vertical magenta lines). (b) same as (a) but for $D=2$. (c-d) Same as for (a-b) but for $\\alpha=1.2$. Note that the plots (a) and (c), or (b) and (d), illustrate the same percentile data only remapped on the x-axis by the different minimal decoding times from the different threshold factors $\\alpha$. Color code: same as in Figure 4.\n\nTo summarize, while periodic tuning curves provide lower estimation errors for long decoding times by minimizing local errors (Figure 4c, inset), a population of single-peaked tuning curves is faster at producing a statistically reliable signal by removing catastrophic errors (Equation 9 and Figure 4c). Generalizing minimal decoding times to an arbitrary number of stimulus dimensions reveals that the minimal decoding time also depends on the stimulus dimensionality (Figure 4c, compare lines for $D=1$ and $D=2$). Interestingly, however, the approximation predicts that although minimal decoding time grows with increasing stimulus dimensionality, the minimal required spike count might be independent of stimulus dimensionality, at least for populations with integer spatial frequencies, that is, integer number of peaks (see Equation A5.4). The populations simulated here have non-integer spatial frequencies. However, the trend of changes in the mean spike count is still just slightly below 1 (indicating that slightly fewer spikes across the population are needed with increasing $D$, see Figure 4\u2014figure supplement 5). Thus, as the average firing rate decreases with the number of encoded features $D$ (Figure 4b, right column), the increase in minimal decoding time for stimuli of higher dimensionality can be primarily explained by requiring a longer time to accumulate the sufficient number of spikes across the population. Lastly, to rule out that the differences in minimal decoding time cannot be explained by the periodicity of the tuning curves not aligning to that of the stimulus, we also simulated populations with different combinations of integer peaks (Figure 4\u2014figure supplement 6). Again, the same phenomenon is observed: periodic tuning curves increase the required decoding time to remove catastrophic errors. This also highlights that the approximation of minimal decoding time does not require the spatial periods to be related by a scale factor, $c$.\n\n### Effect of ongoing activity\n\nMany cortical areas exhibit ongoing activity, that is, activity that is not stimulus-specific (Snodderly and Gur, 1995; Barth and Poulet, 2012). Thus, it is important to understand the impact of ongoing activity on the minimal decoding time, too. Unfortunately, because our approximation of the minimal decoding times did not include ongoing activity, we relied on simulations to study the effect of such non-specific activity.\n\nWhen including independent ongoing (background) activity at 2 spikes/s to all neurons for the same populations as in Figure 4, minimal decoding times were elevated across all populations (Figure 6). Furthermore, the minimal decoding time increased faster with decreasing $c$ in the presence of ongoing activity compared to the case without ongoing activity (ratios of fitted regressors $K_{1}\u2062(b=2)/K_{1}\u2062(b=0)$ using Equation 47 were approximately 1.69 and 1.72 for $D=1$ and $D=2$, respectively). Similar results are found using $\\alpha=1.2$ (Figure 6\u2014figure supplement 1) or the alternative criterion on minimal decoding time based on one-sided KS-tests described earlier (Figure 6\u2014figure supplement 2). Thus, ongoing activity can have a substantial impact on the time required to produce reliable signals. Figure 6 suggests that areas with ongoing activity are less suited for periodic tuning curves. Especially, the combination of multidimensional stimuli and ongoing activity leads to much longer minimal decoding times for tuning curves with small spatial periods ($c\u226a1$). For example, when encoding a two-dimensional stimulus, only the populations with $\\lambda_{1}=1$, $c=1$ and $\\lambda_{1}=1$, $c=0.95$ could remove catastrophic errors in less than 40ms when ongoing activity at 2 sp/s was present. Thus, the ability to produce reliable signals at high speeds severely deteriorates for periodic tuning curves in the presence of non-specific ongoing activity.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/84531/elife-84531-fig6-v3.jpg)\n\n**Figure 6.:** (a) The case of encoding a one-dimensional stimulus ($D=1$) with or without ongoing activity at 2 sp/s (diamond and circle shapes, respectively). (b) The case of a two-dimensional stimulus ($D=2$) under the same conditions as for (a). In both conditions, ongoing activity increases the time required for all populations to produce reliable signals, but the effect is strongest for $c\u226a1$. The parameters used in the simulations are: population size $N=600$, number of modules $L=5$, scale factors $c=0.3-1$, width parameter $w=0.3$, average evoked firing rate $f_{s\u2062t\u2062i\u2062m}\u00af=20\u2062exp\u2061(-D/w)\u2062B_{0}\u2062(1/w)^{D}$ sp/s, ongoing activity $b=2$ sp/s, and threshold factor $\\alpha=2$.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84531/elife-84531-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Same as Figure 6 in the main text, but using $\\alpha=1.2$.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84531/elife-84531-fig6-figsupp2-v3.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Same as Figure 6 in the main text, but using the one-sided KS-test criterion described before (see Figure 4\u2014figure supplement 4).\n\nThis result has an intuitive explanation. The amount of catastrophic errors depends on the probability that the trial variability reshapes the neural activity to resemble the possible activities for a distinct stimulus condition (see Figure 1a). From the analysis presented above, periodic tuning curves have been suggested to be more susceptible to such errors. Adding ongoing activity does not reshape the stimulus-evoked parts of the tuning curves but only increases the trial-by-trial variability. Thus, by this reasoning, it is not surprising that the systems which are already more susceptible also are even more negatively affected by the increased variability induced by ongoing activity. The importance of Figure 6 is that even ongoing activity as low as 2 sp/s can have a clearly visible effect on minimal decoding time.\n\n### Implications for a simple spiking neural network with sub-optimal readout\n\nUntil this point, the arguments about minimal decoding time have relied on rate-based tuning curves encoding static stimuli. To extend beyond static stimuli and to exemplify the role of decoding time for spiking neurons, we simulated simple two-layer feed-forward spiking neural networks to decode time-varying stimulus signals. The first layer ($N_{1}=500$) corresponds to the tuning curves (without connections between the simulated neurons). The stimulus-specific tuning of the Poissonian inputs to these neurons is either fully single-peaked, creating a population of single-peaked tuning curves, or periodic with different spatial periods, creating a population of periodic tuning curves (Figure 7a, see Materials and methods for details). The second layer instead acts as a readout layer ($N_{2}=400$, allowing a weak convergence of inputs from the first layer). This layer receives both stimulus-specific excitatory input from the first layer and external non-specific Poissonian excitation (corresponding to background activity). The connection strength between the first and second layers depends on the difference in preferred stimulus conditions between the pre- and post-synaptic neurons. Such connectivity could, for example, be obtained by unsupervised Hebbian learning. Because the tuning curves in the first layer can be periodic, they can also connect strongly to several readout neurons. We introduced lateral inhibition among the readout neurons (without explicitly modeling inhibitory neurons) to create a winner-take-all style of dynamics. The readout neurons with large differences in preferred stimulus inhibit each other more strongly. Decoding is assumed to be instantaneous and based on the preferred stimulus condition of the spiking neuron in the readout layer. However, to compare the readouts, we averaged the stimulus estimates in sliding windows.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/84531/elife-84531-fig7-v3.jpg)\n\n**Figure 7.:** (a) Illustration of the spiking neural networks (SNNs). (b) Example of single trials. Top row: Two example trials for step-like change in stimulus (green line). The left and right plots show the readout activity for the single-peaked (blue) and periodic SSNs (orange), respectively. Note that the variance around true stimulus is larger for the single-peaked SNN (i.e. larger local errors) but that there are fewer very large errors than for the periodic SNN. Bottom row: Same as for the top row but with a continuously time-varying stimulus. (c) Bottom: The median RMSE (thick lines) over all trials in a sliding window (length 50ms) for the single-peaked (blue) and periodic (orange) SNNs. The shadings correspond to the regions between the 5th and 95th percentiles. Top: The instantaneous population firing rates of the readout layers and the standard deviations (same color code as in the bottom panel). (d) Bottom left: The median estimated stimulus across trials in a sliding window (length 10ms) for the single-peaked (blue) and periodic (orange) SNNs. Shaded areas again correspond to the regions between the 5th and 95th percentiles. The true stimulus is shown in green. Bottom right: the average firing rate of each neuron, arranged according to the preferred stimulus condition. Top: The instantaneous population firing rates of the readout layers and the standard deviations. See Materials and methods for simulation details and Table 1, Table 2, Table 3 for all parameters used in the simulation.\n\nWe tested two different types of time-varying stimuli: (1) a step-like change from $s=0.25$ to $s=0.75$ (Figure 7b top row, green trace) and (2) a continuously time-varying stimulus drawn from an Ornstein\u2013Uhlenbeck process (Figure 7b bottom row, green trace; see Materials and methods). In the case of a step-like stimulus change, the readout layer for the single-peaked population required a shorter time to switch states than the periodic network (Figure 7c). The shorter switching time is consistent with the hypothesis that single-peaked tuning curves have shorter minimal decoding times than periodic tuning curves. In these simulations, the difference is mainly due to some neurons in the first layer of the periodic network responding both before and after the step change. Thus, the correct readout neurons (after the change) must compensate for the hyper-polarization built up before the change and the continuing inhibitory input from the previously correct readout neurons (which still get excitatory inputs). Note that there are only minor differences in the population firing rates between the readout layers, confirming that this is not a consequence of different excitation levels but rather of the structures of excitation.\n\nThe continuously time-varying stimulus could be tracked well by both networks. However, averaging across trials shows that SNNs with periodic tuning curves have larger sporadic fluctuations (Figure 7d). This suggests that decoding with periodic tuning curves has difficulties in accurately estimating the stimulus without causing sudden, brief periods of large errors. To make a statistical comparison between the populations, we investigated the distributions of root mean squared error (RMSE) across trials. In both stimulus cases, there is a clear difference between the network with single-peaked tuning curves and the network with periodic ones. For the step-like change in stimulus condition, a significant difference in RMSE arises roughly 100 ms after the stimulus change (Figure 8a). For the time-varying stimulus, using single-peaked tuning curves also results in significantly lower RMSE compared to a population of periodic tuning curves (Figure 8b, RMSE calculated across the entire trial).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/84531/elife-84531-fig8-v3.jpg)\n\n**Figure 8.:** (a) Step-like change: Comparison between the distributions of accumulated RMSEs at different decoding times ($p=0.4$, $9.0\u22c510^{-4}$, and $8.7\u22c510^{-5}$, respectively). (b) OU-stimulus: The distributions of RMSE across trials for the two SNNs ($p=4.3\u22c510^{-8}$). All statistical comparisons in (a) and (b) were based on two-sample Kolmogorov\u2013Smirnov (KS) tests using 30 trials per network.\n\n## Discussion\n\nSeveral studies have suggested that periodic tuning creates an unparalleled precise neural code by minimizing local errors (Sreenivasan and Fiete, 2011; Mathis et al., 2012; Wei et al., 2015; Malerba et al., 2022). Nevertheless, despite this advantage of periodic tuning, single-peaked tuning curves are widespread in early sensory areas and especially in the early visual system. There is a long history of studying information representation using rate-based tuning curves. Still, the effect of spatial periodicity and catastrophic errors on the required decoding time has not been addressed. Here, we showed that the possibility of catastrophic estimation errors (Figure 1a) introduces the possibility that different shapes of tuning curves can have different minimal decoding times.\n\nThe emerging question is whether there is a trade-off between the accuracy of a neural code and the minimal required decoding time for single-peaked and periodic tuning. The answer is yes. We found that minimal decoding time increased with decreasing spatial periods of the tuning curves (Figure 4c), suggesting a trade-off between accuracy and speed for populations of tuning curves. The differences in minimal decoding time cannot be explained by the periodicity of the tuning curves not aligning to the stimulus domain, as the same holds comparing populations with integer number of peaks (Figure 4\u2014figure supplement 6). Furthermore, our results remained unchanged when we discarded any decoded stimuli which needed the $mod\u20621$ operation to lie within the stimulus domain $[0,1)^{D}$, thus ruling out any possible distortion effect of the periodic stimulus and decoding approach. In addition, we show that our results are valid for a range of population sizes (Figure 9a-b), ongoing (Figure 9a-b) and evoked activities (Figure 9c), and stimulus dimensions (Figure 9d). We used the more conservative threshold factor on MSE, $\\alpha=1.2$, to capture all the nuances w.r.t. the level of ongoing activity even for large population sizes. In simulated networks with spiking neurons, we showed that the use of periodic tuning curves increased the chances of large estimation errors, leading to longer times before switching \u2018states\u2019 (Figure 7c) and difficulties tracking a time-varying, one-dimensional stimulus (Figure 7d).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/84531/elife-84531-fig9-v3.jpg)\n\n**Figure 9.:** (a-b) Minimal decoding time for different combinations of population sizes ($N$) and levels of ongoing background activity ($b$) for the single-peaked population (a) and the periodic population (b). (c) Minimal decoding time as a function of average stimulus-evoked firing rate (x-axis re-scaled to the corresponding peak amplitude, $a$, for single-peaked tuning curves for easier interpretation). The corresponding amplitudes are $a=8,16,$ and $32$ sp/s, respectively. (d) Minimal decoding time as a function of stimulus dimensionality. Unless indicated on the axes, the parameters are set according to the orange circles and rectangles in (a-d). Auxiliary parameters: number of modules $L=5$, width parameter $w=0.3$, and threshold factor $\\alpha=1.2$.\n\nExperimental data suggest that decoding times can be very short, of the order of tens of milliseconds, reflecting that a considerable part of the information contained in firing rates over long periods is also present in short sample periods (Tov\u00e9e et al., 1993). Additionally, the first few spikes have been shown to carry significant amounts of task information in both visual (Resulaj et al., 2018), olfactory (Resulaj and Rinberg, 2015), and somatosensory areas (Panzeri et al., 2001; Petersen et al., 2001). As the tuning curves in this study all have equal average firing rates, we can reinterpret the minimal decoding time in terms of the prominence of the first spikes. In our simulations, tens of spikes carry enough information to produce a reliable stimulus estimate free of catastrophic errors (Figure 4\u2014figure supplement 5). As with decoding time, single-peaked tuning curves also need fewer spikes to produce reliable signals. Thus, the speed-accuracy trade-off can be reinterpreted as a trade-off between being accurate and efficient.\n\nThe notion of a speed-accuracy trade-off is further strengthened when considering high-dimensional stimuli that demand longer minimal decoding times. Natural stimuli typically have higher dimensionality than those used in animal experiments. Many sensory neurons are tuned to multiple features of the external stimulus, creating mixed selectivity of features (e.g. Garg et al., 2019). For neurons responding to task-related variables, mixed selectivity has been shown to enable linear separability and to improve discriminability (Rigotti et al., 2013; Fusi et al., 2016; Johnston et al., 2020). For continuous stimulus estimations, mixed selectivity has also been proposed to decrease MSE when decoding time is limited (Finkelstein et al., 2018). However, to remove catastrophic errors, which, as we have argued, is not necessarily synonymous with lower MSE, the exponential increase in minimal decoding time could easily lead to very long decoding times. Thus, minimal decoding time should set a bound on the number of features a population can jointly encode reliably. In addition, neurons in sensory areas often exhibit a degree of non-specific activity (Snodderly and Gur, 1995; Barth and Poulet, 2012). Introducing ongoing activity to the populations in our simulations further amplified the differences in minimal decoding times (Figure 6). Thus, for jointly encoded stimuli, especially in areas with high degrees of ongoing activity, a population of single-peaked tuning curves might be the optimal encoding strategy for rapid and reliable communication.\n\nWe note that these results might extend beyond the visual areas, too. Although this study focused on tuning curves encoding continuous variables, catastrophic errors can also occur in systems with discrete tuning curves. Sensory stimuli can be fast-varying (or even discontinuous), and large errors can potentially harm the animal. Therefore, constraints on decoding time are likely important for any early sensory area. In addition, hippocampal place cells involved in spatial navigation (O\u2019Keefe and Dostrovsky, 1971; Wilson and McNaughton, 1993) are known for their single-peaked tuning. The interesting observation in this context is that place cells produce reliable signals faster than their input signals from the medial entorhinal cortex with a combination of single- and multi-peaked tuning (Cholvin et al., 2021). On the other hand, for sufficiently slow-varying stimuli, a periodic population can be used together with error correction to remove catastrophic errors (Sreenivasan and Fiete, 2011). Furthermore, for non-periodic stimuli with large domains, the combinatorial nature of periodic tuning curves can create unique stimulus representations far exceeding the spatial periods of the tuning curves (Fiete et al., 2008). Thus, periodic tuning curves are ideal for representing space, where the stimulus domain can be vast, and the change in position is constrained by the speed of movement. Interestingly, when faced with very large arenas, place cells can also exhibit multi-peaked tuning (Eliav et al., 2021).\n\nTo summarize, we provide normative arguments for the single-peaked tuning of early visual areas. Rapid decoding of stimulus is crucial for the survival of the animals. Consistent with this, animals and humans can process sensory information at impressive speeds. For example, the human brain can generate differentiating event-related potentials to go/no-go categorization tasks using novel complex visual stimuli in as little as 150 ms (Thorpe et al., 1996). These \u2018decoding\u2019 times do not decrease for highly familiar objects, suggesting that the speed of visual processing cannot be reduced by learning (Fabre-Thorpe et al., 2001). Given constraints on low latency communication, it is crucial that each population can quickly produce a reliable signal. In this regard, single-peaked tuning curves are superior to periodic ones. The fact that early visual areas exhibit ongoing activity and encode multi-dimensional stimuli further strengthens the relevance of the differences in minimal decoding time.\n\nTo conclude, our work highlights that minimum decoding time is an important attribute and should be considered while evaluating candidate neural codes. Our analysis suggests that decoding of high-dimensional stimuli can be prohibitively slow with rate-based tuning curves. Experimental data on the representation of high-dimensional stimuli is rather scant as relatively low-dimensional stimuli are typically used in experiments (e.g. oriented bars). Our work gives a compelling reason to understand whether and how biological brains can reliably encode high-dimensional stimuli at behaviorally relevant time scales.\n\n## Materials and methods\n\n### Minimal decoding times - simulation protocols\n\nTo study the dependence of decoding time $T$ on MSE for populations with different distributions of spatial frequencies, we simulated populations of synthetic tuning curves (Equation 1). The stimulus was circular with a $[0,1)^{D}$ range. The preferred stimulus conditions $s^{\u2032}$ were sampled independently from a random uniform distribution over $[0,1)^{D}$ (independently and uniformly for each stimulus dimension). To ensure equal comparison, the preferred locations $s^{\u2032}$ were shared across all populations. Each neuron\u2019s amplitude, ai, was tuned according to Equation A1.5 to ensure an equal average firing rate across the stimulus domain for all neurons. In each trial, a stimulus $s\\in[0,1)^{D}$ was also independently sampled from a uniform distribution over $[0,1)^{D}$. The spike count for each neuron was then sampled according to Equation 3.\n\nMinimal decoding time was defined as the shortest time for which the neural population approximately reaches the Cram\u00e9r-Rao bound. To estimate the reaction time in simulations, we incrementally increased the decoding time $T$ (using 1 ms increments, starting at $T=1$ ms) until\n\n$$\nMSE(T,\\lambda)\u00af\\leq\\alpha\u22c5diag(J(T,\\lambda)^{\u22121})\u00af.\n$$\n\nAs the ML estimator is asymptotically efficient (attaining the Cram\u00e9r-Rao bound in the limit of infinite data), the threshold factor, $\\alpha$, in Equation 10 was added as a relaxation (see figure captions for choices of $\\alpha$). Note that the mean bars on the left- and right-hand sides of Equation 10 refer to the means across stimulus dimensions (for multi-dimensional stimuli) and that $diag\u2062(\u22c5)$ refers to taking the diagonal elements from the inverse of the Fisher information matrix, $J(T,\\lambda)^{\u22121}$. For a given decoding time $T$, the estimation of MSE was done by repeatedly sampling random stimulus conditions (from a uniform distribution), sampling a noisy response to the stimulus (Poisson distributed spike counts), and then applying maximum likelihood estimation (see next section \u2019Implementation of maximum likelihood estimator\u2019 for details on implementation). In Figures 3 and 9, 15000 stimulus conditions were drawn for each $T$, and in Figure 4, stimulus conditions were repeatedly drawn until the two first non-zero digits of the MSE were stable for 1000 consecutive trials. However, in controls not presented here, we could not see any significant difference between these two sampling approaches. Because the Fisher information matrix $J$ was analytically estimated only in the special case without ongoing activity, it was approximated in simulations by the element-wise average across 10,000 randomly sampled stimulus conditions (also uniformly distributed), where each element was calculated according to Equation A2.12or Equation A2.13 given a random stimulus trial.\n\n### Implementation of maximum likelihood estimator\n\nGiven some noisy neural responses, $r$, the maximum likelihood estimator (MLE) chooses the stimulus condition which maximizes the likelihood function, $s^_{M\u2062L}=arg\u2062max_{s}\u2061\u2112\u2062(r,s)=arg\u2062max_{s}\u2062\\prod_{i=1}^{N}p\u2062(r_{i}|s)$. A common approach is to instead search for the maximum of the log-likelihood function (the logarithm is a monotonic function and therefore preserves any maxima/minima). The stimulus-dependent terms of the log-likelihood can then be expressed as\n\n$$\nlog\u2061p(r|s)\u221dV(r;s)=\\sumi=1Nr_{i}log\u2061(Tf_{i}(s))\u2212Tf_{i}(s).\n$$\n\nUnfortunately, the log-likelihood function is not guaranteed to be concave, and finding the stimulus condition $s^_{M\u2062L}$ which maximizes the log-likelihood function is not trivial (a non-convex optimization problem). To overcome this difficulty, we combined grid-search with the Nelder\u2013Mead method, an unconstrained non-linear program solver (implemented using MATLAB\u2019s built-in function fminsearch, https://www.mathworks.com/help/matlab/ref/fminsearch.html).\n\nGrid search was used to find a small set of starting points with large log-likelihood values. To do so, we sampled 100 random stimulus conditions within the stimulus interval $[0,1)^{D}$ and selected the four stimulus conditions with the largest log-likelihood values. The true stimulus condition, $s_{t\u2062r\u2062u\u2062e}$, was always added to the set of starting points regardless of the log-likelihood value of that condition (yielding a total of 5 starting points).\n\nThen the Nelder\u2013Mead method was used with these starting points to find a set of 5 (possibly local) maxima. The stimulus was decoded as the stimulus, $s^$, yielding the largest log-likelihood of the 5 maxima. As we always included the true stimulus condition in the Nelder-Mead search, this approach should not overestimate the amount of threshold distortion but can potentially miss some global estimation errors instead. Finally, as the Nelder\u2013Mead method is unconstrained but the stimulus domain periodic, the output of the maximum likelihood decoder was transformed into the stimulus interval $[0,1)^{D}$ by applying the mod 1 operation on each stimulus dimension,\n\n$$\ns^_{ML}=s^(mod1).\n$$\n\nGiven an estimated stimulus, $s^_{M\u2062L}$, the error was then evaluated along each stimulus dimension independently, taking into account the periodic boundary,\n\n$$\n\u03f5_{i}^{2}=min[(s_{i}\u2212s^_{ML,i})^{2},(s_{i}\u2212s^_{ML,i}+1)^{2},(s_{i}\u2212s^_{ML,i}\u22121)^{2}]\n$$\n\nfor $i\\in{1,\u2026,D}$.\n\nLastly, to rule out that the estimates before the mod-operation, $s^$, outside of the stimulus domain $[0,1)^{D}$ did not influence the results, we also discarded these samples, but this produced similar results.\n\n### Spiking network model\n\n#### Stimuli\n\nAs in the previous simulations, we assumed that the stimulus domain was a circular stimulus defined between $[0,1)$. We simulated the responses to two different types of stimuli, (1) a step-like change in stimulus condition from $s=0.25$ to $s=0.75$ and (2) a stimulus drawn from a modified Ornstein\u2013Uhlenbeck process\n\n$$\n\\frac{ds_{t}}{dt}=\u2212\\frac{s_{t}}{\\tau_{s}}+\\sqrt{\\frac{2\\sigma_{s}^{2}}{\\tau_{s}}}\u03be_{s}(mod 1).\n$$\n\nFor parameter values, see Table 1.\n\n**Table 1.**\n Parameters and parameter values for O-U stimulus.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameters</th>\n      <th>Parameter values</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\u03c4s</td>\n      <td>0.5 (s)</td>\n    </tr>\n    <tr>\n      <td>\u03c3s</td>\n      <td>0.1</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Network model\n\nThe spiking networks were implemented as two-layer, feed-forward networks using LIF neurons with (Dirac) delta synapses. The dynamics of the membrane potential for the neurons in the first layer were described by\n\n$$\n\\frac{dV_{i}}{dt}=\u2212\\frac{V_{i}\u2212V_{rest}}{\\tau_{mem}}+\\sumkJ_{E}\\delta(t\u2212t_{k}),\n$$\n\nwhere $V_{i}$ is the voltage of neuron $i$, $\\tau_{m\u2062e\u2062m}$ the membrane time constant, tk the timing of the $k$ th input spike to neuron $i$, and $J_{E}$ the induced EPSP. The neurons in the first layer were constructed to correspond to either single-peaked or periodic tuning curves. Two networks were tested, one network where the first layer corresponds to single-peaked tuning curves and a second network corresponding to periodic tuning curves (with $L=4$ modules). For each neuron $i$ in module $j$ in the first layer, the input was drawn from independent Poisson point processes with stimulus-dependent rates $f_{i}^{(j)}\u2062(s\u2062(t))$\n\n$$\nf_{i}^{(j)}(s(t))=aexp\u2061(\\frac{1}{w}(cos\u2061(\\frac{2\\pi}{\\lambda_{j}}(s(t)\u2212s_{i}^{(j)}))\u22121))+b.\n$$\n\nHere, the constants $a$ and $b$ were chosen such that the baseline firing rate was slightly above zero and the maximal firing rate was slightly below 20 sp/s (see Table 3 for all network-related parameter values). Because of the choice of $\\lambda_{j}$, the modulation strengths of the inputs were such that the average input to each neuron was equal. For each module in the first layer, the preferred locations $s_{i}^{(j)}$ were equidistantly placed across $[0,\\lambda_{j})$.\n\nSimilarly, for the second layer, the membrane potential was described by\n\n$$\n\\frac{dV_{i}}{dt}=\u2212\\frac{V_{i}\u2212V_{rest}}{\\tau_{mem}}+\\sumj\\in[1,...,N_{1}]\\sumkJ_{EE}(\u0394_{i,j})\\delta(t\u2212t_{k}^{(j)}\u2212d)+\\sumj\\in[1,...,N_{2}]\\sumkJ_{I}(\u0394_{i,j})\\delta(t\u2212t_{k}^{(j)}\u2212d)+\\sumkJ_{E}\\delta(t\u2212t_{k}),\n$$\n\nwhere $J_{E\u2062E}\u2062(\u0394_{i,j})$ and $J_{I}\u2062(\u0394_{i,j})$ are synapse-specific EPSPs/IPSPs which depends on the difference in preferred tuning $\u0394_{i,j}$ between the pre- and post-synaptic neurons (see Equation 18), $t_{k}^{(j)}$ the timing of the $k$ th spike of pre-synaptic neuron $j$, and $d$ the delay (see Table 2, Table 3 for parameter values). The neurons in the second layer were only tuned to a single preferred stimulus location each, equidistantly placed across $[0,1)$. Whenever a spike occurred in the first layer, it elicited EPSPs with a delay of 1.5 ms in all neurons in the second layer. The size of the EPSPs depended on the difference in preferred tuning, $\u0394_{i,j}$, between the pre- and post-synaptic neurons\n\n$$\nJ_{EE}(\u0394_{i,j})=exp\u2061(\\frac{1}{w_{ro}}(cos\u2061(2\\pi\u0394_{i,j})\u22121))J_{EE}.\n$$\n\nHere, $J_{E\u2062E}$ determines the maximal EPSP (mV), and the constant $w_{r\u2062o}$ was chosen such that the full width at half maximum of the EPSP kernels tiled the stimulus domain without overlap. Note that for periodically tuned neurons in the first layer (i.e. with multiple preferred locations), the $\u0394_{i,j}$ were determined by the smallest difference in preferred tuning across the multiple preferred locations.\n\nAs for the excitatory neurons in the first layer, whenever a spike occurred in the second layer, it elicited IPSPs with a delay of 1.5 ms in all other neurons in the second layer. Again, the size of the IPSPs depended on the difference in preferred tuning, $\u0394_{i,j}$ between the two neurons, but this time according to\n\n$$\nJ_{I}(\u0394_{i,j})=\u2212|sin\u2061(\\pi\u0394_{i,j})|J_{I}.\n$$\n\nThus, the range of inhibition was much broader compared to the excitation.\n\n**Table 2.**\n Parameters and parameter values for LIF neurons.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameters</th>\n      <th>Parameter values</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Membrane time constant, \u03c4memb (ms)</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td>Threshold memb. potential, Vth (mV)</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td>Reset memb. potential (mV)</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>Resting potential, V0 (mV)</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Refractory period, \u03c4rp (ms)</td>\n      <td>2</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 3.**\n Spiking network parameters and parameter values.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameters</th>\n      <th>Parameter values</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Number of neurons 1st layer, N1</td>\n      <td>500</td>\n    </tr>\n    <tr>\n      <td>Number of neurons 2nd layer, N2</td>\n      <td>400</td>\n    </tr>\n    <tr>\n      <td>Maximal stimulus-evoked input rate, a (sp/s)</td>\n      <td>750</td>\n    </tr>\n    <tr>\n      <td>Baseline input rate, b (sp/s)</td>\n      <td>4250</td>\n    </tr>\n    <tr>\n      <td>Spatial periods, \u03bbj</td>\n      <td>[1] or [1,2,3,4]</td>\n    </tr>\n    <tr>\n      <td>Width parameter, w</td>\n      <td>0.3</td>\n    </tr>\n    <tr>\n      <td>Width parameter (readout layer), wro</td>\n      <td>(\u03c0/N2)22log\u2061(2)</td>\n    </tr>\n    <tr>\n      <td>Input EPSP (1st layer), JE (mV)</td>\n      <td>0.2</td>\n    </tr>\n    <tr>\n      <td>Maximal EPSP (2nd layer), JEE (mV)</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Maximal IPSP (2nd layer), JII (mV)</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Synaptic delays, d (ms)</td>\n      <td>1.5</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Evaluating decoding performance\n\nWe assumed that the decoder was instantaneously based on the neuron index of the firing neuron in the readout layer. Let $\u03a6\u2062(t_{k})$ denote a function that provides the index of the neuron firing at time tk. Given the equidistant distribution of preferred locations for the readout neurons, the stimulus is instantaneously decoded by mapping the neuron identity to the interval $[0,1]$\n\n$$\ns^(t_{k})=\\frac{\u03a6(t_{k})}{N_{2}},\n$$\n\nwhere N2 is the number of neurons in the readout layer. For both stimulus cases, the decoding performance was evaluated using (1) the distribution of RMSE (Figure 7d) or estimated stimulus conditions (Figure 7e) in a sliding window or (2) the distributions of accumulated RMSE (Figure 8).\n\n### Parameters\n\n#### Simulation tools\n\nAll the simulations were done using code written in MATLAB and Python (using Brian2 simulator Stimberg et al., 2019). The simulation code is available at https://github.com/movitzle/Short_Decoding_Time (copy archived at Lenninger, 2023 ).\n\n### Approximating minimal decoding time in two-module systems\n\nTo gain an understanding of the interaction between two modules with different spatial periods, consider the likelihood function as a product of the likelihood functions of the two modules individually\n\n$$\np\u2062(r|s)=Q_{1}\u2062(s)\u2062Q_{2}\u2062(s).\n$$\n\nUsing the Laplace approximation, each of these functions can be approximated as a periodic sum of Gaussians (Wei et al., 2015). Assuming that each module becomes efficient before the joint likelihood, we only focus on the largest, periodically occurring, peaks\n\n$$\nQ_{i}(s)\u2248Q^_{i}(r^{(i)}|s)=A_{i}\\sumn_{i}=\u2212K_{i}K_{i}exp\u2061(\u2212\\frac{\u03a3_{i}}{2}(s\u2212(s_{ML}^{(i)}+n_{i}\\lambda_{i}))^{2}),\n$$\n\nwhere $r^{(i)}$ denotes the activity pattern of module $i$, $s_{M\u2062L}^{(i)}$ the peak closest to the true stimulus condition, s0, and $K_{i}$ is large enough for $Q^_{i}\u2062(r^{(i)}|s)$ to cover the entire stimulus range $[0,1)$. The approximation can be seen as \u2018rolling out\u2019 the stimulus domain from $[0,1)$ to $\u211d$. Therefore, to neglect the impact of the stimulus boundary, we assume that the stimulus is in the middle of the stimulus domain and $K_{1}=\u2308\\frac{1}{2\u2062\\lambda_{1}}\u2309$ and $K_{2}=\u2308\\frac{1}{2\u2062\\lambda_{2}}\u2309$. Furthermore, assuming that each module is efficient, the width of the Gaussians can be approximated as\n\n$$\n\u03a3_{i}\u2248\u2212\\frac{d^{2}}{ds^{2}}log\u2061Q_{i}(s)\u2248J_{i}(s),\n$$\n\nwhere $J_{i}\u2062(s)\u2248J_{i}$ is the Fisher information of module $i$. The joint likelihood function can thus be approximated as\n\n$$\np(r|s)\u2248Q^_{1}(r^{(1)}|s)Q^_{2}(r^{(2)}|s)==A_{1}A_{2}\\sumn_{1}=\u2212K_{1}K_{1}exp\u2061(\u2212\\frac{J_{1}}{2}(s\u2212(s_{ML}^{(1)}+n_{1}\\lambda_{1}))^{2})\\sumn_{2}=\u2212K_{2}K_{2}exp\u2061(\u2212\\frac{J_{2}}{2}(s\u2212(s_{ML}^{(2)}+n_{2}\\lambda_{2}))^{2}).\n$$\n\nAs the likelihood functions depend on the particular realization of the spike counts, the distance between the modes of the respective likelihoods closest to the true stimulus condition s0, $\\delta_{0,0}=s_{M\u2062L}^{(1)}-s_{M\u2062L}^{(2)}$, is a random variable. Note that in the Results section, $\\delta_{0,0}$ is simply referred to as $\\delta$ for clarity.\n\nThe joint likelihood distribution $p\u2062(r|s)$ has its maximal peak close to the true stimulus condition s0 if $\\delta_{0,0}$ is the smallest distance between any pairs of peaks of Q1 and Q2 (see Equation A3.7 for details). Assuming that both modules provide efficient estimates, the distance $\\delta_{0,0}$ can be approximated as a normally distributed random variable\n\n$$\n\\delta_{0,0}=s_{ML}^{(1)}\u2212s_{ML}^{(2)}=(s_{ML}^{(1)}\u2212s_{0})\u2212(s_{ML}^{(2)}\u2212s_{0})\u223cN(0,\\frac{1}{T}(J_{1,norm}^{\u22121}+J_{2,norm}^{\u22121})),\n$$\n\nwhere $J_{k,n\u2062o\u2062r\u2062m}$ refers to the time-normalized Fisher information of module $k$. Thus, as the decoding time $T$ increases, the variance of $\\delta_{0,0}$ decreases. Hence, it is necessary for the decoding time $T$ to be large enough such that it is rare for $\\delta_{0,0}$ not to be the smallest distance between any pair of peaks. Similarly, the distance between the other pair of peaks in Q1 and Q2 within the stimulus range becomes\n\n$$\n\\delta_{n_{1},n_{2}}=(s_{ML}^{(1)}+n_{1}\\lambda_{1})\u2212(s_{ML}^{(2)}+n_{2}\\lambda_{2})==\\delta_{0,0}+(n_{1}\\lambda_{1}\u2212n_{2}\\lambda_{2}),\n$$\n\nwhere $n_{1}\\in{-K_{1},\u2026,K_{1}}$ and $n_{2}\\in{-K_{2},\u2026,K_{2}}$ are indexing the different Gaussians as before. Thus, the threshold for catastrophic error is reached when there is another pair of modes with the same distance between them, that is,\n\n$$\n|\\delta_{0,0}|=|\\delta_{n_{1},n_{2}}|=|\\delta_{0,0}+(n_{1}\\lambda_{1}\u2212n_{2}\\lambda_{2})|,\n$$\n\nfor some n1 and n2 belonging to the index sets as above. Thus, to avoid catastrophic errors, it is necessary that\n\n$$\n|\\delta_{0,0}|\\leq|\\delta_{0,0}+(n_{1}\\lambda_{1}\u2212n_{2}\\lambda_{2})|,\n$$\n\nfor all $n_{1}\\in{-K_{1},\u2026,K_{1}}$ and $n_{2}\\in{-K_{2},\u2026,K_{2}}$. By solving Equation 28, and taking into account that $\\delta_{0,0}$ can be either positive or negative, we get the maximally allowed displacement\n\n$$\n\\delta^{\u2217}=minn_{1},n_{2}:(n_{1},n_{2})\\neq(0,0),n_{1}\\in{\u2212K_{1},...,K_{1}},n_{2}\\in{\u2212K_{2},...,K_{2}}\\frac{1}{2}|(n_{1}\\lambda_{1}\u2212n_{2}\\lambda_{2})|.\n$$\n\nNote that for $\\lambda_{1}=1$, all n1 represent the same mode (but one full rotation 1 away). Thus, we limit the search such that $\\lambda_{1}|n_{1}|<1$ and $\\lambda_{2}|n_{2}|<1$. Assuming that the period of the second module is a scaling of the first module, $\\lambda_{2}=c\u2062\\lambda_{1}$, the above equation becomes\n\n$$\n\\delta^{\u2217}=minn_{1},n_{2}:(n_{1},n_{2})\\neq(0,0)\\frac{1}{2}|\\lambda_{1}(n_{1}\u2212n_{2}c)|.\n$$\n\nNote that stimulus ambiguity can never be resolved if $\\delta_{n_{1},n_{2}}=\\delta_{0,0}$ for some pair $(n_{1},n_{2})\\neq(0,0)$, which is analogous to the condition in Mathis et al., 2012. To limit the probability of catastrophic estimation errors from the joint distribution to some small error probability $p_{e\u2062r\u2062r\u2062o\u2062r}$, the following should hold\n\n$$\nPr(|\\delta_{0,0}|>\\delta^{\u2217})<p_{error}.\n$$\n\nBecause $\\delta_{0,0}\u223cN(0,J_{1}^{\u22121}+J_{2}^{\u22121})$, we have\n\n$$\nPr(|\\delta_{0,0}|>\\delta^{\u2217})=1\u2212erf(\\frac{\\delta^{\u2217}}{\\sqrt{2}\\sigma})<p_{error},\n$$\n\nwhere $erf\u2062(\u22c5)$ is the error-function and $\\sigma=\\sqrt{J_{1}^{-1}+J_{2}^{-1}}$. By rearranging the terms and using Equation A2.8, we can obtain a lower bound on the required decoding time\n\n$$\nT_{th}>2(\\frac{erf^{\u22121}(1\u2212p_{error})}{\\delta^{\u2217}})^{2}(\\frac{1}{J_{1,norm}}+\\frac{1}{J_{2,norm}}),\n$$\n\nwhere $J_{i,n\u2062o\u2062r\u2062m}$ is the time-normalized Fisher information of module $i$. Note that $\\delta^{*}$ can easily be found using an exhaustive search according to Equation 29 or Equation 30.\n\n### Approximating minimal decoding time\n\nTo approximate the order by which the population reaction time scales with the distribution of spatial periods and the stimulus dimensionality, we extended the approximation method introduced by Xie, 2002. The key part of the approximation method is to use a Taylor series to reason about which conditions must hold for the distribution of errors to be normally distributed with a covariance equal to the inverse of the Fisher information matrix. Note that this approximation assumes the existence of a unique solution to the maximum likelihood equations, thus, it does not apply to ambiguous neural codes (e.g. $c=1/2,1/3,1/4,\u2026$, etc.).\n\nFirst, let\u2019s recollect the Taylor series with Lagrangian reminder for a general function g\n\n$$\ng(x+\\delta)=g(x)+g^{\u2032}(x)\\delta+\\frac{1}{2}g^{\u2032\u2032}(x^{\u2217})\\delta^{2},\n$$\n\nwhere $x^{*}$ is somewhere on the interval $[x,x+\\delta)$. Thus, in the multivariate case, the derivative in the j:th direction of the log-likelihood function for stimulus condition $s^_{M\u2062L}=s^$ can be rewritten using a Taylor series with Lagrangian reminder as\n\n$$\n\\frac{\u2202}{\u2202s_{k}}log\u2061p(r|s)|_{s=s^}=\\frac{\u2202}{\u2202s_{k}}log\u2061p(r|s)|_{s=s^{\u2218}}+\\suml=1D\\frac{\u2202^{2}}{\u2202s_{l}\u2202s_{k}}log\u2061p(r|s)|_{s=s^{\u2218}}(s^_{l}\u2212s_{l}^{\u2218})++\\frac{1}{2}\\suml=1D\\summ=1D\\frac{\u2202^{3}}{\u2202s_{m}\u2202s_{l}\u2202s_{k}}log\u2061p(r|s)|_{s=s^{\u2217}}(s^_{l}\u2212s_{l}^{\u2218})(s^_{m}\u2212s_{m}^{\u2218}),\n$$\n\nfor all $k\\in{1,\u2026,D}$ where $s^{\u2218}$ is the true stimulus condition and $s^{*}$ is a stimulus point between $s^{\u2218}$ and $s^$.\n\nIf the estimated stimulus is close to the true stimulus, then the quadratic order terms are small. If so, the variance of $(s^-s^{\u2218})$ converges towards $N(0,J^{\u22121})$ (in distribution), where $J$ is the Fisher information matrix (Lehmann and Casella, 1998). However, if the estimated stimulus is not close to the true stimulus, then the quadratic terms are not negligible. Therefore, when $T$ is sufficiently large, and the variance of the estimation follows the Cram\u00e9r-Rao bound, the following should hold for all $k\\in{1,\u2026,D}$\n\n$$\n|\\suml=1D\\frac{\u2202^{2}}{\u2202s_{l}\u2202s_{k}}log\u2061p(r|s)|_{s=s^{\u2218}}(s^_{l}\u2212s_{l}^{\u2218})|\u226b|\\frac{1}{2}\\suml=1D\\summ=1D\\frac{\u2202^{3}}{\u2202s_{m}\u2202s_{l}\u2202s_{k}}log\u2061p(r|s)|_{s=s^{\u2217}}(s^_{l}\u2212s_{l}^{\u2218})(s^_{m}\u2212s_{m}^{\u2218})|.\n$$\n\nIn this regime, we make the following term-wise approximations\n\n$$\n\\frac{\u2202^{2}}{\u2202s_{l}\u2202s_{k}}log\u2061p(r|s)|_{s=s^{\u2218}}\u2248E[\\frac{\u2202^{2}}{\u2202s_{l}\u2202s_{k}}log\u2061p(r|s)|_{s=s^{\u2218}}]=\u2212J_{k,l}(s^{\u2218})=\u2212J_{k,l},\n$$\n\nand\n\n$$\n\\frac{\u2202^{3}}{\u2202s_{m}\u2202s_{l}\u2202s_{k}}log\u2061p(r|s)|_{s=s^{\u2217}}\u2248E[\\frac{\u2202^{3}}{\u2202s_{m}\u2202s_{l}\u2202s_{k}}log\u2061p(r|s)|_{s=s^{\u2217}}]=M_{k,l,m}(s^{\u2217}),\n$$\n\nwhich gives\n\n$$\n|\\suml=1DJ_{k,l}(s^_{l}\u2212s_{l}^{\u2218})|\u226b|\\frac{1}{2}\\suml=1D\\summ=1DM_{k,l,m}(s^{\u2217})(s^_{l}\u2212s_{l}^{\u2218})(s^_{m}\u2212s_{m}^{\u2218})|.\n$$\n\nBecause $M_{k,l,m}\u22480$ unless $k=l=m$ (see Equation A4.3, Equation A4.4, Equation A4.5), Equation 39 simplifies to\n\n$$\n|\\suml=1DJ_{k,l}(s^_{l}\u2212s_{l}^{\u2218})|\u226b|\\frac{1}{2}M_{k,k,k}(s^{\u2217})(s^_{k}\u2212s_{k}^{\u2218})^{2}|.\n$$\n\nFurthermore, because $J\u2062(s)$ is a diagonal matrix (see Equation A2.18), we have\n\n$$\n|J_{k,k}(s^_{k}\u2212s_{k}^{\u2218})|\u226b|\\frac{1}{2}M_{k,k,k}(s^{\u2217})(s^_{k}\u2212s_{k}^{\u2218})^{2}|.\n$$\n\nNext, by taking the square of the absolute values, we obtain\n\n$$\nJ_{k,k}^{2}(s^_{k}\u2212s_{k}^{\u2218})^{2}\u226b\\frac{1}{4}M_{k,k,k}^{2}(s^{\u2217})((s^_{k}\u2212s_{k}^{\u2218})^{2})^{2}.\n$$\n\nBecause we assumed that $N$ and $T$ are sufficiently large to meet the Cram\u00e9r-Rao bound, we have that\n\n$$\n(s^_{k}\u2212s_{k}^{\u2218})(s^_{l}\u2212s_{l}^{\u2218})\u223c{J\u00af^{\u22121}}_{k,l}.\n$$\n\nInserting Equation 43 into Equation 42 gives\n\n$$\nJ_{k,k}^{2}{J^{\u22121}}_{k,k}\u226b\\frac{1}{4}M_{k,k,k}^{2}(s^{\u2217})({J^{\u22121}}_{k,k})^{2},\n$$\n\nor, equivalently,\n\n$$\n1\u226b\\frac{1}{4}M_{k,k,k}^{2}(s^{\u2217}){J^{\u22121}}_{k,k}^{3}=\\frac{1}{4}\\frac{M_{k,k,k}^{2}(s^{\u2217})}{{J}_{k,k}^{3}}.\n$$\n\nBy approximating the term $M_{k,k,k}\u2062(s^{*})$ with an upper bound $M^{*}$ (see Equation A4.10) and using the expression for Fisher information (Equation A2.8), the expression for population reaction times can be obtained as\n\n$$\nT_{th}\u226bA(w)\\frac{1}{aN}B_{0}(\\frac{1}{w})^{\u2212(D\u22121)}exp\u2061(\\frac{D}{w})\\frac{\\lambda^{\u22123}\u00af^{2}}{\\lambda^{\u22122}\u00af^{3}},\n$$\n\nwhere $A\u2062(w)$ is a function of $w$. Lastly, by casting Equation 46 in terms of the scale factor $c$, and fitting using (for example) least square regression, we obtain\n\n$$\nT_{th}\u2248K_{1}A(w)\\frac{1}{aM}\\frac{exp\u2061(D/w)}{B_{0}(1/w)^{(D\u22121)}}\\frac{(\\sumj=0L\u22121c^{\u22123j})^{2}}{(\\sumj=0L\u22121c^{\u22122j})^{3}}+K_{2},\n$$\n\nwhere $M$ is the number of neurons per module, and K1 and K2 are constants. Note that in the simulations, $w$ is fixed and $A\u2062(w)$ can therefore be incorporated into K1.\n",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "c1cf75cc-f905-44a8-bc7c-23f1c0dca4bd",
+      "submission_id": "e11230f5-659d-4d37-84e2-231f8827927f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Latham, https://ror.org/02jx3x895 University College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84531.sa0](https://doi.org/10.7554/eLife.84531.sa0)\n\nThis fundamental study provides important insight into coding strategies in sensory areas. The study was well done, and the analysis and simulations were highly convincing. This study should be of particular interest to anybody who cares about efficient coding.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Peter Latham, https://ror.org/02jx3x895 University College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84531.sa1](https://doi.org/10.7554/eLife.84531.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Are single-peaked tuning curves tuned for speed rather than accuracy?\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Panayiota Poirazi as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Stefano Panzeri (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nWhile this paper makes an extremely important point, one that should definitely be communicated to the broader community, in our opinion it suffers from two (relatively easily fixable) problems:\n\nI. Unless one is an expert, it's very hard to extract why multi-peaked tuning curves lead to catastrophic errors.\n\nII. It's difficult to figure out under what circumstances multi-peaked tuning curves are bad. This is important, because there are a lot of neurons in sensory cortex, and one would like to know whether periodic tuning curves are really a bad idea there.\n\nAnd here are the fixes:\n\nI. Figure 1c seems like a missed opportunity to explain what's really going on, which is that on any particular trial the positions of the peaks of the log likelihood can shift in both phase and amplitude (with phase being more important). The reason it's a missed opportunity is that Figure 1c shows the average log likelihood, which makes it hard to understands why there are catastrophic errors. It would really help if Figure 1c were expanded into its own large figure, with sample log likelihoods showing catastrophic errors for multi-peaked tuning curves but not for single-peaked ones. You could also indicate why, when multi-peaked tuning curves do give the right answer, the error tends to be small.\n\nII. What the reader really wants to know is: would sensory processing in real brains be more efficient if multi-peaked tuning curves were used? That's certainly hard to answer in all generality, but you could make a comparison between a code with single-peaked tuning curves and a _good_ code with multi-peaked tuning curves. Our guess is that a good code would have \u03bb_1=1 and c around 0.5 (but not, of course, exactly 1/2; you could use the module ratio the grid cell people came up with -- we think 1/sqrt(2) -- although we doubt if it matters much). What would be great would be a relatively simple relation, possibly fitted empirically to simulations, that told us when multi-peaked tuning curves are better than single-peaked one, given the number of neurons, background and peak firing rates, and dimensionality. Of course, this may be impossible, but if so it's important to state that up front, so that people know how difficult this is.\n\nIn addition, we have a number of comments, all designed to improve the paper. Feel free to disagree with any of them; we don't feel massively strongly about them. Also, if you implement them, no reason to provide a reply -- we're sensitive to the fact that replies to the reviewer are becoming longer than the paper!\n\nReviewer #1 (Recommendations for the authors):\n\n1. When catastrophic errors are possible, we agree that it's very hard to find a good measure of error. RMS error clearly isn't very good. However, it's not clear minimal decoding time is any better, since it'd defined in terms of RMS error. Finding a good measure seems critical when comparing codes, given that Fisher info can change by 5 orders of magnitude while decoding time changes by only 1 (e.g., Figure 4d). Moreover, we could be wrong, but our intuition is that when \u03bb_1=1, catastrophic errors aren't much of an issue. Is that correct? If so, time to threshold (defined to be time for the RMS error to be twice that predicted by the inverse of the Fisher info) could be a bad measure.\n\nHere we don't have any really great suggestions. But you might try something like [<(error)^k>/((2k-1)!!)]^{1/k} for k larger than 2 and even (the factor of (2k-1)!!) makes this equal to the RMS error for Gaussian distributions. But other measures are possible.\n\n2. Are you using periodic boundary conditions? Tuning curves are clearly periodic, but decoding near the boundaries is a bit tricky. For instance, the ML estimator can put the decoded value outside the range [0, 1). This should be clarified.\n\n3. It should be clear that the expression for Fisher info (Equation 3) applies when a_i=a and b=0.\n\n4. Figure 1a: it would be helpful to indicate the location of s_1 and s_2 in the top panel.\n\nAlso, isn't Figure 1a a bit misleading? The problem isn't a small number of spikes; it's a phase shift in the log likelihood.\n\n5. l 99-100: \"For the largest mode of the joint likelihood function to also be centered close to the true stimulus condition, the distance \u03b4 between s^(1)_ML and s^(2)_ML must be smaller than between any other pair of modes of Q_1 and Q_2.\" We can see why this might be reasonable, but it's not totally obvious that the distance between the modes is the only thing that matters. This needs to be shown.\n\n6. l 100-101: \"Thus, to avoid catastrophic errors, \u03b4 must be smaller than some largest allowed distance \u03b4* (see Methods for calculation of \u03b4*).\" This makes it seems like \u03b4* is something complicated. But in fact it's exactly half the smallest distance between any other pair of modes. Why not say so?\n\n7. l 120-1: \"estimates can cause catastrophic shifts in the joint likelihood function. For single-peaked tuning curves (\u03bb_1 = 1), however, only small scale factors c can pose such problems.\" Should \"For single-peaked tuning curves\" be \"When the first mode has a single peak\". If not, we're lost.\n\n8. l 128: \"Furthermore, only populations with unambiguous codes over the stimulus interval were included [22].\" Can't parse.\n\n9. Equation 8 seems unlikely to be correct, given that it doesn't depend on c, which we know is critical (as shown in Figure 1e). However, if you do keep it, it would be helpful to express it in terms of the average firing rate. If you do that, lots of terms go away.\n\n10. Figure caption 2c: \"colored lines show the estimated minimal decoding time from simulations and the black lines show the fitted theoretical predictions\". Presumably the description of the fitted lines was given on on l. 178. However, we can't tell from this description what you actually did. Equations are needed.\n\nAnd presumably this also comes up on l. 211: \"ratios of fitted regressors K1 were approximately 1.69 and 1.72 for D = 1 and D = 2, respectively\".\n\n11. l. 179: \"Within this range of scale factors\". Within what range?\n\n12. l 184-5: \"As suggested by Figure 2d, there is also a strong correlation between Fisher information and minimal decoding time again indicating a speed-accuracy trade-off.\" There's certainly a tradeoff between Fisher info and minimal decoding time, but, as mentioned in point 1, minimal decoding time isn't always a great measure. You should be up front about this.\n\n13. The tables should be moved to the main text -- the parameters (especially the number of modules) are highly relevant. Or what would be even more useful would be to put the parameters in the figure captions.\n\n14. Figure 5: by \"Gaussian pop.\" and \"Periodic pop.\" do you mean \"Single peaked\" and \"multi-peaked\"? If so, this should be clear.\n\n15. l 303: \"Thus, minimal decoding time should set a bound on the number of features a population can jointly encode reliably.\" Very interesting prediction! Which you point out on lines 325-7: \"Our work gives a compelling reason to understand whether and how biological brains can reliably encode high-dimensional stimuli at behaviorally relevant time scales.\" But this should be quantified; see point 1.\n\nReviewer #2 (Recommendations for the Authors):\n\nThe paper makes a simple but important point. It is also remarkably well explained especially considering the complexity of the calculations. For once, I do not feel the need to make many suggestions for improvement.\n\nOne point that could be better addressed regards the justification of speed of encoding based on data on sensory cortex. The introduction seems heavy on the visual system based on the results of Thorpe and colleagues. In the discussion (lines 288-289) the authors point out (though the sentence is not very strongly linked to the overall text flow) that the first few spikes carry significant information in the visual and olfactory system. While the point of raising the importance f speed of encoding in sensory areas is valid, I am not sure that it should privilege the visual system or the visual and olfactory system. I think that somatosensory modalities encode information faster and earlier than visual modalities, including with regard to the prominence of first spikes (see e.g. Panzeri et al. Neuron 2001). If anything, visual cortical data show encoding in longer time scales. It would be nice to have a more precise introduction to and discussion of these topics to motivate this work and to evaluate its implications.\n",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7e3069bb-4bce-401e-b35d-811a08c9aca7",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C1",
+      "claim": "According to the efficient coding hypothesis, sensory neurons are adapted to provide maximal information about the environment, given some biophysical constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the efficient coding hypothesis, sensory neurons are adapted to provide maximal information about the environment, given some biophysical constraints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the efficient coding hypothesis presented in the abstract without specific experimental data from this manuscript, but represents established theory cited as background.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "bfdffadb-a26e-4abf-8d39-d6c1ced406f5",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C2",
+      "claim": "In early visual areas, stimulus-induced modulations of neural activity (or tunings) are predominantly single-peaked.",
+      "claim_type": "EXPLICIT",
+      "source": "In early visual areas, stimulus-induced modulations of neural activity (or tunings) are predominantly single-peaked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established observation about early visual areas.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "94ff8d63-8198-469f-a4ee-7842ce914c0a",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C3",
+      "claim": "Periodic tuning, as exhibited by grid cells, has been linked to a significant increase in decoding performance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, periodic tuning, as exhibited by grid cells, has been linked to a significant increase in decoding performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior work on grid cells and their decoding performance, representing established findings in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "6f59dc08-c18b-48c7-9df3-2579b8281a94",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C4",
+      "claim": "The possibility of catastrophic (large) errors creates a trade-off between decoding time and decoding ability.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that the possibility of catastrophic (large) errors creates a trade-off between decoding time and decoding ability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary claim of the manuscript supported by the theoretical analysis and simulations presented throughout.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "3e2c491f-2571-44de-843f-5722dee4f7fc",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C5",
+      "claim": "Minimal decoding time tends to increase with increasing Fisher information, implying a trade-off between accuracy and speed.",
+      "claim_type": "EXPLICIT",
+      "source": "We show an overall trend for minimal decoding time to increase with increasing Fisher information, implying a trade-off between accuracy and speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 4 and related analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "2fc1bee1-3bf5-4ba6-8f99-14d176b78513",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C6",
+      "claim": "The trade-off between accuracy and speed is reinforced whenever the stimulus dimensionality is high, or there is ongoing activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This trade-off is reinforced whenever the stimulus dimensionality is high, or there is ongoing activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation results comparing different stimulus dimensionalities and levels of ongoing activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "bedd8c89-761a-49cc-98d9-6a4f190f0800",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C7",
+      "claim": "Single-peaked tuning curves require shorter decoding times than periodic tuning curves.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, single-peaked tuning curves require shorter decoding times and are more robust to ongoing activity than periodic tuning curves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is supported by the simulation results throughout the manuscript, particularly in Figures 3, 4, and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "6f007340-fbd6-4609-b9e0-ab91dc0a74f8",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C8",
+      "claim": "Individual neurons are highly noisy and variable in their responses, even to identical stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "The problem is exacerbated by the fact that individual neurons are highly noisy and variable in their responses, even to identical stimuli (Arieli et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "ce05754a-ba2d-4ae7-8300-cac7eeb7d4f4",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C9",
+      "claim": "Some neurons in the primary visual cortex respond to moving bars oriented at specific angles.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, some neurons in the primary visual cortex respond to moving bars oriented at specific angles (Hubel and Wiesel, 1962).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a classic finding in neuroscience supported by the cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "2fcf12a9-fc1d-42b7-b68b-f3a46c00f2f9",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C10",
+      "claim": "Local errors are small estimation errors that depend on the trial-by-trial variability of the neural responses and the local shapes of the tuning curves surrounding the true stimulus condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Intuitively, local errors are small estimation errors that depend on the trial-by-trial variability of the neural responses and the local shapes of the tuning curves surrounding the true stimulus condition (Figure 1a bottom plot, see s1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This definition is provided in the text and illustrated in Figure 1a.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "a7b096f5-eef8-4972-95d4-510275a69594",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C11",
+      "claim": "Catastrophic errors are very large estimation errors that depend on the trial-by-trial variability and the global shape of the tuning curves.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, catastrophic errors are very large estimation errors that depend on the trial-by-trial variability and the global shape of the tuning curves (Figure 1a bottom plot, see s2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This definition is provided in the text and illustrated in Figure 1a.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "d8af1f35-d5dc-4a82-9679-c2239f156035",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C12",
+      "claim": "Fisher information is a common measure of the accuracy of a neural code.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Fisher information is a common measure of the accuracy of a neural code (Brunel and Nadal, 1998; Abbott and Dayan, 1999; Guigon, 2003; Moreno-Bote et al., 2014; Benichoux et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "4832b0a4-7c37-44ee-beb3-b8289bd35ce8",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C13",
+      "claim": "The Cram\u00e9r-Rao bound states that a lower limit of the minimal mean squared error (MSE) for any unbiased estimator is given by the inverse of Fisher information.",
+      "claim_type": "EXPLICIT",
+      "source": "The Cram\u00e9r-Rao bound states that a lower limit of the minimal mean squared error (MSE) for any unbiased estimator is given by the inverse of Fisher information (Lehmann and Casella, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established statistical result cited from a textbook.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "eb154e60-f544-43b9-89a2-91eda617402f",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C14",
+      "claim": "Fisher information can only capture local errors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because Fisher information can only capture local errors, the true MSE might be considerably larger in the presence of catastrophic errors (Xie, 2002; Kostal et al., 2015; Malerba et al., 2022), especially if the available decoding time is short (Bethge et al., 2002; Finkelstein et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This limitation of Fisher information is stated and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "8804eee0-6436-4277-80f4-0f29b67757a3",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C15",
+      "claim": "Grid cells in the entorhinal cortex are known for their periodically distributed firing fields.",
+      "claim_type": "EXPLICIT",
+      "source": "A curious observation is that the tuning curves in early visual areas predominately use single-peaked firing fields, whereas grid cells in the entorhinal cortex are known for their periodically distributed firing fields (Hafting et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an established observation about grid cells supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "763eda34-067d-48a4-ae15-33e17ed792c0",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C16",
+      "claim": "The multiple firing locations of grid cells increase the precision of the neural code compared to single-peaked tuning curves.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that the multiple firing locations of grid cells increase the precision of the neural code compared to single-peaked tuning curves (Sreenivasan and Fiete, 2011; Mathis et al., 2012; Wei et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "2293ea80-f677-4d84-ac8a-e474b06b026e",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C17",
+      "claim": "Fast processing speed is a common feature of visual processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that fast processing speed is a common feature of visual processing (Thorpe et al., 1996; Fabre-Thorpe et al., 2001; Rolls and Tovee, 1994; Resulaj et al., 2018), it is crucial that each neural population in the processing chain can quickly produce a reliable stimulus-evoked signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "8e22bc77-4e5d-4299-a3e5-a4c128cf6d4d",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C18",
+      "claim": "For about 50 ms the RMSE is significantly larger than the predicted lower bound for single-peaked tuning curves.",
+      "claim_type": "EXPLICIT",
+      "source": "For about 50 ms the RMSE is significantly larger than the predicted lower bound.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is shown in Figure 1c and described in the caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "74aad250-1045-49be-ad52-f3c72eb1887d",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C19",
+      "claim": "During the first \u224830 ms, the single-peaked population has the lowest MSE of the two populations despite having lower Fisher information.",
+      "claim_type": "EXPLICIT",
+      "source": "During the first \u224830 ms, the single-peaked population has the lowest MSE of the two populations despite having lower Fisher information (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the simulation results shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "d4025154-90be-47a2-9fa2-aebe698943d8",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C20",
+      "claim": "The periodic population still suffers from rare errors that span the entire stimulus range after achieving lower MSE than the single-peaked population.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, comparing the error distribution after the periodic population achieves a lower MSE (the black circle in Figure 2a) shows that the periodic population still suffers from rare errors that span the entire stimulus range (Figure 2b\u2013c, insets).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is directly shown in the simulation results in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "7696a57e-d77e-4914-94d9-d533ee09c642",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C21",
+      "claim": "Minimal decoding time increased with decreasing spatial periods of the tuning curves.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that minimal decoding time increased with decreasing spatial periods of the tuning curves (Figure 4c), suggesting a trade-off between accuracy and speed for populations of tuning curves.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the simulations shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "a190b7ae-f0e3-4f77-adeb-362227e995c5",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C22",
+      "claim": "The differences in minimal decoding time cannot be explained by the periodicity of the tuning curves not aligning to the stimulus domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The differences in minimal decoding time cannot be explained by the periodicity of the tuning curves not aligning to the stimulus domain, as the same holds comparing populations with integer number of peaks (Figure 4\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This control analysis is shown in Figure 4\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "418dbde1-c31f-418e-aa0f-af736c95d52c",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C23",
+      "claim": "Minimal decoding time grows with increasing stimulus dimensionality.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we show that our results are valid for a range of population sizes (Figure 9a-b), ongoing (Figure 9a-b) and evoked activities (Figure 9c), and stimulus dimensions (Figure 9d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in the simulation results shown in Figure 9d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "f10e51a6-6fc6-469d-aa17-b39e5af41418",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C24",
+      "claim": "Introducing ongoing activity to the populations further amplified the differences in minimal decoding times.",
+      "claim_type": "EXPLICIT",
+      "source": "Introducing ongoing activity to the populations in our simulations further amplified the differences in minimal decoding times (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the simulation results in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "3d438e90-0bee-4981-bce0-f991bfdab9c0",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C25",
+      "claim": "The use of periodic tuning curves increased the chances of large estimation errors in simulated networks with spiking neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In simulated networks with spiking neurons, we showed that the use of periodic tuning curves increased the chances of large estimation errors, leading to longer times before switching 'states' (Figure 7c) and difficulties tracking a time-varying, one-dimensional stimulus (Figure 7d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in the spiking network simulations shown in Figures 7c and 7d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "da8e3505-a47e-4248-b406-b4f16da43c6a",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C26",
+      "claim": "Decoding times can be very short, of the order of tens of milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental data suggest that decoding times can be very short, of the order of tens of milliseconds, reflecting that a considerable part of the information contained in firing rates over long periods is also present in short sample periods (Tov\u00e9e et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "55ae3550-3d0b-44a4-bea6-6642ac5e3b63",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C27",
+      "claim": "The first few spikes have been shown to carry significant amounts of task information in visual, olfactory, and somatosensory areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the first few spikes have been shown to carry significant amounts of task information in both visual (Resulaj et al., 2018), olfactory (Resulaj and Rinberg, 2015), and somatosensory areas (Panzeri et al., 2001; Petersen et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "b07d67b8-a2eb-4eeb-bdba-50f86197a96d",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C28",
+      "claim": "Tens of spikes carry enough information to produce a reliable stimulus estimate free of catastrophic errors.",
+      "claim_type": "EXPLICIT",
+      "source": "In our simulations, tens of spikes carry enough information to produce a reliable stimulus estimate free of catastrophic errors (Figure 4\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the simulation results in Figure 4\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "8bb80ca6-54b6-4331-873a-7ed0ff83efc3",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C29",
+      "claim": "Single-peaked tuning curves need fewer spikes to produce reliable signals than periodic tuning curves.",
+      "claim_type": "EXPLICIT",
+      "source": "As with decoding time, single-peaked tuning curves also need fewer spikes to produce reliable signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results showing shorter minimal decoding times for single-peaked tuning curves.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "d72d327e-35db-4a7a-a513-4a5fe3f10652",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C30",
+      "claim": "Many sensory neurons are tuned to multiple features of the external stimulus, creating mixed selectivity of features.",
+      "claim_type": "EXPLICIT",
+      "source": "Many sensory neurons are tuned to multiple features of the external stimulus, creating mixed selectivity of features (e.g. Garg et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "1341f35f-ef66-4ca1-834c-631ff174a54f",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C31",
+      "claim": "Mixed selectivity has been shown to enable linear separability and to improve discriminability for neurons responding to task-related variables.",
+      "claim_type": "EXPLICIT",
+      "source": "For neurons responding to task-related variables, mixed selectivity has been shown to enable linear separability and to improve discriminability (Rigotti et al., 2013; Fusi et al., 2016; Johnston et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior theoretical and experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "0b75ef9d-b90b-469d-8cc3-cfbbdee936e2",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C32",
+      "claim": "Mixed selectivity has been proposed to decrease MSE when decoding time is limited for continuous stimulus estimations.",
+      "claim_type": "EXPLICIT",
+      "source": "For continuous stimulus estimations, mixed selectivity has also been proposed to decrease MSE when decoding time is limited (Finkelstein et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "a2f4082a-c558-4af2-8ae4-46e9a121ddc9",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C33",
+      "claim": "Neurons in sensory areas often exhibit a degree of non-specific activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, neurons in sensory areas often exhibit a degree of non-specific activity (Snodderly and Gur, 1995; Barth and Poulet, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "1b7f663e-0862-4831-bf05-3002d9be9d8a",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C34",
+      "claim": "Hippocampal place cells involved in spatial navigation are known for their single-peaked tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, hippocampal place cells involved in spatial navigation (O'Keefe and Dostrovsky, 1971; Wilson and McNaughton, 1993) are known for their single-peaked tuning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an established observation about place cells supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "1ab47c55-a1ad-4ce5-ae56-e4af90cc0f25",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C35",
+      "claim": "Place cells produce reliable signals faster than their input signals from the medial entorhinal cortex with a combination of single- and multi-peaked tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "The interesting observation in this context is that place cells produce reliable signals faster than their input signals from the medial entorhinal cortex with a combination of single- and multi-peaked tuning (Cholvin et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "80aacf2a-b0cc-433f-9eea-2f5f9e5e063d",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C36",
+      "claim": "For sufficiently slow-varying stimuli, a periodic population can be used together with error correction to remove catastrophic errors.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, for sufficiently slow-varying stimuli, a periodic population can be used together with error correction to remove catastrophic errors (Sreenivasan and Fiete, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "58e8e91a-80bd-4bcd-a56b-bbb888e6422a",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C37",
+      "claim": "For non-periodic stimuli with large domains, the combinatorial nature of periodic tuning curves can create unique stimulus representations far exceeding the spatial periods of the tuning curves.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, for non-periodic stimuli with large domains, the combinatorial nature of periodic tuning curves can create unique stimulus representations far exceeding the spatial periods of the tuning curves (Fiete et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "48be4a59-a84b-4f86-9892-bf4fa75f67e8",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C38",
+      "claim": "When faced with very large arenas, place cells can also exhibit multi-peaked tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when faced with very large arenas, place cells can also exhibit multi-peaked tuning (Eliav et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "33fc8b3c-7e7b-493c-9635-277678869514",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C39",
+      "claim": "The human brain can generate differentiating event-related potentials to go/no-go categorization tasks using novel complex visual stimuli in as little as 150 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the human brain can generate differentiating event-related potentials to go/no-go categorization tasks using novel complex visual stimuli in as little as 150 ms (Thorpe et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "6af91ec1-38b8-47b1-9d54-64f0e530bca2",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C40",
+      "claim": "The speed of visual processing cannot be reduced by learning for highly familiar objects.",
+      "claim_type": "EXPLICIT",
+      "source": "These 'decoding' times do not decrease for highly familiar objects, suggesting that the speed of visual processing cannot be reduced by learning (Fabre-Thorpe et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "f6b70a6f-9697-4a8d-80df-8bc38a55e8a2",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C43",
+      "claim": "The presence of catastrophic errors can be identified by large deviations from the predicted MSE for an asymptotically efficient estimator.",
+      "claim_type": "EXPLICIT",
+      "source": "However, (inverse) Fisher information only predicts the amount of local errors for an efficient estimator. Hence, the presence of catastrophic errors (Figure 1a, bottom) can be identified by large deviations from the predicted MSE for an asymptotically efficient estimator (Figure 1c\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological claim supported by the theoretical framework and illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "429eaf48-107d-4cf0-afcd-8fed8e436e43",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C48",
+      "claim": "Trial-by-trial variability can cause stimulus ambiguity and catastrophic errors even when using multiple modules with different spatial periods.",
+      "claim_type": "EXPLICIT",
+      "source": "However, trial-by-trial variability can still cause stimulus ambiguity and catastrophic errors - at least for short decoding times, as we show later, even when using multiple modules with different spatial periods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim that is demonstrated later in the manuscript through simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "994efe48-9507-4520-8889-67d529f731d7",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C49",
+      "claim": "MSE is insensitive to rare outliers, making it a poor measure of reliability.",
+      "claim_type": "EXPLICIT",
+      "source": "Although MSE is often interpreted as a measure of accuracy, its insensitivity to rare outliers makes it a poor measure of reliability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statistical observation applied to the context of neural decoding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "15822e0e-7dd7-4ecd-b9ad-88acfc96c5ed",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C50",
+      "claim": "Comparing MSE directly between populations can be misleading if the distributions of errors are qualitatively different.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, comparing MSE directly between populations can be a misleading measure of reliability if the distributions of errors are qualitatively different.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the previous claim about MSE's insensitivity to outliers.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "50463e77-6b20-4c3c-8be7-88b550ef5e17",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C51",
+      "claim": "A comparison of MSE as a measure of reliability only becomes valid once catastrophic errors are removed.",
+      "claim_type": "EXPLICIT",
+      "source": "As we will show, a comparison of MSE, as a measure of reliability, only becomes valid once catastrophic errors are removed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim that is demonstrated through the manuscript's analyses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "ffdd86e8-f9fe-4121-a2c6-c489a0046245",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C52",
+      "claim": "The first criterion for any rate-based neural code should be to satisfy its constraint on decoding time to avoid catastrophic errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we argue that the first criterion for any rate-based neural code should be to satisfy its constraint on decoding time to avoid catastrophic errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a normative argument based on the analyses presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "88abc13f-a626-456e-9e16-0c8583914576",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C57",
+      "claim": "Periodic tuning suffers from the dilemma that small shifts in the individual stimulus estimates can cause catastrophic shifts in the joint likelihood function.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, periodic tuning suffers from the dilemma that small shifts in the individual stimulus estimates can cause catastrophic shifts in the joint likelihood function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference from the analysis of periodic tuning curves.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "eb840b45-0481-4bd3-a9c7-d47c1ff91e5c",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C58",
+      "claim": "Compared to single-peaked tuning curves, periodic tuning generally leads to sharper likelihood functions, increasing the accuracy of the estimates once catastrophic errors are removed.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, compared to single-peaked tuning curves, periodic tuning generally leads to sharper likelihood functions, increasing the accuracy of the estimates once catastrophic errors are removed (e.g., compare the widths of the joint likelihood functions in Figure 3a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing the likelihood functions in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "af846a1c-5c19-43e1-b0e1-5e3ebe6d49d2",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C61",
+      "claim": "Both the RMSE and outlier errors agree with the shape of minimal decoding times.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the RMSE and outlier errors (99.8th percentile and the maximal error, that is, 100th percentile) agree with the shape of minimal decoding times, suggesting that a single-peaked population is good at removing large errors at very short time scales.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the simulation results in Figure 3f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "f335a58e-d14d-4ed2-8442-ee347c1787c0",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C62",
+      "claim": "The minimal decoding time should grow roughly exponentially with the number of stimulus dimensions, assuming all other parameters are constant.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, assuming all other parameters are constant, the minimal decoding time should grow roughly exponentially with the number of stimulus dimensions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is predicted by Equation 9.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "2f5d8092-dc6b-47a8-b98f-d765d3f9af37",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C63",
+      "claim": "The minimal required spike count might be independent of stimulus dimensionality for populations with integer spatial frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, however, the approximation predicts that although minimal decoding time grows with increasing stimulus dimensionality, the minimal required spike count might be independent of stimulus dimensionality, at least for populations with integer spatial frequencies, that is, integer number of peaks (see Equation A5.4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the theoretical approximation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "29b07097-d521-4be3-bed1-df23b4a621c1",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C65",
+      "claim": "There is a strong correlation between Fisher information and minimal decoding time.",
+      "claim_type": "EXPLICIT",
+      "source": "As suggested by Figure 4d, there is also a strong correlation between Fisher information and minimal decoding time, again indicating a speed-accuracy trade-off.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This correlation is shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "3bc7e43d-58de-4a92-a830-941ba8356e62",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C66",
+      "claim": "There is a clear trade-off between minimizing RMSE over longer decoding times and removing outliers over shorter decoding times.",
+      "claim_type": "EXPLICIT",
+      "source": "As suggested by the minimal decoding times, there is a clear trade-off between minimizing RMSE over longer decoding times and removing outliers, especially the maximal error, over shorter decoding times.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the simulation results in Figure 4e-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "857ae05c-175f-41b7-832d-b425b39a4ae8",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C68",
+      "claim": "The criterion on minimal decoding time carries important information about the presence of large estimation errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although only using the difference between MSE and Fisher information, our criterion on minimal decoding time still carries important information about the presence of large estimation errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "57308d78-9131-4bcc-9462-d7b467a5c3dc",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C71",
+      "claim": "The ability to produce reliable signals at high speeds severely deteriorates for periodic tuning curves in the presence of non-specific ongoing activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the ability to produce reliable signals at high speeds severely deteriorates for periodic tuning curves in the presence of non-specific ongoing activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the simulation results with ongoing activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "16451d10-18fe-4957-9b9e-c69e0efe6c81",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C72",
+      "claim": "The amount of catastrophic errors depends on the probability that the trial variability reshapes the neural activity to resemble the possible activities for a distinct stimulus condition.",
+      "claim_type": "EXPLICIT",
+      "source": "The amount of catastrophic errors depends on the probability that the trial variability reshapes the neural activity to resemble the possible activities for a distinct stimulus condition (see Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an intuitive explanation provided in the text and illustrated in Figure 1a.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "de3c27c2-35da-46d0-ad50-96029d1ee4d9",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C73",
+      "claim": "Periodic tuning curves are more susceptible to catastrophic errors than single-peaked tuning curves.",
+      "claim_type": "EXPLICIT",
+      "source": "From the analysis presented above, periodic tuning curves have been suggested to be more susceptible to such errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the theoretical and simulation analyses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "40e68451-a840-4ac2-8695-363a87dc4fda",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C74",
+      "claim": "Adding ongoing activity increases the trial-by-trial variability without reshaping the stimulus-evoked parts of the tuning curves.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding ongoing activity does not reshape the stimulus-evoked parts of the tuning curves but only increases the trial-by-trial variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of how ongoing activity is modeled.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "a4fcaabf-81ad-450e-ac31-2fd3a15e81bb",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C75",
+      "claim": "Even ongoing activity as low as 2 sp/s can have a clearly visible effect on minimal decoding time.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of Figure 6 is that even ongoing activity as low as 2 sp/s can have a clearly visible effect on minimal decoding time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the simulation results in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "cf192bfa-a1c8-4262-8f33-ce4a292d9c8a",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C76",
+      "claim": "The readout layer for the single-peaked population required a shorter time to switch states than the periodic network in response to a step-like stimulus change.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of a step-like stimulus change, the readout layer for the single-peaked population required a shorter time to switch states than the periodic network (Figure 7c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the spiking network simulation results in Figure 7c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "ef92024a-3da0-4c83-9e7e-efda0ebb95ff",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C77",
+      "claim": "The shorter switching time for single-peaked populations is consistent with the hypothesis that single-peaked tuning curves have shorter minimal decoding times than periodic tuning curves.",
+      "claim_type": "EXPLICIT",
+      "source": "The shorter switching time is consistent with the hypothesis that single-peaked tuning curves have shorter minimal decoding times than periodic tuning curves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the spiking network results to the main hypothesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "23d3b23f-7bcb-4b04-9d19-8b68b41d15ae",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C78",
+      "claim": "SNNs with periodic tuning curves have larger sporadic fluctuations when tracking a continuously time-varying stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, averaging across trials shows that SNNs with periodic tuning curves have larger sporadic fluctuations (Figure 7d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the spiking network simulation results in Figure 7d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "33878f20-5d5d-43bb-a72e-bfa60d1df853",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C79",
+      "claim": "Decoding with periodic tuning curves has difficulties in accurately estimating the stimulus without causing sudden, brief periods of large errors.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that decoding with periodic tuning curves has difficulties in accurately estimating the stimulus without causing sudden, brief periods of large errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the spiking network simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "81bf3e78-6a99-45d7-ade0-476cbc82a841",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C80",
+      "claim": "Using single-peaked tuning curves results in significantly lower RMSE compared to periodic tuning curves for both step-like and time-varying stimuli in spiking networks.",
+      "claim_type": "EXPLICIT",
+      "source": "For the step-like change in stimulus condition, a significant difference in RMSE arises roughly 100 ms after the stimulus change (Figure 8a). For the time-varying stimulus, using single-peaked tuning curves also results in significantly lower RMSE compared to a population of periodic tuning curves (Figure 8b, RMSE calculated across the entire trial).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the statistical comparison of spiking network results in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "72c2f85c-4ee3-4c23-b7f1-7fd6ccdca474",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C81",
+      "claim": "Several studies have suggested that periodic tuning creates an unparalleled precise neural code by minimizing local errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have suggested that periodic tuning creates an unparalleled precise neural code by minimizing local errors (Sreenivasan and Fiete, 2011; Mathis et al., 2012; Wei et al., 2015; Malerba et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement summarizes prior theoretical work with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "f81bf523-40f0-472d-883d-86c5a8722e26",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C82",
+      "claim": "The theoretical arguments in favor of periodic tuning curves have mostly focused on local errors under the assumption that catastrophic errors are negligible.",
+      "claim_type": "EXPLICIT",
+      "source": "The theoretical arguments in favor of periodic tuning curves have mostly focused on local errors under the assumption that catastrophic errors are negligible (Sreenivasan and Fiete, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This characterizes the focus of prior theoretical work with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "f8c05b5f-6083-4ed5-9adc-e43a90a05bc5",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C83",
+      "claim": "The time required to produce signals without catastrophic errors will likely put fundamental constraints on any neural code, especially in early visual areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the time required to produce signals without catastrophic errors will likely put fundamental constraints on any neural code, especially in early visual areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a normative argument based on the analyses in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "5e00435f-2b60-4750-a2be-27b350ba82ee",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C84",
+      "claim": "The minimal decoding time tends to increase with increasing Fisher information in the case of independent Poissonian noise to each neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the minimal decoding time tends to increase with increasing Fisher information in the case of independent Poissonian noise to each neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the theoretical and simulation analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "3910629d-c25a-49bf-a07a-e83984c3196a",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C86",
+      "claim": "Single-peaked tuning curves are more robust to ongoing activity than periodic tuning curves.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, single-peaked tuning curves require shorter decoding times and are more robust to ongoing activity than periodic tuning curves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the simulation results with ongoing activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "d57617bf-45ed-4094-9565-121f0818a9be",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C87",
+      "claim": "Grid cells are organized into discrete modules where all tuning curves within a module share spatial period.",
+      "claim_type": "EXPLICIT",
+      "source": "In the following, we assume the tuning curves are organized into discrete modules, where all tuning curves within a module share spatial period (Figure 1b) mimicking the organization of grid cells (Stensola et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This modeling assumption is based on experimental observations of grid cells cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "efe689e5-0e69-4edf-bef1-9f1d88c9ae47",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C88",
+      "claim": "The maximum likelihood estimator is Bayesian optimal for uniformly distributed stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "From the perspective of a probabilistic decoder (Seung and Sompolinsky, 1993; Deneve et al., 1999; Ma et al., 2006), assuming that the stimulus is uniformly distributed, the maximum likelihood (ML) estimator is Bayesian optimal (and asymptotically efficient).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established result in statistical estimation theory with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "30cb85c4-b831-44d1-a12b-c95ce537b70d",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C93",
+      "claim": "Minimal decoding times were elevated across all populations when including independent ongoing activity at 2 spikes/s.",
+      "claim_type": "EXPLICIT",
+      "source": "When including independent ongoing (background) activity at 2 spikes/s to all neurons for the same populations as in Figure 4, minimal decoding times were elevated across all populations (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the simulation results in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "cabfdd6e-15e8-4479-ae66-beb72eeee5d3",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C95",
+      "claim": "Areas with ongoing activity are less suited for periodic tuning curves.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ongoing activity can have a substantial impact on the time required to produce reliable signals. Figure 6 suggests that areas with ongoing activity are less suited for periodic tuning curves.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is concluded from the simulation results in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "7d75be39-608d-4c12-a985-b6b41b7525e3",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C97",
+      "claim": "Adding ongoing activity increases the trial-by-trial variability, making systems already more susceptible to catastrophic errors even more negatively affected.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding ongoing activity does not reshape the stimulus-evoked parts of the tuning curves but only increases the trial-by-trial variability. Thus, by this reasoning, it is not surprising that the systems which are already more susceptible also are even more negatively affected by the increased variability induced by ongoing activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an intuitive explanation for the observed effects of ongoing activity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "055bb82e-bab1-44f7-b60b-a312e84c7784",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C98",
+      "claim": "The connection strength between the first and second layers in the spiking network depends on the difference in preferred stimulus conditions between the pre- and post-synaptic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The connection strength between the first and second layers depends on the difference in preferred stimulus conditions between the pre- and post-synaptic neurons. Such connectivity could, for example, be obtained by unsupervised Hebbian learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling choice for the spiking network simulations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "dc80f07f-7255-4d05-b226-942047464041",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C99",
+      "claim": "The shorter switching time in the single-peaked SNN is mainly due to some neurons in the first layer of the periodic network responding both before and after the step change.",
+      "claim_type": "EXPLICIT",
+      "source": "In these simulations, the difference is mainly due to some neurons in the first layer of the periodic network responding both before and after the step change. Thus, the correct readout neurons (after the change) must compensate for the hyper-polarization built up before the change and the continuing inhibitory input from the previously correct readout neurons (which still get excitatory inputs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the mechanism underlying the observed difference in switching times.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "0c7b2e09-c03b-4bdd-ad0b-4cf78db93f75",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C100",
+      "claim": "There are only minor differences in the population firing rates between the readout layers of single-peaked and periodic SNNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that there are only minor differences in the population firing rates between the readout layers, confirming that this is not a consequence of different excitation levels but rather of the structures of excitation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the spiking network simulation results shown in Figure 7c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "1a1d3ebe-3975-45b7-9636-8f0e06af747a",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C101",
+      "claim": "The continuously time-varying stimulus could be tracked well by both single-peaked and periodic SNNs.",
+      "claim_type": "EXPLICIT",
+      "source": "The continuously time-varying stimulus could be tracked well by both networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the spiking network simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "6d9d459e-d02d-4aec-8c7e-c5ab525e5e49",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C102",
+      "claim": "For the step-like change in stimulus condition, a significant difference in RMSE arises roughly 100 ms after the stimulus change between single-peaked and periodic SNNs.",
+      "claim_type": "EXPLICIT",
+      "source": "For the step-like change in stimulus condition, a significant difference in RMSE arises roughly 100 ms after the stimulus change (Figure 8a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the statistical comparison in Figure 8a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "b783f953-d9fe-4a99-b6ab-20459d02edf5",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C103",
+      "claim": "Catastrophic errors can also occur in systems with discrete tuning curves.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that these results might extend beyond the visual areas, too. Although this study focused on tuning curves encoding continuous variables, catastrophic errors can also occur in systems with discrete tuning curves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical extension of the concepts to discrete systems.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "2e86715c-b86b-419c-a5e3-114ff56ba9bf",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C104",
+      "claim": "Constraints on decoding time are likely important for any early sensory area.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensory stimuli can be fast-varying (or even discontinuous), and large errors can potentially harm the animal. Therefore, constraints on decoding time are likely important for any early sensory area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a normative argument based on the general properties of sensory processing.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "6a0704b0-896f-4f89-9c44-f0baef65e5b2",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C105",
+      "claim": "Periodic tuning curves are ideal for representing space, where the stimulus domain can be vast, and the change in position is constrained by the speed of movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, periodic tuning curves are ideal for representing space, where the stimulus domain can be vast, and the change in position is constrained by the speed of movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a normative argument about when periodic tuning is advantageous.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "8e8b9112-15d5-454a-b283-18ae54b07fd3",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C106",
+      "claim": "Rapid decoding of stimulus is crucial for the survival of the animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid decoding of stimulus is crucial for the survival of the animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the importance of fast processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "efa759e2-856a-4882-8b23-b21cce212572",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C107",
+      "claim": "Animals and humans can process sensory information at impressive speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, animals and humans can process sensory information at impressive speeds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation supported by the cited experimental work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "744889ec-da55-41f7-907a-eda142825c8f",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C108",
+      "claim": "Given constraints on low latency communication, it is crucial that each population can quickly produce a reliable signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Given constraints on low latency communication, it is crucial that each population can quickly produce a reliable signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a normative argument about the importance of fast, reliable signaling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "9f914324-7232-4f04-8d9b-12bf89933111",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C109",
+      "claim": "The fact that early visual areas exhibit ongoing activity and encode multi-dimensional stimuli further strengthens the relevance of the differences in minimal decoding time.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that early visual areas exhibit ongoing activity and encode multi-dimensional stimuli further strengthens the relevance of the differences in minimal decoding time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects the simulation results to the biological context.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "4593185a-9b5e-4763-8405-b2d62623dcf9",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C110",
+      "claim": "Minimum decoding time is an important attribute and should be considered while evaluating candidate neural codes.",
+      "claim_type": "EXPLICIT",
+      "source": "To conclude, our work highlights that minimum decoding time is an important attribute and should be considered while evaluating candidate neural codes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a normative conclusion from the manuscript's analyses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "86effaeb-195d-489c-b378-14cb4927bab7",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C111",
+      "claim": "Decoding of high-dimensional stimuli can be prohibitively slow with rate-based tuning curves.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis suggests that decoding of high-dimensional stimuli can be prohibitively slow with rate-based tuning curves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the theoretical and simulation analyses showing exponential growth of minimal decoding time with dimensionality.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "e76a3399-8af1-4c2e-b136-4174ac503ad7",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "claim_id": "C112",
+      "claim": "Experimental data on the representation of high-dimensional stimuli is rather scant as relatively low-dimensional stimuli are typically used in experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental data on the representation of high-dimensional stimuli is rather scant as relatively low-dimensional stimuli are typically used in experiments (e.g. oriented bars).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the current state of experimental neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cd476c7c-34e5-4b2d-b697-91cd5f5f6f22",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors demonstrate a fundamental speed-accuracy tradeoff in neural decoding: minimal decoding time increases with Fisher information, and single-peaked tuning curves require shorter decoding times than periodic tuning curves to eliminate catastrophic errors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C7, C21, C65, and C84 collectively establish the core finding through theoretical analysis (Equations 8-9), extensive simulations (Figures 3-4), and consistent results across multiple parameter regimes. The strong correlation between Fisher information and minimal decoding time (Figure 4d, R\u00b2\u22480.89-0.95) and systematic comparisons across tuning curve types provide robust support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "f036ec00-f9b5-406f-8e4d-3ef355308f19",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "At short decoding times, periodic tuning curves exhibit catastrophic errors spanning the entire stimulus range despite having lower MSE than single-peaked curves, due to stimulus ambiguity from trial-by-trial variability causing shifts in the joint likelihood function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20, C48, C57-C58, C61, C68, and C73 are well-supported by simulation data in Figures 1-3 and 5. Figure 2 directly demonstrates that periodic populations have lower MSE but still suffer rare large errors (insets in Figure 2b-c), and Figure 3f shows agreement between RMSE, outlier errors, and minimal decoding times. The theoretical explanation via likelihood function analysis provides mechanistic understanding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "00af5b6c-b22b-4b2e-8f32-3640691d1732",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The speed-accuracy tradeoff is reinforced by stimulus dimensionality: minimal decoding time grows roughly exponentially with the number of stimulus dimensions, though the required spike count may remain relatively constant for integer spatial frequencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C23, C62, C63, and C111 are supported by theoretical predictions (Equation 9) and simulation results (Figures 4c, 9d). The exponential scaling with dimensionality is predicted theoretically and confirmed empirically. Figure 4\u2014figure supplement 5 shows the spike count relationship, though the prediction about independence of spike count on dimensionality (C63) is stated as tentative ('might be') and applies only to integer spatial frequencies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "72bbc78f-e9e1-4e46-96c1-173ea56f184d",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Ongoing activity at even low levels (2 sp/s) substantially increases minimal decoding times across all populations, with periodic tuning curves being disproportionately affected, making areas with ongoing activity less suited for periodic tuning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C71, C75, C86, C93, C95, and C97 are well-supported by simulation results in Figure 6 and supplementary figures. The data show elevated minimal decoding times with ongoing activity, with the effect being stronger for smaller scale factors c (periodic tuning). The ratios of fitted regressors (K\u2081(b=2)/K\u2081(b=0) \u2248 1.69-1.72) quantify the amplified effect. The intuitive explanation (C97) follows logically from the increased variability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "339e0e1d-5973-48e1-9af4-97c8ddede15a",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Spiking neural network simulations validate the theoretical predictions: single-peaked populations switch states faster after step changes (~100ms difference) and track time-varying stimuli with fewer sporadic fluctuations compared to periodic populations, resulting in significantly lower RMSE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C76-C80, C99-C102 are supported by spiking network simulations in Figures 7-8. The step-change results (Figure 7c, 8a) show shorter switching times for single-peaked networks with statistical significance (p=9.0\u00d710\u207b\u2074 at one timepoint). The time-varying stimulus results (Figure 7d, 8b) show larger fluctuations for periodic networks with significant RMSE differences (p=4.3\u00d710\u207b\u2078). The mechanistic explanation (C99) about hyper-polarization is plausible but somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "cbec08b1-8cdc-4388-bb5c-56fbfbafb20b",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Tens of spikes across the population carry sufficient information to produce reliable stimulus estimates free of catastrophic errors, with single-peaked tuning curves requiring fewer spikes than periodic tuning curves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28 and C29 are supported by Figure 4\u2014figure supplement 5, which shows the mean spike counts required to remove catastrophic errors. The data demonstrate that tens of spikes are sufficient and that single-peaked populations generally require fewer spikes. This reframes the speed-accuracy tradeoff as an efficiency tradeoff, consistent with the broader findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "c4a14858-09f3-447d-9a6b-a9ee1f2259f7",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "MSE is an inadequate measure of reliability when catastrophic errors are present because it is insensitive to rare outliers; valid MSE comparisons between populations require first removing catastrophic errors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C50, and C51 are supported by the analyses in Figures 2 and 4-5, which demonstrate that populations can have similar or lower MSE while still exhibiting large outlier errors. This methodological insight is crucial for the paper's argument and is well-demonstrated through the empirical error distributions showing heavy tails for periodic populations despite lower MSE.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "64ea9b83-ec4a-4f14-b794-f091b3e0fb41",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors define two types of estimation errors: local errors (small errors depending on trial-by-trial variability and local tuning curve shapes) and catastrophic errors (large errors depending on global tuning curve shapes), with catastrophic errors identifiable by deviations from the Cram\u00e9r-Rao bound.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C11, and C43 establish the conceptual framework illustrated in Figure 1. These definitions are clearly stated, illustrated with examples, and form the foundation for the subsequent analyses. The identification method via deviations from the Cram\u00e9r-Rao bound is demonstrated in Figure 1c-e and used consistently throughout.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "00f46def-1a66-4d7f-9468-f1cd9ea48afc",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors argue that avoiding catastrophic errors should be the first criterion for evaluating rate-based neural codes, especially in early sensory areas where fast processing is crucial, and that minimal decoding time is an important attribute that should be considered when evaluating candidate neural codes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52, C83, C104, C108, C109, and C110 present normative arguments based on the empirical findings. These are logical inferences from the demonstrated speed-accuracy tradeoff and the biological constraints of sensory processing. While normative rather than empirical, they are well-justified by the data showing that catastrophic errors persist even when MSE appears acceptable, and by the cited evidence for fast sensory processing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "b013ad02-d913-4c5b-b945-ab19c34e9bdb",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "There is a clear tradeoff between minimizing RMSE over longer decoding times and removing outliers over shorter decoding times, and this difference cannot be explained by misalignment between tuning curve periodicity and stimulus domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66 and C22 are supported by Figures 4e-f showing the temporal evolution of RMSE and outlier errors, and Figure 4\u2014figure supplement 6 demonstrating that the effect persists for integer-peaked populations. The control analysis rules out a trivial explanation based on boundary effects, strengthening the main conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    },
+    {
+      "id": "cb7a01a4-4c04-42b3-ba68-e4f968476f73",
+      "content_id": "a9627eaa-1579-4418-90bc-288ca554ca35",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose that catastrophic errors can occur in discrete tuning systems and that periodic tuning curves are ideal for representing space where stimulus domains are vast and position changes are constrained by movement speed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C103 and C105 are speculative extensions beyond the scope of the presented work. C103 is a logical extension but lacks direct evidence. C105 is a reasonable hypothesis about when periodic tuning is advantageous, consistent with the existence of grid cells, but is not directly tested. These represent plausible implications rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:34:50.951472Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6f59dc08-c18b-48c7-9df3-2579b8281a94",
+      "result_id": "cd476c7c-34e5-4b2d-b697-91cd5f5f6f22"
+    },
+    {
+      "claim_id": "3e2c491f-2571-44de-843f-5722dee4f7fc",
+      "result_id": "cd476c7c-34e5-4b2d-b697-91cd5f5f6f22"
+    },
+    {
+      "claim_id": "bedd8c89-761a-49cc-98d9-6a4f190f0800",
+      "result_id": "cd476c7c-34e5-4b2d-b697-91cd5f5f6f22"
+    },
+    {
+      "claim_id": "7696a57e-d77e-4914-94d9-d533ee09c642",
+      "result_id": "cd476c7c-34e5-4b2d-b697-91cd5f5f6f22"
+    },
+    {
+      "claim_id": "29b07097-d521-4be3-bed1-df23b4a621c1",
+      "result_id": "cd476c7c-34e5-4b2d-b697-91cd5f5f6f22"
+    },
+    {
+      "claim_id": "5e00435f-2b60-4750-a2be-27b350ba82ee",
+      "result_id": "cd476c7c-34e5-4b2d-b697-91cd5f5f6f22"
+    },
+    {
+      "claim_id": "8e22bc77-4e5d-4299-a3e5-a4c128cf6d4d",
+      "result_id": "f036ec00-f9b5-406f-8e4d-3ef355308f19"
+    },
+    {
+      "claim_id": "74aad250-1045-49be-ad52-f3c72eb1887d",
+      "result_id": "f036ec00-f9b5-406f-8e4d-3ef355308f19"
+    },
+    {
+      "claim_id": "d4025154-90be-47a2-9fa2-aebe698943d8",
+      "result_id": "f036ec00-f9b5-406f-8e4d-3ef355308f19"
+    },
+    {
+      "claim_id": "429eaf48-107d-4cf0-afcd-8fed8e436e43",
+      "result_id": "f036ec00-f9b5-406f-8e4d-3ef355308f19"
+    },
+    {
+      "claim_id": "88abc13f-a626-456e-9e16-0c8583914576",
+      "result_id": "f036ec00-f9b5-406f-8e4d-3ef355308f19"
+    },
+    {
+      "claim_id": "eb840b45-0481-4bd3-a9c7-d47c1ff91e5c",
+      "result_id": "f036ec00-f9b5-406f-8e4d-3ef355308f19"
+    },
+    {
+      "claim_id": "af846a1c-5c19-43e1-b0e1-5e3ebe6d49d2",
+      "result_id": "f036ec00-f9b5-406f-8e4d-3ef355308f19"
+    },
+    {
+      "claim_id": "857ae05c-175f-41b7-832d-b425b39a4ae8",
+      "result_id": "f036ec00-f9b5-406f-8e4d-3ef355308f19"
+    },
+    {
+      "claim_id": "de3c27c2-35da-46d0-ad50-96029d1ee4d9",
+      "result_id": "f036ec00-f9b5-406f-8e4d-3ef355308f19"
+    },
+    {
+      "claim_id": "2fc1bee1-3bf5-4ba6-8f99-14d176b78513",
+      "result_id": "00af5b6c-b22b-4b2e-8f32-3640691d1732"
+    },
+    {
+      "claim_id": "418dbde1-c31f-418e-aa0f-af736c95d52c",
+      "result_id": "00af5b6c-b22b-4b2e-8f32-3640691d1732"
+    },
+    {
+      "claim_id": "f335a58e-d14d-4ed2-8442-ee347c1787c0",
+      "result_id": "00af5b6c-b22b-4b2e-8f32-3640691d1732"
+    },
+    {
+      "claim_id": "2f5d8092-dc6b-47a8-b98f-d765d3f9af37",
+      "result_id": "00af5b6c-b22b-4b2e-8f32-3640691d1732"
+    },
+    {
+      "claim_id": "86effaeb-195d-489c-b378-14cb4927bab7",
+      "result_id": "00af5b6c-b22b-4b2e-8f32-3640691d1732"
+    },
+    {
+      "claim_id": "f10e51a6-6fc6-469d-aa17-b39e5af41418",
+      "result_id": "72bbc78f-e9e1-4e46-96c1-173ea56f184d"
+    },
+    {
+      "claim_id": "57308d78-9131-4bcc-9462-d7b467a5c3dc",
+      "result_id": "72bbc78f-e9e1-4e46-96c1-173ea56f184d"
+    },
+    {
+      "claim_id": "a4fcaabf-81ad-450e-ac31-2fd3a15e81bb",
+      "result_id": "72bbc78f-e9e1-4e46-96c1-173ea56f184d"
+    },
+    {
+      "claim_id": "3910629d-c25a-49bf-a07a-e83984c3196a",
+      "result_id": "72bbc78f-e9e1-4e46-96c1-173ea56f184d"
+    },
+    {
+      "claim_id": "30cb85c4-b831-44d1-a12b-c95ce537b70d",
+      "result_id": "72bbc78f-e9e1-4e46-96c1-173ea56f184d"
+    },
+    {
+      "claim_id": "cabfdd6e-15e8-4479-ae66-beb72eeee5d3",
+      "result_id": "72bbc78f-e9e1-4e46-96c1-173ea56f184d"
+    },
+    {
+      "claim_id": "7d75be39-608d-4c12-a985-b6b41b7525e3",
+      "result_id": "72bbc78f-e9e1-4e46-96c1-173ea56f184d"
+    },
+    {
+      "claim_id": "3d438e90-0bee-4981-bce0-f991bfdab9c0",
+      "result_id": "339e0e1d-5973-48e1-9af4-97c8ddede15a"
+    },
+    {
+      "claim_id": "cf192bfa-a1c8-4262-8f33-ce4a292d9c8a",
+      "result_id": "339e0e1d-5973-48e1-9af4-97c8ddede15a"
+    },
+    {
+      "claim_id": "ef92024a-3da0-4c83-9e7e-efda0ebb95ff",
+      "result_id": "339e0e1d-5973-48e1-9af4-97c8ddede15a"
+    },
+    {
+      "claim_id": "23d3b23f-7bcb-4b04-9d19-8b68b41d15ae",
+      "result_id": "339e0e1d-5973-48e1-9af4-97c8ddede15a"
+    },
+    {
+      "claim_id": "33878f20-5d5d-43bb-a72e-bfa60d1df853",
+      "result_id": "339e0e1d-5973-48e1-9af4-97c8ddede15a"
+    },
+    {
+      "claim_id": "81bf3e78-6a99-45d7-ade0-476cbc82a841",
+      "result_id": "339e0e1d-5973-48e1-9af4-97c8ddede15a"
+    },
+    {
+      "claim_id": "dc80f07f-7255-4d05-b226-942047464041",
+      "result_id": "339e0e1d-5973-48e1-9af4-97c8ddede15a"
+    },
+    {
+      "claim_id": "0c7b2e09-c03b-4bdd-ad0b-4cf78db93f75",
+      "result_id": "339e0e1d-5973-48e1-9af4-97c8ddede15a"
+    },
+    {
+      "claim_id": "1a1d3ebe-3975-45b7-9636-8f0e06af747a",
+      "result_id": "339e0e1d-5973-48e1-9af4-97c8ddede15a"
+    },
+    {
+      "claim_id": "6d9d459e-d02d-4aec-8c7e-c5ab525e5e49",
+      "result_id": "339e0e1d-5973-48e1-9af4-97c8ddede15a"
+    },
+    {
+      "claim_id": "b07d67b8-a2eb-4eeb-bdba-50f86197a96d",
+      "result_id": "cbec08b1-8cdc-4388-bb5c-56fbfbafb20b"
+    },
+    {
+      "claim_id": "8bb80ca6-54b6-4331-873a-7ed0ff83efc3",
+      "result_id": "cbec08b1-8cdc-4388-bb5c-56fbfbafb20b"
+    },
+    {
+      "claim_id": "994efe48-9507-4520-8889-67d529f731d7",
+      "result_id": "c4a14858-09f3-447d-9a6b-a9ee1f2259f7"
+    },
+    {
+      "claim_id": "15822e0e-7dd7-4ecd-b9ad-88acfc96c5ed",
+      "result_id": "c4a14858-09f3-447d-9a6b-a9ee1f2259f7"
+    },
+    {
+      "claim_id": "50463e77-6b20-4c3c-8be7-88b550ef5e17",
+      "result_id": "c4a14858-09f3-447d-9a6b-a9ee1f2259f7"
+    },
+    {
+      "claim_id": "2fcf12a9-fc1d-42b7-b68b-f3a46c00f2f9",
+      "result_id": "64ea9b83-ec4a-4f14-b794-f091b3e0fb41"
+    },
+    {
+      "claim_id": "a7b096f5-eef8-4972-95d4-510275a69594",
+      "result_id": "64ea9b83-ec4a-4f14-b794-f091b3e0fb41"
+    },
+    {
+      "claim_id": "f6b70a6f-9697-4a8d-80df-8bc38a55e8a2",
+      "result_id": "64ea9b83-ec4a-4f14-b794-f091b3e0fb41"
+    },
+    {
+      "claim_id": "ffdd86e8-f9fe-4121-a2c6-c489a0046245",
+      "result_id": "00f46def-1a66-4d7f-9468-f1cd9ea48afc"
+    },
+    {
+      "claim_id": "f8c05b5f-6083-4ed5-9adc-e43a90a05bc5",
+      "result_id": "00f46def-1a66-4d7f-9468-f1cd9ea48afc"
+    },
+    {
+      "claim_id": "2e86715c-b86b-419c-a5e3-114ff56ba9bf",
+      "result_id": "00f46def-1a66-4d7f-9468-f1cd9ea48afc"
+    },
+    {
+      "claim_id": "744889ec-da55-41f7-907a-eda142825c8f",
+      "result_id": "00f46def-1a66-4d7f-9468-f1cd9ea48afc"
+    },
+    {
+      "claim_id": "9f914324-7232-4f04-8d9b-12bf89933111",
+      "result_id": "00f46def-1a66-4d7f-9468-f1cd9ea48afc"
+    },
+    {
+      "claim_id": "4593185a-9b5e-4763-8405-b2d62623dcf9",
+      "result_id": "00f46def-1a66-4d7f-9468-f1cd9ea48afc"
+    },
+    {
+      "claim_id": "3bc7e43d-58de-4a92-a830-941ba8356e62",
+      "result_id": "b013ad02-d913-4c5b-b945-ab19c34e9bdb"
+    },
+    {
+      "claim_id": "a190b7ae-f0e3-4f77-adeb-362227e995c5",
+      "result_id": "b013ad02-d913-4c5b-b945-ab19c34e9bdb"
+    },
+    {
+      "claim_id": "b783f953-d9fe-4a99-b6ab-20459d02edf5",
+      "result_id": "cb7a01a4-4c04-42b3-ba68-e4f968476f73"
+    },
+    {
+      "claim_id": "6a0704b0-896f-4f89-9c44-f0baef65e5b2",
+      "result_id": "cb7a01a4-4c04-42b3-ba68-e4f968476f73"
+    }
+  ],
+  "comparisons": []
+}

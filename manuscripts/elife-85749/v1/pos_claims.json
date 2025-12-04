@@ -1,0 +1,1458 @@
+[
+  {
+    "query": "The reconstruction of complete microbial metabolic pathways using 'omics data from environmental samples remains challenging.",
+    "matched_segment": "The reconstruction of complete microbial metabolic pathways using 'omics data from environmental samples remains challenging.",
+    "start": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 125
+    },
+    "len": 125
+  },
+  {
+    "query": "Computational pipelines for pathway reconstruction that utilize machine learning methods to predict the presence or absence of KEGG modules in incomplete genomes are lacking.",
+    "matched_segment": "Computational pipelines for pathway reconstruction that utilize machine learning methods to predict the presence or absence of KEGG modules in incomplete genomes are lacking.",
+    "start": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 126
+    },
+    "stop": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 300
+    },
+    "len": 174
+  },
+  {
+    "query": "Here, we present MetaPathPredict, a software tool that incorporates machine learning models to predict the presence of complete KEGG modules within bacterial genomic datasets.",
+    "matched_segment": "Here, we present MetaPathPredict, a software tool that incorporates machine learning models to predict the presence of complete KEGG modules within bacterial genomic datasets.",
+    "start": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 301
+    },
+    "stop": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 476
+    },
+    "len": 175
+  },
+  {
+    "query": "Using gene annotation data and information from the KEGG module database, MetaPathPredict employs deep learning models to predict the presence of KEGG modules in a genome.",
+    "matched_segment": "Using gene annotation data and information from the KEGG module database, MetaPathPredict employs deep learning models to predict the presence of KEGG modules in a genome.",
+    "start": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 477
+    },
+    "stop": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 648
+    },
+    "len": 171
+  },
+  {
+    "query": "MetaPathPredict can be used as a command line tool or as a Python module, and both options are designed to be run locally or on a compute cluster.",
+    "matched_segment": "MetaPathPredict can be used as a command line tool or as a Python module, and both options are designed to be run locally or on a compute cluster.",
+    "start": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 649
+    },
+    "stop": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 795
+    },
+    "len": 146
+  },
+  {
+    "query": "Benchmarks show that MetaPathPredict makes robust predictions of KEGG module presence within highly incomplete genomes.",
+    "matched_segment": "Benchmarks show that MetaPathPredict makes robust predictions of KEGG module presence within highly incomplete genomes.",
+    "start": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 796
+    },
+    "stop": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 915
+    },
+    "len": 119
+  },
+  {
+    "query": "Microorganisms play a key role in all major biogeochemical cycles on Earth.",
+    "matched_segment": "Microorganisms play a key role in all major biogeochemical cycles on Earth.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[1]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[1]",
+      "char_offset": 75
+    },
+    "len": 75
+  },
+  {
+    "query": "Accurate and more complete identification of microbial metabolic pathways within genomic data is crucial to understanding their potential activities.",
+    "matched_segment": "Accurate and more complete identification of microbial metabolic pathways within genomic data is crucial to understanding their potential activities.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[1]",
+      "char_offset": 76
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[1]",
+      "char_offset": 225
+    },
+    "len": 149
+  },
+  {
+    "query": "Environmental genomes that are recovered from high-throughput sequencing samples vary in their degree of completeness due to numerous factors including limited coverage of low-abundance microbes, composition-based coverage biases, insertion-deletion errors, and substitution errors (Browne et al., 2020).",
+    "matched_segment": "Environmental genomes that are recovered from high-throughput sequencing samples vary in their degree of completeness due to numerous factors including limited coverage of low-abundance microbes, composition-based coverage biases, insertion-deletion errors, and substitution errors (Browne et al., 2020).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 629
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 933
+    },
+    "len": 304
+  },
+  {
+    "query": "Enzymes encoded in genomes are also missed due to limitations in protein annotation methods, that is, undiscovered protein families may be undetected by traditional homology-based methods.",
+    "matched_segment": "Enzymes encoded in genomes are also missed due to limitations in protein annotation methods, that is, undiscovered protein families may be undetected by traditional homology-based methods.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 934
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 1122
+    },
+    "len": 188
+  },
+  {
+    "query": "Sequencing biases, novel protein families, and incomplete gene and protein annotation databases lead to missing, ambiguous, or inaccurate gene annotations that create incomplete metabolic networks in recovered environmental genomes.",
+    "matched_segment": "Sequencing biases, novel protein families, and incomplete gene and protein annotation databases lead to missing, ambiguous, or inaccurate gene annotations that create incomplete metabolic networks in recovered environmental genomes.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 232
+    },
+    "len": 232
+  },
+  {
+    "query": "Existing algorithms for this metabolic network 'gap filling' largely fall into two categories of approaches: those based on network topology, such as the method utilized by Gapseq (Zimmermann et al., 2021)",
+    "matched_segment": "Existing algorithms for this metabolic network 'gap filling' largely fall into two categories of approaches: those based on network topology, such as the method utilized by Gapseq (Zimmermann et al., 2021)",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 549
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 754
+    },
+    "len": 205
+  },
+  {
+    "query": "those that utilize pre-defined KEGG module cutoffs, such as those used by METABOLIC (Zhou et al., 2022).",
+    "matched_segment": "those that utilize pre-defined KEGG module cutoffs, such as those used by METABOLIC (Zhou et al., 2022).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 760
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 864
+    },
+    "len": 104
+  },
+  {
+    "query": "Network topology and pathway gene presence/absence cutoffs, however, can lead to underestimation of pathways that are present, particularly in highly incomplete genomes.",
+    "matched_segment": "Network topology and pathway gene presence/absence cutoffs, however, can lead to underestimation of pathways that are present, particularly in highly incomplete genomes.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 865
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 1034
+    },
+    "len": 169
+  },
+  {
+    "query": "Parsimony-based algorithms such as MinPath detect gaps in a metabolic network and identify the minimum number of modifications to the network that can be made to activate those reactions (Ye and Doak, 2009)",
+    "matched_segment": "Parsimony-based algorithms such as MinPath detect gaps in a metabolic network and identify the minimum number of modifications to the network that can be made to activate those reactions (Ye and Doak, 2009)",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 1035
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 1241
+    },
+    "len": 206
+  },
+  {
+    "query": "its conservative approach, however, can lead to underestimation of the metabolic pathways present in a sample.",
+    "matched_segment": "its conservative approach, however, can lead to underestimation of the metabolic pathways present in a sample.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 1242
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 1352
+    },
+    "len": 110
+  },
+  {
+    "query": "KEMET (Pal\u00f9 et al., 2022) can detect gaps in metabolic pathways by searching unannotated genes in a genome with custom Hidden Markov Models (HMMs) created based on the genome's taxonomy.",
+    "matched_segment": "KEMET (Pal\u00f9 et al., 2022) can detect gaps in metabolic pathways by searching unannotated genes in a genome with custom Hidden Markov Models (HMMs) created based on the genome's taxonomy.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 1353
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 1539
+    },
+    "len": 186
+  },
+  {
+    "query": "This approach, however, is limited by the genome taxonomies available in the KEGG GENES database.",
+    "matched_segment": "This approach, however, is limited by the genome taxonomies available in the KEGG GENES database.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 1540
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 1637
+    },
+    "len": 97
+  },
+  {
+    "query": "Other modern tools, such as DRAM (Shaffer et al., 2020), provide annotations for metagenomic sequences but do not closely tie these to metabolic pathways.",
+    "matched_segment": "Other modern tools, such as DRAM (Shaffer et al., 2020), provide annotations for metagenomic sequences but do not closely tie these to metabolic pathways.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 1638
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 1792
+    },
+    "len": 154
+  },
+  {
+    "query": "Flux-balance analysis (e.g. Escher-FBA; Rowe et al., 2018) utilizes genome-scale metabolic models of organisms and requires experimental growth data for model parameterization",
+    "matched_segment": "Flux-balance analysis (e.g. Escher-FBA; Rowe et al., 2018) utilizes genome-scale metabolic models of organisms and requires experimental growth data for model parameterization",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 1793
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 1968
+    },
+    "len": 175
+  },
+  {
+    "query": "it is not easily applied to incomplete genome data, and the additional required experimental measurements may prohibit application in many use cases.",
+    "matched_segment": "it is not easily applied to incomplete genome data, and the additional required experimental measurements may prohibit application in many use cases.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 1970
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[3]",
+      "char_offset": 2119
+    },
+    "len": 149
+  },
+  {
+    "query": "One such example is a tool called Traitar, which utilizes Support Vector Machines (SVMs) to predict lifestyle and pathogenic traits in prokaryotes based on gene family abundance profiles (Weimann et al., 2016).",
+    "matched_segment": "One such example is a tool called Traitar, which utilizes Support Vector Machines (SVMs) to predict lifestyle and pathogenic traits in prokaryotes based on gene family abundance profiles (Weimann et al., 2016).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[4]",
+      "char_offset": 156
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[4]",
+      "char_offset": 366
+    },
+    "len": 210
+  },
+  {
+    "query": "Other recent approaches have used machine learning approaches to train models using eukaryote MAG and transcriptome data to classify trophic mode (autotroph, mixotroph, or heterotroph) based on gene family abundance profiles (Lambert et al., 2022; Alexander et al., 2021).",
+    "matched_segment": "Other recent approaches have used machine learning approaches to train models using eukaryote MAG and transcriptome data to classify trophic mode (autotroph, mixotroph, or heterotroph) based on gene family abundance profiles (Lambert et al., 2022; Alexander et al., 2021).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[4]",
+      "char_offset": 367
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[4]",
+      "char_offset": 639
+    },
+    "len": 272
+  },
+  {
+    "query": "To our knowledge, there are no existing tools that predict the presence/absence of KEGG metabolic modules via machine learning models trained on gene features of high-quality genomes.",
+    "matched_segment": "To our knowledge, there are no existing tools that predict the presence/absence of KEGG metabolic modules via machine learning models trained on gene features of high-quality genomes.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[4]",
+      "char_offset": 640
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[4]",
+      "char_offset": 823
+    },
+    "len": 183
+  },
+  {
+    "query": "Here, we present 'MetaPathPredict', an open-source tool for metabolic pathway prediction based on a deep learning classification framework.",
+    "matched_segment": "Here, we present 'MetaPathPredict', an open-source tool for metabolic pathway prediction based on a deep learning classification framework.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[5]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[5]",
+      "char_offset": 139
+    },
+    "len": 139
+  },
+  {
+    "query": "The models underlying MetaPathPredict contain metabolic reaction and pathway information from taxonomically diverse bacterial isolate genomes and MAGs found in the NCBI RefSeq (O'Leary et al., 2016) and Genome Taxonomy (GTDB, Parks et al., 2022) databases.",
+    "matched_segment": "The models underlying MetaPathPredict contain metabolic reaction and pathway information from taxonomically diverse bacterial isolate genomes and MAGs found in the NCBI RefSeq (O'Leary et al., 2016) and Genome Taxonomy (GTDB, Parks et al., 2022) databases.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[6]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[6]",
+      "char_offset": 256
+    },
+    "len": 256
+  },
+  {
+    "query": "KEGG modules are functional units of metabolic pathways composed of sets of ordered reaction steps.",
+    "matched_segment": "KEGG modules are functional units of metabolic pathways composed of sets of ordered reaction steps.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[6]",
+      "char_offset": 491
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[6]",
+      "char_offset": 590
+    },
+    "len": 99
+  },
+  {
+    "query": "MetaPathPredict is designed to run on the command-line locally or on a computing cluster and is available as a Python module on GitHub (https://github.com/d-mcgrath/MetaPathPredict).",
+    "matched_segment": "MetaPathPredict is designed to run on the command-line locally or on a computing cluster and is available as a Python module on GitHub (https://github.com/d-mcgrath/MetaPathPredict).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[6]",
+      "char_offset": 822
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[6]",
+      "char_offset": 1004
+    },
+    "len": 182
+  },
+  {
+    "query": "The tool accepts as input gene annotations of one or more (possibly-incomplete) genomes, with associated KEGG ortholog (KO) gene identifiers.",
+    "matched_segment": "The tool accepts as input gene annotations of one or more (possibly-incomplete) genomes, with associated KEGG ortholog (KO) gene identifiers.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[7]",
+      "char_offset": 77
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[7]",
+      "char_offset": 218
+    },
+    "len": 141
+  },
+  {
+    "query": "MetaPathPredict first reconstructs both complete and incomplete KEGG metabolic modules, then predicts whether incomplete modules are in fact present.",
+    "matched_segment": "MetaPathPredict first reconstructs both complete and incomplete KEGG metabolic modules, then predicts whether incomplete modules are in fact present.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[7]",
+      "char_offset": 383
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[7]",
+      "char_offset": 532
+    },
+    "len": 149
+  },
+  {
+    "query": "Input annotations can come from tools such as KofamScan (Aramaki et al., 2020), DRAM, blastKOALA (Kanehisa et al., 2016), ghostKOALA (Kanehisa et al., 2016), or a custom list of KO identifier gene annotations.",
+    "matched_segment": "Input annotations can come from tools such as KofamScan (Aramaki et al., 2020), DRAM, blastKOALA (Kanehisa et al., 2016), ghostKOALA (Kanehisa et al., 2016), or a custom list of KO identifier gene annotations.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[7]",
+      "char_offset": 533
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[7]",
+      "char_offset": 742
+    },
+    "len": 209
+  },
+  {
+    "query": "MetaPathPredict classification models produced accurate results on held-out test genome annotation datasets even when the data were highly incomplete.",
+    "matched_segment": "MetaPathPredict classification models produced accurate results on held-out test genome annotation datasets even when the data were highly incomplete.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[7]",
+      "char_offset": 743
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[7]",
+      "char_offset": 893
+    },
+    "len": 150
+  },
+  {
+    "query": "One model was trained to classify the presence or absence of 96 KEGG modules that were present in \u226510% and\u226490% of training genomes.",
+    "matched_segment": "One model was trained to classify the presence or absence of 96 KEGG modules that were present in \u226510% and\u226490% of training genomes.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[8]",
+      "char_offset": 171
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[8]",
+      "char_offset": 302
+    },
+    "len": 131
+  },
+  {
+    "query": "The second model classifies 94 modules with an imbalanced profile of presence/absence (i.e. were present in <10% or>90% of training genomes).",
+    "matched_segment": "The second model classifies 94 modules with an imbalanced profile of presence/absence (i.e. were present in <10% or>90% of training genomes).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[8]",
+      "char_offset": 303
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[8]",
+      "char_offset": 444
+    },
+    "len": 141
+  },
+  {
+    "query": "False positive predictions were rare in all tests, while false negatives increased when predictions were made with highly incomplete gene annotation information, as would be expected.",
+    "matched_segment": "False positive predictions were rare in all tests, while false negatives increased when predictions were made with highly incomplete gene annotation information, as would be expected.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[8]",
+      "char_offset": 445
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[8]",
+      "char_offset": 628
+    },
+    "len": 183
+  },
+  {
+    "query": "False positive predictions were rare in all tests, while false negatives increased when predictions were made with highly incomplete gene annotation information, as would be expected.",
+    "matched_segment": "False positive predictions were rare in all tests, while false negatives increased when predictions were made with highly incomplete gene annotation information, as would be expected.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[8]",
+      "char_offset": 445
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[8]",
+      "char_offset": 628
+    },
+    "len": 183
+  },
+  {
+    "query": "It was trained on both complete and down-sampled genomes for this task.",
+    "matched_segment": "It was trained on both complete and down-sampled genomes for this task.",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[1]",
+      "char_offset": 215
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[1]",
+      "char_offset": 286
+    },
+    "len": 71
+  },
+  {
+    "query": "Complete genomes containing the genes required to non-redundantly complete a KEGG module were labelled as containing the module, otherwise the module was labelled as absent.",
+    "matched_segment": "Complete genomes containing the genes required to non-redundantly complete a KEGG module were labelled as containing the module, otherwise the module was labelled as absent.",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[1]",
+      "char_offset": 287
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[1]",
+      "char_offset": 460
+    },
+    "len": 173
+  },
+  {
+    "query": "To create down-sampled genomes for training, protein annotations were randomly removed form complete genomes in increasing increments while still retaining KEGG module class labels (from those complete genomes).",
+    "matched_segment": "To create down-sampled genomes for training, protein annotations were randomly removed form complete genomes in increasing increments while still retaining KEGG module class labels (from those complete genomes).",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[1]",
+      "char_offset": 461
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[1]",
+      "char_offset": 672
+    },
+    "len": 211
+  },
+  {
+    "query": "MetaPathPredict's exhibited superior performance to other recently developed metabolic pathway reconstruction and prediction approaches.",
+    "matched_segment": "MetaPathPredict's exhibited superior performance to other recently developed metabolic pathway reconstruction and prediction approaches.",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[2]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[2]",
+      "char_offset": 136
+    },
+    "len": 136
+  },
+  {
+    "query": "Its performance metrics on held-out test datasets suggest its models predict with high fidelity when at least 30% of gene annotations are recovered from a reconstructed genome (Figure 2).",
+    "matched_segment": "Its performance metrics on held-out test datasets suggest its models predict with high fidelity when at least 30% of gene annotations are recovered from a reconstructed genome (Figure 2).",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[2]",
+      "char_offset": 137
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[2]",
+      "char_offset": 324
+    },
+    "len": 187
+  },
+  {
+    "query": "We further benchmarked MetaPathPredict against custom presence/absence classification rules, and existing gap-filling tools METABOLIC and Gapseq.",
+    "matched_segment": "We further benchmarked MetaPathPredict against custom presence/absence classification rules, and existing gap-filling tools METABOLIC and Gapseq.",
+    "start": {
+      "xpath": "/article/body/sec[2]/p[2]",
+      "char_offset": 531
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/p[2]",
+      "char_offset": 676
+    },
+    "len": 145
+  },
+  {
+    "query": "The evaluation was performed on test datasets comprised of isolate and metagenome-assembled genomes from GTDB and NCBI (30,596 total genomes; see Methods).",
+    "matched_segment": "The evaluation was performed on test datasets comprised of isolate and metagenome-assembled genomes from GTDB and NCBI (30,596 total genomes; see Methods).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[1]",
+      "char_offset": 197
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[1]",
+      "char_offset": 352
+    },
+    "len": 155
+  },
+  {
+    "query": "When evaluating with the same sets of randomly down-sampled gene annotations, we found that each competing method showed poorer performance than MetaPathPredict (Figure 2).",
+    "matched_segment": "When evaluating with the same sets of randomly down-sampled gene annotations, we found that each competing method showed poorer performance than MetaPathPredict (Figure 2).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[1]",
+      "char_offset": 353
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[1]",
+      "char_offset": 525
+    },
+    "len": 172
+  },
+  {
+    "query": "The results of this naive approach (Figure 2) show that the relative completeness of a KEGG module alone is not a robust classification strategy.",
+    "matched_segment": "The results of this naive approach (Figure 2) show that the relative completeness of a KEGG module alone is not a robust classification strategy.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[1]",
+      "char_offset": 1129
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[1]",
+      "char_offset": 1274
+    },
+    "len": 145
+  },
+  {
+    "query": "The results of this naive approach (Figure 2) suggest that the presence of rare protein annotations or genes unique to a certain KEGG module is not always a strong indicator of the presence of a module in a genome.",
+    "matched_segment": "The results of this naive approach (Figure 2) suggest that the presence of rare protein annotations or genes unique to a certain KEGG module is not always a strong indicator of the presence of a module in a genome.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[1]",
+      "char_offset": 1561
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[1]",
+      "char_offset": 1775
+    },
+    "len": 214
+  },
+  {
+    "query": "Ultimately, the performance of these naive classifiers indicate that MetaPathPredict's models have the advantage of incorporating information from genes outside of KEGG modules.",
+    "matched_segment": "Ultimately, the performance of these naive classifiers indicate that MetaPathPredict's models have the advantage of incorporating information from genes outside of KEGG modules.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[1]",
+      "char_offset": 1776
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[1]",
+      "char_offset": 1953
+    },
+    "len": 177
+  },
+  {
+    "query": "Of these, the XGBoost, neural network (single hidden layer) and XGBoost/neural network (single hidden layer) stacked ensemble architectures were the next-best performing models and are included in Figure 2.",
+    "matched_segment": "Of these, the XGBoost, neural network (single hidden layer) and XGBoost/neural network (single hidden layer) stacked ensemble architectures were the next-best performing models and are included in Figure 2.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[1]",
+      "char_offset": 2044
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[1]",
+      "char_offset": 2250
+    },
+    "len": 206
+  },
+  {
+    "query": "MetaPathPredict's deep learning strategy produced the best observed performance.",
+    "matched_segment": "MetaPathPredict's deep learning strategy produced the best observed performance.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[2]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[2]",
+      "char_offset": 80
+    },
+    "len": 80
+  },
+  {
+    "query": "Mean F1 score (a summary metric of the predictive performance) of the models was 0.96 when predicting on test datasets in which 30\u201390% of gene annotations had been retained.",
+    "matched_segment": "Mean F1 score (a summary metric of the predictive performance) of the models was 0.96 when predicting on test datasets in which 30\u201390% of gene annotations had been retained.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[2]",
+      "char_offset": 81
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[2]",
+      "char_offset": 254
+    },
+    "len": 173
+  },
+  {
+    "query": "MetaPathPredict rarely made false positive predictions based on data from highly incomplete gene annotation sets; the average precision of the models was consistently above 0.94 for all held-out test sets.",
+    "matched_segment": "MetaPathPredict rarely made false positive predictions based on data from highly incomplete gene annotation sets; the average precision of the models was consistently above 0.94 for all held-out test sets.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[2]",
+      "char_offset": 255
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[2]",
+      "char_offset": 460
+    },
+    "len": 205
+  },
+  {
+    "query": "The recall of MetaPathPredict's models was greater than 0.96 on average for test datasets containing at least 30% of the complete gene annotation data.",
+    "matched_segment": "The recall of MetaPathPredict's models was greater than 0.96 on average for test datasets containing at least 30% of the complete gene annotation data.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[2]",
+      "char_offset": 536
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[2]",
+      "char_offset": 687
+    },
+    "len": 151
+  },
+  {
+    "query": "The mean recall decreased to 0.89 and the mean precision decreased to 0.86 on genomes containing only 20% or less of the complete gene annotation data.",
+    "matched_segment": "The mean recall decreased to 0.89 and the mean precision decreased to 0.86 on genomes containing only 20% or less of the complete gene annotation data.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[2]",
+      "char_offset": 688
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[2]",
+      "char_offset": 839
+    },
+    "len": 151
+  },
+  {
+    "query": "The models' ability to achieve notably high recall even with significantly reduced sampling rates implies that it compensates for limited sequence availability by becoming more assertive in labeling a module as 'present' at the cost of decreased precision.",
+    "matched_segment": "The models' ability to achieve notably high recall even with significantly reduced sampling rates implies that it compensates for limited sequence availability by becoming more assertive in labeling a module as 'present' at the cost of decreased precision.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[2]",
+      "char_offset": 840
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[1]/p[2]",
+      "char_offset": 1096
+    },
+    "len": 256
+  },
+  {
+    "query": "MetaPathPredict was further tested on gene annotations from a set of 40 high-quality metagenome-assembled genomes from the Genomes from Earth's Microbiomes (GEM; Nayfach et al., 2021) genome repository.",
+    "matched_segment": "MetaPathPredict was further tested on gene annotations from a set of 40 high-quality metagenome-assembled genomes from the Genomes from Earth's Microbiomes (GEM; Nayfach et al., 2021) genome repository.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[2]/p",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[2]/p",
+      "char_offset": 202
+    },
+    "len": 202
+  },
+  {
+    "query": "The MAGs selected from the repository had an estimated completeness of 100 and estimated contamination of 0, MIMAG quality score of 'High Quality'.",
+    "matched_segment": "The MAGs selected from the repository had an estimated completeness of 100 and estimated contamination of 0, MIMAG quality score of 'High Quality'.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[2]/p",
+      "char_offset": 367
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[2]/p",
+      "char_offset": 514
+    },
+    "len": 147
+  },
+  {
+    "query": "The genomes belonged to 7 taxonomic phyla and were recovered from 9 different environments, primarily from human-associated and built environment metagenomes (see Appendix 1\u2014figure 1 for GEM genome taxonomic distributions and environmental sources).",
+    "matched_segment": "The genomes belonged to 7 taxonomic phyla and were recovered from 9 different environments, primarily from human-associated and built environment metagenomes (see Appendix 1\u2014figure 1 for GEM genome taxonomic distributions and environmental sources).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[2]/p",
+      "char_offset": 515
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[2]/p",
+      "char_offset": 765
+    },
+    "len": 250
+  },
+  {
+    "query": "Overall, results were comparable to MetaPathPredict's performance on the GTDB/NCBI benchmark.",
+    "matched_segment": "Overall, results were comparable to MetaPathPredict's performance on the GTDB/NCBI benchmark.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[2]/p",
+      "char_offset": 1001
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[2]/p",
+      "char_offset": 1094
+    },
+    "len": 93
+  },
+  {
+    "query": "The models excelled at predicting the presence or absence of KEGG modules in genomes when at least 40% of gene annotations were randomly retained.",
+    "matched_segment": "The models excelled at predicting the presence or absence of KEGG modules in genomes when at least 40% of gene annotations were randomly retained.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[2]/p",
+      "char_offset": 1095
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[2]/p",
+      "char_offset": 1241
+    },
+    "len": 146
+  },
+  {
+    "query": "Predictions were less reliable though still accurate when 30% or less gene annotation data was retained.",
+    "matched_segment": "Predictions were less reliable though still accurate when 30% or less gene annotation data was retained.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[2]/p",
+      "char_offset": 1242
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[2]/p",
+      "char_offset": 1346
+    },
+    "len": 104
+  },
+  {
+    "query": "As an example, using only 3% of reads (equivalent to an average of 1.5 x coverage of the genomes), roughly 86% of the genomes' proteins were assembled",
+    "matched_segment": "As an example, using only 3% of reads (equivalent to an average of 1.5 x coverage of the genomes), roughly 86% of the genomes' proteins were assembled",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[1]",
+      "char_offset": 480
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[1]",
+      "char_offset": 630
+    },
+    "len": 150
+  },
+  {
+    "query": "meanwhile a reduction to 1% of reads caused assembly to recover ~40% of proteins.",
+    "matched_segment": "meanwhile a reduction to 1% of reads caused assembly to recover ~40% of proteins.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[1]",
+      "char_offset": 632
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[1]",
+      "char_offset": 713
+    },
+    "len": 81
+  },
+  {
+    "query": "MetaPathPredict's performance on this test set resembled protein annotation random sampling results (Figure 4a, Figure 4b), although with greater loss in precision for down-sampling <3%.",
+    "matched_segment": "MetaPathPredict's performance on this test set resembled protein annotation random sampling results (Figure 4a, Figure 4b), although with greater loss in precision for down-sampling <3%.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[1]",
+      "char_offset": 714
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[1]",
+      "char_offset": 900
+    },
+    "len": 186
+  },
+  {
+    "query": "MetaPathPredict had an average F1 score for all 190 modules of 0.96 on the second held-out test set observations that had an average estimated genome completeness of at least 30%.",
+    "matched_segment": "MetaPathPredict had an average F1 score for all 190 modules of 0.96 on the second held-out test set observations that had an average estimated genome completeness of at least 30%.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[2]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[2]",
+      "char_offset": 179
+    },
+    "len": 179
+  },
+  {
+    "query": "METABOLIC showed much poorer recall at all levels of read sampling.",
+    "matched_segment": "METABOLIC showed much poorer recall at all levels of read sampling.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[3]",
+      "char_offset": 294
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[3]",
+      "char_offset": 361
+    },
+    "len": 67
+  },
+  {
+    "query": "MetaPathPredict outperformed predictions made by Gapseq, particularly on genomes with low read sampling prior to assembly.",
+    "matched_segment": "MetaPathPredict outperformed predictions made by Gapseq, particularly on genomes with low read sampling prior to assembly.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[4]",
+      "char_offset": 485
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[3]/p[4]",
+      "char_offset": 607
+    },
+    "len": 122
+  },
+  {
+    "query": "SHAP values in the first model (trained to classify modules present in \u226510% and\u226490% of training genomes) indicated that 30 of the top 100 most important features (genes) influencing predictions were direct components of KEGG modules predicted by this model (Supplementary file 1b).",
+    "matched_segment": "SHAP values in the first model (trained to classify modules present in \u226510% and\u226490% of training genomes) indicated that 30 of the top 100 most important features (genes) influencing predictions were direct components of KEGG modules predicted by this model (Supplementary file 1b).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[1]",
+      "char_offset": 534
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[1]",
+      "char_offset": 815
+    },
+    "len": 281
+  },
+  {
+    "query": "In the second model (classifies modules present in <10% or>90% of training genomes), 37 of the 100 most influential features were part of KEGG modules this model was trained to predict.",
+    "matched_segment": "In the second model (classifies modules present in <10% or>90% of training genomes), 37 of the 100 most influential features were part of KEGG modules this model was trained to predict.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[1]",
+      "char_offset": 816
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[1]",
+      "char_offset": 1001
+    },
+    "len": 185
+  },
+  {
+    "query": "The two models share 14 most important features out of the top 50 that are not part of KEGG modules.",
+    "matched_segment": "The two models share 14 most important features out of the top 50 that are not part of KEGG modules.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[2]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[2]",
+      "char_offset": 100
+    },
+    "len": 100
+  },
+  {
+    "query": "We examined these top features and found that there were a number of proteins annotated as sensors or transcriptional regulators (Supplementary file 1b).",
+    "matched_segment": "We examined these top features and found that there were a number of proteins annotated as sensors or transcriptional regulators (Supplementary file 1b).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[2]",
+      "char_offset": 101
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[2]",
+      "char_offset": 254
+    },
+    "len": 153
+  },
+  {
+    "query": "Also, we noted a number of transporters annotated as top features in both models",
+    "matched_segment": "Also, we noted a number of transporters annotated as top features in both models",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[2]",
+      "char_offset": 255
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[2]",
+      "char_offset": 335
+    },
+    "len": 80
+  },
+  {
+    "query": "and, interestingly, factors related to pathogenesis like toxins and mobile elements.",
+    "matched_segment": "and, interestingly, factors related to pathogenesis like toxins and mobile elements.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[2]",
+      "char_offset": 336
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[2]",
+      "char_offset": 420
+    },
+    "len": 84
+  },
+  {
+    "query": "However, it is clear that MetaPathPredict's predictions are in part influenced by select genes present in KEGG modules, and also to a larger extent by genes not directly participating in KEGG module reactions.",
+    "matched_segment": "However, it is clear that MetaPathPredict's predictions are in part influenced by select genes present in KEGG modules, and also to a larger extent by genes not directly participating in KEGG module reactions.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[2]",
+      "char_offset": 534
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[4]/p[2]",
+      "char_offset": 743
+    },
+    "len": 209
+  },
+  {
+    "query": "MetaPathPredict also provides gene gap-filling options by listing putative KO gene annotations that could fill in missing gaps in predicted modules.",
+    "matched_segment": "MetaPathPredict also provides gene gap-filling options by listing putative KO gene annotations that could fill in missing gaps in predicted modules.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[1]",
+      "char_offset": 584
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[1]",
+      "char_offset": 732
+    },
+    "len": 148
+  },
+  {
+    "query": "The performance metrics of MetaPathPredict on NCBI/GTDB and GEM test datasets validated the use of deep learning models to predict the presence/absence of KEGG metabolic modules with high fidelity on sparse to near-complete bacterial genomes.",
+    "matched_segment": "The performance metrics of MetaPathPredict on NCBI/GTDB and GEM test datasets validated the use of deep learning models to predict the presence/absence of KEGG metabolic modules with high fidelity on sparse to near-complete bacterial genomes.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[2]",
+      "char_offset": 152
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[2]",
+      "char_offset": 394
+    },
+    "len": 242
+  },
+  {
+    "query": "MetaPathPredict's multi-label classification models consistently made predictions with high precision and recall on simulated and real genomes using gene annotation and sequence read downsampling methods.",
+    "matched_segment": "MetaPathPredict's multi-label classification models consistently made predictions with high precision and recall on simulated and real genomes using gene annotation and sequence read downsampling methods.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[2]",
+      "char_offset": 395
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[2]",
+      "char_offset": 599
+    },
+    "len": 204
+  },
+  {
+    "query": "The predictive power of the deep learning models was most limited when predicting on 10%\u201330% of protein annotations, and when the mean estimated completeness of reconstructed genomes from down-sampled reads was below 30%.",
+    "matched_segment": "The predictive power of the deep learning models was most limited when predicting on 10%\u201330% of protein annotations, and when the mean estimated completeness of reconstructed genomes from down-sampled reads was below 30%.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[2]",
+      "char_offset": 600
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[2]",
+      "char_offset": 821
+    },
+    "len": 221
+  },
+  {
+    "query": "We suggest that optimal performance with MetaPathPredict can be achieved when at least 40% of a genome has been recovered in an input bacterial gene annotation dataset.",
+    "matched_segment": "We suggest that optimal performance with MetaPathPredict can be achieved when at least 40% of a genome has been recovered in an input bacterial gene annotation dataset.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[2]",
+      "char_offset": 822
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[2]",
+      "char_offset": 990
+    },
+    "len": 168
+  },
+  {
+    "query": "Based on our performance tests of MetaPathPredict, the recall of its models was robust (mean >0.9) even when protein sets were down-sampled to 10%.",
+    "matched_segment": "Based on our performance tests of MetaPathPredict, the recall of its models was robust (mean >0.9) even when protein sets were down-sampled to 10%.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[3]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[3]",
+      "char_offset": 147
+    },
+    "len": 147
+  },
+  {
+    "query": "However, MetaPathPredict also surprisingly shows a decrease in precision (i.e. an increase in false calls of module presence).",
+    "matched_segment": "However, MetaPathPredict also surprisingly shows a decrease in precision (i.e. an increase in false calls of module presence).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[3]",
+      "char_offset": 148
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[3]",
+      "char_offset": 274
+    },
+    "len": 126
+  },
+  {
+    "query": "This, combined with surprisingly high recall rates at such low sampling rates, suggests that the model directly compensates for low general sequence availability by increasing aggressiveness in calling a module 'present'.",
+    "matched_segment": "This, combined with surprisingly high recall rates at such low sampling rates, suggests that the model directly compensates for low general sequence availability by increasing aggressiveness in calling a module 'present'.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[3]",
+      "char_offset": 275
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[3]",
+      "char_offset": 496
+    },
+    "len": 221
+  },
+  {
+    "query": "This over-exuberant positive class prediction problem arose in our analyses only when <30% of gene annotation data was retained.",
+    "matched_segment": "This over-exuberant positive class prediction problem arose in our analyses only when <30% of gene annotation data was retained.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[3]",
+      "char_offset": 497
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[3]",
+      "char_offset": 625
+    },
+    "len": 128
+  },
+  {
+    "query": "However, the presence of sensing proteins (e.g. iron sensing and chemotaxis), pathogen proteins (e.g. toxins and lysins), and transporters in these lists may indicate the contribution of lifestyle and environmental factors in predicting presence or absence of individual modules.",
+    "matched_segment": "However, the presence of sensing proteins (e.g. iron sensing and chemotaxis), pathogen proteins (e.g. toxins and lysins), and transporters in these lists may indicate the contribution of lifestyle and environmental factors in predicting presence or absence of individual modules.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[4]",
+      "char_offset": 187
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[4]",
+      "char_offset": 466
+    },
+    "len": 279
+  },
+  {
+    "query": "Additionally, transcriptional regulators may be important due to their outsized influence on the expression of many genes (and thus modules) in each organism.",
+    "matched_segment": "Additionally, transcriptional regulators may be important due to their outsized influence on the expression of many genes (and thus modules) in each organism.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[4]",
+      "char_offset": 467
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[4]",
+      "char_offset": 625
+    },
+    "len": 158
+  },
+  {
+    "query": "Perhaps the most intriguing finding was that components of mobile elements (transposases) were found to be important features of both models. This could indicate that insertional elements are being used by the model to indicate, for example, evolutionary lineage, which could be used to inform predictions of KEGG module composition.",
+    "matched_segment": "Perhaps the most intriguing finding was that components of mobile elements (transposases) were found to be important features of both models. This could indicate that insertional elements are being used by the model to indicate, for example, evolutionary lineage, which could be used to inform predictions of KEGG module composition.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[4]",
+      "char_offset": 626
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[4]",
+      "char_offset": 959
+    },
+    "len": 333
+  },
+  {
+    "query": "MetaPathPredict facilitates more complete and accurate reconstruction of the metabolic potential encoded within bacterial genomes from a diverse array of environments and will enhance the ability to infer what metabolisms they are capable of, and/or how they may respond to perturbations.",
+    "matched_segment": "MetaPathPredict facilitates more complete and accurate reconstruction of the metabolic potential encoded within bacterial genomes from a diverse array of environments and will enhance the ability to infer what metabolisms they are capable of, and/or how they may respond to perturbations.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[5]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[5]/p[5]",
+      "char_offset": 288
+    },
+    "len": 288
+  },
+  {
+    "query": "The NCBI RefSeq (Release 205) database metadata file was downloaded and filtered to retain only the information for all bacterial genomes classified as 'Complete genome'.",
+    "matched_segment": "The NCBI RefSeq (Release 205) database metadata file was downloaded and filtered to retain only the information for all bacterial genomes classified as 'Complete genome'.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[1]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[1]",
+      "char_offset": 170
+    },
+    "len": 170
+  },
+  {
+    "query": "This resulted in 17,491 complete NCBI genomes.",
+    "matched_segment": "This resulted in 17,491 complete NCBI genomes.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[1]",
+      "char_offset": 589
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[1]",
+      "char_offset": 635
+    },
+    "len": 46
+  },
+  {
+    "query": "The GTDB bacterial metadata file for release 95 was downloaded and filtered to keep the information for all genomes with an estimated completeness greater than 99, an estimated contamination of 0, and a MIMAG (Bowers et al., 2017) quality score of \"High Quality\".",
+    "matched_segment": "The GTDB bacterial metadata file for release 95 was downloaded and filtered to keep the information for all genomes with an estimated completeness greater than 99, an estimated contamination of 0, and a MIMAG (Bowers et al., 2017) quality score of \"High Quality\".",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[2]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[2]",
+      "char_offset": 263
+    },
+    "len": 263
+  },
+  {
+    "query": "A total of 30,760 non-redundant bacterial genomes from the two database metadata files were downloaded using the ncbi-genome-download command line tool (Blin, 2023).",
+    "matched_segment": "A total of 30,760 non-redundant bacterial genomes from the two database metadata files were downloaded using the ncbi-genome-download command line tool (Blin, 2023).",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[2]",
+      "char_offset": 264
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[2]",
+      "char_offset": 429
+    },
+    "len": 165
+  },
+  {
+    "query": "The RefSeq genomes (17,491 total) were downloaded from the RefSeq FTP server, and the GTDB genomes (13,105 total) were downloaded from the GenBank FTP server (Appendix 1\u2014figure 2).",
+    "matched_segment": "The RefSeq genomes (17,491 total) were downloaded from the RefSeq FTP server, and the GTDB genomes (13,105 total) were downloaded from the GenBank FTP server (Appendix 1\u2014figure 2).",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[2]",
+      "char_offset": 430
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[2]",
+      "char_offset": 611
+    },
+    "len": 181
+  },
+  {
+    "query": "Genes were called using Prodigal (Hyatt et al., 2010)",
+    "matched_segment": "Genes were called using Prodigal (Hyatt et al., 2010)",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[2]",
+      "char_offset": 612
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[2]",
+      "char_offset": 665
+    },
+    "len": 53
+  },
+  {
+    "query": "and the KofamScan command line tool (Aramaki et al., 2020) was used to generate gene annotations (in KO gene identifier format) for all of the genomes using the KOfam set of HMMs available for download from the KEGG database (Kanehisa, 2002).",
+    "matched_segment": "and the KofamScan command line tool (Aramaki et al., 2020) was used to generate gene annotations (in KO gene identifier format) for all of the genomes using the KOfam set of HMMs available for download from the KEGG database (Kanehisa, 2002).",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[2]",
+      "char_offset": 667
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[2]",
+      "char_offset": 909
+    },
+    "len": 242
+  },
+  {
+    "query": "KofamScan-derived annotations had to surpass their HMM's adaptive scoring threshold to be included in the training dataset.",
+    "matched_segment": "KofamScan-derived annotations had to surpass their HMM's adaptive scoring threshold to be included in the training dataset.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[2]",
+      "char_offset": 910
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[1]/p[2]",
+      "char_offset": 1033
+    },
+    "len": 123
+  },
+  {
+    "query": "The full dataset of simulated incomplete genomes (n=305,960) was split so that 75% of genomes were used for training and the remaining 25% as a test dataset.",
+    "matched_segment": "The full dataset of simulated incomplete genomes (n=305,960) was split so that 75% of genomes were used for training and the remaining 25% as a test dataset.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[1]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[1]",
+      "char_offset": 157
+    },
+    "len": 157
+  },
+  {
+    "query": "The training dataset was further split into 80% training/20% validation test sets.",
+    "matched_segment": "The training dataset was further split into 80% training/20% validation test sets.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[1]",
+      "char_offset": 158
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[1]",
+      "char_offset": 240
+    },
+    "len": 82
+  },
+  {
+    "query": "Each observation in the train/test/validation datasets contained a vector of length 8,853 that consisted of KO gene identifier (protein family) presence/absence indicated by ones and zeroes, respectively.",
+    "matched_segment": "Each observation in the train/test/validation datasets contained a vector of length 8,853 that consisted of KO gene identifier (protein family) presence/absence indicated by ones and zeroes, respectively.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[1]",
+      "char_offset": 241
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[1]",
+      "char_offset": 445
+    },
+    "len": 204
+  },
+  {
+    "query": "The training datasets had a size of 305,960 observations, and the test datasets each contained 76,490 observations.",
+    "matched_segment": "The training datasets had a size of 305,960 observations, and the test datasets each contained 76,490 observations.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[2]",
+      "char_offset": 527
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[2]",
+      "char_offset": 642
+    },
+    "len": 115
+  },
+  {
+    "query": "The percent of observations with a positive class (a complete KEGG module 'present' in the gene annotations) in the training and test datasets varied, with a mean of 26.2% (Appendix 1\u2014figure 3).",
+    "matched_segment": "The percent of observations with a positive class (a complete KEGG module 'present' in the gene annotations) in the training and test datasets varied, with a mean of 26.2% (Appendix 1\u2014figure 3).",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[2]",
+      "char_offset": 643
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[2]",
+      "char_offset": 838
+    },
+    "len": 195
+  },
+  {
+    "query": "The 'unroll_module_definition' function from the Anvi'o module was utilized with downloaded KEGG module data to create a list of all possible KEGG Ortholog combinations to complete each module.",
+    "matched_segment": "The 'unroll_module_definition' function from the Anvi'o module was utilized with downloaded KEGG module data to create a list of all possible KEGG Ortholog combinations to complete each module.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[3]",
+      "char_offset": 381
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[3]",
+      "char_offset": 574
+    },
+    "len": 193
+  },
+  {
+    "query": "For the module to be categorized as present, at least one possible combination of every step of the module had to be present in a genome, otherwise it was designated as absent.",
+    "matched_segment": "For the module to be categorized as present, at least one possible combination of every step of the module had to be present in a genome, otherwise it was designated as absent.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[3]",
+      "char_offset": 575
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[3]",
+      "char_offset": 751
+    },
+    "len": 176
+  },
+  {
+    "query": "Two models were constructed for 190 KEGG modules for which at least 306 (0.1%) of the complete genomes (n=30,596) contained the module genes, due to an improvement in performance when two models were trained (one model for the more balanced labels, one for highly imbalanced labels) instead of one.",
+    "matched_segment": "Two models were constructed for 190 KEGG modules for which at least 306 (0.1%) of the complete genomes (n=30,596) contained the module genes, due to an improvement in performance when two models were trained (one model for the more balanced labels, one for highly imbalanced labels) instead of one.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[3]",
+      "char_offset": 752
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[3]",
+      "char_offset": 1050
+    },
+    "len": 298
+  },
+  {
+    "query": "MetaPathPredict is built on the Keras deep learning library (Sattler et al., 2015).",
+    "matched_segment": "MetaPathPredict is built on the Keras deep learning library (Sattler et al., 2015).",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[4]",
+      "char_offset": 233
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[4]",
+      "char_offset": 316
+    },
+    "len": 83
+  },
+  {
+    "query": "L2-regularization was utilized to adjust hidden unit weights during training, with a learning rate of 0.001.",
+    "matched_segment": "L2-regularization was utilized to adjust hidden unit weights during training, with a learning rate of 0.001.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[4]",
+      "char_offset": 317
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[4]",
+      "char_offset": 425
+    },
+    "len": 108
+  },
+  {
+    "query": "A deep learning architecture consisting of one input layer, five hidden layers, and one output layer were used as the machine learning architectures in MetaPathPredict's models.",
+    "matched_segment": "A deep learning architecture consisting of one input layer, five hidden layers, and one output layer were used as the machine learning architectures in MetaPathPredict's models.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[4]",
+      "char_offset": 573
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[4]",
+      "char_offset": 750
+    },
+    "len": 177
+  },
+  {
+    "query": "The input layer consisted of the presence/absence vector of KO gene identifiers (n=8,853), and the hidden layers each contained 2048 hidden units and were fully connected.",
+    "matched_segment": "The input layer consisted of the presence/absence vector of KO gene identifiers (n=8,853), and the hidden layers each contained 2048 hidden units and were fully connected.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[4]",
+      "char_offset": 751
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[4]",
+      "char_offset": 922
+    },
+    "len": 171
+  },
+  {
+    "query": "The output layer of the first and second models contained 94 and 96 nodes for a total of 190 module presence/absence predictions when prediction outputs from both are combined.",
+    "matched_segment": "The output layer of the first and second models contained 94 and 96 nodes for a total of 190 module presence/absence predictions when prediction outputs from both are combined.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[4]",
+      "char_offset": 923
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[4]",
+      "char_offset": 1099
+    },
+    "len": 176
+  },
+  {
+    "query": "A multi-label stratified sampling method (Sechidis et al., 2011) was used to generate 75% train/25% test dataset splits that each contained data observations with preserved proportions of positive ('KEGG module present') and negative ('KEGG module absent') classes that were present in the genome dataset",
+    "matched_segment": "A multi-label stratified sampling method (Sechidis et al., 2011) was used to generate 75% train/25% test dataset splits that each contained data observations with preserved proportions of positive ('KEGG module present') and negative ('KEGG module absent') classes that were present in the genome dataset",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[5]",
+      "char_offset": 185
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[5]",
+      "char_offset": 489
+    },
+    "len": 304
+  },
+  {
+    "query": "The binary cross entropy loss function was used in tandem with the Adaptive Moment Estimation (Adam) optimizer.",
+    "matched_segment": "The binary cross entropy loss function was used in tandem with the Adaptive Moment Estimation (Adam) optimizer.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[6]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[6]",
+      "char_offset": 111
+    },
+    "len": 111
+  },
+  {
+    "query": "The input and hidden layers utilized the rectified linear unit (ReLu) activation function; the output layer contained a sigmoid activation function.",
+    "matched_segment": "The input and hidden layers utilized the rectified linear unit (ReLu) activation function; the output layer contained a sigmoid activation function.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[6]",
+      "char_offset": 112
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[6]",
+      "char_offset": 260
+    },
+    "len": 148
+  },
+  {
+    "query": "Dropout (Srivastava, 2014) was applied to 10% of edges at all layers except the final layer to avoid overfitting the training data.",
+    "matched_segment": "Dropout (Srivastava, 2014) was applied to 10% of edges at all layers except the final layer to avoid overfitting the training data.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[6]",
+      "char_offset": 261
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[6]",
+      "char_offset": 392
+    },
+    "len": 131
+  },
+  {
+    "query": "The input and hidden layers utilized the 'he_uniform' layer weight initializer, and each of these layers contained 2,048 hidden units.",
+    "matched_segment": "The input and hidden layers utilized the 'he_uniform' layer weight initializer, and each of these layers contained 2,048 hidden units.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[6]",
+      "char_offset": 393
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[2]/p[6]",
+      "char_offset": 527
+    },
+    "len": 134
+  }
+]

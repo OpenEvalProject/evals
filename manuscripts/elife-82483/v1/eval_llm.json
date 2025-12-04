@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C30",
+      "C31",
+      "C155",
+      "C156"
+    ],
+    "result": "Mec1 and Rad53 regulate the subcellular localization of 159 proteins during MMS-induced replication stress, with targets distributed across 12 of 15 subcellular compartments, indicating a global protein localization response not restricted to the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C29, C30, C31 provide converging quantitative and qualitative evidence from high-throughput imaging screens showing that checkpoint kinases regulate 159/284 proteins (56%) across multiple compartments. The k-means clustering analysis (C154, C155, C156) and computational quantification methods (C152, C153) provide robust support for this global regulatory role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Rad53 regulates the localization of 52 proteins independently of its known activator Mec1, and in some cases independently of Tel1 and mediator proteins Rad9 and Mrc1, as demonstrated by Rad54 focus formation analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C37, C50-C55 provide consistent evidence from multiple genetic backgrounds (mec1\u0394, mec1\u0394tel1\u0394, rad9\u0394mrc1-AQ) showing Rad53-dependent but Mec1-independent protein relocalization. The Rad54 focus formation data (C37, C50-C51) with appropriate controls for cell cycle effects (C41-C42) and protein abundance (C46-C48) strongly support this unexpected finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C65",
+      "C67",
+      "C69",
+      "C70",
+      "C72",
+      "C75"
+    ],
+    "result": "Rad53 is phosphorylated and active following MMS exposure in cells lacking Mec1 and Tel1, with phosphorylation detected at 10 sites including the autophosphorylation site T358 and the activation-relevant site S480.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C65, C67, C70, C72, C75 are supported by mass spectrometry data showing specific phosphorylation sites in mec1\u0394tel1\u0394 cells. The detection of T358 phosphorylation (C70-C72), a known autophosphorylation site, provides strong evidence for Rad53 activation. The functional validation through T354A/T358A mutations (C73-C74) further supports the biological relevance of these phosphorylation events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C79",
+      "C80",
+      "C81",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The noncanonical mode of Rad53 activation depends partly on the retrograde signaling transcription factor Rtg3, which responds to DNA replication stress, promotes resistance to replication stress, functions within the RAD53 pathway parallel to MEC1, and promotes S phase progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C79-C81, C83-C86, C92-C95 provide multiple lines of evidence: (1) Rtg3 nuclear translocation in response to MMS (C79-C81), (2) genetic interaction data showing rtg3\u0394 functions in the same pathway as rad53\u0394 but parallel to mec1\u0394 (C84-C86), (3) S-phase progression defects in rtg3\u0394 (C90), and (4) identification of RTG genes in the kinase screen (C140-C141). The convergence of genetic, cell biological, and functional data strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C123"
+    ],
+    "result": "Rtg3 contributes to Rad53 phosphorylation status, with six sites showing at least 2-fold reduction in rtg3\u0394mec1\u0394 compared to mec1\u0394, including activation-relevant sites S480 and S489 in the SCD2 domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98, C100, C123 are supported by quantitative SILAC-MS data showing specific phosphorylation site changes. The identification of functionally important sites (S480, S489 in SCD2 domain) provides mechanistic insight. However, the lack of change at T358 (noted in text) suggests complexity in the mechanism that warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C102",
+      "C136"
+    ],
+    "result": "There are biologically important modes of Rad53 protein kinase activation that respond to replication stress and operate in parallel to Mec1 and Tel1, representing a previously uncharacterized mode of checkpoint signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C102, C136 represent the overarching conclusion supported by the convergence of multiple result groups: Mec1-independent Rad53 activity (C4, C37, C50-C55), Rad53 phosphorylation in mec1\u0394tel1\u0394 cells (C5, C65, C67, C70), and Rtg3's role in this pathway (C6, C79-C86, C96-C100). The integration of genetic, biochemical, and cell biological evidence across multiple experimental approaches provides strong support for this major conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Rad53 kinase activity is necessary for Rad54 re-localization in response to DNA replication stress, whereas neither FHA domain plays a substantial role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by domain mutation analysis showing that only kinase domain inactivation (RAD53KD) reduces Rad54 relocalization to rad53\u0394 levels, while FHA1 and FHA2 mutations have minimal effects. This provides clear evidence for the requirement of kinase activity independent of canonical mediator binding through FHA2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "A genetic screen identified RTG2, RTG3, and MKS1 as the top three genes affecting Rad54 focus formation, and validation experiments showed that RTG genes and RAD53 function within the same pathway to regulate the localization of Rad54 and at least five additional proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C151 describe a systematic genetic screen and validation experiments. The screen identified 31 genes (C140), with RTG pathway genes as top hits (C141). Validation through double mutant analysis (C144-C147) and testing of additional proteins (C148-C151) provides strong support. The epistasis analysis showing rtg2\u0394rad53\u0394 and rtg3\u0394rad53\u0394 do not have lower Rad54 foci than rad53\u0394 alone (C146) is particularly compelling evidence for pathway placement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Mutation of T358 and T354 to alanine (RAD53TA mutant) sensitized cells to MMS and reduced Rad54 re-localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by experimental data showing functional consequences of mutating the autophosphorylation sites. This provides validation that the phosphorylation sites detected by mass spectrometry are functionally relevant for both MMS resistance and Rad54 relocalization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Rad54 levels increase during MMS treatment and are lower in checkpoint mutants than in control strains, but Rad54 focus formation is not strictly linked to Rad54 abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by immunoblot data showing Rad54 protein levels. The key finding that Rad54 levels are similar in mec1\u0394tel1\u0394sml1\u0394 and rad53\u0394sml1\u0394 cells (C46) despite different focus formation patterns (C50-C51) provides strong evidence that relocalization is not simply due to abundance changes. This is an important control for interpreting the localization data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The decrease in Rad54 foci in rad53\u0394 is clear at 2 hr, when both rad53\u0394 and wild-type cells display similar proportions of large-budded cells, indicating that the decrease is unlikely due to cell cycle effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by budding index data (referenced in Figure 2C) showing similar cell cycle distributions at the 2 hr timepoint. This is an important control ruling out cell cycle progression differences as an explanation for the observed localization phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "mec1\u0394 and rad53\u0394 cells exhibited checkpoint defects progressing faster than wild-type cells and reaching 2C DNA content by 60 min, whereas wild-type cells remain in S phase with less than 2C DNA contents, and rtg3\u0394 cells progressed through S phase even more slowly than wild type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by flow cytometry data showing DNA content over time. The observation that rtg3\u0394 progresses more slowly than wild type (C90) is consistent with RTG3's role in promoting S phase progression (C95) and replication of large replicons (C91, C132).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Deletion of either checkpoint kinase can result in proteins exhibiting increased re-localization, particularly in the absence of DNA replication stress, with 96 proteins showing increased re-localization at t=0 in checkpoint kinase mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by the high-throughput imaging data showing increased spontaneous relocalization in checkpoint mutants. The explanation that this is due to increased endogenous replication stress in checkpoint mutants (C34) is well-supported by extensive prior literature and is consistent with the observation that repair proteins are among those showing increased relocalization (C35).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The high-throughput imaging analysis involved imaging cells over four hours following MMS treatment, with normalization to median cellular GFP signal to minimize protein abundance effects, and k-means clustering converged on seven clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 describe the experimental and computational methods. These are well-documented methodological details that are essential for interpreting the results. The normalization approach (C153) is particularly important for distinguishing relocalization from abundance changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Independent lines of evidence from prior literature support that Rad53 exhibits genome stability functions independently of Mec1 and Tel1, including slower S-phase progression in rad53\u0394 than mec1\u0394, Mrc1-independent recruitment to replication forks and gene promoters, genetically distinct roles in fork stabilization, and Mec1-independent histone degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 cite multiple prior studies supporting Mec1-independent Rad53 functions. These citations provide important context and independent validation for the current study's findings. The authors appropriately note that Mec1-independent function was not explicitly noted in some prior work (C106), highlighting the novelty of their interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Mec1-independent activation of Rad53 occurs in a similar manner to canonical activation, with phosphorylation at Ser480 promoting oligomerization and phosphorylation at Thr358 indicating dimerization and trans-autophosphorylation, potentially through local concentration of Rad53.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C114 are supported by the phosphorylation data (C67, C70), but claims C115-C118 about the mechanism involving local concentration are speculative (C115, C118 are explicitly labeled as speculation). While the speculation is reasonable and supported by prior work showing concentration-dependent activation in bacteria (C116), direct evidence for this mechanism in vivo is lacking. Additional experiments would be needed to test this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C122",
+      "C124",
+      "C134",
+      "C135"
+    ],
+    "result": "RTG signaling is involved in genome maintenance, with Rtg3 influencing Rad53 phosphorylation status and function, suggesting that RTG3 functions in the completion of DNA replication during replication stress at least in part through Rad53 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122, C124, C134, C135 integrate the findings about Rtg3's role in Rad53 phosphorylation (C96-C100, C123) with its effects on cellular fitness (C83-C86) and S-phase progression (C90, C95). The conclusion that RTG3 functions through Rad53 activation is well-supported, though the phrase 'at least in part' appropriately acknowledges that other mechanisms may also contribute.",
+    "result_type": "MAJOR"
+  }
+]

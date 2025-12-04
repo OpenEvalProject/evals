@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Phantasus is a user-friendly web application that integrates a JavaScript-based interactive heatmap interface with an R-based back-end, providing streamlined access to over 96,000 public gene expression datasets and supporting complete analysis workflows from data loading through differential expression and pathway analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C21-C28 collectively describe Phantasus's core functionality and architecture. The integration of JavaScript front-end with R back-end (C4, C21, C25) is demonstrated through the architectural description and Figure 1. The claim of 96,000+ datasets (C2, C23) is substantiated by detailed breakdowns in Figure 2 and text (C57-C133). The complete workflow capabilities (C5, C22, C28) are supported by descriptions of implemented features (C29-C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C48",
+      "C49",
+      "C75"
+    ],
+    "result": "Phantasus is accessible online at https://alserglab.wustl.edu/phantasus, can be installed locally from Bioconductor or as a Docker image, and is open source under MIT license with code available at https://github.com/ctlab/phantasus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C48-C49, C75 describe deployment and access options. These are straightforward factual statements about URLs, installation methods, and licensing that are consistently stated throughout the manuscript. The availability of documentation (C75) and multiple deployment options demonstrates accessibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Phantasus provides streamlined access to 96,649 GEO datasets (49,846 microarray and 46,803 RNA-seq), with expression values and gene identifiers readily available. Microarray data comes from GEO directly, while RNA-seq data is sourced from ARCHS4 (35,088 datasets) and DEE2 (11,715 additional datasets).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C67 and C119-C133 provide detailed quantitative breakdowns of dataset availability. These numbers are internally consistent (e.g., 49,846 + 46,803 = 96,649) and supported by Figure 2, which shows the hierarchical breakdown of dataset sources and support levels. The preprocessing of DEE2 data (C67, C104) is explicitly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Phantasus supports multiple data loading methods: GEO datasets by identifier (with microarray data from GEO directly and RNA-seq from third-party databases), user files in GCT/TSV/CSV/XLSX formats (including gzip-compressed), and curated datasets from the home page.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 describe data loading capabilities. These are straightforward descriptions of implemented features that are consistent with the overall architecture (C25, C94-C98). The distinction between microarray and RNA-seq data sources (C30-C31) aligns with the detailed dataset availability information (C57-C67).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C44"
+    ],
+    "result": "Phantasus provides analysis capabilities including probe-to-gene aggregation, PCA, k-means and hierarchical clustering, differential expression analysis using limma or DESeq2, and gene set enrichment analysis via fgsea.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41, C44 describe core analysis methods. These are supported by citations to established packages (limma C39, DESeq2 C40, fgsea C44) and are consistent with the architectural description showing R-based back-end implementation (C81-C83). The case study (C68-C69) demonstrates practical application of these methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Phantasus supports downstream analysis through integration with external tools (Enrichr for pathway analysis, Shiny GAM for metabolic network analysis), allows export of plots as SVG vector images, and enables session sharing via server-saved snapshots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43, C45-C47 describe output and sharing features. Integration with external tools (C42-C43) is explicitly stated with citations. SVG export (C45) and session sharing (C46-C47) are straightforward feature descriptions consistent with the web application architecture. Figure 3 demonstrates visualization capabilities (C134-C139).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Local Phantasus installations require additional setup for full functionality (expression matrices, annotations, pathway databases), which can be automatically handled by downloading from a cache mirror or via HSDS server and phantasusLite package for selective dataset loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 describe local installation requirements and solutions. The HSDS server implementation (C54-C55) provides a technical solution to avoid large local file storage. The automatic setup capability (C53) and named session sharing for stand-alone versions (C56) are explicitly described features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Phantasus architecture consists of a JavaScript front-end (derived from Morpheus) handling visualization and basic operations, an R back-end with OpenCPU server for computational methods, Protocol Buffers for data transfer, and Nginx for caching and performance optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C93, C112-C116 describe the technical architecture. These are supported by Figure 1 showing component relationships and citations to underlying technologies (Morpheus C76, OpenCPU C77, C84-C86, protolite C88, protobuf.js C89). The caching mechanism (C90-C92) and division of client/server responsibilities (C78-C83) are technically sound architectural choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Phantasus uses NCBI GEO as its main data source, loading metadata and microarray expression via GEOquery, RNA-seq counts from internal storage (ARCHS4/DEE2), gene annotations in SQLite format (currently human and mouse), and pathway databases (GO, Reactome, MSigDB Hallmark).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C101 describe data sources and storage. The use of GEOquery (C96) is appropriate for GEO access. The limitation to human and mouse annotations (C100) is explicitly stated. The pathway databases (C101) are standard resources with appropriate citations. The prioritization logic for RNA-seq sources (C98) is clearly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Phantasus uses a Snakemake-based pipeline to automatically populate its cache by converting DEE2 files to HDF5 format, identifying or generating machine-readable annotations (producing 1,300 additional annot.gz files), and creating cached entries for all supported datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C111 describe the automated data processing pipeline. The four-step process is clearly described with specific outputs (1,300 annotation files C107). The conversion of DEE2 run-level to sample-level data (C103-C104) addresses a practical data integration challenge. The availability of the cache snapshot (C109-C111) supports reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Phantasus is claimed to be the only web application for gene expression analysis offering streamlined access to both microarray and RNA-seq datasets, with its uniqueness lying in the combination of highly interactive heatmap interface and R/Bioconductor back-end that effectively supports users from both computational and biological backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C72 make comparative and experiential assertions. C70's claim of being \"the only\" such tool is qualified with \"to our knowledge\" but lacks systematic comparison with other tools (though Appendix 1 is referenced). C72's claim about effectiveness is based on authors' experience rather than formal user studies or quantitative metrics. While the technical capabilities are demonstrated, the uniqueness and effectiveness claims require external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Phantasus integrated ARCHS4 and DEE2 databases for RNA-seq data access and made them available remotely from R via the phantasusLite package in a GEOquery-compatible manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 describe database integration work. The integration is substantiated by the detailed dataset counts (C65-C67, C126-C133) and the HSDS server implementation (C54-C55). Making the data GEOquery-compatible (C74) is a practical design choice for R users, though the actual compatibility and functionality would require testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The manuscript establishes context by noting that transcriptomic profiling is ubiquitous, public data deposition is standard (with GEO storing 225,000+ studies), data reuse can reduce costs, but standard analysis requires technical expertise (particularly R/Bioconductor skills), while web applications can lower barriers though Shiny-based tools have limited interactivity and Shiny-independent tools lack native R support.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C20 provide background context with appropriate citations. The characterization of the field (C9-C12) is supported by cited literature. The technical barriers (C13-C15) and trade-offs between different application types (C17-C20) establish the motivation for Phantasus's hybrid architecture. These are general knowledge claims appropriately supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Case study using dataset GSE53986 (16 macrophage samples with various treatments, measured on Affymetrix Mouse Genome 430 2.0 Array) demonstrates Phantasus capabilities including hierarchical clustering, heatmap visualization with multiple annotation tracks, differential expression statistics display, and customizable PCA plots with SVG export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69, C134-C139 describe a case study and visualization features. The dataset description (C68-C69) references a published study. Figure 3 provides visual evidence of the described capabilities (dendrograms C134, heatmaps C135, annotations C136, statistics C137, PCA plots C138-C139). The case study demonstrates practical application of the tool's features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Phantasus categorizes datasets as having full support (gene expression data with standardized gene annotations) or partial support (incomplete expression matrix or annotations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 define dataset support categories. This classification is clearly illustrated in Figure 2 with specific counts for each category. The distinction is practical for users to understand data completeness and is consistently applied across the dataset breakdown (C119-C133).",
+    "result_type": "MINOR"
+  }
+]

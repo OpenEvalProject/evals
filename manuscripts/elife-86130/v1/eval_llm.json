@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The authors developed a dissection protocol for isolating mouse leptomeninges and dura at P6, which naturally separate along the cleavage plane between these layers. Single nucleus RNA sequencing identified 14 principal cell clusters including 5 distinct fibroblast subtypes, with leptomeningeal but not dural endothelial cells expressing the BBB marker GLUT1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 describe methodological observations that are well-documented with immunostaining (C30, Figure 1E) and snRNAseq data (C31-C33, Figure 1F-I). The dissection protocol is clearly described and the cellular characterization is supported by both imaging and transcriptomic data with appropriate validation by comparison to published literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors established a neonatal E. coli meningitis model using subcutaneous injection of clinical isolate RFP-RS218 at P5. Infected mice became lethargic, stopped gaining weight, and died within 2 days if not sacrificed. At 22 hours post-infection, bacteria were distributed patchily in the meninges with ~20-fold higher density in the dura sinus compared to leptomeninges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 describe the infection model with supporting data from weight measurements (C36, Figure 1-supplement 3A), survival curves (C37, Figure 1-supplement 3B), and bacterial quantification (C38-C39, Figure 2A-D and Figure 1-supplement 3C). The model is well-characterized with appropriate controls and quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C105"
+    ],
+    "result": "All major meningeal cell types (endothelial cells, macrophages, and fibroblasts) exhibit distinctive transcriptome changes upon infection. Macrophage density increased modestly (~20%) but morphology changed dramatically. LYVE1 was reduced while CD180 and CD206 showed little change. IL6 was induced in dural fibroblasts, and S100A8+ cells increased ~10-fold. GSEA revealed broad induction of inflammatory responses across all meningeal cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C40-C46, C48-C49, and C105 are well-supported by comprehensive snRNAseq data (Figure 2-supplements 1-4, Supplementary file 3) and immunostaining quantification (Figure 2E-K). The transcriptomic changes are documented with appropriate statistical analysis, and protein-level validation is provided for key markers. The GSEA analysis appropriately identifies pathway enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "While overall meningeal cell type proportions remained stable, parsing immune cells revealed a ~2-fold decrease in CCL2- resident macrophages, >10-fold increase in inflammatory macrophages, and several-fold increase in monocytes/monocyte-derived cells. Several dozen genes showed >5-fold expression changes in resident macrophages, with CCL2- and CCL2+ macrophages showing nearly identical increases but variable decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C57 are supported by detailed snRNAseq analysis with cell counting (Figure 3D), volcano plots (Figure 3E), and UMAP visualization (Figure 3F). The inference about protein half-lives (C56-C57) is reasonable given the discordance between transcript and protein levels at 22 hours, though direct measurement of protein turnover was not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Infection led to widespread down-regulation of collagen and SLC transporter transcripts in meningeal fibroblasts. Among 25 detectable collagen genes, 19/25 were down-regulated. Of ~350 SLC family members, 37 showed infection-dependent changes with 21/37 down-regulated. Slc39a14 was unusual in showing substantial up-regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by comprehensive analysis of gene family expression patterns shown in Figure 3-supplements 3-4. The quantification is systematic and the patterns are clearly documented, though the functional significance remains to be determined as acknowledged by the authors (C113).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Infection caused expansion of EC clusters in UMAP space indicating increased transcriptional heterogeneity, without changing EC subtype proportions. Distinct transcriptome changes distinguished EC responses: SLC7A1/SLC7A5 down-regulation in leptomeningeal ECs, PLVAP/PIEZO2 down-regulation in dural ECs, and VEGFR2/KDR down-regulation in both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are well-supported by snRNAseq analysis including UMAP plots (Figure 4A, E), cell counting (Figure 4B), dot plots and volcano plots (Figure 4C-E). The cluster expansion and cell-type-specific transcriptional changes are clearly documented with appropriate visualization and quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C4",
+      "C70",
+      "C71"
+    ],
+    "result": "Infection caused mislocalization and clustering of CLDN5 and PECAM1, disorganized capillary morphology, and expansion of vascular area in leptomeninges. Immunoblotting showed modest but non-significant CLDN5 reduction. Patchy BBB breakdown was revealed by Sulfo-NHS-biotin leakage spatially matching CLDN5/PECAM1 clustering. LPS treatment (10 mg/kg IP) reproduced these vascular phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C66-C71 are strongly supported by immunostaining (Figure 5A-C), immunoblotting (Figure 5D), and functional tracer studies. The spatial correlation between protein redistribution and BBB leakage is compelling. The LPS experiment provides important mechanistic insight. The lack of statistical significance for CLDN5 reduction by immunoblot (C69) is appropriately noted and may reflect animal-to-animal variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "VEGFR2 immunostaining was greatly reduced in infected leptomeninges, suggesting enhanced vascular permeability is not caused by increased VEGF signaling. LEF1 was dramatically reduced in ECs but persisted in non-ECs, with total LEF1 reduced ~25% (non-significant). CLDN5, PECAM1, and ERG were also reduced in leptomeningeal veins, consistent with reduced WNT signaling contributing to BBB breakdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79 are supported by immunostaining quantification (Figure 5E-H) and immunoblotting (Figure 5G). The inference about VEGF signaling (C73) and WNT signaling (C79) is reasonable given the observed protein changes and established knowledge about these pathways in BBB maintenance, though direct measurement of pathway activity was not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Infection diminished alignment of elongated EC nuclei with the long axis of dural veins, suggesting effects on cytoskeletal organization. NF-\u03baB reporter expression was induced almost exclusively in ECs, increasing from ~1% to ~20% in dura and ~1% to ~5% in leptomeninges. Reporter-expressing ECs were adjacent to non-expressing ECs in random patterns, indicating substantial EC heterogeneity in infection response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 are supported by nuclear orientation quantification (Figure 6A-B) and NF-\u03baB reporter analysis (Figure 6C-F). The reporter mouse is well-characterized and the quantification is rigorous. The inference about EC heterogeneity (C85) is reasonable given the mosaic reporter expression pattern and UMAP cluster broadening, though the underlying mechanisms remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C102"
+    ],
+    "result": "The vascular response to infection is largely driven by TLR4 signaling. Infection and LPS administration induced nearly identical vascular responses. Tlr4-/- mice showed minimal CLDN5 redistribution and Sulfo-NHS-biotin leakage despite ~2-fold increased bacterial burden. Ccr2-/- mice showed normal vascular responses. Baseline macrophage density was reduced in both knockout lines but infection responses differed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C86-C93, and C102 are well-supported by comparative experiments with Tlr4-/- and Ccr2-/- mice (Figure 7). The LPS experiment (C6, Figure 5A-C) provides strong mechanistic support. Bacterial quantification (C86-C87) and macrophage density measurements (C90-C93) are appropriately documented. The conclusion about TLR4's central role is well-justified by the convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103",
+      "C10"
+    ],
+    "result": "Ccr2 knockout and acute macrophage depletion with clodronate liposomes had little or no effect on EC responses to infection (CLDN5 redistribution, Sulfo-NHS-biotin leakage, vascular area expansion, NF-\u03baB reporter induction). Bacterial burden was unchanged by clodronate treatment. After macrophage depletion, macrophage numbers increased only modestly with infection. These data indicate EC responses are largely independent of macrophages and driven by intrinsic EC response to LPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C96-C101, and C103 are strongly supported by experiments with Ccr2-/- mice (Figure 7) and clodronate depletion (Figure 8). The macrophage depletion is well-documented (Figure 8A-B) and the lack of effect on vascular responses is clearly shown (Figure 8C-D). The conclusion that EC responses are intrinsic (C10, C103) is well-justified by the convergent negative results from multiple perturbations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The introduction provides established background on bacterial meningitis epidemiology, meningeal anatomy, and immune cell composition. Bacterial meningitis is a major cause of morbidity and mortality especially in infants and elderly, with incidence ranging from ~2 per 100,000 in developed countries to 100-1000 per 100,000 in Africa. Neonatal meningitis has incidence of ~0.3-4 per 1000 live births with 20-70% of survivors experiencing neurologic sequelae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C27 represent established knowledge appropriately supported by citations to the literature. These provide necessary context for the study but do not constitute novel findings. The epidemiological data and anatomical descriptions are standard and well-documented in the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors acknowledge several study limitations: analyses focused on 22 hr post-infection, immune cell movements between compartments were not tracked, most transcriptomic changes have unknown functional significance, and comparisons with published datasets are challenging due to age and methodological differences. The immaturity of the adaptive immune system at P5-P6 implies the response depends largely on innate immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104, C109-C115 represent appropriate acknowledgment of study limitations and reasonable inferences about the immune response. The limitation that only a single timepoint was examined (C109) is significant but does not invalidate the findings. The inference about innate immunity dominance (C104) is reasonable given the age of the mice and rapidity of infection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The discussion contextualizes findings within established knowledge about LPS-mediated BBB breakdown, TLR4-NF-\u03baB signaling, and NF-\u03baB/WNT pathway crosstalk. The authors speculate that reduced LEF1 and WNT signaling in infected ECs could result from \u03b2-catenin down-regulation via activated NF-\u03baB, and that altered CLDN5 localization suggests increased protein internalization/degradation may contribute to barrier defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C124 represent discussion of mechanisms based on established knowledge (C116-C122) and speculation about mechanisms in this system (C123-C124, C119). While the speculation is reasonable and grounded in prior work, direct evidence for the proposed mechanisms (e.g., \u03b2-catenin levels, protein turnover rates) was not provided. These remain hypotheses requiring future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C108",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The authors speculate about mechanisms underlying baseline differences in macrophage numbers between knockout and WT mice, discuss advantages of the meninges for microscopy, and suggest the model will be useful for future mechanistic studies. They note that mouse models with new technologies can provide insights into human meningitis pathophysiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C95, C108, C125-C130 represent speculation about mechanisms (C94-C95), methodological advantages (C125-C127), and future directions (C108, C128, C130). While reasonable, these are not tested hypotheses. The utility of the model (C108) and potential for future insights (C130) remain to be demonstrated through additional studies.",
+    "result_type": "MINOR"
+  }
+]

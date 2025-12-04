@@ -1,0 +1,510 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C5"
+    ],
+    "result": "The manuscript contextualizes the importance of precision in human neuroscience by noting that concerns about statistical power and replicability have fueled debate, leading to recognition that larger samples are needed. However, precision has historically been central to good practice, with researchers relying on lab traditions or rules of thumb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C4, and C5 provide consistent background context about the field's recent history and current practices. These claims are supported by general knowledge and observation of research practices, establishing the motivation for the review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Findings in neuroscience critically depend on design, processing, and analysis pipelines, and analytical heterogeneity can have crucial impacts on measurement precision and consequently on statistical power and sample size requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, and C8 are well-supported by citations to published research (Botvinik-Nezer et al., 2020; Carp, 2012; Moriarity and Alloy, 2021; Button et al., 2013) demonstrating these dependencies empirically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "Many factors affecting precision are passed on by lab traditions but are not well documented in published literature or evaluated empirically, including factors like trial numbers, sensor noise tolerance, scanner pulse sequences, and electrode positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C10 describe current practices in the field based on observation and inference. These claims establish a key gap in the literature that motivates the review's focus on systematically documenting precision factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Measurement precision is defined as the ability to repeatedly measure a variable with a constant true score and obtain similar results. Higher precision leads to higher statistical power, increases the probability of detecting true effects, and results in more accurate effect size estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 establish the definition and theoretical importance of precision. These claims are supported by citation (Cumming, 2014) and follow logically from established statistical principles about the relationship between precision, power, and effect size estimation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Increasing sample size has become the primary approach to augmenting statistical power in psychology and neuroscience. Statistical power is determined by significance threshold, effect size relative to variance, and sample size. However, neuroscience data acquisition is costly and resource constraints often limit the feasibility of increasing sample sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 are supported by citations to published research documenting these trends and constraints (Open Science Collaboration, 2015; Button et al., 2013; Lakens, 2022). The claims about statistical power determinants reflect established theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Precision can be achieved at multiple levels: group-level through sample/paradigm selection, subject-level by increasing trial numbers, and trial-level through more precise measurement techniques. Conversely, lack of precision increases error variance and total variance estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are supported by citations to published research (Hedge et al., 2018; Baker et al., 2021; Boudewyn et al., 2018; Chaumon et al., 2021) and follow from statistical principles about variance decomposition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Determining the gain in precision from increasing trial count is not trivial because additional trials can increase sequence effects (habituation, fatigue, learning), meaning that increasing trials will not indefinitely benefit precision and reliability, though sequence effects can be mitigated by breaks or modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 describe an important complexity in optimizing precision. The claims are supported by established knowledge about experimental design and a citation about mitigation strategies (Sperl et al., 2021).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The most important property of an MRI scanner is its field strength (typically 1.5, 3, or 7 Tesla), with higher values leading to improved spatial resolution due to increased signal-to-noise ratios but also increasing the likelihood of side effects and artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 describe established MRI technology characteristics supported by multiple citations (Bernstein et al., 2006; Polimeni et al., 2018; Theysohn et al., 2014; U\u011furbil, 2018).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "A larger number of trials in task-based fMRI or longer scanning duration in resting-state studies increases signal precision, but longer durations may lead to fatigue or reduced motivation, which can be counteracted by dividing acquisition into shorter blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C32 are supported by citations to published research (Baker et al., 2021; Gordon et al., 2017; Noble et al., 2017; Laumann et al., 2015) demonstrating these effects and mitigation strategies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Block designs often have greater design efficiency than event-related designs, but may introduce sequence effects (expectation and context effects) that increase error variance and reduce precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C34 describe established knowledge about fMRI experimental design, with C34 supported by citation (Howseman et al., 1999).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Multi-band fMRI acquisition can increase temporal resolution and data amount per trial, but might decrease signal-to-noise ratio and was found to compromise detection of reward-related striatal and medial prefrontal cortical activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 describe multi-band fMRI characteristics, with the potential drawbacks supported by citations to published research (Todd et al., 2017; Srirangarajan et al., 2021) providing empirical evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Multi-echo imaging combined with adequate denoising techniques can increase precision in fMRI generally and can counter the detrimental effects of multi-band imaging on precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C39 are supported by citations to published research (Lynch et al., 2021; Fazal et al., 2023) demonstrating these benefits empirically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "The univariate analysis approach has been shown to have inferior retest-reliability compared to multivariate analyses, leading some researchers to generally recommend multivariate over univariate analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C41 are supported by citations to published research (Elliott et al., 2020; Kragel et al., 2018; Kragel et al., 2021; Noble et al., 2019) demonstrating reliability differences and making recommendations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "M/EEG measures electromagnetic signals from postsynaptic currents at the scalp surface. Different sensor technologies trade off signal quality against setup time. Currently, average sample sizes per group for M/EEG experiments are as low as 21.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 describe M/EEG technology and current practices. C45 is supported by citation to published research (Clayson et al., 2019) providing empirical data on sample sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "ICA-based artifact removal on strongly high-pass filtered data has been shown to outperform ICA-based artifact removal on unfiltered or less strongly filtered data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by citations to published research (Klug and Gramann, 2021; Winkler et al., 2011) demonstrating this performance difference empirically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Amplitude measures of ERPs show higher precision than latency measures, and the measurement error of ERP components varies substantially with the component of interest, number of trials, and method of amplitude/latency estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C48 are supported by citations to published research (Cassidy et al., 2012; Morand-Beaulieu et al., 2022; Jawinski et al., 2016; Schubert et al., 2023) demonstrating these precision characteristics empirically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Electrodermal activity reflects eccrine sweat gland activity controlled by the sympathetic nervous system and is composed of tonic (SCL - related to thermoregulation and arousal) and phasic (SCRs - reflecting stimulus-induced activation) components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 describe established physiological knowledge about EDA, supported by citations (Bach, 2014; Amin and Faghih, 2021; Dawson et al., 2016).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "For SCRs, a sampling rate of 20 Hz is considered sufficient but higher rates improve precision. SCRs have an onset lag of approximately 1 s after the eliciting stimulus (0.5 s for high intensity stimuli).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C54 are supported by citation (Venables and Christie, 1980) and established knowledge about SCR timing characteristics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "SCRs are subject to strong habituation effects, and larger trial numbers did not generally improve reliability estimates of SCRs in a learning paradigm. Individuals with higher SCL show higher numbers and larger amplitudes of SCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by citations to published research (Lykken et al., 1988; Klingelh\u00f6fer-Jens et al., 2022; Boucsein, 2012a; Venables and Christie, 1980) and reference to Figure 4 showing data illustrating habituation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Eye-tracking measures gaze direction based on pupil position and takes an exceptional position among neuroscientific methods because accuracy can be readily quantified as the difference between recorded gaze position and actual target coordinates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C59 describe eye-tracking technology characteristics, with C59 supported by citation (Hornof and Halverson, 2002) and reference to Figure 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Eye-tracker sampling rate (at least 200 Hz), operating distance, participant eye color, and visual correction aids all affect eye-tracking precision and accuracy in specific ways documented in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by citations to published research (Andersson et al., 2010; Blignaut and Wium, 2014; Hessels et al., 2015; Nystr\u00f6m et al., 2013) providing empirical evidence for these effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Velocity-based algorithms for eye-tracking event detection have higher precision and accuracy but require higher sampling rates (>100 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is based on established knowledge about eye-tracking analysis methods and their requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Hormones are chemical messengers produced in endocrine glands that exert effects by binding to specific receptors, affecting various psychological processes, which in turn may influence hormone concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 describe established biological knowledge about hormones, supported by citations (Ehlert and K\u00e4nel, 2010; Erickson et al., 2003; Sunahara et al., 2022).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Different hormone measurement methods capture different temporal states: saliva cortisol indicates acute state (current biologically active hormone availability) while hair cortisol represents chronic state (cumulative measures building up over time).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C70 are supported by citations to published research (Gejl et al., 2019; Kagerbauer et al., 2013; Sugaya et al., 2020; Vining et al., 1983) documenting these measurement characteristics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Various factors disrupt biological rhythms (shift work, jet lag disrupt diurnal rhythms; oral contraceptives disrupt lunar rhythms). Biological rhythms exist across various modalities including neuroimaging data and receptor activity, with hormones often acting as a driving force.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by citations to published research (Bedrosian et al., 2016; Br\u00f8nnick et al., 2020; Fleischman et al., 2010; Barth et al., 2015; McEwen and Milner, 2017; Orban et al., 2020; Pritschet et al., 2020; Ar\u00e9lin et al., 2015; Taylor et al., 2020) documenting these effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Hormone data rarely fulfill assumptions underlying parametric procedures (homoscedasticity and normal distribution), but data transformations can be used to counteract violations of assumptions rather than resorting to less powerful non-parametric procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75 and C76 are based on empirical observation of hormone data characteristics, with C76 supported by citation (Miller and Plessow, 2013) providing methodological guidance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Combining different methods allows assessment of different levels of response providing complementary insights, but 'triggered' responses like ratings and startle EMG can impact the to-be-studied cognitive process by hampering learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C78 describe multi-method research considerations, with C78 supported by citations (Atlas et al., 2022; Sjouwerman et al., 2016) demonstrating interference effects empirically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The correlation between two variables cannot exceed the smallest reliability exhibited by any of the two variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 states a classical statistical principle (Spearman, 1910) that is well-established in psychometric theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Different research questions require different variance optimization strategies: for group differences, reducing between-subjects variance increases group-level precision; for correlational hypotheses, between-participant variance should be maximized. Within-subject variance should usually be minimized, and high subject-level precision carries on to improve group-level precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 describe statistical principles about variance optimization, supported by citations (Hedge et al., 2018; Baker et al., 2021) and reference to Figure 2. The claims follow logically from statistical theory about aggregation levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Precision can be viewed as a one-way street, with trial-level precision improving subject-level precision, which improves group-level precision. Increasing sample size only benefits group-level precision with no benefit to subject-level estimates or reliability. Therefore, priority should be given to optimizing trial-level precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 present a conceptual framework about hierarchical precision, supported by reference to Figure 7 showing simulated data. The claims follow logically from statistical principles about aggregation levels, though C86 is a recommendation based on inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The main obstacle to quantifying subject-level precision is the need for trial-level data, whereas most researchers are formally trained to deal statistically with subject-level aggregates only while using external programs for preprocessing trial-level data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87 and C88 describe current research practices and training, with C87 supported by citation (Parsons, 2021). These observations about the field are based on knowledge and inference about typical training and practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Research on homogeneous WEIRD populations has been favored in human neuroscience, though convenience sampling often results in predominantly female samples. While collecting representative samples enhances generalizability, it does not guarantee detection of group modulations without sufficient power, and reliability may be attenuated with insufficient between-subjects variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 describe sampling practices and their implications, supported by citations (Henrich et al., 2010; Criado-Perez, 2019; Weigold and Weigold, 2022; Brysbaert, 2019; Maxwell et al., 2017; Sommet et al., 2022; Hedge et al., 2018). The claims about generalizability follow from logical principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "The neglect of reliability and precision at the subject-level has handicapped human neuroscience in terms of its translation into clinical application.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is supported by citations to published research (Ehring et al., 2022; Lachin, 2004; Moriarity and Alloy, 2021) documenting this limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Information on measurement precision is not usually included in project proposals. In neuroimaging, sample sizes remain small and have increased only slowly over the past decade, with only 3-4% of studies in 2017/2018 including a-priori power calculations and 65% not mentioning power at all.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 describe current research practices, with C96-C98 supported by citation to published research (Szucs and Ioannidis, 2020) providing empirical data on these trends.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "Precision can be directly improved through careful study design and often involves little additional costs, unlike other determinants of statistical power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is a logical inference about the cost-effectiveness of improving precision compared to increasing sample size, which is a key practical implication of the review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Effect sizes derived from the literature are often inflated due to publication bias. Therefore, when planning studies, a conservative approximation of the true effect should be considered, such as using the lower bound of the 95% confidence interval of a published effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100 and C101 describe publication bias and provide a recommendation, with C100 supported by citations (Button et al., 2013; Sch\u00e4fer and Schwarz, 2019; Szucs and Ioannidis, 2017). C101 is a logical recommendation based on this problem.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "Public sharing of research data will have an indirect impact on measurement precision by allowing for more aggregated and less biased estimation of effect sizes, exploration of their determinants, and assessment of procedural and statistical choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is a logical inference about the benefits of data sharing for improving precision through better effect size estimation and understanding of methodological factors.",
+    "result_type": "MAJOR"
+  }
+]

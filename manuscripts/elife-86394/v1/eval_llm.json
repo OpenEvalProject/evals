@@ -1,0 +1,232 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "A Simoa-based digital ELISA assay for ApoB-100 was developed and validated. The assay was optimized by comparing capture and detector antibodies, selecting the pair with the highest signal-to-background ratio. Validation included dilution linearity experiments in three plasma samples and spike-and-recovery experiments showing 87-95% recovery across a range of concentrations (5-500 ng/ml).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The development and validation of the ApoB-100 assay is well-documented with appropriate experimental evidence (C28-C31, C33-C36). The calibration curve, dilution linearity in multiple samples, and spike-recovery data provide strong support for assay performance. However, the manuscript lacks information on inter-assay variability, specificity testing against related apolipoproteins, and the number of replicates for spike-recovery experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C22",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C60",
+      "C98"
+    ],
+    "result": "Size exclusion chromatography (SEC) with three different Sepharose resins (CL-2B, CL-4B, CL-6B) was evaluated for separating EVs from lipoproteins. While Sepharose CL-2B (largest pore size) showed higher EV/ApoB-100 ratios, this came at the expense of lower EV yield. Overall, SEC alone was unable to effectively separate EVs from ApoB-100-containing lipoproteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by systematic comparison of three SEC resins using the five-assay platform (C37-C44). The data in Figure 2 shows clear trade-offs between purity and yield. The conclusion that SEC alone is insufficient (C98) is justified by the experimental results. However, statistical significance is not reported for the comparisons, and the number of biological replicates is unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C99",
+      "C100"
+    ],
+    "result": "Density gradient ultracentrifugation (DGC) using iodixanol gradients effectively separated EVs from ApoB-100-containing lipoproteins and albumin, but yielded fewer EVs than SEC. Due to its time-intensive nature, low throughput, and requirement for specialized equipment, DGC was deemed unsuitable for clinical sample processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The separation capability of DGC is clearly demonstrated in Figure 3 (C49, C99), and the lower yield compared to SEC is documented in Figure 3\u2014figure supplement 1A (C50). The practical limitations (C51, C100) are reasonable inferences. However, the manuscript does not quantify the time difference or provide direct yield comparisons with statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C56"
+    ],
+    "result": "Optimization of SEC using Sepharose CL-6B revealed that performing at least one 10 ml PBS in-column wash significantly increased EV yield, achieving >50% recovery as measured by comparing tetraspanin levels in SEC fractions to diluted plasma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The optimization is supported by data in Figure 2\u2014figure supplement 1 showing improved yields with in-column washes (C54, C56). The use of Simoa's dynamic range to directly compare plasma and SEC fractions is methodologically sound (C53). However, 'significantly' is used without statistical testing, and the mechanism proposed (C55) is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Two novel chromatography methods were developed: Dual-Mode Chromatography (DMC) combining Sepharose CL-6B with cation exchange resin, and Tri-Mode Chromatography (TMC) further incorporating Capto Core 700 multimodal resin. DMC depleted most ApoB-100 but at the cost of some EV loss. TMC was optimized to a 2:1 ratio of cation exchange to multimodal resin to balance yield and purity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The development of DMC and TMC is well-documented with clear rationale based on charge differences (C57-C58) and protein-binding properties (C63-C64). The optimization data in Figure 4\u2014figure supplement 1 supports the tunable nature of the methods (C65). The 2:1 ratio selection (C66) represents a reasonable compromise, though the decision criteria could be more quantitative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C106"
+    ],
+    "result": "Comparison of SEC, DMC, and TMC showed that while DMC and TMC had lower EV yields than SEC, they achieved significantly higher EV/ApoB-100 ratios. TMC uniquely improved both EV/ApoB-100 and EV/albumin ratios compared to SEC, producing EV preparations of higher purity with respect to both lipoproteins and free proteins. Electron microscopy confirmed higher EV purity relative to lipoproteins for DMC and TMC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative analysis is comprehensive, using both quantitative Simoa measurements (C70-C75, Figure 4C-E) and qualitative electron microscopy (C67-C68, Figure 4B). The data clearly show the trade-off between yield and purity. However, 'significantly' is used without statistical tests, and the EM images are qualitative. The claim that TMC produces 'higher purity' (C106) is supported but would benefit from quantitative EM analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Mass spectrometry-based proteomics on TMC-isolated EVs from 1 ml plasma detected 780 proteins, demonstrating the advantage of TMC for deep proteomics analysis with small sample volumes. This compares favorably to previous studies detecting 250 proteins from 1 ml plasma using a three-step protocol or 1187 proteins from 40-80 ml plasma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proteomics data (C78) demonstrates the utility of TMC for downstream applications. The comparison to prior studies (C115-C116) provides context, though direct comparisons are complicated by different methodologies and mass spectrometry platforms. The claim of 'advantage' (C79, C117) is reasonable but would be stronger with side-by-side comparison of SEC vs. TMC proteomics from the same samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "A semi-automated device for running eight SEC columns in parallel was developed using a Raspberry Pi-controlled syringe pump. Testing showed high concordance between automated and manual SEC for EV isolation from plasma, demonstrating proof-of-principle for increased throughput.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The device development is documented with CAD images and photographs (Figure 5A-B), and validation data shows concordance between manual and automated methods (C86, Figure 5C). However, 'high concordance' lacks quantitative metrics (correlation coefficient, statistical analysis). The proof-of-principle nature is acknowledged (C87), and future scalability is appropriately presented as speculative (C88).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background and motivation: EVs are released by all cells into biofluids and contain cargo from their cell of origin, making them promising biomarkers. However, separating EVs from abundant free proteins and similarly-sized lipoproteins remains technically challenging due to overlapping size ranges and limitations of common analytical methods like NTA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the scientific context and are well-supported by appropriate citations (C9-C15). The statements reflect established knowledge in the EV field and accurately represent the technical challenges that motivate the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C26",
+      "C27"
+    ],
+    "result": "Methodological framework: The study builds on a previously developed framework using Simoa technology to measure tetraspanins (CD9, CD63, CD81) as EV markers and albumin as a free protein contaminant marker. Simoa is a digital ELISA method providing high sensitivity and wide dynamic range through single-molecule counting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological foundation is well-established through prior work (C16) and appropriate citations describing Simoa technology (C20, C27). The rationale for using tetraspanins and albumin as markers is clearly stated (C17-C19).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Overall framework and contribution: The work presents a quantitative framework for comparing EV isolation methods by measuring EVs, free proteins, and lipoproteins on a single platform. This addresses the need for effective comparison methods, recognizing that optimal isolation depends on the specific application.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conceptual framework (C109-C111) is sound and addresses a real need in the field. The integration of five assays on one platform (C91) is a clear technical advance. The acknowledgment that no single method is optimal (C110) demonstrates appropriate scientific nuance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C112",
+      "C113",
+      "C114",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Future applications and impact: The developed methods are envisioned to enable applications requiring high EV purity, particularly EV proteomics for biomarker discovery. The automated device demonstrates a path toward clinical sample processing, with future iterations expected to increase throughput further, contributing to EV profiling in molecular diagnostics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are largely speculative about future applications and impact (C25, C114, C118-C120). While the proteomics data provides some support for utility in biomarker discovery, the clinical applicability and diagnostic value remain to be demonstrated. The claims are appropriately framed as forward-looking but lack experimental validation.",
+    "result_type": "MINOR"
+  }
+]

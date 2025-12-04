@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C77",
+      "C78"
+    ],
+    "result": "The authors successfully produced pure, fully myristoylated and non-myristoylated untagged CHP3 proteins by co-expression with human N-myristoyltransferase 1 and purification using Ca2+-dependent hydrophobic interaction chromatography. Native mass spectrometry confirmed complete myristoylation (~211 Da mass increase) and functional Ca2+ binding (single Ca2+ ion) for both CHP3 and mCHP3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25, C77-C78 are well-supported by multiple complementary techniques including SDS-PAGE (C21), native MS (C22-C23, C25), ion mobility (C24), and gel filtration (C78). The experimental approach is clearly described, yields are quantified, and the data demonstrate both complete myristoylation and functional Ca2+ binding. The use of native MS to confirm stoichiometry is particularly rigorous.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C61",
+      "C62"
+    ],
+    "result": "CHP3 undergoes reversible Ca2+-induced conformational changes from a closed (Mg2+-bound) to an open (Ca2+-bound) conformation, as demonstrated by increased hydrophobicity (30-40% fluorescence increase) and changes in intrinsic tryptophan fluorescence. N-terminal myristoylation does not affect these conformational changes or Ca2+-binding properties (EC50 ~150-160 \u03bcM for both CHP3 and mCHP3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33, C61-C62 are strongly supported by multiple orthogonal assays (FPH and intrinsic fluorescence) showing consistent Ca2+-induced conformational changes. The reversibility is demonstrated (C27), and the lack of effect of myristoylation is shown by comparing CHP3 and mCHP3 across multiple parameters. The EC50 determination includes appropriate statistical analysis with confidence intervals. The use of recoverin as a control (C29) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C63",
+      "C67",
+      "C68"
+    ],
+    "result": "Ca2+ binding and myristoylation independently affect the thermal stability of CHP3. Mg2+-bound CHP3 shows highest thermal stability (Tmapp 70.1\u00b0C), which decreases upon Ca2+ binding (66.9\u00b0C). CBD binding dramatically increases thermal stability in Ca2+-bound states (~12\u00b0C increase) but not in Mg2+-bound states. Myristoylation uniformly decreases thermal stability (~10\u00b0C) across all states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38, C63, C67-C68 are well-supported by nanoDSF data with three biological replicates and clear quantification of melting temperatures. The independent effects of Ca2+, myristoylation, and CBD binding are systematically demonstrated. The observation that CBD binding only stabilizes Ca2+-bound states (C68) is particularly informative about the conformational mechanism. The inference about Mg2+ stabilization at resting Ca2+ levels (C63) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C64",
+      "C65",
+      "C85"
+    ],
+    "result": "Limited proteolysis reveals that Ca2+ binding increases local flexibility in the N-lobe (EF-2 region) of CHP3, as evidenced by enhanced tryptic cleavage producing two major fragments (residues 2-155 and 74-155). Target peptide CBD binding drastically protects CHP3 from proteolysis, indicating reduced flexibility in both EF-2 and EF-4 regions. Myristoylation has minimal effect on proteolytic stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45, C64-C65, C85 are supported by limited proteolysis experiments with MS identification of cleavage sites. The data demonstrate that Ca2+-induced conformational changes affect both N- and C-lobes (C65), not just the Ca2+-binding C-lobe. The dramatic protection by CBD (C42, C45) is clearly shown. However, the interpretation that cleavage sites are not covered by CBD (C84) relies on an AlphaFold model, which may not represent all conformational states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C69",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Ca2+ binding increases the affinity of CHP3 for the NHE1 target peptide CBD by approximately 5-fold (from KD ~15-28 nM in Mg2+ to ~3-6 nM in Ca2+), while myristoylation independently decreases affinity by 2-fold. CHP3 binds CBD with nanomolar affinity in both open and closed conformations, demonstrating that Ca2+ and myristoylation independently modulate binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51, C69, C86-C88 are rigorously supported by MST experiments with three biological replicates and five technical replicates each. The use of global parameter estimation and profile likelihood for confidence intervals is statistically sound. The independent effects of Ca2+ and myristoylation (C88) are clearly demonstrated by the additive nature of their effects on KD values. The conclusion that CHP3 binds in both conformations (C86) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C70",
+      "C71",
+      "C89",
+      "C90"
+    ],
+    "result": "CHP3 does not exhibit a Ca2+-myristoyl switch. While Ca2+ increases CHP3 binding to liposomes ~2.5-fold, myristoylation does not further enhance this binding. However, myristoylation dramatically increases liposome binding (~4-fold) of the CHP3:CBD complex, indicating that target peptide binding, not Ca2+, triggers exposure of the myristoyl moiety\u2014a novel 'target-myristoyl switch' mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58, C70-C71, C89-C90 are supported by liposome co-sedimentation assays with appropriate controls (recoverin showing classical Ca2+-myristoyl switch). The data clearly exclude a Ca2+-myristoyl switch (C70, C71) and support a target-induced mechanism (C58, C90). However, C90 involves mechanistic speculation about displacement of the myristoyl moiety, which is inferred rather than directly observed. The use of three biological replicates and statistical analysis strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "LC-MS/MS analysis of CHP3 from mouse brain membranes, platelet integral membrane proteins, and NHE1-associated complexes exclusively detected the myristoylated form of the N-terminal peptide, suggesting that myristoylated CHP3 is both NHE1-associated and membrane-anchored in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by LC-MS/MS data from three independent tissue preparations showing only myristoylated CHP3 in membrane fractions. This provides strong in vivo evidence for the target-myristoyl switch mechanism. However, the inference that CHP3 is 'both NHE1 associated and membrane anchored' (C60) is reasonable but not definitively proven\u2014the data show myristoylated CHP3 in these fractions but don't directly demonstrate simultaneous NHE1 binding and membrane anchoring.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C72",
+      "C73",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors propose that the Ca2+-induced open conformation with lower thermal stability and increased flexibility provides the molecular basis for enhanced target binding, and that a 'target-myristoyl switch' mechanism anchors the NHE1 regulatory domain to the plasma membrane. Ca2+ regulates CHP3 function both directly (by increasing binding affinity) and indirectly (by enhancing membrane association).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66, C72-C73, C75-C76 represent mechanistic interpretations and proposed models based on the experimental data. While the data support the general framework (Ca2+ effects on conformation and binding, target-induced myristoyl exposure), these claims involve significant speculation about mechanisms (C72-C73: competition for hydrophobic pocket; C75: canonical mechanism for NHE1 anchoring; C76: dual mode of Ca2+ regulation). These are reasonable hypotheses but require additional structural and functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Structural analysis using the AlphaFold2.0 model indicates that CHP3 has a single functional EF-hand (EF-3), with the single tryptophan (Trp191) located in the hydrophobic target-binding pocket. EF-1, EF-2, and EF-4 lack canonical Ca2+-binding residues or have insertions disrupting the Ca2+-coordinating loop. The model resembles target-bound CHP structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C84 rely heavily on computational modeling (AlphaFold2.0) and sequence analysis. While the sequence analysis showing non-functional EF-hands (C80-C82) is well-supported, the structural interpretations (C79, C83-C84) depend on a predicted model that may not represent all conformational states. The claim that Trp191 is in the hydrophobic pocket (C79) is supported by fluorescence emission maxima (~330 nm), but the model-based interpretation of cleavage site accessibility (C84) is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "CHP3 is an EF-hand Ca2+-binding protein involved in regulation of cancerogenesis, cardiac hypertrophy, and neuronal development through interactions with NHEs, calcineurin A, COP9 signalosome subunit 4, and GSK3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 are background claims supported by multiple citations to published literature. These establish the biological context and importance of CHP3 but are not novel findings of this study. The citations appear appropriate and the claims accurately represent prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Prior work established that CHPs undergo Ca2+-induced conformational changes, that CHP3 has lower Ca2+ affinity than CHP1/CHP2, that CHP3 is myristoylated, and that a Ca2+-myristoyl switch was proposed but not experimentally demonstrated. General principles of Ca2+ sensor proteins and myristoyl switches are reviewed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C17, C91-C104 are background claims reviewing prior literature on CHPs, Ca2+ sensor proteins, and myristoyl switches. These are well-supported by citations and accurately represent the state of knowledge prior to this study. Claim C104 correctly identifies a gap in prior work (lack of experimental evidence for Ca2+-myristoyl switch in CHP3) that this study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "The authors demonstrate that Ca2+ and N-terminal myristoylation independently regulate the conformation of CHP3 and its interaction with NHE1, and that surface exposure of the myristoyl moiety is triggered by target peptide binding rather than Ca2+, establishing a novel 'target-myristoyl switch' mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 represent the primary conclusions of the study and are well-supported by the comprehensive experimental data including conformational analysis (FPH, fluorescence, thermal stability, proteolysis), binding studies (MST), and membrane interaction assays (liposome binding, LC-MS/MS). The independent effects of Ca2+ and myristoylation are demonstrated across multiple assays, and the target-induced myristoyl exposure is supported by the differential liposome binding of free vs. CBD-bound mCHP3.",
+    "result_type": "MAJOR"
+  }
+]

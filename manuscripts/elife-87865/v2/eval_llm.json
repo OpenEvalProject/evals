@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C6",
+      "C31",
+      "C40",
+      "C41",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C58",
+      "C59",
+      "C60",
+      "C145",
+      "C150"
+    ],
+    "result": "Sex-specific alternative splicing occurs genome-wide during early Drosophila embryogenesis (0-2 hr pre-MZT and 2-4 hr post-MZT), with 92 SSS events at 0-2 hr and 138 at 2-4 hr. Using a meiotic drive system to sex embryos, the authors analyzed 66,927 exons from 17,558 genes and found 16-18% are alternatively spliced, with AF (alternative first exon) being most common (~24-26%) and AL (alternative last exon) least common (~3%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is strongly supported by RNA-seq data from sexed embryos (C40, C41), computational analysis using time2splice (C45-C50), and represents the earliest genome-wide documentation of SSS across species (C60, C145). The use of a validated meiotic drive system to obtain homogeneous male/female populations before ZGA is a key strength. Multiple figures (1B-D, 2\u2014figure supplement 1A-B) provide visual confirmation of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C38",
+      "C39",
+      "C42",
+      "C43",
+      "C44",
+      "C66",
+      "C67",
+      "C154",
+      "C155"
+    ],
+    "result": "The authors developed time2splice, a new computational pipeline based on SUPPA2 that quantifies alternative splicing changes over time and between sexes, integrating RNA-seq with chromatin occupancy data. The pipeline measures PSI (percent spliced in) for each exon and calculates differential splicing (\u0394PSI) between samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tool development is well-documented with clear methodology (C42-C44, C66-C67) and is publicly available on GitHub. The pipeline successfully integrates temporal, sex-specific, and chromatin localization data (C33, C39, C154-C155). Validation through RT-PCR/qRT-PCR of selected targets (C80, Figure 2\u2014figure supplement 3) confirms the computational predictions, supporting the tool's reliability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C35",
+      "C37",
+      "C52",
+      "C53",
+      "C54",
+      "C65",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C83",
+      "C146"
+    ],
+    "result": "Loss of maternal CLAMP alters sex-specific splicing of 200-400 transcripts depending on time point and sex, with CLAMP function highly enriched for SSS events (30-60% of SSS exons are CLAMP-dependent vs. only 2-3% of total AS exons). Approximately 70% of CLAMP-dependent SSS events are new aberrant events not present in controls. CLAMP depletion has a stronger effect on MXE (mutually exclusive exon) splicing than other types (p<3.21e-21 in males, p<6.26e-87 in females at 0-2 hr).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is supported by comprehensive RNA-seq analysis across multiple time points and sexes (C65, C68-C69), with statistical validation (C52-C53). The enrichment of CLAMP function in SSS vs. general AS is striking and well-quantified (C69-C70). Gene Ontology analysis shows affected genes regulate development, splicing, and transcription (C76-C79). RT-PCR validation of selected targets (C80) and low overlap with maternal transcripts (C74) strengthen confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C84",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Zygotic CLAMP also regulates sex-specific splicing in third instar larvae (73.5% of CLAMP-dependent AS events are sex-specific in females, 76.3% in males) and embryonically-derived cell lines (45/46 events female-specific in Kc cells, 112/113 male-specific in S2 cells). Fewer splicing events are altered in cell lines compared to embryos, consistent with cell line viability in CLAMP absence versus embryonic lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The extension to later developmental stages and cell lines is well-supported by RNA-seq data (C84, C86-C87). The observation of fewer affected events in viable cell lines versus lethal embryos (C88) provides biological coherence. The high percentage of sex-specific events among CLAMP-dependent splicing is consistent across all systems examined, strengthening the overall conclusion about CLAMP's role in SSS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C157",
+      "C158"
+    ],
+    "result": "In early embryos, 84.3% of CLAMP-dependent SSS genes are not regulated by CLAMP at the transcription level, indicating largely independent regulation of splicing and transcription. However, in third instar larvae, 60% of CLAMP-dependent SSS genes are also transcriptionally regulated. In embryonic cell lines, almost all CLAMP-dependent spliced genes are regulated at the splicing level only.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is supported by systematic comparison of RNA-seq splicing data with differential gene expression analysis across multiple developmental stages and cell types (C92-C97). The developmental stage-specific differences in coupling between splicing and transcription regulation (C94, C98, C158) are clearly quantified and suggest context-dependent mechanisms. The data integration is rigorous and the conclusions are appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "CLAMP binds directly to 24-70% of CLAMP-dependent SSS genes (varying by sex and time point), with preferential binding along gene bodies at splicing targets versus TSS/TES binding at transcription targets. CLAMP peaks are most frequently within 200-400 bp of splice junctions, especially in SSS genes, and bind closer to splice junctions at SSS genes compared to transcriptionally regulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result integrates ChIP-seq and RNA-seq data effectively (C99-C102, C104-C109). The distinct binding patterns for splicing versus transcription targets (C105, C107, C110) provide mechanistic insight. The proximity analysis to splice junctions (C108-C109) is quantitative and statistically robust, particularly for the 2-4 hr female samples with most events. The increase in CLAMP binding at later time points (C103) is consistent with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C130",
+      "C131"
+    ],
+    "result": "Loss of maternal and zygotic CLAMP mis-regulates splicing of Sex-lethal (sxl), the master regulator of sex determination. In CLAMP-depleted embryos, the male-specific sxl transcript is aberrantly expressed in females. In clamp2 mutant female larvae, male-specific sxl transcripts are detected and Sxl protein levels are reduced. The effect is stronger at 2-4 hr than 0-2 hr, consistent with increased CLAMP binding at the later time point. Additionally, 21.6% of CLAMP-dependent SSS genes are Sxl targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is supported by multiple experimental approaches: RT-PCR in embryos and larvae (C118-C120), RNA-seq data (C121), ChIP-seq showing CLAMP binding at sxl (C122), and western blots quantifying Sxl protein (C123). The genetic rescue experiment (C120) provides strong evidence for specificity. The temporal correlation between CLAMP binding and splicing effects (C122) adds mechanistic coherence. The connection to Sxl targets (C131) extends the regulatory network.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C144"
+    ],
+    "result": "Loss of CLAMP affects splicing of multiple sex determination pathway components downstream of Sxl. In CLAMP-depleted male embryos, the female-specific dsx transcript is aberrantly produced while the male-specific transcript is absent. Male-specific dsx transcripts appear in clamp2 mutant females. Similarly, msl-2 splicing is mis-regulated, resulting in ectopic MSL2 protein on female chromatin in clamp2 mutants. CLAMP binds directly to both dsx and msl-2 loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is supported by RT-PCR data for both dsx and msl-2 in embryos and larvae (C132-C134, C138), ChIP-seq showing direct CLAMP binding (C135-C136, C142), and immunofluorescence demonstrating ectopic MSL2 protein localization (C140-C141). The effects on multiple pathway components (C144) demonstrate broad impact on sex determination. The combination of splicing and protein localization data strengthens the biological significance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C125",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The reduction in Sxl protein levels in clamp2 mutants is more dramatic than changes in splicing. CLAMP interacts sex-specifically with the translation factor FMRP in male but not female cytoplasm, suggesting CLAMP may also regulate Sxl translation. The authors speculate that mis-regulation of translation may amplify splicing defects to generate larger decreases in Sxl protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the discrepancy between splicing and protein level changes is clearly documented (C125), the mechanistic explanation remains speculative. The FMRP interaction data (C127) is intriguing but limited to immunoprecipitation from cell lines. The hypothesis about translational amplification (C129) is reasonable but lacks direct experimental support. Additional experiments (e.g., ribosome profiling, polysome analysis, or FMRP knockdown effects on Sxl protein) would be needed to validate this mechanism. The authors appropriately present this as speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "The authors propose multiple mechanisms by which CLAMP regulates SSS: (1) direct DNA binding to intronic regions of ~50% of target genes, (2) modulation of chromatin accessibility given CLAMP's role as a pioneer factor and recent links between chromatin state and splicing, (3) sex-specific association with spliceosome components including Squid, and (4) potential interactions with RNA and RNA-binding proteins. CLAMP may regulate sxl splicing from a distance through long-range chromatin interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This result synthesizes multiple lines of evidence but remains largely mechanistic speculation. Direct binding is well-supported (C160), and the chromatin accessibility hypothesis is reasonable given CLAMP's known function (C162, C166) and recent literature (C163-C165). However, the sex-specific spliceosome interactions (C169-C170) rely on prior proteomic data without new validation. The long-range interaction model for sxl (C172-C175) is plausible but not directly tested. The authors appropriately acknowledge these as hypotheses requiring future investigation (C176-C177). Additional experiments (e.g., ATAC-seq in CLAMP mutants, 3C/Hi-C, RNA-IP) would be needed to validate these mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "CLAMP-dependent SSS genes show very low overlap with maternally deposited transcripts, indicating most are zygotic transcripts. This is consistent with ZGA starting at ~80 min after egg laying.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is supported by comparison with published maternal gene lists from multiple studies (C74) and is consistent with established developmental timing (C75). The low overlap even at 0-2 hr strengthens the conclusion that CLAMP primarily affects zygotic transcription and splicing. This finding is important for interpreting the biological significance of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "RT-PCR and qRT-PCR validation of eight randomly selected genes confirms time2splice predictions. Validated targets include iab4 (which has known functional links to CLAMP) and genes encoding splicing regulators (fus, pep, sc35) and chromatin regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation experiments (C80) provide important confirmation of the computational predictions, with successful validation of 8/8 tested genes. The inclusion of iab4 with known CLAMP connections (C81) and genes encoding splicing/chromatin regulators (C82) strengthens confidence in the biological relevance of the identified targets. The validation rate suggests the computational approach is reliable, though testing additional genes would further strengthen confidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C151"
+    ],
+    "result": "Because sex-specifically spliced genes in both males and females encode developmental regulators, the authors propose that sex-specific developmental distinctions may occur earlier than previously thought, potentially explaining variable penetrance of developmental disorders between sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the Gene Ontology analysis clearly shows enrichment for developmental processes (C148), the broader implications for developmental trajectories (C149-C151) are speculative. The connection to developmental disorders is interesting but not directly tested. This represents a reasonable hypothesis for future investigation but goes beyond what the current data directly support. Additional functional studies would be needed to validate these developmental consequences.",
+    "result_type": "MINOR"
+  }
+]

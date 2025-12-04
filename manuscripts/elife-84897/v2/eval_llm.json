@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The study used 7 male Long Evans rats (6-12 months, 400-500g) maintained at 85% body weight, with 4 animals targeting ACC and 3 targeting SMC. The behavioral apparatus consisted of a box with specific dimensions (25x34 cm floor, 23 cm walls) equipped with infrared beam-break detectors and liquid reward delivery (0.1 ml drops of 10% sucrose).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide comprehensive methodological details about subjects and apparatus that are clearly stated in the Methods section. These are standard experimental parameters that are appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "Expert animals flexibly discovered and exploited the locally-relevant latent target sequence within tens of trials following block transitions, even with up to 30% sporadic reward omission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 describe robust behavioral performance supported by data in Figures 1b-c and 2b, with quantitative evidence showing animals adapted quickly to block transitions despite reward omission. The behavioral flexibility is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "ACC neural activity reliably encodes sequence identity, with linear classifiers achieving near-perfect discrimination between 'LLR' and 'RRL' sequences (median error 0.0). Importantly, sequence encoding persists when controlling for individual actions, immediate history, and reward proximity (median errors 0.10-0.13), and differs significantly from non-sequential task performance (p<10^-12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 present a systematic series of decoding analyses with appropriate controls. The cross-validated classification errors are reported with statistical comparisons, and the authors properly address confounds including action identity, behavioral history, and reward proximity. The progression from basic to controlled analyses strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "At least 76% of recorded ACC units (787 of 1042) displayed significant modulation in at least one of five analysis windows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 reports a clear quantitative finding with appropriate caveats about statistical power limitations. The widespread modulation across the population supports the main findings, though the authors correctly note this is a lower bound estimate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "ACC ensemble representations show marked separation between 'dominant' and 'exploratory' contexts (Euclidean distance 0.73\u00b10.18 vs 0.268\u00b10.077 for shuffled, p<10^-12). This separation is context-specific, stable across time for the same context, and independent of reward delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 demonstrate robust representational reorganization with appropriate statistical controls (shuffling) and multiple validation analyses. The finding that representations are stable within context but differ between contexts, and persist without reward, is well-supported by quantitative comparisons with proper statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "Contextual reorganization of ensemble activity is less pronounced in M2 and SMC compared to ACC, especially in the more caudal SMC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 presents comparative data across brain regions showing differential effects. The finding is supported by Figure 3g and Figure 3\u2014figure supplement 2, establishing regional specificity of the observed effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Local sequence prevalence (calculated over ~20 past trials) explains up to 80% of neural activity variance in individual ACC neurons (median 28%, IQR 42% across rostral ACC). The strongest modulation was observed in the rostral-most ACC portion homologous to primate area 32D, and the model's explanatory power was robust to the precise temporal window but diminished when using future trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 present the core finding about prevalence encoding with appropriate quantitative measures and spatial specificity. The temporal control (past vs future trials) strengthens the interpretation. The high explanatory power (up to 80%) is remarkable and well-documented with median and IQR values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "The prevalence-based model trained exclusively on 'exploratory' (unrewarded) sequence instances explained 0.13\u00b10.06 of ACC activity variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 demonstrates that prevalence encoding persists in the absence of reward, which is critical for distinguishing prevalence from reward-based explanations. The analysis on unrewarded trials provides strong evidence for the independence of prevalence encoding from reward.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Movement-related parameters (execution time and trajectory PC1) explain minimal ACC neural activity variance (0.025\u00b10.021 and 0.04\u00b10.04 respectively) compared to sequence prevalence. In expanded models, sequence prevalence regression weights (0.29-0.32) substantially exceed those for movement parameters (0.08-0.11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 address a critical confound by directly comparing prevalence with movement parameters. The z-score normalization of variables before regression allows direct comparison of weights. The substantially larger weights for prevalence argue against motor confounds, though more detailed movement analysis could strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Both sequence prevalence and sequence-specific reward prevalence contribute to ACC activity modulation, with regression weights of 0.285\u00b10.008 and 0.416\u00b10.012 respectively. Overall reward prevalence contributes minimally (weight 0.122\u00b10.003), and neither reward measure alone accounts for the model's explanatory power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 demonstrate that prevalence and reward both contribute to ACC dynamics, with sequence-specific reward being more important than general reward. The multiple regression approach with decorrelation checks (condition index 1-4) is appropriate. The finding that both factors contribute is important for understanding ACC function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Small ensembles of ACC neurons (as few as 10 prevalence-modulated units) can explain up to 60% of sequence prevalence variance. A constrained decoder with fixed weights across time windows retained substantial explanatory power (0.23\u00b10.02) compared to individually tuned models (0.36\u00b10.03).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 demonstrate that prevalence information is robustly encoded at the population level and can be decoded with fixed readouts. This has important implications for how downstream circuits might access this information. The comparison between flexible and fixed decoders is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Electrophysiological recordings were performed using tetrode arrays (4 twisted 13\u03bcm wires, gold-plated to 200-300k\u03a9) implanted at specific stereotaxic coordinates (ACC: 3.0mm anterior, 0.8mm lateral; SMC: 2.0mm posterior, 1.2mm lateral to Bregma). Data were collected wirelessly at 30kHz sampling rate with 600Hz-6KHz filtering during 3-4 hour sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C76 provide comprehensive technical details about recording methods. These are standard procedures that are clearly documented and appropriate for the study. The wireless recording system is particularly suitable for the behavioral task.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Pharmacological inactivation of putative rat SMC with muscimol (0.1\u03bcg/ml, 0.50\u03bcl per hemisphere) impaired self-guided higher-order action sequencing while preserving basic trial structure. Animals continued completing trials but no longer performed target sequences above chance levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 present causal evidence for SMC involvement in sequencing, with C80-C83 providing methodological details. The dissociation between impaired sequencing and preserved basic behavior is important. However, the claim would be stronger with quantitative behavioral measures and statistical tests comparing pre- and post-inactivation performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Data analysis employed specific inclusion criteria (\u2265200 sequence instances, production rate >0.15), square-root transformation of spike counts for variance stabilization, 5-fold cross-validation for classification, and prevalence calculation using binary vectors convolved with causal half-Gaussian kernels (\u03c3=20 trials). Linear models were fit independently for five analysis windows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C94 document the analytical pipeline with appropriate justifications. The square-root transformation for Poisson data (C86) is statistically sound. The cross-validation approach (C88-C89) is appropriate. The prevalence calculation method (C90-C91) is clearly defined. These methodological choices are well-justified and properly implemented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C52"
+    ],
+    "result": "ACC is thought to play a critical role in flexible strategy deployment and contextually-appropriate strategy selection, with medial frontal cortical areas coordinating adaptive behavioral changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 and C52 accurately represent established views in the field, supported by appropriate citations. These provide necessary context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Previous work has proposed diverse roles for ACC including context separation, motor state tracking, self-directed action implementation, and value-based decision-making. Recent suggestions propose ACC encodes post-decision subjective value, though a unifying account remains elusive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C55 accurately summarize relevant prior literature with appropriate citations. These establish the scientific context and identify gaps that the current work addresses. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C63",
+      "C64"
+    ],
+    "result": "The authors interpret their findings to suggest that 'network resets' during exploration reflect functional reorganizations that tag action plans with context-specific representations. They propose that ACC's role in establishing agency reconciles prevalence encoding with causal evidence for evaluating alternative action plans, refining the hypothesis that ACC processes self-related information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C57 and C63-C64 present interpretations that extend beyond the direct data. While the interpretation is plausible and integrates current findings with prior work, it remains speculative. The proposed role in 'establishing agency' is an interesting hypothesis but would require additional experiments to test directly. The interpretation is reasonable but not definitively supported by the current data alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors speculate that ACC's prevalence encoding might support frequency-based exploration, agency estimation through statistical learning, or reflect various contextual factors (cognitive load, social settings, visceral states). They propose that their 'agency' interpretation is more falsifiable than previous 'self-generated action' views and suggest future experiments manipulating reward statistics to induce miscalculations of agency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C62 and C65-C66 are explicitly speculative, proposing potential computational roles and future experiments. While these are interesting hypotheses grounded in the data, they are appropriately presented as speculation rather than established findings. The proposed experiments (C66) would indeed help test the agency hypothesis.",
+    "result_type": "MINOR"
+  }
+]

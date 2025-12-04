@@ -1,0 +1,359 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The manuscript establishes the biological context and motivation for studying germline-encoded TCR-MHC interactions. T cells recognize pathogens through TCR-pMHC interactions involving both germline-encoded and hypervariable regions, but experimental investigation has covered only a small fraction of possible interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide well-established background knowledge about T cell biology and TCR-pMHC interactions, supported by general immunological knowledge and the manuscript's later quantification showing <0.01% coverage of possible interactions (C31). These claims appropriately frame the research problem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C33",
+      "C34",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The study performed the first comprehensive computational analysis of all possible germline-encoded TCR-MHC contacts in humans using the AIMS software, analyzing 882 class I MHC sequences, 44 class II \u03b1 chains, and 431 class II \u03b2 chains alongside all productive TRAV and TRBV genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C33-C34, and C38-C40 describe the scope and methodology of the computational analysis. The dataset sizes are clearly stated and the AIMS approach is described as enabling analysis independent of CDR3. This represents a novel comprehensive analysis of the germline-encoded interaction space.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C35",
+      "C36",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C113",
+      "C114"
+    ],
+    "result": "Germline-encoded TCR-MHC interactions conserved at the sequence level are rare due to high amino acid diversity in TCR CDR1 and CDR2 loops. TRAV and TRBV genes show greater diversity than polymorphic HLA alleles, with multiple CDR loop sites harboring over 10 unique amino acids, making conserved interactions across all molecular combinations highly unlikely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C35-C36, C41-C44, C46-C47, C113-C114 are supported by Shannon entropy analysis (Figure 2B) showing TRAV/TRBV diversity exceeds HLA diversity, with CDR loops reaching >3 bits entropy versus ~1.5 bits for MHC \u03b1-helices. The conclusion that previously identified conserved interactions are exceptions is logically supported by the diversity data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Mutual information calculations demonstrate lack of co-variation between germline-encoded TCR and MHC residues in both humans and other mammals, persisting even when limited to crystallized TCR-MHC pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by mutual information analyses shown in Figure 2 supplements 1-4. The lack of significant mutual information between TCR and MHC sequences, even in crystallized complexes, provides independent validation of the diversity-based conclusions about lack of conserved interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C115"
+    ],
+    "result": "Biophysical diversity analysis shows that substantial sequence diversity in TRAV/TRBV genes corresponds to biophysical diversity in CDR loops. In contrast, KIR-MHC interactions show full conservation of interacting residues. The YXY motif, while evolutionarily conserved in some TRBV genes, would be disrupted by substitutions in many TRBV or MHC variants, suggesting conserved TCR-MHC interactions are exceptions and CDR1/CDR2 adopt opportunistic binding strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C59, C115 are supported by position-sensitive charge and hydropathy analyses (Figure 3, Figure 3 supplement 1) showing biophysical diversity in TCR CDRs contrasts with KIR conservation (Figure 3C-E). The YXY motif analysis (Figure 3F) demonstrates that even known conserved motifs are incompatible with many TRBV/MHC combinations, supporting the opportunistic binding model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "AIMS interaction potential calculations reveal strong differences in germline-encoded recognition strategies across TRAV/TRBV genes. TRAV genes show greater variance in MHC class I interaction strength than TRBV genes. Specific genes like TRAV38-1/38-2/19 have strongest interactions while TRBV7-2/7-3 have severely limited interaction potential. TRBV alleles enriched in celiac disease patients (7-2, 20-1, 29-1) all show low AIMS interaction potential with HLA molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C70 are supported by AIMS interaction potential data (Figure 4, Figure 4 supplements 1-2). The validation of AIMS (C60-C61, 80% accuracy) from prior work supports the method. The correlation between low interaction potential and disease-associated TRBV alleles (C65-C67) is intriguing but represents correlation rather than causation. The differential CDR loop utilization (C68-C70) is directly shown in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Structural validation using 182 human TCR-pMHC complexes shows the normalized AIMS interaction potential is in qualitative agreement with crystal structure contact matrices. TRAV sequences predicted to be stronger binders show significantly increased CDR1/2 sidechain contacts with MHC, though this is not statistically significant for TRBV. CDR3-peptide interactions can dominate the interface and override germline-encoded interaction predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C80 are supported by structural analysis (Figure 5). The qualitative agreement between AIMS predictions and crystal contacts (C72) validates the approach, though discrepancies exist for hydrophobic interactions (C73) and PDB biases (C74). Statistical significance for TRAV but not TRBV (C75-C76) is appropriately noted. The super-bulged peptide example (C79) demonstrates limitations when CDR3-peptide interactions dominate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Interaction potential analysis suggests TCR \u03b2-chain interactions with HLA \u03b11-helix moderately bias binding orientation for class I MHC, while the \u03b12-helix is weakly involved. For class II MHC, interactions are driven by the \u03b2-chain helix, though the model incorrectly predicts TCR \u03b2-chain should interact most strongly with HLA class II \u03b2-chain helix (canonical binding shows opposite pairing).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C88 present findings about docking orientation biases (Figure 6). While C81-C85 are supported by the interaction potential distributions, the class II predictions (C86-C87) are acknowledged to be incorrect relative to known canonical docking (C88). This discrepancy is later explained by per-residue analysis (C96-C97) but indicates the aggregate interaction potential has limitations for class II molecules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Per-residue interaction potential analysis reveals conserved patterns of peak interaction potentials surrounded by drop-offs, with distinctly bimodal distributions for most MHC helices. For class I, TCR \u03b2-chain binds \u03b11-helix broadly while TCR \u03b1-chain binds \u03b12-helix in discrete regions. Class II shows more defined bimodal binding registers. Predictions show good agreement with crystal contacts, particularly for \u03b12-helix interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C97 are supported by per-residue analysis (Figure 7C-D). The bimodal distributions (C90) and differential binding patterns for class I (C91-C92) versus class II (C93) are clearly shown. Validation against crystal structures (C94-C95) demonstrates predictive power. The explanation for class II discrepancies (C96-C97) resolves the earlier uncertainty about aggregate interaction potentials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C117",
+      "C118"
+    ],
+    "result": "Regions of low interaction potential on MHC helices, rather than conserved interactions, generate the preference for conserved TCR-pMHC docking orientation. These regions correlate with near-zero hydropathy and low entropy, corresponding to well-conserved alanine and glycine residues in central regions of MHC \u03b1-helices across species. The \u03b12 and \u03b2-chain helices play key roles in determining conserved docking angles through centrally located regions of reduced interaction potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C106, C117-C118 present the central mechanistic finding. The correlation between low interaction potential, near-zero hydropathy, and low entropy (C99-C101) is supported by Figure 8A-B. Conservation of alanine/glycine in these regions across species (C102-C104, Figure 8C-D, Figure 8 supplement 1) and their central location on helices (C105, Figure 8E-F) strongly support the model that regions of low interaction potential define docking orientation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The findings support a broader, dynamic interpretation of the TCR-pMHC interface where TCR CDR loops sample local regions of increased interaction potential on the MHC surface using an opportunistic binding approach. Each TRAV-TRBV pairing finds a unique binding approach within constraints permitted by the MHC molecular surface, with the MHC molecule largely defining the interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 present the interpretive model emerging from the data. The model is consistent with prior 'interaction codon' concepts (C119) but emphasizes dynamics and opportunism (C120) rather than rigid docking modes. The conclusion that MHC defines the interface (C122) is supported by the finding that conserved low-interaction-potential regions on MHC constrain binding orientation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "All-atom molecular dynamics simulations of a TCR-pMHC complex demonstrate short lifetimes of intricate molecular interaction networks. Glutamine sidechain motility significantly alters interpretation of a tyrosine-alanine interaction from a well-evolved binding notch to a consequence of other factors. These dynamic interpretations are consistent with broad biophysical compatibility suggested by interaction potential results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C128 are supported by MD simulations (Figure 9, Figure 9 supplement 1) showing sidechain flexibility over 80ns trajectories. The simulations appropriately illustrate that crystal structures represent snapshots (C127) and that specific sidechain interactions may be transient (C126). This supports the dynamic, opportunistic binding model, though the simulations are limited to one complex and short timescales relative to binding kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Different TRAV/TRBV genes have distinct binding strategies with MHC, with some favoring CDR1 or CDR2 binding accompanied by compensatory contributions. This diversity permits a range of recognition strategies where CDR3 loops bind peptide strongly while CDR1/CDR2 provide basal support, allowing exquisite specificity without germline-encoded CDRs dominating the interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C136 synthesize findings about V-gene diversity and binding strategies. The differential CDR loop utilization (C130-C132, Figure 4) and compensatory contributions are supported by data. The proposed model (C134) that CDR3 provides specificity while CDR1/2 provide support is consistent with the interaction potential data and cited literature (C133). The functional interpretation (C135-C136) is logical though somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The general TCR-MHC compatibility does not rule out reversed-docking TCRs, which are deficient in signaling due to distance-sensitivity of coreceptor-associated Lck. Over evolutionary history, pathogenic pressure may have forced drift from rigid coevolution toward loose compatibility, even at the cost of thymic deletion of many receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137-C140 present evolutionary speculation. While reversed-docking TCR signaling deficiency (C138) is supported by citations, the evolutionary interpretations (C139-C140) are speculative hypotheses about tradeoffs between diversity and canonical binding. These are plausible but not directly tested by the data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The computational approach can provide good first estimates of TCR-MHC binding propensity independent of peptide and CDR3, though the simplified interaction potential has room for improvement, particularly regarding spatial positioning of interacting structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C147 appropriately assess the utility and limitations of the approach. The validation against crystal structures (C72, C75, C94-C95) supports that strong approximations can be generated (C146), while acknowledged limitations (C147) regarding spatial positioning and class II predictions demonstrate appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "V-genes with weak MHC interaction potential (TRBV7-2, 7-3, 20-1, 29-1) are associated with autoimmune diseases. The hypothesis is proposed that lack of germline-encoded TCR-MHC interactions may lead to CDR3-dominated binding that increases cross-reactivity and enables thymic escape of autoreactive TCRs through stochastic conformational dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C148-C156 present an intriguing hypothesis linking weak germline interactions to autoimmunity. The correlation between low interaction potential and disease-associated TRBV alleles (C150, C67) is supported by data. However, the mechanistic model (C152-C156) for thymic escape is speculative. The association with autoimmunity from cited studies (C151) supports plausibility but causation is not established. This represents a testable hypothesis requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The role of specific MHC alleles in autoimmunity (e.g., HLA-DQ2.5 in celiac disease) cannot be explained by AIMS interaction potentials, which predict similar interaction strengths across HLA molecules. Disease associations may relate to peptides presented by these molecules, as diversity is concentrated in peptide-binding regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C162 appropriately acknowledge limitations of the approach for explaining MHC allele-disease associations. The observation that interaction potentials are similar across HLA molecules (C159, Figure 4) while diversity concentrates in peptide-binding regions (C160, Figure 2) logically suggests peptide presentation drives disease associations (C160), consistent with cited literature (C161). This represents honest assessment of what the model cannot explain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Despite great variability in TCR-pMHC complex formation, docking orientation falls within a tight distribution of angles nearly independent of CDR3 and peptide sequence variation, suggesting germline-encoded interactions play fundamentally important roles, though the mechanism (direct enforcement vs. thymic selection) remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 establish the key observation motivating the study. The tight distribution of docking angles (C20-C21) is supported by Figure 1C-D showing polar coordinate plots. The inference that germline regions are important (C22) is logical, while acknowledging uncertainty about mechanism (C23) appropriately frames the research question.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "General rules of TCR-pMHC engagement have been identified since 1996, but numerous exceptions exist including CDR3-dominated interactions, germline CDR-peptide interactions, bulged peptides, and reversed docking. Evidence for conserved interactions comes from limited studies, and structural coverage represents <0.01% of possible TCR-MHC germline interaction space. Structural modeling approaches have limitations in predicting CDR loop conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C32 provide comprehensive background on TCR-pMHC structural biology. The historical context (C9-C10) and canonical rules (C11-C15) are well-established. Exceptions (C16-C19) are supported by citations. The calculation that 149 structures cover <0.01% of ~2 million possible combinations (C28-C31) is mathematically sound. Limitations of structural modeling (C32) are appropriately noted with citations.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1735 @@
+{
+  "submission": {
+    "id": "e56970e7-1e03-4383-9bff-c118b1de30c6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:11:29.551328Z",
+    "updated_at": "2025-12-04T02:11:29.551328Z"
+  },
+  "content": [
+    {
+      "id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "submission_id": "e56970e7-1e03-4383-9bff-c118b1de30c6",
+      "content_type": "manuscript",
+      "content_text": "# Flexible specificity of memory in Drosophila depends on a comparison between choices\n\n## Authors\n\n- Mehrab N Modi<sup>1</sup>\n- Adithya E Rajagopalan<sup>1</sup>\n- Herv\u00e9 Rouault<sup>1</sup>\n- Yoshinori Aso<sup>1</sup> ([ORCID: 0000-0002-2939-1688](https://orcid.org/0000-0002-2939-1688))\n- Glenn C Turner<sup>1</sup> ([ORCID: 0000-0002-5341-2784](https://orcid.org/0000-0002-5341-2784)) \u2020\n\n### Affiliations\n\n1. HHMI Janelia Research Campus Ashburn United States ([ROR:013sk6x84](https://ror.org/013sk6x84))\n2. The Solomon H. Snyder Department of Neuroscience, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n3. Aix-Marseille Univ, Universite\u0301 de Toulon, CNRS, CPT (UMR 7332), Turing Centre for Living Systems Marseille France ([ROR:02m9kbe37](https://ror.org/02m9kbe37))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMemory guides behavior across widely varying environments and must therefore be both sufficiently specific and general. A memory too specific will be useless in even a slightly different environment, while an overly general memory may lead to suboptimal choices. Animals successfully learn to both distinguish between very similar stimuli and generalize across cues. Rather than forming memories that strike a balance between specificity and generality, Drosophila can flexibly categorize a given stimulus into different groups depending on the options available. We asked how this flexibility manifests itself in the well-characterized learning and memory pathways of the fruit fly. We show that flexible categorization in neuronal activity as well as behavior depends on the order and identity of the perceived stimuli. Our results identify the neural correlates of flexible stimulus-categorization in the fruit fly.\n\n## Introduction\n\nAnimals routinely encounter competing options and must select between them to survive in complex environments. Making such a choice requires assigning options with subjective values that can be updated through learned experience (Hare et al., 2011; Hunt et al., 2012; Glimcher and Fehr, 2013). In such a framework, storing and updating values for every potential option separately would be computationally taxing (Seger and Miller, 2010). Instead, it is beneficial for the brain to maintain overlapping sensory representations, which would allow options to be grouped downstream into categories based on sensory similarity and assigned with common values (Seger, 2008). Such a coding-scheme would allow animals to distinguish between options in different categories and perform appropriate behavioral responses (Kudryavitskaya et al., 2021). For example, the most adaptive response when faced with a choice is to pick the highest value stimulus, taking into account the values of available alternatives (Glimcher and Fehr, 2013; Hayden, 2018; Padoa-Schioppa and Conen, 2017). However, this scheme would not readily allow for distinguishing between two options from the same category. It is therefore essential in such a coding-scheme that category boundaries be flexible. One prominent hypothesis suggests that animals directly compare the values of the available stimuli and make use of this relative value signal to guide flexible categorization (Itti and Koch, 2001; Carello and Krauzlis, 2004; Mysore and Knudsen, 2011; Mysore et al., 2011). In this study, we ask how this flexibility arises and identify neural correlates of stimulus comparison in the relatively simple learning and memory circuitry of the Drosophila mushroom body.\n\nThis flexibility can be studied by examining how animals use an associative memory in two different tasks: discrimination and generalization (Mackintosh, 1974). In a discrimination task, the animal has to choose between a cue associated with reward and a second cue that could either be similar to (hard discrimination) or distinct (easy discrimination) from the original cue. In the generalization task, the flies have to choose between a cue that is perceptually similar to the trained cue and a cue that is very different. The correct choice in this task depends on the animal generalizing its learned response to the similar cue. So the response to the perceptually similar cue differs between the two tasks \u2013 the animal chooses it when generalizing and chooses against it when discriminating. Despite the need to switch choices, performance can be extremely high on both these types of tasks (Campbell et al., 2013; Xu and S\u00fcdhof, 2013; Chen and Gerber, 2014), suggesting that comparisons between available alternatives have a strong impact on animals\u2019 behavioral responses.\n\nWe employed these paradigms using aversive olfactory conditioning in Drosophila, as its well-studied memory circuit provides a strong framework to understand the neural basis of flexible categorization. Olfactory learning takes place in the mushroom body (MB), where odors are represented by sparse activity patterns of the 2000 intrinsic neurons termed Kenyon cells (KCs) (Turner et al., 2008; Murthy et al., 2008; Honegger et al., 2011). Although different odor response patterns are largely uncorrelated, chemically similar odors can elicit partly overlapping patterns of activity (Campbell et al., 2013; Lin et al., 2014). These sensory representations are converted into value-representing memory traces that guide behavioral outputs downstream of the KCs, at the synapses that they form with MB output neurons (MBONs) (Aso et al., 2014b; Hige et al., 2015a; Owald et al., 2015; Villar et al., 2022). These ~30 distinct MBONs form compartments that integrate input from different subsets of KCs (Ito et al., 1998; Strausfeld et al., 2003; Lin et al., 2007; Tanaka et al., 2008; Aso et al., 2009; Aso et al., 2014a; Takemura et al., 2017; Li et al., 2020). Furthermore, these synapses are plastic and primarily undergo depression as flies learn an olfactory association (Berry et al., 2018; Cohn et al., 2015; Hige et al., 2015a; Perisse et al., 2016; S\u00e9journ\u00e9 et al., 2011; but see also Pla\u00e7ais et al., 2013; Stahl et al., 2022). This plasticity is mediated by dopaminergic neurons (DANs) that convey information about reward or punishment and arborize in corresponding compartments as the MBONs forming a series of DAN-MBON modules (Aso et al., 2014a).\n\nThe degree to which KC response patterns overlap has been shown to drive the specificity of learning and resulting behavior (Campbell et al., 2013; Lin et al., 2014). During learning, synapses from odor-activated KCs to specific MBONs are depressed. A similar odor with an overlapping KC response pattern thus also exhibits a reduced synaptic drive onto the same MBONs (Hige et al., 2015a; Perisse et al., 2016; Berry et al., 2018). The greater the overlap, the more extensive the depression of this other odor\u2019s activation of the MBONs, and the greater the generalization. In contrast, when overlap is low, downstream MBON activity is minimally affected and the animal discriminates between the two cues. Although this model has a lot of explanatory power, it does not include a means for explicitly comparing between available options. A comparison would allow for the estimation of a relative value between the available options and explain the high performance of flies in both generalization and discrimination tasks. The explanatory framework must therefore move beyond the idea of overlap in sensory representations.\n\nIn this study, we combined neural activity measurements with behavioral experiments, to expand our understanding of flexible categorization. We observed that flies could achieve high levels of performance for both discrimination and generalization tasks and identified a single MB compartment capable of supporting both. Surprisingly, MBON responses in this compartment showed no measurable stimulus-specificity to simple pulses of the two similar odors we used, despite being able to distinguish them behaviorally. However, when we presented odors in sequence, one transitioning immediately into the other, similar to what flies experience in the behavioral task, we found that MBON responses to these odors were clearly distinct. These findings show that MBON activity is modulated by a temporal comparison of the alternatives presented to the fly, allowing for switches in the categorization of odor stimuli. Importantly, KC representations did not show categorization switching to either simple stimuli or transitions suggesting the involvement of downstream mechanisms. Moreover, behavioral experiments showed that these comparisons are made when stimuli are experienced close together in time. Both imaging and behavior provide complementary evidence that comparing available alternatives \u2018side-by-side\u2019 in time is important for flexible categorization.These results show that the MB circuit implements a comparison, augmenting small differences between overlapping sensory representations to guide flexible stimulus categorization and choice behavior.\n\n## Results\n\n### Precision of memory recall depends on MB compartment\n\nPrevious work has shown that flies are capable of high levels of performance on both hard discrimination and generalization tasks (Campbell et al., 2013). This study identified a trio of odors to use for experiments on the specificity of memory, based on the degree of overlap of KC response patterns: pentyl acetate (PA) butyl acetate (BA) and ethyl lactate (EL) (Figure 1A, left). PA and BA are chemically similar and elicit highly overlapping response patterns in the KC population (Campbell et al., 2013). EL is distinct, both chemically and in terms of KC response patterns. Choices between different combinations of these cues can be used to test flies\u2019 ability to flexibly classify odors and measure memory specificity. Take, for example, an experiment where flies are trained to form an association with PA. We can present flies with a difficult discrimination task by giving them a choice between the similar odors (PA and BA), or an easy discrimination with a choice between the paired odor (PA) and the dissimilar odor (EL) (Figure 1A, right). We can also test whether the association with PA generalizes to the similar odor BA, by giving flies a choice between BA and EL. Since we use these odors in many different combinations for different task structures, with and without reciprocal design, here we will use A to refer to the paired odor (PA or BA) and A\u2019 to refer to the other similar odor, which is unpaired, while B always refers to the dissimilar odor, EL. With this nomenclature, hard discrimination involves an A versus A\u2019 choice, easy discrimination is A versus B and generalization is A\u2019 versus B (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig1-v2.jpg)\n\n**Figure 1.:** (A) Left: Chemical structures of the three odors used in the study, the similar odors butyl acetate (BA) and pentyl acetate (PA) and the dissimilar odor ethyl lactate (EL). Middle: During training the similar odors are interchangeably used as the odors that are paired (A) or unpaired (A\u2019) with optogenetic reinforcement (LED). Right: Trained flies are then given one of three different choices between odors in opposing arena quadrants. These choices represent the three kinds of tasks used here to study memory specificity. Performance index measures the bias in the distribution of flies across the different quadrants (see Methods). The circles depict fly population behavior in our arenas and the vertical bars depict stimulus choices. The dashed, red line depicts the discrimination boundary in each choice. This boundary shifts relative to the light-green stimulus, depending on the options. (B) Mushroom body learning schematic. KCs activated by an odor (blue) form synapses on MBONs in two compartments (red and gray shading). Reinforcement stimulates the DAN projecting to one compartment (red) leading to synaptic depression. (C) Behavior protocols for discrimination tasks at two levels of difficulty. Colored bars represent odor delivery periods, red dashes indicate LED stimulation for optogenetic reinforcement. A represents the paired odor, A\u2019 the similar odor and B the dissimilar odor. (D) Significantly lower performance on the hard discrimination task with reinforcement to \u03b13 (p=0.007, n=12). Flies received 10 cycles of training and were tested for memory 24 hours later. CsChrimson-mVenus driven in DAN PPL1-\u03b13 by MB630B-Gal4. (E) No significant difference in performance on easy versus hard discrimination with reinforcement to \u03b32\u03b1\u20191 (p=0.08, n=12 reciprocal experiments). Flies received three cycles of training and were tested for memory immediately after. CsChrimson-mVenus driven in DAN PPL1 \u03b32\u03b1\u20191 by MB296B-Gal4. (F) Behavior protocol for generalization. Scores here are compared to a control protocol where light stimulation is not paired with odor presentation in time. (G) No significant difference in performance on generalization and easy discrimination with reinforcement to \u03b13 (p=0.84, n=12). Flies received 10 cycles of training and were tested 24 hr later. (H) No significant difference in performance on generalization and easy discrimination with reinforcement to \u03b32\u03b1\u20191 (p=0.89, n=12 unpaired control performance scores). Flies received three cycles of training and were tested immediately after. (I) Rescue of the dopamine biosynthesis pathway in DAN PPL1-\u03b32\u03b1\u20191 is sufficient for performance on the hard discrimination task (p=0.04, n=8). Black circles and error bars are mean and SEM. Statistical comparisons made with an independent sample Wilcoxon rank sum test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A and B) Flies with Chrimson driven by an empty split-Gal4 driver, i.e. with no Chrimson expression did not learn any of the tasks. Performance indices not significantly different from 0 (n=12, p=0.052, 0.38 and 0.91 and for easy, hard discrimination and generalization; single-sample, Wilcoxon signed rank test). (C) Flies with no expression of dopamine in their nervous systems (knockout) are capable of performing the easy discrimination task as well as flies with dopamine rescued in DAN PPL1-\u03b32\u03b1\u20191 (rescue n=6, knockout n=12, p=0.22, Wilcoxon rank sum test). (D) Flies with dopamine expression rescued in DAN PPL1-\u03b32\u03b1\u20191 alone are capable of generalization, while flies with dopamine knockout are not (n=6 for rescue and knockout, p=0.041, Wilcoxon rank sum test).\n\nAlthough previous work showed flies can flexibly categorize odors and learn both generalization and discrimination tasks using these odors, electric shock was used as the reinforcement (Campbell et al., 2013). Consequently the synaptic changes responsible were likely distributed across many areas of the mushroom body, and possibly elsewhere. To confine plasticity to a more restricted region of the brain, we used optogenetic reinforcement, pairing the activation of specific DANs with odor presentation (Figure 1B; Claridge-Chang et al., 2009; Schroll et al., 2006). We used drivers to express CSChrimson in specific DANs from the PPL1 cluster that target different compartments involved in aversion learning: \u03b13 (MB630B) and \u03b32\u03b1\u20191 (MB296B) (Aso et al., 2014a; Aso and Rubin, 2016). Since compartments have different time courses for memory acquisition and recall (Aso and Rubin, 2016), the number of repetitions of odor-reinforcement pairing and the time between training and testing differed depending on the compartment tested (see Methods).\n\nWe found that these two compartments exhibited contrasting properties in the easy and hard discrimination tasks (Figure 1C). Flies that received reinforcement from DAN PPL1-\u03b13 were poor at the hard discrimination, although they performed significantly better on the easy task (Figure 1D, p=0.007, n=12). On the other hand, flies that received optogenetic reinforcement via DAN PPL1-\u03b32\u03b1\u20191 performed the hard discrimination as effectively as the easy discrimination (Figure 1E, p=0.08, n=12). Empty driver controls performed no better than chance at either easy or hard discrimination (Figure 1\u2014figure supplement 1A, p=0.052, p=0.38, n=12). These results show that these two compartments have different capacities for discrimination, with \u03b13 weakly discriminating and \u03b32\u03b1\u20191 stronger.\n\nThe difference in ability to support fine discrimination between these two compartments raises the question of whether and how they differ in a generalization task. In a simple model where performance reflects overlap between the test stimulus and the trained odor, the harder the discrimination, the easier the generalization. Does the weakly discriminating \u03b13 compartment support strong performance on generalization, while the strongly discriminating \u03b32\u03b1\u20191 compartment does not? Or does the \u03b32\u03b1\u20191 compartment somehow have the flexibility to support strong performance on both tasks?\n\nWe tested this by examining relative performance on generalization and easy discrimination tasks in these two compartments. We kept a parallel structure between the two types of tasks by quantifying performance against control experiments where optogenetic stimulation was delivered unpaired to odor delivery (Figure 1F; see Methods; note that since these experiments did not have reciprocal controls the performance scores in Figure 1G\u2013H are computed differently than in Figure 1D\u2013E). As expected, training flies using DAN PPL1-\u03b13 yielded similarly high performance on both generalization and easy discrimination tasks (Figure 1G, p=0.84, n=12), while empty driver controls performed no better than chance (Figure 1\u2014figure supplement 1A and B, p=0.052, p=0.91, n=12). However, performance on the generalization task was also high in the strongly discriminating compartment \u03b32\u03b1\u20191, with a performance level indistinguishable from that in the easy discrimination task (Figure 1H p=0.89, n=12).\n\nAlthough the experiments above target optogenetic punishment to specific sites within the MB, there is the possibility that there are secondary sites of plasticity that contribute to the behavioral performance we observe, via indirect connections between MB compartments. To more rigorously confine plasticity to \u03b32\u03b1\u20191, we performed an experiment where dopamine production is restricted solely to DAN PPL1-\u03b32\u03b1\u20191 within the fly. Dopamine is necessary for flies to show any measurable aversive learning (Aso et al., 2019; Kim et al., 2007; Qin et al., 2012), and its production requires the Drosophila tyrosine hydroxylase enzyme, DTH (Cichewicz et al., 2017; Neckameyer and White, 1993; Riemensperger et al., 2011). So we examined performance of flies lacking DTH throughout the nervous system (Cichewicz et al., 2017), but with production rescued specifically in PPL1-\u03b32\u03b1\u20191 by driving expression of UAS-DTH using the split hemidrivers TH-DBD and 73F07-AD (Aso et al., 2019). Performance was significantly higher for the DTH-rescue flies than for the mutants in hard discrimination (Figure 1I, p=0.038, n=8) and generalization tasks (Figure 1\u2014figure supplement 1D, p=0.041, n=6), indicating that plasticity in this set of synapses is sufficient for both behaviors (For control experiments with easy discrimination, see Figure 1\u2014figure supplement 1C).\n\nThese results show that a single memory trace formed via plasticity confined to \u03b32\u03b1\u20191 supports strong performance on the hard discrimination and generalization tasks. We note that the choice outcomes of these paradigms are opposite: in the generalization experiments flies distribute away from odor A\u2019, while in the hard discrimination task, flies accumulate in the A\u2019 quadrant. We next sought to understand how plasticity in this one compartment can result in this flexible categorization of A\u2019.\n\n### KC inputs to both MB compartments contain enough information for discrimination\n\nWe started by evaluating whether the odor inputs to the \u03b32\u03b1\u20191 and \u03b13 compartments carry enough information to discriminate between the two similar odors used in our behavior experiments. Previous measurements of KC responses to these odors showed that they exhibit overlapping response patterns, but did not determine whether that overlap was differentially distributed across different KC subtypes (Campbell et al., 2013). We used two-photon calcium imaging to measure cell population responses in the KC subtypes that send axons to \u03b32\u03b1\u20191 (\u03b3 and \u03b1\u2019/\u03b2\u2019 KCs) and \u03b13 (\u03b1/\u03b2 KCs) (Figure 2A and B). In separate sets of flies, GCaMP6f (Chen et al., 2013) was expressed in \u03b3 KCs (d5HT1b Yuan et al., 2006), \u03b1\u2019/\u03b2\u2019 KCs (c305a Armstrong et al., 2006; Krashes et al., 2007) and \u03b1/\u03b2 KCs (c739 McGuire et al., 2001). \u03b3 and \u03b1\u2019/\u03b2\u2019 KCs had to be imaged separately since there is no driver that exclusively labels both subtypes. The trial-averaged response traces of individual KCs for each of the three subtypes showed that many of the same cells respond to the two similar odors (PA and BA), but representations did not completely overlap (Figure 2C). Responses were very different for the dissimilar odor, EL. KC population response vectors from single trials, plotted as projections along the first two principal component axes (Figure 2D), also show the similarity in KC representations between the chemically similar odors. Finally, we examined the similarity of responses for individual KCs to the different pairs of odors. Pooling cells across all imaged flies, we found that similar odors elicited similar response strengths in individual KCs (Figure 2\u2014figure supplement 1A, \u03b3 KCs: r=0.74, p<0.001; \u03b1\u2019/\u03b2\u2019 KCs: r=0.76, p<0.001 and \u03b1/\u03b2 KCs: r=0.63, p<0.001). Correlation coefficients were lower and were not significant for the dissimilar odors (Figure 2\u2014figure supplement 1B, \u03b3 KCs: r=0.04, p=0.60; \u03b1\u2019/\u03b2\u2019 KCs: r=0.06, p=0.55 and \u03b1/\u03b2 KCs: r=\u20130.04, p=0.77).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of in vivo imaging preparation. (B) Example single-trial odor response patterns in \u03b1/\u03b2 KCs. \u0394F/F responses (color bar) are shown overlaid on baseline fluorescence (grayscale). Numbered circles indicate cells for which \u0394F/F traces are plotted below. Black bar indicates odor delivery. (C) \u0394F/F responses of different KC subtypes to the three odors used in this study. Rows show responses of individual KCs, averaged across trials, sorted by responses to PA. GCaMP6f was driven in \u03b3 KCs by d5HT1b-Gal4, in \u03b1\u2019/\u03b2\u2019 KCs by c305a-Gal4 and in \u03b1/\u03b2 KCs by c739-Gal4. Colored bars above plots indicate the odor delivery period. (D) Odor response patterns for the same example flies as in C, projected onto the first two principal component axes to show relative distances between representations for the different odors. (E) Decoder prediction accuracies, plotted across flies. Each gray circle is the accuracy of the decoder for one fly for a given odor, averaged across all trials. Black circles and error bars are means and SEM. For \u03b3 KCs (top), decoder accuracies for PA (n=7 flies, p=0.06) and BA (p=0.08) were not significantly different from EL accuracy. This was also true for \u03b1\u2019/\u03b2\u2019 KCs (middle, n=5 flies, p=0.13 for the PA-EL comparison and p=0.13 for BA-EL) and \u03b1/\u03b2 KCs (bottom, n=6 flies, p=0.63 for PA-EL and p=0.73 for BA-EL). All statistical testing was done with a paired-sample, Wilcoxon signed rank test with a Bonferroni-Holm correction for multiple comparisons. (C,D) In this figure, each shade of green denotes one of the two similar odor chemicals. But in subsequent figures, the darker shade represents the odor paired with reinforcement and the lighter shade, the unpaired, similar odor. In the reciprocal design we use, each of the odor chemicals is the paired odor in half the experimental repeats.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Scatter plots showing the similarity of the mean odor response of individual KCs to the two similar odors PA and BA. Correlations were significant across all three KC subtypes (\u03b3 KCs: Pearson\u2019s correlation coefficient, r=0.74, p<0.001; \u03b1\u2019/\u03b2\u2019 KCs: r=0.76, p<0.001; \u03b1/\u03b2 KCs: r=0.63, p<0.001). (B) Scatter plots as in A, but for dissimilar odors PA and EL. No significant correlations in this case (\u03b3 KCs: r=0.044, p=0.60; \u03b1\u2019/\u03b2\u2019 KCs: r=0.06, p=0.55; \u03b1/\u03b2 KCs: r=\u20130.04, p=0.77). (C) Decoder-predicted probability that the odor delivered was PA, plotted against time. Prediction for trials on which PA was delivered are plotted in dark green, BA \u2013 light green and EL \u2013 purple. The red line indicates the positive prediction threshold. The black bar at the top indicates odor delivery period. Solid lines are mean, and shading indicates SEM. Probabilities are plotted for the same example fly as in Figure 2C for each KC type.\n\nTo quantify how effectively KC activity patterns could distinguish between odors, we used logistic regression models to determine the probability a particular odor evoked the KC activity pattern observed on a given trial. We trained logistic regression decoders to recognize KC response patterns using leave-one-out cross-validation. We computed the average decoder accuracy for the 8 odor presentation trials of each odor for each fly. Decoder accuracies for the two similar odors were as high as they were for the dissimilar odor, across all KC subtypes (Figure 2E)(\u03b3 KCs: comparing accuracies for PA and EL p=0.06, BA-EL p=0.08, n=7 flies; \u03b1\u2019/\u03b2\u2019 KCs: PA-EL p=0.13, BA-EL p=0.13, n=5 flies; \u03b1/\u03b2 KCs: PA-EL p=0.63, BA-EL p=0.73, n=6 flies).\n\nEven though compartments \u03b32\u03b1\u20191 and \u03b13 receive olfactory input from totally distinct subsets of KCs, input activity patterns appear capable of supporting fine discrimination in all three KC subtypes. Is this information retained one synapse downstream, when hundreds of KCs converge onto the MBONs in these two compartments?\n\n### Plasticity in MBON \u03b32\u03b1\u20191 is not sufficiently odor-specific for discrimination\n\nWe next examined plasticity in the downstream MBONs, to test whether activity of MBON-\u03b32\u03b1\u20191 could potentially support fine discrimination after training. We carried out on-rig optogenetic reinforcement, and imaged MBON-\u03b32\u03b1\u20191 odor responses pre- and post-pairing (Figure 3A). \u03b32\u03b1\u20191 spans parts of both the \u03b3 and \u03b1\u2019 MB lobes, but receives reinforcement from the single DAN, PPL1-\u03b32\u03b1\u20191 (Aso et al., 2014a). Two MBONs send dendrites to the same region of neuropil; here we treat them as a single cell type, MBON-\u03b32\u03b1\u20191, and we imaged from their overlapping dendritic projections (Figure 3B and C). We expressed Chrimson88.tdTomato (Strother et al., 2017) in the DAN PPL1-\u03b32\u03b1\u20191 (driven by 82C10-LexA which also drives weak expression in compartments \u03b12 and \u03b13 Pfeiffer et al., 2013) and opGCaMP6f selectively in MBON-\u03b32\u03b1\u20191 (MB077B Aso et al., 2014a). We imaged MBON-\u03b32\u03b1\u20191 responses to pulses of all three odors, before and after pairing one of the similar odors with optogenetic reinforcement (Figure 3A\u2013C). We delivered two presentations of each odor stimulus before and after pairing, and imaged only one, to minimize adaptation effects (Berry et al., 2018). Based on previous studies, we expected to see depression of the MBON-\u03b32\u03b1\u20191 response specifically (or at least preferentially) for the reinforced odor (Berry et al., 2018; Cohn et al., 2015; Hige et al., 2015a; Owald et al., 2015; Perisse et al., 2016; S\u00e9journ\u00e9 et al., 2011). However, after pairing, MBON-\u03b32\u03b1\u20191 responses to A and A\u2019 were both strongly depressed (Figure 3D and E, p=0.001 for A and p=0.001 for A\u2019, n=11 flies). In fact we could not detect a difference in response size between the two, even though only one (A) had been paired with reinforcement (Figure 3F, p=0.77). As expected, responses to the dissimilar odor (B) were not affected (p=0.18).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig3-v2.jpg)\n\n**Figure 3.:** (A) Stimulus protocol for on-rig, in vivo training. Plasticity in MBON \u03b32\u03b1\u20191 was assessed by imaging pre- and post-pairing with optogenetic reinforcement via DAN PPL1-\u03b32\u03b1\u20191. There was no imaging during the pairing itself. Colored bars represent 5 s odor delivery (dark green: odor A paired; light green: odor A\u2019 unpaired similar; purple: odor B unpaired dissimilar). PA and BA were used as the paired odor for every alternate fly. (B) Schematic of experimental design. Expression of GCaMP6f in MBON-\u03b32\u03b1\u20191 driven by MB077B-Gal4 and Chrimson88-tdTomato in DAN PPL1-\u03b32\u03b1\u20191 by 82C10-LexA. Imaging plane in the \u03b3 lobe as indicated. (C) Example MBON-\u03b32\u03b1\u20191 single-trial odor response. \u0394F/F responses (color bar) are shown overlaid on baseline fluorescence (grayscale). White ROI indicates neuropil region for which a single-trial \u0394F/F trace is plotted below. Black bar indicates odor delivery. (D) MBON \u03b32\u03b1\u20191 \u0394F/F response traces pre- (grey) and post- (black) pairing (mean +- SEM, n=11 flies). Bars indicate 5 s odor delivery period; colors correspond to odor identities in a. (E) Response sizes pre- and post-pairing show a reduction for both paired (dark green, p=0.001), and similar unpaired (light green, p=0.001) odors but not the dissimilar odor (purple, p=0.18). Response amplitude calculated as mean \u0394F/F over an 8 s window starting at odor onset (inset). Connected circles indicate data from individual flies. (F) Data as in E, re-plotted to compare responses to the paired odor with responses to the unpaired, similar odor before and after training. Response sizes were not significantly different pre- (p=0.77) or post-pairing (p=0.77). Statistical comparisons made with the paired sample Wilcoxon signed rank test, with a Bonferroni Holm correction for multiple comparisons.\n\nThis strong depression of MBON-\u03b32\u03b1\u20191 responses to both similar odors suggests that downstream of the KCs, A and A\u2019 are grouped into the same category. Such a grouping should elicit the same behavior response to both odors and allow for generalization. How then do flies discriminate between them after learning in our hard discrimination task? We postulated that the apparent discrepancy between our behavioral observations and measurements of MBON activity might be because we did not adequately reproduce the fly\u2019s sensory experience when it is presented as a choice between two odors.\n\n### MBON responses to odor transitions reflect discrimination behavior\n\nWhen flies make a choice between two odors in the behavioral arena, they encounter an odor boundary, where the concentration of one odor rapidly drops off and the other rises. To mimic this experience while imaging neural activity on the microscope, we designed an odor delivery system to deliver rapid transitions between odors. We characterized the performance of this odor delivery system with a photo-ionization detector to measure odor concentration changes and an anemometer to measure airflow (Figure 4\u2014figure supplement 1).\n\nWe then examined how plasticity affects MBON-\u03b32\u03b1\u20191 responses to these odor transitions. As above, we used single odor pulses for training, to match how flies are trained behaviorally. However, we examined MBON responses to odor transitions pre- and post-pairing, to match how flies experience the choice between odors. These results showed a sharp contrast to our observations with single odor pulses. Surprisingly, the depression of responses to A\u2019 seen in single pulses was not readily apparent in an A to A\u2019 transition (Figure 4A). Responses were similar to pre-pairing levels when A\u2019 was preceded by A, but not when the order was reversed (Figure 4B). Indeed, quantifying the size of the MBON response to the second pulse showed A\u2019 responses were not significantly different pre- and post-pairing (Figure 4C; p=0.376, n=13). As expected, responses to A as the second pulse were significantly lower after pairing (Figure 4C; p<0.001, n=13). The contrast with the single odor pulse results is clearest when comparing responses to A versus A\u2019 as the second pulse in a transition, where A\u2019 responses were now significantly larger (Figure 4\u2014figure supplement 2C p=0.004). Control experiments where LED stimulation was omitted showed no significant differences pre- and post-mock pairing (Figure 4\u2014figure supplement 3A\u2013C). Additionally, when we examined responses to A-B and A\u2019-B transitions before and after training, we saw no effect on responses to odor B, indicating that transitions selectively enhance the otherwise depressed responses to the similar odor A\u2019 (Figure 4\u2014figure supplement 3D\u2013F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic of experimental design to assess plasticity in MBON-\u03b32\u03b1\u20191. Protocol was identical to Figure 3A, except odor transitions were used as pre- and post-pairing test stimuli to mimic odor boundaries from the behavioral arena. See Figure 4\u2014figure supplement 2A for the detailed protocol. (B) MBON-\u03b32\u03b1\u20191 \u0394F/F response time courses pre- (gray) and post- (black) pairing to different odor transitions (mean +- SEM, n=13 flies). Colored bars indicate timing of odor delivery, dark green: paired odor, light green: unpaired, similar odor, purple: dissimilar odor. Schematic of the corresponding fly movement in the behavior arena at left. (C) Response sizes in MBON-\u03b32\u03b1\u20191 pre- and post-pairing for the second odor in the transition. Responses calculated as mean over an 8 s window starting at the onset of the second odor (inset). Responses when the paired odor is second are significantly reduced after pairing (dark green n=13 flies, p<0.001). By contrast there is no significant reduction when the unpaired similar odor comes second (light green p=0.376). The dissimilar odor control showed no significant change (purple, p=1). Connected circles indicate data from individual flies. (D) Schematic of experimental design for MBON-\u03b13. Flies were trained by pairing odor with shock in a conditioning apparatus and odor responses were imaged 24 hr later. Plasticity was assessed by comparing responses against those from a control group of flies exposed to odor and shock but separated by 7 min. See Figure 4\u2014figure supplement 2B for the detailed protocol. GCaMP6f was driven in MBON-\u03b13 by MB082C-Gal4 (bottom). (E) MBON-\u03b13 \u0394F/F response traces as in B. Light gray traces are from control shock-exposed flies (n=12 flies), dark gray traces are from odor-shock paired flies (pooled n=14 PA-paired and n=12 BA-paired flies). Averaged control traces were pooled across trials where either PA or BA was the second odor in a transition. (F) Response sizes in MBON-\u03b13 in control (gray) and trained flies (colored) for the second odor in the transition (computed as in C). Responses are significantly reduced in trained flies both when the paired odor is second (dark green, n=14 PA-paired and n=12 BA-paired flies pooled, p<0.001) and when the unpaired similar odor is second (light green, p<0.001). Responses to the dissimilar odor were not significantly different (purple, p=0.48). Plotted control responses were pooled across trials where PA or BA was the second odor in a transition. (C,F) Statistical comparisons for MBON-\u03b32\u03b1\u20191 made with the paired sample, Wilcoxon signed-rank test. For MBON-\u03b13, where responses were compared across different flies, we used the independent samples Wilcoxon\u2019s rank-sum test. p-values were Bonferroni-Holm corrected for multiple comparisons.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Schematic showing a fly crossing a boundary between the paired and unpaired odor quadrants in the behavior arena. As the fly crosses the boundary, it experiences odors as a transition in time. (B) Photo-ionization detector (PID) signals for the odor stimuli used in this study. Single odor pulses from odor machine 1 shown in black (traces for five repeats overlaid) and pulses from odor machine 2 in gray. Note that at a given concentration in air, each odor-chemical can generate different ionization signal amplitudes. (C) PID traces for odor transitions PA to BA (top) and BA to PA (bottom). Throughout this study, the first odor pulse was always delivered by odor machine 1 and the second pulse by machine 2. (D) Hot-wire anemometer measurements of change in air velocity relative to steady-state flow. Top two panels are single stimulus pulses from each odor machine, bottom is for a transition stimulus. Hollow bars indicate that these measurements were taken without odorants in the airflow to avoid chemical interactions with the anemometer. Steady state flow rate as measured with a floating-ball flowmeter was 400 mL/min.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A,B) Detailed schematics for training protocols used in Figure 4. (A) For MBON-\u03b32\u03b1\u20191, we imaged pre- and post-pairing responses to 5 s pulses of the two similar odors presented as transitions, and the dissimilar odor presented singly. Each pairing trial consisted of a single 5 s odor stimulus paired with 5 s of LED flashes, followed by 5 s presentations of the similar unpaired odor and the dissimilar odor, with 45 s in between each odor presentation. Pairing was repeated three times with 45 s between pairing trials. Each of the similar odors was paired with LED reinforcement for every alternate imaged fly as part of a reciprocal experiment design. (B) For MBON-\u03b13, we only imaged post-pairing responses, 24 hr after odor-shock reinforcement. This is because learning is only expressed hours after reinforcement in this compartment. A pairing trial consisted of a single, 60 s odor presentation paired with shock, followed by 60 s presentations of the unpaired similar and dissimilar odors, with 60 s in between each odor presentation. Pairing was repeated 10 times, with 15 min between pairing trials. PA and BA were used as the paired odor alternate sets of flies as odor reciprocals. We could not measure the odor responses of flies before learning. So, we measured un-paired odor responses in flies that were exposed to shock and odor stimuli of equal durations, except with a 7-min interval between shock and the first odor stimulus in mock-pairing trials. These were the shock-exposed controls. (C) Same data as Figure 4C, quantifying responses to the second odor pulse, but re-plotted to compare responses to the paired odor with responses to the unpaired, similar odor before and after training. Pre-pairing, the responses to the paired odor were slightly but significantly higher (p=0.02), but post-pairing, responses to the unpaired similar odor were higher (p=0.004). (D) Contrast scores at the different odor transitions for MBON-\u03b32\u03b1\u20191 responses. Labels indicate the odor coming second in the transition. Contrast calculated as the difference between the maximum \u0394F/F value during the second pulse and the minimum during the first pulse (inset). Pre-pairing, contrast was not different for the two kinds of transitions (p=0.19). Post-pairing contrast was higher for the transition to the unpaired, similar odor (p=0.001). Connected circles indicate data from individual flies. Statistical comparisons made using the paired sample Wilcoxon signed rank test with a Bonferroni Holm correction for multiple comparisons. (E) Contrast scores as D, for MBON-\u03b13 responses in arena-trained flies. Contrast scores were not significantly different for the two directions of the transition (n=14 PA-paired and 12 BA-paired flies, pooled, p=0.86). Statistical comparison made with independent sample Wilcoxon\u2019s rank-sum test, with Bonferroni-Holm corrections for multiple comparisons.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Protocol schematic. Same as in Figure 4\u2014figure supplement 2A, except with no LED flashes in the training trials. (B) MBON-\u03b32\u03b1\u20191 \u0394F/F response time courses to different odor transitions pre- (gray) and post- (black) no-LED control training (mean +- SEM, n=14 flies). Colored bars indicate timing of odor delivery, dark green: paired odor, light green: unpaired similar odor, purple: dissimilar odor. (C) Response sizes in MBON-\u03b32\u03b1\u20191 for the second odor in the transition with no-LED control training protocol. Response amplitude calculated as mean over an 8 s window starting at the onset of the second odor (inset). Responses are not significantly reduced for any stimulus (n=14 flies; paired odor: p=0.06; unpaired, similar odor p=0.17; dissimilar odor p=0.19). (D) Protocol schematic. Same as in Figure 4\u2014figure supplement 2A, except with transitions from odors A or A\u2019 to the dissimilar odor B. (E) MBON-\u03b32\u03b1\u20191 \u0394F/F response time courses as in B, except for transitions from the paired odor or the similar, unpaired odor to the dissimilar odor. (F) Response sizes computed as in C, during the second, dissimilar odor pulse in each kind of transition stimulus plotted in E (n=8 flies, pared p=0.148, unpaired p=0.945).\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) Maximum intensity z-projection image of GFP expression under MB630B split-Gal4 that was used to drive Chrimson in PPL1-\u03b13 DANs for the behavior experiments in Figure 1. (B) Expression images for two split-LexA lines corresponding to MB630B.\n\nThese results indicate that the way the fly encounters the odor has a profound effect on MBON responses after learning. Isolated pulses of A and A\u2019 elicit similar strongly depressed responses, while transitioning from one odor to the next, as at an odor boundary, responses were clearly distinct, with the A\u2019 response now much stronger. To quantify how effectively MBON-\u03b32\u03b1\u20191 activity captures an odor boundary, we computed a contrast score reflecting the change in MBON activity at the transition. This score was the difference between the minimum \u0394F/F value during the first pulse and the maximum during the second pulse. After learning, contrast around the odor transition was significantly higher for A to A\u2019 transitions than the reverse (Figure 4\u2014figure supplement 2D; p=0.001). These results show that the way the animal experiences the odors has a significant effect on how differentially the downstream MBON-\u03b32\u03b1\u20191 responds to them.\n\nTo further evaluate whether this effect contributes to hard discrimination, we next examined the effects of plasticity on odor transition responses in MBON-\u03b13. Reinforcement in this compartment does not support fine discrimination, so if the transition effect is important for discrimination, it should be absent here.\n\n\u03b13 is a slow-learning compartment; when an odor is paired with reinforcement via DAN PPL1-\u03b13, behavioral performance gradually rises until it peaks 24 hr after training (Aso and Rubin, 2016). To examine MBON responses when behavioral performance is at this peak, we could not use on-rig optogenetic reinforcement. Instead, we trained flies in a behavior chamber, by pairing an odor with a shock reinforcement. We retrieved flies from the arena and imaged MBON-\u03b13 responses 20\u201328 hr after training (Figure 4D, detailed protocol in Figure 4\u2014figure supplement 2B). This experimental approach did not permit us to measure pre- and post-training responses in the same fly. So in these experiments, we compared responses observed in trained flies with those in a mock-trained cohort, where shock was delivered at a different time than odor (Figure 4\u2014figure supplement 2B). We note that optogenetic reinforcement was not possible for experiments targeting the \u03b13 compartment; despite extensive efforts we were unable to identify LexA driver lines either with sufficient strength to image MBON-\u03b13 activity, or to get effective reinforcement selectively via DAN PPL1-\u03b13 (Figure 4\u2014figure supplement 4).\n\nWe found that in response to odor transitions, there was no modulation in MBON-\u03b13 responses (Figure 4E). Responses to the second odor in the transition were depressed for both transition orders (Figure 4F; A\u2019-A, p<0.001, A-A\u2019, p<0.001, pooled n=14 PA-paired and n=12 BA-paired flies). As expected, responses to the dissimilar odor (B) showed no significant depression (p=0.48). We also evaluated odor boundary detection post-training by computing a contrast score as we did for MBON-\u03b32\u03b1\u20191. With MBON-\u03b13, we saw very little contrast at the transition point, and contrast was similarly low for either order of the transition (Figure 4\u2014figure supplement 2E, P=0.86).\n\nMimicking the fly\u2019s experience in the behavioral arena by presenting odor transitions revealed a strong concordance between neural activity and behavior. In MBON-\u03b32\u03b1\u20191, when odors are presented in isolation, responses to A and A\u2019 were not measurably different (Figure 3). This would allow flies to generalize learning between these odors in most circumstances. But when the two similar odors are juxtaposed in time, matching what they experience when making a choice, MBON-\u03b32\u03b1\u20191 responses were clearly distinct and could support fine discrimination (Figure 4). The ability of MBON-\u03b32\u03b1\u20191 to respond differently in these two conditions likely reflects the flexible categorization that enables flies to perform both generalization and discrimination. In agreement with this hypothesis, the effect of odor transitions is absent in the \u03b13 compartment, which does not support fine discrimination.\n\n### Odor transition effects on MBONs are not present in the KCs\n\nWe have shown that MBON-\u03b32\u03b1\u20191 responses show a stimulus-history dependent modulation at odor transitions, but MBON-\u03b13 does not. To determine whether this arises upstream of the MBONs, we examined KC responses to odor transitions. Early sensory processing in the antennal lobe could alter odor representations when delivered as transitions, as seen in locusts (Nizampatnam et al., 2018; Saha et al., 2013). So we examined responses to odor transitions in the input KC populations for MBON-\u03b32\u03b1\u20191 (\u03b3 and \u03b1\u2019/\u03b2\u2019 KCs) and MBON-\u03b13 (\u03b1/\u03b2 KCs) (Figure 5A). We attempted to use the KC activity patterns we measured to reproduce our observations of MBON activity. Specifically, we used logistic regression models, adjusting the weights of KC inputs so that model outputs were low for A and A\u2019 and high for B. To match the training procedure the flies experienced, we first trained the models using isolated odor pulses, and tested predictions for odor transition stimuli. To ensure we did not penalize cells that responded uniquely to transitions, weights were initialized at 1 and we trained models without any weight regularization. Trained weights were negatively correlated with responses to A, as expected (Figure 5B, top, Pearson correlation coefficient for \u03b3 KCs = - 0.39, \u03b1\u2019/\u03b2\u2019 = - 0.28 and \u03b1/\u03b2 = - 0.22). These weights were then used to calculate model output for A\u2019-A and A-A\u2019 transitions. In contrast to our observations of MBON activity, model outputs were not significantly different between the two transitions, and were low for both (Figure 5B), indicating that transition-evoked changes in the KC odor representations do not underlie the effects on MBON-\u03b32\u03b1\u20191 activity.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig5-v2.jpg)\n\n**Figure 5.:** (A) \u0394F/F responses of different KC subtypes to odor transitions. Rows show responses of individual KCs, averaged across trials, sorted by responses to BA-PA. GCaMP6f was driven in \u03b3 KCs by d5HT1b-Gal4 (left), in \u03b1\u2019/\u03b2\u2019 KCs by c305a-Gal4 (middle) and in \u03b1/\u03b2 KCs by c739-Gal4 (right). The odor delivery periods are indicated by colored bars at the top. (B) We fitted KC weights with logistic regression to give high or low outputs to odors consistent with measured MBON outputs (synaptic weight plots, black circles are individual fitted weights, pooled across flies). Individual logistic regression model outputs for held out test data for all types of odor stimuli are plotted in black. The gray background indicates that odor transition data was not part of the training set (n=96 models for \u03b3, n=80 for \u03b1\u2019/\u03b2\u2019 and n=96 for \u03b1/\u03b2 KCs, respectively), red circles and error bars are mean +/-SEM. The dashed, gray line at 0.5 indicates the logistic regression output threshold. Mean model outputs were below the decision threshold for A and A\u2019 and were not significantly different (p=1 for \u03b3, p=1 for \u03b1\u2019/\u03b2\u2019 and p=1 for \u03b1/\u03b2 KCs, respectively), as was the case for A\u2019-A and A-A\u2019 (p=1 for \u03b3, p=0.95 for \u03b1\u2019/\u03b2\u2019 and p=1 for \u03b1/\u03b2 KCs, respectively). (C) Fitted weights and outputs for logistic regression models as in B, except that these were trained on single pulse as well as odor transitions. Average model outputs for A and A\u2019 were below the decision threshold and were significantly different only for one KC sub-type (p=0.026 for \u03b3, p<0.001 for \u03b1\u2019/\u03b2\u2019 and p=0.062 for \u03b1/\u03b2 KCs, respectively). Mean outputs for A\u2019-A were below the decision threshold, but outputs for A-A\u2019 were above it and significantly different for all KC subtypes (p<0.001 for \u03b3, p<0.001 for \u03b1\u2019/\u03b2\u2019 and p<0.001 for \u03b1/\u03b2 KCs, respectively). All statistical comparisons were made with the Wilcoxon signed-rank test with a Bonferroni-Holm correction for multiple comparisons.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) KC population odor responses for the same example flies as in Figure 2C, projected onto the first two principal component axes to show relative distances between representations for the different odors delivered as single pulses (filled circles) or as the second pulse in a transition (empty circles). (B) Decoder-predicted probability that the second odor in a transition was PA, plotted against time. Prediction for trials on which PA was the second pulse are plotted in dark green, and BA \u2013 light green. The red line indicates the positive prediction threshold. The black and gray bars at the top indicate the two odor pulse delivery periods. Solid lines are mean, and shading indicates SEM. Probabilities are plotted for the same example fly as in Figure 2C for each KC type. (C) Decoder prediction accuracies for odor transitions, plotted across flies. Each gray circle is the accuracy of the decoder for one fly for a given odor, averaged across all trials. Black circles and error bars are means and SEM. For \u03b3 KCs (top), decoder accuracies for PA (n=7 flies, p=0.098) and BA (p=0.047) were not significantly different from when they were delivered second in transitions. This was also true for \u03b1\u2019/\u03b2\u2019 KCs (middle, n=5 flies, p=0.817 for the PA v/s BA-PA comparison and p=0.94 for BA v/s PA-BA) and \u03b1/\u03b2 KCs (bottom, n=6 flies, p=0.082 for PA v/s BA-PA and p=0.14 for BA v/s PA-BA). All statistical testing was done with a paired-sample, Wilcoxon signed rank test with a Bonferroni-Holm correction for multiple comparisons.\n\nIn fact, KC responses to single odor pulses were coarsely similar to responses when those odors came second in a transition; these decoders could also effectively discriminate odors in a transition, although accuracy was slightly lower than with isolated pulses (Figure 5\u2014figure supplement 1). To directly evaluate how distinctively the KC population responds to odor transitions, we re-trained the models, adding the requirement that they respond differentially to A-A\u2019 versus A\u2019-A transitions. We found that all three KC subtypes could distinguish odor transitions when trained to do so (Figure 5C, p<0.001 for all KC subtypes). These results show that it is possible for the model to discriminate transitions, but only if trained using transition-evoked KC activity. By contrast flies learn to discriminate when trained solely with the isolated odor pulses.\n\nOverall, these results show that MBON activity is modulated by a temporal comparison of the alternatives presented to the fly. These observations lead us to the prediction that even if learning is restricted to the \u03b32\u03b1\u20191 compartment, flies would only be able to discriminate odors if they experienced odor transitions. We tested this prediction with behavioral experiments using odor sequences.\n\n### Odor sequences show that a temporal comparison contributes to odor discrimination\n\nWe have shown that MBON-\u03b32\u03b1\u20191 responses to the similar odors only became distinguishable when presented as transitions. We predicted that flies\u2019 behavioral response to these odors should also be indistinguishable, unless they are encountered as transitions. Further, since MBON-\u03b32\u03b1\u20191 signals positive valence (Aso et al., 2014b), our activity measurements predict that flies might be attracted to A\u2019 if they encounter an A to A\u2019 transition. To test these predictions, we examined behavioral responses to temporal sequences of odor, converting the spatial odor border flies encountered in our earlier behavioral experiments, into an odor transition in time. Flies were trained in the circular arena, and then tested by flooding the entire arena with a sequence of odor pulses. We then compared their behavioral response to direct odor transitions to their response when we interrupted the transition with 25 s of clean air. We determined the timing of odor pulse transitions using photo-ionization detector measurements at the exhaust outlet of the arena (Figure 4\u2014figure supplement 1), and analyzed fly behavior around these timepoints.\n\nAttraction to an odor was quantified by how much the flies move upwind; in the arena odors flow inwards from the periphery so we measured displacement away from the center of the arena. We examined the time course of upwind displacement for direct and interrupted transitions (Figure 6A\u2013E). We observed strong upwind displacement during the second pulse of an A-A\u2019 transition, which was significantly larger than during the reverse A\u2019-A sequence (Figure 6B, C and F, p=0.004, n=12). This contrasted with results observed with a 25 s gap in between the two odor pulses. In these interrupted transitions, responses to the second pulse were not significantly different depending on transition order (Figure 6 D, E and G, p=0.85, n=12 for A-gap-A\u2019, n=13 for A\u2019-gap-A,), and showed a similar degree of upwind displacement to that evoked during the first pulse, as expected. Note that starting locations at the onset of the second odor pulse were not significantly different in any condition, ruling out the possibility that flies go more upwind with the A-A\u2019 transition because they start from further downwind in the arena (Figure 6\u2014figure supplement 1B, n=12 for A-A\u2019, n=12 for A\u2019-A, p=0.08 for direct; n=12 for A-gap-A\u2019, n=13 for A\u2019-gap-A, p=0.39 for interrupted). Additionally, we ruled out the possibility that the increased upwind displacement during such a transition comes from a linear combination of the response to the end of the first odor pulse and the beginning of the second (Figure 6\u2014figure supplement 1C-G). These results show that behavioral responses to A\u2019 are distinct only when it immediately follows the paired odor A, matching the odor transition responses we observed in MBON-\u03b32\u03b1\u20191.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig6-v2.jpg)\n\n**Figure 6.:** (A) Experimental strategy for measuring behavioral responses to odor transitions. Flies were trained by pairing one of the similar odors with optogenetic activation of DAN PPL1-\u03b32\u03b1\u20191. They were then tested with 30 s odor pulses presented either as direct transitions (left) or interrupted by a 25 s air period (right). Schematics illustrate A-A\u2019 transitions but both sequences were tested, as indicated by the bars on top of panels B-E. (B) Upwind displacement during the first and second pulses of an A-A\u2019 odor transition, as indicated by the green bars up top. This was computed as the increase in each fly\u2019s distance from the arena center over the odor delivery period, then averaged across all flies in an arena (approximately 15 flies per arena). Traces in dark and light green are responses to A and A\u2019 respectively. Plots are mean +/-SEM (n=12 arena runs for all stimulus types). (C) Upwind displacement for the reverse odor transition i.e. A\u2019-A. (D) Upwind displacement for A-gap-A\u2019 interrupted transition. (E) Upwind displacement for the reverse A\u2019-gap-A interrupted transition. (F) Upwind displacement in response to the first odor pulse, averaged across flies in each arena experiment. Mean displacement was not significantly different between unpaired and paired odors for experiments with no gap (n=12, 12 experiments for paired and unpaired odors, p=0.70) and a 25 s gap (n=12, 13, p=0.40). (G) As in F except for responses to the second odor pulse. Displacement was significantly different for transitions with no gap between pulses (n=12, 12 experiments for paired and unpaired odors, p=0.004) but not different when transitions were interrupted by a 25 s gap (n=12, 13, p=0.85). Statistical comparisons in F and G were made with the independent-sample Wilcoxon rank sum test with a Bonferroni-Holm correction for multiple comparisons.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) PID measurements of odor time courses in the behavioral arena, measured at the central exhaust port. The black trace depicts odor pulses delivered with no gap and the gray trace depicts pulses interrupted by a 25 s air period. The vertical red line indicates the time point identified as the onset of the second odor pulse. (B) Mean distances of flies from the arena center at the onset of the second odor pulse in each experiment. Distances from the center were not significantly different between experiments with the unpaired and paired odor, with a 0 s gap (n=12, 12 resp. p=0.08) or with a 25 s gap (n=12, 13, p=0.39). Statistical comparisons made with the independent samples, Wilcoxon\u2019s rank sum test followed by a Bonferroni-Holm correction for multiple comparisons. (C) The off response trace after the first odor pulse for A-A\u2019 transitions without an air gap (top) and A\u2019-A transitions with an air gap (bottom). (D) The response at the onset of the second odor pulse for A-A\u2019 transitions without an air-gap (top) and A\u2019-A transitions with an air gap (bottom). (E) The linear sum of upwind displacement traces in C and D. This is the null model to compare with responses to an odor transition. (F) Actual displacement during the second odor pulse in unpaired to paired transition stimuli with no air-gap. Traces in C\u2013F are mean +/-SEM. (G) Mean upwind displacement over the duration of the second odor pulse for the two transitions (dark green: A\u2019 to A, light green; A to A\u2019). In gray is the mean and bootstrapped SEM of the linear sum of component responses in C. The measured displacements are significantly greater than the sum when odor A\u2019 is second (n=12, p=0.001) but not when odor A is second (n=12, p=0.09). Displacements were compared with the Wilcoxon\u2019s signed rank test followed by a Bonferroni-Holm correction for multiple comparisons.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Flies were trained by pairing one of the similar odors with optogenetic activation of DAN PPL1-\u03b13. They were then tested with 30 s odor pulses presented either as direct transitions (A,B) or interrupted by a 25 s air period (C,D), as in Figure 6. Transition order indicated by the bars on top of panels A-D. (A) Upwind displacement in the first and second pulses of an A-A\u2019 odor transition. Traces in dark and light green are responses to A and A\u2019 respectively. Plots are mean +/-SEM (n=8 arena runs for all stimulus types). (B) Upwind displacement for the reverse odor transition i.e. A\u2019-A. (C) Upwind displacement for A-gap-A\u2019 interrupted transition. (D) Upwind displacement for the reversed, A\u2019-gap-A interrupted transition. (E) Upwind displacement in response to the first odor pulse, averaged across flies in each arena experiment. Mean displacement was not significantly different between unpaired and paired odors for experiments with no gap (n=8 experiments each for paired and unpaired odors, p=0.28) and a 25 s gap (n=8, p=0.69). (F) As in E except for responses to the second odor pulse. Unlike with DAN PPL1-\u03b32\u03b1\u20191, displacement was not significantly different for transitions with no gap between pulses (n=8, p=0.78) or when transitions were interrupted by a 25 s gap (n=8, p=0.57). Statistical comparisons in E and F were made with the independent-sample Wilcoxon rank sum test with a Bonferroni-Holm correction for multiple comparisons.\n\nThe upwind displacement during the A-A\u2019 transition is consistent with our observation that MBON-\u03b32\u03b1\u20191, a positive valence MBON that drives upwind behavior, is highly active during these transitions. In fact, the mean upwind displacement after an A-A\u2019 transition was similar to that caused by optogenetic activation of MBON-\u03b32\u03b1\u20191 in the arena (unpublished communication - Y. Aso). Overall, these results show that flies compare available alternatives \u2018side-by-side\u2019 in time and that stimulus history is important for flexible categorization and behavior. When the two odors are encountered separately, both MBON-\u03b32\u03b1\u20191 output and fly behavior are indistinguishable for the two similar odors. However, when they are closely apposed in time, MBON-\u03b32\u03b1\u20191 activity is enhanced and flies are attracted to A\u2019.\n\n## Discussion\n\nUsing a pair of perceptually similar odors (A and A\u2019) and one distinct odor (B), we identified a site in the MB circuit that switches the neuronal and behavioral categorization of A\u2019 depending on whether flies are presented an A\u2019 vs A or an A\u2019 vs B choice. Learning-related synaptic plasticity resulted in depressed neuronal responses to both similar odors when presented in isolation, consistent with strong behavioral generalization. However, when the odors were presented sequentially, as at an odor boundary, neuronal responses to A and A\u2019 were distinct. Moreover, behavioral experiments with carefully timed odor delivery showed that flies\u2019 response to A\u2019 was distinct from A only if they were delivered in a transition. These results demonstrate how presenting cues as a choice can influence behavioral responses. An odor boundary presents an opportunity to compare stimuli, and this comparison modulates memory traces by amplifying small differences between stimuli to change categorization and behavior.\n\n### Memory specificity is determined by more than overlap of KC somatic activity patterns\n\nKC representations are conventionally thought to be the key player in determining whether to discriminate or generalize. KC activity patterns in response to distinct odors have little overlap (Perez-Orive et al., 2002; Murthy et al., 2008; Turner et al., 2008; Honegger et al., 2011; Campbell et al., 2013), and this allows synaptic changes to be highly stimulus specific (Hige et al., 2015a). However, activity patterns are not so sparse that pattern separation is complete (Campbell et al., 2013; Dasgupta et al., 2017; Endo et al., 2020; Hige et al., 2015b). Overlap between different odor response patterns exists, and correlates with both the strength of generalization and the specificity of plastic changes in MBONs. Importantly, prior work did not examine whether the extent of overlap is distributed differentially across different KC subtypes. This could serve as the basis for differences in discrimination we observe between compartments, with optogenetic training in \u03b32\u03b1\u20191 but not \u03b13 capable of supporting hard discrimination. However, we found that all three major subtypes of KCs exhibit similar levels of overlap across our odor test set. Furthermore, we found that odor representations in all three KC subtypes contain enough information for A-A\u2019 discrimination. Despite this, when we examined KC responses to odor transitions, we found that they could not account for the odor-transition responses we observed in MBON-\u03b32\u03b1\u20191.\n\nAnother factor that could potentially contribute to the different specificity in these compartments are the numbers of KC inputs. Theoretical work suggests that \u2013 holding the absolute number of responding KCs constant \u2013 the larger the total population of KCs, the less overlap there will be between different odor response patterns (Marr, 1969; Albus, 1971; Babadi and Sompolinsky, 2014; Cayco-Gajic and Silver, 2019). However, contrary to theoretical expectations, of the two MBON types we studied MBON-\u03b13 received more synaptic inputs from a greater number of KCs, however it was poorer at hard discrimination (MBON \u03b32\u03b1\u20191=2,959 synapses from 336 \u03b1\u2019/\u03b2\u2019 KCs and 3773 synapses from 683 \u03b3 KCs per hemisphere; MBON \u03b13=11,360 synapses from 888 \u03b1/\u03b2 KCs per hemisphere; Clements et al., 2020; Li et al., 2020), again indicating that compartments\u2019 different capabilities for hard discrimination were not a result of differences in sensory representations. We note that our KC activity measurements are all from cell bodies, while KC output synapses are the site of plasticity (Bilz et al., 2020), and we cannot formally exclude that activity at KC synapses may differ based on type-specific integrative properties (DasGupta et al., 2014; Groschner et al., 2018; Vrontou et al., 2021), or axo-axonic connections between KCs (Bielopolski et al., 2019; Manoim et al., 2022).\n\n### Adapting memory usage through stimulus comparisons\n\nOur work instead highlights the importance of comparisons in determining how a stimulus is categorized. In particular we observe that flies make a temporal comparison of inputs and identify the underlying neural implementation of comparison in the MB. Prior work has shown history-dependent effects at multiple layers of the olfactory circuit. For example, in the rodent olfactory bulb, responses to odor sequences are linear combinations of the responses to individual pulses (Gupta et al., 2015). On the other hand, in locusts, presenting odors singly or in transitions altered odor representations non-linearly in KCs (Broome et al., 2006). The extent of response alteration correlated with the accuracy of behavioral recall (Saha et al., 2013). In Drosophila, odor transitions can cause similar changes in PN representations that result in altered innate odor preference (Badel et al., 2016). In another locust study (Nizampatnam et al., 2018), presenting an odor in a transition altered its representation to enhance contrast in the locust antennal lobe glomeruli. These observations suggest that changes in response to transitioning stimuli are mediated by a mechanism that takes place early on in the olfactory circuit. However, our observations of KC activity indicate that, although KCs response patterns to an odor presented as a single pulse versus in a transition are distinct, they are not sufficiently so to generate the sequence-specific transition effect we observe here.\n\nWe suggest instead that flexible categorization in Drosophila involves a mechanism at or downstream of the KC-MBON synapses modified during learning. Examples of such downstream modulation of memory have already been observed in the MB. In Drosophila, recalling food reward associations from one MB compartment is gated by another MB compartment depending on whether or not the fly is hungry (Perisse et al., 2016). In this case, recall is regulated by the addition of a layer of contextual modulation through neuropeptide signaling that couples neural activity to satiety state. Ongoing motor activity can also affect dopaminergic inputs along the MB lobes (Cohn et al., 2015). These could modulate memory-traces on relatively short timescales based on the behavioral state of the animal. Switching between independently stored short and long-term memories provides another solution (Trannoy et al., 2011; Huetteroth et al., 2015; Yamagata et al., 2015). Experiments have shown that long-term memory allows for more generalization than short-term memory (Ichinose et al., 2015; K\u00f6nig et al., 2017). However, all these mechanisms rely on an internal state signal (satiety or locomotion) rather than comparisons between external stimuli.\n\nHere we establish a few important constraints on a possible mechanism for flexible categorization in Drosophila: (i) it manifests at or downstream of the sites of learning, the KC >MBON synapses and (ii) it modifies responses to stimuli asymmetrically - in A to A\u2019 transitions and not the reverse. One mechanism that could satisfy these criteria, would involve an explicit comparison of MBON activities in time, much like the delay-lines in the auditory pathways of owls and crickets (Sch\u00f6neich et al., 2015; Sullivan and Konishi, 1986). This could be implemented via a downstream neuron that receives a real-time and a delayed copy of MBON-\u03b32\u03b1\u20191 activity, which then provides a positive feed-back signal to the MBON to amplify small increases in activity. Both of these motifs have been observed in the EM connectome (Li et al., 2020). As the extent of depression of KC >MBON synapses is inevitably slightly weaker for any odor that overlaps imperfectly with the learned odor, this mechanism would sensitize the circuit to small differences in MBON activity that arise around an odor transition. Another class of mechanisms centers on the observation that the KC population exhibits a distinct pattern of responses to odor offset (Tanaka et al., 2008; L\u00fcdke et al., 2018). Offset responses in other MBONs can be potentiated (Vrontou et al., 2021), presumably due to the timing of reinforcement (Cohn et al., 2015; Handler et al., 2019), suggesting a similar mechanism might operate in MBON-\u03b32\u03b1\u20191 to augment responses to the second odor in a transition. An additional candidate mechanism is plasticity of inhibitory input to KCs from the APL neuron. Activity of this inhibitory neuron is reduced by training (Zhou et al., 2019; Liu and Davis, 2009), so when a non-overlapping set of KCs is activated at an odor transition, that excitation may more effectively drive the downstream MBON. Inhibition at odor offset is a particularly prominent feature of the \u03b1\u2019/\u03b2\u2019 KCs that are input to MBON-\u03b32\u03b1\u20191 (Inada et al., 2017), so this effect could act in combination with potentiation of KC offset responses to create pronounced changes in KC output at an odor transition. Future work will be needed to resolve these different possibilities.\n\nMany animals use a stored memory to support different behaviors based on the choices available to them. We have shown that in Drosophila, this response flexibility relies on comparing cues side by side in time. Making fine-grained distinctions is easier when a temporal comparison is possible, but when it is not, more generalized categorizations can be an adaptive default.\n\n## Methods\n\n### Fly strains\n\nDrosophila melanogaster were raised on standard cornmeal food at 21 \u00b0C at 60% relative humidity on standard cornmeal food on a 12\u201312 hr light-dark cycle. For optogenetics behavior experiments, crosses were set on food supplemented with 0.2 mM all-trans-retinal and moved to 0.4 mM after eclosion and kept in the dark throughout.\n\n<table>\n  <thead>\n    <tr>\n      <th>Transgene</th>\n      <th>Expression target/reporter description</th>\n      <th>Bloomington stock number, reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>MB296B split Gal4</td>\n      <td>DAN PPL1-\u03b32\u03b1\u20191</td>\n      <td>BDSC:68253 Aso and Rubin, 2016</td>\n    </tr>\n    <tr>\n      <td>MB630B split Gal4</td>\n      <td>DAN PPL1-\u03b13</td>\n      <td>BDSC:68290 Aso and Rubin, 2016</td>\n    </tr>\n    <tr>\n      <td>d5HT1b-Gal4</td>\n      <td>\u03b3 KCs</td>\n      <td>BDSC:27637 Yuan et al., 2006</td>\n    </tr>\n    <tr>\n      <td>c305a-Gal4</td>\n      <td>\u03b1\u2019/\u03b2\u2019 KCs</td>\n      <td>BDSC:30829 Krashes et al., 2007</td>\n    </tr>\n    <tr>\n      <td>c739-Gal4</td>\n      <td>\u03b1/\u03b2 KCs</td>\n      <td>BDSC:7362 McGuire et al., 2001</td>\n    </tr>\n    <tr>\n      <td>MB077B split Gal4</td>\n      <td>MBONs \u03b32\u03b1\u20191</td>\n      <td>BDSC:68283 Aso et al., 2014a</td>\n    </tr>\n    <tr>\n      <td>MB082C split Gal4</td>\n      <td>MBONs \u03b13</td>\n      <td>BDSC:68286 Aso et al., 2014a</td>\n    </tr>\n    <tr>\n      <td>R82C10-LexA</td>\n      <td>DANs PPL1-\u03b32\u03b1\u20191, \u03b12, \u03b13</td>\n      <td>BDSC:54981 Pfeiffer et al., 2013</td>\n    </tr>\n    <tr>\n      <td>20XUAS-CsChrimson-mVenus attp18</td>\n      <td>Optogenetic activation for behavior</td>\n      <td>BDSC:55134 Klapoetke et al., 2014</td>\n    </tr>\n    <tr>\n      <td>13XLexAop2-IVS-Syn21-Chrimson88-tdT-3.1-P10</td>\n      <td>Optogenetic activation for imaging</td>\n      <td>BDSC: n.a. Strother et al., 2017</td>\n    </tr>\n    <tr>\n      <td>20XUAS-IVS-Syn21-opGCaMP6f-P10</td>\n      <td>Codon-optimized Ca2+ reporter</td>\n      <td>BDSC: n.a. Chen et al., 2013</td>\n    </tr>\n  </tbody>\n</table>\n\nExpression patterns of split-GAL4 lines produced by Janelia FlyLight (Jenett et al., 2012) can be viewed online (http://splitgal4.janelia.org/cgi-bin/splitgal4.cgi).\n\n### Behavior\n\nDAN driver split Gal4 crossed with 20XUAS-CsChrimson-mVenus attp18\n\nTH-rescue experiment (genetic strategy as in Aso et al., 2019)\n\nknockout\n\nw, 20XUAS-CSChrimson-mVenus attP18; +; ple2, DTHFS \u00b1BAC attP2, TH-ZpGAL4DBD VK00027 /TM6 B\n\ncrossed with\n\nw; R73F07-p65ADZp attP40 /CyO; ple2, DTHFS \u00b1BAC attP2 /TM6B\n\nknockout and rescue in DAN PPL1-\u03b32\u03b1\u20191\n\nw, 20XUAS-CSChrimson-mVenus attP18; UAS-DTH1m; ple2, DTHFS \u00b1BAC attP2, TH-ZpGAL4DBD VK00027 /TM6 B\n\ncrossed with\n\nw; R73F07-p65ADZp attP40 /CyO; ple2, DTHFS \u00b1BAC attP2 /TM6B\n\n### KC imaging\n\n\u03b3 KCs: w; +/+; d5HT1b-Gal4/20XUAS-IVS-Syn21-opGCaMP6f-P10 VK00005\n\n\u03b1\u2019/\u03b2\u2019 KCs: w; c305a-Gal4/+; 20XUAS-IVS-Syn21-opGCaMP6f-P10 VK00005/+\n\n\u03b1/\u03b2 KCs: w; c739-Gal4/+; 20XUAS-IVS-Syn21-opGCaMP6f-P10 VK00005/+\n\n### MBON \u03b32\u03b1\u20191 imaging\n\n20XUAS-IVS-Syn21-opGCaMP6f-P10 Su(Hw)attP8 /w; R25D01-ZpGAL4DBD attP40 /82C10-LexAp65 attP40; R19F09-p65ADZp attP2 /13XLexAop2-IVS-Syn21-Chrimson88::tdT-3.1-p10 in VK00005\n\nR25D01 and R19F09 are components of the MB077B stable split-GAL4 driver (BDSC: 68283)\n\n### MBON \u03b13 imaging\n\nw; +/+; 20XUAS-IVS-Syn21-opGCaMP6f-P10 VK00005 /R23C06-ZpGAL4DBD in attP2, R40B08-p65ADZp VK00027\n\nR23C06 and R40B08 are components of the MB082C stable split-GAL4 driver (BDSC: 68286)\n\n### Behavior experiments\n\n#### Odor quadrant choice assay\n\nGroups of approximately 20 females, aged 4\u201310 d post-eclosion were anaesthetized on a cold plate and collected at least two day prior to experiments. After a day of recovery on 0.4 mM all-trans-retinal food, they were transferred to starvation vials containing nutrient-free agarose. Starved females were trained and tested at 25 \u00b0C at 50% relative humidity in a dark circular arena described in Aso and Rubin, 2016. The arena consisted of a circular chamber surrounded by four odor delivery ports that divide the chamber into quadrants. The input flow rate through each port was 100 mL/min, which was actively vented out a central exhaust at 400 mL/min. Odors were pentyl acetate, butyl acetate and ethyl lactate (Sigma-Aldrich product numbers 109584, 287725, and W244015 respectively). Except for the TH-rescue experiments shown in Figure 1I, these odors were diluted 1:10000 in paraffin oil (Sigma-Aldrich product number 18512). For the experiments in Figure 1I, we used a different odor delivery system which utilizes air dilution of saturated odorant vapor, and delivered odors at a 1:16 dilution of saturated vapor.\n\nFlies were aspirated into the arena via a small port, and allowed 60 s to acclimatize before training commenced. Training consisted of exposing the flies to one of the odors while providing optogenetic stimulation via a square array of red LEDs (617 nm peak emission, Red-Orange LUXEON Rebel LED, 122 lm at 700mA) which shone through an acrylic diffuser to illuminate flies from below. LED activation consisted of 30 pulses of 1 s duration with a 1 s inter-flash interval, commencing 5 s after switching on the odor valves and terminating 5 s after valve shut-off.\n\nTo optimize learning scores, we used different training regimes depending on the compartments receiving optogenetic reinforcement, according to Aso and Rubin, 2016. A single training session was used for MB296B, TH-mutant, TH-rescue, while 3 training sessions, separated by 60 s, were used for some MB296B experiments, as indicated in the text. For MB630B we used 10 training sessions separated by 15 min.\n\nFollowing training, testing was carried out with the appropriate odors for each task. In the test configuration, the two different odor choices are presented in opposing quadrants for 60 s. Videos of fly behavior were captured at 30 frames per second using MATLAB (Mathworks, USA) and BIAS (http://archive.iorodeo.com/content/basic-image-acquisition-software-bias.html) and analyzed using custom-written code in MATLAB.\n\n#### Odor attraction assay\n\nFor the odor attraction assay, the outputs of odor machines were re-configured to inject the output of a single odor machine into all four quadrants. We switched output from one machine to the other to deliver rapid odor transitions in time. About 15 flies were introduced into the arena for each experiment. The rest of the behavioral procedures were identical to those used in the quadrant choice assay.\n\n#### Optogenetic MBON-activation assay\n\nFor this assay, a clean air stream was delivered into all four arena quadrants throughout the experiment. Flies expressed CSChrimson in MBON \u03b32\u03b1\u20191. Flies received six 10 s long LED flashes, separated by 60 s of darkness. The rest of the behavioral procedures were identical to those used in the quadrant choice assay.\n\n### Calcium imaging\n\nFlies were imaged on a resonant-scanning, Janelia, jET MIMMS2.0 custom-designed two-photon microscope, with a Chameleon Ultra II, Titanium-sapphire laser (Coherent, USA) tuned to emit 920 nm. Images were acquired using a 20 x, NA 1.0, water-immersion objective lens XLUMPLFLN (Olympus, Japan) and a GaAsP PMT H11706P-40 SEL (Hamamatsu, Japan). Power after the objective ranged from 4 to 5 mW for MBON imaging and 4\u20137 mW for KC imaging, depending on the preparation. Microscope control and data acquisition ran on the Scanimage platform (Vidrio, USA). Frames were acquired at 30 Hz, but three frames at a time were averaged during acquisition, for a final frame rate of 10 Hz. For KC imaging, pixels were sampled at 0.22 \u03bcm/pixel and for MBON imaging, at 0.18 \u03bcm/pixel. For photostimulation, flies were fully illuminated from beneath with 617 nm light through a liquid light-guide (LLG-03-59-340-0800-2, Mightex, USA) butt-coupled to an LED light source (GCS-0617\u201304 A0510, Mightex, USA). Intensity at the fly was 1 mW/mm2. LED pulses were delivered at a frequency of 1 Hz, with a duty-cycle of 50%, for 5 s, starting 2 s after paired-odor onset.\n\nFor optogenetics imaging experiments, crosses were set on food supplemented with 0.4 mM all-trans-retinal, and maintained on the same food at 25 \u00b0 C until flies were used for experiments. Flies were prepared as described previously (Campbell et al., 2013; Honegger et al., 2011). Three- to 8-day-old female flies were immobilized in a 0.25 mm thick stainless-steel sheet with a photo-chemically etched tear-drop shaped hole (PhotoFab, UK) and glued into place with two-component epoxy (Devcon, USA). For imaging in the KC somata and the MBON dendrites, head angle was adjusted differently to give best optical access to the target region, taking care to keep the antennae dry beneath the metal plate. For KC and MBON \u03b13 imaging, the back of the head was submerged in Ringer\u2019s bath solution consisting in mM: NaCl, 103; KCl, 3; CaCl2, 1.5; MgCl2, 4; NaHCO3, 26; N-tris(hydroxymethyl) methyl-2-aminoethane-sulfonic acid, 5; NaH2PO4, 1; trehalose, 10; glucose, 10 (pH 7.3, 275 mOsm). For \u03b32\u03b1\u20191 MBON experiments, the flies were starved (24 hours in nutrient-free, distilled-water agarose vials). Previous studies have shown that hemolymph sugar is halved in flies starved for 24 hrs (Dus et al., 2011). So we used bath Ringer\u2019s where glucose and trehalose were halved to 5 mM each and the non-metabolizable sugar arabinose (10 mM) was substituted to maintain osmolarity. For KC imaging, once the brain was exposed, bath solution was momentarily aspirated away and the preparation was covered in a drop of 5% (w/v) agarose (Cambrex Nusieve, catalog #50080) in Ringer\u2019s, cooled to 36 \u00b0 C, which was then flattened with a 5 mm diameter circular coverslip that was then removed just prior to imaging.\n\nFor KC imaging, 8 repeats of single odor pulses and each kind of odor transition were delivered with an inter trial interval of 45 s. Stimulus types were randomly interleaved. For MBON \u03b32\u03b1\u20191 imaging, we delivered two repeats of either single odor pulses or transitions before and after odor-reinforcement pairing (Figure 4\u2014figure supplement 4A), adapted from Berry et al., 2018. Only one repeat was imaged before and after pairing. For MBON \u03b13 imaging, only the second presentation of each transition stimulus type was imaged (Figure 4\u2014figure supplement 4B).\n\n### Odor delivery for imaging experiments\n\nTo deliver rapid odor transitions, we set up two separate odor delivery machines (Honegger et al., 2011) and joined their outputs upstream of the final tube delivering odor to the fly. These systems use saturated odor vapor which is then serially diluted in clean air to a final dilution of 0.8% (v/v). This was delivered to the fly at a flow rate of 400 mL/min from a tube with an inner diameter of 3 mm.\n\nWe measured relative odor concentrations with a photoionization detector (200B miniPID, Aurora Scientific, Canada). Different chemical vapors at the same concentration generate different PID signal amplitudes. Thus, the PID signal is linearly related to concentration only for a given odor chemical. The PID probe was used to measure and tune odor pulse shapes and to measure and account for the time taken for an odor pulse to reach the fly. The short period of overlap between the fall of the first odor pulse and the rise of the second occurred for both kinds of transition stimuli, paired to unpaired transitions and unpaired to paired transitions (Figure 4\u2014figure supplement 1C). Hence, this overlap would not affect our measures of discriminability between the two similar odors. A hot-wire anemometer S490 (Kurz, USA) was used to measure air-velocity at a sampling rate of 10 KHz while mock-odor pulses were being delivered though empty odor-vials. This was to rule out any mechanical transients at the time of odor-transitions being an external cue to the flies. To minimize transients, we combined the steps of the second serial dilution of the second odor pulse and mixing the outputs of the two odor machines. The second pulse in all transition stimuli was introduced into the final air stream at one-tenth the flow-rate. Any pressure-transients due to valve switches during the transition to the second pulse were too small to be measured by the anemometer in the final output. We saw a small valve-switching transient at the beginning of the first pulse in any transition (8% the size of the steady-state flow, Figure 4\u2014figure supplement 1D). Since this transient was always at the onset of the first pulse, and not during transitions, again, it did not affect discriminability.\n\nFinal air flow rate and odor concentration were adjusted to best match the odor flux a fly would experience in the arena. Since odor flows inward from the circumference of the arena, odor flux increases with distance from the periphery. We computed the odor flux on the circle that covers half the arena area and matched the flux delivered on the rig to it.\n\n### Data analysis\n\n#### Behavior\n\nVideos recorded during the test phase were analyzed using custom-written MATLAB code. The centroid of each fly was identified and the number of centroids in each quadrant computed for every frame of the experiment.\n\nFor discrimination experiments, a Performance Index (PI) was calculated as the number of flies in the quadrants containing the paired odor minus the number in the quadrants with the unpaired odor, divided by the total number of flies (Tully and Quinn, 1985). This value was calculated for every frame of the movie, and the values over the final 30 s of the test period averaged to compute a single PI. Discrimination experiments employed a reciprocal design where the identity of the paired and unpaired odors was swapped and a single data point represents the averaged PI from two reciprocally trained groups of flies.\n\nGeneralization experiments could not employ a reciprocal design, so instead we compared scores against control experiments where flies were exposed to LED stimulation that was not paired with odor delivery; instead stimulation preceded odor by 2 min. In this case the PI score reported as a single data point is the PI observed from the generalization experiment minus the PI observed in the unpaired control, after both PIs were corrected for biases in initial quadrant occupancies by subtracting away the pre-odor baseline.\n\nStatistical testing was done as described in figure legends. We used the non-parametric, independent sample, Wilcoxon rank sum test to compare performance indices across treatment groups. Statistical testing was performed with custom code written in Matlab (Mathworks, USA). The appropriate sample size was estimated based on the standard deviation of performance indices in previous studies using the same assay (Aso and Rubin, 2016).\n\nFor the odor attraction and the MBON-activation assays, computing upwind displacement required us to track each fly\u2019s trajectory in time. We used the Caltech Fly Tracker (Eyjolfsdottir et al., 2014) to automatically extract fly trajectories from videos. Odor stimulus onset time in the arena was determined from PID measurements of odor concentration at the arena exhaust port. For the MBON-activation assay, stimulus onset was set as the moment the LED turned on. Upwind displacement was computed as the increase in the distance from the center for each fly, relative to its location at stimulus onset, for each time-point over the entire stimulus window. The displacement for all flies in an arena experiment were then averaged before plotting and statistical testing.\n\n#### Calcium imaging\n\nFor KC data, fluorescence time-series images were first analyzed with the Suite2P analysis pipeline (Pachitariu et al., 2016) running in Matlab to register data and identify active single-cell regions of interest (ROIs). For MBON imaging data, ROIs were manually drawn using a custom Matlab script. For both types of experiments, average, raw fluorescence intensity for each ROI was then extracted by a separate, custom script. A background region with no labeling in each imaging field was manually defined, and background fluorescence (this consisted of the PMT offset and autofluorescence) was subtracted from all measured fluorescence values for that field. \u0394F/F was computed according to the following equation \u0394F/Fi = (Fi - F0)/F0.\n\nwhere Fi is the fluorescence of a given cell ROI at a given time-point in a trial, and F0 is the same ROI\u2019s fluorescence in an 8 s window during the baseline period on that trial, prior to odor delivery. For all plotted fluorescence traces, \u0394F/F time-series data was boxcar filtered with a window-width of 0.2 s. All other analysis was done with un-filtered \u0394F/F data. For making statistical comparisons, \u0394F/F values during stimulus presentation were averaged over time windows as indicated in each figure.\n\n#### KC population activity decoders\n\nThe objective of this analysis was to determine whether a linear classifier can discriminate trials of a particular odor based on the KC responses. We fitted logistic regression models to predict whether or not KC activity on a given trial was evoked by a particular odor. For example, an odorA classifier received KC population activity vectors as input and then made a prediction whether the input activity was evoked by odorA/not odorA. Separate classifiers were fitted for each fly, for each odor. We used leave-one-out cross validation (LOOCV): of the 8 repeats acquired for each odor, one was left out as a test trial and the remaining trials were used to fit the model. In this way, we systematically fitted models for each combination of training and test trail sets. All plotted accuracy scores are for model predictions on test trials not used for fitting. Model weights were initialized by sampling from a distribution of weights obtained from EM connectome synapse counts (Clements et al., 2020). Synapse counts from a KC to an MBON were assumed to be linearly related to KC-MBON weight, and normalized to the maximum weight observed. Initial model weights were uniformly sampled from this biological distribution and then fitted without regularization.\n\nThe cost function used to estimate goodness of fit was the binary cross-entropy with a quadratic regularization, defined as\n\n$$\ncost=\u2212\\frac{1}{m}\\sumi=1my_{i}\\timeslog\u2061(h_{i})\u2212(1\u2212y_{i})\\timeslog\u2061(1\u2212h_{i})+\\frac{\\lambda}{2m}\\sumj=1n\\theta_{j}^{2}\n$$\n\nwhere $m$ is the number of training trials, $y_{i}$ is the correct odor label for a given trial (0 or 1), $h_{i}$ is the model\u2019s prediction (or probability that the input activity vector was in response to a given odor) for the same trial, $\\lambda$ is the regularization constant (we used  $\\lambda$ = 1, but this was not a sensitive parameter), $n$ is the number of neurons in a given dataset and $\\theta_{j}$ are the weights of the neurons. For logistic regression models fitted without regularization (shown in Figure 5B), $\\lambda$ was set to 0.\n\nThe model\u2019s prediction, $h$ was computed according to the equation\n\n$$\nh=\\frac{1}{1+e^{\u2212(X\\times\\theta)}}\n$$\n\nhere X is the $m\\timesn$ activity matrix for $m$ training trials and $\\theta$ is the $n\\times1$ vector of weights.\n\n### Code availability statement\n\nThe custom Matlab code used for analysis in this manuscript is publicly available at https://github.com/mehrabmodi1/Drosophila_flexible_recall (Modi, 2023a; copy archived at Modi, 2023b).\n",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "b873c955-389e-4830-80ba-52e96da79b88",
+      "submission_id": "e56970e7-1e03-4383-9bff-c118b1de30c6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mani Ramaswami, https://ror.org/02tyrky19 Trinity College Dublin Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80923.sa0](https://doi.org/10.7554/eLife.80923.sa0)\n\nMemory recall is more precise when discrimination is required. This work in Drosophila shows that two related odors trigger near identical Kenyon cell responses when tested in isolation, but trigger different responses to the second odor if these are experienced in sequence within a small temporal window. The authors argue that this template comparison requires some activity downstream of Kenyon cells, that is recruited by MBONs. Overall, the experiments, building on a clever method to build \"miminal memories\" via optogenetically restricting the formation of memory traces in selective output compartments of the Kenyon cell (KC) axon terminals, provide very nice physiological evidence for a neural mechanism that underlies a contextual basis for the precision of memory recall.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Mani Ramaswami, https://ror.org/02tyrky19 Trinity College Dublin Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80923.sa1](https://doi.org/10.7554/eLife.80923.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"One engram two readouts: stimulus dynamics switch a learned behavior in Drosophila\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Mani Ramaswami as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by K VijayRaghavan as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) There appear to be a variety of ambiguities not acknowledged in the text as well as prior work not considered in necessary depth. These are indicated or reflected in various reviewer comments. Please address all of them and provide point-by-point responses indicating how these concerns have been addressed in the revised manuscript.\n\n2) One concern, is the claim and focus around \"one engram and two responses\" is both incompletely justified (e.g. see reviewer 2 comment that the boutons represent the engram and not the cells) and not intellectually useful in terms of communicating the findings to a broader audience. Figure 4, which contains the most impressive and impactful observations in the paper indicates that after the specific optogenetic learning protocol is deployed, two odors are perceived similarly (or as a common category or class of odors) in one condition but cab discriminated as two different odorants in another condition. First, at least one reviewer feels that the excitement of this figure is in the clear demonstration of. neural correlates of this contextual discrimination phenomenon \u2013 a point that is inadequately made here and somehow occluded by a pitch around \"one-engram two outcomes\". Second, a more solid basis for a general discussion here may be around the concept of categories. There appears to be a contextual ability to go beyond clubbing two odorants into a common category vs splitting them into distinct objects. We appreciate that the authors can decide on how they wish to discuss their data, but do ask that these suggestions/ concerns be considered as final revisions are made.\n\n3. Please provide genetic controls requested in Reviewer 2 point d.\n\n4. Consider if it would be useful to respond materially to the other comments.\n\nReviewer #1 (Recommendations for the authors):\n\n1. Title of first section \"Learning can support\u2026\". Implies learning is required for and/or contributes to discrimination, which would not be correct. What this really shows is that discrimination is not hindered by what appears to be \"generalized\" learning. A more appropriate title is needed.\n\n2. Same page \u2013 \"flies learn both generalization and discrimination tasks,\" What is the evidence that discrimination is learned? Perhaps it is always possible as supported by the Results section 2, showing that KC inputs in \"na\u00efve\" flies have enough information for discrimination. (Though not shown, presumably this is true with MBONs too in na\u00efve flies). It seems that the ability is not exercised unless needed. Notably (Results section 3) \u2013 learning is not associated with any increase in physiological correlates of discrimination.\n\n3. The differences between discrimination after DAN stimulation in the two compartments could be Kenyon cells activated by one of the odorants may make more or less synapses in compartments innervated by one MBON compared to the others.\n\n4. Figure 4 \u2013 the key: a very nice observation around which the paper's significance should really be explained/ focussed.\n\n5. Difference between MBON a-3 and MBON g2A'1 could be due to the multiple lobes and compartments involved. The alternative, that this is an MBON dedicated to such discrimination may be true but isn't convincingly shown. In any event, a discussion of alternative possibilities is required,\n\n6. Is the term \"uncorrelated\" sometimes more appropriate to use than \"decorrelated?\"\n\nReviewer #2 (Recommendations for the authors):\n\na. I am confused by the use of 'one engram' and 'single set of synapses' \u2013 'single set' is entirely arbitrary, and what is one engram in this context? Single odor engram triggering different behavior is not novel. Several prior works have shown that a single odorant can trigger different actions in learned flies depending on either stimulus history or the fly's internal state.\n\nb. Authors have imaged calcium dynamics in the KC cell bodies to compare if two engrams should be perceptually similar. However, Bilz et al. 2019 have shown that the KC boutons, not the cell bodies, are the units of olfactory memory engrams. I understand that imaging KC boutons will be challenging to combine with optogenetic stimulations, but this nonetheless creates a significant caveat in their approach and needs to be discussed in the manuscript.\n\nc. Given that odorant similarity is concentration-dependent (e.g., Hallem and Carlson 2006), I am unsure how the authors chose the odor concentrations. Behavior experiments in Campbell et al. 2013 were performed in a vastly different apparatus; authors need to check if flies indeed find it difficult to discriminate between BA and PA in the current setup under standard aversive learning protocol. It would also be reassuring to see additional odor pairs to ensure the generality of their results.\n\nd. Authors have not included any genetic control (e.g., empty split) and stimulation control (-retinal) in the behavioral experiments (Figures 1 and 6) to show the baseline response. Discrimination data in Figure 1g looks bimodal, and I wonder if discr. vs. gen. will become significant with a larger sample size. What is the rationale for the chosen sample size for these experiments? DA rescue data in Figure 1i is also incomplete as it does not contain any easy discrimination, and generalization data for \u03b32\u03b1'1 and \u03b13 rescue data is entirely missing. Figure 6 includes only \u03b32\u03b1'1 data but no \u03b13 activation data; \u03b13 is an essential control for testing their predictions.\n\ne. In Figure 4 and supplementary Figures 3 and 4, dissimilar odorants are presented as isolated pulses, not as a transition. A fairer comparison would present them as a transition to match the behavioral experience. Why were optogenetics not used for the \u03b13 imaging experiments in Figure 3?\n\nf. Does the starting KC weight matrix in Figure 5 match the EM connectivity data? How does the transition data from this figure look in the PC space, and how well does the decoder from Figure 2 performs on the transition data? Similarly, how well the regression model performs if it's trained purely on single pulse data?\n\ng. Multiple papers have shown how odor transitions affect learned behavior in flies, e.g., DasGupta et al. 2014, Groschner et al. 2018, Vrontou et al. 2021. Yet, the authors have not discussed how their results support/contradict these prior models. It's an integral part of the manuscript and could point towards significant differences in experimental approach and/or intensity vs. identity coding. For example, Groschner et al. 2018 and Vrontou et al. 2021 had shown that the main difference among the KC responses during intensity discrimination is in the spike latency, not in the KC identity-I wonder if the apparent lack of discriminability in Figure 5 comes from the slow GCamp responses in the KC cell bodies.\n\nReviewer #3 (Recommendations for the authors):\n\nThe story is novel and convincing, but a little patchy in parts.\n\nI am not convinced that Figure 4d-f should be done with shock and not DAN stimulation. The authors should attempt the equivalent optogenetic experiment for \u03b3 and \u03b1 DANs.\n\nOther less important, but noticeable points of asymmetry exist throughout the manuscript. Experiments were done with \u03b1 but not \u03b3 DANs, including Figure 3 and others.\n\nA loss of function experiment with DAN inhibition in natural learning would be appropriate and very helpful.\n\nThe dopamine biosynthesis KO experiment of Figure 1i should really be done for both populations of DANs, and ideally for easy discrimination as well as hard discrimination.\n\nMore discussion of potential mechanisms would also help.\n",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a992ec88-bde7-4778-a034-b4ebcfac2212",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C1",
+      "claim": "Drosophila can flexibly categorize a given stimulus into different groups depending on the options available.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than forming memories that strike a balance between specificity and generality, Drosophila can flexibly categorize a given stimulus into different groups depending on the options available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a key finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "74ebfbf8-671a-4425-894b-23fa9e632c80",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C2",
+      "claim": "Flexible categorization in neuronal activity and behavior depends on the order and identity of the perceived stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that flexible categorization in neuronal activity as well as behavior depends on the order and identity of the perceived stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a main finding in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "58b9a4ad-02de-4c38-ab67-48a9270f49ee",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C3",
+      "claim": "Making choices requires assigning options with subjective values that can be updated through learned experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Making such a choice requires assigning options with subjective values that can be updated through learned experience (Hare et al., 2011; Hunt et al., 2012; Glimcher and Fehr, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "58248264-1184-427b-89d0-d9190714004c",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C4",
+      "claim": "Storing and updating values for every potential option separately would be computationally taxing.",
+      "claim_type": "EXPLICIT",
+      "source": "In such a framework, storing and updating values for every potential option separately would be computationally taxing (Seger and Miller, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "6d9a6974-952f-43a3-956c-acde91dc12f5",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C5",
+      "claim": "It is beneficial for the brain to maintain overlapping sensory representations to allow options to be grouped into categories based on sensory similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, it is beneficial for the brain to maintain overlapping sensory representations, which would allow options to be grouped downstream into categories based on sensory similarity and assigned with common values (Seger, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "b430af29-9568-41ba-870b-dd2f8431599f",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C6",
+      "claim": "Category boundaries must be flexible to allow distinguishing between two options from the same category.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore essential in such a coding-scheme that category boundaries be flexible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical inference from the preceding discussion about categorization.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "7e1cfd22-7a04-4779-b430-d35cb9efd661",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C7",
+      "claim": "Animals directly compare the values of available stimuli and use relative value signals to guide flexible categorization.",
+      "claim_type": "EXPLICIT",
+      "source": "One prominent hypothesis suggests that animals directly compare the values of the available stimuli and make use of this relative value signal to guide flexible categorization (Itti and Koch, 2001; Carello and Krauzlis, 2004; Mysore and Knudsen, 2011; Mysore et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This hypothesis is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "b139ecfe-b731-4319-b5cf-7c3d14fb649c",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C8",
+      "claim": "Olfactory learning in Drosophila takes place in the mushroom body.",
+      "claim_type": "EXPLICIT",
+      "source": "Olfactory learning takes place in the mushroom body (MB), where odors are represented by sparse activity patterns of the 2000 intrinsic neurons termed Kenyon cells (KCs) (Turner et al., 2008; Murthy et al., 2008; Honegger et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "853e984f-c47b-446f-9b70-f3625ad9e802",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C9",
+      "claim": "Odors are represented by sparse activity patterns of approximately 2000 Kenyon cells in the mushroom body.",
+      "claim_type": "EXPLICIT",
+      "source": "Olfactory learning takes place in the mushroom body (MB), where odors are represented by sparse activity patterns of the 2000 intrinsic neurons termed Kenyon cells (KCs) (Turner et al., 2008; Murthy et al., 2008; Honegger et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "c4e5ce18-2184-42eb-8ae5-ae72cb0ba8fc",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C10",
+      "claim": "Chemically similar odors elicit partly overlapping patterns of activity in Kenyon cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although different odor response patterns are largely uncorrelated, chemically similar odors can elicit partly overlapping patterns of activity (Campbell et al., 2013; Lin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "045a800a-dd80-4fe9-b729-d79f03c0030f",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C11",
+      "claim": "Sensory representations are converted into value-representing memory traces at the synapses between Kenyon cells and mushroom body output neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These sensory representations are converted into value-representing memory traces that guide behavioral outputs downstream of the KCs, at the synapses that they form with MB output neurons (MBONs) (Aso et al., 2014b; Hige et al., 2015a; Owald et al., 2015; Villar et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "07d1620a-bdee-4242-81cb-ff7c4a9739b5",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C12",
+      "claim": "There are approximately 30 distinct mushroom body output neurons that form compartments integrating input from different subsets of Kenyon cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These ~30 distinct MBONs form compartments that integrate input from different subsets of KCs (Ito et al., 1998; Strausfeld et al., 2003; Lin et al., 2007; Tanaka et al., 2008; Aso et al., 2009; Aso et al., 2014a; Takemura et al., 2017; Li et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "1d6a9a62-1f3b-4494-a1e6-56ec85cb6e0f",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C13",
+      "claim": "KC-MBON synapses are plastic and primarily undergo depression as flies learn an olfactory association.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these synapses are plastic and primarily undergo depression as flies learn an olfactory association (Berry et al., 2018; Cohn et al., 2015; Hige et al., 2015a; Perisse et al., 2016; S\u00e9journ\u00e9 et al., 2011; but see also Pla\u00e7ais et al., 2013; Stahl et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "47ff0b61-dfec-482a-8e4f-c5714886c5e8",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C14",
+      "claim": "Synaptic plasticity in the mushroom body is mediated by dopaminergic neurons that convey information about reward or punishment.",
+      "claim_type": "EXPLICIT",
+      "source": "This plasticity is mediated by dopaminergic neurons (DANs) that convey information about reward or punishment and arborize in corresponding compartments as the MBONs forming a series of DAN-MBON modules (Aso et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "a19cb7a6-12eb-468d-b727-a7ec102d4d4c",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C15",
+      "claim": "The degree of overlap in KC response patterns drives the specificity of learning and resulting behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree to which KC response patterns overlap has been shown to drive the specificity of learning and resulting behavior (Campbell et al., 2013; Lin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "722ff399-a734-423a-9c77-afc5a1ca0acc",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C16",
+      "claim": "During learning, synapses from odor-activated Kenyon cells to specific MBONs are depressed.",
+      "claim_type": "EXPLICIT",
+      "source": "During learning, synapses from odor-activated KCs to specific MBONs are depressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "a91678a3-36ab-4d75-b2af-0eb5fa26dd3a",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C17",
+      "claim": "A similar odor with an overlapping KC response pattern exhibits reduced synaptic drive onto the same MBONs.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar odor with an overlapping KC response pattern thus also exhibits a reduced synaptic drive onto the same MBONs (Hige et al., 2015a; Perisse et al., 2016; Berry et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "931c47d0-b680-465e-a554-92c3dc3560f3",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C18",
+      "claim": "Greater overlap in KC response patterns leads to more extensive depression of MBON activation and greater generalization.",
+      "claim_type": "EXPLICIT",
+      "source": "The greater the overlap, the more extensive the depression of this other odor's activation of the MBONs, and the greater the generalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the established model of learning.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "0cca06ef-aae7-4c79-b884-327e05f9f0bd",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C19",
+      "claim": "When overlap in KC response patterns is low, downstream MBON activity is minimally affected and the animal discriminates between the two cues.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when overlap is low, downstream MBON activity is minimally affected and the animal discriminates between the two cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the established model of learning.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "0fb14b78-6f56-4f02-95bd-ea159e32b3ae",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C20",
+      "claim": "The existing model of mushroom body learning does not include a means for explicitly comparing between available options.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this model has a lot of explanatory power, it does not include a means for explicitly comparing between available options.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the current model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "74537898-e86a-425b-99ee-9a95ac3449c2",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C21",
+      "claim": "Flies can achieve high levels of performance for both discrimination and generalization tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that flies could achieve high levels of performance for both discrimination and generalization tasks and identified a single MB compartment capable of supporting both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "2bca67e1-e396-49c6-b297-126551defe3e",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C22",
+      "claim": "A single mushroom body compartment is capable of supporting both discrimination and generalization tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that flies could achieve high levels of performance for both discrimination and generalization tasks and identified a single MB compartment capable of supporting both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "4e633b2a-26e4-45e5-8a12-e5067c491bb0",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C23",
+      "claim": "MBON responses showed no measurable stimulus-specificity to simple pulses of two similar odors despite flies being able to distinguish them behaviorally.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, MBON responses in this compartment showed no measurable stimulus-specificity to simple pulses of the two similar odors we used, despite being able to distinguish them behaviorally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "f9099bf8-4fee-449b-8bda-6c6678c601b5",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C24",
+      "claim": "When odors were presented in sequence, MBON responses to similar odors were clearly distinct.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when we presented odors in sequence, one transitioning immediately into the other, similar to what flies experience in the behavioral task, we found that MBON responses to these odors were clearly distinct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "659df155-f4c0-49c2-b32d-953b19b6c5eb",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C25",
+      "claim": "MBON activity is modulated by a temporal comparison of the alternatives presented to the fly.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings show that MBON activity is modulated by a temporal comparison of the alternatives presented to the fly, allowing for switches in the categorization of odor stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "73385d9c-a39b-4ea4-8025-5ad4c91925c2",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C26",
+      "claim": "KC representations did not show categorization switching to either simple stimuli or transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, KC representations did not show categorization switching to either simple stimuli or transitions suggesting the involvement of downstream mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "920b4586-70ef-4a16-a5b6-c23cbfac3df5",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C27",
+      "claim": "Behavioral experiments showed that comparisons are made when stimuli are experienced close together in time.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, behavioral experiments showed that these comparisons are made when stimuli are experienced close together in time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "3cc56191-bbab-4fed-a442-5f56d43dd76b",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C28",
+      "claim": "The mushroom body circuit implements a comparison that augments small differences between overlapping sensory representations to guide flexible stimulus categorization.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that the MB circuit implements a comparison, augmenting small differences between overlapping sensory representations to guide flexible stimulus categorization and choice behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "e12aecc3-ab41-4a17-92dc-a37cdc3df752",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C29",
+      "claim": "Pentyl acetate and butyl acetate are chemically similar and elicit highly overlapping response patterns in the KC population.",
+      "claim_type": "EXPLICIT",
+      "source": "PA and BA are chemically similar and elicit highly overlapping response patterns in the KC population (Campbell et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "09512eea-ef9d-4cab-b424-4eaf49203870",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C30",
+      "claim": "Ethyl lactate is chemically distinct from pentyl acetate and butyl acetate and elicits different KC response patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "EL is distinct, both chemically and in terms of KC response patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from prior work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "af70db40-d808-4f43-99a3-37fe8c79c276",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C31",
+      "claim": "Flies with Chrimson driven by DAN PPL1-\u03b13 showed significantly lower performance on hard discrimination compared to easy discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly lower performance on the hard discrimination task with reinforcement to \u03b13 (p=0.007, n=12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "0d8f8641-aab8-401a-be90-5896393776dc",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C32",
+      "claim": "Flies with Chrimson driven by DAN PPL1-\u03b32\u03b1'1 showed no significant difference in performance on easy versus hard discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant difference in performance on easy versus hard discrimination with reinforcement to \u03b32\u03b1'1 (p=0.08, n=12 reciprocal experiments).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption and shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "7c0d4bda-8327-4419-9d6f-48b16b569638",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C33",
+      "claim": "Flies with reinforcement to \u03b13 showed no significant difference in performance on generalization and easy discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant difference in performance on generalization and easy discrimination with reinforcement to \u03b13 (p=0.84, n=12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption and shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "753b7b2c-3ef3-406c-8b92-4ba1fca3b01d",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C34",
+      "claim": "Flies with reinforcement to \u03b32\u03b1'1 showed no significant difference in performance on generalization and easy discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant difference in performance on generalization and easy discrimination with reinforcement to \u03b32\u03b1'1 (p=0.89, n=12 unpaired control performance scores).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption and shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "7eef5957-d455-4de6-a838-9588f49f48a4",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C35",
+      "claim": "Rescue of the dopamine biosynthesis pathway in DAN PPL1-\u03b32\u03b1'1 is sufficient for performance on the hard discrimination task.",
+      "claim_type": "EXPLICIT",
+      "source": "Rescue of the dopamine biosynthesis pathway in DAN PPL1-\u03b32\u03b1'1 is sufficient for performance on the hard discrimination task (p=0.04, n=8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption and shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "671dd53b-4a94-4b4c-9d0d-f3bbfb112221",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C36",
+      "claim": "KC inputs to both \u03b32\u03b1'1 and \u03b13 compartments contain enough information for discrimination between similar odors.",
+      "claim_type": "EXPLICIT",
+      "source": "We started by evaluating whether the odor inputs to the \u03b32\u03b1'1 and \u03b13 compartments carry enough information to discriminate between the two similar odors used in our behavior experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a research question that was addressed, with results showing decoder accuracies were high for all KC subtypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "73a5ffac-ccff-4cdb-bb25-79d530f97250",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C37",
+      "claim": "Many of the same Kenyon cells respond to the two similar odors PA and BA, but representations do not completely overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "The trial-averaged response traces of individual KCs for each of the three subtypes showed that many of the same cells respond to the two similar odors (PA and BA), but representations did not completely overlap (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "a56aed49-d92c-44e3-b77c-2a353c7fb520",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C38",
+      "claim": "KC responses to the dissimilar odor EL were very different from responses to PA and BA.",
+      "claim_type": "EXPLICIT",
+      "source": "Responses were very different for the dissimilar odor, EL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "caf200c2-bc3d-46ce-8877-508020c340a7",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C39",
+      "claim": "Similar odors elicited similar response strengths in individual KCs across all three KC subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Pooling cells across all imaged flies, we found that similar odors elicited similar response strengths in individual KCs (Figure 2\u2014figure supplement 1A, \u03b3 KCs: r=0.74, p<0.001; \u03b1'/\u03b2' KCs: r=0.76, p<0.001 and \u03b1/\u03b2 KCs: r=0.63, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with statistical support and shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "2e599a89-5792-45ea-8607-5f6044b16cce",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C40",
+      "claim": "Correlation coefficients for KC responses to dissimilar odors were lower and not significant.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlation coefficients were lower and were not significant for the dissimilar odors (Figure 2\u2014figure supplement 1B, \u03b3 KCs: r=0.04, p=0.60; \u03b1'/\u03b2' KCs: r=0.06, p=0.55 and \u03b1/\u03b2 KCs: r=\u20130.04, p=0.77).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with statistical support and shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "5185770a-7f1b-4e12-b955-8340fdf926de",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C41",
+      "claim": "Decoder accuracies for the two similar odors were as high as for the dissimilar odor across all KC subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Decoder accuracies for the two similar odors were as high as they were for the dissimilar odor, across all KC subtypes (Figure 2E)(\u03b3 KCs: comparing accuracies for PA and EL p=0.06, BA-EL p=0.08, n=7 flies; \u03b1'/\u03b2' KCs: PA-EL p=0.13, BA-EL p=0.13, n=5 flies; \u03b1/\u03b2 KCs: PA-EL p=0.63, BA-EL p=0.73, n=6 flies).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with statistical support and shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "a6c7bd9e-2e02-41d8-86d3-32f25fcda00f",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C42",
+      "claim": "After pairing, MBON-\u03b32\u03b1'1 responses to both the paired odor A and the unpaired similar odor A' were strongly depressed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after pairing, MBON-\u03b32\u03b1'1 responses to A and A' were both strongly depressed (Figure 3D and E, p=0.001 for A and p=0.001 for A', n=11 flies).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with statistical support and shown in Figures 3D and 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "192b648e-c10d-4648-89d9-ac4ca8ee1b21",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C43",
+      "claim": "No difference in MBON-\u03b32\u03b1'1 response size was detected between the paired odor A and unpaired similar odor A' after training.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact we could not detect a difference in response size between the two, even though only one (A) had been paired with reinforcement (Figure 3F, p=0.77).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with statistical support and shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "e3c516a9-4887-4ff9-9c17-16d190936592",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C44",
+      "claim": "MBON-\u03b32\u03b1'1 responses to the dissimilar odor B were not affected by pairing.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, responses to the dissimilar odor (B) were not affected (p=0.18).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "28838b7a-7f82-46ee-9f58-ae5eeb025db8",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C45",
+      "claim": "The depression of MBON-\u03b32\u03b1'1 responses to A' seen in single pulses was not readily apparent in an A to A' transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the depression of responses to A' seen in single pulses was not readily apparent in an A to A' transition (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "78a49d6d-6828-4bd9-8587-7841a742a48b",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C46",
+      "claim": "MBON-\u03b32\u03b1'1 responses to A' were similar to pre-pairing levels when A' was preceded by A, but not when the order was reversed.",
+      "claim_type": "EXPLICIT",
+      "source": "Responses were similar to pre-pairing levels when A' was preceded by A, but not when the order was reversed (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "f9098b78-91a1-43b6-949e-f74da9185d88",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C47",
+      "claim": "MBON-\u03b32\u03b1'1 responses to A' as the second pulse in a transition were not significantly different pre- and post-pairing.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, quantifying the size of the MBON response to the second pulse showed A' responses were not significantly different pre- and post-pairing (Figure 4C; p=0.376, n=13).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with statistical support and shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "2f1309cd-8463-423c-9a80-38e3cfabc3cd",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C48",
+      "claim": "MBON-\u03b32\u03b1'1 responses to A as the second pulse in a transition were significantly lower after pairing.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, responses to A as the second pulse were significantly lower after pairing (Figure 4C; p<0.001, n=13).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with statistical support and shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "383271dd-1ce6-4eb1-918a-6c0c7a6ff393",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C49",
+      "claim": "After training, MBON-\u03b32\u03b1'1 responses to A' as the second pulse were significantly larger than responses to A as the second pulse.",
+      "claim_type": "EXPLICIT",
+      "source": "The contrast with the single odor pulse results is clearest when comparing responses to A versus A' as the second pulse in a transition, where A' responses were now significantly larger (Figure 4\u2014figure supplement 2C p=0.004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with statistical support and shown in Figure 4\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "7e0410f5-aac8-46b1-988a-bb4635d77321",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C50",
+      "claim": "Control experiments where LED stimulation was omitted showed no significant differences in MBON-\u03b32\u03b1'1 responses pre- and post-mock pairing.",
+      "claim_type": "EXPLICIT",
+      "source": "Control experiments where LED stimulation was omitted showed no significant differences pre- and post-mock pairing (Figure 4\u2014figure supplement 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4\u2014figure supplement 3A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "1ebeb0c5-443a-4cd8-95ae-ae0b4cc79eda",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C51",
+      "claim": "Transitions selectively enhance the otherwise depressed MBON-\u03b32\u03b1'1 responses to the similar odor A'.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, when we examined responses to A-B and A'-B transitions before and after training, we saw no effect on responses to odor B, indicating that transitions selectively enhance the otherwise depressed responses to the similar odor A' (Figure 4\u2014figure supplement 3D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4\u2014figure supplement 3D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "b9d89099-f1e6-44f9-aabf-7d297b88502a",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C52",
+      "claim": "In MBON-\u03b13, responses to the second odor in the transition were depressed for both transition orders after training.",
+      "claim_type": "EXPLICIT",
+      "source": "Responses to the second odor in the transition were depressed for both transition orders (Figure 4F; A'-A, p<0.001, A-A', p<0.001, pooled n=14 PA-paired and n=12 BA-paired flies).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with statistical support and shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "d058cad2-d3d1-4411-bf37-3af0902b0162",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C53",
+      "claim": "MBON-\u03b13 responses to the dissimilar odor B showed no significant depression after training.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, responses to the dissimilar odor (B) showed no significant depression (p=0.48).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "70d31af9-250c-4cb3-93ba-d95bac792a8a",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C54",
+      "claim": "MBON-\u03b13 showed very little contrast at the transition point, and contrast was similarly low for either order of the transition.",
+      "claim_type": "EXPLICIT",
+      "source": "With MBON-\u03b13, we saw very little contrast at the transition point, and contrast was similarly low for either order of the transition (Figure 4\u2014figure supplement 2E, P=0.86).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with statistical support and shown in Figure 4\u2014figure supplement 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "412a5970-0ed9-4383-ae0b-2eaf9ce16020",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C55",
+      "claim": "KC activity patterns trained with logistic regression using isolated odor pulses did not reproduce MBON activity patterns for odor transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "To match the training procedure the flies experienced, we first trained the models using isolated odor pulses, and tested predictions for odor transition stimuli... In contrast to our observations of MBON activity, model outputs were not significantly different between the two transitions, and were low for both (Figure 5B), indicating that transition-evoked changes in the KC odor representations do not underlie the effects on MBON-\u03b32\u03b1'1 activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "2610e910-badb-4f40-8161-c914c9b0b4f0",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C56",
+      "claim": "All three KC subtypes could distinguish odor transitions when logistic regression models were trained using transition-evoked KC activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all three KC subtypes could distinguish odor transitions when trained to do so (Figure 5C, p<0.001 for all KC subtypes).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with statistical support and shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "403e3b31-bc71-4396-b0d5-be2797572590",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C57",
+      "claim": "Flies learn to discriminate when trained solely with isolated odor pulses, not with transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast flies learn to discriminate when trained solely with the isolated odor pulses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a contrast to the KC decoder results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "8ef191a2-c09b-4b4a-bb60-4eb98ce081b0",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C58",
+      "claim": "Flies showed strong upwind displacement during the second pulse of an A-A' transition, which was significantly larger than during the reverse A'-A sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed strong upwind displacement during the second pulse of an A-A' transition, which was significantly larger than during the reverse A'-A sequence (Figure 6B, C and F, p=0.004, n=12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with statistical support and shown in Figures 6B, C, and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "8a340aa1-2c3d-48ce-be46-edd8d382e1ea",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C59",
+      "claim": "In interrupted transitions with a 25 s gap, responses to the second pulse were not significantly different depending on transition order.",
+      "claim_type": "EXPLICIT",
+      "source": "In these interrupted transitions, responses to the second pulse were not significantly different depending on transition order (Figure 6 D, E and G, p=0.85, n=12 for A-gap-A', n=13 for A'-gap-A,), and showed a similar degree of upwind displacement to that evoked during the first pulse, as expected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with statistical support and shown in Figures 6D, E, and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "7a860e8d-fb49-4ea0-ba53-67ce44dfb1d7",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C60",
+      "claim": "Starting locations at the onset of the second odor pulse were not significantly different in any condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that starting locations at the onset of the second odor pulse were not significantly different in any condition, ruling out the possibility that flies go more upwind with the A-A' transition because they start from further downwind in the arena (Figure 6\u2014figure supplement 1B, n=12 for A-A', n=12 for A'-A, p=0.08 for direct; n=12 for A-gap-A', n=13 for A'-gap-A, p=0.39 for interrupted).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with statistical support and shown in Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "0555485b-7ee1-4148-83ae-1efebcd606d0",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C61",
+      "claim": "The increased upwind displacement during A-A' transitions does not come from a linear combination of the response to the end of the first odor pulse and the beginning of the second.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we ruled out the possibility that the increased upwind displacement during such a transition comes from a linear combination of the response to the end of the first odor pulse and the beginning of the second (Figure 6\u2014figure supplement 1C-G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 6\u2014figure supplement 1C-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "f4284ee3-e684-4a74-85d6-9386362264aa",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C62",
+      "claim": "Behavioral responses to A' are distinct only when it immediately follows the paired odor A.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that behavioral responses to A' are distinct only when it immediately follows the paired odor A, matching the odor transition responses we observed in MBON-\u03b32\u03b1'1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the behavioral experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "5d1f23a0-3e8f-4368-b723-e0aa26bea774",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C63",
+      "claim": "A single memory trace formed via plasticity confined to \u03b32\u03b1'1 supports strong performance on both hard discrimination and generalization tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that a single memory trace formed via plasticity confined to \u03b32\u03b1'1 supports strong performance on the hard discrimination and generalization tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the DTH-rescue experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "e7e6b6f7-aa6c-44dc-be32-97b33f066ce6",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C64",
+      "claim": "The overlap in KC response patterns is not differentially distributed across different KC subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that all three major subtypes of KCs exhibit similar levels of overlap across our odor test set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the KC imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "98d8ab7e-eafb-40ff-8a97-d70da51a231a",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C65",
+      "claim": "Odor representations in all three KC subtypes contain enough information for A-A' discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that odor representations in all three KC subtypes contain enough information for A-A' discrimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the decoder analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "c0a6f65c-a39a-44a3-8d1f-0e0dfee5a998",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C66",
+      "claim": "KC responses to odor transitions could not account for the odor-transition responses observed in MBON-\u03b32\u03b1'1.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, when we examined KC responses to odor transitions, we found that they could not account for the odor-transition responses we observed in MBON-\u03b32\u03b1'1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the KC imaging and modeling experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "9b935870-667a-4a67-9f4c-c7b9475f1674",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C67",
+      "claim": "MBON-\u03b13 received more synaptic inputs from a greater number of KCs than MBON-\u03b32\u03b1'1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, contrary to theoretical expectations, of the two MBON types we studied MBON-\u03b13 received more synaptic inputs from a greater number of KCs, however it was poorer at hard discrimination (MBON \u03b32\u03b1'1=2,959 synapses from 336 \u03b1'/\u03b2' KCs and 3773 synapses from 683 \u03b3 KCs per hemisphere; MBON \u03b13=11,360 synapses from 888 \u03b1/\u03b2 KCs per hemisphere; Clements et al., 2020; Li et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text with citations to connectome data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "f44dadf8-e5b0-4ce8-a59d-7e6056f5e763",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C68",
+      "claim": "Flies make a temporal comparison of inputs to determine how a stimulus is categorized.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work instead highlights the importance of comparisons in determining how a stimulus is categorized. In particular we observe that flies make a temporal comparison of inputs and identify the underlying neural implementation of comparison in the MB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a main conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "2187d33d-caf0-4bd4-bedf-03c078b892e6",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C69",
+      "claim": "Flexible categorization in Drosophila involves a mechanism at or downstream of the KC-MBON synapses modified during learning.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest instead that flexible categorization in Drosophila involves a mechanism at or downstream of the KC-MBON synapses modified during learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "228a52c4-fa8a-4139-b530-e90ba6d7c3ce",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C70",
+      "claim": "Recalling food reward associations from one MB compartment is gated by another MB compartment depending on whether the fly is hungry.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, recalling food reward associations from one MB compartment is gated by another MB compartment depending on whether or not the fly is hungry (Perisse et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "85f64e8f-8a99-4049-99e4-58f02abdae90",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C71",
+      "claim": "Ongoing motor activity can affect dopaminergic inputs along the MB lobes.",
+      "claim_type": "EXPLICIT",
+      "source": "Ongoing motor activity can also affect dopaminergic inputs along the MB lobes (Cohn et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "62093b7d-3886-4a4b-acf1-4430b8ddf029",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C72",
+      "claim": "Long-term memory allows for more generalization than short-term memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments have shown that long-term memory allows for more generalization than short-term memory (Ichinose et al., 2015; K\u00f6nig et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "589c69c7-0653-4ebb-991d-375b7f311ead",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C73",
+      "claim": "Flexible categorization manifests at or downstream of the sites of learning, the KC-MBON synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we establish a few important constraints on a possible mechanism for flexible categorization in Drosophila: (i) it manifests at or downstream of the sites of learning, the KC >MBON synapses",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a constraint established by the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "61a14c1f-22f4-432d-aa6d-5c423955b0c7",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C74",
+      "claim": "Flexible categorization modifies responses to stimuli asymmetrically - in A to A' transitions and not the reverse.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we establish a few important constraints on a possible mechanism for flexible categorization in Drosophila: (i) it manifests at or downstream of the sites of learning, the KC >MBON synapses and (ii) it modifies responses to stimuli asymmetrically - in A to A' transitions and not the reverse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a constraint established by the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "023762a7-64e6-4d9c-8661-aa1f9b928c8a",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C75",
+      "claim": "Offset responses in MBONs can be potentiated, presumably due to the timing of reinforcement.",
+      "claim_type": "EXPLICIT",
+      "source": "Offset responses in other MBONs can be potentiated (Vrontou et al., 2021), presumably due to the timing of reinforcement (Cohn et al., 2015; Handler et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "633a180a-d3e6-48ae-9927-7520a167f2ba",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C76",
+      "claim": "Activity of the APL inhibitory neuron is reduced by training.",
+      "claim_type": "EXPLICIT",
+      "source": "Activity of this inhibitory neuron is reduced by training (Zhou et al., 2019; Liu and Davis, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "86735b4e-5ead-4c7d-84ee-e32225a8b5e1",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C77",
+      "claim": "Inhibition at odor offset is a particularly prominent feature of the \u03b1'/\u03b2' KCs that are input to MBON-\u03b32\u03b1'1.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition at odor offset is a particularly prominent feature of the \u03b1'/\u03b2' KCs that are input to MBON-\u03b32\u03b1'1 (Inada et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "e4ddf13f-6943-4e93-a18f-0564041158a7",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C78",
+      "claim": "Making fine-grained distinctions is easier when a temporal comparison is possible.",
+      "claim_type": "EXPLICIT",
+      "source": "Making fine-grained distinctions is easier when a temporal comparison is possible, but when it is not, more generalized categorizations can be an adaptive default.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "4ced97a6-0f20-4615-8f29-5bbea5890cce",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C79",
+      "claim": "Flies received 10 cycles of training and were tested for memory 24 hours later for experiments with DAN PPL1-\u03b13.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies received 10 cycles of training and were tested for memory 24 hours later. CsChrimson-mVenus driven in DAN PPL1-\u03b13 by MB630B-Gal4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the figure caption for Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "73f18b31-22f2-43bf-9c9e-4069559b3d46",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C80",
+      "claim": "Flies received three cycles of training and were tested for memory immediately after for experiments with DAN PPL1-\u03b32\u03b1'1.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies received three cycles of training and were tested for memory immediately after. CsChrimson-mVenus driven in DAN PPL1 \u03b32\u03b1'1 by MB296B-Gal4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the figure caption for Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "eae9e5a4-3a06-4c9b-8513-f73b2acb153e",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C81",
+      "claim": "Contrast around the odor transition was significantly higher for A to A' transitions than the reverse after learning.",
+      "claim_type": "EXPLICIT",
+      "source": "After learning, contrast around the odor transition was significantly higher for A to A' transitions than the reverse (Figure 4\u2014figure supplement 2D; p=0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with statistical support and shown in Figure 4\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "1ac93a58-f558-4798-991d-7bb79c004cfc",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C82",
+      "claim": "The mean upwind displacement after an A-A' transition was similar to that caused by optogenetic activation of MBON-\u03b32\u03b1'1 in the arena.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the mean upwind displacement after an A-A' transition was similar to that caused by optogenetic activation of MBON-\u03b32\u03b1'1 in the arena (unpublished communication - Y. Aso).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text with reference to unpublished data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "99586d60-d02a-4041-a5ba-1314c9d1c7a7",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C83",
+      "claim": "Flies compare available alternatives 'side-by-side' in time and stimulus history is important for flexible categorization and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results show that flies compare available alternatives 'side-by-side' in time and that stimulus history is important for flexible categorization and behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the behavioral experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "08efd6b6-b8ff-4ff2-8039-113501e68b29",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C84",
+      "claim": "When the two odors are encountered separately, both MBON-\u03b32\u03b1'1 output and fly behavior are indistinguishable for the two similar odors.",
+      "claim_type": "EXPLICIT",
+      "source": "When the two odors are encountered separately, both MBON-\u03b32\u03b1'1 output and fly behavior are indistinguishable for the two similar odors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "258c91a0-3e50-4ab6-b0a6-b6cdba8b5ce9",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C85",
+      "claim": "When similar odors are closely apposed in time, MBON-\u03b32\u03b1'1 activity is enhanced and flies are attracted to A'.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when they are closely apposed in time, MBON-\u03b32\u03b1'1 activity is enhanced and flies are attracted to A'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "aa12647a-c997-4955-a941-fe7bc812e746",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C86",
+      "claim": "Learning-related synaptic plasticity resulted in depressed neuronal responses to both similar odors when presented in isolation, consistent with strong behavioral generalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Learning-related synaptic plasticity resulted in depressed neuronal responses to both similar odors when presented in isolation, consistent with strong behavioral generalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of findings in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "a9800dae-06a1-4c1c-bdc4-4613c6f3747d",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C87",
+      "claim": "When odors were presented sequentially as at an odor boundary, neuronal responses to A and A' were distinct.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the odors were presented sequentially, as at an odor boundary, neuronal responses to A and A' were distinct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of findings in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "5be41193-0460-4594-a76d-4c5b1a0f913a",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C88",
+      "claim": "Behavioral experiments with carefully timed odor delivery showed that flies' response to A' was distinct from A only if they were delivered in a transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, behavioral experiments with carefully timed odor delivery showed that flies' response to A' was distinct from A only if they were delivered in a transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of findings in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "c0f66a93-e4d1-46f0-9eac-938300b73008",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "claim_id": "C89",
+      "claim": "An odor boundary presents an opportunity to compare stimuli, and this comparison modulates memory traces by amplifying small differences between stimuli to change categorization and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "An odor boundary presents an opportunity to compare stimuli, and this comparison modulates memory traces by amplifying small differences between stimuli to change categorization and behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion in the Discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "29c27592-dc12-4b2d-ad3e-05099837ac6b",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The \u03b32\u03b1'1 compartment supports both hard discrimination and generalization, while the \u03b13 compartment supports generalization but not hard discrimination. Plasticity confined to \u03b32\u03b1'1 via dopamine rescue is sufficient for both tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35 and C63 provide converging behavioral evidence with appropriate controls (empty driver, reciprocal designs, DTH rescue) and statistical support. The differential performance between compartments is clearly demonstrated with n=8-12 per condition and appropriate statistical tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "08eb67ec-376d-4fc9-b7ec-6e74b220ba2e",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "All three KC subtypes (\u03b3, \u03b1'/\u03b2', \u03b1/\u03b2) exhibit similar levels of overlap in odor representations and contain sufficient information to discriminate between similar odors PA and BA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 and C64-C65 are supported by calcium imaging data (n=5-7 flies per KC subtype) and decoder analysis showing high accuracy for all subtypes. Correlation analyses (C39-C40) with statistical support demonstrate similar overlap patterns across KC types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "a00d817a-ae78-4f56-a250-caf103f30b97",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "After optogenetic training, MBON-\u03b32\u03b1'1 responses to both the paired odor A and unpaired similar odor A' are equally depressed when presented as isolated pulses, while responses to dissimilar odor B are unaffected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 are supported by calcium imaging data (n=11 flies) with statistical comparisons showing significant depression for both A and A' (p=0.001 each) but no difference between them (p=0.77), and no effect on B (p=0.18). This demonstrates generalization at the neural level.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "afc95dc7-f03e-4938-b2e0-1128e8cd5522",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "When odors are presented as transitions rather than isolated pulses, MBON-\u03b32\u03b1'1 responses to A' are restored to pre-training levels when A' follows A, but remain depressed when A follows A', creating an asymmetric discrimination signal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49, C81, and C87 are supported by calcium imaging with odor transitions (n=13 flies). Statistical tests show A' responses are not significantly different pre/post when following A (p=0.376), but A responses remain depressed (p<0.001). Contrast analysis (C81, p=0.001) quantifies the asymmetry.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "5323baa8-e345-4d12-b967-a2f2bee76270",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Control experiments confirm that the transition effects on MBON-\u03b32\u03b1'1 are specific to learning and to transitions between similar odors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 provide appropriate controls: no-LED mock training shows no changes, and transitions to dissimilar odor B show no enhancement. These controls rule out non-specific effects and confirm the specificity of the phenomenon.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "e69172f0-f4e1-4052-bfa4-118819f48cdd",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "MBON-\u03b13 shows symmetric depression for both transition orders and lacks the contrast enhancement seen in MBON-\u03b32\u03b1'1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 are supported by imaging data (n=14 PA-paired, n=12 BA-paired flies) showing depression for both transition orders (p<0.001 each) with no difference in contrast between orders (p=0.86). This contrasts with \u03b32\u03b1'1 and aligns with \u03b13's inability to support hard discrimination.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "cd18da27-4d4c-4329-b7b9-7e02cdc92541",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "KC activity patterns trained with isolated pulses cannot account for MBON transition responses, though KCs can distinguish transitions when explicitly trained on them.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 and C66 are supported by logistic regression modeling showing that KC patterns trained on isolated pulses fail to reproduce MBON transition discrimination, but can discriminate transitions when trained on transition data (p<0.001 for all KC subtypes). This indicates the mechanism operates downstream of KCs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "5436c5fb-f0d2-4b45-9cef-0482ed7dea11",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Behavioral responses to odor transitions show that flies exhibit enhanced attraction to A' only when it immediately follows A (no gap), not when separated by 25s, and this cannot be explained by linear summation of responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62, C83, and C88 are supported by behavioral tracking data (n=12-13 arena runs) showing significant difference in upwind displacement for direct transitions (p=0.004) but not interrupted ones (p=0.85). Controls for starting position (C60) and linear summation (C61) strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "437773d0-c32c-4f5f-879e-e9fa56abc3ac",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Drosophila flexibly categorize stimuli through temporal comparison mechanisms operating at or downstream of KC-MBON synapses, allowing the same stimulus to be categorized differently depending on context.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent the main conclusions synthesized from the experimental results. They are well-supported by the convergence of behavioral data (discrimination/generalization tasks), neural recordings (MBON transition responses), and modeling (KC decoder analysis). The asymmetric nature (C74) and temporal requirement (C78) are directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "4b8f96af-02c9-44ed-b129-a5dcfd15eba1",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "MBON-\u03b13 receives more synaptic inputs from more KCs than MBON-\u03b32\u03b1'1, yet performs worse at hard discrimination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 is supported by cited connectome data (Clements et al., 2020; Li et al., 2020) showing \u03b13 receives 11,360 synapses from 888 KCs versus \u03b32\u03b1'1's 6,732 synapses from 1,019 KCs total. This contradicts simple theoretical predictions and supports the conclusion that discrimination ability is not determined solely by KC input number.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "84daddfd-2610-463e-ac10-5ddef4e8f7ca",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The upwind displacement magnitude after A-A' transitions is similar to that caused by optogenetic activation of MBON-\u03b32\u03b1'1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C82 references unpublished data (Y. Aso, personal communication) without providing quantitative values, sample sizes, or statistical comparisons. While this comparison would strengthen the link between MBON activity and behavior, it cannot be fully evaluated without the actual data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "f98ac529-8473-445a-975e-aa3778771ebf",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Different training protocols were used for different compartments: 10 cycles with 24h retention for \u03b13, and 3 cycles with immediate testing for \u03b32\u03b1'1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 describe methodological details that are clearly stated in figure captions and methods. These different protocols are appropriate given the known temporal dynamics of these compartments (cited to Aso and Rubin, 2016).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "7481c4a0-59ab-4c8d-b5ef-1e2e0ce950d9",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "MBON-\u03b32\u03b1'1 output and fly behavior are indistinguishable for similar odors when encountered separately, but distinguishable when closely apposed in time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 synthesize the main findings from both imaging (C42-C49) and behavior (C58-C62) experiments. The parallel between neural and behavioral responses strengthens the conclusion that MBON-\u03b32\u03b1'1 activity drives the observed flexible categorization behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    },
+    {
+      "id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb",
+      "content_id": "2dcadcb9-7e7a-45fa-903e-25a59f634b45",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims establishing the theoretical framework, prior knowledge about the Drosophila olfactory learning system, and relevant prior findings from the literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C3-C20, C29-C30, C70-C77) are appropriately supported by citations to prior literature and represent established knowledge in the field. They provide necessary context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:11:29.551328Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "af70db40-d808-4f43-99a3-37fe8c79c276",
+      "result_id": "29c27592-dc12-4b2d-ad3e-05099837ac6b"
+    },
+    {
+      "claim_id": "0d8f8641-aab8-401a-be90-5896393776dc",
+      "result_id": "29c27592-dc12-4b2d-ad3e-05099837ac6b"
+    },
+    {
+      "claim_id": "7c0d4bda-8327-4419-9d6f-48b16b569638",
+      "result_id": "29c27592-dc12-4b2d-ad3e-05099837ac6b"
+    },
+    {
+      "claim_id": "753b7b2c-3ef3-406c-8b92-4ba1fca3b01d",
+      "result_id": "29c27592-dc12-4b2d-ad3e-05099837ac6b"
+    },
+    {
+      "claim_id": "7eef5957-d455-4de6-a838-9588f49f48a4",
+      "result_id": "29c27592-dc12-4b2d-ad3e-05099837ac6b"
+    },
+    {
+      "claim_id": "5d1f23a0-3e8f-4368-b723-e0aa26bea774",
+      "result_id": "29c27592-dc12-4b2d-ad3e-05099837ac6b"
+    },
+    {
+      "claim_id": "671dd53b-4a94-4b4c-9d0d-f3bbfb112221",
+      "result_id": "08eb67ec-376d-4fc9-b7ec-6e74b220ba2e"
+    },
+    {
+      "claim_id": "73a5ffac-ccff-4cdb-bb25-79d530f97250",
+      "result_id": "08eb67ec-376d-4fc9-b7ec-6e74b220ba2e"
+    },
+    {
+      "claim_id": "a56aed49-d92c-44e3-b77c-2a353c7fb520",
+      "result_id": "08eb67ec-376d-4fc9-b7ec-6e74b220ba2e"
+    },
+    {
+      "claim_id": "caf200c2-bc3d-46ce-8877-508020c340a7",
+      "result_id": "08eb67ec-376d-4fc9-b7ec-6e74b220ba2e"
+    },
+    {
+      "claim_id": "2e599a89-5792-45ea-8607-5f6044b16cce",
+      "result_id": "08eb67ec-376d-4fc9-b7ec-6e74b220ba2e"
+    },
+    {
+      "claim_id": "5185770a-7f1b-4e12-b955-8340fdf926de",
+      "result_id": "08eb67ec-376d-4fc9-b7ec-6e74b220ba2e"
+    },
+    {
+      "claim_id": "e7e6b6f7-aa6c-44dc-be32-97b33f066ce6",
+      "result_id": "08eb67ec-376d-4fc9-b7ec-6e74b220ba2e"
+    },
+    {
+      "claim_id": "98d8ab7e-eafb-40ff-8a97-d70da51a231a",
+      "result_id": "08eb67ec-376d-4fc9-b7ec-6e74b220ba2e"
+    },
+    {
+      "claim_id": "a6c7bd9e-2e02-41d8-86d3-32f25fcda00f",
+      "result_id": "a00d817a-ae78-4f56-a250-caf103f30b97"
+    },
+    {
+      "claim_id": "192b648e-c10d-4648-89d9-ac4ca8ee1b21",
+      "result_id": "a00d817a-ae78-4f56-a250-caf103f30b97"
+    },
+    {
+      "claim_id": "e3c516a9-4887-4ff9-9c17-16d190936592",
+      "result_id": "a00d817a-ae78-4f56-a250-caf103f30b97"
+    },
+    {
+      "claim_id": "aa12647a-c997-4955-a941-fe7bc812e746",
+      "result_id": "a00d817a-ae78-4f56-a250-caf103f30b97"
+    },
+    {
+      "claim_id": "28838b7a-7f82-46ee-9f58-ae5eeb025db8",
+      "result_id": "afc95dc7-f03e-4938-b2e0-1128e8cd5522"
+    },
+    {
+      "claim_id": "78a49d6d-6828-4bd9-8587-7841a742a48b",
+      "result_id": "afc95dc7-f03e-4938-b2e0-1128e8cd5522"
+    },
+    {
+      "claim_id": "f9098b78-91a1-43b6-949e-f74da9185d88",
+      "result_id": "afc95dc7-f03e-4938-b2e0-1128e8cd5522"
+    },
+    {
+      "claim_id": "2f1309cd-8463-423c-9a80-38e3cfabc3cd",
+      "result_id": "afc95dc7-f03e-4938-b2e0-1128e8cd5522"
+    },
+    {
+      "claim_id": "383271dd-1ce6-4eb1-918a-6c0c7a6ff393",
+      "result_id": "afc95dc7-f03e-4938-b2e0-1128e8cd5522"
+    },
+    {
+      "claim_id": "eae9e5a4-3a06-4c9b-8513-f73b2acb153e",
+      "result_id": "afc95dc7-f03e-4938-b2e0-1128e8cd5522"
+    },
+    {
+      "claim_id": "a9800dae-06a1-4c1c-bdc4-4613c6f3747d",
+      "result_id": "afc95dc7-f03e-4938-b2e0-1128e8cd5522"
+    },
+    {
+      "claim_id": "7e0410f5-aac8-46b1-988a-bb4635d77321",
+      "result_id": "5323baa8-e345-4d12-b967-a2f2bee76270"
+    },
+    {
+      "claim_id": "1ebeb0c5-443a-4cd8-95ae-ae0b4cc79eda",
+      "result_id": "5323baa8-e345-4d12-b967-a2f2bee76270"
+    },
+    {
+      "claim_id": "b9d89099-f1e6-44f9-aabf-7d297b88502a",
+      "result_id": "e69172f0-f4e1-4052-bfa4-118819f48cdd"
+    },
+    {
+      "claim_id": "d058cad2-d3d1-4411-bf37-3af0902b0162",
+      "result_id": "e69172f0-f4e1-4052-bfa4-118819f48cdd"
+    },
+    {
+      "claim_id": "70d31af9-250c-4cb3-93ba-d95bac792a8a",
+      "result_id": "e69172f0-f4e1-4052-bfa4-118819f48cdd"
+    },
+    {
+      "claim_id": "412a5970-0ed9-4383-ae0b-2eaf9ce16020",
+      "result_id": "cd18da27-4d4c-4329-b7b9-7e02cdc92541"
+    },
+    {
+      "claim_id": "2610e910-badb-4f40-8161-c914c9b0b4f0",
+      "result_id": "cd18da27-4d4c-4329-b7b9-7e02cdc92541"
+    },
+    {
+      "claim_id": "403e3b31-bc71-4396-b0d5-be2797572590",
+      "result_id": "cd18da27-4d4c-4329-b7b9-7e02cdc92541"
+    },
+    {
+      "claim_id": "c0a6f65c-a39a-44a3-8d1f-0e0dfee5a998",
+      "result_id": "cd18da27-4d4c-4329-b7b9-7e02cdc92541"
+    },
+    {
+      "claim_id": "8ef191a2-c09b-4b4a-bb60-4eb98ce081b0",
+      "result_id": "5436c5fb-f0d2-4b45-9cef-0482ed7dea11"
+    },
+    {
+      "claim_id": "8a340aa1-2c3d-48ce-be46-edd8d382e1ea",
+      "result_id": "5436c5fb-f0d2-4b45-9cef-0482ed7dea11"
+    },
+    {
+      "claim_id": "7a860e8d-fb49-4ea0-ba53-67ce44dfb1d7",
+      "result_id": "5436c5fb-f0d2-4b45-9cef-0482ed7dea11"
+    },
+    {
+      "claim_id": "0555485b-7ee1-4148-83ae-1efebcd606d0",
+      "result_id": "5436c5fb-f0d2-4b45-9cef-0482ed7dea11"
+    },
+    {
+      "claim_id": "f4284ee3-e684-4a74-85d6-9386362264aa",
+      "result_id": "5436c5fb-f0d2-4b45-9cef-0482ed7dea11"
+    },
+    {
+      "claim_id": "99586d60-d02a-4041-a5ba-1314c9d1c7a7",
+      "result_id": "5436c5fb-f0d2-4b45-9cef-0482ed7dea11"
+    },
+    {
+      "claim_id": "5be41193-0460-4594-a76d-4c5b1a0f913a",
+      "result_id": "5436c5fb-f0d2-4b45-9cef-0482ed7dea11"
+    },
+    {
+      "claim_id": "a992ec88-bde7-4778-a034-b4ebcfac2212",
+      "result_id": "437773d0-c32c-4f5f-879e-e9fa56abc3ac"
+    },
+    {
+      "claim_id": "74ebfbf8-671a-4425-894b-23fa9e632c80",
+      "result_id": "437773d0-c32c-4f5f-879e-e9fa56abc3ac"
+    },
+    {
+      "claim_id": "659df155-f4c0-49c2-b32d-953b19b6c5eb",
+      "result_id": "437773d0-c32c-4f5f-879e-e9fa56abc3ac"
+    },
+    {
+      "claim_id": "3cc56191-bbab-4fed-a442-5f56d43dd76b",
+      "result_id": "437773d0-c32c-4f5f-879e-e9fa56abc3ac"
+    },
+    {
+      "claim_id": "f44dadf8-e5b0-4ce8-a59d-7e6056f5e763",
+      "result_id": "437773d0-c32c-4f5f-879e-e9fa56abc3ac"
+    },
+    {
+      "claim_id": "2187d33d-caf0-4bd4-bedf-03c078b892e6",
+      "result_id": "437773d0-c32c-4f5f-879e-e9fa56abc3ac"
+    },
+    {
+      "claim_id": "589c69c7-0653-4ebb-991d-375b7f311ead",
+      "result_id": "437773d0-c32c-4f5f-879e-e9fa56abc3ac"
+    },
+    {
+      "claim_id": "61a14c1f-22f4-432d-aa6d-5c423955b0c7",
+      "result_id": "437773d0-c32c-4f5f-879e-e9fa56abc3ac"
+    },
+    {
+      "claim_id": "e4ddf13f-6943-4e93-a18f-0564041158a7",
+      "result_id": "437773d0-c32c-4f5f-879e-e9fa56abc3ac"
+    },
+    {
+      "claim_id": "c0f66a93-e4d1-46f0-9eac-938300b73008",
+      "result_id": "437773d0-c32c-4f5f-879e-e9fa56abc3ac"
+    },
+    {
+      "claim_id": "9b935870-667a-4a67-9f4c-c7b9475f1674",
+      "result_id": "4b8f96af-02c9-44ed-b129-a5dcfd15eba1"
+    },
+    {
+      "claim_id": "1ac93a58-f558-4798-991d-7bb79c004cfc",
+      "result_id": "84daddfd-2610-463e-ac10-5ddef4e8f7ca"
+    },
+    {
+      "claim_id": "4ced97a6-0f20-4615-8f29-5bbea5890cce",
+      "result_id": "f98ac529-8473-445a-975e-aa3778771ebf"
+    },
+    {
+      "claim_id": "73f18b31-22f2-43bf-9c9e-4069559b3d46",
+      "result_id": "f98ac529-8473-445a-975e-aa3778771ebf"
+    },
+    {
+      "claim_id": "08efd6b6-b8ff-4ff2-8039-113501e68b29",
+      "result_id": "7481c4a0-59ab-4c8d-b5ef-1e2e0ce950d9"
+    },
+    {
+      "claim_id": "258c91a0-3e50-4ab6-b0a6-b6cdba8b5ce9",
+      "result_id": "7481c4a0-59ab-4c8d-b5ef-1e2e0ce950d9"
+    },
+    {
+      "claim_id": "58b9a4ad-02de-4c38-ab67-48a9270f49ee",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "58248264-1184-427b-89d0-d9190714004c",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "6d9a6974-952f-43a3-956c-acde91dc12f5",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "b430af29-9568-41ba-870b-dd2f8431599f",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "7e1cfd22-7a04-4779-b430-d35cb9efd661",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "b139ecfe-b731-4319-b5cf-7c3d14fb649c",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "853e984f-c47b-446f-9b70-f3625ad9e802",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "c4e5ce18-2184-42eb-8ae5-ae72cb0ba8fc",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "045a800a-dd80-4fe9-b729-d79f03c0030f",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "07d1620a-bdee-4242-81cb-ff7c4a9739b5",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "1d6a9a62-1f3b-4494-a1e6-56ec85cb6e0f",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "47ff0b61-dfec-482a-8e4f-c5714886c5e8",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "a19cb7a6-12eb-468d-b727-a7ec102d4d4c",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "722ff399-a734-423a-9c77-afc5a1ca0acc",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "a91678a3-36ab-4d75-b2af-0eb5fa26dd3a",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "931c47d0-b680-465e-a554-92c3dc3560f3",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "0cca06ef-aae7-4c79-b884-327e05f9f0bd",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "0fb14b78-6f56-4f02-95bd-ea159e32b3ae",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "e12aecc3-ab41-4a17-92dc-a37cdc3df752",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "09512eea-ef9d-4cab-b424-4eaf49203870",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "228a52c4-fa8a-4139-b530-e90ba6d7c3ce",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "85f64e8f-8a99-4049-99e4-58f02abdae90",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "62093b7d-3886-4a4b-acf1-4430b8ddf029",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "023762a7-64e6-4d9c-8661-aa1f9b928c8a",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "633a180a-d3e6-48ae-9927-7520a167f2ba",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    },
+    {
+      "claim_id": "86735b4e-5ead-4c7d-84ee-e32225a8b5e1",
+      "result_id": "741889bb-fe5b-4ca5-b7cc-f14e7c0ff1cb"
+    }
+  ],
+  "comparisons": []
+}

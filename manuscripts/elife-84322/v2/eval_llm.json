@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C52",
+      "C53",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C77",
+      "C78"
+    ],
+    "result": "Long-range resection mediated by Exo1 and Sgs1 is dispensable for intrachromosomal recombination between closely linked repeats but required for interchromosomal recombination. In the intrachromosomal assay with 3.7 kb homology, exo1\u0394 sgs1\u0394 cells show near wild-type recombination efficiency, while the same mutant exhibits severe defects in interchromosomal recombination despite identical homology length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C53, C70 are directly supported by experimental data in Figures 1C and 1D showing differential recombination efficiency. The identical 3.7 kb homology in both assays (C77) rules out insufficient homology exposure as the cause of the interchromosomal defect (C78), supporting the conclusion that long-range resection has context-dependent functions beyond simply generating ssDNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C96"
+    ],
+    "result": "Interchromosomal repair is slower than intrachromosomal repair and correlates with DNA damage checkpoint activation. Wild-type cells show robust Rad53 phosphorylation during interchromosomal repair but not intrachromosomal repair, with the ~0.5-1 hour delay in interchromosomal repair being sufficient to trigger checkpoint activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C87 are supported by repair kinetics data (Figure 2B-C) and checkpoint activation data (Figure 2D). The correlation between repair delay and checkpoint activation (C87, C96) is well-documented. However, the causal relationship is inferred rather than directly demonstrated\u2014the checkpoint could be responding to other features of interchromosomal repair beyond just timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C56",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C112"
+    ],
+    "result": "The requirement for long-range resection in interchromosomal recombination is primarily due to its role in DNA damage checkpoint activation. Checkpoint mutants (mec1\u0394, rad53\u0394, rad9\u0394, rad24\u0394) show specific defects in interchromosomal but not intrachromosomal recombination, and rad9\u0394 is epistatic to exo1\u0394 sgs1\u0394 for interchromosomal repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by Figure 3A-B showing context-specific checkpoint mutant phenotypes. The epistasis data (C103-C104, Figure 3C) and knowledge that these checkpoint mutants have normal or enhanced resection (C100-C102) strongly support that the checkpoint function, not resection per se, is critical. The partial rescue by rad24\u0394 (C109-C110) further supports the model that both checkpoint and resection tract length contribute (C112).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C114",
+      "C115",
+      "C120",
+      "C121"
+    ],
+    "result": "Artificial checkpoint activation can partially rescue interchromosomal recombination defects. Expression of Ddc2-Rad53 fusion restores recombination in rad9\u0394 cells to near wild-type levels, and the Ddc1-Ddc2 co-localization system partially rescues exo1\u0394 sgs1\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 are supported by Figure 4A showing rescue of rad9\u0394 by Ddc2-Rad53. Claims C120-C121 are supported by Figure 4B-C showing partial rescue of exo1\u0394 sgs1\u0394 cells. However, the rescue is incomplete, and technical limitations of the artificial checkpoint system (C122-C123) complicate interpretation. The failure of Ddc2-Rad53 to rescue exo1\u0394 sgs1\u0394 cells (C116-C117) suggests resection tract length matters for checkpoint protein recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C166"
+    ],
+    "result": "Cell cycle delay alone is insufficient to rescue the interchromosomal recombination defect of exo1\u0394 sgs1\u0394 cells. Nocodazole-mediated G2/M arrest does not restore recombination efficiency, indicating the checkpoint has additional functions beyond cell cycle control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 is supported by Figure 4D showing no rescue with nocodazole treatment. This is consistent with prior literature (C125) and demonstrates that checkpoint functions beyond cell cycle arrest are important (C126-C127, C166). However, the experiment does not identify what these additional functions are, leaving the mechanism partially unresolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C57",
+      "C58",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C169"
+    ],
+    "result": "The requirement for long-range resection depends on the linear distance between DSB and repair template. Donors within ~20 kb support efficient repair in exo1\u0394 sgs1\u0394 cells, while donors beyond ~50-100 kb show increasing dependency on long-range resection, correlating with checkpoint activation and inversely correlating with linear distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C148 are supported by Figure 5A-C showing proximity-dependent effects on recombination and checkpoint activation. The statistical correlations (C140-C142) are properly analyzed with Spearman correlation and one-phase decay models. The ~50 kb threshold for long-range resection independence (C147-C148) is well-supported by the data. This elegantly demonstrates that spatial proximity, not just homology length, determines the requirement for long-range resection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C152",
+      "C153"
+    ],
+    "result": "Rad51 overexpression partially suppresses the interchromosomal recombination defect of exo1\u0394 sgs1\u0394 cells, suggesting that Rad51 is not fully saturated on short resection tracts and contributes to chromosome mobility defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C152 is supported by Figure 5\u2014figure supplement 2 showing partial rescue. The interpretation that Rad51 is not saturated on short overhangs (C153) is reasonable given that Rad51 nucleation requires ~6 monomers and is concentration-dependent (cited literature). However, the rescue is partial, and alternative explanations (e.g., Rad51 overexpression having non-specific effects) are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C177"
+    ],
+    "result": "Long-range resection serves to activate the DNA damage checkpoint when repair is delayed, thereby increasing chromosome mobility to facilitate homology search between distant sites. This represents an additional function of long-range resection beyond simply exposing homology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central mechanistic conclusion of the paper, integrating multiple lines of evidence: context-dependent requirement for long-range resection (C3-C4), checkpoint activation patterns (C85-C87), checkpoint mutant phenotypes (C98-C99), proximity effects (C147-C148), and prior knowledge about checkpoint-dependent chromosome mobility (C9, C48, C128-C129). The model is well-supported by the data, though direct measurement of chromosome mobility in these strains would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Mre11 is important for HR in both intrachromosomal and interchromosomal contexts, with an increased role in interchromosomal repair. In mre11\u0394 cells, increased Trp- Ade+ events in intrachromosomal repair likely reflect uncoordinated resection leading to BIR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by Figure 1C-D. The interpretation of increased Trp- events as BIR (C62-C65) is reasonable given Mre11's known role in coordinating resection (C63, cited literature) and the observation that nearly all Trp- events are Ade+ (C65), consistent with BIR toward the telomere. However, this is inferred from genetic data rather than directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "In rad51\u0394 cells, intrachromosomal recombination shows moderate dependency on Mre11, with SSA as the primary repair mode as evidenced by TRP1 deletion in nearly all events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by Figure 1\u2014figure supplement 2. The interpretation that SSA is the primary mode in rad51\u0394 cells (C67) is well-established knowledge, and the TRP1 deletion pattern (C68) is consistent with SSA mechanism. This provides validation of the assay system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "exo1\u0394 sgs1\u0394 cells show defective DSB-induced Rad53 phosphorylation but exhibit low-level, DSB-independent Rad53 phosphorylation that requires Rad9 and Rad24, likely due to ssDNA accumulation during replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by Figures 2D and 2\u2014figure supplement 2. The interpretation that this reflects replication-associated ssDNA (C95) is reasonable but speculative. This observation is important for understanding the baseline checkpoint state in exo1\u0394 sgs1\u0394 cells but does not undermine the main conclusions about DSB-induced checkpoint activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Combining rad24\u0394 with exo1\u0394 sgs1\u0394 increases Mre11-dependent resection up to ~1.3 kb and partially rescues interchromosomal recombination, while rad9\u0394 does not rescue either resection or recombination defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 are supported by Figures 3D and 3\u2014figure supplement 1. The differential effects of rad24\u0394 versus rad9\u0394 (C111) support the model that both checkpoint function and resection tract length contribute to the phenotype (C107, C112). This provides important mechanistic insight into the relative contributions of these factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C167",
+      "C168"
+    ],
+    "result": "Using higher contact frequency interchromosomal donors shows weak improvement in exo1\u0394 sgs1\u0394 recombination but remains substantially lower than intrachromosomal recombination, likely because even high-contact interchromosomal sites have relatively low contact frequency compared to intrachromosomal sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C134 are supported by Figure 5\u2014figure supplement 1. The interpretation based on Hi-C data (C168) is reasonable. This negative result is important for establishing that linear distance, not just 3D contact frequency, is the primary determinant of long-range resection requirement in the absence of long-range resection machinery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The study's findings may overestimate the dispensability of long-range resection under physiological conditions because resection tracts in exo1\u0394 sgs1\u0394 cells may be longer than those produced by MRX-Sae2 alone in wild-type cells due to lack of engagement with long-range resection machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an important caveat (C160-C161) acknowledged by the authors and supported by cited literature. It suggests that long-range resection may play a more important role in wild-type cells than apparent from the exo1\u0394 sgs1\u0394 phenotypes. This demonstrates appropriate scientific caution in interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Long-range resection acts as a timing mechanism for checkpoint activation: rapid repair circumvents checkpoint need, while delayed repair triggers long-range resection to generate sufficient ssDNA for checkpoint activation, preventing cell cycle progression with unrepaired DSBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic model (C162-C165) integrates the repair kinetics and checkpoint activation data. It is well-supported by the correlation between repair delay and checkpoint activation. However, the model is somewhat speculative (C165 includes speculation about cell death) and would benefit from direct testing, such as measuring cell cycle progression in these mutants.",
+    "result_type": "MAJOR"
+  }
+]

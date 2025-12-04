@@ -1,0 +1,1914 @@
+{
+  "submission": {
+    "id": "f5267bb9-0f7f-4520-93ff-433c6aa76718",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:17:29.490662Z",
+    "updated_at": "2025-12-04T03:17:29.490662Z"
+  },
+  "content": [
+    {
+      "id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "submission_id": "f5267bb9-0f7f-4520-93ff-433c6aa76718",
+      "content_type": "manuscript",
+      "content_text": "# A hierarchical model for external electrical control of an insect, accounting for inter-individual variation of muscle force properties\n\n## Authors\n\n- Dai Owaki<sup>1</sup> ([ORCID: 0000-0003-1217-3892](https://orcid.org/0000-0003-1217-3892)) \u2020\n- Volker D\u00fcrr<sup>2</sup>\n- Josef Schmitz<sup>2</sup>\n\n### Affiliations\n\n1. Department of Robotics, Graduate School of Engineering, Tohoku University Sendai Japan ([ROR:01dq60k83](https://ror.org/01dq60k83))\n2. Department of Biological Cybernetics, Faculty of Biology, Bielefeld University Bielefeld Germany ([ROR:02hpadn98](https://ror.org/02hpadn98))\n3. Centre for Cognitive Interaction Technology, Bielefeld University Bielefeld Germany ([ROR:02hpadn98](https://ror.org/02hpadn98))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCyborg control of insect movement is promising for developing miniature, high-mobility, and efficient biohybrid robots. However, considering the inter-individual variation of the insect neuromuscular apparatus and its neural control is challenging. We propose a hierarchical model including inter-individual variation of muscle properties of three leg muscles involved in propulsion (retractor coxae), joint stiffness (pro- and retractor coxae), and stance-swing transition (protractor coxae and levator trochanteris) in the stick insect Carausius morosus. To estimate mechanical effects induced by external muscle stimulation, the model is based on the systematic evaluation of joint torques as functions of electrical stimulation parameters. A nearly linear relationship between the stimulus burst duration and generated torque was observed. This stimulus-torque characteristic holds for burst durations of up to 500ms, corresponding to the stance and swing phase durations of medium to fast walking stick insects. Hierarchical Bayesian modeling revealed that linearity of the stimulus-torque characteristic was invariant, with individually varying slopes. Individual prediction of joint torques provides significant benefits for precise cyborg control.\n\n## Introduction\n\nHybrid insect\u2013computer robots (Krause et al., 2011; Li and Sato, 2018) represent cutting-edge approaches to develop robots with locomotor performances comparable to those of insects. With the advancement and diversity in micro-flexible and micro-printable electronics (Rogers et al., 2010; Rich et al., 2021), micro-mechanical fabrication, and micro-actuator technologies (Kim et al., 2020), such biohybrid, that is cyborg robots have been engineered to manipulate their gait and flight through electrical stimulation of target muscles in various insects, includings beetles (Sato, 2009; Sato and Maharbiz, 2010; Sato et al., 2015; Cao et al., 2016; Vo Doan et al., 2018; Nguyen et al., 2020; Kosaka et al., 2021), moths (Sane et al., 2007; Bozkurt et al., 2009; Hinterwirth et al., 2012; Ando and Kanzaki, 2017), and cockroaches (Sanchez et al., 2015). The advantage of biohybrid (cyborg) robots is that they do not require individual \u2018design\u2019, \u2018fabrication\u2019, and \u2018assembly\u2019 processes for each component because they use the body tissues of living insects (Cao et al., 2014). Moreover, cyborg robots have low power consumption, that is, a few milliwatts (Sato and Maharbiz, 2010). Although studies on insect cyborgs have demonstrated simple manufacturing and promising energy efficiency, they are still in the initial phase of development from the perspective of evaluating both feasibility and reliability of their control.\n\nPerhaps, the greatest challenge in cyborg control comes with the inter-individual variability of animals. Past neurophysiological studies related to animal neural activity have discussed the failure of averaging-based approaches, in which a model formulated using the average data for a group cannot explain the characteristics of any individual in the group (Golowasch et al., 2002; Schulz et al., 2006). For example, variable and non-periodic patterns in feeding behavior of Aplysia have been reported to be subject to strong inter-individual variation (Horn et al., 2004; Brezina et al., 2005; Zhurov et al., 2005). In insect motor physiology, the prediction error of muscle models which are based on sample averages is very high (Bl\u00fcmel et al., 2012a) and may be halved using individual-specific model (Bl\u00fcmel et al., 2012b). At the level of leg movements, variability has been investigated in lobsters (Thuma et al., 2003) and stick insects (Hooper et al., 2006). The variability of whole-body locomotion arises from step parameter variation of single legs (Theunissen and D\u00fcrr, 2013) but also from variation of coupling strength among legs (D\u00fcrr, 2005). One possible approach for accounting for inter-individual variability in cyborg control of single-leg movement is to construct a feedback control system (Cao et al., 2014). Although the kinematics-control of joint angles (Cao et al., 2014) has exhibited remarkable performance, its applicability to the control of dynamic gaits, such as that for walking, is still controversial. Furthermore, insects have abundant control variables, that is, degrees of freedom in their actuators and sensors. At present, the number of control variables of current insect cyborgs has to be reduced owing to system implementation difficulties.\n\nA promising approach to overcome the \u2018pitfalls\u2019 associated with averaging across individuals is to understand the underlying principles that govern inter-individual variability in insect motor control. Especially, the output characteristics of muscle are key for controlling the dynamics of movement: muscles convert neural activity into movement and then generate behavior from interactions with the environment. In conjunction with current models of muscle activation (Harischandra et al., 2019) and contraction dynamics (Bl\u00fcmel et al., 2012c), we can exploit experimental data to tell parameters that are strongly influenced by inter-individual variation as opposed to others that are common characteristics. To this end, we employed a hierarchical modeling framework based on the Bayesian statistical analysis (Watanabe, 2018; Gelman et al., 2013) that explicitly accounts for inter-individual variation in experimental data. In particular, we applied a set of hierarchical Bayesian models with different combinations of common and individually varying parameters and mathematically evaluated their prediction performance.\n\nThe main objective of this study was to systematically evaluate how muscle force and corresponding joint torques depend on external electrical stimulation, as a fundamental pre-requisite for precise insect cyborg control. To this end, we measured joint torques induced by stimulating one out of three leg muscles in the middle leg of the stick insect species Carausius morosus (Sin\u00e9ty, 1901): these were the protractor coxae, retractor coxae, and levator trochanteris. We focused on these three proximal muscles because the retractor coxae is the primary muscle for propulsion (Rosenbaum et al., 2010), the pro/retractor coxae contributes to weight-dependent postural adjustment by regulating joint stiffness (Dallmann et al., 2019; G\u00fcnzel et al., 2022), and the levator trochanteris is important for postural termination and swing initiation (Dallmann et al., 2017). Using a custom-built electrical stimulator to generate parameter-tunable pulse-width-modulated (PWM) signals, we simulated burst-like activity of motor neurons in insects and measured the corresponding joint torques generated in response to our electrical stimuli. Using Bayesian statistical modeling and the \u2018widely applied information criterion\u2019 (WAIC) index (Watanabe, 2018) for model prediction, we evaluated six model variants, namely a simple linear, hierarchical linear, simple nonlinear, and three hierarchical nonlinear models, to identify the model that best explained the experimental data. In particular, we evaluated the predictive performances of model variants with and without inter-individual variation of experimental parameter estimates. A piecewise linear relationship was observed between the burst duration and the joint torque generated for a given parameter set of the PWM burst. Linearity was found to hold for burst durations of up to 500ms, which corresponds to the stance phase (300\u2013500ms) and swing phase (to 250ms) of a stick insect walking at medium to fast speeds (D\u00fcrr et al., 2018). Furthermore, the hierarchical Bayesian modeling revealed both invariant and individually varying characteristics of joint torque generation in stick insects. This allows for individual tuning of electrical stimulation parameters for highly precise insect cyborg control.\n\nWith regard to our general understanding of insect motor control, our study demonstrates that the dependency of joint torque on electrical stimulus duration is linear, despite nonlinear activation and contraction dynamics of insect muscle. Furthermore, the proposed hierarchical Bayesian model allows for a quick, simple and reliable measurement of the individual characteristics and, therefore, quantification of inter-individual differences. Whereas several studies have reported on inter-individual differences in neural (Golowasch et al., 2002; Schulz et al., 2006) and muscle activity (Horn et al., 2004; Brezina et al., 2005; Zhurov et al., 2005; Bl\u00fcmel et al., 2012b; Bl\u00fcmel et al., 2012a; Thuma et al., 2003; Hooper et al., 2006), we propose how hierarchical Bayesian models may be used to harness inter-individual differences in insect locomotion research.\n\n## Results\n\n### Joint torque measurements\n\nSince movement at a given leg joint is effected by joint torque, the goal of our experimental measurements was measure jont torque as a function of electrical stimulation. This was done for the two proximal joints of the stick insect middle leg. The insect was fixed dorsal side up on a wooden support, with its right middle leg coxa reaching beyond the edge (Figure 1A right). We selected three leg muscles (protractor, retractor, and levator) for electrical stimulation (Figure 1B). When stick insects walk, they use the protractor to swing the leg forward during the swing phase, the retractor to move the leg backward during the stance phase, and levator to initiate the stance-to-swing transition (Rosenbaum et al., 2010; Dallmann et al., 2019; G\u00fcnzel et al., 2022; B\u00e4ssler and Wegner, 1983). Moreover, co-contraction of the protractor and retractor are known to vary based on the overall load distribution, thus being important for postural control by regulating joint stiffness (Dallmann et al., 2019; G\u00fcnzel et al., 2022). Accordingly, electrical stimulation of the protractor and retractor muscles generated forward and backward movements at the thorax\u2013coxa (ThC) joint, as measured by a calibrated custom-made force transducer with a strain gauge held against the femur with known distance from the joint. Stimulation of the levator muscle generated an upward movement at the coxa\u2013trochanter (CTr) joint (Dallmann et al., 2016).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85275/elife-85275-fig1-v1.jpg)\n\n**Figure 1.:** Two small insect pins attached to the tip of the force transducer held the middle part of the femur segment of the middle leg. (B) Electrodes (arrows) implanted into the three leg muscles protractor, retractor, and levator, in the right middle leg. (C) We systematically analyzed how joint torques depended on the three PWM burst parameters amplitude [V], frequency [Hz], and duty ratio [%], and identified the combinations that most effectively and repeatedly produced torque. The upper graph shows the profile of an electrical stimulation signal for each muscle. The lower graph shows the profile of the sensor value measured with the force transducer. (D). The panel shows the calculated ThC-joint torque profile versus the burst duration $T_{i}$ during the protractor stimulations (animal05, $n=74$). In this experiment, the burst duration $T_{i}$ was varied at random, and the torque was calculated from force measurements with calibrated conversion factor and moment arm (see (C)). The voltage, frequency, and duty ratio of the PWM signals were 2.0 V, 50 Hz, and 30%, respectively. The color of the dots represents the number of stimulations (blue\u2013yellow: 1\u201374). The orange dotted vertical line indicates $T_{i}$ at 500ms.\n\nFigure 2 illustrates the obtained relation between the PWM burst duration and the generated joint torques for the protractor (A), retractor (B), and levator (C) muscles from 10 animals ($N=10$). The parameters of the PWM signals were set to 2.0 V, 50 Hz, and 30% duty ratio. During one trial, we stimulated one muscle $n$ times with fixed PWM parameters and measured the generated torque at the corresponding joint.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85275/elife-85275-fig2-v1.jpg)\n\n**Figure 2.:** Data from 10 animals with three muscles, each: (A) protractor, (B) retractor, and (C) levator muscle stimulation. The PWM burst parameters were 2.0 V. 50 Hz, and 30% duty ratio. $n$ gives the number of stimulations for each animal. Electrical stimulations were performed manually and randomly; therefore, the total number of stimuli was different for each animal. The color of the symbols indicates the order of the stimulations: blue (1) to yellow ($n$). The positive values of joint torque represent intended (A) forward, (B) backward and (C) upward rotation of the coxa relative to the thorax. Source code and data are available on Dryad (Figure2.zip, https://doi.org/10.5061/dryad.wpzgmsbsw).\n\nThe results indicate the input\u2013output relation (burst duration and generated torque) corresponded to a linear function or a power function with an exponent of less than 1.0. Furthermore, the relationship holds for burst durations up to 500ms for all animals, corresponding to the duration of swing and stance phases in medium to fast walking stick insects (D\u00fcrr et al., 2018). Maximum torques for ThC and CTr joints were 60 \u00b5Nm, 120 \u00b5Nm, and 40 \u00b5Nm (Dallmann et al., 2019). For a given set of PWM parameters, the generated torque characteristics remained almost constant during all stimulations under the same condition, suggesting that muscle fatigue or warm-up effects were negligible for at least $n=50$ stimulations. Furthermore, we verified that no significant changes occurred in muscle characteristics owing to the pre- and post-experimental relationship.\n\n### Bayesian statistical modeling\n\nTo investigate joint-torque properties generated by muscle stimulation while explicitly considering inter-individual variation of muscle physiology, we used a Bayesian statistical analysis and modeling framework. The probabilistic nature of Bayesian models makes them appropriate for modeling \u2018uncertainty\u2019, as introduced by inter-individual variation (Gelman et al., 2013). Bayesian analysis can be used to estimate a probabilistic distribution (model) that encodes an unknown observation target by using observed data and updating the distribution in the model. Furthermore, hierarchical model variants allow the inclusion of a hyperparameter, thus allowing for a parameter of choice to be drawn from yet another probabilistic distribution. In our case, hierarchical-model variants were used to account for inter-individual differences (Watanabe, 2018).\n\nHere, we modeled the relationship between the burst duration of the electrical stimulation and the joint torque generated using a single model (a power function) with six variants (for details, see subsection \u2018Models\u2019). All model variants were specified in a probabilistic programming language developed by Stan (Stan Development Team, 2023). Here, we used non-informative uniform priors for the parameters $\\beta$, $\\gamma$, and $\\sigma$, unless stated otherwise. For estimation, we used the numerical Markov Chain Monte Carlo (MCMC) method, and scripted the models in R (v.4.1.3; R Development Core Team, 2023), in which the Stan code was compiled and executed using the R package \u2018rstan\u2019 (Stan Development Team, 2023). The software performed sampling from prior distributions using No-U-Turn Sampler (NUTS; Hoffman and Gelman, 2014). Sampling convergence was detected through trace plots and the quantitative Gelman\u2013Rubin convergence statistic $R_{h\u2062a\u2062t}$ (Gelman and Rubin, 1992), where $R_{hat}<1.10$.\n\n### Models\n\n$\\tau_{i}$ and $T_{i}$ represent the calculated joint torque based on the force-transducer value and the burst duration of a PWM signal for electrical stimulation, respectively. We assumed that $\\tau_{i}$ follows a normal distribution, described by the $N(\\mu,\\sigma)$ function, where \u00b5 and $\\sigma$ represent the mean and standard deviation (S.D.) of the distribution. Indexes $i$ and $j$ represent the numbers of stimulations and animals, respectively.\n\nModel 1-1: Linear model representing the linear relationship between burst duration and joint torque\n\n$$\n\\tau_{i}\u223cN(\\mu=\\betaT_{i},\\sigma),\n$$\n\nwhere $\\beta$ represents the inclination of the estimated linear function.\n\nModel 1-2: Hierarchical model representing the linear relation between burst duration and joint torque\n\n$$\n\\tau_{i,j}\u223cN(\\mu=\\beta_{j}T_{i},\\sigma),\n$$\n\n\n\n$$\n\\beta_{j}\u223cN(\\mu=\\mu_{\\beta},\\sigma_{\\beta}),\n$$\n\nwhere $\\beta_{j}$ represents the inclination of the estimated linear function on the ($j$)th animal. Furthermore, in this hierarchical model, $\\beta_{j}$ is drawn out of a normal distribution that captures inter-individual variation, where $\\mu_{\\beta}$ and $\\sigma_{\\beta}$ represent the mean and S.D. of the distribution, respectively.\n\nModel 2-1: Non-linear model representing the nonlinear relationship between burst duration and joint torque\n\n$$\n\\tau_{i}\u223cN(\\mu=\\beta{T_{i}}^{\\gamma},\\sigma),\n$$\n\nwhere, $\\beta$ and $\\gamma$ represent the magnitude of the base and exponent of the estimated non-linear power function, respectively.\n\nModel 2-2: Hierarchical model representing the nonlinear relationship between burst duration and joint torque\n\n$$\n\\tau_{i,j}\u223cN(\\mu=\\beta_{j}{T_{i}}^{\\gamma},\\sigma),\n$$\n\n\n\n$$\n\\beta_{j}\u223cN(\\mu=\\mu_{\\beta},\\sigma_{\\beta}),\n$$\n\nwhere $\\beta_{j}$ and $\\gamma$ represent the magnitude of the base on the ($j$)th animal and the exponent of the estimated nonlinear power function, respectively. In this model, $\\beta_{j}$ follows a normal distribution as described above, where, $\\mu_{\\beta}$ and $\\sigma_{\\beta}$ represent the mean and S.D. of the distribution.\n\nModel 2-3: Hierarchical model representing the nonlinear relation between burst duration and joint torque\n\n$$\n\\tau_{i,j}\u223cN(\\mu=\\beta{T_{i}}^{\\gamma_{j}},\\sigma),\n$$\n\n\n\n$$\n\\gamma_{j}\u223cN(\\mu=\\mu_{\\gamma},\\sigma_{\\gamma}),\n$$\n\nwhere $\\beta$ and $\\gamma_{j}$ represent the magnitude of the base and the exponent on the ($j$)th animal for the estimated nonlinear, power function, respectively. In this model, $\\gamma_{j}$ follows a normal distribution as described above, where $\\mu_{\\gamma}$ and $\\sigma_{\\gamma}$ represent the mean and S.D. of the distribution.\n\nModel 2-4: Hierarchical model representing the nonlinear relationship between burst duration and joint torque\n\n$$\n\\tau_{i,j}\u223cN(\\mu=\\beta_{j}{T_{i}}^{\\gamma_{j}},\\sigma),\n$$\n\n\n\n$$\n\\beta_{j}\u223cN(\\mu=\\mu_{\\beta},\\sigma_{\\beta}),\n$$\n\n\n\n$$\n\\gamma_{j}\u223cN(\\mu=\\mu_{\\gamma},\\sigma_{\\gamma}),\n$$\n\nwhere $\\beta_{j}$ and $\\gamma_{j}$ represent the magnitude of the base and the exponent of the estimated nonlinear power function, respectively, on the ($j$)th animal. In this model, $\\beta_{j}$ and $\\gamma_{j}$ follow normal distributions as described above, where $\\mu_{\\beta}$ and $\\mu_{\\beta}$ are the means, and $\\sigma_{\\gamma}$ and $\\sigma_{\\beta}$ are the S.D.s of the distribution.\n\n### Comparison of model predictability\n\nUsing the WAIC described in the \u2018Materials and methods\u2019 section, we compared the prediction performance of the six models. Figure 3 (A)\u2013(C) shows the WAIC values for each voltage applied (1.0\u20134.0 V) and models 1\u20131 to 2\u20134. Figure 3 (A)\u2013(C) show the results for the protractor, retractor, and levator muscles, respectively. For stimulation experiments on each of the three muscles, the models with a hierarchical parameter for expressing individual differences for $\\beta~$ (models 1\u20132 and 2\u20132) had the lowest WAIC and, therefore, the best predictive performance. Conversely, the model with individual differences for both $\\beta~$ and $\\gamma~$ (model 2\u20134) exhibited the lowest prediction performance, indicating that inter-individual variation of the exponent does not improve model estimates.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85275/elife-85275-fig3-v1.jpg)\n\n**Figure 3.:** We compared the six models that were explained in the \u2018Model\u2019 subsection. (A), (B), and (C) show plots of the WAIC (Watanabe, 2018) values for the protractor, retractor, and levator stimulations, respectively ($N=10$ animals per muscle). The parameters with tilde, $\\beta~$ and $\\gamma~$, indicate that the parameters include inter-individual variation. PWM parameters were set as follows: (1.0 V, 2.0 V, 3.0 V, and 4.0 V), at 50 Hz and 30% duty ratio. Negative values were obtained for models 1\u20132 and 2\u20132 for all voltages and all muscles. The lowest WAIC indicates the best prediction model, as explained in the \"WAIC\" subsection. Right panels show Bayesian predictive estimation for the protractor (D), retractor (E), and levator (F) stimulation experiments with PWM parameters 2.0 V, 50 Hz, and 30% duty ratio. The differences in the point styles indicate individual animals. In each panel, the violet shading indicates the probability density of the distribution predictive. The green lines represent twenty samples from the posterior distribution in decreasing order of probability density. Source code and data are available on Dryad (Figure3-5.zip, https://doi.org/10.5061/dryad.wpzgmsbsw).\n\n### Bayesian estimation of the generated torque for a given burst duration\n\nFigure 3(D)-(F) shows the predictive distributions for data of a new animal using the Bayesian posterior distribution for the six models. The results were obtained with PWM bursts at 2.0 V voltage, 50 Hz frequency, and 30% duty ratio. The results show that the hierarchical models (model 1\u20132 and model 2\u20132) for the $\\beta~$ parameter can successfully and adequately capture the range of experimental results on (D) protractor, (E) retractor, and (F) levator torques for all animals. This suggests that, compared with other models, the hierarchical models can appropriately account for inter-individual variation of muscle properties for new unknown animals. Figure 4 depicts the distributions predicted by the linear hierarchical model (model 1\u20132) for each individual by overlapping the experimental data shown in Figure 2.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85275/elife-85275-fig4-v1.jpg)\n\n**Figure 4.:** $n$ gives the number of stimulations for each animal. The color legend indicates the order of the stimulations: blue (1) to yellow ($n$). In each panel, the violet shading indicates the probability density of the predictive distribution. The green lines represent twenty samples from the posterior distribution in decreasing order of probability density. The results demonstrate that the linear hierarchical model had an accurate predictive distribution in the range up to 500ms. Source code and data are available on Dryad (Figure3-5.zip, https://doi.org/10.5061/dryad.wpzgmsbsw).\n\n### Effect of an individual animal and applied voltage on muscle properties\n\nFigure 5 presents the variations in the muscle characteristic parameters $\\beta$ and $\\gamma$ in response to changes in the applied voltage. In the voltage-change experiments, we followed a specific order of voltage application, gradually increasing from 1 V to 4 V, for each individual. Furthermore, we confirmed that applying voltages ranging between 1 and 4 V did not induce fatigue. Table 1 summarizes the number of electrical stimuli administered to each muscle in each individual. We determined the changes in $\\beta$ and $\\gamma$ with respect to the applied voltage by analyzing the experimental results using the six Bayesian models.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/85275/elife-85275-fig5-v1.jpg)\n\n**Figure 5.:** Dependence of muscle property parameters on the applied voltage and individual animals in the six models: The left graphs (A), (B), and (C) represent the estimation for $\\beta$ for the applied voltage varied from 1.0 to 4.0 V for the six models.(A) and (D), (B) and (E), and (C) and (F) illustrate the protractor, retractor, and levator stimulations, respectively. In (A) to (C), the upper and lower panels show non-hierarchical (1-1, 2-1, 2-3) and hierarchical (1-2, 2-2, 2-4) models for $\\beta$, respectively. The right graphs (D), (E), and (F) represent the estimation for $\\gamma$ in applied voltage changes. In (D) to (F), the left panel shows linear models ($\\gamma=1$, 1\u20131, 1\u20132); the middle and right panels illustrate non-hierarchical (2-1, 2-2), and hierarchical (2-3, 2-4) models for $\\gamma$, respectively. For hierarchical models (1-2, 2-2, 2-3, 2-4), the plot includes thirty samples from the posterior distribution in decreasing order of probability density, showing inter-individual variation. Source code and data are available on Dryad (Figure3-5.zip, https://doi.org/10.5061/dryad.wpzgmsbsw).\n\n**Table 1.**\n List of Stick insects used in the stimulation experiments for each muscle.Animal ** denotes the identification number of the stick insects. We analyzed 20 animal data from \u2018Animal 01\u2019 to \u2018Animal 22\u2019 except for \u201812\u2019 and \u201816\u2019. Due to experimental failures and time limitations, we could not obtain stimulation data for all three muscles from the same animal on the same day. Therefore, we conducted experiments to collect data for ten animals ($N=10$) for each muscle through experiments using 20 animals.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Date</th>\n      <th>Protractor</th>\n      <th>1,2,3,4 V</th>\n      <th>Retractor</th>\n      <th>1,2,3,4 V</th>\n      <th>Levator</th>\n      <th>1,2,3,4 V</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>2018.8.21.</td>\n      <td>Animal 01</td>\n      <td>50,49,60,50</td>\n      <td>Animal 01</td>\n      <td>60,65,55,72</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>2018.8.22.</td>\n      <td>Animal 02</td>\n      <td>49,55,51,40</td>\n      <td>Animal 02</td>\n      <td>55,68,58,65</td>\n      <td>Animal 02</td>\n      <td>37,68,67,70</td>\n    </tr>\n    <tr>\n      <td>2018.8.27.</td>\n      <td>Animal 03</td>\n      <td>60,77,91,72</td>\n      <td>Animal 03</td>\n      <td>94,81,63,75</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>2018.8.28.</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>Animal 04</td>\n      <td>74,69,80,77</td>\n    </tr>\n    <tr>\n      <td>2018.8.30.</td>\n      <td>Animal 05</td>\n      <td>67,74,79,79</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>2018.8.31.</td>\n      <td></td>\n      <td></td>\n      <td>Animal 06</td>\n      <td>75,86,76,76</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>2018.9.03.</td>\n      <td>Animal 07</td>\n      <td>81,79,74,78</td>\n      <td>Animal 07</td>\n      <td>82,77,81,75</td>\n      <td>Animal 07</td>\n      <td>75,75,75,75</td>\n    </tr>\n    <tr>\n      <td>2018.9.04.</td>\n      <td></td>\n      <td></td>\n      <td>Animal 08</td>\n      <td>75,75,79,75</td>\n      <td>Animal 08</td>\n      <td>75,71,77,84</td>\n    </tr>\n    <tr>\n      <td>2018.9.05.</td>\n      <td>Animal 10</td>\n      <td>74,74,74,75</td>\n      <td></td>\n      <td></td>\n      <td>Animal 09</td>\n      <td>75,95,75,75</td>\n    </tr>\n    <tr>\n      <td>2018.9.19.</td>\n      <td></td>\n      <td></td>\n      <td>Animal 13</td>\n      <td>62,60,70,69</td>\n      <td>Animal 11</td>\n      <td>50,50,50,50</td>\n    </tr>\n    <tr>\n      <td>2018.9.20.</td>\n      <td>Animal 14</td>\n      <td>59,59,60,59</td>\n      <td>Animal 14</td>\n      <td>60,60,60,60</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>2018.9.21.</td>\n      <td>Animal 15</td>\n      <td>59,59,59,59</td>\n      <td></td>\n      <td></td>\n      <td>Animal 15</td>\n      <td>61,60,60,51</td>\n    </tr>\n    <tr>\n      <td>2018.9.23.</td>\n      <td>Animal 17</td>\n      <td>59,59,60,69</td>\n      <td></td>\n      <td></td>\n      <td>Animal 17</td>\n      <td>59,61,60,61</td>\n    </tr>\n    <tr>\n      <td>2018.9.24.</td>\n      <td></td>\n      <td></td>\n      <td>Animal 19</td>\n      <td>61,61,61,60</td>\n      <td>Animal 18</td>\n      <td>60,60,59,66</td>\n    </tr>\n    <tr>\n      <td>2018.9.25.</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>Animal 20</td>\n      <td>62,60,70,60</td>\n    </tr>\n    <tr>\n      <td>2018.9.26.</td>\n      <td>Animal 21</td>\n      <td>59,59,60,59</td>\n      <td>Animal 22</td>\n      <td>60,60,60,60</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Total</td>\n      <td>N=10</td>\n      <td></td>\n      <td>N=10</td>\n      <td></td>\n      <td>N=10</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nThe results indicate the following three points: (1) $\\beta$ varied with the applied voltage, and there exists an optimal voltage that maximizes $\\beta$; (2) except for non-hierarchical nonlinear models (models 2\u20131 and 2\u20133), $\\gamma$ has a low dependence on the applied voltage; and (3) $\\beta$ is strongly subject to inter-individual variation (large variability), whereas $\\gamma$ is affected much less.\n\n## Discussion\n\nIn this study, we investigated externally controlled joint torques induced by external electrical stimulation of one out of three leg muscles (protractor, retractor, and levator) in the stick insect Carausius morosus. For a given parameter set for PWM burst stimulation, we found a piecewise linear relationship between the burst duration and generated joint torque. Linearity holds for a burst duration up to 500ms. For a more detailed analysis of the joint torques generated by leg muscles, we used Bayesian statistical analysis and modeling to account for inter-individual variation. A comparison of the six models (with combinations of linear, nonlinear, non-hierarchical, and hierarchical models) showed that the two models that include inter-individual variation of slope parameter $\\beta$ performed best. Models 1\u20132 and 2\u20132 provide the most accurate predictions of the posterior predictive distribution.\n\nThe exponent $\\gamma$ is a macroscopic property of the generated joint torque, that is the degree of non-linearity of the stimulus-torque characteristic; it is linear when $\\gamma=1$. Conversely, slope parameter $\\beta$ defines the rate of increase of the generated torque. In a comparison of the prediction performance of models in Figure 3, the mathematical index WAIC revealed that the models 1\u20132 and 2\u20132, wherein only $\\beta$ was a hierarchical parameter, performed the best. Since only hierarchical parameters account for inter-individual variation, we conclude that $\\beta$ is strongly affected by individual differences, whereas $\\gamma$ is invariant among specimens. Thus, we found that the macroscopic properties of leg muscles are common to all individuals, whereas individuals differ in the slope $\\beta$, that is the rate by which the three types of leg muscles respond to electrical stimulation. Furthermore, as shown in Figure 5, we found that $\\beta$ was highly affected by the applied voltage, whereas the exponent $\\gamma$ was close to unity, largely independent of the applied voltage, indicating that the macroscopic properties of leg muscles were invariant to the applied voltage. We conclude that linearity was an invariant feature of the stimulus-torque characteristic, whereas the slope of this characteristic varies among individual stick insects and with the applied voltage. These results are in line with those of existing studies on the properties of myogenic forces in other insect species (Cao et al., 2014; Bl\u00fcmel et al., 2012a; Harischandra et al., 2019): The generated torque depends considerably less on the PWM voltage and frequency (Bl\u00fcmel et al., 2012a; Harischandra et al., 2019) than on the burst duration, suggesting that the total number of subsequent input pulses is important. This is indeed expected for a slow insect muscle (Bl\u00fcmel et al., 2012a) that essentially \u2018counts\u2019 incoming spikes within a given time window. Compared to the nonlinear properties of muscle, we demonstrated that our monitoring of torques in an intact animal resulted in a linear characteristic (for intervals up to 500ms) that would not be expected from isometric force measurements of isolated muscles. Furthermore, changing the PWM frequency was found to be comparable to changing the number of spikes over a given period, whereas changing the duty ratio was found to be comparable to varying the average voltage over a given period (see Appendix 1\u2014figures 1 and 2). Therefore, from both technical and cyborg control viewpoints, the control of burst duration provides beneficial insights into feasibility.\n\nThe comparison of the linear model (model 1\u20132) with the nonlinear model (model 2\u20132) using the WAIC for all conditions (muscle type and applied voltage) resulted in lower values for the linear model. Models with lower WAIC can generate predictive distributions closer to the true distribution while using fewer parameters (Watanabe, 2018), suggesting that the experimental results obtained in this study can be adequately explained using a linear hierarchical Bayesian model (1-2). This model renders it useful for predicting the generated torque for each new animal in real-time during an experiment. Specifically, by assuming the linear hierarchical Bayesian model, we can measure responses to very few PWM stimulus bursts and estimate $\\beta$ for the current individual\u2019s stimulus-torque characteristic. This allows an experimenter to acquire an appropriate muscle model of an unknown animal in a short time without having to use potentially time-consuming machine learning methods, such as deep learning algorithms. Moreover, the properties were linear for stimulus burst durations up to 500ms. This linearity region corresponds to the stance and swing phase durations of medium-speed to fastwalking stick insects of the species Carausius morosus (D\u00fcrr et al., 2018). The magnitudes of the joint torques generated by the protractor, retractor, and levator were comparable to those for resisted movement during stick-insect walking, for example coxa-trochanter joint depression during stance (Dallmann et al., 2016). This suggests that the estimated stimulus-torque characteristic captures the natural dynamic properties of leg muscles during walking in terms of both the duration of excitation and maximum torque. However, the hierarchical nonlinear model (model 2\u20132) would be more appropriate for estimating properties related to longer time scales, such as those associated with the complete range of muscle excitation. Nevertheless, we emphasize once again that a key contribution of this study lies in demonstrating, based on experimental data, that the muscle property $\\gamma$ across the complete excitation range exhibits inter-individual variations and is independent of linear or nonlinear properties; hence, the weight $\\beta^$ assigned to these properties represents individual differences.\n\nThis study takes a first but important step towards highly precise insect cyborg control. In previous studies, we defined Motion Hacking (Owaki et al., 2019; Owaki and D\u00fcrr, 2022) as a technique for controlling insect leg movements through external electrical stimulation, while retaining the insect\u2019s own nervous system and sensorimotor loops. This approach requires a collaborative effort of engineering and biology in order to elucidate how adaptive walking ability of insects may be exploited for biohybrid control of motor flexibility. The Motion Hacking (Owaki et al., 2019; Owaki and D\u00fcrr, 2022) method strives to observe the adaptation process in the insect\u2019s own sensorimotor system as leg movements are intentionally controlled by a human operator, so as to reveal hidden mechanisms underlying natural locomotion. Thus far, research on insect cyborg control has addressed aspects of flight control (Sato, 2009; Sato and Maharbiz, 2010; Sato et al., 2015; Kosaka et al., 2021; Sane et al., 2007; Bozkurt et al., 2009; Hinterwirth et al., 2012), gait control (Cao et al., 2016; Vo Doan et al., 2018; Nguyen et al., 2020; Ando and Kanzaki, 2017; Sanchez et al., 2015), and controlling jellyfish propulsion (Xu and Dabiri, 2020a; Xu et al., 2020b; Xu et al., 2020c). In contrast to our present study, the main objective of the mentioned studies was to convert target animals into cyborgs, with little examination of the control mechanisms and/or muscle properties involved. Here, we used PWM pulse bursts to mimic motor neuron commands during insect locomotion, and selected key muscles to estimate stimulus-torque characteristics reliably and in very short time. Then, we used Bayesian statistical modeling to tell which parameters were subject to inter-individual variation and which were not. Our finding of linear characteristics with inter-individual variation of slope show compellingly how a systematic engineering intervention to an otherwise intact animal motor system can yield a simple, technically exploitable description of motor system properties. We argue that this description could not have been obtained by methods addressing isolated neural circuits or partial anatomical structures, but required the physical intactness of the natural system.\n\nThe contributions of this research are as follows: (1) this study demonstrates that compared to the nonlinear activation and contraction dynamics of insect muscles, the joint torque generated through electrical stimulation increases linearly with the duration of the stimulus, particularly during the stance and swing phases that characterize stick insect locomotion; (2) it introduces a hierarchical Bayesian model that allows for a reliable and simple description of the individual differences observed in neuromuscular system parameters. These contributions not only advance the field of insect cyborg control but also enhance our understanding of insect locomotion mechanisms. Animal locomotion is not solely governed by the brain and nervous system but also relies on the physical properties of the body and its interactions with the environment (Chiel et al., 2009; Nishikawa et al., 2007). Arthropods, in particular, effectively utilize mechanical properties and environmental interactions in their locomotion. Studies have revealed various related strategies, including the joint stiffness nonlinearity and hysteresis in spiders (Blickhan, 1986), generation of large motor outputs during escape maneuvers (Card, 2012) and posture stabilization (Blickhan, 1986) by adjusting the joint stiffness, mechanical sensing based on frequency characteristics that vary with the joint stiffness and posture in web-making spiders (Blickhan and Barth, 1985; Mhatre et al., 2018), transitions in movement patterns in response to mechanical interactions with the environment (Othayoth et al., 2020), and transitions in the coordinated movements of the body and legs (Wang et al., 2022) in cockroaches. Similarly, to elucidate the animal locomotion mechanisms emerging from such complex interactions, Sponberg et al., 2011a; Sponberg et al., 2011b conducted experiments similar to those in our study by perturbing neural feedback through artificial interventions on muscle action potentials (MAPs) in cockroaches Blaberus discoidalis (L.). In follow-up studies, we further estimated the passive joint stiffness and analyzed the phase responses of stick insects during walking by accurately controlling the joint torque based on the linear stimulus duration-joint torque model derived in this study. We believe that these approaches will contribute to a deeper understanding of stick insect walking mechanisms, such as their use of two different stride lengths in response to their environment (Theunissen and D\u00fcrr, 2013).\n\nStill, there are several limitations to the present study. First, as in many neurophysiological experiments (Berg et al., 2012; Lepreux et al., 2019), stick insects were fixed and not walking in the experimental setup (Figure 1A). Although there are only few studies on the natural dispersal behavior of stick insects, it is clear that they spend a lot of their lifetime at rest, for example in camouflage. Their tendency to attain camouflage postures can be exploited in experiments, as it is relatively easy to restrain active, spontaneous leg movements in an experimental setup. Nevertheless, the possibility to conduct combined motion capture and EMG recordings in freely walking stick insects (Dallmann et al., 2019; G\u00fcnzel et al., 2022; Dallmann et al., 2017; Bidaye et al., 2018) suggests that Motion Hacking during unrestrained, voluntary locomotion will be feasible in the future. Whereas the range of PWM burst duration and the joint torques generated are well within the physiological range, there is still considerable discrepancy between the PWM signals generated by our Raspberry Pi microcontroller and the natural firing patterns of motor neuron pools (G\u00fcnzel et al., 2022). Future research will need to examine how much the simplification of the driving burst input affects the time course of the torque generated. So far, it is re-assuring that the simplified PWM signal used here could be applied more than 50 times in a sequence without causing muscle fatigue, that is with a sustained level of generated torque.\n\nFinally, so far we have not fully investigated the effects of the electrical muscle stimulation on sensory feedback. The maximum voltage of 4 V used here did not cause abnormal motion that could be attributed to cross-talk stimulation of sensory afferents. Therefore, we conclude that unintended electrical stimulation of sensory afferents was negligible. Moreover, control measurements confirmed that muscles other than those stimulated by the electrodes were not active and did not generate force, as it would be expected from unintended stimulation via cross-talk. More generally, the activation of sensory organs during cyborg control is an interesting topic, with strong potential for expanding the concept of Motion Hacking. In the future, we will examine the performance of external leg movement control in an experimental setup, both without load (i.e. on a tether, without substrate contact) and with natural load distribution (i.e. by intervention during free walking). We are confident that these experiments, will provide further support of the Motion Hacking method and will reveal findings that could not be obtained by more conventional experiments without external stimulation of the neuro-muscular system. This will also contribute to potential applications in highly precise insect cyborg control.\n\n## Materials and methods\n\n### Animals\n\nWe tested 20 adult female Carausius morosus from our laboratory colony at Bielefeld University in 2018. The animals were raised under a 12 hr:12 hr light:dark cycle at a temperature of 23.9 \u00b11.3 \u00b0C (mean \u00b1 S.D). All experiments were conducted at room temperature (20\u201324 \u00b0C). Table 1 lists the stick insects used in the electrical stimulation experiments. Owing to a combination of experimental failures and time constraints, we could not obtain stimulation data for all three muscles from the same animal on a single day. Therefore, we collected data from 10 animals ($N=10$) for each muscle through experiments with 20 animals. Joint torques were measured with custom-built force sensors with strain gauges. Prior to the experiments, the measured force [mN] was calibrated from the force-sensor value [V] with weights of known mass (0.2\u20135 g). Two small insect pins attached to the tip of the force transducer held the middle part of the femur of the middle leg (Figure 1A right). The length between the ThC or CTr joints and the attachment point at the femur was measured and used as the moment arm for the calculation of torque.\n\n### Electrical stimulation\n\nWe developed a custom-built electrical stimulator for stimulating muscles (Figure 1A left). An extension circuit board was designed for Raspberry Pi 3 B+ (Raspberry Pi Foundation), including isolated 8-channel PWM signal outputs. The parameters of the PWM signals, for example, frequency (1\u2013120 Hz) and duty ratio (0 to 100%), were changed using a Raspberry Pi microprocessor. The amplitude of the output voltage (0\u20139 V) was changed using variable resistors on the circuit board, which enabled the investigation of the effects of these parameters on torque generation due to muscle stimulation. In this study, we systematically analyzed the joint torques generated by muscle contraction as induced by bursts of PWM pulses. To do so, we varied the amplitude [V], frequency [Hz] and duty ratio [%] of the PWM-signal, and identified the combinations that most effectively and repeatedly produced torque.\n\nFor one trial of the stimulation experiments, the frequency, duty ratio, and amplitude (voltage) of the PWM signals were not changed, but the burst duration $T_{i}$ of the signals was changed (Figure 1C top). Owing to the slow activation dynamics of an insect muscle, burst duration is one of two key parameters for controlling isometric muscle-contraction force because the muscle essentially acts as a second-order low-pass filter (Harischandra et al., 2019). The pulse frequency is the other key parameter, which can be held constant because burst duration alone is sufficient to effectively control joint torques in the range of 0\u20131.0 [s].\n\n### Electrode implementation\n\nA pair of stimulation electrodes was implanted into each muscle through two small holes in the cuticle. Holes were pierced using an insect pin, and wires were fixed with dental glue (Figure 1B). The stimulation electrodes were thin silver wires (A-M Systems, diameter = 127 \u00b5m, without insulation; 178 \u00b5m with Teflon insulation). The insulation at the end of the silver wire was removed, and the wires were implanted. The other end of the stimulation electrode was connected to the output of the electrical stimulator. The correctness of the electrode implantation was verified through triggered resistance reflexes, which are responses to imposed movements of the ThC and CTr joints for the corresponding muscles.\n\n### Data collection\n\nWe determined the parameter set with a frequency of 50 Hz and a duty ratio of 30%, which would allow continuous and effective torque generation in a pre-experiment. We performed electrical stimulation experiments in the following order: (i) first, we selected one of the three muscles (protractor, retractor, levator) to be stimulated in each stick insect and (ii) performed electrical stimulation of the selected muscle more than 50 times at 1 V (50 Hz, 30%). The duration of the electrical stimulation, $T_{i}$, was set manually and randomly; this was followed by a (iii) 3-min-resting-period to reduce the effect of muscle fatigue (the resting period was determined in the pre-experiment). (iv) We then performed electrical stimulations at 2 V, 3 V, and 4 V for more than 50 times each; note that each stimulation was preceded by a 3-min-resting-period. (v) A voltage from 1 to 4 V that effectively generated the torque for the corresponding muscle was selected. (vi) Following this selection, we conducted electrical stimulation experiments for each combination of frequency (30 Hz, 50 Hz, 70 Hz, 90 Hz, and 110 Hz) and duty ratio (10%, 30%, 50%) for more than 50 times, with a resting time of 3 min between each condition. (vii) The next muscles were selected depending on the condition of the stick insect and within the time constraints, and we repeated steps (ii)\u2013(vi) and recorded the data. (viii) The individuals were changed (on another day), and steps (i)\u2013(vii) were repeated. We collected 10 individuals ($N=10$ in Table 1) for each muscle using this procedure. Notably, even after such a large number of electrical stimulations of the muscles, we did not observe any significant biological damage to the stick insect nor any fatigue or warm-up effects.\n\n### Data analysis\n\nTo investigate the dependence of externally induced joint torques by electrostimulating one out of the three leg muscles, we measured the force generated at the attachment point and multiplied it with the known moment arm as follows: (1) For different burst duration $T_{i}$ we estimated peak-to-peak sensor values $S_{p\u20622\u2062p}\u2062(i)$ [V] (Figure 1C left). (2) Applying the conversion factor obtained from the previous calibration, we obtained peak-to-peak force change [mN] in response to stimulation. (3) The force was then multiplied with the measured moment arm [mm] to obtain the joint torque $\\tau_{i}$ [\u00b5Nm] (Figure 1C right).\n\n### Widely applied information criterion (WAIC)\n\nWe compared the predictive performances of the formulated models using the mathematical index WAIC (Watanabe, 2018Watanabe, 2005; Watanabe, 2010a; Watanabe, 2010b). The WAIC is a measure of the degree to which an estimate of the predictive distribution is accurate relative to the true distribution (Watanabe, 2018). Essentially, it is based on the difference between the information conveyed by the mean and that conveyed by the variance. This difference is negative if the term corresponding to the mean exceeds that corresponding to the variance. The smaller (or more negative) the WAIC index, the higher the predictive value of the model variant.\n\nWhen calculating the WAIC index for a hierarchical model, several calculation methods can be used, depending on the definition of the predictive distribution, that is, the type of unknown data distribution being predicted (Watanabe, 2018). We were interested in predicting muscle properties with electrostimulation for a new, additional animal, not including experimental date, to enable individualized leg \u2018control\u2019. From this perspective, we constructed a new distribution of the predictive parameters of a new animal by marginalizing intermediate parameters assigned to each hierarchical model (models 1\u20132, 2\u20132, 2\u20133, 2\u20134; Watanabe, 2018; Wakita et al., 2020; Harada et al., 2020). This allows for a fair comparison of the prediction performance of hierarchical and non-hierarchical models. Referring to the method from the previous studies (Wakita et al., 2020; Harada et al., 2020), the WAIC was computed by numerical integration with MCMC (Markov Chain Monte Carlo) samples by using Simpson\u2019s law and the \u2018log_sum_exp\u2019 function provided by Stan (Stan Development Team, 2023).\n\nFrom the models described above, the model with the smallest WAIC value was considered the most appropriate predictive model in terms of predictivity for a new animal.\n",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "90acf764-8805-4988-96cc-11e019e05314",
+      "submission_id": "f5267bb9-0f7f-4520-93ff-433c6aa76718",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gordon J Berman, https://ror.org/03czfpz43 Emory University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85275.sa0](https://doi.org/10.7554/eLife.85275.sa0)\n\nThis valuable work presents new results to characterize the relationship between electrical excitation and torque generation in stick insect joints. The evidence supporting this work is a series of torque-voltage measurements across individuals. The strength of evidence is compelling in supporting the outcomes.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Gordon J Berman, https://ror.org/03czfpz43 Emory University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85275.sa1](https://doi.org/10.7554/eLife.85275.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A hierarchical model for external electrical control of an insect, accounting for inter-individual variation of muscle force properties\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Anna Akhmanova as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Nick Gravish (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The clarity of this work suffers from its structure: the models (and the parameters within) are central to the results of this study. The integration of data-driven modeling and experiment is the main reason this work is exciting! Yet, these are introduced far after the results are presented. While this is partially due to the section structure set forward, some basic aspects of the models and experimental system should be introduced prior to delineating the results in order to provide clarity.\n\n2) The referees were concerned that it was not clear from the presentation of the results how substantial the contributions in this paper are to the field as a whole. The authors should better articulate the importance of their contributions, or, missing that, they should better explain what the challenges have been and what would need to be done to overcome them.\n\n3) Along these lines, authors are missing an opportunity to make their work more impactful, by limiting the motivation and discussion to the domain of cyborgs, which is in itself important but quite a small field of research. There are many important animal locomotions, and even mechanical sensing, problems where this understanding is extremely relevant and useful. For example, stiffening the legs can help animals generate larger forces during locomotion in rough terrain, in behaviors that can benefit from higher forces (e.g., escape from predators, fighting between males during courtship), even in mechanical sensing (e.g., web-making spiders may modulate leg stiffness as part of its strategies to modulate how prey vibration is sensed by vibration sensors in its legs). A few studies that may help the authors appreciate and think about the broad implications:\n\na. Sponberg et al. (2011), A single muscle's multifunctional control potential of body dynamics for postural control and running, Phil. Trans. Royal Soc. B. 366(1570): 1592-1605.\n\nb. Blickhan (1986), Stiffness of an arthropod leg joint, J. Biomechanics, 19(5), 375-384.\n\nc. Wang et al. (2022), Cockroaches adjust body and appendages to traverse cluttered large obstacles, J. Exp. Biol., 225(10), jeb243605.\n\nd. Mhatre et al. (2018), Posture controls mechanical tuning in the black widow spider mechanosensory system, bioRxiv, 484238.\n\nPlease comment on the relationship of the results in this study to the above line of research.\n\n4) While it is interesting that inter-individual differences are important in the torque output from the joint, are these inter-individual differences related to any distinct differences among the insects studied (e.g., body mass, limb length, cross-sectional muscle area, and age all would likely influence torque)? While the referees are not advocating that all of the above parameters (age, size, etc) be added into a more complex model, they think it is important to provide any known information about the variance in individual size/age/etc, perhaps as a supplementary table.\n\n5) Line 145 states that \"Models 1-2 and 2-1 most accurately predicted the posterior predictive distribution.\", is this a typo? The referees were under the impression that Models 1-2 and 2-2 are the best, as they are linear and nonlinear models with hierarchical slopes. In the paragraph starting at line 147 and the subsequent paragraph it is argued that while the nonlinear model 2-2 worked well, the linear model is still better. \"The comparison of the linear model (model 1-2) with the nonlinear model (model 2-2) using the WAIC for all conditions (muscle type and applied voltage) resulted in lower values for the linear model.\" But certainly, both are quite close in WAIC, and the question is: might there be reasons from muscle physiology on stick insects to expect a non-linear model? While the linear model had the marginally lowest WAIC without any prior assumptions about the torque-duration curve, certainly much is known about the effect of stimulation on force production, and might including that information validate the non-linear model over linear? Alternatively, if the goal is to just model the data under 500ms stimulation because this is the relevant timescale for walking behavior (line 181), then the linear model is fine. But reading the manuscript the referees got the impression the goal was to best model the torque-voltage relationship, which would include the full excitation range and incorporates known information from muscle physiology. Please comment on these concerns and edit the manuscript as needed.\n\n6) Figure 3 is a bit confusing, as this plot is meant to compare the experimental data with the hierarchical model distribution. However, all the model distributions across the 10 insects look identical. Wasn't the point of the hierarchical model that the slope parameter varies across individuals (isn't this what Figure 4 demonstrates?)? So, shouldn't the distributions and green fit lines all be different for the individuals? Please comment.\n\n7) It is stated that 20 insects were tested, but all the plots show only 10. Is this just because the other 10 were not presented? Or were observations discarded from the other 10 insects for some reason? This is important to describe so that readers can assess the results.\n\n8) What is the order of presentation of different voltages? It is stated that muscle fatigue should be negligible for under 50 stimulations, but the range of the 2V experiments alone is between 49-79 stimulations. So, were another ~50 stimulations performed at the three other voltages? And if so, was fatigue a possible issue?\n\n9) Also, were there \"warm-up\" effects too where the muscle force increased with subsequent stimulations? It would be important to provide some characterization of this.\n\n10) More information should be provided about the ordering of the different excitation experiments. The methods do not describe what the time duration between excitations was, how many were performed over what time period, etc. Additionally, it looks like four different voltage amplitudes were performed which I could only observe from figures 2 and 4. It would be beneficial to describe in detail the full sequence of data collection on an insect.\n\n11) It is stated that muscle fatigue should be negligible for under 50 stimulations, but the range of the 2V experiments alone was between 49-79 stimulations. So, were another ~50 stimulations performed at the three other voltages? And if so, was fatigue a possible issue? Also, were there \"warm up\" effects too where the muscle force increased with subsequent stimulations? It would be useful to provide some characterization of this.\n\n12) The authors also seem to be only addressing certain parameters rather than the potential adjustable parameters. PWM, voltage, and frequency are adjustable, but the paper only varied voltage and burst duration. It is unclear whether factors such as frequency (which has been shown to affect muscle force values) were investigated or not. If they were investigated in preliminary experiments, it would help if they were described; if not, it would also help to explain why, to help the readers understand why only burst duration and voltage were varied.\n\n13) The data and code were not yet made available. The referees request access to both the data set and the code, as both are necessary to assess the reproducibility of this study.\n\n14) Given the potential ethical considerations of 'cyborg control of insects,' the authors should discuss the potential ethical implications of extensions of their work with respect to animal welfare and other societal implications.\n\nReviewer #1 (Recommendations for the authors):\n\nOverall, I think this is an interesting and useful study and that it will nicely move the field forward. The primary suggestion I have is a slight reorganisation as noted in the Public Review: while I understand that journal section structure puts some limitations on this (and while I agree that overly technical information should be placed so as not to disrupt the flow of the narrative), introducing some basic features of the experiments and models upfront (perhaps in a Table form) would be very helpful in understanding what the results mean. I also recommend moving Figure 5 before the results Figures.\n\nThe data and code were not yet made available (as far as I can tell), which is a bit disappointing. From the text, I understand they will be made available upon publication; but it is difficult to assess the reproducibility of this study without access to these as a referee.\n\nReviewer #3 (Recommendations for the authors):\n\n1. The work itself seems not very substantial. It seems that the authors did relatively simple experiments, and just tried many different simple models to fit the data. It is not clear whether there is a substantial contribution. The authors should think harder about this and better articulate the contribution to the field with such a relatively simple study (as it appears). Or explain better what the challenges have been to better show why this initial first step is not as straightforward as it appears to be.\n\n2. I think the author is missing an opportunity to make their work more impactful, by limiting the motivation and discussion to the domain of cyborgs, which is in itself important but quite a small field of research. There are many important animal locomotions and even mechanical sensing problems where this understanding is extremely relevant and useful. For example, stiffening the legs can help animals generate larger forces during locomotion in rough terrain, in behaviors that can benefit from higher forces (e.g., escape from predators, fighting between males during courtship), even in mechanical sensing (e.g., web-making spiders may modulate leg stiffness as part of its strategies to modulate how prey vibration is sensed by vibration sensors in its legs). A few studies that may help the authors appreciate and think about the broad implications:\n\na. Sponberg et al. (2011), A single muscle's multifunctional control potential of body dynamics for postural control and running, Phil. Trans. Royal Soc. B. 366(1570): 1592-1605.\n\nb. Blickhan (1986), Stiffness of an arthropod leg joint, J. Biomechanics, 19(5), 375-384.\n\nc. Wang et al. (2022), Cockroaches adjust body and appendages to traverse cluttered large obstacles, J. Exp. Biol., 225(10), jeb243605.\n\nd. Mhatre et al. (2018), Posture controls mechanical tuning in the black widow spider mechanosensory system, bioRxiv, 484238.\n\n3. The authors seem to be only addressing certain parameters rather than the potential adjustable parameters. PWM, voltage, and frequency are adjustable, but the paper only varied voltage and burst duration. It is unclear whether factors such as frequency (which has been shown to affect muscle force values) were investigated or not. If they were investigated in preliminary experiments, it would help if they were described; if not, it would also help to explain why, to help the readers understand why only burst duration and voltage were varied.\n\n4. It is difficult to understand the Results and Discussion without reading the Method and Materials first. I know that eLife has Methods later, but the meaning of certain acronyms was not at least briefly explained until later in the paper, making it hard to understand when one reads it.\n\n5. What are the resulting modelling equations generated for each? Is it possible to output the resulting modeling equations created from the Makrov Chain Monte Carlo method? It is difficult to see how they compare and are different from the simple linear and power equations that are used for 1-1 and 2-1.\n\na. What is the power function constant used for 2-1? It seems to be that \\\u03b3 is 1, but doesn't that make it a linear function?\n\n6. It is unclear how the author settled at the default parameters of the PWM signals to 2 V, 50 Hz, and 30% duty ratio.\n\n7. For Figure 3, why is the prediction only compared with models 1-2? From what I gather, models 1-2 and 2-2 were the most accurate in predicting the posterior predictive distribution, why is specifically 1-2 addressed?\n\n8. The intro addresses how inter-species variability can cause issues with the precise control of different animals. Is this issue addressed in this paper? It is not clear to me how this modelling can account for individual species variability considering the models only include variables for the burst duration and joint torque. Is the assumption that generating an appropriate model can lead to creating a robust feedback control system to control for interspecies variability?\n\n9. The pictures of the experimental setup are confusing, it would be helpful if there was a schematic of the setup and some labels were given on where the muscles that were tested are located.\n\n10. Not sure what the difference between hierarchical models and non-hierarchical models is, and where it is addressed.\n\n11. Overall there are too many plots to understand, reducing the number of plots and increasing the font size on the plots will help increase the clarity and understanding of each figure.\n\nSpecific Comments:\n\n1. Can you explain why there is a different number of simulations (n) for each animal? (Referring to Figure 3)\n\n2. Unknown o? on line 349, not sure if hierarchical model o is a thing.\n\n3. The labels for each of the y values and x values are very hard to see and are very blurry, it is hard to get a good sense of what these numbers mean for Figure 4, or what the y-axis and x-axis mean. Increasing the number font would be helpful for reading any of these graphs.\n",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "40f02b98-5cf4-43db-ab47-89f3415bf2f7",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C1",
+      "claim": "Cyborg control of insect movement is promising for developing miniature, high-mobility, and efficient biohybrid robots.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyborg control of insect movement is promising for developing miniature, high-mobility, and efficient biohybrid robots.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential of cyborg control technology, presented as an established viewpoint in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "1f13908b-5db2-47c5-8950-49a7b54b9cf1",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C2",
+      "claim": "A nearly linear relationship between the stimulus burst duration and generated torque was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "A nearly linear relationship between the stimulus burst duration and generated torque was observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental measurements reported in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "fc454a33-f520-416f-bca7-761a910b0800",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C3",
+      "claim": "The stimulus-torque characteristic holds for burst durations of up to 500ms.",
+      "claim_type": "EXPLICIT",
+      "source": "This stimulus-torque characteristic holds for burst durations of up to 500ms, corresponding to the stance and swing phase durations of medium to fast walking stick insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated based on experimental observations and comparison to walking phase durations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "6b61220d-261f-4bda-9fe0-b2c491de7831",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C4",
+      "claim": "Burst durations of up to 500ms correspond to the stance and swing phase durations of medium to fast walking stick insects.",
+      "claim_type": "EXPLICIT",
+      "source": "This stimulus-torque characteristic holds for burst durations of up to 500ms, corresponding to the stance and swing phase durations of medium to fast walking stick insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This relates experimental parameters to known locomotion characteristics of stick insects.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "64f10e94-6b0d-47c3-b3c4-fed5e3a2d74b",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C5",
+      "claim": "Hierarchical Bayesian modeling revealed that linearity of the stimulus-torque characteristic was invariant, with individually varying slopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Hierarchical Bayesian modeling revealed that linearity of the stimulus-torque characteristic was invariant, with individually varying slopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the Bayesian statistical analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "103fd287-0a03-496a-864a-d39f421978f8",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C6",
+      "claim": "Individual prediction of joint torques provides significant benefits for precise cyborg control.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual prediction of joint torques provides significant benefits for precise cyborg control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling results regarding applications to cyborg control.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "a7873c85-19ba-48db-ad86-06153e299a32",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C7",
+      "claim": "Hybrid insect\u2013computer robots represent cutting-edge approaches to develop robots with locomotor performances comparable to those of insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Hybrid insect\u2013computer robots (Krause et al., 2011; Li and Sato, 2018) represent cutting-edge approaches to develop robots with locomotor performances comparable to those of insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "545419b3-3c94-4895-8f05-cf49fbb275c0",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C8",
+      "claim": "Biohybrid cyborg robots have been engineered to manipulate their gait and flight through electrical stimulation of target muscles in various insects, including beetles, moths, and cockroaches.",
+      "claim_type": "EXPLICIT",
+      "source": "such biohybrid, that is cyborg robots have been engineered to manipulate their gait and flight through electrical stimulation of target muscles in various insects, includings beetles (Sato, 2009; Sato and Maharbiz, 2010; Sato et al., 2015; Cao et al., 2016; Vo Doan et al., 2018; Nguyen et al., 2020; Kosaka et al., 2021), moths (Sane et al., 2007; Bozkurt et al., 2009; Hinterwirth et al., 2012; Ando and Kanzaki, 2017), and cockroaches (Sanchez et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "354f5006-0099-45f1-8649-f6cffafc3567",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C9",
+      "claim": "Biohybrid cyborg robots do not require individual 'design', 'fabrication', and 'assembly' processes for each component because they use the body tissues of living insects.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantage of biohybrid (cyborg) robots is that they do not require individual 'design', 'fabrication', and 'assembly' processes for each component because they use the body tissues of living insects (Cao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of cyborg robots with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "60e4193c-96d4-439a-9dcd-777323d2ebf5",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C10",
+      "claim": "Cyborg robots have low power consumption of a few milliwatts.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, cyborg robots have low power consumption, that is, a few milliwatts (Sato and Maharbiz, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative claim supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "c95219af-a85b-4526-ae51-3d23839107df",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C11",
+      "claim": "The greatest challenge in cyborg control comes with the inter-individual variability of animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps, the greatest challenge in cyborg control comes with the inter-individual variability of animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an expert assessment of the field's challenges.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "d90fef19-824b-41fa-b12c-23e2ab2bb09a",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C12",
+      "claim": "A model formulated using the average data for a group cannot explain the characteristics of any individual in the group.",
+      "claim_type": "EXPLICIT",
+      "source": "Past neurophysiological studies related to animal neural activity have discussed the failure of averaging-based approaches, in which a model formulated using the average data for a group cannot explain the characteristics of any individual in the group (Golowasch et al., 2002; Schulz et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior neurophysiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "f431819e-b7a0-43b3-b99d-e833ec44db35",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C13",
+      "claim": "Variable and non-periodic patterns in feeding behavior of Aplysia have been reported to be subject to strong inter-individual variation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, variable and non-periodic patterns in feeding behavior of Aplysia have been reported to be subject to strong inter-individual variation (Horn et al., 2004; Brezina et al., 2005; Zhurov et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies on Aplysia.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "4adec436-97c3-475b-a0ec-19168b7655ff",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C14",
+      "claim": "The prediction error of muscle models which are based on sample averages is very high and may be halved using individual-specific model.",
+      "claim_type": "EXPLICIT",
+      "source": "In insect motor physiology, the prediction error of muscle models which are based on sample averages is very high (Bl\u00fcmel et al., 2012a) and may be halved using individual-specific model (Bl\u00fcmel et al., 2012b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to specific studies on insect muscle models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "a4e2c8d3-54a6-40fe-9055-742d1995b232",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C15",
+      "claim": "The retractor coxae is the primary muscle for propulsion in stick insects.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on these three proximal muscles because the retractor coxae is the primary muscle for propulsion (Rosenbaum et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support regarding muscle function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "86bb26c4-bdd9-481e-82c2-69bb81028642",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C16",
+      "claim": "The pro/retractor coxae contributes to weight-dependent postural adjustment by regulating joint stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "the pro/retractor coxae contributes to weight-dependent postural adjustment by regulating joint stiffness (Dallmann et al., 2019; G\u00fcnzel et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional role is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "13d1ada0-1222-4a63-8c91-1c821aafe3e0",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C17",
+      "claim": "The levator trochanteris is important for postural termination and swing initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "the levator trochanteris is important for postural termination and swing initiation (Dallmann et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional role is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "33027092-1228-4792-a0ec-5b78c2089f0f",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C18",
+      "claim": "When stick insects walk, they use the protractor to swing the leg forward during the swing phase.",
+      "claim_type": "EXPLICIT",
+      "source": "When stick insects walk, they use the protractor to swing the leg forward during the swing phase",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the functional role of the protractor muscle during walking.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "5c34c05b-b863-4768-85da-e6a2b0b0e64a",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C19",
+      "claim": "When stick insects walk, they use the retractor to move the leg backward during the stance phase.",
+      "claim_type": "EXPLICIT",
+      "source": "the retractor to move the leg backward during the stance phase",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the functional role of the retractor muscle during walking.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "08ec938c-0e1c-4bb6-8c03-2b14a26d9062",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C20",
+      "claim": "When stick insects walk, they use the levator to initiate the stance-to-swing transition.",
+      "claim_type": "EXPLICIT",
+      "source": "and levator to initiate the stance-to-swing transition (Rosenbaum et al., 2010; Dallmann et al., 2019; G\u00fcnzel et al., 2022; B\u00e4ssler and Wegner, 1983)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the functional role of the levator muscle with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "574b45da-1626-4550-b400-31124eca3547",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C21",
+      "claim": "Co-contraction of the protractor and retractor are known to vary based on the overall load distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, co-contraction of the protractor and retractor are known to vary based on the overall load distribution, thus being important for postural control by regulating joint stiffness (Dallmann et al., 2019; G\u00fcnzel et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known behavior with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "90a2a3b4-46e3-42c7-813c-65784de1feda",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C22",
+      "claim": "Electrical stimulation of the protractor and retractor muscles generated forward and backward movements at the thorax\u2013coxa (ThC) joint.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, electrical stimulation of the protractor and retractor muscles generated forward and backward movements at the thorax\u2013coxa (ThC) joint, as measured by a calibrated custom-made force transducer with a strain gauge held against the femur with known distance from the joint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental observation of muscle stimulation effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "7c3c9136-546d-4336-9830-c3fa417b5401",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C23",
+      "claim": "Stimulation of the levator muscle generated an upward movement at the coxa\u2013trochanter (CTr) joint.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation of the levator muscle generated an upward movement at the coxa\u2013trochanter (CTr) joint (Dallmann et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental observation with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "04d0b2bd-a451-4436-8626-90add5ceba88",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C24",
+      "claim": "The input\u2013output relation (burst duration and generated torque) corresponded to a linear function or a power function with an exponent of less than 1.0.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate the input\u2013output relation (burst duration and generated torque) corresponded to a linear function or a power function with an exponent of less than 1.0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "c96ea915-266c-4522-b695-82bafc937afd",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C25",
+      "claim": "The relationship between burst duration and torque holds for burst durations up to 500ms for all animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the relationship holds for burst durations up to 500ms for all animals, corresponding to the duration of swing and stance phases in medium to fast walking stick insects (D\u00fcrr et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on experimental data with citation for comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "3727cb81-e1c5-4c70-824d-77ff8ca3b8ee",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C26",
+      "claim": "Maximum torques for ThC and CTr joints were 60 \u00b5Nm, 120 \u00b5Nm, and 40 \u00b5Nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Maximum torques for ThC and CTr joints were 60 \u00b5Nm, 120 \u00b5Nm, and 40 \u00b5Nm (Dallmann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides specific quantitative measurements with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "ac25daf1-e83f-45fb-b62b-01636840c7bf",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C29",
+      "claim": "The probabilistic nature of Bayesian models makes them appropriate for modeling 'uncertainty', as introduced by inter-individual variation.",
+      "claim_type": "EXPLICIT",
+      "source": "The probabilistic nature of Bayesian models makes them appropriate for modeling 'uncertainty', as introduced by inter-individual variation (Gelman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological justification supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "56832fd8-646d-4019-bfb5-c4d5399884dd",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C30",
+      "claim": "Hierarchical model variants allow the inclusion of a hyperparameter, thus allowing for a parameter of choice to be drawn from yet another probabilistic distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, hierarchical model variants allow the inclusion of a hyperparameter, thus allowing for a parameter of choice to be drawn from yet another probabilistic distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a property of hierarchical Bayesian models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "37a6fed6-90f0-4c71-86e5-4c5471fdc11f",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C31",
+      "claim": "Hierarchical-model variants were used to account for inter-individual differences.",
+      "claim_type": "EXPLICIT",
+      "source": "In our case, hierarchical-model variants were used to account for inter-individual differences (Watanabe, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "acaa8d6d-da8f-4309-8a33-355a0e1cc9f3",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C36",
+      "claim": "The hierarchical models can appropriately account for inter-individual variation of muscle properties for new unknown animals.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that, compared with other models, the hierarchical models can appropriately account for inter-individual variation of muscle properties for new unknown animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the model performance results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "7f0b54b5-6403-4df9-b4ff-9cf72fac07ea",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C46",
+      "claim": "Linearity was an invariant feature of the stimulus-torque characteristic, whereas the slope of this characteristic varies among individual stick insects and with the applied voltage.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that linearity was an invariant feature of the stimulus-torque characteristic, whereas the slope of this characteristic varies among individual stick insects and with the applied voltage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the experimental and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "3ebf4f9f-8ff1-4799-ab91-f6846aee05da",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C47",
+      "claim": "The generated torque depends considerably less on the PWM voltage and frequency than on the burst duration.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in line with those of existing studies on the properties of myogenic forces in other insect species (Cao et al., 2014; Bl\u00fcmel et al., 2012a; Harischandra et al., 2019): The generated torque depends considerably less on the PWM voltage and frequency (Bl\u00fcmel et al., 2012a; Harischandra et al., 2019) than on the burst duration, suggesting that the total number of subsequent input pulses is important.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support from prior studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "8f2fc85b-bab0-4629-8a32-b53269ab54b4",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C48",
+      "claim": "The total number of subsequent input pulses is important for torque generation.",
+      "claim_type": "EXPLICIT",
+      "source": "The generated torque depends considerably less on the PWM voltage and frequency (Bl\u00fcmel et al., 2012a; Harischandra et al., 2019) than on the burst duration, suggesting that the total number of subsequent input pulses is important.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the dependence on burst duration.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "14f427a8-128b-4efb-a632-21c638285800",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C49",
+      "claim": "Slow insect muscle essentially 'counts' incoming spikes within a given time window.",
+      "claim_type": "EXPLICIT",
+      "source": "This is indeed expected for a slow insect muscle (Bl\u00fcmel et al., 2012a) that essentially 'counts' incoming spikes within a given time window.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an expected property with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "8f2cb8a9-e7fb-4967-9d34-27e46d0eb1f7",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C50",
+      "claim": "Monitoring of torques in an intact animal resulted in a linear characteristic (for intervals up to 500ms) that would not be expected from isometric force measurements of isolated muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the nonlinear properties of muscle, we demonstrated that our monitoring of torques in an intact animal resulted in a linear characteristic (for intervals up to 500ms) that would not be expected from isometric force measurements of isolated muscles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This contrasts the current findings with expectations from isolated muscle studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "a01abf14-2fa7-47aa-b4fb-c1ac213545a7",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C51",
+      "claim": "Changing the PWM frequency was found to be comparable to changing the number of spikes over a given period.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, changing the PWM frequency was found to be comparable to changing the number of spikes over a given period, whereas changing the duty ratio was found to be comparable to varying the average voltage over a given period (see Appendix 1\u2014figures 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on analysis shown in appendix figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "fa2d7c9a-c970-4635-be63-51df699fa6c5",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C52",
+      "claim": "Changing the duty ratio was found to be comparable to varying the average voltage over a given period.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, changing the PWM frequency was found to be comparable to changing the number of spikes over a given period, whereas changing the duty ratio was found to be comparable to varying the average voltage over a given period (see Appendix 1\u2014figures 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on analysis shown in appendix figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "ae217d14-898e-4fad-b7c5-49faabf2cad2",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C53",
+      "claim": "The comparison of the linear model (model 1\u20132) with the nonlinear model (model 2\u20132) using the WAIC for all conditions resulted in lower values for the linear model.",
+      "claim_type": "EXPLICIT",
+      "source": "The comparison of the linear model (model 1\u20132) with the nonlinear model (model 2\u20132) using the WAIC for all conditions (muscle type and applied voltage) resulted in lower values for the linear model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the model comparison results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "cc4572ba-4637-4a6f-8456-3bdf62e2be46",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C54",
+      "claim": "Models with lower WAIC can generate predictive distributions closer to the true distribution while using fewer parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Models with lower WAIC can generate predictive distributions closer to the true distribution while using fewer parameters (Watanabe, 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the interpretation of WAIC with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "3ca50e1b-f77a-4915-bf23-f8043b405782",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C55",
+      "claim": "The experimental results obtained in this study can be adequately explained using a linear hierarchical Bayesian model (1-2).",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the experimental results obtained in this study can be adequately explained using a linear hierarchical Bayesian model (1-2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the WAIC comparison results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "449d2249-59c1-4701-9738-60871739cb7b",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C57",
+      "claim": "The properties were linear for stimulus burst durations up to 500ms, which corresponds to the stance and swing phase durations of medium-speed to fast walking stick insects of the species Carausius morosus.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the properties were linear for stimulus burst durations up to 500ms. This linearity region corresponds to the stance and swing phase durations of medium-speed to fastwalking stick insects of the species Carausius morosus (D\u00fcrr et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This relates the experimental findings to natural locomotion with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "2542a9e8-9ec6-4a59-8df0-b6c71f525424",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C58",
+      "claim": "The magnitudes of the joint torques generated by the protractor, retractor, and levator were comparable to those for resisted movement during stick-insect walking.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitudes of the joint torques generated by the protractor, retractor, and levator were comparable to those for resisted movement during stick-insect walking, for example coxa-trochanter joint depression during stance (Dallmann et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares experimental torques to natural walking with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "3b9dd64c-fade-4234-bd5b-813f75468e67",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C59",
+      "claim": "The estimated stimulus-torque characteristic captures the natural dynamic properties of leg muscles during walking in terms of both the duration of excitation and maximum torque.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the estimated stimulus-torque characteristic captures the natural dynamic properties of leg muscles during walking in terms of both the duration of excitation and maximum torque.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison with natural walking parameters.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "2e167bd8-0be3-4668-bf36-11e762aecc78",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C60",
+      "claim": "The hierarchical nonlinear model (model 2\u20132) would be more appropriate for estimating properties related to longer time scales, such as those associated with the complete range of muscle excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the hierarchical nonlinear model (model 2\u20132) would be more appropriate for estimating properties related to longer time scales, such as those associated with the complete range of muscle excitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about model applicability beyond the tested range.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "ede1cbfb-3f5f-4b3c-95fa-777c5ebb95db",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C63",
+      "claim": "Motion Hacking is defined as a technique for controlling insect leg movements through external electrical stimulation, while retaining the insect's own nervous system and sensorimotor loops.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous studies, we defined Motion Hacking (Owaki et al., 2019; Owaki and D\u00fcrr, 2022) as a technique for controlling insect leg movements through external electrical stimulation, while retaining the insect's own nervous system and sensorimotor loops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines the Motion Hacking approach with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "8955a826-cc98-424d-a06c-576698a21e8c",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C64",
+      "claim": "The Motion Hacking approach requires a collaborative effort of engineering and biology in order to elucidate how adaptive walking ability of insects may be exploited for biohybrid control of motor flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach requires a collaborative effort of engineering and biology in order to elucidate how adaptive walking ability of insects may be exploited for biohybrid control of motor flexibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the interdisciplinary nature of the approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "ce2857a7-0b9e-4050-9077-4b24ec356531",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C65",
+      "claim": "The Motion Hacking method strives to observe the adaptation process in the insect's own sensorimotor system as leg movements are intentionally controlled by a human operator.",
+      "claim_type": "EXPLICIT",
+      "source": "The Motion Hacking (Owaki et al., 2019; Owaki and D\u00fcrr, 2022) method strives to observe the adaptation process in the insect's own sensorimotor system as leg movements are intentionally controlled by a human operator, so as to reveal hidden mechanisms underlying natural locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the goal of the Motion Hacking method with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "7fd5cf4f-6281-4988-9f54-cbc4a57e8b9f",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C66",
+      "claim": "Research on insect cyborg control has addressed aspects of flight control, gait control, and controlling jellyfish propulsion.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus far, research on insect cyborg control has addressed aspects of flight control (Sato, 2009; Sato and Maharbiz, 2010; Sato et al., 2015; Kosaka et al., 2021; Sane et al., 2007; Bozkurt et al., 2009; Hinterwirth et al., 2012), gait control (Cao et al., 2016; Vo Doan et al., 2018; Nguyen et al., 2020; Ando and Kanzaki, 2017; Sanchez et al., 2015), and controlling jellyfish propulsion (Xu and Dabiri, 2020a; Xu et al., 2020b; Xu et al., 2020c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes prior research areas with extensive citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "3f24f9ee-895f-414e-aeb4-98270f649f10",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C67",
+      "claim": "The main objective of previous cyborg studies was to convert target animals into cyborgs, with little examination of the control mechanisms and/or muscle properties involved.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to our present study, the main objective of the mentioned studies was to convert target animals into cyborgs, with little examination of the control mechanisms and/or muscle properties involved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This contrasts the current study with prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "51ec9eb6-974d-4909-9c8b-866351811200",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C68",
+      "claim": "PWM pulse bursts were used to mimic motor neuron commands during insect locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used PWM pulse bursts to mimic motor neuron commands during insect locomotion, and selected key muscles to estimate stimulus-torque characteristics reliably and in very short time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "c1eb4267-f96b-4cbd-8849-10a3313d5186",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C69",
+      "claim": "Bayesian statistical modeling was used to tell which parameters were subject to inter-individual variation and which were not.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, we used Bayesian statistical modeling to tell which parameters were subject to inter-individual variation and which were not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "b458cecf-6189-4b52-bfce-65ec304cb4da",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C70",
+      "claim": "A systematic engineering intervention to an otherwise intact animal motor system can yield a simple, technically exploitable description of motor system properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding of linear characteristics with inter-individual variation of slope show compellingly how a systematic engineering intervention to an otherwise intact animal motor system can yield a simple, technically exploitable description of motor system properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the methodological approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "08a91853-04be-4682-890e-ace240a1d539",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C71",
+      "claim": "This description could not have been obtained by methods addressing isolated neural circuits or partial anatomical structures, but required the physical intactness of the natural system.",
+      "claim_type": "EXPLICIT",
+      "source": "We argue that this description could not have been obtained by methods addressing isolated neural circuits or partial anatomical structures, but required the physical intactness of the natural system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This argues for the necessity of the intact-animal approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "506536d7-cd43-41a1-b1b8-36f0265b48b9",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C72",
+      "claim": "Compared to the nonlinear activation and contraction dynamics of insect muscles, the joint torque generated through electrical stimulation increases linearly with the duration of the stimulus, particularly during the stance and swing phases that characterize stick insect locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "The contributions of this research are as follows: (1) this study demonstrates that compared to the nonlinear activation and contraction dynamics of insect muscles, the joint torque generated through electrical stimulation increases linearly with the duration of the stimulus, particularly during the stance and swing phases that characterize stick insect locomotion",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key contribution of the research.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "25228752-e600-4759-ab73-756deaf1ed3b",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C73",
+      "claim": "The study introduces a hierarchical Bayesian model that allows for a reliable and simple description of the individual differences observed in neuromuscular system parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) it introduces a hierarchical Bayesian model that allows for a reliable and simple description of the individual differences observed in neuromuscular system parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key contribution of the research.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "39d8cb65-3403-4a33-807c-f3f7e097cb5c",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C74",
+      "claim": "Animal locomotion is not solely governed by the brain and nervous system but also relies on the physical properties of the body and its interactions with the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Animal locomotion is not solely governed by the brain and nervous system but also relies on the physical properties of the body and its interactions with the environment (Chiel et al., 2009; Nishikawa et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "3e5ad7b1-557a-4502-a2ca-c4ef08e0f11b",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C75",
+      "claim": "Arthropods effectively utilize mechanical properties and environmental interactions in their locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Arthropods, in particular, effectively utilize mechanical properties and environmental interactions in their locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as general knowledge about arthropods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "4a306f8f-613f-4c56-9228-c77c61054c77",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C76",
+      "claim": "Spiders exhibit joint stiffness nonlinearity and hysteresis.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have revealed various related strategies, including the joint stiffness nonlinearity and hysteresis in spiders (Blickhan, 1986)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "11267fdc-20b6-47a4-9832-c1cd18141fe3",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C77",
+      "claim": "Insects generate large motor outputs during escape maneuvers and posture stabilization by adjusting the joint stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "generation of large motor outputs during escape maneuvers (Card, 2012) and posture stabilization (Blickhan, 1986) by adjusting the joint stiffness",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "52ee8c7b-761c-42cf-ad21-a36a31e8095b",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C78",
+      "claim": "Web-making spiders use mechanical sensing based on frequency characteristics that vary with the joint stiffness and posture.",
+      "claim_type": "EXPLICIT",
+      "source": "mechanical sensing based on frequency characteristics that vary with the joint stiffness and posture in web-making spiders (Blickhan and Barth, 1985; Mhatre et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "485b1e75-f257-4d7b-bd7e-0c7b8d721601",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C79",
+      "claim": "Cockroaches exhibit transitions in movement patterns in response to mechanical interactions with the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "transitions in movement patterns in response to mechanical interactions with the environment (Othayoth et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "94e4ee42-4d73-4c06-a673-0a46386b7d1b",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C80",
+      "claim": "Cockroaches exhibit transitions in the coordinated movements of the body and legs.",
+      "claim_type": "EXPLICIT",
+      "source": "and transitions in the coordinated movements of the body and legs (Wang et al., 2022) in cockroaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "1736bb8e-5795-44d1-b38d-b077bf885081",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C81",
+      "claim": "Sponberg et al. conducted experiments by perturbing neural feedback through artificial interventions on muscle action potentials (MAPs) in cockroaches Blaberus discoidalis.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, to elucidate the animal locomotion mechanisms emerging from such complex interactions, Sponberg et al., 2011a; Sponberg et al., 2011b conducted experiments similar to those in our study by perturbing neural feedback through artificial interventions on muscle action potentials (MAPs) in cockroaches Blaberus discoidalis (L.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes prior related work with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "62c8c033-c2d3-4a4c-85a8-6f303754cc2d",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C82",
+      "claim": "Stick insects were fixed and not walking in the experimental setup.",
+      "claim_type": "EXPLICIT",
+      "source": "First, as in many neurophysiological experiments (Berg et al., 2012; Lepreux et al., 2019), stick insects were fixed and not walking in the experimental setup (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a limitation of the experimental setup with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "a0f3760b-002e-4d11-843a-93ad2daa5d64",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C83",
+      "claim": "Stick insects spend a lot of their lifetime at rest, for example in camouflage.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there are only few studies on the natural dispersal behavior of stick insects, it is clear that they spend a lot of their lifetime at rest, for example in camouflage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as general knowledge about stick insect behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "6ccc8511-5a61-43ce-94d3-489b56466568",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C84",
+      "claim": "The tendency of stick insects to attain camouflage postures can be exploited in experiments, as it is relatively easy to restrain active, spontaneous leg movements in an experimental setup.",
+      "claim_type": "EXPLICIT",
+      "source": "Their tendency to attain camouflage postures can be exploited in experiments, as it is relatively easy to restrain active, spontaneous leg movements in an experimental setup.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains how stick insect behavior facilitates experiments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "922dc47e-7233-4f12-a6d0-c83c79dc04e2",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C85",
+      "claim": "The possibility to conduct combined motion capture and EMG recordings in freely walking stick insects suggests that Motion Hacking during unrestrained, voluntary locomotion will be feasible in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the possibility to conduct combined motion capture and EMG recordings in freely walking stick insects (Dallmann et al., 2019; G\u00fcnzel et al., 2022; Dallmann et al., 2017; Bidaye et al., 2018) suggests that Motion Hacking during unrestrained, voluntary locomotion will be feasible in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future possibilities based on cited prior work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "2855b63a-3a80-40ad-8ed9-0fea7f34525d",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C86",
+      "claim": "There is considerable discrepancy between the PWM signals generated by the Raspberry Pi microcontroller and the natural firing patterns of motor neuron pools.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the range of PWM burst duration and the joint torques generated are well within the physiological range, there is still considerable discrepancy between the PWM signals generated by our Raspberry Pi microcontroller and the natural firing patterns of motor neuron pools (G\u00fcnzel et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation of the experimental approach with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "8f61edaa-f499-44fe-9780-ae3979496927",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C87",
+      "claim": "The simplified PWM signal used could be applied more than 50 times in a sequence without causing muscle fatigue.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, it is re-assuring that the simplified PWM signal used here could be applied more than 50 times in a sequence without causing muscle fatigue, that is with a sustained level of generated torque.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "a07cc11e-3683-4d08-81ec-0d8fe0439aeb",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C88",
+      "claim": "The maximum voltage of 4 V used did not cause abnormal motion that could be attributed to cross-talk stimulation of sensory afferents.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum voltage of 4 V used here did not cause abnormal motion that could be attributed to cross-talk stimulation of sensory afferents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "3a65cea2-d336-4a76-8a49-8db1445ed2cd",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C89",
+      "claim": "Unintended electrical stimulation of sensory afferents was negligible.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we conclude that unintended electrical stimulation of sensory afferents was negligible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the absence of abnormal motion.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "2064e1bf-8a4e-4f1d-9bb2-36d2787636da",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C90",
+      "claim": "Control measurements confirmed that muscles other than those stimulated by the electrodes were not active and did not generate force.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, control measurements confirmed that muscles other than those stimulated by the electrodes were not active and did not generate force, as it would be expected from unintended stimulation via cross-talk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on control measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "068f5ecb-4a0e-4e58-b9fe-8e94a8e52dca",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C91",
+      "claim": "The activation of sensory organs during cyborg control is an interesting topic, with strong potential for expanding the concept of Motion Hacking.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, the activation of sensory organs during cyborg control is an interesting topic, with strong potential for expanding the concept of Motion Hacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "aa7d9865-9de4-493f-9f48-ada85506eba7",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C92",
+      "claim": "Twenty adult female Carausius morosus from the laboratory colony at Bielefeld University were tested in 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested 20 adult female Carausius morosus from our laboratory colony at Bielefeld University in 2018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "1ad53e11-c5fe-4920-93bd-5fd39d8f0774",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C93",
+      "claim": "The animals were raised under a 12 hr:12 hr light:dark cycle at a temperature of 23.9 \u00b11.3 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The animals were raised under a 12 hr:12 hr light:dark cycle at a temperature of 23.9 \u00b11.3 \u00b0C (mean \u00b1 S.D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the animal husbandry conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "3f661733-493a-4024-b245-41ceafba1738",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C94",
+      "claim": "All experiments were conducted at room temperature (20\u201324 \u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were conducted at room temperature (20\u201324 \u00b0C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "f0be539f-e011-4684-be5f-f54a8b5e5c4b",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C96",
+      "claim": "Joint torques were measured with custom-built force sensors with strain gauges.",
+      "claim_type": "EXPLICIT",
+      "source": "Joint torques were measured with custom-built force sensors with strain gauges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the measurement apparatus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "b4aaffff-5ed5-4416-aaea-ecabd073c0cc",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C97",
+      "claim": "The measured force [mN] was calibrated from the force-sensor value [V] with weights of known mass (0.2\u20135 g).",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to the experiments, the measured force [mN] was calibrated from the force-sensor value [V] with weights of known mass (0.2\u20135 g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the calibration procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "03df07d8-df6c-4f88-b6f9-72b597445843",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C98",
+      "claim": "Two small insect pins attached to the tip of the force transducer held the middle part of the femur of the middle leg.",
+      "claim_type": "EXPLICIT",
+      "source": "Two small insect pins attached to the tip of the force transducer held the middle part of the femur of the middle leg (Figure 1A right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental setup with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "b71228c9-fdd1-42fc-9669-13f39d86da15",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C99",
+      "claim": "The length between the ThC or CTr joints and the attachment point at the femur was measured and used as the moment arm for the calculation of torque.",
+      "claim_type": "EXPLICIT",
+      "source": "The length between the ThC or CTr joints and the attachment point at the femur was measured and used as the moment arm for the calculation of torque.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the torque calculation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "ef55686c-4b99-44e7-82fd-94a7df09d7ef",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C100",
+      "claim": "A custom-built electrical stimulator was developed for stimulating muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed a custom-built electrical stimulator for stimulating muscles (Figure 1A left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental apparatus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "6ee2e70d-6f25-46a4-b600-4037d1e380d8",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C101",
+      "claim": "An extension circuit board was designed for Raspberry Pi 3 B+, including isolated 8-channel PWM signal outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "An extension circuit board was designed for Raspberry Pi 3 B+ (Raspberry Pi Foundation), including isolated 8-channel PWM signal outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "18dfa861-159b-49ec-82cb-ee662abcac49",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C102",
+      "claim": "The parameters of the PWM signals, for example, frequency (1\u2013120 Hz) and duty ratio (0 to 100%), were changed using a Raspberry Pi microprocessor.",
+      "claim_type": "EXPLICIT",
+      "source": "The parameters of the PWM signals, for example, frequency (1\u2013120 Hz) and duty ratio (0 to 100%), were changed using a Raspberry Pi microprocessor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental control system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "5d91f8fe-0168-4211-8f0c-161530bb3034",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C103",
+      "claim": "The amplitude of the output voltage (0\u20139 V) was changed using variable resistors on the circuit board.",
+      "claim_type": "EXPLICIT",
+      "source": "The amplitude of the output voltage (0\u20139 V) was changed using variable resistors on the circuit board",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the voltage control mechanism.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "d5d8b4fe-62fc-4744-8368-c599d7cf49c0",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C104",
+      "claim": "Burst duration is one of two key parameters for controlling isometric muscle-contraction force because the muscle essentially acts as a second-order low-pass filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Owing to the slow activation dynamics of an insect muscle, burst duration is one of two key parameters for controlling isometric muscle-contraction force because the muscle essentially acts as a second-order low-pass filter (Harischandra et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support regarding muscle properties.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "5bda2ed3-4d5a-4b89-bf83-859b40d5fa82",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C105",
+      "claim": "The pulse frequency is the other key parameter for controlling muscle contraction force.",
+      "claim_type": "EXPLICIT",
+      "source": "The pulse frequency is the other key parameter, which can be held constant because burst duration alone is sufficient to effectively control joint torques in the range of 0\u20131.0 [s].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological choice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "595c6b24-0ba4-4f44-b960-fa473709eb3d",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C106",
+      "claim": "A pair of stimulation electrodes was implanted into each muscle through two small holes in the cuticle.",
+      "claim_type": "EXPLICIT",
+      "source": "A pair of stimulation electrodes was implanted into each muscle through two small holes in the cuticle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the electrode implantation procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "84436dea-6cbb-49bd-b355-8877643ea758",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C107",
+      "claim": "Holes were pierced using an insect pin, and wires were fixed with dental glue.",
+      "claim_type": "EXPLICIT",
+      "source": "Holes were pierced using an insect pin, and wires were fixed with dental glue (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the surgical procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "a9081462-b6b1-47e4-b36f-f5389ff96056",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C108",
+      "claim": "The stimulation electrodes were thin silver wires (A-M Systems, diameter = 127 \u00b5m, without insulation; 178 \u00b5m with Teflon insulation).",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulation electrodes were thin silver wires (A-M Systems, diameter = 127 \u00b5m, without insulation; 178 \u00b5m with Teflon insulation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the electrode specifications.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "ec451297-14b1-4db7-93a9-02a4c59a72bc",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C109",
+      "claim": "The correctness of the electrode implantation was verified through triggered resistance reflexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The correctness of the electrode implantation was verified through triggered resistance reflexes, which are responses to imposed movements of the ThC and CTr joints for the corresponding muscles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the verification procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "b087d07d-4a9e-4abb-9f93-c186a4093b1c",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C110",
+      "claim": "The parameter set with a frequency of 50 Hz and a duty ratio of 30% would allow continuous and effective torque generation.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined the parameter set with a frequency of 50 Hz and a duty ratio of 30%, which would allow continuous and effective torque generation in a pre-experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the parameter selection based on preliminary experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "4d4d722f-891b-4e7d-bfaf-549c20d42ad2",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C111",
+      "claim": "Applying voltages ranging between 1 and 4 V did not induce fatigue.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we confirmed that applying voltages ranging between 1 and 4 V did not induce fatigue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "1b48f159-b1ae-47e6-ae51-170f77847109",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C112",
+      "claim": "Even after a large number of electrical stimulations of the muscles, no significant biological damage to the stick insect nor any fatigue or warm-up effects were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, even after such a large number of electrical stimulations of the muscles, we did not observe any significant biological damage to the stick insect nor any fatigue or warm-up effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "a75fecb5-d42b-4d62-a89c-77c0e25b8257",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C113",
+      "claim": "The WAIC is a measure of the degree to which an estimate of the predictive distribution is accurate relative to the true distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The WAIC is a measure of the degree to which an estimate of the predictive distribution is accurate relative to the true distribution (Watanabe, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines the WAIC metric with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "667d8c00-b7ee-49cb-abf7-2830fbec40fc",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C114",
+      "claim": "The smaller (or more negative) the WAIC index, the higher the predictive value of the model variant.",
+      "claim_type": "EXPLICIT",
+      "source": "The smaller (or more negative) the WAIC index, the higher the predictive value of the model variant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the interpretation of WAIC values.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "4aab8d91-2301-46c6-8431-992945211e2b",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "claim_id": "C115",
+      "claim": "The model with the smallest WAIC value was considered the most appropriate predictive model in terms of predictivity for a new animal.",
+      "claim_type": "EXPLICIT",
+      "source": "From the models described above, the model with the smallest WAIC value was considered the most appropriate predictive model in terms of predictivity for a new animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model selection criterion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "40b6ae5e-144f-47d7-9ed6-13997fa4f6d6",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study demonstrates a nearly linear relationship between electrical stimulus burst duration and generated joint torque in stick insect leg muscles, holding for burst durations up to 500ms, which corresponds to the stance and swing phase durations of medium to fast walking stick insects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4, C24-C25, and C57 collectively establish this linear relationship through experimental measurements (Figures 1-2) across three muscles in 10 animals each. The 500ms threshold is well-documented and appropriately compared to natural locomotion parameters with citation support (C4, C57). The experimental data clearly shows this linear trend within the physiologically relevant range.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "8e854061-57ef-431b-aefa-f98d05974c28",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Hierarchical Bayesian modeling revealed that linearity (exponent \u03b3\u22481) is an invariant feature across individuals, while the slope parameter \u03b2 varies significantly among individual stick insects and with applied voltage. Models 1-2 and 2-2 with hierarchical \u03b2 parameters showed the best predictive performance by WAIC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C46, C53-C55 are strongly supported by the systematic model comparison (Figure 3) showing models 1-2 and 2-2 with lowest WAIC values across all conditions. The statistical analysis appropriately uses WAIC for model selection (C54, C113-C115) and demonstrates that \u03b2 varies individually while \u03b3 remains near 1. The hierarchical Bayesian framework (C29-C31, C69, C73) is well-justified and properly implemented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "fea56d8a-6c71-4d38-b3cd-c90d514f61cd",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Electrical stimulation of protractor, retractor, and levator muscles generated measurable joint torques at ThC and CTr joints with magnitudes (60 \u00b5Nm, 120 \u00b5Nm, and 40 \u00b5Nm maximum) comparable to those during natural stick insect walking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 describe the experimental observations with appropriate methodology (force transducer with calibrated moment arm, C96-C99). Claim C26 provides specific quantitative measurements with citation, and C58-C59 appropriately compare these to natural walking conditions. The experimental setup (Figure 1) and calibration procedures (C97) support the validity of these measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "97486cd2-9d67-4982-aeee-e8f65d5130bb",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The hierarchical linear model (1-2) enables rapid individual characterization of stimulus-torque properties for new animals, providing a simple, technically exploitable description that captures natural muscle dynamics during walking and could not be obtained from isolated muscle preparations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C55, and C72 are supported by the model comparison results (Figure 3-4) showing hierarchical models appropriately account for inter-individual variation. Claims C70-C71 make a compelling argument about the necessity of intact-animal measurements, supported by the contrast with isolated muscle expectations (C50). However, the practical utility for real-time cyborg control (C6, C70) remains somewhat speculative as it has not been demonstrated in practice.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "d84bc1c3-afd4-43cc-a5ed-c4b110abbead",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The generated torque depends primarily on burst duration (total number of pulses) rather than PWM voltage and frequency, consistent with slow insect muscle acting as a low-pass filter that essentially 'counts' incoming spikes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 are well-supported by citations to prior work on insect muscle properties and are consistent with the experimental findings. Claims C51-C52 provide additional support from appendix analyses. The mechanistic explanation (C104-C105) is appropriately cited and consistent with known muscle physiology. However, the appendix figures referenced in C51-C52 are not provided for direct verification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "d1a01756-b3ff-4b2f-b672-b2f2168d298e",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Despite nonlinear activation and contraction dynamics of isolated insect muscles, monitoring torques in intact animals revealed linear characteristics for intervals up to 500ms that would not be expected from isometric force measurements of isolated muscles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50 and C72 make an important observation about the difference between intact-animal and isolated-muscle measurements. This is supported by the experimental data (Figures 2-4) showing clear linearity, contrasted with known nonlinear properties of isolated muscle. The claim is appropriately cautious in noting this unexpected finding, though the mechanistic explanation for why intact-animal measurements differ remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "061043c0-4c99-43ac-8426-3c654642a79c",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Inter-individual variability represents a major challenge in cyborg control, and hierarchical Bayesian models provide an appropriate framework for modeling this uncertainty by allowing parameters to be drawn from probabilistic distributions that capture individual differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 establish the problem of inter-individual variation with appropriate citations to prior neurophysiological and muscle physiology studies. Claims C29-C31 justify the hierarchical Bayesian approach with citation support (Gelman et al., 2013; Watanabe, 2018). The application of this framework to the current problem is well-motivated and properly implemented, as demonstrated by the model comparison results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "5a274b8d-93d9-4bfb-9671-961ea19804d3",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The three proximal leg muscles studied (protractor, retractor, and levator) have well-characterized functional roles in stick insect locomotion: retractor for propulsion, pro/retractor for postural adjustment via joint stiffness regulation, and levator for stance-to-swing transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C21 describe the functional roles of the three muscles with consistent citation support from multiple studies (Rosenbaum et al., 2010; Dallmann et al., 2017, 2019; G\u00fcnzel et al., 2022). These claims appropriately justify the muscle selection for the study and are well-established in the literature. The functional descriptions are consistent across claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "a15cb31d-b243-4a4d-bda1-c7658ec32543",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The experimental methodology involved 20 adult female Carausius morosus, custom-built force sensors with strain gauges, calibrated force measurements, and a custom electrical stimulator using Raspberry Pi with PWM signal generation, with electrodes implanted through small holes in the cuticle and verified by resistance reflexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C110 provide detailed methodological information that is internally consistent and appropriately documented. The experimental setup (Figure 1) supports these descriptions. Calibration procedures (C97), electrode specifications (C108), and verification methods (C109) are clearly described. The PWM parameter selection (C110) is justified by pre-experiments. The methodology appears sound and reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "84dfc9f8-4bd5-4c5f-a05e-c74987f1693a",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The electrical stimulation protocol (50 Hz, 30% duty ratio, 1-4V) did not cause muscle fatigue, biological damage, or unintended cross-talk stimulation of sensory afferents or other muscles, as verified by sustained torque levels and control measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C90 and C111-C112 describe important control experiments and observations. The absence of fatigue is supported by sustained torque levels over >50 stimulations (C87, C112). The lack of cross-talk is inferred from absence of abnormal motion (C88-C89) and confirmed by control measurements (C90). These claims are appropriately conservative and based on experimental observations, though more quantitative analysis of potential fatigue effects would strengthen the conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "8094bed6-c31c-4bf5-912b-c11c225a4766",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study has limitations including that stick insects were fixed and not walking during experiments, and there is considerable discrepancy between PWM signals and natural motor neuron firing patterns, though future Motion Hacking during unrestrained locomotion may be feasible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C86 appropriately acknowledge experimental limitations. The fixed preparation (C82) is justified by comparison to other neurophysiological studies and stick insect behavior (C83-C84). The discrepancy between PWM and natural firing patterns (C86) is honestly acknowledged with citation. The speculation about future feasibility (C85) is appropriately cautious and based on cited prior work showing combined motion capture and EMG is possible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "ec46c602-1796-404f-a748-9e2d734d200f",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Motion Hacking is defined as controlling insect leg movements through external electrical stimulation while retaining the insect's nervous system, requiring interdisciplinary collaboration. Previous cyborg studies focused on conversion to cyborgs with little examination of control mechanisms, whereas this study systematically characterizes stimulus-torque properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 define Motion Hacking with appropriate citations (Owaki et al., 2019; Owaki and D\u00fcrr, 2022). Claim C66 summarizes prior cyborg research with extensive citations. Claim C67 appropriately contrasts the current study's focus on mechanisms with prior work's focus on demonstration. Claim C68 accurately describes the current experimental approach. These claims provide appropriate context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "4f9b7fe3-ffc2-42de-bf99-a37df691b069",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Cyborg control of insect movement is promising for developing miniature, efficient biohybrid robots. Hybrid insect-computer robots represent cutting-edge approaches, with advantages including no need for individual component fabrication and low power consumption (few milliwatts).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C10 provide appropriate background and motivation with citation support. The advantages of cyborg robots (C9-C10) are well-documented in cited literature. These claims establish the context and significance of the research but are primarily review of prior work rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "cdef22e5-ac9b-45a2-bbdf-01ab5b9689e9",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Animal locomotion relies on physical body properties and environmental interactions, not just neural control. Arthropods utilize mechanical properties including joint stiffness regulation, with various strategies documented in spiders, insects, and cockroaches. Similar perturbation approaches have been used in prior studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C81 provide appropriate background on embodied locomotion with consistent citation support. These claims establish the broader context of the research within motor control and biomechanics. The citations appear appropriate and the claims are consistent with established knowledge in the field. However, these are primarily literature review rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "26a57b0c-66cf-4910-92ea-d6bd7a063acf",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Individual prediction of joint torques provides significant benefits for precise cyborg control, and activation of sensory organs during cyborg control has strong potential for expanding Motion Hacking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C6 is an inference about practical benefits that has not been demonstrated experimentally in this study. Claim C91 is explicitly speculative about future research directions. While the hierarchical model does enable individual characterization, the actual benefits for cyborg control precision have not been validated. These claims represent reasonable hypotheses but require experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    },
+    {
+      "id": "cac15f24-4133-43ee-a87e-f4babeffa6c5",
+      "content_id": "fe4b5058-5dee-4bb4-9062-34a7db5686a9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "WAIC is used as the model selection criterion, where lower (more negative) values indicate better predictive performance, and the model with smallest WAIC is considered most appropriate for predicting properties of new animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C113-C115 appropriately describe the WAIC metric with citation (Watanabe, 2018) and explain its interpretation. The application to model selection for predicting new animals is methodologically sound. The hierarchical model WAIC calculation accounts for the predictive distribution for new animals, which is the appropriate approach for this application.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:17:29.490662Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1f13908b-5db2-47c5-8950-49a7b54b9cf1",
+      "result_id": "40b6ae5e-144f-47d7-9ed6-13997fa4f6d6"
+    },
+    {
+      "claim_id": "fc454a33-f520-416f-bca7-761a910b0800",
+      "result_id": "40b6ae5e-144f-47d7-9ed6-13997fa4f6d6"
+    },
+    {
+      "claim_id": "6b61220d-261f-4bda-9fe0-b2c491de7831",
+      "result_id": "40b6ae5e-144f-47d7-9ed6-13997fa4f6d6"
+    },
+    {
+      "claim_id": "04d0b2bd-a451-4436-8626-90add5ceba88",
+      "result_id": "40b6ae5e-144f-47d7-9ed6-13997fa4f6d6"
+    },
+    {
+      "claim_id": "c96ea915-266c-4522-b695-82bafc937afd",
+      "result_id": "40b6ae5e-144f-47d7-9ed6-13997fa4f6d6"
+    },
+    {
+      "claim_id": "449d2249-59c1-4701-9738-60871739cb7b",
+      "result_id": "40b6ae5e-144f-47d7-9ed6-13997fa4f6d6"
+    },
+    {
+      "claim_id": "64f10e94-6b0d-47c3-b3c4-fed5e3a2d74b",
+      "result_id": "8e854061-57ef-431b-aefa-f98d05974c28"
+    },
+    {
+      "claim_id": "7f0b54b5-6403-4df9-b4ff-9cf72fac07ea",
+      "result_id": "8e854061-57ef-431b-aefa-f98d05974c28"
+    },
+    {
+      "claim_id": "ae217d14-898e-4fad-b7c5-49faabf2cad2",
+      "result_id": "8e854061-57ef-431b-aefa-f98d05974c28"
+    },
+    {
+      "claim_id": "cc4572ba-4637-4a6f-8456-3bdf62e2be46",
+      "result_id": "8e854061-57ef-431b-aefa-f98d05974c28"
+    },
+    {
+      "claim_id": "3ca50e1b-f77a-4915-bf23-f8043b405782",
+      "result_id": "8e854061-57ef-431b-aefa-f98d05974c28"
+    },
+    {
+      "claim_id": "c1eb4267-f96b-4cbd-8849-10a3313d5186",
+      "result_id": "8e854061-57ef-431b-aefa-f98d05974c28"
+    },
+    {
+      "claim_id": "25228752-e600-4759-ab73-756deaf1ed3b",
+      "result_id": "8e854061-57ef-431b-aefa-f98d05974c28"
+    },
+    {
+      "claim_id": "90a2a3b4-46e3-42c7-813c-65784de1feda",
+      "result_id": "fea56d8a-6c71-4d38-b3cd-c90d514f61cd"
+    },
+    {
+      "claim_id": "7c3c9136-546d-4336-9830-c3fa417b5401",
+      "result_id": "fea56d8a-6c71-4d38-b3cd-c90d514f61cd"
+    },
+    {
+      "claim_id": "3727cb81-e1c5-4c70-824d-77ff8ca3b8ee",
+      "result_id": "fea56d8a-6c71-4d38-b3cd-c90d514f61cd"
+    },
+    {
+      "claim_id": "2542a9e8-9ec6-4a59-8df0-b6c71f525424",
+      "result_id": "fea56d8a-6c71-4d38-b3cd-c90d514f61cd"
+    },
+    {
+      "claim_id": "3b9dd64c-fade-4234-bd5b-813f75468e67",
+      "result_id": "fea56d8a-6c71-4d38-b3cd-c90d514f61cd"
+    },
+    {
+      "claim_id": "acaa8d6d-da8f-4309-8a33-355a0e1cc9f3",
+      "result_id": "97486cd2-9d67-4982-aeee-e8f65d5130bb"
+    },
+    {
+      "claim_id": "3ca50e1b-f77a-4915-bf23-f8043b405782",
+      "result_id": "97486cd2-9d67-4982-aeee-e8f65d5130bb"
+    },
+    {
+      "claim_id": "2e167bd8-0be3-4668-bf36-11e762aecc78",
+      "result_id": "97486cd2-9d67-4982-aeee-e8f65d5130bb"
+    },
+    {
+      "claim_id": "b458cecf-6189-4b52-bfce-65ec304cb4da",
+      "result_id": "97486cd2-9d67-4982-aeee-e8f65d5130bb"
+    },
+    {
+      "claim_id": "08a91853-04be-4682-890e-ace240a1d539",
+      "result_id": "97486cd2-9d67-4982-aeee-e8f65d5130bb"
+    },
+    {
+      "claim_id": "506536d7-cd43-41a1-b1b8-36f0265b48b9",
+      "result_id": "97486cd2-9d67-4982-aeee-e8f65d5130bb"
+    },
+    {
+      "claim_id": "3ebf4f9f-8ff1-4799-ab91-f6846aee05da",
+      "result_id": "d84bc1c3-afd4-43cc-a5ed-c4b110abbead"
+    },
+    {
+      "claim_id": "8f2fc85b-bab0-4629-8a32-b53269ab54b4",
+      "result_id": "d84bc1c3-afd4-43cc-a5ed-c4b110abbead"
+    },
+    {
+      "claim_id": "14f427a8-128b-4efb-a632-21c638285800",
+      "result_id": "d84bc1c3-afd4-43cc-a5ed-c4b110abbead"
+    },
+    {
+      "claim_id": "a01abf14-2fa7-47aa-b4fb-c1ac213545a7",
+      "result_id": "d84bc1c3-afd4-43cc-a5ed-c4b110abbead"
+    },
+    {
+      "claim_id": "fa2d7c9a-c970-4635-be63-51df699fa6c5",
+      "result_id": "d84bc1c3-afd4-43cc-a5ed-c4b110abbead"
+    },
+    {
+      "claim_id": "d5d8b4fe-62fc-4744-8368-c599d7cf49c0",
+      "result_id": "d84bc1c3-afd4-43cc-a5ed-c4b110abbead"
+    },
+    {
+      "claim_id": "5bda2ed3-4d5a-4b89-bf83-859b40d5fa82",
+      "result_id": "d84bc1c3-afd4-43cc-a5ed-c4b110abbead"
+    },
+    {
+      "claim_id": "8f2cb8a9-e7fb-4967-9d34-27e46d0eb1f7",
+      "result_id": "d1a01756-b3ff-4b2f-b672-b2f2168d298e"
+    },
+    {
+      "claim_id": "506536d7-cd43-41a1-b1b8-36f0265b48b9",
+      "result_id": "d1a01756-b3ff-4b2f-b672-b2f2168d298e"
+    },
+    {
+      "claim_id": "c95219af-a85b-4526-ae51-3d23839107df",
+      "result_id": "061043c0-4c99-43ac-8426-3c654642a79c"
+    },
+    {
+      "claim_id": "d90fef19-824b-41fa-b12c-23e2ab2bb09a",
+      "result_id": "061043c0-4c99-43ac-8426-3c654642a79c"
+    },
+    {
+      "claim_id": "f431819e-b7a0-43b3-b99d-e833ec44db35",
+      "result_id": "061043c0-4c99-43ac-8426-3c654642a79c"
+    },
+    {
+      "claim_id": "4adec436-97c3-475b-a0ec-19168b7655ff",
+      "result_id": "061043c0-4c99-43ac-8426-3c654642a79c"
+    },
+    {
+      "claim_id": "ac25daf1-e83f-45fb-b62b-01636840c7bf",
+      "result_id": "061043c0-4c99-43ac-8426-3c654642a79c"
+    },
+    {
+      "claim_id": "56832fd8-646d-4019-bfb5-c4d5399884dd",
+      "result_id": "061043c0-4c99-43ac-8426-3c654642a79c"
+    },
+    {
+      "claim_id": "37a6fed6-90f0-4c71-86e5-4c5471fdc11f",
+      "result_id": "061043c0-4c99-43ac-8426-3c654642a79c"
+    },
+    {
+      "claim_id": "a4e2c8d3-54a6-40fe-9055-742d1995b232",
+      "result_id": "5a274b8d-93d9-4bfb-9671-961ea19804d3"
+    },
+    {
+      "claim_id": "86bb26c4-bdd9-481e-82c2-69bb81028642",
+      "result_id": "5a274b8d-93d9-4bfb-9671-961ea19804d3"
+    },
+    {
+      "claim_id": "13d1ada0-1222-4a63-8c91-1c821aafe3e0",
+      "result_id": "5a274b8d-93d9-4bfb-9671-961ea19804d3"
+    },
+    {
+      "claim_id": "33027092-1228-4792-a0ec-5b78c2089f0f",
+      "result_id": "5a274b8d-93d9-4bfb-9671-961ea19804d3"
+    },
+    {
+      "claim_id": "5c34c05b-b863-4768-85da-e6a2b0b0e64a",
+      "result_id": "5a274b8d-93d9-4bfb-9671-961ea19804d3"
+    },
+    {
+      "claim_id": "08ec938c-0e1c-4bb6-8c03-2b14a26d9062",
+      "result_id": "5a274b8d-93d9-4bfb-9671-961ea19804d3"
+    },
+    {
+      "claim_id": "574b45da-1626-4550-b400-31124eca3547",
+      "result_id": "5a274b8d-93d9-4bfb-9671-961ea19804d3"
+    },
+    {
+      "claim_id": "aa7d9865-9de4-493f-9f48-ada85506eba7",
+      "result_id": "a15cb31d-b243-4a4d-bda1-c7658ec32543"
+    },
+    {
+      "claim_id": "1ad53e11-c5fe-4920-93bd-5fd39d8f0774",
+      "result_id": "a15cb31d-b243-4a4d-bda1-c7658ec32543"
+    },
+    {
+      "claim_id": "3f661733-493a-4024-b245-41ceafba1738",
+      "result_id": "a15cb31d-b243-4a4d-bda1-c7658ec32543"
+    },
+    {
+      "claim_id": "f0be539f-e011-4684-be5f-f54a8b5e5c4b",
+      "result_id": "a15cb31d-b243-4a4d-bda1-c7658ec32543"
+    },
+    {
+      "claim_id": "b4aaffff-5ed5-4416-aaea-ecabd073c0cc",
+      "result_id": "a15cb31d-b243-4a4d-bda1-c7658ec32543"
+    },
+    {
+      "claim_id": "03df07d8-df6c-4f88-b6f9-72b597445843",
+      "result_id": "a15cb31d-b243-4a4d-bda1-c7658ec32543"
+    },
+    {
+      "claim_id": "b71228c9-fdd1-42fc-9669-13f39d86da15",
+      "result_id": "a15cb31d-b243-4a4d-bda1-c7658ec32543"
+    },
+    {
+      "claim_id": "ef55686c-4b99-44e7-82fd-94a7df09d7ef",
+      "result_id": "a15cb31d-b243-4a4d-bda1-c7658ec32543"
+    },
+    {
+      "claim_id": "6ee2e70d-6f25-46a4-b600-4037d1e380d8",
+      "result_id": "a15cb31d-b243-4a4d-bda1-c7658ec32543"
+    },
+    {
+      "claim_id": "18dfa861-159b-49ec-82cb-ee662abcac49",
+      "result_id": "a15cb31d-b243-4a4d-bda1-c7658ec32543"
+    },
+    {
+      "claim_id": "5d91f8fe-0168-4211-8f0c-161530bb3034",
+      "result_id": "a15cb31d-b243-4a4d-bda1-c7658ec32543"
+    },
+    {
+      "claim_id": "595c6b24-0ba4-4f44-b960-fa473709eb3d",
+      "result_id": "a15cb31d-b243-4a4d-bda1-c7658ec32543"
+    },
+    {
+      "claim_id": "84436dea-6cbb-49bd-b355-8877643ea758",
+      "result_id": "a15cb31d-b243-4a4d-bda1-c7658ec32543"
+    },
+    {
+      "claim_id": "a9081462-b6b1-47e4-b36f-f5389ff96056",
+      "result_id": "a15cb31d-b243-4a4d-bda1-c7658ec32543"
+    },
+    {
+      "claim_id": "ec451297-14b1-4db7-93a9-02a4c59a72bc",
+      "result_id": "a15cb31d-b243-4a4d-bda1-c7658ec32543"
+    },
+    {
+      "claim_id": "b087d07d-4a9e-4abb-9f93-c186a4093b1c",
+      "result_id": "a15cb31d-b243-4a4d-bda1-c7658ec32543"
+    },
+    {
+      "claim_id": "8f61edaa-f499-44fe-9780-ae3979496927",
+      "result_id": "84dfc9f8-4bd5-4c5f-a05e-c74987f1693a"
+    },
+    {
+      "claim_id": "a07cc11e-3683-4d08-81ec-0d8fe0439aeb",
+      "result_id": "84dfc9f8-4bd5-4c5f-a05e-c74987f1693a"
+    },
+    {
+      "claim_id": "3a65cea2-d336-4a76-8a49-8db1445ed2cd",
+      "result_id": "84dfc9f8-4bd5-4c5f-a05e-c74987f1693a"
+    },
+    {
+      "claim_id": "2064e1bf-8a4e-4f1d-9bb2-36d2787636da",
+      "result_id": "84dfc9f8-4bd5-4c5f-a05e-c74987f1693a"
+    },
+    {
+      "claim_id": "4d4d722f-891b-4e7d-bfaf-549c20d42ad2",
+      "result_id": "84dfc9f8-4bd5-4c5f-a05e-c74987f1693a"
+    },
+    {
+      "claim_id": "1b48f159-b1ae-47e6-ae51-170f77847109",
+      "result_id": "84dfc9f8-4bd5-4c5f-a05e-c74987f1693a"
+    },
+    {
+      "claim_id": "62c8c033-c2d3-4a4c-85a8-6f303754cc2d",
+      "result_id": "8094bed6-c31c-4bf5-912b-c11c225a4766"
+    },
+    {
+      "claim_id": "a0f3760b-002e-4d11-843a-93ad2daa5d64",
+      "result_id": "8094bed6-c31c-4bf5-912b-c11c225a4766"
+    },
+    {
+      "claim_id": "6ccc8511-5a61-43ce-94d3-489b56466568",
+      "result_id": "8094bed6-c31c-4bf5-912b-c11c225a4766"
+    },
+    {
+      "claim_id": "922dc47e-7233-4f12-a6d0-c83c79dc04e2",
+      "result_id": "8094bed6-c31c-4bf5-912b-c11c225a4766"
+    },
+    {
+      "claim_id": "2855b63a-3a80-40ad-8ed9-0fea7f34525d",
+      "result_id": "8094bed6-c31c-4bf5-912b-c11c225a4766"
+    },
+    {
+      "claim_id": "ede1cbfb-3f5f-4b3c-95fa-777c5ebb95db",
+      "result_id": "ec46c602-1796-404f-a748-9e2d734d200f"
+    },
+    {
+      "claim_id": "8955a826-cc98-424d-a06c-576698a21e8c",
+      "result_id": "ec46c602-1796-404f-a748-9e2d734d200f"
+    },
+    {
+      "claim_id": "ce2857a7-0b9e-4050-9077-4b24ec356531",
+      "result_id": "ec46c602-1796-404f-a748-9e2d734d200f"
+    },
+    {
+      "claim_id": "7fd5cf4f-6281-4988-9f54-cbc4a57e8b9f",
+      "result_id": "ec46c602-1796-404f-a748-9e2d734d200f"
+    },
+    {
+      "claim_id": "3f24f9ee-895f-414e-aeb4-98270f649f10",
+      "result_id": "ec46c602-1796-404f-a748-9e2d734d200f"
+    },
+    {
+      "claim_id": "51ec9eb6-974d-4909-9c8b-866351811200",
+      "result_id": "ec46c602-1796-404f-a748-9e2d734d200f"
+    },
+    {
+      "claim_id": "40f02b98-5cf4-43db-ab47-89f3415bf2f7",
+      "result_id": "4f9b7fe3-ffc2-42de-bf99-a37df691b069"
+    },
+    {
+      "claim_id": "a7873c85-19ba-48db-ad86-06153e299a32",
+      "result_id": "4f9b7fe3-ffc2-42de-bf99-a37df691b069"
+    },
+    {
+      "claim_id": "545419b3-3c94-4895-8f05-cf49fbb275c0",
+      "result_id": "4f9b7fe3-ffc2-42de-bf99-a37df691b069"
+    },
+    {
+      "claim_id": "354f5006-0099-45f1-8649-f6cffafc3567",
+      "result_id": "4f9b7fe3-ffc2-42de-bf99-a37df691b069"
+    },
+    {
+      "claim_id": "60e4193c-96d4-439a-9dcd-777323d2ebf5",
+      "result_id": "4f9b7fe3-ffc2-42de-bf99-a37df691b069"
+    },
+    {
+      "claim_id": "39d8cb65-3403-4a33-807c-f3f7e097cb5c",
+      "result_id": "cdef22e5-ac9b-45a2-bbdf-01ab5b9689e9"
+    },
+    {
+      "claim_id": "3e5ad7b1-557a-4502-a2ca-c4ef08e0f11b",
+      "result_id": "cdef22e5-ac9b-45a2-bbdf-01ab5b9689e9"
+    },
+    {
+      "claim_id": "4a306f8f-613f-4c56-9228-c77c61054c77",
+      "result_id": "cdef22e5-ac9b-45a2-bbdf-01ab5b9689e9"
+    },
+    {
+      "claim_id": "11267fdc-20b6-47a4-9832-c1cd18141fe3",
+      "result_id": "cdef22e5-ac9b-45a2-bbdf-01ab5b9689e9"
+    },
+    {
+      "claim_id": "52ee8c7b-761c-42cf-ad21-a36a31e8095b",
+      "result_id": "cdef22e5-ac9b-45a2-bbdf-01ab5b9689e9"
+    },
+    {
+      "claim_id": "485b1e75-f257-4d7b-bd7e-0c7b8d721601",
+      "result_id": "cdef22e5-ac9b-45a2-bbdf-01ab5b9689e9"
+    },
+    {
+      "claim_id": "94e4ee42-4d73-4c06-a673-0a46386b7d1b",
+      "result_id": "cdef22e5-ac9b-45a2-bbdf-01ab5b9689e9"
+    },
+    {
+      "claim_id": "1736bb8e-5795-44d1-b38d-b077bf885081",
+      "result_id": "cdef22e5-ac9b-45a2-bbdf-01ab5b9689e9"
+    },
+    {
+      "claim_id": "103fd287-0a03-496a-864a-d39f421978f8",
+      "result_id": "26a57b0c-66cf-4910-92ea-d6bd7a063acf"
+    },
+    {
+      "claim_id": "068f5ecb-4a0e-4e58-b9fe-8e94a8e52dca",
+      "result_id": "26a57b0c-66cf-4910-92ea-d6bd7a063acf"
+    },
+    {
+      "claim_id": "a75fecb5-d42b-4d62-a89c-77c0e25b8257",
+      "result_id": "cac15f24-4133-43ee-a87e-f4babeffa6c5"
+    },
+    {
+      "claim_id": "667d8c00-b7ee-49cb-abf7-2830fbec40fc",
+      "result_id": "cac15f24-4133-43ee-a87e-f4babeffa6c5"
+    },
+    {
+      "claim_id": "4aab8d91-2301-46c6-8431-992945211e2b",
+      "result_id": "cac15f24-4133-43ee-a87e-f4babeffa6c5"
+    }
+  ],
+  "comparisons": []
+}

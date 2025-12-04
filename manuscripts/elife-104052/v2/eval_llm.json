@@ -1,0 +1,218 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The mathematical model predicts that chronic infections stabilize at a Set-Point Pathogen Load (SPPL), which can be either transient (predicting lifespan and depending on initial conditions) or stable (diagnostic of non-lethal chronic infections). The model requires complex, non-linear regulation of immunity and assumes defense production decreases with accumulating damage to adequately predict SPPL properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C14-C16 collectively describe model predictions about SPPL behavior that are internally consistent with the mathematical framework presented. The model successfully reproduces different infection outcomes (chronic to acute, benign to lethal) and predicts SPPL properties that align with empirical observations in HIV and Drosophila infections cited in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C17",
+      "C18",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The model predicts that in lethal infections, hosts die at a Pathogen Load Upon Death (PLUD) that is virtually independent of initial conditions including inoculum size. This independence occurs because pathogen load is a 'fast variable' that becomes enslaved to the slower dynamics of defense and damage, causing all lethal infections to converge to similar final trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C17-C18, C64-C66 present a coherent theoretical prediction supported by mathematical demonstration (Appendix 4 referenced in C66) and empirical validation from Duneau et al. 2017a (C64). The mechanistic explanation via fast-variable dynamics provides a rigorous theoretical foundation for the PLUD's independence from initial conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The model predicts that PLUD can distinguish between effects of disease tolerance and resistance when combined with mortality measurements. Specifically, decreased resistance increases both PLUD and hazard ratio (positive correlation), while decreased tolerance decreases PLUD but increases hazard ratio (negative correlation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C27-C32 describe a theoretically derived method for distinguishing tolerance from resistance based on the differential effects of these parameters on PLUD and mortality. The elasticity analysis (referenced in C29-C30) and Figure 6 simulations (C31-C32) provide mathematical support for these predictions, which are later validated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C10"
+    ],
+    "result": "Experimental validation shows that wounding Drosophila melanogaster before infection with Providencia rettgeri significantly reduces survival and increases PLUD, confirming model predictions. This result suggests that inflicting damage hinders defense production and indirectly reduces resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 and C10 present experimental results with appropriate statistical tests (Cox proportional hazard model, linear mixed models with p-values < 0.01) across multiple genotypes. The results consistently show increased PLUD with wounding, matching model predictions and supporting the interpretation that damage impairs defense production.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C11"
+    ],
+    "result": "Multiple experimental approaches demonstrate that reducing resistance through deletion or silencing of antimicrobial peptides (particularly Diptericins) increases both hazard ratio and PLUD in Drosophila infected with P. rettgeri. The increase in PLUD is remarkably constant (~+0.2) across experiments despite variable effects on hazard ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C47 and C11 present convergent evidence from three independent experimental designs (AMP deletion mutants, specific Diptericin deletions, and RNAi silencing) with appropriate statistical analyses and controls. The consistency of PLUD increases across different genetic backgrounds and methods (C47) strengthens the conclusion that reduced resistance increases PLUD as predicted by the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C12"
+    ],
+    "result": "Silencing Catalase in Drosophila increases susceptibility to bacterial infection but decreases PLUD, consistent with a role in disease tolerance rather than resistance. This supports the model prediction that reduced tolerance decreases PLUD while increasing mortality risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 and C12 provide experimental validation of the tolerance prediction using Catalase, an enzyme with well-established protective functions against oxidative damage (C48-C49). The statistical evidence is strong (p = 1.37e-6 for PLUD decrease, C51), and the opposite direction of PLUD change compared to resistance mutants (C79) supports the interpretation that Catalase contributes to tolerance mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C13",
+      "C21",
+      "C59",
+      "C60"
+    ],
+    "result": "The model demonstrates that bistability in infection outcomes requires that pathogens or damage obstruct immune defense production, either directly or indirectly. Empirical evidence of bistability (such as bifurcating infection outcomes) indicates such negative feedback mechanisms are operating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C21, C59-C60 connect theoretical bistability conditions to biological mechanisms and empirical observations. The mathematical analysis (referenced in Appendix 1) establishes necessary conditions for bistability, and the exclusion of within-host evolution as an alternative explanation (C60, citing Duneau et al. 2017a) strengthens the interpretation that damage-mediated feedback is responsible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The model predicts and empirical evidence confirms that SPPL depends on initial inoculum when Drosophila are infected by pathogenic bacteria but not by non-pathogenic bacteria like E. coli. Testing this dose-dependence provides an experimental method to demonstrate transient control over infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 connect model predictions to empirical observations with appropriate citations (Chambers et al. 2019, Duneau et al. 2017a for pathogenic bacteria; Ramirez-Corona et al. 2021 for E. coli). The proposed experimental method (C26) logically follows from the model's distinction between transient and stable SPPLs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The model proposes that the heritable variation in SPPL observed in HIV infections could be partially explained by non-genetic mechanisms: if transmission occurs during chronicity, inoculum size correlates with donor SPPL, and since transient SPPL increases with inoculum, recipient SPPL would reflect donor SPPL without requiring genetic transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C58 present an interesting hypothesis (C56 explicitly labeled as speculation) that could explain HIV SPPL heritability. While the logical chain is coherent and supported by model predictions about transient SPPL, this remains speculative without direct experimental validation. The hypothesis is plausible but requires empirical testing to confirm the proposed non-genetic heritability mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C68",
+      "C67"
+    ],
+    "result": "The model predicts that hosts with impeded immune responses have higher PLUD, which was confirmed experimentally with more powerful designs than previous studies. Wounds are expected to decrease resistance based on prior literature, and hemocytes have no detectable effect on P. rettgeri infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C68, C67 connect model predictions to experimental validation and prior literature. The experimental confirmation in Figure 8 (C62) with improved statistical power supports the prediction. The citations to Chambers et al. 2014 (C68) and Duneau et al. 2017a (C67) provide appropriate context for interpreting the wound and hemocyte effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The experimental design uses well-characterized Drosophila mutant lines with deletions in specific antimicrobial peptides. Defensin has moderate effects on P. rettgeri survival, while Diptericins (especially Diptericin A) are highly active against this pathogen. Drosomycin is inactive against bacteria, and Bomanins primarily target gram-positive bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77 describe the genetic tools and their known properties based on established literature (Duneau et al. 2017b, Troha et al. 2018, Hanson et al. 2019, Unckless et al. 2016, Lin et al. 2020, Fehlbaum et al. 1994). The characterization of these mutants provides appropriate controls and validates the experimental design for testing resistance effects on PLUD.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The effects of silencing Catalase on hazard ratio are comparable in magnitude to silencing Diptericin A, but the effects on PLUD are opposite in direction (comparable magnitude but opposite sign), supporting the distinction between tolerance and resistance mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 provide a direct comparison between a tolerance gene (Catalase) and a resistance gene (Diptericin A), showing that while both affect mortality similarly, their effects on PLUD differ in direction. This observation strongly supports the model's prediction that tolerance and resistance can be distinguished by their differential effects on PLUD and mortality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Background claims establish that even deadly pathogens like Ebola have survivors, hosts survive infections through combined resistance and tolerance strategies, immune defense can cause pathologies, and invertebrates like Drosophila share innate immune mechanisms with mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 present well-established background knowledge supported by appropriate citations (Shultz et al. 2016, Ayres and Schneider 2008, R\u00e5berg et al. 2007, Read et al. 2008, Kover and Schaal 2002, Critchlow et al. 2023, Lin et al. 2018, Petkau et al. 2017, Buchon et al. 2014). These claims provide necessary context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,441 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C11",
+      "C14",
+      "C15",
+      "C17"
+    ],
+    "result": "ARHGAP18 binds directly to the FERM domain of ezrin in a phosphorylation-dependent manner. The FERM domain binds ARHGAP18 with Kd = 19.29 \u00b1 3.53 \u03bcM, while full-length ezrin shows no measurable binding by ITC. Phosphomimetic (T567E) and constitutively open (1-583) ezrin mutants greatly enhance binding to ARHGAP18. In LOK/SLK knockout cells, wildtype ezrin shows no binding to ARHGAP18, but phosphomimetic/truncated constructs retain binding ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C17 provide converging evidence from multiple experimental approaches (co-IP, pulldown, ITC, mutant analysis, knockout cells) demonstrating that ARHGAP18 binds the ezrin FERM domain in a phosphorylation-dependent manner. The ITC data (C7, C8) provides quantitative binding affinity, and the LOK/SLK knockout experiments (C14, C15) confirm the phosphorylation dependency. The data are internally consistent and support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "ARHGAP18-flag localizes to microvilli where it colocalizes with ezrin and actin. Overexpression of ARHGAP18-flag reduces microvilli numbers in a dose-dependent manner. SIM imaging shows ARHGAP18 signal throughout the microvilli, overlapping with ezrin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 are supported by confocal and SIM imaging data (Figure 2A, 2B) showing clear colocalization of ARHGAP18 with ezrin and actin in microvilli. The dose-dependent reduction in microvilli number upon overexpression provides functional evidence. The imaging data are of appropriate quality and the conclusions are justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C31"
+    ],
+    "result": "ARHGAP18 knockout results in approximately 30% increase in ezrin T567 phosphorylation, while overexpression decreases phosphorylation. ARHGAP18-/- cells show increased microvilli number with smaller, variable-sized microvilli compared to wildtype. ARHGAP18 is involved in a negative feedback loop regulating ezrin phosphorylation and microvilli abundance, morphology, and dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25, C31 are supported by western blot quantification (Figure 2C, D) showing significant changes in ezrin phosphorylation, and by imaging/SEM data (Figure 2E, F, G) demonstrating altered microvilli morphology and abundance. The ~30% change in phosphorylation is statistically significant (n=4, p\u22640.05) and biologically meaningful given that baseline phosphorylation is ~50% of total ezrin. The negative feedback loop conclusion (C31) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "ARHGAP18-/- cells show increased microvilli turnover with average minimum lifetime of 5.6 \u00b1 3.2 min compared to 9.8 \u00b1 2.5 min in wildtype. In both conditions, microvilli move with retrograde bias from periphery to cell center.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by live-cell imaging and tracking data (Figure 3A, B, Videos 1-3). The quantification of microvilli lifetime is based on tracking of 151 microvilli (n=151, p\u22640.001), providing sufficient statistical power. The retrograde movement pattern is documented in both conditions, providing an internal control. The methods for tracking are described and appear appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Full-length ARHGAP18 rescues the increased microvilli phenotype in ARHGAP18-/- cells. The GAP domain alone fails to localize properly and disrupts microvilli formation. A catalytically inactive mutant (R356A) localizes correctly but fails to rescue. A chimeric GAP-EBP50(tail) construct that targets to microvilli partially rescues the phenotype, demonstrating that both proper localization and GAP activity are required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 are supported by rescue experiments with multiple constructs (Figure 3D-F). The structure-function analysis using GAP domain alone, catalytically dead mutant, and chimeric construct provides strong evidence that both ezrin binding and GAP activity are necessary. The quantification shows statistically significant differences (n\u22653, p\u22640.05). The chimeric rescue experiment (C38, C39) is particularly compelling evidence for the targeting model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "AlphaFold2 predicts an eight amino acid region (V10-S17) in ARHGAP18 that interacts with ezrin FERM domain. Deletion of this region abolishes microvilli localization. The predicted binding site would be sterically blocked in closed ezrin, consistent with pulldown data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 combine computational prediction with experimental validation. The AlphaFold2 prediction (C40) is constrained by experimental pulldown data (Figure 1C), and the deletion mutant (C41) provides functional validation showing complete loss of localization (Figure 4B). The structural prediction is consistent with the closed ezrin structure (C42). This represents a well-executed structure-function analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "ARHGAP18 enhances RhoA GAP activity approximately fourfold in vitro. When ezrin FERM domain is included, GAP activity is enhanced an additional twofold to the level of control p50RhoA GAP. The binding of ARHGAP18 to ezrin FERM domain enhances its catalytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by in vitro GAP assay data (Figure 4C, D) with appropriate controls (buffer only, p50RhoA GAP). The assay measures free phosphate release from GTP hydrolysis. The data show clear enhancement of GAP activity by ARHGAP18 and further enhancement by FERM domain (n=4, p\u22640.05). This provides direct biochemical evidence for the activation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Total RhoA levels remain unchanged in ARHGAP18-/- cells, but phosphorylated myosin light chain (pMLC) increases. Active RhoA biosensor shows reorganization from cell-cell junctions to the apical surface in ARHGAP18-/- cells, with dramatic redistribution across the apical surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by western blot (Figure 4E, F) and biosensor imaging (Figure 4G, H). The biosensor data show clear redistribution of active RhoA to the apical surface in knockout cells (n=11 cells). The increase in pMLC is consistent with increased RhoA activity. The use of the AHPH-GFP biosensor is appropriate and has been validated in prior work (Piekny and Glotzer, 2008; Priya et al., 2015).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "The apical surface of ARHGAP18-/- cells is approximately twice as stiff (2.0 \u00b1 0.1 kPa) compared to wildtype cells (1.1 \u00b1 0.1 kPa), indicating that reorganization of active RhoA alters mechanical properties of local actomyosin networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by atomic force microscopy force indentation data (Figure 5A, B) with substantial sample size (n=49 WT, n=54 KO, p<0.0001). The Hertzian model fitting is appropriate for this type of measurement, and R\u00b2 threshold of 0.8 for inclusion is reasonable. The twofold increase in stiffness is consistent with increased actomyosin contractility from elevated RhoA activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64"
+    ],
+    "result": "In wildtype cells, non-muscle myosin-2B shows few long contractile bundles at the apical surface, with pMLC localized to cell-cell junctions and terminal web. In ARHGAP18-/- cells, myosin-2B reorganizes into smaller punctate structures in microvilli with complete absence of larger bundles, and pMLC inappropriately localizes inside microvilli overlapping with actin core bundles. This phenotype is rescued by ARHGAP18-flag expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 are supported by SIM imaging (Figure 5C, D), immunofluorescence (Figure 5E), and rescue experiments (Figure 5\u2014figure supplement 2). The reorganization of myosin-2B and mislocalization of pMLC in knockout cells is clearly documented. The rescue experiment confirms specificity. The conclusion that ARHGAP18 is necessary to prevent inappropriate myosin assembly in microvilli (C64) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "TEM imaging shows that wildtype microvilli contain bundled, parallel-aligned actin filaments. ARHGAP18-/- microvilli are dramatically shortened and lack distinct parallel aligned actin bundles, with less dense core bundles and electron density holes devoid of filaments. This suggests increased non-muscle myosin-2 activity results in inappropriate disassembly of actin filaments within microvilli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 are supported by TEM imaging at multiple magnifications (Figure 5F, G, H) showing clear ultrastructural differences in actin organization. The TEM provides direct visualization of actin filament organization at ~7nm resolution. The observation of 'holes' in knockout microvilli (C69) is particularly striking evidence of actin disassembly. The conclusion about myosin-mediated disassembly (C70) is a reasonable inference from the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C76",
+      "C77",
+      "C78",
+      "C80"
+    ],
+    "result": "ARHGAP18 acts as a negative regulator of RhoA locally within regions where ERMs are active, regulating non-muscle myosin-2 activation and actin organization. ARHGAP18 is localized by binding active ezrin, and this interaction enhances its RhoGAP activity. The ezrin-ARHGAP18 module acts as a negative autoregulatory system to fine-tune local RhoA levels for appropriate distribution of actin-based structures between microvilli and terminal web.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73, C76-C78, C80 represent the integrated model conclusions supported by the full body of experimental evidence including binding studies, localization, GAP activity assays, knockout phenotypes, and rescue experiments. The autoregulatory model is well-supported by the data showing that: (1) RhoA activates LOK/SLK, (2) LOK/SLK activate ezrin, (3) active ezrin recruits and activates ARHGAP18, (4) ARHGAP18 inactivates RhoA. This creates a negative feedback loop. The model is illustrated in Figure 6 and is consistent with all experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C13",
+      "C26",
+      "C27",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Background claims establishing prior knowledge about ARHGAP18, ERMs, RhoA signaling, LOK/SLK kinases, myosin regulation, and the connection between these systems. These include the domain structure of ERMs, their activation by LOK/SLK, the role of phosphorylation, and previous identification of ARHGAP18 as an ezrin interactor and RhoA GAP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C111 (selected background claims) are supported by appropriate citations to published literature. These establish the necessary context for the current work. The citations appear accurate and relevant. Some claims (C103, C104) refer to the authors' concurrent work (Zaman et al., 2021), which is appropriate for establishing the immediate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "The ezrin-ARHGAP18 interaction is phosphorylation-dependent in DLD-1 colorectal cells, indicating the interaction is not limited to Jeg3 placental cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 is supported by experimental data in Figure 1\u2014figure supplement 2 showing similar phosphorylation-dependent binding in DLD-1 cells. This provides evidence for generalizability across cell types, though only one additional cell line was tested. The data quality appears lower than in Jeg3 cells (noted in figure legend), but the pattern is consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "In wildtype Jeg-3 cells, non-muscle myosin-2A and 2B localize to nearly identical structures including large contractile bundles and cell-cell junctions, while myosin-2C does not readily localize with stress fibers or larger contractile bundles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by immunofluorescence imaging (Figure 5\u2014figure supplement 1) and citations to prior work (Chinowsky et al., 2020; Zaman et al., 2021). The authors note this represents the first side-by-side comparison of all three isoforms in human placental cells. The data are consistent with prior characterizations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "The ezrin-T567 phosphomimetic construct does not achieve a fully open state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by citations to three prior studies (Pelaseyed et al., 2017; Viswanatha et al., 2013; Zaman et al., 2021). This is reflected in the lower binding signal for T567E compared to the 1-583 truncation mutant in Figure 1C, E. This is important context for interpreting the binding data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Active non-muscle myosin-2 localizes to the region directly below microvilli within the terminal web where it depolymerizes the core bundle and regulates microvilli length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by citation to Meenderink et al., 2019 and is consistent with the authors' observations in wildtype cells (Figure 5E). This provides important context for interpreting the mislocalization phenotype in ARHGAP18-/- cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "RhoA is active just below the microvilli within the terminal web, and microvilli are regulated as a separate RhoA microdomain on the 200-1000 nm scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 is supported by citation to Shaw et al., 1998. Claim C114 is inferred from the experimental findings showing ARHGAP18's ability to enhance GAP activity when bound to active ezrin in microvilli. The microdomain concept is reasonable given the spatial restriction of ARHGAP18 activity, though direct measurement of RhoA activity at this spatial scale is technically challenging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Examples of other GAPs showing localized regulation of Rho activity in specific cellular structures: p190A in cilia, RhoA at lamellipodia protrusion sites, and SRGAP1 in podocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 are supported by appropriate citations (Stewart et al., 2016; Machacek et al., 2009; Rogg et al., 2021). These provide context suggesting the ARHGAP18-ezrin mechanism may represent a more general principle of localized Rho regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "In ARHGAP18-/- cells, non-muscle myosin-2 activity inappropriately expands into microvilli through RhoA activation, resulting in increased turnover and depolymerization of actin core bundles. The combined effects result in increased microvilli number (from increased active ERMs) but decreased length (from increased myosin-2 activity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 represent mechanistic interpretations integrating multiple experimental observations (myosin localization, microvilli turnover, TEM data). The logic is sound and consistent with the data, though these are inferences rather than direct measurements of the proposed mechanisms. The model is well-supported by the totality of evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "Increased turnover of microvilli actin may free actin monomers that incorporate into nearby structures, potentially explaining increased apical stiffness in ARHGAP18-deficient cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C122 are explicitly speculative (\"It is possible that...\", \"may explain...\"). While the speculation is reasonable and consistent with the stiffness data (Figure 5A, B), no direct evidence is provided for actin monomer redistribution. This represents a plausible hypothesis for future testing rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "Microvilli biogenesis involves at minimum the combined efforts of EPS8, IRTKS, and ERMs working in concert.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 is supported by citation to recent work (Gaeta et al., 2021). The authors note that future work will be required to define how ARHGAP18 interacts with EPS8 or IRTKS activities. This provides important context about the complexity of microvilli biogenesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "The mechanism proposed here was previously speculated by Neisch et al. (2013) to explain Drosophila moesin mutant phenotypes. The current data support this model in the human system and provide characterization of specific molecular interactors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 appropriately acknowledge prior speculation (Neisch et al., 2013) and position the current work as providing molecular validation and mechanistic detail in the human system. This represents good scientific practice in acknowledging prior insights.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "LOK/SLK are specifically targeted to the apical membrane by their C-terminal half, but this targeting alone is insufficient for functional discrimination by RhoA. Targeting of ARHGAP18 to microvilli by ezrin is necessary to locally tune RhoA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 integrate prior knowledge (C126, supported by citations) with current findings (C127-C128). The conclusion that kinase targeting alone is insufficient (C127) is supported by the ARHGAP18 knockout phenotypes showing both ezrin overactivation and inappropriate myosin assembly. This represents an important mechanistic insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C129",
+      "C131"
+    ],
+    "result": "Proposed mechanism: locally reducing RhoA to levels commensurate with LOK/SLK abundance drives selectivity by mass action. The autoregulatory loop ensures excessive RhoA activity is modulated down and insufficient activity is modulated up.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129 and C131 are explicitly speculative (\"An attractive mechanism could be...\", \"would ensure...\"). While the mass action hypothesis is plausible and consistent with the data, no direct evidence is provided for this specific mechanism. The autoregulatory loop itself is well-supported (see C71-C80), but the mass action mechanism for selectivity remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C130",
+      "C132"
+    ],
+    "result": "The level of active ezrin is determined by RhoA through LOK/SLK, which in turn determines ARHGAP18 recruitment and activity, which negatively regulates RhoA. This autoregulatory loop fine-tunes RhoA activity for appropriate apical membrane morphogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130 and C132 summarize the core autoregulatory model supported by the full body of experimental evidence. The model is illustrated in Figure 6 and represents a well-supported mechanistic conclusion integrating all major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C82",
+      "C133"
+    ],
+    "result": "The ARHGAP18-ezrin mechanism may represent a general mechanism whereby individual Rho effectors drive specific actin-based structures. Similar fine-tuning of other small GTPases by downstream targets will likely emerge as more is learned about GAP proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82 and C133 are explicitly speculative about broader applicability (\"may represent...\", \"We expect that...\"). While the speculation is reasonable given that RhoGAPs vastly outnumber Rho GTPases (C81), and some examples exist (C115-C117), the generalizability remains to be demonstrated. This represents an interesting hypothesis for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C53",
+      "C74",
+      "C75",
+      "C81",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "General background knowledge claims about myosin regulation, microvillus structure, terminal web composition, RhoA requirements, and the relative numbers of RhoGAPs vs Rho GTPases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C74, C75, C81, C83, C84, C85 represent established knowledge in the field. These are either cited to appropriate references or stated as general knowledge. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

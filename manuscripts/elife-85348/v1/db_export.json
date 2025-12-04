@@ -1,0 +1,1216 @@
+{
+  "submission": {
+    "id": "648c7d63-d801-49cf-9fc3-cd3f7910bb11",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:42:28.401328Z",
+    "updated_at": "2025-12-04T02:42:28.401328Z"
+  },
+  "content": [
+    {
+      "id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "submission_id": "648c7d63-d801-49cf-9fc3-cd3f7910bb11",
+      "content_type": "manuscript",
+      "content_text": "# Multiplexed microfluidic screening of bacterial chemotaxis\n\n## Authors\n\n- Michael R Stehnach<sup>1</sup> ([ORCID: 0000-0003-0302-4641](https://orcid.org/0000-0003-0302-4641))\n- Richard J Henshaw<sup>1</sup> ([ORCID: 0000-0001-7053-9341](https://orcid.org/0000-0001-7053-9341))\n- Sheri A Floge<sup>2</sup> ([ORCID: 0000-0002-1996-3347](https://orcid.org/0000-0002-1996-3347))\n- Jeffrey S Guasto<sup>1</sup> ([ORCID: 0000-0001-8737-8767](https://orcid.org/0000-0001-8737-8767)) \u2020\n\n### Affiliations\n\n1. Department of Mechanical Engineering, Tufts University Medford United States ([ROR:05wvpxv85](https://ror.org/05wvpxv85))\n2. Department of Biology, Wake Forest University Winston-Salem United States ([ROR:0207ad724](https://ror.org/0207ad724))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMicroorganism sensing of and responding to ambient chemical gradients regulates a myriad of microbial processes that are fundamental to ecosystem function and human health and disease. The development of efficient, high-throughput screening tools for microbial chemotaxis is essential to disentangling the roles of diverse chemical compounds and concentrations that control cell nutrient uptake, chemorepulsion from toxins, and microbial pathogenesis. Here, we present a novel microfluidic multiplexed chemotaxis device (MCD) which uses serial dilution to simultaneously perform six parallel bacterial chemotaxis assays that span five orders of magnitude in chemostimulant concentration on a single chip. We first validated the dilution and gradient generation performance of the MCD, and then compared the measured chemotactic response of an established bacterial chemotaxis system (Vibrio alginolyticus) to a standard microfluidic assay. Next, the MCD\u2019s versatility was assessed by quantifying the chemotactic responses of different bacteria (Psuedoalteromonas haloplanktis, Escherichia coli) to different chemoattractants and chemorepellents. The MCD vastly accelerates the chemotactic screening process, which is critical to deciphering the complex sea of chemical stimuli underlying microbial responses.\n\n## Introduction\n\nMotile cells of all types navigate complex environments through the detection of and response to chemical signals via chemotaxis (Adler, 1966; Berg and Brown, 1972; Stocker, 2012; Wadhams and Armitage, 2004). This fundamental survival mechanism regulates countless biological processes, such as microbial foraging in marine environments (Seymour et al., 2010; Stocker et al., 2008) and reproduction (Kaupp et al., 2008). Consequently, considerable effort has been invested into the study of microbial chemotaxis (Keegstra et al., 2022; Raina et al., 2019) to better understand their chemotactic motility (Lazova et al., 2011), detection sensitivity (Mao et al., 2003), and transport (Ford and Harvey, 2007). Microfluidic devices have become an indispensable platform for disentangling the intricacies of microbial chemotaxis by virtue of their precise control over the chemical environment at scales relevant to swimming cells (Keegstra et al., 2022; Ahmed et al., 2010). Specifically, microfluidics have been employed to physically model a range of chemical landscapes, such as nutrient patches (Stocker et al., 2008), and provide highly tunable concentration profiles (Li Jeon et al., 2002; Sugiura et al., 2010). Microfluidics have been broadly applied across microbial systems for both drug-dose response quantification (Sugiura et al., 2010) and infectious disease diagnostics (Welch et al., 2022). While microfluidic chemotaxis assays have evolved since their inception (Ahmed et al., 2010), the vast landscape of potential chemical compounds, combinations of compounds, and concentration gradient conditions that regulate these important processes necessitates the development of new high-throughput devices.\n\nFaced with a broad range of chemostimulant concentrations and gradients in their natural environment (Stocker, 2012), microorganisms, specifically prokaryotes, have evolved exquisite chemosensing abilities with variable degrees of specificity to nutrients, dissolved resources, toxins, and signaling molecules (Adler, 1966; Berg and Brown, 1972; Stocker, 2012). Some bacteria exhibit a dynamic sensing range spanning five orders of magnitude (Lazova et al., 2011; Kalinin et al., 2009; Cremer et al., 2019) and can detect nano-molar attractant concentrations (Mao et al., 2003), while marine invertebrate spermatozoa have a reported detection limit approaching the femto-molar scale (Guerrero et al., 2010). Quantifying the strength of chemotactic responses across varying concentration and concentration gradient conditions presents a key challenge to understanding microbial driven processes, extending far beyond their search for optimal metabolic activity conditions (Keegstra et al., 2022). For example, in marine microbial communities, the natural phycosphere surrounding individual cells (Raina et al., 2022) contains a diverse spectrum and concentration of metabolite and organic material (Moran et al., 2022), which are taken up by chemotaxing microbes (Zimmerman et al., 2020). Viral infection of microbes augments this process and is a principal mechanism (Moran et al., 2022; Evans and Brussaard, 2012) for transforming live biomass to readily available organic matter. Lysis (Weinbauer et al., 2011) and exudation (Howard-Varona et al., 2022) by virus infected cells releases a diverse range and concentration of metabolite and organic material (Moran et al., 2022). Furthermore, chemotaxis is essential in initiating bacterial infections and pathogenicity for both animals and plants (Matilla and Krell, 2018). For example, in gastric infections pathogenic organisms rapidly colonize surfaces via chemotaxis, where a range of attractants from urea to amino acids and metals are presumed to enable localization and colonization on the host epithelium (Keilberg and Ottemann, 2016). Identifying the key metabolites and signaling chemicals which drive microbial chemotaxis necessitates new microfluidic tools capable of probing the wide scope and scale of chemotactic behaviors across a myriad of complex systems.\n\nMicrofluidic devices are widely accepted as an indispensable platform for targeted chemotaxis assays by enabling the quantification of both single cell and population-scale responses to precisely-controlled chemical gradients (Ahmed et al., 2010; Li Jeon et al., 2002). One class of chemotaxis microfluidic devices, termed stop-flow diffusion, relies on flowing a chemostimulant solution and buffer stream side-by-side in a microchannel. Upon halting the flow a slowly-evolving concentration gradient forms via diffusion (Figure 1a and b; Seymour et al., 2010; Stocker et al., 2008; Mao et al., 2003; Ahmed et al., 2010). Other devices generate steady chemical gradients by utilizing porous materials (Ahmed et al., 2010) or mimic diffusing marine hotspots using micro-well assays that entice and trap chemotactic microorganisms (Lambert et al., 2017; Raina et al., 2022). While these well-established assays accurately measure chemotactic motility in physically relevant concentration gradients (Stocker et al., 2008), they largely overlook the potential for high-throughput screening afforded by microfluidic devices. Recently, such high-throughput capabilities have been broadly showcased in other fields through the use of parallelized microfluidics for clinical testing of viruses (Welch et al., 2022), drug responses (Sugiura et al., 2010), and cell profiling (Prakadan et al., 2017). The development of an integrated microfluidic design - comprising parallelized chemotaxis assays on a single chip - would enable high-throughput characterization of microbial chemotactic responses. Relative to time-prohibitive conventional assays, rapid chemotaxis phenotyping could facilitate comparative studies and discoveries across different swimming microorganisms, chemostimulants, and concentration gradient conditions.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85348/elife-85348-fig1-v1.jpg)\n\n**Figure 1.:** (a,b) Continuous flow through a microfluidic junction (a) stratifies chemostimulus, cell, and buffer solutions, demonstrated here with fluorescein, DI water, and DI water, respectively. Upon halting the flow (b) diffusion establishes a chemical gradient across the channel, which is repeated at each observation channel in the MCD (d, red and orange boxes). Scale bars, 0.1 mm. (c) Assembly of the MCD showing the PDMS dilution layer (blue) and cell injection layer (red) microchannels mounted on a glass slide (grey; Materials and methods). (d) Scaled drawing of the dilution layer, which receives chemical (pressure, $p_{i\u2062n,1}$) and buffer ($p_{i\u2062n,2}$) solutions. Initial chemical concentration (C0) is sequentially diluted 10-fold to each of four additional concentrations ($C_{1-4}$), plus a control solution ($C_{5}=0$). These six chemostimulus solutions are merged separately with additional cell ($A_{i}$) and buffer ($B_{i}$) solutions from the cell injection layer (e) for chemotaxis assays in respective observation channels (dashed black box, corresponding to c and f). (e) Scaled drawing of the cell injection layer which injects a cell suspension ($p_{i\u2062n,3}$) and buffer solution ($p_{i\u2062n,4}=p_{i\u2062n,3}$) into the dilution layer ($A_{i},B_{i}$; Materials and methods). Scale bars d,e, 2 mm. (f) Photograph of the completed MCD with dyed water to visualize the chemical (yellow), cell (red), and buffer (blue) fluid streams in the channel network. Scale bar, 5 mm. (g) Stratified chemical (C0), cell, and buffer solutions in the first observation region (d, red box). (h) Dilution of the chemical (C0) by the buffer prior to mixing in the first micromixer (Stroock et al., 2002) to produce concentration C1 (d, purple box). (i), Stratified chemical solution after initial dilution (C1, green) in the second observation region (d, orange box). Scale bars g-i, 0.2 mm. (j) Measured chemical concentrations (see Materials and methods) generated from the dilution microchannels (d) for various driving pressures $p_{i\u2062n,1}=p_{i\u2062n,2}=[100,150,200]\u2062mbar$ (square, circle, and triangle, respectively). (k) Measured evolution of the chemical gradient (b) produced in the C0 observation region (Figure 1\u2014figure supplement 3; Materials and methods) by the MCD shows the chemical diffusion across the channel with increasing time t.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85348/elife-85348-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a,b) The herringbone micromixer (Stroock et al., 2002) - used to incorporate chemical and buffer during serial dilution - consists of a main rectangular channel ($W=200\u2062\\mu\u2062m$, $H=90\u2062\\mu\u2062m$) with herringbone ridges ($X=50\u2062\\mu\u2062m$, $d=30\u2062\\mu\u2062m$), which enhance mixing by generating transverse flow. Each herringbone half cycle ($\u2248700\u2062\\mu\u2062m$ long) consists of six ridges (pitch, \u03b8 = 45\u00b0; a). The distance, q, from the sidewall alternates every half cycle between 2 W/3 and W/3. (c) The degree of mixing (DOM; Materials and methods) (Stroock et al., 2002) was quantified for a long test channel having 29 herringbone cycles for two different flow rates: $22\u2062\\mu\u2062l\u2062min^{-1}$ (blue triangles) and $222\u2062\\mu\u2062l\u2062min^{-1}$ (red circles) using fluorescein dye (Petr\u00e1\u0161ek and Schwille, 2008) ($D=436\u2062\\mu\u2062m^{2}\u2062s^{-1}$). Distance indicates the downstream position from the point where the dye and water solutions meet. The solution is considered mixed when $DOM\\leq0.05$ (90% complete mixing, dashed line), which is achieved after 9 cycles for both flow rates. The final micromixer design comprised 26 herringbone cycles (see Figure 1\u2014figure supplements 2 and 4) to ensure complete mixing across a range of potential chemostimulants.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85348/elife-85348-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Circuit representation of the dilution layer (Sugiura et al., 2010) of the MCD (Figure 1d). The two inlets ($p_{i\u2062n,1}$, $p_{i\u2062n,2}$) receive the base chemical solution (C0) and the buffer solution ($C=0$), respectively, and the outlet is open to atmospheric pressure ($p_{o\u2062u\u2062t}=0\u2062mbar$). The hydraulic network was designed such that a prescribed inlet pressure $p_{i\u2062n,1}=p_{i\u2062n,2}=100\u2062mbar$ from a pressure controller produces outlet flow rates of $Q_{o\u2062u\u2062t}=20\u2062\\mu\u2062l\u2062min^{-1}$. The resistances of the bridge channels ($R_{B}$), micromixer channels ($R_{M}$), and observation channels ($R_{4,4}$) were predetermined (Materials and methods). The remaining flow rates, pressures, and hydraulic resistances were determined by solving a linear set of equations for the hydraulic circuit (Kirby, 2010), and the resulting resistances determine the individual channel geometries (Appendix 1). (b) Circuit representation of the cell injection layer of the MCD (Figure 1e). The cell injection layer network was designed to flow the cell ($p_{i\u2062n,3}$) and buffer ($p_{i\u2062n,4}$) solutions into the dilution layer to ensure the cell solution would be centered in the observation region. To do so, the applied inlet pressures were designed to be $p_{i\u2062n,3}=p_{i\u2062n,4}=50\u2062mbar$ and flow rates in each microchannel for the cell ($Q_{C\u2062I\u2062L,1}$) and buffer ($Q_{C\u2062I\u2062L,2}$) were $5\u2062\\mu\u2062l\u2062min^{-1}$ and, $20\u2062\\mu\u2062l\u2062min^{-1}$ respectively. The resulting channel resistances and dimensions were determined using the Hagen-Poiseuille law (Kirby, 2010; Oh et al., 2012; Materials and methods), and accounted for the resistance of the observation region ($R_{4,4}$; Appendix 1). The labels in a and b corresponds to that in Figure 1d and e.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85348/elife-85348-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a,b) The initial symmetry of the stratified chemical, cell, and buffer solutions flowing in the observation channel was verified by measuring the widths of the three fluid streams through fluorescent dye visualization (Materials and methods). (a) A fluorescein solution was flowed through both inlets of the dilution layer (chemical and buffer inlets; Figure 1d) and also the buffer solution inlet of the cell injection layer (Figure 1e). Solid red and dashed blue lines indicate measured channel wall and stream interface locations, respectively, for a driving pressure $p_{i\u2062n,1}=p_{i\u2062n,2}=200\u2062mbar$ and $p_{i\u2062n,3}=p_{i\u2062n,4}=140\u2062mbar$ (Figure 1\u2014figure supplement 2). Scale bar, 100 \u03bcm. The normalized measured widths,$w_{i}^{\u2032}=w_{i}/W$, of the chemical, cell, and buffer streams illustrate their high degree of symmetry across all observationchannels ($C_{0-5}$); where wi are the fluid stream widths (a; dashed blue lines) and $W$ is the total width of the intensity profile (a; solid red lines). The bar plots and error bars indicate the mean and standard deviation of the normalized stream widths, investigated for three different driving pressures of the dilution layer and cell injection layer: 100/70 mbar, 150/105mbar, and 200/140 mbar ($p_{i\u2062n,1-2}/p_{i\u2062n,3-4}$). The applied inlet pressure of the cell injection layer was tuned (Materials and methods) until symmetric flow was achieved in the observation channels. The mean percent difference of the measured widths of the chemical, cell, and buffer solution relative to the theoretical widths (Materials and methods) was only 2.6%, 3.0%, and 1.8%, respectively. (c,d) The uniformity of the chemostimulus gradient evolution across the various observation regions ($C_{0-5}$) was determined through fluorescent dye (fluorescein) visualization of stop-flow experiments (Materials and methods). Each observation region started with the same initial (fixed) concentration ($C_{i}=C_{0}$) by injecting the same dye concentration into both the chemical and buffer inlets of the dilution layer (see also Figure 2\u2014figure supplement 1b). The fluorescence intensity enables visualization of the chemical concentration profile evolution across each channel over the course of approximately 9 min (starting from $t=0$ post flow). Measurements were performed for two different driving pressures to ensure that the resulting gradients were insensitive to flow rate: 100/70 mbar (c) and 200/140 mbar (d).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/85348/elife-85348-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (a\u2013c) Herringbone micromixers (Stroock et al., 2002) were fabricated in the dilution layer of the MCD using multilayer photolithography (subsection of full photomasks shown; see also Figure 1). The first photolithography layer produced the rectangular cross-section main channel (a; 200 \u03bcm wide), and a second photolithography layer formed the herringbone ridges on top (Anderson et al., 2000) (b; see also Figure 1\u2014figure supplement 1). Complementary alignment markers were used to align the herringbone ridges (b, hollow cross and circle) with the main channel (a, cross). (c) Overlay of the herringbone micromixer channel components from a and b (see also Figure 1\u2014figure supplement 1). (d,e) The dilution layer (d, blue) and cell injection layer (e, red) PDMS microchannels for the MCD were cast individually from SU-8 molds via soft lithography (McDonald et al., 2000; Materials and methods). The dilution layer microchannel was first plasma bonded (McDonald et al., 2000) to a standard double-wide glass slide (d; grey; 75 mm \u00d7 50 mm\u00d71 mm). Subsequently, the cell injection layer was aligned and plasma bonded (Eddings et al., 2008; McDonald et al., 2000) on top of the dilution layer (e). (f,g) Side and top-down view of the assembled MCD, respectively, showing the locations of the four inlets, single outlet, and observation regions (dashed box; see also Figure 1).\n\nHere, we present a microfluidic multiplexed chemotaxis device (MCD) that enables high-throughput chemotaxis screening of swimming microorganisms to chemical stimuli across concentration gradient conditions that potentially span the microorganism\u2019s entire sensitivity range. The two-layer device architecture comprises a serial dilution layer that produces logarithmically diluted chemostimulant solutions (Sugiura et al., 2010) and a cell injection layer that introduces swimming cells, whilst minimizing both the footprint and operational complexity of the device (Figure 1c\u2013e). On a single chip, the MCD simultaneously performs six stop-flow diffusion chemotaxis assays (including control), which span five orders of magnitude in chemostimulant concentration. The dilution, mixing, gradient generation, and flow performance are fully characterized (Materials and methods), and the MCD is validated against a conventional chemotaxis device for a known marine bacterial chemotaxis system (Vibrio alginolyticus). To demonstrate the device\u2019s efficiency, capabilities, and operational flexibility, the MCD is then used to rapidly quantify the chemotactic responses of different microbes to a variety of chemostimulants. Compared to existing microfluidic devices, the MCD enables chemotaxis studies with significantly higher throughput rates, and most importantly facilitates the simultaneous measurement of chemotactic responses across a range of concentration gradient conditions.\n\n## Results\n\n### Multiplexed microfluidic device as a platform for high throughput chemotaxis screening\n\nTo enable rapid and efficient chemotaxis screening of swimming microbes, we designed the multiplexed chemotaxis device (MCD) to perform six chemotaxis assays in parallel on a single microfluidic chip (Figure 1). The individual assays in the observation region are based on laminar flow patterning and established stop-flow diffusion methods (Ahmed et al., 2010; Kirby, 2010; Stehnach et al., 2021; Stocker et al., 2008; Nguyen et al., 2019), where rapid, parallel flow of chemostimulus (concentration, $C_{i}$) and buffer ($C=0$) solutions maintain initially stratified fluid regions. Upon stopping the flow, a chemostimulus gradient forms via diffusion (Figure 1a and b). For each chemotaxis assay (Figures 2 and 3), a swimming cell solution is injected between the chemostimulus and buffer so their response may be observed and recorded. The MCD (Figure 1c\u2013i) performs six simultaneous assays comprising five logarithmically decreasing chemical concentrations ($C_{i}=10^{-i}\u2062C_{0},i\\in[0,4]$; Figure 1j), plus one control ($C_{5}=0$). The device is fabricated from polydimethylsiloxane (PDMS) in two layers (Materials and methods; Figure 1c\u2013e). The primary function of the dilution layer (Figure 1d) is to receive two fluid inputs - base chemostimulus solution (C0) and buffer ($C=0$) - and passively generate six pre-defined concentration conditions ($C_{i}$) via a serial dilution process (Li Jeon et al., 2002; Sugiura et al., 2010; Walker et al., 2007), which are dispensed to each of the six observation channels for chemotaxis assays. At each stage of the serial dilution process, the chemostimulus stream is combined with buffer in a 1:9 volumetric flow rate ratio, where efficient mixing of the solutions is necessary for accurate dilution and chemotaxis assays downstream. To ensure sufficiently mixed solutions, herringbone micromixers (Stroock et al., 2002; Figure 1d and h and Figure 1\u2014figure supplement 1) were incorporated into each dilution stage. These structured microchannel surfaces generate a three-dimensional flow to induce chaotic mixing, and thus significantly reduce the mixing length (Stroock et al., 2002) and the overall footprint of the device (Materials and methods; Figure 1\u2014figure supplement 1). To achieve the targeted chemostimulus concentrations in the dilution layer, the microfluidic network was designed using hydraulic circuit theory (Materials and methods; Figure 1\u2014figure supplement 2), and the accuracy of the serial dilution process was experimentally confirmed (Figure 1j).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85348/elife-85348-fig2-v1.jpg)\n\n**Figure 2.:** (a) TEM image of V. alginolyticus (Materials and methods). Scale bar, 1 \u03bcm. (b) A single chemotaxis assay (SA) with a single conventional microfluidic device flows chemostimulus (top, blue), cell suspension (middle), and buffer (bottom) streams into the observation region (Materials and methods). (c) SA with chemostimulus (serine, $C=100\u2062\\mu\u2062M$) showing measured cell positions (V. alginolyticus, black dots) at various times $t$ after initial flow stratification ($t=0\u2062min$) relative to the chemostimulus distribution (blue, from measurements in Figure 1b). Cells migrate up the gradient ($t=1\u2062min$) followed by uniform dispersal as the gradient dissipates ($t=10\u2062min$). Degree of cell accumulation is determined from the number of cells, $N_{p,n}$, in a 200 \u03bcm wide region on the chemostimulus side (positive; green dashed line) and buffer side (negative; red dashed line), respectively (Seymour et al., 2010; Stocker et al., 2008). (d) The measured cell distribution across the microchannel evolves over time (from c) and is represented as a conditional probability density of cell position, $P\u2062(y|t)$ (shown as a kymograph). (e) $P\u2062(y|t)$ for V. alginolyticus chemotactic response to serine from a series of SA devices having the same geometry as the MCD observation regions (Figure 1). SA measurements illustrate the transition from positive chemotactic response at high attractant concentration ($C_{0-2}$) to no response at low concentration ($C_{3-4}$) compared to control ($C_{5}=0\\muM$) (Altindal et al., 2011). (f) Accumulation index, $\\beta\u2062(t)$, for SA measurements from e. (g) $P\u2062(y|t)$ measured by the MCD under the same conditions of the SA. (h) $\\beta\u2062(t)$ measured from g accurately captures the behavior of V. alginolyticus to serine compared to SA results (f). (i) S\u00f8rensen similarity metric (Cha, 2007) comparing e and g, which is calculated at each time point and averaged. (j) Comparing MCD and SA peak chemotactic response quantified by max ($\\beta\u2062(t)$) from f,h. (k,l) $\\beta\u2062(t)$ in the absence of a chemical gradient (k; Figure 2\u2014figure supplement 1) and for fixed gradients of $C_{i}=200\u2062\\mu\u2062M$ (l; Figure 2\u2014figure supplement 1b) across each observation channel in the MCD indicates no significant bias. No gradient (k) conditions ($C_{i}=0$) were obtained by injecting buffer into the chemical inlet (setting $C_{0}=0$). Fixed gradient (l) conditions ($C_{i}=200\u2062\\mu\u2062M$ of serine) were obtained by injecting $C_{0}=200\u2062\\mu\u2062M$ of serine into both the chemical and buffer inlets of the dilution layer. Shading in f,h,k,l indicates one standard deviation (N=3). Error bars in i,j are one standard deviation across biological replicates.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85348/elife-85348-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Kymographs $P\u2062(y|t)$ for control chemotaxis experiments corresponding to Figure 2k and l with no chemostimulus present ($C_{i}=0$) and with a fixed chemostimulus concentration ($C_{i}=200\u2062\\mu\u2062M$), respectively.(a) Control chemotaxis assay with V. alginolyticus in the absence of a chemical gradient. In place of a chemostimulus, ASW ($C_{0}=0$) was injected into the chemical inlet of the dilution layer, illustrating that bacteria exhibit no significant bias (see also Figure 2k). (b) Control experiment with V. alginolyticus in a set of fixed chemical gradients across all observation channels illustrates consistent (positive) chemotaxis. ASW with serine at a concentration $C_{0}=200\u2062\\mu\u2062M$ was injected into both the chemical and buffer inlets of the dilution layer. This approach results in each of the observation regions exhibiting the same chemostimulus gradient, based on the serine concentration $C_{i}=200\u2062\\mu\u2062M$ (see also Figure 2l).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85348/elife-85348-fig3-v1.jpg)\n\n**Figure 3.:** (a,b) The negative chemotactic response of V. alginolyticus to the repellent phenol (Homma et al., 1996) is evident in kymographs of cell position, $P\u2062(y|t)$, and the accumulation index, $\\beta\u2062(t)$, respectively. Central 250 \u03bcm wide band, which often contains a significant subpopulation of non-motile cells, is omitted from $P\u2062(y|t)$ for visualization purposes and has no impact on $\\beta\u2062(t)$. (c,d) MCD measurements demonstrate the positive chemotactic response of V. alginolyticus to leucine observed in $P\u2062(y|t)$ and $\\beta\u2062(t)$, respectively. (e\u2013h) $P\u2062(y|t)$ in response to various concentrations of serine for bacteria P. haloplanktis (e,f) and E. coli (g,h). TEM images of P. haloplanktis (f, inset) and E. coli (h, inset). Scale bars, 1 \u03bcm. \u03b2(t) for P. haloplanktis (f) illustrates a monotonically increasing response to increased concentrations (extracted from e). Accumulation index, $\\beta\u2062(t)$, for E. coli (h) reveals a peak response to an intermediate serine concentration ($C_{2}=3.6\u2062\\mu\u2062M$) and delayed accumulation at higher concentrations (Bhattacharjee et al., 2021). Shaded regions are standard deviation (N=2 and N=3 for P. haloplanktis and E. coli, respectively) across biological replicates. Color bar corresponds to kymographs in a,c,e,g.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85348/elife-85348-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Initial and final cell probability distributions ($P(y|t=0,10min)$) for the organism/chemostimulant systems in Figure 3.(a) V. alginolyticus and phenol, (b) V. alginolyticus and leucine, (c) P. haloplanktis and serine, and (d) E. coli and serine. In all experiments, cells begin in a narrow central band localised in the center of the channel ($P\u2062(y|t=0\u2062min)$; solid lines). Minor differences in the initial distributions are a consequence of cell motility and available chemostimulus. Comparing the final cell positions ($P\u2062(y|t=10\u2062min)$; dashed lines) to the initial peaked distributions (solid lines) reveals that each population contains varying proportions of non-motile cells. After 10 min, few V. alginolyticus cells remain in their original positions relative to the background distribution across the channel (a,b). In contrast, both P. haloplanktis (c) and E. coli (d) have a larger non-motile fraction, with a moderate portion of the population remaining in the center of the channel after 10 min. The spatial distribution of non-motile cells remained approximately constant across all experiments and was comparable to the theoretical width of the fluid injection stream (Figure 1\u2014figure supplement 3). Hence, a fixed 250 \u03bcm wide exclusion zone (vertical dashed lines) was chosen to encapsulate the majority of non-motile cells for all experiments. This choice aids in visualisation of $P\u2062(y|t)$ (Figure 3) and has no bearing on the outcome of our analyses: Cell accumulation is only measured within 200 \u03bcm of the upper/lower channel boundaries. Therefore cells that remain in the center of the channel over the full experiment duration are never considered in the calculation of $\\beta\u2062(t)$.\n\nThe cell injection layer (Figure 1e) introduces a suspension of swimming microbes and a sheathing buffer solution from two corresponding inlets into the six observation regions of the dilution layer (Figure 1d, dashed box). In the observation regions, the chemostimulus solution, cell suspension, and buffer streams comprise six standard stop-flow chemotaxis assays (Figure 1a), where each one incorporates a unique chemostimulus concentration. The observation channel width ($W=1\u2062mm$) and height ($H=90\u2062\\mu\u2062m$) are similar to other microfluidic devices (Stocker et al., 2008; Ahmed et al., 2010; Stehnach et al., 2021) and ensure organisms with different sizes can be studied using the MCD. The initially steady flow rates stratify the three fluids in the observation region and localize the cells in a thin band in the channel center with equal width chemostimulus and buffer streams on either side (Materials and methods; Figure 1g and i and Figure 1\u2014figure supplement 3). Upon halting the flow, a unique and highly reproducible chemical gradient is formed in each observation channel via diffusion, where the consistency of the transient concentration profiles across all observation channels were confirmed using fluorescence microscopy (Materials and methods; Figure 1k, Figure 1\u2014figure supplement 3). The mixing effectiveness, fluid stratification, and gradient formation were validated over a range of applied pressures (approximately 100\u2013200 mbar) and were found to be consistent across all six observation regions (Figure 1\u2014figure supplement 1 and Figure 1\u2014figure supplement 3). This efficient two-layer architecture reduces the operational complexity of the device by decreasing the total number of fluid inlets (four) and reduces the footprint of the microfluidic chip.\n\nBoth layers of the MCD are fabricated from polydimethylsiloxane (PDMS) through standard soft lithography techniques (replica molding; Materials and methods). The final microfluidic chip is assembled by plasma bonding the dilution layer to a standard double-wide microscope slide (75 mm \u00d7 50 mm\u00d71 \u2009mm) and subsequently aligning and bonding the cell injection layer on top (Materials and methods; Figure 1c and f and Figure 1\u2014figure supplement 4). This reusable device (Materials and methods) is driven by a single pressure pump which maintains flow stratification (1\u20132 min) prior to each assay to ensure consistent initial gradient conditions for measuring cell responses. Pump and microscope automation enables the chemostimulus gradient to be reset for rapid replicate measurements. The design and operation of the MCD can accommodate most single-celled microorganisms, and efficient micromixer channels facilitate the use of a wide range of dissolved chemostimulants (Figure 1\u2014figure supplement 1; Stroock et al., 2002). Due to variations in the replica mold fabrication process, a one-time tuning of the applied pressure ratio ($p_{i\u2062n,1-2}/p_{i\u2062n,3-4}$) for the dilution and cell injection layers is required to ensure symmetric flow in the observation channel (Materials and methods). Further optimization of the device layout could enable the number of observation channels to be expanded, including a broader range or more refined sampling of concentration gradient conditions. Additionally, the serial dilution layer design can be easily modified to produce different concentration scalings (e.g. logarithmic, linear; Sugiura et al., 2010; Walker et al., 2007). The high degree of parallelization for chemotaxis screening, combined with the demonstrated consistency and repeatability of the chemostimulus gradients, represents a significant advance relative to existing microfluidic chemotaxis devices (Stocker et al., 2008; Ahmed et al., 2010; Li Jeon et al., 2002).\n\n### Validation of MCD performance against conventional chemotaxis assays\n\nHaving established the gradient generation performance, the MCD is compared to a conventional chemotaxis assay to (i) validate the chemotaxis measurements against a known microorganism-chemostimulus system and (ii) demonstrate the high-throughput capability of the MCD in comparison with existing devices. The chemotactic response of the monotrichous marine bacterium Vibrio alginolyticus (Figure 2a) was measured using both the MCD and a single microfluidic gradient generation device (referred to as \u2018single assay\u2019, SA) (Stehnach et al., 2021). V. alginolyticus swims with a run-reverse-flick motility pattern, and it was chosen due to its well-documented chemotaxis (Altindal et al., 2011; Son et al., 2013; Xie et al., 2011) and prevalence within marine microbial communities (Baker-Austin et al., 2018). The SA device has an identical observation channel geometry with three inlets and operates using stop-flow diffusion in the same manner as the MCD, where the chemostimulus, cells, and buffer are initially flow-stratified (Figure 2b). Upon halting the flow for both assays, the concentration gradient develops via diffusion, and time-lapse microscopy is used to measure the evolution of the spatial cell distribution over time, $t$ (Figure 2c; Materials and methods). For example, in a gradient formed by the model chemoattractant serine (Altindal et al., 2011), cells initially confined to a central band migrate toward the attractant, before uniformly sampling the channel (Figure 2c and d) as the gradient dissipates within $t\u224810\u2062min$.\n\nFrom one parallelized assay, the MCD precisely reproduces the chemotactic responses of V. alginolyticus toward various serine concentrations, compared to multiple, conventional single assays (Figure 2e\u2013h). Chemotactic behavior of the bacteria was measured across a range of manually adjusted attractant concentrations for the single assay, decreasing from $C_{0}=200\u2062\\mu\u2062M$ and matching the serial dilution concentrations generated by the MCD (Figure 1j). For each concentration gradient, the spatial distribution (conditional probability) of cells, $P\u2062(y|t)$, across the observation channel, $y$, is shown over time as a kymograph (Figure 2e and g). For ease of comparison, the aggregate chemotactic response is distilled through the accumulation (or chemotactic) index, $\\beta\u2062(t)$, which quantifies the relative fraction of cells responding to the chemostimulus (Seymour et al., 2010; Stocker et al., 2008). The accumulation index is defined as (Seymour et al., 2010; Stocker et al., 2008): $\\beta\u2062(t)=(N_{p}\u2062(t)-N_{n}\u2062(t))/(N_{p}\u2062(T)+N_{n}\u2062(T))$, where $N_{p,n}\u2062(t)$ are the instantaneous number of cells at time t within predefined positive and negative accumulation regions (Figure 2c, green and red dashed lines, respectively), and normalized by the total number of cells in these two regions at the final time ($T\u224810\u2062min$). The measured cell distributions from the MCD (Figure 2g) were compared to the single assay results (Figure 2e) by calculating the S\u00f8rensen similarity metric (Cha, 2007) for each attractant concentration, showing excellent statistical agreement between the two assays (Figure 2i). A comparison of the strength of cell accumulation (Figure 2j) further emphasizes the high degree of concordance between the two devices. In particular, V. alginolyticus exhibits strong accumulation for high serine concentrations ($C_{0-2}$), above the previously reported chemotactic sensitivity threshold of 0.2 \u03bcM (Altindal et al., 2011). Consequently, no discernable response is observed for lower concentrations ($C_{3-4}$), which are comparable to $\\beta\u2062(t)$ for the control ($C=0$). At the highest concentrations ($C_{0-1}$) in both devices, the chemotactic motility exhibits a slight reversal at later times. This is most likely due to the relatively high concentration of V. alginolyticus, which rapidly consumes the available serine at the top of the channel. Combined with chemoattractant diffusion across the channel width, the concentration gradient flips direction at later times causing accumulation on the bottom side of the channel. The persistent central band of cells at later times is due to a sub-population of bacteria which remain non-motile over the course of each assay and are thus localised near $y=0$ (Figure 2e and g; Figure 3\u2014figure supplement 1). Because any non-motile or motile bacteria in this region do not impact the calculation of $\\beta\u2062(t)$, the central band is omitted from future kymographs for visualization purposes. Finally, additional assays with no chemostimulus and with a fixed chemostimulus concentration confirmed the consistency of the chemotaxis assays across all observation regions (Figure 2k and l and Figure 2\u2014figure supplement 1), which is expected from the verified gradient generation performance in each channel (Figure 1\u2014figure supplement 3).\n\nThese validation assays serve to highlight the dramatically improved efficiency in chemical screening when compared to a standard single assay. In the single assay case, each chemical concentration requires: (i) manually diluting stock solutions, (ii) exchanging peripheral reservoirs for chemicals, and (iii) a new cell suspension for each concentration assay, all of which become extremely costly and time prohibitive, when considering the scope and scale of multi-chemical, -concentration, and -organism panel experiments. The single assay results (Figure 2e and f) required six different dilutions, cell solutions, and devices, and with three replicates per condition, required 18 individual assays. In contrast, the MCD collected the same data (Figure 2g and h) in only three automated assays, and did not require culture changes eliminating inconsistencies due to variations in growth media, dilution errors, or growth conditions. If replacing the cell suspension is necessary, the MCD can be easily reset by simply exchanging the cell suspension with a fresh suspension and restarting the flow. Because it uses a robust serial dilution process and requires the preparation of a single chemostimulus (C0), the MCD ensures consistent chemical concentrations across different experiments, a crucial factor when working with microorganisms having femto- to nanomolar chemotactic sensitivities (Mao et al., 2003; Guerrero et al., 2010; Altindal et al., 2011). The MCD fully screens both microbe and stimulus pairings with three replicates in \u2248 1 hour with a single cell culture, including the bench time associated with preparing the solutions (Figure 2h). In contrast, the panel of single assays (Figure 2f) requires nearly a full working day ($\u22486-7\u2062hours$). Thus, the MCD is a powerful and much needed tool for large scale chemotactic panel studies, where consistency in stimulus concentration, elimination of biological variability, and the need for efficiency, are essential.\n\n### Multiplexed microfluidic device supports high-throughput chemotaxis screening for novel stimuli and various microorganisms\n\nBeyond validation with the single assay device, we demonstrate the efficacy of the MCD by examining the response of V. alginolyticus to both a known repellent and novel chemostimulus. Chemorepellents serve as an early warning sign for microorganisms to evade predators and toxins for survival (Yang et al., 2015). A single MCD assay reveals that V. alginolyticus exhibits negative chemotaxis ($\\beta<0$) to the model repellent phenol (Homma et al., 1996) with an observed detection threshold on the order of $C=1-10\u2062\\mu\u2062M$ (Figure 3a and b). Separately, the amino acid leucine has been identified as an important metabolite in human health (Yang et al., 2020) and marine environments (Ferrer-Gonz\u00e1lez et al., 2021; Johnson et al., 2020), and it serves as a measure of prokaryote heterotrophic activity from viral lysis in deep-sea environments (Winter et al., 2018). Previously reported as an attractant for marine prokaryotes (Barbara and Mitchell, 2003), we verify the positive chemotactic response of V. alginolyticus to leucine through rapid chemotaxis screening using the MCD (Figure 3c and d).\n\nTo further illustrate the capabilities and flexibility of the MCD, the chemotactic behavior of Pseudoalteromonas haloplanktis (Figure 3f, inset) and Escherichia coli (Figure 3h, inset) to serine was measured (Figure 3e and g) with no design changes to the MCD (see Materials and methods). P. haloplanktis is a rapid-swimming, monotrichous marine bacterium that is a model organism for chemotaxis to amino acids (Barbara and Mitchell, 2003) and exhibits strong chemotaxis towards cellular exudates (Seymour et al., 2009). Similar to V. alginolyticus, it utilizes a run-reverse-flick foraging strategy (Son et al., 2016) for efficient chemotaxis in patchy chemical landscapes (Stocker et al., 2008). P. haloplanktis exhibited a monotonically increasing chemotactic response (Figure 3f) with increasing serine concentration, qualitatively comparable to the response of V. alginolyticus to leucine (Figure 3d). In contrast to the marine prokaryotes, E. coli is a pathogenic bacterium, which uses the bundling and unbundling of its multiple flagella to perform run-tumble motility for migrating up or down chemical gradients (Adler, 1966; Berg and Brown, 1972). E. coli has served as the canonical organism for bacterial motility and chemotaxis (Adler, 1966; Berg and Brown, 1972; Cremer et al., 2019; Mattingly et al., 2021) and has been instrumental in our understanding of logarthimic-sensing (Lazova et al., 2011; Kalinin et al., 2009) and chemical navigation in complex physical environments (Bhattacharjee et al., 2021). A single MCD assay reveals that E. coli has a strong chemotactic response to intermediate serine concentrations (C2; Figure 3g and h). The response significantly diminishes for high ($C_{0-1}$; Figure 3g and h) and low chemostimulant concentrations ($C_{3-4}$; Figure 3g and h). This observation reflects E. coli\u2019s affinity for serine (Yang et al., 2015), but toxicity at high concentrations (Neumann et al., 2014). Furthermore, at higher concentrations (C1), the initial accumulation is delayed in time (Figure 3h), a feature that is also consistent with the chemotactic sensitivity of E. coli to serine (Son et al., 2016; Bhattacharjee et al., 2021). Taken together, these three model swimming chemotactic microbes cover diverse foraging and motility strategies, whose range of chemotactic responses were efficiently screened using the MCD. These results demonstrate that the MCD can rapidly ascertain chemotactic responses across different chemostimulants and concentration ranges, which will be particularly valuable for studying the nano-molar and even femto-molar concentrations that characterize the detection thresholds of many microorganisms (Mao et al., 2003; Guerrero et al., 2010; Altindal et al., 2011).\n\nThe ability to simultaneously quantify a microbe\u2019s response for a spectrum of attractant concentrations using the MCD now enables rapid comparative studies across microbial or chemical species (Figure 4a). The magnitude of a microbe\u2019s response to a given concentration gradient is compactly summarized by the maximum (or minimum for negative chemotaxis) of their accumulation index, $\\beta_{m\u2062a\u2062x}=\\pmmax\u2062(|\\beta\u2062(t)|)$, where the sign of $\\beta_{m\u2062a\u2062x}$ is determined by the sign of the chemotaxis. In the case of serine, V. alginolyticus and E. coli (Figure 4a) both appear to have developed a chemotactic affinity to an optimal concentration (Lazova et al., 2011; Bhattacharjee et al., 2021), which is evident from the local maxima of $\\beta_{m\u2062a\u2062x}$ and is intrinsically linked to their motility and sensing abilities. This analysis is complemented by examining the maximal response rate $max(d\\beta/dt)$ (measured prior to $\\beta_{m\u2062a\u2062x}$; Figure 4b). The peak accumulation of V. alginolyticus to serine occurred at $C_{1}=49\u2062\\mu\u2062M$ while the fastest rate of response occurred at a lower chemostimulus concentration ($C_{2}=3.6\u2062\\mu\u2062M$). Despite its similar morphology and motility to V. alginolyticus, P. haloplanktis (Figure 4a) exhibits a monotonically increasing response to serine across the concentrations tested, with the fastest response rate also occurring at the highest concentration tested (Figure 4b; $C=200\u2062\\mu\u2062M$). Separately, the lack of an optimal concentration in the response of V. alginolyticus to leucine likely indicates a higher saturation threshold in the relevant chemoreceptors, relative to its serine response. This demonstrated screening efficiency highlights the benefits of this new microfluidic platform for tackling large-scale chemotaxis studies in a complementary manner to existing tools (Lambert et al., 2017; Raina et al., 2022; Haring et al., 2020; Satti et al., 2020), for a diverse array of micro-organisms and compounds.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85348/elife-85348-fig4-v1.jpg)\n\n**Figure 4.:** (a) The primary metric for quantifying the chemotactic response of the bacteria was the peak of the accumulation index $\\beta_{m\u2062a\u2062x}=\\pmmax\u2062(|\\beta\u2062(t)|)$, where the sign is determined by the positive or negative chemotactic behavior for each chemostimulus concentration (from Figures 2h, 3b, d, f and h). (b) The maximal response rate $max(d\\beta/dt)$ (prior to $\\beta_{max}$) is indicative of the speed of cell accumulation. These metrics distinguish chemotactic behaviors, for example: The accumulation of V. alginolyticus to serine is greatest at high concentrations (a; $C=49\\muM$), but the fastest response occurs at weaker concentrations (a; $C=3.6\\muM$). Error bars are one standard deviation across biological replicates.\n\n## Discussion\n\nHere, we have introduced a novel microfluidic multiplexed chemotaxis device for rapid quantification of bacterial responses to a range of chemostimulant concentrations. Identifying the diverse chemical compounds and concentrations responsible for driving microbial interactions that underpin important environmental and human health processes \u2013 for example, ecosystem scale nutrient cycling and disease transmission \u2013 has proven to be a tedious and monumental undertaking. A primary challenge is the sheer diversity of potential compounds and the extensive concentration range of microbial responses from micro- to femtomolar (Mao et al., 2003; Guerrero et al., 2010; Altindal et al., 2011). Existing chemotaxis assays, whilst able to screen multiple compounds, are ill-equipped to probe the temporal response of motile cells and are limited to low time-resolution (e.g. hours; Lambert et al., 2017). The multiplexed chemotaxis device (MCD) design presented here mitigates these restrictions by rapidly screening the chemotactic behavior of microbes across a spectrum of chemostimulus conditions simultaneously (Figure 1f) on significantly faster timescales. This work opens new avenues to large-scale, laboratory-based panel experiments previously inaccessible with existing microfluidic devices.\n\nThe MCD\u2019s two-layer device architecture uses a single pressure source to serially dilute a chemostimulus with a single buffer input, producing five logarithmically separated chemical solutions (Figure 1j). Separately, a cell suspension and additional buffer stream are introduced into each of the six observation regions, where the chemotactic response of the cells is recorded. The MCD performs reliably for a wide range of applied pressures and only requires calibration once, provided that the PDMS microchannels are cast from the same molds (Materials and methods). The simultaneous chemotaxis assays are not only fast and efficient compared to conventional (single assay) devices, but they also eliminate variability due to multiple culture preparations and potential changes in cell cultures that may occur over time (Figure 2g). Taken together, our results illustrate that the MCD enables robust and efficient quantification of the chemotactic responses of various bacterial species to different chemostimulants, simplifying the labor-intensive chemotaxis screening process (Figure 4).\n\nThe MCD design is amenable to a range of modifications to tailor its application, including but not limited to, alteration of chemical concentrations, gradients and flows, and increased multiplexing. For example, the design could be altered to enable the retrieval of chemotaxing cells from the individual observation regions for additional downstream analysis (Mao et al., 2003; Takagi et al., 2005; Gurung et al., 2020; Konishi et al., 2020). The sensitivity of prokaryotes is intrinsically linked to the strength of the concentration gradient (Lazova et al., 2011; Mao et al., 2003; Kalinin et al., 2009; Mattingly et al., 2021), an effect which can be examined with the MCD. With no alterations to the design or operation, simply changing the concentration of the input chemostimulus (C0, Figure 1d) will shift the examined concentration range. Likewise, the background concentration across all observation channels is adjustable by exchanging the buffer solution input in the cell injection layer for a chemostimulus solution. The serial dilution layer hydraulic circuit design can be modified to produce specific dilution ratios (i.e. linear or logarithmic; Sugiura et al., 2010; Walker et al., 2007), where optimization of the device layout can expand the number of different chemical conditions probed. The device operation is demonstrated here using fast swimming bacteria. However, the MCD can be operated using steady flow (Ahmed et al., 2010; Li Jeon et al., 2002) to study chemotaxis in slow-moving, surface attached microorganisms in systems such as neutrophil chemotaxis (Li Jeon et al., 2002) and biofilm formation (Boyeldieu et al., 2020). While the work presented here focuses solely on prokaryotes, the current device geometry will accommodate larger eukaryotic cells ($\u224810\u2062\\mu\u2062m$) and in principle could be scaled up for larger multicellular microorganisms (Varennes et al., 2017).\n\nWhilst the MCD does offer substantial improvement and throughput compared to existing alternatives, it is not without limitations. Typical microfluidic devices consist of a single layer and can be fabricated in most cleanrooms, but the multi-layer dilution layer (Figure 1\u2014figure supplement 4) does require the precision of a mask aligner (Materials and methods). If such facilities are not available, microchannel molds can be fabricated using other techniques such as 3D printing (Su et al., 2023) and micromilling (Guckenberger et al., 2015). A two-layer PDMS approach was chosen here to reduce the overall footprint of the device, but care must be taken to align the two layers, as misalignment could render the device inoperable, for example due to misconnecting ports between layers. In the current mode of operation, each observation channel is only imaged once every approximately 8 \u2009s, which is usually insufficient to identify swimming speed changes or changes in motility patterns associated with chemotaxis. This issue could be mitigated by capturing a short video at each visit to the observation channels, but it will also decrease the overall sampling frequency across concentration conditions.\n\nIn summary, the MCD provides a robust, high-throughput tool for expediting microbial chemotaxis screening. This engineered microfluidic device could simplify the study of microbial chemotaxis, which is paramount to understanding and modeling diverse problems including global scale carbon and nutrient cycling (Moran et al., 2022). Such technology could also be applied to accelerate microfluidic approaches to human health studies (Song et al., 2018; Atmaramani et al., 2019; Harimoto et al., 2022; Chen et al., 2020). Microfluidics have been identified as a potential means for meeting the high-throughput demands of chemical synthesis, screening, and testing with living cells, applications that remain key issues in drug discovery (Dittrich and Manz, 2006) and in meeting the challenge of antibiotic-resistant microbes (Qin et al., 2021).\n\n## Materials and methods\n\n### Microfluidic device design\n\n#### Hydraulic circuit framework\n\nIn analogy with electrical circuits, well-established hydraulic circuit theory (Oh et al., 2012) was used to design the complex microfluidic network of the multiplexed chemotaxis device (MCD; see Figure 1 and Figure 1\u2014figure supplement 2). Briefly, for incompressible, laminar flow through a constant cross-section microchannel, the pressure drop, $\u0394\u2062p$, is linearly proportional to the volumetric flow rate, $Q$, and is given by the Hagen-Poiseuille law (Oh et al., 2012; Kirby, 2010): $\u0394\u2062p=Q\u2062R$. The hydraulic resistance, $R$, is a function of the fluid viscosity (properties of water assumed for all fluids) and the channel geometry. Fabrication of microfluidic devices via the soft lithography method (McDonald et al., 2000) used here (see below) results in rectangular cross section microchannels (height, $H$; width, $W$; length, $L$). Exact expressions for $R$ are tabulated for rectangular and other cross-section channels and provided in various resources (Pozrikidis, 2001). Combined with conservation of mass, $\u03a3\u2062Q_{i}=0$ at the junctions (nodes) between several channels, $i$, the Hagen-Poiseuille law enables us to design complex microfluidic networks (Figure 1\u2014figure supplement 2) via the solution of a set of linear equations.\n\n#### MCD design considerations\n\nThe primary goal of the MCD was to efficiently perform several stop-flow bacterial chemotaxis assays (Ahmed et al., 2010; Ford et al., 1991) simultaneously for a range of chemostimulus concentrations. The design requirements were to: (i) dilute and distribute five logarithmically spaced concentrations of chemostimulus plus one control buffer solution to each of six chemotaxis assays. (ii) Perform those six chemotaxis assays in parallel on the same microfluidic chip. And, (iii) the microfluidic device should receive minimal fluid inputs to reduce setup time. The MCD has a two-layer architecture (dilution layer and cell injection layer) with a total of four fluid inputs and one (waste) output (Figure 1 and Figure 1\u2014figure supplement 2). Each having two inputs, the dilution layer and cell injection layer are designed to be regulated by a pressure-driven flow controller operating at a pressure, $p_{i\u2062n,1-2}\u2248100\u2062mbar$ and $p_{i\u2062n,3-4}\u224850\u2062mbar$, respectively, while the lone output is at atmospheric pressure ($p_{o\u2062u\u2062t}=0$). The dilution layer receives a base concentration chemostimulus solution (concentration, C0; $p_{i\u2062n,1}$) and a buffer solution ($C=0;p_{in,2}$), and the cell injection layer receives a bacterial suspension in buffer ($p_{i\u2062n,3}$) and a second buffer solution ($C=0;p_{i\u2062n,4}$). The serial dilution (Sugiura et al., 2010) process sequentially combines the chemostimulus and buffer fluids to produce separate microchannel streams having chemostimulus concentrations of $C_{i}=10^{-i}\u2062C_{0}$ ($i\\in[0,4]$) and $C_{5}=0$ (control). The resulting six diluted chemostimulus solutions are merged in separate observation channels with a flow-stratified bacterial suspension and second buffer stream, which eventually forms the chemostimulus gradient in the chemotaxis assay. The three solutions are designed to symmetrically occupy the following fractional widths of the observation channel (total width, $W$): $w_{1}=4\u2062W/9,w_{2}=W/9,$ and $w_{3}=4\u2062W/9$. The observation channel width ($W=1\u2062mm$) and height ($H=90\u2062\\mu\u2062m$) were chosen to set the chemostimulus gradient strength based on a physically relevant length scale (Ahmed et al., 2010; Stehnach et al., 2021; Mattingly et al., 2021) and to ensure that the upper and lower microchannel walls do not impede bacterial motility, respectively. These dimensions are in line with conventional microfluidic chemotaxis assays (Ahmed et al., 2010), and as a consequence of the microfabrication process, the chosen $H$ sets the height of the dilution layer channels excluding the micromixer. The initial flow rate of the three streams in the observation region (Figure 1d) was designed to be $20,5,20\u2062\\mu\u2062l\u2062min^{-1}$ for the chemostimulus ($Q_{o\u2062u\u2062t}$), cell $(Q_{C\u2062I\u2062L,1})$, and buffer solution ($Q_{C\u2062I\u2062L,2}$), respectively (Figure 1\u2014figure supplement 2). These flow rates maintain the stratification of the cell suspension with a 4:1:4 ratio, while ensuring that the bacterial cells are not damaged by the flow (Figure 1\u2014figure supplement 3). Beyond these design requirements, the geometries - and thus hydraulic resistances \u2013 of several components are set independently, including: micromixer channels $R_{M}$, bridge channels $R_{B}$, and observation channels $R_{4,4}$ (Figure 1\u2014figure supplement 2 and Appendix 1). Based on these design requirements, hydraulic circuit theory was used to determine the required resistances of each microchannel in the MCD network, and subsequently the microchannel geometries (Oh et al., 2012). A complete list of the microchannel resistances and dimensions for the final design is provided in Appendix 1.\n\n### Herringbone micromixer design\n\n#### Mixing performance\n\nFor the serial dilution process to perform as designed, effective mixing of the chemical solution and buffer are critical. Here, we use a well-established herringbone micromixer geometry (Stroock et al., 2002), where a series of ridges on the upper wall of an otherwise rectangular microchannel (Figure 1\u2014figure supplement 1a and b) drive a three-dimensional flow to enhance mixing (Stroock et al., 2002; Ottino and Wiggins, 2004). A separate microchannel - having the same cross section geometry as the MCD design - was fabricated to independently quantify mixing performance and to select the necessary mixer length. The test micromixer channel was 41.3 \u2009mm long with 29 mixing cycles (comprised of two sets of six alternating herringbone ridges each). Two aqueous solutions of fluorescein salt (Sigma; concentrations, $C_{50}=50\u2062\\mu\u2062M$ and $C_{10}=10\u2062\\mu\u2062M$) (Petr\u00e1\u0161ek and Schwille, 2008) were injected individually into the MCD, and calibration images of dye intensity were captured after each herringbone mixer cycle (Figure 1\u2014figure supplement 1), corresponding to the maximum ($I_{50}$) and minimum ($I_{10}$) dye concentrations, respectively. The region within 20 \u03bcm of the microchannel walls was excluded from analysis due to reflection and refraction effects (Stroock et al., 2002). Subsequently, the two solutions were flowed side-by-side with images ($I_{i}$) recorded in the same locations as above and normalized as follows:\n\n$$\nI=\\frac{I_{i}\u2212\u27e8I_{10}\u27e9}{\u27e8I_{50}\u27e9\u2212\u27e8I_{10}\u27e9},\n$$\n\nwhere $\u27e8\u22c5\u27e9$ denote spatial averaging. The degree of mixing is defined as (Stroock et al., 2002), $DOM=\\sqrt{\u27e8(I\u2212\u27e8I\u27e9)^{2}\u27e9}$, where values of 0.5 and 0 indicate fully non-mixed and mixed solutions, respectively. This measurement (Figure 1\u2014figure supplement 1c) was repeated for both the designed flow rate for the MCD ($Q_{M}=22\u2062\\mu\u2062l\u2062min^{-1}$) and for a second higher flow rate ($222\u2062\\mu\u2062l\u2062min^{-1}$). Based on standard metrics (Stroock et al., 2002), the two solutions are considered mixed when $DOM\\leq0.05$ (i.e. 90% complete mixing). For both flow rates, this criterion is met after 9 complete herringbone ridge cycles, and a final design with 26 herringbone cycles was chosen for the MCD. The independence of mixing efficiency on flow rate, combined with a safety factor of approximately three for the number of herringbone cycles, ensures that the serial dilution portion of the MCD will perform accurately for a wide range of chemostimulants and flow speeds.\n\n#### Micromixer hydraulic resistance\n\nTo complete the design of the MCD, it was necessary to determine the hydraulic resistance of the herringbone micromixer $R_{M}$ which was measured empirically using a parallel microfluidic device (Choi et al., 2010). Briefly, a microfluidic device was fabricated with two parallel channels connected by shared inlets and outlets. The parallel channels had identical rectangular geometries except one had the herringbone ridges replicating the micromixer channel section $R_{M}$ (Figure 1\u2014figure supplement 4). Two solutions, DI water and $1\u2062\\mu\u2062l\u2062ml^{-1}$ tracer particle suspension (0.25 \u03bcm radius; 2% solid; carboxylated FluoroSpheres, Life Technologies), were flowed through the device using glass syringes (2.5 \u2009ml; Hamilton) mounted on two separate syringe pumps (Harvard Apparatus). The particle solution was visualized using fluorescence microscopy, and the flow rates of the two pumps were adjusted such that the two streams divided equally into the parallel channels. The micromixer hydraulic resistance was determined from the resulting flow rate ratio and the known (analytical) resistance of the non-mixer channel (Oh et al., 2012; $R_{M}=0.0043\u2062mPa\u2062s\u2062\\mu\u2062m^{-3}$; Figure 1\u2014figure supplements 2 and 4c), and the results were corroborated by COMSOL Multiphysics simulations (not shown; Stehnach, 2022).\n\n### Microfabrication and assembly\n\nMicrofluidic channel molds were fabricated using standard single and two-layer photolithography (Anderson et al., 2000) to transfer the final channel designs from a photomask (Artnet Pro, formally CAD/Art Services, Inc) onto a silicon wafer (100 \u2009mm diameter; University Wafer), which was spin-coated with photoresist (SU-8; Kayaku Advanced Materials). The single assay chemotaxis devices and MCD cell injection layer were made using SU-8 2050 and 2025, respectively, and multilayer devices (micromixer validation channels, MCD dilution layer) were made using SU8-3050 and SU8-2025 for the main rectangular channels and herringbone ridges, respectively. The ridges of the micromixers (Stroock et al., 2002) were applied by halting the first-layer photolithography after the first post-exposure bake (PEB), spin-coating a second layer of SU-8 photoresist onto the wafer, then completing the remainder of the photolithography processes as usual (Anderson et al., 2000). The ridges of the herringbone micromixer (Stroock et al., 2002) extend over the main channel by $\u224810\u2062\\mu\u2062m$ on both sides to account for potential misalignment during the multilayer photolithography (Figure 1\u2014figure supplements 1\u20134). The final channel heights for the fabricated MCD dilution layer (Figure 1d and Figure 1\u2014figure supplement 4a\u2013c) were $90-94.5\u2062\\mu\u2062m$, $37-38.5\u2062\\mu\u2062m$ for the main channel and herringbone ridges, respectively, while the cell injection layer (Figure 1e) was $71-73\u2062\\mu\u2062m$ high (Bruker\u2019s DekTak).\n\nThe MCD was fabricated using two-layer soft lithography (McDonald et al., 2000) with polydimethylsiloxane (PDMS; Sylgard 184) at a 10:1 (elastomer:curing agent) ratio. All channel wells were punched using a 1.5 \u2009mm diameter biopsy punch (Integra). The dilution layer mold was first silanized through vapor deposition (Sidorova et al., 2009) in a vacuum desiccator with 1\u20132 drops of tridecafluoro-1,1,2,2-tetrahydrooctyl trichlorosilane (Gelest Inc) to help release the cast PDMS. Post-silanization, PDMS was poured onto both the cell injection layer and dilution layer molds and degassed in a vacuum chamber ($\u22481\u2062hour$) prior to curing (65\u00b0C for $\u22481\u2062hour$). The resulting PDMS dilution layer channel was first plasma bonded onto a standard thickness, double wide glass slide (75 mm \u00d7 50 mm\u00d71 \u2009mm; Fisherbrand) using a plasma oven (Plasma Etch Inc), and subsequently heated on a hot plate at 110\u00b0C for one hour to promote covalent bonding (McDonald et al., 2000; Figure 1\u2014figure supplement 4d). Next, the cell injection layer was plasma bonded on top of the dilution layer, with care taken to ensure the alignment of the fluid wells connecting the two layers (Figure 1\u2014figure supplement 4e). The assembled device was baked again on a hot plate at 110\u00b0c for 1 hr. The PDMS-PDMS bond was found to be sufficiently strong for the relatively low pressure applications of the MCD (Eddings et al., 2008). Before injecting any fluids into the MCD, the microchannels should be inspected to insure no debris is blocking a channel. Debris (e.g. dust introduced during the fabrication process) that clogs or partially clogs the microchannels could negatively impact performance by changing the hydraulic resistances of the individual channel (Figure 1\u2014figure supplement 2 and Appendix 1). Particulates can potentially be removed by flushing the device, but as with many microfluidic applications, large obstructions may render the device unusable. All other devices (e.g. single assay chemotaxis devices and micromixer validation channels) were fabricated using single-layer soft lithography, where an individual PDMS device was molded and subsequently bonded to a standard microscope slide using the procedures described above.\n\n### MCD dilution, flow, and gradient generation performance\n\nThe performance of the fabricated MCD was validated using epifluorescence microscopy (Nikon Ti-E) with an aqueous fluorescent dye (fluorescein sodium salt, Sigma) in various concentrations (described below). Images of the dye distribution were captured at the midplane of the channels with a sCMOS camera (Zyla 5.5; Andor Technology). Fluorescein was chosen due to its similar diffusion coefficient with the chemostimulant serine (Altindal et al., 2011). Minor deviations in the performance of the MCD from the original circuit design (Figure 1\u2014figure supplement 1) are likely due to variations in the fabricated channel mold heights (Appendix 1). Such variations impact the hydraulic resistances (Oh et al., 2012) and symmetry of the cell solution (Figure 1\u2014figure supplement 3).\n\n#### Serial dilution\n\nThe primary function of the MCD dilution layer is to sequentially dilute the input chemical solution (C0) with buffer to generate four logarithmically decreasing concentrations ($C_{1-4}$) for each of the observation channels (plus one control, $C_{5}=0$). The dilution performance was quantified by injecting a solution with known fluorescein concentration ($C_{0}=1\u2062mM$). The diluted concentration field, $C_{i}\u2062(x,y)$, at each of the observation channels was then determined from the local measured dye intensity, $I_{i}(x,y)$, which are linearly proportional, $C_{i}(x,y)\u221dI_{i}(x,y)$. Fluorescence images were recorded upstream of the inlet before the three fluids made contact in each observation channel (Figure 1a) using a 20\u00d7 (0.45 NA) objective. Due to the strong 10-fold dilution, pairs of images were acquired for adjacent channels with optimized exposure times to account for the finite dynamic range of the camera. The mean normalized concentrations provided for each observation region from the serial dilution process were reconstituted from the measured image intensity as follows:\n\n$$\n\\frac{C_{i}}{C_{0}}=\\prodn=1i\\frac{\u27e8I_{n}(x,y)\u27e9}{\u27e8I_{n\u22121}(x,y)\u27e9},n\\in[1,4],\n$$\n\nwhere the angled brackets indicate the spatial average. The resulting serial dilution followed the expected logarithmic (10-fold) dilution $C_{i}/C_{0}=10^{-i}$ for $i\\in[0,4]$ for which the system was designed (Figure 1j). This measurement was performed for three different sets of applied driving pressures, which yielded nearly identical results and illustrated the robustness of the serial dilution process.\n\n#### Stratification symmetry\n\nThe symmetry of the stratified chemostimulus and buffer distributions in the observation channel is critical to prevent bias in the chemotaxis measurements. As minor errors in the manufacturing process can alter this symmetry, the applied pressure for the cell injection layer ($p_{i\u2062n},3,4$; Figure 1\u2014figure supplement 2) was tuned until the widths of the chemical, cell, and buffer streams in each observation channel were 4:1:4 ratio, respectively. Tuning was visualized by flowing a fluorescein solution ($C_{0}=100\u2062\\mu\u2062M$) in both the chemical and buffer inlets of the dilution layer as well as the buffer inlet of the cell injection layer (Figure 1d and e). The ratio of applied pressures ($p_{i\u2062n,1-2}/p_{i\u2062n,3-4}$) between the dilution and cell injection layer remained the same for all chemotaxis assays ($p_{i\u2062n,1-2}/p_{i\u2062n,3-4}=10/7$), which was slightly lower than the designed value ($p_{i\u2062n,1-2}/p_{i\u2062n,3-4}=2$). Tuning is only required for the first device fabricated from a particular set of molds, after which the calibration and tuning applies to all subsequent devices fabricated from the same mold set due to the robust nature of soft lithography. If significant variations in the stratification symmetry occur in the observation regions, the MCD will not function properly, where possible causes include: (i) mis-alignment of the two PDMS layers and/or (ii) debris blocking or impeding the flow. In the latter case, if inspection of each microchannel and flushing (see: Experiment replicates and device reusability) is ineffective, a new device is recommended.\n\n#### Chemostimulus gradient consistency\n\nBeyond ensuring the symmetry of the chemostimulus and buffer stratification, the time evolution of the resultant chemostimulus gradient must be consistent across each of the observation channels to accurately compare bacterial chemotactic responses. The chemical gradient evolution (Figure 1k and Figure 1\u2014figure supplement 3c and d) was measured by first flowing a fluorescein solution ($C_{0}=100\u2062\\mu\u2062M$) through both the chemical and buffer inlets of the dilution layer and DI water through both inlets of the cell injection layer. Having independently verified the performance of the serial dilution process, this approach produces identical base concentrations for all observation channels, $C_{i}=C_{0}$, and thus, enables easy comparison of the resulting concentration gradients in each channel. Upon halting the flow, an image was recorded (10\u00d7, 0.3 NA objective) in each observation channel every 5 \u2009s for approximately 9 \u2009min. The time evolution of the (normalized) spatial fluorescence intensity was measured to visualize the chemical gradient. The resulting concentration profiles were found to be highly consistent across the various observation regions and for different driving pressures (Figure 1\u2014figure supplement 3c and d).\n\n### Cell culturing\n\nVibrio alginolyticus (YM4; wild-type) from -80\u00b0C stock were grown overnight in Marine 2216 media (Difco) by incubating at 30\u00b0C and shaking at 600 revolutions per minute (RPM). The overnight culture was diluted 100-fold into fresh pre-warmed 2216 media and grown for three hours (30\u00b0C, shaking at 600 RPM) to $O.D.\u22480.2$. 7 \u2009ml of culture was then washed and resuspended (1,500 RCF for 5 min) in 4 \u2009ml of artificial seawater (ASW).\n\nPsuedoalteromonas haloplanktis (ATCC 700530) from -80\u00b0C stock were grown overnight in Marine 2216 (Difco) media by incubating at room temperature and shaking at 100 RPM (Stocker et al., 2008).\n\nEscherichia coli (MG1655) from -80\u00b0C LB stock were grown overnight in Terrific Broth (TB, Sigma Aldrich) by incubating at 34\u00b0C and shaking at 220 RPM (Stocker et al., 2008). The overnight culture was diluted 100-fold into fresh pre-warmed TB media, and grown for approximately three hours (34\u00b0C, shaking at 220 RPM) to $O.D.\u22480.5$. 8 \u2009ml of culture was then washed three times and resuspended (4000 RCF for 5 min) in 4 \u2009ml of motility buffer (10 \u2009mM potassium phosphate, 0.1 \u2009mM EDTA, 10 \u2009mM NaCl, pH 7, filter sterilized 0.2\u03bcm). A total of 16 \u2009ml of culture was washed twice and resuspended (1200 RCF for 5 min) in 6 \u2009ml of ASW.\n\n### Media and chemostimulants\n\nArtificial seawater (ASW) was prepared following the NCMA ESAW Medium recipe, which was adapted from Harrison et al., 1980 and modified (Berges et al., 2001). ASW was used as the buffer and the chemical solvent for chemotaxis assays for both V. alginolyticus and P. haloplanktis, while motility buffer (see above) was used for chemotaxis assays with E. coli. Chemostimulus materials were purchased from Sigma Aldrich for use in the chemotaxis experiments, specifically: serine (S4500), phenol (P1037), and leucine (L7875).\n\n### Microfluidic chemotaxis assays\n\nPrior to use, the MCD was pre-treated by flowing a 0.5% (w/v) bovine serum albumen solution (BSA; Sigma Aldrich) to reduce cell adhesion to the microchannel surfaces. The device was flushed for over 10 \u2009min prior to first use with the cell, chemostimulus, and buffer suspensions. For chemotaxis assays, fluid flow was driven by a single pressure controller (Elveflow OB1; 1 mbar =100 \u2009Pa): $p_{i\u2062n,1-2}=200\u2062mbar$ (dilution layer) and $p_{i\u2062n,3-4}=140\u2062mbar$ (cell injection layer). Pressures were scaled down to 100 mbar and 70 mbar, respectively, for P. haloplanktis experiments. Between each chemotaxis assay, the fluid inputs were flowed for a minimum of 2 \u2009min to stratify cell, chemostimulus, and buffer streams in the observation channels. Upon halting the flow, a monotonic concentration profile was established in each observation channel due to the diffusion of the chemostimulus (Figure 1 and Figure 1\u2014figure supplement 3). The spatio-temporal evolution of the bacterial distribution was determined by imaging the cells using phase-contrast microscopy (10\u00d7, 0.3 NA objective; Nikon Ti-E) with a sCMOS camera (Zyla 5.5, Andor Technology) for approximately 10 min. An automated computer-controlled stage was used to cyclically move the microscope field of view to each observation channel 75 times, producing an effective imaging period of 8 \u2009s for each observation channel. Each experiment was technically replicated at least three times with the same culture and repeated on different days with freshly grown cells. For validation of the MCD, a conventional single assay (SA) microfluidic device (Figure 2b\u2013f) was designed with a similar geometry to the individual MCD observation channels. Specifically, the SA devices had three inlets (width, 0.5 \u2009mm) which merged in a single observation channel. The devices were fabricated in a single layer using soft lithography (see above), and they were pre-treated with a 0.5% (w/v) BSA solution and flushed with ASW prior to experiments. The SA chemotaxis devices were used to validate the MCD for the well-established chemotactic behavior of V. alginolyticus to the chemoattractant serine (Sigma). The three inlets of the single assay device (Figure 2b) carried the chemoattractant dissolved in ASW, V. alginolyticus suspended in ASW, and ASW, respectively. The three solutions were flow stratified for a minimum of 2 \u2009min using a syringe pump (Harvard Apparatus), whereby flow rates were controlled by syringe size to maintain a 4:1:4 ratio of the stream widths. In an identical manner to the MCD, a chemostimulus gradient develops in the channel via diffusion, and the chemotactic response of the cell population was observed over time. Imaging was performed with phase-contrast microscopy (4\u00d7, 0.13 NA objective; Nikon Ti-E) at 1 fps over the course of approximately 10 \u2009min using a CMOS camera (Blackfly S, Teledyne FLIR). Sample size in each replicate chemotaxis experiment ranged from 7000 to 16,000 measured cell positions, dependent on the strain used for each particular assay.\n\n### Experiment replicates and device reusability\n\nAfter completing the initial 10 \u2009min filming period corresponding to the first measurement of a given organism/chemostimulus pairing, technical replicates were achieved in both the MCD and SA devices by restarting the flow. Stratification was maintained for at least 2 \u2009min to ensure consistent initial conditions among replicates. Next, the flow was halted and recording of bacteria positions commenced. This process was repeated for all subsequent technical replicates. A new MCD was fabricated for each unique organism/chemostimulus combination tested to prevent any cross-contamination between assays. Between biological replicates for a given organism/chemostimulus pairing, the MCD was cleaned by first flowing ethanol and then deionized water through all of the inlets. The device was then dried by flowing clean compressed air through the device and placing it under vacuum. Finally, the MCD was pre-treated again with a 0.5% (w/v) BSA solution and flushed with ASW prior to additional experiments. With appropriate cleaning, the same MCD can safely be used for multiple biological replicates of the same organism/chemostimulus combination. It is recommended to use a new device outside biological replicates of a particular organism/chemostimulus combination, consistent with the majority of PDMS applications (Toepke and Beebe, 2006). For SA experiments, a new device was used for each biological replicate in Figure 2e, although SA devices can also be easily cleaned and reused in the same manner as the MCD.\n\n### TEM imaging\n\nFor each species, initial cultures were grown following the previously described protocols (without any initial washing/resuspending), before the following final cell suspensions were prepared: (i) 4 \u2009ml of V. alginolyticus culture washed and resuspended (1,500 relative centrifugal force (RCF) for 5 min) in 1 \u2009ml of fresh 2216 media, (ii) 1 \u2009ml of P. haloplanktis culture washed and resuspended (1200 RCF for 5 \u2009min) in 1 \u2009ml of fresh 2216 media, then diluted 10\u00d7 in DDW (double distilled water), and (iii) 8 \u2009ml of E. coli culture washed and resuspended (4000 RCF for 5 min) in 1 ml of DI water, then diluted 10\u00d7 in DDW. For each species, 4 \u03bcl of cell suspension was applied to a glow discharged copper mesh carbon coated grid and allowed to adsorb to the grid for 30 s. The grids were briefly washed in DDW, followed by staining with 1% Aqueous Uranyl Acetate, and allowed to dry fully before imaging. Grids were imaged using a FEI Morgagni transmission electron microscope (FEI, Hillsboro, OR) operating at 80 kV and equipped with a CMOS camera (Nanosprint5, AMT).\n",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "2ec77372-f11a-4c26-bbaf-89e17534f3dc",
+      "submission_id": "648c7d63-d801-49cf-9fc3-cd3f7910bb11",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85348.sa0](https://doi.org/10.7554/eLife.85348.sa0)\n\nThis manuscript presents a valuable new microfluidic tool that will allow researchers from different fields to rapidly quantify the chemotactic response of microbes to chemical gradients that have different strengths. Using planktonic bacteria, this paper convincingly shows that a multiplexed microfluidic device produces similar results to previously described microfluidic devices that generate only one gradient at a time. By performing on-chip dilutions, this device allows data for six different gradient strengths to be generated simultaneously, potentially reducing both experimental effort and biological variability.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85348.sa1](https://doi.org/10.7554/eLife.85348.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Multiplexed microfluidic screening of bacterial chemotaxis\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Meredith Schuman as the Senior Editor. We regret the very long time it has taken to complete the review process \u2013 we had to consult a number of reviewers before obtaining the reviews below.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nGeneral matters:\n\n1) We urge the authors to make available the original channel designs they used for these 2-layer devices, e.g. 3D CAD files or similar, to make it as easy as possible for another user to replicate/print this design.\n\n2) Please also make available any datasets and codes associated with this project, including any custom codes for calibrating the channels.\n\n3) In the discussions, expand on the vision of what exactly these devices might be useful for, beyond the type of study demonstrated in Figure 4, perhaps beyond bacterial chemotaxis (e.g. what about eukaryotic chemotaxis) and with some discussion of design limitations.\n\nSpecific issues:\n\n1. In several of the examples presented, e.g. Figure 2a, g, it seems that at long times (>5 minutes) a significant negative chemotactic response follows from the initially positive chemotactic response (not just delayed accumulation), where does this come from? Is this a known effect?\n\n2. Related to the above comment, it seems that a major advantage of the MCD is its ability to sustain precise chemical gradients over a spectrum of concentrations, so these results could provide new insights into the dynamics of bacterial chemotaxis and accumulation, as demonstrated in the curves of \u03b2(t) vs time in figures 2,3. Perhaps Figure 4 could be supplemented with some more sophisticated analysis of the dynamics of the response \u2013 how does \u03b2 vary in time at the different concentrations, not just the behaviour of max-\u03b2.\n\n3. A few more words of justification on the choice of species/chemical would be helpful \u2013 why select those combinations? The response of VA to leucine is not unexpected, given observations in other motile species. It would have been more interesting to see the MCD applied to a greater number of species/chemostimulant than these standard combinations (for comparison, the scope of Raina et al., 2022, was much more extensive). Alternatively, could there be some attempt to connect \u2013 at a mechanistic or molecular level \u2013 these detailed measurements of how the cells responded to chemoattractants to their species-specific motility strategies/number of flagella, etc?\n\n4. What determines the width of the central band of immotile cells that is to be ignored in the analysis? Was this always the same width across different species? Is anything gained by removing the band from the analysis? What if this procedure introduces some bias by removing motile bacteria that are transitioning from a positively chemotactic towards a negatively chemotactic state?\n\n5. The concluding paragraphs seem to be somewhat self-congratulatory, while there are many potential applications of the device, the paper only demonstrated one scenario where it concretely outperforms traditional assays in terms of efficiency, the usefulness and relevance of the MCD for 'ecosystem and human health investigations' are grand claims that remain to be tested.\n\n6. For balance, there should also be some statements outlining some of the limitations of the device, how accessible is this design for a lab ill-equipped to build multilayer devices compared to the traditional single assay designs, what about the propensity for clogging, etc.\n\n7. Line 56: change principle to principal.\n\n8. Reconsider the use of \"stratified\", \"stratification\" etc. Using \"fluid stratification\" to describe chemical gradients does not seem like the most straightforward word choice, however, is this is a stylistic choice?\n\n9. It is noted that these devices are \"reusable\"? Obviously, one might be apprehensive about reusing a device that has been exposed to phenol or other toxins, or other bacterial species that might affect motility of the focal strain. Were the devices actually reused in this study? If so, maybe you can explain how they were \"cleaned\" between uses? e.g. by injecting ethanol or..?? This might be useful for users of these devices.\n\n10. Figure 2I \u2013 please describe how the constant gradients strengths were obtained using the device. It is not clear if these measurements were obtained using a multiplexed device operated in a different manner or..?? The description provided in Figure 1 \u2014figure supplement 3 is not clear to us.\n\n11. Figure 3. \u2013 all of the cells in the central 250 \u00b5m wide band are not necessarily \"non-motile\" (a fraction of these are certainly motile given the random nature of bacterial motility). The same in Line 208 of the manuscript. Also, it would be more straightforward to list the bacterial strain and chemoaffector on the figure itself to avoid having to dig so deeply into the caption (especially since you show an EM image of each strain).\n\n12. Line 281: it is not clear what you mean by \"alluded\"?\n\n13. Line 323: rather than \"aging cells\" it would be more accurate to say something like \"metabolic changes in cell cultures that occur over time\".\n\n14. Line 328: how might the MCD design be amenable to cell retrieval (presumably you mean isolating chemotactic cells from non-chemotactic ones), given that the channels have a common outlet?\n\n15. Line 570: it is noted that \"Each experiment was technically repeated at least three times with the same culture and repeated on different days with freshly grown cells.\" However, it is not clear what the error bars and the shaded regions around line graphs in the various figures actually indicate. Are these indicating variability across technical repeats or biological repeats or..?\n\n16. Figure 1 \u2014figure supplement 3. It is noted that: \"To achieve symmetric flow the applied pressure was tuned.\" This tuning was required because of the small variations in channel height and tubing lengths. Is such tuning required to ensure that the desired dilutions are accurate? It seems that such tuning could only be accomplished with dye in a separate \"calibration\" experiment. As noted in the public review, it is not clear whether these devices can produce accurate dilutions \"off the shelf\" or whether the applied pressures of each device need to be calibrated in separate experiments with dye.\n\n17. Figure 2 \u2014figure supplement 2: sentence after (b) is lacking a verb.\n",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c7408db3-cfb6-46ae-a2be-75396a0c78f1",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C1",
+      "claim": "Microorganism sensing of and responding to ambient chemical gradients regulates a myriad of microbial processes that are fundamental to ecosystem function and human health and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Microorganism sensing of and responding to ambient chemical gradients regulates a myriad of microbial processes that are fundamental to ecosystem function and human health and disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the importance of microbial chemotaxis, supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "c4b5da4d-0c2c-48d0-b314-6db918f9e880",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C2",
+      "claim": "Motile cells of all types navigate complex environments through the detection of and response to chemical signals via chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "Motile cells of all types navigate complex environments through the detection of and response to chemical signals via chemotaxis (Adler, 1966; Berg and Brown, 1972; Stocker, 2012; Wadhams and Armitage, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "17599f9a-874e-43ab-b782-bc8202de5f5a",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C3",
+      "claim": "Chemotaxis regulates microbial foraging in marine environments.",
+      "claim_type": "EXPLICIT",
+      "source": "This fundamental survival mechanism regulates countless biological processes, such as microbial foraging in marine environments (Seymour et al., 2010; Stocker et al., 2008) and reproduction (Kaupp et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "2387ea5b-7e4b-423f-ae74-1c316f5d079a",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C4",
+      "claim": "Chemotaxis regulates reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "This fundamental survival mechanism regulates countless biological processes, such as microbial foraging in marine environments (Seymour et al., 2010; Stocker et al., 2008) and reproduction (Kaupp et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "d6f01882-f098-4ea7-ba6e-c8b83bff90f1",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C5",
+      "claim": "Microfluidic devices have become an indispensable platform for disentangling the intricacies of microbial chemotaxis by virtue of their precise control over the chemical environment at scales relevant to swimming cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Microfluidic devices have become an indispensable platform for disentangling the intricacies of microbial chemotaxis by virtue of their precise control over the chemical environment at scales relevant to swimming cells (Keegstra et al., 2022; Ahmed et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "1641d189-c15b-4b19-bcae-9645eca820bc",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C6",
+      "claim": "Microfluidics have been employed to physically model a range of chemical landscapes, such as nutrient patches.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, microfluidics have been employed to physically model a range of chemical landscapes, such as nutrient patches (Stocker et al., 2008), and provide highly tunable concentration profiles (Li Jeon et al., 2002; Sugiura et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "f62ca7bf-dc85-4017-ac3c-719ad6494c81",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C7",
+      "claim": "Microfluidics provide highly tunable concentration profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, microfluidics have been employed to physically model a range of chemical landscapes, such as nutrient patches (Stocker et al., 2008), and provide highly tunable concentration profiles (Li Jeon et al., 2002; Sugiura et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "5275418e-57a8-4f2c-bab4-06b7b76a5625",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C8",
+      "claim": "Some bacteria exhibit a dynamic sensing range spanning five orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Some bacteria exhibit a dynamic sensing range spanning five orders of magnitude (Lazova et al., 2011; Kalinin et al., 2009; Cremer et al., 2019) and can detect nano-molar attractant concentrations (Mao et al., 2003), while marine invertebrate spermatozoa have a reported detection limit approaching the femto-molar scale (Guerrero et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "cd770a63-7760-4bdc-971c-c0937ad3d6db",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C9",
+      "claim": "Some bacteria can detect nano-molar attractant concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Some bacteria exhibit a dynamic sensing range spanning five orders of magnitude (Lazova et al., 2011; Kalinin et al., 2009; Cremer et al., 2019) and can detect nano-molar attractant concentrations (Mao et al., 2003), while marine invertebrate spermatozoa have a reported detection limit approaching the femto-molar scale (Guerrero et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "4d198ce6-947e-45f7-a75a-2d92ddfc87fe",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C10",
+      "claim": "Marine invertebrate spermatozoa have a reported detection limit approaching the femto-molar scale.",
+      "claim_type": "EXPLICIT",
+      "source": "Some bacteria exhibit a dynamic sensing range spanning five orders of magnitude (Lazova et al., 2011; Kalinin et al., 2009; Cremer et al., 2019) and can detect nano-molar attractant concentrations (Mao et al., 2003), while marine invertebrate spermatozoa have a reported detection limit approaching the femto-molar scale (Guerrero et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "8c7c381e-a0dc-41ea-976f-f196eb53ec2c",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C11",
+      "claim": "Viral infection of microbes augments the process of microbial uptake of metabolites and organic material and is a principal mechanism for transforming live biomass to readily available organic matter.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral infection of microbes augments this process and is a principal mechanism (Moran et al., 2022; Evans and Brussaard, 2012) for transforming live biomass to readily available organic matter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "9fbe616d-535a-4756-a2da-6eea750fceaf",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C12",
+      "claim": "Chemotaxis is essential in initiating bacterial infections and pathogenicity for both animals and plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, chemotaxis is essential in initiating bacterial infections and pathogenicity for both animals and plants (Matilla and Krell, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "f7678b13-1d01-4737-979f-bc1b96c49928",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C13",
+      "claim": "In gastric infections pathogenic organisms rapidly colonize surfaces via chemotaxis, where a range of attractants from urea to amino acids and metals are presumed to enable localization and colonization on the host epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in gastric infections pathogenic organisms rapidly colonize surfaces via chemotaxis, where a range of attractants from urea to amino acids and metals are presumed to enable localization and colonization on the host epithelium (Keilberg and Ottemann, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "37d37a0f-a7be-4f06-bba5-655536e77cdb",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C14",
+      "claim": "The MCD uses serial dilution to simultaneously perform six parallel bacterial chemotaxis assays that span five orders of magnitude in chemostimulant concentration on a single chip.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present a novel microfluidic multiplexed chemotaxis device (MCD) which uses serial dilution to simultaneously perform six parallel bacterial chemotaxis assays that span five orders of magnitude in chemostimulant concentration on a single chip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the manuscript describing the device capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "147a2786-aed7-4a2d-9e8d-84c2c6fecaf8",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C15",
+      "claim": "The MCD was validated by comparing the measured chemotactic response of Vibrio alginolyticus to a standard microfluidic assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We first validated the dilution and gradient generation performance of the MCD, and then compared the measured chemotactic response of an established bacterial chemotaxis system (Vibrio alginolyticus) to a standard microfluidic assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "797422e7-894d-4b00-8c5f-5022a2f03545",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C16",
+      "claim": "The MCD's versatility was assessed by quantifying the chemotactic responses of different bacteria (Psuedoalteromonas haloplanktis, Escherichia coli) to different chemoattractants and chemorepellents.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, the MCD's versatility was assessed by quantifying the chemotactic responses of different bacteria (Psuedoalteromonas haloplanktis, Escherichia coli) to different chemoattractants and chemorepellents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experiments performed to demonstrate device versatility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "a7d5e8e0-32aa-4d9f-9f07-fb569a1ab721",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C18",
+      "claim": "The device is fabricated from polydimethylsiloxane (PDMS) in two layers.",
+      "claim_type": "EXPLICIT",
+      "source": "The device is fabricated from polydimethylsiloxane (PDMS) in two layers (Materials and methods; Figure 1c\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the fabrication method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "c421ae77-750a-43bd-9d2d-dc91f2cf468c",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C20",
+      "claim": "The measured cell distributions from the MCD showed excellent statistical agreement with single assay results based on the S\u00f8rensen similarity metric.",
+      "claim_type": "EXPLICIT",
+      "source": "The measured cell distributions from the MCD (Figure 2g) were compared to the single assay results (Figure 2e) by calculating the S\u00f8rensen similarity metric (Cha, 2007) for each attractant concentration, showing excellent statistical agreement between the two assays (Figure 2i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison result shown in Figure 2i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "5034a323-677c-4bd9-a783-abdcc061b2bd",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C22",
+      "claim": "The single assay results required six different dilutions, cell solutions, and devices, and with three replicates per condition, required 18 individual assays.",
+      "claim_type": "EXPLICIT",
+      "source": "The single assay results (Figure 2e and f) required six different dilutions, cell solutions, and devices, and with three replicates per condition, required 18 individual assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental requirements for the comparison method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "c8dd280e-6978-425b-a279-0977f124b3c4",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C23",
+      "claim": "The MCD collected the same data as 18 single assays in only three automated assays.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the MCD collected the same data (Figure 2g and h) in only three automated assays, and did not require culture changes eliminating inconsistencies due to variations in growth media, dilution errors, or growth conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of experimental efficiency between methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "afc5bd0d-8b22-4b4e-b828-a406e87977af",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C24",
+      "claim": "The MCD fully screens both microbe and stimulus pairings with three replicates in approximately 1 hour with a single cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "The MCD fully screens both microbe and stimulus pairings with three replicates in \u2248 1 hour with a single cell culture, including the bench time associated with preparing the solutions (Figure 2h).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the time efficiency of the MCD.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "76d8dca7-7832-4d85-adf9-3c75f9d04360",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C27",
+      "claim": "Leucine has been identified as an important metabolite in human health and marine environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Separately, the amino acid leucine has been identified as an important metabolite in human health (Yang et al., 2020) and marine environments (Ferrer-Gonz\u00e1lez et al., 2021; Johnson et al., 2020), and it serves as a measure of prokaryote heterotrophic activity from viral lysis in deep-sea environments (Winter et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "9aeaaa5e-d6a7-424e-b0e9-f90b46b60039",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C28",
+      "claim": "Leucine serves as a measure of prokaryote heterotrophic activity from viral lysis in deep-sea environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Separately, the amino acid leucine has been identified as an important metabolite in human health (Yang et al., 2020) and marine environments (Ferrer-Gonz\u00e1lez et al., 2021; Johnson et al., 2020), and it serves as a measure of prokaryote heterotrophic activity from viral lysis in deep-sea environments (Winter et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "3844a7b8-e238-4617-9dd9-550e195ea0db",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C29",
+      "claim": "Leucine was previously reported as an attractant for marine prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously reported as an attractant for marine prokaryotes (Barbara and Mitchell, 2003), we verify the positive chemotactic response of V. alginolyticus to leucine through rapid chemotaxis screening using the MCD (Figure 3c and d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "bd82a15f-c43e-491f-a518-5da1861a9119",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C30",
+      "claim": "V. alginolyticus exhibits a positive chemotactic response to leucine.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously reported as an attractant for marine prokaryotes (Barbara and Mitchell, 2003), we verify the positive chemotactic response of V. alginolyticus to leucine through rapid chemotaxis screening using the MCD (Figure 3c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from the MCD shown in Figure 3c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "559ba840-7e2d-4968-a06d-6ca1dda3730d",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C31",
+      "claim": "P. haloplanktis is a rapid-swimming, monotrichous marine bacterium that is a model organism for chemotaxis to amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "P. haloplanktis is a rapid-swimming, monotrichous marine bacterium that is a model organism for chemotaxis to amino acids (Barbara and Mitchell, 2003) and exhibits strong chemotaxis towards cellular exudates (Seymour et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "930daf16-af9b-4999-8e19-e93b6811cdd7",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C32",
+      "claim": "P. haloplanktis exhibits strong chemotaxis towards cellular exudates.",
+      "claim_type": "EXPLICIT",
+      "source": "P. haloplanktis is a rapid-swimming, monotrichous marine bacterium that is a model organism for chemotaxis to amino acids (Barbara and Mitchell, 2003) and exhibits strong chemotaxis towards cellular exudates (Seymour et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "77fffe53-5c5d-4996-ac42-138a169ed7f4",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C33",
+      "claim": "P. haloplanktis utilizes a run-reverse-flick foraging strategy for efficient chemotaxis in patchy chemical landscapes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to V. alginolyticus, it utilizes a run-reverse-flick foraging strategy (Son et al., 2016) for efficient chemotaxis in patchy chemical landscapes (Stocker et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "7a89bcb1-2859-4215-bc8c-f73d230638a6",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C34",
+      "claim": "P. haloplanktis exhibited a monotonically increasing chemotactic response with increasing serine concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "P. haloplanktis exhibited a monotonically increasing chemotactic response (Figure 3f) with increasing serine concentration, qualitatively comparable to the response of V. alginolyticus to leucine (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from the MCD shown in Figure 3f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "b1f97e93-5d57-4b6a-93e6-0791ddcc5653",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C35",
+      "claim": "E. coli uses the bundling and unbundling of its multiple flagella to perform run-tumble motility for migrating up or down chemical gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the marine prokaryotes, E. coli is a pathogenic bacterium, which uses the bundling and unbundling of its multiple flagella to perform run-tumble motility for migrating up or down chemical gradients (Adler, 1966; Berg and Brown, 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "3ca2d17c-56c6-4429-ac61-05a91ed8440e",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C36",
+      "claim": "E. coli has served as the canonical organism for bacterial motility and chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli has served as the canonical organism for bacterial motility and chemotaxis (Adler, 1966; Berg and Brown, 1972; Cremer et al., 2019; Mattingly et al., 2021) and has been instrumental in our understanding of logarthimic-sensing (Lazova et al., 2011; Kalinin et al., 2009) and chemical navigation in complex physical environments (Bhattacharjee et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "f79f8710-a11b-4d30-a4a8-401cf49d1146",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C37",
+      "claim": "E. coli has been instrumental in our understanding of logarithmic-sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli has served as the canonical organism for bacterial motility and chemotaxis (Adler, 1966; Berg and Brown, 1972; Cremer et al., 2019; Mattingly et al., 2021) and has been instrumental in our understanding of logarthimic-sensing (Lazova et al., 2011; Kalinin et al., 2009) and chemical navigation in complex physical environments (Bhattacharjee et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "2be933f8-4299-455d-a9fc-6bdf3b73b935",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C38",
+      "claim": "E. coli has been instrumental in our understanding of chemical navigation in complex physical environments.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli has served as the canonical organism for bacterial motility and chemotaxis (Adler, 1966; Berg and Brown, 1972; Cremer et al., 2019; Mattingly et al., 2021) and has been instrumental in our understanding of logarthimic-sensing (Lazova et al., 2011; Kalinin et al., 2009) and chemical navigation in complex physical environments (Bhattacharjee et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "42603d38-2b2c-4dbf-a3da-908439f09bd9",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C39",
+      "claim": "E. coli has a strong chemotactic response to intermediate serine concentrations (C2).",
+      "claim_type": "EXPLICIT",
+      "source": "A single MCD assay reveals that E. coli has a strong chemotactic response to intermediate serine concentrations (C2; Figure 3g and h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from the MCD shown in Figure 3g and h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "92087d83-9efa-4880-8867-311bd9393c22",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C41",
+      "claim": "The observation that E. coli's response to serine diminishes at high and low concentrations reflects E. coli's affinity for serine, but toxicity at high concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation reflects E. coli's affinity for serine (Yang et al., 2015), but toxicity at high concentrations (Neumann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is supported by citations to prior research on E. coli's serine response.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "de5aeea3-57a2-400e-ab65-36bba65f582f",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C42",
+      "claim": "At higher serine concentrations (C1), the initial accumulation of E. coli is delayed in time.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, at higher concentrations (C1), the initial accumulation is delayed in time (Figure 3h), a feature that is also consistent with the chemotactic sensitivity of E. coli to serine (Son et al., 2016; Bhattacharjee et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from Figure 3h, with citations supporting the interpretation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "9a327fc6-b79d-479e-80f5-7938110c4ef0",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C46",
+      "claim": "The lack of an optimal concentration in the response of V. alginolyticus to leucine likely indicates a higher saturation threshold in the relevant chemoreceptors, relative to its serine response.",
+      "claim_type": "EXPLICIT",
+      "source": "Separately, the lack of an optimal concentration in the response of V. alginolyticus to leucine likely indicates a higher saturation threshold in the relevant chemoreceptors, relative to its serine response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the experimental data, indicated by the word 'likely'.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "2ef8b5bf-2181-44cd-a5fd-d1b619d649c3",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C47",
+      "claim": "Herringbone micromixers generate a three-dimensional flow to induce chaotic mixing.",
+      "claim_type": "EXPLICIT",
+      "source": "These structured microchannel surfaces generate a three-dimensional flow to induce chaotic mixing, and thus significantly reduce the mixing length (Stroock et al., 2002) and the overall footprint of the device (Materials and methods; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research on herringbone micromixers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "3125eec8-3003-43fc-bc60-ed95d67b685b",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C48",
+      "claim": "Herringbone micromixers significantly reduce the mixing length and the overall footprint of the device.",
+      "claim_type": "EXPLICIT",
+      "source": "These structured microchannel surfaces generate a three-dimensional flow to induce chaotic mixing, and thus significantly reduce the mixing length (Stroock et al., 2002) and the overall footprint of the device (Materials and methods; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and reference to experimental validation in the supplement.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "9904a351-0b56-40c3-a18b-1681504b0bc2",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C49",
+      "claim": "The accuracy of the serial dilution process was experimentally confirmed.",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve the targeted chemostimulus concentrations in the dilution layer, the microfluidic network was designed using hydraulic circuit theory (Materials and methods; Figure 1\u2014figure supplement 2), and the accuracy of the serial dilution process was experimentally confirmed (Figure 1j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "8da6a8bf-f59a-4ed4-9055-67a644ecc87e",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C50",
+      "claim": "The resulting concentration profiles were found to be highly consistent across the various observation regions and for different driving pressures.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting concentration profiles were found to be highly consistent across the various observation regions and for different driving pressures (Figure 1\u2014figure supplement 3c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 3c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "233fdb6a-2cc0-4d19-b762-1cf4738c66c3",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C52",
+      "claim": "For both flow rates tested, the mixing criterion (DOM \u2264 0.05) is met after 9 complete herringbone ridge cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "For both flow rates, this criterion is met after 9 complete herringbone ridge cycles, and a final design with 26 herringbone cycles was chosen for the MCD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from the mixing performance characterization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "b6fdf57b-921d-433b-9daa-46f3867d134d",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C53",
+      "claim": "A final design with 26 herringbone cycles was chosen for the MCD.",
+      "claim_type": "EXPLICIT",
+      "source": "For both flow rates, this criterion is met after 9 complete herringbone ridge cycles, and a final design with 26 herringbone cycles was chosen for the MCD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design decision based on the mixing performance data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "28db79db-21a1-404d-957c-8fc41997edc2",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C54",
+      "claim": "The mean percent difference of the measured widths of the chemical, cell, and buffer solution relative to the theoretical widths was only 2.6%, 3.0%, and 1.8%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean percent difference of the measured widths of the chemical, cell, and buffer solution relative to the theoretical widths (Materials and methods) was only 2.6%, 3.0%, and 1.8%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the flow stratification validation experiments described in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "868cd338-9f43-49db-a545-9ec30a58d05d",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C55",
+      "claim": "V. alginolyticus was chosen due to its well-documented chemotaxis and prevalence within marine microbial communities.",
+      "claim_type": "EXPLICIT",
+      "source": "V. alginolyticus swims with a run-reverse-flick motility pattern, and it was chosen due to its well-documented chemotaxis (Altindal et al., 2011; Son et al., 2013; Xie et al., 2011) and prevalence within marine microbial communities (Baker-Austin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "d7880e88-97d0-4bef-888b-08edd1fcabca",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C56",
+      "claim": "V. alginolyticus swims with a run-reverse-flick motility pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "V. alginolyticus swims with a run-reverse-flick motility pattern, and it was chosen due to its well-documented chemotaxis (Altindal et al., 2011; Son et al., 2013; Xie et al., 2011) and prevalence within marine microbial communities (Baker-Austin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about V. alginolyticus motility.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "0716f02f-79a7-41f1-8d37-9eef0b394253",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C58",
+      "claim": "The reversal in chemotactic motility at high serine concentrations is most likely due to the relatively high concentration of V. alginolyticus, which rapidly consumes the available serine at the top of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "This is most likely due to the relatively high concentration of V. alginolyticus, which rapidly consumes the available serine at the top of the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental observation, indicated by 'most likely'.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "8e5157b5-820d-472d-a634-a4e8e611778c",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C60",
+      "claim": "Sample size in each replicate chemotaxis experiment ranged from 7000 to 16,000 measured cell positions, dependent on the strain used for each particular assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Sample size in each replicate chemotaxis experiment ranged from 7000 to 16,000 measured cell positions, dependent on the strain used for each particular assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample sizes used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "f2918913-2924-4464-9111-7be9cb99e533",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C61",
+      "claim": "The MCD can be easily reset by simply exchanging the cell suspension with a fresh suspension and restarting the flow.",
+      "claim_type": "EXPLICIT",
+      "source": "If replacing the cell suspension is necessary, the MCD can be easily reset by simply exchanging the cell suspension with a fresh suspension and restarting the flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the operational capability of the device.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "d95aa047-f935-4d30-a884-7b65f4fe31e9",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C62",
+      "claim": "The MCD ensures consistent chemical concentrations across different experiments due to its robust serial dilution process and requirement of only a single chemostimulus preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "Because it uses a robust serial dilution process and requires the preparation of a single chemostimulus (C0), the MCD ensures consistent chemical concentrations across different experiments, a crucial factor when working with microorganisms having femto- to nanomolar chemotactic sensitivities (Mao et al., 2003; Guerrero et al., 2010; Altindal et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the device's capabilities based on its design, with citations supporting the importance of consistency.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "5b8a3d9b-1a3b-4c79-b4bc-01f0451442f8",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C63",
+      "claim": "The MCD design is amenable to a range of modifications including alteration of chemical concentrations, gradients and flows, and increased multiplexing.",
+      "claim_type": "EXPLICIT",
+      "source": "The MCD design is amenable to a range of modifications to tailor its application, including but not limited to, alteration of chemical concentrations, gradients and flows, and increased multiplexing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential flexibility of the device design.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "77254f3e-7a1d-4128-b8f3-8bd30a85171e",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C64",
+      "claim": "The design could be altered to enable the retrieval of chemotaxing cells from the individual observation regions for additional downstream analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the design could be altered to enable the retrieval of chemotaxing cells from the individual observation regions for additional downstream analysis (Mao et al., 2003; Takagi et al., 2005; Gurung et al., 2020; Konishi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential modifications, with citations to related work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "bb912d06-031f-4cdb-872f-099f8012f79c",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C65",
+      "claim": "The serial dilution layer hydraulic circuit design can be modified to produce specific dilution ratios (i.e. linear or logarithmic).",
+      "claim_type": "EXPLICIT",
+      "source": "The serial dilution layer hydraulic circuit design can be modified to produce specific dilution ratios (i.e. linear or logarithmic; Sugiura et al., 2010; Walker et al., 2007), where optimization of the device layout can expand the number of different chemical conditions probed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about design flexibility, with citations to prior work on serial dilution.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "0cbd3629-e693-488a-af37-fe194d6659ec",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C66",
+      "claim": "The MCD can be operated using steady flow to study chemotaxis in slow-moving, surface attached microorganisms.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the MCD can be operated using steady flow (Ahmed et al., 2010; Li Jeon et al., 2002) to study chemotaxis in slow-moving, surface attached microorganisms in systems such as neutrophil chemotaxis (Li Jeon et al., 2002) and biofilm formation (Boyeldieu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about operational flexibility, with citations to related applications.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "5f6d8efa-a528-430a-8a0f-f84383ba7159",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C69",
+      "claim": "The multi-layer dilution layer requires the precision of a mask aligner for fabrication.",
+      "claim_type": "EXPLICIT",
+      "source": "Typical microfluidic devices consist of a single layer and can be fabricated in most cleanrooms, but the multi-layer dilution layer (Figure 1\u2014figure supplement 4) does require the precision of a mask aligner (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a fabrication requirement of the device.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "77b349f4-f402-42e9-89d7-8731d1176a9a",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C70",
+      "claim": "If mask aligner facilities are not available, microchannel molds can be fabricated using other techniques such as 3D printing and micromilling.",
+      "claim_type": "EXPLICIT",
+      "source": "If such facilities are not available, microchannel molds can be fabricated using other techniques such as 3D printing (Su et al., 2023) and micromilling (Guckenberger et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about alternative fabrication methods, with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "abc6941c-e235-4d16-95d6-b9e2ed2c3d25",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C71",
+      "claim": "In the current mode of operation, each observation channel is only imaged once every approximately 8 s.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current mode of operation, each observation channel is only imaged once every approximately 8  s, which is usually insufficient to identify swimming speed changes or changes in motility patterns associated with chemotaxis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the current imaging approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "24db7618-2edd-4a92-9673-07d2e14358d6",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C72",
+      "claim": "The imaging frequency limitation could be mitigated by capturing a short video at each visit to the observation channels, but it will also decrease the overall sampling frequency across concentration conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This issue could be mitigated by capturing a short video at each visit to the observation channels, but it will also decrease the overall sampling frequency across concentration conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a potential solution and its trade-off.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "cc82f5bd-d5b3-443d-9a57-211f856bead6",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C73",
+      "claim": "The MCD could simplify the study of microbial chemotaxis, which is paramount to understanding and modeling diverse problems including global scale carbon and nutrient cycling.",
+      "claim_type": "EXPLICIT",
+      "source": "This engineered microfluidic device could simplify the study of microbial chemotaxis, which is paramount to understanding and modeling diverse problems including global scale carbon and nutrient cycling (Moran et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential impact, with a citation supporting the importance of the application.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "7cfb2db4-7276-4c8a-a6d8-5501694f4fed",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C74",
+      "claim": "The MCD technology could be applied to accelerate microfluidic approaches to human health studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Such technology could also be applied to accelerate microfluidic approaches to human health studies (Song et al., 2018; Atmaramani et al., 2019; Harimoto et al., 2022; Chen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications, with citations to related work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "fe1013b8-5951-4923-aa97-57e2d0495633",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C75",
+      "claim": "Microfluidics have been identified as a potential means for meeting the high-throughput demands of chemical synthesis, screening, and testing with living cells, applications that remain key issues in drug discovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Microfluidics have been identified as a potential means for meeting the high-throughput demands of chemical synthesis, screening, and testing with living cells, applications that remain key issues in drug discovery (Dittrich and Manz, 2006) and in meeting the challenge of antibiotic-resistant microbes (Qin et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "2d11b3e4-44b1-4913-be05-6f5912889ecc",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "claim_id": "C76",
+      "claim": "Microfluidics have been identified as a potential means for meeting the challenge of antibiotic-resistant microbes.",
+      "claim_type": "EXPLICIT",
+      "source": "Microfluidics have been identified as a potential means for meeting the high-throughput demands of chemical synthesis, screening, and testing with living cells, applications that remain key issues in drug discovery (Dittrich and Manz, 2006) and in meeting the challenge of antibiotic-resistant microbes (Qin et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "29bcef4a-8106-42ec-8b1b-c5b8f47fbbaf",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The MCD is a two-layer PDMS microfluidic device that performs six parallel bacterial chemotaxis assays spanning five orders of magnitude in chemostimulant concentration using serial dilution and herringbone micromixers. The device's dilution accuracy, mixing performance, flow stratification symmetry, and gradient consistency were experimentally validated across multiple driving pressures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C18, C47-C54 collectively demonstrate successful device design and validation. The serial dilution process was experimentally confirmed (C49, Figure 1j), mixing performance met design criteria after 9 herringbone cycles (C52), flow stratification showed <3% deviation from theoretical values (C54), and gradient profiles were highly consistent across observation regions (C50). These converging lines of evidence support the device's technical performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "9839d661-4ceb-4fd9-9548-988883198a28",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The MCD was validated against conventional single assay devices using V. alginolyticus chemotaxis to serine, showing excellent statistical agreement (S\u00f8rensen similarity metric) while reducing experimental time from ~6-7 hours (18 individual assays) to ~1 hour (3 automated assays).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C20, C22-C24 provide strong validation evidence. The S\u00f8rensen similarity metric comparison (C20, Figure 2i) quantitatively demonstrates equivalence between methods. The efficiency gains are clearly documented: single assays required 18 individual experiments (C22) versus 3 MCD assays (C23) completed in ~1 hour (C24). The choice of V. alginolyticus as a validation organism is well-justified (C55).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "c0989947-4b79-4488-952e-ce1ea788fab2",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "V. alginolyticus exhibits positive chemotactic response to leucine, verifying prior reports that leucine is an attractant for marine prokaryotes and confirming its role as an important metabolite in marine environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 demonstrate successful verification of leucine as an attractant using the MCD (Figure 3c-d). The experimental result (C30) is consistent with prior literature (C29), and the biological context (C27-C28) provides appropriate motivation. The data clearly show positive chemotaxis across the concentration range tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "fdae7d64-cc24-4b1e-8ddf-6a8fb5ea59a1",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "P. haloplanktis exhibited a monotonically increasing chemotactic response to serine across the concentration range tested, consistent with its known role as a model organism for amino acid chemotaxis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C34 presents clear experimental data (Figure 3e-f) showing monotonically increasing response. The biological context (C31-C33) appropriately establishes P. haloplanktis as a suitable test organism. The response pattern differs from V. alginolyticus, demonstrating the device's ability to distinguish different chemotactic behaviors across organisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "9e967818-6343-4213-ae1a-b913aad902f0",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "E. coli exhibits strong chemotactic response to intermediate serine concentrations (C2 = 3.6 \u03bcM) with diminished response at high and low concentrations, reflecting serine affinity but toxicity at high concentrations, and delayed accumulation at higher concentrations consistent with known chemotactic sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C41-C42 present experimental observations (Figure 3g-h) with appropriate mechanistic interpretation supported by citations. The peak response at intermediate concentration (C39) and delayed accumulation at high concentration (C42) are clearly documented. The interpretations (C41) are appropriately cautious and supported by prior literature on E. coli serine response.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "8f21827d-fb0c-4674-874c-28176de1d79a",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The lack of optimal concentration in V. alginolyticus response to leucine likely indicates higher saturation threshold in relevant chemoreceptors relative to serine response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C46 is explicitly speculative ('likely indicates') and represents an interpretation of the experimental data without direct mechanistic evidence. While the observation of monotonic response to leucine versus peaked response to serine is valid, the mechanistic explanation regarding chemoreceptor saturation thresholds requires additional experimental validation such as receptor binding studies or dose-response curves at higher concentrations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "1f27cd90-1318-4756-892a-faaac69b211e",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The reversal in chemotactic motility at high serine concentrations is attributed to rapid consumption of available serine by high V. alginolyticus concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C58 is explicitly speculative ('most likely due to') without direct experimental validation. While the observation of reversal is documented, the proposed mechanism of serine depletion requires additional evidence such as direct measurement of serine concentration over time or experiments with varying cell densities to confirm this interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "4e0f27f1-9cd1-454b-9e0f-ec546e3e4286",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The MCD operational characteristics include sample sizes of 7,000-16,000 cell positions per replicate, easy device reset capability, and consistent chemical concentrations across experiments due to robust serial dilution requiring only single chemostimulus preparation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 describe validated operational features. Sample sizes (C60) are clearly stated and appropriate for statistical analysis. Device reset capability (C61) is a straightforward operational feature. The consistency claim (C62) is supported by the validated serial dilution performance (C49) and is appropriately contextualized with citations regarding the importance of consistency for sensitive organisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "63ab016d-97c0-4d5a-bba3-b4ae614c2545",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The MCD design is amenable to various modifications including altered concentrations/gradients/flows, increased multiplexing, cell retrieval for downstream analysis, modified dilution ratios, and steady flow operation for slow-moving or surface-attached microorganisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C66 are explicitly speculative statements about potential modifications ('could be altered', 'can be modified', 'can be operated') without experimental demonstration. While these modifications are plausible based on microfluidic principles and cited prior work, they represent future capabilities rather than validated features of the current device.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "2552c686-a25d-4163-b5cb-a556819e2a01",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The multi-layer dilution layer requires mask aligner precision for fabrication, though alternative techniques like 3D printing and micromilling can be used if mask aligner facilities are unavailable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 accurately describe fabrication requirements and alternatives. The mask aligner requirement (C69) is a straightforward technical specification for the multilayer photolithography process described in Materials and Methods. Alternative fabrication methods (C70) are appropriately cited, providing practical guidance for laboratories without specialized equipment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "1085d1a8-31f5-48cc-8845-1c0f66d61c26",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The current imaging mode captures each observation channel once every ~8 seconds, insufficient for identifying swimming speed or motility pattern changes, though this could be mitigated by capturing short videos at each visit with trade-off of decreased overall sampling frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 honestly acknowledge a technical limitation and propose a potential solution with its trade-off. The 8-second imaging interval (C71) is clearly stated as insufficient for certain analyses. The proposed mitigation (C72) is reasonable but appropriately notes the inherent trade-off, demonstrating balanced assessment of device capabilities and limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    },
+    {
+      "id": "12fc1ba4-5435-411a-ad9b-091894cc2dd0",
+      "content_id": "8d130672-cfdd-4cf3-b3ae-dbd1259123a2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The MCD could simplify microbial chemotaxis studies relevant to global carbon/nutrient cycling, accelerate human health microfluidic approaches, and address high-throughput demands in drug discovery and antibiotic-resistant microbe challenges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C76 are speculative statements about potential applications ('could simplify', 'could be applied') without experimental demonstration in these specific contexts. While the citations establish the importance of these application areas and microfluidics' potential role, the actual utility of the MCD for these specific applications remains to be demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:42:28.401328Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "37d37a0f-a7be-4f06-bba5-655536e77cdb",
+      "result_id": "29bcef4a-8106-42ec-8b1b-c5b8f47fbbaf"
+    },
+    {
+      "claim_id": "a7d5e8e0-32aa-4d9f-9f07-fb569a1ab721",
+      "result_id": "29bcef4a-8106-42ec-8b1b-c5b8f47fbbaf"
+    },
+    {
+      "claim_id": "2ef8b5bf-2181-44cd-a5fd-d1b619d649c3",
+      "result_id": "29bcef4a-8106-42ec-8b1b-c5b8f47fbbaf"
+    },
+    {
+      "claim_id": "3125eec8-3003-43fc-bc60-ed95d67b685b",
+      "result_id": "29bcef4a-8106-42ec-8b1b-c5b8f47fbbaf"
+    },
+    {
+      "claim_id": "9904a351-0b56-40c3-a18b-1681504b0bc2",
+      "result_id": "29bcef4a-8106-42ec-8b1b-c5b8f47fbbaf"
+    },
+    {
+      "claim_id": "8da6a8bf-f59a-4ed4-9055-67a644ecc87e",
+      "result_id": "29bcef4a-8106-42ec-8b1b-c5b8f47fbbaf"
+    },
+    {
+      "claim_id": "233fdb6a-2cc0-4d19-b762-1cf4738c66c3",
+      "result_id": "29bcef4a-8106-42ec-8b1b-c5b8f47fbbaf"
+    },
+    {
+      "claim_id": "b6fdf57b-921d-433b-9daa-46f3867d134d",
+      "result_id": "29bcef4a-8106-42ec-8b1b-c5b8f47fbbaf"
+    },
+    {
+      "claim_id": "28db79db-21a1-404d-957c-8fc41997edc2",
+      "result_id": "29bcef4a-8106-42ec-8b1b-c5b8f47fbbaf"
+    },
+    {
+      "claim_id": "147a2786-aed7-4a2d-9e8d-84c2c6fecaf8",
+      "result_id": "9839d661-4ceb-4fd9-9548-988883198a28"
+    },
+    {
+      "claim_id": "c421ae77-750a-43bd-9d2d-dc91f2cf468c",
+      "result_id": "9839d661-4ceb-4fd9-9548-988883198a28"
+    },
+    {
+      "claim_id": "5034a323-677c-4bd9-a783-abdcc061b2bd",
+      "result_id": "9839d661-4ceb-4fd9-9548-988883198a28"
+    },
+    {
+      "claim_id": "c8dd280e-6978-425b-a279-0977f124b3c4",
+      "result_id": "9839d661-4ceb-4fd9-9548-988883198a28"
+    },
+    {
+      "claim_id": "afc5bd0d-8b22-4b4e-b828-a406e87977af",
+      "result_id": "9839d661-4ceb-4fd9-9548-988883198a28"
+    },
+    {
+      "claim_id": "868cd338-9f43-49db-a545-9ec30a58d05d",
+      "result_id": "9839d661-4ceb-4fd9-9548-988883198a28"
+    },
+    {
+      "claim_id": "d7880e88-97d0-4bef-888b-08edd1fcabca",
+      "result_id": "9839d661-4ceb-4fd9-9548-988883198a28"
+    },
+    {
+      "claim_id": "bd82a15f-c43e-491f-a518-5da1861a9119",
+      "result_id": "c0989947-4b79-4488-952e-ce1ea788fab2"
+    },
+    {
+      "claim_id": "3844a7b8-e238-4617-9dd9-550e195ea0db",
+      "result_id": "c0989947-4b79-4488-952e-ce1ea788fab2"
+    },
+    {
+      "claim_id": "76d8dca7-7832-4d85-adf9-3c75f9d04360",
+      "result_id": "c0989947-4b79-4488-952e-ce1ea788fab2"
+    },
+    {
+      "claim_id": "9aeaaa5e-d6a7-424e-b0e9-f90b46b60039",
+      "result_id": "c0989947-4b79-4488-952e-ce1ea788fab2"
+    },
+    {
+      "claim_id": "7a89bcb1-2859-4215-bc8c-f73d230638a6",
+      "result_id": "fdae7d64-cc24-4b1e-8ddf-6a8fb5ea59a1"
+    },
+    {
+      "claim_id": "559ba840-7e2d-4968-a06d-6ca1dda3730d",
+      "result_id": "fdae7d64-cc24-4b1e-8ddf-6a8fb5ea59a1"
+    },
+    {
+      "claim_id": "930daf16-af9b-4999-8e19-e93b6811cdd7",
+      "result_id": "fdae7d64-cc24-4b1e-8ddf-6a8fb5ea59a1"
+    },
+    {
+      "claim_id": "77fffe53-5c5d-4996-ac42-138a169ed7f4",
+      "result_id": "fdae7d64-cc24-4b1e-8ddf-6a8fb5ea59a1"
+    },
+    {
+      "claim_id": "42603d38-2b2c-4dbf-a3da-908439f09bd9",
+      "result_id": "9e967818-6343-4213-ae1a-b913aad902f0"
+    },
+    {
+      "claim_id": "92087d83-9efa-4880-8867-311bd9393c22",
+      "result_id": "9e967818-6343-4213-ae1a-b913aad902f0"
+    },
+    {
+      "claim_id": "de5aeea3-57a2-400e-ab65-36bba65f582f",
+      "result_id": "9e967818-6343-4213-ae1a-b913aad902f0"
+    },
+    {
+      "claim_id": "b1f97e93-5d57-4b6a-93e6-0791ddcc5653",
+      "result_id": "9e967818-6343-4213-ae1a-b913aad902f0"
+    },
+    {
+      "claim_id": "3ca2d17c-56c6-4429-ac61-05a91ed8440e",
+      "result_id": "9e967818-6343-4213-ae1a-b913aad902f0"
+    },
+    {
+      "claim_id": "f79f8710-a11b-4d30-a4a8-401cf49d1146",
+      "result_id": "9e967818-6343-4213-ae1a-b913aad902f0"
+    },
+    {
+      "claim_id": "2be933f8-4299-455d-a9fc-6bdf3b73b935",
+      "result_id": "9e967818-6343-4213-ae1a-b913aad902f0"
+    },
+    {
+      "claim_id": "9a327fc6-b79d-479e-80f5-7938110c4ef0",
+      "result_id": "8f21827d-fb0c-4674-874c-28176de1d79a"
+    },
+    {
+      "claim_id": "0716f02f-79a7-41f1-8d37-9eef0b394253",
+      "result_id": "1f27cd90-1318-4756-892a-faaac69b211e"
+    },
+    {
+      "claim_id": "8e5157b5-820d-472d-a634-a4e8e611778c",
+      "result_id": "4e0f27f1-9cd1-454b-9e0f-ec546e3e4286"
+    },
+    {
+      "claim_id": "f2918913-2924-4464-9111-7be9cb99e533",
+      "result_id": "4e0f27f1-9cd1-454b-9e0f-ec546e3e4286"
+    },
+    {
+      "claim_id": "d95aa047-f935-4d30-a884-7b65f4fe31e9",
+      "result_id": "4e0f27f1-9cd1-454b-9e0f-ec546e3e4286"
+    },
+    {
+      "claim_id": "5b8a3d9b-1a3b-4c79-b4bc-01f0451442f8",
+      "result_id": "63ab016d-97c0-4d5a-bba3-b4ae614c2545"
+    },
+    {
+      "claim_id": "77254f3e-7a1d-4128-b8f3-8bd30a85171e",
+      "result_id": "63ab016d-97c0-4d5a-bba3-b4ae614c2545"
+    },
+    {
+      "claim_id": "bb912d06-031f-4cdb-872f-099f8012f79c",
+      "result_id": "63ab016d-97c0-4d5a-bba3-b4ae614c2545"
+    },
+    {
+      "claim_id": "0cbd3629-e693-488a-af37-fe194d6659ec",
+      "result_id": "63ab016d-97c0-4d5a-bba3-b4ae614c2545"
+    },
+    {
+      "claim_id": "5f6d8efa-a528-430a-8a0f-f84383ba7159",
+      "result_id": "2552c686-a25d-4163-b5cb-a556819e2a01"
+    },
+    {
+      "claim_id": "77b349f4-f402-42e9-89d7-8731d1176a9a",
+      "result_id": "2552c686-a25d-4163-b5cb-a556819e2a01"
+    },
+    {
+      "claim_id": "abc6941c-e235-4d16-95d6-b9e2ed2c3d25",
+      "result_id": "1085d1a8-31f5-48cc-8845-1c0f66d61c26"
+    },
+    {
+      "claim_id": "24db7618-2edd-4a92-9673-07d2e14358d6",
+      "result_id": "1085d1a8-31f5-48cc-8845-1c0f66d61c26"
+    },
+    {
+      "claim_id": "cc82f5bd-d5b3-443d-9a57-211f856bead6",
+      "result_id": "12fc1ba4-5435-411a-ad9b-091894cc2dd0"
+    },
+    {
+      "claim_id": "7cfb2db4-7276-4c8a-a6d8-5501694f4fed",
+      "result_id": "12fc1ba4-5435-411a-ad9b-091894cc2dd0"
+    },
+    {
+      "claim_id": "fe1013b8-5951-4923-aa97-57e2d0495633",
+      "result_id": "12fc1ba4-5435-411a-ad9b-091894cc2dd0"
+    },
+    {
+      "claim_id": "2d11b3e4-44b1-4913-be05-6f5912889ecc",
+      "result_id": "12fc1ba4-5435-411a-ad9b-091894cc2dd0"
+    }
+  ],
+  "comparisons": []
+}

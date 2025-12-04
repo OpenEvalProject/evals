@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C61",
+      "C62"
+    ],
+    "result": "The mammary epithelium consists of two distinct cell lineages (luminal epithelial and myoepithelial cells), with luminal epithelia exhibiting substantial age-dependent changes and being the putative cells-of-origin for breast cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C61 establish the bilayer structure with established knowledge and immunofluorescence data (Figure 1A). Claims C2, C3, and C62 are well-supported by the experimental data throughout the manuscript showing age-dependent changes in LEPs and their role in breast cancer, with C3 and C62 citing established literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Genome-wide loss of lineage-specific expression occurs with age, with 4,040 genes showing lineage-specific differential expression in younger women decreasing to 3,345 genes in older women, and 1,022 genes losing lineage-specific expression with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 are directly supported by differential expression analysis results with appropriate statistical thresholds (adj. p<0.001, abs(lfc)\u22651). The data show consistent patterns of decreased fold changes between lineages in older cells (C24, C25), supporting the loss of lineage fidelity phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C36",
+      "C37"
+    ],
+    "result": "Age-dependent changes in mammary epithelia involve both directional changes (differential expression) and increased transcriptional variance (differential variability), with directional changes almost exclusively in luminal epithelia while variant responses occur in both lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 and C36-C37 are supported by comprehensive DE and DV analyses. C7 is strongly supported by 471 DE genes in LEPs vs. 29 in MEPs (C28). C37 demonstrates that DV contributes 27% to loss of lineage fidelity, comparable to DE's 21% contribution (C35), establishing both mechanisms as important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Luminal epithelial cells show extensive age-dependent differential expression (471 genes) compared to myoepithelial cells (29 genes), with 82% of differentially expressed genes in LEPs changing toward MEP-like patterns, including 88% of transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 are directly supported by age-dependent DE analysis with appropriate statistical thresholds (adj. p<0.05). The extreme lineage bias (471 vs. 29 genes) is striking and well-documented. The directional changes toward MEP-like expression (C31, C33) are quantified and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Age-dependent differential expression explains only a limited fraction (9-21%) of the observed loss of lineage-specific expression, indicating that other mechanisms contribute to loss of lineage fidelity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C35 are directly reported from mechanistic analysis of loss of lineage fidelity. The quantification is clear and demonstrates that DE alone cannot explain the majority of lineage fidelity loss, motivating the investigation of differential variability as an alternative mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Loss of lineage fidelity with age disrupts cell-cell communication, with 224 lineage-specific ligand-receptor pairs identified in young cells and 74 pairs disrupted in older cells due to loss of lineage-specific expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C27 are supported by ligand-receptor pair analysis using published LRP databases. The identification of 224 LRPs and disruption of 74 with age is clearly documented. However, the functional consequences of these disruptions are inferred rather than directly demonstrated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Gene set enrichment analysis reveals significant modulation of hallmark pathways with age in both LEPs (17 gene sets by DE, 5 by DV) and MEPs (20 gene sets by DE, 7 by DV), including cancer-associated pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are directly supported by GSEA analysis with appropriate statistical thresholds (adj. p<0.05). The identification of specific numbers of modulated gene sets is clearly documented. The biological interpretation linking these to cancer pathways is reasonable given the gene sets identified (MYC targets, E2F targets, etc.).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Age-dependent gene expression changes in LEPs are detectable in bulk breast tissue, with genes upregulated in young LEPs enriched in tissue from younger women and genes upregulated in old LEPs enriched in tissue from older women, including significant downregulation of SATB1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C43 are supported by GSEA analysis of bulk tissue (GSE102088) showing significant enrichment (adj. p=0.012 and 0.006). C44 is supported by DE analysis in both LEPs and bulk tissue (adj. p<0.05). This demonstrates that LEP-specific changes contribute to tissue-level aging signals despite cellular heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "SATB1 expression is lowest in PAM50 Luminal A, Luminal B, and Her2 breast cancer subtypes compared to Basal and Normal-like subtypes, is downregulated in these cancers relative to matched normal tissue, and 26 SATB1-target genes show age-dependent differential expression in LEPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by analysis of TCGA data with appropriate statistical tests (post hoc Wilcoxon adj. p<0.0001 for C45). The connection between SATB1 downregulation in aging LEPs and in luminal cancers is compelling. However, the causal relationship between SATB1 dysregulation and cancer development is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C9",
+      "C49",
+      "C50",
+      "C69"
+    ],
+    "result": "Gap junction protein GJB6 shows increased expression variance with age and mediates non-cell autonomous aging, as demonstrated by co-culture experiments where GJB6 knockdown in older MEPs prevents them from imposing an older biological age on younger LEPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C9, C49, C50, and C69 are supported by Lepage test analysis (p<0.05) and experimental validation through co-culture experiments with shRNA knockdown. The experimental design is appropriate, using ELF5 expression as a validated biological age marker. However, the mechanism (gap junction-mediated communication vs. other connexin functions) remains incompletely characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C70",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Age-dependent genes in LEPs predict breast cancer subtypes and distinguish normal from cancer tissue, with 98% of age-dependent DE and DV genes differentially expressed between PAM50 subtypes, and a machine learning classifier achieving 100% and 93.3% accuracy in distinguishing normal from cancer in two test sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by comprehensive analysis of TCGA data and machine learning validation. The ML model performance is strong (C52) with appropriate train/test splits and independent validation. The finding that DV genes are strong predictors of luminal subtypes but not Basal subtypes (C55) is particularly interesting and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "FACS-enriched LEPs and MEPs from HMEC primary cultures express canonical lineage markers and maintain lineage specificity comparable to uncultured primary organoids, with 17,328 genes showing consistent lineage-specific expression (R\u00b2=0.88-0.91).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by flow cytometry data (Figure 1C, Figure 1\u2014figure supplement 1F) and RNA-seq analysis showing high correlation between cultured and uncultured cells. This validation is critical for establishing that the culture system preserves lineage-specific biology. The linear regression statistics are strong (R\u00b2\u22650.88, p<0.0001).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Loss of lineage fidelity is statistically defined as decreased magnitude of gene expression differences between LEPs and MEPs with age, manifested as shifts in distributions of fold changes to smaller values in the older cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by statistical analysis (Kolmogorov-Smirnov test, p<0.0001) shown in Figure 1E. This provides a rigorous statistical definition of the loss of lineage fidelity phenomenon, which is essential for quantitative analysis throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Loss of lineage fidelity leads to enrichment of genes and biological processes commonly dysregulated in cancers and alters the LEP-MEP interactome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by functional enrichment analysis and ligand-receptor pair analysis. The connection between loss of lineage fidelity and cancer-related processes is demonstrated through multiple lines of evidence including GSEA, pathway analysis, and LRP disruption analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Age-dependent changes in LEPs reflect dysregulation of biological processes convergent with breast cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by GSEA and functional enrichment analyses showing enrichment of cancer-related pathways (MYC targets, E2F targets, p53 pathway, etc.) in age-dependent gene sets. The convergence with cancer biology is demonstrated through multiple analytical approaches including pathway analysis and machine learning classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The degree and variability of age-dependent changes across individuals may explain differential susceptibility to breast cancer initiation and subtype development, with luminal epithelia serving as integration sites for variant aging responses and representing biosensors of cancer susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C74 are speculative conclusions based on the integration of findings. While the data support that age-dependent changes in LEPs are associated with cancer-related processes and can predict cancer subtypes, the causal relationship between individual variability in aging responses and differential cancer susceptibility is not directly demonstrated. These are reasonable hypotheses that require prospective validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62"
+    ],
+    "result": "Background and context claims establish the foundation for the study, including breast cancer epidemiology, prior work on aging and breast tissue, mammary epithelial cell biology, and the HMEC culture system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 and C56-C62 are supported by citations to published literature and established knowledge in the field. These provide appropriate context and justification for the study. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  }
+]

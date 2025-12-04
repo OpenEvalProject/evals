@@ -1,0 +1,2054 @@
+{
+  "submission": {
+    "id": "bced5561-a1c9-435f-b38e-651085092c45",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:45:10.752778Z",
+    "updated_at": "2025-12-04T02:45:10.752778Z"
+  },
+  "content": [
+    {
+      "id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "submission_id": "bced5561-a1c9-435f-b38e-651085092c45",
+      "content_type": "manuscript",
+      "content_text": "# ECS1 and ECS2 suppress polyspermy and the formation of haploid plants by promoting double fertilization\n\n## Authors\n\n- Yanbo Mao<sup>1</sup> ([ORCID: 0000-0001-5520-8202](https://orcid.org/0000-0001-5520-8202))\n- Thomas Nakel<sup>1</sup> ([ORCID: 0000-0001-9033-5987](https://orcid.org/0000-0001-9033-5987))\n- Isil Erbasol Serbes<sup>1</sup> ([ORCID: 0000-0001-7854-1243](https://orcid.org/0000-0001-7854-1243))\n- Saurabh Joshi<sup>1</sup> ([ORCID: 0000-0002-4354-6762](https://orcid.org/0000-0002-4354-6762))\n- Dawit G Tekleyohans<sup>1</sup> ([ORCID: 0000-0001-7383-5971](https://orcid.org/0000-0001-7383-5971))\n- Thomas Baum<sup>1</sup>\n- Rita Gro\u00df-Hardt<sup>1</sup> ([ORCID: 0000-0003-1998-0507](https://orcid.org/0000-0003-1998-0507)) \u2020\n\n### Affiliations\n\n1. University of Bremen, Centre for Biomolecular Interactions Bremen Germany ([ROR:04ers2y35](https://ror.org/04ers2y35))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe current pace of crop plant optimization is insufficient to meet future demands and there is an urgent need for novel breeding strategies. It was previously shown that plants tolerate the generation of triparental polyspermy-derived plants and that polyspermy can bypass hybridization barriers. Polyspermy thus has the potential to harness previously incompatible climate-adapted wild varieties for plant breeding. However, factors that influence polyspermy frequencies were not previously known. The endopeptidases ECS1 and ECS2 have been reported to prevent the attraction of supernumerary pollen tubes by cleaving the pollen tube attractant LURE1. Here, we show that these genes have an earlier function that is manifested by incomplete double fertilization in plants defective for both genes. In addition to supernumerary pollen tube attraction, ecs1 ecs2 mutants exhibit a delay in synergid disintegration, are susceptible to heterofertilization, and segregate haploid plants that lack a paternal genome contribution. Our results thus uncover ECS1 and ECS2 as the first female factors triggering the induction of maternal haploids. Capitalizing on a high-throughput polyspermy assay, we in addition show that the double mutant exhibits an increase in polyspermy frequencies. As both haploid induction and polyspermy are valuable breeding aims, our results open new avenues for accelerated generation of climate-adapted cultivars.\n\n## Introduction\n\nSexually reproducing organisms have evolved a plethora of ingenious tools to make gamete fusion a safe event (Iwao et al., 2020; Tekleyohans and Gro\u00df-Hardt, 2020; Toda and Okamoto, 2020). The production of supernumerary sperm is commonly found in both animals and plants, but this strategy comes with the risk of polyspermy. While polyspermy is lethal in most animals, molecular and genetic evidence for supernumerary sperm fusion in plant egg cells has long been lacking, and so has knowledge of the fate of a polyspermy-derived egg cell. In 2008 Rod Scott et al. made elegant use of Arabidopsis thaliana tes mutants, which form pollen with supernumerary sperm, to show that, similar to animal systems, polyspermy in the egg cell is typically prevented by an efficient polyspermy block (Scott et al., 2008). However, Toda et al., 2016 were later able to artificially bypass the polyspermy block using delicate electrofusion experiments and combined two sperms with a single egg to generate polyploid plants.\n\nIn 2017, we provided molecular and genetic evidence of egg polyspermy in planta capitalizing on a high-throughput polyspermy detection (HIPOD) assay, which was established in the Landsberg erecta accession (Nakel et al., 2017). The assay consists of two pollen donors, that contain the individual elements of the yeast GAL4-UAS two-component system. The elements control expression of a herbicide resistance conferring gene, that consequently only gets activated if both paternal constructs are combined in a single egg cell. This enables the generation and identification of plants with three parents, one mother and two fathers (Nakel et al., 2017). Using a modified HIPOD assay that allows detection of embryos from three parents based on seed color, we also showed that polyspermy can specifically affect the egg cell, such that DNA of the second father bypasses DNA control mechanisms of the endosperm (Mao et al., 2020). This has significant implications for plant breeding, where the introduction of beneficial traits, for example from heat or drought-adapted wild species, is often prevented by hybridization barriers of the endosperm.\n\nPlants can also be exposed to an insufficient number of fertilization-competent sperm (Aw et al., 2010; Cyprys et al., 2019; Mori et al., 2006; Ron et al., 2010; Takahashi et al., 2018; von Besser et al., 2006) in which case they activate a fertilization recovery program: The mechanism is triggered when fertilization in one of the female gametes stalls at the level of plasmo - or karyogamy and includes a transient halt of second synergid disintegration and concomitant attraction of supernumerary pollen tubes (Beale et al., 2012; Kasahara et al., 2012; Maruyama et al., 2013). This recovery program allows for recruitment of further sperm transporting pollen tubes and hence constitutes an important back-up mechanism.\n\nVarious proteases have previously been associated with the cortical reaction in animals, a fertilization-induced exocytosis of secretary granules that mediates a biochemical renovation of the egg coat to prevent further sperm entry (Burkart et al., 2012; Haley and Wessel, 1999). Based on the analysis of more than 450,000 seedlings, we here and in a preprint (Mao et al., 2022) show that the aspartic endopeptidases ECS1 and ECS2 repress polyspermy. The defect is associated with a transient delay in synergid disintegration, supernumerary pollen tube attraction, and heterofertilization which are characteristic features of the fertilization recovery program (Beale et al., 2012; Kasahara et al., 2012; Maruyama et al., 2013). In fact, we show that a fraction of ecs1 ecs2 double mutants exhibit defects in gamete fusion and segregate seeds lacking paternally contributed fluorescence marker either in embryo or endosperm indicative of single fertilization events. These results are in line with a recent report by Jiang et al., 2022 concordantly showing that ECS1 and ECS2 are required for gamete attachment. Furthermore, we show that the double mutants segregate haploid plants, as later confirmed by Zhang et al., 2023. ECS1 and ECS2 have previously been demonstrated to prevent the attraction of supernumerary pollen tubes by cleaving the pollen tube attractant LURE1 (Yu et al., 2021), indicating that polytubey is prevented by at least two different functions of ECS1 and ECS2.\n\n## Results and discussion\n\n### The aspartic proteases ECS1 and ECS2 negatively regulate polyspermy and the formation of triparental offspring\n\nECS1 and ECS2 were identified in a candidate gene approach for factors regulating polyspermy: T-DNA insertion lines for egg cell-expressed proteases, that is, ecs1, ecs2-1, ecs2-2 single mutants, and ecs1 ecs2-1 double mutants were subjected to HIPOD by synchronously applying the pollen of two fathers onto the stigmatic surface. One father contained a construct providing constitutive expression of the yeast transcription factor mGAL4-VP16 while the second father was engineered to express a herbicide conferring YFP-tagged BAR gene under the GAL4 responsive promoter UAS (Figure 1A). The resulting seedlings were subjected to herbicide selection (Figure 1B) and resistant plants were inspected under the fluorescence microscope for YFP expression (Figure 1C). The fusion of one egg cell with two sperm cells is expected to yield triploid rather than diploid offspring, which was demonstrated by flow cytometry (Figure 1D). Finally, we confirmed the triparental status of the seedlings by PCR, which revealed inheritance of GAL4 and UAS from the two genetically distinct fathers (Figure 1E). For wild-type Columbia plants, we recovered 19 triparental seedlings out of 92,680 seeds, corresponding to a polyspermy frequency of 0.041%. This is significantly higher than the polyspermy frequency previously recovered for the Landsberg accession (Nakel et al., 2017), and experimentally re-assessed in this study (Figure 1F). By comparison, we detected an up to threefold increase in polyspermy frequencies in ecs1 ecs2-1 double mutants among the 77,441 seedlings analyzed (Figure 1G). ECS1 and ECS2 are hence the first molecular factors demonstrated to affect egg polyspermy and three parent formation in plants.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85832/elife-85832-fig1-v2.jpg)\n\n**Figure 1.:** (A) Illustration of the high-throughput polyspermy detection (HIPOD) assay. The two components of the yeast GAL4-UAS system are provided by distinct pollen donors (pollen donor 1, yellow and pollen donor 2, blue) such that herbicide resistance (green seedling) is only conferred if the mGAL4 transcription factor and the UAS-driven BAR_YFP protein are combined in a single egg (grey). (B\u2013D) Herbicide treatment (B), YFP fluorescence (C), ploidy analysis (D) of triparental triploid plants (TP), and biparental diploid plants (BP). (E) PCR targeting pUAS::BAR-YFP (blue) and pRPS5A::mGAL4-VP16 (yellow) in a herbicide-resistant plant recovered from HIPOD (1), pUAS::BAR-YFP/\u2009+\u2009(2), pRPS5A::mGAL4-VP16/\u2009+\u2009 (3), wild-type control (4), water control (5). (F) Polyspermy frequency (Psf) following crosses of either wild-type Ler (pollen acceptor) or wild-type Col-0 (pollen acceptor) with Ler pollen donor 1 and Ler pollen donor 2. (G) Polyspermy frequency in ecs1 ecs2 mutants compared to wild type and a rescue line harboring ecs1 ecs2 pECS1::gECS1-YFP. (H) ECS1-YFP and ECS2-YFP localization before fertilization in the corresponding transgenic plants of pECS1::ECS1-YFP and pECS2::ECS2-YFP. Arrow indicates egg cell. (I) Promoter activity analysis using NLS-tdTomato expression driven by a promoter fragment upstream of either ECS1 or ECS2. The arrow points to the egg cell nucleus. Scale bars, 5 mm (B), 50 \u03bcm (C) and (I), 20 \u03bcm (H).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85832/elife-85832-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) PCR targeting pRPS5A::mGAL4-VP16 (left) and pUAS::BAR-YFP (right) of 24 herbicide-resistant plants recovered from ecs1/- ecs2-1/+ heterozygotes (TP1-24) subjected to HIPOD. M, 1kb plus DNA ladder. (B) PCR targeting wild type (left) and ecs2-1 allele (right). M, 1kb plus DNA ladder.\n\nWe confirmed that this phenomenon was causally linked to ECS1 by introducing a pECS1::gECS1-YFP rescue construct, which restored triparental frequencies to wild-type levels (Figure 1G). We next asked whether the polyspermy defect was of gametophytic origin. To answer this, we performed the polyspermy assay in ecs1/ecs1, ecs2-1/ECS2 background, where each gynoecium is expected to segregate a 1:1 ratio of double and single mutant gametophytes. We first assessed ecs2-1 segregation in the reference offspring population that was not herbicide treated by genotyping PCR and found an ECS2:ecs2-1 ratio of 109:97, in line with the expected 1:1 segregation ratio. We furthermore reasoned that the segregation of the ecs2-1 mutant allele would be enhanced in the triparental offspring if the absence of ECS2 in the female gametophyte positively affects polyspermy. Following herbicide selection of 78,338 seedlings, we recovered 24 triparental plants (Figure 1\u2014figure supplement 1A), of which 18 plants exhibited an ecs2-1 tDNA-specific PCR product (Figure 1\u2014figure supplement 1B), corresponding to an ECS2:ecs2-1 ratio of 6:18. This finding fits well with the threefold increase in polyspermy frequency found in ecs1 ecs2-1 double mutants. In addition, analysis of YFP-tagged ECS1 and ECS2 fusion proteins, as well as pECS1::NLS-tdTomato and pECS2::NLS-tdTomato promoter reporter constructs revealed that ECS1 and ECS2 are exclusively expressed in the egg cell prior to fertilization (Figure 1H and I). Together, these results indicate a gametophytic origin of the polyspermy defect.\n\n### ecs1 ecs2 mutants are defective in gamete fusion and activate a fertilization recovery program\n\nMaking use of aniline blue staining, we found the reproductive defect to be associated with an 8.4% increase in supernumerary pollen tube attraction (Figure 2A). Polytubey in ecs1 ecs2-1 double mutants was also reported by Yu et al., 2021, who provide a compelling set of experiments to show that the endopeptidases cleave specific variants of LURE1. In contrast to Yu et al., 2021, however, we observed reproductive defects, reflected by 13% abnormal seeds (Figure 2B). To investigate whether the phenotype was causally linked to ECS1 and ECS2, we first generated a second double mutant using the independent ecs2-2 allele, which exhibited similar defects in seed development (Figure 2B and Figure 2\u2014figure supplement 1A). Second, we introduced pECS1:gECS1-YFP and pECS2:gECS2-YFP into the ecs1 ecs2 double mutants and demonstrated that each of the constructs restored fertility (Figure 2B and Figure 2\u2014figure supplement 1A). Our results thus indicate that the seed defect in ecs1 ecs2 double mutants is caused by loss of ECS1 and ECS2. To determine whether the defect was due to the role of ECS1 and ECS2 in the male or female reproductive tissue, we conducted reciprocal crosses between the double mutant and wild type. While the introduction of the mutant alleles from the female crossing partner recapitulated the defect, the reciprocal cross yielded fertile seeds, suggesting that the defect was of female origin (Figure 2\u2014figure supplement 1B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85832/elife-85832-fig2-v2.jpg)\n\n**Figure 2.:** (A) Occurrence of polytubey in ecs1 ecs2 mutants 20 hr after pollination (HAP) (n=1039/835/1070 for wild type/ecs1 ecs2-1/ecs1 ecs2-2, respectively). Circles represent data recovered from individual pistils. The images indicate one pollen tube (left) or two pollen tubes (right) targeting an embryo sac. Pollen tube is highlighted by a yellow arrow. (B) Silique of wild-type and ecs1 ecs2 mutants with quantification of seed abortion in different genotypes (n>800 for each genotype). Circles represent data recovered from individual siliques. Arrowheads, aborted seeds. Different letters show significant difference; p<0.0001, F=106.0, by one-way ANOVA with a Tukey multiple comparison test. (C) Cleared whole mount and quantitative analysis of ecs1 ecs2 mutant seed categories 3 days after pollination (DAP): In comparison to wild-type like seeds containing embryo and endosperm, ecs1 ecs2 mutants segregate seeds without embryo (I) and seeds containing no or retarded endosperm (II) (n=655/540/522 for wild type/ecs1 ecs2-1/ecs1 ecs2-2, respectively). Circles represent data recovered from individual pistils. Embryo and unfertilized egg cells were false colored in yellow (wild type) and orange (mutant). Asterisk in image; unfertilized egg nucleus; arrowhead, endosperm nucleus. Similar results for (B) and (C) were obtained in independent experiments by a different scientist (data shown in Figure 2\u2014figure supplement 1A and Figure 2-figure supplement 1D). Data in (A\u2013C) are represented in box and whisker plot, center line, median; bottom and up, 25th and 75th percentiles. Whisker, the minimum and maximum. Two-tailed Mann-Whitney comparison test between wild type and mutants. Scale bars, 50 \u03bcm (A) and (C), 500 \u03bcm (B). **p<0.01; ***p<0.001; ****p<0.0001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85832/elife-85832-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Frequency of seed abortion in different genotypes. Upper row, representative images of the siliques of wild-type and ecs1 ecs2-1 plants. Arrowheads indicate aborted seeds and the asterisk indicates an undeveloped seed, which are both counted as seed abortion. (B) Abnormal seed formation in plants resulting from crosses between different genotypes (n=614/375/382/395 for WT \u00d7 WT/ecs1 ecs2-1\u00d7 WT/ WT\u00d7 ecs1 ecs2-1/ecs1 ecs2-1\u00d7 ecs1 ecs2-1, respectively). Arrowheads, aborted seeds. Data indicates mean values \u00b1 SD; **p<0.01; ****p<0.0001 (Mann-Whitney comparison test). (C) Frequencies of ovules containing mature female gametophytes (FGs) (n=419/398/424 for WT/ecs1 ecs2-1/ecs1 ecs2-2, respectively). Central cell nucleus, black arrowhead; synergid (syn) nucleus, white arrowhead; egg nucleus, asterisk. Brightness was manually enhanced with Adobe Photoshop in (C). (D) Quantitative analysis of ecs1 ecs2 mutant seed categories 3 days after pollination (DAP): In comparison to wild-type like seeds, seeds without embryo (I) and seeds containing no or retarded endosperm (II) were observed (n=356/295/366 for wild-type/ecs1 ecs2-1/ecs1 ecs2-2, respectively). Scale bar, 250 \u03bcm (A), 500 \u03bcm (B), 20 \u03bcm (C).\n\nTo further narrow down the reproductive defect, we performed a comprehensive analysis of cleared whole mounts of mutant and wild-type seeds at different developmental stages. Prior to fertilization, ecs1 ecs2 female gametophytes exhibited a morphology similar to that of wild type (Figure 2\u2014figure supplement 1C). Three days after pollination, however, we observed 8.1% of seeds that failed to develop an embryo and 7.1% of seeds that exhibited defects in endosperm development (Figure 2C and Figure 2\u2014figure supplement 1D).\n\nTogether, the above-described results suggest a defect after or during fertilization. The latter scenario, that is, a defect in gamete fusion, has been shown to activate a fertilization recovery program, which delays synergid disintegration in order to attract additional pollen tubes (Beale et al., 2012; Kasahara et al., 2012; Maruyama et al., 2013). When comparing young ecs1 ecs2 seeds with wild type, we indeed found that supernumerary pollen tube attraction correlates with a significant increase of synergid-containing seeds at the two-nucleate endosperm stage (Figure 3A). Overall progression of seed development between mutant and wild type was comparable (Figure 3\u2014figure supplement 1A) and ecs1 ecs2 synergid nuclei eventually degenerated (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85832/elife-85832-fig3-v2.jpg)\n\n**Figure 3.:** (A) Frequency of seeds containing a synergid nucleus at different endosperm stages (n for 2nES = 67/72, 4nES = 143/158, and 8nES = 179/141 for wild type/ecs1 ecs2-1, respectively). The image shows the second synergid nucleus at the two-nucleate endosperm stage. (B) Quantitative analyses of single fertilizations 8-10 HAP in ecs1 ecs2 (n=90) and wild-type ovules (n=89) using HTR10-mRFP. Successful double fertilization (DF) is visualized by two dispersed sperm nuclei signals (arrow heads). In the middle and right panel, only one dispersed sperm cell nuclear signal (arrow heads) can be observed, while an additional sperm nuclear signal (arrows) is condensed suggesting the unfertilized state. The positions of the dispersed sperm signals correspond to the position of central cell (middle) and egg cell (right), respectively, and thus suggest different single fertilization patterns (CC-F and EC-F). (C\u2013E) Analyses of seed development 3 days after dual pollination. (C) Diagram of the dual pollination experiment. (D) Successful double fertilization by a single pollen tube from either pRPS5A::H2B_tdTomato (left panel) or pRPS5A::H2B_GFP (middle panel). Heterofertilization involving the content of two genetically distinct pollen tubes is depicted in the right panel. Endosperm nuclear signal (arrow heads), embryo nuclear signal (arrows). (E) Percentage of heterofertilization events in wild type (n=276) and ecs1 ecs2-1 (n=284) ovules. (F) Fluorescence signal in 6-day-old progenies of ecs1ecs2-1 female plants upon paternal introduction of pRPS5A::H2B-tdTomato. WT: wild-type like seeds, showing paternal marker expression in both embryo and endosperm. Only EN (I): paternal marker expression only in endosperm. Only EM (II): paternal marker expression only in embryo. Dotted line; embryo, yellow arrowhead; sperm nuclei. (G) Percentage of 6-day-old progenies of ecs1ecs2-1 or wild-type female plants crossed with pRPS5A::H2B-tdTomato, showing paternal marker expression in different fertilized tissues. (H) Assessment of paternally introduced marker expression in endosperm (EN) and embryo (EM) of 6-day-old siliques in ecs1 ecs2-1 or wild type. The ecs1 ecs2-1 seeds were divided into a normally looking and an abnormal seed fraction and analyzed individually. EM+EN; expression in both embryo and endosperm. (G) and (H), n=349/332 for wild type/ecs1 ecs2-1, respectively. Brightness was manually enhanced with Adobe Photoshop in (A\u2013C). Data in (A), (B), (G), and (H) indicate mean \u00b1 SD. Two-tailed Mann-Whitney comparison test between wild type and mutants, *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001. Scale bars, 20 \u03bcm (A), 25 \u03bcm (B), 75 \u00b5m (D), 50 \u03bcm (F).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85832/elife-85832-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Developmental stage of wild type and ecs1 ecs2-1 seeds 20 hr after pollination (HAP): Categories detected are two-, four- and eight-nucleate endosperm stage (2nES, 4nES, and 8nES) (n=389/371 for WT/ecs1 ecs2-1, respectively). No statistically significant differences detected on the basis of either Student\u2019s t-test or Mann-Whitney comparison test. (B) Frequency of unfused sperm cells at the micropylar end in wild-type and ecs1 ecs2-1 ovules fertilized with pollen from pHTR10::HTR10-mRFP transgenic plants 1 day after pollination (DAP).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85832/elife-85832-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Characteristic double fertilization (DF) pattern with two dispersed sperm nuclei indicative of gamete fusion (arrow heads). (B\u2013C) Ovules with only one dispersed sperm nucleus in either the position of the central cell (B) or egg cell (C). Arrow heads and arrows indicate the position of the uncondensed and condensed nucleus, respectively. Upper, differential interference contrast (DIC) channel; middle, red fluorescence; bottom, overlay. Scale bar, 25 \u03bcm. Brightness was manually enhanced with Adobe Photoshop.\n\nOur observations suggest a defect at the level of egg-sperm fusion in line with Jiang et al. However, they conflict with work by Yu et al., 2021 and Zhang et al., 2023 which reported that the defect manifests only during early embryo development. To gain a more detailed understanding of the mutant defect, we capitalized on an observation described by Takahashi et al. according to which the condensation status of sperm nuclei relaxes upon gamete fusion. Upon fertilization of ecs1 ecs2 with HTR10-RFP (Ingouff et al., 2007) labeled sperm cells, we observed a pair containing two decondensed sperm nuclei signals in the wild type, indicating successful double fertilization (Figure 3B and Figure 3\u2014figure supplement 2). In the ecs1 ecs2 mutants, we frequently detected a pair of sperm nuclei that differed in the condensation status analogous to the single fertilization pattern described by Takahashi et al., 2018. In one category the more dispersed signal corresponded to egg cell, (EC-F) in the other to central cell (CC-F) position indicating single fertilizations of either central (CC-F) or egg cell (EC-F) (Takahashi et al., 2018; Figure 3B and Figure 3\u2014figure supplement 2). This is in line with later observations using the same experimental setup, where we detect an increase of unfused sperm nuclei in ecs1 ecs2 double mutants over wild type (Figure 3\u2014figure supplement 1B).\n\nIn a complementary experiment we confirmed the fertilization defect and an active fertilization recovery program by genetic evidence: It was previously shown that egg and central cell can be fertilized by sperm from different pollen, making this so called heterofertilization a hallmark of single fertilization and an active recovery program (Maruyama et al., 2013): To visualize heterofertilization we pollinated ecs1 ecs2 pistils with pollen from two distinct fathers carrying either pRPS5A::H2B-GFP or pRPS5A::H2B-tdTomato (Figure 3C\u2013E). While we did not detect heterofertilization in wild-type (n=276), ecs1 ecs2 mutants (n=284) exhibited a small fraction of seeds where the two fertilization products (egg and central cell) had inherited different fluorophores provided by the two different pollen donors (1.8%) (Figure 3D\u2013E). This frequency is comparable to the one described by Maruyama et al., which observed heterofertilization using gamete fusion defective kokopelli sperm (Maruyama et al., 2013).\n\n### ecs1 ecs2 segregate maternal haploids\n\nThe early fertilization defect implies that the inheritance of paternal DNA is compromised in ecs1 ecs2 mutants. To characterize this further we analyzed transmission of a paternally introduced pRPS5a::H2B_tdTomato marker (Figure 3F). While the majority of wild-type seeds showed a fluorescence signal in both endosperm and embryo, a significant number of ecs1 ecs2 mutants contained seeds without paternal marker expression in the embryo (10.9%) or the endosperm (9.7%) (Figure 3G). When comparing marker distribution between aborted and normal seeds, we detected a relative enrichment of seeds without paternal contribution in the endosperm in the aborted seed fraction (Figure 3H), stressing the importance of a paternal endosperm contribution for seed development. Intriguingly, among the normal looking seeds we detected a fraction that lacked a paternal contribution in the embryo (Figure 3H).\n\nThis observation prompted us to trace the fate of such seeds. We inspected in total 200 ecs1 ecs2 double mutant-derived plants and identified seven plants exhibiting short siliques and small flowers (Figure 4A). Flow cytometry revealed that all seven plants exhibited a haploid-characteristic signature, indicating that only one set of chromosomes had been inherited (Figure 4B and Figure 4\u2014figure supplement 1). To substantiate this result, we performed a complementary approach and determined the chromosome number by chromosome spread. A. thaliana contains five different chromosomes and in the diploid Col-0 accession used in this study they exist in two copies. Notably, in nuclei of plants with short siliques and small flowers, we detected 5 instead of 10 chromosomes (Figure 4C), confirming the haploid nature of these plants. To determine whether these haploids were of maternal origin, we conducted inter-accession crosses combining diploid ecs1 ecs2 in the Col-0 background with wild-type Ler accession. We recovered eight haploid plants out of 934 F1 seedlings (Figure 4\u2014figure supplement 2) and profiled accession-dependent restriction fragment length polymorphisms (RFLPs) for each of the five chromosomes. We only detected polymorphisms specific for Col-0 on all chromosomes in all eight haploids (Figure 4D and Figure 4\u2014figure supplement 3), indicating that only the maternal genome had been inherited. Such maternal induction of haploidy has only been reported in a recent preprint for the gynoecium-expressed phospholipase AII (pPLAII\u03b3) (Jang et al., 2022) and these examples differ conceptionally from earlier reported haploid inducers, which operate through selective elimination of aberrant paternal chromosomes (Gilles et al., 2017; Karimi-Ashtiyani et al., 2015; Kelliher et al., 2017; Khanday et al., 2019; Li et al., 2021; Liu et al., 2017; Ravi and Chan, 2010; Underwood et al., 2022; Zhong et al., 2020; Zhong et al., 2019).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85832/elife-85832-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013C) Inflorescence (A), flow cytometry (B), and DAPI stained chromosome spreads (C) of diploid (2n) wild-type and haploid (1n) ecs1 ecs2 plant (n=200, see also Figure 4\u2014figure supplement 1). Brightness was manually enhanced with Adobe Photoshop in (A). The arrowhead and arrow point at a small flower and an undeveloped silique, respectively. (D) Accession-dependent restriction fragment length polymorphisms (RFLPs) in the hybrid progeny from a cross of ecs1 ecs2 mutant in Col-0 background (green) with Ler wild type pollen (blue). Scale bars, 5 mm (A), 2 \u03bcm (C). (E) Schematic model illustrating causes and consequences of an active fertilization recovery program in ecs1 ecs2. Left panel: Double fertilization of both, egg and central cell, induces synergid disintegration in wild type. Right panel: Defects in double fertilization in ecs1 ecs2 (egg cell or central cell only) result in delayed synergid disintegration and concomitant attraction of supernumerary pollen tubes increasing the likelihood of polyspermy (blue arrows). In addition, the fertilization defect contributes to seed abortion and can infrequently result in the generation of haploid plants (orange arrows). Dotted lines indicate incomplete penetrance of the respective phenotype. m and p indicate the segregation of maternal and paternal genomes, respectively. Note that according to Yu et al., 2021 the attraction of supernumerary pollen tubes is additionally controlled by ECS1/2-meditated LURE1 cleavage after fertilization.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85832/elife-85832-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Flow cytometry analysis of diploid (2n) wild-type, diploid ecs1 ecs2, and six haploid (1n) ecs1 ecs2 plants. The haploid profile is highlighted by yellow color.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85832/elife-85832-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A\u2013 C) Inflorescence (A), flow cytometry (B), and DAPI stained chromosome spreads (C) of haploid (1n) ecs1 ecs2 and diploid (2n) plants derived from a cross of ecs1 ecs2 mutant (Col-0) with wild type (Ler).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85832/elife-85832-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Analysis of accession-characteristic RFLPs on different chromosomes (Chr.) in haploid offsprings (1n F1), Col-0, Ler, different ratios of Ler:Col-0 DNA (DNAmix), cross between two different accessions (Col-0 and Ler), H2O.\n\nThe segregation of haploid plants in ecs1 ecs2 mutants has similarly been observed by Zhang et al., 2023. However, in contrast to our work and the report by Jiang et al., 2022, Zhang et al. describe that the defect of ecs1 ecs2 double mutants is triggered by semigamy post fertilization. According to previous work, semigamy scenarios would be expected to infrequently result in inheritance of paternal signatures (Gerlach-Cruse, 1970; Lanaud, 1988; Rao and Narayana, 1980) which was, thus far, neither observed by Zhang et al. nor us. Such a scenario would thus require the existence of an additional, previously undiscovered mechanism for the selective elimination of paternal wild-type DNA.\n\nSeveral factors regulating gamete fusion have been described (Aw et al., 2010; Cyprys et al., 2019; Mori et al., 2014; Mori et al., 2006; Rademacher and Sprunck, 2013; Ron et al., 2010; Sprunck et al., 2012; Takahashi et al., 2018; Tian et al., 2018; von Besser et al., 2006). Among these, the sperm-specific AtDMP8 and AtDMP9 and the pollen-specific NLD have been implicated in haploid induction (Gilles et al., 2017; Kelliher et al., 2017; Liu et al., 2017; Zhong et al., 2020). It will be an interesting task for the future to determine whether other gamete fusion defective mutants similarly give rise to haploids or whether this phenotype uncovers an additional function of ECS1 and ECS2. In addition, it will be interesting to determine whether the activation of the fertilization recovery program is typically associated with increased polyspermy rates.\n\nIn summary, our and previous data suggest that ECS1 and ECS2 function at the level of gamete fusion (Jiang and Qu, 2023; Jiang et al., 2022; Mao et al., 2022) and support the coordination of double fertilization. Thus, single fertilization of egg or central cell can be observed in ecs1 ecs2 double mutants that contributes to seed abortion and can infrequently result in the generation of haploid plants. It also leads to delayed synergid disintegration and concomitant attraction of supernumerary pollen tubes. The supply of additional sperm cells can either lead to successful fertilization recovery or the induction of polyspermy (Figure 4E). It was recently reported that following successful double fertilization ECS1/2 are secreted and play a role in degradation of LURE peptides (Yu et al., 2021). To what extent this process in addition contributes to supernumerary pollen tube attraction is currently unclear.\n\nTaken together, we have shown that ECS1 and ECS2 regulate offspring genome size via haploid and polyspermy induction, two agriculturally highly relevant mechanisms. This is particularly important, as the current pace of crop plant optimization is insufficient to meet future demand (Hickey et al., 2019). ECS1 and ECS2 provide molecular clues opening up new avenues for the introduction and/or combination of agricultural relevant traits.\n\n## Materials and methods\n\n### Plant material and growth conditions\n\nAll experiments were performed with A. thaliana L., ecotype Col-0 or Ler. The seeds were sown on soil. Two days after stratification at 4\u00b0C, they were transferred and germinated in a Conviron MTPS growth chamber under long-day conditions (16 hr light/8 hr dark) at 23\u00b0C. Plants were transferred into 18\u00b0C after bolting. T-DNA insertion mutants SALK_021086 (ecs1), SALK_090795 (ecs2-1), SALK_036333 (ecs2-2) were obtained from European Arabidopsis Stock Center (NASC) (Nottingham, UK).\n\n### Plasmid construction and plant transformation\n\nThe promoter and gene fragments of ECS1 and ECS2 were amplified from Arabidopsis Col-0 by using YM76s/as and YM78s/as and introduced into pUAS::BASTA-YFP (Nakel et al., 2017) using AscI/NotI restriction sites. The resulting constructs were then transformed into ecs1 ecs2 double mutants by floral dip (Zhang et al., 2006). To generate pECS1/2::NLS-tdTomato transgenic plants, the promoter region of ECS1 and ECS2 was individually amplified from Col-0 by the respective primer pair YM76s/86as and YM78s/87as. The resulting fragment was then subcloned into DR13 plasmid (pAt5g40260::NLS-tdTomato) (V\u00f6lz et al., 2013) through AscI/PacI restriction sites. Primer sequences used for genotyping and plasmid construction are listed in Supplementary file 1.\n\n### Histology and microscopy\n\nFor the analysis of mature female gametophytes, the oldest closed flower buds were emasculated and harvested 2 days later. For the analysis of seed development, the emasculated flowers were manually pollinated and collected as specified in the figure legends. For whole-mount clearings, samples were treated with acetic acid/ethanol (vol/vol=1:9) overnight, washed in a 80%, 70%, and 50% ethanol series and mounted in chloral hydrate:glycerol:water (8:2:1; wt:vol:vol)(Gross-Hardt et al., 2007). For each experiment, more than five emasculated flowers or pollinated pistils were analyzed. With regard to the determination of persistent synergid cell, more than 10 pistils 19\u201321 hr after pollination (HAP) were scored and the data from the pistils containing less than 10 fertilized ovules were excluded. Cleared whole-mount ovules and seeds were analyzed under Zeiss Axioscope (Zeiss, Oberkochen, Germany) and the images were captured by Canon PowerShot G10 camera. Mature siliques were dissected and observed under Leica S6E or S8apo stereomicroscope (Leica, Germany).\n\nFor aniline blue staining, pistils were collected 20 HAP and processed as described previously (Mori et al., 2006). This experiment was analyzed for each genotype with two technical replicates. Supernumerary pollen tube attraction was examined using an epi\ufb02uorescence inverted microscope (Leica DMI6000b) with DAPI filter.\n\n### Triparental plant screening\n\nTo determine the occurrence of polyspermy-induced triparental plants, HIPOD screening was applied as previously described (Nakel et al., 2017). Two to three closed flower buds per inflorescence were emasculated. Two to three days after emasculation, pollen grains collected from plants of pRPS5A::mGAL4-VP16/+ (pollen donor 1, PD1) and pUAS::BAR-YFP /+ (pollen donor 2, PD2) were applied onto the stigmatic surface. Landsberg erecta accession was used for PD1 and PD2. The resulting mature seeds were sown on soil and the plants were subjected to herbicide treatment. The triparental status of herbicide-resistant plants was confirmed by flow cytometry, fluorescence microscopy inspection, and PCR targeting of the GAL4 and UAS loci.\n\n### Chromosome spread\n\nTo detect the exact chromosome number in the diploid and haploid plants, chromosome spreads from pollen mother cells were prepared according to published protocols (Ross et al., 1996).\n\n### Ploidy analysis\n\nLeaves of ecs1 ecs2 plants or herbicide-resistant plants from HIPOD screenings were subjected to flow cytometry as previously described (Nakel et al., 2017).\n\n### Statistical analysis\n\nData sets were processed in Microsoft Excel. Bar charts, box and whisker plots, as well as all statistical tests were generated using Microsoft Excel or GraphPad Prism.\n",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "84b59e43-a0bd-4227-83e8-3fba828cd75e",
+      "submission_id": "bced5561-a1c9-435f-b38e-651085092c45",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Hao Yu, https://ror.org/01tgyzw49 National University of Singapore & Temasek Life Sciences Laboratory Singapore\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85832.sa0](https://doi.org/10.7554/eLife.85832.sa0)\n\nThis important work convincingly shows that the endopeptidases ECS1 and ECS2 repress the formation of polyspermy-derived triparental offspring and haploid induction by promoting double fertilization. While the underlying mechanisms remain to be further elucidated, the data presented in this study represent a valuable foundation for understanding the regulation of offspring genome size. This study will be of particular interest to the large community of scientists who are interested in plant reproduction and breeding.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Hao Yu, https://ror.org/01tgyzw49 National University of Singapore & Temasek Life Sciences Laboratory Singapore\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85832.sa1](https://doi.org/10.7554/eLife.85832.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"ECS1 and ECS2 suppress polyspermy and the formation of haploid plants by promoting double fertilization\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by the Reviewing Editor, Hao Yu, and J\u00fcrgen Kleine-Vehn as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Sharon A Kessler (Reviewer #1); Tomoko Igawa (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. As the single fertilization events seem to be the most prominent phenotype in this study, additional evidence of single fertilization is necessary to determine whether the defects in ECS1 and ECS2 indeed influence gamete fusion.\n\n2. This manuscript should be improved by providing clearer data analysis and descriptions (e.g. Figure 3), images with higher resolution or better representation (e.g. Figures 2B and 3B), and extra image data (e.g. the DIC image of the synergid nucleus in the embryo-only and endosperm-only ecs1 ecs2 ovules).\n\n3. More discussions should be provided in the context of several recent studies reporting ECS1/2, and regarding the potential roles of ECS1/2 peptidases in regulating gamete fusion and/or repressing parthenogenesis.\n\nPlease also take into consideration the other specific comments from the reviewers below to revise the manuscript.\n\nReviewer #1 (Recommendations for the authors):\n\nVery interesting story, but the presentation of the data in the text was a little confusing since it starts out with triploids, moves on to single fertilization, and ends with haploids but there is not a clear connection made for how all of these phenotypes relate to problems regulating gamete fusion. I'd suggest adding another paragraph at the end that brings these concepts together a little more clearly. It might be helpful to note that the single fertilization events seem to be the most prominent phenotype while the haploid induction and triparental triploids are quite rare. What does this tell us about the wild-type function of ECS1/2?\n\nReviewer #2 (Recommendations for the authors):\n\nAlthough Zhang et al. have published similar data on haploid formation, the authors had released bioRxiv in advance, so I think there's no problem with novelty. The data quality is enough for a short report; however, the present descriptions are confusing and hard to understand soon. Please try to use uniform expressions in the description of each data. In addition, as I suggest in a public view, additional evidence of single fertilization would be critical to determine the ecs1ecs2 influence on gamete fusion. I encourage authors to try this or a similar alternative experiment.\n\nReviewer #3 (Recommendations for the authors):\n\n1. The production of embryo-only seeds in ecs1 ecs2 mutants probably needs more explanation. They claimed that the embryo-only seeds could be observed in ecs1 ecs2 siliques. However, the embryo-only seeds in ecs1 ecs2 siliques are not reported in Jiang et al., (2022) and Zhang et al., (2023). Although the authors provided the reasons that this phenotype might result from the different growth conditions and developmental stages, the explanation is not satisfactory to me. I'm actually curious about one thing, that is, whether the percentage of the ovules with only embryo and arrested sperm cell nuclei is comparable with the percentage of embryo-only seeds (7.1%) in line 143. If they were comparable, the authors probably need to have a deeper discussion on how the egg cell- specifically expressed proteases only affect the interaction between the central cell and sperm cell in those embryo-only seeds. If they were not comparable, I probably have another explanation for these embryo-only seeds, that is, there is a possibility that both of the two sperm cells delivered by one pollen tube (in less pollinated condition) fertilize the egg cell simultaneously due to the polyspermy block defect in ecs1 ecs2 ovules. These ovules were not targeted by the second pollen tube, therefore the central cell did not fertilize in the end. Since the phenotype of having embryo-only seeds was completely not observed in the other two published papers, I would suggest the authors explain the cause of the embryo-only seeds more clearly.\n\n2. In Figure 2B, the images of ecs1 ecs2 mutant siliques are not representative. The authors reported that there were two types of aborted seeds in siliques of ecs1 ecs2 mutants, including embryo-only seeds and endosperm-only seeds (Figure 2C). According to Xiong et al., (2021) and Li et al., (2022), embryo-only seeds do not enlarge and are small dot-like, which are significantly smaller than endosperm-only seeds and normal seeds. I notice that in Figure 2\u2014figure supplement 1B, they showed small dot-like embryo-only seeds and white-but-smaller endosperm-only seeds in the siliques of ecs1 ecs2-1\u00d7ecs1 ecs2-1. Thus, I would suggest the authors provide representative images of siliques of ecs1 and ecs2 which simultaneously show the two types of aborted seeds and mark them respectively in Figure 2B.\n\n3. In Figure 3\u2014figure supplement 1B, I notice that the frequency of unfused sperm cells in ecs1 ecs2 ovules is approximately 15% (in my own calculation), but this ratio is significantly higher than the percentage of polytubey in ecs1 ecs2 mutants (Figure 2A). Therefore, I think that the phenotype of unfused sperm cells can not be fully attributed to and explained by the mechanism that is reported by Yu et al., (2021).\n\n4. The logic about how ECS1 and ECS2 participate in persistent synergid cell degeneration is a little bit confusing. The authors think that the defect of persistent synergid cell degeneration is caused by the defect of gamete fusion. However, in Figure 3A, they provided the persistent synergid cell nucleus in ovules undergoing successful double fertilization. The conclusion and the evidence are two different things. I suggest that the authors show ovules with gamete fusion defect and polytubey to support that persistent synergid cell degeneration is caused by the defect of gamete fusion. For example, provide the DIC image of the synergid nucleus in the embryo-only and endosperm-only ecs1 ecs2 ovules. I also suggest the authors discuss the relationship between ECS1/2 and EIN3/EIL1/EIN2 since the phenotype in figure 3A is very similar to those of ein3 eil1 and ein2 mutants. I'm very much curious about whether the EIN3-dependent ethylene-response cascade that is activated by fertilization of the egg cell is affected in ecs1 ecs2 ovules. Whether the affected cleavage of pollen tube attractant AtLURE1 is related to persistent synergid cell death/nucleus disintegration in ecs1 ecs2 ovules?\n\nIn Figure 3B, what do the \"unfertilized ovules\" indicate? (Based on my understanding, this type of seed has neither embryo nor endosperm). The authors should explain this type of ovule in detail here.\n",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a9d3ce50-7b2c-4ab4-8819-0da98a38f059",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C1",
+      "claim": "The current pace of crop plant optimization is insufficient to meet future demands.",
+      "claim_type": "EXPLICIT",
+      "source": "The current pace of crop plant optimization is insufficient to meet future demands and there is an urgent need for novel breeding strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of crop optimization presented in the abstract without specific data or citation in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "5b49f704-eed2-471b-81da-4445731f61ff",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C2",
+      "claim": "Plants tolerate the generation of triparental polyspermy-derived plants.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously shown that plants tolerate the generation of triparental polyspermy-derived plants and that polyspermy can bypass hybridization barriers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to previous work, indicated by 'It was previously shown'.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "349f3914-6b48-4424-bc89-38d2386cac92",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C3",
+      "claim": "Polyspermy can bypass hybridization barriers.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously shown that plants tolerate the generation of triparental polyspermy-derived plants and that polyspermy can bypass hybridization barriers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to previous work, indicated by 'It was previously shown'.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "cbc38095-1553-4034-b9c6-7f0a87a4d5f4",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C4",
+      "claim": "Polyspermy has the potential to harness previously incompatible climate-adapted wild varieties for plant breeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Polyspermy thus has the potential to harness previously incompatible climate-adapted wild varieties for plant breeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the previous statement about polyspermy bypassing hybridization barriers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "46120511-a0e2-4199-a396-540023c10319",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C5",
+      "claim": "Factors that influence polyspermy frequencies were not previously known.",
+      "claim_type": "EXPLICIT",
+      "source": "However, factors that influence polyspermy frequencies were not previously known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "53835330-c4ab-4977-8b93-4f22c2e8c131",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C6",
+      "claim": "The endopeptidases ECS1 and ECS2 have been reported to prevent the attraction of supernumerary pollen tubes by cleaving the pollen tube attractant LURE1.",
+      "claim_type": "EXPLICIT",
+      "source": "The endopeptidases ECS1 and ECS2 have been reported to prevent the attraction of supernumerary pollen tubes by cleaving the pollen tube attractant LURE1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to previous reports, indicated by 'have been reported'.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "ddef0884-55cf-4339-9a5c-e7c36e7bfb33",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C7",
+      "claim": "ECS1 and ECS2 have an earlier function that is manifested by incomplete double fertilization in plants defective for both genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that these genes have an earlier function that is manifested by incomplete double fertilization in plants defective for both genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, indicated by 'we show'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "d2cd75a2-1b65-499d-81cf-fd16156ce776",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C8",
+      "claim": "ecs1 ecs2 mutants exhibit supernumerary pollen tube attraction.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to supernumerary pollen tube attraction, ecs1 ecs2 mutants exhibit a delay in synergid disintegration, are susceptible to heterofertilization, and segregate haploid plants that lack a paternal genome contribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study describing the phenotype of the mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "acab4f76-7396-4d9d-adc1-c11e700cb20d",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C9",
+      "claim": "ecs1 ecs2 mutants exhibit a delay in synergid disintegration.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to supernumerary pollen tube attraction, ecs1 ecs2 mutants exhibit a delay in synergid disintegration, are susceptible to heterofertilization, and segregate haploid plants that lack a paternal genome contribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study describing the phenotype of the mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "0f30fd36-6659-4faf-a444-9e6e6575b9b3",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C10",
+      "claim": "ecs1 ecs2 mutants are susceptible to heterofertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to supernumerary pollen tube attraction, ecs1 ecs2 mutants exhibit a delay in synergid disintegration, are susceptible to heterofertilization, and segregate haploid plants that lack a paternal genome contribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study describing the phenotype of the mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "4c97396a-8e30-42e6-ac43-cb723c2ee230",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C11",
+      "claim": "ecs1 ecs2 mutants segregate haploid plants that lack a paternal genome contribution.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to supernumerary pollen tube attraction, ecs1 ecs2 mutants exhibit a delay in synergid disintegration, are susceptible to heterofertilization, and segregate haploid plants that lack a paternal genome contribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study describing the phenotype of the mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "f84496ba-2d1c-4f8f-8bce-fe90f7019e25",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C12",
+      "claim": "ECS1 and ECS2 are the first female factors triggering the induction of maternal haploids.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results thus uncover ECS1 and ECS2 as the first female factors triggering the induction of maternal haploids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results showing haploid segregation in the mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "98260846-8602-4b9b-888f-e5a9db9e504a",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C13",
+      "claim": "The ecs1 ecs2 double mutant exhibits an increase in polyspermy frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Capitalizing on a high-throughput polyspermy assay, we in addition show that the double mutant exhibits an increase in polyspermy frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study using the HIPOD assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "40017300-eff2-496d-9a3f-20788ac055d9",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C14",
+      "claim": "Both haploid induction and polyspermy are valuable breeding aims.",
+      "claim_type": "EXPLICIT",
+      "source": "As both haploid induction and polyspermy are valuable breeding aims, our results open new avenues for accelerated generation of climate-adapted cultivars.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge in plant breeding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "032b3e50-c55e-4385-9ea9-13b63e1ed16e",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C15",
+      "claim": "Polyspermy is lethal in most animals.",
+      "claim_type": "EXPLICIT",
+      "source": "While polyspermy is lethal in most animals, molecular and genetic evidence for supernumerary sperm fusion in plant egg cells has long been lacking, and so has knowledge of the fate of a polyspermy-derived egg cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge in animal reproduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "ece2e14d-0d4d-4901-8c7b-6de14ce5ec3b",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C16",
+      "claim": "Molecular and genetic evidence for supernumerary sperm fusion in plant egg cells has long been lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "While polyspermy is lethal in most animals, molecular and genetic evidence for supernumerary sperm fusion in plant egg cells has long been lacking, and so has knowledge of the fate of a polyspermy-derived egg cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the historical state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "bb70c857-72c3-4bf1-a43c-e5b274971479",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C17",
+      "claim": "In 2008 Rod Scott et al. showed that polyspermy in the egg cell is typically prevented by an efficient polyspermy block in Arabidopsis thaliana.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2008 Rod Scott et al. made elegant use of Arabidopsis thaliana tes mutants, which form pollen with supernumerary sperm, to show that, similar to animal systems, polyspermy in the egg cell is typically prevented by an efficient polyspermy block (Scott et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Scott et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "f6fb9b66-0306-43d1-b858-15e1251dc9e9",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C18",
+      "claim": "Toda et al., 2016 were able to artificially bypass the polyspermy block using delicate electrofusion experiments and combined two sperms with a single egg to generate polyploid plants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Toda et al., 2016 were later able to artificially bypass the polyspermy block using delicate electrofusion experiments and combined two sperms with a single egg to generate polyploid plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Toda et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "87cc5b50-7057-42ae-b042-10848c889f7f",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C19",
+      "claim": "In 2017, the authors provided molecular and genetic evidence of egg polyspermy in planta capitalizing on a high-throughput polyspermy detection (HIPOD) assay.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2017, we provided molecular and genetic evidence of egg polyspermy in planta capitalizing on a high-throughput polyspermy detection (HIPOD) assay, which was established in the Landsberg erecta accession (Nakel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Nakel et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "0c59f714-6d73-4499-878d-9fe9f84fe72c",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C20",
+      "claim": "The HIPOD assay enables the generation and identification of plants with three parents, one mother and two fathers.",
+      "claim_type": "EXPLICIT",
+      "source": "This enables the generation and identification of plants with three parents, one mother and two fathers (Nakel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Nakel et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "d2289ee3-1c31-4cec-a387-e49257b97667",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C21",
+      "claim": "Polyspermy can specifically affect the egg cell, such that DNA of the second father bypasses DNA control mechanisms of the endosperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a modified HIPOD assay that allows detection of embryos from three parents based on seed color, we also showed that polyspermy can specifically affect the egg cell, such that DNA of the second father bypasses DNA control mechanisms of the endosperm (Mao et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Mao et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "d477162a-86ff-4010-b8d9-c157b9324852",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C22",
+      "claim": "Plants can be exposed to an insufficient number of fertilization-competent sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Plants can also be exposed to an insufficient number of fertilization-competent sperm (Aw et al., 2010; Cyprys et al., 2019; Mori et al., 2006; Ron et al., 2010; Takahashi et al., 2018; von Besser et al., 2006) in which case they activate a fertilization recovery program",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "e445b5b6-64c7-49e2-b073-b6dd96ae1baf",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C23",
+      "claim": "Plants activate a fertilization recovery program when exposed to an insufficient number of fertilization-competent sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Plants can also be exposed to an insufficient number of fertilization-competent sperm (Aw et al., 2010; Cyprys et al., 2019; Mori et al., 2006; Ron et al., 2010; Takahashi et al., 2018; von Besser et al., 2006) in which case they activate a fertilization recovery program",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "4cd5d5f2-33ca-414c-b4c4-09491d8167fa",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C24",
+      "claim": "The fertilization recovery mechanism is triggered when fertilization in one of the female gametes stalls at the level of plasmo- or karyogamy.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism is triggered when fertilization in one of the female gametes stalls at the level of plasmo - or karyogamy and includes a transient halt of second synergid disintegration and concomitant attraction of supernumerary pollen tubes (Beale et al., 2012; Kasahara et al., 2012; Maruyama et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Beale et al., 2012; Kasahara et al., 2012; Maruyama et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "f4505a63-9566-4000-8a5a-8f80b85f31d4",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C25",
+      "claim": "The fertilization recovery mechanism includes a transient halt of second synergid disintegration and concomitant attraction of supernumerary pollen tubes.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism is triggered when fertilization in one of the female gametes stalls at the level of plasmo - or karyogamy and includes a transient halt of second synergid disintegration and concomitant attraction of supernumerary pollen tubes (Beale et al., 2012; Kasahara et al., 2012; Maruyama et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Beale et al., 2012; Kasahara et al., 2012; Maruyama et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "a1717f40-bcb9-4062-9897-6db40b059ec0",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C26",
+      "claim": "Various proteases have previously been associated with the cortical reaction in animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Various proteases have previously been associated with the cortical reaction in animals, a fertilization-induced exocytosis of secretary granules that mediates a biochemical renovation of the egg coat to prevent further sperm entry (Burkart et al., 2012; Haley and Wessel, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Burkart et al., 2012; Haley and Wessel, 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "2fc8935f-b387-4a53-abd2-866266b97735",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C27",
+      "claim": "The cortical reaction in animals is a fertilization-induced exocytosis of secretary granules that mediates a biochemical renovation of the egg coat to prevent further sperm entry.",
+      "claim_type": "EXPLICIT",
+      "source": "Various proteases have previously been associated with the cortical reaction in animals, a fertilization-induced exocytosis of secretary granules that mediates a biochemical renovation of the egg coat to prevent further sperm entry (Burkart et al., 2012; Haley and Wessel, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Burkart et al., 2012; Haley and Wessel, 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "3631483a-cd87-405f-bfea-89eea9872889",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C28",
+      "claim": "Based on the analysis of more than 450,000 seedlings, the aspartic endopeptidases ECS1 and ECS2 repress polyspermy.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the analysis of more than 450,000 seedlings, we here and in a preprint (Mao et al., 2022) show that the aspartic endopeptidases ECS1 and ECS2 repress polyspermy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on large-scale seedling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "7222ff49-3432-4e89-8c2b-34da1a55ba1a",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C29",
+      "claim": "The polyspermy defect in ecs1 ecs2 mutants is associated with a transient delay in synergid disintegration, supernumerary pollen tube attraction, and heterofertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "The defect is associated with a transient delay in synergid disintegration, supernumerary pollen tube attraction, and heterofertilization which are characteristic features of the fertilization recovery program (Beale et al., 2012; Kasahara et al., 2012; Maruyama et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding of the study, with reference to previous work on the fertilization recovery program.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "a7fc575b-5716-4b89-a8e3-a7f4de847d7d",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C30",
+      "claim": "A fraction of ecs1 ecs2 double mutants exhibit defects in gamete fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, we show that a fraction of ecs1 ecs2 double mutants exhibit defects in gamete fusion and segregate seeds lacking paternally contributed fluorescence marker either in embryo or endosperm indicative of single fertilization events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "84e408e0-9a62-4f80-b0e9-ce7d195b2e6a",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C31",
+      "claim": "ecs1 ecs2 double mutants segregate seeds lacking paternally contributed fluorescence marker either in embryo or endosperm indicative of single fertilization events.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, we show that a fraction of ecs1 ecs2 double mutants exhibit defects in gamete fusion and segregate seeds lacking paternally contributed fluorescence marker either in embryo or endosperm indicative of single fertilization events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "0cc34e5b-d6a1-446b-809b-f1d188f39643",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C32",
+      "claim": "The results showing gamete fusion defects in ecs1 ecs2 mutants are in line with a recent report by Jiang et al., 2022 showing that ECS1 and ECS2 are required for gamete attachment.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in line with a recent report by Jiang et al., 2022 concordantly showing that ECS1 and ECS2 are required for gamete attachment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Jiang et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "60b2478b-3fff-49b6-bd3d-5d9275f83ba7",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C33",
+      "claim": "The double mutants segregate haploid plants, as later confirmed by Zhang et al., 2023.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we show that the double mutants segregate haploid plants, as later confirmed by Zhang et al., 2023.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, with confirmation from Zhang et al., 2023.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "4fff9047-be65-4d85-bfb8-feee3eb0c04a",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C34",
+      "claim": "ECS1 and ECS2 have previously been demonstrated to prevent the attraction of supernumerary pollen tubes by cleaving the pollen tube attractant LURE1.",
+      "claim_type": "EXPLICIT",
+      "source": "ECS1 and ECS2 have previously been demonstrated to prevent the attraction of supernumerary pollen tubes by cleaving the pollen tube attractant LURE1 (Yu et al., 2021), indicating that polytubey is prevented by at least two different functions of ECS1 and ECS2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Yu et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "d25f3641-a8df-475e-9485-6687c1230685",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C35",
+      "claim": "Polytubey is prevented by at least two different functions of ECS1 and ECS2.",
+      "claim_type": "EXPLICIT",
+      "source": "ECS1 and ECS2 have previously been demonstrated to prevent the attraction of supernumerary pollen tubes by cleaving the pollen tube attractant LURE1 (Yu et al., 2021), indicating that polytubey is prevented by at least two different functions of ECS1 and ECS2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the current findings and previous work by Yu et al., 2021.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "e6746107-edff-4830-9578-bd277f56caeb",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C36",
+      "claim": "For wild-type Columbia plants, 19 triparental seedlings were recovered out of 92,680 seeds, corresponding to a polyspermy frequency of 0.041%.",
+      "claim_type": "EXPLICIT",
+      "source": "For wild-type Columbia plants, we recovered 19 triparental seedlings out of 92,680 seeds, corresponding to a polyspermy frequency of 0.041%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the HIPOD assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "704f9023-86d2-4717-a5f3-88785e4f875b",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C37",
+      "claim": "The polyspermy frequency in wild-type Columbia is significantly higher than the polyspermy frequency previously recovered for the Landsberg accession.",
+      "claim_type": "EXPLICIT",
+      "source": "This is significantly higher than the polyspermy frequency previously recovered for the Landsberg accession (Nakel et al., 2017), and experimentally re-assessed in this study (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of data from the current study with previous work by Nakel et al., 2017, and is shown in Figure 1F.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "0303c9de-a91a-4d38-8fd8-3f1a853401c0",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C38",
+      "claim": "An up to threefold increase in polyspermy frequencies was detected in ecs1 ecs2-1 double mutants among the 77,441 seedlings analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, we detected an up to threefold increase in polyspermy frequencies in ecs1 ecs2-1 double mutants among the 77,441 seedlings analyzed (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the HIPOD assay shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "048612df-479e-48ef-a1dd-adf547c68795",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C39",
+      "claim": "ECS1 and ECS2 are the first molecular factors demonstrated to affect egg polyspermy and three parent formation in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "ECS1 and ECS2 are hence the first molecular factors demonstrated to affect egg polyspermy and three parent formation in plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results showing increased polyspermy in the mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "941d9a8e-929b-4682-9713-e31d56fa21e7",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C40",
+      "claim": "Introduction of pECS1::gECS1-YFP rescue construct restored triparental frequencies to wild-type levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that this phenomenon was causally linked to ECS1 by introducing a pECS1::gECS1-YFP rescue construct, which restored triparental frequencies to wild-type levels (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a genetic complementation experiment shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "da691a77-90d2-41e8-960d-93aad79dbfc5",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C41",
+      "claim": "The polyspermy defect in ecs1 ecs2 mutants is of gametophytic origin.",
+      "claim_type": "EXPLICIT",
+      "source": "We next asked whether the polyspermy defect was of gametophytic origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from segregation analysis and expression pattern data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "3442b155-827f-4803-b84e-25be8efc415f",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C42",
+      "claim": "In ecs1/ecs1, ecs2-1/ECS2 background, each gynoecium is expected to segregate a 1:1 ratio of double and single mutant gametophytes.",
+      "claim_type": "EXPLICIT",
+      "source": "To answer this, we performed the polyspermy assay in ecs1/ecs1, ecs2-1/ECS2 background, where each gynoecium is expected to segregate a 1:1 ratio of double and single mutant gametophytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Mendelian genetics principles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "df54f25d-f2d5-40be-96da-6dc0d23c4170",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C43",
+      "claim": "ecs2-1 segregation in the reference offspring population that was not herbicide treated showed an ECS2:ecs2-1 ratio of 109:97, in line with the expected 1:1 segregation ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "We first assessed ecs2-1 segregation in the reference offspring population that was not herbicide treated by genotyping PCR and found an ECS2:ecs2-1 ratio of 109:97, in line with the expected 1:1 segregation ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from genotyping PCR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "2e4103ec-f16b-42c8-be0b-27bb3df8582c",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C44",
+      "claim": "Following herbicide selection of 78,338 seedlings, 24 triparental plants were recovered, of which 18 plants exhibited an ecs2-1 tDNA-specific PCR product, corresponding to an ECS2:ecs2-1 ratio of 6:18.",
+      "claim_type": "EXPLICIT",
+      "source": "Following herbicide selection of 78,338 seedlings, we recovered 24 triparental plants (Figure 1\u2014figure supplement 1A), of which 18 plants exhibited an ecs2-1 tDNA-specific PCR product (Figure 1\u2014figure supplement 1B), corresponding to an ECS2:ecs2-1 ratio of 6:18.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the HIPOD assay and genotyping PCR shown in Figure 1\u2014figure supplement 1A and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "1b735fd9-5fcf-4d9d-9392-21746f48f3b9",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C45",
+      "claim": "The 6:18 ECS2:ecs2-1 ratio in triparental plants fits well with the threefold increase in polyspermy frequency found in ecs1 ecs2-1 double mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding fits well with the threefold increase in polyspermy frequency found in ecs1 ecs2-1 double mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the segregation ratio to the polyspermy frequency increase.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "d6472b51-7f1e-4594-bbf4-10489865b9b8",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C46",
+      "claim": "Analysis of YFP-tagged ECS1 and ECS2 fusion proteins revealed that ECS1 and ECS2 are exclusively expressed in the egg cell prior to fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, analysis of YFP-tagged ECS1 and ECS2 fusion proteins, as well as pECS1::NLS-tdTomato and pECS2::NLS-tdTomato promoter reporter constructs revealed that ECS1 and ECS2 are exclusively expressed in the egg cell prior to fertilization (Figure 1H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on fluorescence microscopy analysis shown in Figure 1H and I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "4fdc3514-71a5-43d8-9435-eadcc45c2f63",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C47",
+      "claim": "Analysis of pECS1::NLS-tdTomato and pECS2::NLS-tdTomato promoter reporter constructs revealed that ECS1 and ECS2 are exclusively expressed in the egg cell prior to fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, analysis of YFP-tagged ECS1 and ECS2 fusion proteins, as well as pECS1::NLS-tdTomato and pECS2::NLS-tdTomato promoter reporter constructs revealed that ECS1 and ECS2 are exclusively expressed in the egg cell prior to fertilization (Figure 1H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on fluorescence microscopy analysis shown in Figure 1H and I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "576f5be7-fdcc-46bf-9c3b-e11e1309e2bd",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C48",
+      "claim": "The results indicate a gametophytic origin of the polyspermy defect.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate a gametophytic origin of the polyspermy defect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the segregation analysis and expression pattern data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "dca61c9f-a5cb-479e-8d79-b5dc1651342e",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C49",
+      "claim": "Using aniline blue staining, the reproductive defect was found to be associated with an 8.4% increase in supernumerary pollen tube attraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Making use of aniline blue staining, we found the reproductive defect to be associated with an 8.4% increase in supernumerary pollen tube attraction (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from aniline blue staining shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "39b8e67b-52b2-4ab4-8fcf-f318610edeed",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C50",
+      "claim": "Polytubey in ecs1 ecs2-1 double mutants was also reported by Yu et al., 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "Polytubey in ecs1 ecs2-1 double mutants was also reported by Yu et al., 2021, who provide a compelling set of experiments to show that the endopeptidases cleave specific variants of LURE1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Yu et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "a3c0ff18-9d56-4c84-81b5-60e75ca48c80",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C51",
+      "claim": "Yu et al., 2021 provide a compelling set of experiments to show that the endopeptidases cleave specific variants of LURE1.",
+      "claim_type": "EXPLICIT",
+      "source": "Polytubey in ecs1 ecs2-1 double mutants was also reported by Yu et al., 2021, who provide a compelling set of experiments to show that the endopeptidases cleave specific variants of LURE1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Yu et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "95977417-c9ff-4cf4-bfe4-8c2ab4d8c067",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C52",
+      "claim": "In contrast to Yu et al., 2021, the authors observed reproductive defects, reflected by 13% abnormal seeds.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to Yu et al., 2021, however, we observed reproductive defects, reflected by 13% abnormal seeds (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result shown in Figure 2B, contrasting with findings by Yu et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "c237eddc-81bd-4854-ad3c-70d518beec1c",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C53",
+      "claim": "A second double mutant using the independent ecs2-2 allele exhibited similar defects in seed development.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate whether the phenotype was causally linked to ECS1 and ECS2, we first generated a second double mutant using the independent ecs2-2 allele, which exhibited similar defects in seed development (Figure 2B and Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from analysis of an independent allele shown in Figure 2B and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "4d3b367c-f334-4785-b366-dd3a36d51db8",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C54",
+      "claim": "Introduction of pECS1:gECS1-YFP and pECS2:gECS2-YFP into the ecs1 ecs2 double mutants restored fertility.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we introduced pECS1:gECS1-YFP and pECS2:gECS2-YFP into the ecs1 ecs2 double mutants and demonstrated that each of the constructs restored fertility (Figure 2B and Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a genetic complementation experiment shown in Figure 2B and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "736ea0de-a383-42bc-b2fa-711a1a84a11c",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C55",
+      "claim": "The seed defect in ecs1 ecs2 double mutants is caused by loss of ECS1 and ECS2.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results thus indicate that the seed defect in ecs1 ecs2 double mutants is caused by loss of ECS1 and ECS2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the complementation experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "836da741-a33a-4786-9a40-8b52a36848ff",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C56",
+      "claim": "The defect in ecs1 ecs2 mutants was of female origin.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether the defect was due to the role of ECS1 and ECS2 in the male or female reproductive tissue, we conducted reciprocal crosses between the double mutant and wild type. While the introduction of the mutant alleles from the female crossing partner recapitulated the defect, the reciprocal cross yielded fertile seeds, suggesting that the defect was of female origin (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from reciprocal cross experiments shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "cdea0eff-61ca-4383-b661-bf6ee000e68c",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C57",
+      "claim": "Prior to fertilization, ecs1 ecs2 female gametophytes exhibited a morphology similar to that of wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to fertilization, ecs1 ecs2 female gametophytes exhibited a morphology similar to that of wild type (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from cleared whole mount analysis shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "4af0968c-46d9-45c6-91e8-bd7f237a3dcc",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C58",
+      "claim": "Three days after pollination, 8.1% of seeds failed to develop an embryo and 7.1% of seeds exhibited defects in endosperm development.",
+      "claim_type": "EXPLICIT",
+      "source": "Three days after pollination, however, we observed 8.1% of seeds that failed to develop an embryo and 7.1% of seeds that exhibited defects in endosperm development (Figure 2C and Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from cleared whole mount analysis shown in Figure 2C and Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "8d8dc774-628c-468f-934e-503dfb9ba0d0",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C59",
+      "claim": "A defect in gamete fusion has been shown to activate a fertilization recovery program, which delays synergid disintegration in order to attract additional pollen tubes.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter scenario, that is, a defect in gamete fusion, has been shown to activate a fertilization recovery program, which delays synergid disintegration in order to attract additional pollen tubes (Beale et al., 2012; Kasahara et al., 2012; Maruyama et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Beale et al., 2012; Kasahara et al., 2012; Maruyama et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "4b04dc07-2ad0-4121-ae74-daa6bec60d96",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C60",
+      "claim": "When comparing young ecs1 ecs2 seeds with wild type, supernumerary pollen tube attraction correlates with a significant increase of synergid-containing seeds at the two-nucleate endosperm stage.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing young ecs1 ecs2 seeds with wild type, we indeed found that supernumerary pollen tube attraction correlates with a significant increase of synergid-containing seeds at the two-nucleate endosperm stage (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from cleared whole mount analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "56fbe450-ea35-4332-9e8b-50e1ec7bcb0a",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C61",
+      "claim": "Overall progression of seed development between mutant and wild type was comparable.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall progression of seed development between mutant and wild type was comparable (Figure 3\u2014figure supplement 1A) and ecs1 ecs2 synergid nuclei eventually degenerated (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from cleared whole mount analysis shown in Figure 3\u2014figure supplement 1A and Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "b99c543f-bce1-47a4-b748-b66790160939",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C62",
+      "claim": "ecs1 ecs2 synergid nuclei eventually degenerated.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall progression of seed development between mutant and wild type was comparable (Figure 3\u2014figure supplement 1A) and ecs1 ecs2 synergid nuclei eventually degenerated (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from cleared whole mount analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "460febf7-1e8f-4cf6-a063-9ba8fc47fe40",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C63",
+      "claim": "It was previously shown that the condensation status of sperm nuclei relaxes upon gamete fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "To gain a more detailed understanding of the mutant defect, we capitalized on an observation described by Takahashi et al. according to which the condensation status of sperm nuclei relaxes upon gamete fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to work by Takahashi et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "6fe7b5c7-6d8f-4b92-bfc8-81115ff70d89",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C64",
+      "claim": "Upon fertilization of ecs1 ecs2 with HTR10-RFP labeled sperm cells, a pair containing two decondensed sperm nuclei signals was observed in the wild type, indicating successful double fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon fertilization of ecs1 ecs2 with HTR10-RFP (Ingouff et al., 2007) labeled sperm cells, we observed a pair containing two decondensed sperm nuclei signals in the wild type, indicating successful double fertilization (Figure 3B and Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from fluorescence microscopy shown in Figure 3B and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "e4a36886-a5c7-448b-9566-eb8005e6595b",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C65",
+      "claim": "In the ecs1 ecs2 mutants, a pair of sperm nuclei that differed in the condensation status was frequently detected analogous to the single fertilization pattern described by Takahashi et al., 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ecs1 ecs2 mutants, we frequently detected a pair of sperm nuclei that differed in the condensation status analogous to the single fertilization pattern described by Takahashi et al., 2018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from fluorescence microscopy, with reference to Takahashi et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "83e6914d-fb86-4095-833e-64d3c033e026",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C66",
+      "claim": "In ecs1 ecs2 mutants, one category of sperm nuclei pairs had the more dispersed signal corresponding to egg cell position (EC-F), and the other to central cell position (CC-F), indicating single fertilizations of either central (CC-F) or egg cell (EC-F).",
+      "claim_type": "EXPLICIT",
+      "source": "In one category the more dispersed signal corresponded to egg cell, (EC-F) in the other to central cell (CC-F) position indicating single fertilizations of either central (CC-F) or egg cell (EC-F) (Takahashi et al., 2018; Figure 3B and Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from fluorescence microscopy shown in Figure 3B and Figure 3\u2014figure supplement 2, with reference to Takahashi et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "03fb9156-660b-4305-b147-a6ac7cc0bb03",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C67",
+      "claim": "An increase of unfused sperm nuclei in ecs1 ecs2 double mutants over wild type was detected.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with later observations using the same experimental setup, where we detect an increase of unfused sperm nuclei in ecs1 ecs2 double mutants over wild type (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "042cecec-7d93-4fb8-9904-2b4347442607",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C68",
+      "claim": "It was previously shown that egg and central cell can be fertilized by sperm from different pollen, making heterofertilization a hallmark of single fertilization and an active recovery program.",
+      "claim_type": "EXPLICIT",
+      "source": "In a complementary experiment we confirmed the fertilization defect and an active fertilization recovery program by genetic evidence: It was previously shown that egg and central cell can be fertilized by sperm from different pollen, making this so called heterofertilization a hallmark of single fertilization and an active recovery program (Maruyama et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Maruyama et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "2bc377e5-20bd-4a3b-bee1-885b1d9645a3",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C69",
+      "claim": "While heterofertilization was not detected in wild-type (n=276), ecs1 ecs2 mutants (n=284) exhibited a small fraction of seeds (1.8%) where the two fertilization products had inherited different fluorophores provided by the two different pollen donors.",
+      "claim_type": "EXPLICIT",
+      "source": "While we did not detect heterofertilization in wild-type (n=276), ecs1 ecs2 mutants (n=284) exhibited a small fraction of seeds where the two fertilization products (egg and central cell) had inherited different fluorophores provided by the two different pollen donors (1.8%) (Figure 3D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from dual pollination experiments shown in Figure 3D\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "632b9d56-56c7-4598-8a70-cbb839879113",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C70",
+      "claim": "The heterofertilization frequency in ecs1 ecs2 mutants is comparable to the one described by Maruyama et al., which observed heterofertilization using gamete fusion defective kokopelli sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "This frequency is comparable to the one described by Maruyama et al., which observed heterofertilization using gamete fusion defective kokopelli sperm (Maruyama et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous work by Maruyama et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "860faadf-6e01-44da-908d-c2d27e3ddb3b",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C71",
+      "claim": "The early fertilization defect implies that the inheritance of paternal DNA is compromised in ecs1 ecs2 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The early fertilization defect implies that the inheritance of paternal DNA is compromised in ecs1 ecs2 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed fertilization defects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "ec3d7136-21c2-4f5b-bf64-abc3a8c37bae",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C72",
+      "claim": "While the majority of wild-type seeds showed a fluorescence signal in both endosperm and embryo, a significant number of ecs1 ecs2 mutants contained seeds without paternal marker expression in the embryo (10.9%) or the endosperm (9.7%).",
+      "claim_type": "EXPLICIT",
+      "source": "While the majority of wild-type seeds showed a fluorescence signal in both endosperm and embryo, a significant number of ecs1 ecs2 mutants contained seeds without paternal marker expression in the embryo (10.9%) or the endosperm (9.7%) (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from fluorescence microscopy analysis shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "62e96986-ae7c-4a2f-89ee-3308d1d1efa7",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C73",
+      "claim": "When comparing marker distribution between aborted and normal seeds, a relative enrichment of seeds without paternal contribution in the endosperm was detected in the aborted seed fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing marker distribution between aborted and normal seeds, we detected a relative enrichment of seeds without paternal contribution in the endosperm in the aborted seed fraction (Figure 3H), stressing the importance of a paternal endosperm contribution for seed development.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from fluorescence microscopy analysis shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "1177f403-4261-486b-a714-a63c56b5bcd7",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C74",
+      "claim": "Among the normal looking seeds, a fraction was detected that lacked a paternal contribution in the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, among the normal looking seeds we detected a fraction that lacked a paternal contribution in the embryo (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from fluorescence microscopy analysis shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "da51ee48-744c-4bf3-bc41-e5ee934025e6",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C75",
+      "claim": "Seven plants out of 200 ecs1 ecs2 double mutant-derived plants exhibited short siliques and small flowers.",
+      "claim_type": "EXPLICIT",
+      "source": "We inspected in total 200 ecs1 ecs2 double mutant-derived plants and identified seven plants exhibiting short siliques and small flowers (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from phenotypic analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "a201e4bf-f87b-402b-8736-812ecaacdd76",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C76",
+      "claim": "Flow cytometry revealed that all seven plants with short siliques and small flowers exhibited a haploid-characteristic signature, indicating that only one set of chromosomes had been inherited.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry revealed that all seven plants exhibited a haploid-characteristic signature, indicating that only one set of chromosomes had been inherited (Figure 4B and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from flow cytometry analysis shown in Figure 4B and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "d5393df1-5dcb-4566-acd0-d66245302352",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C77",
+      "claim": "In nuclei of plants with short siliques and small flowers, 5 instead of 10 chromosomes were detected, confirming the haploid nature of these plants.",
+      "claim_type": "EXPLICIT",
+      "source": "To substantiate this result, we performed a complementary approach and determined the chromosome number by chromosome spread. A. thaliana contains five different chromosomes and in the diploid Col-0 accession used in this study they exist in two copies. Notably, in nuclei of plants with short siliques and small flowers, we detected 5 instead of 10 chromosomes (Figure 4C), confirming the haploid nature of these plants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from chromosome spread analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "496b29ea-e6a2-41b2-a921-f0d0100131d7",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C78",
+      "claim": "Eight haploid plants were recovered out of 934 F1 seedlings from inter-accession crosses combining diploid ecs1 ecs2 in the Col-0 background with wild-type Ler accession.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether these haploids were of maternal origin, we conducted inter-accession crosses combining diploid ecs1 ecs2 in the Col-0 background with wild-type Ler accession. We recovered eight haploid plants out of 934 F1 seedlings (Figure 4\u2014figure supplement 2) and profiled accession-dependent restriction fragment length polymorphisms (RFLPs) for each of the five chromosomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from inter-accession crosses shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "97a4ea94-c788-4948-ac09-d1421fa9c597",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C79",
+      "claim": "Only polymorphisms specific for Col-0 were detected on all chromosomes in all eight haploids, indicating that only the maternal genome had been inherited.",
+      "claim_type": "EXPLICIT",
+      "source": "We only detected polymorphisms specific for Col-0 on all chromosomes in all eight haploids (Figure 4D and Figure 4\u2014figure supplement 3), indicating that only the maternal genome had been inherited.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from RFLP analysis shown in Figure 4D and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "e78078e8-f4ac-46a8-968c-db09967768af",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C80",
+      "claim": "Maternal induction of haploidy has only been reported in a recent preprint for the gynoecium-expressed phospholipase AII (pPLAII\u03b3).",
+      "claim_type": "EXPLICIT",
+      "source": "Such maternal induction of haploidy has only been reported in a recent preprint for the gynoecium-expressed phospholipase AII (pPLAII\u03b3) (Jang et al., 2022) and these examples differ conceptionally from earlier reported haploid inducers, which operate through selective elimination of aberrant paternal chromosomes (Gilles et al., 2017; Karimi-Ashtiyani et al., 2015; Kelliher et al., 2017; Khanday et al., 2019; Li et al., 2021; Liu et al., 2017; Ravi and Chan, 2010; Underwood et al., 2022; Zhong et al., 2020; Zhong et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Jang et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "437f4742-db14-45cb-a36f-22da11f2405f",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C81",
+      "claim": "Maternal haploid induction by ECS1 and ECS2 differs conceptionally from earlier reported haploid inducers, which operate through selective elimination of aberrant paternal chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Such maternal induction of haploidy has only been reported in a recent preprint for the gynoecium-expressed phospholipase AII (pPLAII\u03b3) (Jang et al., 2022) and these examples differ conceptionally from earlier reported haploid inducers, which operate through selective elimination of aberrant paternal chromosomes (Gilles et al., 2017; Karimi-Ashtiyani et al., 2015; Kelliher et al., 2017; Khanday et al., 2019; Li et al., 2021; Liu et al., 2017; Ravi and Chan, 2010; Underwood et al., 2022; Zhong et al., 2020; Zhong et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous work on haploid inducers.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "f32eb54b-d064-4393-86ab-71bd538a9862",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C82",
+      "claim": "The segregation of haploid plants in ecs1 ecs2 mutants has similarly been observed by Zhang et al., 2023.",
+      "claim_type": "EXPLICIT",
+      "source": "The segregation of haploid plants in ecs1 ecs2 mutants has similarly been observed by Zhang et al., 2023.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Zhang et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "2c54eaec-b132-49c8-9a76-df456042b7c4",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C83",
+      "claim": "In contrast to the current work and the report by Jiang et al., 2022, Zhang et al. describe that the defect of ecs1 ecs2 double mutants is triggered by semigamy post fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to our work and the report by Jiang et al., 2022, Zhang et al. describe that the defect of ecs1 ecs2 double mutants is triggered by semigamy post fertilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with findings by Zhang et al. and Jiang et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "ca62846c-6595-4e7f-bbe8-7a6b6895b3fa",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C84",
+      "claim": "According to previous work, semigamy scenarios would be expected to infrequently result in inheritance of paternal signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "According to previous work, semigamy scenarios would be expected to infrequently result in inheritance of paternal signatures (Gerlach-Cruse, 1970; Lanaud, 1988; Rao and Narayana, 1980) which was, thus far, neither observed by Zhang et al. nor us.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Gerlach-Cruse, 1970; Lanaud, 1988; Rao and Narayana, 1980.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "2881b2ef-a0e3-42aa-8df8-a2ffe959b935",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C85",
+      "claim": "A semigamy scenario would require the existence of an additional, previously undiscovered mechanism for the selective elimination of paternal wild-type DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a scenario would thus require the existence of an additional, previously undiscovered mechanism for the selective elimination of paternal wild-type DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about what would be required for a semigamy scenario.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "d6ba16f5-1398-42d0-a9ba-1498915306bf",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C86",
+      "claim": "Several factors regulating gamete fusion have been described.",
+      "claim_type": "EXPLICIT",
+      "source": "Several factors regulating gamete fusion have been described (Aw et al., 2010; Cyprys et al., 2019; Mori et al., 2014; Mori et al., 2006; Rademacher and Sprunck, 2013; Ron et al., 2010; Sprunck et al., 2012; Takahashi et al., 2018; Tian et al., 2018; von Besser et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "a8114c25-4de6-4f64-8baa-de872a8f2918",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C87",
+      "claim": "The sperm-specific AtDMP8 and AtDMP9 and the pollen-specific NLD have been implicated in haploid induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, the sperm-specific AtDMP8 and AtDMP9 and the pollen-specific NLD have been implicated in haploid induction (Gilles et al., 2017; Kelliher et al., 2017; Liu et al., 2017; Zhong et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Gilles et al., 2017; Kelliher et al., 2017; Liu et al., 2017; Zhong et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "a2fa2773-6cb1-4366-89f0-94a961506e0c",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C88",
+      "claim": "The current and previous data suggest that ECS1 and ECS2 function at the level of gamete fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our and previous data suggest that ECS1 and ECS2 function at the level of gamete fusion (Jiang and Qu, 2023; Jiang et al., 2022; Mao et al., 2022) and support the coordination of double fertilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the current study and previous work by Jiang and Qu, 2023; Jiang et al., 2022; Mao et al., 2022.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "3639181e-4cfa-443f-b970-aec3a7b92742",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C89",
+      "claim": "ECS1 and ECS2 support the coordination of double fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our and previous data suggest that ECS1 and ECS2 function at the level of gamete fusion (Jiang and Qu, 2023; Jiang et al., 2022; Mao et al., 2022) and support the coordination of double fertilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the current study and previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "24256cb9-d270-4fd4-99be-d764cb483d75",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C90",
+      "claim": "Single fertilization of egg or central cell can be observed in ecs1 ecs2 double mutants that contributes to seed abortion and can infrequently result in the generation of haploid plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, single fertilization of egg or central cell can be observed in ecs1 ecs2 double mutants that contributes to seed abortion and can infrequently result in the generation of haploid plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "1a1b5ee3-8c5b-4e1b-a88d-780145b60dc7",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C91",
+      "claim": "Single fertilization in ecs1 ecs2 mutants leads to delayed synergid disintegration and concomitant attraction of supernumerary pollen tubes.",
+      "claim_type": "EXPLICIT",
+      "source": "It also leads to delayed synergid disintegration and concomitant attraction of supernumerary pollen tubes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "08b5e7d1-f90c-4591-92a0-17776a281e6e",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C92",
+      "claim": "The supply of additional sperm cells can either lead to successful fertilization recovery or the induction of polyspermy.",
+      "claim_type": "EXPLICIT",
+      "source": "The supply of additional sperm cells can either lead to successful fertilization recovery or the induction of polyspermy (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental results and illustrated in Figure 4E.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "52cd4d2f-c28f-497c-b36a-1746d7f31a33",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C93",
+      "claim": "It was recently reported that following successful double fertilization ECS1/2 are secreted and play a role in degradation of LURE peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "It was recently reported that following successful double fertilization ECS1/2 are secreted and play a role in degradation of LURE peptides (Yu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Yu et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "5088929f-2233-4fa0-a012-2d0bfbcceca0",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C94",
+      "claim": "ECS1 and ECS2 regulate offspring genome size via haploid and polyspermy induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we have shown that ECS1 and ECS2 regulate offspring genome size via haploid and polyspermy induction, two agriculturally highly relevant mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "bcf22133-963a-42cd-98b8-2e09b9fb8df0",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C95",
+      "claim": "Haploid and polyspermy induction are two agriculturally highly relevant mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we have shown that ECS1 and ECS2 regulate offspring genome size via haploid and polyspermy induction, two agriculturally highly relevant mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge in plant breeding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "ecfb9330-cf57-43db-befa-98e3571cb7fc",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C96",
+      "claim": "ECS1 and ECS2 provide molecular clues opening up new avenues for the introduction and/or combination of agricultural relevant traits.",
+      "claim_type": "EXPLICIT",
+      "source": "ECS1 and ECS2 provide molecular clues opening up new avenues for the introduction and/or combination of agricultural relevant traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the potential applications of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "98e288eb-3360-4cec-84c4-2a89cd830641",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C97",
+      "claim": "A. thaliana contains five different chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "A. thaliana contains five different chromosomes and in the diploid Col-0 accession used in this study they exist in two copies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about A. thaliana genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "38d715ee-c684-417b-b66a-846042a0033a",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C98",
+      "claim": "In the diploid Col-0 accession, the five chromosomes exist in two copies.",
+      "claim_type": "EXPLICIT",
+      "source": "A. thaliana contains five different chromosomes and in the diploid Col-0 accession used in this study they exist in two copies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about A. thaliana genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "43a199a2-b634-4621-aca3-fe7b2d9ac1d9",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C99",
+      "claim": "The HIPOD assay consists of two pollen donors that contain the individual elements of the yeast GAL4-UAS two-component system.",
+      "claim_type": "EXPLICIT",
+      "source": "The assay consists of two pollen donors, that contain the individual elements of the yeast GAL4-UAS two-component system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "547f5612-a9c1-46b3-8c42-cb9423c2c97d",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C100",
+      "claim": "In the HIPOD assay, the GAL4-UAS elements control expression of a herbicide resistance conferring gene that only gets activated if both paternal constructs are combined in a single egg cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The elements control expression of a herbicide resistance conferring gene, that consequently only gets activated if both paternal constructs are combined in a single egg cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "19755430-39d9-4543-9d2d-0dea3870214d",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C101",
+      "claim": "The fusion of one egg cell with two sperm cells is expected to yield triploid rather than diploid offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "The fusion of one egg cell with two sperm cells is expected to yield triploid rather than diploid offspring, which was demonstrated by flow cytometry (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genetic principles and confirmed by flow cytometry shown in Figure 1D.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "e3c134f5-41a1-4ea1-a339-70c9e8fcdde1",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C102",
+      "claim": "The polyspermy frequency for wild-type Landsberg accession was experimentally re-assessed in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "This is significantly higher than the polyspermy frequency previously recovered for the Landsberg accession (Nakel et al., 2017), and experimentally re-assessed in this study (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the HIPOD assay shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "6ae42b39-a1da-49f7-88dc-d875ee2ade2b",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C103",
+      "claim": "The segregation of the ecs2-1 mutant allele would be enhanced in the triparental offspring if the absence of ECS2 in the female gametophyte positively affects polyspermy.",
+      "claim_type": "EXPLICIT",
+      "source": "We furthermore reasoned that the segregation of the ecs2-1 mutant allele would be enhanced in the triparental offspring if the absence of ECS2 in the female gametophyte positively affects polyspermy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference used to design the experiment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "f029df4a-ff76-463d-9b71-7a49abf6191f",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C104",
+      "claim": "The 6:18 ECS2:ecs2-1 ratio in triparental plants deviates from the expected 1:1 segregation ratio.",
+      "claim_type": "IMPLICIT",
+      "source": "Following herbicide selection of 78,338 seedlings, we recovered 24 triparental plants (Figure 1\u2014figure supplement 1A), of which 18 plants exhibited an ecs2-1 tDNA-specific PCR product (Figure 1\u2014figure supplement 1B), corresponding to an ECS2:ecs2-1 ratio of 6:18.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the observed ratio compared to the expected 1:1 ratio mentioned earlier.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "346a325a-4dca-4cfd-8d85-c6677d5dc942",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C105",
+      "claim": "The introduction of the mutant alleles from the female crossing partner recapitulated the seed defect.",
+      "claim_type": "EXPLICIT",
+      "source": "While the introduction of the mutant alleles from the female crossing partner recapitulated the defect, the reciprocal cross yielded fertile seeds, suggesting that the defect was of female origin (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from reciprocal cross experiments shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "e4d4819f-0ad9-45a0-8603-ff4bdb49d66b",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C106",
+      "claim": "The reciprocal cross between ecs1 ecs2 mutant pollen and wild-type female yielded fertile seeds.",
+      "claim_type": "EXPLICIT",
+      "source": "While the introduction of the mutant alleles from the female crossing partner recapitulated the defect, the reciprocal cross yielded fertile seeds, suggesting that the defect was of female origin (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from reciprocal cross experiments shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "e5b8aadb-4ae1-41e4-ab20-6968f9e0dfe3",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C107",
+      "claim": "Heterofertilization is a hallmark of single fertilization and an active recovery program.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously shown that egg and central cell can be fertilized by sperm from different pollen, making this so called heterofertilization a hallmark of single fertilization and an active recovery program (Maruyama et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Maruyama et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "23e792e4-82be-4bab-8a3d-0f1c52c010b2",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "claim_id": "C108",
+      "claim": "The importance of a paternal endosperm contribution for seed development is stressed by the enrichment of seeds without paternal contribution in the endosperm in the aborted seed fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing marker distribution between aborted and normal seeds, we detected a relative enrichment of seeds without paternal contribution in the endosperm in the aborted seed fraction (Figure 3H), stressing the importance of a paternal endosperm contribution for seed development.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the observed correlation between lack of paternal endosperm contribution and seed abortion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ef4842f2-2d0c-4a3a-a836-f6973db3b697",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ECS1 and ECS2 negatively regulate polyspermy in Arabidopsis. Using the HIPOD assay, the authors found that wild-type Columbia plants exhibited a polyspermy frequency of 0.041% (19/92,680 seeds), which was significantly higher than the Landsberg accession. The ecs1 ecs2-1 double mutants showed up to a threefold increase in polyspermy frequencies (among 77,441 seedlings analyzed), and this phenotype was rescued by introducing pECS1::gECS1-YFP, confirming causality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims provide quantitative data from a large-scale HIPOD screen (>450,000 seedlings total across genotypes), demonstrate a statistically significant increase in polyspermy in the double mutant, and include genetic complementation showing rescue of the phenotype. The experimental design is appropriate, sample sizes are substantial, and the conclusion that ECS1 and ECS2 are the first molecular factors affecting egg polyspermy is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "6795a091-6b6f-4c5c-8e89-052c043dc36f",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The polyspermy defect in ecs1 ecs2 mutants is of gametophytic origin. Segregation analysis in ecs1/ecs1, ecs2-1/ECS2 heterozygotes showed that triparental plants exhibited an ECS2:ecs2-1 ratio of 6:18, deviating from the expected 1:1 ratio and consistent with the threefold increase in polyspermy. Expression analysis using YFP-tagged fusion proteins and promoter reporters showed that ECS1 and ECS2 are exclusively expressed in the egg cell prior to fertilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The segregation analysis provides genetic evidence for gametophytic action, with the observed 6:18 ratio in triparental offspring fitting well with the threefold polyspermy increase. The expression data from fluorescence microscopy clearly localizes both genes to the egg cell. The logic connecting segregation ratios to gametophytic function is sound and based on Mendelian principles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "50dc0353-166e-4ce0-b545-ecdf567c54de",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ecs1 ecs2 mutants exhibit reproductive defects including supernumerary pollen tube attraction and seed abortion. The mutants showed an 8.4% increase in polytubey and 13% abnormal seeds. An independent allele (ecs2-2) exhibited similar defects, and genetic complementation with pECS1:gECS1-YFP and pECS2:gECS2-YFP restored fertility. Reciprocal crosses demonstrated the defect is of female origin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims are well-supported by multiple lines of evidence: quantitative phenotypic data, independent allele confirmation, genetic complementation, and reciprocal crosses. The use of two independent alleles strengthens the conclusion that the phenotype is causally linked to loss of ECS1 and ECS2. The reciprocal cross experiment clearly establishes female-specific function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "7266b500-f33f-456b-bbcc-36507e7532e7",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ecs1 ecs2 mutants show normal pre-fertilization morphology but exhibit post-fertilization defects including delayed synergid disintegration. Prior to fertilization, mutant female gametophytes appeared normal. Three days after pollination, 8.1% of seeds failed to develop an embryo and 7.1% exhibited endosperm defects. The mutants showed a significant increase in synergid-containing seeds at the two-nucleate endosperm stage, though synergid nuclei eventually degenerated and overall seed development progression was comparable to wild type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The temporal analysis using cleared whole mounts at multiple developmental stages provides clear evidence for post-fertilization defects. The quantitative data on embryo and endosperm defects, combined with the observation of delayed synergid disintegration, are consistent with activation of a fertilization recovery program. The eventual degeneration of synergid nuclei and comparable overall progression indicate the delay is transient.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "c2dc32a1-5eaa-4ced-a0d6-3e6778ee9757",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ecs1 ecs2 mutants exhibit defects in gamete fusion. Using HTR10-RFP labeled sperm cells to assess sperm nuclear condensation status, the authors observed that wild-type showed two decondensed sperm nuclei (successful double fertilization), while ecs1 ecs2 mutants frequently showed sperm nuclei pairs with different condensation status, indicating single fertilization of either egg cell (EC-F) or central cell (CC-F). An increase in unfused sperm nuclei was detected in the mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The use of sperm nuclear condensation as a marker for gamete fusion is based on established methodology (Takahashi et al.). The observation of differential condensation patterns in mutants versus wild type provides direct cytological evidence for gamete fusion defects. The quantitative increase in unfused sperm nuclei further supports this conclusion. This result is consistent with the independent report by Jiang et al., 2022.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "13c4c271-7eae-44e3-8aa7-fafb37a3355b",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ecs1 ecs2 mutants are susceptible to heterofertilization, confirming an active fertilization recovery program. Using dual pollination with pollen carrying different fluorescent markers, the authors detected heterofertilization (egg and central cell fertilized by different pollen) in 1.8% of ecs1 ecs2 seeds (5/284) but not in wild-type (0/276). This frequency is comparable to that observed with gamete fusion-defective kokopelli sperm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The heterofertilization experiment provides genetic evidence for single fertilization events and an active recovery program. The experimental design using dual pollination with distinguishable markers is appropriate. The frequency observed (1.8%) is consistent with previous reports using fusion-defective sperm, supporting the interpretation that the mutants have gamete fusion defects. Sample sizes are adequate (n=276 and 284).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "89d707bf-6adb-482b-b0eb-9f824e8805cf",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Paternal DNA inheritance is compromised in ecs1 ecs2 mutants. Analysis of paternally introduced pRPS5a::H2B_tdTomato marker showed that while wild-type seeds had fluorescence in both endosperm and embryo, ecs1 ecs2 mutants had significant numbers of seeds without paternal marker in embryo (10.9%) or endosperm (9.7%). Seeds lacking paternal endosperm contribution were enriched in the aborted seed fraction, while some normal-looking seeds lacked paternal contribution in the embryo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The fluorescence marker analysis provides clear evidence for compromised paternal DNA inheritance. The quantitative data showing ~10% of seeds lacking paternal contribution in either embryo or endosperm is consistent with the gamete fusion defects observed. The enrichment of seeds lacking paternal endosperm in the aborted fraction logically supports the importance of paternal endosperm contribution, while the presence of normal-looking seeds lacking paternal embryo contribution sets up the haploid induction finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "c9486153-d444-4c64-9409-512681c3c94d",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ecs1 ecs2 mutants segregate maternal haploid plants. Among 200 ecs1 ecs2-derived plants, seven exhibited haploid characteristics (short siliques, small flowers). Flow cytometry confirmed haploid DNA content, and chromosome spreads showed 5 instead of 10 chromosomes. Inter-accession crosses (Col-0 ecs1 ecs2 \u00d7 Ler wild-type) yielded 8 haploid plants out of 934 F1 seedlings, and RFLP analysis showed only Col-0-specific polymorphisms on all chromosomes, confirming maternal origin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The haploid induction is demonstrated through multiple complementary approaches: phenotypic observation, flow cytometry, chromosome counting, and genetic marker analysis. The use of inter-accession crosses with RFLP profiling definitively establishes maternal origin. The frequency (~3.5% in self-fertilized plants, ~0.86% in crosses) is consistent with the observed frequency of seeds lacking paternal embryo contribution. This represents a novel mechanism of maternal haploid induction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "485b2bb3-7219-4081-8ad8-7aa27407d699",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ECS1 and ECS2 have an earlier function in gamete fusion that coordinates double fertilization and regulates offspring genome size. The genes prevent incomplete double fertilization, and their loss leads to single fertilization events that activate a fertilization recovery program (delayed synergid disintegration, supernumerary pollen tube attraction, heterofertilization). This can result in seed abortion, maternal haploid induction, or polyspermy, thereby regulating offspring genome size through both haploid and polyspermy induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This integrative result synthesizes multiple experimental findings into a coherent model. The evidence for gamete fusion defects, activation of the recovery program, and the three possible outcomes (abortion, haploid, polyspermy) is well-documented across the claims. The conclusion that ECS1 and ECS2 coordinate double fertilization and regulate genome size is well-supported by the data, though the precise molecular mechanism remains to be elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "6250dd1a-c3fd-4c7f-9147-61f9a33b55cb",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The findings are consistent with recent reports showing ECS1 and ECS2 function in gamete attachment (Jiang et al., 2022) and haploid segregation (Zhang et al., 2023), though there is disagreement about mechanism. The authors' data support a gamete fusion defect model, while Zhang et al. propose post-fertilization semigamy. ECS1 and ECS2 also prevent polytubey through LURE1 cleavage (Yu et al., 2021), indicating at least two distinct functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the authors' data on gamete fusion defects are well-supported, the mechanistic disagreement with Zhang et al. regarding semigamy versus fusion defects remains unresolved. The authors correctly note that semigamy would require an additional mechanism for selective paternal DNA elimination, which has not been observed. The claim of \"at least two different functions\" (gamete fusion and LURE1 cleavage) is reasonable but the relative contributions and temporal relationships need further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "aca9d524-13ee-4a09-8724-280fe29ca665",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The findings have agricultural implications for plant breeding. The authors argue that current crop optimization is insufficient to meet future demands, and that polyspermy and haploid induction are valuable breeding mechanisms. ECS1 and ECS2 provide molecular targets for introducing or combining agriculturally relevant traits, potentially enabling use of climate-adapted wild varieties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the agricultural relevance of haploid induction and polyspermy is established knowledge in plant breeding (C14, C95), the specific claim that ECS1 and ECS2 manipulation will \"open new avenues\" for crop improvement (C96) is speculative. The potential is reasonable given the demonstrated functions, but no actual breeding applications or trait introductions are demonstrated in this study. The claim about current optimization being insufficient (C1) lacks supporting data in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    },
+    {
+      "id": "8bbd4615-cf15-49d8-a42d-68b185660dd1",
+      "content_id": "24c77df3-6103-4e55-a0fa-a1ab0d27e4e4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background and context claims about polyspermy, fertilization recovery, and haploid induction in plants. These include established knowledge about polyspermy being lethal in animals, the existence of polyspermy blocks in plants, previous demonstrations of triparental plants, the fertilization recovery program, and various factors regulating gamete fusion and haploid induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately represent prior work in the field and are appropriately cited. They provide necessary context for understanding the significance of the current findings. The citations appear accurate and the characterizations of previous work are fair.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:10.752778Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e6746107-edff-4830-9578-bd277f56caeb",
+      "result_id": "ef4842f2-2d0c-4a3a-a836-f6973db3b697"
+    },
+    {
+      "claim_id": "704f9023-86d2-4717-a5f3-88785e4f875b",
+      "result_id": "ef4842f2-2d0c-4a3a-a836-f6973db3b697"
+    },
+    {
+      "claim_id": "0303c9de-a91a-4d38-8fd8-3f1a853401c0",
+      "result_id": "ef4842f2-2d0c-4a3a-a836-f6973db3b697"
+    },
+    {
+      "claim_id": "048612df-479e-48ef-a1dd-adf547c68795",
+      "result_id": "ef4842f2-2d0c-4a3a-a836-f6973db3b697"
+    },
+    {
+      "claim_id": "941d9a8e-929b-4682-9713-e31d56fa21e7",
+      "result_id": "ef4842f2-2d0c-4a3a-a836-f6973db3b697"
+    },
+    {
+      "claim_id": "43a199a2-b634-4621-aca3-fe7b2d9ac1d9",
+      "result_id": "ef4842f2-2d0c-4a3a-a836-f6973db3b697"
+    },
+    {
+      "claim_id": "547f5612-a9c1-46b3-8c42-cb9423c2c97d",
+      "result_id": "ef4842f2-2d0c-4a3a-a836-f6973db3b697"
+    },
+    {
+      "claim_id": "19755430-39d9-4543-9d2d-0dea3870214d",
+      "result_id": "ef4842f2-2d0c-4a3a-a836-f6973db3b697"
+    },
+    {
+      "claim_id": "e3c134f5-41a1-4ea1-a339-70c9e8fcdde1",
+      "result_id": "ef4842f2-2d0c-4a3a-a836-f6973db3b697"
+    },
+    {
+      "claim_id": "da691a77-90d2-41e8-960d-93aad79dbfc5",
+      "result_id": "6795a091-6b6f-4c5c-8e89-052c043dc36f"
+    },
+    {
+      "claim_id": "3442b155-827f-4803-b84e-25be8efc415f",
+      "result_id": "6795a091-6b6f-4c5c-8e89-052c043dc36f"
+    },
+    {
+      "claim_id": "df54f25d-f2d5-40be-96da-6dc0d23c4170",
+      "result_id": "6795a091-6b6f-4c5c-8e89-052c043dc36f"
+    },
+    {
+      "claim_id": "2e4103ec-f16b-42c8-be0b-27bb3df8582c",
+      "result_id": "6795a091-6b6f-4c5c-8e89-052c043dc36f"
+    },
+    {
+      "claim_id": "1b735fd9-5fcf-4d9d-9392-21746f48f3b9",
+      "result_id": "6795a091-6b6f-4c5c-8e89-052c043dc36f"
+    },
+    {
+      "claim_id": "d6472b51-7f1e-4594-bbf4-10489865b9b8",
+      "result_id": "6795a091-6b6f-4c5c-8e89-052c043dc36f"
+    },
+    {
+      "claim_id": "4fdc3514-71a5-43d8-9435-eadcc45c2f63",
+      "result_id": "6795a091-6b6f-4c5c-8e89-052c043dc36f"
+    },
+    {
+      "claim_id": "576f5be7-fdcc-46bf-9c3b-e11e1309e2bd",
+      "result_id": "6795a091-6b6f-4c5c-8e89-052c043dc36f"
+    },
+    {
+      "claim_id": "6ae42b39-a1da-49f7-88dc-d875ee2ade2b",
+      "result_id": "6795a091-6b6f-4c5c-8e89-052c043dc36f"
+    },
+    {
+      "claim_id": "f029df4a-ff76-463d-9b71-7a49abf6191f",
+      "result_id": "6795a091-6b6f-4c5c-8e89-052c043dc36f"
+    },
+    {
+      "claim_id": "dca61c9f-a5cb-479e-8d79-b5dc1651342e",
+      "result_id": "50dc0353-166e-4ce0-b545-ecdf567c54de"
+    },
+    {
+      "claim_id": "39b8e67b-52b2-4ab4-8fcf-f318610edeed",
+      "result_id": "50dc0353-166e-4ce0-b545-ecdf567c54de"
+    },
+    {
+      "claim_id": "a3c0ff18-9d56-4c84-81b5-60e75ca48c80",
+      "result_id": "50dc0353-166e-4ce0-b545-ecdf567c54de"
+    },
+    {
+      "claim_id": "95977417-c9ff-4cf4-bfe4-8c2ab4d8c067",
+      "result_id": "50dc0353-166e-4ce0-b545-ecdf567c54de"
+    },
+    {
+      "claim_id": "c237eddc-81bd-4854-ad3c-70d518beec1c",
+      "result_id": "50dc0353-166e-4ce0-b545-ecdf567c54de"
+    },
+    {
+      "claim_id": "4d3b367c-f334-4785-b366-dd3a36d51db8",
+      "result_id": "50dc0353-166e-4ce0-b545-ecdf567c54de"
+    },
+    {
+      "claim_id": "736ea0de-a383-42bc-b2fa-711a1a84a11c",
+      "result_id": "50dc0353-166e-4ce0-b545-ecdf567c54de"
+    },
+    {
+      "claim_id": "836da741-a33a-4786-9a40-8b52a36848ff",
+      "result_id": "50dc0353-166e-4ce0-b545-ecdf567c54de"
+    },
+    {
+      "claim_id": "346a325a-4dca-4cfd-8d85-c6677d5dc942",
+      "result_id": "50dc0353-166e-4ce0-b545-ecdf567c54de"
+    },
+    {
+      "claim_id": "e4d4819f-0ad9-45a0-8603-ff4bdb49d66b",
+      "result_id": "50dc0353-166e-4ce0-b545-ecdf567c54de"
+    },
+    {
+      "claim_id": "cdea0eff-61ca-4383-b661-bf6ee000e68c",
+      "result_id": "7266b500-f33f-456b-bbcc-36507e7532e7"
+    },
+    {
+      "claim_id": "4af0968c-46d9-45c6-91e8-bd7f237a3dcc",
+      "result_id": "7266b500-f33f-456b-bbcc-36507e7532e7"
+    },
+    {
+      "claim_id": "4b04dc07-2ad0-4121-ae74-daa6bec60d96",
+      "result_id": "7266b500-f33f-456b-bbcc-36507e7532e7"
+    },
+    {
+      "claim_id": "56fbe450-ea35-4332-9e8b-50e1ec7bcb0a",
+      "result_id": "7266b500-f33f-456b-bbcc-36507e7532e7"
+    },
+    {
+      "claim_id": "b99c543f-bce1-47a4-b748-b66790160939",
+      "result_id": "7266b500-f33f-456b-bbcc-36507e7532e7"
+    },
+    {
+      "claim_id": "a7fc575b-5716-4b89-a8e3-a7f4de847d7d",
+      "result_id": "c2dc32a1-5eaa-4ced-a0d6-3e6778ee9757"
+    },
+    {
+      "claim_id": "84e408e0-9a62-4f80-b0e9-ce7d195b2e6a",
+      "result_id": "c2dc32a1-5eaa-4ced-a0d6-3e6778ee9757"
+    },
+    {
+      "claim_id": "460febf7-1e8f-4cf6-a063-9ba8fc47fe40",
+      "result_id": "c2dc32a1-5eaa-4ced-a0d6-3e6778ee9757"
+    },
+    {
+      "claim_id": "6fe7b5c7-6d8f-4b92-bfc8-81115ff70d89",
+      "result_id": "c2dc32a1-5eaa-4ced-a0d6-3e6778ee9757"
+    },
+    {
+      "claim_id": "e4a36886-a5c7-448b-9566-eb8005e6595b",
+      "result_id": "c2dc32a1-5eaa-4ced-a0d6-3e6778ee9757"
+    },
+    {
+      "claim_id": "83e6914d-fb86-4095-833e-64d3c033e026",
+      "result_id": "c2dc32a1-5eaa-4ced-a0d6-3e6778ee9757"
+    },
+    {
+      "claim_id": "03fb9156-660b-4305-b147-a6ac7cc0bb03",
+      "result_id": "c2dc32a1-5eaa-4ced-a0d6-3e6778ee9757"
+    },
+    {
+      "claim_id": "042cecec-7d93-4fb8-9904-2b4347442607",
+      "result_id": "13c4c271-7eae-44e3-8aa7-fafb37a3355b"
+    },
+    {
+      "claim_id": "2bc377e5-20bd-4a3b-bee1-885b1d9645a3",
+      "result_id": "13c4c271-7eae-44e3-8aa7-fafb37a3355b"
+    },
+    {
+      "claim_id": "632b9d56-56c7-4598-8a70-cbb839879113",
+      "result_id": "13c4c271-7eae-44e3-8aa7-fafb37a3355b"
+    },
+    {
+      "claim_id": "e5b8aadb-4ae1-41e4-ab20-6968f9e0dfe3",
+      "result_id": "13c4c271-7eae-44e3-8aa7-fafb37a3355b"
+    },
+    {
+      "claim_id": "860faadf-6e01-44da-908d-c2d27e3ddb3b",
+      "result_id": "89d707bf-6adb-482b-b0eb-9f824e8805cf"
+    },
+    {
+      "claim_id": "ec3d7136-21c2-4f5b-bf64-abc3a8c37bae",
+      "result_id": "89d707bf-6adb-482b-b0eb-9f824e8805cf"
+    },
+    {
+      "claim_id": "62e96986-ae7c-4a2f-89ee-3308d1d1efa7",
+      "result_id": "89d707bf-6adb-482b-b0eb-9f824e8805cf"
+    },
+    {
+      "claim_id": "1177f403-4261-486b-a714-a63c56b5bcd7",
+      "result_id": "89d707bf-6adb-482b-b0eb-9f824e8805cf"
+    },
+    {
+      "claim_id": "23e792e4-82be-4bab-8a3d-0f1c52c010b2",
+      "result_id": "89d707bf-6adb-482b-b0eb-9f824e8805cf"
+    },
+    {
+      "claim_id": "da51ee48-744c-4bf3-bc41-e5ee934025e6",
+      "result_id": "c9486153-d444-4c64-9409-512681c3c94d"
+    },
+    {
+      "claim_id": "a201e4bf-f87b-402b-8736-812ecaacdd76",
+      "result_id": "c9486153-d444-4c64-9409-512681c3c94d"
+    },
+    {
+      "claim_id": "d5393df1-5dcb-4566-acd0-d66245302352",
+      "result_id": "c9486153-d444-4c64-9409-512681c3c94d"
+    },
+    {
+      "claim_id": "496b29ea-e6a2-41b2-a921-f0d0100131d7",
+      "result_id": "c9486153-d444-4c64-9409-512681c3c94d"
+    },
+    {
+      "claim_id": "97a4ea94-c788-4948-ac09-d1421fa9c597",
+      "result_id": "c9486153-d444-4c64-9409-512681c3c94d"
+    },
+    {
+      "claim_id": "98e288eb-3360-4cec-84c4-2a89cd830641",
+      "result_id": "c9486153-d444-4c64-9409-512681c3c94d"
+    },
+    {
+      "claim_id": "38d715ee-c684-417b-b66a-846042a0033a",
+      "result_id": "c9486153-d444-4c64-9409-512681c3c94d"
+    },
+    {
+      "claim_id": "ddef0884-55cf-4339-9a5c-e7c36e7bfb33",
+      "result_id": "485b2bb3-7219-4081-8ad8-7aa27407d699"
+    },
+    {
+      "claim_id": "d2cd75a2-1b65-499d-81cf-fd16156ce776",
+      "result_id": "485b2bb3-7219-4081-8ad8-7aa27407d699"
+    },
+    {
+      "claim_id": "acab4f76-7396-4d9d-adc1-c11e700cb20d",
+      "result_id": "485b2bb3-7219-4081-8ad8-7aa27407d699"
+    },
+    {
+      "claim_id": "0f30fd36-6659-4faf-a444-9e6e6575b9b3",
+      "result_id": "485b2bb3-7219-4081-8ad8-7aa27407d699"
+    },
+    {
+      "claim_id": "4c97396a-8e30-42e6-ac43-cb723c2ee230",
+      "result_id": "485b2bb3-7219-4081-8ad8-7aa27407d699"
+    },
+    {
+      "claim_id": "f84496ba-2d1c-4f8f-8bce-fe90f7019e25",
+      "result_id": "485b2bb3-7219-4081-8ad8-7aa27407d699"
+    },
+    {
+      "claim_id": "3631483a-cd87-405f-bfea-89eea9872889",
+      "result_id": "485b2bb3-7219-4081-8ad8-7aa27407d699"
+    },
+    {
+      "claim_id": "7222ff49-3432-4e89-8c2b-34da1a55ba1a",
+      "result_id": "485b2bb3-7219-4081-8ad8-7aa27407d699"
+    },
+    {
+      "claim_id": "a2fa2773-6cb1-4366-89f0-94a961506e0c",
+      "result_id": "485b2bb3-7219-4081-8ad8-7aa27407d699"
+    },
+    {
+      "claim_id": "3639181e-4cfa-443f-b970-aec3a7b92742",
+      "result_id": "485b2bb3-7219-4081-8ad8-7aa27407d699"
+    },
+    {
+      "claim_id": "24256cb9-d270-4fd4-99be-d764cb483d75",
+      "result_id": "485b2bb3-7219-4081-8ad8-7aa27407d699"
+    },
+    {
+      "claim_id": "1a1b5ee3-8c5b-4e1b-a88d-780145b60dc7",
+      "result_id": "485b2bb3-7219-4081-8ad8-7aa27407d699"
+    },
+    {
+      "claim_id": "08b5e7d1-f90c-4591-92a0-17776a281e6e",
+      "result_id": "485b2bb3-7219-4081-8ad8-7aa27407d699"
+    },
+    {
+      "claim_id": "5088929f-2233-4fa0-a012-2d0bfbcceca0",
+      "result_id": "485b2bb3-7219-4081-8ad8-7aa27407d699"
+    },
+    {
+      "claim_id": "0cc34e5b-d6a1-446b-809b-f1d188f39643",
+      "result_id": "6250dd1a-c3fd-4c7f-9147-61f9a33b55cb"
+    },
+    {
+      "claim_id": "60b2478b-3fff-49b6-bd3d-5d9275f83ba7",
+      "result_id": "6250dd1a-c3fd-4c7f-9147-61f9a33b55cb"
+    },
+    {
+      "claim_id": "4fff9047-be65-4d85-bfb8-feee3eb0c04a",
+      "result_id": "6250dd1a-c3fd-4c7f-9147-61f9a33b55cb"
+    },
+    {
+      "claim_id": "d25f3641-a8df-475e-9485-6687c1230685",
+      "result_id": "6250dd1a-c3fd-4c7f-9147-61f9a33b55cb"
+    },
+    {
+      "claim_id": "f32eb54b-d064-4393-86ab-71bd538a9862",
+      "result_id": "6250dd1a-c3fd-4c7f-9147-61f9a33b55cb"
+    },
+    {
+      "claim_id": "2c54eaec-b132-49c8-9a76-df456042b7c4",
+      "result_id": "6250dd1a-c3fd-4c7f-9147-61f9a33b55cb"
+    },
+    {
+      "claim_id": "ca62846c-6595-4e7f-bbe8-7a6b6895b3fa",
+      "result_id": "6250dd1a-c3fd-4c7f-9147-61f9a33b55cb"
+    },
+    {
+      "claim_id": "2881b2ef-a0e3-42aa-8df8-a2ffe959b935",
+      "result_id": "6250dd1a-c3fd-4c7f-9147-61f9a33b55cb"
+    },
+    {
+      "claim_id": "52cd4d2f-c28f-497c-b36a-1746d7f31a33",
+      "result_id": "6250dd1a-c3fd-4c7f-9147-61f9a33b55cb"
+    },
+    {
+      "claim_id": "a9d3ce50-7b2c-4ab4-8819-0da98a38f059",
+      "result_id": "aca9d524-13ee-4a09-8724-280fe29ca665"
+    },
+    {
+      "claim_id": "cbc38095-1553-4034-b9c6-7f0a87a4d5f4",
+      "result_id": "aca9d524-13ee-4a09-8724-280fe29ca665"
+    },
+    {
+      "claim_id": "40017300-eff2-496d-9a3f-20788ac055d9",
+      "result_id": "aca9d524-13ee-4a09-8724-280fe29ca665"
+    },
+    {
+      "claim_id": "bcf22133-963a-42cd-98b8-2e09b9fb8df0",
+      "result_id": "aca9d524-13ee-4a09-8724-280fe29ca665"
+    },
+    {
+      "claim_id": "ecfb9330-cf57-43db-befa-98e3571cb7fc",
+      "result_id": "aca9d524-13ee-4a09-8724-280fe29ca665"
+    },
+    {
+      "claim_id": "5b49f704-eed2-471b-81da-4445731f61ff",
+      "result_id": "8bbd4615-cf15-49d8-a42d-68b185660dd1"
+    },
+    {
+      "claim_id": "349f3914-6b48-4424-bc89-38d2386cac92",
+      "result_id": "8bbd4615-cf15-49d8-a42d-68b185660dd1"
+    },
+    {
+      "claim_id": "46120511-a0e2-4199-a396-540023c10319",
+      "result_id": "8bbd4615-cf15-49d8-a42d-68b185660dd1"
+    },
+    {
+      "claim_id": "53835330-c4ab-4977-8b93-4f22c2e8c131",
+      "result_id": "8bbd4615-cf15-49d8-a42d-68b185660dd1"
+    },
+    {
+      "claim_id": "032b3e50-c55e-4385-9ea9-13b63e1ed16e",
+      "result_id": "8bbd4615-cf15-49d8-a42d-68b185660dd1"
+    },
+    {
+      "claim_id": "ece2e14d-0d4d-4901-8c7b-6de14ce5ec3b",
+      "result_id": "8bbd4615-cf15-49d8-a42d-68b185660dd1"
+    },
+    {
+      "claim_id": "bb70c857-72c3-4bf1-a43c-e5b274971479",
+      "result_id": "8bbd4615-cf15-49d8-a42d-68b185660dd1"
+    },
+    {
+      "claim_id": "f6fb9b66-0306-43d1-b858-15e1251dc9e9",
+      "result_id": "8bbd4615-cf15-49d8-a42d-68b185660dd1"
+    },
+    {
+      "claim_id": "87cc5b50-7057-42ae-b042-10848c889f7f",
+      "result_id": "8bbd4615-cf15-49d8-a42d-68b185660dd1"
+    },
+    {
+      "claim_id": "0c59f714-6d73-4499-878d-9fe9f84fe72c",
+      "result_id": "8bbd4615-cf15-49d8-a42d-68b185660dd1"
+    },
+    {
+      "claim_id": "d2289ee3-1c31-4cec-a387-e49257b97667",
+      "result_id": "8bbd4615-cf15-49d8-a42d-68b185660dd1"
+    },
+    {
+      "claim_id": "d477162a-86ff-4010-b8d9-c157b9324852",
+      "result_id": "8bbd4615-cf15-49d8-a42d-68b185660dd1"
+    },
+    {
+      "claim_id": "e445b5b6-64c7-49e2-b073-b6dd96ae1baf",
+      "result_id": "8bbd4615-cf15-49d8-a42d-68b185660dd1"
+    },
+    {
+      "claim_id": "4cd5d5f2-33ca-414c-b4c4-09491d8167fa",
+      "result_id": "8bbd4615-cf15-49d8-a42d-68b185660dd1"
+    },
+    {
+      "claim_id": "f4505a63-9566-4000-8a5a-8f80b85f31d4",
+      "result_id": "8bbd4615-cf15-49d8-a42d-68b185660dd1"
+    },
+    {
+      "claim_id": "a1717f40-bcb9-4062-9897-6db40b059ec0",
+      "result_id": "8bbd4615-cf15-49d8-a42d-68b185660dd1"
+    },
+    {
+      "claim_id": "2fc8935f-b387-4a53-abd2-866266b97735",
+      "result_id": "8bbd4615-cf15-49d8-a42d-68b185660dd1"
+    },
+    {
+      "claim_id": "8d8dc774-628c-468f-934e-503dfb9ba0d0",
+      "result_id": "8bbd4615-cf15-49d8-a42d-68b185660dd1"
+    },
+    {
+      "claim_id": "460febf7-1e8f-4cf6-a063-9ba8fc47fe40",
+      "result_id": "8bbd4615-cf15-49d8-a42d-68b185660dd1"
+    },
+    {
+      "claim_id": "e78078e8-f4ac-46a8-968c-db09967768af",
+      "result_id": "8bbd4615-cf15-49d8-a42d-68b185660dd1"
+    },
+    {
+      "claim_id": "437f4742-db14-45cb-a36f-22da11f2405f",
+      "result_id": "8bbd4615-cf15-49d8-a42d-68b185660dd1"
+    },
+    {
+      "claim_id": "d6ba16f5-1398-42d0-a9ba-1498915306bf",
+      "result_id": "8bbd4615-cf15-49d8-a42d-68b185660dd1"
+    },
+    {
+      "claim_id": "a8114c25-4de6-4f64-8baa-de872a8f2918",
+      "result_id": "8bbd4615-cf15-49d8-a42d-68b185660dd1"
+    }
+  ],
+  "comparisons": []
+}

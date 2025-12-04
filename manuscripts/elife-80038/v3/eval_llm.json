@@ -1,0 +1,385 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Lge11-80 is an intrinsically disordered protein enriched in Y, R, and G residues that undergoes robust phase separation at low protein concentrations (1 \u00b5M in 0.1 M NaCl), which can be inhibited at high salt concentrations (>2 M NaCl).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 collectively establish the basic biophysical properties of Lge11-80. The sequence composition (C3), disorder (C4), and phase separation behavior (C2, C5, C6) are directly demonstrated through experimental data shown in Figure 1 and supported by prior work. These foundational characterizations are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The R>K mutation increases the saturation concentration for phase separation by ~10-fold, while Y>A mutation strongly impairs phase separation, demonstrating that tyrosines and \u03c0-\u03c0 interactions play critical roles in Lge11-80 condensate formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 are supported by experimental solubility diagrams (Figure 1B-C) and Monte Carlo simulations (Figure 1\u2014figure supplement 1D). The differential effects of R>K versus Y>A mutations on phase separation are clearly demonstrated, with Y>A having a more severe impact. The interpretation regarding \u03c0-\u03c0 interactions is reasonable given the data and is supported by prior literature (C10).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "FRAP experiments reveal that WT and R>K Lge11-80 condensates have recovery half-times in the range of 100 s for partial bleaching and up to 350 s for whole condensate bleaching, with WT showing ~30% higher recovery half-time than R>K for whole bleached condensates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 are directly supported by FRAP data shown in Figure 1D-E and Figure 1\u2014figure supplement 2. The double exponential fitting approach is appropriate and the quantitative differences between WT and R>K are clearly demonstrated. The interpretation that this suggests different internal organization is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Monte Carlo simulations show that Y-Y interaction free energy is independent of environmental polarity (~-5 kcal/mol), while R-Y and K-Y interactions depend significantly on dielectric permittivity, with significantly stronger R-Y binding compared to K-Y observed only in environments of intermediate polarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 are supported by Monte Carlo simulation data shown in Figure 1\u2014figure supplement 1D. The computational methodology is appropriate and the results provide mechanistic insight into the differential effects of R versus K on phase separation. However, the relevance of these simulations to the actual condensate environment depends on assumptions about the dielectric constant within condensates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "MD simulations reveal that WT Lge11-80 forms a single percolating cluster with all 24 copies engaged, shaped predominantly by R-Y contacts (10% of pairs) followed by G-Y and Y-Y contacts (7% each), while mutants form multiple smaller clusters with reduced interaction networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 are supported by extensive MD simulation data shown in Figures 2 and 2\u2014figure supplement 1. The contact analysis is thorough and the enrichment calculations provide quantitative support. The observation that R-Y and Y-Y contacts drive multi-chain association is consistent with recent literature (C25). The 1 \u00b5s simulation time provides reasonable sampling for these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Interaction valency analysis shows WT stabilizes at ~4 binding partners per protein (range 1-9), while mutants plateau at ~2 partners (max 6), with WT achieving ~1.5-fold higher contact probability sufficient to form a percolating cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 are supported by MD simulation data in Figure 2D-E and Figure 2\u2014figure supplement 1C. The valency analysis is quantitative and the correlation with experimental phase separation behavior is clear. The connection to percolation theory is appropriate, though the critical contact probability calculation assumes a well-mixed system which may be an oversimplification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "MD simulations reveal dynamic binding modes where WT exhibits multiple highly interactive regions along the sequence with ~4 binding partners, while mutants show fewer interaction motifs, with Y>A binding restricted to the C-terminal third.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by interaction mode analysis shown in Figure 3A-B. The statistical approach to defining 'stickers' and 'spacers' is appropriate for disordered proteins. The representative binding modes are well-characterized and correlate with the valency data. The restriction of Y>A binding to the C-terminal region is clearly shown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Intra- and intermolecular interactions show 'symmetry breaking': while amino acid-type contact frequencies are highly correlated between single-chain and multi-chain simulations, position-resolved statistics and interaction modes differ significantly, suggesting proteins maintain core self-contacts while establishing new contacts with neighbors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are supported by correlation analysis shown in Figure 3\u2014figure supplement 1. The distinction between amino acid-type correlations and position-resolved correlations is important and well-demonstrated. The interpretation that proteins maintain self-identity rather than behaving as a polymer melt is reasonable and consistent with recent literature (C41).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Radius of gyration analysis shows WT is compact in both single-molecule (1.58\u00b10.12 nm) and crowded (1.60\u00b10.22 nm) contexts, while R>K and Y>A are more extended in single-molecule simulations but respond differently to crowding, with Y>A unwinding (1.97\u00b10.43 nm) and R>K compacting (1.67\u00b10.27 nm) in the crowded environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 are supported by Rg distribution data in Figure 4A-B. The measurements are quantitative with appropriate error estimates. The comparison to random coil predictions (C45) provides useful context. The sequence-specific response to crowding (C49) is an important observation, though the mechanistic explanation for R>K compaction upon crowding could be more thoroughly validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "MD-derived translational diffusion coefficients for Lge11-80 variants (~120 \u00b5m\u00b2/s for single-chain, 100-150 \u00b5m\u00b2/s for multi-chain) are comparable to experimental values for similarly sized proteins (ubiquitin: 149 \u00b5m\u00b2/s; GFP: ~90 \u00b5m\u00b2/s), suggesting realistic diffusional dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by diffusion coefficient calculations shown in Figure 4C with appropriate corrections applied. The comparison to experimental values for ubiquitin and GFP (C51-C52) provides validation. However, the comparison proteins differ in size and structure from Lge11-80, so the validation is suggestive rather than definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Viscosity analysis shows single-chain simulations yield values close to calculated TIP4P-D water/0.1 M NaCl viscosity (0.83 mPa\u00b7s), with ~20% increase in crowded systems. WT shows somewhat lower diffusion coefficients than mutants, with WT diffusion dropping ~20% over the last 0.3 \u00b5s correlating with percolating cluster formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by viscosity and diffusion data in Figure 4C and Figure 4\u2014figure supplement 1F. The viscosity calculations use appropriate methodology and the values are reasonable. The correlation between WT diffusion decrease and cluster formation (C57) is a nice observation linking dynamics to structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Configurational entropy analysis reveals significant decrease in Sconf upon crowding (largest for WT, smallest for Y>A), correlating with increased compactness (\u03c6) (Pearson R = -0.6). Compactness and valency are largely independent parameters describing crowded phase organization, reflecting entropic and enthalpic contributions respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by entropy calculations shown in Figure 4D-F using MIST formalism. The convergence analysis (Figure 4\u2014figure supplement 1B) shows reasonable convergence. The correlation between \u0394Sconf and \u03c6 (C61) is quantitative and significant. The interpretation that compactness and valency are independent descriptors (C63) is supported by the poor correlation between \u0394Sconf and valency (C62).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The fractal model predictions closely match MD simulation results: the slope (A) and intercept (B) of log R vs log Mw plots are similar between simulations and model (2.33 vs 2.42 and 1.13 vs 1.11), suggesting fractal organization is present even at the MD simulation box scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by comparison data in Figure 5\u2014figure supplement 1B. The close agreement between the fractal model and MD simulations provides strong validation of the model at the nanometer scale. This is a key result linking atomistic simulations to the mesoscale model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The fractal model predicts that to maintain fixed size-to-concentration ratio, protein compactness must decrease non-linearly with increasing valency. Mutations perturb compactness and valency, potentially decreasing apparent concentration in fixed-size condensates. IDP compactness is tunable by environmental factors, suggesting IDP concentration inside condensates may be adaptable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C71 are based on the fractal model shown in Figure 5B. While C67-C68 are logical consequences of the model, C69-C71 are more speculative. C69 is supported by citation to prior work, but C70-C71 represent predictions that require experimental validation. The model provides a framework for these predictions, but they remain to be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Fractal dimension analysis shows WT exhibits df = 2.42, R>K shows df = 2.09, and Y>A shows df = 1.63, with decreasing dimensionality correlating with impaired phase separation behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C74-C76 are supported by fractal model calculations shown in Figure 5C. The fractal dimensions are derived from the validated model using MD-derived compactness and valency values. The correlation with experimental phase separation behavior is clear: WT (robust phase separation) > R>K (limited phase separation) > Y>A (no phase separation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Reconstructed condensate models show WT exhibits densely packed fractal geometry, Y>A shows elongated filamentous topology, and R>K shows intermediate topology. The Y>A cluster occupies significantly larger volume than R>K or WT, with all three systems exhibiting holes and cavities of different sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are supported by FracVAL reconstructions shown in Figure 6A-B and Videos 4-6. The reconstructions are based on validated fractal dimensions and provide visual representation of the predicted condensate architectures. The qualitative differences in topology correlate well with experimental observations of phase separation behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Mutations of R and Y residues perturb intra- and intermolecular interaction networks, with R>K affecting primarily valency and Y>A affecting both valency and compactness. These two parameters are sufficient to describe condensate structural organization across length scales in the fractal model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 represent key conclusions from the Discussion section, synthesizing results from MD simulations and the fractal model. The claims are well-supported by the collective evidence from Figures 2-6. The framework linking molecular properties (valency, compactness) to mesoscale organization is the central contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Simulation-derived valency and compactness values are consistent with FRAP recovery dynamics: faster recovery in centrally bleached WT condensates relates to higher compactness, while faster peripheral recovery in R>K relates to lower valency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 connect simulation results to experimental FRAP data. The interpretations are reasonable and provide validation of the simulation results. However, C88 includes speculation ('could potentially be related') and the mechanistic connections between compactness/valency and FRAP dynamics, while plausible, are not rigorously proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The fractal model translates changes in protein valency and compactness to different scaling behavior and condensate topology, predicts pre-percolation finite-size clusters, provides fractal dimension and scale-dependent properties, and enables atomistically resolved models of 3D cluster organization at any size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 describe capabilities and predictions of the fractal model. These are supported by the model derivation (Appendix 1), validation against MD simulations (Figure 5\u2014figure supplement 1B), and demonstration of cluster reconstructions (Figure 6). The connection to recent literature on pre-percolation clusters (C90) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C96"
+    ],
+    "result": "Fractal behavior is naturally related to percolation phenomena, with established links between fractal dimension and critical exponents in percolation models. The analysis suggests network transition concentrations should be lower for WT than mutants, as experimentally observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94, C96 connect the fractal model to percolation theory. C93-C94 are supported by citations to established theory. C96 represents a prediction that is confirmed by experimental observations, providing validation of the theoretical framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Fractal systems exhibit scale-dependent packing density, enabling high local concentration at short scales and low global concentration at long scales, and are characterized by holes of varying sizes. Similar low-dimensional fractal structures (df 1.6-1.9) have been demonstrated experimentally for elastin-like polypeptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 discuss general properties of fractal systems and their relevance to biomolecular condensates. C97 provides experimental precedent from prior work. C98-C100 describe established fractal properties (supported by citations) and their implications for condensate organization. These provide important context for interpreting the model predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "WT Lge11-80 droplets are fully permeable to dextrans up to 2000 kDa (Rg ~27 nm), suggesting organization with large holes (~55 nm diameter or more), consistent with the fractal model prediction of dimensionality below 3 (df = 2.42).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 connect experimental permeability data (Figure 6\u2014figure supplement 1) to fractal model predictions. The dextran permeability data is clear and the inference about hole sizes (C102) is reasonable. The consistency with the fractal model (C103) provides experimental validation of the model's predictions about condensate architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The fractal model predicts formation of sub-microscopic clusters and coexistence of differently sized clusters with characteristic mass-size scaling. These predictions can be tested using static light scattering, where fractal dimension can be estimated from scattering curves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C108 discuss predictions and future experimental tests. C104 is a reasonable inference from the model but remains speculative. C105 cites prior work on Lge1/Bre1 core-shell structures. C106-C108 propose experimental validation strategies. These represent important future directions but are not yet validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Colloid cluster formation occurs via two universal regimes: diffusion-limited (DLCA, df ~1.8, looser organization) and reaction-limited (RLCA, df ~2.1, more compact organization), which do not depend on particle chemistry and provide a paradigm for modeling biomolecular condensates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 describe established colloid chemistry principles (supported by citations) and their application to biomolecular condensates. These provide important theoretical context for the fractal model. The universality of these regimes (C113) justifies the application of colloid models to protein condensates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "Recent studies have demonstrated the possibility to tune condensate properties in vitro and in vivo by manipulating aromatic residue content, molecular weight, linker size, and valency in IDPs and modular proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 summarizes prior work (supported by citations) showing that condensate properties can be rationally tuned. This provides context for the potential applications of the framework developed in this study.",
+    "result_type": "MINOR"
+  }
+]

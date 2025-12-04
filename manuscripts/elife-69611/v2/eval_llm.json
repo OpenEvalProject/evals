@@ -1,0 +1,362 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors developed a massively parallel reporter assay (FACS-uORF) to quantify the activity of 1,689 AUG and 349 non-AUG uORFs from S. cerevisiae and S. paradoxus. The library design included all transcript leaders <180 nt with at least one uAUG and all previously identified non-AUG uORFs. Transcription initiated at designed positions for ~97% of constructs, and measurements were consistent across different fluorescent reporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 describe the experimental design and validation of the FACS-uORF system. The library composition is clearly stated, filtering criteria are documented (C65), and critical validation experiments confirm correct transcription start sites (C66) and reporter consistency (C67). The scale claim (C68) is reasonable given the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C69",
+      "C70"
+    ],
+    "result": "Most AUG-initiated uORFs (72%, 1,222/1,689) significantly altered YFP expression, with 95% of functional uORFs acting as repressors causing a median 2.8-fold decrease in expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C69, and C70 are directly supported by the FACS-uORF experimental data shown in Figure 1B. The percentages and fold-changes are clearly quantified from the dataset, and statistical significance is established through the methods described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Non-AUG uORFs had significantly weaker impacts on expression compared to AUG uORFs. They were less likely to change expression (62% vs 72%, p=8\u00d710\u207b\u2075), caused smaller changes (median 10% vs 2.8-fold), and were eight times more likely to have enhancer activity (47% vs 6%, p<2.2\u00d710\u207b\u00b9\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C75-C77 are well-supported by experimental data with appropriate statistical tests (Fisher's exact test, Wilcoxon Rank-sum Test). The comparisons between AUG and non-AUG uORFs are direct and quantitative, with highly significant p-values supporting the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "After removing suspected false positives (37/66), 29 enhancer AUG-uORFs remained with median 1.7-fold increase in expression. Most (26/29) were in multi-uORF transcript leaders, with 12 positioned upstream of other uORFs similar to the GCN4 uORF1 enhancer mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 describe careful manual curation of enhancer uORFs with examples provided in Figure 1\u2014figure supplement 4. The identification of false positives due to annotation errors and Kozak context changes (C71) demonstrates appropriate skepticism. The remaining enhancers show consistent patterns with known mechanisms (C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Manual evaluation revealed that some non-AUG uORFs with apparent regulatory effects were nested inside AUG uORFs (6/30 enhancers, 4/16 repressors), complicating interpretation of their functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 appropriately identify a confounding factor in interpreting non-AUG uORF function. The manual evaluation approach is reasonable, and the authors correctly note this complicates interpretation, showing appropriate caution in their conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Insertion of the CGACGA stalling dicodon made nearly all AUG-uORFs (99%) and most non-AUG uORFs (59%, p=0.0235) more repressive, supporting their active translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by experimental data in Figure 1D with appropriate statistical testing (Binomial Exact Test). The logic that stalling dicodon insertion increases repression only if uORFs are translated is sound. However, the 41% of non-AUG uORFs not affected suggests heterogeneity in their translation status.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Overlapping AUG-uORFs (oORFs) are approximately 10% more repressive than discrete uORFs (p=0.02432), with this difference decreasing when considering only significant repressors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is supported by experimental data in Figure 1E with statistical testing (WRT). The modest effect size (10%) and the caveat about the difference decreasing among significant repressors shows appropriate nuance. This contrasts with predictions from ribosome profiling studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "PoLib-seq measurements of ribosome loading were positively correlated with FACS-uORF protein expression measurements. Of FACS-uORF repressors, 88% (1,068/1,216) also repressed ribosome loading (p<2.2\u00d710\u207b\u00b9\u2076), and 72% (86/120) of enhancers increased ribosome loading (p<2.3\u00d710\u207b\u2076). The correlation improved in upf1\u0394 strain (slope closer to 1, p=3.6\u00d710\u207b\u00b3\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 demonstrate validation of FACS-uORF results using an orthogonal method (PoLib-seq). The positive correlations with highly significant p-values support that uORFs affect translation efficiency. The improved correlation in upf1\u0394 (C87) appropriately demonstrates that PoLib-seq captures translational effects independent of NMD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In upf1\u0394 yeast lacking NMD, 93% of repressive AUG-uORFs (p<2.2\u00d710\u207b\u00b9\u2076) and 85% of repressive non-AUG uORFs (p=0.0005335) were less repressive than in wildtype. In wildtype, 54% of variance in uORF effects on protein levels was explained by RNA abundance differences, but this correlation was eliminated in upf1\u0394.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 are well-supported by experimental comparisons between wildtype and upf1\u0394 strains shown in Figure 3A-B. The statistical tests are appropriate, and the elimination of the RNA-protein correlation in upf1\u0394 (C91) provides strong evidence that NMD contributes substantially to uORF-mediated repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "By comparing uORF repression in wildtype and upf1\u0394 strains, the median contribution of NMD to uORF repression was quantified as 35% across 431 significant repressor AUG-uORFs, leading to the estimate that roughly one-third of yeast uORF repression is due to NMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 present a novel quantification of NMD's contribution to uORF repression. The calculation method is clearly described in Figure 3C, and the median value of 35% is directly derived from the data. The inference that \"roughly one third\" (C93) is a reasonable summary of the median.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Median %NMD varied by stop codon identity (UGA: 37.5%, UAA: 35.3%, UAG: 33.2%, not statistically significant overall), but UGAC stop codons showed lower %NMD (29.7%) than UGAU (41.3%, p=0.061 approaching significance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C95 describe trends in the data shown in Figure 3D-E, but the lack of statistical significance for the overall stop codon effect (C94) and the marginal significance for UGAC vs UGAU (p=0.061, C95) means these results are suggestive but not conclusive. The biological interpretation linking UGAC to readthrough is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Short uORFs (\u226412 amino acids) exhibited lower %NMD than long uORFs (p=0.011), and stop codon distance from the 5' cap was positively correlated with %NMD (R\u00b2=0.065, p=7.44\u00d710\u207b\u2078), suggesting reinitiation and position influence NMD susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 are supported by experimental data in Figure 3F-G with appropriate statistical tests. The correlation between stop position and %NMD (C97) is statistically significant despite modest R\u00b2. The interpretation linking short uORFs to reinitiation (C96) is consistent with prior work, though the R\u00b2 for position effects is low.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Strong Kozak contexts (A-rich at -3 position) were only observed among the most repressive uORFs (\u226532-fold) and absent for weaker repressors and enhancers. Start codons near the transcription start site were more repressive than those further downstream, while stop codons further from the main ORF start were less repressive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 are supported by data in Figure 4A-C. The observation that strong Kozak contexts are restricted to the most repressive uORFs (C98-C99) is clearly shown. The positional effects (C100-C101) are statistically significant and represent a novel finding, though the mechanistic basis remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "An elastic net regression (ENR) model explained approximately one-third of the variance in uORF activity (R\u00b2\u22480.36), with uORF start and stop codon location features together being more predictive than Kozak sequence strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 are supported by the modeling results shown in Figure 4D-E. The R\u00b2 value is clearly stated, and the feature weights demonstrate that positional features have comparable or greater importance than Kozak context. However, the modest R\u00b2 indicates substantial unexplained variance, which the authors appropriately acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "In the upf1\u0394 ENR model, the sequence downstream of the stop codon was no longer significant, while uORF codon Adaptation Index (CAI) became significant, suggesting these features specifically influence NMD and translation efficiency, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 are supported by comparison of feature weights between wildtype and upf1\u0394 ENR models in Figure 4E. The differential importance of downstream sequence (NMD-related) and CAI (translation-related) between strains provides mechanistic insight into how different features contribute to uORF function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Among 333 uORFs tested in 470 alternative transcript leaders, 116 differed significantly in activity depending on transcription start site (p.adjust \u22640.05). Of those with \u22652-fold differences, 34 were more repressive when closer to the transcription start site while only 12 were less repressive (p=0.001641).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 are supported by experimental data in Figure 5A with appropriate statistical testing (t-test with multiple testing correction, Binomial Exact Test). This represents a novel finding that uORF activity is highly dependent on transcription start site usage, with clear directional bias toward increased repression when cap-proximal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Specific examples demonstrate dramatic TSS-dependent changes in uORF activity: S. paradoxus NEJ1 uORF is ~60-fold repressive in short leaders but only 1.5-fold in long leaders; S. cerevisiae DAL7 uORF ranges from non-functional (142 nt leader) to 2.3-fold repressive (11 nt from cap); RNT1 uORF shows an exception with stronger repression in longer leaders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 provide specific examples supporting the general finding of TSS-dependent uORF activity. The NEJ1 and DAL7 examples (C108-C109) show dramatic position-dependent effects consistent with the model, while RNT1 (C110) appropriately identifies an exception, demonstrating that the relationship is not universal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "The direction of uORF regulation (repressor vs enhancer) was almost entirely conserved between S. cerevisiae and S. paradoxus orthologous uORFs (77/78), but the magnitude of regulation showed moderate correlation (R\u00b2=0.62) with some notable exceptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 are supported by experimental comparison of orthologous uORFs shown in Figure 6A. The near-perfect conservation of regulatory direction (C111) contrasts with the moderate correlation in magnitude (C112), suggesting that while the qualitative function is conserved, quantitative effects can diverge over ~5 million years of evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Specific examples of divergence in uORF activity between species include: S. cerevisiae SEC1 oORF being 1.5-2\u00d7 more repressive than S. paradoxus (possibly due to deletion shortening the oORF); S. paradoxus AIM22 oORF being ~4\u00d7 more repressive than S. cerevisiae (possibly due to stronger Kozak); ECM7 uORF showing conserved strong 10-fold repression in both species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 provide specific examples of conservation and divergence. The SEC1 and AIM22 cases (C113-C114) show divergence with plausible mechanistic explanations, while ECM7 (C115) demonstrates strong conservation. These examples appropriately illustrate the range of evolutionary outcomes for orthologous uORFs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Conserved uORFs (PhastCons >0.5) were less repressive than non-conserved uORFs. Mutating non-AUG uORF start codons to AUG created much more repressive 'de novo' uORFs, suggesting newly emergent yeast uORFs tend to be strong repressors likely removed by natural selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 are supported by data in Figure 6B comparing conserved, non-conserved, and de novo uORFs. The observation that conserved uORFs are less repressive (C116) is consistent with prior vertebrate studies. The inference about selection against strong repressors (C118) is reasonable given that de novo uORFs are more repressive than natural ones.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Conserved uORF start codons were located further from transcription start sites and had weaker Kozak contexts (p=0.0547) than non-conserved uORFs, suggesting both sequence and position features are subject to selection such that conserved uORFs have features associated with milder impacts on expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 are supported by data in Figure 6C-D. The positional difference (C119) is clear, while the Kozak difference (C120) approaches but does not reach significance (p=0.0547). The inference about selection (C121) is reasonable given the combined evidence, though the marginal significance of the Kozak difference introduces some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The introduction establishes the biological context and knowledge gaps regarding uORF function, including: the general repressive nature of uORFs through translational inhibition and NMD; the existence of enhancer uORFs (e.g., GCN4); the prevalence of AUG and non-AUG uORFs identified by ribosome profiling; limited experimental validation; unclear relative influences of sequence, structural, and positional features; and gaps in understanding NMD mechanisms and evolutionary conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C62 establish the scientific background and rationale for the study. These are primarily citations to prior work and statements of knowledge gaps that are well-supported by the referenced literature. The authors appropriately identify what is known and unknown, providing clear motivation for their experimental approach.",
+    "result_type": "MINOR"
+  }
+]

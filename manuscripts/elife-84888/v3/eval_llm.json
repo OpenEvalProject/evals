@@ -1,0 +1,488 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The study recruited 30 right-handed adults (ages 21-36, mean age 23.5, 16 female) from Providence, Rhode Island. After preprocessing, 2 participants were excluded due to excessive motion (>3mm), resulting in a final sample of N=28. The study received IRB approval (Protocol #1607001555), all participants provided informed consent, and received monetary compensation ($15/hour plus up to $20 performance bonus).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C31-C35 provide complete documentation of participant recruitment, exclusion criteria, ethical approval, consent procedures, and compensation. The sample size (N=28) is clearly stated with appropriate demographic information and data quality control measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Participants invested significantly more money with high-return social partners ($7.12) compared to high-return bandits ($6.43; t=-3.57, p<0.001), and significantly less with low-return partners ($1.71) versus low-return bandits ($2.71; t=5.69, p<0.001). No significant differences were observed for neutral or random stimuli across tasks (all ps>0.1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 demonstrate task-dependent differences in investment behavior with appropriate statistical tests. The pattern shows context-specific learning with social stimuli eliciting more extreme responses (higher investments for good partners, lower for bad partners) compared to nonsocial bandits, while control conditions show no differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "The most recent relevant outcome (t-1) exerted the largest effect on investments compared to earlier outcomes (t-1 vs t-2: t=-4.98, p<0.001), with this recency effect being significantly stronger for social partners than bandits (t=3.19, p=0.004).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 demonstrate recency effects in learning with appropriate statistical comparisons across time lags and task contexts. The findings show both general recency effects and task-specific modulation, supporting differential learning mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Recent irrelevant outcomes (from immediately preceding trials with different stimuli) positively influenced bandit decisions (t=1.83, p=0.039) but were negatively correlated with trust decisions (t=-2.73, p=0.011), with this task difference being statistically significant (t=3.42, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 demonstrate differential credit spreading across tasks with appropriate statistical tests. The opposite effects of irrelevant outcomes (positive for bandits, negative for social partners) suggest distinct credit assignment mechanisms, though the bandit effect is marginally significant (p=0.039).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "Relevant prior gains exerted stronger influence on choices than losses (t=-4.27, p<0.001), while immediately preceding irrelevant losses disproportionately impacted decisions compared to gains (t=2.21, p=0.029).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 demonstrate valence-dependent learning asymmetries with statistical support. The pattern suggests gains drive learning from relevant outcomes while losses drive credit spreading to irrelevant outcomes, though the irrelevant loss effect is marginally significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The valenced credit assignment model (V-LR, V-CA) best fit behavior in both tasks. Model parameters revealed more precise credit assignment to social partners (CA=0.74) than bandits (CA=0.54; F=10.67, p=0.002), with this precision being greater for gains than losses (F=4.72, p=0.033).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 demonstrate successful computational modeling with appropriate model comparison and parameter estimation. The findings quantitatively support task and valence differences in credit assignment precision, though model validation details are provided in supplementary materials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Neural patterns in mPFC, lOFC, and mOFC encoded stimulus identity during choice, with stronger encoding in the trust task (\u03b2=0.019) than bandit task (\u03b2=0.012; t=-3.64, p<0.001). Individual credit assignment precision positively predicted neural representation fidelity across both tasks (t=3.38, p<0.001) regardless of outcome valence (CA-positive: t=3.26, p=0.0014; CA-negative: t=2.50, p=0.014). Greater task earnings correlated with more discriminable stimulus representations (t=4.14, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 demonstrate the neural basis of credit assignment using RSA with appropriate statistical tests and multiple converging analyses. The relationship between behavioral credit assignment and neural representation fidelity is well-established across valence conditions and correlates with task performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "During feedback, mPFC showed stronger identity representations in the trust task (t=-2.41, p=0.023). Positive prediction errors enhanced identity encoding in mPFC (F=4.33, p=0.039) and lOFC (F=5.98, p=0.017), with this valence effect being significantly greater in the trust versus bandit task (t=-2.71, p=0.008).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 demonstrate valence-dependent modulation of state encoding during feedback with appropriate statistical tests. The findings show reward enhances state representations particularly in social contexts, though some effects are marginally significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Credit assignment precision positively predicted cross-timepoint consistency of stimulus representations in mPFC and lOFC (pooled estimate: t=2.17, p=0.033), with this relationship being selectively enhanced for gains but not losses (t=3.48, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 demonstrate that credit assignment is supported by persistent neural codes across choice and feedback phases. The valence-specific effect for gains aligns with behavioral findings, though the main effect is marginally significant (p=0.033).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Prediction errors modulated BOLD signal in ventral striatum and vmPFC (corrected for multiple comparisons), but the strength of PE signaling did not differ between trust and bandit tasks (all ps>0.1), even at lowered threshold (p<0.001 uncorrected).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 demonstrate that PE signaling strength alone cannot explain task differences in learning specificity. The null result is appropriately tested at multiple thresholds and rules out a simple explanation based on PE magnitude.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Credit assignment effects on neural state representations remained significant when controlling for learning rate (choice: t=3.31, p<0.0012; cross-timepoint: t=2.11, p=0.036), while learning rate itself was not significant in either model (all ps>0.09).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 demonstrate that credit assignment precision, not learning rate, predicts neural representation fidelity. The control analysis appropriately rules out confounding by learning rate, strengthening the specificity of the credit assignment mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Face stimuli were drawn from the MR2 database and pre-validated for equivalence on trustworthiness and attractiveness. Each trial lasted 16s with a 3s choice window, jittered ITIs (1-5s), and 2s feedback. Four stimuli followed distinct reward distributions (high: always net gain; low: always net loss; neutral/random: balanced gains/losses differing in variance). Return rates were preselected to sample the full distribution but randomized in order, with payoffs dependent on participant investment. Missed trials (investment=$0) were excluded from analyses. Stimulus presentations were randomly interleaved (1-15 trials apart).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C52 provide comprehensive documentation of experimental design including stimulus validation, timing parameters, reward structures, and data handling procedures. The design appropriately controls for stimulus characteristics and ensures comparable reward distributions across participants while maintaining trial-by-trial variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Investment data were modeled using participant-specific linear regressions combining both tasks, with investments as weighted sums of relevant (stimulus-matched) and irrelevant (temporally adjacent) prior outcomes. For valence analyses, four separate models examined lag-1 effects for relevant vs. irrelevant and gain vs. loss trials to avoid convergence issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 describe appropriate regression modeling approaches for behavioral analysis. The decision to use lag-1 only for valence analyses due to convergence issues is pragmatic, though it limits temporal depth of valence-specific effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64"
+    ],
+    "result": "A logistic reinforcement learning model was developed for discrete, ordinal choices ($0-$10 in $2.50 increments). All responded trials were included in fitting. The Gaussian distribution width was fixed at \u03c3=1, and models were fit by minimizing negative log-likelihood. A trial\u00d7stimulus value matrix tracked expected values separately for each stimulus, with the baseline model performing standard model-free RL by updating only the relevant stimulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C64 provide adequate documentation of the computational modeling approach. The logistic function is appropriate for ordinal choices, and the fixed Gaussian width is a reasonable constraint, though sensitivity to this choice is not reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Model comparison used AIC, with selection based on maximizing negative AIC and minimizing \u0394AIC (difference from each participant's best-fitting model). Model comparison was performed separately for social and bandit tasks, with detailed results in supplementary materials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 describe standard model comparison procedures using AIC. The approach is appropriate, though separate task-specific model comparison may miss models that better capture cross-task differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Model validation simulated 100 participants per model with parameters randomly sampled from uniform distributions. Each model was fit to simulated data using 20 iterations of gradient descent, with classification rates computed as frequency of correct model identification by maximizing negative AIC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 describe appropriate model validation procedures. The simulation-based approach tests model identifiability, though uniform parameter sampling may not reflect the true parameter distribution in the population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "fMRI data were acquired on a Siemens Prisma 3T scanner at Brown University. Anatomical scans used T1-weighted sequence (1mm\u00b3 isotropic, TR=1900ms, 9\u00b0 flip angle, 160 slices, 4min 1s duration). Functional scans used T2-weighted sequence (3mm\u00b3 isotropic, TR=2000ms, 78\u00b0 flip angle, 38 slices). Each task comprised 2 runs of 246 volumes (8min 12s each). A tilted bounding box ensured OFC coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 provide complete documentation of MRI acquisition parameters. The parameters are standard for fMRI studies, and the tilted bounding box is appropriate for imaging OFC, a region prone to signal dropout.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Data were preprocessed in SPM12. For multivariate analyses: slice-time correction, realignment, co-registration, segmentation, normalization to MNI (2mm\u00b3), and smoothing (2mm\u00b3 kernel). For univariate analyses, realignment preceded slice-time correction, with 8mm\u00b3 smoothing. RSA images were smoothed with 6mm\u00b3 kernel for group analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 document standard fMRI preprocessing pipelines with appropriate parameter choices. The different smoothing kernels for multivariate (2mm\u00b3) versus univariate (8mm\u00b3) analyses are appropriate for their respective analysis goals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Time-series BOLD estimates were obtained by deconvolving the HRF using single-trial regressors concatenated across runs. Separate regressors for choice (3s window) and feedback (2s fixed duration) were modeled simultaneously to control for temporal correlations. Six motion regressors (roll, pitch, yaw, x, y, z) and framewise displacement regressors (FD threshold=1.2) were included, with noise regression for flagged frames plus preceding and subsequent two frames.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 describe appropriate GLM design and motion correction procedures. The simultaneous modeling of choice and feedback is important for controlling temporal correlations, and the FD-based scrubbing approach follows established recommendations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Four whole-brain searchlight analyses (9mm radius, 1mm step) measured representational dissimilarity during choice and feedback for social and bandit tasks separately. Single-trial beta coefficients were extracted, noise-normalized, and organized into voxel\u00d7trial matrices nested by stimulus. Correlation distance (1-r) RDMs were correlated with state identity and expected value hypothesis matrices (examined separately to avoid collinearity). First-level t-maps were smoothed (6mm\u00b3) and submitted to second-level analysis. Task-combined t-maps avoided task bias. Non-parametric permutation testing (5000 permutations, cluster-forming threshold p<0.0001) corrected for multiple comparisons using SnPM. ROIs were defined from significant clusters (pFWE<0.05, peak p<0.0001) using 9mm radius spheres at local maxima.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C103 provide comprehensive documentation of RSA methodology with appropriate procedures for searchlight analysis, RDM construction, statistical testing, and ROI definition. The approach follows established RSA practices with proper multiple comparisons correction and bias control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "For valence-based RSA, trial-level prediction errors from the V-LR, V-CA model were z-scored to control for outcome extremity, ensure sufficient trials per stimulus in each valence RDM, and equate data amounts. Z-transformed PEs separated data into positive and negative RDMs, with RSA procedures applied separately for each valence and task phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 describe appropriate procedures for valence-specific RSA analysis. The z-scoring approach addresses practical concerns about trial numbers and outcome distributions, though it may reduce sensitivity to individual differences in PE magnitude.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Cross-timepoint analysis constructed ROIs from voxels significant in both choice and feedback searchlights (conjunction analysis, 9mm spheres at local peaks, PFC focus) to avoid phase bias. Data were split into even and odd trials (1-15 trials apart) to measure representational correspondence across temporally distant stimulus-matched trials. Voxel\u00d7stimulus matrices were constructed for even and odd sets, averaging beta coefficients across trials for each stimulus at choice and feedback. Correlation distance (1-r) between even and odd matrices evaluated shared structure across phases and independent trials, breaking temporal/autocorrelation signals. Only cross-timepoint quadrants were correlated with cross-timepoint state identity matrix. Pearson correlation coefficients were submitted to regression analyses evaluating associations with credit assignment precision. ROIs were constructed in mPFC and lOFC based on conjunction results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C117 describe sophisticated cross-timepoint RSA methodology that appropriately controls for temporal autocorrelation and phase bias. The even/odd split is clever for isolating persistent representations while controlling for temporal proximity effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Univariate parametric modulation analysis evaluated PE effects on BOLD amplitude. First-level GLMs included regressors for choice and feedback onsets/durations and trial-level PEs from the V-LR, V-CA model, with social and bandit data combined and motion regressors included. Group-level t-contrasts against 0 for PE regressors included both tasks to avoid task bias in ROI selection. Permutation testing corrected for multiple comparisons. ROIs were selected from significant cluster peaks, with beta coefficients extracted separately for each task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C123 describe appropriate univariate analysis procedures for testing PE signaling. The task-combined approach for ROI selection appropriately avoids circular analysis, allowing unbiased comparison of PE strength across tasks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C124",
+      "C139",
+      "C169",
+      "C170"
+    ],
+    "result": "The PFC serves as a hub for credit assignment by leveraging reward signals and organizing state representations into a shared neural code, allowing efficient transfer of credit from feedback to subsequent choice. Participants credit task-relevant cues more precisely in social versus nonsocial contexts through high-fidelity (distinct and consistent) PFC state representations. The mPFC and orbitofrontal cortex work in concert to match neural codes from feedback to choice, with the strength of these common codes predicting credit assignment precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124, C139, C169, C170 synthesize the main findings into a coherent mechanistic account. The conclusions are well-supported by the convergent behavioral, computational, and neural evidence presented throughout the paper, demonstrating how PFC state representations mediate credit assignment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Different learning profiles arise from individual differences in credit assignment precision, with some participants spreading credit particularly when gambling and after negative outcomes. Multivariate PFC patterns (lOFC, mPFC) encode state representations less precisely in those who spread credit. High-fidelity state representations associate with greater task earnings and more precise credit assignment\u2014effects not explained by learning rate or PE strength. Precise credit assignment is achieved through neural state representations sharing common geometry across choice and feedback, signifying a persistent neural code indexing stimulus identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C168 summarize the integrated behavioral-computational-neural findings. The conclusions are well-supported by multiple converging analyses demonstrating the relationship between credit assignment precision, neural representation fidelity, and task performance, with appropriate controls for alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The functional coordination between learning phases aligns with prior work showing lOFC and mPFC track task states governing reward structure for flexible adaptation. No prior studies have documented asymmetrical effects of PE valence driving credit assignment precision. These results parallel existing stimulus generalization theories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 appropriately contextualize findings within existing literature. The citations support the alignment with prior work, and the claim of novelty regarding valence asymmetries appears justified based on the cited literature, though comprehensive literature review is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Prior classical conditioning work shows conditioned responses generalize to novel stimuli, with generalization gradients where aversive outcome intensity predicts increased threat and perceptual generalization. The current paradigm articulates generalization through credit spreading mechanisms, consistent with 'better safe than sorry' in the aversive domain. Increased credit spreading of negative PEs across irrelevant cues may become pathological and maladaptive, offering potential insights into generalized anxiety disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C130 appropriately connect findings to generalization literature with proper citations. However, C131's speculation about clinical implications (generalized anxiety disorders) is not directly tested and represents a significant inferential leap from the current findings. The connection is plausible but requires empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "The study did not control for visual complexity differences between face stimuli and colored bandits. However, prior work with matched stimulus complexity still observed faster social learning, suggesting the observed differences are unlikely due to face salience alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 acknowledge a legitimate limitation while providing evidence from prior work that this confound is unlikely to explain the results. The citation to prior work (Lamba et al., 2020) appropriately addresses the concern, though replication with matched complexity in the current paradigm would be stronger.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Recent mouse work shows wave-like dopamine signals from dorsal striatum communicate when successful actions are necessary for performance. Prior work suggests amygdala dopamine modulation gates threat response selectivity, with dopamine receptor inhibition linked to threat overgeneralization. These findings are consistent with the current results that PE signaling strength alone does not explain learning specificity differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136 appropriately connect findings to dopaminergic mechanisms in animal literature. The citations support the described findings, and the connection to the current null result for PE strength is logical, though the cross-species and cross-domain comparisons require caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "Whole-brain searchlight identified state representations in control network regions (lateral parietal, anterior cingulate, dorsal lateral prefrontal cortex), potentially reflecting distinct functional networks encoding abstract state representations varying in format to optimize for different task demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C137 reports additional findings from the searchlight analysis. Claim C138's interpretation about functional network specialization is speculative but appropriately framed as such and supported by citation to relevant theoretical work (Vaidya and Badre, 2022).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C140"
+    ],
+    "result": "How this credit assignment mechanism coordinates with other neural systems and deviates in psychiatric disorders remains to be uncovered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C140 appropriately identifies important future research directions. This is a reasonable statement of limitations and future work rather than a claim requiring evaluation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,159 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C30",
+      "C32",
+      "C33"
+    ],
+    "result": "Mathematical modeling demonstrates that steady-state morphogen interpretation predicts equal robustness for all targets, whereas dynamic interpretation through the overshoot model predicts target-specific robustness, with col (steady-state target) being more robust than dpp (overshoot target) to changes in morphogen dosage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mathematical derivations in C24, C30, and C32-C33 provide clear analytical support showing that steady-state models produce uniform shifts (constant \u0394x) while the overshoot model produces differential shifts. The independence from threshold choice (C33) strengthens the generality. The logic is mathematically sound and builds appropriately on prior work (Eldar et al., 2003).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C39"
+    ],
+    "result": "Numerical simulations of an explicit Hh pathway model confirm that steady-state outputs are more robust than overshoot outputs, and this differential robustness is specifically attributable to Hh-dependent Ptc upregulation, with results holding across diverse parameter choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 show computational validation across parameter space (Figure 2a-b), and C36/C39 demonstrate mechanistic attribution through perturbation of \u03b1ptc. The parameter sensitivity analysis (C35, Figure 2b) addresses potential concerns about model-specific artifacts. However, the manuscript lacks details on random seed specification for stochastic elements, which could affect reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C69"
+    ],
+    "result": "Experimental measurements in hh heterozygous wing discs show that col pattern width is reduced by only 1.66 \u03bcm (less than one cell diameter) while dpp pattern width is reduced by 4.44 \u03bcm (~2.65-fold greater displacement), confirming the overshoot model's prediction of differential robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data (C42-C44, Figure 3) provide clear quantitative support with appropriate statistical testing (Mann-Whitney U test, p<0.001). Controls for disc size (C45) and threshold dependence (C46) strengthen the conclusion. Sample sizes appear adequate (n=14 and n=23). The ~2.65-fold difference (C69) aligns with model predictions. However, the manuscript does not report whether experimenters were blinded to genotype during measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Temporal analysis of gradient robustness reveals that early transient states exhibit the smallest \u0394x (highest robustness) despite limited range, \u0394x increases to a maximum at the overshoot, then decreases toward steady state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 describe temporal dynamics shown in Figure 2c, with appropriate citation to Bergmann et al., 2007 for context. This reconciles the apparent contradiction between pre-steady-state robustness and overshoot vulnerability. The computational analysis appears sound, though the biological relevance of very early transient states with 'very limited range' is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C67"
+    ],
+    "result": "The overshoot model predicts and simulations confirm that dpp patterning achieves greater precision than would be expected under steady-state interpretation, because the overshoot gradient has a steeper slope at the dpp border location than the steady-state gradient, representing a tradeoff where reduced robustness is exchanged for increased precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The gradient slope comparison (C48-C49, Figure 4a-b) provides mechanistic rationale, and simulations (C52, Figure 4f) show predicted precision differences. However, the experimental validation is problematic: the manuscript fits noise levels to match col precision, then tests dpp precision using those same noise parameters. This circular approach (acknowledged in Methods) cannot independently validate the precision prediction. The experimental \u03c3x for dpp (~1.96 \u03bcm) falls between overshoot and steady-state predictions, but statistical comparison is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68"
+    ],
+    "result": "The dynamic interpretation of Hh signaling, where a linearly decaying overshoot gradient establishes dpp before Ptc upregulation and self-enhanced ligand degradation subsequently narrows the gradient to establish col, provides a mechanistic implementation of target-specific, robust-yet-flexible patterning architecture with tunable tradeoffs between robustness and precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion (C6, C68) is well-supported by the combination of modeling (C64-C65) and experimental validation (C66). The mechanism is clearly articulated and the experimental data for differential robustness is strong. However, the precision component remains less certain (see previous result), which somewhat weakens the 'tradeoff' narrative. The claim of 'tunable' properties is supported conceptually but not demonstrated experimentally through systematic manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Analysis of experimental displacement ratios suggests the overshoot occurs when Ptc expression is approximately twice basal levels, significantly earlier than Ptc reaches steady-state levels (~7-fold basal), implying Ptc is produced in excess of what is needed to control gradient range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C70 makes a quantitative inference from Equation 11 and the ~2.65-fold displacement ratio, but this calculation depends on multiple assumptions about the relationship between displacement and Ptc levels. The comparison to Casali & Struhl 2004 data (C71) provides context, but C73 represents speculation rather than demonstrated fact. The inference chain is logical but indirect, and alternative explanations are not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "In the Drosophila wing disc, Hh signaling establishes col pattern via the steady-state gradient and dpp pattern via a transient overshoot gradient, with the prediction that dpp should not exhibit robustness from self-enhanced ligand degradation since the overshoot precedes Ptc upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the core framework based on the overshoot model (Nahmad & Stathopoulos, 2009). Claims C2-C3 and C19-C20 describe the established model, while C21 articulates the testable prediction. This is well-supported by prior work and provides the foundation for experimental testing. The manuscript appropriately cites the original overshoot model and builds logically on it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Prior studies have shown that col pattern width and L3-L4 intervein distance are not statistically different between hh heterozygous and wild-type animals, and col/ptc pattern widths do not significantly change across 1-4 hh gene copies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent prior work (Irons et al., 2010; Hatori et al., 2021) and provide important context for the current study. The citations appear appropriate and the characterization of prior findings is accurate. This establishes that col robustness was known, making the dpp comparison novel.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Numerical simulations employed a Forward-in-Time-Centered-in-Space (FTCS) algorithm with 1 \u03bcm space steps and 0.5s time steps to solve the Hh pathway equations using parameters from Nahmad & Stathopoulos 2009, and image analysis measured pattern widths at 0.2 relative intensity using Python OpenCV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The methodological details (C89-C93) provide reasonable information about computational and image analysis approaches. However, critical details are missing: no mention of random seeds for stochastic elements, no specification of Python/library versions, and no discussion of numerical stability or convergence criteria for the FTCS algorithm. The choice of 0.2 relative intensity threshold (C93) is tested for robustness (Figure 3\u2014supplement 2), which is appropriate. Code availability is mentioned but reproducibility cannot be fully assessed.",
+    "result_type": "MINOR"
+  }
+]

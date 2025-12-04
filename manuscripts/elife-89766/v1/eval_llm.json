@@ -1,0 +1,191 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C30"
+    ],
+    "result": "Two genetically distinct BLA neuronal populations (Rspo2 and Ppp1r1b) project to the NAc and form monosynaptic glutamatergic connections with both D1 and D2 MSNs in both NAc shell and core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C21-C24, and C30 collectively demonstrate through viral tracing, optogenetic stimulation, and electrophysiological recordings that both Rspo2 and Ppp1r1b BLA neurons project to NAc and form functional glutamatergic synapses on both D1 and D2 MSNs. The evidence includes anatomical tracing (Figure 1D-I, P-U), pharmacological blockade with glutamate receptor antagonists (Figure 1K-L, W-X), and recordings from both NAc subregions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C71"
+    ],
+    "result": "Ppp1r1b-to-NAc synapses exhibit higher basal presynaptic release probability than Rspo2-to-NAc synapses, as indicated by lower paired-pulse ratios, while each subprojection shows similar release probability onto D1 and D2 MSNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29, C31, and C71 are supported by paired-pulse stimulation experiments (Figure 1Y-Z) showing lower PPR at Ppp1r1b synapses compared to Rspo2 synapses, and similar PPRs within each projection type across D1 and D2 MSNs. The interpretation relies on established knowledge that PPR inversely correlates with release probability, and the experimental design normalizes potential systematic errors by using identical stimulation parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C42"
+    ],
+    "result": "High-frequency (40 Hz) but not low-frequency (20 Hz) optogenetic stimulation of either Rspo2-to-NAc or Ppp1r1b-to-NAc presynaptic terminals establishes intracranial self-stimulation (ICSS), suggesting both subprojections can serve as unconditioned stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C32-C36, and C42 are supported by behavioral data (Figure 2B-E) showing frequency-dependent ICSS establishment in ChR2-expressing mice but not YFP controls. The evidence demonstrates that both subprojections can reinforce operant behavior when strongly activated, though the authors appropriately note caveats about potential backpropagation effects in the Discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43"
+    ],
+    "result": "Only Ppp1r1b-to-NAc stimulation, but not Rspo2-to-NAc stimulation, produces persistent cue-induced operant responding during extinction and after prolonged abstinence, indicating selective encoding of conditioned stimulus-mediated reinforcement by the Ppp1r1b subprojection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C37-C41, and C43 are supported by extinction test data (Figure 2F-I) showing differential behavioral responses between Rspo2-ChR2 and Ppp1r1b-ChR2 mice. Ppp1r1b-ChR2 mice maintained high cue-induced responding during 3-day extinction and after 21-day abstinence, while Rspo2-ChR2 mice showed rapid extinction. This provides strong evidence for selective CS-encoding by the Ppp1r1b subprojection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "SSFO activation by 473 nm laser increases spontaneous EPSC frequency without affecting amplitude in NAc MSNs, and this effect is reversibly terminated by 590 nm laser, demonstrating effective and reversible presynaptic upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by electrophysiological validation experiments (Figure 3C-D) showing statistically significant frequency increase (p=0.02) without amplitude change (p=0.33), and reversibility with 590 nm light. This validates the SSFO approach for subsequent behavioral experiments, though sample size (n=6 cells) is modest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Neither upregulation nor downregulation of Rspo2-to-NAc or Ppp1r1b-to-NAc transmission affects the acquisition or performance of cocaine self-administration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by cocaine SA data (Figure 3F-G, K-N) showing no significant differences in active lever pressing or cocaine intake upon SSFO-mediated upregulation or DREADD-mediated downregulation of either subprojection. The statistical analyses show no main effects, and the conclusion is appropriately qualified as suggesting these subprojections are not essential rather than claiming they play no role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Bidirectional chemogenetic manipulation of Ppp1r1b-to-NAc, but not Rspo2-to-NAc, transmission bidirectionally regulates cue-induced cocaine seeking after withdrawal, with inhibition decreasing and activation increasing seeking behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 and C57-C61 are supported by chemogenetic manipulation data (Figure 4O-X) showing significant main effects of CNO treatment on cue-induced cocaine seeking in Ppp1r1b-hM4D (p=0.02) and Ppp1r1b-hM3D (p=0.02) mice, but not in Rspo2 mice (hM4D p=0.45, hM3D p=0.23). The bidirectional effects provide strong evidence for causal involvement of the Ppp1r1b subprojection in CS-mediated cocaine seeking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C62"
+    ],
+    "result": "Both BLA-to-NAc subprojections contribute to US-mediated responses, while the Ppp1r1b subprojection selectively encodes CS-mediated reward and drug reinforcement, providing a circuit mechanism for differential encoding of US versus CS reinforcement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 and C62 represent the main conclusions synthesized from the ICSS (both subprojections establish ICSS) and cue-induced seeking data (only Ppp1r1b shows persistent cue responding and regulates cocaine seeking). The evidence from multiple experimental approaches (optogenetics, chemogenetics, behavior) converges to support this differential functional organization, though the authors appropriately note this is part of a broader circuit mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Stimulation of either Rspo2 or Ppp1r1b presynaptic fibers evokes EPSCs in randomly sampled MSNs, suggesting potential co-innervation of individual MSNs by both subprojections, which could enable integration of both inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C68 are based on inference from electrophysiological recordings showing that both subprojections can evoke responses in randomly sampled MSNs. However, the authors explicitly acknowledge that the low-throughput nature of electrophysiology prevents definitive determination of innervation patterns, and co-innervation remains a hypothesis. The speculation about functional integration (C68) is reasonable but unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C82",
+      "C84"
+    ],
+    "result": "Based on differential paired-pulse ratios, Rspo2 versus Ppp1r1b transmissions are predicted to be more effective upon bursting versus tonic activation, respectively. High-frequency stimulation may activate BLA soma through backpropagation, potentially recruiting other BLA projections during ICSS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73, C82, and C84 are speculative predictions based on synaptic properties and known neurophysiology. While the reasoning is sound (lower PPR at Ppp1r1b synapses suggests better tonic transmission; high-frequency stimulation can cause backpropagation), these remain untested hypotheses. The authors appropriately present these as speculations and acknowledge them as caveats for ICSS interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C99"
+    ],
+    "result": "The Ppp1r1b subprojection preferentially regulates execution rather than acquisition of cue-reinforced cocaine seeking and may be the primary bearer of cocaine-induced adaptations that promote cue-induced seeking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93 and C99 are supported by the differential effects observed: no effect on cocaine SA acquisition/performance (Figure 3) but significant bidirectional effects on cue-induced seeking after withdrawal (Figure 4). The interpretation is consistent with cited literature showing cocaine-induced strengthening of BLA-to-NAc synapses. However, C99's claim about being the \"primary bearer\" is somewhat speculative as it wasn't directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "Only male mice were used in all experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is explicitly stated in the Methods section. However, this represents a significant limitation as sex differences in addiction neurocircuitry are well-documented, and the generalizability of findings to females is unknown. This should be acknowledged as a limitation affecting the scope of conclusions.",
+    "result_type": "MINOR"
+  }
+]

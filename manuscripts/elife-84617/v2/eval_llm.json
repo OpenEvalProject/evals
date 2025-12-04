@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The structure of SlaA30\u20131069 was determined at 3.1 \u00c5 resolution by single-particle cryo-EM, revealing a Y-shaped protein consisting mostly of \u03b2-strands arranged into four domains (D1-D4). Only domain D4 shows significant similarity to known structures (complement C5 domain 3), and a disulfide bond links domains D3 and D4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C20 provide converging structural evidence from cryo-EM data at 3.1 \u00c5 resolution (C13), domain architecture (C18), secondary structure composition (C17), and structural comparisons (C19-C20). The resolution is appropriate for the level of detail claimed, and the structural features are directly observable in the presented maps and models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The C-terminal domains D5 and D6 (residues 914-1424) were predicted using AlphaFold, revealing two additional \u03b2-domains with a flexible hinge at residues A1067-L1071 that allows jackknife-like conformational changes. These predictions were validated by 2D class averages and low-resolution 3D refinement of S. solfataricus SlaA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 combine computational predictions (AlphaFold) with experimental validation from 2D classes and cross-species comparison. The convergence of multiple independent lines of evidence (AlphaFold predictions, 2D classes, S. solfataricus data) strongly supports the existence of flexible C-terminal domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C25",
+      "C26"
+    ],
+    "result": "The C-terminal residues 1070-1424 were not resolved in single-particle analysis due to high flexibility, which likely aids S-layer assembly and enables the structure to adopt various degrees of curvature for encapsulating cells and exosomes of different sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C16 is supported by the absence of density in cryo-EM maps, C25 and C26 are speculative interpretations about functional consequences. The flexibility is demonstrated, but the proposed roles in assembly and curvature adaptation require experimental validation through mutagenesis or other functional assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "SlaA contains 27 confirmed N-glycosylation sites (19 in SlaA30-1069 visible by cryo-EM, 8 in D5-D6 confirmed by mass spectrometry). The glycans are tribranched hexasaccharides containing 6-sulfoquinovose, though most (47%) appear as pentasaccharides lacking the terminal glucose, with only 15% showing the complete hexasaccharide structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 combine cryo-EM visualization (C28), mass spectrometry data (C30), and known glycan chemistry (C31-C32). The heterogeneity in glycan structures (C33-C34) is directly observable in the cryo-EM densities and consistent with prior mass spectrometry studies. The integration of structural and biochemical data provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Glycan volume occupancy and the number of possible glycan conformers are similar between open and closed conformations of SlaA, indicating that neither conformation is entropically favored and allowing free jackknife movement between D1-4 and D5-6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by GlycoSHIELD molecular dynamics simulations showing comparable glycan conformer numbers. The thermodynamic interpretation (entropic neutrality) logically follows from the conformer analysis, though direct experimental measurement of conformational equilibria would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "SlaA30-1069 maintains remarkable structural stability across pH 4-10 (mean RMSD 0.79 \u00c5 between pH 4 and 10 structures), demonstrating that pH-induced conformational changes or unfolding are not responsible for S-layer disassembly at alkaline pH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 combine prior observations of pH-dependent assembly (C37-C39) with new structural data showing pH stability (C40-C41). The low RMSD value (0.79 \u00c5) across pH 4-10 strongly supports structural stability. The inference that conformational changes don't cause disassembly (C42) is logical but limited to the resolved portion (residues 30-1069).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The overall surface charge of SlaA changes from positive at pH 4 to negative at pH 10, with glycans contributing considerably to the negative charge at higher pH. This electrostatic change may disrupt protein-protein interactions causing S-layer disassembly at alkaline pH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by electrostatic potential calculations shown in figures. The mechanistic proposal (C45) is speculative but reasonable given the observed charge reversal and known importance of electrostatic interactions in protein assembly. However, direct experimental validation through mutagenesis or charge modification would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Subtomogram averaging of S-layer on exosomes at 11.2 \u00c5 resolution reveals that six SlaA monomers assemble around 48 \u00c5 hexagonal pores, with SlaA dimers (160\u00b0 angle, 420 \u00c5 length) formed through D6 domains spanning two adjacent hexagonal pores. Triangular pores of ~85 \u00c5 diameter are defined by D2, D4, D5, and D6 domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 describe the assembled S-layer architecture based on subtomogram averaging at 11.2 \u00c5 resolution. The resolution is appropriate for identifying domain arrangements and measuring pore dimensions. The structural features are consistent with prior lower-resolution studies and validated by fitting atomic models into the density.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In the assembled S-layer, glycans fill gaps between globular domains and protrude into pores, but SlaA-SlaA interactions occur via unglycosylated surfaces with minimal reduction in glycan conformational freedom. The glycoshields may guide S-layer self-assembly by delineating protein-protein interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by GlycoSHIELD modeling showing glycan distribution and conformer analysis. The proposal that glycans guide assembly (C54) is speculative but supported by the observation that glycans occupy non-interacting regions and by analogy to cadherin assembly (C55). The entropic argument is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "AlphaFold predictions reveal that SlaB monomers contain three N-terminal \u03b2-sandwich domains and a 132 amino acid C-terminal \u03b1-helix (with transmembrane region at residues 448-470), forming trimeric coiled-coils. The protein has 14 predicted N-glycosylation sites, with the C-terminal helix being mostly neutral while D3 carries negatively charged patches that may interact electrostatically with positively charged SlaA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are based on AlphaFold predictions validated by fitting into subtomogram average density and transmembrane predictions. The electrostatic analysis (C60-C61) is computational but reasonable. The proposed SlaA-SlaB interaction (C62) is speculative but logical given complementary charges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The complete S-layer model shows p3 symmetry with unit cells containing one SlaB trimer and three SlaA dimers (SlaB3/3SlaA2). SlaB trimers occupy alternating triangular pores, with each trimer interacting with three SlaA dimers in a ~35 nm thick assembly, possibly mediated by electrostatic interactions between positively charged SlaA D6 domains and negatively charged SlaB D3 domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 describe the complete S-layer architecture combining SPA, STA, and AlphaFold predictions. The p3 symmetry and stoichiometry (C67) are confirmed by the subtomogram average. The alternating SlaB occupancy (C63, C68) is consistent with the density. The proposed electrostatic interactions (C66) are speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "SlaB trimers occupy alternating rather than all triangular pores, likely due to steric hindrance, reducing protein synthesis costs by 50% and creating varied pore sizes that modulate molecular exchange with the environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 (steric hindrance) is speculative without modeling all-occupied states. Claims C70-C71 about synthesis costs and functional consequences are logical inferences but lack experimental validation. The alternating pattern is observed (supported), but the mechanistic and functional explanations require additional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The revised S-layer model shows SlaA dimers spanning 42 nm (not 23 nm as previously proposed) at a 160\u00b0 angle, with the increased length resulting from the unexpected positioning of domains D5 and D6 that were not previously accounted for.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 represent a correction to prior work based on higher resolution data and inclusion of previously unresolved domains. The measurements are directly observable in the subtomogram average and atomic model. This demonstrates the value of the improved structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "High glycosylation of archaeal SLPs, including heterogeneous glycan families, is common in extremophiles and may aid survival in extreme environments. In archaea, the oligosaccharyl transferase AglB catalyzes the final glycosylation step and is promiscuous (loading variable-length glycans) and essential for S. acidocaldarius viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 are well-supported by multiple citations to prior literature. These represent established knowledge about archaeal glycosylation rather than new findings from this study. The claims provide important context for interpreting the observed glycan heterogeneity in SlaA.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Metal ions play crucial roles in S-layer assembly and stability across bacteria and archaea, including Ca2+-dependent assembly in S. acidocaldarius. However, the SlaA30-1069 cryo-EM map revealed no anomalous densities attributable to ions, suggesting cations may be located in unresolved D5-D6 domains or at protein-protein interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by citations establishing the importance of metal ions in S-layers. The absence of ion densities in the SlaA30-1069 map (C83) is an observation, and the speculation about ion locations (C84) is reasonable given the limited resolution of the subtomogram average and unresolved domains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Comparison of S. acidocaldarius and H. volcanii S-layers (the only two archaeal S-layers with complete atomic models) reveals both similarities (hexagonal symmetry, six domains, glycan-filled pores) and differences (SlaA has complex domain topology vs. csg's Ig-like folds; SlaA adopts Y-shape vs. csg's linear arrangement; different pore sizes). Ig-like domains are widespread in archaeal SLPs including Sulfolobales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C94 provide a comparative analysis supported by structural data from both organisms. The comparisons are valid and highlight both conserved features (hexagonal symmetry, glycosylation) and divergent architectures. The observation about Ig-like domain prevalence (C91-C92) is supported by citations and AlphaFold predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "S. acidocaldarius produces four protein filaments (archaella, A-pili, UV-inducible pili and threads), of which only threads (~40 \u00c5 diameter) could pass through the hexagonal S-layer pores (48 \u00c5) without pore widening or partial disassembly. It is speculated that hexagonal pores evolved to accommodate threads, perhaps as assembly scaffolds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C97 combine cited information about filament production with geometric analysis of pore compatibility. The size comparison is valid, but the evolutionary speculation (C98) lacks supporting evidence. The hypothesis is interesting but requires experimental validation of thread-pore interactions and comparative evolutionary analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Unlike H. volcanii S-layers that use pentameric defects for flexibility, S. acidocaldarius S-layers show no such defects on cells or exosomes but may achieve flexibility through the SlaA dimeric interface and single loops linking domains (D1-D2, D4-D5, D5-D6), while D3-D4 positioning is stabilized by a disulfide bond.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 accurately contrast the two S-layer systems based on observations. Claims C103-C106 propose alternative flexibility mechanisms based on structural features (single loops, dimeric interface). The proposals are reasonable given the structural data, though direct flexibility measurements would strengthen the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "pH-induced S-layer disassembly is proposed to result from deprotonation of amino acid residues at alkaline pH, which weakens or breaks hydrogen bonds (particularly involving acidic amino acids) rather than from protein unfolding. Lowering pH re-protonates residues, facilitating hydrogen bond formation and S-layer assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 propose a mechanism based on the observed structural stability across pH (C40-C41) and charge changes (C43-C44). The chemical reasoning about protonation states and hydrogen bonding (C110-C111) is sound. However, the mechanism (C112-C113) remains speculative without direct experimental validation through mutagenesis or hydrogen bond mapping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "pH stability predictions suggest that both SlaA30-1069 and full-length SlaA (including D5-D6) maintain stability across pH 2-8, with SlaB showing similar stability. Among SlaA, SlaB, RsaA, and csg, SlaA and SlaB are most stable, while csg shows progressive destabilization at neutral and alkaline pH (confirmed experimentally).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 are based on computational pH stability predictions that are consistent with experimental observations for csg (C118). The predictions for SlaA and SlaB align with the experimental cryo-EM data showing structural stability. The comparative analysis provides useful context for understanding S-layer diversity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The pH stability predictions do not include glycosylation effects, which enhance S-layer stability especially in Sulfolobales. SlaA's resilience at temperature and pH shifts is attributed to high glycosylation and ~56% defined secondary structure enabling intramolecular bond formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 acknowledge limitations of the predictions and cite literature on glycosylation's stabilizing effects. Claims C121-C122 propose a mechanism for SlaA stability combining glycosylation and secondary structure content. The proposal is reasonable and supported by the structural data, though quantitative stability measurements would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C15"
+    ],
+    "result": "Background information establishes that S. acidocaldarius is a hyperthermophilic, acidophilic Crenarchaeon (grows at pH 2-3, 65-90\u00b0C) with a two-component S-layer composed of glycoproteins SlaA (1424 aa, 151 kDa) and SlaB (475 aa, 49.5 kDa). The S-layer has bipartite organization with hexagonal symmetry, and mutants lacking SlaA/SlaB show morphological defects and stress sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12, C15 provide background information supported by multiple literature citations. These establish the biological context and prior knowledge about S. acidocaldarius and its S-layer. All claims are well-documented in the cited literature and provide essential context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "S-layers are important for microbial survival and have potential for synthetic biology applications. Greater understanding of S-layer structural details will aid nanotechnological uses in biomedical and environmental applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 provide general context about S-layer importance and applications, supported by multiple citations. These represent established knowledge and motivation for the study rather than new findings. The claims appropriately frame the broader significance of the work.",
+    "result_type": "MINOR"
+  }
+]

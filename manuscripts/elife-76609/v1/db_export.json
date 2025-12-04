@@ -1,0 +1,2217 @@
+{
+  "submission": {
+    "id": "02066499-5156-4c05-b097-7d46cbc1726d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:07:33.546316Z",
+    "updated_at": "2025-12-04T02:07:33.546316Z"
+  },
+  "content": [
+    {
+      "id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "submission_id": "02066499-5156-4c05-b097-7d46cbc1726d",
+      "content_type": "manuscript",
+      "content_text": "# Changes in transmission of Enterovirus D68 (EV-D68) in England inferred from seroprevalence data\n\n## Authors\n\n- Margarita Pons-Salort<sup>1</sup> ([ORCID: 0000-0001-5597-9285](https://orcid.org/0000-0001-5597-9285)) \u2020\n- Ben Lambert<sup>2</sup>\n- Everlyn Kamau<sup>3</sup>\n- Richard Pebody<sup>4</sup>\n- Heli Harvala<sup>5</sup>\n- Peter Simmonds<sup>3</sup>\n- Nicholas C Grassly<sup>1</sup>\n\n### Affiliations\n\n1. MRC Centre for Global Infectious Disease Analysis, School of Public Health, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))\n2. Department of Computer Science, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n3. Nuffield Department of Medicine, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n4. Immunization Department, Public Health England London United Kingdom ([ROR:00vbvha87](https://ror.org/00vbvha87))\n5. Infection and Immunity, University College of London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe factors leading to the global emergence of Enterovirus D68 (EV-D68) in 2014 as a cause of acute flaccid myelitis (AFM) in children are unknown. To investigate potential changes in virus transmissibility or population susceptibility, we measured the seroprevalence of EV-D68-specific neutralising antibodies in serum samples collected in England in 2006, 2011, and 2017. Using catalytic mathematical models, we estimate an approximately 50% increase in the annual probability of infection over the 10-year study period, coinciding with the emergence of clade B around 2009. Despite such increase in transmission, seroprevalence data suggest that the virus was already widely circulating before the AFM outbreaks and the increase of infections by age cannot explain the observed number of AFM cases. Therefore, the acquisition of or an increase in neuropathogenicity would be additionally required to explain the emergence of outbreaks of AFM. Our results provide evidence that changes in enterovirus phenotypes cause major changes in disease epidemiology.\n\n## Introduction\n\nInterest in understanding the epidemiology and disease impact of Enterovirus D68 (EV-D68) and other enteroviruses has increased in recent years. Contrary to most human enteroviruses, EV-D68 causes severe respiratory disease and is transmitted by the respiratory route, sharing properties with rhinoviruses (Oberste et al., 2004). Although this virus was first isolated in 1962, for decades it was only reported from isolated cases or small case clusters of respiratory disease (Pons-Salort et al., 2015).\n\nFrom 2009 to 2010 onwards however, an increasing number of outbreaks of EV-D68-associated severe respiratory illness have been reported worldwide (Holm-Hansen et al., 2016; Tokarz et al., 2012). In 2014, the US experienced the first big outbreak of respiratory disease linked to EV-D68, with >1100 cases reported by the Centers for Disease Control and Prevention (Midgley et al., 2015). In parallel with this outbreak, an unusual number of acute flaccid myelitis (AFM) cases (a newly recognised condition that includes the sudden onset of flaccid limb weakness [Centers for Disease Control and Prevention, 2021]) were also reported, and similar AFM outbreaks subsequently occurred in 2016 and 2018 (Park et al., 2021). Retrospectively, it now appears, an unusual spike of \u2018polio-like\u2019 cases reported in 2012 in California (Ayscue et al., 2014) was an early occurrence of what was subsequently defined as AFM. In the UK and elsewhere in Europe, AFM cases have also been reported in recent years associated with upsurges in EV-D68 detections (Knoester et al., 2019; The United Kingdom Acute Flaccid Paralysis (AFP) Task Force, 2019; Williams et al., 2016). Evidence that EV-D68 is the main cause of these AFM outbreaks has been growing (Park et al., 2021; Messacar et al., 2018), although the role of other enterovirus serotypes such as enterovirus A71 (EV-A71) has not been discounted (McKay et al., 2018). There is no effective treatment or vaccine for EV-D68 infection yet, and residual paralysis and neurological sequelae after AFM is common and lifelong.\n\nThe mechanisms that have led to the emergence of EV-D68 outbreaks since the late 2000s remain unknown. One hypothesis is that transmission has increased as a result of evolutionary selection for increased replication fitness, or through the appearance of immune escape-associated mutations that lead to the evasion of pre-existing population immunity. Another is that the virus has become more pathogenic, and, as a consequence, the number of symptomatic (and therefore, reported) infections has increased independently of its transmissibility (i.e. the virus already circulated in the past but went mostly undetected).\n\nAs for other enterovirus serotypes, many EV-D68 infections are asymptomatic or mild and self-limiting. In addition, enterovirus surveillance is passive in most countries, based on laboratory reporting for samples submitted by clinicians for testing. It is consequently difficult to determine the true incidence of infection or whether changes in EV-D68 circulation have occurred. A recent study based on data from the BioFire FilmArray Respiratory Panel (Meyers et al., 2020) has shown biennial cycles of EV-D68 circulation in the US at the national level since 2014, coinciding with the years of AFM outbreaks (Park et al., 2021). Similarly, in the UK, reported EV-D68 virus detections also show a biennial pattern between 2014 and 2018 (Figure 1\u2014figure supplement 1). However, these data are limited before 2014 and respiratory samples or throat swabs are infrequently tested by enterovirus surveillance programmes in the US, the UK or elsewhere. Seroprevalence surveys therefore offer an attractive potential alternative opportunity to investigate patterns of exposure to EV-D68. Detection of EV-D68 antibodies with adequate sensitivity and specificity can indicate prior infection and can be analysed using mathematical models to infer trends in the incidence of infection over time, by age-group and location.\n\nHere, we use data on the prevalence of neutralising antibodies against EV-D68 from opportunistically collected serum samples broadly representative of the general population in England in 2006, 2011, and 2017 to reconstruct long-term changes in EV-D68 transmission. Using a mathematical model-based framework, we estimate changes in the annual force of infection (FOI) and reconstruct the estimated annual number of new infections in each age class.\n\n## Results\n\nIndividuals are assigned an antibody titre as the highest antibody dilution (1:4, 1:8, \u2026, 1:2048) preventing virus replication (i.e. showing neutralisation) (Kamau et al., 2019). For EV-D68, it is unknown which neutralising antibody titre (or seropositivity cut-off) is indicative of true past infection. A simple method to determine a seropositivity cut-off is based on fitting a mixture model to the individual titre distribution, in order to differentiate between two sub-populations (seronegatives and seropositives) (Hens et al., 2012). However, determining such a cut-off was not possible here, as for two of the three serosurveys and for all the data combined, the distributions did not show a bi-modal shape (Figure 1\u2014figure supplement 2). We therefore present our modelling analysis for two different cut-offs: a first weak cut-off of 1:16, which has been previously used in the literature to define EV-D68 seropositivity (Kamau et al., 2019; Karelehto et al., 2019), and a more stringent cut-off of 1:64, which provides seroprevalence curves by age similar to an even more stringent cut-off of 1:128 (Figure 1\u2014figure supplement 3).\n\nSeroprevalence frequencies in different age groups from the three serosurveys of samples collected in 2006, 2011, and 2017 are shown in Figure 1. At each time point, irrespective of the cut-off antibody titre chosen to define seropositivity, seroprevalence slightly decreases from the 0 years-old (yo) to the 1\u20134 yo age classes, and then increases sharply with age until the 20\u201329 yo, when it reaches a plateau (Figure 1A, B). As for many other viruses, higher values in the 0-yo age class are likely the result of the presence of transplacentally acquired maternal antibodies that subsequently decline. For a seropositivity cut-off of 1:16, the proportion seropositive at ages 1\u20134 yo ranged between 0.65 (95% confidence interval [CI] 0.54\u20130.75) in 2006 and 0.92 (95% CI 0.84\u20130.97) in 2017. For a more stringent cut-off of 1:64, the proportion seropositive in this age group decreased to 0.29 (95% CI 0.19\u20130.40) in 2006 and 0.51 (95% CI 0.40\u20130.62) in 2017. Age-stratified seroprevalence was generally lower in 2006 compared to 2011 and 2017, which suggests individuals acquired their first infection at a lower age through the study period, leading to a decrease in the mean age of exposure. This could potentially be consistent with increased transmission (e.g. through increased viral fitness or the accumulation of susceptible) or other mechanisms (such as a change in the virus to have a higher tendency to infect children).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76609/elife-76609-fig1-v1.jpg)\n\n**Figure 1.:** Seroprevalence by age class in years for the three serosurveys and for two different cut-offs of neutralising antibody titre used to define positivity: (A) 1:16 and (B) 1:64. Seroprevalence by month during the first year of life for children across the three serosurveys combined and two seropositivity cut-offs: (C) 1:16 and (D) 1:64. Bars are 95% binomial confidence intervals. Note that in (A) and (B) individuals in the [0\u20131) age class from the 2017 serosurvey were in fact sampled in 2016 and as such, are shown with a different colour.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76609/elife-76609-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The data were extracted from three sources: for the years 2004\u20132011, from Kadambari et al., 2014; for 2012\u20132013, from a risk assessment report published by Public Health England, 2018; and for 2014\u20132020, we digitised data from Figure 2 in this website (Public Health England, 2023).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76609/elife-76609-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) For each cross-sectional serosurvey. (B) For all three surveys combined.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76609/elife-76609-fig1-figsupp3-v1.jpg)\n\nWe also explored seroprevalence during the first year of life using data for all children <1 yo across the three serosurveys combined (Figure 1C, D). For both cut-offs, seroprevalence in these children starts very high (92% and 70% for the 1:16 and 1:64 cut-offs, respectively, for children <1 month of age) and declines with age, with a quicker decline during the first 3 months of life then followed by a plateau or slower decline. However, the small number of children per age class resulted in large 95% CIs around the mean. Seroprevalence reaches a minimum at 8 and 4 months of age for the 1:16 and 1:64 cut-offs, respectively. However, the minimum seroprevalence remains high at 50% for the 1:16 cut-off, compared to only 11% for the 1:64.\n\nTo address the question of whether transmission had increased before the first reported big outbreaks of EV-D68 in 2014, we compared the performance of two catalytic models that differed on the assumptions of how the FOI changed over time (Materials and methods). Both models assumed that a proportion of individuals are born with maternal antibodies that will subsequently decline at a constant rate, and assumed the risk of infection (becoming seropositive) was independent of age. Model 1 assumed that the FOI was constant over time, and Model 2 allowed it to vary following a random walk. The proportion of individuals born with maternal antibodies was fixed to 1.0 and 0.9 for the seropositivity cut-offs of 1:16 and 1:64, respectively, based on the proportion of adults 25\u201340 years old that were seropositive in the three serosurveys (Supplementary file 1a).\n\nFor both seropositivity cut-offs, Model 2 was the best model according to the leave-one-out (LOO) information criterion (see Materials and methods), which accounts for over-parameterisation (Supplementary file 1b). Model 2 also provided a better fit to the data (Figure 2) than Model 1, which did not capture the observed general increase in seroprevalence between 2006 and 2011 (Figure 2\u2014figure supplement 1). All parameter estimates are presented in Supplementary file 1c.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76609/elife-76609-fig2-v1.jpg)\n\n**Figure 2.:** Observed (gray) and estimated (blue and red) seroprevalence by age for the three cross-sectional serosurveys (2006, 2011, and 2017). Model fit is shown for the random walk model (Model 2) using the two seropositivity cut-offs, (A) 1:16 and (B) 1:64. Gray intervals indicate the 95% binomial confidence intervals around the observed proportion of seropositivity. The line and ribbons correspond to the median and 95% credible intervals of the posterior estimates of seroprevalence. Note that the age axis is log-transformed to better show the data in the younger age classes. The same plot with the age axis on a natural scale is shown in Figure 2\u2014figure supplement 2. Note also that the data for <1 yo shown for 2017 were actually collected in 2016.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76609/elife-76609-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Observed (gray) and estimated (blue and red) seroprevalence by age for the three cross-sectional serosurveys (2006, 2011, and 2017). Model fit is shown for the constant model (Model 1) using the two seropositivity cut-offs, (A) 1:16 and (B) 1:64. Gray intervals indicate the 95% binomial confidence intervals around the observed proportion of seropositivity. The line and ribbons correspond to the median and 95% credible intervals of the posterior estimates of seroprevalence. Note that the age axis is log-transformed to better show the data in the younger age classes. The same plot with the age axis on a natural scale is shown in Figure 2\u2014figure supplement 3. Note also that the data for <1 yo shown for 2017 were actually collected in 2016.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76609/elife-76609-fig2-figsupp2-v1.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76609/elife-76609-fig2-figsupp3-v1.jpg)\n\nThe best model (Model 2) estimated an increase in transmission over time during the study period (2006\u20132017) for both seropositivity cut-offs, as shown by the estimated FOI in Figure 3A. For the cut-off of 1:16, the FOI continued to increase until the end of the study period, in 2017. However, for the more stringent cut-off of 1:64, the FOI plateaued from around 2011. These differences reflect the differences in seroprevalence observed in the young age classes (1\u201320 yo) between 2011 and 2017 for the two cut-offs (Figure 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76609/elife-76609-fig3-v1.jpg)\n\n**Figure 3.:** Estimated force of infection (FOI) over time (A) and estimated proportion of individuals with detectable maternal antibodies through age (B) for the two seropositivity cut-offs considered. Median and 95% credible intervals are shown for both. In (A), gray arrows indicate the years for which there is cross-sectional seroprevalence data.\n\nThere were also important discrepancies in the estimates of the proportion of individuals with maternally acquired antibodies during the first years of life depending on the seropositivity cut-off (Figure 3B). We estimated a quicker decline of maternal antibodies for the more stringent cut-off (1:64), with an estimated median duration of seropositivity due to the presence of maternal antibodies of 4.9 (95% CrI 3.3\u20137.2) months compared to 17.6 (95% CrI 11.5\u201326.8) months for the 1:16 cut-off (Figure 3B). Assuming 90% of individuals are born with maternally acquired antibodies for the 1:64 cut-off, this results in a proportion of only 2.3% (95% CrI 0.4\u20137.4%) of individuals being seropositive due to the presence of maternal antibodies among the 1 yo, compared to 36% (95% CrI 21\u201351%) for the 1:16 cut-off and 100% of individuals assumed to be born seropositive.\n\nWe next used the parameter estimates from the best model and data on the age structure of the population to reconstruct the overall annual EV-D68 seroprevalence in the population (Figure 4) for the period between the first and last cross-sectional serosurveys, 2006\u20132017. For the two seropositivity cut-offs, the overall seroprevalence was already very high in 2006 (91% [95% CrI 89\u201393] for 1:16 and 70% [66\u201374] for 1:64, respectively), and continued to increase progressively until 2017, reaching 97% (96\u201398%) and 87% (85\u201389%), respectively, for the 1:16 and 1:64 cut-offs. The detail of the progressive increase in seroprevalence by age year over year as modelled by the random walk is shown in Figure 5A, B.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76609/elife-76609-fig4-v1.jpg)\n\n**Figure 4.:** Median and 95% credible intervals are shown.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76609/elife-76609-fig5-v1.jpg)\n\n**Figure 5.:** Seroprevalence (A, B) and reconstructed number of infections (C, D) for each age class and year under the best model and for the two seropositivity cut-offs, 1:16 (A, C) and 1:64 (B, D). The insets in (C, D) show the mean age at infection for each year. In (A, B), the median and 95% credible intervals are shown, whereas in (C, D) only the median is shown, for clarity of the plots.\n\nThe amount of transmission or extent of virus circulation is better quantified by the number of infections than the FOI, which is sensitive to changes in the age structure of the population (e.g. driven by changes in birth rates) (Tan et al., 2019). Using the best model, we reconstructed the annual number of infections in each age class over time (Figure 5C, D). For both seropositivity cut-offs, the 2-yo age class has the highest annual incidence of infection. The increase in the FOI between 2006 and 2017 results in an increase in the number of infections in the youngest age classes over time, and a decrease in the oldest, with and inflection point around the age of 4\u20136 yo. This, in turn, results in a decrease in the mean age at infection from 8.5 yo (7.0\u201310.4) in 2007 to 4.2 yo (3.5\u20135.1) in 2017 for the 1:16 cut-off, and from 14.3 yo (12.9\u201315.9) to 9.8 yo (8.9\u201310.8) for the 1:64.\n\n## Discussion\n\nThe model-based analysis of individual serological data for EV-D68 from three time points (2006, 2011, and 2017) in England presented here suggests an increase in transmission of EV-D68 that occurred or started before 2011. This coincides with the increased number of outbreaks of EV-D68-associated severe respiratory diseases reported worldwide since the late 2000s (Pons-Salort et al., 2015; Tokarz et al., 2012).\n\nAlthough our results of an increase in FOI over the study period are robust to the choice of the seropositivity cut-off, we find striking differences in terms of the magnitude of the FOI and the decline of maternal antibodies depending on the seropositivity cut-off used. The results obtained with the more stringent cut-off of 1:64 seem more realistic, both for the estimated annual probabilities of infection (range 0.32\u20130.52 for the 1:16, and 0.13\u20130.20 for the 1:64, for the period 2006\u20132017) and rate of decline of maternal antibodies (average duration of maternal antibodies around 18 mo for the 1:16, and 5 mo for the 1:64). Furthermore, the analysis with the 1:64 cut-off infers that there has not been significant changes in the FOI since 2011; however, with the 1:16 cut-off, the FOI continues to increase until 2017. These results therefore raise the question of what is a suitable seropositivity cut-off to define previous exposure to EV-D68. That said, most EV-D68 seroepidemiology studies published to date present results for a cut-off of 1:8 (as classically used for polioviruses) or 1:16 (Karelehto et al., 2019; Harrison et al., 2019; Sun et al., 2018a; Xiang et al., 2017).\n\nOne strength of our analysis is that we account for the decline of maternal antibodies in the catalytic models and are able to estimate the rate of this decline, thanks to the availability of data in the <1 yo. Only one study has reported detailed seroprevalence in the <1 yo (Sun et al., 2018b). This study was conducted in China in 2010, and the data reported are for a seropositivity cut-off of 1:8. Although they found 100% seroprevalence in neonates, close to the observations in our study when using the 1:16 cut-off, this declined to only 28% in the 9\u201311 months old, which is much lower than the 64% in the same age class in our dataset (Figure 1C). The discrepancy may be partly due to differences in the time of data collection. Indeed, we show data for the three cross-sectional serosurveys combined (2006, 2011, and 2017), given that the number of individuals in each age class was very small, but data for individual years suggest lower seroprevalence in 2006 compared to 2011 and 2017 in the 9\u201311 mo (Figure 2A).\n\nOur findings point to a clear increase in transmission as measured by the estimated annual probability of infection (approximately, 50% higher in 2017 compared to 2006). However, the reconstructed annual number of new infections in each age class suggests that this increase is mostly driven by an increase in the total number of infections in children aged 1\u20135 yo. Increased transmission in the youngest age groups may be consistent with observed data showing higher and increasing numbers of respiratory illnesses associated with EV-D68 in these age groups (<5 yo) (Bubba et al., 2020). However, these results on their own are unlikely to explain the worldwide emergence of AFM outbreaks reported since 2014. First, the high overall seroprevalence observed in 2006 suggests that EV-D68 was already widely circulating before 2014. Second, AFM cases do not exclusively or predominantly occur in the youngest age groups. In the US, for example, AFM cases reported in 2014 had a median age of 7.1 yo (interquartile range [IQR], 4.8\u201312.1 yo) (Sejvar et al., 2016). In the UK, a study from 2018 reported 40 cases, of which only 22 were 0\u20135 yo (The United Kingdom Acute Flaccid Paralysis (AFP) Task Force, 2019). A study from European countries (2016) reported a median age of cases of 3.8 yo and a range of 1.6\u20139.0 yo. In Japan, a case series study of an AFM cluster reported an overall median age of cases of 4.4 yo (IQR, 2.6\u20137.7 yo) (Chong et al., 2018). Although susceptibility to EV-D68-related AFM may vary with age (Hixon et al., 2019) (making it difficult to make a link between the inferred number of infections by age class and the observed number of cases by age), our model-based results suggest that incidence of infections in some of the age groups affected by AFM has not increased, but rather decreased, despite the general increase in transmission. Therefore, the acquisition of or an increase in neuropathogenicity (independent of the described increase in transmission) seems necessary to explain the emergence of AFM through an as-yet unidentified biological mechanism.\n\nThe prediction of an increase in the number of infections in the youngest age classes (1\u20135 yo) is due to the high seroprevalence observed in these age groups (Figure 1) and also the fact that we do not allow for re-infections. As a consequence, only a small number of infections occur at older ages. Although the extremely high seropositivity rates at ages below 5 yo are not generally found with other enteroviruses, they have been reported for EV-D68 in other places (Vogt and Crowe, 2018), for example the US (Harrison et al., 2019), the Netherlands (Karelehto et al., 2019), and China (Sun et al., 2018a; Xiang et al., 2017). Clarifying the origin and the meaning of this high prevalence of neutralising antibodies at this young age (the role of serum neutralising antibodies in protection against infection and diseases) should be a priority for EV-D68 research (Vogt and Crowe, 2018). In particular, it is unclear whether cross-reactivity with other enteroviruses contributes to these high seropositivity and general increase in antibody titres with age (Kamau et al., 2019). If serum neutralising antibodies are not a good correlate of protection against infection, the models may not capture well the age at which infections have increased, and it could be that the increase in infections is across age groups. Indeed, increased transmission may have also been associated with re-infections (and subsequent boosting of antibodies) in older age groups, consistent with the observed rise in geometric mean titres with age (Kamau et al., 2019). However, it seems unlikely that secondary infections can lead to paralysis, based on data for poliovirus.\n\nWhether antigenic escape can explain re-infections in older children is not fully understood. There is evidence of amino acid changes in the BC and DE loop regions of the VP1 (which are thought to be epitopes for neutralising antibodies) that might have resulted in altered antigenic properties (Dyrdak et al., 2019; Imamura et al., 2014). However, although neutralisation assays conducted against different EV-D68 strains found some differences in neutralisation titres, study results have been inconsistent and their clinical and epidemiological significance unclear (Kamau et al., 2019; Harrison et al., 2019).\n\nIt is important to interpret well the results for the estimates of the FOI over time from our analysis under the assumptions of the models. First, as the best model uses a random walk on the FOI, the change in transmission that we infer happens continuously over several years. In reality, this may have occurred differently (e.g. in a shorter period of time). Our ability to recover more complex changes in transmission is limited by the data available. It would not be surprising if EV-D68 has exhibited biennial (or longer) cycles of transmission in England over the last few years, as it has been shown in the US (Park et al., 2021) and is common for other enteroviruses (Pons-Salort and Grassly, 2018). However, it is difficult to recover changes at this finer time scale with serology data unless sampling is very frequent (at least annual). Therefore, our study can only reveal broader long-term secular changes. Second, interpretation of the results before 2006 must be avoided for two resasons. On the one hand, as we go backwards in time, there is more uncertaintly about the time of seroconversion of the individuals informing the estimates of the FOI. On the other hand, because age and time are confounded in cross-sectional seroprevalence measurements, the random walk on time may account for possible differences in the FOI through age (possibly higher in the youngest age classes, and lowest in the oldest), which are note explicitly accounted for here. This may explain the decline in FOI when going backwards in time before the first cross-sectional study in 2006. Third, allowing for a higher FOI in younger age classes would result in a shorter duration of maternal antibodies, which would make the results for the 1:16 cut-off more realistic in terms of decline of maternal antibodies. That said, these two parameters (rate of maternal antibodies decline and increase in FOI in younger age classes) would certainly be highly correlated and difficult to be jointly estimated.\n\nThree major co-circulating EV-D68 clades (A\u2013C) emerged globally in the 2000s (Tokarz et al., 2012) and have subsequently diversified, with only one monophyletic group (B1 and B3 genotypes) with a common ancestor in 2009 so far associated with AFM (Hadfield et al., 2018) (with the exception of one case associated with D1 [sometimes called A2] in 2018 in France; Bal et al., 2019). Individual viral lineages show rapid global spread, with recent outbreaks synchronised across Europe and the US representing circulation of the same dominant genotypes. Reported EV-D68 outbreaks in 2014 and 2016 were due to clade B viruses, while the 2018 outbreaks were reported to be linked to both B3 and A2 clade viruses in the UK (The United Kingdom Acute Flaccid Paralysis (AFP) Task Force, 2019), France (Bal et al., 2019), and elsewhere. In vitro studies of the neurotropism of these viruses compared with the ancestral strains have yielded conflicting results as to whether neurotropism has increased (Hixon et al., 2019; Brown et al., 2018; Rosenfeld et al., 2019). The timing of the increase in transmission estimated here (sometime before 2011) based on the analysis of the serology data may roughly correspond to the genetic emergence of clade B around 2007, and thus one could hypothesise that increased virus transmissibility is a trait associated with this clade. More efficient viral replication may enhance transmission as well as the probability of virus reaching the central nervous system, although changes in receptor usage could also play a role.\n\nThis work shows the value of modelling age-stratified seroprevalence data from consecutive cross-sectional studies in the understanding of the epidemiology of diseases caused by emerging human enteroviruses. The dynamics of most enterovirus serotypes over relatively long time scales have been shown to be driven by population immunity (Pons-Salort and Grassly, 2018). However, in rare instances, enterovirus serotypes have emerged as important causes of diseases after many years of circulation causing diseases at a much lower rate or even silently circulating. For example, coxsackievirus A6 (CVA6) has emerged as the main serotype causing HFMD worldwide over the last decade (Bian et al., 2015). Finally, this work also shows the need to better understand and interpret individual serological data in terms of previous exposure and protection against infection and disease. This would help refining analytical approaches such as those used here to infer population-level processes.\n\n## Materials and methods\n\n### Serological data\n\nWe use data from three retrospective cross-sectional studies analysing serum samples representative of England\u2019s population in 2006 (n = 516), 2011 (n = 504), and 2017 (n = 566) and available through the National Seroepidemiology Programme at Public Health England (Osborne et al., 2000). The neutralisation assay method and results from serological testing of the 2006 and 2017 sample sets have been previously described in Kamau et al., 2019. Neutralisation assays measured neutralising antibody titres against a B3 strain (Kamau et al., 2019; Hadfield et al., 2018), but Kamau et al. showed similar neutralisation effects across three different EV-D68 strains (Kamau et al., 2019).\n\n### Statistical analysis\n\nThe FOI is the rate at which seronegative (susceptible) individuals become seropositive (infected). Cross-sectional age-stratified seroprevalence data can be used to estimate the FOI through so-called catalytic models (Hens et al., 2010). Catalytic models avoid modelling the dynamics of infected individuals directly; rather, they assume an unspecified mechanism that results in a seronegative individual becoming seropositive, its magnitude defining the FOI. For seroprevalence data, these models rely on the idea that the age and serostatus of an individual provide information on the probability of infection for the years between birth and the serosurvey.\n\nWe consider a serocatalytic model with maternal antibodies and no seroreversion (Dighe, 2022). Individuals enter the model at birth either seropositive due to the presence of maternal antibodies (m), or seronegative (n), with maternal antibodies declining at a constant rate $\\omega$. Seronegative individuals become seropositive (p) at a rate $\\lambda$, the FOI. We assume that after seroconversion, individuals cannot become seronegative again; this seems reasonable since seroprevalence does not show a decline through age (Figure 1). This model is described by the following system of differential equations:\n\n$$\n\\frac{dm}{da}=\u2212\\omegam\n$$\n\n\n\n$$\n\\frac{dn}{da}=\\omegam\u2212\\lambdan\n$$\n\n\n\n$$\n\\frac{dp}{da}=\\lambdan\n$$\n\nwhich has the following analytical solution (Dighe, 2022):\n\n$$\nma=m_{0}e^{-\\omegaa}\n$$\n\n\n\n$$\nn(a)=m_{0}(\\frac{\\omega}{\\lambda\u2212\\omega}(e^{\u2212\\omegaa}\u2212e^{\u2212\\lambdaa}))+(1\u2212m_{0})e^{\u2212\\lambdaa}\n$$\n\n\n\n$$\npa=1-ma-na\n$$\n\nwhere $m_{0}$ is the proportion of individuals born with maternal antibodies, that we consider fixed and constant over time.\n\nWe are interested in estimating the rate of waning of maternal antibodies, $\\omega$, and the FOI, $\\lambda$. To link the catalytic model to the data from the serosurveys, we assume that the count of seropositive individuals within a serosurvey in year t follows a binomial distribution:\n\n$$\nz^{\\tau}(t|c)\u00a0\u223cbinomial(n^{\\tau}(t),m^{\\tau}(t)+p^{\\tau}(t)),\n$$\n\nwhere $n^{\\tau}t$ indicates the sample size in year $t$ for individuals born in year $\\tau$, $t\\geq\\tau,$ as collected during the serosurvey, and $z^{\\tau}(t|c)$ is the count of those who are seropositive for a given cut-off $c$ . The sum $m^{\\tau}t+p^{\\tau}t$ is the modelled proportion seropositive at year $t$ among those who were born in year $\\tau$. Note that we further assume that testing uncovers seropositivity with 100% accuracy.\n\nWe test two different models representing different hypotheses about how the FOI changes over time t. Model 1 assumes a constant FOI over time,\n\n$$\n\\lambdat=\\lambda,\u2200t.\n$$\n\nAnd Model 2 allows the FOI to change over time following a random walk of order one:\n\n$$\n\\lambda_{t=t_{1}}\u00a0\u223cnormal(0,0.5)\n$$\n\n\n\n$$\n\\lambda_{t>t_{1}}\u00a0\u223cnormal(\\lambda_{t\u22121},\\sigma)\n$$\n\nBoth models assume a constant FOI through age.\n\nThe annual probability of infection, which is the proportion of the susceptible population that will become seropositive in a given year t, can be derived from the FOI: $p(t)=1\u2212exp\u2061(\u2212\\lambda(t))$ .\n\nBecause seroprevalence in adults reaches almost 100% from about the 20-yo age class for a seropositivity cut-off of 1:16, and from the 30-yo for a more stringent cut-off of 1:64 (Figure 1), we fit the models to the data for age up to 40 yo.\n\nThe models were implemented in Stan Development Team, 2020 and fitted to the data using MCMC. Four independent chains were simulated, each of 10,000 iterations, with a warmup of 3,000. Convergence was checked using the Rhat function.\n\nWe use the LOO metrics (Vehtari et al., 2017), implemented in the \u2018loo\u2019 R package (Vehtari et al., 2023), for model comparison. The LOO metrics aim to gauge how well a model generalises to an out-of-sample dataset and are an approximation to the explicit LOO cross-validation log-likelihood. In the explicit approach, the model is fitted to n \u2212 1 datapoints and tested on a single hold-out datapoint and the log-likelihood on the test datapoint recorded. This approach is repeated for each of n datapoints. The LOO is then effectively the average log-likelihood across all held-out datapoints. The \u2018loo\u2019 package uses Pareto-smoothed importance sampling to avoid explicitly refitting the model to the data n times.\n\n### Annual overall seroprevalence and reconstructed number of infections in each age class\n\nUsing the estimates of the FOI from the catalytic models above and data on population structure, we can estimate the overall (age-weighted) seroprevalence in the population each year t. We used data on the population structure in England for the years 1998, 2008, and 2018 from Office for National Statistics, 2020. The size of each age class for the years in between was obtained by linear interpolation.\n\nFinally, we reconstructed the annual number of (new) infections in each age class using the estimates of the FOI and population structure data. To reconstruct the number of infections in a given year t and age class a, we first reconstructed the proportion seronegative in the age class a \u2212 1 until year t \u2212 1, and then derived the proportion who would seroconvert during year t. We then multiplied that proportion by the population size of the corresponding age class and year.\n\nCode and data are available through the GitHub repository: https://github.com/margapons/EV-D68_seroprevalence_England, (copy archived at Pons-Salort, 2023).\n",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "fd45d5ca-79c0-4c37-9d75-08dccb7d9cd7",
+      "submission_id": "02066499-5156-4c05-b097-7d46cbc1726d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Isabel Rodriguez-Barraquer, https://ror.org/043mz5j54 University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76609.sa0](https://doi.org/10.7554/eLife.76609.sa0)\n\nThe authors use data from three cross-sectional age-stratified serosurveys on Enterovirus D68 from England between 2006 and 2017 to examine the transmission dynamics of this pathogen. This study's convincing methodology provides valuable insights into the changing dynamics of enterovirus D68, uncovering potential changes in the transmissibility of the virus. It will be of interest to infectious disease epidemiologists and surveillance professionals.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Isabel Rodriguez-Barraquer, https://ror.org/043mz5j54 University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76609.sa1](https://doi.org/10.7554/eLife.76609.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Changes in transmission of Enterovirus D68 (EV-D68) in England inferred from seroprevalence data\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nAs is customary in eLife, the reviewers have discussed their critiques with one another. What follows below is the Reviewing Editor's edited compilation of the essential and ancillary points provided by reviewers in their critiques and in their interaction post-review. Please submit a revised version that addresses these concerns directly. Although we expect that you will address these comments in your response letter, we also need to see the corresponding revision clearly marked in the text of the manuscript. Some of the reviewers' comments may seem to be simple queries or challenges that do not prompt revisions to the text. Please keep in mind, however, that readers may have the same perspective as the reviewers. Therefore, it is essential that you attempt to amend or expand the text to clarify the narrative accordingly.\n\nEssential revisions:\n\nThe authors use data from 3 cross-sectional age-stratified serosurveys on Enterovirus D68 from England between 2006 and 2017 to examine the transmission dynamics of this pathogen in this setting. Understanding these dynamics, including how it changes over time, may help uncover potential changes in the transmissibility of the virus. While the topic is relevant, interpretation of the results challenging largely due to the great uncertainty around how to interpret the serological (serostatus) data, and the impact this has on the inferences made. We ask the authors to perform some additional analyses and to provide more intuition to understand some of the key findings of this analysis.\n\n1. We struggle to reconcile the evidence of a stable or even small drop in FoI after 2010 in the 1:64 models in contrast to the continued increase using the 1:16 cut-point.\n\n2. It is hard to reconcile evidence of drops in FoI in the 1:64 (models 4 and 5 from 2010/11 (Figure 3)) with steadily increasing R0 in this period (Figure 4). Is this due to changes in the susceptibility proportion. It would be good to understand if there are important assumptions in the Farrington approach that may also contribute to this discrepancy.\n\n3. One of the major findings of the paper is that there is a steadily increasing R0 (using the 1:64 cut-point). This again is difficult to understand and would suggest there are either year on year increases in inherent transmissibility of the virus through fitness changes, or year on year increases in the mixing of the population. It would be useful for the authors to discuss potential explanations for an inferred gradual increase in R0.\n\n4.The estimated FOI in 1 year olds is very very high (with a suggestion that up to 75% get infected within a year) and difficult to believe, especially as the force of infection is assumed much lower for all other ages. The authors exclude all <1s due to maternal antibodies, which seems sensible, however, does this mean that it is impossible for <1s to become infected in the model? We know for other pathogens (e.g., dengue virus) with protection from maternal antibodies that the protection from infection is gone after a few months. Maybe allowing for infections in the first year of life too would reduce the very large, and difficult to believe, difference in risk between 1 year olds and older age groups. I suspect you wouldn't need to rely on <1 serodata \u2013 just allow for infections in this time period.\n\n5. Relatedly would it be possible to break the age data into months rather than years in these infants to help tease apart what happens in the critical early stages of life.\n\n6. Additional context of EV-D68 in the study setting of England would be useful. While the Introduction does mention AFM cases \"in the UK and elsewhere in Europe\" (line 53), a summary of reported data on EV-D68/AFM in England prior to this study would provide important context. The Methods refers to \"whether transmission had increased over time (before the first reported big outbreak of EV-D68 in the US in 2014)\" (lines 133-134), rather than in this setting. It would be useful to summarize the viral genomic data from the region for additional context \u2013 particularly since the emergence of a viral clade is highlighted as a co-occurrence with the increased transmissibility detected in this analysis.\n\n7. Given the substantial uncertainty in the assay, it seems optimistic to attempt to fit annual force of infections in the 30 year period prior to the start of the sampling periods. Authors should consider including a constant \u03bb prior to the dates of the first study across the models considered.\n\n8. While the authors have made data sets available, it would be good to make computer code available as well.\n\nReviewer #1 (Recommendations for the authors):\n\nIn the abstract it would be helpful to have some info on the AFM in England as a link between the global picture explained and then this analysis which is for England.\n\nLine 188-120: I agree with the point here, but wonder if a little more to be added to help guide the reader through this thinking from lower seroprevelance to age. I also wonder if it isn't due to an increase in transmission what is it due to? Perhaps this could also be elaborated on.\n\nLine 169 (and methods): Please provide more information on the LOO criteria and what was left out. More required in the main text and also in the methods.\n\nReviewer #2 (Recommendations for the authors):\n\n\u2013 The submission lists only 2 contributing authors, but the manuscript lists additional authors. The author lists should be synced.\n\n\u2013 While the authors have made data sets available, computer code was not available as far as I could tell.\n\n\u2013 For Models 4 and 5: what were the estimated values of sigma0 and \u03c3? They were not included in Table S1. In the Methods section, \u03bb_{t=t1} is modeled as a Normal centered at 0 \u2013 is this on the log scale?\n\n\u2013 Figure 2 (E and F): what does the purple class indicate for this model? Is it an average across all other age classes?\n\n\u2013 Table 1: it was not clear why Model 3's \u03b4 LOO is so poor compared to Model 5 despite the similar visual fits of the models (Figure 3 vs. Figure S5), particularly among the under 20 year-olds. Could the authors provide some more intuition on this? Are there particular data points that are highly influential on the LOO statistic?\n\n\u2013 Line 142: should this sentence also include \u03b3?\n\n\u2013 Lines 159-167: the values cited in the text do not seem to match those in Table S1.\n\n\u2013 Line 172: what do these p-values represent?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Changes in transmission of Enterovirus D68 (EV-D68) in England inferred from seroprevalence data\" for further consideration by eLife. Your revised article has been evaluated by Eduardo Franco (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved, but there are a couple of issues that need to be addressed, as outlined below (see comments from reviewer #4)\n\nReviewer #4 (Recommendations for the authors):\n\nI have two comments on the revision:\n\n1. I agree with the authors' decision to implement maternal antibodies as part of their modeling approach. However, the estimated proportion of individuals with maternal antibodies by age seems very high for the 1:16 cutoff. Is it realistic to have maternal antibodies in >25% of 2 year olds? If not, it might be prudent to have m(a) go to zero by a certain age.\n\n2. I had made a comment in the previous round of review about extending the x-axis to the start of the time period of estimation: this was in reference to FOI, not seroprevalence. The FOI estimates in Figure 3A begin in 1990, but the oldest cohort in this analysis are 40 y in 2006, and it's not clear what is assumed about FOI between 1966 and 1990. Or does the random walk on the FOI begin in 1966? It would be good to show those results.\n",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bdd87404-aefe-4d65-8a81-65a61f9cb10f",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C1",
+      "claim": "Enterovirus D68 (EV-D68) emerged globally in 2014 as a cause of acute flaccid myelitis (AFM) in children.",
+      "claim_type": "EXPLICIT",
+      "source": "The factors leading to the global emergence of Enterovirus D68 (EV-D68) in 2014 as a cause of acute flaccid myelitis (AFM) in children are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established fact about the timing of EV-D68 emergence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "e6f6625a-a450-44cd-ae44-ea2d3194ba45",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C2",
+      "claim": "There was an approximately 50% increase in the annual probability of EV-D68 infection over the 10-year study period (2006-2017) in England.",
+      "claim_type": "EXPLICIT",
+      "source": "Using catalytic mathematical models, we estimate an approximately 50% increase in the annual probability of infection over the 10-year study period, coinciding with the emergence of clade B around 2009.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on mathematical modeling of seroprevalence data from three time points.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "89eb1189-beab-4d66-9e19-5b184d286d65",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C3",
+      "claim": "The increase in EV-D68 transmission coincided with the emergence of clade B around 2009.",
+      "claim_type": "EXPLICIT",
+      "source": "Using catalytic mathematical models, we estimate an approximately 50% increase in the annual probability of infection over the 10-year study period, coinciding with the emergence of clade B around 2009.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This temporal association is noted in the abstract based on the modeling results and known viral evolution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "f808b917-ac20-4e3f-a615-5886a595c728",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C4",
+      "claim": "EV-D68 was already widely circulating before the AFM outbreaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite such increase in transmission, seroprevalence data suggest that the virus was already widely circulating before the AFM outbreaks and the increase of infections by age cannot explain the observed number of AFM cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the high seroprevalence observed in 2006, before the major AFM outbreaks.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "31e72796-d1e6-412e-bd8f-639e63c2b289",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C5",
+      "claim": "The increase in infections by age cannot explain the observed number of AFM cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite such increase in transmission, seroprevalence data suggest that the virus was already widely circulating before the AFM outbreaks and the increase of infections by age cannot explain the observed number of AFM cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from comparing the modeled infection patterns by age with the observed AFM case distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "4c2c06c4-d89c-43cb-8d93-5017b0ef6a5e",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C6",
+      "claim": "The acquisition of or an increase in neuropathogenicity would be required to explain the emergence of outbreaks of AFM.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the acquisition of or an increase in neuropathogenicity would be additionally required to explain the emergence of outbreaks of AFM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the finding that transmission increases alone cannot explain AFM emergence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "723a5d3c-1e57-447d-be0a-6991afbc0b09",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C7",
+      "claim": "Changes in enterovirus phenotypes cause major changes in disease epidemiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide evidence that changes in enterovirus phenotypes cause major changes in disease epidemiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' interpretation of their findings regarding the relationship between viral evolution and disease patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "bc39b2fb-be6b-4464-afc4-5c9b634506f8",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C8",
+      "claim": "EV-D68 causes severe respiratory disease and is transmitted by the respiratory route.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to most human enteroviruses, EV-D68 causes severe respiratory disease and is transmitted by the respiratory route, sharing properties with rhinoviruses (Oberste et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Oberste et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "48d695d6-259b-4a25-a4a2-565f8cb1d4fb",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C9",
+      "claim": "EV-D68 was first isolated in 1962.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this virus was first isolated in 1962, for decades it was only reported from isolated cases or small case clusters of respiratory disease (Pons-Salort et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This historical fact is stated with a citation to Pons-Salort et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "a943f59a-2bfb-49e2-803c-26c5613c2822",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C10",
+      "claim": "For decades after 1962, EV-D68 was only reported from isolated cases or small case clusters of respiratory disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this virus was first isolated in 1962, for decades it was only reported from isolated cases or small case clusters of respiratory disease (Pons-Salort et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pons-Salort et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "4b895a34-3b2a-4907-9132-1b21eba1249a",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C11",
+      "claim": "From 2009 to 2010 onwards, an increasing number of outbreaks of EV-D68-associated severe respiratory illness have been reported worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "From 2009 to 2010 onwards however, an increasing number of outbreaks of EV-D68-associated severe respiratory illness have been reported worldwide (Holm-Hansen et al., 2016; Tokarz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Holm-Hansen et al., 2016 and Tokarz et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "f2b7c242-65ee-4838-98f8-278571eb50c7",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C12",
+      "claim": "In 2014, the US experienced the first big outbreak of respiratory disease linked to EV-D68, with >1100 cases reported by the Centers for Disease Control and Prevention.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2014, the US experienced the first big outbreak of respiratory disease linked to EV-D68, with >1100 cases reported by the Centers for Disease Control and Prevention (Midgley et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Midgley et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "af43f04d-fe4f-4b7f-932f-8ce6648d1a09",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C13",
+      "claim": "An unusual number of acute flaccid myelitis (AFM) cases were reported in parallel with the 2014 US EV-D68 outbreak.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel with this outbreak, an unusual number of acute flaccid myelitis (AFM) cases (a newly recognised condition that includes the sudden onset of flaccid limb weakness [Centers for Disease Control and Prevention, 2021]) were also reported, and similar AFM outbreaks subsequently occurred in 2016 and 2018 (Park et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to CDC 2021 and Park et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "eddf48ea-576c-4b5a-8098-090d05bbda7a",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C14",
+      "claim": "AFM is a newly recognised condition that includes the sudden onset of flaccid limb weakness.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel with this outbreak, an unusual number of acute flaccid myelitis (AFM) cases (a newly recognised condition that includes the sudden onset of flaccid limb weakness [Centers for Disease Control and Prevention, 2021]) were also reported, and similar AFM outbreaks subsequently occurred in 2016 and 2018 (Park et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This definition is supported by citation to CDC 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "b2d30a99-5d08-4465-b5bd-49965eccc45c",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C15",
+      "claim": "Similar AFM outbreaks occurred in 2016 and 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel with this outbreak, an unusual number of acute flaccid myelitis (AFM) cases (a newly recognised condition that includes the sudden onset of flaccid limb weakness [Centers for Disease Control and Prevention, 2021]) were also reported, and similar AFM outbreaks subsequently occurred in 2016 and 2018 (Park et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Park et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "458aba13-4ccb-49ce-a693-26fa2d9b81e1",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C16",
+      "claim": "An unusual spike of 'polio-like' cases reported in 2012 in California was an early occurrence of what was subsequently defined as AFM.",
+      "claim_type": "EXPLICIT",
+      "source": "Retrospectively, it now appears, an unusual spike of 'polio-like' cases reported in 2012 in California (Ayscue et al., 2014) was an early occurrence of what was subsequently defined as AFM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This retrospective interpretation is supported by citation to Ayscue et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "be10e40c-18bb-4ecb-be72-9a8318ac8388",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C17",
+      "claim": "AFM cases have been reported in the UK and elsewhere in Europe in recent years associated with upsurges in EV-D68 detections.",
+      "claim_type": "EXPLICIT",
+      "source": "In the UK and elsewhere in Europe, AFM cases have also been reported in recent years associated with upsurges in EV-D68 detections (Knoester et al., 2019; The United Kingdom Acute Flaccid Paralysis (AFP) Task Force, 2019; Williams et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Knoester et al., 2019, UK AFP Task Force 2019, and Williams et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "bbd7ef27-9e12-4ea3-a977-8a1b4ec7450b",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C18",
+      "claim": "Evidence that EV-D68 is the main cause of AFM outbreaks has been growing.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence that EV-D68 is the main cause of these AFM outbreaks has been growing (Park et al., 2021; Messacar et al., 2018), although the role of other enterovirus serotypes such as enterovirus A71 (EV-A71) has not been discounted (McKay et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Park et al., 2021 and Messacar et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "a4407ae0-cd47-4d2a-a20c-f83144f68b60",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C19",
+      "claim": "The role of other enterovirus serotypes such as enterovirus A71 (EV-A71) in AFM has not been discounted.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence that EV-D68 is the main cause of these AFM outbreaks has been growing (Park et al., 2021; Messacar et al., 2018), although the role of other enterovirus serotypes such as enterovirus A71 (EV-A71) has not been discounted (McKay et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to McKay et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "ebb34e9c-d9b7-4582-99cb-09a1c34d635e",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C20",
+      "claim": "There is no effective treatment or vaccine for EV-D68 infection yet.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no effective treatment or vaccine for EV-D68 infection yet, and residual paralysis and neurological sequelae after AFM is common and lifelong.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as current knowledge about therapeutic options.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "e5c40c26-f484-4af2-b9d0-f43aaf133f74",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C21",
+      "claim": "Residual paralysis and neurological sequelae after AFM is common and lifelong.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no effective treatment or vaccine for EV-D68 infection yet, and residual paralysis and neurological sequelae after AFM is common and lifelong.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about AFM outcomes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "d1b4bac3-bc35-482c-96db-5ad8bd4dcdb5",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C22",
+      "claim": "Many EV-D68 infections are asymptomatic or mild and self-limiting.",
+      "claim_type": "EXPLICIT",
+      "source": "As for other enterovirus serotypes, many EV-D68 infections are asymptomatic or mild and self-limiting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about EV-D68 infection characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "ec5a32c3-b72c-4b87-b0a0-35a7b13fd560",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C23",
+      "claim": "Enterovirus surveillance is passive in most countries, based on laboratory reporting for samples submitted by clinicians for testing.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, enterovirus surveillance is passive in most countries, based on laboratory reporting for samples submitted by clinicians for testing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the general state of enterovirus surveillance systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "799f7936-1aee-4876-b3fe-e20771b1d94e",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C24",
+      "claim": "EV-D68 circulation has shown biennial cycles in the US at the national level since 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study based on data from the BioFire FilmArray Respiratory Panel (Meyers et al., 2020) has shown biennial cycles of EV-D68 circulation in the US at the national level since 2014, coinciding with the years of AFM outbreaks (Park et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Meyers et al., 2020 and Park et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "1c99b7f0-9e6b-47a9-8eb3-43e2f30c3750",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C25",
+      "claim": "Biennial cycles of EV-D68 circulation in the US coincide with the years of AFM outbreaks.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study based on data from the BioFire FilmArray Respiratory Panel (Meyers et al., 2020) has shown biennial cycles of EV-D68 circulation in the US at the national level since 2014, coinciding with the years of AFM outbreaks (Park et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This temporal association is supported by citation to Park et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "76212176-9f32-4b40-8f24-f777339d78d2",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C26",
+      "claim": "Reported EV-D68 virus detections in the UK show a biennial pattern between 2014 and 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in the UK, reported EV-D68 virus detections also show a biennial pattern between 2014 and 2018 (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "fd2905d6-6e67-4581-b476-e7b0378a263e",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C27",
+      "claim": "Respiratory samples or throat swabs are infrequently tested by enterovirus surveillance programmes in the US, the UK or elsewhere.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these data are limited before 2014 and respiratory samples or throat swabs are infrequently tested by enterovirus surveillance programmes in the US, the UK or elsewhere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes limitations of surveillance systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "9384a5ac-7da4-455b-b572-fb268feb56f3",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C28",
+      "claim": "Seroprevalence data from serum samples collected in England in 2006, 2011, and 2017 were used to measure EV-D68-specific neutralising antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate potential changes in virus transmissibility or population susceptibility, we measured the seroprevalence of EV-D68-specific neutralising antibodies in serum samples collected in England in 2006, 2011, and 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "84321632-bb01-4028-ab1f-0b022a699b23",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C29",
+      "claim": "At each time point, seroprevalence slightly decreases from the 0 years-old to the 1\u20134 yo age classes, and then increases sharply with age until the 20\u201329 yo, when it reaches a plateau.",
+      "claim_type": "EXPLICIT",
+      "source": "At each time point, irrespective of the cut-off antibody titre chosen to define seropositivity, seroprevalence slightly decreases from the 0 years-old (yo) to the 1\u20134 yo age classes, and then increases sharply with age until the 20\u201329 yo, when it reaches a plateau (Figure 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This pattern is observed in the data shown in Figure 1A and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "016ede12-0f2f-45f5-b441-050b2cf3d6cd",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C30",
+      "claim": "Higher seroprevalence values in the 0-yo age class are likely the result of the presence of transplacentally acquired maternal antibodies that subsequently decline.",
+      "claim_type": "EXPLICIT",
+      "source": "As for many other viruses, higher values in the 0-yo age class are likely the result of the presence of transplacentally acquired maternal antibodies that subsequently decline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known patterns for other viruses.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "184a01b7-4b42-41ab-a274-9753839f5f52",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C31",
+      "claim": "For a seropositivity cut-off of 1:16, the proportion seropositive at ages 1\u20134 yo ranged between 0.65 (95% CI 0.54\u20130.75) in 2006 and 0.92 (95% CI 0.84\u20130.97) in 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "For a seropositivity cut-off of 1:16, the proportion seropositive at ages 1\u20134 yo ranged between 0.65 (95% confidence interval [CI] 0.54\u20130.75) in 2006 and 0.92 (95% CI 0.84\u20130.97) in 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement from the seroprevalence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "13aa6aa8-8e7b-4759-86c1-5b94025045a7",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C32",
+      "claim": "For a seropositivity cut-off of 1:64, the proportion seropositive at ages 1\u20134 yo decreased to 0.29 (95% CI 0.19\u20130.40) in 2006 and 0.51 (95% CI 0.40\u20130.62) in 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "For a more stringent cut-off of 1:64, the proportion seropositive in this age group decreased to 0.29 (95% CI 0.19\u20130.40) in 2006 and 0.51 (95% CI 0.40\u20130.62) in 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement from the seroprevalence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "285373e1-7686-4eae-8214-c99b35711462",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C33",
+      "claim": "Age-stratified seroprevalence was generally lower in 2006 compared to 2011 and 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "Age-stratified seroprevalence was generally lower in 2006 compared to 2011 and 2017, which suggests individuals acquired their first infection at a lower age through the study period, leading to a decrease in the mean age of exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the data and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "f372cd92-0a30-4dd1-a7e9-53f83128a13f",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C34",
+      "claim": "The decrease in mean age of exposure could potentially be consistent with increased transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "This could potentially be consistent with increased transmission (e.g. through increased viral fitness or the accumulation of susceptible) or other mechanisms (such as a change in the virus to have a higher tendency to infect children).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed pattern.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "5464e40e-6f03-4a78-a216-d15e30fdd4e9",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C35",
+      "claim": "For the 1:16 cut-off, seroprevalence in children <1 month of age starts at 92%.",
+      "claim_type": "EXPLICIT",
+      "source": "For both cut-offs, seroprevalence in these children starts very high (92% and 70% for the 1:16 and 1:64 cut-offs, respectively, for children <1 month of age) and declines with age, with a quicker decline during the first 3 months of life then followed by a plateau or slower decline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the data shown in Figure 1C and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "44ea6b0a-73ba-4159-bb61-c18aaf3225bd",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C36",
+      "claim": "For the 1:64 cut-off, seroprevalence in children <1 month of age starts at 70%.",
+      "claim_type": "EXPLICIT",
+      "source": "For both cut-offs, seroprevalence in these children starts very high (92% and 70% for the 1:16 and 1:64 cut-offs, respectively, for children <1 month of age) and declines with age, with a quicker decline during the first 3 months of life then followed by a plateau or slower decline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the data shown in Figure 1C and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "ccd85288-cdb1-495e-82df-7cfeedfaa48b",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C37",
+      "claim": "Seroprevalence in infants declines with age, with a quicker decline during the first 3 months of life then followed by a plateau or slower decline.",
+      "claim_type": "EXPLICIT",
+      "source": "For both cut-offs, seroprevalence in these children starts very high (92% and 70% for the 1:16 and 1:64 cut-offs, respectively, for children <1 month of age) and declines with age, with a quicker decline during the first 3 months of life then followed by a plateau or slower decline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This pattern is observed in the data shown in Figure 1C and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "4a1357e7-5b53-4769-a2a2-974033a32e58",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C38",
+      "claim": "For the 1:16 cut-off, seroprevalence reaches a minimum at 8 months of age.",
+      "claim_type": "EXPLICIT",
+      "source": "Seroprevalence reaches a minimum at 8 and 4 months of age for the 1:16 and 1:64 cut-offs, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "f9457496-ae44-4fdf-8041-bb9fe99bd48c",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C39",
+      "claim": "For the 1:64 cut-off, seroprevalence reaches a minimum at 4 months of age.",
+      "claim_type": "EXPLICIT",
+      "source": "Seroprevalence reaches a minimum at 8 and 4 months of age for the 1:16 and 1:64 cut-offs, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "2ada936a-cf56-47d9-9294-5e631848b9eb",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C40",
+      "claim": "The minimum seroprevalence for the 1:16 cut-off remains high at 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the minimum seroprevalence remains high at 50% for the 1:16 cut-off, compared to only 11% for the 1:64.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "cc0d1308-8aeb-42e3-82c6-136539f7a622",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C41",
+      "claim": "The minimum seroprevalence for the 1:64 cut-off is 11%.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the minimum seroprevalence remains high at 50% for the 1:16 cut-off, compared to only 11% for the 1:64.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "a98e42e3-a02b-4a83-9962-91183e774be9",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C42",
+      "claim": "Model 2 (random walk model) was the best model according to the leave-one-out (LOO) information criterion for both seropositivity cut-offs.",
+      "claim_type": "EXPLICIT",
+      "source": "For both seropositivity cut-offs, Model 2 was the best model according to the leave-one-out (LOO) information criterion (see Materials and methods), which accounts for over-parameterisation (Supplementary file 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical model comparison using LOO criterion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "718a5c74-9263-48cd-a319-df903e340822",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C43",
+      "claim": "Model 2 provided a better fit to the data than Model 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Model 2 also provided a better fit to the data (Figure 2) than Model 1, which did not capture the observed general increase in seroprevalence between 2006 and 2011 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing model fits shown in Figure 2 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "533a83f4-4530-456c-9425-85d07ae08d85",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C44",
+      "claim": "Model 1 did not capture the observed general increase in seroprevalence between 2006 and 2011.",
+      "claim_type": "EXPLICIT",
+      "source": "Model 2 also provided a better fit to the data (Figure 2) than Model 1, which did not capture the observed general increase in seroprevalence between 2006 and 2011 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "fe2a6bb3-2796-48ce-afbc-619ddb34725b",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C45",
+      "claim": "The best model (Model 2) estimated an increase in transmission over time during the study period (2006\u20132017) for both seropositivity cut-offs.",
+      "claim_type": "EXPLICIT",
+      "source": "The best model (Model 2) estimated an increase in transmission over time during the study period (2006\u20132017) for both seropositivity cut-offs, as shown by the estimated FOI in Figure 3A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by the estimated FOI in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "4065c271-4432-4aea-bbe6-f11108cc2f01",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C46",
+      "claim": "For the cut-off of 1:16, the FOI continued to increase until the end of the study period, in 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "For the cut-off of 1:16, the FOI continued to increase until the end of the study period, in 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "05d29b38-ff31-43d2-903e-b48d9f3c9bb8",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C47",
+      "claim": "For the more stringent cut-off of 1:64, the FOI plateaued from around 2011.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for the more stringent cut-off of 1:64, the FOI plateaued from around 2011.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "488e387b-d4b4-4709-8768-23d03cbe74a8",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C48",
+      "claim": "The estimated median duration of seropositivity due to the presence of maternal antibodies is 4.9 (95% CrI 3.3\u20137.2) months for the 1:64 cut-off.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated a quicker decline of maternal antibodies for the more stringent cut-off (1:64), with an estimated median duration of seropositivity due to the presence of maternal antibodies of 4.9 (95% CrI 3.3\u20137.2) months compared to 17.6 (95% CrI 11.5\u201326.8) months for the 1:16 cut-off (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is estimated from the model and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "9c7d5308-0336-455c-ac5b-7469e365783f",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C49",
+      "claim": "The estimated median duration of seropositivity due to the presence of maternal antibodies is 17.6 (95% CrI 11.5\u201326.8) months for the 1:16 cut-off.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated a quicker decline of maternal antibodies for the more stringent cut-off (1:64), with an estimated median duration of seropositivity due to the presence of maternal antibodies of 4.9 (95% CrI 3.3\u20137.2) months compared to 17.6 (95% CrI 11.5\u201326.8) months for the 1:16 cut-off (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is estimated from the model and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "b9c93edc-a883-4d60-b2ef-3b574ea9a7a2",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C50",
+      "claim": "For the 1:64 cut-off, 2.3% (95% CrI 0.4\u20137.4%) of 1 year-olds are seropositive due to the presence of maternal antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming 90% of individuals are born with maternally acquired antibodies for the 1:64 cut-off, this results in a proportion of only 2.3% (95% CrI 0.4\u20137.4%) of individuals being seropositive due to the presence of maternal antibodies among the 1 yo, compared to 36% (95% CrI 21\u201351%) for the 1:16 cut-off and 100% of individuals assumed to be born seropositive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the model estimates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "0d0ffcc1-7eac-4988-b444-1ea6786efe1e",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C51",
+      "claim": "For the 1:16 cut-off, 36% (95% CrI 21\u201351%) of 1 year-olds are seropositive due to the presence of maternal antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming 90% of individuals are born with maternally acquired antibodies for the 1:64 cut-off, this results in a proportion of only 2.3% (95% CrI 0.4\u20137.4%) of individuals being seropositive due to the presence of maternal antibodies among the 1 yo, compared to 36% (95% CrI 21\u201351%) for the 1:16 cut-off and 100% of individuals assumed to be born seropositive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the model estimates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "e1db1c90-b659-4288-8a4c-8f4a3f65ef5a",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C52",
+      "claim": "For the 1:16 cut-off, the overall seroprevalence in 2006 was 91% (95% CrI 89\u201393).",
+      "claim_type": "EXPLICIT",
+      "source": "For the two seropositivity cut-offs, the overall seroprevalence was already very high in 2006 (91% [95% CrI 89\u201393] for 1:16 and 70% [66\u201374] for 1:64, respectively), and continued to increase progressively until 2017, reaching 97% (96\u201398%) and 87% (85\u201389%), respectively, for the 1:16 and 1:64 cut-offs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reconstructed from the model using population age structure data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "1f3b6a43-9e98-4f8f-94c7-bb436cbce981",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C53",
+      "claim": "For the 1:64 cut-off, the overall seroprevalence in 2006 was 70% (95% CrI 66\u201374).",
+      "claim_type": "EXPLICIT",
+      "source": "For the two seropositivity cut-offs, the overall seroprevalence was already very high in 2006 (91% [95% CrI 89\u201393] for 1:16 and 70% [66\u201374] for 1:64, respectively), and continued to increase progressively until 2017, reaching 97% (96\u201398%) and 87% (85\u201389%), respectively, for the 1:16 and 1:64 cut-offs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reconstructed from the model using population age structure data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "412ace58-4257-472d-9453-396018bf2d43",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C54",
+      "claim": "For the 1:16 cut-off, the overall seroprevalence in 2017 was 97% (95% CrI 96\u201398).",
+      "claim_type": "EXPLICIT",
+      "source": "For the two seropositivity cut-offs, the overall seroprevalence was already very high in 2006 (91% [95% CrI 89\u201393] for 1:16 and 70% [66\u201374] for 1:64, respectively), and continued to increase progressively until 2017, reaching 97% (96\u201398%) and 87% (85\u201389%), respectively, for the 1:16 and 1:64 cut-offs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reconstructed from the model using population age structure data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "705cb6ed-12a2-40e2-b349-6e234a438bf9",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C55",
+      "claim": "For the 1:64 cut-off, the overall seroprevalence in 2017 was 87% (95% CrI 85\u201389).",
+      "claim_type": "EXPLICIT",
+      "source": "For the two seropositivity cut-offs, the overall seroprevalence was already very high in 2006 (91% [95% CrI 89\u201393] for 1:16 and 70% [66\u201374] for 1:64, respectively), and continued to increase progressively until 2017, reaching 97% (96\u201398%) and 87% (85\u201389%), respectively, for the 1:16 and 1:64 cut-offs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reconstructed from the model using population age structure data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "9113ccef-07ad-4f0b-b485-e7dffa0c53ac",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C56",
+      "claim": "For both seropositivity cut-offs, the 2-yo age class has the highest annual incidence of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "For both seropositivity cut-offs, the 2-yo age class has the highest annual incidence of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5C and 5D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "38f789de-e1dd-43f5-ad6f-e05938978821",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C57",
+      "claim": "The increase in the FOI between 2006 and 2017 results in an increase in the number of infections in the youngest age classes over time, and a decrease in the oldest, with an inflection point around the age of 4\u20136 yo.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in the FOI between 2006 and 2017 results in an increase in the number of infections in the youngest age classes over time, and a decrease in the oldest, with and inflection point around the age of 4\u20136 yo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5C and 5D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "edacc5dd-2740-4e3b-b187-5d8b411a6b68",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C58",
+      "claim": "For the 1:16 cut-off, the mean age at infection decreased from 8.5 yo (7.0\u201310.4) in 2007 to 4.2 yo (3.5\u20135.1) in 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "This, in turn, results in a decrease in the mean age at infection from 8.5 yo (7.0\u201310.4) in 2007 to 4.2 yo (3.5\u20135.1) in 2017 for the 1:16 cut-off, and from 14.3 yo (12.9\u201315.9) to 9.8 yo (8.9\u201310.8) for the 1:64.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the model estimates and shown in the insets of Figure 5C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "fc103640-269d-4727-992c-3572f8c8b22b",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C59",
+      "claim": "For the 1:64 cut-off, the mean age at infection decreased from 14.3 yo (12.9\u201315.9) in 2007 to 9.8 yo (8.9\u201310.8) in 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "This, in turn, results in a decrease in the mean age at infection from 8.5 yo (7.0\u201310.4) in 2007 to 4.2 yo (3.5\u20135.1) in 2017 for the 1:16 cut-off, and from 14.3 yo (12.9\u201315.9) to 9.8 yo (8.9\u201310.8) for the 1:64.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the model estimates and shown in the insets of Figure 5D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "4281a0bc-3e3c-4e06-a74e-ad1d7021066f",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C60",
+      "claim": "The model-based analysis suggests an increase in transmission of EV-D68 that occurred or started before 2011.",
+      "claim_type": "EXPLICIT",
+      "source": "The model-based analysis of individual serological data for EV-D68 from three time points (2006, 2011, and 2017) in England presented here suggests an increase in transmission of EV-D68 that occurred or started before 2011.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion from the modeling analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "2939f177-3881-4c3b-81c8-7961b47b7f4f",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C61",
+      "claim": "The timing of increased EV-D68 transmission coincides with the increased number of outbreaks of EV-D68-associated severe respiratory diseases reported worldwide since the late 2000s.",
+      "claim_type": "EXPLICIT",
+      "source": "This coincides with the increased number of outbreaks of EV-D68-associated severe respiratory diseases reported worldwide since the late 2000s (Pons-Salort et al., 2015; Tokarz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This temporal association is supported by citations to Pons-Salort et al., 2015 and Tokarz et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "908c43ce-56e2-4848-8295-3a27e56c6c91",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C62",
+      "claim": "The results of an increase in FOI over the study period are robust to the choice of the seropositivity cut-off.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our results of an increase in FOI over the study period are robust to the choice of the seropositivity cut-off, we find striking differences in terms of the magnitude of the FOI and the decline of maternal antibodies depending on the seropositivity cut-off used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparing results from different cut-offs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "2d5abd89-2f54-40fc-8089-9e7c1ddcca56",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C63",
+      "claim": "There are striking differences in the magnitude of the FOI and the decline of maternal antibodies depending on the seropositivity cut-off used.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our results of an increase in FOI over the study period are robust to the choice of the seropositivity cut-off, we find striking differences in terms of the magnitude of the FOI and the decline of maternal antibodies depending on the seropositivity cut-off used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed by comparing results from different cut-offs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "d33a0bc1-b2dc-49d3-80d2-2b89b1660405",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C64",
+      "claim": "The results obtained with the more stringent cut-off of 1:64 seem more realistic for the estimated annual probabilities of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The results obtained with the more stringent cut-off of 1:64 seem more realistic, both for the estimated annual probabilities of infection (range 0.32\u20130.52 for the 1:16, and 0.13\u20130.20 for the 1:64, for the period 2006\u20132017) and rate of decline of maternal antibodies (average duration of maternal antibodies around 18 mo for the 1:16, and 5 mo for the 1:64).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' judgment based on biological plausibility.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "ed7f933d-458f-4df1-98a1-98951ccf69b7",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C65",
+      "claim": "For the 1:16 cut-off, the estimated annual probability of infection ranged from 0.32 to 0.52 for the period 2006\u20132017.",
+      "claim_type": "EXPLICIT",
+      "source": "The results obtained with the more stringent cut-off of 1:64 seem more realistic, both for the estimated annual probabilities of infection (range 0.32\u20130.52 for the 1:16, and 0.13\u20130.20 for the 1:64, for the period 2006\u20132017) and rate of decline of maternal antibodies (average duration of maternal antibodies around 18 mo for the 1:16, and 5 mo for the 1:64).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the model estimates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "d97e68b4-e20f-4c63-8f63-869f203fb4ea",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C66",
+      "claim": "For the 1:64 cut-off, the estimated annual probability of infection ranged from 0.13 to 0.20 for the period 2006\u20132017.",
+      "claim_type": "EXPLICIT",
+      "source": "The results obtained with the more stringent cut-off of 1:64 seem more realistic, both for the estimated annual probabilities of infection (range 0.32\u20130.52 for the 1:16, and 0.13\u20130.20 for the 1:64, for the period 2006\u20132017) and rate of decline of maternal antibodies (average duration of maternal antibodies around 18 mo for the 1:16, and 5 mo for the 1:64).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the model estimates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "b1643734-71f4-4075-8f7b-00f33d1a72bc",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C67",
+      "claim": "The analysis with the 1:64 cut-off infers that there has not been significant changes in the FOI since 2011.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the analysis with the 1:64 cut-off infers that there has not been significant changes in the FOI since 2011; however, with the 1:16 cut-off, the FOI continues to increase until 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "d1defc40-400c-47d0-92e2-e3c51f7a0758",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C68",
+      "claim": "Most EV-D68 seroepidemiology studies published to date present results for a cut-off of 1:8 or 1:16.",
+      "claim_type": "EXPLICIT",
+      "source": "That said, most EV-D68 seroepidemiology studies published to date present results for a cut-off of 1:8 (as classically used for polioviruses) or 1:16 (Karelehto et al., 2019; Harrison et al., 2019; Sun et al., 2018a; Xiang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "c22236f6-07e1-466f-ac7d-77f721c796d0",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C69",
+      "claim": "A cut-off of 1:8 is classically used for polioviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "That said, most EV-D68 seroepidemiology studies published to date present results for a cut-off of 1:8 (as classically used for polioviruses) or 1:16 (Karelehto et al., 2019; Harrison et al., 2019; Sun et al., 2018a; Xiang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "7f2b8262-1255-438e-adaf-86c9fd186927",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C70",
+      "claim": "Only one study has reported detailed seroprevalence in children <1 year old.",
+      "claim_type": "EXPLICIT",
+      "source": "Only one study has reported detailed seroprevalence in the <1 yo (Sun et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sun et al., 2018b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "c214199a-4c75-450d-a7aa-ecee2c539912",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C71",
+      "claim": "A study conducted in China in 2010 found 100% seroprevalence in neonates for a seropositivity cut-off of 1:8.",
+      "claim_type": "EXPLICIT",
+      "source": "This study was conducted in China in 2010, and the data reported are for a seropositivity cut-off of 1:8. Although they found 100% seroprevalence in neonates, close to the observations in our study when using the 1:16 cut-off, this declined to only 28% in the 9\u201311 months old, which is much lower than the 64% in the same age class in our dataset (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from Sun et al., 2018b study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "5d66271e-0b54-4ac1-bc43-a8dfb79db629",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C72",
+      "claim": "The China 2010 study found seroprevalence declined to 28% in 9\u201311 months old children.",
+      "claim_type": "EXPLICIT",
+      "source": "This study was conducted in China in 2010, and the data reported are for a seropositivity cut-off of 1:8. Although they found 100% seroprevalence in neonates, close to the observations in our study when using the 1:16 cut-off, this declined to only 28% in the 9\u201311 months old, which is much lower than the 64% in the same age class in our dataset (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from Sun et al., 2018b study compared to the current study's data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "3218a71c-2247-4c63-9586-7f2835030451",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C73",
+      "claim": "The increase in transmission is mostly driven by an increase in the total number of infections in children aged 1\u20135 yo.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the reconstructed annual number of new infections in each age class suggests that this increase is mostly driven by an increase in the total number of infections in children aged 1\u20135 yo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the reconstructed infection data shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "95ca8bec-76fa-4c95-ba80-33bd2ab7af3b",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C74",
+      "claim": "Increased transmission in the youngest age groups may be consistent with observed data showing higher and increasing numbers of respiratory illnesses associated with EV-D68 in children <5 yo.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased transmission in the youngest age groups may be consistent with observed data showing higher and increasing numbers of respiratory illnesses associated with EV-D68 in these age groups (<5 yo) (Bubba et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bubba et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "a31eb672-66fe-42b9-88bb-d0cf541988f6",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C75",
+      "claim": "AFM cases do not exclusively or predominantly occur in the youngest age groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, AFM cases do not exclusively or predominantly occur in the youngest age groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple examples of AFM case age distributions from different countries.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "7af0ee19-9d15-47f4-82e7-66b0ef4583c7",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C76",
+      "claim": "In the US, AFM cases reported in 2014 had a median age of 7.1 yo (interquartile range [IQR], 4.8\u201312.1 yo).",
+      "claim_type": "EXPLICIT",
+      "source": "In the US, for example, AFM cases reported in 2014 had a median age of 7.1 yo (interquartile range [IQR], 4.8\u201312.1 yo) (Sejvar et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sejvar et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "775110ad-1ed1-4b42-879c-7a0eadada3d1",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C77",
+      "claim": "In the UK in 2018, 40 AFM cases were reported, of which only 22 were 0\u20135 yo.",
+      "claim_type": "EXPLICIT",
+      "source": "In the UK, a study from 2018 reported 40 cases, of which only 22 were 0\u20135 yo (The United Kingdom Acute Flaccid Paralysis (AFP) Task Force, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to UK AFP Task Force, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "0d4b0328-91d2-467e-a7d9-1ee22de6a886",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C78",
+      "claim": "A study from European countries (2016) reported a median age of AFM cases of 3.8 yo and a range of 1.6\u20139.0 yo.",
+      "claim_type": "EXPLICIT",
+      "source": "A study from European countries (2016) reported a median age of cases of 3.8 yo and a range of 1.6\u20139.0 yo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated but the specific citation is not provided in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "ef8d081f-73cc-4a54-96a8-d928bb6594e5",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C79",
+      "claim": "In Japan, a case series study of an AFM cluster reported an overall median age of cases of 4.4 yo (IQR, 2.6\u20137.7 yo).",
+      "claim_type": "EXPLICIT",
+      "source": "In Japan, a case series study of an AFM cluster reported an overall median age of cases of 4.4 yo (IQR, 2.6\u20137.7 yo) (Chong et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chong et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "fc5b3403-583c-4d5c-8dbd-fe838004d81c",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C80",
+      "claim": "Susceptibility to EV-D68-related AFM may vary with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Although susceptibility to EV-D68-related AFM may vary with age (Hixon et al., 2019) (making it difficult to make a link between the inferred number of infections by age class and the observed number of cases by age), our model-based results suggest that incidence of infections in some of the age groups affected by AFM has not increased, but rather decreased, despite the general increase in transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hixon et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "3f2deb7a-9eb8-4790-be01-5482e0a3809d",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C81",
+      "claim": "Model-based results suggest that incidence of infections in some of the age groups affected by AFM has not increased, but rather decreased, despite the general increase in transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Although susceptibility to EV-D68-related AFM may vary with age (Hixon et al., 2019) (making it difficult to make a link between the inferred number of infections by age class and the observed number of cases by age), our model-based results suggest that incidence of infections in some of the age groups affected by AFM has not increased, but rather decreased, despite the general increase in transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the reconstructed infection data shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "beb88cdd-9777-4a0a-90e1-b87896efca1d",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C82",
+      "claim": "The extremely high seropositivity rates at ages below 5 yo are not generally found with other enteroviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the extremely high seropositivity rates at ages below 5 yo are not generally found with other enteroviruses, they have been reported for EV-D68 in other places (Vogt and Crowe, 2018), for example the US (Harrison et al., 2019), the Netherlands (Karelehto et al., 2019), and China (Sun et al., 2018a; Xiang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "7edc3c80-7849-4f5b-b434-8554b3ea670d",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C83",
+      "claim": "High seropositivity rates at ages below 5 yo have been reported for EV-D68 in the US, the Netherlands, and China.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the extremely high seropositivity rates at ages below 5 yo are not generally found with other enteroviruses, they have been reported for EV-D68 in other places (Vogt and Crowe, 2018), for example the US (Harrison et al., 2019), the Netherlands (Karelehto et al., 2019), and China (Sun et al., 2018a; Xiang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Harrison et al., 2019, Karelehto et al., 2019, Sun et al., 2018a, and Xiang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "a6fa678f-d26b-47a6-b13b-fa71551a940c",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C84",
+      "claim": "It is unclear whether cross-reactivity with other enteroviruses contributes to high seropositivity and general increase in antibody titres with age.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, it is unclear whether cross-reactivity with other enteroviruses contributes to these high seropositivity and general increase in antibody titres with age (Kamau et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This uncertainty is noted with citation to Kamau et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "e46d6cb7-9ceb-4040-b988-75225d4e07d7",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C85",
+      "claim": "It seems unlikely that secondary infections can lead to paralysis, based on data for poliovirus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it seems unlikely that secondary infections can lead to paralysis, based on data for poliovirus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from knowledge about poliovirus.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "d335ac7a-3199-4763-955f-46c2a0c51011",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C86",
+      "claim": "There is evidence of amino acid changes in the BC and DE loop regions of the VP1 that might have resulted in altered antigenic properties.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence of amino acid changes in the BC and DE loop regions of the VP1 (which are thought to be epitopes for neutralising antibodies) that might have resulted in altered antigenic properties (Dyrdak et al., 2019; Imamura et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Dyrdak et al., 2019 and Imamura et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "204ca897-d544-48e1-8f2b-c2dadd1fb010",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C87",
+      "claim": "The BC and DE loop regions of the VP1 are thought to be epitopes for neutralising antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence of amino acid changes in the BC and DE loop regions of the VP1 (which are thought to be epitopes for neutralising antibodies) that might have resulted in altered antigenic properties (Dyrdak et al., 2019; Imamura et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "c831856a-df49-4c7e-a40a-64a5bf8f67eb",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C88",
+      "claim": "Neutralisation assays conducted against different EV-D68 strains found some differences in neutralisation titres, but study results have been inconsistent.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although neutralisation assays conducted against different EV-D68 strains found some differences in neutralisation titres, study results have been inconsistent and their clinical and epidemiological significance unclear (Kamau et al., 2019; Harrison et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kamau et al., 2019 and Harrison et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "133fa9c9-4d09-4398-a7c4-182ee7df5f0b",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C89",
+      "claim": "EV-D68 may have exhibited biennial (or longer) cycles of transmission in England over the last few years.",
+      "claim_type": "EXPLICIT",
+      "source": "It would not be surprising if EV-D68 has exhibited biennial (or longer) cycles of transmission in England over the last few years, as it has been shown in the US (Park et al., 2021) and is common for other enteroviruses (Pons-Salort and Grassly, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on patterns observed in the US and for other enteroviruses.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "f2bf505b-5a7a-4299-8044-63d0475de0d2",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C90",
+      "claim": "Biennial cycles are common for other enteroviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "It would not be surprising if EV-D68 has exhibited biennial (or longer) cycles of transmission in England over the last few years, as it has been shown in the US (Park et al., 2021) and is common for other enteroviruses (Pons-Salort and Grassly, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pons-Salort and Grassly, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "e5f193cd-9271-400f-b26a-862494f9e278",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C91",
+      "claim": "Three major co-circulating EV-D68 clades (A\u2013C) emerged globally in the 2000s.",
+      "claim_type": "EXPLICIT",
+      "source": "Three major co-circulating EV-D68 clades (A\u2013C) emerged globally in the 2000s (Tokarz et al., 2012) and have subsequently diversified, with only one monophyletic group (B1 and B3 genotypes) with a common ancestor in 2009 so far associated with AFM (Hadfield et al., 2018) (with the exception of one case associated with D1 [sometimes called A2] in 2018 in France; Bal et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Tokarz et al., 2012, Hadfield et al., 2018, and Bal et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "955a562e-d301-4382-928b-145bc588907f",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C92",
+      "claim": "Only one monophyletic group (B1 and B3 genotypes) with a common ancestor in 2009 has been associated with AFM.",
+      "claim_type": "EXPLICIT",
+      "source": "Three major co-circulating EV-D68 clades (A\u2013C) emerged globally in the 2000s (Tokarz et al., 2012) and have subsequently diversified, with only one monophyletic group (B1 and B3 genotypes) with a common ancestor in 2009 so far associated with AFM (Hadfield et al., 2018) (with the exception of one case associated with D1 [sometimes called A2] in 2018 in France; Bal et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hadfield et al., 2018 and Bal et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "5a919ccc-5026-4018-a69d-625429f08b11",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C93",
+      "claim": "One AFM case was associated with D1 (sometimes called A2) in 2018 in France.",
+      "claim_type": "EXPLICIT",
+      "source": "Three major co-circulating EV-D68 clades (A\u2013C) emerged globally in the 2000s (Tokarz et al., 2012) and have subsequently diversified, with only one monophyletic group (B1 and B3 genotypes) with a common ancestor in 2009 so far associated with AFM (Hadfield et al., 2018) (with the exception of one case associated with D1 [sometimes called A2] in 2018 in France; Bal et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bal et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "d73f4581-07b6-42ec-b01c-0075fb58d174",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C94",
+      "claim": "Individual EV-D68 viral lineages show rapid global spread.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual viral lineages show rapid global spread, with recent outbreaks synchronised across Europe and the US representing circulation of the same dominant genotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about viral spread patterns.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "7ebf277f-77d5-40ec-bf44-198c38e2c242",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C95",
+      "claim": "Recent EV-D68 outbreaks synchronised across Europe and the US represent circulation of the same dominant genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual viral lineages show rapid global spread, with recent outbreaks synchronised across Europe and the US representing circulation of the same dominant genotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about outbreak patterns.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "edca72b7-3be3-4728-af8e-c3778f3d5a23",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C96",
+      "claim": "Reported EV-D68 outbreaks in 2014 and 2016 were due to clade B viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Reported EV-D68 outbreaks in 2014 and 2016 were due to clade B viruses, while the 2018 outbreaks were reported to be linked to both B3 and A2 clade viruses in the UK (The United Kingdom Acute Flaccid Paralysis (AFP) Task Force, 2019), France (Bal et al., 2019), and elsewhere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about outbreak strains.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "69d42fdf-21a5-4cd5-9a90-29c73b2ee815",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C97",
+      "claim": "The 2018 EV-D68 outbreaks were linked to both B3 and A2 clade viruses in the UK, France, and elsewhere.",
+      "claim_type": "EXPLICIT",
+      "source": "Reported EV-D68 outbreaks in 2014 and 2016 were due to clade B viruses, while the 2018 outbreaks were reported to be linked to both B3 and A2 clade viruses in the UK (The United Kingdom Acute Flaccid Paralysis (AFP) Task Force, 2019), France (Bal et al., 2019), and elsewhere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to UK AFP Task Force, 2019 and Bal et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "8df31da2-23d3-49ab-ada7-3cf5e4411f24",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C98",
+      "claim": "In vitro studies of the neurotropism of EV-D68 viruses compared with ancestral strains have yielded conflicting results as to whether neurotropism has increased.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro studies of the neurotropism of these viruses compared with the ancestral strains have yielded conflicting results as to whether neurotropism has increased (Hixon et al., 2019; Brown et al., 2018; Rosenfeld et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hixon et al., 2019, Brown et al., 2018, and Rosenfeld et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "04aed1e2-4260-4ef2-a5bd-5fc5928c403d",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C99",
+      "claim": "Increased virus transmissibility may be a trait associated with clade B.",
+      "claim_type": "EXPLICIT",
+      "source": "The timing of the increase in transmission estimated here (sometime before 2011) based on the analysis of the serology data may roughly correspond to the genetic emergence of clade B around 2007, and thus one could hypothesise that increased virus transmissibility is a trait associated with this clade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the temporal correspondence between transmission increase and clade emergence.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "11021f38-e814-4670-9586-57c9047f624b",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C100",
+      "claim": "Clade B emerged genetically around 2007.",
+      "claim_type": "EXPLICIT",
+      "source": "The timing of the increase in transmission estimated here (sometime before 2011) based on the analysis of the serology data may roughly correspond to the genetic emergence of clade B around 2007, and thus one could hypothesise that increased virus transmissibility is a trait associated with this clade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about viral evolution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "08f536b7-89cc-4e7a-8a8c-987c9dafc348",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C101",
+      "claim": "More efficient viral replication may enhance transmission as well as the probability of virus reaching the central nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "More efficient viral replication may enhance transmission as well as the probability of virus reaching the central nervous system, although changes in receptor usage could also play a role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "d83a5a56-b29c-4eed-98a8-f53ee29ec2a2",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C102",
+      "claim": "Changes in receptor usage could play a role in enhanced transmission and neurotropism.",
+      "claim_type": "EXPLICIT",
+      "source": "More efficient viral replication may enhance transmission as well as the probability of virus reaching the central nervous system, although changes in receptor usage could also play a role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "10b31a1d-06f3-4729-9ecd-47b4cc61542f",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C103",
+      "claim": "The dynamics of most enterovirus serotypes over relatively long time scales have been shown to be driven by population immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamics of most enterovirus serotypes over relatively long time scales have been shown to be driven by population immunity (Pons-Salort and Grassly, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pons-Salort and Grassly, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "264c4083-2f97-47e9-bbc2-444d7c321f21",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C104",
+      "claim": "Coxsackievirus A6 (CVA6) has emerged as the main serotype causing HFMD worldwide over the last decade.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, coxsackievirus A6 (CVA6) has emerged as the main serotype causing HFMD worldwide over the last decade (Bian et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bian et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "f62c2191-c1d7-4998-a05a-dff60db81ed8",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C105",
+      "claim": "Serum samples were from three retrospective cross-sectional studies representative of England's population in 2006 (n = 516), 2011 (n = 504), and 2017 (n = 566).",
+      "claim_type": "EXPLICIT",
+      "source": "We use data from three retrospective cross-sectional studies analysing serum samples representative of England's population in 2006 (n = 516), 2011 (n = 504), and 2017 (n = 566) and available through the National Seroepidemiology Programme at Public Health England (Osborne et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "18ad367d-5856-4af2-b14f-01ffd0880dd9",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C106",
+      "claim": "The neutralisation assay method and results from serological testing of the 2006 and 2017 sample sets have been previously described in Kamau et al., 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "The neutralisation assay method and results from serological testing of the 2006 and 2017 sample sets have been previously described in Kamau et al., 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kamau et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "8e7a4044-b674-4459-81c0-02f8bc7388cb",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C107",
+      "claim": "Neutralisation assays measured neutralising antibody titres against a B3 strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Neutralisation assays measured neutralising antibody titres against a B3 strain (Kamau et al., 2019; Hadfield et al., 2018), but Kamau et al. showed similar neutralisation effects across three different EV-D68 strains (Kamau et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kamau et al., 2019 and Hadfield et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "c00d5825-13de-4c82-89b0-229755414e29",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C108",
+      "claim": "Kamau et al. showed similar neutralisation effects across three different EV-D68 strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Neutralisation assays measured neutralising antibody titres against a B3 strain (Kamau et al., 2019; Hadfield et al., 2018), but Kamau et al. showed similar neutralisation effects across three different EV-D68 strains (Kamau et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kamau et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "d3c5556c-d3f9-429a-8857-706d2fa6a442",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C109",
+      "claim": "The FOI is the rate at which seronegative (susceptible) individuals become seropositive (infected).",
+      "claim_type": "EXPLICIT",
+      "source": "The FOI is the rate at which seronegative (susceptible) individuals become seropositive (infected).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the force of infection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "3c62664e-a4b6-4826-92b3-7e16ead924d1",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C110",
+      "claim": "Both models assumed that a proportion of individuals are born with maternal antibodies that will subsequently decline at a constant rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Both models assumed that a proportion of individuals are born with maternal antibodies that will subsequently decline at a constant rate, and assumed the risk of infection (becoming seropositive) was independent of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model assumptions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "e2d85058-ed4a-4b98-8e76-ff02e48025a4",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C111",
+      "claim": "Both models assumed the risk of infection (becoming seropositive) was independent of age.",
+      "claim_type": "EXPLICIT",
+      "source": "Both models assumed that a proportion of individuals are born with maternal antibodies that will subsequently decline at a constant rate, and assumed the risk of infection (becoming seropositive) was independent of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model assumptions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "9c74d23d-ed0f-4048-8d55-407db335f2ae",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C112",
+      "claim": "The proportion of individuals born with maternal antibodies was fixed to 1.0 for the seropositivity cut-off of 1:16.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of individuals born with maternal antibodies was fixed to 1.0 and 0.9 for the seropositivity cut-offs of 1:16 and 1:64, respectively, based on the proportion of adults 25\u201340 years old that were seropositive in the three serosurveys (Supplementary file 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a model parameter choice based on observed data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "4b1d37b1-6c88-4cf6-9d40-e82aba74b1d3",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "claim_id": "C113",
+      "claim": "The proportion of individuals born with maternal antibodies was fixed to 0.9 for the seropositivity cut-off of 1:64.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of individuals born with maternal antibodies was fixed to 1.0 and 0.9 for the seropositivity cut-offs of 1:16 and 1:64, respectively, based on the proportion of adults 25\u201340 years old that were seropositive in the three serosurveys (Supplementary file 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a model parameter choice based on observed data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c1a5b4b3-0a4a-498b-a608-458a25ce1988",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Seroprevalence data from England in 2006, 2011, and 2017 show age-stratified patterns consistent with maternal antibody decline in infants and increasing seropositivity with age. Seroprevalence was generally lower in 2006 compared to later years, and varied substantially depending on the seropositivity cut-off used (1:16 vs 1:64).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C41 describe observed seroprevalence patterns across three time points and different age groups. The data are directly measured from serum samples (C28) and show consistent patterns including maternal antibody decline (C30, C35-C41) and age-related increases (C29). The differences between 2006 and later years (C33) and between cut-offs (C31-C32, C40-C41) are clearly documented in the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "3253fa17-5c97-4df2-886c-2414201a3a82",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A catalytic model with time-varying force of infection (Model 2, random walk) provided better fit to the seroprevalence data than a constant force of infection model (Model 1), based on LOO information criterion. Model 2 estimated an increase in transmission over the study period for both seropositivity cut-offs, though the temporal patterns differed between cut-offs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 describe model selection and parameter estimation results. Model comparison using LOO criterion (C42) is an appropriate statistical approach. The better fit of Model 2 is demonstrated visually in figures (C43-C44). The model assumptions (C110-C113) are clearly stated. However, the interpretation is limited by only three time points of data, which constrains the ability to detect finer temporal patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "a7f659f3-fe81-42d2-8c4e-f68b03175cff",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The estimated duration of maternal antibody protection differed substantially between seropositivity cut-offs: 4.9 months (95% CrI 3.3-7.2) for 1:64 versus 17.6 months (95% CrI 11.5-26.8) for 1:16. The authors judge the 1:64 cut-off results as more biologically realistic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48-C51 report model-estimated parameters with credible intervals. However, the large discrepancy between cut-offs (C63) raises questions about model assumptions and biological interpretation. The judgment that 1:64 is \"more realistic\" (C64) is based on biological plausibility rather than empirical validation, and no external data are provided to validate either estimate. The 17.6-month estimate for 1:16 seems implausibly long for maternal antibody persistence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "b322ab79-c814-44ca-b541-876cc36f0136",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mathematical modeling estimated an approximately 50% increase in the annual probability of EV-D68 infection between 2006 and 2017 in England. For the 1:16 cut-off, annual probability ranged from 0.32-0.52; for 1:64, from 0.13-0.20. The increase in force of infection was robust to cut-off choice, though the 1:64 analysis suggested the FOI plateaued after 2011.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C60, C62, C65-C67 describe the main quantitative findings from the modeling analysis. The ~50% increase (C2) is supported by the model estimates shown in Figure 3A. The robustness to cut-off choice (C62) is demonstrated by consistent qualitative findings across both analyses. The specific probability ranges (C65-C66) are derived from the model. The plateau after 2011 for 1:64 (C67) is visible in Figure 3A, though uncertainty is substantial.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "4f2ae5ee-dd03-4217-9b49-c08027cf9375",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Reconstructed overall seroprevalence in England increased from 91% (1:16) or 70% (1:64) in 2006 to 97% (1:16) or 87% (1:64) in 2017, indicating EV-D68 was already highly prevalent before the 2014 AFM outbreaks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 report model-reconstructed population-level seroprevalence estimates incorporating age structure. These are derived from the fitted models and population data as described in Methods. The high baseline seroprevalence in 2006 (C52-C53) is a key finding supporting the conclusion that the virus was already widely circulating before AFM emergence (C4).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "9fe2a2bd-9279-48a8-b9f0-bf39b6ac7569",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Model reconstruction suggests the 2-year-old age class had the highest annual incidence of infection, with infections shifting to younger ages over time. Mean age at infection decreased from 8.5 to 4.2 years (1:16 cut-off) or 14.3 to 9.8 years (1:64 cut-off) between 2007 and 2017. The increase in transmission was primarily driven by increased infections in children aged 1-5 years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59, C73 describe age-specific infection patterns reconstructed from the model. These findings follow logically from the estimated FOI and population structure. The shift to younger ages (C57-C59) is consistent with increased transmission. However, these reconstructions depend heavily on model assumptions, particularly the assumption of no reinfection and age-independent FOI (C111), which may not fully capture reality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "9f6cd8a0-d987-4aae-964e-db8bd0950585",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Despite increased EV-D68 transmission, the virus was already widely circulating before AFM outbreaks, and the age distribution of increased infections does not match the age distribution of AFM cases. AFM cases occur across a broader age range (median ~4-7 years depending on location) than the youngest children where infection increases were concentrated. Therefore, increased neuropathogenicity, rather than just increased transmission, is required to explain AFM emergence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C75-C81 present the key interpretive conclusion of the paper. The high 2006 seroprevalence (C4, supported by C52-C53) demonstrates prior circulation. The mismatch between modeled infection increases (concentrated in ages 1-5, C73) and AFM case age distributions (C75-C79, median 4-7 years with broader range) is well-documented with citations. The logical inference that increased neuropathogenicity is needed (C6) follows from this mismatch, though alternative explanations (age-varying susceptibility, C80) are acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "156860df-46dd-4ce9-9fee-03594c068ba9",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The timing of increased EV-D68 transmission (before 2011) coincides with the emergence of clade B around 2007-2009. The authors hypothesize that increased transmissibility may be a trait associated with clade B, which has been specifically associated with AFM cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C3, C61, C99-C100 link the modeled transmission increase to viral evolution. The temporal correspondence between transmission increase (before 2011, C60) and clade B emergence (~2007-2009, C100) is noted. However, this is explicitly presented as a hypothesis (C99) rather than demonstrated causation. The association between clade B and AFM (C92) is supported by citations, but the link to transmissibility is speculative. No direct virological or phylogenetic analysis is performed in this study to test this hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "e5f38c06-6dbc-476a-8f92-e356480e83fa",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "EV-D68 emerged globally in 2014 as a cause of AFM in children, though the virus was first isolated in 1962 and caused sporadic respiratory disease for decades. From 2009-2010 onwards, increasing outbreaks of severe respiratory illness were reported, with major AFM outbreaks in the US in 2014, 2016, and 2018. Similar patterns were observed in Europe including the UK. Evidence increasingly supports EV-D68 as the main cause of AFM outbreaks, though other enteroviruses may play a role.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C27 provide background context on EV-D68 and AFM epidemiology, all supported by appropriate citations. These establish the historical context (C9-C10), recent emergence patterns (C11-C17), clinical significance (C20-C21), and surveillance limitations (C23, C27). The biennial patterns in the US and UK (C24-C26) are documented. This background appropriately frames the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "b43f9c8c-2ab1-4399-b1f8-14f95d1c6aaa",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Most published EV-D68 seroepidemiological studies use cut-offs of 1:8 or 1:16. Only one prior study (China, 2010) reported detailed seroprevalence in children <1 year old, finding 100% in neonates declining to 28% by 9-11 months, which differs from the current study's findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72 provide context on prior serological studies and justify the cut-off choices. The literature review (C68-C69) is supported by citations. The comparison to the China study (C70-C72) highlights differences that may reflect temporal or geographic variation, though the authors note their data combine multiple years which may affect comparisons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "2c6d2338-03cc-466f-adaa-02738e9b783e",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The high seroprevalence in young children (<5 years) observed for EV-D68 is unusual compared to other enteroviruses but has been reported in multiple countries. It remains unclear whether cross-reactivity with other enteroviruses contributes to this pattern. Evidence exists for amino acid changes in VP1 epitope regions that might alter antigenic properties, but neutralization studies have yielded inconsistent results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C88 discuss uncertainties in interpreting serological data. The unusual high seroprevalence pattern (C82-C83) is documented across multiple studies. The uncertainty about cross-reactivity (C84) is appropriately acknowledged as a limitation. The discussion of antigenic variation (C86-C88) is supported by citations but notes inconsistencies in the literature, appropriately reflecting scientific uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "e7e9586d-fcf0-4ad6-a630-927ea531dd8c",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "EV-D68 may exhibit biennial transmission cycles in England similar to patterns observed in the US and common for other enteroviruses. Enterovirus dynamics are generally driven by population immunity, and other enteroviruses like CVA6 have emerged as major causes of disease (HFMD) over the past decade.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90, C103-C104 provide context on enterovirus transmission dynamics. The speculation about biennial cycles (C89) is appropriately cautious and supported by analogy to US data and other enteroviruses (C90). The role of population immunity (C103) and the CVA6 example (C104) are supported by citations and provide relevant context for interpreting EV-D68 emergence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "927be117-b721-4fe9-8304-09c566eaaa3d",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Three major EV-D68 clades (A-C) emerged in the 2000s. Only the B clade (B1/B3 genotypes, common ancestor ~2009) has been consistently associated with AFM, with rare exceptions. Individual lineages show rapid global spread with synchronized outbreaks. In vitro studies of neurotropism have yielded conflicting results regarding whether recent strains show increased neurotropism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C98 summarize the viral evolution and phylogenetic context, all supported by appropriate citations. The clade structure (C91), AFM association with clade B (C92-C93), global spread patterns (C94-C95), and outbreak strain characterization (C96-C97) are well-documented. The conflicting in vitro neurotropism results (C98) appropriately reflect uncertainty in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "ca597706-87e4-478d-aff9-6f22bf6f4862",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors speculate that more efficient viral replication may enhance both transmission and the probability of virus reaching the central nervous system, though changes in receptor usage could also play a role.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C101-C102 present mechanistic speculation about how increased transmissibility and neurotropism might be linked. These are explicitly speculative (\"may\") and no experimental data are provided to test these hypotheses. While biologically plausible, these remain untested conjectures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "de92e37d-abc4-428f-8a29-f420a9a90f99",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study used serum samples from three cross-sectional studies in England (2006: n=516, 2011: n=504, 2017: n=566) from the National Seroepidemiology Programme. Neutralization assays measured antibodies against a B3 strain, with similar neutralization observed across different EV-D68 strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C109 describe the study materials and methods. Sample sources and sizes (C105) are clearly stated. The neutralization assay methods (C106-C107) reference prior publications. The observation of similar neutralization across strains (C108) is important for interpreting results and is supported by citation. The FOI definition (C109) is standard.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "f3cfc4a6-8a1c-4a58-97c5-0957cd070e42",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors conclude that their results provide evidence that changes in enterovirus phenotypes cause major changes in disease epidemiology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C7 is the overarching conclusion. It is supported by the combination of findings: increased transmission coinciding with clade emergence (C3, C61), high baseline seroprevalence (C4), mismatch between infection and disease age patterns (C5, C81), and the inference that neuropathogenicity changes are required (C6). However, the evidence is indirect and inferential rather than mechanistic, as the study does not directly measure phenotypic changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    },
+    {
+      "id": "e7f91bf2-d3de-492a-b5c5-0c7e6fa3523d",
+      "content_id": "ade21607-a8a8-4f68-a503-855548c63dee",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The observed decrease in mean age of exposure could be consistent with increased transmission, and increased transmission in young children may align with observed increases in respiratory illness in children <5 years old.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34 and C74 present interpretations linking model results to clinical observations. C34 appropriately presents this as one possible explanation (\"could potentially\") for the observed pattern. C74 notes consistency with external data on respiratory illness (supported by citation to Bubba et al., 2020), though this is presented cautiously (\"may be consistent\").",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:07:33.546316Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9384a5ac-7da4-455b-b572-fb268feb56f3",
+      "result_id": "c1a5b4b3-0a4a-498b-a608-458a25ce1988"
+    },
+    {
+      "claim_id": "84321632-bb01-4028-ab1f-0b022a699b23",
+      "result_id": "c1a5b4b3-0a4a-498b-a608-458a25ce1988"
+    },
+    {
+      "claim_id": "016ede12-0f2f-45f5-b441-050b2cf3d6cd",
+      "result_id": "c1a5b4b3-0a4a-498b-a608-458a25ce1988"
+    },
+    {
+      "claim_id": "184a01b7-4b42-41ab-a274-9753839f5f52",
+      "result_id": "c1a5b4b3-0a4a-498b-a608-458a25ce1988"
+    },
+    {
+      "claim_id": "13aa6aa8-8e7b-4759-86c1-5b94025045a7",
+      "result_id": "c1a5b4b3-0a4a-498b-a608-458a25ce1988"
+    },
+    {
+      "claim_id": "285373e1-7686-4eae-8214-c99b35711462",
+      "result_id": "c1a5b4b3-0a4a-498b-a608-458a25ce1988"
+    },
+    {
+      "claim_id": "5464e40e-6f03-4a78-a216-d15e30fdd4e9",
+      "result_id": "c1a5b4b3-0a4a-498b-a608-458a25ce1988"
+    },
+    {
+      "claim_id": "44ea6b0a-73ba-4159-bb61-c18aaf3225bd",
+      "result_id": "c1a5b4b3-0a4a-498b-a608-458a25ce1988"
+    },
+    {
+      "claim_id": "ccd85288-cdb1-495e-82df-7cfeedfaa48b",
+      "result_id": "c1a5b4b3-0a4a-498b-a608-458a25ce1988"
+    },
+    {
+      "claim_id": "4a1357e7-5b53-4769-a2a2-974033a32e58",
+      "result_id": "c1a5b4b3-0a4a-498b-a608-458a25ce1988"
+    },
+    {
+      "claim_id": "f9457496-ae44-4fdf-8041-bb9fe99bd48c",
+      "result_id": "c1a5b4b3-0a4a-498b-a608-458a25ce1988"
+    },
+    {
+      "claim_id": "2ada936a-cf56-47d9-9294-5e631848b9eb",
+      "result_id": "c1a5b4b3-0a4a-498b-a608-458a25ce1988"
+    },
+    {
+      "claim_id": "cc0d1308-8aeb-42e3-82c6-136539f7a622",
+      "result_id": "c1a5b4b3-0a4a-498b-a608-458a25ce1988"
+    },
+    {
+      "claim_id": "a98e42e3-a02b-4a83-9962-91183e774be9",
+      "result_id": "3253fa17-5c97-4df2-886c-2414201a3a82"
+    },
+    {
+      "claim_id": "718a5c74-9263-48cd-a319-df903e340822",
+      "result_id": "3253fa17-5c97-4df2-886c-2414201a3a82"
+    },
+    {
+      "claim_id": "533a83f4-4530-456c-9425-85d07ae08d85",
+      "result_id": "3253fa17-5c97-4df2-886c-2414201a3a82"
+    },
+    {
+      "claim_id": "fe2a6bb3-2796-48ce-afbc-619ddb34725b",
+      "result_id": "3253fa17-5c97-4df2-886c-2414201a3a82"
+    },
+    {
+      "claim_id": "4065c271-4432-4aea-bbe6-f11108cc2f01",
+      "result_id": "3253fa17-5c97-4df2-886c-2414201a3a82"
+    },
+    {
+      "claim_id": "05d29b38-ff31-43d2-903e-b48d9f3c9bb8",
+      "result_id": "3253fa17-5c97-4df2-886c-2414201a3a82"
+    },
+    {
+      "claim_id": "3c62664e-a4b6-4826-92b3-7e16ead924d1",
+      "result_id": "3253fa17-5c97-4df2-886c-2414201a3a82"
+    },
+    {
+      "claim_id": "e2d85058-ed4a-4b98-8e76-ff02e48025a4",
+      "result_id": "3253fa17-5c97-4df2-886c-2414201a3a82"
+    },
+    {
+      "claim_id": "9c74d23d-ed0f-4048-8d55-407db335f2ae",
+      "result_id": "3253fa17-5c97-4df2-886c-2414201a3a82"
+    },
+    {
+      "claim_id": "4b1d37b1-6c88-4cf6-9d40-e82aba74b1d3",
+      "result_id": "3253fa17-5c97-4df2-886c-2414201a3a82"
+    },
+    {
+      "claim_id": "488e387b-d4b4-4709-8768-23d03cbe74a8",
+      "result_id": "a7f659f3-fe81-42d2-8c4e-f68b03175cff"
+    },
+    {
+      "claim_id": "9c7d5308-0336-455c-ac5b-7469e365783f",
+      "result_id": "a7f659f3-fe81-42d2-8c4e-f68b03175cff"
+    },
+    {
+      "claim_id": "b9c93edc-a883-4d60-b2ef-3b574ea9a7a2",
+      "result_id": "a7f659f3-fe81-42d2-8c4e-f68b03175cff"
+    },
+    {
+      "claim_id": "0d0ffcc1-7eac-4988-b444-1ea6786efe1e",
+      "result_id": "a7f659f3-fe81-42d2-8c4e-f68b03175cff"
+    },
+    {
+      "claim_id": "2d5abd89-2f54-40fc-8089-9e7c1ddcca56",
+      "result_id": "a7f659f3-fe81-42d2-8c4e-f68b03175cff"
+    },
+    {
+      "claim_id": "d33a0bc1-b2dc-49d3-80d2-2b89b1660405",
+      "result_id": "a7f659f3-fe81-42d2-8c4e-f68b03175cff"
+    },
+    {
+      "claim_id": "e6f6625a-a450-44cd-ae44-ea2d3194ba45",
+      "result_id": "b322ab79-c814-44ca-b541-876cc36f0136"
+    },
+    {
+      "claim_id": "4281a0bc-3e3c-4e06-a74e-ad1d7021066f",
+      "result_id": "b322ab79-c814-44ca-b541-876cc36f0136"
+    },
+    {
+      "claim_id": "908c43ce-56e2-4848-8295-3a27e56c6c91",
+      "result_id": "b322ab79-c814-44ca-b541-876cc36f0136"
+    },
+    {
+      "claim_id": "ed7f933d-458f-4df1-98a1-98951ccf69b7",
+      "result_id": "b322ab79-c814-44ca-b541-876cc36f0136"
+    },
+    {
+      "claim_id": "d97e68b4-e20f-4c63-8f63-869f203fb4ea",
+      "result_id": "b322ab79-c814-44ca-b541-876cc36f0136"
+    },
+    {
+      "claim_id": "b1643734-71f4-4075-8f7b-00f33d1a72bc",
+      "result_id": "b322ab79-c814-44ca-b541-876cc36f0136"
+    },
+    {
+      "claim_id": "e1db1c90-b659-4288-8a4c-8f4a3f65ef5a",
+      "result_id": "4f2ae5ee-dd03-4217-9b49-c08027cf9375"
+    },
+    {
+      "claim_id": "1f3b6a43-9e98-4f8f-94c7-bb436cbce981",
+      "result_id": "4f2ae5ee-dd03-4217-9b49-c08027cf9375"
+    },
+    {
+      "claim_id": "412ace58-4257-472d-9453-396018bf2d43",
+      "result_id": "4f2ae5ee-dd03-4217-9b49-c08027cf9375"
+    },
+    {
+      "claim_id": "705cb6ed-12a2-40e2-b349-6e234a438bf9",
+      "result_id": "4f2ae5ee-dd03-4217-9b49-c08027cf9375"
+    },
+    {
+      "claim_id": "9113ccef-07ad-4f0b-b485-e7dffa0c53ac",
+      "result_id": "9fe2a2bd-9279-48a8-b9f0-bf39b6ac7569"
+    },
+    {
+      "claim_id": "38f789de-e1dd-43f5-ad6f-e05938978821",
+      "result_id": "9fe2a2bd-9279-48a8-b9f0-bf39b6ac7569"
+    },
+    {
+      "claim_id": "edacc5dd-2740-4e3b-b187-5d8b411a6b68",
+      "result_id": "9fe2a2bd-9279-48a8-b9f0-bf39b6ac7569"
+    },
+    {
+      "claim_id": "fc103640-269d-4727-992c-3572f8c8b22b",
+      "result_id": "9fe2a2bd-9279-48a8-b9f0-bf39b6ac7569"
+    },
+    {
+      "claim_id": "3218a71c-2247-4c63-9586-7f2835030451",
+      "result_id": "9fe2a2bd-9279-48a8-b9f0-bf39b6ac7569"
+    },
+    {
+      "claim_id": "f808b917-ac20-4e3f-a615-5886a595c728",
+      "result_id": "9f6cd8a0-d987-4aae-964e-db8bd0950585"
+    },
+    {
+      "claim_id": "31e72796-d1e6-412e-bd8f-639e63c2b289",
+      "result_id": "9f6cd8a0-d987-4aae-964e-db8bd0950585"
+    },
+    {
+      "claim_id": "4c2c06c4-d89c-43cb-8d93-5017b0ef6a5e",
+      "result_id": "9f6cd8a0-d987-4aae-964e-db8bd0950585"
+    },
+    {
+      "claim_id": "a31eb672-66fe-42b9-88bb-d0cf541988f6",
+      "result_id": "9f6cd8a0-d987-4aae-964e-db8bd0950585"
+    },
+    {
+      "claim_id": "7af0ee19-9d15-47f4-82e7-66b0ef4583c7",
+      "result_id": "9f6cd8a0-d987-4aae-964e-db8bd0950585"
+    },
+    {
+      "claim_id": "775110ad-1ed1-4b42-879c-7a0eadada3d1",
+      "result_id": "9f6cd8a0-d987-4aae-964e-db8bd0950585"
+    },
+    {
+      "claim_id": "0d4b0328-91d2-467e-a7d9-1ee22de6a886",
+      "result_id": "9f6cd8a0-d987-4aae-964e-db8bd0950585"
+    },
+    {
+      "claim_id": "ef8d081f-73cc-4a54-96a8-d928bb6594e5",
+      "result_id": "9f6cd8a0-d987-4aae-964e-db8bd0950585"
+    },
+    {
+      "claim_id": "fc5b3403-583c-4d5c-8dbd-fe838004d81c",
+      "result_id": "9f6cd8a0-d987-4aae-964e-db8bd0950585"
+    },
+    {
+      "claim_id": "3f2deb7a-9eb8-4790-be01-5482e0a3809d",
+      "result_id": "9f6cd8a0-d987-4aae-964e-db8bd0950585"
+    },
+    {
+      "claim_id": "89eb1189-beab-4d66-9e19-5b184d286d65",
+      "result_id": "156860df-46dd-4ce9-9fee-03594c068ba9"
+    },
+    {
+      "claim_id": "2939f177-3881-4c3b-81c8-7961b47b7f4f",
+      "result_id": "156860df-46dd-4ce9-9fee-03594c068ba9"
+    },
+    {
+      "claim_id": "e5f193cd-9271-400f-b26a-862494f9e278",
+      "result_id": "156860df-46dd-4ce9-9fee-03594c068ba9"
+    },
+    {
+      "claim_id": "955a562e-d301-4382-928b-145bc588907f",
+      "result_id": "156860df-46dd-4ce9-9fee-03594c068ba9"
+    },
+    {
+      "claim_id": "04aed1e2-4260-4ef2-a5bd-5fc5928c403d",
+      "result_id": "156860df-46dd-4ce9-9fee-03594c068ba9"
+    },
+    {
+      "claim_id": "11021f38-e814-4670-9586-57c9047f624b",
+      "result_id": "156860df-46dd-4ce9-9fee-03594c068ba9"
+    },
+    {
+      "claim_id": "bdd87404-aefe-4d65-8a81-65a61f9cb10f",
+      "result_id": "e5f38c06-6dbc-476a-8f92-e356480e83fa"
+    },
+    {
+      "claim_id": "bc39b2fb-be6b-4464-afc4-5c9b634506f8",
+      "result_id": "e5f38c06-6dbc-476a-8f92-e356480e83fa"
+    },
+    {
+      "claim_id": "48d695d6-259b-4a25-a4a2-565f8cb1d4fb",
+      "result_id": "e5f38c06-6dbc-476a-8f92-e356480e83fa"
+    },
+    {
+      "claim_id": "a943f59a-2bfb-49e2-803c-26c5613c2822",
+      "result_id": "e5f38c06-6dbc-476a-8f92-e356480e83fa"
+    },
+    {
+      "claim_id": "4b895a34-3b2a-4907-9132-1b21eba1249a",
+      "result_id": "e5f38c06-6dbc-476a-8f92-e356480e83fa"
+    },
+    {
+      "claim_id": "f2b7c242-65ee-4838-98f8-278571eb50c7",
+      "result_id": "e5f38c06-6dbc-476a-8f92-e356480e83fa"
+    },
+    {
+      "claim_id": "af43f04d-fe4f-4b7f-932f-8ce6648d1a09",
+      "result_id": "e5f38c06-6dbc-476a-8f92-e356480e83fa"
+    },
+    {
+      "claim_id": "eddf48ea-576c-4b5a-8098-090d05bbda7a",
+      "result_id": "e5f38c06-6dbc-476a-8f92-e356480e83fa"
+    },
+    {
+      "claim_id": "b2d30a99-5d08-4465-b5bd-49965eccc45c",
+      "result_id": "e5f38c06-6dbc-476a-8f92-e356480e83fa"
+    },
+    {
+      "claim_id": "458aba13-4ccb-49ce-a693-26fa2d9b81e1",
+      "result_id": "e5f38c06-6dbc-476a-8f92-e356480e83fa"
+    },
+    {
+      "claim_id": "be10e40c-18bb-4ecb-be72-9a8318ac8388",
+      "result_id": "e5f38c06-6dbc-476a-8f92-e356480e83fa"
+    },
+    {
+      "claim_id": "bbd7ef27-9e12-4ea3-a977-8a1b4ec7450b",
+      "result_id": "e5f38c06-6dbc-476a-8f92-e356480e83fa"
+    },
+    {
+      "claim_id": "a4407ae0-cd47-4d2a-a20c-f83144f68b60",
+      "result_id": "e5f38c06-6dbc-476a-8f92-e356480e83fa"
+    },
+    {
+      "claim_id": "ebb34e9c-d9b7-4582-99cb-09a1c34d635e",
+      "result_id": "e5f38c06-6dbc-476a-8f92-e356480e83fa"
+    },
+    {
+      "claim_id": "e5c40c26-f484-4af2-b9d0-f43aaf133f74",
+      "result_id": "e5f38c06-6dbc-476a-8f92-e356480e83fa"
+    },
+    {
+      "claim_id": "d1b4bac3-bc35-482c-96db-5ad8bd4dcdb5",
+      "result_id": "e5f38c06-6dbc-476a-8f92-e356480e83fa"
+    },
+    {
+      "claim_id": "ec5a32c3-b72c-4b87-b0a0-35a7b13fd560",
+      "result_id": "e5f38c06-6dbc-476a-8f92-e356480e83fa"
+    },
+    {
+      "claim_id": "799f7936-1aee-4876-b3fe-e20771b1d94e",
+      "result_id": "e5f38c06-6dbc-476a-8f92-e356480e83fa"
+    },
+    {
+      "claim_id": "1c99b7f0-9e6b-47a9-8eb3-43e2f30c3750",
+      "result_id": "e5f38c06-6dbc-476a-8f92-e356480e83fa"
+    },
+    {
+      "claim_id": "76212176-9f32-4b40-8f24-f777339d78d2",
+      "result_id": "e5f38c06-6dbc-476a-8f92-e356480e83fa"
+    },
+    {
+      "claim_id": "fd2905d6-6e67-4581-b476-e7b0378a263e",
+      "result_id": "e5f38c06-6dbc-476a-8f92-e356480e83fa"
+    },
+    {
+      "claim_id": "d1defc40-400c-47d0-92e2-e3c51f7a0758",
+      "result_id": "b43f9c8c-2ab1-4399-b1f8-14f95d1c6aaa"
+    },
+    {
+      "claim_id": "c22236f6-07e1-466f-ac7d-77f721c796d0",
+      "result_id": "b43f9c8c-2ab1-4399-b1f8-14f95d1c6aaa"
+    },
+    {
+      "claim_id": "7f2b8262-1255-438e-adaf-86c9fd186927",
+      "result_id": "b43f9c8c-2ab1-4399-b1f8-14f95d1c6aaa"
+    },
+    {
+      "claim_id": "c214199a-4c75-450d-a7aa-ecee2c539912",
+      "result_id": "b43f9c8c-2ab1-4399-b1f8-14f95d1c6aaa"
+    },
+    {
+      "claim_id": "5d66271e-0b54-4ac1-bc43-a8dfb79db629",
+      "result_id": "b43f9c8c-2ab1-4399-b1f8-14f95d1c6aaa"
+    },
+    {
+      "claim_id": "beb88cdd-9777-4a0a-90e1-b87896efca1d",
+      "result_id": "2c6d2338-03cc-466f-adaa-02738e9b783e"
+    },
+    {
+      "claim_id": "7edc3c80-7849-4f5b-b434-8554b3ea670d",
+      "result_id": "2c6d2338-03cc-466f-adaa-02738e9b783e"
+    },
+    {
+      "claim_id": "a6fa678f-d26b-47a6-b13b-fa71551a940c",
+      "result_id": "2c6d2338-03cc-466f-adaa-02738e9b783e"
+    },
+    {
+      "claim_id": "e46d6cb7-9ceb-4040-b988-75225d4e07d7",
+      "result_id": "2c6d2338-03cc-466f-adaa-02738e9b783e"
+    },
+    {
+      "claim_id": "d335ac7a-3199-4763-955f-46c2a0c51011",
+      "result_id": "2c6d2338-03cc-466f-adaa-02738e9b783e"
+    },
+    {
+      "claim_id": "204ca897-d544-48e1-8f2b-c2dadd1fb010",
+      "result_id": "2c6d2338-03cc-466f-adaa-02738e9b783e"
+    },
+    {
+      "claim_id": "c831856a-df49-4c7e-a40a-64a5bf8f67eb",
+      "result_id": "2c6d2338-03cc-466f-adaa-02738e9b783e"
+    },
+    {
+      "claim_id": "133fa9c9-4d09-4398-a7c4-182ee7df5f0b",
+      "result_id": "e7e9586d-fcf0-4ad6-a630-927ea531dd8c"
+    },
+    {
+      "claim_id": "f2bf505b-5a7a-4299-8044-63d0475de0d2",
+      "result_id": "e7e9586d-fcf0-4ad6-a630-927ea531dd8c"
+    },
+    {
+      "claim_id": "10b31a1d-06f3-4729-9ecd-47b4cc61542f",
+      "result_id": "e7e9586d-fcf0-4ad6-a630-927ea531dd8c"
+    },
+    {
+      "claim_id": "264c4083-2f97-47e9-bbc2-444d7c321f21",
+      "result_id": "e7e9586d-fcf0-4ad6-a630-927ea531dd8c"
+    },
+    {
+      "claim_id": "e5f193cd-9271-400f-b26a-862494f9e278",
+      "result_id": "927be117-b721-4fe9-8304-09c566eaaa3d"
+    },
+    {
+      "claim_id": "955a562e-d301-4382-928b-145bc588907f",
+      "result_id": "927be117-b721-4fe9-8304-09c566eaaa3d"
+    },
+    {
+      "claim_id": "5a919ccc-5026-4018-a69d-625429f08b11",
+      "result_id": "927be117-b721-4fe9-8304-09c566eaaa3d"
+    },
+    {
+      "claim_id": "d73f4581-07b6-42ec-b01c-0075fb58d174",
+      "result_id": "927be117-b721-4fe9-8304-09c566eaaa3d"
+    },
+    {
+      "claim_id": "7ebf277f-77d5-40ec-bf44-198c38e2c242",
+      "result_id": "927be117-b721-4fe9-8304-09c566eaaa3d"
+    },
+    {
+      "claim_id": "edca72b7-3be3-4728-af8e-c3778f3d5a23",
+      "result_id": "927be117-b721-4fe9-8304-09c566eaaa3d"
+    },
+    {
+      "claim_id": "69d42fdf-21a5-4cd5-9a90-29c73b2ee815",
+      "result_id": "927be117-b721-4fe9-8304-09c566eaaa3d"
+    },
+    {
+      "claim_id": "8df31da2-23d3-49ab-ada7-3cf5e4411f24",
+      "result_id": "927be117-b721-4fe9-8304-09c566eaaa3d"
+    },
+    {
+      "claim_id": "08f536b7-89cc-4e7a-8a8c-987c9dafc348",
+      "result_id": "ca597706-87e4-478d-aff9-6f22bf6f4862"
+    },
+    {
+      "claim_id": "d83a5a56-b29c-4eed-98a8-f53ee29ec2a2",
+      "result_id": "ca597706-87e4-478d-aff9-6f22bf6f4862"
+    },
+    {
+      "claim_id": "f62c2191-c1d7-4998-a05a-dff60db81ed8",
+      "result_id": "de92e37d-abc4-428f-8a29-f420a9a90f99"
+    },
+    {
+      "claim_id": "18ad367d-5856-4af2-b14f-01ffd0880dd9",
+      "result_id": "de92e37d-abc4-428f-8a29-f420a9a90f99"
+    },
+    {
+      "claim_id": "8e7a4044-b674-4459-81c0-02f8bc7388cb",
+      "result_id": "de92e37d-abc4-428f-8a29-f420a9a90f99"
+    },
+    {
+      "claim_id": "c00d5825-13de-4c82-89b0-229755414e29",
+      "result_id": "de92e37d-abc4-428f-8a29-f420a9a90f99"
+    },
+    {
+      "claim_id": "d3c5556c-d3f9-429a-8857-706d2fa6a442",
+      "result_id": "de92e37d-abc4-428f-8a29-f420a9a90f99"
+    },
+    {
+      "claim_id": "723a5d3c-1e57-447d-be0a-6991afbc0b09",
+      "result_id": "f3cfc4a6-8a1c-4a58-97c5-0957cd070e42"
+    },
+    {
+      "claim_id": "f372cd92-0a30-4dd1-a7e9-53f83128a13f",
+      "result_id": "e7f91bf2-d3de-492a-b5c5-0c7e6fa3523d"
+    },
+    {
+      "claim_id": "95ca8bec-76fa-4c95-ba80-33bd2ab7af3b",
+      "result_id": "e7f91bf2-d3de-492a-b5c5-0c7e6fa3523d"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C43"
+    ],
+    "result": "A canonical CSD pattern was identified in mouse V1 in response to full-field flash stimuli, characterized by specific temporal and spatial features of current sinks and sources across cortical layers. The first principal component explains 50.4% of variance across animals, with an early L4 sink at ~40ms, sustained L4 source and L2/3 sink at ~60ms, and sustained L5/6 sink at ~50ms. Inter-trial variability is significantly lower than inter-animal variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 and C43 provide converging evidence from PCA analysis, visual inspection of CSD plots, and statistical quantification using Wasserstein distances. The temporal and spatial features are consistently observed across multiple animals (39 of 44 within half the maximum distance to PC1), with appropriate statistical support (p<0.001 for inter-trial vs inter-animal comparison). The canonical pattern is well-characterized and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Fast-spiking neurons exhibit population firing rates more than twice as high as regular-spiking cells across all time periods, and among regular-spiking populations, L5 shows the highest firing rates followed by L4 and L6, while L2/3 has the lowest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 are directly supported by data shown in Figure 3E with clear quantitative differences between populations. The findings are consistent with known properties of Pvalb inhibitory neurons (FS) versus excitatory neurons (RS) and provide baseline characterization of the experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The original biophysical model failed to reproduce key features of the experimental CSD pattern, showing a strong L5/6 sink but lacking or having weak early L4 sink, sustained L4 source, and sustained L2/3 sink. The model's CSD was an outlier compared to experimental variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by visual comparison of CSD patterns (Figure 4B vs Figure 2) and quantitative assessment using Wasserstein distance (normalized WD=1.84, greater than the farthest experimental outlier). This establishes the need for model refinement and demonstrates that CSD reveals discrepancies not apparent from firing rates alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Adjusting recurrent synaptic weights brought model firing rates within experimental variability for all populations, but the CSD pattern remained largely unchanged compared to the original model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 demonstrate one direction of the two-way dissociation between firing rates and CSD. Statistical metrics (KS similarity and correlation) confirm firing rates are within experimental range, while visual comparison and Wasserstein distance show minimal CSD changes. This is a key finding showing that firing rate matching alone is insufficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Manipulating synaptic placement on L4 excitatory neurons substantially altered CSD contributions (approximately 2-fold increase when moved to basal dendrites) while firing rates remained essentially unchanged. Somatic Hodgkin-Huxley channels also significantly shape the CSD pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 demonstrate the other direction of the two-way dissociation. Figure 5F-H shows clear quantitative changes in CSD magnitude and pattern with different synaptic placements while Figure 5G shows minimal firing rate changes. This establishes that CSD and firing rates can be independently manipulated, though the claim of \"essentially unchanged\" firing rates may be slightly overstated as some changes are visible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C2",
+      "C62"
+    ],
+    "result": "The model demonstrates a two-way dissociation between firing rates and CSD patterns: firing rates can be altered with minor effects on CSD by adjusting synaptic weights, and CSD can be altered with minor effects on firing rates by adjusting synaptic placement. This establishes that CSD analysis provides powerful constraints for modeling beyond those from spikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 and C62 synthesize the key conceptual finding supported by the experimental manipulations in C23-C27. The two-way dissociation is demonstrated through systematic manipulations with appropriate controls. This is a major conceptual contribution showing the complementary nature of LFP/CSD and spiking activity, though the dissociation is not absolute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C64"
+    ],
+    "result": "Adding feedback from higher visual area LM to the model was necessary to reproduce both experimental CSD and firing rates. When feedback was included, the model reproduced the sustained L2/3 sink and L4 source, and the Wasserstein distance to experimental PC1 CSD was no longer an outlier (normalized WD=0.41).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 and C64 are supported by anatomical data from literature (C28-C29, C31), experimental recordings (C32), and modeling results (C33-C35). The addition of feedback from LM was crucial for matching experimental observations, as shown in Figure 6. The model with feedback falls within experimental variability for both CSD and firing rates. This demonstrates the importance of feedback connections and shows that CSD revealed a circuit component not apparent from firing rates alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C5",
+      "C6"
+    ],
+    "result": "The biophysical origins of the canonical CSD pattern were identified: the early L4 sink originates from thalamocortical input to L4 excitatory cells; the sustained L5/L6 sink comes from thalamocortical and recurrent inputs to L6 excitatory cells; the sustained L2/3 sink stems from LM feedback onto apical tufts of L2/3 and L5 excitatory cells; and the sustained L4 source arises from return currents in L2/3 and L5 excitatory cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39, C5-C6 provide mechanistic explanations for the canonical CSD pattern based on systematic lesion studies in the model (removing recurrent connections, removing feedback, etc.) shown in Figure 7. The interpretations are consistent with prior literature (C36 cites Mitzdorf 1987, Swadlow et al. 2002, Senzai et al. 2019) and are supported by the modeling manipulations, though some caution is warranted given the nonlinear effects of recurrent connections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Somatic voltage-dependent membrane currents significantly shape the CSD signature, though synaptic inputs remain the primary sculptors of CSD patterns, as demonstrated by substantial CSD changes following addition of synaptic input or changes to synaptic placement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by comparisons of CSD with and without active channels (Figures 5H, 7C) and by the effects of adding feedback and changing synaptic placement (Figures 5F, 6A-E). The finding aligns with prior work (Reimann et al. 2013) while emphasizing the importance of synaptic contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "The canonical CSD pattern observed in this study shows good agreement with prior studies in mice (Senzai et al. 2019) and non-human primates (Givre et al. 1994; Schroeder et al. 1998) in terms of spatial location, temporal order, and timing of sinks and sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 establish consistency with prior literature through citations and comparison of results. The agreement across species and studies supports the generalizability of the findings, though some timing differences are noted (e.g., L4 source and L2/3 sink emerge later in Senzai et al. 2019).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The revised model maintained orientation and direction tuning when tested with drifting gratings stimuli, despite adjustments being made to reproduce CSD and firing rates during full-field flashes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by data in Figure 6\u2014figure supplement 6 showing that the model continues to exhibit appropriate tuning properties. This demonstrates that the model adjustments did not break previously established functionality, supporting the validity of the revised model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "LFP recordings reflect current source density dynamics in brain tissue, predominantly stemming from synaptic inputs and return currents. However, interpretation of current sinks and sources is inherently ambiguous as multiple processes can generate them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10, C58-C60 establish the biophysical basis for LFP/CSD analysis based on well-established principles and extensive prior literature. These are foundational concepts that frame the study and are well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C63"
+    ],
+    "result": "Utilizing LFP/CSD in modeling aids model configuration by revealing discrepancies between models and experiments that are not apparent from firing rates alone, providing additional constraints on model parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C63 represent a key conceptual conclusion supported by the entire body of work, particularly the findings that the original model matched some firing rate features but failed on CSD, and that feedback was necessary for CSD but not obviously required from firing rates alone. This is a major methodological contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The model architecture consists of 230,924 neurons total, including 51,978 biophysically detailed multicompartment neurons in a 400 \u03bcm radius core and 178,946 LIF neurons in a surrounding annulus. The model includes 17 cell type classes and receives input from 17,400 LGN units and a 1 kHz Poisson background source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C48-C51 provide technical specifications of the model that are clearly stated in the methods and are internally consistent. These are descriptive claims about model architecture that are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C52",
+      "C53",
+      "C54",
+      "C56"
+    ],
+    "result": "The experimental dataset consists of Neuropixels recordings from 58 mice (44 retained for CSD analysis after quality control) across multiple visual areas during full-field flash presentations. CSD was calculated from LFP using the delta iCSD method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C52-C54, C56 describe the experimental dataset and methods. These are straightforward descriptive claims supported by the data availability and methods sections, with appropriate citations to the public dataset (Siegle et al. 2021) and methods (Pettersen et al. 2006).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "The V1 model composition reflects the cellular composition in mouse V1, with inhibitory cells making up about 15% and excitatory cells about 85% of total cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is a straightforward description of model composition stated to reflect biological reality. This is supported by the model description and is consistent with known cortical composition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "The model is freely accessible to the community to facilitate further applications of biologically detailed modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is a statement about data availability that can be verified through the provided DOI link. This supports reproducibility and open science practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "LFP is more easily and stably recorded in chronic settings than spikes, making it promising for neuroprosthetic devices and monitoring neural activity in human recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by multiple citations to prior work on LFP applications. This is a well-established principle in the field that provides motivation for the study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1963 @@
+{
+  "submission": {
+    "id": "b7bbfb6d-d0a1-4284-899a-715137b13371",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T01:43:58.473206Z",
+    "updated_at": "2025-12-04T01:43:58.473206Z"
+  },
+  "content": [
+    {
+      "id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "submission_id": "b7bbfb6d-d0a1-4284-899a-715137b13371",
+      "content_type": "manuscript",
+      "content_text": "# The impact of local genomic properties on the evolutionary fate of genes\n\n## Authors\n\n- Yuichiro Hara<sup>1</sup> ([ORCID: 0000-0002-7817-8963](https://orcid.org/0000-0002-7817-8963)) \u2020\n- Shigehiro Kuraku<sup>2</sup> ([ORCID: 0000-0003-1464-8388](https://orcid.org/0000-0003-1464-8388))\n\n### Affiliations\n\n1. Research Center for Genome & Medical Sciences, Tokyo Metropolitan Institute of Medical Science Tokyo Japan ([ROR:00vya8493](https://ror.org/00vya8493))\n2. Molecular Life History Laboratory, Department of Genomics and Evolutionary Biology, National Institute of Genetics Mishima Japan ([ROR:02xg1m795](https://ror.org/02xg1m795))\n3. Department of Genetics, Sokendai (Graduate University for Advanced Studies) Mishima Japan ([ROR:0516ah480](https://ror.org/0516ah480))\n4. RIKEN Center for Biosystems Dynamics Research Kobe Japan ([ROR:023rffy11](https://ror.org/023rffy11))\n\n\u2020 Corresponding author\n\n## Abstract\n\nFunctionally indispensable genes are likely to be retained and otherwise to be lost during evolution. This evolutionary fate of a gene can also be affected by factors independent of gene dispensability, including the mutability of genomic positions, but such features have not been examined well. To uncover the genomic features associated with gene loss, we investigated the characteristics of genomic regions where genes have been independently lost in multiple lineages. With a comprehensive scan of gene phylogenies of vertebrates with a careful inspection of evolutionary gene losses, we identified 813 human genes whose orthologs were lost in multiple mammalian lineages: designated \u2018elusive genes.\u2019 These elusive genes were located in genomic regions with rapid nucleotide substitution, high GC content, and high gene density. A comparison of the orthologous regions of such elusive genes across vertebrates revealed that these features had been established before the radiation of the extant vertebrates approximately 500 million years ago. The association of human elusive genes with transcriptomic and epigenomic characteristics illuminated that the genomic regions containing such genes were subject to repressive transcriptional regulation. Thus, the heterogeneous genomic features driving gene fates toward loss have been in place and may sometimes have relaxed the functional indispensability of such genes. This study sheds light on the complex interplay between gene function and local genomic properties in shaping gene evolution that has persisted since the vertebrate ancestor.\n\n## Introduction\n\nIn the course of evolution, genomes continue to retain most genes with occasional duplications, while losing some genes (Blomme et al., 2006; Fern\u00e1ndez and Gabald\u00f3n, 2020; Shen et al., 2018). This retention and loss can be interpreted as gene fate; genes are stably retained in the genome, but some factors may cause them to transition to a state where deletion occurs. Accordingly, identification of the factors allowing gene loss may facilitate our understanding of gene fate. Gene retention or loss has generally been considered to depend largely on the functional importance of the particular gene from the perspective of molecular evolutionary biology (Albalat and Ca\u00f1estro, 2016; Bartha et al., 2018; Blanc et al., 2012; Liu et al., 2015; Olson, 1999; Sharma et al., 2018; Shen et al., 2018). Genes with indispensable functions have usually been retained with highly conserved sequences in genomes through rapid elimination of alleles that impair gene functions (Hirsh and Fraser, 2001; Krylov et al., 2003; Miyata et al., 1980; P\u00e1l et al., 2006). On the contrary, genes with less important functions are likely to accept more mutations and structural variations, which can degrade the original functions, leading to gene loss through pseudogenization or genomic deletion (Jordan et al., 2002; Yang et al., 2003). To date, gene loss has been imputed to the relaxation of functional constraints of individual genes. Gene loss has further been revealed to drive phenotypic adaptation in various organisms (Albalat and Ca\u00f1estro, 2016; Olson, 1999), as well as in a gene knockout collection of yeasts in culture (Giaever and Nislow, 2014; Maclean et al., 2017).\n\nTo uncover the association between fates and functional importance of the genes, molecular evolutionary analyses have been conducted at various scales, from gene-by-gene to genome-wide. A number of studies have revealed that the genes with reduced non-synonymous substitution rates (or KA values) and ratios of non-synonymous to synonymous substitution rates (KA/KS ratios) are less likely to be lost (Jordan et al., 2002; Yang et al., 2003). A genome-wide comparison of duplicated genes in yeast revealed larger KA values for those lost in multiple lineages than those retained by all the species investigated (Byrne and Wolfe, 2007). Other comprehensive studies of gene loss across metazoans and teleosts revealed that the genes expressed in the central nervous system are less prone to loss (Fern\u00e1ndez and Gabald\u00f3n, 2020; Roux et al., 2017). These observations again suggest that gene fate depends on the functional constraints of a particular gene.\n\nBesides functional constraints, several studies have identified the genes lost independently in multiple lineages, revealing that the genomic regions containing these genes \u2018prefer\u2019 particular characteristics associated with structural instability (Cortez et al., 2014; Hughes et al., 2012; Lewin et al., 2021; Maeso et al., 2016). In mammals, tandemly arrayed homeobox genes derived from the Crx gene family were lost in multiple species (Lewin et al., 2021; Maeso et al., 2016). The findings suggest that genomic features containing tandem duplications facilitate unequal crossing over, leading to frequent gene loss. Mammalian chromosome Y, which contains abundant repetitive elements and continues to reduce in size, has lost a considerable number of genes (Cortez et al., 2014; Hughes et al., 2012). In the stickleback genome, a Pitx1 enhancer was independently lost in multiple lineages inhabiting freshwater due to its genomic location in a structurally fragile site, leading to recurrent loss of pelvic fins (Xie et al., 2019). Genes and genomic elements in such particular regions may be prone to loss in a more neutral manner than the relaxation of functional importance or via functional adaptations. Accordingly, these studies focusing on the particular genomic regions led us to search for the common features in genomes that potentially facilitate gene loss. Genome-wide scans have revealed heterogeneous distributions of a variety of sequence and structural features so far, for example, base composition (Bernardi and Bernardi, 1986; Cohen et al., 2005; Katzman et al., 2011), the frequency of repetitive elements (Korenberg and Rykowski, 1988; Medstrand et al., 2002), and DNA-damage sensitivity induced by replication inhibitors (Debatisse et al., 2012; Helmrich et al., 2006). However, the extent to which these characteristics are associated with gene fates has not been understood well at a genome-wide level.\n\nThe accumulation of near-complete genome assemblies for various organisms facilitates comprehensive taxon-wide analysis of gene loss (Fern\u00e1ndez and Gabald\u00f3n, 2020; Guijarro-Clarke et al., 2020; Rice and McLysaght, 2017). Along with this motivation, we recently performed a comprehensive analysis on the fate of paralogs generated via the two-round whole-genome duplications in early vertebrates (Hara et al., 2018a). The results revealed that the genes retained by reptiles but lost in mammals and Aves rapidly accumulated not only non-synonymous but also synonymous substitutions in comparison with the counterparts retained by almost all the vertebrates examined, indicating that those genes prone to loss show increasing mutation rates. Furthermore, these loss-prone genes were located in genomic regions with high GC contents, high gene densities, and high repetitive element frequencies. These findings suggest that the fates of those genes are influenced not only by functional constraints but also by intrinsic genomic characteristics. Because the findings were restricted to a set of particular genes, they prompted us to examine whether this trend is associated with gene fates on a genome-wide scale.\n\nIn this study, we inferred molecular phylogenies of vertebrate orthologs to systematically search for the genes harboring different fates in the human genome. We previously referred to the nature of genes prone to loss as \u2018elusive\u2019 (Hara et al., 2018a; Hara et al., 2018b). In this study, we define the elusive genes as those that are retained by modern humans but have been lost independently in multiple mammalian lineages. As a comparison of the elusive genes, we retrieved the genes that were retained by almost all of the mammalian species examined and defined them as \u2018non-elusive,\u2019 representing those persistent in the genomes. We conducted a careful search for gene loss to reduce the false discovery rate (FDR), which is usually caused by incomplete sequence information (Botero-Castro et al., 2017; Deutekom et al., 2019). By comparing the genomic regions containing these genes, we uncovered genomic characteristics relevant to gene loss. We associated the elusive genes with a variety of findings from deep sequencing analyses of the human genome, including transcriptomics, epigenomics, and genetic variations. These data assisted us to understand how intrinsic genomic features may affect gene fate, leading to gene loss by decreasing the expression level and eventually relaxing the functional importance of \u2018elusive\u2019 genes.\n\n## Results\n\n### Identification of human \u2018elusive\u2019 genes\n\nWe defined an \u2018elusive\u2019 gene as a human protein-coding gene that existed in the common mammalian ancestors but was lost independently in multiple mammalian lineages (Figure 1; see \u2018Materials and methods\u2019 for details). We searched for such genes by reconstructing phylogenetic trees of vertebrate orthologs and detecting gene loss events within the individual trees. To search for elusive genes, we paid close attention to distinguishing true evolutionary gene loss from falsely inferred gene loss caused by insufficient genome assembly, gene prediction, and orthologous clustering (Botero-Castro et al., 2017; Deutekom et al., 2019), as described below.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82290/elife-82290-fig1-v1.jpg)\n\n**Figure 1.:** (a) Pipeline of ortholog group clustering and gene loss detection. (b) Definition of an elusive gene schematized with ortholog presence/absence pattern referring to a taxonomic hierarchy. Red and orange crosses denote the gene loss in the common ancestor of a taxon and the loss specific to a single species, respectively. (c) A representative phylogeny of the elusive gene encoding Chitinase 3-like 2 (CHI3L2). Taxa shown in the tree were used to investigate the presence or absence of orthologs. The Sciuromorpha, Hystricognathi, Eulipotyphla, Carnivora, and Chiroptera are absent from the tree, indicating that the CHI3L2 orthologs were lost somewhere along the branches framed in gray in the tree. In addition, the orthologs of many members of the Myomorpha were not found, suggesting that gene loss occurred in this lineage.\n\nWe first produced highly complete orthologous groups comprised of nearly complete gene sets. We merged multiple gene annotations of a single species followed by assessments of the completeness of the gene sets (Figure 1a). Using these gene sets, we then created two sets of ortholog groups with different methods and merged them into a single set (Figure 1a). In searching for gene loss events, we restricted our study to those that occurred in the common ancestors of particular taxonomic groups. This procedure relieved false identifications of gene loss in a species or an ancestor of a lower taxonomic hierarchy caused by incomplete genomic information (Figure 1b).\n\nWe integrated gene annotations from Ensembl, RefSeq, and the sequence repositories of individual genome sequencing projects to produce gene annotations for 114 mammalian and 132 non-mammalian vertebrates. From these, we selected the annotations of 101 and 90 species, respectively, that exhibited high completeness in the BUSCO assessment (Sim\u00e3o et al., 2015; Supplementary Table S1 in Supplementary file 1a). Using these gene sets, clustering of ortholog groups was conducted by OrthoFinder, and these groups were integrated into the ortholog groups provided by the Ensembl Gene Tree. This integration resulted in 50,768 vertebrate ortholog groups. Phylogenetic tree inference of the integrated ortholog groups and pruning of the individual trees based on gene duplications resulted in 17,495 mammalian ortholog groups that contained human genes. We classified the mammalian species into 15 taxonomic groups ranging from order to family (listed in Table S1; Supplementary file 1a). For the individual mammalian orthologs, we searched for the taxa in which the gene was absent in all the species examined (Figure 1b). We interpreted this gene absence as an evolutionary loss that occurred in the common ancestor of the taxon. Validating the gene loss through an ortholog search in genome assemblies and synteny-based ortholog annotations, we extracted the ortholog groups that were retained by humans but were lost independently in the common ancestors of at least two taxa (Figure 1c). Hereafter we call the human genes belonging to these ortholog groups \u2018elusive genes.\u2019 To compare these, we also selected the ortholog groups that contained all of the mammals examined including single-copy human genes. We called these \u2018non-elusive genes.\u2019 This comprehensive scan of gene phylogenies resulted in 813 elusive and 8050 non-elusive genes (Supplementary Table S2; Supplementary file 2).\n\n### Genomic signatures of the human elusive genes\n\nThe loss-prone nature of the elusive genes suggests a relaxation of their functional constraints. To uncover the molecular evolutionary characteristics associated with each elusive gene, we computed synonymous and non-synonymous substitution rates in coding regions, namely KS and KA, respectively, between human and chimpanzee and mouse orthologs for the elusive and non-elusive genes. In addition, we computed nucleotide substitution rates for introns (KI) between human and chimpanzee (Pan troglodytes) orthologs and compared them between the elusive and non-elusive genes. The results showed larger KA values in the ortholog pairs of the elusive genes than in those of the non-elusive genes (Figure 2a, Figure 2\u2014figure supplement 1). This indicates a rapid accumulation of amino acid substitutions in the elusive genes, potentially accompanied by the relaxation of functional constraints. Our analysis further illuminated larger KS and KI values for the elusive genes than in the non-elusive genes (Figure 2b and c, Figure 2\u2014figure supplement 1). Importantly, the higher rate of synonymous and intronic nucleotide substitutions, which may not affect changes in amino acid residues, indicates that the elusive genes are also susceptible to genomic characteristics independent of selective constraints on gene functions.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82290/elife-82290-fig2-v1.jpg)\n\n**Figure 2.:** Distributions of non-synonymous, synonymous, and intronic nucleotide substitution rates, namely KA (a), KS (b), and KI (c) values, respectively, between the human\u2013chimpanzee orthologs of the elusive and non-elusive genes. Distribution of gene length (d) and GC content (e) of the human elusive and non-elusive genes. (f) Distribution of gene density in the genomic regions where the human elusive and non-elusive genes are located. The plots consist of 249 elusive and 5145 non-elusive genes that retained chimpanzee orthologs (a, b), 473 and 4626 of those which harbored introns aligned with the chimpanzee genome (c; see \u2018Materials and methods\u2019), and all of the 813 elusive and 8050 non-elusive genes (d\u2013f). Diamonds and bars within violin plots indicate the median and range from the 25th to 75th percentile, respectively.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82290/elife-82290-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Distributions of KA and KS values between the orthologs of human elusive and non-elusive genes of closely related vertebrates. Correction for multiple testing was performed for comparison in each species pair. Diamonds and bars within violin plots indicate the median and range from 25th to 75th percentile, respectively.\n\nTo further scrutinize the characteristics reflecting the genomic environment rather than gene function, we analyzed genomic characteristics that may distinguish the elusive from non-elusive genes. A comparison between these two categories revealed shorter gene-body lengths and higher GC contents of elusive rather than non-elusive genes (Figure 2d and e). Furthermore, a scan of intragenomic gene distribution revealed that the elusive genes were located in the genomic regions with high gene density compared with the non-elusive genes (Figure 2f). Our findings indicate that such elusive genes have distinct characteristics in the human genome. These genomic characteristics, as well as high nucleotide substitution rates, were consistent with the findings in our genome analyses using the amniote and elasmobranch genomes (Hara et al., 2018a; Hara et al., 2018b).\n\n### Tracing elusiveness back along the vertebrate evolutionary tree\n\nThe origins of the human elusive genes can be traced back along the evolutionary tree, at least to the mammalian common ancestor. To investigate possible antiquities of the genomic properties associated with elusive genes, we investigated their orthologs in non-mammalian vertebrates by scrutinizing the ortholog groups used for elusive gene identification. We found that 152 out of 813 elusive genes originated in mammalian lineages, and this proportion was larger than those of the elusive genes (65 out of 8050, p=2.50 \u00d7 10-110), indicating that the elusive genes are more abundant in recently born genes than non-elusive genes. We then selected 517 elusive and 7900 non-elusive genes that originated in the common ancestors of jawed vertebrates or earlier. These subsets allowed us to examine the degree of retention of non-mammalian vertebrate orthologs in the elusive and non-elusive genes. On average, approximately 40% of these elusive genes were found to be retained by non-mammalian vertebrates, while this proportion increased up to 90% for the non-elusive genes. (Figure 3\u2014figure supplement 1a). In the coelacanth, gar, and shark, the orthologs of the elusive genes were less frequently retained by all the species than those of the non-elusive ones (Figure 3\u2014figure supplement 1b). The results suggest that the origins of the loss-prone propensity of the elusive genes potentially date back to the period long before the emergence of the Mammalia.\n\nWe further examined the genomic characteristics associated with the human elusive genes in the vertebrate orthologs. In all the species examined, orthologs of the elusive genes exhibited high GC content and compact gene bodies. Additionally, in most of these species, the orthologs of elusive genes were located in genomic regions with high gene density compared with orthologs of the non-elusive genes (Figure 3, Figure 3\u2014figure supplement 2). In addition, we computed KS and KA values between the orthologs of the vertebrate species and their close relatives for elusive and non-elusive genes. In any of the species pairs except for avians, the orthologs of the elusive genes were found to harbor higher KA and KS values than those of the non-elusive gene orthologs (Figure 3, Figure 2\u2014figure supplement 1). These observations indicate that these genomic characteristics probably originated before the emergence of gnathostomes, a monophyletic group of chondrichthyan and bony vertebrates, and have been retained for approximately 500 million years.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82290/elife-82290-fig3-v1.jpg)\n\n**Figure 3.:** Retention of the genomic and evolutionary characteristics of the human elusive genes across vertebrates. The individual round squares with arrows indicate significant increases or decreases of the distribution of particular characteristics in the orthologs of the human elusive genes and their flanking regions compared with those of the non-elusive genes in these selected vertebrate genomes. For the chimpanzee and mouse genomes, KA and KS values were computed between the human elusive genes and the orthologs of these mammals. For non-mammalian species, these values were computed with ortholog pairs for the elusive/non-elusive genes between the corresponding species and their closely related species: turkey for chicken, green anole for central bearded dragon, and whale shark for bamboo shark. Distributions of these metrics for non-human species are shown in Figure 2\u2014figure supplement 1 and Figure 3\u2014figure supplement 2. Species name: mouse, Mus musculus; chicken, Gallus gallus; central bearded dragon, Pogona vitticeps; Western clawed frog, Xenopus tropicalis; coelacanth, Latimeria chalumnae; spotted gar, Lepisosteus oculatus; bamboo shark, Chiloscyllium plagiosum.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82290/elife-82290-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Number of retained orthologs of the human elusive and non-elusive genes that originated in the common ancestors of the gnathostomes or older age. (b) Intersections of the retained orthologs across three vertebrates distantly related to modern humans (b). The p-value of the 2\u00d72 contingency table given by Fisher\u2019s exact test is 9.70\u00d710\u201348.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82290/elife-82290-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Distribution of (a) gene length and (b) GC content of the orthologs of the human elusive and non-elusive genes and (c) distribution of the gene density of the genomic regions where the orthologs of the human elusive and non-elusive genes are located. For the individual genomic characteristics, correction for multiple testing was performed for comparison in each species. Numbers of the orthologs of the elusive and non-elusive genes re indicated in Figure 3\u2014figure supplement 1. Diamonds and bars within violin plots indicate the median and range from the 25th to 75th percentile, respectively.\n\n### Abundant polymorphism in elusive genes\n\nThe observation of large KS and KA values in the elusive genes prompted us to examine the extent to which these genes have accommodated genetic variations in modern humans. Large-scale human genome resequencing projects have identified a huge number of genetic variations, from rare to common, and from single-nucleotide variants (SNVs) to chromosome-scale structural variants, facilitating tackling this issue. We retrieved copy number variants (CNVs) and rare SNVs in the human genome from the Database of Genomic Variants, release 2016-08-31 (MacDonald et al., 2014) and dbSNP release 147 (Sherry et al., 2001), respectively, and computed their densities in the individual genic regions. We found that the genic regions of the human elusive genes contained abundant rare SNVs, as well as deletion and duplication CNVs, compared with those of the non-elusive genes (Figure 4a\u2013c). This result suggests that genomic regions containing the elusive genes are not only prone to loss but also to duplication.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82290/elife-82290-fig4-v1.jpg)\n\n**Figure 4.:** Comparison of the density of rare single-nucleotide variants (SNVs) (a), deletion copy number variants (CNVs) (b), duplication CNVs (c), and Z-scores of synonymous (d), missense (e), and loss-of-function variants (f). We used opposite numbers of the Z-scores in d\u2013f so that the elusive genes have higher values than non-elusive genes as in Figure 2a, b, c, e, f and Figure 3a\u2013c. (a\u2013c) 813 elusive genes and 8050 non-elusive genes were used. (d\u2013f) 544 elusive genes and 7303 non-elusive genes for which genetic variants were available in GnomAD were used. Diamonds and bars within violin plots indicate the median and range from 25th to 75th percentile, respectively.\n\nTo evaluate the functional consequences of abundant genetic variants in the elusive genes, we investigated genetic variations stored in the gnomAD v. 2.1 database, a repository containing >120,000 exome and >15,000 whole-genome sequences of human individuals (Karczewski et al., 2021). This database classifies SNVs in coding regions into three categories\u2014synonymous, missense, and loss-of-function\u2014and the loss-of-function category contains nonsense mutations, frameshift mutations, and mutations in splicing junctions. The gnomAD site computes a Z-score, an index representing the abundance of SNVs for individual genes; positive and negative values denote fewer or more mutations in a coding region than expected, respectively (Figure 4d\u2013f). Accordingly, the Z-score for nonsense mutations and loss-of-function mutations of the individual genes indicates the degree of natural selection: larger values demonstrate genes subjected to purifying selection, while smaller ones suggest functional relaxation. We found lower Z-scores of missense and loss-of-function mutations (higher opposite numbers of Z-scores in Figure 4e and f) in the human elusive genes than in the non-elusive genes, suggesting that the elusive genes are more functionally dispensable and potentially tolerable to harmful mutations. Additionally, opposite numbers of Z-scores of synonymous mutations of the human elusive genes were higher than those of the non-elusive genes (Figure 4d). This confirms the high mutability of genomic regions containing elusive genes, as observed in the KS values.\n\n### Transcriptomic natures of elusive genes\n\nTo further investigate how the human elusive genes have decreased functional essentiality, we examined their expression profiles. For this purpose, we compared gene expression profiles of the 54 adult tissues from the GTEx database v. 8 (The GTEx Consortium et al., 2020) between the elusive and non-elusive genes. For individual genes, we computed the maximum transcription per million (TPM) values among these tissues as the expression quantity level. For expression diversities, we employed Shannon\u2019s diversity index H\u2032, which is often utilized as an index of species diversity in the ecological literature, based on the proportion of TPM values across the 54 tissues.\n\nAs shown in the density scatter plots of the individual genes displaying these two indicators in Figure 5, most of the non-elusive genes possessed large maximum TPM and H\u2032 values. Thus, most non-elusive genes are ubiquitously expressed at certain levels. By contrast, the density plot of the elusive genes displayed an additional high-density spot with small TPM and H\u2032 values, indicating that the genes in this spot were not expressed, at least in adult tissues. The plot also showed another broad dense area of small H\u2032 values, which contained the genes expressed in a single or a few tissues. A similar analysis was performed with the fetal single cell RNA-seq data (Cao et al., 2020), revealing that the averaged expression profiles of the elusive and non-elusive genes for the 172 cell types were concordant with those of the adult tissues (Figure 5). Our findings demonstrate that some elusive genes harbor low-level and spatially restricted expression profiles, that is, less pleiotropic states, which are rarely observed in the non-elusive genes.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/82290/elife-82290-fig5-v1.jpg)\n\n**Figure 5.:** The figure shows density scatter plots of the expression quantity and divergence of elusive and non-elusive genes. The numbers of the elusive/non-elusive genes and those for which the expression quantities were available are indicated in each panel. p-values were computed via 2 \u00d7 2 contingency tables presenting numbers of elusive and non-elusive genes with H\u2032 < 1 and H\u2032 \u2265 1. The median transcription per million (TPM) value of each of the adult tissue across individuals was retrieved from the GTEx database (The GTEx Consortium et al., 2020), and normalized TPM values of the fetal cell types were retrieved from the Descartes database (Cao et al., 2020). For the individual genes, maximum TPM and Shannon\u2019s H\u2032 values were computed using these processed TPM values.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82290/elife-82290-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Density scatter plots of the expression quantity and divergence of elusive and non-elusive genes. The total numbers of the elusive/non-elusive genes and the number of them for which expression data were available are indicated in each panel. p-values were computed via 2 \u00d7 2 contingency tables presenting numbers of elusive and non-elusive genes with H\u2032 < 1 and H\u2032 \u2265 1. Correction for multiple testing was performed for comparison in each species. The transcription per million (TPM) values of the fetal cell types were retrieved from the Bgee database (Bastian et al., 2021). See the details in Figure 5.\n\n### Epigenetic nature of elusive genes\n\nOur finding of the low-level and spatially restricted expression patterns of elusive genes prompted us to explore epigenetic properties involved in this transcriptional regulation. Therefore, we retrieved epigenetic data on a variety of human cell lines from a few regulatory genome databases including ENCODE, a repository that stores the comprehensive annotations of functional elements in the human genome (The ENCODE Project Consortium, 2012). Using this information, we characterized the epigenetic features of the genomic regions containing elusive genes (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/82290/elife-82290-fig6-v1.jpg)\n\n**Figure 6.:** Comparison of the distribution of ATAC-seq peak density (a), length of the topologically associating domains (TADs) including the elusive or non-elusive genes (b), the replication timing indicator based on Repli-seq (c), and overlap with the lamina-associated domains (LADs) computed from Lamin B1 ChIP-seq data. All of the analyses were performed by using the processed sequencing data publicly available (Table S3; Supplementary file 1b). (d) ATAC-seq and Hi-C were performed with A549 cells, Repli-seq was performed with HepG2 cells, and Lamin B1 ChIP-seq was performed with HAP-1 cells. In the elusive gene panels (orange bar), purple bar indicates the elusive genes with restricted expressions (H\u2032 < 1; Figure 5). p-values for individual panels indicate the comparison between the elusive (813) and non-elusive (8050) genes and the one between the elusive genes with H\u2032 < 1 (150) and those with H\u2032 \u2265 1 (589). The results for other cells are shown in Figure 6\u2014figure supplements 1\u20134 For the individual epigenetic characteristics, correction for multiple testing was performed for comparison in each cell cultures.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82290/elife-82290-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Comparison of the distribution of ATAC-seq peak density between the elusive and non-elusive genes across multiple cell types. In the elusive gene panels (orange bar), purple bar indicates the elusive genes with restricted expressions (H\u2032 < 1; Figure 5). p-values for individual panels indicate the comparison between the elusive (813) and non-elusive (8,050) genes and the one between the elusive genes with H\u2032 < 1 (150) and those with H \u2032 \u22651 (589). Correction for multiple testing was performed for comparison in each cell culture.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82290/elife-82290-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Comparison of the distribution of length of TADs including the elusive or non-elusive genes across multiple cell types. In the elusive gene panels (orange bar), purple bar indicates the elusive genes with restricted expressions (H\u2032 < 1; Figure 5). p-values for individual panels indicate the comparison between the elusive (813) and non-elusive (8050) genes and the one between the elusive genes with H\u2032 < 1 (150) and those with H\u2032 \u22651 (589). Correction for multiple testing was performed for comparison in each cell culture.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/82290/elife-82290-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Comparison of the distribution of replication timing indicator based on Repli-seq between the elusive and non-elusive genes across multiple cell types. In the elusive gene panels (orange bar), purple bar indicates the elusive genes with restricted expressions (H\u2032 < 1; Figure 5). p-values for individual panels indicate the comparison between the elusive (813) and non-elusive (8050) genes and the one between the elusive genes with H\u2032 < 1 (150) and those with H\u2032 \u2265 1 (589). Correction for multiple testing was performed for comparison in each cell culture.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/82290/elife-82290-fig6-figsupp4-v1.jpg)\n\n**Figure 6\u2014figure supplement 4.:** Comparison of frequency of overlap with LADs computed from Lamin B1 ChIP-seq data between the elusive and non-elusive genes across multiple data. In the elusive gene panels (orange bar), purple bar indicates the elusive genes with restricted expressions (H\u2032 < 1; Figure 5). p-values for individual panels indicate the comparison between the elusive (813) and non-elusive (8050) genes and the one between the elusive genes with H\u2032 < 1 (150) and those with H\u2032 \u2265 1 (589).\n\n![Figure 6\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/82290/elife-82290-fig6-figsupp5-v1.jpg)\n\n**Figure 6\u2014figure supplement 5.:** Comparison of the distribution of ATAC-seq peak density between the orthologs of elusive (210) and non-elusive (7218) genes in the chicken genome. Correction for multiple testing was performed for comparison in each cell cultures. Diamonds and bars within violin plots indicate the median and range from the 25th to 75th percentile, respectively.\n\nWe compared peak densities based on the Assay for Transposase-Accessible Chromatin using sequencing (ATAC-seq), an indicator of accessible chromatin regions in the genome, in gene bodies and flanking regions between the elusive and non-elusive genes. In all of the eight cell lines examined (11 samples in total), the results showed fewer ATAC-seq peaks in the genomic regions including the elusive genes than in those including non-elusive genes, indicating that the elusive genes are likely to reside in inaccessible genomic regions (Figure 6a, Figure 6\u2014figure supplement 1). We also searched for topologically associating domains (TADs), genomic elements with frequent physical self-interaction potentially acting as promoter-enhancer contacts (Rao et al., 2014) that included either the elusive or non-elusive genes. The result showed that a higher fraction of the elusive genes resided outside of the TADs than the non-elusive genes for all the eleven cell lines investigated (Figure 6b, Figure 6\u2014figure supplement 2). Furthermore, the elusive genes were located in shorter TADs. These observations suggest that the elusive genes are unlikely to be regulated by distant regulatory elements compared with the non-elusive genes (Figure 6b, Figure 6\u2014figure supplement 2).\n\nOur investigations extended to the association of the elusive genes with further global regulation of genomic structures. We compared the percentage normalized signal of Repli-seq (Hansen et al., 2010), a high-throughput sequencing for quantifying DNA replication time as a function of genomic position, between the elusive and non-elusive genes. The results showed that elusive genes were prone to late replication in all of the 15 cell lines examined (Figure 6c, Figure 6\u2014figure supplement 3). Late-replicating regions are frequently located at the nuclear periphery and often interact with the nuclear lamina. Therefore, we examined the nuclear position of the genomic regions including the elusive genes by referring to the lamina associating domains (LADs) that were identified by the ChIP-seq reads for Lamin B1 (van Schaik et al., 2020; Zheng et al., 2018). Compared with the non-elusive genes, the elusive genes were found to be enriched in LADs for all of the four cell lines examined (Figure 6d, Figure 6\u2014figure supplement 4), consistent with their late replication timings (van Steensel and Belmont, 2017).\n\nWe further investigated the association of the restricted expressions of the elusive genes with epigenetic features. From 739 elusive genes whose expressions were quantified in the GTEx database, we classified the elusive genes into two groups based on the pleiotropy in terms of gene expressions: that is, 589 elusive genes with Shannon\u2019s diversity index H\u2032 \u2265 1 were ubiquitously expressed, that is, more pleiotropic, and 150 of those with H\u2032 < 1 were expressed in only a few or none of the tissues examined, that is, less pleiotropic (Figure 5). Importantly, all of the four epigenetic features of the elusive genes with H\u2032 < 1 were more pronounced than those with H\u2032 \u2265 1: sparse ATAC-seq peaks, short TADs, late replication timings, and significant overlaps with LADs (Figure 6, Figure 6\u2014figure supplements 1\u20134). This observation suggests that low-level and spatially restricted expressions of the elusive genes are associated with epigenetic features of these genomic regions.\n\nHigh GC contents in genomic regions potentially hinder identifying an epigenetic feature by short-read sequencing because of the underrepresentation of sequence reads by amplification-based sequencing libraries. This bias might lead to sparse distributions of the ATAC-seq peaks and Hi-C contacts in the genomic regions that contain the elusive genes. However, only 3.00 and 9.00% of the elusive genes with H\u2032 < 1 and H\u2032 \u2265 1 were located in regions of extremely high GC content (>60%), respectively, showing that the elusive genes H\u2032 \u2265 1 rather tend to contain more genes with high GC content (p=0.0176). Thus, the depleted epigenomic features in the genomic regions containing elusive genes are unlikely to be false discoveries caused by a technical issue, namely the underrepresentation of the sequencing reads.\n\n### Elusive gene orthologs in the chicken microchromosomes\n\nThe heterogeneous locations of the elusive genes can also be examined from a chromosome-scale viewpoint (Figure 7, Figure 7\u2014figure supplement 1). The visualization via chromosome ideograms indicated an overlap of the elusive genes with the genomic regions enriched for the genes whose chicken orthologs are on the microchromosomes (chromosomes 11\u201338 and W), providing a statistical support for this trend (p=0.0175; Figure 7a). Indeed, microchromosomes of the chicken and other vertebrate exhibit genomic features including high GC content, high gene density, and rapid nucleotide substitutions in comparison with their macrochromosomes (Groenen et al., 2009; International Chicken Genome Sequencing Consortium, 2004; Schield et al., 2019; Waters et al., 2021), which also characterize genomic regions containing elusive genes. On the contrary, previous studies revealed that the chicken microchromosomes are preferentially located in the A compartments of the nucleus (Perry et al., 2020) and are early replicating (McQueen et al., 1998). These characteristics associated with the microchromosomes were opposite characteristics to the human genomic regions preferentially containing the elusive genes.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/82290/elife-82290-fig7-v1.jpg)\n\n**Figure 7.:** Red and dark blue horizontal bars beside the chromosome ideogram represent the location of elusive genes with restricted expression (Shannon\u2019s H\u2032 < 1) and the other elusive genes, respectively. (a) The chromosome diagrams are colored according to the density of the genes that harbor chicken orthologs in microchromosomes (number of genes/Mb). 93 and 68 elusive genes were orthologous to the chicken genes in macro- and microchromosomes, respectively, and 4211 and 2078 non-elusive genes were orthologous to the chicken genes in macro- and microchromosomes, respectively. This indicates that the chicken orthologs of the elusive genes are abundant in microchromosomes compared with those of the non-elusive genes (p=0.0175). (b) Gray regions in the diagram indicate orthologous regions of microchromosomes in the ancestors of gnathostomes (Nakatani et al., 2021). 395 and 296 elusive genes were located in the genomic regions corresponding to ancient macro- and microchromosomes, respectively, and 5950 and 1929 non-elusive genes were located in the genomic regions corresponding to these ancient chromosomes. The result recapitulates the biased localization of the elusive genes on microchromosomes (p=9.50 \u00d7 10-24). The chromosome diagrams were drawn using RIdeogram (Hao et al., 2020).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82290/elife-82290-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Red and dark blue horizontal bars on the side of the chromosome diagram represent the location of elusive genes with restricted expression (Shannon\u2019s H\u2032 < 1) and the other elusive genes, respectively. (a) Karyotypes are shown by G-banding. Red regions indicate centromeres, acrocentric regions, and variable-length regions. (b) The chromosome diagrams are colored according to gene density (number of genes/Mb). The chromosome diagrams were drawn using RIdeogram (Hao et al., 2020).\n\nWe further analyzed the ATAC-seq peaks in the chicken genome and found more peaks in the genomic regions including the elusive gene orthologs than in those containing non-elusive gene orthologs in four samples out of eight and no significant differences in the peak density in the four remaining samples (Figure 6\u2014figure supplement 5). These observations indicate that, in an epigenetic manner, the chicken orthologs of the elusive genes are not regulated to reduce their expression level. This idea was further supported by a comparison of the expression profiles between the chicken orthologs of the elusive and non-elusive genes, showing no significant differences between them (Figure 5\u2014figure supplement 1). Our analyses indicate that the genomic features of the elusive genes such as high GC and high nucleotide substitutions do not always correlate with a reduction in pleiotropy of gene expression that potentially leads to an increase in functional dispensability in the course of vertebrate evolution. In addition, avian orthologs of the elusive genes did not show higher KA and KS values than those of the non-elusive genes (Figure 3, Figure 2\u2014figure supplement 1), likely consistent with not significant difference in gene expression levels between them in the species (Figure 5\u2014figure supplement 1; Cherry, 2010; Zhang and Yang, 2015). We further compared expression profiles between the orthologs of the human elusive and non-elusive genes in several non-mammalian vertebrates and found that the orthologs of the elusive genes tend to exhibit low pleiotropy in green anole, coelacanth, and gar but not in Western clawed frog. The result suggests that the low pleiotropy of the elusive genes has persisted at least since the bony vertebrate ancestors. With respect to the chicken genome, the \u2018elusive\u2019 features for the genes orthologous to human elusive genes might have been relaxed\u2014functional importance of the orthologs has increased\u2014during evolution leading to chicken.\n\n## Discussion\n\nHere we identified elusive genes that were lost in multiple lineages during mammalian evolution using a comprehensive scan of gene phylogenies. To identify gene loss events, absence of evidence (i.e. missing genes caused by incomplete genome assemblies and gene annotations) should be reviewed meticulously (Deutekom et al., 2019). Additionally, gene loss might be detected erroneously because of failure in similarity searches for orthologs of rapidly evolving genes (Moyers and Zhang, 2015). In this study, we aimed to reduce these false discoveries through our multifaceted approaches (Figure 1). We selected those species with highly complete gene annotations through integration of multiple gene annotations. Using these improved gene annotations, we created orthologous groups by employing a highly sensitive homology search with MMSeqs2 (Steinegger and S\u00f6ding, 2017) and merged them into those identified in the Ensembl database. Furthermore, we restricted the loss events that were observed as gene absence in all species examined within all hierarchical levels of the selected taxonomic groups (Figure 1b). This absence is likely to have occurred as a gene loss in the common ancestor of the particular taxon rather than as a false discovery of gene loss in the individual species independently. Genuine continuous (e.g. telomere-to-telomere) genome assemblies are now available using modern sequencing technologies (Nurk et al., 2022). These genomic assemblies may help relieve the labor of examining for information losses, thereby facilitating the identification of genuine gene loss in any given species.\n\nIn the human genome, the elusive genes and their flanking regions harbor particular characteristics, including high GC content and high gene density, that may have originated long before the emergence of mammals (Figure 3). Frequent synonymous variations across modern humans in the elusive genes, consistent with higher synonymous substitution rates between the vertebrate orthologs, suggest that the genomic regions including elusive genes have been subject to rapid evolution for approximately 500 million years (Figures 2 and 4). Our findings indicate that heterogeneous genomic characteristics potentially affect the fate of genes at the latest period of vertebrate evolution. Analyses with large numbers of germline mutations in the human genome have illustrated the heterogeneity of mutation rates (Campbell and Eichler, 2013; Seplyarskiy and Sunyaev, 2021; Terekhanova et al., 2017). High GC content in the elusive genes may have facilitated an elevation of the mutation rate, as observed in the enrichment of rare variants in high-GC regions in the human genome (Schaibley et al., 2013). In addition, some of the elusive genes appear to have retained particular epigenetic marks including sparse ATAC-seq peaks, late replication timings, and location within LADs (Figure 6\u2014figure supplements 1\u20134); these epigenetic marks are relevant to an increase in the mutation rate. Genomic regions with late replication timing exhibit increased mutation rates because of their unstable structure during the S-phase of the cell cycle (Koren et al., 2012; Stamatoyannopoulos et al., 2009). LADs retain more G-to-T mutations because of their susceptibility to oxidative damage in the nuclear periphery resulting in high levels of 8-oxoguanine (Yoshihara et al., 2014). Close coordination of the studies on gene evolution with germline mutation repertoires and spectra, which can be approximated from the collection of de novo mutations obtained by trio sequencing, may further facilitate our understanding of gene fates driven by heterogeneous genomic features\u2014this would be viewed as \u2018mutation-driven\u2019 evolution (Nei, 2013).\n\nThe epigenetic marks of elusive genes are relevant to the suppression of gene expression (van Steensel and Belmont, 2017), and indeed, these genes harbor weakened and spatially restricted expression profiles (Figures 5 and 6 and Figure 6\u2014figure supplements 1\u20134). However, the genomic features associated with these epigenetic marks usually exhibit lower GC contents and reduced gene density (Gilbert et al., 2004; Rao et al., 2014; van Steensel and Belmont, 2017). This discrepancy may be caused in part by a gain of local heterochromatin accompanied by suppression of the expression of transposable elements, as observed in various eukaryotic genomes (Choi and Lee, 2020; Fiston-Lavier et al., 2007; Grewal and Jia, 2007; Rangasamy, 2013; Slotkin and Martienssen, 2007; Underwood et al., 2017). Previous analyses showed frequent heterochromatinization of the human genomic regions where KRAB zinc finger genes colocalize with L1 retrotransposons (Imbeault et al., 2017; O\u2019Geen et al., 2007; Vogel et al., 2006). One of the genomic regions found in human chromosome region 19p12 also contains many elusive genes (Vogel et al., 2006; Figure 7). Closer attention to the local gene and repeat contents including repetitive elements and tandem gene clusters might facilitate our understanding of heterochromatinization in restricted genomic regions, although we excluded such gene clusters in our search for elusive genes (Figure 1a).\n\nA chromosomal-scale view of the distribution of elusive genes illuminated their significant correlation with the genes whose chicken orthologs are located on microchromosomes (Figure 7a). More importantly, genomic regions rich in elusive genes were traced back to the microchromosomes of the ancestral gnathostomes by reconstructing chromosomes of the ancestral genomes (Figure 7b). This inference of ancestral karyotypes augments our observations that some elusive natures of genomic sequences have been retained for hundreds of millions of years (Figure 3). In other words, the result suggests that the disparity of genomic regions that allows the \u2018elusiveness\u2019 for the genes has been retained during vertebrate evolution. On the other hand, comparisons of the expression profiles between the orthologs of the elusive and non-elusive genes for non-mammalian vertebrates suggest that the orthologs of the elusive genes have been associated with a reduction in pleiotropy of gene expression since vertebrate ancestors but acquired the diverse expressions in chicken and frog (Figure 5\u2014figure supplement 1). Additionally, in the chicken genome, the diverse expressions of the chicken orthologs of the human elusive genes may be correlated with the abundance of ATAC-seq peaks (Figure 6\u2014figure supplement 5). These findings again suggest that the chicken orthologs of the human elusive genes have increased pleiotropy of gene expression, which may lead to a lineage-specific acquisition of functional indispensability. It should be noted that the choices of tissues used in these analyses were largely different between the human and non-mammalian vertebrates (Tables S3 and S4; Supplementary file 1b and c). The chicken ATAC-seq data could be obtained only from developing embryos, while the human ATAC-seq in ENCODE were performed with cell lines. Therefore, the aforementioned interpretation should be treated carefully.\n\nFinally, we note the potential evolutionary courses that facilitate the transition of gene fate from retention to loss. One possible course is a decrease in essential functions because of rapid sequence evolution in local genomic regions. The elusive genes located in those genomic regions with rapidly evolving characteristics are likely to accumulate neutral or even moderately harmful mutations in coding regions frequently, resulting in impaired essential functions. Another factor is the spatiotemporal suppression of gene expression via epigenetic constraints. Previous studies showed that lowly expressed genes are associated with low functional essentiality (Cherry, 2010; Gout et al., 2010), as shown for elusive genes in our study. Elusive genes with reduced pleiotropy may have limited opportunities to function, potentially leading to loss of their important roles. The extent of these evolutionary forces may have varied with time and lineages, resulting in a patchy loss of elusive genes phylogenetically. Interestingly, a recent large-scale scan of de novo mutations in Arabidopsis indicates the association of mutation rates with epigenetic features and functional essentiality of genes (Monroe et al., 2022). Further investigation of the association of genes with the surrounding genomic regions in various taxa may provide a common understanding of genomic and epigenomic features that potentially alter the fate of genes. Although epigenetic features are plastic, our findings indicate that the disparities of genomic regions are reflected in the heterogeneity of evolutionary forces and have been retained for hundreds of millions of years. This idea prompts us to explore evolutionary constraints on more global genomic regions that are potentially associated with structural characteristics including chromosomal composition and locations within the nucleus.\n\n## Materials and methods\n\n### Sequence retrieval\n\nWe retrieved genome assemblies and gene annotations of 114 mammals and 132 non-mammal vertebrates from RefSeq (accessed on April 9, 2018), Ensembl release 92, and the repositories of the individual genome projects (Supplementary Table S1 in Supplementary file 1a). Gene annotations for a single species from multiple repositories were integrated into one as follows. When gene annotations of multiple repositories were referring to the same version of the genome assembly, the annotation GTF files were merged with the \u2018cuffcompare\u2019 tool (Trapnell et al., 2012). Otherwise, translated amino acid sequences were clustered by CD-HIT v. 4.6.4 (Fu et al., 2012) with 100% sequence similarity, and the representative sequence for each cluster was retrieved by assuming that each cluster represented a single locus. Subsequently, we selected the canonical amino acid sequence for each locus: canonical peptides of the Ensembl genes were retrieved from the Ensembl database; for other resources, the longest amino acid sequence from the isoforms of a locus was chosen. The completeness of the gene annotations was performed on the gVolante web server with assessments by BUSCO v.2 (Sim\u00e3o et al., 2015) by referring to the vertebrate ortholog sets provided by BUSCO and CVG (Hara et al., 2015). The gene annotations of mammals, birds, and ray-finned fishes that had fewer than 1% missing genes, as well as those of the other vertebrates with fewer than 3% missing genes, were selected. Exceptionally, the gene annotations of Gavialis gangeticus (Reptilia; CVG missing ratio 3.86%), Paroedura picta (Reptilia; BUSCO vertebrate ortholog missing rate 3.25%), and Scyliorhinus torazame (Chondrichthyes; BUSCO vertebrate ortholog missing rate 4.45%) were added. Finally, the amino acid sequence set of 90 mammals and 101 non-mammalian vertebrates was subjected to t ortholog clustering. We also retrieved coding nucleotide sequences of the canonical amino acid sequences.\n\n### Ortholog clustering and tree inference\n\nWe retrieved gene trees of human protein-coding genes and their homologs from Ensembl Gene Tree release 92. From these gene trees, we constructed an amino acid sequence set of the homologs consisting of the species selected in the above section. This sequence set, restricted to Ensembl sequences only, was used as the \u2018backbone\u2019 of the ortholog set of all the selected species. In addition, we generated ortholog groups for all the species used by employing OrthoFinder2 v. 2.3.3 (Emms and Kelly, 2019) based on the similarity of amino acid sequences: a sequence similarity search was performed using MMSeqs2 v. 2339462c06eab0bee64e4fc0ebebf7707f6e53fd (Steinegger and S\u00f6ding, 2017). The Ensembl and OrthoFinder ortholog sets were then merged to create the united set of ortholog groups, yielding 50,768 vertebrate ortholog groups.\n\nThe integrated ortholog groups were then subjected to molecular phylogenetic analysis. Amino acid sequences of the individual groups were aligned with MAFFT v. 7.402 (Katoh and Standley, 2013), and ambiguous alignment sites were removed with trimAl v1.4 (Capella-Guti\u00e9rrez et al., 2009). Phylogenetic trees were inferred with IQ-Tree v. 1.6.6 (Nguyen et al., 2015) by selecting the optimal amino acid substitution model with ModelFinder (Kalyaanamoorthy et al., 2017) implemented in the IQ-Tree tool for each sequence alignment. In the inferred phylogenetic trees, ambiguously bifurcated nodes\u2014those with branch lengths less than 0.0025\u2014were collapsed into a multifurcational node by the \u2018di2multi\u2019 function implemented in ape v. 5.5 (Paradis and Schliep, 2019). The trees were then rooted with the automatic rooting function \u2018get_age_balanced_outgroup\u2019 implemented in ete3 v. 3.1.1 (Huerta-Cepas et al., 2016) to minimize any discrepancy of tree topologies with the taxonomic hierarchy of the species included. Using the ortholog groups, the age of individual genes was estimated by inferring the oldest evolutionary lineage in the gene trees. We also adopted the gene age instructed by the Ensembl Gene Tree, wherever it shows an older age.\n\n### Identification of elusive genes in the human genome\n\nFor the individual trees, orthologs of the human genes were detected by the \u2018get_my_evol_events\u2019 function in ete3 (Huerta-Cepas et al., 2007). This function inferred gene duplication nodes in the rooted trees, resulting in separation of the trees into 17,495 subtrees of mammalian ortholog groups containing human genes. The ortholog information was referenced to extract the species with no orthologs to humans. This absence was further assessed by the ortholog annotation of human genes in the Ensembl Gene Tree database.\n\nWe selected taxonomic groups for the individual mammalian ortholog groups in which the orthologs were missing in all the species examined (Table S1; Supplementary file 1a). We restricted our study to gene losses that were likely to have occurred in the common ancestor of particular taxonomic groups, rather than those arising from the incompleteness of gene annotations. When a gene was missing in all the taxonomic groups in the same hierarchy, we considered that the gene was lost in the common ancestor of these groups. Finally, we found 1233 human genes belonging to the ortholog groups that were absent in two or more taxonomic groups and defined them as elusive genes. The gene loss events inferred by molecular phylogeny were further assessed by synteny-based ortholog annotations implemented in RefSeq, as well as a homolog search in the genome assemblies (Table S1; Supplementary file 1a) with TBLASTN v2.11.0+ (Altschul et al., 1997) and MMSeqs2 (Steinegger and S\u00f6ding, 2017) referring to the latest RefSeq gene annotations (last accessed on December 2, 2022). This procedure resulted in the identification of 813 elusive genes that harbored three or fewer duplicates. Similarly, we extracted 8050 human genes whose orthologs were found in all the mammalian species examined and defined them as non-elusive genes. Because these elusive and non-elusive genes were identified in the GRCh38 human genome assembly, we performed the following analyses using this assembly.\n\n### Extraction of genomic and molecular evolutionary characteristics\n\nWe calculated the GC content of a gene by using its genomic region including introns and untranslated regions (UTRs). To calculate individual gene densities, we extracted genomic regions containing the genes and their flanking three genes at both ends and divided them by seven. The orthologs of the elusive and non-elusive genes were retrieved from the aforementioned gene trees. We computed KA and KS values of the ortholog pairs of human\u2013chimpanzee, human\u2013mouse, chicken\u2013turkey (Meleagris gallopavo), central bearded dragon-green anole (Anolis carolinensis), and bamboo shark-whale shark (Rhincodon typus). To achieve this, we extracted ortholog groups that contained at least three of these ortholog pairs. Amino acid sequences of the human and the orthologs were aligned using MAFFT. Nucleotide sequence alignments of the coding regions were generated by \u2018back-translation\u2019 of the amino acid sequence alignments by trimAl, simultaneously removing ambiguous alignment sites. By employing coding nucleotide sequence alignments, numbers of synonymous and non-synonymous substitutions per site were computed using PAML v. 4.9a (Yang, 2007). To compute nucleotide sequence differences of the individual introns, we extracted 473 elusive and 4626 non-elusive genes that harbored introns aligned with the chimpanzee genome assembly. The nucleotide differences were calculated via the whole genome alignments of hg38 and panTro6 retrieved from the UCSC genome browser.\n\n### Multiomics analysis\n\nCommon and rare SNVs of the human populations were retrieved from dbSNP release 147 (Sherry et al., 2001), and human CNVs were obtained from the Database of Genomic Variants (DGV) release 2016-08-31 (MacDonald et al., 2014). The CNVs were classified into duplication and deletion variants, according to the annotation in DGV. The density of these variants in a gene was computed by dividing the number of variants identified in a gene region by its sequence length. Z-scores, indices of the tolerance against mutations, of synonymous, missense, and loss-of-function mutations of the individual genes were retrieved from gnomAD v. 2.1.1 (Karczewski et al., 2021).\n\nGene expression quantifications of adult and fetal tissues were retrieved from public databases. Expression profiles of adult tissues were obtained from the GTEx database v. 8 (The GTEx Consortium et al., 2020), computed by averaging TPM values across individuals. Expression profiles of fetal tissues were obtained from the Developmental Single Cell Atlas of gene Regulation and Expression (Descartes) portal (Cao et al., 2020) by calculating averaged TPM values of single cells. The maximum TPM values of the individual genes among the tissues were taken as the representative gene expression levels. As a proxy of the spatial diversity of gene expression, Shannon\u2019s species diversity index (H\u2032 values) was computed for each gene using the following equation:\n\n$$\nH_{i}`=-\\sum_{k=1}^{R}p_{i,k}lnp_{i,k}\n$$\n\nwhere Hi\u2032 represents the Shannon\u2019s index of ith gene in the list of the human genes, pi,k represents the proportion of the TPM values of the ith gene in the kth tissues/cell types, and R denotes the total number of tissues/cell types examined.\n\nThe ATAC-seq peaks and TAD boundaries of the human primary cells and culture strains were retrieved from the ENCODE 3 repository (Accession ID listed in Table S3; Supplementary file 1b; The ENCODE Project Consortium, 2012). Wavelet-smoothed signals of the ENCODE Repli-seq data were obtained from the UCSC genome browser (Hansen et al., 2010). The 20 kb bin-associated domains of LAD-seq that employed Lamin B1 antibodies (van Schaik et al., 2020) were retrieved from the 4D Nucleome Data Portal.\n\nWe also compared expression profiles and ATAC-seq peak densities between the orthologs of the elusive and non-elusive genes in non-mammalian vertebrates in a similar way as we did with the human datasets. Normalized gene expression profiles from RNA-seq data of normal adult tissues and early embryos for chicken, green anole, Western clawed frog, coelacanth, and spotted gar were obtained from the Bgee version 15 database (Bastian et al., 2021; Table S4; Supplementary file 1c). ATAC-seq narrow peak signals of chicken tissues were retrieved from NCBI GEO (Table S4; Supplementary file 1c) followed by coordination of the genome assembly with galGal5 with the UCSC liftOver tool (Hinrichs et al., 2006) as needed.\n\n### Code availability\n\nThe scripts for inferring gene presence and absence from gene trees were deposited in GitHub (https://github.com/yuichiroharajpn/ElusiveGenes, copy archived at Hara, 2022).\n\n### Statistical tests\n\nComparisons of the genomic characteristics between the elusive and non-elusive genes were tested statistically with the nonparametric Mann\u2013Whitney U test and Fisher\u2019s exact test implemented in R. Correction of multiple testing was performed using the Benjamini\u2013Hochberg FDR approach. We considered p\u2009<\u20090.05 to be statistically significant.\n",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "298af09e-b960-4e8e-bc39-39a5b0075d9e",
+      "submission_id": "b7bbfb6d-d0a1-4284-899a-715137b13371",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wenfeng Qian, https://ror.org/034t30j35 Chinese Academy of Sciences China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82290.sa0](https://doi.org/10.7554/eLife.82290.sa0)\n\nThe study provides a fundamental understanding of the driving forces behind gene losses in genome evolution and connects the propensity for gene losses to local genomic features like mutation rate and expression pattern. The methodology is compelling, as it identifies \"elusive human genes\" through independent gene losses in at least two mammalian lineages. The comparative genomics and statistical analyses are thorough and rigorous, making this study appealing to readers interested in exploring the global patterns and underlying mechanisms of gene fate evolution across the phylogenetic tree.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Wenfeng Qian, https://ror.org/034t30j35 Chinese Academy of Sciences China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82290.sa1](https://doi.org/10.7554/eLife.82290.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Gene fate spectrum as a reflection of local genomic properties\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Wenfeng Qian as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by George Perry as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The identification of \"elusive genes\" in the current manuscript requires additional scrutinization, given it is the foundation of the whole study. Please check published pipelines in the identification of gene losses (e.g., TOGA \u2013 https://github.com/hillerlab/TOGA) and use additional tools such as BLASTX search to test for known technical artifacts when calling genes (homology detection failure, refer to https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000862). Please give a reason for the parameters used in the analysis (e.g., CD-Hit clustering) or examine if the conclusions remain supported by various parameters in the computational pipeline. Also, please take a look at the enrichment of elusive genes in human chr19, and use the synteny-based age estimation of the elusive genes (Shao et al. 2019).\n\n2) Please also present the features of other genes (the genomic background other than elusive and non-elusive genes). Are these genes show intermediate patterns between those of elusive and non-elusive genes? Please edit the manuscript accordingly if the definition of non-elusiveness is actually equivalent to the genomic background.\n\n3) It would be informative to test the links between recombination rate / LD and the genomic locations of elusive genes (compared against randomly sampled genes).\n\n4) Please control confounding factors such as gene expression level and confirm whether the proxy of mutation rate (i.e., Ks) is actually confounded by gene importance.\n\n5) Please consider extending the analyses on fish and birds to other genomic features.\n\n6) The authors should reconcile the findings in this study with previous reports about microchromosomes.\n\n7) Please consider improving the clarity/presentation of Figures 5 and 7 and examine whether the pattern remains robust using various parameter sets.\n\n8) Please think of a better term than \"elusive gene\" to describe the genes that were lost independently in different lineages. Please also clearly define other terms in the manuscript (e.g., functionally indispensable vs. importance, are they the same concept?)\n\n9) Please consider presenting the current study in the framework of mutation-selection balance, and better explain the novelty of the study over previous tremendous studies about gene losses.\n\nReviewer #1 (Recommendations for the authors):\n\nLine 18. \"neutral factor\" is better replaced by \"factors independent of gene dispensability\".\n\nLine 47. \"However\" should be \"on the contrary\"?\n\nLines 113-114. As indicated in the weaknesses part, I am not fully convinced these genomic, epigenomic, and transcriptomic features are completely independent of gene function.\n\nFigure 1b. Define the red and orange crosses in the legend.\n\nFigure 7 appeared first in the Discussion section. Can this part be moved to the Results section?\n\nReviewer #2 (Recommendations for the authors):\n\nOverall, I believe that this is an interesting study. However, this version of the manuscript could be significantly improved in terms of logical depth and methodological stringency.\n\n1. Authors actually support the concept of mutation-driven evolution, i.e., the high mutation rate in genomic regions harboring the elusive genes would predispose their fate toward death. To increase the significance of their work, I suggest authors cite (Nei 2013; Xie et al. 2019) and put their work in a bigger context.\n\n2. Authors mentioned that elusive genes are less important and thus more prone to loss. In my view, pleiotropy is a better term compared to importance. That is, elusive genes are less pleiotropic [e.g. narrowly expressed, Figure 5] and thus their loss are more tolerable or easily compensated by other genes. Actually, narrow expression breadth has been observed to be correlated with gene loss in both humans and flies (MacArthur et al. 2012; Yang et al. 2015).\n\n3. I am generally convinced that authors reliably identified elusive genes by identifying gene loss events in the common ancestor of multiple descendant species (to control for errors induced by assembly or annotation, Figure 1). However, Figure 7 shows the enrichment of elusive genes in human chr19. This chromosome is well known to be enriched with tandemly duplicated Krueppel-associated box C2H2 zinc-finger protein family (KZNF), many of which are primate-specific (Shao et al. 2019). I suspect that tree-based strategy implemented in Figure 1 could not be able to dissect the evolution of this super complex gene family. I am proposing two specific analyses: how many elusive genes encoded by chr19 are KZNFs? how many of them have Ensembl one-to-one orthologs across mammals?\n\n4. With the patterns in Figure 3 and 7, authors argued that features of elusive genes are deeply ancient and could be inherited from the microchromosomes of early vertebrates. This statement has multiple problems.\n\na) Figure 3 only show genomic level features (e.g., high GC content) conserved in multiple vertebrates including shark and chicken. Epigenetic features analyzed in Figure 5 to 6 were only based on human data. I suggest authors to extend these analyses to shark or chicken. Although some epigenetic data could not be available for these species, transcriptome data analyzed in Figure 5 should be available for at least some species.\n\nb) In Figure 7, authors propose the concept related with microchromosomes. These chromosomes have been extensively studied, especially in birds. Some features of microchromosomes are consistent with that of elusive genes [e.g., high GC, (Bravo et al. 2021)]. However, microchromosomes are conserved in terms of gene order and their genes generally show high protein-level constraints as shown by low Ka/Ks (Waters et al. 2021; Li et al. 2022). Authors need to reconcile their discovery with the previous rich literature.\n\nc) Line (L) 204, among 982 human elusive genes, only 540~390 are shared by other species (e.g., shark). I suggest taking advantage of genome-level synteny based age data generated in Shao et al. 2019 to examine the age distribution of human elusive genes. If a high proportion of them are dated as being old (e.g., shared by jawed vertebrates), the statement that these genes have an ancient origin could be better supported.\n\nReferences\n\nBravo GA, Schmitt CJ, Edwards SV. 2021. What have we learned from the first 500 avian genomes. Annu Rev Ecol Evol Syst 52: 611-639.\n\nLi M, Sun C, Xu N, Bian P, Tian X, Wang X, Wang Y, Jia X, Heller R, Wang M et al. 2022. de novo Assembly of 20 Chicken Genomes Reveals the Undetectable Phenomenon for Thousands of Core Genes on Microchromosomes and Subtelomeric Regions. Mol Biol Evol 39.\n\nMacArthur DG, Balasubramanian S, Frankish A, Huang N, Morris J, Walter K, Jostins L, Habegger L, Pickrell JK, Montgomery SB et al. 2012. A systematic survey of loss-of-function variants in human protein-coding genes. Science 335: 823-828.\n\nNei M. 2013. Mutation-driven evolution. OUP Oxford.\n\nShao Y, Chen C, Shen H, He BZ, Yu D, Jiang S, Zhao S, Gao Z, Zhu Z, Chen X et al. 2019. GenTree, an integrated resource for analyzing the evolution and function of primate-specific coding genes. Genome Res 29: 682-696.\n\nWaters PD, Patel HR, Ruiz-Herrera A, Alvarez-Gonzalez L, Lister NC, Simakov O, Ezaz T, Kaur P, Frere C, Grutzner F et al. 2021. Microchromosomes are building blocks of bird, reptile, and mammal chromosomes. Proc Natl Acad Sci U S A 118.\n\nXie KT, Wang G, Thompson AC, Wucherpfennig JI, Reimchen TE, MacColl AD, Schluter D, Bell MA, Vasquez KM, Kingsley DM. 2019. DNA fragility in the parallel evolution of pelvic reduction in stickleback fish. Science 363: 81-84.\n\nYang H, He BZ, Ma H, Tsaur SC, Ma C, Wu Y, Ting CT, Zhang YE. 2015. Expression profile and gene age jointly shaped the genome-wide distribution of premature termination codons in a Drosophila melanogaster population. Mol Biol Evol 32: 216-228.\n\nReviewer #3 (Recommendations for the authors):\n\n\u2013 In recent years several gene loss pipelines were already published (e.g. TOGA \u2013 https://github.com/hillerlab/TOGA) and it would be highly beneficial for this study to compare their gene loss reports with output obtained from existing pipelines (which also address the false discovery rate issue)\n\n\u2013 We did not appreciate Figure 5. We strongly recommend finding a more quantitative approach to visualise these results, since heat maps are misleading and show different x-axis and y-axis ranges (zoom-ins/ zoom-outs)\n\n\u2013 All Figures and Supplementary Figures showing violin plots need to report the number of genes that underly these distributions.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Gene fate spectrum as a reflection of local genomic properties\" for further consideration by eLife. Your revised article has been evaluated by George Perry (Senior Editor) and a Reviewing Editor. A previous reviewer also read and commented on the revised manuscript.\n\nApparently, the manuscript has been significantly improved but there are some remaining issues that need to be addressed, as outlined below. In view of these comments, we kindly request that you consider revising the manuscript once more. Our hope is that, through this additional revision, the manuscript will be written more clearly and rigorously. Thank you for your understanding and continued efforts in improving your submission.\n\nReviewer #2 made the following comment. Please consider it during revision.\n\n\"The authors attempt to argue that the elusive status is ancient (\"Thus, the heterogeneous genomic features driving gene fates toward loss have been in place since the ancestral vertebrates\"). However, in response to my previous suggestion regarding chicken microchromosomes, the authors present mixed results. They observed high GC content, high gene density, and short gene length in chicken, similar to the findings in humans (Figure 3). Yet, the critical functional data between the two species are conflicting: human elusive genes exhibit low expression and fewer ATAC-seq peaks, while their chicken counterparts display the opposite pattern. In other words, chicken elusive genes exhibit higher pleiotropy, which may decrease the likelihood of their loss. Thus, these genes are not elusive, and high GC content, high gene density, and short gene length do not necessarily predict elusiveness. Given that the authors only analyzed the functional data of human and chicken genomes, it is not possible to determine whether the \"elusive\" status is ancient or derived from the human or mammalian lineage. I suggest that the authors analyze the transcriptome data in shark or spotted gar to provide further phylogenetic context. Otherwise, the authors should significantly tone down their statement.\"\n\nThe reviewing editor also has some comments on the title and abstract.\n\n1. Please consider revising the title to \"The Impact of Local Genomic Properties on the Evolutionary Fate of Genes Across Vertebrates\".\n\n2. Please consider adding a sentence (or something similar) at the end of the abstract. \"This study sheds light on the complex interplay between gene function and local genomic properties in shaping gene evolution across vertebrate lineages.\"\n",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0f0c871f-f8b0-4e01-a439-1ccac925e89f",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C1",
+      "claim": "813 human genes were identified as 'elusive genes' whose orthologs were lost in multiple mammalian lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "With a comprehensive scan of gene phylogenies of vertebrates with a careful inspection of evolutionary gene losses, we identified 813 human genes whose orthologs were lost in multiple mammalian lineages: designated 'elusive genes.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the identification of 813 elusive genes through phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "7bd3ba9c-9342-4128-929e-43618ff06703",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C2",
+      "claim": "Elusive genes were located in genomic regions with rapid nucleotide substitution, high GC content, and high gene density.",
+      "claim_type": "EXPLICIT",
+      "source": "These elusive genes were located in genomic regions with rapid nucleotide substitution, high GC content, and high gene density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this finding about genomic characteristics of elusive genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "e2cc3d03-aac4-47a2-837e-52bb4af2a1ff",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C3",
+      "claim": "The genomic features associated with elusive genes were established before the radiation of extant vertebrates approximately 500 million years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of the orthologous regions of such elusive genes across vertebrates revealed that these features had been established before the radiation of the extant vertebrates approximately 500 million years ago.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports comparative analysis across vertebrates showing ancient origin of these features.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "d44f5a6b-721c-40af-b49c-fcff121bbfd4",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C4",
+      "claim": "Genomic regions containing elusive genes were subject to repressive transcriptional regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The association of human elusive genes with transcriptomic and epigenomic characteristics illuminated that the genomic regions containing such genes were subject to repressive transcriptional regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this conclusion based on transcriptomic and epigenomic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "ec54837d-b879-4696-b093-c86dc08f6ec4",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C5",
+      "claim": "Gene retention or loss depends largely on the functional importance of the particular gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene retention or loss has generally been considered to depend largely on the functional importance of the particular gene from the perspective of molecular evolutionary biology (Albalat and Ca\u00f1estro, 2016; Bartha et al., 2018; Blanc et al., 2012; Liu et al., 2015; Olson, 1999; Sharma et al., 2018; Shen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "b6e84f28-3cac-428e-a9b0-452f9e78c294",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C6",
+      "claim": "Genes with indispensable functions have usually been retained with highly conserved sequences through rapid elimination of alleles that impair gene functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes with indispensable functions have usually been retained with highly conserved sequences in genomes through rapid elimination of alleles that impair gene functions (Hirsh and Fraser, 2001; Krylov et al., 2003; Miyata et al., 1980; P\u00e1l et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "8d80a45f-b858-4623-b46c-0d487a3932b2",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C7",
+      "claim": "Genes with less important functions are likely to accept more mutations and structural variations, leading to gene loss through pseudogenization or genomic deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, genes with less important functions are likely to accept more mutations and structural variations, which can degrade the original functions, leading to gene loss through pseudogenization or genomic deletion (Jordan et al., 2002; Yang et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "251d5606-5e51-4758-8f23-c9134fd1380f",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C8",
+      "claim": "Gene loss has been revealed to drive phenotypic adaptation in various organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene loss has further been revealed to drive phenotypic adaptation in various organisms (Albalat and Ca\u00f1estro, 2016; Olson, 1999), as well as in a gene knockout collection of yeasts in culture (Giaever and Nislow, 2014; Maclean et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "1b038ee5-a370-412b-a1bd-30c58670d175",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C9",
+      "claim": "Genes with reduced non-synonymous substitution rates and KA/KS ratios are less likely to be lost.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of studies have revealed that the genes with reduced non-synonymous substitution rates (or KA values) and ratios of non-synonymous to synonymous substitution rates (KA/KS ratios) are less likely to be lost (Jordan et al., 2002; Yang et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "465ab304-aae8-4e03-a902-3713439d49c5",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C10",
+      "claim": "Duplicated genes lost in multiple yeast lineages have larger KA values than those retained by all species investigated.",
+      "claim_type": "EXPLICIT",
+      "source": "A genome-wide comparison of duplicated genes in yeast revealed larger KA values for those lost in multiple lineages than those retained by all the species investigated (Byrne and Wolfe, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "15726182-9e03-4c86-995a-7538b52bf505",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C11",
+      "claim": "Genes expressed in the central nervous system are less prone to loss across metazoans and teleosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Other comprehensive studies of gene loss across metazoans and teleosts revealed that the genes expressed in the central nervous system are less prone to loss (Fern\u00e1ndez and Gabald\u00f3n, 2020; Roux et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "6d54265d-b966-4eb3-96bd-125f57ac6d00",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C12",
+      "claim": "Genomic regions containing genes lost independently in multiple lineages prefer particular characteristics associated with structural instability.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides functional constraints, several studies have identified the genes lost independently in multiple lineages, revealing that the genomic regions containing these genes 'prefer' particular characteristics associated with structural instability (Cortez et al., 2014; Hughes et al., 2012; Lewin et al., 2021; Maeso et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "847d5c76-fcb3-4d55-be32-5c438ced7e0f",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C13",
+      "claim": "Tandemly arrayed homeobox genes derived from the Crx gene family were lost in multiple mammalian species.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, tandemly arrayed homeobox genes derived from the Crx gene family were lost in multiple species (Lewin et al., 2021; Maeso et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "d87d09f9-e2a3-42a1-8653-153f5e5e72df",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C14",
+      "claim": "Genomic features containing tandem duplications facilitate unequal crossing over, leading to frequent gene loss.",
+      "claim_type": "EXPLICIT",
+      "source": "The findings suggest that genomic features containing tandem duplications facilitate unequal crossing over, leading to frequent gene loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of findings from cited studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "e218d991-3784-4a6e-922e-ff31af0b5674",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C15",
+      "claim": "Mammalian chromosome Y has lost a considerable number of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian chromosome Y, which contains abundant repetitive elements and continues to reduce in size, has lost a considerable number of genes (Cortez et al., 2014; Hughes et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "4136a4f7-ae54-4fc8-9b34-ba73d141c38a",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C16",
+      "claim": "A Pitx1 enhancer was independently lost in multiple stickleback lineages inhabiting freshwater due to its genomic location in a structurally fragile site, leading to recurrent loss of pelvic fins.",
+      "claim_type": "EXPLICIT",
+      "source": "In the stickleback genome, a Pitx1 enhancer was independently lost in multiple lineages inhabiting freshwater due to its genomic location in a structurally fragile site, leading to recurrent loss of pelvic fins (Xie et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "97036eae-5f5c-4b69-87d3-389169fad2ea",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C17",
+      "claim": "Genome-wide scans have revealed heterogeneous distributions of base composition, frequency of repetitive elements, and DNA-damage sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide scans have revealed heterogeneous distributions of a variety of sequence and structural features so far, for example, base composition (Bernardi and Bernardi, 1986; Cohen et al., 2005; Katzman et al., 2011), the frequency of repetitive elements (Korenberg and Rykowski, 1988; Medstrand et al., 2002), and DNA-damage sensitivity induced by replication inhibitors (Debatisse et al., 2012; Helmrich et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "f3d14c54-abe0-41dc-9621-0d62522de9d2",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C18",
+      "claim": "Genes retained by reptiles but lost in mammals and Aves rapidly accumulated both non-synonymous and synonymous substitutions compared with counterparts retained by almost all vertebrates examined.",
+      "claim_type": "EXPLICIT",
+      "source": "The results revealed that the genes retained by reptiles but lost in mammals and Aves rapidly accumulated not only non-synonymous but also synonymous substitutions in comparison with the counterparts retained by almost all the vertebrates examined, indicating that those genes prone to loss show increasing mutation rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from a previous study by the authors.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "f93eb177-3b64-4e4d-a474-16672fb15d77",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C19",
+      "claim": "Loss-prone genes were located in genomic regions with high GC contents, high gene densities, and high repetitive element frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these loss-prone genes were located in genomic regions with high GC contents, high gene densities, and high repetitive element frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from a previous study by the authors.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "c588a5d9-9b1b-4c3d-b8ec-d8347416c44c",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C20",
+      "claim": "8050 human genes were identified as 'non-elusive genes' that were retained by almost all mammalian species examined.",
+      "claim_type": "EXPLICIT",
+      "source": "As a comparison of the elusive genes, we retrieved the genes that were retained by almost all of the mammalian species examined and defined them as 'non-elusive,' representing those persistent in the genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the identification of non-elusive genes as a comparison group.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "6de3dba8-0819-4f95-beb8-a562af38988d",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C21",
+      "claim": "Gene annotations from Ensembl, RefSeq, and individual genome sequencing projects were integrated for 114 mammalian and 132 non-mammalian vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "We integrated gene annotations from Ensembl, RefSeq, and the sequence repositories of individual genome sequencing projects to produce gene annotations for 114 mammalian and 132 non-mammalian vertebrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the data integration process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "68d061d8-0093-451f-b346-a98aa3e529b8",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C22",
+      "claim": "101 mammalian and 90 non-mammalian vertebrate species were selected based on high completeness in BUSCO assessment.",
+      "claim_type": "EXPLICIT",
+      "source": "From these, we selected the annotations of 101 and 90 species, respectively, that exhibited high completeness in the BUSCO assessment (Sim\u00e3o et al., 2015; Supplementary Table S1 in Supplementary file 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the species selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "c25b2a35-3591-41c4-9cd6-94e8624ee769",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C23",
+      "claim": "Clustering of ortholog groups resulted in 50,768 vertebrate ortholog groups.",
+      "claim_type": "EXPLICIT",
+      "source": "This integration resulted in 50,768 vertebrate ortholog groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the number of ortholog groups identified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "7d4b8246-4480-43a5-ae7a-08828dbecb45",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C24",
+      "claim": "Phylogenetic tree inference and pruning resulted in 17,495 mammalian ortholog groups that contained human genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic tree inference of the integrated ortholog groups and pruning of the individual trees based on gene duplications resulted in 17,495 mammalian ortholog groups that contained human genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the number of mammalian ortholog groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "37b760db-f92a-4e56-9101-3db8ca02d662",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C25",
+      "claim": "Elusive genes exhibit larger KA values between human and chimpanzee orthologs than non-elusive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed larger KA values in the ortholog pairs of the elusive genes than in those of the non-elusive genes (Figure 2a, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical comparison of KA values shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "d5e7c373-d404-401a-8c55-24f38b60379f",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C26",
+      "claim": "Elusive genes exhibit larger KS values between human and chimpanzee orthologs than non-elusive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis further illuminated larger KS and KI values for the elusive genes than in the non-elusive genes (Figure 2b and c, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical comparison of KS values shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "0c755ad7-fa5c-4244-8716-c89e6b697e89",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C27",
+      "claim": "Elusive genes exhibit larger KI values between human and chimpanzee orthologs than non-elusive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis further illuminated larger KS and KI values for the elusive genes than in the non-elusive genes (Figure 2b and c, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical comparison of KI values shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "fbb2b297-dcab-4cba-8556-8fb61f9651e9",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C28",
+      "claim": "Higher rates of synonymous and intronic nucleotide substitutions in elusive genes indicate susceptibility to genomic characteristics independent of selective constraints on gene functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the higher rate of synonymous and intronic nucleotide substitutions, which may not affect changes in amino acid residues, indicates that the elusive genes are also susceptible to genomic characteristics independent of selective constraints on gene functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the KS and KI data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "d2691dcb-4183-4c28-8b4d-90ca357fade4",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C29",
+      "claim": "Elusive genes have shorter gene-body lengths than non-elusive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison between these two categories revealed shorter gene-body lengths and higher GC contents of elusive rather than non-elusive genes (Figure 2d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical comparison shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "718b56bb-5979-4f2c-b4ed-a5d0831ffa76",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C30",
+      "claim": "Elusive genes have higher GC contents than non-elusive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison between these two categories revealed shorter gene-body lengths and higher GC contents of elusive rather than non-elusive genes (Figure 2d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical comparison shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "99aa8d08-60de-4bf6-8cd7-8ba4e4bc8fea",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C31",
+      "claim": "Elusive genes are located in genomic regions with high gene density compared with non-elusive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a scan of intragenomic gene distribution revealed that the elusive genes were located in the genomic regions with high gene density compared with the non-elusive genes (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical comparison shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "d731330c-7edf-403a-9717-0c72d9bb3f5c",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C32",
+      "claim": "152 out of 813 elusive genes originated in mammalian lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 152 out of 813 elusive genes originated in mammalian lineages, and this proportion was larger than those of the elusive genes (65 out of 8050, p=2.50 \u00d7 10-110), indicating that the elusive genes are more abundant in recently born genes than non-elusive genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the number of elusive genes with mammalian origin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "862ef62f-1a5f-43f9-8f65-fb80997595a3",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C33",
+      "claim": "Elusive genes are more abundant in recently born genes than non-elusive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 152 out of 813 elusive genes originated in mammalian lineages, and this proportion was larger than those of the elusive genes (65 out of 8050, p=2.50 \u00d7 10-110), indicating that the elusive genes are more abundant in recently born genes than non-elusive genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports statistical comparison and interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "00f0c168-81da-44b9-83bf-afdfdbb2004c",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C34",
+      "claim": "Approximately 40% of elusive genes that originated in common ancestors of jawed vertebrates or earlier were retained by non-mammalian vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, approximately 40% of these elusive genes were found to be retained by non-mammalian vertebrates, while this proportion increased up to 90% for the non-elusive genes. (Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports retention rates shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "43bcbd7f-7154-464a-8669-22338ddf8e73",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C35",
+      "claim": "Approximately 90% of non-elusive genes that originated in common ancestors of jawed vertebrates or earlier were retained by non-mammalian vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, approximately 40% of these elusive genes were found to be retained by non-mammalian vertebrates, while this proportion increased up to 90% for the non-elusive genes. (Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports retention rates shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "a9e1fc82-31d7-44ff-819f-3468d0c1a921",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C36",
+      "claim": "In coelacanth, gar, and shark, orthologs of elusive genes were less frequently retained than those of non-elusive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the coelacanth, gar, and shark, the orthologs of the elusive genes were less frequently retained by all the species than those of the non-elusive ones (Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports retention patterns shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "cec2af6e-ef3c-4ada-8865-88e10dfd08c3",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C37",
+      "claim": "The origins of the loss-prone propensity of elusive genes potentially date back to the period long before the emergence of Mammalia.",
+      "claim_type": "EXPLICIT",
+      "source": "The results suggest that the origins of the loss-prone propensity of the elusive genes potentially date back to the period long before the emergence of the Mammalia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the retention data across vertebrates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "086d2f65-a193-4204-bcd9-771f4d20d433",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C38",
+      "claim": "In all vertebrate species examined, orthologs of elusive genes exhibited high GC content and compact gene bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "In all the species examined, orthologs of the elusive genes exhibited high GC content and compact gene bodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports consistent patterns across species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "282f609b-20fa-4d59-bf32-d9d09cdf0c7d",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C39",
+      "claim": "In most vertebrate species examined, orthologs of elusive genes were located in genomic regions with high gene density compared with orthologs of non-elusive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, in most of these species, the orthologs of elusive genes were located in genomic regions with high gene density compared with orthologs of the non-elusive genes (Figure 3, Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports patterns shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "cbe9775f-a529-46b1-a472-04101b0040ca",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C40",
+      "claim": "In most vertebrate species pairs except for avians, orthologs of elusive genes harbor higher KA and KS values than those of non-elusive gene orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we computed KS and KA values between the orthologs of the vertebrate species and their close relatives for elusive and non-elusive genes. In any of the species pairs except for avians, the orthologs of the elusive genes were found to harbor higher KA and KS values than those of the non-elusive gene orthologs (Figure 3, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical comparisons shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "0224bffc-6352-42a0-8d2f-186a4b309752",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C41",
+      "claim": "Genomic characteristics of elusive genes probably originated before the emergence of gnathostomes and have been retained for approximately 500 million years.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate that these genomic characteristics probably originated before the emergence of gnathostomes, a monophyletic group of chondrichthyan and bony vertebrates, and have been retained for approximately 500 million years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the comparative data across vertebrates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "8f374c94-98a4-41bb-a6fe-f31ec9dd2ac9",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C42",
+      "claim": "Genic regions of human elusive genes contain abundant rare SNVs compared with non-elusive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the genic regions of the human elusive genes contained abundant rare SNVs, as well as deletion and duplication CNVs, compared with those of the non-elusive genes (Figure 4a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical comparison shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "df4c6613-5247-4534-bac2-148c0fbbc703",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C43",
+      "claim": "Genic regions of human elusive genes contain abundant deletion CNVs compared with non-elusive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the genic regions of the human elusive genes contained abundant rare SNVs, as well as deletion and duplication CNVs, compared with those of the non-elusive genes (Figure 4a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical comparison shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "1d4d0ce2-8ebd-45c0-b6e0-bd73da5eeb75",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C44",
+      "claim": "Genic regions of human elusive genes contain abundant duplication CNVs compared with non-elusive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the genic regions of the human elusive genes contained abundant rare SNVs, as well as deletion and duplication CNVs, compared with those of the non-elusive genes (Figure 4a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical comparison shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "831719dc-16b6-41e5-ba00-5ae6a158a53e",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C45",
+      "claim": "Genomic regions containing elusive genes are prone to both loss and duplication.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that genomic regions containing the elusive genes are not only prone to loss but also to duplication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the CNV data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "acfa253a-e6f9-4c78-9a62-3006f2bfdd28",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C46",
+      "claim": "Elusive genes have lower Z-scores of missense mutations than non-elusive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found lower Z-scores of missense and loss-of-function mutations (higher opposite numbers of Z-scores in Figure 4e and f) in the human elusive genes than in the non-elusive genes, suggesting that the elusive genes are more functionally dispensable and potentially tolerable to harmful mutations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical comparison shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "e5233c53-346b-4217-82b6-134804fb3d1a",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C47",
+      "claim": "Elusive genes have lower Z-scores of loss-of-function mutations than non-elusive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found lower Z-scores of missense and loss-of-function mutations (higher opposite numbers of Z-scores in Figure 4e and f) in the human elusive genes than in the non-elusive genes, suggesting that the elusive genes are more functionally dispensable and potentially tolerable to harmful mutations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical comparison shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "ed5ae795-c088-4196-b487-52b6a35aaf7d",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C48",
+      "claim": "Elusive genes are more functionally dispensable and potentially tolerable to harmful mutations than non-elusive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found lower Z-scores of missense and loss-of-function mutations (higher opposite numbers of Z-scores in Figure 4e and f) in the human elusive genes than in the non-elusive genes, suggesting that the elusive genes are more functionally dispensable and potentially tolerable to harmful mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the Z-score data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "d7196acd-7209-4b59-b49f-d488fe62a41d",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C49",
+      "claim": "Elusive genes have higher opposite numbers of Z-scores of synonymous mutations than non-elusive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, opposite numbers of Z-scores of synonymous mutations of the human elusive genes were higher than those of the non-elusive genes (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical comparison shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "cbd1f551-2015-41a6-a0af-2801802ceacf",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C50",
+      "claim": "Higher opposite numbers of Z-scores of synonymous mutations in elusive genes confirm the high mutability of genomic regions containing elusive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirms the high mutability of genomic regions containing elusive genes, as observed in the KS values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting Z-score and KS data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "7728c07b-3940-44d4-b5a1-42dac7a5331f",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C51",
+      "claim": "Most non-elusive genes are ubiquitously expressed at certain levels in adult tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in the density scatter plots of the individual genes displaying these two indicators in Figure 5, most of the non-elusive genes possessed large maximum TPM and H\u2032 values. Thus, most non-elusive genes are ubiquitously expressed at certain levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports expression patterns shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "c83871ad-5ebb-42aa-8987-11ca23835f80",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C52",
+      "claim": "Some elusive genes are not expressed in adult tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the density plot of the elusive genes displayed an additional high-density spot with small TPM and H\u2032 values, indicating that the genes in this spot were not expressed, at least in adult tissues.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports expression patterns shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "2e74b5b1-d945-404a-87b7-c0165f9c99d3",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C53",
+      "claim": "Some elusive genes are expressed in a single or a few tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "The plot also showed another broad dense area of small H\u2032 values, which contained the genes expressed in a single or a few tissues.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports expression patterns shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "d4a9f55a-c44b-4683-9c92-3fbf566cd4da",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C54",
+      "claim": "Expression profiles of elusive and non-elusive genes in fetal single cell RNA-seq data are concordant with those of adult tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar analysis was performed with the fetal single cell RNA-seq data (Cao et al., 2020), revealing that the averaged expression profiles of the elusive and non-elusive genes for the 172 cell types were concordant with those of the adult tissues (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports concordance between fetal and adult expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "1d8c8caf-b5b2-4022-a38e-e5eb267f9b2c",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C55",
+      "claim": "Some elusive genes harbor low-level and spatially restricted expression profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings demonstrate that some elusive genes harbor low-level and spatially restricted expression profiles, that is, less pleiotropic states, which are rarely observed in the non-elusive genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary interpretation of the expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "b2db6ece-a381-4b75-b27b-c7288c40dbc8",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C56",
+      "claim": "Genomic regions containing elusive genes have fewer ATAC-seq peaks than those containing non-elusive genes in all eight cell lines examined.",
+      "claim_type": "EXPLICIT",
+      "source": "In all of the eight cell lines examined (11 samples in total), the results showed fewer ATAC-seq peaks in the genomic regions including the elusive genes than in those including non-elusive genes, indicating that the elusive genes are likely to reside in inaccessible genomic regions (Figure 6a, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports ATAC-seq analysis shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "2ae1ac5f-b000-432a-8615-4e87188480a9",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C57",
+      "claim": "Elusive genes are likely to reside in inaccessible genomic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In all of the eight cell lines examined (11 samples in total), the results showed fewer ATAC-seq peaks in the genomic regions including the elusive genes than in those including non-elusive genes, indicating that the elusive genes are likely to reside in inaccessible genomic regions (Figure 6a, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the ATAC-seq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "5b044ecd-d253-45b4-b285-6892a116ca3b",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C58",
+      "claim": "A higher fraction of elusive genes reside outside of TADs than non-elusive genes for all eleven cell lines investigated.",
+      "claim_type": "EXPLICIT",
+      "source": "The result showed that a higher fraction of the elusive genes resided outside of the TADs than the non-elusive genes for all the eleven cell lines investigated (Figure 6b, Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports TAD analysis shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "98e423cd-bc69-46cf-a12a-1d2444b9bf5d",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C59",
+      "claim": "Elusive genes are located in shorter TADs than non-elusive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the elusive genes were located in shorter TADs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports TAD length comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "6a26646a-81b6-42c7-ae0b-78cca6555b1d",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C60",
+      "claim": "Elusive genes are unlikely to be regulated by distant regulatory elements compared with non-elusive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that the elusive genes are unlikely to be regulated by distant regulatory elements compared with the non-elusive genes (Figure 6b, Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the TAD data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "a488f2b9-5c15-420d-9605-55ed54dfd40d",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C61",
+      "claim": "Elusive genes are prone to late replication in all 15 cell lines examined.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that elusive genes were prone to late replication in all of the 15 cell lines examined (Figure 6c, Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports Repli-seq analysis shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "9a3abdf1-e1a1-4328-b49a-8b7519ef18de",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C62",
+      "claim": "Elusive genes are enriched in LADs for all four cell lines examined.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the non-elusive genes, the elusive genes were found to be enriched in LADs for all of the four cell lines examined (Figure 6d, Figure 6\u2014figure supplement 4), consistent with their late replication timings (van Steensel and Belmont, 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports LAD analysis shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "aeea5045-9f11-4e9e-acc1-a7eec14bab02",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C63",
+      "claim": "Enrichment of elusive genes in LADs is consistent with their late replication timings.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the non-elusive genes, the elusive genes were found to be enriched in LADs for all of the four cell lines examined (Figure 6d, Figure 6\u2014figure supplement 4), consistent with their late replication timings (van Steensel and Belmont, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects LAD and replication timing data with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "a6f5b021-12db-4453-a3fd-67c3692a0791",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C64",
+      "claim": "150 elusive genes with Shannon's diversity index H\u2032 < 1 are expressed in only a few or none of the tissues examined.",
+      "claim_type": "EXPLICIT",
+      "source": "From 739 elusive genes whose expressions were quantified in the GTEx database, we classified the elusive genes into two groups based on the pleiotropy in terms of gene expressions: that is, 589 elusive genes with Shannon's diversity index H\u2032 \u2265 1 were ubiquitously expressed, that is, more pleiotropic, and 150 of those with H\u2032 < 1 were expressed in only a few or none of the tissues examined, that is, less pleiotropic (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports classification of elusive genes by expression pleiotropy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "426476f0-7981-4073-9f1f-d922d11b94bb",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C65",
+      "claim": "589 elusive genes with Shannon's diversity index H\u2032 \u2265 1 are ubiquitously expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "From 739 elusive genes whose expressions were quantified in the GTEx database, we classified the elusive genes into two groups based on the pleiotropy in terms of gene expressions: that is, 589 elusive genes with Shannon's diversity index H\u2032 \u2265 1 were ubiquitously expressed, that is, more pleiotropic, and 150 of those with H\u2032 < 1 were expressed in only a few or none of the tissues examined, that is, less pleiotropic (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports classification of elusive genes by expression pleiotropy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "d68f7bed-fe36-47ea-b1c2-0ad10b06ca51",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C66",
+      "claim": "All four epigenetic features of elusive genes with H\u2032 < 1 are more pronounced than those with H\u2032 \u2265 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, all of the four epigenetic features of the elusive genes with H\u2032 < 1 were more pronounced than those with H\u2032 \u2265 1: sparse ATAC-seq peaks, short TADs, late replication timings, and significant overlaps with LADs (Figure 6, Figure 6\u2014figure supplements 1\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports comparison of epigenetic features between elusive gene subgroups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "facd146f-66e6-4a71-a89d-20a5bdbe7c0c",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C67",
+      "claim": "Low-level and spatially restricted expressions of elusive genes are associated with epigenetic features of these genomic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that low-level and spatially restricted expressions of the elusive genes are associated with epigenetic features of these genomic regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the association between expression and epigenetic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "2fff4ed5-83e7-4e5b-974a-5e439c5166e8",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C68",
+      "claim": "Only 3.00% of elusive genes with H\u2032 < 1 are located in regions of extremely high GC content (>60%).",
+      "claim_type": "EXPLICIT",
+      "source": "However, only 3.00 and 9.00% of the elusive genes with H\u2032 < 1 and H\u2032 \u2265 1 were located in regions of extremely high GC content (>60%), respectively, showing that the elusive genes H\u2032 \u2265 1 rather tend to contain more genes with high GC content (p=0.0176).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports GC content analysis to address potential technical bias.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "6bbc1643-1faf-4d02-8253-b9417af190e4",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C69",
+      "claim": "Only 9.00% of elusive genes with H\u2032 \u2265 1 are located in regions of extremely high GC content (>60%).",
+      "claim_type": "EXPLICIT",
+      "source": "However, only 3.00 and 9.00% of the elusive genes with H\u2032 < 1 and H\u2032 \u2265 1 were located in regions of extremely high GC content (>60%), respectively, showing that the elusive genes H\u2032 \u2265 1 rather tend to contain more genes with high GC content (p=0.0176).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports GC content analysis to address potential technical bias.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "2e911cd1-6184-4fd2-9f09-e36d56cb2a3e",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C70",
+      "claim": "Depleted epigenomic features in genomic regions containing elusive genes are unlikely to be false discoveries caused by underrepresentation of sequencing reads.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the depleted epigenomic features in the genomic regions containing elusive genes are unlikely to be false discoveries caused by a technical issue, namely the underrepresentation of the sequencing reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation addressing potential technical artifacts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "928412ed-9244-481c-a2f5-789f3c3c81ac",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C71",
+      "claim": "There is a statistical overlap of elusive genes with genomic regions enriched for genes whose chicken orthologs are on microchromosomes (p=0.0175).",
+      "claim_type": "EXPLICIT",
+      "source": "The visualization via chromosome ideograms indicated an overlap of the elusive genes with the genomic regions enriched for the genes whose chicken orthologs are on the microchromosomes (chromosomes 11\u201338 and W), providing a statistical support for this trend (p=0.0175; Figure 7a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical analysis of chromosomal distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "acbe966e-8d79-4118-8cd4-96181f9ce2cf",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C72",
+      "claim": "Chicken microchromosomes exhibit high GC content, high gene density, and rapid nucleotide substitutions compared with macrochromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, microchromosomes of the chicken and other vertebrate exhibit genomic features including high GC content, high gene density, and rapid nucleotide substitutions in comparison with their macrochromosomes (Groenen et al., 2009; International Chicken Genome Sequencing Consortium, 2004; Schield et al., 2019; Waters et al., 2021), which also characterize genomic regions containing elusive genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "ccd0c691-f709-4b29-9df3-d0748521a4ce",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C73",
+      "claim": "Chicken microchromosomes are preferentially located in the A compartments of the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, previous studies revealed that the chicken microchromosomes are preferentially located in the A compartments of the nucleus (Perry et al., 2020) and are early replicating (McQueen et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "ed867eaf-f4d5-4d65-816f-3acfecf5a6a9",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C74",
+      "claim": "Chicken microchromosomes are early replicating.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, previous studies revealed that the chicken microchromosomes are preferentially located in the A compartments of the nucleus (Perry et al., 2020) and are early replicating (McQueen et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "3fb33061-906f-48e9-a889-78ef52b4c37c",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C75",
+      "claim": "Characteristics of chicken microchromosomes are opposite to characteristics of human genomic regions preferentially containing elusive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "These characteristics associated with the microchromosomes were opposite characteristics to the human genomic regions preferentially containing the elusive genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of characteristics between chicken and human genomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "66cbc223-1ca5-4253-84ed-aa022758dc5b",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C76",
+      "claim": "In four out of eight chicken samples, there are more ATAC-seq peaks in genomic regions including elusive gene orthologs than in those containing non-elusive gene orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "We further analyzed the ATAC-seq peaks in the chicken genome and found more peaks in the genomic regions including the elusive gene orthologs than in those containing non-elusive gene orthologs in four samples out of eight and no significant differences in the peak density in the four remaining samples (Figure 6\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports ATAC-seq analysis in chicken.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "da43c4c0-567e-4b57-b1a4-194a24339eac",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C77",
+      "claim": "In an epigenetic manner, chicken orthologs of elusive genes are not regulated to reduce their expression level.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate that, in an epigenetic manner, the chicken orthologs of the elusive genes are not regulated to reduce their expression level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the chicken ATAC-seq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "7b790800-671b-40ea-85a2-45e1bd40b56e",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C78",
+      "claim": "There are no significant differences in expression profiles between chicken orthologs of elusive and non-elusive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This idea was further supported by a comparison of the expression profiles between the chicken orthologs of the elusive and non-elusive genes, showing no significant differences between them (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports expression comparison in chicken.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "a149ec0c-ec0a-48d8-adba-9a82ee011275",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C79",
+      "claim": "Genomic features of elusive genes such as high GC and high nucleotide substitutions do not always correlate with a reduction in pleiotropy of gene expression during vertebrate evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses indicate that the genomic features of the elusive genes such as high GC and high nucleotide substitutions do not always correlate with a reduction in pleiotropy of gene expression that potentially leads to an increase in functional dispensability in the course of vertebrate evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the comparative data across vertebrates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "c33410dd-1335-4db7-b105-b7b67b5d71dc",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C80",
+      "claim": "Avian orthologs of elusive genes did not show higher KA and KS values than those of non-elusive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, avian orthologs of the elusive genes did not show higher KA and KS values than those of the non-elusive genes (Figure 3, Figure 2\u2014figure supplement 1), likely consistent with not significant difference in gene expression levels between them in the species (Figure 5\u2014figure supplement 1; Cherry, 2010; Zhang and Yang, 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports KA and KS analysis in avians with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "957d9c8e-c5f0-45bc-9625-44391808198b",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C81",
+      "claim": "Orthologs of elusive genes tend to exhibit low pleiotropy in green anole, coelacanth, and gar but not in Western clawed frog.",
+      "claim_type": "EXPLICIT",
+      "source": "We further compared expression profiles between the orthologs of the human elusive and non-elusive genes in several non-mammalian vertebrates and found that the orthologs of the elusive genes tend to exhibit low pleiotropy in green anole, coelacanth, and gar but not in Western clawed frog.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports expression comparison across non-mammalian vertebrates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "3405b810-cf0d-4e08-9c84-822a621d3e5c",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C82",
+      "claim": "Low pleiotropy of elusive genes has persisted at least since the bony vertebrate ancestors.",
+      "claim_type": "EXPLICIT",
+      "source": "The result suggests that the low pleiotropy of the elusive genes has persisted at least since the bony vertebrate ancestors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the expression data across vertebrates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "dcb5cc58-82de-459c-8e43-d2ad0592a900",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C83",
+      "claim": "The 'elusive' features for genes orthologous to human elusive genes might have been relaxed in chicken\u2014functional importance of the orthologs has increased\u2014during evolution leading to chicken.",
+      "claim_type": "EXPLICIT",
+      "source": "With respect to the chicken genome, the 'elusive' features for the genes orthologous to human elusive genes might have been relaxed\u2014functional importance of the orthologs has increased\u2014during evolution leading to chicken.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the chicken-specific patterns.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "66a84a26-5e32-4921-9d9c-690f11961f60",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C84",
+      "claim": "Heterogeneous genomic characteristics potentially affect the fate of genes at the latest period of vertebrate evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indicate that heterogeneous genomic characteristics potentially affect the fate of genes at the latest period of vertebrate evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary interpretation of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "b0ca6257-7ca0-496a-860b-c66286dad9d6",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C85",
+      "claim": "High GC content in elusive genes may have facilitated an elevation of the mutation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "High GC content in the elusive genes may have facilitated an elevation of the mutation rate, as observed in the enrichment of rare variants in high-GC regions in the human genome (Schaibley et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation with citation to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "51bf2af7-e4b4-4416-9ae4-5fa8899413e6",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C86",
+      "claim": "Genomic regions with late replication timing exhibit increased mutation rates because of their unstable structure during the S-phase of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomic regions with late replication timing exhibit increased mutation rates because of their unstable structure during the S-phase of the cell cycle (Koren et al., 2012; Stamatoyannopoulos et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "7a5ccfbf-940f-4abf-8af8-2c4486c6b959",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C87",
+      "claim": "LADs retain more G-to-T mutations because of their susceptibility to oxidative damage in the nuclear periphery resulting in high levels of 8-oxoguanine.",
+      "claim_type": "EXPLICIT",
+      "source": "LADs retain more G-to-T mutations because of their susceptibility to oxidative damage in the nuclear periphery resulting in high levels of 8-oxoguanine (Yoshihara et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "f14f1f5f-8458-4fc9-8115-2b58bb37c46f",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C88",
+      "claim": "Epigenetic marks of elusive genes are relevant to the suppression of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The epigenetic marks of elusive genes are relevant to the suppression of gene expression (van Steensel and Belmont, 2017), and indeed, these genes harbor weakened and spatially restricted expression profiles (Figures 5 and 6 and Figure 6\u2014figure supplements 1\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This connects epigenetic marks to expression with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "7f1d421f-0fe4-4fb8-873e-9e58aa4a0364",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C89",
+      "claim": "Genomic features associated with epigenetic marks of elusive genes usually exhibit lower GC contents and reduced gene density.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the genomic features associated with these epigenetic marks usually exhibit lower GC contents and reduced gene density (Gilbert et al., 2004; Rao et al., 2014; van Steensel and Belmont, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "54b0d00a-ee3d-4153-a0fc-5ac0406e3c8f",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C90",
+      "claim": "The discrepancy between elusive gene characteristics and typical epigenetic mark characteristics may be caused in part by a gain of local heterochromatin accompanied by suppression of transposable element expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This discrepancy may be caused in part by a gain of local heterochromatin accompanied by suppression of the expression of transposable elements, as observed in various eukaryotic genomes (Choi and Lee, 2020; Fiston-Lavier et al., 2007; Grewal and Jia, 2007; Rangasamy, 2013; Slotkin and Martienssen, 2007; Underwood et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation with citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "6e8c525b-e06d-449e-8741-559736d42c5a",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C91",
+      "claim": "Human genomic regions where KRAB zinc finger genes colocalize with L1 retrotransposons show frequent heterochromatinization.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous analyses showed frequent heterochromatinization of the human genomic regions where KRAB zinc finger genes colocalize with L1 retrotransposons (Imbeault et al., 2017; O'Geen et al., 2007; Vogel et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "f9e42a3a-e149-462c-8b1f-e7be76573452",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C92",
+      "claim": "Human chromosome region 19p12 contains many elusive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the genomic regions found in human chromosome region 19p12 also contains many elusive genes (Vogel et al., 2006; Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports chromosomal location with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "86611df8-1536-4a2a-ac9e-88d7e7d29abb",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C93",
+      "claim": "Genomic regions rich in elusive genes were traced back to the microchromosomes of the ancestral gnathostomes.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, genomic regions rich in elusive genes were traced back to the microchromosomes of the ancestral gnathostomes by reconstructing chromosomes of the ancestral genomes (Figure 7b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports ancestral chromosome reconstruction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "361b11ce-547a-46c0-b22d-e77913c5004a",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C94",
+      "claim": "The disparity of genomic regions that allows the 'elusiveness' for genes has been retained during vertebrate evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "This inference of ancestral karyotypes augments our observations that some elusive natures of genomic sequences have been retained for hundreds of millions of years (Figure 3). In other words, the result suggests that the disparity of genomic regions that allows the 'elusiveness' for the genes has been retained during vertebrate evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the ancestral chromosome data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "f4b2f611-6ffd-42cd-b40b-83c479e81430",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C95",
+      "claim": "Chicken orthologs of human elusive genes have acquired diverse expressions.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, comparisons of the expression profiles between the orthologs of the elusive and non-elusive genes for non-mammalian vertebrates suggest that the orthologs of the elusive genes have been associated with a reduction in pleiotropy of gene expression since vertebrate ancestors but acquired the diverse expressions in chicken and frog (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports expression comparison across vertebrates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "b058827d-4719-440d-816c-5a8b5df116eb",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C96",
+      "claim": "Diverse expressions of chicken orthologs of human elusive genes may be correlated with the abundance of ATAC-seq peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, in the chicken genome, the diverse expressions of the chicken orthologs of the human elusive genes may be correlated with the abundance of ATAC-seq peaks (Figure 6\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the chicken ATAC-seq and expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "16d8769e-84d9-45fe-ac30-77ad74eebe39",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C97",
+      "claim": "Chicken orthologs of human elusive genes have increased pleiotropy of gene expression, which may lead to a lineage-specific acquisition of functional indispensability.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings again suggest that the chicken orthologs of the human elusive genes have increased pleiotropy of gene expression, which may lead to a lineage-specific acquisition of functional indispensability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the chicken data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "fc1e5072-7fc5-436d-be58-04556bce217f",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C98",
+      "claim": "Lowly expressed genes are associated with low functional essentiality.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies showed that lowly expressed genes are associated with low functional essentiality (Cherry, 2010; Gout et al., 2010), as shown for elusive genes in our study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "9587a683-a7d6-4960-8d90-b3414c4b0c45",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C99",
+      "claim": "Elusive genes with reduced pleiotropy may have limited opportunities to function, potentially leading to loss of their important roles.",
+      "claim_type": "EXPLICIT",
+      "source": "Elusive genes with reduced pleiotropy may have limited opportunities to function, potentially leading to loss of their important roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the expression data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "fa6f05d7-1667-435e-8c71-5635c505e167",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C100",
+      "claim": "A recent large-scale scan of de novo mutations in Arabidopsis indicates the association of mutation rates with epigenetic features and functional essentiality of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a recent large-scale scan of de novo mutations in Arabidopsis indicates the association of mutation rates with epigenetic features and functional essentiality of genes (Monroe et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "463175c5-dff5-408d-b1e8-2b892a90c1a4",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "claim_id": "C101",
+      "claim": "Disparities of genomic regions are reflected in the heterogeneity of evolutionary forces and have been retained for hundreds of millions of years.",
+      "claim_type": "EXPLICIT",
+      "source": "Although epigenetic features are plastic, our findings indicate that the disparities of genomic regions are reflected in the heterogeneity of evolutionary forces and have been retained for hundreds of millions of years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary interpretation of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "76c0a7df-ca59-4467-9ff1-9dc7b8dcfc4d",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors identified 813 human 'elusive genes' whose orthologs were lost in multiple mammalian lineages and 8,050 'non-elusive genes' retained across mammals through comprehensive phylogenetic analysis of 101 mammalian and 90 non-mammalian vertebrate species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C20-C24 describe a rigorous methodological pipeline for identifying elusive and non-elusive genes. The integration of multiple gene annotation sources (C21), quality filtering via BUSCO (C22), ortholog clustering resulting in 50,768 groups (C23), and phylogenetic tree inference yielding 17,495 mammalian ortholog groups (C24) provide strong methodological support for the identification of 813 elusive and 8,050 non-elusive genes (C1, C20). The methods include multiple validation steps to reduce false discovery.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "ff413389-343e-4a89-bfc3-af97160257de",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Elusive genes are located in genomic regions with distinct characteristics including higher nucleotide substitution rates (KA, KS, KI), higher GC content, shorter gene lengths, and higher gene density compared to non-elusive genes in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C31 provide statistical evidence from multiple comparisons showing that elusive genes have significantly higher KA, KS, and KI values (C25-C27), higher GC content (C30), shorter gene lengths (C29), and are located in regions of higher gene density (C31). The interpretation (C28) that higher KS and KI indicate susceptibility to genomic characteristics independent of functional constraints is logically sound. All comparisons are supported by figures with statistical significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "1cc77766-9f0b-40f6-8498-81e0545ed528",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The genomic characteristics of elusive genes (high GC content, compact gene bodies, high gene density, elevated substitution rates) originated before the emergence of gnathostomes approximately 500 million years ago and have been retained throughout vertebrate evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C40 demonstrate that elusive gene characteristics are conserved across vertebrates including non-mammalian species. The data show that ~40% of elusive genes vs ~90% of non-elusive genes were retained by non-mammalian vertebrates (C34-C35), and that orthologs of elusive genes in coelacanth, gar, and shark exhibit the same genomic characteristics (C38-C40). The interpretation that these features originated before gnathostomes ~500 million years ago (C3, C41) is well-supported by the comparative data, though the exact timing relies on phylogenetic inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "1a04e8a6-d407-4685-830b-2b21beed9de4",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Elusive genes contain abundant genetic variants including rare SNVs and CNVs (both deletions and duplications), have lower Z-scores for missense and loss-of-function mutations, and are more functionally dispensable than non-elusive genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 report statistically significant enrichment of rare SNVs and CNVs in elusive genes with supporting figures. Claims C46-C47 show lower Z-scores for missense and loss-of-function mutations, indicating reduced purifying selection. The interpretation that elusive genes are more functionally dispensable (C48) is supported by the Z-score data. Claim C49-C50 connecting synonymous mutation Z-scores to high mutability is consistent with the KS data. All claims are supported by statistical comparisons with appropriate databases (dbSNP, DGV, gnomAD).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "862f0851-68d5-4d3a-ba92-7d96d0d82f73",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Some elusive genes exhibit low-level and spatially restricted expression profiles in both adult tissues and fetal cells, with 150 elusive genes (H' < 1) showing expression in few or no tissues, while most non-elusive genes are ubiquitously expressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 describe expression patterns supported by GTEx and single-cell RNA-seq data shown in Figure 5. The classification of elusive genes into two groups based on Shannon's diversity index (C64-C65) is clearly defined and quantified. The concordance between adult and fetal expression patterns (C54) strengthens the finding. The interpretation that some elusive genes have restricted expression (C55) is directly supported by the density plots showing distinct expression patterns compared to non-elusive genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "5afce11f-5b22-4040-8dbb-4229bd084d17",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Genomic regions containing elusive genes exhibit repressive epigenetic features including fewer ATAC-seq peaks, location outside or in shorter TADs, late replication timing, and enrichment in LADs, with these features being more pronounced in elusive genes with restricted expression (H' < 1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C63 report consistent epigenetic patterns across multiple cell lines (8 for ATAC-seq, 11 for TADs, 15 for replication timing, 4 for LADs) with statistical significance. The interpretation that elusive genes reside in inaccessible regions (C57) and are unlikely to be regulated by distant elements (C60) is supported by the ATAC-seq and TAD data. Claim C66 shows that all four epigenetic features are more pronounced in low-pleiotropy elusive genes, and C67 connects these features to restricted expression. The consistency across multiple independent datasets and cell lines strongly supports these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "591b4c72-d979-4e0e-a018-67e48adb0447",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The depleted epigenomic features in elusive gene regions are unlikely to be technical artifacts from high GC content causing underrepresentation of sequencing reads, as only 3-9% of elusive genes are in extremely high GC regions (>60%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 provide specific percentages showing that very few elusive genes are in extremely high GC regions, and paradoxically, the low-pleiotropy elusive genes (H' < 1) have lower GC content than high-pleiotropy ones. This control analysis (C70) effectively addresses a potential technical confound and strengthens the validity of the epigenomic findings. The statistical comparison (p=0.0176) supports the interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "01fad0bf-35cb-4ff2-bed9-9962675dfb7a",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Human elusive genes overlap with genomic regions whose chicken orthologs are on microchromosomes, but unlike in mammals, chicken orthologs of elusive genes show no epigenetic repression, no expression differences from non-elusive genes, and no elevated KA/KS values, suggesting lineage-specific relaxation of 'elusive' features in chicken.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C75 establish the chromosomal correspondence between human elusive genes and chicken microchromosomes with statistical support (p=0.0175). Claims C76-C78 show that in chicken, elusive gene orthologs have more ATAC-seq peaks (in 4/8 samples) and no expression differences, contrasting with the mammalian pattern. Claims C80-C81 show avian orthologs lack elevated KA/KS and that low pleiotropy persists in some non-mammalian vertebrates but not frog. The interpretation of lineage-specific relaxation in chicken (C83) is speculative but supported by the data. This represents an important comparative finding showing that genomic features don't always correlate with expression patterns (C79).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "5f9d62b0-03b3-4a30-a2e2-d315764a0bdb",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Genomic regions rich in elusive genes were traced back to microchromosomes of ancestral gnathostomes through ancestral genome reconstruction, indicating that the disparity of genomic regions allowing 'elusiveness' has been retained during vertebrate evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C93 reports ancestral chromosome reconstruction showing elusive genes trace to ancestral microchromosomes, supported by Figure 7b. Claim C94 interprets this as evidence for long-term retention of genomic disparities. This finding is consistent with the earlier claims about ancient origin of elusive gene characteristics (C3, C41) and provides chromosomal-scale evidence. The reconstruction methodology is not fully detailed in the claims, but the interpretation is logically consistent with the comparative data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "01ed8197-413f-4414-8686-26d12e628072",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Heterogeneous genomic characteristics including high GC content, late replication timing, and LAD localization contribute to elevated mutation rates in elusive genes, and these disparities in genomic regions have been retained for hundreds of millions of years, affecting gene fate through both mutational and epigenetic mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C87 connect specific genomic features to mutation rate mechanisms with supporting citations. Claim C88 links epigenetic marks to expression suppression with citation and data support. Claims C84 and C101 provide integrative interpretations that heterogeneous genomic characteristics affect gene fate and have been retained over evolutionary time. These interpretations are well-supported by the cumulative evidence from multiple analyses (substitution rates, genetic variants, epigenetic features, comparative genomics). The mechanistic explanations are supported by prior literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "d64c0876-4567-405e-b3aa-e439e4542b3f",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior research has established that gene retention/loss depends on functional importance, with genes in structurally unstable genomic regions being prone to loss, and that loss-prone genes in reptiles showed elevated substitution rates and were located in regions with high GC content and gene density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C17 summarize prior literature with appropriate citations establishing the conceptual framework for the study. Claims C18-C19 reference the authors' own prior work showing similar patterns in reptiles. These background claims are well-supported by citations and provide context for the current findings. They represent established knowledge rather than new findings from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "a2235b5b-16cc-46fb-994f-6771c4f5a06d",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The discrepancy between elusive genes having high GC/gene density but repressive epigenetic marks (which typically associate with low GC/gene density) may be explained by local heterochromatin formation for transposable element suppression, as observed in human chromosome region 19p12 where KRAB zinc finger genes colocalize with L1 retrotransposons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C89 correctly notes the discrepancy between typical epigenetic mark characteristics and elusive gene features, supported by citations. Claims C90-C91 propose a speculative mechanism involving heterochromatin and transposable element suppression with supporting citations. Claim C92 provides a specific example (19p12) with citation and figure reference. However, C90 is explicitly marked as speculation, and no direct evidence is provided in this study to test this hypothesis. The mechanism is plausible and supported by prior literature, but remains speculative without additional experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "1ba0fed4-ece3-4dba-93d3-563a49d5b7f8",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Chicken orthologs of human elusive genes have acquired diverse expressions that may correlate with abundant ATAC-seq peaks, suggesting increased pleiotropy and lineage-specific acquisition of functional indispensability in chicken.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C95 reports that chicken orthologs acquired diverse expressions based on Figure 5 supplement 1. Claim C96 suggests correlation with ATAC-seq peaks, and C97 interprets this as increased pleiotropy leading to functional indispensability. However, C96 and C97 are marked as speculative interpretations. The expression data comparison is limited by different tissue sampling between human and chicken (noted in manuscript), and the correlation between ATAC-seq and expression is not rigorously tested. The interpretation is plausible but requires more direct evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    },
+    {
+      "id": "0dbad9dc-5d71-4499-a2ca-ad540c515825",
+      "content_id": "b983142e-7e3b-4643-8fcd-0d26440ac2fa",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Lowly expressed genes are associated with low functional essentiality, and elusive genes with reduced pleiotropy may have limited opportunities to function, potentially leading to loss of important roles, consistent with recent findings in Arabidopsis linking mutation rates to epigenetic features and functional essentiality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C98 is supported by citations to prior research. Claim C99 is a speculative interpretation connecting reduced pleiotropy to functional loss, which is logically consistent with the expression data and Z-score findings. Claim C100 cites recent Arabidopsis work showing similar associations, providing cross-species support for the general principle. While C99 is speculative, it represents a reasonable interpretation supported by the data and consistent with prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:43:58.473206Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0f0c871f-f8b0-4e01-a439-1ccac925e89f",
+      "result_id": "76c0a7df-ca59-4467-9ff1-9dc7b8dcfc4d"
+    },
+    {
+      "claim_id": "c588a5d9-9b1b-4c3d-b8ec-d8347416c44c",
+      "result_id": "76c0a7df-ca59-4467-9ff1-9dc7b8dcfc4d"
+    },
+    {
+      "claim_id": "6de3dba8-0819-4f95-beb8-a562af38988d",
+      "result_id": "76c0a7df-ca59-4467-9ff1-9dc7b8dcfc4d"
+    },
+    {
+      "claim_id": "68d061d8-0093-451f-b346-a98aa3e529b8",
+      "result_id": "76c0a7df-ca59-4467-9ff1-9dc7b8dcfc4d"
+    },
+    {
+      "claim_id": "c25b2a35-3591-41c4-9cd6-94e8624ee769",
+      "result_id": "76c0a7df-ca59-4467-9ff1-9dc7b8dcfc4d"
+    },
+    {
+      "claim_id": "7d4b8246-4480-43a5-ae7a-08828dbecb45",
+      "result_id": "76c0a7df-ca59-4467-9ff1-9dc7b8dcfc4d"
+    },
+    {
+      "claim_id": "7bd3ba9c-9342-4128-929e-43618ff06703",
+      "result_id": "ff413389-343e-4a89-bfc3-af97160257de"
+    },
+    {
+      "claim_id": "37b760db-f92a-4e56-9101-3db8ca02d662",
+      "result_id": "ff413389-343e-4a89-bfc3-af97160257de"
+    },
+    {
+      "claim_id": "d5e7c373-d404-401a-8c55-24f38b60379f",
+      "result_id": "ff413389-343e-4a89-bfc3-af97160257de"
+    },
+    {
+      "claim_id": "0c755ad7-fa5c-4244-8716-c89e6b697e89",
+      "result_id": "ff413389-343e-4a89-bfc3-af97160257de"
+    },
+    {
+      "claim_id": "fbb2b297-dcab-4cba-8556-8fb61f9651e9",
+      "result_id": "ff413389-343e-4a89-bfc3-af97160257de"
+    },
+    {
+      "claim_id": "d2691dcb-4183-4c28-8b4d-90ca357fade4",
+      "result_id": "ff413389-343e-4a89-bfc3-af97160257de"
+    },
+    {
+      "claim_id": "718b56bb-5979-4f2c-b4ed-a5d0831ffa76",
+      "result_id": "ff413389-343e-4a89-bfc3-af97160257de"
+    },
+    {
+      "claim_id": "99aa8d08-60de-4bf6-8cd7-8ba4e4bc8fea",
+      "result_id": "ff413389-343e-4a89-bfc3-af97160257de"
+    },
+    {
+      "claim_id": "e2cc3d03-aac4-47a2-837e-52bb4af2a1ff",
+      "result_id": "1cc77766-9f0b-40f6-8498-81e0545ed528"
+    },
+    {
+      "claim_id": "d731330c-7edf-403a-9717-0c72d9bb3f5c",
+      "result_id": "1cc77766-9f0b-40f6-8498-81e0545ed528"
+    },
+    {
+      "claim_id": "862ef62f-1a5f-43f9-8f65-fb80997595a3",
+      "result_id": "1cc77766-9f0b-40f6-8498-81e0545ed528"
+    },
+    {
+      "claim_id": "00f0c168-81da-44b9-83bf-afdfdbb2004c",
+      "result_id": "1cc77766-9f0b-40f6-8498-81e0545ed528"
+    },
+    {
+      "claim_id": "43bcbd7f-7154-464a-8669-22338ddf8e73",
+      "result_id": "1cc77766-9f0b-40f6-8498-81e0545ed528"
+    },
+    {
+      "claim_id": "a9e1fc82-31d7-44ff-819f-3468d0c1a921",
+      "result_id": "1cc77766-9f0b-40f6-8498-81e0545ed528"
+    },
+    {
+      "claim_id": "cec2af6e-ef3c-4ada-8865-88e10dfd08c3",
+      "result_id": "1cc77766-9f0b-40f6-8498-81e0545ed528"
+    },
+    {
+      "claim_id": "086d2f65-a193-4204-bcd9-771f4d20d433",
+      "result_id": "1cc77766-9f0b-40f6-8498-81e0545ed528"
+    },
+    {
+      "claim_id": "282f609b-20fa-4d59-bf32-d9d09cdf0c7d",
+      "result_id": "1cc77766-9f0b-40f6-8498-81e0545ed528"
+    },
+    {
+      "claim_id": "cbe9775f-a529-46b1-a472-04101b0040ca",
+      "result_id": "1cc77766-9f0b-40f6-8498-81e0545ed528"
+    },
+    {
+      "claim_id": "0224bffc-6352-42a0-8d2f-186a4b309752",
+      "result_id": "1cc77766-9f0b-40f6-8498-81e0545ed528"
+    },
+    {
+      "claim_id": "8f374c94-98a4-41bb-a6fe-f31ec9dd2ac9",
+      "result_id": "1a04e8a6-d407-4685-830b-2b21beed9de4"
+    },
+    {
+      "claim_id": "df4c6613-5247-4534-bac2-148c0fbbc703",
+      "result_id": "1a04e8a6-d407-4685-830b-2b21beed9de4"
+    },
+    {
+      "claim_id": "1d4d0ce2-8ebd-45c0-b6e0-bd73da5eeb75",
+      "result_id": "1a04e8a6-d407-4685-830b-2b21beed9de4"
+    },
+    {
+      "claim_id": "831719dc-16b6-41e5-ba00-5ae6a158a53e",
+      "result_id": "1a04e8a6-d407-4685-830b-2b21beed9de4"
+    },
+    {
+      "claim_id": "acfa253a-e6f9-4c78-9a62-3006f2bfdd28",
+      "result_id": "1a04e8a6-d407-4685-830b-2b21beed9de4"
+    },
+    {
+      "claim_id": "e5233c53-346b-4217-82b6-134804fb3d1a",
+      "result_id": "1a04e8a6-d407-4685-830b-2b21beed9de4"
+    },
+    {
+      "claim_id": "ed5ae795-c088-4196-b487-52b6a35aaf7d",
+      "result_id": "1a04e8a6-d407-4685-830b-2b21beed9de4"
+    },
+    {
+      "claim_id": "d7196acd-7209-4b59-b49f-d488fe62a41d",
+      "result_id": "1a04e8a6-d407-4685-830b-2b21beed9de4"
+    },
+    {
+      "claim_id": "cbd1f551-2015-41a6-a0af-2801802ceacf",
+      "result_id": "1a04e8a6-d407-4685-830b-2b21beed9de4"
+    },
+    {
+      "claim_id": "d44f5a6b-721c-40af-b49c-fcff121bbfd4",
+      "result_id": "862f0851-68d5-4d3a-ba92-7d96d0d82f73"
+    },
+    {
+      "claim_id": "7728c07b-3940-44d4-b5a1-42dac7a5331f",
+      "result_id": "862f0851-68d5-4d3a-ba92-7d96d0d82f73"
+    },
+    {
+      "claim_id": "c83871ad-5ebb-42aa-8987-11ca23835f80",
+      "result_id": "862f0851-68d5-4d3a-ba92-7d96d0d82f73"
+    },
+    {
+      "claim_id": "2e74b5b1-d945-404a-87b7-c0165f9c99d3",
+      "result_id": "862f0851-68d5-4d3a-ba92-7d96d0d82f73"
+    },
+    {
+      "claim_id": "d4a9f55a-c44b-4683-9c92-3fbf566cd4da",
+      "result_id": "862f0851-68d5-4d3a-ba92-7d96d0d82f73"
+    },
+    {
+      "claim_id": "1d8c8caf-b5b2-4022-a38e-e5eb267f9b2c",
+      "result_id": "862f0851-68d5-4d3a-ba92-7d96d0d82f73"
+    },
+    {
+      "claim_id": "a6f5b021-12db-4453-a3fd-67c3692a0791",
+      "result_id": "862f0851-68d5-4d3a-ba92-7d96d0d82f73"
+    },
+    {
+      "claim_id": "426476f0-7981-4073-9f1f-d922d11b94bb",
+      "result_id": "862f0851-68d5-4d3a-ba92-7d96d0d82f73"
+    },
+    {
+      "claim_id": "b2db6ece-a381-4b75-b27b-c7288c40dbc8",
+      "result_id": "5afce11f-5b22-4040-8dbb-4229bd084d17"
+    },
+    {
+      "claim_id": "2ae1ac5f-b000-432a-8615-4e87188480a9",
+      "result_id": "5afce11f-5b22-4040-8dbb-4229bd084d17"
+    },
+    {
+      "claim_id": "5b044ecd-d253-45b4-b285-6892a116ca3b",
+      "result_id": "5afce11f-5b22-4040-8dbb-4229bd084d17"
+    },
+    {
+      "claim_id": "98e423cd-bc69-46cf-a12a-1d2444b9bf5d",
+      "result_id": "5afce11f-5b22-4040-8dbb-4229bd084d17"
+    },
+    {
+      "claim_id": "6a26646a-81b6-42c7-ae0b-78cca6555b1d",
+      "result_id": "5afce11f-5b22-4040-8dbb-4229bd084d17"
+    },
+    {
+      "claim_id": "a488f2b9-5c15-420d-9605-55ed54dfd40d",
+      "result_id": "5afce11f-5b22-4040-8dbb-4229bd084d17"
+    },
+    {
+      "claim_id": "9a3abdf1-e1a1-4328-b49a-8b7519ef18de",
+      "result_id": "5afce11f-5b22-4040-8dbb-4229bd084d17"
+    },
+    {
+      "claim_id": "aeea5045-9f11-4e9e-acc1-a7eec14bab02",
+      "result_id": "5afce11f-5b22-4040-8dbb-4229bd084d17"
+    },
+    {
+      "claim_id": "d68f7bed-fe36-47ea-b1c2-0ad10b06ca51",
+      "result_id": "5afce11f-5b22-4040-8dbb-4229bd084d17"
+    },
+    {
+      "claim_id": "facd146f-66e6-4a71-a89d-20a5bdbe7c0c",
+      "result_id": "5afce11f-5b22-4040-8dbb-4229bd084d17"
+    },
+    {
+      "claim_id": "2fff4ed5-83e7-4e5b-974a-5e439c5166e8",
+      "result_id": "591b4c72-d979-4e0e-a018-67e48adb0447"
+    },
+    {
+      "claim_id": "6bbc1643-1faf-4d02-8253-b9417af190e4",
+      "result_id": "591b4c72-d979-4e0e-a018-67e48adb0447"
+    },
+    {
+      "claim_id": "2e911cd1-6184-4fd2-9f09-e36d56cb2a3e",
+      "result_id": "591b4c72-d979-4e0e-a018-67e48adb0447"
+    },
+    {
+      "claim_id": "928412ed-9244-481c-a2f5-789f3c3c81ac",
+      "result_id": "01fad0bf-35cb-4ff2-bed9-9962675dfb7a"
+    },
+    {
+      "claim_id": "acbe966e-8d79-4118-8cd4-96181f9ce2cf",
+      "result_id": "01fad0bf-35cb-4ff2-bed9-9962675dfb7a"
+    },
+    {
+      "claim_id": "ccd0c691-f709-4b29-9df3-d0748521a4ce",
+      "result_id": "01fad0bf-35cb-4ff2-bed9-9962675dfb7a"
+    },
+    {
+      "claim_id": "ed867eaf-f4d5-4d65-816f-3acfecf5a6a9",
+      "result_id": "01fad0bf-35cb-4ff2-bed9-9962675dfb7a"
+    },
+    {
+      "claim_id": "3fb33061-906f-48e9-a889-78ef52b4c37c",
+      "result_id": "01fad0bf-35cb-4ff2-bed9-9962675dfb7a"
+    },
+    {
+      "claim_id": "66cbc223-1ca5-4253-84ed-aa022758dc5b",
+      "result_id": "01fad0bf-35cb-4ff2-bed9-9962675dfb7a"
+    },
+    {
+      "claim_id": "da43c4c0-567e-4b57-b1a4-194a24339eac",
+      "result_id": "01fad0bf-35cb-4ff2-bed9-9962675dfb7a"
+    },
+    {
+      "claim_id": "7b790800-671b-40ea-85a2-45e1bd40b56e",
+      "result_id": "01fad0bf-35cb-4ff2-bed9-9962675dfb7a"
+    },
+    {
+      "claim_id": "a149ec0c-ec0a-48d8-adba-9a82ee011275",
+      "result_id": "01fad0bf-35cb-4ff2-bed9-9962675dfb7a"
+    },
+    {
+      "claim_id": "c33410dd-1335-4db7-b105-b7b67b5d71dc",
+      "result_id": "01fad0bf-35cb-4ff2-bed9-9962675dfb7a"
+    },
+    {
+      "claim_id": "957d9c8e-c5f0-45bc-9625-44391808198b",
+      "result_id": "01fad0bf-35cb-4ff2-bed9-9962675dfb7a"
+    },
+    {
+      "claim_id": "3405b810-cf0d-4e08-9c84-822a621d3e5c",
+      "result_id": "01fad0bf-35cb-4ff2-bed9-9962675dfb7a"
+    },
+    {
+      "claim_id": "dcb5cc58-82de-459c-8e43-d2ad0592a900",
+      "result_id": "01fad0bf-35cb-4ff2-bed9-9962675dfb7a"
+    },
+    {
+      "claim_id": "86611df8-1536-4a2a-ac9e-88d7e7d29abb",
+      "result_id": "5f9d62b0-03b3-4a30-a2e2-d315764a0bdb"
+    },
+    {
+      "claim_id": "361b11ce-547a-46c0-b22d-e77913c5004a",
+      "result_id": "5f9d62b0-03b3-4a30-a2e2-d315764a0bdb"
+    },
+    {
+      "claim_id": "66a84a26-5e32-4921-9d9c-690f11961f60",
+      "result_id": "01ed8197-413f-4414-8686-26d12e628072"
+    },
+    {
+      "claim_id": "b0ca6257-7ca0-496a-860b-c66286dad9d6",
+      "result_id": "01ed8197-413f-4414-8686-26d12e628072"
+    },
+    {
+      "claim_id": "51bf2af7-e4b4-4416-9ae4-5fa8899413e6",
+      "result_id": "01ed8197-413f-4414-8686-26d12e628072"
+    },
+    {
+      "claim_id": "7a5ccfbf-940f-4abf-8af8-2c4486c6b959",
+      "result_id": "01ed8197-413f-4414-8686-26d12e628072"
+    },
+    {
+      "claim_id": "f14f1f5f-8458-4fc9-8115-2b58bb37c46f",
+      "result_id": "01ed8197-413f-4414-8686-26d12e628072"
+    },
+    {
+      "claim_id": "463175c5-dff5-408d-b1e8-2b892a90c1a4",
+      "result_id": "01ed8197-413f-4414-8686-26d12e628072"
+    },
+    {
+      "claim_id": "ec54837d-b879-4696-b093-c86dc08f6ec4",
+      "result_id": "d64c0876-4567-405e-b3aa-e439e4542b3f"
+    },
+    {
+      "claim_id": "b6e84f28-3cac-428e-a9b0-452f9e78c294",
+      "result_id": "d64c0876-4567-405e-b3aa-e439e4542b3f"
+    },
+    {
+      "claim_id": "8d80a45f-b858-4623-b46c-0d487a3932b2",
+      "result_id": "d64c0876-4567-405e-b3aa-e439e4542b3f"
+    },
+    {
+      "claim_id": "251d5606-5e51-4758-8f23-c9134fd1380f",
+      "result_id": "d64c0876-4567-405e-b3aa-e439e4542b3f"
+    },
+    {
+      "claim_id": "1b038ee5-a370-412b-a1bd-30c58670d175",
+      "result_id": "d64c0876-4567-405e-b3aa-e439e4542b3f"
+    },
+    {
+      "claim_id": "465ab304-aae8-4e03-a902-3713439d49c5",
+      "result_id": "d64c0876-4567-405e-b3aa-e439e4542b3f"
+    },
+    {
+      "claim_id": "15726182-9e03-4c86-995a-7538b52bf505",
+      "result_id": "d64c0876-4567-405e-b3aa-e439e4542b3f"
+    },
+    {
+      "claim_id": "6d54265d-b966-4eb3-96bd-125f57ac6d00",
+      "result_id": "d64c0876-4567-405e-b3aa-e439e4542b3f"
+    },
+    {
+      "claim_id": "847d5c76-fcb3-4d55-be32-5c438ced7e0f",
+      "result_id": "d64c0876-4567-405e-b3aa-e439e4542b3f"
+    },
+    {
+      "claim_id": "d87d09f9-e2a3-42a1-8653-153f5e5e72df",
+      "result_id": "d64c0876-4567-405e-b3aa-e439e4542b3f"
+    },
+    {
+      "claim_id": "e218d991-3784-4a6e-922e-ff31af0b5674",
+      "result_id": "d64c0876-4567-405e-b3aa-e439e4542b3f"
+    },
+    {
+      "claim_id": "4136a4f7-ae54-4fc8-9b34-ba73d141c38a",
+      "result_id": "d64c0876-4567-405e-b3aa-e439e4542b3f"
+    },
+    {
+      "claim_id": "97036eae-5f5c-4b69-87d3-389169fad2ea",
+      "result_id": "d64c0876-4567-405e-b3aa-e439e4542b3f"
+    },
+    {
+      "claim_id": "f3d14c54-abe0-41dc-9621-0d62522de9d2",
+      "result_id": "d64c0876-4567-405e-b3aa-e439e4542b3f"
+    },
+    {
+      "claim_id": "f93eb177-3b64-4e4d-a474-16672fb15d77",
+      "result_id": "d64c0876-4567-405e-b3aa-e439e4542b3f"
+    },
+    {
+      "claim_id": "7f1d421f-0fe4-4fb8-873e-9e58aa4a0364",
+      "result_id": "a2235b5b-16cc-46fb-994f-6771c4f5a06d"
+    },
+    {
+      "claim_id": "54b0d00a-ee3d-4153-a0fc-5ac0406e3c8f",
+      "result_id": "a2235b5b-16cc-46fb-994f-6771c4f5a06d"
+    },
+    {
+      "claim_id": "6e8c525b-e06d-449e-8741-559736d42c5a",
+      "result_id": "a2235b5b-16cc-46fb-994f-6771c4f5a06d"
+    },
+    {
+      "claim_id": "f9e42a3a-e149-462c-8b1f-e7be76573452",
+      "result_id": "a2235b5b-16cc-46fb-994f-6771c4f5a06d"
+    },
+    {
+      "claim_id": "f4b2f611-6ffd-42cd-b40b-83c479e81430",
+      "result_id": "1ba0fed4-ece3-4dba-93d3-563a49d5b7f8"
+    },
+    {
+      "claim_id": "b058827d-4719-440d-816c-5a8b5df116eb",
+      "result_id": "1ba0fed4-ece3-4dba-93d3-563a49d5b7f8"
+    },
+    {
+      "claim_id": "16d8769e-84d9-45fe-ac30-77ad74eebe39",
+      "result_id": "1ba0fed4-ece3-4dba-93d3-563a49d5b7f8"
+    },
+    {
+      "claim_id": "fc1e5072-7fc5-436d-be58-04556bce217f",
+      "result_id": "0dbad9dc-5d71-4499-a2ca-ad540c515825"
+    },
+    {
+      "claim_id": "9587a683-a7d6-4960-8d90-b3414c4b0c45",
+      "result_id": "0dbad9dc-5d71-4499-a2ca-ad540c515825"
+    },
+    {
+      "claim_id": "fa6f05d7-1667-435e-8c71-5635c505e167",
+      "result_id": "0dbad9dc-5d71-4499-a2ca-ad540c515825"
+    }
+  ],
+  "comparisons": []
+}

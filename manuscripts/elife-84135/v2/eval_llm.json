@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "PD patients performing a visual-motor tracking task demonstrated increased tremor compared to controls (p=0.030), with tremor amplitude correlating with UPDRS resting tremor subscores (\u03c1=0.607, p=0.001). Movement slowness correlated with UPDRS hand open/close subscores (\u03c1=0.406, p=0.035), though speed differences between PD and controls were only significant in the random-pattern task version (p=0.027).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 provide converging behavioral validation evidence. The task successfully elicited measurable PD symptoms that correlated with clinical assessments, with appropriate statistical testing (LMM for group comparisons, Spearman correlations for clinical validation). The differential results across task versions are appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Tremor and slowness were inversely expressed in time (\u03b2=-0.584, p=2.00\u00d710\u207b\u2078\u00b3) and manifested on different timescales. Tremor episodes were sustained longer (FWHM=0.898s, median duration=2.000s) than slowness episodes (FWHM=0.297s, median duration=0.500s), while effective motor control was expressed on the longest timescales (FWHM=3.784s, median duration=7.900s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 demonstrate distinct temporal dynamics of motor states using autocorrelation analysis and state duration quantification. The extremely significant anti-correlation (p=2.00\u00d710\u207b\u2078\u00b3) and quantitative timescale differences provide strong evidence for distinct symptomatic states. Methods are appropriate for temporal characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C62"
+    ],
+    "result": "SVR decoding revealed that tremor and slowness had nearly opposite neural signatures in the STN. Microelectrode tremor decoding positively weighted \u03b8/\u03b1/\u03b2 (4-21 Hz) and hfo (275-375 Hz) frequencies, while macroelectrode tremor decoding negatively weighted \u03b2 (14-41 Hz) and positively weighted \u03b3/hfo (60-375 Hz). Slowness decoding showed opposite patterns, with macroelectrodes positively weighting \u03b2 (12-30 Hz) and negatively weighting \u03b3/hfo (33-375 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C29-C31, C33-C34, C62 demonstrate distinct spectral signatures for tremor and slowness using permutation testing to validate feature weights. The opposing patterns across frequency bands and recording types provide strong evidence for distinct neural fingerprints. However, the interpretation depends on the validity of the SVR approach and the permutation testing threshold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38"
+    ],
+    "result": "Effective motor control displayed unique neural features characterized by the absence of \u03b2 (10-28 Hz) power in both micro- and macroelectrode STN recordings (p<0.006), with macroelectrodes additionally exhibiting positive \u03b3 power weights (30-175 Hz, p<0.020). This distinguished effective motor control from both tremor and slowness states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C37-C38 establish a distinct neural signature for effective motor control. The permutation testing provides statistical validation, and the pattern (reduced \u03b2, increased \u03b3) is physiologically plausible and distinguishable from pathological states. The finding is consistent with prior literature on movement-related oscillations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Tremor-trained decoding models could not decode slowness, with slowness decoding performance being near zero for both microelectrode (r\u00b2=0.002\u00b10.001) and macroelectrode (r\u00b2=0.002\u00b10.001) recordings, compared to tremor decoding performance (micro: r\u00b2=0.232\u00b10.197; macro: r\u00b2=0.205\u00b10.172).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 provides critical validation that the distinct neural signatures are not simply inverted versions of each other. The near-zero cross-metric decoding performance (with highly significant differences, p<10\u207b\u00b2\u2074) demonstrates that tremor and slowness have unique, non-interchangeable neural fingerprints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Within the STN, tremor was better decoded from dorsolateral regions (stationary: x=-14.0, y=-13.0, z=-5.0, Z=2.116, p=0.017; high-density: x=-13.0, y=-13.0, z=-5.0, Z=1.911, p=0.028), while slowness was better decoded from central/ventromedial regions (stationary: x=-12.0, y=-14.0, z=-6.0, Z=1.911, p=0.028; high-density: x=-12.0, y=-15.0, z=-8.0, Z=1.937, p=0.026).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C42-C45 demonstrate anatomical segregation of tremor and slowness decoding within the STN using both stationary and high-density survey recordings. The spatial analysis with permutation-based statistics provides appropriate validation. The convergence between two independent recording approaches strengthens the finding, though the relatively modest Z-scores (1.9-2.1) suggest moderate effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Full-spectrum decoding significantly outperformed beta-only decoding for macroelectrode recordings across all three metrics (tremor, slowness, effective motor control; p<0.017) and for microelectrode recordings for slowness and effective motor control (p<0.025), but not for microelectrode tremor decoding (p=0.122).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 demonstrate that multi-spectral features provide superior decoding compared to \u03b2-band alone, supporting the importance of broad-spectrum analysis. The exception for microelectrode tremor decoding is appropriately noted and may reflect the importance of low-frequency features for tremor in microelectrodes. Statistical testing with LMM is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Cortical recordings revealed distinct representations of motor states. Tremor models had positive weights for \u03b8 frequencies (5-7 Hz, p=0.003), with a trending peak in lateral somatosensory cortex (T=1.700, p=0.093). Slowness decoding had significant peaks in medial motor (T=2.210, p=0.030) and somatosensory (T=2.340, p=0.022) cortices. Full-spectrum decoding was superior to beta-only for tremor and effective motor control (p<0.026) but not slowness (p=0.126).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C53-C55 establish cortical representations of motor states with spatial and spectral specificity. The statistical validation is appropriate, though the tremor peak is only trending (p=0.093). The differential benefit of full-spectrum decoding across metrics is consistent with the STN findings and supports metric-specific spectral signatures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Cortical decoding generally outperformed subcortical decoding. ECoG tremor decoding was superior to micro-STN (p=0.012) but only trended higher than macro-STN (p=0.317). ECoG slowness decoding was superior to both macro-STN (p=8.78\u00d710\u207b\u2076) and micro-STN (p=2.14\u00d710\u207b\u00b9\u00b2). ECoG effective motor control decoding was superior to micro-STN (p=0.002) but not macro-STN (p=0.755).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C56-C58 demonstrate cortical superiority for decoding motor states, particularly for slowness. The pattern of results (cortical > micro-STN consistently, variable comparison with macro-STN) is appropriately characterized. Statistical testing with LMM accounts for repeated measures. The finding aligns with prior literature cited in C71.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Local decoding models substantially outperformed pairwise cortical-subthalamic coherence-based models across all metrics (tremor: p=2.43\u00d710\u207b\u2075\u00b9; slowness: p=3.89\u00d710\u207b\u2074\u2077; effective motor control: p=1.73\u00d710\u207b\u00b2\u2074). Coherence-based slowness models positively weighted \u03b2 frequencies (12-26 Hz, p<0.0005) compared to tremor and effective motor control models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 demonstrate that local power features are more informative than inter-regional coherence for short-timescale decoding. The extremely significant differences and large effect sizes (r\u00b2 differences of 0.13-0.25) provide strong evidence. This finding has important implications for closed-loop DBS design, suggesting local sensing may be sufficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Individual tremor expression positively correlated with tremor decoding performance (\u03c1=0.442, p=0.031, n=24 patients), validating that the decoding approach captured symptom-specific neural activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 provides important validation that decoding performance scales with symptom severity. The moderate correlation (\u03c1=0.442) with adequate sample size (n=24) and significant p-value supports the specificity of the neural signatures. This addresses potential concerns about whether the models truly capture tremor versus other factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C26",
+      "C46",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The study acquired 203 microelectrode and 176 macroelectrode recordings from the STN, plus 31 ECoG contacts from 10 subjects. A total of 32 PD patients (27 in stationary experiments, 5 in high-density surveys) and 17 age-matched controls participated. Patients were off medications for \u226512 hours (UPDRS III: 48.3\u00b112.6), with 12 tremor-dominant subjects. No significant age difference existed between patients and controls (p=0.450), though there was a gender imbalance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C46, C86-C90 describe the study design and participant characteristics. Sample sizes are adequate for the analyses performed, and the medication washout period is standard for DBS surgery. The gender imbalance is acknowledged and contextualized with citations. The characterization of patient subtypes provides important context for interpreting results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The introduction establishes that PD is characterized by asynchronously expressed motor phenomena (tremor, bradykinesia) that respond variably to dopamine therapy and DBS. Prior work has shown that different PD subtypes have distinct STN oscillatory patterns, specific STN sites preferentially reduce individual motor signs, and these sites have specific cortical connectivity patterns. Current closed-loop DBS focusing on \u03b2 oscillations inadequately treats tremor in some cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C15 provide appropriate background context supported by citations to prior literature. These claims establish the rationale for the study by highlighting the heterogeneity of PD symptoms, limitations of current approaches, and prior evidence for anatomical/functional segregation. The claims are appropriately characterized as background knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The discussion contextualizes findings within prior literature, noting that individual frequency bands (\u03b8, \u03b2) have been correlated with tremor and bradykinesia, optimal stimulation sites correspond to the observed dorsolateral-tremor/ventromedial-slowness topography, and the co-occurrence of \u03b8 activity in STN and cortex is consistent with prior work on tremor-frequency propagation. The findings align with known STN functional subdivisions and cortical oscillatory patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C73 appropriately connect the study findings to prior literature through citations. The interpretations are generally well-supported, though some (e.g., C65 regarding zona incerta) are speculative. The discussion appropriately acknowledges both confirmatory aspects (e.g., \u03b2-bradykinesia relationship) and novel contributions (e.g., direct comparison of opposing signatures).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors propose that more dorsal STN contacts may better sense tremor signals while more ventral contacts may better identify bradykinesia signals, suggesting a more targeted neurophysiological approach to closed-loop DBS. They suggest future neuromodulation could sustain \u03b3 frequency targets of effective motor control, and that chronic cortical recordings could work with STN recordings to identify precise motor states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C80 present translational implications and future directions. While these are logical extensions of the findings (C78 is supported by the anatomical results), they remain speculative proposals for future work rather than demonstrated results. The suggestions are reasonable but would require prospective validation studies to confirm clinical utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors note that other studies have used more complex decoding techniques (hidden Markov models, logistic regression, Kalman filters) but argue their linear SVR approach was robustly able to fit patient- and symptom-specific models in an interpretable fashion, while acknowledging that computational complexity must be balanced against device limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 appropriately contextualize the methodological choices. The linear SVR approach is justified as providing interpretability and adequate performance (as demonstrated in the results), though the authors acknowledge this represents a tradeoff. The discussion of computational constraints for implanted devices is appropriate and supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Patients were withdrawn from dopaminergic medication for at least 12 hours prior to surgery, which may have exacerbated symptoms and potentially improved model decoding performance relative to models trained on medicated patients in natural settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 acknowledge an important limitation. The medication washout is standard for DBS surgery (C84 is factual), but the speculation about enhanced decoding performance (C85) is appropriately cautious. This represents a limitation for generalizability to chronic, medicated states, though it may have facilitated detection of neural signatures.",
+    "result_type": "MINOR"
+  }
+]

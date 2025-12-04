@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "TNF\u03b1 stimulation induces rapid, sustained, and non-oscillatory nuclear translocation of RELA in PDAC cell lines MIA PaCa2 and PANC1, with MIA PaCa2 cells showing higher and more sustained RELA nuclear localization compared to PANC1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26-C37 collectively demonstrate through live imaging and single-cell tracking that RELA nuclear translocation in PDAC cells is rapid, non-oscillatory, and sustained, with quantitative differences between MIA PaCa2 and PANC1 cell lines. The data include dose-response curves, peak amplitude measurements, time-to-peak analysis, and correlation analysis across timepoints, providing strong experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C99"
+    ],
+    "result": "Nuclear RELA translocation in response to TNF\u03b1 in PDAC cells is largely cell cycle independent, with minimal differences in peak RELA measurements between cell cycle stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C39, and C99 are supported by cell cycle analysis using PCNA-Scarlet as a marker (Figure 1\u2014figure supplement 1), showing minimal differences in RELA translocation responses across G1, S, and G2 phases. Statistical analysis confirms the lack of significant cell cycle dependence except for one specific condition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Bayesian network modeling predicts that RELA heterogeneity in PDAC cells is dependent on F-actin dynamics, with nuclear RELA predicted to depend on cytoplasmic actin and tubulin intensity rather than cell shape features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C40-C50 are supported by Bayesian network analysis of single-cell datasets from five PDAC cell lines (Figure 2). The models consistently predict dependencies between nuclear RELA and cytoskeletal features, particularly actin abundance and distribution. However, Bayesian networks represent probabilistic relationships and cannot establish causation without experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Following cytoskeletal drug perturbations, only cytoplasmic actin mean remained as an influencing variable on RELA, suggesting actin abundance is a key regulator of RELA nuclear localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by Bayesian network analysis of drug-perturbed cells (Figure 2F). The finding that only cytoplasmic actin mean persists as a RELA-influencing variable after perturbation strengthens the computational prediction, though direct experimental validation of the actin-RELA relationship would further support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "RNA-seq analysis identified 254 genes differentially expressed in response to TNF\u03b1, organized into seven clusters with distinct expression patterns based on TNF\u03b1 dose, duration, and RELA dependence, including cluster 3 containing the actin regulators ARHGAP31 and NUAK2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C64 are supported by comprehensive RNA-seq analysis with multiple TNF\u03b1 doses, timepoints, and I\u03baB-SR controls (Figure 3). The clustering analysis identifies distinct gene expression patterns, and the presence of known RELA targets in cluster 3 validates the approach. Statistical analysis (DESeq2) and biological replicates support the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C124",
+      "C131",
+      "C132"
+    ],
+    "result": "TNF\u03b1 induces RELA-dependent upregulation of the actin regulators NUAK2 and ARHGAP31, with ARHGAP31 being identified for the first time as a transcriptional target of TNF\u03b1 or RELA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C124, C131-C132 are supported by RNA-seq data showing dose-dependent upregulation of NUAK2 and ARHGAP31 by TNF\u03b1, with expression abrogated by I\u03baB-SR (Figure 3). The novelty claim for ARHGAP31 (C124) is reasonable based on the literature review presented, though comprehensive literature searches are difficult to verify.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "siRNA-mediated depletion of ARHGAP31 and NUAK2 altered TNF\u03b1-stimulated nuclear RELA dynamics in PDAC cells, establishing negative feedback loops regulating RELA activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C82-C87 are supported by live imaging experiments with siRNA knockdown (Figure 4). ARHGAP31 depletion consistently upregulated RELA in both cell lines at both timepoints, while NUAK2 effects were cell line and time-dependent. The feedback loop interpretation is reasonable given that these genes are RELA targets that regulate RELA activity, though the term 'negative feedback' may be oversimplified for NUAK2 given its complex dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "RNA-seq analysis revealed that RELB, REL, NFKB2, and NFKBIE expression depends on RELA nuclear translocation, while RELA, NFKB1, and other I\u03baB genes do not require RELA activation for expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 are supported by RNA-seq data comparing TNF\u03b1-treated cells with and without I\u03baB-SR (Figure 3\u2014figure supplement 1A). Statistical analysis (Wilcoxon tests with multiple test correction) identifies genes whose expression is RELA-dependent. The finding that NF-\u03baB/I\u03baB genes are 'early' genes is consistent with prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C107",
+      "C108"
+    ],
+    "result": "Co-immunoprecipitation and mass spectrometry revealed that RELA physically interacts with I\u03baB\u03b1, I\u03baB\u03b2, I\u03baB\u03b5, REL, NFKB1, and NFKB2 in MIA PaCa2 cells, with I\u03baB protein binding decreasing and NFKB1/NFKB2 binding increasing with TNF\u03b1 stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C75, C107-C108 are based on GFP-Trap/mass spectrometry data (Figure 3\u2014figure supplement 1B), but the experimental design has limitations. Only n=1 replicate for 0 and 10 ng/ml TNF\u03b1 and n=2 for intermediate doses is insufficient for robust quantitative conclusions. The qualitative findings about protein interactions are reasonable, but the quantitative changes with TNF\u03b1 dose require additional replicates for statistical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "siRNA knockdown experiments revealed that I\u03baB\u03b2 plays a significant role in suppressing TNF\u03b1-induced nuclear RELA in PDAC cells, and RELB regulates both early and late RELA translocation responses in MIA PaCa2 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81, C88-C91 are supported by live imaging with siRNA knockdown and AUC analysis (Figure 4). The experiments include appropriate controls (non-targeting siRNA, RELA siRNA), multiple biological replicates (n=3), and statistical analysis (Wilcoxon tests with multiple test correction). The findings reveal cell line-specific and time-dependent regulation of RELA by NF-\u03baB pathway components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "PDAC cells show atypical RELA dynamics compared to other cell types, with rapid nuclear translocation, peak localization at ~1 hour, but sustained non-oscillatory dynamics rather than oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are supported by comparison of current live imaging data with previous literature. The rapid translocation and 1-hour peak are consistent with other cell types, but the lack of oscillations and sustained nuclear localization distinguish PDAC cells. The comparison is strengthened by the use of endogenously tagged RELA-GFP rather than overexpression constructs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C103",
+      "C104",
+      "C109"
+    ],
+    "result": "The distinct non-oscillatory RELA dynamics in PDAC cells may be due to methodological differences (endogenous vs. exogenous tagging), cancer cell type-specific deregulation, or suppression of I\u03baB\u03b1-mediated negative feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96, C103-C104, C109 are speculative interpretations attempting to explain the observed differences. While the hypotheses are reasonable and supported by citations to relevant literature, they lack direct experimental validation. The failure to observe oscillations with NFKBIB or NFKBIE depletion (C109) provides some evidence against the I\u03baB hypothesis, but alternative mechanisms are not tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C110"
+    ],
+    "result": "Binding of RELA and REL is reduced with TNF\u03b1 in multiple cell types and in both human and mouse models, based on current Co-IP data and comparison with recent literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C111 combine current Co-IP/mass spec data (C73) with findings from Rahman et al., 2022 (C110). While the comparison is interesting, the current study's Co-IP data has limited replicates (n=1-2), and the comparison between human PDAC cells and mouse ear fibroblasts may not be directly equivalent. Additional replicates and validation would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Bayesian modeling consistently predicted that differences in cytoplasmic actin intensity and actin localization (cortical vs. cytoplasmic) are predictive of differences in nuclear RELA between single PDAC cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 are supported by multiple Bayesian network models across different datasets (Figure 2D). The consistency across models and conditions strengthens the prediction. However, these are computational predictions that would benefit from direct experimental validation of the actin-RELA relationship beyond the drug perturbation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C133"
+    ],
+    "result": "A feedback loop exists between RELA nuclear translocation and NUAK2 expression, analogous to NUAK2's regulation of YAP through actin polymerization and myosin activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C133 is supported by the combination of RNA-seq data showing NUAK2 is a RELA target (C131-C132) and siRNA data showing NUAK2 regulates RELA dynamics (C85-C87). The analogy to YAP regulation (Yuan et al., 2018) provides mechanistic context, though the specific molecular mechanisms in PDAC cells remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  }
+]

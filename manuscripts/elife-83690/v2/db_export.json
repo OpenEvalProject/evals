@@ -1,0 +1,2276 @@
+{
+  "submission": {
+    "id": "f4b2b2ec-fb7c-487a-a65a-bf2ea3a0b73e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:20:35.211702Z",
+    "updated_at": "2025-12-04T04:20:35.211702Z"
+  },
+  "content": [
+    {
+      "id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "submission_id": "f4b2b2ec-fb7c-487a-a65a-bf2ea3a0b73e",
+      "content_type": "manuscript",
+      "content_text": "# Metabolic model-based ecological modeling for probiotic design\n\n## Authors\n\n- James D Brunner<sup>1</sup> ([ORCID: 0000-0002-8147-2522](https://orcid.org/0000-0002-8147-2522)) \u2020\n- Nicholas Chia<sup>3</sup> ([ORCID: 0000-0001-9652-691X](https://orcid.org/0000-0001-9652-691X)) \u2020\n\n### Affiliations\n\n1. Biosciences Division, Los Alamos National Laboratory Los Alamos United States ([ROR:01e41cf67](https://ror.org/01e41cf67))\n2. Center for Nonlinear Studies, Los Alamos National Laboratory Los Alamos United States ([ROR:01e41cf67](https://ror.org/01e41cf67))\n3. Data Science and Learning, Argonne National Laboratory Lemont United States ([ROR:05gvnxz63](https://ror.org/05gvnxz63))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe microbial community composition in the human gut has a profound effect on human health. This observation has lead to extensive use of microbiome therapies, including over-the-counter \u2018probiotic\u2019 treatments intended to alter the composition of the microbiome. Despite so much promise and commercial interest, the factors that contribute to the success or failure of microbiome-targeted treatments remain unclear. We investigate the biotic interactions that lead to successful engraftment of a novel bacterial strain introduced to the microbiome as in probiotic treatments. We use pairwise genome-scale metabolic modeling with a generalized resource allocation constraint to build a network of interactions between taxa that appear in an experimental engraftment study. We create induced sub-graphs using the taxa present in individual samples and assess the likelihood of invader engraftment based on network structure. To do so, we use a generalized Lotka-Volterra model, which we show has strong ability to predict if a particular invader or probiotic will successfully engraft into an individual\u2019s microbiome. Furthermore, we show that the mechanistic nature of the model is useful for revealing which microbe-microbe interactions potentially drive engraftment.\n\n## Introduction\n\nMicrobiome research has come to encompass key areas of disease, ranging from infections (Antharam et al., 2013; Honda and Littman, 2012; Battaglioli et al., 2018) and cancer prevention (Moss and Blaser, 2005; Walther-Ant\u00f3nio et al., 2016; Kim et al., 2020) to systemic immune and neurological responses (Severance et al., 2016; Kang et al., 2014; Chen et al., 2016). The effect of the microbiome on health is now undeniable, and every year in the US over 400,000 people collectively spend $1 billion dollars on over-the-counter probiotics intended to alter their microbiome (Kristensen et al., 2016). Many of the purported interactions between microbes and health involve resident microbiota and their interactions with the host, i.e., the interface between microbial ecology and human health. The goal of microbiome-targeted interventions is therefore to promote health by \u2018restoring and maintaining the microbiota and the crucial health-associated ecosystem services that it provides\u2019 (Costello et al., 2012).\n\nDespite the many links between the microbiome and health, our ability to deploy probiotics to modify the microbiome as intended has been met with relatively little success (Mullard, 2016; Zhu et al., 2019; Yuan et al., 2017; Zhao et al., 2021; Wu et al., 2017; Lawson et al., 2019). Studies looking at the ecological effects of probiotic administration show that administration of a probiotic is not sufficient to alter the community in the desired way. Specifically, engraftment of the administered microbial species is often limited, with only one-third to one-half of patients showing any signs of medium- or long-term engraftment (Maldonado-G\u00f3mez et al., 2016; Pudgar et al., 2021). We offer the argument that probiotic interventions are primarily ecological in nature; their purpose is to reshape the complex microbial communities in our body in beneficial ways. Therefore, to predict whether a probiotic has the desired effects in the gut microbial community, we need more studies examining the ecology of probiotic interventions (Walter et al., 2018; van den Berg et al., 2022). A mechanistic, personalized approach to probiotic design\u2014one rooted in empirical metabolic data and ecological principles\u2014has the potential to propel the field forward.\n\nPrevious work trying to predict engraftment has been mostly restricted to fecal microbiome transplant (FMT) studies using non-mechanistic classifiers (Smillie et al., 2018; Podlesny et al., 2021). While potentially predictive, such classifier approaches are sensitive to the underlying assumptions or conditions in which the study is carried out. Because such models are built using statistical methods on data that is assumed to be uniformly collected, these models cannot be generalized to new circumstances. It would be unexpected to see predictions built from patients with diarrhea, undergoing bowel prep, taking antibiotics, and given an FMT accurately predict what happens in patients taking orally administered probiotics. For these reasons, more detailed mechanistic approaches, such as genome-scale metabolic modeling, have been recently explored as more generalizable alternatives (Heinken et al., 2021a; Heinken et al., 2021b; Dillard et al., 2021; Jenior et al., 2021).\n\nThe goal of this work is to examine the use of metabolic modeling-informed population dynamic approaches. This builds on top of related work in both constraint-based metabolic modeling and population models such as Lotka-Volterra (LV). It is worth highlighting that the use of dynamic flux balance analysis (FBA) for population models has also been a well-published approach. Despite these successes, there are a number of practical drawbacks for communities of high complexity such as labor-intensive interpretation and high computational complexity.\n\nPopulation models such as the generalized LV (gLV) model are popular tools for understanding microbial community dynamics in a mechanistic manner (Stein et al., 2013; Friedman et al., 2017; Angulo et al., 2019; Kuntal et al., 2019). However, these models are in general difficult to parameterize, with state-of-the-art gradient-matching procedures requiring somewhat dense time-longitudinal data with many replicates (Bucci et al., 2016). Furthermore, it has previously been shown that parameters fit from data to these models do not extend to novel environmental situations, and may even change with the addition of a new taxa to the community (Brunner and Chia, 2019; Momeni et al., 2017). These drawbacks make such mechanistic population models impractical for predicting engraftment. However, by leveraging metabolic modeling we are able to parameterize population models in a way that can be easily adapted to novel environments and does not require dense time-longitudinal data. This allows us to use these models to predict microbial engraftment into a community. See Figure 1 for a comparison of our method with standard parameter fitting.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83690/elife-83690-fig1-v2.jpg)\n\n**Figure 1.:** In this work, we leverage genome-scale metabolic modeling to parameterize population models with only genomic data from a single time-point. This is accomplished by modeling microbial interactions with their shared environment (colored circles in the left panel).\n\nGenome-scale metabolic models (GSMs) encode the metabolic pathways available in a cell, allowing simulation of cellular metabolism and growth (Lewis et al., 2012). These tools have been used extensively to understand and engineer microbial mono-cultures, and have recently begun to be used to understand and predict the composition and metabolic function of microbial communities (Chan et al., 2017; Diener et al., 2020; Kim et al., 2022). Community methods using GSMs often suffer from a number of drawbacks. These can include a focus on equilibrium states, high complexity and computational cost, and the difficulty of providing accurate GSMs for each community member. By layering simple, pairwise GSM community modeling with population models, we allow for prediction that includes transient behavior (e.g. how quickly an extinction happens within a community) and reduces computational complexity. The availability of accurate GSMs remains a major difficulty, but we demonstrate that progress can be made using algorithmically generated models from whole genomes.\n\nIn this paper, we present a method to predict engraftment of an invader into a microbial community in the following manner. First, we construct an interaction network of the microbial taxa found in a sample from the community using pairwise FBA with resource allocation constraints (Kim et al., 2022), which requires a GSM for each taxa. To construct the necessary GSMs, we matched taxa found in the sample to the genomes found in the RefSeq database (O\u2019Leary et al., 2016), and used these genomes to build models using ModelSEED (Seaver et al., 2021). A complete list of the genomes used can be found in Supplementary file 1. We then simulated pairwise growth using community FBA with growth media adapted from the AGORA genome-scale modeling project (Heinken et al., 2023); precise details are available in S1 Data.\n\nAfter network construction, we make a prediction based off of simulations with the gLV model (Edelstein-Keshet, 2005; Stein et al., 2013; Friedman et al., 2017), and test the model\u2019s predictive potential by predicting the outcomes of microbiome invasion experiments (Maldonado-G\u00f3mez et al., 2016) from the initial presence/absence of species in each sample. The LV model is widely used, but we found that this model could lead to uncontrolled simulated growth. We therefore also investigated alterations to the LV model that dampen the numerical instability.\n\nDespite the drawbacks to both population models and GSMs, limitations in our ability to construct high-quality GSMs, and the limited data requirement of our method, our method produces positive predictive value in the scenario in which it was tested. Our method therefore represents a \u2018low-budget\u2019 tool that nevertheless can be useful. This success is also evidence that more complex methods that expand on our simple approach could provide great predictive value with a still limited data requirement. Furthermore, we perform two types of sensitivity analysis to demonstrate that the mechanistic nature of the model provides additional insight into the impact of the various components of the network. We perform simulated knock-out experiments to test how sensitive engraftment is to each community member, and we use parameter sensitivity analysis to test how sensitive engraftment is to each network connection.\n\n## Results\n\n### Predictive value of the method\n\nWe first examine the ability of our metabolic modeling-based approach to successfully predict engraftment versus non-engraftment for different microbial species introduced orally across different experimental or clinical trial settings. The study that we use to test predictive power, authored by Maldonado-G\u00f3mez et al., 2016, involved the introduction of candidate probiotic into an established microbial community. In the study, Bifidobacterium longum AH1206 was administered as an oral probiotic to 23 subjects, with data available for 22 of these subjects. We predicted engraftment of the candidate probiotic using the \u2018baseline\u2019 samples, which were taken before introduction of the probiotic, and the \u2018treatment\u2019 samples, which were taken during probiotic administration. We compared our predictions to a binary \u2018engrafter\u2019 or \u2018non-engrafter\u2019 classification based on cell culture at later time-points.\n\nAs a metric of classification success for the data set, we use the area under the curve of the receiver operator characteristic (AUC-ROC). This metric provides a measure of performance based on the model\u2019s ability to identify true positives while avoiding false positives, so that 1 is perfect classifier performance and o.5 is equivalent to random classification (i.e. flipping a coin for each sample). We used six sets of parameters inferred from joint FBA with different hyperparameters to parameterize the gLV model, and report the resulting predictive value in Table 1.\n\n**Table 1.**\n Area under the receiver operating characteristic curves for our method\u2019s predictions of 22 samples from each of two time-points (TP) using six sets of parameters inferred from joint flux balance analysis (FBA) with six different sets of hyperparameters.The first three sets of inferred parameters differ in the \u2018resource allocation constraint (RAC)\u2019 in joint FBA. We used values of 35 and 70 for this parameter, as well as using joint FBA without RAC. The next three sets of parameters were inferred using an RAC value of 35 but changes to the model environments. EU average diet (C halved/doubled) had the major carbon sources of the \u2018EU average diet\u2019 (D-maltose, sucrose, D-fructose, and D-glucose) halved or doubled in availability, and \u2018complete medium\u2019 simulated the availability of any exchangeable metabolite at uniform simulated inflow.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Baseline TP (p-value)</th>\n      <th>Treatment TP (p-value)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>EU average diet (RAC 35)</td>\n      <td>0.6161 (0.1020)</td>\n      <td>0.8482 (&lt;0.001)</td>\n    </tr>\n    <tr>\n      <td>EU average diet (No RAC)</td>\n      <td>0.6161 (0.1020)</td>\n      <td>0.8571 (&lt;0.001)</td>\n    </tr>\n    <tr>\n      <td>EU average diet (RAC 70)</td>\n      <td>0.6429 (0.0741)</td>\n      <td>0.8482 (&lt;0.001)</td>\n    </tr>\n    <tr>\n      <td>EU average diet (C halved)</td>\n      <td>0.6071 (0.1107)</td>\n      <td>0.8393 (&lt;0.001)</td>\n    </tr>\n    <tr>\n      <td>EU average diet (C doubled)</td>\n      <td>0.6339 (0.0808)</td>\n      <td>0.8304 (0.0010)</td>\n    </tr>\n    <tr>\n      <td>Complete medium</td>\n      <td>0.6071 (0.1155)</td>\n      <td>0.7143 (0.0221)</td>\n    </tr>\n  </tbody>\n</table>\n\nOur method showed moderate positive predictive value on predictions from the baseline samples, and good predictive value on predictions made from samples taken during treatment. Improved prediction between baseline and treatment samples suggests that a change in microbiome as a response to the introduction of the probiotic impacts our method. This in turn suggests that our method captures at least part of the underlying biological processes that determine engraftment. Furthermore, these results were mostly robust to choice of hyperparameters, with the exception being that the complete medium showed significantly worse predictive value on the samples taken during treatment.\n\nIn Figure 2, we show the estimated significance of our results when compared to the null model (720 samples of the null model). We use an approximate \u2018edge swapping\u2019 procedure as a null model, which draws interaction parameters randomly from the set of inferred interaction parameters, with replacement. In other words, our null model shuffles the original set of interaction parameters so that any $\\beta_{ji}^{N}$ in the null model is some $\\beta_{ji}$ in the inferred parameter set. This ensures that the network of interactions in our null model has the same edge weight distribution as that of our inferred model so that we may test the significance of the interactions inferred, rather than summary statistics such as diversity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83690/elife-83690-fig2-v2.jpg)\n\n**Figure 2.:** (A, B) The power to predict engraftment versus non-engraftment of the B. longum probiotic was relatively robust to the joint flux balance analysis (FBA) hyperparameter setup, as shown and measured by the area under the receiver operator characteristic curve (AUC-ROC) (with 1 being perfect classification of engraftment and 0.5 being random). The null model had generally less predictive power than inferred parameters, in particular when predictions were made with samples from the \u2018treatment\u2019 time-point. The overall improvement in predictions for the \u2018treatment\u2019 time-point vs. the \u2018baseline\u2019 time-point suggests that early changes to the microbiome after introduction of a probiotic play a significant role in determining eventual engraftment. p-Values were estimated based on over 1000 samples from a null model.\n\nWe also compared our method with two standard machine learning techniques: a support vector machine (SVM) and a random forest (RF) classifier. Unlike our method, which does not use known classifications to \u2018learn\u2019 a model, both of these techniques require a \u2018training\u2019 set of data in which samples are labeled according to their known classification. We trained these models on 16 of the 22 samples (\u223c70% of the data), and tested their ability to predict the remaining 6 samples. We repeated this procedure 1000 times with randomly chosen testing/training sets. For both classifiers, we used the relative abundance data of the set of taxa that our model considered, as well as binarized presence/absence version of the data. We did this because our method only considers presence or absence of taxa, rather than relative abundance. The SVM classifier did not outperform random assignment, while the RF classifier performed, on average across train/test splits, about as well as our method. Our method, therefore, provides the same ability to classify unknown samples as an RF classifier without the need for any a priori known sample classifications (Figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83690/elife-83690-fig3-v2.jpg)\n\n**Figure 3.:** (A) Our method (horizontal lines) significantly outperformed the support vector machine classifier, which was assessed with 1000 random train/test splits. (B) The random forest classifier, also assessed with 1000 train/test splits, performed similarly on average to our method.\n\n### Uniform shifts in interaction parameters\n\nOne consequence of using the gLV model in our method is the possibility of finite-time blow-up in simulation. This happens when one or more taxa approach infinite biomass in finite simulation time. In practice, whenever one or more taxa increase to a level much higher than the initial total biomass of the simulated system, simulation is slowed down and results may be less reliable. There are two simple methods to prevent this from happening. The first is to alter every interaction parameter to be more negative (see Equation 3), making the system uniformly more antagonistic and less likely to show finite-time blow-up. The second is to include negative self-inhibition (e.g. add $\\beta_{ii}<0$ parameters [see Equation 4]).\n\nWe tested both of these alterations by implementing them and computing predictions and the AUC-ROC of those predictions. Figure 4 shows that these changes did not have a significant impact on the performance of our predictions, as long as only antagonism was considered. When we shifted parameters in the positive direction (simulating commensalism or mutualism), finite-time blow-up was more likely and our results were much less stable.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83690/elife-83690-fig4-v2.jpg)\n\n**Figure 4.:** (A, B) We altered the generalized Lotka-Volterra model with uniform shifts in parameters which added either antagonism or self-inhibition to the model. We tested self-inhibition with values from 0 to 1 (no self-promotion) and antagonism with values from 1 (complete antagonism) to \u20131 (complete commensalism), with all $\\beta_{ij}\\in[0,1]$. Neither change had a significant impact on the area under the receiver operator characteristic curve (AUC-ROC) of our method\u2019s predictions, although adding commensalism to the model made the model and resulting predictions much less stable due to increased finite-time blow-up.\n\n### Interpreting mechanism\u2014sensitivity to inferred parameters\n\nOne major advantage to any mechanistic model is that we may measure the sensitivity of our results to perturbations in the model. Here, we investigate the results of perturbing the model of the B. longum experiments in two ways: simulating \u2018knock-out\u2019 experiments and computing sensitivity to changes in interaction strength.\n\nFirst, we simulate knock-out experiments by removing a taxa from the full network of interactions. As a result, this organism will be removed from any sample it was previously present in. We then measure the effect this has on our prediction of B. longum\u2019s likelihood of engrafting based on the LV dynamics.\n\nNext, we measure the sensitivity of B. longum growth to each interaction parameter in the LV model. That is, we measure the effect of perturbing each parameter individually on the simulated abundance of B. longum at equilibrium according to antagonistic LV dynamics.\n\n#### Sensitivity to community members\n\nIn order to investigate how sensitive B. longum engraftment is to each of the other species present in any sample of the B. longum experimental data set, we simulate \u2018knock-out\u2019 experiments and observe the effect this has on our prediction of engraftment. For each simulated knock-out, we removed a taxa from every sample it was present in and repeated our predictive procedure. We recorded the difference in sample score for engraftment of B. longum (Equation 2) as well as the change in AUC-ROC of our set of predictions. We simulated knock-outs for the five most abundant taxa in the data (averaging across samples).\n\nTable 2 shows the summary statistics of the simulated knock-out experiments. Of the five knock-outs and two sample time-points that we tested, all but one increased predicted engraftment by a slight amount. Interestingly, most of these also increased prediction accuracy slightly, suggesting that the increase in engraftment was more pronounced among the true engrafter samples.\n\n**Table 2.**\n We experimented with simulated knock-outs for the top 5 taxa in average abundance in the data.The \u2018sample proportion\u2019 column gives the proportion of samples in the data set that contain the organism that was knocked out. The \u2018average score difference\u2019 is the average effect of the knock-out on our computed engraftment score, with a positive number indicating an average increase in engraftment after knock-out of the organism (implying a negative interaction between the organism and B. longum). The final column shows the impact on our predictions of removing the organism from the analysis.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>Sample proportion</th>\n      <th>Average score difference</th>\n      <th>AUC-ROC difference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Baseline TP</td>\n      <td>Bifidobacterium adolescentis</td>\n      <td>0.954545</td>\n      <td>0.010114</td>\n      <td>0.017857</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Uncultured Ruminococcus sp.</td>\n      <td>1.000000</td>\n      <td>0.012803</td>\n      <td>0.026786</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Uncultured Clostridium sp.</td>\n      <td>1.000000</td>\n      <td>0.006259</td>\n      <td>\u20130.008929</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Eubacterium rectale</td>\n      <td>1.000000</td>\n      <td>0.006183</td>\n      <td>0.017857</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Faecalibacterium prausnitzii</td>\n      <td>1.000000</td>\n      <td>\u20130.002250</td>\n      <td>0.000000</td>\n    </tr>\n    <tr>\n      <td>Treatment TP</td>\n      <td>B. adolescentis</td>\n      <td>0.954545</td>\n      <td>0.015415</td>\n      <td>0.000000</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Uncultured Ruminococcus sp.</td>\n      <td>1.000000</td>\n      <td>0.016707</td>\n      <td>0.008929</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Uncultured Clostridium sp.</td>\n      <td>1.000000</td>\n      <td>0.014424</td>\n      <td>0.017857</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>E. rectale</td>\n      <td>1.000000</td>\n      <td>0.011133</td>\n      <td>0.026786</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>F. prausnitzii</td>\n      <td>0.954545</td>\n      <td>0.013323</td>\n      <td>0.035714</td>\n    </tr>\n  </tbody>\n</table>\n\nThis experiment demonstrates that incorporating mechanism into prediction can provide useful insight beyond prediction. Because our model considers the network of interactions between microbial taxa, we are able to experiment with the effects of each individual taxa by using simulated experiments like knock-outs.\n\n#### Sensitivity to interactions\n\nOur method is based on the network of interactions between microbial species, which ties together the individual interactions between each pair of species into one complex picture. This means that the interaction between two species unrelated to B. longum may have an effect on B. longum\u2019s growth. We can compute this effect by computing how B. longum\u2019s simulated abundance changes as we vary each parameter. Precisely, we can compute the derivative of B. longum with respect to each parameter $\\beta_{lk}$ in the model.\n\nWe computed the sensitivity of our engraftment score to 8 of the interaction parameters in the model, using an RAC value of 35 and the \u2018EU average diet\u2019. For each of the baseline and treatment time-point sample sets, we chose the 2 strongest negative and 2 strongest positive interactions that appeared in at least half of all samples, as well as the 2 strongest positive and 2 strongest negative interactions that have B. longum as a target (and so act directly on the probiotic) that appeared in at least half of all samples. We observed that engraftment score was very sensitive to all the parameters chosen. In Table 3, we show the average sensitivity across the 22 baseline and 22 treatment samples and 8 edges, as well as the average (across edges) variance across the samples. We also include the average (across samples) of the variance in engraftment score across the hyperparameter choices that we tested (with different environmental conditions and RAC values) for comparison. We notice that, in contrast to the model interaction parameters $\\beta_{lk}$, engraftment score was not particularly sensitive to hyperparameter choices.\n\n**Table 3.**\n The average sensitivity of engraftment score across 8 parameters and the 22 baseline and 22 treatment samples, as well as the average (across samples) variance across the 8 edges.The 8 edges were chosen because they were the 2 strongest positive edges, 2 strongest negative edges, the 2 strongest positive direct edges (i.e. with B. longum as a target) and the 2 strongest negative direct edges. Detailed sensitivity results for these 8 edges can be found in Supplementary file 1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Baseline time-point</th>\n      <th>Treatment time-point</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Variance across setups</td>\n      <td>4.270608e-06</td>\n      <td>2.621430e-05</td>\n    </tr>\n    <tr>\n      <td>Average sensitivity (8 tested edges)</td>\n      <td>3.435107e+33</td>\n      <td>7.504735e+10</td>\n    </tr>\n    <tr>\n      <td>Variance of sensitivity (8 tested edges)</td>\n      <td>6.250203e+68</td>\n      <td>1.626682e+23</td>\n    </tr>\n  </tbody>\n</table>\n\n## Discussion\n\nOur work examines the scenario where the goal of probiotic intervention is a long-lasting alteration of the resident host microbiota. Given that the links between microbes and health have a basis in observations of the resident human microbiota (Gupta et al., 2020), one common assumption is that alterations to resident microbiota would impact health outcomes. Along those lines, we demonstrate that genome-scale metabolic modeling can be used in a simple way to predict the outcome of species invasion experiments with minimal study data required. This suggests that GSMs can provide value in understanding microbial community dynamics from cross-sectional microbiome relative abundance profiling.\n\nGenome-scale metabolic modeling uses genomic data to predict the growth and resource use of a microbial population by considering the entire internal metabolism of the species. This technique can be extended to community modeling in a number of ways (Zomorrodi and Maranas, 2012; Chan et al., 2017; Diener et al., 2020; Kim et al., 2022; Frioux et al., 2020), all with relatively high levels of complexity. Community dynamics can be inferred from GSMs using a model known as dynamic FBA, which uses a GSM for each taxa in the community to infer growth rates and dynamic resource usage (Brunner and Chia, 2020). While dynamic FBA provides a complete picture of community dynamics according to GSMs, it represents a very complex model that is difficult to analyze and simulate, and still contains a set of unknown parameters.\n\nAs a limitation, it is worth noting that all GSM-based methods, including our own, are limited to a large extent by the accuracy of the metabolic model reconstructions. Low-quality reconstructions often omit key reactions, or worse, may include reactions that should not have been included. In all cases, this creates the potential for reaction fluxes or interactions that do not reflect reality. Improving the quality of metabolic model reconstruction is the subject of challenging and nuanced research that includes automated pipelines (Benedict et al., 2014; Seaver et al., 2021; Faria et al., 2023) and hand-curation efforts (Heinken et al., 2023). These efforts are essential to improve the accuracy of community metabolic modeling, but are beyond the scope of this particular study.\n\nHere, we present a simpler model\u2014a network of emergent interactions between microbes, whose interaction parameters we can approximate from pairwise genome-scale modeling. The gLV model and other similar microbial network models are popular tools for understanding community dynamics (Friedman et al., 2017; Fisher and Mehta, 2014; Angulo et al., 2019; Bucci and Xavier, 2014). Such models are difficult to parameterize for a myriad of reasons. Good parameterization requires relatively dense time-longitudinal data of absolute, rather than relative, community abundance (Bucci et al., 2016; Kuntal et al., 2019). By taking advantage of GSMs, we provide a parameterized network that does not require any time-longitudinal data. In fact, our method as presented here makes use of previously published GSMs or genomes, meaning that only binary presence/absence information is necessary for a prediction. Additionally, GSMs can be built directly from the genomes found in a sample using automated tools such as CarveMe (Machado et al., 2018) or ModelSEED (Seaver et al., 2021), meaning that our method can be extended to include taxa not found in any database.\n\nAnother strength of our approach is its interpretability. The B. longum engraftment analysis provides us with an example motivation, which would be to identify other partner microbes that could improve the responsiveness to the engraftment of a target probiotic. In this instance, we demonstrate how this might be done by quantifying the impact of five high-abundance microbes on B. longum engraftment. We see, for example, that B. adolescentis has a negative impact on B. longum engraftment (simulated knock-outs increased engraftment score), while F. prausnitzii has a positive impact on B. longum engraftment. Although time consuming, a complete set of simulated knock-out experiments is is readily possible using our method, which could identify the largest positive and negative relationships between specific taxa and B. longum engraftment.\n\nInspecting the sensitivity of our method\u2019s engraftment score revealed that it is very sensitive to the individual interaction parameters $\\beta_{lk}$ but quite robust to changes in hyperparameters. This suggests that the method is sensitive to the interactions between microbes, while robust to changes in computational and environmental parameters. It also suggests that individual interactions between microorganisms can have an out-sized impact on the downstream composition of a microbial community. This is consistent with the idea that probiotics may have a role in treating human disease by reorganizing the microbiome through the addition of one or a few species.\n\nLastly, we note that we have previously shown that species-species interaction modeling, i.e., models built from interactions between microbes, do not capture the complexities of microbial community dynamics that emerge as communities change in composition (Brunner and Chia, 2019). Here, we mitigate this shortcoming by determining interaction parameters from pairwise models under specific metabolic conditions, providing limited environmental context to our method. However, it is unlikely that these interactions remain constant as the microbial community manipulates its environment. We conjecture that prediction can be improved by accounting for changes in microbial interaction as the environment changes. In upcoming work (Brunner et al., 2023), we demonstrate that dynamic FBA implies that a microbial community behaves according to a discrete sequence of interaction networks over time. Incorporating this dynamic behavior may improve prediction with only a modest increase in model complexity, as long as this sequence of networks can be efficiently determined.\n\n## Methods\n\nOur method, as shown in Figure 5, is based on the generalized Lotka-Volterra model. Using genome-scale metabolic models, we infer interaction parameters from pairwise joint flux balance analysis for all pairs of taxa in a dataset. We then predict engraftment of an invader for each sample by simulating the invasion using the generalized Lotka-Volterra dynamics with the taxa present in the sample.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/83690/elife-83690-fig5-v2.jpg)\n\n**Figure 5.:** In brief, we generate an interaction network of genome-scale models using pairwise joint flux balance analysis. To produce a prediction of engraftment for a given sample, we use the taxa present in the sample to generate an induced sub-graph of the full network. This is then used to define the parameters in the generalized Lotka-Volterra dynamical system to generate a prediction of engraftment.\n\n### Assessing receptivity with the gLV model\n\nIn order to assess how receptive a sub-graph is to an invading taxa, we used the gLV model, which can be associated with any pairwise graph. We simulated the community represented by each sample to equilibrium and scored the performance of the invading taxa by simulated final abundance or time to extinction.\n\nThe gLV model (Edelstein-Keshet, 2005) of a community of $N$ species is written as follows:\n\n$$\n\\frac{dx_{i}}{dt}=x_{i}(1+\\sumj\\neqi\\beta_{ji}x_{j}).\n$$\n\nNotice that we use a version of this model that assumes an intrinsic growth rate of 1 for each taxa because fitting accurate intrinsic growth rates would require additional data, while we wish to assess the performance of our methods without the need for parameter fitting. Our predictions were based on the equilibrium relative abundance of the target variable (e.g. the variable representing a candidate probiotic) in the dynamical system.\n\nThe gLV model can display an array of behaviors, including multi-stability and chaos. For this reason, we use a Monte-Carlo sampling approach to generating predictions, taking repeated random draws of initial conditions and simulating forward. In our experiments, we used 1000 draws (i.e. we compute 1000 separate ODE so) for each sample. In each trial, we scored the network based on the simulated relative abundance of the invader at some large time $T$. It is possible that the invading taxa either dominates the community (i.e. relative abundance approaches 1) or becomes extinct in our simulation. We take this into account by setting a score as follows:\n\n$$\ns_{i}=\\frac{1}{3}(\\frac{time to extinction}{T}+relative abundance at time\u00a0T+\\frac{time to community dominance}{T})\n$$\n\nfor each trial $i$ and averaging over all trials.\n\nTo test changes in the structure of the gLV model and control for possible finite-time blow-up of model solutions, we tested two general alterations to the model. The first is a constant shift of the interaction parameters:\n\n$$\n\\frac{dx_{i}}{dt}=x_{i}(1+\\sumj=1N(\\beta_{ji}\u2212c)x_{j})\n$$\n\nand the second is a shift only in the self-interaction terms:\n\n$$\n\\frac{dx_{i}}{dt}=x_{i}(1\u2212cx_{i}+\\sumj\\neqi\\beta_{ji}x_{j}).\n$$\n\nFor both alterations, we used a single constant $c$ across the entire model, and experimented with changes in the value of $c$.\n\n### Inferring interaction parameters\n\nTo infer the interaction parameters $\\beta_{ji}$ of the dynamical system, we use a network of interactions implied by a technique known as FBA. FBA is a technique used to predict growth rates of microbes using genome-scale information about their internal metabolisms (Lewis et al., 2012). This technique requires a GSM which represents the set of metabolic pathways of a microbe, as well as information about the environmental metabolites available. An optimization problem is then solved to predict a growth rate of the microbe. Similarly, a technique known as \u2018joint FBA\u2019 (Zomorrodi and Maranas, 2012; Chan et al., 2017; Kim et al., 2022) can be used to estimate growth rates of pairs of microbes using a GSM from each microbe.\n\nFBA and joint FBA allow us to simulate singleton and pair growth experiments in silico and use the results of these simulated experiments to parameterize our dynamical model. Simulated biomass when grown in a pair was compared to simulated biomass when grown alone in order to determine an implied interaction between microbes. This interaction is then used as a parameter in the dynamical model, which can be conceptualized as an edge in a network of interactions.\n\nTo compute growth simulations, we use joint FBA with a set of resource allocation constraints, which have been shown to improve predictions in pairwise experiments (Kim et al., 2022). Briefly, joint FBA with resource allocation constraints solves a linear program defined by the GSMs of the community members. The linear program maximizes total community biomass with the standard FBA constraints as well as the added constraints that each microbe grows a fixed known rate (simulating chemostatic equilibrium), that mass is balanced community wide (with inflow and outflow of nutrients), that there is forced leak of nutrients out of the community (introduced by Kim et al., 2022 to prevent unrealistically efficient cross-feeding), and that each community member\u2019s total internal reaction flux is bounded (the resource allocation constraint). Our problem setup is identical to that described in Kim et al., 2022, and we provide Python code to carry out the computation in our supplemental repository.\n\nTo perform joint FBA, simulated inflow of nutrients was determined by medium defined as \u2018EU average diet\u2019 by the Virtual Metabolic Human project (Noronha et al., 2019; Ern\u00e4hrungsbericht and Elmadfa, 2012), with inflow of 10 mmol/day for nutrients not included in the medium but essential for simulated growth. Growth rates of microorganisms were set to be 0.04 g/day, and forced leak of nutrients was set to be 0.1 mmol/day. For our main experiment, we set the RAC constraint to 35 mmol/day as was shown to lead to accurate prediction in Kim et al. We also adjusted this value, as well as the defined medium, in order to assess our method\u2019s robustness to meta-parameters.\n\nIn order to test the impact of joint FBA hyperparameters including medium and resource allocation on our predictions, we also created networks of interaction parameters by performing joint FBA with five alternative sets of hyperparameters. Two of these networks were made with alterations to the RAC constraint we used in computing joint FBA. We computed interactions using an RAC value of 70, which relaxes the constraint on total flux, and without a resource allocation constraint. The final three networks were constructed with different media, simulating differences in the external environment. We constructed a network with the major carbon sources of the \u2018EU average diet\u2019 halved in availability, and a second with these carbons doubled. The major carbon sources were taken to be D-maltose, sucrose, D-fructose, and D-glucose. Finally, we computed a network with a \u2018complete medium\u2019 in which any exchangeable metabolite for each model was made available with uniform simulated inflow.\n\nWe use the log-ratio of simulated growth in pairs and alone as the implied effect of one microbe on another. That is, if simulated growth of species $i$ alone is $x_{i}$, and growth of species $i$ when coupled in a pair with species $j$ is $x_{ij}$, we weight the edge from species $j$ to species $i$ as\n\n$$\nw_{ji}^{\u2217}=log\u2061(\\frac{x_{ij}}{x_{i}})\n$$\n\nWe use the log-ratio because it is the simplest choice of translating simulated data to interaction that accounts for fold-changes. Of course, the simple difference in simulated biomass is another possible choice, but this will be much more sensitive to absolute scaling in simulation, so, for example, slow growing taxa will be biased toward smaller interactions in the network. Furthermore, our in silico growth experiments only provide simulated biomass values at chemostatic equilibrium, meaning that fitting LV parameters directly to these data is an underdetermined problem, particularly when pair growth leads to a simulated extinction.\n\nWe also re-scale our network so that all edge weights are in the interval $[\u22121,1]$, meaning we take as our edge weights\n\n$$\nw_{ji}=\\frac{w_{ji}^{\u2217}}{maxl,k(|w_{lk}^{\u2217}|)}.\n$$\n\nThis re-scaling is done for computational convenience, and can be viewed as a time re-scaling of the network dynamics which does not effect our predictions. Additionally, we tested the approach after adjusting either all parameters by addition of a single constant value to every $\\beta_{ji}$, as well as by adjusting the parameters by addition of a single constant value to every self-regulatory parameter $\\beta_{jj}$.\n\n### Creation of GSMs\n\nIn order to carry out our analysis, we needed to construct GSMs for the taxa found in the data. To do this, we matched taxa in the data by NCBI taxa ID to genomes in the NCBI RefSeq database (O\u2019Leary et al., 2016). We matched taxa to the nearest (by tree distance according to NCBI\u2019s taxonomic database) genome that was listed as \u2018Chromosome\u2019 or \u2018Complete Genome\u2019, or contained at least 1000 genes. On average, this approach allowed us to perform our experiments with \u223c87\u201388% coverage of each sample. Taxa for which we failed to match a genome were removed from the data, and all analysis was performed on the remaining. For full details on the coverage of each sample, see Supplementary file 1.\n\nNext, we used the ModelSEED database through ModelSEEDPy (Seaver et al., 2021) to reconstruct 390 GSMs for each genome that we matched to the data. All models constructed showed positive 391 simulated growth rates using FBA on the \u2018EU average diet\u2019 medium.\n\n### Prediction and evaluation\n\nWe used data from Maldonado-G\u00f3mez et al., 2016, in order to test the predictive power of the method. This data consisted of bacterial community composition of fecal samples taken over the course of experiments in which B. longum AH1206 was administered as an oral probiotic to 23 subjects, with data available for 22 of these. Subjects were then differentiated into \u2018engrafters\u2019 and \u2018non-engrafters\u2019 based on the survival of the probiotic strain, as determined by cell culture at later time-points, allowing us to use our method as a classifier. We note that our method \u2018learns\u2019 using joint FBA, and so there is no need to split the data into training and testing sets. In fact, the \u2018learning\u2019 procedure does not make use of any known sample classifications, as a traditional machine learning algorithm would. This allows us to test our predictions on the entire data set, which provides greater confidence in our results. We made and evaluated predictions using two sets of samples, one taken at a \u2018baseline\u2019 time-point before administration of the the probiotic, and one taken at a \u2018treatment\u2019 time-point during administration of the probiotic.\n\nWe computed scores for each sample using simulation to time $T=100$, and varied the discrimination threshold for the binary prediction across the observed values. From this, we computed an ROC curve and its integral (commonly referred to as finding the \u2018AUC-ROC\u2019). AUC-ROCs take values in the interval [0, 1] and, in general, an AUC-ROC greater than 0.5 indicates positive predictive value of the model. We compared the AUC-ROC to classification using SVM and RF classification (Pedregosa et al., 2011). The SVM and RF classifications were performed using both the relative abundances from the data and binary (presence/absence) forms of the data, which matches our method.\n\nWe estimated the significance of our predictions against predictions from a null model created by parameterizing an LV system from an \u2018edge-swapped\u2019 full network. The \u2018edge-swapped\u2019 network was constructed by drawing edge weights from the original full network, with replacement, as is commonly done to create a null model in network analysis (R\u00f6ttjers et al., 2021). This approach allows us to create random models that preserve the statistical characteristics of the models that we test on, while changing the specific interactions between taxa. That is, the distribution of the entire set of parameters in the null models $\\beta_{ij}^{N}$ will be approximately the same as the distribution of parameters $\\beta_{ij}$ determined by joint FBA. Using this null model ensures that our conclusions are drawn from the joint FBA parameter learning method, and not simply a result of simpler characteristics, e.g., total connectedness of the community. We used 1039 samples from the null model to estimate the significance of our results.\n\n### SVM and RF classification\n\nWe compared the performance of our method to the performance of two traditional machine learning approaches: SVM and RF classifiers. We used 1000-fold cross-validation of the predictions made by these tools (i.e. 1000 independent train/test splits). Each trial consisted of splitting the data randomly into 16 training samples and 6 testing samples, fitting both an SVM and an RF classifier to the training samples using standard Python libraries (from scikit-learn v. 0.23.2; Pedregosa et al., 2011), and evaluating the 432 model\u2019s predictions of the testing samples. This was repeated for both the \u2018baseline\u2019 and \u2018treatment\u2019 sets of samples.\n\n### Sensitivity to community members and interaction parameters\n\nWe compute B. longum AH1206 engraftment predictions using simulated knock-out experiments simply by removing select taxa from the model. The result is a prediction score computed according to Equation 2. This score can be compared to the non-knock-out experiment score to determine if the knock-out increased or decreased the predicted probability of B. longum engraftment. We compute and report the relative change in predicted engraftment score as\n\n$$\n\u0394=\\frac{(score with knock-out taxa removed)\u2212(score with knock-out taxa included)}{(score with knock-out taxa included)}.\n$$\n\nWe compute the sensitivity of B. longum\u2019s growth to an interaction parameter $\\beta_{kl}$ directly by using the chain rule (see, for example, Zi, 2011). This has the following form:\n\n$$\n\\frac{\u2202}{\u2202t}(\\frac{\u2202x_{i}}{\u2202\\beta_{kl}})=x_{i}x_{k}\\delta_{i=l}+x_{i}\\sumj\\neqi\\beta_{ji}\\frac{\u2202x_{j}}{\u2202\\beta_{kl}}+(1+2\\beta_{ii}x_{i}+\\sumj\\neqi\\beta_{ji}x_{j})\\frac{\u2202x_{i}}{\u2202\\beta_{kl}}.\n$$\n\nEquation 8 allows us to solve a system of differential equations to determine the sensitivity of invader growth to that parameter. We solve this system of equations to a large time $T=100$ and report the weighted average of some late-time interval $[t,T]$, with later time-points weighted more heavily, using the final 40 simulation time-points.\n",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "dd002928-8d7e-49b5-ba6d-5681900333de",
+      "submission_id": "f4b2b2ec-fb7c-487a-a65a-bf2ea3a0b73e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Babak Momeni, https://ror.org/02n2fzt79 Boston College United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83690.sa0](https://doi.org/10.7554/eLife.83690.sa0)\n\nThis manuscript uses genome-scale metabolic modeling to estimate interspecies interactions and subsequently assess engraftment outcomes. This is an important line of work with potentially broad applications in different fields, including microbiota studies. The authors provide solid evidence to support the usefulness of their proposed approach in engraftment studies.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Babak Momeni, https://ror.org/02n2fzt79 Boston College United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83690.sa1](https://doi.org/10.7554/eLife.83690.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Metabolic Model-based Ecological Modeling for Probiotic Design\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Babak Momeni as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Daniel Rios Garza (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Please include the limitations of GSMMs, such as the requirement for high-quality reconstruction and the need to have resolved genomes or a method to assign models to taxa (Figure 1). Please also the assumption of the defined medium used for this manuscript.\n\n2) Please add an investigation of the impact of the growth media on the predictions to the manuscript.\n\n3) Please clarify the details of the setup for the results in Figures 3, 4, and 5. How is the training set chosen? How is the test set chosen? For testing each model, what are the conditions explored? What is the justification behind these choices?\n\n4) Please clarify the importance of Figure 3. It appears all models, even the simplest ones, accurately predict the outcomes in this case. What is unique/different about this example that leads to this situation?\n\n5) Please add explanations for why the performance in Figures 4 and 5 is rather poor. What is the reason behind the low predictive power? There is also a need for explaining why some models perform better than others. What are the conditions under which you expect each model to do well?\n\n6) Please include the detailed assumptions of your FBA model, in particular, the effect of the resource allocation threshold. If a fixed threshold is used for research allocation, it may lead to artifacts. Please specify how this threshold affects the AUCs and if a more general approach such as parsimonious FBA would give similar results.\n\n7) A justification is needed for why log ratios are used to represent interaction coefficients (Equation 2). When does such a representation work well? Does this work well, for example, in a simple case of a community with a few interacting species in dynamic FBA?\n\n8) The authors need to justify how they chose the species to include in the analysis (\"Creating induced sub-graphs\"). If the availability of GSMMs is the only criterion, the authors need to add a thorough investigation of how sub-sampling the species present in the community might impact the prediction quality.\n\n9) Please clarify how exactly the 400 cases used in each case are drawn (by clarifying and expanding the description in \"approximate edge swapping\").\n\n10) Please revise the Discussion section to address the limitations of the approach.\n\nAdditionally, I strongly encourage you to address the comments from individual reviewers (listed in the following) in your revision.\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors in this manuscript use different models to explore if engraftment success can be predicted based on metabolic interactions. They use genome-scale metabolic models to train six different population-level models. They then assess how well these models predict the invasion/engraftment outcomes when compared with existing experimental results. The basic concept behind the work is interesting, relevant, and timely. However, there are issues with the organization of the paper and the clarity of results which make the paper hard to evaluate. Additionally, there are several assumptions made in the paper (e.g. how the interactions are estimated or how instances of communities are built) that need to be better justified. A thorough discussion about the limitations of the approach is also necessary to clarify for the reader the situations in which this approach is likely (or unlikely) to work well.\n\n1. It is unclear to me what the ensemble used for Figures 3 to 5 is. How is the training set chosen? How is the test set chosen? For testing each model, what are the conditions explored?\n\n2. Is it fair to consider the results in Figure 3 as trivial? It appears all models, even the simplest ones, accurately predict the outcome. What is unique/different about this example that leads to this situation?\n\n3. In contrast to Figure 3, the results in Figures 4 and 5 are far from ideal. What is causing this significant drop in predictive power? I would recommend that the authors include the discussions to at least speculate under what conditions the predictive power will drop.\n\n4. In the organization of the paper, there is a strong emphasis on the six different types of model in the abstract and introduction, but the most informative data comes from the InhibitLV model. I felt the models that are not informative could perhaps be de-emphasized, in favor of models that produce the best predictions and offer more mechanistic investigations.\n\n5. In my opinion, more details about how FBA is used to find the parameters of the model should be included in the main text.\n\n6. The authors briefly mention that in some cases one or more models failed because of fitting issues. In my opinion, including the conditions that each model fails as well as a description of why it fails and how the situation can be remedied is necessary. This will be very informative for others to troubleshoot and fix similar issues in other contexts.\n\n7. If I understand correctly, the authors use log ratios to represent interaction coefficients (Equation 2). In my opinion, the justification for this choice needs to be included in the manuscript. Does this work well, for example, in a simple case of a community with a few interacting species in dynamic FBA?\n\n8. It appears to me that in choosing what species to include in the analysis (\"Creating induced sub-graphs\"), species to include are chosen based on whether there is a match for them in the AGORA database, rather than how important they are for the process of engraftment. The potential downside of this choice for accurately representing each system can be large (for example, it may miss the dominant species as an obvious example). The authors need to include a justification of why this choice is justified.\n\n9. I would like to ask for some clarification on how exactly the 400 cases used in each case are drawn. The procedure is described in lines 423-432 (\"approximate edge swapping\"), but I think expanding the description (maybe using a simplified visual illustration of the protocol with 4 or 5 species) would be helpful.\n\n10. The Discussion section of the paper summarizes the advantages of the proposed method (using genome-scale metabolic modeling to make inferences about engraftment outcomes) but does not adequately discuss the limitations of the approach. In my opinion, this is one of the major weaknesses of the paper.\n\nReviewer #2 (Recommendations for the authors):\n\nThe study presents a promising framework to predict the outcome of colonization experiments, such as the ones that are attempted in probiotic therapy. Previous studies have tackled this problem with both machine learning approaches (ML) and ecological models (based on interspecies interactions) but encountered some major limitations. The ML approaches are context-specific and require a large amount of training data per condition to have predictive power, while the ecologic models require dense time series to reliably find the interspecies interaction parameters.\n\nThe authors propose to solve these limitations by making use of reconstructed genome-scale metabolic models (GSMMs) to predict the strength and direction of species interactions. The main advantage of such an approach is the possibility to fit ecological models to individual samples, without the need for extensive training data or dense time series. But does this approach work?\n\nTo test its strength, the authors predicted the outcome of three colonization experiments and show that the ecological models parameterized with GSMMs outperform ML methods such as random forest and support vector machines.\n\nWhile the approach is certainly promising, some careful validations might still be useful before it can be widely used.\n\nEven if the framework seemingly outperforms the tested ML methods, the predictive values are relatively low and might depend on details of the approach that were not systematically evaluated. High-quality GSMMs are not widely available. Automated and semi-automated reconstructions such as the ones in AGORA contain many errors and might not provide the correct information about species growth and interactions. The study partially tackles this limitation by showing that predictions using the interactions of a null model (i.e. random interactions) are significantly worse than predictions based on the GSMM interactions.\n\nOf notice, the framework uses a modified version of community FBA which is not accessible in a publicly available tool and relies on the arbitrary definition of a flux threshold. Furthermore, the use of GSMMs requires the formulation of the growth media. Here an artificial formulation (termed the Western diet) was used. It is unclear how much these choices affect the prediction quality and prevent the framework from being widely used.\n\nHow about the ecological models? The authors extensively tested six alternatives divided into two classes: generalized Lotka-Volterra-based models (GLVs) and linear models. Overall, the GLVs outperformed the linear models. Finally, if the approach can be used and makes reliable predictions, then one can perform perturbations to the structure of the model and gain further insights into the ecology of a species' colonization into a community.\n\nIn my opinion, the following additional validations would significantly increase the impact of the study and strengthen its conclusions:\n\n\u2013 Growth media: the manuscript would benefit by showing how much the growth media affects the quality of the predictions;\n\n\u2013 Resource allocation threshold: It's not specified in the methods, but based on the previous study, I assume that a threshold was fixed, which sounds fairly artificial. It would be useful to know how this threshold affects the AUCs and if a more general approach such as parsimonious FBA would give similar results.\n\n\u2013 Induced sub-graphs: what is the consequence of working with only a fraction of the microbiome given the impossibility to map it to a GSMM? For instance, how does down-sampling the community composition impact the prediction quality?\n\nWith these comparisons in hand, one could understand better why the AUCs are so low and what is expected to get reliable predictions.\n\nFigure 1: could make clear some of the limitations of GSMMs, such as the requirement of high-quality reconstruction and the need to have resolved genomes or a method to assign models to taxa. Also, the assumption of a defined medium.\n\nFigure 3: why is the null model not centered at 0.5?\n\nReviewer #3 (Recommendations for the authors):\n\nRecent years have shown that despite the strong link between the microbiome and health, the administration of a probiotic is not sufficient to alter the microbiome in a desired, therapeutic, way. Engraftment of the administered microbial species is often limited, with most patients failing to show signs of medium-term or long-term engraftment. This study uses pairwise metabolic modeling to build a network of species-species interactions. Considering three experimental engraftment studies, they assess the likelihood of invader engraftment based on network structure, comparing model predictions to data. Comparing several related models, it is shown that a generalized Lotka-Volterra model is predictive if an invader or probiotic will successfully engraft into an existing microbiota community, potentially revealing which microbe-microbe interactions drive the engraftment. A known weakness of generalized Lotka-Volterra models is the difficulty to parametrize them from experimental data, and the lack of generalizability of the resulting model to new situations. Here, by leveraging metabolic modeling (relying on the AGORA network) the authors claim to parameterize population models in a way that is predictive also of novel environments. Thus, the authors claim to predict the engraftment of an invader into a microbial community.\n\nStrengths:\n\n\u2013 The question of engraftment is important, and the attempt to tackle it by trying several related models and AGORA is justified and may yet prove fruitful.\n\n\u2013 Figure 2 explained the six models well, clarifying the differences and similarities between them.\n\n\u2013 The code shared on github is good practice. Yet one may improve the code release significantly, e.g.: a readme file, a quick explanation of how to use the code, etc. In its current form, it is not so usable by a third party.\n\nWeaknesses:\n\n\u2013 The message in Figure 1 is lost on me. The two panels appear quite similar, and I do not understand what the difference between them is supposed to mean.\n\n\u2013 I do not agree that the ecological principle of engraftment is the same between pathogens and probiotics. The pathogen cares only about short-term engraftment as a means to grow and infect further hosts (hence its pathogenic nature, ultimately damaging the host), therefore, the notion of long-term engraftment is ill-defined. Indeed, pathogens may employ strategies to assist in short-term engraftment (e.g. cause the host diarrhea), that probiotics cannot. Probiotics (or commensal species in general) are presumed to form stable long-term associations with the host without damaging the host.\n\n\u2013 I found the exposition of the methods and results lacking. For a start: how precisely is AGORA used? Why do the authors presume the readers are familiar with AGORA? Equation 1 is not properly explained. The Results section shows mostly trivial information instead of a deeper understanding of the modeling results.\n\n\u2013 It is not at all obvious that given the FBA data for a single microbe, one can predict its growth paired with another species. Processes of adaptation and evolution kick in and can change the single-microbe growth profiles significantly. This weakens the foundation of this entire approach. There is much recent literature on this co-culture question (some of it cited in the manuscript) and it simply cannot be brushed off so casually.\n\nJustification of claims and conclusions:\n\nThe manuscript raises an important question and proposes a solid direction, but I am not convinced by the evidence presented-possibly due to the presentation itself. Though the approach proposed in this manuscript may yet prove useful, it needs much more justification, proper exposition, and experimental validation to be taken truly seriously.\n\n\u2013 Abstract (line 20) \"reflect connect\" should probably be just \"connect\".\n\n\u2013 While I think there is no need to explain the AUROC, I do think that the Kendall-tau correlation should be better motivated, as it is not often used in the microbiome literature.\n\n\u2013 The AGORA database should be better exposed. The authors should not assume the reader is familiar with it.\n\n\u2013 I do not understand why it is useful to show Figure 3a \u2013 a bunch of 100% AUROC values (as a bar plot!). The fact that it is easy to predict C.diff. engraftment is stated in the text and the figure frankly just looks a bit silly. Indeed, Figure 3b is even less informative, we know what a 100% AUROC looks like, and it needs no visual assistance. Though Figure 3c contains something for us to learn, it is a weak statement about the role of shuffling the AGORA parameters. Altogether \u2013 I would say remove 3a and 3b altogether and change 3c or put it in a supplement.\n\n\u2013 Regarding Figure 4a: the use of bar plots is discouraged, using box plots would be a lot more informative in the same presentation style and space. 4b: why is the AUROC not stated? The classifier seems hardly impressive.\n",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8b8d4ac6-7a3a-4505-aafa-23a1c895c142",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C1",
+      "claim": "The microbial community composition in the human gut has a profound effect on human health.",
+      "claim_type": "EXPLICIT",
+      "source": "The microbial community composition in the human gut has a profound effect on human health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established fact in the abstract without specific data from this study, drawing on general scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "9eaccaeb-65e9-4b0f-8996-6fc149940fc8",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C2",
+      "claim": "Every year in the US over 400,000 people collectively spend $1 billion dollars on over-the-counter probiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "every year in the US over 400,000 people collectively spend $1 billion dollars on over-the-counter probiotics intended to alter their microbiome (Kristensen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kristensen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "152e39c0-1f1f-425e-9087-0411d1f6d494",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C3",
+      "claim": "Engraftment of administered microbial species is often limited, with only one-third to one-half of patients showing any signs of medium- or long-term engraftment.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, engraftment of the administered microbial species is often limited, with only one-third to one-half of patients showing any signs of medium- or long-term engraftment (Maldonado-G\u00f3mez et al., 2016; Pudgar et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to two studies: Maldonado-G\u00f3mez et al., 2016 and Pudgar et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "8e0e334d-554d-4634-b294-dd7ac4090a50",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C4",
+      "claim": "The method showed moderate positive predictive value on predictions from the baseline samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method showed moderate positive predictive value on predictions from the baseline samples, and good predictive value on predictions made from samples taken during treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the AUC-ROC values presented in Table 1, which show values around 0.6 for baseline samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "e1373e40-52ab-4422-b824-85c1bf1cf1fc",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C5",
+      "claim": "The method showed good predictive value on predictions made from samples taken during treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method showed moderate positive predictive value on predictions from the baseline samples, and good predictive value on predictions made from samples taken during treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the AUC-ROC values in Table 1, which show values around 0.7-0.85 for treatment samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "aea91712-06c5-4366-8bc5-57c2cf981c01",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C6",
+      "claim": "Improved prediction between baseline and treatment samples suggests that a change in microbiome as a response to the introduction of the probiotic impacts the method.",
+      "claim_type": "EXPLICIT",
+      "source": "Improved prediction between baseline and treatment samples suggests that a change in microbiome as a response to the introduction of the probiotic impacts our method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed difference in predictive performance between baseline and treatment samples.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "5bf18637-c28b-4501-a8c2-7470d8b867c1",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C7",
+      "claim": "The method captures at least part of the underlying biological processes that determine engraftment.",
+      "claim_type": "EXPLICIT",
+      "source": "This in turn suggests that our method captures at least part of the underlying biological processes that determine engraftment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the improved prediction performance and the mechanistic nature of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "4c4e1047-f91b-4c6b-92c0-574d7b8f751c",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C8",
+      "claim": "The results were mostly robust to choice of hyperparameters, with the exception being that the complete medium showed significantly worse predictive value on the samples taken during treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these results were mostly robust to choice of hyperparameters, with the exception being that the complete medium showed significantly worse predictive value on the samples taken during treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in Table 1 showing similar AUC-ROC values across different hyperparameters except for complete medium.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "82f3d1b2-08b3-4401-99b3-8fb8d09260b7",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C9",
+      "claim": "The null model had generally less predictive power than inferred parameters, in particular when predictions were made with samples from the 'treatment' time-point.",
+      "claim_type": "EXPLICIT",
+      "source": "The null model had generally less predictive power than inferred parameters, in particular when predictions were made with samples from the 'treatment' time-point.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2 and supported by p-values reported in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "d68d905f-413c-437d-af8f-7a280d68b419",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C10",
+      "claim": "The method provides the same ability to classify unknown samples as a random forest classifier without the need for any a priori known sample classifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method, therefore, provides the same ability to classify unknown samples as an RF classifier without the need for any a priori known sample classifications (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the comparison shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "2f31793b-39f9-4a00-9d9a-0c173a4d6fd2",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C11",
+      "claim": "The support vector machine classifier did not outperform random assignment.",
+      "claim_type": "EXPLICIT",
+      "source": "The SVM classifier did not outperform random assignment, while the RF classifier performed, on average across train/test splits, about as well as our method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3A where SVM performance is around 0.5 AUC-ROC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "652d6e5c-364d-4f8d-9776-7bc17b04edbc",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C12",
+      "claim": "Adding antagonism or self-inhibition to the model did not have a significant impact on the AUC-ROC of the method's predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither change had a significant impact on the area under the receiver operator characteristic curve (AUC-ROC) of our method's predictions, although adding commensalism to the model made the model and resulting predictions much less stable due to increased finite-time blow-up.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 4 showing stable AUC-ROC values across different parameter shifts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "93fef606-44b7-466a-b83e-078cc311809c",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C13",
+      "claim": "Adding commensalism to the model made the model and resulting predictions much less stable due to increased finite-time blow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither change had a significant impact on the area under the receiver operator characteristic curve (AUC-ROC) of our method's predictions, although adding commensalism to the model made the model and resulting predictions much less stable due to increased finite-time blow-up.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4 and explained in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "50ccfba6-df59-4c1f-bbcc-c6a93bd4775c",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C14",
+      "claim": "Bifidobacterium longum AH1206 was administered as an oral probiotic to 23 subjects, with data available for 22 of these subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "In the study, Bifidobacterium longum AH1206 was administered as an oral probiotic to 23 subjects, with data available for 22 of these subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data from Maldonado-G\u00f3mez et al., 2016 used in this study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "0abcc603-0ed5-4c20-a6ca-2d3a0b33b701",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C15",
+      "claim": "Of the five knock-outs and two sample time-points tested, all but one increased predicted engraftment by a slight amount.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the five knock-outs and two sample time-points that we tested, all but one increased predicted engraftment by a slight amount.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in Table 2 showing positive average score differences for most knock-outs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "28a296bd-ce25-4431-8cfd-210d587c9019",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C16",
+      "claim": "Most knock-outs increased prediction accuracy slightly, suggesting that the increase in engraftment was more pronounced among the true engrafter samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, most of these also increased prediction accuracy slightly, suggesting that the increase in engraftment was more pronounced among the true engrafter samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the AUC-ROC differences shown in Table 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "07993207-3910-47be-9310-58d5f3a0eaa3",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C17",
+      "claim": "Engraftment score was very sensitive to all the parameters chosen for sensitivity analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that engraftment score was very sensitive to all the parameters chosen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the large sensitivity values shown in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "f2258332-2b26-4e38-ac4d-63b96b0705d4",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C18",
+      "claim": "Engraftment score was not particularly sensitive to hyperparameter choices.",
+      "claim_type": "EXPLICIT",
+      "source": "We notice that, in contrast to the model interaction parameters \u03b2lk, engraftment score was not particularly sensitive to hyperparameter choices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the small variance across setups shown in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "0d985fc8-df16-4b85-baf3-da457187f7a1",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C19",
+      "claim": "Genome-scale metabolic modeling can be used in a simple way to predict the outcome of species invasion experiments with minimal study data required.",
+      "claim_type": "EXPLICIT",
+      "source": "we demonstrate that genome-scale metabolic modeling can be used in a simple way to predict the outcome of species invasion experiments with minimal study data required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the results of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "f5658796-34d3-49c0-b7d4-627c17c3c05a",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C20",
+      "claim": "GSMs can provide value in understanding microbial community dynamics from cross-sectional microbiome relative abundance profiling.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that GSMs can provide value in understanding microbial community dynamics from cross-sectional microbiome relative abundance profiling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the successful predictions made using only cross-sectional data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "8c0dedf0-2381-45ef-978f-d4cc82f07eef",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C21",
+      "claim": "All GSM-based methods, including the authors' own, are limited to a large extent by the accuracy of the metabolic model reconstructions.",
+      "claim_type": "EXPLICIT",
+      "source": "As a limitation, it is worth noting that all GSM-based methods, including our own, are limited to a large extent by the accuracy of the metabolic model reconstructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation based on understanding of GSM methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "8b2e7053-5ca8-4f6d-82af-d68aa24ac102",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C22",
+      "claim": "Low-quality reconstructions often omit key reactions, or worse, may include reactions that should not have been included.",
+      "claim_type": "EXPLICIT",
+      "source": "Low-quality reconstructions often omit key reactions, or worse, may include reactions that should not have been included.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known issue with GSM reconstruction based on general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "d8a7d65f-2f13-4dfc-bd92-e3cb731b1cbc",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C23",
+      "claim": "The method is sensitive to the interactions between microbes, while robust to changes in computational and environmental parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the method is sensitive to the interactions between microbes, while robust to changes in computational and environmental parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the sensitivity analysis results shown in Table 3.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "2c5885d7-9127-47ba-b1c4-0822b6264df6",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C24",
+      "claim": "Individual interactions between microorganisms can have an out-sized impact on the downstream composition of a microbial community.",
+      "claim_type": "EXPLICIT",
+      "source": "It also suggests that individual interactions between microorganisms can have an out-sized impact on the downstream composition of a microbial community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the high sensitivity of engraftment to individual interaction parameters.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "b2ba8dd9-3bdd-4e5e-9122-0a4a57245ad3",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C25",
+      "claim": "Species-species interaction modeling does not capture the complexities of microbial community dynamics that emerge as communities change in composition.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we note that we have previously shown that species-species interaction modeling, i.e., models built from interactions between microbes, do not capture the complexities of microbial community dynamics that emerge as communities change in composition (Brunner and Chia, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "d4ddf1a5-e6ae-45ef-bbd0-6e6ed8ce6b1a",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C26",
+      "claim": "It is unlikely that microbial interactions remain constant as the microbial community manipulates its environment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is unlikely that these interactions remain constant as the microbial community manipulates its environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on understanding of microbial ecology.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "2b182286-154d-45f0-8edb-57e9e948bb2a",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C27",
+      "claim": "Prediction can be improved by accounting for changes in microbial interaction as the environment changes.",
+      "claim_type": "EXPLICIT",
+      "source": "We conjecture that prediction can be improved by accounting for changes in microbial interaction as the environment changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a conjecture by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "3a3dd6f1-5dad-44b6-a34f-37a11a3708e5",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C28",
+      "claim": "The method leverages genome-scale metabolic modeling to parameterize population models with only genomic data from a single time-point.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we leverage genome-scale metabolic modeling to parameterize population models with only genomic data from a single time-point.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "8e2fcbfc-5085-4ab6-98e9-51942d3a372d",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C29",
+      "claim": "The generalized Lotka-Volterra model has strong ability to predict if a particular invader or probiotic will successfully engraft into an individual's microbiome.",
+      "claim_type": "EXPLICIT",
+      "source": "To do so, we use a generalized Lotka-Volterra model, which we show has strong ability to predict if a particular invader or probiotic will successfully engraft into an individual's microbiome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the AUC-ROC values presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "7a544645-6898-4826-83f7-eea6e7c70152",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C30",
+      "claim": "The mechanistic nature of the model is useful for revealing which microbe-microbe interactions potentially drive engraftment.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we show that the mechanistic nature of the model is useful for revealing which microbe-microbe interactions potentially drive engraftment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the knock-out experiments and sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "c106dc2a-48b4-4b15-8da8-c7f9ba390e83",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C31",
+      "claim": "Microbiome research has come to encompass key areas of disease, ranging from infections and cancer prevention to systemic immune and neurological responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Microbiome research has come to encompass key areas of disease, ranging from infections (Antharam et al., 2013; Honda and Littman, 2012; Battaglioli et al., 2018) and cancer prevention (Moss and Blaser, 2005; Walther-Ant\u00f3nio et al., 2016; Kim et al., 2020) to systemic immune and neurological responses (Severance et al., 2016; Kang et al., 2014; Chen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to relevant studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "c64a1cc9-2a48-4707-aa98-d8df88c1fa59",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C32",
+      "claim": "The goal of microbiome-targeted interventions is to promote health by 'restoring and maintaining the microbiota and the crucial health-associated ecosystem services that it provides'.",
+      "claim_type": "EXPLICIT",
+      "source": "The goal of microbiome-targeted interventions is therefore to promote health by 'restoring and maintaining the microbiota and the crucial health-associated ecosystem services that it provides' (Costello et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Costello et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "4c01268b-781d-4ad6-8003-31143e0384a4",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C33",
+      "claim": "The ability to deploy probiotics to modify the microbiome as intended has been met with relatively little success.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the many links between the microbiome and health, our ability to deploy probiotics to modify the microbiome as intended has been met with relatively little success (Mullard, 2016; Zhu et al., 2019; Yuan et al., 2017; Zhao et al., 2021; Wu et al., 2017; Lawson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to relevant studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "705fd40a-8e28-4cd7-9dcc-928cd4937661",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C34",
+      "claim": "Probiotic interventions are primarily ecological in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "We offer the argument that probiotic interventions are primarily ecological in nature; their purpose is to reshape the complex microbial communities in our body in beneficial ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an argument made by the authors based on their understanding of probiotic function.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "734c3d64-0c26-4792-bee2-eb807dac9470",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C35",
+      "claim": "A mechanistic, personalized approach to probiotic design\u2014one rooted in empirical metabolic data and ecological principles\u2014has the potential to propel the field forward.",
+      "claim_type": "EXPLICIT",
+      "source": "A mechanistic, personalized approach to probiotic design\u2014one rooted in empirical metabolic data and ecological principles\u2014has the potential to propel the field forward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential of the approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "3456394b-de25-4380-9bab-7d85093c048a",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C36",
+      "claim": "Previous work trying to predict engraftment has been mostly restricted to fecal microbiome transplant (FMT) studies using non-mechanistic classifiers.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work trying to predict engraftment has been mostly restricted to fecal microbiome transplant (FMT) studies using non-mechanistic classifiers (Smillie et al., 2018; Podlesny et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Smillie et al., 2018 and Podlesny et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "383507b8-7722-4509-a99e-f4b888de23c0",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C37",
+      "claim": "Classifier approaches are sensitive to the underlying assumptions or conditions in which the study is carried out.",
+      "claim_type": "EXPLICIT",
+      "source": "While potentially predictive, such classifier approaches are sensitive to the underlying assumptions or conditions in which the study is carried out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation of classifier approaches based on general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "fcf83793-f489-4b18-b45e-192710414d5d",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C38",
+      "claim": "Models built using statistical methods on data that is assumed to be uniformly collected cannot be generalized to new circumstances.",
+      "claim_type": "EXPLICIT",
+      "source": "Because such models are built using statistical methods on data that is assumed to be uniformly collected, these models cannot be generalized to new circumstances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of statistical models based on general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "fade6e51-0488-4fa5-86dd-860eec4805cb",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C39",
+      "claim": "More detailed mechanistic approaches, such as genome-scale metabolic modeling, have been recently explored as more generalizable alternatives.",
+      "claim_type": "EXPLICIT",
+      "source": "For these reasons, more detailed mechanistic approaches, such as genome-scale metabolic modeling, have been recently explored as more generalizable alternatives (Heinken et al., 2021a; Heinken et al., 2021b; Dillard et al., 2021; Jenior et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "bcea1208-0b05-48d1-9abb-5d74638c0357",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C40",
+      "claim": "The use of dynamic flux balance analysis (FBA) for population models has been a well-published approach.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth highlighting that the use of dynamic flux balance analysis (FBA) for population models has also been a well-published approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "aa7806dd-183b-454c-9153-208e94211aa8",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C41",
+      "claim": "Dynamic FBA has practical drawbacks for communities of high complexity such as labor-intensive interpretation and high computational complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these successes, there are a number of practical drawbacks for communities of high complexity such as labor-intensive interpretation and high computational complexity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation of dynamic FBA.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "6a44add0-28b1-45a1-a2da-d1f52ab45a92",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C42",
+      "claim": "Generalized Lotka-Volterra models are popular tools for understanding microbial community dynamics in a mechanistic manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Population models such as the generalized LV (gLV) model are popular tools for understanding microbial community dynamics in a mechanistic manner (Stein et al., 2013; Friedman et al., 2017; Angulo et al., 2019; Kuntal et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "c66f9f62-f2b0-4973-b60f-9df7cf1a54d7",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C43",
+      "claim": "Generalized Lotka-Volterra models are in general difficult to parameterize, with state-of-the-art gradient-matching procedures requiring somewhat dense time-longitudinal data with many replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these models are in general difficult to parameterize, with state-of-the-art gradient-matching procedures requiring somewhat dense time-longitudinal data with many replicates (Bucci et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bucci et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "48c83f8f-3fd1-4760-a19b-784dbf1459e2",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C44",
+      "claim": "Parameters fit from data to generalized Lotka-Volterra models do not extend to novel environmental situations, and may even change with the addition of a new taxa to the community.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it has previously been shown that parameters fit from data to these models do not extend to novel environmental situations, and may even change with the addition of a new taxa to the community (Brunner and Chia, 2019; Momeni et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Brunner and Chia, 2019 and Momeni et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "1ae4db4f-4a83-4388-9cc8-1889c01aa175",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C45",
+      "claim": "By leveraging metabolic modeling, the authors are able to parameterize population models in a way that can be easily adapted to novel environments and does not require dense time-longitudinal data.",
+      "claim_type": "EXPLICIT",
+      "source": "However, by leveraging metabolic modeling we are able to parameterize population models in a way that can be easily adapted to novel environments and does not require dense time-longitudinal data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the method presented in the paper.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "60d781f1-af17-4e95-8c52-6231db64d8c9",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C46",
+      "claim": "Genome-scale metabolic models encode the metabolic pathways available in a cell, allowing simulation of cellular metabolism and growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-scale metabolic models (GSMs) encode the metabolic pathways available in a cell, allowing simulation of cellular metabolism and growth (Lewis et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lewis et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "f46c0276-d46d-4808-b49d-8f98d523eac0",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C47",
+      "claim": "GSMs have been used extensively to understand and engineer microbial mono-cultures, and have recently begun to be used to understand and predict the composition and metabolic function of microbial communities.",
+      "claim_type": "EXPLICIT",
+      "source": "These tools have been used extensively to understand and engineer microbial mono-cultures, and have recently begun to be used to understand and predict the composition and metabolic function of microbial communities (Chan et al., 2017; Diener et al., 2020; Kim et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "58a1ad53-3e70-4ced-ae86-cd8633316f7d",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C48",
+      "claim": "Community methods using GSMs often suffer from drawbacks including a focus on equilibrium states, high complexity and computational cost, and the difficulty of providing accurate GSMs for each community member.",
+      "claim_type": "EXPLICIT",
+      "source": "Community methods using GSMs often suffer from a number of drawbacks. These can include a focus on equilibrium states, high complexity and computational cost, and the difficulty of providing accurate GSMs for each community member.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as known limitations of GSM community methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "3e2cf5a8-a7d6-4e4a-a681-eb74f3d832dc",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C49",
+      "claim": "By layering simple, pairwise GSM community modeling with population models, the method allows for prediction that includes transient behavior and reduces computational complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "By layering simple, pairwise GSM community modeling with population models, we allow for prediction that includes transient behavior (e.g. how quickly an extinction happens within a community) and reduces computational complexity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the advantages of the method presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "9972b36e-47c6-48ba-a3ea-10cef9378e5d",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C50",
+      "claim": "The authors matched taxa found in the sample to the genomes found in the RefSeq database.",
+      "claim_type": "EXPLICIT",
+      "source": "To construct the necessary GSMs, we matched taxa found in the sample to the genomes found in the RefSeq database (O'Leary et al., 2016), and used these genomes to build models using ModelSEED (Seaver et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "be8bda28-2ed8-4fa9-aaf6-a907fe33d6bf",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C51",
+      "claim": "The authors used genomes to build models using ModelSEED.",
+      "claim_type": "EXPLICIT",
+      "source": "To construct the necessary GSMs, we matched taxa found in the sample to the genomes found in the RefSeq database (O'Leary et al., 2016), and used these genomes to build models using ModelSEED (Seaver et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "910374c7-9dfb-4444-a755-21b0cf9372c4",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C52",
+      "claim": "The authors simulated pairwise growth using community FBA with growth media adapted from the AGORA genome-scale modeling project.",
+      "claim_type": "EXPLICIT",
+      "source": "We then simulated pairwise growth using community FBA with growth media adapted from the AGORA genome-scale modeling project (Heinken et al., 2023); precise details are available in S1 Data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "394c2663-6367-49a0-a71e-84c67b0edcd9",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C53",
+      "claim": "The authors tested the model's predictive potential by predicting the outcomes of microbiome invasion experiments from the initial presence/absence of species in each sample.",
+      "claim_type": "EXPLICIT",
+      "source": "After network construction, we make a prediction based off of simulations with the gLV model (Edelstein-Keshet, 2005; Stein et al., 2013; Friedman et al., 2017), and test the model's predictive potential by predicting the outcomes of microbiome invasion experiments (Maldonado-G\u00f3mez et al., 2016) from the initial presence/absence of species in each sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods and validation approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "28975431-385d-42f0-a079-505225a4bedf",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C54",
+      "claim": "The Lotka-Volterra model can lead to uncontrolled simulated growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The LV model is widely used, but we found that this model could lead to uncontrolled simulated growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation made during the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "87f02edb-b698-4e20-863c-ded780e37b9a",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C55",
+      "claim": "The authors investigated alterations to the LV model that dampen the numerical instability.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore also investigated alterations to the LV model that dampen the numerical instability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes additional analyses performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "39c64be8-6e8e-4a23-b834-94445900b11c",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C56",
+      "claim": "The method produces positive predictive value in the scenario in which it was tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the drawbacks to both population models and GSMs, limitations in our ability to construct high-quality GSMs, and the limited data requirement of our method, our method produces positive predictive value in the scenario in which it was tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the AUC-ROC values presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "17283da2-91a5-47c3-b60c-ff5ccb03a26f",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C57",
+      "claim": "The method represents a 'low-budget' tool that nevertheless can be useful.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method therefore represents a 'low-budget' tool that nevertheless can be useful.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the method based on its data requirements and performance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "f59f18e5-a730-4be3-86c7-9765c8093aa8",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C58",
+      "claim": "This success is evidence that more complex methods that expand on the simple approach could provide great predictive value with a still limited data requirement.",
+      "claim_type": "EXPLICIT",
+      "source": "This success is also evidence that more complex methods that expand on our simple approach could provide great predictive value with a still limited data requirement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future directions based on the current results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "d7d01165-bc12-4305-920b-79b810e45704",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C59",
+      "claim": "The authors performed simulated knock-out experiments to test how sensitive engraftment is to each community member.",
+      "claim_type": "EXPLICIT",
+      "source": "We perform simulated knock-out experiments to test how sensitive engraftment is to each community member, and we use parameter sensitivity analysis to test how sensitive engraftment is to each network connection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes additional analyses performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "b47eea72-0336-427a-ac36-2755c54f4a28",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C60",
+      "claim": "The authors used parameter sensitivity analysis to test how sensitive engraftment is to each network connection.",
+      "claim_type": "EXPLICIT",
+      "source": "We perform simulated knock-out experiments to test how sensitive engraftment is to each community member, and we use parameter sensitivity analysis to test how sensitive engraftment is to each network connection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes additional analyses performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "b5f06d31-f197-47bd-ae4b-e193b2245490",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C61",
+      "claim": "The authors used the area under the curve of the receiver operator characteristic (AUC-ROC) as a metric of classification success.",
+      "claim_type": "EXPLICIT",
+      "source": "As a metric of classification success for the data set, we use the area under the curve of the receiver operator characteristic (AUC-ROC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the evaluation metric used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "6759cbb9-2129-48ae-868a-2835f690e453",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C62",
+      "claim": "An AUC-ROC of 1 is perfect classifier performance and 0.5 is equivalent to random classification.",
+      "claim_type": "EXPLICIT",
+      "source": "This metric provides a measure of performance based on the model's ability to identify true positives while avoiding false positives, so that 1 is perfect classifier performance and o.5 is equivalent to random classification (i.e. flipping a coin for each sample).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard definition of AUC-ROC interpretation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "002900c0-508d-4ff6-91a6-61ea5aa45313",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C63",
+      "claim": "The authors used six sets of parameters inferred from joint FBA with different hyperparameters to parameterize the gLV model.",
+      "claim_type": "EXPLICIT",
+      "source": "We used six sets of parameters inferred from joint FBA with different hyperparameters to parameterize the gLV model, and report the resulting predictive value in Table 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "e5344c78-4dff-4fa5-93c4-c4beefe8aa8b",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C64",
+      "claim": "The first three sets of inferred parameters differ in the 'resource allocation constraint (RAC)' in joint FBA, using values of 35 and 70, as well as using joint FBA without RAC.",
+      "claim_type": "EXPLICIT",
+      "source": "The first three sets of inferred parameters differ in the 'resource allocation constraint (RAC)' in joint FBA. We used values of 35 and 70 for this parameter, as well as using joint FBA without RAC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Table 1 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "a747ca74-437d-430d-95e0-91a0ff81f9ab",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C65",
+      "claim": "The next three sets of parameters were inferred using an RAC value of 35 but changes to the model environments.",
+      "claim_type": "EXPLICIT",
+      "source": "The next three sets of parameters were inferred using an RAC value of 35 but changes to the model environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Table 1 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "9be4c0fe-5b92-4c53-b0c0-c7b0e49373a3",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C66",
+      "claim": "B. adolescentis has a negative impact on B. longum engraftment.",
+      "claim_type": "EXPLICIT",
+      "source": "We see, for example, that B. adolescentis has a negative impact on B. longum engraftment (simulated knock-outs increased engraftment score), while F. prausnitzii has a positive impact on B. longum engraftment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the knock-out experiment results shown in Table 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "5f5d47c2-2cb1-457f-bcf5-ca5abbef10a8",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C67",
+      "claim": "F. prausnitzii has a positive impact on B. longum engraftment.",
+      "claim_type": "EXPLICIT",
+      "source": "We see, for example, that B. adolescentis has a negative impact on B. longum engraftment (simulated knock-outs increased engraftment score), while F. prausnitzii has a positive impact on B. longum engraftment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the knock-out experiment results shown in Table 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "38a0881e-b898-4408-bee9-7adc8cfb91bb",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C68",
+      "claim": "Dynamic FBA provides a complete picture of community dynamics according to GSMs.",
+      "claim_type": "EXPLICIT",
+      "source": "While dynamic FBA provides a complete picture of community dynamics according to GSMs, it represents a very complex model that is difficult to analyze and simulate, and still contains a set of unknown parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of dynamic FBA based on knowledge of the method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "a56f9513-a052-4f5b-9842-01b777c79754",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C69",
+      "claim": "Dynamic FBA represents a very complex model that is difficult to analyze and simulate, and still contains a set of unknown parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "While dynamic FBA provides a complete picture of community dynamics according to GSMs, it represents a very complex model that is difficult to analyze and simulate, and still contains a set of unknown parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of dynamic FBA based on knowledge of the method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "734c366d-efb3-4ac9-b9ff-7f3dd9a7e98e",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C70",
+      "claim": "The authors present a simpler model\u2014a network of emergent interactions between microbes, whose interaction parameters can be approximated from pairwise genome-scale modeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present a simpler model\u2014a network of emergent interactions between microbes, whose interaction parameters we can approximate from pairwise genome-scale modeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the approach presented in the paper.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "0d0616c2-4eb2-44d4-a5cd-21e183c80552",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C71",
+      "claim": "Good parameterization of gLV models requires relatively dense time-longitudinal data of absolute, rather than relative, community abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "Good parameterization requires relatively dense time-longitudinal data of absolute, rather than relative, community abundance (Bucci et al., 2016; Kuntal et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bucci et al., 2016 and Kuntal et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "24f33444-cdba-4429-af5d-77f7bccfb1ab",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C72",
+      "claim": "By taking advantage of GSMs, the authors provide a parameterized network that does not require any time-longitudinal data.",
+      "claim_type": "EXPLICIT",
+      "source": "By taking advantage of GSMs, we provide a parameterized network that does not require any time-longitudinal data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an advantage of the method presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "effae759-431e-490e-ae08-a04a4937f94a",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C73",
+      "claim": "The method as presented makes use of previously published GSMs or genomes, meaning that only binary presence/absence information is necessary for a prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, our method as presented here makes use of previously published GSMs or genomes, meaning that only binary presence/absence information is necessary for a prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data requirements of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "a960b95e-ea39-4ff2-b98d-0e8a26525045",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C74",
+      "claim": "GSMs can be built directly from the genomes found in a sample using automated tools such as CarveMe or ModelSEED.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, GSMs can be built directly from the genomes found in a sample using automated tools such as CarveMe (Machado et al., 2018) or ModelSEED (Seaver et al., 2021), meaning that our method can be extended to include taxa not found in any database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to CarveMe and ModelSEED.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "7848b2a6-e6f2-4ea6-939c-098c0973ff89",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C75",
+      "claim": "The method can be extended to include taxa not found in any database.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, GSMs can be built directly from the genomes found in a sample using automated tools such as CarveMe (Machado et al., 2018) or ModelSEED (Seaver et al., 2021), meaning that our method can be extended to include taxa not found in any database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the extensibility of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "9fed451e-bd1a-433d-b411-cbffcb025607",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C76",
+      "claim": "A complete set of simulated knock-out experiments is readily possible using the method.",
+      "claim_type": "EXPLICIT",
+      "source": "Although time consuming, a complete set of simulated knock-out experiments is is readily possible using our method, which could identify the largest positive and negative relationships between specific taxa and B. longum engraftment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "2fa2e0ec-05df-43cd-ab89-5a73e883eec0",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C77",
+      "claim": "Dynamic FBA implies that a microbial community behaves according to a discrete sequence of interaction networks over time.",
+      "claim_type": "EXPLICIT",
+      "source": "In upcoming work (Brunner et al., 2023), we demonstrate that dynamic FBA implies that a microbial community behaves according to a discrete sequence of interaction networks over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to upcoming work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "fff9a8de-a739-4578-ba51-7b41df113165",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C78",
+      "claim": "Incorporating dynamic behavior may improve prediction with only a modest increase in model complexity, as long as the sequence of networks can be efficiently determined.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporating this dynamic behavior may improve prediction with only a modest increase in model complexity, as long as this sequence of networks can be efficiently determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future improvements to the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "2ddfb1c9-ba0f-4ac6-85b6-8f20208c9856",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C79",
+      "claim": "The authors used a version of the gLV model that assumes an intrinsic growth rate of 1 for each taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "Notice that we use a version of this model that assumes an intrinsic growth rate of 1 for each taxa because fitting accurate intrinsic growth rates would require additional data, while we wish to assess the performance of our methods without the need for parameter fitting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological choice made in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "3c3b9595-3574-454f-82b0-2d121fc34924",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C80",
+      "claim": "The gLV model can display an array of behaviors, including multi-stability and chaos.",
+      "claim_type": "EXPLICIT",
+      "source": "The gLV model can display an array of behaviors, including multi-stability and chaos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known property of the gLV model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "9678c317-6579-48d6-b9cb-cde6f8511128",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C81",
+      "claim": "The authors used a Monte-Carlo sampling approach to generating predictions, taking repeated random draws of initial conditions and simulating forward.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reason, we use a Monte-Carlo sampling approach to generating predictions, taking repeated random draws of initial conditions and simulating forward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "6d4ec7cd-f754-4efd-9b20-a097e8b233f5",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C82",
+      "claim": "The authors used 1000 draws for each sample in their experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments, we used 1000 draws (i.e. we compute 1000 separate ODE so) for each sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation parameters used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "d5454b23-e935-4ec3-a037-6aab7f424451",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C83",
+      "claim": "Joint FBA is a technique that can be used to estimate growth rates of pairs of microbes using a GSM from each microbe.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a technique known as 'joint FBA' (Zomorrodi and Maranas, 2012; Chan et al., 2017; Kim et al., 2022) can be used to estimate growth rates of pairs of microbes using a GSM from each microbe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "97f70856-d352-4031-9751-cbfd76a34897",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C84",
+      "claim": "FBA and joint FBA allow simulation of singleton and pair growth experiments in silico.",
+      "claim_type": "EXPLICIT",
+      "source": "FBA and joint FBA allow us to simulate singleton and pair growth experiments in silico and use the results of these simulated experiments to parameterize our dynamical model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how FBA is used in the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "7363b877-574b-47ab-991b-8744302b0bee",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C85",
+      "claim": "The authors used joint FBA with a set of resource allocation constraints, which have been shown to improve predictions in pairwise experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "To compute growth simulations, we use joint FBA with a set of resource allocation constraints, which have been shown to improve predictions in pairwise experiments (Kim et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kim et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "3de22345-6b10-4283-8d0d-6f62f83f4a19",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C86",
+      "claim": "The authors' problem setup is identical to that described in Kim et al., 2022.",
+      "claim_type": "EXPLICIT",
+      "source": "Our problem setup is identical to that described in Kim et al., 2022, and we provide Python code to carry out the computation in our supplemental repository.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational setup used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "b09257f1-23b9-47d3-8ee1-c2cbdd9e1d88",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C87",
+      "claim": "Simulated inflow of nutrients was determined by medium defined as 'EU average diet' by the Virtual Metabolic Human project.",
+      "claim_type": "EXPLICIT",
+      "source": "To perform joint FBA, simulated inflow of nutrients was determined by medium defined as 'EU average diet' by the Virtual Metabolic Human project (Noronha et al., 2019; Ern\u00e4hrungsbericht and Elmadfa, 2012), with inflow of 10 mmol/day for nutrients not included in the medium but essential for simulated growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation parameters used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "1207cb94-542e-49db-9281-6fabdc1c5f23",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C88",
+      "claim": "Growth rates of microorganisms were set to be 0.04 g/day.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth rates of microorganisms were set to be 0.04 g/day, and forced leak of nutrients was set to be 0.1 mmol/day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation parameters used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "f9b39aa8-31f6-4b80-8d04-c3bc9a4cd5a0",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C89",
+      "claim": "Forced leak of nutrients was set to be 0.1 mmol/day.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth rates of microorganisms were set to be 0.04 g/day, and forced leak of nutrients was set to be 0.1 mmol/day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation parameters used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "e656ff65-3cd5-49e1-815d-29e030f2447f",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C90",
+      "claim": "For the main experiment, the RAC constraint was set to 35 mmol/day as was shown to lead to accurate prediction in Kim et al.",
+      "claim_type": "EXPLICIT",
+      "source": "For our main experiment, we set the RAC constraint to 35 mmol/day as was shown to lead to accurate prediction in Kim et al.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the parameter choice and its justification.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "cd12a9aa-b2fe-4271-8fe3-e7207af30185",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C91",
+      "claim": "The authors used the log-ratio of simulated growth in pairs and alone as the implied effect of one microbe on another.",
+      "claim_type": "EXPLICIT",
+      "source": "We use the log-ratio of simulated growth in pairs and alone as the implied effect of one microbe on another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for inferring interaction parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "2e4a9f39-78a4-4f27-9d10-91e632a719cc",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C92",
+      "claim": "The log-ratio is the simplest choice of translating simulated data to interaction that accounts for fold-changes.",
+      "claim_type": "EXPLICIT",
+      "source": "We use the log-ratio because it is the simplest choice of translating simulated data to interaction that accounts for fold-changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the justification for the methodological choice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "64e20f0a-c1f9-4257-a6cf-6cc2173c9e03",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C93",
+      "claim": "The simple difference in simulated biomass would be much more sensitive to absolute scaling in simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Of course, the simple difference in simulated biomass is another possible choice, but this will be much more sensitive to absolute scaling in simulation, so, for example, slow growing taxa will be biased toward smaller interactions in the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a justification for not using an alternative approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "f75ae990-48e0-4d78-a708-cc877e915646",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C94",
+      "claim": "The in silico growth experiments only provide simulated biomass values at chemostatic equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our in silico growth experiments only provide simulated biomass values at chemostatic equilibrium, meaning that fitting LV parameters directly to these data is an underdetermined problem, particularly when pair growth leads to a simulated extinction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the simulation approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "daeea0a9-5507-4c76-a8e3-0faddf4dd685",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C95",
+      "claim": "Fitting LV parameters directly to simulated biomass data is an underdetermined problem, particularly when pair growth leads to a simulated extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our in silico growth experiments only provide simulated biomass values at chemostatic equilibrium, meaning that fitting LV parameters directly to these data is an underdetermined problem, particularly when pair growth leads to a simulated extinction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a mathematical limitation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "b5ec8421-fa05-46e7-a54a-ed4f50141e17",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C96",
+      "claim": "The authors re-scaled the network so that all edge weights are in the interval [\u22121,1].",
+      "claim_type": "EXPLICIT",
+      "source": "We also re-scale our network so that all edge weights are in the interval [\u22121,1]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a data processing step in the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "e5eb4d73-ec21-4d5a-9000-6890201f92c9",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C97",
+      "claim": "The re-scaling is done for computational convenience, and can be viewed as a time re-scaling of the network dynamics which does not effect predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "This re-scaling is done for computational convenience, and can be viewed as a time re-scaling of the network dynamics which does not effect our predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the justification for the re-scaling procedure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "387f7482-9b1e-44c9-99ef-936390a9950f",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C98",
+      "claim": "The authors matched taxa to the nearest genome that was listed as 'Chromosome' or 'Complete Genome', or contained at least 1000 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We matched taxa to the nearest (by tree distance according to NCBI's taxonomic database) genome that was listed as 'Chromosome' or 'Complete Genome', or contained at least 1000 genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the genome matching procedure used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "fc44554f-f8c4-4aa5-9f28-a04ff6904171",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C99",
+      "claim": "This approach allowed the authors to perform experiments with \u223c87\u201388% coverage of each sample.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, this approach allowed us to perform our experiments with \u223c87\u201388% coverage of each sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the coverage achieved by the genome matching procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "0b07b82f-0ade-4494-b7c8-5097134626ff",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C100",
+      "claim": "Taxa for which the authors failed to match a genome were removed from the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Taxa for which we failed to match a genome were removed from the data, and all analysis was performed on the remaining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "b27fef0c-1b53-4f80-85af-0f166935edbe",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C101",
+      "claim": "The authors reconstructed 390 GSMs for each genome that was matched to the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we used the ModelSEED database through ModelSEEDPy (Seaver et al., 2021) to reconstruct 390 GSMs for each genome that we matched to the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model reconstruction procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "16c1aa46-898b-49b3-b3d7-40fc42103021",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C102",
+      "claim": "All models constructed showed positive simulated growth rates using FBA on the 'EU average diet' medium.",
+      "claim_type": "EXPLICIT",
+      "source": "All models constructed showed positive 391 simulated growth rates using FBA on the 'EU average diet' medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a quality check on the reconstructed models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "934a5ef7-7a06-4c43-9652-bfafd8d34f4e",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C103",
+      "claim": "The data consisted of bacterial community composition of fecal samples taken over the course of experiments in which B. longum AH1206 was administered as an oral probiotic to 23 subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "This data consisted of bacterial community composition of fecal samples taken over the course of experiments in which B. longum AH1206 was administered as an oral probiotic to 23 subjects, with data available for 22 of these.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data used for validation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "c2248843-8c82-4c6f-befe-db9e7cb83919",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C104",
+      "claim": "Subjects were differentiated into 'engrafters' and 'non-engrafters' based on the survival of the probiotic strain, as determined by cell culture at later time-points.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects were then differentiated into 'engrafters' and 'non-engrafters' based on the survival of the probiotic strain, as determined by cell culture at later time-points, allowing us to use our method as a classifier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the validation data was classified.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "24e2cc34-29aa-4438-bdc1-00fccfd52b0d",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C105",
+      "claim": "The method 'learns' using joint FBA, and so there is no need to split the data into training and testing sets.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that our method 'learns' using joint FBA, and so there is no need to split the data into training and testing sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an advantage of the method compared to traditional machine learning.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "9d980203-b8dc-4e29-b826-0ebbdd5f6b81",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C106",
+      "claim": "The 'learning' procedure does not make use of any known sample classifications, as a traditional machine learning algorithm would.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the 'learning' procedure does not make use of any known sample classifications, as a traditional machine learning algorithm would.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key difference from traditional machine learning approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "abb76b3c-8a80-4d85-ba53-aab1818fd366",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C107",
+      "claim": "The authors made and evaluated predictions using two sets of samples, one taken at a 'baseline' time-point before administration of the probiotic, and one taken at a 'treatment' time-point during administration of the probiotic.",
+      "claim_type": "EXPLICIT",
+      "source": "We made and evaluated predictions using two sets of samples, one taken at a 'baseline' time-point before administration of the the probiotic, and one taken at a 'treatment' time-point during administration of the probiotic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design for validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "d79e56e9-f3c3-43fc-86a5-997ba5f7018d",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C109",
+      "claim": "An AUC-ROC greater than 0.5 indicates positive predictive value of the model.",
+      "claim_type": "EXPLICIT",
+      "source": "AUC-ROCs take values in the interval [0, 1] and, in general, an AUC-ROC greater than 0.5 indicates positive predictive value of the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard interpretation of AUC-ROC values.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "7c458168-33d8-4a85-9e4a-c4ff41b0152e",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C110",
+      "claim": "The SVM and RF classifications were performed using both the relative abundances from the data and binary (presence/absence) forms of the data.",
+      "claim_type": "EXPLICIT",
+      "source": "The SVM and RF classifications were performed using both the relative abundances from the data and binary (presence/absence) forms of the data, which matches our method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the comparison methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "00f6f1bc-4e7c-47ab-b1f9-93d1c30fc061",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C111",
+      "claim": "The 'edge-swapped' network was constructed by drawing edge weights from the original full network, with replacement.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'edge-swapped' network was constructed by drawing edge weights from the original full network, with replacement, as is commonly done to create a null model in network analysis (R\u00f6ttjers et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the null model construction procedure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "8921396c-cd2a-48a2-ba7f-064695d66d30",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C112",
+      "claim": "This approach allows creation of random models that preserve the statistical characteristics of the models tested on, while changing the specific interactions between taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach allows us to create random models that preserve the statistical characteristics of the models that we test on, while changing the specific interactions between taxa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the purpose of the null model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "ddc4cfef-bf2f-4d5d-849f-282aef2d13fb",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C113",
+      "claim": "Using this null model ensures that conclusions are drawn from the joint FBA parameter learning method, and not simply a result of simpler characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this null model ensures that our conclusions are drawn from the joint FBA parameter learning method, and not simply a result of simpler characteristics, e.g., total connectedness of the community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the justification for using the specific null model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "127f2cf6-e953-49d9-b2ff-3491d91a1cd5",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C114",
+      "claim": "The authors used 1039 samples from the null model to estimate the significance of results.",
+      "claim_type": "EXPLICIT",
+      "source": "We used 1039 samples from the null model to estimate the significance of our results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical testing procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "240132d0-3102-4235-9ff4-7d31403ab06a",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C115",
+      "claim": "Each trial consisted of splitting the data randomly into 16 training samples and 6 testing samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Each trial consisted of splitting the data randomly into 16 training samples and 6 testing samples, fitting both an SVM and an RF classifier to the training samples using standard Python libraries (from scikit-learn v. 0.23.2; Pedregosa et al., 2011), and evaluating the 432 model's predictions of the testing samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the cross-validation procedure for machine learning comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "89c0a531-5539-4b8b-9c29-afb3e60a5ae1",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C116",
+      "claim": "The authors used 1000-fold cross-validation of the predictions made by SVM and RF tools.",
+      "claim_type": "EXPLICIT",
+      "source": "We used 1000-fold cross-validation of the predictions made by these tools (i.e. 1000 independent train/test splits).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation procedure for machine learning comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "c0fcacdd-90f2-48ce-84d9-f63881027704",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "claim_id": "C117",
+      "claim": "The authors computed B. longum AH1206 engraftment predictions using simulated knock-out experiments by removing select taxa from the model.",
+      "claim_type": "EXPLICIT",
+      "source": "We compute B. longum AH1206 engraftment predictions using simulated knock-out experiments simply by removing select taxa from the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the knock-out experiment methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "eeb1fde7-b90e-4679-9eb5-326467ec3603",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The GSM-parameterized gLV model shows moderate predictive value for probiotic engraftment at baseline (AUC-ROC ~0.6) and good predictive value during treatment (AUC-ROC ~0.7-0.85). The improved performance from baseline to treatment suggests the method captures biological processes determining engraftment. Results are robust to hyperparameter choices except for complete medium, and outperform a null model, particularly at the treatment timepoint.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C9 provide consistent evidence from Table 1 and Figure 2 showing statistically significant predictive performance (p<0.001 for treatment samples). The progression from moderate to good performance between timepoints is well-documented, and robustness testing across six hyperparameter sets strengthens the findings. The null model comparison provides appropriate statistical validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "8886868c-9187-42e5-aa49-58c411034854",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The proposed method performs comparably to random forest classifiers and significantly outperforms support vector machine classifiers in predicting probiotic engraftment, without requiring training data or known sample classifications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 are supported by Figure 3 showing the method matches RF performance (AUC-ROC ~0.6-0.85) while SVM fails (AUC-ROC ~0.5). The 1000-fold cross-validation (C115-C116) provides robust statistical comparison. The key advantage of not requiring training data (C105-C106) is a significant methodological contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "7ad6e6e7-3c9a-4f6a-ba77-14053ea6609d",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Model alterations adding antagonism or self-inhibition do not significantly impact predictive performance, but adding commensalism causes instability due to finite-time blow-up in the gLV model simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13 are directly supported by Figure 4 showing stable AUC-ROC across antagonism/self-inhibition parameters but instability with commensalism. The identification of finite-time blow-up (C54) and testing of mitigation strategies (C55) demonstrates appropriate model validation and sensitivity analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "437824d4-f919-4fb7-a68f-e08baa59f729",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Simulated knock-out experiments reveal that most abundant taxa (4 of 5 tested) have negative impacts on B. longum engraftment, with B. adolescentis showing negative impact and F. prausnitzii showing positive impact. Knock-outs generally increased predicted engraftment and improved prediction accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 are supported by Table 2 showing quantitative effects of knock-outs on engraftment scores and AUC-ROC. The specific findings about B. adolescentis (C66) and F. prausnitzii (C67) are directly stated and supported by the data. The methodology (C59, C117) is clearly described, providing mechanistic insights into microbial interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "6c8e7e8f-ee3e-4224-8d41-3e0693da8a41",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Sensitivity analysis reveals that engraftment scores are highly sensitive to individual interaction parameters (\u03b2_lk) but robust to hyperparameter choices, suggesting individual microbe-microbe interactions have outsized impacts on community composition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18 are quantitatively supported by Table 3 showing large sensitivity values (10^10 to 10^33) for interaction parameters versus small variance (10^-6 to 10^-5) across hyperparameters. The inference about individual interaction importance (C23-C24) is logically derived from this data and consistent with the mechanistic model structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "ce1ae528-6d1b-48b2-bfe5-87a58d31ae6f",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The method successfully uses genome-scale metabolic modeling to parameterize population models requiring only single time-point genomic data and binary presence/absence information, without requiring time-longitudinal data or parameter fitting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 state the main conclusion, supported by the demonstrated predictive performance (C4-C5). The methodological claims (C28, C45, C49, C70, C72-C73) are consistently described and demonstrated throughout. Figure 1 and Figure 5 illustrate the approach. The minimal data requirements represent a significant practical advantage over traditional methods (C43-C44, C71).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "d3f8c114-2bbe-4d9d-98d7-a0293f75e1a3",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "GSMs were constructed by matching taxa to RefSeq genomes and using ModelSEED for reconstruction, achieving ~87-88% sample coverage with 390 models that all showed positive growth rates on EU average diet medium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 and C98-C102 describe the GSM construction pipeline with specific details about genome matching criteria, coverage achieved, and quality control. The 87-88% coverage (C99) and validation that all models showed positive growth (C102) demonstrate reasonable quality control, though the reliance on automated reconstruction is acknowledged as a limitation (C21-C22).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "3cadda57-ca98-4f05-91f1-24dc3eb0e76a",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The gLV model was implemented with uniform intrinsic growth rate of 1, using Monte-Carlo sampling (1000 draws) to handle multi-stability and chaos, with predictions evaluated using AUC-ROC across six hyperparameter sets varying RAC values and environmental conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C82 describe the simulation approach with clear justification for methodological choices. The use of 1000 Monte-Carlo samples (C82) addresses model complexity (C80). The evaluation framework (C61-C65) using AUC-ROC across multiple hyperparameter sets is appropriate and well-documented in Table 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "4d08c68e-8309-42ed-8de2-0d11ce0bf24e",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Interaction parameters were inferred using joint FBA with resource allocation constraints (RAC=35 mmol/day), simulating pairwise growth on EU average diet medium. Log-ratios of paired vs. singleton growth were used to define interaction strengths, with network rescaling to [-1,1] for computational convenience.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C97 provide detailed methodology for parameter inference. The choice of log-ratio (C91-C93) is justified over simple differences. The acknowledgment of limitations (C94-C95) regarding equilibrium-only data and underdetermined fitting is appropriate. The rescaling (C96-C97) is justified as time-rescaling that doesn't affect predictions. The approach follows established methods (C85-C86).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "7c197e7a-613e-4182-a80c-e61f5e851047",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The method was validated using data from Maldonado-G\u00f3mez et al. 2016, where B. longum AH1206 was administered to 23 subjects (22 with data), classified as engrafters/non-engrafters based on cell culture, with predictions made from both baseline and treatment timepoint samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C103-C104, C107 accurately describe the validation dataset and experimental design. The use of an independent published dataset with clear engraftment classification provides appropriate validation. The two-timepoint analysis (baseline and treatment) allows assessment of temporal dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "7833a9cc-83f6-4283-aabf-9735bda66a81",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "All GSM-based methods are limited by the accuracy of metabolic model reconstructions, with low-quality reconstructions potentially omitting key reactions or including incorrect ones. Community GSM methods also suffer from focus on equilibrium states, high computational cost, and difficulty providing accurate models for each member.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 and C48 acknowledge important limitations of the approach. These are stated as known issues in the field based on general knowledge and are appropriately discussed. The authors acknowledge these limitations apply to their method while arguing their approach mitigates some issues (C49).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "88b9afbd-670e-4c17-adc2-70a7d09342bd",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Species-species interaction models do not fully capture microbial community dynamics as interactions likely change with environmental manipulation. Future work incorporating dynamic interaction networks from dynamic FBA may improve predictions with modest complexity increases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C25-C27 and C77-C78 discuss limitations and future directions. C25 cites prior work, but C26-C27 are speculative (explicitly labeled as conjecture). C77-C78 reference unpublished upcoming work. While these represent reasonable hypotheses based on the current findings, they lack empirical support in this manuscript and represent proposed rather than demonstrated improvements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "047e947e-c1a0-4abc-8ae0-96a55bcd3651",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "An edge-swapped null model was constructed by randomly drawing interaction parameters with replacement from the inferred network, preserving statistical characteristics while changing specific interactions. This null model (1039 samples) was used to assess statistical significance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C111-C114 describe the null model construction and justification. The edge-swapping approach (C111) is cited as standard practice. The rationale (C112-C113) for using this specific null model is sound\u2014it controls for network statistics while testing the specific learned interactions. The sample size (C114) of 1039 provides adequate statistical power.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "183ea36b-137d-4bb6-8dd1-0e8205caaeac",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The gut microbiome profoundly affects human health, leading to $1 billion annual spending on probiotics in the US, but probiotic success has been limited with only one-third to one-half of patients showing engraftment. Probiotic interventions are primarily ecological, and mechanistic approaches rooted in metabolic data have potential to advance the field.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C31-C33 provide background supported by appropriate citations. C34 presents a reasonable conceptual framework. C35 is speculative about future potential but is appropriately framed as such. These claims establish motivation and context rather than presenting novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "e7eb04c1-e03e-46b3-a260-edba4d1a76ec",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Previous engraftment prediction work has been restricted to FMT studies using non-mechanistic classifiers that cannot generalize to new conditions. While gLV models are popular mechanistic tools, they require dense time-longitudinal data and parameters don't extend to novel environments. Dynamic FBA has been used but has practical drawbacks including high computational complexity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C44 provide literature review and context, all supported by appropriate citations. These accurately characterize limitations of existing approaches (non-generalizability of classifiers C37-C38, data requirements of gLV C43, limitations of dynamic FBA C41) and establish the gap the current work addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "b6ce7030-ac67-49f1-8d9c-d1f56e9b48d8",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "GSMs encode metabolic pathways allowing simulation of cellular metabolism and growth, have been used extensively for mono-cultures and recently for communities. Dynamic FBA provides complete community dynamics but is complex, difficult to analyze, and contains unknown parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 and C68-C69 provide technical background on GSMs and dynamic FBA, supported by appropriate citations (C46-C47) and stated as known characteristics (C68-C69). These establish the methodological foundation and justify the simplified approach taken in this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "e5a15516-44f0-4ae8-851b-94d7cf103662",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "GSMs can be built from sample genomes using automated tools like CarveMe or ModelSEED, allowing the method to be extended to taxa not in databases. Complete knock-out experiments are readily possible to identify relationships between taxa and engraftment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76 describe extensibility and capabilities of the method. C74 is supported by citations to the tools. C75 and C76 are reasonable inferences about method capabilities based on the demonstrated approach, though they represent potential rather than demonstrated extensions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "bd719aa1-e361-445e-a0de-665dbcc40d24",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The method 'learns' using joint FBA without requiring training/testing data splits or known sample classifications, unlike traditional machine learning algorithms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C106 accurately describe a key methodological advantage. The method uses mechanistic modeling (joint FBA) rather than statistical learning from labeled data. This is demonstrated by the ability to make predictions on all 22 samples without holdout sets, contrasting with the RF/SVM comparisons that required cross-validation (C115-C116).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    },
+    {
+      "id": "d5143be3-95f6-48bd-902e-4719fbc378dd",
+      "content_id": "7f6ca345-ae49-4db5-b179-bfb422ba8101",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The mechanistic nature of the model reveals which microbe-microbe interactions potentially drive engraftment. Despite being a 'low-budget' tool with limited data requirements, the method produces positive predictive value, suggesting more complex methods could provide greater value.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 is supported by the knock-out experiments (C15-C16, C66-C67) and sensitivity analysis (C17-C18). C57 appropriately characterizes the method given its minimal data requirements. C58 is somewhat speculative about future methods but is reasonably inferred from the current success with a simplified approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:20:35.211702Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8e0e334d-554d-4634-b294-dd7ac4090a50",
+      "result_id": "eeb1fde7-b90e-4679-9eb5-326467ec3603"
+    },
+    {
+      "claim_id": "e1373e40-52ab-4422-b824-85c1bf1cf1fc",
+      "result_id": "eeb1fde7-b90e-4679-9eb5-326467ec3603"
+    },
+    {
+      "claim_id": "aea91712-06c5-4366-8bc5-57c2cf981c01",
+      "result_id": "eeb1fde7-b90e-4679-9eb5-326467ec3603"
+    },
+    {
+      "claim_id": "5bf18637-c28b-4501-a8c2-7470d8b867c1",
+      "result_id": "eeb1fde7-b90e-4679-9eb5-326467ec3603"
+    },
+    {
+      "claim_id": "4c4e1047-f91b-4c6b-92c0-574d7b8f751c",
+      "result_id": "eeb1fde7-b90e-4679-9eb5-326467ec3603"
+    },
+    {
+      "claim_id": "82f3d1b2-08b3-4401-99b3-8fb8d09260b7",
+      "result_id": "eeb1fde7-b90e-4679-9eb5-326467ec3603"
+    },
+    {
+      "claim_id": "8e2fcbfc-5085-4ab6-98e9-51942d3a372d",
+      "result_id": "eeb1fde7-b90e-4679-9eb5-326467ec3603"
+    },
+    {
+      "claim_id": "39c64be8-6e8e-4a23-b834-94445900b11c",
+      "result_id": "eeb1fde7-b90e-4679-9eb5-326467ec3603"
+    },
+    {
+      "claim_id": "d68d905f-413c-437d-af8f-7a280d68b419",
+      "result_id": "8886868c-9187-42e5-aa49-58c411034854"
+    },
+    {
+      "claim_id": "2f31793b-39f9-4a00-9d9a-0c173a4d6fd2",
+      "result_id": "8886868c-9187-42e5-aa49-58c411034854"
+    },
+    {
+      "claim_id": "7c458168-33d8-4a85-9e4a-c4ff41b0152e",
+      "result_id": "8886868c-9187-42e5-aa49-58c411034854"
+    },
+    {
+      "claim_id": "240132d0-3102-4235-9ff4-7d31403ab06a",
+      "result_id": "8886868c-9187-42e5-aa49-58c411034854"
+    },
+    {
+      "claim_id": "89c0a531-5539-4b8b-9c29-afb3e60a5ae1",
+      "result_id": "8886868c-9187-42e5-aa49-58c411034854"
+    },
+    {
+      "claim_id": "652d6e5c-364d-4f8d-9776-7bc17b04edbc",
+      "result_id": "7ad6e6e7-3c9a-4f6a-ba77-14053ea6609d"
+    },
+    {
+      "claim_id": "93fef606-44b7-466a-b83e-078cc311809c",
+      "result_id": "7ad6e6e7-3c9a-4f6a-ba77-14053ea6609d"
+    },
+    {
+      "claim_id": "28975431-385d-42f0-a079-505225a4bedf",
+      "result_id": "7ad6e6e7-3c9a-4f6a-ba77-14053ea6609d"
+    },
+    {
+      "claim_id": "87f02edb-b698-4e20-863c-ded780e37b9a",
+      "result_id": "7ad6e6e7-3c9a-4f6a-ba77-14053ea6609d"
+    },
+    {
+      "claim_id": "0abcc603-0ed5-4c20-a6ca-2d3a0b33b701",
+      "result_id": "437824d4-f919-4fb7-a68f-e08baa59f729"
+    },
+    {
+      "claim_id": "28a296bd-ce25-4431-8cfd-210d587c9019",
+      "result_id": "437824d4-f919-4fb7-a68f-e08baa59f729"
+    },
+    {
+      "claim_id": "d7d01165-bc12-4305-920b-79b810e45704",
+      "result_id": "437824d4-f919-4fb7-a68f-e08baa59f729"
+    },
+    {
+      "claim_id": "9be4c0fe-5b92-4c53-b0c0-c7b0e49373a3",
+      "result_id": "437824d4-f919-4fb7-a68f-e08baa59f729"
+    },
+    {
+      "claim_id": "5f5d47c2-2cb1-457f-bcf5-ca5abbef10a8",
+      "result_id": "437824d4-f919-4fb7-a68f-e08baa59f729"
+    },
+    {
+      "claim_id": "c0fcacdd-90f2-48ce-84d9-f63881027704",
+      "result_id": "437824d4-f919-4fb7-a68f-e08baa59f729"
+    },
+    {
+      "claim_id": "07993207-3910-47be-9310-58d5f3a0eaa3",
+      "result_id": "6c8e7e8f-ee3e-4224-8d41-3e0693da8a41"
+    },
+    {
+      "claim_id": "f2258332-2b26-4e38-ac4d-63b96b0705d4",
+      "result_id": "6c8e7e8f-ee3e-4224-8d41-3e0693da8a41"
+    },
+    {
+      "claim_id": "d8a7d65f-2f13-4dfc-bd92-e3cb731b1cbc",
+      "result_id": "6c8e7e8f-ee3e-4224-8d41-3e0693da8a41"
+    },
+    {
+      "claim_id": "2c5885d7-9127-47ba-b1c4-0822b6264df6",
+      "result_id": "6c8e7e8f-ee3e-4224-8d41-3e0693da8a41"
+    },
+    {
+      "claim_id": "b47eea72-0336-427a-ac36-2755c54f4a28",
+      "result_id": "6c8e7e8f-ee3e-4224-8d41-3e0693da8a41"
+    },
+    {
+      "claim_id": "0d985fc8-df16-4b85-baf3-da457187f7a1",
+      "result_id": "ce1ae528-6d1b-48b2-bfe5-87a58d31ae6f"
+    },
+    {
+      "claim_id": "f5658796-34d3-49c0-b7d4-627c17c3c05a",
+      "result_id": "ce1ae528-6d1b-48b2-bfe5-87a58d31ae6f"
+    },
+    {
+      "claim_id": "3a3dd6f1-5dad-44b6-a34f-37a11a3708e5",
+      "result_id": "ce1ae528-6d1b-48b2-bfe5-87a58d31ae6f"
+    },
+    {
+      "claim_id": "1ae4db4f-4a83-4388-9cc8-1889c01aa175",
+      "result_id": "ce1ae528-6d1b-48b2-bfe5-87a58d31ae6f"
+    },
+    {
+      "claim_id": "3e2cf5a8-a7d6-4e4a-a681-eb74f3d832dc",
+      "result_id": "ce1ae528-6d1b-48b2-bfe5-87a58d31ae6f"
+    },
+    {
+      "claim_id": "734c366d-efb3-4ac9-b9ff-7f3dd9a7e98e",
+      "result_id": "ce1ae528-6d1b-48b2-bfe5-87a58d31ae6f"
+    },
+    {
+      "claim_id": "24f33444-cdba-4429-af5d-77f7bccfb1ab",
+      "result_id": "ce1ae528-6d1b-48b2-bfe5-87a58d31ae6f"
+    },
+    {
+      "claim_id": "effae759-431e-490e-ae08-a04a4937f94a",
+      "result_id": "ce1ae528-6d1b-48b2-bfe5-87a58d31ae6f"
+    },
+    {
+      "claim_id": "9972b36e-47c6-48ba-a3ea-10cef9378e5d",
+      "result_id": "d3f8c114-2bbe-4d9d-98d7-a0293f75e1a3"
+    },
+    {
+      "claim_id": "be8bda28-2ed8-4fa9-aaf6-a907fe33d6bf",
+      "result_id": "d3f8c114-2bbe-4d9d-98d7-a0293f75e1a3"
+    },
+    {
+      "claim_id": "910374c7-9dfb-4444-a755-21b0cf9372c4",
+      "result_id": "d3f8c114-2bbe-4d9d-98d7-a0293f75e1a3"
+    },
+    {
+      "claim_id": "387f7482-9b1e-44c9-99ef-936390a9950f",
+      "result_id": "d3f8c114-2bbe-4d9d-98d7-a0293f75e1a3"
+    },
+    {
+      "claim_id": "fc44554f-f8c4-4aa5-9f28-a04ff6904171",
+      "result_id": "d3f8c114-2bbe-4d9d-98d7-a0293f75e1a3"
+    },
+    {
+      "claim_id": "0b07b82f-0ade-4494-b7c8-5097134626ff",
+      "result_id": "d3f8c114-2bbe-4d9d-98d7-a0293f75e1a3"
+    },
+    {
+      "claim_id": "b27fef0c-1b53-4f80-85af-0f166935edbe",
+      "result_id": "d3f8c114-2bbe-4d9d-98d7-a0293f75e1a3"
+    },
+    {
+      "claim_id": "16c1aa46-898b-49b3-b3d7-40fc42103021",
+      "result_id": "d3f8c114-2bbe-4d9d-98d7-a0293f75e1a3"
+    },
+    {
+      "claim_id": "2ddfb1c9-ba0f-4ac6-85b6-8f20208c9856",
+      "result_id": "3cadda57-ca98-4f05-91f1-24dc3eb0e76a"
+    },
+    {
+      "claim_id": "3c3b9595-3574-454f-82b0-2d121fc34924",
+      "result_id": "3cadda57-ca98-4f05-91f1-24dc3eb0e76a"
+    },
+    {
+      "claim_id": "9678c317-6579-48d6-b9cb-cde6f8511128",
+      "result_id": "3cadda57-ca98-4f05-91f1-24dc3eb0e76a"
+    },
+    {
+      "claim_id": "6d4ec7cd-f754-4efd-9b20-a097e8b233f5",
+      "result_id": "3cadda57-ca98-4f05-91f1-24dc3eb0e76a"
+    },
+    {
+      "claim_id": "b5f06d31-f197-47bd-ae4b-e193b2245490",
+      "result_id": "3cadda57-ca98-4f05-91f1-24dc3eb0e76a"
+    },
+    {
+      "claim_id": "6759cbb9-2129-48ae-868a-2835f690e453",
+      "result_id": "3cadda57-ca98-4f05-91f1-24dc3eb0e76a"
+    },
+    {
+      "claim_id": "002900c0-508d-4ff6-91a6-61ea5aa45313",
+      "result_id": "3cadda57-ca98-4f05-91f1-24dc3eb0e76a"
+    },
+    {
+      "claim_id": "e5344c78-4dff-4fa5-93c4-c4beefe8aa8b",
+      "result_id": "3cadda57-ca98-4f05-91f1-24dc3eb0e76a"
+    },
+    {
+      "claim_id": "a747ca74-437d-430d-95e0-91a0ff81f9ab",
+      "result_id": "3cadda57-ca98-4f05-91f1-24dc3eb0e76a"
+    },
+    {
+      "claim_id": "d5454b23-e935-4ec3-a037-6aab7f424451",
+      "result_id": "4d08c68e-8309-42ed-8de2-0d11ce0bf24e"
+    },
+    {
+      "claim_id": "97f70856-d352-4031-9751-cbfd76a34897",
+      "result_id": "4d08c68e-8309-42ed-8de2-0d11ce0bf24e"
+    },
+    {
+      "claim_id": "7363b877-574b-47ab-991b-8744302b0bee",
+      "result_id": "4d08c68e-8309-42ed-8de2-0d11ce0bf24e"
+    },
+    {
+      "claim_id": "3de22345-6b10-4283-8d0d-6f62f83f4a19",
+      "result_id": "4d08c68e-8309-42ed-8de2-0d11ce0bf24e"
+    },
+    {
+      "claim_id": "b09257f1-23b9-47d3-8ee1-c2cbdd9e1d88",
+      "result_id": "4d08c68e-8309-42ed-8de2-0d11ce0bf24e"
+    },
+    {
+      "claim_id": "1207cb94-542e-49db-9281-6fabdc1c5f23",
+      "result_id": "4d08c68e-8309-42ed-8de2-0d11ce0bf24e"
+    },
+    {
+      "claim_id": "f9b39aa8-31f6-4b80-8d04-c3bc9a4cd5a0",
+      "result_id": "4d08c68e-8309-42ed-8de2-0d11ce0bf24e"
+    },
+    {
+      "claim_id": "e656ff65-3cd5-49e1-815d-29e030f2447f",
+      "result_id": "4d08c68e-8309-42ed-8de2-0d11ce0bf24e"
+    },
+    {
+      "claim_id": "cd12a9aa-b2fe-4271-8fe3-e7207af30185",
+      "result_id": "4d08c68e-8309-42ed-8de2-0d11ce0bf24e"
+    },
+    {
+      "claim_id": "2e4a9f39-78a4-4f27-9d10-91e632a719cc",
+      "result_id": "4d08c68e-8309-42ed-8de2-0d11ce0bf24e"
+    },
+    {
+      "claim_id": "64e20f0a-c1f9-4257-a6cf-6cc2173c9e03",
+      "result_id": "4d08c68e-8309-42ed-8de2-0d11ce0bf24e"
+    },
+    {
+      "claim_id": "f75ae990-48e0-4d78-a708-cc877e915646",
+      "result_id": "4d08c68e-8309-42ed-8de2-0d11ce0bf24e"
+    },
+    {
+      "claim_id": "daeea0a9-5507-4c76-a8e3-0faddf4dd685",
+      "result_id": "4d08c68e-8309-42ed-8de2-0d11ce0bf24e"
+    },
+    {
+      "claim_id": "b5ec8421-fa05-46e7-a54a-ed4f50141e17",
+      "result_id": "4d08c68e-8309-42ed-8de2-0d11ce0bf24e"
+    },
+    {
+      "claim_id": "e5eb4d73-ec21-4d5a-9000-6890201f92c9",
+      "result_id": "4d08c68e-8309-42ed-8de2-0d11ce0bf24e"
+    },
+    {
+      "claim_id": "50ccfba6-df59-4c1f-bbcc-c6a93bd4775c",
+      "result_id": "7c197e7a-613e-4182-a80c-e61f5e851047"
+    },
+    {
+      "claim_id": "934a5ef7-7a06-4c43-9652-bfafd8d34f4e",
+      "result_id": "7c197e7a-613e-4182-a80c-e61f5e851047"
+    },
+    {
+      "claim_id": "c2248843-8c82-4c6f-befe-db9e7cb83919",
+      "result_id": "7c197e7a-613e-4182-a80c-e61f5e851047"
+    },
+    {
+      "claim_id": "abb76b3c-8a80-4d85-ba53-aab1818fd366",
+      "result_id": "7c197e7a-613e-4182-a80c-e61f5e851047"
+    },
+    {
+      "claim_id": "8c0dedf0-2381-45ef-978f-d4cc82f07eef",
+      "result_id": "7833a9cc-83f6-4283-aabf-9735bda66a81"
+    },
+    {
+      "claim_id": "8b2e7053-5ca8-4f6d-82af-d68aa24ac102",
+      "result_id": "7833a9cc-83f6-4283-aabf-9735bda66a81"
+    },
+    {
+      "claim_id": "58a1ad53-3e70-4ced-ae86-cd8633316f7d",
+      "result_id": "7833a9cc-83f6-4283-aabf-9735bda66a81"
+    },
+    {
+      "claim_id": "b2ba8dd9-3bdd-4e5e-9122-0a4a57245ad3",
+      "result_id": "88b9afbd-670e-4c17-adc2-70a7d09342bd"
+    },
+    {
+      "claim_id": "d4ddf1a5-e6ae-45ef-bbd0-6e6ed8ce6b1a",
+      "result_id": "88b9afbd-670e-4c17-adc2-70a7d09342bd"
+    },
+    {
+      "claim_id": "2b182286-154d-45f0-8edb-57e9e948bb2a",
+      "result_id": "88b9afbd-670e-4c17-adc2-70a7d09342bd"
+    },
+    {
+      "claim_id": "2fa2e0ec-05df-43cd-ab89-5a73e883eec0",
+      "result_id": "88b9afbd-670e-4c17-adc2-70a7d09342bd"
+    },
+    {
+      "claim_id": "fff9a8de-a739-4578-ba51-7b41df113165",
+      "result_id": "88b9afbd-670e-4c17-adc2-70a7d09342bd"
+    },
+    {
+      "claim_id": "00f6f1bc-4e7c-47ab-b1f9-93d1c30fc061",
+      "result_id": "047e947e-c1a0-4abc-8ae0-96a55bcd3651"
+    },
+    {
+      "claim_id": "8921396c-cd2a-48a2-ba7f-064695d66d30",
+      "result_id": "047e947e-c1a0-4abc-8ae0-96a55bcd3651"
+    },
+    {
+      "claim_id": "ddc4cfef-bf2f-4d5d-849f-282aef2d13fb",
+      "result_id": "047e947e-c1a0-4abc-8ae0-96a55bcd3651"
+    },
+    {
+      "claim_id": "127f2cf6-e953-49d9-b2ff-3491d91a1cd5",
+      "result_id": "047e947e-c1a0-4abc-8ae0-96a55bcd3651"
+    },
+    {
+      "claim_id": "8b8d4ac6-7a3a-4505-aafa-23a1c895c142",
+      "result_id": "183ea36b-137d-4bb6-8dd1-0e8205caaeac"
+    },
+    {
+      "claim_id": "9eaccaeb-65e9-4b0f-8996-6fc149940fc8",
+      "result_id": "183ea36b-137d-4bb6-8dd1-0e8205caaeac"
+    },
+    {
+      "claim_id": "152e39c0-1f1f-425e-9087-0411d1f6d494",
+      "result_id": "183ea36b-137d-4bb6-8dd1-0e8205caaeac"
+    },
+    {
+      "claim_id": "c106dc2a-48b4-4b15-8da8-c7f9ba390e83",
+      "result_id": "183ea36b-137d-4bb6-8dd1-0e8205caaeac"
+    },
+    {
+      "claim_id": "c64a1cc9-2a48-4707-aa98-d8df88c1fa59",
+      "result_id": "183ea36b-137d-4bb6-8dd1-0e8205caaeac"
+    },
+    {
+      "claim_id": "4c01268b-781d-4ad6-8003-31143e0384a4",
+      "result_id": "183ea36b-137d-4bb6-8dd1-0e8205caaeac"
+    },
+    {
+      "claim_id": "705fd40a-8e28-4cd7-9dcc-928cd4937661",
+      "result_id": "183ea36b-137d-4bb6-8dd1-0e8205caaeac"
+    },
+    {
+      "claim_id": "734c3d64-0c26-4792-bee2-eb807dac9470",
+      "result_id": "183ea36b-137d-4bb6-8dd1-0e8205caaeac"
+    },
+    {
+      "claim_id": "3456394b-de25-4380-9bab-7d85093c048a",
+      "result_id": "e7eb04c1-e03e-46b3-a260-edba4d1a76ec"
+    },
+    {
+      "claim_id": "383507b8-7722-4509-a99e-f4b888de23c0",
+      "result_id": "e7eb04c1-e03e-46b3-a260-edba4d1a76ec"
+    },
+    {
+      "claim_id": "fcf83793-f489-4b18-b45e-192710414d5d",
+      "result_id": "e7eb04c1-e03e-46b3-a260-edba4d1a76ec"
+    },
+    {
+      "claim_id": "fade6e51-0488-4fa5-86dd-860eec4805cb",
+      "result_id": "e7eb04c1-e03e-46b3-a260-edba4d1a76ec"
+    },
+    {
+      "claim_id": "bcea1208-0b05-48d1-9abb-5d74638c0357",
+      "result_id": "e7eb04c1-e03e-46b3-a260-edba4d1a76ec"
+    },
+    {
+      "claim_id": "aa7806dd-183b-454c-9153-208e94211aa8",
+      "result_id": "e7eb04c1-e03e-46b3-a260-edba4d1a76ec"
+    },
+    {
+      "claim_id": "6a44add0-28b1-45a1-a2da-d1f52ab45a92",
+      "result_id": "e7eb04c1-e03e-46b3-a260-edba4d1a76ec"
+    },
+    {
+      "claim_id": "c66f9f62-f2b0-4973-b60f-9df7cf1a54d7",
+      "result_id": "e7eb04c1-e03e-46b3-a260-edba4d1a76ec"
+    },
+    {
+      "claim_id": "48c83f8f-3fd1-4760-a19b-784dbf1459e2",
+      "result_id": "e7eb04c1-e03e-46b3-a260-edba4d1a76ec"
+    },
+    {
+      "claim_id": "60d781f1-af17-4e95-8c52-6231db64d8c9",
+      "result_id": "b6ce7030-ac67-49f1-8d9c-d1f56e9b48d8"
+    },
+    {
+      "claim_id": "f46c0276-d46d-4808-b49d-8f98d523eac0",
+      "result_id": "b6ce7030-ac67-49f1-8d9c-d1f56e9b48d8"
+    },
+    {
+      "claim_id": "38a0881e-b898-4408-bee9-7adc8cfb91bb",
+      "result_id": "b6ce7030-ac67-49f1-8d9c-d1f56e9b48d8"
+    },
+    {
+      "claim_id": "a56f9513-a052-4f5b-9842-01b777c79754",
+      "result_id": "b6ce7030-ac67-49f1-8d9c-d1f56e9b48d8"
+    },
+    {
+      "claim_id": "a960b95e-ea39-4ff2-b98d-0e8a26525045",
+      "result_id": "e5a15516-44f0-4ae8-851b-94d7cf103662"
+    },
+    {
+      "claim_id": "7848b2a6-e6f2-4ea6-939c-098c0973ff89",
+      "result_id": "e5a15516-44f0-4ae8-851b-94d7cf103662"
+    },
+    {
+      "claim_id": "9fed451e-bd1a-433d-b411-cbffcb025607",
+      "result_id": "e5a15516-44f0-4ae8-851b-94d7cf103662"
+    },
+    {
+      "claim_id": "24e2cc34-29aa-4438-bdc1-00fccfd52b0d",
+      "result_id": "bd719aa1-e361-445e-a0de-665dbcc40d24"
+    },
+    {
+      "claim_id": "9d980203-b8dc-4e29-b826-0ebbdd5f6b81",
+      "result_id": "bd719aa1-e361-445e-a0de-665dbcc40d24"
+    },
+    {
+      "claim_id": "7a544645-6898-4826-83f7-eea6e7c70152",
+      "result_id": "d5143be3-95f6-48bd-902e-4719fbc378dd"
+    },
+    {
+      "claim_id": "17283da2-91a5-47c3-b60c-ff5ccb03a26f",
+      "result_id": "d5143be3-95f6-48bd-902e-4719fbc378dd"
+    },
+    {
+      "claim_id": "f59f18e5-a730-4be3-86c7-9765c8093aa8",
+      "result_id": "d5143be3-95f6-48bd-902e-4719fbc378dd"
+    }
+  ],
+  "comparisons": []
+}

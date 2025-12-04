@@ -1,0 +1,2054 @@
+{
+  "submission": {
+    "id": "090b74d2-e662-4e2e-98eb-96a4af35af5f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:21:25.807408Z",
+    "updated_at": "2025-12-04T03:21:25.807408Z"
+  },
+  "content": [
+    {
+      "id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "submission_id": "090b74d2-e662-4e2e-98eb-96a4af35af5f",
+      "content_type": "manuscript",
+      "content_text": "# Within-host diversity improves phylogenetic and transmission reconstruction of SARS-CoV-2 outbreaks\n\n## Authors\n\n- Arturo Torres Ortiz<sup>1</sup> ([ORCID: 0000-0002-2492-0958](https://orcid.org/0000-0002-2492-0958)) \u2020\n- Michelle Kendall<sup>3</sup> ([ORCID: 0000-0001-7344-7071](https://orcid.org/0000-0001-7344-7071))\n- Nathaniel Storey<sup>4</sup>\n- James Hatcher<sup>4</sup>\n- Helen Dunn<sup>4</sup>\n- Sunando Roy<sup>2</sup>\n- Rachel Williams<sup>5</sup>\n- Charlotte Williams<sup>5</sup>\n- Richard A Goldstein<sup>5</sup> ([ORCID: 0000-0001-5148-4672](https://orcid.org/0000-0001-5148-4672))\n- Xavier Didelot<sup>3</sup> ([ORCID: 0000-0003-1885-500X](https://orcid.org/0000-0003-1885-500X))\n- Kathryn Harris<sup>4</sup>\n- Judith Breuer<sup>2</sup> ([ORCID: 0000-0001-8246-0534](https://orcid.org/0000-0001-8246-0534))\n- Louis Grandjean<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Department of Infectious Diseases, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))\n2. Department of Infection, Immunity and Inflammation, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))\n3. Department of Statistics, University of Warwick Coventry United Kingdom ([ROR:01a77tt86](https://ror.org/01a77tt86))\n4. Department of Microbiology, Great Ormond Street Hospital London United Kingdom ([ROR:00zn2c847](https://ror.org/00zn2c847))\n5. UCL Genomics, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))\n6. Department of Virology, East & South East London Pathology Partnership, Royal London Hospital, Barts Health NHS Trust London United Kingdom ([ROR:00b31g692](https://ror.org/00b31g692))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAccurate inference of who infected whom in an infectious disease outbreak is critical for the delivery of effective infection prevention and control. The increased resolution of pathogen whole-genome sequencing has significantly improved our ability to infer transmission events. Despite this, transmission inference often remains limited by the lack of genomic variation between the source case and infected contacts. Although within-host genetic diversity is common among a wide variety of pathogens, conventional whole-genome sequencing phylogenetic approaches exclusively use consensus sequences, which consider only the most prevalent nucleotide at each position and therefore fail to capture low-frequency variation within samples. We hypothesized that including within-sample variation in a phylogenetic model would help to identify who infected whom in instances in which this was previously impossible. Using whole-genome sequences from SARS-CoV-2 multi-institutional outbreaks as an example, we show how within-sample diversity is partially maintained among repeated serial samples from the same host, it can transmitted between those cases with known epidemiological links, and how this improves phylogenetic inference and our understanding of who infected whom. Our technique is applicable to other infectious diseases and has immediate clinical utility in infection prevention and control.\n\n## Introduction\n\nUnderstanding who infects whom in an infectious disease outbreak is a key component of infection prevention and control (Didelot et al., 2012). The use of whole-genome sequencing allows for detailed investigation of disease outbreaks, but the limited genetic diversity of many pathogens often hinders our understanding of transmission events (Campbell et al., 2018). As a consequence of the limited diversity, many index case and contact pairs will share identical genotypes, making it difficult to ascertain who infected whom.\n\nWithin-sample genetic diversity is common among a wide variety of pathogens (Mongkolrattanothai et al., 2011; Lieberman et al., 2016; Dinis et al., 2016; Leitner, 2019; Popa et al., 2020). This diversity may be generated de novo during infection, by a single transmission event of a diverse inoculum or by independent transmission events from multiple sources (Worby et al., 2014). The maintenance and dynamic of within-host diversity is then a product of natural selection, genetic drift, and fluctuating population size (Didelot et al., 2012). The transmission of within-host variation between individuals is also favored as a large inoculum exposure is more likely to give rise to infection (Murphy et al., 1984; Han et al., 2019; Lee et al., 2022; Sender et al., 2021; Spinelli et al., 2021; Trunfio et al., 2021). The amount of within-sample diversity transmitted from index case to contact is determined by the bottleneck size (Zwart and Elena, 2015), with stringent bottlenecks limiting the number of genotypes transmitted from the host to the recipient, and wide bottlenecks allowing for the transmission of higher levels of genetic diversity (Worby et al., 2014).\n\nPhylogenetic analysis provides information regarding the structure of the genetic diversity among pathogen isolates. Moreover, pathogen phylogenetic trees can be used as input for many downstream analysis, including inference of transmission events, population size dynamics, or estimation of parameters of epidemiological models (Didelot et al., 2018). Most genomic and phylogenetic workflows involve either genome assembly or alignment of sequencing reads to a reference genome. In both cases, conventionally the resulting alignment exclusively represents the most common nucleotide at each position. This is often referred to as the consensus sequence. Although genome assemblers may output contigs (combined overlapping reads) representing low-frequency haplotypes, only the majority contig is kept in the final sequence. In a mapping approach, a frequency threshold for the major variant is usually pre-determined, under which a position is considered ambiguous. The lack of genetic variation between temporally proximate samples and the slow mutation rate of many pathogens results in direct transmission events sharing exact sequences between the hosts when using the consensus sequence approach. For instance, the substitution rate of SARS-CoV-2 has been inferred to be around two mutations per genome per month (Harvey et al., 2021). Given its infectious period of 6 days (Byrne et al., 2020), most consensus sequences in a small-scale outbreak will show no variation between them. This lack of resolution and poor phylogenetic signal complicate phylogenetic inference, limiting the downstream analysis and conclusions that can be extracted from the phylogenetic tree. Previous work has shown the advantages of using within-host diversity to infer transmission events compared to using consensus sequences (Wymant et al., 2018; De Maio et al., 2018). Aside from transmission inference, the use of the within-host pathogen genetic data directly within phylogenetic inference will improve any downstream analysis using a phylogenetic tree as starting point.\n\nWe hypothesize that the failure of consensus sequence approaches to capture within-sample variation arbitrarily excludes meaningful data and limits pathogen phylogenetic and transmission inference, and that including within-sample diversity in a phylogenetic model would significantly increase the evolutionary and temporal signal and thereby improve our ability to infer infectious disease phylogenies and transmission events.\n\nWe tested our hypothesis on multi-institutional SARS-CoV-2 outbreaks across London hospitals that were part of the COVID-19 Genomics UK (COG-UK) consortia (COVID-19 Genomics UK COG-UK, 2020). Technical replicates, repeated longitudinal sampling from the same patient, and epidemiological data allowed us to evaluate the presence and stability of within-sample diversity within the host and in independently determined transmission chains. We also evaluated the use of within-sample diversity in phylogenetic analysis by conducting outbreak and phylogenetic simulations of sequencing data using a phylogenetic model that accounts for the presence and transmission of within-sample variation. We show the effects on phylogenetic inference of using consensus sequences in the presence of within-sample diversity, and propose that existing phylogenetic models can leverage the additional diversity given by the within-sample variation and reconstruct the phylogenetic relationship between isolates. Lastly, we show that by taking into account within-sample diversity in a phylogenetic model, we improve the temporal signal in SARS-CoV-2 outbreak analysis. Using both phylogenetic outbreak reconstruction and simulation, we show that our approach is superior to the current gold standard whole-genome consensus sequence methods.\n\n## Results\n\n### Sampling, demographics, and metadata\n\nBetween March 2020 and November 2020, 451 healthcare workers, patients, and patient contacts at the participating North London Hospitals were diagnosed at the Camelia Botnar Laboratories with SARS-CoV-2 by PCR as part of a routine staff diagnostic service at Great Ormond Street Hospital NHS Foundation Trust (GOSH). A total of 289 isolates were whole-genome sequenced using the Illumina NextSeq platform, which resulted in 522 whole-genome sequences including longitudinal and technical replicates (Supplementary file 1). The mean participant age was 40 years of age (median 38.5 years of age, interquartile range [IQR] 30\u201350 years of age), and 60% of the participants were female (Supplementary file 2). All samples were SARS-CoV-2 positive with real-time qPCR cycle threshold (Ct) values ranging from 16 to 35 cycles (Supplementary file 2). The earliest sample was collected on March 26, 2020, while the latest one dated to November 4, 2020 (Figure 1\u2014figure supplement 1a). A total of 291 samples had self-reported symptom onset data, for which the mean time from symptom onset to sample collection date was 5 days (IQR 2\u20137 days, Figure 1\u2014figure supplement 1b). More than 90% of the samples were taken from hospital staff, while the rest comprised patients and contacts of either the patients or the staff members (Supplementary file 2).\n\n### Genomic analysis of SARS-CoV-2 sequences\n\nA total of 454 whole genomes with mean coverage higher than 10\u00d7 were kept for further analysis, resulting in an average coverage across isolates of 2457\u00d7 (Figure 1\u2014figure supplement 2). Allele frequencies were extracted using the pileup functionality within bcftools (Danecek et al., 2011) with a minimum base and mapping quality of 30, which represents a base call error rate of 0.1%. Variants at low frequency at positions where the mapped reads support more than one allele were coined as minor or low-frequency variants. Variants were filtered further for read position bias and strand bias. Only minor variants with an allele frequency of at least 2% were kept as putative variants. Samples with a frequency of missing bases higher than 10% were excluded, keeping 350 isolates for analysis. The mean number of low-frequency variants was 12 (median 3, IQR 1.00\u20139.75), although both the number of variants and its deviation increased at high Ct values (Figure 1\u2014figure supplement 3).\n\n### Within-sample variation in technical replicates\n\nTo understand the stability of within-sample variation and minimize spurious variant calls, we sequenced and analyzed technical replicates of 17 samples. Overall, when the variant was present in both duplicates the correlation of the variant frequencies was high (R2=0.9, Figure 1a, right). The high correlation was also maintained at low variant frequencies (Figure 1a, left).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84384/elife-84384-fig1-v2.jpg)\n\n**Figure 1.:** (a) Allele frequency comparison between technical replicates for all frequencies (right) and for frequencies up to 1% (left). Colors represent the Ct value for the sample. (b) Proportion of shared minor variants between technical replicates in relation to the Ct value. (c) Total number of minor variants in relation to the Ct value. Lines linked two technical replicates. Each sequence has a different color, with sequences from the same patient having a different shade of the same color.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84384/elife-84384-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Distribution of collection dates. (b) Histogram of time from symptom onset to sample collection.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84384/elife-84384-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Density distribution of mean coverage.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84384/elife-84384-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) Higher Ct values were linked to a higher number of within-sample variation. (b) Correlation between Ct value and isolate sequencing mean coverage. Lower coverage was associated to higher Ct values (R2=0.13, t-statistic p-value <0.001).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/84384/elife-84384-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Individual plots of shared within-host variants between technical duplicates using increasing thresholds of allele frequency. Colors represent Ct value, while the size of the point shows the total number of within-host variants between the two samples.\n\nMinor variants were less likely to be shared when one or more of the paired samples had low viral load. These discrepancies may appear because of amplification bias caused by low genetic material, base calling errors due to low coverage, or low base quality. The mean proportion of discrepant within-sample variants between duplicated samples was 0.39 (sd = 0.29), although this varied between duplicates (Figure 1\u2014figure supplement 4). Ct values in RT-PCR obtained during viral amplification are inversely correlated with viral load (Tom and Mina, 2020). The proportion of shared intra-host variants was negatively correlated with Ct values in a logistic model (estimate = \u22120.78, p-value = 0.008), with higher Ct values associated with a lower amount of shared intra-host variants (Figure 1c). The number of within-sample variants detected also increased with Ct value, as well as the deviation in the number of variants between duplicates (Figure 1d). This could be explained either by an increase in the number of spurious variants at low viral loads (Tonkin-Hill et al., 2021), biased amplification of low-level subpopulations minor rare alleles (McCrone and Lauring, 2016), or due to the accumulation of within-host variation through time, as late stages of infection are usually characterized by high Ct values (low viral load).\n\nBased on these results, only samples with a Ct value equal or lower than 30 cycles were considered, which resulted in 249 samples kept for analysis. Additionally, only variants with a frequency higher or equal than 2% were used. For the filtered dataset, 414 out of 29,903 positions were polymorphic for the consensus sequence, while the alignment with within-sample diversity had 1039 SNPs. Of these, 699 positions had intra-host diversity, of which 78% (549/699) were singletons. The majority of samples (207/249, 83%) contained at least one position with a high-quality within-host variant, and the median amount of intra-host variants per sample was 2 (IQR 1\u20134.5).\n\n### Within-sample variation in epidemiologically linked samples\n\nGiven the limited genomic information in the consensus sequences, epidemiological data is often necessary to infer the directionality of transmission. We categorized our samples within the following groups: samples that (a) did not have any recorded epidemiological link, (b) were from the same hospital (possibly linked), (c) were part of the same department within the same hospital (probable link), (d) had an epidemiological link within the same department of the same hospital (proven link), (e) were a longitudinal replicate from the same patient, and (f) a technical replicate from the same sample.\n\nWe tested the concordance between epidemiological and genomic data by determining the SNP distance between pairs of samples with epidemiological links and without them. Pairs of samples from the same hospital, department, epidemiologically linked, or longitudinal and technical replicates had a lower SNP distance (were more closely related) than those samples that did not have any relationship, although this difference was small in the case of pairs of samples from the same hospital (Table 1).\n\n**Table 1.**\n SNP distance between pairs of samples.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Sample relationship</th>\n      <th>Estimate (95% CI)</th>\n      <th>p-Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>None</td>\n      <td>11.04 (10.94\u201311.15)</td>\n      <td>Reference</td>\n    </tr>\n    <tr>\n      <td>Hospital</td>\n      <td>9.78 (9.48\u201310.09)</td>\n      <td>&lt;1\u00d710-4</td>\n    </tr>\n    <tr>\n      <td>Department</td>\n      <td>5.15 (4.54\u20135.83)</td>\n      <td>&lt;1\u00d710-4</td>\n    </tr>\n    <tr>\n      <td>Epidemiological</td>\n      <td>1.5 (1.22\u20131.78)</td>\n      <td>&lt;1\u00d710-4</td>\n    </tr>\n    <tr>\n      <td>Longitudinal duplicates</td>\n      <td>0 (0\u20130.2)</td>\n      <td>&lt;1\u00d710-4</td>\n    </tr>\n    <tr>\n      <td>Technical replicate</td>\n      <td>0 (0\u20130.2)</td>\n      <td>&lt;1\u00d710-4</td>\n    </tr>\n  </tbody>\n</table>\n\nTo understand the distribution of shared low-frequency variants among different groups of samples, we performed a pairwise comparison of all samples and calculated the proportion of shared within-sample variants (shared variants divided by total variants in the pair) within groups with epidemiological links and without them. The proportion of shared within-host variants was higher between technical replicates, longitudinal duplicates, epidemiologically linked samples, and samples taken from individuals from the same department when compared to pairs with no epidemiological links, although the range of this probability was large (Figure 2, Figure 2\u2014figure supplement 1). The probability of sharing a low-frequency variant was inferred using a logistic regression model (Figure 2\u2014figure supplement 2). There was a tendency for the probability to increase with variant frequency, but the association was not strong (odds ratio 1.8, 95% CI 0.9\u20133.5, p=0.08). The probability of sharing a low-frequency variant for samples with no epidemiological links was $9.5\\times10^{-6}$ (95% CI $8.8\\times10^{-6}$ \u2013 $1.02\\times10^{-5}$). Samples from the same hospital did not have a probability significantly higher than those without any link ($3.3\\times10^{-3}$, 95% CI $2.7\\times10^{-3}$ \u2013 $4.03\\times10^{-3}$). On the other hand, pairs from the same department, with epidemiological links, replicates, or technical replicates all had a significantly higher probability of sharing a low-frequency variant when compared to those pairs with no link (all Wald test p-values <0.001). The inferred probabilities for pairs from the sample department was 1.4% (95% CI 0.9\u20132.1%), which increased to 5% for pairs with epidemiological links (95% CI 4.2\u20136.4%). For longitudinal replicates, the probability was inferred to be 38% (95% CI 35\u201341%), and were shared between multiple time points (Figure 2\u2014figure supplement 3). Technical replicates were estimated to have the highest probability (70%, 95% CI 64\u201376%).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84384/elife-84384-fig2-v2.jpg)\n\n**Figure 2.:** The probability of variants shared between pairs of samples calculated as the number of low-frequency variants in both samples divided by the total number of variants between the pair. Colors grouped samples by their relationship. Points represent the mean probability a variant is shared between all pairwise samples within a group and allele frequency. Error bars show the 95th and 5th percentiles.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84384/elife-84384-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Pairwise allele frequency comparison between isolate pairs with different relationships. Allele frequencies were compared between isolates with no relationship, from the same hospital, from the same department, with epidemiological links, as well as between longitudinal and technical replicates.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84384/elife-84384-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Probability that low-frequency variants are shared inferred with a logistic model with allele frequency and epidemiological relationship as independent variable and whether a variant is shared or not as dependent variable. Y-axis in logarithmic scale for representation. Solid lines represent the model\u2018s best fit, while shaded areas show the 95% CI.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84384/elife-84384-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Variant frequency of low-frequency variants through time in longitudinal duplicates. Each panel represents a single individual, with variants indicated by dots at each time point. The same variant at different time points is linked by lines. Yellow colors represent variants that are consistently found at each time point, while gray dots show variants that present in the first sampling event but lost in subsequent isolates.\n\n### Within-host diversity model outperforms the consensus model in simulations\n\nThe effect of within-sample diversity in phylogenetic inference was tested by evaluating the accuracy in the reconstruction of known phylogenetic trees using a conventional phylogenetic model and a model that accounts for within-sample variation.\n\nThe presence of within-sample diversity was coded in the genome alignment using existing IUPAC nomenclature (IUPAC-IUB Joint Commission on Biochemical Nomenclature (JCBN), 1984). For the consensus sequence alignment, only the four canonical nucleotides were used (Figure 3a and b), while the proposed alignment retained the major and minor allele information as independent character states (Figure 3c and d).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84384/elife-84384-fig3-v2.jpg)\n\n**Figure 3.:** Proposed evolutionary model of within-host diversity in genomic sequences. Uppercase letters represent the major variant in the population, while lowercase letters indicate presence of a minor variant alongside the major one. (a, c) Genome sequences where some positions show within-sample variation (top), represented by a major allele (big size letter) and a minor one (smaller size), as well as its representation in the alignment (bottom). (b, d) Models of nucleotide evolution. Character transitions are indicated by arrows. (a) Consensus sequence, where only the major allele is represented in the alignment. (b) Model of nucleotide evolution using the consensus sequence, with four character states representing the four nucleotides. (c) Sequence with within-sample variation, represented by an uppercase letter for the major allele and a lower case letter for the minor allele. (d) Model of nucleotide evolution with 16-character states accounting for within-sample variation.\n\nIn order to evaluate the differences in tree inference with and without the inclusion of within-sample diversity, we simulated genome alignments for 100 random trees using a phylogenetic model where both major and minor variant combinations were considered, resulting in a total of 16 possible states (Figure 3d). In the proposed model, transitions and transversions between the four nucleotides in the population occur in the following steps: first a minority variant evolves at low frequency, then the minor variant increases its frequency to become the majority nucleotide, and finally the variant is fixed (Figure 3d), with all the steps being reversible. Therefore, within-host evolutionary dynamics are modeled by explicitly considering base change as a process of minor variant evolution and eventual fixation. The substitution rates chosen for the simulations, as shown in Supplementary file 4, were selected to reflect a slow rate of minor variant evolution and a fast rate at which minor variants are lost or fixated in the population, which in turn results in a highly dynamic landscape of within-sample variation, with the four canonical nucleotides 100 times more likely to be present than low-frequency variants.\n\nFrom the simulated genomes, two types of alignments were generated: a consensus sequence, where only the major allele was considered (Figure 3a); and an alignment that retained the major and minor allele information as independent character states (Figure 3c). From the simulated alignments, RaxML-NG was used to infer phylogenetic trees (Kozlov et al., 2019). The consensus sequence was analyzed with a GTR+$\\gamma$ model, while the PROTGTR+$\\gamma$ model was used in order to accommodate the extra characters of the alignment with within-sample diversity and major/minor variant information.\n\nThe two models were evaluated for their ability to infer the known phylogeny that included within-host diversity. The estimated phylogenies were compared to the known tree using different measures to capture dissimilarities in a variety of aspects relevant to tree inference (Supplementary file 3). For all the metrics employed, the phylogenies inferred explicitly using within-host diversity as independent characters approximated better to the initial tree than the one using the consensus sequence (Figure 4). Additionally, the transition/transversion rates inferred by the phylogenetic models accounting for within-host diversity accurately reflect the rates used for the simulation of genomic sequences (Supplementary files 4\u20136).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84384/elife-84384-fig4-v2.jpg)\n\n**Figure 4.:** Comparison of the phylogenetic trees inferred using simulated sequences from known random starting trees and different phylogenetic models. Colors differentiate the metrics used for the comparison.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84384/elife-84384-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Comparison of the phylogenetic trees inferred using simulated sequences with different transition/transversion rates to reflect different within-host diversity levels. Colors show the different rates of within-host evolution. Light colors represent trees inferred with consensus alignments, while dark colors show trees inferred with the model accounting for within-host diversity.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84384/elife-84384-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Comparison of the phylogenetic trees inferred using simulated sequences from known coalescent starting trees and different phylogenetic models. Colors differentiate the metrics used for the comparison.\n\nAs different pathogens are likely to show different dynamics of within-host variation and the rates used for the simulations will inevitably affect the improvement of using the 16-state model, we simulated genomes with different parameters. As expected, choosing rates that promote an abundant and stable landscape of low-frequency variation (rate of minor variant acquisition of 20, and rates of variant switch and lost of 1) made the 16-state model to perform better than the model using consensus sequences, which improved as the proportion of low-frequency variants decreased (Figure 4\u2014figure supplement 1). Conversely, in simulations using a Jukes-Cantor DNA model, and therefore without any low-frequency variation, both models showed similar results (Figure 4\u2014figure supplement 1).\n\nTo understand the effects of genetic linkage between sites in the phylogenetic model due to the clonal relationships between genomes, we evaluated another set of simulations where the starting tree was generated using the coalescent model, which increases the correlation between sites. For all metrics used, the model using low-frequency variants inferred phylogenies more similar to the starting coalescent tree than those inferred using the consensus sequence (Figure 4\u2014figure supplement 2).\n\nWe further assessed the effect of within-host diversity in phylogenetic inference by simulating pathogen evolution throughout the time frame of infectious disease outbreaks (De Maio et al., 2018). We simulated outbreaks using TransPhylo (Didelot et al., 2017) with a host population varying between 10 and 15 hosts, no recombination, complete sampling of the outbreak, and selecting epidemiological parameters to match the transmission dynamics of SARS-CoV-2. For each outbreak, we simulated the evolution and transmission of the pathogen population within each host with varying values of mutation rates and transmission bottlenecks using fastsimcoal2 (Excoffier et al., 2013) as previously described by De Maio et al., 2018. We compared the resulting phylogenetic trees to the real outbreak phylogeny using the Kuhner-Felsenstein distance (Kuhner and Felsenstein, 1994). Even though using consensus sequences performed better than a random distribution of trees, using within-host diversity outperformed the consensus sequence in all instances (Figure 5). The phylogenies inferred using within-host diversity were more similar to the real outbreak phylogeny for wider bottleneck sizes, with the best performance when no bottleneck was present. As expected, both the consensus sequences and the sequences reflecting within-sample diversity were more informative at higher mutation rates, even though the consensus sequence only showed improvement with a mutation rate of $10^{-3}$ mutations per base per generation cycle (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/84384/elife-84384-fig5-v2.jpg)\n\n**Figure 5.:** Kuhner and Felsenstein (KF) tree distance between phylogenetic trees from simulated outbreaks. Phylogenies were inferred using consensus sequences (blue) and alignments reflecting within-sample diversity (red), and compared to the known phylogeny of the simulated outbreak. For reference, gray color represents a set of random trees. Outbreak simulations were performed with different bottleneck sizes and mutation rates. The mutation rate is measured as the number of mutations per base per generation cycle.\n\n### Within-host diversity improves the resolution in SARS-CoV-2 phylogenetics\n\nGenome sequences collected at different time points are expected to diverge as time progresses, resulting in a positive correlation between the isolation date and the number of accumulated mutations (temporal signal) (Rieux and Balloux, 2016). The alignment with consensus sequences and the one reflecting within-sample variation were used to infer two different phylogenetic trees (Figure 6\u2014figure supplement 1). Longitudinal samples in the phylogeny inferred using within-host diversity reflected the expected temporal signal, with an increase in genetic distance as time progressed between the longitudinal pairs in a linear model (coefficient 2.24, 0.59\u20133.88 95% CI, p=0.019, Figure 6\u2014figure supplement 2). The difference in Ct value among longitudinal duplicates was not correlated with higher genetic distances (coefficient 1.62, \u20130.66 to 3.91 95% CI, p=0.2). Similarly, we analyzed the number of low-frequency variants within outbreaks by counting the number of within-sample variants for each isolate belonging to a specific outbreak and inferred their change through time taking the earliest isolate date as the starting point of the outbreak. In general, as the outbreaks progressed the number of low-frequency variants increased (coefficient 0.16, 0.06\u20130.27 95% CI, p=0.003, r2=0.19, Figure 6\u2014figure supplement 3).\n\nWe analyzed the impact of using within-sample variation on the temporal structure of the phylogeny by systematically identifying clusters of tips in the phylogenetic tree with an identical consensus sequence and no temporal signal. We then performed a root-to-tip analysis using the tree inferred with intra-sample diversity. Only clusters with more than three tips were used for the root-to-tip analysis. The majority of clusters (10/11) showed a positive correlation between the distance of the tips to the root and the collection dates, demonstrating a significant temporal signal between samples when there was none using the conventional consensus tree (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/84384/elife-84384-fig6-v2.jpg)\n\n**Figure 6.:** A set of 11 outbreak clusters (one per panel, each plotting the root-to-tip distance in number of substitutions per genome against time) in which all samples had identical consensus genomes sequences (and therefore no temporal signal). Blue colors indicate those regressions that after utilizing within sample diversity now have a positive slope (temporal signal), and red shows those regressions that have a negative slope (misleading or false positive temporal signal).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84384/elife-84384-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** SARS-CoV-2 phylogenetic trees inferred from consensus sequences (left) and an alignment with major and minor variant information (right).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84384/elife-84384-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** The genetic distance in the phylogenetic tree inferred using within-sample diversity increased as the between longitudinal samples progressed. Black line shows the best fit in a linear model, while the blue shaded area represents the 95% CI.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84384/elife-84384-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Y-axis shows the number of low-frequency variants for each isolate within an outbreak, while the x-axis represents the days since that particular outbreak started. Black line shows the best fit in a linear model, while the blue shaded area represents the 95% CI.\n\nTo illustrate the downstream application of the improved phylogenetic resolution, we inferred a time-calibrated phylogeny from the phylogeny inferred using the 16-character state model with the collection dates of the tips using BactDating (Didelot et al., 2018; Figure 7\u2014figure supplement 1) and calculated the likelihood of transmission events within potential epidemiologically identified outbreaks using a susceptible-exposed-infectious-removed (SEIR) model (Lekone and Finkenst\u00e4dt, 2006; Eldholm et al., 2016). The SEIR model was parameterized with an average latency period of 5.5 days (Xin et al., 2022), an infectious period of 6 days (Byrne et al., 2020), and a within-host coalescent rate of 5 days as previously estimated for SARS-CoV-2 (Wang et al., 2020). The likelihood of transmission was calculated for every pair of samples, while the Edmonds algorithm as implemented in the R package RBGL (Carey et al., 2021) was used to infer the graph with the optimum branching (Figure 7c and d; Figure 7\u2014figure supplement 2).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/84384/elife-84384-fig7-v2.jpg)\n\n**Figure 7.:** Effect of using low-frequency variants in phylogenetic inference. (a) Maximum likelihood phylogeny using the consensus sequences (left) and the alignment leveraging within-sample variation. Replicates of the same sample share the same color. Sample IDs are coded as follows: SF, for staff members; P, for patients; and PC, for patient contacts. (b) Transmission network inferred using within-sample variation. Edge width is proportional to the likelihood of direct transmission using a susceptible-exposed-infectious-removed (SEIR) model. Colored edges represent the Edmunds optimum branching and thus the most likely chain. (c) Heatmap of the likelihood of direct transmission between all pairwise pairs of samples using a SEIR model. Vertical axis is the infector while the horizontal axis shows the infectee.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84384/elife-84384-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** SARS-CoV-2 phylogenetic trees inferred from consensus sequences (left) and an alignment with major and minor variant information (right). Branch lengths are measured in years.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84384/elife-84384-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (a\u2013d) Phylogenies of SARS-CoV-2 outbreaks. The branch lengths are in units of substitutions per genome, and the scales are shown under the trees. Colors represent samples from the same individual. Samples with the same name are technical replicates. Left tree of each panel shows the phylogeny inferred with the consensus alignment. Right tree represents the phylogeny inferred using within-sample variation. Heatmap shows the likelihood of direct transmission for each pair of samples in a susceptible-exposed-infectious-removed (SEIR) model of transmission. Vertical axis is the infector while the horizontal axis shows the infectee.\n\nFigure 7 represents an example of an outbreak involving four hosts, with one patient, one patient contact, and two hospital staff members. All samples have one technical replicate, while patient sample also has two serial samples (which were removed for transmission inference). The ML tree inferred using the consensus sequences (Figure 7a, left) shows that most isolates have the exact same consensus sequence. Although this suggests that all isolates belong to the same outbreak, the similarity between sequences precludes exact transmission inference. However, the ML tree inferred using sequences with low-frequency variants correctly clusters technical and longitudinal replicates, and groups the isolates in distinctive sets that better inform transmission inference (Figure 7b and c). We applied the same analysis to other potential outbreaks and obtained similar results (Figure 7\u2014figure supplement 2).\n\n## Discussion\n\nDetailed investigation of transmission events in an infectious disease outbreak is a prerequisite for effective prevention and control. Although whole-genome sequencing has transformed the field of pathogen genomics, insufficient pathogen genetic diversity between cases in an outbreak limits the ability to infer who infected whom. Using multi-hospital SARS-CoV-2 outbreaks and phylogenetic simulations, we show that including the genetic diversity of subpopulations within a clinical sample improves phylogenetic reconstruction of SARS-CoV-2 outbreaks and determines the direction of transmission when using a consensus sequence approach fails to do so.\n\nThe majority of samples sequenced harbored variants at low frequency. However, most variants were not consistently called in technical replicates, suggesting they were spurious or unreliable. Within-sample variation was less consistent between paired technical replicates with lower viral load (higher Ct). This is likely to be a consequence of low starting genetic material giving rise to amplification bias during library preparation and sequencing. Establishing a cut-off for high Ct values is therefore important to accurately characterize within-host variation. In our study, we excluded samples with a Ct value higher than 30 cycles based on the diagnostic PCR used at GOSH. Since Ct values are only a surrogate for viral load and are not standardized across different assays (Evans et al., 2021), appropriate thresholds would need to be determined for other primary PCR testing assays. Similarly, variant calls at very low frequency were less likely to be present in both technical replicates. These variants at low frequency are thus potentially not genuine and the result of sequencing and variant calling errors. For our work, we removed any variants with an allele frequency lower than 2%. Until sequencing and variant calling technologies improve for low-frequency variants, technical replicates will remain essential for the study of pathogen within-host diversity in order to distinguish genuine variation from sequencing noise. The effect of this noise on phylogenetic inference will depend on the signal-to-noise ratio and the amount of variation already present in the consensus sequences. Spurious low-frequency variation will likely affect only the branch length estimation in phylogenetic inference by adding potentially erroneous calls, unless there is presence of batch bias which could artificially cluster epidemiologically unrelated isolates together.\n\nThe generation, maintenance, and evolution of subpopulations within the host reflect evolutionary processes which are meaningful from phylogenetic and epidemiological perspectives. Subpopulations within a host can emerge from three mechanisms: de novo diversification in the host, transmission of a diverse inoculum, or multiple transmission events from different sources. If the subpopulations are the result of de novo mutations, nucleotide polymorphisms within the subpopulations accumulate over time and may therefore result in a phylogenetic signal useful for phylogenetic inference. In our data, longitudinal samples taken at later time points were demonstrated to accrue genomic variation. Although this pattern can be confounded by decreasing viral load as infection progresses, Ct values in our dataset were not correlated with a higher genetic distance, and clusters in our data containing both longitudinal and technical replicates also corroborate these results. Transmission of a diverse inoculum also gives rise to phylogenetically informative shared low-frequency variants, as our results show that transmission pairs are more likely to share variants at low frequency. The effect of multiple transmission events in the phylogeny depends on the relatedness of both index cases and the bottleneck size in each transmission event.\n\nPaired samples with epidemiological links and from the same department shared a higher proportion of low-frequency variants and were located closer in the consensus tree than samples with no relationship. These patterns suggest that the distribution of low-frequency variants is linked to events of epidemiological interest. The fact that technical duplicates shared more within-host diversity than longitudinal replicates of the same sample suggests that much of the variation within hosts is transitory. Therefore, within-host diversity may be relevant on relatively short time scales, which is precisely where consensus sequences lack resolution. Combining the data derived from fixed alleles in the consensus sequences and transient within-sample minor variation enables an improved understanding of the relatedness of pathogen populations between hosts.\n\nThe effects of neglecting within-host diversity in phylogenetic inference were analyzed by using simulated sequences under a phylogenetic model that reflects the presence and evolution of within-host diversity. We compared a conventional consensus phylogenetic model and a model that leverages within-sample diversity, and evaluated their ability to infer the known phylogeny. Our proposed phylogenetic model incorporates within-sample variation by explicitly coding major and minor nucleotides as independent characters in the alignment. We demonstrated that phylogenies inferred using the conventional consensus sequence approach were unresolved and unrepresentative of the known structure of the simulated tree. However, sequences that included within-host diversity showed higher resolution that resulted in phylogenetic trees more similar to the simulated phylogeny. As other mutational models, our 16-state model assumes independence between sites in the alignment. This assumption can be violated due to the presence of genetic linkage, which can be caused by multiple biological processes, such as clonal relationships between microorganisms, recombination, or selection of co-evolving sites. To increase the amount of genetic linkage due to clonal relationships between organisms, we repeated our simulations using a coalescent model to create the starting tree, and confirmed that the 16-state model still outperformed the conventional consensus sequence in the presence of high linkage. Other sources of genetic linkage are not accounted for, and their inclusion in phylogenetic inference is out of scope of this work.\n\nThe proposed phylogenetic model used for the simulations did not include direct base transitions and transversions, but rather modeled base change as a process of minor variant acquisition and fixation. Therefore, a base change is composed of the following steps: first a minor variant is gained; then the minor variant increases in frequency and becomes the majority variant; and finally the new variant is fixed. In this way, within-host evolution is partially included in the model as a process of minor variant evolution and eventual lost or fixation. As shown in the simulations, this process of within-host evolution is also captured when the minor bases are simply incorporated as additional states in the Markov chain without explicitly limiting the possible transitions.\n\nWe complemented the phylogenetic simulations with tree inference of outbreaks simulated using TransPhylo (Didelot et al., 2017). We parameterized the simulations to reflect the transmission dynamics of SARS-CoV-2, including a generation time of 5 days and a sampling time of 7 days. Given this parameters, most simulated outbreaks lasted less than a month. We then simulated genetic sequences within the outbreak using fastsimcoal2 (Excoffier et al., 2013) as previously described by De Maio et al., 2018. Using a mutation rate of $5\\times10^{-6}$ mutations per base per replication cycle, as previously described for SARS-CoV-2 and other betacoronaviruses (Sender et al., 2021; Amicone et al., 2022), and varying bottleneck sizes, we showed that tree inference using within-sample diversity improves as the transmission bottleneck widens, although even at low bottleneck sizes trees inferred using within-sample diversity are more accurate than those inferred using consensus sequences. Similarly, using varying mutation rates and a constant bottleneck size of 10 pathogens, we showed that tree inference was more accurate as mutation rates increased, although inference using consensus sequences improved only at a very high mutation rate of $10^{-3}$ mutations per base per cycle, which has mostly been observed in some HIV studies (Cuevas et al., 2015). Together, our simulations show that at the short time frame of disease transmission, phylogenetic inference using alignments that contain information regarding within-sample diversity outperform phylogenies inferred with consensus sequences, even at narrow transmission bottlenecks and very low mutation rates. Since TransPhylo simulates phylogenetic trees alongside the outbreak simulation, we could directly compare our inferred phylogenies with the known simulated trees. However, although phylogenetic trees can inform transmission inference, phylogenetic trees themselves and transmission trees are not interchangeable. Nevertheless, increasing the resolution of phylogenetic trees can improve inference of transmission chains and calculation of the likelihood of transmission events.\n\nPrevious studies have addressed the use of within-host variation to infer transmission events. Wymant et al., 2018, employed a framework based on phylogenetic inference and ancestral state reconstruction of each set of populations detected within read alignments using genomic windows. Our study extends this work by coding genome-wide diversity within the host directly in the alignment and the phylogenetic model. De Maio et al., 2018, proposed direct inference of transmission from sequencing data alongside host exposure time and sampling date within the Bayesian framework BEAST2 (Bouckaert et al., 2014). Our approach is focused on directly improving the temporal and phylogenetic signal of whole-genome sequences, and it\u2019s especially suited for use in applications and analysis that employ a phylogenetic tree as input to infer transmission (Didelot et al., 2017).\n\nApart from transmission inference, phylogenetic trees can be used to infer many parameters of epidemiological interest, such as R0 or the effective population size. In our work, we showed that the temporal signal of clusters where all isolates had the same sequences increased with the inclusion of within-sample diversity, which in turns allows better inference of phylogenetic trees. When analyzing specific outbreaks, we showed that groups of samples without genetic differences were clustered apart from other isolates of the outbreak, providing additional information on genetic relationships that could be used for transmission inference or to better understand the genetic structure of the outbreak. Even though transmission inference can be improved with epidemiological data such as collection dates even when all isolates have the same genetic sequences, such data can\u2019t provide information regarding how samples cluster within the outbreak. Additionally, the order of collection dates not always correspond to the order of infection.\n\nFuture work will extend this model by including allele frequency data in addition to independent characters for major and minor variants. Moreover, to limit the number of character states we only allowed two variants at each position. Transmission inference of pathogens with high levels of within-host diversity, for instance as observed in HIV, could benefit from including more than two alleles. In those cases, the number of possible character state combinations would be too large, and therefore other methods such as phyloscanner (Wymant et al., 2018) could resolve transmission events more accurately. However, it\u2019s important to note that the low frequency of a third allele could result in more sequencing and mapping errors which could in turn bias phylogenetic inference and genomic analysis. Phylogenetic models that explicitly include dynamics of within-sample variation and sequencing error may further improve phylogenetic inference or allow researchers to better estimate parameters of interest, including R0, bottleneck size, transmissibility, and the origin of outbreaks.\n\nIn line with conventional consensus sequencing approaches, we used a reference sequence for genome alignment and variant calling. Although widely used, one limitation of this approach is a potential mapping bias causing some reads to reflect the reference base at low frequencies at a position where only a variant should be present. Although we applied stringent quality filtering, we cannot rule out the persistence of some false positive minor variants. Using genome graphs to map to a reference that encompasses a wider spectrum of variation may alleviate this problem, and could be an interesting addition to pathogen population genomic analysis.\n\nOur results demonstrate that within-sample variation can be leveraged to increase the resolution of phylogenetic trees and improve our understanding of who infected whom. Using SARS-CoV-2 hospital outbreaks and simulations, we show that variants at low frequencies are consistent within sample replicates, phylogenetically informative and are more often shared among epidemiologically related contacts. By coding within-sample variation directly in the alignment, the additional genetic information can be easily incorporated in phylogenetic inference, facilitating its application within existing epidemiology pipelines and public health infrastructure. We propose that pathogen phylogenetic models should accommodate within-host variation to improve the understanding of infectious disease transmission and aid infection control measures.\n\n## Materials and methods\n\n### Model for within-host diversity\n\nTo test the accuracy of different models at inferring known phylogenies, 100 random phylogenetic trees with 100 tips each were generated using the function rtree within the R package ape (Paradis et al., 2004). Whole-genome alignments were simulated from the random 100 phylogenies with the function SimSeq of the R package phangorn (R Development Core Team, 2021; Schliep, 2011) using a model with 16-character states that represent the combinations of the four nucleotides with each other as minor and major alleles (Figure 3d). Three substitution rates for the model were considered: a rate at which minor variants evolve, equal to 1; the rate at which minor variants are lost, leaving only the major nucleotide at that position, equal to 100; and the rate at which minor/major variants are switched, equal to 200. This rates result in fixed bases (A, C, G, and T) being 100 times more frequent than low-frequency bases. A different set of simulations was performed using rates that promote a high rate of low-frequency variation by having a lower rate of variant loss and switch (rates 1, 10, 10 for minor variant evolution, loss, and switch, respectively); a low amount of low-frequency variation by increasing the rates of variant switch and loss (1, 10, 100); and using a Jukes-Cantor model of sequence evolution and therefore resulting in no minor variants.\n\nTwo types of alignments were generated from the simulated genomes: a consensus sequence, where only the major allele was considered; and an alignment that retained the major and minor allele information as independent character states. RaxML-NG (Kozlov et al., 2019) was used to infer phylogenetic trees. The consensus sequence was analyzed with a GTR+$\\gamma$ model, while the PROTGTR+$\\gamma$ model was used for the alignment with intra-host diversity and major/minor variant information.\n\nSeveral metrics were used to compare the 200 inferred phylogenetic trees with their respective starting phylogeny from which the sequences were simulated (Supplementary file 3). We chose metrics available in R suitable for unrooted trees, using the option \u201crooted = FALSE\u201d where appropriate. The Robinson-Foulds distance (Robinson and Foulds, 1981) calculates the number of splits differing between both phylogenetic trees. For the weighted Robinson-Foulds, the distance is expressed in terms of the branch lengths of the differing splits. The Kuhner-Felsenstein distance (Kuhner and Felsenstein, 1994) considers the edge length differences in all splits, regardless of whether the topology is shared or not. Last, the Penny-Steel distance or path difference metric (Steel and Penny, 1993) calculates the pairwise differences in the path of each pair of tips, with the weighted Penny-Steel distance using branch length to compute the path differences. All functions were used as implemented in the package phangorn (Schliep, 2011) within R (R Development Core Team, 2021).\n\n### Outbreak simulations\n\nDisease outbreaks of size between 10 and 15 hosts were simulated using TransPhylo (Didelot et al., 2017), with a mean generation time of 5 days and a mean sampling time of 7 days, both parameters with standard deviation of 1 day (Wang et al., 2020; Hart et al., 2022). To ensure that the outbreak ends, the negative binomial distribution for the offspring number was set with a mean of 1 and a dispersion parameter of 0.5, resulting in a basic reproductive number (R0) of 1. To simplify the simulations, all hosts from the outbreak were sampled. A total of 20 outbreaks were simulated. The population evolution within and between hosts was simulated using fastsimcoal2 (Excoffier et al., 2013) as previously described by De Maio et al., 2018, where transmissions are incorporated as population migrations with a given bottleneck size and populations evolve with a given mutation rate per generation time. Sequences were simulated for a within-host population size of 1000 and a genome size of 1000 bp. To understand the effect of transmission bottleneck size in phylogenetic inference, varying values of bottleneck size were used along a constant mutation rate of $5\\times10^{-6}$ mutations per base per generation cycle. Additionally, sequences were simulated at different mutation rates with a constant bottleneck size of 10 pathogens. Sequences with the varying bottleneck sizes and mutation rates were simulated using the same 20 simulated outbreaks. Phylogenetic trees were inferred from the alignments using RaxML-NG as previously described. The resulting trees were time-calibrated using the additive uncorrelated relaxed clock model (ARC) as implemented in BactDating (Didelot et al., 2018). The root of the outbreak was inferred as part of the dating model. The inferred trees were compared to the known simulated phylogenies using the Kuhner-Felsenstein distance (Kuhner and Felsenstein, 1994).\n\n### Amplification and whole-genome sequencing\n\nSARS-CoV-2 real-time qPCR confirmed isolates from London hospitals were collected as part of the routine diagnostic service at GOSH (Storey et al., 2021) and the COVID-19 Genomics UK Consortium (COG-UK) (COVID-19 Genomics UK COG-UK, 2020) between March and December 2020, in addition to epidemiological and patient metadata (Supplementary file 2). Multiple types of samples were collected: isolates from different patients; longitudinal replicates, where multiple isolates were collected from the same patient at different time points; and technical replicates, where multiple sequencing runs were performed from the same biological isolate. SARS-CoV-2 whole-genome sequencing was performed by UCL Genomics. cDNA and multiplex PCRs were prepared following the ARTIC nCoV-2019 sequencing protocol (Tyson et al., 2020). The ARTIC V3 primer scheme (ARTIC Network, 2021) was used for the multiplex PCR, with a 65\u00b0C, 5 min annealing/extension temperature. Pools 1 and 2 multiplex PCRs were run for 35 cycles. Five \u00b5L of each PCR were combined and 20 \u00b5L nuclease-free water added. Libraries were prepared on the Agilent Bravo NGS workstation option B using Illumina DNA prep (Cat. 20018705) with unique dual indexes (Cat. 20027213/14/15/16). Equal volumes of the final libraries were pooled, bead purified, and sequenced on the Illumina NextSeq 500 platform using a Mid Output 150 cycle flowcell (Cat. 20024904) (2\u00d775 bp paired ends) at a final loading concentration of 1.1 pM.\n\n### Whole-genome sequence analysis of SARS-CoV-2 sequences\n\nRaw illumina reads were quality trimmed using Trimmomatic (Bolger et al., 2014) with a minimum mean quality per base of 20 in a 4-base wide sliding window. The 5 leading and trailing bases of each read were removed, and reads with an average quality lower than 20 were discarded. The resulting reads were aligned against the Wuhan-Hu-1 reference genome (GenBank NC_45512.2, GISAID EPI_ISL_402125) using BWA-mem v0.7.17 with default parameters (Li and Durbin, 2010). The alignments were subsequently sorted by position using SAMtools v1.14 (Li et al., 2009). Primer sequences were masked using ivar (Grubaugh et al., 2019).\n\nSingle-nucleotide variants were identified using the pileup functionality of samtools (Li et al., 2009) via the pysam package in Python (Heger et al., 2023). Variants were further filtered using bcftools (Danecek et al., 2011). Only variants with a minimum depth of 50\u00d7 and a minimum base quality and mapping quality of 30 were kept. Additionally, variants within low complexity regions identified by sdust (Li, 2019) were removed. Previously identified problematic sites were masked to avoid systematic sequencing errors and phylogenetic bias (De Maio et al., 2020). For positions where only one base was present, the minimum depth was 20 reads, with at least 5 reads in each direction. Positions with low-frequency variants were filtered if the total coverage at that position was less than 100\u00d7, with at least 20 reads in total and 5 reads in each strand supporting each of the main two alleles.\n\nTwo different alignments were prepared from the data. First, an alignment of the consensus sequence where the most prevalent base at each position was kept. Variants where the most prevalent allele was not supported by more than 60% of the reads were considered ambiguous. Additionally, an alignment reflecting within-sample variation at each position as well as which base is the most prevalent and which one appears at a lower frequency by using the IUPAC nomenclature for amino acids (IUPAC-IUB Joint Commission on Biochemical Nomenclature (JCBN), 1984).\n\nFor the two different alignments, maximum likelihood phylogenies were inferred by using RAxML-NG (Kozlov et al., 2019) with 20 starting trees (10 random and 10 parsimony), 100 bootstrap replicates, and a minimum branch length of 10\u20139. For the consensus sequence, the GTR model was used. For the alignment reflecting within-host diversity, a model with amino acid nomenclature (PROTGTR) was used. All models allowed for a $\\gamma$ distributed rate of variation among sites. Phylogenetic trees were time-calibrated using the known collection dates and the ARC model within BactDating (Didelot et al., 2018). For transmission inference, the dated phylogeny was used with the longitudinal replicates removed by keeping the earliest sampled isolate. The likelihood of transmission was calculated using a SEIR model (Lekone and Finkenst\u00e4dt, 2006; Eldholm et al., 2016).\n\n### Code availability\n\nAll custom code used in this article can be accessed at https://github.com/arturotorreso/scov2_withinHost (copy archived at Torres Ortiz, 2023).\n",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "87df3587-5a04-4ced-81f3-ea874a1780d9",
+      "submission_id": "090b74d2-e662-4e2e-98eb-96a4af35af5f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- James M McCaw, https://ror.org/01ej9dk98 University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84384.sa0](https://doi.org/10.7554/eLife.84384.sa0)\n\nThis valuable study presents a novel and theoretically interesting model to account for viral diversity within hosts in evolutionary and genomic analyses of pathogens. The simulation results are solid and suggest that the model may provide new insight into SARS-CoV-2's and other pathogens' evolutionary dynamics.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- James M McCaw, https://ror.org/01ej9dk98 University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84384.sa1](https://doi.org/10.7554/eLife.84384.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Within-host diversity improves phylogenetic and transmission reconstruction of SARS-CoV-2 outbreaks\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Sara Sawyer as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Sebastian Duchene (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another and with the Reviewing Editor, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nBoth reviewers, while interested in the methodology, have raised concerns on the extent of the simulation study and on the validity of the conclusions based on analysis of the SARS-CoV-2 data.\n\nAccordingly, the following are required for the paper to be considered further:\n\n1) An expanded simulation study to explore in greater detail the assumptions and suitability of the proposed (16 site) model. Particular focal points, as raised by the reviewers (particularly #2, but discussed and agreed upon by both reviewers and the reviewing editor), would be on assumptions of Markovian behaviour and of site independence.\n\n2) Address the concerns raised on the SARS-CoV-2 analyses. This may be achieved in a number of ways: a) [presumably supported by the additional work done through simulations] provide a stronger justification for the validity of the analyses as they are; or b) remove the SARS-CoV-2 analyses and either i) reframe the manuscript as a purely theoretical investigation; or ii) apply the model to a dataset with additional sequences (e.g. an influenza A virus dataset).\n\nReviewer #2 (Recommendations for the authors):\n\nLines 103-104: 2177x vs 10x: I don't fully understand.\n\nLine 112: What does 'stable' mean? This is used repeatedly throughout the manuscript and I don't have a clear idea of what is meant by it.\n\nMany of the y-axis labels and figure legends allude to 'mixed variants'. I searched for a definition of 'mixed' in the pdf but did not find one. I don't understand what is meant by 'mixed'.\n\nLine 130: 'as viral load\u2026also decreases from time since infection': this is not true.\n\nLines 147-152, Table 1: I'm somewhat confused. Line 141 talks about calculating the proportion of shared within-sample variants. Is that proportion used in this paragraph and for the values in Table 1? If so, how is 'phylogenetic distance' calculated from these proportions? I assume that what is used instead are the consensus sequences from each sample? But how are sampling dates incorporated? (They would seem to need to be incorporated if phylogenetic distance is indeed measured by substitutions per genome per year, and the phylogeny is time-aligned.) Also, I don't clearly understand the point of Table 1. If the point is simply to show that samples in one sample relationship (e.g., epidemiological) are genetically more similar that samples in a broader sample relationship (e.g., department), then why not show mean pairwise nucleotide differences between samples in a given sample relationship?\n\nTable 1: Phylogenetic distance (or nucleotide distance) can't be negative, so the 95% CIs can't go below 0. That some of those distances have 95% CIs that go below 0 indicates to me that likely a normal distribution was used to calculate the 95% Cis when the distribution is not normal and some other distribution needs to be used (one that has no density for <0 values).\n\nFigure 2: I assume the (%) on the y-axis label is an error and should be removed?\n\nFigure 5: right-hand side panel: \"subs/base/cycle\" \u2013 do you mean mutations/base/cycle?\n\nLine 324: \"Our study benefited from\u2026\" This is a pretty substantial overstatement.\n\nLine 376: can the parameters of the negative binomial be given as mean and overdispersion parameter (k)?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Within-host diversity improves phylogenetic and transmission reconstruction of SARS-CoV-2 outbreaks\" for further consideration by eLife. Your revised article has been evaluated by Sara Sawyer (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been significantly improved but there are some remaining issues that need to be addressed, as outlined below:\n\nFollowing Reviewer #2's concerns (please see below), we ask that you more explicitly acknowledge the limitations of the SARS-CoV-2 data used in the study. This does not require further adjustments to the methods or analyses, but does require an earlier and stronger mention of the limitations, and (importantly) a discussion of *how* results may be impacted, not just that some of the limitations *do (likely)* impact them.\n\nWith regards to Reviewer #2's query on Figure 2 (also see their original review), it does remain of concern and must be addressed. While the additional material shown in Supp Figure 5 is helpful (as it is clear there that there are substantial and statistically meaningful differences there), a claim that \"the proportion of shared within-host variants was significantly higher\u2026\" (line 171) requires further (statistical and/or compelling visual) justification. The current text at lines 168--187 is rather unclear as it is hard to tell if \"shared variants\" or \"shared low frequency variants\" are being described. If the 95% CIs shown in Figure 2 have been correctly calculated, then statistical (and/or compelling visual) analyses that justify the claim need to be clearly reported.\n\nReviewer #2 (Recommendations for the authors):\n\nI have reviewed the revised manuscript, which has been improved in terms of testing the 16-site model on simulated data and on more clearly defining terms. My remaining concerns are:\n\n1. The manuscript interprets its data and its findings too favorably. It would be much improved if the authors carefully went through the manuscript and improved the accuracy of statements/conclusions throughout. For example, the subtitle at line 151 reads 'Within-sample variation is shared between technical replicates'. Yet Figure 1c indicates that this is an overstatement. The proportion of shared minor variants is actually highly variable between technical replicates. A more appropriate subtitle would be 'Some within-sample\u2026' Similarly, line 147, a more accurate subtitle would be 'A small amount of within-sample variation appears to be shared between\u2026'\n\n2. Even by selecting only the subset of samples with Ct < 30, the overwhelming majority of the SARS-CoV-2 data minor variants in this subset are still spurious, given the cross-replicate findings shown in Figure 1. (The samples with lower Ct have a higher proportion of minor variants shared but they also have fewer variants, so that when the data subset of 249 samples are analyzed, the overwhelming majority of the minor variants in that dataset will be spurious or at least not reproducible across technical replicates.) This needs to be acknowledged directly in the manuscript and implications of this for their findings need to be discussed. The discussion currently has starting on line 408 an acknowledgment that many of the minor variants in their SARS-CoV-2 samples are likely not genuine. However, there is not a discussion of how that could have impacted their results (shown in Figure 6 and 7), and that acknowledgment does not come out clearly in the Results section of the text.\n\n3. Paragraph 155-161: why not just look at Hamming distance? (Why go through a tree?) This result is also expected and I am not sure how it plays into the main point of this paragraph that within-sample variation is shared between epidemiologically linked samples.\n\n4. Lines 174-176: I am trying to still square this with the data shown in Figure 2 and the confidence intervals shown in this figure. To be more convincing that the probability of a variant being shared is actually higher in epidemiologically-linked samples than is unlinked samples, could the authors show the specific instances of when they are shared? Again, I think showing a plot with one sample's minor variant frequencies shown on the x-axis and another sample's minor variant frequencies are shown on the y-axis would be highly informative. The plot does not have to identify (or assume) donor or recipient, it just would need to show the frequencies of the shared minor variant in both samples, along with the frequencies of all other minor variants that were identified in those samples (and any other sites where the alleles might be fixed but differ). Plots like these would be helpful to visualize patterns of sharing of minor variations.\n\n5. Simulation study starting at line 191: I like this addition but am confused about what this simulation study entails. How did you simulate the genome alignments? If it is from the 'Model for within-host diversity' described in Materials and methods (which I suggest renaming, since the model simulates within- and between-host evolution if I am understanding correctly), then this model also has linkage between nucleotide sites. (Lines 228-233 present a coalescent model, which they say accounts for linkage, but this first model also has full linkage as far as I can tell.) Also, I believe the previous issue was less about linkage per se, it was about independence of transitions across sites. For example, during a transmission event with a bottleneck size of 1, all sites with genetic variation (e.g. Cg, At, Ta\u2026) would become monomorphic at the same time (e.g., C, A, T), and the 16-site model assumes independence of these transitions across sites.\n\n6. Figure 1\u2014figure supplement 2: the smoothing has made there be some density of samples that have negative mean coverage, which doesn't quite make sense.\n",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "caac5de2-354a-4928-af11-d6362db22644",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C1",
+      "claim": "Between March 2020 and November 2020, 451 healthcare workers, patients, and patient contacts at participating North London Hospitals were diagnosed with SARS-CoV-2 by PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Between March 2020 and November 2020, 451 healthcare workers, patients, and patient contacts at the participating North London Hospitals were diagnosed at the Camelia Botnar Laboratories with SARS-CoV-2 by PCR as part of a routine staff diagnostic service at Great Ormond Street Hospital NHS Foundation Trust (GOSH).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numbers and dates from the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "52cfcfe6-6781-454f-a65f-00365d5f136f",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C2",
+      "claim": "A total of 289 isolates were whole-genome sequenced using the Illumina NextSeq platform, resulting in 522 whole-genome sequences including longitudinal and technical replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 289 isolates were whole-genome sequenced using the Illumina NextSeq platform, which resulted in 522 whole-genome sequences including longitudinal and technical replicates (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific sequencing data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "c8c7e89f-6b0e-49ed-af70-063609011e76",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C3",
+      "claim": "The mean participant age was 40 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean participant age was 40 years of age (median 38.5 years of age, interquartile range [IQR] 30\u201350 years of age), and 60% of the participants were female (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides demographic statistics from the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "ae72434e-2b1e-4e65-9590-fa782ec5997a",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C4",
+      "claim": "60% of the participants were female.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean participant age was 40 years of age (median 38.5 years of age, interquartile range [IQR] 30\u201350 years of age), and 60% of the participants were female (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides demographic statistics from the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "e016f9d6-3cbb-4e82-876b-22c4fb5fb0d1",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C5",
+      "claim": "All samples were SARS-CoV-2 positive with real-time qPCR cycle threshold (Ct) values ranging from 16 to 35 cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "All samples were SARS-CoV-2 positive with real-time qPCR cycle threshold (Ct) values ranging from 16 to 35 cycles (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the range of Ct values from PCR testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "fc00af75-fe0e-406b-8a0d-b6078091bc60",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C6",
+      "claim": "The earliest sample was collected on March 26, 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "The earliest sample was collected on March 26, 2020, while the latest one dated to November 4, 2020 (Figure 1\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific dates for sample collection and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "12761102-14cf-4a6a-83b5-d725234c7de4",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C7",
+      "claim": "The latest sample was collected on November 4, 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "The earliest sample was collected on March 26, 2020, while the latest one dated to November 4, 2020 (Figure 1\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific dates for sample collection and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "47513d00-2b0a-4419-9669-6d4551a20a78",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C8",
+      "claim": "The mean time from symptom onset to sample collection date was 5 days for samples with self-reported symptom onset data.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 291 samples had self-reported symptom onset data, for which the mean time from symptom onset to sample collection date was 5 days (IQR 2\u20137 days, Figure 1\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports timing statistics from the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "fd3f9797-1493-4ced-ac1c-10d2f8e191b5",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C9",
+      "claim": "More than 90% of the samples were taken from hospital staff.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 90% of the samples were taken from hospital staff, while the rest comprised patients and contacts of either the patients or the staff members (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the composition of the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "fe0e9b91-eb50-4f9b-a63d-19784cc32c9b",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C10",
+      "claim": "A total of 454 whole genomes with mean coverage higher than 10\u00d7 were kept for further analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 454 whole genomes with mean coverage higher than 10\u00d7 were kept for further analysis, resulting in an average coverage across isolates of 2457\u00d7 (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports sequencing quality metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "fb00a239-66f3-48c2-9e8e-7cdedc8abcfc",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C11",
+      "claim": "The average coverage across isolates was 2457\u00d7.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 454 whole genomes with mean coverage higher than 10\u00d7 were kept for further analysis, resulting in an average coverage across isolates of 2457\u00d7 (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports sequencing quality metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "91969711-877b-4bdc-8622-a110ee3abab8",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C12",
+      "claim": "Allele frequencies were extracted using the pileup functionality within bcftools with a minimum base and mapping quality of 30.",
+      "claim_type": "EXPLICIT",
+      "source": "Allele frequencies were extracted using the pileup functionality within bcftools (Danecek et al., 2011) with a minimum base and mapping quality of 30, which represents a base call error rate of 0.1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the bioinformatics methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "69132049-bd25-4614-b432-642344f795ed",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C13",
+      "claim": "A minimum base and mapping quality of 30 represents a base call error rate of 0.1%.",
+      "claim_type": "EXPLICIT",
+      "source": "Allele frequencies were extracted using the pileup functionality within bcftools (Danecek et al., 2011) with a minimum base and mapping quality of 30, which represents a base call error rate of 0.1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides the interpretation of quality scores.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "54fef44e-7577-4389-8ac3-d71c57a5c19f",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C14",
+      "claim": "Only minor variants with an allele frequency of at least 2% were kept as putative variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Only minor variants with an allele frequency of at least 2% were kept as putative variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the filtering criteria used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "75867d73-7827-495d-a548-2e0d4aec9e22",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C15",
+      "claim": "Samples with a frequency of missing bases higher than 10% were excluded, keeping 350 isolates for analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples with a frequency of missing bases higher than 10% were excluded, keeping 350 isolates for analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the filtering criteria and resulting sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "e61da265-82b3-4505-b0ac-3907a2a71287",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C16",
+      "claim": "The mean number of low-frequency variants was 12.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean number of low-frequency variants was 12 (median 3, IQR 1.00\u20139.75), although both the number of variants and its deviation increased at high Ct values (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistics on within-host variation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "f53e805e-9c48-40ea-83da-214456052ac0",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C17",
+      "claim": "The number of variants and its deviation increased at high Ct values.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean number of low-frequency variants was 12 (median 3, IQR 1.00\u20139.75), although both the number of variants and its deviation increased at high Ct values (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports an observed relationship between Ct values and variant numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "156e385c-6af8-41e7-a102-c749af1c8dc3",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C18",
+      "claim": "Technical replicates of 17 samples were sequenced and analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand the stability of within-sample variation and minimize spurious variant calls, we sequenced and analyzed technical replicates of 17 samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "e472ffaf-57eb-49ea-812d-e153f5d73a4c",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C19",
+      "claim": "When the variant was present in both duplicates, the correlation of the variant frequencies was high (R2=0.9).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, when the variant was present in both duplicates the correlation of the variant frequencies was high (R2=0.9, Figure 1a, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports a statistical measure of correlation between technical replicates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "08bd3bf9-bb8e-4f9c-9627-953b7679660b",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C20",
+      "claim": "The high correlation was maintained at low variant frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "The high correlation was also maintained at low variant frequencies (Figure 1a, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports consistency of correlation across frequency ranges.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "36da3d94-3a37-450f-a7c4-758f8e78b686",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C21",
+      "claim": "Minor variants were less likely to be shared when one or more of the paired samples had low viral load.",
+      "claim_type": "EXPLICIT",
+      "source": "Minor variants were less likely to be shared when one or more of the paired samples had low viral load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports an observed relationship between viral load and variant sharing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "408624e5-13b6-4249-8c18-ece49054c5ec",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C22",
+      "claim": "The mean proportion of discrepant within-sample variants between duplicated samples was 0.39.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean proportion of discrepant within-sample variants between duplicated samples was 0.39 (sd = 0.29), although this varied between duplicates (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports a statistical measure of discrepancy between replicates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "0a5a4525-ea50-4a30-a38e-fa13d6b56dbb",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C23",
+      "claim": "Ct values in RT-PCR obtained during viral amplification are inversely correlated with viral load.",
+      "claim_type": "EXPLICIT",
+      "source": "Ct values in RT-PCR obtained during viral amplification are inversely correlated with viral load (Tom and Mina, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this relationship.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "5dd40ac6-ceb3-42ec-bdd6-e5bfcb1b84ec",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C24",
+      "claim": "The proportion of shared intra-host variants was negatively correlated with Ct values in a logistic model (estimate = \u22120.78, p-value = 0.008).",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of shared intra-host variants was negatively correlated with Ct values in a logistic model (estimate = \u22120.78, p-value = 0.008), with higher Ct values associated with a lower amount of shared intra-host variants (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from statistical modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "e5783e71-bd6b-47b4-b20a-d9fe0ad02def",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C25",
+      "claim": "Higher Ct values were associated with a lower amount of shared intra-host variants.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of shared intra-host variants was negatively correlated with Ct values in a logistic model (estimate = \u22120.78, p-value = 0.008), with higher Ct values associated with a lower amount of shared intra-host variants (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports an observed relationship from statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "da2ceee5-b891-4270-8636-14d14ed824cf",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C26",
+      "claim": "The number of within-sample variants detected increased with Ct value.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of within-sample variants detected also increased with Ct value, as well as the deviation in the number of variants between duplicates (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports an observed relationship between Ct values and variant numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "363112fe-daaf-4c70-af1c-52c61ed24011",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C27",
+      "claim": "The deviation in the number of variants between duplicates increased with Ct value.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of within-sample variants detected also increased with Ct value, as well as the deviation in the number of variants between duplicates (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports an observed relationship between Ct values and variant variability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "abfe649d-4993-4f51-a752-5c1621036c0d",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C28",
+      "claim": "The increase in within-sample variants at high Ct values could be explained by an increase in spurious variants at low viral loads.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be explained either by an increase in the number of spurious variants at low viral loads (Tonkin-Hill et al., 2021), biased amplification of low-level subpopulations minor rare alleles (McCrone and Lauring, 2016), or due to the accumulation of within-host variation through time, as late stages of infection are usually characterized by high Ct values (low viral load).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references to support this potential explanation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "1bfc7261-d61e-408e-81d3-2822f6b39927",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C29",
+      "claim": "The increase in within-sample variants at high Ct values could be explained by biased amplification of low-level subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be explained either by an increase in the number of spurious variants at low viral loads (Tonkin-Hill et al., 2021), biased amplification of low-level subpopulations minor rare alleles (McCrone and Lauring, 2016), or due to the accumulation of within-host variation through time, as late stages of infection are usually characterized by high Ct values (low viral load).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references to support this potential explanation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "ca852be9-262a-4164-8115-97d8bcd8d514",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C30",
+      "claim": "The increase in within-sample variants at high Ct values could be explained by the accumulation of within-host variation through time.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be explained either by an increase in the number of spurious variants at low viral loads (Tonkin-Hill et al., 2021), biased amplification of low-level subpopulations minor rare alleles (McCrone and Lauring, 2016), or due to the accumulation of within-host variation through time, as late stages of infection are usually characterized by high Ct values (low viral load).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides reasoning based on infection dynamics.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "bb637e97-aeba-480e-b690-42c2aed14056",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C31",
+      "claim": "Late stages of infection are usually characterized by high Ct values (low viral load).",
+      "claim_type": "EXPLICIT",
+      "source": "This could be explained either by an increase in the number of spurious variants at low viral loads (Tonkin-Hill et al., 2021), biased amplification of low-level subpopulations minor rare alleles (McCrone and Lauring, 2016), or due to the accumulation of within-host variation through time, as late stages of infection are usually characterized by high Ct values (low viral load).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states a general characteristic of infection progression.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "c9cbf0ff-8748-4a0d-8c1a-799d8a2a46d7",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C32",
+      "claim": "Only samples with a Ct value equal or lower than 30 cycles were considered for analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, only samples with a Ct value equal or lower than 30 cycles were considered, which resulted in 249 samples kept for analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the filtering criteria applied.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "39c3d763-de92-4a86-965c-306ba1a92ab4",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C33",
+      "claim": "249 samples were kept for analysis after filtering by Ct value.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, only samples with a Ct value equal or lower than 30 cycles were considered, which resulted in 249 samples kept for analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the resulting sample size after filtering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "a4222f01-ee64-408a-bffc-cfb79d5e38e4",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C34",
+      "claim": "Only variants with a frequency higher or equal than 2% were used.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, only variants with a frequency higher or equal than 2% were used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the filtering criteria applied.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "2d168f2c-518d-4d1a-944a-a4164e571dd2",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C35",
+      "claim": "414 out of 29,903 positions were polymorphic for the consensus sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "For the filtered dataset, 414 out of 29,903 positions were polymorphic for the consensus sequence, while the alignment with within-sample diversity had 1039 SNPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports genomic variation statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "f1c92b2c-0406-4f41-b1bd-be00b70e7627",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C36",
+      "claim": "The alignment with within-sample diversity had 1039 SNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "For the filtered dataset, 414 out of 29,903 positions were polymorphic for the consensus sequence, while the alignment with within-sample diversity had 1039 SNPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports genomic variation statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "afa12993-3f99-4a95-9b09-5cc5209f132f",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C37",
+      "claim": "699 positions had intra-host diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 699 positions had intra-host diversity, of which 78% (549/699) were singletons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports genomic variation statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "8934ed28-002c-4768-9220-e6ad735c704f",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C38",
+      "claim": "78% of positions with intra-host diversity were singletons.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 699 positions had intra-host diversity, of which 78% (549/699) were singletons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports genomic variation statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "d970e53a-2ee8-472b-a79a-aac8216fb6ad",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C39",
+      "claim": "83% of samples contained at least one position with a high-quality within-host variant.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of samples (207/249, 83%) contained at least one position with a high-quality within-host variant, and the median amount of intra-host variants per sample was 2 (IQR 1\u20134.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the prevalence of within-host variation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "d82c3a05-20f1-47b6-8b91-a602b6d9c296",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C40",
+      "claim": "The median amount of intra-host variants per sample was 2.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of samples (207/249, 83%) contained at least one position with a high-quality within-host variant, and the median amount of intra-host variants per sample was 2 (IQR 1\u20134.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports statistics on within-host variation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "07904c89-5020-41f9-b464-70d42f50f54e",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C41",
+      "claim": "Epidemiological data is often necessary to infer the directionality of transmission given the limited genomic information in consensus sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the limited genomic information in the consensus sequences, epidemiological data is often necessary to infer the directionality of transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states a limitation of consensus sequence approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "008c811c-4e9c-4c76-8e5d-59eba1c6a4a8",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C42",
+      "claim": "Pairs of samples from the same hospital, department, epidemiologically linked, or longitudinal and technical replicates had a lower SNP distance than those samples that did not have any relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "Pairs of samples from the same hospital, department, epidemiologically linked, or longitudinal and technical replicates had a lower SNP distance (were more closely related) than those samples that did not have any relationship, although this difference was small in the case of pairs of samples from the same hospital (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from statistical analysis comparing SNP distances.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "00620e5a-bb99-420a-8435-0aef74ebcda4",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C43",
+      "claim": "The difference in SNP distance was small for pairs of samples from the same hospital.",
+      "claim_type": "EXPLICIT",
+      "source": "Pairs of samples from the same hospital, department, epidemiologically linked, or longitudinal and technical replicates had a lower SNP distance (were more closely related) than those samples that did not have any relationship, although this difference was small in the case of pairs of samples from the same hospital (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports a specific observation about hospital-level relationships.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "3174dbbc-f731-4169-8dde-286928d21ac5",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C44",
+      "claim": "The proportion of shared within-host variants was higher between technical replicates, longitudinal duplicates, epidemiologically linked samples, and samples from the same department compared to pairs with no epidemiological links.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of shared within-host variants was higher between technical replicates, longitudinal duplicates, epidemiologically linked samples, and samples taken from individuals from the same department when compared to pairs with no epidemiological links, although the range of this probability was large (Figure 2, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from analysis of variant sharing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "11637fd4-302b-4614-a5f0-aea5d54c353f",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C45",
+      "claim": "The range of the probability of sharing within-host variants was large.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of shared within-host variants was higher between technical replicates, longitudinal duplicates, epidemiologically linked samples, and samples taken from individuals from the same department when compared to pairs with no epidemiological links, although the range of this probability was large (Figure 2, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports variability in the observed relationship.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "559719de-6952-413c-8d02-53018ed76e98",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C46",
+      "claim": "The probability of sharing a low-frequency variant tended to increase with variant frequency, but the association was not strong (odds ratio 1.8, 95% CI 0.9\u20133.5, p=0.08).",
+      "claim_type": "EXPLICIT",
+      "source": "There was a tendency for the probability to increase with variant frequency, but the association was not strong (odds ratio 1.8, 95% CI 0.9\u20133.5, p=0.08).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports results from logistic regression modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "8c9b6b29-370d-41ba-b931-6d00d988b50f",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C49",
+      "claim": "Pairs from the same department, with epidemiological links, replicates, or technical replicates all had a significantly higher probability of sharing a low-frequency variant compared to pairs with no link (all Wald test p-values <0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, pairs from the same department, with epidemiological links, replicates, or technical replicates all had a significantly higher probability of sharing a low-frequency variant when compared to those pairs with no link (all Wald test p-values <0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports results from statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "b5481915-aafa-433a-84a0-28849d9f2891",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C50",
+      "claim": "The inferred probability of sharing low-frequency variants for pairs from the same department was 1.4% (95% CI 0.9\u20132.1%).",
+      "claim_type": "EXPLICIT",
+      "source": "The inferred probabilities for pairs from the sample department was 1.4% (95% CI 0.9\u20132.1%), which increased to 5% for pairs with epidemiological links (95% CI 4.2\u20136.4%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports results from logistic regression modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "9cbd5622-b08b-4a7f-bec9-8a9191d6cc82",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C51",
+      "claim": "The inferred probability of sharing low-frequency variants for pairs with epidemiological links was 5% (95% CI 4.2\u20136.4%).",
+      "claim_type": "EXPLICIT",
+      "source": "The inferred probabilities for pairs from the sample department was 1.4% (95% CI 0.9\u20132.1%), which increased to 5% for pairs with epidemiological links (95% CI 4.2\u20136.4%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports results from logistic regression modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "9eba2253-a6f9-4ef8-8389-52d019fd05e2",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C52",
+      "claim": "For longitudinal replicates, the probability of sharing low-frequency variants was 38% (95% CI 35\u201341%).",
+      "claim_type": "EXPLICIT",
+      "source": "For longitudinal replicates, the probability was inferred to be 38% (95% CI 35\u201341%), and were shared between multiple time points (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from logistic regression modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "83115578-bf43-45f5-a103-b1b38293e22e",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C53",
+      "claim": "Low-frequency variants were shared between multiple time points in longitudinal replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "For longitudinal replicates, the probability was inferred to be 38% (95% CI 35\u201341%), and were shared between multiple time points (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports observations from longitudinal data and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "88ccbb74-28e5-45fd-9797-c2aa1110b328",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C54",
+      "claim": "Technical replicates had the highest probability of sharing low-frequency variants at 70% (95% CI 64\u201376%).",
+      "claim_type": "EXPLICIT",
+      "source": "Technical replicates were estimated to have the highest probability (70%, 95% CI 64\u201376%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports results from logistic regression modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "e498393a-cdb3-4d4a-8a2b-34398e207c69",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C55",
+      "claim": "100 random phylogenetic trees with 100 tips each were generated for simulation testing.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the accuracy of different models at inferring known phylogenies, 100 random phylogenetic trees with 100 tips each were generated using the function rtree within the R package ape (Paradis et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the simulation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "00c21705-ef07-4035-bc46-722527fbbe2f",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C56",
+      "claim": "Whole-genome alignments were simulated from the random phylogenies using a model with 16-character states representing combinations of nucleotides as minor and major alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-genome alignments were simulated from the random 100 phylogenies with the function SimSeq of the R package phangorn (R Development Core Team, 2021; Schliep, 2011) using a model with 16-character states that represent the combinations of the four nucleotides with each other as minor and major alleles (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the simulation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "4e60c8a6-483d-42d1-a716-3ffdcac1abc8",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C57",
+      "claim": "In the simulation model, fixed bases (A, C, G, and T) were 100 times more frequent than low-frequency bases.",
+      "claim_type": "EXPLICIT",
+      "source": "This rates result in fixed bases (A, C, G, and T) being 100 times more frequent than low-frequency bases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the parameters used in simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "4870e071-ce43-4423-9883-52adeeb3c4ef",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C58",
+      "claim": "For all metrics employed, phylogenies inferred using within-host diversity approximated better to the initial tree than those using consensus sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "For all the metrics employed, the phylogenies inferred explicitly using within-host diversity as independent characters approximated better to the initial tree than the one using the consensus sequence (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from simulation comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "165f1167-7422-404e-aa29-44e1af0e69e5",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C59",
+      "claim": "The transition/transversion rates inferred by phylogenetic models accounting for within-host diversity accurately reflect the rates used for the simulation of genomic sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the transition/transversion rates inferred by the phylogenetic models accounting for within-host diversity accurately reflect the rates used for the simulation of genomic sequences (Supplementary files 4\u20136).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports validation of the model parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "cff87bd4-a498-45ca-b85f-7e25e3cb2d4d",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C60",
+      "claim": "Using rates that promote abundant and stable low-frequency variation made the 16-state model perform better than the consensus sequence model.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, choosing rates that promote an abundant and stable landscape of low-frequency variation (rate of minor variant acquisition of 20, and rates of variant switch and lost of 1) made the 16-state model to perform better than the model using consensus sequences, which improved as the proportion of low-frequency variants decreased (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from simulations with varying parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "bdb82153-c3f2-4458-b297-8a26981632f4",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C61",
+      "claim": "In simulations using a Jukes-Cantor DNA model without low-frequency variation, both models showed similar results.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in simulations using a Jukes-Cantor DNA model, and therefore without any low-frequency variation, both models showed similar results (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from simulations without within-host variation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "14e3c77c-f2e5-4902-806a-79d32ea068a0",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C62",
+      "claim": "For all metrics used, the model using low-frequency variants inferred phylogenies more similar to the starting coalescent tree than those inferred using consensus sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "For all metrics used, the model using low-frequency variants inferred phylogenies more similar to the starting coalescent tree than those inferred using the consensus sequence (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from coalescent simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "64626122-c0a8-4c79-994e-3c2d7d7c4a69",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C63",
+      "claim": "Outbreaks were simulated with a host population varying between 10 and 15 hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "We simulated outbreaks using TransPhylo (Didelot et al., 2017) with a host population varying between 10 and 15 hosts, no recombination, complete sampling of the outbreak, and selecting epidemiological parameters to match the transmission dynamics of SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the outbreak simulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "7ee58799-eb09-4b35-907c-67442e920e3e",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C64",
+      "claim": "Using consensus sequences performed better than a random distribution of trees in outbreak simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though using consensus sequences performed better than a random distribution of trees, using within-host diversity outperformed the consensus sequence in all instances (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from outbreak simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "d512b332-9d8b-41dc-91f9-56047cefeb65",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C65",
+      "claim": "Using within-host diversity outperformed consensus sequences in all outbreak simulation instances.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though using consensus sequences performed better than a random distribution of trees, using within-host diversity outperformed the consensus sequence in all instances (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from outbreak simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "c1f7b861-0dd7-49f8-8fe1-240b4ac026ff",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C66",
+      "claim": "Phylogenies inferred using within-host diversity were more similar to the real outbreak phylogeny for wider bottleneck sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "The phylogenies inferred using within-host diversity were more similar to the real outbreak phylogeny for wider bottleneck sizes, with the best performance when no bottleneck was present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports results from outbreak simulations with varying bottleneck sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "33adcb58-aae0-42aa-9325-63e0830698ae",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C67",
+      "claim": "Phylogenies inferred using within-host diversity showed best performance when no bottleneck was present.",
+      "claim_type": "EXPLICIT",
+      "source": "The phylogenies inferred using within-host diversity were more similar to the real outbreak phylogeny for wider bottleneck sizes, with the best performance when no bottleneck was present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports results from outbreak simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "3771dc2c-ac80-44d1-a1e0-182757f25e45",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C70",
+      "claim": "Genome sequences collected at different time points are expected to diverge as time progresses, resulting in a positive correlation between isolation date and accumulated mutations (temporal signal).",
+      "claim_type": "EXPLICIT",
+      "source": "Genome sequences collected at different time points are expected to diverge as time progresses, resulting in a positive correlation between the isolation date and the number of accumulated mutations (temporal signal) (Rieux and Balloux, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this expectation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "32cdcd24-1e04-4c2b-ab5a-5da117db2e68",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C71",
+      "claim": "Longitudinal samples in the phylogeny inferred using within-host diversity showed an increase in genetic distance as time progressed (coefficient 2.24, 0.59\u20133.88 95% CI, p=0.019).",
+      "claim_type": "EXPLICIT",
+      "source": "Longitudinal samples in the phylogeny inferred using within-host diversity reflected the expected temporal signal, with an increase in genetic distance as time progressed between the longitudinal pairs in a linear model (coefficient 2.24, 0.59\u20133.88 95% CI, p=0.019, Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from linear modeling of temporal relationships.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "c83d17ac-0e48-459c-837a-41603e79c8ef",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C72",
+      "claim": "The difference in Ct value among longitudinal duplicates was not correlated with higher genetic distances (coefficient 1.62, \u20130.66 to 3.91 95% CI, p=0.2).",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in Ct value among longitudinal duplicates was not correlated with higher genetic distances (coefficient 1.62, \u20130.66 to 3.91 95% CI, p=0.2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports results from statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "d76f8eae-c998-4efe-939a-1445efb34064",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C73",
+      "claim": "As outbreaks progressed, the number of low-frequency variants increased (coefficient 0.16, 0.06\u20130.27 95% CI, p=0.003, r2=0.19).",
+      "claim_type": "EXPLICIT",
+      "source": "In general, as the outbreaks progressed the number of low-frequency variants increased (coefficient 0.16, 0.06\u20130.27 95% CI, p=0.003, r2=0.19, Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from linear modeling of outbreak progression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "d61b7291-fc82-447d-9f98-8390bad95a5b",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C74",
+      "claim": "The majority of clusters (10/11) with identical consensus sequences showed a positive correlation between distance to root and collection dates when using within-sample diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of clusters (10/11) showed a positive correlation between the distance of the tips to the root and the collection dates, demonstrating a significant temporal signal between samples when there was none using the conventional consensus tree (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from root-to-tip analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "b779f883-b76c-4fca-92d4-d7aa05fea311",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C75",
+      "claim": "Clusters with identical consensus sequences demonstrated significant temporal signal when using within-sample diversity where there was none using conventional consensus trees.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of clusters (10/11) showed a positive correlation between the distance of the tips to the root and the collection dates, demonstrating a significant temporal signal between samples when there was none using the conventional consensus tree (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results comparing consensus and within-host diversity approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "fc9c2cae-5fae-498d-8a41-0a7f85d322f5",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C76",
+      "claim": "A time-calibrated phylogeny was inferred using BactDating with collection dates of the tips.",
+      "claim_type": "EXPLICIT",
+      "source": "To illustrate the downstream application of the improved phylogenetic resolution, we inferred a time-calibrated phylogeny from the phylogeny inferred using the 16-character state model with the collection dates of the tips using BactDating (Didelot et al., 2018; Figure 7\u2014figure supplement 1) and calculated the likelihood of transmission events within potential epidemiologically identified outbreaks using a susceptible-exposed-infectious-removed (SEIR) model (Lekone and Finkenst\u00e4dt, 2006; Eldholm et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the analysis methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "654a6517-2979-4cc0-83e8-6fde2b779d42",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C77",
+      "claim": "The SEIR model was parameterized with an average latency period of 5.5 days.",
+      "claim_type": "EXPLICIT",
+      "source": "The SEIR model was parameterized with an average latency period of 5.5 days (Xin et al., 2022), an infectious period of 6 days (Byrne et al., 2020), and a within-host coalescent rate of 5 days as previously estimated for SARS-CoV-2 (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references for the parameter values used.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "70285c4b-01d5-4ef2-b187-e5e06bdf4bd3",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C78",
+      "claim": "The SEIR model was parameterized with an infectious period of 6 days.",
+      "claim_type": "EXPLICIT",
+      "source": "The SEIR model was parameterized with an average latency period of 5.5 days (Xin et al., 2022), an infectious period of 6 days (Byrne et al., 2020), and a within-host coalescent rate of 5 days as previously estimated for SARS-CoV-2 (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references for the parameter values used.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "367d69e6-782f-4b1a-b7bd-b601d6f8d47e",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C79",
+      "claim": "The SEIR model was parameterized with a within-host coalescent rate of 5 days as previously estimated for SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "The SEIR model was parameterized with an average latency period of 5.5 days (Xin et al., 2022), an infectious period of 6 days (Byrne et al., 2020), and a within-host coalescent rate of 5 days as previously estimated for SARS-CoV-2 (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference for the parameter value used.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "31cb95b1-9062-4d90-96ef-62bf4c40dc19",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C80",
+      "claim": "Within-sample genetic diversity is common among a wide variety of pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Within-sample genetic diversity is common among a wide variety of pathogens (Mongkolrattanothai et al., 2011; Lieberman et al., 2016; Dinis et al., 2016; Leitner, 2019; Popa et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple references to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "c8beac2f-f8e0-4f79-b0f4-d226b460feec",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C81",
+      "claim": "Within-host diversity may be generated de novo during infection, by a single transmission event of a diverse inoculum, or by independent transmission events from multiple sources.",
+      "claim_type": "EXPLICIT",
+      "source": "This diversity may be generated de novo during infection, by a single transmission event of a diverse inoculum or by independent transmission events from multiple sources (Worby et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support the mechanisms of diversity generation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "cfa93839-6c34-4040-ae99-72ae326a6665",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C82",
+      "claim": "The maintenance and dynamic of within-host diversity is a product of natural selection, genetic drift, and fluctuating population size.",
+      "claim_type": "EXPLICIT",
+      "source": "The maintenance and dynamic of within-host diversity is then a product of natural selection, genetic drift, and fluctuating population size (Didelot et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this evolutionary principle.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "8f557953-7505-4e45-b995-87dbf4431b4f",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C83",
+      "claim": "The transmission of within-host variation between individuals is favored as a large inoculum exposure is more likely to give rise to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The transmission of within-host variation between individuals is also favored as a large inoculum exposure is more likely to give rise to infection (Murphy et al., 1984; Han et al., 2019; Lee et al., 2022; Sender et al., 2021; Spinelli et al., 2021; Trunfio et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple references to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "832fb82b-319f-4eb1-bfbb-3c2b354ae5e3",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C84",
+      "claim": "The amount of within-sample diversity transmitted from index case to contact is determined by the bottleneck size.",
+      "claim_type": "EXPLICIT",
+      "source": "The amount of within-sample diversity transmitted from index case to contact is determined by the bottleneck size (Zwart and Elena, 2015), with stringent bottlenecks limiting the number of genotypes transmitted from the host to the recipient, and wide bottlenecks allowing for the transmission of higher levels of genetic diversity (Worby et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references to support this relationship.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "69a152b7-25fb-4e9c-bdfa-701d5c34e7dc",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C85",
+      "claim": "Stringent bottlenecks limit the number of genotypes transmitted from the host to the recipient.",
+      "claim_type": "EXPLICIT",
+      "source": "The amount of within-sample diversity transmitted from index case to contact is determined by the bottleneck size (Zwart and Elena, 2015), with stringent bottlenecks limiting the number of genotypes transmitted from the host to the recipient, and wide bottlenecks allowing for the transmission of higher levels of genetic diversity (Worby et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "d018330e-1714-4478-9b68-073d4482f2c0",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C86",
+      "claim": "Wide bottlenecks allow for the transmission of higher levels of genetic diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "The amount of within-sample diversity transmitted from index case to contact is determined by the bottleneck size (Zwart and Elena, 2015), with stringent bottlenecks limiting the number of genotypes transmitted from the host to the recipient, and wide bottlenecks allowing for the transmission of higher levels of genetic diversity (Worby et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "d4ba57d9-a2d6-4ae7-9b45-c50d7f20289b",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C87",
+      "claim": "The substitution rate of SARS-CoV-2 has been inferred to be around two mutations per genome per month.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the substitution rate of SARS-CoV-2 has been inferred to be around two mutations per genome per month (Harvey et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference for this rate estimate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "5954a7d9-2fba-4d09-84db-e44a53df60c3",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C88",
+      "claim": "The infectious period of SARS-CoV-2 is 6 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Given its infectious period of 6 days (Byrne et al., 2020), most consensus sequences in a small-scale outbreak will show no variation between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference for this parameter.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "ab33e5d1-e056-4440-9bd9-11858ea758c7",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C89",
+      "claim": "Most consensus sequences in a small-scale SARS-CoV-2 outbreak will show no variation between them.",
+      "claim_type": "EXPLICIT",
+      "source": "Given its infectious period of 6 days (Byrne et al., 2020), most consensus sequences in a small-scale outbreak will show no variation between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers this consequence from the mutation rate and infectious period.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "4bfd44c8-0f82-43f1-af0f-d80ade4f3f81",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C90",
+      "claim": "Previous work has shown the advantages of using within-host diversity to infer transmission events compared to using consensus sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown the advantages of using within-host diversity to infer transmission events compared to using consensus sequences (Wymant et al., 2018; De Maio et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "fb39696f-2d99-41d4-9103-bb892aba4dd8",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C91",
+      "claim": "Including within-sample diversity in a phylogenetic model would significantly increase the evolutionary and temporal signal.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that the failure of consensus sequence approaches to capture within-sample variation arbitrarily excludes meaningful data and limits pathogen phylogenetic and transmission inference, and that including within-sample diversity in a phylogenetic model would significantly increase the evolutionary and temporal signal and thereby improve our ability to infer infectious disease phylogenies and transmission events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the stated hypothesis of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "07ede86e-8de6-4306-b8c4-fb4294ab970b",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C92",
+      "claim": "The failure of consensus sequence approaches to capture within-sample variation arbitrarily excludes meaningful data and limits pathogen phylogenetic and transmission inference.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that the failure of consensus sequence approaches to capture within-sample variation arbitrarily excludes meaningful data and limits pathogen phylogenetic and transmission inference, and that including within-sample diversity in a phylogenetic model would significantly increase the evolutionary and temporal signal and thereby improve our ability to infer infectious disease phylogenies and transmission events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the stated hypothesis of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "d2789722-345d-4a9d-9c10-0a223140f155",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C93",
+      "claim": "Understanding who infects whom in an infectious disease outbreak is a key component of infection prevention and control.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding who infects whom in an infectious disease outbreak is a key component of infection prevention and control (Didelot et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this statement.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "5b38aeb9-8101-40b2-a8c1-e5e84881bbcd",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C94",
+      "claim": "The limited genetic diversity of many pathogens often hinders understanding of transmission events.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of whole-genome sequencing allows for detailed investigation of disease outbreaks, but the limited genetic diversity of many pathogens often hinders our understanding of transmission events (Campbell et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this limitation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "2d09c7c9-4fed-4ad5-98c3-de894ce8d05c",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C95",
+      "claim": "Many index case and contact pairs will share identical genotypes, making it difficult to ascertain who infected whom.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence of the limited diversity, many index case and contact pairs will share identical genotypes, making it difficult to ascertain who infected whom.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers this consequence from limited diversity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "eef1987a-27bf-4a71-aa72-bdd98cc271f7",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C96",
+      "claim": "Conventional whole-genome sequencing phylogenetic approaches exclusively use consensus sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Although within-host genetic diversity is common among a wide variety of pathogens, conventional whole-genome sequencing phylogenetic approaches exclusively use consensus sequences, which consider only the most prevalent nucleotide at each position and therefore fail to capture low-frequency variation within samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes current standard practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "011738c6-cbaa-4efd-95d5-ccea0cce2800",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C97",
+      "claim": "Consensus sequences consider only the most prevalent nucleotide at each position and fail to capture low-frequency variation within samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Although within-host genetic diversity is common among a wide variety of pathogens, conventional whole-genome sequencing phylogenetic approaches exclusively use consensus sequences, which consider only the most prevalent nucleotide at each position and therefore fail to capture low-frequency variation within samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the limitation of consensus sequences.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "59c91012-96f3-4fd7-8dfc-1ca8d117edf3",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C98",
+      "claim": "Within-sample diversity is partially maintained among repeated serial samples from the same host.",
+      "claim_type": "EXPLICIT",
+      "source": "Using whole-genome sequences from SARS-CoV-2 multi-institutional outbreaks as an example, we show how within-sample diversity is partially maintained among repeated serial samples from the same host, it can transmitted between those cases with known epidemiological links, and how this improves phylogenetic inference and our understanding of who infected whom.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports findings from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "45ab1d32-5924-4bd1-93d2-5091f7cf8398",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C99",
+      "claim": "Within-sample diversity can be transmitted between cases with known epidemiological links.",
+      "claim_type": "EXPLICIT",
+      "source": "Using whole-genome sequences from SARS-CoV-2 multi-institutional outbreaks as an example, we show how within-sample diversity is partially maintained among repeated serial samples from the same host, it can transmitted between those cases with known epidemiological links, and how this improves phylogenetic inference and our understanding of who infected whom.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports findings from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "9e08addd-7001-4ac6-9d1b-586d6da370f1",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C100",
+      "claim": "Including within-sample diversity improves phylogenetic inference and understanding of who infected whom.",
+      "claim_type": "EXPLICIT",
+      "source": "Using whole-genome sequences from SARS-CoV-2 multi-institutional outbreaks as an example, we show how within-sample diversity is partially maintained among repeated serial samples from the same host, it can transmitted between those cases with known epidemiological links, and how this improves phylogenetic inference and our understanding of who infected whom.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports findings from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "91a9f38a-1481-4bfe-b33b-ee678a3efb8e",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C101",
+      "claim": "The technique is applicable to other infectious diseases and has immediate clinical utility in infection prevention and control.",
+      "claim_type": "EXPLICIT",
+      "source": "Our technique is applicable to other infectious diseases and has immediate clinical utility in infection prevention and control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the broader applicability of the approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "a3f884ef-e96d-4d12-ba61-13d7d61a448c",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C102",
+      "claim": "Accurate inference of who infected whom in an infectious disease outbreak is critical for the delivery of effective infection prevention and control.",
+      "claim_type": "EXPLICIT",
+      "source": "Accurate inference of who infected whom in an infectious disease outbreak is critical for the delivery of effective infection prevention and control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the importance of transmission inference.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "e056b7f1-740b-490c-a266-831e20c9205e",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C103",
+      "claim": "The increased resolution of pathogen whole-genome sequencing has significantly improved our ability to infer transmission events.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased resolution of pathogen whole-genome sequencing has significantly improved our ability to infer transmission events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the impact of sequencing technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "42b0a54c-835a-4991-9358-57712107781a",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "claim_id": "C104",
+      "claim": "Transmission inference often remains limited by the lack of genomic variation between the source case and infected contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, transmission inference often remains limited by the lack of genomic variation between the source case and infected contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states a current limitation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a5246f02-567e-4d3b-a5fc-2c9e318b6df2",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study cohort consisted of 451 SARS-CoV-2 positive individuals from North London Hospitals between March and November 2020, with 289 isolates sequenced resulting in 522 whole-genome sequences. The cohort was predominantly hospital staff (>90%) with a mean age of 40 years and 60% female participants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 provide comprehensive descriptive statistics about the study cohort including sample size, demographics, timing, and composition. These are straightforward observational data reported from the study with appropriate detail and consistency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "37d2cfe7-3420-4d3b-ac29-490365b99c01",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "After quality filtering, 454 whole genomes with mean coverage >10\u00d7 were retained (average coverage 2457\u00d7), with variant calling performed using bcftools at quality threshold 30 (0.1% error rate) and minimum variant frequency of 2%, resulting in 350 isolates for analysis after excluding samples with >10% missing bases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15 describe the bioinformatics pipeline and quality control steps with specific thresholds and resulting sample sizes. The methods are standard and appropriately documented, though C13's interpretation of quality score 30 as 0.1% error rate is a standard conversion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "dcbf2cf1-58b7-45fa-b687-93c81fe3192d",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The filtered dataset showed substantial within-host diversity with a mean of 12 low-frequency variants per sample (median 3), 1039 total SNPs including 699 positions with intra-host diversity (78% singletons), and 83% of samples containing at least one high-quality within-host variant (median 2 per sample).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 and C35-C40 report descriptive statistics on genomic variation in the dataset. The numbers are internally consistent and demonstrate the prevalence of within-host diversity. However, C17 notes increased variants at high Ct values, which could indicate technical artifacts that are addressed later in the filtering.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "3d9e9af4-6283-4a11-8d0a-5c55bb33c838",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Technical replicates of 17 samples showed high correlation of variant frequencies when variants were present in both duplicates (R\u00b2=0.9), maintained even at low frequencies, though variants were less likely to be shared at low viral loads with mean discrepancy of 0.39 between duplicates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22 demonstrate reproducibility of within-host variant detection through technical replicates. The high R\u00b2 value (C19) supports reliability, while C21-C22 appropriately acknowledge limitations at low viral loads. This validation is critical for establishing the reliability of the variant calling approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "ea70d552-a2e1-473a-8f84-19b6e4dad50a",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Higher Ct values (lower viral load) were negatively correlated with shared intra-host variants (logistic model estimate=-0.78, p=0.008) and positively correlated with both the number of variants detected and deviation between duplicates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27 establish a relationship between viral load (via Ct values) and variant detection quality. C23 cites established knowledge, while C24-C27 report statistical findings. The significant p-value supports the correlation, though the biological vs. technical nature of this relationship requires further interpretation provided in C28-C31.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "d6528d2b-add6-4d1e-a7bb-fb951dddb184",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The increase in within-sample variants at high Ct values could be explained by spurious variants at low viral loads, biased amplification of low-level subpopulations, or accumulation of within-host variation over time as late infection stages are characterized by high Ct values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C28-C31 propose three alternative explanations for the Ct-variant relationship, all marked as speculation or inference. While the explanations are plausible and cite relevant literature, the manuscript does not provide data to distinguish between these mechanisms. This represents hypothesis generation rather than tested conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "c91c9c30-e3ac-44ec-9040-739cc5d49bc8",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Based on technical replicate analysis, samples were filtered to include only those with Ct \u226430 cycles and variants with frequency \u22652%, resulting in 249 samples retained for final analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 describe data-driven filtering decisions based on the quality control analyses from technical replicates. The thresholds are justified by the preceding analyses showing reduced reliability at higher Ct values and lower variant frequencies. The resulting sample size is clearly reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "c231341b-0922-467d-9207-55428f1875dd",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Pairs of samples with epidemiological relationships (same hospital, department, or epidemiologically linked) or replicates had lower SNP distances than unrelated samples, though the difference was small for hospital-level relationships.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 report statistical analysis of SNP distances stratified by epidemiological relationships, with reference to Table 1. The finding that closer epidemiological relationships correlate with genetic similarity validates the genomic data, while acknowledging limited resolution at the hospital level.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "077aad4b-37b2-4680-948c-b60d404f8db1",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The proportion of shared within-host variants increased with epidemiological relatedness: technical replicates showed highest sharing (70%, 95% CI 64-76%), followed by longitudinal replicates (38%, 95% CI 35-41%), epidemiologically linked pairs (5%, 95% CI 4.2-6.4%), and same department pairs (1.4%, 95% CI 0.9-2.1%), all significantly higher than unrelated pairs (p<0.001), though with large variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C54 present logistic regression results showing a clear gradient of variant sharing corresponding to epidemiological relatedness. The statistical significance (C49) and confidence intervals support the findings. C45 appropriately notes high variability, and C46 shows weak association with variant frequency (p=0.08), indicating the relationship is primarily driven by epidemiological links rather than variant frequency alone.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "d3bdda15-4c26-41aa-8e45-4bada340d929",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Simulation testing using 100 random phylogenetic trees with a 16-state model representing major/minor allele combinations showed that phylogenies inferred using within-host diversity better approximated the true tree than consensus sequences across all metrics, with accurately recovered transition/transversion rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 describe simulation methodology and results demonstrating superior performance of the within-host diversity model. The use of multiple metrics (C58) and validation of inferred parameters (C59) strengthen the conclusions. The simulation design with 100 trees provides adequate replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "9cc29134-e77d-4bff-bbd7-4659c1fc0a55",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The 16-state model's performance advantage over consensus sequences was greatest when simulations used rates promoting abundant stable low-frequency variation, decreased as variant proportion decreased, and disappeared when using Jukes-Cantor model without low-frequency variation. The advantage persisted in coalescent simulations with increased genetic linkage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 explore parameter space showing the within-host diversity model's advantage depends on the presence of such diversity (as expected). C61 provides an important negative control showing similar performance without within-host variation. C62 addresses concerns about genetic linkage violating independence assumptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "b75747b1-dd11-471b-b3dc-d4646e11a158",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Outbreak simulations using TransPhylo with 10-15 hosts showed that phylogenies inferred using within-host diversity outperformed consensus sequences in all instances, with best performance at wider bottleneck sizes and no bottleneck, though consensus sequences performed better than random trees.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 report results from outbreak simulations that are more realistic than random tree simulations. The finding that performance improves with wider bottlenecks (C66-C67) is biologically sensible as more diversity is transmitted. C64 provides appropriate context that consensus sequences still contain information.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "a7fad9c3-f88f-4897-a6e4-2d36d0466c9a",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Longitudinal samples showed expected temporal signal with genetic distance increasing over time (coefficient 2.24, 95% CI 0.59-3.88, p=0.019), independent of Ct value differences (p=0.2), and the number of low-frequency variants increased as outbreaks progressed (coefficient 0.16, 95% CI 0.06-0.27, p=0.003, r\u00b2=0.19).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 demonstrate temporal signal in the phylogenetic analysis. C70 establishes the expectation, C71 shows significant temporal signal, C72 rules out Ct value as a confounder, and C73 shows accumulation of variants over outbreak time. The statistical significance and effect sizes support these conclusions, though the r\u00b2 of 0.19 in C73 indicates substantial unexplained variance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "fe6f5a6c-651c-402a-8174-dc5c7c62b3d2",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Among 11 clusters with identical consensus sequences (no temporal signal), 10 showed positive correlation between root-to-tip distance and collection dates when using within-sample diversity, demonstrating significant temporal signal where none existed using conventional consensus trees.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 provide compelling evidence that within-host diversity adds temporal resolution where consensus sequences fail. The 10/11 success rate is strong, and this directly addresses a key limitation of consensus approaches. However, the manuscript does not discuss the one cluster that did not show positive correlation (potential false positive).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "d3d36233-3ec2-4014-948f-ab2004dc02d2",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "A time-calibrated phylogeny was inferred using BactDating and transmission likelihoods calculated using a SEIR model parameterized with latency period of 5.5 days, infectious period of 6 days, and within-host coalescent rate of 5 days for SARS-CoV-2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C79 describe the downstream application methodology. The parameters are appropriately cited from literature (C77-C79). This demonstrates practical utility of the improved phylogenetic resolution, though the actual transmission inference results are presented separately in Figure 7.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "57b91792-d66c-4e5b-9876-fe9e285e94ef",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Within-sample diversity is partially maintained among serial samples from the same host, can be transmitted between epidemiologically linked cases, and improves phylogenetic inference and understanding of transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C100 summarize the main findings of the study. These are supported by the longitudinal replicate data (C52-C53), epidemiological linkage analysis (C44-C54), and phylogenetic simulations (C58-C67). The claims appropriately use 'partially maintained' and 'improves' rather than absolute statements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "c74ffdba-9152-4f90-9d2e-842c2913c10b",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Within-sample genetic diversity is common among pathogens and may arise de novo, from diverse inoculum, or multiple sources. Its maintenance involves natural selection, drift, and population size fluctuations, with transmission favored by large inoculum and determined by bottleneck size (stringent bottlenecks limit, wide bottlenecks allow diversity transmission).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C86 establish background knowledge about within-host diversity, all supported by citations. These provide the theoretical framework for the study but are not novel findings. The claims accurately represent established concepts in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "136b57aa-2720-4c61-ac49-6d2d344deea2",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 has a substitution rate of approximately two mutations per genome per month and infectious period of 6 days, resulting in most consensus sequences in small-scale outbreaks showing no variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C89 establish the motivation for the study by citing SARS-CoV-2 parameters. C87 and C88 are appropriately cited, while C89 is a logical inference from these parameters. This provides the rationale for why within-host diversity is particularly important for SARS-CoV-2 outbreak investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "a06880f0-5b65-48d2-b5fe-24e788569770",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Previous work has shown advantages of using within-host diversity for transmission inference. The study hypothesizes that consensus approaches arbitrarily exclude meaningful data and that including within-sample diversity would significantly increase evolutionary and temporal signal, improving phylogenetic and transmission inference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C92 establish prior work (C90 with citations) and state the study hypothesis (C91-C92). While C91-C92 are marked as speculation, they represent the testable hypothesis that the study addresses. The hypothesis is clearly supported by the subsequent results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "b33260e8-fda2-4e48-bec1-5beb71e687bf",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Understanding transmission is key for infection control, but limited pathogen genetic diversity hinders transmission inference. Conventional phylogenetic approaches use only consensus sequences, which capture only the most prevalent nucleotide and fail to capture low-frequency variation, making it difficult to distinguish transmission pairs with identical genotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C97 establish the problem statement with appropriate citations (C93-C94) and describe current limitations. These are accurate characterizations of the field and provide clear motivation for the study. C96-C97 correctly describe consensus sequence methodology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "63f9be79-9a5e-4ee2-881f-2730d77bf3f7",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The technique is applicable to other infectious diseases and has immediate clinical utility in infection prevention and control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C101 asserts broad applicability and clinical utility but is marked as speculation. While the approach is theoretically applicable to other pathogens with within-host diversity, no data on other pathogens is presented. Clinical utility is demonstrated for SARS-CoV-2 but 'immediate' utility would require validation in clinical settings and integration into existing workflows.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    },
+    {
+      "id": "8381b999-2956-45e2-882e-e3cf8fc309a1",
+      "content_id": "abfe02d8-b75e-4f98-8ff6-eed1e7f3450e",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Accurate transmission inference is critical for infection control. While whole-genome sequencing has improved transmission inference, it remains limited by lack of genomic variation between source and contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C104 restate the problem in the abstract/conclusion. These are supported by general knowledge and appropriately characterize both the advances from sequencing and remaining limitations that motivate the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:21:25.807408Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "caac5de2-354a-4928-af11-d6362db22644",
+      "result_id": "a5246f02-567e-4d3b-a5fc-2c9e318b6df2"
+    },
+    {
+      "claim_id": "52cfcfe6-6781-454f-a65f-00365d5f136f",
+      "result_id": "a5246f02-567e-4d3b-a5fc-2c9e318b6df2"
+    },
+    {
+      "claim_id": "c8c7e89f-6b0e-49ed-af70-063609011e76",
+      "result_id": "a5246f02-567e-4d3b-a5fc-2c9e318b6df2"
+    },
+    {
+      "claim_id": "ae72434e-2b1e-4e65-9590-fa782ec5997a",
+      "result_id": "a5246f02-567e-4d3b-a5fc-2c9e318b6df2"
+    },
+    {
+      "claim_id": "e016f9d6-3cbb-4e82-876b-22c4fb5fb0d1",
+      "result_id": "a5246f02-567e-4d3b-a5fc-2c9e318b6df2"
+    },
+    {
+      "claim_id": "fc00af75-fe0e-406b-8a0d-b6078091bc60",
+      "result_id": "a5246f02-567e-4d3b-a5fc-2c9e318b6df2"
+    },
+    {
+      "claim_id": "12761102-14cf-4a6a-83b5-d725234c7de4",
+      "result_id": "a5246f02-567e-4d3b-a5fc-2c9e318b6df2"
+    },
+    {
+      "claim_id": "47513d00-2b0a-4419-9669-6d4551a20a78",
+      "result_id": "a5246f02-567e-4d3b-a5fc-2c9e318b6df2"
+    },
+    {
+      "claim_id": "fd3f9797-1493-4ced-ac1c-10d2f8e191b5",
+      "result_id": "a5246f02-567e-4d3b-a5fc-2c9e318b6df2"
+    },
+    {
+      "claim_id": "fe0e9b91-eb50-4f9b-a63d-19784cc32c9b",
+      "result_id": "37d2cfe7-3420-4d3b-ac29-490365b99c01"
+    },
+    {
+      "claim_id": "fb00a239-66f3-48c2-9e8e-7cdedc8abcfc",
+      "result_id": "37d2cfe7-3420-4d3b-ac29-490365b99c01"
+    },
+    {
+      "claim_id": "91969711-877b-4bdc-8622-a110ee3abab8",
+      "result_id": "37d2cfe7-3420-4d3b-ac29-490365b99c01"
+    },
+    {
+      "claim_id": "69132049-bd25-4614-b432-642344f795ed",
+      "result_id": "37d2cfe7-3420-4d3b-ac29-490365b99c01"
+    },
+    {
+      "claim_id": "54fef44e-7577-4389-8ac3-d71c57a5c19f",
+      "result_id": "37d2cfe7-3420-4d3b-ac29-490365b99c01"
+    },
+    {
+      "claim_id": "75867d73-7827-495d-a548-2e0d4aec9e22",
+      "result_id": "37d2cfe7-3420-4d3b-ac29-490365b99c01"
+    },
+    {
+      "claim_id": "e61da265-82b3-4505-b0ac-3907a2a71287",
+      "result_id": "dcbf2cf1-58b7-45fa-b687-93c81fe3192d"
+    },
+    {
+      "claim_id": "f53e805e-9c48-40ea-83da-214456052ac0",
+      "result_id": "dcbf2cf1-58b7-45fa-b687-93c81fe3192d"
+    },
+    {
+      "claim_id": "2d168f2c-518d-4d1a-944a-a4164e571dd2",
+      "result_id": "dcbf2cf1-58b7-45fa-b687-93c81fe3192d"
+    },
+    {
+      "claim_id": "f1c92b2c-0406-4f41-b1bd-be00b70e7627",
+      "result_id": "dcbf2cf1-58b7-45fa-b687-93c81fe3192d"
+    },
+    {
+      "claim_id": "afa12993-3f99-4a95-9b09-5cc5209f132f",
+      "result_id": "dcbf2cf1-58b7-45fa-b687-93c81fe3192d"
+    },
+    {
+      "claim_id": "8934ed28-002c-4768-9220-e6ad735c704f",
+      "result_id": "dcbf2cf1-58b7-45fa-b687-93c81fe3192d"
+    },
+    {
+      "claim_id": "d970e53a-2ee8-472b-a79a-aac8216fb6ad",
+      "result_id": "dcbf2cf1-58b7-45fa-b687-93c81fe3192d"
+    },
+    {
+      "claim_id": "d82c3a05-20f1-47b6-8b91-a602b6d9c296",
+      "result_id": "dcbf2cf1-58b7-45fa-b687-93c81fe3192d"
+    },
+    {
+      "claim_id": "156e385c-6af8-41e7-a102-c749af1c8dc3",
+      "result_id": "3d9e9af4-6283-4a11-8d0a-5c55bb33c838"
+    },
+    {
+      "claim_id": "e472ffaf-57eb-49ea-812d-e153f5d73a4c",
+      "result_id": "3d9e9af4-6283-4a11-8d0a-5c55bb33c838"
+    },
+    {
+      "claim_id": "08bd3bf9-bb8e-4f9c-9627-953b7679660b",
+      "result_id": "3d9e9af4-6283-4a11-8d0a-5c55bb33c838"
+    },
+    {
+      "claim_id": "36da3d94-3a37-450f-a7c4-758f8e78b686",
+      "result_id": "3d9e9af4-6283-4a11-8d0a-5c55bb33c838"
+    },
+    {
+      "claim_id": "408624e5-13b6-4249-8c18-ece49054c5ec",
+      "result_id": "3d9e9af4-6283-4a11-8d0a-5c55bb33c838"
+    },
+    {
+      "claim_id": "0a5a4525-ea50-4a30-a38e-fa13d6b56dbb",
+      "result_id": "ea70d552-a2e1-473a-8f84-19b6e4dad50a"
+    },
+    {
+      "claim_id": "5dd40ac6-ceb3-42ec-bdd6-e5bfcb1b84ec",
+      "result_id": "ea70d552-a2e1-473a-8f84-19b6e4dad50a"
+    },
+    {
+      "claim_id": "e5783e71-bd6b-47b4-b20a-d9fe0ad02def",
+      "result_id": "ea70d552-a2e1-473a-8f84-19b6e4dad50a"
+    },
+    {
+      "claim_id": "da2ceee5-b891-4270-8636-14d14ed824cf",
+      "result_id": "ea70d552-a2e1-473a-8f84-19b6e4dad50a"
+    },
+    {
+      "claim_id": "363112fe-daaf-4c70-af1c-52c61ed24011",
+      "result_id": "ea70d552-a2e1-473a-8f84-19b6e4dad50a"
+    },
+    {
+      "claim_id": "abfe649d-4993-4f51-a752-5c1621036c0d",
+      "result_id": "d6528d2b-add6-4d1e-a7bb-fb951dddb184"
+    },
+    {
+      "claim_id": "1bfc7261-d61e-408e-81d3-2822f6b39927",
+      "result_id": "d6528d2b-add6-4d1e-a7bb-fb951dddb184"
+    },
+    {
+      "claim_id": "ca852be9-262a-4164-8115-97d8bcd8d514",
+      "result_id": "d6528d2b-add6-4d1e-a7bb-fb951dddb184"
+    },
+    {
+      "claim_id": "bb637e97-aeba-480e-b690-42c2aed14056",
+      "result_id": "d6528d2b-add6-4d1e-a7bb-fb951dddb184"
+    },
+    {
+      "claim_id": "c9cbf0ff-8748-4a0d-8c1a-799d8a2a46d7",
+      "result_id": "c91c9c30-e3ac-44ec-9040-739cc5d49bc8"
+    },
+    {
+      "claim_id": "39c3d763-de92-4a86-965c-306ba1a92ab4",
+      "result_id": "c91c9c30-e3ac-44ec-9040-739cc5d49bc8"
+    },
+    {
+      "claim_id": "a4222f01-ee64-408a-bffc-cfb79d5e38e4",
+      "result_id": "c91c9c30-e3ac-44ec-9040-739cc5d49bc8"
+    },
+    {
+      "claim_id": "008c811c-4e9c-4c76-8e5d-59eba1c6a4a8",
+      "result_id": "c231341b-0922-467d-9207-55428f1875dd"
+    },
+    {
+      "claim_id": "00620e5a-bb99-420a-8435-0aef74ebcda4",
+      "result_id": "c231341b-0922-467d-9207-55428f1875dd"
+    },
+    {
+      "claim_id": "3174dbbc-f731-4169-8dde-286928d21ac5",
+      "result_id": "077aad4b-37b2-4680-948c-b60d404f8db1"
+    },
+    {
+      "claim_id": "11637fd4-302b-4614-a5f0-aea5d54c353f",
+      "result_id": "077aad4b-37b2-4680-948c-b60d404f8db1"
+    },
+    {
+      "claim_id": "559719de-6952-413c-8d02-53018ed76e98",
+      "result_id": "077aad4b-37b2-4680-948c-b60d404f8db1"
+    },
+    {
+      "claim_id": "8c9b6b29-370d-41ba-b931-6d00d988b50f",
+      "result_id": "077aad4b-37b2-4680-948c-b60d404f8db1"
+    },
+    {
+      "claim_id": "b5481915-aafa-433a-84a0-28849d9f2891",
+      "result_id": "077aad4b-37b2-4680-948c-b60d404f8db1"
+    },
+    {
+      "claim_id": "9cbd5622-b08b-4a7f-bec9-8a9191d6cc82",
+      "result_id": "077aad4b-37b2-4680-948c-b60d404f8db1"
+    },
+    {
+      "claim_id": "9eba2253-a6f9-4ef8-8389-52d019fd05e2",
+      "result_id": "077aad4b-37b2-4680-948c-b60d404f8db1"
+    },
+    {
+      "claim_id": "83115578-bf43-45f5-a103-b1b38293e22e",
+      "result_id": "077aad4b-37b2-4680-948c-b60d404f8db1"
+    },
+    {
+      "claim_id": "88ccbb74-28e5-45fd-9797-c2aa1110b328",
+      "result_id": "077aad4b-37b2-4680-948c-b60d404f8db1"
+    },
+    {
+      "claim_id": "e498393a-cdb3-4d4a-8a2b-34398e207c69",
+      "result_id": "d3bdda15-4c26-41aa-8e45-4bada340d929"
+    },
+    {
+      "claim_id": "00c21705-ef07-4035-bc46-722527fbbe2f",
+      "result_id": "d3bdda15-4c26-41aa-8e45-4bada340d929"
+    },
+    {
+      "claim_id": "4e60c8a6-483d-42d1-a716-3ffdcac1abc8",
+      "result_id": "d3bdda15-4c26-41aa-8e45-4bada340d929"
+    },
+    {
+      "claim_id": "4870e071-ce43-4423-9883-52adeeb3c4ef",
+      "result_id": "d3bdda15-4c26-41aa-8e45-4bada340d929"
+    },
+    {
+      "claim_id": "165f1167-7422-404e-aa29-44e1af0e69e5",
+      "result_id": "d3bdda15-4c26-41aa-8e45-4bada340d929"
+    },
+    {
+      "claim_id": "cff87bd4-a498-45ca-b85f-7e25e3cb2d4d",
+      "result_id": "9cc29134-e77d-4bff-bbd7-4659c1fc0a55"
+    },
+    {
+      "claim_id": "bdb82153-c3f2-4458-b297-8a26981632f4",
+      "result_id": "9cc29134-e77d-4bff-bbd7-4659c1fc0a55"
+    },
+    {
+      "claim_id": "14e3c77c-f2e5-4902-806a-79d32ea068a0",
+      "result_id": "9cc29134-e77d-4bff-bbd7-4659c1fc0a55"
+    },
+    {
+      "claim_id": "64626122-c0a8-4c79-994e-3c2d7d7c4a69",
+      "result_id": "b75747b1-dd11-471b-b3dc-d4646e11a158"
+    },
+    {
+      "claim_id": "7ee58799-eb09-4b35-907c-67442e920e3e",
+      "result_id": "b75747b1-dd11-471b-b3dc-d4646e11a158"
+    },
+    {
+      "claim_id": "d512b332-9d8b-41dc-91f9-56047cefeb65",
+      "result_id": "b75747b1-dd11-471b-b3dc-d4646e11a158"
+    },
+    {
+      "claim_id": "c1f7b861-0dd7-49f8-8fe1-240b4ac026ff",
+      "result_id": "b75747b1-dd11-471b-b3dc-d4646e11a158"
+    },
+    {
+      "claim_id": "33adcb58-aae0-42aa-9325-63e0830698ae",
+      "result_id": "b75747b1-dd11-471b-b3dc-d4646e11a158"
+    },
+    {
+      "claim_id": "3771dc2c-ac80-44d1-a1e0-182757f25e45",
+      "result_id": "a7fad9c3-f88f-4897-a6e4-2d36d0466c9a"
+    },
+    {
+      "claim_id": "32cdcd24-1e04-4c2b-ab5a-5da117db2e68",
+      "result_id": "a7fad9c3-f88f-4897-a6e4-2d36d0466c9a"
+    },
+    {
+      "claim_id": "c83d17ac-0e48-459c-837a-41603e79c8ef",
+      "result_id": "a7fad9c3-f88f-4897-a6e4-2d36d0466c9a"
+    },
+    {
+      "claim_id": "d76f8eae-c998-4efe-939a-1445efb34064",
+      "result_id": "a7fad9c3-f88f-4897-a6e4-2d36d0466c9a"
+    },
+    {
+      "claim_id": "d61b7291-fc82-447d-9f98-8390bad95a5b",
+      "result_id": "fe6f5a6c-651c-402a-8174-dc5c7c62b3d2"
+    },
+    {
+      "claim_id": "b779f883-b76c-4fca-92d4-d7aa05fea311",
+      "result_id": "fe6f5a6c-651c-402a-8174-dc5c7c62b3d2"
+    },
+    {
+      "claim_id": "fc9c2cae-5fae-498d-8a41-0a7f85d322f5",
+      "result_id": "d3d36233-3ec2-4014-948f-ab2004dc02d2"
+    },
+    {
+      "claim_id": "654a6517-2979-4cc0-83e8-6fde2b779d42",
+      "result_id": "d3d36233-3ec2-4014-948f-ab2004dc02d2"
+    },
+    {
+      "claim_id": "70285c4b-01d5-4ef2-b187-e5e06bdf4bd3",
+      "result_id": "d3d36233-3ec2-4014-948f-ab2004dc02d2"
+    },
+    {
+      "claim_id": "367d69e6-782f-4b1a-b7bd-b601d6f8d47e",
+      "result_id": "d3d36233-3ec2-4014-948f-ab2004dc02d2"
+    },
+    {
+      "claim_id": "59c91012-96f3-4fd7-8dfc-1ca8d117edf3",
+      "result_id": "57b91792-d66c-4e5b-9876-fe9e285e94ef"
+    },
+    {
+      "claim_id": "45ab1d32-5924-4bd1-93d2-5091f7cf8398",
+      "result_id": "57b91792-d66c-4e5b-9876-fe9e285e94ef"
+    },
+    {
+      "claim_id": "9e08addd-7001-4ac6-9d1b-586d6da370f1",
+      "result_id": "57b91792-d66c-4e5b-9876-fe9e285e94ef"
+    },
+    {
+      "claim_id": "31cb95b1-9062-4d90-96ef-62bf4c40dc19",
+      "result_id": "c74ffdba-9152-4f90-9d2e-842c2913c10b"
+    },
+    {
+      "claim_id": "c8beac2f-f8e0-4f79-b0f4-d226b460feec",
+      "result_id": "c74ffdba-9152-4f90-9d2e-842c2913c10b"
+    },
+    {
+      "claim_id": "cfa93839-6c34-4040-ae99-72ae326a6665",
+      "result_id": "c74ffdba-9152-4f90-9d2e-842c2913c10b"
+    },
+    {
+      "claim_id": "8f557953-7505-4e45-b995-87dbf4431b4f",
+      "result_id": "c74ffdba-9152-4f90-9d2e-842c2913c10b"
+    },
+    {
+      "claim_id": "832fb82b-319f-4eb1-bfbb-3c2b354ae5e3",
+      "result_id": "c74ffdba-9152-4f90-9d2e-842c2913c10b"
+    },
+    {
+      "claim_id": "69a152b7-25fb-4e9c-bdfa-701d5c34e7dc",
+      "result_id": "c74ffdba-9152-4f90-9d2e-842c2913c10b"
+    },
+    {
+      "claim_id": "d018330e-1714-4478-9b68-073d4482f2c0",
+      "result_id": "c74ffdba-9152-4f90-9d2e-842c2913c10b"
+    },
+    {
+      "claim_id": "d4ba57d9-a2d6-4ae7-9b45-c50d7f20289b",
+      "result_id": "136b57aa-2720-4c61-ac49-6d2d344deea2"
+    },
+    {
+      "claim_id": "5954a7d9-2fba-4d09-84db-e44a53df60c3",
+      "result_id": "136b57aa-2720-4c61-ac49-6d2d344deea2"
+    },
+    {
+      "claim_id": "ab33e5d1-e056-4440-9bd9-11858ea758c7",
+      "result_id": "136b57aa-2720-4c61-ac49-6d2d344deea2"
+    },
+    {
+      "claim_id": "4bfd44c8-0f82-43f1-af0f-d80ade4f3f81",
+      "result_id": "a06880f0-5b65-48d2-b5fe-24e788569770"
+    },
+    {
+      "claim_id": "fb39696f-2d99-41d4-9103-bb892aba4dd8",
+      "result_id": "a06880f0-5b65-48d2-b5fe-24e788569770"
+    },
+    {
+      "claim_id": "07ede86e-8de6-4306-b8c4-fb4294ab970b",
+      "result_id": "a06880f0-5b65-48d2-b5fe-24e788569770"
+    },
+    {
+      "claim_id": "d2789722-345d-4a9d-9c10-0a223140f155",
+      "result_id": "b33260e8-fda2-4e48-bec1-5beb71e687bf"
+    },
+    {
+      "claim_id": "5b38aeb9-8101-40b2-a8c1-e5e84881bbcd",
+      "result_id": "b33260e8-fda2-4e48-bec1-5beb71e687bf"
+    },
+    {
+      "claim_id": "2d09c7c9-4fed-4ad5-98c3-de894ce8d05c",
+      "result_id": "b33260e8-fda2-4e48-bec1-5beb71e687bf"
+    },
+    {
+      "claim_id": "eef1987a-27bf-4a71-aa72-bdd98cc271f7",
+      "result_id": "b33260e8-fda2-4e48-bec1-5beb71e687bf"
+    },
+    {
+      "claim_id": "011738c6-cbaa-4efd-95d5-ccea0cce2800",
+      "result_id": "b33260e8-fda2-4e48-bec1-5beb71e687bf"
+    },
+    {
+      "claim_id": "91a9f38a-1481-4bfe-b33b-ee678a3efb8e",
+      "result_id": "63f9be79-9a5e-4ee2-881f-2730d77bf3f7"
+    },
+    {
+      "claim_id": "a3f884ef-e96d-4d12-ba61-13d7d61a448c",
+      "result_id": "8381b999-2956-45e2-882e-e3cf8fc309a1"
+    },
+    {
+      "claim_id": "e056b7f1-740b-490c-a266-831e20c9205e",
+      "result_id": "8381b999-2956-45e2-882e-e3cf8fc309a1"
+    },
+    {
+      "claim_id": "42b0a54c-835a-4991-9358-57712107781a",
+      "result_id": "8381b999-2956-45e2-882e-e3cf8fc309a1"
+    }
+  ],
+  "comparisons": []
+}

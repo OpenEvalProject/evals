@@ -1,0 +1,144 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors demonstrate that collectively migrating epithelia exhibit multiscale hexanematic order, with nematic (p=2) order dominant at large length scales and hexatic (p=6) order dominant at small length scales. This multiscale organization leaves distinct signatures in the structure factor (two power-law scaling regimes) and cross-correlation functions, arising from the inherent coupling between shape and forces in active liquid crystals with coupled order parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C26-C28, C30, C37-C39 collectively provide strong theoretical and computational evidence for multiscale hexanematic order. The hydrodynamic theory (C26-C27) predicts this behavior, which is validated through analytical calculations of structure factors (C4-C5, C28, C30) and cross-correlation functions (C37-C39), and confirmed by numerical simulations of two independent cell-resolved models (SPV and MPF). The convergence of theoretical predictions with computational results from multiple models provides robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The hydrodynamic theory entails two characteristic length scales: \u2113\u2082 (active nematic length scale) and \u2113\u2086 (hexatic domain size), which reflect the distances at which passive torques from entropic elasticity counterbalance active stresses. These length scales determine the spatial organization of nematic and hexatic orders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are well-supported by the mathematical derivation in Equation 7 and the theoretical framework. The existence of these length scales follows logically from the balance between active stresses (\u03b1\u2082, \u03b1\u2086) and elastic constants (L\u2082, L\u2086). The active nematic length scale \u2113\u2082 is well-established in prior literature (C56), and the hexatic length scale \u2113\u2086 follows from analogous reasoning (C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "The first term in the active stress expression (Equation 3) results from contractile or extensile forces exerted at the length scale of individual cells, arising from p-fold symmetric force complexions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by the detailed theoretical derivation in Equations 4-5, which explicitly connects the microscopic force complexion at cell vertices to the macroscopic active stress tensor. The derivation shows how p-fold symmetric forces at the cellular scale contribute to the phenomenological parameter \u03b1_p, providing a clear physical interpretation grounded in force balance at cell junctions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Previous hydrodynamic models of epithelia, based on tensorial order parameters of rank two or less, can account at most for twofold rotational symmetry (nematic order) while leaving small-scale hexatic order unresolved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 are supported by mathematical reasoning about the limitations of rank-2 tensors and citations to prior work (C22-C23). The argument is logically sound: rank-2 tensors can only capture p=2 symmetry, making it mathematically impossible to represent p=6 hexatic order. This limitation is a fundamental consequence of tensor algebra and provides clear motivation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C8"
+    ],
+    "result": "Recent in vitro experiments on MDCK cell layers have demonstrated that epithelial layers feature both nematic and hexatic orders, with nematic order dominant at large scales and hexatic order at short scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20 and C8 are supported by citations to recent experimental studies (Armengol-Collado et al., 2023; Eckert et al., 2023) and illustrated in Figure 1. These experimental observations provide the empirical foundation motivating the theoretical framework developed in this manuscript. The claims accurately represent prior experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Large-scale nematic order could arise from self-organization of microscopic force hexapoles into force chains, similar to granular materials. This mechanism may be relevant to processes like apical constriction during Drosophila gastrulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C41 are speculative interpretations based on analogy with granular materials and cited developmental biology observations. While the analogy is plausible and supported by citations, the manuscript explicitly states this origin 'is still a matter of investigation' and provides no direct evidence for this mechanism. The claims represent reasonable hypotheses requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Hexatic order may be relevant for short-scale remodeling events such as cell intercalations and multicellular rosette rearrangements, while nematic order may coordinate large-scale persistent unidirectional flow during wound healing and cancer progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C44 are explicitly speculative predictions ('we expect', 'may mediate', 'may be coordinated') about biological consequences of multiscale order. While these predictions are plausible given the properties of hexatic and nematic orders, the manuscript provides no experimental or computational evidence demonstrating these specific biological functions. These represent testable hypotheses for future work rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C21",
+      "C22",
+      "C23",
+      "C45",
+      "C46"
+    ],
+    "result": "Background claims establishing the biological context of collective cell migration, the role of cell-resolved models, properties of hexatic phases in model epithelia, and connections to epithelial-mesenchymal phenotypic plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C23, C45-C46 are well-supported by extensive citations to established literature and represent accepted knowledge in the field. These claims provide essential context for the manuscript's contributions but do not constitute novel findings. The citations are appropriate and the characterizations of prior work appear accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C69",
+      "C71"
+    ],
+    "result": "The self-propelled Voronoi (SPV) model approximates confluent cell layers as Voronoi tessellations with dynamics governed by overdamped Langevin equations, while the multiphase field (MPF) model has been used to study confluent monolayer dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C69, C71 accurately describe established computational models with appropriate citations (Bi et al., 2016; Loewe et al., 2020; Monfared et al., 2021). These descriptions are consistent with the cited literature and provide necessary methodological context for the numerical validation presented in the manuscript.",
+    "result_type": "MINOR"
+  }
+]

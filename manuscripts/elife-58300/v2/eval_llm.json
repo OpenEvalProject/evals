@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Single-cell RNA sequencing of endothelial cells (ECs) from zebrafish embryos at multiple developmental stages revealed that tissue-specific EC programs, including somite-derived ECs (SDECs), brain vascular ECs (BVECs), kidney vascular ECs (KVECs), and hemogenic endothelium (HE), are specified as early as the tailbud stage (end of gastrulation), much earlier than previously appreciated. Eight distinct EC clusters were identified at 22-24 hpf, with SDECs showing enrichment for paraxial mesoderm signature genes validated against the AmiGO annotation database.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The scRNA-seq analysis is well-documented with appropriate quality control (C38-C39), unsupervised clustering methods, and validation through comparative analysis with annotated gene databases (C48-C49). The temporal analysis across multiple developmental stages (tailbud, 12ss, 15ss, 22-24 hpf) provides strong evidence for early EC specification (C51-C54). The identification of distinct clusters is supported by marker gene expression and GO analysis (C55-C58), though the study would benefit from additional functional validation of the early specification timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C28",
+      "C29",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "SDECs emerge from trunk somites (numbers 5-18) located above the yolk tube extension, with each somite pair contributing 0-6 SDECs that migrate and incorporate exclusively into rostral regions of the dorsal aorta. Photoconversion experiments using Tg(actb2:nls-Eos) demonstrated that anterior somites (anterior to somite 4) rarely generate SDECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The photoconversion lineage tracing approach provides direct evidence for somite-specific SDEC contribution (C60-C62). The quantification is rigorous with n\u22656 per somite pair, and the spatial restriction to trunk somites is clearly demonstrated. The observation of SDECs in the roof of the DA (C63) is consistent with prior reports (Zhao et al., 2022), adding credibility. However, the exclusive contribution to 'rostral regions' (C29) appears to conflict with later data showing preferential contribution to 'trunk regions' (C107, C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Within the somite, EC-fate acquisition occurs sequentially starting at 12 somite stage (ss), concomitant with somite epithelialization. Time-lapse imaging revealed that etv2:eGFP+ cells first appear in the lateral lip of the dermomyotome at 12ss, then delaminate and integrate with LPM-derived ECs migrating to the midline. Double FISH showed colocalization of etv2 with the muscle progenitor marker pax3a but not with the differentiated muscle marker myod, indicating SDECs emerge from bipotent precursors shared with the muscle lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The time-lapse imaging provides direct visualization of SDEC emergence and migration (C65-C68), and the FISH experiments (C69-C70) offer molecular evidence for the bipotent progenitor hypothesis. The localization to the dermomyotome (C72) is consistent with findings in other vertebrates (C73), supporting evolutionary conservation. The sequential timing is well-documented, though the study would benefit from additional markers to definitively establish bipotency beyond colocalization data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Knockdown of meox1, a regulator of muscle cell formation, led to ectopic expression of etv2 in somites, increased SDEC numbers (3-4 etv2+ cells per somite vs 1-2 in controls), and prolonged SDEC generation extending to 23 hpf (vs normal cessation by ~16ss). This demonstrates that SDECs arise from bipotent precursors within the somite, with meox1 normally restricting EC fate in favor of muscle differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The meox1 knockdown experiments provide strong functional evidence for the bipotent progenitor model (C74-C78). The quantification is clear (n=3), and the phenotype is robust with both increased SDEC numbers and prolonged generation window. However, the study relies on morpholino knockdown rather than genetic mutants, which can have off-target effects. The conclusion about bipotency would be strengthened by rescue experiments or genetic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Notch signaling, specifically through notch3, is required for maintenance of pax3+/pax7+ skeletal muscle progenitors but is dispensable for SDEC specification. Loss of notch3 resulted in decreased muscle progenitor markers (pax3a, pax7b), increased muscle differentiation markers (myod, myog), increased endothelial markers (etv2, fli1a), and premature expression of myoHII. Combined loss of notch3 and meox1 led to ectopic formation of etv2+/meox1+ double-positive cells, indicating premature differentiation of both muscle and SDEC fates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The use of genetic mutants (notch3-/-) rather than morpholinos strengthens these conclusions (C80-C84). The qRT-PCR data (C82-C83) and immunofluorescence (C84) provide complementary molecular and protein-level evidence. The epistasis experiments with combined notch3 loss and meox1 knockdown (C81) are particularly informative. The interpretation that Notch maintains progenitors rather than specifying fate is well-supported by the data and consistent with prior literature (Relaix et al., 2005; Zhang et al., 2021).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "npas4l (cloche) is required for specification of all EC subsets including SDECs. In cloche mutants, etv2 expression was completely absent along the embryonic axis, and knockdown of meox1 or combined knockdown of meox1 and mib failed to rescue SDEC generation. qRT-PCR showed loss of endothelial genes (fli1, etv2) and increased muscle differentiation genes (myod, myogenin) in cloche mutants, suggesting npas4l also negatively regulates muscle differentiation in bipotent progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The use of genetic mutants (Clos9/s9) provides strong evidence for npas4l requirement (C87-C88). The epistasis experiments attempting to rescue SDEC formation by manipulating downstream factors (C89, C91-C92) are well-designed and support the conclusion that npas4l acts upstream. The qRT-PCR data (C93-C94) showing reciprocal changes in endothelial and muscle genes supports the dual role hypothesis (C96). However, the negative regulatory role in muscle differentiation is somewhat speculative and would benefit from additional mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Wnt signaling compartmentalizes SDEC formation to the lateral region of the somite. FISH showed Wnt signaling (TCF:d2GFP) is active in meox1+ cells at 12ss. Inhibition of Wnt signaling with IWP-L6 led to decreased axin2 expression, increased etv2 expression, ectopic etv2:eGFP+ cells in somites, and decreased meox1 expression by WISH. This demonstrates Wnt signaling restricts EC formation to the lateral dermomyotome while promoting meox1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Wnt reporter line provides direct evidence of pathway activity during SDEC specification (C99). The pharmacological inhibition experiments are well-controlled with qRT-PCR validation of pathway inhibition (C100). The phenotypes are clear with both ectopic etv2+ cells (C102) and reduced meox1 expression (C103). However, the slight reduction in meox1 by qRT-PCR was not statistically significant (C101), which somewhat weakens the conclusion about Wnt's role in meox1 regulation. The WISH data (C103) provides supporting evidence but is less quantitative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C35",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "SDECs integrate into the dorsal aorta but lack hematopoietic potential. Lineage tracing using tbx6:Gal4; Tg(UAS-Cre); kdrl:CSY showed YFP+ SDECs localized preferentially to the trunk region of the dorsal aorta at 4 dpf, complementary to drl-derived (LPM) ECs which contributed more robustly to posterior regions. Analysis of adult kidney marrow from tbx6:Gal4; Tg(UAS-Cre); A2BD animals showed no contribution of DsRed+ switched cells to any hematopoietic lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The indelible lineage tracing approach using Cre-lox systems provides strong evidence for SDEC fate (C106-C112). The complementary use of PM-specific (tbx6) and LPM-specific (drl) drivers strengthens the conclusions about spatial contribution patterns (C107-C109). The adult kidney analysis (C111) definitively demonstrates lack of hematopoietic potential with appropriate positive controls (kdrl:Cre; A2BD). However, there is an internal inconsistency: C29 claims SDECs contribute to 'rostral regions' while C107 and C110 state 'trunk region' - this needs clarification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C36",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "SDECs act as a developmental niche to support HSPC emergence from neighboring hemogenic endothelium. Differential expression analysis identified genes in SDECs previously attributed to niche functions for hemogenic endothelium induction. Functionally, increasing SDEC numbers via etv2 overexpression or meox1 knockdown led to increased runx1+ expression by WISH, while decreasing SDECs via meox1 overexpression led to loss of runx1+ and gata2b+ hematopoietic cells in the dorsal aorta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential expression analysis identifying niche-associated genes (C113) provides molecular support for the niche hypothesis, though the specific genes are not detailed in the claims. The functional experiments manipulating SDEC numbers (C115-C116) provide strong evidence for a supportive role, with clear phenotypes in hematopoietic marker expression. However, the experiments are correlative rather than mechanistic - they show that SDEC number affects HSPC markers but don't identify the specific signals involved. The conclusion of 'paracrine' support (C117) is reasonable but somewhat speculative without identification of specific secreted factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The manuscript establishes context by reviewing established knowledge about endothelial cell development, including that HSPCs arise from ventral aortic endothelium across vertebrates, that arterial and venous precursors arise from distinct LPM subsets in zebrafish, that EC differentiation initiates during somitogenesis, and that paraxial mesoderm can generate SDECs in amniotes. Prior work in zebrafish (Nguyen et al., 2014) suggested SDECs from an 'endotome' may help induce HSPCs, while bird studies suggested SDECs only replace hemogenic endothelium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent appropriate contextualization of prior work with proper citations. The authors accurately represent the current understanding in the field and identify the gap their work addresses. The distinction between findings in birds (C26) versus zebrafish (C27) regarding SDEC function sets up the rationale for their investigation. No critical evaluation of these background claims is needed as they serve to establish context rather than present new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "The authors conclude that at least three subsets of ECs contribute to the developing dorsal aorta (vascular ECs, hemogenic ECs, and SDECs) and that distinct spatial origins of endothelial precursors dictate different cellular potentials within the developing dorsal aorta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are summary conclusions well-supported by the collective data presented in the manuscript. The identification of three EC subsets (C8) is directly supported by the scRNA-seq, lineage tracing, and functional studies. The conclusion about spatial origins dictating cellular potential (C9) is supported by the demonstration that SDECs from paraxial mesoderm have different properties (no hematopoietic potential, niche function) compared to LPM-derived ECs. These represent appropriate synthesis of the major findings.",
+    "result_type": "MAJOR"
+  }
+]

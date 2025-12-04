@@ -1,0 +1,430 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "TPR-dependent senescence-specific accessible chromatin regions (SEN+TPR+) are enriched near SASP genes and contain NF-\u03baB binding motifs. Of 6826 senescence-dependent accessible chromatin peaks at day 8, 1187 are TPR-dependent, located near key SASP genes like IL1B and IL8, and enriched for NF-\u03baB and C/EBP\u03b2 binding motifs but not in TPR-independent peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C43 are well-supported by ATAC-seq data (Figure 1C-E), GO analysis (Figure 1\u2014figure supplement 1C), and HOMER motif analysis showing specific enrichment of inflammatory transcription factor binding sites in TPR-dependent peaks. The data consistently demonstrate that TPR is required for chromatin accessibility at SASP gene regulatory elements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Both TPR-dependent and TPR-independent senescence-specific peaks show increased H3K27 acetylation, suggesting they function as senescence-specific enhancers regardless of TPR dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by analysis of published ChIP-seq data (Figure 1\u2014figure supplement 1B) showing H3K27ac enrichment at both peak categories. The inference that these regions function as enhancers is reasonable given the H3K27ac mark is associated with active enhancers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "TPR knockdown at day 8 of OIS blocks SAHF formation and reduces NF-\u03baB nuclear localization and activation. NF-\u03baB remains cytoplasmic in control cells but translocates to the nucleus in senescent RAS cells with visible SAHF. TPR knockdown decreases NF-\u03baB phosphorylation, IKK phosphorylation, and total IKK\u03b1 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C59 are well-supported by immunofluorescence (Figure 2A-B), immunoblotting (Figure 2C-D), and quantification data showing consistent effects across biological replicates. The data demonstrate both nuclear translocation defects and decreased signaling pathway activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "TPR knockdown does not affect NF-\u03baB nuclear import capability. When cells are exposed to conditioned media containing SASP factors, NF-\u03baB translocates to the nucleus normally even after TPR knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by conditioned media experiments (Figure 2E-F) showing that TPR knockdown does not prevent NF-\u03baB nuclear translocation when cells are exposed to exogenous SASP factors. This demonstrates TPR's effect is upstream of nuclear import machinery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "TPR is required for early NF-\u03baB activation at days 3 and 5 of OIS, before SASP induction. Nuclear NF-\u03baB intensity increases in RAS cells at d3 and d5, and TPR knockdown significantly reduces this intensity, though nucleocytoplasmic ratio changes are minimal at these early timepoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 are supported by immunofluorescence quantification (Figure 3C-D) showing increased nuclear NF-\u03baB intensity in RAS cells that is reduced by TPR knockdown. The lack of nucleocytoplasmic ratio changes is appropriately interpreted as these timepoints being too early for significant translocation, while intensity changes reflect early activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "TPR knockdown decreases NF-\u03baB phosphorylation (S536) and IKK phosphorylation at days 3 and 5 of OIS without affecting total IKK\u03b1 levels at these early timepoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by immunoblotting data (Figure 3E-F) showing decreased phosphorylation of both NF-\u03baB and IKK upon TPR knockdown at early timepoints, with no change in total IKK\u03b1. This demonstrates TPR affects pathway activation rather than protein expression at early stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "TPR affects NF-\u03baB activation at early stages (d3-d5) without affecting chromatin accessibility at SASP gene regulatory elements. No TPR-dependent senescence-specific ATAC-seq peaks were identified at day 3, though some d8 senescence-specific peaks show enhanced accessibility at d3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C125-C128 are supported by ATAC-seq data at day 3 (Figure 3\u2014figure supplement 2A-C) showing no TPR-dependent changes in chromatin accessibility despite effects on NF-\u03baB activation. This temporal separation demonstrates TPR acts upstream of chromatin remodeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "TPR knockdown preferentially affects intronless genes and histone genes. Of downregulated genes, 14% (STOP) or 13% (RAS) are intronless, including 3 histone genes in STOP cells and 6 in RAS cells. TPR was the most significantly downregulated gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by RNA-seq analysis (Figure 4\u2014figure supplement 1A-C) with appropriate statistical testing (Fisher's exact test). The enrichment of intronless and histone genes is consistent with TPR's known role in mRNA export via TREX-2 complex.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "STING1 shows the most significant RAS-specific decrease in expression upon TPR knockdown. Reduced STING1 mRNA at day 3 was validated by RT-qPCR, and decreased STING protein was consistently detected by day 5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by RNA-seq (Figure 4A), RT-qPCR validation (Figure 4B), and immunoblotting (Figure 4C). The temporal delay between mRNA and protein changes is appropriately noted and explained by protein stability considerations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "cGAMP levels are significantly elevated in RAS compared to STOP cells. TPR knockdown in RAS cells appeared to decrease cGAMP, though this did not reach statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C90 is supported by ELISA data (Figure 4D) showing significant elevation in RAS cells. However, C91 explicitly states the decrease upon TPR knockdown did not reach statistical significance, making the biological relevance uncertain. Additional replicates or alternative assays would strengthen this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "TPR knockdown decreases TBK1 phosphorylation at day 5 of OIS, consistent with blunted STING activation likely involving cGAS-dependent cytosolic DNA sensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by immunoblotting data (Figure 4E) showing decreased TBK1 phosphorylation. The inference about cGAS-STING pathway involvement is reasonable given the STING expression and cGAMP data, though the cGAMP result was not statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Transposable element RNA abundance (including HERV and LINE1) is higher in RAS compared to STOP cells, but shows no significant changes upon TPR knockdown in either cell line, suggesting transposable element expression does not drive the decrease in innate immune signaling upon TPR knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by RNA-seq analysis of transposable elements (Figure 4\u2014figure supplement 1F). The inference that transposable elements are not responsible for the TPR effect is logical given the lack of change upon knockdown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "TPR knockdown decreases cytoplasmic chromatin fragment (CCF) frequency during OIS. The decrease is apparent by day 3 but only reaches statistical significance at day 5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 are supported by quantification of CCF frequency (Figure 5A) across multiple biological replicates with appropriate statistical testing. The temporal progression from trend to significance is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C120",
+      "C124"
+    ],
+    "result": "CCFs are enriched for heterochromatin marks (H3K9me3, H3K27me3) and \u03b3-H2AX but lack nuclear pore components (POM121, TPR), suggesting CCFs lack nuclear pores in their envelope.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C20, C120, C124 are supported by immunofluorescence data (Figure 5B-E) showing presence of heterochromatin marks and \u03b3-H2AX but absence of nuclear pore proteins. The quantification (Figure 5D-E) confirms the lack of POM121 and TPR in CCFs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C109",
+      "C110"
+    ],
+    "result": "HMGA1 is required for both SAHF formation and CCF formation during OIS. HMGA1 knockdown leads to significant loss of SAHF (greater than TPR knockdown) and decreased CCF frequency at day 5 similar to TPR knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C109, C110 are supported by immunofluorescence and quantification (Figure 5F-H) showing HMGA1 knockdown effects on both SAHF and CCF formation. The comparison to TPR knockdown effects is appropriate and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C111",
+      "C114"
+    ],
+    "result": "The decrease in CCF formation upon TPR or HMGA1 knockdown is linked to heterochromatin reorganization (SAHF formation) rather than nuclear pore basket changes per se. The authors propose this is caused by increased nuclear periphery stability due to heterochromatin remaining there when SAHF are not formed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C111, C114 represent a mechanistic inference supported by the observation that both TPR and HMGA1 (which have different cellular localizations) are required for both SAHF and CCF formation. The proposed mechanism involving heterochromatin-mediated nuclear stability is reasonable given cited literature (C112-C113) but remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C115",
+      "C133"
+    ],
+    "result": "TPR is required for very early NF-\u03baB activation during OIS stress response, prior to SASP activation and without affecting NF-\u03baB nuclear import. TPR acts upstream of NF-\u03baB by affecting innate immune signaling (STING, TBK1) linked to CCF formation, leading to loss of nuclear integrity and activation of cytoplasmic nucleic acid sensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6, C115, C133 represent the main conclusions of the paper, supported by the convergence of multiple lines of evidence: early NF-\u03baB activation defects (Figure 3), conditioned media experiments ruling out import defects (Figure 2E-F), decreased STING/TBK1 activation (Figure 4), and reduced CCF formation (Figure 5). The mechanistic model is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "The mechanism of CCF formation is distinct from micronuclei formation. CCFs either form from nuclear membrane between NPCs or NPCs are rapidly lost from CCFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 are supported by the absence of nuclear pore components in CCFs (Figure 5C-E) contrasting with literature showing NPCs in micronuclei. The two proposed mechanisms are reasonable alternatives, though the data cannot distinguish between them.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C129"
+    ],
+    "result": "Both TPR-dependent and TPR-independent senescence peaks are enriched for AP-1 binding motifs, suggesting AP-1's role as a pioneer transcription factor in shaping the senescence regulatory landscape is unaffected by TPR knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46, C129 are supported by HOMER motif analysis (Figure 1E, Figure 3\u2014figure supplement 2D) showing AP-1 enrichment in both peak categories at both d8 and d3. The inference about AP-1's pioneer role is supported by citation to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background claims about senescence biology: heterochromatin reorganization during OIS, SASP characteristics and functions, transcriptional regulation by NF-\u03baB and C/EBP\u03b2, CCF formation and sensing, and prior work on TPR and HMGA1 roles in SAHF and SASP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C26 represent established knowledge from prior literature, appropriately cited throughout. These provide necessary context for the current work and are well-supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background on TPR protein structure, nuclear pore assembly, and nucleoporin functions in transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 represent established knowledge about TPR and nucleoporins, appropriately cited. These provide necessary background for understanding TPR's potential mechanisms of action.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C55",
+      "C65",
+      "C66",
+      "C87",
+      "C88",
+      "C92",
+      "C93",
+      "C116",
+      "C117"
+    ],
+    "result": "Background on NF-\u03baB signaling pathway, SASP feedback loops, cGAS-STING pathway, and cytoplasmic DNA sensing mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49, C55, C65-C66, C87-C88, C92-C93, C116-C117 represent established knowledge about signaling pathways, appropriately cited. These provide necessary mechanistic context for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C96",
+      "C97"
+    ],
+    "result": "Background on TPR's role in mRNA export and retrotransposon activation in senescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80, C96-C97 represent established knowledge about TPR function and retrotransposon biology in senescence, appropriately cited. These provide context for interpreting the RNA-seq results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C112",
+      "C113",
+      "C118",
+      "C119",
+      "C123"
+    ],
+    "result": "Background on CCF and micronuclei characteristics, lamin B1 dynamics, HMGA1 properties, and heterochromatin mechanical properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108, C112-C113, C118-C119, C123 represent established knowledge from prior literature, appropriately cited. These provide necessary context for interpreting CCF formation mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C39",
+      "C130",
+      "C131"
+    ],
+    "result": "TPR-independent peaks show proximity to chemokine receptor genes, and d3 RAS-specific peaks are near genes involved in SAHF regulation and TGF-\u03b2/NOTCH1 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C130-C131 are supported by GO analysis (Figure 1\u2014figure supplement 1D, Figure 3\u2014figure supplement 2E). These findings provide additional context about the chromatin landscape changes during senescence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C132"
+    ],
+    "result": "TPR loss at day 8 prevents chromatin opening at putative SASP gene enhancers enriched in NF-\u03baB binding motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C132 is supported by ATAC-seq data (Figure 1C-E) showing decreased accessibility at NF-\u03baB motif-enriched peaks upon TPR knockdown at d8. This represents a key finding linking TPR to chromatin accessibility at SASP enhancers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "cGAS-independent STING activation has been reported in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is a literature citation providing context for interpreting the cGAMP results. It is appropriately cited and relevant to the discussion.",
+    "result_type": "MINOR"
+  }
+]

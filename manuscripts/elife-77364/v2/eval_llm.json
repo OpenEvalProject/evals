@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C81",
+      "C82",
+      "C90",
+      "C92"
+    ],
+    "result": "Anterograde AAV tracing from ACA revealed no projections to hippocampus proper (CA1-3, DG, or subiculum), despite showing expected projections to other brain regions including claustrum, retrosplenial cortex, thalamic nuclei, and striatum. This finding was consistent across multiple injection coordinates, including those matching prior published work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C21-C26, C81, C82, C90, and C92 collectively demonstrate that anterograde AAV tracing from ACA consistently failed to reveal hippocampal projections across multiple experiments (n=30 mice) while successfully labeling expected projection targets. The positive controls (C25, C67-C68) validate the technical success of the approach, and the findings align with other published studies (C82). The use of multiple injection coordinates and optimization attempts strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Monosynaptic rabies tracing from both dorsal and ventral CA1 pyramidal cells (n=6 dCA1, n=4 vCA1) revealed no evidence of direct inputs from ACA or any other prefrontal region, while successfully detecting expected inputs from entorhinal cortex, subiculum, medial septum, and amygdala (vCA1 only).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C27-C34, and C69 demonstrate that the intersectional rabies tracing approach (C70) successfully identified known hippocampal inputs as positive controls (C29-C33) while failing to detect any prefrontal inputs. The authors acknowledge potential limitations regarding sparse projections or interneuron-targeting projections (C71), but argue the approach substantially reduces false positives (C72). The positive controls validate the technical approach, supporting the negative finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Classical retrograde tracing using Fast Blue dye from dorsal CA1 (n=4 successful injections) revealed no labeled cells in prefrontal cortices (ACC, PL, IL), while successfully labeling neurons in medial septum, dorsal subiculum, and entorhinal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C64-C66 demonstrate that Fast Blue retrograde tracing confirmed the absence of ACA-to-hippocampus projections while successfully detecting known hippocampal inputs (C65). The inclusion of positive controls and careful selection of injections restricted to CA1 (excluding cases with spillover) strengthens the conclusion. This classical tracer approach complements the viral tracing methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Systematic analysis of Allen Mouse Brain Connectivity Atlas data (31 cases with 100% ACA injections) revealed no evidence of ACA projections to hippocampal CA1-3, DG, or subiculum. Statistical comparisons showed no significant differences between CA1/CA3 signal and control regions (DG, CA2), while cingulum bundle showed robust labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C35-C54 provide comprehensive statistical analysis of Allen Atlas data demonstrating absence of ACA-to-hippocampus projections. The statistical tests (C42-C49) appropriately compare target regions with control regions that should not receive ACA inputs. The presence of signal in cingulum bundle (C51-C53) serves as a positive control for tracer transport. The analysis of background signal (C40-C41) and direction of any differences (C50) further support the negative finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Retrograde AAV injections into dorsal CA1 resulted in widespread off-target labeling including prefrontal cortex (ACA), anterior thalamic nuclei, and claustrum\u2014regions that do not project to hippocampus proper. This off-target labeling was attributed to viral uptake in axons passing through cingulum/corpus callosum and along the injection needle path.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 demonstrate that non-selective retrograde AAV tracing produces false positives by labeling regions known not to project to hippocampus (C59, C62). The interpretation that off-target labeling results from uptake in passing fibers (C63) is reasonable given the anatomical evidence. This result explains potential false positives in prior studies and validates the need for more selective approaches like pseudotyped rabies tracing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Analysis of a comprehensive fMOST dataset mapping 6,357 individual PFC neurons revealed only 4 neurons with hippocampal terminations, none from ACA. The three neurons projecting to dorsal hippocampus originated from lateral orbitofrontal cortex, anterior secondary motor cortex, and ventral agranular insular cortex, with terminations primarily outside CA subfields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 provide strong independent evidence from a comprehensive single-neuron tracing dataset. The analysis of 6,357 PFC neurons with complete axonal reconstructions (C83) represents a rigorous approach. The finding that none of the sparse hippocampal-projecting neurons originated from ACA (C85) and that terminations were primarily outside CA subfields (C86) strongly supports the absence of a direct ACA-to-hippocampus projection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Critical analysis of the Rajasethupathy et al. 2015 study revealed potential sources of false positives including: (1) off-target expression in multiple cortical regions suggesting oligodendrocyte precursor cell transduction, (2) viral spread into M2 motor cortex, (3) unusual bilateral hippocampal labeling pattern with stronger contralateral signal, and (4) potential viral leakage and uptake by passing fibers in cingulum bundle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 and C88-C93 provide detailed critical analysis of potential technical issues in prior work. The comparison to oligodendrocyte precursor cell labeling patterns (C74-C76) offers a plausible mechanistic explanation for false positives. The observations about viral spread (C88, C90, C92), unusual labeling patterns (C91), and potential fiber-of-passage uptake (C93) are well-reasoned interpretations based on the authors' own replication attempts and anatomical knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The Bian et al. 2019 study reported extremely sparse ACA-to-hippocampus labeling (2-3 neurons per region) using retrograde AAV, but failed to detect the well-established ventral hippocampus-to-ACA projection, raising concerns about the sensitivity and specificity of their approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 appropriately critique the Bian study by noting the unexpectedly sparse labeling and failure to detect a known projection. This critical analysis is fair and identifies a significant limitation that undermines confidence in the positive finding. Claim C80 provides additional context about hippocampal-PFC connectivity patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Alternative explanations for failure to detect ACA-to-hippocampus projections (viral tropism differences, incubation time) were considered but deemed unlikely based on: (1) typical AAV expression timelines (2-3 weeks), (2) successful labeling of widespread PFC projections in fMOST study after 4 weeks, and (3) absence of detection using classical tracers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 demonstrate thorough consideration of alternative explanations. The authors appropriately evaluate and reject these hypotheses based on established literature about AAV expression kinetics (C96), evidence from comprehensive tracing studies (C97-C98), and the failure of classical methods (C99). This strengthens confidence in the negative finding by addressing potential technical limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Prior literature establishes that hippocampus projects to prefrontal cortex, but direct prefrontal-to-hippocampus projections are not observed in rat, mouse, or marmoset using classical tracers. Models emphasize indirect routes via parahippocampal cortices and subcortical relays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 accurately summarize the established literature on hippocampal-prefrontal connectivity across species. The claims are well-supported by multiple citations and provide essential context for understanding why the reported ACA-to-hippocampus projection would be surprising. This background establishes the asymmetric nature of hippocampal-prefrontal connectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Prior studies report conflicting findings on ACA-to-hippocampus projections: Rajasethupathy et al. 2015 reported sparse direct projections with functional effects, Bian et al. 2019 reported extremely sparse projections, while other studies found no projections. An inhibitory projection from prelimbic/infralimbic to hippocampal interneurons was also reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C16 accurately summarize the conflicting literature that motivated the current study. The citations appropriately represent the range of findings, from positive results (C9-C12) to negative results (C13-C14) to alternative projection types (C15-C16). This establishes the controversy and justifies the replication attempt.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Both anterograde and retrograde tracing experiments successfully revealed expected projections, serving as positive controls: ACA projections to thalamus, retrosplenial cortex, claustrum, and striatum; hippocampal inputs from medial septum and entorhinal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 establish that the experimental approaches were technically successful by detecting known projections. These positive controls are essential for validating the negative findings regarding ACA-to-hippocampus projections. The agreement with classical literature (C68-C69) strengthens confidence in the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The hippocampal-prefrontal system is one of the most widely studied circuits in cognitive neuroscience, yet controversies remain about precise cellular connections between these regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 provide appropriate framing for the study's significance. These claims accurately characterize the importance of the hippocampal-prefrontal circuit and the existence of ongoing controversies, justifying the need for careful anatomical verification.",
+    "result_type": "MINOR"
+  }
+]

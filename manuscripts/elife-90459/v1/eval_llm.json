@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript describes LDSC as a widely-used method for estimating narrow-sense heritability from GWAS summary statistics, which relies on the infinitesimal model and uses only diagonal elements of the squared LD matrix, leading to estimates with large standard error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C11 provide an accurate description of LDSC methodology and its limitations, supported by appropriate citations to established literature (Bulik-Sullivan et al., 2015b; Ning et al., 2020; Zhang et al., 2021; Song et al., 2022). These are well-established facts in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C12"
+    ],
+    "result": "The manuscript establishes background knowledge about heritability estimation, polygenic trait architecture, and the missing heritability problem in human genetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C12 accurately describe established concepts in quantitative genetics, supported by appropriate citations to foundational and recent literature. These represent consensus views in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C22"
+    ],
+    "result": "The manuscript presents the theoretical foundation of i-LDSC: that SNP-level GWAS summary statistics can capture non-additive genetic effects when genotypes and their interactions are correlated, and that i-LDSC leverages this relationship through cis-interaction LD scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 and C22 describe the core theoretical innovation of the paper. The mathematical derivation showing correlation between genotype matrix X and interaction matrix W despite linear independence is provided in Materials and Methods. This theoretical framework is internally consistent and properly derived.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "In simulations, i-LDSC robustly detects tagged non-additive genetic variance regardless of the total number of causal interactions, with power depending on the proportion of phenotypic variation from additive versus interaction effects and scaling with window size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are directly supported by simulation results in Figure 1 and supplementary figures 1-5, which systematically vary parameters including heritability (H\u00b2=0.3, 0.6), proportion of additive effects (\u03c1=0.5, 0.8), percentage of causal interactions (1%, 5%, 10%), and window sizes (\u00b15, \u00b110, \u00b125, \u00b150 SNPs). Results are based on 100 replicates per condition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "i-LDSC has calibrated type I error rates and does not falsely detect genetic interactions when traits are generated with only additive effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 is supported by null simulations in Figure 2 and supplementary figures 1-2, showing type I error rates near nominal levels, unbiased estimates of \u03d1\u22480, accurate heritability estimates, and well-calibrated p-values across different MAF-dependent effect size distributions and window sizes. This demonstrates proper statistical control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "i-LDSC recovers more genetic variance than LDSC when traits include cis-acting interactions, accurately partitioning effects into additive and interaction components, though small window sizes can cause upward bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C32-C34 are supported by Figure 3 and supplementary figure 1, comparing LDSC and i-LDSC across multiple trait architectures. Mean absolute errors are provided in Supplementary files 1-2. The window size dependency is clearly demonstrated, with larger windows (\u00b150 SNPs) providing more robust estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "In empirical analyses, i-LDSC detected significant tagged genetic interaction effects in all 25 UK Biobank traits and 23 of 25 BioBank Japan traits (HDL and triglycerides being exceptions), with i-LDSC consistently estimating higher heritability than LDSC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 and C35-C37 are directly supported by Table 1, which provides heritability estimates, \u03d1 estimates, and p-values for all 25 traits in both biobanks. All UK Biobank traits show p<0.05, while HDL (p=0.081) and triglycerides (p=0.110) in BioBank Japan do not reach significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C41"
+    ],
+    "result": "Pairwise interactions represent a source of missing heritability in GWAS summary statistics, with height showing the most significant evidence of tagged cis-interaction effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C41 are supported by the empirical results in Table 1 and Figure 4. Height shows highly significant p-values in both biobanks and is noted for its highly polygenic architecture, making it a compelling example of the method's utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "When cis-interaction scores are included alongside 97 functional annotations in stratified LD score regression (s+i-LDSC), heritability estimates still increase but at smaller magnitude, and non-additive components lose statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by Table 2, which shows s+i-LDSC results for UK Biobank traits. All p-values for the non-additive component exceed 0.05, though estimates remain positive. This suggests that functional annotations may capture some of the same variance as cis-interaction scores.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Intercept estimates from LDSC and i-LDSC are highly correlated but generally different, indicating that non-additive genetic variation is partitioned away when using standard LD scores alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by Figure 4\u2014figure supplement 1B, showing high correlations (UK Biobank r\u00b2=0.888, BioBank Japan r\u00b2=0.813) but systematic differences between intercepts. The interpretation that differences reflect partitioning of non-additive variance is reasonable given the model structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "Cis-interaction scores cannot recover missing genetic variation for all trait architectures, though they are helpful for recovering variation from statistical interaction effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by simulation results with G\u00d7E (Figure 3\u2014figure supplements 2, 5) and G\u00d7Ancestry effects (Figure 3\u2014figure supplements 3-4, 6-7), showing that i-LDSC underestimates heritability when other sources of non-additive effects are present. This represents an important limitation of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Breaking the assumed positive correlation between LD scores and chi-squared statistics in sparse trait architectures leads to unbounded heritability estimates in both LDSC and i-LDSC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by Figure 3\u2014figure supplement 8, which shows that when only variants in extreme LD score percentiles have effects, both methods fail except in the fully polygenic case. This demonstrates a fundamental limitation of LD score regression approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "Omission of causal haplotypes has negligible effect on i-LDSC coefficient estimates across a range of minor allele frequencies and effect sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is supported by Figure 3\u2014figure supplement 9, showing minimal differences in coefficient estimates when causal haplotypes are omitted. The authors correctly note this is likely due to polygenic architectures where individual SNP effects are small.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "When additive and interaction effect sizes are correlated in the generative model, both LDSC and i-LDSC show slight upward bias in mean genetic variance estimates, though median bias remains near zero.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by Figure 3\u2014figure supplements 12-13, which systematically vary correlation between additive and interaction effects. The observation that median bias remains near zero is important for assessing practical impact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Cis-interaction LD scores calculated using larger windows (\u00b150 SNPs) lead to the most robust heritability estimates without over-representing non-additive genetic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by Figure 3\u2014figure supplement 1, which compares window sizes of \u00b15, \u00b110, \u00b125, and \u00b150 SNPs. This empirical finding guides the methodological choice to use \u00b150 SNP windows in the main analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "The relationship between MAF and effect size is implicitly encoded in LDSC through genotype normalization, which assumes rare variants have larger effect sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 describe a mathematical property of the normalization procedure used in LDSC. This is a correct interpretation of how variance normalization affects the implicit relationship between MAF and effect size.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C59",
+      "C61"
+    ],
+    "result": "UK Biobank GWAS analyses included 8,981,412 SNPs after quality control, with age, sex, and 20 principal components as covariates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C61 describe the data processing and analysis pipeline for UK Biobank. These are straightforward methodological details that are clearly stated and appropriate for the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C3"
+    ],
+    "result": "The inclusion of cis-interaction scores in i-LDSC recovers genetic variance not captured by LDSC, detecting additional variation from genetic interactions in all 25 UK Biobank traits and 23 of 25 BioBank Japan traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 represent the main empirical finding of the paper, supported by extensive simulations (Figures 1-3 and supplements) and real data analyses (Table 1, Figure 4). The consistency across two independent biobanks strengthens the evidence. However, the loss of significance in stratified analyses (Table 2) suggests some caution in interpretation.",
+    "result_type": "MAJOR"
+  }
+]

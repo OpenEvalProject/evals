@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "TLR2 and RANK expression peak in monocytes during early osteoclast differentiation. ScRNA-seq analysis shows Tlr2 expression peaks in late monocytes, preceding Tnfrsf11a (RANK) expression at the monocyte-to-macrophage transition. St3gal4 expression coincides with Tlr2 peak. In vitro validation shows RANK and TLR2 protein peak on day 1, while TRAP+ cells peak on day 3, and multinuclear osteoclasts increase from day 3 onward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 provide converging evidence from scRNA-seq pseudotime analysis (C38-C41) and in vitro time-course experiments (C42-C44) showing temporal coordination of TLR2, RANK, and sialyltransferase expression during osteoclast differentiation. The data support the conclusion (C45) that RANK and TLR2 upregulation is associated with commitment to TRAP+ lineage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "RANK+TLR2+ and RANK+TLR2\u2212 subpopulations show distinct gene expression patterns. The RANK+TLR2+ subset expresses higher levels of osteoclast differentiation genes (Csf1r) and fusion genes (Ccr2, Spic) in epoch 2. Osteoclast differentiation and fusion marker genes are continuously expressed in RANK+TLR2+ cells but decline in RANK+TLR2\u2212 cells at the monocyte-to-macrophage transition, suggesting RANK+TLR2\u2212 cells do not undergo fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 present scRNA-seq data showing differential gene expression between the two subsets. The inference (C51-C52) that TLR2 regulates fusion and RANK+TLR2\u2212 cells don't fuse is well-supported by the continuous vs. declining expression patterns of fusion genes. Statistical significance is indicated for key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Maf transcription factor is differentially expressed and regulates distinct gene programs in RANK+TLR2\u2212 versus RANK+TLR2+ cells. GRN analysis shows Maf/Mafb activate Cd74 in RANK+TLR2\u2212 cells but Cd74 is repressed in RANK+TLR2+ cells. Maf expression is significantly higher in RANK+TLR2\u2212 cells and activates anti-inflammatory genes (Fcgr2b, Apoe) and monocyte markers, suggesting this subset maintains non-fusion status and promotes anabolic bone formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 present GRN analysis data showing differential Maf regulation between subsets. Claims C60-C61 appropriately cite literature for functional context. The conclusion (C62) that RANK+TLR2\u2212 cells represent an anabolic subset is supported by the gene expression patterns, though functional validation would strengthen this inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C71",
+      "C72"
+    ],
+    "result": "RANK+TLR2\u2212 monocytes differentiate into TRAP+ cells but do not undergo fusion, while RANK+TLR2+ cells form multinucleated osteoclasts. In vitro experiments show RANK+TLR2+ cells fuse after 3 days with M-CSF+RANKL, but RANK+TLR2\u2212 cells remain mononuclear even after 6 days. RANK+TLR2+ cells show significantly greater bone resorption. RANK+TLR2\u2212 cells express higher levels of Maf and angiogenic/osteogenic factors (BMP4, BMI1, FGF, VEGF, angiogenin).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 provide direct experimental evidence of differential fusion capacity using sorted cell populations. Claims C68, C71 show molecular differences (Maf, angiogenic factors) consistent with distinct functions. The conclusion (C72) that Maf expression in RANK+TLR2\u2212 cells promotes anabolic rather than catabolic function is well-supported by converging morphological, functional, and molecular data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "CIA mice show increased RANK+TLR2+ monocytes associated with joint destruction. CIA mice have significantly reduced bone parameters (BV/TV, Tb.N, Tb.Th) and increased TRAP+ osteoclasts compared to controls. TLR2/RANK co-localization and RANK+TLR2+ cell frequency are significantly elevated in CIA mice, indicating TLR2 plays a critical role in osteoclast fusion and joint destruction during arthritis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 present \u03bcCT, histological, immunostaining, and flow cytometry data consistently showing bone loss, increased osteoclasts, and expanded RANK+TLR2+ population in CIA model. The conclusion (C78) that TLR2 has a critical role in joint destruction is well-supported by the correlative data, though causality would require genetic or pharmacological intervention (addressed in later results).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Inhibition of TLR2 or its sialylation blocks osteoclast fusion in vitro. Treatment with TLR2 inhibitor C29 reduces TLR2 expression, while sialyltransferase inhibitor soyasaponin Bb reduces sialylation without affecting TLR2 levels. Both treatments prevent multinuclear osteoclast formation, reduce bone resorption, and significantly decrease expression of fusion genes (Cd44, Ocstamp, Cd47, Ostm1) and differentiation genes (Grb2, Fos, Nfkb1) in RANK+TLR2+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 provide comprehensive in vitro evidence that blocking TLR2 signaling (via receptor inhibition or sialylation inhibition) prevents osteoclast fusion. Multiple readouts (immunofluorescence, TRAP staining, resorption assays, qPCR) consistently support the conclusion (C85). The differential effects of C29 vs soyasaponin Bb help distinguish TLR2 expression from sialylation effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "\u03b1(2,3) sialylation is increased in CIA mice and regulated by c-Fos-mediated ST3GAL4 expression. Sialic acid \u03b1(2,3) levels are significantly elevated in CIA bone marrow and subchondral bone. c-Fos expression is absent in RANK+TLR2\u2212 cells but continuous in RANK+TLR2+ cells, with higher levels in CIA mice and RANK+TLR2+ subset. ST3GAL4 (but not ST3GAL1) colocalizes with RANK+ cells in CIA mice. ChIP assay confirms c-Fos binds to two of three putative binding sites in the St3gal4 promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C94 provide flow cytometry, immunofluorescence, and scRNA-seq evidence of increased sialylation in CIA and differential c-Fos/ST3GAL4 expression between subsets. Claims C95-C96 provide mechanistic evidence via ChIP assay showing c-Fos directly regulates ST3GAL4. The data support a c-Fos\u2192ST3GAL4\u2192sialylation pathway in RANK+TLR2+ cells, though functional validation of this pathway would strengthen the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Soyasaponin Bb treatment reduces joint destruction in CIA mice by decreasing RANK+TLR2+ cells and inducing Maf expression. Prophylactic oral soyasaponin Bb treatment significantly reduces \u03b1(2,3) sialylation, increases bone parameters (BV/TV, Tb.N), decreases TRAP+ osteoclasts, and improves clinical outcomes (reduced paw swelling, improved pain responses). Treatment reduces RANK+TLR2+ subset size, increases monocyte percentage, induces Maf expression in RANK+TLR2+ cells, and decreases fusion/differentiation gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C106 provide comprehensive in vivo evidence from \u03bcCT, histology, flow cytometry, scRNA-seq, behavioral tests, and qPCR showing therapeutic efficacy of sialylation inhibition. The data support the conclusion (C107) that inhibiting sialylation reduces osteoclast fusion and joint destruction. The finding that treatment induces Maf in RANK+TLR2+ cells (C104-C105) provides mechanistic insight, though this inference could be strengthened with additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "TLR2 upregulation and \u03b1(2,3) sialylation in RANK+ monocytes mediate the transition from autoimmunity to joint destruction in RA. A novel RANK+TLR2\u2212 subset negatively regulates osteoclast fusion. Inhibition of \u03b1(2,3) sialyltransferases or TLR2 blocks fusion. Treatment diminishes RANK+TLR2+ subset and expands RANK+TLR2\u2212 subset. RANK+TLR2\u2212 cells differentiate to TRAP+ lineage without fusion. Maf is highly expressed in RANK+TLR2\u2212 subset, and sialyltransferase inhibitor induces Maf in RANK+TLR2+ subset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These abstract claims (C1-C11) summarize the major findings and are well-supported by the detailed experimental results in claims C38-C107. The manuscript provides converging evidence from scRNA-seq, in vitro experiments, CIA model characterization, and therapeutic intervention studies supporting each of these summary claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The study identifies that only RANK+TLR2+ cells undergo fusion during osteoclastogenesis, while RANK+TLR2\u2212 cells represent a novel non-fusion subset. When sialylation is inhibited, RANK+TLR2+ cells differentiate to TRAP+ lineage without fusion. TLR2 is essential for fusion, and sialylation of TLR2 initiates cell-cell recognition. Three TRAP+ cell subtypes exist with different roles in bone homeostasis. Inhibition of \u03b1(2,3) sialylation is proposed as a therapeutic target for RA joint destruction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These discussion claims (C108-C109, C114-C118) synthesize the experimental findings into a coherent model. Claims C108-C109 are directly supported by the in vitro and in vivo data. Claims C114-C115 integrate current findings with prior work (C34-C37). Claim C116 is a reasonable therapeutic proposal based on the efficacy data (C97-C107). Claim C117 proposes three subtypes based on the data, though this model requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C70",
+      "C110",
+      "C119",
+      "C120"
+    ],
+    "result": "RANK+TLR2\u2212 cells may represent precursors to periosteal TRAP+ mononuclear cells involved in angiogenesis and bone coupling. Literature indicates periosteal TRAP+ mononuclear cells induce type H vessel formation and secrete PDGF-BB. The authors propose RANK+TLR2\u2212 cells may maintain this non-fused population and function in osteoblast communication during bone coupling, with \u03b1(2,3) sialylation controlling the balance between preosteoclasts and osteoclasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53, C70, C120 cite literature about periosteal TRAP+ cells and bone coupling. Claims C54, C110, C119 propose that RANK+TLR2\u2212 cells represent these precursors based on their non-fusion phenotype and angiogenic gene expression (C71). While the hypothesis is plausible and supported by gene expression data, direct evidence linking RANK+TLR2\u2212 cells to periosteal TRAP+ cells or demonstrating their role in type H vessel formation is lacking. This remains speculative and requires additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C121"
+    ],
+    "result": "The authors speculate that increased RANK+TLR2+ subset and \u03b1(2,3) sialylation could explain increased RA incidence in post-menopausal women, and that the balance between preosteoclasts and osteoclasts is likely regulated by St3gal1/St3gal4 or sialidase expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C111 is explicitly speculative, citing literature about RA incidence in post-menopausal women but providing no data on estrogen, menopause, or sex differences in the current study. Claim C121 proposes St3gal1/St3gal4/sialidase regulate the balance but acknowledges that cell-type specific knockout experiments are needed for validation. Both claims represent reasonable hypotheses for future work but lack supporting data in the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background claims about RA pathophysiology, osteoclast biology, and bone remodeling establish the scientific context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C33 present established knowledge about RA, osteoclasts, and bone biology, appropriately citing literature (C13-C16, C20-C28, C31-C33) or stating general knowledge (C12, C17-C19, C29-C30, C32). These background claims provide necessary context and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors' previous work showed that sialylation of TLR2 induces binding to Siglec-15 to initiate osteoclast fusion, with RANKL inducing ST3GAL1 expression via c-Fos, and sialidase injection reducing fusion and bone resorption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 reference the authors' prior publication (Dou et al., 2022) establishing the TLR2 sialylation mechanism. These claims provide essential background for the current study and are appropriately cited. The current manuscript builds on this foundation by identifying ST3GAL4 (rather than ST3GAL1) as the key sialyltransferase in the CIA model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C112",
+      "C113"
+    ],
+    "result": "Literature citations about Fcgr2b and Apoe function in macrophages, and TLR2 agonist/knockout effects on osteoclasts, provide supporting context for the findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 cite literature supporting the anti-inflammatory role of genes activated by Maf in RANK+TLR2\u2212 cells. Claims C112-C113 cite literature showing TLR2 agonists increase osteoclast formation and TLR2 knockout prevents osteoclast differentiation, complementing the current findings. These appropriately cited claims provide supporting context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Maf is stated as the key transcription factor for macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 states Maf is the key transcription factor for macrophages as established knowledge. While no citation is provided for this specific statement, it is consistent with the literature on Maf function in myeloid cells and is used to interpret the finding that Maf is higher in RANK+TLR2\u2212 cells (C68), which show macrophage characteristics.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors developed a single-cell dissociation protocol for B. malayi microfilariae that successfully generates viable cell suspensions capturing both common and rare cell types, including the large secretory cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C53 collectively describe the development and validation of a novel single-cell dissociation protocol. The protocol includes PD-10 filtration (C39: 60-70% recovery), chitinase treatment (C41), SDS-DTT treatment (C42), and pronase digestion (C43). Imaging flow cytometry validation (C44-C46) identified 2893 viable single cells from 20,000 objects, with recovery of 11 large bipolar cells (C51: 8.46\u00b10.77 \u00b5m diameter) matching the expected 0.4% frequency of secretory cells (C53). The methodology is well-documented with appropriate controls and quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Single-cell RNA-seq of B. malayi microfilariae identified 27 transcriptionally distinct clusters from 46,621 cells, with 39.3% (18,317 cells) successfully annotated to specific cell types including muscle (13.3%) and neurons (11.9%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C66 describe the scRNA-seq analysis with clear quality metrics (C55: median 230 genes, 267 reads per cell) and strong validation against bulk RNA-seq (C56: r=0.85, R\u00b2=0.72, p=2.2\u00d710\u207b\u00b9\u2076). The annotation of 16 UMAP clusters (C62) using C. elegans orthologs is methodologically sound, though the authors acknowledge that 61% of cells remain unannotated, which they attribute to developmental asynchrony and unknown gene functions. The statistical correlation and cell counts are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Cell type annotation identified mesodermal lineages (22% of cells) including body wall muscle, coelomocytes, and underdeveloped structures, plus nine neuronal clusters with specific subtypes including motor neurons, interneurons, and ciliated sensory neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C76 describe detailed cell type annotations using established marker genes from C. elegans with appropriate citations (e.g., C67 cites Krause et al., 1994 for Bma-hlh-1; C73 cites multiple papers for ciliogenesis genes). The identification of specific neuronal subtypes (C71-C72) and the speculative interpretation of clusters 3-5 as a developmental state (C76) are appropriately qualified. The use of orthologous markers is well-justified, though phylogenetic distance limitations are acknowledged (C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Cluster 22 was annotated as inner body-associated cells based on high expression of chitinases and vaccine candidates Bma-val-1 and Bm97, while cluster 14 was identified as canal-associated neurons using C. elegans CAN markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 describe the annotation of filarial-specific cell types. The inner body annotation (C80) is supported by chitinase expression patterns (C78) and literature on inner body function (C79, citing McLaren 1972 and Wu et al. 2008). The CAN cell identification (C81) uses established orthologous markers. These annotations represent biologically coherent interpretations of expression patterns, though functional validation would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "FACS enrichment of the largest cells followed by RNA-seq identified cluster 15 as secretory cells, with 78 enriched genes showing limited overlap with C. elegans excretory cell markers, consistent with evolutionary divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 describe a clever approach to identify rare secretory cells by size-based sorting. The enrichment of 78 genes in cluster 15 (C83) and coexpression analysis (C84) provide convergent evidence. The lack of marker conservation with C. elegans (C85) is appropriately interpreted as reflecting evolutionary divergence (C86) rather than a failure of the method. The approach is methodologically sound, though the relatively small number of enriched genes (78) and reliance on size as the primary sorting criterion could be strengthened with additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Prominent antigens and secreted proteins show diverse tissue origins: some are broadly expressed (Bma-tpi-1, Bma-sxp-2), others are restricted to inner body (Bma-val-1, Bm97, chitinases), and some are secretory cell-specific (Bma-srp-2, Bm10631, Bm14).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C87-C91 map the cellular origins of known antigens and secreted proteins. The finding that prominent antigens have variable expression patterns (C87) challenges the assumption that all secreted proteins originate from the secretory cell. The reconciliation of broad expression with ES apparatus localization through protein aggregation (C88) is speculative but reasonable. The data are well-presented with appropriate citations (e.g., C88 cites Moreno et al. 2010 for antibody localization), though protein-level validation would strengthen the transcriptional observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Secretory cell-enriched transcripts show elevated signal peptide content (43%) and transmembrane domains (41.8%), including two expanded subgroups of C2H2-ZF transcription factors that are secretory cell-specific and lack C. elegans orthologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 characterize secretory cell-enriched genes. The signal peptide (C92: 43%) and transmembrane domain (C93: 41.8%) enrichments are quantified and appropriate for secretory cells. The identification of expanded C2H2-ZF transcription factor families (C95) is supported by phylogenetic analysis and bulk RNA-seq validation (C96), with appropriate citations to prior ES product studies (C97). The speculation about their function (C98) is appropriately qualified. The computational predictions (SignalP, HMMTOP) are standard tools, though experimental validation of secretion would strengthen conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "\u03b2-tubulin expression mapping identified Bma-btub-1 as the most highly expressed isoform with highest similarity to C. elegans ben-1, suggesting it mediates albendazole action, with coexpression patterns indicating potential redundancy mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 map \u03b2-tubulin expression and predict drug targets. The identification of Bma-btub-1 as most highly expressed (C99) and most similar to ben-1 (C100) is data-driven, though the hypothesis about ABZ action (C101) requires functional validation. The coexpression analysis (C104) showing associations between Bma-tbb-4/Bma-btub-1 and Bma-btub-1/Bma-btub-2 appropriately suggests redundancy (C105), supported by C. elegans literature (C103). The inference is logical but would benefit from drug resistance or knockdown studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "GluCl subunits (Bma-avr-14, Bma-glc-2, Bma-glc-3, Bma-glc-4) display expression in neuronal and muscle cell types, with single-cell coexpression analysis identifying Bma-avr-14 and Bma-glc-4 as the most commonly coexpressed subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C113 map ivermectin target expression and predict native channel compositions. The expression patterns (C109) are consistent with known IVM action on muscle-expressed GluCls (C108, with multiple citations). The coexpression analysis (C112) provides novel predictions about native channel composition, addressing limitations of heterologous expression studies (C111). The approach is sound, though the predictions require electrophysiological validation. The finding that Bma-glc-2 is minimally expressed (C113) despite being IVM-sensitive in heterologous systems highlights the value of native tissue analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "nAChR subunits are mainly restricted to body wall muscle, with single-cell coexpression analysis revealing Bma-acr-15 as a potentially essential component of nAChR composition in filarial nematodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 map levamisole target expression. The restriction to body wall muscle (C114) is expected and well-documented. The identification of Bma-acr-15 as a key coexpressed subunit (C115) is a novel inference from coexpression analysis, though the claim that it is 'essential and missing' from current understanding is somewhat overstated without functional validation. The coexpression data provide a strong hypothesis for future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Flow cytometry-based viability assays showed that major anthelmintic classes (IVM, LEV, AZS) do not affect isolated cell viability at pharmacological concentrations, though high IVM concentrations (EC50=51\u00b15.16 \u00b5M) produce cytotoxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C120 describe drug effects on isolated cells. The validation of the viability assay (C116-C118) with appropriate controls (DMSO, methanol-fixed cells, time course) is thorough. The finding that pharmacological concentrations don't kill isolated cells (C119) is well-controlled, with the IVM EC50 (C120: 51\u00b15.16 \u00b5M) being ~50-fold higher than pharmacological concentrations. The conclusion that drug action requires cell-cell connectivity (C128) is a reasonable inference, supported by C. elegans innexin data (C129). However, only 2-3 biological replicates were performed, which is minimal for dose-response studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C33",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Single-cell RNA-seq of IVM-treated cells (1 \u00b5M, 20 min) revealed cell-specific transcriptional responses, with the greatest changes in muscle cells (highest GluCl expression) and upregulation of genes including Bma-srp-2 and previously identified IVM-responsive genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C124 describe transcriptional responses to IVM. The experimental design (1 \u00b5M for 20 min) targets early transcriptional events at a concentration that doesn't affect viability. The finding that muscle shows the greatest response (C122) is consistent with GluCl expression patterns. The upregulation of Bma-srp-2 (C123: Log2FC>2.8) and validation against prior bulk RNA-seq studies (C124, citing Ballesteros et al. 2016) strengthen the findings. However, only single biological replicates were used for treated and untreated conditions, which limits statistical power and reproducibility assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C34",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "A microfilariae cell culture model was established with cells remaining viable for 96 hours on peanut-lectin coated surfaces, though cells are not actively dividing under current culture conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 describe the cell culture system. The demonstration of adherent, viable cells at 24 hr (C125) and 96 hr (C126) with Calcein-AM staining is well-documented. The EdU proliferation assay (C127) appropriately shows cells are not dividing, with CHO-K1 cells as a positive control. The system represents a useful tool for future studies, though the lack of proliferation and limited characterization of cell types in culture limit immediate applications. Two biological replicates were performed, which is minimal but acceptable for a methods development study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "B. malayi transcription factor expression patterns align with C. elegans, showing both broad expression (lin-14) and cell-type-restricted expression (daf-19, hlh-1, unc-120) in corresponding cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 validate the scRNA-seq data by comparing transcription factor expression patterns with C. elegans. The broad expression of lin-14 (C59) and restricted expression of daf-19, hlh-1, and unc-120 (C61) in appropriate cell types provide confidence in the biological signal. The comparisons are well-cited (C60 cites Taylor et al. 2021) and serve as important internal validation. This is primarily a validation result rather than a novel biological finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Phylogenetic distance between C. elegans (clade V) and filarial nematodes (clade III) is associated with anatomical differences and protein localization divergence, limiting comprehensive cell type mapping across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 acknowledges limitations in cross-species annotation due to evolutionary divergence, supported by citations to anatomical (Chitwood and Chitwood 1950) and protein localization (Moreno et al. 2010) studies. This is an important caveat that contextualizes the annotation challenges and justifies the need for species-specific approaches. The claim is well-supported but represents a limitation rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors propose that anthelmintic action requires cell-cell connectivity, with the ES apparatus serving as a secretory choke point in the parasite life cycle relevant to both mammalian and arthropod hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C131 present a model for anthelmintic action and ES function. The inference that drug action requires cell-cell connectivity (C128) is reasonable given isolated cells survive at pharmacological concentrations, and is supported by C. elegans innexin data (C129). However, the speculation about IVM preventing exsheathment through ES suppression (C130) and the view of the ES apparatus as a 'secretory choke point' (C131) are largely speculative interpretations not directly tested in this study. These represent interesting hypotheses that require functional validation through targeted experiments on ES function and drug mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "The methods developed are expected to be readily adaptable to other parasitic nematode species and stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C35 is a forward-looking statement about method transferability. While the general approach (tissue dispersion, scRNA-seq, FACS) is broadly applicable, the specific protocol optimizations (chitinase treatment, SDS-DTT concentration, pronase timing) are tailored to B. malayi microfilariae. No data are presented testing these methods on other species or life stages. The expectation is reasonable but unvalidated, and significant optimization would likely be required for species with different cuticle structures or developmental stages with different cell compositions.",
+    "result_type": "MINOR"
+  }
+]

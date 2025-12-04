@@ -1,0 +1,343 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C46",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Single-cell RNA sequencing of 26 dpf zebrafish germ cells identified a developmental trajectory with 14 clusters (W1-W14) including germline stem cells (GSC), three progenitor subtypes (early, committed, and late progenitors characterized by foxl2l expression patterns), and meiotic cells. The trajectory was validated by marker gene expression and FISH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C77 collectively demonstrate a well-characterized developmental trajectory using scRNAseq, trajectory analysis, marker gene identification, and FISH validation. The clustering, pseudotime ordering, and marker-based cell type annotations are internally consistent and supported by multiple orthogonal approaches including published data validation (C51, C55-C57, C59).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C42",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Foxl2l is expressed in progenitor cells and shows female-biased expression during sex differentiation, being highly expressed in adult ovarian cystic germ cells but absent in testis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C42, C79-C83 are supported by in situ hybridization data across developmental time points (11, 22, 30 dpf, and 5 months) and scRNAseq expression data. The temporal and spatial expression patterns are consistent with a role in female development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C43",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "CRISPR-Cas9 mutation of foxl2l disrupting the forkhead domain produces 100% fertile male fish that fail to enter female meiosis and instead express spermatogenic markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C43, C84-C91 are supported by genetic, histological, and marker gene expression data. The sex ratio data (C8), fertility tests (C9), histology showing absence of oocytes (C86-C87), and presence of spermatogenic markers (C88-C89) provide converging evidence for the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C47",
+      "C48",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C109",
+      "C138",
+      "C141",
+      "C142",
+      "C164"
+    ],
+    "result": "Single-cell profiling of foxl2l mutant germ cells reveals developmental arrest at the committed progenitor (Prog-C) stage, with failure to progress to late progenitor (Prog-L) or meiotic stages, as evidenced by absence of Prog-L and meiotic markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C47-C48, C92-C99, C109, C138, C141-C142, C164 are supported by scRNAseq analysis showing most mutant cells annotated as early stages (C94), absence of Prog-L/meiotic cells (C95), and loss of rec8a and Sycp3 staining (C97-C98). The developmental arrest is consistently demonstrated across multiple analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Co-clustering analysis of WT and mutant cells identified eight integrated groups (I1-I8), revealing that GSCs can be subdivided into GSCI and GSCII, and that mutant cells show aberrant foxl2l expression in earlier stages (GSC, Prog-E) with accumulation of foxl2l+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C108 are supported by the co-clustering analysis methodology and results. The identification of GSC subtypes (C102) is inferred from differential marker expression patterns, and aberrant foxl2l expression (C106-C107) is validated by FISH quantification showing increased foxl2l+ cells in mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C137",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "Differential gene expression analysis reveals that Prog-C(S) contains the largest number of DEGs, with foxl2l acting as both activator (dele1) and inhibitor (dmrt1, nanos2), and the defect occurring during Prog-E to Prog-C transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C121, C137, C185-C190 are supported by differential expression analysis showing stage-specific dysregulation. The dual role of Foxl2l (C120-C121, C190) is inferred from opposing expression changes in mutants (dmrt1 up, dele1 down), which is a reasonable inference but the direct regulatory mechanism is not demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C49",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C139",
+      "C143",
+      "C186"
+    ],
+    "result": "foxl2l mutants show elevated nanos2 expression and increased numbers of nanos2+ cells, with aberrant co-expression of nanos2 and foxl2l in mutant progenitors, suggesting acquisition of a novel stem cell state and potential reversion of Prog-C to GSC properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13, C15, C49, C122-C128, C139, C143, C186 are supported by scRNAseq and FISH data showing increased nanos2 expression and nanos2+ cell numbers. However, the interpretation of 'novel stem cell state' (C13) and 'reversion' (C127, C143) is speculative as the mechanism (direct reversion vs. GSC proliferation, C129) is not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C180"
+    ],
+    "result": "id1, a stemness-related gene, is barely expressed in WT germ cells but abundant in foxl2l+ mutant germ cells, with increased proportion of id1+foxl2l+ cells, consistent with mutant Prog-C reverting to GSC properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C133, C180 are supported by expression data and FISH quantification. The link to stemness is supported by cited literature (C132), but the functional role of id1 in the mutant phenotype (C133, C180) remains speculative without loss-of-function experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C183",
+      "C184",
+      "C187"
+    ],
+    "result": "dmrt1, a male regulator, shows aberrant upregulation and co-expression with foxl2l in mutant cells, suggesting Foxl2l normally suppresses dmrt1 to antagonize male development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136, C183-C184, C187 are supported by expression data showing dmrt1 upregulation in mutants and co-expression with foxl2l. The inference that Foxl2l suppresses dmrt1 (C187) is reasonable but indirect, as direct regulatory evidence is not provided. The role in directing male development (C184) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C14",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C159",
+      "C160"
+    ],
+    "result": "Foxl2l drives progenitor germ cells toward feminization by controlling differentiation from Prog-C to Prog-L, which is essential for female differentiation, with Prog-L expressing meiotic entry genes (rec8a, meiosin).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C148-C151, C159-C160 are supported by the observation that foxl2l mutants fail to develop Prog-L and become all males, combined with expression of meiotic entry genes in Prog-L. The causal link between Prog-L and female differentiation is strongly supported by the mutant phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C172"
+    ],
+    "result": "Zebrafish testis can differentiate directly from indifferent gonads without going through a female phase, as demonstrated by foxl2l mutants showing germ cell arrest in progenitor development followed by direct male differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C170, C172 are supported by the foxl2l mutant phenotype showing developmental arrest at Prog-C followed by male differentiation without oocyte formation. This challenges the prevailing model of obligate female-to-male transition and is consistent with observations in the Nadia strain (C171).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "GSCs can be subdivided into GSCI and GSCII, which may represent two different daughter cells derived from asymmetric division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102, C144-C147 identify two GSC subtypes based on differential marker expression, which is supported by data. However, the interpretation that these represent asymmetric division products (C147) is purely speculative without lineage tracing or functional validation, as acknowledged in the text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C129",
+      "C133",
+      "C175",
+      "C180",
+      "C184",
+      "C206",
+      "C208"
+    ],
+    "result": "The mechanisms underlying increased GSC numbers, the functional roles of nanos2, id1, dmrt1, tp53, and zgc:158463 in mutant cell fate determination remain speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129, C133, C175, C180, C184, C206, C208 propose mechanistic explanations for observed gene expression changes, but these are explicitly speculative (using 'may' language) and lack functional validation through loss-of-function or gain-of-function experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Comparison with medaka suggests zebrafish Foxl2l may have an additional role in driving progenitor differentiation, or that medaka has stronger female genetic tendency preventing complete blockage of female differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C161-C167 compare zebrafish and medaka foxl2l mutant phenotypes, noting that medaka mutants retain some oocytes while zebrafish mutants do not. The proposed explanations (C166-C167) are speculative without cross-species functional experiments or genetic background analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208"
+    ],
+    "result": "tp53 and zgc:158463 are aberrantly enriched in distinct foxl2l mutant cell populations (I3, I6), and may participate in alternative differentiation of mutant germ cells, though tp53-/-foxl2l-/- double mutants fail to rescue the all-male phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C196-C208 are supported by expression data showing tp53 and zgc:158463 enrichment in specific mutant clusters, and genetic data showing tp53 mutation does not rescue the phenotype (C201-C202). However, the proposed roles in alternative differentiation (C206, C208) remain speculative without functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "The dual role of Foxl2l as both activator and suppressor is comparable to other Fox family proteins, including mammalian FOXL2 which activates genes in differentiated granulosa cells but suppresses genes in undifferentiated pre-granulosa cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C191-C195 draw parallels between zebrafish Foxl2l and mammalian FOXL2 based on established literature (C192-C194). The comparison is reasonable given the observed dual regulatory role in zebrafish, though direct functional homology is not demonstrated.",
+    "result_type": "MINOR"
+  }
+]

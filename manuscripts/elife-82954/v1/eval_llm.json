@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors develop a coevolutionary game framework where the level of cooperation in a population affects the risk of collective failure, and this risk in turn influences individual decision-making. The model assumes that increasing free-riding behaviors increase risk, which then stimulates contributions, creating a feedback loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C5-C6, and C40-C44 collectively establish the conceptual framework and key assumptions of the model. The bidirectional feedback mechanism is clearly defined and forms the foundation of the study. The model structure is mathematically formalized in the Methods section with explicit equations (C53-C57), providing a solid theoretical basis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C53",
+      "C54",
+      "C57"
+    ],
+    "result": "The study examines two feedback mechanisms: linear feedback (where risk decreases linearly with cooperation) and exponential feedback (using a sigmoid function). Both are implemented using replicator equations to model the coevolutionary dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C53-C54, and C57 describe the methodological approach with appropriate mathematical formulations. The use of replicator equations is standard and well-cited (Taylor and Jonker, 1978; Schuster and Sigmund, 1983). The two feedback forms are clearly defined and justified with references to prior work and real-world examples (e.g., COVID-19 IFR dynamics).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Cooperation can be maintained through two mechanisms: convergence to a fixed point (interior or boundary) or stable limit cycle oscillations. Importantly, these outcomes do not depend significantly on whether the feedback is linear or exponential\u2014what matters is the existence of proper feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C70-C72 present the main findings supported by extensive mathematical analysis (Figures 3-6) and theoretical proofs in the appendices. The phase plane diagrams and temporal dynamics clearly demonstrate both fixed point convergence and limit cycle behavior. The independence from feedback type is a key finding supported by analysis of both System I (linear) and System II (exponential).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C10",
+      "C61",
+      "C65",
+      "C69"
+    ],
+    "result": "The evolutionary outcomes depend critically on initial conditions. Depending on the starting fractions of cooperators and risk level, the system can evolve to different stable states including high cooperation with low risk, limit cycles, or the tragedy of the commons (no cooperation, high risk).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C10, C61, C65, and C69 describe the bistability and initial condition dependence observed in the model. This is clearly demonstrated in Figures 4 and 6, where different initial conditions lead to different attractors. The phase plane analyses show distinct basins of attraction, and the theoretical analysis in the appendices provides conditions for each outcome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C73"
+    ],
+    "result": "The study theoretically identifies conditions for the existence of stable interior equilibria and stable limit cycles through analysis of fixed points, eigenvalues, and Hopf bifurcations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C73 are supported by detailed mathematical analysis presented in the appendices and summarized in Figures 3 and 5. The conditions are expressed in terms of model parameters (u, T, c/b, M, N) and the stability analysis follows standard dynamical systems theory using Jacobian matrices and bifurcation analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C74"
+    ],
+    "result": "A two-way coupling between collective actions and risk is essential to avoid the tragedy of the commons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C74 present a key conclusion that is supported by the model results showing that feedback mechanisms enable cooperation maintenance. However, the model also shows that the (0,1) state (tragedy of the commons) is always stable, so the two-way coupling is necessary but not sufficient\u2014initial conditions also matter (C8, C10). The conclusion is somewhat overstated but generally supported by the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "The study proves that Hopf bifurcation occurs and stable limit cycles emerge, which differs from heteroclinic cycles in previous work (Weitz et al., 2016). Additionally, limit cycle existence does not depend on coupling speed, contrary to Tilman et al., 2020.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by theoretical analysis in the appendices showing supercritical Hopf bifurcations and by supplementary figures (Appendix 1\u2014figure 1, Appendix 2\u2014figure 1) demonstrating independence from feedback speed \u03b5. The distinction from prior work is clearly stated and the mathematical proofs appear sound, though the appendices are not fully provided in the manuscript text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C78"
+    ],
+    "result": "The model produces persistent oscillations, with small amplitude oscillations being more conducive to system stability than large amplitude oscillations because higher risk increases the probability of losing all endowments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is clearly demonstrated in Figures 4 and 6 showing limit cycle dynamics. Claim C78 is a reasonable inference based on the model structure where high risk (r\u21921) increases the probability of collective failure, though this is more of an interpretation than a rigorously tested result. The observation is logical given the model assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C28",
+      "C29",
+      "C30",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Previous collective-risk social dilemma studies established that risk affects cooperation but typically assumed constant risk not affected by individual behaviors. This study addresses the gap by examining direct bidirectional interactions between strategy and risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C28-C30, and C36-C39 accurately characterize prior work and identify the research gap. The citations to previous literature (Milinski et al., 2008; Santos and Pacheco, 2011; Chen et al., 2012a; etc.) support these characterizations. The critique that previous models assumed constant risk is valid and well-documented in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Evolutionary game theory provides a framework for studying coupled human-environment dynamics. Previous coevolutionary models (e.g., Weitz et al., 2016) showed that strategies and environment can form sustained cycles, with feedback loops being key to maintaining cooperation and sustainable resource use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 accurately summarize the theoretical framework and prior work. The citations are appropriate and the characterization of Weitz et al., 2016 findings (heteroclinic cycles between full cooperation/defection and replete/depleted states) is accurate. This provides proper context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The collective-risk social dilemma game serves as a paradigm for studying climate change dilemmas, where individuals decide whether to contribute to a collective goal, with disaster averted if contributions exceed a threshold, otherwise occurring with probability r.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 accurately describe the collective-risk social dilemma framework established by Milinski et al., 2008. This is a well-established model structure in the literature and the description is accurate. The game structure is properly formalized in Equations 1-2 of the Methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Risk of collective failure is lower in highly cooperative societies and higher in less cooperative ones. Real-world examples include COVID-19 IFR in India showing both linear (June-September 2020) and nonlinear (March 2020-April 2021) dynamics, and risk changes affect individual decision-making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are logical inferences about cooperation-risk relationships. Claims C33-C34 cite specific empirical data (Yang and Shaman, 2022) to motivate the consideration of both linear and nonlinear feedback forms. Claim C35 is supported by citations to behavioral experiments. These claims provide empirical motivation for the modeling choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C22",
+      "C23"
+    ],
+    "result": "Climate change is a major challenge where human carbon emissions exacerbate the greenhouse effect, leading to glacier melting and sea level rise that affect human activities. Feedback loops exist between human activities and climate change, but scholars typically study these in separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 and C22-C23 present established scientific knowledge about climate change and characterize the state of research. The citations support these statements (Parmesan and Yohe, 2003; Stone et al., 2013; Schuur et al., 2015; Obradovich and Rahwan, 2019; Vitousek et al., 1997; Barfuss et al., 2020). This provides real-world motivation for the theoretical study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Research on consequences of feedback between human activity and natural systems is still in early stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 is a reasonable assessment given the literature review presented. While coevolutionary game models exist (Weitz et al., 2016; Tilman et al., 2020), the specific application to collective-risk dilemmas with bidirectional risk-strategy feedback is indeed relatively new. This justifies the study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The (0,1) equilibrium state where no individuals contribute leads to collective action failure and loss of all endowments, which would be disastrous in real-world scenarios like climate change or infectious disease spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 correctly interpret the (0,1) equilibrium point in the model context. This state represents the tragedy of the commons and is always stable in the model (shown in all parameter regions in Figures 3 and 5). The real-world implications are logical given the model structure, though they remain theoretical interpretations.",
+    "result_type": "MINOR"
+  }
+]

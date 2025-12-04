@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C97",
+      "C98",
+      "C101",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "A high-throughput imaging-based RNAi screen was performed in hTERT-immortalized dermal fibroblasts targeting 867 nuclear proteins (346 nuclear membrane proteins and 521 epigenetic/chromatin regulators) using three unique siRNAs per gene. The screen measured nuclear morphology parameters (length, width, area, circularity) in biological duplicates with strong correlation between replicates (r=0.6992 for shape, r=0.8413 for size), analyzing typically >250 nuclei per sample with hits defined as median Z-score \u00b11.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screen design and execution are well-documented with appropriate technical replicates, adequate sample sizes (>250 nuclei per well), and strong inter-replicate correlations (C106-C110). The hit calling criteria (\u00b11.5 Z-score threshold with 2/3 siRNAs) and exclusion of cytotoxic effects (C48-C49) demonstrate rigorous quality control. The methodology is sufficiently detailed for reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C100",
+      "C111",
+      "C112"
+    ],
+    "result": "The primary screen identified 42 genes (4.8% hit rate) as nuclear shape regulators in fibroblasts, with 64% (27/42) being epigenetic modifiers. LMNA was the second strongest hit, validating the screen approach. Distribution analysis showed population-wide shifts rather than subpopulation effects (p<0.0001, Kolmogorov-Smirnov test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of 42 shape hits with LMNA as a positive control (C53) validates the screening approach. The enrichment of epigenetic modifiers (64%) is well-quantified (C52), and statistical validation using Kolmogorov-Smirnov tests (C112) supports the population-wide nature of effects. The hit rate and categorization are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Most nuclear shape regulators (38/42, 90%) altered nuclear morphology without affecting lamin A/C or lamin B1 protein levels. Only 4 hits (MYST3, EVI1, LMNA, PSMA4) affected both shape and lamin levels. Correlation analysis showed weak relationships between nuclear shape and lamin A/C (r=0.183) or lamin B1 (r=0.081) expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is strongly supported by quantitative data showing that 38/42 shape hits do not alter lamin levels (C60), with specific examples of the 4 exceptions documented (C57-C59). The weak correlations between shape and lamin expression (C104-C105) provide additional statistical support. This represents a key finding challenging the lamin-centric view of nuclear morphology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The screen identified 50 genes (5.7% hit rate) affecting nuclear size: 36 increased and 14 decreased nuclear size. Like shape regulators, 52% (26/50) were chromatin/epigenetic modifiers, none altered lamin levels, and only NUP205 overlapped with shape hits. Nuclear shape and size showed minimal correlation (r=0.09597).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The nuclear size screen is well-documented with clear hit rates (C61-C62) and specific examples (C64-C65). The lack of overlap with shape hits (only NUP205, C67) and minimal correlation between size and shape (r=0.09597, C116) are statistically supported. The finding that none of the 50 size determinants altered lamin levels (C66) parallels the shape results and strengthens the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Screening MCF10AT breast cancer cells identified 34 nuclear shape regulators with minimal overlap with fibroblasts (only 3 genes: LMNA, EYA1, TRIM6). Cell-type specificity was demonstrated by KAT2B and RNF168, which affected shape in only one cell type despite being expressed in both. Overall correlation of shape scores between cell types was limited (r=0.301).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell-type specificity is well-documented with quantitative overlap data (C69) and specific examples of differential effects (C71-C72). The limited correlation between cell types (r=0.301, C70) and moderate correlations for lamin expression (r=0.4097-0.4179, C118-C119) support cell-type-specific regulation. The biological replicates (C117) ensure reproducibility of these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C96",
+      "C127"
+    ],
+    "result": "Lamin A directly binds histone H3 in vitro through its C-terminal region. GST-lamin A (aa 389-646) containing the Ig-fold and C-terminus binds H3 but not other core histones. Truncation analysis identified aa 627-638 as required for binding, while the tail alone (aa 565-646) was insufficient. The binding requires both the Ig-fold region and the C-terminal tail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The direct binding is demonstrated through multiple GST pulldown experiments performed at least three times (C127). The systematic truncation analysis (C73-C76) precisely maps the binding region to aa 627-638 (C77), with appropriate positive and negative controls. The requirement for both the Ig-fold and tail regions is clearly established through complementary truncation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Disease-causing lamin A mutations disrupt histone H3 binding. Progerin, which lacks aa 627-638 (the region required for H3 binding), does not bind H3. DTT treatment increased lamin A-H3 binding, suggesting monomeric lamin A binds H3. Lamin C inhibits lamin A-H3 binding through dimerization, which is reversed by DTT or C522A mutation in lamin A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The progerin binding defect (C79) directly validates the mapped binding region (C78). The DTT experiments (C80, C82) and C522A mutation (C83) provide mechanistic insight into the role of dimerization, with appropriate controls. The connection to HGPS is well-established through prior literature (C78) and experimentally validated here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C128"
+    ],
+    "result": "Lamin A binding to histone H3 is modulated by combinatorial histone modifications. Peptide array analysis (performed three times) showed preferential binding to dual methylation marks (H3R8me2/K9me2, H3K26me2/K27me2, H4R19me2/K20me1), with ~5-fold greater signal for H3R8me2/K9me2 versus H3K9me2 alone. Lamin A also bound acetylated peptides (H4K12ac/K16ac, H3K27ac, H3K4ac) at reduced levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The peptide array experiments were performed three times (C128) and show clear preferential binding to dual methylation marks with quantitative comparisons (C85). The identification of specific modification patterns (C84) and secondary binding to acetylated peptides (C86) is well-documented. This provides mechanistic insight into how epigenetic modifications regulate lamin-chromatin interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Oncogenic histone H3.3 mutants (K9M, K27M, K36M) cause nuclear morphology abnormalities, decreasing circularity and reducing nuclear size, while H3.1 mutants have little effect. The effects are specific to the mutants (not due to lamin A level changes) and increase population variability without correlation to expression level. Experiments used three biological replicates analyzing \u2265500 cells/nuclei per sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The H3.3 mutant effects are well-documented with adequate replication (C129) and sample sizes (C130-C131). The specificity to H3.3 versus H3.1 (C88) and independence from lamin A levels (C90-C91) are clearly demonstrated. The increased population variability (C89) and lack of dose-response (C89) suggest a threshold effect, which is appropriately noted. The connection to disease-relevant mutations strengthens biological significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C52",
+      "C63"
+    ],
+    "result": "Epigenetic modifiers and chromatin regulators constitute the major class of nuclear morphology regulators, representing 64% (27/42) of shape hits and 52% (26/50) of size hits in fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enrichment of epigenetic modifiers is clearly quantified for both shape (C52) and size (C63) screens with specific percentages and counts. This represents a major finding that challenges the traditional lamin-centric view of nuclear morphology regulation and is supported by the mechanistic studies of lamin-histone interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "H3.3K27M mutations are found in pediatric glioblastoma and H3.3K36M mutations in chondrosarcomas, cancers characterized by extensive nuclear aberrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established clinical findings supported by appropriate citations (C93-C94). The connection to nuclear aberrations (C95) provides context for the experimental findings with H3.3 mutants, though the claim about nuclear aberrations in these cancers is stated as general knowledge rather than specifically documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Background context establishing that nuclear morphology changes are associated with disease and aging, nuclear morphology is plastic and changes during development, and prior work has implicated lamins, nuclear pore components, chromatin factors, and epigenetic modifiers in nuclear morphology regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide essential background context and are appropriately supported by citations to prior literature. They establish the rationale for the current study but represent prior knowledge rather than new findings from this work.",
+    "result_type": "MINOR"
+  }
+]

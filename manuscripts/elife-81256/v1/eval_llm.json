@@ -1,0 +1,480 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "The experimental design involved 19 subjects (after one exclusion) predicting binary stimuli across 10 blocks with stimulus generative probabilities ranging from 0.05 to 0.95 in 0.05 increments. Each block included 200 passive observation trials followed by 200 active prediction trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C180-C184 collectively describe the experimental design, participant demographics, ethical approval, and data quality. The design is clearly specified with appropriate sample size, ethical oversight, and minimal data loss (1.27% missed trials). The methodology is sufficiently detailed for replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C106"
+    ],
+    "result": "Subjects' predictions depend on both the stimulus generative probability and the recent stimulus history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C20, and C106 consistently report that predictions vary with both the generative probability and stimulus history. This is supported by experimental data shown in Figure 2 and statistical analyses throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C29",
+      "C107"
+    ],
+    "result": "Subjects exhibit an attractive sequential effect where the preceding stimulus increases the proportion of predictions identical to that stimulus, with effects modulated by stimulus generative probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C29, and C107 describe the attractive effect of the most recent stimulus. Figure 2 shows p\u0304(A|A) > p\u0304(A|B) across all probabilities with highly significant p-values (<1e-10), and the effect is stronger near p=0.5. The statistical evidence is robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C98",
+      "C100",
+      "C154"
+    ],
+    "result": "Subjects' responses exhibit a complex pattern including both attractive and repulsive sequential effects, with repulsive effects observed for the third-to-last stimulus when followed by BA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C98, C100, and C154 describe higher-order sequential effects. Figure 6c shows significant repulsive effects (p\u0304(A|ABA) < p\u0304(A|BBA)) for 8 probabilities (p<0.01 for 6, p<0.05 for 8). This pattern holds even for subjects best-fitted by unpredictability-cost models (C100), demonstrating robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C11",
+      "C102"
+    ],
+    "result": "The authors propose that sub-optimal and fluctuating predictions result from cognitive constraints under which humans behave rationally, rather than from erroneous beliefs about environmental non-stationarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C11, and C102 present the central theoretical hypothesis. This is supported by the development of the constrained inference framework (Equation 1), derivation of model predictions, and demonstration that these models account for observed behavioral patterns including the distinctive repulsive effects (C101).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C12",
+      "C14",
+      "C15",
+      "C16",
+      "C40",
+      "C43"
+    ],
+    "result": "Under the precision cost hypothesis, more precise posteriors are costly, leading to leaky integration where beliefs fluctuate with recent stimulus history rather than converging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16, C40, and C43 describe the precision cost model. The mathematical derivation (Equations 3-6) shows that this cost leads to exponentially-filtered counts equivalent to leaky integration. Figure 3 illustrates the non-convergent, fluctuating posteriors. The theoretical development is mathematically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C13",
+      "C17",
+      "C47",
+      "C53",
+      "C54",
+      "C56"
+    ],
+    "result": "Under the unpredictability cost hypothesis, unpredictable environments are costly, leading to convergent but biased inference toward more predictable (extreme) probability values, with sequential effects for Markov observers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C17, C47, C53-C54, and C56 describe the unpredictability cost model. The mathematical derivation (Equations 7-8) and Figure 3 show convergence to biased values closer to 0 or 1. The theoretical predictions are internally consistent and well-illustrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Model fitting shows 60% of subjects best-fitted by unpredictability-cost models and 65% by Markov-observer models. Bayesian model selection yields 70% expected probability for Markov-observer models (98% exceedance probability) but does not decisively favor either cost type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 report model selection results. The Bayesian model selection procedure is properly implemented (Methods section), and the confusion matrix analysis (C71) validates the fitting procedure with >70% correct model identification. The conclusion that both cost types capture different aspects of behavior is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C101"
+    ],
+    "result": "Only the precision-cost model with Markov order \u22651 reproduces the repulsive effect observed in subjects' data, where predictions are biased away from stimuli presented in more distant trials when followed by BA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C101 assert that only precision-cost Markov models predict repulsive effects. This is supported by theoretical analysis (Figure 5c, Figure 8), experimental data (Figure 6c), and the finding that even subjects best-fitted by unpredictability-cost models show this effect (C100), indicating it's a robust feature requiring the precision-cost explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C108"
+    ],
+    "result": "The brain infers stimulus generative probability under a constraint on the precision of its internal representations, and the inferred generative process may include higher-order statistics like transition probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, and C108 present the main conclusion. This is supported by: (1) model selection favoring Markov observers (C68-C69), (2) precision-cost models uniquely predicting observed repulsive effects (C5, C101), and (3) the qualitative match between precision-cost Markov model predictions and behavioral data (Figures 4-6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Confusion matrix analysis shows the model-fitting procedure correctly identifies the true model in at least 70% of simulations (>90% for most models).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 reports validation of the model-fitting procedure. This is a critical methodological check that demonstrates the fitting procedure can reliably distinguish between models, supporting the validity of the model selection results. The chance level (12.5%) is appropriately calculated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C135",
+      "C136"
+    ],
+    "result": "Both precision and unpredictability cost models produce attractive sequential effects of the most recent stimulus, but make quantitatively different predictions, and this diversity is found in subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C135, and C136 compare the two model families. Figure 4 shows both produce attractive effects but with different quantitative patterns. The finding that different subjects are best-fitted by different cost types (C65) supports the claim of behavioral diversity matching model diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Precision-cost models are slightly better than unpredictability-cost models at capturing the behavior of subjects they do not best fit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by visual comparison in Figure 4 (panels e-j) and is further substantiated by BIC analysis mentioned in the Appendix. This suggests precision-cost models may have broader applicability, though the effect is described as modest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "As more evidence is accumulated, the Bayesian posterior gradually narrows and converges towards the value of the stimulus generative probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 describes a well-established property of Bayesian inference, illustrated in Figure 3c-d (grey lines). This serves as a baseline for comparison with the constrained inference models and is mathematically correct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C87"
+    ],
+    "result": "With unpredictability-cost models, after 200 passive trials the Bernoulli observer predicts minimal sequential effects, while Markov observers with m\u2265n show attractive sequential effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C87 describe theoretical predictions illustrated in Figures 7b and 5. The Bernoulli observer's posterior converges after many observations, reducing sequential effects to transient fluctuations. The predictions are consistent with the mathematical framework (Equations 7-8).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Sequential effects in human predictions have been extensively documented in the literature, representing departures from optimal Bayesian inference, with traditional explanations attributing them to beliefs in environmental non-stationarity and leaky integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C6-C10 summarize prior literature on sequential effects. These are well-supported by extensive citations to historical and contemporary studies. The characterization of traditional explanations is accurate and provides appropriate context for the authors' alternative proposal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The notion of constrained optimization in human decision-making has gained traction across neuroscience, cognitive science, and economics, including efficient coding theories, bounded rationality, and resource-rational analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 provide theoretical context for the constrained inference framework. These are well-supported by citations to foundational work (Simon, Griffiths et al., etc.) and accurately characterize the broader intellectual landscape in which this work is situated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Traditional accounts attribute sequential effects to beliefs in sequential dependencies, formalized as inference assuming changing parameters. While humans adapt to changing environments, the statistics in this task and many previous studies are actually static.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 contrast traditional explanations with the experimental reality. The citations support the characterization of traditional accounts, and C118 correctly notes that the current task uses static statistics, motivating the need for an alternative explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Previous models have used different exponents for prior and likelihood, but with precision cost both are raised to the same exponent, yielding leaky integration equivalent to models assuming changing statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 position the precision-cost model relative to prior work. The mathematical relationship (Equation 4-6) is correctly derived, and the equivalence to leaky integration models is properly established with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "The minimization of a loss function formalizes a trade-off between inference optimality and cognitive constraints, though the proposal is not that the brain actively solves this optimization online but that it implements an effective solution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 clarify the theoretical interpretation. This is an important conceptual point that distinguishes between normative optimization and mechanistic implementation. The clarification (C124) appropriately tempers claims about neural implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The precision cost finds neural realization in probabilistic population codes where precision depends on neural activity and neuron number, which carry metabolic costs. Imprecisions account for decision variability and adaptive behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 connect the abstract precision cost to neural mechanisms. The citations to Ma et al., Seung & Sompolinsky, and Findling et al. appropriately support these connections. However, this remains somewhat speculative as direct neural evidence for this specific framework is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The unpredictability cost may arise from stochastic simulation of environments or mental compression of sequences, with entropy measuring compressibility. Humans prefer predictive information and unpredictable stimuli increase anxiety and neural activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C133 propose neural/cognitive bases for unpredictability cost. These are supported by citations to relevant literature (Battaglia, Kahneman, Planton, etc.). However, these remain plausible hypotheses rather than established mechanisms, appropriately presented as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C134",
+      "C178"
+    ],
+    "result": "Both precision and unpredictability costs predict sequential effects without explicit assumptions presupposing their existence, yielding attractive sequential effects of the most recent observation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134 and C178 highlight an important theoretical property: sequential effects emerge from the optimization framework rather than being assumed. This is demonstrated through the mathematical derivations and simulations (Figures 4-5, 7-8).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The psychology and neuroscience literature proposes many leaky integrator models. In the authors' approach, leaky integration is not an assumption about mechanisms but an optimal strategy under precision cost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C139 position the work relative to extensive prior literature on leaky integration. The extensive citations support C137, and C139 correctly characterizes the theoretical contribution: deriving rather than assuming leaky integration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Most prior studies focused on equiprobable (p=0.5) environments where stimuli play symmetric roles. In contrast, biased environments have one stimulus more probable than the other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C142 motivate the experimental design. The citations support the claim about prior focus on equiprobable cases, and the definitions of equiprobable vs. biased environments are correct. This justifies the comprehensive probability range tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C147"
+    ],
+    "result": "The finding that the proportion of prediction A is more extreme than the stimulus generative probability is consistent with observations by Edwards and conclusions of more recent reviews.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C147 connects current findings to historical literature. The citations to Edwards (1961, 1956) and Vulkan (2000) appropriately support this claim. This demonstrates consistency with prior observations while extending them across a broader probability range.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C148",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Recency effects are common across psychology domains. Both attractive and repulsive effects have been reported in prediction tasks, with heterogeneity explained by perceived randomness and relation to human performance. Edwards found attractive effects in similar tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148, C150-C153 review prior findings on recency effects. The extensive citations support the characterization of the literature. This provides appropriate context for the current findings of both attractive and repulsive effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Prior studies argue sequential effects result from imperfect inference of base rates and transition probabilities. Knowledge of transition probabilities is central to sequence processing, observed in infants and rhesus monkeys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C158 review literature on transition probability learning. The citations appropriately support these claims. This motivates the inclusion of Markov-observer models that track transition probabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C159",
+      "C160"
+    ],
+    "result": "Human performance in various inference tasks is often suboptimal, which may be explained by cognitive constraints at play in human inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C160 motivate the constrained inference approach. C159 is supported by citations to empirical studies showing suboptimal performance. C160 appropriately presents the cognitive constraints explanation as a proposal rather than established fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Other studies have considered cognitive constraints in inference, including fixed costs (Kominers), information-theoretic memory limits (Azeredo da Silveira & Woodford), and neural network approximations (Dasgupta). The current findings of sensitivity to both surprising and unsurprising observations distinguish this work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C166 position the work relative to related approaches. The citations appropriately support the characterization of prior models. C163 correctly notes that the observed sequential effects distinguish the current findings from predictions of some alternative models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C168"
+    ],
+    "result": "Minimizing the Kullback-Leibler divergence allows the model subject to obtain a posterior as close as possible to the optimal posterior, enabling reasonable task performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C168 justifies the choice of divergence measure in Equation 1. This is a standard choice in approximate inference, and the rationale is sound. The claim appropriately notes this is one possible measure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C169",
+      "C170"
+    ],
+    "result": "Rewarding subjects for correct predictions would change the optimal trade-off, resulting in posteriors closer to Bayesian. Incentivization is known to influence probability matching behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C170 discuss potential effects of incentivization. C169 is a reasonable theoretical prediction from the framework. C170 is supported by citation to Vulkan (2000). These appropriately acknowledge a limitation of the current study (no incentives).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C175",
+      "C177"
+    ],
+    "result": "The approach of minimizing KL divergence is widely used in machine learning (variational inference) and has inspired cognitive models. Unlike variational techniques that restrict to tractable distribution families, the precision and unpredictability costs are smooth and allow any distribution but penalize certain types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C173, C175, and C177 position the framework relative to variational inference. The citations appropriately support the characterization of variational methods. The distinction drawn in C177 is conceptually important and correctly stated.",
+    "result_type": "MINOR"
+  }
+]

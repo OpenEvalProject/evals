@@ -1,0 +1,2117 @@
+{
+  "submission": {
+    "id": "f0af556d-1936-4e87-b427-97ac57df7aa8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T05:14:49.912348Z",
+    "updated_at": "2025-12-04T05:14:49.912348Z"
+  },
+  "content": [
+    {
+      "id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "submission_id": "f0af556d-1936-4e87-b427-97ac57df7aa8",
+      "content_type": "manuscript",
+      "content_text": "# Cytosolic and endoplasmic reticulum chaperones inhibit wt-p53 to increase cancer cells' survival by refluxing ER-proteins to the cytosol\n\n## Authors\n\n- Salam Dabsan<sup>1</sup>\n- Gali Zur<sup>1</sup> ([ORCID: 0009-0006-0230-8967](https://orcid.org/0009-0006-0230-8967))\n- Naim Abu-Freha<sup>2</sup>\n- Shahar Sofer<sup>1</sup>\n- Iris Grossman-Haham<sup>1</sup> ([ORCID: 0000-0001-5764-9036](https://orcid.org/0000-0001-5764-9036))\n- Ayelet Gilad<sup>1</sup>\n- Aeid Igbaria<sup>1</sup> ([ORCID: 0000-0003-3940-1824](https://orcid.org/0000-0003-3940-1824)) \u2020\n\n### Affiliations\n\n1. Department of Life Sciences, Faculty of Natural Sciences, Ben-Gurion University of the Negev Beer Sheva Israel ([ROR:05tkyf982](https://ror.org/05tkyf982))\n2. Institute of Gastroenterology and Liver Diseases, Soroka Medical Center, Faculty of Health Sciences, Ben Gurion University of the Negev Beer Sheva Israel ([ROR:05tkyf982](https://ror.org/05tkyf982))\n3. The Ilse Katz Institute for Nanoscale Science and Technology, Ben-Gurion University of the Negev Beer Sheva Israel ([ROR:05tkyf982](https://ror.org/05tkyf982))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe endoplasmic reticulum (ER) is an essential sensing organelle responsible for the folding and secretion of almost one-third of eukaryotic cells' total proteins. However, environmental, chemical, and genetic insults often lead to protein misfolding in the ER, accumulating misfolded proteins, and causing ER stress. To solve this, several mechanisms were reported to relieve ER stress by decreasing the ER protein load. Recently, we reported a novel ER surveillance mechanism by which proteins from the secretory pathway are refluxed to the cytosol to relieve the ER of its content. The refluxed proteins gain new prosurvival functions in cancer cells, thereby increasing cancer cell fitness. We termed this phenomenon ER to CYtosol Signaling (or \u2018ERCYS\u2019). Here, we found that in mammalian cells, ERCYS is regulated by DNAJB12, DNAJB14, and the HSC70 cochaperone SGTA. Mechanistically, DNAJB12 and DNAJB14 bind HSC70 and SGTA - through their cytosolically localized J-domains to facilitate ER-protein reflux. DNAJB12 is necessary and sufficient to drive this phenomenon to increase AGR2 reflux and inhibit wt-p53 during ER stress. Mutations in DNAJB12/14 J-domain prevent the inhibitory interaction between AGR2-wt-p53. Thus, targeting the DNAJB12/14-HSC70/SGTA axis is a promising strategy to inhibit ERCYS and impair cancer cell fitness.\n\n## Introduction\n\nThe ER is an essential sensing organelle that provides multiple functions, including protein synthesis, folding, and secretion of almost one-third of all proteins in eukaryotic cells. In addition, the ER controls the cellular redox state, calcium storage, lipid metabolism, xenobiotics, and drug detoxification (Reid and Nicchitta, 2015; Rapoport, 2007; Jan et al., 2014; Goyal and Blackstone, 2013). The ER also coordinates the stress pathways significantly involved in maintaining the crosstalk between the intra- and the extracellular environment (Walter and Ron, 2011; Ellgaard and Helenius, 2003).\n\nIn addition, the ER is the entry point of proteins in the secretory pathway; these proteins are synthesized on the ER-associated ribosomes and destined to be secreted or targeted to the membrane (Shao and Hegde, 2011; Obacz et al., 2019; Matlack et al., 1999). In the ER, the nascent peptides gain their correctly folded structure and other posttranslational modifications through the activity of ER-resident chaperones. If correctly folded, those proteins exit the ER to their destination. Unfolded/misfolded proteins translocate to the cytosol, where they are ubiquitinylated and degraded by the proteasome in an ER-associated degradation (ERAD) mechanism (Obacz et al., 2019; Sicari et al., 2019; Carvalho et al., 2006; Travers et al., 2000; Harding et al., 2000).\n\nAccumulating misfolded proteins in the ER activates a signaling pathway called the unfolded protein response (UPR) (Oakes, 2020). Initially, the UPR aims to regain homeostasis by increasing the ER folding capacity by making new ER chaperones. At the same time, the UPR decreases the number of substrates entering the ER through the activity of the inositol-requiring enzyme (IRE1) and protein kinase RNA-like ER kinase (PERK). Once activated, the IRE1 RNAse domain cleaves the mRNA of a transcriptional factor called Xbp1 to increase the chaperones in the ER (Harding et al., 1999; Wang et al., 2000; Yoshida et al., 2001; Calfon et al., 2002; Lee et al., 2003). Moreover, high IRE1 activity causes a massive degradation of mRNAs translated by ribosomes in proximity to the ER membrane. This regulated IRE1-dependent degradation (RIDD) mainly targets those mRNAs that primarily encode for proteins in the secretory pathway to decrease the protein load on the ER (Hollien and Weissman, 2006). On the other hand, PERK activation results in eIF2\u03b1 phosphorylation and inhibition of global protein translation (Harding et al., 2000; Kumar et al., 2001). Thus, the ERAD and the UPR arms (PERK and IRE1) aim to decrease the number of client proteins in the ER, thereby reducing the ER protein load.\n\nAlong the same lines, we recently reported a novel ER surveillance mechanism by which proteins from the secretory pathway are refluxed from the ER to the cytosol to relieve the ER of its contents during stress. This conserved mechanism (from yeast to humans) targets a wide range of ER-resident and secretory proteins (Igbaria et al., 2019; Sicari et al., 2021; Lajoie and Snapp, 2020). The reflux process is constitutively activated in cancer cells, causing many proteins to be enriched in the cytosol of cultured cancer cells, murine models of brain tumors, and human patients (Sicari et al., 2021). In the cytosol, the refluxed proteins gain new prosurvival functions and thus increase cancer cell fitness. This was shown using the ER-resident PDI-like protein AGR2 that is refluxed from the ER of cancer cells to interact and inhibit the activity of prosurvival proteins in the cytosol, especially wt-p53. We named this phenomenon \u2018ERCYS\u2019(Sicari et al., 2021).\n\nOur previous work in yeast showed that the reflux process depends on the activity of chaperones from both the ER and the cytosol and is mainly regulated by the high copy lethal J-protein (HLJ1), an ER-resident tail-anchored HSP40 cochaperone, containing a cytosolically-disposed Dna-J domain (Igbaria et al., 2019; Lajoie and Snapp, 2020). Upon ER stress, HLJ1 interacts with the cytosolic machinery to activate the removal of proteins from the ER to the cytosol. In the cytosol, the refluxed proteins remain in protein complexes with cytosolic chaperones (Igbaria et al., 2019).\n\nIn this study, we found that HLJ1 is conserved through evolution and that mammalian cells have five putative functionality orthologs of the yeast HLJ1. Those five DNAJ- proteins (DNAJB12, DNAJB14, DNAJC14, DNAJC18, and DNAJC30) reside within the ER membrane with a J-domain facing the cytosol (Piette et al., 2021; Malinverni et al., 2023). Among those, we found that DNAJB12 and DNAJB14, which are strongly related to the yeast HLJ1 (Grove et al., 2011; Yamamoto et al., 2010), are essential and sufficient for determining cells' fate during ER stress by regulating ERCYS. Their role in ERCYS and determining cells' fate depends on their HPD motif in the J-domain. Downregulation of DNAJB12 and DNAJB14 increases cell toxicity and wt-p53 activity during etoposide treatment. Mechanistically, DNAJB12 and DNAJB14 interact and recruit cytosolic chaperones (HSC70/SGTA) to promote ERCYS. This later interaction is conserved in human tumors including colorectal cancer.\n\nIn summary, we propose a novel mechanism by which ER-soluble proteins are refluxed from the ER to the cytosol, permitting new inhibitory interactions between spatially separated proteins. This mechanism depends on cytosolic and ER chaperones and cochaperones, namely DNAJB12, DNAJB14, SGTA, and HSC70. As a result, the refluxed proteins gain new functions to inhibit the activity of wt-p53 in cancer cells.\n\n## Results\n\n### Five putative orthologs of the yeast HLJ1 in mammalian cells\n\nInitially, we sought to identify factors that cause ER to cytosol reflux to affect wt-p53 activity in cancer cells. For this, we searched for orthologs of the yeast HLJ1 that we recently identified as an essential component in the reflux of ER proteins in S. cerevisiae (Sicari et al., 2021). Comparing the amino acid sequences revealed significant similarities between the yeast protein HLJ1p and the mammalian proteins DNAJB12 and DNAJB14 (Supplementary file 1 and Figure 1A). DNAJB12 and DNAJB14 are highly conserved in different species through evolution from yeast to humans (Figure 1A and B and Supplementary file 1). Moreover, DNAJB12 was previously reported to accelerate the degradation of membranal proteins by cooperating with HSC70, those functions also can be carried by HLJ1 in yeast (Grove et al., 2011; Yamamoto et al., 2010).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/102658/elife-102658-fig1-v1.jpg)\n\n**Figure 1.:** (A) Alignment shows the conservation of yeast-HLJ1 and their HPD domain from yeast to humans. (B) Phylogenic analysis showing the conservation of HLJ1 in different species. (C) The HPD motif within the J-domain is conserved in HLJ1 and its putative human orthologs DNAJB12, DNAJB14, DNAJC14, DNAJC18, and DNAJC30. (D) Schematic showing the different domains of HLJ1 and its orthologs, including a cytosolic J-domain, transmembrane domain, and endoplasmic reticulum (ER) domain.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/102658/elife-102658-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic showing the comparison between HLJ1 topology and the five putative orthologs as described (Piette et al., 2021) with a J-domain facing the cytosol and small endoplasmic reticulum (ER) domain.\n\nInterestingly, other DNAJ proteins were also found in our list of hits. Among those, we could find DNAJC14 and DNAJC18, both recently identified as DNAJC-proteins that are expressed on the ER membrane with a similar topology as the yeast HLJ1, with a J-domain facing the cytosol (Piette et al., 2021; Figure 1A\u2013C, Figure 1\u2014figure supplement 1, and Supplementary file 1). An intensive analysis of the entire J-domain of DNAJB12, DNAJB14, DNAJC14, and DNAJC18 revealed highly conserved J-domains in humans and other species (Figure 1A and C). In addition, three amino acids, HPD, are also conserved in all the tested orthologs (Figure 1C and D, Figure 1\u2014figure supplement 1). The HPD motif is conserved within the J-domain of those DNAJ proteins and is responsible for binding the cochaperones with the HSP70/HSC70 chaperones.\n\nFinally, it is important to emphasize that the four identified putative orthologs and another DNAJC protein - DNAJC30 - were shown to localize to the ER membrane with a J-domain facing the cytosol (Piette et al., 2021; Malinverni et al., 2023). DNAJC30 shares the same topology on the ER membrane, consisting of one transmembrane domain (or more for the DNAJC30) and polar residues (Figure 1D, Figure 1\u2014figure supplement 1). These data suggest that mammalian cells may have developed several orthologs of the yeast HLJ1. Among those, DNAJB12 and DNAJB14 are likely the ones that carry most of the HLJ1 function because of their high similarity (Figure 1). In addition, DNAJB12/14 has some role in degrading membranal proteins similar to those reported for HLJ1 (Grove et al., 2011; Yamamoto et al., 2010). Thus, we believe that DNAJB12 and 14 may be the ones that carry most of the yeast HLJ1 functions during ERCYS. DNAJC14, DNAJC18, and DNAJC30 are putative orthologs to the yeast HLJ1, based on their topology and J-domain, but with lower similarity scores.\n\n### DNAJB12 and DNAJB14 regulate AGR2 reflux from the ER to the cytosol\n\nPreviously, we showed that, during ER stress, the ER resident anterior gradient 2 (AGR2), a protein disulfide isomerase family member, and other ER-resident proteins are refluxed from the ER to the cytosol to interact and inhibit wt-p53 in different cancer cell lines (Sicari et al., 2021). Here, we wanted to test the role of our two strongest hits, DNAJB12 and DNAJB14, in the reflux of ER-resident proteins and wt-p53 activity (Grove et al., 2011; Yamamoto et al., 2010; Youker et al., 2004). For this, we transfected A549 cells with shRNA against DNAJB12, DNAJB14, or both at different time points (Figure 2\u2014figure supplement 1A, B). We treated the J-protein-silenced A549 cells with two different ER stress inducers: thapsigargin (Tg) -a sarco-ER Ca2 +ATPase, and tunicamycin (Tm) -N-linked-glycosylation inhibitor. In the absence of ER stress, there were no differences in the cytosolic accumulation of the three tested ER-localized proteins AGR2 (19.9 kDa), DNAJB11 (40.5 kDa), and HYOU1 (111.3 kDa) (Figure 2A\u2013C, Figure 2\u2014figure supplement 1C). Tm and Tg treatment increased the cytosolic enrichment of AGR2, DNAJB11, and HYOU1, mainly in the WT cells. Silencing DNAJB12 (DNAJB12-KD) or DNAJB14 (DNAJB14-KD) slightly affected the reflux of AGR2,DNAJB11 and HYOU1 in A549, MCF-7, and PC3 (Figure 2A\u2013C, Figure 2\u2014figure supplement 1C\u2013E). Because of their high homology, we speculate that DNAJB12 and DNAJB14 may have overlapping functions and can compensate for each other when downregulated.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/102658/elife-102658-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013C) Quantification of the subcellular protein fractionation (Digitonin fraction) of AGR2, DNAJB11, and HYOU1 in A549 cells as shown in (Figure 2\u2014figure supplement 1) N=3. (D) Representative immunoblot of p-21, phospho-p53, total-p53 (DO-1), and HSP90 in control cells and cells lacking DNAJB12, DNAJB14, or both N=3. (E\u2013G) Quantification of p53, phosph-p53, and P-21 levels as shown in D, respectively. (H) A549 were transfected with scrambled siRNA (scrambled), DNAJB12-targeted siRNA (D12\u2013KD), DNAJB14-targeted siRNA (D14\u2013KD), or both. After 24 hr, cells were transfected with p53-luciferase construct. Cells were treated with etoposide for 2 hr to induce wt-p53, followed by tunicamycin treatment for 16 hr, and luciferase experiments were performed. Biological triplicates, mean \u00b1 SD calculated using Prism 9 (GraphPad). (***p<0.001, **p<0.01, *p<0.05).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/102658/elife-102658-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A, B) Immunoblot showing the expression of DNAJB12 and DNAJB14 in A549 cells transfected with siRNA-targeted DNAJB12, DNAJB14, or both. (C\u2013E) Subcellular protein fractionation (Digitonin fraction) of AGR2, DNAJB11, and HYOU1 during endoplasmic reticulum (ER) stress with tunicamycin (Tm) and Thapsigargin in DNAJB12, DNAJB14, or DNAJB12/14 -silenced A549, MCF-7, and PC3 cells, respectively. (F) Total protein levels from whole cell lysates in A549 cells for AGR2, DNAJB11, DNAJB12, DNAJB14. (G, H) quantification of DNAJB11 and AGR2 protein levels as shown in F. (I\u2013K) Relative mRNA levels of AGR2, DNAJB11, and HYOU1 in A549 cells. (L\u2013N) Relative mRNA levels of AGR2, DNAJB11, and HYOU1 in PC3 cells. (O) p21, phosph-p53 and total-p53 levels in DNAJB12, DNAJB14, and double-knock down cells treated with etoposide and tunicamycin.\n\nThen, we tested the reflux of ER proteins in the double knockdown of DNAJB12 and DNAJB14 (DNAJB12/14-DKD) under the same conditions of ER stress. During stress, silencing DNAJB12 and DNAJB14 highly affected the cytosolic accumulation of all three tested proteins independently of their molecular sizes (Figure 2A\u2013C , Figure 2\u2014figure supplement 1C\u2013E). Those data clearly show that the reflux of AGR2 and other ER-resident proteins depends on DNAJB12 and DNAJB14. Silencing either protein is insufficient, and only in the double knockdown cells do we see a significant effect and inhibition of ER-protein reflux.\n\nThose changes in the cytosolic accumulation of the ER proteins are independent of their expression levels in the different cell lines. In the absence of ER stress, the levels of the three ER-resident proteins (AGR2, DNAJB11, and HYOU1) were similar in wild-type and J-protein-silenced A549, MCF7, and PC3 cells at the mRNA and protein levels. During ER stress, the levels of DNAJB11 were not changing, while AGR2 and HYOU1 slightly increased in the scrambled, DNAJB12-KD, DNAJB14-KD, and DNAJB12/14-Double KD cells in A549 and PC3 cell lines. This indicates that silencing DNAJB12 and DNAJB14 did not affect the overall protein levels in those cells (Figure 2\u2014figure supplement 1F\u2013N).\n\nThese data further confirm our hypothesis that the DNAJB12 and DNAJB14 are top candidates for being closet orthologues to the yeast HLJ1 and are necessary to drive ER to cytosol reflux. Moreover, because DNAJB12 and DNAJB14 result in the reflux of proteins from the ER to the cytosol, where those proteins are stable and not degraded by the ubiquitin-proteasome system, we speculate that DNAJB12 and DNAJB14 carry novel functions that are independent of their reported ERAD function as facilitators of membranal protein degradation.\n\nWe then wanted to examine whether the gain of function of AGR2 and the inhibition of wt-p53 depends on the activity of DNAJB12 and DNJAB14. We assayed the phosphorylation state of wt-p53 and p21 protein expression levels (a downstream target of wt-p53 signaling) during etoposide treatment. In these conditions, there was an increase in the phosphorylation of wt-p53 in the control cells and in cells knocked down with DNAJB12, DNAJB14, or both. This phosphorylation also increases protein levels of p21 (Figure 2D\u2013G, Figure 2\u2014figure supplement 1O). Tm addition to cells treated with etoposide resulted in a reduction in wt-p53 phosphorylation, and as a consequence, the p21 protein levels were also decreased (Figure 2D\u2013G, Figure 2\u2014figure supplement 1O). Silencing DNAJB12 and DNAJB14 in A549 and MCF-7 cells rescued wt-p53 phosphorylation and p21 levels (Figure 2D\u2013G, Figure 2\u2014figure supplement 1O). Moreover, similar results were obtained when we assayed the transcriptional activity of wt-p53 in cells transfected with a luciferase reporter under the p53-DNA binding site (Figure 2H). In the latter experiment, etoposide treatment increased the luciferase activity in all the cells tested. Adding ER stress to those cells decreased the luciferase activity except in cells silenced with DNAJB12 and DNAJB14.\n\nThese data confirm that DNAJB12 and DNAJB14 are involved in the reflux of ER proteins in general and AGR2 in particular. Inhibition of DNAJB12 and DNAJB14 prevented the inhibitory interaction between AGR2 and wt-p53 and thus rescued wt-p53 phosphorylation and its transcriptional activity as a consequence.\n\nOverexpression of the WT-DNAJB12 in A549 cells was sufficient to decrease wt-p53 luciferase activity in cells treated with etoposide compared to the control cells (Figure 3A). To test whether this decrease in wt-p53 activity requires a functional DNAJ protein, we generated mutations in the HPD motif of the DNAJB12 J-domain -needed for its cochaperone activity and the recruitment of HSC70- by substituting the HPD to QPD at position 139. Although the WT and the QPD mutants were expressed at the same levels (Figure 3\u2014figure supplement 1A), overexpression of the DNAJB12-QPD mutant could not decrease the p53-luciferase activity under the same conditions (Figure 3A). On the other hand, overexpression of DNAJB14 alone or the DNAJB14-QPD mutant (substituting the HPD to QPD at position 136) could not inhibit the luciferase activity of wt-p53 (Figure 3B, Figure 3\u2014figure supplement 1B). Those data indicate that DNAJB12 can inhibit wt-p53 activity in A549 cells treated with etoposide in a mechanism that requires its HPD motif and a functional J-domain. The inability of the DNAJB14-WT or the DNAJB14 H136Q mutant to decrease the wt-p53 activity may hint at DNAJB14\u2019s ability to cause ER-protein reflux when overexpressed at high levels.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/102658/elife-102658-fig3-v1.jpg)\n\n**Figure 3.:** (A, B) Cells were co-transfected with pCDNA3 plasmid expressing DNAJB12, DNAJB14, or the empty plasmid and p53-luciferase construct after 24 hr. Cells were treated with etoposide for 4 hr to induce wt-p5,3, and luciferase experiments were performed. Biological triplicates (N=3), mean \u00b1 SD calculated using Prism 9 (GraphPad). (***p<0.001, **p<0.01, *p<0.05). (C, D) Subcellular protein fractionation (Digitonin fraction) of AGR2, DNAJB11, and HYOU1in cells overexpressing WT and QPD mutant of DNAJB12 and DNAJB14, respectively, at different time points. (E, F) Quantification of the subcellular protein fractionation of AGR2, DNAJB11, and HYOU1 in A549 cells as shown in (C, D) Biological quadruplicate (N=4).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/102658/elife-102658-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A, B) Immunoblot showing the expression of FLAG-tagged DNAJB12 and HA-tagged DNAJB14 in A549 cells overexpressing either WT and QPD mutant of DNAJB12 or DNAJB14, respectively for 12 hr (left) or 24 hr (right). (C) Relative mRNA levels of spliced Xbp1 and Bip (Unfolded Protein Response markers) in A549 cells overexpressing WT and QPD mutant of DNAJB12 or DNAJB14. (D) Relative BiP mRNA levels in -Rex293 cells overexpressing DAJB12 and the QPD mutant with and without doxycycline (Dox). (E\u2013G) Relative AGR2, HYOU1, and DNAJB11 mRNA levels in A549 cells overexpressing DNAJB12 WT or QPD mutant. (H) Cell viability of A549 cells overexpressing either WT and QPD mutant of DNAJB12 or DNAJB14 for the indicated time points.\n\nWe previously found that the yeast HLJ1 is sufficient to induce the reflux of ER proteins from the ER to the cytosol (Igbaria et al., 2019). Thus, we hypothesized that overexpression of DNAJB12 may induce ERCYS and result in wt-p53 inhibition (Figure 3A and B). To test this hypothesis, we assayed the reflux of AGR2 during ERCYS. First, we tested whether DNAJB12 and DNAJB14 can promote ERCYS in cancer cells without ER stress and just by overexpression of DNAJB12 or DNAJB14. We performed subcellular protein fractionation in cells overexpressing DNAJB12 or DNAJB14 and their QPD mutants. Overexpressing DNAJB12 in A549 cells was sufficient to reflux AGR2, DNAJB11, and HYOU1 from the ER to the cytosol at 12 and 24 hr post-induction (Figure 3C and E).\n\nOn the other hand, overexpressing DNAJB14 alone was insufficient to increase the cytosolic accumulation of the tested ER-resident proteins, compared to DNAJB12 overexpression (Figure 3C\u2013F). To exclude the possibility that DNAJB12 overexpression causes ER-protein reflux by inducing ER stress and activating the UPR, we tested the levels of Xbp1s and Bip (targets of the IRE1 and ATF6 arms of the UPR). DNAJB12 or DNAJB14 overexpression did not increase the levels of either xbp1s or Bip in the tested conditions (Figure 3\u2014figure supplement 1C, D). Those data confirm that DNAJB12 is sufficient to induce ERCYS and the reflux of AGR2 to the cytosol to inhibit wt-p53 activity. This reflux of ER proteins depends on the activity of the J-domain of DNAJB12 and is independent of the UPR activation in cells overexpressing DNAJB12 (Figure 3\u2014figure supplement 1C, D). In those conditions, no AGR2, HYOU1, or DNAJB11 induction was observed (Figure 3\u2014figure supplement 1E\u2013G). Those results argue against the idea that overexpressing DNAJB12 may lead to refluxing proteins from the ER because of an increase in the total protein levels (Figure 3\u2014figure supplement 1E\u2013G). Moreover, those data may indicate that an overlapping redundancy may exist between DNAB12 and DNAJB14 and that only some of the DNAJB12 functions are carried by DNAJB14. Finally, the sufficiency of DNAJB12 is similar to the HLJ1 sufficiency in refluxing ER proteins in yeast.\n\nIt is important to note that overexpression of DNAJB12 for more than 24 hr was toxic compared to cells overexpressing the DNAJB12-QPD mutant or the empty vector in A549 and T-Rex-293 cells (Figure 3\u2014figure supplement 1H). These data further indicate that DNAJB12 and DNAJB14 are true orthologs of the yeast HLJ1 (High-copy Lethal J-protein or HLJ1), which was also found to be toxic when overexpressed. This lethality may stem from debulking the ER of its content at late time points.\n\nMoreover, overexpressing the DNAJB12-WT in A549 cells treated with tunicamycin maintained the reflux of AGR2, DNAJB11, HYOU1, and the Protein Disulfide Isomerase (PDI). Overexpressing DNAJB12-QPD has a dominant negative effect on the ER-protein reflux during ER stress (Figure 4A\u2013E, Figure 4\u2014figure supplement 1A). DNAJB14-wt and DNAJB14-HPQ overexpressing inhibited ER protein reflux during ER stress. (Figure 4F\u2013J, Figure 4\u2014figure supplement 1B, C). This latter result further strengthens the idea that a functional HPD motif of DNAJB12 is necessary to reflux ER proteins to the cytosol and that a proper ratio between DNAJB12 and DNAJB14 is necessary to drive ERCYS. It is also possible that overexpression of the WT-DNAJB14 may inhibit the protein reflux if DNAJB14 competes and depletes other necessary components for the reflux process when overexpressed. This suggests the two proteins may have different functions expressed at high levels despite their overlapping and redundant functions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/102658/elife-102658-fig4-v1.jpg)\n\n**Figure 4.:** (A) Subcellular protein fractionation (Digitonin fraction) of AGR2, DNAJB11, and HYOU1in cells overexpressing either WT and QPD mutant of DNAJB12 during ER stress with tunicamycin (Tm). (B\u2013E) Quantification of the subcellular protein fractionation of AGR2, DNAJB11, and HYOU1 in A549 cells as shown in A and Figure 4\u2014figure supplement 1A. Biological triplicates (N=3) (F) Subcellular protein fractionation (Digitonin fraction) of AGR2, DNAJB11, and HYOU1 in cells overexpressing WT and QPD mutant of DNAJB14 during ER stress with tunicamycin (Tm). (G\u2013J) Quantification of the subcellular protein fractionation of AGR2, DNAJB11, and HYOU1 in A549 cells as shown in F and Figure 4\u2014figure supplement 1B, C. Biological quadruplicates (N=4) (***p<0.001, **p<0.01, *p<0.05).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/102658/elife-102658-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Subcellular protein fractionation (Digitonin fraction) of AGR2, DNAJB11, and HYOU1 in A549 cells overexpressing WT and QPD mutant of DNAJB12. (B) Subcellular protein fractionation (Digitonin fraction) of AGR2, DNAJB11, and HYOU1in cells overexpressing either WT and QPD mutant of DNAJB14 during endoplasmic reticulum (ER) stress with tunicamycin (Tm). (C) Subcellular protein fractionation (Digitonin fraction) of AGR2, DNAJB11, and HYOU1 in cells overexpressing WT and QPD mutant of DNAJB14 during ER stress with Tm.\n\n### HSC70-SGTA axis regulates ER-protein reflux\n\nBecause the reflux process requires a functional HPD motif in the J-domain, we hypothesize that HSC70 and other cytosolic partners of ER-localized J-proteins may be necessary. To test this hypothesis, we performed coimmunoprecipitation experiments to assay the binding of DNAJB12/14, HSC70/SGTA (small glutamine-rich tetratricopeptide repeat, containing protein-\u03b1 and cochaperone of HSC70), and the ER-localized proteins that are refluxed during stress. To assay the binding of DNAJB12 and DNAJB14 to the cytosolic partners, we used the FLAG-tagged DNAJB12 and the HA-tagged DNAJB14 and made stable lines using the Flp-In T-REx-293 cell lines (Thermo Fisher) for doxycycline-inducible gene expression. Overexpression of DNAJB12 in T-REx-293 cells shows an interaction between the HSC70 cochaperone (SGTA) and DNAJB12 in cells treated with doxycycline or doxycycline and tunicamycin (Figure 5A, Figure 5\u2014figure supplement 1A). In those conditions, overexpressed FLAG-tagged DNAJB12 interacts with HSC70 as well (Figure 5A, Figure 5\u2014figure supplement 1A). Those data suggest that when DNAJB12 is overexpressed, it binds and recruits HSC70/SGTA to activate the ER protein reflux.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/102658/elife-102658-fig5-v1.jpg)\n\n**Figure 5.:** (A) T-Rex293 cell lines overexpressing FLAG-tagged DNAJB12 using the Tet-On system for Doxycycline-inducible gene expression were treated with doxycycline to induce DNAJB12 expression. FLAG-DNAJB12 interaction with SGTA was analyzed using coimmunoprecipitation assay N=3. (B) Representative immunoblot showing the interaction between SGTA in one hand and DNAJB12, DNAJB14, and HSC70 in A549 cells treated with tunicamycin and thapsigargin as indicated. Quantified in Figure 5\u2014figure supplement 1I\u2013N. N=3 (C) A representative immunoblot showing the interaction between SGTA and the ER-resident proteins AGR2, PRDX4, and DNAJB11 in A549 cells treated with tunicamycin and thapsigargin as indicated. N=3. (D) A representative immunoblot showing the interaction between SGTA and the ER-resident proteins AGR2, PRDX4, and DNAJB11 in A549 cells depleted of DNAJB12/14 treated with tunicamycin and thapsigargin as indicated. (E) AlphaFold2 modeling of AGR2 and SGTA. N and C termini are shown, as well as cysteine 81 in AGR2. Bottom-coloring DNAJB12-silenced cells according to confidence in prediction according to per-residue confidence (pLDDT) scale (see legend). Note the high confidence in the predictions of the thioredoxin domain in AGR2 and the TRP domain in SGTA (circled in dashed lines). (F) ColabFold modeling of the SGTA-AGR2 interaction interface. The unstructured N-terminal region of AGR2 was removed for clarity. Top \u2013 cys81 in AGR2 and cys153 in SGTA are found within bonding distance, shown in stick presentation and colored yellow. Right\u2013zoom into the boxed region, showing the sulfur atoms of the cysteine residues as spheres\u2014bottom - coloring according to confidence in prediction according to pLDDT. Inter predicted aligned error (PAE) plot is shown with regions of low PAE (blue), which indicates a confident prediction.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/102658/elife-102658-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) T-Rex293 cell line overexpressing DNAJB12 using the Tet-On system for Doxycycline-inducible gene expression were treated with doxycycline to induce DNAJB12 expression. DNAJB12 interaction with SGTA was analyzed by coimmunoprecipitation assay. (B) Representative immunoblot showing the interaction between SGTA in one hand and DNAJB12, DNAJB14, and HSC70 in A549 cells treated with tunicamycin and thapsigargin as indicated- quantified in M. (C) Representative immunoblot showing the interaction between SGTA in one hand and DNAJB12, DNAJB14, and HSC70 in PC3 cells treated with tunicamycin and thapsigargin as indicated. (D) Coimmunoprecipitation assay for HSC70, DNAJB12, and DNAJB14 during endoplasmic reticulum (ER) stress with tunicamycin and thapsigargin as indicated. (E) A representative immunoblot showing the interaction between SGTA on one hand and the ER-resident proteins AGR2, PRDX4, and DNAJB11 in A549 cells treated with tunicamycin and thapsigargin as indicated. (F) A representative immunoblot showing the interaction between SGTA and PRDX4 in DNAJB12/14 double knockout PC3 cells treated with tunicamycin and thapsigargin as indicated. (G) Colocalization of SGTA and AGR2 in tumor from Colorectal cancer (CRC) patients. Green SGTA Alexa-Flour 680, Red AGR2 Alexa-Flour 555, scale bar=17\u00b5M. (H) Zoom-in on the rectangular zones in (G). (I, J) Relative mRNA levels of DNJB12 and DNAJB14 in A549 cells, respectively. (K\u2013M) Relative DNAJB14 protein levels in A549 cells treated with Tm and Tg in A549 cells as shown in B and Figure 5B (N=3). (N) Average of the DNAJB14 levels calculated in K-M and shown. (O) Averaged DNAJB14 protein levels in PC3 cells (represented in C) treated with tunicamycin (Tm) and Tg (N=3).\n\nWe then tested whether the SGTA binds endogenous DNAJB12 and DNAJB14 in A549 cells treated with ER stress inducers. For this, we immunoprecipitated SGTA during Tm and Tg treatment and found that it binds DNAJB14 under normal and ER stress conditions, and this interaction increases slightly with ER stress. In addition, SGTA-DNAJB12 binding was almost not present in normal conditions. During ER stress conditions, the binding between DNAJB12 and SGTA was enriched compared to the control (Figure 5B, Figure 5\u2014figure supplement 1B, C, and Figure 5\u2014figure supplement 1I\u2013O). In those conditions, the interaction between DNAJB12 and DNAJB14 is increased during ER stress, while there is no change in the interaction with HSC70 (Figure 5\u2014figure supplement 1D). Moreover, in those conditions, the interaction between DNAJB12 and DNAJB14 also increases during ER stress, which may indicate that DNAJB12 and DNAJB14 heterodimerize and may form high-order oligomers. From those data, we demonstrate that DNAJB12 and DNAJB14 constitutively bind HSC70. Upon ER stress, DNAJB12 and DNAJB14 interact with each other and recruit SGTA to this complex without any change in the total protein levels of DNAJB12 and DNAJB14 (Figure 5\u2014figure supplement 1I\u2013O).\n\nTo test whether this complex is important for the reflux of ER proteins, we immunoprecipitated the cytosolic SGTA and examined the interaction with the refluxed ER proteins. SGTA immunoprecipitation showed an increased interaction between the cytosolic SGTA and the ER-resident proteins AGR2, PRDX4, and DNAJB11 (Figure 5C, Figure 5\u2014figure supplement 1E). These data are important because SGTA and the ER-resident proteins (PRDX4, AGR2, and DNAJB11) are known to be expressed in different compartments (Cziepluch et al., 1998; Tavender et al., 2008; Yu et al., 2000; Bergstr\u00f6m et al., 2014; Gupta et al., 2012), and here we report that during ER stress they interact, and the interaction occurs only when those ER-resident proteins localize to the cytosol. The interaction between SGTA and the refluxed ER proteins is abrogated when DNAJB12 and DNAJB14 are knocked down in A549 and PC3 cell lines (Figure 5D, Figure 5\u2014figure supplement 1F). This last result supports the conclusion that under ER stress the refluxed ER proteins have to originate from inside the ER and be refluxed through DNAJB12 and DNAJB14 to interact later with cytosolic SGTA.\n\nOverall, those data show that the mechanism of action in mammalian cells is similar to that of yeast, where HLJ1 recruits cytosolic chaperones and cofactors to cause ER-proteins reflux. In mammalian cells, the reflux process depends on cochaperones from the ER membrane DNAJB12 and DNAJB14 and their J-domain facing the cytosol. During ERCYS, HSC70 and SGTA are recruited by DNAJB12/14 to facilitate the reflux of proteins to the cytosol.\n\nNext, we sought to map the proposed interaction interface between AGR2 and SGTA. For this, we used ColabFold, an implementation of the neural network-based model AlphaFold2 (Jumper et al., 2021; Mirdita et al., 2022). First, we used AlphaFold2 to predict the structures of the individual proteins (Figure 5E). As expected, AGR2 was modeled as a thioredoxin-like domain with an unstructured N-terminal extension of 55 amino acids (Patel et al., 2013). AGR2 harbors a single cysteine residue\u2014cys81\u2014within a CPHS motif, placed at the N-terminus of an \u03b1-helix, as the canonical CXXC motif in the thioredoxin superfamily (Martin, 1995). SGTA was modeled with an N-terminal homodimerization domain, a TRP domain, and a C-terminal helical domain (Dutta and Tan, 2008; Chartron et al., 2012). When modeling the interaction between the two proteins, cys81 of AGR2 was placed within bonding distance from cys153 of SGTA, suggesting that the two proteins interact by forming a mixed disulfide bond (Figure 5F). Residues in the vicinity of these cysteines, both from SGTA and AGR2, are predicted to stabilize the interaction between the proteins via a network of hydrogen bonds and salt bridges.\n\nFinally, we tested if the SGTA interaction with AGR2 is also conserved in human tumors. For this, we tested the colocalization of AGR2 and SGTA in tissues isolated from tumors of colorectal cancer patients and compared them to non-tumor tissue from the same patients. In those conditions, SGTA colocalizes with AGR2 in the tumor tissue and not in the healthy non-tumor tissue (Figure 5\u2014figure supplement 1G, H).\n\n### The J domains of DNAJB12 And DNAJB14 regulate cell fate during ER stress\n\nFinally, we performed an XTT assay to measure cellular metabolic activity and to test cell viability and proliferation in the control cells compared to DNAJB12/14 silenced cells. In the control cells, etoposide decreased the proliferation index of A549 cells by twofold. Treating the cells with sub-toxic concentrations of tunicamycin decreased the toxicity caused by etoposide and increased the proliferation index (Figure 6A, Figure 6\u2014figure supplement 1A\u2013D). Silencing DNAJB12/DNAJB14 after etoposide treatment abolished the effect of Tm and resulted in no rescue of the proliferation index in the double-knockout cells compared to the scrambled controls (Figure 6A, Figure 6\u2014figure supplement 1A\u2013D). This indicates that in the absence of DNAJB12 and DNAJB14, cells lose the prosurvival gain of function of the refluxed proteins, and thus decreasing their proliferation index.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/102658/elife-102658-fig6-v1.jpg)\n\n**Figure 6.:** (A) XTT assay in A549 transfected with scrambled siRNA (scrambled), DNAJB12-targeted siRNA (D12\u2013KD), DNAJB14-targeted siRNA (D14\u2013KD), or both. After 24 hr, cells were treated with etoposide in the presence or absence of Tm for 48 hr. Biological triplicates. (B) XTT assay in SGTA-silenced A549 cells using CRISPRi and treated with etoposide in the presence or absence of tunicamycin for 48 hr. Biological triplicates, mean \u00b1 SD calculated using Prism 9 (GraphPad). (***p<0.001, **p<0.01, *p<0.05). Biological triplicates (C, D) Cartoon showing our working model in cancer cells.in normal conditions, there is almost full compartmentation between the ER and the cytosol (C). Under ER stress conditions, DNAJB12 and DNAJB14 recruit cytosolic chaperones and cochaperones (SGTA) to reflux AGR2 and other ER resident proteins to the cytosol and inhibit wt-p53 activity (D). Created with BioRender.com.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/102658/elife-102658-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A\u2013D) XTT assay in A549 transfected with scramble siRNA (scramble), DNAJB12-targeted siRNA (D12\u2013KD), DNAJB14-targeted siRNA (D14\u2013KD), or both. After 24 hr, cells were treated with etoposide in the presence or absence of Tm for 48 hr. (E, F) DNAJB12 is unfavorable prognostic marker in different cancer types including Head and neck squamous cell carcinoma (HNSC), Kidney renal clear cell carcinoma (KIRC) TCGA survival analysis- rnaseq database, red line represents low expression and blue lines represent high expression. (G\u2013J) High copy number of DNAJB12 is unfavorable prognostic marker in different cancer types including colon adenocarcinoma (COAD), acute myeloid leukemia (LAML), adrenocortical carcinoma (ACC), and uveal melanoma (UVM), red line represents high copy number and blue lines represent low copy number (K, L) High copy number of DNAJB14 is unfavorable prognostic marker in different cancer types including Pheochromocytoma and paraganglioma (PCPG) and UVM, red line represents high copy number and blue lines represent low copy number. (M, N) High copy number of SGTA is unfavorable prognostic marker in different cancer types including mesothelioma (MESO) and UVM, red line represents high copy number and blue lines represent low copy number. For all survival analyses: x-axis shows the patients\u2019 survival duration in months; y-axis shows the patients\u2019 survival rate.The p-values have been calculated using the log-rank test.\n\nWe then tested the role of SGTA on cell survival in cells treated with etoposide during ER stress. For this, we downregulated SGTA using the CRISPRi reported in Gilbert et al., 2014 and tested the XTT assay in SGTA-silenced A549 cells. Etoposide treatment decreased the proliferation of A549 cells; a subtoxic concentration of Tm rescued this toxicity and increased the proliferation index (Figure 6B). In SGTA-silenced cells, subtoxic concentrations of Tm could not recover proliferation in a similar way seen with DNAJB12/DNAJB14 double knockout (Figure 6B). These data indicate that DNAJB12, DNAJB14, and SGTA protect cells from toxicity by refluxing ER proteins to the cytosol, where they gain new functions to inhibit p53 activity. These findings are significant and propose DNAJB12 and DNAJB14 as promising targets in restoring p53 activity and cancer cell sensitization to anti-cancer therapies. Moreover, these data suggest that SGTA is not only needed for the reflux of the ER proteins but also affects the wt-p53 activity in cancer cells treated with ER stress and etoposide.\n\nFinally, we used the TCGA survival analysis database to find a correlation between DNAJB12, DNAJB14, and SGTA expression levels and the survival of cancer patients (Smith and Sheltzer, 2022; Smith and Sheltzer, 2018). A high copy number of DNAJB12, is associated with poor prognosis in many cancer types, including Head and neck squamous cell carcinoma (HNSC), Kidney renal clear cell carcinoma (KIRC), colon adenocarcinoma (COAD), acute myeloid leukemia (LAML), adrenocortical carcinoma (ACC), mesothelioma (MESO), and Pheochromocytoma and paraganglioma (PCPG) (Figure 6\u2014figure supplement 1E\u2013N). In uveal melanoma (UVM), a high copy number of the three tested genes, DNAJB12, DNAJB14, and SGTA, are associated with poor prognosis and poor survival (Figure 6\u2014figure supplement 1J, K, N). The high copy number of DNAJB12, DNAJB14, and SGTA is also associated with poor prognosis in many other cancer types but with low significant scores. More data is needed to make significant differences (TCGA database). We suggest that the high expression of DNAJB12/14 and SGTA in those cancer types may account for the poor prognosis by inducing ERCYS and inhibiting pro-apoptotic signaling, increasing cancer cells' fitness.\n\nOur working model suggests that during ER stress, DNAJB12 and DNAJB14 interact with each other and recruit SGTA to facilitate the reflux of ER proteins. This interaction of ER proteins with SGTA requires functional DNAJB12 and DNAJB14. Once in the cytosol, AGR2 interacts and inhibits wt-p53 activity, thus increasing cancer cell survival (Figure 6C and D).\n\n## Discussion\n\nERCYS is a novel mechanism that refluxes ER-resident protein from the ER to the cytosol in yeast and mammalian cells (Sicari et al., 2021). In cancer cells, ERCYS acts as a prosurvival process to increase cancer cell fitness. This is done by (1) decreasing ER-protein load and (2) refluxing of prosurvival proteins (such as AGR2) to gain new functions in the cytosol and inhibit proapoptotic protein signaling (Sicari et al., 2021). Despite that, the mechanism by which this process causes the reflux of those proteins to the cytosol is still unknown. Previously, we showed that the yeast cochaperone HLJ1 (ER-membrane localize Type-II HSP40 protein) is responsible for this phenomenon (Igbaria et al., 2019).\n\nHere, we present evidence that ERCYS is regulated by the action of at least two ER-localized DNAJ proteins, namely DNAJB12 and DNAJB14 (Figure 1, Supplementary file 1 and Figure 1\u2014figure supplement 1). DNAJB12 and DNAJB14 are the real orthologs of the yeast HLJ1 by: (1) showing that DNAJB12 and DNAJB14 have a high similarity protein sequences with the yeast HLJ1, (2) DNAJB12, DNAJB14, and HLJ1 localize to the ER membrane with a J-domain facing the cytosol, (3) DNAJB12 is toxic when overexpressed (Figure 3\u2014figure supplement 1), this toxicity is similar to the one reported for the yeast HLJ1 (High-copy Lethal J-protein 1). A toxicity that can be a result of depleting the ER of its content once DNAJB12 and DNAJB14 are overexpressed, and (4) We show that the role of DNAJB12 and DNAJB14 in ER-protein reflux is similar to the reported function of those DNAJBs in the escape of nonenveloped viruses from the ER to the cytosol (Goodwin et al., 2011; Goodwin et al., 2014). We believe that viruses used a conserved mechanism to hijack the HLJ1 orthologs DNAJB12 and DNAJB14 to exit the ER. We also found that DNAJC14, DNAJC18, and DNAJC30 are homologs of DNAJB12 and DNAJB14 (Figure 1, Figure 1\u2014figure supplement 1, and Supplementary file 1). Those DNAJC proteins were reported to have an ER transmembrane domain and a J-domain facing the cytosol (Piette et al., 2021). Further studies are needed to investigate the role of the five mammalian orthologs and whether they have specificity towards different substrates and may reflux different sets of proteins.\n\nIt is important to note that the role of the HLJ1 orthologues in mammalian cells differs from those reported earlier by Grove et al., 2011; Yamamoto et al., 2010; Youker et al., 2004. We previously showed in yeast that the function of HLJ1 and probably of its orthologues is independent of its function in ERAD. In ERAD, HLJ1 facilitates the degradation of membranal proteins by the proteasome. At the same time, during ERCYS, HLJ1 assists in the escape of correctly folded proteins out of the ER and is unnecessary for their proteasomal destruction. Moreover, we showed previously that the role of HLJ1 in refluxing the ER proteins is not only independent of the reported functions of HLJ1 and the mammalian DNAJBs but rather proceeds more rigorously when the ERAD is crippled (Igbaria et al., 2019). This role of DNAJBs is unique in cancer cells and is responsible for regulating the activity of p53 during the treatment of DNA damage agents.\n\nWe also showed that DNAJB12 and DNAJB14 are highly homologous and may have overlapping functions. Downregulation of DNAJB12 or DNAJB14 was partially necessary for ER protein reflux, but when both DNAJB proteins were downregulated, ERCYS was inhibited (Figure 2 and Figure 2\u2014figure supplement 1). Moreover, DNAJB12 was sufficient to promote this phenomenon and cause ER protein reflux by overexpression without causing ER stress (Figures 3 and 4 and Figure 3\u2014figure supplement 1). Those data are very similar to the function of the yeast HLJ1, being essential and sufficient for protein reflux (Igbaria et al., 2019). Thus, we speculate that DNAJB12 and DNAJB14 have partial redundancy. When DNAJB12 is overexpressed, the endogenous DNAJB14 and the high levels of DNAJB12 are enough to drive ERCYS. In addition, DNAJB14, when overexpressed at high levels, can hijack some of the factors needed for proper DNAJB12 function. This is shown in (Figure 4) as overexpression of DNAJB14-WT inhibits ERCYS during ER stress. DNAJB12 overexpression activates ERCYS by refluxing AGR2 and inhibiting wt-p53 signaling in cancer cells treated with etoposide (Figure 3). This suggests that it is enough to increase the levels of DNAJB12 without inducing the unfolded protein response to activate ERCYS (Figure 3\u2014figure supplement 1C, D). Moreover, the downregulation of DNAJB12 and DNAJB14 rescued the inhibition of wt-p53 during ER stress (Figure 2). Thus, wt-p53 inhibition is independent of the UPR activation but depends on the inhibitory interaction of AGR2 with wt-p53 in the cytosol.\n\nER stress is constitutively active in different cancer types, including those with wt-p53. AGR2 expression was also associated with the downregulation of wt-p53 activity. In addition, high levels of wt-p53 activity were associated with higher AGR2 expression compared to tumors with mutant p53 (Fessart et al., 2021; Fessart, 2022). Here, we show a new connection between those two signaling pathways. ERCYS is a novel mode of connection between ER stress and wt-p53 inhibition. In this connection, DNAJB12 and DNAJB14 are the link that regulates ER protein reflux and wt-p53 activity.\n\nA high copy number of DNAJB12 is associated with unfavorable prognostic markers in different cancers, including colorectal and Head and neck cancer (Figure 6\u2014figure supplement 1). Moreover, ER stress and ERCYS activation are highly active in human and murine tumors including GBM (Obacz et al., 2019; Sicari et al., 2021). We speculate that high DNAJB12 expression and ERCYS activation may work as a prosurvival mechanism during cancer progression. Our working model proposes that in non-cancer cells, there is a high degree of segregation and separation between the content of the ER and the cytosol. In cancer cells, DNAJB12 and DNAJB14 interact with each other and recruit cytosolic chaperones and cochaperones (HSC70 and SGTA). This complex of proteins results in a reflux of AGR2, PDI, HYOU1, DNAJB11, and other ER-resident proteins. Refluxed proteins such as AGR2 form inhibitory interaction with wt-p53 and probably different proapoptotic signaling pathways in the cytosol (Figure 5 and Figure 1C and Figure 6D).\n\nFinally, DNAJB12 or DNAJB14 may form oligomeric membranous structures -termed DJANGOS for DNAJ-associated nuclear globular structures-. DJANGOS contain DNAJB12 and DNAJB14 and may form during stress, resulting in ERCYS. Interestingly, those structures contain Hsc70 and markers of the ER lumen, ER membrane, and nuclear membrane (Goodwin et al., 2014). Here, we show by similarity, functionality, and topological orientation, that DNAJB12 and DNJB14 may be part of a well-conserved mechanism to reflux proteins from the ER to the cytosol. A Mechanism independent of DNAJB12/14\u2019s reported activity in ERAD (Grove et al., 2011; Yamamoto et al., 2010; Youker et al., 2004). Instead, DNAJB12 and DNAJB14 facilitate the escape of non-envelope viruses from the ER to the cytosol, similar to the reflux process (Goodwin et al., 2011; Goodwin et al., 2014). This further strengthens our hypothesis that viruses have hijacked this evolutionarily conserved mechanism, leading to the escape of ER proteins to the cytosol.\n\n## Materials and methods\n\n### Cell culture and reagents\n\nHuman T-REx-293, PC3 MCF-7, and A549 cells were cultured in Dulbecco\u2019ss modified eagle\u2019s medium (DMEM) supplemented with 10% FBS and 1% antibiotics at 37 \u00b0C in a 5% CO2 incubator. Tunicamycin (Tm) was purchased from Calbiochem. Thapsigargin (Tg) and Etoposide (Eto) were purchased from Sigma-Aldrich.\n\n### Plasmids transfection\n\ncDNA from A549 cells was used to PCR tag DNAJB12, DNAJB14, and SGTA with different tags. The PCR product was then digested and cloned into pCDNA5-FRT/To or pCDNA3(+) plasmids and transfected to A549, PC3, MCF 7, and T-REx-293 cells. The HPD to HPQ mutants were generated using a Quickchange site-directed mutagenesis kit. FLAG-DNAJB12, HA-DNAJB14, Myc-SGTA, and PG13-luc (Addgene plasmid # 16442) were transfected using lipofectamine 2000 (Thermo Fisher Scientific) according to the manufacturer\u2019s protocol.\n\n### Western blots and antibodies used\n\nCells were washed with PBS (ice-cold), and whole cell lysates were collected using RIPA buffer (25 mM Tris/HCl pH 7.5, 150 mM NaCl, 1% sodium deoxycholate, 0.1% SDS, and 1% NP-40). Lysates were centrifuged at 4\u00b0C for 10 min at 11000Xg, and proteins were quantified using BSA gold (Thermo Fisher) and loaded on SDS/PAGE. Primary antibodies (1:1000 diluted) were incubated overnight at 4 \u00b0C. Fluorescent and horseradish peroxidase (HRP) Conjugated secondary antibodies were diluted 1:10000 and incubated for 1 hr before scanning using iBright Imaging Systems (Thermo Fisher)\u2014complete list of antibodies used in this study in Supplementary file 2a.\n\n### Subcellular protein fractionation protocol\n\nThe fractionation protocol was used as described earlier (Holden and Horton, 2009). In Brief, after a quick wash with ice-cold PBS, cells were trypsinized for 5 min and pelleted at 100RCF for 5 min at 4 \u00b0C. The pellets were washed with ice-cold PBS, resuspended in buffer-1 (50 mM HEPES pH 7.4, 150 mM NaCl, 10 \u03bcg/ml digitonin (25 ug/mL)), and incubated for 10 min at 4 \u00b0C with rotation. Cells were pelleted at 2000RCF for 5 min at 4 \u00b0C, and the cytosolic fraction (supernatant) was collected. The pellet was dissolved in Buffer-2 (50 mM HEPES pH 7.4, 150 mM NaCl, 1% NP40) and incubated for 30 min on ice. The cells were centrifuged at 7000RCF for 5 min at 4 \u00b0C, and the supernatants were collected (membranal fraction).\n\n### Coimmunoprecipitation protocol\n\nCells were grown as indicated for 24 hr. Tunicamycin and thapsigargin were added for 16 hr. Cells were then collected using Co-IP buffer (50 mM Tris/HCl pH 8, 150 mM NaCl, 0.5% TritonX100, and 1 mM EDTA) and left for 30 min on ice. The lysates were then centrifuged for 10 min at 11000Xg at 4 \u00b0C. Proteins were quantified using BSA gold (Thermofisher), an equal amount of proteins were taken for each IP, and primary antibodies (1 \u03bcg Ab/1000 \u03bcg protein) were incubated overnight at 4 \u00b0C. Washed Dynabeads protein A (Life Technologies) were mixed with the protein/antibodies mixture and incubated for 3 hr at 4 \u00b0C with gentle rotation. After three washes with Co-IP buffer, the beads were transferred to a clean tube, eluted with 50 \u03bcl of Laemmli sample buffer, heated for 5 min at 100 \u00b0C, and loaded to SDS/PAGE.\n\n### RNA isolation and real-time PCR (qPCR)\n\nRNA was isolated from T-REx-293 and A549 cells using the NucleoSpin RNA Mini kit for RNA purification (Macherey-Nagel). 500 ng of total RNA was used for cDNA synthesis using Maxima Reverse Transcriptase (Thermo Fisher). Syber green (Thermo Fisher) was used for the qPCR reaction using (Quantstudio). Relative mRNA levels and gene expression levels were normalized to GAPDH or HPRT1. Primer sequences were used as described in Sicari et al., 2020.\n\n### Cell proliferation assay\n\nThe XTT cell proliferation kit (BioInd, SARTORIUS) was performed according to the manufactural protocol. 2500 cells were grown in 100 \u03bcL in 96 wells and incubated for 24\u201396 hr in 5% CO2 incubator at 37 \u00b0C with different stressors. 50 \u03bcL of XTT reagent solution/activation mix was added to each well and incubated for 4 hr at 37 \u00b0C. Absorbance was then measured at 450 and 690 nanometers.\n\n### Immunostaining\n\nHuman samples used for the analyses shown in this manuscript were provided by the the Colorectal cancer (CRC) biobank in Soroka, Beer Sheva. the samples were collected after Helsinki approval of biobank samples collection, approval number 0137\u201318. The samples were fixed with 4% paraformaldehyde in PBS for 20 min at room temperature. After three washes, samples were permeabilized with 0.5% triton x-100 for 15 min and then washed twice with PBS. 10% goat serum was added for 1 hr at room temperature before the addition of the primary antibodies (1) SGTA antibodies (Ptg/60305\u20131-Ig) and (2) AGR2 antibodies (Ptg/12275\u20131-AP) overnight at 4 \u00b0C. samples were washed three times before incubating 1 hr with secondary antibodies at room temperature in the dark. After three washes, samples were incubated with 1 \u03bcg/ml DAPI and Mounted with a drop of mounting solution.\n",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "d6e5c900-c41c-4182-a987-39b87a269afc",
+      "submission_id": "f0af556d-1936-4e87-b427-97ac57df7aa8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Reut Shalgi, https://ror.org/03qryx823 Technion - Israel Institute of Technology Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.102658.sa0](https://doi.org/10.7554/eLife.102658.sa0)\n\nThe present study presents important findings, establishing that the yeast system of ER to cytosol reflux of ER-resident proteins upon ER stress is conserved in mammalian cells. Convincing evidence further link between ER stress, protein reflux and inhibition of p53, and thus affect cancer cell survival in the face of ER-stress, with implications relevant to cancer biology.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Reut Shalgi, https://ror.org/03qryx823 Technion - Israel Institute of Technology Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.102658.sa1](https://doi.org/10.7554/eLife.102658.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6fbfa926-4247-44e2-acab-886b74a62437",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C1",
+      "claim": "The endoplasmic reticulum (ER) is responsible for the folding and secretion of almost one-third of eukaryotic cells' total proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The endoplasmic reticulum (ER) is an essential sensing organelle responsible for the folding and secretion of almost one-third of eukaryotic cells' total proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about ER function in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "18dc176e-7e54-46ca-8f26-931023783a10",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C2",
+      "claim": "Environmental, chemical, and genetic insults lead to protein misfolding in the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "However, environmental, chemical, and genetic insults often lead to protein misfolding in the ER, accumulating misfolded proteins, and causing ER stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about causes of ER stress.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "f0642910-204a-4cfa-9f18-c398b5ce2a5f",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C3",
+      "claim": "Proteins from the secretory pathway are refluxed to the cytosol to relieve the ER of its content.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we reported a novel ER surveillance mechanism by which proteins from the secretory pathway are refluxed to the cytosol to relieve the ER of its content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to the authors' previous work, supported by citation to their prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "5827b346-32f2-40fb-9571-3ad487d16ece",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C4",
+      "claim": "Refluxed proteins gain new prosurvival functions in cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The refluxed proteins gain new prosurvival functions in cancer cells, thereby increasing cancer cell fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the authors' research program.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "d3303046-5239-429a-a72a-c7e15e957a26",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C5",
+      "claim": "ERCYS is regulated by DNAJB12, DNAJB14, and the HSC70 cochaperone SGTA in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that in mammalian cells, ERCYS is regulated by DNAJB12, DNAJB14, and the HSC70 cochaperone SGTA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the current study, supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "14279589-510e-41cb-86f6-002625f560c6",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C6",
+      "claim": "DNAJB12 and DNAJB14 bind HSC70 and SGTA through their cytosolically localized J-domains to facilitate ER-protein reflux.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, DNAJB12 and DNAJB14 bind HSC70 and SGTA - through their cytosolically localized J-domains to facilitate ER-protein reflux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanistic claim is supported by coimmunoprecipitation experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "e7719d7e-a1a8-43ea-a0a6-effad7740c65",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C7",
+      "claim": "DNAJB12 is necessary and sufficient to drive ERCYS to increase AGR2 reflux and inhibit wt-p53 during ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "DNAJB12 is necessary and sufficient to drive this phenomenon to increase AGR2 reflux and inhibit wt-p53 during ER stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by knockdown and overexpression experiments shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "59a792b9-a254-416a-a1a6-03b57641f940",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C8",
+      "claim": "Mutations in DNAJB12/14 J-domain prevent the inhibitory interaction between AGR2-wt-p53.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in DNAJB12/14 J-domain prevent the inhibitory interaction between AGR2-wt-p53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experiments with HPD to QPD mutants shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "7ba5c55f-4fe6-4f68-8561-3c65084b5aa4",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C9",
+      "claim": "The ER controls cellular redox state, calcium storage, lipid metabolism, xenobiotics, and drug detoxification.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the ER controls the cellular redox state, calcium storage, lipid metabolism, xenobiotics, and drug detoxification (Reid and Nicchitta, 2015; Rapoport, 2007; Jan et al., 2014; Goyal and Blackstone, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "2b8b83b1-0b14-47ba-87a2-8720e9719872",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C10",
+      "claim": "The ER coordinates stress pathways involved in maintaining crosstalk between the intra- and extracellular environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The ER also coordinates the stress pathways significantly involved in maintaining the crosstalk between the intra- and the extracellular environment (Walter and Ron, 2011; Ellgaard and Helenius, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "b5e3b59b-3f91-47f0-a5e5-096f55ea20a6",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C11",
+      "claim": "The ER is the entry point of proteins in the secretory pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the ER is the entry point of proteins in the secretory pathway; these proteins are synthesized on the ER-associated ribosomes and destined to be secreted or targeted to the membrane (Shao and Hegde, 2011; Obacz et al., 2019; Matlack et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "77e6877a-6647-4bcb-95c2-cd378f73fb04",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C12",
+      "claim": "Nascent peptides gain their correctly folded structure and posttranslational modifications through the activity of ER-resident chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ER, the nascent peptides gain their correctly folded structure and other posttranslational modifications through the activity of ER-resident chaperones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ER protein folding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "745b15d9-8ff4-4881-9e22-25f4a2e9213f",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C13",
+      "claim": "Correctly folded proteins exit the ER to their destination.",
+      "claim_type": "EXPLICIT",
+      "source": "If correctly folded, those proteins exit the ER to their destination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about protein trafficking.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "609ab73a-77e0-40f4-a87b-925d9215821c",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C14",
+      "claim": "Unfolded/misfolded proteins translocate to the cytosol where they are ubiquitinylated and degraded by the proteasome in an ER-associated degradation (ERAD) mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfolded/misfolded proteins translocate to the cytosol, where they are ubiquitinylated and degraded by the proteasome in an ER-associated degradation (ERAD) mechanism (Obacz et al., 2019; Sicari et al., 2019; Carvalho et al., 2006; Travers et al., 2000; Harding et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ERAD supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "b097b4cd-824d-44e1-952e-c5b406f7d4be",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C15",
+      "claim": "Accumulating misfolded proteins in the ER activates the unfolded protein response (UPR).",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulating misfolded proteins in the ER activates a signaling pathway called the unfolded protein response (UPR) (Oakes, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "ea31117d-dfc0-417e-92cb-3fab1e5cb2ac",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C16",
+      "claim": "The UPR aims to regain homeostasis by increasing the ER folding capacity by making new ER chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, the UPR aims to regain homeostasis by increasing the ER folding capacity by making new ER chaperones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about UPR function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "4cccfea9-96e9-49ed-9c04-d3344925b611",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C17",
+      "claim": "The UPR decreases the number of substrates entering the ER through the activity of IRE1 and PERK.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, the UPR decreases the number of substrates entering the ER through the activity of the inositol-requiring enzyme (IRE1) and protein kinase RNA-like ER kinase (PERK).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about UPR mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "86f4228e-462b-4067-988d-53e8bd960f09",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C18",
+      "claim": "IRE1 RNAse domain cleaves the mRNA of Xbp1 to increase chaperones in the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Once activated, the IRE1 RNAse domain cleaves the mRNA of a transcriptional factor called Xbp1 to increase the chaperones in the ER (Harding et al., 1999; Wang et al., 2000; Yoshida et al., 2001; Calfon et al., 2002; Lee et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "1d89c5db-211e-4a35-a209-bd64f46365d8",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C19",
+      "claim": "High IRE1 activity causes regulated IRE1-dependent degradation (RIDD) of mRNAs translated by ribosomes in proximity to the ER membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, high IRE1 activity causes a massive degradation of mRNAs translated by ribosomes in proximity to the ER membrane. This regulated IRE1-dependent degradation (RIDD) mainly targets those mRNAs that primarily encode for proteins in the secretory pathway to decrease the protein load on the ER (Hollien and Weissman, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "d04e26b5-b018-477a-a595-f5b0eeb66184",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C20",
+      "claim": "PERK activation results in eIF2\u03b1 phosphorylation and inhibition of global protein translation.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, PERK activation results in eIF2\u03b1 phosphorylation and inhibition of global protein translation (Harding et al., 2000; Kumar et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "e4e25dbe-1c3e-45bf-a862-0add9262e77a",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C21",
+      "claim": "The reflux process is constitutively activated in cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The reflux process is constitutively activated in cancer cells, causing many proteins to be enriched in the cytosol of cultured cancer cells, murine models of brain tumors, and human patients (Sicari et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "cb6fc676-6378-47df-b565-5bbc9d2ba898",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C22",
+      "claim": "AGR2 is refluxed from the ER of cancer cells to interact and inhibit wt-p53 in the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "This was shown using the ER-resident PDI-like protein AGR2 that is refluxed from the ER of cancer cells to interact and inhibit the activity of prosurvival proteins in the cytosol, especially wt-p53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work (Sicari et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "6e5b61d9-00dc-4170-b14d-542f96891876",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C23",
+      "claim": "The reflux process in yeast depends on the activity of chaperones from both the ER and the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous work in yeast showed that the reflux process depends on the activity of chaperones from both the ER and the cytosol and is mainly regulated by the high copy lethal J-protein (HLJ1), an ER-resident tail-anchored HSP40 cochaperone, containing a cytosolically-disposed Dna-J domain (Igbaria et al., 2019; Lajoie and Snapp, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "23cb3512-641c-4675-a64d-d0959dcb586b",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C24",
+      "claim": "HLJ1 interacts with the cytosolic machinery to activate the removal of proteins from the ER to the cytosol upon ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon ER stress, HLJ1 interacts with the cytosolic machinery to activate the removal of proteins from the ER to the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work (Igbaria et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "f9553f36-37eb-4942-a4a6-385fc559f879",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C25",
+      "claim": "Refluxed proteins remain in protein complexes with cytosolic chaperones in the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cytosol, the refluxed proteins remain in protein complexes with cytosolic chaperones (Igbaria et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "12d16f12-2045-425f-a0a7-e2831f7d0317",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C26",
+      "claim": "Mammalian cells have five putative functional orthologs of the yeast HLJ1.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we found that HLJ1 is conserved through evolution and that mammalian cells have five putative functionality orthologs of the yeast HLJ1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding of the current study supported by sequence analysis shown in Figure 1 and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "c505730e-e297-4537-a204-5f053bd7df9e",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C27",
+      "claim": "The five DNAJ-proteins (DNAJB12, DNAJB14, DNAJC14, DNAJC18, and DNAJC30) reside within the ER membrane with a J-domain facing the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Those five DNAJ- proteins (DNAJB12, DNAJB14, DNAJC14, DNAJC18, and DNAJC30) reside within the ER membrane with a J-domain facing the cytosol (Piette et al., 2021; Malinverni et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "242bdbb7-44d9-4130-b47a-f21105bebed1",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C28",
+      "claim": "DNAJB12 and DNAJB14 are strongly related to the yeast HLJ1.",
+      "claim_type": "EXPLICIT",
+      "source": "Among those, we found that DNAJB12 and DNAJB14, which are strongly related to the yeast HLJ1 (Grove et al., 2011; Yamamoto et al., 2010), are essential and sufficient for determining cells' fate during ER stress by regulating ERCYS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and experimental data in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "1195f8bc-e92a-40f5-aac7-e2edd7b0b13f",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C29",
+      "claim": "The role of DNAJB12 and DNAJB14 in ERCYS depends on their HPD motif in the J-domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Their role in ERCYS and determining cells' fate depends on their HPD motif in the J-domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mutagenesis experiments shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "fb172b4e-18d1-4758-bb39-399f2557a894",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C30",
+      "claim": "Downregulation of DNAJB12 and DNAJB14 increases cell toxicity and wt-p53 activity during etoposide treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Downregulation of DNAJB12 and DNAJB14 increases cell toxicity and wt-p53 activity during etoposide treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figures 2 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "82e4fe48-495b-4912-b22e-daf721471d9b",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C31",
+      "claim": "DNAJB12 and DNAJB14 interact and recruit cytosolic chaperones (HSC70/SGTA) to promote ERCYS.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, DNAJB12 and DNAJB14 interact and recruit cytosolic chaperones (HSC70/SGTA) to promote ERCYS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by coimmunoprecipitation experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "1114a4cf-a4f9-4503-814f-b4e34f53b9ea",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C32",
+      "claim": "The interaction between DNAJB12/14 and HSC70/SGTA is conserved in human tumors including colorectal cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "This later interaction is conserved in human tumors including colorectal cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 5\u2014figure supplement 1G, H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "0e3e4d35-85f3-4be3-b883-f6ca7d391540",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C33",
+      "claim": "Comparing amino acid sequences revealed significant similarities between yeast HLJ1p and mammalian DNAJB12 and DNAJB14.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the amino acid sequences revealed significant similarities between the yeast protein HLJ1p and the mammalian proteins DNAJB12 and DNAJB14 (Supplementary file 1 and Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 1A and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "1cc497c8-a0cd-4b21-bf5d-21bfbb3f584b",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C34",
+      "claim": "DNAJB12 and DNAJB14 are highly conserved in different species through evolution from yeast to humans.",
+      "claim_type": "EXPLICIT",
+      "source": "DNAJB12 and DNAJB14 are highly conserved in different species through evolution from yeast to humans (Figure 1A and B and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenetic analysis shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "7d44e660-4ea5-43ce-81ab-b7ce65ce7718",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C35",
+      "claim": "DNAJB12 was previously reported to accelerate the degradation of membranal proteins by cooperating with HSC70.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, DNAJB12 was previously reported to accelerate the degradation of membranal proteins by cooperating with HSC70, those functions also can be carried by HLJ1 in yeast (Grove et al., 2011; Yamamoto et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "779e45ad-a6c9-4ae4-b331-b046caf59d63",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C36",
+      "claim": "The HPD motif within the J-domain is conserved in HLJ1 and its putative human orthologs DNAJB12, DNAJB14, DNAJC14, DNAJC18, and DNAJC30.",
+      "claim_type": "EXPLICIT",
+      "source": "The HPD motif within the J-domain is conserved in HLJ1 and its putative human orthologs DNAJB12, DNAJB14, DNAJC14, DNAJC18, and DNAJC30.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "6a096b0f-04a3-4026-bdc6-e12f753553ac",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C37",
+      "claim": "The HPD motif is responsible for binding the cochaperones with the HSP70/HSC70 chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "The HPD motif is conserved within the J-domain of those DNAJ proteins and is responsible for binding the cochaperones with the HSP70/HSC70 chaperones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about J-domain function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "1371b8e4-24e6-40f5-8104-097bd322e8a7",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C38",
+      "claim": "DNAJB12, DNAJB14, DNAJC14, DNAJC18, and DNAJC30 localize to the ER membrane with a J-domain facing the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it is important to emphasize that the four identified putative orthologs and another DNAJC protein - DNAJC30 - were shown to localize to the ER membrane with a J-domain facing the cytosol (Piette et al., 2021; Malinverni et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "02130eb4-9647-4539-9459-ba88c930f9b6",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C39",
+      "claim": "AGR2 is an ER resident anterior gradient 2, a protein disulfide isomerase family member.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that, during ER stress, the ER resident anterior gradient 2 (AGR2), a protein disulfide isomerase family member, and other ER-resident proteins are refluxed from the ER to the cytosol to interact and inhibit wt-p53 in different cancer cell lines (Sicari et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "24185cb9-0d83-4312-aa5d-4a80574100ab",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C40",
+      "claim": "In the absence of ER stress, there were no differences in the cytosolic accumulation of AGR2, DNAJB11, and HYOU1.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of ER stress, there were no differences in the cytosolic accumulation of the three tested ER-localized proteins AGR2 (19.9 kDa), DNAJB11 (40.5 kDa), and HYOU1 (111.3 kDa) (Figure 2A\u2013C, Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "c98463d9-e16f-4b55-a2da-be26528dcd66",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C41",
+      "claim": "Tm and Tg treatment increased the cytosolic enrichment of AGR2, DNAJB11, and HYOU1 mainly in the WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Tm and Tg treatment increased the cytosolic enrichment of AGR2, DNAJB11, and HYOU1, mainly in the WT cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "8183977a-49a1-47a6-9394-e22cf383de0f",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C42",
+      "claim": "Silencing DNAJB12 or DNAJB14 slightly affected the reflux of AGR2, DNAJB11 and HYOU1 in A549, MCF-7, and PC3.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing DNAJB12 (DNAJB12-KD) or DNAJB14 (DNAJB14-KD) slightly affected the reflux of AGR2,DNAJB11 and HYOU1 in A549, MCF-7, and PC3 (Figure 2A\u2013C, Figure 2\u2014figure supplement 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "b55a262b-2e35-49d1-b541-9cd04a1a6f5d",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C43",
+      "claim": "Silencing DNAJB12 and DNAJB14 highly affected the cytosolic accumulation of AGR2, DNAJB11, and HYOU1 during stress.",
+      "claim_type": "EXPLICIT",
+      "source": "During stress, silencing DNAJB12 and DNAJB14 highly affected the cytosolic accumulation of all three tested proteins independently of their molecular sizes (Figure 2A\u2013C , Figure 2\u2014figure supplement 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "0ebf7f6a-2fe3-40e5-9c97-768cef5de66f",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C44",
+      "claim": "The reflux of AGR2 and other ER-resident proteins depends on DNAJB12 and DNAJB14.",
+      "claim_type": "EXPLICIT",
+      "source": "Those data clearly show that the reflux of AGR2 and other ER-resident proteins depends on DNAJB12 and DNAJB14.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "87fb5ce6-bfb9-46d5-b7d3-5fd642cc01cd",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C45",
+      "claim": "Changes in the cytosolic accumulation of ER proteins are independent of their expression levels in different cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Those changes in the cytosolic accumulation of the ER proteins are independent of their expression levels in the different cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mRNA and protein level measurements shown in Figure 2\u2014figure supplement 1F\u2013N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "56174ebc-dcc4-49c4-afa5-a626dd248f35",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C46",
+      "claim": "Silencing DNAJB12 and DNAJB14 did not affect the overall protein levels in A549 and PC3 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that silencing DNAJB12 and DNAJB14 did not affect the overall protein levels in those cells (Figure 2\u2014figure supplement 1F\u2013N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "a9593457-4125-4efa-b6fe-30e3bf029ccc",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C47",
+      "claim": "Etoposide treatment increased the phosphorylation of wt-p53 in control cells and cells knocked down with DNAJB12, DNAJB14, or both.",
+      "claim_type": "EXPLICIT",
+      "source": "In these conditions, there was an increase in the phosphorylation of wt-p53 in the control cells and in cells knocked down with DNAJB12, DNAJB14, or both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "1ba6c589-3206-4cfa-b016-e08e4867265f",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C48",
+      "claim": "Tm addition to cells treated with etoposide resulted in a reduction in wt-p53 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Tm addition to cells treated with etoposide resulted in a reduction in wt-p53 phosphorylation, and as a consequence, the p21 protein levels were also decreased (Figure 2D\u2013G, Figure 2\u2014figure supplement 1O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "d38d22af-d4ce-4cc4-8f18-5614503b1882",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C49",
+      "claim": "Silencing DNAJB12 and DNAJB14 in A549 and MCF-7 cells rescued wt-p53 phosphorylation and p21 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing DNAJB12 and DNAJB14 in A549 and MCF-7 cells rescued wt-p53 phosphorylation and p21 levels (Figure 2D\u2013G, Figure 2\u2014figure supplement 1O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "afa53105-ff10-41a9-92c6-e174a53fec90",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C50",
+      "claim": "Etoposide treatment increased the luciferase activity in all cells tested.",
+      "claim_type": "EXPLICIT",
+      "source": "In the latter experiment, etoposide treatment increased the luciferase activity in all the cells tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase assay data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "a831b862-9aeb-4205-9c9a-494df25d51bb",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C51",
+      "claim": "Adding ER stress to etoposide-treated cells decreased the luciferase activity except in cells silenced with DNAJB12 and DNAJB14.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding ER stress to those cells decreased the luciferase activity except in cells silenced with DNAJB12 and DNAJB14.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase assay data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "b858525b-d304-45d9-991c-623114c90fb9",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C52",
+      "claim": "Overexpression of WT-DNAJB12 in A549 cells was sufficient to decrease wt-p53 luciferase activity in cells treated with etoposide.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of the WT-DNAJB12 in A549 cells was sufficient to decrease wt-p53 luciferase activity in cells treated with etoposide compared to the control cells (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "fecaf966-16a6-4322-a6ef-c262630da6c7",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C53",
+      "claim": "Overexpression of the DNAJB12-QPD mutant could not decrease the p53-luciferase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the WT and the QPD mutants were expressed at the same levels (Figure 3\u2014figure supplement 1A), overexpression of the DNAJB12-QPD mutant could not decrease the p53-luciferase activity under the same conditions (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "7bd04a9f-e08f-47aa-8365-a849bf098382",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C54",
+      "claim": "Overexpression of DNAJB14 alone or the DNAJB14-QPD mutant could not inhibit the luciferase activity of wt-p53.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, overexpression of DNAJB14 alone or the DNAJB14-QPD mutant (substituting the HPD to QPD at position 136) could not inhibit the luciferase activity of wt-p53 (Figure 3B, Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "da45f796-2caf-4f0a-8259-5abb317462db",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C55",
+      "claim": "DNAJB12 can inhibit wt-p53 activity in A549 cells treated with etoposide in a mechanism that requires its HPD motif and a functional J-domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Those data indicate that DNAJB12 can inhibit wt-p53 activity in A549 cells treated with etoposide in a mechanism that requires its HPD motif and a functional J-domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "5012dbbd-3ecc-4028-ac8e-6380dea67d7a",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C56",
+      "claim": "Overexpressing DNAJB12 in A549 cells was sufficient to reflux AGR2, DNAJB11, and HYOU1 from the ER to the cytosol at 12 and 24 hr post-induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpressing DNAJB12 in A549 cells was sufficient to reflux AGR2, DNAJB11, and HYOU1 from the ER to the cytosol at 12 and 24 hr post-induction (Figure 3C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by subcellular fractionation data shown in Figure 3C and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "312a9e4f-4e2e-4751-bc5d-7648dfeb8a28",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C57",
+      "claim": "Overexpressing DNAJB14 alone was insufficient to increase the cytosolic accumulation of AGR2, DNAJB11, and HYOU1.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, overexpressing DNAJB14 alone was insufficient to increase the cytosolic accumulation of the tested ER-resident proteins, compared to DNAJB12 overexpression (Figure 3C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by subcellular fractionation data shown in Figure 3C\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "54a4867f-de0e-4509-b9f0-bca39a65ed4c",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C58",
+      "claim": "DNAJB12 or DNAJB14 overexpression did not increase the levels of Xbp1s or Bip.",
+      "claim_type": "EXPLICIT",
+      "source": "DNAJB12 or DNAJB14 overexpression did not increase the levels of either xbp1s or Bip in the tested conditions (Figure 3\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 3\u2014figure supplement 1C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "9cd74d7d-f64c-40fa-beaf-2a82555cbfce",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C59",
+      "claim": "DNAJB12 is sufficient to induce ERCYS and the reflux of AGR2 to the cytosol to inhibit wt-p53 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Those data confirm that DNAJB12 is sufficient to induce ERCYS and the reflux of AGR2 to the cytosol to inhibit wt-p53 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "622ab538-0148-498f-b4a9-e0a8784ce773",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C60",
+      "claim": "The reflux of ER proteins depends on the activity of the J-domain of DNAJB12 and is independent of the UPR activation.",
+      "claim_type": "EXPLICIT",
+      "source": "This reflux of ER proteins depends on the activity of the J-domain of DNAJB12 and is independent of the UPR activation in cells overexpressing DNAJB12 (Figure 3\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "0485bdbf-7189-4e72-ad78-36efdcc215b8",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C61",
+      "claim": "Overexpression of DNAJB12 for more than 24 hr was toxic compared to cells overexpressing the DNAJB12-QPD mutant or the empty vector.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that overexpression of DNAJB12 for more than 24 hr was toxic compared to cells overexpressing the DNAJB12-QPD mutant or the empty vector in A549 and T-Rex-293 cells (Figure 3\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell viability data shown in Figure 3\u2014figure supplement 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "d06715f4-7cb5-4c5f-a959-692cdff02a17",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C62",
+      "claim": "Overexpressing DNAJB12-WT in A549 cells treated with tunicamycin maintained the reflux of AGR2, DNAJB11, HYOU1, and PDI.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, overexpressing the DNAJB12-WT in A549 cells treated with tunicamycin maintained the reflux of AGR2, DNAJB11, HYOU1, and the Protein Disulfide Isomerase (PDI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by subcellular fractionation data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "1e7325a0-7fbd-4118-8fee-89b197254614",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C63",
+      "claim": "Overexpressing DNAJB12-QPD has a dominant negative effect on the ER-protein reflux during ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpressing DNAJB12-QPD has a dominant negative effect on the ER-protein reflux during ER stress (Figure 4A\u2013E, Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by subcellular fractionation data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "9920ce75-53a7-484a-a664-368ccb93fdc6",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C64",
+      "claim": "DNAJB14-wt and DNAJB14-HPQ overexpression inhibited ER protein reflux during ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "DNAJB14-wt and DNAJB14-HPQ overexpressing inhibited ER protein reflux during ER stress. (Figure 4F\u2013J, Figure 4\u2014figure supplement 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by subcellular fractionation data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "9e7fe68e-9041-430b-834c-0cf8f7da64c5",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C65",
+      "claim": "A functional HPD motif of DNAJB12 is necessary to reflux ER proteins to the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "This latter result further strengthens the idea that a functional HPD motif of DNAJB12 is necessary to reflux ER proteins to the cytosol and that a proper ratio between DNAJB12 and DNAJB14 is necessary to drive ERCYS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "38a8a63b-c178-419a-b2b3-7354cef0033e",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C66",
+      "claim": "Overexpression of DNAJB12 in T-REx-293 cells shows an interaction between SGTA and DNAJB12 in cells treated with doxycycline or doxycycline and tunicamycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of DNAJB12 in T-REx-293 cells shows an interaction between the HSC70 cochaperone (SGTA) and DNAJB12 in cells treated with doxycycline or doxycycline and tunicamycin (Figure 5A, Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by coimmunoprecipitation data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "07e3e0f4-0d55-4657-b95c-865aebfb1ab0",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C67",
+      "claim": "Overexpressed FLAG-tagged DNAJB12 interacts with HSC70.",
+      "claim_type": "EXPLICIT",
+      "source": "In those conditions, overexpressed FLAG-tagged DNAJB12 interacts with HSC70 as well (Figure 5A, Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by coimmunoprecipitation data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "e201b1ed-d41a-4103-9f19-272493145af6",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C68",
+      "claim": "SGTA binds DNAJB14 under normal and ER stress conditions, and this interaction increases slightly with ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "For this, we immunoprecipitated SGTA during Tm and Tg treatment and found that it binds DNAJB14 under normal and ER stress conditions, and this interaction increases slightly with ER stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by coimmunoprecipitation data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "d23f863e-45a3-4644-9ef6-6132c19ec56a",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C69",
+      "claim": "SGTA-DNAJB12 binding was almost not present in normal conditions but enriched during ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, SGTA-DNAJB12 binding was almost not present in normal conditions. During ER stress conditions, the binding between DNAJB12 and SGTA was enriched compared to the control (Figure 5B, Figure 5\u2014figure supplement 1B, C, and Figure 5\u2014figure supplement 1I\u2013O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by coimmunoprecipitation data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "e399593a-52a6-4e9f-b68c-c9d7c1200ed7",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C70",
+      "claim": "The interaction between DNAJB12 and DNAJB14 increases during ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "In those conditions, the interaction between DNAJB12 and DNAJB14 is increased during ER stress, while there is no change in the interaction with HSC70 (Figure 5\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by coimmunoprecipitation data shown in Figure 5\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "69a3dc5e-4e93-41e8-9a40-3bb9b732720c",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C71",
+      "claim": "DNAJB12 and DNAJB14 constitutively bind HSC70.",
+      "claim_type": "EXPLICIT",
+      "source": "From those data, we demonstrate that DNAJB12 and DNAJB14 constitutively bind HSC70.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the coimmunoprecipitation data shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "88f6c948-8dc7-472b-b678-6645998f84cf",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C72",
+      "claim": "Upon ER stress, DNAJB12 and DNAJB14 interact with each other and recruit SGTA to this complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon ER stress, DNAJB12 and DNAJB14 interact with each other and recruit SGTA to this complex without any change in the total protein levels of DNAJB12 and DNAJB14 (Figure 5\u2014figure supplement 1I\u2013O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by coimmunoprecipitation data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "9e9c3fe3-ce4f-4a28-9b16-371bccf7118e",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C73",
+      "claim": "SGTA immunoprecipitation showed an increased interaction between cytosolic SGTA and ER-resident proteins AGR2, PRDX4, and DNAJB11.",
+      "claim_type": "EXPLICIT",
+      "source": "SGTA immunoprecipitation showed an increased interaction between the cytosolic SGTA and the ER-resident proteins AGR2, PRDX4, and DNAJB11 (Figure 5C, Figure 5\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by coimmunoprecipitation data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "2ad7748e-5b9b-4d4c-a0bf-53039a11acee",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C74",
+      "claim": "The interaction between SGTA and the refluxed ER proteins is abrogated when DNAJB12 and DNAJB14 are knocked down.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction between SGTA and the refluxed ER proteins is abrogated when DNAJB12 and DNAJB14 are knocked down in A549 and PC3 cell lines (Figure 5D, Figure 5\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by coimmunoprecipitation data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "24b5ac7a-2641-4480-a1d2-741829090a9d",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C75",
+      "claim": "AGR2 was modeled as a thioredoxin-like domain with an unstructured N-terminal extension of 55 amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, AGR2 was modeled as a thioredoxin-like domain with an unstructured N-terminal extension of 55 amino acids (Patel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by AlphaFold2 modeling shown in Figure 5E and citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "edafe222-2752-4ebc-b811-dc78e42672ac",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C76",
+      "claim": "AGR2 harbors a single cysteine residue\u2014cys81\u2014within a CPHS motif.",
+      "claim_type": "EXPLICIT",
+      "source": "AGR2 harbors a single cysteine residue\u2014cys81\u2014within a CPHS motif, placed at the N-terminus of an \u03b1-helix, as the canonical CXXC motif in the thioredoxin superfamily (Martin, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural modeling and citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "f9f3c30b-c56d-4382-b88a-6fe3da40d56c",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C77",
+      "claim": "SGTA was modeled with an N-terminal homodimerization domain, a TRP domain, and a C-terminal helical domain.",
+      "claim_type": "EXPLICIT",
+      "source": "SGTA was modeled with an N-terminal homodimerization domain, a TRP domain, and a C-terminal helical domain (Dutta and Tan, 2008; Chartron et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by AlphaFold2 modeling shown in Figure 5E and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "db40c13d-6457-4d37-bdcc-64b5b61d92ae",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C78",
+      "claim": "Cys81 of AGR2 was placed within bonding distance from cys153 of SGTA, suggesting the two proteins interact by forming a mixed disulfide bond.",
+      "claim_type": "EXPLICIT",
+      "source": "When modeling the interaction between the two proteins, cys81 of AGR2 was placed within bonding distance from cys153 of SGTA, suggesting that the two proteins interact by forming a mixed disulfide bond (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ColabFold modeling shown in Figure 5F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "ea8549f1-1f78-452c-9c56-4bbfe79e34be",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C79",
+      "claim": "SGTA colocalizes with AGR2 in tumor tissue and not in healthy non-tumor tissue from colorectal cancer patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In those conditions, SGTA colocalizes with AGR2 in the tumor tissue and not in the healthy non-tumor tissue (Figure 5\u2014figure supplement 1G, H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 5\u2014figure supplement 1G, H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "2f80c611-8b7e-4189-8308-a4b2f4207354",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C80",
+      "claim": "In control cells, etoposide decreased the proliferation index of A549 cells by twofold.",
+      "claim_type": "EXPLICIT",
+      "source": "In the control cells, etoposide decreased the proliferation index of A549 cells by twofold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by XTT assay data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "a0d8e724-2ecd-4781-bfd8-7fc5287c911a",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C81",
+      "claim": "Treating cells with sub-toxic concentrations of tunicamycin decreased the toxicity caused by etoposide and increased the proliferation index.",
+      "claim_type": "EXPLICIT",
+      "source": "Treating the cells with sub-toxic concentrations of tunicamycin decreased the toxicity caused by etoposide and increased the proliferation index (Figure 6A, Figure 6\u2014figure supplement 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by XTT assay data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "f6fc9b0f-abf6-4466-8747-a77fee074664",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C82",
+      "claim": "Silencing DNAJB12/DNAJB14 after etoposide treatment abolished the effect of Tm and resulted in no rescue of the proliferation index.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing DNAJB12/DNAJB14 after etoposide treatment abolished the effect of Tm and resulted in no rescue of the proliferation index in the double-knockout cells compared to the scrambled controls (Figure 6A, Figure 6\u2014figure supplement 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by XTT assay data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "d7d14eb9-aa60-402d-845b-bd0696e1a9fa",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C83",
+      "claim": "In SGTA-silenced cells, subtoxic concentrations of Tm could not recover proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "In SGTA-silenced cells, subtoxic concentrations of Tm could not recover proliferation in a similar way seen with DNAJB12/DNAJB14 double knockout (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by XTT assay data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "83cf59b0-4d91-4b4c-90ca-1039899fbd9c",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C84",
+      "claim": "A high copy number of DNAJB12 is associated with poor prognosis in many cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "A high copy number of DNAJB12, is associated with poor prognosis in many cancer types, including Head and neck squamous cell carcinoma (HNSC), Kidney renal clear cell carcinoma (KIRC), colon adenocarcinoma (COAD), acute myeloid leukemia (LAML), adrenocortical carcinoma (ACC), mesothelioma (MESO), and Pheochromocytoma and paraganglioma (PCPG) (Figure 6\u2014figure supplement 1E\u2013N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TCGA survival analysis data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "0eb1e2c8-7897-46f7-9061-e5caed245ff0",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C85",
+      "claim": "In uveal melanoma (UVM), a high copy number of DNAJB12, DNAJB14, and SGTA are associated with poor prognosis and poor survival.",
+      "claim_type": "EXPLICIT",
+      "source": "In uveal melanoma (UVM), a high copy number of the three tested genes, DNAJB12, DNAJB14, and SGTA, are associated with poor prognosis and poor survival (Figure 6\u2014figure supplement 1J, K, N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TCGA survival analysis data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "30d018ea-6150-4c60-b8ed-62d57cb727e2",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C86",
+      "claim": "DNAJB12 and DNAJB14 are the real orthologs of the yeast HLJ1.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present evidence that ERCYS is regulated by the action of at least two ER-localized DNAJ proteins, namely DNAJB12 and DNAJB14 (Figure 1, Supplementary file 1 and Figure 1\u2014figure supplement 1). DNAJB12 and DNAJB14 are the real orthologs of the yeast HLJ1 by: (1) showing that DNAJB12 and DNAJB14 have a high similarity protein sequences with the yeast HLJ1, (2) DNAJB12, DNAJB14, and HLJ1 localize to the ER membrane with a J-domain facing the cytosol, (3) DNAJB12 is toxic when overexpressed (Figure 3\u2014figure supplement 1), this toxicity is similar to the one reported for the yeast HLJ1 (High-copy Lethal J-protein 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by multiple lines of evidence including sequence similarity, localization, and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "374dc1fd-8f26-46a6-bc7d-574e33fadad7",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C87",
+      "claim": "The role of DNAJB12 and DNAJB14 in ER-protein reflux is similar to the reported function of those DNAJBs in the escape of nonenveloped viruses from the ER to the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the role of DNAJB12 and DNAJB14 in ER-protein reflux is similar to the reported function of those DNAJBs in the escape of nonenveloped viruses from the ER to the cytosol (Goodwin et al., 2011; Goodwin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature and comparison of functions.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "113a22af-d7c0-44e4-9311-95c46ffa34f3",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C88",
+      "claim": "The role of HLJ1 in refluxing ER proteins is independent of its function in ERAD.",
+      "claim_type": "EXPLICIT",
+      "source": "In ERAD, HLJ1 facilitates the degradation of membranal proteins by the proteasome. At the same time, during ERCYS, HLJ1 assists in the escape of correctly folded proteins out of the ER and is unnecessary for their proteasomal destruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior work by the authors distinguishing ERCYS from ERAD.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "4a00c39e-5e7d-4e8d-b14f-2db8d786fd02",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C89",
+      "claim": "The role of HLJ1 in refluxing ER proteins proceeds more rigorously when ERAD is crippled.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we showed previously that the role of HLJ1 in refluxing the ER proteins is not only independent of the reported functions of HLJ1 and the mammalian DNAJBs but rather proceeds more rigorously when the ERAD is crippled (Igbaria et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "2db82b57-430d-4415-931c-2ba6ac890be1",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C90",
+      "claim": "DNAJB12 and DNAJB14 have partial redundancy.",
+      "claim_type": "EXPLICIT",
+      "source": "We also showed that DNAJB12 and DNAJB14 are highly homologous and may have overlapping functions. Downregulation of DNAJB12 or DNAJB14 was partially necessary for ER protein reflux, but when both DNAJB proteins were downregulated, ERCYS was inhibited (Figure 2 and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the knockdown experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "ce0b09c9-04d0-4ee6-b29a-ab1d6c6e2811",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C91",
+      "claim": "ER stress is constitutively active in different cancer types, including those with wt-p53.",
+      "claim_type": "EXPLICIT",
+      "source": "ER stress is constitutively active in different cancer types, including those with wt-p53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about cancer biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "8a568b3e-6f18-401a-9194-5b58a0c035db",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C92",
+      "claim": "AGR2 expression was associated with the downregulation of wt-p53 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "AGR2 expression was also associated with the downregulation of wt-p53 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from prior literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "4de5af74-f064-49c5-bd42-fe323d7e2880",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C93",
+      "claim": "High levels of wt-p53 activity were associated with higher AGR2 expression compared to tumors with mutant p53.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, high levels of wt-p53 activity were associated with higher AGR2 expression compared to tumors with mutant p53 (Fessart et al., 2021; Fessart, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "062755b8-2a41-4881-b2a0-69a28f6b4c57",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C94",
+      "claim": "ERCYS is a novel mode of connection between ER stress and wt-p53 inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show a new connection between those two signaling pathways. ERCYS is a novel mode of connection between ER stress and wt-p53 inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "c3303055-edea-476d-8621-101ec8756de6",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C95",
+      "claim": "DNAJB12 and DNAJB14 are the link that regulates ER protein reflux and wt-p53 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In this connection, DNAJB12 and DNAJB14 are the link that regulates ER protein reflux and wt-p53 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "e9a4ae30-0505-4bcd-89f4-50d3753578df",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C96",
+      "claim": "ER stress and ERCYS activation are highly active in human and murine tumors including GBM.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, ER stress and ERCYS activation are highly active in human and murine tumors including GBM (Obacz et al., 2019; Sicari et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "4bda4d4d-7122-4f0c-a066-6fa96a705be4",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C97",
+      "claim": "High DNAJB12 expression and ERCYS activation may work as a prosurvival mechanism during cancer progression.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that high DNAJB12 expression and ERCYS activation may work as a prosurvival mechanism during cancer progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the data presented.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "4596bdb0-5c45-4b92-9e84-10c847e85078",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C98",
+      "claim": "In non-cancer cells, there is a high degree of segregation and separation between the content of the ER and the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Our working model proposes that in non-cancer cells, there is a high degree of segregation and separation between the content of the ER and the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the proposed working model based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "a74ecf80-2efa-48e8-b33b-b60d47fc71be",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C99",
+      "claim": "In cancer cells, DNAJB12 and DNAJB14 interact with each other and recruit cytosolic chaperones and cochaperones (HSC70 and SGTA).",
+      "claim_type": "EXPLICIT",
+      "source": "In cancer cells, DNAJB12 and DNAJB14 interact with each other and recruit cytosolic chaperones and cochaperones (HSC70 and SGTA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by coimmunoprecipitation data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "83e74909-bdb5-4c99-8d21-6d55fad79286",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C100",
+      "claim": "DNAJB12 or DNAJB14 may form oligomeric membranous structures termed DJANGOS.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, DNAJB12 or DNAJB14 may form oligomeric membranous structures -termed DJANGOS for DNAJ-associated nuclear globular structures-.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on prior literature about DJANGOS.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "31c75232-8551-4ecd-a976-21e5f3f93a72",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C101",
+      "claim": "DJANGOS contain DNAJB12 and DNAJB14 and may form during stress, resulting in ERCYS.",
+      "claim_type": "EXPLICIT",
+      "source": "DJANGOS contain DNAJB12 and DNAJB14 and may form during stress, resulting in ERCYS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation connecting DJANGOS to ERCYS.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "c3325419-8bf1-44a7-8058-bb8a2a94cc8e",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C102",
+      "claim": "DJANGOS contain Hsc70 and markers of the ER lumen, ER membrane, and nuclear membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, those structures contain Hsc70 and markers of the ER lumen, ER membrane, and nuclear membrane (Goodwin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "01cd2293-e491-4fc5-9349-c914180d2504",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C103",
+      "claim": "DNAJB12 and DNJB14 may be part of a well-conserved mechanism to reflux proteins from the ER to the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show by similarity, functionality, and topological orientation, that DNAJB12 and DNJB14 may be part of a well-conserved mechanism to reflux proteins from the ER to the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and comparative analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "ec346160-1f1f-4fba-87d7-151dd63a76b3",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C104",
+      "claim": "DNAJB12 and DNAJB14 facilitate the escape of non-envelope viruses from the ER to the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, DNAJB12 and DNAJB14 facilitate the escape of non-envelope viruses from the ER to the cytosol, similar to the reflux process (Goodwin et al., 2011; Goodwin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "5504c142-5026-471e-908a-52f8177172f7",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "claim_id": "C105",
+      "claim": "Viruses have hijacked this evolutionarily conserved mechanism, leading to the escape of ER proteins to the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "This further strengthens our hypothesis that viruses have hijacked this evolutionarily conserved mechanism, leading to the escape of ER proteins to the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation connecting viral escape mechanisms to ERCYS.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8f0cbbaa-4c02-4109-aae0-64c03ff229c1",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors identify five putative mammalian orthologs of yeast HLJ1 (DNAJB12, DNAJB14, DNAJC14, DNAJC18, and DNAJC30) that localize to the ER membrane with a J-domain facing the cytosol and contain a conserved HPD motif.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26, C27, C33, C34, C36, and C38 are supported by sequence alignment data (Figure 1A, Supplementary file 1), phylogenetic analysis (Figure 1B), and citations to prior literature establishing the topology of these proteins. The evidence converges to demonstrate evolutionary conservation and structural similarity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "5b23ea38-d11d-48e5-a3db-1ade731b83e5",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "DNAJB12 and DNAJB14 are the functional orthologs of yeast HLJ1 based on sequence similarity, localization, toxicity when overexpressed, and dependence on the HPD motif for ERCYS regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C29, and C86 are supported by multiple lines of evidence including sequence similarity (Figure 1), functional data showing HPD-dependence (Figures 3-4), and toxicity upon overexpression (Figure 3\u2014figure supplement 1H) that parallels yeast HLJ1. The convergence of structural, functional, and phenotypic data strongly supports orthology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "fb32623f-04e8-4f50-95e2-2563b58ce6d3",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "DNAJB12 and DNAJB14 are necessary for ER-to-cytosol reflux of ER-resident proteins (AGR2, DNAJB11, HYOU1) during ER stress, with double knockdown showing the strongest effect independent of changes in protein expression levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C46 are supported by subcellular fractionation experiments (Figure 2A-C, Figure 2\u2014figure supplement 1) showing that single knockdowns have modest effects while double knockdown strongly inhibits reflux during ER stress. Controls demonstrate this is not due to changes in total protein levels (Figure 2\u2014figure supplement 1F-N), strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "aa734ee0-32c1-4bd9-8d45-ef1cf68e614f",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Silencing DNAJB12 and DNAJB14 rescues wt-p53 phosphorylation and transcriptional activity during combined etoposide and ER stress treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 are supported by Western blot data showing p53 phosphorylation and p21 levels (Figure 2D-G) and luciferase reporter assays (Figure 2H). The data demonstrate that ER stress inhibits p53 activity in control cells but not in DNAJB12/14 double knockdown cells, supporting the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "1d51a2bc-6629-48d3-9064-071c16863fe8",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "DNAJB12 overexpression is sufficient to inhibit wt-p53 activity in a manner dependent on its HPD motif, while DNAJB14 overexpression alone is insufficient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 are supported by luciferase assays (Figure 3A-B) showing that WT-DNAJB12 but not the QPD mutant inhibits p53 activity, and that DNAJB14 overexpression has no effect. Expression levels are controlled (Figure 3\u2014figure supplement 1A-B), supporting the functional distinction between DNAJB12 and DNAJB14.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "0f852200-fd4d-4069-a9f7-21844bc68aa8",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "DNAJB12 overexpression is sufficient to induce ERCYS and reflux ER proteins to the cytosol independent of UPR activation, while DNAJB14 overexpression is insufficient. Prolonged DNAJB12 overexpression is toxic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C61 are supported by subcellular fractionation data (Figure 3C-F) showing DNAJB12 but not DNAJB14 induces reflux, qPCR data (Figure 3\u2014figure supplement 1C-D) showing no UPR activation, and viability assays (Figure 3\u2014figure supplement 1H) showing toxicity. The data converge to demonstrate DNAJB12 sufficiency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "7d06cc3b-f15a-42fd-aa50-8cda22bce366",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The HPD motif of DNAJB12 is necessary for ER protein reflux, as demonstrated by the dominant negative effect of the DNAJB12-QPD mutant and inhibitory effect of DNAJB14 overexpression during ER stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 are supported by subcellular fractionation experiments (Figure 4) showing that DNAJB12-WT maintains reflux during ER stress while the QPD mutant has a dominant negative effect, and DNAJB14 overexpression inhibits reflux. This demonstrates the functional importance of the HPD motif.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "f47aa258-1745-4627-b28e-37884fed78e1",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "DNAJB12 and DNAJB14 constitutively bind HSC70, and upon ER stress, they interact with each other and recruit SGTA to form a complex that facilitates ER protein reflux.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C72 are supported by coimmunoprecipitation experiments (Figure 5A-B, Figure 5\u2014figure supplement 1) showing constitutive HSC70 binding, stress-induced DNAJB12-DNAJB14 interaction, and stress-induced SGTA recruitment. The data demonstrate dynamic complex formation in response to ER stress.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "9365e0cb-88bd-4640-a440-b7be7582cc80",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SGTA interacts with refluxed ER-resident proteins (AGR2, PRDX4, DNAJB11) during ER stress in a manner dependent on DNAJB12 and DNAJB14.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73 and C74 are supported by coimmunoprecipitation experiments (Figure 5C-D) showing increased SGTA interaction with ER proteins during stress that is abolished in DNAJB12/14 knockdown cells. This demonstrates that DNAJB12/14 are required for SGTA to interact with refluxed proteins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "1b571de1-1930-40d4-97a3-044592c10f3f",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Computational modeling predicts that AGR2 and SGTA interact via a mixed disulfide bond between cys81 of AGR2 and cys153 of SGTA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75-C78 are based on AlphaFold2/ColabFold modeling (Figure 5E-F) which predicts the interaction interface. However, this is purely computational prediction without experimental validation (e.g., mutagenesis of the cysteines, biochemical demonstration of disulfide bond formation). The prediction is plausible but requires experimental confirmation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "69c42f34-2147-410f-8151-3c54e1a19deb",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "SGTA colocalizes with AGR2 in human colorectal cancer tumor tissue but not in healthy tissue, demonstrating conservation of the DNAJB12/14-SGTA-AGR2 interaction in human tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79 and C32 are supported by immunostaining data from human colorectal cancer samples (Figure 5\u2014figure supplement 1G-H) showing tumor-specific colocalization. This provides translational evidence that the mechanism operates in human cancer, though the sample size and statistical analysis are not fully described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "56140ec9-1aac-49c0-836a-13cbf97542d5",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "DNAJB12/14 and SGTA are required for the protective effect of ER stress on etoposide-induced toxicity, as demonstrated by loss of proliferation rescue in knockdown cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C83 are supported by XTT proliferation assays (Figure 6A-B) showing that subtoxic ER stress rescues etoposide toxicity in control cells but not in DNAJB12/14 or SGTA knockdown cells. This demonstrates the functional importance of the ERCYS pathway for cancer cell survival.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "50679136-e2e1-4e6c-b2e9-84f25b8037d5",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "High copy number of DNAJB12, DNAJB14, and SGTA is associated with poor prognosis in multiple cancer types based on TCGA survival analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84 and C85 are supported by TCGA survival analysis data (Figure 6\u2014figure supplement 1E-N) showing associations between high copy number and poor survival across multiple cancer types. However, this is correlative data and does not establish causation. The statistical significance and multiple testing corrections are not fully described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "454a0c02-49db-495f-a3e6-7cb6fcea809c",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "ERCYS is regulated by DNAJB12, DNAJB14, and SGTA through their J-domains binding HSC70, and this mechanism links ER stress to wt-p53 inhibition in cancer cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C8, C31, C94, and C95 represent the central mechanistic conclusion of the paper, supported by the convergence of knockdown experiments (Figure 2), overexpression studies (Figures 3-4), protein-protein interaction data (Figure 5), and functional assays (Figure 6). The evidence strongly supports this integrated model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "d26235b2-2ea8-4cad-a828-3a9a70909c6e",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "DNAJB12 and DNAJB14 have partial functional redundancy, with single knockdowns showing modest effects and double knockdown required for strong inhibition of ERCYS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C90 is supported by the knockdown experiments (Figure 2) showing that single knockdowns have partial effects while double knockdown strongly inhibits reflux. This interpretation is consistent with the high sequence similarity and overlapping functions of the two proteins.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "4370a55a-ea27-4ca8-ac24-108d4e533748",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The ERCYS function of DNAJB12/14 is distinct from their ERAD function and may represent a conserved mechanism hijacked by viruses for ER escape.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C87-C89 and C103-C105 are based on comparison to prior literature about viral escape mechanisms and ERAD. While the authors cite relevant papers (Goodwin et al., 2011; 2014), they do not provide direct experimental evidence distinguishing ERCYS from ERAD in the current study. The hypothesis is plausible but requires additional experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "c3e7edd2-3510-4165-9989-98c88b9603ec",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "DNAJB12/14 may form oligomeric membranous structures called DJANGOS during stress that facilitate ERCYS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C100-C102 are speculative statements based on prior literature about DJANGOS (Goodwin et al., 2014). The authors do not provide experimental evidence in the current study demonstrating DJANGOS formation or their role in ERCYS. This remains a hypothesis requiring experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "3e03f6cd-6d5f-4d55-acf0-c9c382bc7462",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background claims about ER function, protein folding, ERAD, and UPR mechanisms represent established knowledge in the field.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C9-C20 represent well-established background knowledge about ER biology, supported by appropriate citations to the literature. These provide necessary context for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "58658e6f-4a04-4990-a617-46fcb71f1ad8",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Prior work by the authors established that ERCYS refluxes ER proteins to the cytosol where they gain prosurvival functions, including AGR2 inhibition of wt-p53, and that yeast HLJ1 regulates this process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C21-C25, C39 summarize the authors' prior work (Igbaria et al., 2019; Sicari et al., 2021) establishing the ERCYS phenomenon. These are appropriately cited and provide the foundation for the current mechanistic study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "cc3bf3bc-44d0-4f8d-95e7-c8de7df552f8",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "ER stress is constitutively active in cancer cells, AGR2 expression is associated with wt-p53 downregulation, and ERCYS is active in human and murine tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C93 and C96 represent established knowledge about cancer biology supported by citations to prior literature. These provide important context linking the ERCYS mechanism to cancer biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    },
+    {
+      "id": "35a63fb8-5d6f-4e91-a794-a547ebedd751",
+      "content_id": "066082e5-63ec-41b7-819b-093aff8bb1f9",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The authors propose a working model where DNAJB12/14 and SGTA facilitate ER protein reflux in cancer cells to inhibit p53 and promote survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C99 represent the authors' working model (Figure 6C-D) synthesizing their experimental findings. This model is well-supported by the experimental data presented in the manuscript, though some aspects remain speculative (e.g., the precise molecular mechanism of membrane translocation).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:14:49.912348Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "12d16f12-2045-425f-a0a7-e2831f7d0317",
+      "result_id": "8f0cbbaa-4c02-4109-aae0-64c03ff229c1"
+    },
+    {
+      "claim_id": "c505730e-e297-4537-a204-5f053bd7df9e",
+      "result_id": "8f0cbbaa-4c02-4109-aae0-64c03ff229c1"
+    },
+    {
+      "claim_id": "0e3e4d35-85f3-4be3-b883-f6ca7d391540",
+      "result_id": "8f0cbbaa-4c02-4109-aae0-64c03ff229c1"
+    },
+    {
+      "claim_id": "1cc497c8-a0cd-4b21-bf5d-21bfbb3f584b",
+      "result_id": "8f0cbbaa-4c02-4109-aae0-64c03ff229c1"
+    },
+    {
+      "claim_id": "779e45ad-a6c9-4ae4-b331-b046caf59d63",
+      "result_id": "8f0cbbaa-4c02-4109-aae0-64c03ff229c1"
+    },
+    {
+      "claim_id": "1371b8e4-24e6-40f5-8104-097bd322e8a7",
+      "result_id": "8f0cbbaa-4c02-4109-aae0-64c03ff229c1"
+    },
+    {
+      "claim_id": "242bdbb7-44d9-4130-b47a-f21105bebed1",
+      "result_id": "5b23ea38-d11d-48e5-a3db-1ade731b83e5"
+    },
+    {
+      "claim_id": "1195f8bc-e92a-40f5-aac7-e2edd7b0b13f",
+      "result_id": "5b23ea38-d11d-48e5-a3db-1ade731b83e5"
+    },
+    {
+      "claim_id": "30d018ea-6150-4c60-b8ed-62d57cb727e2",
+      "result_id": "5b23ea38-d11d-48e5-a3db-1ade731b83e5"
+    },
+    {
+      "claim_id": "24185cb9-0d83-4312-aa5d-4a80574100ab",
+      "result_id": "fb32623f-04e8-4f50-95e2-2563b58ce6d3"
+    },
+    {
+      "claim_id": "c98463d9-e16f-4b55-a2da-be26528dcd66",
+      "result_id": "fb32623f-04e8-4f50-95e2-2563b58ce6d3"
+    },
+    {
+      "claim_id": "8183977a-49a1-47a6-9394-e22cf383de0f",
+      "result_id": "fb32623f-04e8-4f50-95e2-2563b58ce6d3"
+    },
+    {
+      "claim_id": "b55a262b-2e35-49d1-b541-9cd04a1a6f5d",
+      "result_id": "fb32623f-04e8-4f50-95e2-2563b58ce6d3"
+    },
+    {
+      "claim_id": "0ebf7f6a-2fe3-40e5-9c97-768cef5de66f",
+      "result_id": "fb32623f-04e8-4f50-95e2-2563b58ce6d3"
+    },
+    {
+      "claim_id": "87fb5ce6-bfb9-46d5-b7d3-5fd642cc01cd",
+      "result_id": "fb32623f-04e8-4f50-95e2-2563b58ce6d3"
+    },
+    {
+      "claim_id": "56174ebc-dcc4-49c4-afa5-a626dd248f35",
+      "result_id": "fb32623f-04e8-4f50-95e2-2563b58ce6d3"
+    },
+    {
+      "claim_id": "a9593457-4125-4efa-b6fe-30e3bf029ccc",
+      "result_id": "aa734ee0-32c1-4bd9-8d45-ef1cf68e614f"
+    },
+    {
+      "claim_id": "1ba6c589-3206-4cfa-b016-e08e4867265f",
+      "result_id": "aa734ee0-32c1-4bd9-8d45-ef1cf68e614f"
+    },
+    {
+      "claim_id": "d38d22af-d4ce-4cc4-8f18-5614503b1882",
+      "result_id": "aa734ee0-32c1-4bd9-8d45-ef1cf68e614f"
+    },
+    {
+      "claim_id": "afa53105-ff10-41a9-92c6-e174a53fec90",
+      "result_id": "aa734ee0-32c1-4bd9-8d45-ef1cf68e614f"
+    },
+    {
+      "claim_id": "a831b862-9aeb-4205-9c9a-494df25d51bb",
+      "result_id": "aa734ee0-32c1-4bd9-8d45-ef1cf68e614f"
+    },
+    {
+      "claim_id": "b858525b-d304-45d9-991c-623114c90fb9",
+      "result_id": "1d51a2bc-6629-48d3-9064-071c16863fe8"
+    },
+    {
+      "claim_id": "fecaf966-16a6-4322-a6ef-c262630da6c7",
+      "result_id": "1d51a2bc-6629-48d3-9064-071c16863fe8"
+    },
+    {
+      "claim_id": "7bd04a9f-e08f-47aa-8365-a849bf098382",
+      "result_id": "1d51a2bc-6629-48d3-9064-071c16863fe8"
+    },
+    {
+      "claim_id": "da45f796-2caf-4f0a-8259-5abb317462db",
+      "result_id": "1d51a2bc-6629-48d3-9064-071c16863fe8"
+    },
+    {
+      "claim_id": "5012dbbd-3ecc-4028-ac8e-6380dea67d7a",
+      "result_id": "0f852200-fd4d-4069-a9f7-21844bc68aa8"
+    },
+    {
+      "claim_id": "312a9e4f-4e2e-4751-bc5d-7648dfeb8a28",
+      "result_id": "0f852200-fd4d-4069-a9f7-21844bc68aa8"
+    },
+    {
+      "claim_id": "54a4867f-de0e-4509-b9f0-bca39a65ed4c",
+      "result_id": "0f852200-fd4d-4069-a9f7-21844bc68aa8"
+    },
+    {
+      "claim_id": "9cd74d7d-f64c-40fa-beaf-2a82555cbfce",
+      "result_id": "0f852200-fd4d-4069-a9f7-21844bc68aa8"
+    },
+    {
+      "claim_id": "622ab538-0148-498f-b4a9-e0a8784ce773",
+      "result_id": "0f852200-fd4d-4069-a9f7-21844bc68aa8"
+    },
+    {
+      "claim_id": "0485bdbf-7189-4e72-ad78-36efdcc215b8",
+      "result_id": "0f852200-fd4d-4069-a9f7-21844bc68aa8"
+    },
+    {
+      "claim_id": "d06715f4-7cb5-4c5f-a959-692cdff02a17",
+      "result_id": "7d06cc3b-f15a-42fd-aa50-8cda22bce366"
+    },
+    {
+      "claim_id": "1e7325a0-7fbd-4118-8fee-89b197254614",
+      "result_id": "7d06cc3b-f15a-42fd-aa50-8cda22bce366"
+    },
+    {
+      "claim_id": "9920ce75-53a7-484a-a664-368ccb93fdc6",
+      "result_id": "7d06cc3b-f15a-42fd-aa50-8cda22bce366"
+    },
+    {
+      "claim_id": "9e7fe68e-9041-430b-834c-0cf8f7da64c5",
+      "result_id": "7d06cc3b-f15a-42fd-aa50-8cda22bce366"
+    },
+    {
+      "claim_id": "38a8a63b-c178-419a-b2b3-7354cef0033e",
+      "result_id": "f47aa258-1745-4627-b28e-37884fed78e1"
+    },
+    {
+      "claim_id": "07e3e0f4-0d55-4657-b95c-865aebfb1ab0",
+      "result_id": "f47aa258-1745-4627-b28e-37884fed78e1"
+    },
+    {
+      "claim_id": "e201b1ed-d41a-4103-9f19-272493145af6",
+      "result_id": "f47aa258-1745-4627-b28e-37884fed78e1"
+    },
+    {
+      "claim_id": "d23f863e-45a3-4644-9ef6-6132c19ec56a",
+      "result_id": "f47aa258-1745-4627-b28e-37884fed78e1"
+    },
+    {
+      "claim_id": "e399593a-52a6-4e9f-b68c-c9d7c1200ed7",
+      "result_id": "f47aa258-1745-4627-b28e-37884fed78e1"
+    },
+    {
+      "claim_id": "69a3dc5e-4e93-41e8-9a40-3bb9b732720c",
+      "result_id": "f47aa258-1745-4627-b28e-37884fed78e1"
+    },
+    {
+      "claim_id": "88f6c948-8dc7-472b-b678-6645998f84cf",
+      "result_id": "f47aa258-1745-4627-b28e-37884fed78e1"
+    },
+    {
+      "claim_id": "9e9c3fe3-ce4f-4a28-9b16-371bccf7118e",
+      "result_id": "9365e0cb-88bd-4640-a440-b7be7582cc80"
+    },
+    {
+      "claim_id": "2ad7748e-5b9b-4d4c-a0bf-53039a11acee",
+      "result_id": "9365e0cb-88bd-4640-a440-b7be7582cc80"
+    },
+    {
+      "claim_id": "24b5ac7a-2641-4480-a1d2-741829090a9d",
+      "result_id": "1b571de1-1930-40d4-97a3-044592c10f3f"
+    },
+    {
+      "claim_id": "edafe222-2752-4ebc-b811-dc78e42672ac",
+      "result_id": "1b571de1-1930-40d4-97a3-044592c10f3f"
+    },
+    {
+      "claim_id": "f9f3c30b-c56d-4382-b88a-6fe3da40d56c",
+      "result_id": "1b571de1-1930-40d4-97a3-044592c10f3f"
+    },
+    {
+      "claim_id": "db40c13d-6457-4d37-bdcc-64b5b61d92ae",
+      "result_id": "1b571de1-1930-40d4-97a3-044592c10f3f"
+    },
+    {
+      "claim_id": "ea8549f1-1f78-452c-9c56-4bbfe79e34be",
+      "result_id": "69c42f34-2147-410f-8151-3c54e1a19deb"
+    },
+    {
+      "claim_id": "1114a4cf-a4f9-4503-814f-b4e34f53b9ea",
+      "result_id": "69c42f34-2147-410f-8151-3c54e1a19deb"
+    },
+    {
+      "claim_id": "2f80c611-8b7e-4189-8308-a4b2f4207354",
+      "result_id": "56140ec9-1aac-49c0-836a-13cbf97542d5"
+    },
+    {
+      "claim_id": "a0d8e724-2ecd-4781-bfd8-7fc5287c911a",
+      "result_id": "56140ec9-1aac-49c0-836a-13cbf97542d5"
+    },
+    {
+      "claim_id": "f6fc9b0f-abf6-4466-8747-a77fee074664",
+      "result_id": "56140ec9-1aac-49c0-836a-13cbf97542d5"
+    },
+    {
+      "claim_id": "d7d14eb9-aa60-402d-845b-bd0696e1a9fa",
+      "result_id": "56140ec9-1aac-49c0-836a-13cbf97542d5"
+    },
+    {
+      "claim_id": "83cf59b0-4d91-4b4c-90ca-1039899fbd9c",
+      "result_id": "50679136-e2e1-4e6c-b2e9-84f25b8037d5"
+    },
+    {
+      "claim_id": "0eb1e2c8-7897-46f7-9061-e5caed245ff0",
+      "result_id": "50679136-e2e1-4e6c-b2e9-84f25b8037d5"
+    },
+    {
+      "claim_id": "d3303046-5239-429a-a72a-c7e15e957a26",
+      "result_id": "454a0c02-49db-495f-a3e6-7cb6fcea809c"
+    },
+    {
+      "claim_id": "14279589-510e-41cb-86f6-002625f560c6",
+      "result_id": "454a0c02-49db-495f-a3e6-7cb6fcea809c"
+    },
+    {
+      "claim_id": "e7719d7e-a1a8-43ea-a0a6-effad7740c65",
+      "result_id": "454a0c02-49db-495f-a3e6-7cb6fcea809c"
+    },
+    {
+      "claim_id": "59a792b9-a254-416a-a1a6-03b57641f940",
+      "result_id": "454a0c02-49db-495f-a3e6-7cb6fcea809c"
+    },
+    {
+      "claim_id": "82e4fe48-495b-4912-b22e-daf721471d9b",
+      "result_id": "454a0c02-49db-495f-a3e6-7cb6fcea809c"
+    },
+    {
+      "claim_id": "062755b8-2a41-4881-b2a0-69a28f6b4c57",
+      "result_id": "454a0c02-49db-495f-a3e6-7cb6fcea809c"
+    },
+    {
+      "claim_id": "c3303055-edea-476d-8621-101ec8756de6",
+      "result_id": "454a0c02-49db-495f-a3e6-7cb6fcea809c"
+    },
+    {
+      "claim_id": "2db82b57-430d-4415-931c-2ba6ac890be1",
+      "result_id": "d26235b2-2ea8-4cad-a828-3a9a70909c6e"
+    },
+    {
+      "claim_id": "374dc1fd-8f26-46a6-bc7d-574e33fadad7",
+      "result_id": "4370a55a-ea27-4ca8-ac24-108d4e533748"
+    },
+    {
+      "claim_id": "113a22af-d7c0-44e4-9311-95c46ffa34f3",
+      "result_id": "4370a55a-ea27-4ca8-ac24-108d4e533748"
+    },
+    {
+      "claim_id": "4a00c39e-5e7d-4e8d-b14f-2db8d786fd02",
+      "result_id": "4370a55a-ea27-4ca8-ac24-108d4e533748"
+    },
+    {
+      "claim_id": "01cd2293-e491-4fc5-9349-c914180d2504",
+      "result_id": "4370a55a-ea27-4ca8-ac24-108d4e533748"
+    },
+    {
+      "claim_id": "ec346160-1f1f-4fba-87d7-151dd63a76b3",
+      "result_id": "4370a55a-ea27-4ca8-ac24-108d4e533748"
+    },
+    {
+      "claim_id": "5504c142-5026-471e-908a-52f8177172f7",
+      "result_id": "4370a55a-ea27-4ca8-ac24-108d4e533748"
+    },
+    {
+      "claim_id": "83e74909-bdb5-4c99-8d21-6d55fad79286",
+      "result_id": "c3e7edd2-3510-4165-9989-98c88b9603ec"
+    },
+    {
+      "claim_id": "31c75232-8551-4ecd-a976-21e5f3f93a72",
+      "result_id": "c3e7edd2-3510-4165-9989-98c88b9603ec"
+    },
+    {
+      "claim_id": "c3325419-8bf1-44a7-8058-bb8a2a94cc8e",
+      "result_id": "c3e7edd2-3510-4165-9989-98c88b9603ec"
+    },
+    {
+      "claim_id": "6fbfa926-4247-44e2-acab-886b74a62437",
+      "result_id": "3e03f6cd-6d5f-4d55-acf0-c9c382bc7462"
+    },
+    {
+      "claim_id": "18dc176e-7e54-46ca-8f26-931023783a10",
+      "result_id": "3e03f6cd-6d5f-4d55-acf0-c9c382bc7462"
+    },
+    {
+      "claim_id": "7ba5c55f-4fe6-4f68-8561-3c65084b5aa4",
+      "result_id": "3e03f6cd-6d5f-4d55-acf0-c9c382bc7462"
+    },
+    {
+      "claim_id": "2b8b83b1-0b14-47ba-87a2-8720e9719872",
+      "result_id": "3e03f6cd-6d5f-4d55-acf0-c9c382bc7462"
+    },
+    {
+      "claim_id": "b5e3b59b-3f91-47f0-a5e5-096f55ea20a6",
+      "result_id": "3e03f6cd-6d5f-4d55-acf0-c9c382bc7462"
+    },
+    {
+      "claim_id": "77e6877a-6647-4bcb-95c2-cd378f73fb04",
+      "result_id": "3e03f6cd-6d5f-4d55-acf0-c9c382bc7462"
+    },
+    {
+      "claim_id": "745b15d9-8ff4-4881-9e22-25f4a2e9213f",
+      "result_id": "3e03f6cd-6d5f-4d55-acf0-c9c382bc7462"
+    },
+    {
+      "claim_id": "609ab73a-77e0-40f4-a87b-925d9215821c",
+      "result_id": "3e03f6cd-6d5f-4d55-acf0-c9c382bc7462"
+    },
+    {
+      "claim_id": "b097b4cd-824d-44e1-952e-c5b406f7d4be",
+      "result_id": "3e03f6cd-6d5f-4d55-acf0-c9c382bc7462"
+    },
+    {
+      "claim_id": "ea31117d-dfc0-417e-92cb-3fab1e5cb2ac",
+      "result_id": "3e03f6cd-6d5f-4d55-acf0-c9c382bc7462"
+    },
+    {
+      "claim_id": "4cccfea9-96e9-49ed-9c04-d3344925b611",
+      "result_id": "3e03f6cd-6d5f-4d55-acf0-c9c382bc7462"
+    },
+    {
+      "claim_id": "86f4228e-462b-4067-988d-53e8bd960f09",
+      "result_id": "3e03f6cd-6d5f-4d55-acf0-c9c382bc7462"
+    },
+    {
+      "claim_id": "1d89c5db-211e-4a35-a209-bd64f46365d8",
+      "result_id": "3e03f6cd-6d5f-4d55-acf0-c9c382bc7462"
+    },
+    {
+      "claim_id": "d04e26b5-b018-477a-a595-f5b0eeb66184",
+      "result_id": "3e03f6cd-6d5f-4d55-acf0-c9c382bc7462"
+    },
+    {
+      "claim_id": "f0642910-204a-4cfa-9f18-c398b5ce2a5f",
+      "result_id": "58658e6f-4a04-4990-a617-46fcb71f1ad8"
+    },
+    {
+      "claim_id": "5827b346-32f2-40fb-9571-3ad487d16ece",
+      "result_id": "58658e6f-4a04-4990-a617-46fcb71f1ad8"
+    },
+    {
+      "claim_id": "e4e25dbe-1c3e-45bf-a862-0add9262e77a",
+      "result_id": "58658e6f-4a04-4990-a617-46fcb71f1ad8"
+    },
+    {
+      "claim_id": "cb6fc676-6378-47df-b565-5bbc9d2ba898",
+      "result_id": "58658e6f-4a04-4990-a617-46fcb71f1ad8"
+    },
+    {
+      "claim_id": "6e5b61d9-00dc-4170-b14d-542f96891876",
+      "result_id": "58658e6f-4a04-4990-a617-46fcb71f1ad8"
+    },
+    {
+      "claim_id": "23cb3512-641c-4675-a64d-d0959dcb586b",
+      "result_id": "58658e6f-4a04-4990-a617-46fcb71f1ad8"
+    },
+    {
+      "claim_id": "f9553f36-37eb-4942-a4a6-385fc559f879",
+      "result_id": "58658e6f-4a04-4990-a617-46fcb71f1ad8"
+    },
+    {
+      "claim_id": "02130eb4-9647-4539-9459-ba88c930f9b6",
+      "result_id": "58658e6f-4a04-4990-a617-46fcb71f1ad8"
+    },
+    {
+      "claim_id": "ce0b09c9-04d0-4ee6-b29a-ab1d6c6e2811",
+      "result_id": "cc3bf3bc-44d0-4f8d-95e7-c8de7df552f8"
+    },
+    {
+      "claim_id": "8a568b3e-6f18-401a-9194-5b58a0c035db",
+      "result_id": "cc3bf3bc-44d0-4f8d-95e7-c8de7df552f8"
+    },
+    {
+      "claim_id": "4de5af74-f064-49c5-bd42-fe323d7e2880",
+      "result_id": "cc3bf3bc-44d0-4f8d-95e7-c8de7df552f8"
+    },
+    {
+      "claim_id": "e9a4ae30-0505-4bcd-89f4-50d3753578df",
+      "result_id": "cc3bf3bc-44d0-4f8d-95e7-c8de7df552f8"
+    },
+    {
+      "claim_id": "4bda4d4d-7122-4f0c-a066-6fa96a705be4",
+      "result_id": "35a63fb8-5d6f-4e91-a794-a547ebedd751"
+    },
+    {
+      "claim_id": "4596bdb0-5c45-4b92-9e84-10c847e85078",
+      "result_id": "35a63fb8-5d6f-4e91-a794-a547ebedd751"
+    },
+    {
+      "claim_id": "a74ecf80-2efa-48e8-b33b-b60d47fc71be",
+      "result_id": "35a63fb8-5d6f-4e91-a794-a547ebedd751"
+    }
+  ],
+  "comparisons": []
+}

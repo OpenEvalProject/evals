@@ -1,0 +1,2077 @@
+{
+  "submission": {
+    "id": "b312d073-7f54-4362-875a-282e9e852e32",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:54:08.087105Z",
+    "updated_at": "2025-12-04T04:54:08.087105Z"
+  },
+  "content": [
+    {
+      "id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "submission_id": "b312d073-7f54-4362-875a-282e9e852e32",
+      "content_type": "manuscript",
+      "content_text": "# Mir221/222 drive synovial hyperplasia and arthritis by targeting cell cycle inhibitors and chromatin remodeling components\n\n## Authors\n\n- Fani Roumelioti<sup>1</sup> ([ORCID: 0000-0003-0112-6601](https://orcid.org/0000-0003-0112-6601))\n- Christos Tzaferis<sup>1</sup>\n- Dimitris Konstantopoulos<sup>1</sup>\n- Dimitra Papadopoulou<sup>1</sup>\n- Alejandro Prados<sup>1</sup>\n- Maria Sakkou<sup>1</sup>\n- Anastasios Liakos<sup>5</sup>\n- Panagiotis Chouvardas<sup>1</sup>\n- Theodore Meletakos<sup>5</sup>\n- Yiannis Pandis<sup>1</sup>\n- Niki Karagianni<sup>6</sup>\n- Maria C Denis<sup>6</sup>\n- Maria Fousteri<sup>5</sup>\n- Maria Armaka<sup>5</sup> ([ORCID: 0000-0003-0985-9076](https://orcid.org/0000-0003-0985-9076))\n- George Kollias<sup>1</sup> ([ORCID: 0000-0003-1867-3150](https://orcid.org/0000-0003-1867-3150)) \u2020\n\n### Affiliations\n\n1. Institute for Bioinnovation, Biomedical Sciences Research Centre (BSRC) \u201cAlexander Fleming\u201d Vari Greece ([ROR:013x0ky90](https://ror.org/013x0ky90))\n2. Department of Pathophysiology, Medical School, National and Kapodistrian University of Athens Athens Greece ([ROR:04gnjpq42](https://ror.org/04gnjpq42))\n3. Department of Physiology, Medical School, National and Kapodistrian University of Athens Athens Greece ([ROR:04gnjpq42](https://ror.org/04gnjpq42))\n4. Center of New Biotechnologies & Precision Medicine, National and Kapodistrian University of Athens Medical School Athens Greece ([ROR:04gnjpq42](https://ror.org/04gnjpq42))\n5. Institute for Fundamental Biomedical Research, Biomedical Sciences Research Center \"Alexander Fleming\" Vari Greece ([ROR:013x0ky90](https://ror.org/013x0ky90))\n6. Biomedcode Hellas SA Vari Greece ([ROR:013x0ky90](https://ror.org/013x0ky90))\n\n\u2020 Corresponding author\n\n## Abstract\n\nmiRNAs constitute fine-tuners of gene expression and are implicated in a variety of diseases spanning from inflammation to cancer. miRNA expression is deregulated in rheumatoid arthritis (RA); however, their specific role in key arthritogenic cells such as the synovial fibroblast (SF) remains elusive. Previous studies have shown that Mir221/222 expression is upregulated in RA SFs. Here, we demonstrate that TNF and IL-1\u03b2 but not IFN-\u03b3 activated Mir221/222 gene expression in murine SFs. SF-specific overexpression of Mir221/222 in huTNFtg mice led to further expansion of SFs and disease exacerbation, while its total ablation led to reduced SF expansion and attenuated disease. Mir221/222 overexpression altered the SF transcriptional profile igniting pathways involved in cell cycle and ECM (extracellular matrix) regulation. Validation of targets of Mir221/222 revealed cell cycle inhibitors Cdkn1b and Cdkn1c, as well as the epigenetic regulator Smarca1. Single-cell ATAC-seq data analysis revealed increased Mir221/222 gene activity in pathogenic SF subclusters and transcriptional regulation by Rela, Relb, Junb, Bach1, and Nfe2l2. Our results establish an SF-specific pathogenic role of Mir221/222 in arthritis and suggest that its therapeutic targeting in specific subpopulations could lead to novel fibroblast-targeted therapies.\n\n## Introduction\n\nRheumatoid arthritis (RA) is a chronic, painful, and destructive disease with sustained inflammation in the joints, which eventually leads to the destruction of cartilage and bone. Articular inflammation is fueled by the aberrant production of inflammatory mediators by immune and mesenchymal resident cells (McInnes et al., 2016). Genetically modified mouse models with deregulated expression of TNF develop an erosive polyarthritis resembling RA (huTNFtg) (Keffer et al., 1991) and SpAs (spondyloarthropathies) (TNF\u0394ARE [Kontoyiannis et al., 1999], TgA86 [K\u00fcsters et al., 1997; Vafeiadou et al., 2020]), showing also extra-articular manifestations, such as heart valve disease and intestinal inflammation, recapitulating comorbid pathologies often observed in humans (Kontoyiannis et al., 1999; Ntari et al., 2018).\n\nEarly studies in our lab established that TNF targeting of TNFR1 on synovial fibroblasts (SFs) is required for the development of arthritis and suffices to orchestrate full pathogenesis (Armaka et al., 2008; Armaka et al., 2018). SFs (resident mesenchymal cells in the joints) in RA diverge from their physiological role to nourish and protect the joints and undergo arthritogenic transformation. Under chronic inflammatory signals, SFs hyperproliferate, express ECM-degrading enzymes, and acquire an aggressive, invasive, and tissue-destructive phenotype (Kontoyiannis and Kollias, 2000; Dakin et al., 2018; Koliaraki et al., 2020). In addition, arthritogenic SFs can migrate via the circulation to distant sites and transfer disease in both mice and humans (Aidinis et al., 2003; Lef\u00e8vre et al., 2009). Epigenetic alterations, such as global DNA hypomethylation and deregulated expression of miRNAs and lncRNAs (Karouzakis et al., 2009; Evangelatos et al., 2019; Zou et al., 2018), have been linked to the aggressive and destructive behavior of SFs.\n\nAltered expression and important functions have been reported for a number of miRNAs in RA (Evangelatos et al., 2019). miRNAs are small regulatory RNAs (19\u201325 nt long) that fine-tune the expression of target mRNAs and have fundamental roles in development, physiology, and disease. They recognize their RNA targets by binding mainly to their 3\u2032UTR region, guide them to the RISC complex, and lead them either to target degradation or translational repression (Jonas and Izaurralde, 2015).\n\nSpecifically, Mir221 and Mir222 have been found upregulated in SFs derived from the huTNFtg mouse model and RA patients (Pandis et al., 2012). Mir221/222 are clustered on the X chromosome (Mirc53 locus) and classified as oncomiRs as they are upregulated in a number of human epithelial cancers. They target genes mainly involved in cell proliferation and survival, such as cell cycle inhibitors Cdkn1b and Cdkn1c (le Sage et al., 2007; Pineau et al., 2010). Under nonresolving inflammatory signals, such as in sepsis, the overexpression of Mir222 contributes to morbidity by targeting Smarca4, a chromatin remodeling component that participates in the SWI/SNF complex (Seeley et al., 2018). In RA, expression levels of Mir221/222 positively correlate with disease progression (Abo ElAtta et al., 2019) and ex vivo downregulation of Mir221 has been shown to decrease migration and invasion of human RA SFs (Yang and Yang, 2015). However, the in vivo role of these two miRNAs in arthritis remained unexplored.\n\nHere, we provide evidence that Mir221/222 play a key pathogenic role in TNF-driven arthritis as in vivo SF-targeted overexpression of Mir221/222 led to more aggressive arthritis associated with enhanced expansion of SF populations and total genetic ablation of these miRNAs led to amelioration of disease manifestations. Additionally, bioinformatic target prediction tools for Mir221/222 combined with RNA expression data uncovered both known [Cdkn1b (p27), Cdkn1c (p57) cell cycle inhibitors] as well as novel targets (Smarca1, a chromatin remodeling component). scATAC-seq analysis of SFs from arthritic mice revealed increased Mir221/222 gene activity in the destructive subpopulations of the lining and expanding intermediate compartment. Finally, transcription factor motif enrichment analysis revealed transcription factors such as Rela, Relb, Junb (Galardi et al., 2011), Nfe2l2, and Bach1 that could regulate the expression of Mir221/222 in arthritis.\n\nOverall, these data suggest that therapeutic targeting of these two miRNAs in specific SF subpopulations could be beneficial for the treatment of human arthritis and perhaps other inflammatory diseases associated with pathogenic expansion of fibroblasts.\n\n## Results\n\n### Mir221 and Mir222 induction in huTNFtg SFs depends on the TNF/TNFR1 axis and IL-1\u03b2\n\nWe have previously shown that Mir221/222 levels are increased in SFs from arthritic 8-week-old huTNFtg mice and RA patients (Pandis et al., 2012). To determine the expression profile of both Mir221 and Mir222 during disease progression, we analyzed their expression in huTNFtg SFs obtained at early (3 weeks), intermediate (8 weeks), as well as late (11 weeks) disease stages, and compared them to SFs from WT control mice. Both Mir221 and Mir222 were upregulated from the early disease stage, and this upregulation was further augmented with disease progression (Figure 1A and B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84698/elife-84698-fig1-v1.jpg)\n\n**Figure 1.:** (A, B) Expression levels of Mir221 and Mir222 from cultured SFs, as determined by qRT-PCR at different time points of disease of huTNFtg mice, as well as control wild-type mice (WT). Expression levels were normalized to the levels seen in 3-week-old WT mice (n = 6\u20139). Two-way ANOVA statistical analysis was used with the suggested correction. (C, D) Quantification of Mir221 and Mir222 levels in cultured WT SFs after 24, 48, and 72 hr stimulation with TNF, LPS, IL1-\u03b2, IFN-\u03b3, and PolyIC (n = 3\u201313). WT unstimulated SFs served as reference. Multiple t-tests statistical analysis was used. (E, F) Mir221 and 222 levels in cultured SFs from huTNFtg and huTNFtg;Tnfr1-/- mice (n = 3\u20136). WT SFs served as reference for normalization. Student\u2019s t-test statistical analysis was used, unpaired. (G, H) Mir221 and 222 expression analysis in cultured WT SFs after TNF or IL-1\u03b2 stimulation in the absence or presence of anakinra (n = 3\u20136). Expression was normalized to the levels detected in WT unstimulated SFs. Student\u2019s t-test statistical analysis was used, unpaired. In all expression analysis experiments for Mir221 and 222, Rnu6 was used as a housekeeping gene. Data represent mean \u00b1 SEM. *p<0.05, **p<0.01, ***p<0.001, ****p<0,0001, ns = not significant.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84698/elife-84698-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) qRT-PCR analysis of Ccl2 expression in cultured WT SFs after 24 hr stimulation with TNF, LPS, IL1-\u03b2, and PolyIC (n = 3\u20136). WT unstimulated SFs served as reference. Student\u2019s t-test statistical analysis was used, unpaired. (B) qRT-PCR analysis of Cxcl9 expression in cultured WT SFs after 24 hr stimulation with IFN-\u03b3 (n = 6). WT unstimulated SFs served as reference for normalization. Student\u2019s t-test statistical analysis was used, unpaired. (C) qRT-PCR analysis of Ccl2 expression in cultured WT SFs after 24 hr stimulation with TNF and IL1-\u03b2 in the presence or absence of anakinra (n = 3\u20136). Expression was normalized to the levels detected in WT unstimulated SFs. Student\u2019s t-test statistical analysis was used, unpaired. In all expression analysis experiments, B2m was used as a housekeeping gene for normalization. Data represent mean \u00b1 SEM. *p<0.05, **p<0.01, ***p<0.001, ****p<0,0001, ns = not significant.\n\nPrevious studies have shown that Mir221/222 expression is induced by LPS and TNF in macrophages and that they are implicated in LPS tolerance and endotoxemia (Seeley et al., 2018; El Gazzar and McCall, 2010). To understand the tissue- and disease-specific regulation of Mir221/222 in SFs, we stimulated SFs with an array of inflammatory stimuli, such as TNF, LPS, IL-1\u03b2, IFN-\u03b3, and PolyIC, and analyzed miRNA expression 24, 48, and 72 hr post-induction (Figure 1C and D). To validate the response of SFs to the inflammatory signals, we measured the expression of known downstream targets (Figure 1\u2014figure supplement 1A and B). TNF, LPS, and IL-1\u03b2 led to consistent upregulation of both Mir221 and Mir222 in SFs at all time points examined (Figure 1C and D). To further characterize the requirement of upstream TNF signaling for the induction of Mir221/222, SFs were isolated from huTNFtg mice lacking TNFR1, and Mir221/222 levels were measured. These mice do not develop any RA pathology and the two miRNAs were found not to be induced in the absence of TNFR1 (Figure 1E and F). Additionally, we analyzed whether the TNF-mediated induction of Mir221/222 depends on IL-1\u03b2 signaling. Since IL-1\u03b2 signaling is reported to act both independently or downstream of TNF in RA and SFs (Brennan et al., 1989; Probert et al., 1995; van den Berg et al., 1999; Feldmann, 2002; Zwerina et al., 2007), we treated WT SFs with anakinra (an IL-1 receptor antagonist) and then stimulated them with TNF. Anakinra successfully inhibited downstream IL-1\u03b2 signaling (Figure 1\u2014figure supplement 1C), but did not abrogate Mir221/222 induction by TNF (Figure 1G and H). Thus, TNF may upregulate Mir221/222 independently of IL-1\u03b2.\n\n### Mesenchymal cell overexpression of Mir221 and Mir222 exacerbates arthritis in huTNFtg mice\n\nIn order to study the in vivo role of Mir221/222 in SFs, we generated a transgenic mouse, TgCol6a1-Mir221/222, overexpressing these two miRNAs under the Col6a1 promoter (Figure 2A), which is known to target cells of mesenchymal origin in the joints, including the SFs (Armaka et al., 2008). Overexpression of Mir221/222 was verified through qRT-PCR analysis in various tissues (Figure 2\u2014figure supplement 1A and B). Fibroblast-specific overexpression of Mir221/222 was verified in ex vivo cell cultures of SFs, intestinal mesenchymal cells (IMCs), and lung fibroblasts (LFs) (Figure 2\u2014figure supplement 1C and D), whereas no overexpression could be observed in cells of hematopoietic or epithelial lineage (Figure 2\u2014figure supplement 1E and F).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84698/elife-84698-fig2-v1.jpg)\n\n**Figure 2.:** (A) Mir221/222 were cloned under the Col6\u03b11 promoter to target expression in cells of mesenchymal origin. (B) Representative histological images of H&E, TB, and TRAP stained ankle joint sections and histological score of synovial hyperplasia, cartilage destruction, and osteoclast numbers of 8-week-old huTNFtg (n = 5\u20137) and huTNFtg;TgCol6a1-Mir221/222 mice (n = 4\u20135). t: talus; c: calcaneous. Scale bars: 600 \u03bcm and 300 \u03bcm. Student\u2019s t-test statistical analysis was used, unpaired. (C) Representative microCT images of the ankle joint area of 8-week-old huTNFtg and huTNFtg;TgCol6a1-Mir221/222 mice. (D\u2013F) Quantification of bone erosions measuring the following parameters: decreased bone volume, decreased trabecular thickness, and increased trabecular separation by microCT analysis in the ankle joints of WT (n = 5), TgCol6a1-Mir221/222 (n = 7), huTNFtg (n = 9), and huTNFtg;TgCol6a1-Mir221/222 mice (n = 8). BV: bone volume; TV: trabecular volume. Student\u2019s t-test statistical analysis was used, unpaired. Data represent mean \u00b1 SEM. *p<0.05, **p<0.01, ***p<0.001, ****p<0,0001, ns = not significant. (G) Representative histological images of H&E, TB, and TRAP stained ankle joint sections and histological score of synovial hyperplasia, cartilage destruction, and osteoclast numbers of 7\u20138-week-old huTNFtg;TgCol6a1-Mir221/222;Mir221/222 d/f, f/- (n = 3) and huTNFtg;TgCol6a1-Mir221/222;Mir221/222-/- mice (n = 7). Scale bars: 800 \u03bcm and 250 \u03bcm. Student\u2019s t-test statistical analysis was used, unpaired.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84698/elife-84698-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Expression levels of Mir221 and Mir222 as determined by qRT-PCR from: (A, B) Ileum, colon, lung, and spleen from TgCol6a1-Mir221/222 mice. Student\u2019s t-test statistical analysis was used, unpaired. (C, D) Synovial fibroblasts (SFs), intestinal mesenchymal cells (IMCs), and lung fibroblasts (LFs) from TgCol6a1-Mir221/222 mice. Student\u2019s t-test statistical analysis was used, unpaired. (E, F) Peritoneal macrophages (TEMPs), splenocytes, and epithelial cells from TgCol6a1-Mir221/222 mice. Student\u2019s t-test statistical analysis was used, unpaired. Expression levels were normalized to the levels seen in WT mice (n = 3\u20136). Rnu6 was used for normalization. Data represent mean \u00b1 SEM. *p<0.05, **p<0.01, ***p<0.001, ****p<0,0001, ns = not significant.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84698/elife-84698-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Mir221/222 overexpression may affect bone physiology. Representative microCT images from WT and TgCol6a1-Mir221/222 ankle joint area. t: talus; c: calcaneous. (B, C) Synovial fibroblasts (SFs) from Mir221/222 -/- mice lack Mir221/222 expression. qRT-PCR for Mir221 and 222 levels in cultured SFs from 9 week-old Mir221/222 d/f, Mir221/222 -/-, huTNFtg;Mir221/222 d/f, and huTNFtg;Mir221/222 -/- (n = 2\u20133) mice. Expression of Mir221/222 d/f SFs was used for normalization. Student\u2019s t-test statistical analysis was used, unpaired. In all experiments, Rnu6 was used as a housekeeping gene for normalization. Data represent mean \u00b1 SEM. *p<0.05, **p<0.01, ***p<0.001, ****p<0,0001, ns = not significant.\n\nTo explore the role of the two miRNAs in the pathogenesis of arthritis, we crossed the TgCol6a1-Mir221/222 with the huTNFtg mice and monitored disease progression. Histopathological analysis revealed exacerbated arthritis, as observed by enhanced synovial hyperplasia (pannus formation), cartilage destruction, and number of osteoclasts in the double huTNFtg;TgCol6a1-Mir221/222 transgenic mice in comparison to the huTNFtg controls (Figure 2B). Moreover, bone morphometric analysis using microCT revealed greater bone erosions as indicated by decreased bone volume, decreased trabecular thickness, and increased trabecular separation (Figure 2C\u2013F). Interestingly, comparison of TgCol6a1-Mir221/222 to WT mice revealed significantly decreased trabecular thickness, as well as a tendency for decreased bone volume and increased trabecular separation (Figure 2D\u2013F, Figure 2\u2014figure supplement 2A), suggesting a potential a priori function of the two miRNAs in bone physiology, which needs further elucidation. To examine whether the effect of Mir221/222 on arthritis manifestations was SF-mediated and exclude a contributing indirect role of Mir221/222 sufficiency from other cell types, we generated huTNFtg;TgCol6a1-Mir221/222;Mir221/222-/- mice. Crossing mice carrying targeted alleles of Mir221/222 with loxP sites (Mir221/222 f/f) with a Deleter-Cre (Schwenk et al., 1995) mouse line led to the generation of complete knockout mice, referred to as Mir221/222-/-. Deletion of Mir221/222 in SFs of Mir221/222-/- mice was confirmed by qRT-PCR (Figure 2\u2014figure supplement 2B, C). Mir221/222-/- mice developed normally and did not exhibit any obvious phenotypic defects. huTNFtg;TgCol6a1-Mir221/222;Mir221/222-/- mice exhibited synovial hyperplasia, cartilage destruction, and number of osteoclasts as the huTNFtg;TgCol6a1-Mir221/222;Mir221/222 d/f, f/- mice (Figure 2G), indicating that SF-specific Mir221/222 overexpression even in the absence of Mir221/222 in other cell types is sufficient to deteriorate arthritis manifestations.\n\nNext, we checked the role of Mir221/222 overexpression in immune infiltration in the joints of huTNFtg;TgCol6a1-Mir221/222 mice and observed that it did not lead to a significant increase in inflammatory infiltrations, apart from an increase in CD8+ T cells (Figure 3A, Figure 3\u2014figure supplement 1A and B) compared to huTNFtg mice. CD8+ T cell subpopulations were further characterized and effector CD8+ T cells were found to be the predominant CD8+ T cell subpopulation in the arthritic joints. Moreover, effector CD8+ T cells were increased in the joints of huTNFtg;TgCol6a1-Mir221/222 compared to the huTNFtg mice and accounted for the observed increase in CD8+ T cells (Figure 3\u2014figure supplement 1B, Figure 3\u2014figure supplement 2A\u2013D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84698/elife-84698-fig3-v1.jpg)\n\n**Figure 3.:** (A) Infiltration of CD45+ cells, macrophages, monocytes, neutrophils, eosinophils, dendritic cells, CD4+ T cells, and CD8+ T cells in the ankle joints of 8-week-old WT (n = 5), TgColVI-Mir221/222 (n = 5), huTNFtg (n = 7), and huTNFtg;TgCol6a1-Mir221/222 mice (n = 7) quantified by FACS analysis (from two independent experiments). Student\u2019s t-test statistical analysis was used, unpaired. (B) Lining PDPN+CD90- and sublining PDPN+CD90+ synovial fibroblast (SF) number quantification in the ankle joints of 8-week-old WT (n = 5), TgCol6a1-Mir221/222 (n = 5), huTNFtg (n = 7), and huTNFtg;TgCol6a1-Mir221/222 mice (n = 7) by FACS analysis (from two independent experiments). Student\u2019s t-test statistical analysis was used, unpaired. (C, D) Mir221 and 222 levels in freshly sorted lining PDPN+CD90- and sublining PDPN+CD90+ SFs in the ankle joints of 8-week-old WT and huTNFtg mice (n = 3\u20138). Student\u2019s t-test statistical analysis was used, unpaired. Rnu6 was used as a housekeeping gene for normalization (E) % fraction of cultured SFs that are in the S-phase of the cell cycle from 8-week-old WT (n = 5), TgCol6a1-Mir221/222 (n = 8), huTNFtg (n = 8), and huTNFtg;TgCol6a1-Mir221/222 mice (n = 10) quantified by FACS analysis (from three independent experiments). Student\u2019s t-test statistical analysis was used, unpaired. (F) % area that was covered by cultured fibroblasts 24 hr after a wound was performed (n = 3). A representative experiment out of three is presented. Student\u2019s t-test statistical analysis was used, unpaired. All comparisons were performed using WT SFs as a reference sample. Data represent mean \u00b1 SEM. *p<0.05, **p<0.01, ***p<0.001, ****p<0,0001, ns = not significant.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84698/elife-84698-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) FACS gating strategy for myeloid cell infiltration in the ankle joints. The cell suspension was gated for live CD45+. In the CD45+ population, we characterized the abundance of macrophages, monocytes, neutrophils, dendritic cells, and eosinophils. (B) FACS gating strategy for lymphocyte cell infiltration in the ankle joints. The cell suspension was gated for live CD45+, and we plotted for CD4+ and CD8+ T cells. Then, the CD8+ T cells were further characterized for CD62L and CD44 expression. (C) FACS gating strategy for synovial fibroblast populations in the ankle joints. The cell suspension was gated for live CD45-CD31-, and we gated for PDPN and CD90 expression on fibroblasts. Single-cell suspensions from ankle joints were gated for live cells using zombie green or NIR. Counting beads were used for quantification of different cell subpopulations.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84698/elife-84698-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A\u2013D) Infiltration and characterization of CD8+ T cells in the ankle joints of 8-week-old WT (n = 10), TgCol6a1-Mir221/222 (n = 7), huTNFtg (n = 7), and huTNFtg;TgCol6a1-Mir221/222 mice (n = 10) quantified by FACS analysis (from three independent experiments). Student\u2019s t-test statistical analysis was used, unpaired.\n\nTo examine the effect of Mir221/222 overexpression in the physiology of SFs, we focused on the analysis of known fibroblast subpopulations in the joints of the huTNFtg;TgCol6a1-Mir221/222 mice. Similar to human RA, both lining layer SFs (LLSFs) and sublining layer SFs (SLSFs) were expanded in huTNFtg mice compared to WT, as indicated by FACS analysis (Figure 3B, Figure 3\u2014figure supplement 1C). Notably, Mir221/222 overexpression in arthritis rendered both layers more hyperplastic in huTNFtg;TgCol6a1-Mir221/222 mice compared to huTNFtg. It is worth mentioning that Mir221/222 overexpression alone was sufficient to increase the number of fibroblasts of the LL and SL in TgCol6a1-Mir221/222 mice (Figure 3B). To define which SF subpopulation responds to inflammatory signals produced by the arthritogenic microenvironment and upregulates Mir221/222 expression, we sorted LL and SL fibroblasts and measured Mir221/222 expression. An increase in Mir221/222 levels was observed, mainly, in fibroblasts of the LL and to a lesser extent in those of the SL (Figure 3C and D).\n\nFinally, primary SFs isolated from the joints of huTNFtg;TgCol6a1-Mir221/222 mice were functionally characterized ex vivo. In agreement with the in vivo data, both WT and huTNFtg SFs overexpressing Mir221/222 exhibited increased proliferation and wound-healing potential compared to their respective controls (Figure 3E and F). Collectively, these results establish a pro-proliferative function of Mir221/222 on SFs.\n\n### Overexpression of Mir221/222 in SFs results in activated pathways involved in cell cycle and repressed pathways linked to ECM remodeling\n\nTo identify downstream targets of Mir221/222 and unveil the molecular events that mediate the effect of their overexpression, we performed RNA sequencing and analyzed the expression profile of SFs from WT, TgCol6a1-Mir221/222, huTNFtg, and huTNFtg;TgCol6a1-Mir221/222 mice. The different genotypes are presented with distinct expression signatures and grouped according to genotype (Figure 4\u2014figure supplement 1A). We found a significant number of genes deregulated in all conditions compared to WT SFs, as well as an increase in deregulated genes due to Mir221/222 overexpression in the arthritogenic environment of huTNFtg mice (Figure 4\u2014figure supplement 1B and C). To assess the effect of Mir221/222, we focused on genes upregulated (n = 399) and downregulated (n = 449) in huTNFtg;TgCol6a1-Mir221/222 SFs compared to huTNFtg (Figure 4A). KEGG pathway analysis of significantly differentially expressed genes showed strong over-representation of pathways involved in cell cycle and DNA replication in the group of upregulated genes, while functional terms such as ECM function and AKT signaling were enriched among the downregulated ones (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84698/elife-84698-fig4-v1.jpg)\n\n**Figure 4.:** (A) Bubble plot of enriched KEGG pathways in the up- (red) and downregulated genes (blue) originated from the comparison of huTNFtg;TgCol6a1-Mir221/222 and huTNFtg bulk RNA-seq profiles. The color of the bubble signifies the statistical significance, while the size denotes the number of up-/downregulated genes found in the enriched term. (B) Venn diagram showing the overlap of genes predicted as Mir221/222 targets from DIANA, PicTar, and TargetScan and downregulated genes from huTNFtg compared to WT and huTNFtg;TgCol6a1-Mir221/222 compared to huTNFtg synovial fibroblasts (SFs). (C\u2013G) Expression analysis as defined by qRT-PCR of Cdkn1b, Cdkn1c, Smarca1, Prg4, and Itga3 in cultured SFs from 8-week-old WT, TgCol6a1-Mir221/222, huTNFtg, and huTNFtg;TgCol6a1-Mir221/222 mice (n = 3\u201316). WT SFs were used as a reference. Data from 2 to 4 independent experiments. Student\u2019s t-test statistical analysis was used, unpaired. In all experiments, B2m was used as a housekeeping gene for normalization. (H) Representative western blots depicting protein expression analysis of CDKN1B and CDKN1C in cultured SFs from 8-week-old WT, TgCol6a1-Mir221/222, huTNFtg, and huTNFtg;TgCol6a1-Mir221/222 mice. (I, J) Quantification of protein expression analysis as defined by western blots of CDKN1B and CDKN1C in cultured SFs from 8-week-old WT, TgCol6a1-Mir221/222, huTNFtg, and huTNFtg;TgCol6a1-Mir221/222 mice (n = 8\u201315). WT SFs were used as a reference. Data from four independent experiments. Student\u2019s t-test statistical analysis was used, unpaired. In all experiments, ACTIN was used as a housekeeping gene for normalization. (K) Representative western blot depicting protein expression analysis of SMARCA1 in cultured SFs from 8-week-old WT, TgCol6a1-Mir221/222, huTNFtg, and huTNFtg;TgCol6a1-Mir221/222 mice. (L) Quantification of protein expression analysis as defined by western blots of SMARCA1 in cultured SFs from 8-week-old WT, TgCol6a1-Mir221/222, huTNFtg, and huTNFtg;TgCol6a1-Mir221/222 mice (n = 8\u201313). WT SFs were used as a reference. Data from four independent experiments. Student\u2019s t-test statistical analysis was used, unpaired. In all experiments, ACTIN was used as a housekeeping gene for normalization. Data represent mean \u00b1 SEM. *p<0.05, **p<0.01, ***p<0.001, ****p<0,0001, ns = not significant.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84698/elife-84698-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Principal component analysis (PCA plot) of cultured synovial fibroblasts (SFs) from 8-week-old WT (n = 2), TgCol6a1-Mir221/222 (n = 3), huTNFtg (n = 3), and huTNFtg;TgCol6a1-Mir221/222 mice (n = 2). (B) Volcano plots of deregulated genes in SFs from TgCol6a1-Mir221/222, huTNFtg, and huTNFtg;TgCol6a1-Mir221/222 compared to WT SF expression profile. Nonsignificant deregulated genes are depicted with black color, significantly upregulated genes (p-value<0.05, log2FC > 1) with red, and significantly downregulated genes (p-value<0.05, log2FC < \u20131) with blue. (C) Heatmap showing log2 fold change values for the deregulated genes and contrasts plotted in (B). Hierarchical clustering has been performed for both genes and samples.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84698/elife-84698-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) qRT-PCR analysis of Mmp3 from huTNFtg (n = 5) and huTNFtg;TgCol6a1-Mir221/222 (n = 6) SFs. huTNFtg levels were used for normalization. B2m was used as a housekeeping gene. Student\u2019s t-test statistical analysis was used, unpaired. (B) qRT-PCR analysis of Rankl from huTNFtg (n = 5) and huTNFtg;TgCol6a1-Mir221/222 (n = 6) SFs. huTNFtg levels were used for normalization. B2m was used as a housekeeping gene. Student\u2019s t-test statistical analysis was used, unpaired. (C) IL-6 protein levels measured by ELISA in supernatants from WT (n = 2), TgCol6a1-Mir221/222 (n = 2), huTNFtg (n = 5), and huTNFtg;TgCol6a1-Mir221/222 mice (n = 5) SFs unstimulated or TNF stimulated for 24 or 48 hr. Student\u2019s t-test statistical analysis was used, unpaired. (D) qRT-PCR analysis of Il6 from WT (n = 4), TgCol6a1-Mir221/222 (n = 5), huTNFtg (n = 8), and huTNFtg;TgCol6a1-Mir221/222 mice (n = 6) SFs. WT levels were used for normalization. B2m was used as a housekeeping gene. Student\u2019s t-test statistical analysis was used, unpaired. (E) qRT-PCR analysis of TNF in SFs from huTNFtg (n = 3) and huTNFtg;TgCol6a1-Mir221/222 mice (n = 3). huTNFtg samples were used for normalization. B2m was used as a housekeeping gene. Student\u2019s t-test statistical analysis was used, unpaired. (F, G) Human TNF protein levels measured by ELISA in SF supernatants and sera from WT (n = 3\u20137), TgCol6a1-Mir221/222 (n = 3\u20134), huTNFtg (n = 5), and huTNFtg;TgCol6a1-Mir221/222 mice (n = 4\u20135). Student\u2019s t-test statistical analysis was used, unpaired. (H, I) Flow cytometry analysis of ICAM-1 and VCAM-1 expression as MFI in SFs from WT (n = 4), TgCol6a1-Mir221/222 (n = 5), huTNFtg (n = 8\u20139), and huTNFtg;TgCol6a1-Mir221/222 mice (n = 9). Student\u2019s t-test statistical analysis was used, unpaired. Data represent mean \u00b1 SEM. *p<0.05, **p<0.01, ***p<0.001, ****p<0,0001, ns = not significant.\n\nTo uncover direct targets of Mir221/222, we cross-referenced downregulated genes in SFs from huTNFtg compared to WT and from huTNFtg;TgCol6a1-Mir221/222 compared to huTNFtg mice with their predicted targets using three different tools (DIANA-microT-CDS, Targetscan, and Pictar). Among these potential target candidates, we found Cdkn1b, Cdkn1c (being predicted by the three tools), and Smarca1 (being predicted by DIANA-microT-CDS and Pictar) (Figure 4B). Cdkn1b and Cdkn1c are cell cycle inhibitors and have been previously validated as Mir221/222 targets (le Sage et al., 2007; Pineau et al., 2010), while Smarca1 (a component of the NURF complex involved in chromatin remodeling [Clapier et al., 2017]) is a new predicted target. To verify their regulation by Mir221/222, the expression levels of all targets were determined in SFs isolated from huTNFtg;TgCol6a1-Mir221/222 mice, as well as control mice. All Cdkn1b, Cdkn1c, and Smarca1 were found to be downregulated in SFs from huTNFtg;TgCol6a1-Mir221/222 mice compared to huTNFtg mice both at the RNA and protein levels (Figure 4C\u2013E and H\u2013L). Together our data suggest that Mir222/221 target specific cell cycle inhibitors (Cdkn1b and Cdkn1c) in order to induce proliferation of fibroblasts. Additionally, we also identified Smarca1, a novel Mir221/222 target involved in chromatin dynamics.\n\nECM-related genes such as Prg4 and Itga3 were found to be downregulated in huTNFtg SFs. Interestingly, Mir221/222 overexpression resulted in enhanced downregulation of these genes, probably through indirect mechanisms as they were not predicted to be direct targets (Figure 4F and G). Next, the observed downregulation of genes of the ECM led us to check the expression of additional genes related with a destructive behavior of SFs such as Mmp3 and Rankl (Tnfsf11). However, no difference was observed in Mmp3 and Rankl levels in arthritogenic SFs due to Mir221/222 overexpression (Figure 4\u2014figure supplement 2A and B).\n\nWe further analyzed if IL-6 levels in SFs were regulated by Mir221/222 overexpression, as previously reported (Yang and Yang, 2015). We did not observe any changes neither in the IL-6 protein levels in supernatants of na\u00efve or TNF stimulated SFs nor in Il6 RNA levels in SFs from Mir221/222 overexpressing mice (Figure 4\u2014figure supplement 2C and D).\n\nAdditionally, Tnf has been reported to be a direct target of Mir221 and Mir222 in sepsis in macrophages (Seeley et al., 2018; El Gazzar and McCall, 2010). However, in the huTNFtg model of arthritis, this could not apply as the endogenous 3\u2032UTR of the human TNF gene is replaced by the 3\u2032UTR of the HBB gene (Keffer et al., 1991). Nevertheless, we checked if there are indirect signals that stem from Mir221/222 overexpression in SFs and affect the already deregulated expression of human TNF. RNA levels of TNF were not altered in SFs from huTNFtg;TgCol6a1-Mir221/222 mice compared to huTNFtg (Figure 4\u2014figure supplement 2E). Moreover, no difference in the levels of human TNF and no mouse TNF protein was detected in the sera or supernatants of cultured SFs from huTNFtg and huTNFtg;TgCol6a1-Mir221/222 mice (Figure 4\u2014figure supplement 2F and G). Furthermore, in inflamed joints, SFs become activated and act as recruiters of leukocytes by increasing the expression of adhesion molecules. To examine whether Mir221/222 overexpression rendered fibroblasts more activated, we measured the expression of activation markers, such as ICAM-1 and VCAM-1, but no differences were observed (Figure 4\u2014figure supplement 2H1). It is therefore evident that Mir221/222 overexpression shifts the gene expression of arthritogenic SFs to a more proliferative and less ECM-producing signature, without any evidence of switching to a more pro-inflammatory or activated state.\n\n### Total deletion of Mir221/222 ameliorates arthritis in huTNFtg mice\n\nTo assess the therapeutic potential of Mir221/222 downregulation, we studied the impact of Mir221/222 deletion in arthritis. Mir221/222-/- mice were crossed with huTNFtg mice to ablate Mir221/222 during arthritis. huTNFtg;Mir221/222-/- mice presented with decreased synovial hyperplasia, cartilage destruction, and number of osteoclasts, as seen in histological analysis, compared to huTNFtg (Figure 5A). Additionally, Mir221/222 deletion in arthritis did not alter the inflammatory influx (Figure 5\u2014figure supplement 1), but rather led to the inhibition of fibroblast expansion of LL and SL in the joints (Figure 5B). Ex vivo, functional characterization of arthritic SFs in the absence of Mir221/222 showed decreased proliferative capacity than SFs from huTNFtg mice (Figure 5C), confirming the control of cell proliferation by these two miRNAs. Cdkn1b, Cdkn1c, and Smarca1 RNA and protein levels were partially restored (Figure 5D\u2013K), verifying their regulation by Mir221/222, although alternative or feedback mechanisms might also exist preventing the complete restoration of the expression levels of these genes and complete disease protection of huTNFtg;Mir221/222-/- mice.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/84698/elife-84698-fig5-v1.jpg)\n\n**Figure 5.:** (A) Representative histological images of H&E, TB, and TRAP stained ankle joint sections and histological score of synovial hyperplasia, cartilage destruction, and osteoclast numbers from 9-week-old huTNFtg;Mir221/222 d/f, f/- (n = 9) and huTNFtg;Mir221/222 -/- mice (n = 6\u20137). Student\u2019s t-test statistical analysis was used, unpaired. (B) Lining PDPN+CD90- and sublining PDPN+CD90+ synovial fibroblast (SF) number quantification in the ankle joints of 9-week-old Mir221/222 f/-, d/f (n = 8\u20139), Mir221/222 -/- (n = 10), huTNFtg;Mir221/222 f/-, d/f (n = 13) and huTNFtg;Mir221/222 -/- mice (n = 7) by FACS analysis (from three independent experiments). Student\u2019s t-test statistical analysis was used, unpaired. (C) % fraction of cultured SFs that are in the S-phase of the cell cycle from 9-week-old Mir221/222 d/f (n = 4), Mir221/222 -/- (n = 4), huTNFtg;Mir221/222 d/f (n = 3), and huTNFtg;Mir221/222 -/- (n = 7) (from two independent experiments). Mir221/222 d/f SFs were used for normalization. Student\u2019s t-test statistical analysis was used, unpaired. (D\u2013F) Expression analysis as defined by qRT-PCR of Cdkn1b, Cdkn1c, and Smarca1 in cultured SFs from 9-week-old Mir221/222 f/-, d/f, Mir221/222 -/-, huTNFtg;Mir221/222 d/f and huTNFtg;Mir221/222 -/- (n = 3\u20138, from two independent experiments). Expression of Mir221/222 d/f, f/- SFs was used for normalization. Student\u2019s t-test statistical analysis was used, unpaired. In all experiments, B2m was used as a housekeeping gene for normalization. (G, H) Representative western blots depicting protein expression analysis of CDKN1B, CDKN1C, and SMARCA1 in cultured SFs from 9-week-old Mir221/222 f/-, d/f, Mir221/222 -/-, huTNFtg;Mir221/222 d/f, and huTNFtg;Mir221/222 -/- mice. (I\u2013K) Quantification of protein expression analysis as defined by western blots of CDKN1B, CDKN1C, and SMARCA1 in cultured SFs from 9-week-old Mir221/222 f/-, d/f, Mir221/222 -/-, huTNFtg;Mir221/222 d/f, and huTNFtg;Mir221/222 -/- mice (n = 2\u20139). WT SFs were used as a reference. Data from 2 to 3 independent experiments. Student\u2019s t-test statistical analysis was used, unpaired. In all experiments, ACTIN was used as a housekeeping gene for normalization. (L) Luciferase activity in HEK293 cells transfected with constructs containing the wt Mir221/222 binding site (BS) of Smarca1 or the mutated one and co-transfected with either the control scramble pre-Mir or the pre-Mir221/222 for 72 hr. Scramble pre-Mir control co-transfected with the wt Smarca1 Mir221/222 BS served as a reference. Data from three independent experiments. Student\u2019s t-test statistical analysis was used, unpaired. Scale bars: 600 \u03bcm and 300 \u03bcm. Data represent mean \u00b1 SEM. *p<0.05, **p<0.01, ***p<0.001, ****p<0,0001, ns = not significant.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84698/elife-84698-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Infiltration of CD45+ cells, macrophages, monocytes, neutrophils, eosinophils, dendritic cells, CD4+ T cells, and CD8+ T cells in the ankle joints of 9-week-old Mir221/222 f/-, d/f (n = 6\u20139), Mir221/222 -/- (n = 5\u201310), huTNFtg;Mir221/222 f/-, d/f (n = 9\u201312) huTNFtg;Mir221/222 -/- mice (n = 8\u201310) by FACS analysis (from three independent experiments). Student\u2019s t-test statistical analysis was used, unpaired. Data represent mean \u00b1 SEM. *p<0.05, **p<0.01, ***p<0.001, ****p<0,0001, ns = not significant.\n\nFinally, a luciferase assay was performed to validate that Smarca1 is indeed a direct target of Mir221/222 and its expression is not modulated by these two miRNAs via indirect mechanisms. As seen in Figure 5L, combined transfection of HEK293 cells with pre-Mir221/222 and a plasmid carrying the Mir221/222 binding site of Smarca1 decreased luciferase activity contrary to transfections with scramble pre-Mir and/or a plasmid carrying a mutated Mir221/222 binding site of Smarca1.\n\n### Mir221/222 gene activity marks the pathogenic clusters of expanding intermediate and lining compartment of SFs in arthritis\n\nOur next step was to define Mir221/222 gene activity scores at a single-cell level in arthritogenic SFs. Chromatin accessibility analysis of previously generated scATAC-seq data from ankle joint fibroblasts of WT and huTNFtg mice (Armaka et al., 2022) revealed the emergence and expansion of a pathogenic intermediate cluster and a destructive one in the lining (Figure 6A, Figure 6\u2014figure supplement 1A), along with clusters found physiologically in WT mice. As can be seen, Mir221/222 locus (Mirc53) is more accessible in the pathogenic intermediate and destructive lining clusters (Figure 6B, Figure 6\u2014figure supplement 1B and C), marking their aberrant expansion. To gain insight into which regulatory elements may control Mir221/222 expression in arthritogenic SFs, correlation analysis between chromatin accessibility and gene activity scores was performed in the regulatory space of Mir221/222. Inferred linkages between accessible chromatin (peaks) and Mir221/222 genetic locus revealed transcription factor binding sites (TFBSs) of previously reported positive regulators such as Nfe2l2, Junb, Rela, Relb and Bach1 (Armaka et al., 2022), to be enriched in the regulatory regions associated with Mir221/222 locus (Figure 6C, Figure 6\u2014figure supplement 1D). Overall, the increased accessibility of Mir221/222 locus in the activated and expanding intermediate cluster, as well as in the destructive cluster of the lining layer in arthritis, corroborates the role of these two miRNAs in promoting proliferation and expansion of activated clusters of SFs in disease.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/84698/elife-84698-fig6-v1.jpg)\n\n**Figure 6.:** (A) UMAP projection of 6046 synovial fibroblast nuclei obtained by scATAC-seq from WT and huTNFtg samples. Cells are grouped in four categories: sublining (light green), expanding intermediate (purple), lining (light blue), and destructive lining (red). (B) Feature plots, in UMAP space, depicting gene activity scores of Mir221 (red) and Mir222 (blue) in WT and huTNFtg samples. (C) Genome accessibility track visualization of the extended regulatory space of Mir221 and Mir222 (chrX:19,081,970\u201319,211,971), with TF binding site and peak-to-gene linkage information, in huTNFtg samples. Upper: the genome track shows increased accessibility in expanding intermediate and destructive lining clusters. Middle: all reproducible peaks are shown, coupled with annotated CISBP binding information for Bach1, Rela, Relb, Nfe2l2, Batf3, and Junb TFs. Lower: putative regulatory linkages between Mir221-Mir222 genes and reproducible peaks are illustrated. Links between genes and peaks are colored by correlation (Pearson coefficient) of peak accessibility and gene activity scores.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84698/elife-84698-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Stacked barchart showing relative abundances (%) of cell clusters (as described in Figure 6A) across WT and huTNFtg samples. Both intermediate and destructive lining populations are expanding in disease state. (B, C) Violin plots exhibiting gene activity scores for Mir221 and Mir222 genes. Split view is selected in order to highlight the differences between WT (shown in gray) and huTNFtg (shown in red) samples across the different clusters. (D) Genome accessibility track visualization of the extended regulatory space of Mir221 and Mir222 (chrX:19,081,970\u201319,211,971), with TF binding site and peak-to-gene linkage information, in WT sample. Upper: the genome track shows increased accessibility in intermediate and destructive lining clusters. Middle: all reproducible peaks are shown, coupled with annotated CISBP binding information for Bach1, Rela, Relb, Junb, Batf3, and Nfe2l2 TFs. Lower: putative regulatory linkages between Mir221-Mir222 genes and reproducible peaks are illustrated. Links between genes and peaks are colored by correlation (Pearson coefficient) of peak accessibility and gene activity scores.\n\n## Discussion\n\nmiRNAs are important fine-tuners of gene expression and often exhibit a specific tissue or developmental expression pattern (Inui et al., 2010). Deregulation in miRNA expression levels has been linked with diseases such as cancer, viral infection, and inflammation (O\u2019Connell et al., 2012).\n\nIn RA, alteration in expression of several miRNAs has been reported in different cell types in the synovium or in circulating peripheral blood mononuclear cells (PBMCs). Mir146a and Mir155 are among the most highly studied miRNAs and both are upregulated in response to inflammatory signals and implicated in immune responses (Nakasa et al., 2011; Saferding et al., 2017; Bl\u00fcml et al., 2011; Kurowska-Stolarska et al., 2011); however, in the vast majority of the studies, no tissue specificity for the function of miRNAs in arthritis was considered.\n\nIn this study, we try to shed light on the in vivo role of the Mir221/222 family of miRNAs in arthritis. In the past, IL-1\u03b2 had been reported to mediate downstream signaling of TNF/TNFR1 axis (Brennan et al., 1989; Probert et al., 1995; Zwerina et al., 2007). In the present study, we provide evidence that in the arthritic microenvironment of the joints, TNFR1 signaling downstream of TNF and independently of IL-1\u03b2 can induce Mir221/222 levels in SFs apart from LPS and could suggest that increased TNF and IL-1\u03b2 levels can serve as signals that lead to Mir221/222 upregulation specifically in RA SFs.\n\nIn RA, proliferation of fibroblasts consists of one of the hallmarks of the aggressive behavior of the pathogenic mesenchyme, and it is mediated by survival and anti-apoptotic signals in SFs (Pap et al., 2000). Although the signals and epigenetic alterations that lead to this aberrant proliferation of SF subsets in RA remain under investigation, in this study we uncovered a novel role for Mir221/222 in the mesenchyma, where increased levels of Mir221/222 rendered fibroblasts more proliferative and migratory, even in the absence of an inflammatory trigger. Moreover, a causal role for Mir221/222 involvement in pannus hyperplasia was shown by the total ablation of these two miRNAs in the arthritic mice that led to decreased disease manifestations due to attenuated proliferation of SFs and decreased numbers of fibroblasts comprising the lining and sublining layers. Also, considering that mesenchymal overexpression of Mir221/222 at na\u00efve conditions (WT background) led to a tendency towards worse bone integrity and increased fibroblast populations suggests that Mir221/222 upregulation and control of target gene expression could have dramatic effects in a specific milieu under local unresolved inflammation.\n\nAnalysis of the transcriptional profile of SFs from huTNFtg;TgCol6a1-Mir221/222 mice compared to huTNFtg mice uncovered deregulation in pathways linked to cell cycle and ECM regulation. Cell cycle inhibitors Cdkn1b and Cdkn1c, known Mir221/222 targets, were both identified in our data and were verified by ex vivo experiments in SFs. Interestingly, deregulation in ECM components was observed due to Mir221/222 overexpression. ECM plays a crucial role in the joints and apart from providing support, it also promotes cell communication and motility. Synovial fluid containing hyaluronic acid and lubricin (PRG4) protects from friction and lubricates the cavity area (Buckley et al., 2021). Interestingly, during Mir221/222 overexpression in arthritis, the expression of ECM-related molecules in SFs was found altered and, more specifically, Prg4 and the integrin component Itga3 were downregulated. Prg4 and Itga3 were not predicted as direct targets of Mir221/222, so indirect mechanisms probably mediate this effect. Itga3 expression has been found to be downregulated in PBMCs from OA (osteoarthritis) patients (Zhang et al., 2019), and a previous study has reported that the absence of Prg4 from the synovium leads to OA and aberrant fibroblast expansion and proliferation (Rhee et al., 2005). Moreover, a cardioprotective and antifibrotic role of Mir221/222 was observed in cardiac fibroblasts by the downregulation of different types of collagens (Zhou et al., 2019). So, Mir221/222 could contribute to the catabolic profile of SFs in arthritis by affecting expression of ECM components. Furthermore, the mesenchymal overexpression of Mir221/222 did not render SFs more inflammatory or activated per se as it was supported by ex vivo studies in the past (Yang and Yang, 2015). In contrast, our in vivo data suggest that these two miRNAs regulate pro-proliferative signals leading to aberrant expansion of pathogenic SFs that in the end renders the arthritic milieu more inflammatory.\n\nAdditionally, Smarca1 was identified as a new direct target of Mir221/222 based on the transcriptional profile of SFs, bioinformatic analysis of predicted targets, and luciferase assay. SMARCA1 participates in the NURF chromatin remodeling complex that can limit or promote chromatin accessibility, and thus block or activate gene expression correspondingly (Clapier et al., 2017). NURF complex has been shown to promote cell proliferation, but a role for this complex in RA is missing (Ding et al., 2019). Future studies will reveal a specific role for SMARCA1 in shaping gene expression in arthritis. Recently, a study reported a role for Mir222 in targeting Brg1, an SWI/SNF chromatin remodeling component, leading to repression of inflammatory cytokine expression in sepsis (Seeley et al., 2018).\n\nFinally, analysis of chromatin accessibility data at a single-cell level revealed increased chromatin accessibility in Mir221/222 locus in the activated and expanding intermediate cluster and in the destructive cluster of the lining. This analysis, coupled with transcription factor binding site linkage, revealed transcription factors such as Junb, Rela, Relb (Galardi et al., 2011), Nfe2l2, and Bach1, which may play a role in positively regulating the activity of these two miRNAs in arthritis, leading to the expansion of pathogenic and destructive clusters of the intermediate and lining compartments, respectively. Notably, there is a recent study uncovering a role for NRF2 and BACH1 in promoting NSCLC tumor metastasis (Lignitto et al., 2019). Future experiments may thus elucidate the exact role of these transcription factors in the aggressive, autonomous, and migratory character of RA SFs.\n\nWe observed Mir221 and Mir222 induction to reach peak levels in late disease stages, and this agrees with a previous study that correlates their levels with disease activity in RA patients (Abo ElAtta et al., 2019). Moreover, their overexpression is sufficient to worsen the severity of the disease. Thus, these miRNAs could serve as biomarkers to predict disease progression in humans.\n\nAdditionally, therapeutic targeting of Mir221/222 could be beneficial as total genetic deletion of these two miRNAs protected to a certain degree from arthritis progression and the expression of their confirmed targets was partially restored. This partial protection underlines the fact that most probably there are additional mechanisms assuring the suppression of these targets and should be addressed. It is known that miRNA function is often redundant, which means that if an miRNA is missing, other miRNAs can regulate its targets. Further studies are therefore needed in order to identify additional miRNAs that target the same genes and assess the potential of their combined downregulation in the development of new treatments. Nonetheless, it is very interesting that during arthritis there are redundant and complementary pathways ensuring expansion of the pathogenic stroma subsets. \u0399t is of great interest to dissect which pro-survival and pro-proliferative pathways lead to expansion of pathogenic fibroblast subpopulations that could constitute novel targets for subpopulation-specific therapeutic intervention.\n\nCollectively, we report that Mir221 and Mir222 lead to enhanced disease progression in a mouse model of inflammatory polyarthritis due to increased pathogenic SF proliferation under inflammatory conditions, mainly through downregulation of cell cycle inhibitors. Finally, Mir221/222 gene activity is increased in the pathogenic and expanding intermediate and destructive lining clusters. Thus, mesenchymal targeting of Mir221/222 could potentially serve as a therapeutic tool for treating RA and their expression could be used as biomarkers for predicting disease outcomes.\n\n## Materials and methods\n\n### Mice\n\nHuman TNF transgenic (huTNFtg), Tnfr1-/-(Rothe et al., 1993), and Deleter-Cre (Schwenk et al., 1995) mice have been previously described. Mir221/222 f/f were purchased from the European Mouse Mutant Archive (EMMA) provided by Helmholtz Zentrum Muenchen (EMMA ID: EM 05507). Deleter-Cre were used to generate Mir221/222-/- mice. TgCol6a1-Mir221/222 mice were generated in Kollias Lab, BSRC Al. Fleming Institute. Briefly, around 1 kbp containing the Mir221/222 (Mirc53) locus was inserted into the BplI site of intron 2 of the HGH minigene in a pBluescript SK (+) vector. Then, the Col6\u03b11 promoter was inserted upstream of the previous fragment in the SalI\u2013BamHI (blunt) site of the pBluescript vector. The Col6a1::Mir221/222 transgene (around 11 kbp) was excised as a SalI\u2013NotI fragment for pronuclear microinjections and generation of TgCol6a1-Mir221/222 mice. Genetic analysis (by Southern blot) of the transgenic TgCol6a1-Mir221/222 mice showed that the transgene is inserted in a head-to-tail direction and in approximately 20 copies. All mice (both sexes) used in the study were analyzed compared to their respective controls that were cohoused littermates. Mice were euthanized by CO2 exposure.\n\nAll mice were maintained in a C57BL/6J or CBA;C57BL/6J genetic background. Mice were maintained under specific pathogen-free conditions in conventional, temperature-controlled, air-conditioned animal house facilities of BSRC Al. Fleming with 12 hr light/12 hr dark cycle and received food and water ad libitum.\n\n### Histology\n\nFormalin-fixed, EDTA-decalcified, paraffin-embedded mouse joint tissue specimens were sectioned and stained with hematoxylin-eosin (H&E), Toluidine Blue, or Tartrate-Resistance Acid Phosphatase (TRAP) Kit (Sigma-Aldrich). H&E and TB were semi-quantitatively blindly evaluated for the following parameters: synovial inflammation/hyperplasia (scale of 0\u20135) and cartilage erosion (scale of 0\u20135) based on an adjusted, previously described method (Mould et al., 2003). TRAP staining of joint sections was performed to measure number of osteoclasts using ImageJ software. Images were acquired with a Nikon microscope, equipped with a QImaging digital camera.\n\n### Microcomputed tomography\n\nMicrocomputed tomography (microCT) of excised joints was carried out using a SkyScan 1172 CT scanner (Bruker, Aartselaar, Belgium) at BSRC Al. Fleming Institute following the general guidelines used for the assessment of bone microarchitecture in rodents using microCT (Bouxsein et al., 2010). Briefly, scanning was conducted at 50 kV, 100 mA using a 0.5 mm aluminum filter, at a resolution of 5 mm/pixel. Reconstruction of sections was achieved using the NRECON software (Bruker) with beam hardening correction set to 40%. The analysis was performed on a spherical volume of interest (diameter 0.54 mm) within 73 slides of the trabecular region of calcaneus. Morphometric quantification of trabecular bone indices such as trabecular bone volume fraction (BV/TV%), bone surface density (BS/TV%), trabecular number (Tb. N; 1/mm), and trabecular separation (Tb. Sp; mm) were performed using the CT analyzer program (Bruker). Additionally, 3D images of the scanned area of the samples were generated using the CTvox software (Bruker).\n\n### Cell culture\n\nPrimary mouse SFs were isolated from the ankle joints of mice (Armaka et al., 2009) with the indicated genotypes and were depleted from CD45+ cells using Biotinylated anti-mouse CD45 antibody (BioLegend) and Dynabeads Biotin Binder (Invitrogen) according to the manufacturer\u2019s instructions and cultured for 3\u20134 passages for subsequent experiments.\n\nSFs were seeded at a concentration of 8 \u00d7 105 on a 60 mm plate, starved overnight, stimulated the next day with either huTNF (10 ng/ml), LPS (100 ng/ml), mIL-1\u03b2 (10 ng/ml), IFN-\u03b3 (10 ng/ml), or PolyIC (20 \u03bcg/ml) and collected at the indicated time points.\n\nIn experiments using the IL-1 inhibitor (Anakinra), pretreatment of cells with Anakinra at a concentration of 10 \u03bcg/ml was performed for 4 hr before stimulation with mIL-1\u03b2 (10 ng/ml) or huTNF (10 ng/ml) and subsequent analysis.\n\n### FACS analysis\n\nFACS analysis and sorting of SF subpopulations were performed by removing ankle joints, cutting them into pieces and being digested using 1000 U/ml Collagenase IV (Sigma-Aldrich) in DMEM for 60 min at 37\u00b0C. The cell suspension was centrifuged, resuspended in FACS buffer (PBS with 0.5% FBS, 0.05% sodium azide, and 2 mM EDTA), and cells were counted. The anti-Fc Receptor (anti-CD16/32) antibody (BioLegend 101302) was used to prevent nonspecific binding. For stainings, 1\u20132 million cells were incubated with the following antibodies: PE-conjugated anti-CD11b (BD Biosciences, 557397), APC/Cy7- or A700-conjugated anti-CD45 (BioLegend 103116, 103128), APC-conjugated anti-MHCII (eBioscience, 17-5320-82), PE/Dazzle594-conjugated anti-CD64 (BioLegend, 139320), APC/Cy7-conjugated anti-CD24 (BioLegend, 101840), FITC-conjugated anti-Ly6C (BD Biosciences, 553104), PE/Cy7-conjugated anti-CD11c (BioLegend, 117318), PE-conjugated anti-B220 (BD Biosciences, 553089), PE/Cy7-conjugated anti-CD3 (eBioscience, 25-0031-82), A700-conjugated anti-CD4 (BioLegend, 100536), APC-conjugated anti-CD8 (BioLegend, 100711), PerCP-Cy5.5-conjugated anti-CD62L (eBioscience, 45-0621-80), APC-eFluor780 anti-CD44 (eBioscience, 47-0441-80), A488-conjugated anti-CD90.2 (BioLegend, 105316), PE-conjugated anti-CD31 (BD Biosciences, 553373), PE/Cy7-conjugated anti-PDPN (BioLegend, 127412), biotinylated anti-Ly6G (eBioscience, 13-5931-75), streptavidin-conjugated PE/Cy5 (BD Pharmingen, 554062), PE-conjugated anti-ICAM-1 (BD Pharmingen, 553253), and A647-conjugated anti-VCAM-1 (BioLegend, 105712). Zombie Green (Sigma 423112) or NIR (Sigma 77184) and DAPI (Invitrogen D1306) were used for live/dead exclusion. Analysis was performed using a FACS Canto II Flow cytometer (BD Biosciences) and FACS Diva (BD Biosciences) or FlowJo software (FlowJo, LLC), and cell sorting was performed using a FACS Aria III Cell Sorter (BD Biosciences).\n\n### Western blot\n\nSamples were collected in RIPA buffer (1% NP-40, 0.1% sodium dodecyl sulfate [SDS], 150 mM NaCl, 50 mM Tris\u2013HCl, pH 7.4, 1 mM EDTA supplemented with protease [Roche] and phosphatase inhibitors [Sigma-Aldrich]), separated by SDS-PAGE (8 and 12.5%), transferred to nitrocellulose membranes (Millipore), and probed overnight with the following Abs: ACTIN (sc-1615, Santa Cruz Biotechnology, 1:2000), CDKN1B (3688, Cell Signaling, 1:1000), CDKN1C (ab-4058, Abcam, 1/800), and SMARCA1 (ab-172483, Abcam, 1/1000). Relative quantification was performed using ImageJ software analysis tool.\n\n### Cell cycle analysis\n\nCell cycle was detected by flow cytometry. Briefly, 4 \u00d7 105 cells were seeded onto 60 mm plates and incubated for 24 hr. The cells were then harvested and washed with PBS. Next, the pellet was resuspended and fixed in 70% prechilled ethanol for 30 min at 4\u00b0C. The cells were washed again with PBS followed by treatment with RNase for 30 min at 37\u00b0C and addition of 200 \u03bcl staining solution with propidium iodide into the pellet. The final mixture was analyzed by flow cytometry.\n\n### ELISA\n\nSupernatants were collected at 0, 24, and 48 hr, and IL-6 quantification was performed using the mouse IL-6 Duo-Set ELISA kit, according to the manufacturer\u2019s instructions (R&D Systems).\n\n### Wound-healing assay\n\nSFs were plated to form a monolayer on wells of a 24-well plate, serum-starved overnight, and wounded with 200 \u03bcl pipette tips the next day. The culture dishes were washed three times with 1\u00d7PBS to remove detached cells, and the remaining cells were grown in DMEM containing 10% FBS. After 24 hr of incubation, wound-healing potential was quantified by counting the surface that cells had migrated, proliferated, and covered using ImageJ software analysis tool.\n\n### RNA isolation and qRT-PCR\n\nRNA was isolated from SFs, IMCs, spleenocytes, and epithelial cells using the RNeasy or the miRNeasy mini kit (QIAGEN) according to the manufacturer\u2019s instructions. Isolated RNA was subsequently used either for 3\u2032RNA-seq sequencing and analysis or for construction of cDNA using the MMLV Reverse Transcriptase (Promega) or the TaqMan MicroRNA Reverse Transcription kit (Applied Biosystems). The cDNA was subsequently used for qRT-PCR using the Platinum SYBR-Green qPCR SuperMix (Invitrogen) or for detection of miRNA levels the TaqMan gene expression mastermix (Applied Biosystems) and the relative TaqMan microRNA probes. The CFX96 Touch Real-Time PCR Detection System (Bio-Rad) was used. Quantification was performed with the DDCt method.\n\n### 3\u2032 RNA-seq sequencing\n\nThe quantity and quality of RNA samples were analyzed using Agilent RNA 6000 Nano kit with the bioanalyzer from Agilent. RNA samples with RNA Integrity Number (RIN) > 7 were used for library construction using the 3\u2032 mRNA-Seq Library Prep Kit Protocol for Ion Torrent (QuantSeq-LEXOGEN) according to the manufacturer\u2019s instructions. DNA High Sensitivity Kit in the bioanalyzer was used to assess the quantity and quality of libraries according to the manufacturer\u2019s instructions (Agilent). Libraries were then pooled and templated using the Ion PI IC 200 Kit (Thermo Fisher Scientific) on an Ion Proton Chef Instrument or Ion One Touch System. Sequencing was performed using the Ion PI Sequencing 200 V3 Kit and Ion Proton PI V2 chips (Thermo Fisher Scientific) on an Ion Proton System according to the manufacturer\u2019s instructions.\n\n### Luciferase reporter gene assays\n\nThe wt Mir221/222 binding site (BS) in the Smarca1 3\u2032UTR (5\u2032 AAACTAGCGGCCGCACAATGCTTTCTACCTGAAATGTGTAGCTT 3\u2032) and a mutated Smarca1 Mir221/222 binding site (5\u2032 AAACTAGCGGCCGCACTTTGGATTGTAGGTCTAATGACATCGAT 3\u2032) were cloned in the pmirGLO Dual Luciferase miRNA target expression vector (Promega) downstream of the luciferase gene. Then, HEK293 cells were seeded in a 96-well plate at a density of 104 cells/well 24 hr prior transfection. The next day, cells were transiently co-transfected using Lipofectamine 3000 with 100 ng cloned pmirGLO plasmid and 50 nM pre-Mir221 and pre-Mir222 mimic or control scramble pre-Mir for 72 hr. Samples were lysed using the Dual-Glo Luciferase Assay System (Promega) and luciferase activity was measured according to the manufacturer\u2019s instructions. Firefly was divided by Renilla activity and normalized to the scramble pre-Mir control co-transfected with the wt Smarca1 Mir221/222 BS that served as a reference.\n\n### 3' RNA-seq bioinformatics analysis\n\nQuality of the FASTQ files (obtained after Ion Proton sequencing) was assessed by FastQC, following the software recommendations. Alignment of sequencing reads to the mouse reference genome was performed using the software HISAT2 (version 2.1.0) with the mm10 version of the reference genome. The raw bam files were summarized to read counts table using FeatureCounts (version 1.6.0) and the gene annotation file mus_musculus.grcm38.92.gtf from Ensembl database. The resulting gene counts table was subjected to differential expression analysis utilizing the R package DESeq2. Differentially expressed genes were identified after setting the following thresholds: p-value<0.05 and |log2FC|>1. Functional enrichment analysis of the up- and downregulated genes for the contrasts of interest was performed with the web version of the tool enrichR. Enriched KEGG pathways (KEGG Mouse 2019) were selected by setting the following thresholds: p-value<0.05 and gene count > 2.\n\n### scATAC-seq bioinformatics analysis\n\nAnalysis of scATAC-seq datasets was conducted by using the cellranger (10X Genomics) and ArchR suite as previously described (Armaka et al., 2022; Granja et al., 2021). Briefly, BCL files were converted to FASTQ files, aligned to UCSC mm10 reference genome, and WT and huTNFtg samples were aggregated and counted using 500 bp bins (tiles). Latent Semantic Indexing, graph-based clustering (louvain), and UMAP dimensionality reduction were applied accordingly. Gene activity scores (predictions of the level of expression of each gene) were computed as described in ArchR. Gene scores were scaled to 10,000 counts and log-normalized. To assign scATAC-seq cell-type identity, gene activity scores and scRNA-seq gene expression (Armaka et al., 2022) were aligned directly using a two-stage canonical correlation analysis. Non-fibroblast cells were excluded to result in 6046 SFs cells, which were reanalyzed as described above. The integration process between scATAC-seq and scRNA-seq SFs labeled the scATAC-seq cells according to four SF subpopulations (homeostatic, intermediate, lining, and destructive lining), which were visualized in a UMAP 2D space. Peak calling was applied in two pseudo-bulk replicates across all SFs (Granja et al., 2021), and then merged using an iterative overlap peak-merging (Corces et al., 2018). To identify enriched motifs in single-cell resolution, chromVar was used (Schep et al., 2017). Positive TF regulators were identified by correlating TF motif accessibility with integrated TF gene expression (Pearson correlation coefficient >0.5 and p-adjusted value<0.05). Finally, to identify regulatory links between accessible regions and active genes, peak to gene linkages were inferred using correlation analysis between enhancer accessibility and gene activity scores (Granja et al., 2021).\n\n### Statistical analysis\n\nAll experiments were performed at least three times. Data are presented as mean \u00b1 SE. Multiple t-tests (recommended corrections), Student\u2019s t-test (parametric, unpaired, two-sided), or two-way ANOVA were used for the evaluation of statistical significance using GraphPad 6 software. Statistical significance is presented as follows: *p<0.05, **p<0.01, ***p<0.001, **** p<0.0001.\n\n### Study approval\n\nAll experiments were approved by the Institutional Committee of Protocol Evaluation in conjunction with the Veterinary Service Management of the Hellenic Republic Prefecture of Attika according to all current European and national legislation under the reference numbers: 4381- 07/07/2014 and 142752/22-02-2021 (EL 09 BIO exp 05) and comply to the ARRIVE guidelines.\n\n### Materials and correspondence\n\nMaterial requests and correspondence should be addressed to GK.\n",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "6ac39226-05f5-4e46-abc3-d8423dfadbbc",
+      "submission_id": "b312d073-7f54-4362-875a-282e9e852e32",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yousef Abu-Amer, https://ror.org/00cvxb145 Washington University St. Louis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84698.sa0](https://doi.org/10.7554/eLife.84698.sa0)\n\nThe findings of this work are important and offer significant advances to current knowledge. This manuscript used state of the art techniques and employed relevant animal models to provide convincing evidence supporting the regulatory role of microRNA cluster 221/222 in rheumatoid arthritis synovial fibroblast. Targeting miR-221/222 in SFs of patients harboring inflammatory arthritis might have a therapeutic benefit, and will be interesting to a wide range audience in the rheumatology and bone research fields.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Yousef Abu-Amer, https://ror.org/00cvxb145 Washington University St. Louis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84698.sa1](https://doi.org/10.7554/eLife.84698.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"miR-221/222 drive synovial hyperplasia and arthritis by targeting cell cycle inhibitors and chromatin remodeling components\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Mone Zaidi as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Gerasimos Evangelatos (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions (for the authors):\n\n1) Figure 3: the model in which miR221/222 are overexpressed in SFs does not lend itself to examining potential effects on other cell populations other than indirect effects. It would be informative to compare with overexpression in immune cells, especially in myeloid cells that give rise to osteoclasts to determine the direct effect on bone erosion\n\n2) Although the focus of this study is largely on miR221/222 regulation of SFs, the observations that deletion of these miRs protects against bone erosion (less OCs) yet does not regulate inflammatory influx (Figure S8), begs the question, is the effect on myeloid progenitors direct or SF-mediated? The global deletion of miRs and restricting the analysis to SFs limits better understanding and appreciation of the mechanism in joint pathology.\n\n3) Given the significant implication of this study for the potential modulation of inflammatory arthritis, it would be of great interest to determine if miR221/222 knockout are protected in CIA or CAIA experimental models of RA (in addition to the huTNFtg model).\n\n4) In figure 3, although a significant increase in CD8 subpopulation is observed, its possible role in the pathogenesis of disease is not clearly discussed in the manuscript. Increased levels of CD8(+) T cells have been described in RA doi.org/10.1002/art.38941. Moreover, miR221/222 directly target CD4 doi: 10.1016/j.celrep.2017.09.030. All these studies suggest an implication of the immune system in miR221/222 mediated RA pathogenesis. Further characterization of the immune panel should be provided, analyzing specific CD8 subpopulations and their role in disease progression should be tested by using immunodepletion in huTNFtg and huTNFtg miR221/222 mice.\n\n5) Figure 4 and 5 The expression of genes modulated by miR221/222 is shown only as an mRNA; also protein expression should be analysed.\n\n6) Lines 122-129: Do the authors have any data about TNF expression in TgColVI-miR-221/222 mouse, especially in their SFs? Given the defective bone physiology demonstrated later in these mice, it would be interesting to know if they also exert a proinflammatory dynamic\n\nReviewer #1 (Recommendations for the authors):\n\nFigure 3: the model in which miR221/222 are overexpressed in SFs does not lend itself to examining potential effects on other cell populations other than indirect effects. It would be informative to compare with overexpression in immune cells, especially in myeloid cells that give rise to osteoclasts to determine the direct effect on bone erosion\n\nAlthough the focus of this study is largely on miR221/222 regulation of SFs, the observations that deletion of these miRs protects against bone erosion (less OCs) yet does not regulate inflammatory influx (Figure S8), begs the question, is the effect on myeloid progenitors direct or SF-mediated? The global deletion of miRs and restricting the analysis to SFs limits better understanding and appreciation of the mechanism in joint pathology.\n\nIt would be more informative and would add additional rigor to current data if well-established markers of destructive lining SFs are documented in this model.\n\nThe study design (mouse models) approaches miR221/222 as a cluster dismissing some divergent expressions of the individual miRs as apparent in some figures. Do the authors consider this point insignificant or irrelevant? If so, please provide supporting evidence/argument.\n\nGiven the significant implication of this study for the potential modulation of inflammatory arthritis, it would be of great interest to determine if miR221/222 knockout is protected in CIA or CAIA experimental models of RA (in addition to the huTNFtg model).\n\nThe statement that miR221/222 may be implicated in bone physiology is an overstatement and potentially misleading. The reported changes in bone parameters could simply be the result of secondary effects of miR221/222 abnormal overexpression, which we should recognize is global. These statements should be carefully reconsidered.\n\nReviewer #2 (Recommendations for the authors):\n\nFigure 1 \u2013 Although miR221 and miR222 are part of the same genetic locus, the regulation of their expression seems to be different. For instance, as shown in Figure 1CD, mirR221 is significantly downregulated by polyIC, whereas miR222 is upregulated. Also, miR222 seems to be more expressed in ex vivo SFs at least in the first weeks (Figure 1AB). Please, comment on this.\n\nIn figure 3, although a significant increase in CD8 subpopulation is observed, its possible role in the pathogenesis of disease is not clearly discussed in the manuscript. Increased levels of CD8(+) T cells have been described in RA doi.org/10.1002/art.38941. Moreover, miR221/222 directly target CD4 doi: 10.1016/j.celrep.2017.09.030. All these studies suggest an implication of the immune system in miR221/222 mediated RA pathogenesis. Further characterization of the immune panel should be provided, analyzing specific CD8 subpopulations and their role in disease progression should be tested by using immunodepletion in huTNFtg and huTNFtg miR221/222 mice.\n\nFigures 4 and 5 -The expression of genes modulated by miR221/222 is shown only as an mRNA; also protein expression should be analysed. Moreover, the authors identified Smarca1 as a novel predicted miR-221/222 target. According to Targetscan, Smarca1 is the target of miR222 but not miR221. Please, clarify. Moreover, the direct binding should be validated by luciferase assay.\n\nMethods \u2013 The information on the statistical test used should be implemented. Since different types of experiments are present in the study (e.g. paired, unpaired samples) and the authors state that they use different t-tests (parametric, unpaired, two-sided) or two-way ANOVA, which test is used for each experiment should be reported.\n\nReviewer #3 (Recommendations for the authors):\n\nLines 56, 62, 257-258: A useful review that could be also included is \"MicroRNAs in rheumatoid arthritis: From pathogenesis to clinical impact. Evangelatos G, Fragoulis GE, Koulouri V, Lambrou GI. Autoimmun Rev. 2019 Nov;18(11):102391. doi: 10.1016/j.autrev.2019.102391\".\n\nLines 26, 27, 79, 87, 104, 110, 123, etc: Please be consistent throughout the text, by using either \"microRNAs\" or the abbreviation \"miRNAs\", not both.\n\nLines 87-88 \"in specific subpopulations\": The authors should explain what they exactly mean; do they refer to a \"specific cell subpopulation\" generally or to \"specific SF subpopulations\"?\n\nLine 115: To which figure does \"Figure EV1C\" refer?\n\nLines 122-129: Do the authors have any data about TNF expression in TgColVI-miR-221/222 mouse, especially in their SFs? Given the defective bone physiology demonstrated later in these mice, it would be interesting to know if they also exert a proinflammatory dynamic.\n\nLines 141-142, \"did not lead to a significant increase of inflammatory infiltrations, apart from an increase in CD8+ T cells\": The authors could possibly add \"compared to huTNFtg mouse\".\n\nLines 157-159, \"both WT and huTNFtg SFs \u2026 compared to their respective controls (Figure 3E-F)\": I feel that the message of this sentence is not exactly what is illustrated in the relative figure. It should be better if the authors further explain this point.\n\nLine 187, \"as well as in SFs from huTNFtg mice compared to SFs from WT mice\": How does this support that p27, p57, and Smarca1 are targets or miR-221/222? Did the authors possibly mean that the expression of p27, p57, and Smarca1 was downregulated in TgColVI-miR-221/222 compared to huTNFtg?\n\nLines 330-332: The authors should recognize that they examined the therapeutic effect of miR-221/222 inhibition only by generating a miR-221/222 -/- knock-out mouse and not by applying a miR-221/222 inhibitor in huTNFtg, TgColVI-miR-221/222 or huTNFtg;TgColVI-miR-221/222 mice.\n",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cc99e0a6-67fb-4599-b4e1-6d710fbe41fc",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C1",
+      "claim": "Mir221/222 expression is upregulated in RA SFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that Mir221/222 expression is upregulated in RA SFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "6758b484-a06e-4f99-a599-a08965462e06",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C2",
+      "claim": "TNF activated Mir221/222 gene expression in murine SFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that TNF and IL-1\u03b2 but not IFN-\u03b3 activated Mir221/222 gene expression in murine SFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "157e4b74-63d3-49b0-b961-721b56766074",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C3",
+      "claim": "IL-1\u03b2 activated Mir221/222 gene expression in murine SFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that TNF and IL-1\u03b2 but not IFN-\u03b3 activated Mir221/222 gene expression in murine SFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "f3ed1df0-d433-4108-a8a5-063d7294995f",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C4",
+      "claim": "IFN-\u03b3 did not activate Mir221/222 gene expression in murine SFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that TNF and IL-1\u03b2 but not IFN-\u03b3 activated Mir221/222 gene expression in murine SFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "0ed165f6-6f3a-43fa-9433-f8f6ae6743bb",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C5",
+      "claim": "SF-specific overexpression of Mir221/222 in huTNFtg mice led to further expansion of SFs.",
+      "claim_type": "EXPLICIT",
+      "source": "SF-specific overexpression of Mir221/222 in huTNFtg mice led to further expansion of SFs and disease exacerbation, while its total ablation led to reduced SF expansion and attenuated disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "ec180c87-f23d-41bd-a5e5-680f45c665ce",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C6",
+      "claim": "SF-specific overexpression of Mir221/222 in huTNFtg mice led to disease exacerbation.",
+      "claim_type": "EXPLICIT",
+      "source": "SF-specific overexpression of Mir221/222 in huTNFtg mice led to further expansion of SFs and disease exacerbation, while its total ablation led to reduced SF expansion and attenuated disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "8aca302b-bdd4-4978-a365-5a0c5c28ce88",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C7",
+      "claim": "Total ablation of Mir221/222 led to reduced SF expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "SF-specific overexpression of Mir221/222 in huTNFtg mice led to further expansion of SFs and disease exacerbation, while its total ablation led to reduced SF expansion and attenuated disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "4b54d8e9-57dd-43d3-8668-a1ee0605122d",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C8",
+      "claim": "Total ablation of Mir221/222 led to attenuated disease.",
+      "claim_type": "EXPLICIT",
+      "source": "SF-specific overexpression of Mir221/222 in huTNFtg mice led to further expansion of SFs and disease exacerbation, while its total ablation led to reduced SF expansion and attenuated disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "c6cf7329-c9c2-4cf8-ae5a-0021240acc15",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C9",
+      "claim": "Mir221/222 overexpression altered the SF transcriptional profile igniting pathways involved in cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Mir221/222 overexpression altered the SF transcriptional profile igniting pathways involved in cell cycle and ECM (extracellular matrix) regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "42dc7f6d-8d0a-4626-8799-300d73ef7364",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C10",
+      "claim": "Mir221/222 overexpression altered the SF transcriptional profile igniting pathways involved in ECM regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mir221/222 overexpression altered the SF transcriptional profile igniting pathways involved in cell cycle and ECM (extracellular matrix) regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "54928030-01bb-47d4-a717-a0a183e697b7",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C11",
+      "claim": "Cdkn1b is a target of Mir221/222.",
+      "claim_type": "EXPLICIT",
+      "source": "Validation of targets of Mir221/222 revealed cell cycle inhibitors Cdkn1b and Cdkn1c, as well as the epigenetic regulator Smarca1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental validation data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "5040ba36-9335-479f-b0a3-5c20c180486e",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C12",
+      "claim": "Cdkn1c is a target of Mir221/222.",
+      "claim_type": "EXPLICIT",
+      "source": "Validation of targets of Mir221/222 revealed cell cycle inhibitors Cdkn1b and Cdkn1c, as well as the epigenetic regulator Smarca1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental validation data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "2b7cb332-7c85-4e68-b4c2-f6e3c02a1e07",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C13",
+      "claim": "Smarca1 is a target of Mir221/222.",
+      "claim_type": "EXPLICIT",
+      "source": "Validation of targets of Mir221/222 revealed cell cycle inhibitors Cdkn1b and Cdkn1c, as well as the epigenetic regulator Smarca1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental validation data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "c8bdb09c-f78b-4ad3-acce-06da28caac53",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C14",
+      "claim": "Single-cell ATAC-seq data analysis revealed increased Mir221/222 gene activity in pathogenic SF subclusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell ATAC-seq data analysis revealed increased Mir221/222 gene activity in pathogenic SF subclusters and transcriptional regulation by Rela, Relb, Junb, Bach1, and Nfe2l2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by bioinformatic analysis of scATAC-seq data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "d17f86a3-0ad9-4505-adaa-9570bb9a75a7",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C15",
+      "claim": "Rela regulates transcription of Mir221/222.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell ATAC-seq data analysis revealed increased Mir221/222 gene activity in pathogenic SF subclusters and transcriptional regulation by Rela, Relb, Junb, Bach1, and Nfe2l2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by bioinformatic analysis of scATAC-seq data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "83aacbbd-bda0-47fd-a667-f0997123a674",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C16",
+      "claim": "Relb regulates transcription of Mir221/222.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell ATAC-seq data analysis revealed increased Mir221/222 gene activity in pathogenic SF subclusters and transcriptional regulation by Rela, Relb, Junb, Bach1, and Nfe2l2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by bioinformatic analysis of scATAC-seq data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "2755b157-3522-4560-9604-3cfdc2ba6628",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C17",
+      "claim": "Junb regulates transcription of Mir221/222.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell ATAC-seq data analysis revealed increased Mir221/222 gene activity in pathogenic SF subclusters and transcriptional regulation by Rela, Relb, Junb, Bach1, and Nfe2l2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by bioinformatic analysis of scATAC-seq data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "b9c0581c-db10-4265-8562-d5e03fdecdf3",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C18",
+      "claim": "Bach1 regulates transcription of Mir221/222.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell ATAC-seq data analysis revealed increased Mir221/222 gene activity in pathogenic SF subclusters and transcriptional regulation by Rela, Relb, Junb, Bach1, and Nfe2l2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by bioinformatic analysis of scATAC-seq data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "d791fc32-5262-4cc5-bc2c-5175eda004f8",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C19",
+      "claim": "Nfe2l2 regulates transcription of Mir221/222.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell ATAC-seq data analysis revealed increased Mir221/222 gene activity in pathogenic SF subclusters and transcriptional regulation by Rela, Relb, Junb, Bach1, and Nfe2l2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by bioinformatic analysis of scATAC-seq data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "198d134a-14a0-47bd-9b5c-ae0034c9a707",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C20",
+      "claim": "Therapeutic targeting of Mir221/222 in specific SF subpopulations could lead to novel fibroblast-targeted therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results establish an SF-specific pathogenic role of Mir221/222 in arthritis and suggest that its therapeutic targeting in specific subpopulations could lead to novel fibroblast-targeted therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative based on the results presented in the manuscript.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "a3a89d53-9d30-4768-ac6b-df5f044f8902",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C21",
+      "claim": "Genetically modified mouse models with deregulated expression of TNF develop an erosive polyarthritis resembling RA.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetically modified mouse models with deregulated expression of TNF develop an erosive polyarthritis resembling RA (huTNFtg) (Keffer et al., 1991) and SpAs (spondyloarthropathies) (TNF\u0394ARE [Kontoyiannis et al., 1999], TgA86 [K\u00fcsters et al., 1997; Vafeiadou et al., 2020]), showing also extra-articular manifestations, such as heart valve disease and intestinal inflammation, recapitulating comorbid pathologies often observed in humans (Kontoyiannis et al., 1999; Ntari et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "b796326e-bcaf-41d2-8959-6a78c85d91d4",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C22",
+      "claim": "TNF targeting of TNFR1 on synovial fibroblasts is required for the development of arthritis.",
+      "claim_type": "EXPLICIT",
+      "source": "Early studies in our lab established that TNF targeting of TNFR1 on synovial fibroblasts (SFs) is required for the development of arthritis and suffices to orchestrate full pathogenesis (Armaka et al., 2008; Armaka et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies from the authors' lab.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "d6701ef4-bfb0-4b11-ba20-bc1e4dd3db0e",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C23",
+      "claim": "TNF targeting of TNFR1 on synovial fibroblasts suffices to orchestrate full pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Early studies in our lab established that TNF targeting of TNFR1 on synovial fibroblasts (SFs) is required for the development of arthritis and suffices to orchestrate full pathogenesis (Armaka et al., 2008; Armaka et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies from the authors' lab.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "7d62eeb9-a50e-4252-8e3b-93eff960c4c6",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C24",
+      "claim": "Under chronic inflammatory signals, SFs hyperproliferate.",
+      "claim_type": "EXPLICIT",
+      "source": "Under chronic inflammatory signals, SFs hyperproliferate, express ECM-degrading enzymes, and acquire an aggressive, invasive, and tissue-destructive phenotype (Kontoyiannis and Kollias, 2000; Dakin et al., 2018; Koliaraki et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "c857b854-2e4e-42a8-bc54-484607c34a97",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C25",
+      "claim": "Under chronic inflammatory signals, SFs express ECM-degrading enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Under chronic inflammatory signals, SFs hyperproliferate, express ECM-degrading enzymes, and acquire an aggressive, invasive, and tissue-destructive phenotype (Kontoyiannis and Kollias, 2000; Dakin et al., 2018; Koliaraki et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "c53e6f78-2383-4fec-891b-a850dc5f543d",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C26",
+      "claim": "Under chronic inflammatory signals, SFs acquire an aggressive, invasive, and tissue-destructive phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Under chronic inflammatory signals, SFs hyperproliferate, express ECM-degrading enzymes, and acquire an aggressive, invasive, and tissue-destructive phenotype (Kontoyiannis and Kollias, 2000; Dakin et al., 2018; Koliaraki et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "d1d3bcaf-ba52-4376-b637-dc3cc8335359",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C27",
+      "claim": "Arthritogenic SFs can migrate via the circulation to distant sites and transfer disease in both mice and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, arthritogenic SFs can migrate via the circulation to distant sites and transfer disease in both mice and humans (Aidinis et al., 2003; Lef\u00e8vre et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "b5890693-aa85-4063-87bd-856069b3ea1c",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C28",
+      "claim": "Epigenetic alterations, such as global DNA hypomethylation and deregulated expression of miRNAs and lncRNAs, have been linked to the aggressive and destructive behavior of SFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Epigenetic alterations, such as global DNA hypomethylation and deregulated expression of miRNAs and lncRNAs (Karouzakis et al., 2009; Evangelatos et al., 2019; Zou et al., 2018), have been linked to the aggressive and destructive behavior of SFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "7eb81498-3521-4015-be9a-150f956b6c52",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C29",
+      "claim": "Mir221 and Mir222 have been found upregulated in SFs derived from the huTNFtg mouse model and RA patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, Mir221 and Mir222 have been found upregulated in SFs derived from the huTNFtg mouse model and RA patients (Pandis et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "5b9d82c6-350b-4d94-88d7-fe2a5e9d5e8c",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C30",
+      "claim": "Mir221/222 are clustered on the X chromosome (Mirc53 locus).",
+      "claim_type": "EXPLICIT",
+      "source": "Mir221/222 are clustered on the X chromosome (Mirc53 locus) and classified as oncomiRs as they are upregulated in a number of human epithelial cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "d4531173-c880-4025-a1c7-01e1a1535671",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C31",
+      "claim": "Mir221/222 are classified as oncomiRs as they are upregulated in a number of human epithelial cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Mir221/222 are clustered on the X chromosome (Mirc53 locus) and classified as oncomiRs as they are upregulated in a number of human epithelial cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "fb579aa7-c971-48a8-adb6-1f238b94cce4",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C32",
+      "claim": "Mir221/222 target genes mainly involved in cell proliferation and survival, such as cell cycle inhibitors Cdkn1b and Cdkn1c.",
+      "claim_type": "EXPLICIT",
+      "source": "They target genes mainly involved in cell proliferation and survival, such as cell cycle inhibitors Cdkn1b and Cdkn1c (le Sage et al., 2007; Pineau et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "d6ed7f20-0cfd-40cd-8829-2b7e28471348",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C33",
+      "claim": "Under nonresolving inflammatory signals, such as in sepsis, the overexpression of Mir222 contributes to morbidity by targeting Smarca4.",
+      "claim_type": "EXPLICIT",
+      "source": "Under nonresolving inflammatory signals, such as in sepsis, the overexpression of Mir222 contributes to morbidity by targeting Smarca4, a chromatin remodeling component that participates in the SWI/SNF complex (Seeley et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "bf7021ce-c5fe-451f-a8b1-55b9d3d20adf",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C34",
+      "claim": "Expression levels of Mir221/222 positively correlate with disease progression in RA.",
+      "claim_type": "EXPLICIT",
+      "source": "In RA, expression levels of Mir221/222 positively correlate with disease progression (Abo ElAtta et al., 2019) and ex vivo downregulation of Mir221 has been shown to decrease migration and invasion of human RA SFs (Yang and Yang, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "8a10b007-70fb-4f6c-8708-33e9d7823a23",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C35",
+      "claim": "Ex vivo downregulation of Mir221 has been shown to decrease migration and invasion of human RA SFs.",
+      "claim_type": "EXPLICIT",
+      "source": "In RA, expression levels of Mir221/222 positively correlate with disease progression (Abo ElAtta et al., 2019) and ex vivo downregulation of Mir221 has been shown to decrease migration and invasion of human RA SFs (Yang and Yang, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "498122ef-65f1-47d8-8de1-0f4ee6ee3b2a",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C36",
+      "claim": "Both Mir221 and Mir222 were upregulated from the early disease stage in huTNFtg mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Mir221 and Mir222 were upregulated from the early disease stage, and this upregulation was further augmented with disease progression (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "93f3b23f-c32d-4eff-ab90-550b50269eae",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C37",
+      "claim": "Mir221 and Mir222 upregulation was further augmented with disease progression in huTNFtg mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Mir221 and Mir222 were upregulated from the early disease stage, and this upregulation was further augmented with disease progression (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "4e71c13d-be69-4202-8f2a-abd1922fff0a",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C38",
+      "claim": "Mir221/222 expression is induced by LPS and TNF in macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that Mir221/222 expression is induced by LPS and TNF in macrophages and that they are implicated in LPS tolerance and endotoxemia (Seeley et al., 2018; El Gazzar and McCall, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "09ba8385-34be-4b92-8367-cad54f38c7b0",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C39",
+      "claim": "Mir221/222 are implicated in LPS tolerance and endotoxemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that Mir221/222 expression is induced by LPS and TNF in macrophages and that they are implicated in LPS tolerance and endotoxemia (Seeley et al., 2018; El Gazzar and McCall, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "600c23d9-c49b-4a16-b58e-7bd6f34ef9b0",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C40",
+      "claim": "TNF led to consistent upregulation of both Mir221 and Mir222 in SFs at all time points examined.",
+      "claim_type": "EXPLICIT",
+      "source": "TNF, LPS, and IL-1\u03b2 led to consistent upregulation of both Mir221 and Mir222 in SFs at all time points examined (Figure 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "303ca949-cb77-4ce7-aff7-a9954e701ca6",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C41",
+      "claim": "LPS led to consistent upregulation of both Mir221 and Mir222 in SFs at all time points examined.",
+      "claim_type": "EXPLICIT",
+      "source": "TNF, LPS, and IL-1\u03b2 led to consistent upregulation of both Mir221 and Mir222 in SFs at all time points examined (Figure 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "e9326e33-197d-48c2-b1d1-d413f867f7b0",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C42",
+      "claim": "IL-1\u03b2 led to consistent upregulation of both Mir221 and Mir222 in SFs at all time points examined.",
+      "claim_type": "EXPLICIT",
+      "source": "TNF, LPS, and IL-1\u03b2 led to consistent upregulation of both Mir221 and Mir222 in SFs at all time points examined (Figure 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "47885b6b-228a-40b8-af5f-9d79564b6bb3",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C43",
+      "claim": "Mir221/222 were found not to be induced in the absence of TNFR1 in huTNFtg mice.",
+      "claim_type": "EXPLICIT",
+      "source": "These mice do not develop any RA pathology and the two miRNAs were found not to be induced in the absence of TNFR1 (Figure 1E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 1E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "fd8b367b-2a7b-439d-970a-c6d17a51f963",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C44",
+      "claim": "Anakinra did not abrogate Mir221/222 induction by TNF.",
+      "claim_type": "EXPLICIT",
+      "source": "Anakinra successfully inhibited downstream IL-1\u03b2 signaling (Figure 1\u2014figure supplement 1C), but did not abrogate Mir221/222 induction by TNF (Figure 1G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 1G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "d9778aa0-6581-4251-bc5c-1163aff4e18a",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C45",
+      "claim": "TNF may upregulate Mir221/222 independently of IL-1\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, TNF may upregulate Mir221/222 independently of IL-1\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing that anakinra did not block TNF-induced Mir221/222 expression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "933404ed-069a-4107-b164-454ab36b4763",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C46",
+      "claim": "Histopathological analysis revealed exacerbated arthritis in huTNFtg;TgCol6a1-Mir221/222 mice compared to huTNFtg controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Histopathological analysis revealed exacerbated arthritis, as observed by enhanced synovial hyperplasia (pannus formation), cartilage destruction, and number of osteoclasts in the double huTNFtg;TgCol6a1-Mir221/222 transgenic mice in comparison to the huTNFtg controls (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by histological data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "f0f4f597-e086-463a-88e7-fd2137ee15ee",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C47",
+      "claim": "Bone morphometric analysis using microCT revealed greater bone erosions in huTNFtg;TgCol6a1-Mir221/222 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, bone morphometric analysis using microCT revealed greater bone erosions as indicated by decreased bone volume, decreased trabecular thickness, and increased trabecular separation (Figure 2C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microCT data shown in Figure 2C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "9617ab88-a73b-41cf-bc3e-846393660127",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C48",
+      "claim": "Comparison of TgCol6a1-Mir221/222 to WT mice revealed significantly decreased trabecular thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, comparison of TgCol6a1-Mir221/222 to WT mice revealed significantly decreased trabecular thickness, as well as a tendency for decreased bone volume and increased trabecular separation (Figure 2D\u2013F, Figure 2\u2014figure supplement 2A), suggesting a potential a priori function of the two miRNAs in bone physiology, which needs further elucidation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microCT data shown in Figure 2D-F and Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "005e789a-1407-4b97-9574-20850dcff7b5",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C49",
+      "claim": "huTNFtg;TgCol6a1-Mir221/222;Mir221/222-/- mice exhibited synovial hyperplasia, cartilage destruction, and number of osteoclasts as the huTNFtg;TgCol6a1-Mir221/222;Mir221/222 d/f, f/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "huTNFtg;TgCol6a1-Mir221/222;Mir221/222-/- mice exhibited synovial hyperplasia, cartilage destruction, and number of osteoclasts as the huTNFtg;TgCol6a1-Mir221/222;Mir221/222 d/f, f/- mice (Figure 2G), indicating that SF-specific Mir221/222 overexpression even in the absence of Mir221/222 in other cell types is sufficient to deteriorate arthritis manifestations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by histological data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "4df21615-4b3f-43ef-b969-fd31b1601f8e",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C50",
+      "claim": "SF-specific Mir221/222 overexpression even in the absence of Mir221/222 in other cell types is sufficient to deteriorate arthritis manifestations.",
+      "claim_type": "EXPLICIT",
+      "source": "huTNFtg;TgCol6a1-Mir221/222;Mir221/222-/- mice exhibited synovial hyperplasia, cartilage destruction, and number of osteoclasts as the huTNFtg;TgCol6a1-Mir221/222;Mir221/222 d/f, f/- mice (Figure 2G), indicating that SF-specific Mir221/222 overexpression even in the absence of Mir221/222 in other cell types is sufficient to deteriorate arthritis manifestations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the experimental data shown in Figure 2G.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "e7fb08a6-2114-4b58-896e-308264273c2c",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C51",
+      "claim": "Mir221/222 overexpression did not lead to a significant increase in inflammatory infiltrations, apart from an increase in CD8+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we checked the role of Mir221/222 overexpression in immune infiltration in the joints of huTNFtg;TgCol6a1-Mir221/222 mice and observed that it did not lead to a significant increase in inflammatory infiltrations, apart from an increase in CD8+ T cells (Figure 3A, Figure 3\u2014figure supplement 1A and B) compared to huTNFtg mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FACS analysis data shown in Figure 3A and Figure 3\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "b207d8aa-624e-4de8-871c-9e234f8e8b94",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C52",
+      "claim": "Effector CD8+ T cells were the predominant CD8+ T cell subpopulation in the arthritic joints.",
+      "claim_type": "EXPLICIT",
+      "source": "CD8+ T cell subpopulations were further characterized and effector CD8+ T cells were found to be the predominant CD8+ T cell subpopulation in the arthritic joints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by FACS analysis data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "f2ad95c5-6e84-4eb0-ac5c-5bfaeac937b4",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C53",
+      "claim": "Effector CD8+ T cells were increased in the joints of huTNFtg;TgCol6a1-Mir221/222 compared to the huTNFtg mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, effector CD8+ T cells were increased in the joints of huTNFtg;TgCol6a1-Mir221/222 compared to the huTNFtg mice and accounted for the observed increase in CD8+ T cells (Figure 3\u2014figure supplement 1B, Figure 3\u2014figure supplement 2A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FACS analysis data shown in Figure 3\u2014figure supplement 1B and Figure 3\u2014figure supplement 2A\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "c5c2c5e5-7d56-4728-82fa-aa6209cd2c5e",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C54",
+      "claim": "Both lining layer SFs (LLSFs) and sublining layer SFs (SLSFs) were expanded in huTNFtg mice compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to human RA, both lining layer SFs (LLSFs) and sublining layer SFs (SLSFs) were expanded in huTNFtg mice compared to WT, as indicated by FACS analysis (Figure 3B, Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FACS analysis data shown in Figure 3B and Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "bc04ca7d-5340-43ae-982a-47886cebe653",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C55",
+      "claim": "Mir221/222 overexpression in arthritis rendered both lining and sublining layers more hyperplastic in huTNFtg;TgCol6a1-Mir221/222 mice compared to huTNFtg.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Mir221/222 overexpression in arthritis rendered both layers more hyperplastic in huTNFtg;TgCol6a1-Mir221/222 mice compared to huTNFtg.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by FACS analysis data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "9c30fb04-013a-4e04-9f24-173eb92cba63",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C56",
+      "claim": "Mir221/222 overexpression alone was sufficient to increase the number of fibroblasts of the LL and SL in TgCol6a1-Mir221/222 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth mentioning that Mir221/222 overexpression alone was sufficient to increase the number of fibroblasts of the LL and SL in TgCol6a1-Mir221/222 mice (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FACS analysis data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "b6652443-c266-4dbd-97eb-b98ee06dcd59",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C57",
+      "claim": "An increase in Mir221/222 levels was observed, mainly, in fibroblasts of the LL and to a lesser extent in those of the SL.",
+      "claim_type": "EXPLICIT",
+      "source": "An increase in Mir221/222 levels was observed, mainly, in fibroblasts of the LL and to a lesser extent in those of the SL (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "cdb91ad1-b3eb-4f50-9bfe-8a4ad2884d95",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C58",
+      "claim": "Both WT and huTNFtg SFs overexpressing Mir221/222 exhibited increased proliferation compared to their respective controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the in vivo data, both WT and huTNFtg SFs overexpressing Mir221/222 exhibited increased proliferation and wound-healing potential compared to their respective controls (Figure 3E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cell cycle analysis data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "3b4419f0-d332-4a7a-b736-113e8332a85c",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C59",
+      "claim": "Both WT and huTNFtg SFs overexpressing Mir221/222 exhibited increased wound-healing potential compared to their respective controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the in vivo data, both WT and huTNFtg SFs overexpressing Mir221/222 exhibited increased proliferation and wound-healing potential compared to their respective controls (Figure 3E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by wound-healing assay data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "22ef2b1a-bc24-4051-9719-6485c32f5afa",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C60",
+      "claim": "KEGG pathway analysis of significantly differentially expressed genes showed strong over-representation of pathways involved in cell cycle and DNA replication in the group of upregulated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "KEGG pathway analysis of significantly differentially expressed genes showed strong over-representation of pathways involved in cell cycle and DNA replication in the group of upregulated genes, while functional terms such as ECM function and AKT signaling were enriched among the downregulated ones (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by KEGG pathway analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "76ed60f4-7786-4bbd-9a48-3324cc24bc5e",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C61",
+      "claim": "Functional terms such as ECM function and AKT signaling were enriched among the downregulated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "KEGG pathway analysis of significantly differentially expressed genes showed strong over-representation of pathways involved in cell cycle and DNA replication in the group of upregulated genes, while functional terms such as ECM function and AKT signaling were enriched among the downregulated ones (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by KEGG pathway analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "a4d51adb-0ea4-44f9-b0e6-0e8ad03f45c9",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C62",
+      "claim": "All Cdkn1b, Cdkn1c, and Smarca1 were found to be downregulated in SFs from huTNFtg;TgCol6a1-Mir221/222 mice compared to huTNFtg mice both at the RNA and protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "All Cdkn1b, Cdkn1c, and Smarca1 were found to be downregulated in SFs from huTNFtg;TgCol6a1-Mir221/222 mice compared to huTNFtg mice both at the RNA and protein levels (Figure 4C\u2013E and H\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR and western blot data shown in Figure 4C\u2013E and H\u2013L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "b1e6a708-4c92-4921-9cf7-a8b4ef3f5ebf",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C63",
+      "claim": "Mir222/221 target specific cell cycle inhibitors (Cdkn1b and Cdkn1c) in order to induce proliferation of fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Together our data suggest that Mir222/221 target specific cell cycle inhibitors (Cdkn1b and Cdkn1c) in order to induce proliferation of fibroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing downregulation of Cdkn1b and Cdkn1c and increased proliferation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "8102a9c0-bf0d-4946-b3b5-dd83dc412495",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C64",
+      "claim": "Smarca1 is a novel Mir221/222 target involved in chromatin dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we also identified Smarca1, a novel Mir221/222 target involved in chromatin dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental validation data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "475388d6-f089-4662-96c5-192148ee33a1",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C65",
+      "claim": "ECM-related genes such as Prg4 and Itga3 were found to be downregulated in huTNFtg SFs.",
+      "claim_type": "EXPLICIT",
+      "source": "ECM-related genes such as Prg4 and Itga3 were found to be downregulated in huTNFtg SFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "439afb0d-d378-423d-993c-7f8e96fb6989",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C66",
+      "claim": "Mir221/222 overexpression resulted in enhanced downregulation of Prg4 and Itga3.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Mir221/222 overexpression resulted in enhanced downregulation of these genes, probably through indirect mechanisms as they were not predicted to be direct targets (Figure 4F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 4F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "a4689fd8-f5f3-4806-8890-9e3348318c9d",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C67",
+      "claim": "No difference was observed in Mmp3 and Rankl levels in arthritogenic SFs due to Mir221/222 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no difference was observed in Mmp3 and Rankl levels in arthritogenic SFs due to Mir221/222 overexpression (Figure 4\u2014figure supplement 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 4\u2014figure supplement 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "a9fb78d0-2137-46ee-b2fc-471ebad82151",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C68",
+      "claim": "No changes were observed in IL-6 protein levels in supernatants of na\u00efve or TNF stimulated SFs from Mir221/222 overexpressing mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any changes neither in the IL-6 protein levels in supernatants of na\u00efve or TNF stimulated SFs nor in Il6 RNA levels in SFs from Mir221/222 overexpressing mice (Figure 4\u2014figure supplement 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ELISA data shown in Figure 4\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "5b2e1cc8-cfb6-4eb8-8315-149e393821d1",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C69",
+      "claim": "No changes were observed in Il6 RNA levels in SFs from Mir221/222 overexpressing mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any changes neither in the IL-6 protein levels in supernatants of na\u00efve or TNF stimulated SFs nor in Il6 RNA levels in SFs from Mir221/222 overexpressing mice (Figure 4\u2014figure supplement 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 4\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "91583590-f9bd-4bed-959c-80c7ea465ed9",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C70",
+      "claim": "RNA levels of TNF were not altered in SFs from huTNFtg;TgCol6a1-Mir221/222 mice compared to huTNFtg.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA levels of TNF were not altered in SFs from huTNFtg;TgCol6a1-Mir221/222 mice compared to huTNFtg (Figure 4\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 4\u2014figure supplement 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "5cede589-9ab0-4b5b-bf68-98dc732ee7c2",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C71",
+      "claim": "No difference in the levels of human TNF and no mouse TNF protein was detected in the sera or supernatants of cultured SFs from huTNFtg and huTNFtg;TgCol6a1-Mir221/222 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, no difference in the levels of human TNF and no mouse TNF protein was detected in the sera or supernatants of cultured SFs from huTNFtg and huTNFtg;TgCol6a1-Mir221/222 mice (Figure 4\u2014figure supplement 2F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ELISA data shown in Figure 4\u2014figure supplement 2F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "13c78b74-0321-4eed-90d4-acb98e576d29",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C72",
+      "claim": "No differences were observed in ICAM-1 and VCAM-1 expression due to Mir221/222 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine whether Mir221/222 overexpression rendered fibroblasts more activated, we measured the expression of activation markers, such as ICAM-1 and VCAM-1, but no differences were observed (Figure 4\u2014figure supplement 2H1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FACS analysis data shown in Figure 4\u2014figure supplement 2H and I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "696f4fe3-b9bd-49dc-9495-227478a15741",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C73",
+      "claim": "Mir221/222 overexpression shifts the gene expression of arthritogenic SFs to a more proliferative and less ECM-producing signature.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore evident that Mir221/222 overexpression shifts the gene expression of arthritogenic SFs to a more proliferative and less ECM-producing signature, without any evidence of switching to a more pro-inflammatory or activated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "201619e2-9d4a-4068-a3af-35ff423cc567",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C74",
+      "claim": "huTNFtg;Mir221/222-/- mice presented with decreased synovial hyperplasia compared to huTNFtg.",
+      "claim_type": "EXPLICIT",
+      "source": "huTNFtg;Mir221/222-/- mice presented with decreased synovial hyperplasia, cartilage destruction, and number of osteoclasts, as seen in histological analysis, compared to huTNFtg (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by histological data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "a81ace40-9e26-4188-8dfd-b8ac4125a33c",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C75",
+      "claim": "huTNFtg;Mir221/222-/- mice presented with decreased cartilage destruction compared to huTNFtg.",
+      "claim_type": "EXPLICIT",
+      "source": "huTNFtg;Mir221/222-/- mice presented with decreased synovial hyperplasia, cartilage destruction, and number of osteoclasts, as seen in histological analysis, compared to huTNFtg (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by histological data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "8edce071-c250-45c9-bc07-f7502e7c62b7",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C76",
+      "claim": "huTNFtg;Mir221/222-/- mice presented with decreased number of osteoclasts compared to huTNFtg.",
+      "claim_type": "EXPLICIT",
+      "source": "huTNFtg;Mir221/222-/- mice presented with decreased synovial hyperplasia, cartilage destruction, and number of osteoclasts, as seen in histological analysis, compared to huTNFtg (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by histological data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "ed1ec064-7c3e-413c-8a80-ba6c9ffcc6e3",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C77",
+      "claim": "Mir221/222 deletion in arthritis did not alter the inflammatory influx.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Mir221/222 deletion in arthritis did not alter the inflammatory influx (Figure 5\u2014figure supplement 1), but rather led to the inhibition of fibroblast expansion of LL and SL in the joints (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FACS analysis data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "ffad4dcf-d8a6-45de-948b-7170cd498b56",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C78",
+      "claim": "Mir221/222 deletion led to the inhibition of fibroblast expansion of LL and SL in the joints.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Mir221/222 deletion in arthritis did not alter the inflammatory influx (Figure 5\u2014figure supplement 1), but rather led to the inhibition of fibroblast expansion of LL and SL in the joints (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FACS analysis data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "4e87d6ed-1c30-4430-8e2b-e0a25907e6eb",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C79",
+      "claim": "Functional characterization of arthritic SFs in the absence of Mir221/222 showed decreased proliferative capacity than SFs from huTNFtg mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Ex vivo, functional characterization of arthritic SFs in the absence of Mir221/222 showed decreased proliferative capacity than SFs from huTNFtg mice (Figure 5C), confirming the control of cell proliferation by these two miRNAs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cell cycle analysis data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "587cbfdb-3047-401c-8cd3-1590718e7553",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C80",
+      "claim": "Cdkn1b, Cdkn1c, and Smarca1 RNA and protein levels were partially restored in huTNFtg;Mir221/222-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Cdkn1b, Cdkn1c, and Smarca1 RNA and protein levels were partially restored (Figure 5D\u2013K), verifying their regulation by Mir221/222, although alternative or feedback mechanisms might also exist preventing the complete restoration of the expression levels of these genes and complete disease protection of huTNFtg;Mir221/222-/- mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR and western blot data shown in Figure 5D\u2013K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "6fdb7335-ea2a-4464-b1c1-53b3c6bd682e",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C81",
+      "claim": "Combined transfection of HEK293 cells with pre-Mir221/222 and a plasmid carrying the Mir221/222 binding site of Smarca1 decreased luciferase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen in Figure 5L, combined transfection of HEK293 cells with pre-Mir221/222 and a plasmid carrying the Mir221/222 binding site of Smarca1 decreased luciferase activity contrary to transfections with scramble pre-Mir and/or a plasmid carrying a mutated Mir221/222 binding site of Smarca1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by luciferase assay data shown in Figure 5L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "d7316d2c-88ff-4c15-bba3-b3f659c65386",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C82",
+      "claim": "Smarca1 is a direct target of Mir221/222.",
+      "claim_type": "IMPLICIT",
+      "source": "As seen in Figure 5L, combined transfection of HEK293 cells with pre-Mir221/222 and a plasmid carrying the Mir221/222 binding site of Smarca1 decreased luciferase activity contrary to transfections with scramble pre-Mir and/or a plasmid carrying a mutated Mir221/222 binding site of Smarca1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the luciferase assay data shown in Figure 5L.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "73057fe5-7022-471e-8efe-500f78184fc6",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C83",
+      "claim": "Mir221/222 locus (Mirc53) is more accessible in the pathogenic intermediate and destructive lining clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen, Mir221/222 locus (Mirc53) is more accessible in the pathogenic intermediate and destructive lining clusters (Figure 6B, Figure 6\u2014figure supplement 1B and C), marking their aberrant expansion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by scATAC-seq data shown in Figure 6B and Figure 6\u2014figure supplement 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "71e0b269-a091-4fcc-a0bb-b2d0319e1322",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C84",
+      "claim": "Inferred linkages between accessible chromatin (peaks) and Mir221/222 genetic locus revealed transcription factor binding sites (TFBSs) of previously reported positive regulators such as Nfe2l2, Junb, Rela, Relb and Bach1 to be enriched in the regulatory regions associated with Mir221/222 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Inferred linkages between accessible chromatin (peaks) and Mir221/222 genetic locus revealed transcription factor binding sites (TFBSs) of previously reported positive regulators such as Nfe2l2, Junb, Rela, Relb and Bach1 (Armaka et al., 2022), to be enriched in the regulatory regions associated with Mir221/222 locus (Figure 6C, Figure 6\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by scATAC-seq data analysis shown in Figure 6C and Figure 6\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "e827ca50-7c93-4124-9af2-a2c7a6eb05d9",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C85",
+      "claim": "The increased accessibility of Mir221/222 locus in the activated and expanding intermediate cluster, as well as in the destructive cluster of the lining layer in arthritis, corroborates the role of these two miRNAs in promoting proliferation and expansion of activated clusters of SFs in disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the increased accessibility of Mir221/222 locus in the activated and expanding intermediate cluster, as well as in the destructive cluster of the lining layer in arthritis, corroborates the role of these two miRNAs in promoting proliferation and expansion of activated clusters of SFs in disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the scATAC-seq data analysis presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "2620d1d2-0f15-458b-ac58-71daa6300679",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C86",
+      "claim": "In the past, IL-1\u03b2 had been reported to mediate downstream signaling of TNF/TNFR1 axis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the past, IL-1\u03b2 had been reported to mediate downstream signaling of TNF/TNFR1 axis (Brennan et al., 1989; Probert et al., 1995; Zwerina et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "404ecbe6-d569-44da-af2a-fa9d8802c5d5",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C87",
+      "claim": "In the arthritic microenvironment of the joints, TNFR1 signaling downstream of TNF and independently of IL-1\u03b2 can induce Mir221/222 levels in SFs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, we provide evidence that in the arthritic microenvironment of the joints, TNFR1 signaling downstream of TNF and independently of IL-1\u03b2 can induce Mir221/222 levels in SFs apart from LPS and could suggest that increased TNF and IL-1\u03b2 levels can serve as signals that lead to Mir221/222 upregulation specifically in RA SFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "8f969bdc-7348-4999-ba6b-5c7bbee02764",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C88",
+      "claim": "Increased TNF and IL-1\u03b2 levels can serve as signals that lead to Mir221/222 upregulation specifically in RA SFs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, we provide evidence that in the arthritic microenvironment of the joints, TNFR1 signaling downstream of TNF and independently of IL-1\u03b2 can induce Mir221/222 levels in SFs apart from LPS and could suggest that increased TNF and IL-1\u03b2 levels can serve as signals that lead to Mir221/222 upregulation specifically in RA SFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative based on the experimental data presented in the manuscript.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "8a128fc6-7147-4c77-a658-107a98275c6a",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C89",
+      "claim": "Increased levels of Mir221/222 rendered fibroblasts more proliferative and migratory, even in the absence of an inflammatory trigger.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the signals and epigenetic alterations that lead to this aberrant proliferation of SF subsets in RA remain under investigation, in this study we uncovered a novel role for Mir221/222 in the mesenchyma, where increased levels of Mir221/222 rendered fibroblasts more proliferative and migratory, even in the absence of an inflammatory trigger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "948d7f9e-8bfa-404d-af96-bc44122d95e2",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C91",
+      "claim": "Mesenchymal overexpression of Mir221/222 at na\u00efve conditions (WT background) led to a tendency towards worse bone integrity and increased fibroblast populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, considering that mesenchymal overexpression of Mir221/222 at na\u00efve conditions (WT background) led to a tendency towards worse bone integrity and increased fibroblast populations suggests that Mir221/222 upregulation and control of target gene expression could have dramatic effects in a specific milieu under local unresolved inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "6e497921-0f04-4b34-87d7-f7d871a6945c",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C92",
+      "claim": "Mir221/222 upregulation and control of target gene expression could have dramatic effects in a specific milieu under local unresolved inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, considering that mesenchymal overexpression of Mir221/222 at na\u00efve conditions (WT background) led to a tendency towards worse bone integrity and increased fibroblast populations suggests that Mir221/222 upregulation and control of target gene expression could have dramatic effects in a specific milieu under local unresolved inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative based on the experimental data presented in the manuscript.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "b0f82604-5b14-4bf2-bb48-e2d2bf031827",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C93",
+      "claim": "Cdkn1b and Cdkn1c are known Mir221/222 targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell cycle inhibitors Cdkn1b and Cdkn1c, known Mir221/222 targets, were both identified in our data and were verified by ex vivo experiments in SFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "0bde1bf2-4ccc-44b3-a56e-da67516be9e5",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C94",
+      "claim": "Deregulation in ECM components was observed due to Mir221/222 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, deregulation in ECM components was observed due to Mir221/222 overexpression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "a9bde908-1905-47aa-8167-d04465df3cc5",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C95",
+      "claim": "Prg4 and Itga3 were not predicted as direct targets of Mir221/222.",
+      "claim_type": "EXPLICIT",
+      "source": "Prg4 and Itga3 were not predicted as direct targets of Mir221/222, so indirect mechanisms probably mediate this effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on bioinformatic target prediction analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "0b23216d-5dd7-4c6a-95bc-cfd693ed51d6",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C96",
+      "claim": "Itga3 expression has been found to be downregulated in PBMCs from OA patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Itga3 expression has been found to be downregulated in PBMCs from OA (osteoarthritis) patients (Zhang et al., 2019), and a previous study has reported that the absence of Prg4 from the synovium leads to OA and aberrant fibroblast expansion and proliferation (Rhee et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "3231012d-7972-4c84-bd43-f183a10566bc",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C97",
+      "claim": "The absence of Prg4 from the synovium leads to OA and aberrant fibroblast expansion and proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Itga3 expression has been found to be downregulated in PBMCs from OA (osteoarthritis) patients (Zhang et al., 2019), and a previous study has reported that the absence of Prg4 from the synovium leads to OA and aberrant fibroblast expansion and proliferation (Rhee et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "06760f18-7204-4d99-88a7-ed9393772704",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C98",
+      "claim": "A cardioprotective and antifibrotic role of Mir221/222 was observed in cardiac fibroblasts by the downregulation of different types of collagens.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a cardioprotective and antifibrotic role of Mir221/222 was observed in cardiac fibroblasts by the downregulation of different types of collagens (Zhou et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "05c7923d-63b9-442b-91b5-4ad54407d55f",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C99",
+      "claim": "Mir221/222 could contribute to the catabolic profile of SFs in arthritis by affecting expression of ECM components.",
+      "claim_type": "EXPLICIT",
+      "source": "So, Mir221/222 could contribute to the catabolic profile of SFs in arthritis by affecting expression of ECM components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative based on the experimental data and literature.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "f7c4e4d4-e42f-4b46-b1d6-49c5378b64ff",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C100",
+      "claim": "The mesenchymal overexpression of Mir221/222 did not render SFs more inflammatory or activated per se.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the mesenchymal overexpression of Mir221/222 did not render SFs more inflammatory or activated per se as it was supported by ex vivo studies in the past (Yang and Yang, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript and citation to a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "f49c36a3-3cff-4ba2-900c-2464f9755025",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C101",
+      "claim": "Mir221/222 regulate pro-proliferative signals leading to aberrant expansion of pathogenic SFs that in the end renders the arthritic milieu more inflammatory.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, our in vivo data suggest that these two miRNAs regulate pro-proliferative signals leading to aberrant expansion of pathogenic SFs that in the end renders the arthritic milieu more inflammatory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "9f7062ac-05ab-4011-9ff7-487d799847e1",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C102",
+      "claim": "SMARCA1 participates in the NURF chromatin remodeling complex that can limit or promote chromatin accessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "SMARCA1 participates in the NURF chromatin remodeling complex that can limit or promote chromatin accessibility, and thus block or activate gene expression correspondingly (Clapier et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "dab9b76f-6a01-45fd-929c-ff43873a9e6b",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C103",
+      "claim": "NURF complex has been shown to promote cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "NURF complex has been shown to promote cell proliferation, but a role for this complex in RA is missing (Ding et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "70b485ac-9bb2-4186-9699-518635d402cd",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C104",
+      "claim": "A role for NURF complex in RA is missing.",
+      "claim_type": "EXPLICIT",
+      "source": "NURF complex has been shown to promote cell proliferation, but a role for this complex in RA is missing (Ding et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the absence of studies on NURF complex in RA.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "66819898-9a45-4309-ad71-e4dc90161a50",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C105",
+      "claim": "A study reported a role for Mir222 in targeting Brg1, an SWI/SNF chromatin remodeling component, leading to repression of inflammatory cytokine expression in sepsis.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a study reported a role for Mir222 in targeting Brg1, an SWI/SNF chromatin remodeling component, leading to repression of inflammatory cytokine expression in sepsis (Seeley et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "f1362514-c448-40ed-8d45-6da9f1c715bb",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C106",
+      "claim": "There is a recent study uncovering a role for NRF2 and BACH1 in promoting NSCLC tumor metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, there is a recent study uncovering a role for NRF2 and BACH1 in promoting NSCLC tumor metastasis (Lignitto et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "18496770-0b2a-457e-8edc-58d92ea8530e",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C107",
+      "claim": "Mir221 and Mir222 induction reach peak levels in late disease stages.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed Mir221 and Mir222 induction to reach peak levels in late disease stages, and this agrees with a previous study that correlates their levels with disease activity in RA patients (Abo ElAtta et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript and citation to a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "58772562-3e9a-4132-8015-63c396d6ef26",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C108",
+      "claim": "Mir221/222 overexpression is sufficient to worsen the severity of the disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, their overexpression is sufficient to worsen the severity of the disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "fbe8401f-2680-44f7-a69b-fe26e9e31d31",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C109",
+      "claim": "Mir221/222 could serve as biomarkers to predict disease progression in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these miRNAs could serve as biomarkers to predict disease progression in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative based on the experimental data presented in the manuscript.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "bd11be8f-2220-473a-9fbf-72ce9e61cca3",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C110",
+      "claim": "Therapeutic targeting of Mir221/222 could be beneficial as total genetic deletion of these two miRNAs protected to a certain degree from arthritis progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, therapeutic targeting of Mir221/222 could be beneficial as total genetic deletion of these two miRNAs protected to a certain degree from arthritis progression and the expression of their confirmed targets was partially restored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative based on the experimental data presented in the manuscript.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "dad67d16-256a-4d62-b6d4-509f5faa5a6d",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C111",
+      "claim": "The expression of confirmed targets of Mir221/222 was partially restored in huTNFtg;Mir221/222-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, therapeutic targeting of Mir221/222 could be beneficial as total genetic deletion of these two miRNAs protected to a certain degree from arthritis progression and the expression of their confirmed targets was partially restored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "f4b984f8-2bd7-41e2-b4b4-f9d6dcd2cda5",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C112",
+      "claim": "Most probably there are additional mechanisms assuring the suppression of Mir221/222 targets.",
+      "claim_type": "EXPLICIT",
+      "source": "This partial protection underlines the fact that most probably there are additional mechanisms assuring the suppression of these targets and should be addressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative based on the experimental data presented in the manuscript.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "bd270adf-9f03-4002-9b3e-d77311582125",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C113",
+      "claim": "miRNA function is often redundant, which means that if an miRNA is missing, other miRNAs can regulate its targets.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that miRNA function is often redundant, which means that if an miRNA is missing, other miRNAs can regulate its targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "49596a5c-434b-4389-b9eb-db32c85b2767",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C114",
+      "claim": "During arthritis there are redundant and complementary pathways ensuring expansion of the pathogenic stroma subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, it is very interesting that during arthritis there are redundant and complementary pathways ensuring expansion of the pathogenic stroma subsets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "8d79b3ce-fe0a-4a37-8475-41b06e932943",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C115",
+      "claim": "Mesenchymal targeting of Mir221/222 could potentially serve as a therapeutic tool for treating RA.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, mesenchymal targeting of Mir221/222 could potentially serve as a therapeutic tool for treating RA and their expression could be used as biomarkers for predicting disease outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative based on the experimental data presented in the manuscript.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "a8ebb66e-9709-46b4-9f33-b92b905565a9",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "claim_id": "C116",
+      "claim": "Mir221/222 expression could be used as biomarkers for predicting disease outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, mesenchymal targeting of Mir221/222 could potentially serve as a therapeutic tool for treating RA and their expression could be used as biomarkers for predicting disease outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative based on the experimental data presented in the manuscript.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4d40babb-d4c4-40fa-aa8c-062845fb932f",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TNF and IL-1\u03b2, but not IFN-\u03b3, induce Mir221/222 expression in synovial fibroblasts through TNFR1 signaling, independently of IL-1\u03b2. Both miRNAs are upregulated from early disease stages in huTNFtg mice and increase with disease progression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4, C36-C37, C40-C45, and C87 are supported by qRT-PCR data (Figure 1) showing TNF and IL-1\u03b2, but not IFN-\u03b3, induce Mir221/222 in SFs. The requirement for TNFR1 (C43) and independence from IL-1\u03b2 (C44-C45) are demonstrated through genetic knockout and anakinra treatment experiments. The temporal progression data (C36-C37) is clearly shown in Figure 1A-B.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "46548a0d-7e73-4461-9f73-cddd958d7d08",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SF-specific overexpression of Mir221/222 in huTNFtg mice exacerbates arthritis, increases SF expansion in both lining and sublining layers, and enhances fibroblast proliferation and migration even in the absence of inflammatory triggers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C46-C47, C49-C50, C55-C56, C58-C59, C89, and C108 are well-supported by histological analysis (Figure 2B), microCT data (Figure 2C-F), FACS analysis (Figure 3B), and functional assays (Figure 3E-F). The SF-specific effect is confirmed by experiments showing that overexpression in the absence of Mir221/222 in other cell types (C49-C50) still causes disease exacerbation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "e9806897-8453-4a34-974b-4fdac932776f",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Total genetic ablation of Mir221/222 in huTNFtg mice reduces SF expansion and attenuates arthritis manifestations without affecting inflammatory cell infiltration, and decreases SF proliferative capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C74-C79, and C111 are supported by histological analysis (Figure 5A), FACS data (Figure 5B, Figure 5\u2014figure supplement 1), and cell cycle analysis (Figure 5C). The data consistently show that Mir221/222 deletion reduces disease severity primarily through effects on SF proliferation rather than immune infiltration, providing strong evidence for the therapeutic potential of targeting these miRNAs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "25b9a655-bff8-4b7a-8237-707b4384f542",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mir221/222 overexpression alters the SF transcriptional profile, activating cell cycle and DNA replication pathways while downregulating ECM function and AKT signaling pathways, shifting SFs toward a more proliferative and less ECM-producing signature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C60-C61, C73, and C94 are supported by RNA-seq data and KEGG pathway analysis (Figure 4A, Figure 4\u2014figure supplement 1). The transcriptional changes are consistent with the observed functional phenotypes of increased proliferation and altered ECM production. The pathway analysis provides clear evidence for the molecular mechanisms underlying Mir221/222 function in SFs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "03eedd15-4816-4652-bed9-b16fa008259a",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mir221/222 directly target cell cycle inhibitors Cdkn1b and Cdkn1c, as well as the chromatin remodeling component Smarca1, to promote SF proliferation. These targets are downregulated at both RNA and protein levels upon Mir221/222 overexpression and partially restored upon deletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13, C62-C64, C80-C82 are supported by multiple lines of evidence: bioinformatic target prediction (Figure 4B), qRT-PCR and western blot validation (Figure 4C-E, H-L; Figure 5D-K), and luciferase reporter assays confirming direct targeting of Smarca1 (Figure 5L). The identification of Smarca1 as a novel target is particularly well-validated through the luciferase assay.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "df838f60-9a3a-443a-a606-df8390813ad6",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Single-cell ATAC-seq analysis reveals increased Mir221/222 gene activity in pathogenic intermediate and destructive lining SF subclusters, with enrichment of transcription factor binding sites for Rela, Relb, Junb, Bach1, and Nfe2l2 in regulatory regions associated with the Mir221/222 locus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C83-C85 are supported by scATAC-seq data analysis (Figure 6, Figure 6\u2014figure supplement 1). The chromatin accessibility data clearly shows increased Mir221/222 locus accessibility in pathogenic clusters, and the peak-to-gene linkage analysis identifies relevant transcription factor binding sites. This provides strong evidence for the cell-type-specific regulation of Mir221/222 in disease.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "ae50eb38-317c-4ed8-a7ab-2d0343199a8b",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Transcription factors Rela, Relb, Junb, Bach1, and Nfe2l2 are predicted to regulate Mir221/222 transcription based on enrichment of their binding sites in regulatory regions linked to the Mir221/222 locus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C15-C19 are based solely on bioinformatic analysis of scATAC-seq data showing enrichment of transcription factor binding sites (Figure 6C, Figure 6\u2014figure supplement 1D). While the computational prediction is sound, there is no experimental validation (e.g., ChIP-seq, reporter assays, or knockdown experiments) to confirm that these transcription factors actually regulate Mir221/222 expression. The claims remain inferential without functional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "a85a4d44-c768-415d-a0d0-ebf67002e3b5",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mir221/222 overexpression in arthritis leads to increased CD8+ T cell infiltration in joints, specifically effector CD8+ T cells, without significantly affecting other immune cell populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 are supported by FACS analysis data (Figure 3A, Figure 3\u2014figure supplement 1B, Figure 3\u2014figure supplement 2A-D). The data shows a specific increase in CD8+ T cells, particularly the effector subset, while other immune populations remain unchanged. However, the mechanism by which SF-specific Mir221/222 overexpression affects CD8+ T cell infiltration is not explained and warrants further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "88ff0489-c7a5-443a-8383-a12f53ceaad8",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ECM-related genes Prg4 and Itga3 are downregulated in huTNFtg SFs, with further downregulation upon Mir221/222 overexpression, likely through indirect mechanisms as they are not predicted direct targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 and C95 are supported by RNA-seq and qRT-PCR data (Figure 4F-G). The downregulation is clearly demonstrated, and the authors appropriately note that these genes are not predicted direct targets, suggesting indirect regulation. The data is consistent and the interpretation is cautious.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "f525bdbd-c1ad-46a3-9c40-294d44edc493",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mir221/222 overexpression does not affect expression of Mmp3, Rankl, IL-6, TNF, or activation markers ICAM-1 and VCAM-1 in SFs, indicating that these miRNAs do not render SFs more inflammatory or activated per se.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72 are supported by qRT-PCR, ELISA, and FACS data (Figure 4\u2014figure supplement 2). The negative results are important for defining the specific role of Mir221/222 in SF biology, distinguishing proliferative effects from inflammatory activation. The data supports the conclusion that Mir221/222 primarily affect proliferation rather than inflammatory activation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "f114b0d5-2c73-485b-9120-7fe0afe0f555",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Mir221/222 overexpression in wild-type mice (without arthritis) shows a tendency toward decreased trabecular thickness and increased fibroblast populations, suggesting potential effects on bone physiology that require further investigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48 and C91 are based on microCT data (Figure 2D-F, Figure 2\u2014figure supplement 2A) showing trends but not always statistically significant differences. The authors appropriately note this as a tendency requiring further elucidation. The data suggests a potential role for Mir221/222 in bone physiology, but the evidence is insufficient to draw strong conclusions without additional experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "e4c6aca2-cf35-4252-a54f-1d31982b48d7",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Therapeutic targeting of Mir221/222 in specific SF subpopulations could lead to novel fibroblast-targeted therapies for RA, and their expression could serve as biomarkers for predicting disease progression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C20, C109-C110, and C115-C116 are speculative extrapolations from the experimental data. While the genetic deletion experiments (C110) show partial disease protection, no actual therapeutic intervention studies (e.g., using antagomirs or small molecule inhibitors) are presented. The biomarker potential (C109, C116) is suggested based on correlation with disease progression but lacks validation in patient cohorts or predictive modeling. These remain hypotheses requiring future validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "a412dc12-f75c-4742-96a2-ef8613a2cfcf",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Both lining and sublining layer SFs are expanded in huTNFtg mice compared to WT, with Mir221/222 upregulation observed mainly in lining layer fibroblasts and to a lesser extent in sublining layer fibroblasts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54 and C57 are supported by FACS analysis (Figure 3B, Figure 3\u2014figure supplement 1C) and qRT-PCR of sorted SF populations (Figure 3C-D). The data clearly demonstrates SF expansion in arthritis and the differential expression of Mir221/222 in SF subpopulations, providing important context for understanding the cell-type-specific effects of these miRNAs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    },
+    {
+      "id": "046d138f-472e-4f14-83ab-854b37b3f98e",
+      "content_id": "a8316a11-9fc8-4c92-93bc-e4dfb6a54cd3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Increased TNF and IL-1\u03b2 levels may serve as signals leading to Mir221/222 upregulation in RA SFs, and Mir221/222 upregulation could have dramatic effects under local unresolved inflammation. Additional mechanisms may ensure suppression of Mir221/222 targets, and redundant pathways may ensure expansion of pathogenic stroma subsets during arthritis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88, C92, C99, C101, C112, and C114 are speculative interpretations of the data. While the experimental results support some aspects (e.g., TNF and IL-1\u03b2 induction of Mir221/222), the broader mechanistic claims about inflammatory milieu effects (C92), ECM contribution (C99), and redundant pathways (C112, C114) are inferred without direct experimental validation. These represent reasonable hypotheses but require additional experiments to confirm.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:54:08.087105Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6758b484-a06e-4f99-a599-a08965462e06",
+      "result_id": "4d40babb-d4c4-40fa-aa8c-062845fb932f"
+    },
+    {
+      "claim_id": "157e4b74-63d3-49b0-b961-721b56766074",
+      "result_id": "4d40babb-d4c4-40fa-aa8c-062845fb932f"
+    },
+    {
+      "claim_id": "f3ed1df0-d433-4108-a8a5-063d7294995f",
+      "result_id": "4d40babb-d4c4-40fa-aa8c-062845fb932f"
+    },
+    {
+      "claim_id": "498122ef-65f1-47d8-8de1-0f4ee6ee3b2a",
+      "result_id": "4d40babb-d4c4-40fa-aa8c-062845fb932f"
+    },
+    {
+      "claim_id": "93f3b23f-c32d-4eff-ab90-550b50269eae",
+      "result_id": "4d40babb-d4c4-40fa-aa8c-062845fb932f"
+    },
+    {
+      "claim_id": "600c23d9-c49b-4a16-b58e-7bd6f34ef9b0",
+      "result_id": "4d40babb-d4c4-40fa-aa8c-062845fb932f"
+    },
+    {
+      "claim_id": "303ca949-cb77-4ce7-aff7-a9954e701ca6",
+      "result_id": "4d40babb-d4c4-40fa-aa8c-062845fb932f"
+    },
+    {
+      "claim_id": "e9326e33-197d-48c2-b1d1-d413f867f7b0",
+      "result_id": "4d40babb-d4c4-40fa-aa8c-062845fb932f"
+    },
+    {
+      "claim_id": "47885b6b-228a-40b8-af5f-9d79564b6bb3",
+      "result_id": "4d40babb-d4c4-40fa-aa8c-062845fb932f"
+    },
+    {
+      "claim_id": "fd8b367b-2a7b-439d-970a-c6d17a51f963",
+      "result_id": "4d40babb-d4c4-40fa-aa8c-062845fb932f"
+    },
+    {
+      "claim_id": "d9778aa0-6581-4251-bc5c-1163aff4e18a",
+      "result_id": "4d40babb-d4c4-40fa-aa8c-062845fb932f"
+    },
+    {
+      "claim_id": "404ecbe6-d569-44da-af2a-fa9d8802c5d5",
+      "result_id": "4d40babb-d4c4-40fa-aa8c-062845fb932f"
+    },
+    {
+      "claim_id": "0ed165f6-6f3a-43fa-9433-f8f6ae6743bb",
+      "result_id": "46548a0d-7e73-4461-9f73-cddd958d7d08"
+    },
+    {
+      "claim_id": "ec180c87-f23d-41bd-a5e5-680f45c665ce",
+      "result_id": "46548a0d-7e73-4461-9f73-cddd958d7d08"
+    },
+    {
+      "claim_id": "933404ed-069a-4107-b164-454ab36b4763",
+      "result_id": "46548a0d-7e73-4461-9f73-cddd958d7d08"
+    },
+    {
+      "claim_id": "f0f4f597-e086-463a-88e7-fd2137ee15ee",
+      "result_id": "46548a0d-7e73-4461-9f73-cddd958d7d08"
+    },
+    {
+      "claim_id": "005e789a-1407-4b97-9574-20850dcff7b5",
+      "result_id": "46548a0d-7e73-4461-9f73-cddd958d7d08"
+    },
+    {
+      "claim_id": "4df21615-4b3f-43ef-b969-fd31b1601f8e",
+      "result_id": "46548a0d-7e73-4461-9f73-cddd958d7d08"
+    },
+    {
+      "claim_id": "bc04ca7d-5340-43ae-982a-47886cebe653",
+      "result_id": "46548a0d-7e73-4461-9f73-cddd958d7d08"
+    },
+    {
+      "claim_id": "9c30fb04-013a-4e04-9f24-173eb92cba63",
+      "result_id": "46548a0d-7e73-4461-9f73-cddd958d7d08"
+    },
+    {
+      "claim_id": "cdb91ad1-b3eb-4f50-9bfe-8a4ad2884d95",
+      "result_id": "46548a0d-7e73-4461-9f73-cddd958d7d08"
+    },
+    {
+      "claim_id": "3b4419f0-d332-4a7a-b736-113e8332a85c",
+      "result_id": "46548a0d-7e73-4461-9f73-cddd958d7d08"
+    },
+    {
+      "claim_id": "8a128fc6-7147-4c77-a658-107a98275c6a",
+      "result_id": "46548a0d-7e73-4461-9f73-cddd958d7d08"
+    },
+    {
+      "claim_id": "58772562-3e9a-4132-8015-63c396d6ef26",
+      "result_id": "46548a0d-7e73-4461-9f73-cddd958d7d08"
+    },
+    {
+      "claim_id": "8aca302b-bdd4-4978-a365-5a0c5c28ce88",
+      "result_id": "e9806897-8453-4a34-974b-4fdac932776f"
+    },
+    {
+      "claim_id": "4b54d8e9-57dd-43d3-8668-a1ee0605122d",
+      "result_id": "e9806897-8453-4a34-974b-4fdac932776f"
+    },
+    {
+      "claim_id": "201619e2-9d4a-4068-a3af-35ff423cc567",
+      "result_id": "e9806897-8453-4a34-974b-4fdac932776f"
+    },
+    {
+      "claim_id": "a81ace40-9e26-4188-8dfd-b8ac4125a33c",
+      "result_id": "e9806897-8453-4a34-974b-4fdac932776f"
+    },
+    {
+      "claim_id": "8edce071-c250-45c9-bc07-f7502e7c62b7",
+      "result_id": "e9806897-8453-4a34-974b-4fdac932776f"
+    },
+    {
+      "claim_id": "ed1ec064-7c3e-413c-8a80-ba6c9ffcc6e3",
+      "result_id": "e9806897-8453-4a34-974b-4fdac932776f"
+    },
+    {
+      "claim_id": "ffad4dcf-d8a6-45de-948b-7170cd498b56",
+      "result_id": "e9806897-8453-4a34-974b-4fdac932776f"
+    },
+    {
+      "claim_id": "4e87d6ed-1c30-4430-8e2b-e0a25907e6eb",
+      "result_id": "e9806897-8453-4a34-974b-4fdac932776f"
+    },
+    {
+      "claim_id": "dad67d16-256a-4d62-b6d4-509f5faa5a6d",
+      "result_id": "e9806897-8453-4a34-974b-4fdac932776f"
+    },
+    {
+      "claim_id": "c6cf7329-c9c2-4cf8-ae5a-0021240acc15",
+      "result_id": "25b9a655-bff8-4b7a-8237-707b4384f542"
+    },
+    {
+      "claim_id": "42dc7f6d-8d0a-4626-8799-300d73ef7364",
+      "result_id": "25b9a655-bff8-4b7a-8237-707b4384f542"
+    },
+    {
+      "claim_id": "22ef2b1a-bc24-4051-9719-6485c32f5afa",
+      "result_id": "25b9a655-bff8-4b7a-8237-707b4384f542"
+    },
+    {
+      "claim_id": "76ed60f4-7786-4bbd-9a48-3324cc24bc5e",
+      "result_id": "25b9a655-bff8-4b7a-8237-707b4384f542"
+    },
+    {
+      "claim_id": "696f4fe3-b9bd-49dc-9495-227478a15741",
+      "result_id": "25b9a655-bff8-4b7a-8237-707b4384f542"
+    },
+    {
+      "claim_id": "0bde1bf2-4ccc-44b3-a56e-da67516be9e5",
+      "result_id": "25b9a655-bff8-4b7a-8237-707b4384f542"
+    },
+    {
+      "claim_id": "54928030-01bb-47d4-a717-a0a183e697b7",
+      "result_id": "03eedd15-4816-4652-bed9-b16fa008259a"
+    },
+    {
+      "claim_id": "5040ba36-9335-479f-b0a3-5c20c180486e",
+      "result_id": "03eedd15-4816-4652-bed9-b16fa008259a"
+    },
+    {
+      "claim_id": "2b7cb332-7c85-4e68-b4c2-f6e3c02a1e07",
+      "result_id": "03eedd15-4816-4652-bed9-b16fa008259a"
+    },
+    {
+      "claim_id": "a4d51adb-0ea4-44f9-b0e6-0e8ad03f45c9",
+      "result_id": "03eedd15-4816-4652-bed9-b16fa008259a"
+    },
+    {
+      "claim_id": "b1e6a708-4c92-4921-9cf7-a8b4ef3f5ebf",
+      "result_id": "03eedd15-4816-4652-bed9-b16fa008259a"
+    },
+    {
+      "claim_id": "8102a9c0-bf0d-4946-b3b5-dd83dc412495",
+      "result_id": "03eedd15-4816-4652-bed9-b16fa008259a"
+    },
+    {
+      "claim_id": "587cbfdb-3047-401c-8cd3-1590718e7553",
+      "result_id": "03eedd15-4816-4652-bed9-b16fa008259a"
+    },
+    {
+      "claim_id": "6fdb7335-ea2a-4464-b1c1-53b3c6bd682e",
+      "result_id": "03eedd15-4816-4652-bed9-b16fa008259a"
+    },
+    {
+      "claim_id": "d7316d2c-88ff-4c15-bba3-b3f659c65386",
+      "result_id": "03eedd15-4816-4652-bed9-b16fa008259a"
+    },
+    {
+      "claim_id": "c8bdb09c-f78b-4ad3-acce-06da28caac53",
+      "result_id": "df838f60-9a3a-443a-a606-df8390813ad6"
+    },
+    {
+      "claim_id": "73057fe5-7022-471e-8efe-500f78184fc6",
+      "result_id": "df838f60-9a3a-443a-a606-df8390813ad6"
+    },
+    {
+      "claim_id": "71e0b269-a091-4fcc-a0bb-b2d0319e1322",
+      "result_id": "df838f60-9a3a-443a-a606-df8390813ad6"
+    },
+    {
+      "claim_id": "e827ca50-7c93-4124-9af2-a2c7a6eb05d9",
+      "result_id": "df838f60-9a3a-443a-a606-df8390813ad6"
+    },
+    {
+      "claim_id": "d17f86a3-0ad9-4505-adaa-9570bb9a75a7",
+      "result_id": "ae50eb38-317c-4ed8-a7ab-2d0343199a8b"
+    },
+    {
+      "claim_id": "83aacbbd-bda0-47fd-a667-f0997123a674",
+      "result_id": "ae50eb38-317c-4ed8-a7ab-2d0343199a8b"
+    },
+    {
+      "claim_id": "2755b157-3522-4560-9604-3cfdc2ba6628",
+      "result_id": "ae50eb38-317c-4ed8-a7ab-2d0343199a8b"
+    },
+    {
+      "claim_id": "b9c0581c-db10-4265-8562-d5e03fdecdf3",
+      "result_id": "ae50eb38-317c-4ed8-a7ab-2d0343199a8b"
+    },
+    {
+      "claim_id": "d791fc32-5262-4cc5-bc2c-5175eda004f8",
+      "result_id": "ae50eb38-317c-4ed8-a7ab-2d0343199a8b"
+    },
+    {
+      "claim_id": "e7fb08a6-2114-4b58-896e-308264273c2c",
+      "result_id": "a85a4d44-c768-415d-a0d0-ebf67002e3b5"
+    },
+    {
+      "claim_id": "b207d8aa-624e-4de8-871c-9e234f8e8b94",
+      "result_id": "a85a4d44-c768-415d-a0d0-ebf67002e3b5"
+    },
+    {
+      "claim_id": "f2ad95c5-6e84-4eb0-ac5c-5bfaeac937b4",
+      "result_id": "a85a4d44-c768-415d-a0d0-ebf67002e3b5"
+    },
+    {
+      "claim_id": "475388d6-f089-4662-96c5-192148ee33a1",
+      "result_id": "88ff0489-c7a5-443a-8383-a12f53ceaad8"
+    },
+    {
+      "claim_id": "439afb0d-d378-423d-993c-7f8e96fb6989",
+      "result_id": "88ff0489-c7a5-443a-8383-a12f53ceaad8"
+    },
+    {
+      "claim_id": "a9bde908-1905-47aa-8167-d04465df3cc5",
+      "result_id": "88ff0489-c7a5-443a-8383-a12f53ceaad8"
+    },
+    {
+      "claim_id": "a4689fd8-f5f3-4806-8890-9e3348318c9d",
+      "result_id": "f525bdbd-c1ad-46a3-9c40-294d44edc493"
+    },
+    {
+      "claim_id": "a9fb78d0-2137-46ee-b2fc-471ebad82151",
+      "result_id": "f525bdbd-c1ad-46a3-9c40-294d44edc493"
+    },
+    {
+      "claim_id": "5b2e1cc8-cfb6-4eb8-8315-149e393821d1",
+      "result_id": "f525bdbd-c1ad-46a3-9c40-294d44edc493"
+    },
+    {
+      "claim_id": "91583590-f9bd-4bed-959c-80c7ea465ed9",
+      "result_id": "f525bdbd-c1ad-46a3-9c40-294d44edc493"
+    },
+    {
+      "claim_id": "5cede589-9ab0-4b5b-bf68-98dc732ee7c2",
+      "result_id": "f525bdbd-c1ad-46a3-9c40-294d44edc493"
+    },
+    {
+      "claim_id": "13c78b74-0321-4eed-90d4-acb98e576d29",
+      "result_id": "f525bdbd-c1ad-46a3-9c40-294d44edc493"
+    },
+    {
+      "claim_id": "9617ab88-a73b-41cf-bc3e-846393660127",
+      "result_id": "f114b0d5-2c73-485b-9120-7fe0afe0f555"
+    },
+    {
+      "claim_id": "948d7f9e-8bfa-404d-af96-bc44122d95e2",
+      "result_id": "f114b0d5-2c73-485b-9120-7fe0afe0f555"
+    },
+    {
+      "claim_id": "198d134a-14a0-47bd-9b5c-ae0034c9a707",
+      "result_id": "e4c6aca2-cf35-4252-a54f-1d31982b48d7"
+    },
+    {
+      "claim_id": "fbe8401f-2680-44f7-a69b-fe26e9e31d31",
+      "result_id": "e4c6aca2-cf35-4252-a54f-1d31982b48d7"
+    },
+    {
+      "claim_id": "bd11be8f-2220-473a-9fbf-72ce9e61cca3",
+      "result_id": "e4c6aca2-cf35-4252-a54f-1d31982b48d7"
+    },
+    {
+      "claim_id": "8d79b3ce-fe0a-4a37-8475-41b06e932943",
+      "result_id": "e4c6aca2-cf35-4252-a54f-1d31982b48d7"
+    },
+    {
+      "claim_id": "a8ebb66e-9709-46b4-9f33-b92b905565a9",
+      "result_id": "e4c6aca2-cf35-4252-a54f-1d31982b48d7"
+    },
+    {
+      "claim_id": "c5c2c5e5-7d56-4728-82fa-aa6209cd2c5e",
+      "result_id": "a412dc12-f75c-4742-96a2-ef8613a2cfcf"
+    },
+    {
+      "claim_id": "b6652443-c266-4dbd-97eb-b98ee06dcd59",
+      "result_id": "a412dc12-f75c-4742-96a2-ef8613a2cfcf"
+    },
+    {
+      "claim_id": "8f969bdc-7348-4999-ba6b-5c7bbee02764",
+      "result_id": "046d138f-472e-4f14-83ab-854b37b3f98e"
+    },
+    {
+      "claim_id": "6e497921-0f04-4b34-87d7-f7d871a6945c",
+      "result_id": "046d138f-472e-4f14-83ab-854b37b3f98e"
+    },
+    {
+      "claim_id": "05c7923d-63b9-442b-91b5-4ad54407d55f",
+      "result_id": "046d138f-472e-4f14-83ab-854b37b3f98e"
+    },
+    {
+      "claim_id": "f49c36a3-3cff-4ba2-900c-2464f9755025",
+      "result_id": "046d138f-472e-4f14-83ab-854b37b3f98e"
+    },
+    {
+      "claim_id": "f4b984f8-2bd7-41e2-b4b4-f9d6dcd2cda5",
+      "result_id": "046d138f-472e-4f14-83ab-854b37b3f98e"
+    },
+    {
+      "claim_id": "49596a5c-434b-4389-b9eb-db32c85b2767",
+      "result_id": "046d138f-472e-4f14-83ab-854b37b3f98e"
+    }
+  ],
+  "comparisons": []
+}

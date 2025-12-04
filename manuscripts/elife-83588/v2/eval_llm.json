@@ -1,0 +1,229 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The presence of cell-cell junctions in doublets alters cellular organization and mechanical properties compared to singlets. Doublets show unpolarized stress distribution (polarization ~0) while singlets are horizontally polarized (polarization ~0.5), with intercellular junctions acting as barriers to horizontal stress fiber organization. Despite similar traction force magnitudes, singlets store slightly higher strain energy than doublets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C31 provide converging evidence from multiple measurement modalities (TFM, MSM, immunostaining, contour analysis) showing consistent differences between doublets and singlets. The structural observations (C20-C24) align with quantitative mechanical measurements (C25-C26, C29), and the strong correlation between mechanical and structural polarization (C30) supports the inference about junction function (C31). Sample sizes are adequate (n=106 doublets, n=72 singlets).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Cell-cell junctions cause redistribution of tension from free to adherent peripheral stress fibers. Singlets have higher line tension in free stress fibers and lower forces in adherent fibers compared to doublets, which show the opposite pattern. This is explained by an anisotropic tension model where stress fiber curvature reflects the balance between surface and line tensions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 combine theoretical modeling (C32-C33) with experimental measurements (C34-C37) to reach a mechanistic conclusion (C38). The contour model is based on prior validated work (C32), and the experimental data from combined TFM and contour analysis (C34-C37, Figure 2D-E) provide quantitative support. The conclusion logically follows from the data pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Doublets exhibit active mechanical coupling where the non-activated cell actively contracts in response to optogenetic activation of the neighboring cell, while singlets show passive relaxation and cytoskeletal fluidization. This active coupling in doublets enables stable contraction patterns and homeostatic force recovery, mediated by intercellular junctions that prevent fluidization and enable mechanotransduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C52 present a comprehensive characterization using multiple techniques (TFM, LifeAct imaging, FEM modeling). The experimental observations (C39-C43, C48-C50) are consistent across methods, and FEM modeling (C44-C46) demonstrates that passive mechanisms cannot explain the data. Controls for stray light activation are described (Figure 3 supplements). The conclusion about active coupling (C47, C51) is well-supported, though the mechanistic speculation (C52) is appropriately qualified as probable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Active coupling in doublets is anisotropic, with positive coupling in the y-direction (0.2) and negative coupling in the x-direction (-0.05) for traction forces, but strong positive coupling (0.8) for cortical tensions measured by contour strain. This difference arises because traction forces reflect stress fiber activity while contour deformation reflects cortical activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 quantify directional differences in coupling using two complementary methods (MSM/TFM and contour analysis). The quantitative values (C53, C56) are derived from model fitting to experimental data (Figure 4). The mechanical explanation for directional differences (C54-C55) is reasonable, and the interpretation of differential coupling between stress fibers and cortex (C57-C59) logically reconciles the different measurements. Sample size is adequate (n=17 doublets).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The degree of active coupling depends on mechano-structural polarization orientation relative to force propagation direction. When polarization is perpendicular to force transmission (2:1 aspect ratio), coupling is positive and strong; when parallel (1:2 aspect ratio), coupling is negative. Active coupling increases with increasing perpendicular polarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 systematically vary micropattern aspect ratio to test the relationship between polarization and coupling. The tight correlation between structural and mechanical polarization (C60) validates the approach. The opposite responses in different geometries (C63-C64) and the quantitative relationship (C65) are supported by data from multiple aspect ratios (n=43, 29, 18 doublets). The conclusion (C66) is well-supported by the systematic variation and is reminiscent of the Poisson effect mentioned in the abstract.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C71",
+      "C72"
+    ],
+    "result": "The relationship between mechano-structural polarization and active coupling observed in doublets extends to small epithelial monolayers (10-20 cells). In tissues polarized along the long axis, active coupling is higher when stress propagates perpendicular to the polarization axis, demonstrating scale-independence of this principle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 extend the doublet findings to larger systems using the same experimental and analytical approaches. The observations in monolayers (C67-C69) parallel those in doublets, and the conclusion about scale-independence (C71-C72) is supported by consistent results across system sizes. Sample sizes are adequate (n=13 and n=60 tissues). This demonstrates generalizability of the main finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C75",
+      "C77",
+      "C78",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C86"
+    ],
+    "result": "Force signal propagation in epithelial assemblies is an active process controlled by mechano-structural polarization, with signals propagating most efficiently perpendicular to the polarization axis. Active coupling extends signal range to 1-2 cell lengths and occurs rapidly (no detectable delay at 1 min resolution). This mechanism enables elastic-like signal propagation over large distances rather than viscous dissipation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims synthesize the main findings from the doublet and tissue experiments. The core conclusions (C4-C9, C75) are supported by the detailed experimental results in other claim groups. The quantitative estimates (C77-C78) are stated with appropriate caveats about temporal resolution and signal duration. The mechanistic insights (C81-C84, C86) follow logically from the systematic variation of polarization and measurement of coupling. This represents the paper's central contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Intercellular junctions enable compartmentalization of stress and prevent cytoskeletal fluidization, allowing tissues to behave elastically rather than as viscous fluids. Without junctions, localized contraction leads to actin flow rather than stress buildup.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 compare singlet and doublet responses to draw conclusions about junction function. The observation of fluidization in singlets vs. stress buildup in doublets (C79) is supported by the LifeAct data (C42-C43) and force measurements (C39-C40). The broader implication about elastic vs. viscous behavior (C80) is a reasonable inference, though somewhat speculative. The conclusion is appropriately qualified with 'may allow.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C73",
+      "C74",
+      "C85",
+      "C87"
+    ],
+    "result": "Background context establishing that cell-generated forces coordinate tissue behavior, mechanical signals propagate faster than biochemical signals, and force propagation is important in development and tissue organization. These are established facts from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C19, C73-C74, C85, C87 provide background context supported by appropriate citations to prior work. These establish the scientific context and motivation for the study. The claims are properly attributed to previous research and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Active coupling between cells was previously demonstrated qualitatively but lacked thorough quantification, representing a gap this study addresses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 appropriately acknowledges prior work (Liu et al., 2010) while identifying the specific contribution of the current study (quantification). This accurately frames the novelty of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "The preferential transmission of active contraction perpendicular to cell polarization could amplify convergent extension mechanisms in Xenopus mesoderm and contribute to process robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C88 is explicitly speculative ('Our results suggest') and extrapolates the findings to a developmental context not directly tested. While the speculation is reasonable given the findings and the known biology of convergent extension (C87), it remains untested and would require additional experiments in the relevant developmental system to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Methodological details including cell culture conditions, micropatterning protocols, force measurement techniques, and computational analysis methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C98 describe experimental methods with appropriate detail and citations to established protocols. Quality control measures are mentioned (C93). The methods are standard in the field and appropriately referenced. These provide necessary technical information for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

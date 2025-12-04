@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C21",
+      "C36",
+      "C37",
+      "C38",
+      "C79",
+      "C86"
+    ],
+    "result": "For continuous input-output transformations (e.g., smooth motor control tasks), the optimal granule cell coding level is substantially denser than predicted by classical theories. This finding holds across different activation functions, input dimensions, and is most pronounced with limited training data. The result contradicts classical sparse coding theories and is demonstrated in simulations of motor control tasks such as two-joint arm dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C21, C36, C37, C79, and C86 collectively demonstrate through simulation data (Figures 2F, 7A) that optimal coding levels for continuous tasks are denser than for random categorization. The robustness is shown across multiple conditions (C37). C38 explicitly contrasts this with classical theories. The convergence of simulation results across task types provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C20",
+      "C22",
+      "C23",
+      "C24",
+      "C76",
+      "C77",
+      "C83",
+      "C125"
+    ],
+    "result": "Optimal cerebellar representations are task-dependent, with coding level tuning the network's inductive bias to favor learning specific tasks, while architectural parameters (connectivity, expansion ratio, weight distribution) remain largely task-independent. This suggests cerebellar regions may adjust coding levels based on behavioral demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C76, C83, and C125 establish task-dependence of coding level through data across multiple figures. C22, C23, C55, and C77 provide the theoretical mechanism (inductive bias). C76 and C88 show architectural parameters are task-independent (Figure 6). C24 and C125 extend to predictions about regional specialization. The combination of simulation data and theory strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C80",
+      "C84",
+      "C90",
+      "C91"
+    ],
+    "result": "For random categorization tasks with high-dimensional inputs, performance is maximized at low coding levels (typically <0.1), consistent with classical theories. Sparse representations increase dimensionality and improve generalization, though extremely sparse codes introduce noise that hinders performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C80 demonstrate low optimal coding levels for categorization tasks through simulation data (Figures 2E, 7B). C90 explains the mechanism (increased dimension). C91 provides the nuance about extremely sparse codes. C84 characterizes which tasks benefit from sparse coding. The consistency with prior work (C34) and experimental data (C80) strengthens support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The optimal coding level depends on task structure through its effect on the network's inductive bias rather than representation dimension alone. Networks with low coding levels have eigenvalue spectra favoring high-frequency functions, while high coding levels favor low-frequency functions. This explains why previous studies focusing on random categorization did not observe task-dependent optimal coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 establish the eigenvalue-frequency relationship through data (Figure 4E-F). C53-C55 provide the theoretical interpretation linking eigenvalues to inductive bias and performance. C56 explains why prior work missed this effect. The analytical theory combined with simulation validation provides strong support for this mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C49"
+    ],
+    "result": "Reducing coding level decreases overlap between representations of different inputs more than it reduces the number of active neurons, reflecting pattern separation. This increases representation dimension and improves performance on tasks requiring discrimination of different input patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C42, and C45 demonstrate pattern separation through data (Figures 3B, 3C). C46 shows the relationship to dimension (Figure 3D). C49 connects this to performance (Figures 2E, 3D). The convergence of geometric analysis (kernel) and performance metrics provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C74",
+      "C75",
+      "C76",
+      "C88"
+    ],
+    "result": "Optimal architectural parameters of cerebellar circuits (sparse connectivity with K\u22484, large expansion ratio M/N, substantial fraction of silent synapses) are largely task-independent, unlike optimal coding level. These parameters support uniform sampling of task variables and maximize learning capacity across diverse tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C74, C75 demonstrate optimal architectural parameters through simulation data (Figure 6A-D). C76 and C88 explicitly state task-independence. C78 provides mechanistic interpretation. The consistency across different task types (C75) and agreement with anatomical values strengthens support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C65",
+      "C66",
+      "C99"
+    ],
+    "result": "Sparsely connected networks with distributed input representations perform equivalently to fully connected networks, validating the theory's applicability to realistic cerebellar connectivity. However, clustered input representations dramatically reduce performance with sparse connectivity, arguing for the importance of distributed sensorimotor representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C99 demonstrate the distributed vs. clustered distinction through simulation data (Figure 5B, 5E). C65 validates theory applicability. C66 extends to biological implications. The clear performance difference between distributed and clustered cases (Figure 5E) provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C127"
+    ],
+    "result": "Model predictions for specific cerebellum-like systems show consistency with experimental observations: sparse coding in Drosophila mushroom body for odor categorization, dense coding in electrosensory lateral line lobe matching biophysical parameters, and flexible coding for VOR adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C82, and C127 demonstrate consistency between model predictions and experimental data for specific systems (Figure 7B-D). C127 explicitly notes agreement with experimental observations. The convergence of model predictions with independent experimental data provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The analysis extends previous theoretical approaches by considering low-dimensional task subspaces, continuous input-output mappings beyond categorization, and generalization across the entire task subspace. Both dimension and noise can be calculated from the kernel function, generalizing previous dimension-focused approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92 and C93 describe the extensions to previous work. C47 and C94 provide specific technical advances (kernel-based calculation of dimension and noise). The explicit comparison to prior work and demonstration of generalization provides adequate support for this methodological contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "This is the first kernel study examining effects of nonzero average thresholds on neural network representations, with full characterization of eigenvalue spectra and decay rates as a function of threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96 and C97 assert novelty with citations to prior work showing what has not been done. The eigenvalue analysis (Figure 4E) demonstrates the characterization. However, the claim of being 'first' is difficult to fully verify without exhaustive literature review. The technical contribution is clear from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The model predicts that artificially manipulating coding level away from task-optimal values impairs performance. This prediction is supported by experimental evidence showing that increasing coding level during sensory discrimination tasks (which favor sparse coding) impairs performance in both Drosophila mushroom body and mammalian cerebellum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136 and C137 cite experimental evidence supporting the prediction. C138 interprets this evidence. C135 and C139 state the prediction. The convergence of model predictions with experimental manipulations provides support, though C139 (prediction for dense-optimal tasks) remains untested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The theoretical model makes several simplifying assumptions: normalized inputs uniformly distributed in a linear subspace, generalization assessed on the same distribution as training, infinitely wide expansion layer, Golgi cell inhibition modeled as threshold changes, and random sampling of mossy fiber inputs by granule cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 explicitly state model assumptions. These are clearly documented limitations. C104 notes potential extensions. The transparency about assumptions is appropriate for a theoretical study, though it limits direct biological applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Alternative hypotheses about granule cell connectivity exist (similar receptive fields, signal relay, piecewise linear approximations), but recent experimental evidence supports heterogeneous connectivity at local scales. The model's assumption of random sampling may coexist with topographic organization at macroscopic scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C111 cite alternative hypotheses. C112-C113 cite evidence supporting the model's assumptions. C114 proposes a reconciliation. However, the evidence is mixed and the reconciliation (C114) is speculative. The biological reality of connectivity patterns remains debated, making this result uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The model assumes Purkinje cells perform optimal linear readout of granule cell activity, providing an upper bound on performance. This assumption is supported by electrophysiological studies, and task-dependent optimal coding levels persist even with online climbing fiber-mediated learning rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 state the assumption and its justification. C123 cites supporting evidence. C124 shows robustness to more realistic learning rules (Figure 7\u2014figure supplement 2). The combination of theoretical justification, literature support, and robustness testing provides adequate support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C142"
+    ],
+    "result": "The model predicts that cerebellar regions involved in smooth motor control may exhibit higher coding levels than regions involved in high-dimensional stimulus discrimination. Individual regions may dynamically adjust coding levels based on task demands through multiple mechanisms including Golgi cell inhibition, mossy fiber input changes, or synaptic plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129-C131 and C142 make predictions about regional and temporal variation in coding levels. C131 lists potential mechanisms. However, these are predictions and speculations (C130, C131 marked as SPECULATION) without direct experimental validation in the manuscript. The predictions are logical extensions of the theory but remain to be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Recent experimental evidence shows that Golgi cell inhibition controls granule cell coding level in mice, and that granule cell responses to sensory stimuli are sparse when controlling for movement-related activity, suggesting dense movement-related and sparse sensory-evoked activity are compatible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C134 cite and interpret recent experimental work (Fleming et al., 2022). C134 provides the interpretation reconciling apparently contradictory observations. This is a literature-based result rather than original data, but the interpretation is well-supported by the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Dense activity in granule cells and cerebral cortex has been interpreted as evidence against sparse coding theories, but the current theory suggests dense activity and combinatorial coding are compatible. Similar principles may apply to cerebrocortical areas, though this remains speculative given the different circuit architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C140-C141 address the apparent contradiction. C143-C144 extend to cortex. However, C145 is marked as speculation and acknowledges the theory doesn't account for cortical recurrent connectivity. The reconciliation for cerebellum is supported by the theory, but extension to cortex is speculative.",
+    "result_type": "MINOR"
+  }
+]

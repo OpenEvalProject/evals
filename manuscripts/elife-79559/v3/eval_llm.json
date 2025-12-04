@@ -1,0 +1,388 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C11",
+      "C16",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The manuscript identifies circular analyses of knowledge as a widespread problem in network neuroscience, where analyses test speculative models against weak null models (strawman models) rather than benchmark models incorporating existing knowledge. This leads to acceptance of redundant explanations that violate the principle of parsimony. The author estimates this problem has affected over 3,000 studies in network neuroscience over the last decade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C7, C11, C16, C20-C22 collectively establish the core problem definition and prevalence estimate. The logical framework is internally consistent, with clear definitions of circular analyses (C20), their consequences (C7, C11, C21, C22), and empirical prevalence data (C3, C54-C55). The conceptual argument about parsimony violations is well-articulated, though the prevalence estimate relies on extrapolation from a limited sample.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "A literature evaluation found that 56% of evaluated network neuroscience studies had at least one circular analysis of knowledge, with extrapolation suggesting over 3,000 affected studies over the last decade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C55 provide quantitative prevalence data, but the author acknowledges significant limitations: the sample may be unrepresentative, search criteria may have missed articles, and no assessment was made of how circular analyses affected individual study conclusions. The extrapolation methodology is not detailed, and potential biases are acknowledged but not quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Tests of speculative features against benchmark models form controlled experiments that control for all known confounding features, constitute severe model selection within Mayo's framework, and parallel controls for model overfitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 establish the methodological foundation for the proposed solution through citations to established frameworks (Sibbald and Roland 1998; Mayo and Spanos 2011; Mayo 2018; Kriegeskorte et al. 2009). The parallel between controlling for knowledge confounds and controlling for noise is logically coherent and well-supported by prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Systems neuroscience lacks a comprehensive benchmark model of vision, though specific benchmark features are known including excitation-inhibition balance, fast-spiking inhibitory responses, and evolutionary origins in visuo-motor interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 are well-supported by multiple citations to established literature (Poggio and Serre 2013; Golan et al. 2023; Isaacson and Scanziani 2011; Ma et al. 2019; Sohal 2016; Goodale 1996; Nilsson 2021). The distinction between lacking an integrated benchmark model while possessing known benchmark features is clearly articulated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Three prominent speculative models in vision neuroscience (internal representations, gamma oscillations, and criticality) lack definitive evidence and may be explainable by simpler benchmark features without invoking their proposed special functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 present alternative explanations for three speculative features, each supported by multiple citations. The skeptical stance on representations (C31-C32), oscillations (C33-C34), and criticality (C35-C36) is well-documented in cited literature. However, the author acknowledges these are possibilities ('may be explainable') rather than established facts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Network neuroscience has a well-defined benchmark model of cortical networks that captures the common mammalian cortical blueprint, including network modules representing clustered sensory-motor cortex and node connectivity gradients from sensory-motor to association cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39, C41, C43-C46 establish the benchmark model for cortical networks with extensive citation support (Kaas 1995; Krubitzer 1995; Sporns 2013; Bayne et al. 2019) and visual evidence (Figure 3). The model components (modules and connectivity gradients) are clearly defined and grounded in evolutionary, developmental, and structural evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Three prominent speculative features in network neuroscience (small-world structure, cores/clubs, and node controllability) are redundant with benchmark features of cortical networks (modules, hubs, and node connectivity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 establish redundancy relationships with direct citations supporting each claim (Meunier et al. 2010; Rubinov 2016; Tu et al. 2018; Patankar et al. 2020; Gu et al. 2015). The quoted statements from cited papers directly support the redundancy assertions. This is strengthened by the walkthrough analysis in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Current null models in network neuroscience studies of small-worlds, cores/clubs, and controllability are strawman models that lack benchmark features (modules and/or node connectivity), even though spatial null models are among the strongest available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 characterize the limitations of current null models with appropriate citations (Watts and Strogatz 1998; Colizza et al. 2006; Pasqualetti et al. 2019; Kaiser and Hilgetag 2006; Rubinov 2016). The assessment that spatial models are 'perhaps the strongest' while still inadequate is appropriately qualified and supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Many fundamental terms in systems neuroscience are 'deepities' - terms with dual meanings (one direct but bland, another profound but speculative) that can misleadingly suggest the importance of speculative features when the two meanings are conflated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 introduce and apply the deepity concept (Dennett 2013) with extensive examples in Table 2. The mechanism of harm through conflation (C57) is clearly explained, and the application to neuroscience terminology (C58) is well-illustrated. The concept provides a useful framework for identifying misleading terminology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Spandrels (features with intricate structure that arise as byproducts) can misleadingly suggest functional importance. The difficulty of testing representations against benchmark models of vision contrasts with the ease of testing cores/clubs against benchmark models of cortical networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 apply the spandrel concept (Gould and Lewontin 1979) to explain why some speculative features seem important despite potentially being byproducts. The contrast between vision (C60) and network neuroscience (C61) effectively illustrates how benchmark model availability affects the ability to resolve debates about speculative features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Just-so stories in biology are speculative narratives suggesting optimal function that are difficult to falsify because non-optimality can be reframed as optimal tradeoffs between competing objectives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 define just-so stories (Gould 1978; Bowers and Davis 2012) and explain their resistance to falsification (Gould and Lewontin 1979). Table 3 provides concrete examples from neuroscience showing how optimality narratives are maintained through ad hoc tradeoff explanations. The concept is well-established in evolutionary biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Circular analyses of knowledge create a disconnect between rapid everyday discoveries and lack of real progress by enabling intriguing, replicable, highly-cited papers that satisfy formal impact metrics while failing to revise benchmark models. Tests against benchmark models can help align formal and intuitive definitions of impact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65, C96-C98 articulate the stagnation problem with supporting citations (Lawrence 2007; Alberts 2013). The distinction between formal impact (citations) and real progress (benchmark model revision) is clearly drawn. The proposed solution (C98) follows logically from the problem diagnosis, though implementation challenges are acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Systems neuroscience lies between particle physics (with the highly successful Standard Model) and social sciences (with ill-defined benchmarks) in terms of benchmark model definition. Network neuroscience is sufficiently circumscribed to allow tests against well-delineated benchmark models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 position systems neuroscience on a spectrum of benchmark model maturity. The particle physics example (C66-C67) provides a positive exemplar, while social sciences (C68) represent the opposite extreme. The assessment that network neuroscience can support benchmark testing (C70) is supported by the detailed examples provided earlier in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Benchmark models should include all aspects of important existing knowledge about a phenomenon, reflecting the objective importance of controlling for all known confounding explanations. Features should rest on rigorous evidence from extensive observations or controlled experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 establish principles for benchmark model construction. The requirement to include all knowledge (C71-C72) is justified by analogy to controlled experiments and parallels with noise control. The evidence requirement (C73) is appropriately stringent. These principles are logically sound and align with established scientific methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Nervous systems use effective but inelegant tricks for specific survival problems, with specific details conserved across distantly related species including homologies of circuits, systems, and developmental processes between flies and mice that diverged 600 million years ago.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 establish evolutionary conservation as a criterion for benchmark features, with extensive citation support (Ramachandran 1985; Marcus 2009; Nieuwenhuys and Puelles 2016; Tosches 2017; Cisek 2019; multiple sources for specific homologies) and visual evidence (Figure 6). The 600-million-year divergence time provides context for the significance of conserved features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Benchmark models of simple phenomena can take parametric form (e.g., Hodgkin-Huxley model), while complex phenomena require data-driven definitions resembling dimensionality reduction that formalize vague concepts as quantifiable features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 distinguish approaches for different phenomena types with appropriate examples (Hodgkin and Huxley 1952) and methodological parallels (Cunningham and Ghahramani 2015). The practical guidance for defining benchmark models of complex phenomena is clear and actionable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Benchmark models should include features representing data limitations and biases, though interactions with signal aspects make it impossible to fully eliminate confounding effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 acknowledge practical limitations in benchmark modeling with citation support (Hillman 2014; Wei et al. 2020). The acknowledgment that complete confound elimination is impossible (C84) is appropriately realistic and references Appendix 3 for technical details.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Unbiased sampling enables valid statistical inference. While fully unbiased sampling is often intractable, approximately unbiased sampling is possible. Specific methods are fast and unbiased but limited in scope; general methods handle arbitrary features but are slow or biased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 characterize sampling method tradeoffs clearly. The distinction between specific and general methods with their complementary strengths and weaknesses (C87-C90) provides practical guidance. The acknowledgment that perfect solutions are intractable (C86) is appropriately realistic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Unbiased sampling requires ergodicity (reaching all samples) and reversibility, implying non-greedy randomization. Maximum entropy methods preserve statistics in population averages but not individual samples, with full unbiased sampling often intractable and independence assumptions introducing bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 provide technical details on sampling requirements with appropriate citations (Newman and Barkema 1999; Cimini et al. 2019). The conditions for unbiased sampling (C91-C92) are well-established in statistical mechanics. The limitations of maximum entropy approaches (C93-C95) are clearly stated with citation support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Circular analyses of noise (causing irreplicable results) are a known impediment to progress, while circular analyses of knowledge (causing redundant results) are a less-well-known but similarly serious impediment. The problem of redundant results receives little formal discussion compared to extensive discussions of irreplicable results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 frame the manuscript's contribution by contrasting the well-known problem of circular analyses of noise with the less-recognized problem of circular analyses of knowledge. The parallel structure effectively positions the current work relative to prior efforts (particularly Kriegeskorte et al. 2009) while highlighting a gap in current discourse.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C4",
+      "C8",
+      "C9"
+    ],
+    "result": "The principle of parsimony asserts that models with fewer redundant features are likely truer than rivals, reflecting objective preference for parsimony rather than subjective preference for simplicity or elegance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C8-C9 establish the philosophical foundation for the manuscript's argument with citation support (Baker 2022; Appendix 1). The clarification that parsimony does not imply simplicity (C9) addresses a common misconception. This provides the theoretical basis for why circular analyses accepting redundant features are problematic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "Neuroscience devotes greater effort to producing better data or more replicable analyses than to finding truer models. Popular neuroscientific analyses of ideal data cannot explain the workings of a computer chip.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 establish the motivation for the manuscript with citations (Fr\u00e9gnac 2017; Jonas and Kording 2017). The computer chip study (C6) provides a concrete example of how current analytical approaches may be insufficient even with ideal data, supporting the need for better models rather than just better data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C10",
+      "C15"
+    ],
+    "result": "Circular analyses of noise lead to overfitted models and irreplicable explanations, representing a well-known problem in the field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C15 establish the parallel problem of circular analyses of noise with strong citation support (Kriegeskorte et al. 2009; Vul et al. 2009). This provides important context for understanding circular analyses of knowledge as a distinct but related problem. The characterization as 'well-known' is appropriate given the extensive prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "Function is defined as behavior and action helping survival and reproduction. Development includes plasticity and encompasses learning and memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 provide definitional clarity for key terms with citation support (Roux 2014). These definitions are important for precise communication but represent standard usage in the field rather than novel contributions. The inclusion of plasticity in development (C13) is a useful clarification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "Analyses of complex datasets that neglect rigorous tests will almost invariably be distorted by extraneous features to some extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 states a general principle about the vulnerability of complex data analyses. This is a well-established principle in statistics and machine learning, though the 'almost invariably' qualifier is strong. The claim provides important context for why rigorous testing against benchmark models is necessary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The manuscript uses toy examples (duck-skvader analogy and brain-universe cosmicity) to illustrate how speculative features can be redundant with existing knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 present pedagogical examples to illustrate the concept of redundancy. The duck-skvader example (C17) is explicitly labeled as a toy example. The brain-universe cosmicity example (C18-C19, citing Vazza and Feletti 2020) illustrates how superficial similarities can suggest speculative features that are likely redundant with known structural features.",
+    "result_type": "MINOR"
+  }
+]

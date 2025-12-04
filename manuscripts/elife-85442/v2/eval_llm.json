@@ -1,0 +1,532 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C15",
+      "C22",
+      "C23"
+    ],
+    "result": "The model is built on mesoscopic connectome data from the Allen Institute for 43 cortical areas and incorporates a measured gradient of parvalbumin-expressing (PV) interneuron density from the qBrain mapping platform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C15, C22, and C23 consistently describe the anatomical data sources used in the model with appropriate citations (Oh et al., 2014; Kim et al., 2017). The use of established datasets and explicit description of the model's anatomical basis provides strong support for this foundational result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Primary sensory areas have higher PV interneuron density than association areas, with a moderate negative correlation (r = -0.35, p<0.05) between PV cell fraction and cortical hierarchy, though the gradient does not align perfectly with hierarchy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 describe an empirical observation from the anatomical data with statistical support (Figure 1F). The correlation coefficient and p-value provide quantitative evidence, and the acknowledgment that the alignment is imperfect demonstrates appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The model uses a mean-field reduction of spiking neural networks where each cortical area contains two stimulus-selective excitatory populations and one inhibitory population, with local inhibitory strength proportional to PV density and long-range connections following counterstream inhibitory bias (CIB).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 describe the model architecture and key assumptions with appropriate citations to prior methods (Wong and Wang, 2006; Wang, 2002). The explicit statement of assumptions (C29-C32) and the definition of CIB with citations provide clear methodological documentation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "After stimulus removal, VISp firing decreases rapidly while frontal/lateral areas (PL, ILA, MOs, AIv) sustain high firing rates during the delay period. Delay activity correlates more strongly with hierarchy (r=0.91) than PV fraction (r=-0.43), indicating long-range connections play a predominant role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 describe model simulation results with quantitative correlations and reference to Figure 2. The strong correlation with hierarchy and weaker correlation with PV fraction are statistically supported, and the inference about the role of long-range connections (C39) follows logically from the comparative correlation strengths.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "There is a gap in the distribution of persistent activity when delay-period firing rates are plotted versus hierarchy, marking an abrupt transition that leads to emergence of a subnetwork capable of working memory representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 describe an observation from Figure 2D and draw an inference about subnetwork emergence. The gap is visually evident in the referenced figure, and the inference about subnetwork emergence is a reasonable interpretation of the discontinuity in firing rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Simulations with somatosensory and auditory inputs show similar patterns to visual tasks, with hierarchy predicting delay firing (r=0.89, p<0.05), leading to the prediction that working memory shares common activation patterns across sensory modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 describe additional simulations (Figure 2\u2014figure supplement 1) with statistical support and make a testable prediction partially supported by cited experimental work (Inagaki et al., 2018). The consistency across modalities strengthens the generality of the model's findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Removing the PV gradient diminishes the number of areas with persistent activity but maintains the abrupt transition, while removing CIB causes both sensory and association areas to exhibit high firing rates. CIB is particularly important when local connections cannot sustain independent persistent activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 describe systematic model manipulations (Figure 3A) and their effects, leading to predictions about CIB (C48). The experimental design appropriately isolates the contributions of PV gradient and CIB, and the conclusions about their relative importance are supported by the simulation results across parameter regimes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "While PV gradient and CIB shape delay firing rate distributions, they do not qualitatively influence baseline stability. However, including both mechanisms results in a more robust system with wider parameter ranges producing realistic persistent activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 describe findings from parameter exploration (Figure 3C-E). The heatmaps showing stability regions across parameter space provide quantitative support for the robustness claim, demonstrating that the combination of mechanisms expands the viable parameter space.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Individual local networks are stable without local inhibition when disconnected, but the full network requires both local inhibition and long-range connections to inhibitory neurons for baseline stability, suggesting a 'global' inhibition-stabilized network (ISN) regime compatible with bistability in a subset of areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 describe stability analysis (Figure 4) with theoretical calculations referenced in Methods. The systematic manipulation of local and long-range inhibition, combined with analytical stability calculations, provides strong support for the ISN regime proposal and its compatibility with bistability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "In a thalamocortical model with weakened cortical connections, persistent activity is maintained through thalamocortical loops and is abolished when the thalamus is inactivated. The cortical model captures most dynamical properties of the thalamocortical model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C67 describe the thalamocortical model extension (Figure 5) with appropriate citations to prior work. The comparison between cortical-only and thalamocortical models (C66, r=0.77) and the thalamic inactivation simulation (C63) provide convergent evidence. The conclusion that the cortical model captures most properties (C67) is supported by the correlation analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Standard graph theory measures (input strength) cannot predict delay-period firing patterns (r=0.25, p=0.25, prediction accuracy=0.51), demonstrating that cell type specificity of interareal connections must be considered to relate connectome with brain dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 describe negative results from standard graph theory analysis (Figure 6A) with appropriate statistics. The lack of significant correlation and poor prediction accuracy provide strong evidence that traditional measures are insufficient, supporting the need for cell type-specific approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Cell type-specific input strength strongly correlates with delay-period firing rate (r=0.89, p<0.05) and accurately predicts which areas show persistent activity (prediction accuracy=0.95). Cell type-specific eigenvector centrality also predicts delay-period firing rates well.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 describe the performance of cell type-specific graph measures (Figure 6B, Figure 6\u2014figure supplement 2) with strong statistical support. The high correlation and prediction accuracy, contrasted with poor performance of standard measures, provide compelling evidence for the importance of cell type specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Through simulated optogenetic inactivations, seven core areas were identified (PL, ILA, ORBm, AId, VISpm, ECT, GU) that form recurrent loops supporting distributed persistent activity. Disrupting core areas affects persistent activity globally, while inhibiting readout areas has little effect elsewhere.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 describe the inhibition analysis protocol and results (Figure 7). The systematic inactivation of individual areas and quantification of network-wide effects provides a principled method for identifying core areas. The identification of specific areas with citations to prior work (C80) strengthens the biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Inhibiting pairs, triplets, or quadruplets of readout areas causes progressively larger decrements in network firing rate. Inhibiting all core areas causes a 48% decrement compared to 15% for a single core area and 3% for a single readout area, demonstrating greater sensitivity to core area perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 describe multiple-area inhibition analysis (Figure 7\u2014figure supplement 1) with quantitative comparisons. The progressive effects of inhibiting multiple readout areas and the quantitative comparison of core vs. readout area effects provide strong support for the hierarchical classification of area importance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Cell type-specific loop strength, but not raw loop strength, predicts core areas with high accuracy (prediction accuracy=0.93). Traditional connectivity measures are insufficient, and cell type-specific connectivity and new metrics are necessary to infer brain area roles in cognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 describe loop strength analysis (Figure 8) and its predictive power. The high prediction accuracy of cell type-specific measures contrasted with poor performance of raw measures provides strong support. The logical connection between distributed working memory and long-range recurrent loops (C87) is well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The model exhibits multiple attractor states. Increasing long-range connection strength decreases the number of attractors, while increasing local excitatory strength increases attractors, demonstrating opposite effects of local and long-range connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 describe attractor analysis (Figure 9D-E) with systematic parameter variations. The opposite effects of local vs. long-range connection strength on attractor number are clearly demonstrated through parameter sweeps, and the mechanistic explanation for these effects is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Cell type-specific input strength strongly predicts firing rates across many attractors, while raw input strength shows weak correlation. This demonstrates the superiority of cell type-specific measures across multiple network states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 describe prediction performance across 143 identified attractors (Figure 9F). The consistent superiority of cell type-specific measures across multiple attractor states strengthens the generality of the finding beyond the single working memory state analyzed earlier.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Different attractor states rely on distinct subsets of core areas. For an example attractor with five active areas, MOs shows the strongest cell type-specific loop strength and is identified as a core area, demonstrating that core areas can be predicted from structural measures for individual attractors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 describe attractor-specific analysis (Figure 9G-I) with a concrete example. The identification of MOs as core for this specific attractor, supported by both inhibition analysis and loop strength measures, demonstrates the task-dependence of core networks and the predictive power of structural measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "This is claimed to be the first biologically based model of the entire mouse cortex and thalamocortical system supporting a cognitive function (working memory).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C105 makes a priority claim that cannot be fully verified without comprehensive knowledge of all prior modeling work. While the model is clearly comprehensive and novel in its integration of cell type-specific connectivity with whole-cortex dynamics, the absolute priority claim requires caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The mnemonic activity pattern is shaped by differing PV interneuron densities across areas. Areas with high PV fraction encode information transiently while those with low PV fraction sustain activity longer, giving PV gradients a definitive role in separating rapid sensory processing from sustained mnemonic representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 summarize main findings from the model with appropriate citation (Kim et al., 2017). These conclusions are well-supported by the simulation results showing differential activity patterns as a function of PV density (Figures 2-3) and the parameter exploration demonstrating the importance of PV gradients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Each local area operates in an 'inhibition-stabilizing regime' where local networks are stabilized by feedback inhibition from long-range inputs. This extends the concept of synaptic reverberation to the large-scale brain, though it remains unclear whether persistent firing is generated locally or through long-distance reverberation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 provide interpretation of the stability analysis results with appropriate citations. The ISN regime interpretation is supported by the stability analysis (Figure 4), and the acknowledgment of uncertainty about local vs. distributed generation (C111) demonstrates appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Presently available connectomic data are insufficient to account for neural dynamics and distributed cognition. Connectome databases should be supplemented with cell type-specific information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 state a main conclusion supported by the negative results with standard graph measures (Figure 6A) and positive results with cell type-specific measures (Figure 6B). The systematic comparison provides strong evidence for this recommendation about future connectomics efforts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Recurrent loops within cortex and thalamocortical networks sustain activity during the delay period. Cell type-specific interactions reveal a core of cortical areas connected by excitatory loops responsible for distributed sustained activity, clarifying synergistic roles of connectome and local circuit properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 summarize key findings with appropriate citations. The conclusions are well-supported by the thalamocortical model (Figure 5), the core area identification (Figure 7), and the loop strength analysis (Figure 8), demonstrating convergent evidence from multiple analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "In macaque cortex, spine density on pyramidal cells increases along the hierarchy, but such excitatory gradients are less pronounced or absent in rodent cortex. However, there are gradients of synaptic inhibition in mouse cortex, which the model shows are sufficient for distributed persistent-activity patterns without requiring excitatory gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 compare mouse and macaque cortex with appropriate citations and state a key finding from the model. The anatomical differences are well-documented in the cited literature, and the model successfully demonstrates that inhibitory gradients can substitute for excitatory gradients in generating distributed working memory patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "The model predicts that local recurrency in mouse early sensory areas is higher than in primates, which is consistent with higher spine density and more excitatory/inhibitory synapses in layer 2/3 pyramidal neurons in mouse V1 compared to macaque.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 make a prediction (C122) that is supported by cited anatomical data (C123). The prediction follows logically from the model's requirement for stronger local recurrence in the absence of excitatory gradients, and the supporting anatomical evidence strengthens the prediction's plausibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The mouse connectome has denser area-to-area connections than macaque, and individual neurons in mouse visual cortex target more areas and have more synapses. This leads to the proposal that greater functional specialization in primate cortex is afforded by sparser, more targeted connectivity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128 describe anatomical differences with appropriate citations and propose an interpretation. The anatomical facts are well-documented in the cited literature, and the proposal about functional specialization (C128) is a reasonable inference from the connectivity differences, though it remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "The ratio of NMDA to AMPA-mediated synaptic currents is approximately constant in mouse cortex but varies along the cortical hierarchy in primates, representing another difference to explore in future computational models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 describe an established difference between mouse and primate cortex with appropriate citations. This is presented as a known fact that could be incorporated in future models rather than a finding from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Traditional graph theory metrics cannot predict working memory activity in mouse brain, possibly due to the almost fully connected pattern of mouse cortex. The model implements counterstream inhibitory bias (CIB) where feedforward connections have greater net excitatory effect than feedback, which stabilizes sensory areas and is consistent with recent experiments showing long-range recruitment of GABAergic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 summarize findings and provide mechanistic interpretation with citations to supporting experimental work. The failure of traditional metrics is demonstrated in Figure 6A, the CIB implementation is described in the model, and the consistency with recent experiments (Campagnola et al., 2022; Shen et al., 2022; Naskar et al., 2021) strengthens the biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The model predicts that weak correlation between PV density and delay firing rate suggests CIB is at play. CIB is particularly important when local connections cannot sustain persistent activity. The model's resilience to parameter variations is enhanced when both PV gradient and CIB are present, which may confer evolutionary advantages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C139 make predictions and interpretations based on the parameter exploration (Figure 3). The prediction about CIB (C135) is testable, the conclusion about parameter regimes (C136-C137) is supported by the simulations, and the speculation about evolutionary advantages (C139) is appropriately tentative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The manner in which long-range interactions affect neural dynamics depends on target neuron cell type, not just the existence of excitatory projections. For some areas, long-range excitatory connections promote working memory activity while for others (e.g., early sensory areas) they do not. Long-range interactions are consistent with potentially distinct dynamical regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C142 state general conclusions supported by the cell type-specific connectivity analysis and the differential effects of long-range connections on different areas. The conclusions follow logically from the demonstrated importance of cell type specificity throughout the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C143",
+      "C144"
+    ],
+    "result": "Cell type-specific graph theory metrics predict delay period activity patterns with high accuracy and can identify the core subnetwork, which can also be identified independently through simulated large-scale optogenetic experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C144 summarize key methodological contributions supported by Figures 6 and 8. The convergence between structural predictions and functional perturbation analysis provides strong validation of the cell type-specific graph measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The core working memory subnetwork includes well-documented frontal areas (PL, ILA, ORBm) but is distributed across cortex, also including temporal and higher visual areas. The gustatory area's inclusion is supported by its delay-period activity in taste-guided decision-making tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C147 describe the identified core subnetwork with appropriate citations to prior experimental work. The distributed nature of the core is a key finding, and the consistency with prior experimental observations (e.g., Vincis et al., 2020 for gustatory area) strengthens the model's validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "MOs is classified as a readout area rather than core for visual working memory, which may seem surprising given its documented role in memory-guided response tasks. However, in those tasks short-term memory is conflated with movement preparation. Readout areas are not less important as they can use stored information for further computations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C152 make a specific classification with appropriate discussion of apparent contradictions with prior work. The distinction between sensory working memory and motor preparation (C150) is important for reconciling the finding with prior literature, and the emphasis on readout area importance (C151) prevents misinterpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The model predicts that if ALM is a readout area for sensory working memory, inhibiting ALM should have small effects on core areas like PL during delay, while inhibiting PL may disrupt ALM activity. However, ALM has high cell type-specific loop strength and may be core for motor preparation tasks. The core subnetwork is likely task-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C158 make testable predictions and acknowledge task-dependence with supporting evidence from attractor analysis and citations. The predictions are appropriately qualified, and the evidence for task-dependence (C156-C157) from both model and experiment strengthens the conclusion about task-specific cores (C158).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Large-scale inhibition protocols can identify core subnetworks for particular tasks, and cores can be predicted from interareal loops targeting excitatory neurons. Cell type-specific connectivity datasets could help interpret large-scale recordings and focus circuit manipulations. The approach identifies areas working together to support working memory versus those benefiting from such activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C164 summarize methodological contributions and potential applications. The demonstration that structural measures predict functional cores (C159-C160) is well-supported by Figures 7-8. The speculations about future applications (C161-C162) are appropriately tentative, and the summary of the approach's utility (C163-C164) is justified by the results.",
+    "result_type": "MAJOR"
+  }
+]

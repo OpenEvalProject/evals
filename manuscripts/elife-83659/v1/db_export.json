@@ -1,0 +1,1814 @@
+{
+  "submission": {
+    "id": "1e287e12-a498-45ac-8893-9457da2c5a03",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:45:17.186464Z",
+    "updated_at": "2025-12-04T02:45:17.186464Z"
+  },
+  "content": [
+    {
+      "id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "submission_id": "1e287e12-a498-45ac-8893-9457da2c5a03",
+      "content_type": "manuscript",
+      "content_text": "# Population dynamics of immunological synapse formation induced by bispecific T cell engagers predict clinical pharmacodynamics and treatment resistance\n\n## Authors\n\n- Can Liu<sup>1</sup>\n- Jiawei Zhou<sup>1</sup>\n- Stephan Kudlacek<sup>2</sup> ([ORCID: 0000-0002-0029-9984](https://orcid.org/0000-0002-0029-9984))\n- Timothy Qi<sup>1</sup> ([ORCID: 0000-0002-4359-8271](https://orcid.org/0000-0002-4359-8271))\n- Tyler Dunlap<sup>1</sup>\n- Yanguang Cao<sup>1</sup> ([ORCID: 0000-0002-3974-9073](https://orcid.org/0000-0002-3974-9073)) \u2020\n\n### Affiliations\n\n1. Division of Pharmacotherapy and Experimental Therapeutics, School of Pharmacy, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))\n2. Department of Biochemistry and Biophysics, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))\n3. Lineberger Comprehensive Cancer Center, School of Medicine, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))\n\n\u2020 Corresponding author\n\n## Abstract\n\nEffector T cells need to form immunological synapses (IS) with recognized target cells to elicit cytolytic effects. Facilitating IS formation is the principal pharmacological action of most T cell-based cancer immunotherapies. However, the dynamics of IS formation at the cell population level, the primary driver of the pharmacodynamics of many cancer immunotherapies, remains poorly defined. Using classic immunotherapy CD3/CD19 bispecific T cell engager (BiTE) as our model system, we integrate experimental and theoretical approaches to investigate the population dynamics of IS formation and their relevance to clinical pharmacodynamics and treatment resistance. Our models produce experimentally consistent predictions when defining IS formation as a series of spatiotemporally coordinated events driven by molecular and cellular interactions. The models predict tumor-killing pharmacodynamics in patients and reveal trajectories of tumor evolution across anatomical sites under BiTE immunotherapy. Our models highlight the bone marrow as a potential sanctuary site permitting tumor evolution and antigen escape. The models also suggest that optimal dosing regimens are a function of tumor growth, CD19 expression, and patient T cell abundance, which confer adequate tumor control with reduced disease evolution. This work has implications for developing more effective T cell-based cancer immunotherapies.\n\n## Introduction\n\nImmunotherapy is a type of cancer treatment that helps patients\u2019 immune systems fight cancer, and these therapies include immune checkpoint inhibitors and BiTE. Despite many successes, multiple challenges persist. For instance, only a fraction of patients respond, and many responders eventually relapse (Nagorsen et al., 2012; Thakur et al., 2018; Topp et al., 2014). The primary pharmacological action of cancer immunotherapies is to activate or reinvigorate the effector T cells to find and engage tumor cells and eventually form cytolytic IS. BiTE, as a unique type of cancer immunotherapy, can redirect T cells to bind specific antigens on tumor cells and form IS. Facilitating the formation of IS through tight intercellular apposition lead to cytolysis of the tumor cell. IS formation is, therefore, a critical step for BiTE pharmacodynamics (Nagorsen et al., 2012). Like the IS formed between antigen-presenting cells and T cells, BiTE-induced IS formation between tumor cells and T cells is a precisely orchestrated cascade of molecular and cellular interactions (Delon and Germain, 2000; Roda-Navarro and \u00c1lvarez-Vallina, 2019). Understanding the dynamics of IS formation at the cell population level and factors governing this process hold promise for predicting pharmacodynamics and treatment resistance, one of the most critical issues for immunotherapies.\n\nThe molecular mechanisms of IS formation have been widely studied to identify potential molecular targets for cancer immunotherapy (Finetti and Baldari, 2018; Xiong et al., 2021). However, IS formation at the macroscopic cell population level extends beyond molecular crosslinking and involves multiple steps of intercellular interactions, such as T cells scanning of target cells in the tumor microenvironment, slowing their motility upon recognition, and establishing intercellular adhesion in response to signals generated by the first encounter (Dustin and Cooper, 2000; Fousek et al., 2021). Previous pharmacodynamic models of BiTE immunotherapy have focused, almost exclusively, on the mechanisms of molecular crosslinking, with little consideration for macroscopic intercellular interactions (Betts et al., 2019; Jiang et al., 2018; Schropp et al., 2019; Song et al., 2021). We sought to investigate how intercellular interactions at the population level could provide further insight into IS formation dynamics, BiTE pharmacodynamics, and mechanisms of resistance.\n\nTumor cells reside in dynamic and heterogeneous microenvironments. Suboptimal BiTE efficacy could result from insufficient numbers of effector cells, poor drug penetration into tumor tissue, and antigen loss leading to immune escape. Characterizing IS formation dynamics under diverse conditions, such as varying T cell density, BiTE concentration, antigen binding affinity, and antigen expression, could provide insights into factors determining BiTE pharmacodynamics and possible mechanisms of tumor resistance. Bell, 1978 developed theoretical models of cell-cell adhesionthat highlighted not only the importance of cell-surface receptors and ligands, but also biophysical factors including receptor diffusivity on the cell membrane and hydrodynamic shearing forces. By now, to our knowledge, there has been no theoretical framework developed to characterize the population dynamics of IS formation, limiting our ability to predict the pharmacodynamics of and resistance to cancer immunotherapies.\n\nIn this study, we applied imaging flow cytometry to quantify BiTE-induced IS formation dynamics under various experimental conditions. Additionally, we developed theoretical models to simulate IS formation on different spatiotemporal scales to interrogate factors influential to this process. After considering patient-specific parameters, models incorporating IS formation dynamics adequately predicted tumor-killing pharmacodynamics in patients. These models revealed trajectories of antigen escape and tumor evolution across anatomical sites and predicted optimal doses and regimens that could confer effective tumor control with reduced disease evolution. Our work shows substantial implications for developing effective T cell-based cancer immunotherapies.\n\n## Results\n\n### Experimental design and theoretical models\n\nThe formation dynamics of the BiTE-induced IS were the focus of this study. As depicted in Figure 1a, CD3+ Jurkat was used as effector cells (E) while CD19+ Raji was used as target cells (T). Jurkat and Raji cells were sorted into three subpopulations, high (H), medium (M), and low (L), based on their membrane expressions of CD3 or CD19, respectively (Figure 1\u2014figure supplement 1). Effector and target cells were then co-incubated in the presence of blinatumomab. IS formation dynamics were visualized and quantified by imaging flow cytometry (Figure 1a, Figure 1\u2014figure supplement 2). We quantified the dynamics of IS formation under various experimental conditions, including different cell densities, antigen expressions, incubation durations, E:T ratios, and antibody concentrations. Multiple types of IS were observed and quantified, including \u2018typical\u2019 IS with one effector and one target cell (ET) and \u2018variants\u2019 with three or more cells engaged, such as ETE, ETT, and ETET.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig1-v1.jpg)\n\n**Figure 1.:** The study examined the formation dynamics of immunological synapses (IS) elicited by a bispecific T cell engager (BiTE). (a) The abundance and dynamics of IS formation were quantified by imaging flow cytometry under various experimental conditions. (b) Three mechanistic agent-based models were developed for the comprehensive characterization of cell-cell engagement and tumor-killing effects on different spatiotemporal scales. 3-D, three-dimensional; 2-D, two-dimensional.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig1-figsupp1-v1.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Step 1, gate cells in best focus (R1). Step 2, gate conjugates (R2). Single cells (intermediate area value and high aspect ratio) are excluded. Step 3, gate CD3 and CD19 double positive (R3, FITC+PE+). Step 4, gate conjugates with only one target cell (R4). Step 5, gate conjugates with only one effector cell (R5). This subpopulation consists of doublets with only one effector and one target cell. Step 6, gate immunological synapse (R6). 'Valley\u2019 mask is employed to quantify actin intensity in the region of contact (Bright detail intensity). Co-localization wizard is used to measuring overlap (Bright detail similarity). For technical details, please see the user\u2019s manual of IDEAS.\n\nWe developed three mechanistic agent-based models to investigate IS formation and tumor-killing on different spatiotemporal scales. These models were developed in a stepwise fashion and calibrated with experimental or clinical data. As shown in Figure 1b, the base model was developed for predicting IS formation dynamics within 1 hr. The base model consists of three fundamental components during IS formation: three-dimensional (3D) binding between antibodies and antigens (CD3 or CD19) to form binary complexes, the probability of cell-cell encounter, and cell-cell adhesion driven by two-dimensional (2D) binding to form ternary complexes (CD3-BiTE-CD19) on the cellular membrane. The model structure for the base model is provided in the next section.\n\nNext, the base model was extended with serial cell-cell engagement dynamics to capture IS formation and tumor-killing for up to 72 hr; we refer to this as the in vitro model. The in vitro model could evaluate the chance for target antigen loss (i.e. CD19), a common mechanism of immune escape, and therapeutic resistance to BiTEs (Thakur et al., 2018; Topp et al., 2014).\n\nLast, the in vitro model was expanded to include cell-cell engagement in anatomically distinct compartments of the body. This model considered infiltration gradients of T and B cells and organ-to-organ cell trafficking. We refer to this expanded model as the in vivo model. This model integrated patient-specific parameters to predict clinically observed profiles of tumor killing and relapse. The in vivo model was also applied to support the simulation of antigen escape and tumor evolution across anatomical sites and compare dosing regimens for effective tumor control in light of tumor evolution.\n\n### Model structure (Base model)\n\nThe major mechanism of BiTE pharmacology is to produce ternary complexes (CD3-BiTE-CD19) on opposing cell surfaces, driving IS formation. The dynamics of IS formation are, essentially, two independent and indispensable cellular processes mediated by the cell-cell encounter and cell-cell adhesion. Compared to molecular scale-focused pharmacodynamics models of BiTEs (Betts et al., 2019; Jiang et al., 2018; Schropp et al., 2019; Song et al., 2021), our models highlight the importance of these two cellular processes for IS formation in the context of macroscopic and biophysical forces (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig2-v1.jpg)\n\n**Figure 2.:** Step 1: three-dimensional (3D) antibody-antigen binding in the media to form a binary complex; Step 2: cell-cell encounter, with encounter probability (Pe) dictated by cell motility and density; Step 3: cell-cell adhesion and IS formation, with adhesion probability (Pa) driven by the density of ternary complexes formed on the cell-cell contact area (two-dimensional (2D) binding) during contact. Newly formed typical IS had a chance to engage additional free effector or target cells to form an IS variant.\n\nIn the base model (Figure 2), three essential steps are defined: antibody-antigen binding to form binary complexes (BiTE-CD3 and BiTE-CD19) (step 1), effector-target cell encounter probability defined as a function of cell mobility and density (step 2), and effector-target cell adhesion probability defined as a function of ternary complexes formed during contact (step 3). Model equations are provided in Appendix 1. Antibody-antigen binding to form binary complexes were assumed to be 3D processes that reached rapid equilibrium prior to cellular-scale events. Free effector cells were assumed to follow Brownian motion (Celli et al., 2012) and encounter target cells at a probability proportional to cell density and motility in the incubation environment (Figure 2).\n\nAfter the cell-cell encounter, the probability of adhesion was modeled as a function of the number of ternary complexes (CD3-BiTE-CD19) formed between cells during the duration of contact. Cell-cell complexes with a high number of ternary complexes would, therefore, have a higher probability to adhering and eventually forming IS. Ternary complex formation on opposing cells was assumed to be restricted to the cell membrane (2D binding; Appendix 1\u2014figure 2). The derivation of 2D binding affinities is provided in Appendix 1.5. Cells that failed to adhere upon encounter (futile contact) were assumed to diffuse away and become free to repeat the same process. Two cells engaged in a typical IS were also considered capable of engaging additional effector or target cells to become an IS variant, per our experimental observations (Figure 2). The model considered IS variants comprising up to four cells.\n\nModel details and parameters for the base, in vitro and in vivo models are provided in materials and methods, Appendix 1, and Supplementary file 1.\n\n### Effects of BiTE concentration, cell density, and antigen expression on IS formation\n\nIS formation dynamics were quantified by imaging flow cytometry. Representative images of non-engaged (futile contact), typical IS, and multiple IS variants are shown in Figure 3a. Contact between the effector and target cells was evaluated in brightfield and FITC + PE channels. Their interfaces were classified as bona fide IS when there was a high intensity of actin (red) at the contact site, as F-actin is known to polymerize and locally concentrate at sites of the interface (Dustin and Cooper, 2000).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig3-v1.jpg)\n\n**Figure 3.:** (a) Representative image of non-engagement (futile encounter), typical IS, and other IS variants. Green (FITC), effector cells (E); Yellow (PE), target cells (T). (b\u2013i), The effects of drug concentration (b), incubation duration (c), antigen density (d, e), cell density (f, g), and E:T ratio (h, i) on IS formation. The base model was applied to simulate IS formation under different conditions. Observations are dots (with SE) and model simulations are solid curves. 2 X, 2 \u00d7 106 total cells/mL; E:T(1), E:T ratio = 1; CD3(L), CD3 expression (Low); CD3(H), CD3 expression (High); CD19(M), CD19 expression (medium); 5, 20, 100 ng/mL, blinatumomab concentration; 60 min, incubation duration. All samples were biologically triplicates.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Observed and model predicted fraction (%) of effector cells engaged in immunological synapse (IS). solid line, y=x.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The base model was applied to perform simulations. KD, dissociation constant; gray vertical line, the KD value of blinatumomab;. 2 X, 2 \u00d7 106 total cells/mL; E:T(1), E:T ratio = 1; CD3(L), CD3 expression (Low); CD19(M), CD19 expression (medium); 5, 20, 100 ng/mL, blinatumomab concentration; 60 min, incubation duration.\n\nTo investigate the key influential factors of IS formation, we explored multiple experimental conditions by varying BiTE concentration (0.65\u20132000 ng/ml), incubation duration (0\u201360 min), antigen expression (three levels for either CD3 or CD19), cell density (0.7\u20138 million total cells/mL), and E:T ratio (0.05\u20136) (Figure 3b\u2013i). The fraction (%) of effector cells engaged in IS was quantified to inform IS formation dynamics. We also ran these experiments virtually using the base model to test the model\u2019s predictive performance and to explore mechanistic hypotheses.\n\nIn Figure 3b\u2013i, the observations (symbols) and model simulations (lines) overlapped, indicating good base model performance. IS formation in vitro exhibited a bell-shaped relationship to BiTE concentration (Figure 3b). The model predicted this bell-shaped relationship and revealed that high BiTE concentrations (>100 ng/ml) would reduce the formation of ternary complexes, partly because individual antigens (CD3 and CD19) were almost completely occupied by one arm of the BiTE, limiting crosslinking with opposing cells (Appendix 1\u2014figure 2). IS formation increased over time and plateaued around 60 min (Figure 3c). We, therefore, restricted our incubation to 60 min considering IS quantification could be biased by serial cell-cell engagements and potential cell lysis (Fousek et al., 2021).\n\nThe effect of CD3 expression on IS formation was relatively small, especially at low BiTE concentrations (Figure 3d). The model revealed that only a small fraction of CD3 was occupied; therefore, we concluded CD3 expression was not a key driver of IS formation at low BiTE concentrations. The base model underpredicted the effect of CD3 expression on IS formation at 100 ng/ml BiTE concentration, which is partially because of the rapid CD3 downregulation upon BiTE engagement and assay variation across experimental conditions. In contrast, we found CD19 expression on target cells profoundly impacted IS formation (Figure 3e). These results were also predicted by the base model.\n\nOur model predicted that cell density would also be critical to IS formation on a per-cell basis. Increasing total cell density (E+T) from 1 to 8 million per ml at an E:T ratio around 1:1 drastically boosted IS formation from 3.1 to 15.3% at 20 ng/ml BiTE and 3.9 to 27.8% at 100 ng/ml BiTE (Figure 3f). IS formation was further increased with high CD3-expressing effector cells at high cell densities (Figure 3g).\n\nThe E:T ratio also played a pivotal role in IS formation. Changing the E:T ratio led to variations in the fraction of effector and target cells involved in IS formation, as predicted by the model. With higher E:T ratios, a greater fraction of target cells but a lower fraction of effector cells was involved in IS formation (Figure 3h and i).\n\nOverall, we found multiple factors to be influential to IS formation. The model reasonably recapitulated IS formation dynamics under various conditions (Figure 3b\u2013i). The goodness of model predictions is provided in Figure 3\u2014figure supplement 1. With good model predictability, we further investigated the influence of CD3 and CD19 binding affinities (Figure 3\u2014figure supplement 2a and b). Counterintuitively, higher affinities to CD3 resulted in higher predicted IS formation at low BiTE concentration (e.g. 0.58% and 0.41% at 0.65 ng/mL with KD,CD3 = 2.6\u00d710-10 and 2.6\u00d710-7 respectively, Figure 3\u2014figure supplement 2b), but lower predicted IS formation at high BiTE concentration, which is perhaps due to the oversaturation of both CD3-BiTE and CD19-BiTE and higher induction of CD3 downregulation. Reduced IS formation at high CD3 affinities also resulted in a bell-shaped relationship (Figure 3\u2014figure supplement 2b). Notably, there are papers reporting that high CD3 affinity may result in negative effect on BiTE safety and clinical efficacy (Chen et al., 2021; Dang et al., 2021). Our model suggested that blinatumomab has an affinity for CD3 within the optimal range of 10\u20137 \u2013 10\u20136 M. In contrast, BiTEs with higher affinity to CD19 were predicted to enhance IS formation (Figure 3\u2014figure supplement 2c and d).\n\n### IS variants were prevalent and well-predicted by the base model\n\nMany types of IS variants were observed in the experimental system. In total, six types of IS were quantified, including typical IS (ET), ETE, ETT, ETET, ETEE, and ETTT. IS variants with more than four cells were not analyzed in our study, nor included in the base model, due to their low abundance. The frequency of these variants was recorded and compared under each experimental condition.\n\nDepending on the experimental condition, approximately 12\u201325% of IS observed were IS variants, although this increased up to 50% under condition 5 due to high cell density and BiTE concentration (Figure 4a). Among these IS variants, ETE and ETT were the most frequently observed, accounting for more than 60% of total IS variants formed under all conditions (Figure 4b). Conditions 5 and 11 showed high ETE frequencies due to a high E:T ratio (6:1), while conditions 6 and 12 showed high ETT frequencies due to a low E:T ratio (1:5.8). The base model well predicted the relative fraction of each IS variant under all tested conditions (Figure 4a, b). In general, the fraction of IS variants increased with total IS abundance. The positive correlation between the fraction of IS variants and effector cells involved in IS was well predicted by the base model (Figure 4c).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig4-v1.jpg)\n\n**Figure 4.:** In total, six types of IS were quantified, including typical IS (ET), ETE, ETT, ETET, ETEE, and ETTT. (a) The fraction of typical IS and variants under different conditions; (b) The composition of IS variants (ETE, ETT, ETET, ETEE, ETTT) under different conditions; (c) The positive correlation between the fraction of IS variants (% of total IS) and total IS formation (effector cell % engaged). The formula and R2 of linear regressions are shown. (d) The E:T ratios involved in total IS and IS variants. Experimental setup: Condition 1, 2 X, E:T(1), CD3(L), CD19(M), 100 ng/mL, 60 min; Condition 2, 4 X, E:T(1), CD3(L), CD19(M), 100 ng/mL, 60 min; Condition 3, 2 X, E:T(1), CD3(H), CD19(M), 100 ng/mL, 60 min; Condition 4, 2 X, E:T(1), CD3(L), CD19(L), 100 ng/mL, 60 min; Condition 5, 4 X, E:T(6), CD3(L), CD19(M), 100 ng/mL, 60 min; Condition 6, 4 X, E:T(0.17), CD3(L), CD19(M), 100 ng/mL, 60 min; Conditions 7\u201312 are the same as Conditions 1\u20136, except with lower bispecific T cell engager (BiTE) concentrations (20 ng/mL).\n\nThe E:T ratios of IS variants from all co-incubation samples were pooled for comparison (Figure 4d). The median E:T ratio in total IS was about 1.0. When excluding typical IS, this ratio increased to 1.1 for the remaining IS variants, suggesting slightly more effector cells were involved in IS variant formation than target cells, in line with model predictions.\n\n### The in vitro model predicted antigen escape and organ reservoirs\n\nEffector T cells detach from IS and re-engage with other target cells in a process called serial cellular engagement. These effector T cells are also known as \u2018serial killers\u2019 (Fousek et al., 2021; Rogala et al., 2015). We extended the base model to incorporate IS detachment and re-engagement (Figure 5a). The in vitro model simulated IS formation and cellular cytotoxicity for up to 72 hr. With serial engagement and killing, the fraction of target cell lysis increased considerably, even at low BiTE concentrations (Figure 5b).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig5-v1.jpg)\n\n**Figure 5.:** (a) Scheme of cell detachment and serial engagement in the in vitro model. Immunological synapses (IS) duration is set to 150 min. Pe, encounter probability, Pa, adhesion probability; (b) Long-term simulation (72 hr) of target cell depletion across drug concentrations; (c\u2013d) The effects of drug concentration (c) and incubation time (d) on CD19 expression. Dashed line, a pre-defined threshold value of CD19 expression for 15% target cell depletion within 72 hr (initial setup: 2 X, E:T(1), CD3(L), 0.65 ng/mL, 72 h). Ctrl, the initial distribution of CD19 expression in the target cell population. (e\u2013f) the effects of effector and target cell density on target cell depletion (%). Dots indicated the effect and target cell densities in healthy human organs. White color, 15% target cell depletion. BM, bone marrow; LN, lymph nodes; SP, spleen; Remainder, all the rest of the non-lymphoid organs. Initial setup: CD3(L), CD19(M) for (e), CD19 (M/20) for (f), 0.65 ng/mL, 72 h.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The in vitro model was applied to perform simulations. Dashed line, the threshold value of CD19 expression for 15% target cell depletion within 72 h (initial setup: 2 X, E:T(1), CD3(L), 0.65 ng/mL, 72 h). Ctrl, initial CD19 distribution in the target cell population. Kd, dissociation constant; 2 X, 2 \u00d7 106 total cells/mL; E:T(1), E:T ratio = 1; CD3(L), CD3 expression (Low); CD19(M), CD19 expression (medium); 0.65, 20 ng/mL, blinatumomab concentration; 72 h, incubation duration.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Simulations were performed by the in vitro model. Dots indicated the effect and target cell densities in healthy human organs. White color, 15% target cell depletion. BM, bone marrow; LN, lymph nodes; SP, spleen; Remainder, all the rest of non-lymphoid organs. Initial setup: CD3(L), CD19(M) for a, CD19 (M\u00d74) for b, CD19 (M/4) for c, CD19 (M/20) for d, 0.65 ng/mL, 72 h.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (a\u2013b) Different effects of target cell density and CD19 expression on target cell depletion amount (a) and fraction (b). The in vitro model was used in the simulation. Initial setup: CD3(L), effector cell (1 X), target cell (X/20 to 500 X), CD19 expression (M/20 to 500 M), 0.65 ng/mL, 72 h. Total CD19 in the system was jointly influenced by CD19 expression per target cell and target cell density. CD19 expression influenced cell lysis to a similar extent as target cell density when both factors were low (e.g. CD19 expression <M, target cell density <X in (a)). However, further increase of CD19 expression on cell membrane did not further improve cell lysis (e.g. from point A to point C), indicating maximum ternary complexes at each interface have been reached. In contrast, the increase of target cell density continuously promotes cell lysis, e.g., from point A to B, due to enhanced probability of cell-cell encounter. When the target cell density reaches extremely high (>50 X), cell lysis started to decrease, resulting from fewer cell-cell adhesion events due to insufficient bispecific T cell engager (BiTE) concentration. As shown, although total CD19 in the system at point B and C are identical (10 \u00d7 M \u00d7 X), different cell lysis level is yielded, supporting different effects of CD19 on cellular and molecular processes. (c) Effects of B cell density and CD19 expression on B cell depletion in vivo. In each group, the change of total CD19 density from the reference (1 X, 200 B cells/\u03bcL \u00d7 30,000 CD19/cell) was achieved through changing B cell density (red bar) or CD19 expression (gray bar). Their effects on B cell depletion amount were simulated by the in vivo model. Initial setup for reference (1 X): T cell (200 /\u03bcL), B cell (200 /\u03bcL), CD3 (50, 000 /cell), CD19 (30, 000 /cell), 0.73 ng/mL, 72 h. Different effects of CD19 on cellular and molecular processes have been confirmed by the in vivo model. Similarly, the increase of CD19 expression within low-level range (3 \u00d7 103\u20133 \u00d7 105 CD19/cell from 0.1X to 10X) constantly improved cell depletion, as ternary complexes formation at each interface increased with CD19 expression. By contrast, a bidirectional effect was shown by increasing B cell density, owing to enhanced probability of cell-cell encounter at the population level and then insufficient BiTE concentration. Herein, B cell density at 10 X (2000 /\u03bcL) in the blood indicates extremely high organ B cell density in the model, e.g., spleen (~9 \u00d7 108 /mL) and lymph nodes (~3 \u00d7 108 /mL).\n\nImportantly, the in vitro model predicted tumor evolution toward populations with low CD19 expression (i.e. antigen escape). Approximately 10\u201320% of patients who relapse after blinatumomab treatment experience antigen escape, which decreases the efficacy of subsequent anti-CD19 CAR-T cell therapy (Braig et al., 2017; Pillai et al., 2019). As shown in the model, tumor cells with lower CD19 expression had a lower chance of being engaged by effector cells and thus a higher probability of surviving (Figure 5c, d). The speed of evolution was predicted to increase at greater BiTE concentrations (Figure 5c) and accelerate over time (Figure 5d). The effect of E:T ratio, cell density, and antigen affinity on tumor evolution were also simulated (Figure 5\u2014figure supplement 1). Notably, greater IS formation led to more extensive evolution toward lower CD19-expressing cells.\n\nThe impact of cell density at clinically relevant BiTE concentrations was also interrogated (Figure 5e, f, Figure 5\u2014figure supplement 2). Notably, an increase of effector cell density resulted in higher fractions of target cell lysis at 72 hours. However, a higher density of target cells did not markedly diminish the fraction of target cells lysed at a given effector cell density, due to a compensatory increase in the probability of cell-cell encounter probability per effector cell. When target cell density was extremely high (e.g., > 5\u00d7106/mL with medium CD19 expression at 1.45\u00d7105/cell in Figure 5e), lysis fraction decreased, as the low BiTE concentration may have become a limiting factor for IS formation. We used organ-specific effector and target cell abundance (Supplementary file 1b) to compare the predicted gradient of cell lysis across organs (Figure 5e, f, Figure 5\u2014figure supplement 2). Higher target cell lysis was predicted in lymph nodes and the spleen due to the abundance of effector cells in these organs. The bone marrow and all the rest of non-lymphoid organs (the remainder) showed restricted cell lysis primarily due to their relatively low abundance of effector cells (Figure 5f). The model also predicted that some organs like the bone marrow may become tumor cell sanctuary sites, providing space for tumor cell survival and adaptation, thereby increasing the likelihood of treatment resistance.\n\n### The in vivo model predicted clinical outcomes and tumor evolution across anatomical sites\n\nWe developed the in vivo model by defining IS formation dynamics in organs and cell trafficking across organ compartments (Figure 6a, Materials and methods, Supplementary file 1b and c). We used the model to simulate cell lysis in each organ and tumor-killing profiles throughout the body. Organ-specific cell lysis is highly dependent on relative IS formation dynamics and thus is a function of organ-specific effector (T cell) and target (B cell) populations, as well as BiTE exposure.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig6-v1.jpg)\n\n**Figure 6.:** (a) Scheme of organ compartment and cell trafficking. Remainder, all the rest of the non-lymphoid organs; kB cell, the turnover rate of B cell; ktraff, in and ktraff out, B cell trafficking rate. For parameters and trial information, see Materials and methods, and Supplementary file 1b and c; (b\u2013e) Observed and simulated patient B cell profiles in blood; (f) Simulated CD19 evolution in non-responder patients of trial MT103-211; (g) Simulated cell lysis potency for each organ in trial MT103-104; (h) Simulated baseline (day 0), and post-treatment (day 7 and 14) B cell organ distribution in patients with OS >30 months of trial MT103-206. Bar plot, simulated baseline and post-treatment tumor burden; (i\u2013l) Sensitivity analyses for the impact of drug concentration (i), T cell density (j), B cell density (k), and CD19 expression (l) on B cell depletion. T cell density change is allowed in the simulations (b\u2013e), details see Supplementary file 1b. BM, bone marrow; LN, lymph nodes; OS, overall survival; Rmd, remainder.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Cell co-culture was conducted at different flow velocities, producing different shear stresses to mimic the effect of blood flow. Initial setup: 2 X, 2 \u00d7 106 total cells/mL; E:T(1), E:T ratio = 1; CD3(L), CD3 expression (Low); CD3(M), CD3 expression (medium); CD19(M), CD19 expression (medium); 100 ng/mL, blinatumomab concentration; 60 min, incubation duration. (b) Cell incubation was conducted at static condition (initial setup: 2 X, E:T(1), CD19(M), CD3(L), 100 ng/mL, 60 min, shear stress = 0) and followed by adding different shear stresses (5 min) to test the stability of pre-existing IS. The reference line (100%) indicated the frequency of the effector cells engaged at static condition.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** The in vivo model was applied to perform the simulations. Bar plot showed the simulated tumor burden at baseline and post-treatment. BM, bone marrow; LN, lymph nodes; OS, overall survival; Rmd, remainder, all the rest of the non-lymphoid organs.\n\nIn the in vivo model, the blood compartment serves merely as a trafficking route and does not mediate IS formation and detachment (Figure 6a). This assumption was supported by our observation that negligible IS was formed under shear stress forces approximating those experienced under blood flow (Figure 6\u2014figure supplement 1a). Once formed, IS in the blood are unlikely to be broken through shear stress (Figure 6\u2014figure supplement 1b). Blood B cell levels reflected the systemic average. Although only 2% of lymphocytes are present in the blood, blood flow can transport about 5 \u00d7 1011 lymphocytes each day \u2013 comparable to the total number of lymphocytes in the body (Westermann and Pabst, 1992).\n\nPatients show mixed responses to BiTE immunotherapy. Some patients exhibit complete tumor eradication while others have negligible responses. By adopting patient-specific parameters, such as BiTE dosing regimens and T cell proliferation profiles, the in-vivo model reasonably predicted B-cell depletion profiles in patients (Bargou et al., 2008; Klinger et al., 2012; Zhu et al., 2016; Zhu et al., 2018; Zugmaier et al., 2015) treated with blinatumomab in multiple clinical trials (Figure 6b\u2013e, Supplementary file 1b,c). In the trials MT103-211 and MT103-206, rapid accumulation of T cells in the blood was observed in responders but not non-responders (Zhu et al., 2018; Zugmaier et al., 2015). The model could account for these patient-specific T cell profiles and distinguish between responding and non-responding patients (Figure 6d, e).\n\nLike the in vitro model, the in vivo model also predicted evolution toward low CD19-expressing cell populations over time, as shown in non-responders in MT103-211 (Figure 6f). This process is inevitable; the stronger the therapeutic pressure, the lower CD19-expression in the surviving cell population. The fraction of low CD19-expressing cells increases over time while the efficiency of tumor cell lysis decreases, leading to a gradual loss of drug sensitivity.\n\nWe finally explored tumor evolution across anatomical sites and characterized the spatial gradients of cell lysis. The lymph node, spleen, and lung showed higher fractions of cell lysis than the gut, bone marrow, and remainder (Figure 6g). More than 45% of malignant cells in the system were lysed in the lymph nodes and around 30% were eradicated in the spleen. Lytic fractions were higher than their respective baseline levels in both organs, confirming enhanced tumor killing mediated by BiTE. In contrast, the lytic fraction in the bone marrow was lower under treatment than at baseline (Figure 6g), indicating poor tumor lysis efficiency. The anatomical differences in the efficiency of cell lysis affected B cell biodistribution after BiTE treatment in patients (Figure 6h, Figure 6\u2014figure supplement 2). The relative anatomical distribution of B cells also shifted considerably over time. In high responders (OS >30 months, MT103-206), over 99% of B cells were eradicated, particularly in organs with high predicted lysis (lymph nodes and spleen). In the bone marrow, a small fraction of B cells survived that exhibited considerably lower CD19 expression than the original cell population. Unfortunately, the surviving cell populations gradually repopulated the bone marrow, leading to B cell rebound and eventually patient relapse. By contrast, non-responders had a lower fraction of B cell lysis by day 14, with B cell distribution profiles remaining similar to the baseline (Figure 6\u2014figure supplement 2).\n\nSensitivity analyses confirmed that baseline tumor burden, drug concentration, cytotoxic T cell infiltration, and CD19 expression were critical to patient response (Figure 6i - l).\n\n### The in vivo model predicted optimal dosing regimens for blinatumomab\n\nWe applied the in vivo model to simulate B cell-killing efficacy and CD19 evolution during blinatumomab treatment and compared different doses and regimens (Figure 7a). The initial plasma B cell abundance was assumed to be 200 cells/\u00b5L, with varying levels of growth rates. Under the approved dose (i.e. the high dose) and scheme 1, tumor-killing profiles were highly dependent upon tumor growth rate and baseline T cell abundance (Figure 7b). Tumors gradually accumulated resistance to treatment, especially fast-growing tumors. For slow-growing tumors with low T cell baseline, the medium dose showed a comparable tumor-killing effect but resulted in less CD19 evolution than the high dose (Figure 7c). In contrast, for slow-growing tumors with high T cell abundance, the high dose exhibited almost complete tumor control and much less CD19 loss than the medium dose (Figure 7d). The high dose showed similar efficacy at the two dosing schemes, but scheme 2 had fewer total doses. For fast-growing tumors, CD19 loss was significant, regardless of dose and regimen (Figure 7e). The medium dose in scheme 2 elicited less CD19 loss and better tumor control than scheme 1. Figure 7f summarized the favorable dosing regimen under each condition. We found that the approved dose or regimen was suboptimal for most slow-growing tumors; rather, the medium dose or dosing scheme 2 could reach similar efficacy with slower CD19 evolution. The high dose was required for almost all fast-growing tumors, with the only exception being patients with high CD19 expression and high T cell abundance at baseline who received more benefit from the medium dose at scheme 2. Overall, our in vivo model, through defining IS formation dynamics across anatomical sites in the system, could predict BiTE pharmacodynamics and changes in CD19 expression over time, and identify optimal dosing strategies based on baseline tumor characteristics.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig7-v1.jpg)\n\n**Figure 7.:** (a) Three doses (high, medium, and low) and regimens (scheme 1 and 2) were evaluated in the simulations. Starting doses were applied in the first week of cycle 1 only. The high dose with scheme 1 is the clinically approved dose and regimen of blinatumomab for the treatment of B cell acute lymphoblastic leukemia; (b) Simulated blood B cell profiles under different T:B ratios and B cell growth rates in 22-week treatment; (c\u2013e) Different dose levels, and schemes were explored in respective conditions. Simulated blood B cell profiles and CD19 evolution were shown. Gray line and shaded regions represent baseline CD19 expression; (f) The favorable dosing regimen under each condition. The favorable dosing regimen was determined by comparing B cell killing efficacy, CD19 evolution, and total dose, in this order of priority, respectively. B (200 /\u03bcL), baseline B cell density in blood is assumed to be 200 /\u03bcL; High (b\u2013e) and low CD19 expressions were the mean level of CD19 expression per B cell and set as 3 \u00d7 104 and 1 \u00d7 104, respectively; High growth and low growth of B cells were set to 0.071 /day and 0.0071 /day; T cell density change is not included in this proof-of-concept simulations.\n\n## Discussion\n\nThe clinical efficacy of BiTE immunotherapy remains suboptimal, with many of the patients who initially respond eventually experiencing disease relapse. Understanding IS formation, a crucial step in many T cell immunotherapy\u2019s mechanisms of action, can yield insights into the pharmacodynamics of BiTEs and subsequent treatment resistance. This study used an experimentally and theoretically integrated approach to examine IS formation dynamics induced by BiTEs on a population level. The abundance of IS caused by BiTEs was quantified using imaging flow cytometry, and the dynamics of IS formation were simulated with theoretical models. By defining IS formation as a spatiotemporal orchestration of molecular and cellular interactions, our theoretical models recapitulated the experimental data well. Notably, the models predicted antigen escape to be a common mechanism of resistance to BiTE immunotherapy. Tumor cells with low antigen expression accumulated over time, leading to treatment resistance and eventual disease relapse. The anatomical heterogeneity of T cell infiltration and E:T ratios across organs also conferred heterogeneous degrees of cell lysis. In particular, a subset of tumor cells in \u2018sanctuary sites,\u2019 such as the bone marrow, may be relatively protected from effector cell lysis and fuel tumor evolution and disease relapse.\n\nIS formation induced by BiTEs is determined mainly by two cell-scale interaction processes: cell-cell encounter and adhesion. Cell-cell encounter is the first, and in many instances, the rate-limiting step to IS formation. For simplicity, the models assume random cell motion without consideration for directed or chemotactic movement (Celli et al., 2012). Cell density is another critical factor; cell encounter probability could become the rate-limiting step for IS formation when the target cell density is sufficiently low that effector cells have little chance of encountering target cells. This could be particularly challenging for patients with minimal residual disease. When effector cell density is low, as in the bone marrow, tumor cells have a higher chance of surviving for long enough to develop immune evasion mechanisms, leading to treatment resistance. On the other hand, when target cell density is extremely high within an organ, target cell lysis may be compromised by insufficient antibody concentrations at clinically utilized doses (Figure 5e and f). This is consistent with clinical observations that the efficacy of blinatumomab is much higher in patients with relatively low tumor burden (Topp et al., 2015; Viardot and Bargou, 2018).\n\nSynapse formation is a set of precisely orchestrated molecular and cellular interactions. Our model merely investigated the components relevant to BiTE pharmacologic action and thereby serve as a simplified representation of this process. The molecular crosslinking between BiTEs and antigens affects the probability of cell-cell adhesion upon encounter. Drug concentration, binding affinity, and antigen expression are critical determinants of this process. Adhesion molecules such as CD2-CD58, integrins, and selectins, are critical for cell-cell interaction. The model did not consider specific roles played by these adhesion molecules, which were assumed constant across cell populations. The model performed well under this simplifying assumption.\n\nMany studies have reported a bell-shaped drug concentration-response profile for BiTE immunotherapy (Betts et al., 2019; Douglass et al., 2013; Schropp et al., 2019; Van De Vyver et al., 2021), with the primary mechanism underlying the phenomenon being the oversaturation of T cell receptors at high BiTE concentrations. The theoretical model reported herein also predicts a bell-shape concentration \u2013 IS curve, but the predicted curve peaked at higher antibody concentrations if not including the possibility of CD3 down-regulation by effector cells upon antibody engagement.\n\nWe explored the different effects of CD19 on cellular and molecular processes. Total CD19 in the system was jointly influenced by CD19 expression on membrane and target cell density. CD19 expression influenced cell lysis to a similar extent as target cell density when both factors were low (Figure 5\u2014figure supplement 3a). However, an increase of CD19 expression beyond 3 \u00d7 105 receptors/cell did not further improve cell lysis. In contrast, target cell densities seemed to have a bidirectional effect on cell lysis. At low levels, escalating cell densities enhanced the probability of cell-cell encounter, while at high target cell densities, BiTE concentrations were insufficient to mediate meaningful IS formation, resulting in fewer cell-cell adhesion events and less cell lysis (Figure 5\u2014figure supplement 3a, b). This is consistent with clinical simulations (Figure 5\u2014figure supplement 3c). The different roles of CD19 expression and target cell density highlight the importance of cellular-scale interactions to IS formation that cannot be appropriately described by molecular crosslinking alone. Because of these cellular processes, our theoretical models fundamentally differ from previous BiTE pharmacodynamics models that consider molecular crosslinking only (Betts et al., 2019; Jiang et al., 2018; Schropp et al., 2019; Song et al., 2021). In our models, molecular crosslinking caused by BiTE, i.e., ternary complex formation, drove cell-cell adhesion events, whereas cell-cell encounters were modeled as an independent process.\n\nHeterogeneity of CD19 antigen expression is a critical factor in BiTE-induced IS formation. Target cells with lower antigen expression had a lower probability of adhesion to T cells and thus a greater chance of survival. The theoretical models suggest that tumor evolution is an inevitable consequence in treatment, and that the stronger the therapeutic selection pressure, the more tumor cell populations evolve away from their pretreatment phenotype. Ultimately, the surviving tumor cells shift toward a low antigen expression population in a process known as antigen escape. Antigen escape is a common mechanism of resistance to T cell-based immunotherapy (Aldoss et al., 2017; Mejstr\u00edkov\u00e1 et al., 2017; Samur et al., 2021; Topp et al., 2014; Xu et al., 2019); however, the speed of tumor evolution toward antigen escape remains hard to predict. Through defining the formation of IS, our models show a proof of concept for predicting the trajectory of antigen escape based on baseline antigen expression, more validations of our models are warranted.\n\nNon-uniform tumor lysis effect across organs represents another barrier for therapy. Provided an anatomical space with few effector cells, tumor cells might use the bone marrow as a sanctuary site within which IS formation is infrequent. Insufficient selective pressure from effector cells might allow the regeneration of a newly resistant population of tumor cells that then repopulate other organs and accelerate systemic disease progression. This speculation is consistent with the clinical observation that patients under BiTE treatment often have relapses first detected in the bone marrow (Locatelli et al., 2022). Of note, the inadequate tumor lysis in the bone marrow might also be explained by tissue-specific differences in chemokine gradients that hinder cell-cell interaction and adhesion.\n\nWe used the in vivo model to compare different doses and schedules of blinatumomab. We found that tumor baseline characteristics, including tumor growth rate, CD19 expression, and T cell abundance, greatly influenced tumor-killing pharmacodynamics, tumor evolution, and consequentially, the ideal dosing regimen. The clinically approved dose and regimen might become suboptimal for most slow-growing tumors. The medium dose or mild regimen could maintain an optimal balance between tumor-killing and evolutionary pressure (Figure 7f). However, it was not always the case that higher dose amounts (i.e. higher therapeutic pressure) resulted in faster tumor evolution. For slow-growing tumors with sufficient T cells (Figure 7d and f), the high dose with regimens 1 or 2 could cause nearly complete tumor eradication, thereby resulting in negligible selection and limiting the total population size remaining for evolution. Faster and greater reductions in population size conferred by high doses might, therefore, reduce the chance of evolutionary rescue for slow-growing tumors.\n\nThere are still some limitations to our models. Specifically, our model operates under the assumption that target cells will be eradicated upon the formation of IS. However, further improvements to our model that consider the varying killing efficiencies of different IS variants may enhance its clinical relevance and overall performance. For IS formation and T cell motility pattern: our models only considered a few select factors that influence the formation of IS, which may not provide a full description of drug inhomogeneous efficacy across anatomical sites. Factors like the heterogeneous distribution of T and B cells, chemokines, and stromal structures could affect the T cell motility and functions in tissue environments, and including these factors may provide an unbiased evaluation of drug effect across tissues. We assumed Brownian motion in the model as a good first approximation of T cell movement. However, T cells often take other more physiologically relevant searching strategies closely associated with many stromal factors. Because of these stromal factors, the cell-cell encounter probabilities would differ across anatomical sites. For T cell activation: our models did not include intracellular signaling processes, which are critical for T activation and cytotoxicity. However, our data suggest that encounter and adhesion are more relevant to initial IS formation. To make more clinically relevant predictions, the models should consider these intracellular signaling events that drive T cell activation and cytotoxic effects. Of note, we did consider the T cell expansion dynamics in organs as an independent variable during treatment for the simulations in Figure 6. T cell expansion in our model is case-specific and time-varying. For model parameters: the majority of model parameters were obtained or derived from the literature, and we did not perform model optimization to get the optimal values of model parameters. The only parameter we manually optimized is the sensitive coefficient for cell-cell adhesion in the base and in vivo model and the values were calibrated against the in vitro data. Implementing model optimization algorithms would improve the predictability of the models.\n\nIn conclusion, our study investigated the dynamics of IS formation under various conditions mimicking the heterogeneous nature of tumor microenvironments. To our knowledge, these theoretical models are the first to quantify the entire BiTE-induced IS formation process. The models reveal trajectories of tumor evolution through antigen escape across anatomical sites and suggest dosing regimens that could confer tumor control in light of treatment-induced disease evolution. This work has substantial implications for T cell-based immunotherapies.\n\n## Materials and methods\n\n### Cell lines\n\nJurkat (Clone E6-1) and Raji cells were obtained from ATCC and maintained in RPMI1640 supplemented with 10\u201320% fetal bovine serum (FBS) and 1% penicillin-streptomycin. Cell lines were routinely tested to avoid mycoplasma contamination. Cell lines have been authenticated by STR profiling and no mycoplasma contamination was detected.\n\n### Cell sorting and antigen expression quantification\n\nCell populations with high (H), medium (M), and low (L) antigen expression were sorted based on natural expression levels, without any genetic engineering. PE-anti-CD3 and PE-anti-CD19 (BD Biosciences, San Jose, CA) were used as staining antibodies and BD FACSAria II was used to perform cell sorting. Surface expression of CD3 and CD19 was quantitatively determined by Quantum MESF beads (Bangs laboratories, Fishers, IN) and BD LSR II flow cytometry (Figure 1\u2014figure supplement 1).\n\n### Cell co-incubation and imaging flow cytometry\n\nEffector cell (E, Jurkat), target cell (T, Raji), and anti-hCD19-CD3 BiTE (BioVision, Milpitas, CA) were well mixed and co-incubated in 1 mL medium at 37 \u00b0C. CD3 or CD19 expression, drug concentration, cell density, E:T ratio, and duration of co-incubation varied as initial setups. All samples were biological triplicates. After co-incubation, the effector cell, target cell, actin, and nucleus were stained by FITC-anti-CD7 (eBiosciences, San Diego, CA), PE-anti-CD20 (BD Biosciences, San Jose, CA), AF647-anti-phalloidin (Thermo Fisher, Waltham, MA) and DAPI, respectively. Staining for surface and intracellular markers was performed as described previously (Liu et al., 2019). Samples were analyzed using Amnis ImageStream MKII (Luminex, Austin, TX). The frequency of IS was quantified using IDEAS (Luminex). The gating strategy is summarized in Figure 1\u2014figure supplement 2.\n\n### Cell co-incubation under shear stress\n\nTo mimic the shear stress in blood circulation, the effector cell, target cell, and BiTE were well mixed in a circular pipe (internal diameter: 1.6 mm) and co-cultured (37 \u00b0C) at a certain flow velocity driven by a roller pump (Masterflex, Vernon Hills, IL). Flow velocities were adjusted to produce varying wall shear stresses, equivalent to those in the vein (1\u20136 dyn/cm2), artery (10\u201324, dyn/cm2), and capillary (20\u201340 dyn/cm2) (Kamiya et al., 1984; Papaioannou and Stefanadis, 2005; Sebastian and Dittrich, 2018). After co-culture, sample staining and analysis were the same as previously described.\n\n### Modeling and simulation\n\n#### Base model\n\nMechanistic agent-based models were developed to simulate IS formation dynamics in vitro and in vivo. We employed a sequential model-building strategy. First, we developed a model to capture IS formation dynamics within 1 hr, called the base model. The base model consisted of three modules at different dimensions: antibody-antigen binding (3D), cell-cell encounter, and cell-cell adhesion (2D) (Figures 1 and 2).\n\nAntibody-antigen binding to form binary complexes (BiTE-CD3 and BiTE-CD19) was considered a 3D process among free molecules. Rapid equilibrium was assumed. At specific total concentrations of CD3 (A), CD19 (B), and BiTE (Y) in the co-incubation system, the equilibrium concentrations of free antigens ([A] and [B]) and binary complex ([AY] and [YB]) (Appendix 1.1) were solved according to a model with two competing binding ligands (Yan et al., 2012). Heterogeneous cell populations at equilibrium were generated by randomly assigning antigens and binary complexes to each individual cell (assign A and AY to the effector cell, B and YB to target cell). The distribution of assigned antigens on the cells were consistent with measured CD3 and CD19 expressions in respective cell lines (Figure 1\u2014figure supplement 1, Supplementary file 1a).\n\nCD3 down-regulation on effector cells was also considered in our model (Lanzavecchia et al., 1999; San Jos\u00e9 et al., 2000; Sousa and Carneiro, 2000; Utzny et al., 2006; Valitutti et al., 1995; Viola et al., 1997). The rate of CD3 down-regulation was modeled as a function of surface binary complex abundance ([AY]\u2019), which was described by an empirical equation that reached a steady state around 1 hr incubation, in line with the literature (Appendix 1.2). CD19 internalization was also introduced at a rate constant of 0.002 /min (Du et al., 2008; Ingle et al., 2008). Changes in surface antigen abundance ([A]\u2019, [AY]\u2019, and [YB]\u2019) for each cell were updated every 60 s in the model.\n\nEncounters between effector and target cells are an essential step for IS formation. We adopted an approximate equation to determine the encounter probability of one effector cell meeting at least one target cell within a specific time, which is a function of the number of target cells in the system (Celli et al., 2012). We assumed that effector cells diffuse independently, moving in Brownian motion, while target cells were immotile. For simplicity, the IS and IS variants were considered as a singular moving cell entity when calculating the probability of encountering an additional free cell. Notably, spatial factors were considered in this encounter probability. The equations and parameters are provided in Appendix 1.3; the spatial coefficients for different encounter scenarios are listed in Supplementary file 1a. Encounter probabilities were re-calculated every 60 s in the model due to the changing number of free cells over time.\n\nWhen an effector cell physically contacts a target cell, it may have a chance to adhere or diffuse away. Cell-cell adhesion is mediated by ternary complexes (AYB, bond) formed from binary complexes (AY or YB) and the availability of free antigens (B or A) on opposing cell surfaces (2D binding) (Appendix 1\u2014figure 2). We assumed that stable adhesion relied on generating sufficient AYB bonds within a short contact duration. Differential equations were used to simulate the number of AYB bonds. The relationship between adhesion probability and the bond number was described by a modified deterministic equation (Appendxi 1.4; Chesla et al., 1998; Huang et al., 2010). A higher number of AYB bonds yielded a higher chance for engagements to result in an IS. The randomness arose from randomly assigned antigen expressions on both cells and contact duration (0.1\u20135 s). It is noteworthy that the \u2018on\u2019 and \u2018off\u2019 rate constants used in the equations are 2D kinetic constants on the cellular membrane, which were derived from 3D rate constants by a \u2018single-step model\u2019 (Appendxi 1.5; Bell, 1978; Dreier et al., 2002; Faro et al., 2017; Jansson, 2010).\n\nIn the base model (time scale \u22641 hr), each free cell had only one chance to encounter in each round (60 s). Cells that failed to encounter or adhere would remain free cells in the next round. Newly formed IS would have a chance to encounter an additional free cell to form an IS variant in the next round (Figure 2). Only one free cell was allowed to be added at a time. IS variants of up to four cells were allowed in the model. The algorithm for the base model is provided in Appendix 1\u2014figure 3. Other important assumptions in the base model include: (1) no cell proliferation within 1 hr; (2) no change in binding equilibrium for binary complex within 1 hr; (3) once formed, IS are not breakable; (4) target cells were assumed to be eradicated after IS formation, without distinguishing between typical IS and IS variants.\n\n#### In vitro model\n\nNext, the in vitro model was developed by incorporating serial cell engagement into the base model (Figures 1b and 5a). The duration of IS was assumed to be 150 min (Fousek et al., 2021), and the detached effector cells from IS became free cells for additional IS formation. We made the following updates and assumptions to extend the time scale to 72 hr: (1) binding equilibrium for the binary complex was recalibrated every hour; (2) CD19 internalization was ignored; (3) CD3 down-regulation remained unchanged after 1 hr; (4) BiTE concentration remained constant; (5) target cell death rate is not included as target cells were assumed to be eradicated after IS formation.\n\n#### Clinical translation (in vivo model)\n\nLastly, we expanded the model to develop the in vivo model for simulating tumor-killing profiles in patients. Several additional modules, including multiple organ compartments and cell trafficking across organs, were defined in the in vivo model (Figures 1b and 6a).\n\nIn the in vivo model, IS formation occurred within each organ-specific environment (Supplementary file 1b). BiTE concentrations and antigen expression (CD3 and CD19) in human T and B cells were estimated based on reported values (Ginaldi et al., 1996; Ginaldi et al., 1998; Haso et al., 2013; Jiang et al., 2020; Ramakrishna et al., 2019; Rosenthal et al., 2018). The patient-specific T and B cell densities at the organ level were derived based on the blood T and B cell numbers and the pre-defined \u2018partition repertoire\u2019, which reflected the relative cell abundance between blood and each organ (Hall et al., 2012; Hassan and El-Sheemy, 2004; Westermann and Pabst, 1992).\n\nThe rate of B cell trafficking to blood (ktraff, out) was set at 4.17% per hour, which represents the fraction of B cells trafficking through the blood during a day relative to the total B cell in the system, in line with clinical data (Westermann and Pabst, 1992). Each hour, 4.17% of B cells in each organ were randomly released to the blood and then reassigned to a new organ according to the pre-defined \u2018partition repertoire\u2019 representing trafficking through the blood. Therefore, the rate of B cell trafficking to the organ (ktraff, in) was assumed to be organ specific. T cell trafficking was not modeled, as T cell death was ignored. B cell turnover and changes in T cell densities and BiTE dose over time were allowed (Supplementary file 1b and c). Similar to base and in vitro model, B cell death rate was not included as B cells were assumed to be eradicated after IS formation.\n\nAs the model output, blood B cell levels after treatment was derived from the residual B cells in organs based on the pre-defined \u2018partition repertoire\u2019.\n\n### Data source, software, and code availability\n\nPublicly available clinical data (Bargou et al., 2008; Klinger et al., 2012; Zhu et al., 2016; Zhu et al., 2018; Zugmaier et al., 2015) were digitized from the literature using WebPlot Digitizer. Simulation, plotting, and statistical analysis were implemented in R (3.6.0). The base model code can be found on GitHub at https://github.com/zhoujw14/BiTE-Code, (copy archived at Zhou, 2022).\n",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "a26dd0e2-b61d-4ff4-b38e-11a7b67fea6c",
+      "submission_id": "1e287e12-a498-45ac-8893-9457da2c5a03",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael L Dustin, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83659.sa0](https://doi.org/10.7554/eLife.83659.sa0)\n\nThis work provides an important finding, that aspects of clinical outcomes can be predicted by a random search to an immunological synapse-based computational model for T cells directed by specific engagers. It provides solid evidence based on in vitro synapse formation measurements using imaging flow cytometry. The work will be of interest to investigators in the still-expanding immunotherapy field, and also as an example of how biologic drugs interface with endogenous cellular resources in a patient.\u2019\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Michael L Dustin, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83659.sa1](https://doi.org/10.7554/eLife.83659.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Population Dynamics of Immunological Synapse Formation Induced by Bispecific T-cell Engagers Predict Clinical Pharmacodynamics and Treatment Resistance\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Michael L Dustin as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Aleksandra Walczak as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Xiling Jiang (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. Cell adhesion molecules are regulated by TCR are not explicitly included in the model. Do the author feel that BITEs are not triggering these mechanisms or that their action is directly related to BiTE mediated interactions that are explicitly modelled such that the contributions of adhesion are included in the contributions of the BiTE interactions.\n\n2. T cell movements in tissue is not a random walk, but is scaffolded by stromal cells and extracellular matrix to generate a variety of search strategies, which have been reported in the literature. Do any of the surprising results from the model potentially arise from known, non-Brownian aspects of T cell migration in tissues (or from aspects of cell adhesion in tissues that are not linear related to BiTE mediated interactions).\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors use Jurkat-Raji combination for imaging flow cytometry. Jurkat is likely to use the CD2-CD58 adhesion system to engage Raji and this could be investigated with antibodies to CD2 or CD58. It is not clear to me how the simple use of blinatumomab bridge formation can correctly model the adhesion process. I suspect this works because the CD2-CD58 system is likely to be a constant and the frequency of blinatumomab Bridges is controlling signaling that promoted CD2-CD58 interaction to mediate conjugate formation and observed actin polymerisation. So the modelling may be correct in predicting the bell shape, but would not hold up if the physical requirements for synapse formation were correctly modelled. So the inclusion of CD2-CD58 and other adhesion systems may not change some aspects of the models, but it would provide another escape route for the tumour- through CD58 loss rather than CD19 loss.\n\nUnderstanding the competition between adhesion and motility in the tumour may be important to understand the dissociation process. So chemokinesis may be an important thing to consider that may different in different settings. Due to chemokine like CXCL12 and CCL19/21 it may be very strong in lymphoid tissues, but bone marrow and other tissues may have very different landscapes of chemokine and thus the drive to disengage from a target may be lower or higher.\n\nIn terms of search models, the actual movement pattern will depend upon the underlying stroma. In a lymph node this network allows for frequent turns and exploration of the 3D space, where in some tumours the stroma may be more oriented and may convey T cells toward or away from the tumour. In the CNS, L\u00e9vy flight was found to be more efficient than a random walk would have been. Can this complexity explain any situation where the model predictions didn't hold?\n\nReviewer #2 (Recommendations for the authors):\n\n1. What is the major purpose of modeling the immune synapse variants? Are they expected to have clinical significance (e.g., increase /decrease in efficacy, induce tumor antigen escape)?\n\n2. In page 10 Figure 3, the incubation system was defined with X x 10E6 cells/mL, does this refer to total cell numbers (i.e., E + T cells), effector cells numbers or target cell numbers, please clarify in the figure legend for each respective experimental condition (e.g., Figure 3h and 3i, when you have different E:T ratios).\n\n3. In page 10 Figure 3h, I would like recommend separation of effector cells and target cells, given that engagement of target cells is expected to be more clinically relevant.\n\n4. In page 12 line 233, it was stated that \"IS formation was optimized when the E:T ratio was around 1\". Given that a lot of in vitro studies a conducted using E:T ratio 5:1 or 10:1, do you think your simulation results can be used to modify the in vitro study experimental condition towards better outcome?\n\n5. Page 15 Figure 5c and 5d, do you have any observed data to verify the model simulated reduction in CD19 expression level following blinatumomab treatment?\n\n6. Page 15 Figure 5e and 5f, one major concern for me is that your model simulation suggested that the bispecific is more effective in spleen and bone marrow compared to that in bone marrow, which generally against the clinical observation (e.g., the expected efficacious dose of blinatumomab for Acute Lymphoblastic Leukemia [major site of action is bone marrow] and Non-Hodgkin's Lymphoma [major site of action is lymph node] are 15 ug/m2/day vs. 60 ug/m2/day, respectively), and animal data (e.g., MGD-011 showed much strong B cell depletion effect in bone marrow compared to that in spleen and lymph node, PMID: 27663593). This may be associated with the heterogenous distribution of T cells and B cells in the lymph node and spleen (https://www.google.com/url?sa=iandurl=https%3A%2F%2Fimmunox.ucsf.edu%2Fsites%2Fimmunox.ucsf.edu%2Ffiles%2Fpdf%2FMicro204_Anat_IR%2520v2018.pdfandpsig=AOvVaw0qOMQka3SNN7k762B84FYDandust=1670808103053000andsource=imagesandcd=vfeandved=0CBAQjhxqFwoTCLC0za2z8PsCFQAAAAAdAAAAABAd). Please update your model simulation and associated context accordingly.\n\n7. Page 17 Figure 6. Same issue as Figure 5e and 5f, with the model simulated regimen, we are not supposed to expect more B cell depletion in lymph node and spleen compared to that in bone marrow.\n\n8. Page 20 Figure7. You may consider alternative regimens (e.g., high dose intensive treatment initially, followed by lower dose, less intensive treatment for consolidation) given that E:T ratio is expected to increase substantially following initial treatment.\n\n9. Figure 5\u2014figure supplement 3C. I'm not sure if the conclusion that \"bidirectional effect was shown by increasing B cell density, owing to enhanced probability of cell-cell encounter and then insufficient BiTE concentration\" hold true, given that for each individual B cell, the opportunity of encounter blinatumomab and T cells should be the same even at lower B cell concentrations.\n\n10. Figure 4\u2014figure supplement is missing\n\n11. Given that you have 17 supplementary figures, please include a separate file where all the figures and the respective figure legends will be arranged together when you submit the revised article.\n\nReviewer #3 (Recommendations for the authors):\n\n1. More details regarding the estimation of model parameters should be provided. Specifically, details of the type of the cost function used, confidence intervals, and the sensitivity of the in vivo dosage strategies to the chosen parameter values. It was not clear if a killing rate for tumors was used and whether it was estimated. Do the T cells proliferate/die in the in vivo model? A clear discussion of the data that were used to train the model (e.g., to estimate parameters) and test predictions should help.\n\n2. It might help to further evaluate the importance of the cell population level interactions added in the model if one of the existing models in the literature was compared against the model developed here for describing the in vitro and in vivo experiments.\n\n3. I think an experimental test of the surprising results in supplementary Figure 3a will substantially increase the confidence in the model.\n\n4. It will help the readers to follow the model if model parameters were shown in the figures (e.g., Figure 5a).\n",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "939ed847-ff46-416f-99ca-af30060cdc3b",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C1",
+      "claim": "Effector T cells need to form immunological synapses (IS) with recognized target cells to elicit cytolytic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Effector T cells need to form immunological synapses (IS) with recognized target cells to elicit cytolytic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about T cell function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "86a91732-c58e-4e88-8cab-e60d9bca8124",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C2",
+      "claim": "Facilitating IS formation is the principal pharmacological action of most T cell-based cancer immunotherapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Facilitating IS formation is the principal pharmacological action of most T cell-based cancer immunotherapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the mechanism of action of T cell-based immunotherapies, representing established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "728b9fcf-e22d-408d-a19c-74d6d1c703ae",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C3",
+      "claim": "The dynamics of IS formation at the cell population level remains poorly defined.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the dynamics of IS formation at the cell population level, the primary driver of the pharmacodynamics of many cancer immunotherapies, remains poorly defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "1546e3a8-0b15-4b36-b280-68515152a303",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C4",
+      "claim": "The models produce experimentally consistent predictions when defining IS formation as a series of spatiotemporally coordinated events driven by molecular and cellular interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our models produce experimentally consistent predictions when defining IS formation as a series of spatiotemporally coordinated events driven by molecular and cellular interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data and model simulations presented throughout the manuscript, particularly in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "81cddfc5-a33c-4190-9bb1-702f68517b0d",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C5",
+      "claim": "The models predict tumor-killing pharmacodynamics in patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The models predict tumor-killing pharmacodynamics in patients and reveal trajectories of tumor evolution across anatomical sites under BiTE immunotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the clinical data comparisons shown in Figure 6b-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "ffa72845-891c-4e87-947c-6ebf0fa3eb02",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C6",
+      "claim": "The models reveal trajectories of tumor evolution across anatomical sites under BiTE immunotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "The models predict tumor-killing pharmacodynamics in patients and reveal trajectories of tumor evolution across anatomical sites under BiTE immunotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by model simulations shown in Figures 5, 6, and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "31b682aa-0c54-41f8-b6fa-f195ff95fbde",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C7",
+      "claim": "The models highlight the bone marrow as a potential sanctuary site permitting tumor evolution and antigen escape.",
+      "claim_type": "EXPLICIT",
+      "source": "Our models highlight the bone marrow as a potential sanctuary site permitting tumor evolution and antigen escape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by model predictions shown in Figures 5f and 6g.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "7dc9af5c-8529-4bf6-9b58-c019847c9608",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C8",
+      "claim": "Optimal dosing regimens are a function of tumor growth, CD19 expression, and patient T cell abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "The models also suggest that optimal dosing regimens are a function of tumor growth, CD19 expression, and patient T cell abundance, which confer adequate tumor control with reduced disease evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the dosing simulations shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "721ce78e-2177-446b-8ae6-5575dedbcd6d",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C9",
+      "claim": "Only a fraction of patients respond to immunotherapy, and many responders eventually relapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite many successes, multiple challenges persist. For instance, only a fraction of patients respond, and many responders eventually relapse (Nagorsen et al., 2012; Thakur et al., 2018; Topp et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clinical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "f75b154a-5f32-4681-b153-1f75c1f0792d",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C10",
+      "claim": "BiTE can redirect T cells to bind specific antigens on tumor cells and form IS.",
+      "claim_type": "EXPLICIT",
+      "source": "BiTE, as a unique type of cancer immunotherapy, can redirect T cells to bind specific antigens on tumor cells and form IS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the known mechanism of action of BiTE.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "84e7b7f8-b390-4a15-ac0f-b037c0747981",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C11",
+      "claim": "BiTE-induced IS formation between tumor cells and T cells is a precisely orchestrated cascade of molecular and cellular interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Like the IS formed between antigen-presenting cells and T cells, BiTE-induced IS formation between tumor cells and T cells is a precisely orchestrated cascade of molecular and cellular interactions (Delon and Germain, 2000; Roda-Navarro and \u00c1lvarez-Vallina, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "78ebcbd0-e36a-4078-85e6-138eb8fc26fc",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C12",
+      "claim": "Previous pharmacodynamic models of BiTE immunotherapy have focused almost exclusively on the mechanisms of molecular crosslinking, with little consideration for macroscopic intercellular interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous pharmacodynamic models of BiTE immunotherapy have focused, almost exclusively, on the mechanisms of molecular crosslinking, with little consideration for macroscopic intercellular interactions (Betts et al., 2019; Jiang et al., 2018; Schropp et al., 2019; Song et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous modeling studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "d3e3c2ad-c1ff-47a4-ade8-5b2a9a62ad5f",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C13",
+      "claim": "Suboptimal BiTE efficacy could result from insufficient numbers of effector cells, poor drug penetration into tumor tissue, and antigen loss leading to immune escape.",
+      "claim_type": "EXPLICIT",
+      "source": "Suboptimal BiTE efficacy could result from insufficient numbers of effector cells, poor drug penetration into tumor tissue, and antigen loss leading to immune escape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on known mechanisms of resistance to immunotherapy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "7e32e3bb-63f4-42c3-9641-fe9a113db869",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C14",
+      "claim": "Bell, 1978 developed theoretical models of cell-cell adhesion that highlighted not only the importance of cell-surface receptors and ligands, but also biophysical factors including receptor diffusivity on the cell membrane and hydrodynamic shearing forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Bell, 1978 developed theoretical models of cell-cell adhesionthat highlighted not only the importance of cell-surface receptors and ligands, but also biophysical factors including receptor diffusivity on the cell membrane and hydrodynamic shearing forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bell's work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "5eb632c8-c0a3-4ad0-9a51-f5a3a5c17887",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C15",
+      "claim": "There has been no theoretical framework developed to characterize the population dynamics of IS formation.",
+      "claim_type": "EXPLICIT",
+      "source": "By now, to our knowledge, there has been no theoretical framework developed to characterize the population dynamics of IS formation, limiting our ability to predict the pharmacodynamics of and resistance to cancer immunotherapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion about the current state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "105a7ee7-2b95-4161-bcd8-3dd91aa61711",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C16",
+      "claim": "CD3+ Jurkat was used as effector cells (E) while CD19+ Raji was used as target cells (T).",
+      "claim_type": "EXPLICIT",
+      "source": "As depicted in Figure 1a, CD3+ Jurkat was used as effector cells (E) while CD19+ Raji was used as target cells (T).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental setup shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "f432e9d4-efca-4db7-8e7a-666236efd9b0",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C17",
+      "claim": "Jurkat and Raji cells were sorted into three subpopulations, high (H), medium (M), and low (L), based on their membrane expressions of CD3 or CD19, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Jurkat and Raji cells were sorted into three subpopulations, high (H), medium (M), and low (L), based on their membrane expressions of CD3 or CD19, respectively (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "4bbda3d0-df1d-4348-ab9a-d20984197a6c",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C18",
+      "claim": "Multiple types of IS were observed and quantified, including 'typical' IS with one effector and one target cell (ET) and 'variants' with three or more cells engaged, such as ETE, ETT, and ETET.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple types of IS were observed and quantified, including 'typical' IS with one effector and one target cell (ET) and 'variants' with three or more cells engaged, such as ETE, ETT, and ETET.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the imaging flow cytometry data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "813c41ce-8fcb-4bec-a778-bf503bf4bf7a",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C19",
+      "claim": "The base model consists of three fundamental components during IS formation: three-dimensional (3D) binding between antibodies and antigens (CD3 or CD19) to form binary complexes, the probability of cell-cell encounter, and cell-cell adhesion driven by two-dimensional (2D) binding to form ternary complexes (CD3-BiTE-CD19) on the cellular membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1b, the base model was developed for predicting IS formation dynamics within 1 hr. The base model consists of three fundamental components during IS formation: three-dimensional (3D) binding between antibodies and antigens (CD3 or CD19) to form binary complexes, the probability of cell-cell encounter, and cell-cell adhesion driven by two-dimensional (2D) binding to form ternary complexes (CD3-BiTE-CD19) on the cellular membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the structure of the base model as shown in Figures 1b and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "55f7d72a-5b42-47ac-ad2f-8687e71e25b9",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C20",
+      "claim": "IS formation in vitro exhibited a bell-shaped relationship to BiTE concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "IS formation in vitro exhibited a bell-shaped relationship to BiTE concentration (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "b3104d0f-8e1e-4639-9c90-0759de0e0395",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C21",
+      "claim": "The model predicted this bell-shaped relationship and revealed that high BiTE concentrations (>100 ng/ml) would reduce the formation of ternary complexes, partly because individual antigens (CD3 and CD19) were almost completely occupied by one arm of the BiTE, limiting crosslinking with opposing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The model predicted this bell-shaped relationship and revealed that high BiTE concentrations (>100 ng/ml) would reduce the formation of ternary complexes, partly because individual antigens (CD3 and CD19) were almost completely occupied by one arm of the BiTE, limiting crosslinking with opposing cells (Appendix 1\u2014figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model simulations shown in Figure 3b and Appendix 1\u2014figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "e178c69b-e42a-4330-a534-4f1ab150008b",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C22",
+      "claim": "IS formation increased over time and plateaued around 60 min.",
+      "claim_type": "EXPLICIT",
+      "source": "IS formation increased over time and plateaued around 60 min (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "2b1356d8-b438-4410-b09e-b0218ab4a224",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C23",
+      "claim": "The effect of CD3 expression on IS formation was relatively small, especially at low BiTE concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of CD3 expression on IS formation was relatively small, especially at low BiTE concentrations (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "c99609cc-d6a1-4f00-a440-26034c55d143",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C24",
+      "claim": "CD19 expression on target cells profoundly impacted IS formation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found CD19 expression on target cells profoundly impacted IS formation (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "227f15fe-1397-483f-af28-ce73ae32da86",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C25",
+      "claim": "Increasing total cell density (E+T) from 1 to 8 million per ml at an E:T ratio around 1:1 drastically boosted IS formation from 3.1 to 15.3% at 20 ng/ml BiTE and 3.9 to 27.8% at 100 ng/ml BiTE.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing total cell density (E+T) from 1 to 8 million per ml at an E:T ratio around 1:1 drastically boosted IS formation from 3.1 to 15.3% at 20 ng/ml BiTE and 3.9 to 27.8% at 100 ng/ml BiTE (Figure 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model predictions shown in Figure 3f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "2611114e-5e2c-4f18-8d59-af6e1ecd5fd5",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C26",
+      "claim": "With higher E:T ratios, a greater fraction of target cells but a lower fraction of effector cells was involved in IS formation.",
+      "claim_type": "EXPLICIT",
+      "source": "With higher E:T ratios, a greater fraction of target cells but a lower fraction of effector cells was involved in IS formation (Figure 3h and i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data and model predictions shown in Figure 3h and i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "42215b6e-1de2-4a83-b662-d4e54978b933",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C27",
+      "claim": "Approximately 12\u201325% of IS observed were IS variants, although this increased up to 50% under condition 5 due to high cell density and BiTE concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Depending on the experimental condition, approximately 12\u201325% of IS observed were IS variants, although this increased up to 50% under condition 5 due to high cell density and BiTE concentration (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "a4038722-33b6-426c-b518-6c89f265d801",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C28",
+      "claim": "Among IS variants, ETE and ETT were the most frequently observed, accounting for more than 60% of total IS variants formed under all conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these IS variants, ETE and ETT were the most frequently observed, accounting for more than 60% of total IS variants formed under all conditions (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "ddd78c3f-db4a-4447-bf4a-2d9264582c7b",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C29",
+      "claim": "The base model well predicted the relative fraction of each IS variant under all tested conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The base model well predicted the relative fraction of each IS variant under all tested conditions (Figure 4a, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the comparison of experimental data and model predictions shown in Figure 4a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "eac632db-3239-4318-99a8-c43a9b64d851",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C30",
+      "claim": "The fraction of IS variants increased with total IS abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the fraction of IS variants increased with total IS abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "25078774-d72f-46b6-9e1a-ab35c94f9a24",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C31",
+      "claim": "The positive correlation between the fraction of IS variants and effector cells involved in IS was well predicted by the base model.",
+      "claim_type": "EXPLICIT",
+      "source": "The positive correlation between the fraction of IS variants and effector cells involved in IS was well predicted by the base model (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the comparison of experimental data and model predictions shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "27014997-74c1-45df-bb8a-cc968a3f7c9b",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C32",
+      "claim": "The median E:T ratio in total IS was about 1.0.",
+      "claim_type": "EXPLICIT",
+      "source": "The median E:T ratio in total IS was about 1.0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "e76c7272-3e7f-4c71-b132-8df3bd361f62",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C33",
+      "claim": "When excluding typical IS, the E:T ratio increased to 1.1 for the remaining IS variants, suggesting slightly more effector cells were involved in IS variant formation than target cells.",
+      "claim_type": "EXPLICIT",
+      "source": "When excluding typical IS, this ratio increased to 1.1 for the remaining IS variants, suggesting slightly more effector cells were involved in IS variant formation than target cells, in line with model predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data and model predictions shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "15d80768-0b38-40b1-9b0d-570485d7d817",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C34",
+      "claim": "With serial engagement and killing, the fraction of target cell lysis increased considerably, even at low BiTE concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "With serial engagement and killing, the fraction of target cell lysis increased considerably, even at low BiTE concentrations (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model simulations shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "52127688-57b1-4b4e-8308-b724d768aa87",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C35",
+      "claim": "The in vitro model predicted evolution toward low CD19-expressing cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the in vitro model predicted tumor evolution toward populations with low CD19 expression (i.e. antigen escape).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by model simulations shown in Figure 5c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "3d54d3b3-96d3-42df-a034-12cbd1e8ae56",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C36",
+      "claim": "Approximately 10\u201320% of patients who relapse after blinatumomab treatment experience antigen escape.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 10\u201320% of patients who relapse after blinatumomab treatment experience antigen escape, which decreases the efficacy of subsequent anti-CD19 CAR-T cell therapy (Braig et al., 2017; Pillai et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clinical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "80cbad87-d2c9-44d3-843f-3b77d41b84c4",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C37",
+      "claim": "Tumor cells with lower CD19 expression had a lower chance of being engaged by effector cells and thus a higher probability of surviving.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in the model, tumor cells with lower CD19 expression had a lower chance of being engaged by effector cells and thus a higher probability of surviving (Figure 5c, d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model simulations shown in Figure 5c and d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "8315117c-406e-4824-a64f-b7451c3d4699",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C38",
+      "claim": "The speed of evolution was predicted to increase at greater BiTE concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "The speed of evolution was predicted to increase at greater BiTE concentrations (Figure 5c) and accelerate over time (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model simulations shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "84f4e4e9-ef25-4cc5-ac4f-b9349e469a0d",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C39",
+      "claim": "An increase of effector cell density resulted in higher fractions of target cell lysis at 72 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, an increase of effector cell density resulted in higher fractions of target cell lysis at 72 hours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by model simulations shown in Figure 5e and f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "e9cd80cd-107d-4f30-8034-f1078c9ff3a3",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C40",
+      "claim": "Higher target cell lysis was predicted in lymph nodes and the spleen due to the abundance of effector cells in these organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher target cell lysis was predicted in lymph nodes and the spleen due to the abundance of effector cells in these organs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by model simulations shown in Figure 5e and f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "30d26f59-61c8-41b8-ac73-2f4904782bf0",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C41",
+      "claim": "The bone marrow and all the rest of non-lymphoid organs (the remainder) showed restricted cell lysis primarily due to their relatively low abundance of effector cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The bone marrow and all the rest of non-lymphoid organs (the remainder) showed restricted cell lysis primarily due to their relatively low abundance of effector cells (Figure 5f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model simulations shown in Figure 5f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "510c9949-c17d-4480-845a-21c02ed31c40",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C42",
+      "claim": "The model predicted that some organs like the bone marrow may become tumor cell sanctuary sites, providing space for tumor cell survival and adaptation, thereby increasing the likelihood of treatment resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "The model also predicted that some organs like the bone marrow may become tumor cell sanctuary sites, providing space for tumor cell survival and adaptation, thereby increasing the likelihood of treatment resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on model simulations shown in Figure 5f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "bcf10973-84f2-44d6-a713-79ff9b30893f",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C43",
+      "claim": "In the in vivo model, the blood compartment serves merely as a trafficking route and does not mediate IS formation and detachment.",
+      "claim_type": "EXPLICIT",
+      "source": "In the in vivo model, the blood compartment serves merely as a trafficking route and does not mediate IS formation and detachment (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a modeling assumption described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "ce9f9e7d-85a3-4f09-b8a5-aab94c99ebb5",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C44",
+      "claim": "Negligible IS was formed under shear stress forces approximating those experienced under blood flow.",
+      "claim_type": "EXPLICIT",
+      "source": "This assumption was supported by our observation that negligible IS was formed under shear stress forces approximating those experienced under blood flow (Figure 6\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "98defbe8-cc5b-4ee0-a06d-78d92e7f9db3",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C45",
+      "claim": "Once formed, IS in the blood are unlikely to be broken through shear stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Once formed, IS in the blood are unlikely to be broken through shear stress (Figure 6\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "5c9246c3-c2c9-4e9e-9261-fd04f35c86f8",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C46",
+      "claim": "The in-vivo model reasonably predicted B-cell depletion profiles in patients treated with blinatumomab in multiple clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "By adopting patient-specific parameters, such as BiTE dosing regimens and T cell proliferation profiles, the in-vivo model reasonably predicted B-cell depletion profiles in patients (Bargou et al., 2008; Klinger et al., 2012; Zhu et al., 2016; Zhu et al., 2018; Zugmaier et al., 2015) treated with blinatumomab in multiple clinical trials (Figure 6b\u2013e, Supplementary file 1b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the comparison of model predictions with clinical data shown in Figure 6b-e.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "4eca7f05-24c6-4f4f-873b-cc35be5ba0c1",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C47",
+      "claim": "In the trials MT103-211 and MT103-206, rapid accumulation of T cells in the blood was observed in responders but not non-responders.",
+      "claim_type": "EXPLICIT",
+      "source": "In the trials MT103-211 and MT103-206, rapid accumulation of T cells in the blood was observed in responders but not non-responders (Zhu et al., 2018; Zugmaier et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clinical trial data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "92f61319-5510-4d01-ba87-7fc73a550534",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C48",
+      "claim": "The model could account for patient-specific T cell profiles and distinguish between responding and non-responding patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The model could account for these patient-specific T cell profiles and distinguish between responding and non-responding patients (Figure 6d, e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model simulations shown in Figure 6d and e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "cfbb7992-b06b-475f-ad2a-8ddf90cebb9e",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C49",
+      "claim": "The in vivo model predicted evolution toward low CD19-expressing cell populations over time in non-responders in MT103-211.",
+      "claim_type": "EXPLICIT",
+      "source": "Like the in vitro model, the in vivo model also predicted evolution toward low CD19-expressing cell populations over time, as shown in non-responders in MT103-211 (Figure 6f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model simulations shown in Figure 6f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "71efa0c0-221d-491a-94ad-a802d863ffea",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C50",
+      "claim": "The lymph node, spleen, and lung showed higher fractions of cell lysis than the gut, bone marrow, and remainder.",
+      "claim_type": "EXPLICIT",
+      "source": "The lymph node, spleen, and lung showed higher fractions of cell lysis than the gut, bone marrow, and remainder (Figure 6g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model simulations shown in Figure 6g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "de31d5fa-e909-4b78-a835-56b7cc3f6f84",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C51",
+      "claim": "More than 45% of malignant cells in the system were lysed in the lymph nodes and around 30% were eradicated in the spleen.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 45% of malignant cells in the system were lysed in the lymph nodes and around 30% were eradicated in the spleen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by model simulations shown in Figure 6g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "29aebbe8-6f13-44e5-b8d2-771cba070657",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C52",
+      "claim": "The lytic fraction in the bone marrow was lower under treatment than at baseline, indicating poor tumor lysis efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the lytic fraction in the bone marrow was lower under treatment than at baseline (Figure 6g), indicating poor tumor lysis efficiency.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model simulations shown in Figure 6g.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "e9b26d69-74b4-4f44-ba70-0d7a17e59f3d",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C53",
+      "claim": "In high responders (OS >30 months, MT103-206), over 99% of B cells were eradicated, particularly in organs with high predicted lysis (lymph nodes and spleen).",
+      "claim_type": "EXPLICIT",
+      "source": "In high responders (OS >30 months, MT103-206), over 99% of B cells were eradicated, particularly in organs with high predicted lysis (lymph nodes and spleen).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by model simulations shown in Figure 6h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "28e58782-d124-4d2b-99d2-22034b3a302c",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C54",
+      "claim": "In the bone marrow, a small fraction of B cells survived that exhibited considerably lower CD19 expression than the original cell population.",
+      "claim_type": "EXPLICIT",
+      "source": "In the bone marrow, a small fraction of B cells survived that exhibited considerably lower CD19 expression than the original cell population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by model simulations shown in Figure 6h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "d889cafd-7ed8-44bf-b8ba-e1c445a322c1",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C55",
+      "claim": "The surviving cell populations gradually repopulated the bone marrow, leading to B cell rebound and eventually patient relapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, the surviving cell populations gradually repopulated the bone marrow, leading to B cell rebound and eventually patient relapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on model simulations shown in Figure 6h.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "d10dd7e4-08e2-4545-b89a-c238faf885ea",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C56",
+      "claim": "Sensitivity analyses confirmed that baseline tumor burden, drug concentration, cytotoxic T cell infiltration, and CD19 expression were critical to patient response.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensitivity analyses confirmed that baseline tumor burden, drug concentration, cytotoxic T cell infiltration, and CD19 expression were critical to patient response (Figure 6i - l).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sensitivity analyses shown in Figure 6i-l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "b40870f0-6ebf-40ee-9d86-2b7a08fbe681",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C57",
+      "claim": "Tumor-killing profiles were highly dependent upon tumor growth rate and baseline T cell abundance under the approved dose and scheme 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the approved dose (i.e. the high dose) and scheme 1, tumor-killing profiles were highly dependent upon tumor growth rate and baseline T cell abundance (Figure 7b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model simulations shown in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "4be6a67a-1a11-40ba-89e1-94579c6d6c5b",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C58",
+      "claim": "For slow-growing tumors with low T cell baseline, the medium dose showed a comparable tumor-killing effect but resulted in less CD19 evolution than the high dose.",
+      "claim_type": "EXPLICIT",
+      "source": "For slow-growing tumors with low T cell baseline, the medium dose showed a comparable tumor-killing effect but resulted in less CD19 evolution than the high dose (Figure 7c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model simulations shown in Figure 7c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "a2eae225-8cd0-4b44-bb21-d1002c936901",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C59",
+      "claim": "For slow-growing tumors with high T cell abundance, the high dose exhibited almost complete tumor control and much less CD19 loss than the medium dose.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for slow-growing tumors with high T cell abundance, the high dose exhibited almost complete tumor control and much less CD19 loss than the medium dose (Figure 7d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model simulations shown in Figure 7d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "410985c9-587b-4cee-ae9e-f000291aaa57",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C60",
+      "claim": "For fast-growing tumors, CD19 loss was significant, regardless of dose and regimen.",
+      "claim_type": "EXPLICIT",
+      "source": "For fast-growing tumors, CD19 loss was significant, regardless of dose and regimen (Figure 7e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model simulations shown in Figure 7e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "12c40b54-ad99-410d-a90f-cb3e30bce699",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C61",
+      "claim": "The approved dose or regimen was suboptimal for most slow-growing tumors; rather, the medium dose or dosing scheme 2 could reach similar efficacy with slower CD19 evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the approved dose or regimen was suboptimal for most slow-growing tumors; rather, the medium dose or dosing scheme 2 could reach similar efficacy with slower CD19 evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by model simulations shown in Figure 7f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "7bcc81f8-cbe2-400d-ada4-843e01945837",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C62",
+      "claim": "Cell-cell encounter is the first, and in many instances, the rate-limiting step to IS formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-cell encounter is the first, and in many instances, the rate-limiting step to IS formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the model structure and results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "92d15137-c27e-44f4-8b2e-7fabf5d2897d",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C63",
+      "claim": "Cell encounter probability could become the rate-limiting step for IS formation when the target cell density is sufficiently low that effector cells have little chance of encountering target cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell encounter probability could become the rate-limiting step for IS formation when the target cell density is sufficiently low that effector cells have little chance of encountering target cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the model structure and results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "073f9702-808b-4a94-9384-a1a7e38f1066",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C64",
+      "claim": "When effector cell density is low, as in the bone marrow, tumor cells have a higher chance of surviving for long enough to develop immune evasion mechanisms, leading to treatment resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "When effector cell density is low, as in the bone marrow, tumor cells have a higher chance of surviving for long enough to develop immune evasion mechanisms, leading to treatment resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on model simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "e406469d-f295-4e3c-a6a1-193d1b37d89e",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C65",
+      "claim": "When target cell density is extremely high within an organ, target cell lysis may be compromised by insufficient antibody concentrations at clinically utilized doses.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, when target cell density is extremely high within an organ, target cell lysis may be compromised by insufficient antibody concentrations at clinically utilized doses (Figure 5e and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model simulations shown in Figure 5e and f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "a6686037-5bb8-4bdb-98bb-a8c1cd394d1e",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C66",
+      "claim": "The efficacy of blinatumomab is much higher in patients with relatively low tumor burden.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with clinical observations that the efficacy of blinatumomab is much higher in patients with relatively low tumor burden (Topp et al., 2015; Viardot and Bargou, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clinical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "6f44c383-3b71-4188-a5f9-5f9f85007834",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C67",
+      "claim": "Many studies have reported a bell-shaped drug concentration-response profile for BiTE immunotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Many studies have reported a bell-shaped drug concentration-response profile for BiTE immunotherapy (Betts et al., 2019; Douglass et al., 2013; Schropp et al., 2019; Van De Vyver et al., 2021), with the primary mechanism underlying the phenomenon being the oversaturation of T cell receptors at high BiTE concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "8cf2c003-830e-46ff-a98b-50deb5ef51be",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C68",
+      "claim": "The theoretical model predicts a bell-shape concentration \u2013 IS curve, but the predicted curve peaked at higher antibody concentrations if not including the possibility of CD3 down-regulation by effector cells upon antibody engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "The theoretical model reported herein also predicts a bell-shape concentration \u2013 IS curve, but the predicted curve peaked at higher antibody concentrations if not including the possibility of CD3 down-regulation by effector cells upon antibody engagement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on model simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "b3b20bc7-69fe-49cf-a4f9-477d9ef819aa",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C69",
+      "claim": "CD19 expression influenced cell lysis to a similar extent as target cell density when both factors were low.",
+      "claim_type": "EXPLICIT",
+      "source": "CD19 expression influenced cell lysis to a similar extent as target cell density when both factors were low (Figure 5\u2014figure supplement 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model simulations shown in Figure 5\u2014figure supplement 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "62d5c3fb-c7d9-4a01-a70b-112916687aac",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C70",
+      "claim": "An increase of CD19 expression beyond 3 \u00d7 10^5 receptors/cell did not further improve cell lysis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, an increase of CD19 expression beyond 3 \u00d7 105 receptors/cell did not further improve cell lysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by model simulations shown in Figure 5\u2014figure supplement 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "6f8cb08f-4dfc-477b-bc3d-0330a8380873",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C71",
+      "claim": "Target cell densities have a bidirectional effect on cell lysis: at low levels, escalating cell densities enhanced the probability of cell-cell encounter, while at high target cell densities, BiTE concentrations were insufficient to mediate meaningful IS formation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, target cell densities seemed to have a bidirectional effect on cell lysis. At low levels, escalating cell densities enhanced the probability of cell-cell encounter, while at high target cell densities, BiTE concentrations were insufficient to mediate meaningful IS formation, resulting in fewer cell-cell adhesion events and less cell lysis (Figure 5\u2014figure supplement 3a, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model simulations shown in Figure 5\u2014figure supplement 3a and b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "9603586b-8ab2-4202-990d-33abe8ce0885",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C72",
+      "claim": "Target cells with lower antigen expression had a lower probability of adhesion to T cells and thus a greater chance of survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Target cells with lower antigen expression had a lower probability of adhesion to T cells and thus a greater chance of survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the model structure and results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "dcad0fe0-614c-4a2f-97b3-7ac1e427b757",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C73",
+      "claim": "Tumor evolution is an inevitable consequence in treatment, and the stronger the therapeutic selection pressure, the more tumor cell populations evolve away from their pretreatment phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "The theoretical models suggest that tumor evolution is an inevitable consequence in treatment, and that the stronger the therapeutic selection pressure, the more tumor cell populations evolve away from their pretreatment phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on model simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "0dd01852-7a04-4478-a659-f747f219ff33",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C74",
+      "claim": "Antigen escape is a common mechanism of resistance to T cell-based immunotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Antigen escape is a common mechanism of resistance to T cell-based immunotherapy (Aldoss et al., 2017; Mejstr\u00edkov\u00e1 et al., 2017; Samur et al., 2021; Topp et al., 2014; Xu et al., 2019); however, the speed of tumor evolution toward antigen escape remains hard to predict.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "97cbf1c1-e720-4414-b291-eec3e3a19589",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C75",
+      "claim": "Patients under BiTE treatment often have relapses first detected in the bone marrow.",
+      "claim_type": "EXPLICIT",
+      "source": "This speculation is consistent with the clinical observation that patients under BiTE treatment often have relapses first detected in the bone marrow (Locatelli et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to clinical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "8ca5ca15-9a9b-4309-846e-369b801aa08c",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C76",
+      "claim": "The inadequate tumor lysis in the bone marrow might also be explained by tissue-specific differences in chemokine gradients that hinder cell-cell interaction and adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the inadequate tumor lysis in the bone marrow might also be explained by tissue-specific differences in chemokine gradients that hinder cell-cell interaction and adhesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about alternative mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "00992cf6-c26d-4986-b672-eeb947a57b60",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C77",
+      "claim": "Tumor baseline characteristics, including tumor growth rate, CD19 expression, and T cell abundance, greatly influenced tumor-killing pharmacodynamics, tumor evolution, and consequentially, the ideal dosing regimen.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that tumor baseline characteristics, including tumor growth rate, CD19 expression, and T cell abundance, greatly influenced tumor-killing pharmacodynamics, tumor evolution, and consequentially, the ideal dosing regimen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by model simulations shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "666a15c9-9f1c-47a5-b811-feebe88c06ff",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C78",
+      "claim": "The clinically approved dose and regimen might become suboptimal for most slow-growing tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "The clinically approved dose and regimen might become suboptimal for most slow-growing tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by model simulations shown in Figure 7f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "4a72ca85-7932-4f8a-8be3-cdf8c22c78c3",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C79",
+      "claim": "For slow-growing tumors with sufficient T cells, the high dose with regimens 1 or 2 could cause nearly complete tumor eradication, thereby resulting in negligible selection and limiting the total population size remaining for evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "For slow-growing tumors with sufficient T cells (Figure 7d and f), the high dose with regimens 1 or 2 could cause nearly complete tumor eradication, thereby resulting in negligible selection and limiting the total population size remaining for evolution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model simulations shown in Figure 7d and f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "efc08123-368b-47e5-bc7d-465902fd0e3d",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C80",
+      "claim": "Faster and greater reductions in population size conferred by high doses might reduce the chance of evolutionary rescue for slow-growing tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Faster and greater reductions in population size conferred by high doses might, therefore, reduce the chance of evolutionary rescue for slow-growing tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on model simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "f0d313ab-f367-404e-b8f8-cf291c006a0e",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C81",
+      "claim": "Jurkat (Clone E6-1) and Raji cells were obtained from ATCC and maintained in RPMI1640 supplemented with 10\u201320% fetal bovine serum (FBS) and 1% penicillin-streptomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Jurkat (Clone E6-1) and Raji cells were obtained from ATCC and maintained in RPMI1640 supplemented with 10\u201320% fetal bovine serum (FBS) and 1% penicillin-streptomycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "fe4dd66d-a550-43ab-9392-85aed5396ff6",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C82",
+      "claim": "Cell populations with high (H), medium (M), and low (L) antigen expression were sorted based on natural expression levels, without any genetic engineering.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell populations with high (H), medium (M), and low (L) antigen expression were sorted based on natural expression levels, without any genetic engineering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "0084893a-58b3-4129-9ced-9f5caaac40ee",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C83",
+      "claim": "Antibody-antigen binding to form binary complexes (BiTE-CD3 and BiTE-CD19) was considered a 3D process among free molecules with rapid equilibrium assumed.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibody-antigen binding to form binary complexes (BiTE-CD3 and BiTE-CD19) was considered a 3D process among free molecules. Rapid equilibrium was assumed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a modeling assumption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "94253ab9-91f1-43f0-9147-2e312a7e9dae",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C84",
+      "claim": "CD3 down-regulation on effector cells was considered in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "CD3 down-regulation on effector cells was also considered in our model (Lanzavecchia et al., 1999; San Jos\u00e9 et al., 2000; Sousa and Carneiro, 2000; Utzny et al., 2006; Valitutti et al., 1995; Viola et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a modeling feature supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "e9541137-69fb-4e2b-9a7f-e26ae0289a42",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C85",
+      "claim": "The rate of CD3 down-regulation was modeled as a function of surface binary complex abundance ([AY]'), which reached a steady state around 1 hr incubation.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of CD3 down-regulation was modeled as a function of surface binary complex abundance ([AY]'), which was described by an empirical equation that reached a steady state around 1 hr incubation, in line with the literature (Appendix 1.2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a modeling feature supported by literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "5db2d08f-20a9-4599-9d77-9860544e93c2",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C86",
+      "claim": "CD19 internalization was introduced at a rate constant of 0.002 /min.",
+      "claim_type": "EXPLICIT",
+      "source": "CD19 internalization was also introduced at a rate constant of 0.002 /min (Du et al., 2008; Ingle et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a modeling parameter supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "f75dbfce-c5b3-4808-ad68-7d6d8c86b979",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C87",
+      "claim": "Effector cells were assumed to follow Brownian motion and encounter target cells at a probability proportional to cell density and motility in the incubation environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Free effector cells were assumed to follow Brownian motion (Celli et al., 2012) and encounter target cells at a probability proportional to cell density and motility in the incubation environment (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a modeling assumption supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "3b3f3803-670e-4c4b-9dff-e212e6559a68",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C88",
+      "claim": "Cell-cell complexes with a high number of ternary complexes would have a higher probability to adhering and eventually forming IS.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-cell complexes with a high number of ternary complexes would, therefore, have a higher probability to adhering and eventually forming IS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a modeling feature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "e93bb684-93b4-46ae-9daa-4a12ce5d76ce",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C89",
+      "claim": "Ternary complex formation on opposing cells was assumed to be restricted to the cell membrane (2D binding).",
+      "claim_type": "EXPLICIT",
+      "source": "Ternary complex formation on opposing cells was assumed to be restricted to the cell membrane (2D binding; Appendix 1\u2014figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a modeling assumption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "87d2e05f-8554-4cd3-9664-1c54f6a24b94",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C90",
+      "claim": "Cells that failed to adhere upon encounter (futile contact) were assumed to diffuse away and become free to repeat the same process.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells that failed to adhere upon encounter (futile contact) were assumed to diffuse away and become free to repeat the same process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a modeling assumption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "2be7d259-5a45-41dc-97b1-f2b13b78166b",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C91",
+      "claim": "Two cells engaged in a typical IS were considered capable of engaging additional effector or target cells to become an IS variant.",
+      "claim_type": "EXPLICIT",
+      "source": "Two cells engaged in a typical IS were also considered capable of engaging additional effector or target cells to become an IS variant, per our experimental observations (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a modeling feature based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "01522cbd-68fc-4357-a4f9-adf4ce5db312",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "claim_id": "C92",
+      "claim": "The model considered IS variants comprising up to four cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The model considered IS variants comprising up to four cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a modeling feature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4012f8e0-72d2-464f-a7a1-269826677e25",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors establish the motivation for their work by noting that while IS formation is critical for T cell-based immunotherapies, the population-level dynamics of IS formation remain poorly defined, and no theoretical framework exists to characterize these dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C15 establish well-supported background knowledge and identify a clear gap in the field. These claims are based on established immunology principles (C1, C2) and accurate assessment of the current state of knowledge (C3, C15), providing strong justification for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "70ca81fb-c0ee-40a3-9222-069da7304c2b",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors developed an experimental system using CD3+ Jurkat effector cells and CD19+ Raji target cells, sorted into subpopulations based on antigen expression, and quantified IS formation including typical IS and variants using imaging flow cytometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 and C81-C82 describe the experimental setup with appropriate detail. The use of well-characterized cell lines, flow cytometry-based sorting, and imaging flow cytometry for IS quantification represents a sound methodological approach supported by the figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "2b9ca90b-3abd-4959-a656-2663478bf53a",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors developed a base model incorporating three fundamental components: 3D antibody-antigen binding to form binary complexes, cell-cell encounter probability based on Brownian motion, and 2D binding-driven cell-cell adhesion to form ternary complexes, with additional features including CD3 downregulation, CD19 internalization, and IS variant formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19 and C83-C92 describe a mechanistically detailed model structure with appropriate assumptions grounded in the literature. The model incorporates both molecular-scale (3D/2D binding) and cellular-scale (encounter, adhesion) processes, representing a novel integration supported by citations to relevant prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "4cae758f-934c-4767-91ca-246686268a87",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The base model produces experimentally consistent predictions across multiple conditions, accurately predicting the bell-shaped relationship between BiTE concentration and IS formation, time-dependent IS formation dynamics, differential effects of CD3 vs CD19 expression, cell density effects, E:T ratio effects, and IS variant formation patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C20-C26, C29, C31 demonstrate strong agreement between model predictions and experimental data across diverse conditions (Figure 3). The model captures complex phenomena including the bell-shaped dose-response and correctly predicts relative contributions of different factors, providing robust validation of the modeling approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "7ed8aed4-6470-4c75-bd02-e37ff5a8cf10",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "IS variants (ETE, ETT, ETET, etc.) comprised 12-25% of total IS under most conditions, with ETE and ETT being most frequent. The fraction of IS variants correlated positively with total IS abundance, and the E:T ratio in IS variants was approximately 1.1, slightly favoring effector cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 and C30-C33 present quantitative observations about IS variant formation that are well-supported by experimental data in Figure 4. The model accurately predicts these variant patterns, demonstrating that the framework captures multi-cell engagement dynamics beyond simple pairwise interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "7b7771cf-c94a-4a78-8711-67fa355f0af5",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The in vitro model incorporating serial engagement predicts that target cell lysis increases considerably over 72 hours and that tumor evolution toward low CD19-expressing populations (antigen escape) occurs, with the speed of evolution increasing at higher BiTE concentrations and accelerating over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 describe predictions from the extended in vitro model that are consistent with clinical observations of antigen escape (C36). The mechanistic basis (lower CD19 expression reduces engagement probability) is sound, though the model predictions would benefit from direct experimental validation of the evolutionary dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "577129f9-f46e-4235-860c-273804480750",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The model predicts that effector cell density critically determines target cell lysis, with higher lysis in lymph nodes and spleen due to abundant effector cells, while the bone marrow shows restricted lysis and may serve as a sanctuary site for tumor evolution and treatment resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 and C7 present model predictions about organ-specific lysis patterns based on known T cell distributions. While the predictions are mechanistically sound and consistent with clinical observations of bone marrow relapse (C75), these remain computational predictions that would benefit from direct experimental validation in vivo.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "ba25bd16-16e0-4a7e-86d8-082497c367b7",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The in vivo model assumes blood serves only as a trafficking route without mediating IS formation, supported by experimental observations that negligible IS forms under blood flow shear stress, though pre-formed IS are stable under shear stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 describe a modeling assumption validated by experimental data (Figure 6\u2014figure supplement 1). The shear stress experiments appropriately test the assumption, though the range of shear stresses tested and the in vitro nature of these experiments represent limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "3acf797e-974a-4a90-81fe-cb2f307c3f89",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The in vivo model, incorporating patient-specific parameters including BiTE dosing regimens and T cell proliferation profiles, reasonably predicted B-cell depletion profiles in patients across multiple clinical trials and could distinguish between responding and non-responding patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C46-C48 demonstrate that the model predictions align with clinical data from multiple trials (Figure 6b-e). The ability to account for patient-specific T cell dynamics and distinguish responders from non-responders represents strong clinical validation, though the model is fitted to these data rather than making prospective predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "9e8f9a53-b5dd-4d2b-b9e2-6162dbc07524",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The in vivo model predicts evolution toward low CD19-expressing populations in non-responders, differential cell lysis across organs (>45% in lymph nodes, ~30% in spleen, poor efficiency in bone marrow), and that surviving low-CD19 cells in bone marrow can repopulate and cause relapse even in high responders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C55 present model predictions about spatial heterogeneity in treatment response and tumor evolution. While mechanistically sound and consistent with clinical observations, these predictions represent model outputs rather than directly validated findings. The relapse mechanism (C55) is inferred rather than demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "92da7df9-fedc-4f6f-97d9-b49a6f191d8e",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Sensitivity analyses confirmed that baseline tumor burden, drug concentration, cytotoxic T cell infiltration, and CD19 expression are critical determinants of patient response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 is supported by systematic sensitivity analyses shown in Figure 6i-l. These analyses appropriately explore the parameter space and identify key drivers of treatment response, providing insight into sources of patient heterogeneity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "a03999bf-fe56-4cb9-a863-32cc26592c9f",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The model predicts that optimal dosing regimens depend on tumor growth rate, CD19 expression, and T cell abundance, with the clinically approved dose potentially suboptimal for slow-growing tumors. For slow-growing tumors with low T cells, medium doses achieve comparable efficacy with less CD19 evolution, while high doses are needed for fast-growing tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6, C8, C57-C61, C77-C80 present model-based dosing recommendations that are mechanistically reasonable but lack prospective clinical validation. The predictions about optimal dosing represent computational simulations that would require clinical trials to validate. The claim that approved dosing is 'suboptimal' (C61, C78) is strong given the lack of prospective validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "4d30192e-13df-49d8-9d4e-e8060ff3bc58",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Cell-cell encounter is identified as a rate-limiting step for IS formation, particularly when target cell density is low or effector cell density is insufficient. When target cell density is extremely high, insufficient antibody concentration can limit IS formation, consistent with clinical observations of better efficacy at low tumor burden.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C66 present mechanistic insights from the model that are well-supported by the model structure and consistent with clinical observations (C66). The identification of encounter as rate-limiting under certain conditions represents an important conceptual contribution, though C62-C64 are inferences rather than direct measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "96df0d72-3217-4d6a-a966-23b36d310b13",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The model predicts a bell-shaped concentration-response curve consistent with literature reports, but the curve peaks at higher concentrations when CD3 downregulation is not included, highlighting the importance of this mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 compare the model predictions to established literature findings and demonstrate the importance of including CD3 downregulation. This represents appropriate model validation and mechanistic insight, though C68 is based on model simulations rather than experimental data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "d47e08f0-5798-4053-84cd-a710aee3a115",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "CD19 expression and target cell density have distinct effects on cell lysis: CD19 expression plateaus in effect beyond 3\u00d710^5 receptors/cell, while target cell density shows a bidirectional effect, enhancing encounter probability at low densities but becoming limited by BiTE concentration at high densities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 describe model predictions that distinguish molecular-scale (CD19 expression) from cellular-scale (cell density) effects. These predictions are mechanistically sound and highlight the importance of multi-scale modeling, though they represent computational findings rather than experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    },
+    {
+      "id": "f02521ef-23ff-4b09-9ec5-52e841c8d08c",
+      "content_id": "b445207f-0dc2-4f8d-8fab-9adf845dd2be",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The model predicts that tumor evolution toward antigen escape is inevitable, with stronger therapeutic pressure driving faster evolution. This is consistent with clinical observations that antigen escape is a common resistance mechanism and that relapses are often first detected in the bone marrow, though alternative mechanisms like chemokine gradients may also contribute.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 connect model predictions to established clinical phenomena (C74-C75), providing face validity. However, C73 makes a strong claim about inevitability based on model simulations, and C76 appropriately acknowledges alternative mechanisms. The predictions would benefit from prospective validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:45:17.186464Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "939ed847-ff46-416f-99ca-af30060cdc3b",
+      "result_id": "4012f8e0-72d2-464f-a7a1-269826677e25"
+    },
+    {
+      "claim_id": "86a91732-c58e-4e88-8cab-e60d9bca8124",
+      "result_id": "4012f8e0-72d2-464f-a7a1-269826677e25"
+    },
+    {
+      "claim_id": "728b9fcf-e22d-408d-a19c-74d6d1c703ae",
+      "result_id": "4012f8e0-72d2-464f-a7a1-269826677e25"
+    },
+    {
+      "claim_id": "5eb632c8-c0a3-4ad0-9a51-f5a3a5c17887",
+      "result_id": "4012f8e0-72d2-464f-a7a1-269826677e25"
+    },
+    {
+      "claim_id": "105a7ee7-2b95-4161-bcd8-3dd91aa61711",
+      "result_id": "70ca81fb-c0ee-40a3-9222-069da7304c2b"
+    },
+    {
+      "claim_id": "f432e9d4-efca-4db7-8e7a-666236efd9b0",
+      "result_id": "70ca81fb-c0ee-40a3-9222-069da7304c2b"
+    },
+    {
+      "claim_id": "4bbda3d0-df1d-4348-ab9a-d20984197a6c",
+      "result_id": "70ca81fb-c0ee-40a3-9222-069da7304c2b"
+    },
+    {
+      "claim_id": "f0d313ab-f367-404e-b8f8-cf291c006a0e",
+      "result_id": "70ca81fb-c0ee-40a3-9222-069da7304c2b"
+    },
+    {
+      "claim_id": "fe4dd66d-a550-43ab-9392-85aed5396ff6",
+      "result_id": "70ca81fb-c0ee-40a3-9222-069da7304c2b"
+    },
+    {
+      "claim_id": "813c41ce-8fcb-4bec-a778-bf503bf4bf7a",
+      "result_id": "2b9ca90b-3abd-4959-a656-2663478bf53a"
+    },
+    {
+      "claim_id": "0084893a-58b3-4129-9ced-9f5caaac40ee",
+      "result_id": "2b9ca90b-3abd-4959-a656-2663478bf53a"
+    },
+    {
+      "claim_id": "94253ab9-91f1-43f0-9147-2e312a7e9dae",
+      "result_id": "2b9ca90b-3abd-4959-a656-2663478bf53a"
+    },
+    {
+      "claim_id": "e9541137-69fb-4e2b-9a7f-e26ae0289a42",
+      "result_id": "2b9ca90b-3abd-4959-a656-2663478bf53a"
+    },
+    {
+      "claim_id": "5db2d08f-20a9-4599-9d77-9860544e93c2",
+      "result_id": "2b9ca90b-3abd-4959-a656-2663478bf53a"
+    },
+    {
+      "claim_id": "f75dbfce-c5b3-4808-ad68-7d6d8c86b979",
+      "result_id": "2b9ca90b-3abd-4959-a656-2663478bf53a"
+    },
+    {
+      "claim_id": "3b3f3803-670e-4c4b-9dff-e212e6559a68",
+      "result_id": "2b9ca90b-3abd-4959-a656-2663478bf53a"
+    },
+    {
+      "claim_id": "e93bb684-93b4-46ae-9daa-4a12ce5d76ce",
+      "result_id": "2b9ca90b-3abd-4959-a656-2663478bf53a"
+    },
+    {
+      "claim_id": "87d2e05f-8554-4cd3-9664-1c54f6a24b94",
+      "result_id": "2b9ca90b-3abd-4959-a656-2663478bf53a"
+    },
+    {
+      "claim_id": "2be7d259-5a45-41dc-97b1-f2b13b78166b",
+      "result_id": "2b9ca90b-3abd-4959-a656-2663478bf53a"
+    },
+    {
+      "claim_id": "01522cbd-68fc-4357-a4f9-adf4ce5db312",
+      "result_id": "2b9ca90b-3abd-4959-a656-2663478bf53a"
+    },
+    {
+      "claim_id": "1546e3a8-0b15-4b36-b280-68515152a303",
+      "result_id": "4cae758f-934c-4767-91ca-246686268a87"
+    },
+    {
+      "claim_id": "55f7d72a-5b42-47ac-ad2f-8687e71e25b9",
+      "result_id": "4cae758f-934c-4767-91ca-246686268a87"
+    },
+    {
+      "claim_id": "b3104d0f-8e1e-4639-9c90-0759de0e0395",
+      "result_id": "4cae758f-934c-4767-91ca-246686268a87"
+    },
+    {
+      "claim_id": "e178c69b-e42a-4330-a534-4f1ab150008b",
+      "result_id": "4cae758f-934c-4767-91ca-246686268a87"
+    },
+    {
+      "claim_id": "2b1356d8-b438-4410-b09e-b0218ab4a224",
+      "result_id": "4cae758f-934c-4767-91ca-246686268a87"
+    },
+    {
+      "claim_id": "c99609cc-d6a1-4f00-a440-26034c55d143",
+      "result_id": "4cae758f-934c-4767-91ca-246686268a87"
+    },
+    {
+      "claim_id": "227f15fe-1397-483f-af28-ce73ae32da86",
+      "result_id": "4cae758f-934c-4767-91ca-246686268a87"
+    },
+    {
+      "claim_id": "2611114e-5e2c-4f18-8d59-af6e1ecd5fd5",
+      "result_id": "4cae758f-934c-4767-91ca-246686268a87"
+    },
+    {
+      "claim_id": "ddd78c3f-db4a-4447-bf4a-2d9264582c7b",
+      "result_id": "4cae758f-934c-4767-91ca-246686268a87"
+    },
+    {
+      "claim_id": "25078774-d72f-46b6-9e1a-ab35c94f9a24",
+      "result_id": "4cae758f-934c-4767-91ca-246686268a87"
+    },
+    {
+      "claim_id": "42215b6e-1de2-4a83-b662-d4e54978b933",
+      "result_id": "7ed8aed4-6470-4c75-bd02-e37ff5a8cf10"
+    },
+    {
+      "claim_id": "a4038722-33b6-426c-b518-6c89f265d801",
+      "result_id": "7ed8aed4-6470-4c75-bd02-e37ff5a8cf10"
+    },
+    {
+      "claim_id": "eac632db-3239-4318-99a8-c43a9b64d851",
+      "result_id": "7ed8aed4-6470-4c75-bd02-e37ff5a8cf10"
+    },
+    {
+      "claim_id": "27014997-74c1-45df-bb8a-cc968a3f7c9b",
+      "result_id": "7ed8aed4-6470-4c75-bd02-e37ff5a8cf10"
+    },
+    {
+      "claim_id": "e76c7272-3e7f-4c71-b132-8df3bd361f62",
+      "result_id": "7ed8aed4-6470-4c75-bd02-e37ff5a8cf10"
+    },
+    {
+      "claim_id": "15d80768-0b38-40b1-9b0d-570485d7d817",
+      "result_id": "7b7771cf-c94a-4a78-8711-67fa355f0af5"
+    },
+    {
+      "claim_id": "52127688-57b1-4b4e-8308-b724d768aa87",
+      "result_id": "7b7771cf-c94a-4a78-8711-67fa355f0af5"
+    },
+    {
+      "claim_id": "3d54d3b3-96d3-42df-a034-12cbd1e8ae56",
+      "result_id": "7b7771cf-c94a-4a78-8711-67fa355f0af5"
+    },
+    {
+      "claim_id": "80cbad87-d2c9-44d3-843f-3b77d41b84c4",
+      "result_id": "7b7771cf-c94a-4a78-8711-67fa355f0af5"
+    },
+    {
+      "claim_id": "8315117c-406e-4824-a64f-b7451c3d4699",
+      "result_id": "7b7771cf-c94a-4a78-8711-67fa355f0af5"
+    },
+    {
+      "claim_id": "84f4e4e9-ef25-4cc5-ac4f-b9349e469a0d",
+      "result_id": "577129f9-f46e-4235-860c-273804480750"
+    },
+    {
+      "claim_id": "e9cd80cd-107d-4f30-8034-f1078c9ff3a3",
+      "result_id": "577129f9-f46e-4235-860c-273804480750"
+    },
+    {
+      "claim_id": "30d26f59-61c8-41b8-ac73-2f4904782bf0",
+      "result_id": "577129f9-f46e-4235-860c-273804480750"
+    },
+    {
+      "claim_id": "510c9949-c17d-4480-845a-21c02ed31c40",
+      "result_id": "577129f9-f46e-4235-860c-273804480750"
+    },
+    {
+      "claim_id": "31b682aa-0c54-41f8-b6fa-f195ff95fbde",
+      "result_id": "577129f9-f46e-4235-860c-273804480750"
+    },
+    {
+      "claim_id": "bcf10973-84f2-44d6-a713-79ff9b30893f",
+      "result_id": "ba25bd16-16e0-4a7e-86d8-082497c367b7"
+    },
+    {
+      "claim_id": "ce9f9e7d-85a3-4f09-b8a5-aab94c99ebb5",
+      "result_id": "ba25bd16-16e0-4a7e-86d8-082497c367b7"
+    },
+    {
+      "claim_id": "98defbe8-cc5b-4ee0-a06d-78d92e7f9db3",
+      "result_id": "ba25bd16-16e0-4a7e-86d8-082497c367b7"
+    },
+    {
+      "claim_id": "81cddfc5-a33c-4190-9bb1-702f68517b0d",
+      "result_id": "3acf797e-974a-4a90-81fe-cb2f307c3f89"
+    },
+    {
+      "claim_id": "5c9246c3-c2c9-4e9e-9261-fd04f35c86f8",
+      "result_id": "3acf797e-974a-4a90-81fe-cb2f307c3f89"
+    },
+    {
+      "claim_id": "4eca7f05-24c6-4f4f-873b-cc35be5ba0c1",
+      "result_id": "3acf797e-974a-4a90-81fe-cb2f307c3f89"
+    },
+    {
+      "claim_id": "92f61319-5510-4d01-ba87-7fc73a550534",
+      "result_id": "3acf797e-974a-4a90-81fe-cb2f307c3f89"
+    },
+    {
+      "claim_id": "cfbb7992-b06b-475f-ad2a-8ddf90cebb9e",
+      "result_id": "9e8f9a53-b5dd-4d2b-b9e2-6162dbc07524"
+    },
+    {
+      "claim_id": "71efa0c0-221d-491a-94ad-a802d863ffea",
+      "result_id": "9e8f9a53-b5dd-4d2b-b9e2-6162dbc07524"
+    },
+    {
+      "claim_id": "de31d5fa-e909-4b78-a835-56b7cc3f6f84",
+      "result_id": "9e8f9a53-b5dd-4d2b-b9e2-6162dbc07524"
+    },
+    {
+      "claim_id": "29aebbe8-6f13-44e5-b8d2-771cba070657",
+      "result_id": "9e8f9a53-b5dd-4d2b-b9e2-6162dbc07524"
+    },
+    {
+      "claim_id": "e9b26d69-74b4-4f44-ba70-0d7a17e59f3d",
+      "result_id": "9e8f9a53-b5dd-4d2b-b9e2-6162dbc07524"
+    },
+    {
+      "claim_id": "28e58782-d124-4d2b-99d2-22034b3a302c",
+      "result_id": "9e8f9a53-b5dd-4d2b-b9e2-6162dbc07524"
+    },
+    {
+      "claim_id": "d889cafd-7ed8-44bf-b8ba-e1c445a322c1",
+      "result_id": "9e8f9a53-b5dd-4d2b-b9e2-6162dbc07524"
+    },
+    {
+      "claim_id": "d10dd7e4-08e2-4545-b89a-c238faf885ea",
+      "result_id": "92da7df9-fedc-4f6f-97d9-b49a6f191d8e"
+    },
+    {
+      "claim_id": "ffa72845-891c-4e87-947c-6ebf0fa3eb02",
+      "result_id": "a03999bf-fe56-4cb9-a863-32cc26592c9f"
+    },
+    {
+      "claim_id": "7dc9af5c-8529-4bf6-9b58-c019847c9608",
+      "result_id": "a03999bf-fe56-4cb9-a863-32cc26592c9f"
+    },
+    {
+      "claim_id": "b40870f0-6ebf-40ee-9d86-2b7a08fbe681",
+      "result_id": "a03999bf-fe56-4cb9-a863-32cc26592c9f"
+    },
+    {
+      "claim_id": "4be6a67a-1a11-40ba-89e1-94579c6d6c5b",
+      "result_id": "a03999bf-fe56-4cb9-a863-32cc26592c9f"
+    },
+    {
+      "claim_id": "a2eae225-8cd0-4b44-bb21-d1002c936901",
+      "result_id": "a03999bf-fe56-4cb9-a863-32cc26592c9f"
+    },
+    {
+      "claim_id": "410985c9-587b-4cee-ae9e-f000291aaa57",
+      "result_id": "a03999bf-fe56-4cb9-a863-32cc26592c9f"
+    },
+    {
+      "claim_id": "12c40b54-ad99-410d-a90f-cb3e30bce699",
+      "result_id": "a03999bf-fe56-4cb9-a863-32cc26592c9f"
+    },
+    {
+      "claim_id": "00992cf6-c26d-4986-b672-eeb947a57b60",
+      "result_id": "a03999bf-fe56-4cb9-a863-32cc26592c9f"
+    },
+    {
+      "claim_id": "666a15c9-9f1c-47a5-b811-feebe88c06ff",
+      "result_id": "a03999bf-fe56-4cb9-a863-32cc26592c9f"
+    },
+    {
+      "claim_id": "4a72ca85-7932-4f8a-8be3-cdf8c22c78c3",
+      "result_id": "a03999bf-fe56-4cb9-a863-32cc26592c9f"
+    },
+    {
+      "claim_id": "efc08123-368b-47e5-bc7d-465902fd0e3d",
+      "result_id": "a03999bf-fe56-4cb9-a863-32cc26592c9f"
+    },
+    {
+      "claim_id": "7bcc81f8-cbe2-400d-ada4-843e01945837",
+      "result_id": "4d30192e-13df-49d8-9d4e-e8060ff3bc58"
+    },
+    {
+      "claim_id": "92d15137-c27e-44f4-8b2e-7fabf5d2897d",
+      "result_id": "4d30192e-13df-49d8-9d4e-e8060ff3bc58"
+    },
+    {
+      "claim_id": "073f9702-808b-4a94-9384-a1a7e38f1066",
+      "result_id": "4d30192e-13df-49d8-9d4e-e8060ff3bc58"
+    },
+    {
+      "claim_id": "e406469d-f295-4e3c-a6a1-193d1b37d89e",
+      "result_id": "4d30192e-13df-49d8-9d4e-e8060ff3bc58"
+    },
+    {
+      "claim_id": "a6686037-5bb8-4bdb-98bb-a8c1cd394d1e",
+      "result_id": "4d30192e-13df-49d8-9d4e-e8060ff3bc58"
+    },
+    {
+      "claim_id": "6f44c383-3b71-4188-a5f9-5f9f85007834",
+      "result_id": "96df0d72-3217-4d6a-a966-23b36d310b13"
+    },
+    {
+      "claim_id": "8cf2c003-830e-46ff-a98b-50deb5ef51be",
+      "result_id": "96df0d72-3217-4d6a-a966-23b36d310b13"
+    },
+    {
+      "claim_id": "b3b20bc7-69fe-49cf-a4f9-477d9ef819aa",
+      "result_id": "d47e08f0-5798-4053-84cd-a710aee3a115"
+    },
+    {
+      "claim_id": "62d5c3fb-c7d9-4a01-a70b-112916687aac",
+      "result_id": "d47e08f0-5798-4053-84cd-a710aee3a115"
+    },
+    {
+      "claim_id": "6f8cb08f-4dfc-477b-bc3d-0330a8380873",
+      "result_id": "d47e08f0-5798-4053-84cd-a710aee3a115"
+    },
+    {
+      "claim_id": "9603586b-8ab2-4202-990d-33abe8ce0885",
+      "result_id": "f02521ef-23ff-4b09-9ec5-52e841c8d08c"
+    },
+    {
+      "claim_id": "dcad0fe0-614c-4a2f-97b3-7ac1e427b757",
+      "result_id": "f02521ef-23ff-4b09-9ec5-52e841c8d08c"
+    },
+    {
+      "claim_id": "0dd01852-7a04-4478-a659-f747f219ff33",
+      "result_id": "f02521ef-23ff-4b09-9ec5-52e841c8d08c"
+    },
+    {
+      "claim_id": "97cbf1c1-e720-4414-b291-eec3e3a19589",
+      "result_id": "f02521ef-23ff-4b09-9ec5-52e841c8d08c"
+    },
+    {
+      "claim_id": "8ca5ca15-9a9b-4309-846e-369b801aa08c",
+      "result_id": "f02521ef-23ff-4b09-9ec5-52e841c8d08c"
+    }
+  ],
+  "comparisons": []
+}

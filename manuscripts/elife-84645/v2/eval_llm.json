@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The authors demonstrate that the disordered intracellular domain of PRLR, PI(4,5)P2, and the FERM-SH2 domain of JAK2 form a co-structure that leads to PI(4,5)P2 accumulation at the transmembrane helix interface. This co-structure arranges the membrane-proximal disordered region into an extended structure, and mutations of residues interacting with PI(4,5)P2 negatively affect STAT5 activation. The authors propose this co-structure enables signal relay from extracellular to intracellular domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 are supported by converging evidence from NMR spectroscopy (C7, C88-C99), MD simulations (C5, C55-C62, C100-C114), and cellular signaling experiments with mutants (C6, C69, C137-C149). The integrative approach combining multiple experimental and computational methods provides strong support for co-structure formation and its functional importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C63",
+      "C82",
+      "C87",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The co-structure exists in different orientational states, including a Y-shaped state (states 1-3) and a Flat state (state 4), which may represent functionally relevant active and inactive conformations. The Y state exposes residues important for dimerization and activation, while the Flat state hides these regions. States 5 and 6 appear functionally irrelevant based on structural incompatibility with full-length JAK2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the MD simulations clearly identify different orientational states (C126-C135), the functional interpretation that these represent active/inactive states is speculative (C9, C63, C87, C136). The structural data support the existence of different states, but direct experimental validation of their functional roles in signaling regulation is lacking. Further experiments are needed to confirm the proposed regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "LID1 of PRLR-ICD binds PI(4,5)P2 with the primary interaction site in the intracellular juxtamembrane (ICJM) region (K235-C242) and BOX1 motif (K235-D256). NMR titration experiments show substantial intensity changes and resonance disappearance in this region upon C8-PI(4,5)P2 binding. CD spectroscopy demonstrates that PI(4,5)P2 binding induces formation of an extended structure in the ICJM region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C99 are well-supported by NMR titration data (C88-C89) and CD spectroscopy (C92-C94). The identification of the ICJM as the primary PI(4,5)P2 binding site (C90) is a reasonable interpretation of the NMR intensity changes. The CD data clearly demonstrate structure formation upon lipid binding (C93-C94, C99), consistent with the proposed extended structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "MD simulations show that the ICJM and BOX1 regions interact with lipids via hydrophobic interactions involving membrane penetration, while positively charged residues of the KIK motif (K251, K253) establish ionic interactions with PI(4,5)P2. PI(4,5)P2 spontaneously accumulates around the TMD forming microdomains, with high specificity over POPS. The simulations correlate well with NMR data and show that residues involved in PI(4,5)P2 binding overlap with JAK2 binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C114 are supported by extensive MD simulation data showing protein-lipid contacts, PI(4,5)P2 accumulation, and density maps (C103-C105). The correlation between simulation predictions and NMR data (C110) validates the computational approach. The use of both Martini2 and Martini3 force fields with modified protein-water interactions strengthens confidence in the results, though force field limitations are acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "MD simulations demonstrate that PI(4,5)P2 is essential for membrane binding of the JAK2-FERM-SH2:PRLR-ICD complex. With PI(4,5)P2 present (10%), rapid binding occurred in all simulations reaching 97% saturation, while only POPS (70:30 POPC:POPS) was insufficient to sustain binding in most systems. The complex maintains similar protein-lipid contact patterns as observed for individual proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60, C117-C123 are supported by systematic MD simulations comparing different lipid compositions (C120-C121). The dramatic difference in binding frequency between membranes with and without PI(4,5)P2 (3/8 vs 16/16 systems) provides strong computational evidence for PI(4,5)P2 requirement. However, these are computational predictions that would benefit from experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Cellular experiments with PRLR mutants show that both KxK motifs and connecting hydrophobic residues are important for PI(4,5)P2 interaction, membrane localization, and JAK2/STAT5 signaling. The K4G, K4E, and \u03c64G variants showed significant reductions in membrane localization and STAT5 activation, while the GAG variant had minimal effects. Individual KxK motif mutations (K2E251, K2E262) showed attenuated effects compared to the K4E double mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C149 are supported by fluorescence microscopy data (C137-C138) and western blot analysis (C139-C141) with appropriate statistical testing. The differential effects of mutations provide insight into the relative importance of different regions. However, the interpretation that effects arise from combined loss of PI(4,5)P2 and JAK2 binding (C147-C148) is complicated by the fact that mutations affect multiple interactions simultaneously, making separation of function difficult (C149).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "NMR characterization of TMD-ICD constructs in different membrane mimetics shows that most ICD residues remain disordered when tethered to the TMD. In DHPC micelles, TMD resonances of TMD and TMD-ICD variants are superimposable, suggesting the TMD conformation is unaffected by ICD presence. The first 10 residues of ICD (G236-P246) show line broadening, possibly due to micelle interaction or slower tumbling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 are supported by NMR data in multiple membrane environments (DHPC micelles and POPC SUVs). The superimposable TMD resonances (C46-C47) and secondary chemical shift analysis (C50-C51) provide clear evidence for the structural conclusions. The interpretation of line broadening (C48-C49) is appropriately cautious, acknowledging multiple possible explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "L224 in the F2 lobe of JAK2 anchors into the membrane only in the Y state and not in the Flat state. Prior work cited shows that L224E mutation causes changes in orientation, loss of dimerization, and loss of JAK2/STAT5 phosphorylation, supporting the functional relevance of complex orientation relative to the membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by MD simulation data showing differential L224 membrane contacts between states. The functional relevance (C66) is supported by citation to Wilmes et al., 2020 (C65), which provides experimental evidence linking L224 to function. This represents good integration of computational predictions with prior experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C71",
+      "C74",
+      "C86",
+      "C148"
+    ],
+    "result": "The authors propose that PI(4,5)P2 presence structurally tightens the signaling path by folding the ICJM and BOX1 into an extended structure, enabling signal transmission through the disordered linker. Co-structure formation between PRLR, JAK2, and the membrane is proposed to be critical for optimal signal transduction, with cooperative interactions needed for proper signaling control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68, C71, C74, C86, C148 represent mechanistic interpretations that are well-supported by the combined structural (NMR, CD, MD) and functional (cellular signaling) data. The extended structure formation (C7, C85, C99) and the functional importance of the identified residues (C69, C139-C143) provide converging evidence for the proposed mechanism. However, these remain mechanistic models that would benefit from additional direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Mutating the CIF motif (C242-F244) had the largest impact on PI(4,5)P2 binding in NMR experiments but only limited effect on cellular JAK2/STAT5 signaling. The authors interpret this to suggest the ICJM serves as a primary PI(4,5)P2 anchoring point facilitating additional contacts, and that cooperative interactions within the co-structure are needed for signaling control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by the differential effects observed in NMR titrations versus cellular assays. The interpretation (C73) that the ICJM serves as a primary anchor is reasonable given the NMR data showing this region has the strongest PI(4,5)P2 interaction. The disconnect between binding and signaling effects supports the cooperative interaction model, though alternative explanations are possible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors discuss potential regulatory roles of PI(4,5)P2 in PRLR signaling, including microdomain formation to reduce lateral movement and possible feedback regulation through phosphorylation to PI(3,4,5)P3. PRLR does not interact with PI(3,4,5)P3, and PI(4,5)P2 is phosphorylated to PI(3,4,5)P3 during PRLR signaling, which could provide a mechanism for signal attenuation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C81 mix supported observations (C75 from MD simulations, C78-C79 from prior work) with speculation about regulatory mechanisms (C80). The proposed attenuation mechanism is plausible given the differential binding to PI(4,5)P2 vs PI(3,4,5)P3, but remains speculative without direct experimental evidence. The role of PLC\u03b3-mediated hydrolysis is explicitly stated as unknown (C81).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "The authors speculate that similar co-structures involving receptors, kinases, and PI(4,5)P2 may be relevant for other non-receptor tyrosine kinases and their receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C10 is purely speculative extrapolation from the PRLR findings to other receptor systems. While the speculation is reasonable given structural similarities among cytokine receptors and the widespread importance of PI(4,5)P2 in signaling, no evidence is provided for other systems. This represents a hypothesis for future investigation rather than a supported conclusion.",
+    "result_type": "MINOR"
+  }
+]

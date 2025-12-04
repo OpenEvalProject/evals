@@ -1,0 +1,393 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The macaque face-patch system forms a hierarchical network within inferotemporal cortex, with distinct processing stages from posterior (PL) to anterior (AM) areas showing progressively more view-invariant representations of faces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 describe well-established properties of the macaque face-patch system based on multiple citations to prior work (Freiwald and Tsao, 2010; Issa and DiCarlo, 2012). These are background claims establishing the biological context for the study, not novel findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "CNNs serve as computational models of the ventral visual stream and can replicate aspects of face-patch system representations, with face-selective neurons emerging even in untrained networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 are supported by multiple citations to prior research establishing CNNs as models of visual processing. These are background claims contextualizing the computational approach, not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C25",
+      "C26"
+    ],
+    "result": "Neurons in the AL face-patch exhibit mirror-symmetric viewpoint tuning, responding similarly to horizontally reflected views of faces while maintaining view-specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C25, and C26 describe the key neural phenomenon being modeled, supported by citations to Freiwald and Tsao, 2010. This is established prior work that motivates the computational investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Training CNNs to discriminate bilaterally symmetric objects induces reflection-equivariant representations in convolutional layers, which when spatially pooled by fully connected layers, produce mirror-symmetric viewpoint tuning for multiple object categories beyond faces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 and C27-C29 present the core mechanistic finding supported by extensive experimental data across Figures 2-4. The progression from equivariance to invariance through pooling is demonstrated empirically and represents the main theoretical contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Training on ImageNet induces greater horizontal reflection equivariance in deeper convolutional layers and greater horizontal reflection invariance in fully connected layers compared to vertical reflection or rotation, consistent with natural image statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C64 are supported by systematic measurements in Figure 3 comparing trained vs. untrained networks across different image types. The training-dependent emergence of horizontal reflection preference is well-documented, though the interpretation regarding natural image statistics (C56, C64) relies on inference and cited work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Networks trained on bilaterally symmetric categories (CIFAR-10, symSVHN) develop mirror-symmetric viewpoint tuning for faces even without face training data, while networks trained on asymmetric categories (SVHN, asymSVHN) do not, demonstrating that task demand for reflection-invariant recognition is sufficient for this tuning to emerge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 are supported by controlled experiments in Figure 4 systematically manipulating training datasets. The comparison across CIFAR-10, SVHN, symSVHN, and asymSVHN provides strong evidence for the sufficiency of reflection-invariant task demands.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Mirror-symmetric viewpoint tuning is driven by reflection-equivariant local features rather than global 2D configurations, as demonstrated by importance mapping showing that local features are both necessary and sufficient for this tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 are supported by systematic insertion/deletion experiments in Figure 5. The shuffling experiment (C78-C79) provides particularly strong evidence that global configuration is not required, though the interpretation relies on the assumption that shuffling preserves local features while destroying global structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "CNN layers show differential alignment with macaque face patches, with MLMF aligning with convolutional layers via reflection-sensitive features, while AL and AM align with fully connected layers via reflection-invariant features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 are supported by representational similarity analysis in Figure 6 using neural data from Freiwald and Tsao, 2010. The Shapley value decomposition provides quantitative evidence for the differential contribution of reflection-sensitive vs. invariant features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C91"
+    ],
+    "result": "Global average pooling of reflection-equivariant representations is sufficient to produce mirror-symmetric viewpoint tuning, suggesting that learned equivariance in pool5 rather than specific fc6 weights drives this phenomenon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by the global average pooling experiment in Figure 2\u2014figure supplement 6. Claim C91 provides the mathematical logic connecting equivariance and pooling to invariance, which is sound given the definitions used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Object categories differ in their symmetry properties: faces/chairs/airplanes have single bilateral symmetry planes, cars/boats have quadrilateral symmetry enabling early-layer mirror tuning, while fruits/flowers have radial symmetry impeding viewpoint tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are supported by the 3D object symmetry analysis in Figure 2\u2014figure supplement 1 and the differential mirror-symmetric tuning patterns observed across categories in Figure 2C. The relationship between symmetry structure and tuning emergence is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The emergence of mirror-symmetric viewpoint tuning in fully connected layers is training-dependent and generalizes across diverse convolutional architectures but not to non-convolutional architectures like ViT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 are supported by systematic comparisons in Figure 2\u2014figure supplements 2-3 and 5. The statistical testing (C99) and architectural generalization (C100-C101) provide strong evidence, while the ViT exception (C102) highlights the importance of convolutional structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "VGGFace trained on face identification shows lower mirror-symmetric viewpoint tuning than VGG16 trained on ImageNet, with VGGFace showing more view-invariant but less identity-discriminative representations, suggesting that face identification training alone cannot explain intermediate face processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C109 are supported by data in Figure 2\u2014figure supplement 5 and quantitative measurements (C107-C108). However, the interpretation (C105-C106, C109) involves inference about task demands and is consistent with but not definitively proven by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C17",
+      "C18"
+    ],
+    "result": "Mirror-symmetric viewpoint tuning can emerge without training on specific object categories and can generalize to novel stimulus classes, as networks trained on non-face objects exhibit this tuning for faces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are strongly supported by the CIFAR-10 experiments (C66-C67) showing face tuning without face training. Claims C17-C18 extend this as predictions, which are partially supported by the generalization data but remain somewhat speculative regarding the full scope of generalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Mirror-symmetric viewpoint tuning for non-face objects should exist in cortical regions homologous to AL, consistent with the functional organization of IT into multiple parallel networks, and does not require prior experience with those specific objects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C43 are predictions for future empirical testing rather than findings from this study. While C42 cites Bao et al., 2020 for IT organization, C43 is explicitly stated as a hypothesis. These represent testable predictions but lack direct empirical support from the current work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Training increases the number of individual units exhibiting mirror-symmetric viewpoint tuning, with the first fully connected layer showing the most pronounced training-dependent emergence, though many randomly initialized units meeting prior selection criteria show asymmetric tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 are supported by unit-level analyses in Figure 5\u2014figure supplements 2-4. The critique of the Baek et al. selection criterion (C113) and demonstration of training effects (C114-C115) provide important methodological refinement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Across diverse convolutional architectures, deeper convolutional layers align with MLMF via reflection-sensitive features, while fully connected/pooling layers align with AL and AM via reflection-invariant features, with ViT being an exception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 are supported by systematic analyses across architectures in Figure 6\u2014figure supplements 1-3. The consistency across architectures strengthens the generality of the findings, while the ViT exception reinforces the importance of convolutional structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "The fc6 layer learns highly symmetrical weight maps that reduce sensitivity to local feature configurations and enable generation of reflection-invariant representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is supported by weight symmetry analysis in Figure 5\u2014figure supplement 1. This provides mechanistic insight into how fully connected layers achieve reflection invariance, complementing the global average pooling results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C34",
+      "C110"
+    ],
+    "result": "The emergent mirror-symmetric viewpoint tuning is driven by learned equivariant mid-level features rather than low-level stimulus features like luminance and contrast, as demonstrated by consistency across different dissimilarity measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C110 are supported by analyses in Figure 3\u2014figure supplement 1 and Figure 2\u2014figure supplement 7. The control for low-level features through stimulus equalization (Methods) and consistency across dissimilarity measures strengthen this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C36"
+    ],
+    "result": "Mirror-symmetric viewpoint tuning in CNNs is more position-invariant than in the Leibo et al. model, with CNNs maintaining tuning across the visual field while the Leibo model shows sharp declines for off-center stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 are supported by comparative analysis in Figure 2\u2014figure supplement 8. Claim C36 extends this to show tuning across the visual field. This comparison highlights an advantage of the current approach over prior models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C35",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The findings establish mirror-symmetric viewpoint tuning as a viable but not necessary computational solution for view invariance, with both CNNs and the face-patch network adopting this solution in practice despite alternatives being possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C37 are self-assessments of study limitations that are appropriately cautious. Claims C38-C39 contextualize the findings relative to prior work showing alternative solutions are possible, while noting that the mirror-symmetric solution is empirically observed in both systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "The transition from view-selective to mirror-symmetric viewpoint-selective representations in CNNs may be analogous to the ML/MF to AL transition in the face-patch system, with mirror-symmetric tuning serving as a penultimate stage toward full view invariance in both systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 draw analogies between CNN and neural processing supported by the alignment analyses (Figure 6) and hierarchical organization in both systems. The analogy is reasonable given the data but involves inference about computational principles rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The study used a controlled 3D object stimulus set with 9 categories, 25 exemplars per category, rendered from 9 views, with images preprocessed to control luminance and contrast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 describe the stimulus set and preprocessing methods. These are straightforward methodological descriptions that are well-documented and appropriate for the study's goals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Multiple species including humans show greater confusion for lateral mirror images than vertical mirror images, with reflection-invariance observed in IT neurons and higher-level visual regions for faces and bilaterally symmetric objects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 are background claims supported by multiple citations to prior behavioral and neurophysiological research. These establish the broader context of mirror confusion and reflection invariance in biological vision systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "Object recognition involves substantial cortical resources and metabolic cost, with the underlying neural mechanisms and computational principles remaining a major challenge in neuroscience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 are general background statements supported by citation (C19) and reflecting the current state of the field (C20). These provide broad motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C65"
+    ],
+    "result": "Natural objects are typically bilaterally symmetric with respect to the gravitational axis and viewed upright, making horizontal reflection preserve semantic content while vertical reflection and rotation produce unnatural images, with object category generally preserved under reflection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 and C65 are statements about natural image statistics and object properties based on general knowledge. These provide ecological context for why horizontal reflection invariance would be adaptive, though they involve some generalization.",
+    "result_type": "MINOR"
+  }
+]

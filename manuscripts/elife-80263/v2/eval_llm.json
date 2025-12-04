@@ -1,0 +1,193 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The authors provide background on hippocampal oscillations, their evolutionary conservation, functional roles, cross-frequency coupling, and classical analytical approaches. These claims establish the scientific context and motivation for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 are all supported by appropriate citations to prior literature. These are standard background claims establishing the known properties of hippocampal oscillations and their study. The citations appear appropriate and the claims are consistent with established neuroscience knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The authors developed a multivariate analytical framework using UMAP dimensionality reduction to construct a network state space from 18 frequency bands (6 bands from 3 hippocampal layers) recorded from 4 mice during sleep and exploration trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 describe the core methodological approach with appropriate detail. The methods are clearly described with specific parameters (200ms bins, 18 frequency bands, UMAP reduction from 18D to 2D). The approach is technically sound and reproducible based on the description provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "During wakefulness, hippocampal network activity occupies a restricted subset of the state space compared to sleep, with this restriction being independent of trial duration, conserved across species (mice and rats), and dependent on behavioral state rather than environmental factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 present a major finding with appropriate controls. The restriction is validated against surrogate data (C23), controlled for trial duration (C24), replicated in rats (C25), and shown to be consistent across different arenas (C26). The statistical comparisons and controls strengthen the conclusion that state space restriction during wakefulness is a robust phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The restricted wakefulness subspace corresponds to low delta, moderate beta, and moderate-to-high gamma power, while sleep exhibits broader oscillatory dynamics. REM states show high power in beta and gamma bands with theta, while non-REM states show high delta and beta with theta and gamma, but low medium gamma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 characterize the power distributions across the state space. These are observational claims based on overlay maps shown in the figures. The characterizations appear consistent with the visual data presented, though the descriptions are somewhat qualitative (e.g., 'moderate to high'). The distinction between REM and non-REM power profiles is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C36"
+    ],
+    "result": "Network density is higher during wakefulness than sleep, and non-REM density increases after exploration, consistent with memory consolidation processes reported in prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 provide quantitative density measurements with error estimates. The increase in non-REM density after exploration (C34) is a specific, testable finding. C36 appropriately contextualizes this within prior literature on memory consolidation. The statistical significance and effect sizes support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Distinct state-dependent coupling configurations exist among hippocampal oscillations, with REM showing increased beta-slow gamma and medium-fast gamma coupling with delta decoupling, while non-REM shows coupling among all oscillations except delta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 describe cross-frequency coupling patterns visualized through correlation matrices and UMAP projections. The distinct clustering of awake, REM, and non-REM states in correlation matrix space (C38) provides evidence for state-dependent coupling. The specific coupling patterns (C39-C40) are observational claims supported by the correlation matrices shown in figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Sleep state transition probabilities change after exploration, with intra-state transitions (REM-to-REM and non-REM-to-non-REM) being more plastic than inter-state transitions, as validated against shuffled data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 present findings on state transition plasticity with appropriate statistical validation. The comparison to shuffled data (C41) provides a null hypothesis test. The specific finding that intra-state transitions are more vulnerable to plasticity (C42) is a novel observation. The statistical approach appears sound, though the biological interpretation requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Coverage speed is reduced during wakefulness compared to sleep, with a sharp dip during REM transitions indicating network stabilization. REM transitions are characterized by reduced beta and increased medium/fast gamma power, with slow gamma increasing before REM onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 describe network dynamics during state transitions. The coverage speed metric is clearly defined and quantified (C43). The REM transition dynamics (C44-C47) are specific observations supported by the data shown. C48 appropriately connects findings to prior literature. The inference about network stabilization (C45) is reasonable given the sharp dip in coverage speed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Distinct hippocampal CA1 cells have distinct activation signatures during sleep that correspond to their firing properties during exploration, with sparse-firing cells preferentially firing to non-REM states and being modulated by different oscillatory combinations than high-firing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 link cellular firing patterns to network states. C49 is explicitly stated as a hypothesis. The distinction between sparse and high-firing cells (C50-C52) is demonstrated through signature space analysis. The conclusion (C53) that distinct cells are tuned to distinct network states is supported by the separation observed in signature space, though the causal relationship and functional significance require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "NLG3 KO mice show reduced power in most oscillatory bands (delta, theta, beta, medium and fast gamma, but not slow gamma) with intact coupling and transition properties, suggesting altered co-occurrence patterns. The authors propose this reflects impaired GABAergic neurotransmission in CA1 and CA2 regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C59 present observations from NLG3 KO mice with appropriate statistical comparisons. The reduced oscillatory power (C54-C56) is clearly demonstrated. However, claims C60-C68 involve substantial speculation about mechanisms. C67-C68 propose that reduced oscillatory activity is 'probably mediated' by loss of GABAA neurotransmission, but this is inferential and not directly tested. The mechanistic explanation relies heavily on prior literature (C65-C66) without direct validation in the current study. The head-fixed recording paradigm also differs from the freely-moving experiments, limiting direct comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors propose future applications of the state space framework including inter-areal communication assessment, biomarker identification for neurological disorders, and evaluation of pharmacological treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are explicitly speculative proposals for future applications. These are appropriately framed as potential uses of the methodology rather than demonstrated results. C69 includes a citation to prior work using similar approaches. These claims are reasonable extensions of the methodology but represent future work rather than current findings.",
+    "result_type": "MINOR"
+  }
+]

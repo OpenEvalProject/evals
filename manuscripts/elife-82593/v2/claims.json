@@ -1,0 +1,579 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Protein stability plays a critical role in understanding the molecular mechanisms of evolution.",
+    "claim_type": "EXPLICIT",
+    "source": "Protein stability plays a critical role when trying to understand the molecular mechanisms of evolution and has been found to be an important driver of human disease (Casadio et al., 2011; Martelli et al., 2016; Nielsen et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to prior work (Casadio et al., 2011; Martelli et al., 2016; Nielsen et al., 2020)",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Protein stability has been found to be an important driver of human disease.",
+    "claim_type": "EXPLICIT",
+    "source": "Protein stability plays a critical role when trying to understand the molecular mechanisms of evolution and has been found to be an important driver of human disease (Casadio et al., 2011; Martelli et al., 2016; Nielsen et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to prior work (Casadio et al., 2011; Martelli et al., 2016; Nielsen et al., 2020)",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Optimisation of protein stability is a fundamental part of protein engineering and design.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, optimisation of protein stability is a fundamental part of protein engineering and design (Rocklin et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to prior work (Rocklin et al., 2017)",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Single amino acid substitutions can have substantial effects on protein stability depending on the particular substitution and the surrounding atomic environment.",
+    "claim_type": "EXPLICIT",
+    "source": "For a given protein, single amino acid substitutions can have substantial effects on protein stability depending on the particular substitution and the surrounding atomic environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on established scientific knowledge about protein structure-function relationships",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "FoldX is a well-established energy-function-based method for predicting protein stability changes.",
+    "claim_type": "EXPLICIT",
+    "source": "Such methods include well-established energy-function-based methods such as for example FoldX (Schymkowitz et al., 2005) and Rosetta (Kellogg et al., 2011), or methods based on molecular dynamics simulations (Gapsys et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to prior work (Schymkowitz et al., 2005)",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Rosetta is a well-established energy-function-based method for predicting protein stability changes.",
+    "claim_type": "EXPLICIT",
+    "source": "Such methods include well-established energy-function-based methods such as for example FoldX (Schymkowitz et al., 2005) and Rosetta (Kellogg et al., 2011), or methods based on molecular dynamics simulations (Gapsys et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to prior work (Kellogg et al., 2011)",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Supervised models for predicting protein stability may suffer from systematic biases related to model overfitting, biases in experimental data, and lack of self-consistency.",
+    "claim_type": "EXPLICIT",
+    "source": "Supervised models may, however, suffer from systematic biases, which can be hard to overcome with limited experimental data. These biases relate to issues of model overfitting of the training data, biases present in the experimental data towards destabilising mutations, biases of the types of amino acid changes that have been probed experimentally, and a lack of self-consistency in model predictions (Yang et al., 2018; Pucci et al., 2018; Usmanova et al., 2018; Fang, 2019; Stein et al., 2019; Caldararu et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to prior work (Yang et al., 2018; Pucci et al., 2018; Usmanova et al., 2018; Fang, 2019; Stein et al., 2019; Caldararu et al., 2020)",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Self-supervised models can be trained without the use of experimental protein stability measurements.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, self-supervised models can be trained without the use of experimental protein stability measurements.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on the definition and characteristics of self-supervised learning approaches",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Self-supervised models for protein stability are typically trained to predict masked amino acid labels from structure or sequence information.",
+    "claim_type": "EXPLICIT",
+    "source": "Typically, self-supervised models are trained to predict masked amino acid labels from structure or sequence information, thereby learning a likelihood distribution over possible amino acid types at a particular position.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on established approaches in self-supervised learning for proteins",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Self-supervised models generally do not make predictions at an absolute scale, which limits their practical application.",
+    "claim_type": "EXPLICIT",
+    "source": "These models, however, often require substantial computational resources during training\u2014and sometimes during evaluation\u2014and generally do not make predictions at an absolute scale, which limits their practical application.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on inference from the characteristics of self-supervised models described in the manuscript",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "RaSP was trained using a 3D convolutional neural network architecture for the representation model.",
+    "claim_type": "EXPLICIT",
+    "source": "We selected a 3D convolutional neural network architecture for the representation model, as this has previously been shown to yield predictions that correlate well with changes in protein stability (Boomsma and Frellsen, 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to prior work (Boomsma and Frellsen, 2017) and described in the methods",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "The supervised downstream model in RaSP was trained on calculated protein stability changes using Rosetta.",
+    "claim_type": "EXPLICIT",
+    "source": "The supervised downstream model was trained on a set of calculated protein stability changes to enable the generation of a larger and more powerful training data set while minimizing the effects from experimental data biases. We chose to estimate protein variant stability values using the Rosetta 'cartesian_ddg' protocol, which has shown to be a reliable and well-established predictor of stability (Park et al., 2016; Frenz et al., 2020), and as shown below the model generalizes to a wide range of situations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to prior work (Park et al., 2016; Frenz et al., 2020) and described in the methods",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "The Rosetta 'cartesian_ddg' protocol has shown to be a reliable and well-established predictor of stability.",
+    "claim_type": "EXPLICIT",
+    "source": "We chose to estimate protein variant stability values using the Rosetta 'cartesian_ddg' protocol, which has shown to be a reliable and well-established predictor of stability (Park et al., 2016; Frenz et al., 2020), and as shown below the model generalizes to a wide range of situations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to prior work (Park et al., 2016; Frenz et al., 2020)",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "The self-supervised 3D convolutional neural network was trained on a data set of 2336 high resolution protein structures with maximal sequence identity set to 30%.",
+    "claim_type": "EXPLICIT",
+    "source": "We trained the above model on a data set of 2336 high resolution protein structures obtained using the PISCES server with maximal sequence identity set to 30% (Wang and Dunbrack, 2003).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described in the methods section with citation to the PISCES server (Wang and Dunbrack, 2003)",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "After training, the representation model achieves a wild-type amino acid classification accuracy of 63% on a validation set.",
+    "claim_type": "EXPLICIT",
+    "source": "After training, the representation model achieves a wild-type amino acid classification accuracy of 63% on a validation set (Figure 2\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 1",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "The downstream model achieves a Pearson correlation coefficient of 0.82 and a mean absolute error (MAE) of 0.73 kcal/mol on a test data set comprised of 10 proteins with full saturation mutagenesis.",
+    "claim_type": "EXPLICIT",
+    "source": "After training (Figure 2a), the downstream model achieves a Pearson correlation coefficient of 0.82 and a mean absolute error (MAE) of 0.73 kcal/mol on a test data set comprised of 10 proteins with full saturation mutagenesis which was not seen by the model until after it had been developed and trained (Figure 2b and Table 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by experimental data shown in Figure 2b and Table 1",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "The model accuracy is slightly better at exposed relative to buried residues.",
+    "claim_type": "EXPLICIT",
+    "source": "In terms of location of the residue in the protein structure, the model accuracy is slightly better at exposed relative to buried residues (Figure 2\u2014figure supplement 3), although we note also that the distribution of stability changes are different in the two different locations.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 3",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Pearson correlation coefficients of RaSP model predictions versus experimental stability measurements ranged from 0.79 (RNAse H) to 0.57 (lysozyme).",
+    "claim_type": "EXPLICIT",
+    "source": "Pearson correlation coefficients of RaSP model predictions versus experimental stability measurements ranged from 0.79 (RNAse H, Rosetta baseline: 0.71)\u20130.57 (lysozyme, Rosetta baseline: 0.65).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by experimental data comparing RaSP predictions to experimental measurements",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "RaSP achieves a zero-shot Pearson correlation coefficient of 0.62 and an MAE of 0.94 on a high-accuracy version of the mega-scale experimental data set.",
+    "claim_type": "EXPLICIT",
+    "source": "We also test the performance of RaSP on a high-accuracy version of the recently published experimental mega-scale data set from Rocklin and collaborators (Tsuboyama et al., 2022). We observe that RaSP achieves a zero-shot Pearson correlation coefficient of 0.62 and an MAE of 0.94 (Figure 3\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 3",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "RaSP fails to accurately capture anti-symmetric effects.",
+    "claim_type": "EXPLICIT",
+    "source": "RaSP achieves a Pearson correlation of 0.58 and a MAE of 1.01 kcal/mol on the direct data set, while it only achieves a Pearson correlation of 0.18 and a MAE of 1.82 kcal/mol on the reverse data set (Figure 3\u2014figure supplement 2). The failure of RaSP to accurately capture anti-symmetric effects is expected following the one-sided training method and provides an interesting avenue for further method development.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 2 and inference from the training method",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Both RaSP and Rosetta are relatively insensitive to the input models when using homology models with decreasing sequence identities.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall we find that both RaSP and Rosetta are relatively insensitive to the input models, with some decrease in accuracy for both methods when models are created using more distant homologues.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by experimental data comparing predictions using homology models",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "RaSP can deliver accurate predictions using computationally generated protein structures.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, these results, together with those using the homology models above, indicate that RaSP can also deliver accurate predictions using computationally generated protein structures; we note that similar results have been obtained using other stability prediction methods (Akdel et al., 2022; Valanciute et al., 2023; Lihan et al., 2023; Keskin Karakoyun et al., 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by experimental data from homology models and AlphaFold 2 structures, and citations to prior work (Akdel et al., 2022; Valanciute et al., 2023; Lihan et al., 2023; Keskin Karakoyun et al., 2023)",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "RaSP is orders of magnitude faster than Rosetta for saturation mutagenesis scans.",
+    "claim_type": "EXPLICIT",
+    "source": "At this speed, saturation mutagenesis scans are possible for most proteins in a few minutes\u2014orders of magnitude faster than Rosetta (Table 4; note differences in hardware used for the two sets of calculations).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by benchmarking data shown in Table 4",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Loss of protein stability is likely to be the underlying cause for loss of function for a large fraction of pathogenic variants.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, in line with previous observations (Casadio et al., 2011; Martelli et al., 2016; Stein et al., 2019) we find that loss of protein stability is likely to be the underlying cause for loss of function for a large fraction of pathogenic variants.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by analysis of ClinVar data and citations to prior work (Casadio et al., 2011; Martelli et al., 2016; Stein et al., 2019)",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "RaSP has only been trained and benchmarked on soluble, globular and folded proteins and may not perform equally well on proteins outside this category including membrane proteins and intrinsically disordered proteins.",
+    "claim_type": "EXPLICIT",
+    "source": "We note that RaSP has only been trained and benchmarked on soluble, globular and folded proteins and may therefore not expected to perform equally well on proteins outside this category including e.g. membrane proteins and intrinsically disordered proteins.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on inference from the training data composition and known limitations",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "AlphaFold2 may not predict reliable structural models in regions that are highly flexible and disordered.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, AlphaFold2 may not predict reliable structural models in regions that are highly flexible and disordered (Jumper et al., 2021; Varadi et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to prior work (Jumper et al., 2021; Varadi et al., 2022)",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "RaSP performs on-par with biophysics-based methods.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we present RaSP, a method for making rapid and accurate predictions of changes in protein stability by leveraging deep learning representations. RaSP performs on-par with biophysics-based methods and enables saturation mutagenesis stability predictions in less than a second per residue.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by comparative benchmarking data throughout the manuscript",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "RaSP enables saturation mutagenesis stability predictions in less than a second per residue.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we present RaSP, a method for making rapid and accurate predictions of changes in protein stability by leveraging deep learning representations. RaSP performs on-par with biophysics-based methods and enables saturation mutagenesis stability predictions in less than a second per residue.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by benchmarking data on computational speed",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Variants that are common in the population are substantially depleted for severe destabilization.",
+    "claim_type": "EXPLICIT",
+    "source": "We find that variants that are common in the population are substantially depleted for severe destabilization, and that there are substantial differences between benign and pathogenic variants, highlighting the role of protein stability in genetic diseases.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by analysis of gnomAD and ClinVar data",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "There are substantial differences between benign and pathogenic variants in terms of protein stability effects.",
+    "claim_type": "EXPLICIT",
+    "source": "We find that variants that are common in the population are substantially depleted for severe destabilization, and that there are substantial differences between benign and pathogenic variants, highlighting the role of protein stability in genetic diseases.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by analysis of ClinVar data",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The downstream model predictions were made using the median of an ensemble of 10 model predictions with each model trained using different initialization seeds.",
+    "claim_type": "EXPLICIT",
+    "source": "In practice, the downstream model predictions were made using the median of an ensemble of 10 model predictions with each model trained using different initialization seeds.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described in the methods section",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Substitutions from glycine and cysteine as well as to proline generally have higher errors in RaSP predictions.",
+    "claim_type": "EXPLICIT",
+    "source": "The accuracy of the model is relatively uniform for the different types of amino acid substitutions, with bigger errors in particular when substituting glycine residues, or when changing residues to proline (Figure 2\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 2",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "VAMP-seq probes variant effects on cellular protein abundance and correlates with both in vitro measurements and computational predictions of protein stability.",
+    "claim_type": "EXPLICIT",
+    "source": "A particular type of MAVE termed 'Variant Abundance by Massively Parallel sequencing' (VAMP-seq) probes variant effects on cellular protein abundance (Matreyek et al., 2018), and correlates with both in vitro measurements (Matreyek et al., 2018; Suiter et al., 2020) and computational predictions (Cagiada et al., 2021) of protein stability.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to prior work (Matreyek et al., 2018; Suiter et al., 2020; Cagiada et al., 2021)",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "RaSP correlates about as well as Rosetta calculations with VAMP-seq data for three proteins.",
+    "claim_type": "EXPLICIT",
+    "source": "We therefore compared RaSP calculations with VAMP-seq data for three proteins and find that it correlates about as well as Rosetta calculations (Table 1 and Figure 3\u2014figure supplement 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by experimental data shown in Table 1 and Figure 3\u2014figure supplement 4",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "High-confidence models generated by AlphaFold 2 are sufficiently accurate to be used as input for protein stability predictions using FoldX and Rosetta.",
+    "claim_type": "EXPLICIT",
+    "source": "Recently, it has been shown that high-confidence models generated by AlphaFold 2 are sufficiently accurate to be used as input for protein stability predictions using for example FoldX and Rosetta (Akdel et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to prior work (Akdel et al., 2022)",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The correlation between RaSP predictions from pairs of crystal structures is highest in regions of the proteins where AlphaFold 2 is most confident about the structure prediction (i.e. residues with high pLDDT scores).",
+    "claim_type": "EXPLICIT",
+    "source": "This correlation is highest in regions of the proteins where AlphaFold 2 is most confident about the structure prediction (i.e. residues with high pLDDT scores).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by analysis of AlphaFold 2 structures with different pLDDT scores",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The RaSP model is in total 480\u20131,036 times faster than Rosetta.",
+    "claim_type": "EXPLICIT",
+    "source": "The RaSP model is in total 480\u20131,036 times faster than Rosetta.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by benchmarking data shown in Table 4",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "RaSP performs on-par with Rosetta in terms of Pearson correlation on the S669 experimental direct data set.",
+    "claim_type": "EXPLICIT",
+    "source": "We observe that RaSP performs as well as Rosetta in terms of Pearson correlation on this particular data set (Figure 3\u2014figure supplement 2) and that RaSP performs relatively close to several of the best performing methods (Table 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 2 and Table 2",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "RaSP performs relatively close to several of the best performing methods on the S669 data set.",
+    "claim_type": "EXPLICIT",
+    "source": "We observe that RaSP performs as well as Rosetta in terms of Pearson correlation on this particular data set (Figure 3\u2014figure supplement 2) and that RaSP performs relatively close to several of the best performing methods (Table 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by experimental data shown in Table 2",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "A substantial fraction of the pathogenic variants are predicted to be destabilized to an extent that is likely to cause lowered abundance.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, a substantial fraction of the pathogenic variants are predicted to be destabilized to an extent that is likely to cause lowered abundance (Cagiada et al., 2021; H\u00f8ie et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by analysis of ClinVar data and citations to prior work (Cagiada et al., 2021; H\u00f8ie et al., 2022)",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The self-supervised representation model was trained on 2099 proteins for training while 234 were withheld for validation.",
+    "claim_type": "EXPLICIT",
+    "source": "Out of the remaining 2333 proteins, 2099 proteins were used for training while 234 were withheld for validation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described in the methods section detailing the training data",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The selection of experimental structures for large-scale analysis was based on 5,557 human proteins annotated with cytosolic location.",
+    "claim_type": "EXPLICIT",
+    "source": "Our selection of experimental structures was based on 5,557 human proteins annotated with cytosolic location. To make this list, we extracted UniProt identifiers from the human genome assembly GRCh38.p13 filtered for the Gene Ontology (Ashburner et al., 2000) term 'cytosol' (GO:0005829).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described in the methods section with citation to Gene Ontology (Ashburner et al., 2000)",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "For the final selection of structures, 1,381 structures were chosen where the structure was of high quality in a canonical PDB format and where at least 50% of the UniProt sequence was covered by the structure.",
+    "claim_type": "EXPLICIT",
+    "source": "For our final selection, we chose 1,381 structures from the above selection, where the structure was of high quality in a canonical PDB format and where at least 50% of the UniProt sequence was covered by the structure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described in the methods section detailing the structure selection criteria",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

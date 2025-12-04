@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Drug tolerance in C. albicans increases significantly between days 1 and 2 post-fluconazole exposure (p<0.001), with tolerant cells present in all cultures starting at day 2, but no widespread drug resistance is observed at any time point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by disk diffusion assays with appropriate statistical testing (Kruskal-Wallis \u03c7\u00b2 test, p<0.001). The temporal emergence of tolerance is well-documented and the distinction between tolerance and resistance is clearly established through experimental observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The DROP-seq pipeline successfully identified 18,854 high-quality cells with an average of 184 transcripts per cell from 94 unique genes, showing high concordance between replicates (R=0.82) and strong correlation with bulk RNA-sequencing, though primarily missing lowly expressed transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 describe technical validation of the single-cell profiling method. The high correlation between pseudo-bulk and bulk RNA-seq (R=0.67-0.82), reproducibility across batches, and systematic characterization of missing genes provide strong evidence that the method captures biological signals reliably.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Untreated C. albicans cells exhibit heterogeneous gene expression patterns related to cell cycle phases, with M phase cells showing elevated heat-shock and glycolysis genes, while G1/S phase cells show elevated oxidative stress genes. This heterogeneity was validated by fluorescence microscopy showing mutually exclusive expression of HSP70 and TTR1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C53 are well-supported by signature analysis of untreated cells, microscopy validation (McNemar test, p<0.001), and consistency with prior literature. The fluorescence microscopy provides independent validation of the single-cell transcriptomics findings, strengthening the conclusions about cell cycle-associated heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "FCZ-treated cells bifurcate into two distinct subpopulations by day 2: a Ribo-dominant (Rd) state characterized by high ribosomal protein and rRNA processing gene expression, and a Stress-dominant (Sd) state characterized by high heat-shock stress response genes. 797 genes are differentially expressed between these states, with Sd cells expressing genes associated with drug tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C64-C74 describe the major finding of Rd/Sd bifurcation, supported by unsupervised clustering, differential gene expression analysis (DESeq2, FDR<0.1), and GO enrichment analysis. The characterization is comprehensive with clear molecular signatures distinguishing the two states. The connection to drug tolerance is supported by literature citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The Rd and Sd subpopulations persist at day 6 (3 days after drug removal), with Rd cells remaining transcriptionally stable while Sd cells show changes including downregulation of heat-shock response and increased alcohol dehydrogenase expression. The proportion shifts from 70% Rd/30% Sd at day 3 to 56% Rd/44% Sd at day 6, and FCZ-exposed cells grow more slowly than untreated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C84-C92 are supported by trajectory analysis, differential gene expression, and growth curve measurements. The persistence of subpopulations and shift in proportions is well-documented. However, the interpretation that Sd cells have higher proliferative capacity (C91) is speculative and based on indirect evidence from proportion changes rather than direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors propose that the drug tolerance response involves activation of the ribosome assembly stress response (RASTR), where Rd cells with imbalanced RP/rRNA expression may transition to Sd cells expressing Hsf1-regulated genes including HSP90 and HSP70, which are associated with drug tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C75-C83 propose a RASTR-based model linking Rd and Sd states. While Sd cells do show increased expression of RASTR-upregulated genes and Hsf1 targets (C81, supported by data), the proposed transition from Rd to Sd (C79, C80, C83) is speculative and not directly demonstrated. The model is based on analogy to S. cerevisiae RASTR and correlative gene expression patterns, but lacks direct evidence of RP aggregation in C. albicans or temporal tracking of individual cells transitioning between states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Unsupervised clustering of all drug-treated and untreated cells identified five main stable clusters containing 92% of cells, with untreated cells primarily in cluster 3, CSP-treated cells in cluster 1, RAPA-treated cells in cluster 2, and FCZ-treated cells bifurcating between clusters 1 and 4. An additional 3% of cells formed ~20 small 'comet' clusters, primarily from FCZ day 2 survivors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 describe clustering results validated by stability analysis (100 iterations with 95% subsampling). Four of five main clusters showed high stability, though clusters 3 and 5 showed some overlap. The identification and characterization of comet clusters is data-driven and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "RAPA-treated cells showed no Rd state, had the weakest RP expression, and specifically triggered hyperosmotic stress gene expression. Nearly every RAPA-treated cell had an Sd transcriptional profile, consistent with RAPA's mechanism of targeting Tor1 and shutting down ribosomal biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C121 characterize RAPA-treated cells. The absence of Rd state and weak RP expression (C115, C117) is consistent with RAPA's known mechanism (C116, C119). The hyperosmotic stress response (C118) is a novel observation, and the proposed mechanism linking it to cytoplasmic biophysical properties (C120) is speculative but grounded in cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "CSP-treated cells showed a more homogeneous transcriptional response at early time points (days 2-3), with nearly every cell having an Rd-like profile at day 2 and no Sd cells detected by day 3, distinct from the heterogeneous FCZ response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125 describe CSP-treated cell responses. The observation of transcriptional homogeneity and Rd-like profiles is supported by clustering analysis. The authors appropriately note that low CSP concentrations were used to avoid aggregation, which could affect generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The adapted DROP-seq method provided a cost-effective, reliable platform for profiling thousands of C. albicans cells, enabling differentiation between universal and subpopulation-specific responses and providing new insights into drug tolerance emergence over 2-3 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C131-C135 summarize the methodological contribution and its impact. The technical validation (correlation with bulk RNA-seq, reproducibility) supports the reliability claims. The ability to identify subpopulation-specific responses represents a clear advance over bulk profiling approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "On day 2, FCZ-treated cells showed higher frequency of Rd cells, but by day 3 the Sd subpopulation became more balanced, suggesting either higher Sd proliferation or required cooperation between subpopulations. Morphological state does not explain the Rd/Sd split as cells remained predominantly in white morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 describe temporal dynamics of subpopulation proportions. The shift from Rd-dominant to more balanced proportions is well-documented (also in C89). The exclusion of morphological switching as an explanation (C104) is supported by microscopy showing <0.2% filamentous cells. However, the interpretation of mechanisms (C103) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors propose a model where FCZ-exposed cells enter an Rd response with imbalanced RP/rRNA that may trigger RASTR, leading to an Sd state involving Hsf1 and expressing drug tolerance genes. Sd cells may represent a successful tolerance response, or both subpopulations may be necessary for survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C113 present the authors' mechanistic model. While the molecular characterization of Rd (C105) and Sd (C107-C109) states is well-supported by data, the proposed transition mechanism (C111) and functional interpretations (C112-C113) are speculative. The model is based on analogy to S. cerevisiae RASTR (C106 is extrapolation from another organism) and lacks direct evidence of the proposed sequence of events or functional validation of the tolerance hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "After drug removal and 3 days growth in fresh media (day 6), both Rd and Sd subpopulations persist, with Rd cells showing few transcriptional changes while Sd cells show downregulated heat-shock response and increased alcohol dehydrogenase expression, though largely retaining day 3 Sd characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130 describe persistence and evolution of subpopulations after drug removal. The persistence (C126) is clearly demonstrated by clustering. The differential changes in Rd versus Sd cells (C128-C130) are supported by differential expression analysis. The interpretation of 'memory' (C127) is speculative but reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C136"
+    ],
+    "result": "If the Rd response proves generalizable to other drug treatments, disrupting the Rd to Sd transition or the Sd response could represent an innovative therapeutic approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C136 is entirely speculative about future therapeutic applications. It is conditional on generalizability (not tested) and assumes that disrupting these responses would be therapeutically beneficial (not demonstrated). This represents a reasonable direction for future work but is not supported by current data.",
+    "result_type": "MINOR"
+  }
+]

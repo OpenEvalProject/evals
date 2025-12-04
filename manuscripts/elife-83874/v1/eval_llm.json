@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "A controlled human malaria infection (CHMI) study was conducted in 161 Kenyan adults from varying malaria transmission zones, with 142 participants included in final analysis after exclusions. Participants were inoculated with P. falciparum sporozoites and monitored for parasitemia by qPCR, with primary endpoint of \u2265500 parasites/\u03bcl and secondary endpoint of antimalarial treatment receipt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The study design and methodology are clearly described with appropriate exclusion criteria (C31-C33), sample size justification with power calculation (C11), and well-defined endpoints (C74-C75). The genotyping methods are adequately detailed (C27-C30) and the study was properly registered (C26). The exclusion of sickle cell carriers (C12) was appropriately justified given known confounding effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C77"
+    ],
+    "result": "None of the 30 Dantu carriers (0/27 heterozygotes, 0/3 homozygotes) reached the primary endpoint of 500 parasites/\u03bcl, compared to 25/111 (22.5%) non-Dantu individuals (p=0.01). The difference was statistically significant for heterozygotes (p=0.004) but not for homozygotes due to small sample size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The primary outcome data (C38, C77) show clear statistical significance with appropriate p-values. The acknowledgment that homozygote comparison lacks power due to small n=3 (C39) demonstrates appropriate statistical interpretation. The data are consistent across claims and supported by Figure 2 and Table 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C78"
+    ],
+    "result": "Fewer Dantu carriers required antimalarial treatment compared to non-Dantu individuals: 25.9% of heterozygotes and 0% of homozygotes versus 44.1% of non-Dantu. Multivariate regression analysis showed Dantu carriers were administered treatment 83% less frequently (OR 0.17; 95% CI 0.04-0.55; p=0.007).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The treatment outcome data (C40-C42, C78) are well-documented with appropriate statistical testing. The multivariate analysis (C43) properly adjusts for confounders including other genetic variants, antibody levels, and location, strengthening the causal inference. The dose-dependent trend (heterozygotes intermediate, homozygotes most protected) supports biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C58",
+      "C59"
+    ],
+    "result": "Anti-schizont antibody levels did not differ across Dantu genotype groups (p=0.659), indicating that pre-existing immunity differences do not explain the protective effect. Previous analyses showed infection outcomes were attributable to prior malaria exposure as measured by antibody titers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of difference in antibody levels across genotypes (C44) is critical for ruling out confounding by prior exposure. This is appropriately addressed given that participants were from malaria-endemic areas (C58) where immunity would be expected to influence outcomes (C59). The multivariate analyses adjusted for these factors, strengthening the conclusion that Dantu has an independent protective effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The proportion becoming PCR-positive was similar across genotypes (77.5% non-Dantu vs 74.1% heterozygotes vs 66.7% homozygotes, p=0.745), but peak parasitemia was significantly lower in Dantu carriers: 9694 parasites/\u03bcl (non-Dantu) vs 411 (heterozygotes) vs 3 (homozygotes), with p=0.028 for non-Dantu vs heterozygotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data demonstrate that Dantu does not prevent infection (similar PCR-positivity rates, C45) but dramatically reduces parasite growth (C46). The statistical significance for peak parasitemia (p=0.028) and the dose-dependent effect support the mechanistic hypothesis. The median parasitemia differences (C47) show the same trend though not reaching significance, likely due to sample size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Multivariate Cox regression analysis showed time to treatment was significantly longer in Dantu carriers (HR 0.39; CI 0.17-0.87; p=0.022), with a dose-dependent effect where heterozygotes had significantly longer time to treatment (HR=0.41, p=0.042) and no homozygotes required treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The survival analysis appropriately uses multivariate Cox regression adjusting for confounders (C48). The dose-dependent effect (C49) strengthens biological plausibility and is consistent with prior in vitro findings. The fact that univariate analysis was non-significant but multivariate was significant indicates the importance of controlling for confounders in this semi-immune population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C79"
+    ],
+    "result": "No significant differences in study outcomes were observed for \u03b1-thalassemia, blood group O, G6PD deficiency, or ATP2B4 alleles. The protective effect of Dantu was independent of these other genetic variants in multivariate analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative findings for other malaria-protective variants (C50, C79) are well-documented across multiple figures and tables. The independence of Dantu's effect in multivariate analysis (C51) is appropriately demonstrated. These negative results are biologically plausible as discussed, since these variants likely act at later disease stages not captured in CHMI studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C67",
+      "C80"
+    ],
+    "result": "This is the first demonstration that Dantu protects against early-stage malaria infections in vivo, suggesting it prevents disease establishment in the earliest phase by providing strong protection against parasite growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The novelty claim (C52) is supported by the in vivo data showing protection at the early infection stage. The mechanistic interpretation (C53) that Dantu prevents disease establishment early is well-supported by the parasitemia data showing reduced growth rather than prevention of infection. Claims C67 and C80 appropriately summarize the major finding with supporting evidence from the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C9",
+      "C71"
+    ],
+    "result": "Previous in vitro studies showed that Dantu protects red blood cells by increasing surface tension, reducing merozoite invasion efficiency, with greater effects in homozygotes than heterozygotes supporting a dose-dependent mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C54, C55, C9, C71) appropriately cite prior mechanistic work (Kariuki et al., 2020) that provides the biological basis for the current in vivo findings. The dose-dependent effect observed in vitro is consistent with the dose-dependent protection observed in this CHMI study, strengthening the overall mechanistic model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "While G6PD deficiency, blood group O, ATP2B4 rs4951074, and \u03b1-thalassemia have established protective effects against severe malaria in prior studies, \u03b1-thalassemia specifically has no effect on RBC invasion or uncomplicated malaria but protects against severe disease through mechanisms like reduced cytoadhesion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately cite prior literature (C60-C63) to contextualize why these variants showed no effect in the current CHMI study. The mechanistic explanation that \u03b1-thalassemia acts at later disease stages (C61-C62) is well-supported by citations and explains the negative findings. This demonstrates appropriate interpretation of negative results in context of prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Unlike CHMI studies in malaria-na\u00efve populations where most develop clinical malaria, less than one-fifth of participants reached the 500 parasites/\u03bcl threshold. CHMI studies may not capture genetic factors affecting later severe disease stages due to low parasitemia limits, but can help identify pathways for further study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to na\u00efve populations (C56-C57) appropriately contextualizes the lower infection rates. The limitation that CHMI studies reach only low parasitemias (C64-C65) is honestly acknowledged and explains negative findings for variants acting at later stages. The claim that CHMI can still identify relevant pathways (C66) is reasonable and demonstrated by the Dantu findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C82"
+    ],
+    "result": "This study demonstrates the power of CHMI with PfSPZ Challenge for directly testing the protective impact of genetic variants previously identified through other methods and deconvoluting malaria-protective effects of naturally occurring human genetic variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claim (C68, C82) is well-supported by the study's success in validating Dantu's protective effect in vivo and distinguishing it from other genetic variants. The CHMI approach successfully tested a hypothesis generated from prior genetic association and in vitro studies, demonstrating the utility of this experimental model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C81"
+    ],
+    "result": "Dantu-phenocopying interventions have potential to limit P. falciparum growth in vivo, and learning more about mechanisms could lead to new approaches for malaria prevention or treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C69, C81) are speculative about future applications and interventions. While the protective effect is well-demonstrated, the feasibility and efficacy of phenocopying interventions remains untested. These represent reasonable research directions but are not directly supported by the current study data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C70"
+    ],
+    "result": "Plasmodium falciparum malaria has been a major cause of child mortality for 5000 years, driving positive selection of protective polymorphisms including sickle cell trait, \u03b1-thalassemia, blood group O, and the Dantu blood group which confers 74% protection against severe malaria in homozygotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C1-C8, C70) appropriately cite established literature to provide context for the study. The historical impact of malaria (C1-C2) and the protective effects of various genetic variants (C3-C5) are well-established. The specific claim about Dantu's 74% protection (C8, C70) cites prior work (Band et al., 2015; Ndila et al., 2018) that provides the foundation for the current investigation.",
+    "result_type": "MINOR"
+  }
+]

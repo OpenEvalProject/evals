@@ -1,0 +1,1993 @@
+{
+  "submission": {
+    "id": "ea24d17c-9be3-4327-93e9-c26bd8038b98",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:40:56.172911Z",
+    "updated_at": "2025-12-04T03:40:56.172911Z"
+  },
+  "content": [
+    {
+      "id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "submission_id": "ea24d17c-9be3-4327-93e9-c26bd8038b98",
+      "content_type": "manuscript",
+      "content_text": "# A scalable and tunable platform for functional interrogation of peptide hormones in fish\n\n## Authors\n\n- Eitan Moses<sup>1</sup> ([ORCID: 0000-0003-0090-335X](https://orcid.org/0000-0003-0090-335X))\n- Roman Franek<sup>1</sup> ([ORCID: 0000-0002-3464-1872](https://orcid.org/0000-0002-3464-1872))\n- Itamar Harel<sup>1</sup> ([ORCID: 0000-0001-9749-8279](https://orcid.org/0000-0001-9749-8279)) \u2020\n\n### Affiliations\n\n1. Department of Genetics, the Silberman Institute, The Hebrew University of Jerusalem Jerusalem Israel ([ROR:03qxff017](https://ror.org/03qxff017))\n2. University of South Bohemia in Ceske Budejovice, South Bohemian Research Center of Aquaculture and Biodiversity of Hydrocenoses Vodnany Czech Republic ([ROR:033n3pw66](https://ror.org/033n3pw66))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPituitary hormones play a central role in shaping vertebrate life history events, including growth, reproduction, metabolism, and aging. The regulation of these traits often requires precise control of hormone levels across diverse timescales. However, fine tuning circulating hormones in-vivo has traditionally been experimentally challenging. Here, using the naturally short-lived turquoise killifish (N. furzeri), we describe a high-throughput platform that combines loss- and gain-of-function of peptide hormones. Mutation of three primary pituitary hormones, growth hormone (gh1), follicle stimulating hormone (fshb), and thyroid stimulating hormone (tshb), alters somatic growth and reproduction. Thus, suggesting that while the killifish undergoes extremely rapid growth and maturity, it still relies on vertebrate-conserved genetic networks. As the next stage, we developed a gain-of-function vector system in which a hormone is tagged using a self-cleavable fluorescent reporter, and ectopically expressed in-vivo through intramuscular electroporation. Following a single electroporation, phenotypes, such as reproduction, are stably rescued for several months. Notably, we demonstrate the versatility of this approach by using multiplexing, dose-dependent, and doxycycline-inducible systems to achieve tunable and reversible expression. In summary, this method is relatively high-throughput, and facilitates large-scale interrogation of life-history strategies in fish. Ultimately, this approach could be adapted for modifying aquaculture species and exploring pro-longevity interventions.\n\n## Introduction\n\nPituitary hormones are key regulators of vertebrate life-history events, including growth, reproduction, metabolism, and aging (Figure 1A). In many cases, regulation of these traits requires precise control of hormone levels over a diverse range of temporal scales (Taylor et al., 2019). While genetic perturbations of pituitary hormones have been instrumental in understanding their function (Liu and Lin, 2017; Hu et al., 2019), experimental approaches primarily depend on whole-body loss-of-function. As a result, interpretations are subject to bias due to stage-dependent hormonal requirements, or potential compensatory mechanisms. Thus, developing reversible control of pituitary hormones is imperative for a mechanistic understanding. Gain-of-function methodologies, primarily in fish, have so far depended on laborious and repeated injections of pituitary extracts (which are non-specific), or require purification of recombinant hormones (which is time consuming; Mylonas et al., 2010; Taranger et al., 2010). Such challenges significantly hamper the interpretation and scalability of these experiments.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85960/elife-85960-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic illustration of the vertebrate hypothalamic-pituitary system, including members of the hypothalamic-pituitary-gonadal axis (HPG), the hypothalamic-pituitary-somatic axis (HPS), and the hypothalamic-pituitary-thyroid axis (HPT). These hormones are released from the pituitary, and travel through the bloodstream to bind/activate their target receptors/organs. FSH: follicle stimulating hormone; GH: growth hormone; TSH: thyroid stimulating hormone. (B) Top: generation of CRISPR mutants for gh1, with the guide RNA (gRNA) targets (red), protospacer adjacent motif (PAM, in bold), and indels. The mutation site is marked with a red asterisk. Bottom: Comparison of fish size between 8-week-old WT and gh1\u03944/\u03944 male (top) and female (bottom) fish. Scale bar: 3.5 mm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85960/elife-85960-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Distribution of genotype progeny from heterozygous gh1\u03944/+ pairs (stratified by sex). n>130 individuals, per sex. Percentages are indicated, and significance was measured by \u03c72 test with Mendelian proportions (25:50:25) as the expected model and FDR correction. (B) Quantification of somatic growth (standard length) of 12-week-old WT or gh1\u03944/+ heterozygous mutants: females (left) and males (right), n\u22659 individuals from each experimental group. Error bars show mean \u2009\u00b1 SEM. Significance was calculated using an unpaired Student\u2019s t-test. Exact p-values are indicated.\n\nZebrafish (Danio rerio) and medaka (Oryzias latipes) are the most widely used genetic fish models. Interestingly, while these versatile models share a range of experimental advantages, they also exhibit several characteristics that are less compatible with high-throughput exploration of adult physiology. For example, both fish undergo relatively slow sexual maturation (~3\u20134 months), and depend on the germline to develop into phenotypic females (Slanchev et al., 2005; Kurokawa et al., 2007). Accordingly, perturbations that affect the germline, such as mutations in the follicle stimulating hormone receptor gene (fshr), produce an all-male sex-reversal (Slanchev et al., 2005; Kurokawa et al., 2007) (while merely causing ovarian failure in humans Aittom\u00e4ki et al., 1995). Since many peptide hormones also affect gonadal development, it can therefore be challenging to explore both male and female physiology using these classical models.\n\nHere, we use the naturally short-lived turquoise killifish, which exhibits one of the fastest recorded times to puberty among all vertebrate species (2\u20133 weeks, ~ sixfold faster than zebrafish and medaka). An additional and underexplored advantage of the killifish model is that, similar to mammals, sexual differentiation is germline-independent (Harel et al., 2015). This enables us to investigate the effect of a wide range of hormonal manipulations that can affect germline development on both sexes. Based on this mammalian-like trait, we hypothesize that hormonal perturbations in killifish might produce phenotypes that more faithfully recapitulate the corresponding mouse models, than do similar mutations observed in zebrafish (Hu et al., 2019; Slanchev et al., 2005; Kurokawa et al., 2007).\n\nHere we describe the effect on somatic growth and reproduction of perturbing three primary pituitary hormones (Figure 1A), namely growth hormone (gh1, the pituitary-somatic axis), follicle stimulating hormone (fshb, the pituitary-gonadal axis), and thyroid stimulating hormone (tshb, the pituitary-thyroid axis). The subsequent phenotypes indicate that although the killifish undergoes rapid growth and puberty, it still follows a vertebrate-conserved genetic program. This allows us to use our data to improve the understanding of how these hormones regulate the onset and duration of specific traits across evolutionary distances.\n\nIn addition, we report the use of a gain-of-function approach in which the investigated hormone is tagged using a self-cleavable fluorescent reporter. This vector is then ectopically expressed in vivo through intramuscular electroporation. Our results indicate that a single electroporation is enough to restore growth and reproductive phenotypes for several months. In addition, we describe the development of a doxycycline (Dox)-inducible system, which enables tunable expression patterns, and we demonstrate the feasibility of multiplexing interventions. Our platform therefore represents a simple and robust system for investigating the loss/gain-of-function of circulating factors in fish. Importantly, this strategy is highly effective after a single injection, and can readily be adapted to other fish species. Ultimately, a better understanding of how pituitary hormones shape the vertebrate life-history could allow us to uncouple specific traits, such as somatic growth or reproduction, from lifespan.\n\n## Results\n\n### Generation of a growth hormone CRISPR mutant in killifish\n\nThe hypothalamic\u2013pituitary\u2013somatic (HPS) axis involves the secretion of growth hormone (GH) from the pituitary gland and the consequent stimulation of insulin-like growth factor 1 (IGF-1) production in peripheral tissues (Le Gac et al., 1993; List et al., 2011; Canosa et al., 2007). We applied our recently developed CRISPR/Cas9 genome editing protocols (Harel et al., 2015; Astre et al., 2022b; Astre et al., 2022a; Harel et al., 2016) to perturb the HPS axis in the turquoise killifish by targeting exon 2 of the killifish gh1 (Figure 1B, top). Crossing F0 founders with wild-type fish, allowed us to identify a 4 bp deletion in F1 fish that could cause a frameshift mutation. The gh1\u03944/+ heterozygous mutants were viable and fecund, and were used to generate homozygous gh1\u03944/\u03944 mutants for phenotypic analysis.\n\n### Mutating the killifish growth hormone delays somatic growth and maturation\n\nBoth male and female gh1\u03944/\u03944 homozygous mutants are strikingly smaller than control fish (Figure 1B, bottom). The proportion of gh1\u03944/\u03944 mutants, out of the total number of genotyped individuals, was roughly half of the expected 25:50:25 Mendelian distribution (Figure 1\u2014figure supplement 1A). Most of this reduction can be attributed to their significantly smaller size, since smaller fish are more easily outcompeted in the communal tanks until individually housed following genotyping (at 4 weeks of age). No growth phenotype was detected in heterozygous fish (Figure 1\u2014figure supplement 1B), possibly due to the over saturated GH expression required for rapid killifish growth.\n\nQuantifying fish length, indicated that while both males and females are roughly 40% smaller than wild-type fish (Figure 2A), they remain fertile (Figure 2B). However, their slow growth is coupled with a significant delay in the onset of maturity (Figure 2B), and a proportional delay in peak fertility (Figure 2C, left). The maximal number of eggs at peak fertility is also reduced in mutant couples (Figure 2C, right). This difference in reproductive output is probably a result of the smaller size of the female body cavity and ovaries (Figure 2\u2014figure supplement 1A), and the fact that egg size remains unchanged (Figure 2\u2014figure supplement 1B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85960/elife-85960-fig2-v1.jpg)\n\n**Figure 2.:** (A) Quantification of somatic growth (standard length) of 8-week-old WT or gh1\u03944/\u03944 mutants: males (left) and females (right), n\u22656 individuals from each experimental group. Error bars show mean \u2009\u00b1\u2009SEM. Significance was calculated using one-way ANOVA with a Sidak post-hoc comparing the male and female mutants to the respective WT. Exact p-values are indicated. The relative size of the mutant fish, as compared to the corresponding controls, is indicated as %. (B) Quantification of reproductive output in gh1\u03944/\u03944 mutant pairs over time. Each dot represents the mean number of eggs of the indicated genotypes, per week of egg collection. There were three independent mutant pairs and seven WT pairs. Error bars show mean \u2009\u00b1\u2009SEM. Significance was calculated using repeated measures two-way ANOVA with a Sidak post-hoc compared to the WT. Exact p-values are indicated. (C) Left: Quantification of the timing of peak fertility of gh1\u03944/\u03944 mutant pairs. Each dot represents the age (in weeks) at which a breeding pair gave the maximal number of eggs. Right: reproductive output of gh1\u03944/\u03944 mutant pairs at peak fertility. Each dot represents the maximal number of eggs per week of a single breeding pair under the indicated experimental conditions. This figure uses the data presented in B. Error bars show mean \u2009\u00b1\u2009SEM. Significance was calculated using an unpaired Student\u2019s t-test. Exact p-values are indicated. (D) Representative histological sections, depicting ovaries and testis of the indicated genotypes. n\u22654 individuals (two-month-old), from each genotype. Scale bar: 50 \u00b5m. PG: primary growth; PV: pre-vitellogenic; V: vitellogenic. SG: spermatogonia; SC: spermatocytes; ST: spermatids; SZ: spermatozoa. (E) Distribution of oocyte development stages. Data are presented as the proportion of each developmental stage of the indicated genotypes. n\u22654 individuals for each experimental group. Significance was measured by \u03c72 test with the WT value as the expected model and FDR correction. Percentages and exact p-values are indicated. Oocyte developmental stages as previously reported (Longenecker and Langston, 2016) are indicated as follows: PG: primary growth; PV: pre-vitellogenic; V: vitellogenic; M: Mature. (F) Quantification of sperm maturation, examples in D. Data are presented as the proportion of each developmental stage of the indicated genotypes. n\u22654 individuals for each experimental group. Significance was measured by \u03c72 test with the WT value as the expected model and FDR correction. Percentages and exact p-values are indicated. Sperm developmental stages as previously reported (Longenecker and Langston, 2016) are indicated as follows: SG: spermatogonia; SC: spermatocytes; ST: spermatids; SZ: spermatozoa.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85960/elife-85960-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative histological sections depicting the body cavity, including ovaries of the indicated genotypes. N\u22654 individuals (two-month-old), from each genotype. Scale bar: 500 \u00b5m. (B) Left: quantification of the size (diameter) of eggs laid by WT gh1+/\u03944or gh1\u03944/\u03944 mutants. n\u22657 eggs from each experimental group. Error bars show mean \u2009\u00b1\u2009SEM. Significance was calculated using one-way ANOVA. Exact p-values are indicated. Right: representative images of eggs laid by fish of the indicated genotypes. Scale bar: 1 mm.\n\nTo explore germline maturation at greater detail, we stained 2-month-old fish gonads with hematoxylin & eosin (H&E). Specifically, we examined whether GH deficiency causes changes in germ cell development, by quantifying the proportion of germ cells at each developmental stage in both sexes (Figure 2D\u2013F). Interestingly, the results revealed that once the mutants reach maturity, oocyte, and sperm maturation are generally unaffected by the deficiency of growth hormone. Taken together, our findings demonstrate that like in mammalian models (Zaczek et al., 2002; Danilovich et al., 1999), GH deficiency delays both somatic growth and reproduction.\n\n### Developing an efficient and scalable method to rescue hormonal perturbations\n\nIn order to rescue GH deficiency, we developed a gain-of-function system in which a hormone of interest can be ectopically expressed by optimizing intramuscular electroporation (Figure 3A, and see Materials and methods; Callahan et al., 2018; Terova et al., 2013; Rao et al., 2008; Thummel et al., 2011). Gh1 from turquoise killifish cDNA was cloned upstream to a cassette encoding for GFP, and separated by the T2A self-cleaving peptide (Liu et al., 2017; Figure 3A, left). We injected the construct (~3 \u00b5g, in a volume of 3 \u00b5l) into the muscle of WT fish, and imaged GFP expression 72 hr after electroporation (Figure 3A, right). Testing injected but non-electroporated fish as controls further confirmed the contribution of the electroporation procedure (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85960/elife-85960-fig3-v1.jpg)\n\n**Figure 3.:** (A) Left: schematic illustration of the gain-of-function plasmid, and intramuscular ectopic plasmid electroporation. Right: GFP is visible following the electroporation of a plasmid encoding for GH-T2A-GFP. (B) Representative images of the transgenic Killibow line (Rozenberg et al., 2023a) (expressing dTomato under the ubiquitin promoter, in red), injected with a plasmid expressing CMV:GFP (green), either without (top) or with (bottom) electroporation. n\u22654 from each experimental group. (C) Immunofluorescence for GH expression (red) on muscle cryosections of electroporated fish. GFP expression is shown in green, and nuclear staining (DAPI) in blue. Representative image from each experimental group (n\u22653). Scale bar: 50 \u00b5m. (D) Left: Quantification of somatic growth (standard length) of 12-week-old gh1\u03944/\u03944 mutants following electroporation of a gh1-T2A-GFP plasmid as compared to WT control and controls injected with an empty vector: females (left) and males (center), n\u22654 individuals from each experimental group. Error bars show mean \u2009\u00b1\u2009SEM. Significance was calculated using one-way ANOVA with a Dunnet post-hoc compared to the WT. Exact p-values are indicated. The relative size of the mutant fish as compared to the corresponding controls is indicated as %. Right: Representative images of 12-week-old males (left) and females (right) from the indicated experimental groups. Scale bar: 3 mm. (E) Quantification of reproductive output in rescued gh1\u03944/\u03944 mutant pairs. Each dot represents the number of eggs per indicated breeding pair, per week of egg collection. Error bars show mean \u2009\u00b1\u2009SEM. n\u22653 pairs for each experimental group. Error bars show mean \u2009\u00b1\u2009SEM. Significance was calculated using one-way ANOVA with a Dunnet post-hoc compared to the WT. Exact p-values are indicated. (F) Representative images of ovaries from fish of the indicated experimental group. mature eggs are marked by a dashed circle. Scale bar: 1 mm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85960/elife-85960-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Immunofluorescence for GH expression (red) on muscle cryosections of the indicated gh1\u03944/\u03944 mutants. GFP expression is shown in green, and nuclear staining (DAPI) in blue. Scale bar: 50 \u00b5m. (B) Bottom: Quantification of the ratio between length and height of indicated fish. Significance was calculated using one-way ANOVA. Exact p-values are indicated. Top: a schematic model of the measurements used.\n\nSince GH and GFP are co-translated, they should maintain a 1:1 ratio, and since the GFP tag is removed after the self-cleavage, hormonal secretion and function is expected to be unaffected. Thus, this approach enables faithful visualization of the electroporation efficiency, which serves as a proxy for hormone expression. GH expression, specifically in GFP-positive muscle fibers, could be directly detected by immunofluorescence in both WT fish (Figure 3C) and gh1\u03944/\u03944 mutants (Figure 3\u2014figure supplement 1A).\n\nAs the next step, we electroporated the same construct into the muscle of male and female gh1\u03944/\u03944 mutant fish and monitored their somatic growth, with an empty vector containing T2A-GFP electroporated as a control. A moderate increase in average size was detected 3\u20134 weeks following electroporation (Figure 3D), with electroporated male and female mutants being ~10% larger than non-electroporated specimens (Figure 3D). Fish retain normal body dimensions (Figure 3\u2014figure supplement 1B), suggesting uniform body-wide hormone effect. This partial phenotypic rescue was observed in both males and females, but was more pronounced in the larger males (Figure 3D).\n\nThe partial rescue in somatic growth might be due to the age at intervention. Specifically, electroporation was performed at 8 weeks of age, which is already past the period during which the fish exhibit a growth spurt and the onset of puberty. This timepoint was selected because of the difficulties in injection and electroporation in the extremely small young mutants. In contrast to the partial growth rescue, reproductive defects were fully rescued in GH-electroporated mutant couples (Figure 3E), as evidenced by an increase in the size of the ovary (Figure 3F). Together, these results demonstrate that ectopic muscle electroporation can rescue many aspects of GH deficiency.\n\n### Reversible perturbation of the reproductive axis\n\nWe also mutated two additional representative pituitary hormones, namely follicle and thyroid stimulating hormones (Figures 1A and 4A). Disruption of thyroid hormone signaling produces both reproductive defects (lack of mature oocytes) as well as growth defects in both mice (Tsujino et al., 2013) and zebrafish (Song et al., 2021). Accordingly, homozygous tshb\u039410/\u039410 killifish mutants display growth malformations (i.e. altered length/height ratio), as well as defects in pigmentation and in oocyte maturation (Figure 4B and C). These observations demonstrate that the pituitary-thyroid axis can be successfully modeled in killifish.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85960/elife-85960-fig4-v1.jpg)\n\n**Figure 4.:** (A) Generation of CRISPR mutants for fshb and tshb, depicting the guide RNA (gRNA) targets (red), protospacer adjacent motif (PAM, in bold), and indels. Red asterisk marks the targeted exon. (B) Left: comparison of 2-month-old WT (top) and tshb\u039410/\u039410 male fish (bottom). Black arrows highlight tail melanocytes, while arrowheads indicate alterations in body shape. Right: representative histological sections demonstrating that 1-month-old tshb\u039410/\u039410 fish (right) lack mature oocytes compared to WT ovaries (left). Oocyte developmental stages as reported previously (Longenecker and Langston, 2016) are: PG: primary growth; PV: pre-vitellogenic; V: vitellogenic; M: Mature. Scale bar: 100 \u00b5m. (C) Left: Quantification of the ratio between length and height of experimental fish as indicated. Significance was calculated using an unpaired Student\u2019s t-test. Exact p-values are indicated. Right: a schematic model of the measurements used. (D) Representative histological sections, depicting 1-month-old ovaries of the indicated genotypes. n\u22654 individuals from each genotype. Scale bar: 250 \u00b5m. Oocyte developmental stages as reported previously (Longenecker and Langston, 2016) are: PG: primary growth; PV: pre-vitellogenic; V: vitellogenic; M: Mature. (E) Representative histological sections of ovaries in one-month-old fshbin1/in1mutant females, one week following electroporation of an fshb-T2A-GFP plasmid. Representative of n\u22653 individuals Oocyte developmental stages as reported previously (Longenecker and Langston, 2016) are: PG: primary growth; PV: pre-vitellogenic; V: vitellogenic; M: Mature. Scale bar: 250 \u00b5m (F) Left: proportion of histological sections in which at least one mature egg has been detected. Significance was calculated using Fisher\u2019s exact test with an FDR correction, Exact P-values are indicated. Right: quantification of female fertility. Each dot represents the number of eggs per indicated breeding pair, per week of egg collection. The data are from at least 3 independent pairs and 4 independent collections. Error bars show mean \u2009\u00b1\u2009SEM with individual points. Significance was calculated using one-way ANOVA with a Dunnet post-hoc compared to the WT and exact p-value is indicated.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85960/elife-85960-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Quantification of fertility of fshbin1/+ fish. Each dot represents the number of eggs per indicated breeding pair, per week of egg collection. The data are from at least 2 independent pairs and 3 independent collections. Error bars show mean \u2009\u00b1\u2009SEM with individual points. Significance was calculated using an unpaired Student\u2019s t-test and the exact p-value is indicated. The experiment in this panel and panel C were performed together and share the same WT controls. (B) Quantification of fertility of fshbin/in1 fish rescued with a plasmid expressing FSHB fused to GFP. Each dot represents the number of eggs per indicated breeding pair, per week of egg collection. The data are from at least three independent pairs and four independent collections. Error bars show mean \u2009\u00b1\u2009SEM with individual points. Significance was calculated using an unpaired Student\u2019s t-test and the exact p-value is indicated. The experiment in this panel and panel B were performed together and share the same WT controls. (C) Representative image of WT ovaries from a non-injected control (top) and a fish injected with a plasmid expressing FSHB fused to GFP (bottom). Green arrow indicates faint GFP expression. Scale bar: 1 mm.\n\nFinally, in order to investigate whether the extremely rapid sexual maturation in killifish (Harel, 2022; Vrt\u00edlek et al., 2018) follows vertebrate-conserved regulatory networks, we perturbed the pituitary-gonadal reproductive axis. Specifically, we imaged H&E stained tissue sections from fshbin1/in1 mutants and WT females (n>4 for each experimental condition). Our findings demonstrated a striking reduction in mature oocytes in homozygous fshbin1/in1 females (Figure 4D, representative image), indicating a role for FSHB in advanced stages of oogenesis.\n\nThe versatility of our gain-of-function approach, and the ability to restore mature oocytes in fshbin1/in1 females was demonstrated by cloning fshb from turquoise killifish cDNA, and using a CMV:fshb-T2A-GFP plasmid to rescue mutant fish as described above (Figure 4E). Excitingly, while oocyte maturation and fertility were compromised in fshbin1/in1 females, plasmid electroporation fully restored reproduction to WT levels (Figure 4F). The fertility of fshbin1/+ females was unaffected (Figure 4\u2014figure supplement 1A), suggesting that, as seen with GH signaling, reducing hormonal concentrations by half can still leave enough for phenotypic saturation.\n\nTo attempt to visualize circulating hormones, we removed the T2A linker from the electroporation plasmid, so that a FSHB-GFP fusion protein could be produced. However, while reproductive defects were fully restored following electroporation of the FSHB-GFP plasmid (Figure 4\u2014figure supplement 1B), only faint GFP signals were detected in the gonads (Figure 4\u2014figure supplement 1C), possibly due to a body-wide dilution, and the observation that very low concentrations of hormone are sufficient for functional stimulation.\n\n### Developing a tunable expression system that is compatible with pulsatile release\n\nIn humans, the regulation of reproductive processes, including puberty and menstrual cycles, depends on precise temporal changes in hormone levels (Taylor et al., 2019). For example, gonadotropin-releasing hormone (GnRH) is required to stimulate the release of LH and FSH in prepubescent girls. At a maximum, the peak amplitude of LH increases about 10-fold, with only a doubling of the FSH pulse (Taylor et al., 2019) (see a schematic diagram in Figure 5A, top). After puberty, a specific sequence is also critical for ovulation (Figure 5A, bottom).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/85960/elife-85960-fig5-v1.jpg)\n\n**Figure 5.:** (A) A schematic illustration depicting complex expression levels of LH (red line) and FSH (green line) during puberty (top) and ovulation (bottom) in human females. Adapted from Taylor et al., 2019. (B) Top: electroporation of the indicated plasmid concentrations. GFP signal (green arrowheads) and lack of signal (white arrowheads) are shown. n\u22653 for each experimental condition. Scale bar = 1 mm. Bottom: electroporation of the indicated plasmids. GFP signal (green arrowheads) and dTomato signal (red arrowheads) are shown. Scale bar = 1 mm. (C) Quantification of GFP intensity (arbitrary units) in muscle of fish injected with 500 ng or 5 \u03bcg of a plasmid encoding for CMV:GFP. n\u22653 for each experimental condition. Error bars show mean \u2009\u00b1\u2009SEM. Significance was calculated using an unpaired Student\u2019s t-test and the exact p-value is indicated. (D) Right: Quantification of fertility over time of fshbin/in1 fish rescued with a plasmid expressing FSHB. Each dot represents the number of eggs per indicated breeding pair, per week of egg collection. The data are from at least four independent pairs and four independent collections each month. Error bars show mean \u2009\u00b1\u2009SEM with individual points. Significance was calculated using a Mixed Effects Model. Exact p-values are indicated.(E) Top: schematic illustration showing electroporation of a plasmid with a doxycycline-inducible promoter, coding for a desired protein (ProteinX) and tagged with a T2A-GFP. Bottom: a GFP signal is observed (green arrowheads) following Dox treatment. In control fish (-Dox), there is no detectable signal (white arrowheads). n\u22653 for each experimental condition. Scale bar = 1 mm. (F) Quantification of reproductive output over time in fshbin/in1 females rescued with a plasmid expressing FSHB under Dox induction. Each dot represents the mean number of eggs of the indicated experimental group, per week of egg collection. n\u22653 for each experimental condition. Timing of electroporation and Dox treatment is indicated. Error bars show mean \u2009\u00b1\u2009SEM. Significance was calculated using a Mixed-Effects Model. Exact p-values are indicated.\n\nWith the aim of achieving tunable control of hormonal levels, we electroporated a wide range (24 ng-3 \u00b5g) of plasmid concentrations. This produced a dose-dependent GFP expression (Figure 5B, top), which was relatively reproducible (Figure 5C). Injecting two plasmids encoding for hormones tagged by different fluorophores resulted in expression of both fluorophores indicating that the system is amenable to multiplexing (Figure 5B, bottom). Strikingly, monitoring fshbin1/in1-rescued fish, indicated that a single injection can stably restore the physiological effect on fertility for at least 2 months, with a full effect achieved even at a relatively low plasmid concentration (Figure 5D).\n\nWhile these experiments demonstrate the ability to control expression levels and perform multiplexed interventions, some expression patterns require delayed activation or reversible pulsations (Figure 5A). In order to address such issues, we introduced a Dox-inducible overexpression system (Figure 5E, top). This system includes a Dox-dependent transcriptional activator protein (rtTA) and a tet operator (tetO) containing promoter (TRE promoter) (Das et al., 2016) where the rtTA binds to the tetO promoter and activates gene expression only in the presence of doxycycline. Fish were electroporated with a tetOn:fshb-T2A-GFP plasmid we constructed and, 3 days later, were exposed to Dox for 72 hr. This resulted in a GFP signal (Figure 5d, bottom), thereby confirming the applicability of this approach in-vivo.\n\nOur Dox system was also used for functional interventions. Specifically, we electroporated the tetOn:fshb-T2A-GFP plasmid into fshbin1/in1 mutant females, which were then exposed to Dox for 72 hr and monitored weekly for changes in reproductive output. Interestingly, fertility defects were fully rescued after 2\u20133 weeks, but only within a narrow temporal window (Figure 5F). Electroporation of the plasmid without subsequent exposure to Dox was sufficient to produce a minor effect (Figure 5F), which could be attributed to promoter leakiness. This demonstrates that extremely low hormone levels are required to reach the threshold of a functional rescue. Thus, our findings indicate that this approach can successfully produce time- and dose-dependent hormone expression.\n\n## Discussion\n\nHere, we describe the development of a platform that can rapidly and reversibly manipulate life history traits in fish. Specifically, we genetically perturb pituitary hormones, and rescue hormone loss-of-function by ectopically expressing the missing hormones after intramuscular electroporation. This methodology can be used to demonstrate that the explosive growth and rapid puberty onset in killifish are regulated by vertebrate-conserved paradigms. Significantly, the naturally compressed killifish life cycle shortens experimental timescales, and allows for a quick physiological readout of both loss- and gain-of function. Together, this method is relatively high-throughput, and facilitates large-scale interrogation of peptide hormones in fish.\n\nEach hormonal manipulation produced distinct and overlapping effects on somatic growth and reproduction. This apparent co-regulation is in accordance with several evolutionary theories that predict functional trade-offs between life-history traits (Austad and Hoffman, 2018; Maklakov and Chapman, 2019; Kirkwood and Holliday, 1979; Kirkwood and Austad, 2000). Similarly, pituitary hormones also link somatic growth with organismal lifespan in the long-lived Ames and Snell dwarf mice, which suffer from a deficiency of pituitary growth hormone (among other hormones; Flurkey et al., 2002; Flurkey et al., 2001; Bartke and Brown-Borg, 2004). Mice with a mutated growth hormone receptor are long-lived (List et al., 2011), and in humans, longer lives and cancer protection are observed in Laron Syndrome patients (dwarfism due to a growth hormone receptor mutation; Laron et al., 2017). These complex relationships raise interesting predictions. For example, could a specific delay in maturity drive proportional changes in vertebrate lifespan? A better understanding of these mechanisms will allow us to uncouple life-history traits, such as somatic growth and reproduction (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/85960/elife-85960-fig6-v1.jpg)\n\n**Figure 6.:** (A) Onset of maturity can negatively affect growth. Identifying the molecular mechanisms that regulate these seemingly opposing traits, and potentially uncoupling them, holds great promise for basic research and aquaculture.\n\nOur hormonal perturbations highlight several interesting aspects in killifish. One observation is that a very low level of FSHB is required to support normal reproduction. This might be linked to the extremely rapid maturation process and asynchronous cycle in killifish, which might require high sensitivity. In addition, the delay between Dox treatment and the maximal effect on reproduction (Figure 5F), is probably linked to the length of the natural egg maturation process in killifish. The question of whether rescue of growth prior to the onset of puberty can indeed lead to a more pronounced phenotype will require further investigation.\n\nNotably, some hormonal perturbations in killifish mutants seem to recapitulate mammalian models (Zaczek et al., 2002; Danilovich et al., 1999) more faithfully than similar alterations in zebrafish (Hu et al., 2019). For example, while zebrafish gh mutants exhibit an 80% death rate, possibly due to gut malformations, the lower death rate seen in killifish is apparently due only to housing conditions, and the fish display relatively normal gut architecture (Figure 2\u2014figure supplement 1A). In addition, while zebrafish gh mutants display an arrest of female maturity, with only a few mutant females undergoing puberty, fertility is merely delayed in killifish HPS axis mutants and fecundity is reduced due to spatial constraints, while all germline developmental stages are normally present (Figure 2D\u2013F, and Figure 2\u2014figure supplement 1A). In contrast to mice (Rowland et al., 2005) and zebrafish (Hu et al., 2019), a heterozygous gh1 mutation does not have an obvious effect on the growth of killifish. This phenomenon may be due to the explosive growth killifish exhibit, or to the possibility that heterozygotes killifish are merely able to \u2018catch up\u2019 (similar to zebrafish Hu et al., 2019).\n\nSo far, we and others have primarily perturbed one hormone at a time. However, in the real world, multiple signals are integrated to determine the duration and onset of life-history traits. Importantly, our method is compatible with multiplexing (Figure 5B), and could allow an investigation of the combinatorial effects of several hormones. Similarly, the dose-dependent and doxycycline-inducible system can be used to provide information about the temporal windows required to achieve a sequential or reversible gain-of-function.\n\nWe predict that our approach will be of great use in the optimization of commercially valuable traits in aquaculture (Taranger et al., 2010). For example, current manipulations in certain eel species are extremely time consuming and require ~16 weekly injections of pituitary extracts to induce maturation (Okamura et al., 2014). Our system, which has a long-lasting effect without modifying the host genome, will allow simple plasmid electroporation to replace traditional methods of hormone administration for the purposes of manipulation of the reproductive cycle, growth, and resistance to disease.\n\nWe have recently demonstrated that the killifish model can be used to identify novel regulators of aging, which involve systemic modulation of metabolism (Astre et al., 2022a). Therefore, it should be possible to utilize this platform to investigate systemic factors as modifiers of health and longevity. For example, recent studies have demonstrated that circulating factors in young plasma can rejuvenate old mice (Baht et al., 2015; Conboy et al., 2005; Huang et al., 2018; Katsimpardi et al., 2014; Loffredo et al., 2013; Salpeter et al., 2013; Sinha et al., 2014; Villeda et al., 2011; Villeda et al., 2014; Grunewald et al., 2021). So far, only a handful of these factors, including VEGF (Grunewald et al., 2021) (Vascular Endothelial Growth Factor), and GDF11 (Sinha et al., 2014) (Growth Differentiation Factor 11) have been experimentally tested, and there are many possible candidates for age-dependent changes in the plasma proteome that remain to be explored (Lehallier et al., 2019). In conclusion, our platform significantly advances the state-of the-art by providing easy and efficient tools that can be used to dissect the mechanisms that regulate vertebrate life history at an unprecedented resolution.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (N. furzeri)</td>\n      <td>gh1</td>\n      <td>NCBI</td>\n      <td>Gene ID: 107390293</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (N. furzeri)</td>\n      <td>fshb</td>\n      <td>NCBI</td>\n      <td>Gene ID: 107381959</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (N. furzeri)</td>\n      <td>tshb</td>\n      <td>NCBI</td>\n      <td>Gene ID: 129164764</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(N. furzeri)</td>\n      <td>gh1\u03944</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Line maintained at the Harel lab</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(N. furzeri)</td>\n      <td>fshbin1</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Line maintained at the Harel lab</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent(N. furzeri)</td>\n      <td>tshb\u039410</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Line maintained at the Harel lab</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CMV:gh1-T2A-GFP</td>\n      <td>This paper, Addgene</td>\n      <td>194883</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CMV:fshb-T2A-GFP</td>\n      <td>This paper, Addgene</td>\n      <td>194356</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Tol2-TLCV2</td>\n      <td>This paper, Addgene</td>\n      <td>196331</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>TetOn:fshb-T2A-GFP</td>\n      <td>This paper, Addgene</td>\n      <td>205595</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>fshb-GFP fused</td>\n      <td>This paper, Addgene</td>\n      <td>205596</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>fshb-t2a-dTOMATO</td>\n      <td>This paper, Addgene</td>\n      <td>205597</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti rabbit polyclonal anti-tilpia-GH</td>\n      <td>Levavi-Sivan lab</td>\n      <td></td>\n      <td>(1:100)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>fshb sequencing forward</td>\n      <td>This paper</td>\n      <td></td>\n      <td>GAGATCGCGGGCATGAACT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>fshb sequencing reverse</td>\n      <td>This paper</td>\n      <td></td>\n      <td>ACCACACTCATCCACACCAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>gh1 sequencing forward</td>\n      <td>This paper</td>\n      <td></td>\n      <td>TAACCCTAGCCCATGTCGGT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>gh1 sequencing reverse</td>\n      <td>This paper</td>\n      <td></td>\n      <td>TTTTGTTGAGCTGACGCTGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>tshb sequencing forward</td>\n      <td>This paper</td>\n      <td></td>\n      <td>TTGGAGTAAACAGGACAGCCG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>tshb sequencing reverse</td>\n      <td>This paper</td>\n      <td></td>\n      <td>TTCCCCGTGTGTCATTCAGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>fshb cloning forward</td>\n      <td>This paper</td>\n      <td></td>\n      <td>ATGCAACTGGTTGTCATGGCAGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>fshb cloning reverse</td>\n      <td>This paper</td>\n      <td></td>\n      <td>ACAGCCGAGTACGTGTGGATGGAAGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>gh1 cloning forward</td>\n      <td>This paper</td>\n      <td></td>\n      <td>ATGGACAGAGCCCTCCTCCTCC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>gh1 cloning reverse</td>\n      <td>This paper</td>\n      <td></td>\n      <td>CAGAGTGCAGTTTGCTTCTGGA</td>\n    </tr>\n  </tbody>\n</table>\n\n### Experimental model and subject details\n\n#### Data analysis\n\nNo data was excluded during the analysis, as no significant outliers or classical exclusion criteria (e.g. unnatural death) occurred during experimentation. We assumed normality for all data, as commonly applied for physiological traits (such as size, fertility etc.). Therefore, a Student\u2019s t-test could be used for comparing two groups, and ANOVA for more than two groups. In case of repeated measures over time, we used a two-way repeated measures ANOVA test with time as one variable. To calculate proportions within a group we used a \u03c72 test or Fisher\u2019s exact test. For biological replicates, we used parallel measurements of individual fish that captures random variation. Technical replicates were considered when the same experiment was conducted several times, such as several egg collections from the mating pair. Power analysis was performed for growth measurements, predicting a reduction of 50% in size with an alpha of 0.05 and power of 80%:\n\n$k=\\frac{n_{2}}{n_{1}}=1$\n\n$$\nn_{1}=\\frac{\\sigma_{1}^{2}+\\sigma_{2}^{2}/kz_{1-\\frac{\\alpha}{2}}+z_{1-\\beta}^{2}}{\\Delta^{2}}\n$$\n\n\n\n$$\nn_{1}=\\frac{5^{2}+\\frac{5^{2}}{1}1.96+0.84^{2}}{12.5^{2}}\n$$\n\n\n\n$$\nn_{1}=3\n$$\n\n\n\n$$\nn_{2}=kn_{1}=3\n$$\n\n#### African turquoise killifish strain, husbandry, and maintenance\n\nThe African turquoise killifish (GRZ strain) was housed as previously described (Astre et al., 2022b; Harel et al., 2016). Fish were grown at the Hebrew University of Jerusalem (Aquazone ltd, Israel) in a central filtration recirculating system at 28 \u00b0C, with a 12 hr light/dark cycle. Fish were fed with live Artemia until the age of 2 weeks (#109448, Primo), and starting week 3, fish were fed three times a day on weekdays (and once a day on weekends), with GEMMA Micro 500 Fish Diet (Skretting Zebrafish, USA), supplemented with Artemia once a day. All genetic models (described below) were maintained as heterozygous and propagated by crossing with wild-type fish. All turquoise killifish care and uses were approved by the Subcommittee on Research Animal Care at the Hebrew University of Jerusalem (IACUC protocols #NS-18-15397-2 and #NS-22-16915-3).\n\n#### CRISPR/Cas9 target prediction and gRNA synthesis\n\nCRISPR/Cas9 genome-editing protocols were performed as described previously (Astre et al., 2022b). Briefly, evolutionary conserved regions upstream of functional or active protein domains were selected for targeting the selected genes. gRNA target sites were identified using CHOPCHOP (https://chopchop.rc.fas.harvard.edu/) (Labun et al., 2019), and are shown below. PAM sites are shown in bold, and when needed, the first base-pair was changed to a \u2018G\u2019 to comply with the T7 promoter.\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\">Gene name</th>\n      <th>gRNA sequence</th>\n      <th>Exon number</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>gh1</td>\n      <td>(XM_015966915.1)</td>\n      <td>[G/A]GAAGAGTCTTTGAGCGAGCAGG</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>fshb</td>\n      <td>(XM_015953905.1)</td>\n      <td>[G/T]GAGGTGAACACCTGTAACGGGG</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>tshb</td>\n      <td>(XM_015958655.1)</td>\n      <td>[G/A]GCCGGGTAGGATGACGGTGCGG</td>\n      <td>2</td>\n    </tr>\n  </tbody>\n</table>\n\nDesign of variable oligonucleotides, and hybridization with a universal reverse oligonucleotide was performed according to Astre et al., 2022b, and the resulting products were used as a template for in vitro transcription. gRNAs were in vitro transcribed and purified using a quarter reaction of TranscriptAid T7 High Yield Transcription Kit (Thermo Scientific #K0441), according to the manufacturer\u2019s protocol.\n\n#### Production of Cas9 mRNA\n\nExperiments were performed as described previously (Harel et al., 2015; Astre et al., 2022b). The pCS2-nCas9n expression vector was used to produce Cas9 mRNA (Addgene, #47929; Jao et al., 2013). Capped and polyadenylated Cas9 mRNA was in vitro transcribed and purified using the mMESSAGE mMACHINE SP6 ULTRA (Thermo Fisher # AM1340).\n\n#### Microinjection of turquoise killifish embryos and generation of mutant fish using CRISPR/Cas9\n\nMicroinjection of turquoise killifish embryos was performed according to Astre et al., 2022b. Briefly, nCas9n-encoding mRNA (300 ng/\u03bcL) and gRNA (30 ng/\u03bcL) were mixed with phenol-red (P0290, Sigma-Aldrich) and co-injected into one-cell stage fish embryos. Sanger DNA sequencing was used for detecting successful germline transmission on F1 embryos. Fish with desired alleles were outcrossed further to minimize potential off-target effects, and maintained as stable lines by genotyping using the KASP genotyping platform (Biosearch Technologies) with custom made primers. All primers used in generating the mutations can be found in the Key Resources Table.\n\n### Method details\n\n#### Growth measurements\n\nBoth sexes were measured by imaging at the indicated timepoints with a Canon Digital camera EOS 250D, prime lens Canon EF 40 mm f/2.8 STM. To limit vertical movement during imaging, fish were placed in a tank with 3 cm deep water, and images were taken from the top using fixed lighting and height. A ruler was included in each image to provide an accurate scale. Body standard length was measured from the tip of the snout to the posterior end of the last vertebra (excluding the length of the tail fin). Height of the fish was measured from the posterior base of the dorsal fin to the posterior base of the anal fin. Measurements were preformed using Matlab (R2021a), by converting pixel number to centimeters using the included reference ruler. All fish measured were siblings, and for blinding, genotypes were determined after the experiments.\n\n#### Fertility analysis\n\nFish fertility was evaluated as described previously (Harel et al., 2015; Astre et al., 2022a). Briefly, three to seven independent age-matched pairs of fish (one male, one female) of the indicated genotypes were placed in the same tank. All breeding pairs were allowed to continuously breed on sand trays, and embryos were collected and counted on a weekly basis. Results were expressed as the number of eggs per couple per week of egg-lay. Significance compared to the WT was calculated using repeated measures two-way ANOVA with a Sidak post-hoc.\n\n### Histology\n\n#### Hematoxylin and eosin\n\nTissues samples were processed as described previously (Harel et al., 2015; Astre et al., 2022b; Harel and Brunet, 2015; Astre et al., 2021; Harel et al., 2022; Nathan et al., 2008; Theis et al., 2010; Harel and Tzahor, 2012; Harel et al., 2012; Benayoun et al., 2019; Rozenberg et al., 2023b; Astre et al., 2022a; Harel et al., 2016; Rozenberg et al., 2023a; Van Keymeulen et al., 2009; Moses and Harel, 2023; Valenzano et al., 2015; Harel et al., 2009; Gruenbaum-Cohen et al., 2012). Briefly, fish were euthanized with 500 mg/l tricaine (MS222, #A5040, Sigma). Paraffin sections were prepared by opening the body cavity of the fish and following a 72 hr fixation in 4% PFA solution at 4 \u00b0C, samples were dehydrated and embedded in paraffin using standard procedures. Sections of 5\u201310 \u03bcm were stained with Hematoxylin and Eosin, and examined by microscopy. A fully motorized Olympus IX23 microscope with an Olympus DP28 camera was used to collect images. Stages of oocyte and spermatogenic cell development were identified as described previously (Longenecker and Langston, 2016).\n\n#### Immunohistochemistry\n\nFish were euthanized and dissected as previously described (Astre et al., 2022b). Muscle tissue was fixed in 4% PFA at 4 \u00b0C for 2 hr, and immersed in an OCT- sucrose solution for 2 hr at 4 \u00b0C. The OCT- sucrose solution is composed of 20% sucrose w/v (Bio-Lab #001922059100) and 30% OCT v/v (Scigen Scientific Gardena #4586) in PBS. Tissues were then transferred to OCT (12 h at 4 \u00b0C) and frozen in liquid nitrogen. All immersions were performed with mild shaking. Serial 20 \u00b5m sections were taken using a cryostat, airdried, and stored at \u201320 \u00b0C. For immunostaining, slides were washed 3 X in PBS, and permeabilized for 10 min in a permeabilization buffer containing 0.1% Triton (Avanator Performance materials #X198-07) and 1% BSA (Sigma-Aldritch #A7906 in PBS). Sections were then blocked for 10 min (DAKO #X0909), and incubated with primary antibodies overnight. The following primary antibody was used: rabbit anti-Nile Tilapia GH antibody (1:100), a generous gift from Prof. Berta Levavi-Sivan. After several washes, the sections were incubated for 1 hr at room temperature with donkey anti rabbit Alexa Fluor 594 secondary antibody (Abcam #150064, 1:500) in antibody diluent (DAKO #S0809). After several washes, autofluorescence was quenched using TrueVIEW autofluorescence quenching kit (Vector Labs #SP8500) according to the manufacturer\u2019s protocol and mounted with VECTASHIELD containing DAPI (Vector Labs #30326). Samples were imaged using a fully motorized Olympus IX23 microscope with a Photometrics BSI camera, and processed in imageJ (Abr\u00e0moff et al., 2004).\n\n### Injection and ectopic over-expression of plasmids via electroporation\n\n#### Cloning of killifish cDNAs\n\nKillifish cDNAs were cloned from brain tissues from male and female killifish by homogenization in TRIreagent (Sigma #T9424) using 3 mm Nirosta disruption beads (PALBOREG FEDERAL #BL6693003000) and a tissue homogenizer (TissueLyser LT, Qiagen #85600). Total RNA was isolated from the lysed tissues using the Direct-zol RNA miniprep kit. (Zymo research #R2052), and the Verso cDNA Synthesis Kit (Thermo scientific #AB1453A) was used to prepare cDNA with random primers according to the manufacturer\u2019s protocol. cDNA for the gh1 and fshb was amplified using custom DNA oligonucleotides (Sigma) and Platinum SuperFi II DNA Polymerase (Invitrogen, #12361010). Primer sequences are available in the Key Resources Table. PCR products were purified (QIAquick PCR purification kit, Qiagen #28104) and sequence-verified. The sequence-verified ORFs were cloned using GIBSON (NEB, #E2611L) into the pLV-EGFP plasmid or our Dox inducible plasmid (#196331), which was modified such that each hormone is tagged with a GFP, separated by the T2A self-cleaving peptide (Liu et al., 2017). Plasmids and corresponding annotated maps are available via Addgene (#194356, #194883, #196331, # 205595, # 205596, #205597).\n\n#### In-vivo electroporation\n\nThe electroporation protocol was adapted from Callahan et al., 2018. Fish were sedated in MS222 (200 mg/l), and 3\u20135 \u00b5l plasmid solution (Plasmid concentration200-1000 ng/\u00b5l) containing Phenol Red for visualization (0.1% Sigma #P0290) was injected intramuscularly using a Nanofil syringe (WPI, #NANOFIL). Fish were then electroporated using 7 mm tweezer electrodes (NEP GENE #CUY650P10) with the ECM 830 generator. (BTX #45\u20130661). Electrodes were coated with wet cotton to minimize the risk to the fish. Fish were electroporated with 6 pulses of 28V (14 V for small fish, such as gh1\u03944/\u03944), for 60ms each with an interval of 1 s between each pulse. Bright field and florescent Images were recorded by a Leica MC190HD camera mounted on a Leica M156FC microscope. Variability of GFP intensity was calculated using ImageJ by measuring the \u2018integrated density\u2019 of the electroporated area and subtracting the area of electroporation times the mean intensity of the background (measured at three different points and then averaged).\n\n#### Dox inducible expression\n\nFish were injected with a modified version of the TLCV2 plasmid (Addgene #87360). This plasmid contains Dox induced Cas-9/GFP, which we modified to include Tol2 sites (Addgene #196331). Finally, we created a plasmid emcoding a Dox induced fshb-T2A-GFP (Addgene #205595) . Electroporation was performed as described above. Doxycycline treatment protocol was adapted from Campbell et al., 2012; West et al., 2014. Briefly, Doxycycline hyclate (Dox, Sigma-Aldrich #D9891) was dissolved in 100% ethanol at 10 mg/mL for storage, and was added to fish water for a final concentration of 10 \u03bcg/mL. Fish were treated for 72 hr, and fresh water with Dox was changed every 24 hr. Due to possible light sensitivity of the drug, tanks were protected from light during treatment. Immediately following the treatment fish were imaged using a Leica MC190HD camera mounted on a Leica M156FC microscope.\n",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "cf4b77f5-6bd2-44e8-8ff4-c2525d61f6f8",
+      "submission_id": "ea24d17c-9be3-4327-93e9-c26bd8038b98",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Dario Riccardo Valenzano, Leibniz Institute on Aging Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85960.sa0](https://doi.org/10.7554/eLife.85960.sa0)\n\nMoses and Harel generate a compelling set of novel molecular tools in African turquoise killifish, including the development of gain of function and dose dependent inducible expression systems for African turquoise killifish. These tools will help boost this budding model system for broad biotechnological applications, including the study of gene function in the context of aging in a relatively fast manner compared to other vertebrate models. The authors showcase the efficacy of their tools in the context of peptide hormones involved in growth and gonad development.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Dario Riccardo Valenzano, Leibniz Institute on Aging Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85960.sa1](https://doi.org/10.7554/eLife.85960.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A scalable platform for functional interrogation of peptide hormones in fish\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Dario Riccardo Valenzano as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Didier Stainier as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Eve Seuntjens (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The authors should validate their rescue model better (timing, expression levels, duration of rescue, whole body or local), including proper controls.\n\n2) The authors should provide a deeper characterization for the electroporation and Dox inducible system (see reviewer #3).\n\n3) The authors need to thoroughly revise the English in the written text.\n\n4) The manuscript does not obviously follow a question-driven flow and the authors do not make a compelling case about the necessity of developing such platform.\n\nThe manuscript could be framed as a tool/resource, showcasing the interventions with gh and fshb to support the tool.\n\nReviewer #1 (Recommendations for the authors):\n\nWhile I am a big fan of this work, I find the manuscript not thoroughly edited. There are several sentences that are hard to understand, starting with the abstract.\n\nAuthors should check and review extensively for improvements to the use of English. The abstract contains several arbitrary (non substantiated) statements (\"\u2026particularly in females\"' \"As killifish 20 maturation is germline-independent,\u2026\").\n\nOverall, I find this manuscript more as a container of successfully developed tools (about which I congratulate the authors) for the killifish community.\n\nI wonder whether eLife is the right fit for this work.\n\nI find a large disconnect between the way in which the manuscript is written and the quality of the figures. While the figures have a very high quality standard, Abstract, Introduction and Discussion are not doing justice to the work done, as they appear to be in an early draft format.\n\nScientific questions to address:\n\n\u2013 Do gh1-d4/d4 display embryos of similar size to the wt (line 77-80)?\n\n\u2013 \"our findings demonstrate that GH deficiency delays both somatic growth and maturity\". Was this known? Is this new? It's not clear what was the initial hypothesis. There seems to be no clear hypothesis to justify the experiment. The hypothesis needs to be spelled out more clearly.\n\n\u2013 Is the approach generally new? Or, rather, is the approach new in the specified model system (killifish)?\n\n\u2013 In figure 4: what is labelled as \"M\"? I see that \"M\" also appears in Figure 2. However, \"mature\" is an adjective, not a noun. The authors need to explain more clearly what is this structure.\n\n\u2013 line 176-177: \"Our method is compatible with multiplexing\". Do the authors know this already, have they multiplexed interventions or is this a speculation?\n\nReviewer #2 (Recommendations for the authors):\n\nIt is clear from Figure 2B that the gh1 deletion has a drastic impact on fertility in addition to somatic growth. The number of embryos per collection appears to be significantly lower as well. It is only mentioned in passing in the manuscript, but this aspect should be characterized and discussed in depth.\n\nThe statistics in Figure 2B are unclear. Are P-values from weekly pairwise comparison? If this is the case, the stages being compared are different because the mutant matures later, so I'm not sure what the statistics mean. If the goal is to compare delay in the onset of peak fertility, the statistics should be between the time it takes to reach the peak fertility. Alternatively, a different comparison based on the objective should be done.\n\nThe sections in Figure 2C appear to be from different parts of the mutant and WT ovaries. I am not an expert in histology, but I find it difficult to see the similarities between the two conditions. Can the authors provide a zoomed-out image and ensure that all the images used throughout the manuscript come from the same regions?\n\nIt is unclear if the authors detect endogenous or injected gh because electroporation is performed on WT fish (lines 97-103), which should have gh already. Therefore, WT injection is not a good controls for the electroporation efficiency. First, it needs to be established\u00a0that the mutant has no gh. An appropriate control for electroporation will be injecting gh plasmid construct in gh1-/- fish, and quantifying gh protein in isolated muscle before and after electroporation.\n\nA control GFP image after injection but before electroporation is also needed in Figure 3A.\n\nThe rescue experiment also needs a bit more characterization. First, Figure 3B needs the size data from mutant fish right before electroporation and after the increase in size. Second, pictures of the fish before and after the size increase should be included. Third, gh has a growth-promoting effect systematically on all tissues, including bones, cartilage, etc., which raises several interesting questions. Is the gh from the injected construct also transported throughout the body? Can it be detected in other tissues and organs? If not, what is the mechanism of the growth increase? It is important to characterize or discuss how the size increase is accomplished. Finally, it should be assessed if there is rescue of embryo production in injected fish (Figure 2B). Or is the effect restricted to growth only?\n\nThe rescue of the infertility phenotype due to fshb loss of function is interesting. The authors say that the plasmid is stably expressed for several weeks. Is the expression localized to muscle, or is fshb transported and detectable in the ovaries, where it is expected to act (Figure 4)?\n\nThe dose dependent gh1 expression needs to be quantified in dissected muscle using the gh1 antibody. GFP image is not convincing as a proxy for gh1 expression without proper controls (see above). Also, does this rescue the gh loss of function phenotype in a dose dependent manner?\n\nThe Dox inducible system is the most interesting part of this work. But in its current form, it is the most under-developed. It is unclear which gene is rescued here. And does it also rescue the associated phenotype in a dose dependent manner?\n\nMy final point concerns the study's diffused focus. The authors state that they are working on another manuscript with the detailed characterization of the defects due to fshb and other pituitary hormones, which is fine. But likely due to that, the current manuscript lacks details in the characterization of both the methods and the biology of phenotypes. In my opinion, it will be better to focus on one or two genes but thoroughly characterize every aspect of the tools and biology.\n\nReviewer #3 (Recommendations for the authors):\n\nValidation of the knockout models\n\nFor all hormones tested, are the genes you chose the only copies in the genome? Is there only 1 gh, fshb, tshb gene or are there duplicates? Have you measured plasmid concentrations of these hormones to validate the fact they are mutant? Or alternative ways to validate absence of hormone at protein level?\n\nRescue modalities\n\nRescue was induced by a single electroporation using a CMV-driven plasmid. How did you decide on the age of rescue? Have you tested different ages of rescue induction? If not, can you speculate on the outcome of such an experiment? Did you include a control where an empty plasmid was electroporated in the mutants? This would be the correct additional control to calculate your rescue percentage. The latter would be important for gh, where you seem to have a sex-specific difference in rescue efficiency. The females do not seem to be rescued efficiently: please adapt lines 109-110: this conclusion might only hold for male fish.\n\nHow long does overexpression last? Is this a lifelong effect?\n\nRegarding the \"dose-response\" in Figure 5B: Can you quantify this? Is there a limit to the overexpression? Electroporations are notoriously variable: what was the variability of your system? Can you comment?\n\nDoxycycline system\n\nHere, you use EF1a as a general promoter: how efficient is this promoter compared to CMV? The GFP signal you observe as a readout seems to be rather limited in expression compared to the previous overexpression systems: can you benchmark this system better? For instance can you rescue the gh or fshb ko phenotype using the doxycycline construct to prove the system is comparably efficient?\n",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c34b8a43-3831-4b66-8156-4b371225f941",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C1",
+      "claim": "Pituitary hormones play a central role in shaping vertebrate life history events, including growth, reproduction, metabolism, and aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Pituitary hormones play a central role in shaping vertebrate life history events, including growth, reproduction, metabolism, and aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about pituitary hormones that draws from established scientific consensus in endocrinology and vertebrate physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "3ac4d4b1-c0fb-48d3-8ee3-a610da4f58d4",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C2",
+      "claim": "The regulation of life history traits often requires precise control of hormone levels across diverse timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "The regulation of these traits often requires precise control of hormone levels across diverse timescales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Taylor et al., 2019, as indicated in the introduction section.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "0d33849b-97c1-456c-875e-b2d530ff16a7",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C3",
+      "claim": "Fine tuning circulating hormones in-vivo has traditionally been experimentally challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "However, fine tuning circulating hormones in-vivo has traditionally been experimentally challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the technical difficulties in hormonal manipulation experiments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "c286acea-2c2d-4124-bb83-112cdd8bf8f5",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C4",
+      "claim": "Mutation of gh1, fshb, and tshb alters somatic growth and reproduction in killifish.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of three primary pituitary hormones, growth hormone (gh1), follicle stimulating hormone (fshb), and thyroid stimulating hormone (tshb), alters somatic growth and reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript showing phenotypic changes in mutant fish.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "63113e54-e893-4572-b50e-21a18937f5ec",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C5",
+      "claim": "Killifish undergoes extremely rapid growth and maturity while relying on vertebrate-conserved genetic networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, suggesting that while the killifish undergoes extremely rapid growth and maturity, it still relies on vertebrate-conserved genetic networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that hormonal mutations produce expected phenotypes similar to other vertebrates.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "983a74ed-6b13-4265-80a3-93dd4882e639",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C6",
+      "claim": "A hormone tagged with a self-cleavable fluorescent reporter can be ectopically expressed in-vivo through intramuscular electroporation.",
+      "claim_type": "EXPLICIT",
+      "source": "As the next stage, we developed a gain-of-function vector system in which a hormone is tagged using a self-cleavable fluorescent reporter, and ectopically expressed in-vivo through intramuscular electroporation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing successful expression and functional rescue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "5e13e53d-9955-4b51-8069-881b8da8d221",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C7",
+      "claim": "A single electroporation can stably rescue phenotypes such as reproduction for several months.",
+      "claim_type": "EXPLICIT",
+      "source": "Following a single electroporation, phenotypes, such as reproduction, are stably rescued for several months.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing long-term fertility rescue in mutant fish.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "d6250304-8fe1-448a-9da4-e5d17fa4c0c2",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C8",
+      "claim": "The electroporation approach enables tunable and reversible expression through multiplexing, dose-dependent, and doxycycline-inducible systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we demonstrate the versatility of this approach by using multiplexing, dose-dependent, and doxycycline-inducible systems to achieve tunable and reversible expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing dose-dependent GFP expression and Dox-inducible rescue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "3a71fa64-26c6-437f-864d-3d6a61af558c",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C9",
+      "claim": "The method is relatively high-throughput and facilitates large-scale interrogation of life-history strategies in fish.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, this method is relatively high-throughput, and facilitates large-scale interrogation of life-history strategies in fish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simplicity and efficiency of the method described.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "d90698b7-fdc7-438b-a511-c99cbf064c79",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C10",
+      "claim": "This approach could be adapted for modifying aquaculture species and exploring pro-longevity interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, this approach could be adapted for modifying aquaculture species and exploring pro-longevity interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "022263df-9248-4e5c-9ad0-b584da40c837",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C11",
+      "claim": "Growth hormone is secreted from the pituitary gland and stimulates insulin-like growth factor 1 (IGF-1) production in peripheral tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "The hypothalamic\u2013pituitary\u2013somatic (HPS) axis involves the secretion of growth hormone (GH) from the pituitary gland and the consequent stimulation of insulin-like growth factor 1 (IGF-1) production in peripheral tissues (Le Gac et al., 1993; List et al., 2011; Canosa et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Le Gac et al., 1993; List et al., 2011; Canosa et al., 2007.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "0d3ff752-6382-48a3-afc3-1e038f4775b7",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C12",
+      "claim": "A 4 bp deletion in exon 2 of gh1 causes a frameshift mutation in killifish.",
+      "claim_type": "EXPLICIT",
+      "source": "Crossing F0 founders with wild-type fish, allowed us to identify a 4 bp deletion in F1 fish that could cause a frameshift mutation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequencing data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "b905391a-9b27-40ca-84d4-f2608bdf0994",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C13",
+      "claim": "gh1\u03944/+ heterozygous mutants are viable and fecund.",
+      "claim_type": "EXPLICIT",
+      "source": "The gh1\u03944/+ heterozygous mutants were viable and fecund, and were used to generate homozygous gh1\u03944/\u03944 mutants for phenotypic analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observational data from breeding experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "b134a7d7-ad87-4a68-84dc-605b8151eb45",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C14",
+      "claim": "Both male and female gh1\u03944/\u03944 homozygous mutants are strikingly smaller than control fish.",
+      "claim_type": "EXPLICIT",
+      "source": "Both male and female gh1\u03944/\u03944 homozygous mutants are strikingly smaller than control fish (Figure 1B, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by visual comparison in Figure 1B and quantitative measurements in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "8df30df8-d8ac-4c57-8347-4422418887d3",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C15",
+      "claim": "The proportion of gh1\u03944/\u03944 mutants was roughly half of the expected 25:50:25 Mendelian distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of gh1\u03944/\u03944 mutants, out of the total number of genotyped individuals, was roughly half of the expected 25:50:25 Mendelian distribution (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genotyping data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "564279b8-b99b-4947-848a-72bdc666d3ee",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C16",
+      "claim": "The reduction in gh1\u03944/\u03944 mutants can be attributed to their significantly smaller size making them more easily outcompeted in communal tanks.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of this reduction can be attributed to their significantly smaller size, since smaller fish are more easily outcompeted in the communal tanks until individually housed following genotyping (at 4 weeks of age).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on husbandry observations and the smaller size of mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "0ceb6013-62a0-4c9d-bc9e-b9f1e1f5ec19",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C17",
+      "claim": "No growth phenotype was detected in heterozygous gh1\u03944/+ fish.",
+      "claim_type": "EXPLICIT",
+      "source": "No growth phenotype was detected in heterozygous fish (Figure 1\u2014figure supplement 1B), possibly due to the over saturated GH expression required for rapid killifish growth.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative measurements shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "5d96cf22-e2be-4f37-981a-79f060863b4a",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C18",
+      "claim": "Both male and female gh1\u03944/\u03944 mutants are roughly 40% smaller than wild-type fish.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantifying fish length, indicated that while both males and females are roughly 40% smaller than wild-type fish (Figure 2A), they remain fertile (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative measurements shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "72dd170c-1018-4d80-8613-58cf7340f12a",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C19",
+      "claim": "gh1\u03944/\u03944 mutants remain fertile despite their smaller size.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantifying fish length, indicated that while both males and females are roughly 40% smaller than wild-type fish (Figure 2A), they remain fertile (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fertility data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "a22d3b96-c996-4daa-8953-2788e03b42a9",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C20",
+      "claim": "The slow growth of gh1\u03944/\u03944 mutants is coupled with a significant delay in the onset of maturity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, their slow growth is coupled with a significant delay in the onset of maturity (Figure 2B), and a proportional delay in peak fertility (Figure 2C, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fertility data over time shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "ecaa7581-63d9-4913-800b-356b95d83ecf",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C21",
+      "claim": "The maximal number of eggs at peak fertility is reduced in gh1\u03944/\u03944 mutant couples.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximal number of eggs at peak fertility is also reduced in mutant couples (Figure 2C, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "26221909-5d86-405e-b08e-97caa5bdc402",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C22",
+      "claim": "The difference in reproductive output in gh1\u03944/\u03944 mutants is probably due to the smaller size of the female body cavity and ovaries.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference in reproductive output is probably a result of the smaller size of the female body cavity and ovaries (Figure 2\u2014figure supplement 1A), and the fact that egg size remains unchanged (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on histological observations and egg size measurements.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "0ec28105-2b9b-49ae-9e7a-cac10b9f1ca5",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C23",
+      "claim": "Egg size remains unchanged in gh1\u03944/\u03944 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference in reproductive output is probably a result of the smaller size of the female body cavity and ovaries (Figure 2\u2014figure supplement 1A), and the fact that egg size remains unchanged (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by egg size measurements shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "0d9c2a94-e88c-4e25-a6ad-cde20280a9c0",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C24",
+      "claim": "Once gh1\u03944/\u03944 mutants reach maturity, oocyte and sperm maturation are generally unaffected by the deficiency of growth hormone.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the results revealed that once the mutants reach maturity, oocyte, and sperm maturation are generally unaffected by the deficiency of growth hormone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by histological analysis shown in Figure 2D-F showing similar proportions of germ cell developmental stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "a1629fdc-5823-4d98-96d6-3d7aee4d2624",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C25",
+      "claim": "GH deficiency delays both somatic growth and reproduction in killifish, similar to mammalian models.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our findings demonstrate that like in mammalian models (Zaczek et al., 2002; Danilovich et al., 1999), GH deficiency delays both somatic growth and reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the manuscript and citations to mammalian studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "2b5e7e7b-99f3-42b7-836d-0216cb071441",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C26",
+      "claim": "GFP expression is visible 72 hr after electroporation of a gh1-T2A-GFP construct.",
+      "claim_type": "EXPLICIT",
+      "source": "We injected the construct (~3 \u00b5g, in a volume of 3 \u00b5l) into the muscle of WT fish, and imaged GFP expression 72 hr after electroporation (Figure 3A, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence imaging shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "e510ea12-9d2e-4b70-b9d2-c00128beab73",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C27",
+      "claim": "Electroporation is necessary for plasmid expression, as injected but non-electroporated fish serve as controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Testing injected but non-electroporated fish as controls further confirmed the contribution of the electroporation procedure (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison images in Figure 3B showing GFP expression only in electroporated fish.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "9e7e2a9c-47ce-4eb5-bd41-4ee2b27874d7",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C28",
+      "claim": "GH and GFP maintain a 1:1 ratio because they are co-translated.",
+      "claim_type": "EXPLICIT",
+      "source": "Since GH and GFP are co-translated, they should maintain a 1:1 ratio, and since the GFP tag is removed after the self-cleavage, hormonal secretion and function is expected to be unaffected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of T2A self-cleaving peptide function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "ae1e1e3d-712d-45eb-98e7-75f5489b538a",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C29",
+      "claim": "GFP expression serves as a proxy for hormone expression in the electroporation system.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this approach enables faithful visualization of the electroporation efficiency, which serves as a proxy for hormone expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the 1:1 co-translation of GH and GFP.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "60f86c8c-d215-4d50-b5a2-6adcf8408559",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C30",
+      "claim": "GH expression can be directly detected by immunofluorescence in GFP-positive muscle fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "GH expression, specifically in GFP-positive muscle fibers, could be directly detected by immunofluorescence in both WT fish (Figure 3C) and gh1\u03944/\u03944 mutants (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 3C and Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "d191c7fb-1b6d-4b51-89c8-329a6f7579d8",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C31",
+      "claim": "A moderate increase in average size was detected 3\u20134 weeks following electroporation of gh1-T2A-GFP in gh1\u03944/\u03944 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "A moderate increase in average size was detected 3\u20134 weeks following electroporation (Figure 3D), with electroporated male and female mutants being ~10% larger than non-electroporated specimens (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative measurements shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "3142af68-e7b7-4e3e-ae4c-c62615b9f6e1",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C32",
+      "claim": "Electroporated gh1\u03944/\u03944 mutants are approximately 10% larger than non-electroporated specimens.",
+      "claim_type": "EXPLICIT",
+      "source": "A moderate increase in average size was detected 3\u20134 weeks following electroporation (Figure 3D), with electroporated male and female mutants being ~10% larger than non-electroporated specimens (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative measurements shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "a124747c-799d-47be-8ce0-325e43777b57",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C33",
+      "claim": "Fish electroporated with gh1-T2A-GFP retain normal body dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "Fish retain normal body dimensions (Figure 3\u2014figure supplement 1B), suggesting uniform body-wide hormone effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by length/height ratio measurements shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "496aa9da-967e-424b-bccb-dc6b7e6164d3",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C34",
+      "claim": "The partial rescue in somatic growth might be due to the age at intervention (8 weeks), which is past the growth spurt period.",
+      "claim_type": "EXPLICIT",
+      "source": "The partial rescue in somatic growth might be due to the age at intervention. Specifically, electroporation was performed at 8 weeks of age, which is already past the period during which the fish exhibit a growth spurt and the onset of puberty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the timing of intervention relative to developmental stages.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "09ebd517-d894-4a8e-bb84-7f222a95a41c",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C35",
+      "claim": "Reproductive defects were fully rescued in GH-electroporated gh1\u03944/\u03944 mutant couples.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the partial growth rescue, reproductive defects were fully rescued in GH-electroporated mutant couples (Figure 3E), as evidenced by an increase in the size of the ovary (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fertility data in Figure 3E and ovary images in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "adb5f79a-67b1-455f-b39b-a70c3621b533",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C36",
+      "claim": "Ectopic muscle electroporation can rescue many aspects of GH deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results demonstrate that ectopic muscle electroporation can rescue many aspects of GH deficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on the growth and fertility rescue data presented.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "170a7db7-c3e2-4afb-8722-72033d8ee128",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C37",
+      "claim": "Disruption of thyroid hormone signaling produces both reproductive defects and growth defects in mice and zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of thyroid hormone signaling produces both reproductive defects (lack of mature oocytes) as well as growth defects in both mice (Tsujino et al., 2013) and zebrafish (Song et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Tsujino et al., 2013 and Song et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "8d23ed95-36bb-473e-8171-018ab9bd9e42",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C38",
+      "claim": "Homozygous tshb\u039410/\u039410 killifish mutants display growth malformations, defects in pigmentation, and defects in oocyte maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, homozygous tshb\u039410/\u039410 killifish mutants display growth malformations (i.e. altered length/height ratio), as well as defects in pigmentation and in oocyte maturation (Figure 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by images and measurements shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "ce1fa4ed-4860-44ef-bee3-ba3f73021e0c",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C39",
+      "claim": "The pituitary-thyroid axis can be successfully modeled in killifish.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations demonstrate that the pituitary-thyroid axis can be successfully modeled in killifish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the phenotypes observed in tshb mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "5c8bebee-a5cc-4b12-afa4-a28cfe35b026",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C40",
+      "claim": "fshbin1/in1 mutant females show a striking reduction in mature oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings demonstrated a striking reduction in mature oocytes in homozygous fshbin1/in1 females (Figure 4D, representative image), indicating a role for FSHB in advanced stages of oogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histological analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "4cd25bab-a045-4f58-a713-aedc5530d897",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C41",
+      "claim": "FSHB plays a role in advanced stages of oogenesis in killifish.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings demonstrated a striking reduction in mature oocytes in homozygous fshbin1/in1 females (Figure 4D, representative image), indicating a role for FSHB in advanced stages of oogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that mature oocytes are reduced in fshb mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "261fe151-5906-444a-a442-5399812a1b9d",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C42",
+      "claim": "Plasmid electroporation of fshb-T2A-GFP fully restored reproduction to WT levels in fshbin1/in1 females.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitingly, while oocyte maturation and fertility were compromised in fshbin1/in1 females, plasmid electroporation fully restored reproduction to WT levels (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fertility data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "ae109dd9-bc90-4640-8e85-6b1389d86f3a",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C43",
+      "claim": "The fertility of fshbin1/+ heterozygous females was unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "The fertility of fshbin1/+ females was unaffected (Figure 4\u2014figure supplement 1A), suggesting that, as seen with GH signaling, reducing hormonal concentrations by half can still leave enough for phenotypic saturation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fertility data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "b01d1791-31bd-4b4a-baca-bdd63f63bfa7",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C44",
+      "claim": "Reproductive defects were fully restored following electroporation of the FSHB-GFP fusion plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while reproductive defects were fully restored following electroporation of the FSHB-GFP plasmid (Figure 4\u2014figure supplement 1B), only faint GFP signals were detected in the gonads (Figure 4\u2014figure supplement 1C), possibly due to a body-wide dilution, and the observation that very low concentrations of hormone are sufficient for functional stimulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fertility data shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "54e9ef75-6d85-4732-80d5-ed46e4f41710",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C45",
+      "claim": "Only faint GFP signals were detected in the gonads after FSHB-GFP electroporation, possibly due to body-wide dilution.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while reproductive defects were fully restored following electroporation of the FSHB-GFP plasmid (Figure 4\u2014figure supplement 1B), only faint GFP signals were detected in the gonads (Figure 4\u2014figure supplement 1C), possibly due to a body-wide dilution, and the observation that very low concentrations of hormone are sufficient for functional stimulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the observation of faint GFP signals shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "758753e2-1ae8-49f7-9e3b-5a5eaac5af91",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C46",
+      "claim": "In humans, gonadotropin-releasing hormone (GnRH) is required to stimulate the release of LH and FSH in prepubescent girls.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, gonadotropin-releasing hormone (GnRH) is required to stimulate the release of LH and FSH in prepubescent girls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of human reproductive endocrinology, supported by citation to Taylor et al., 2019.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "b719aaaf-59ed-451f-ac9c-158653d6165a",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C47",
+      "claim": "The peak amplitude of LH increases about 10-fold during puberty in humans, with only a doubling of the FSH pulse.",
+      "claim_type": "EXPLICIT",
+      "source": "At a maximum, the peak amplitude of LH increases about 10-fold, with only a doubling of the FSH pulse (Taylor et al., 2019) (see a schematic diagram in Figure 5A, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Taylor et al., 2019 and illustrated in Figure 5A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "23770eee-a4a9-4010-b98c-77bdff7f4365",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C48",
+      "claim": "Electroporation of a wide range of plasmid concentrations (24 ng-3 \u00b5g) produces dose-dependent GFP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "With the aim of achieving tunable control of hormonal levels, we electroporated a wide range (24 ng-3 \u00b5g) of plasmid concentrations. This produced a dose-dependent GFP expression (Figure 5B, top), which was relatively reproducible (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence images in Figure 5B and quantification in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "c1b8fa4e-ff74-44bd-978e-de1c41eac8c8",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C49",
+      "claim": "Injecting two plasmids encoding for hormones tagged by different fluorophores results in expression of both fluorophores.",
+      "claim_type": "EXPLICIT",
+      "source": "Injecting two plasmids encoding for hormones tagged by different fluorophores resulted in expression of both fluorophores indicating that the system is amenable to multiplexing (Figure 5B, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dual fluorescence imaging shown in Figure 5B bottom.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "69c9fe19-84c2-45a8-bf3e-cde84fcc64e7",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C50",
+      "claim": "A single injection can stably restore the physiological effect on fertility for at least 2 months in fshbin1/in1-rescued fish.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, monitoring fshbin1/in1-rescued fish, indicated that a single injection can stably restore the physiological effect on fertility for at least 2 months, with a full effect achieved even at a relatively low plasmid concentration (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by long-term fertility data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "9fb28d2f-9521-46c0-942b-5d26978e74c1",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C51",
+      "claim": "The Dox-inducible system includes a Dox-dependent transcriptional activator protein (rtTA) and a tet operator (tetO) containing promoter (TRE promoter).",
+      "claim_type": "EXPLICIT",
+      "source": "This system includes a Dox-dependent transcriptional activator protein (rtTA) and a tet operator (tetO) containing promoter (TRE promoter) (Das et al., 2016) where the rtTA binds to the tetO promoter and activates gene expression only in the presence of doxycycline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of the Tet-On system, supported by citation to Das et al., 2016.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "32171560-10e1-484a-bbb8-0648effebc63",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C52",
+      "claim": "Fish electroporated with tetOn:fshb-T2A-GFP and exposed to Dox for 72 hr show GFP signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Fish were electroporated with a tetOn:fshb-T2A-GFP plasmid we constructed and, 3 days later, were exposed to Dox for 72 hr. This resulted in a GFP signal (Figure 5d, bottom), thereby confirming the applicability of this approach in-vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence imaging shown in Figure 5E bottom.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "7c2702ca-6c60-46bd-8f12-0f755442992e",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C53",
+      "claim": "Fertility defects in fshbin1/in1 mutants were fully rescued after 2\u20133 weeks using the Dox-inducible system, but only within a narrow temporal window.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, fertility defects were fully rescued after 2\u20133 weeks, but only within a narrow temporal window (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fertility data over time shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "3cb8c7ab-7b84-4dc2-bce2-12fede403c16",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C54",
+      "claim": "Electroporation of the tetOn:fshb-T2A-GFP plasmid without subsequent exposure to Dox produces a minor effect, which could be attributed to promoter leakiness.",
+      "claim_type": "EXPLICIT",
+      "source": "Electroporation of the plasmid without subsequent exposure to Dox was sufficient to produce a minor effect (Figure 5F), which could be attributed to promoter leakiness.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the observation of minor fertility effects without Dox treatment shown in Figure 5F.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "a8c11ce7-9576-4214-99a7-e4cebac9482b",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C55",
+      "claim": "Extremely low hormone levels are required to reach the threshold of a functional rescue.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that extremely low hormone levels are required to reach the threshold of a functional rescue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that promoter leakiness alone produces some effect.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "b7dc7f25-604f-48c4-be1d-1c8bfddd6ff0",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C56",
+      "claim": "The electroporation approach can successfully produce time- and dose-dependent hormone expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our findings indicate that this approach can successfully produce time- and dose-dependent hormone expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on the dose-dependent and Dox-inducible expression data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "44d4a434-07d6-4676-9d80-169f6174b98c",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C57",
+      "claim": "The explosive growth and rapid puberty onset in killifish are regulated by vertebrate-conserved paradigms.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we genetically perturb pituitary hormones, and rescue hormone loss-of-function by ectopically expressing the missing hormones after intramuscular electroporation. This methodology can be used to demonstrate that the explosive growth and rapid puberty onset in killifish are regulated by vertebrate-conserved paradigms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that hormonal mutations produce expected phenotypes similar to other vertebrates.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "16a052a7-cf12-4b69-80e5-00f0e0bd6ab0",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C58",
+      "claim": "The naturally compressed killifish life cycle shortens experimental timescales and allows for quick physiological readout.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, the naturally compressed killifish life cycle shortens experimental timescales, and allows for a quick physiological readout of both loss- and gain-of function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of killifish biology and the experimental observations in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "d5c2ac87-05cf-4b66-ad98-3e7ac47c0270",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C59",
+      "claim": "Each hormonal manipulation produced distinct and overlapping effects on somatic growth and reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Each hormonal manipulation produced distinct and overlapping effects on somatic growth and reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental observations from the gh1, fshb, and tshb mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "8db80ff1-6f5c-4995-8b47-dfcac8ef2954",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C60",
+      "claim": "The co-regulation of growth and reproduction is in accordance with evolutionary theories that predict functional trade-offs between life-history traits.",
+      "claim_type": "EXPLICIT",
+      "source": "This apparent co-regulation is in accordance with several evolutionary theories that predict functional trade-offs between life-history traits (Austad and Hoffman, 2018; Maklakov and Chapman, 2019; Kirkwood and Holliday, 1979; Kirkwood and Austad, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to evolutionary theory papers.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "7be487b2-0b4c-4c0d-97cd-07b2fc3a0bbe",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C61",
+      "claim": "Pituitary hormones link somatic growth with organismal lifespan in long-lived Ames and Snell dwarf mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, pituitary hormones also link somatic growth with organismal lifespan in the long-lived Ames and Snell dwarf mice, which suffer from a deficiency of pituitary growth hormone (among other hormones; Flurkey et al., 2002; Flurkey et al., 2001; Bartke and Brown-Borg, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Flurkey et al., 2002; Flurkey et al., 2001; Bartke and Brown-Borg, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "d665197c-7822-46ec-ab3f-5fe080a0842f",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C62",
+      "claim": "Mice with a mutated growth hormone receptor are long-lived.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice with a mutated growth hormone receptor are long-lived (List et al., 2011), and in humans, longer lives and cancer protection are observed in Laron Syndrome patients (dwarfism due to a growth hormone receptor mutation; Laron et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to List et al., 2011 and Laron et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "fc17e15a-c730-4512-82a1-d9b1cccac80a",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C63",
+      "claim": "In humans, longer lives and cancer protection are observed in Laron Syndrome patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice with a mutated growth hormone receptor are long-lived (List et al., 2011), and in humans, longer lives and cancer protection are observed in Laron Syndrome patients (dwarfism due to a growth hormone receptor mutation; Laron et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Laron et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "2612f71b-2afe-42af-9f57-5a0a43a5ab66",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C64",
+      "claim": "A very low level of FSHB is required to support normal reproduction in killifish.",
+      "claim_type": "EXPLICIT",
+      "source": "One observation is that a very low level of FSHB is required to support normal reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that promoter leakiness and low plasmid concentrations are sufficient for rescue.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "833b9010-0094-4519-bb53-e80675937e44",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C65",
+      "claim": "The delay between Dox treatment and the maximal effect on reproduction is probably linked to the length of the natural egg maturation process in killifish.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the delay between Dox treatment and the maximal effect on reproduction (Figure 5F), is probably linked to the length of the natural egg maturation process in killifish.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the temporal pattern of fertility rescue shown in Figure 5F.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "6b04abd6-3013-47fd-bb36-60ea9ee66d74",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C66",
+      "claim": "Some hormonal perturbations in killifish mutants recapitulate mammalian models more faithfully than similar alterations in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, some hormonal perturbations in killifish mutants seem to recapitulate mammalian models (Zaczek et al., 2002; Danilovich et al., 1999) more faithfully than similar alterations in zebrafish (Hu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison of phenotypes across species, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "4843abac-d2e6-4d67-ae50-635b008f3890",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C67",
+      "claim": "Zebrafish gh mutants exhibit an 80% death rate, possibly due to gut malformations.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, while zebrafish gh mutants exhibit an 80% death rate, possibly due to gut malformations, the lower death rate seen in killifish is apparently due only to housing conditions, and the fish display relatively normal gut architecture (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on citation to zebrafish studies (implied from Hu et al., 2019 mentioned earlier) and comparison with killifish data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "765dc532-05b3-4e58-94e3-415e37d5ee05",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C68",
+      "claim": "Killifish gh mutants display relatively normal gut architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, while zebrafish gh mutants exhibit an 80% death rate, possibly due to gut malformations, the lower death rate seen in killifish is apparently due only to housing conditions, and the fish display relatively normal gut architecture (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histological images shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "0de83376-21b4-452c-be48-0d0e20183003",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C69",
+      "claim": "Zebrafish gh mutants display an arrest of female maturity, with only a few mutant females undergoing puberty.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, while zebrafish gh mutants display an arrest of female maturity, with only a few mutant females undergoing puberty, fertility is merely delayed in killifish HPS axis mutants and fecundity is reduced due to spatial constraints, while all germline developmental stages are normally present (Figure 2D\u2013F, and Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to zebrafish studies (implied from Hu et al., 2019 mentioned earlier).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "16c7e137-bdf5-4d9f-8cfb-4788b2b860f8",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C70",
+      "claim": "In killifish gh mutants, fertility is merely delayed and fecundity is reduced due to spatial constraints, while all germline developmental stages are normally present.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, while zebrafish gh mutants display an arrest of female maturity, with only a few mutant females undergoing puberty, fertility is merely delayed in killifish HPS axis mutants and fecundity is reduced due to spatial constraints, while all germline developmental stages are normally present (Figure 2D\u2013F, and Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fertility data and histological analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "b0770d23-32d4-4a27-9cce-fcd0edc2ec3c",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C71",
+      "claim": "In contrast to mice and zebrafish, a heterozygous gh1 mutation does not have an obvious effect on the growth of killifish.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to mice (Rowland et al., 2005) and zebrafish (Hu et al., 2019), a heterozygous gh1 mutation does not have an obvious effect on the growth of killifish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 1B and citations to mouse and zebrafish studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "e43a3d62-7436-4ad3-9cf0-01873b1e0a0e",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C72",
+      "claim": "The lack of growth phenotype in heterozygous killifish may be due to the explosive growth killifish exhibit, or to the possibility that heterozygotes are able to 'catch up'.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon may be due to the explosive growth killifish exhibit, or to the possibility that heterozygotes killifish are merely able to 'catch up' (similar to zebrafish Hu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism underlying the lack of heterozygous phenotype.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "5c6142cf-0d3e-4658-9331-b7aeaf47b17b",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C73",
+      "claim": "The electroporation method is compatible with multiplexing and could allow investigation of the combinatorial effects of several hormones.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our method is compatible with multiplexing (Figure 5B), and could allow an investigation of the combinatorial effects of several hormones.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the demonstration of dual fluorophore expression in Figure 5B and speculation about future applications.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "101256ad-4cc0-46d4-86ea-0c50d867bf4f",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C74",
+      "claim": "The dose-dependent and doxycycline-inducible system can provide information about the temporal windows required to achieve sequential or reversible gain-of-function.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the dose-dependent and doxycycline-inducible system can be used to provide information about the temporal windows required to achieve a sequential or reversible gain-of-function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential applications of the system.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "31d09085-93a1-48bb-a5d5-975101472c1d",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C75",
+      "claim": "The electroporation approach will be useful in the optimization of commercially valuable traits in aquaculture.",
+      "claim_type": "EXPLICIT",
+      "source": "We predict that our approach will be of great use in the optimization of commercially valuable traits in aquaculture (Taranger et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future applications, supported by citation to aquaculture literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "e1b3e390-1c90-4e91-8458-6c13fee814b8",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C76",
+      "claim": "Current manipulations in certain eel species require approximately 16 weekly injections of pituitary extracts to induce maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, current manipulations in certain eel species are extremely time consuming and require ~16 weekly injections of pituitary extracts to induce maturation (Okamura et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Okamura et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "6912a2f1-1cb0-4d43-857a-2be9d93c004d",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C77",
+      "claim": "The electroporation system will allow simple plasmid electroporation to replace traditional methods of hormone administration in aquaculture.",
+      "claim_type": "EXPLICIT",
+      "source": "Our system, which has a long-lasting effect without modifying the host genome, will allow simple plasmid electroporation to replace traditional methods of hormone administration for the purposes of manipulation of the reproductive cycle, growth, and resistance to disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future applications based on the demonstrated long-lasting effects.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "6fdb1c3d-f08f-400e-865f-b6577ccef613",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C78",
+      "claim": "The killifish model can be used to identify novel regulators of aging that involve systemic modulation of metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently demonstrated that the killifish model can be used to identify novel regulators of aging, which involve systemic modulation of metabolism (Astre et al., 2022a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Astre et al., 2022a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "72895a17-4f3e-420f-82dd-d1909b71c414",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C79",
+      "claim": "The electroporation platform can be utilized to investigate systemic factors as modifiers of health and longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it should be possible to utilize this platform to investigate systemic factors as modifiers of health and longevity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential applications of the platform.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "559f27ab-a77b-4cf2-b215-2416e6a2ebfb",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C80",
+      "claim": "Circulating factors in young plasma can rejuvenate old mice.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, recent studies have demonstrated that circulating factors in young plasma can rejuvenate old mice (Baht et al., 2015; Conboy et al., 2005; Huang et al., 2018; Katsimpardi et al., 2014; Loffredo et al., 2013; Salpeter et al., 2013; Sinha et al., 2014; Villeda et al., 2011; Villeda et al., 2014; Grunewald et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to parabiosis and young blood studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "d1087cc8-b6bb-4c6e-b7c5-302c2b162fbe",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C81",
+      "claim": "Only a handful of rejuvenating factors, including VEGF and GDF11, have been experimentally tested.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, only a handful of these factors, including VEGF (Grunewald et al., 2021) (Vascular Endothelial Growth Factor), and GDF11 (Sinha et al., 2014) (Growth Differentiation Factor 11) have been experimentally tested, and there are many possible candidates for age-dependent changes in the plasma proteome that remain to be explored (Lehallier et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to specific studies on VEGF and GDF11, and a proteomics study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "e0c101d4-22ae-414a-83b3-59a6411b3919",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C82",
+      "claim": "The platform provides easy and efficient tools to dissect the mechanisms that regulate vertebrate life history at unprecedented resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our platform significantly advances the state-of the-art by providing easy and efficient tools that can be used to dissect the mechanisms that regulate vertebrate life history at an unprecedented resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the capabilities demonstrated in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "683a2806-00c1-44e8-ad91-2a1d58251296",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C83",
+      "claim": "Turquoise killifish exhibits one of the fastest recorded times to puberty among all vertebrate species (2\u20133 weeks).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use the naturally short-lived turquoise killifish, which exhibits one of the fastest recorded times to puberty among all vertebrate species (2\u20133 weeks, ~ sixfold faster than zebrafish and medaka).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of killifish biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "ff4d7f96-95cf-4c7a-bb10-c66a83f5f7b2",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C84",
+      "claim": "Killifish sexual differentiation is germline-independent, similar to mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional and underexplored advantage of the killifish model is that, similar to mammals, sexual differentiation is germline-independent (Harel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Harel et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "6cc7d42c-6658-44bd-8b49-7f088a2cc8d9",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C85",
+      "claim": "Zebrafish and medaka depend on the germline to develop into phenotypic females.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, both fish undergo relatively slow sexual maturation (~3\u20134 months), and depend on the germline to develop into phenotypic females (Slanchev et al., 2005; Kurokawa et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Slanchev et al., 2005 and Kurokawa et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "6086cc75-c642-4bfc-901a-514c84447d91",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C86",
+      "claim": "Perturbations that affect the germline in zebrafish and medaka, such as mutations in fshr, produce an all-male sex-reversal.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, perturbations that affect the germline, such as mutations in the follicle stimulating hormone receptor gene (fshr), produce an all-male sex-reversal (Slanchev et al., 2005; Kurokawa et al., 2007) (while merely causing ovarian failure in humans Aittom\u00e4ki et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Slanchev et al., 2005; Kurokawa et al., 2007; and Aittom\u00e4ki et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "4eec25b9-ea26-4d98-811c-ead3bb006e5f",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C87",
+      "claim": "Mutations in fshr cause ovarian failure in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, perturbations that affect the germline, such as mutations in the follicle stimulating hormone receptor gene (fshr), produce an all-male sex-reversal (Slanchev et al., 2005; Kurokawa et al., 2007) (while merely causing ovarian failure in humans Aittom\u00e4ki et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Aittom\u00e4ki et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "4371ecfd-ac05-4e0b-9acd-4368fed7f537",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C88",
+      "claim": "Hormonal perturbations in killifish might produce phenotypes that more faithfully recapitulate the corresponding mouse models than similar mutations in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this mammalian-like trait, we hypothesize that hormonal perturbations in killifish might produce phenotypes that more faithfully recapitulate the corresponding mouse models, than do similar mutations observed in zebrafish (Hu et al., 2019; Slanchev et al., 2005; Kurokawa et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the germline-independent sex determination in killifish.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "a602ac55-7feb-413c-92f9-68d26e11a871",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C89",
+      "claim": "Gain-of-function methodologies in fish have primarily depended on laborious and repeated injections of pituitary extracts or purification of recombinant hormones.",
+      "claim_type": "EXPLICIT",
+      "source": "Gain-of-function methodologies, primarily in fish, have so far depended on laborious and repeated injections of pituitary extracts (which are non-specific), or require purification of recombinant hormones (which is time consuming; Mylonas et al., 2010; Taranger et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mylonas et al., 2010 and Taranger et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "a31b91b0-fdf2-4b98-83f2-a038a721b459",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C90",
+      "claim": "Experimental approaches for studying pituitary hormones primarily depend on whole-body loss-of-function.",
+      "claim_type": "EXPLICIT",
+      "source": "While genetic perturbations of pituitary hormones have been instrumental in understanding their function (Liu and Lin, 2017; Hu et al., 2019), experimental approaches primarily depend on whole-body loss-of-function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of common experimental approaches, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "b6b8af87-5e54-47df-b456-ab7fb2978f4d",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C91",
+      "claim": "Interpretations of whole-body loss-of-function studies are subject to bias due to stage-dependent hormonal requirements or potential compensatory mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, interpretations are subject to bias due to stage-dependent hormonal requirements, or potential compensatory mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge of limitations in genetic studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "40787447-e585-4181-8272-efaacb605b1e",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C92",
+      "claim": "Developing reversible control of pituitary hormones is imperative for a mechanistic understanding.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, developing reversible control of pituitary hormones is imperative for a mechanistic understanding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the limitations of current approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "909488e6-7156-4aa4-9bbb-c5c279dc2e34",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C93",
+      "claim": "The hypothalamic-pituitary-somatic (HPS) axis involves secretion of growth hormone from the pituitary gland.",
+      "claim_type": "EXPLICIT",
+      "source": "The hypothalamic\u2013pituitary\u2013somatic (HPS) axis involves the secretion of growth hormone (GH) from the pituitary gland and the consequent stimulation of insulin-like growth factor 1 (IGF-1) production in peripheral tissues (Le Gac et al., 1993; List et al., 2011; Canosa et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established endocrinology knowledge, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "d90ab837-df4c-4d3a-b4a6-5f4eba432f1c",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C94",
+      "claim": "CRISPR/Cas9 genome editing protocols were applied to perturb the HPS axis in turquoise killifish by targeting exon 2 of gh1.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied our recently developed CRISPR/Cas9 genome editing protocols (Harel et al., 2015; Astre et al., 2022b; Astre et al., 2022a; Harel et al., 2016) to perturb the HPS axis in the turquoise killifish by targeting exon 2 of the killifish gh1 (Figure 1B, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the methods description and Figure 1B showing the targeting strategy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "ace685df-e69e-47f0-b9f0-c2deafffbe96",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C95",
+      "claim": "The partial rescue was observed in both males and females, but was more pronounced in the larger males.",
+      "claim_type": "EXPLICIT",
+      "source": "This partial phenotypic rescue was observed in both males and females, but was more pronounced in the larger males (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "3a90542e-1e43-4d7a-8620-39267c9b5e67",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C96",
+      "claim": "The timepoint for electroporation (8 weeks) was selected because of difficulties in injection and electroporation in extremely small young mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "This timepoint was selected because of the difficulties in injection and electroporation in the extremely small young mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the experimental design choice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "f6f125b4-d505-4b92-b3cb-049cbf4b6e03",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "claim_id": "C97",
+      "claim": "Killifish undergoes rapid sexual maturation (2-3 weeks), approximately sixfold faster than zebrafish and medaka.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use the naturally short-lived turquoise killifish, which exhibits one of the fastest recorded times to puberty among all vertebrate species (2\u20133 weeks, ~ sixfold faster than zebrafish and medaka).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of killifish biology and comparison with other fish models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1f138b83-24e0-472f-a231-ecb6baccf470",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CRISPR/Cas9-mediated mutation of gh1 in killifish produces viable homozygous mutants that are approximately 40% smaller than wild-type fish, with reduced survival in communal housing and no detectable phenotype in heterozygotes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C18 and C94 provide converging evidence from genetic, phenotypic, and quantitative data. The 4 bp deletion is confirmed by sequencing (C12, Figure 1B), the size reduction is quantified (C14, C18, Figure 2A), and the reduced Mendelian ratio is documented with statistical analysis (C15, Figure 1\u2014figure supplement 1A). The lack of heterozygous phenotype is supported by measurements (C17, Figure 1\u2014figure supplement 1B).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "2accb976-75ce-4ac7-ba6b-beb762f15728",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "gh1 mutant killifish remain fertile but exhibit delayed maturation, reduced peak fertility, and smaller ovaries, while germ cell development stages remain normal once maturity is reached.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C25 are well-supported by fertility tracking data (Figure 2B-C), histological analysis (Figure 2D-F), and egg size measurements (Figure 2\u2014figure supplement 1B). The temporal delay in fertility onset and reduction in peak egg production are quantified with statistical significance. The histological data showing normal proportions of germ cell stages (C24, Figure 2E-F) provides mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "324b2d06-7603-429d-bc2a-194243cf60ee",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A hormone-T2A-GFP electroporation system enables ectopic expression of hormones in killifish muscle, with GFP serving as a proxy for hormone expression through co-translation and self-cleavage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C26-C30 describe the technical development and validation of the electroporation system. GFP expression is documented 72 hours post-electroporation (C26, Figure 3A), electroporation necessity is confirmed by controls (C27, Figure 3B), and co-localization of GH and GFP is demonstrated by immunofluorescence (C30, Figure 3C). The T2A mechanism is well-established (C28), supporting the proxy relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "2a5fc687-f46e-4510-87ae-1517b16a7e8d",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Electroporation of gh1-T2A-GFP into gh1 mutants produces a modest (~10%) increase in body size at 3-4 weeks post-intervention, with the partial rescue attributed to intervention timing after the growth spurt period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34, C95-C96 document the partial growth rescue with quantitative measurements (Figure 3D) and provide a mechanistic explanation for the limited effect. The ~10% size increase is statistically significant and reproducible across sexes. The timing hypothesis (C34, C96) is reasonable given the developmental biology of killifish, though it remains inferential and could benefit from earlier intervention experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "e817a531-22fd-49da-95f2-aedcaf587f12",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Electroporation of gh1-T2A-GFP fully rescues reproductive defects in gh1 mutants, with effects persisting for several months after a single intervention.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 and C7 demonstrate complete fertility rescue with supporting data from egg counts (Figure 3E) and ovary size (Figure 3F). The long-term stability is documented in Figure 5D showing sustained effects for at least 2 months. This represents a more complete rescue than the growth phenotype, suggesting differential sensitivity or timing requirements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "9675828a-df5b-4eee-ad07-a730ac7198c6",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "tshb mutant killifish exhibit growth malformations, pigmentation defects, and oocyte maturation defects, demonstrating that the pituitary-thyroid axis can be modeled in killifish.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 establish the tshb mutant phenotype with visual and quantitative data (Figure 4B-C). The phenotypes are consistent with thyroid hormone disruption in other vertebrates (C37, citations provided), supporting the conclusion that killifish can model this axis. However, the characterization is less extensive than for gh1 mutants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "7cf11888-f9e3-4e98-b38c-ffe0ed3c5de9",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "fshb mutant females show reduced mature oocytes, and electroporation of fshb-T2A-GFP fully rescues fertility to wild-type levels, with heterozygotes showing no phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 document the fshb mutant phenotype and rescue with histological (Figure 4D-E) and fertility data (Figure 4F). The complete rescue is statistically significant and reproducible. The observation of faint GFP in gonads (C45) despite functional rescue suggests high hormone sensitivity, though this interpretation is speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "cb853821-2e0b-485b-af90-beac5cc4bd18",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The electroporation system supports dose-dependent expression across a wide concentration range (24 ng-3 \u03bcg) and is compatible with multiplexing using different fluorophores.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 and C8 demonstrate system versatility with fluorescence imaging (Figure 5B-C). Dose-dependent expression is quantified and reproducible (C48, Figure 5C). Multiplexing is shown by dual fluorophore expression (C49, Figure 5B bottom), though functional validation of simultaneous hormone delivery is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "863a2749-7405-4eae-a5a2-838f76c117e3",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A doxycycline-inducible system enables temporal control of hormone expression, with fertility rescue occurring 2-3 weeks post-induction within a narrow temporal window, and promoter leakiness producing minor effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C56 describe the Dox-inducible system with supporting data (Figure 5E-F). GFP induction is confirmed (C52, Figure 5E), and temporal fertility rescue is documented (C53, Figure 5F). The observation of promoter leakiness (C54) and inference about low hormone thresholds (C55) are supported by the data, though quantification of hormone levels would strengthen these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "1b86dca3-5637-492c-8383-0411af7f98c7",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mutations in gh1, fshb, and tshb produce distinct but overlapping effects on growth and reproduction in killifish, demonstrating that rapid killifish development relies on vertebrate-conserved hormonal networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C57-C59, and C82 synthesize the major findings across all three hormone mutants. The phenotypes are well-documented and consistent with vertebrate endocrinology (citations provided). The compressed killifish life cycle (C58) enables rapid phenotypic assessment. This represents a key conceptual advance demonstrating conservation of hormonal regulation despite extreme life history compression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "16366538-8423-44d0-a25b-375fd40db826",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Killifish hormonal mutants recapitulate mammalian phenotypes more faithfully than zebrafish mutants, with lower mortality, normal gut architecture, and delayed rather than arrested fertility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C71 compare killifish phenotypes to zebrafish and mammalian models with supporting citations and data (Figure 2\u2014figure supplement 1A). The comparisons are reasonable, though direct side-by-side experiments would strengthen the conclusions. The lack of heterozygous phenotype in killifish (C71) contrasts with mice and zebrafish, suggesting species-specific differences in hormone sensitivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "534bf09b-710f-494a-b206-4fd1eee670fc",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The co-regulation of growth and reproduction observed in killifish is consistent with evolutionary theories predicting life-history trade-offs and parallels findings in long-lived dwarf mice and Laron syndrome patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 place the findings in evolutionary and comparative context with appropriate citations. The parallel to dwarf mice and Laron syndrome is well-established in the literature. However, the killifish data do not directly test life-history trade-offs or longevity effects, limiting the strength of these evolutionary inferences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "97b624e6-edad-4075-8b3b-355ae26badb7",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Very low FSHB levels are sufficient for normal reproduction in killifish, and the delay between Dox treatment and maximal fertility effect likely reflects the natural egg maturation timeline.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 are inferences from the promoter leakiness and temporal rescue data (Figure 5F). The low hormone threshold interpretation is reasonable given the functional rescue with minimal expression, though direct hormone quantification is lacking. The temporal delay interpretation (C65) is plausible but remains speculative without direct measurement of oocyte maturation kinetics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "5df0e2ac-4143-42de-b4c8-71d8daa78832",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Pituitary hormones play central roles in vertebrate life history regulation, requiring precise temporal control, which has been experimentally challenging to achieve in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C11, and C93 establish the biological context with appropriate citations (Taylor et al., 2019; Le Gac et al., 1993; List et al., 2011; Canosa et al., 2007). These are well-established facts in vertebrate endocrinology that motivate the study. The challenge of in vivo hormonal manipulation (C3) is widely recognized in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "7ef918b0-61b0-45d5-b732-f361d4683581",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Killifish exhibit extremely rapid sexual maturation (2-3 weeks) and germline-independent sex determination similar to mammals, making them advantageous for studying hormonal regulation compared to zebrafish and medaka.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C88 and C97 establish killifish as a model system with appropriate citations (Harel et al., 2015; Slanchev et al., 2005; Kurokawa et al., 2007). The rapid maturation and germline-independent sex determination are well-documented advantages. The hypothesis that killifish will better recapitulate mammalian phenotypes (C88) is supported by the subsequent experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "ded114f2-c2c1-4308-bcfe-1e68881653cc",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Current experimental approaches for studying pituitary hormones rely on whole-body loss-of-function or laborious hormone injections, with interpretations limited by stage-dependent requirements and compensatory mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C92 describe limitations of existing methodologies with appropriate citations (Mylonas et al., 2010; Taranger et al., 2010; Liu and Lin, 2017; Hu et al., 2019). These are accurate characterizations of the field that motivate the development of the electroporation platform. The need for reversible control (C92) is a logical inference from these limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "132a0f71-7326-4383-9409-4446d90d8b3e",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "In humans, GnRH stimulates LH and FSH release during puberty, with LH amplitude increasing ~10-fold and FSH doubling, illustrating the importance of precise temporal hormone control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 provide human endocrinology context with citation to Taylor et al., 2019 and illustration in Figure 5A. These are established facts that motivate the development of tunable expression systems. The comparison to human physiology helps justify the translational relevance of the killifish platform.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "e5fa9678-82fc-4e71-a328-8c4256a1a5b7",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The electroporation method is relatively high-throughput and could enable investigation of combinatorial hormone effects and temporal windows for sequential or reversible interventions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C9, C73-C74 make assertions about throughput and future applications. While multiplexing capability is demonstrated (C73, Figure 5B), actual high-throughput implementation and combinatorial experiments are not shown. The claims about investigating temporal windows (C74) are speculative. These represent reasonable extrapolations but lack direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "d1bb4e56-7894-413a-a4d1-5b1231dd6ef3",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The electroporation approach could be adapted for aquaculture applications, potentially replacing laborious repeated hormone injections currently required for species like eels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C10, C75-C77 are speculative about aquaculture applications. While the citation about eel hormone requirements is valid (C76, Okamura et al., 2014), the actual application to aquaculture species is not demonstrated. The long-lasting effects in killifish (C77) suggest potential, but species-specific optimization would be required.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "424576a9-4f9e-4e3c-bbdb-8f723d2e19e9",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The killifish electroporation platform could be used to investigate systemic factors as modifiers of aging and longevity, including circulating factors identified in parabiosis studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C81 discuss potential aging research applications with appropriate citations (Astre et al., 2022a; multiple parabiosis studies). While the platform's capability for expressing circulating factors is demonstrated, actual aging or longevity experiments are not performed. These represent reasonable future directions but remain speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    },
+    {
+      "id": "558d296f-0abb-45db-b821-7c8824959006",
+      "content_id": "0975b309-ca7c-4ad7-9fc6-10f48ce8582b",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The lack of growth phenotype in heterozygous killifish may be due to explosive growth or compensatory 'catch-up' mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C72 is explicitly speculative about mechanisms underlying the heterozygous phenotype. While the observation of no heterozygous phenotype is well-documented (C17, C71), the mechanistic explanations are not tested. Additional experiments measuring growth rates over time or hormone levels would be needed to distinguish between these hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:40:56.172911Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0d3ff752-6382-48a3-afc3-1e038f4775b7",
+      "result_id": "1f138b83-24e0-472f-a231-ecb6baccf470"
+    },
+    {
+      "claim_id": "b905391a-9b27-40ca-84d4-f2608bdf0994",
+      "result_id": "1f138b83-24e0-472f-a231-ecb6baccf470"
+    },
+    {
+      "claim_id": "b134a7d7-ad87-4a68-84dc-605b8151eb45",
+      "result_id": "1f138b83-24e0-472f-a231-ecb6baccf470"
+    },
+    {
+      "claim_id": "8df30df8-d8ac-4c57-8347-4422418887d3",
+      "result_id": "1f138b83-24e0-472f-a231-ecb6baccf470"
+    },
+    {
+      "claim_id": "564279b8-b99b-4947-848a-72bdc666d3ee",
+      "result_id": "1f138b83-24e0-472f-a231-ecb6baccf470"
+    },
+    {
+      "claim_id": "0ceb6013-62a0-4c9d-bc9e-b9f1e1f5ec19",
+      "result_id": "1f138b83-24e0-472f-a231-ecb6baccf470"
+    },
+    {
+      "claim_id": "5d96cf22-e2be-4f37-981a-79f060863b4a",
+      "result_id": "1f138b83-24e0-472f-a231-ecb6baccf470"
+    },
+    {
+      "claim_id": "d90ab837-df4c-4d3a-b4a6-5f4eba432f1c",
+      "result_id": "1f138b83-24e0-472f-a231-ecb6baccf470"
+    },
+    {
+      "claim_id": "72dd170c-1018-4d80-8613-58cf7340f12a",
+      "result_id": "2accb976-75ce-4ac7-ba6b-beb762f15728"
+    },
+    {
+      "claim_id": "a22d3b96-c996-4daa-8953-2788e03b42a9",
+      "result_id": "2accb976-75ce-4ac7-ba6b-beb762f15728"
+    },
+    {
+      "claim_id": "ecaa7581-63d9-4913-800b-356b95d83ecf",
+      "result_id": "2accb976-75ce-4ac7-ba6b-beb762f15728"
+    },
+    {
+      "claim_id": "26221909-5d86-405e-b08e-97caa5bdc402",
+      "result_id": "2accb976-75ce-4ac7-ba6b-beb762f15728"
+    },
+    {
+      "claim_id": "0ec28105-2b9b-49ae-9e7a-cac10b9f1ca5",
+      "result_id": "2accb976-75ce-4ac7-ba6b-beb762f15728"
+    },
+    {
+      "claim_id": "0d9c2a94-e88c-4e25-a6ad-cde20280a9c0",
+      "result_id": "2accb976-75ce-4ac7-ba6b-beb762f15728"
+    },
+    {
+      "claim_id": "a1629fdc-5823-4d98-96d6-3d7aee4d2624",
+      "result_id": "2accb976-75ce-4ac7-ba6b-beb762f15728"
+    },
+    {
+      "claim_id": "983a74ed-6b13-4265-80a3-93dd4882e639",
+      "result_id": "324b2d06-7603-429d-bc2a-194243cf60ee"
+    },
+    {
+      "claim_id": "2b5e7e7b-99f3-42b7-836d-0216cb071441",
+      "result_id": "324b2d06-7603-429d-bc2a-194243cf60ee"
+    },
+    {
+      "claim_id": "e510ea12-9d2e-4b70-b9d2-c00128beab73",
+      "result_id": "324b2d06-7603-429d-bc2a-194243cf60ee"
+    },
+    {
+      "claim_id": "9e7e2a9c-47ce-4eb5-bd41-4ee2b27874d7",
+      "result_id": "324b2d06-7603-429d-bc2a-194243cf60ee"
+    },
+    {
+      "claim_id": "ae1e1e3d-712d-45eb-98e7-75f5489b538a",
+      "result_id": "324b2d06-7603-429d-bc2a-194243cf60ee"
+    },
+    {
+      "claim_id": "60f86c8c-d215-4d50-b5a2-6adcf8408559",
+      "result_id": "324b2d06-7603-429d-bc2a-194243cf60ee"
+    },
+    {
+      "claim_id": "d191c7fb-1b6d-4b51-89c8-329a6f7579d8",
+      "result_id": "2a5fc687-f46e-4510-87ae-1517b16a7e8d"
+    },
+    {
+      "claim_id": "3142af68-e7b7-4e3e-ae4c-c62615b9f6e1",
+      "result_id": "2a5fc687-f46e-4510-87ae-1517b16a7e8d"
+    },
+    {
+      "claim_id": "a124747c-799d-47be-8ce0-325e43777b57",
+      "result_id": "2a5fc687-f46e-4510-87ae-1517b16a7e8d"
+    },
+    {
+      "claim_id": "496aa9da-967e-424b-bccb-dc6b7e6164d3",
+      "result_id": "2a5fc687-f46e-4510-87ae-1517b16a7e8d"
+    },
+    {
+      "claim_id": "ace685df-e69e-47f0-b9f0-c2deafffbe96",
+      "result_id": "2a5fc687-f46e-4510-87ae-1517b16a7e8d"
+    },
+    {
+      "claim_id": "3a90542e-1e43-4d7a-8620-39267c9b5e67",
+      "result_id": "2a5fc687-f46e-4510-87ae-1517b16a7e8d"
+    },
+    {
+      "claim_id": "09ebd517-d894-4a8e-bb84-7f222a95a41c",
+      "result_id": "e817a531-22fd-49da-95f2-aedcaf587f12"
+    },
+    {
+      "claim_id": "adb5f79a-67b1-455f-b39b-a70c3621b533",
+      "result_id": "e817a531-22fd-49da-95f2-aedcaf587f12"
+    },
+    {
+      "claim_id": "5e13e53d-9955-4b51-8069-881b8da8d221",
+      "result_id": "e817a531-22fd-49da-95f2-aedcaf587f12"
+    },
+    {
+      "claim_id": "170a7db7-c3e2-4afb-8722-72033d8ee128",
+      "result_id": "9675828a-df5b-4eee-ad07-a730ac7198c6"
+    },
+    {
+      "claim_id": "8d23ed95-36bb-473e-8171-018ab9bd9e42",
+      "result_id": "9675828a-df5b-4eee-ad07-a730ac7198c6"
+    },
+    {
+      "claim_id": "ce1fa4ed-4860-44ef-bee3-ba3f73021e0c",
+      "result_id": "9675828a-df5b-4eee-ad07-a730ac7198c6"
+    },
+    {
+      "claim_id": "5c8bebee-a5cc-4b12-afa4-a28cfe35b026",
+      "result_id": "7cf11888-f9e3-4e98-b38c-ffe0ed3c5de9"
+    },
+    {
+      "claim_id": "4cd25bab-a045-4f58-a713-aedc5530d897",
+      "result_id": "7cf11888-f9e3-4e98-b38c-ffe0ed3c5de9"
+    },
+    {
+      "claim_id": "261fe151-5906-444a-a442-5399812a1b9d",
+      "result_id": "7cf11888-f9e3-4e98-b38c-ffe0ed3c5de9"
+    },
+    {
+      "claim_id": "ae109dd9-bc90-4640-8e85-6b1389d86f3a",
+      "result_id": "7cf11888-f9e3-4e98-b38c-ffe0ed3c5de9"
+    },
+    {
+      "claim_id": "b01d1791-31bd-4b4a-baca-bdd63f63bfa7",
+      "result_id": "7cf11888-f9e3-4e98-b38c-ffe0ed3c5de9"
+    },
+    {
+      "claim_id": "54e9ef75-6d85-4732-80d5-ed46e4f41710",
+      "result_id": "7cf11888-f9e3-4e98-b38c-ffe0ed3c5de9"
+    },
+    {
+      "claim_id": "23770eee-a4a9-4010-b98c-77bdff7f4365",
+      "result_id": "cb853821-2e0b-485b-af90-beac5cc4bd18"
+    },
+    {
+      "claim_id": "c1b8fa4e-ff74-44bd-978e-de1c41eac8c8",
+      "result_id": "cb853821-2e0b-485b-af90-beac5cc4bd18"
+    },
+    {
+      "claim_id": "d6250304-8fe1-448a-9da4-e5d17fa4c0c2",
+      "result_id": "cb853821-2e0b-485b-af90-beac5cc4bd18"
+    },
+    {
+      "claim_id": "69c9fe19-84c2-45a8-bf3e-cde84fcc64e7",
+      "result_id": "863a2749-7405-4eae-a5a2-838f76c117e3"
+    },
+    {
+      "claim_id": "9fb28d2f-9521-46c0-942b-5d26978e74c1",
+      "result_id": "863a2749-7405-4eae-a5a2-838f76c117e3"
+    },
+    {
+      "claim_id": "32171560-10e1-484a-bbb8-0648effebc63",
+      "result_id": "863a2749-7405-4eae-a5a2-838f76c117e3"
+    },
+    {
+      "claim_id": "7c2702ca-6c60-46bd-8f12-0f755442992e",
+      "result_id": "863a2749-7405-4eae-a5a2-838f76c117e3"
+    },
+    {
+      "claim_id": "3cb8c7ab-7b84-4dc2-bce2-12fede403c16",
+      "result_id": "863a2749-7405-4eae-a5a2-838f76c117e3"
+    },
+    {
+      "claim_id": "a8c11ce7-9576-4214-99a7-e4cebac9482b",
+      "result_id": "863a2749-7405-4eae-a5a2-838f76c117e3"
+    },
+    {
+      "claim_id": "b7dc7f25-604f-48c4-be1d-1c8bfddd6ff0",
+      "result_id": "863a2749-7405-4eae-a5a2-838f76c117e3"
+    },
+    {
+      "claim_id": "c286acea-2c2d-4124-bb83-112cdd8bf8f5",
+      "result_id": "1b86dca3-5637-492c-8383-0411af7f98c7"
+    },
+    {
+      "claim_id": "63113e54-e893-4572-b50e-21a18937f5ec",
+      "result_id": "1b86dca3-5637-492c-8383-0411af7f98c7"
+    },
+    {
+      "claim_id": "44d4a434-07d6-4676-9d80-169f6174b98c",
+      "result_id": "1b86dca3-5637-492c-8383-0411af7f98c7"
+    },
+    {
+      "claim_id": "16a052a7-cf12-4b69-80e5-00f0e0bd6ab0",
+      "result_id": "1b86dca3-5637-492c-8383-0411af7f98c7"
+    },
+    {
+      "claim_id": "d5c2ac87-05cf-4b66-ad98-3e7ac47c0270",
+      "result_id": "1b86dca3-5637-492c-8383-0411af7f98c7"
+    },
+    {
+      "claim_id": "e0c101d4-22ae-414a-83b3-59a6411b3919",
+      "result_id": "1b86dca3-5637-492c-8383-0411af7f98c7"
+    },
+    {
+      "claim_id": "6b04abd6-3013-47fd-bb36-60ea9ee66d74",
+      "result_id": "16366538-8423-44d0-a25b-375fd40db826"
+    },
+    {
+      "claim_id": "4843abac-d2e6-4d67-ae50-635b008f3890",
+      "result_id": "16366538-8423-44d0-a25b-375fd40db826"
+    },
+    {
+      "claim_id": "765dc532-05b3-4e58-94e3-415e37d5ee05",
+      "result_id": "16366538-8423-44d0-a25b-375fd40db826"
+    },
+    {
+      "claim_id": "0de83376-21b4-452c-be48-0d0e20183003",
+      "result_id": "16366538-8423-44d0-a25b-375fd40db826"
+    },
+    {
+      "claim_id": "16c7e137-bdf5-4d9f-8cfb-4788b2b860f8",
+      "result_id": "16366538-8423-44d0-a25b-375fd40db826"
+    },
+    {
+      "claim_id": "b0770d23-32d4-4a27-9cce-fcd0edc2ec3c",
+      "result_id": "16366538-8423-44d0-a25b-375fd40db826"
+    },
+    {
+      "claim_id": "8db80ff1-6f5c-4995-8b47-dfcac8ef2954",
+      "result_id": "534bf09b-710f-494a-b206-4fd1eee670fc"
+    },
+    {
+      "claim_id": "7be487b2-0b4c-4c0d-97cd-07b2fc3a0bbe",
+      "result_id": "534bf09b-710f-494a-b206-4fd1eee670fc"
+    },
+    {
+      "claim_id": "d665197c-7822-46ec-ab3f-5fe080a0842f",
+      "result_id": "534bf09b-710f-494a-b206-4fd1eee670fc"
+    },
+    {
+      "claim_id": "fc17e15a-c730-4512-82a1-d9b1cccac80a",
+      "result_id": "534bf09b-710f-494a-b206-4fd1eee670fc"
+    },
+    {
+      "claim_id": "2612f71b-2afe-42af-9f57-5a0a43a5ab66",
+      "result_id": "97b624e6-edad-4075-8b3b-355ae26badb7"
+    },
+    {
+      "claim_id": "833b9010-0094-4519-bb53-e80675937e44",
+      "result_id": "97b624e6-edad-4075-8b3b-355ae26badb7"
+    },
+    {
+      "claim_id": "c34b8a43-3831-4b66-8156-4b371225f941",
+      "result_id": "5df0e2ac-4143-42de-b4c8-71d8daa78832"
+    },
+    {
+      "claim_id": "3ac4d4b1-c0fb-48d3-8ee3-a610da4f58d4",
+      "result_id": "5df0e2ac-4143-42de-b4c8-71d8daa78832"
+    },
+    {
+      "claim_id": "0d33849b-97c1-456c-875e-b2d530ff16a7",
+      "result_id": "5df0e2ac-4143-42de-b4c8-71d8daa78832"
+    },
+    {
+      "claim_id": "022263df-9248-4e5c-9ad0-b584da40c837",
+      "result_id": "5df0e2ac-4143-42de-b4c8-71d8daa78832"
+    },
+    {
+      "claim_id": "909488e6-7156-4aa4-9bbb-c5c279dc2e34",
+      "result_id": "5df0e2ac-4143-42de-b4c8-71d8daa78832"
+    },
+    {
+      "claim_id": "683a2806-00c1-44e8-ad91-2a1d58251296",
+      "result_id": "7ef918b0-61b0-45d5-b732-f361d4683581"
+    },
+    {
+      "claim_id": "ff4d7f96-95cf-4c7a-bb10-c66a83f5f7b2",
+      "result_id": "7ef918b0-61b0-45d5-b732-f361d4683581"
+    },
+    {
+      "claim_id": "6cc7d42c-6658-44bd-8b49-7f088a2cc8d9",
+      "result_id": "7ef918b0-61b0-45d5-b732-f361d4683581"
+    },
+    {
+      "claim_id": "6086cc75-c642-4bfc-901a-514c84447d91",
+      "result_id": "7ef918b0-61b0-45d5-b732-f361d4683581"
+    },
+    {
+      "claim_id": "4eec25b9-ea26-4d98-811c-ead3bb006e5f",
+      "result_id": "7ef918b0-61b0-45d5-b732-f361d4683581"
+    },
+    {
+      "claim_id": "4371ecfd-ac05-4e0b-9acd-4368fed7f537",
+      "result_id": "7ef918b0-61b0-45d5-b732-f361d4683581"
+    },
+    {
+      "claim_id": "f6f125b4-d505-4b92-b3cb-049cbf4b6e03",
+      "result_id": "7ef918b0-61b0-45d5-b732-f361d4683581"
+    },
+    {
+      "claim_id": "a602ac55-7feb-413c-92f9-68d26e11a871",
+      "result_id": "ded114f2-c2c1-4308-bcfe-1e68881653cc"
+    },
+    {
+      "claim_id": "a31b91b0-fdf2-4b98-83f2-a038a721b459",
+      "result_id": "ded114f2-c2c1-4308-bcfe-1e68881653cc"
+    },
+    {
+      "claim_id": "b6b8af87-5e54-47df-b456-ab7fb2978f4d",
+      "result_id": "ded114f2-c2c1-4308-bcfe-1e68881653cc"
+    },
+    {
+      "claim_id": "40787447-e585-4181-8272-efaacb605b1e",
+      "result_id": "ded114f2-c2c1-4308-bcfe-1e68881653cc"
+    },
+    {
+      "claim_id": "758753e2-1ae8-49f7-9e3b-5a5eaac5af91",
+      "result_id": "132a0f71-7326-4383-9409-4446d90d8b3e"
+    },
+    {
+      "claim_id": "b719aaaf-59ed-451f-ac9c-158653d6165a",
+      "result_id": "132a0f71-7326-4383-9409-4446d90d8b3e"
+    },
+    {
+      "claim_id": "3a71fa64-26c6-437f-864d-3d6a61af558c",
+      "result_id": "e5fa9678-82fc-4e71-a328-8c4256a1a5b7"
+    },
+    {
+      "claim_id": "5c6142cf-0d3e-4658-9331-b7aeaf47b17b",
+      "result_id": "e5fa9678-82fc-4e71-a328-8c4256a1a5b7"
+    },
+    {
+      "claim_id": "101256ad-4cc0-46d4-86ea-0c50d867bf4f",
+      "result_id": "e5fa9678-82fc-4e71-a328-8c4256a1a5b7"
+    },
+    {
+      "claim_id": "d90698b7-fdc7-438b-a511-c99cbf064c79",
+      "result_id": "d1bb4e56-7894-413a-a4d1-5b1231dd6ef3"
+    },
+    {
+      "claim_id": "31d09085-93a1-48bb-a5d5-975101472c1d",
+      "result_id": "d1bb4e56-7894-413a-a4d1-5b1231dd6ef3"
+    },
+    {
+      "claim_id": "e1b3e390-1c90-4e91-8458-6c13fee814b8",
+      "result_id": "d1bb4e56-7894-413a-a4d1-5b1231dd6ef3"
+    },
+    {
+      "claim_id": "6912a2f1-1cb0-4d43-857a-2be9d93c004d",
+      "result_id": "d1bb4e56-7894-413a-a4d1-5b1231dd6ef3"
+    },
+    {
+      "claim_id": "6fdb1c3d-f08f-400e-865f-b6577ccef613",
+      "result_id": "424576a9-4f9e-4e3c-bbdb-8f723d2e19e9"
+    },
+    {
+      "claim_id": "72895a17-4f3e-420f-82dd-d1909b71c414",
+      "result_id": "424576a9-4f9e-4e3c-bbdb-8f723d2e19e9"
+    },
+    {
+      "claim_id": "559f27ab-a77b-4cf2-b215-2416e6a2ebfb",
+      "result_id": "424576a9-4f9e-4e3c-bbdb-8f723d2e19e9"
+    },
+    {
+      "claim_id": "d1087cc8-b6bb-4c6e-b7c5-302c2b162fbe",
+      "result_id": "424576a9-4f9e-4e3c-bbdb-8f723d2e19e9"
+    },
+    {
+      "claim_id": "e43a3d62-7436-4ad3-9cf0-01873b1e0a0e",
+      "result_id": "558d296f-0abb-45db-b821-7c8824959006"
+    }
+  ],
+  "comparisons": []
+}

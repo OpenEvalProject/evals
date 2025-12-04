@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C93"
+    ],
+    "result": "MERGE-seq is a novel rAAV2-retro barcode-based method that simultaneously characterizes single-neuron projectome and transcriptome. The method uses modified viral vectors with 15 bp barcodes in the 3'UTR of EGFP, allows 6 weeks for retrograde labeling, and recovers ~50% of FAC-sorted cells with valid barcode information alongside transcriptional profiling of thousands of genes per neuron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C29-C35, C37-C38, and C93 collectively establish MERGE-seq as a functional method. The viral vector design (C29), experimental timeline (C30), cell recovery statistics (C31-C32, C37-C38), barcode validation (C34), and cell type specificity (C35) provide converging technical evidence. The recovery rate of ~50% for FAC-sorted cells (C37, C93) is explicitly quantified and represents a substantial improvement over ConnectID's ~16% (C16, C92).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C39",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "vmPFC neurons projecting to different downstream targets (AI, DMS, BLA, MD, LH) are transcriptionally heterogeneous, composed of seven excitatory neuron subtypes (L2/3-Calb1, L2/3-Rorb, L5-Bcl6, L5-Htr2c, L5-S100b, L6-Npy, L6-Syt6) that span all cortical layers and exhibit target-specific but overlapping projection patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25, C39, C42-C45, C49-C55 are supported by comprehensive transcriptomic clustering (Figure 2A-C), correlation with published datasets (C43-C44, Figure 2D), and quantitative subtype composition analysis (Figure 2F-G). The finding that each transcriptome-defined subtype projects to multiple targets (C52) while target-specific neurons are heterogeneous (C49) is well-documented. The consistency with spatially resolved data (C43) and previous reports (C44) strengthens confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C27",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "MERGE-seq reveals that ~65% of vmPFC neurons exhibit dedicated projections to single targets while ~35% show collateral projections (mostly bifurcated), with specific patterns validated by dual-color retrograde tracing and comparison to fMOST imaging data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C26-C27, C56-C66 provide quantitative projection pattern analysis supported by multiple validation approaches. The percentages (C26-C27, C56-C57) are based on 2050 barcoded neurons. Conditional probability analysis (C58-C59, Figure 3B) identifies likely collateral patterns. Independent validation via dual-color retrograde tracing (C60-C64, Figure 3\u2014figure supplement 1) confirms key bifurcation patterns (DMS+LH: 17.8\u00b10.11%, DMS+AI: 23.1\u00b12.03%). Comparison with fMOST data (C65-C66, Figure 3C-D) shows no significant differences when categorized by target number, validating MERGE-seq accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C28",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Pou3f1 is a marker gene enriched in neurons projecting to the lateral hypothalamus and identifies a distinct layer 5 subset with collateral projections to both DMS and LH. Among Pou3f1+ neurons, 55.7\u00b110.4% project to DMS+LH, 31.6\u00b113.1% project exclusively to LH, and 8.89\u00b12.38% project exclusively to DMS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C28, C73-C82 are strongly supported by converging evidence from transcriptomic analysis (C73-C77, Figure 5B-C), marker gene identification (C78), RNA FISH validation (C79-C80, Figure 5D-E), and quantitative dual-color retrograde tracing (C81-C82, Figure 5G). The DEG analysis shows Pou3f1 is differentially expressed in DMS+LH neurons (C76), and RNA FISH confirms layer 5 localization (C79) and specific expression in DMS+LH and LH-projecting but not DMS-projecting neurons (C80). The quantification (C81) provides precise percentages with error estimates (n=3 mice).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Projection-specific differentially expressed genes (DEGs) correspond to neuronal subtype markers: Syt6, Foxp2, and Cyr61 are MD-projecting DEGs and L6-Syt6 markers; Rorb and Slc24a3 are DMS-projecting DEGs and L2/3-Rorb markers. RNA FISH validation shows ~51.6\u00b116.9% of Syt6+ neurons project to MD, with 84.2\u00b114.8% in layer 6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by DEG analysis (Figure 4A, Figure 4\u2014figure supplement 1) and RNA FISH validation (Figure 4B-C). The correspondence between projection-specific DEGs and subtype markers (C69-C70) is demonstrated through volcano plots. Independent validation via RNA FISH combined with retrograde tracing (C71-C72) confirms Syt6 expression in MD-projecting neurons with quantified percentages and layer distribution (n=3 mice), consistent with MERGE-seq predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Machine learning analysis using Na\u00efve Bayes models with top 50 highly variable genes (HVGs) achieves high prediction accuracy for projection patterns. SHAP analysis identifies key predictive genes: Nptxr for DMS projection and Rprm for MD projection, whose expression patterns overlap with projection barcode distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are supported by systematic machine learning analysis. The selection of top 50 HVGs is justified by optimization analysis (C83, Figure 6\u2014figure supplement 1A). Performance superiority over random genes (C84, Figure 6B) and label swapping controls (C85, Figure 6\u2014figure supplement 1B) demonstrate model validity. SHAP analysis (C86-C87, Figure 6C, E) identifies biologically interpretable predictive genes, and spatial overlap validation (C88, Figure 6D, F) confirms biological relevance. However, the predictive power is limited to the five targets examined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Dedicated and collateral projection neurons are largely transcriptionally diverse (\u22653 subtypes), but certain projections like MD-projecting and DMS+MD-projecting neurons are highly homogeneous (>90% L6-Syt6 cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by cell type composition analysis (Figure 3G). The general diversity of projection-defined populations (C67) contrasts with specific homogeneous populations (C68), revealing organizational principles. The >90% threshold for L6-Syt6 composition in MD-related projections is clearly shown in pie charts. This finding is consistent with the projection-specific DEG analysis (C69) showing Syt6 as an MD-projecting marker.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "MERGE-seq addresses limitations of existing methods (imaging-based tracing, MAPseq, BRICseq, BARseq, ConnectID, VECTORseq) by efficiently integrating high-throughput projectome and transcriptome data at single-neuron resolution without requiring specialized equipment or complex transgenic designs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C12-C19, C89-C108 provide comprehensive comparison with existing methods, supported by citations and logical analysis. The limitations of each method are documented: imaging requires specialized equipment (C13), MAPseq/BRICseq lack transcriptomics (C14), BARseq has limited gene detection (C15, C90-C91), ConnectID has low recovery (~16%, C16, C92), VECTORseq has limited barcodes (C17) and variable transgene expression (C96-C99). MERGE-seq advantages (C100-C102, C107) are supported by design features and performance data (C93). The critique of population-level inference (C104-C106) is logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C46"
+    ],
+    "result": "More layer 6 neurons (71.3% total: 12.6% L6-Npy, 58.7% L6-Syt6) were captured than superficial layer neurons, differing from previous reports, possibly due to different dissociation protocols. Only 9 L5-Htr2c neurons were recovered with valid barcodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C41, C46 report observations but lack sufficient validation. The layer distribution difference (C40) is noted but only speculatively explained by dissociation protocols (C41) without experimental testing. The low recovery of L5-Htr2c neurons (C46) has multiple possible explanations (cell loss, AAV tropism, lack of projections to chosen targets) but no definitive determination. These observations may reflect technical artifacts rather than biological reality, requiring additional validation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Neurons projecting to DMS are abundant (n=1242) while neurons projecting to BLA are rare (n=163), consistent with conventional fluorescence-based retrograde tracing in rat prefrontal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 report quantitative observations (Figure 2E) consistent with prior literature (Gabbott et al., 2005). The consistency across species (mouse vs. rat) and methods (MERGE-seq vs. conventional tracing) strengthens confidence. However, these are descriptive findings rather than novel discoveries, serving primarily to validate MERGE-seq against established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "Although MERGE-seq does not currently provide spatial information, extensive spatially resolved mouse brain atlases enable spatial annotation of cell populations using DEGs identified by scRNA-seq, as demonstrated by mapping neuronal subtypes with MERFISH data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 acknowledge a limitation (C110) while demonstrating a practical solution (C111). The correlation analysis with MERFISH data (Figure 2D) validates the approach. However, this is an indirect method for spatial annotation rather than direct spatial measurement, and the quality depends on the availability and resolution of reference atlases. The demonstration is limited to the specific case of PFC neuronal subtypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "MERGE-seq has recognized limitations including imperfect retrograde labeling efficiency (variable by region, projection strength, distance, AAV serotype), cell loss during dissociation, and suboptimal barcode recovery rates, which may lead to underrepresentation of certain neuron populations or projection patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C119 provide honest assessment of methodological limitations. These are well-established challenges in the field (C112-C114, C116-C118) supported by general knowledge and logical inference. The acknowledgment that quantitative conclusions may not fully represent true projections (C115, C119) is appropriate given these limitations. This transparent discussion of limitations strengthens rather than weakens the overall work by setting appropriate boundaries on interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "AAV2 retrograde transport effectively targets projection neurons at axonal terminals and is confined to synaptic terminal vicinity without affecting axon fibers in passages, as demonstrated by injections into DMS and cervical spinal cord.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 address a potential concern about transduction of fibers of passage, supported by citations to Tervo et al., 2016 and Wang et al., 2018. These studies provide experimental evidence that AAV2-retro specifically labels neurons at synaptic terminals. However, the authors acknowledge that additional research may be needed for definitive conclusions, particularly for closely situated targets. This is a methodological validation rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background context on brain connectomes, neuroanatomical tracing methods, and mPFC function establishes the scientific foundation and motivation for MERGE-seq development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11, C20-C23 provide established background knowledge supported by appropriate citations (Zeng 2018, Oh et al. 2014, Cowan 1998, Ghosh et al. 2011, Le Merre et al. 2021, Kim et al. 2017, Wu et al. 2021, Cornwall and Phillipson 1988). These claims accurately represent prior work and establish the scientific context. However, they are not novel findings from this study but rather literature review establishing motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C36",
+      "C45"
+    ],
+    "result": "Multiple viral infections do not significantly affect the transcriptional state of retrogradely labeled vmPFC neurons, and mPFC projection neurons are excitatory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C45 are supported by consistency with prior literature (C36: Gabbott et al., 2005) and correlation analysis with published datasets (C45: Figure 2D, Figure 2\u2014figure supplement 1D). The inference that multiple viral infections do not alter transcriptional states (C45) is based on similarity to uninfected datasets, though this is indirect evidence. Direct comparison with uninfected controls from the same animals would strengthen this conclusion.",
+    "result_type": "MINOR"
+  }
+]

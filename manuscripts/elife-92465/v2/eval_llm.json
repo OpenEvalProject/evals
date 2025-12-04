@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C79",
+      "C80"
+    ],
+    "result": "The experimental evolution study maintained six Selected populations on nutrient-poor larval diet for over 230 generations (starting in 2005), compared to six Control populations on standard diet, all derived from the same base population collected in Basel, Switzerland in 1999.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C79, and C80 provide clear documentation of the experimental design with specific details about population origins, timeline, and maintenance conditions. This is fundamental methodological information stated explicitly in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Evolutionary adaptation to poor larval diet resulted in major changes in adult gene expression, with approximately 26% of 8,701 genes affected by evolutionary regime and 45% affected by larval diet treatment. At 10% FDR, 219 genes were differentially expressed between Selected and Control populations, and 827 genes between diet treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 are supported by RNAseq data analyzed with appropriate statistical methods (limma-voom, FDR correction). The magnitude of changes (26% and 45% of genes affected) is estimated using the Storey and Tibshirani method for true nulls, which is a valid approach. Sample sizes (6 populations per regime) provide reasonable replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "GO enrichment analysis revealed that genes differentially expressed between Selected and Control populations are enriched in cuticle development (with higher expression in Selected), hemocyte-related functions (downregulated in Selected), and metabolic processes including oxidation/reduction, purine biosynthesis, and amino acid catabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 are supported by GO enrichment analysis using topGO with appropriate statistical testing. The patterns are clearly shown in Figure 1C. The interpretation regarding hemocyte abundance (C9) is appropriately qualified as a suggestion based on gene expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Targeted metabolomics analysis of 113 metabolites revealed that 57 were differentially abundant between Selected and Control flies, and 57 between diet treatments. Selected flies showed striking shifts in amino acid profiles (8 essential amino acids decreased, 4 non-essential increased), reduced purine compounds (except ADP which increased), lower trehalose and lactate, accumulation of medium-chain acyl-carnitines, and depletion of long-chain acyl-carnitines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C20 are supported by targeted metabolomics data analyzed with appropriate statistical methods (GMM with FDR correction). The metabolomics platform (HILIC-MS/MS) is well-established, and quality control measures (CV<30%, linearity R\u00b2>0.75) were applied. The patterns are clearly visualized in Figure 2B. Sample size (2 replicates per population\u00d7diet combination, 96 total samples) is reasonable for metabolomics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "The evolutionary and phenotypically plastic responses to poor larval diet were largely additive with no significant interaction between evolutionary regime and current diet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 is supported by statistical analysis showing no significant interaction in PCA-MANOVA (p=0.41) or gene-by-gene analysis (lowest q=99.9%). This indicates independent effects of evolution and plasticity on gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "The plastic response of adult gene expression to larval undernutrition did not predict the evolutionary response, with a weakly negative correlation (r=-0.22, p<0.0001) between diet effects and evolutionary regime effects across all genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are supported by correlation analysis shown in Figure 4A. The negative correlation suggests that evolutionary change tends to oppose plastic responses, except for cuticle-related genes. This is a robust finding with large sample size (N=8,701 genes).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "The evolutionary change in metabolome paralleled the phenotypically plastic response to some degree, with a positive correlation (r=0.32, p=0.0005) across all metabolites. Of 30 metabolites significant for both factors, 25 showed the same direction of change (p=0.0005, Fisher's exact test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 are supported by correlation analysis and Fisher's exact test on metabolomics data. This contrasts with the gene expression results and suggests different evolutionary dynamics for metabolome versus transcriptome. The statistical evidence is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Evolutionary changes in adult gene expression and metabolite abundance were positively correlated with changes in larvae. For metabolites, r=0.37 (p=0.0002, N=113). For genes, 377 of 424 (89%) differentially expressed in both stages showed the same direction of change (p<0.0001), and log-fold changes were correlated across all 8,437 shared genes (r=0.35, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by correlation analyses comparing adult data (current study) with previously published larval data. The positive correlations across both metabolites and genes suggest pleiotropic effects of genetic variants across life stages. However, the larval data were collected at different generations (190 and 264) and used different tissue types (whole larvae vs. adult carcasses), which could introduce some noise but likely underestimates the true correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Starvation treatment affected 74 metabolites at 10% FDR. Of 39 metabolites affected by both starvation and evolutionary regime, 29 showed the same direction of change (p=0.006). For six essential amino acids, the response to starvation differed between Selected and Control flies. Fed Selected flies were positioned closer to starved flies along PC1 than fed Control flies (p=0.0015).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by metabolomics data with appropriate statistical testing (GMM, Fisher's exact test, PCA). The starvation experiment provides important functional context for interpreting the evolutionary changes. The regime\u00d7starvation interactions for essential amino acids are particularly interesting and well-documented in Figure 6B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Selected females raised on poor larval diet laid only about 2/3 of the eggs produced by Control females (p=0.0002). Selected females had slightly fewer ovarioles than Controls (p=0.056), but even adjusted for ovariole number, Selected flies produced substantially fewer eggs per ovariole (p=0.002).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by fecundity measurements with appropriate statistical testing (GMM, ANOVA). The data are shown in Figure 7. The finding that Selected flies have lower fecundity even under the conditions they evolved under is crucial for interpreting the evolutionary changes as costly rather than adaptive for adults. Sample sizes appear adequate (N=16 per regime for fecundity, N=72 per regime for ovarioles).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The metabolic profile of Selected flies resembled that of starved flies even when well fed, and Selected flies had lower reproductive output than Controls even under the conditions under which they evolved. These results imply that evolutionary adaptation to juvenile undernutrition has large pleiotropic consequences for adult metabolism that are costly rather than adaptive for adult fitness, and that juvenile and adult metabolism do not evolve independently even in holometabolous species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 integrate findings from metabolomics (starvation similarity) and fecundity experiments. The conclusion that adult metabolic changes are costly rather than adaptive is well-supported by the fecundity data showing Selected flies perform worse even on poor diet. The inference about lack of independent evolution is supported by the correlations between larval and adult changes (C26-C28). These are major interpretive conclusions appropriately supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The positive correlation between adult and larval evolutionary changes implies that genetic variants affect both stages similarly, likely through pleiotropic effects rather than similar selection pressures at both stages. Many adult gene expression changes likely represent correlated responses to selection on the larval stage rather than direct responses to selection on adult performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 present a logical interpretation of the correlation data (C26-C28) combined with the fecundity results (C33-C35). The reasoning is sound: if adult changes were adaptive, Selected adults should perform better on poor diet, but they don't. The pleiotropic interpretation is more parsimonious than assuming similar selection pressures would produce similar metabolic adjustments in larvae (under severe undernutrition) and well-fed adults. This is appropriately presented as inference rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The lower abundance of essential amino acids in Selected flies is consistent with their lower fecundity. The pattern of amino acid changes appears consistent with differential use in metabolism rather than differences in dietary acquisition or protein synthesis. Selected larvae likely catabolize amino acids at a higher rate than Controls, supported by higher uric acid and 15N accumulation in larvae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 present reasonable inferences connecting metabolite patterns with fecundity and metabolic processes. C69 and C70 are appropriately qualified as consistent with or appearing consistent with the data rather than proven. C71 is supported by previously published data on larval uric acid and isotope accumulation (Cavigliasso et al., 2023). The logic connecting amino acid depletion patterns to catabolism rather than acquisition is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "It is possible that Selected flies catabolize amino acids at a higher rate also at the adult stage, and that Selected populations have become programmed to express a starved-like adult metabolic phenotype as a by-product of genetic adaptation to poor larval diet, which might explain their low fecundity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C73 are explicitly presented as speculation ('it remains possible', 'tempting to speculate') without direct evidence. While consistent with the data patterns, these hypotheses require additional experiments (e.g., direct measurement of amino acid catabolism rates, uric acid excretion in adults) to be confirmed. The authors appropriately qualify these as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Assessing the adaptive nature of plastic responses based on evolutionary change direction may be misleading. Independent evolution of larval and adult metabolism would require independent regulation of the same genes, but most regulatory variants likely affect expression across lifetime, constraining independent evolution. This leads to similar physiological changes in larvae and adults in response to selection on juvenile undernutrition, representing a significant fitness trade-off.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 present logical reasoning about evolutionary constraints and the interpretation of plasticity-evolution relationships. The argument is well-supported by the empirical findings (correlations between stages, fecundity costs) and evolutionary theory (Lande and Arnold, 1983). The conclusion about fitness trade-offs is directly supported by the fecundity data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C78"
+    ],
+    "result": "Previous studies on these Selected populations showed that larvae evolved higher viability, faster development, and faster growth on poor diet, with improved protein digestion, amino acid extraction efficiency, and ability to initiate metamorphosis at smaller size. They also evolved reduced microbiota dependence but greater pathogen susceptibility and lower adult starvation resistance. Larval metabolome shows changes in amino acid metabolism, and genomic architecture involves over 100 regions including starvation resistance genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C44 and C78 summarize previously published findings from the same experimental populations, appropriately cited. These provide essential context for interpreting the current results. The claims are supported by citations to peer-reviewed publications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Background information on developmental nutrition effects, plasticity-evolution relationships, Drosophila biology, and metabolic processes relevant to interpreting the study findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C59 provide background information and general knowledge appropriately cited from the literature or established biological knowledge. These contextual claims support the interpretation of results but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Methodological details for RNAseq and metabolomics experiments, including sample preparation (4-day-old mated females, carcass dissection), diet compositions, analytical platforms (HILIC-MS/MS for metabolomics, kallisto mapping for RNAseq), and statistical analysis approaches (limma-voom for gene expression, GMM for metabolites).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C89 describe the experimental methods in detail. These are clearly stated in the Materials and methods section and provide sufficient information for reproducibility. The methods are appropriate for the research questions.",
+    "result_type": "MINOR"
+  }
+]

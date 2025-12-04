@@ -1,0 +1,204 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The BLADE study enrolled 29 non-metastatic prostate cancer patients treated with degarelix (LHRH antagonist) and assessed body composition by DXA and bone turnover markers at baseline, 6, and 12 months. The study was powered to detect correlations \u22650.502, and one FSH outlier was removed from 12-month analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C69-C76 provide comprehensive methodological details including study design, ethical approval, treatment protocol, measurement techniques, and power analysis. The methods are clearly described with appropriate instrumentation and statistical considerations, though the small sample size (n=29) and post-hoc power analysis are limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C53",
+      "C54"
+    ],
+    "result": "Degarelix treatment significantly reduced mean FSH levels from 11.9 UI/l at baseline to 1.45 UI/l at 6 months (-77.59%, p<0.001) and 2.4 UI/l at 12 months (-59.7%, p<0.001), though individual variability in FSH suppression was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 report FSH measurements with confidence intervals and statistical significance at all timepoints, supported by Figure 1. Claims C53-C54 contextualize these findings with prior literature. The data demonstrate consistent FSH suppression with degarelix, though the slight increase from 6 to 12 months and individual variability warrant note.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "At baseline, FSH showed no statistically significant correlations with BMD, bone turnover markers (ALP, CTX), total fat or lean body mass, ALMI, ALMI/FBM ratio, or android/gynoid ratio. Only weak, non-significant trends were observed with arm fat (r=0.36) and leg fat (r=0.33).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C29-C36 consistently report absence of significant baseline correlations across multiple body composition parameters, supported by Table 1. The weak trends in C5 for arm and leg fat are appropriately characterized as non-significant. This establishes the critical baseline comparison for post-treatment findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C55"
+    ],
+    "result": "After degarelix treatment, FSH levels showed significant positive correlations with fat mass that were absent at baseline. At 6 months, FSH correlated with total FBM (r=0.49, p=0.008), arm fat (r=0.53, p=0.004), trunk fat (r=0.48, p=0.009), and leg fat (r=0.45, p=0.015). At 12 months, correlations persisted for total FBM (r=0.52, p=0.006), arm fat (r=0.54, p=0.004), and trunk fat (r=0.45, p=0.018), while leg fat correlation became non-significant (r=0.33, p=0.089).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6-C8, C37-C45, C55 report multiple statistically significant correlations supported by Table 2 and Figure 2. However, critical concerns include: (1) multiple testing without consistent Bonferroni correction (only ALMI/FBM ratio marked as surviving correction in Table 2), (2) modest effect sizes (r=0.45-0.54), (3) small sample size (n=28-29), and (4) cross-sectional correlations at each timepoint rather than longitudinal change correlations (C77). The loss of leg fat significance at 12 months raises questions about consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C41",
+      "C46",
+      "C56",
+      "C57"
+    ],
+    "result": "FSH levels showed a significant inverse correlation with ALMI/FBM ratio after treatment (r=-0.58, p=0.001 at 6 months; r=-0.64, p=0.001 at 12 months), a parameter identifying patients at high risk for sarcopenic obesity. This correlation survived Bonferroni correction and was absent at baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C41, C46, C56 report consistent, strong inverse correlations that survived Bonferroni correction (Table 2), supported by Figure 2d. Claim C57 establishes the clinical relevance of ALMI/FBM ratio. The effect size (r=-0.64) is notably stronger than other correlations, and the consistency across timepoints strengthens confidence. This represents the most robust finding in the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C77"
+    ],
+    "result": "FSH levels showed no significant correlations with BMD or bone turnover markers (ALP, CTX) at any timepoint. Additionally, changes in FSH did not correlate with changes in body composition parameters, BMD, or bone turnover markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64 and C77 report negative findings clearly documented in Table 2 and the text. The absence of bone-related correlations contrasts with prior literature in other populations (C10-C16) and may reflect the specific context of ADT or study limitations. The lack of significant change-change correlations (C77) is an important null finding that limits causal inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The authors propose that sex hormones may counteract FSH effects on body composition at baseline, with FSH effects becoming evident only after androgen/estrogen deprivation by ADT, such that small FSH variations during treatment result in significant body composition changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C61 present a mechanistic interpretation of why correlations emerge post-treatment. While C58 is supported by the data showing absent baseline but present post-treatment correlations, C59 is explicitly speculative. The interpretation is plausible but cannot be tested without testosterone/estrogen measurements, which were not performed. This remains hypothesis-generating rather than demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The authors infer that prostate cancer patients treated with LHRH antagonists (which produce lower residual FSH than agonists) may experience fewer body composition changes due to lower FSH levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C62 states established knowledge about FSH differences between LHRH agonists and antagonists. Claim C63 extrapolates from the current study's findings to suggest clinical implications, but this is speculative inference not directly tested. The study only examined degarelix (antagonist), without a comparator arm using agonists. This represents hypothesis generation requiring prospective comparative studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors conclude this is the first study showing FSH-body composition associations in prostate cancer patients on ADT, suggesting FSH could be a promising monitoring marker for sarcopenic obesity risk. However, they acknowledge this ancillary study's limitations and characterize findings as hypothesis-generating and not generalizable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 present the study's novelty and potential clinical implications, while C80-C81 appropriately acknowledge limitations. The authors correctly characterize their findings as preliminary and hypothesis-generating given the small sample size, ancillary study design, multiple testing concerns, and lack of validation cohort. The balanced presentation of conclusions and limitations is appropriate for the evidence level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The authors establish background knowledge that FSH has extragonadal effects on body composition and bone metabolism (from animal and human studies), ADT profoundly affects FSH levels, and the relationship between FSH and body composition in prostate cancer patients undergoing ADT has not been previously studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C23, C47-C52 present background information supported by multiple citations to preclinical and clinical literature. These establish the scientific rationale for the study. The characterization of the knowledge gap (C22-C23) appropriately motivates the research question. The background claims are well-supported by cited literature, though the accuracy of specific cited findings cannot be verified without reviewing source papers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C78",
+      "C79"
+    ],
+    "result": "The study notes that DXA can reliably measure body composition alterations and discloses partial funding by Ferring Pharmaceuticals without funder involvement in study conduct or reporting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C78-C79 provide methodological context and transparency about funding. C68 is supported by citation, C78-C79 provide standard funding disclosures. These are appropriately documented administrative and methodological details.",
+    "result_type": "MINOR"
+  }
+]

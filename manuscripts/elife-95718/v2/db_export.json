@@ -1,0 +1,1923 @@
+{
+  "submission": {
+    "id": "286a82f2-7a67-4423-9a8a-6fda6003164f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:36:05.104843Z",
+    "updated_at": "2025-12-04T04:36:05.104843Z"
+  },
+  "content": [
+    {
+      "id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "submission_id": "286a82f2-7a67-4423-9a8a-6fda6003164f",
+      "content_type": "manuscript",
+      "content_text": "# The role of RNA in the maintenance of chromatin domains as revealed by antibody-mediated proximity labelling coupled to mass spectrometry\n\n## Authors\n\n- Rupam Choudhury<sup>1</sup> ([ORCID: 0009-0005-2669-7218](https://orcid.org/0009-0005-2669-7218))\n- Anuroop Venkateswaran Venkatasubramani<sup>1</sup> ([ORCID: 0000-0003-2119-8741](https://orcid.org/0000-0003-2119-8741))\n- Jie Hua<sup>1</sup> ([ORCID: 0000-0003-4910-0945](https://orcid.org/0000-0003-4910-0945))\n- Marco Bors\u00f2<sup>3</sup> ([ORCID: 0000-0001-7467-7960](https://orcid.org/0000-0001-7467-7960))\n- Celeste Franconi<sup>4</sup>\n- Sarah Kinkley<sup>4</sup> ([ORCID: 0000-0003-4997-4749](https://orcid.org/0000-0003-4997-4749))\n- Ignasi Forn\u00e9<sup>3</sup> ([ORCID: 0000-0003-0309-907X](https://orcid.org/0000-0003-0309-907X))\n- Axel Imhof<sup>1</sup> ([ORCID: 0000-0003-2993-8249](https://orcid.org/0000-0003-2993-8249)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biology, Biomedical Center Munich, Ludwig-Maximilians University Planegg-Martinsried Germany ([ROR:05591te55](https://ror.org/05591te55))\n2. Graduate School of Quantitative Biosciences (QBM), Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen Munich Germany ([ROR:05591te55](https://ror.org/05591te55))\n3. Protein Analysis Unit, Biomedical Center (BMC), Faculty of Medicine, Ludwig-Maximilians, University (LMU) Munich Planegg-Martinsried Germany ([ROR:05591te55](https://ror.org/05591te55))\n4. Chromatin Structure and Function group, Department of Computational Molecular Biology, Max Planck Institute for Molecular Genetics Berlin Germany ([ROR:03ate3e03](https://ror.org/03ate3e03))\n\n\u2020 Corresponding author\n\n## Abstract\n\nEukaryotic chromatin is organized into functional domains, that are characterized by distinct proteomic compositions and specific nuclear positions. In contrast to cellular organelles surrounded by lipid membranes, the composition of distinct chromatin domains is rather ill described and highly dynamic. To gain molecular insight into these domains and explore their composition, we developed an antibody-based proximity biotinylation method targeting the RNA and proteins constituents. The method that we termed antibody-mediated proximity labelling coupled to mass spectrometry (AMPL-MS) does not require the expression of fusion proteins and therefore constitutes a versatile and very sensitive method to characterize the composition of chromatin domains based on specific signature proteins or histone modifications. To demonstrate the utility of our approach we used AMPL-MS to characterize the molecular features of the chromocenter as well as the chromosome territory containing the hyperactive X chromosome in Drosophila. This analysis identified a number of known RNA-binding proteins in proximity of the hyperactive X and the centromere, supporting the accuracy of our method. In addition, it enabled us to characterize the role of RNA in the formation of these nuclear bodies. Furthermore, our method identified a new set of RNA molecules associated with the Drosophila centromere. Characterization of these novel molecules suggested the formation of R-loops in centromeres, which we validated using a novel probe for R-loops in Drosophila. Taken together, AMPL-MS improves the selectivity and specificity of proximity ligation allowing for novel discoveries of weak protein\u2013RNA interactions in biologically diverse domains.\n\n## Introduction\n\nGenetic information in the eukaryotic nucleus is packaged in a complex chromatin structure. Typically, chromatin has been classified in two major categories: euchromatin, which is loosely packed and more accessible, and tightly packed and less accessible heterochromatin (Heitz, 1932; Elgin and Grewal, 2003). These different degrees of accessibility are thought to be mediated by a network of specific protein\u2013DNA and protein\u2013protein interactions (van Bemmel et al., 2013). Systematic mapping studies of proteins on chromatin using DamID (van Bemmel et al., 2013; Filion et al., 2010) or ChIP (Roy et al., 2010) revealed a diverse composition of chromatin resulting in up to 30 different types of chromatin. A variety of different chromatin capture methods have demonstrated that the genome can be separated in two large functional compartments (Lieberman-Aiden et al., 2009) with inter-chromosomal interactions occurring mainly between loci belonging to the same compartment. While it is generally accepted that the three-dimensional organization of nuclear chromatin in distinct domains plays a major role in regulating gene expression (Pombo and Dillon, 2015; Reiff et al., 2022; Lanct\u00f4t et al., 2007), the mechanisms of how the different types of chromatin form and how they contribute to the dynamic regulation of gene expression are still not fully understood. Several studies have shown that individual chromosomes occupy distinct areas within the nucleus, often called territories (Cremer and Cremer, 2001; Fritz et al., 2019) and specific domains within chromosomes likewise cluster to the interior or periphery of the nucleus (Ou et al., 2017). Prominent examples of such regions are the centromeric heterochromatin that frequently localizes at the nuclear periphery (Taddei et al., 2004) or nuclear bodies such as the nucleolus (Caudron-Herger et al., 2016) or Cajal bodies that are formed on the rDNA locus (Caudron-Herger et al., 2016) or at sites of snRNP and snoRNP biogenesis, respectively (Cioce and Lamond, 2005). Nuclear bodies and distinct chromosome territories dissolve at the onset of mitosis and re-form in G1 (Cheutin et al., 2003; Sexton et al., 2012). Such self-organized formation and maintenance of functional domains are most likely mediated by multiple interactions between the DNA, proteins, and RNA found within these domains (Quinodoz et al., 2021). The individual interactions that drive this process are often weak in nature but nevertheless able to drive the formation of distinct nuclear bodies. Though microscopically detectable, many nuclear bodies are highly dynamic and difficult to purify. In fact, even for the most abundant classes of nuclear bodies such as nucleoli or Cajal bodies, the investigation of their proteomic composition required large quantities of cultured cells (Lam et al., 2002; Andersen et al., 2002; Andersen et al., 2005). The purification and characterization of specific chromosomal territories are even more challenging and often involve the disruption of the nuclear 3D structure before purification of a chromosomal domain (Iglesias et al., 2020; Vermeulen and D\u00e9jardin, 2020; Saksouk et al., 2014). Therefore, these purification methods frequently depend on the stable interaction of the protein with the DNA and hence many weak interactions are lost. A possible solution to this loss is the use of proximity biotinylation methods (Roux et al., 2012), which have been shown to provide powerful tools to identify and characterize such weak interactions (Youn et al., 2018; Samavarchi-Tehrani et al., 2020). In fact, proximity biotinylation has been increasingly used in chromatin research (Kochanova et al., 2020; Minderjahn et al., 2020; Santos-Barriopedro et al., 2021; Remnant et al., 2019; Villase\u00f1or et al., 2020) to characterize the chromosomal environment of DNA-bound factors that have been elusive to ChIP or ChIP-MS methods. A major disadvantage thus far of these methods is the requirement of exogenously expressed fusion proteins such as BioID or variants thereof or with Apex2 and new cell lines had to be established (Kochanova et al., 2020; Minderjahn et al., 2020; Hung et al., 2014; Rhee et al., 2013). Moreover, as the expression of transgenic fusion proteins and the delivery of biotinylation reagents are difficult to control, it results in a high background and variance of the proximity proteome. To overcome these issues, various in vitro methods using BirA derivatives (Santos-Barriopedro et al., 2021; Remnant et al., 2019; Bar et al., 2018) or secondary antibodies coupled to horseradish peroxidase (HRP) Bar et al., 2018; Hashimoto et al., 2012; Kotani et al., 2008; Rees et al., 2015 have been established to facilitate proximity biotinylation in cells. The disadvantages of BirA, HRP, and their derivatives are their relatively low biotinylation efficiency and slower kinetics resulting in a lower sensitivity and the requirement of large amounts of input material. In addition, Apex2 allows the efficient labelling of proteins and RNA molecules in proximity to a given bait using biotin-anilin as substrate. To improve the specificity and sensitivity of these approaches we developed a novel method called AMPL-MS (antibody-mediated proximity labelling coupled to mass spectrometry), using a protein A\u2013Apex2 fusion protein. A related approach has recently been used to study the proteomics composition of protein domains carrying specific histone modifications (Li et al., 2022). However, our approach investigates not only proteins but also RNAs in proximity of nuclear factors that define distinct chromosomal domains. Here, we use AMPL-MS in Drosophila and show that specific nuclear domains are enriched for specific RNAs, which are most likely transcribed from the DNA that is part of the domain. Furthermore, we show that removal of the RNA substantially changes the proteomic composition and domain morphology (Li et al., 2022). Interestingly, deeper evaluation of centromeric RNA\u2013protein proximity data, revealed an important role of R-loops in the formation/maintenance of these domains, which we could confirm using novel orthoganol approaches. Taken together, AMPL-MS is highly versatile and improves the specificity and selectivity of proximity biotinylation, facilitating the discovery of novel and relevant weak RNA\u2013protein interactions within biologically distinct domains.\n\n## Results and discussion\n\n### Versatile proximity biotinylation in cells\n\nTo establish a versatile and sensitive method to characterize the molecular neighbourhood of a given chromatin protein, we expressed a His-tagged fusion protein of protein A and Apex2 in E. coli (pA-Apex2; Figure 1\u2014figure supplement 1). The fusion protein was used to tether Apex2 to chromatin domains marked by specific antibodies, which allows an efficient biotinylation of all proteins in the vicinity (Figure 1a). To assess the specificity of the method, we first targeted centromeric chromatin using an antibody against the centromeric histone variant of H3, Centromer Identifier (CID or dCenpA). The colocalization of the biotin signal with CID in immunofluorescence images shows that pA-Apex2 biotinylates proteins within the centromeric domain only in presence of an anti-CID antibody, biotin-phenol, and hydrogen peroxide (Figure 1b, c). Hardly any biotinylation is observed when either antibody, biotin-phenol, or hydrogen peroxide is omitted. Due to the presence of endogenous peroxides, we could observe some minor background biotinylation when we did not exogenously add hydrogen peroxide and therefore compared all proximity proteomes to the controls where no primary antibody was added. Proteins within this domain were then isolated using streptavidin beads and analysed by mass spectrometry leading to the identification of 172 proteins that localized in proximity to CID containing centromeric chromatin (Figure 1d and Figure 1\u2014figure supplement 1). All previously characterized centromeric proteins of Drosophila were almost exclusively detected in proximity to CID (Figure 1e; Kochanova et al., 2020; Barth et al., 2014). A gene ontology (GO) enrichment analysis of the proteins that had not yet been reported as CID interactors revealed a strong enrichment of factors involved in RNA-related processes (Figure 1f and Figure 1\u2014figure supplement 2). A comparison with a proximity proteome experiments performed in SL2 cells expressing a CID-APEX2 fusion protein (Kochanova et al., 2020) also showed that the AMPL-MS approach has a much higher sensitivity as we got a comparable number of identified components of centromeric chromatin from as little as 2 \u00d7 107 cells as opposed to 2 \u00d7 1010 cells in the conventional experiment (Kochanova et al., 2020; Figure 1\u2014figure supplement 2). This increased sensitivity is most likely due to a much lower background of the AMPL-MS approach thanks to the isolation of nuclei and the extensive washing steps after the incubation with pA-APEX2. These steps greatly reduce interfering background and, thanks to the nuclear permeabilization, increase the penetration of biotin-phenol, which is otherwise not taken up very efficiently by these cells. The establishment of AMPL-MS as a sensitive and versatile method to analyse chromatin domains allows a quick investigation and comparison of such domains even in difficult to isolate cell populations.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/95718/elife-95718-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic of AMPL-MS. Isolated nuclei were fixed, permeabilized, and incubated with specific antibodies. Recombinant pA-Apex2 enzyme binds to the antibody and biotinylates associated proximal proteins upon the addition of H2O2 and biotin-phenol. Proximal protein biotinylation is visualized by microscopy, western blot and proteins were identified by mass spectrometry. Created with BioRender.com. The schematic (b) immunofluorescence microscopy of centromeres using a Cenp-A (CID) antibody (in green) and the corresponding proximity proteome after biotinylation by pA-Apex2 (in red). Nuclear DNA was stained by 4\u2032,6-diamidino-2-phenylindole (DAPI, in blue). IgG was used as antibody control. Scale bars represent 10 \u00b5m (large panel) or 5 \u00b5m (small panel). (c) Distribution of pair-wise Spearman correlations for quantifying the relationship between CID and biotinylation. Images of 10 cells from three independent experiments were used. Statistical significance is based on Wilcoxon rank sum test (***p-value <0.001). (d) Volcano plot of purified biotinylated proteins identified by mass spectrometry. The bait protein is highlighted in red. The x-axis represents the log2 fold change and the y-axis represents \u2212log10 p-value comparing three IgG replicates with three CID antibody replicates (paired). The significantly enriched proteins (abs(LFC) >1 and padj \u2264 0.01) are highlighted in blue. (e) Heatmap showing the enrichment of known centromeric proteins. The heatmap was plotted using scaled log2 raw intensities. Each column represents values obtained from three independent biological replicates. (f) Over representation analysis showing top 20 biological processes (BP) using significant proteins from (d). Unsupervised clustering was performed for the gene ontology (GO) terms. The colour gradation form blue to red represents FDR (false discovery rate) and dot size represents the number of proteins found enriched in the named pathway (count).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95718/elife-95718-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Coomassie stained gel showing expression, purification, and quantification of pA-Apex2 enzyme. (b) In vitro activity assay of the purified pA-Apex2 enzyme. pA-Apex2 was incubated with Drosophila nuclear extract in presence of biotin-phenol and activated with H2O2, along with three different controls as marked on top of the western blot image (for details please refer to the Material and methods section). (c) Time course for the activity of pA-Apex2 as above (b).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/95718/elife-95718-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Principal component analysis (PCA) between AMPL-MS of CID experiment, IgG experiment (antibody control), CID-biotin-phenol control, and CID H2O2 control. (b) Correlation plot showing reproducibility of three AMPL-MS replicates in terms of log2 FC correlation; Pearson\u2019s correlation (r) is reported in each block. (c) Heatmap of differential abundance of proteins from CID AMPL-MS and control antibody IgG AMPL-MS. Unsupervised clustering was performed based on protein abundance. The rows represent protein and the column represents different sample. (d) A bar plot showing the number of proteins identified in CID AMPL-MS in comparison to exogenous plasmid expression-based CID_Apex2 proximity proteomics experiment (Kochanova et al., 2020). (e) Heatmap showing a comparison for enrichment of known centromeric proteins across experiment. The heatmap was plotted using scaled log2 raw intensities. Each column represents values obtained from three independent biological replicates.\n\n### AMPL-MS allows the distinction of different chromatin domains\n\nTo demonstrate the applicability of AMPL-MS to characterize different chromosomal territories, we next investigated the proteomic neighbourhood of the transcriptionally hyperactive X chromosome in Drosophila (Figure 2). To do this, we used an antibody recognizing MSL2, a component of the dosage compensation complex that specifically and selectively associates with the male X chromosome (Lucchesi and Kuroda, 2015). Like the selective biotinylation of the centromere, AMPL-MS using an anti-MSL2 antibody resulted in the specific labelling of the X chromosome territory (Figure 2a, b) only when antibody, biotin-phenol, and hydrogen peroxide is present. As expected, the composition of the enriched sets of protein depends on the bait identity (Figure 2c; Figure 2\u2014figure supplement 1 and Supplementary file 3). Known centromeric proteins were more enriched in the anti-CID AMPL-MS proteome and proteins known to localize the hyperactive X chromosome were mainly detected in the anti-MSL2-AMPL-MS proteome (Figure 2d). The analysis of the entire dataset by a principal component analysis also showed a tight clustering of the domain proteome according to the bait identity (Figure 2\u2014figure supplement 1). A GO enrichment analysis of the differentially enriched proteins revealed a bias for the GO terms spindle assembly and chromatid segregation in proteins close to CID and sex determination and dosage compensation in the proteins proximal to MSL2 (Supplementary files 4 and 5). Interestingly, both chromatin neighbourhoods contained factors related to RNA-related processes albeit with slightly different functional terms (Figure 2e, f). Importantly, this method does not allow us to distinguish whether the association of these factors is directly caused by the recruitment of MSL2 to the hyperactive X or whether their localization is caused by the general upregulation of gene activity on the single male X chromosome. As both proteins are tightly associated with chromatin, we reasoned that the histones in proximity to CID should carry different modification patterns than the one in the neighbourhood of MSL2. Indeed, we detected a moderate increase of activating marks in the MSL2 proximity proteome and a slightly higher level of repressive marks in proximity of CID (Figure 2g). These comparative experiments show that we can apply AMPL-MS to distinguish distinct chromatin domains based on their proteomic composition.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/95718/elife-95718-fig2-v2.jpg)\n\n**Figure 2.:** (a) Immunofluorescence of the X chromosome bound by MSL2 antibody (in green) and biotinylated proteins after biotinylation by pA-Apex2 (in red). Nuclei were stained by DAPI (in blue) and IgG was used as antibody control. Scale bars represent 10 \u00b5m (large panel) or 5 \u00b5m (small panel). (b) Ten cells from three independent experiments were used to quantifying the relationship between MSL-2 and biotinylation. Images of 10 cells from three independent experiments were used. Wilcoxon rank sum test is used for comparison (***p-value <0.001). (c) Volcano plot of biotinylated proteins identified by mass spectrometry. The bait proteins are highlighted in red. The x-axis represents the log2 fold change and the y-axis represents \u2212log10 p-value comparing three CID replicates with three MSL-2 antibody replicates (paired). The significantly enriched proteins (Log2fold change(LFC) >1 and padj \u2264 0.01) are highlighted in blue. (d) Heatmap displaying the enrichment of known centromeric and X-chromosome-associated proteins. The heatmap was plotted using scaled log2 raw intensities. Each column represents values obtained from three independent biological replicates. Over representation analysis showing top 20 biological process (BP) for significantly enriched proteins from (c) associated with either centromere (e) or the X chromosome (f). The colour gradation form blue to red represents FDR (false discovery rate) and dot size represents the number of proteins found enriched in the named pathway (count). (g) Relative quantification of histone modifications associated with the X chromosome territory (left) and the centromere (right).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95718/elife-95718-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Immunoprecipitation of biotinylated proteins after MSL2 antibody-mediated proximity biotinylation assay. (b) Correlation plot showing reproducibility of MSL2 antibody-mediated proximity labelling coupled to mass spectrometry (AMPL-MS) and corresponding antibody control; Pearson\u2019s correlation (r) is reported in each block. (c) Heatmap showing enrichment of member of DCC (dosage compensation complex); proteins known to associated with hyperactive X chromosome. The heatmap was plotted using scaled log2 raw intensities. Each column represents values obtained from three independent biological replicates. (d) Principal component analysis (PCA) between AMPL-MS of CID and MSL2. (e) Heatmap showing enrichment of protein associated with gene ontology (GO) term: \u2018Chromatin organization\u2019. The heatmap was plotted using scaled log2 raw intensities. Each column represents values obtained from three independent biological replicates. (f) Heatmap showing enrichment of protein associated with GO term: \u2018Post-transcriptional regulation of gene expression\u2019. The heatmap was plotted as above. (g) Coomassie stained gel showing the input sample used for immunoprecipitation of histones associated with CID and MSL2 AMPL-MS, used for histone modification analysis. (h) Coomassie stained gel after immunoprecipitation for biotin which subsequently used for histone analysis. (i) PCA for histone modification for samples in (h).\n\n### Proximity labelling of proteins associated with post-translationally modified histones\n\nHaving established AMPL-MS as an efficient and sensitive method to identify proteins associated with distinct chromatin domains marked by antibodies that recognize signature proteins, we next applied AMPL-MS to characterize the proteome in proximity to specific histone marks. To this end, we used antibodies recognizing H3K4me3, H3K9me3, and H4K16Ac for AMPL-MS (Supplementary files 6\u20138). Consistent with the role of these histone modifications in establishing transcriptional active (H3K4me3 and H4K16ac) or repressive (H3K9me3) chromatin domains, the proteomic composition of these domains are very different (Figure 3a and Figure 3\u2014figure supplement 1). As expected, proteins in proximity to H3K9me3 includes several known K9me3-binding proteins, such as Su(var)205 (HP1a) or HP5 and other known heterochromatin-associated proteins such as Su(var)3\u20137, Su(var)3\u20133, HP5, HDAC3, HDAC1, and HDAC6 (Figure 3b). Consistently, we also find an overlap with the centromeric H3 variant CID and proteins that we detected in proximity of it like NPH, NLP, or CENP-C. In contrast, we find mainly proteins associated with active chromatin and the components of the dosage compensation complex in proximity of H4K16ac (Figure 3b).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/95718/elife-95718-fig3-v2.jpg)\n\n**Figure 3.:** (a) Principal component analysis (PCA) based on the proteomic composition for three different histone marks: H3K9me3, H4K16ac, and H3K4me3 antibodies. (b) Heatmap displaying the enrichment of known H3K9me3 and H4K16ac histone modification associated proteins. The heatmap was plotted using scaled log2 raw intensities. Each column represents values obtained from three independent biological replicates. (c) Over representation analysis showing top 20 biological process (BP) for the significantly enriched protein associated with either H3K9me3 or H4K16ac histone modifications. The colour gradation form blue to red represents FDR (false discovery rate) and dot size represents the number of proteins found enriched in the named pathway (count). (d) Heatmap for protein categorized under the gene ontology (GO) term \u2018Spliceosome\u2019, a common GO term found for proteins associated with H3K9me3 and H4K16ac histone modification. The heatmap was plotted using scaled log2 raw intensities. Each column represents values obtained from three independent biological replicates.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95718/elife-95718-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Heatmap of differential abundance of proteins from AMPL-MS of H3K9me3, H4K16ac, and H3K4me3. Unsupervised clustering was performed based on protein abundance. The rows represent protein and the column represents different sample. (b) Volcano plot of biotinylated proteins associated with H3K9me3 and H4K16Ac histone modification, as identified by mass spectrometry. Two of the known associated proteins are highlighted in red. The x-axis represents the log2 fold change and the y-axis represents \u2212log10 p-value comparing three H3K9me3 AMPL-MS replicates with three H3K4me3 AMPL-MS replicates (paired). The significantly enriched proteins (LFC >1 and padj \u2264 0.01) are highlighted in blue. (c) Volcano plot of biotinylated proteins associated with H3K9me3 and H3K4me3 histone modification, as identified by mass spectrometry. Two of the known associated proteins are highlighted in red. The x-axis represents the log2 fold change and the y-axis represents \u2212log10 p-value comparing three H3K9me3 AMPL-MS replicates with three H3K4me3 AMPL-MS replicates (paired). The significantly enriched proteins (LFC >1 and padj \u2264 0.01) are highlighted in blue. (d) Volcano plot of biotinylated proteins associated with H3K4me3 and H4K16ac histone modification, as identified by mass spectrometry and plotted as above (b). (e) Correlation plot showing similarity and reproducibility of AMPL-MS performed with H4K16ac_Milipore and H4K16ac_Active Motif; Pearson\u2019s correlation (r) is reported in each block. (f) Volcano plot of biotinylated proteins associated with H4K16ac_Milipore and H4K16ac_Active Motif histone modification, as identified by mass spectrometry and plotted as (b).\n\nWhile most of these factors have already been described before as bound to repressive or active chromatin in other systems, such a systematic analysis has not been done in the Drosophila system. Moreover, the highly sensitive AMPL-MS method also allowed us to investigate a number of novel factors involved in splicing and RNA processing that are selectively detected in the neighbourhood of H3K9me3 or H4K16ac containing chromatin (Figure 3c). Despite having the same GO term associated with, the individual proteins in proximity to H3K9me3 or H4K16ac were quite different (Figure 3d). Factors like SAF-B or HNRNP-K, which we detect in proximity to H3K9me3 have been shown to play an RNA-dependent role in heterochromatin organization (Huo et al., 2020) and in RNA-mediated transcriptional silencing (Pintacuda et al., 2017). Several RNA-binding proteins we detect closer to H4K16 on the other hand are part of the canonical or non-canonical splicing machinery (Ustaoglu et al., 2019) and are often found close to sites of active transcription. The abundance of specific RNA-binding proteins in proximity to various chromatin domains suggests a major and specific role of RNA in the organization of chromosomal domains.\n\n### The removal of RNA changes the proteomic environment of chromatin domains\n\nChromatin-associated RNA has been suggested to serve as an architectural component or by facilitating the formation of membrane less condensates within the nucleus (Schubert et al., 2012; \u017bylicz et al., 2019; Thakur and Henikoff, 2020; Sabari et al., 2020; Lyon et al., 2021; Guo et al., 2021). Many of the RNAs can act in cis as well as in trans and often show a rather specific distribution. For instance, dosage compensatory RNA Xist in mammals or Rox in Drosophila specifically associate with the inactive female X or the hyperactive male X chromosome in vivo (Grimaud and Becker, 2010; Galupa and Heard, 2018; Samata and Akhtar, 2018; Plath et al., 2002). RNA transcribed from pericentromeric or centromeric chromatin bind plays a key role in setting up the structure of the centromere and the clustering of distinct centromeres in interphase (Corless et al., 2020; Zhu et al., 2023). To investigate the RNA-dependent proteomic neighbourhood of distinct nuclear domains like the hyperactive X chromosome or the chromocenter, we performed AMPL-MS for MSL2 and CID in the presence or absence of RNase A (Figure 4a and Supplementary files 9\u201312). As previously shown, RNA depletion disrupts the centromeric domain and the hyperactive X chromosome, while maintaining the overall nuclear morphology (Figure 4b, c and Figure 4\u2014figure supplement 1). Thanks to the AMPL-MS method we could study the effect of an RnaseA treatment on the proteomic environment of the signature proteins of chromosomal domains. As expected, neither the targeted signature factor nor proteins that mainly interact with them by protein\u2013protein interactions such as MSL1,3 and MOF for MSL2 or Cenp-C for CID are affected by RNAase treatment. However, the proteomic composition of the characterized domains changes substantially upon RNAse treatment (Figure 4d, f). Not surprisingly, a large percentage of proteins that depend on the presence of RNA contain RNA-binding domains (Figure 4e, g), suggesting that the proximity is mediated by a direct interaction of these factors with RNA.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/95718/elife-95718-fig4-v2.jpg)\n\n**Figure 4.:** (a) Schematic of AMPL-MS-RNase method. Isolated nuclei were treated with RNase A, fixed, permeabilized, and incubated with specific antibodies. Recombinant pA-Apex2 enzyme binds to the antibody and biotinylates associated proximal proteins upon the addition of H2O2 and biotin-phenol. Created with BioRender.com. (b) Immunofluorescence of the X-chromosome-bound by an MSL2 antibody (in green) and biotinylated proteins after biotinylation by pA-Apex2 in control (i) and RNase A-treated samples (ii). Nuclei was stained by DAPI (in blue). Scale bars represent 5 \u00b5m. (c) Immunofluorescence of the centromer bound by an anti-CID antibody (in green) and biotinylated proteins after biotinylation by pA-Apex2 in control (i) and RNase A-treated samples (ii). Nuclei were stained by DAPI (in blue). Scale bars represent 5 \u00b5m. Volcano plot of proteins identified by AMPL-MS-RNase using an anti-MSL2 (d) or an anti-CID antibody (f). The bait protein is highlighted in red, along with components of the Drosophila dosage compensation complex. The x-axis represents the log2 fold change and the y-axis represents \u2212log10 p-value comparing three control MSL-2 AMPL-MS replicates with three MSL2-RNase A-treated antibody-mediated proximity labelling coupled to mass spectrometry (AMPL-MS) replicates (paired). The significantly enriched proteins (LFC >1 and padj \u2264 0.01) are highlighted in blue. Percentage of RNA-sensitive proteins in proximity to MSL2 (e) or CID (f) containing known RNA-binding domains (RBP).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95718/elife-95718-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Immunofluorescence image in control (i) and RNase A-treated samples (ii). Nuclei were stained by DAPI (in blue), CID (in green), MLE (in red), and Msl-2 (in magenta). Scale bars represent 5 \u03bcm. (b) Immunofluorescence image in control (i) and RNase A-treated samples (ii). Nuclei were stained by DAPI (in blue), CID (in green), MLE (in red), and MOF (in magenta). Scale bars represent 5 \u03bcm. (c) Immunofluorescence image in control (i) and RNase A-treated samples (ii). Nuclei were stained by DAPI (in blue), CID (in green), MLE (in red), and Hp1a (in magenta). Scale bars represent 5 \u03bcm.\n\nThe APEX2 enzyme can also biotinylated RNA efficiently when provided with biotin-anilin (Zhou et al., 2019) as a substrate. To investigate whether specific RNAs localize to the particular chromatin domains we therefore used biotin-anilin to selectively label RNAs in proximity to MSL1 or CID. Similar to the use of biotin-phenol, biotin-anilin results in a localized labelling of RNA that corresponds to the X chromosome territory or the centromere when labelled with pA-APEX2 and anti-MSL2 or anti-CID, respectively (Figure 5a). We then isolated the biotinylated RNA using streptavidin beads, removed any potentially contaminating DNA by an extensive treatment with DNAase and performed an RT-PCR reaction using primers complementary to various candidate RNAs. As expected, both roxRNAs were strongly enriched in proximity to MSL2 whereas RNA derived from centromeric G2 repeats are detected exclusively in proximity to CID (Figure 5b, c). A control region covering a non-centromeric repeat element know to be transcribed in SL2 cells was neither found close to CID nor to MSL2 (Figure 5c).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/95718/elife-95718-fig5-v2.jpg)\n\n**Figure 5.:** (a) Immunofluorescence microscopy of centromeres and hyperactive X chromosome using CID and MSL2 antibody, respectively (in green), and the corresponding proximity RNA labelling after biotinylation by pA-Apex2 (in red). Nuclear DNA was stained by DAPI (in blue). IgG was used as antibody control. Scale bars represent 5 \u00b5m. (b) RT-qPCR analysis of enriched RNA in proximity to X chromosome. The PCR analysis is showing a specific enrichment of two long non-coding RNA Rox1 and Rox2 which are known to associate with X chromosome and actin as control. Relative abundance is calculated following 2\u2212\u2206\u2206Ct method. Data are the mean of three replicates \u00b11 standard deviation (SD). (c) RT-qPCR analysis of enriched RNA in proximity to centromere. The PCR analysis is showing specific enrichment of RNA originates from centromeres 3 and 4 of SL2 cells. R1 is a control for non-centromeric transcript. Data are the mean of three replicates \u00b11 SD. (d) Enriched R-loop-ChIP-qPCR using hybrid binding domain (HBD) probe. The graph shows enrichment of R-loop in centromere for chromosomes 2\u20134 in control cells (gst RNAi) in comparison to MLE knock down cells. The enrichment is calculated relative to the input and is normalized by the Sdr promoter region as a non-centromeric control. Data are the mean of three replicates \u00b11 SD.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95718/elife-95718-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Levels of expression of hybrid binding domain (HBD) and mutant (WKK) protein upon induction by CuSo4 analysed by western blotting using anti-FLAG antibody. Tubulin served as the loading control. (b) Enriched R-loop-ChIP-qPCR signals relative to input for validated R-loop-positive region (Hop and tRNA Lys) and negative region (Sdr) (Alecki and Francis, 2021) for HBD and WKK mutant. Results were calculated as the percentage of input and presented as mean \u00b1 standard error of the mean (SEM) (n = 3). (c) Sequence of the enriched transcript associated with centromere of chromosome 4. Secondary structure of the RNA as predicted by RNAfold (Gruber et al., 2008).\n\nInterestingly, a few common proteins are lost from both domains, including the RNA helicase MLE, which has been shown to influence dosage compensation (Samata and Akhtar, 2018; Morra et al., 2011; Maenner et al., 2013) and several other nuclear processes such as splicing and heterochromatin deposition (Cugusi et al., 2015). The vertebrate homologue of MLE, DHX9, is an RNA\u2013DNA helicase that has been shown to be important in the regulation of RNA\u2013DNA hybrids (R-loops) (Chakraborty et al., 2018) and has been suggested to play an important role in centromere function in several organisms (Liu et al., 2021; Mishra et al., 2021; Kabeche et al., 2018). Based on the observation that MLE can be detected within the chromocenter of Drosophila polytene chromosomes (Kotlikova et al., 2006), a potential role for MLE for centromere formation in Drosophila has also been proposed. Consistently, we also observed a minor fraction of MLE close to the centromere, which was lost upon Rnase treatment (Figure 4\u2014figure supplement 1). To test whether MLE is indeed involved in R-loop formation in Drosophila centromeres, we used novel synthetic probes that allowed us to enrich for R-loops in vivo. To do this we generated a Drosophila cell line that allowed us to induce the expression of GFP fused to a tandem hybrid binding domain (HBD) from RNAseH1 or a mutant version that is no longer able to bind to R-loops (HBDmut) (Figure 5\u2014figure supplement 1). Similar to what has been shown in other species (Chakraborty et al., 2018; Liu et al., 2021; Kabeche et al., 2018; Racca et al., 2021) using this reporter we detect R-loops at the Drosophila centromere (Figure 5d). DHX9 recognizes and suppresses physiological R-loops at transcription termination regions and CPT-induced R-loops (Cristini et al., 2018). However, in another study DHX9 has been shown to suppress toxic R-loops as well as promote regulatory R-loops, by means of its ability to unwind secondary DNA and RNA structures (Chakraborty et al., 2018). Likewise, Drosophila centromeres have been shown to be rich in sequences that could potentially form non-canonical secondary structures (Patchigolla and Mellone, 2022). These unusual DNA structures may help recruiting CID-specific chaperones such as HJURP in tetrapods (Kato et al., 2007). Such structures form on single-stranded DNA and may therefore be stabilized through the formation of R-loops. Based on our results, we therefore speculate that MLE promotes the formation of R-loops by resolving secondary structures that will form in the centromeric RNA (Chakraborty and Grosse, 2011; Figure 5\u2014figure supplement 1). Such R-loops will then drive the generation of unusual DNA structures that in turn might facilitate CID recruitment. The centromere-associated RNA could then help stabilizing MLE at the centromere thereby resolving the secondary structures and allowing CID containing nucleosomes to assemble. Consistent with this hypothesis we find a substantial reduction of the centromeric R-loops upon knocking down MLE (Figure 5d). This model is further supported by recent findings that a removal of R-loop causes the loss of Cenp-A from the mammalian centromere (Kitagawa et al., 2023) and that neocentromere formed on ectopic sites are often associated with the presence of R-loops (Arunkumar et al., 2022).\n\nIn summary, our data show that the versatility of AMPL-MS allows us to characterize membrane less domains in the nucleus at an unprecedented molecular level and therefore identify systematic changes in these organelles upon challenge.\n\n## Methods\n\n### Cell culture\n\nDrosophila S2DGRC was purchased from the Drosophila Genomics Research Center (https://dgrc.bio.indiana.edu) a subclone of them (L2\u20134) was a gift from Patrick Heun. Both lines have been verified for identity by long read sequencing. Cells were grown in Schneider medium supplemented with 10% fetal calf serum, penicillin and streptomycin at 26\u00b0C. Both cell lines have been tested negative for Mycoplasma.\n\n### Cloning\n\nTo construct a bacterial expression vector for protein-A-Apex2-6xHis fusion protein (pk19pA-Apex2), the MNase sequence in the pk19pAMNase vector (pk19pAMNase was a gift from Ulrich Laemmli, Addgene #86973) was replaced by the Apex2-6xHis sequence. Apex2 was amplified from the plasmid Apex-2NLS_pMT-Hygro (Kochanova et al., 2020) and inserted in the pK19 vector between EcoRI and BamHI restriction enzymes using the primers \u2018pProA-Apex2-3Gly-6His FW\u2019 and \u2018pProA-Apex2-3Gly-6His RE\u2019. Cloning was performed with In-Fusion cloning kit (Clontech). To generate the HBD expression construct for Drosophila (i.e., pMT-EGFP-2xHBD-3xFLAG or the mutant pMT-EGFP-2xHBD WKK-3xFLAG). The \u2018EGFP-2xHBD-3xFLAG\u2019 or \u2018EGFP-2xHBD(WKK)-3xFLAG\u2019 was amplified from pcDNA4_TO_EGFP_2xHBD-3xFLAG or pcDNA4_TO_EGFP_2xHBD(WKK)-3xFLAG and inserted into Not1 and Bgl2 digested \u2018pMT-Hygromycin\u2019 expression plasmid backbone using In-Fusion cloning kit (Clontech). To generate a stable cell line, 3\u20134 millions of cells were transfected with 2 \u03bcg of plasmid mixed with XtremeGENE HP (Roche) transfection reagent according to the manufacturer\u2019s instructions. After transfection, cells were selected for 3 weeks with Hygromycin B (Invitrogen) at 100 \u03bcg/ml, and were selected on Hygromycin during further culture and experiments. Optional induction of cell lines with 250 \u03bcM CuSO4 was performed 12\u201324 hr before experiments. Western blot was performed to verify the production of the HBD probes.\n\n### Expression and purification of pA-Apex2 enzyme\n\nThe bacterial expression plasmid (pk19pA-Apex2-6xHis) was transformed into Bl21DE3 Gold (Stratagene# 230132) according to the manufacturer\u2019s instruction. Transformed colonies were grown overnight and re-cultured in a fresh 1 l of Luria-Bertani (LB) medium until the optical density (OD) reaches to a value 0.6. The protein expression was then induced by adding Isopropyl \u03b2-d-1-thiogalactopyranoside (IPTG 0.25 mM) and cultured for additional 3 hr. Cells were harvested and resuspended in 40 ml of lysis buffer 25 mM Tris pH: 7.2, 10% glycerol, 150 mM NaCl, 0.1% Octylphenoxypolyethoxyethanol (IGEPAL), 1 mM Dithiothreitol (DTT), 10 mM imidazole, supplemented with cOmplete EDTA-free Protease Inhibitor Cocktail (Roche)). Cells were at first lysed with lysozyme and then sonicated. The cell lysate was centrifuged at 45,000 rpm for 30 min at 4\u00b0C. The cleared lysate was then incubated with 1 ml of TALON metal affinity (Takara #Z5504N) resin according to the manufacturer\u2019s instruction. Lysate with the beads were passed through a column (Econo-Pack Disposable Chromatography Columns, 10 ml, Bio-Rad) by gravity flow. The column was then washed three times with lysis buffer, and twice with wash buffer (25 mM Tris pH: 7.2, 10% glycerol, 150 mM Nacl, 0.1% IGEPAL, 1 mM DTT, 20 mM imidazole, supplemented with cOmplete EDTA-free Protease Inhibitor Cocktail (Roche)). The enzyme ProtA-Apex2 was eluted with 5 ml of wash buffer containing 200 mM imidazol, collected in 1 ml fractions. A small aliquot of the collected fractions was loaded on to a sodium dodecyl sulphate\u2013polyacrylamide gel electrophoresis (SDS\u2013PAGE) gel and stained with InstantBlue Coomassie protein stain (abcam #ab119211) according to the manufacturer\u2019s instruction. Fractions containing pA-Apex2 were pulled together and dialysed overnight in dialysis buffer (25 mM Tris pH: 7.2, 10% glycerol, 150 mM NaCl, 0.1% IGEPAL, 1 mM DTT, and protease inhibitors). The dialysed protein solution was then concentrated using Amicon Ultra-4 Centrifugal Filter Units 30K (Millipore, MA #UFC803024) according to the manufacturer\u2019s protocol. The enzyme was snap-frozen and stored at \u221280\u00b0C in storage buffer (25 mM Tris pH: 8, 30% glycerol, 150 mM NaCl, 0.1% IGEPAL, 1 mM DTT, 2 mg/ml of biotin-free Bovine serum albumin (BSA) (Roth #0163.2), supplemented with cOmplete EDTA-free Protease Inhibitor Cocktail (Roche). The concentration of pA-Apex2 was determined using BSA standards.\n\n### In vitro activity assay of pA-Apex2\n\nCells were harvested, washed 2\u00d7 in phosphate-buffered saline (PBS), and resuspended in hypotonic buffer (20 mM 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid (HEPES) pH 7.9, 20 mM NaCl, 5 mM MgCl2, 1 mM Phenylmethylsulfonyl fluoride (PMSF), 1 mM DTT, supplemented with cOmplete EDTA-free Protease Inhibitor Cocktail (Roche)) and incubated on ice for 10 min. Subsequently, cells were dounced with a 261/2 G needle and again incubated on ice for 10 min. Nuclei were pelleted at 500 \u00d7 g, 5 min, 4\u00b0C and lysed in hypotonic buffer supplemented with 0.5% IGEPAL CA-630 (Sigma). To the lysate, Benzonase (Millipore) was added and rotated at 4\u00b0C for 1 hr. Subsequently, NaCl concentration was raised to 300 mM through addition of 5 M NaCl to lysate and rotated at 4\u00b0C for another 30 min. NaCl concentration was lowered back to 150 mM through addition of hypotonic buffer supplemented with 0.5% IGEPAL CA630 and lysate cleared by centrifugation (15,000 \u00d7 g, 15 min, 4\u00b0C). For experiments shown in Supplementary file 1b, c an aliquot of the sample was incubated with 5 \u03bcM pA-Apex2 and 500 \u00b5M biotin-phenol (BP) for 1 min. The biotinylation reaction was triggered by adding H2O2 to a final concentration of 2 mM for 1 min. The reaction was stopped by adding quenching solution. As a negative control similar reaction was performed either in absence of H2O2, BP, or H2O2 and BP.\n\n### Western blotting\n\nBiotinylated extract from in vitro assay or biotin immunoprecipitated streptavidin bead-bound proteins were eluted in Lemmli Buffer at 95\u00b0C and resolved on an SDS\u2013PAGE gel (Serva #43264.01). Proteins were then transferred to a polyvinylidene difluoride (PVDF) membrane using a Trans-Blot Turbo Transfer System (Bio-Rad) according to the manufacturer\u2019s instructions. Membranes were blocked in blocking solution (2% biotin-free BSA in PBS) in a shaker for 1 hr at room temperature (RT). Membranes were then incubated with HRP\u2013streptavidin (BioLegend #405210) (1:2000) in 2% biotin-free BSA in PBST (PBS with 0.1% Tween) for 1 hr in RT. The membranes were developed using Clarity Western ECL Substrate (Bio-Rad #170-5061) and imaged using ChemiDoc Touch Imaging Syatem (Bio-Rad).\n\n### AMPL-MS proximity biotinylation and immunoprecipitation\n\nFor AMPL-MS experiments cells were grown in T75 flasks (Greiner) to a density of 1 \u00d7 107 cells/ml. For each experiment, 2 \u00d7 107 cells were used, therefore 32 \u00d7 107 for a set of experiment (i.e., including experiment, antibody control, biotin-phenol control, and H2O2 control). The cells were washed with 20 ml cold PBS in a 50-ml tube and centrifuged (Thermo Scientific, Heraeus, Multifuge X3R) at 250 \u00d7 g, 4\u00b0C for 5 min. Next, for the nuclear isolation the cell pellet was resuspended in three packed cell volumes of nuclear isolation buffer (NIB) (20 mM Tris pH 7.6, 10 mM KCl, 2.5 mM MgCl2, 0.5 mM Ethylenediaminetetraacetic acid (EDTA), cOmplete Protease inhibitors), incubate on ice for 10 min. Following the incubation, the cell suspension was supplemented with NP40 to a final concentration of 1% and pass through a 20 G needed. The nuclei were spun down at 500 \u00d7 g for 5 min, and washed with NIB with 0.1% NP40. The nuclei were then fixed using in AMPL-MS assay buffer (20 mM HEPES pH 7.5, 150 mM NaCl, 2.5 mM MgCl2, 0.5 mM EDTA, cOmplete Protease inhibitor, MG132, 0.5 mM Spermidine) containing 3.7% vol/vol paraformaldehyde and incubated on a rotating wheel for 10 min in RT. The reaction was quenched by adding 1/20 volume of 2.5 M glycine. Subsequently, the nuclei were washed twice with AMPL-MS assay buffer and briefly treated with H2O2 (5 mM) and quickly washed with assay buffer. Following the treatment, the nuclei were permeabilized with 0.25% Triton X-100 for 6 min on ice and washed in assay buffer supplemented with 1% BSA (biotin-free BSA). The nuclei were then blocked with Image-iT FX Signal Enhancer (Invitrogen #I36933) for 45 min on a rotating wheel at RT. The nuclei were then quickly washed with assay buffer and resuspended in antibody incubation buffer (assay buffer with 5% NGS (Jackson ImmunoResearch), 0.02% digitonin) and split equally into four 0.5 ml low protein-binding tubes. The respective antibodies were added (2.5 \u00b5g/reaction) and incubated overnight in the cold room on a rotating wheel. To remove unbound antibody, following day, the nuclei were washed thrice with wash buffer (assay buffer with 0.1% Tween 20). Next, the nuclei were incubated with 2.5 \u00b5g of pA-Apex2 in antibody incubation buffer for 2 hr in the cold room and another 1 hr in RT on a rotating wheel. After the incubation the nuclei were washed thrice with wash buffer to remove the unbound enzyme. Following the washes biotinylation was performed. The nuclei were first incubated with biotin-phenol (500 \u00b5M) in assay buffer for 20 min in RT in the dark, then H2O2 (1 mM) was added for 2 min to start the biotinylation reaction. The quenching buffer (Trolox 5 mM, sodium sscorbate 10 mM, sodium azide 10 mM) was added to stop the reaction. The nuclei were washed twice with wash buffer with quenching solution. A small amount of the nuclei was saved for immunofluorescence. The rest of the nuclei were subjected to lysis and decrosslinking by heating at 99\u00b0C on a Thermo shaker (800 rpm) for 1 hr in nuclear lysis buffer (100 \u00b5l PBST (PBS with 0.1% Tween 20) 30 \u00b5l of 10% SDS and 20 \u00b5l of 10% sodium deoxycholate). To adjust the concentration of the detergent for immune precipitation the volume of the samples was made up to 1 ml with PBST. Subsequently the samples were treater with 100 U of Benzonase (Milipore #1.01654.0001) and spun down at 14,000 rpm for 20 min at 4\u00b0C. A small fraction (5%) of the supernatant was kept aside as input. The rest of the lysate was incubated with 50 \u00b5l of precleaned streptavidin beads (Invitrogen, Dynabeads M-280 Streptavidin #11206D) at RT for 2 hr. The beads were then washed twice with PBST, twice with PBST + 1 M NaCl, twice with PBS. The beads were transferred to a new tube and washed thrice with 50 mM ammonium bicarbonate. A small fraction (5%) of the beads were saved for immunoblot analysis. The rest of the beads were subjected to on-bead digestion for mass spectrometry.\n\n### AMPL-RNA labelling and enrichment\n\nTo label RNA using antibody-mediated pA-Apex2 the proximity biotinylation was performed as above with slight modification. Unless otherwise noted all the buffers used during RNA labelling and isolation was performed in RNase-free condition. Briefly, 8 \u00d7 107 cells were washed with PBS followed by fixation with 0.1% formaldehyde (FA) for 10 min in RT. The cells were then incubated with respective antibody and pA-Apex2 as above. The biotinylation reaction was performed using biotin-aniline (Iris Biotech, #LS-3970). After the biotin labelling, the nuclei were isolated as above. The isolated nuclei were lysed and decrosslinked in 200 \u00b5l of 1\u00d7 SDS solubilization buffer 0.5% SDS, 1 mM EDTA, 20 mM Tris\u2013Cl (pH 7.5) (+RNase inhibitor) with Proteanase K (100\u2013200 \u00b5g/1 \u00d7 107 cells) at 42\u00b0C for 1 hr, followed by 55\u00b0C for 1 hr. The RNA was purified using TRIzol (Zymo research). The isolated RNA was treated with RNAse-free DNAse I (NEB), followed by phenol\u2013chloroform extraction. To enrich biotinylated RNA C1 streptavidin magnetic beads (Invitrogen) were used (10 \u00b5l beads per 25 \u00b5g of RNA). The beads were cleaned three times with wash buffer (100 mM Tris\u2013HCl (pH 7.4), 10 mM EDTA, 1 M NaCl, 0.1% Tween 20), followed by three times with 0.1 M NaOH, and three times with 0.05 M NaCl and 1 time with 0.1 M NaCl. The beads were blocked in 1\u00d7 Denhardt\u2019s solution (Sigma #750018) with yeast tRNA 1 \u00b5g/\u00b5l for 2 hr in RT. After the incubation the beads were washed with 1\u00d7 Denhardt\u2019s solution and 100 mM NaCl. The beads were resuspended in 100 mM NaCl. The blocked beads were then mixed with 50 \u00b5g of RNA in Diethyl pyrocarbonate (DEPC) treated water to a 50 mM NaCl final concentration and incubated in cold room for 2 hr on a rotating wheel, followed by three times washes using wash buffer. The beads were then resuspended in 54 \u00b5l of RNAse-free water. A 3\u00d7 proteinase digestion buffer was made 1.1 ml of buffer containing 330 \u00b5l of 10\u00d7 PBS pH 7.4 (Ambion), 330 \u00b5l 20% N-lauryl sarcosine sodium solution (Sigma-Aldrich), 66 \u00b5l 0.5 M EDTA (Ambion), 16.5 \u00b5l 1 M DTT (Thermo Fischer). 33 \u00b5l of the 3\u00d7 proteinase buffer was added to the beads along with 10 \u00b5l of Proteinase K (20 mg/ml, Ambion) and 3 \u00b5l Ribolock RNase inhibitor. The beads were then incubated at 42\u00b0C for 1 hr, followed by 55\u00b0C for 1 hr. The RNA was then purified with RNA clean and concentrator kit (Zymo Research). The enriched and purified RNA was then used for reverse transcription PCR (RT-PCR) for quantification . Briefly, the RNA was treated with RNase-free DNAse I (ROCH) followed by first strand cDNA synthesis using SuperScript III (Invitrogen #18080-051) according to the manufacturer\u2019s protocol using random hexamers. The cDNA was treated with RNase H and used for further analysis.\n\n### Immunofluorescent staining\n\nImmunofluorescent experiments were performed as described previously (Kochanova et al., 2020) with minor modifications. Briefly, the nuclei from AMPL-MS assays were adhered on a poly-L-lysine-coated glass coverslip, washed with PBST with quenching solution. After washes, the nuclei were incubated with secondary antibodies for respective bait coupled to Alexa Fluor 488, and anti-biotin antibody [streptavidin, Alexa Fluor 555 #S32355 (1:600)] for 1 hr at RT. Slides were again washed 3 \u00d7 5 min with 0.1% Triton X-100/PBS and incubated with DAPI for 3 min. Excess DAPI was washed off with 0.1% Triton X-100/PBS for 5 min and samples mounted with VECTASHIELD (Vector Labs). Images were acquired using Leica TCS SP8 Confocal Microscope, processed and quantified using Fiji (Schindelin et al., 2012). The colocalization analysis was performed using the EzColocalization package in Fiji.\n\n### Mass spectrometry\n\nMass spectrometry-based proteomic experiments were performed as described previously (Kochanova et al., 2020) with minor modifications. Briefly, beads were washed three times with 50 mM NH4HCO3 and incubated with 10 ng/\u00b5l trypsin in 1 M urea 50 mM NH4HCO3 for 30 min, washed with 50 mM NH4HCO3 and the supernatant digested overnight in presence of 1 mM DTT. Digested peptides were alkylated and desalted prior to LC\u2013MS analysis. The peptide mixtures were subjected to nanoRP-LC\u2013MS/MS analysis on an Ultimate 3000 nano chromatography system coupled to a Qexactive HF or a Orbitrap Exploris-480 mass spectrometer (both Thermo Fisher Scientific) in two to four technical replicates (5 \u03bcl each).\n\n### RNAi\n\nRNAi against a target gene was performed as in M\u00fcller et al., 2020. Briefly, 1 million cells were seeded in a 6-well plate and grown overnight; next day the medium was removed and a total of 10 \u00b5g of dsRNA (5 \u00b5g each as two different siRNAs were used to increase the knock down efficiency) in 1 ml serum-free Schneider medium was added. Cells were gently rocked on a platform for 10 min at RT and left for additional 50 min at 26\u00b0C. Afterward 2 ml of medium was added. On day 5, cells were resuspended and counted. 2 \u00d7 107 cells per RNAi condition were transferred to a 75-cm2 flask for a second round of dsRNA treatment (80 \u00b5g dsRNA/flask/RNAi target) in 8 ml serum-free media and incubated as mentioned above. At day 10, cells were counted and processed for R-loop-ChIP.\n\n### R-loop-ChIP\n\nR-loop-ChIP experiments were performed on cells expressing the either \u2018EGFP-2xHBD-3xFLAG\u2019 or HBD mutant \u2018EGFP-2xHBD(WKK)-3xFLAG\u2019 protein by using standard ChIP protocol as in Lukacs et al., 2021 with modifications. Briefly, 5\u20137 \u00d7 107 cells after RNAi treatment were harvested and crosslinked with 1% FA for 10 min in RT. The reaction was stopped by adding glycine at 125 mM final concentration and incubating for 10 min on ice. Cells were washed twice in PBS before subsequent steps. For nuclei isolation, cells were incubated in nuclear isolation buffer followed by addition of 1% final volume of NP40. After nuclear isolation cells were resuspended in PBS supplemented with 0.5% (vol/vol) Triton X-100 and cOmplete EDTA-free Protease Inhibitor Cocktail (PI; Roche), volume was adjusted to 7 \u00d7 107 cells/ml and cells incubated for 15 min at 4\u00b0C with end-over-end rotation. Nuclei were collected by centrifuging at 4\u00b0C for 10 min at 2000 \u00d7 g and washed once in PBS. For chromatin fragmentation, nuclei were spun down at 4\u00b0C for 10 min at 2000 \u00d7 g, resuspended in RIPA buffer (10 mM Tris/HCl pH 8.0, 140 mM NaCl, 1 mM EDTA, 1% (vol/vol) Triton X-100, 0.1% (vol/vol) SDS, 0.1% (vol/vol) sodium deoxycholate) supplemented with PI. The chromatin was sheared to 250\u2013600 bp in size by sonication with Covaris AFA S220 using 12 \u00d7 12 tubes at 100 W peak incident power, 20% duty factor and 200 cycles per burst for 12 min at 5\u00b0C. The samples were precleaned using protein A/G Sepharose. 5% chromatin fragment was saved as input and the remaining was incubated with with anti-FLAG antibody overnight at 4\u00b0C. Next morning protein-A/G Sepharose beads were added to isolate the antibody-bound chromatin. Beads were sequentially washed three times with wash buffer-I (20 mM Tris\u2013HCl pH 8.0, 150 mM NaCl, 1% Triton X-100, 0.1% SDS, 2 mM EDTA, and 1\u00d7 protease inhibitor cocktail), three times with wash buffer-II (20 mM Tris\u2013HCl pH 8.0, 500 mM NaCl, 1% Triton X-100, 0.1% SDS, 2 mM EDTA, and 1\u00d7 protease inhibitor cocktail), once with wash buffer -III (10 mM Tris\u2013HCl pH 8.0, 250 mM LiCl, 1% NP40, 1% deoxycholate, 1 mM EDTA, and 1\u00d7 protease inhibitor cocktail) and once with TE buffer (10 mM Tris\u2013HCl pH 8.0 and 1 mM EDTA). After the washes, the beads along with the input samples were incubated in 100 \u00b5l of TE buffer with 50 \u00b5g/ml of RNase A at 37\u00b0C for 30 min. After RNase treatment, the samples were adjusted to 0.5% SDS, 0.5 mg/ml of Proteinase K and incubated overnight at 65\u00b0C, 1400 rpm on a thermomixer to decrosslink. The DNA sample was purified using AMpure XP Beads (Beckmann Coulter). The recovered DNA was diluted to 1:10 ratio and subjected to qPCR analysis.\n\n### Database search\n\nMaxQuant 1.6.1.476 (Tyanova et al., 2016) was used to identify proteins and quantify by LFQ with the following parameters: Database, dmel-all-translation-r6.08.fasta (Flybase); MS tolerance, 10 ppm; MS/MS tol, 20 ppm; Peptide false discovery rate (FDR), 0.1; Protein FDR, 0.01; Min. peptide length, 5; Variable modifications, Oxidation (M); Fixed modifications, Carbamidomethyl (C); Peptides for protein quantitation, razor and unique; Min. peptides, 1; Min. ratio count, 2. Match-between-runs (MBR) option was selected. Technical replicates were assigned to one experiment (biological replicate). Experimental and control samples (treated with biotin-phenol and DMSO, respectively) were loaded into the same MaxQuant run. Samples from different cell lines and time points were run separately.\n\n### Data analysis\n\nThe output files from MaxQuant (proteinGroups.txt) were analysed in R environment. Data were filtered such that proteins that are present in two of the three replicates of at least one condition were taken for the analysis. Following filtering, MinProb imputation algorithm with q = 0.01 was performed to impute the missing values and limma based differential expression analysis was carried out. Proteins were considered significant if the LFC >1 and FDR \u22660.05. Over representation analysis was performed using the enrichGO function from clusterProfiler (Lyon et al., 2021) package v3.12.0 by taking the significant proteins (FDR 0.05 cut-off for predicted GO terms) and without a background set. Corresponding GO plots were also generated with R environment. For the tree plot, GO terms were clustered based on GO semantic similarity. Based on the representation in each cluster, a summarized GO term was the written. All code is freely available at https://github.com/anuroopv/RAmP (copy archived at VenkateswaranVenkatasubramani, 2024).\n\n### Histone PTM analysis\n\nTo look at histone modification associated with different chromatin domains as shown in Figure 2f and Figure 2\u2014figure supplement 1, we performed AMPL-MS assay as explained above and performed histone PTM analysis as described previously (V\u00f6lker-Albert et al., 2018) with minor modifications. In brief, the biotinylated proteins were immunoprecipitated using streptavidin beads as earlier and eluted in 1\u00d7 SDS lysis buffer. The proteins were then resolved on a precast SERVAGel TG PRiME 4\u201320% (SERVA Electrophoresis GmbH) gel and stained with InstantBlue Coomassie Protein Stain. Protein bands which correspond to the histones (expected between 11 and 17 kDa) were cut out and destained. Following destaining, in-gel histone acylation using propionic anhydride and digestion with trypsin [MS Grade Pierce Trypsin Protease (Thermo Scientific)] were performed. The histone peptides were then extracted and cleaned using a C8 Stagetip (Rappsilber et al., 2007) before mass spectrometry analysis. MS1 peak integration was performed using Skyline software (Pino et al., 2020) and relative abundances of H3 and H4 peptides were calculated using R.\n\n### Plots and statistical analysis\n\nAll statistical analysis was performed in R environment, except for Figures 1c and 2b. Plots and graphs were generated in R environment, except for Figures 1c\u20143f, e. All schematic figures were created with BioRender.com.\n\n### Data sources\n\nThe datasets produced in this study are available in the ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2022) partner repository with the identifiers: PXD044295 (Proteomics) and PXD044296 (Histone PTMs).\n",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "513e8299-a038-4e65-bb52-17dc817e424d",
+      "submission_id": "286a82f2-7a67-4423-9a8a-6fda6003164f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jerry L Workman, https://ror.org/04bgfm609 Stowers Institute for Medical Research United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.95718.sa0](https://doi.org/10.7554/eLife.95718.sa0)\n\nThis important work features an innovative proximity labeling approach to the identification of proteins enriched in distinct types of chromatin domains. The work further shows that selective protein interactions are RNA dependent. This compelling evidence may fundamentally advance our understanding of chromosome domains and the role of RNA in organizing them.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jerry L Workman, https://ror.org/04bgfm609 Stowers Institute for Medical Research United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.95718.sa1](https://doi.org/10.7554/eLife.95718.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "60f55e07-3bc1-4352-9600-4e3999d9bbb1",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C1",
+      "claim": "AMPL-MS is a novel antibody-based proximity biotinylation method that targets RNA and protein constituents of chromatin domains.",
+      "claim_type": "EXPLICIT",
+      "source": "To gain molecular insight into these domains and explore their composition, we developed an antibody-based proximity biotinylation method targeting the RNA and proteins constituents. The method that we termed antibody-mediated proximity labelling coupled to mass spectrometry (AMPL-MS) does not require the expression of fusion proteins and therefore constitutes a versatile and very sensitive method to characterize the composition of chromatin domains based on specific signature proteins or histone modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly describes the development of AMPL-MS as a new method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "641dcf6c-b15f-4262-b920-f2a8b5fedf7a",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C2",
+      "claim": "AMPL-MS does not require the expression of fusion proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The method that we termed antibody-mediated proximity labelling coupled to mass spectrometry (AMPL-MS) does not require the expression of fusion proteins and therefore constitutes a versatile and very sensitive method to characterize the composition of chromatin domains based on specific signature proteins or histone modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that AMPL-MS does not require fusion protein expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "79b29a28-d373-416b-8958-3783e623c12f",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C3",
+      "claim": "AMPL-MS identified a number of known RNA-binding proteins in proximity of the hyperactive X chromosome and the centromere.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis identified a number of known RNA-binding proteins in proximity of the hyperactive X and the centromere, supporting the accuracy of our method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states that known RNA-binding proteins were identified, supporting the method's accuracy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "a4f3b964-1aa0-4de5-9b58-a90f9e5dbd83",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C4",
+      "claim": "AMPL-MS identified a new set of RNA molecules associated with the Drosophila centromere.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our method identified a new set of RNA molecules associated with the Drosophila centromere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that new centromeric RNAs were identified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "ffd40ce6-256f-466e-b22c-33e82bfa50a4",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C5",
+      "claim": "Characterization of novel centromeric RNA molecules suggested the formation of R-loops in centromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Characterization of these novel molecules suggested the formation of R-loops in centromeres, which we validated using a novel probe for R-loops in Drosophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states that characterization of the RNAs suggested R-loop formation, which was validated.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "c997c005-cc14-4781-bbd6-4db4cf9de991",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C6",
+      "claim": "Eukaryotic chromatin is organized into functional domains characterized by distinct proteomic compositions and specific nuclear positions.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic chromatin is organized into functional domains, that are characterized by distinct proteomic compositions and specific nuclear positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly describes chromatin organization into functional domains.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "d62c3d1c-a60c-47a4-a3c0-6d0f89637a56",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C7",
+      "claim": "Chromatin has been classified into euchromatin (loosely packed and more accessible) and heterochromatin (tightly packed and less accessible).",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, chromatin has been classified in two major categories: euchromatin, which is loosely packed and more accessible, and tightly packed and less accessible heterochromatin (Heitz, 1932; Elgin and Grewal, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites established literature on chromatin classification.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "a5893106-60d0-4dad-8ded-84726586900a",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C8",
+      "claim": "Different degrees of chromatin accessibility are mediated by a network of specific protein-DNA and protein-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "These different degrees of accessibility are thought to be mediated by a network of specific protein\u2013DNA and protein\u2013protein interactions (van Bemmel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a reference supporting this mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "8c34d78f-f48c-4be0-acd0-a958996b4835",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C9",
+      "claim": "Systematic mapping studies using DamID or ChIP revealed up to 30 different types of chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Systematic mapping studies of proteins on chromatin using DamID (van Bemmel et al., 2013; Filion et al., 2010) or ChIP (Roy et al., 2010) revealed a diverse composition of chromatin resulting in up to 30 different types of chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites multiple studies that identified diverse chromatin types.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "f19eef6f-62dc-4f9a-936d-7aa4c1296fa0",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C10",
+      "claim": "The genome can be separated into two large functional compartments with inter-chromosomal interactions occurring mainly between loci belonging to the same compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "A variety of different chromatin capture methods have demonstrated that the genome can be separated in two large functional compartments (Lieberman-Aiden et al., 2009) with inter-chromosomal interactions occurring mainly between loci belonging to the same compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites chromatin capture studies demonstrating compartmentalization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "dd324bd0-3762-4bd0-93d4-d098bd5c259a",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C11",
+      "claim": "Individual chromosomes occupy distinct areas within the nucleus called territories.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have shown that individual chromosomes occupy distinct areas within the nucleus, often called territories (Cremer and Cremer, 2001; Fritz et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites studies demonstrating chromosome territories.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "8d1f4be8-c44e-4513-9c3d-b1658a402b03",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C12",
+      "claim": "Centromeric heterochromatin frequently localizes at the nuclear periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Prominent examples of such regions are the centromeric heterochromatin that frequently localizes at the nuclear periphery (Taddei et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a study showing centromeric localization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "eda42590-e942-4bb0-9019-bf23aafe7460",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C13",
+      "claim": "Nuclear bodies and distinct chromosome territories dissolve at the onset of mitosis and re-form in G1.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear bodies and distinct chromosome territories dissolve at the onset of mitosis and re-form in G1 (Cheutin et al., 2003; Sexton et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites studies showing the dynamic behavior of nuclear bodies during the cell cycle.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "b294c76a-915e-4fc0-b474-7bef1bd8057b",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C14",
+      "claim": "Self-organized formation and maintenance of functional domains are mediated by multiple interactions between DNA, proteins, and RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Such self-organized formation and maintenance of functional domains are most likely mediated by multiple interactions between the DNA, proteins, and RNA found within these domains (Quinodoz et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a reference supporting this mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "f04aa8ee-1b24-4283-b162-cc7f36be8914",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C15",
+      "claim": "Proximity biotinylation methods have been shown to provide powerful tools to identify and characterize weak interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "A possible solution to this loss is the use of proximity biotinylation methods (Roux et al., 2012), which have been shown to provide powerful tools to identify and characterize such weak interactions (Youn et al., 2018; Samavarchi-Tehrani et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites multiple references supporting the utility of proximity biotinylation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "3b867ebd-047a-474c-a7cd-e45f093d1878",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C16",
+      "claim": "Proximity biotinylation has been increasingly used in chromatin research to characterize the chromosomal environment of DNA-bound factors.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, proximity biotinylation has been increasingly used in chromatin research (Kochanova et al., 2020; Minderjahn et al., 2020; Santos-Barriopedro et al., 2021; Remnant et al., 2019; Villase\u00f1or et al., 2020) to characterize the chromosomal environment of DNA-bound factors that have been elusive to ChIP or ChIP-MS methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites multiple studies using proximity biotinylation in chromatin research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "bcb1fd54-05b7-4511-af85-9ad1a31ac203",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C17",
+      "claim": "A major disadvantage of existing proximity biotinylation methods is the requirement of exogenously expressed fusion proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "A major disadvantage thus far of these methods is the requirement of exogenously expressed fusion proteins such as BioID or variants thereof or with Apex2 and new cell lines had to be established (Kochanova et al., 2020; Minderjahn et al., 2020; Hung et al., 2014; Rhee et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this as a disadvantage and cites relevant studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "7d68e686-4175-4572-8eb7-b162d976933f",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C18",
+      "claim": "Expression of transgenic fusion proteins results in high background and variance of the proximity proteome.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as the expression of transgenic fusion proteins and the delivery of biotinylation reagents are difficult to control, it results in a high background and variance of the proximity proteome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes this limitation of transgenic fusion protein approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "fa6ba728-236b-4621-b7d3-cb30f8c468fb",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C19",
+      "claim": "Various in vitro methods using BirA derivatives or secondary antibodies coupled to HRP have been established to facilitate proximity biotinylation in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome these issues, various in vitro methods using BirA derivatives (Santos-Barriopedro et al., 2021; Remnant et al., 2019; Bar et al., 2018) or secondary antibodies coupled to horseradish peroxidase (HRP) Bar et al., 2018; Hashimoto et al., 2012; Kotani et al., 2008; Rees et al., 2015 have been established to facilitate proximity biotinylation in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites multiple studies describing alternative proximity biotinylation methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "d6af16c6-7abe-4b34-885a-377a8d87cd9b",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C20",
+      "claim": "BirA, HRP, and their derivatives have relatively low biotinylation efficiency and slower kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "The disadvantages of BirA, HRP, and their derivatives are their relatively low biotinylation efficiency and slower kinetics resulting in a lower sensitivity and the requirement of large amounts of input material.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly describes the limitations of these enzymes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "a7bbf4b6-472a-4068-87bb-8d395525e061",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C21",
+      "claim": "Apex2 allows efficient labelling of proteins and RNA molecules in proximity to a given bait using biotin-anilin as substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Apex2 allows the efficient labelling of proteins and RNA molecules in proximity to a given bait using biotin-anilin as substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes the capability of Apex2 for RNA labeling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "af5f05e8-1d67-45ab-9067-9396bda1ab83",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C22",
+      "claim": "A related approach using protein A-Apex2 has recently been used to study the proteomics composition of protein domains carrying specific histone modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "A related approach has recently been used to study the proteomics composition of protein domains carrying specific histone modifications (Li et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a recent study using a similar approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "862da6ae-4429-401a-9376-c592475b81a6",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C23",
+      "claim": "AMPL-MS investigates both proteins and RNAs in proximity of nuclear factors that define distinct chromosomal domains.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our approach investigates not only proteins but also RNAs in proximity of nuclear factors that define distinct chromosomal domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that AMPL-MS analyzes both proteins and RNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "e0ab9cc7-f39f-48d0-987f-8432c7c99381",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C24",
+      "claim": "Specific nuclear domains are enriched for specific RNAs, which are most likely transcribed from the DNA that is part of the domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use AMPL-MS in Drosophila and show that specific nuclear domains are enriched for specific RNAs, which are most likely transcribed from the DNA that is part of the domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes findings from AMPL-MS experiments showing domain-specific RNA enrichment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "bdfd269d-4ca2-46ed-9792-91f044dd88d5",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C25",
+      "claim": "Removal of RNA substantially changes the proteomic composition and domain morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we show that removal of the RNA substantially changes the proteomic composition and domain morphology (Li et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes experimental results showing RNA-dependent changes in chromatin domains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "76ace511-f7e9-41bf-b738-7101c49aca0a",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C26",
+      "claim": "Deeper evaluation of centromeric RNA-protein proximity data revealed an important role of R-loops in the formation/maintenance of centromeric domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, deeper evaluation of centromeric RNA\u2013protein proximity data, revealed an important role of R-loops in the formation/maintenance of these domains, which we could confirm using novel orthoganol approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes analysis of AMPL-MS data revealing R-loop involvement in centromeres.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "0034d37a-7703-409c-a697-2c93dba599b3",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C27",
+      "claim": "A His-tagged fusion protein of protein A and Apex2 (pA-Apex2) was expressed in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "To establish a versatile and sensitive method to characterize the molecular neighbourhood of a given chromatin protein, we expressed a His-tagged fusion protein of protein A and Apex2 in E. coli (pA-Apex2; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes the expression of the pA-Apex2 fusion protein, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "efa30d09-c6e4-4239-bbf1-25a9e21f565b",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C28",
+      "claim": "The pA-Apex2 fusion protein was used to tether Apex2 to chromatin domains marked by specific antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "The fusion protein was used to tether Apex2 to chromatin domains marked by specific antibodies, which allows an efficient biotinylation of all proteins in the vicinity (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes the mechanism of AMPL-MS using pA-Apex2, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "55b3bd08-1269-4bb6-8873-1bfb14a79fca",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C29",
+      "claim": "pA-Apex2 biotinylates proteins within the centromeric domain only in presence of an anti-CID antibody, biotin-phenol, and hydrogen peroxide.",
+      "claim_type": "EXPLICIT",
+      "source": "The colocalization of the biotin signal with CID in immunofluorescence images shows that pA-Apex2 biotinylates proteins within the centromeric domain only in presence of an anti-CID antibody, biotin-phenol, and hydrogen peroxide (Figure 1b, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes immunofluorescence results showing specific biotinylation, with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "07c16594-ef49-446a-98df-528dad63810d",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C30",
+      "claim": "Hardly any biotinylation is observed when either antibody, biotin-phenol, or hydrogen peroxide is omitted.",
+      "claim_type": "EXPLICIT",
+      "source": "Hardly any biotinylation is observed when either antibody, biotin-phenol, or hydrogen peroxide is omitted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes control experiments showing specificity of biotinylation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "61301e18-4f7b-42b6-b0fa-ce7a8a93f21f",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C31",
+      "claim": "AMPL-MS using an anti-CID antibody identified 172 proteins that localized in proximity to CID containing centromeric chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins within this domain were then isolated using streptavidin beads and analysed by mass spectrometry leading to the identification of 172 proteins that localized in proximity to CID containing centromeric chromatin (Figure 1d and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text reports the number of proteins identified by mass spectrometry, with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "26cef64f-0c85-4b52-891c-d8caecea0fb7",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C32",
+      "claim": "All previously characterized centromeric proteins of Drosophila were almost exclusively detected in proximity to CID.",
+      "claim_type": "EXPLICIT",
+      "source": "All previously characterized centromeric proteins of Drosophila were almost exclusively detected in proximity to CID (Figure 1e; Kochanova et al., 2020; Barth et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes the detection of known centromeric proteins, with citations and reference to a figure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "ff36638e-0816-45d6-b21e-b698da3b869a",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C33",
+      "claim": "Gene ontology enrichment analysis of proteins not yet reported as CID interactors revealed a strong enrichment of factors involved in RNA-related processes.",
+      "claim_type": "EXPLICIT",
+      "source": "A gene ontology (GO) enrichment analysis of the proteins that had not yet been reported as CID interactors revealed a strong enrichment of factors involved in RNA-related processes (Figure 1f and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes GO analysis results, with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "1b335a80-e7d4-4901-9342-c25d4e8ce293",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C34",
+      "claim": "AMPL-MS approach has much higher sensitivity than conventional CID-APEX2 fusion protein experiments, requiring 2\u00d710^7 cells compared to 2\u00d710^10 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison with a proximity proteome experiments performed in SL2 cells expressing a CID-APEX2 fusion protein (Kochanova et al., 2020) also showed that the AMPL-MS approach has a much higher sensitivity as we got a comparable number of identified components of centromeric chromatin from as little as 2 \u00d7 107 cells as opposed to 2 \u00d7 1010 cells in the conventional experiment (Kochanova et al., 2020; Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text compares AMPL-MS to a previous study, citing the reference and referencing a figure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "52738805-c470-4bdb-8caf-a4e6b6ffa5e9",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C35",
+      "claim": "The increased sensitivity of AMPL-MS is most likely due to a much lower background thanks to nuclear isolation and extensive washing steps.",
+      "claim_type": "EXPLICIT",
+      "source": "This increased sensitivity is most likely due to a much lower background of the AMPL-MS approach thanks to the isolation of nuclei and the extensive washing steps after the incubation with pA-APEX2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides an explanation for the increased sensitivity based on the experimental procedure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "ce601ccf-cb1c-4f5a-9d3c-66de075e8e15",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C36",
+      "claim": "Nuclear permeabilization increases the penetration of biotin-phenol, which is otherwise not taken up very efficiently by cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These steps greatly reduce interfering background and, thanks to the nuclear permeabilization, increase the penetration of biotin-phenol, which is otherwise not taken up very efficiently by these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explains how nuclear permeabilization improves biotin-phenol delivery.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "c040d1db-54c4-4806-8dff-25beeae91939",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C37",
+      "claim": "AMPL-MS using an anti-MSL2 antibody resulted in specific labelling of the X chromosome territory.",
+      "claim_type": "EXPLICIT",
+      "source": "Like the selective biotinylation of the centromere, AMPL-MS using an anti-MSL2 antibody resulted in the specific labelling of the X chromosome territory (Figure 2a, b) only when antibody, biotin-phenol, and hydrogen peroxide is present.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes immunofluorescence results showing specific X chromosome labeling, with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "e610deb7-4985-4573-a6d4-cb8bcbaa6706",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C38",
+      "claim": "The composition of the enriched sets of protein depends on the bait identity.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the composition of the enriched sets of protein depends on the bait identity (Figure 2c; Figure 2\u2014figure supplement 1 and Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes mass spectrometry results showing bait-dependent protein enrichment, with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "7fded2b8-2dec-4ac2-ae27-103de5c990e2",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C39",
+      "claim": "Known centromeric proteins were more enriched in the anti-CID AMPL-MS proteome and proteins known to localize the hyperactive X chromosome were mainly detected in the anti-MSL2-AMPL-MS proteome.",
+      "claim_type": "EXPLICIT",
+      "source": "Known centromeric proteins were more enriched in the anti-CID AMPL-MS proteome and proteins known to localize the hyperactive X chromosome were mainly detected in the anti-MSL2-AMPL-MS proteome (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes the differential enrichment of known proteins in different AMPL-MS experiments, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "a43369ae-6d97-4774-bec6-f2948bafcd67",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C40",
+      "claim": "Principal component analysis showed tight clustering of the domain proteome according to the bait identity.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of the entire dataset by a principal component analysis also showed a tight clustering of the domain proteome according to the bait identity (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes PCA results, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "6623cc84-8be3-4636-bbe4-eeb4c67bcf1d",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C41",
+      "claim": "GO enrichment analysis revealed a bias for spindle assembly and chromatid segregation in proteins close to CID and sex determination and dosage compensation in proteins proximal to MSL2.",
+      "claim_type": "EXPLICIT",
+      "source": "A GO enrichment analysis of the differentially enriched proteins revealed a bias for the GO terms spindle assembly and chromatid segregation in proteins close to CID and sex determination and dosage compensation in the proteins proximal to MSL2 (Supplementary files 4 and 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes GO analysis results comparing CID and MSL2 proximity proteomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "13a8a779-7da2-4067-a467-9510aec1ffda",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C42",
+      "claim": "Both CID and MSL2 chromatin neighbourhoods contained factors related to RNA-related processes albeit with slightly different functional terms.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, both chromatin neighbourhoods contained factors related to RNA-related processes albeit with slightly different functional terms (Figure 2e, f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes GO analysis results showing RNA-related processes in both domains, with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "fe423d62-225a-4284-afe6-f699e47abaf8",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C43",
+      "claim": "Histones in proximity to CID carry different modification patterns than those in the neighbourhood of MSL2.",
+      "claim_type": "EXPLICIT",
+      "source": "As both proteins are tightly associated with chromatin, we reasoned that the histones in proximity to CID should carry different modification patterns than the one in the neighbourhood of MSL2. Indeed, we detected a moderate increase of activating marks in the MSL2 proximity proteome and a slightly higher level of repressive marks in proximity of CID (Figure 2g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes histone modification analysis results, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "c22bd50a-e791-4313-b9c9-a88710913a66",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C44",
+      "claim": "AMPL-MS using antibodies recognizing H3K4me3, H3K9me3, and H4K16Ac showed that the proteomic composition of these domains are very different.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we used antibodies recognizing H3K4me3, H3K9me3, and H4K16Ac for AMPL-MS (Supplementary files 6\u20138). Consistent with the role of these histone modifications in establishing transcriptional active (H3K4me3 and H4K16ac) or repressive (H3K9me3) chromatin domains, the proteomic composition of these domains are very different (Figure 3a and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes AMPL-MS results for different histone modifications, with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "9f55cfd8-4f0f-47a9-8d92-5e13c2164d65",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C45",
+      "claim": "Proteins in proximity to H3K9me3 include several known K9me3-binding proteins and other known heterochromatin-associated proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, proteins in proximity to H3K9me3 includes several known K9me3-binding proteins, such as Su(var)205 (HP1a) or HP5 and other known heterochromatin-associated proteins such as Su(var)3\u20137, Su(var)3\u20133, HP5, HDAC3, HDAC1, and HDAC6 (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes the identification of known heterochromatin proteins in H3K9me3 AMPL-MS, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "bd37c9dc-9cd5-4ff7-97a7-331dd1b9b56c",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C46",
+      "claim": "Proteins associated with active chromatin and components of the dosage compensation complex are found in proximity of H4K16ac.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we find mainly proteins associated with active chromatin and the components of the dosage compensation complex in proximity of H4K16ac (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes the identification of active chromatin proteins in H4K16ac AMPL-MS, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "4084cd10-680b-4bc1-9640-8a7b52654c05",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C47",
+      "claim": "AMPL-MS identified novel factors involved in splicing and RNA processing that are selectively detected in the neighbourhood of H3K9me3 or H4K16ac containing chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the highly sensitive AMPL-MS method also allowed us to investigate a number of novel factors involved in splicing and RNA processing that are selectively detected in the neighbourhood of H3K9me3 or H4K16ac containing chromatin (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes the identification of novel RNA processing factors, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "1e9a6b19-7e6e-426b-9572-9829dcc39468",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C48",
+      "claim": "Despite having the same GO term associated with them, the individual proteins in proximity to H3K9me3 or H4K16ac were quite different.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite having the same GO term associated with, the individual proteins in proximity to H3K9me3 or H4K16ac were quite different (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes differences in protein composition despite shared GO terms, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "e0e0997a-6b33-4c73-8566-7287746ea22c",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C49",
+      "claim": "SAF-B and HNRNP-K detected in proximity to H3K9me3 have been shown to play an RNA-dependent role in heterochromatin organization and RNA-mediated transcriptional silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Factors like SAF-B or HNRNP-K, which we detect in proximity to H3K9me3 have been shown to play an RNA-dependent role in heterochromatin organization (Huo et al., 2020) and in RNA-mediated transcriptional silencing (Pintacuda et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes the known functions of proteins detected by AMPL-MS, with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "7f831121-3d2c-4b54-a1b1-30b011d0a04d",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C50",
+      "claim": "Several RNA-binding proteins detected closer to H4K16 are part of the canonical or non-canonical splicing machinery and are often found close to sites of active transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Several RNA-binding proteins we detect closer to H4K16 on the other hand are part of the canonical or non-canonical splicing machinery (Ustaoglu et al., 2019) and are often found close to sites of active transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes the known functions of proteins detected by AMPL-MS, with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "6a931234-e873-4445-b651-564d9fea2965",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C51",
+      "claim": "The abundance of specific RNA-binding proteins in proximity to various chromatin domains suggests a major and specific role of RNA in the organization of chromosomal domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The abundance of specific RNA-binding proteins in proximity to various chromatin domains suggests a major and specific role of RNA in the organization of chromosomal domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text provides an interpretation of the AMPL-MS results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "19a3d9a5-5805-4464-ab79-6e95208632b8",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C52",
+      "claim": "Chromatin-associated RNA has been suggested to serve as an architectural component or by facilitating the formation of membrane less condensates within the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin-associated RNA has been suggested to serve as an architectural component or by facilitating the formation of membrane less condensates within the nucleus (Schubert et al., 2012; \u017bylicz et al., 2019; Thakur and Henikoff, 2020; Sabari et al., 2020; Lyon et al., 2021; Guo et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites multiple references supporting the role of RNA in nuclear organization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "7046ffee-c29d-4559-910b-cc6b0b0600a3",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C53",
+      "claim": "Dosage compensatory RNA Xist in mammals or Rox in Drosophila specifically associate with the inactive female X or the hyperactive male X chromosome in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, dosage compensatory RNA Xist in mammals or Rox in Drosophila specifically associate with the inactive female X or the hyperactive male X chromosome in vivo (Grimaud and Becker, 2010; Galupa and Heard, 2018; Samata and Akhtar, 2018; Plath et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites multiple references describing the localization of dosage compensation RNAs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "4d4ce0ac-c148-458f-87c1-62785c909d21",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C54",
+      "claim": "RNA transcribed from pericentromeric or centromeric chromatin plays a key role in setting up the structure of the centromere and the clustering of distinct centromeres in interphase.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA transcribed from pericentromeric or centromeric chromatin bind plays a key role in setting up the structure of the centromere and the clustering of distinct centromeres in interphase (Corless et al., 2020; Zhu et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites references describing the role of centromeric RNA.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "9d393d4b-27ac-46fd-8652-00f47aaac6c8",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C55",
+      "claim": "RNA depletion disrupts the centromeric domain and the hyperactive X chromosome, while maintaining the overall nuclear morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously shown, RNA depletion disrupts the centromeric domain and the hyperactive X chromosome, while maintaining the overall nuclear morphology (Figure 4b, c and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes immunofluorescence results after RNase treatment, with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "df704694-db56-44bf-84ed-f66dfdffe652",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C57",
+      "claim": "A large percentage of proteins that depend on the presence of RNA contain RNA-binding domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Not surprisingly, a large percentage of proteins that depend on the presence of RNA contain RNA-binding domains (Figure 4e, g), suggesting that the proximity is mediated by a direct interaction of these factors with RNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes analysis of RNA-sensitive proteins, with reference to figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "40c25588-caa0-47f7-9386-02e6133c9343",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C58",
+      "claim": "Biotin-anilin results in a localized labelling of RNA that corresponds to the X chromosome territory or the centromere when labelled with pA-APEX2 and anti-MSL2 or anti-CID, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the use of biotin-phenol, biotin-anilin results in a localized labelling of RNA that corresponds to the X chromosome territory or the centromere when labelled with pA-APEX2 and anti-MSL2 or anti-CID, respectively (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes immunofluorescence results for RNA labeling, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "34b4ddea-f48a-4076-b10d-697111123ced",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C59",
+      "claim": "Both roxRNAs were strongly enriched in proximity to MSL2 whereas RNA derived from centromeric G2 repeats are detected exclusively in proximity to CID.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, both roxRNAs were strongly enriched in proximity to MSL2 whereas RNA derived from centromeric G2 repeats are detected exclusively in proximity to CID (Figure 5b, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes RT-qPCR results showing domain-specific RNA enrichment, with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "dd66fec6-7798-4919-b80c-44afaefc45a4",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C60",
+      "claim": "A control region covering a non-centromeric repeat element known to be transcribed in SL2 cells was neither found close to CID nor to MSL2.",
+      "claim_type": "EXPLICIT",
+      "source": "A control region covering a non-centromeric repeat element know to be transcribed in SL2 cells was neither found close to CID nor to MSL2 (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes RT-qPCR control results, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "1c98658a-efc3-40b8-92c8-06f1f96a3657",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C61",
+      "claim": "MLE is a common protein lost from both centromeric and X chromosome domains upon RNA removal.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a few common proteins are lost from both domains, including the RNA helicase MLE, which has been shown to influence dosage compensation (Samata and Akhtar, 2018; Morra et al., 2011; Maenner et al., 2013) and several other nuclear processes such as splicing and heterochromatin deposition (Cugusi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes mass spectrometry results after RNase treatment, with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "fc20e45f-2bc4-4830-b399-4581d19da681",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C62",
+      "claim": "The vertebrate homologue of MLE, DHX9, is an RNA-DNA helicase that has been shown to be important in the regulation of RNA-DNA hybrids (R-loops).",
+      "claim_type": "EXPLICIT",
+      "source": "The vertebrate homologue of MLE, DHX9, is an RNA\u2013DNA helicase that has been shown to be important in the regulation of RNA\u2013DNA hybrids (R-loops) (Chakraborty et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a reference describing the function of DHX9.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "47708aba-3a86-4545-9e56-dd754a23ea85",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C63",
+      "claim": "DHX9 has been suggested to play an important role in centromere function in several organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "and has been suggested to play an important role in centromere function in several organisms (Liu et al., 2021; Mishra et al., 2021; Kabeche et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites multiple references describing the role of DHX9 in centromeres.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "d220ade2-1f26-4328-b364-697b8dc92fe1",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C64",
+      "claim": "MLE can be detected within the chromocenter of Drosophila polytene chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the observation that MLE can be detected within the chromocenter of Drosophila polytene chromosomes (Kotlikova et al., 2006), a potential role for MLE for centromere formation in Drosophila has also been proposed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a reference describing MLE localization in Drosophila.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "25f129a6-3215-415b-983f-bc11cddfaaed",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C65",
+      "claim": "A minor fraction of MLE was observed close to the centromere, which was lost upon Rnase treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, we also observed a minor fraction of MLE close to the centromere, which was lost upon Rnase treatment (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes immunofluorescence results, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "f9253287-d110-42f5-9514-22b889f0d612",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C66",
+      "claim": "R-loops are detected at the Drosophila centromere using a hybrid binding domain (HBD) probe.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to what has been shown in other species (Chakraborty et al., 2018; Liu et al., 2021; Kabeche et al., 2018; Racca et al., 2021) using this reporter we detect R-loops at the Drosophila centromere (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes R-loop ChIP results, with citations and reference to a figure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "6abb51a2-96bc-4d28-8f2b-0e6a9417c9c1",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C67",
+      "claim": "DHX9 recognizes and suppresses physiological R-loops at transcription termination regions and CPT-induced R-loops.",
+      "claim_type": "EXPLICIT",
+      "source": "DHX9 recognizes and suppresses physiological R-loops at transcription termination regions and CPT-induced R-loops (Cristini et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a reference describing DHX9 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "ca10e51a-60f4-4200-a147-b89317430320",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C68",
+      "claim": "DHX9 has been shown to suppress toxic R-loops as well as promote regulatory R-loops, by means of its ability to unwind secondary DNA and RNA structures.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in another study DHX9 has been shown to suppress toxic R-loops as well as promote regulatory R-loops, by means of its ability to unwind secondary DNA and RNA structures (Chakraborty et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a reference describing DHX9 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "3e09bd34-92ff-4fab-aa3c-4f6ce83311dc",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C69",
+      "claim": "Drosophila centromeres have been shown to be rich in sequences that could potentially form non-canonical secondary structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, Drosophila centromeres have been shown to be rich in sequences that could potentially form non-canonical secondary structures (Patchigolla and Mellone, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a reference describing centromeric DNA sequences.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "04121606-1484-4a8c-b8ac-966a3536cdcc",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C70",
+      "claim": "Unusual DNA structures may help recruiting CID-specific chaperones such as HJURP in tetrapods.",
+      "claim_type": "EXPLICIT",
+      "source": "These unusual DNA structures may help recruiting CID-specific chaperones such as HJURP in tetrapods (Kato et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a reference describing the role of unusual DNA structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "ffbdb3c0-4cff-4736-be7d-304671d3cccc",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C71",
+      "claim": "MLE promotes the formation of R-loops by resolving secondary structures that form in the centromeric RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our results, we therefore speculate that MLE promotes the formation of R-loops by resolving secondary structures that will form in the centromeric RNA (Chakraborty and Grosse, 2011; Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text provides a speculative model based on the results, with a citation and reference to a figure.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "064250e2-915c-4c0b-9e4b-2d520c0b4649",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C72",
+      "claim": "There is a substantial reduction of the centromeric R-loops upon knocking down MLE.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis we find a substantial reduction of the centromeric R-loops upon knocking down MLE (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes R-loop ChIP results after MLE knockdown, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "14ad9239-703d-46ac-992f-3fe703018518",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C73",
+      "claim": "Removal of R-loop causes the loss of Cenp-A from the mammalian centromere.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is further supported by recent findings that a removal of R-loop causes the loss of Cenp-A from the mammalian centromere (Kitagawa et al., 2023)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a recent reference supporting the model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "2af76ebe-cfc7-476d-9916-d21cbd021445",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C74",
+      "claim": "Neocentromeres formed on ectopic sites are often associated with the presence of R-loops.",
+      "claim_type": "EXPLICIT",
+      "source": "and that neocentromere formed on ectopic sites are often associated with the presence of R-loops (Arunkumar et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a reference supporting the role of R-loops in centromere formation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "5ad9da07-3f9c-46d5-b253-385b464abb6d",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C76",
+      "claim": "Drosophila S2DGRC cells were purchased from the Drosophila Genomics Research Center.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila S2DGRC was purchased from the Drosophila Genomics Research Center (https://dgrc.bio.indiana.edu)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the source of cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "80ab012a-88a7-47c7-b210-ac7314d42ac1",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C77",
+      "claim": "Both Drosophila cell lines have been verified for identity by long read sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Both lines have been verified for identity by long read sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes cell line verification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "2d7813ce-87d8-4e52-86d8-d944ee5c4092",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C78",
+      "claim": "Both Drosophila cell lines have been tested negative for Mycoplasma.",
+      "claim_type": "EXPLICIT",
+      "source": "Both cell lines have been tested negative for Mycoplasma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes cell line testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "1c19baba-987e-40c1-8076-1f2c92303a7c",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C79",
+      "claim": "The MNase sequence in the pk19pAMNase vector was replaced by the Apex2-6xHis sequence to construct the pA-Apex2 expression vector.",
+      "claim_type": "EXPLICIT",
+      "source": "To construct a bacterial expression vector for protein-A-Apex2-6xHis fusion protein (pk19pA-Apex2), the MNase sequence in the pk19pAMNase vector (pk19pAMNase was a gift from Ulrich Laemmli, Addgene #86973) was replaced by the Apex2-6xHis sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the cloning procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "67cc76f4-b6aa-4363-a0ea-fc84fc9b76b6",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C80",
+      "claim": "Apex2 was amplified from the plasmid Apex-2NLS_pMT-Hygro.",
+      "claim_type": "EXPLICIT",
+      "source": "Apex2 was amplified from the plasmid Apex-2NLS_pMT-Hygro (Kochanova et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the source of Apex2, with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "7b973e07-7ca2-44cd-a764-81995cc887ab",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C81",
+      "claim": "The pA-Apex2 enzyme was expressed in Bl21DE3 Gold bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The bacterial expression plasmid (pk19pA-Apex2-6xHis) was transformed into Bl21DE3 Gold (Stratagene# 230132) according to the manufacturer's instruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the bacterial expression system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "e8755036-3896-4602-a03c-460c93b9b67a",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C82",
+      "claim": "Protein expression was induced by adding IPTG at 0.25 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein expression was then induced by adding Isopropyl \u03b2-d-1-thiogalactopyranoside (IPTG 0.25 mM) and cultured for additional 3 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the protein expression protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "1c0f8487-e370-41a3-90ae-3868da546657",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C83",
+      "claim": "The pA-Apex2 enzyme was purified using TALON metal affinity resin.",
+      "claim_type": "EXPLICIT",
+      "source": "The cleared lysate was then incubated with 1 ml of TALON metal affinity (Takara #Z5504N) resin according to the manufacturer's instruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the protein purification procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "53c2eb72-5ae9-460c-9c95-4dc00182ad8c",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C84",
+      "claim": "For AMPL-MS experiments, 2\u00d710^7 cells were used per experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "For each experiment, 2 \u00d7 107 cells were used, therefore 32 \u00d7 107 for a set of experiment (i.e., including experiment, antibody control, biotin-phenol control, and H2O2 control).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the number of cells used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "30e02a06-5021-45e0-8aea-dc7070f1cb92",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C85",
+      "claim": "Nuclei were fixed using 3.7% vol/vol paraformaldehyde in AMPL-MS assay buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "The nuclei were then fixed using in AMPL-MS assay buffer (20 mM HEPES pH 7.5, 150 mM NaCl, 2.5 mM MgCl2, 0.5 mM EDTA, cOmplete Protease inhibitor, MG132, 0.5 mM Spermidine) containing 3.7% vol/vol paraformaldehyde and incubated on a rotating wheel for 10 min in RT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the fixation procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "390209cc-39cd-43aa-bcbe-1b65b48f6402",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C86",
+      "claim": "Nuclei were permeabilized with 0.25% Triton X-100 for 6 min on ice.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the treatment, the nuclei were permeabilized with 0.25% Triton X-100 for 6 min on ice and washed in assay buffer supplemented with 1% BSA (biotin-free BSA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the permeabilization procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "17771548-aa83-4cae-91bd-d26bbd1e138c",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C87",
+      "claim": "Antibodies were incubated with nuclei overnight in the cold room.",
+      "claim_type": "EXPLICIT",
+      "source": "The respective antibodies were added (2.5 \u00b5g/reaction) and incubated overnight in the cold room on a rotating wheel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the antibody incubation procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "eaf076ab-2200-4e0f-9284-0cdb42c33e62",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C88",
+      "claim": "pA-Apex2 (2.5 \u00b5g) was incubated with nuclei for 2 hr in the cold room and another 1 hr in RT.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, the nuclei were incubated with 2.5 \u00b5g of pA-Apex2 in antibody incubation buffer for 2 hr in the cold room and another 1 hr in RT on a rotating wheel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the pA-Apex2 incubation procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "c8819b87-9c59-451f-bd18-b43ef198c790",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C89",
+      "claim": "Biotinylation was performed by incubating nuclei with biotin-phenol (500 \u00b5M) for 20 min followed by H2O2 (1 mM) for 2 min.",
+      "claim_type": "EXPLICIT",
+      "source": "The nuclei were first incubated with biotin-phenol (500 \u00b5M) in assay buffer for 20 min in RT in the dark, then H2O2 (1 mM) was added for 2 min to start the biotinylation reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the biotinylation procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "978e3025-b843-4ff7-8bb5-5d8a8728c855",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C90",
+      "claim": "The biotinylation reaction was stopped by adding quenching buffer containing Trolox (5 mM), sodium ascorbate (10 mM), and sodium azide (10 mM).",
+      "claim_type": "EXPLICIT",
+      "source": "The quenching buffer (Trolox 5 mM, sodium sscorbate 10 mM, sodium azide 10 mM) was added to stop the reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the quenching procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "a6a6476e-890f-4a9b-8649-ad7201d218d6",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C91",
+      "claim": "Biotinylated proteins were isolated using streptavidin beads.",
+      "claim_type": "EXPLICIT",
+      "source": "The rest of the lysate was incubated with 50 \u00b5l of precleaned streptavidin beads (Invitrogen, Dynabeads M-280 Streptavidin #11206D) at RT for 2 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the protein isolation procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "8a4ad31b-f197-402f-bda9-2b24aad3006b",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C92",
+      "claim": "For RNA labeling, biotin-aniline was used instead of biotin-phenol.",
+      "claim_type": "EXPLICIT",
+      "source": "The biotinylation reaction was performed using biotin-aniline (Iris Biotech, #LS-3970).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the RNA labeling procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "46ae96eb-50ec-426f-9af4-c56d0d5e143a",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C93",
+      "claim": "Biotinylated RNA was enriched using C1 streptavidin magnetic beads.",
+      "claim_type": "EXPLICIT",
+      "source": "To enrich biotinylated RNA C1 streptavidin magnetic beads (Invitrogen) were used (10 \u00b5l beads per 25 \u00b5g of RNA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the RNA enrichment procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "cd6f6daf-61e0-4679-9f5c-31c8750c4c65",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C94",
+      "claim": "MaxQuant 1.6.1.476 was used to identify proteins and quantify by LFQ.",
+      "claim_type": "EXPLICIT",
+      "source": "MaxQuant 1.6.1.476 (Tyanova et al., 2016) was used to identify proteins and quantify by LFQ with the following parameters: Database, dmel-all-translation-r6.08.fasta (Flybase); MS tolerance, 10 ppm; MS/MS tol, 20 ppm; Peptide false discovery rate (FDR), 0.1; Protein FDR, 0.01; Min. peptide length, 5; Variable modifications, Oxidation (M); Fixed modifications, Carbamidomethyl (C); Peptides for protein quantitation, razor and unique; Min. peptides, 1; Min. ratio count, 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the mass spectrometry data analysis procedure, with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "b7c6c69a-8f93-4a75-b9eb-3a7725b98c8a",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C95",
+      "claim": "Proteins were considered significant if the LFC >1 and FDR \u22640.05.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins were considered significant if the LFC >1 and FDR \u22660.05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the statistical criteria for significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "c7f323b6-3219-48d2-9893-6ebb74f3467e",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C96",
+      "claim": "Over representation analysis was performed using the enrichGO function from clusterProfiler package.",
+      "claim_type": "EXPLICIT",
+      "source": "Over representation analysis was performed using the enrichGO function from clusterProfiler (Lyon et al., 2021) package v3.12.0 by taking the significant proteins (FDR 0.05 cut-off for predicted GO terms) and without a background set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the GO analysis procedure, with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "1cf250c6-6bd5-4e82-af5d-46e2b12f4972",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "claim_id": "C97",
+      "claim": "The datasets produced in this study are available in the ProteomeXchange Consortium via the PRIDE partner repository with the identifiers: PXD044295 (Proteomics) and PXD044296 (Histone PTMs).",
+      "claim_type": "EXPLICIT",
+      "source": "The datasets produced in this study are available in the ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2022) partner repository with the identifiers: PXD044295 (Proteomics) and PXD044296 (Histone PTMs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes data availability, with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e0c35913-cc27-40b1-ad2e-aab7cadadb96",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "AMPL-MS is a novel antibody-based proximity biotinylation method that does not require fusion protein expression. The method uses a recombinant pA-Apex2 fusion protein to tether Apex2 to chromatin domains marked by specific antibodies, enabling efficient biotinylation of proximal proteins only when antibody, biotin-phenol, and hydrogen peroxide are present.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C27-C30 collectively demonstrate the development and validation of AMPL-MS. The immunofluorescence data (C29) with appropriate controls (C30) and the expression/purification of pA-Apex2 (C27) provide strong evidence for the method's specificity and functionality. The approach is clearly distinguished from existing methods by not requiring transgenic fusion proteins (C2).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "e0c6c0b6-7926-489a-9d43-e916b6a85f5f",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "AMPL-MS demonstrates high sensitivity and specificity for centromeric chromatin characterization. Using an anti-CID antibody, the method identified 172 proteins including all known centromeric proteins, with 1000-fold improved sensitivity (2\u00d710^7 vs 2\u00d710^10 cells) compared to conventional CID-APEX2 fusion protein approaches. GO analysis revealed enrichment of RNA-related processes among novel CID-proximal proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C36 provide converging evidence for AMPL-MS sensitivity and accuracy. The detection of all known centromeric proteins (C32) validates the method, while the dramatic reduction in required cell numbers (C34) with mechanistic explanation (C35-C36) demonstrates technical advancement. The GO analysis (C33) reveals novel biology, though the RNA-related findings require further validation addressed in later results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "7f8235a7-b56b-4822-8f0e-508181b7cd44",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "AMPL-MS successfully distinguishes different chromatin domains based on their proteomic composition. Using anti-MSL2 antibody, the method specifically labeled the X chromosome territory, with domain-specific protein enrichment confirmed by PCA clustering and GO analysis showing distinct functional biases (spindle assembly for CID, dosage compensation for MSL2). Both domains contained RNA-related factors with different functional terms, and histones showed domain-specific modification patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C43 demonstrate AMPL-MS versatility across different chromatin domains. The immunofluorescence specificity (C37), bait-dependent protein enrichment (C38-C39), PCA clustering (C40), and GO analysis (C41-C42) provide multiple lines of evidence. The histone modification analysis (C43) adds orthogonal validation, though the differences are described as 'moderate' and 'slightly higher', suggesting modest effect sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "08565c7c-5391-4d3c-be22-532f3006007c",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "AMPL-MS using histone modification-specific antibodies (H3K4me3, H3K9me3, H4K16Ac) reveals distinct proteomic compositions consistent with active and repressive chromatin states. The method identified known heterochromatin proteins (HP1a, HDACs) near H3K9me3 and active chromatin/dosage compensation proteins near H4K16ac, along with novel domain-specific splicing and RNA processing factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C50 demonstrate AMPL-MS applicability to histone modifications. The detection of expected proteins (C45-C46) validates the approach, while identification of novel RNA processing factors (C47-C48) extends known biology. The functional context provided by literature (C49-C50) strengthens interpretation, though the novelty of individual protein associations requires independent validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "3f45f4a7-951d-4ba8-96ed-37e5840257da",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The abundance of specific RNA-binding proteins in proximity to various chromatin domains suggests RNA plays a major and specific role in chromosomal domain organization. This interpretation is supported by literature showing RNA serves as architectural components in nuclear condensates and that specific RNAs (Xist, Rox, centromeric transcripts) associate with distinct chromosomal territories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 provide a synthesis of AMPL-MS findings with established literature. While C51 is an inference from the data, it is well-supported by the consistent detection of RNA-binding proteins across multiple domains and extensive literature citations (C52-C54) documenting RNA's architectural roles. However, this result is primarily interpretive rather than presenting new experimental evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "5fec290a-5660-4a4d-8ee4-721db56aa9a6",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RNA depletion substantially changes chromatin domain composition and morphology. RNase treatment disrupts centromeric and X chromosome domains while maintaining overall nuclear structure, with many RNA-sensitive proteins containing RNA-binding domains, suggesting direct RNA-protein interactions mediate domain organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55, C57, and C25 demonstrate RNA's functional importance through loss-of-function experiments. The immunofluorescence showing domain disruption (C55) combined with proteomic changes (C25) and enrichment of RNA-binding domains in sensitive proteins (C57) provide strong evidence. However, RNase treatment is a crude perturbation that may have indirect effects, and the claim that proximity is 'mediated by direct interaction' (C57) is inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "84992376-9742-4c49-90f7-31ca171245b4",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "AMPL-MS can identify domain-specific RNAs using biotin-anilin as substrate. The method shows localized RNA labeling corresponding to X chromosome and centromeric territories, with RT-qPCR confirming specific enrichment of roxRNAs near MSL2 and centromeric G2 repeat RNAs near CID, while control transcripts show no enrichment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C58-C60, and C24 demonstrate AMPL-MS capability for RNA profiling. The immunofluorescence (C58), RT-qPCR validation with appropriate controls (C59-C60), and domain-specific enrichment (C24) provide strong evidence. However, the claim that RNAs are 'most likely transcribed from DNA that is part of the domain' (C24) is inferential and would require genomic localization data for definitive support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "d091f6af-bebd-4c56-9494-ffd42a0a3974",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MLE, an RNA helicase, is lost from both centromeric and X chromosome domains upon RNA removal. MLE's vertebrate homolog DHX9 regulates R-loops and plays important roles in centromere function across organisms. Immunofluorescence confirms a minor fraction of MLE localizes to Drosophila centromeres in an RNA-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 identify MLE as a key RNA-dependent factor at chromatin domains. The mass spectrometry data (C61), extensive literature support for DHX9/MLE function (C62-C64), and immunofluorescence validation (C65) provide converging evidence. However, the 'minor fraction' of MLE at centromeres (C65) suggests this may not be a major localization site, and the functional significance requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "56bea8c4-23af-4b44-8f1e-eac16518797f",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "AMPL-MS identified novel centromeric RNAs and suggested R-loop formation at Drosophila centromeres. Using a novel HBD probe, R-loops were detected at centromeres, and MLE knockdown substantially reduced centromeric R-loops. The authors speculate MLE promotes R-loop formation by resolving secondary structures in centromeric RNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C66, C71-C72 present a novel finding about centromeric R-loops. The RNA identification (C4), HBD probe validation (C66), and MLE knockdown effects (C72) provide experimental support. However, the mechanistic model (C71) is explicitly speculative, and the 'substantial reduction' upon MLE knockdown (C72) lacks quantification. The result would be strengthened by additional R-loop mapping and mechanistic validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "6f13b260-b86e-4c32-bcd9-859b6edc143b",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Centromeric R-loops play an important role in centromere formation and maintenance. This model is supported by literature showing Drosophila centromeres are rich in sequences forming non-canonical secondary structures, R-loop removal causes Cenp-A loss in mammals, and neocentromeres associate with R-loops.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26, C69-C70, C73-C74 synthesize the study's findings with recent literature to propose a model for R-loop function at centromeres. While the AMPL-MS data and R-loop detection (C26) are experimental, the model relies heavily on literature from other systems (C73-C74). The cross-species support strengthens the interpretation, but direct functional tests in Drosophila are needed for definitive validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "a59f488d-376d-4fae-9cd8-4bbf9eb1d201",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Drosophila S2DGRC cells were obtained from DGRC, verified by long-read sequencing for identity, and tested negative for Mycoplasma contamination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 describe standard cell line authentication procedures. The methods are clearly stated and represent best practices for cell line validation. These quality control measures support the reliability of all experimental results but are routine methodological details rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "725b36d2-86df-4b14-8aad-43653612fadc",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The pA-Apex2 fusion protein was constructed by replacing MNase in pk19pAMNase with Apex2-6xHis sequence, expressed in E. coli BL21DE3 Gold with 0.25 mM IPTG induction, and purified using TALON metal affinity resin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C83 describe standard molecular cloning and protein expression procedures. The methods are clearly documented with appropriate citations and reagent details. While essential for reproducibility, these are routine techniques rather than methodological innovations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "bd16c497-3a1e-4ba2-b618-22b8241ae423",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The AMPL-MS protocol uses 2\u00d710^7 cells per experiment, involves nuclear isolation, fixation with 3.7% paraformaldehyde, permeabilization with 0.25% Triton X-100, overnight antibody incubation, 3-hour pA-Apex2 incubation, and 2-minute biotinylation with 500 \u00b5M biotin-phenol and 1 mM H2O2, followed by quenching and streptavidin bead isolation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C91 provide detailed protocol specifications essential for reproducibility. The methods are clearly described with specific concentrations, times, and temperatures. These procedural details support the technical rigor of the study but represent methodological documentation rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "0c9cf744-f34a-44b2-9e52-78737687bb0f",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "For RNA labeling, biotin-aniline was substituted for biotin-phenol, and biotinylated RNA was enriched using C1 streptavidin magnetic beads (10 \u00b5l beads per 25 \u00b5g RNA).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C93 describe the adaptation of AMPL-MS for RNA labeling. The substrate switch from biotin-phenol to biotin-aniline is well-established for Apex2-mediated RNA labeling. While important for the RNA experiments, this represents application of known chemistry rather than methodological innovation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "101a6d9d-956b-4ea7-95fb-030bd32e4f23",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Mass spectrometry data were analyzed using MaxQuant 1.6.1.476 with specific parameters (10 ppm MS tolerance, 0.01 protein FDR). Proteins with LFC >1 and FDR \u22640.05 were considered significant. GO analysis used clusterProfiler v3.12.0 enrichGO function without background set.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C96 document the computational analysis pipeline. The methods are standard and appropriately cited. However, the lack of a background set for GO analysis (C96) may affect specificity, and the statistical threshold (C95) is clearly defined but relatively permissive (FDR \u22640.05 rather than more stringent cutoffs). These are acceptable but not optimal analytical choices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "3f8d74f0-e800-4d7a-ab1c-09cfc97b9b4d",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Proteomics and histone PTM datasets are publicly available in ProteomeXchange/PRIDE with identifiers PXD044295 and PXD044296.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C97 documents data availability in appropriate public repositories with specific accession numbers. This represents best practice for data sharing and reproducibility but is a standard requirement rather than a scientific finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "de517866-9ed0-40cc-b282-23c28f87edf9",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Eukaryotic chromatin is organized into functional domains with distinct proteomic compositions and nuclear positions. Chromatin is classified into euchromatin and heterochromatin, with accessibility mediated by protein-DNA and protein-protein interactions. Systematic studies revealed up to 30 chromatin types, genome compartmentalization, chromosome territories, and dynamic reorganization during the cell cycle, with domain formation mediated by DNA-protein-RNA interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C14 provide background context from established literature with appropriate citations. These claims accurately represent current understanding of chromatin organization but present no new findings. They serve to motivate the study and contextualize results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "c94cf24a-24ca-4857-8d89-2d19f90e4527",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Existing proximity biotinylation methods have limitations including requirement for fusion protein expression, high background, low sensitivity (BirA/HRP), and large input requirements. While Apex2 enables efficient protein and RNA labeling, previous approaches required transgenic cell lines. A related protein A-Apex2 approach was recently used for histone modification domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C22 review existing proximity biotinylation methods with appropriate citations, identifying limitations that motivate AMPL-MS development. The assessment is fair and well-supported by literature. However, some limitations (C18, C20) are stated without quantitative support, and the comparison to Li et al. 2022 (C22) could be more detailed regarding methodological differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    },
+    {
+      "id": "5edb3870-d510-4607-bd13-21e31c161607",
+      "content_id": "592faceb-4524-44dd-9f59-a4d36aaf032b",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "AMPL-MS identified known RNA-binding proteins in proximity of the hyperactive X chromosome and centromere, supporting the method's accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C3 is supported by the detection of expected proteins in domain-specific proteomes (covered in detail by C32, C39, C45-C46). The identification of known factors validates the method, though this is a validation result rather than a novel biological finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:36:05.104843Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "60f55e07-3bc1-4352-9600-4e3999d9bbb1",
+      "result_id": "e0c35913-cc27-40b1-ad2e-aab7cadadb96"
+    },
+    {
+      "claim_id": "641dcf6c-b15f-4262-b920-f2a8b5fedf7a",
+      "result_id": "e0c35913-cc27-40b1-ad2e-aab7cadadb96"
+    },
+    {
+      "claim_id": "0034d37a-7703-409c-a697-2c93dba599b3",
+      "result_id": "e0c35913-cc27-40b1-ad2e-aab7cadadb96"
+    },
+    {
+      "claim_id": "efa30d09-c6e4-4239-bbf1-25a9e21f565b",
+      "result_id": "e0c35913-cc27-40b1-ad2e-aab7cadadb96"
+    },
+    {
+      "claim_id": "55b3bd08-1269-4bb6-8873-1bfb14a79fca",
+      "result_id": "e0c35913-cc27-40b1-ad2e-aab7cadadb96"
+    },
+    {
+      "claim_id": "07c16594-ef49-446a-98df-528dad63810d",
+      "result_id": "e0c35913-cc27-40b1-ad2e-aab7cadadb96"
+    },
+    {
+      "claim_id": "61301e18-4f7b-42b6-b0fa-ce7a8a93f21f",
+      "result_id": "e0c6c0b6-7926-489a-9d43-e916b6a85f5f"
+    },
+    {
+      "claim_id": "26cef64f-0c85-4b52-891c-d8caecea0fb7",
+      "result_id": "e0c6c0b6-7926-489a-9d43-e916b6a85f5f"
+    },
+    {
+      "claim_id": "ff36638e-0816-45d6-b21e-b698da3b869a",
+      "result_id": "e0c6c0b6-7926-489a-9d43-e916b6a85f5f"
+    },
+    {
+      "claim_id": "1b335a80-e7d4-4901-9342-c25d4e8ce293",
+      "result_id": "e0c6c0b6-7926-489a-9d43-e916b6a85f5f"
+    },
+    {
+      "claim_id": "52738805-c470-4bdb-8caf-a4e6b6ffa5e9",
+      "result_id": "e0c6c0b6-7926-489a-9d43-e916b6a85f5f"
+    },
+    {
+      "claim_id": "ce601ccf-cb1c-4f5a-9d3c-66de075e8e15",
+      "result_id": "e0c6c0b6-7926-489a-9d43-e916b6a85f5f"
+    },
+    {
+      "claim_id": "c040d1db-54c4-4806-8dff-25beeae91939",
+      "result_id": "7f8235a7-b56b-4822-8f0e-508181b7cd44"
+    },
+    {
+      "claim_id": "e610deb7-4985-4573-a6d4-cb8bcbaa6706",
+      "result_id": "7f8235a7-b56b-4822-8f0e-508181b7cd44"
+    },
+    {
+      "claim_id": "7fded2b8-2dec-4ac2-ae27-103de5c990e2",
+      "result_id": "7f8235a7-b56b-4822-8f0e-508181b7cd44"
+    },
+    {
+      "claim_id": "a43369ae-6d97-4774-bec6-f2948bafcd67",
+      "result_id": "7f8235a7-b56b-4822-8f0e-508181b7cd44"
+    },
+    {
+      "claim_id": "6623cc84-8be3-4636-bbe4-eeb4c67bcf1d",
+      "result_id": "7f8235a7-b56b-4822-8f0e-508181b7cd44"
+    },
+    {
+      "claim_id": "13a8a779-7da2-4067-a467-9510aec1ffda",
+      "result_id": "7f8235a7-b56b-4822-8f0e-508181b7cd44"
+    },
+    {
+      "claim_id": "fe423d62-225a-4284-afe6-f699e47abaf8",
+      "result_id": "7f8235a7-b56b-4822-8f0e-508181b7cd44"
+    },
+    {
+      "claim_id": "c22bd50a-e791-4313-b9c9-a88710913a66",
+      "result_id": "08565c7c-5391-4d3c-be22-532f3006007c"
+    },
+    {
+      "claim_id": "9f55cfd8-4f0f-47a9-8d92-5e13c2164d65",
+      "result_id": "08565c7c-5391-4d3c-be22-532f3006007c"
+    },
+    {
+      "claim_id": "bd37c9dc-9cd5-4ff7-97a7-331dd1b9b56c",
+      "result_id": "08565c7c-5391-4d3c-be22-532f3006007c"
+    },
+    {
+      "claim_id": "4084cd10-680b-4bc1-9640-8a7b52654c05",
+      "result_id": "08565c7c-5391-4d3c-be22-532f3006007c"
+    },
+    {
+      "claim_id": "1e9a6b19-7e6e-426b-9572-9829dcc39468",
+      "result_id": "08565c7c-5391-4d3c-be22-532f3006007c"
+    },
+    {
+      "claim_id": "e0e0997a-6b33-4c73-8566-7287746ea22c",
+      "result_id": "08565c7c-5391-4d3c-be22-532f3006007c"
+    },
+    {
+      "claim_id": "7f831121-3d2c-4b54-a1b1-30b011d0a04d",
+      "result_id": "08565c7c-5391-4d3c-be22-532f3006007c"
+    },
+    {
+      "claim_id": "6a931234-e873-4445-b651-564d9fea2965",
+      "result_id": "3f45f4a7-951d-4ba8-96ed-37e5840257da"
+    },
+    {
+      "claim_id": "19a3d9a5-5805-4464-ab79-6e95208632b8",
+      "result_id": "3f45f4a7-951d-4ba8-96ed-37e5840257da"
+    },
+    {
+      "claim_id": "7046ffee-c29d-4559-910b-cc6b0b0600a3",
+      "result_id": "3f45f4a7-951d-4ba8-96ed-37e5840257da"
+    },
+    {
+      "claim_id": "4d4ce0ac-c148-458f-87c1-62785c909d21",
+      "result_id": "3f45f4a7-951d-4ba8-96ed-37e5840257da"
+    },
+    {
+      "claim_id": "9d393d4b-27ac-46fd-8652-00f47aaac6c8",
+      "result_id": "5fec290a-5660-4a4d-8ee4-721db56aa9a6"
+    },
+    {
+      "claim_id": "df704694-db56-44bf-84ed-f66dfdffe652",
+      "result_id": "5fec290a-5660-4a4d-8ee4-721db56aa9a6"
+    },
+    {
+      "claim_id": "bdfd269d-4ca2-46ed-9792-91f044dd88d5",
+      "result_id": "5fec290a-5660-4a4d-8ee4-721db56aa9a6"
+    },
+    {
+      "claim_id": "862da6ae-4429-401a-9376-c592475b81a6",
+      "result_id": "84992376-9742-4c49-90f7-31ca171245b4"
+    },
+    {
+      "claim_id": "40c25588-caa0-47f7-9386-02e6133c9343",
+      "result_id": "84992376-9742-4c49-90f7-31ca171245b4"
+    },
+    {
+      "claim_id": "34b4ddea-f48a-4076-b10d-697111123ced",
+      "result_id": "84992376-9742-4c49-90f7-31ca171245b4"
+    },
+    {
+      "claim_id": "dd66fec6-7798-4919-b80c-44afaefc45a4",
+      "result_id": "84992376-9742-4c49-90f7-31ca171245b4"
+    },
+    {
+      "claim_id": "e0ab9cc7-f39f-48d0-987f-8432c7c99381",
+      "result_id": "84992376-9742-4c49-90f7-31ca171245b4"
+    },
+    {
+      "claim_id": "1c98658a-efc3-40b8-92c8-06f1f96a3657",
+      "result_id": "d091f6af-bebd-4c56-9494-ffd42a0a3974"
+    },
+    {
+      "claim_id": "fc20e45f-2bc4-4830-b399-4581d19da681",
+      "result_id": "d091f6af-bebd-4c56-9494-ffd42a0a3974"
+    },
+    {
+      "claim_id": "47708aba-3a86-4545-9e56-dd754a23ea85",
+      "result_id": "d091f6af-bebd-4c56-9494-ffd42a0a3974"
+    },
+    {
+      "claim_id": "d220ade2-1f26-4328-b364-697b8dc92fe1",
+      "result_id": "d091f6af-bebd-4c56-9494-ffd42a0a3974"
+    },
+    {
+      "claim_id": "25f129a6-3215-415b-983f-bc11cddfaaed",
+      "result_id": "d091f6af-bebd-4c56-9494-ffd42a0a3974"
+    },
+    {
+      "claim_id": "a4f3b964-1aa0-4de5-9b58-a90f9e5dbd83",
+      "result_id": "56bea8c4-23af-4b44-8f1e-eac16518797f"
+    },
+    {
+      "claim_id": "ffd40ce6-256f-466e-b22c-33e82bfa50a4",
+      "result_id": "56bea8c4-23af-4b44-8f1e-eac16518797f"
+    },
+    {
+      "claim_id": "f9253287-d110-42f5-9514-22b889f0d612",
+      "result_id": "56bea8c4-23af-4b44-8f1e-eac16518797f"
+    },
+    {
+      "claim_id": "ffbdb3c0-4cff-4736-be7d-304671d3cccc",
+      "result_id": "56bea8c4-23af-4b44-8f1e-eac16518797f"
+    },
+    {
+      "claim_id": "064250e2-915c-4c0b-9e4b-2d520c0b4649",
+      "result_id": "56bea8c4-23af-4b44-8f1e-eac16518797f"
+    },
+    {
+      "claim_id": "76ace511-f7e9-41bf-b738-7101c49aca0a",
+      "result_id": "6f13b260-b86e-4c32-bcd9-859b6edc143b"
+    },
+    {
+      "claim_id": "3e09bd34-92ff-4fab-aa3c-4f6ce83311dc",
+      "result_id": "6f13b260-b86e-4c32-bcd9-859b6edc143b"
+    },
+    {
+      "claim_id": "04121606-1484-4a8c-b8ac-966a3536cdcc",
+      "result_id": "6f13b260-b86e-4c32-bcd9-859b6edc143b"
+    },
+    {
+      "claim_id": "14ad9239-703d-46ac-992f-3fe703018518",
+      "result_id": "6f13b260-b86e-4c32-bcd9-859b6edc143b"
+    },
+    {
+      "claim_id": "2af76ebe-cfc7-476d-9916-d21cbd021445",
+      "result_id": "6f13b260-b86e-4c32-bcd9-859b6edc143b"
+    },
+    {
+      "claim_id": "5ad9da07-3f9c-46d5-b253-385b464abb6d",
+      "result_id": "a59f488d-376d-4fae-9cd8-4bbf9eb1d201"
+    },
+    {
+      "claim_id": "80ab012a-88a7-47c7-b210-ac7314d42ac1",
+      "result_id": "a59f488d-376d-4fae-9cd8-4bbf9eb1d201"
+    },
+    {
+      "claim_id": "2d7813ce-87d8-4e52-86d8-d944ee5c4092",
+      "result_id": "a59f488d-376d-4fae-9cd8-4bbf9eb1d201"
+    },
+    {
+      "claim_id": "1c19baba-987e-40c1-8076-1f2c92303a7c",
+      "result_id": "725b36d2-86df-4b14-8aad-43653612fadc"
+    },
+    {
+      "claim_id": "67cc76f4-b6aa-4363-a0ea-fc84fc9b76b6",
+      "result_id": "725b36d2-86df-4b14-8aad-43653612fadc"
+    },
+    {
+      "claim_id": "7b973e07-7ca2-44cd-a764-81995cc887ab",
+      "result_id": "725b36d2-86df-4b14-8aad-43653612fadc"
+    },
+    {
+      "claim_id": "e8755036-3896-4602-a03c-460c93b9b67a",
+      "result_id": "725b36d2-86df-4b14-8aad-43653612fadc"
+    },
+    {
+      "claim_id": "1c0f8487-e370-41a3-90ae-3868da546657",
+      "result_id": "725b36d2-86df-4b14-8aad-43653612fadc"
+    },
+    {
+      "claim_id": "53c2eb72-5ae9-460c-9c95-4dc00182ad8c",
+      "result_id": "bd16c497-3a1e-4ba2-b618-22b8241ae423"
+    },
+    {
+      "claim_id": "30e02a06-5021-45e0-8aea-dc7070f1cb92",
+      "result_id": "bd16c497-3a1e-4ba2-b618-22b8241ae423"
+    },
+    {
+      "claim_id": "390209cc-39cd-43aa-bcbe-1b65b48f6402",
+      "result_id": "bd16c497-3a1e-4ba2-b618-22b8241ae423"
+    },
+    {
+      "claim_id": "17771548-aa83-4cae-91bd-d26bbd1e138c",
+      "result_id": "bd16c497-3a1e-4ba2-b618-22b8241ae423"
+    },
+    {
+      "claim_id": "eaf076ab-2200-4e0f-9284-0cdb42c33e62",
+      "result_id": "bd16c497-3a1e-4ba2-b618-22b8241ae423"
+    },
+    {
+      "claim_id": "c8819b87-9c59-451f-bd18-b43ef198c790",
+      "result_id": "bd16c497-3a1e-4ba2-b618-22b8241ae423"
+    },
+    {
+      "claim_id": "978e3025-b843-4ff7-8bb5-5d8a8728c855",
+      "result_id": "bd16c497-3a1e-4ba2-b618-22b8241ae423"
+    },
+    {
+      "claim_id": "a6a6476e-890f-4a9b-8649-ad7201d218d6",
+      "result_id": "bd16c497-3a1e-4ba2-b618-22b8241ae423"
+    },
+    {
+      "claim_id": "8a4ad31b-f197-402f-bda9-2b24aad3006b",
+      "result_id": "0c9cf744-f34a-44b2-9e52-78737687bb0f"
+    },
+    {
+      "claim_id": "46ae96eb-50ec-426f-9af4-c56d0d5e143a",
+      "result_id": "0c9cf744-f34a-44b2-9e52-78737687bb0f"
+    },
+    {
+      "claim_id": "cd6f6daf-61e0-4679-9f5c-31c8750c4c65",
+      "result_id": "101a6d9d-956b-4ea7-95fb-030bd32e4f23"
+    },
+    {
+      "claim_id": "b7c6c69a-8f93-4a75-b9eb-3a7725b98c8a",
+      "result_id": "101a6d9d-956b-4ea7-95fb-030bd32e4f23"
+    },
+    {
+      "claim_id": "c7f323b6-3219-48d2-9893-6ebb74f3467e",
+      "result_id": "101a6d9d-956b-4ea7-95fb-030bd32e4f23"
+    },
+    {
+      "claim_id": "1cf250c6-6bd5-4e82-af5d-46e2b12f4972",
+      "result_id": "3f8d74f0-e800-4d7a-ab1c-09cfc97b9b4d"
+    },
+    {
+      "claim_id": "c997c005-cc14-4781-bbd6-4db4cf9de991",
+      "result_id": "de517866-9ed0-40cc-b282-23c28f87edf9"
+    },
+    {
+      "claim_id": "d62c3d1c-a60c-47a4-a3c0-6d0f89637a56",
+      "result_id": "de517866-9ed0-40cc-b282-23c28f87edf9"
+    },
+    {
+      "claim_id": "a5893106-60d0-4dad-8ded-84726586900a",
+      "result_id": "de517866-9ed0-40cc-b282-23c28f87edf9"
+    },
+    {
+      "claim_id": "8c34d78f-f48c-4be0-acd0-a958996b4835",
+      "result_id": "de517866-9ed0-40cc-b282-23c28f87edf9"
+    },
+    {
+      "claim_id": "f19eef6f-62dc-4f9a-936d-7aa4c1296fa0",
+      "result_id": "de517866-9ed0-40cc-b282-23c28f87edf9"
+    },
+    {
+      "claim_id": "dd324bd0-3762-4bd0-93d4-d098bd5c259a",
+      "result_id": "de517866-9ed0-40cc-b282-23c28f87edf9"
+    },
+    {
+      "claim_id": "8d1f4be8-c44e-4513-9c3d-b1658a402b03",
+      "result_id": "de517866-9ed0-40cc-b282-23c28f87edf9"
+    },
+    {
+      "claim_id": "eda42590-e942-4bb0-9019-bf23aafe7460",
+      "result_id": "de517866-9ed0-40cc-b282-23c28f87edf9"
+    },
+    {
+      "claim_id": "b294c76a-915e-4fc0-b474-7bef1bd8057b",
+      "result_id": "de517866-9ed0-40cc-b282-23c28f87edf9"
+    },
+    {
+      "claim_id": "f04aa8ee-1b24-4283-b162-cc7f36be8914",
+      "result_id": "c94cf24a-24ca-4857-8d89-2d19f90e4527"
+    },
+    {
+      "claim_id": "3b867ebd-047a-474c-a7cd-e45f093d1878",
+      "result_id": "c94cf24a-24ca-4857-8d89-2d19f90e4527"
+    },
+    {
+      "claim_id": "bcb1fd54-05b7-4511-af85-9ad1a31ac203",
+      "result_id": "c94cf24a-24ca-4857-8d89-2d19f90e4527"
+    },
+    {
+      "claim_id": "7d68e686-4175-4572-8eb7-b162d976933f",
+      "result_id": "c94cf24a-24ca-4857-8d89-2d19f90e4527"
+    },
+    {
+      "claim_id": "fa6ba728-236b-4621-b7d3-cb30f8c468fb",
+      "result_id": "c94cf24a-24ca-4857-8d89-2d19f90e4527"
+    },
+    {
+      "claim_id": "d6af16c6-7abe-4b34-885a-377a8d87cd9b",
+      "result_id": "c94cf24a-24ca-4857-8d89-2d19f90e4527"
+    },
+    {
+      "claim_id": "a7bbf4b6-472a-4068-87bb-8d395525e061",
+      "result_id": "c94cf24a-24ca-4857-8d89-2d19f90e4527"
+    },
+    {
+      "claim_id": "af5f05e8-1d67-45ab-9067-9396bda1ab83",
+      "result_id": "c94cf24a-24ca-4857-8d89-2d19f90e4527"
+    },
+    {
+      "claim_id": "79b29a28-d373-416b-8958-3783e623c12f",
+      "result_id": "5edb3870-d510-4607-bd13-21e31c161607"
+    }
+  ],
+  "comparisons": []
+}

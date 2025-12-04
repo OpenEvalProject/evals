@@ -1,0 +1,469 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Neuronal activity modulates SST interneuron maturation and synaptic output. Dampening activity with KIR2.1 reduces synaptic puncta density and inhibitory output, while augmenting activity with NaChBac increases both measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 provide quantitative anatomical and electrophysiological data showing bidirectional effects of activity manipulation on SST cIN synapses. The data include both structural (puncta density) and functional (IPSC amplitude) measurements with statistical significance, supporting the conclusion (C40-C42) that activity profoundly affects SST cIN development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Acute activity induction via ECS triggers widespread alternative splicing changes in SST interneurons, affecting 312 transcripts enriched for synaptic genes. These AS changes are largely independent of gene expression changes and form functional protein-protein interaction networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 establish the experimental approach and identify 312 differentially spliced transcripts with GO enrichment for synaptic categories. Claims C48-C50 demonstrate independence from gene expression changes (~1.2% overlap), and C51-C55 provide specific examples (Nrxn1) and network analysis. The RNA-seq data with appropriate statistical thresholds (FDR <0.05) support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Nova-binding motifs are significantly enriched in activity-dependent alternatively spliced transcripts compared to other neuronal splice factors, implicating Nova proteins as key regulators of activity-dependent AS in SST interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 provides motif enrichment analysis showing Nova-binding motifs are enriched at higher frequency than other splice factors (pVal <0.0001), directly supporting the inference in C57. The computational analysis using position weight matrices is appropriate for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Nova protein expression and nuclear localization in SST interneurons are strongly modulated by neuronal activity. Activity increases Nova expression and nuclear translocation, while activity suppression reduces Nova levels and cytoplasmic localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 establish baseline Nova expression patterns. Claims C62-C66 provide quantitative data showing activity-dependent changes in Nova mRNA, protein levels, and nuclear/cytoplasmic ratios with statistical significance. Claims C67-C68 show that activity suppression reduces Nova expression. Multiple complementary approaches (IHC, Western blot, qPCR) strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Nova2 loss causes more extensive alternative splicing changes (339 events) in SST interneurons than Nova1 loss (124 events), with limited overlap between the two. The double knockout shows fewer changes than Nova2 alone, suggesting antagonistic regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 provide quantitative AS event counts from RNA-seq with appropriate statistical thresholds. Claims C78-C79 show limited overlap between Nova1 and Nova2 targets. Claim C80 presents the unexpected finding that the double KO has fewer events than Nova2 single KO, with C81 providing a reasonable mechanistic interpretation. The data support Nova2 as the dominant regulator in SST cINs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Nova2 and Nova1/2-dKO alternatively spliced genes are enriched for synaptic GO categories and form highly connected protein-protein interaction networks representing pre- and post-synaptic functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 provide GO analysis and PPI network data with appropriate statistical validation (FDR <0.05, pVal <0.0009 for networks). Claim C84 synthesizes these findings to conclude Nova2 is the main driver of AS relevant for synaptic development. The computational analyses are appropriate and support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Loss of Nova1 or Nova2 in SST interneurons causes significant reductions in both efferent inhibitory output and afferent excitatory input, with Nova2 showing stronger effects including compensatory changes in remaining synapses and intrinsic excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 establish the severe phenotype of double KO mice. Claims C88-C92 provide anatomical and electrophysiological evidence for reduced efferent output in all mutants. Claims C93-C96 show reduced afferent input with compensatory increases in mEPSC amplitude in Nova2-cKO. Claims C97-C98 show reduced rheobase in Nova2-cKO, suggesting compensation. Multiple complementary approaches (IHC, optogenetics, patch-clamp) with statistical significance support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Loss of Nova1/2 abolishes activity-dependent alternative splicing of 346 transcripts enriched for synaptic genes, which form functional PPI networks representing pre- and post-synaptic processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 provides the quantitative finding from RNA-seq. Claims C102-C104 show GO enrichment and PPI network formation with appropriate statistics. Claim C105 synthesizes these findings. The experimental design (comparing ECS effects in WT vs dKO) directly tests Nova's role in activity-dependent AS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Nova proteins control substantially more activity-dependent splicing events (346) than Rbfox1 (69) in SST interneurons, establishing Nova as a key regulator of activity-dependent AS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 provide a direct comparison showing Nova controls ~5-fold more activity-dependent AS events than Rbfox1. This comparative analysis appropriately establishes the relative importance of Nova proteins, though the conclusion would be strengthened by examining additional splice factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Enhancing activity with NaChBac fails to increase SST inhibitory output in Nova2-cKO mice, demonstrating that activity-dependent changes in synaptic strength require Nova2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 provides electrophysiological data showing NaChBac fails to rescue the Nova2-cKO phenotype. Claim C109 provides the mechanistic interpretation. This is a critical epistasis experiment demonstrating Nova2 is required downstream of activity for synaptic changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Nova2 overexpression increases nuclear localization and marginally enhances SST output, but these effects are abolished by concurrent activity suppression with KIR2.1, demonstrating bidirectional interdependence between activity and Nova function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 provide quantitative data showing Nova2-OE effects and their suppression by KIR2.1. Claim C113 shows the striking finding that even constitutive Nova2-OE is reduced by KIR2.1. Claims C114-C116 synthesize these findings to establish bidirectional coupling. The gain-of-function experiments complement the loss-of-function studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "SST interneurons are the earliest born cortical inhibitory population and are crucial for normal brain development and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts in the field stated in the abstract. While not novel findings of this study, they provide important context. The claims are supported by the broader literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "SST cortical interneurons constitute ~30% of cortical inhibitory neurons, with Martinotti cells being the most prevalent subtype. They target distal dendrites of excitatory neurons and provide feedback inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C16 provide background information about SST cIN properties and functions, all supported by appropriate citations. These establish the biological context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Early neuronal activity and alternative splicing are important factors in cIN maturation, with Nova proteins controlling splicing of transcripts encoding synaptic proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 summarize prior work establishing the relevance of activity, AS, and Nova proteins. All are supported by appropriate citations and provide rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The developing cortex exhibits dynamic activity patterns including spontaneous and sensory-evoked events that recruit inhibitory interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 provide background on developmental cortical activity patterns, supported by citations. This contextualizes the experimental manipulations but is not a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "KIR2.1 is an inward rectifying potassium channel that reduces neuronal excitability, while NaChBac is a sodium channel with lower activation threshold and longer open time that augments excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 describe the properties of the tools used for activity manipulation, supported by citations. These are established facts about these channels, not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Activity-dependent alternative splicing contributes to regulation of gene expression and synaptic refinement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 summarizes prior work on activity-dependent AS, supported by multiple citations. This provides rationale for investigating AS in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Nova1 and Nova2 proteins each control distinct AS gene networks in addition to their synergistic roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 cites recent work showing distinct Nova1/Nova2 functions. This provides context for examining them separately in SST cINs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Loss of Nova1, Nova2, or Nova1/2-dKO results in significant gene expression changes in SST interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 notes gene expression changes in Nova mutants, supported by supplementary data. However, the manuscript focuses on AS changes, making this a secondary observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The study demonstrates that activity levels influence SST cIN maturation through Nova-dependent mechanisms, with Nova2 having the predominant role. The relationship between activity and Nova function is interdependent and bidirectional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C127 are summary statements from the Discussion synthesizing the main findings. They accurately reflect the data presented in the Results section and represent the major conclusions of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Alternative splicing represents a central but underexplored mechanism for directing cell-type development and synaptic formation, with Nova function being a core regulator. AS provides flexibility to fine-tune biological functions according to cell identity and state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C138 provide broader context and interpretation of the findings in relation to the field. These are reasonable inferences supported by the data and literature, though some statements (C133, C135-C137) are more speculative about the general role of AS.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C139"
+    ],
+    "result": "Nova proteins have an unexplored role in regulating gene expression, likely through controlling RNA stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C139 is explicitly stated as speculation in the Discussion. While the study shows gene expression changes in Nova mutants (C75), the mechanism is not investigated. This represents a hypothesis for future work rather than a supported finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "There is clear bidirectional interdependence between activity and Nova function in regulating SST cIN synaptic formation and strength. Activity regulates Nova expression and localization, while Nova proteins are required for activity-dependent synaptic regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C144 synthesize the major findings showing bidirectional coupling between activity and Nova function. These conclusions are well-supported by the gain-of-function, loss-of-function, and epistasis experiments presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The mechanisms for activity-dependent changes in Nova expression and localization are unknown, though possible mechanisms include activity-dependent transcription factors or post-translational modifications of nuclear localization signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C145-C149 explicitly acknowledge gaps in mechanistic understanding and propose possible mechanisms. C147 cites known NLS domains, but C145-C146 and C148 are stated as unknowns. C149 provides an example from Rbfox1. These represent open questions and speculation rather than supported findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Activity regulates Nova2 RNA and protein stability, as evidenced by reduced Nova protein levels even with constitutive overexpression when activity is suppressed. Multiple mechanisms couple cell activity to Nova function and AS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C152 are supported by the striking observation in C113/C151 that Nova2-OE is reduced by KIR2.1. Claim C153 reasonably infers multiple coupling mechanisms. The data support activity-dependent regulation of Nova stability, though the specific mechanisms remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "While activity regulates programmed cell death in interneurons, Nova2 loss does not impact SST cIN survival, and activity manipulation can modulate synaptogenesis independent of cell death timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C154 cites prior work on activity and cell death. Claims C155-C156 report observations from the current study ruling out cell death as a confounding factor. These are important controls but represent negative findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Nova loss-of-function mutants show multiple phenotypic changes beyond synaptogenesis, including effects on protein trafficking, cell signaling, and neurotransmitter/ion channel function. Prior work has shown roles in migration and axonal pathfinding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C157 infers broader Nova functions from the phenotypic diversity. Claim C158 is supported by GO analysis from the current study. Claim C159 cites prior work. These observations suggest Nova has pleiotropic effects, though the current study focuses on synaptic development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The study establishes that Nova proteins are activity-dependent and essential for SST interneuron maturation and connectivity. Nova2 preferentially mediates AS of genes for axonal formation and synaptic function independently of gene expression effects. Nova proteins couple developmental activity to circuit formation through AS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims from the abstract and introduction accurately summarize the major findings that are supported by the detailed results. Claims C4-C8 state the main conclusions, while C20-C27 provide more specific findings. All are supported by the experimental data presented in the Results section.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C24",
+      "C25",
+      "C57"
+    ],
+    "result": "The study demonstrates a nearly linear relationship between electrical stimulus burst duration and generated joint torque in stick insect leg muscles, holding for burst durations up to 500ms, which corresponds to the stance and swing phase durations of medium to fast walking stick insects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C24-C25, and C57 collectively establish this linear relationship through experimental measurements (Figures 1-2) across three muscles in 10 animals each. The 500ms threshold is well-documented and appropriately compared to natural locomotion parameters with citation support (C4, C57). The experimental data clearly shows this linear trend within the physiologically relevant range.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C46",
+      "C53",
+      "C54",
+      "C55",
+      "C69",
+      "C73"
+    ],
+    "result": "Hierarchical Bayesian modeling revealed that linearity (exponent \u03b3\u22481) is an invariant feature across individuals, while the slope parameter \u03b2 varies significantly among individual stick insects and with applied voltage. Models 1-2 and 2-2 with hierarchical \u03b2 parameters showed the best predictive performance by WAIC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C46, C53-C55 are strongly supported by the systematic model comparison (Figure 3) showing models 1-2 and 2-2 with lowest WAIC values across all conditions. The statistical analysis appropriately uses WAIC for model selection (C54, C113-C115) and demonstrates that \u03b2 varies individually while \u03b3 remains near 1. The hierarchical Bayesian framework (C29-C31, C69, C73) is well-justified and properly implemented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C26",
+      "C58",
+      "C59"
+    ],
+    "result": "Electrical stimulation of protractor, retractor, and levator muscles generated measurable joint torques at ThC and CTr joints with magnitudes (60 \u00b5Nm, 120 \u00b5Nm, and 40 \u00b5Nm maximum) comparable to those during natural stick insect walking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 describe the experimental observations with appropriate methodology (force transducer with calibrated moment arm, C96-C99). Claim C26 provides specific quantitative measurements with citation, and C58-C59 appropriately compare these to natural walking conditions. The experimental setup (Figure 1) and calibration procedures (C97) support the validity of these measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C55",
+      "C60",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The hierarchical linear model (1-2) enables rapid individual characterization of stimulus-torque properties for new animals, providing a simple, technically exploitable description that captures natural muscle dynamics during walking and could not be obtained from isolated muscle preparations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C55, and C72 are supported by the model comparison results (Figure 3-4) showing hierarchical models appropriately account for inter-individual variation. Claims C70-C71 make a compelling argument about the necessity of intact-animal measurements, supported by the contrast with isolated muscle expectations (C50). However, the practical utility for real-time cyborg control (C6, C70) remains somewhat speculative as it has not been demonstrated in practice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C104",
+      "C105"
+    ],
+    "result": "The generated torque depends primarily on burst duration (total number of pulses) rather than PWM voltage and frequency, consistent with slow insect muscle acting as a low-pass filter that essentially 'counts' incoming spikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are well-supported by citations to prior work on insect muscle properties and are consistent with the experimental findings. Claims C51-C52 provide additional support from appendix analyses. The mechanistic explanation (C104-C105) is appropriately cited and consistent with known muscle physiology. However, the appendix figures referenced in C51-C52 are not provided for direct verification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C72"
+    ],
+    "result": "Despite nonlinear activation and contraction dynamics of isolated insect muscles, monitoring torques in intact animals revealed linear characteristics for intervals up to 500ms that would not be expected from isometric force measurements of isolated muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C72 make an important observation about the difference between intact-animal and isolated-muscle measurements. This is supported by the experimental data (Figures 2-4) showing clear linearity, contrasted with known nonlinear properties of isolated muscle. The claim is appropriately cautious in noting this unexpected finding, though the mechanistic explanation for why intact-animal measurements differ remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Inter-individual variability represents a major challenge in cyborg control, and hierarchical Bayesian models provide an appropriate framework for modeling this uncertainty by allowing parameters to be drawn from probabilistic distributions that capture individual differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 establish the problem of inter-individual variation with appropriate citations to prior neurophysiological and muscle physiology studies. Claims C29-C31 justify the hierarchical Bayesian approach with citation support (Gelman et al., 2013; Watanabe, 2018). The application of this framework to the current problem is well-motivated and properly implemented, as demonstrated by the model comparison results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The three proximal leg muscles studied (protractor, retractor, and levator) have well-characterized functional roles in stick insect locomotion: retractor for propulsion, pro/retractor for postural adjustment via joint stiffness regulation, and levator for stance-to-swing transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21 describe the functional roles of the three muscles with consistent citation support from multiple studies (Rosenbaum et al., 2010; Dallmann et al., 2017, 2019; G\u00fcnzel et al., 2022). These claims appropriately justify the muscle selection for the study and are well-established in the literature. The functional descriptions are consistent across claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The experimental methodology involved 20 adult female Carausius morosus, custom-built force sensors with strain gauges, calibrated force measurements, and a custom electrical stimulator using Raspberry Pi with PWM signal generation, with electrodes implanted through small holes in the cuticle and verified by resistance reflexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C110 provide detailed methodological information that is internally consistent and appropriately documented. The experimental setup (Figure 1) supports these descriptions. Calibration procedures (C97), electrode specifications (C108), and verification methods (C109) are clearly described. The PWM parameter selection (C110) is justified by pre-experiments. The methodology appears sound and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C111",
+      "C112"
+    ],
+    "result": "The electrical stimulation protocol (50 Hz, 30% duty ratio, 1-4V) did not cause muscle fatigue, biological damage, or unintended cross-talk stimulation of sensory afferents or other muscles, as verified by sustained torque levels and control measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 and C111-C112 describe important control experiments and observations. The absence of fatigue is supported by sustained torque levels over >50 stimulations (C87, C112). The lack of cross-talk is inferred from absence of abnormal motion (C88-C89) and confirmed by control measurements (C90). These claims are appropriately conservative and based on experimental observations, though more quantitative analysis of potential fatigue effects would strengthen the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The study has limitations including that stick insects were fixed and not walking during experiments, and there is considerable discrepancy between PWM signals and natural motor neuron firing patterns, though future Motion Hacking during unrestrained locomotion may be feasible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 appropriately acknowledge experimental limitations. The fixed preparation (C82) is justified by comparison to other neurophysiological studies and stick insect behavior (C83-C84). The discrepancy between PWM and natural firing patterns (C86) is honestly acknowledged with citation. The speculation about future feasibility (C85) is appropriately cautious and based on cited prior work showing combined motion capture and EMG is possible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Motion Hacking is defined as controlling insect leg movements through external electrical stimulation while retaining the insect's nervous system, requiring interdisciplinary collaboration. Previous cyborg studies focused on conversion to cyborgs with little examination of control mechanisms, whereas this study systematically characterizes stimulus-torque properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 define Motion Hacking with appropriate citations (Owaki et al., 2019; Owaki and D\u00fcrr, 2022). Claim C66 summarizes prior cyborg research with extensive citations. Claim C67 appropriately contrasts the current study's focus on mechanisms with prior work's focus on demonstration. Claim C68 accurately describes the current experimental approach. These claims provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Cyborg control of insect movement is promising for developing miniature, efficient biohybrid robots. Hybrid insect-computer robots represent cutting-edge approaches, with advantages including no need for individual component fabrication and low power consumption (few milliwatts).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C10 provide appropriate background and motivation with citation support. The advantages of cyborg robots (C9-C10) are well-documented in cited literature. These claims establish the context and significance of the research but are primarily review of prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Animal locomotion relies on physical body properties and environmental interactions, not just neural control. Arthropods utilize mechanical properties including joint stiffness regulation, with various strategies documented in spiders, insects, and cockroaches. Similar perturbation approaches have been used in prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 provide appropriate background on embodied locomotion with consistent citation support. These claims establish the broader context of the research within motor control and biomechanics. The citations appear appropriate and the claims are consistent with established knowledge in the field. However, these are primarily literature review rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C91"
+    ],
+    "result": "Individual prediction of joint torques provides significant benefits for precise cyborg control, and activation of sensory organs during cyborg control has strong potential for expanding Motion Hacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C6 is an inference about practical benefits that has not been demonstrated experimentally in this study. Claim C91 is explicitly speculative about future research directions. While the hierarchical model does enable individual characterization, the actual benefits for cyborg control precision have not been validated. These claims represent reasonable hypotheses but require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "WAIC is used as the model selection criterion, where lower (more negative) values indicate better predictive performance, and the model with smallest WAIC is considered most appropriate for predicting properties of new animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 appropriately describe the WAIC metric with citation (Watanabe, 2018) and explain its interpretation. The application to model selection for predicting new animals is methodologically sound. The hierarchical model WAIC calculation accounts for the predictive distribution for new animals, which is the appropriate approach for this application.",
+    "result_type": "MINOR"
+  }
+]

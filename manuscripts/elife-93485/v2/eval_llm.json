@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The cortico-raphe pathway undergoes dramatic developmental maturation between postnatal weeks 3-8 in mice, characterized by increased connection probability (from 0.07 to 0.82), increased synaptic amplitude (from 27.3 to 128 pA), and increased axonal density, plateauing by 7-8 weeks with no further changes through 5-6 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 provide converging electrophysiological and anatomical evidence for developmental maturation of the cortico-raphe pathway. The data include appropriate statistical tests, control experiments ruling out confounds (recording location, passive properties, ChR2 expression levels), and demonstrate both functional and structural changes. The plateau after 7-8 weeks is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The developmental maturation of cortico-raphe projections is pathway-specific, as cortico-accumbens projections show no significant structural or functional changes over the same developmental period (weeks 3-8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 provide appropriate negative control data showing that cortico-accumbens projections do not undergo the same developmental changes as cortico-raphe projections. Statistical tests confirm no significant differences in axonal density, connection probability, or amplitude between juvenile and adult mice for this pathway, supporting the specificity of the cortico-raphe developmental changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Adult mice (7-8 weeks) exhibit significantly greater behavioral persistence than juvenile mice (3-4 weeks) in a probabilistic foraging task, as measured by increased time to leave patches, more pokes per trial, more consecutive pokes after last reward, and longer port occupancy, while maintaining comparable reward rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C32 provide comprehensive behavioral evidence using appropriate statistical methods (logistic regression with mixed models, Mann-Whitney tests). The analysis controls for confounds including satiety/fatigue (no Trial\u00d7Age interaction), demonstrates multiple convergent behavioral measures of persistence, and shows that differences are not due to overall task competence (comparable reward rates). The use of elapsed time rather than poke number as the primary metric is justified by model comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The developmental maturation of behavioral persistence occurs at similar rates in male and female mice, with no significant sex effects on leaving decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 provide appropriate analysis of sex effects using logistic regression and likelihood ratio tests. The lack of significant main effects or interactions with age supports that the developmental trajectory is similar across sexes. This is an important control given potential sex differences in developmental timing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Juvenile and adult Rbp4-Cre mice have comparable densities of cortical layer 5 projection neurons expressing similar levels of ChR2, ruling out developmental differences in genetic labeling as a confound for the observed physiological changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 provide critical control experiments demonstrating that the observed developmental changes in connectivity are not artifacts of the genetic labeling system. The comparable tdTomato+ neuron densities and photocurrent amplitudes across ages support that differences in connection probability and synaptic strength reflect genuine developmental changes rather than differential ChR2 expression or Cre recombination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Selective ablation of cortical layer 5 neurons projecting to the DRN in adult mice, primarily affecting mPFC (PL/IL and AC cortices), causes adult mice to revert to a juvenile-like behavioral phenotype with reduced persistence in the foraging task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C52 provide causal evidence linking the cortico-raphe pathway to behavioral persistence. The ablation approach is well-characterized anatomically (C41, C43), behavioral effects are demonstrated with multiple convergent measures (C45-C46, C47, C50-C51), and appropriate controls show comparable task performance (C44) and no differential satiety/fatigue effects (C49). The behavioral phenotype recapitulates key features of juvenile behavior, supporting a causal role for this pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C53",
+      "C54"
+    ],
+    "result": "Frontal cortical input to the DRN is a critical anatomical and functional substrate for the development and manifestation of behavioral persistence in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C53-C54 represent the main conclusion integrating the developmental, behavioral, and ablation findings. The conclusion is well-supported by the convergence of: (1) developmental maturation of the pathway during the same period as behavioral maturation, (2) pathway-specific development, (3) causal necessity demonstrated by ablation experiments. However, C53-C54 appropriately note these are interpretations ('may be necessary', 'may help') rather than definitive mechanistic claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The cortico-DRN pathway represents the latest-developing top-down cortical pathway reported to date, with maturation starting early (weeks 1-2) but extending through week 7-8, consistent with previous literature on connection strength at intermediate timepoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 appropriately contextualize the findings within existing literature. The comparison with other developmental timelines (C82) is qualified ('to our knowledge'), integration with prior work (C83-C84) is appropriate, and the extended developmental timeline (C85) is well-supported by the data. The claims appropriately distinguish between early axonal growth (weeks 1-2, from Soiza-Reilly et al.) and the later functional maturation (weeks 3-8, current study).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C98",
+      "C103",
+      "C104"
+    ],
+    "result": "DRN-projecting cortical neurons show differential collateralization patterns, with heavy projections to dorsomedial striatum, medium density to substantia nigra and olfactory nuclei, weak projections to lateral septum/hypothalamus/VTA/PAG, and very sparse projections to amygdala.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89, C98, C103-C104 provide anatomical characterization of collateral projections from DRN-projecting neurons. The observations are supported by anatomical data (Figure 3\u2014figure supplement 3) and provide important context for interpreting the ablation experiments, though the semi-quantitative nature of the density assessments is appropriately reflected in the descriptive language used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The cortico-striatal pathway is fully developed by P14 and therefore unlikely to underlie the developmental differences observed in this study, though this pathway is relevant for foraging decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 appropriately address a potential confound given the observed collateralization to dorsomedial striatum. The citation to Peixoto et al. 2016 supports that this pathway is mature before the juvenile timepoint studied, and the authors appropriately acknowledge they cannot rule out contributions from cortico-striatal collaterals in the ablation experiments while arguing it is unlikely to explain the developmental effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Adolescence in mice (weeks 3-8) corresponds to a period of intense mPFC maturation and decreased impulsive behavior, with prior work establishing that mPFC development is hypothesized to underlie behavioral control emergence, though specific mechanisms remain poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C65 provide appropriate background context from the literature, establishing the developmental timeline, known mPFC changes, and the knowledge gap the study addresses. The claims are well-supported by citations and appropriately distinguish established facts from hypotheses (C61) and knowledge gaps (C62).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Prior literature establishes that DRN 5-HT activity relates to waiting/persistence behaviors, mPFC sends glutamatergic projections to DRN that can bidirectionally modulate 5-HT neurons, both regions causally modulate waiting behavior, and they are reciprocally connected, providing rationale for the hypothesis that mPFC-DRN maturation underlies persistence development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C77 provide comprehensive literature review establishing the functional relevance of the mPFC-DRN pathway for behavioral control. The claims are well-supported by multiple citations and appropriately build the rationale for the study's hypothesis (C77). The review appropriately distinguishes between established findings and the plausible hypothesis being tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The Rbp4-Cre genetic approach targets both intra- and extracortical layer 5 neurons, has been previously validated for developmental studies, and offers advantages over viral approaches including insensitivity to injection variability and avoidance of early-life stress from surgeries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 appropriately justify the methodological approach with citations to prior characterizations and validation studies. The advantages cited (C80-C81) are reasonable given the properties of genetic versus viral labeling, though the claim about insensitivity to injection size/location (C80) is somewhat overstated as it still depends on consistent Cre expression patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Prior studies report net inhibitory effects of mPFC input on DRN 5-HT neurons, particularly with high-frequency stimulation, potentially mediated by frequency-dependent recruitment of fast-tracking inhibitory interneurons and 5-HT1a autoreceptor-mediated inhibition, though activity-dependent plasticity and neuromodulators can bias the net effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 appropriately address an apparent contradiction between the behavioral effects observed and prior reports of inhibitory mPFC\u2192DRN effects. The discussion of potential mechanisms (frequency dependence, plasticity, neuromodulation) is appropriately speculative and supported by citations. This represents thoughtful consideration of alternative mechanisms rather than ignoring contradictory literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "While PL/IL cortices densely innervate the DRN, adjacent PR and IL cortices exert opposite effects on fear conditioning and avoidance behaviors, suggesting potential functional heterogeneity in mPFC-DRN circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 provide important context about functional heterogeneity within mPFC subregions. The claims are supported by citations and appropriately raise the possibility that different mPFC subregions may have different functional roles in DRN modulation, though this remains speculative for the DRN specifically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C105",
+      "C106"
+    ],
+    "result": "The DRN may contain parallel subsystems with preferential connectivity loops (mPFC\u2194DRN vs. Amygdala\u2194DRN), with different DRN subpopulations exerting specific neuromodulatory effects in each target region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C105-C106 provide speculative but well-reasoned discussion of circuit organization. The speculation about preferential connectivity loops (C105) is appropriately qualified ('may suggest') and supported by comparison to other known loops and the observed sparse amygdala collateralization. The claims appropriately distinguish between established findings (C102, C106 from Ren et al.) and speculation based on current data (C105).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "The critical period of corticofugal axonal development (weeks 3-8) may represent a period of vulnerability for maladaptive development involved in psychiatric disorder etiopathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 provides appropriate speculation about clinical relevance, qualified with 'may' and supported by citations to literature on developmental vulnerability and psychiatric disorders. This represents reasonable extrapolation from the findings while appropriately acknowledging the speculative nature of the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "The decrease in persistence over trials likely reflects a drop in motivation due to water consumption or accumulated tiredness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C25 is speculative reasoning about the cause of within-session behavioral changes. While the speculation is reasonable, no direct evidence is provided to distinguish between satiety, fatigue, or other factors. The claim is appropriately qualified as 'likely' but represents an untested hypothesis. The lack of Age\u00d7Trial interaction (C26-C27) argues against differential satiety/fatigue between groups but doesn't validate the proposed mechanism.",
+    "result_type": "MINOR"
+  }
+]

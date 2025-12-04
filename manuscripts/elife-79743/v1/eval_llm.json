@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "FLC undergoes digital Polycomb silencing during cold exposure, where individual gene copies switch asynchronously from ON to OFF states, becoming covered by H3K27me3 marks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7, C8, and C9 are well-established prior knowledge supported by citations (Angel et al., 2011). These claims describe the known digital regulation of FLC during cold treatment and provide essential background for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "FLC is a floral repressor controlled by FRIGIDA (activator), the autonomous pathway (repressor including FCA), and vernalization, with FLC levels set during embryogenesis by competition between FRI and the autonomous pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C76, C77, C78, and C79 represent established knowledge about FLC regulation supported by citations (Li et al., 2018; Schon et al., 2021) and Figure 1B. This provides the necessary biological context for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C100"
+    ],
+    "result": "The fca mutant alleles (fca-1, fca-3, fca-4) show graded FLC expression levels: Ler (wildtype) has lowest expression with early flowering, fca-3 and fca-4 have intermediate expression and flowering time, and fca-1 (complete loss of function) has highest expression with late flowering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 and C62-C75, C100 are supported by qPCR data (Figure 1C, Figure 1\u2014figure supplement 1) and flowering time measurements (Figure 1\u2014figure supplement 1A). The molecular characterization of the mutants is supported by citations and the data demonstrates statistically significant differences (p\u22640.00029) between genotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Single-molecule FISH reveals that fca-3 shows both digital and analog regulation: 72% of cells are digitally OFF (\u22643 mRNAs), while ON cells in fca-3 have ~1/5 the mRNA levels of fca-1 ON cells, demonstrating analog differences in expression levels among ON cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 are supported by smFISH data (Figure 2C, Figure 2\u2014figure supplement 1C) with statistically significant differences (Bonferroni-adjusted p\u22641.2\u00b710\u207b\u2079). The quantitative analysis showing mRNA levels in fca-3 ON cells are ~1/5 of fca-1 (rather than ~1/2) rules out simple digital silencing of one gene copy, supporting the analog component.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Confocal imaging of FLC-Venus protein confirms the combination of analog and digital regulation: Ler cells are mostly digitally OFF, fca-1 cells are all digitally ON, and fca-3 shows a fraction of OFF cells with reduced analog expression in ON cells relative to fca-1. Short files of ON cells in fca-3 and fca-4 suggest heritable ON/OFF states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by confocal imaging data (Figure 2D, E, Figure 2\u2014figure supplement 3) with statistically significant differences (p\u22641.7\u00b710\u207b\u00b3\u00b2). The observation of short ON cell files provides evidence for heritability of the ON state, and the pattern is consistent across multiple fca alleles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C36"
+    ],
+    "result": "FLC expression before cold is regulated by both analog and digital modes with temporal separation, where analog regulation precedes digital switching. The analog mode maintains intermediate expression levels at individual gene copies before subsequent stochastic and heritable digital silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 and C36 represent the central finding of the study, supported by the combination of smFISH data (C16-C22), confocal imaging (C51-C55), and timeseries experiments (C27-C32, C42). The temporal separation is demonstrated by the observable switching dynamics in fca-3 over time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "FLC-Venus mRNA and protein have short half-lives (~5 hr and ~1.5 hr respectively) compared to the cell cycle duration (~1 day), ruling out slow degradation as the cause of apparent analog regulation and observed heritability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are supported by experimental measurements using actinomycin D and cycloheximide treatments (Figure 3\u2014figure supplement 1). The short half-lives relative to cell cycle duration (cited from Rahni and Birnbaum, 2019) provide important validation that the observed patterns reflect true regulatory states rather than artifacts of slow protein turnover.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C6",
+      "C44"
+    ],
+    "result": "FLC expression decreases over time in fca-3 and Ler (7-21 days after sowing) due to primarily one-way digital switching from heritable ON to heritable OFF states, not due to changes in FCA expression. This leads to a gradual reduction in FLC expression at the cell population level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30, C6, and C44 are supported by qPCR timeseries data (Figure 3A, B) showing statistically significant decreases in FLC (slope=-0.13, p=2.0\u00b710\u207b\u2074 for fca-3) without corresponding FCA changes, and confocal imaging timeseries (Figure 3C, D) showing decreasing fractions of ON cells (slope=-0.0077, p=4.0\u00b710\u207b\u2074\u2076 for fca-3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C45",
+      "C46"
+    ],
+    "result": "After 21 days without cold, the pattern of ON/OFF cells in fca-3 roots resembles vernalized roots, with whole files of either all ON or all OFF cells. The change over time is due to decreasing numbers of ON cells rather than analog changes in ON cell expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32, C45, and C46 are supported by comparison of imaging data to previously published vernalized roots (Berry et al., 2015) and analysis of the ON cell distribution over time (Figure 3\u2014figure supplement 4). The similarity suggests comparable molecular characteristics of Polycomb silencing with or without cold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C83"
+    ],
+    "result": "A mathematical model incorporating digital switching with predominantly one-way ON-to-OFF transitions (OFF-to-ON rate >10\u00d7 slower) can recapitulate the FLC distribution over time in fca-3, including the pattern of increasing OFF cells and quantitative protein level histograms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 and C83 are supported by model fitting to experimental data (Figure 4B, Supplementary file 1). The model successfully reproduces the observed patterns, though it does not fully capture the increased prevalence of longer ON cell files at later timepoints (C83), suggesting possible additional developmental influences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C94"
+    ],
+    "result": "The silenced state is Polycomb-dependent, and the rate of digital Polycomb silencing depends on genetically-controlled analog transcription levels. The timescale for switching from analog to digital states is controlled by initial analog transcription strength: fast in Ler (low transcription), slow and observable in fca-3 (intermediate), and prevented in fca-1 (high transcription).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 and C94 integrate the experimental observations with mechanistic interpretation. The Polycomb dependence is inferred from similarity to vernalized states and literature on H3K27me3 (C37, C68). The relationship between transcription levels and switching timescale is supported by the differential behavior of the three genotypes across all experimental modalities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C84",
+      "C88",
+      "C90",
+      "C92"
+    ],
+    "result": "The authors hypothesize that without active Polycomb, fca alleles would show only analog differences without digital silencing, and that FRI controls the analog component directly and digital component indirectly. The analog component may have widespread ecological relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47, C84, C88, C90, and C92 are explicitly speculative hypotheses and future directions. While they are reasonable inferences from the data, they lack direct experimental support in this study. C84 acknowledges model limitations, and C88, C90, C92 propose testable hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C101"
+    ],
+    "result": "The endogenous Ler FLC carries a transposable element causing nucleolar mRNA accumulation, so a Col-0-derived FLC-Venus transgene was used. The transgenic and endogenous FLC show similar behavior in the mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 and C101 describe important methodological considerations. The TE in Ler FLC is established knowledge (Liu et al., 2004, C48), nucleolar accumulation is observed (Figure 2\u2014figure supplement 1A, C49), and the transgenic construct is validated by qPCR showing similar behavior to endogenous FLC (Figure 1\u2014figure supplement 1C, D, C50).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C91",
+      "C93",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Additional background information and context: FLC mRNA half-life in ColFRI (~6 hr), similar FLC expression patterns in roots and leaves, mutations in FRI in Ler/Col-0, molecular details of fca mutations, natural variation in FRI, and effects of clf mutations on FLC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61, C85-C87, C89, C91, C93, C95-C99 provide supporting background information, methodological details, and context from the literature. These are appropriately cited and provide necessary context for interpreting the main results.",
+    "result_type": "MINOR"
+  }
+]

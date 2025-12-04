@@ -1,0 +1,368 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C52",
+      "C120"
+    ],
+    "result": "scMultiome analysis successfully resolved all individual rhombomeres (r1-r6) at 13hpf and 16hpf in zebrafish for the first time, with each rhombomere displaying distinct gene expression profiles identifiable through known marker genes (egr2b, mafba, sema3ab, fgf3, cyp26b1, vgll3, irx1b) validated by HCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C35-C40, C52, and C120 collectively demonstrate successful molecular resolution of all rhombomeres using scMultiome. The identification is supported by multiple lines of evidence: UMAP clustering (C35), expression of known markers (C36-C37), novel marker identification (C38-C39), and HCR validation (C39-C40). The agreement between scRNA and scATAC data (C52) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C53",
+      "C80",
+      "C81",
+      "C89"
+    ],
+    "result": "Rhombomeres become molecularly distinct between 10hpf (end of gastrulation) and 13hpf (early segmentation), with individual rhombomeres not apparent as distinct clusters at 10hpf but instead represented by three progenitor domains (HB.1-HB.3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C53, C80, C81, and C89 provide converging evidence for the temporal emergence of rhombomere identity. The contrast between 10hpf (no distinct rhombomeres, C80) and 13hpf (molecularly distinct rhombomeres, C2, C52) is clearly demonstrated. The identification of three progenitor clusters at 10hpf (C81, C89) provides mechanistic insight into this transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C79",
+      "C121",
+      "C125"
+    ],
+    "result": "scMultiome analyses do not detect extensive odd versus even molecular characteristics in the early hindbrain; instead, rhombomeres display unique molecular profiles without overt odd/even periodicity, with r3 and r5 being closely related, r2 sharing features with r4, but r1 and r6 not fitting these groupings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C54-C67, C79, C121, and C125 provide comprehensive evidence against odd/even periodicity through multiple analytical approaches: UMAP clustering patterns (C54-C55), heatmap analysis (C56-C58), dendrogram relationships (C59-C62), computational identification of odd/even genes (C64-C67), and overall conclusions (C79, C125). The finding that very few genes fulfill odd/even expression criteria (C64) and specific examples (C65-C67) strongly support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C124"
+    ],
+    "result": "Each rhombomere displays a unique gene expression and chromatin accessibility profile, characterized by distinct transcription factor binding motifs and unique gene regulatory networks (GRNs), with even closely related rhombomeres (r3 and r5) having clearly distinct GRNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C43-C51, C71-C78, and C124 demonstrate unique molecular profiles through chromatin accessibility analysis (C43-C51), GRN construction (C71-C77), and comparative analysis (C78, C124). The identification of rhombomere-specific TF motifs (EGR2 in r3/r5, MAF in r5/r6, TALE in r3, TEAD in r2) and unique GRN nodes provides strong evidence. The finding that only 37% of Egr2 network nodes are shared between r3 and r5 (C130) further supports distinct identities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C81",
+      "C82",
+      "C83",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C122"
+    ],
+    "result": "Three primary hindbrain progenitor domains (PHPDs: HB.1, HB.2, HB.3) were detected at 10hpf prior to the appearance of distinct rhombomeres, correlating with prospective rhombomeres r2/r3 (possibly including r1), r4, and r5/r6 respectively, based on expression of rhombomere-specific markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C81-C89, C136-C139, and C122 provide strong evidence for three PHPDs through gene expression analysis. HB.1 expresses both r2 (vgll3) and r3 (egr2b) markers (C82), HB.2 expresses r5/r6 markers (mafba, crabp2a) (C83), and HB.3 expresses r4 markers (dusp2, ppp1r14ab) (C88). The temporal expression patterns (C84) and correlation with visual observations (C7, C122) support the PHPD identities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C99",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Individual PHPD cells co-express markers of multiple mature rhombomeres, with ~74% of egr2b-expressing HB.1 cells co-expressing vgll3 (r2 marker) at 10hpf, and ~72% of vgll3-positive cells co-expressing either egr2b or nab1b, indicating mixed rhombomere identities confirmed by HCR in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C90-C96, C99, C140-C142 provide strong evidence for mixed-identity progenitors through single-cell co-expression analysis with specific quantification (C91, C93, C94) and in vivo HCR validation (C95, C96). The temporal resolution of mixed identities (C92) supports the developmental model. The convergence of computational and experimental validation strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C97",
+      "C98",
+      "C100",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "PHPDs contain mixed-identity progenitors whose molecular profiles differ from their derivative rhombomeres, with subdivision into individual rhombomeres requiring resolution of mixed transcription and chromatin states through profound changes in gene expression during the transition from PHPD to rhombomere cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C97, C98, C100, C144-C146 are supported by temporal comparison analysis showing distinct molecular profiles between 10hpf PHPDs and 13hpf rhombomeres (C97, C144) and identification of profound gene expression changes (C145). However, C11 is more speculative as the mechanism of resolution is proposed but not directly tested. The evidence supports the existence of mixed-identity progenitors (C10, C98, C99) but the specific mechanism (C11) requires further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C119"
+    ],
+    "result": "PHPDs form in response to Fgf and RA morphogens, with RA specifically required for HB.2 formation (loss of r5/r6 in DEAB-treated embryos) and Fgf broadly required for PHPD establishment (SU5402 treatment blocks marker expression in all PHPDs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C101-C105, C108-C111, C119 demonstrate morphogen requirements through pharmacological inhibition experiments. DEAB treatment specifically eliminates r5/r6 (C103, C105, C108) while anterior markers persist (C104), and SU5402 blocks all PHPD markers (C109, C110). The scMultiome analysis of DEAB-treated embryos (C112-C116) provides comprehensive molecular validation. The differential requirements (RA for HB.2, Fgf for all PHPDs) are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Dorsoventral (DV) patterning is ongoing at 13hpf and all analyzed stages, with dorsal (casz1, zic2a) and ventral (ntn1a, sp8b) genes differentially expressed across each rhombomere, indicating that early hindbrain cells simultaneously respond to both DV and AP axial cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C42, C158-C160 demonstrate ongoing DV patterning through differential expression of known DV markers (C41) across all rhombomeres and timepoints (C158). The inference that cells respond to both DV and AP cues (C159) is reasonable given the simultaneous presence of both patterning systems. The presence of DV genes in rhombomere GRNs (C160) provides additional support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Loss of RA signaling leads to absence of vagal (nX) and abducens (nVI) neurons and expansion of r4-derived facial (nVII) neurons and Mauthner neurons (2 MNs per wild-type versus 3.6 MNs per DEAB-treated embryo) in DEAB-treated embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106 and C107 provide functional validation of the molecular phenotype through neuronal differentiation analysis. The loss of r5/r6-derived neurons (C106) and expansion of r4-derived neurons (C107) with quantification of Mauthner neurons is consistent with the loss of HB.2 and expansion of HB.3 domains. This provides important functional confirmation of the molecular changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "scMultiome analysis of DEAB-treated embryos reveals complete loss of r5 and r6 clusters, expansion of r1, r2, and r4 (2-3x more cells), loss of caudal hindbrain, with only ~30 differentially expressed genes per rhombomere (mostly broadly RA-responsive genes), and no formation of an rX domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C118 provide comprehensive molecular characterization of RA inhibition effects through scMultiome analysis. The complete loss of r5/r6 (C112, C113), expansion of anterior rhombomeres (C114), and absence of rX domain (C116) are clearly demonstrated. The finding of minimal gene expression changes in remaining rhombomeres (C117, C118) indicates specificity of RA requirement for HB.2 formation rather than broad effects on rhombomere identity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Several genes are co-expressed in rhombomere pairs r5/r6 (including mafba and PG3/PG4 hox genes), only a few genes in r1/r2 (nrp2a, pdzrn4), and none in r3/r4, indicating limited molecular evidence for rhombomere pairing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 demonstrate differential co-expression patterns across rhombomere pairs through computational analysis. The strong co-expression in r5/r6 (C68) contrasts with minimal co-expression in r1/r2 (C69) and absence in r3/r4 (C70), supporting the conclusion that rhombomere pairing is not a general molecular feature. This analysis complements the lack of odd/even periodicity findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C143",
+      "C155",
+      "C157"
+    ],
+    "result": "When 10hpf cells are computationally integrated with 13hpf and 16hpf cells, HB.1 cells contribute to both r2 and r3 clusters, and HB.2 cells contribute to both r5 and r6 clusters, consistent with PHPDs corresponding to shared progenitor pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143, C155, and C157 provide computational evidence for PHPD-rhombomere relationships through integrated UMAP analysis. The contribution of PHPD cells to multiple rhombomere clusters (C143, C155) supports the mixed-identity progenitor model. The inference that HB.2 corresponds to a shared r5/r6 progenitor pool (C157) is supported by integration data and prior genetic evidence (C156).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The authors hypothesize that TFs expressed in PHPDs may repress each other to drive distinct rhombomere fates (analogous to DV patterning), with vgll3 and egr2b potentially repressing each other in HB.1, and morphogen gradients (e.g., Fgf from MHB) potentially biasing this repressive balance along the AP axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C147-C150 are explicitly stated as hypotheses and speculation (C147, C148, C150) rather than demonstrated findings. While the hypothesis is reasonable by analogy to DV patterning (C147) and supported by the observation of gradual resolution along the AP axis (C149), no direct experimental evidence for repressive interactions or morphogen-mediated biasing is provided. This represents a proposed mechanism requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The mixed cell identities observed in the HB.1 domain are distinct from 'border sharpening' cells, being more numerous, not associated with rhombomere boundaries (which have yet to form at 10hpf), and representing a different developmental phenomenon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C154 distinguish the observed mixed-identity cells from the known border sharpening phenomenon through clear differences in cell number, spatial distribution, and developmental timing. The comparison to prior work (C151-C153) and contrast with current observations (C154) effectively demonstrate that these are distinct phenomena. This clarification is important for proper interpretation of the mixed-identity findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The lack of detected molecular odd/even periodicity may be explained by shared expression modules (e.g., cell surface receptors for cell sorting) being minor components of overall rhombomere GRNs, with evidence that epha7 is shared between r3 and r5 while epha2 is r5-specific, and only 37% of Egr2 network nodes are shared between r3 and r5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130 provide a reasonable explanation for the apparent contradiction between known cellular behaviors (odd/even cell sorting) and lack of molecular periodicity. The speculation (C126) is supported by prior work on cell mixing hierarchy (C127), specific examples of differential ephrin expression (C128, C129), and quantification of GRN similarity (C130). This represents thoughtful interpretation of results in light of prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Prior work established that the hindbrain is divided into rhombomeres with two-rhombomere periodicity and odd/even properties, but unique molecular characteristics of each rhombomere have not been defined, relatively few genes recapitulate odd/even periodicity, and recent scRNAseq analyses could not fully resolve individual rhombomeres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C34 accurately summarize prior knowledge and gaps in the field based on cited literature. These claims establish the context and rationale for the current study. The citations to prior work (C12, C14, C16-C19, C25-C26, C29-C30, C34) support the stated knowledge, and the identified gaps (C13, C24, C32-C34) justify the current investigation. This represents accurate assessment of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C123",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Using full gene expression profiles, r3 and r5 are closely related and r2 shares features with r4, but r1 and r6 do not fit these groups; transient r2+r3 and r5+r6 segments form during zebrafish development, and analogous pre-rhombomeres have been observed in chick (3 pre-rhombomeres) and human (4 primary rhombomeres).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123, C132-C135 summarize key findings about rhombomere relationships and evolutionary conservation. The molecular relationships (C123) are supported by multiple analyses presented in the manuscript. The developmental sequence in zebrafish (C132, C133) is based on prior knowledge, and the evolutionary conservation (C134, C135) is supported by cited literature. This represents accurate synthesis of current and prior findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C156"
+    ],
+    "result": "Prior work showed that rX cells found in mafB mutant embryos give rise to both r5 and r6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C156 accurately cites prior work on valentino/mafB mutants. This is a straightforward citation of established findings that supports the interpretation of HB.2 as corresponding to rX. The claim is properly attributed to prior work with appropriate citations.",
+    "result_type": "MINOR"
+  }
+]

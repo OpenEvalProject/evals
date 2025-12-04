@@ -1,0 +1,2415 @@
+{
+  "submission": {
+    "id": "00300b7b-4b8b-4d3d-b1e3-11a732c7fa7f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:00:24.070237Z",
+    "updated_at": "2025-12-04T03:00:24.070237Z"
+  },
+  "content": [
+    {
+      "id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "submission_id": "00300b7b-4b8b-4d3d-b1e3-11a732c7fa7f",
+      "content_type": "manuscript",
+      "content_text": "# Healthcare in England was affected by the COVID-19 pandemic across the pancreatic cancer pathway: A cohort study using OpenSAFELY-TPP\n\n## Authors\n\n- Agnieszka Lemanska<sup>1</sup> ([ORCID: 0000-0003-4849-2430](https://orcid.org/0000-0003-4849-2430)) \u2020\n- Colm Andrews<sup>2</sup>\n- Louis Fisher<sup>2</sup>\n- Seb Bacon<sup>2</sup>\n- Adam E Frampton<sup>1</sup>\n- Amir Mehrkar<sup>2</sup>\n- Peter Inglesby<sup>2</sup>\n- Simon Davy<sup>2</sup>\n- Keith Roberts<sup>5</sup>\n- Praveetha Patalay<sup>6</sup>\n- Ben Goldacre<sup>2</sup>\n- Brian MacKenna<sup>2</sup>\n- Alex J Walker\n- Alex J Walker<sup>2</sup>\n\n### Affiliations\n\n1. Faculty of Health and Medical Sciences, University of Surrey Guildford United Kingdom ([ROR:00ks66431](https://ror.org/00ks66431))\n2. Bennett Institute for Applied Data Science, Nuffield Department of Primary Care Health Sciences, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n3. HPB Surgical Unit, Royal Surrey NHS Foundation Trust Guildford United Kingdom ([ROR:050bd8661](https://ror.org/050bd8661))\n4. Oncology Section, Surrey Cancer Research Institute, Department of Clinical and Experimental Medicine, University of Surrey Guildford United Kingdom ([ROR:00ks66431](https://ror.org/00ks66431))\n5. Institute of Immunology and Immunotherapy, University of Birmingham Birmingham United Kingdom ([ROR:03angcq70](https://ror.org/03angcq70))\n6. MRC Unit for Lifelong Health and Ageing and Centre for Longitudinal Studies, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Healthcare across all sectors, in the UK and globally, was negatively affected by the COVID-19 pandemic. We analysed healthcare services delivered to people with pancreatic cancer from January 2015 to March 2023 to investigate the effect of the COVID-19 pandemic.Methods:With the approval of NHS England, and drawing from a nationally representative OpenSAFELY-TPP dataset of 24 million patients (over 40% of the English population), we undertook a cohort study of people diagnosed with pancreatic cancer. We queried electronic healthcare records for information on the provision of healthcare services across the pancreatic cancer pathway. To estimate the effect of the COVID-19 pandemic, we predicted the rates of healthcare services if the pandemic had not happened. We used generalised linear models and the pre-pandemic data from January 2015 to February 2020 to predict rates in March 2020 to March 2023. The 95% confidence intervals of the predicted values were used to estimate the significance of the difference between the predicted and observed rates.Results:The rate of pancreatic cancer and diabetes diagnoses in the cohort was not affected by the pandemic. There were 26,840 people diagnosed with pancreatic cancer from January 2015 to March 2023. The mean age at diagnosis was 72 (\u00b111 SD), 48% of people were female, 95% were of White ethnicity, and 40% were diagnosed with diabetes. We found a reduction in surgical resections by 25\u201328% during the pandemic. In addition, 20%, 10%, and 4% fewer people received body mass index, glycated haemoglobin, and liver function tests, respectively, before they were diagnosed with pancreatic cancer. There was no impact of the pandemic on the number of people making contact with primary care, but the number of contacts increased on average by 1\u20132 per person amongst those who made contact. Reporting of jaundice decreased by 28%, but recovered within 12 months into the pandemic. Emergency department visits, hospital admissions, and deaths were not affected.Conclusions:The pandemic affected healthcare in England across the pancreatic cancer pathway. Positive lessons could be learnt from the services that were resilient and those that recovered quickly. The reductions in healthcare experienced by people with cancer have the potential to lead to worse outcomes. Current efforts should focus on addressing the unmet needs of people with cancer.Funding:This work was jointly funded by the Wellcome Trust (222097/Z/20/Z); MRC (MR/V015757/1, MC_PC-20059, MR/W016729/1); NIHR (NIHR135559, COV-LT2-0073), and Health Data Research UK (HDRUK2021.000, 2021.0157). This work was funded by Medical Research Council (MRC) grant reference MR/W021390/1 as part of the postdoctoral fellowship awarded to AL and undertaken at the Bennett Institute, University of Oxford. The views expressed are those of the authors and not necessarily those of the NIHR, NHS England, UK Health Security Agency (UKHSA), or the Department of Health and Social Care. Funders had no role in the study design, collection, analysis, and interpretation of data; in the writing of the report; and in the decision to submit the article for publication.\n\n## Introduction\n\nCancer services were already overstretched before the COVID-19 pandemic (NHS, 2019; NHS 75 England, 2019). With the widespread effect on healthcare, the pandemic further exacerbated the cancer-related healthcare crisis (Greenwood and Swanton, 2021; Patt et al., 2020; Richards et al., 2020; Morris et al., 2021; McKay et al., 2021; Glasbey et al., 2021; Nepogodiev et al., 2022; Diamand et al., 2021; Sud et al., 2020; Earnshaw et al., 2020; Geh et al., 2022; Popovic et al., 2022). During the pandemic, the resources, and the attention in healthcare systems globally, shifted towards preventing and managing COVID-19 (Mercier et al., 2020; Williams et al., 2020). Access to the non-COVID-19-related healthcare changed (N\u00fa\u00f1ez et al., 2021; Smoli\u0107 et al., 2022; Vardhanabhuti and Ng, 2021), waiting times increased (Mazidimoradi et al., 2023; Cooke et al., 2022), and cancer pathways including treatment standards were adapted (Greenwood and Swanton, 2021; Patt et al., 2020; Richards et al., 2020; Morris et al., 2021; McKay et al., 2021; Glasbey et al., 2021; Nepogodiev et al., 2022; Diamand et al., 2021). In addition, patients\u2019 healthcare-seeking behaviour changed as people adopted social distancing (limiting face-to-face contact) and shielding to protect themselves and healthcare systems from unprecedented pressures of the pandemic (Robb et al., 2020; Smith et al., 2022; Hughes et al., 2020). People were cautious and were actively taking measures to preserve healthcare and limit the spread of COVID-19 (Quinn-Scoggins et al., 2021).\n\nPeople affected by cancer were particularly vulnerable to the changes brought by the pandemic (Support, 2020). This is because they rely on healthcare. In pancreatic cancer, the challenging diagnosis (due to non-specific symptoms) and rapid progression require an efficient system (Zhang et al., 2018). Weight loss, hyperglycaemia, diabetes, and bile duct obstruction often occur as complications of pancreatic cancer (Mueller et al., 2019). Therefore, timely assessments of body mass index (BMI), glycated haemoglobin (HbA1c), and liver function can support early diagnosis (Lemanska et al., 2022) and monitoring of the progression (Sharma et al., 2018). However, the negative effect of the COVID-19 pandemic resulted in delays and missed opportunities throughout the cancer pathway, which in turn affected patient outcomes including survival (Morris et al., 2021; McKay et al., 2021; Glasbey et al., 2021; Nepogodiev et al., 2022; Sud et al., 2020; Earnshaw et al., 2020; Geh et al., 2022; Mazidimoradi et al., 2023; appg, 2021).\n\nTo mitigate the negative effect of the COVID-19 pandemic and support patients and healthcare systems in recovery, it is important to provide the assessment of the scale of the impact. We therefore set out to investigate the effect of the pandemic on pancreatic cancer services in England. The objectives were to:\n\n## Methods\n\n### Study design\n\nThis was a cohort study set in England, UK. We analysed electronic healthcare records (EHR) of adults diagnosed with pancreatic cancer between 1 January 2015 and 31 March 2023.\n\n### Data source: OpenSAFELY-TPP dataset\n\nWe used the OpenSAFELY-TPP dataset comprising 24 million people currently registered with primary care practices that use TPP\u2019s SystmOne software (covering over 40% of England\u2019s population). This dataset was used for this project because of its unprecedented size, because it is nationally representative (Andrews et al., 2022), and because it enables access to primary care records linked to hospital records and mortality data. Linked pseudonymised EHRs included coded diagnoses, medications, and physiological parameters. No free text data were available.\n\nPrimary care records managed by TPP were linked to Secondary Uses Service (SUS) hospital procedures and admissions data, and to Office of National Statistics (ONS) death data through OpenSAFELY. OpenSAFELY is an analytics platform created by our team on behalf of NHS England to address urgent COVID-19 research questions. It provides a secure software interface allowing the analysis of pseudonymised primary care records of patients from England in near real time within the TPP\u2019s highly secure data centre, avoiding the need for large volumes of patient data to be transferred off-site. This, in addition to other technical and organisational controls, minimises any risk of patient re-identification. Further details can be found in the information governance section of this manuscript and on opensafely.org.\n\n### Study population\n\nThe study population was derived from the 24 million people in the OpenSAFELY-TPP dataset. Participants were adults diagnosed with pancreatic cancer between 1 January 2015 and 31 March 2023. Data on healthcare services delivered to study participants were extracted and trends over time were analysed.\n\n### Outcome measures\n\nThe information on new pancreatic cancer diagnosis (incidence) was extracted. This was defined as the first time that a clinical code for pancreatic cancer was entered in a primary care record. The age of participants at diagnosis, their gender and ethnicity were also extracted. To assess the effect of the pandemic on pancreatic cancer diagnosis, numbers of people diagnosed with pancreatic cancer were presented as monthly rates per 100,000 adults registered with TPP practices.\n\nTo analyse the effect of the COVID-19 pandemic on pancreatic cancer-related services, the episodes of care were extracted from 6 months before to 6 months after pancreatic cancer diagnosis (apart from the diabetes diagnosis which was extracted at any time). The date of pancreatic cancer diagnosis served as an index date for each participant. Table 1 presents which healthcare services were included in the study, and the time windows for which they were assessed.\n\n**Table 1.**\n Healthcare services (contacts, appointments, diagnosis, diagnostic tests, routine assessments) and associated time windows for which they were extracted.Pancreatic cancer diagnosis was an index date. Counts of healthcare services were presented as either monthly rates of people who were diagnosed that month and received a healthcare service within the time window per 100 people diagnosed that month, or number of episodes received within the time window per person diagnosed each month (except for the number of primary care contacts which was analysed per person in contact).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Healthcare service</th>\n      <th colspan=\"2\">Time window</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>Six months before pancreatic cancer diagnosis</th>\n      <th>Six months after pancreatic cancer diagnosis</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"3\">Primary care</td>\n    </tr>\n    <tr>\n      <td>Diabetes diagnoses</td>\n      <td colspan=\"2\">Any time</td>\n    </tr>\n    <tr>\n      <td>Contacts with primary care (these include all contact events, not only healthcare appointments)</td>\n      <td>\u2713</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>BMI assessments</td>\n      <td>\u2713</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>HbA1c assessments</td>\n      <td>\u2713</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>Liver function assessments</td>\n      <td>\u2713</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>Reporting of jaundice</td>\n      <td>\u2713</td>\n      <td>\u2717</td>\n    </tr>\n    <tr>\n      <td>Pancreatic enzyme supplementation</td>\n      <td>\u2717</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Secondary care</td>\n    </tr>\n    <tr>\n      <td>Abdominal imaging</td>\n      <td>\u2713</td>\n      <td>\u2717</td>\n    </tr>\n    <tr>\n      <td>Pancreatic cancer resection (surgery)</td>\n      <td>\u2717</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>Emergency department visits</td>\n      <td>\u2713</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>Hospital admissions</td>\n      <td>\u2713</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">National mortality register</td>\n    </tr>\n    <tr>\n      <td>Death (any cause)</td>\n      <td>\u2717</td>\n      <td>\u2713</td>\n    </tr>\n  </tbody>\n</table>\n\nData on healthcare services were assessed as monthly rates of people who received a healthcare service (\u2265one episode) per 100 people diagnosed. Some services were assessed as monthly rates (numbers) of episodes per one person diagnosed (or for primary care contacts this was per person in contact).\n\nPrimary care data were extracted using the systematised nomenclature of medicine clinical terminology (SNOMED CT) system. Medications data, namely pancreatic enzyme supplements, were extracted using the list compiled based on the British National Formulary (BNF) and coded using NHS Dictionary of Medicines and Devices codes. Hospital procedures data were queried using the Office of Population Censuses and Surveys (OPCS-4) coding system.\n\n### Study dates\n\nThe study period was from 1 January 2015 to 31 March 2023. In the UK, the pandemic-related restrictions started in March 2020 with the first national lockdown in England commencing on 26 March 2020, and the two consecutive lockdowns starting 5 November 2020 and 6 January 2021. From 8 March 2021, governments in the UK began a phased exit from the third and final lockdown. Therefore, to analyse the effect of the COVID-19 pandemic, three separate periods were adopted. The period before the pandemic was from 1 January 2015 to 29 February 2020. The lockdown period was from 1 March 2020 to 31 March 2021. The recovery period (the period of easing restrictions) was from 1 April 2021 to 31 March 2023. The recovery period was censored 6 months earlier, by 30 September 2022, for the outcomes that assessed healthcare service 6 months after pancreatic cancer diagnosis. This was to ensure the completeness of the 6-month follow-up data.\n\nPrimary care data were available for the whole study period. However, secondary care data were only available from January 2017 onwards. Emergency department visits as well as ONS mortality data were available from January 2019 onwards.\n\n### Statistical analysis\n\nCounts of patients and healthcare services were rounded to the nearest 5 to comply with the rules for preventing statistical disclosure. The observed monthly rates were visualised between 1 January 2015 (or as available) and 31 March 2023 (or 30 September 2022 for the outcomes that assessed healthcare within 6 months after pancreatic cancer diagnosis).\n\nData from before the pandemic were used to predict monthly rates of healthcare services that would be expected during the lockdown and recovery periods if the pandemic had not happened. Generalised linear models (GLM) were used to model monthly rates. A separate model was fitted for each healthcare service. An interrupted time series approach was used to predict the expected rates in the lockdown and recovery periods. To account for seasonality in data, calendar months were fitted as a categorical variable. To allow for change in healthcare services over time, the time was fitted as a continuous variable. Two dummy variables for the two COVID-19 periods were included to allow trends and slopes to vary in these periods separately.\n\nThe differences between the observed and predicted rates were calculated and presented as the percentage change from the predicted. The 95% confidence intervals (CIs) of the predicted values were used to estimate the significance of the difference between the predicted and observed values (to estimate the effect of the COVID-19 pandemic). The average values across periods (rather than any specific points in time) were used to estimate the overall effect in each period.\n\n### Software and reproducibility\n\nData management was performed in SQL and Python version 3.8. Statistical analyses were performed in R version 4.0.2 using packages MASS for GLM and ggplot2 for data visualisation. The REporting of studies Conducted using Observational Routinely-collected health Data (RECORD) guidelines were followed (Benchimol et al., 2015). Software for data analysis and code lists used to define outcome measures are available from https://github.com/opensafely/Pancreatic_cancer (copy archived at Lemanska, 2023).\n\n## Results\n\n### Study population and participants\n\nIn total, there were 26,840 people diagnosed with pancreatic cancer in the study period (study participants). On average, there were 267 (\u00b124 SD) pancreatic cancer diagnosis each month. The mean age at pancreatic cancer diagnosis was 72 (\u00b111 SD). 12,965 (48%) participants were females and 13,875 (52%) were males. 18,760 participants were of White ethnicity (95% for which ethnicity data were recorded). Ethnicity data were missing for 7040 (26%) participants. 10,785 (40%) of people with pancreatic cancer received diagnosis of diabetes at some point before or after their cancer diagnosis.\n\n### The effect of COVID-19 on pancreatic cancer and diabetes diagnosis\n\nWe did not observe an effect of the COVID-19 pandemic on the number of people recorded as diagnosed with pancreatic cancer (Figure 1A). For every 100,000 registered people, there was 1 pancreatic cancer diagnosis a month in the lockdown and in the recovery period. This equated to the predicted rate of 1 (95% CI: 1\u20132) in both periods of the pandemic (Table 2). We also did not observe an effect on diabetes diagnosis in this cohort (Figure 1B). In both periods of the pandemic, 41% of people received diabetes diagnosis. The predicted rates per 100 diagnosed people were 41 (95% CI: 38\u201344) in the lockdown period and 42 (95% CI: 39\u201345) in the recovery period.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85332/elife-85332-fig1-v1.jpg)\n\n**Figure 1.:** Observed and predicted monthly rates (as if the COVID-19 pandemic had not happened) for (A) pancreatic cancer diagnosis per 100,000 registered patients, and (B) diabetes diagnosis per 100 people with pancreatic cancer. Generalised linear models were used to predict monthly rates with the 95% confidence intervals to estimate the effect of the pandemic.\n\n**Table 2.**\n Statistical significance of the differences between the observed and predicted monthly rates of healthcare services with 95% confidence intervals.The pandemic values were predicted based on the pre-pandemic period from 1 January 2015 to 29 February 2020. The lockdown period was from 1 March 2020 to 31 March 2021. The recovery period (the period of easing restrictions) was from 1 April 2021 to 31 March 2023 (or to 30 September 2022 for healthcare services that were evaluated 6 months after diagnosis). The values are the average monthly rates over the period. Unless otherwise specified, the rates are per 100 people diagnosed with pancreatic cancer. *Indicates statistical significance with 95% confidence levels.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\"></th>\n      <th colspan=\"3\">Lockdown period: 1 March 2020 to 31 March 2021 (13 months)</th>\n      <th colspan=\"3\">Recovery period: 1 April 2021 to 31 March 2023 (24 months) or 30 September 2022 (18 months for services evaluated 6 months after diagnosis)</th>\n    </tr>\n    <tr>\n      <th>Predicted rates (95% CI)</th>\n      <th>Observed rates</th>\n      <th>Difference</th>\n      <th>Predicted rates (95% CI)</th>\n      <th>Observed rates</th>\n      <th>Difference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Pancreatic cancer diagnosis (rate per 100,000 people registered)</td>\n      <td>1 (1\u20132)</td>\n      <td>1</td>\n      <td>0 (2%)</td>\n      <td>1 (1\u20132)</td>\n      <td>1</td>\n      <td>0 (6%)</td>\n    </tr>\n    <tr>\n      <td>Diabetes diagnosis any time before or after pancreatic cancer diagnosis</td>\n      <td>41 (38\u201344)</td>\n      <td>41</td>\n      <td>0 (1%)</td>\n      <td>42 (39\u201345)</td>\n      <td>43</td>\n      <td>1 (3%)</td>\n    </tr>\n    <tr>\n      <td>People with \u22651 primary care contacts within 6 months before pancreatic cancer diagnosis</td>\n      <td>92 (90\u201394)</td>\n      <td>91</td>\n      <td>\u22121 (1%)</td>\n      <td>97 (95\u201399)</td>\n      <td>95</td>\n      <td>\u22122 (3%)*</td>\n    </tr>\n    <tr>\n      <td>People with \u22651 primary care contacts within 6 months after pancreatic cancer diagnosis</td>\n      <td>87 (84\u201389)</td>\n      <td>88</td>\n      <td>2 (2%)</td>\n      <td>91 (89\u201394)</td>\n      <td>91</td>\n      <td>0 (0%)</td>\n    </tr>\n    <tr>\n      <td>Number of primary care contacts within 6 months before pancreatic cancer diagnosis (per person in contact)</td>\n      <td>11 (10\u201312)</td>\n      <td>12</td>\n      <td>1 (8%)*</td>\n      <td>11 (10\u201312)</td>\n      <td>13</td>\n      <td>2 (15%)</td>\n    </tr>\n    <tr>\n      <td>Number of primary care contacts within 6 months after pancreatic cancer diagnosis (per person in contact)</td>\n      <td>11 (10\u201311)</td>\n      <td>13</td>\n      <td>2 (18%)*</td>\n      <td>11 (10\u201312)</td>\n      <td>12</td>\n      <td>2 (14%)*</td>\n    </tr>\n    <tr>\n      <td>People with \u22651 BMI assessments within 6 months before pancreatic cancer diagnosis</td>\n      <td>55 (52\u201359)</td>\n      <td>44</td>\n      <td>\u221211 (20%)*</td>\n      <td>57 (53\u201361)</td>\n      <td>49</td>\n      <td>\u22128 (14%)*</td>\n    </tr>\n    <tr>\n      <td>People with \u22651 BMI assessments within 6 months after pancreatic cancer diagnosis</td>\n      <td>31 (28\u201334)</td>\n      <td>25</td>\n      <td>\u22126 (18%)*</td>\n      <td>33 (30\u201336)</td>\n      <td>31</td>\n      <td>\u22122 (7%)</td>\n    </tr>\n    <tr>\n      <td>People with \u22651 HbA1c assessments within 6 months before pancreatic cancer diagnosis</td>\n      <td>60 (57\u201364)</td>\n      <td>55</td>\n      <td>\u22126 (10%)*</td>\n      <td>66 (62\u201370)</td>\n      <td>61</td>\n      <td>\u22125 (7%)*</td>\n    </tr>\n    <tr>\n      <td>People with \u22651 HbA1c assessments within 6 months after pancreatic cancer diagnosis</td>\n      <td>19 (16\u201321)</td>\n      <td>16</td>\n      <td>\u22123 (13%)</td>\n      <td>20 (17\u201322)</td>\n      <td>18</td>\n      <td>\u22121 (7%)</td>\n    </tr>\n    <tr>\n      <td>People with \u22651 liver function assessments within 6 months before pancreatic cancer diagnosis</td>\n      <td>80 (77\u201382)</td>\n      <td>76</td>\n      <td>\u22123 (4%)*</td>\n      <td>80 (77\u201383)</td>\n      <td>78</td>\n      <td>\u22122 (3%)</td>\n    </tr>\n    <tr>\n      <td>People with \u22651 liver function assessments within 6 months after pancreatic cancer diagnosis</td>\n      <td>34 (31\u201336)</td>\n      <td>33</td>\n      <td>\u22121 (2%)</td>\n      <td>33 (30\u201336)</td>\n      <td>33</td>\n      <td>1 (2%)</td>\n    </tr>\n    <tr>\n      <td>People reporting jaundice \u22651 times within 6 months before pancreatic cancer diagnosis</td>\n      <td>10 (9\u201311)</td>\n      <td>7</td>\n      <td>\u22123 (28%)*</td>\n      <td>10 (9\u201312)</td>\n      <td>9</td>\n      <td>\u22121 (11%)</td>\n    </tr>\n    <tr>\n      <td>People receiving abdominal scan \u22651 times within 6 months before pancreatic cancer diagnosis</td>\n      <td>30 (27\u201333)</td>\n      <td>29</td>\n      <td>\u22122 (5%)</td>\n      <td>30 (26\u201334)</td>\n      <td>29</td>\n      <td>0 (2%)</td>\n    </tr>\n    <tr>\n      <td>People receiving \u22651 prescriptions for enzyme supplements within 6 months after pancreatic cancer diagnosis</td>\n      <td>55 (52\u201358)</td>\n      <td>54</td>\n      <td>\u22122 (3%)</td>\n      <td>60 (56\u201363)</td>\n      <td>57</td>\n      <td>\u22123 (5%)</td>\n    </tr>\n    <tr>\n      <td>People receiving pancreatic cancer resection within 6 months after pancreatic cancer diagnosis</td>\n      <td>8 (6\u201310)</td>\n      <td>6</td>\n      <td>\u22122 (25%)*</td>\n      <td>9 (7\u201311)</td>\n      <td>6</td>\n      <td>\u22122 (28%)*</td>\n    </tr>\n    <tr>\n      <td>Number of emergency department visits within 6 months before pancreatic cancer diagnosis (per person diagnosed)</td>\n      <td>1 (1\u20131)</td>\n      <td>1</td>\n      <td>0 (9%)</td>\n      <td>1 (0\u20131)</td>\n      <td>1</td>\n      <td>0 (11%)</td>\n    </tr>\n    <tr>\n      <td>Number of emergency department visits within 6 months after pancreatic cancer diagnosis (per person diagnosed)</td>\n      <td>1 (0\u20131)</td>\n      <td>1</td>\n      <td>0 (1%)</td>\n      <td>1 (0\u20131)</td>\n      <td>1</td>\n      <td>0 (5%)</td>\n    </tr>\n    <tr>\n      <td>Number of hospital admissions within 6 months before pancreatic cancer diagnosis (per person diagnosed)</td>\n      <td>2 (2\u20132)</td>\n      <td>2</td>\n      <td>0 (7%)</td>\n      <td>2 (1\u20132)</td>\n      <td>2</td>\n      <td>0 (3%)</td>\n    </tr>\n    <tr>\n      <td>Number of hospital admissions within 6 months after pancreatic cancer diagnosis (per person diagnosed)</td>\n      <td>4 (4\u20135)</td>\n      <td>4</td>\n      <td>0 (2%)</td>\n      <td>4 (3\u20135)</td>\n      <td>4</td>\n      <td>0 (8%)</td>\n    </tr>\n    <tr>\n      <td>People who died within 6 months after pancreatic cancer diagnosis</td>\n      <td>61 (53\u201369)</td>\n      <td>56</td>\n      <td>\u22125 (8%)</td>\n      <td>68 (53\u201382)</td>\n      <td>56</td>\n      <td>\u221212 (17%)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Primary care contacts\n\nThe number of people with pancreatic cancer who contacted primary care before and after their diagnosis, increased over time, from 70% and 80% (respectively) in 2015 to over 90% by 2022 (Figure 2A, B). This trend was not affected by the pandemic (Table 2). We observed that 91% (predicted 92% [95% CI: 90\u201394]) of people diagnosed in the lockdown period, contacted (\u22651 contact) primary care within 6 months before they were diagnosed, and 88% (predicted 87% [95% CI: 84\u201389]) contacted primary care within 6 months after diagnosis. In the recovery period, this was 95% (predicted 97% [95% CI: 95\u201399]) and 91% (predicted 91% [95% CI: 89\u201394]), respectively.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85332/elife-85332-fig2-v1.jpg)\n\n**Figure 2.:** The observed and predicted (as if the COVID-19 pandemic had not happened) monthly rates of (A) people in contact with primary care before pancreatic cancer diagnosis, and (B) people in contact with primary care after pancreatic cancer diagnosis. Rates are per 100 people diagnosed with pancreatic cancer. Figures (C) and (D) are monthly rates of primary care contacts per person before and after pancreatic cancer diagnosis. Contacts with primary care include all contact events (all reasons and purposes), not only healthcare appointments. Generalised linear models were used to predict monthly rates with the 95% confidence intervals to estimate the effect of the pandemic.\n\nHowever, there was a difference in the number of primary care contacts recorded per person. People diagnosed in the lockdown period had on average 1 contact more than predicted (12 vs 11 [95% CI: 10\u201312]) within 6 months before the diagnosis and 2 contacts more than predicted (13 vs 11 [95% CI: 10\u201311]) within 6 months after they were diagnosed. This was similar for people diagnosed in the recovery period. For these people, there were 2 more contacts observed than predicted (13 vs 11 [95% CI: 10\u201312]) before the diagnosis and 2 (12 vs 11 [95% CI: 10\u201312]) after the diagnosis (Table 2). Any discrepancies in sums are due to rounding. In addition, it is important to note that contacts with primary care included all the contact events (all reasons and purposes), not only healthcare appointments.\n\n### BMI, HbA1c, and liver function assessments\n\nIn both periods of the pandemic, we observed reductions in numbers of people receiving BMI, HbA1c, and liver function assessments before they were diagnosed with pancreatic cancer (Figure 3). For BMI, these were 20% and 14% less people than predicted received at least one assessment in the lockdown and recovery periods, respectively. For HbA1c, these were 10% and 8% reductions and for liver function these were 4% and 3% reductions, respectively (Table 2). Except for BMI, we did not observe reductions in numbers of people receiving these assessments after they were diagnosed with cancer.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85332/elife-85332-fig3-v1.jpg)\n\n**Figure 3.:** The observed and predicted (if the COVID-19 pandemic had not happened) monthly rates of (A) and (B) people with at least one body mass index (BMI) assessment before and after pancreatic cancer diagnosis, (C) and (D) people with at least one glycated haemoglobin (HbA1c) assessment before and after pancreatic cancer diagnosis, and (E) and (F) people with at least one liver function assessment before and after pancreatic cancer diagnosis. All rates are per 100 people diagnosed with pancreatic cancer. Generalised linear models were used to predict monthly rates with the 95% confidence intervals to estimate the effect of the pandemic.\n\n### Symptoms and treatments\n\nThe reporting of jaundice in primary care and abdominal imaging in secondary care were reduced for people diagnosed in the lockdown period. For every 100 people diagnosed in the lockdown period, 3 (28%) less people (7 vs 10 [95% CI: 9\u201311] predicted) reported jaundice before they were diagnosed (Table 2). For abdominal imagining the observed in the lockdown period average reduction of 5% (29 vs 30 [95% CI: 27\u201333] predicted) did not reach statistical significance because it was the most pronounced only in the first 6 months of the lockdown period (Figure 4B). The reductions in both services were transient. They recovered to the pre-pandemic levels by April 2021 (jaundice) and by August 2020 (abdominal imaging) (Figure 4A, B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85332/elife-85332-fig4-v1.jpg)\n\n**Figure 4.:** The observed and predicted (as if the COVID-19 pandemic had not happened) monthly rates of people (A) reporting jaundice before the diagnosis, (B) receiving abdominal imagining assessment before the diagnosis, (C) receiving pancreatic enzyme supplementation after the diagnosis, and (D) pancreatic resection within after the diagnosis. Generalised linear models were used to predict monthly rates with the 95% confidence intervals to estimate the effect of the pandemic.\n\nFigure 4C, D represents two pancreatic cancer treatments. The prescribing of pancreatic enzyme replacement in primary care was not affected by the pandemic. However, pancreatic cancer resection (surgery) was significantly affected in both periods of the pandemic. For every 100 people diagnosed, 6 people were recorded as having received the resection within 6 months after pancreatic cancer diagnosis. We estimated that this was two people less than the predicted 8 (95% CI: 6\u201310) in the lockdown period and 9 (95% CI: 7\u201311) in the recovery period and represented an over 25% reduction in the number of people who received surgical resection during the pandemic as compared to what would be expected based on the pracademic trends.\n\n### Emergency department visits, hospital admissions, and deaths\n\nIn the cohort of people diagnosed with pancreatic cancer, we found no effect of the COVID-19 pandemic on the number of emergency department visits and hospitalisations within 6 months before or 6 months after pancreatic cancer diagnosis, and the numbers of recorded deaths within 6 months after pancreatic cancer diagnosis (Figure 5). The rates did not differ from what would be expected if the pandemic had not occurred (Table 2). The decrease in rates of deaths towards the end of the study period, visible from the graph, is most likely due to delays in deaths being entered into the registry data (Office for National Statistics, 2021).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/85332/elife-85332-fig5-v1.jpg)\n\n**Figure 5.:** The observed and predicted (as if the COVID-19 pandemic had not happened) monthly rates of episodes per 1 participant diagnosed with pancreatic cancer, (A) emergency department visits within 6 months before the diagnosis, (B) emergency department visits within 6 months after, (C) hospital admissions within 6 months before, (D) hospital admissions within 6 months after, and (E) deaths within 6 months after per 100 people diagnosed with pancreatic cancer. Generalised linear models were used to predict monthly rates with the 95% confidence intervals to estimate the effect of the pandemic.\n\n## Discussion\n\n### Summary and findings in context\n\nWe found that many of the pancreatic cancer-related services were disrupted across the pathway of care. This is in line with previous reports about healthcare being negatively affected by the COVID-19 pandemic (Greenwood and Swanton, 2021; Patt et al., 2020; Richards et al., 2020; Morris et al., 2021; McKay et al., 2021; Glasbey et al., 2021; Nepogodiev et al., 2022; Sud et al., 2020; Earnshaw et al., 2020; Geh et al., 2022; Popovic et al., 2022). Healthcare assessments, such as BMI, HbA1c, and liver function, were delivered to fewer people than would be expected if the pandemic had not occurred. This could impair not only the early diagnosis of pancreatic cancer, but also diagnosis of other diseases such as diabetes (Lemanska et al., 2022). In addition, this could have implications for the quality of routine data for research (Lemanska et al., 2022; Garies et al., 2021; Staff et al., 2016).\n\nDisappointingly, we observed that by March 2023, 3 years into the pandemic, the pre-diagnosis testing of BMI and HbA1c did not recover to the pre-pandemic levels. However, reassuringly, for people who received pancreatic cancer diagnosis (post-diagnosis testing of BMI, HbA1c, and liver function), the primary care healthcare in this area was much more resilient. We observed that the effect of the pandemic on these tests for people already diagnosed was more transient, and after an initial drop in BMI and HbA1c at the start of the pandemic, the levels recovered by the end of the lockdown period (March 2021). More reassuringly also, the other services that after an initial decrease recovered by the end of the lockdown period, included consultations for jaundice in primary care and abdominal imaging in secondary care. It has been previously reported that many non-emergency diagnostic services, such as abdominal imaging, were suspended during the first peak of the pandemic, but they gradually reopened starting from July 2020 following publications of infection control guidelines (Rees et al., 2020).\n\nThe number of people recorded as diagnosed with pancreatic cancer was not affected. This is a positive finding but sets pancreatic cancer apart from the other major cancer sites such as breast (Patt et al., 2020; Richards et al., 2020), prostate (Patt et al., 2020; Vardhanabhuti and Ng, 2021), or colorectal (Patt et al., 2020; Richards et al., 2020; Morris et al., 2021; Vardhanabhuti and Ng, 2021; Mazidimoradi et al., 2023). This may be because pancreatic cancer does not rely on screening programs and diagnostic services in primary care which were severely affected during the pandemic. With the emergency presentations remaining the main route of diagnosis for pancreatic cancer (National Cancer Intelligence Network, 2013), it is possible that these were less affected. However, because staging information was not available, our study was not equipped to evaluate the full effect of the COVID-19 pandemic on pancreatic cancer diagnosis. In a relatively small study, Hall et al., 2023 demonstrated that nearly a quarter of people less in the pandemic than before the pandemic was recommended for surgery. This could be because they were diagnosed with a more advanced cancer. Therefore, to better understand the effect of the COVID-19 pandemic on pancreatic cancer diagnosis, more research is needed to assess the staging information.\n\nSimilarly, although we showed that the number of deaths within 6 months after pancreatic cancer diagnosis was not affected, the conclusions that could be made about the length of survival were limited. Madge et al., 2022 showed the length of survival reducing by more than a half from 7.4 months before the pandemic to 3.3 months during the pandemic. Hall et al., 2023 demonstrated no difference in survival and reported 3.5 months survival for people diagnosed between March 2020 and May 2020 versus 4.4 months for people diagnosed in January 2019 to March 2019. Therefore, more research is needed to assess the effect of the pandemic on the length of survival post-diagnosis. In addition, the ongoing and future effects of the COVID-19 pandemic on key outcomes of pancreatic cancer such as the stage at diagnosis and the length of survival are still to be elucidated.\n\nAdditionally, contrary to the evidence from other patient groups, in this cohort, we did not find an effect of the COVID-19 pandemic on diabetes diagnosis. While in the general population, there was a significant reduction in diabetes diagnosis and management services (Carr et al., 2021).\n\nMost people (over 90%) were in contact with primary care before and after pancreatic cancer diagnosis, and this was not affected by the pandemic. However, as compared to the pre-pandemic levels, we observed that the number of contacts in the pandemic increased on average by 1\u20132 contacts per person. This may reflect a true increase of contacts as primary care transitioned to remote consulting with an increased role of telephone triage (Greenhalgh and Rosen, 2021). However, this may also reflect increased recording of contacts in electronic health records as practices responded to the pandemic using different online systems with automated code recording activity (Fisher, 2022). Remote consulting offers an important advantage for improved efficiency and access not only during pandemics (Mold et al., 2021). However, it has been shown that for complex conditions, remote consulting can be a more time-consuming approach, increasing workload with subsequent follow-up appointments (Salisbury et al., 2020; Murphy et al., 2021).\n\n### Strengths and limitations\n\nThe OpenSAFELY-TPP dataset is a population-based and nationally representative dataset of an unprecedented size and completeness. It also offers access to primary care records linked with hospital and mortality data. Therefore, the OpenSAFELY-TPP dataset was the key strength of this study (Andrews et al., 2022). Also the cohort study design was a strength because we were able to focus specifically on people affected by pancreatic cancer, rather than investigate the already well known effect of COVID-19 on general practice (The Health Foundation, 2022). The interrupted time series approach and modelling COVID-19 rates has an advantage over simply comparing COVID-19 rates to pre-COVID rates. This is because we could account for long-term trends and seasonal variation in healthcare data. We used data dating back to 2015 to model the trends which made the prediction of expected rates more accurate. This provided a less-biased estimate of the effect of the pandemic. The near real-time data available via OpenSAFELY enabled us to investigate the most recent trends and recovery from the pandemic. In addition, the automated audit of healthcare services that we have developed within the OpenSAFELY, can enable regular updates. All analytics software and code lists are shared openly and are available for inspection and reuse, providing opportunity for reproduction of this report and reducing duplicative efforts.\n\nWe also note some limitations. Lists of clinical codes used to extract data may not be exhaustive and may miss episodes of care. This could create a source of bias. To minimise this bias, we have ensured that in an iterative process of curation and checking for completeness, at least two researchers with clinical expertise took part in collating code lists. To ensure the right concepts were captured, we consulted with clinicians who have the specific expertise in the field. We applied the principles of open, transparent, and reproducible research and all our code lists are available for scrutiny and reuse via our public GitHub repository (https://github.com/opensafely/Pancreatic_cancer; Lemanska, 2023). Pancreatic cancer case ascertainment was via coding in primary care, rather than via linkage with cancer registry (the gold standard data source for cancer diagnoses). It is possible that with this approach some pancreatic cancer cases could have been missed or miscoded. However, in the UK, the information about cancer diagnosis is sent to primary care within the hospital discharge letters and therefore primary care is a valid source of these data (Margulis et al., 2018). The incidence rates in this study aligned with the published rates validating good ascertainment of cases.\n\n### Policy implications and future research\n\nConsidering the worsening healthcare crisis, it is important to continue monitoring services to ensure the quality of healthcare and recovery from the pandemic. As we innovate and adapt healthcare, with infection control measures, digital health approaches and increasing remote consulting, it is important to evaluate the impact of these on cancer-related healthcare. In addition, more research is needed to investigate how these changes affected different groups of patients. There is evidence that the COVID-19 pandemic exacerbated healthcare inequalities (Popovic et al., 2022) and future work should include stratified analysis investigating different socio-demographic groups.\n\n### Conclusions\n\nThe COVID-19 pandemic was an unprecedented global event, adding pressures to already overburdened healthcare systems, further exacerbating healthcare crises. Positive lessons could be learnt from the resilient healthcare services which continued to deliver healthcare undisrupted, or those initially affected, where active measures to recover the capacity and volume of care were implemented quickly and safely. On the other hand, the reductions in healthcare experienced by people with non-COVID-19 illnesses such as pancreatic cancer, bolster the argument that efforts should focus on addressing the unmet needs of people with cancer.\n\n### Information governance and ethical approval\n\nNHS England is the data controller for OpenSAFELY-TPP; TPP is the data processor; all study authors using OpenSAFELY have the approval of NHS England. This implementation of OpenSAFELY is hosted within the TPP environment which is accredited to the ISO 27001 information security standard and is NHS IG Toolkit compliant (NHS Digital, 2020b).\n\nPatient data have been pseudonymised for analysis and linkage using industry standard cryptographic hashing techniques; all pseudonymised datasets transmitted for linkage onto OpenSAFELY are encrypted; access to the platform is via a virtual private network (VPN) connection, restricted to a small group of researchers; the researchers hold contracts with NHS England and only access the platform to initiate database queries and statistical models; all database activity is logged; only aggregate statistical outputs leave the platform environment following best practice for anonymisation of results such as statistical disclosure control for low cell counts (NHS Digital, 2020a).\n\nThe OpenSAFELY research platform adheres to the obligations of the UK General Data Protection Regulation (GDPR) and the Data Protection Act 2018. In March 2020, the Secretary of State for Health and Social Care used powers under the UK Health Service (Control of Patient Information) Regulations 2002 (COPI) to require organisations to process confidential patient information for the purposes of protecting public health, providing healthcare services to the public and monitoring and managing the COVID-19 outbreak and incidents of exposure; this sets aside the requirement for patient consent (GOV.UK, 2020). This was extended in November 2022 for the NHS England OpenSAFELY COVID-19 research platform (GOV.UK, 2022). In some cases of data sharing, the common law duty of confidence is met using, for example, patient consent or support from the Health Research Authority (Confidentiality Advisory Group, 2013).\n\nTaken together, these provide the legal bases to link patient datasets on the OpenSAFELY platform. GP practices, from which the primary care data are obtained, are required to share relevant health information to support the public health response to the pandemic, and have been informed of the OpenSAFELY analytics platform.\n\nThe study was approved by the Health Research Authority (Research Ethics Committee reference 20/LO/0651) and the London School of Hygiene and Tropical Medicine (London, UK) Ethics Board (reference 21863).\n\n### Data access and verification\n\nAccess to the underlying identifiable and potentially re-identifiable pseudonymised electronic health record data is tightly governed by various legislative and regulatory frameworks and restricted by best practice. The data in OpenSAFELY are drawn from General Practice data across England where TPP is the data processor. TPP developers initiate an automated process to create pseudonymised records in the core OpenSAFELY database, which are copies of key structured data tables in the identifiable records. These pseudonymised records are linked onto key external data resources that have also been pseudonymised via SHA-512 one-way hashing of NHS numbers using a shared salt. Bennett Institute for Applied Data Science developers and PIs holding contracts with NHS England have access to the OpenSAFELY pseudonymised data tables as needed to develop the OpenSAFELY tools. These tools in turn enable researchers with OpenSAFELY data access agreements to write and execute code for data management and data analysis without direct access to the underlying raw pseudonymised patient data, and to review the outputs of this code. All code for the full data management pipeline\u2014from raw data to completed results for this analysis is available at from https://github.com/opensafely/Pancreatic_cancer (Lemanska, 2023). The data management and analysis code for this paper were led by AL and contributed to by CA.\n",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "ced1cdbe-10f1-477d-b01c-e6f78b1ebf46",
+      "submission_id": "00300b7b-4b8b-4d3d-b1e3-11a732c7fa7f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Eduardo L Franco, https://ror.org/01pxwe438 McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85332.sa0](https://doi.org/10.7554/eLife.85332.sa0)\n\nThis study provides useful information on the impact of the pandemic on the quantity of healthcare delivered to patients with pancreatic cancer in England. The authors showed that there was no difference in the number of diagnoses of pancreatic cancer during the pandemic compared to the preceding 5-year period, but a reduction in surgical resections by nearly 25%. They reported no difference in deaths between the two periods. They show no differences in rates of diagnosis, but the clinical relevance is incomplete as they have not compared survival from cancer between those time periods.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Eduardo L Franco, https://ror.org/01pxwe438 McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85332.sa1](https://doi.org/10.7554/eLife.85332.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Healthcare in England was affected by the COVID-19 pandemic across the pancreatic cancer pathway: a cohort study using OpenSAFELY-TPP\" for consideration by eLife. Your article has been reviewed by one peer reviewer, and I oversaw the evaluation in my dual role of Reviewing Editor and Senior Editor. The reviewer has opted to remain anonymous.\n\nWhat follows below is an edited compilation of the essential and ancillary points provided by the reviewer. Please submit a revised version that addresses these concerns directly. Although we expect that you will address these comments in your response letter, we also need to see the corresponding revision clearly marked in the text of the manuscript. Some of the reviewer's comments may seem to be simple queries or challenges that do not prompt revisions to the text. Please keep in mind, however, that readers may have the same perspective as the reviewer. Therefore, it is essential that you amend or expand the text to clarify the narrative accordingly.\n\nReviewer #1 (Recommendations for the authors):\n\n1. Why was the TPP dataset used, and how have the authors ensured that this does not introduce a degree of systematic bias given only 40% of the population in England are covered by this dataset?\n\n2. What quality control was employed to ensure that the coding within the TPP dataset accurately reflected the exact diagnosis and stage of disease? This is listed as a limitation \u2013 could the authors specify how much of a limitation this was, and whether any attempt was made to assess the accuracy of coding, given this is a key element of the study?\n\n3. One very important limitation of the study is that the true effects of the pandemic on pancreatic cancer outcomes cannot be assessed with the methodology of this study. Did the authors attempt to assess stage of pancreatic cancer at the time of diagnosis in those two time periods, or specifics of treatment? Was the reason for lack of surgical intervention in the 25% of patients given \u2013 if this was related to delayed diagnosis causing inoperability, this would be a significant finding and would render the conclusion that pancreatic cancer diagnosis was not affected somewhat irrelevant in the wider clinical context, if patients were ultimately less likely to survive the disease if diagnosed during the pandemic.\n\n4. Related to the above, the authors should reference other studies on outcomes from pancreatic cancer during the pandemic and reflect on their findings in this context.\n",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "239b650c-356c-4d08-9163-c0f80b1618e3",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C1",
+      "claim": "The OpenSAFELY-TPP dataset comprises 24 million patients, covering over 40% of England's population.",
+      "claim_type": "EXPLICIT",
+      "source": "With the approval of NHS England, and drawing from a nationally representative OpenSAFELY-TPP dataset of 24 million patients (over 40% of the English population), we undertook a cohort study of people diagnosed with pancreatic cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the dataset size and population coverage in the Methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "6650ef40-55c3-46be-b243-3dfe4598a64e",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C2",
+      "claim": "There were 26,840 people diagnosed with pancreatic cancer from January 2015 to March 2023.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 26,840 people diagnosed with pancreatic cancer from January 2015 to March 2023.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct count from the study data presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "2dc3da50-a3ce-4867-a4e8-8f2175fc6b4f",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C3",
+      "claim": "The mean age at pancreatic cancer diagnosis was 72 years (\u00b111 SD).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean age at diagnosis was 72 (\u00b111 SD), 48% of people were female, 95% were of White ethnicity, and 40% were diagnosed with diabetes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic calculated from the study cohort data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "ce54902e-5dad-4838-889a-d6c74b0d53d8",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C4",
+      "claim": "48% of people diagnosed with pancreatic cancer were female.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean age at diagnosis was 72 (\u00b111 SD), 48% of people were female, 95% were of White ethnicity, and 40% were diagnosed with diabetes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a demographic characteristic directly reported from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "a03befc1-4fa9-45a1-a11c-8d0a868d0c57",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C5",
+      "claim": "95% of people diagnosed with pancreatic cancer were of White ethnicity.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean age at diagnosis was 72 (\u00b111 SD), 48% of people were female, 95% were of White ethnicity, and 40% were diagnosed with diabetes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an ethnicity distribution statistic from the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "e0f34b16-e7d6-44db-ac71-091fb26c40d0",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C6",
+      "claim": "40% of people diagnosed with pancreatic cancer were diagnosed with diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean age at diagnosis was 72 (\u00b111 SD), 48% of people were female, 95% were of White ethnicity, and 40% were diagnosed with diabetes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comorbidity statistic directly reported from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "49b32683-29a4-47ba-a9eb-bd990a25e2f2",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C7",
+      "claim": "There was a reduction in surgical resections by 25\u201328% during the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a reduction in surgical resections by 25\u201328% during the pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the statistical analysis comparing observed to predicted rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "74f4bbb1-4e11-4a2f-93f3-a96a6c1ed9c8",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C8",
+      "claim": "20% fewer people received body mass index tests before they were diagnosed with pancreatic cancer during the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, 20%, 10%, and 4% fewer people received body mass index, glycated haemoglobin, and liver function tests, respectively, before they were diagnosed with pancreatic cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantified reduction in healthcare service delivery from the study analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "f0278d6d-51ab-46d3-8c23-45b6e4b983a6",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C9",
+      "claim": "10% fewer people received glycated haemoglobin tests before they were diagnosed with pancreatic cancer during the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, 20%, 10%, and 4% fewer people received body mass index, glycated haemoglobin, and liver function tests, respectively, before they were diagnosed with pancreatic cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantified reduction in healthcare service delivery from the study analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "c38d46c7-ce2f-4fc4-a5e6-c3df542a4e0d",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C10",
+      "claim": "4% fewer people received liver function tests before they were diagnosed with pancreatic cancer during the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, 20%, 10%, and 4% fewer people received body mass index, glycated haemoglobin, and liver function tests, respectively, before they were diagnosed with pancreatic cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantified reduction in healthcare service delivery from the study analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "04557945-9441-4aa7-8ca9-d15fb27cc1d9",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C11",
+      "claim": "The number of contacts with primary care increased on average by 1\u20132 per person amongst those who made contact during the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no impact of the pandemic on the number of people making contact with primary care, but the number of contacts increased on average by 1\u20132 per person amongst those who made contact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of primary care contact frequency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "704255a1-0b80-4be9-9d46-2f9faa18e57f",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C12",
+      "claim": "Reporting of jaundice decreased by 28% during the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporting of jaundice decreased by 28%, but recovered within 12 months into the pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantified reduction in symptom reporting from the study analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "84cf9a26-1fb3-4b32-aebc-d5039c304890",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C13",
+      "claim": "Reporting of jaundice recovered within 12 months into the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporting of jaundice decreased by 28%, but recovered within 12 months into the pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a temporal finding about recovery of healthcare services from the study analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "86b649bb-3cf8-4c63-b15c-0801895d287f",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C14",
+      "claim": "Emergency department visits were not affected by the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Emergency department visits, hospital admissions, and deaths were not affected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding of no significant change from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "d5736693-1733-46a7-aa6e-a6be446d70a9",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C15",
+      "claim": "Hospital admissions were not affected by the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Emergency department visits, hospital admissions, and deaths were not affected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding of no significant change from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "e98e2e6b-4e93-4ba5-a773-e9f30bbef7b9",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C16",
+      "claim": "Deaths were not affected by the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Emergency department visits, hospital admissions, and deaths were not affected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding of no significant change from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "a9abc99f-53b2-4f0c-aac1-b323f513491c",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C17",
+      "claim": "The rate of pancreatic cancer diagnosis was not affected by the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe an effect of the COVID-19 pandemic on the number of people recorded as diagnosed with pancreatic cancer (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by Figure 1A showing observed vs predicted rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "9e58c588-479a-4166-80e9-e02860b4382e",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C18",
+      "claim": "The rate of diabetes diagnosis in the pancreatic cancer cohort was not affected by the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "We also did not observe an effect on diabetes diagnosis in this cohort (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by Figure 1B showing observed vs predicted rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "0a69ddb8-6000-43fe-bc27-bec93274a93b",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C19",
+      "claim": "Cancer services were already overstretched before the COVID-19 pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Cancer services were already overstretched before the COVID-19 pandemic (NHS, 2019; NHS 75 England, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to NHS reports from 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "2d9a8b15-610b-4599-ad2d-6c5fcf7a5670",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C20",
+      "claim": "The pandemic exacerbated the cancer-related healthcare crisis.",
+      "claim_type": "EXPLICIT",
+      "source": "With the widespread effect on healthcare, the pandemic further exacerbated the cancer-related healthcare crisis (Greenwood and Swanton, 2021; Patt et al., 2020; Richards et al., 2020; Morris et al., 2021; McKay et al., 2021; Glasbey et al., 2021; Nepogodiev et al., 2022; Diamand et al., 2021; Sud et al., 2020; Earnshaw et al., 2020; Geh et al., 2022; Popovic et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "e10b43eb-b00e-41d5-8f4a-d57b0c314c91",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C21",
+      "claim": "Resources and attention in healthcare systems globally shifted towards preventing and managing COVID-19 during the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "During the pandemic, the resources, and the attention in healthcare systems globally, shifted towards preventing and managing COVID-19 (Mercier et al., 2020; Williams et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "4b6caa49-1338-46e5-9a71-a9ae6dcdcc29",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C22",
+      "claim": "Access to non-COVID-19-related healthcare changed during the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Access to the non-COVID-19-related healthcare changed (N\u00fa\u00f1ez et al., 2021; Smoli\u0107 et al., 2022; Vardhanabhuti and Ng, 2021), waiting times increased (Mazidimoradi et al., 2023; Cooke et al., 2022), and cancer pathways including treatment standards were adapted (Greenwood and Swanton, 2021; Patt et al., 2020; Richards et al., 2020; Morris et al., 2021; McKay et al., 2021; Glasbey et al., 2021; Nepogodiev et al., 2022; Diamand et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "8b90aef2-3617-4b36-bd0c-95860dd8e17b",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C23",
+      "claim": "Waiting times for healthcare increased during the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Access to the non-COVID-19-related healthcare changed (N\u00fa\u00f1ez et al., 2021; Smoli\u0107 et al., 2022; Vardhanabhuti and Ng, 2021), waiting times increased (Mazidimoradi et al., 2023; Cooke et al., 2022), and cancer pathways including treatment standards were adapted (Greenwood and Swanton, 2021; Patt et al., 2020; Richards et al., 2020; Morris et al., 2021; McKay et al., 2021; Glasbey et al., 2021; Nepogodiev et al., 2022; Diamand et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "5af51b1a-b433-446a-b531-0631c5ffe945",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C24",
+      "claim": "Cancer pathways including treatment standards were adapted during the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Access to the non-COVID-19-related healthcare changed (N\u00fa\u00f1ez et al., 2021; Smoli\u0107 et al., 2022; Vardhanabhuti and Ng, 2021), waiting times increased (Mazidimoradi et al., 2023; Cooke et al., 2022), and cancer pathways including treatment standards were adapted (Greenwood and Swanton, 2021; Patt et al., 2020; Richards et al., 2020; Morris et al., 2021; McKay et al., 2021; Glasbey et al., 2021; Nepogodiev et al., 2022; Diamand et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "077cfdb2-8355-408c-b6ed-7433c695b70d",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C25",
+      "claim": "Patients' healthcare-seeking behaviour changed as people adopted social distancing and shielding during the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, patients' healthcare-seeking behaviour changed as people adopted social distancing (limiting face-to-face contact) and shielding to protect themselves and healthcare systems from unprecedented pressures of the pandemic (Robb et al., 2020; Smith et al., 2022; Hughes et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "e76de26a-681d-4022-89db-864af232a23c",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C26",
+      "claim": "People were cautious and were actively taking measures to preserve healthcare and limit the spread of COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "People were cautious and were actively taking measures to preserve healthcare and limit the spread of COVID-19 (Quinn-Scoggins et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "eda12788-d60b-4e58-949b-c03d9840d893",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C27",
+      "claim": "People affected by cancer were particularly vulnerable to the changes brought by the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "People affected by cancer were particularly vulnerable to the changes brought by the pandemic (Support, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "f018a3f9-aa7a-4385-b903-fc6bb099875e",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C28",
+      "claim": "Pancreatic cancer diagnosis is challenging due to non-specific symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "In pancreatic cancer, the challenging diagnosis (due to non-specific symptoms) and rapid progression require an efficient system (Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "9599d9f2-9454-4bfe-92fe-8d72ab9994ba",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C29",
+      "claim": "Pancreatic cancer has rapid progression requiring an efficient healthcare system.",
+      "claim_type": "EXPLICIT",
+      "source": "In pancreatic cancer, the challenging diagnosis (due to non-specific symptoms) and rapid progression require an efficient system (Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature and represents established medical knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "b86120ca-e2a6-4f81-a635-951a599d419b",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C30",
+      "claim": "Weight loss, hyperglycaemia, diabetes, and bile duct obstruction often occur as complications of pancreatic cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Weight loss, hyperglycaemia, diabetes, and bile duct obstruction often occur as complications of pancreatic cancer (Mueller et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature and represents established medical knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "372a28db-94d5-41a1-bcab-0de45d2e84d2",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C31",
+      "claim": "Timely assessments of body mass index, glycated haemoglobin, and liver function can support early diagnosis of pancreatic cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, timely assessments of body mass index (BMI), glycated haemoglobin (HbA1c), and liver function can support early diagnosis (Lemanska et al., 2022) and monitoring of the progression (Sharma et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "e45f3019-1d98-41bd-9cf6-d10e6e8fdfb5",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C32",
+      "claim": "Timely assessments of body mass index, glycated haemoglobin, and liver function can support monitoring of pancreatic cancer progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, timely assessments of body mass index (BMI), glycated haemoglobin (HbA1c), and liver function can support early diagnosis (Lemanska et al., 2022) and monitoring of the progression (Sharma et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "c9ecf35d-741d-447e-8c22-ac9993f08565",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C33",
+      "claim": "The negative effect of the COVID-19 pandemic resulted in delays and missed opportunities throughout the cancer pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the negative effect of the COVID-19 pandemic resulted in delays and missed opportunities throughout the cancer pathway, which in turn affected patient outcomes including survival (Morris et al., 2021; McKay et al., 2021; Glasbey et al., 2021; Nepogodiev et al., 2022; Sud et al., 2020; Earnshaw et al., 2020; Geh et al., 2022; Mazidimoradi et al., 2023; appg, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "79763f1d-05bb-4154-a7e0-5451dcec85db",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C34",
+      "claim": "Delays and missed opportunities in cancer care during the pandemic affected patient outcomes including survival.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the negative effect of the COVID-19 pandemic resulted in delays and missed opportunities throughout the cancer pathway, which in turn affected patient outcomes including survival (Morris et al., 2021; McKay et al., 2021; Glasbey et al., 2021; Nepogodiev et al., 2022; Sud et al., 2020; Earnshaw et al., 2020; Geh et al., 2022; Mazidimoradi et al., 2023; appg, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "2a907ad6-78a7-4c6c-9582-ad35aa644cb0",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C35",
+      "claim": "The OpenSAFELY-TPP dataset is nationally representative.",
+      "claim_type": "EXPLICIT",
+      "source": "This dataset was used for this project because of its unprecedented size, because it is nationally representative (Andrews et al., 2022), and because it enables access to primary care records linked to hospital records and mortality data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a validation study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "5515398a-7bec-45ad-a9e7-090e63204b13",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C36",
+      "claim": "The first national lockdown in England commenced on 26 March 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "In the UK, the pandemic-related restrictions started in March 2020 with the first national lockdown in England commencing on 26 March 2020, and the two consecutive lockdowns starting 5 November 2020 and 6 January 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of historical fact about UK pandemic policy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "c57bf450-cba6-460a-aec6-48fc4af25ea0",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C37",
+      "claim": "The second lockdown in England started on 5 November 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "In the UK, the pandemic-related restrictions started in March 2020 with the first national lockdown in England commencing on 26 March 2020, and the two consecutive lockdowns starting 5 November 2020 and 6 January 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of historical fact about UK pandemic policy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "c89343f8-a1d7-4eee-9653-0d012bf6000a",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C38",
+      "claim": "The third lockdown in England started on 6 January 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "In the UK, the pandemic-related restrictions started in March 2020 with the first national lockdown in England commencing on 26 March 2020, and the two consecutive lockdowns starting 5 November 2020 and 6 January 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of historical fact about UK pandemic policy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "cf105b03-3bb9-4189-becf-327d684e95b6",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C39",
+      "claim": "From 8 March 2021, governments in the UK began a phased exit from the third and final lockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "From 8 March 2021, governments in the UK began a phased exit from the third and final lockdown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of historical fact about UK pandemic policy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "df91aad0-f3b0-4a0f-83bd-3151bc26b964",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C40",
+      "claim": "On average, there were 267 (\u00b124 SD) pancreatic cancer diagnoses each month during the study period.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, there were 267 (\u00b124 SD) pancreatic cancer diagnosis each month.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic calculated from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "1966efa6-2c41-4d60-9893-ff1fea692c6b",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C41",
+      "claim": "12,965 (48%) participants with pancreatic cancer were females.",
+      "claim_type": "EXPLICIT",
+      "source": "12,965 (48%) participants were females and 13,875 (52%) were males.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a demographic statistic from the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "a48a41b8-b0c7-4fe9-a3bb-8b059f09510e",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C42",
+      "claim": "13,875 (52%) participants with pancreatic cancer were males.",
+      "claim_type": "EXPLICIT",
+      "source": "12,965 (48%) participants were females and 13,875 (52%) were males.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a demographic statistic from the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "eae525bf-65a8-42f1-915c-fe15015449de",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C43",
+      "claim": "18,760 participants with pancreatic cancer were of White ethnicity (95% for which ethnicity data were recorded).",
+      "claim_type": "EXPLICIT",
+      "source": "18,760 participants were of White ethnicity (95% for which ethnicity data were recorded).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an ethnicity statistic from the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "8a325720-e3ed-43f0-83a9-8b7e46b25a43",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C44",
+      "claim": "Ethnicity data were missing for 7040 (26%) participants with pancreatic cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Ethnicity data were missing for 7040 (26%) participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a data completeness statistic from the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "5fdc6a37-de7f-4d6e-bea8-cb382e946c6a",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C45",
+      "claim": "10,785 (40%) of people with pancreatic cancer received diagnosis of diabetes at some point before or after their cancer diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "10,785 (40%) of people with pancreatic cancer received diagnosis of diabetes at some point before or after their cancer diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comorbidity statistic from the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "4d74ceec-5065-4436-aca8-c737a679827a",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C46",
+      "claim": "For every 100,000 registered people, there was 1 pancreatic cancer diagnosis a month in the lockdown period.",
+      "claim_type": "EXPLICIT",
+      "source": "For every 100,000 registered people, there was 1 pancreatic cancer diagnosis a month in the lockdown and in the recovery period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a rate calculated from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "e8d34d24-f144-443e-8143-e947f8b3a84f",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C47",
+      "claim": "For every 100,000 registered people, there was 1 pancreatic cancer diagnosis a month in the recovery period.",
+      "claim_type": "EXPLICIT",
+      "source": "For every 100,000 registered people, there was 1 pancreatic cancer diagnosis a month in the lockdown and in the recovery period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a rate calculated from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "12bc0acf-5210-4aa1-a6e7-760307bc178f",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C48",
+      "claim": "In both periods of the pandemic, 41% of people with pancreatic cancer received diabetes diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In both periods of the pandemic, 41% of people received diabetes diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a rate calculated from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "10f87369-8897-4aad-a67d-22fa5d03b65f",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C49",
+      "claim": "People diagnosed with pancreatic cancer in the lockdown period had on average 1 contact more than predicted within 6 months before the diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "People diagnosed in the lockdown period had on average 1 contact more than predicted (12 vs 11 [95% CI: 10\u201312]) within 6 months before the diagnosis and 2 contacts more than predicted (13 vs 11 [95% CI: 10\u201311]) within 6 months after they were diagnosed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical analysis comparing observed to predicted values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "d497e24a-bdfc-42ad-a59f-1e44442b8150",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C50",
+      "claim": "People diagnosed with pancreatic cancer in the lockdown period had on average 2 contacts more than predicted within 6 months after the diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "People diagnosed in the lockdown period had on average 1 contact more than predicted (12 vs 11 [95% CI: 10\u201312]) within 6 months before the diagnosis and 2 contacts more than predicted (13 vs 11 [95% CI: 10\u201311]) within 6 months after they were diagnosed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical analysis comparing observed to predicted values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "b45c408f-c770-4d22-8390-15f9f1123594",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C51",
+      "claim": "For BMI assessments, 20% and 14% less people than predicted received at least one assessment in the lockdown and recovery periods, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For BMI, these were 20% and 14% less people than predicted received at least one assessment in the lockdown and recovery periods, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical analysis comparing observed to predicted values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "9dafc752-22dc-415e-ba7f-30495c0f5af4",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C52",
+      "claim": "For HbA1c assessments, 10% and 8% reductions were observed in the lockdown and recovery periods, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For HbA1c, these were 10% and 8% reductions and for liver function these were 4% and 3% reductions, respectively (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical analysis comparing observed to predicted values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "50b5e9d9-cb5e-4598-a19f-54e8a7a684e3",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C53",
+      "claim": "For liver function assessments, 4% and 3% reductions were observed in the lockdown and recovery periods, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For HbA1c, these were 10% and 8% reductions and for liver function these were 4% and 3% reductions, respectively (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical analysis comparing observed to predicted values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "6d0b3bf6-387e-4b30-8052-f45f47135c53",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C54",
+      "claim": "For every 100 people diagnosed in the lockdown period, 3 (28%) less people reported jaundice before they were diagnosed.",
+      "claim_type": "EXPLICIT",
+      "source": "For every 100 people diagnosed in the lockdown period, 3 (28%) less people (7 vs 10 [95% CI: 9\u201311] predicted) reported jaundice before they were diagnosed (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical analysis comparing observed to predicted values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "ed643465-2179-48be-b0cc-033bdc41cd8f",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C55",
+      "claim": "The reduction in jaundice reporting recovered to pre-pandemic levels by April 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "They recovered to the pre-pandemic levels by April 2021 (jaundice) and by August 2020 (abdominal imaging) (Figure 4A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a temporal finding from the data analysis supported by Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "e87c5363-a958-40b7-aca0-bcc086d04762",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C56",
+      "claim": "The reduction in abdominal imaging recovered to pre-pandemic levels by August 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "They recovered to the pre-pandemic levels by April 2021 (jaundice) and by August 2020 (abdominal imaging) (Figure 4A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a temporal finding from the data analysis supported by Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "95d38a1a-99f0-456e-86ff-13aacfa1fbfb",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C57",
+      "claim": "The prescribing of pancreatic enzyme replacement in primary care was not affected by the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "The prescribing of pancreatic enzyme replacement in primary care was not affected by the pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding of no significant change from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "a57d57bc-2d39-4160-86c5-69183cdec8bb",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C58",
+      "claim": "For every 100 people diagnosed with pancreatic cancer, 6 people were recorded as having received resection within 6 months after diagnosis during the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "For every 100 people diagnosed, 6 people were recorded as having received the resection within 6 months after pancreatic cancer diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a rate calculated from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "befc05a0-5fe0-4c20-9baf-a09229911b7d",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C59",
+      "claim": "The reduction in pancreatic cancer resections represented an over 25% reduction compared to what would be expected based on pre-pandemic trends.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated that this was two people less than the predicted 8 (95% CI: 6\u201310) in the lockdown period and 9 (95% CI: 7\u201311) in the recovery period and represented an over 25% reduction in the number of people who received surgical resection during the pandemic as compared to what would be expected based on the pracademic trends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical analysis comparing observed to predicted values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "0e503f29-51a6-4a06-ac85-cb22ccf3b987",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C60",
+      "claim": "Many non-emergency diagnostic services, such as abdominal imaging, were suspended during the first peak of the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously reported that many non-emergency diagnostic services, such as abdominal imaging, were suspended during the first peak of the pandemic, but they gradually reopened starting from July 2020 following publications of infection control guidelines (Rees et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "42457acb-1c0f-4664-bf13-30de1bba9e2f",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C61",
+      "claim": "Non-emergency diagnostic services gradually reopened starting from July 2020 following publications of infection control guidelines.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously reported that many non-emergency diagnostic services, such as abdominal imaging, were suspended during the first peak of the pandemic, but they gradually reopened starting from July 2020 following publications of infection control guidelines (Rees et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "bc3459fc-b72c-4e71-88fa-a6d1031a750d",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C62",
+      "claim": "Emergency presentations remain the main route of diagnosis for pancreatic cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "With the emergency presentations remaining the main route of diagnosis for pancreatic cancer (National Cancer Intelligence Network, 2013), it is possible that these were less affected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a published report and represents established knowledge about pancreatic cancer diagnosis pathways.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "b9369ca0-54d8-4b9c-9734-8a8a124de162",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C63",
+      "claim": "Hall et al., 2023 demonstrated that nearly a quarter fewer people in the pandemic than before the pandemic were recommended for surgery.",
+      "claim_type": "EXPLICIT",
+      "source": "In a relatively small study, Hall et al., 2023 demonstrated that nearly a quarter of people less in the pandemic than before the pandemic was recommended for surgery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "55f505c0-f9bd-4e3f-9652-f232d8027d4d",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C64",
+      "claim": "Madge et al., 2022 showed the length of survival reducing by more than a half from 7.4 months before the pandemic to 3.3 months during the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Madge et al., 2022 showed the length of survival reducing by more than a half from 7.4 months before the pandemic to 3.3 months during the pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "93aca90c-fd19-4e42-a124-c333988e3494",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C65",
+      "claim": "Hall et al., 2023 demonstrated no difference in survival and reported 3.5 months survival for people diagnosed between March 2020 and May 2020 versus 4.4 months for people diagnosed in January 2019 to March 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "Hall et al., 2023 demonstrated no difference in survival and reported 3.5 months survival for people diagnosed between March 2020 and May 2020 versus 4.4 months for people diagnosed in January 2019 to March 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "96e017f6-ed72-4260-8931-e56b5001a1df",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C66",
+      "claim": "In the general population, there was a significant reduction in diabetes diagnosis and management services during the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "While in the general population, there was a significant reduction in diabetes diagnosis and management services (Carr et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "7c0a9063-2a1d-40b8-bbd1-14fba5757ed1",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C67",
+      "claim": "Over 90% of people with pancreatic cancer were in contact with primary care before and after pancreatic cancer diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Most people (over 90%) were in contact with primary care before and after pancreatic cancer diagnosis, and this was not affected by the pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "b6fc5ff4-5985-4670-8521-c8ca0c04897f",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C68",
+      "claim": "Primary care transitioned to remote consulting with an increased role of telephone triage during the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "This may reflect a true increase of contacts as primary care transitioned to remote consulting with an increased role of telephone triage (Greenhalgh and Rosen, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature and provides context for interpreting the study findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "df37d967-6af0-49de-b9bf-37f417801464",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C69",
+      "claim": "For complex conditions, remote consulting can be a more time-consuming approach, increasing workload with subsequent follow-up appointments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has been shown that for complex conditions, remote consulting can be a more time-consuming approach, increasing workload with subsequent follow-up appointments (Salisbury et al., 2020; Murphy et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "946cf8dc-1bd8-437c-a4e0-b0d41bebe521",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C70",
+      "claim": "The OpenSAFELY-TPP dataset offers access to primary care records linked with hospital and mortality data.",
+      "claim_type": "EXPLICIT",
+      "source": "It also offers access to primary care records linked with hospital and mortality data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the dataset capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "4a1910ad-6920-409b-95ab-ccf1aa32e4af",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C71",
+      "claim": "The interrupted time series approach has an advantage over simply comparing COVID-19 rates to pre-COVID rates because it can account for long-term trends and seasonal variation in healthcare data.",
+      "claim_type": "EXPLICIT",
+      "source": "The interrupted time series approach and modelling COVID-19 rates has an advantage over simply comparing COVID-19 rates to pre-COVID rates. This is because we could account for long-term trends and seasonal variation in healthcare data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological justification based on statistical principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "99af1b0f-c89f-4a00-a42c-cf57714d9281",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C72",
+      "claim": "The near real-time data available via OpenSAFELY enabled investigation of the most recent trends and recovery from the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "The near real-time data available via OpenSAFELY enabled us to investigate the most recent trends and recovery from the pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a methodological strength of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "0836f35c-9b42-4339-8923-b912381c62c2",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C73",
+      "claim": "Pancreatic cancer case ascertainment was via coding in primary care, rather than via linkage with cancer registry.",
+      "claim_type": "EXPLICIT",
+      "source": "Pancreatic cancer case ascertainment was via coding in primary care, rather than via linkage with cancer registry (the gold standard data source for cancer diagnoses).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study methodology and its limitations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "3e836aa9-9ba5-4df6-95bf-8f244dd5e604",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C74",
+      "claim": "In the UK, the information about cancer diagnosis is sent to primary care within the hospital discharge letters and therefore primary care is a valid source of these data.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the UK, the information about cancer diagnosis is sent to primary care within the hospital discharge letters and therefore primary care is a valid source of these data (Margulis et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation and represents knowledge about UK healthcare data flows.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "ed00494f-16bf-4933-aeb2-19702c70942f",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C75",
+      "claim": "The incidence rates in this study aligned with the published rates validating good ascertainment of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "The incidence rates in this study aligned with the published rates validating good ascertainment of cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation statement comparing study findings to external benchmarks.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "1f9fe6f7-1276-4eae-9039-9b37515d84aa",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C76",
+      "claim": "There is evidence that the COVID-19 pandemic exacerbated healthcare inequalities.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence that the COVID-19 pandemic exacerbated healthcare inequalities (Popovic et al., 2022) and future work should include stratified analysis investigating different socio-demographic groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "d044d55c-8f92-43c8-a92f-3c2901065e03",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C77",
+      "claim": "The reductions in healthcare experienced by people with cancer have the potential to lead to worse outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The reductions in healthcare experienced by people with cancer have the potential to lead to worse outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the study findings and general medical knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "4fc9c09c-10bc-4fbc-8320-8887c35b79af",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C78",
+      "claim": "Current efforts should focus on addressing the unmet needs of people with cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Current efforts should focus on addressing the unmet needs of people with cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the study findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "00c3ba76-ff00-4447-85a8-76d3d45576b5",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C79",
+      "claim": "Positive lessons could be learnt from the services that were resilient and those that recovered quickly.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive lessons could be learnt from the services that were resilient and those that recovered quickly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the study findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "ec745f29-72d9-42ff-a43b-7a183c3d9c23",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C80",
+      "claim": "The pandemic affected healthcare in England across the pancreatic cancer pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The pandemic affected healthcare in England across the pancreatic cancer pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "9343ae2a-5c85-4d29-b1ba-2ffa16f42654",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C81",
+      "claim": "BMI and HbA1c testing did not recover to pre-pandemic levels by March 2023, 3 years into the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Disappointingly, we observed that by March 2023, 3 years into the pandemic, the pre-diagnosis testing of BMI and HbA1c did not recover to the pre-pandemic levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the temporal analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "fddf61a3-ff55-4c14-a986-17adbe422131",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C82",
+      "claim": "For people already diagnosed with pancreatic cancer, post-diagnosis testing of BMI, HbA1c, and liver function in primary care was more resilient to the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "However, reassuringly, for people who received pancreatic cancer diagnosis (post-diagnosis testing of BMI, HbA1c, and liver function), the primary care healthcare in this area was much more resilient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing pre- and post-diagnosis testing patterns during the pandemic.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "e29caba4-6cbd-44a0-b71c-443327956839",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C83",
+      "claim": "The effect of the pandemic on BMI and HbA1c tests for people already diagnosed with pancreatic cancer was more transient, with levels recovering by the end of the lockdown period (March 2021).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the effect of the pandemic on these tests for people already diagnosed was more transient, and after an initial drop in BMI and HbA1c at the start of the pandemic, the levels recovered by the end of the lockdown period (March 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a temporal finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "b2bd223a-943e-446b-b438-aa36daa49684",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C84",
+      "claim": "Pancreatic cancer does not rely on screening programs and diagnostic services in primary care which were severely affected during the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be because pancreatic cancer does not rely on screening programs and diagnostic services in primary care which were severely affected during the pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference to explain why pancreatic cancer diagnosis rates were not affected, based on knowledge of cancer screening programs.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "a38c0a8a-f8a6-40ae-a93d-e6912d913dba",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C85",
+      "claim": "The study was not equipped to evaluate the full effect of the COVID-19 pandemic on pancreatic cancer diagnosis because staging information was not available.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because staging information was not available, our study was not equipped to evaluate the full effect of the COVID-19 pandemic on pancreatic cancer diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a study limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "e60be60e-1540-4098-bb98-ba96788378b2",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C86",
+      "claim": "More research is needed to assess the staging information to better understand the effect of the COVID-19 pandemic on pancreatic cancer diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, to better understand the effect of the COVID-19 pandemic on pancreatic cancer diagnosis, more research is needed to assess the staging information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research based on study limitations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "af753bd6-d30e-40a9-ae88-6268f10d370c",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C87",
+      "claim": "More research is needed to assess the effect of the pandemic on the length of survival post-diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, more research is needed to assess the effect of the pandemic on the length of survival post-diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research based on study limitations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "68903a37-4b64-4858-be82-eced98699ba2",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C88",
+      "claim": "The ongoing and future effects of the COVID-19 pandemic on key outcomes of pancreatic cancer such as the stage at diagnosis and the length of survival are still to be elucidated.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the ongoing and future effects of the COVID-19 pandemic on key outcomes of pancreatic cancer such as the stage at diagnosis and the length of survival are still to be elucidated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of knowledge gaps and need for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "533d4a6c-3556-417e-b7f0-807cef556751",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C89",
+      "claim": "The increase in number of primary care contacts may reflect increased recording of contacts in electronic health records as practices responded to the pandemic using different online systems with automated code recording activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this may also reflect increased recording of contacts in electronic health records as practices responded to the pandemic using different online systems with automated code recording activity (Fisher, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an alternative explanation for the observed increase in contacts, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "de1f4c8a-65b3-4b72-ba81-60a8b0a22715",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C90",
+      "claim": "Remote consulting offers an important advantage for improved efficiency and access not only during pandemics.",
+      "claim_type": "EXPLICIT",
+      "source": "Remote consulting offers an important advantage for improved efficiency and access not only during pandemics (Mold et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "f8b924a2-6f3a-4259-914b-a4497676c17b",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C91",
+      "claim": "It is important to continue monitoring services to ensure the quality of healthcare and recovery from the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the worsening healthcare crisis, it is important to continue monitoring services to ensure the quality of healthcare and recovery from the pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a policy recommendation based on the study findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "b5215f8b-358f-495f-9df1-4b6039cf9103",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C92",
+      "claim": "It is important to evaluate the impact of infection control measures, digital health approaches and increasing remote consulting on cancer-related healthcare.",
+      "claim_type": "EXPLICIT",
+      "source": "As we innovate and adapt healthcare, with infection control measures, digital health approaches and increasing remote consulting, it is important to evaluate the impact of these on cancer-related healthcare.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research and policy.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "9ee84c5a-cd26-4444-82f3-513bc2cf3991",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C93",
+      "claim": "Future work should include stratified analysis investigating different socio-demographic groups.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence that the COVID-19 pandemic exacerbated healthcare inequalities (Popovic et al., 2022) and future work should include stratified analysis investigating different socio-demographic groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "f927727c-4b7b-4eb8-ba93-b0f9ad515e43",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C94",
+      "claim": "The predicted rate of pancreatic cancer diagnosis was 1 per 100,000 registered people per month (95% CI: 1\u20132) in both the lockdown and recovery periods.",
+      "claim_type": "EXPLICIT",
+      "source": "This equated to the predicted rate of 1 (95% CI: 1\u20132) in both periods of the pandemic (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical prediction from the GLM model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "acb9a6f4-265d-4c77-bbb6-5fb4dcff9fce",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C95",
+      "claim": "The predicted rates of diabetes diagnosis were 41 (95% CI: 38\u201344) per 100 diagnosed people in the lockdown period and 42 (95% CI: 39\u201345) in the recovery period.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted rates per 100 diagnosed people were 41 (95% CI: 38\u201344) in the lockdown period and 42 (95% CI: 39\u201345) in the recovery period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These are statistical predictions from the GLM model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "6f9cd798-c3f7-4742-add9-4568cf3fb0b4",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C96",
+      "claim": "91% of people diagnosed in the lockdown period contacted primary care within 6 months before they were diagnosed (predicted 92% [95% CI: 90\u201394]).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that 91% (predicted 92% [95% CI: 90\u201394]) of people diagnosed in the lockdown period, contacted (\u22651 contact) primary care within 6 months before they were diagnosed, and 88% (predicted 87% [95% CI: 84\u201389]) contacted primary care within 6 months after diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis with statistical prediction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "65cf6219-9946-461d-99fc-947e779eb785",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C97",
+      "claim": "88% of people diagnosed in the lockdown period contacted primary care within 6 months after diagnosis (predicted 87% [95% CI: 84\u201389]).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that 91% (predicted 92% [95% CI: 90\u201394]) of people diagnosed in the lockdown period, contacted (\u22651 contact) primary care within 6 months before they were diagnosed, and 88% (predicted 87% [95% CI: 84\u201389]) contacted primary care within 6 months after diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis with statistical prediction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "dfae6d88-610e-40b9-a949-10ef77c3b576",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C98",
+      "claim": "In the recovery period, 95% of people contacted primary care within 6 months before diagnosis (predicted 97% [95% CI: 95\u201399]).",
+      "claim_type": "EXPLICIT",
+      "source": "In the recovery period, this was 95% (predicted 97% [95% CI: 95\u201399]) and 91% (predicted 91% [95% CI: 89\u201394]), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis with statistical prediction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "20587db5-8949-422f-b4dd-9a1449ae58a2",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C99",
+      "claim": "In the recovery period, 91% of people contacted primary care within 6 months after diagnosis (predicted 91% [95% CI: 89\u201394]).",
+      "claim_type": "EXPLICIT",
+      "source": "In the recovery period, this was 95% (predicted 97% [95% CI: 95\u201399]) and 91% (predicted 91% [95% CI: 89\u201394]), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis with statistical prediction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "86ca420a-db38-495c-ae4f-b852529dada4",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C100",
+      "claim": "For people diagnosed in the recovery period, there were 2 more contacts observed than predicted before the diagnosis (13 vs 11 [95% CI: 10\u201312]).",
+      "claim_type": "EXPLICIT",
+      "source": "For these people, there were 2 more contacts observed than predicted (13 vs 11 [95% CI: 10\u201312]) before the diagnosis and 2 (12 vs 11 [95% CI: 10\u201312]) after the diagnosis (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical analysis comparing observed to predicted values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "a95f18bb-7273-4e7b-8d11-1e1c48b75254",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C101",
+      "claim": "For people diagnosed in the recovery period, there were 2 more contacts observed than predicted after the diagnosis (12 vs 11 [95% CI: 10\u201312]).",
+      "claim_type": "EXPLICIT",
+      "source": "For these people, there were 2 more contacts observed than predicted (13 vs 11 [95% CI: 10\u201312]) before the diagnosis and 2 (12 vs 11 [95% CI: 10\u201312]) after the diagnosis (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical analysis comparing observed to predicted values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "fd5d1509-2455-4980-965a-342fa7878e1f",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C102",
+      "claim": "Contacts with primary care included all the contact events (all reasons and purposes), not only healthcare appointments.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it is important to note that contacts with primary care included all the contact events (all reasons and purposes), not only healthcare appointments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a clarification about the definition of the outcome measure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "f74a3d87-1da5-4253-8bf4-5d9574db665d",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C103",
+      "claim": "For abdominal imaging, the observed average reduction of 5% in the lockdown period (29 vs 30 [95% CI: 27\u201333] predicted) did not reach statistical significance.",
+      "claim_type": "EXPLICIT",
+      "source": "For abdominal imagining the observed in the lockdown period average reduction of 5% (29 vs 30 [95% CI: 27\u201333] predicted) did not reach statistical significance because it was the most pronounced only in the first 6 months of the lockdown period (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the statistical analysis with explanation for lack of significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "2c5176bf-d764-4a75-99b2-87c8aadf605f",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C104",
+      "claim": "The reduction in abdominal imaging was most pronounced only in the first 6 months of the lockdown period.",
+      "claim_type": "EXPLICIT",
+      "source": "For abdominal imagining the observed in the lockdown period average reduction of 5% (29 vs 30 [95% CI: 27\u201333] predicted) did not reach statistical significance because it was the most pronounced only in the first 6 months of the lockdown period (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an explanation for the statistical finding based on temporal patterns in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "55de8e80-c384-41a1-8ad5-3682399d43f2",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C105",
+      "claim": "For every 100 people diagnosed with pancreatic cancer, 6 people received resection, which was two people less than the predicted 8 (95% CI: 6\u201310) in the lockdown period.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated that this was two people less than the predicted 8 (95% CI: 6\u201310) in the lockdown period and 9 (95% CI: 7\u201311) in the recovery period and represented an over 25% reduction in the number of people who received surgical resection during the pandemic as compared to what would be expected based on the pracademic trends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical analysis comparing observed to predicted values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "157e1a39-af74-44fc-98ed-1f676ed72fe6",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C106",
+      "claim": "For every 100 people diagnosed with pancreatic cancer, 6 people received resection, which was two people less than the predicted 9 (95% CI: 7\u201311) in the recovery period.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated that this was two people less than the predicted 8 (95% CI: 6\u201310) in the lockdown period and 9 (95% CI: 7\u201311) in the recovery period and represented an over 25% reduction in the number of people who received surgical resection during the pandemic as compared to what would be expected based on the pracademic trends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical analysis comparing observed to predicted values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "6cd1251c-60e4-4a0a-9b99-867eb10ae51e",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C107",
+      "claim": "The decrease in rates of deaths towards the end of the study period is most likely due to delays in deaths being entered into the registry data.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in rates of deaths towards the end of the study period, visible from the graph, is most likely due to delays in deaths being entered into the registry data (Office for National Statistics, 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the data pattern with citation to support the explanation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "820bbedc-7801-4614-9f73-ff8d40102b24",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C108",
+      "claim": "The number of people with pancreatic cancer who contacted primary care before and after their diagnosis increased over time, from 70% and 80% (respectively) in 2015 to over 90% by 2022.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of people with pancreatic cancer who contacted primary care before and after their diagnosis, increased over time, from 70% and 80% (respectively) in 2015 to over 90% by 2022 (Figure 2A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a temporal trend observed in the data and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "c8bdc950-2f1e-4d49-ba11-5bcec53b1a3c",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C109",
+      "claim": "This trend in primary care contacts was not affected by the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend was not affected by the pandemic (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "6c226cee-84ce-46fb-bfba-8b0026ae09f8",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C110",
+      "claim": "In both periods of the pandemic, reductions were observed in numbers of people receiving BMI, HbA1c, and liver function assessments before they were diagnosed with pancreatic cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "In both periods of the pandemic, we observed reductions in numbers of people receiving BMI, HbA1c, and liver function assessments before they were diagnosed with pancreatic cancer (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "9628c584-a7f4-4568-9d70-48edee58b39e",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C111",
+      "claim": "Except for BMI, reductions in numbers of people receiving HbA1c and liver function assessments after they were diagnosed with cancer were not observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Except for BMI, we did not observe reductions in numbers of people receiving these assessments after they were diagnosed with cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "16a5c5fb-c684-4b22-80ea-a5c75ceecbed",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C112",
+      "claim": "The reporting of jaundice in primary care was reduced for people diagnosed in the lockdown period.",
+      "claim_type": "EXPLICIT",
+      "source": "The reporting of jaundice in primary care and abdominal imaging in secondary care were reduced for people diagnosed in the lockdown period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "a70e4822-3e02-444c-bfff-fcb38b639458",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C113",
+      "claim": "Abdominal imaging in secondary care was reduced for people diagnosed in the lockdown period.",
+      "claim_type": "EXPLICIT",
+      "source": "The reporting of jaundice in primary care and abdominal imaging in secondary care were reduced for people diagnosed in the lockdown period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "292ef8a4-8797-4e9c-bab7-e2cb3cff6c32",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C114",
+      "claim": "The reductions in jaundice reporting and abdominal imaging were transient.",
+      "claim_type": "EXPLICIT",
+      "source": "The reductions in both services were transient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the temporal pattern of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "c4023fa6-5b9f-49d2-bfa6-1db186a45085",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C115",
+      "claim": "Pancreatic cancer resection (surgery) was significantly affected in both periods of the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "However, pancreatic cancer resection (surgery) was significantly affected in both periods of the pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "057e8acd-ad36-4246-85ac-c8bf2833445f",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C116",
+      "claim": "No effect of the COVID-19 pandemic was found on the number of emergency department visits within 6 months before pancreatic cancer diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cohort of people diagnosed with pancreatic cancer, we found no effect of the COVID-19 pandemic on the number of emergency department visits and hospitalisations within 6 months before or 6 months after pancreatic cancer diagnosis, and the numbers of recorded deaths within 6 months after pancreatic cancer diagnosis (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the statistical analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "442e11c2-d37e-4136-bc83-e69784a286b0",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C117",
+      "claim": "No effect of the COVID-19 pandemic was found on the number of emergency department visits within 6 months after pancreatic cancer diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cohort of people diagnosed with pancreatic cancer, we found no effect of the COVID-19 pandemic on the number of emergency department visits and hospitalisations within 6 months before or 6 months after pancreatic cancer diagnosis, and the numbers of recorded deaths within 6 months after pancreatic cancer diagnosis (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the statistical analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "00246b47-1707-4249-b89a-65fa58aefe22",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C118",
+      "claim": "No effect of the COVID-19 pandemic was found on the number of hospitalisations within 6 months before pancreatic cancer diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cohort of people diagnosed with pancreatic cancer, we found no effect of the COVID-19 pandemic on the number of emergency department visits and hospitalisations within 6 months before or 6 months after pancreatic cancer diagnosis, and the numbers of recorded deaths within 6 months after pancreatic cancer diagnosis (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the statistical analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "073880e9-7135-4801-8f5f-3259576c8270",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C119",
+      "claim": "No effect of the COVID-19 pandemic was found on the number of hospitalisations within 6 months after pancreatic cancer diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cohort of people diagnosed with pancreatic cancer, we found no effect of the COVID-19 pandemic on the number of emergency department visits and hospitalisations within 6 months before or 6 months after pancreatic cancer diagnosis, and the numbers of recorded deaths within 6 months after pancreatic cancer diagnosis (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the statistical analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "da0aa1ce-d9bf-4e27-836a-de6f32b684b0",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C120",
+      "claim": "No effect of the COVID-19 pandemic was found on the numbers of recorded deaths within 6 months after pancreatic cancer diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cohort of people diagnosed with pancreatic cancer, we found no effect of the COVID-19 pandemic on the number of emergency department visits and hospitalisations within 6 months before or 6 months after pancreatic cancer diagnosis, and the numbers of recorded deaths within 6 months after pancreatic cancer diagnosis (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the statistical analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "d8eba7ce-58f5-4534-99ad-b1762b6de3c6",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "claim_id": "C121",
+      "claim": "The rates of emergency department visits, hospital admissions, and deaths did not differ from what would be expected if the pandemic had not occurred.",
+      "claim_type": "EXPLICIT",
+      "source": "The rates did not differ from what would be expected if the pandemic had not occurred (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical analysis comparing observed to predicted values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3778a082-b216-41a7-899b-1da48acb4393",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study cohort comprised 26,840 people diagnosed with pancreatic cancer from January 2015 to March 2023 in the OpenSAFELY-TPP dataset of 24 million patients. The cohort had a mean age of 72 years (\u00b111 SD), was 48% female, 95% White ethnicity (with 26% missing ethnicity data), and 40% had diabetes diagnosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 and C40-C45 provide consistent descriptive statistics about the study population. The dataset size, demographic characteristics, and comorbidity rates are clearly stated with appropriate measures of central tendency and dispersion. These are straightforward descriptive findings from the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "4c3f0cda-ebb0-4d35-abb8-3787c0251414",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The rate of pancreatic cancer diagnosis (1 per 100,000 registered people per month) and diabetes diagnosis in the pancreatic cancer cohort (41% of people) were not affected by the COVID-19 pandemic, with observed rates matching predicted rates based on pre-pandemic trends.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18 and C46-C48, C94-C95 demonstrate no significant pandemic effect on cancer or diabetes diagnosis rates using interrupted time series analysis with GLM predictions. The observed rates fell within the 95% confidence intervals of predicted rates, and this is supported by Figure 1A-B showing overlapping observed and predicted trends.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "a4f1b254-7173-49d6-993d-c5d2afcc94d1",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Surgical resections for pancreatic cancer were reduced by 25-28% during the pandemic, with only 6 per 100 people diagnosed receiving resection compared to predicted rates of 8-9 per 100, representing a statistically significant reduction in both lockdown and recovery periods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C58-C59, C105-C106, and C115 consistently report a major reduction in surgical resections. The observed rates (6%) were significantly below the 95% confidence intervals of predicted rates (6-10 in lockdown, 7-11 in recovery), indicating statistical significance. This is a key clinical finding with potential patient outcome implications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "cbc32400-9fc4-4be6-ba1e-2e88bb20632f",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Pre-diagnosis testing for BMI, HbA1c, and liver function was reduced during the pandemic by 20%, 10%, and 4% respectively in the lockdown period, with BMI and HbA1c testing remaining below pre-pandemic levels through March 2023.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10, C51-C53, C110, and C81 document statistically significant reductions in pre-diagnosis testing. The percentage reductions are consistent across claims, supported by Table 2 showing observed rates below 95% CI of predictions. The persistent deficit in BMI/HbA1c testing 3 years into the pandemic (C81) is particularly concerning and well-documented in Figure 3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "9b6b7d39-6cba-4696-9f2d-53bb3e3a1e58",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Post-diagnosis testing of BMI, HbA1c, and liver function for people already diagnosed with pancreatic cancer was more resilient to the pandemic, with initial reductions recovering by the end of the lockdown period (March 2021), except for BMI which showed persistent reductions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C83 and C111 describe differential pandemic impact on post-diagnosis versus pre-diagnosis testing. The temporal recovery pattern is supported by Figure 3 showing convergence of observed and predicted rates for HbA1c and liver function by March 2021. The exception for BMI (C111) is appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "261bad46-bc7e-4724-bf0f-2d2f08423c43",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Over 90% of people with pancreatic cancer contacted primary care before and after diagnosis, a rate unaffected by the pandemic. However, among those who made contact, the number of contacts increased by 1-2 per person during the pandemic compared to predicted levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C49-C50, C67, C96-C101, C108-C109 consistently show that while the proportion of people contacting primary care remained stable (>90%), the frequency of contacts per person increased significantly during the pandemic. This is supported by Figure 2 and Table 2 showing observed rates exceeding 95% CI of predictions for contact frequency but not for proportion contacting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "1285036c-0329-4b4b-b53d-de3f709a1309",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Reporting of jaundice in primary care decreased by 28% during the lockdown period but recovered to pre-pandemic levels by April 2021, representing a transient disruption.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13, C54-C55, C112, and C114 document a significant but transient reduction in jaundice reporting. The 28% reduction (7 vs 10 predicted per 100 diagnosed) is statistically significant based on 95% CI (9-11), and the recovery timeline is supported by Figure 4A showing convergence by April 2021.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "e3507f98-60f7-4d84-a657-e082908148e9",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Abdominal imaging in secondary care showed a 5% reduction during the lockdown period that did not reach statistical significance when averaged across the entire period, though the reduction was most pronounced in the first 6 months and recovered by August 2020.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56, C103-C104, and C113 explain why the overall reduction in abdominal imaging was not statistically significant despite an initial drop. The observed rate (29%) fell within the 95% CI of predicted (27-33), but Figure 4B shows a clear initial reduction followed by rapid recovery. The temporal heterogeneity explains the lack of overall significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "4bd70bd0-7361-4930-8fe0-9756ec9af0b5",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Emergency department visits, hospital admissions, deaths within 6 months of diagnosis, and pancreatic enzyme replacement prescribing were not significantly affected by the pandemic, with observed rates matching predicted rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16, C57, and C116-C121 consistently report no significant pandemic effect on these outcomes. Table 2 shows observed rates within 95% CI of predictions for all these measures, and Figure 5 visually confirms overlapping observed and predicted trends. These null findings are important for understanding the selective impact of the pandemic.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "09c81b30-110b-4a5c-86d7-e9ae2395d69b",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cancer services were already overstretched before COVID-19, and the pandemic exacerbated the healthcare crisis through resource reallocation, changes in healthcare access, increased waiting times, adapted treatment pathways, and altered patient healthcare-seeking behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C27 provide contextual background supported by multiple citations to published literature and NHS reports. These claims establish the pre-existing healthcare crisis and document well-established pandemic impacts on healthcare systems. The citations are appropriate and the claims represent accepted knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "90b972a9-eb33-4dc0-a0c4-5f7f7aac0f46",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Pancreatic cancer presents diagnostic challenges due to non-specific symptoms and rapid progression, with weight loss, hyperglycemia, diabetes, and bile duct obstruction as common complications. Timely assessments of BMI, HbA1c, and liver function can support early diagnosis and monitoring.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32 describe established medical knowledge about pancreatic cancer, supported by appropriate citations. These claims provide clinical context for why the observed reductions in testing (BMI, HbA1c, liver function) are concerning. The citations to published literature validate these as accepted clinical facts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "9a17af8b-bfea-4ce0-9344-33b106b96444",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The negative effect of the COVID-19 pandemic resulted in delays and missed opportunities throughout the cancer pathway, which affected patient outcomes including survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 are supported by multiple citations to published literature documenting pandemic impacts on cancer care and outcomes. These claims provide important context for interpreting the study findings, though they represent prior work rather than findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "1c497160-0f77-4d02-8b6c-6b0b445e28e4",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The OpenSAFELY-TPP dataset is nationally representative, links primary care with hospital and mortality data, and enables interrupted time series analysis accounting for trends and seasonality. Pancreatic cancer case ascertainment via primary care coding is valid in the UK context, with incidence rates aligning with published rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C70-C75 describe methodological strengths and validation of the data source. The national representativeness is supported by citation (C35), the interrupted time series advantages are based on sound statistical principles (C71), and the validation of case ascertainment through alignment with published rates (C75) strengthens confidence in the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "84a852d0-85a2-40ed-9c5e-c2d9ad14ee95",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The UK implemented three national lockdowns: the first starting 26 March 2020, the second on 5 November 2020, the third on 6 January 2021, with phased exit beginning 8 March 2021.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 state historical facts about UK pandemic policy that are verifiable and well-documented. These dates define the study periods and are essential for interpreting the temporal patterns in the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "5f0f63b3-16c4-4fda-9969-5d5e1df002a3",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Many non-emergency diagnostic services including abdominal imaging were suspended during the first pandemic peak but gradually reopened from July 2020 following infection control guidelines. Emergency presentations remain the main route of pancreatic cancer diagnosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 are supported by citations and provide context for interpreting the study's findings on imaging and diagnosis rates. The claim about emergency presentations (C62) is supported by citation to a 2013 report and represents established knowledge about pancreatic cancer diagnosis pathways in the UK.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "b15c1d0e-ef18-4935-96be-01dc9d86563a",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior studies showed conflicting results on pandemic impact on pancreatic cancer surgery recommendations and survival, with one study showing 25% fewer surgery recommendations and reduced survival (7.4 to 3.3 months), while another showed no significant survival difference (3.5 vs 4.4 months).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 accurately cite prior published work on pandemic impacts on pancreatic cancer care. The conflicting findings from different studies (Hall et al. 2023 vs Madge et al. 2022) are appropriately presented, highlighting uncertainty in the literature and justifying the need for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "43d593cf-c1cd-455b-b871-52195ffa8f3a",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "In the general population, there was a significant reduction in diabetes diagnosis and management services during the pandemic, contrasting with the lack of effect observed in the pancreatic cancer cohort.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 is supported by citation and provides important context for interpreting the study's finding that diabetes diagnosis in the pancreatic cancer cohort was not affected. This contrast suggests the pancreatic cancer population may have been prioritized or followed different care pathways.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "310d27e4-bc4a-4d06-aadd-8972644ae678",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Primary care transitioned to remote consulting with increased telephone triage during the pandemic, which may explain increased contact frequency. However, remote consulting can be more time-consuming for complex conditions, and the increase may also reflect enhanced recording in electronic health records.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 and C89-C90 provide plausible explanations for the observed increase in primary care contacts, supported by citations. The authors appropriately present alternative explanations (true increase vs. recording artifact) and acknowledge uncertainty about the mechanism, which is scientifically appropriate given the observational data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "76d3aee9-bcc7-435b-969f-49a1c36e9d20",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The pandemic affected healthcare across the pancreatic cancer pathway in England. The reductions in healthcare have potential to lead to worse outcomes. Current efforts should address unmet needs, continue monitoring services, evaluate new healthcare approaches, and investigate health inequalities through stratified analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C80 and C91-C93 represent the study's main conclusions and recommendations. The conclusion that the pandemic affected the pancreatic cancer pathway (C80) is well-supported by the documented reductions in testing and surgery. The recommendations (C78-C79, C91-C93) are appropriate given the findings, though some are speculative about future work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "3f9dab67-280e-4438-8962-6b47a2c5fa33",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The study could not fully evaluate pandemic effects on pancreatic cancer diagnosis because staging information was unavailable. Pancreatic cancer may not rely on screening programs that were severely affected. More research is needed on staging, survival, and ongoing pandemic effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C88 appropriately acknowledge study limitations and identify gaps requiring future research. The explanation for why diagnosis rates were unaffected (C84) is a reasonable inference based on knowledge of cancer screening programs. The acknowledgment of limitations (C85) and calls for future research (C86-C88) are scientifically appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "fb49af28-ad31-453c-893c-f1fb08536900",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Contacts with primary care included all contact events for all reasons and purposes, not only healthcare appointments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C102 provides an important methodological clarification about how the outcome was defined. This is essential for interpreting the findings on increased contact frequency, as it indicates the measure captures a broader range of interactions than just clinical appointments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    },
+    {
+      "id": "71387d54-fda8-46c2-82a0-359630b800a5",
+      "content_id": "84b4516d-bc65-48cd-aea9-71e01a3a48f7",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The decrease in death rates toward the end of the study period is most likely due to delays in deaths being entered into registry data rather than a true decrease in mortality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C107 provides a plausible explanation for an apparent artifact in the data, supported by citation to ONS documentation about registry delays. This interpretation is appropriate and prevents misinterpretation of the temporal pattern visible in Figure 5E. The authors correctly identify this as a data quality issue rather than a true effect.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:00:24.070237Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "239b650c-356c-4d08-9163-c0f80b1618e3",
+      "result_id": "3778a082-b216-41a7-899b-1da48acb4393"
+    },
+    {
+      "claim_id": "6650ef40-55c3-46be-b243-3dfe4598a64e",
+      "result_id": "3778a082-b216-41a7-899b-1da48acb4393"
+    },
+    {
+      "claim_id": "2dc3da50-a3ce-4867-a4e8-8f2175fc6b4f",
+      "result_id": "3778a082-b216-41a7-899b-1da48acb4393"
+    },
+    {
+      "claim_id": "ce54902e-5dad-4838-889a-d6c74b0d53d8",
+      "result_id": "3778a082-b216-41a7-899b-1da48acb4393"
+    },
+    {
+      "claim_id": "a03befc1-4fa9-45a1-a11c-8d0a868d0c57",
+      "result_id": "3778a082-b216-41a7-899b-1da48acb4393"
+    },
+    {
+      "claim_id": "e0f34b16-e7d6-44db-ac71-091fb26c40d0",
+      "result_id": "3778a082-b216-41a7-899b-1da48acb4393"
+    },
+    {
+      "claim_id": "df91aad0-f3b0-4a0f-83bd-3151bc26b964",
+      "result_id": "3778a082-b216-41a7-899b-1da48acb4393"
+    },
+    {
+      "claim_id": "1966efa6-2c41-4d60-9893-ff1fea692c6b",
+      "result_id": "3778a082-b216-41a7-899b-1da48acb4393"
+    },
+    {
+      "claim_id": "a48a41b8-b0c7-4fe9-a3bb-8b059f09510e",
+      "result_id": "3778a082-b216-41a7-899b-1da48acb4393"
+    },
+    {
+      "claim_id": "eae525bf-65a8-42f1-915c-fe15015449de",
+      "result_id": "3778a082-b216-41a7-899b-1da48acb4393"
+    },
+    {
+      "claim_id": "8a325720-e3ed-43f0-83a9-8b7e46b25a43",
+      "result_id": "3778a082-b216-41a7-899b-1da48acb4393"
+    },
+    {
+      "claim_id": "5fdc6a37-de7f-4d6e-bea8-cb382e946c6a",
+      "result_id": "3778a082-b216-41a7-899b-1da48acb4393"
+    },
+    {
+      "claim_id": "a9abc99f-53b2-4f0c-aac1-b323f513491c",
+      "result_id": "4c3f0cda-ebb0-4d35-abb8-3787c0251414"
+    },
+    {
+      "claim_id": "9e58c588-479a-4166-80e9-e02860b4382e",
+      "result_id": "4c3f0cda-ebb0-4d35-abb8-3787c0251414"
+    },
+    {
+      "claim_id": "4d74ceec-5065-4436-aca8-c737a679827a",
+      "result_id": "4c3f0cda-ebb0-4d35-abb8-3787c0251414"
+    },
+    {
+      "claim_id": "e8d34d24-f144-443e-8143-e947f8b3a84f",
+      "result_id": "4c3f0cda-ebb0-4d35-abb8-3787c0251414"
+    },
+    {
+      "claim_id": "12bc0acf-5210-4aa1-a6e7-760307bc178f",
+      "result_id": "4c3f0cda-ebb0-4d35-abb8-3787c0251414"
+    },
+    {
+      "claim_id": "f927727c-4b7b-4eb8-ba93-b0f9ad515e43",
+      "result_id": "4c3f0cda-ebb0-4d35-abb8-3787c0251414"
+    },
+    {
+      "claim_id": "acb9a6f4-265d-4c77-bbb6-5fb4dcff9fce",
+      "result_id": "4c3f0cda-ebb0-4d35-abb8-3787c0251414"
+    },
+    {
+      "claim_id": "49b32683-29a4-47ba-a9eb-bd990a25e2f2",
+      "result_id": "a4f1b254-7173-49d6-993d-c5d2afcc94d1"
+    },
+    {
+      "claim_id": "a57d57bc-2d39-4160-86c5-69183cdec8bb",
+      "result_id": "a4f1b254-7173-49d6-993d-c5d2afcc94d1"
+    },
+    {
+      "claim_id": "befc05a0-5fe0-4c20-9baf-a09229911b7d",
+      "result_id": "a4f1b254-7173-49d6-993d-c5d2afcc94d1"
+    },
+    {
+      "claim_id": "55de8e80-c384-41a1-8ad5-3682399d43f2",
+      "result_id": "a4f1b254-7173-49d6-993d-c5d2afcc94d1"
+    },
+    {
+      "claim_id": "157e1a39-af74-44fc-98ed-1f676ed72fe6",
+      "result_id": "a4f1b254-7173-49d6-993d-c5d2afcc94d1"
+    },
+    {
+      "claim_id": "c4023fa6-5b9f-49d2-bfa6-1db186a45085",
+      "result_id": "a4f1b254-7173-49d6-993d-c5d2afcc94d1"
+    },
+    {
+      "claim_id": "74f4bbb1-4e11-4a2f-93f3-a96a6c1ed9c8",
+      "result_id": "cbc32400-9fc4-4be6-ba1e-2e88bb20632f"
+    },
+    {
+      "claim_id": "f0278d6d-51ab-46d3-8c23-45b6e4b983a6",
+      "result_id": "cbc32400-9fc4-4be6-ba1e-2e88bb20632f"
+    },
+    {
+      "claim_id": "c38d46c7-ce2f-4fc4-a5e6-c3df542a4e0d",
+      "result_id": "cbc32400-9fc4-4be6-ba1e-2e88bb20632f"
+    },
+    {
+      "claim_id": "b45c408f-c770-4d22-8390-15f9f1123594",
+      "result_id": "cbc32400-9fc4-4be6-ba1e-2e88bb20632f"
+    },
+    {
+      "claim_id": "9dafc752-22dc-415e-ba7f-30495c0f5af4",
+      "result_id": "cbc32400-9fc4-4be6-ba1e-2e88bb20632f"
+    },
+    {
+      "claim_id": "50b5e9d9-cb5e-4598-a19f-54e8a7a684e3",
+      "result_id": "cbc32400-9fc4-4be6-ba1e-2e88bb20632f"
+    },
+    {
+      "claim_id": "6c226cee-84ce-46fb-bfba-8b0026ae09f8",
+      "result_id": "cbc32400-9fc4-4be6-ba1e-2e88bb20632f"
+    },
+    {
+      "claim_id": "9343ae2a-5c85-4d29-b1ba-2ffa16f42654",
+      "result_id": "cbc32400-9fc4-4be6-ba1e-2e88bb20632f"
+    },
+    {
+      "claim_id": "fddf61a3-ff55-4c14-a986-17adbe422131",
+      "result_id": "9b6b7d39-6cba-4696-9f2d-53bb3e3a1e58"
+    },
+    {
+      "claim_id": "e29caba4-6cbd-44a0-b71c-443327956839",
+      "result_id": "9b6b7d39-6cba-4696-9f2d-53bb3e3a1e58"
+    },
+    {
+      "claim_id": "9628c584-a7f4-4568-9d70-48edee58b39e",
+      "result_id": "9b6b7d39-6cba-4696-9f2d-53bb3e3a1e58"
+    },
+    {
+      "claim_id": "04557945-9441-4aa7-8ca9-d15fb27cc1d9",
+      "result_id": "261bad46-bc7e-4724-bf0f-2d2f08423c43"
+    },
+    {
+      "claim_id": "10f87369-8897-4aad-a67d-22fa5d03b65f",
+      "result_id": "261bad46-bc7e-4724-bf0f-2d2f08423c43"
+    },
+    {
+      "claim_id": "d497e24a-bdfc-42ad-a59f-1e44442b8150",
+      "result_id": "261bad46-bc7e-4724-bf0f-2d2f08423c43"
+    },
+    {
+      "claim_id": "7c0a9063-2a1d-40b8-bbd1-14fba5757ed1",
+      "result_id": "261bad46-bc7e-4724-bf0f-2d2f08423c43"
+    },
+    {
+      "claim_id": "6f9cd798-c3f7-4742-add9-4568cf3fb0b4",
+      "result_id": "261bad46-bc7e-4724-bf0f-2d2f08423c43"
+    },
+    {
+      "claim_id": "65cf6219-9946-461d-99fc-947e779eb785",
+      "result_id": "261bad46-bc7e-4724-bf0f-2d2f08423c43"
+    },
+    {
+      "claim_id": "dfae6d88-610e-40b9-a949-10ef77c3b576",
+      "result_id": "261bad46-bc7e-4724-bf0f-2d2f08423c43"
+    },
+    {
+      "claim_id": "20587db5-8949-422f-b4dd-9a1449ae58a2",
+      "result_id": "261bad46-bc7e-4724-bf0f-2d2f08423c43"
+    },
+    {
+      "claim_id": "86ca420a-db38-495c-ae4f-b852529dada4",
+      "result_id": "261bad46-bc7e-4724-bf0f-2d2f08423c43"
+    },
+    {
+      "claim_id": "a95f18bb-7273-4e7b-8d11-1e1c48b75254",
+      "result_id": "261bad46-bc7e-4724-bf0f-2d2f08423c43"
+    },
+    {
+      "claim_id": "820bbedc-7801-4614-9f73-ff8d40102b24",
+      "result_id": "261bad46-bc7e-4724-bf0f-2d2f08423c43"
+    },
+    {
+      "claim_id": "c8bdc950-2f1e-4d49-ba11-5bcec53b1a3c",
+      "result_id": "261bad46-bc7e-4724-bf0f-2d2f08423c43"
+    },
+    {
+      "claim_id": "704255a1-0b80-4be9-9d46-2f9faa18e57f",
+      "result_id": "1285036c-0329-4b4b-b53d-de3f709a1309"
+    },
+    {
+      "claim_id": "84cf9a26-1fb3-4b32-aebc-d5039c304890",
+      "result_id": "1285036c-0329-4b4b-b53d-de3f709a1309"
+    },
+    {
+      "claim_id": "6d0b3bf6-387e-4b30-8052-f45f47135c53",
+      "result_id": "1285036c-0329-4b4b-b53d-de3f709a1309"
+    },
+    {
+      "claim_id": "ed643465-2179-48be-b0cc-033bdc41cd8f",
+      "result_id": "1285036c-0329-4b4b-b53d-de3f709a1309"
+    },
+    {
+      "claim_id": "16a5c5fb-c684-4b22-80ea-a5c75ceecbed",
+      "result_id": "1285036c-0329-4b4b-b53d-de3f709a1309"
+    },
+    {
+      "claim_id": "292ef8a4-8797-4e9c-bab7-e2cb3cff6c32",
+      "result_id": "1285036c-0329-4b4b-b53d-de3f709a1309"
+    },
+    {
+      "claim_id": "e87c5363-a958-40b7-aca0-bcc086d04762",
+      "result_id": "e3507f98-60f7-4d84-a657-e082908148e9"
+    },
+    {
+      "claim_id": "f74a3d87-1da5-4253-8bf4-5d9574db665d",
+      "result_id": "e3507f98-60f7-4d84-a657-e082908148e9"
+    },
+    {
+      "claim_id": "2c5176bf-d764-4a75-99b2-87c8aadf605f",
+      "result_id": "e3507f98-60f7-4d84-a657-e082908148e9"
+    },
+    {
+      "claim_id": "a70e4822-3e02-444c-bfff-fcb38b639458",
+      "result_id": "e3507f98-60f7-4d84-a657-e082908148e9"
+    },
+    {
+      "claim_id": "86b649bb-3cf8-4c63-b15c-0801895d287f",
+      "result_id": "4bd70bd0-7361-4930-8fe0-9756ec9af0b5"
+    },
+    {
+      "claim_id": "d5736693-1733-46a7-aa6e-a6be446d70a9",
+      "result_id": "4bd70bd0-7361-4930-8fe0-9756ec9af0b5"
+    },
+    {
+      "claim_id": "e98e2e6b-4e93-4ba5-a773-e9f30bbef7b9",
+      "result_id": "4bd70bd0-7361-4930-8fe0-9756ec9af0b5"
+    },
+    {
+      "claim_id": "95d38a1a-99f0-456e-86ff-13aacfa1fbfb",
+      "result_id": "4bd70bd0-7361-4930-8fe0-9756ec9af0b5"
+    },
+    {
+      "claim_id": "057e8acd-ad36-4246-85ac-c8bf2833445f",
+      "result_id": "4bd70bd0-7361-4930-8fe0-9756ec9af0b5"
+    },
+    {
+      "claim_id": "442e11c2-d37e-4136-bc83-e69784a286b0",
+      "result_id": "4bd70bd0-7361-4930-8fe0-9756ec9af0b5"
+    },
+    {
+      "claim_id": "00246b47-1707-4249-b89a-65fa58aefe22",
+      "result_id": "4bd70bd0-7361-4930-8fe0-9756ec9af0b5"
+    },
+    {
+      "claim_id": "073880e9-7135-4801-8f5f-3259576c8270",
+      "result_id": "4bd70bd0-7361-4930-8fe0-9756ec9af0b5"
+    },
+    {
+      "claim_id": "da0aa1ce-d9bf-4e27-836a-de6f32b684b0",
+      "result_id": "4bd70bd0-7361-4930-8fe0-9756ec9af0b5"
+    },
+    {
+      "claim_id": "d8eba7ce-58f5-4534-99ad-b1762b6de3c6",
+      "result_id": "4bd70bd0-7361-4930-8fe0-9756ec9af0b5"
+    },
+    {
+      "claim_id": "0a69ddb8-6000-43fe-bc27-bec93274a93b",
+      "result_id": "09c81b30-110b-4a5c-86d7-e9ae2395d69b"
+    },
+    {
+      "claim_id": "2d9a8b15-610b-4599-ad2d-6c5fcf7a5670",
+      "result_id": "09c81b30-110b-4a5c-86d7-e9ae2395d69b"
+    },
+    {
+      "claim_id": "e10b43eb-b00e-41d5-8f4a-d57b0c314c91",
+      "result_id": "09c81b30-110b-4a5c-86d7-e9ae2395d69b"
+    },
+    {
+      "claim_id": "4b6caa49-1338-46e5-9a71-a9ae6dcdcc29",
+      "result_id": "09c81b30-110b-4a5c-86d7-e9ae2395d69b"
+    },
+    {
+      "claim_id": "8b90aef2-3617-4b36-bd0c-95860dd8e17b",
+      "result_id": "09c81b30-110b-4a5c-86d7-e9ae2395d69b"
+    },
+    {
+      "claim_id": "5af51b1a-b433-446a-b531-0631c5ffe945",
+      "result_id": "09c81b30-110b-4a5c-86d7-e9ae2395d69b"
+    },
+    {
+      "claim_id": "077cfdb2-8355-408c-b6ed-7433c695b70d",
+      "result_id": "09c81b30-110b-4a5c-86d7-e9ae2395d69b"
+    },
+    {
+      "claim_id": "e76de26a-681d-4022-89db-864af232a23c",
+      "result_id": "09c81b30-110b-4a5c-86d7-e9ae2395d69b"
+    },
+    {
+      "claim_id": "eda12788-d60b-4e58-949b-c03d9840d893",
+      "result_id": "09c81b30-110b-4a5c-86d7-e9ae2395d69b"
+    },
+    {
+      "claim_id": "f018a3f9-aa7a-4385-b903-fc6bb099875e",
+      "result_id": "90b972a9-eb33-4dc0-a0c4-5f7f7aac0f46"
+    },
+    {
+      "claim_id": "9599d9f2-9454-4bfe-92fe-8d72ab9994ba",
+      "result_id": "90b972a9-eb33-4dc0-a0c4-5f7f7aac0f46"
+    },
+    {
+      "claim_id": "b86120ca-e2a6-4f81-a635-951a599d419b",
+      "result_id": "90b972a9-eb33-4dc0-a0c4-5f7f7aac0f46"
+    },
+    {
+      "claim_id": "372a28db-94d5-41a1-bcab-0de45d2e84d2",
+      "result_id": "90b972a9-eb33-4dc0-a0c4-5f7f7aac0f46"
+    },
+    {
+      "claim_id": "e45f3019-1d98-41bd-9cf6-d10e6e8fdfb5",
+      "result_id": "90b972a9-eb33-4dc0-a0c4-5f7f7aac0f46"
+    },
+    {
+      "claim_id": "c9ecf35d-741d-447e-8c22-ac9993f08565",
+      "result_id": "9a17af8b-bfea-4ce0-9344-33b106b96444"
+    },
+    {
+      "claim_id": "79763f1d-05bb-4154-a7e0-5451dcec85db",
+      "result_id": "9a17af8b-bfea-4ce0-9344-33b106b96444"
+    },
+    {
+      "claim_id": "2a907ad6-78a7-4c6c-9582-ad35aa644cb0",
+      "result_id": "1c497160-0f77-4d02-8b6c-6b0b445e28e4"
+    },
+    {
+      "claim_id": "946cf8dc-1bd8-437c-a4e0-b0d41bebe521",
+      "result_id": "1c497160-0f77-4d02-8b6c-6b0b445e28e4"
+    },
+    {
+      "claim_id": "4a1910ad-6920-409b-95ab-ccf1aa32e4af",
+      "result_id": "1c497160-0f77-4d02-8b6c-6b0b445e28e4"
+    },
+    {
+      "claim_id": "99af1b0f-c89f-4a00-a42c-cf57714d9281",
+      "result_id": "1c497160-0f77-4d02-8b6c-6b0b445e28e4"
+    },
+    {
+      "claim_id": "0836f35c-9b42-4339-8923-b912381c62c2",
+      "result_id": "1c497160-0f77-4d02-8b6c-6b0b445e28e4"
+    },
+    {
+      "claim_id": "3e836aa9-9ba5-4df6-95bf-8f244dd5e604",
+      "result_id": "1c497160-0f77-4d02-8b6c-6b0b445e28e4"
+    },
+    {
+      "claim_id": "ed00494f-16bf-4933-aeb2-19702c70942f",
+      "result_id": "1c497160-0f77-4d02-8b6c-6b0b445e28e4"
+    },
+    {
+      "claim_id": "5515398a-7bec-45ad-a9e7-090e63204b13",
+      "result_id": "84a852d0-85a2-40ed-9c5e-c2d9ad14ee95"
+    },
+    {
+      "claim_id": "c57bf450-cba6-460a-aec6-48fc4af25ea0",
+      "result_id": "84a852d0-85a2-40ed-9c5e-c2d9ad14ee95"
+    },
+    {
+      "claim_id": "c89343f8-a1d7-4eee-9653-0d012bf6000a",
+      "result_id": "84a852d0-85a2-40ed-9c5e-c2d9ad14ee95"
+    },
+    {
+      "claim_id": "cf105b03-3bb9-4189-becf-327d684e95b6",
+      "result_id": "84a852d0-85a2-40ed-9c5e-c2d9ad14ee95"
+    },
+    {
+      "claim_id": "0e503f29-51a6-4a06-ac85-cb22ccf3b987",
+      "result_id": "5f0f63b3-16c4-4fda-9969-5d5e1df002a3"
+    },
+    {
+      "claim_id": "42457acb-1c0f-4664-bf13-30de1bba9e2f",
+      "result_id": "5f0f63b3-16c4-4fda-9969-5d5e1df002a3"
+    },
+    {
+      "claim_id": "bc3459fc-b72c-4e71-88fa-a6d1031a750d",
+      "result_id": "5f0f63b3-16c4-4fda-9969-5d5e1df002a3"
+    },
+    {
+      "claim_id": "b9369ca0-54d8-4b9c-9734-8a8a124de162",
+      "result_id": "b15c1d0e-ef18-4935-96be-01dc9d86563a"
+    },
+    {
+      "claim_id": "55f505c0-f9bd-4e3f-9652-f232d8027d4d",
+      "result_id": "b15c1d0e-ef18-4935-96be-01dc9d86563a"
+    },
+    {
+      "claim_id": "93aca90c-fd19-4e42-a124-c333988e3494",
+      "result_id": "b15c1d0e-ef18-4935-96be-01dc9d86563a"
+    },
+    {
+      "claim_id": "96e017f6-ed72-4260-8931-e56b5001a1df",
+      "result_id": "43d593cf-c1cd-455b-b871-52195ffa8f3a"
+    },
+    {
+      "claim_id": "b6fc5ff4-5985-4670-8521-c8ca0c04897f",
+      "result_id": "310d27e4-bc4a-4d06-aadd-8972644ae678"
+    },
+    {
+      "claim_id": "df37d967-6af0-49de-b9bf-37f417801464",
+      "result_id": "310d27e4-bc4a-4d06-aadd-8972644ae678"
+    },
+    {
+      "claim_id": "533d4a6c-3556-417e-b7f0-807cef556751",
+      "result_id": "310d27e4-bc4a-4d06-aadd-8972644ae678"
+    },
+    {
+      "claim_id": "de1f4c8a-65b3-4b72-ba81-60a8b0a22715",
+      "result_id": "310d27e4-bc4a-4d06-aadd-8972644ae678"
+    },
+    {
+      "claim_id": "1f9fe6f7-1276-4eae-9039-9b37515d84aa",
+      "result_id": "76d3aee9-bcc7-435b-969f-49a1c36e9d20"
+    },
+    {
+      "claim_id": "d044d55c-8f92-43c8-a92f-3c2901065e03",
+      "result_id": "76d3aee9-bcc7-435b-969f-49a1c36e9d20"
+    },
+    {
+      "claim_id": "4fc9c09c-10bc-4fbc-8320-8887c35b79af",
+      "result_id": "76d3aee9-bcc7-435b-969f-49a1c36e9d20"
+    },
+    {
+      "claim_id": "00c3ba76-ff00-4447-85a8-76d3d45576b5",
+      "result_id": "76d3aee9-bcc7-435b-969f-49a1c36e9d20"
+    },
+    {
+      "claim_id": "ec745f29-72d9-42ff-a43b-7a183c3d9c23",
+      "result_id": "76d3aee9-bcc7-435b-969f-49a1c36e9d20"
+    },
+    {
+      "claim_id": "f8b924a2-6f3a-4259-914b-a4497676c17b",
+      "result_id": "76d3aee9-bcc7-435b-969f-49a1c36e9d20"
+    },
+    {
+      "claim_id": "b5215f8b-358f-495f-9df1-4b6039cf9103",
+      "result_id": "76d3aee9-bcc7-435b-969f-49a1c36e9d20"
+    },
+    {
+      "claim_id": "9ee84c5a-cd26-4444-82f3-513bc2cf3991",
+      "result_id": "76d3aee9-bcc7-435b-969f-49a1c36e9d20"
+    },
+    {
+      "claim_id": "b2bd223a-943e-446b-b438-aa36daa49684",
+      "result_id": "3f9dab67-280e-4438-8962-6b47a2c5fa33"
+    },
+    {
+      "claim_id": "a38c0a8a-f8a6-40ae-a93d-e6912d913dba",
+      "result_id": "3f9dab67-280e-4438-8962-6b47a2c5fa33"
+    },
+    {
+      "claim_id": "e60be60e-1540-4098-bb98-ba96788378b2",
+      "result_id": "3f9dab67-280e-4438-8962-6b47a2c5fa33"
+    },
+    {
+      "claim_id": "af753bd6-d30e-40a9-ae88-6268f10d370c",
+      "result_id": "3f9dab67-280e-4438-8962-6b47a2c5fa33"
+    },
+    {
+      "claim_id": "68903a37-4b64-4858-be82-eced98699ba2",
+      "result_id": "3f9dab67-280e-4438-8962-6b47a2c5fa33"
+    },
+    {
+      "claim_id": "fd5d1509-2455-4980-965a-342fa7878e1f",
+      "result_id": "fb49af28-ad31-453c-893c-f1fb08536900"
+    },
+    {
+      "claim_id": "6cd1251c-60e4-4a0a-9b99-867eb10ae51e",
+      "result_id": "71387d54-fda8-46c2-82a0-359630b800a5"
+    }
+  ],
+  "comparisons": []
+}

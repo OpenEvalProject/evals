@@ -1,0 +1,202 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The vHPC sends dense projections to both NAc and mPFC, with more extensive projections to NAc than mPFC. Anatomical tracing using AAV-CaMKII-Cre in Ai14 reporter mice and retrograde CAV2-Cre labeling confirmed these projections, with mCherry-labeled neurons detected in ventral CA1 and subiculum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are well-supported by anatomical tracing data shown in Figure 1. The use of Cre-dependent tdTomato expression in Ai14 mice (C24-C25) and retrograde CAV2-Cre labeling (C26) provides clear anatomical evidence for the vHPC\u2192NAc and vHPC\u2192mPFC pathways. The qualitative observation that NAc receives more extensive projections than mPFC is visually apparent in the figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "After 12 weeks of diet exposure (8 weeks pre-surgery + 4 weeks post-surgery), HFD mice showed significantly higher body weight and fat mass compared to control diet mice, confirming successful induction of obesity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by statistical analysis showing significant diet effects on body weight (F(1,82)=9.8, p=0.0025) and fat mass (F(1,82)=30.0, p<0.0001) as shown in Table 1. The sample sizes are adequate (n=43 CD, n=64 HFD) and the statistical approach is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "HFD exposure increased c-Fos expression in ventral CA1/subiculum, specifically in neurons projecting to NAc and mPFC, after object-based training. Chemogenetic silencing of either vHPC\u2192NAc or vHPC\u2192mPFC pathways normalized this HFD-induced overactivation. The effect was anatomically specific to CA1/subiculum and not observed in CA3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C45 are well-supported by c-Fos immunohistochemistry data in Figure 2. The statistical analyses show significant diet effects on c-Fos expression in CA1 (C30-C31) and significant DREADD effects normalizing this activation (C32-C40). The anatomical specificity is demonstrated by the lack of DREADD effect in CA3 (C41). The control for behavioral differences (C29) strengthens the interpretation that c-Fos differences reflect neural activation rather than behavioral confounds. The double-labeling approach (mCherry+ and c-Fos+) provides strong evidence for pathway-specific activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "HFD induced long-term object recognition memory deficits. Chemogenetic silencing of the vHPC\u2192NAc pathway, but not the vHPC\u2192mPFC pathway, rescued these HFD-induced ORM deficits. Control mice showed intact ORM, while HFD control mice showed impaired ORM that was restored by vHPC\u2192NAc silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C59 are supported by behavioral data in Figure 3A showing a significant diet\u00d7DREADD interaction for vHPC\u2192NAc groups (F(1,29)=10.2, p=0.01) but not vHPC\u2192mPFC groups. Post-hoc analyses and one-sample t-tests against chance (50%) confirm the pattern: CD controls show ORM (t(6)=2.67, p=0.037), HFD controls do not (t(5)=0.73, p=0.49), and HFD-Gi shows restored ORM (t(11)=6.65, p<0.0001). The double dissociation between pathways strengthens the conclusion. Sample sizes appear adequate though some groups are small (n=5-12).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "HFD induced object location memory deficits. Chemogenetic silencing of the vHPC\u2192mPFC pathway, but not the vHPC\u2192NAc pathway, rescued these HFD-induced OLM deficits. This represents the opposite pattern from ORM, demonstrating a double dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C73 are supported by behavioral data in Figure 3B showing a significant diet\u00d7DREADD interaction for vHPC\u2192mPFC groups (F(1,28)=4.3, p=0.047) but not vHPC\u2192NAc groups (F(1,29)=0.9, p=0.34). One-sample t-tests confirm the pattern: CD controls show OLM, HFD controls do not, and HFD-Gi vHPC\u2192mPFC shows restored OLM (t(10)=5.4, p=0.0003). The double dissociation with ORM results (C59, C64) is particularly compelling evidence for pathway-specific effects. However, the interpretation is complicated by the fact that CNO was present during both training and test (C103), making it unclear whether effects are on encoding, consolidation, or retrieval.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Neither HFD exposure nor chemogenetic manipulation of vHPC\u2192NAc or vHPC\u2192mPFC pathways affected anxiety-like behavior in the elevated plus-maze test, as measured by percentage of time in open arms or percentage of open arm entries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by statistical analyses showing no significant diet\u00d7pathway or diet\u00d7DREADD interactions for either time in open arms or open arm entries (all F's<1.1, p's>0.29) as shown in Figure 3\u2014figure supplement 1. This control experiment is important for ruling out anxiety as a confound in the memory effects. The lack of effect is consistent with some prior literature on periadolescent HFD (C108) but contrasts with adult HFD effects (C109).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C7",
+      "C59",
+      "C64",
+      "C82",
+      "C83",
+      "C84",
+      "C111",
+      "C112"
+    ],
+    "result": "The study demonstrates a double dissociation: vHPC\u2192NAc pathway silencing rescues HFD-induced recognition memory deficits but not location memory deficits, while vHPC\u2192mPFC pathway silencing rescues location memory deficits but not recognition memory deficits. This suggests HFD impairs different types of memory through overactivation of specific hippocampal efferent pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C7, C59, C64, C82-C84, C111-C112 collectively describe the main finding of pathway-specific rescue of memory deficits. The double dissociation is well-supported by the behavioral data showing opposite patterns for ORM and OLM across the two pathways. The statistical interactions and post-hoc tests support the specificity of effects. The interpretation that HFD causes memory deficits through pathway overactivation is supported by the c-Fos data (C3, C22, C30-C31) showing increased activation that is normalized by DREADD silencing (C32, C45). However, the causal link between overactivation and memory deficits, while plausible, is correlational.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C90",
+      "C91"
+    ],
+    "result": "HFD induces overactivation of a large neural network including vHPC (particularly ventral CA1/subiculum), NAc shell, and mPFC following object training. CNO-mediated chemogenetic inhibition effectively normalized this overactivation, validating the intersectional approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87, C90-C91 are supported by c-Fos data showing increased activation across multiple brain regions (Figure 2, Figure 2\u2014figure supplement 1). The regional specificity (more pronounced in ventral CA1/subiculum, C87) is consistent with anatomical knowledge. The validation of the chemogenetic approach (C90) is supported by the c-Fos data showing DREADD effects. However, C91's suggestion of a 'network effect' is speculative and not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The double dissociation in pathway-specific effects on ORM and OLM excludes involvement of neuronal collaterals and rules out confounding influences from sensory, motor, motivational, attentional processes, or anxiety differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 present logical inferences from the double dissociation pattern. The reasoning is sound: if the same neurons (via collaterals) or general processes affected both tasks, both memory types would be similarly affected. The anxiety control data (C76-C78) supports C107. However, the argument about collaterals (C105) assumes that the small proportion of dual-projecting neurons (C104: 5-10%) cannot account for the effects, which is reasonable but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C113",
+      "C114",
+      "C115",
+      "C117",
+      "C120"
+    ],
+    "result": "The findings have potential therapeutic implications, suggesting that targeting overactive hippocampal pathways could alleviate memory deficits. Future research should examine other vHPC pathways, other memory types, and develop therapeutic strategies for disorders with impaired hippocampal homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C113-C115, C117, C120 are speculative statements about therapeutic potential and future directions. While the rescue of memory deficits by pathway silencing (C4-C5) provides proof-of-concept, the therapeutic potential (C8, C120) is not directly tested and would require additional validation including reversibility, dose-response relationships, and assessment in disease models. These are reasonable interpretations and suggestions for future work but lack direct experimental support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The study used male C57BL/6J mice exposed to control or high-fat diet from 3 weeks of age for 13-14 weeks total. Males were chosen because female rodents do not consistently show memory deficits after post-weaning obesogenic diet, possibly due to protective effects of ovarian hormones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 describe the experimental subjects and rationale for sex selection. The methodological details are clearly stated. The rationale for using only males (C122-C123) is supported by citations to prior literature showing sex differences in diet effects. However, this limits generalizability of findings to females, which is a significant limitation not fully addressed in the discussion.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,596 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "LD score regression (LDSC) is a method to estimate narrow-sense heritability from genome-wide association study (GWAS) summary statistics alone.",
+    "claim_type": "EXPLICIT",
+    "source": "LD score regression (LDSC) is a method to estimate narrow-sense heritability from genome-wide association study (GWAS) summary statistics alone, making it a fast and popular approach.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the abstract as a description of the LDSC method.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "The inclusion of a cis-interaction score recovers genetic variance that is not captured by LDSC.",
+    "claim_type": "EXPLICIT",
+    "source": "By studying a wide range of generative models in simulations, and by re-analyzing 25 well-studied quantitative phenotypes from 349,468 individuals in the UK Biobank and up to 159,095 individuals in BioBank Japan, we show that the inclusion of a cis-interaction score (i.e. interactions between a focal variant and proximal variants) recovers genetic variance that is not captured by LDSC.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by simulation studies and empirical analyses of UK Biobank and BioBank Japan data presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "For each of the 25 traits analyzed in the UK Biobank and BioBank Japan, i-LDSC detects additional variation contributed by genetic interactions.",
+    "claim_type": "EXPLICIT",
+    "source": "For each of the 25 traits analyzed in the UK Biobank and BioBank Japan, i-LDSC detects additional variation contributed by genetic interactions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the abstract and supported by the results presented in Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Heritability is defined as the proportion of phenotypic trait variation that can be explained by genetic effects.",
+    "claim_type": "EXPLICIT",
+    "source": "Heritability is defined as the proportion of phenotypic trait variation that can be explained by genetic effects (Bulik-Sullivan et al., 2015b, Bulik-Sullivan et al., 2015a, Shi et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a standard definition in genetics supported by citations to established literature.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "It is now possible to obtain reliable heritability estimates from biobank-scale data sets of unrelated individuals.",
+    "claim_type": "EXPLICIT",
+    "source": "Due to advances in genomic sequencing and the steady development of statistical tools, it is now possible to obtain reliable heritability estimates from biobank-scale data sets of unrelated individuals (Bulik-Sullivan et al., 2015b; Shi et al., 2016; Hou et al., 2019; Pazokitoroudi et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to recent methodological advances in the field.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Many traits have a complex and polygenic basis with hundreds to thousands of individual genetic loci contributing to a single trait.",
+    "claim_type": "EXPLICIT",
+    "source": "Through the application of this approach over the last two decades, it has become clear that many traits have a complex and polygenic basis\u2014that is, hundreds to thousands of individual genetic loci across the genome often contribute to the genetic basis of variation in a single trait (Yengo et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an established finding in genetics supported by citation to a comprehensive study.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "LDSC is the most widely used approach for estimating heritability from GWAS summary statistics.",
+    "claim_type": "EXPLICIT",
+    "source": "The most widely used of these approaches is linkage disequilibrium (LD) score regression and the corresponding LDSC software (Bulik-Sullivan et al., 2015b), which corrects for inflation in GWAS summary statistics by modeling the relationship between the variance of SNP-level effect sizes and the sum of correlation coefficients between focal SNPs and their genomic neighbors (i.e. the LD score of each variant).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the introduction and is widely recognized in the field.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "The LDSC framework relies on the infinitesimal model which assumes all causal variants have the same expected contribution to phenotypic variation and are uniformly distributed along the genome.",
+    "claim_type": "EXPLICIT",
+    "source": "The formulation of the LDSC framework relies on the fact that the expected relationship between chi-square test statistics (i.e. the squared magnitude of GWAS allelic effect estimates) and LD scores holds when complex traits are generated under the infinitesimal (or polygenic) model which assumes: (i) all causal variants have the same expected contribution to phenotypic variation and (ii) causal variants are uniformly distributed along the genome.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the theoretical assumptions underlying the LDSC method.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "The estimand of the LDSC model is the proportion of phenotypic variance attributable to additive effects of genotyped SNPs.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, the estimand of the LDSC model is the proportion of phenotypic variance attributable to additive effects of genotyped SNPs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement about what LDSC estimates.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "LDSC only uses the diagonal elements of the squared LD matrix in its formulation.",
+    "claim_type": "EXPLICIT",
+    "source": "One limitation of LDSC is that, in practice, it only uses the diagonal elements of the squared LD matrix in its formulation which, while computationally efficient, does not account for information about trait architecture that is captured by the off-diagonal elements.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a specific limitation of the LDSC method.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Using only diagonal elements of the LD matrix leads to heritability estimates with large standard error.",
+    "claim_type": "EXPLICIT",
+    "source": "This tradeoff helps LDSC to scale genome-wide, but it has also been shown to lead to heritability estimates with large standard error (Ning et al., 2020, Zhang et al., 2021, Song et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to studies that have demonstrated this limitation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Non-additive genetic effects have been proposed as one of the main factors that explains 'missing' heritability.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, non-additive genetic effects have been proposed as one of the main factors that explains 'missing' heritability\u2014the proportion of heritability not explained by the additive effects of variants (Eichler et al., 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a well-established hypothesis in genetics supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "SNP-level GWAS summary statistics can provide evidence of non-additive genetic effects if there is a nonzero correlation between individual-level genotypes and their statistical interactions.",
+    "claim_type": "EXPLICIT",
+    "source": "The key insight we highlight in this manuscript is that SNP-level GWAS summary statistics can provide evidence of non-additive genetic effects contributing to trait architecture if there is a nonzero correlation between individual-level genotypes and their statistical interactions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the central theoretical insight of the paper, which is then validated through simulations and empirical analyses.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "i-LDSC recovers 'missing' heritability by leveraging the 'tagged' relationship between linear and nonlinear genetic effects.",
+    "claim_type": "EXPLICIT",
+    "source": "We present the 'interaction-LD score' regression model or i-LDSC: an extension of the LDSC framework which recovers 'missing' heritability by leveraging this 'tagged' relationship between linear and nonlinear genetic effects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the mechanism by which i-LDSC improves upon LDSC.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "i-LDSC includes an additional set of 'cis-interaction' LD scores in its regression model.",
+    "claim_type": "EXPLICIT",
+    "source": "The main difference between i-LDSC and LDSC is that the i-LDSC model includes an additional set of 'cis-interaction' LD scores in its regression model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement about the methodological difference between the two approaches.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Cis-interaction LD scores measure the amount of phenotypic variation contributed by genetic interactions that can be explained by additive effects.",
+    "claim_type": "EXPLICIT",
+    "source": "These scores measure the amount of phenoytpic variation contributed by genetic interactions that can be explained by additive effects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This defines what the cis-interaction LD scores represent.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "i-LDSC recovers substantial non-additive heritability that is not captured by LDSC when genetic interactions are present in the generative model.",
+    "claim_type": "EXPLICIT",
+    "source": "Through extensive simulations, we show that i-LDSC recovers substantial non-additive heritability that is not captured by LDSC when genetic interactions are indeed present in the generative model for a given complex trait.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the simulation results presented in Figure 3 and related supplementary figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "i-LDSC has a calibrated type I error rate and does not overestimate contributions of genetic interactions when only additive effects are present.",
+    "claim_type": "EXPLICIT",
+    "source": "More importantly, i-LDSC has a calibrated type I error rate and does not overestimate contributions of genetic interactions to trait variation in simulated data when only additive effects are present.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by the null simulations presented in Figure 2 and related supplementary figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Pairwise interactions are a source of 'missing' heritability captured by additive GWAS summary statistics.",
+    "claim_type": "EXPLICIT",
+    "source": "While analyzing 25 complex traits in the UK Biobank and BioBank Japan, we illustrate that pairwise interactions are a source of 'missing' heritability captured by additive GWAS summary statistics\u2014suggesting that phenotypic variation due to non-additive genetic effects is more pervasive in human phenotypes than previously reported.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the empirical analyses of UK Biobank and BioBank Japan data presented in Table 1 and Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "All 25 traits in the UK Biobank have evidence of tagged genetic interaction effects contributing to heritability estimates.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, we find evidence of tagged genetic interaction effects contributing to heritability estimates in all of the 25 traits in the UK Biobank, and 23 of the 25 traits we analyzed in the BioBank Japan.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is directly stated and supported by the results in Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "23 of the 25 traits analyzed in BioBank Japan have evidence of tagged genetic interaction effects.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, we find evidence of tagged genetic interaction effects contributing to heritability estimates in all of the 25 traits in the UK Biobank, and 23 of the 25 traits we analyzed in the BioBank Japan.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is directly stated and supported by the results in Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The genotype matrix X and the interaction matrix W are correlated despite being linearly independent.",
+    "claim_type": "EXPLICIT",
+    "source": "The second key takeaway is that the genotype matrix \ud835\udc17 and the matrix of genetic interactions \ud835\udc16 themselves are correlated despite being linearly independent (see Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a mathematical property that is derived in the Materials and Methods section.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "i-LDSC robustly detects significant tagged non-additive genetic variance regardless of the total number of causal interactions genome-wide.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 1 demonstrates that i-LDSC robustly detects significant tagged non-additive genetic variance, regardless of the total number of causal interactions genome-wide.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results shown in Figure 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "The power of i-LDSC depends on the proportion of phenotypic variation that is generated by additive versus interaction effects.",
+    "claim_type": "EXPLICIT",
+    "source": "Instead, the power of i-LDSC depends on the proportion of phenotypic variation that is generated by additive versus interaction effects (\u03c1), and its power tends to scale with the window size used to compute the cis-interaction LD scores (see Materials and methods).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown by the simulation results in Figure 1 where power varies with \u03c1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "i-LDSC captures more genetic variance than LDSC when traits are generated with cis-acting SNP-by-SNP interaction effects.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 3 depicts boxplots of the heritability estimates for each approach and shows that, across an array of different synthetic phenotype architectures, LDSC captures less of phenotypic variance explained by all genetic effects.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by comparing LDSC and i-LDSC heritability estimates in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "i-LDSC can yield upwardly biased heritability estimates when the cis-interaction scores are computed over genomic window sizes that are too small.",
+    "claim_type": "EXPLICIT",
+    "source": "It is important to note that i-LDSC can yield upwardly biased heritability estimates when the cis-interaction scores are computed over genomic window sizes that are too small; however, these estimates become more accurate for larger window size choices (Figure 3\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 3\u2014figure supplement 1 where smaller window sizes lead to biased estimates.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "i-LDSC accurately partitions genetic effects into additive versus cis-interacting components.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast to LDSC, which aims to capture phenotypic variance attributable to the additive effects of genotyped SNPs, i-LDSC accurately partitions genetic effects into additive versus cis-interacting components, which in turn generally leads the ability of i-LDSC to capture more genetic variance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by the simulation results showing accurate partitioning of variance components.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "In each of the 25 traits analyzed in the UK Biobank, significant proportions of estimated genetic variation stemming from tagged pairwise cis-interactions were detected.",
+    "claim_type": "EXPLICIT",
+    "source": "In each of the 25 traits, we analyzed in the UK Biobank, we detected significant proportions of estimated genetic variation stemming from tagged pairwise cis-interactions (Table 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is directly stated and supported by the results in Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "Traditional LDSC produces lower estimates of trait heritability than i-LDSC because it does not consider additional sources of genetic signal.",
+    "claim_type": "EXPLICIT",
+    "source": "Generally, we find that the traditional LDSC produces lower estimates of trait heritability because it does not consider the additional sources of genetic signal that i-LDSC does (Table 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown by comparing LDSC and i-LDSC estimates in Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "HDL and triglyceride levels were the only traits in BioBank Japan without significant nonlinear components detected by i-LDSC.",
+    "claim_type": "EXPLICIT",
+    "source": "In BioBank Japan, 23 of the 25 traits analyzed had a significant nonlinear component detected by i-LDSC \u2014 with HDL and triglyceride levels being the only exceptions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is directly stated and supported by the p-values in Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Height is the trait with the most significant evidence of tagged cis-interaction effects in GWAS summary statistics.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, the trait with the most significant evidence of tagged cis-interaction effects in GWAS summary statistics is height which is known to have a highly polygenic architecture.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly and can be verified from the p-values in Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "When cis-interaction scores are included as an annotation alongside 97 other functional categories in stratified-LD score regression, s-LDSC heritability estimates still show an increase but at a much smaller magnitude.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, s-LDSC heritability estimates still showed an increase with the interaction scores versus when the publicly available functional categories were analyzed alone, but albeit at a much smaller magnitude (Table 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown by comparing s-LDSC and s+i-LDSC estimates in Table 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "In the stratified analysis with additional annotations, the estimates of the non-additive components were no longer statistically significant for any of the traits in the UK Biobank.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, in this analysis, the estimates of the non-additive components were no longer statistically significant for any of the traits in the UK Biobank (Table 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown by the p-values in Table 2 which are all greater than 0.05.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "The intercept estimates from LDSC and i-LDSC are highly correlated in both the UK Biobank and BioBank Japan.",
+    "claim_type": "EXPLICIT",
+    "source": "The intercepts estimated by LDSC and i-LDSC are also highly correlated in both the UK Biobank and the BioBank Japan (Figure 4\u2014figure supplement 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 4\u2014figure supplement 1B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The i-LDSC intercept estimates tend to be correlated with, but are generally different than, those computed with LDSC.",
+    "claim_type": "EXPLICIT",
+    "source": "The i-LDSC intercept estimates tend to be correlated with, but are generally different than, those computed with LDSC \u2014 empirically indicating that non-additive genetic variation is partitioned away and is missed when using the standard LD score alone.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the results shown in Figure 4\u2014figure supplement 1B.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Cis-interaction scores are not enough to recover missing genetic variation for all types of trait architectures.",
+    "claim_type": "EXPLICIT",
+    "source": "Collectively, these results empirically show the important point that cis-interaction scores are not enough to recover missing genetic variation for all types of trait architectures; however, they are helpful in recovering phenotypic variation explained by statistical interaction effects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the simulation results with G\u00d7E and G\u00d7Ancestry effects.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Breaking the relationship assumed under the LDSC framework between LD scores and chi-squared statistics led to unbounded estimates of heritability in all but the polygenic scenario.",
+    "claim_type": "EXPLICIT",
+    "source": "Breaking the relationship assumed under the LDSC framework between LD scores and chi-squared statistics (i.e. that they are generally positively correlated) led to unbounded estimates of heritability in all but the (polygenic) scenario when 100% of SNPs contributed to the phenotypic variation (Figure 3\u2014figure supplement 8).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 3\u2014figure supplement 8 with sparse trait architectures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The omission of causal haplotypes had a negligible effect on the estimated value of the coefficients in i-LDSC across a range of minor allele frequencies and effect sizes.",
+    "claim_type": "EXPLICIT",
+    "source": "In the first setting, we observed that, across a range of both minor allele frequencies and effect sizes, the omission of causal haplotypes had a negligible effect on the estimated value of the coefficients in i-LDSC (Figure 3\u2014figure supplement 9).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 3\u2014figure supplement 9.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The mean estimate of the genetic variance in both LDSC and i-LDSC had a slight upward bias as the correlation between additive and interaction effect sizes in the generative model increased.",
+    "claim_type": "EXPLICIT",
+    "source": "Lastly, in the third setting, we observed that the mean estimate of the genetic variance in both LDSC and i-LDSC had a slight upward bias as the correlation between additive and interaction effect sizes in the generative model increased; however, the median of these bias estimates was still near zero across all simulated scenarios and their corresponding replicates (Figure 3\u2014figure supplements 12 and 13).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 3\u2014figure supplements 12 and 13.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Cis-interaction LD scores calculated using larger windows lead to the most robust estimates of heritability.",
+    "claim_type": "EXPLICIT",
+    "source": "In practice, we find that cis-interaction LD scores that are calculated using larger windows lead to the most robust estimates of heritability while also not over representing the total phenotypic variation explained by tagged non-additive genetic effects (see Figure 3\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 3\u2014figure supplement 1 comparing different window sizes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The relationship between MAF and effect size is already implicitly encoded in the LDSC formulation since genotypes are normalized.",
+    "claim_type": "EXPLICIT",
+    "source": "The relationship between MAF and effect size is already implicitly encoded in the LDSC formulation since we assume genotypes are normalized.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an explanation of how MAF affects the LDSC model.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "When normalizing by the variance of each SNP, we make the assumption that rare variants inherently have larger effect sizes.",
+    "claim_type": "EXPLICIT",
+    "source": "When normalizing by the variance of each SNP (or equivalently its MAF), we make the assumption that rare variants inherently have larger effect sizes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an explanation of the implicit assumption in the normalization procedure.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Age, sex, and the first 20 principal components were included as covariates for all traits analyzed in the UK Biobank.",
+    "claim_type": "EXPLICIT",
+    "source": "Age, sex, and the first 20 principal components were included as covariates for all traits analyzed (Sohail et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the covariate adjustment strategy used in the GWAS analyses.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "After quality control, 8,981,412 SNPs remained for GWAS analysis in the UK Biobank.",
+    "claim_type": "EXPLICIT",
+    "source": "We then performed a genome-wide association study (GWAS) for each trait in the UK Biobank on the remaining 8,981,412 SNPs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement about the number of SNPs analyzed.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

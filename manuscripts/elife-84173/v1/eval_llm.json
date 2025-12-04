@@ -1,0 +1,188 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The manuscript reviews prior literature establishing ketamine as a promising treatment for treatment-resistant depression, noting individual variability in response, acute psychotomimetic effects, and inconsistent findings regarding ketamine's effects on prefrontal cortex global brain connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 are all supported by appropriate citations to prior published work. These claims accurately summarize the existing literature on ketamine's therapeutic potential, individual response variability, and neural effects. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The study employed a single-blind, within-subjects design with 40 participants, administering placebo first and ketamine second (non-counterbalanced), achieving target serum ketamine concentrations of 470 nmol/L, though participants correctly identified ketamine 100% of the time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "While the methodological details are clearly stated (C8-C13), the 100% correct identification rate (C12) fundamentally undermines the single-blind design (C10), creating a critical confound. The non-counterbalanced order (C11) combined with complete unblinding means behavioral and neural effects could reflect expectancy effects rather than pharmacological effects. The power calculation (C9) assumes a medium effect size but provides no justification for this assumption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C32"
+    ],
+    "result": "Principal component analysis of ketamine-induced changes in global brain connectivity revealed five significant bidirectional axes of variation, with PC1 explaining 14.1% and PC2 explaining 10.4% of variance, together accounting for 42.1% of total variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PCA results (C14-C17, C32) are clearly presented with appropriate statistical validation via permutation testing. The finding of multiple significant PCs supports the claim of multidimensional neural effects. However, the interpretation would be strengthened by addressing potential confounds from the unblinded design and non-counterbalanced order.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Ketamine showed significantly higher effective dimensionality compared to LSD and psilocybin, while LSD and psilocybin did not differ from each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The effective dimensionality comparison (C18-C19) is supported by appropriate statistical testing (one-way ANOVA with post-hoc tests) and careful control for sample size differences across studies. The finding is clearly presented in Figure 2C with error bars and significance indicators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "PC1 of ketamine-induced GBC changes showed significant correlations with SST (r=0.47, p<0.001) and PVALB (r=-0.22, p=0.025) cortical gene expression patterns, while mean GBC changes showed no significant correlations with these gene expression maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gene expression correlations (C20-C22) are supported by rigorous spatial autocorrelation-preserving permutation testing (100,000 permutations). The contrast between PC1 and mean effects strengthens the argument for multidimensional analysis. However, the authors appropriately note this does not establish gene specificity given widespread spatial correlation patterns in brain gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Behavioral PCA revealed two significant bidirectional axes of variation in ketamine-induced symptom changes, with PC1 explaining 29% and PC2 explaining 12% of variance, together capturing 41.4% of total variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral PCA results (C23-C25) are clearly presented with permutation testing validation. The two-factor solution differs from typical five-factor PANSS models, which the authors acknowledge may reflect the acute ketamine context rather than chronic psychosis. The retrospective assessment 180 minutes post-administration may introduce recall bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Neuro-behavioral PC1 and PC2 differentiate between association and sensory networks (p<0.001), and neuro-behavioral PC1 tracks SST and PVALB gene expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The neuro-behavioral mapping results (C26-C27) demonstrate meaningful relationships between behavioral variation and neural patterns. The association/sensory network differentiation is statistically significant, and the gene expression relationships are validated with appropriate permutation testing. This provides convergent evidence linking behavioral, neural, and molecular levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "Behavioral PC1 scores were highly correlated with neuro-behavioral PC1 scores (r=0.7, p<0.001), indicating preserved subject ordering across behavioral-only and neuro-behavioral analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation (C28) is strong and statistically significant, supporting the claim that behavioral variation maps onto neural variation in a consistent manner across subjects. This is a key finding for the proposed framework linking behavioral and neural responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Neuro-behavioral PC1 showed a significant positive correlation with SST (r=0.29, p=0.009) and a non-significant negative correlation with PVALB (r=-0.14, p=0.089).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gene expression correlations for neuro-behavioral PC1 (C29) are appropriately tested with spatial autocorrelation-preserving permutations. The SST correlation is significant while PVALB is not, suggesting differential relationships with these interneuron markers. The modest effect sizes are appropriate given the complexity of brain-behavior-gene relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Individual participants (35/40) showed distinct associations with SST and PVALB gene expression patterns, with the difference in SST-PVALB correlations significantly related to neuro-behavioral PC1 scores (r=0.67, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The individual-level gene expression analysis (C30-C31) demonstrates that the group-level patterns hold at the single-subject level for most participants. The strong correlation (r=0.67) between SST-PVALB differences and neuro-behavioral PC1 scores provides compelling evidence for individual variation in molecular mechanisms. However, the interpretation assumes gene expression patterns from postmortem brains generalize to living participants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "The bidirectional nature of the principal components helps explain contradictory results in the ketamine resting-state literature where effect directions are often inconsistent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C33 offers a plausible interpretation of prior inconsistent findings, this remains speculative without reanalysis of the cited studies using the proposed multidimensional framework. The claim is supported by citations showing inconsistent directions of effects, but direct evidence that those inconsistencies reflect the bidirectional PCs identified here is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The manuscript reviews the mechanistic rationale for focusing on SST and PVALB interneurons, including their sensitivity to ketamine via NMDA receptor configuration, differential regional expression patterns, and alterations in depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 appropriately cite prior literature establishing the biological rationale for examining SST and PVALB interneurons. The citations appear appropriate and the mechanistic framework (indirect hypothesis via interneuron disinhibition) is well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The manuscript acknowledges limitations including lack of follow-up scans at 24-72 hours post-infusion when antidepressant effects peak, and potential confounds from cardiovascular effects of ketamine, psilocybin, and LSD on resting-state connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The acknowledged limitations (C40-C43) are appropriately cited and represent genuine concerns for interpretation. The lack of follow-up scans means the study cannot address ketamine's delayed therapeutic effects. The cardiovascular confound is particularly important given that heart rate and blood pressure affect resting-state connectivity, yet these measures were not collected or regressed out.",
+    "result_type": "MINOR"
+  }
+]

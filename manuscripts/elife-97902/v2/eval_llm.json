@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "An analog-sensitive allele of CDK1 (cdk1as2) was generated and validated. Treatment with 10 \u00b5M 1-NA-PP1 specifically inhibited CDK1 activity in cdk1as2 neuroblasts, causing cell cycle arrest, reversion to interphase in prophase cells, and mitotic slippage in metaphase-arrested cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 collectively demonstrate successful generation and validation of the cdk1as2 allele. Multiple independent phenotypes (cell cycle arrest, prophase reversion, mitotic slippage) upon 1-NA-PP1 treatment in cdk1as2 but not control neuroblasts provide strong converging evidence for specific CDK1 inhibition. The phenotypes match expected effects from prior literature (C6, C8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Dose-response analysis revealed that cdk1as2 neuroblasts stop proliferating at \u22651 \u00b5M 1-NA-PP1 but continue at slower rates with 0.5 \u00b5M, establishing that 10 \u00b5M likely fully inhibits CDK1 while 0.5 \u00b5M partially inhibits it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 establish a clear dose-response relationship supported by experimental data (Figure 1\u2014figure supplement 1A). The inference that 10 \u00b5M fully inhibits while 0.5 \u00b5M partially inhibits CDK1 (C14, C15) is reasonable given the complete vs. partial proliferation arrest, though direct biochemical measurement of CDK1 activity would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Partial CDK1 inhibition (0.5 \u00b5M 1-NA-PP1) prevents apical Baz crescent coalescence at NEB without abolishing polarity. Baz still polarizes but crescents appear fainter and wider than controls, failing to coalesce into the characteristic bright, narrow crescents. This phenotype persists in sensitized contexts (Baz domain deletion mutants, embryonic neuroblasts), demonstrating that high CDK1 activity is required for apical coalescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19, C22-C24 provide consistent evidence across multiple experimental contexts (larval neuroblasts, domain deletion mutants, embryonic neuroblasts) showing that partial CDK1 inhibition specifically disrupts coalescence without eliminating polarity. The data in Figures 2A-C support this conclusion. This contrasts with prior reports of complete polarity loss (C20), which the authors address through experimental design differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Partial CDK1 inhibition causes transient destabilization of Baz crescents in cycling neuroblasts (9.8% decrease over 75s in metaphase) but not in metaphase-arrested neuroblasts. Coalescence can occur after NEB when CDK1 activity is restored in arrested cells, demonstrating that NEB and coalescence can be temporally uncoupled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 reveal a context-dependent effect of partial CDK1 inhibition on Baz stability. The quantitative data (C25, C26) show statistically significant but modest destabilization in cycling cells. The stability in arrested cells (C27) and rescue upon washout (C28) are well-documented. The uncoupling of NEB and coalescence (C30) is a novel mechanistic insight supported by the washout experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Partial CDK1 inhibition leads to dimmer apical aPKC crescents and significantly increased basal Numb levels (41\u00b151% increase), with a slight non-significant increase in Miranda (20\u00b149%). This demonstrates that preventing apical coalescence affects basal polarity establishment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 show that defective apical coalescence has downstream consequences for basal polarity. The significant increase in Numb (C32) is well-supported by data in Figure 2H,K, while the Miranda increase (C33) is noted as non-significant. The conclusion (C34) appropriately summarizes these findings, though the mechanism linking apical coalescence to basal determinant levels remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Sequence analysis identified three consensus CDK phosphorylation sites in Baz, including S180 and S417 previously found phosphorylated in proteomics studies. The presence of Cyclin-binding and Cks1-binding motifs near these sites suggests CDK regulation of Baz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 combine computational sequence analysis with literature evidence. The identification of consensus sites is straightforward bioinformatics (C35), and the prior detection of S180 and S417 phosphorylation (C36, C37) provides independent validation. The presence of regulatory motifs (C38) strengthens the hypothesis of CDK regulation, though this remains predictive rather than demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "A phospho-specific antibody against Baz-pS180 reveals that this site is specifically phosphorylated during asymmetric cell divisions (neuroblasts, SOPs) but not during symmetric divisions (neuroepithelial cells, epidermal cells) in larval brains, imaginal discs, and pupal nota at 16hr APF. Cyclin A colocalizes with Baz-pS180 in mitotic SOPs but no cyclins localize to the cortex in neuroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 establish a striking cell-type-specific phosphorylation pattern using a validated phospho-specific antibody. The consistent observation across multiple tissues and developmental stages (Figures 3B-D) strongly supports asymmetric-division-specific phosphorylation. The differential cyclin localization (C42, C43) suggests tissue-specific mechanisms. Antibody specificity is confirmed by C49.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "RNAi depletion of endogenous Baz::mScarlet causes expected Mira localization defects that are rescued by BazWT::GFP. Both BazS180A and BazS180D phosphomutants localize similarly to BazWT throughout the cell cycle and are stably retained at the apical pole in metaphase-arrested neuroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 establish that the experimental system works (rescue of depletion phenotype) and that S180 phosphorylation is not required for basic Baz localization. The data in Figures 4A-D support these conclusions. Antibody specificity confirmation (C49) validates the phospho-specific reagent. This sets up the functional analysis of more subtle phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Baz-S180 phosphomutants show delayed basal polarity establishment in neuroblasts. Mira crescents reach normal cortical/cytoplasmic ratios only at metaphase (BazS180A) or anaphase (BazS180D) instead of earlier stages. Numb shows transient mislocalization in some BazS180D metaphase cells but corrects by anaphase. S180 phosphorylation is not required for Baz localization but controls timing of basal polarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 demonstrate a specific temporal defect in basal polarity establishment. The quantitative data in Figure 4E-F show statistically significant delays. The transient nature of defects (C55) and eventual correction suggest a timing rather than absolute requirement. The conclusion (C56) appropriately summarizes these findings, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "In a sensitized baz/delta double RNAi background, Baz-S180 phosphomutants show increased macrochaete bristle formation, more SOP specification, and more socket-to-shaft transformations compared to BazWT rescue. This indicates that S180 phosphorylation affects both SOP specification (lateral inhibition) and subsequent asymmetric divisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 demonstrate functional consequences of S180 phosphorylation in sensory organ development using a sensitized genetic background. The quantitative data in Figures 5D'-G show statistically significant effects. The dual role in specification and ACD (C63) is supported by distinct phenotypes at different developmental stages. The requirement for delta depletion to reveal phenotypes suggests functional redundancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Baz-pS180 signal is detected at 8hr APF in patches overlapping Delta-positive stripes (proneural regions) but also in regions without SOPs, suggesting additional developmental roles beyond asymmetric cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 extend the phosphorylation pattern to earlier developmental stages. The observation of Baz-pS180 outside of ACD contexts (C65) is well-documented in Figure 5H. The inference of additional roles (C66) is reasonable but speculative. This finding complicates the simple model of ACD-specific phosphorylation established in C44.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Mosaic expression of Baz::GFP constructs in SOP lineages reveals that S180 phosphomutants show normal localization during pI division but altered localization during pIIa division. BazS180A forms weaker posterior crescents while BazS180D shows enlarged, anteriorly-displaced crescents in pIIa metaphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 demonstrate cell-type-specific effects of S180 phosphorylation within the SOP lineage. The mosaic expression pattern (C67), while unexpected, enables analysis of cell-autonomous effects. The quantitative data in Figure 6D-E' show statistically significant differences in pIIa but not pI. This reveals surprising specificity in phosphorylation function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Mosaic Baz::GFP expression reveals that both pIIb and pIIa contribute to basolateral Baz nanoclusters, but the cortical patch during pIIa division contains Baz exclusively from pIIIb (the pIIb daughter).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 use mosaic expression to dissect cellular contributions to different Baz pools. The data in Figure 6\u2014figure supplement 1E-G clearly distinguish the two structures. This is a novel finding about Baz localization in SOPs, though it is somewhat tangential to the main phosphorylation story.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "pIIb division orientation is controlled non-autonomously by Baz levels in its sister cell pIIa. When Baz::GFP is present in both cells, pIIb divides perpendicular to the epithelium (normal), but when present only in pIIb, it divides within the plane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 reveal an unexpected non-cell-autonomous function of Baz in controlling division orientation. The data in Figure 6\u2014figure supplement 1H-I show a clear correlation between Baz expression pattern and division orientation. This is a novel finding, though the mechanism is unclear and it appears to be a serendipitous discovery from the mosaic expression pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "In vitro kinase assays demonstrate that CDK1/CyclinB1 phosphorylates Baz-S180 and human PARD3-S187. Mass spectrometry confirms S180 and S187 as CDK1 substrates, with S187 positioned similarly to S180 near a 14-3-3 binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 provide direct biochemical evidence for CDK1-mediated phosphorylation. The western blot (Figure 7B) and mass spectrometry data (Figure 7A, Supplementary file 1) clearly demonstrate in vitro phosphorylation of both Drosophila and human proteins. The conservation of site position relative to 14-3-3 binding sites (C83) suggests functional conservation, though in vivo phosphorylation of PARD3-S187 remains to be demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Prior work reported that dominant negative or thermosensitive cdk1 alleles disrupt neuroblast polarity, leading to the proposal that asymmetric division strictly requires high CDK1 activity. However, the current study's findings with partial CDK1 inhibition contradict complete polarity loss, possibly due to differences in experimental approaches or affected proteins (Baz vs. Inscuteable).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C90 address discrepancies with prior literature. The authors appropriately note that their results (partial inhibition preserves polarity) differ from Tio et al. 2001. The proposed explanations (neomorphic effects of dominant negative, Inscuteable vs. Baz) are reasonable but speculative. Without direct comparison experiments, the source of discrepancy remains uncertain.",
+    "result_type": "MINOR"
+  }
+]

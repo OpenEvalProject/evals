@@ -1,0 +1,1459 @@
+{
+  "submission": {
+    "id": "96913d3e-3b70-490d-8876-14c1c2c865d7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T01:44:11.850347Z",
+    "updated_at": "2025-12-04T01:44:11.850347Z"
+  },
+  "content": [
+    {
+      "id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "submission_id": "96913d3e-3b70-490d-8876-14c1c2c865d7",
+      "content_type": "manuscript",
+      "content_text": "# Statistical inference reveals the role of length, GC content, and local sequence in V(D)J nucleotide trimming\n\n## Authors\n\n- Magdalena L Russell<sup>1</sup> ([ORCID: 0000-0002-1068-1968](https://orcid.org/0000-0002-1068-1968)) \u2020\n- Noah Simon<sup>3</sup>\n- Philip Bradley<sup>1</sup> ([ORCID: 0000-0002-0224-6464](https://orcid.org/0000-0002-0224-6464)) \u2020\n- Frederick A Matsen<sup>1</sup> ([ORCID: 0000-0003-0607-6025](https://orcid.org/0000-0003-0607-6025)) \u2020\n\n### Affiliations\n\n1. Computational Biology Program, Fred Hutchinson Cancer Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))\n2. Molecular and Cellular Biology Program, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n3. Department of Biostatistics, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n4. Institute for Protein Design, Department of Biochemistry, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n5. Department of Genome Sciences, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n6. Department of Statistics, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n7. Howard Hughes Medical Institute Seattle United States ([ROR:006w34k90](https://ror.org/006w34k90))\n\n\u2020 Corresponding author\n\n## Abstract\n\nTo appropriately defend against a wide array of pathogens, humans somatically generate highly diverse repertoires of B cell and T cell receptors (BCRs and TCRs) through a random process called V(D)J recombination. Receptor diversity is achieved during this process through both the combinatorial assembly of V(D)J-genes and the junctional deletion and insertion of nucleotides. While the Artemis protein is often regarded as the main nuclease involved in V(D)J recombination, the exact mechanism of nucleotide trimming is not understood. Using a previously published TCR\u03b2 repertoire sequencing data set, we have designed a flexible probabilistic model of nucleotide trimming that allows us to explore various mechanistically interpretable sequence-level features. We show that local sequence context, length, and GC nucleotide content in both directions of the wider sequence, together, can most accurately predict the trimming probabilities of a given V-gene sequence. Because GC nucleotide content is predictive of sequence-breathing, this model provides quantitative statistical evidence regarding the extent to which double-stranded DNA may need to be able to breathe for trimming to occur. We also see evidence of a sequence motif that appears to get preferentially trimmed, independent of GC-content-related effects. Further, we find that the inferred coefficients from this model provide accurate prediction for V- and J-gene sequences from other adaptive immune receptor loci. These results refine our understanding of how the Artemis nuclease may function to trim nucleotides during V(D)J recombination and provide another step toward understanding how V(D)J recombination generates diverse receptors and supports a powerful, unique immune response in healthy humans.\n\n## Introduction\n\nCells throughout the body regularly present protein fragments, known as antigens, on cell-surface molecules called major histocompatibility complex (MHC). Receptors on the surface of T cells can bind to these MHC-bound antigens, recognize them, and, if necessary, initiate an immune response. For an individual to be capable of defending against a wide array of potential foreign pathogens, they somatically generate a massive diversity of T cell receptors (TCRs) through a random process called V(D)J recombination. After generation, TCRs undergo a selection process to ensure proper expression, MHC recognition, and limited autoreactivity. The collection of TCRs in an individual comprises their TCR repertoire.\n\nThe majority of human T cells express \u03b1-\u03b2 receptors that consist of an \u03b1 and a \u03b2 protein chain. During the V(D)J recombination process of the \u03b2 chain, a single V-, D-, and J-gene are randomly chosen from a pool of V-gene, D-gene, and J-gene segments within the germline TCR\u03b2 locus over a series of steps. To begin this process, the recombination activating gene protein complex aligns a randomly chosen D- and J-gene, removes the intervening chromosomal DNA between the two genes, and forms a hairpin loop at the end of each gene (Gellert, 1994; Fugmann et al., 2000; Schatz and Swanson, 2011). Each hairpin loop is then nicked open, typically in an asymmetrical fashion, by the Artemis:DNA-PKcs protein complex (Ma et al., 2002; Lu et al., 2007). This asymmetrical hairpin opening creates a single-stranded DNA overhang at the end of both genes that, depending on the location of the hairpin nick, may contain P-nucleotides (short palindromes of gene terminal sequence) (Gauss and Lieber, 1996; Nadel and Feeney, 1997; Ma et al., 2002; Jackson et al., 2004; Lu et al., 2007). The most dominant hairpin opening position leads to a single-stranded 3\u2019 overhang that is 4 nucleotides in length (2 nucleotides of which are P-nucleotides) (Lu et al., 2007). From here, nucleotides may be deleted from each gene end through an incompletely understood mechanism suggested to involve Artemis (Feeney et al., 1994; Nadel and Feeney, 1995; Nadel and Feeney, 1997; Jackson et al., 2004; Gu et al., 2010; Chang et al., 2015; Chang and Lieber, 2016; Zhao et al., 2020; Russell et al., 2022b). This nucleotide trimming can remove traces of P-nucleotides (Gauss and Lieber, 1996; Srivastava and Robins, 2012). Non-template-encoded nucleotides, known as N-insertions, can also be added to each gene end by the enzyme terminal deoxynucleotidyl transferase (Kallenbach et al., 1992; Gilfillan et al., 1993; Komori et al., 1993). Once the nucleotide addition and deletion steps are completed, the gene segments are paired and ligated together (Zhao et al., 2020). From here, the process is repeated between a random V-gene and this combined D-J junction to complete the TCR\u03b2 chain. A similar TCR chain recombination then proceeds, though without a D-gene, to complete the \u03b1-\u03b2 TCR. Other adaptive immune receptor loci, such as TRG, TRD, and all IG loci, also undergo V(D)J recombination during the development of \u03b3-\u03b4 T cells and B cells, respectively.\n\nJunctional diversity created by the deletion and non-templated insertion of nucleotides during V(D)J recombination contributes substantially to the resulting diversity of the TCR repertoire. Small variations in gene sequence have been shown to lead to large changes in the extent of nucleotide deletion (Nadel and Feeney, 1995; Gauss and Lieber, 1996; Nadel and Feeney, 1997; Jackson et al., 2004). For example, sequences with high AT content suffer greater nucleotide loss than sequences with high GC content (Gauss and Lieber, 1996). These findings are suggestive of a nuclease that either binds an AT-rich sequence motif or requires an AT-specific structure (e.g. a sequence that breathes, Tsai et al., 2009), however, further work is required to quantify this mechanistic preference.\n\nThe Artemis protein is often regarded as the main nuclease involved in V(D)J recombination (Chang et al., 2015; Chang and Lieber, 2016; Zhao et al., 2020). Artemis is a member of the metallo-$\\beta$-lactamase family of nucleases (Moshous et al., 2001) and is widely regarded as a structure-specific nuclease as opposed to a nuclease that binds specific DNA sequences (Ma et al., 2005; Chang et al., 2015; Chang and Lieber, 2016; Yosaatmadja et al., 2021). Members of this family are characterized by their conserved metallo-\u03b2-lactamase and \u03b2-CASP domains and their ability to nick DNA or RNA in various configurations (Dominski, 2007; Pettinati et al., 2016). Alone, Artemis possesses intrinsic 5\u2019-to-3\u2019 exonuclease activity on single-stranded DNA (Li et al., 2014). On double-stranded DNA, Artemis, in complex with DNA-PKcs, has endonuclease activity on 5\u2019 and 3\u2019 DNA overhangs and on DNA hairpins (Ma et al., 2002; Lu et al., 2007; Lu et al., 2008). It has been proposed that the Artemis:DNA-PKcs complex binds single-stranded-to-double-stranded DNA boundaries prior to nicking (Ma et al., 2002; Ma et al., 2005; Lu et al., 2007; Chang and Lieber, 2016); for blunt DNA ends, previous work has concluded that sequence-breathing is required to achieve this structural configuration prior to Artemis action (Chang et al., 2015). Further, Artemis, in complex with XRCC4-DNA ligase IV, has additional endonuclease activity on 3\u2019 DNA overhangs and preferentially nicks one nucleotide at a time from the single-stranded 3\u2019 end (Chang et al., 2016; Gerodimos et al., 2017). Despite these diverse nucleolytic functions, the extent of involvement and exact mechanism of action for the Artemis protein during the nucleotide trimming step of V(D)J recombination, and how it relates to observed sequence-dependent changes in trimming (Nadel and Feeney, 1995; Gauss and Lieber, 1996; Nadel and Feeney, 1997; Jackson et al., 2004), has yet to be fully understood.\n\nWhile molecular experiments using model organisms have been essential for establishing the current mechanistic understanding of the nucleotide trimming process, studies in humans have been limited. Statistical inference on high-throughput repertoire sequencing data sets allows for exploration of the in vivo V(D)J recombination mechanism outside of model organisms. In particular, analysis of trimming in high-throughput data sets should lead to insights about the natural underlying process, in the same way that analysis of large data sets has led to insight into the process of somatic hypermutation. There, researchers have found quite significant connections between local sequence identity and mutation patterns, leading to a rich literature (Rogozin and Kolchanov, 1992; Dunn-Walters et al., 1998; Cohen et al., 2011; Yaari et al., 2013; Elhanati et al., 2015; Wei et al., 2015; Cui et al., 2016; Feng et al., 2019; Spisak et al., 2020).\n\nIn contrast, we are only aware of one statistical analysis connecting sequence identity to trimming lengths (Murugan et al., 2012). This one existing analysis (Murugan et al., 2012) has shown that a simple position-weight-matrix style (PWM) model does a surprisingly good job of predicting the distribution of trimming lengths for a variety of V-genes. However, while this trimming model has good model fit and predictive accuracy, it is limited by the assumption that the trimming mechanism relies solely on a sequence motif and, as such, is not designed in a way that allows us to explore alternative hypotheses.\n\nIn this paper, we explore the sequence-level determinants of nucleotide trimming during V(D)J recombination using statistical inference on high-throughput TCR\u03b2 repertoire sequencing data (Emerson et al., 2017). With the goal of informing our mechanistic understanding in a quantitative way, we have designed a flexible probabilistic model of nucleotide trimming that allows us to explore various sequence-level features. Our results show that trimming probabilities are highest for DNA positions near the end of the sequence that contain high GC content upstream, quantifying the role of sequence-breathing dynamics in the trimming process. We also see evidence of a sequence motif that appears to get preferentially trimmed, independent of possible sequence-breathing effects. As such, we can predict trimming probabilities most accurately using a model that includes features for local sequence context, length, and GC nucleotide content in both directions of the wider sequence. We show that this model has high predictive accuracy for V- and J-gene sequences from an independent TCR\u03b2-sequencing data set, and also extends well to TCR\u03b1, TCR\u03b3, and IGH sequences. Further, we demonstrate that genetic variations within the gene encoding the Artemis protein that were previously identified as being associated with increasing the extent of trimming (Russell et al., 2022b) are also associated with changes in several model coefficients.\n\n## Results\n\n### Training data description\n\nWe worked with TCR\u03b2-immunosequencing data representing 666 individuals (Emerson et al., 2017). V(D)J recombination scenarios were assigned to each sequence from each individual using the IGoR software which is designed to learn unbiased V(D)J recombination statistics from immune sequence reads (Marcou et al., 2018). Using these V(D)J recombination statistics, IGoR output a list of potential recombination scenarios with their corresponding likelihoods for each TCR\u03b2-chain sequence in the training data set. We annotated each sequence with a single V(D)J recombination scenario by sampling from these potential scenarios according to the posterior probability of each scenario (see Materials and methods for further details).\n\nAnnotated TCR sequences can be separated into two categories: \u2018productive\u2019 rearrangements which code for a complete, full-length protein and \u2018non-productive\u2019 rearrangements which do not. Non-productive sequences are generated when the V(D)J recombination process produces a sequence that is either out-of-frame or contains a stop codon. Each T cell contains two loci which can undergo the V(D)J recombination process. When the first recombination fails to generate a functional receptor (creating a non-productive sequence), followed by a successful rearrangement on the T cell\u2019s second chromosome (a productive sequence), the non-productive rearrangement can be sequenced as part of the repertoire. Non-productive sequences do not generate proteins that undergo functional selection in the thymus, and their recombination statistics should reflect only the V(D)J recombination generation process (Robins et al., 2010; Murugan et al., 2012; Sethna et al., 2019). In contrast, the recombination statistics of productive sequences should reflect both V(D)J recombination generation and functional selection. Because we are interested in nucleotide trimming during the V(D)J recombination generation process, prior to selection, we only include non-productive sequences in our training data set. Further, because V-gene sequences within the TRB locus contain more sequence variation than D- and/or J-genes, we only include V-gene sequences in our training data set.\n\n### Replicating a previous model of nucleotide trimming\n\nThe extent of nucleotide trimming varies substantially from gene to gene (Nadel and Feeney, 1995; Nadel and Feeney, 1997; Jackson et al., 2004; Murugan et al., 2012). Previous work has identified an interesting impact of sequence features, such as sequence nucleotide context, on trimming probabilities using a PWM model (Murugan et al., 2012). To our knowledge, this is the only model that takes nucleotide sequence identity into account when predicting trimming probabilities. Specifically, this model leverages a \u2018trimming motif\u2019 containing 2 nucleotides 5\u2019 of the trimming site and 4 nucleotides 3\u2019 of the trimming site to predict the probability of trimming at a given site. It was designed and trained using sequencing data from just nine individuals (Murugan et al., 2012), and has surprisingly good model fit and predictive accuracy across many V-genes despite its simplicity. Using a different, and much larger, repertoire sequencing data set, we have trained this PWM model and replicated previous work (Figure 2\u2014figure supplement 1). We will refer to this model as the 2\u00d74 motif model. It is important to note that this PWM model is not the primary model described in Murugan et al., 2012, but again is the only one that relates nucleotide identity to trimming.\n\n### Model set-up overview\n\nWhile the 2\u00d74 motif model has good predictive accuracy and model fit (Murugan et al., 2012), it is limited by its assumption that the trimming mechanism relies solely on a sequence motif. Here, we have generalized this PWM model to a model that allows for arbitrary sequence features, and trained each new model using conditional logistic regression (see Materials and methods). With this set-up, we were able to evaluate the relative importance of new mechanistically interpretable features for predicting trimming probabilities. Specifically, we designed features to measure the effects of DNA-shape, length, and GC nucleotide content in both directions of the wider sequence on the probability of trimming at a given position in a gene sequence.\n\nWe parameterize each of these features as follows. An example of how an arbitrary V-gene sequence is transformed into features for modeling is shown in Figure 1. To parameterize DNA-shape, we used previously developed methods (Zhou et al., 2013; Chiu et al., 2016) to estimate various DNA-shape values (i.e. roll, twist, electrostatic potential, minor groove width, etc.) for each single-nucleotide position within a sequence window surrounding the trimming site. To parameterize length, we measure the sequence-independent distance from the end of the gene (i.e. the number of nucleotides from the 3\u2019-end of the sequence) as an integer-valued variable. We parameterize GC nucleotide content using the raw counts of AT and GC nucleotides on both sides of the trimming site (the two-side base-count). By using raw nucleotide counts, this measure also serves to parameterize length. Because AT nucleotides have a greater potential for sequence-breathing compared to GC nucleotides within a sequence (Jose et al., 2009), these two-side base-count terms may be serving as a proxy for the capacity of a sequence to breathe. As such, because sequence-breathing potential is only relevant for nucleotides that are paired, we do not include the nucleotides within the 3\u2019 single-stranded-overhang when counting 3\u2019 AT and GC nucleotides (see Appendix 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85145/elife-85145-fig1-v1.jpg)\n\n**Figure 1.:** (A) As described, during the early stages of V(D)J recombination between two genes, the hairpin of each gene is opened; here, we are showing this hairpin-opening step for a single arbitrary V-gene. The most common hairpin-opening position leads to a 4-nucleotide-long single-stranded overhang (2 nucleotides of which are considered P-nucleotides, as shown in purple). From here, each gene can undergo nucleotide trimming. In this example, the V-gene is trimmed back 6 nucleotides. (B) All models were trained with non-productive V-gene sequences whose trimming positions were inferred during a sequence annotation step. For our model parameterization, we only consider the top strand (5\u2019-to-3\u2019) of the observed sequence. Here, the sequence features parameterized for each model type are shown for the example sequence from (A). The pink boxes surround nucleotides included in the matrix representation of motif features. The turquoise boxes surround nucleotides used to estimate and parameterize DNA-shape features (see Appendix 2 for further details). The green boxes surround nucleotides included in the counts of GC nucleotides 5\u2019 of the trimming site; in our actual models, we count nucleotides within a 10-nucleotide window (a 5-nucleotide window is shown in the figure). Because this window size is fixed, we do not need to include an additional parameter for AT nucleotide count 5\u2019 of the trimming site (since it is already indirectly modeled). The yellow boxes surround double-stranded nucleotides included in the counts of AT and GC nucleotides 3\u2019 of the trimming site. These raw 3\u2019-nucleotide counts also indirectly parameterize length; as such, we never include both length and two-side base-count parameters in the same model. In addition to the models shown in the figure, we also evaluated a null model which does not contain any parameters.\n\nWith these features, we designed models containing various feature combinations (Figure 1B). Collectively, these models allow us to explore other possible sequence-level determinants of nucleotide trimming, in addition to the previously proposed (Murugan et al., 2012) \u201ctrimming motif\u201d hypothesis. We trained each model using the V-gene training data set described above (see Materials and methods for further model training details), and evaluated performance using a suite of different held-out data groups (Figure 2). Specifically, to evaluate model fit, we computed the expected per-sequence conditional log loss of each model using the full V-gene training data set.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85145/elife-85145-fig2-v1.jpg)\n\n**Figure 2.:** The T cell receptor (TCR)\u03b2 V-gene training data was used to train each trimming model containing various combinations of sequence-level features (Figure 1) by minimizing the associated loss function. The loss function is given by a sum across individuals $i$, genes $\\sigma$, and trimming lengths $n$ of the sampling probability of each observation $P_{s}$ multiplied by the gene-specific trimming probability predicted by a model with \u03b2 parameters (see Materials and methods for further details). Each potential model first underwent a \u2018model evaluation\u2019 stage (shown by the dashed lines) during which the model performance was evaluated using various subsets of the training TCR\u03b2 V-gene data set. Once all models were evaluated, a subset of the potential models continued on to the \u2018model validation\u2019 stage (shown by the solid lines) during which the performance of the model coefficients from the previous TCR\u03b2 V-gene training run were validated using several independent testing data sets including TCR\u03b2, TCR\u03b1, TCR\u03b3, and IGH sequences. At each stage, the performance of each model was compared to a null model (containing zero parameters, see Materials and methods).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85145/elife-85145-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Inferred trimming profiles (shown in blue) using this model have good predictive accuracy for the same V-genes highlighted in previous work (compare Figure 4A in Murugan et al., 2012). Gene-specific trimming profiles for each individual in the training data set are shown in gray. (B) Position-weight-matrix of the local sequence context dependence of V-gene trimming probabilities consisting of 2 nucleotides 5\u2019 of the trimming site and 4 nucleotides 3\u2019 of the trimming site. (Note: the positions in this figure are flipped relative to the rest of the corresponding figures in this paper in order to correspond to the original figure in Murugan et al., 2012.) Positions 3\u2019 of the trimming site have a stronger effect on the probability of trimming compared to positions 5\u2019 of the trimming site. Specifically, A and T nucleotides 3\u2019 of the trimming site have a strong positive effect on the trimming probability whereas C nucleotides have a strong negative effect. The black vertical line corresponds to the trimming site. Each inferred coefficient is given as the change in log10 odds of trimming at a given site resulting from an increase in the feature value, given that all other features are held constant. The inferred coefficients show here closely resemble the previously reported model (see Figure S11 in Murugan et al., 2012).\n\nTo evaluate model generalizability, we computed the expected per-sequence conditional log loss using the following held-out groups:\n\nFor each of these held-out group analyses, each model was re-trained using the full V-gene training data set with the held-out group-of-interest removed (see Materials and methods and Appendix 3 for further details) prior to computing the loss. A lower expected per-sequence conditional log loss indicated better model fit and/or model generalizability. Following this model evaluation, we validated a subset of the models by using the model coefficients from the previous TCR\u03b2 V-gene training run and computing the expected per-sequence conditional log loss of the model using several independent testing data sets (Figure 2).\n\n### Local sequence context, length, and GC nucleotide content in both directions of the wider sequence, together, accurately predict the trimming probabilities of a given V-gene sequence\n\nIn an effort to capture the complex underlying biochemistry of the deletion process, we trained models containing various combinations of sequence-level feature types (Figure 1B) and evaluated their ability to accurately predict V-gene trimming probabilities. With this approach, we found that a model containing parameterizations of local sequence context, length, and GC nucleotide content in both directions of the wider sequence (the 1\u00d72 motif + two-side base-count beyond model) had the best model fit and generalizability across different data sets (Figure 3 and Figure 3\u2014figure supplement 1). This model contains a 1\u00d72 motif, including 1-nucleotide position 5\u2019 of the trimming site and 2-nucleotide positions 3\u2019 of the trimming site within the trimming window, and includes only bases beyond this trimming window in the AT and GC two-side base-count terms (Figure 1). Despite containing fewer total parameters than the original 2\u00d74 motif model (Murugan et al., 2012) (12 parameters compared to 18 parameters), the 1\u00d72 motif + two-side base-count beyond model had better predictive accuracy (Figure 4 and Figure 4\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85145/elife-85145-fig3-v1.jpg)\n\n**Figure 3.:** Each model was trained using the full V-gene training data set with the held-out group or \u2018most-different\u2019 group (if applicable) removed (see Materials and methods and Appendix 3). Lower expected per-sequence log loss corresponds to better a model fit. The 1\u00d72 motif + two-side base-count beyond model has the best model fit and generalizability across all data sets.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85145/elife-85145-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The average expected per-sequence conditional log loss values are shown as vertical lines. For each model, there was some variation in the expected per-sequence conditional log loss values computed across the 20 random, held-out subsets of the V-gene training data set. The average expected per-sequence conditional log loss values are shown as vertical lines.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85145/elife-85145-fig4-v1.jpg)\n\n**Figure 4.:** (A) Inferred trimming profiles using the 1\u00d72 motif + two-side base-count beyond model have good predictive accuracy overall; here, we show the inferred trimming profiles (in blue) for the most frequently used V-genes. Gene-specific trimming profiles for each individual in the training data set are shown in gray. The sequence context with the highest probability of trimming (3\u2019-TTC-5\u2019 or 3\u2019-TGC-5\u2019) from (B and C) is highlighted in orange. (B) Position-weight-matrix of the local sequence context dependence of V-gene trimming probabilities consisting of 1 nucleotide 5\u2019 of the trimming site and 2 nucleotide 3\u2019 of the trimming site from fitting the 1\u00d72 motif + two-side base-count beyond model. Positions 5\u2019 and 3\u2019 of the trimming site have a strong effect on the probability of trimming. (C) Inferred two-side base-count beyond model coefficients from fitting the 1\u00d72 motif + two-side base-count beyond model suggest that the count of GC bases 5\u2019 of the motif has a strong positive effect on the trimming probability whereas the count of GC and/or AT bases 3\u2019 of the motif has a negative effect. The count of AT nucleotides 5\u2019 of the motif (shown in gray) was not included in this model. The black vertical line corresponds to the trimming site. Each inferred coefficient is given as the change in log10 odds of trimming at a given site resulting from an increase in the feature value, given that all other features are held constant.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85145/elife-85145-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Inferred trimming profiles (shown in blue) using the 1\u00d72 motif + two-side base-count beyond model have good predictive accuracy for most V-genes. Gene-specific trimming profiles for each individual in the training data set are shown in gray. The sequence context with the highest probability of trimming (3\u2019-TTC-5\u2019 or 3\u2019-TGC-5\u2019 from Figure 4B) is highlighted in orange. The black vertical line corresponds to the trimming site.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85145/elife-85145-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Inferred trimming profiles (shown in blue) from a 1\u00d72 motif + two-side base-count beyond model which includes all nucleotides 3\u2019 of the motif (regardless of double-stranded status) in the 3\u2019-base-count term show good predictive accuracy for the most frequently used V-genes. The fit for this model is very similar to the original 1\u00d72 motif + two-side base-count beyond model which only includes double-stranded nucleotides in the base-count terms. Gene-specific trimming profiles for each individual in the training data set are shown in gray. (B) Position-weight-matrix of the local sequence context dependence of V-gene trimming probabilities consisting of 1 nucleotide 5\u2019 of the trimming site and 2 nucleotides 3\u2019 of the trimming site from fitting a 1\u00d72 motif + two-side base-count beyond model which uses all nucleotides 3\u2019 of the motif in the 3\u2019-base-count term. (C) Inferred two-side base-count beyond model coefficients from fitting a 1\u00d72 motif + two-side base-count beyond model which uses all nucleotides 3\u2019 of the motif in the 3\u2019-base-count term. All inferred coefficients from this model are similar to the original 1\u00d72 motif + two-side base-count beyond model which only includes double-stranded nucleotides in the base-count terms. The count of AT nucleotides 5\u2019 of the motif (shown in gray) was not included in this model. The black vertical line corresponds to the trimming site. Each inferred coefficient is given as the change in log10 odds of trimming at a given site resulting from an increase in the feature value, given that all other features are held constant.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85145/elife-85145-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Expected per-sequence conditional log loss computed for the 1\u00d72 motif + two-side base-count beyond model, using the full V-gene training data set, many random, held-out subsets of the V-gene training data set, a held-out subset of the V-gene training data set containing a group of V-genes defined to be the \u2018most-different\u2019 using the terminal sequences (last 25 nucleotides of each sequence), a held-out subset of the V-gene training data set containing a group of V-genes defined to be the \u2018most-different\u2019 using the full gene sequences, and the full J-gene data set. Each model was trained using the designated hairpin-opening-position assumption (see Appendix 4 for hairpin-opening-position definitions). Each model was trained using the full V-gene training data set with the held-out group or \u2018most-different\u2019 group (if applicable) removed. Lower log loss corresponds to better a model fit.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/85145/elife-85145-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) Log loss computed using the full V-gene training data set for motif + two-side base-count beyond models containing a varying number of bases 3\u2019 and 5\u2019 of the trimming site within the motif. (B) Log loss computed using the full J-gene data set for motif + two-side base-count beyond models containing a varying number of bases 3\u2019 and 5\u2019 of the trimming site within the motif. Each model was trained using the full V-gene training data set as described in the Materials and methods. Lower log loss corresponds to better a model fit. Models containing small motifs have worse model fit when evaluating log loss using the full V-gene training data set (A), but have better model fit when evaluating log loss using the full J-gene data set (B).\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/85145/elife-85145-fig4-figsupp5-v1.jpg)\n\n**Figure 4\u2014figure supplement 5.:** (A) Inferred trimming profiles (shown in blue) using the 1\u00d72 motif + two-side base-count beyond model trained using J-gene sequences have good predictive accuracy for the most frequently used J-genes. Gene-specific trimming profiles for each individual in the training data set are shown in gray. (B) Position-weight-matrix of the local sequence context dependence of J-gene trimming probabilities consisting of 1 nucleotide 5\u2019 of the trimming site and 2 nucleotides 3\u2019 of the trimming site from fitting the 1\u00d72 motif + two-side base-count beyond model using J-gene sequences. Positions 5\u2019 and 3\u2019 of the trimming site have a strong effect on the probability of trimming. (C) Inferred two-side base-count beyond model coefficients from fitting the 1\u00d72 motif + two-side base-count beyond model using J-gene sequences suggest that the count of GC bases 5\u2019 of the motif has a strong positive effect on the trimming probability whereas the count of GC and/or AT bases 3\u2019 of the motif has a negative effect. The count of AT nucleotides 5\u2019 of the motif (shown in gray) was not included in this model. The black vertical line corresponds to the trimming site. Each inferred coefficient is given as the change in log10 odds of trimming at a given site resulting from an increase in the feature value, given that all other features are held constant.\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/85145/elife-85145-fig4-figsupp6-v1.jpg)\n\n**Figure 4\u2014figure supplement 6.:** (A) Inferred trimming profiles (shown in blue) using the 1\u00d72 motif + two-side base-count beyond model trained using productive V-gene sequences have good predictive accuracy for the most frequently used V-genes. Gene-specific trimming profiles for each individual in the training data set are shown in gray. (B) Position-weight-matrix of the local sequence context dependence of V-gene trimming probabilities consisting of 1 nucleotide 5\u2019 of the trimming site and 2 nucleotides 3\u2019 of the trimming site from fitting the 1\u00d72 motif + two-side base-count beyond model using productive V-gene sequences. Positions 5\u2019 and 3\u2019 of the trimming site have a strong effect on the probability of trimming. (C) Inferred two-side base-count beyond model coefficients from fitting the 1\u00d72 motif + two-side base-count beyond model using productive V-gene sequences suggest that the count of GC bases 5\u2019 of the motif has a strong positive effect on the trimming probability whereas the count of GC and/or AT bases 3\u2019 of the motif has a negative effect. The count of AT nucleotides 5\u2019 of the motif (shown in gray) was not included in this model. The black vertical line corresponds to the trimming site. Each inferred coefficient is given as the change in log10 odds of trimming at a given site resulting from an increase in the feature value, given that all other features are held constant.\n\n![Figure 4\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/85145/elife-85145-fig4-figsupp7-v1.jpg)\n\n**Figure 4\u2014figure supplement 7.:** The magnitudes of the inferred coefficients from the 1\u00d72 motif + two-side base-count beyond model have minimal variance when changing the number of sequences included in the training data set. The original V-gene training data set contains 21,193,153 sequences. When sub-sampling the original V-gene training data set and re-training the model, the inferred coefficients are stable until the size of the training data set reaches around 82,800 sequences (e.g. log2(proportion of the full training data set) is equal to \u2013 8) or below.\n\nWe considered the significance of the inferred model coefficients using a Bonferroni-corrected significance threshold of 0.0033 (corrected for the total number of model coefficients). With this threshold, we found that many of the inferred model coefficients were significant and quantified mechanistic patterns. Each coefficient represents the change in log10 odds of trimming at a given site resulting from an increase in the feature value, given that all other features are held constant. Within the nucleotides immediately surrounding the trimming site, bases 5\u2019 of the trimming site have a slightly stronger effect on the trimming probability than bases 3\u2019 of the trimming site (Figure 4B). Specifically, 5\u2019 of the trimming site, C nucleotides have a strong positive effect on the trimming probability ($log_{10}\u2061coefficient=0.2388$) whereas A and T nucleotides have a negative effect ($log_{10}\u2061coefficient_{A}=\u22120.108$ and $log_{10}\u2061coefficient_{T}=\u22120.137$). In contrast, immediately 3\u2019 of the trimming site, G and T nucleotides have a positive effect on the trimming probability ($log_{10}\u2061coefficient_{G}=0.093$ and $log_{10}\u2061coefficient_{T}=0.125$) whereas C nucleotides have a negative effect ($log_{10}\u2061coefficient=-0.174$). These results suggest a different possible mechanistic pattern than previous motif-only models (Murugan et al., 2012; Figure 2\u2014figure supplement 1B). Further, beyond the 1\u00d72 motif sequence window, the count of GC nucleotides 5\u2019 of the motif (within a 10-nucleotide window) has a strong positive effect on the trimming probability ($log_{10}\u2061coefficient=0.164$) (Figure 4C). The counts of both AT and GC nucleotides 3\u2019 of the motif have a strong negative effect on the trimming probability ($log_{10}\u2061coefficient_{AT}=\u22120.123$ and $log_{10}\u2061coefficient_{GC}=\u22120.126$). Interestingly, the magnitude of these negative effects are very similar between AT and GC counts. This suggests that the raw number of nucleotides 3\u2019 of the motif (e.g. the length) is more important for predicting the trimming probability at a given site compared to the identity of the nucleotides. p-values for each of these coefficients were reported to be smaller than machine tolerance ($2.23\\times10^{\u2212308}$). We noted minimal variation in the magnitude of each inferred coefficient even when changing the number of sequences included in the training data set (Figure 4\u2014figure supplement 7).\n\nBecause we were interested in parameterizing sequence-breathing effects using the two-side base-count terms, we only included nucleotides that are considered to be double-stranded after hairpin-opening within each count. In our modeling, we assume that the DNA hairpin is opened at the +2 position, leading to a 4-nucleotide-long 3\u2019-single-stranded-overhang (the 2 nucleotides furthest 3\u2019 are considered P-nucleotides) (Ma et al., 2002; Lu et al., 2007). As such, the first 2 nucleotides of the gene sequence can be considered single-stranded, and we do not include them in the two-side base-count terms. When we train a model that ignores this distinction, and include all gene sequence nucleotides in the two-side base-count terms, we note very similar inferred coefficients and model fit (Figure 4\u2014figure supplement 2). We acknowledge that other hairpin-opening positions may be possible. To explore whether the +2-hairpin-opening-position assumption could be affecting our inferences, we trained the 1\u00d72 motif + two-side base-count beyond model with other possible hairpin-opening-position assumptions and noted minimal variation in model fit (Figure 4\u2014figure supplement 3).\n\nWe also evaluated the predictive accuracy of motif + two-side base-count beyond models containing different \u2018trimming motif\u2019 sizes. We find that models containing a small motif (e.g. a 1\u00d72 motif) achieve similar predictive accuracy and are more generalizable compared to models containing a larger motif (Figure 4\u2014figure supplement 4).\n\nBecause the trimming mechanism is thought to be consistent across V-, D-, and J-genes from both productive and non-productive sequences, we were also interested in whether the inferred coefficients for the 1\u00d72 motif + two-side base-count beyond model would be consistent between the model trained using the non-productive V-gene training data set, a model trained using a non-productive J-gene data set, and a model trained using a productive V-gene data set. As such, we trained a new 1\u00d72 motif + two-side base-count beyond model using only non-productive J-gene sequences and a separate, new 1\u00d72 motif + two-side base-count beyond model using only productive V-gene sequences (both sequence sets were from the same cohort of individuals as the V-gene training data set). We found that the inferred coefficients were highly similar between the three models (Figure 4\u2014figure supplement 5 and Figure 4\u2014figure supplement 6).\n\nWhen evaluating models containing only a single feature type, we find that the two-side base-count model which parameterizes GC nucleotide content on both sides of the trimming site (and, indirectly, length) has the best model fit and generalizability across all held-out groups tested (Figure 3). As such, these GC-content features, which are likely parameterizing the capacity for the sequence to breathe, are more predictive of V-gene trimming probabilities than local sequence context or DNA-shape alone. This finding supports previous observations that Artemis may act as a structure-specific nuclease as opposed to a nuclease that binds specific DNA sequences (Ma et al., 2005; Chang et al., 2015; Chang and Lieber, 2016; Yosaatmadja et al., 2021).\n\n### Inferred local sequence context coefficients suggest a biological trimming motif\n\nA persistent concern with the 1\u00d72 motif + two-side base-count beyond model was that the motif coefficients could be driven by certain genes, instead of representing an actual gene-segment-wide signal. When comparing the inferred trimming profiles from the two-side base-count model to those from the 1\u00d72 motif + two-side base-count beyond model, we identified a group of V-genes which had drastically lower prediction error when the 1\u00d72 motif terms were included. These V-genes had a difference in per-gene root mean squared error between the two models that was greater than \u20130.13 (Figure 5A). The genes included in this group were TRBV5-3, TRBV7-3*01, TRBV7-3*04, TRBV7-4, TRBV9, TRBV11, and TRBV13. To evaluate whether these genes could be driving the observed motif signal, we explored whether the prediction error for these genes changed when they were removed from the model training data set.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/85145/elife-85145-fig5-v1.jpg)\n\n**Figure 5.:** (A) Distribution of the difference in per-gene root mean squared error (RMSE) between the 1\u00d72 motif + two-side base-count beyond model and the two-side base-count model. V-genes with an RMSE difference less than \u20130.127 (gray vertical line) were in the lowest 10% of all RMSE differences. These \u2018improved genes\u2019 showed a large RMSE improvement when including motif terms in the model. (B) Inferred trimming profiles for TRBV9, the gene which showed the largest RMSE improvement in (A). TRBV9 had an RMSE difference of \u20130.31. (C) Inferred trimming profiles for TRBV13, the gene which showed the second largest RMSE improvement in (A). TRBV13 had an RMSE difference of \u20130.15. The inferred trimming profiles for TRBV9 and TRBV13 using models which contain motif terms have very low prediction error even when the genes are not included in the model training data set. Gene-specific trimming profiles for each individual in the training data set are shown in gray. The sequence context with the highest probability of trimming (3\u2019-TTC-5\u2019 or 3\u2019-TGC-5\u2019 from Figure 4B) are highlighted in orange.\n\nIn fact, we found that the inferred trimming profiles for these genes still had very low prediction error despite the genes not being included in the model training data set (Figure 5B and C), showing the generalizability of these features. The inferred model coefficients from this 1\u00d72 motif + two-side base-count beyond model fit using the subsetted training data set were highly similar to those from the original model fit using the full training data set. Because genes which are highly similar sequence-wise to the group of held-out genes could still be present in the training data set and be driving these similarities, we defined a new data set that excluded this larger group of genes. When we repeated the same experiment with this new, more-restricted training data set, we observed similar results (Figure 5B and C). As such, both of these experiments provided evidence that the motif signal may actually represent a gene-segment-wide sequence motif that appears to get preferentially trimmed, independent of GC-content-related effects.\n\n### Trimming-associated variation within the Artemis locus is associated with a change in model coefficients\n\nUsing a subset of the V-gene training data set used here, we previously identified a set of single nucleotide polymorphisms (SNPs) within the gene encoding the Artemis protein that are associated with increasing the extent of V- and J-gene trimming (Russell et al., 2022b). This result suggested that trimming profiles may subtly vary in the context of these SNPs. As such, we were interested in whether these SNPs could be mediating (or serving as a proxy for) a change in the trimming mechanism. To explore this, we worked with paired SNP array and TCR\u03b2-immunosequencing data representing 611 of the original 666 individuals in the V-gene training data set used here. Our previous work Russell et al., 2022b used data from only 398 of these individuals, however, the conclusions of that paper held when using this expanded group of 611 individuals in the analysis. With these data, we asked whether the inferred coefficients from the V-gene-specific 1\u00d72 motif + two-side base-count beyond model varied significantly in the context of the non-coding Artemis-locus SNP (rs41298872) that was found to be most strongly associated with increasing the extent of V-gene trimming in our previous work (Russell et al., 2022b). As such, we re-defined the model to include an interaction coefficient between the SNP genotype and each model parameter (see Materials and methods). We then used a Bonferroni-corrected significance threshold of 0.0033 (corrected for the total number of interaction coefficients) to evaluate the significance of each interaction coefficient. For each significant interaction coefficient, we concluded that the corresponding model coefficient varied significantly in the context of the SNP genotype.\n\nUsing these methods, we found that several of the 1\u00d72 motif + two-side base-count beyond model coefficients varied significantly in the context of the Artemis-locus SNP rs41298872 (Figure 6). Specifically, we found that 3\u2019 of the trimming site, the negative effect of A nucleotides on the trimming odds varied in the context of the SNP for the position immediately 3\u2019 of the trimming site ($log_{10}\u2061interaction coefficient=0.006$, $p=0.0006$) and one position away ($log_{10}\u2061interaction coefficient=0.007$, $p=0.0006$). Further, we found that the negative effect of the count of AT nucleotides 3\u2019 of the motif varied strongly in the context of the SNP ($log_{10}\u2061interaction coefficient=0.010$, $p=1.47\\times10^{\u221212}$). No other motif or two-side base-count coefficients were found to significantly vary.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/85145/elife-85145-fig6-v1.jpg)\n\n**Figure 6.:** Note that the inferred coefficients for each main parameter (as shown in Figure 4) are not displayed here; only the inferred interaction coefficients between the SNP and each parameter are shown. (A) Inferred interaction coefficients between rs41298872 SNP genotype and motif parameters for 1-nucleotide position 5\u2019 of the trimming site and 2-nucleotide positions 3\u2019 of the trimming site. The interaction coefficients between the SNP genotype and the presence of A nucleotides (at all positions 3\u2019 of the motif) are significant. This figure is a different representation of the information shown in (A). (B) Inferred interaction coefficients between rs41298872 SNP genotype and two-side base-count beyond model coefficients. The interaction coefficients between the SNP genotype and the count of AT nucleotides 3\u2019 of the motif are significant. The interaction coefficient between the SNP genotype and the count of AT nucleotides 5\u2019 of the motif (shown in gray) was not included in this model. The black vertical line corresponds to the trimming site. Each inferred interaction coefficient is given as the change in log10 odds of trimming at a given site resulting from an increase in the feature value and a change in genotype, given that all other features are held constant.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85145/elife-85145-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Inferred SNP-interaction coefficients from fitting the 1\u00d72 motif + two-side base-count beyond proportion + length SNP interaction model. (A) Inferred interaction coefficients between rs41298872 SNP genotype and motif parameters for 1-nucleotide position 5\u2019 of the trimming site and 2-nucleotide positions 3\u2019 of the trimming site. The interaction coefficients between the SNP genotype and the presence of T nucleotides (at all positions in the motif) are significant. (B) Inferred interaction coefficients between rs41298872 SNP genotype and two-side base-count beyond model coefficients. The interaction coefficient between the SNP genotype and the count of AT nucleotides 5\u2019 of the motif (shown in gray) was not included in this model. None of the interaction coefficients are significant. (C) Inferred interaction coefficients between rs41298872 SNP genotype and the length coefficient. The black vertical line corresponds to the trimming site. Each inferred coefficient is given as the change in log10 odds of trimming at a given site resulting from an increase in the feature value, given that all other features are held constant.\n\nBecause the 3\u2019-side base-count-beyond terms parameterize both GC nucleotide content and length in their definition, we were interested in whether the significance of the 3\u2019-AT-nucleotide count SNP variation effect was related to GC nucleotide content, length, or both. To do this, we re-defined the 3\u2019-side base-count-beyond parameters to be a proportion instead of raw AT/GC nucleotide counts and included an additional length term in the model to remove length-related effects from the inferred 3\u2019-side base-count-beyond coefficients. Using this new model, we repeated the analysis and found that the length coefficient varied significantly in the context of the SNP ($log_{10}\u2061interaction coefficient=0.005$, $p=6.24\\times10^{\u221223}$), but the 3\u2019-AT-nucleotide-proportion term did not (Figure 6\u2014figure supplement 1). This result is fully consistent with the fact that the Artemis-locus SNP is known to be associated with increasing the extent of trimming (a proxy for length).\n\n### Local sequence context, length, and GC nucleotide content in both directions of the wider sequence can also accurately predict the trimming probabilities of a given sequence from other receptor loci\n\nTo validate our previously trained models, we worked with TCR\u03b1- and TCR\u03b2-immunosequencing data representing 150 individuals, TCR\u03b3-immunosequencing data representing 23 individuals, and IGH-immunosequencing data representing 9 individuals from three independent validation cohorts. Before analyzing these data, we \u2018froze\u2019 our trained model coefficients in git commit 093610a on our repository. In contrast to the training data cohort, these validation cohorts contain different demographics and were each processed using different sequence annotation methods (see Materials and methods). To explore the potential effects of using a different sequence annotation method, we re-annotated the TCR\u03b2 training data set using the same annotation method as the TCR\u03b1-\u03b2 testing data and found that it had little to no effect on the model fit or performance (Figure 7\u2014figure supplement 1).\n\nTo evaluate the performance of the 1\u00d72 motif + two-side base-count beyond model using these testing data, we used the model coefficients from the previous TCR\u03b2 V-gene training run and computed the expected per-sequence conditional log loss of the model using each testing data set (TCR\u03b2 V-gene sequences, TCR\u03b1 V-gene sequences, TCR\u03b3 V-gene sequences, IGH V-gene sequences, TCR\u03b2 J-gene sequences, etc.). We found that the model has high predictive accuracy (i.e. low expected per-sequence conditional log loss) for both non-productive V- and J-gene sequences from the TCR\u03b2 testing data set (Figure 7). The model also extends well to non-productive V- and J-gene sequences from the TCR\u03b1 and TCR\u03b3 testing data sets and to non-productive V-gene sequences from the IGH testing data set. The model has relatively poor predictive accuracy for non-productive IGH J-gene sequences, however. We noted very similar results when validating model performance using productive V- and J-gene sequences from each testing data set (Figure 7\u2014figure supplement 2).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/85145/elife-85145-fig7-v1.jpg)\n\n**Figure 7.:** Each model was trained using the full non-productive TCR\u03b2 V-gene training data set. Lower expected per-sequence log loss corresponds to a better model fit. The 1\u00d72 motif + two-side base-count beyond model has the best model fit and generalizability across all testing data sets. The horizontal dashed line corresponds to the expected per-sequence log loss of the 1\u00d72 motif + two-side base-count beyond model computed for V-gene trimming using the non-productive TCR\u03b2 V-gene training data set.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85145/elife-85145-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Position-weight-matrix of the local sequence context dependence of V-gene trimming probabilities consisting of 1 nucleotide 5\u2019 of the trimming site and 2 nucleotides 3\u2019 of the trimming site from fitting the 1\u00d72 motif + two-side base-count beyond model using parsimony-annotated sequences. (B) Inferred two-side base-count beyond model coefficients from fitting the 1\u00d72 motif + two-side base-count beyond model using parsimony-annotated sequences. These inferred coefficients are highly similar to the original 1\u00d72 motif + two-side base-count beyond model trained using IGoR-annotated sequences (Figure 4). The count of AT nucleotides 5\u2019 of the motif (shown in gray) was not included in this model. The black vertical line corresponds to the trimming site. Each inferred coefficient is given as the change in log10 odds of trimming at a given site resulting from an increase in the feature value, given that all other features are held constant.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85145/elife-85145-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Expected per-sequence conditional log loss computed for various models using the T cell receptor \u03b2 V-gene training data set and productive V- and J-gene sequences from several independent testing data sets. Each model was trained using the full non-productive TCR\u03b2 V-gene training data set. Lower expected per-sequence log loss corresponds to a better model fit. The 1\u00d72 motif + two-side base-count beyond model has the best model fit and generalizability across all testing data sets. The horizontal dashed line corresponds to the expected per-sequence log loss of the 1\u00d72 motif + two-side base-count beyond model computed for V-gene trimming using the non-productive TCR\u03b2 V-gene training data set.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85145/elife-85145-fig7-figsupp3-v1.jpg)\n\n**Figure 7\u2014figure supplement 3.:** The weight of the 1\u00d72 motif and two-side base-count beyond model terms varies by data set. (A) The scale coefficient for the two-side base-count beyond model terms is larger than the motif scale coefficient for every data set. (B) The expected per-sequence conditional log loss of each of these new models is only slightly better compared to the original 1\u00d72 motif + two-side base-count beyond model. Horizontal and vertical dashed gray lines correspond to the TCR\u03b2 V-gene training data set. The black solid line corresponds to the $y=x$ line.\n\n![Figure 7\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/85145/elife-85145-fig7-figsupp4-v1.jpg)\n\n**Figure 7\u2014figure supplement 4.:** Germline frequency of sequence motifs in IGH and TRB loci. Sequence motifs that lead to a large increase in trimming probabilities in the model (e.g. a large, positive position-weight-matrix-style motif score) appear at relatively low frequencies within the germline IGH genes. This may explain the weakness of the motif-related signal within IGH data sets (Figure 7\u2014figure supplement 3).\n\nWe hypothesized that the weight of the 1\u00d72 motif and two-side base-count beyond model terms may vary across each testing data set. To explore this for each data set, we again used the model coefficients from the previous TCR\u03b2 V-gene training run and trained a new two-parameter model containing one coefficient scaling the 1\u00d72 motif terms and a second coefficient scaling the two-side base-count beyond terms (see Materials and methods). With this approach, we found that the two-side base-count beyond terms were dominant compared to the 1\u00d72 motif terms for every data set (Figure 7\u2014figure supplement 3A). The scale coefficient for the 1\u00d72 motif terms was very small for several of the data sets, especially the IGH data set, indicating only a weak motif-related signal. The sequence motifs that lead to a large increase in trimming probabilities in the model appear at relatively low frequencies within the germline IGH genes (Figure 7\u2014figure supplement 4), perhaps explaining the weakness of the motif-related signal. When evaluating the expected per-sequence conditional log loss of these partially re-trained models, we note a small improvement in model fit for each re-trained model compared to the original model (Figure 7\u2014figure supplement 3B).\n\n## Discussion\n\nThe junctional deletion and insertion steps of the V(D)J recombination process are essential for creating diversity within the TCR repertoire. While the Artemis protein is often regarded as the main nuclease involved in V(D)J recombination, the exact mechanism of nucleotide trimming has yet to be understood in a human system. Using a previously published high-throughput TCR\u03b2 sequencing data set, we designed a flexible probabilistic model of nucleotide trimming that allowed us to explore the relative importance of various sequence-level features. While we recognize that these general model features may not capture the full complexity of the trimming mechanism and establish causation, we were primarily interested in identifying mechanistically interpretable features which could confirm and extend our current understanding of the nucleotide trimming process. With this framework, we have (1) revealed a set of sequence-level features which can be used to accurately predict trimming probabilities across various adaptive immune receptor loci, (2) shown that length and GC nucleotide content in both directions of the wider sequence are highly predictive of trimming probabilities, quantifying how double-stranded DNA needs to be able to breathe for trimming to occur, (3) identified a sequence motif that appears to get preferentially trimmed, independent of length- and GC-content-related effects, and (4) demonstrated that a genetic variant within the gene encoding the Artemis protein is associated with changes in several model coefficients.\n\nSpecifically, we find that a model containing parameterizations of both local sequence context, length, and GC nucleotide content in both directions of the wider sequence can most accurately predict the trimming probabilities of a given TCR\u03b2 gene sequence. In addition to having fewer parameters, this model also had better predictive accuracy than a previously proposed sequence context model (Murugan et al., 2012). Models containing other sequence-level parameters such as DNA-shape and length also had relatively worse predictive accuracy. The TR and IG V(D)J recombination processes, including trimming profiles, have previously been suggested to vary substantially across individuals (Slabodkin et al., 2021; Russell et al., 2022b). Here, our results support a universal, sequence-based trimming mechanism underlying this variation across TR and IG loci in humans. Specifically, in addition to TCR\u03b2 sequences, we find that local sequence context, length, and GC nucleotide content in both directions of the wider sequence can be used to accurately predict trimming probabilities across TCR\u03b1, TCR\u03b3, and IGH sequences. For all of these loci, we find that length and GC nucleotide content are relatively more important than local sequence context terms for making accurate model predictions.\n\nThe Artemis protein, in complex with DNA-PKcs, is responsible for opening the DNA hairpin during the early steps of V(D)J recombination to generate a 4-nucleotide-long 3\u2019-single-stranded overhang at the end of each gene, and has been suggested to continue on to trim nucleotides from this resulting DNA structure (Feeney et al., 1994; Nadel and Feeney, 1995; Nadel and Feeney, 1997; Jackson et al., 2004; Gu et al., 2010; Chang et al., 2015; Chang and Lieber, 2016; Zhao et al., 2020; Russell et al., 2022b). The Artemis protein, with and without DNA-PKcs, has been shown to bind single-stranded-to-double-stranded DNA boundaries prior to nicking DNA (Ma et al., 2002; Ma et al., 2005; Chang et al., 2015; Chang and Lieber, 2016). While the single-stranded overhang created during hairpin-opening may create a natural single-stranded-to-double-stranded DNA substrate for Artemis binding near the end of the gene sequence, we find that many trimming events occur further into the double-stranded gene sequence. Indeed, previous in vitro DNA nuclease assays involving Artemis have shown that sequence-breathing dynamics are often required to generate a transient single-stranded-to-double-stranded DNA substrate prior to Artemis action (Chang et al., 2015). Using our model of nucleotide trimming, we have shown that trimming probabilities are highest for DNA positions closer to the end of the sequence. Because these DNA positions have fewer double-stranded nucleotides on the 3\u2019-side of the trimming site, they may have more capacity for sequence-breathing. On the 5\u2019-side of the trimming site, we find that having a larger number of G-C nucleotides, and perhaps less sequence-breathing capacity, increases the trimming probability. Perhaps this breathing transition can create a transient single-stranded-to-double-stranded DNA substrate that is suitable for Artemis to bind and trim. As such, this finding quantifies sequence-breathing effects that were previously identified through in vitro DNA nuclease assay studies involving Artemis (Chang et al., 2015).\n\nIndependent of GC-content-related effects, we have also identified a gene-segment-wide sequence motif that appears to get preferentially trimmed. This motif is suggestive of sequence-specific nucleolytic activity, however, Artemis is widely regarded as a structure-specific nuclease as opposed to a nuclease that binds specific DNA sequences (Ma et al., 2005; Chang et al., 2015; Chang and Lieber, 2016; Yosaatmadja et al., 2021). This suggests that either (1) Artemis actually does possess some ability to recognize specific nucleotides, (2) the observed sequence motif is serving as a proxy for DNA structure induced by the motif, or (3) another nuclease, in addition to Artemis, is responsible for the sequence-specific trimming we observe. However, because the strength of this sequence motif signal varied across receptor loci, further work will be required to explore its mechanistic basis and presence.\n\nWe found that several model coefficients related to local sequence context, length, and GC nucleotide content in both directions of the wider sequence varied significantly in the context of the non-coding Artemis-locus SNP rs41298872. We previously identified this Artemis-locus SNP as being associated with increasing the extent of TCR\u03b2 V- and J-gene trimming (Russell et al., 2022b). While many previous studies have reported a high consistency of TCR\u03b2 trimming profiles across individuals (Murugan et al., 2012; Marcou et al., 2018; Sethna et al., 2020), our results begin to explore how the trimming mechanism may vary across individuals in the context of Artemis genetic variation. We reported that trimming probabilities decrease as the number of double-stranded nucleotides 3\u2019 of the trimming site increases. In the context of the SNP rs41298872, we found that as the number of double-stranded AT nucleotides 3\u2019 of the trimming site increases, the trimming probabilities do not decrease as quickly. This suggests that individuals homozygous (or heterozygous) for rs41298872 may be more capable of trimming at positions that have a larger number of double-stranded nucleotides 3\u2019 of the trimming site, especially if the additional nucleotides are AT bases. This may be possible if, for example, rs41298872 increases Artemis expression. If there is more Artemis available, then trimming at less optimal positions (i.e. positions further into the sequence which have less breathing) may be possible. Additional work will be required to define the relationship between rs41298872 genotype and Artemis expression.\n\nWe also identified several local sequence context coefficients that varied in the context of rs41298872, however, their mechanistic interpretation remains unclear. Earlier, we noted that A nucleotides 3\u2019 of the trimming site have a negative effect on the trimming probability while T nucleotides have a strong positive effect. In the context of rs41298872, we found that the magnitude of the negative effect of 3\u2019 A nucleotides on the trimming probability was reduced. This may suggest that individuals homozygous (or heterozygous) for rs41298872 may trim in a less motif-dependent fashion, and are instead more reliant on sequence openness 3\u2019 of the trimming site. In this way, having A or T nucleotides 3\u2019 of the trimming site would create a more open local sequence for trimming.\n\nThere are several key limitations of our approach which are intrinsic to the use of adaptive immune receptor repertoire data. First, we have used trimming statistics from non-productive rearrangements as a means of studying the nucleotide trimming process in the absence of selection. Non-productive sequences can be sequenced as part of the repertoire when they are present within a cell expressing a productive rearrangement that survived the selection process. While we are not aware of a mechanism through which non-productive and productive rearrangements within a single cell could be correlated, we also acknowledge that the repertoire of non-productive rearrangements may be an imperfect proxy for a pre-selection repertoire. However, as is common in the literature (Robins et al., 2010; Murugan et al., 2012; Marcou et al., 2018; Sethna et al., 2019; Sethna et al., 2020), we assume that the two recombination events are independent and that the non-productive rearrangements reflect the statistics of the repertoire prior to selection. Next, because many V(D)J rearrangement scenarios can give rise to the same final nucleotide sequence, possible error related to the annotation of each sequence may have restricted our ability to model the actual trimming distributions of each gene. Although we cannot rule out some effect of incorrect sequence annotation on our model inferences, we found that the exact sequence annotation method used, including sampling from the posterior distribution of rearrangement events, had little to no effect on the model fit or performance.\n\nIn summary, we have found that local sequence context, length, and the GC nucleotide content in both directions of the wider sequence can accurately predict the trimming probabilities of TR and IG gene sequences. These results refine our understanding of how nucleotides are trimmed during V(D)J recombination. The sequence-level features identified here lay the groundwork for further exploration into the trimming mechanism and how it may vary across individuals. Such insights will provide another step toward understanding how V(D)J recombination generates diverse receptors and supports a powerful, unique immune response in humans.\n\n## Materials and methods\n\n### Training data set\n\nTCR\u03b2 repertoire sequence data for 666 healthy bone marrow donor subjects was downloaded from the Adaptive Biotechnologies immuneACCESS database using the link provided in the original publication (Emerson et al., 2017). V(D)J recombination scenarios were assigned to each sequence for each individual using the IGoR software (version 1.4.0) (Marcou et al., 2018) as follows. The IGoR software can learn unbiased V(D)J recombination statistics from immune sequence reads. Using these statistics, IGoR can output a list of potential recombination scenarios with their corresponding likelihoods for each sequence. As such, using the default IGoR V(D)J recombination statistics, the 10 highest probability V(D)J recombination scenarios were inferred for each TCR\u03b2-chain sequence in the training data set (Marcou et al., 2018). We then annotated each TCR\u03b2-chain sequence with a single V(D)J recombination scenario by sampling from these 10 scenarios according to the posterior probability of each scenario. We filtered these sequences for rearrangements which contained more than 1 trimmed nucleotide and less than 15 trimmed nucleotides (see the \u2018Notation\u2019 section for further details). We further subset the data to include only non-productive sequences, and used these data for all subsequent model training. After these processing and filtering steps, we used V-gene trimming length distributions from 21,193,153 non-productive sequences for all model training. To test each trained model, we used V-gene trimming length distributions from the remaining 107,121,841 productive sequences (as described in Appendix 3). From this same data set, we also used J-gene trimming length distributions from 107,255,406 productive sequences and 20,204,801 non-productive sequences to test each model.\n\n### Testing data sets\n\n#### TCR\u03b1 and TCR\u03b2 testing data sets\n\nAnnotated TCR\u03b1 and TCR\u03b2 repertoire sequence data for 150 healthy subjects was downloaded using the link provided in the original publication (Russell et al., 2022b). In contrast to the training data cohort, this cohort contains different demographics, shallower RNA-seq-based TCR sequencing, and was processed using a different sequence annotation methods (i.e. TCRdist [version 0.0.2] [Dash et al., 2017] as described in a previous publication [Russell et al., 2022b]). Sequences were split into non-productive and productive groups for model validation. From the TCR\u03b1 data set, we used V-gene trimming length distributions from 123,496 non-productive sequences and 862,096 productive sequences and J-gene trimming length distributions from 141,451 non-productive sequences and 1,101,114 productive sequences to test each model. From the TCR\u03b2 data set, we used V-gene trimming length distributions from 64,738 non-productive sequences and 1,435,153 productive sequences and J-gene trimming length distributions from 59,608 non-productive sequences and 1,496,953 productive sequences to test each model.\n\n#### TCR\u03b3 testing data set\n\nAnnotated TCR\u03b3 repertoire sequence data for 23 healthy bone marrow donor subjects was downloaded from the Adaptive Biotechnologies immuneACCESS database (Robins and Pearson, 2015). Sequences were split into non-productive and productive groups for model validation. We used V-gene trimming length distributions from 2,403,293 non-productive sequences and 1,002,662 productive sequences and J-gene trimming length distributions from 568,824 non-productive sequences and 250,493 productive sequences to test each model.\n\n#### IGH testing data sets\n\nAnnotated IgG class non-productive IGH repertoire sequence data for nine healthy subjects was obtained from the authors of a previous publication (Spisak et al., 2020). The raw sequence data is available using the link provided in the original publication (Briney et al., 2019). In contrast to the training data cohort, this cohort contains different demographics, shallower RNA-seq based IGH-sequencing, and was processed using a different sequence annotation method (i.e. a combination of Immcantation [Vander Heiden et al., 2014] and IgBlast [Ye et al., 2013] as described in a previous publication [Spisak et al., 2020]). Further, these data are restricted to rearrangements that lead to a clonal family with at least six members.\n\nLikewise, productive IGH repertoire sequence data for four healthy subjects was downloaded using the link provided in the original publication (Jaffe et al., 2022) and the sequences were annotated using partis (version 0.16.0) (Ralph and Matsen, 2016). Due to the large size of this data set, 100k sequences were randomly sampled from the original data set prior to model validation. For both IGH data sets, only a single sequence from each inferred clonal family was included in each model testing data set. From these data sets, we used V-gene trimming length distributions from 160,714 non-productive sequences and 32,245 productive sequences and J-gene trimming length distributions from 297,298 non-productive sequences and 74,884 productive sequences to test each model.\n\n### Artemis-locus SNP data set\n\nGenome-wide SNP array data corresponding to 611 of the training data set individuals was downloaded from The database of Genotypes and Phenotypes (accession number: phs001918). Details of the SNP array data set, genotype imputation, and quality control have been described previously (Martin et al., 2020). We only used SNP data corresponding to the Artemis locus (rs41298872) which we previously found to be strongly associated with increasing the extent of V-gene trimming (Russell et al., 2022b).\n\n### Notation\n\nLet $I$ be a set of individuals. For each subject $i\\inI$, assume we have a TCR repertoire consisting of sequences indexed by $k$ such that $k=1,\u2026,K_{i}$. We assume that each sequence can be unambiguously annotated with being from a specific V-gene and J-gene sequence, and having a number of deleted nucleotides from each gene. For modeling purposes, we combine TRB V-gene or J-gene alleles that have identical terminal nucleotide sequences (last 24 nucleotides of each sequence) into TRB V-gene allele groups and TRB J-gene allele groups. As such, each TCR sequence is annotated with being from a V-gene allele group and J-gene allele group. Because we are requiring that each gene allele group originates from the same TRB V-gene or J-gene, there may still be overlap in terms of sequence identity between allele groups. For simplicity, we orient all sequences in the 5\u2019-to-3\u2019 direction, and use the top strand for V-gene sequences and the bottom strand for J-gene sequences. We will be introducing modeling methods as they relate to V-genes and V-gene trimming, however, with this sequence orientation, the same methods can be applied to J-genes and J-gene trimming. We will use $\\sigma$ to represent a gene sequence oriented in the 5\u2019-to-3\u2019 direction and $n$ to represent the number of nucleotides deleted from the 3\u2019 end of this sequence as we describe our modeling.\n\nWe are interested in modeling the probability of trimming $n$ nucleotides from a given gene sequence $\\sigma$, $P(n\u2223\\sigma)$. We can define an empirical conditional probability density function to estimate this probability. To start, we can uniformly sample from any given individual\u2019s repertoire. Let $S$ be a random variable that represents the gene-allele-group sequence from such a sample. Let $N$ be a random variable that represents the number of deleted nucleotides, which for notational convenience we assume take on a non-negative integer value (nonsensical values will have probability zero). Let $0\\leqC^{(i)}\u2062(\\sigma)\\leqK_{i}$ represent the number of TCRs that use gene allele group $\\sigma$. Let $0\\leqC^{(i)}\u2062(n,\\sigma)\\leqK_{i}$ represent the number of TCRs that have gene allele group $\\sigma$ and $n$ gene nucleotides deleted. With these data, we can form the empirical conditional probability density function:\n\n$$\nP_{emp}(N=n\u2223S=\\sigma,i)=\\frac{C^{(i)}(n,\\sigma)}{C^{(i)}(\\sigma)}.\n$$\n\nUsing these TCR\u03b2 repertoire data, we want to model the influence of various sequence-level parameters on $P(n\u2223\\sigma)$ . With this assumption, let $L$ and $U$ be lower and upper bounds, respectively, on $n$ such that $N^{\u2032}={L,\u2026,U}$ is the set of all reasonable nucleotide deletion amounts. The precise location of hairpin opening and its relationship to deletion is unclear. Hence, we have chosen to define $L=2$ since smaller trimming amounts may result from an alternative, hairpin-opening-position-related (or other) trimming mechanism. Likewise, we have chosen to define $U=14$ since trimming amounts greater than 14 nucleotides are uncommon and could also result from an alternative trimming mechanism. We will subset the training data set, after IGoR annotation (see details in a previous section), such that we will only consider TCRs that have $2\\leqn\\leq14$. Similarly, the one existing analysis (Murugan et al., 2012) exploring the relationship between sequence context and nucleotide trimming only considered TCRs that had $2\\leqn\\leq12$ for their modeling. We summarize all of the notation discussed in this section, as well as in the following sections, in Appendix 1\u2014table 1.\n\n### V(D)J recombination modeling assumptions\n\nFor our model, we make the following assumptions about V(D)J recombination biology:\n\nWith these assumptions, we can resolve the nucleotide sequence on both sides of the trimming site and define mechanistically interpretable model features using these two sequences. Specifically, we define a \u2018trimming motif\u2019 consisting of several nucleotides on either side of the trimming site, the predicted \u2018DNA-shape\u2019 of the nucleotides and bonds in close proximity to the trimming site, the counts of GC or AT nucleotides on either side of the trimming site beyond the \u2018trimming motif\u2019 region (e.g. the \u2018two-side base-count beyond\u2019), and the sequence-independent \u2018length\u2019 from the end of the gene to the trimming site (see Appendix 2 for further details). An example of how an arbitrary V-gene sequence is transformed into features for modeling is shown in Figure 1. We will assume that observations can be drawn from a model in which these features vary across trimming lengths $n$ for a given gene allele group $\\sigma$. We can then explore the influence of these features on the probability of trimming at a certain site given a gene sequence.\n\n### Defining a model covariate function\n\nWith the features summarized above, we can define a model covariate function $f$ than contains any unique combination of parameter-specific covariate functions (Table 1). This function $f$ will be the sum of each of the desired parameter-specific covariate functions. This framework allows us to generalize the existing PWM model (Murugan et al., 2012) to a model that allows for arbitrary sequence features. For example, we replicate this PWM model using the model covariate function, $f_{1}(n,\\sigma;\\beta^{mtif},a=2,b=4)$, where $n$ represents the number of trimmed nucleotides, $\\sigma$ represents the gene-allele-group sequence, $\\beta^{mtif}$ represents motif-specific parameter coefficients, and $a$ and $b$ are non-negative integer values that represent the number of nucleotides 5\u2019 and 3\u2019 of the trimming site, respectively, that are included in the \u2018trimming motif\u2019. This function is described further in (Equation 14). To extend this model to a model containing motif parameters and base-count-beyond parameters, the model covariate function will be\n\n$$\nf(n,\\sigma;\\beta^{motif},\\beta^{AT},\\beta^{GC},a,b,c):=f_{1}(n,\\sigma;\\beta^{motif},a,b)+f_{2}(n,\\sigma;\\beta^{AT},\\beta^{GC},a,b,c)\n$$\n\nwhere $f_{2}$ represents the base-count-beyond model covariate function (Equation 17), $\\beta^{AT}$ and $\\beta^{GC}$ represent base-count-beyond-specific parameter coefficients, and $c$ represents the number of nucleotides 5\u2019 of the trimming site to be included in the base-count. We will use this motif and base-count-beyond model example to discuss the model formulation in the following sections, however, many other parameter combinations are possible. We will not define a model covariate function that contains two parameters that model the same feature. For example, length and base-count-beyond coefficients will never be included in a model covariate function together (since they both parameterize length). Likewise, motif and DNA-shape coefficients will never both be included in a model covariate function.\n\n**Table 1.**\n Summary of all parameter-specific coefficients and covariate functions for a trimming site $n$ and gene sequence $\\sigma$.Here, $a$ and $b$ represent the number of nucleotides 5\u2019 and 3\u2019 of the trimming site to be included in the \u2018trimming motif,\u2019 respectively, and $c$ represents the number of nucleotides 5\u2019 of the trimming site to be included in the base-count.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Model coefficient variables</th>\n      <th>Parameter-specific covariate function</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Motif parameters</td>\n      <td>\u03b2mtif coefficients</td>\n      <td>f1\u2062(n,\u03c3;\u03b2mtif,a,b) (Equation 14)</td>\n    </tr>\n    <tr>\n      <td>Base-count-beyond parameters</td>\n      <td>\u03b2AT and \u03b2GC coefficients</td>\n      <td>f2\u2062(n,\u03c3;\u03b2AT,\u03b2GC,a,b,c) (Equation 17)</td>\n    </tr>\n    <tr>\n      <td>DNA-shape parameters</td>\n      <td>\u03b2Shape coefficients</td>\n      <td>f3\u2062(n,\u03c3;\u03b2Shape,a,b) (Equation 19)</td>\n    </tr>\n    <tr>\n      <td>Length parameters</td>\n      <td>\u03b2ldiSt coefficients</td>\n      <td>f4\u2062(n,\u03c3;\u03b2ldiSt) (Equation 20)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Predicting trimming probabilities using conditional logistic regression\n\nWe will be using the motif and base-count-beyond parameters given by (Equation 2) as examples for the remainder of this section, however, we could also formulate a model with any other parameter of interest, as described in the previous section (Table 1). As such, we can fit a conditional logit model which posits that\n\n$$\nP(n\u2223\\sigma;\\beta^{motif},\\beta^{AT},\\beta^{GC},a,b,c):=\\frac{exp\u2061(f(n,\\sigma;\\beta^{motif},\\beta^{AT},\\beta^{GC},a,b,c))}{\\sumn^{\u2032}\\inN^{\u2032}exp\u2061(f(n^{\u2032},\\sigma;\\beta^{motif},\\beta^{AT},\\beta^{GC},a,b,c))}\n$$\n\nwhere $N^{\u2032}$ is the set of all reasonable trimming lengths, $a$ and $b$ represent the number of nucleotides 5\u2019 and 3\u2019 of the trimming site to be included in the \u2018trimming motif,\u2019 respectively, $c$ represents the number of nucleotides 5\u2019 of the trimming site to be included in the base-count parameters, and $f(n,\\sigma;\\beta^{motif},\\beta^{AT},\\beta^{GC},a,b,c)$ is the model covariate function for the motif and base-count-beyond model given by (Equation 2). We will let $P(n\u2223\\sigma;\\beta^{motif},\\beta^{AT},\\beta^{GC},a,b,c)$ denote the conditional probability that a given gene will be trimmed by $n$ nucleotides.\n\nLet $y_{i\u2062k\u2062\\sigma\u2062n}$ equal 1 if a gene allele group $\\sigma$ is trimmed by $n$ nucleotides for TCR $k$ from subject $i$, and equal 0 otherwise. With this, we can define a likelihood function, $L\u2062(\\beta^{mtif},\\beta^{AT},\\beta^{GC},a,b,c)$, such that for a random sample of subjects, $L\u2062(\\beta^{mtif},\\beta^{AT},\\beta^{GC},a,b,c)$, is the likelihood of the model parameters, $\\beta^{mtif}$, $\\beta^{AT}$, and $\\beta^{GC}$, given that we observed a set of trimming amounts for a set of given genes. As such, the log-likelihood function can be written as\n\n$$\nlog\u2061L(\\beta^{motif},\\beta^{AT},\\beta^{GC},a,b,c)=\\sumi,k,\\sigma,ny_{ik\\sigman}\u22c5log\u2061P(n\u2223\\sigma;\\beta^{motif},\\beta^{AT},\\beta^{GC},a,b,c)\n$$\n\nwhere $P(n\u2223\\sigma;\\beta^{motif},\\beta^{\u00a0AT},\\beta^{GC},a,b,c)$ is given by (Equation 3). Instead of maximizing this log-likelihood directly, we may wish to aggregate the data to reduce the number of observations and simplify model fitting. Recall that for subject $i$, $C^{(i)}\u2062(\\sigma)$ represents the number of TCRs which use gene allele group $\\sigma$ and $C^{(i)}\u2062(n,\\sigma)$ represents the number of TCRs which have gene allele group $\\sigma$ and $n$ gene nucleotides deleted. As such, $C^{(i)}\u2062(n,\\sigma)$ is the count of observations which will have the same trimming probabilities $P(n\u2223\\sigma;\\beta^{motif},\\beta^{\u00a0AT},\\beta^{GC},a,b,c)$ and will have been trimmed by $n$ for subject $i$ and gene allele group $\\sigma$. Thus, using this aggregated data from all subjects $i\\inI$, we can re-write the log-likelihood function equivalently as\n\n$$\nlog\u2061L(\\beta^{motif},\\beta^{AT},\\beta^{GC},a,b,c)=\\sumi,\\sigma,nC^{(i)}(n,\\sigma)\u22c5log\u2061P(n\u2223\\sigma;\\beta^{motif},\\beta^{AT},\\beta^{GC},a,b,c).\n$$\n\nAs above, for a random sample of subjects, $L\u2062(\\beta^{mtif},\\beta^{AT},\\beta^{GC},a,b,c)$ is the likelihood of the model parameters, $\\beta^{mtif}$, $\\beta^{AT}$, and $\\beta^{GC}$, given that we observed a set of trimming amounts for a set of given genes.\n\nWith this likelihood formulation, all observations in the sample get uniform treatment in the construction of the likelihood. However, subjects may differ in their repertoire size and composition for reasons other than trimming. For example, it is known that gene usage differs across subjects. Thus, to avoid having these differences pollute our $\\beta^{motif}^$, $\\beta^{AT}^$, and $\\beta^{GC}^$ inference, we propose a subject and gene weighting scheme.\n\nAs such, we can define the expected likelihood of a process where we first draw a subject $i$ uniformly at random, then we sample TCR sequences from their repertoire according to a given distribution, as follows. For a single TCR sequence from such a sample, let $S$ be a random variable representing the gene of the sequence, and let $N$ be a random variable representing the number of deleted nucleotides. We can sample each TCR sequence with probability $P_{samp}(N=n,S=\\sigma)$ which we will specify later. Also, given random $S$ and $N$, the log-likelihood of the model parameters, $\\beta^{mtif}$, $\\beta^{AT}$, and $\\beta^{GC}$, is given by\n\n$$\nlog\u2061L(\\beta^{motif},\\beta^{AT},\\beta^{GC},a,b,c;N,S)=log\u2061P(N\u2223S;\\beta^{motif},\\beta^{AT},\\beta^{GC},a,b,c).\n$$\n\nWith this, the expected log-likelihood of the model parameters, $\\beta^{motif}$, $\\beta^{AT}$, and $\\beta^{GC}$ given this random sample is given by\n\n$$\nE[log\u2061L(\\beta^{motif},\\beta^{AT},\\beta^{GC},a,b,c)\u2223I=i]=\\sumn,\\sigmaP_{samp}(N=n,S=\\sigma)\u22c5log\u2061P(N=n,S=\\sigma;\\beta^{motif},\\beta^{AT},\\beta^{GC},a,b,c)=\\sumn,\\sigmaP_{samp}(N=n,S=\\sigma)\u22c5log\u2061P(N=n\u2223S=\\sigma;\\beta^{motif},\\beta^{AT},\\beta^{GC},a,b,c).\n$$\n\nWe can define a new, weighted log-likelihood function, $log\u2061L_{expected}\u2062(\\beta^{mtif},\\beta^{AT},\\beta^{GC},a,b,c)$, equivalent to this expected log-likelihood:\n\n$$\nlog\u2061L_{expected}(\\beta^{motif},\\beta^{AT},\\beta^{GC},a,b,c):=\\sumiE[log\u2061L(\\beta^{motif},\\beta^{AT},\\beta^{GC},a,b,c)\u2223I=i].\n$$\n\nFor a random sample of subjects, the weighted likelihood, $L_{expected}\u2062(\\beta^{mtif},\\beta^{AT},\\beta^{GC},a,b,c)$, represents the likelihood of the model parameters, $\\beta^{mtif}$, $\\beta^{AT}$, and $\\beta^{GC}$, given that we observed a set of trimming amounts for a given set of gene allele groups after weighting observations according to the sampling procedure $P_{samp}(N=n,S=\\sigma)$. We can use whichever sampling procedure, $P_{samp}(N=n,S=\\sigma)$, we want. For example, recall that we originally formed the empirical conditional PDFs in (Equation 1) for each subject $i$ by uniformly sampling from each TCR repertoire to get a total repertoire size of $K_{i}$:\n\n$$\nP_{emp}(N=n\u2223S=\\sigma,i)=\\frac{C^{(i)}(n,\\sigma)}{C^{(i)}(\\sigma)},\n$$\n\n\n\n$$\nP_{emp}(S=\\sigma\u2223i)=\\frac{C^{(i)}(\\sigma)}{K_{i}},\n$$\n\nand\n\n$$\nP_{emp}(i)=\\frac{1}{I}.\n$$\n\nWith this, we can define a sampling procedure equivalent to this empirical joint PDF as follows:\n\n$$\nP_{samp}(N=n,S=\\sigma):=P_{emp}(N=n,S=\\sigma)=P_{emp}(n\u2223\\sigma,i)\u22c5P_{emp}(\\sigma\u2223i)\u22c5P_{emp}(i)\n$$\n\nWith this sampling procedure,\n\n$$\nlog\u2061L_{expected}(\\beta^{motif},\\beta^{AT},\\beta^{GC},a,b,c)=\\sumi,\\sigma,nP_{emp}(n\u2223\\sigma,i)\u22c5P_{emp}(\\sigma\u2223i)\u22c5P_{emp}(i)\u22c5log\u2061P(n\u2223\\sigma;\\beta^{motif},\\beta^{AT},\\beta^{GC},a,b,c).\n$$\n\nAs such, each subject, instead of each observation, gets uniform treatment in the construction of the weighted likelihood.\n\nWhile this procedure would correct for individual subjects having different repertoire sizes, it does not account for gene usage differences. To avoid having these differences pollute our $\\beta^{motif}^$, $\\beta^{AT}^$, and $\\beta^{GC}^$ inference, we propose a subject-independent gene-allele-group sampling scheme. While we could use any distribution on $\\sigma$, including a uniform weight by gene allele groups, we have chosen to define:\n\n$$\nP_{marg}(\\sigma)=\\frac{1}{I}\\sumiP_{emp}(\\sigma\u2223i).\n$$\n\nWe can reformulate the sampling procedure which is an empirical average per-gene-allele-group frequency such that:\n\n$$\nP_{samp}(N=n,S=\\sigma):=P_{emp}(n\u2223\\sigma,i)\u22c5P_{marg}(\\sigma)\u22c5P_{emp}(i).\n$$\n\nWith this subject-independent gene sampling procedure, we can define a weighted likelihood $L_{W}\u2062(\\beta^{mtif},\\beta^{AT},\\beta^{GC},a,b,c)$ such that\n\n$$\nlog\u2061L_{W}(\\beta^{motif},\\beta^{AT},\\beta^{GC},a,b,c):=\\sumi,\\sigma,nP_{emp}(n\u2223\\sigma,i)\u22c5P_{marg}(\\sigma)\u22c5P_{emp}(i)\u22c5log\u2061P(n\u2223\\sigma;\\beta^{motif},\\beta^{AT},\\beta^{GC},a,b,c)\n$$\n\nAs such, each gene and each subject get uniform treatment in the construction of the weighted likelihood.\n\nFrom here, we can maximize this weighted log-likelihood, $log\u2061L_{W}\u2062(\\beta^{mtif},\\beta^{AT},\\beta^{GC},a,b,c)$, to estimate the log-probabilities $\\beta^{mtif}$, $\\beta^{AT}$, and $\\beta^{GC}$, where $\\beta^{mtif}$ is equivalent to a (log) position-weight-matrix. To estimate each coefficient, we can solve the weighted maximum likelihood estimation problem:\n\n$$\n(\\beta^{motif}^,\\beta^{AT}^,\\beta^{GC}^)=argmax_{\\beta^{motif},\\beta^{AT},\\beta^{GC}}\u00a0log\u2061L_{W}(\\beta^{motif},\\beta^{AT},\\beta^{GC},a,b,c)\n$$\n\nusing the mclogit package in R. We can formulate a weighted maximum likelihood problem in a similar way for any model covariate function $f$ containing a unique combination of parameter-specific covariate functions (Table 1).\n\nWe compare our inferred coefficients to the existing PWM model which was designed and trained using least squares (Murugan et al., 2012). When replicating this model using our methods described above (i.e. the 2\u00d74 motif model), we note highly similar results (Figure 2\u2014figure supplement 1).\n\n### Evaluating model fit and generalizability across genes\n\nIn order to evaluate the model fit and generalizability of each model, we use a variety of training and testing data sets to train each model and calculate the log loss. We will describe our general model evaluation procedure here. We describe variations of this general model evaluation procedure in Appendix 3. Let $T$ represent a training data set and $H$ represent a held-out testing data set. With the training set $T$, we can train each model of interest as described above in (Equation 10). After this model fitting, we can calculate the expected per-sequence conditional log loss of the model with given coefficients, $\u2133$, for a given held-out testing set, $H$, such that\n\n$$\n\u2113(M\u2223H):=\u2212\\sumi,\\sigma,nP_{emp_{H}}(n,\\sigma,i)\u22c5log\u2061P(n\u2223\\sigma;M)=\u2212\\sumi,\\sigma,nP_{emp_{H}}(n\u2223\\sigma,i)\u22c5P_{emp_{H}}(\\sigma\u2223i)\u22c5P_{emp_{H}}(i)\u22c5log\u2061P(n\u2223\\sigma;M)\n$$\n\nwhere $i$ represents a subject, $n$ represents a trimming length, and $\\sigma$ represents a gene allele group. Because we are incorporating the empirically observed frequency of each subject, trimming length, and gene allele group within each \u2018held-out testing set,\u2019 $P_{emp_{H}}(n,\\sigma,i)$, in this formulation, the expected per-sequence conditional log loss values are guaranteed to be directly comparable between held-out testing sets with varying compositions. Models that have lower expected per-sequence conditional log loss will indicate that the model has a better fit.\n\n### Assessing significance of model coefficients\n\nDuring model fitting, we estimated the model coefficients $\\beta^{motif}^$, $\\beta^{AT}^$, and $\\beta^{GC}^$ by maximizing the weighted likelihood function given by (Equation 9). To measure the significance of each of these model coefficients $\\beta^\\in{\\beta^{motif}^,\\beta^{AT}^,\\beta^{GC}^}$ we want to test whether each coefficient $\\beta^=0$. To do this, we can first estimate the standard error of each inferred coefficient using a clustered bootstrap (with subject-gene pairs as the sampling unit). As such, for each bootstrap iterate, we sampled subject-gene pairs from the full V-gene training data set with replacement. Using this re-sampled data, we maximized the weighted likelihood function given by (Equation 9) to re-estimate each coefficient. We repeated this bootstrap process 1000 times and used the resulting 1000 coefficient estimates to estimate a standard error for each model coefficient. With this estimated standard error of each inferred model coefficient $\\beta^\\in{\\beta^{motif}^,\\beta^{AT}^,\\beta^{GC}^}$, we test whether $\\beta^=0$ by calculating the test statistic\n\n$$\nT(\\beta^)=\\frac{\\beta^}{se\u2061(\\beta^)}\n$$\n\nand comparing $T(\\beta^)$ to a $N(0,1)$ distribution to obtain each p-value. We consider the significance of each model coefficient using a Bonferroni-corrected threshold. To establish the threshold, we corrected for the total number of model coefficients being evaluated in the given model.\n\n### Evaluating model coefficient variation in the context of SNPs\n\nWith the motif and base-count-beyond model, we are interested in quantifying variation in model coefficients in the context of genetic variations within the gene encoding the Artemis protein that were previously identified as being associated with increasing the extent of trimming (Russell et al., 2022b). Recall that we trained this model using the model covariate function given by (Equation 2). During model fitting, we estimated the model coefficients $\\beta^{motif}^$, $\\beta^{AT}^$, and $\\beta^{GC}^$ by maximizing the weighted likelihood function given by (Equation 9).\n\nWe have previously identified a set $X$ of SNPs within the gene encoding the Artemis protein that are significantly associated with increasing the extent of trimming (Russell et al., 2022b). For each SNP $x\\inX$ and individual $i\\in{1,\u2026,I}$, we measure the number of minor alleles in the genotype, $g_{ix}\\in{0,1,2}$. We are interested in whether each of the inferred model coefficients $\\beta^\\in{\\beta^{motif}^,\\beta^{AT}^,\\beta^{GC}^}$ vary in the context of genotype for each genetic variant $x\\inX$. As such, for each SNP of interest, we can adapt the 1\u00d72 motif + two-side base-count beyond model covariate function to allow for genotype-specific variation of each model coefficient by incorporating additional interaction coefficients $\\beta_{x}\\in{\\beta_{x}^{motif},\\beta_{x}^{AT},\\beta_{x}^{GC}}$ to model the relationship between each model parameter and the SNP $x$ genotype. We can then estimate the coefficients of this new model, $\\beta^{motif}^$, $\\beta^{AT}^$, $\\beta^{GC}^$, $\\beta_{x}^{motif}^$, $\\beta_{x}^{AT}^$, and $\\beta_{x}^{GC}^$, as before by maximizing the weighted likelihood given by (Equation 9) using the adapted model covariate function. We can measure the significance of each of the model coefficients using the methods described in the previous section. Ultimately if a SNP-coefficient interaction term $\\beta^_{x}\\in{\\beta_{x}^{motif}^,\\beta_{x}^{AT}^,\\beta_{x}^{GC}^}$ is significant, we can conclude that the corresponding model coefficient $\\beta^$ varies significantly in the context of the genotype of SNP $x\\inX$. We use this same procedure to evaluate whether each model coefficient varies in the context of each SNP of interest.\n",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "c0113ebc-5621-415b-b523-f623a03cd1ea",
+      "submission_id": "96913d3e-3b70-490d-8876-14c1c2c865d7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Frederik Graw, https://ror.org/00f7hpc57 Friedrich-Alexander-University Erlangen-N\u00fcrnberg Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85145.sa0](https://doi.org/10.7554/eLife.85145.sa0)\n\nRussell et al. study and reveal compelling evidence for potential sequence-based factors that may drive VDJ trimming, a mechanism involved in VDJ recombination that shapes adaptive immune repertoire generation. The work is based on a rigorous statistical comparison of logistic regression models to reveal the role and function of cutting enzymes in shaping T- and B-cell receptor diversity which could provide fundamental new insights into these processes.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Frederik Graw, https://ror.org/00f7hpc57 Friedrich-Alexander-University Erlangen-N\u00fcrnberg Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85145.sa1](https://doi.org/10.7554/eLife.85145.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Statistical inference reveals the role of length, breathing, and nucleotide identity in V(D)J nucleotide trimming\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Betty Diamond as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Thierry Mora (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nYour manuscript addresses an important topic and interesting approach to foster our understanding of processes relevant to immune repertoire generation. However, there were several aspects identified during the review process that would require major revisions to support or adapt the claims made. In particular, this affects the following essential revisions:\n\nEssential revisions:\n\n1) A rephrasing or additional support for the claim to provide mechanistic insights which seem to be overstated. Based on the fact that only statistical models are used, there is currently no real indication of mechanistic or quantitative insight into the involved processes.\n\n2) An extensive restructuring and rewriting of the manuscript to clarify the focus of the paper (see comments of reviewer 3, e.g. regarding the extended methods section)\n\n3) Improved explanation of the model, as well as several details concerning the statistical analyses\n\nReviewer #1 (Recommendations for the authors):\n\nReally great work and very interesting. My recommendations are mostly questions and some suggestions.\n\n\u2013 The text is really dense (especially when you talk about and compare all the different models tested). Can that somehow be shortened and made more concise?\n\n\u2013 Maybe it's mentioned somewhere, but how many sequences were in train and test datasets? Have you performed subsampling studies to understand at what sequence number your models become stable?\n\n\u2013 You only use unselected sequences. If you had used productive sequences, would the results have been dramatically different?\n\n\u2013 You are somehow splitting the datasets by V gene distance. How would the results have looked like with a random train/test split?\n\n\u2013 Figure 3a, 4a what's the statistical significance between curves? I rarely see error bars (if at all) in any of the figures. To what extent are your results dependent on just sampling once?\n\n\u2013 You use the term mechanism a lot. The title is also quite strongly worded (\"reveal role of\"). To what extent is this justified given that you \"only\" perform statistical modeling and no experimental investigations? To what extent are you sure that your models are really a reflection of biology (causal)?\n\nReviewer #2 (Recommendations for the authors):\n\nDNA breathing: At the end of the day, what is used in the model is the GC content on both sides of the cut site. While I recognize this has been shown to be associated with breathing, I think the authors should remain more factual about their conclusions, and stick to the observation that GC content is predictive in the abstract and introduction, writing about breathing only as a possible interpretation rather than a solid result. It would be both more precise and clearer \u2013 I struggled to understand what the paper actually showed until I reached the bottom of page 5, where the proxy for breathing is finally explained.\n\nThe model definitions are quite complex, and a cartoon of the DNA sequence, with the overhang, cut site, etc, would be very much needed to better explain the geometrical configuration of the model and the notations, as in the first Figure. It could help answer some of the following questions which confused me: which part of the sequence is subject to the PWM? Which part of the sequence is included in the sequence breathing counts on the 3' and 5' sides? Why are there 3 (and not 4, or 2) parameters in the sequence-breathing part of the model? Relatedly, why not combine distance with breathing parameters (i.e. are they redundant)? When does the 3' overhang start (we learn later it's at +2)? What is DNA shape? From what reference point is the length of deletion n counted? I'm aware there are such cartoons in the Methods, but they should be shown earlier and combined in a clearer manner, to display the definitions of the models and notations directly on the cartoon rather than painstakingly explained in the captions.\n\nMethods: The methods are way too long for what they aim to explain: 25 pages, with a 5-page long table of notations! I would strongly recommend simplifying them to make them more readable. I will readily admit that I didn't comb through them with as much care as I would have liked, partly for lack of time, partly because I didn't feel I would learn much more from them than I already understood from the main text. I suspect very few readers will. The paper would be greatly improved by reducing its length, but also by providing key details and explanations in the Results section, to make it more self-contained.\n\nTraining set: From the methods, it appears that the Emerson dataset is first processed by IGoR to sample from the posterior distribution of scenarios. This non-obvious but essential step should be made clear in the description of the training data in the Results section.\n\nI was also wondering why the authors didn't directly take the V-gene-dependent deletion probability distribution provided by IGoR, which (at first sight) should be strictly equivalent to sampling from that posterior distribution while being much easier. If you restrict to a single V gene, sampling scenarios and just sampling from the IGoR-provided distribution of deletion lengths for that V gene are exactly the same thing, by definition of the EM algorithm. Could you please explain that choice?\n",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6da88c4c-268a-4a49-a40b-ddfc2945836d",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C1",
+      "claim": "Humans somatically generate highly diverse repertoires of B cell and T cell receptors (BCRs and TCRs) through a random process called V(D)J recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "To appropriately defend against a wide array of pathogens, humans somatically generate highly diverse repertoires of B cell and T cell receptors (BCRs and TCRs) through a random process called V(D)J recombination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the adaptive immune system and is stated as background information in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "3b224b6b-5b25-42a8-a2d3-bf68cc273b84",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C2",
+      "claim": "Receptor diversity is achieved during V(D)J recombination through both the combinatorial assembly of V(D)J-genes and the junctional deletion and insertion of nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Receptor diversity is achieved during this process through both the combinatorial assembly of V(D)J-genes and the junctional deletion and insertion of nucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about V(D)J recombination mechanisms stated in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "81692126-d7cb-401a-90b3-39006a945dec",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C3",
+      "claim": "The Artemis protein is often regarded as the main nuclease involved in V(D)J recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "While the Artemis protein is often regarded as the main nuclease involved in V(D)J recombination, the exact mechanism of nucleotide trimming is not understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field, though the authors note the mechanism is not fully understood.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "07812d9b-6296-4524-b6c3-e98ef86cfb35",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C4",
+      "claim": "The exact mechanism of nucleotide trimming during V(D)J recombination is not understood.",
+      "claim_type": "EXPLICIT",
+      "source": "While the Artemis protein is often regarded as the main nuclease involved in V(D)J recombination, the exact mechanism of nucleotide trimming is not understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap that motivates the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "3f8a844b-42ba-4ae3-9260-5a677e130d41",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C5",
+      "claim": "Local sequence context, length, and GC nucleotide content in both directions of the wider sequence, together, can most accurately predict the trimming probabilities of a given V-gene sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that local sequence context, length, and GC nucleotide content in both directions of the wider sequence, together, can most accurately predict the trimming probabilities of a given V-gene sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by the modeling results shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "e7615f17-9441-4402-b8f5-d5c95c9a2b45",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C6",
+      "claim": "GC nucleotide content is predictive of sequence-breathing.",
+      "claim_type": "EXPLICIT",
+      "source": "Because GC nucleotide content is predictive of sequence-breathing, this model provides quantitative statistical evidence regarding the extent to which double-stranded DNA may need to be able to breathe for trimming to occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about DNA structure and dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "3bd7352b-2645-446f-8e97-94857275d0fc",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C7",
+      "claim": "The model provides quantitative statistical evidence regarding the extent to which double-stranded DNA may need to be able to breathe for trimming to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "Because GC nucleotide content is predictive of sequence-breathing, this model provides quantitative statistical evidence regarding the extent to which double-stranded DNA may need to be able to breathe for trimming to occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study based on the modeling results and interpretation of GC content effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "11b576ae-30d0-4350-8176-a12970a72271",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C8",
+      "claim": "There is evidence of a sequence motif that appears to get preferentially trimmed, independent of GC-content-related effects.",
+      "claim_type": "EXPLICIT",
+      "source": "We also see evidence of a sequence motif that appears to get preferentially trimmed, independent of GC-content-related effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study supported by the motif analysis shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "5642eb85-2202-4420-a6f8-0765dc6c1853",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C9",
+      "claim": "The inferred coefficients from the 1\u00d72 motif + two-side base-count beyond model provide accurate prediction for V- and J-gene sequences from other adaptive immune receptor loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we find that the inferred coefficients from this model provide accurate prediction for V- and J-gene sequences from other adaptive immune receptor loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the validation analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "663c6f02-24a6-4a65-a8bf-c92bca18a550",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C10",
+      "claim": "The majority of human T cells express \u03b1-\u03b2 receptors that consist of an \u03b1 and a \u03b2 protein chain.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of human T cells express \u03b1-\u03b2 receptors that consist of an \u03b1 and a \u03b2 protein chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about T cell receptor biology stated in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "36db834d-aacb-4d55-b3ec-cef1ce50833d",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C11",
+      "claim": "During V(D)J recombination of the \u03b2 chain, a single V-, D-, and J-gene are randomly chosen from a pool of V-gene, D-gene, and J-gene segments within the germline TCR\u03b2 locus over a series of steps.",
+      "claim_type": "EXPLICIT",
+      "source": "During the V(D)J recombination process of the \u03b2 chain, a single V-, D-, and J-gene are randomly chosen from a pool of V-gene, D-gene, and J-gene segments within the germline TCR\u03b2 locus over a series of steps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about V(D)J recombination stated in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "26af5e3c-310c-4633-b65e-4d41b17aa202",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C12",
+      "claim": "The recombination activating gene protein complex aligns a randomly chosen D- and J-gene, removes the intervening chromosomal DNA between the two genes, and forms a hairpin loop at the end of each gene.",
+      "claim_type": "EXPLICIT",
+      "source": "To begin this process, the recombination activating gene protein complex aligns a randomly chosen D- and J-gene, removes the intervening chromosomal DNA between the two genes, and forms a hairpin loop at the end of each gene (Gellert, 1994; Fugmann et al., 2000; Schatz and Swanson, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "d28af946-20ff-43cd-b799-b99c935cdaff",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C13",
+      "claim": "Each hairpin loop is nicked open, typically in an asymmetrical fashion, by the Artemis:DNA-PKcs protein complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Each hairpin loop is then nicked open, typically in an asymmetrical fashion, by the Artemis:DNA-PKcs protein complex (Ma et al., 2002; Lu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "f58d7af0-0f49-415e-a273-38878cb2b3ee",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C14",
+      "claim": "Asymmetrical hairpin opening creates a single-stranded DNA overhang at the end of both genes that may contain P-nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "This asymmetrical hairpin opening creates a single-stranded DNA overhang at the end of both genes that, depending on the location of the hairpin nick, may contain P-nucleotides (short palindromes of gene terminal sequence) (Gauss and Lieber, 1996; Nadel and Feeney, 1997; Ma et al., 2002; Jackson et al., 2004; Lu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "4b04e19c-119e-471b-8fd6-47875eea4ab2",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C15",
+      "claim": "The most dominant hairpin opening position leads to a single-stranded 3' overhang that is 4 nucleotides in length (2 nucleotides of which are P-nucleotides).",
+      "claim_type": "EXPLICIT",
+      "source": "The most dominant hairpin opening position leads to a single-stranded 3' overhang that is 4 nucleotides in length (2 nucleotides of which are P-nucleotides) (Lu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "14220f17-c0cf-4311-92ef-237c0976cfa7",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C16",
+      "claim": "Nucleotides may be deleted from each gene end through an incompletely understood mechanism suggested to involve Artemis.",
+      "claim_type": "EXPLICIT",
+      "source": "From here, nucleotides may be deleted from each gene end through an incompletely understood mechanism suggested to involve Artemis (Feeney et al., 1994; Nadel and Feeney, 1995; Nadel and Feeney, 1997; Jackson et al., 2004; Gu et al., 2010; Chang et al., 2015; Chang and Lieber, 2016; Zhao et al., 2020; Russell et al., 2022b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "e1cd176f-a3c9-4a64-aa6e-7a8de2357ff7",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C17",
+      "claim": "Nucleotide trimming can remove traces of P-nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "This nucleotide trimming can remove traces of P-nucleotides (Gauss and Lieber, 1996; Srivastava and Robins, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "bc9da788-5578-4748-b9a6-7a26422af6a0",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C18",
+      "claim": "Non-template-encoded nucleotides, known as N-insertions, can be added to each gene end by the enzyme terminal deoxynucleotidyl transferase.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-template-encoded nucleotides, known as N-insertions, can also be added to each gene end by the enzyme terminal deoxynucleotidyl transferase (Kallenbach et al., 1992; Gilfillan et al., 1993; Komori et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "dead5dcd-db23-420f-988a-50ea00577bef",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C19",
+      "claim": "Small variations in gene sequence have been shown to lead to large changes in the extent of nucleotide deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Small variations in gene sequence have been shown to lead to large changes in the extent of nucleotide deletion (Nadel and Feeney, 1995; Gauss and Lieber, 1996; Nadel and Feeney, 1997; Jackson et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "d0d60033-9aba-4b62-9618-8e31e8af58d6",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C20",
+      "claim": "Sequences with high AT content suffer greater nucleotide loss than sequences with high GC content.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, sequences with high AT content suffer greater nucleotide loss than sequences with high GC content (Gauss and Lieber, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "ff5f5109-bb6b-4aef-8bce-d4287716931a",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C23",
+      "claim": "Artemis possesses intrinsic 5'-to-3' exonuclease activity on single-stranded DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Alone, Artemis possesses intrinsic 5'-to-3' exonuclease activity on single-stranded DNA (Li et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "047ac6d7-7c82-4d4e-899f-2b640488a446",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C24",
+      "claim": "On double-stranded DNA, Artemis, in complex with DNA-PKcs, has endonuclease activity on 5' and 3' DNA overhangs and on DNA hairpins.",
+      "claim_type": "EXPLICIT",
+      "source": "On double-stranded DNA, Artemis, in complex with DNA-PKcs, has endonuclease activity on 5' and 3' DNA overhangs and on DNA hairpins (Ma et al., 2002; Lu et al., 2007; Lu et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "2f6beca0-ec1a-49f2-a1ba-d64ab4936dfa",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C25",
+      "claim": "The Artemis:DNA-PKcs complex binds single-stranded-to-double-stranded DNA boundaries prior to nicking.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that the Artemis:DNA-PKcs complex binds single-stranded-to-double-stranded DNA boundaries prior to nicking (Ma et al., 2002; Ma et al., 2005; Lu et al., 2007; Chang and Lieber, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "cca61253-5775-4545-9815-cd160f56c76c",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C26",
+      "claim": "For blunt DNA ends, sequence-breathing is required to achieve a structural configuration suitable for Artemis action.",
+      "claim_type": "EXPLICIT",
+      "source": "for blunt DNA ends, previous work has concluded that sequence-breathing is required to achieve this structural configuration prior to Artemis action (Chang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "76eae8d0-7ff6-4bf3-9e30-dc69acd951e7",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C27",
+      "claim": "Artemis, in complex with XRCC4-DNA ligase IV, has additional endonuclease activity on 3' DNA overhangs and preferentially nicks one nucleotide at a time from the single-stranded 3' end.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, Artemis, in complex with XRCC4-DNA ligase IV, has additional endonuclease activity on 3' DNA overhangs and preferentially nicks one nucleotide at a time from the single-stranded 3' end (Chang et al., 2016; Gerodimos et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "74a188b7-5ed6-4f50-8c7d-4abcfa5a8204",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C28",
+      "claim": "A simple position-weight-matrix style (PWM) model does a surprisingly good job of predicting the distribution of trimming lengths for a variety of V-genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This one existing analysis (Murugan et al., 2012) has shown that a simple position-weight-matrix style (PWM) model does a surprisingly good job of predicting the distribution of trimming lengths for a variety of V-genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "7afae653-be92-4d76-87d7-f7d2ec7cca89",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C29",
+      "claim": "The 2\u00d74 motif model was replicated using a different, and much larger, repertoire sequencing data set.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a different, and much larger, repertoire sequencing data set, we have trained this PWM model and replicated previous work (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "3dfbb23d-e3ca-4d05-95b9-761446d9f42a",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C30",
+      "claim": "The 1\u00d72 motif + two-side base-count beyond model had the best model fit and generalizability across different data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "With this approach, we found that a model containing parameterizations of local sequence context, length, and GC nucleotide content in both directions of the wider sequence (the 1\u00d72 motif + two-side base-count beyond model) had the best model fit and generalizability across different data sets (Figure 3 and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study shown in Figures 3 and 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "ebb77df5-571e-4d42-baf9-5ddb67ad62bb",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C31",
+      "claim": "The 1\u00d72 motif + two-side base-count beyond model contains 12 parameters compared to 18 parameters in the 2\u00d74 motif model.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite containing fewer total parameters than the original 2\u00d74 motif model (Murugan et al., 2012) (12 parameters compared to 18 parameters), the 1\u00d72 motif + two-side base-count beyond model had better predictive accuracy (Figure 4 and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study comparing model parameters and performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "31e48413-25cd-42f4-9d28-bf14fcc6d619",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C38",
+      "claim": "The magnitude of the negative effects of AT and GC nucleotide counts 3' of the motif are very similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the magnitude of these negative effects are very similar between AT and GC counts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the model coefficients shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "9540d02e-e1a8-42e4-baf1-53fa0f7c899e",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C39",
+      "claim": "The raw number of nucleotides 3' of the motif (e.g. the length) is more important for predicting the trimming probability at a given site compared to the identity of the nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the raw number of nucleotides 3' of the motif (e.g. the length) is more important for predicting the trimming probability at a given site compared to the identity of the nucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the similar magnitudes of AT and GC coefficients.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "8c9cb89b-839f-4bf1-bf58-77fa2c98bf93",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C41",
+      "claim": "The inferred coefficients from the 1\u00d72 motif + two-side base-count beyond model were highly similar between models trained using non-productive V-gene sequences, non-productive J-gene sequences, and productive V-gene sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the inferred coefficients were highly similar between the three models (Figure 4\u2014figure supplement 5 and Figure 4\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing models trained on different sequence types shown in Figure 4\u2014figure supplements 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "d3c098da-ec4d-43c4-bd38-8c29ca314649",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C42",
+      "claim": "The two-side base-count model has the best model fit and generalizability across all held-out groups tested when evaluating models containing only a single feature type.",
+      "claim_type": "EXPLICIT",
+      "source": "When evaluating models containing only a single feature type, we find that the two-side base-count model which parameterizes GC nucleotide content on both sides of the trimming site (and, indirectly, length) has the best model fit and generalizability across all held-out groups tested (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model comparison shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "e6576644-2fc5-49e4-b60c-e841cc7e8ddb",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C43",
+      "claim": "GC-content features, which are likely parameterizing the capacity for the sequence to breathe, are more predictive of V-gene trimming probabilities than local sequence context or DNA-shape alone.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, these GC-content features, which are likely parameterizing the capacity for the sequence to breathe, are more predictive of V-gene trimming probabilities than local sequence context or DNA-shape alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model comparison results and the known relationship between GC content and DNA breathing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "b612c476-3f19-4322-8cd7-6b8b241f29cd",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C44",
+      "claim": "The inferred trimming profiles for genes with large RMSE improvement still had very low prediction error despite the genes not being included in the model training data set.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, we found that the inferred trimming profiles for these genes still had very low prediction error despite the genes not being included in the model training data set (Figure 5B and C), showing the generalizability of these features.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "b7a3e3b1-0a4d-4128-864a-acf24b613c79",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C45",
+      "claim": "The motif signal may represent a gene-segment-wide sequence motif that appears to get preferentially trimmed, independent of GC-content-related effects.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, both of these experiments provided evidence that the motif signal may actually represent a gene-segment-wide sequence motif that appears to get preferentially trimmed, independent of GC-content-related effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "a2d9b9d5-4fa3-4a64-8d5a-887397d90b9f",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C46",
+      "claim": "A set of single nucleotide polymorphisms (SNPs) within the gene encoding the Artemis protein are associated with increasing the extent of V- and J-gene trimming.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a subset of the V-gene training data set used here, we previously identified a set of single nucleotide polymorphisms (SNPs) within the gene encoding the Artemis protein that are associated with increasing the extent of V- and J-gene trimming (Russell et al., 2022b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "6f512336-cab7-4c5f-b681-6db4b1b6e7cf",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C47",
+      "claim": "Several of the 1\u00d72 motif + two-side base-count beyond model coefficients varied significantly in the context of the Artemis-locus SNP rs41298872.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these methods, we found that several of the 1\u00d72 motif + two-side base-count beyond model coefficients varied significantly in the context of the Artemis-locus SNP rs41298872 (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the SNP interaction analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "4a60998e-02f2-45e4-9dcb-ff206265b59b",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C51",
+      "claim": "The 1\u00d72 motif + two-side base-count beyond model has high predictive accuracy for both non-productive V- and J-gene sequences from the TCR\u03b2 testing data set.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the model has high predictive accuracy (i.e. low expected per-sequence conditional log loss) for both non-productive V- and J-gene sequences from the TCR\u03b2 testing data set (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the validation analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "d4eb27d5-ca07-411c-89c7-04391c40aac3",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C52",
+      "claim": "The 1\u00d72 motif + two-side base-count beyond model extends well to non-productive V- and J-gene sequences from the TCR\u03b1 and TCR\u03b3 testing data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "The model also extends well to non-productive V- and J-gene sequences from the TCR\u03b1 and TCR\u03b3 testing data sets and to non-productive V-gene sequences from the IGH testing data set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the validation analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "9f090926-14ff-4e14-a0d8-3979efc42640",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C53",
+      "claim": "The 1\u00d72 motif + two-side base-count beyond model extends well to non-productive V-gene sequences from the IGH testing data set.",
+      "claim_type": "EXPLICIT",
+      "source": "The model also extends well to non-productive V- and J-gene sequences from the TCR\u03b1 and TCR\u03b3 testing data sets and to non-productive V-gene sequences from the IGH testing data set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the validation analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "a294780b-d8dc-4e92-a94f-94a7b4d3f4af",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C54",
+      "claim": "The 1\u00d72 motif + two-side base-count beyond model has relatively poor predictive accuracy for non-productive IGH J-gene sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "The model has relatively poor predictive accuracy for non-productive IGH J-gene sequences, however.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the validation analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "8aa6c35f-ac17-49c0-b3f9-398a79be66a7",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C55",
+      "claim": "The two-side base-count beyond terms were dominant compared to the 1\u00d72 motif terms for every data set.",
+      "claim_type": "EXPLICIT",
+      "source": "With this approach, we found that the two-side base-count beyond terms were dominant compared to the 1\u00d72 motif terms for every data set (Figure 7\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis shown in Figure 7\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "3f932adf-9334-4b03-b798-b73d02c82f68",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C56",
+      "claim": "The scale coefficient for the 1\u00d72 motif terms was very small for several of the data sets, especially the IGH data set, indicating only a weak motif-related signal.",
+      "claim_type": "EXPLICIT",
+      "source": "The scale coefficient for the 1\u00d72 motif terms was very small for several of the data sets, especially the IGH data set, indicating only a weak motif-related signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis shown in Figure 7\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "7cb85c4f-787b-4c3f-a9fa-426b6410a6de",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C57",
+      "claim": "Sequence motifs that lead to a large increase in trimming probabilities in the model appear at relatively low frequencies within the germline IGH genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequence motifs that lead to a large increase in trimming probabilities in the model appear at relatively low frequencies within the germline IGH genes (Figure 7\u2014figure supplement 4), perhaps explaining the weakness of the motif-related signal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis shown in Figure 7\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "9530e790-a449-45af-9e16-8dbf3f320fa1",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C58",
+      "claim": "Trimming probabilities are highest for DNA positions near the end of the sequence that contain high GC content upstream.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that trimming probabilities are highest for DNA positions near the end of the sequence that contain high GC content upstream, quantifying the role of sequence-breathing dynamics in the trimming process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the study based on the model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "c5ba63c3-9661-4077-a599-a699b2d799f4",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C59",
+      "claim": "The model quantifies the role of sequence-breathing dynamics in the trimming process.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that trimming probabilities are highest for DNA positions near the end of the sequence that contain high GC content upstream, quantifying the role of sequence-breathing dynamics in the trimming process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the study based on the model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "6978e118-27eb-4fbb-bbee-df0a7d2b907d",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C60",
+      "claim": "The results support a universal, sequence-based trimming mechanism underlying variation across TR and IG loci in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, our results support a universal, sequence-based trimming mechanism underlying this variation across TR and IG loci in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the validation analysis showing the model extends to multiple loci.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "786776c0-38fc-4e21-b2e5-04f50aa4be65",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C61",
+      "claim": "For all TR and IG loci tested, length and GC nucleotide content are relatively more important than local sequence context terms for making accurate model predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "For all of these loci, we find that length and GC nucleotide content are relatively more important than local sequence context terms for making accurate model predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the validation analysis shown in Figure 7\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "ddf563f5-8557-481a-96f7-4416b5f7a373",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C62",
+      "claim": "Many trimming events occur further into the double-stranded gene sequence beyond the single-stranded overhang created during hairpin-opening.",
+      "claim_type": "EXPLICIT",
+      "source": "While the single-stranded overhang created during hairpin-opening may create a natural single-stranded-to-double-stranded DNA substrate for Artemis binding near the end of the gene sequence, we find that many trimming events occur further into the double-stranded gene sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "4646ac97-4fa2-4f0f-9ffb-7de630fa793b",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C63",
+      "claim": "DNA positions with fewer double-stranded nucleotides on the 3'-side of the trimming site may have more capacity for sequence-breathing.",
+      "claim_type": "EXPLICIT",
+      "source": "Because these DNA positions have fewer double-stranded nucleotides on the 3'-side of the trimming site, they may have more capacity for sequence-breathing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the model results and knowledge of DNA breathing dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "236b266d-48e6-4051-8688-5e54500cb1f6",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C64",
+      "claim": "Having a larger number of G-C nucleotides 5' of the trimming site, and perhaps less sequence-breathing capacity, increases the trimming probability.",
+      "claim_type": "EXPLICIT",
+      "source": "On the 5'-side of the trimming site, we find that having a larger number of G-C nucleotides, and perhaps less sequence-breathing capacity, increases the trimming probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model coefficients shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "785840fc-1d35-46e8-ac5c-a77c4af1784d",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C65",
+      "claim": "The breathing transition can create a transient single-stranded-to-double-stranded DNA substrate that is suitable for Artemis to bind and trim.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps this breathing transition can create a transient single-stranded-to-double-stranded DNA substrate that is suitable for Artemis to bind and trim.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the model results.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "3042e723-e34f-4207-804c-d32f1714a4fe",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C66",
+      "claim": "The finding quantifies sequence-breathing effects that were previously identified through in vitro DNA nuclease assay studies involving Artemis.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, this finding quantifies sequence-breathing effects that were previously identified through in vitro DNA nuclease assay studies involving Artemis (Chang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion connecting the current findings to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "0fa05dea-74fc-44ff-a157-99c956f15e4f",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C67",
+      "claim": "The observed sequence motif may be serving as a proxy for DNA structure induced by the motif.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that either (1) Artemis actually does possess some ability to recognize specific nucleotides, (2) the observed sequence motif is serving as a proxy for DNA structure induced by the motif, or (3) another nuclease, in addition to Artemis, is responsible for the sequence-specific trimming we observe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the motif findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "9df5d79b-b610-418f-b9ee-1e5e119cb45e",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C68",
+      "claim": "Another nuclease, in addition to Artemis, may be responsible for the sequence-specific trimming observed.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that either (1) Artemis actually does possess some ability to recognize specific nucleotides, (2) the observed sequence motif is serving as a proxy for DNA structure induced by the motif, or (3) another nuclease, in addition to Artemis, is responsible for the sequence-specific trimming we observe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the motif findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "b6466b8b-ebbd-4be8-a7c4-f881532d0581",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C69",
+      "claim": "The strength of the sequence motif signal varied across receptor loci.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because the strength of this sequence motif signal varied across receptor loci, further work will be required to explore its mechanistic basis and presence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the validation analysis shown in Figure 7\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "a366fba3-9ada-4b8c-ab73-1350e2a15648",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C70",
+      "claim": "Individuals homozygous (or heterozygous) for rs41298872 may be more capable of trimming at positions that have a larger number of double-stranded nucleotides 3' of the trimming site, especially if the additional nucleotides are AT bases.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that individuals homozygous (or heterozygous) for rs41298872 may be more capable of trimming at positions that have a larger number of double-stranded nucleotides 3' of the trimming site, especially if the additional nucleotides are AT bases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the SNP interaction results shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "5c321fdb-4be1-46dd-b800-72a2f1bb7279",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C71",
+      "claim": "If there is more Artemis available, then trimming at less optimal positions (i.e. positions further into the sequence which have less breathing) may be possible.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be possible if, for example, rs41298872 increases Artemis expression. If there is more Artemis available, then trimming at less optimal positions (i.e. positions further into the sequence which have less breathing) may be possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the SNP interaction results.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "2dabdcb5-14cd-4567-bc69-ed6946e8c7ae",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C72",
+      "claim": "Individuals homozygous (or heterozygous) for rs41298872 may trim in a less motif-dependent fashion, and are instead more reliant on sequence openness 3' of the trimming site.",
+      "claim_type": "EXPLICIT",
+      "source": "This may suggest that individuals homozygous (or heterozygous) for rs41298872 may trim in a less motif-dependent fashion, and are instead more reliant on sequence openness 3' of the trimming site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the SNP interaction results shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "f15fe6f5-b42c-44cd-968d-bffdb409de3a",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C73",
+      "claim": "Non-productive sequences do not generate proteins that undergo functional selection in the thymus.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-productive sequences do not generate proteins that undergo functional selection in the thymus, and their recombination statistics should reflect only the V(D)J recombination generation process (Robins et al., 2010; Murugan et al., 2012; Sethna et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "da359aea-7b86-4c84-9765-ea04dec52593",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C74",
+      "claim": "The recombination statistics of productive sequences should reflect both V(D)J recombination generation and functional selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the recombination statistics of productive sequences should reflect both V(D)J recombination generation and functional selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about productive vs non-productive sequences.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "cc4f9669-414b-4f4c-a5a3-1dba90e963d0",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C75",
+      "claim": "The extent of nucleotide trimming varies substantially from gene to gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent of nucleotide trimming varies substantially from gene to gene (Nadel and Feeney, 1995; Nadel and Feeney, 1997; Jackson et al., 2004; Murugan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "78b15f81-f9a5-4660-8120-4af244e26543",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C76",
+      "claim": "The 2\u00d74 motif model leverages a 'trimming motif' containing 2 nucleotides 5' of the trimming site and 4 nucleotides 3' of the trimming site to predict the probability of trimming at a given site.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, this model leverages a 'trimming motif' containing 2 nucleotides 5' of the trimming site and 4 nucleotides 3' of the trimming site to predict the probability of trimming at a given site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the previous model from Murugan et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "14dcfd8a-c7cc-4a21-99ae-e93dfb79fca9",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C77",
+      "claim": "The 2\u00d74 motif model was designed and trained using sequencing data from just nine individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "It was designed and trained using sequencing data from just nine individuals (Murugan et al., 2012), and has surprisingly good model fit and predictive accuracy across many V-genes despite its simplicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "87d9fd35-b1ea-4b2f-a539-cad1f80da6eb",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C78",
+      "claim": "TCR\u03b2 repertoire sequence data for 666 healthy bone marrow donor subjects was downloaded from the Adaptive Biotechnologies immuneACCESS database.",
+      "claim_type": "EXPLICIT",
+      "source": "TCR\u03b2 repertoire sequence data for 666 healthy bone marrow donor subjects was downloaded from the Adaptive Biotechnologies immuneACCESS database using the link provided in the original publication (Emerson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source for the training data set.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "18db98dc-d94c-42be-90d3-c000c0b3e2e0",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C79",
+      "claim": "V(D)J recombination scenarios were assigned to each sequence using the IGoR software.",
+      "claim_type": "EXPLICIT",
+      "source": "V(D)J recombination scenarios were assigned to each sequence from each individual using the IGoR software which is designed to learn unbiased V(D)J recombination statistics from immune sequence reads (Marcou et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sequence annotation method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "a2b65e20-4711-4b24-93c3-8c1afb457836",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C80",
+      "claim": "After processing and filtering steps, V-gene trimming length distributions from 21,193,153 non-productive sequences were used for all model training.",
+      "claim_type": "EXPLICIT",
+      "source": "After these processing and filtering steps, we used V-gene trimming length distributions from 21,193,153 non-productive sequences for all model training.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the size of the training data set.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "935975fc-1948-4240-896e-79f4d31f8bc5",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C81",
+      "claim": "Annotated TCR\u03b1 and TCR\u03b2 repertoire sequence data for 150 healthy subjects was downloaded from a previous publication.",
+      "claim_type": "EXPLICIT",
+      "source": "Annotated TCR\u03b1 and TCR\u03b2 repertoire sequence data for 150 healthy subjects was downloaded using the link provided in the original publication (Russell et al., 2022b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source for one of the testing data sets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "b440c3c3-6a82-4983-968b-fd89efcca744",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C82",
+      "claim": "Annotated TCR\u03b3 repertoire sequence data for 23 healthy bone marrow donor subjects was downloaded from the Adaptive Biotechnologies immuneACCESS database.",
+      "claim_type": "EXPLICIT",
+      "source": "Annotated TCR\u03b3 repertoire sequence data for 23 healthy bone marrow donor subjects was downloaded from the Adaptive Biotechnologies immuneACCESS database (Robins and Pearson, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source for one of the testing data sets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "741d5518-3de9-47c4-8294-c91e7364de7f",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C83",
+      "claim": "Annotated IgG class non-productive IGH repertoire sequence data for nine healthy subjects was obtained from the authors of a previous publication.",
+      "claim_type": "EXPLICIT",
+      "source": "Annotated IgG class non-productive IGH repertoire sequence data for nine healthy subjects was obtained from the authors of a previous publication (Spisak et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source for one of the testing data sets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "b9983632-9e5c-4d19-8cbe-1dccc4fb9c50",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C84",
+      "claim": "Productive IGH repertoire sequence data for four healthy subjects was downloaded from a previous publication and the sequences were annotated using partis.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, productive IGH repertoire sequence data for four healthy subjects was downloaded using the link provided in the original publication (Jaffe et al., 2022) and the sequences were annotated using partis (version 0.16.0) (Ralph and Matsen, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source and annotation method for one of the testing data sets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "ad589e1f-d069-43ca-8ebf-0054c9cc2d49",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "claim_id": "C85",
+      "claim": "Genome-wide SNP array data corresponding to 611 of the training data set individuals was downloaded from The database of Genotypes and Phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide SNP array data corresponding to 611 of the training data set individuals was downloaded from The database of Genotypes and Phenotypes (accession number: phs001918).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source for the SNP data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c5c811e3-1257-4cfe-84be-9a512cdc7c9c",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context and knowledge gap: humans generate diverse TCR/BCR repertoires through V(D)J recombination involving nucleotide trimming, with Artemis as the main nuclease, but the exact trimming mechanism remains unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 accurately represent established knowledge about V(D)J recombination and correctly identify the knowledge gap motivating the study. These are well-supported background claims that set up the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "e65be52c-c3e6-450a-804b-8d524014c032",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The 1\u00d72 motif + two-side base-count beyond model, containing local sequence context, length, and GC nucleotide content features, most accurately predicts V-gene trimming probabilities with better performance than previous models despite having fewer parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C30, C31, C42, and C43 are supported by comprehensive model comparison data shown in Figures 3 and 4. The model evaluation across multiple held-out datasets demonstrates superior performance with 12 vs 18 parameters, and the two-side base-count features (parameterizing GC content and length) show the best single-feature performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "f5171755-8965-4f51-8b1c-4708f9db49e8",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The model provides quantitative evidence that DNA sequence-breathing dynamics are critical for trimming: positions near sequence ends with high upstream GC content have highest trimming probabilities, quantifying the role of sequence breathing in the trimming mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 and C58-C66 are supported by the model coefficients (Figure 4C) showing that GC content 5' of the trimming site increases trimming probability while nucleotide counts 3' decrease it. The interpretation connecting GC content to DNA breathing is reasonable given established knowledge (C6) and prior in vitro studies (C66), though the mechanistic link remains inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "fd16061a-46c5-41e4-bae5-80d6af1b047c",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A sequence motif (1\u00d72 motif) appears to be preferentially trimmed independent of GC-content effects, though the strength of this signal varies across receptor loci and its mechanistic basis remains unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8, C44, and C45 show evidence for a motif signal from Figure 5 analysis, but claims C67-C69 acknowledge multiple possible interpretations (sequence recognition, DNA structure proxy, or alternative nuclease) and variable signal strength across loci (Figure 7\u2014supplement 3). The motif finding is data-supported but mechanistically ambiguous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "ec7a3e0d-40af-4148-ace0-4dcf294eea3d",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The model trained on TCR\u03b2 V-genes generalizes well to other adaptive immune receptor loci (TCR\u03b1, TCR\u03b3, IGH V-genes and most J-genes), supporting a universal sequence-based trimming mechanism, though performance varies by locus with IGH J-genes showing poor prediction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C51-C61 are supported by validation data in Figure 7 showing good predictive accuracy across multiple loci. The variable performance (C54-C57) and dominance of base-count over motif terms (C55-C56) are appropriately documented. The conclusion of a universal mechanism (C60) is reasonable but should be tempered by the IGH J-gene exception.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "c6fb725d-e2df-4906-932b-1e9ae6a4c800",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The Artemis-locus SNP rs41298872 is associated with changes in several model coefficients, particularly affecting trimming at positions with more 3' double-stranded AT nucleotides, suggesting individuals with this variant may trim differently.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 are supported by Figure 6 showing significant coefficient variations in the context of rs41298872. However, claims C70-C72 are largely speculative interpretations about mechanism (C71 explicitly acknowledges this). The statistical association is solid, but the mechanistic interpretation requires additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "4a9d824a-97a8-43f6-8ecb-60aabaa10655",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors successfully replicated the previous 2\u00d74 motif PWM model from Murugan et al. 2012 using a larger dataset, validating the prior finding that sequence context affects trimming.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 and C76-C77 are supported by Figure 2\u2014supplement 1 showing replication of the previous model. This validates the prior work and establishes a baseline for comparison with the new models.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "3105924c-682d-49e7-a443-778a47dc6756",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The similar magnitudes of negative effects for AT and GC nucleotide counts 3' of the motif suggest that length is more important than nucleotide identity for predicting trimming probability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 are supported by the model coefficients in Figure 4C showing similar magnitudes for AT and GC effects. The inference that length matters more than identity is reasonable given this observation, though it remains an interpretation of the coefficient patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "abf2fd93-d0e8-4750-97e8-13c7465b9831",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Model coefficients are highly similar between models trained on non-productive V-genes, non-productive J-genes, and productive V-genes, suggesting consistent trimming mechanisms across sequence types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 is supported by Figure 4\u2014supplements 5 and 6 showing similar coefficients across different sequence types. This consistency strengthens the conclusion that the model captures the underlying trimming mechanism rather than selection effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "606a69c9-2cd2-477c-983a-a51d3e1ad059",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Non-productive sequences reflect only V(D)J recombination generation without selection, while productive sequences reflect both generation and selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 represent established knowledge about productive vs non-productive sequences, supported by citations. This justifies the use of non-productive sequences for studying the trimming mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "8e1e4a65-3156-48fd-bc80-3bb4020f1b8f",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript provides comprehensive background on V(D)J recombination biology, including TCR structure, gene segment selection, hairpin formation and opening, nucleotide trimming and insertion, and the role of Artemis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C27 and C75 represent established knowledge about V(D)J recombination, all supported by appropriate citations to prior work. These provide essential biological context for interpreting the modeling results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    },
+    {
+      "id": "f46342ed-06ae-4555-af3d-d55cb5e16cb9",
+      "content_id": "74996f7a-128b-4549-bfa4-c64b7379a201",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study uses large-scale TCR and BCR repertoire sequencing datasets from multiple sources, with sequences annotated using IGoR or other methods, totaling over 21 million training sequences and multiple independent testing cohorts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C85 describe the data sources and processing methods. These are straightforward methodological descriptions that are well-documented and appropriate for the study design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:44:11.850347Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6da88c4c-268a-4a49-a40b-ddfc2945836d",
+      "result_id": "c5c811e3-1257-4cfe-84be-9a512cdc7c9c"
+    },
+    {
+      "claim_id": "3b224b6b-5b25-42a8-a2d3-bf68cc273b84",
+      "result_id": "c5c811e3-1257-4cfe-84be-9a512cdc7c9c"
+    },
+    {
+      "claim_id": "81692126-d7cb-401a-90b3-39006a945dec",
+      "result_id": "c5c811e3-1257-4cfe-84be-9a512cdc7c9c"
+    },
+    {
+      "claim_id": "07812d9b-6296-4524-b6c3-e98ef86cfb35",
+      "result_id": "c5c811e3-1257-4cfe-84be-9a512cdc7c9c"
+    },
+    {
+      "claim_id": "3f8a844b-42ba-4ae3-9260-5a677e130d41",
+      "result_id": "e65be52c-c3e6-450a-804b-8d524014c032"
+    },
+    {
+      "claim_id": "3dfbb23d-e3ca-4d05-95b9-761446d9f42a",
+      "result_id": "e65be52c-c3e6-450a-804b-8d524014c032"
+    },
+    {
+      "claim_id": "ebb77df5-571e-4d42-baf9-5ddb67ad62bb",
+      "result_id": "e65be52c-c3e6-450a-804b-8d524014c032"
+    },
+    {
+      "claim_id": "d3c098da-ec4d-43c4-bd38-8c29ca314649",
+      "result_id": "e65be52c-c3e6-450a-804b-8d524014c032"
+    },
+    {
+      "claim_id": "e6576644-2fc5-49e4-b60c-e841cc7e8ddb",
+      "result_id": "e65be52c-c3e6-450a-804b-8d524014c032"
+    },
+    {
+      "claim_id": "e7615f17-9441-4402-b8f5-d5c95c9a2b45",
+      "result_id": "f5171755-8965-4f51-8b1c-4708f9db49e8"
+    },
+    {
+      "claim_id": "3bd7352b-2645-446f-8e97-94857275d0fc",
+      "result_id": "f5171755-8965-4f51-8b1c-4708f9db49e8"
+    },
+    {
+      "claim_id": "9530e790-a449-45af-9e16-8dbf3f320fa1",
+      "result_id": "f5171755-8965-4f51-8b1c-4708f9db49e8"
+    },
+    {
+      "claim_id": "c5ba63c3-9661-4077-a599-a699b2d799f4",
+      "result_id": "f5171755-8965-4f51-8b1c-4708f9db49e8"
+    },
+    {
+      "claim_id": "ddf563f5-8557-481a-96f7-4416b5f7a373",
+      "result_id": "f5171755-8965-4f51-8b1c-4708f9db49e8"
+    },
+    {
+      "claim_id": "4646ac97-4fa2-4f0f-9ffb-7de630fa793b",
+      "result_id": "f5171755-8965-4f51-8b1c-4708f9db49e8"
+    },
+    {
+      "claim_id": "236b266d-48e6-4051-8688-5e54500cb1f6",
+      "result_id": "f5171755-8965-4f51-8b1c-4708f9db49e8"
+    },
+    {
+      "claim_id": "785840fc-1d35-46e8-ac5c-a77c4af1784d",
+      "result_id": "f5171755-8965-4f51-8b1c-4708f9db49e8"
+    },
+    {
+      "claim_id": "3042e723-e34f-4207-804c-d32f1714a4fe",
+      "result_id": "f5171755-8965-4f51-8b1c-4708f9db49e8"
+    },
+    {
+      "claim_id": "11b576ae-30d0-4350-8176-a12970a72271",
+      "result_id": "fd16061a-46c5-41e4-bae5-80d6af1b047c"
+    },
+    {
+      "claim_id": "b612c476-3f19-4322-8cd7-6b8b241f29cd",
+      "result_id": "fd16061a-46c5-41e4-bae5-80d6af1b047c"
+    },
+    {
+      "claim_id": "b7a3e3b1-0a4d-4128-864a-acf24b613c79",
+      "result_id": "fd16061a-46c5-41e4-bae5-80d6af1b047c"
+    },
+    {
+      "claim_id": "0fa05dea-74fc-44ff-a157-99c956f15e4f",
+      "result_id": "fd16061a-46c5-41e4-bae5-80d6af1b047c"
+    },
+    {
+      "claim_id": "9df5d79b-b610-418f-b9ee-1e5e119cb45e",
+      "result_id": "fd16061a-46c5-41e4-bae5-80d6af1b047c"
+    },
+    {
+      "claim_id": "b6466b8b-ebbd-4be8-a7c4-f881532d0581",
+      "result_id": "fd16061a-46c5-41e4-bae5-80d6af1b047c"
+    },
+    {
+      "claim_id": "5642eb85-2202-4420-a6f8-0765dc6c1853",
+      "result_id": "ec7a3e0d-40af-4148-ace0-4dcf294eea3d"
+    },
+    {
+      "claim_id": "4a60998e-02f2-45e4-9dcb-ff206265b59b",
+      "result_id": "ec7a3e0d-40af-4148-ace0-4dcf294eea3d"
+    },
+    {
+      "claim_id": "d4eb27d5-ca07-411c-89c7-04391c40aac3",
+      "result_id": "ec7a3e0d-40af-4148-ace0-4dcf294eea3d"
+    },
+    {
+      "claim_id": "9f090926-14ff-4e14-a0d8-3979efc42640",
+      "result_id": "ec7a3e0d-40af-4148-ace0-4dcf294eea3d"
+    },
+    {
+      "claim_id": "a294780b-d8dc-4e92-a94f-94a7b4d3f4af",
+      "result_id": "ec7a3e0d-40af-4148-ace0-4dcf294eea3d"
+    },
+    {
+      "claim_id": "8aa6c35f-ac17-49c0-b3f9-398a79be66a7",
+      "result_id": "ec7a3e0d-40af-4148-ace0-4dcf294eea3d"
+    },
+    {
+      "claim_id": "3f932adf-9334-4b03-b798-b73d02c82f68",
+      "result_id": "ec7a3e0d-40af-4148-ace0-4dcf294eea3d"
+    },
+    {
+      "claim_id": "7cb85c4f-787b-4c3f-a9fa-426b6410a6de",
+      "result_id": "ec7a3e0d-40af-4148-ace0-4dcf294eea3d"
+    },
+    {
+      "claim_id": "6978e118-27eb-4fbb-bbee-df0a7d2b907d",
+      "result_id": "ec7a3e0d-40af-4148-ace0-4dcf294eea3d"
+    },
+    {
+      "claim_id": "786776c0-38fc-4e21-b2e5-04f50aa4be65",
+      "result_id": "ec7a3e0d-40af-4148-ace0-4dcf294eea3d"
+    },
+    {
+      "claim_id": "a2d9b9d5-4fa3-4a64-8d5a-887397d90b9f",
+      "result_id": "c6fb725d-e2df-4906-932b-1e9ae6a4c800"
+    },
+    {
+      "claim_id": "6f512336-cab7-4c5f-b681-6db4b1b6e7cf",
+      "result_id": "c6fb725d-e2df-4906-932b-1e9ae6a4c800"
+    },
+    {
+      "claim_id": "a366fba3-9ada-4b8c-ab73-1350e2a15648",
+      "result_id": "c6fb725d-e2df-4906-932b-1e9ae6a4c800"
+    },
+    {
+      "claim_id": "5c321fdb-4be1-46dd-b800-72a2f1bb7279",
+      "result_id": "c6fb725d-e2df-4906-932b-1e9ae6a4c800"
+    },
+    {
+      "claim_id": "2dabdcb5-14cd-4567-bc69-ed6946e8c7ae",
+      "result_id": "c6fb725d-e2df-4906-932b-1e9ae6a4c800"
+    },
+    {
+      "claim_id": "7afae653-be92-4d76-87d7-f7d2ec7cca89",
+      "result_id": "4a9d824a-97a8-43f6-8ecb-60aabaa10655"
+    },
+    {
+      "claim_id": "74a188b7-5ed6-4f50-8c7d-4abcfa5a8204",
+      "result_id": "4a9d824a-97a8-43f6-8ecb-60aabaa10655"
+    },
+    {
+      "claim_id": "78b15f81-f9a5-4660-8120-4af244e26543",
+      "result_id": "4a9d824a-97a8-43f6-8ecb-60aabaa10655"
+    },
+    {
+      "claim_id": "14dcfd8a-c7cc-4a21-99ae-e93dfb79fca9",
+      "result_id": "4a9d824a-97a8-43f6-8ecb-60aabaa10655"
+    },
+    {
+      "claim_id": "31e48413-25cd-42f4-9d28-bf14fcc6d619",
+      "result_id": "3105924c-682d-49e7-a443-778a47dc6756"
+    },
+    {
+      "claim_id": "9540d02e-e1a8-42e4-baf1-53fa0f7c899e",
+      "result_id": "3105924c-682d-49e7-a443-778a47dc6756"
+    },
+    {
+      "claim_id": "8c9cb89b-839f-4bf1-bf58-77fa2c98bf93",
+      "result_id": "abf2fd93-d0e8-4750-97e8-13c7465b9831"
+    },
+    {
+      "claim_id": "f15fe6f5-b42c-44cd-968d-bffdb409de3a",
+      "result_id": "606a69c9-2cd2-477c-983a-a51d3e1ad059"
+    },
+    {
+      "claim_id": "da359aea-7b86-4c84-9765-ea04dec52593",
+      "result_id": "606a69c9-2cd2-477c-983a-a51d3e1ad059"
+    },
+    {
+      "claim_id": "663c6f02-24a6-4a65-a8bf-c92bca18a550",
+      "result_id": "8e1e4a65-3156-48fd-bc80-3bb4020f1b8f"
+    },
+    {
+      "claim_id": "36db834d-aacb-4d55-b3ec-cef1ce50833d",
+      "result_id": "8e1e4a65-3156-48fd-bc80-3bb4020f1b8f"
+    },
+    {
+      "claim_id": "26af5e3c-310c-4633-b65e-4d41b17aa202",
+      "result_id": "8e1e4a65-3156-48fd-bc80-3bb4020f1b8f"
+    },
+    {
+      "claim_id": "d28af946-20ff-43cd-b799-b99c935cdaff",
+      "result_id": "8e1e4a65-3156-48fd-bc80-3bb4020f1b8f"
+    },
+    {
+      "claim_id": "f58d7af0-0f49-415e-a273-38878cb2b3ee",
+      "result_id": "8e1e4a65-3156-48fd-bc80-3bb4020f1b8f"
+    },
+    {
+      "claim_id": "4b04e19c-119e-471b-8fd6-47875eea4ab2",
+      "result_id": "8e1e4a65-3156-48fd-bc80-3bb4020f1b8f"
+    },
+    {
+      "claim_id": "14220f17-c0cf-4311-92ef-237c0976cfa7",
+      "result_id": "8e1e4a65-3156-48fd-bc80-3bb4020f1b8f"
+    },
+    {
+      "claim_id": "e1cd176f-a3c9-4a64-aa6e-7a8de2357ff7",
+      "result_id": "8e1e4a65-3156-48fd-bc80-3bb4020f1b8f"
+    },
+    {
+      "claim_id": "bc9da788-5578-4748-b9a6-7a26422af6a0",
+      "result_id": "8e1e4a65-3156-48fd-bc80-3bb4020f1b8f"
+    },
+    {
+      "claim_id": "dead5dcd-db23-420f-988a-50ea00577bef",
+      "result_id": "8e1e4a65-3156-48fd-bc80-3bb4020f1b8f"
+    },
+    {
+      "claim_id": "d0d60033-9aba-4b62-9618-8e31e8af58d6",
+      "result_id": "8e1e4a65-3156-48fd-bc80-3bb4020f1b8f"
+    },
+    {
+      "claim_id": "ff5f5109-bb6b-4aef-8bce-d4287716931a",
+      "result_id": "8e1e4a65-3156-48fd-bc80-3bb4020f1b8f"
+    },
+    {
+      "claim_id": "047ac6d7-7c82-4d4e-899f-2b640488a446",
+      "result_id": "8e1e4a65-3156-48fd-bc80-3bb4020f1b8f"
+    },
+    {
+      "claim_id": "2f6beca0-ec1a-49f2-a1ba-d64ab4936dfa",
+      "result_id": "8e1e4a65-3156-48fd-bc80-3bb4020f1b8f"
+    },
+    {
+      "claim_id": "cca61253-5775-4545-9815-cd160f56c76c",
+      "result_id": "8e1e4a65-3156-48fd-bc80-3bb4020f1b8f"
+    },
+    {
+      "claim_id": "76eae8d0-7ff6-4bf3-9e30-dc69acd951e7",
+      "result_id": "8e1e4a65-3156-48fd-bc80-3bb4020f1b8f"
+    },
+    {
+      "claim_id": "cc4f9669-414b-4f4c-a5a3-1dba90e963d0",
+      "result_id": "8e1e4a65-3156-48fd-bc80-3bb4020f1b8f"
+    },
+    {
+      "claim_id": "87d9fd35-b1ea-4b2f-a539-cad1f80da6eb",
+      "result_id": "f46342ed-06ae-4555-af3d-d55cb5e16cb9"
+    },
+    {
+      "claim_id": "18db98dc-d94c-42be-90d3-c000c0b3e2e0",
+      "result_id": "f46342ed-06ae-4555-af3d-d55cb5e16cb9"
+    },
+    {
+      "claim_id": "a2b65e20-4711-4b24-93c3-8c1afb457836",
+      "result_id": "f46342ed-06ae-4555-af3d-d55cb5e16cb9"
+    },
+    {
+      "claim_id": "935975fc-1948-4240-896e-79f4d31f8bc5",
+      "result_id": "f46342ed-06ae-4555-af3d-d55cb5e16cb9"
+    },
+    {
+      "claim_id": "b440c3c3-6a82-4983-968b-fd89efcca744",
+      "result_id": "f46342ed-06ae-4555-af3d-d55cb5e16cb9"
+    },
+    {
+      "claim_id": "741d5518-3de9-47c4-8294-c91e7364de7f",
+      "result_id": "f46342ed-06ae-4555-af3d-d55cb5e16cb9"
+    },
+    {
+      "claim_id": "b9983632-9e5c-4d19-8cbe-1dccc4fb9c50",
+      "result_id": "f46342ed-06ae-4555-af3d-d55cb5e16cb9"
+    },
+    {
+      "claim_id": "ad589e1f-d069-43ca-8ebf-0054c9cc2d49",
+      "result_id": "f46342ed-06ae-4555-af3d-d55cb5e16cb9"
+    }
+  ],
+  "comparisons": []
+}

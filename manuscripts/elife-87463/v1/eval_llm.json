@@ -1,0 +1,313 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The study employed a longitudinal design with 18 infants tested at 2-3 time points from birth (~4 days) to walking onset (~14 months), recording EMG activity from 10 bilateral lower-limb muscles during stepping, kicking, or walking behaviors. The sample size was chosen to replicate prior work (Teulier et al., 2012), and data collection followed standardized protocols including SENIAM electrode placement, 2000 Hz EMG sampling, and synchronized video recording at 50 Hz. A total of 586 cycles were analyzed with excellent inter-rater reliability (ICC=0.99).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39, C135-C145 collectively describe the experimental design, participant characteristics, and data collection methodology. The longitudinal design with appropriate sample size justification, standardized recording protocols, and high inter-rater reliability provide a solid methodological foundation. However, the small sample size (n=18, with only 15 completing all timepoints) limits statistical power for detecting individual differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C70"
+    ],
+    "result": "Cycle duration significantly decreased from birth through 3 months to walking onset for both stepping and kicking behaviors (p<0.01 for all comparisons). Kinematic variability (cycle duration variability) and EMG variability (IEV) both significantly decreased from 3 months to walking onset (p<0.001). However, the pattern from birth to 3 months differed between behaviors: stepping showed significant decreases in both kinematic and EMG variability (p=0.021 and p=0.005), while kicking showed variable individual trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 and C70 present statistically significant findings with appropriate p-values from Wilcoxon tests. The differential developmental trajectories between stepping and kicking are noteworthy and properly documented. The finding of maximal EMG variability in the neonatal period is well-supported by the data, though the biological interpretation requires caution given the small sample size and potential confounds from growth-related changes in electrode positioning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The number of motor primitives (spatial and temporal modules) increased significantly from birth/3 months to walking onset. At birth, infants exhibited 4.3\u00b10.7 modules for stepping and 4.6\u00b10.6 for kicking; at 3 months, 5.2\u00b10.6 for stepping and 4.5\u00b10.6 for kicking; and at walking onset, 7\u00b10.6 modules. Correspondingly, the variance accounted for (VAF) by a fixed 4-module model significantly decreased from birth to walking onset (p=0.002 for stepping, p<0.001 for kicking), indicating that a low-dimensional model fitted better at birth than at walking onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C55 present a coherent picture of increasing motor complexity with development, supported by both module counting (using VAF threshold of 0.75) and fixed-model VAF analysis. The dual analytical approach strengthens the findings. However, the choice of VAF threshold (0.75) is acknowledged as arbitrary (C110, C149), and the absolute number of modules differs from prior studies (C109, C111), limiting direct comparisons. The statistical tests are appropriate for the data structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The index of recruitment variability (IRV), measuring cycle-to-cycle variability in module activation, significantly decreased from infancy to toddlerhood for both stepping (birth to walking: p=0.002; 3mo to walking: p<0.001) and kicking (birth to walking: p<0.001; 3mo to walking: p<0.001). The index of recruitment selectivity (IRS) increased modestly with age (from 0.395 in newborns to 0.44 in toddlers) but remained far below adult values (0.62), indicating low selectivity in spatial-temporal module pairing throughout development. Spatial modules could be activated with multiple temporal modules and vice versa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 demonstrate that while module recruitment becomes more consistent with age, it remains immature even at walking onset. The statistical support is strong with appropriate p-values. The finding that IRS remains far below adult values is important for understanding developmental trajectories. The analysis was verified using both variable and fixed numbers of modules (Supplementary file 1a), and also tested under assumptions of module plasticity (Figure 4\u2014figure supplements 1-2), strengthening confidence in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C91",
+      "C92"
+    ],
+    "result": "Motor primitives became more selective (less complex) with development. The selectivity of muscular activations index (SMAI) increased significantly from birth/3 months to walking onset (p=0.002 for stepping at birth, p<0.001 for kicking and 3-month stepping to walking), indicating spatial modules controlled fewer muscles simultaneously in toddlers. The selectivity of temporal activations index (STAI) also increased from birth/3 months to walking (p=0.004 for stepping, p<0.001 for kicking), showing temporal modules had tighter activation peaks in toddlers. Notably, toddler STAI values exceeded adult landmarks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C66-C69, C91-C92 describe the evolution of module structure toward greater selectivity. The statistical support is robust with appropriate p-values. The finding that STAI exceeds adult values in toddlers (C69) is intriguing and suggests a non-monotonic developmental trajectory. However, the inability to find high similarities between modules across ages using best matching pairs (C63) raises questions about whether the same underlying structures are being measured at different timepoints, which could complicate interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C80"
+    ],
+    "result": "The study's central finding is that neonates possess minimal motor primitives but generate maximal motor variability through variable activation of these primitives, while toddlers exhibit more primitives that are activated more consistently, resulting in less variability. This suggests that human neonates initiate motor exploration at birth by variably activating a few basic locomotor primitives that later fraction and become more consistently and selectively activated, providing evidence that the motor system is flexible from birth despite basic coordination patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C70-C76, C80 represent the study's main conclusions, integrating findings about module number, activation variability, and module selectivity. The inverse relationship between module number and activation variability is well-documented through multiple converging measures (IEV, IRV, number of modules, VAF). However, the interpretation that this represents 'motor exploration' (C7, C75) relies on assumptions from animal literature (C32, C33) that may not directly translate to human infants. The claim that primitives 'fraction' (C76) is speculative and not directly demonstrated\u2014the study shows an increase in module number but cannot definitively prove that existing modules split rather than new modules emerging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C81",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The study demonstrates that EMG signals of alternated leg movements in human infants are highly variable from birth, suggesting that motor exploration is possible despite difficulty in uncoupling muscles and joints. This finding parallels neurophysiological studies in rodents showing that different motor patterns can emerge from variable activation of neonatal spinal structures, and studies in songbirds showing that specific brain areas generate variability to facilitate learning during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78, C81, C84-C87 connect the study's findings to comparative neuroscience literature. The demonstration of high EMG variability at birth (C77) is well-supported by the data. However, the interpretation that this represents 'motor exploration' (C78) is inferential, relying on the assumption that variability serves an exploratory function (citing Dhawale et al., 2017; Kao et al., 2008). The parallels drawn to rodent spinal cord studies and songbird vocal learning are conceptually interesting but remain analogies rather than direct evidence for the proposed mechanisms in human infants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C119",
+      "C120"
+    ],
+    "result": "Between 3 months and walking onset, all individuals showed consistent developmental changes: more modules that were more steadily activated, regardless of which locomotor precursor (stepping or kicking) was recorded at 3 months. This suggests the modular system reaches a common state at walking onset across individuals, despite substantial variability in age at walking onset (range: 340-582 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90, C119-C120 describe convergent developmental trajectories despite individual differences. The longitudinal design strengthens this finding by tracking the same individuals over time. However, the claim of a 'common state' (C120) should be interpreted cautiously given the small sample size (n=15 at walking onset) and the fact that some variability metrics (like IRS) remained far below adult values, suggesting continued immaturity. The wide age range at walking onset (Table 2) is acknowledged but the study lacks statistical power to fully characterize individual differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The longitudinal design revealed inter-individual differences in the evolution of kicking during the first months of life. The IEV for kicking decreased between birth and 3 months for some infants while increasing for others, potentially relating to differential practice of this spontaneous behavior across individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 identify important individual differences in kicking development that contrast with the more uniform trajectory observed for stepping. The observation is well-documented (Figure 3D), and the interpretation that this relates to differential practice (C118) is reasonable though speculative. This finding highlights the importance of longitudinal designs for capturing individual developmental trajectories, though the small sample size limits the ability to systematically characterize sources of individual variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The inverse relationship between module number and activation variability suggests the motor system is never designed to produce maximal variability. Instead, constraining the space of possibilities through a limited number of primitives may be crucial for motor learning, similar to how humanoid robots learn more easily with limited degrees of freedom. The authors propose that developmental motor primitives yield an ideal space of possibilities for efficient motor exploration through variable activation of temporary primitives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C106 present a theoretical framework interpreting the empirical findings. While the inverse relationship between module number and variability is well-documented, the functional interpretation is speculative. The comparison to robotics (C102) and the proposal about 'ideal space of possibilities' (C106) are interesting hypotheses but lack direct empirical support from the current study. The claim that constraints are 'crucial' for learning (C101) cites relevant literature but the current study does not directly test learning outcomes or manipulate constraints. This represents an important theoretical contribution but requires future experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The study reports different absolute numbers of modules compared to previous developmental studies (Dominici et al., 2011; Sylos-Labini et al., 2020), which the authors attribute to lack of consensus on module selection criteria (particularly VAF threshold choice). The results were verified to be robust to reasonable processing choices regarding filtering, amplitude normalization, and time normalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 appropriately acknowledge methodological limitations and differences from prior work. The verification of robustness to processing choices (C112) strengthens confidence in the main findings. However, the lack of consensus on module selection criteria (C110) is a fundamental limitation of the muscle synergy field that affects comparability across studies. The authors' transparency about these issues is commendable, but it means absolute module numbers should be interpreted cautiously, with greater confidence placed in relative changes across development within this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Comparison with adult values suggests immaturity of the modular system before and around walking onset, indicating infancy as an ideal period for therapeutic plasticity. The study fits into a framework of long-lasting motor module plasticity involving fractionation and merging throughout development and training. Learning to walk continues long after walking onset, and the modular system may require extended time to mature, potentially continuing through late adolescence when neural pruning occurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C114, C122-C130 place the findings in a broader developmental context and discuss clinical implications. The comparison to adult values (C113) is appropriate and shows clear immaturity at walking onset. However, the claim that infancy is 'ideal' for therapy (C114) is speculative\u2014the study does not include clinical populations or intervention data. The discussion of continued development (C125, C128-C129) is well-supported by citations but represents future directions rather than current findings. The hypothesis about fractionation and merging (C124, C130) is interesting but requires longitudinal data extending beyond walking onset to test directly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The study used non-negative matrix factorization (NNMF) with the space-by-time decomposition method to extract spatial and temporal modules from EMG data. Cross-talk was assessed and found to be minimal (3% at birth, 1.4% at 3 months, 6% at walking onset with correlation coefficient >0.2). The VAF threshold of 0.75 was chosen based on adult walking data showing efficient modeling with 4 modules, and adult comparison data were obtained from 20 adults in a prior study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C150 describe the analytical approach and quality control measures. The use of NNMF with space-by-time decomposition is appropriate and well-established (citing Delis et al., 2014). Cross-talk assessment following Dominici et al., 2011 is appropriate, though the increase to 6% at walking onset warrants caution. The VAF threshold choice (C149) is justified by reference to adult data but remains somewhat arbitrary (acknowledged in C110). The use of adult comparison data from a separate study (C150) is reasonable but introduces potential confounds from different recording conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The introduction establishes that motor variability is fundamental to developing systems, that infant leg movements involve locomotor primitives, and that variability can exist at multiple levels (behavioral repertoire, coordination modes, muscle activation patterns). Prior work has shown that primitives are neural structures stored at spinal levels in adults, that neonatal behaviors involve low-dimensional modular organization, but that high EMG variability in infants has raised questions about whether primitives exist early in development. Animal studies suggest variability can be generated within modular systems and may be centrally regulated for motor exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C38 provide essential background from prior literature. The citations appear appropriate and accurately represent the cited work. The introduction effectively motivates the study by identifying the apparent paradox between modular organization and high variability in infant motor control. However, some claims rely on animal models (rodents, songbirds) that may not directly translate to human infant development. The statement that primitives are 'stored at a spinal level' (C14, C15) is presented as fact but remains hypothetical in humans (acknowledged in C18).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C82",
+      "C83",
+      "C88",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C107",
+      "C108",
+      "C115",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The discussion contextualizes findings within broader developmental neuroscience, noting that motor learning abilities are present early in development, that spinal circuits are particularly plastic in early development, and that neonates have opportunities to practice various behaviors. The authors speculate about neural mechanisms (synaptogenesis, spinal plasticity) and potential applications to rehabilitation, while acknowledging that skill onset is not an on-off switch and that long-lasting plasticity may allow adaptation to musculoskeletal development and optimization of energy costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79, C82-C83, C88, C93-C99, C107-C108, C115, C131-C133 provide important context and speculation about mechanisms and applications. Many of these claims are well-supported by citations to relevant literature. However, the neural interpretations (C96, C99) are speculative given that the study measured EMG rather than neural activity directly. The proposed applications to rehabilitation (C108) and the speculation about long-term plasticity serving optimization functions (C131-C133) are interesting but go beyond what the current data can support. These represent valuable hypotheses for future research rather than established findings.",
+    "result_type": "MINOR"
+  }
+]

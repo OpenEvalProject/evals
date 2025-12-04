@@ -1,0 +1,531 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Fat10 domains share limited sequence identity with ubiquitin (29% for Fat10D1, 36% for Fat10D2) and with each other (18%), and lack key ubiquitin structural features like the L8-I44-V70 hydrophobic patch. Phylogenetic analysis shows Fat10D2 is structurally closer to ubiquitin than Fat10D1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are directly stated and supported by sequence alignment data (Figure 1A-C) and phylogenetic analysis (Figure 1\u2014figure supplement 1A-D). The sequence identity percentages are explicit and the structural comparisons are based on established bioinformatics methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Fat10 undergoes rapid proteasomal degradation compared to ubiquitin in cycloheximide chase assays, with degradation restored by proteasomal inhibitor MG132. Individual Fat10 domains degrade faster than full-length Fat10, also via the proteasomal pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 are supported by cycloheximide chase assays with appropriate controls (Figures 1E-H, Figure 1F, Figure 1\u2014figure supplement 1F-G). The use of MG132 as a proteasomal inhibitor provides mechanistic validation. The experimental design includes proper loading controls (\u03b2-Actin).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Fat10 exhibits substantially lower thermodynamic stability than ubiquitin and SUMO1, with \u0394Gunfolding of 2.3 kcal/mol for Fat10 versus 8 kcal/mol for ubiquitin and 3.7 kcal/mol for SUMO1. Fat10 has a melting temperature of 55\u00b0C compared to >95\u00b0C for ubiquitin. Individual Fat10 domains have lower \u0394Gunfolding than full-length Fat10, suggesting transient interdomain interactions stabilize the full-length protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 are supported by chemical denaturation experiments (Figure 1I-J) and thermal denaturation data (Figure 1\u2014figure supplement 2C). The thermodynamic parameters are derived from standard two-state unfolding analysis. The comparison between full-length and individual domains provides evidence for interdomain stabilization. The ubiquitin Tm value is supported by citation to Wintrode et al., 1994.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Adaptive Steered Molecular Dynamics (ASMD) simulations show Fat10 requires less work to unfold and linearize (581 kcal/mol) compared to diubiquitin (735 kcal/mol). Individual Fat10 domains require 30-60 kcal/mol less work than ubiquitin, suggesting weaker cooperative packing interactions in Fat10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 are supported by ASMD simulation data (Figure 2A-B, Figure 2\u2014figure supplement 1). The computational methodology is appropriate for studying mechanical unfolding. The interpretation linking lower resistance to weaker packing interactions is supported by citation to Brockwell et al., 2005. However, the simulations use high pulling velocities which may not fully represent physiological conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "High-temperature MD simulations (450 K) show Fat10 unfolds within 40 ns while diubiquitin unfolds gradually over 300 ns. Native contacts and \u03b2-sheet hydrogen bonds disrupt faster in Fat10 domains than ubiquitin. The unfolding pathways are distinct between Fat10 domains and ubiquitin, with different sequences of secondary structure disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C33 are supported by extensive MD simulation data at 450 K (Figures 2C-L). The simulations include 10 replicas providing statistical robustness. The unfolding pathway analysis is detailed and shows clear differences between proteins. The comparison to Piana et al., 2013 validates the ubiquitin unfolding pathway. However, the high temperature (450 K) is non-physiological and may not fully represent native unfolding mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Room temperature MD simulations show Fat10 domains have high RMSF in \u03b21-\u03b22 loop, C-terminal end of \u03b11, and \u03b12 loop regions. Free energy analysis reveals Fat10 domains exist in equilibrium with higher energy partially unfolded states with disrupted \u03b21-\u03b22/\u03b11 interactions and disordered loops, while ubiquitin shows a single highly populated native state. Fat10 has higher radius of gyration than ubiquitin despite similar size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 are supported by room temperature MD simulations (300 K) with three replicas totaling 7.5 \u03bcs (Figure 3A-C, Figure 3\u2014figure supplement 1A). The 2D free energy plots clearly show multiple states for Fat10 versus single state for ubiquitin. The RMSF and Rog analyses are standard metrics. The long simulation time provides adequate sampling for conformational analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "VdW interaction energies are comparable between Fat10 and ubiquitin, but Fat10 has significantly lower electrostatic interaction energy between \u03b22 and \u03b11. Two hydrogen bonds and a salt bridge between \u03b22 and \u03b11, and a salt bridge between \u03b12 loop and \u03b11, are present in ubiquitin but absent in Fat10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by MD simulation analysis of interaction energies (Figure 3D) and structural analysis (Figure 3\u2014figure supplement 1B-C). The identification of specific missing salt bridges and hydrogen bonds is based on structural comparison. The statistical analysis shows significant differences in electrostatic interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Disrupting salt bridges in ubiquitin by substitution creates partially unfolded forms similar to Fat10 and causes ubiquitin mutants to unfold much faster (similar to Fat10 domains) at 450 K. Disrupting salt bridges reduces ubiquitin melting point by 50\u00b0C. Engineering salt bridges in Fat10D1 causes it to populate only the ground state without partially unfolded states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by MD simulations of ubiquitin mutants (Figure 3E, Figure 3\u2014figure supplement 1D) and experimental thermal denaturation (Figure 3F-G). The reciprocal experiments (disrupting in ubiquitin, engineering in Fat10) provide strong evidence for the importance of these salt bridges. The 50\u00b0C reduction in Tm is substantial and experimentally validated. Engineering experiments in Figure 3\u2014figure supplement 2 support the reverse effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Critical electrostatic interactions between \u03b11 and \u03b21\u03b22, and between \u03b11 and \u03b12 loop, stabilize the ubiquitin fold. The absence of these interactions in Fat10 creates a flexible structure in dynamic equilibrium with partially unfolded forms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 synthesize findings from structural analysis, MD simulations, and mutagenesis experiments (C40-C47). The conclusion is well-supported by converging evidence from multiple approaches. The interpretation is consistent with the data showing that these interactions are critical for stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "NMR temperature coefficient (Tc) measurements show Fat10 has weaker hydrogen bonds in \u03b21\u03b22 region and \u03b12 loop (N-terminal domain) and in \u03b21\u03b22 regions and \u03b11 (C-terminal domain) compared to ubiquitin. Higher negative Tc values in these regions indicate weaker hydrogen bonds and disorder propensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are supported by NMR temperature coefficient measurements (Figure 4A-D, Figure 4\u2014figure supplement 1). The interpretation of Tc values is based on established NMR principles (C50 cites Peters and de Groot, 2012 for ubiquitin). The measurements were performed on isolated domains and full-length proteins with consistent results. The statistical analysis includes error estimates (RSS values in Figure 4\u2014figure supplement 1A-B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "NMR relaxation-derived conformational entropy measurements show \u03b21\u03b22 and \u03b12 loops have higher entropy in Fat10D1 than ubiquitin. In Fat10D2, \u03b21\u03b22, \u03b23\u03b24, and helix \u03b11 are more entropic than ubiquitin, with \u03b11 being most significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by NMR relaxation experiments (R1, R2, hetNOE) and order parameter (S\u00b2) calculations (Figure 4F-H, Figure 4\u2014figure supplement 2). The conversion of S\u00b2 to conformational entropy using the entropy meter approach is methodologically sound (cites Sharp et al., 2015; Zeng et al., 2017). The measurements were performed at 800 MHz providing good sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "In cellular cycloheximide chase assays, Fat10-conjugated GFP degraded by 60% within 4 hr (much faster than diubiquitin-GFP), Fat10D1-GFP degraded by 40% within 4 hr, while Ub-GFP levels remained unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by cycloheximide chase assays in HEK293T cells (Figure 5A-B, Figure 5\u2014figure supplement 1A-B). The experiments include appropriate controls and statistical analysis (n=3, p-values provided). The use of non-conjugable variants prevents substrate conjugation allowing direct measurement of tag-substrate fusion degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Using E. coli as a heterologous system (where the bacterial Pup-proteasome system does not recognize eukaryotic Ub/Fat10), \u0394Gunfolding measurements of CRABP1 show: free CRABP1 = 5.9 kcal/mol, Ub-CRABP1 = 4.8 kcal/mol, Fat10-CRABP1 = 2.4 kcal/mol. The 2.4 kcal/mol difference between Fat10-CRABP1 and Ub-CRABP1 indicates significant substrate destabilization by Fat10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are supported by in-cell protein stability assays using FIAsH-EDT2 fluorescent dye in E. coli (Figure 5C-E, Figure 5\u2014figure supplement 1C-F). The use of E. coli as a heterologous system is well-justified (cites Striebel et al., 2014). The CRABP1 system with fluorescent dye is an established method (cites Ignatova and Gierasch, 2004). The thermodynamic parameters are derived from urea denaturation curves with appropriate fitting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "In purified protein studies, CFP (\u0394Gunfolding = 11 kcal/mol) shows modest destabilization when conjugated to ubiquitin (\u0394\u0394Gunfolding = 0.2 kcal/mol) but substantial destabilization when conjugated to Fat10D1 (3.0 kcal/mol) or Fat10D2 (3.8 kcal/mol), representing 15-fold greater destabilization than ubiquitin. Full-length Fat10 shows similar effect (3 kcal/mol reduction), suggesting nonspecific interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are supported by GdnCl denaturation experiments on purified CFP fusion proteins (Figure 6A-B, Figure 6\u2014figure supplement 1A-B). The use of N-terminal fusions to mimic isopeptide conjugation is a reasonable approach given technical limitations. The similar effects of full-length Fat10 and individual domains support the nonspecific interaction interpretation. The 15-fold calculation is based on the ratio of \u0394\u0394G values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Native-state proteolysis assays show Fat10-CFP has significantly higher proteolysis rate (kobs) than Ub-CFP at given thermolysin concentrations. The change in proteolysis rates (mproteolysis) is sevenfold higher for Fat10-CFP. Free energy of proteolysis decreased from 8.7 kcal/mol (Ub-CFP) to 7.5 kcal/mol (Fat10-CFP), indicating Fat10 substantially increases partially unstructured regions in CFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by native-state proteolysis experiments with thermolysin (Figure 6C-D, Figure 6\u2014figure supplement 1C-F). The method is established (cites Park and Marqusee, 2004 for \u0394Gproteolysis calculation). The experiments include multiple thermolysin concentrations with replicates (n=3). The correlation between proteolysis rate and partially unfolded regions is well-established in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Fat10-GFP degradation is unperturbed by Cdc48 inhibitor DBeQ, indicating Fat10-modified substrates are degraded independently of Cdc48.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by cycloheximide chase assays with and without DBeQ treatment (Figure 6E). The experiment includes appropriate controls and replicates (n=3). The lack of effect of Cdc48 inhibition on Fat10-GFP degradation provides evidence for Cdc48-independent degradation, consistent with prior literature (Aichem et al., 2018).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "MD simulations at 450 K show substrate ubiquitin in diubiquitin unfolds similarly to free ubiquitin, but substrate ubiquitin conjugated to Fat10 domains unfolds faster. Fat10 enhances fluctuations in \u03b11 and loop near \u03b12, increases radius of gyration from 11 \u00c5 to 12 \u00c5, and creates broad RMSD profile (2-3 \u00c5) indicating less compact substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 are supported by MD simulations at 450 K (Figure 7A-B, Figure 7\u2014figure supplement 1). The simulations include appropriate controls (diubiquitin, free ubiquitin) and multiple replicas. The RMSF, Rog, and RMSD analyses are standard metrics for assessing protein dynamics and compactness. The comparison between diubiquitin and Fat10-ubiquitin conjugates is well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Experimental measurements show free energy of unfolding substrate ubiquitin reduces from 11.7 kcal/mol to 7 kcal/mol when covalently bound to Fat10. Individual Fat10 domains have similar effects. C-terminal conjugation has higher impact than N-terminal conjugation (Ub-Fat10D2 vs Fat10D2-Ub), suggesting conjugation site regulates substrate stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are supported by tryptophan fluorescence-based denaturation experiments using Ub45F/W mutant (Figure 7C-G). The use of Ub45F/W is validated (cites Khorasanizadeh et al., 1993). The comparison of N-terminal vs C-terminal conjugation provides mechanistic insight. The thermodynamic parameters are derived from standard GdnCl denaturation analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "MD simulations show many tag-substrate contacts form between Fat10 D2 domain and \u03b21\u03b22 and \u03b24-\u03b12-\u03b25 regions of substrate ubiquitin. Regions where intra-substrate contacts are disrupted overlap with Fat10 contact sites. Fat10 has higher exposed hydrophobic surface area (23%) than ubiquitin (13%). More intra-substrate contacts are disrupted in Fat10-substrate conjugate than diubiquitin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 are supported by MD simulation contact analysis (Figure 8\u2014figure supplement 1A-C, Figure 8\u2014figure supplement 2A-B). The contact analysis methodology is appropriate. The comparison to diubiquitin provides a well-controlled reference. The hydrophobic surface area calculation provides mechanistic explanation for enhanced interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The C-terminal tail in substrate ubiquitin is dynamic and explores larger conformational space, providing greater flexibility for tag interaction. When Fat10D2 is conjugated to C-terminus, intermolecular contacts are more evenly distributed and more intra-substrate contacts are disrupted. Conformational dynamics at conjugation site increase tag-substrate contacts and decrease substrate stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 are supported by MD simulation analysis comparing N-terminal and C-terminal conjugation (Figure 8A-B, Figure 8\u2014figure supplement 2C-F). The analysis of C-terminal tail dynamics and its effect on tag-substrate interactions is well-documented. The correlation between contact distribution and substrate stability is consistent with the thermodynamic measurements (C85).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "NMR chemical shift perturbations show additional regions affected when Fat10D2 is conjugated to C-terminus. Temperature coefficient measurements show hydrogen bonds in \u03b21\u03b22, \u03b11, and \u03b12 loop are weakened by Fat10D2 conjugation, with additional destabilization in \u03b23\u03b24 and \u03b25 for C-terminal conjugation. NMR Tc measurements correlate excellently with changes in local intra-substrate contacts from MD simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 are supported by NMR experiments on Fat10D2-Ub and Ub-Fat10D2 conjugates (Figure 8C-E, Figure 8\u2014figure supplement 3, Figure 8\u2014figure supplement 2E-F). The CSP analysis identifies affected regions. The Tc measurements provide quantitative assessment of hydrogen bond weakening. The excellent correlation between NMR and MD data provides strong validation of both approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "NMR relaxation measurements show Fat10D2 conjugation at N-terminus increases entropy at \u03b21\u03b22 loop, \u03b22, and \u03b11. C-terminal conjugation further increases entropy in these regions plus \u03b12 loop and \u03b23\u03b24. Fat10 domain contacts substrate at multiple regions to weaken local stability and increase disorder. Intrinsic flexibility of conjugation site regulates Fat10's impact on substrate stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 are supported by NMR relaxation experiments (Figure 8F, Figure 8\u2014figure supplement 4). The order parameter measurements and entropy calculations follow established methods. The comparison between N-terminal and C-terminal conjugation is consistent with other data (C85, C91-C94). The conclusion about conjugation site flexibility is well-supported by converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "MD simulations show Fat10D2 tag is more compact (lower Rog) in free form than in tag-substrate conjugate. The Fat10D2 tag unfolds faster when conjugated with substrate, suggesting thermodynamic coupling between tag and substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are supported by MD simulation analysis of tag properties (Figure 8\u2014figure supplement 5A-B). The comparison of free vs conjugated tag provides evidence for reciprocal effects. The concept of thermodynamic coupling is well-supported by the data showing mutual destabilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Tag-substrate contacts are greater when tag is conjugated to ubiquitin C-terminus. The Fat10 tag unfolds faster when conjugated to substrate C-terminus, suggesting tag stability depends on conjugation site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 are supported by MD simulation analysis (Figure 8\u2014figure supplement 1A, Figure 8\u2014figure supplement 5C). The data show reciprocal effects where conjugation site affects both substrate and tag stability. This is consistent with the thermodynamic coupling concept (C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors report that Fat10 has a malleable structure sampling multiple partially unfolded forms at physiological temperature. The lack of strong long-range electrostatic interactions between \u03b11, \u03b21\u03b22 strands, and \u03b12 loop creates the flexible fold with weak resistance to mechanical unfolding. These properties expedite Fat10's unfolding, degradation, and degradation of Fat10 substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C115 synthesize the major findings of the paper. C110-C111 cite established literature (Bard et al., 2019; Matyskiela et al., 2013; Correa Marrero and Barrio-Hernandez, 2021). C112-C115 are supported by extensive experimental and computational data throughout the manuscript including MD simulations, thermodynamic measurements, and structural analysis. The conclusions are well-supported by converging evidence from multiple approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The data correlate with previous observations that substituting Fat10 domains with ubiquitin impedes degradation. Fat10 reduced unfolding energies of CFP and ubiquitin substrates by 3-5 kcal/mol, considerably higher than ubiquitin's effect. Simulations suggest Fat10 makes nonspecific intermolecular contacts disrupting intra-substrate contacts. The substrate reciprocally increases partially unfolded regions in Fat10. Thermodynamic coupling between substrate and tag increases partially unfolded regions in the conjugate and accelerates degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C121 synthesize key findings and relate them to prior work (C116 cites Aichem et al., 2018). C117-C118 are supported by experimental data (C66-C71, C83). C119 is supported by MD simulations (C87-C90). C120 is supported by C104-C106. C121 integrates multiple lines of evidence into a coherent mechanistic model. The conclusions are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Increased enthalpy and conformational entropy indicate local order-to-disorder transitions. NMR measurements of local enthalpy (Tc) and entropy identified Fat10-induced local disorder in substrate, agreeing with computational data. Conjugation at disordered regions allows greater conformational space for Fat10, increasing substrate collisions and reducing stability. Fat10 conjugation on positively charged surfaces has lower effect because negatively charged Fat10 forms stable interactions reducing conformational flexibility. Local environment around conjugation site regulates Fat10's effect on substrate energetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C126 integrate NMR and MD data to explain mechanisms. C122 states established biophysical principles. C123 is supported by NMR data (C50-C57, C95-C103) correlating with MD simulations. C124 is supported by conjugation site comparison data (C85, C91-C94). C125 cites additional work (Ravichandran and Das, 2024) extending the findings. C126 synthesizes the mechanistic understanding. The conclusions are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "While ubiquitin destabilizes substrates, Fat10 and ubiquitin degradation pathways are distinct. Ubiquitin's impact is unsustained after cleavage by deubiquitinases, but Fat10 remains conjugated and its effect persists until translocation. Fat10 is degraded with substrate, and its malleability directly influences degradation rate. Fat10 has greater exposed hydrophobic surface and exists in equilibrium with partially unfolded forms, creating higher substrate disorder than ubiquitin. These mechanistic differences explain Cdc48-independent rapid degradation of Fat10 substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C137 synthesize findings and compare Fat10 to ubiquitin pathways. C127 cites literature (Carroll et al., 2020; Hagai and Levy, 2010; Carroll et al., 2021; Morimoto et al., 2016). C128-C131 state established knowledge about pathway differences. C132 cites Aichem et al., 2018. C133-C136 are supported by experimental data throughout the manuscript. C137 is supported by C76-C77 and integrates the mechanistic understanding. The conclusions are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The proteasome degrades 80-90% of cellular proteins and plays essential roles in immune cell reprogramming during inflammation. The work provides understanding that upregulation of malleable Fat10 helps immune cells modulate proteasomal degradation rate in response to infection. Fat10 is designed as an efficient proteasomal degradation signal activated as inflammatory response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C143 place the findings in broader biological context. C138 cites Sahu et al., 2021 about 20S proteasome in hypoxia. C139 cites Jang, 2018. C140-C141 cite \u00c7etin et al., 2021 about immune cell function. C142-C143 represent the authors' interpretation of the biological significance, which is reasonable given the data showing Fat10's enhanced degradation properties and its upregulation during inflammation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Fat10 has half-life of 1 hr while ubiquitin has ~24 hr half-life. Fat10's shorter half-life prevents prolonged inflammatory response that could lead to apoptosis. Fat10 substrates overlap significantly with ubiquitin substrates, suggesting Fat10 is auxiliary proteasomal-targeting signal activated during inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C148 cite established literature. C144-C145 cite Haas and Bright, 1987 and Aichem and Groettrup, 2020 for half-life values. C146 cites Aichem and Groettrup, 2020 for biological consequence. C147-C148 cite Aichem and Groettrup, 2020 for substrate overlap and interpret this as auxiliary function. The claims are well-supported by citations to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Ubiquitin is cleaved by deubiquitinating enzymes before substrate enters ATPases, but Fat10 remains uncleaved and is degraded with substrate. Substrate unfolding by accessory unfoldases is necessary for ubiquitin substrates but not Fat10 substrates, suggesting profound impact of Fat10 on substrate structure and energetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C152 cite established literature. C149-C150 cite Hipp et al., 2005 for differential processing. C151-C152 cite Aichem et al., 2018 for unfoldase independence and interpret this as evidence for Fat10's impact. The claims are supported by citations and consistent with the authors' experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Fat10 expression is restricted to immune cells, with other cell types expressing Fat10 upon induction by proinflammatory cytokines. Fat10 includes two ubiquitin-like domains attached by flexible linker and is conjugated to substrates by posttranslational modification. Fat10's surface properties and interactions are distinct from ubiquitin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C157 provide background information supported by citations. C153 cites Buerger et al., 2015. C154 cites Buchsbaum et al., 2012; Hipp et al., 2005; Raasi et al., 1999. C155-C156 state established structural knowledge. C157 cites Aichem et al., 2018. These are well-established facts from the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Proteasome substrates must be conjugated with proteasome-targeting tags. Ubiquitin is conjugated to substrates and interacts with 19S proteasome subunit. Deubiquitinases cleave ubiquitin while substrate enters ATPases to unfold and translocate to CP for cleavage. Proteasomal degradation regulates most nuclear and cytosolic proteins, with degradation rate modulated under various conditions. Partially unstructured regions and global disorder influence degradation. Fat10 is a proteasome-targeting tag that directly targets substrates for degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C166 provide introduction and background, all supported by appropriate citations: Kwon and Ciechanover, 2017 (C158); de la Pe\u00f1a et al., 2018; Wehmer et al., 2017; Worden et al., 2017 (C161); Zhao et al., 2015 (C162); Zhao et al., 2015; VerPlank et al., 2019; Liu et al., 2021; Zhang et al., 2017 (C163); Correa Marrero and Barrio-Hernandez, 2021 (C165); Schmidtke et al., 2014 (C166). These represent established knowledge in the field.",
+    "result_type": "MINOR"
+  }
+]

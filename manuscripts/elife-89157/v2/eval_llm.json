@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The manuscript provides background on tuberculosis epidemiology and the BCG vaccine. TB remains a leading cause of death globally with ~2 billion latently infected individuals. BCG, the only licensed TB vaccine since the 1920s, protects against TB meningitis and miliary TB in children but lacks efficacy against pulmonary TB in adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are all supported by appropriate citations to WHO, Trunz et al., and Martinez et al. These are well-established facts in the TB field and serve as appropriate background context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript describes the NOD-1 and NOD-2 pattern recognition receptors and their role in detecting bacterial peptidoglycan. NOD-1 recognizes iE-DAP while NOD-2 detects MDP, both triggering pro-inflammatory cytokine production through NF-\u03baB and MAPK pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 are supported by citations to Li and Wu, 2021 and Caruso et al., 2014. These are well-established immunological mechanisms that provide necessary background for understanding the study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Pathogenic mycobacteria possess an immune evasion mechanism involving the MurT-GatD enzyme complex, which amidates iE-DAP to iQ-DAP, thereby masking NOD-1 recognition. This amidation is essential for peptidoglycan cross-linking and mycobacterial cell wall integrity, with genetic screens confirming essentiality for in vitro survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 are supported by multiple citations (Maitra et al., 2019; de Wet et al., 2020; Maitra et al., 2021; Shaku et al., 2023) and Figure 1\u2014figure supplement 1. This establishes the scientific rationale for targeting MurT-GatD in the vaccine design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "CRISPRi-mediated knockdown of murT-gatD in rBCG::iE-DAP resulted in 1000-fold reduction in murT transcript levels and dose-dependent growth inhibition with ATc [100-500 ng/ml], consistent with previous findings in M. smegmatis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 are supported by qPCR data (Figure 1b) and growth curves (Figure 1\u2014figure supplement 2c), with appropriate citation to prior work (Shaku et al., 2023). The data demonstrate successful construction and activation of the CRISPRi system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "MurT-GatD depletion in rBCG::iE-DAP caused significant cell wall defects as visualized by electron microscopy. SEM revealed wrinkled outer cell walls with indentations (70% increase in defect frequency), while TEM showed loss of the typical multi-layered cell wall structure (65% increase in defect frequency).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 are well-supported by quantitative SEM and TEM data (Figures 1c-f and Figure 1\u2014figure supplement 3). The microscopy provides clear visual evidence and quantification of cell wall defects, though the manuscript could benefit from reporting statistical significance values for the frequency differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "MurT-GatD knockdown increased susceptibility to cell wall-targeting antibiotics, with 2- to 16-fold decreases in MIC for amoxicillin-clavulanate, meropenem, vancomycin, and ethionamide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by MIC data in Table 1. The increased antibiotic susceptibility is consistent with the observed cell wall defects. However, the manuscript does not report whether these MIC determinations were replicated or provide error estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Multiple fluorescent labeling approaches demonstrated reduced peptidoglycan cross-linking and amidation in rBCG::iE-DAP. BODIPY-FL vancomycin showed complete cell wall labeling (vs. polar labeling in WT), TetraFl incorporation was increased, and amine-reactive dye labeling of extracted PG confirmed decreased amidation and greater exposure of iE-DAP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 are supported by multiple complementary experimental approaches (Figures 1g, 1h, Figure 1\u2014figure supplement 4). The convergence of evidence from different labeling methods strengthens the conclusion that MurT-GatD depletion reduces PG amidation and cross-linking. The inference in C30 is reasonable given the direct measurement of reduced amidation in C29.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Infection of THP-1 macrophages with rBCG::iE-DAP induced dramatic increases in NOD receptor expression compared to WT BCG. In IFN\u03b3-activated macrophages, rBCG::iE-DAP caused ~15-fold increase in NOD-2 and ~200-fold increase in NOD-1 expression, while non-activated macrophages showed ~55-fold increase in NOD-1. E. coli served as a positive control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are supported by qPCR data (Figures 1i, 1j, Figure 1\u2014figure supplement 5). The dramatic fold-changes in NOD-1 expression are striking and statistically significant. However, the manuscript notes that TNF\u03b1 expression differences were 'statistically insignificant between strains' (C38), which somewhat tempers the functional significance of the NOD receptor upregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "In IFN\u03b3-activated BMDMs, rBCG::iE-DAP showed dose-dependent growth inhibition with ATc (3-fold difference at 500 ng/ml) and a dose-dependent trend toward increased TNF\u03b1 expression, though this was statistically insignificant. TNF\u03b1 remained low in unactivated BMDMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C37 is supported by CFU data (Figure 2a). However, claims C38-C39 regarding TNF\u03b1 are problematic\u2014the authors explicitly state the increase was 'statistically insignificant between strains' (Figure 2\u2014figure supplement 1), yet describe it as a 'dose-dependent increase.' This inconsistency undermines confidence in the immunogenicity claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "In vitro trained immunity assays showed that heat-killed rBCG::iE-DAP trained macrophages displayed enhanced control of Mtb H37Rv growth compared to WT BCG or MDP-trained macrophages, while LPS-trained macrophages did not control Mtb growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by CFU data (Figure 2b) and appropriate citations (Kleinnijenhuis et al., 2012; Kaufmann et al., 2018). The trained immunity assay provides functional evidence that rBCG::iE-DAP enhances macrophage antimycobacterial activity. However, the manuscript lacks statistical analysis and error bars for this experiment, and n=3 biological replicates may be insufficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "rBCG::iE-DAP is responsive to doxycycline activation in vivo. Dox caused dose-dependent growth reduction in vitro without affecting WT BCG. In mice, 1 mg/kg/day Dox significantly reduced rBCG::iE-DAP lung burden, with recovered bacilli retaining the CRISPRi plasmid and forming small colonies at 8 weeks, indicating long-term CRISPRi efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are supported by in vitro growth data (Figures 2c, 2d), in vivo CFU counts (Figures 2f, 2g), PCR data, and colony morphology (Figures 2h, 2i). The data demonstrate successful in vivo activation of the CRISPRi system. The retention of the plasmid and responsiveness to ATc after 8 weeks in vivo is particularly important for vaccine applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "In SCID mice, rBCG::iE-DAP (with or without Dox) showed slightly increased survival compared to WT BCG, but this was not statistically significant, suggesting rBCG::iE-DAP is not more attenuated than WT BCG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by survival data (Figure 3b). The SCID mouse experiment appropriately addresses safety concerns about over-attenuation. However, the lack of statistical significance and small sample size (n=5) limit the strength of this conclusion. The inference in C50 is reasonable but could be stated more cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In the vaccination study, mice receiving Dox maintained 80-100% baseline weight with no significant differences at week 6. At week 4 post-Mtb challenge, WT BCG+Dox showed significantly lower lung and spleen weights compared to Saline+Dox, while rBCG::iE-DAP groups showed similar organ weights to Saline+Dox.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by weight data (Figure 4b, Figure 4\u2014figure supplement 1). These data demonstrate that Dox administration does not cause significant toxicity and provide context for interpreting bacterial burden results. The organ weight data at week 4 are somewhat puzzling given the CFU results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "rBCG::iE-DAP+Dox vaccination provided superior protection against Mtb challenge compared to WT BCG. At both 4 and 8 weeks post-challenge, rBCG::iE-DAP+Dox showed significantly lower lung bacterial burden than WT BCG or WT BCG+Dox. WT BCG efficacy waned by week 8, while rBCG::iE-DAP+Dox remained effective. Spleen protection was similar across BCG groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 are supported by CFU data (Figures 4c, 4d) and lung weight data (Figure 4\u2014figure supplement 1a), with appropriate citations for BCG waning (Henao-Tamayo et al., 2015; Dwivedi et al., 2022). This is the key efficacy result of the study. The data show statistically significant improvements in lung protection at both timepoints. The WT BCG+Dox control appropriately addresses potential immunomodulatory effects of Dox (C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Histopathological analysis revealed that rBCG::iE-DAP+Dox immunized mice presented with increased lung inflammation at both 4 and 8 weeks post-Mtb challenge compared to WT BCG+Dox. The authors interpret this as early induction of anti-tuberculous immune responses enabling early control and sustained inflammation during chronic disease enabling continued disease control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C62 are supported by histopathology data (Figures 5a-d) showing quantified increases in inflamed lung area. However, claims C63-C64 are interpretive inferences that are not directly tested. The interpretation that increased inflammation is beneficial is supported by citations (Moreira-Teixeira et al., 2018; Gress et al., 2023), but the causal relationship between inflammation and protection is not established. Alternative interpretations (e.g., that rBCG::iE-DAP causes excessive inflammation) are not adequately addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The manuscript provides extensive background on BCG limitations and prior approaches to improve BCG efficacy, including deletion of immune evasion genes, delipidation, CRISPRi-based modifications, and expression of adjuvants. The rationale for targeting murT-gatD is supported by the adjuvant potential of iE-DAP and the importance of NOD pathways in adaptive immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C74 are all supported by appropriate citations and provide comprehensive background justifying the study approach. These claims establish that: (1) BCG needs improvement, (2) targeting immune evasion mechanisms is a validated approach, and (3) the NOD-1 pathway is important for vaccine responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The manuscript discusses the mechanism by which MurT-GatD depletion affects BCG, noting that reduced PG cross-linking leads to reduced growth and potentially enhanced persistence during vaccination, which may improve antigen presentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by data (Figure 1g) and appropriate citations (Shaku et al., 2023; Kaveh et al., 2014). However, C77 is speculative\u2014the manuscript does not directly test whether rBCG::iE-DAP persists longer or whether this contributes to efficacy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The manuscript describes BCG-induced trained immunity and demonstrates that rBCG::iE-DAP trained macrophages show enhanced Mtb killing compared to WT BCG trained macrophages in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by citations (Kleinnijenhuis et al., 2012; Blok et al., 2015) and CFU data (Figure 2b). This provides mechanistic support for the vaccine's mode of action, though the in vitro trained immunity assay has limitations noted in the evaluation of C40-C42.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The manuscript addresses potential confounding effects of doxycycline, demonstrating that Dox administration to WT BCG vaccinated mice did not enhance vaccine efficacy, while rBCG::iE-DAP+Dox showed increased protection at both 4 and 8 weeks post-challenge, remaining effective when WT BCG efficacy waned.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are supported by citation (Miow et al., 2021) and CFU data (Figures 4c, 4d). The WT BCG+Dox control is critical for interpreting the results and is appropriately included. The sustained efficacy at week 8 is particularly notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The manuscript cites literature supporting that early balanced pro- and anti-inflammatory responses are required for optimal protection against Mtb, and that early immune infiltration correlates with improved TB protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are supported by appropriate citations (Moreira-Teixeira et al., 2018; Gress et al., 2023). These provide context for interpreting the histopathology findings, though they do not directly validate the authors' interpretation of their own data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The manuscript's main conclusions are that MurT-GatD depletion in BCG unmasks iE-DAP and yields superior TB prevention in mice, with the recombinant strain showing reduced growth, cell wall defects, increased antibiotic susceptibility, altered PG localization, increased NOD-1 expression, enhanced trained immunity, and improved in vivo protection. The study demonstrates the feasibility of using CRISPRi to alter BCG antigen presentation for improved vaccine efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by the totality of experimental data presented in the manuscript. The in vivo protection data (Figures 4, 5) combined with the mechanistic characterization (Figure 1) and functional assays (Figure 2) provide strong support for the main conclusions. However, some caveats exist: (1) TNF\u03b1 induction was not statistically significant, (2) the mechanism linking increased inflammation to protection is inferred rather than proven, and (3) the study is limited to a single mouse model.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,220 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C50"
+    ],
+    "result": "MEMRI was successfully applied to chick embryos in ovo for the first time, enabling in vivo mapping of lateralized brain activity patterns during early embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C50 establish the novelty of the methodological approach. The manuscript provides clear evidence through T1 maps (Figure 1b) and lateralization data (Figure 1c) that MEMRI can successfully image embryonic brain activity in intact eggs, representing a genuine technical advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The experimental protocol involved administering manganese to E17 embryos, exposing them to light or dark conditions for ~17.5 hours, then acquiring T1-weighted MRI at E18 using specific imaging parameters and ROI analysis methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C67 comprehensively describe the experimental methodology with sufficient detail for reproducibility. The protocol includes specific concentrations (540 mM MnCl2), timing (E17-E18), imaging parameters (7T, specific pulse sequences), and analysis procedures (blinded ROI selection, ITK-SNAP segmentation).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "ANOVA revealed a significant interaction between brain region and light condition, with the thalamus showing significantly higher manganese uptake in dark versus light conditions, while the Wulst and optic tectum showed no significant differences between conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 report statistical results with appropriate test statistics, p-values, and effect sizes. The significant region \u00d7 condition interaction (C26) is supported by post-hoc tests showing condition differences only in thalamus (C28). FDR correction was applied (C72), strengthening the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Both light and dark conditions showed significant right lateralization in the thalamus, while only the light condition showed significant right lateralization in the visual Wulst. No lateralization was observed in the optic tectum in either condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31-C38 report lateralization patterns, but a critical limitation undermines confidence: no correction for multiple comparisons was applied to post-hoc tests (C76). With 6 lateralization tests performed (3 regions \u00d7 2 conditions), the uncorrected p-values (p=0.039, p=0.041) for some key findings may not survive appropriate correction, making the strength of evidence uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Light stimulation induced right-lateralized Wulst activity consistent with increased left thalamus-to-right Wulst projections via supraoptic decussation, while spontaneous right thalamic lateralization in darkness was reduced by light exposure, potentially reflecting manganese-mediated promotion of fiber growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39-C42 provide mechanistic interpretations of the data. While C39 and C40 are supported by the imaging results, C41 and especially C42 involve substantial inference. The claim that manganese accumulation is \"directly linked\" to fiber growth promotion (C42) is speculative\u2014the data show correlation between activity and manganese uptake, but causality regarding structural changes is not demonstrated within the experimental timeframe.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The observed asymmetry in manganese accumulation likely reflects prolonged neuronal stimulation rather than changes in cellular density or blood-brain barrier permeability, which are deemed unlikely within the experimental timeframe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 address alternative explanations for the observed manganese distribution. The reasoning is sound: the short timeframe (E17-E18, ~24 hours) makes large-scale cellular density changes unlikely (C45), and region-specific BBB permeability changes from light exposure lack a plausible mechanism (C46). The interpretation favoring activity-dependent accumulation (C43) is the most parsimonious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Light stimulation during the E17-18 sensitive window is crucial for establishing brain asymmetry, but spontaneous lateralization of brain activity exists during embryonic development even in complete darkness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C48 represent the main biological conclusions. C47 is supported by the light-induced Wulst lateralization (C33) and prior anatomical studies (C15). C48 is supported by the strong spontaneous thalamic lateralization in darkness (C31, d=-2.153), representing a novel finding that challenges purely experience-dependent models of brain asymmetry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Nodal cascade genes establish body asymmetry including rightward embryonic torsion, which is particularly prominent in birds where the left eye is occluded and the right eye faces the eggshell, creating asymmetric light exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C9 establish the developmental and anatomical context from prior literature. These are well-supported by appropriate citations (C3, C4, C6) and established anatomical knowledge (C7, C8). The logical inference about asymmetric light exposure (C9) follows directly from the described embryonic positioning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The avian visual system involves nearly complete decussation at the optic chiasm, with the thalamofugal pathway projecting contralaterally to the thalamus and then ipsilaterally to the Wulst, plus a small supraoptic decussation that re-crosses to the contralateral Wulst. Light stimulation during E17-18 increases projections from left thalamus to right Wulst.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 describe established avian neuroanatomy and prior experimental findings. The anatomical descriptions (C10-C13) are standard knowledge appropriately cited, and the prior finding about light-induced asymmetric projections (C15) is properly attributed to Rogers and Deng, 1999. This provides essential context for interpreting the current MEMRI results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C23",
+      "C24"
+    ],
+    "result": "Manganese ions enter excitable cells via voltage-gated calcium channels, are transported along axons and across synapses, and their paramagnetic properties shorten T1 relaxation times in a concentration-dependent manner, enabling activity-dependent mapping of neuronal activation and axonal tracts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 and C23-C24 describe the established principles of MEMRI with appropriate citations (Massaad and Pautler 2011; Lin and Koretsky 1997; Pautler et al. 1998; Van der Linden et al. 2007). The interpretation that darker T1 regions reflect higher activity (C24) is standard for MEMRI, though it involves the assumption that manganese uptake directly correlates with neural activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Lateralization indices were calculated from T1 values and analyzed using repeated-measures ANOVA with FDR correction for the main analysis, followed by uncorrected post-hoc t-tests with Cohen's d effect sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 describe the statistical analysis approach. The methods are generally appropriate, though the lack of correction for post-hoc multiple comparisons (C76) is a significant limitation that affects interpretation of borderline significant results. The use of effect sizes (C75) and FDR correction for the main ANOVA (C72) are strengths.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2"
+    ],
+    "result": "MEMRI revealed light-induced brain asymmetry by comparing embryonic brain activity between light-stimulated and dark-maintained eggs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C2 summarizes the main finding stated in the abstract. This is supported by the statistical results showing light-induced lateralization in the Wulst (C33) and differential thalamic activity between conditions (C28), though the strength of some findings is limited by lack of correction for multiple comparisons in post-hoc tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C51"
+    ],
+    "result": "The interplay between genetically determined body torsion and resulting sensory asymmetry may represent a general mechanism for brain asymmetry across vertebrates, and the MEMRI protocol could be exploited to investigate embryonic learning from sensory stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49 and C51 are speculative statements about broader implications and future applications. C49 is explicitly presented as a hypothesis from prior work (Rogers et al. 2013), not a finding of this study. C51 is a reasonable suggestion for future work but represents potential rather than demonstrated capability. Neither claim is directly tested by the current data.",
+    "result_type": "MINOR"
+  }
+]

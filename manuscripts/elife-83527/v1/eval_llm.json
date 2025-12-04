@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "A TGF\u03b2-inducible enhancer reporter (TIE:EGFP) was identified from human melanoma cells and validated in zebrafish. The enhancer is specifically activated by TGFB1 treatment in A375 cells (223 genes up-regulated, q<0.05), responds to constitutively active SMAD2/3, and is inhibited by TGF\u03b2 inhibitor SB431542. The reporter shows developmental expression in zebrafish brain and spinal cord consistent with prior Smad3 reporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C30-C39 provide converging evidence from RNA-seq (C30-C32), electroporation assays (C34), developmental imaging (C35-C37), and pharmacological inhibition (C38-C39) that the TIE:EGFP reporter is both inducible and specific to TGF\u03b2 signaling. The data are internally consistent and appropriately controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C86",
+      "C87"
+    ],
+    "result": "TIE:EGFP is not expressed in normal melanocytes or early melanomas but is activated in spatially distinct regions of advanced melanomas (55% of n=56 fish). TIE:EGFP+ cells occur in clusters and remain positive for weeks, indicating chronic TGF\u03b2 signaling in advanced disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C40-C43 are supported by longitudinal imaging data showing stage-specific TIE:EGFP expression. The sample size (n=56) is adequate for the reported frequency (55%), and the persistent expression over weeks supports the chronic signaling interpretation (C86-C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C88",
+      "C89"
+    ],
+    "result": "Single-cell RNA-sequencing revealed that TIE:EGFP+ melanoma cells down-regulate interferon response pathways (interferon alpha and gamma are top down-regulated, GSEA q<0.05) while up-regulating 29 novel chronic TGF\u03b2 target genes related to extracellular matrix. Immediate-early TGF\u03b2 targets are down-regulated in TIE:EGFPhigh cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C47-C50 are supported by scRNA-seq data from ~2256 TIE:EGFP+ and 752 control cells. The identification of distinct acute vs. chronic gene signatures is well-documented in Figures 2B-C and Figure 2\u2014figure supplement 1B. The immunosuppressive interpretation (C50) is a reasonable inference from interferon pathway down-regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "ChIP-sequencing demonstrated that AP-1 factor binding is required for activation of chronic TGF\u03b2 response. SMAD2/3 bound regions are enriched for AP-1 motifs, with JUNB bound at 48% of SMAD2/3 responsive elements before TGFB1 treatment. Deletion of AP-1 site #1 abolished TGF\u03b2 inducibility in luciferase assays, while deletion of AP-1 site #2 had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C51-C58 are supported by ChIP-seq data showing AP-1 enrichment at SMAD2/3 sites and functional validation via luciferase assays (Figure 2F). The differential requirement for AP-1 site #1 vs. #2 is clearly demonstrated. However, the claim that AP-1 binding is 'required' is based on deletion of a single enhancer; genome-wide necessity is not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C76",
+      "C77",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Overexpression of SATB2 leads to early activation of TGF\u03b2 signaling in melanomas. 68% of SATB2 melanomas (n=27) expressed TIE:EGFP throughout tumor volume, and 40% showed TIE:EGFP expression in early melanomas, compared to 0% of control MCR:MCS melanomas (n=56).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C76-C77, C82-C84 are supported by imaging data comparing SATB2 vs. control melanomas. The difference in early melanoma TIE:EGFP expression (40% vs. 0%) is striking and statistically meaningful given sample sizes. The inference that SATB2 accelerates TGF\u03b2 response (C84) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C71",
+      "C72",
+      "C90"
+    ],
+    "result": "Macrophages localize to TIE:EGFP+ regions and preferentially phagocytose TIE:EGFP+ melanoma cells. Confocal imaging (n=13 tumors) showed 60-80% of TIE:EGFP+ macrophages contained EGFP fragments, indicating phagocytosis. Flow cytometry (n=3 tumors) demonstrated significantly higher phagocytosis of TIE:EGFP+ vs. TIE:EGFP- melanoma cells (p=0.0298), confirmed by qPCR showing enrichment of mitfa and sox10 in TIE:EGFP+ macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C59-C68, C71-C72, C90 are supported by converging evidence from scRNA-seq, confocal imaging, flow cytometry, and qPCR. The distinction between phagocytosed EGFP (fragments) vs. endogenous expression (diffuse) is clearly documented. The flow cytometry sample size (n=3) is modest but shows consistent results with statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "In SATB2-expressing melanomas, TIE:EGFPhigh cells up-regulate chronic extracellular matrix TGF\u03b2 targets and down-regulate interferon alpha and gamma pathways (GSEA q=0), suggesting immune evasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by scRNA-seq data from SATB2 tumors (Figure 4C, Figure 4\u2014figure supplement 1C), confirming the chronic TGF\u03b2 signature observed in control tumors. The immune evasion interpretation (C81) is a reasonable inference but remains speculative without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "TIE:EGFP+ macrophages in SATB2 tumors express a combination of M1-like and M2-like marker genes and are not clearly polarized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by scRNA-seq data shown in Figure 4\u2014figure supplement 1B. The mixed M1/M2 phenotype is clearly documented, though the biological significance and whether this represents a transitional state requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The TGF\u03b2 responsive population (TIE:EGFP+) is rare, comprising less than 1% of sorted cells in all three tumors analyzed by flow cytometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by flow cytometry data (Figure 3D). The rarity of TIE:EGFP+ cells is consistently observed across three independent tumors, though the biological significance of this low frequency is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Approximately 2256 TIE:EGFP+ cells and 752 control cells were sorted for scRNA-seq. Melanoma cells were identified as mitfa and sox10 positive, while macrophages were identified as mpeg1.1 and marco positive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 describe the scRNA-seq experimental design and cell type identification, which are clearly documented in Figure 2A and methods. The cell numbers and marker-based identification are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C99",
+      "C100",
+      "C103"
+    ],
+    "result": "Patients with SATB2 amplification may be more susceptible to TGF\u03b2 inhibitors, and the chronic TGF\u03b2 signature could serve as biomarkers for patient stratification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85, C99-C100, C103 are speculative statements about potential clinical applications. While the zebrafish data showing early TGF\u03b2 activation in SATB2 melanomas is compelling, no patient data or therapeutic validation is provided. These remain hypotheses requiring clinical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The TIE:EGFP reporter may remain active due to chromatin being held open by epigenetic modifications or AP-1 factors, potentially allowing rapid TGF\u03b2 response. AP-1 inhibitors could disrupt TGF\u03b2 induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C94 are mechanistic speculations based on the ChIP-seq data showing pre-stimulus AP-1 binding. While the AP-1 requirement is demonstrated for the TIE enhancer (C54-C58), the broader claims about chromatin state maintenance and AP-1 inhibitor effects lack direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Serpine1 is upregulated in TIE:EGFP+ melanoma cells and its receptor lrp1ab is expressed on TIE:EGFP+ macrophages. TIE:EGFPhigh macrophages express mmp14b and legumain, which promote TGF\u03b2 bioavailability. This may indicate a mechanism where macrophages are recruited by PAI-1 gradients and amplify TGF\u03b2 availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C113 describe preliminary transcriptional observations (data not shown) and propose a mechanistic model. While the cited literature supports roles for SERPINE1, mmp14b, and legumain in relevant processes (C109, C111), the proposed mechanism (C112-C113) is speculative and lacks experimental validation in this system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "TIE:EGFP+ macrophages may be transitioning from M1-like to M2-like phenotype and show higher expression of cholesterol/fatty acid and apoptotic genes, suggesting that TGF\u03b2 signaling or phagocytosis induces macrophage stress and death, allowing tumor immune evasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C118 present speculative interpretations of preliminary scRNA-seq data. While the mixed M1/M2 phenotype (C78) and differential gene expression (C115-C116) are documented, the transitional state interpretation (C114) and stress/death model (C117-C118) lack functional validation or time-course data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "\u03b2-2-microglobulin (b2m), an interferon target gene and component of MHC Class I, is down-regulated in TIE:EGFP+ melanoma cells. This suggests TGF\u03b2 activation in melanoma is immunosuppressive through interferon modulation and macrophage effects, supporting combination TGF\u03b2 and immune checkpoint inhibitor therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 are supported by scRNA-seq data (Figure 2\u2014figure supplement 1B) and established knowledge about B2M in immunotherapy resistance (C120). The immunosuppressive interpretation (C121) is a reasonable inference from the data. The call for combination therapy (C122) is appropriate speculation based on the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Chronic TGF\u03b2 target genes are involved in extracellular matrix degradation and migration. Some targets were identified in long-term TGF\u03b2 signaling studies in mammary epithelial cells, where prolonged treatment stabilized EMT and drug resistance. A subset of melanoma patients show up-regulation of these genes in TCGA data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 appropriately contextualize the chronic TGF\u03b2 targets with prior literature (C95-C97) and patient data (C98). The citations support the functional roles and clinical relevance of these genes, though direct functional validation in the zebrafish model is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The regional TGF\u03b2 response may result from TGF\u03b2 morphogen gradients within tumors. TGF\u03b2 acts as a macrophage chemoattractant and induces M2-like polarization, and local TGF\u03b2 signaling may influence macrophage localization and behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C106 present speculative mechanistic explanations for the observed spatial heterogeneity. While C105 cites established TGF\u03b2 functions, the specific mechanisms proposed (C104, C106) lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C73",
+      "C74",
+      "C75",
+      "C101",
+      "C102",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Background claims about melanoma epidemiology, BRAFV600E mutations, TGF\u03b2 signaling mechanisms, immunosuppressive effects, SATB2 amplification, and zebrafish melanoma models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C29, C73-C75, C101-C102, C123-C125 provide established background knowledge supported by appropriate citations. These contextual claims are well-documented in the literature and accurately presented.",
+    "result_type": "MINOR"
+  }
+]

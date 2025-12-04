@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "DA-ZP1 enables purification of human \u03b1-cells with ~95% purity by FACS, generating three distinct fluorescence populations (low, intermediate, bright) where the intermediate population is highly enriched for \u03b1-cells. This method is superior to NPG and ZIGIR as it does not require antibody co-staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C19-C27 provide converging evidence from FACS, immunofluorescence, and RNA-seq across multiple donors (n=4-5) demonstrating ~95% purity of \u03b1-cells in the intermediate fraction. The comparison with NPG and ZIGIR (C34-C36) is supported by direct FACS comparison showing DA-ZP1's unique ability to separate three populations. Statistical validation and reproducibility across donors strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "\u03b1-pseudoislets can be cultured for up to 10 days maintaining high purity (~95% GCG+ cells), stable viability, low apoptosis, and preserved proliferation capacity. Native islets show decreased viability after day 5, likely due to hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C41-C46 are supported by multiple complementary assays (ATP viability, TUNEL, Ki67) across n=3 donors with appropriate statistical testing (two-way ANOVA). The comparison with native islets (C40, C43) provides important context. However, the proliferation rates are very low (~0.03-0.05%), raising questions about biological significance despite statistical stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C103",
+      "C104"
+    ],
+    "result": "\u03b1-pseudoislets demonstrate glucose-responsive glucagon secretion, with significant suppression at high glucose (16.7 mM) compared to low glucose (3.3 mM), indicating preserved glucose-sensing machinery despite absence of \u03b2-cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by glucagon secretion assays with appropriate statistical testing (one-tailed t-test, one-way ANOVA) using n=5 replicates from two donors. The functional preservation contradicts previous work by Liu et al. (C101-C102), which the authors acknowledge and attribute to methodological differences (C108). The data support cell-intrinsic glucose sensing (C104), though the study cannot exclude paracrine contributions in vivo (C105).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C106"
+    ],
+    "result": "Key \u03b1-cell identity genes (GCG, ARX, IRX2, TTR) are maintained in \u03b1-pseudoislets over 10 days in culture, with ~81% of \u03b1-cell enriched genes unchanged. However, maintenance of cell identity is enhanced by heterotypic cell interactions, as evidenced by better preservation in unsorted pseudoislets and native islets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 are supported by comprehensive RNA-seq analysis (n=3-4 donors) with appropriate statistical thresholds (FDR<0.1, FC>2). The comparison across three conditions (\u03b1-pseudoislets, unsorted pseudoislets, native islets) provides strong evidence for the importance of cell-cell interactions (C60, C62, C63). The analysis appropriately uses published scRNA-seq data (C53) to define \u03b1-cell and \u03b2-cell enriched genes, though the choice of thresholds (FDR<0.1, FC>1.5) could be more stringent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C113",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Dissociation of islets into single cells triggers acute transcriptional changes (4 genes on day 0) followed by progressive downregulation of ECM organization and cell surface interaction genes (127 genes consistently downregulated on days 5 and 10). Native islets show minimal transcriptional changes over 10 days, highlighting the importance of intact islet structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C74 are supported by differential expression analysis with appropriate statistical methods (limma, FDR<0.1, FC>2). The pathway analysis (C71) provides mechanistic insight into the biological processes affected. The comparison with native islets (C113, C115) strengthens the interpretation. However, the dynamic changes in CCN2 expression (C74) and Hippo pathway genes (C73) warrant further investigation to understand their functional significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C107"
+    ],
+    "result": "\u03b1-pseudoislets show time-dependent transcriptional changes with 263 genes altered exclusively in \u03b1-pseudoislets, including upregulation of metallothionein genes (MT1E, MT1X, MT2A) and downregulation of pathways involved in secretory capacity and glucagon signaling. Specific genes DLK1, GSN (\u03b2-cell enriched) decrease while SMIM24 (\u03b1-cell enriched) increases over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C85 are supported by RNA-seq and validated by immunostaining (C85) across n=3 donors. The identification of metallothionein upregulation (C79) is interesting given their association with type 2 diabetes (C80), though the authors acknowledge their role in \u03b1-cells is unexplored (C81). The downregulation of secretory pathways (C82) appears contradictory to the preserved glucagon secretion (Result 3), suggesting compensatory mechanisms or that the transcriptional changes don't fully reflect functional capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior work established zinc-based probes (NPG, ZIGIR) and DA-ZP1 for islet cell purification, with ZIGIR achieving >95% purity when combined with antibodies, and DA-ZP1 previously used for \u03b2-cell purification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C18 accurately cite and describe previous work. The citations are appropriate and the characterization of prior methods is consistent with published literature. This provides proper context for the current study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The DA-ZP1 approach recovers approximately 2-fold more live \u03b1-cells (~400,000 from 10,000 IEQ) compared to antibody-based methods (~200,000), with advantages including short incubation time (10 min), cost-effectiveness, and scalability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 are supported by cell count data (Figure 1\u2014figure supplement 1) and comparison with published yields (C93). The practical advantages (C95, C96) are reasonable inferences based on the methodology. However, the 2-fold improvement should be interpreted cautiously as it comes from a single comparison and may vary with donor quality and islet preparation methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Potential concerns about DA-ZP1 binding intracellular Zn(II) are mitigated by previous data showing no effects on insulin secretion, proliferation, or apoptosis in \u03b2-cells at high concentrations (10 \u03bcM), though DA-ZP1 persists intracellularly for over a week.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C98 cites previous work on \u03b2-cells, but the current study uses \u03b1-cells at much lower concentrations (80 nM). The extrapolation from \u03b2-cells to \u03b1-cells and from 10 \u03bcM to 80 nM is reasonable but not directly validated. Claim C99 acknowledges DA-ZP1 persistence, and the authors appropriately call for further studies. The lack of direct toxicity assessment in \u03b1-cells is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C108"
+    ],
+    "result": "The discrepancy between the current study's findings of preserved glucose-responsive glucagon secretion and Liu et al.'s findings of impaired glucose sensing in \u03b1-pseudoislets is attributed to differences in methods and timing of functional assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C108 provides a plausible explanation for conflicting results, but the specific methodological differences are not detailed. The current study uses day 5 for functional assays while Liu et al.'s timing is not specified in the claims. Without more detailed comparison of protocols (glucose concentrations, preincubation times, culture conditions), the explanation remains speculative. This represents an important unresolved discrepancy in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Expression of \u03b1-cell enriched genes recovers in unsorted pseudoislets after re-aggregation but not in \u03b1-pseudoislets, suggesting heterotypic cell-cell interactions are more important than homotypic interactions for maintaining \u03b1-cell identity. The tighter clustering of \u03b1-pseudoislets may be due to preferential expression of adhesion proteins like N-CAM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 are supported by RNA-seq data (Figure 4b) showing differential recovery of gene expression patterns. The inference about heterotypic vs. homotypic interactions (C121) is supported by previous studies (C122). However, claim C123 about N-CAM is speculative and not directly tested. The morphological observation of tighter clustering (C38) is interesting but the molecular mechanism remains unvalidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Human \u03b1-cell research has been limited by technical challenges in obtaining high-quality cells, with previous antibody-based methods causing cell loss and limiting yield.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C88-C92 accurately describe the state of the field and are supported by appropriate citations. These claims establish the rationale and significance of the study. The characterization of limitations in existing methods (C91, C92) is reasonable though somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C114"
+    ],
+    "result": "Human islets are complex micro-organs with heterotypic cell-cell and cell-matrix interactions, paracrine signaling, and contributions from vasculature and ECM. This microenvironment is disrupted by dissociation but partially preserved in isolated intact islets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 are well-established facts supported by appropriate citations. Claims C112 and C114 are logical inferences about the experimental system. This provides important biological context for interpreting the transcriptomic changes observed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C125"
+    ],
+    "result": "The DA-ZP1 method enables purification of human \u03b1-cells for downstream functional studies, transcriptomic analyses, and assessment of cellular toxicity or proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86, C87, C125 represent the overall conclusions of the study. These are well-supported by the collective evidence from purification, culture, functional, and transcriptomic experiments. The method's utility for the stated applications is demonstrated, though long-term culture beyond 10 days and some applications (e.g., toxicity screening) are not directly validated in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "The RNA-seq data reveal important transcriptional effects of islet dissociation and provide a resource for future studies on re-aggregated islet cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 is supported by the comprehensive transcriptomic analysis presented. The data are deposited and available, making them a useful resource. However, the study is limited to 10 days of culture and uses a relatively small number of donors (n=3-4), which may limit generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "The study cannot exclude the contribution of paracrine and juxtracrine factors to \u03b1-cell secretory function in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 appropriately acknowledges a key limitation of the in vitro system. This is an important caveat for interpreting the functional data and represents good scientific practice in acknowledging what the study does and does not demonstrate.",
+    "result_type": "MINOR"
+  }
+]

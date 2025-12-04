@@ -1,0 +1,177 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript establishes the biological importance of protein stability in evolution, disease, and protein engineering, noting that single amino acid substitutions can substantially affect stability depending on the substitution and local atomic environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by citations to established literature (Casadio et al., 2011; Martelli et al., 2016; Nielsen et al., 2020; Rocklin et al., 2017) and represent accepted knowledge in the field. These claims provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript reviews existing computational methods for predicting protein stability changes, including energy-function-based methods (FoldX, Rosetta), supervised machine learning models (which may suffer from systematic biases), and self-supervised models (which avoid experimental data biases but lack absolute scale predictions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C10 accurately summarize prior work on protein stability prediction methods with appropriate citations. The characterization of limitations in supervised and self-supervised approaches is consistent with cited literature and provides sound motivation for the hybrid approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C62"
+    ],
+    "result": "RaSP uses a two-stage training approach: (1) a self-supervised 3D CNN trained on 2,099 high-resolution protein structures (30% sequence identity cutoff) to predict amino acid types from local atomic environments, achieving 63% classification accuracy; (2) a supervised downstream model trained on Rosetta-calculated stability changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15, C62 describe the RaSP architecture and training procedure with appropriate methodological detail. The 63% classification accuracy (C15) is documented in Figure 2\u2014figure supplement 1. The choice of Rosetta as training target is justified by citations (Park et al., 2016; Frenz et al., 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C50",
+      "C51",
+      "C17"
+    ],
+    "result": "The trained RaSP model achieves Pearson correlation of 0.82 and MAE of 0.73 kcal/mol on a held-out test set of 10 proteins with full saturation mutagenesis, using ensemble predictions from 10 models. Performance is slightly better for exposed versus buried residues, with higher errors for glycine substitutions and mutations to proline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C50, C51, C17 report RaSP's performance on the test set with clear metrics supported by Figure 2b, Table 1, and supplementary figures. The ensemble approach (C50) is methodologically sound. The observation about amino acid-specific errors (C51) and residue exposure (C17) provides useful characterization of model limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C41"
+    ],
+    "result": "RaSP predictions correlate with experimental stability measurements at levels comparable to Rosetta, with Pearson correlations ranging from 0.57-0.79 across five test proteins, demonstrating that RaSP performs on-par with biophysics-based methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C41 are supported by experimental validation data in Figure 3, Table 1, and Figure 3\u2014figure supplement 1. The comparison to Rosetta as a baseline is appropriate, and the correlations are within expected ranges given known experimental variability (Montanucci et al., 2019).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C58",
+      "C59"
+    ],
+    "result": "RaSP achieves competitive performance on independent benchmarks: Pearson correlation of 0.62 (MAE 0.94) on the mega-scale experimental dataset and correlation of 0.39 on the S669 dataset, performing comparably to Rosetta and close to other leading methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C58, C59 demonstrate RaSP's generalization to independent test sets with data shown in Figure 3\u2014figure supplement 3 and Table 2. The performance is appropriately contextualized relative to other methods, though the authors acknowledge that direct comparison is complicated by differences in training and parameterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "RaSP fails to accurately capture anti-symmetric effects, achieving only Pearson correlation of 0.18 on reverse mutations compared to 0.58 on direct mutations, a limitation expected from the one-sided training method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 identifies a clear limitation of RaSP supported by data in Figure 3\u2014figure supplement 2. The authors appropriately acknowledge this as an expected consequence of their training approach and suggest it as an avenue for future development. This represents honest reporting of method limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C26",
+      "C55",
+      "C56"
+    ],
+    "result": "RaSP maintains accuracy when using computationally generated structures, showing relative insensitivity to homology models with decreasing sequence identity and high correlation (\u03c1\u0304=0.94) between predictions from AlphaFold2 structures versus crystal structures, with highest correlation in high-pLDDT regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C26, C55, C56 demonstrate RaSP's robustness to predicted structures through systematic testing with homology models (Figure 4) and AlphaFold2 structures (Table 3). The results are consistent with prior work (Akdel et al., 2022) and support broad applicability of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "RaSP correlates comparably to Rosetta with VAMP-seq experimental data measuring cellular protein abundance for three test proteins, providing additional validation against a different experimental readout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C54 are supported by data in Table 1 and Figure 3\u2014figure supplement 4. The use of VAMP-seq data provides orthogonal validation, as this assay measures cellular abundance rather than direct thermodynamic stability, strengthening confidence in RaSP's predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C42",
+      "C57"
+    ],
+    "result": "RaSP enables saturation mutagenesis predictions in less than a second per residue (~0.4 s/position), making it 480-1,036 times faster than Rosetta and faster than other machine learning methods (ACDC-NN, ThermoNet).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C42, C57 are supported by systematic benchmarking data in Table 4. The speed advantage is substantial and well-documented, though the comparison involves different hardware (GPU vs CPU). This computational efficiency is a key practical advantage enabling large-scale applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C43",
+      "C44",
+      "C37",
+      "C61"
+    ],
+    "result": "Large-scale RaSP analysis of ~8.8 million variants across 1,381 human proteins reveals that common population variants (gnomAD AF>10\u207b\u00b2) show minimal destabilization (median \u0394\u0394G 0.41 kcal/mol) while pathogenic variants show substantial destabilization (median \u0394\u0394G 1.36 kcal/mol), with statistically significant differences indicating protein stability loss as a major mechanism of disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C66, C43, C44, C37, C61 describe a large-scale application with clear selection criteria and statistical analysis. The findings are supported by Figure 5 and bootstrap analysis showing significant median differences (0.82 kcal/mol, CI: 0.73-0.93). Results align with prior observations (Casadio et al., 2011; Martelli et al., 2016; Stein et al., 2019).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "The authors acknowledge important limitations: RaSP was trained only on soluble, globular, folded proteins and may not perform well on membrane proteins or intrinsically disordered proteins; additionally, AlphaFold2 may not predict reliable structures in flexible/disordered regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C40 represent appropriate acknowledgment of method limitations. C39 is a reasonable inference from training data composition, and C40 is supported by citations (Jumper et al., 2021; Varadi et al., 2022). This transparent reporting of scope limitations is scientifically sound.",
+    "result_type": "MINOR"
+  }
+]

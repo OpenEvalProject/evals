@@ -1,0 +1,395 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Current single-cell data analysis approaches focus on cell-type-centric pairwise comparisons and have limitations including disregarding multicellular disease processes and requiring a priori definition of contrasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C9-C12 establish the context and limitations of current single-cell analysis methods. These are well-supported by citations (C9, C10) and represent established knowledge in the field (C2, C11, C12). The characterization of current limitations provides appropriate motivation for the proposed method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Existing multicellular integration methods use matrix factorization to analyze multi-view representations of single-cell data but lack frameworks to map programs to spatial and bulk omics data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 describe existing multicellular integration methods and identify a gap. These are supported by appropriate citations (C13) and accurately characterize the technical approaches (C14-C16) and limitations (C17) of current methods, establishing the need for the proposed framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Multicellular factor analysis repurposes MOFA to analyze cross-condition single-cell atlases, incorporating variation across cell types and tissue features, enabling joint analysis of multiple cohorts, and overcoming data completeness limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C20-C24 describe the core methodological contribution. The approach is clearly stated with appropriate citations to MOFA (C20), and the advantages over existing methods are logically argued (C21-C24). The method description is coherent and the claimed capabilities are demonstrated in subsequent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Application of multicellular factor analysis to acute heart failure data (27 samples, 7 cell types) explained 63.8% of gene expression variance, separated samples by condition, and identified factors associated with tissue conditions and technical batches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 report quantitative results from the first application with appropriate statistical tests (Kruskal-Wallis, adj. p<0.05). The dataset is clearly described (C25-C26), variance explained is quantified (C27), and associations are statistically supported (C29-C30). The conclusion (C31) appropriately follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Comparison with scITD showed that multicellular factor analysis handled all 27 samples (vs 24 for scITD), achieved comparable or better silhouette scores, and provided more flexible handling of missing data and technical biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 provide a direct comparison with the most relevant existing method. The data completeness limitation of scITD is documented (C32), statistical comparison is provided (C33, Wilcoxon test adj. p<0.01), and the conclusion about flexibility (C34) is supported by the comparison and methodological differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Application to lupus dataset showed that a 4-factor model explained 59% of variance, separated stimulated from non-stimulated samples, with Factor 1 associated with IFN-beta stimulation explaining 50.9% of variance, particularly in monocytes and dendritic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 report results from an independent validation dataset. Quantitative metrics are provided (C35, C37), clustering results are reported (C36), and statistical associations are documented (C37, Kruskal-Wallis adj. p<0.05). The inference about cell responsiveness (C38) is reasonable given the variance explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Characterization of Factor 1 in myocardial infarction showed median 322 genes per cell type, 12% shared across cell types, larger myogenic signatures (median 243 genes) than ischemic (median 76 genes), and low overlap between signatures (Jaccard 0.04-0.06).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 provide detailed quantitative characterization of the multicellular program. All metrics are clearly reported with appropriate statistics (C39-C42), and the conclusion (C43) logically follows from the overlap analysis showing predominantly cell-type-specific processes with limited sharing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Factor 1 gene weights correlated highly with differential expression (Pearson 0.98 for ischemic vs myogenic), with 77% of genes differentially expressed in at least one contrast, suggesting Factor 1 captures myocardial remodeling progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 validate the factor analysis against traditional differential expression. High correlations are reported (C44), statistical significance is documented (C46, edgeR adj. p\u22640.05), and the interpretation about disease progression (C45) is reasonable given the correlation patterns across contrasts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Functional characterization revealed ischemic signatures enriched for hypoxia, inflammation, fibrosis, and angiogenesis, while myogenic signatures showed oxidative phosphorylation in CMs and Fibs, and interferon/TGFb responses in Endos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 report functional enrichment results using established methods (MSigDB hallmarks with citation). The identified processes are biologically plausible for myocardial infarction and the enrichment analysis provides appropriate functional interpretation of the molecular signatures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Cell-type factor signatures showed overrepresentation of marker genes from cell states that increased in abundance in corresponding conditions, indicating signatures capture transcriptional changes related to cell state composition changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 relate factor signatures to cell state composition. Statistical enrichment is documented (hypergeometric test adj. p<0.05), patterns are consistent across conditions (C49-C50), and the conclusion (C51) appropriately interprets the relationship between signatures and cell state dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Analysis of variance showed that condition explained more gene expression variance than cell state (one-sample t-test adj. p<0.01), suggesting factor signatures capture both cell-state-dependent and -independent transcriptional changes, with cells partaking in shared global responses to injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 provide novel insight into cell-state independence. Statistical analysis is appropriate (ANOVA, t-test with adj. p<0.01), the variance decomposition is clearly reported (C53), and the conclusions (C54-C55) about global transcriptional responses represent a meaningful biological finding supported by the variance analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Spatial mapping showed ischemic programs expressed in larger areas in ischemic vs myogenic samples, myogenic programs more abundant in myogenic samples, and fibrotic tissues showed intermediate patterns, relating multicellular programs to spatial extent of expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 validate findings in spatial transcriptomics data. Statistical support is provided (Wilcoxon test adj. p<0.05), patterns are consistent with disease progression (C56-C58), and the conclusion (C59) appropriately integrates spatial and molecular findings. This cross-validation strengthens the main results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Extended model incorporating cell compositions and spatial dependencies maintained 63.8% variance explained for gene expression, captured 70% of compositional variance and 22.8% of spatial variance, suggesting independence between spatial organization and disease response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 demonstrate model extension capability. The model composition is clearly described (C60), quantitative results are reported (C61-C62), and the interpretation about independence (C63-C64) is reasonable given the low spatial variance explained. However, the speculation about tissue sampling location (C63) requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Study-specific models of chronic heart failure datasets (Chaffin2022: 42 samples, Reichart2022: 79 samples) captured 43% mean variance, with 25% and 21% respectively associated with heart failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 describe baseline analyses of two independent chronic heart failure datasets. Datasets are clearly described with citations (C65-C66), quantitative metrics are reported (C67-C68), and statistical associations are documented (Kruskal-Wallis adj. p<0.05). This establishes the foundation for meta-analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Cross-study projection showed area under PRC of 0.69 for Reichart2022 using Chaffin2022 factors and 0.87 for the reverse, suggesting Reichart2022 programs better generalize, possibly due to higher patient variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 report cross-study validation results. Quantitative metrics are clearly reported (C69), and the interpretation about generalization (C70) is reasonable. However, the explanation about patient variance is speculative and would benefit from additional analysis to confirm this hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Joint model showed minimal reduction in variance explained (0.6% and 0.51%) but increased heart failure-associated variance by 4.9% and 9.12%, identifying two factors discriminating failing/non-failing hearts in both studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 demonstrate successful meta-analysis. Quantitative comparisons to baseline are provided (C71-C72), statistical associations are documented (C73, Kruskal-Wallis adj. p<0.05), and the results support the claim that joint modeling improves disease signal detection while maintaining overall performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Functional characterization of joint Factor 1 revealed known heart failure processes (JAK-STAT, TGFb, WNT pathways, fetal programs), suggesting a convergent multicellular molecular state independent of etiology and sampling variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 provide functional interpretation and biological conclusion. Known pathways are identified with citation (C74), and the inference about convergent state (C75) is reasonable given conservation across studies and etiologies. This represents a meaningful biological insight from the meta-analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Mapping to bulk transcriptomics (ReHeaT, 916 samples) using SCDC deconvolution showed conservation of heart failure signatures independent of cell compositions, with 9/16 studies showing differential expression and 6 studies differentiating conditions across most cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 demonstrate cross-modality validation. Method selection is justified by benchmarking (C76), conservation is documented (C77-C78), and statistical testing across multiple studies is reported (C79-C81, Wilcoxon adj. p<0.05). The comparison with composition-based clustering (C78, C81) strengthens the conclusion about signature independence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Multicellular responses from single-cell data are transferable to bulk data across cohorts and modalities, with transcriptional profiles not solely driven by abundant cell types and disease responses potentially independent of local cell-type abundances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 draw broad conclusions from bulk mapping results. The transferability claim (C82) is well-supported by the validation data. The inferences about cell-type contributions (C83) and abundance independence (C84) are reasonable but somewhat speculative, requiring additional mechanistic studies for full validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "The framework enabled meta-analysis of over 1000 human heart samples across scales and technologies, providing opportunity to re-analyze bulk data beyond compositions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 summarizes the scope of the analysis. The sample count is verifiable from the described datasets (27 acute + 42 + 79 chronic single-cell + 916 bulk \u2248 1064 samples), and the claim about re-analysis opportunity is supported by the demonstrated bulk mapping results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Multicellular factor analysis using MOFA provides advantages including flexible multi-view integration without feature restrictions, joint modeling for meta-analysis, handling missing data, computational efficiency, and interpretable latent spaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 summarize methodological advantages. These are supported by the demonstrated applications (C86-C88, C90) and citation for efficiency (C89). The comparison to other methods (Table 1) and empirical results throughout the manuscript support these claimed advantages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Application to heart failure atlases revealed cell-state-independent transcriptional deregulation, independence between spatial organization and disease programs, conserved responses across studies, and cell-type alterations in bulk data independent of compositions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C91-C96 summarize major biological findings. These are supported by the detailed analyses in previous result groups, including variance decomposition (C91-C92), spatial analysis (C93), meta-analysis (C94), and bulk validation (C95-C96). The novelty claims are reasonable given the comprehensive analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The framework has limitations including dependence on pseudobulk summarization requiring cell-type ontologies, information loss from aggregation, and linear constraints restricting captured gene interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 honestly acknowledge limitations. The pseudobulk dependency is inherent to the approach (C97-C98), and the linear constraint (C99) is a known limitation of factor analysis methods. These are appropriately discussed with citation (C97) and represent fair assessment of the method's scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Alternative approaches using deep learning or Wasserstein metrics can capture sample heterogeneity but have limited interpretability; future extensions could incorporate cell-cell communication and related methods like MEFISTO and MuVI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 discuss alternative methods and future directions. Comparisons are supported by citations (C100, C102-C103), and the discussion of limitations and extensions is appropriate. However, these are largely speculative (C101-C102, C104-C105) and represent future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "R and Python implementations are provided, and the analysis is scalable and broadly applicable to any multi-sample single-cell study, not limited to transcriptomics or case-control designs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 describe software availability and applicability. Software links are provided with citations (C106), and the broad applicability claim (C107) is reasonable given the demonstrated applications across different datasets, conditions, and data types throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Spatial data could be used to understand spatial regulation of multicellular alterations, and multicellular programs could deconvolute cell-type-specific alterations from bulk data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 propose potential applications that are subsequently demonstrated in the manuscript. While initially speculative, these capabilities are validated through the spatial mapping (C56-C59) and bulk deconvolution (C76-C81) analyses, supporting the feasibility of these applications.",
+    "result_type": "MINOR"
+  }
+]

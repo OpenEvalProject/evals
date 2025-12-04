@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Carbachol (CCh) application causes depolarization, increased membrane potential fluctuations, hyperpolarized action potential threshold, and shifts the center of mass of firing to later in the ramp for both somatic and dendritic current injections at both 2s and 10s durations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C14 provide converging experimental evidence with appropriate statistical tests (paired t-tests, n\u226510 for each condition) showing significant shifts in adaptation index from positive to negative values across multiple experimental conditions. The data are internally consistent and include proper controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Acetylcholine shifts the center of mass of firing to later in the ramp in a dose-dependent manner, with significant effects demonstrated by repeated measures ANOVA across three concentrations (2, 10, and 15 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 demonstrate dose-dependent effects with appropriate statistical analysis (repeated measures ANOVA with Greenhouse-Geisser correction, n=13). Post-hoc tests show significant differences between control and all ACh concentrations, supporting the dose-response relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The non-selective TRP channel blocker flufenamic acid (FFA) reverses the CCh-induced shift in adaptation index in both somatic and dendritic recordings, suggesting TRP channel involvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 show that FFA significantly reverses CCh effects (repeated measures ANOVA, n=9 for both conditions). However, incomplete reversal to control values suggests either incomplete block or additional CCh effects beyond TRP channels, which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "The TRPC-specific antagonist SKF96365 does not significantly reverse the CCh-mediated shift in adaptation index, suggesting TRPC channels are not involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 demonstrate that SKF96365 fails to reverse CCh effects (no significant difference between CCh and CCh+SKF conditions), providing negative evidence against TRPC involvement. The statistical analysis is appropriate (repeated measures ANOVA with post-hoc tests, n=8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Two different TRPM4 channel antagonists (CBA and 9-phenanthrol) reverse the CCh-induced shift in adaptation index, implicating TRPM4 channels as the primary mediator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 provide convergent pharmacological evidence using two independent TRPM4 blockers with appropriate statistical analysis (repeated measures ANOVA, n=8-9). The convergence of results from multiple antagonists strengthens the conclusion about TRPM4 involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Neither IP3 receptor antagonist (Xestospongin C) nor ryanodine receptor antagonist (ryanodine) prevents the cholinergic shift, ruling out Ca2+ release from the endoplasmic reticulum as the mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 provide negative evidence with appropriate statistical tests (paired t-tests, n=9 for both conditions). The CCh effect persists despite antagonist presence, arguing against ER Ca2+ release involvement. However, the irregular firing observed with ryanodine (C28) suggests some RyR involvement in baseline excitability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Computational modeling replicates experimental observations, showing that TRPM4 current (4-fold larger than persistent NaV current) compensates for smaller injected current and causes spiking to persist on the down-ramp despite NaV channel inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 demonstrate that the computational model qualitatively captures experimental phenomena. The model provides mechanistic insights into how TRPM4 current overcomes adaptation. However, the model relies on an unknown Ca2+ source (C31), which is a significant limitation acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "High concentrations of BAPTA (30 mM) with free [Ca2+]i buffered to 10 nM are required to prevent the cholinergic shift, suggesting a close physical relationship between the Ca2+ source and TRPM4 channels (nanodomain).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 provide systematic evidence with three BAPTA concentrations and different free Ca2+ levels (paired t-tests, n=8-12). The requirement for unusually high BAPTA concentrations and very low free Ca2+ strongly supports the nanodomain hypothesis. The experimental design appropriately tests the model prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Carbachol shifts the center of mass of firing to later in the ramp during synaptically-driven depolarization, with decreased EPSP amplitude and slower EPSP decay contributing to the shift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 demonstrate that CCh effects occur with synaptic stimulation, not just current injection. Statistical analysis shows significant EPSP amplitude reduction (paired t-test, n=11). However, C78 is based on qualitative observation rather than quantitative analysis of EPSP decay kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Both CCh and sustained depolarization are required for the rightward shift, which is blocked by TRPM4 antagonists and intracellular Ca2+ buffering but not by IP3R or RyR antagonists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 summarize the main experimental findings. The claim about requiring both CCh and depolarization (C68) is supported by the experimental design where depolarizing ramps are necessary. The pharmacological blocking experiments are well-documented in other claim groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "TRPM4 channels have micromolar Ca2+ affinity, requiring a restricted nanodomain near the channel for activation, and the Ca2+ source is likely co-localized with TRPM4 channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 combine literature citation (C73) with logical inference from the Ca2+ affinity. The nanodomain requirement (C74) follows logically from the micromolar affinity, and co-localization (C75) is a reasonable inference supported by the BAPTA experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Computational modeling shows TRPM4 channels contribute slow inward current that likely increases EPSP decay time, with implications for synaptic integration supported by LTP impairment in TRPM4 knockout mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 connect modeling results to experimental observations and literature. C102 is directly supported by model output, C103 is reasonable inference from slow kinetics, and C104 appropriately cites supporting literature (Menigoz et al., 2016). However, the EPSP decay time increase is inferred rather than directly measured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C123"
+    ],
+    "result": "TRPM4 channels act as coincidence detectors requiring both muscarinic receptor activation and depolarization-induced Ca2+ influx, as supported by convergent pharmacological evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118 and C123 synthesize experimental findings into a mechanistic model. The coincidence detection hypothesis is well-supported by the requirement for both CCh and depolarization. The convergent pharmacology (FFA, CBA, 9-phenanthrol) strengthens the TRPM4 identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Summary of main findings: muscarinic receptor activation shifts firing center of mass through TRPM4-mediated ICAN, independent of ER Ca2+ release, with modeling and BAPTA experiments supporting a nanodomain mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 accurately summarize the major findings of the study. Each component is well-supported by the experimental and modeling data described in other claim groups. This represents an appropriate synthesis of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors speculate that ACh levels could modulate place field shifts, with increasing ACh causing forward shifts and decreasing ACh causing backward shifts, potentially complementing synaptic plasticity mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C97 are explicitly speculative (C92-C94, C97) or propose future experiments (C95-C96). While the speculation is informed by the experimental results, these claims represent hypotheses rather than demonstrated findings. The connection to place field dynamics requires in vivo validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Background context: triangular current ramps emulate place field traversal input, elicit asymmetric firing due to NaV inactivation, and place field modulation is strongest in novel environments where ACh serves as a novelty signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 establish the experimental rationale through appropriate citations to prior work. These are background claims that contextualize the current study and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Carbachol is resistant to acetylcholinesterase degradation (unlike ACh), and ACh causes dose-dependent depolarization, though actual slice concentrations may be lower than applied due to enzymatic degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are well-established facts supported by citation. C81 is supported by experimental observation. C82 is reasonable speculation about ACh degradation. C83 is speculative but logical inference from the dose-response data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Discussion of potential off-target effects of TRPM4 antagonists and justification that convergent pharmacology with three different blockers (FFA, CBA, 9-phenanthrol) implicates TRPM4 as the primary target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 appropriately address potential confounds from non-specific drug effects. The authors correctly note that off-target effects don't overlap between the three blockers, strengthening the TRPM4 conclusion. The citation to similar pharmacological approaches (C124) provides additional support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Decreased Schaffer collateral release (smaller EPSPs) in CCh, combined with postsynaptic effects, contributes to the shift in firing, justifying the use of smaller current ramps in CCh conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132 provide reasonable interpretation of the synaptic stimulation experiments. The inference about combined pre- and postsynaptic effects (C131) is logical, and the justification for smaller current ramps (C132) is appropriate given the enhanced intrinsic excitability.",
+    "result_type": "MINOR"
+  }
+]

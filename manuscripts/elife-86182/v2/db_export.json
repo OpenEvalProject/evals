@@ -1,0 +1,1991 @@
+{
+  "submission": {
+    "id": "7d564562-574c-41d5-af03-bc61d08968e7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:33:12.576470Z",
+    "updated_at": "2025-12-04T02:33:12.576470Z"
+  },
+  "content": [
+    {
+      "id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "submission_id": "7d564562-574c-41d5-af03-bc61d08968e7",
+      "content_type": "manuscript",
+      "content_text": "# Decoding the genetic and chemical basis of sexual attractiveness in parasitic wasps\n\n## Authors\n\n- Weizhao Sun<sup>1</sup> ([ORCID: 0000-0003-2781-1228](https://orcid.org/0000-0003-2781-1228))\n- Michelle Ina Lange<sup>1</sup>\n- J\u00fcrgen Gadau<sup>1</sup>\n- Jan Buellesbach<sup>1</sup> ([ORCID: 0000-0001-8493-692X](https://orcid.org/0000-0001-8493-692X)) \u2020\n\n### Affiliations\n\n1. Institute for Evolution & Biodiversity, University of M\u00fcnster, H\u00fcfferstr M\u00fcnster Germany ([ROR:00pd74e08](https://ror.org/00pd74e08))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAttracting and securing potential mating partners is of fundamental importance for reproduction. Therefore, signaling sexual attractiveness is expected to be tightly coordinated in communication systems synchronizing senders and receivers. Chemical signaling has permeated through all taxa of life as the earliest and most widespread form of communication and is particularly prevalent in insects. However, it has been notoriously difficult to decipher how exactly information related to sexual signaling is encoded in complex chemical profiles. Similarly, our knowledge of the genetic basis of sexual signaling is very limited and usually restricted to a few case studies with comparably simple pheromonal communication mechanisms. The present study jointly addresses these two knowledge gaps by characterizing two fatty acid synthase genes that most likely evolved by tandem gene duplication and that simultaneously impact sexual attractiveness and complex chemical surface profiles in parasitic wasps. Gene knockdown in female wasps dramatically reduces their sexual attractiveness coinciding with a drastic decrease in male courtship and copulation behavior. Concordantly, we found a striking shift of methyl-branching patterns in the female surface pheromonal compounds, which we subsequently demonstrate to be the main cause for the greatly reduced male mating response. Intriguingly, this suggests a potential coding mechanism for sexual attractiveness mediated by specific methyl-branching patterns in complex cuticular hydrocarbon (CHC) profiles. So far, the genetic underpinnings of methyl-branched CHCs are not well understood despite their high potential for encoding information. Our study sheds light on how biologically relevant information can be encoded in complex chemical profiles and on the genetic basis of sexual attractiveness.\n\n## Introduction\n\nTightly coordinated chemical signaling has repeatedly been shown to be of fundamental importance for successful reproduction in a wide range of animal species (Blomquist and Ginzel, 2021; Wyatt, 2014). Particularly insects have exploited this type of signaling as their primary mode of communication (Buellesbach et al., 2018a; Greenfield, 2002). Nevertheless, exactly how specific information such as mating status or attractiveness is encoded in the myriad of signaling molecules documented to be involved in sexual communication remains poorly understood (St\u00f6kl and Steiger, 2017; Allison and Carde, 2016). Cuticular hydrocarbons (CHCs), major components on the epicuticle of insects, are capable of chemically encoding and conveying a wide variety of biologically relevant information (Blomquist and Ginzel, 2021; Blomquist and Bagn\u00e8res, 2010). Most prominently, CHCs have been shown to play pivotal roles in sexual communication as the main cues to attract and elicit courtship from conspecific mates (W\u00fcrf et al., 2020; Finck et al., 2016b) to enable discrimination of con- from heterospecific mating partners (Shahandeh et al., 2018; Xue et al., 2018) and to signal receptivity and mating status (Berson and Simmons, 2019; Simmons, 2015).\n\nDespite such diversified CHC-encoded signals and mediated behaviors, our knowledge on exactly how CHCs encode biologically relevant information has remained surprisingly scarce. This is particularly problematic in studies considering CHC profiles in their entirety as the main signaling entities (Berson and Simmons, 2019; Buellesbach et al., 2018b). The exact compounds or their combinations actually encoding the relevant information within CHC profiles remain largely elusive, except for a few case studies mainly involving the dipteran model organism Drosophila melanogaster, where single unsaturated CHC compounds appear to be the main mediators in sexual communication (Marcillac and Ferveur, 2004; Grillet et al., 2006). In most other cases, chemical information appears to be encoded in a much more complex manner, involving several CHC compounds in different quantitative combinations, with no deeper understanding on the actual coding patterns conveying specific information (W\u00fcrf et al., 2020; Buellesbach et al., 2013).\n\nIn addition to our limited understanding on how CHC profiles encode information, our knowledge of the genetic basis of CHC biosynthesis and its impact on sexual signaling has remained comparably restricted and biased toward the Drosophila model system as well (Blomquist and Bagn\u00e8res, 2010; Holze et al., 2021). In short, the CHC biosynthetic pathway consists of the elongation of fatty-acyl-Coenzyme A units to produce very long-chain fatty acids that are subsequently converted to CHCs (Blomquist and Bagn\u00e8res, 2010; Nelson and Blomquist, 1995). An important early switch in CHC biosynthesis is either the incorporation of malonyl-CoA or methyl-malonyl-CoA, eventually leading to the production of straight-chain (n-) or methyl-branched (MB-) alkanes, respectively (Holze et al., 2021; Nelson and Blomquist, 1995, Figure 1). It has been hypothesized that these processes are mediated by two types of fatty-acyl-synthases (FAS), microsomal for methylmalonyl-CoA and cytosolic for malonyl-CoA (Gu et al., 1997; Ju\u00e1rez et al., 1992). To produce olefins (mono- and poly-unsaturated CHCs), desaturases introduce double bonds into straight-chain CHC precursors (Blomquist and Bagn\u00e8res, 2010; Holze et al., 2021). In Drosophila, a couple of genes have been identified that mainly affect the biosynthesis and ratios of unsaturated CHC compounds that function in sexual signaling. For instance, two desaturases (Desat1 and DesatF) and one elongase (eloF) are involved in female diene production and consequently in their functionality as main sex pheromonal compounds (Chertemps et al., 2007; Chertemps et al., 2006). Furthermore, in the Australian congeneric species D. serrata, the male-specific D. melanogaster orthologue FASN2 has been shown to affect the biosynthesis of three MB-CHCs, among them the additional female mating stimulant 2-Me-C26 (Wicker-Thomas et al., 2015; Chung et al., 2014). Apart from these case studies limited to Drosophila, we know very little about the genetic basis linking CHC biosynthesis and sexual signaling in other insects (Holze et al., 2021).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/86182/elife-86182-fig1-v2.jpg)\n\n**Figure 1.:** Initially, acetyl-Coenzyme A (CoA) is converted into malonyl-CoA by the enzyme Acetyl-CoA carboxylase (ACC). Then, further malonyl-CoA subunits are successively incorporated onto the acetyl-CoA primer to form long-chain fatty acids (LCFAs) catalyzed by fatty acid synthase enzymes hypothesized to be subcellularly located in the cytosol (c-FAS). For the synthesis of methyl-branched (MB)-CHCs with internal methyl groups, methyl-malonyl-CoA units are incorporated at specific chain locations instead of malonyl-CoA units, catalyzed by m-FAS enzymes whose subcellular location has been hypothesized to be microsomal. The MB or straight-chain LCFAs are then further processed through a series of biosynthetic conversions catalyzed by the elongase (ELO) enzyme complex, fatty acyl-CoA reductase (FAR) enzymes and cytochrome P450 decarboxylase (CYP4G) enzymes to either MB or straight-chain, saturated CHCs, respectively. For the biosynthesis of unsaturated CHCs (olefins), desaturase (DESAT) enzymes introduce double bonds into the fatty acyl-CoA chain between elongation steps. For a detailed description of CHC biosynthesis and the involved enzymatic reactions see Blomquist and Ginzel, 2021 as well as Holze et al., 2021.\n\nThe parasitoid jewel wasp Nasonia vitripennis (Hymenoptera: Pteromalidae) has emerged as a suitable model organism to combine studies on functional genetics as well as chemical communication systems in Hymenoptera (Buellesbach et al., 2022; Niehuis et al., 2013). Female CHCs serve as sexual cues capable of eliciting male courtship and copulation behavior in N. vitripennis (Buellesbach et al., 2018b; Steiner et al., 2006). The CHC profiles of N. vitripennis females exhibit a high complexity, consisting of a mixture of n-alkanes, n-alkenes, and MB-alkanes in various quantities. Specifically, the latter fraction, which makes up more than 85% of the whole profile, displays a rich diversity in methyl-branch numbers, chain lengths, and respective relative abundances, hinting at a considerable potential for encoding differential information (Buellesbach et al., 2013; Steiner et al., 2006). However, the entire female CHC profile has long been regarded as encoding their sexual attractiveness, with no single compound, compound classes, or particular patterns being identifiable as the main conveyers of the sexual signaling function (Steiner et al., 2006; Buellesbach, 2018). Moreover, despite recent advances in unraveling the genetic architecture of CHC biosynthesis and variation in the Nasonia genus (Buellesbach et al., 2022), the effects of individual genes on CHC profiles and, more importantly, on the encoded sexual signaling function, could not be determined as of yet.\n\nIn this study, we characterize the phenotypic effects of two fatty acid synthase genes whose knockdown impacts the variation of several structurally related CHC components concordant with female sexual attractiveness. CHC profiles of knockdown females primarily showed significant up- and downregulations of MB-alkane compounds with correlated branching patterns. At the same time, these knockdown females elicited significantly less courtship and copulation attempts from conspecific males. These constitute the first hymenopteran genes with a demonstrated function in governing the variation of primarily MB-alkanes as well as communication, hinting at a chemical coding pattern for sexual attractiveness mostly conveyed by this CHC compound class.\n\n## Results\n\n### Knockdown of fas5 significantly reduced the gene expression of fas5 and fas6\n\nWe conducted gene expression analysis in adult wasps to assess the impact of dsRNAi micro-injection specifically targeting the N. vitripennis fatty acid synthase gene fas5. The results revealed a significant reduction in the relative expression of our target gene fas5 compared to the control groups (Figure 2H), whereas the other previously published and characterized fas genes (fas1\u20134) remained unaffected in their expression (Figure 2\u2014figure supplement 1, Supplementary file 2). However, the expression of fas6, a previously uncharacterized fas gene, was also significantly downregulated in our fas5 dsRNAi knockdown individuals (Figure 2H). The dsRNAi off-target analysis showed that 24% of 19-mers from the fas5 dsRNA sequence matched to the fas6 transcript. Notably, fas6 is localized next to fas5 and shares high sequence similarity with the latter (90.95% at the mRNA and 88.06% at the amino acid level) (Figure 2\u2014figure supplement 2). This indicates that both genes evolved by tandem gene duplication.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/86182/elife-86182-fig2-v2.jpg)\n\n**Figure 2.:** (A) Chromatogram comparison of surface extracts from single female N. vitripennis wasps injected with fas5 dsRNA (top) and GFP (green fluorescent protein) dsRNA (bottom). CHC compound peaks with significantly different quantities in fas5 knockdown vs. GFP control females are indicated in color (compare to Supplementary file 3). Different colors are used for MB-alkanes with their first methyl group at positions 3-, 5-, 7-, and 9+ (also including positions 11-, 13-, and 15-) as well as n-alkanes and n-alkenes. (B) Average relative abundances (%) of different CHC compound classes (as indicated in A) compared between wild type (WT, N = 14), control knockdown (GFP, N = 15), and fas5 knockdown (fas5, N = 15) female wasps (sample sizes per group remain consistent from here on). (C) Average absolute quantities (in ng) of MB-alkanes with their first methyl group at the 3rd C-atom position (3-MeC) compared between wild type (WT), control knockdown (GFP) and fas5 knockdown (fas5) female wasps, indicated by blue, green, and orange violin plots, respectively (plot colors and group designations remain consistent from here on). (D) Average absolute quantities of MB-alkanes with their first methyl group at the 5th C-atom position (5-MeC) (E) Average absolute quantities of MB-alkanes with their first methyl group at the 7th C-atom position (7-MeC). (F) Average absolute quantities of MB-alkanes with their first methyl group at the 9th (as well as 11th, 13th, and 15th, indicated as 9+-MeC) C-atom position. (G) Average absolute quantities of total MB-alkanes. (H) Relative expression of fas5 (plain) and fas6 (hatched) in WT, GFP, and fas5 dsRNAi females (N = 15 for WT and fas5 RNAi; N = 16 for GFP RNAi), indicated by blue, green and orange boxplots, respectively. Significant differences (p < 0.05) were assessed with Benjamini\u2013Hochberg corrected Mann\u2013Whitney U-tests in (A) and (C)\u2013(H) and are indicated by different letters, in (H) significant differences for fas5 expression vs. controls are indicated by lower case letters, and fas6 expression vs. controls by uppercase letters.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86182/elife-86182-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Relative expression of fas1\u20134 in WT, GFP and fas5 RNAi females (N = 15 for WT and fas5 RNAi; N = 16 for GFP RNAi), indicated by blue, green, and orange boxplots, respectively. (B) Relative expression of fas1\u20134 in WT, GFP and fas5 RNAi males (N = 15 for WT and fas5 RNAi; N = 16 for GFP RNAi), indicated by blue, green, and orange boxplots, respectively. Significant differences (p < 0.05) were assessed with Benjamini\u2013Hochberg corrected Mann\u2013Whitney U-tests.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/86182/elife-86182-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) The physical locations of fas5 and fas6 are indicated in the N. vitripennis genome on scaffold NC_045761.1, which constitutes chromosome 5 of the most recent N. vitripennis genome assembly (Nvit_psr_1.1, GCF_009193385.2). Fas5 is precisely located from 21808178 to 21820384 bp (base pairs), while fas6 spans from 21821803 to 21833200 bp. The gene locations were visualized with the National Center for Biotechnology Information (NCBI) webpage. (B) Alignment between fas5 and fas6 transcripts. The identical sequences between fas5 transcript XM_008209455.4 and fas6 transcript XM_031931029.2 are indicated by a consistent gray bar, while single-nucleotide polymorphisms are indicated by the red lines inserted in the bar. Fas5 and fas6 transcripts share 92% query coverage and 90.95% sequence identity. The alignment of sequences was performed by the Basic Local Alignment Search Tool (BLAST) and visualized in Multiple Sequence Alignment Viewer 1.22.0 from NCBI.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/86182/elife-86182-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Average absolute quantities (ng) of total extracted CHC, compared between wild type (WT, N = 14), control knockdown (GFP, N = 15), and fas5 knockdown (fas5, N = 15) N. vitripennis females, indicated by blue, green, and orange violin plots, respectively. (B) Average absolute quantities (ng) of the total n-alkanes from female CHC extracts, violin plot colors, and group designations as in A. (C) Average absolute quantities (ng) of the total amount of n-alkenes from female CHC extracts, violin plot colors, and group designations as in A. Significant differences (p < 0.05) were assessed with Benjamini\u2013Hochberg corrected Mann-Whitney U-tests and are indicated by different letters.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/86182/elife-86182-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Average relative abundances (%) of different CHC compound classes compared between wild type (WT, N = 15), control knockdown (GFP, N = 15), and fas5 knockdown (fas5, N = 14) male N. vitripennis wasps. Different colors are used for MB-alkanes with their first methyl group at positions 3-, 5-, 7-, and 9+ (also including positions 11-, 13-, and 15-) as well as n-alkanes and n-alkenes (compare to Figure 2B, sample sizes per group remain consistent from here on except for I). (B) Average absolute quantities (ng) of total CHC amounts, compared between wild type (WT), control knockdown (GFP), and fas5 knockdown (fas5) male wasps, indicated by blue, green, and orange violin plots, respectively (plot colors and group designations remain consistent from here on). (C) Average absolute quantities (ng) of total n-alkane amounts in male wasps, violin plot colors and group designations as in B. (D) Average absolute quantities (ng) of total n-alkene amounts in male wasps. (E) Average absolute quantities of MB-alkanes with their first methyl group at the 3rd C-atom position (3-MeC). (F) Average absolute quantities of MB-alkanes with their first methyl group at the 5th C-atom position (5-MeC). (G) Average absolute quantities of MB-alkanes with their first methyl group at the 7th C-atom position (7-MeC). (H) Average absolute quantities of MB-alkanes with their first methyl group at the 9th (as well as 11th, 13th, and 15th, indicated as 9+-MeC) C-atom position. (I) Relative expression of fas5 (plain) and fas6 (hatched) in WT, GFP, and fas5 RNAi males (N = 15 for WT and GFP RNAi; N = 17 for fas5 RNAi treatment), respectively. Significant differences (p < 0.05) were assessed with Benjamini\u2013Hochberg corrected Mann\u2013Whitney U-tests and are indicated by different letters (fas5 vs. controls: lower case letters, fas6 vs. controls: uppercase letters).\n\n### Knockdown of fas5 dramatically alters CHC profile composition\n\nDsRNAi micro-injection into female N. vitripennis at the pupal stage resulted in a striking CHC profile shift in adult females, most prominently displayed in altered MB-alkane patterns (Figure 2A, B, Supplementary file 3), while overall CHC amounts and n-alkane quantities remained unaffected (Figure 2\u2014figure supplement 3A, B). More specifically, fas5 knockdown significantly increased the absolute quantities (ng) of MB-alkanes with their first methyl branches positioned on the 3rd (35.07 \u00b1 9.47) and 5th (96.34 \u00b1 33.22) C-atom, compared to both WT (wild type) (24.08 \u00b1 5.6 and 40.06 \u00b1 11.79) and GFP (green fluorescent protein) RNAi females (24.75 \u00b1 7.58 and 40.19 \u00b1 12.37), respectively (Figure 2C, D). Conversely, MB-alkanes with their first methyl branches on the 7th C-atom position significantly decreased in fas5 knockdowns (5.27 \u00b1 2.02) compared to WT (34.3 \u00b1 11.92) and GFP RNAi females (40.15 \u00b1 17.1) (Figure 2E). Other MB-alkanes with their first methyl branches mainly positioned on the 9th, 11th, 13th, and 15th also significantly decreased in fas5 RNAi females (46.88 \u00b1 11.67) as opposed to WT (94.87 \u00b1 30.47) and GFP RNAi females (106.19 \u00b1 40.39) (Figure 2F). Interestingly, overall MB-alkane, n-alkane as well as total CHC quantities remained stable in fas5 knockdown females compared to the controls, respectively, with no significant changes (Figure 2G, Figure 2\u2014figure supplement 3A, B). Lastly, n-alkene quantities, generally only occurring in negligible quantities in N. vitripennis females (Buellesbach et al., 2022), also increased significantly in fas5 RNAi females (8.74 \u00b1 3.52) compared to WT (2.09 \u00b1 0.94) and GFP RNAi females (2.33 \u00b1 0.85) (Figure 2\u2014figure supplement 3C).\n\nMale CHC profiles were also dramatically affected by fas5 knockdowns (Figure 2\u2014figure supplement 4). Whereas n-alkenes and MB-alkanes with their first methyl group at the 5th position are similarly upregulated in knockdown males and females (and MB-alkanes with the first methyl group at the 7th position similarly downregulated), overall CHC quantities as well as n-alkane quantities are significantly higher in knockdown males as opposed to knockdown females (compare Figure 2\u2014figure supplement 3A, B to Figure 2\u2014figure supplement 4B, C). Furthermore, CHCs with their first methyl groups at the 3rd and 9th (and higher) positions appear to be differentially affected as well: While total amounts are significantly different in knockdown females compared to both WT and GFP controls (Figure 2C, F), their quantity is not significantly different in knockdown males from GFP controls, but from WT controls (Figure 2\u2014figure supplement 4E, H). However, as male CHCs have not been shown to function in chemical communication in N. vitripennis, those were not investigated further.\n\n### fas5 knockdown decreases attractiveness of female CHC profiles\n\nFas5 RNAi and control (WT and GFP) females elicited antennation from similar proportions of males, while a significantly reduced proportion of males performed courtship and copulation toward fas5 RNAi females (~50%) compared to controls (~90%) (Figure 3B). Furthermore, 70% of the males rejected fas5 RNAi females at least once, a behavior which was not present at all toward control females (Figure 3C). To further minimize active female involvement in mate choice and increase male reliance on chemical cues (Buellesbach et al., 2018b; Buellesbach et al., 2013), we subsequently offered differentially treated female dummies (i.e., freeze-killed females) to WT males. Similar proportions of males showed antennation toward freeze-killed fas5 RNAi, GFP RNAi, and WT females (Figure 3D). However, significantly fewer males performed courtship and copulation behavior toward freeze-killed fas5 RNAi females (~10%, respectively) compared to both controls (>75%, respectively) (Figure 3D). To further test whether this dramatic reduction in sexual attractiveness is related to the altered surface profile, we proceeded to manipulate the CHC profile of female dummies. Female dummies either had their chemical profiles completely removed (i.e., cleared) or we reconstituted initially cleared WT female dummies with chemical profiles from fas5 RNAi, GFP RNAi, or WT females, respectively. Likewise, no significant difference was found on the proportion of males that performed antennation toward female dummies of all treatments (Figure 3E). However, significantly less males performed courtship toward female dummies that were cleared of their chemical profiles (0%) and fas5 RNAi-reconstituted dummies (16%), compared to WT (50%) and GFP RNAi-reconstituted (75%) female dummies (Figure 3E). Furthermore, copulation attempts were initiated by less than 5% of the males toward fas5 RNAi-reconstituted dummies, which is similar to completely cleared dummies (0%). These numbers were in both cases significantly lower compared to control dummies reconstituted with WT and GFP RNAi profiles (~40%, respectively) (Figure 3E). This demonstrates that the dramatic reduction in female attractiveness in fas5 knockdown females is predominantly mediated by their altered chemical profiles.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/86182/elife-86182-fig3-v2.jpg)\n\n**Figure 3.:** (A) Depiction of consecutively displayed mating behavior of N. vitripennis males toward females, consisting of initial antennation, courtship (stereotypical head-nods on the female antennae after mounting), and actual copulation (injection of the male aedeagus into the female\u2019s genital opening) (images by Quoc Hung Le). (B) The proportions of males performing antennation, courtship, and copulation toward alive WT, GFP, and fas5 RNAi females, which are marked by blue, green, and orange bar plots, N = 20 for each treatment. (C) Male mate rejection rates toward alive WT, GFP, and fas5 RNAi females, separated between no (light green) and one or multiple rejections (light orange). (D) The proportions of males performing antennation, courtship, and copulation toward freeze-killed WT, GFP, and fas5 RNAi females. Bar plot colors and group designations as in (B), N = 24 for each treatment. (E) The proportions of males performing antennation, courtship, and copulation toward either cuticular hydrocarbon (CHC) cleared (in gray) female dummies, or CHC cleared female dummies reconstituted with one female CHC profile equivalent from WT, GFP, and fas5 RNAi females. Other treatment colors and group designations as in (B) and (D), N = 24 for each treatment. Significant differences (p < 0.05) were assessed with Benjamini\u2013Hochberg corrected Fisher\u2019s exact tests in (B), (D) \u2013 (E) and are indicated by different letters, separated for each male mating behavior category.\n\n### Female sexual attractiveness is mainly governed by MB-alkanes\n\nTo further pinpoint the part of the chemical profile that is responsible for encoding sexual attractiveness, we fractionated the CHC profiles of N. vitripennis females and focused on the MB-alkane fraction, which displayed the most conspicuous changes in fas5 knockdown females (Figure 2B). The separation process reduced both the n-alkane and n-alkene proportions to less than 1% of the whole profile, allowing to focus almost exclusively on the MB-alkane fraction (Figure 4A; Figure 4\u2014source data 1). Specifically, the MB-alkane fraction of fas5 RNAi females maintained the dramatically higher proportions of alkanes with 3rd and 5th C-atom methyl-branch positions and lower proportions of alkanes with 7th, 9th, 11th, 13th, and 15th C-atom methyl-branch positions, compared to the respective control females\u2019 MB-alkane fractions (Figure 4B). We also reconstituted cleared WT female dummies with the separated MB-alkane fractions and offered them to WT males in further behavioral assays. As in our previous behavioral assays with female dummies and reconstituted whole CHC extracts, the MB-alkane fraction from fas5 RNAi females elicited significantly less courtship and copulation attempts from WT males than the MB-alkane fractions of both WT and GFP RNAi females (Figure 4C). Overall, these results demonstrate that sexual attractiveness appears to be mainly encoded in the MB-alkane fraction of N. vitripennis females.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/86182/elife-86182-fig4-v2.jpg)\n\n**Figure 4.:** (A) Chromatogram comparison of representative fas5 RNAi female cuticular hydrocarbon (CHC) profiles before (in black) and after (in red) physical separation of the MB-alkane fraction from the other compound classes (n-alkanes and n-alkenes). Individual n-alkane and n-alkene compound peaks are indicated by arrows (all other peaks correspond to MB-alkanes). Note that only the part of the Nasonia CHC profile where n-alkane and n-alkene compounds do occur is shown (compare to Figure 1A). (B) Average relative abundances (%) of different compound classes, including MB-alkanes with their first methyl group at positions 3-, 5-, 7-, and 9+ (also including positions 11-, 13-, and 15-) as well as n-alkanes and n-alkenes, compared between wild type (WT, N = 3), control knockdown (GFP, N = 3), and fas5 knockdown (fas5, N = 3) individuals. (C) The proportions of males performing antennation, courtship, and copulation toward CHC cleared female dummies reconstituted with approximately one female equivalent of MB-alkane fractions derived from WT (in blue, N = 23), GFP (in green, N = 23), and fas5 RNAi (in orange, N = 24) females. Significant differences (p < 0.05) were assessed with Benjamini\u2013Hochberg corrected Fisher\u2019s exact tests in (C) and are indicated by different letters, separated for each male mating behavior category.\n\n### Fas5 knockdown does not affect desiccation resistance\n\nSince CHC profiles also play a pivotal role in desiccation resistance (Blomquist and Bagn\u00e8res, 2010), we further performed survival assays to explore the impact of the fas5 knockdown on the wasps\u2019 ability to survive under different degrees of desiccation stress (Figure 5). Two humidity conditions were created: One with approximately 55% humidity, an ambient condition, constituting medium desiccation stress, and one with approximately 9% humidity, a highly dry condition, constituting high desiccation stress. We then tested and compared the survival times of male and female wasps treated with fas5 RNAi and GFP RNAi (control), respectively. Unsurprisingly, males (Figure 5B, D) and females from both RNAi treatments survived longer under medium desiccation stress than under high desiccation stress (compare Figure 5A, C with Figure 5B, D, respectively). However, under both high and medium desiccation stress, there were no significant difference in survival probability between fas5 and GFP RNAi treated males (Figure 5C, D) and females (Figure 5A, B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/86182/elife-86182-fig5-v2.jpg)\n\n**Figure 5.:** (A) Comparison of survival probabilities along the observation time under high desiccation stress between control knockdown (GFP RNAi) and fas5 knockdown (fas5 RNAi) females. (B) Comparison of survival probabilities along the observation time under medium desiccation stress between GFP RNAi and fas5 RNAi females. (C) Comparison of survival probabilities along the observation time under high desiccation stress between GFP RNAi and fas5 RNAi males. (D) Comparison of survival probabilities along the observation time under medium desiccation stress between GFP RNAi and fas5 RNAi males. N = 10 for each treatment. The high desiccation stress treatment was achieved with approximately 9% relative humidity, and the medium desiccation stress treatment with approximately 55% relative humidity as assessed by humidity\u2013temperature probes. Survival probability was assessed with a Cox regression Analysis, and the colored area along the survival curve represents the 95% confident interval.\n\n## Discussion\n\nIn our study, we shed light on how sexual attractiveness can be encoded by differentially branched CHCs and unravel its genetic architecture to be based on two highly similar fatty acid synthase genes. Knocking down these two genes in N. vitripennis females leads to a consistent pattern of primarily up- and downregulated MB-alkanes with specific branching patterns. This dramatic shift is accompanied by a significant reduction of courtship and copulation behavior toward knockdown females by conspecific males which we demonstrate to be mainly determined by the altered MB-alkane fraction. This advances our understanding of how genetic information is translated into chemical information and brings us a step closer in decoding biologically relevant information from complex chemical profiles.\n\nMost conspicuously in females, quantities of CHCs with their first methyl groups at the 7th and 9th (and higher) C-atom positions are dramatically downregulated, whereas the ones with their first methyl groups at the respective 3rd and 5th positions appear mainly upregulated, in most cases by several orders of magnitude (Figure 2 and Supplementary file 3). Intriguingly, overall CHC quantities do not differ between knockdown and control individuals (Figure 2\u2014figure supplement 3A), suggesting a very specific regulatory function for fas5/fas6 in governing these opposing and potentially compensatory branching patterns. Concordantly, this emphasizes the pivotal role of both these particular genes and the wild type MB-alkane branching patterns in encoding and maintaining the attractiveness of female N. vitripennis CHC profiles. Moreover, there appear to be a number of sex-specific differences in the knockdown effects on the different CHC compound classes, most notably apparent in significant upregulations of both total and n-alkane CHC quantities in knockdown males as opposed to females and partially differentially affected MB-alkane quantities (compare Figure 2 to Figure 2\u2014figure supplement 4). Curiously, GFP dsRNAi appears to have a generally upregulating effect as opposed to WT controls despite for n-alkene quantities in males, which has not been reported before. However, a recent study hints at potential off-target effects of GFP dsRNAi on a small subset of N. vitripennis genes mainly involved in microtubule and sperm development (Rougeot et al., 2021). Interestingly, this appears to be also the case for the expressions of fas1 and fas2 gene transcripts, which are significantly upregulated in the GFP dsRNAi controls, again exclusively in males (Figure 2\u2014figure supplement 1B). Though no off-target effects on CHC profile biosynthesis and variation have been reported so far for GFP dsRNAi, we cannot exclude this possibility, particularly since a trend toward higher CHC quantities in GFP dsRNAi controls as opposed to WT controls is also discernible in some cases for the females (Figure 2E\u2013G). Therefore, as Rougeot et al. already hinted at , we strongly suggest alternative non-target controls in future studies on the genetics of CHC biosynthesis and variation. Concerning the partially different effects of fas5 on CHC quantities in females and males, as no functionality in chemical communication could be attributed to the latters\u2019 CHC profiles so far, these could not be investigated any further. However, opposing sex-specific effects of CHC biosynthesis genes on the quantity of different compound classes appear to be a rather common occurrence, particularly in the insect model system D. melanogaster (Holze et al., 2021). Based mainly on research on the latter, CHC-based sexual signaling mechanisms have long been assumed to be comparatively simple, mainly mediated by two doubly unsaturated dienes in females and a mono-unsaturated n-alkene in males (Marcillac and Ferveur, 2004; Grillet et al., 2006). However, experimental evidence has accumulated that other CHC compounds can also complement sexual signaling in Drosophila in various ways (Chung et al., 2014; Everaerts et al., 2010). When regarding CHC profiles in their entirety as opposed to single compounds, direct causal links between sexual attractiveness and CHC profiles properties have rarely been experimentally demonstrated and have most often defied clear patterns (W\u00fcrf et al., 2020; Xue et al., 2018). In the genus Nasonia and other related parasitoid wasp species, it has so far been assumed that sexual attractiveness is a trait attributed to their entire CHC profile as either present or absent depending on the studied species and also potentially reinforced by other factors such as polar cuticular compounds (Buellesbach et al., 2013; Mair et al., 2017). Our study clearly shows that CHC-mediated sexual attractiveness is primarily conveyed through a relatively complex chemical pattern with a comparatively simple genetic basis.\n\nInterestingly, knockdown of fas5 also upregulated n-alkene quantities (Figure 2\u2014figure supplement 3C), which have recently been shown to have a repellent effect on N. vitripennis males, preventing them from engaging in homosexual courtship behavior (Wang et al., 2022). However, our CHC compound class separation greatly reduced the increased proportion of n-alkenes in fas5 knockdown females to levels almost equivalent to those found in wild type females (0.94% and 0.91 %, respectively, in the extract of fas5 and WT MB fractions, compare Figure 4\u2014source data 1 to Supplementary file 3). This renders the contribution of n-alkenes to the sharp reduction in sexual attractiveness in fas5 knockdown females unlikely and strongly suggests that the female sexual signaling function is mainly mediated by MB-alkanes (Figure 4). We argue that this CHC compound class indeed possesses the highest potential for encoding a wide variety of chemical information through the myriad of possible positions and numbers of methyl branches. In fact, a couple of studies have already hinted at MB-alkanes as the main carriers for chemical information in insect CHC profiles, providing evidence for the involvement of MB-alkanes in chemical communication processes (Spikes et al., 2010; Holman et al., 2016). This might be of particular importance in Hymenoptera, an insect order with CHC profiles largely dominated by MB-alkanes (Kather and Martin, 2015; Martin and Drijfhout, 2009) and in which both theoretical considerations and empirical evidence have accumulated for the increased complexity and high sophistication of their chemical communication systems (Saad et al., 2018; Obiero et al., 2021). Contrary to this, it has been argued that olefins (mainly n-alkenes and dienes) have a higher potential for encoding chemical information than MB-alkanes (Chung and Carroll, 2015). However, this view might have been biased and mainly informed by findings from Drosophila, where unsaturated compounds appear to be, in fact, the main mediators of sexual communication (Marcillac and Ferveur, 2004; Ferveur, 2005). In direct comparison, MB-alkanes constitute the dominant fraction in Nasonia CHC profiles (>85%) (Buellesbach et al., 2022) as opposed to Drosophila profiles (16\u201324%) (Dembeck et al., 2015). Since the split between Hymenoptera and other holometabolous insects including Diptera has been estimated to have occurred 327 mya (Misof et al., 2014), fundamental shifts in basic properties of both surface profile compositions and chemical signaling functionalities might be expected. Therefore, the promising role of MB-alkanes in conveying chemical information should be investigated more prominently in future studies. Through a wider evolutionary lens, it will be interesting to investigate how the present findings compare to other CHC-based communication systems in the vastly diverse insect order Hymenoptera. Notably, whereas in solitary Hymenoptera CHCs can function as contact sex pheromones, they are prominent and fundamental nestmate and caste recognition cues in eusocial Hymenoptera (Buellesbach et al., 2018b; Vereecken et al., 2007; Leonhardt et al., 2016). However, the main encoding mechanisms as well as the underlying genetic basis still remain largely elusive in most taxa, and our study constitutes an important stepping stone for investigating potential similarities in these important communication modalities in a larger evolutionary context. Moreover, since CHC profiles can be highly species-specific, their potential involvement in species recognition and assortative mating warrants further investigation to elucidate the exact underlying chemical and genetic differentiation mechanisms (Buellesbach et al., 2018b; Wurdack et al., 2015; Weiss et al., 2015).\n\nConcerning gene orthology, fas5 has been annotated as a homolog to FASN3 in D. melanogaster (Buellesbach et al., 2022; Lammers et al., 2019). Interestingly, knockdowns of FASN3 alone do not induce any compound changes in D. melanogaster CHC profiles but increase the flies\u2019 sensitivity to desiccation (Wicker-Thomas et al., 2015). A FASN3 ortholog expressed in the kissing bug Rhodinius prolixus also contributes to desiccation resistance, but simultaneously downregulates MB- while upregulating straight-chain alkanes (Moriconi et al., 2019). Similarly, in the migratory locust Locusta migratoria, silencing two FAS genes decreased insect survival under desiccation stress while altering the amounts of both MB- and straight-chain alkanes (Yang et al., 2020). In contrast to these studies, we were not able confirm any functionality in desiccation resistance for fas5 in both N. vitripennis males and females (Figure 5), nor did the previous studies report any impact on CHC-based chemical signaling. There are two additional FAS genes characterized in D. melanogaster: FASN1, which is responsible for overall CHC production with no specific effects on any particular compound classes (Wicker-Thomas et al., 2015) and FASN2, which exclusively regulates MB-alkane production in males (Chung et al., 2014). Although not a direct homolog, the main impact on MB-alkane variations of FASN2 in D. melanogaster is comparable to that of fas5 in N. vitripennis, with the exception that we were able to document effects on this compound class for both sexes (compare Figure 2 and Figure 2\u2014figure supplement 4). Such diversified functionalities of the FAS genes characterized so far indicate their high versatility as early mediators in the CHC biosynthesis pathway (Figure 1). FAS genes have been implied as instrumental for generating the huge diversity of different CHC profiles across insects, with high evolutionary turnover rates and differences in the specific functional recruitments of FAS gene family members (Finck et al., 2016a; Moriconi et al., 2019). However, FAS genes are far from restricted to impact CHC biosynthesis alone and have been documented to be involved in a wide variety of other physiological processes, ranging from lipogenesis to diapause induction (Tan et al., 2017; Lammers et al., 2019; Moriconi et al., 2019). Therefore, specifically predicting functionalities of FAS genes and unambiguously associating them with CHC biosynthesis and variation has been notoriously difficult (Holze et al., 2021). Our study suggests a very specific affinity of fas5 for particular methyl-branching patterns, potentially originating in an enzymatic preference for methyl-malonyl-CoA predecessors with pre-existing branching patterns (Blomquist and Bagn\u00e8res, 2010; Nelson and Blomquist, 1995). To clarify this, future studies should determine whether the fas5 gene product constitutes a soluble cytosolic or membrane-bound microsomal FAS enzyme, the latter of which has been postulated to be specific for the incorporation of methyl-malonyl-CoA subunits (Gu et al., 1997; Ju\u00e1rez et al., 1992, Figure 1).\n\nThe previously uncharacterized fas gene fas6 not only shows high sequence similarity to fas5,but is also its physical neighbor (Figure 2\u2014figure supplement 2). Moreover, both of these genes show similarly high expression patterns in wild type N. vitripennis wasps (Figure 2H and Figure 2\u2014figure supplement 4I). This basically implies that these two genes originated from a tandem gene duplication event and therefore constitute paralogs of the D. melanogaster FASN3. Hence, we cannot state at this point whether either one of these two genes alone or both are responsible for the observed phenotypic changes. Interestingly, this mirrors a similar finding in N. vitripennis males concerning the biosynthesis of a lactone functioning in a long-range pheromonal blend attractive to virgin females (Niehuis et al., 2013). The production of this compound was unambiguously attributed to three short-chain dehydrogenase/reductase genes with high sequence similarity, which could also not be targeted independently by dsRNAi knockdowns. This demonstrates the difficulty to narrow down specific genes responsible for the biosynthesis of pheromonally active compounds when their sequences show particularly high degrees of similarity and simultaneously high expression patterns.\n\nIn conclusion, our study demonstrates the considerable impact of two highly similar fatty acid synthase genes on female sexual attractiveness in a parasitoid wasp, thereby immediately suggesting how this trait can be encoded through specific patterns of MB-alkanes. To the best of our knowledge, these are the first identified hymenopteran genes with a specific effect on MB-alkane ratios that simultaneously impact sexual attractiveness. Transcending the demonstrated impact on sexual signaling and elicited mating behavior, the present findings also substantially advance our general knowledge on the so far little investigated genetic underpinnings of MB-alkane variation and production. This particular compound class dominates the surface profiles of many insects, most notably in the ecologically and economically important insect order Hymenoptera, and harbors a considerable potential for encoding chemical information, inviting a stronger emphasis on these compounds in future studies on chemical signaling and its behavioral impact.\n\n## Materials and methods\n\n### Nasonia strain maintenance and preparation\n\nThe standard laboratory strain AsymCX of N. vitripennis, originally collected in Leiden, the Netherlands, was used for all experiments. The wasps were reared under 25\u00b0C, in 55% relative humidity and a light:dark cycle of 16:8 hr, leading to a life cycle of ~14 days. Pupae of Calliphora vomitoria (Diptera: Calliphoridae) were used as hosts.\n\n### DsRNAi gene knockdown\n\nFor the knockdown initially designed to target fas5, dsRNA was synthesized following the manual of MEGA Script T7 kit (Invitrogen, Carlsbad, CA, USA), using the primer pairs listed in Supplementary file 1. The Quick-RNA Tissue/Insect Kit (Zymo Research, Freiburg, Germany) was used to purify the resulting dsRNA product. GFP (green fluorescent protein) dsRNA, which presumably has no known targets in the Nasonia genome (Rougeot et al., 2021), was used as a control. GFP dsRNA was synthesized from the vector pOPINEneo-3C-GFP, which was kindly donated by Ray Owens (Addgene plasmid #53534; http://n2t.net/addgene:53534; RRID: Addgene_53534). Microinjections were performed with 4\u20135 \u00b5g/\u00b5l (diluted in nuclease free water, Zymo Research) fas5 and GFP dsRNA on a Femtojet microinjector (Eppendorf, Hamburg, Germany) following the protocol published by Lynch and Desplan, 2006. N. vitripennis yellow pupae (7\u20138 days old after egg deposition) were gently fixed on a cover slide using double-sided tape (Deli, Zhejiang, China), with their abdomens facing up. DsRNA mixed with 10% red food dye (V2 FOODS, Niedersachsen, Germany) was injected into the abdomens of the pupae using a thin needle, which was produced in a PC-10 puller (Narishigne Group, Tokyo, Japan) by heating a glass capillary (100 mm length \u00d7 85 \u00b5m inner diameter, Hilgenberg, Malsfeld, Germany) to 100\u00b0C, and subsequently breaking the stretched capplilary in two parts in the narrow middle section at 67\u00b0C. Individual injections were performed until the red dye has spread evenly within the abdomen of each pupa as described by Wang et al., 2022. The injected pupae were then stored inside a Petri dish with a piece of wet tissue at the bottom to ensure saturation with sufficient humidity for the pupae to mature and eclose. After the pupae elosed as adults, they were collected at an age of 0\u201324 hr and snap-frozen with liquid nitrogen, after which they were stored at \u221280\u00b0C for further experiments.\n\n### DsRNAi efficiency analysis\n\nDsRNAi knockdown efficiency was determined by quantitative PCR (qPCR), initially assessing fas5 gene expression levels between knockdown and control individuals. RNA from each individual wasp after chemical extraction (see below) was obtained using the Quick-RNA Tissue/Insect Kit (Zymo Research, Freiburg, Germany), and reversely transcribed into complementary DNA (cDNA) utilizing the cDNA Synthesis Kit (CD BioSciences, New York, USA). As controls for the qPCR procedure, we used N. vitripennis elongation factor 1\u03b1 (NvEF-1\u03b1) as a housekeeping gene, as described by Wang et al., 2022. The qPCR was performed in a Lightcycler480 qPCR machine (Roche, Basel, Switzerland), with a pre-incubation of 95\u00b0C for 3 min, 40 amplification cycles of 15 sec at 95\u00b0C and 60 sec of 60\u00b0C, as well as a final standard dissociation curve step to check the specificity of the amplification. The analysis of qPCR data was conducted using the \u0394\u0394Ct method (Rao et al., 2013). Firstly, the Ct (number of cycles required for the fluorescent signal to cross the threshold, i.e., exceeding the background level) values of the target genes were normalized to the Ct values of the housekeeping gene, yielding the respective difference between the two (\u0394Ct). Secondly, the \u0394Ct values of the knockdown treatments were normalized to the average \u0394Ct values of the wild type (WT) group, which resulted in \u0394\u0394Ct values. The relative expression patterns of the target genes were then determined using the formula 2\u2212\u0394\u0394Ct. To compare the relative expressions of fas genes among the treatments, a sequential Mann\u2013Whitney U-test was employed. Subsequently, the resulting p-values from these tests (18 in total, considering 6 fas genes and 3 treatments) were subjected to the Benjamini\u2013Hochberg procedure for correction of the false discovery rate (Benjamini and Yekutieli, 2001).\n\n### DsRNAi fas5 off-target effects\n\nThe off-target effect of fas5 dsRNA was assessed using the dsRNAi off-target prediction tool in WaspAtlas (Davies and Tauber, 2015), an online N. vitripennis genomic database. Briefly, the fas5 dsRNA sequence was first split into all possible 19-mers, which were further matched to the N. vitripennis transcriptome. The transcripts to which at least one of the 19-mers matched were identified and then for each transcript the percentage of matching 19-mers was calculated.\n\n### Chemical analysis\n\nChemical extractions of single wasps were performed by immersing them in 50 \u00b5l high-performance liquid chromatography (HPLC)-grade n-hexane (Merck, KGaA, Darmstadt, Germany) in 2-ml glass vials (Agilent Technologies, Waldbronn, Germany) on an orbital shaker (IKA KS 130 Basic, Staufen, Germany) for 10 min. Extracts were subsequently evaporated under a constant stream of gaseous carbon dioxide and then resuspended in 10 \u03bcl of a hexane solution containing 7.5 ng/\u03bcl dodecane (C12) as an internal standard. Following this, 3 \u03bcl of the resuspended extract was injected in splitless mode with an automatic liquid sampler (PAL RSI 120, CTC Analytics AG, Zwingen, Switzerland) into a gas chromatograph (GC: 7890B) simultaneously coupled to a flame ionization detector (FID: G3440B) and a tandem mass spectrometer (MS/MS: 7010B, all provided by Agilent Technologies, Waldbronn, Germany). The system was equipped with a fused silica column (DB-5MS ultra inert; 30 m \u00d7 250 \u03bcm \u00d7 0.25 \u03bcm; Agilent J&W GC columns, Santa Clara, CA, USA) with helium used as a carrier gas under a constant flow of 1.8 ml/min. The FID had a temperature of 300\u00b0C and used nitrogen with a 20-ml/min flow rate as make-up gas, and hydrogen with a 30-ml/min flow rate as fuel gas. The column was split at an auxiliary electronic pressure control (Aux EPC) module into an additional deactivated fused silica column piece (0.9 m \u00d7 150 \u03bcm) with a flow rate of 0.8 ml/min leading into the FID detector, and another deactivated fused silica column piece (1.33 m \u00d7 150 \u03bcm) at a flow rate of 1.33 ml/min leading into the mass spectrometer. The column temperature program started at 60\u00b0C and was held for 1 min, increasing 40\u00b0C per min up to 200\u00b0C and then increasing 5\u00b0C per min to the final temperature of 320\u00b0C, held for 5 min.\n\nCHC peak detection, integration, quantification, and identification were all carried out with Quantitative Analysis MassHunter Workstation Software (Version B.09.00/Build 9.0.647.0, Agilent Technologies, Santa Clara, CA, USA). CHCs were identified according to their retention indices, diagnostic ions, and mass spectra as provided by the total ion count chromatograms, whereas their quantifications were achieved by the simultaneously obtained FID chromatograms, allowing for the best-suited method for hydrocarbon quantification (Agilent Technologies, Waldbronn, Germany, pers. comm.) while simultaneously retaining the capability to reliably identify each compound. Absolute CHC quantities (in ng) were obtained by calibrating each compound according to a dilution series based on the closest eluting n-alkane from a C21-40 standard series (Merck, KGaA, Darmstadt, Germany) at 0.5, 1, 2, 5, 10, 20, and 40 ng/\u00b5l, respectively.\n\nTo compare the amount of each of the 54 identified single CHC compounds among different treatments, sequential Mann\u2013Whitney U-tests were performed between all pairs of the two treatments (namely, fas5 vs. GFP, fas5 vs. WT and GFP vs. WT). Subsequently, the resulting 162 (54 \u00d7 3) p-values obtained from the sequential Mann\u2013Whitney U-tests were Benjamini\u2013Hochberg corrected to control for the false discovery rate (Benjamini and Yekutieli, 2001). Furthermore, single CHC compounds were categorized into distinct compound classes based on their chemical structures, that is, n-alkanes, n-alkenes, 3-methyl-branched alkanes (3-MeC), 5-methyl-branched alkanes (5-MeC), 7-methyl-branched alkanes (7-MeC), and 9+ methyl-branched alkanes (9+-Me, that also include 11-, 13-, and 15-MeC) with their first methyl branches at the indicated positions (in case of multiply branched MB-alkanes, other branching positions apart from the first were not further differentiated in this categorization). The compounds within each class were then combined to obtain a sum representing the total proportion of CHCs in each class. Sequential Mann\u2013Whitney U-tests were performed to compare the compound class proportions between treatments, after which the 21 (7 \u00d7 3) p-values were adjusted again for multiple comparisons using the Benjamini\u2013Hochberg procedure (Benjamini and Yekutieli, 2001).\n\n### CHC compound class separations\n\nPhysical separation of the MB-alkane fraction from the other compound classes in N. vitripennis CHC profiles was performed according to an adapted protocol from W\u00fcrf et al., 2020 and Bello et al., 2015. CHC profiles of approximately 700 females were extracted in 9 ml HPLC-grade n-hexane (Merck, KGaA, Darmstadt, Germany) which was subsequently evaporated under a stream of gaseous carbon dioxide. The dried extract was re-suspended in 10 ml isooctane (99%, Sigma-Aldrich, Taufkirchen, Germany), and stirred overnight with a magnetic stirrer (Model: C-MAG HS4, IKA, Germany) after adding 2 g of activated (i.e., baked at 300\u00b0C for 2 hr) molecular sieves (5 \u00c5, 45\u201360 mesh size, Merck, KGaA, Darmstadt, Germany). The molecular sieves were filtered out by loading the extract into a glass funnel (50 mm inner diameter) with glass wool (Merck, KGaA, Darmstadt, Germany) and 0.2 g silica gel (high purity grade, pore size 60 \u00c5, 230\u2013400 mesh particle size, Merck, KGaA, Darmstadt, Germany) containing 10% pulverized AgNO3 (99.7%, Merck KGaA, Darmstadt, Germany). This procedure is devised to effectively filter out n-alkanes and olefins, retaining only the MB-alkane fraction in the remaining extract (W\u00fcrf et al., 2020; Bello et al., 2015). The isooctane in the extract was condensed to 2 ml under a stream of gaseous carbon dioxide, from which we sampled 50 \u00b5l to estimate the quantity of the overall extract. Based on the quantity of overall MB-alkanes and single female CHC profiles, the MB-alkanes were reconstituted in hexane to a final concentration of approximately one female equivalent per 5 \u00b5l, which was saved for further behavioral assays.\n\n### Behavioral assays\n\nMating behavior assays were carried out to test whether female sexual attractiveness decreased after knockdown of fas5. First, virgin females of three treatments (fas5 dsRNAi, GFP dsRNAi, and WT) were offered to 0- to 48-hr-old virgin WT N. vitripennis (AsymCX) males, following the protocol described in Mair et al., 2017. A female was transferred into a transparent plastic vial (76 mm height, 10 mm diameter) that contained a male. The assay was started as soon as the male was introduced and observed for 5 min. The males\u2019 behavior toward the females was then scored based on presence or absence of three consecutive behavioral displays: antennation (physical contact of male antennae with the female\u2019s body surface), courtship (series of stereotypic headnods and antennal sweeps after mounting the female), and actual copulation attempts, which have been established as indicators of male mate acceptance and female sexual attractiveness (Buellesbach et al., 2018b; Buellesbach et al., 2013; Buellesbach et al., 2014, Figure 3A). If the male did not initiate any further courtship or copulation behaviors after antennation, this was scored as a male mate rejection as described in Buellesbach et al., 2014.\n\nTo increase the focus on the male mate choice behavior in relation to female chemical cues, further behavioral assays were carried out with freeze-killed females (i.e., dummies) offered to 0- to 48-hr-old virgin WT males. In the first set of these experiments, male behavior was recorded and compared on female dummies of the three previously mentioned treatments (fas5 dsRNAi, GFP RNAi, and WT). In the second set, female dummies were manipulated by either soaking them individually in 50 \u00b5l hexane for 3 hr, effectively removing their CHC profiles (Buellesbach et al., 2018b; Buellesbach et al., 2013) or reconstituting soaked WT female dummies with one fresh female CHC profile equivalent (resuspended in 5 \u00b5l hexane as described above for chemical analysis) from fas5 dsRNAi, GFP dsRNAi, and WT females. In the third set, approximately one female equivalent of the separated MB-alkane fraction, prepared directly after the CHC separation process (see above), was reconstituted to soaked WT female dummies, and offered to the WT males.\n\nAll behavioral assays with female dummies were performed in a mating chamber which consisted of two identical aluminium plates (53 \u00d7 41 \u00d7 5 mm). Each plate contained 12 holes (6 mm diameter) that served as observation sites. In preparation for the recording of the behavioral assays, single female dummies were placed into each hole in one plate, while single WT males were placed into each hole in the opposite plate and immediately covered with glass slides (Diagonal GmbH & Co KG, M\u00fcnster, Germany). The behavioral assays were initiated by quickly adjoining the two plates. Recordings were conducted with a Canon camera (EOS 70D, Tokyo, Japan) for 5 min in an eclosed wooden box (70 x 40 x 40 cm) with constant illumination (100Lm, LED light L0601, IKEA Dioder, Munich, Germany). Recordings of mating behaviors were further assessed and the frequencies of males\u2019 mating displays were compared among treatments with Benjamini\u2013Hochberg corrected Fisher\u2019s exact tests (Benjamini and Yekutieli, 2001).\n\n### Desiccation assays\n\nHigh desiccation stress conditions were implemented by placing 0.6 g desiccant (DRIERITE, Merck, KGaA, Darmstadt, Germany) into transparent plastic vials (76 mm height, 10 mm diameter), which were air tightened with rubber plugs, resulting in low (~9%) relative humidity after 24 hr. Inside each vial, a piece of cotton and a stainless-steel grid was placed in the middle to separate the desiccant from the remaining space of the vial (~35 mm height), which served as an observation site where individual wasps were placed for the duration of the desiccation assay. Control vials with moderate desiccation stress (~55% relative humidity) were prepared similarly but without adding the desiccant. The relative humidity in the test tubes of different humidity treatments was monitored using a humidity\u2013temperature probe (Feuchtemesssystem HYTELOG-USB, B+B Thermo-Technik GmbH, Donaueschingen, Germany) with a measurement accuracy of \u00b12% relative humidity at 25\u00b0C. Newly eclosed (0- to 24-hr-old) male and female wasps previously treated with either fas5 dsRNAi or GFP dsRNAi were collected, sorted into groups of 10 per treatment and sex, respectively, and fed with honey water (Bluetenhonig, dm-drogerie markt GmbH & Co KG, Karlsruhe, Germany) for 9 hr. Afterwards, each group of wasps was randomly assigned to the previously prepared vials with either high or moderate desiccation stress. For each treatment, 10 replicates (vials) were observed. Recording was performed with a looped VLC media player (VideoLAN, Paris, France) script, initiating a 2-min recording (Logitech C920 HD PRO webcam, Logitech GmbH, M\u00fcnchen, Germany) every 2 hr, until the last wasp fell down on the grid and stopped moving. The numbers of alive wasps in each vial were assessed to build survival curves that were then compared among treatments, separately for each sex. Survival analysis was conducted using the Cox Proportional Hazards Model to evaluate the survival probability, employing the R package \u2018survival\u2019 (Therneau et al., 2000). The knockdown treatment was considered as the fixed factor, while the variation among replicates was treated as a random factor. To determine the statistical significance, the log-rank test was employed. Additionally, the Benjamini\u2013Hochberg procedure was applied to correct for multiple testing across the different humidity treatments (Benjamini and Yekutieli, 2001).\n",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "5debe3b2-9c63-4d3c-a186-77a62959e18b",
+      "submission_id": "7d564562-574c-41d5-af03-bc61d08968e7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Rosalyn Gloag, https://ror.org/0384j8v12 University of Sydney Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86182.sa0](https://doi.org/10.7554/eLife.86182.sa0)\n\nThis important study reveals the genetic regulation of changes in cuticular hydrocarbon profiles in a Hymenopteran insect and links these changes with courtship behaviour and sexual attractiveness. It provides convincing empirical evidence, spanning genetic, chemical, and behavioural data. It adds valuable new perspectives on the mechanisms that underlie chemical recognition and communication systems in nature.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Rosalyn Gloag, https://ror.org/0384j8v12 University of Sydney Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86182.sa1](https://doi.org/10.7554/eLife.86182.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Decoding the genetic and chemical basis of sexual attractiveness in parasitic wasps\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Claude Desplan as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Improved clarity of statistical tests, in line with comments made by Reviewers.\n\n2) A revised discussion of the results in males, in line with comments made by Reviewers.\n\nYou are encouraged to also consider the various other comments by reviewers when making your revision.\n\nReviewer #1 (Recommendations for the authors):\n\nL127: Make it clearer that the 13.44% refers to Methyl position 3 and 47.5% to position 5 also indicate if you state the median or mean, adding standard deviation would further help to add context.\n\nFigure 2B (and 4C and S2A). The changes in proportion are hard to compare between treatments from a stacked barplot. Consider showing the different compound classes rather in a side-by-side boxplot for each compound class across the 3 treatments.\n\nLine 140: I don't agree that the pattern is similar in males. Unlike females, in Fas5 males there is also an increase in alkanes and a lack of change in 3Me and 9+Me at least between the two mutants. This has to be reworded and addressed accordingly. The lack of such results also contradicts to some extent your main conclusions in Line 200. If Fas5 regulates the up and down regulation of methyl groups at positions 3 and 5 differently than position 7+ why do you not see this pattern in males? The same problem is repeated in Line 268, you do not show the same effect for both sexes.\n\nLine 226: Do you not mean \"alkene fraction\" instead of \"MB fraction\"?\n\nL127: In figures 2C-F you show absolute amounts but in the main text you refer to relative abundances, why not use only one form of measurement for consistency?\n\nL127: You refer to GFP RNAi females and later on you refer to GFP controls, if this is the same try to be consistent with your language.\n\nFigure S1B does not seem to be mentioned in the main text, consider removing it.\n\nThe data availability for the raw data in Line 457 does not seem to work.\n\nStats:\n\nOverall the Manuscript lacks any kind of detailed explanation of the statistical methods used nor are there any detailed statistical results mentioned throughout the manuscript. This makes it impossible to check if the significant differences mentioned in the manuscript are genuinely present, if the multiple comparisons are applied in a meaningful way, or if the used tests are appropriate for the distribution of the data (is the data parametric? Did they test for homogeneity of variance?). How was a Mann Whitney U test conducted on a GC figure (Figure 2A)? I strongly suggest the authors revise the statistics section with a much more thorough reporting of the tests used and their results before being able to properly evaluate the reported results.\n\nFor instance (but not limited to):\n\nIn Figure 2A: why did you not conduct an ANOVA to first test against general differences across groups and follow it up by a MANOVA (or similar) to test for significant differences across groups? A Random Forest analysis could also have elucidated the major compounds driving the differences across groups in a more statistically robust manner. I am also surprised that a standard method of illustrating differences across CHC groups (a PCA or NMDS) was not used in this study.\n\nLine 644: why was a Mann Whitney U test directly performed (a posthoc test) and not a Kruskal Wallis test, or similar, for a first comparison across groups?\n\nTable S2: While Table S2 states a detailed list of all the compounds it does not list any information on the stats.\n\nFigure S3 How were the survival probabilities calculated? Considering the very low amount of data per treatment (N=10) maybe showing a true mortality curve with the real data would be more informative rather than trying to plot a model over it.\n\nReviewer #2 (Recommendations for the authors):\n\nKnockdown methods: this sounds like the amount of solution that was injected was not quantified and only standardized visually using the food dye? Please specify.\n\nI did not understand how the apparatus for the dummy experiments worked.\n\nFigure 2: I found it confusing that the order of compound types in the chart is the opposite of that in the legend (in B).\n\nSurvival analysis: relatively low sample size although I agree there is no indication that the knockdown affects survival under any condition.\n\nTable S2: indicate what statistics were used for testing significant changes in the individual substances. Correction for multiple testing?\n\nThere are a couple of small typos throughout the manuscript.\n\nReviewer #3 (Recommendations for the authors):\n\nI would suggest the authors display current Figure 2 C to G as a supplementary figure and rather display the equivalent figures displaying the ratio of the compounds in the total blends (as in Figure 2.B, but showing individual variability). More generally I would encourage the authors to show data points (i.e. using partly transparent dots) for all of their figures for which the number of replicates is not too high. See: Weissgerber, T. L. et al. 2019 \u00ab Reveal, Don't Conceal \u00bb Circulation.\n\nThe authors provide convincing evidence that CHCs modification induced by their RNAi experiment does not alter the resistance of females to desiccation. However, they do not present the results in the methods section and refer to the data supporting this conclusion in the discussion and methods sections only. I believe the authors should briefly present the results regarding the desiccation experiments in the Results section.\n\nLine 248 to 252, the authors compare the sexual attractiveness they observed with the one conveyed through female sex pheromones in moths. While their sentence is not wrong, I think it conveys a wrong message. In moths, female sex pheromones attract males usually through one or a few necessary and sufficient compounds. This attraction is further modulated (positively or negatively) by other compounds in the blends and their ratio. I would suggest the authors convey more clearly this in this part of the discussion.\n",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1c95871b-1af1-437a-b1e4-bae7e0e1133d",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C1",
+      "claim": "Chemical signaling has permeated through all taxa of life as the earliest and most widespread form of communication.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemical signaling has permeated through all taxa of life as the earliest and most widespread form of communication and is particularly prevalent in insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about chemical signaling supported by established scientific knowledge in the field of chemical communication.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "22d211b5-ee65-4ce7-b316-1f0e8ec7d877",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C2",
+      "claim": "Chemical signaling is particularly prevalent in insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemical signaling has permeated through all taxa of life as the earliest and most widespread form of communication and is particularly prevalent in insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established scientific knowledge about insect communication systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "3eb72de9-9ffd-4fc7-8072-13f0f88dbdb6",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C3",
+      "claim": "Insects have exploited chemical signaling as their primary mode of communication.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly insects have exploited this type of signaling as their primary mode of communication (Buellesbach et al., 2018a; Greenfield, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "9cb19564-752c-48a1-a1b7-076c21f6e92b",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C4",
+      "claim": "Cuticular hydrocarbons (CHCs) are major components on the epicuticle of insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Cuticular hydrocarbons (CHCs), major components on the epicuticle of insects, are capable of chemically encoding and conveying a wide variety of biologically relevant information (Blomquist and Ginzel, 2021; Blomquist and Bagn\u00e8res, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature on insect CHCs.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "82337eb7-09d0-4dfe-9f2b-3a08277acb9c",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C5",
+      "claim": "CHCs are capable of chemically encoding and conveying a wide variety of biologically relevant information.",
+      "claim_type": "EXPLICIT",
+      "source": "Cuticular hydrocarbons (CHCs), major components on the epicuticle of insects, are capable of chemically encoding and conveying a wide variety of biologically relevant information (Blomquist and Ginzel, 2021; Blomquist and Bagn\u00e8res, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research on CHC functions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "89f5855c-cf70-4d0d-ae17-7500edc2c791",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C6",
+      "claim": "CHCs play pivotal roles in sexual communication as the main cues to attract and elicit courtship from conspecific mates.",
+      "claim_type": "EXPLICIT",
+      "source": "Most prominently, CHCs have been shown to play pivotal roles in sexual communication as the main cues to attract and elicit courtship from conspecific mates (W\u00fcrf et al., 2020; Finck et al., 2016b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "3a316f08-553d-4f87-9ecb-595d9126d513",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C7",
+      "claim": "CHCs enable discrimination of con- from heterospecific mating partners.",
+      "claim_type": "EXPLICIT",
+      "source": "to enable discrimination of con- from heterospecific mating partners (Shahandeh et al., 2018; Xue et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "762d482f-5044-47bf-b6e6-58ee6ff1a9a0",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C8",
+      "claim": "CHCs signal receptivity and mating status.",
+      "claim_type": "EXPLICIT",
+      "source": "and to signal receptivity and mating status (Berson and Simmons, 2019; Simmons, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "b6df7a02-f206-48e1-a4dc-af0f68f7f3ba",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C9",
+      "claim": "The CHC biosynthetic pathway consists of the elongation of fatty-acyl-Coenzyme A units to produce very long-chain fatty acids that are subsequently converted to CHCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In short, the CHC biosynthetic pathway consists of the elongation of fatty-acyl-Coenzyme A units to produce very long-chain fatty acids that are subsequently converted to CHCs (Blomquist and Bagn\u00e8res, 2010; Nelson and Blomquist, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research on CHC biosynthesis.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "76a239d2-acac-4ceb-96b1-96bcdff2aee4",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C10",
+      "claim": "The incorporation of malonyl-CoA or methyl-malonyl-CoA leads to the production of straight-chain (n-) or methyl-branched (MB-) alkanes, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "An important early switch in CHC biosynthesis is either the incorporation of malonyl-CoA or methyl-malonyl-CoA, eventually leading to the production of straight-chain (n-) or methyl-branched (MB-) alkanes, respectively (Holze et al., 2021; Nelson and Blomquist, 1995, Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations and reference to Figure 1 showing the biosynthetic pathway.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "4442bc01-b86a-4762-bb99-e82cd5ae468c",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C11",
+      "claim": "These processes are mediated by two types of fatty-acyl-synthases (FAS), microsomal for methylmalonyl-CoA and cytosolic for malonyl-CoA.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been hypothesized that these processes are mediated by two types of fatty-acyl-synthases (FAS), microsomal for methylmalonyl-CoA and cytosolic for malonyl-CoA (Gu et al., 1997; Ju\u00e1rez et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a hypothesis supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "aa4d5f36-dd45-4bb1-983c-0b4f3f5c5dbc",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C12",
+      "claim": "Desaturases introduce double bonds into straight-chain CHC precursors to produce olefins.",
+      "claim_type": "EXPLICIT",
+      "source": "To produce olefins (mono- and poly-unsaturated CHCs), desaturases introduce double bonds into straight-chain CHC precursors (Blomquist and Bagn\u00e8res, 2010; Holze et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "606111c1-29ba-4e34-96cd-3957c0ed4414",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C13",
+      "claim": "In Drosophila, two desaturases (Desat1 and DesatF) and one elongase (eloF) are involved in female diene production.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, two desaturases (Desat1 and DesatF) and one elongase (eloF) are involved in female diene production and consequently in their functionality as main sex pheromonal compounds (Chertemps et al., 2007; Chertemps et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research on Drosophila.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "722ae26f-9814-4687-bb3d-bdb36f659747",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C14",
+      "claim": "In D. serrata, the male-specific D. melanogaster orthologue FASN2 affects the biosynthesis of three MB-CHCs, including the female mating stimulant 2-Me-C26.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in the Australian congeneric species D. serrata, the male-specific D. melanogaster orthologue FASN2 has been shown to affect the biosynthesis of three MB-CHCs, among them the additional female mating stimulant 2-Me-C26 (Wicker-Thomas et al., 2015; Chung et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "f1c9e2eb-7e97-4ad4-b24f-a0f5f2abbfeb",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C15",
+      "claim": "Female CHCs serve as sexual cues capable of eliciting male courtship and copulation behavior in N. vitripennis.",
+      "claim_type": "EXPLICIT",
+      "source": "Female CHCs serve as sexual cues capable of eliciting male courtship and copulation behavior in N. vitripennis (Buellesbach et al., 2018b; Steiner et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research on N. vitripennis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "f3a06ff6-1840-4195-9e23-105f81a40565",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C16",
+      "claim": "The CHC profiles of N. vitripennis females exhibit a high complexity, consisting of a mixture of n-alkanes, n-alkenes, and MB-alkanes in various quantities.",
+      "claim_type": "EXPLICIT",
+      "source": "The CHC profiles of N. vitripennis females exhibit a high complexity, consisting of a mixture of n-alkanes, n-alkenes, and MB-alkanes in various quantities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statement about the composition of N. vitripennis CHC profiles, supported by established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "058d1b1a-5809-4f26-b541-ab7c1282a9a4",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C17",
+      "claim": "The MB-alkane fraction makes up more than 85% of the whole N. vitripennis female CHC profile.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the latter fraction, which makes up more than 85% of the whole profile, displays a rich diversity in methyl-branch numbers, chain lengths, and respective relative abundances, hinting at a considerable potential for encoding differential information (Buellesbach et al., 2013; Steiner et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "d3e30db0-edd9-4f92-8362-a9c5dbcfb0a6",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C18",
+      "claim": "Knockdown of fas5 significantly reduced the gene expression of fas5 in adult N. vitripennis wasps.",
+      "claim_type": "EXPLICIT",
+      "source": "The results revealed a significant reduction in the relative expression of our target gene fas5 compared to the control groups (Figure 2H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "ff58677a-33d6-4500-b054-5333cf5e44cd",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C19",
+      "claim": "The expression of fas6 was significantly downregulated in fas5 dsRNAi knockdown individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the expression of fas6, a previously uncharacterized fas gene, was also significantly downregulated in our fas5 dsRNAi knockdown individuals (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "85c03862-6194-4349-a1ba-c836c6b57264",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C20",
+      "claim": "24% of 19-mers from the fas5 dsRNA sequence matched to the fas6 transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "The dsRNAi off-target analysis showed that 24% of 19-mers from the fas5 dsRNA sequence matched to the fas6 transcript.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational analysis of dsRNA sequences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "942f085c-e8b6-41e6-9124-bb0761e8cfb1",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C21",
+      "claim": "fas6 is localized next to fas5 in the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, fas6 is localized next to fas5 and shares high sequence similarity with the latter (90.95% at the mRNA and 88.06% at the amino acid level) (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by genomic data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "1ba44184-7a56-4c89-a81b-96b6c7622c59",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C22",
+      "claim": "fas6 shares 90.95% sequence similarity with fas5 at the mRNA level.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, fas6 is localized next to fas5 and shares high sequence similarity with the latter (90.95% at the mRNA and 88.06% at the amino acid level) (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence analysis data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "7287a13e-9c34-4742-8c48-09460f634b1a",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C23",
+      "claim": "fas6 shares 88.06% sequence similarity with fas5 at the amino acid level.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, fas6 is localized next to fas5 and shares high sequence similarity with the latter (90.95% at the mRNA and 88.06% at the amino acid level) (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence analysis data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "7a1c5595-f265-488e-ac2d-bebb0b015be5",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C24",
+      "claim": "fas5 and fas6 evolved by tandem gene duplication.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that both genes evolved by tandem gene duplication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the genomic location and sequence similarity data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "76210adb-8685-4df5-b2ae-54e84a2407e0",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C25",
+      "claim": "DsRNAi micro-injection into female N. vitripennis at the pupal stage resulted in a striking CHC profile shift in adult females.",
+      "claim_type": "EXPLICIT",
+      "source": "DsRNAi micro-injection into female N. vitripennis at the pupal stage resulted in a striking CHC profile shift in adult females, most prominently displayed in altered MB-alkane patterns (Figure 2A, B, Supplementary file 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A, B and Supplementary file 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "b14046c0-ea1c-4766-9c05-db788bf7ea04",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C26",
+      "claim": "fas5 knockdown significantly increased the absolute quantities of MB-alkanes with their first methyl branches positioned on the 3rd C-atom in females.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, fas5 knockdown significantly increased the absolute quantities (ng) of MB-alkanes with their first methyl branches positioned on the 3rd (35.07 \u00b1 9.47) and 5th (96.34 \u00b1 33.22) C-atom, compared to both WT (wild type) (24.08 \u00b1 5.6 and 40.06 \u00b1 11.79) and GFP (green fluorescent protein) RNAi females (24.75 \u00b1 7.58 and 40.19 \u00b1 12.37), respectively (Figure 2C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "57c814d6-60f1-420c-b197-8bb2aeaedea0",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C27",
+      "claim": "fas5 knockdown significantly increased the absolute quantities of MB-alkanes with their first methyl branches positioned on the 5th C-atom in females.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, fas5 knockdown significantly increased the absolute quantities (ng) of MB-alkanes with their first methyl branches positioned on the 3rd (35.07 \u00b1 9.47) and 5th (96.34 \u00b1 33.22) C-atom, compared to both WT (wild type) (24.08 \u00b1 5.6 and 40.06 \u00b1 11.79) and GFP (green fluorescent protein) RNAi females (24.75 \u00b1 7.58 and 40.19 \u00b1 12.37), respectively (Figure 2C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "da18ccd1-442e-48d0-b891-fdacd1496488",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C28",
+      "claim": "MB-alkanes with their first methyl branches on the 7th C-atom position significantly decreased in fas5 knockdown females compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, MB-alkanes with their first methyl branches on the 7th C-atom position significantly decreased in fas5 knockdowns (5.27 \u00b1 2.02) compared to WT (34.3 \u00b1 11.92) and GFP RNAi females (40.15 \u00b1 17.1) (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "ade37b3a-96ba-49be-82fb-cb1001f44e00",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C29",
+      "claim": "MB-alkanes with their first methyl branches mainly positioned on the 9th, 11th, 13th, and 15th C-atoms significantly decreased in fas5 RNAi females compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Other MB-alkanes with their first methyl branches mainly positioned on the 9th, 11th, 13th, and 15th also significantly decreased in fas5 RNAi females (46.88 \u00b1 11.67) as opposed to WT (94.87 \u00b1 30.47) and GFP RNAi females (106.19 \u00b1 40.39) (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "f3e9f942-ac6a-497c-97c7-b884543b9018",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C30",
+      "claim": "Overall MB-alkane quantities remained stable in fas5 knockdown females compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, overall MB-alkane, n-alkane as well as total CHC quantities remained stable in fas5 knockdown females compared to the controls, respectively, with no significant changes (Figure 2G, Figure 2\u2014figure supplement 3A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2G and Figure 2\u2014figure supplement 3A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "67c18046-a9e1-407b-b0ab-3d7814fca33b",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C31",
+      "claim": "n-alkane quantities remained stable in fas5 knockdown females compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, overall MB-alkane, n-alkane as well as total CHC quantities remained stable in fas5 knockdown females compared to the controls, respectively, with no significant changes (Figure 2G, Figure 2\u2014figure supplement 3A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "a747cfe4-9862-47cd-9fa3-194f26a0eb14",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C32",
+      "claim": "Total CHC quantities remained stable in fas5 knockdown females compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, overall MB-alkane, n-alkane as well as total CHC quantities remained stable in fas5 knockdown females compared to the controls, respectively, with no significant changes (Figure 2G, Figure 2\u2014figure supplement 3A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "2936c380-b14f-403a-815d-6ca7e1ab9a60",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C33",
+      "claim": "n-alkene quantities increased significantly in fas5 RNAi females compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, n-alkene quantities, generally only occurring in negligible quantities in N. vitripennis females (Buellesbach et al., 2022), also increased significantly in fas5 RNAi females (8.74 \u00b1 3.52) compared to WT (2.09 \u00b1 0.94) and GFP RNAi females (2.33 \u00b1 0.85) (Figure 2\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "a3407885-4f82-4ecb-a1b2-63cd29ae8923",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C34",
+      "claim": "Similar proportions of males showed antennation toward alive fas5 RNAi, GFP RNAi, and WT females.",
+      "claim_type": "EXPLICIT",
+      "source": "Fas5 RNAi and control (WT and GFP) females elicited antennation from similar proportions of males, while a significantly reduced proportion of males performed courtship and copulation toward fas5 RNAi females (~50%) compared to controls (~90%) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral assay data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "45380288-a619-46e9-8bf6-6b2848b3cb07",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C35",
+      "claim": "A significantly reduced proportion of males performed courtship toward fas5 RNAi females (~50%) compared to controls (~90%).",
+      "claim_type": "EXPLICIT",
+      "source": "Fas5 RNAi and control (WT and GFP) females elicited antennation from similar proportions of males, while a significantly reduced proportion of males performed courtship and copulation toward fas5 RNAi females (~50%) compared to controls (~90%) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral assay data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "556bea94-8899-4542-bb4e-51ab811a4837",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C36",
+      "claim": "A significantly reduced proportion of males performed copulation toward fas5 RNAi females (~50%) compared to controls (~90%).",
+      "claim_type": "EXPLICIT",
+      "source": "Fas5 RNAi and control (WT and GFP) females elicited antennation from similar proportions of males, while a significantly reduced proportion of males performed courtship and copulation toward fas5 RNAi females (~50%) compared to controls (~90%) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral assay data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "07423708-516c-44ba-97b7-fa58e887490a",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C37",
+      "claim": "70% of the males rejected fas5 RNAi females at least once, a behavior which was not present at all toward control females.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, 70% of the males rejected fas5 RNAi females at least once, a behavior which was not present at all toward control females (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral assay data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "8483ce04-1b05-4ee5-8c9a-7dbb7ccd9f46",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C38",
+      "claim": "Significantly fewer males performed courtship toward freeze-killed fas5 RNAi females (~10%) compared to both controls (>75%).",
+      "claim_type": "EXPLICIT",
+      "source": "However, significantly fewer males performed courtship and copulation behavior toward freeze-killed fas5 RNAi females (~10%, respectively) compared to both controls (>75%, respectively) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral assay data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "f14ef46b-8acc-4c59-909b-bce755c25c24",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C39",
+      "claim": "Significantly fewer males performed copulation behavior toward freeze-killed fas5 RNAi females (~10%) compared to both controls (>75%).",
+      "claim_type": "EXPLICIT",
+      "source": "However, significantly fewer males performed courtship and copulation behavior toward freeze-killed fas5 RNAi females (~10%, respectively) compared to both controls (>75%, respectively) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral assay data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "61e92500-d9b0-46b3-875b-fb63a7931fc4",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C40",
+      "claim": "Significantly less males performed courtship toward female dummies that were cleared of their chemical profiles (0%) and fas5 RNAi-reconstituted dummies (16%), compared to WT (50%) and GFP RNAi-reconstituted (75%) female dummies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, significantly less males performed courtship toward female dummies that were cleared of their chemical profiles (0%) and fas5 RNAi-reconstituted dummies (16%), compared to WT (50%) and GFP RNAi-reconstituted (75%) female dummies (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral assay data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "82b1e78c-4680-4a1e-b210-acc9b954d325",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C41",
+      "claim": "Copulation attempts were initiated by less than 5% of the males toward fas5 RNAi-reconstituted dummies, which is similar to completely cleared dummies (0%).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, copulation attempts were initiated by less than 5% of the males toward fas5 RNAi-reconstituted dummies, which is similar to completely cleared dummies (0%). These numbers were in both cases significantly lower compared to control dummies reconstituted with WT and GFP RNAi profiles (~40%, respectively) (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral assay data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "ca7e5a85-9d95-4f43-848c-c8b971646d7e",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C42",
+      "claim": "The dramatic reduction in female attractiveness in fas5 knockdown females is predominantly mediated by their altered chemical profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that the dramatic reduction in female attractiveness in fas5 knockdown females is predominantly mediated by their altered chemical profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the behavioral assay results with reconstituted CHC profiles.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "a60f5cb0-690e-4aea-a8f3-07c17d936d1c",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C43",
+      "claim": "The MB-alkane fraction of fas5 RNAi females elicited significantly less courtship and copulation attempts from WT males than the MB-alkane fractions of both WT and GFP RNAi females.",
+      "claim_type": "EXPLICIT",
+      "source": "We also reconstituted cleared WT female dummies with the separated MB-alkane fractions and offered them to WT males in further behavioral assays. As in our previous behavioral assays with female dummies and reconstituted whole CHC extracts, the MB-alkane fraction from fas5 RNAi females elicited significantly less courtship and copulation attempts from WT males than the MB-alkane fractions of both WT and GFP RNAi females (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "45479f6f-5d6e-4acf-9293-9ebbba53d95d",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C44",
+      "claim": "Sexual attractiveness appears to be mainly encoded in the MB-alkane fraction of N. vitripennis females.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results demonstrate that sexual attractiveness appears to be mainly encoded in the MB-alkane fraction of N. vitripennis females.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the behavioral assay results with separated MB-alkane fractions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "f3a9a9ba-1348-41cc-a26f-554e1c3f5603",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C45",
+      "claim": "Under both high and medium desiccation stress, there were no significant difference in survival probability between fas5 and GFP RNAi treated males.",
+      "claim_type": "EXPLICIT",
+      "source": "However, under both high and medium desiccation stress, there were no significant difference in survival probability between fas5 and GFP RNAi treated males (Figure 5C, D) and females (Figure 5A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by survival assay data shown in Figure 5C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "29e93974-7cd6-44d6-9b27-1faec0057cb5",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C46",
+      "claim": "Under both high and medium desiccation stress, there were no significant difference in survival probability between fas5 and GFP RNAi treated females.",
+      "claim_type": "EXPLICIT",
+      "source": "However, under both high and medium desiccation stress, there were no significant difference in survival probability between fas5 and GFP RNAi treated males (Figure 5C, D) and females (Figure 5A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by survival assay data shown in Figure 5A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "fb34dc1b-8a06-4564-bf88-13e1d081b16e",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C47",
+      "claim": "Knocking down fas5 and fas6 in N. vitripennis females leads to a consistent pattern of primarily up- and downregulated MB-alkanes with specific branching patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down these two genes in N. vitripennis females leads to a consistent pattern of primarily up- and downregulated MB-alkanes with specific branching patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the experimental data presented throughout the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "ad95bb43-408e-448a-b72f-188c3796a2e6",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C48",
+      "claim": "The dramatic shift in CHC profiles is accompanied by a significant reduction of courtship and copulation behavior toward knockdown females by conspecific males.",
+      "claim_type": "EXPLICIT",
+      "source": "This dramatic shift is accompanied by a significant reduction of courtship and copulation behavior toward knockdown females by conspecific males which we demonstrate to be mainly determined by the altered MB-alkane fraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the behavioral assay data presented in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "0ad45172-ad90-44c6-92d6-03e56f47bd4c",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C49",
+      "claim": "The reduction in courtship and copulation behavior is mainly determined by the altered MB-alkane fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "This dramatic shift is accompanied by a significant reduction of courtship and copulation behavior toward knockdown females by conspecific males which we demonstrate to be mainly determined by the altered MB-alkane fraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the behavioral assay data with separated MB-alkane fractions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "faafcc8b-438d-489b-be5b-a2f307014e4e",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C50",
+      "claim": "Overall CHC quantities do not differ between knockdown and control individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, overall CHC quantities do not differ between knockdown and control individuals (Figure 2\u2014figure supplement 3A), suggesting a very specific regulatory function for fas5/fas6 in governing these opposing and potentially compensatory branching patterns.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "e2255ec0-2a5c-42b1-99e8-c58a3f49a700",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C51",
+      "claim": "fas5/fas6 have a very specific regulatory function in governing opposing and potentially compensatory branching patterns.",
+      "claim_type": "IMPLICIT",
+      "source": "Intriguingly, overall CHC quantities do not differ between knockdown and control individuals (Figure 2\u2014figure supplement 3A), suggesting a very specific regulatory function for fas5/fas6 in governing these opposing and potentially compensatory branching patterns.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that total CHC quantities remain stable while specific branching patterns change dramatically.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "2168a668-b181-4751-af26-3f1e55e93eb6",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C52",
+      "claim": "The wild type MB-alkane branching patterns play a pivotal role in encoding and maintaining the attractiveness of female N. vitripennis CHC profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Concordantly, this emphasizes the pivotal role of both these particular genes and the wild type MB-alkane branching patterns in encoding and maintaining the attractiveness of female N. vitripennis CHC profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined genetic and behavioral data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "eb4e70d1-f75d-49f2-9ce5-17ee9b2591c3",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C53",
+      "claim": "There are sex-specific differences in the knockdown effects on the different CHC compound classes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, there appear to be a number of sex-specific differences in the knockdown effects on the different CHC compound classes, most notably apparent in significant upregulations of both total and n-alkane CHC quantities in knockdown males as opposed to females and partially differentially affected MB-alkane quantities (compare Figure 2 to Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparing experimental data between males and females shown in Figure 2 and Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "adc7bee1-4a57-4cfb-a334-e9967de37345",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C54",
+      "claim": "GFP dsRNAi appears to have a generally upregulating effect as opposed to WT controls despite for n-alkene quantities in males.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, GFP dsRNAi appears to have a generally upregulating effect as opposed to WT controls despite for n-alkene quantities in males, which has not been reported before.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the experimental data comparing GFP dsRNAi to WT controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "ae5d9353-d566-48a5-9bf7-61388ac42946",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C55",
+      "claim": "A recent study hints at potential off-target effects of GFP dsRNAi on a small subset of N. vitripennis genes mainly involved in microtubule and sperm development.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a recent study hints at potential off-target effects of GFP dsRNAi on a small subset of N. vitripennis genes mainly involved in microtubule and sperm development (Rougeot et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "9087eae4-2506-4610-809e-961c96ed276b",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C56",
+      "claim": "The expressions of fas1 and fas2 gene transcripts are significantly upregulated in the GFP dsRNAi controls, exclusively in males.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this appears to be also the case for the expressions of fas1 and fas2 gene transcripts, which are significantly upregulated in the GFP dsRNAi controls, again exclusively in males (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "ff84fb38-53d7-40fa-b0da-8598e16ab58f",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C57",
+      "claim": "CHC-based sexual signaling mechanisms in D. melanogaster have long been assumed to be comparatively simple, mainly mediated by two doubly unsaturated dienes in females and a mono-unsaturated n-alkene in males.",
+      "claim_type": "EXPLICIT",
+      "source": "Based mainly on research on the latter, CHC-based sexual signaling mechanisms have long been assumed to be comparatively simple, mainly mediated by two doubly unsaturated dienes in females and a mono-unsaturated n-alkene in males (Marcillac and Ferveur, 2004; Grillet et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research on Drosophila.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "ae940ab6-4522-412a-b392-9b2adf1cfe97",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C58",
+      "claim": "Experimental evidence has accumulated that other CHC compounds can also complement sexual signaling in Drosophila in various ways.",
+      "claim_type": "EXPLICIT",
+      "source": "However, experimental evidence has accumulated that other CHC compounds can also complement sexual signaling in Drosophila in various ways (Chung et al., 2014; Everaerts et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "27ceb3b3-39a6-472a-bf0a-e84640c16fc0",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C59",
+      "claim": "In the genus Nasonia and other related parasitoid wasp species, it has been assumed that sexual attractiveness is a trait attributed to their entire CHC profile as either present or absent.",
+      "claim_type": "EXPLICIT",
+      "source": "In the genus Nasonia and other related parasitoid wasp species, it has so far been assumed that sexual attractiveness is a trait attributed to their entire CHC profile as either present or absent depending on the studied species and also potentially reinforced by other factors such as polar cuticular compounds (Buellesbach et al., 2013; Mair et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "daf99946-e0d5-4992-bb5f-dab97e3fa92d",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C60",
+      "claim": "CHC-mediated sexual attractiveness is primarily conveyed through a relatively complex chemical pattern with a comparatively simple genetic basis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study clearly shows that CHC-mediated sexual attractiveness is primarily conveyed through a relatively complex chemical pattern with a comparatively simple genetic basis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion inferred from the combined genetic and chemical data presented in the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "27b5df4f-1630-428c-8208-8447644805b1",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C61",
+      "claim": "n-alkenes have a repellent effect on N. vitripennis males, preventing them from engaging in homosexual courtship behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, knockdown of fas5 also upregulated n-alkene quantities (Figure 2\u2014figure supplement 3C), which have recently been shown to have a repellent effect on N. vitripennis males, preventing them from engaging in homosexual courtship behavior (Wang et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "7c5be085-e37d-43d6-9577-6efcb2e5d81a",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C62",
+      "claim": "The CHC compound class separation greatly reduced the increased proportion of n-alkenes in fas5 knockdown females to levels almost equivalent to those found in wild type females.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our CHC compound class separation greatly reduced the increased proportion of n-alkenes in fas5 knockdown females to levels almost equivalent to those found in wild type females (0.94% and 0.91 %, respectively, in the extract of fas5 and WT MB fractions, compare Figure 4\u2014source data 1 to Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data comparing CHC profiles before and after separation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "37cb1af0-ff3e-4464-a19d-705d1030e717",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C63",
+      "claim": "The contribution of n-alkenes to the sharp reduction in sexual attractiveness in fas5 knockdown females is unlikely.",
+      "claim_type": "EXPLICIT",
+      "source": "This renders the contribution of n-alkenes to the sharp reduction in sexual attractiveness in fas5 knockdown females unlikely and strongly suggests that the female sexual signaling function is mainly mediated by MB-alkanes (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that n-alkene levels are reduced to near-normal levels after separation, yet the behavioral effect persists.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "7e7250d7-97ab-4d16-a8ed-689a2ba84c2f",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C64",
+      "claim": "MB-alkanes possess the highest potential for encoding a wide variety of chemical information through the myriad of possible positions and numbers of methyl branches.",
+      "claim_type": "EXPLICIT",
+      "source": "We argue that this CHC compound class indeed possesses the highest potential for encoding a wide variety of chemical information through the myriad of possible positions and numbers of methyl branches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative argument based on the structural diversity of MB-alkanes.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "c5e22dcd-0889-4717-b41a-8210c0c363ed",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C65",
+      "claim": "A couple of studies have hinted at MB-alkanes as the main carriers for chemical information in insect CHC profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, a couple of studies have already hinted at MB-alkanes as the main carriers for chemical information in insect CHC profiles, providing evidence for the involvement of MB-alkanes in chemical communication processes (Spikes et al., 2010; Holman et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "6151b17f-6ff1-4e69-af8d-703532054d73",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C66",
+      "claim": "MB-alkanes constitute the dominant fraction in Nasonia CHC profiles (>85%).",
+      "claim_type": "EXPLICIT",
+      "source": "In direct comparison, MB-alkanes constitute the dominant fraction in Nasonia CHC profiles (>85%) (Buellesbach et al., 2022) as opposed to Drosophila profiles (16\u201324%) (Dembeck et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "655b48b1-9288-412c-8bf6-dd612e160e9b",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C67",
+      "claim": "MB-alkanes constitute 16\u201324% of Drosophila CHC profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "In direct comparison, MB-alkanes constitute the dominant fraction in Nasonia CHC profiles (>85%) (Buellesbach et al., 2022) as opposed to Drosophila profiles (16\u201324%) (Dembeck et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "131cb887-9013-490f-a27f-3468b007fd73",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C68",
+      "claim": "The split between Hymenoptera and other holometabolous insects including Diptera has been estimated to have occurred 327 mya.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the split between Hymenoptera and other holometabolous insects including Diptera has been estimated to have occurred 327 mya (Misof et al., 2014), fundamental shifts in basic properties of both surface profile compositions and chemical signaling functionalities might be expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "50a37774-add9-4dd5-b74e-dc7dcd63ea03",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C69",
+      "claim": "In solitary Hymenoptera CHCs can function as contact sex pheromones.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, whereas in solitary Hymenoptera CHCs can function as contact sex pheromones, they are prominent and fundamental nestmate and caste recognition cues in eusocial Hymenoptera (Buellesbach et al., 2018b; Vereecken et al., 2007; Leonhardt et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "1be193f0-7b5d-4086-ba63-b726683b0f58",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C70",
+      "claim": "In eusocial Hymenoptera CHCs are prominent and fundamental nestmate and caste recognition cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, whereas in solitary Hymenoptera CHCs can function as contact sex pheromones, they are prominent and fundamental nestmate and caste recognition cues in eusocial Hymenoptera (Buellesbach et al., 2018b; Vereecken et al., 2007; Leonhardt et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "e5df3676-69f4-45fe-a1db-7fbe2010b0d6",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C71",
+      "claim": "fas5 has been annotated as a homolog to FASN3 in D. melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "Concerning gene orthology, fas5 has been annotated as a homolog to FASN3 in D. melanogaster (Buellesbach et al., 2022; Lammers et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "a0d6a17d-c617-47f8-bd52-88da24c64c1f",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C72",
+      "claim": "Knockdowns of FASN3 alone do not induce any compound changes in D. melanogaster CHC profiles but increase the flies' sensitivity to desiccation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, knockdowns of FASN3 alone do not induce any compound changes in D. melanogaster CHC profiles but increase the flies' sensitivity to desiccation (Wicker-Thomas et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "2770557b-8b1b-4453-a528-84975cb45315",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C73",
+      "claim": "A FASN3 ortholog expressed in the kissing bug Rhodinius prolixus contributes to desiccation resistance, but simultaneously downregulates MB- while upregulating straight-chain alkanes.",
+      "claim_type": "EXPLICIT",
+      "source": "A FASN3 ortholog expressed in the kissing bug Rhodinius prolixus also contributes to desiccation resistance, but simultaneously downregulates MB- while upregulating straight-chain alkanes (Moriconi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "ccde50f0-23fa-47b5-9b02-cce9ac6696e2",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C74",
+      "claim": "In the migratory locust Locusta migratoria, silencing two FAS genes decreased insect survival under desiccation stress while altering the amounts of both MB- and straight-chain alkanes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in the migratory locust Locusta migratoria, silencing two FAS genes decreased insect survival under desiccation stress while altering the amounts of both MB- and straight-chain alkanes (Yang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "5569b304-c2f0-47f3-8db1-ac25474ae7c4",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C75",
+      "claim": "fas5 has no functionality in desiccation resistance in both N. vitripennis males and females.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to these studies, we were not able confirm any functionality in desiccation resistance for fas5 in both N. vitripennis males and females (Figure 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "d6254907-c08f-412d-abe1-b995db863d09",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C76",
+      "claim": "FASN1 in D. melanogaster is responsible for overall CHC production with no specific effects on any particular compound classes.",
+      "claim_type": "EXPLICIT",
+      "source": "There are two additional FAS genes characterized in D. melanogaster: FASN1, which is responsible for overall CHC production with no specific effects on any particular compound classes (Wicker-Thomas et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "6e35297e-f164-4631-8e9f-a48ba817fca5",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C77",
+      "claim": "FASN2 in D. melanogaster exclusively regulates MB-alkane production in males.",
+      "claim_type": "EXPLICIT",
+      "source": "and FASN2, which exclusively regulates MB-alkane production in males (Chung et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "34ed4cd9-c185-4e0b-96f3-e27108eada56",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C78",
+      "claim": "The main impact on MB-alkane variations of FASN2 in D. melanogaster is comparable to that of fas5 in N. vitripennis, with the exception that effects were documented for both sexes in N. vitripennis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although not a direct homolog, the main impact on MB-alkane variations of FASN2 in D. melanogaster is comparable to that of fas5 in N. vitripennis, with the exception that we were able to document effects on this compound class for both sexes (compare Figure 2 and Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative statement based on the current study's data and previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "b2d58374-43fc-43dd-9200-58e62c9a525a",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C79",
+      "claim": "FAS genes have been implied as instrumental for generating the huge diversity of different CHC profiles across insects, with high evolutionary turnover rates and differences in the specific functional recruitments of FAS gene family members.",
+      "claim_type": "EXPLICIT",
+      "source": "FAS genes have been implied as instrumental for generating the huge diversity of different CHC profiles across insects, with high evolutionary turnover rates and differences in the specific functional recruitments of FAS gene family members (Finck et al., 2016a; Moriconi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "9f92c71f-4d5f-4704-9b9a-d4ac94388b0e",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C80",
+      "claim": "FAS genes have been documented to be involved in a wide variety of other physiological processes, ranging from lipogenesis to diapause induction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, FAS genes are far from restricted to impact CHC biosynthesis alone and have been documented to be involved in a wide variety of other physiological processes, ranging from lipogenesis to diapause induction (Tan et al., 2017; Lammers et al., 2019; Moriconi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "6be58808-b3d6-4a63-b3e6-83afa4b7f982",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C81",
+      "claim": "fas5 has a very specific affinity for particular methyl-branching patterns, potentially originating in an enzymatic preference for methyl-malonyl-CoA predecessors with pre-existing branching patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study suggests a very specific affinity of fas5 for particular methyl-branching patterns, potentially originating in an enzymatic preference for methyl-malonyl-CoA predecessors with pre-existing branching patterns (Blomquist and Bagn\u00e8res, 2010; Nelson and Blomquist, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the study's findings, supported by citations to previous research on CHC biosynthesis.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "2fd36511-573d-4631-8e56-429b03761412",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C82",
+      "claim": "fas5 and fas6 show similarly high expression patterns in wild type N. vitripennis wasps.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, both of these genes show similarly high expression patterns in wild type N. vitripennis wasps (Figure 2H and Figure 2\u2014figure supplement 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2H and Figure 2\u2014figure supplement 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "88805a69-a3a8-4cda-a984-7e627655bc5a",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C83",
+      "claim": "fas5 and fas6 originated from a tandem gene duplication event and therefore constitute paralogs of the D. melanogaster FASN3.",
+      "claim_type": "EXPLICIT",
+      "source": "This basically implies that these two genes originated from a tandem gene duplication event and therefore constitute paralogs of the D. melanogaster FASN3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the genomic location, sequence similarity, and expression data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "3a1ffaa8-4531-4de8-889f-31a5fa06554a",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C84",
+      "claim": "It cannot be stated at this point whether either one of fas5 or fas6 alone or both are responsible for the observed phenotypic changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we cannot state at this point whether either one of these two genes alone or both are responsible for the observed phenotypic changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement acknowledging the limitation of the current study due to off-target effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "c99a9703-5e91-4e55-8a92-825532e1e26d",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C85",
+      "claim": "In N. vitripennis males, the production of a lactone functioning in a long-range pheromonal blend was unambiguously attributed to three short-chain dehydrogenase/reductase genes with high sequence similarity, which could not be targeted independently by dsRNAi knockdowns.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this mirrors a similar finding in N. vitripennis males concerning the biosynthesis of a lactone functioning in a long-range pheromonal blend attractive to virgin females (Niehuis et al., 2013). The production of this compound was unambiguously attributed to three short-chain dehydrogenase/reductase genes with high sequence similarity, which could also not be targeted independently by dsRNAi knockdowns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "799dfc8d-5b1d-44c3-9eb0-54399ed4422b",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C86",
+      "claim": "fas5 and fas6 are the first identified hymenopteran genes with a specific effect on MB-alkane ratios that simultaneously impact sexual attractiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "To the best of our knowledge, these are the first identified hymenopteran genes with a specific effect on MB-alkane ratios that simultaneously impact sexual attractiveness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the study's findings and comparison to existing literature.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "c39e106c-bbb7-43fc-9311-ca26eb727bff",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C87",
+      "claim": "The standard laboratory strain AsymCX of N. vitripennis was originally collected in Leiden, the Netherlands.",
+      "claim_type": "EXPLICIT",
+      "source": "The standard laboratory strain AsymCX of N. vitripennis, originally collected in Leiden, the Netherlands, was used for all experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the biological material used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "e65fae6b-294b-4558-a377-4f450998e48f",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C88",
+      "claim": "The wasps were reared under 25\u00b0C, in 55% relative humidity and a light:dark cycle of 16:8 hr, leading to a life cycle of ~14 days.",
+      "claim_type": "EXPLICIT",
+      "source": "The wasps were reared under 25\u00b0C, in 55% relative humidity and a light:dark cycle of 16:8 hr, leading to a life cycle of ~14 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "3b9ff5b1-8230-4c48-ac2c-f9516655e6a1",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C89",
+      "claim": "Pupae of Calliphora vomitoria (Diptera: Calliphoridae) were used as hosts for N. vitripennis.",
+      "claim_type": "EXPLICIT",
+      "source": "Pupae of Calliphora vomitoria (Diptera: Calliphoridae) were used as hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "92531731-5123-4dfc-9d2e-d92d6d179aef",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C90",
+      "claim": "GFP (green fluorescent protein) dsRNA presumably has no known targets in the Nasonia genome.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP (green fluorescent protein) dsRNA, which presumably has no known targets in the Nasonia genome (Rougeot et al., 2021), was used as a control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous research, though it is presented as presumptive.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "402d85fa-e063-484c-887f-af81274b9ee1",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C91",
+      "claim": "Acetyl-CoA is converted into malonyl-CoA by the enzyme Acetyl-CoA carboxylase (ACC).",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, acetyl-Coenzyme A (CoA) is converted into malonyl-CoA by the enzyme Acetyl-CoA carboxylase (ACC).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and represents established knowledge of CHC biosynthesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "4d33b30e-7433-4308-89af-026cb42176a4",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C92",
+      "claim": "Malonyl-CoA subunits are successively incorporated onto the acetyl-CoA primer to form long-chain fatty acids (LCFAs) catalyzed by fatty acid synthase enzymes hypothesized to be subcellularly located in the cytosol (c-FAS).",
+      "claim_type": "EXPLICIT",
+      "source": "Then, further malonyl-CoA subunits are successively incorporated onto the acetyl-CoA primer to form long-chain fatty acids (LCFAs) catalyzed by fatty acid synthase enzymes hypothesized to be subcellularly located in the cytosol (c-FAS).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and represents established knowledge with a hypothesized subcellular location.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "2dd94b55-374e-40e6-8be4-c4517a10f54a",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C93",
+      "claim": "For the synthesis of methyl-branched (MB)-CHCs with internal methyl groups, methyl-malonyl-CoA units are incorporated at specific chain locations instead of malonyl-CoA units, catalyzed by m-FAS enzymes whose subcellular location has been hypothesized to be microsomal.",
+      "claim_type": "EXPLICIT",
+      "source": "For the synthesis of methyl-branched (MB)-CHCs with internal methyl groups, methyl-malonyl-CoA units are incorporated at specific chain locations instead of malonyl-CoA units, catalyzed by m-FAS enzymes whose subcellular location has been hypothesized to be microsomal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and represents established knowledge with a hypothesized subcellular location.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "05f099f0-306f-4ba0-9571-f38aeaccc4d1",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C94",
+      "claim": "The MB or straight-chain LCFAs are further processed through a series of biosynthetic conversions catalyzed by the elongase (ELO) enzyme complex, fatty acyl-CoA reductase (FAR) enzymes and cytochrome P450 decarboxylase (CYP4G) enzymes to either MB or straight-chain, saturated CHCs, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The MB or straight-chain LCFAs are then further processed through a series of biosynthetic conversions catalyzed by the elongase (ELO) enzyme complex, fatty acyl-CoA reductase (FAR) enzymes and cytochrome P450 decarboxylase (CYP4G) enzymes to either MB or straight-chain, saturated CHCs, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and represents established knowledge of CHC biosynthesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "0f1ab296-4dee-4230-8967-0c1bfb720d6d",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C95",
+      "claim": "For the biosynthesis of unsaturated CHCs (olefins), desaturase (DESAT) enzymes introduce double bonds into the fatty acyl-CoA chain between elongation steps.",
+      "claim_type": "EXPLICIT",
+      "source": "For the biosynthesis of unsaturated CHCs (olefins), desaturase (DESAT) enzymes introduce double bonds into the fatty acyl-CoA chain between elongation steps.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and represents established knowledge of CHC biosynthesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "c303c2a9-9dcc-418d-86a6-10a8cb230a3b",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C96",
+      "claim": "Fas5 is precisely located from 21808178 to 21820384 bp on scaffold NC_045761.1, which constitutes chromosome 5 of the N. vitripennis genome assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Fas5 is precisely located from 21808178 to 21820384 bp (base pairs), while fas6 spans from 21821803 to 21833200 bp.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by genomic data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "e5e13704-221e-4e58-a74a-67c4655f2b9f",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C97",
+      "claim": "fas6 spans from 21821803 to 21833200 bp on scaffold NC_045761.1, which constitutes chromosome 5 of the N. vitripennis genome assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Fas5 is precisely located from 21808178 to 21820384 bp (base pairs), while fas6 spans from 21821803 to 21833200 bp.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by genomic data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "819fdae9-203d-4bd3-a966-5444fd640586",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C98",
+      "claim": "Fas5 and fas6 transcripts share 92% query coverage and 90.95% sequence identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Fas5 and fas6 transcripts share 92% query coverage and 90.95% sequence identity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence alignment data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "40487785-8cf8-4520-afb7-089b05613b31",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C99",
+      "claim": "Male mating behavior toward females consists of initial antennation, courtship (stereotypical head-nods on the female antennae after mounting), and actual copulation (injection of the male aedeagus into the female's genital opening).",
+      "claim_type": "EXPLICIT",
+      "source": "Depiction of consecutively displayed mating behavior of N. vitripennis males toward females, consisting of initial antennation, courtship (stereotypical head-nods on the female antennae after mounting), and actual copulation (injection of the male aedeagus into the female's genital opening) (images by Quoc Hung Le).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A and represents established knowledge of N. vitripennis mating behavior.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "0633a1d9-2201-45df-bbe2-23b25f4e56cf",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C100",
+      "claim": "The separation process reduced both the n-alkane and n-alkene proportions to less than 1% of the whole profile.",
+      "claim_type": "EXPLICIT",
+      "source": "The separation process reduced both the n-alkane and n-alkene proportions to less than 1% of the whole profile, allowing to focus almost exclusively on the MB-alkane fraction (Figure 4A; Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A and Figure 4\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "2bcade27-8a40-4249-88a4-02fc7cf5de47",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "claim_id": "C101",
+      "claim": "The MB-alkane fraction of fas5 RNAi females maintained the dramatically higher proportions of alkanes with 3rd and 5th C-atom methyl-branch positions and lower proportions of alkanes with 7th, 9th, 11th, 13th, and 15th C-atom methyl-branch positions, compared to the respective control females' MB-alkane fractions.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the MB-alkane fraction of fas5 RNAi females maintained the dramatically higher proportions of alkanes with 3rd and 5th C-atom methyl-branch positions and lower proportions of alkanes with 7th, 9th, 11th, 13th, and 15th C-atom methyl-branch positions, compared to the respective control females' MB-alkane fractions (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "498e189f-f723-4cbd-817c-005b24513d62",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CHCs are major components of insect epicuticles that encode and convey diverse biological information, particularly in sexual communication, including mate attraction, species discrimination, and mating status signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 establish the foundational context for CHC-based communication in insects, supported by established knowledge and multiple citations to prior research. These background claims are well-documented in the literature and provide appropriate context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "320a35af-b884-488f-a66a-030877f01051",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The CHC biosynthetic pathway involves elongation of fatty-acyl-CoA units, with incorporation of malonyl-CoA or methyl-malonyl-CoA determining production of straight-chain versus methyl-branched alkanes, mediated by different FAS enzymes, followed by further processing by elongases, reductases, decarboxylases, and desaturases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12 and C91-C95 describe the established CHC biosynthetic pathway, supported by citations to prior research and illustrated in Figure 1. While some aspects are noted as hypothesized (subcellular locations), the overall pathway description is well-established in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "c4e77dfb-25cb-4daa-ba25-cd904689f1a9",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In Drosophila, specific desaturases, elongases, and FAS genes have been identified that affect CHC biosynthesis and sexual signaling, with FASN2 regulating MB-alkane production in males and desaturases/elongases involved in female diene production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 and C57-C58, C76-C77 summarize prior work on Drosophila CHC genetics, all supported by citations to previous research. These provide appropriate comparative context for the current study on Nasonia.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "f9381092-f746-4634-967f-18458feb4a68",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In N. vitripennis, female CHCs serve as sexual cues eliciting male courtship and copulation, with profiles exhibiting high complexity including >85% MB-alkanes, and sexual attractiveness previously assumed to be attributed to the entire CHC profile.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 and C59 establish the prior understanding of N. vitripennis CHC function, supported by citations to previous research. These claims provide essential background for the novelty of the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "8226ab1d-c015-49e4-b04b-995eac9de5b8",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Knockdown of fas5 significantly reduced expression of both fas5 and fas6, two tandemly duplicated genes with high sequence similarity (90.95% mRNA, 88.06% amino acid) located adjacently on chromosome 5, with 24% of fas5 dsRNA 19-mers matching fas6 transcript.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C24, C82-C83, and C96-C98 demonstrate successful gene knockdown with documented off-target effects on fas6. The genomic and sequence data (Figure 2H, Figure 2\u2014figure supplement 2) support the tandem duplication inference. The off-target analysis is appropriately documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "6ed488e6-9ca7-4e0b-8a04-2ee25b054251",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "fas5 knockdown in females caused dramatic CHC profile shifts with increased MB-alkanes at 3rd and 5th positions, decreased MB-alkanes at 7th and 9+ positions, increased n-alkenes, while total CHC, MB-alkane, and n-alkane quantities remained stable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C33, C47, and C50 describe the chemical phenotype with quantitative data from Figure 2 and supplements. The pattern of specific MB-alkane changes with stable total quantities is well-documented. Statistical analyses with Benjamini-Hochberg correction are appropriate. The compensatory pattern is a key finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "bbe58511-352c-49c6-991b-06ce0915b3cb",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "fas5 knockdown females elicited significantly reduced courtship (~50% vs ~90%) and copulation from males compared to controls, with 70% male rejection of knockdown females, observed in both live and freeze-killed females.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 and C48 demonstrate the behavioral consequences of fas5 knockdown using multiple assay types (live, freeze-killed females). Data from Figure 3B-D show consistent reduction in male mating behaviors. Statistical analyses with Fisher's exact tests and Benjamini-Hochberg correction are appropriate. Sample sizes (N=20-24) are adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "ae4ed4b8-46f6-49e7-aad1-391bfb3ad12b",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Female dummies reconstituted with fas5 knockdown CHC profiles elicited significantly less courtship (16% vs 50-75%) and copulation (<5% vs ~40%) than controls, demonstrating that reduced attractiveness is predominantly mediated by altered chemical profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 use CHC profile manipulation to establish causality between chemical changes and behavioral effects. The reconstitution experiments (Figure 3E) provide strong evidence that the behavioral phenotype is chemically mediated rather than due to other female traits. The inference in C42 is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "efc7e980-d42f-4c13-877e-725925516444",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Separated MB-alkane fractions from fas5 knockdown females, maintaining altered branching patterns but with reduced n-alkenes to near-normal levels, elicited significantly less courtship and copulation, demonstrating that sexual attractiveness is mainly encoded in the MB-alkane fraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44, C49, C62-C63, and C100-C101 use chemical fractionation to isolate the MB-alkane contribution. The separation reduced n-alkenes to <1% (Figure 4A), yet behavioral effects persisted (Figure 4C), supporting the conclusion that MB-alkanes encode attractiveness. The logic excluding n-alkene contribution is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "1fee719d-4f0a-445f-b8af-81de7a74ba1d",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "fas5 knockdown showed no significant effect on survival probability under high or medium desiccation stress in either males or females, indicating no functionality in desiccation resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 and C75 report negative results from survival assays (Figure 5). Cox regression analysis with appropriate controls and sample sizes (N=10 per treatment) support the conclusion. This contrasts with findings in other insects and is appropriately discussed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "7ea62109-46ca-4eab-969a-9c6388e702bf",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "fas5/fas6 have a specific regulatory function governing opposing MB-alkane branching patterns that play a pivotal role in encoding female sexual attractiveness, representing the first identified hymenopteran genes with specific effects on MB-alkane ratios that impact sexual attractiveness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52, C60, C81, and C86 synthesize the major findings into mechanistic and comparative conclusions. The inference of specific regulatory function (C51) is supported by the compensatory pattern of changes. The novelty claim (C86) is appropriately qualified and supported by comparison to existing literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "277153de-5dce-450b-884e-daae3f28908a",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Sex-specific differences exist in knockdown effects on CHC compound classes, with males showing upregulation of total and n-alkane CHCs, and GFP dsRNAi showing generally upregulating effects in males, potentially due to off-target effects on genes involved in microtubule and sperm development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53-C56 identify sex-specific effects and potential confounding from GFP control. While the observations are documented (Figure 2\u2014figure supplement 4), the interpretation is complicated by the acknowledged off-target effects of GFP dsRNAi. The authors appropriately note this limitation and suggest alternative controls for future studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "b6b1538f-a63b-45eb-8c45-3713203eb382",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "MB-alkanes possess high potential for encoding chemical information through diverse methyl-branching patterns and constitute the dominant fraction in Nasonia (>85%) versus Drosophila (16-24%) profiles, with CHCs serving different functions in solitary versus eusocial Hymenoptera.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61 and C64-C70 provide comparative and evolutionary context for interpreting the findings. C64 is somewhat speculative but reasonably argued. The comparative data on MB-alkane proportions (C66-C67) and functional differences across Hymenoptera (C69-C70) are supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "91f7fba5-a490-4112-9cda-fd8d368aa9c8",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "fas5 is annotated as a FASN3 homolog, but unlike FASN3 orthologs in other insects that affect desiccation resistance, fas5 shows no such function; FAS genes show high evolutionary turnover and diverse functional recruitments across insects, affecting both CHC biosynthesis and other physiological processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74, C78-C80 provide comparative genetic context, all supported by citations. The contrast between fas5 function and FASN3 orthologs in other species (C72-C74) is appropriately noted. The comparison to FASN2 (C78) is reasonable despite lack of direct orthology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "e59688bf-f0a2-4d4d-82e5-6e82c4ceaa4f",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Due to high sequence similarity and off-target effects, it cannot be determined whether fas5, fas6, or both are responsible for the observed phenotypic changes, mirroring a similar situation with pheromone biosynthesis genes in N. vitripennis males.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 appropriately acknowledge a key limitation of the study. The inability to distinguish individual gene contributions due to sequence similarity is honestly reported and contextualized with a parallel case (C85). This limitation does not invalidate the main findings but prevents more precise genetic attribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    },
+    {
+      "id": "fd83cf09-2514-4276-a134-efeb5e2bf7f0",
+      "content_id": "0062fa04-768e-4a4e-9a2d-cd55a74d22c0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study used standard laboratory strain AsymCX of N. vitripennis reared under controlled conditions (25\u00b0C, 55% humidity, 16:8 light:dark cycle) with C. vomitoria pupae as hosts, using GFP dsRNA as a control, and assessed male mating behaviors including antennation, courtship, and copulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C90 and C99 describe the experimental materials and methods. These are factual statements about the study design that are adequately documented. The caveat about GFP control (C90) citing potential off-target effects is appropriately noted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:33:12.576470Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1c95871b-1af1-437a-b1e4-bae7e0e1133d",
+      "result_id": "498e189f-f723-4cbd-817c-005b24513d62"
+    },
+    {
+      "claim_id": "22d211b5-ee65-4ce7-b316-1f0e8ec7d877",
+      "result_id": "498e189f-f723-4cbd-817c-005b24513d62"
+    },
+    {
+      "claim_id": "3eb72de9-9ffd-4fc7-8072-13f0f88dbdb6",
+      "result_id": "498e189f-f723-4cbd-817c-005b24513d62"
+    },
+    {
+      "claim_id": "9cb19564-752c-48a1-a1b7-076c21f6e92b",
+      "result_id": "498e189f-f723-4cbd-817c-005b24513d62"
+    },
+    {
+      "claim_id": "82337eb7-09d0-4dfe-9f2b-3a08277acb9c",
+      "result_id": "498e189f-f723-4cbd-817c-005b24513d62"
+    },
+    {
+      "claim_id": "89f5855c-cf70-4d0d-ae17-7500edc2c791",
+      "result_id": "498e189f-f723-4cbd-817c-005b24513d62"
+    },
+    {
+      "claim_id": "3a316f08-553d-4f87-9ecb-595d9126d513",
+      "result_id": "498e189f-f723-4cbd-817c-005b24513d62"
+    },
+    {
+      "claim_id": "762d482f-5044-47bf-b6e6-58ee6ff1a9a0",
+      "result_id": "498e189f-f723-4cbd-817c-005b24513d62"
+    },
+    {
+      "claim_id": "b6df7a02-f206-48e1-a4dc-af0f68f7f3ba",
+      "result_id": "320a35af-b884-488f-a66a-030877f01051"
+    },
+    {
+      "claim_id": "76a239d2-acac-4ceb-96b1-96bcdff2aee4",
+      "result_id": "320a35af-b884-488f-a66a-030877f01051"
+    },
+    {
+      "claim_id": "4442bc01-b86a-4762-bb99-e82cd5ae468c",
+      "result_id": "320a35af-b884-488f-a66a-030877f01051"
+    },
+    {
+      "claim_id": "aa4d5f36-dd45-4bb1-983c-0b4f3f5c5dbc",
+      "result_id": "320a35af-b884-488f-a66a-030877f01051"
+    },
+    {
+      "claim_id": "402d85fa-e063-484c-887f-af81274b9ee1",
+      "result_id": "320a35af-b884-488f-a66a-030877f01051"
+    },
+    {
+      "claim_id": "4d33b30e-7433-4308-89af-026cb42176a4",
+      "result_id": "320a35af-b884-488f-a66a-030877f01051"
+    },
+    {
+      "claim_id": "2dd94b55-374e-40e6-8be4-c4517a10f54a",
+      "result_id": "320a35af-b884-488f-a66a-030877f01051"
+    },
+    {
+      "claim_id": "05f099f0-306f-4ba0-9571-f38aeaccc4d1",
+      "result_id": "320a35af-b884-488f-a66a-030877f01051"
+    },
+    {
+      "claim_id": "0f1ab296-4dee-4230-8967-0c1bfb720d6d",
+      "result_id": "320a35af-b884-488f-a66a-030877f01051"
+    },
+    {
+      "claim_id": "606111c1-29ba-4e34-96cd-3957c0ed4414",
+      "result_id": "c4e77dfb-25cb-4daa-ba25-cd904689f1a9"
+    },
+    {
+      "claim_id": "722ae26f-9814-4687-bb3d-bdb36f659747",
+      "result_id": "c4e77dfb-25cb-4daa-ba25-cd904689f1a9"
+    },
+    {
+      "claim_id": "ff84fb38-53d7-40fa-b0da-8598e16ab58f",
+      "result_id": "c4e77dfb-25cb-4daa-ba25-cd904689f1a9"
+    },
+    {
+      "claim_id": "ae940ab6-4522-412a-b392-9b2adf1cfe97",
+      "result_id": "c4e77dfb-25cb-4daa-ba25-cd904689f1a9"
+    },
+    {
+      "claim_id": "d6254907-c08f-412d-abe1-b995db863d09",
+      "result_id": "c4e77dfb-25cb-4daa-ba25-cd904689f1a9"
+    },
+    {
+      "claim_id": "6e35297e-f164-4631-8e9f-a48ba817fca5",
+      "result_id": "c4e77dfb-25cb-4daa-ba25-cd904689f1a9"
+    },
+    {
+      "claim_id": "f1c9e2eb-7e97-4ad4-b24f-a0f5f2abbfeb",
+      "result_id": "f9381092-f746-4634-967f-18458feb4a68"
+    },
+    {
+      "claim_id": "f3a06ff6-1840-4195-9e23-105f81a40565",
+      "result_id": "f9381092-f746-4634-967f-18458feb4a68"
+    },
+    {
+      "claim_id": "058d1b1a-5809-4f26-b541-ab7c1282a9a4",
+      "result_id": "f9381092-f746-4634-967f-18458feb4a68"
+    },
+    {
+      "claim_id": "27ceb3b3-39a6-472a-bf0a-e84640c16fc0",
+      "result_id": "f9381092-f746-4634-967f-18458feb4a68"
+    },
+    {
+      "claim_id": "d3e30db0-edd9-4f92-8362-a9c5dbcfb0a6",
+      "result_id": "8226ab1d-c015-49e4-b04b-995eac9de5b8"
+    },
+    {
+      "claim_id": "ff58677a-33d6-4500-b054-5333cf5e44cd",
+      "result_id": "8226ab1d-c015-49e4-b04b-995eac9de5b8"
+    },
+    {
+      "claim_id": "85c03862-6194-4349-a1ba-c836c6b57264",
+      "result_id": "8226ab1d-c015-49e4-b04b-995eac9de5b8"
+    },
+    {
+      "claim_id": "942f085c-e8b6-41e6-9124-bb0761e8cfb1",
+      "result_id": "8226ab1d-c015-49e4-b04b-995eac9de5b8"
+    },
+    {
+      "claim_id": "1ba44184-7a56-4c89-a81b-96b6c7622c59",
+      "result_id": "8226ab1d-c015-49e4-b04b-995eac9de5b8"
+    },
+    {
+      "claim_id": "7287a13e-9c34-4742-8c48-09460f634b1a",
+      "result_id": "8226ab1d-c015-49e4-b04b-995eac9de5b8"
+    },
+    {
+      "claim_id": "7a1c5595-f265-488e-ac2d-bebb0b015be5",
+      "result_id": "8226ab1d-c015-49e4-b04b-995eac9de5b8"
+    },
+    {
+      "claim_id": "2fd36511-573d-4631-8e56-429b03761412",
+      "result_id": "8226ab1d-c015-49e4-b04b-995eac9de5b8"
+    },
+    {
+      "claim_id": "88805a69-a3a8-4cda-a984-7e627655bc5a",
+      "result_id": "8226ab1d-c015-49e4-b04b-995eac9de5b8"
+    },
+    {
+      "claim_id": "c303c2a9-9dcc-418d-86a6-10a8cb230a3b",
+      "result_id": "8226ab1d-c015-49e4-b04b-995eac9de5b8"
+    },
+    {
+      "claim_id": "e5e13704-221e-4e58-a74a-67c4655f2b9f",
+      "result_id": "8226ab1d-c015-49e4-b04b-995eac9de5b8"
+    },
+    {
+      "claim_id": "819fdae9-203d-4bd3-a966-5444fd640586",
+      "result_id": "8226ab1d-c015-49e4-b04b-995eac9de5b8"
+    },
+    {
+      "claim_id": "76210adb-8685-4df5-b2ae-54e84a2407e0",
+      "result_id": "6ed488e6-9ca7-4e0b-8a04-2ee25b054251"
+    },
+    {
+      "claim_id": "b14046c0-ea1c-4766-9c05-db788bf7ea04",
+      "result_id": "6ed488e6-9ca7-4e0b-8a04-2ee25b054251"
+    },
+    {
+      "claim_id": "57c814d6-60f1-420c-b197-8bb2aeaedea0",
+      "result_id": "6ed488e6-9ca7-4e0b-8a04-2ee25b054251"
+    },
+    {
+      "claim_id": "da18ccd1-442e-48d0-b891-fdacd1496488",
+      "result_id": "6ed488e6-9ca7-4e0b-8a04-2ee25b054251"
+    },
+    {
+      "claim_id": "ade37b3a-96ba-49be-82fb-cb1001f44e00",
+      "result_id": "6ed488e6-9ca7-4e0b-8a04-2ee25b054251"
+    },
+    {
+      "claim_id": "f3e9f942-ac6a-497c-97c7-b884543b9018",
+      "result_id": "6ed488e6-9ca7-4e0b-8a04-2ee25b054251"
+    },
+    {
+      "claim_id": "67c18046-a9e1-407b-b0ab-3d7814fca33b",
+      "result_id": "6ed488e6-9ca7-4e0b-8a04-2ee25b054251"
+    },
+    {
+      "claim_id": "a747cfe4-9862-47cd-9fa3-194f26a0eb14",
+      "result_id": "6ed488e6-9ca7-4e0b-8a04-2ee25b054251"
+    },
+    {
+      "claim_id": "2936c380-b14f-403a-815d-6ca7e1ab9a60",
+      "result_id": "6ed488e6-9ca7-4e0b-8a04-2ee25b054251"
+    },
+    {
+      "claim_id": "fb34dc1b-8a06-4564-bf88-13e1d081b16e",
+      "result_id": "6ed488e6-9ca7-4e0b-8a04-2ee25b054251"
+    },
+    {
+      "claim_id": "faafcc8b-438d-489b-be5b-a2f307014e4e",
+      "result_id": "6ed488e6-9ca7-4e0b-8a04-2ee25b054251"
+    },
+    {
+      "claim_id": "a3407885-4f82-4ecb-a1b2-63cd29ae8923",
+      "result_id": "bbe58511-352c-49c6-991b-06ce0915b3cb"
+    },
+    {
+      "claim_id": "45380288-a619-46e9-8bf6-6b2848b3cb07",
+      "result_id": "bbe58511-352c-49c6-991b-06ce0915b3cb"
+    },
+    {
+      "claim_id": "556bea94-8899-4542-bb4e-51ab811a4837",
+      "result_id": "bbe58511-352c-49c6-991b-06ce0915b3cb"
+    },
+    {
+      "claim_id": "07423708-516c-44ba-97b7-fa58e887490a",
+      "result_id": "bbe58511-352c-49c6-991b-06ce0915b3cb"
+    },
+    {
+      "claim_id": "8483ce04-1b05-4ee5-8c9a-7dbb7ccd9f46",
+      "result_id": "bbe58511-352c-49c6-991b-06ce0915b3cb"
+    },
+    {
+      "claim_id": "f14ef46b-8acc-4c59-909b-bce755c25c24",
+      "result_id": "bbe58511-352c-49c6-991b-06ce0915b3cb"
+    },
+    {
+      "claim_id": "ad95bb43-408e-448a-b72f-188c3796a2e6",
+      "result_id": "bbe58511-352c-49c6-991b-06ce0915b3cb"
+    },
+    {
+      "claim_id": "61e92500-d9b0-46b3-875b-fb63a7931fc4",
+      "result_id": "ae4ed4b8-46f6-49e7-aad1-391bfb3ad12b"
+    },
+    {
+      "claim_id": "82b1e78c-4680-4a1e-b210-acc9b954d325",
+      "result_id": "ae4ed4b8-46f6-49e7-aad1-391bfb3ad12b"
+    },
+    {
+      "claim_id": "ca7e5a85-9d95-4f43-848c-c8b971646d7e",
+      "result_id": "ae4ed4b8-46f6-49e7-aad1-391bfb3ad12b"
+    },
+    {
+      "claim_id": "a60f5cb0-690e-4aea-a8f3-07c17d936d1c",
+      "result_id": "efc7e980-d42f-4c13-877e-725925516444"
+    },
+    {
+      "claim_id": "45479f6f-5d6e-4acf-9293-9ebbba53d95d",
+      "result_id": "efc7e980-d42f-4c13-877e-725925516444"
+    },
+    {
+      "claim_id": "0ad45172-ad90-44c6-92d6-03e56f47bd4c",
+      "result_id": "efc7e980-d42f-4c13-877e-725925516444"
+    },
+    {
+      "claim_id": "7c5be085-e37d-43d6-9577-6efcb2e5d81a",
+      "result_id": "efc7e980-d42f-4c13-877e-725925516444"
+    },
+    {
+      "claim_id": "37cb1af0-ff3e-4464-a19d-705d1030e717",
+      "result_id": "efc7e980-d42f-4c13-877e-725925516444"
+    },
+    {
+      "claim_id": "0633a1d9-2201-45df-bbe2-23b25f4e56cf",
+      "result_id": "efc7e980-d42f-4c13-877e-725925516444"
+    },
+    {
+      "claim_id": "2bcade27-8a40-4249-88a4-02fc7cf5de47",
+      "result_id": "efc7e980-d42f-4c13-877e-725925516444"
+    },
+    {
+      "claim_id": "f3a9a9ba-1348-41cc-a26f-554e1c3f5603",
+      "result_id": "1fee719d-4f0a-445f-b8af-81de7a74ba1d"
+    },
+    {
+      "claim_id": "29e93974-7cd6-44d6-9b27-1faec0057cb5",
+      "result_id": "1fee719d-4f0a-445f-b8af-81de7a74ba1d"
+    },
+    {
+      "claim_id": "5569b304-c2f0-47f3-8db1-ac25474ae7c4",
+      "result_id": "1fee719d-4f0a-445f-b8af-81de7a74ba1d"
+    },
+    {
+      "claim_id": "e2255ec0-2a5c-42b1-99e8-c58a3f49a700",
+      "result_id": "7ea62109-46ca-4eab-969a-9c6388e702bf"
+    },
+    {
+      "claim_id": "2168a668-b181-4751-af26-3f1e55e93eb6",
+      "result_id": "7ea62109-46ca-4eab-969a-9c6388e702bf"
+    },
+    {
+      "claim_id": "daf99946-e0d5-4992-bb5f-dab97e3fa92d",
+      "result_id": "7ea62109-46ca-4eab-969a-9c6388e702bf"
+    },
+    {
+      "claim_id": "6be58808-b3d6-4a63-b3e6-83afa4b7f982",
+      "result_id": "7ea62109-46ca-4eab-969a-9c6388e702bf"
+    },
+    {
+      "claim_id": "799dfc8d-5b1d-44c3-9eb0-54399ed4422b",
+      "result_id": "7ea62109-46ca-4eab-969a-9c6388e702bf"
+    },
+    {
+      "claim_id": "eb4e70d1-f75d-49f2-9ce5-17ee9b2591c3",
+      "result_id": "277153de-5dce-450b-884e-daae3f28908a"
+    },
+    {
+      "claim_id": "adc7bee1-4a57-4cfb-a334-e9967de37345",
+      "result_id": "277153de-5dce-450b-884e-daae3f28908a"
+    },
+    {
+      "claim_id": "ae5d9353-d566-48a5-9bf7-61388ac42946",
+      "result_id": "277153de-5dce-450b-884e-daae3f28908a"
+    },
+    {
+      "claim_id": "9087eae4-2506-4610-809e-961c96ed276b",
+      "result_id": "277153de-5dce-450b-884e-daae3f28908a"
+    },
+    {
+      "claim_id": "27b5df4f-1630-428c-8208-8447644805b1",
+      "result_id": "b6b1538f-a63b-45eb-8c45-3713203eb382"
+    },
+    {
+      "claim_id": "7e7250d7-97ab-4d16-a8ed-689a2ba84c2f",
+      "result_id": "b6b1538f-a63b-45eb-8c45-3713203eb382"
+    },
+    {
+      "claim_id": "c5e22dcd-0889-4717-b41a-8210c0c363ed",
+      "result_id": "b6b1538f-a63b-45eb-8c45-3713203eb382"
+    },
+    {
+      "claim_id": "6151b17f-6ff1-4e69-af8d-703532054d73",
+      "result_id": "b6b1538f-a63b-45eb-8c45-3713203eb382"
+    },
+    {
+      "claim_id": "655b48b1-9288-412c-8bf6-dd612e160e9b",
+      "result_id": "b6b1538f-a63b-45eb-8c45-3713203eb382"
+    },
+    {
+      "claim_id": "131cb887-9013-490f-a27f-3468b007fd73",
+      "result_id": "b6b1538f-a63b-45eb-8c45-3713203eb382"
+    },
+    {
+      "claim_id": "50a37774-add9-4dd5-b74e-dc7dcd63ea03",
+      "result_id": "b6b1538f-a63b-45eb-8c45-3713203eb382"
+    },
+    {
+      "claim_id": "1be193f0-7b5d-4086-ba63-b726683b0f58",
+      "result_id": "b6b1538f-a63b-45eb-8c45-3713203eb382"
+    },
+    {
+      "claim_id": "e5df3676-69f4-45fe-a1db-7fbe2010b0d6",
+      "result_id": "91f7fba5-a490-4112-9cda-fd8d368aa9c8"
+    },
+    {
+      "claim_id": "a0d6a17d-c617-47f8-bd52-88da24c64c1f",
+      "result_id": "91f7fba5-a490-4112-9cda-fd8d368aa9c8"
+    },
+    {
+      "claim_id": "2770557b-8b1b-4453-a528-84975cb45315",
+      "result_id": "91f7fba5-a490-4112-9cda-fd8d368aa9c8"
+    },
+    {
+      "claim_id": "ccde50f0-23fa-47b5-9b02-cce9ac6696e2",
+      "result_id": "91f7fba5-a490-4112-9cda-fd8d368aa9c8"
+    },
+    {
+      "claim_id": "34ed4cd9-c185-4e0b-96f3-e27108eada56",
+      "result_id": "91f7fba5-a490-4112-9cda-fd8d368aa9c8"
+    },
+    {
+      "claim_id": "b2d58374-43fc-43dd-9200-58e62c9a525a",
+      "result_id": "91f7fba5-a490-4112-9cda-fd8d368aa9c8"
+    },
+    {
+      "claim_id": "9f92c71f-4d5f-4704-9b9a-d4ac94388b0e",
+      "result_id": "91f7fba5-a490-4112-9cda-fd8d368aa9c8"
+    },
+    {
+      "claim_id": "3a1ffaa8-4531-4de8-889f-31a5fa06554a",
+      "result_id": "e59688bf-f0a2-4d4d-82e5-6e82c4ceaa4f"
+    },
+    {
+      "claim_id": "c99a9703-5e91-4e55-8a92-825532e1e26d",
+      "result_id": "e59688bf-f0a2-4d4d-82e5-6e82c4ceaa4f"
+    },
+    {
+      "claim_id": "c39e106c-bbb7-43fc-9311-ca26eb727bff",
+      "result_id": "fd83cf09-2514-4276-a134-efeb5e2bf7f0"
+    },
+    {
+      "claim_id": "e65fae6b-294b-4558-a377-4f450998e48f",
+      "result_id": "fd83cf09-2514-4276-a134-efeb5e2bf7f0"
+    },
+    {
+      "claim_id": "3b9ff5b1-8230-4c48-ac2c-f9516655e6a1",
+      "result_id": "fd83cf09-2514-4276-a134-efeb5e2bf7f0"
+    },
+    {
+      "claim_id": "92531731-5123-4dfc-9d2e-d92d6d179aef",
+      "result_id": "fd83cf09-2514-4276-a134-efeb5e2bf7f0"
+    },
+    {
+      "claim_id": "40487785-8cf8-4520-afb7-089b05613b31",
+      "result_id": "fd83cf09-2514-4276-a134-efeb5e2bf7f0"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C77",
+      "C78"
+    ],
+    "result": "Three trans-acting genetic loci on chromosomes 7, 13, and 17 regulate distinct classes of mitochondrial proteins in heart. The chr13 locus is enriched for complex-I proteins (24 proteins, P=2.2E-61), chr17 for mitochondrial ribonucleoprotein complex (17 proteins, P=3.1E-25), and chr7 for ubiquinone biosynthesis (3 proteins, P=6.9E-05). These loci control approximately 9% (74/848) of nuclear-encoded mitochondrial proteins and are specific to the proteome, not detected in heart transcriptome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6, C19-C22, C77-C78 provide converging evidence from proteomic mapping, WGCNA module analysis, and enrichment statistics. The statistical significance values are strong (P<1E-6 for loci, highly significant enrichment P-values), sample sizes are adequate (72 strains, n=2-3 mice), and the proteome-specific nature is demonstrated by absence in transcriptome data. The overlap percentages between modules and loci (96%, 73%, 81%) support the biological coherence of these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C45"
+    ],
+    "result": "The chr13 locus regulates mitochondrial complex-I proteins through the miR-27b/NDUFS4 axis. The peak SNP (rs48592660) is associated with miR-27b expression, which regulates NDUFS4 protein levels. Strains with the GG allele have higher NDUFS4 levels and lower heart mass under stress conditions. Heart-specific Ndufs4-cKO mice show reduced complex-I proteins (21/31 significantly different proteins from chr13 locus) with compensatory upregulation of NDUFAF2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C23-C38, C45 provide strong experimental validation through multiple approaches: genetic mapping identifies NDUFS4 as candidate (C7, C23), phenotypic associations show consistent directionality (C29-C31), knockout experiments confirm causal role (C35-C37), and miRNA sequencing validates the regulatory mechanism (C26, C39-C40). The statistical significance is robust (P<1E-6 for associations), and the biological mechanism is supported by prior literature (C24-C25, C32-C34, C38).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C92",
+      "C93"
+    ],
+    "result": "MiR-27b expression is inversely correlated with heart weights in HMDP strains, and mature miR-27b-3p increases NDUFS4 protein levels in cardiomyocytes. Strains with the GG allele at rs48592660 have higher miR-27b expression and lower heart weights. In vitro experiments show miR-27b-3p consistently increases NDUFS4 protein in both control and phenylephrine-treated conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44, C92-C93 provide convergent evidence from population genetics (C39-C40, C92) and in vitro experiments (C42-C44). The inverse correlation between miR-27b and heart weight is statistically significant (C40), and the in vitro data demonstrate a direct regulatory relationship (C43-C44). The miRBase database citation (C41) supports the biological relevance of miR-27b-3p. However, the mechanism by which miR-27b increases (rather than decreases) NDUFS4 is counterintuitive for typical miRNA function and warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C97",
+      "C98"
+    ],
+    "result": "The chr17 locus regulates mitochondrial ribonucleoprotein complex through LRPPRC/SLIRP. The peak SNP (rs46340181) controls LRPPRC and SLIRP protein levels in cis. Strains with the TT allele have higher LRPPRC/SLIRP levels, increased mitochondrial mRNA expression, reduced mitoribosome protein levels, and lower heart weights under DIO stress. The locus affects mRNA but not protein levels of mitochondrial-encoded genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C46-C57, C97-C98 provide strong evidence through genetic mapping (C46-C47), phenotypic associations (C51-C52), and mechanistic insights (C53-C57). The observation that the locus affects mitochondrial mRNA but not protein levels (C54) is particularly compelling and consistent with LRPPRC/SLIRP's known role in mRNA stability (C48). The sex-independent effects (C55) and contrast with chr13 locus (C56) strengthen the specificity of findings. Statistical significance is robust throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C119",
+      "C120"
+    ],
+    "result": "Analysis of Diversity Outbred mice corroborates LRPPRC as the driver of a heart-specific chr17 mt-eQTL hotspot. In heart tissue, 14 mitochondrial-encoded genes map to chr17 at ~85 Mbp with LOD scores ranging from 6-52. SNP association profiles identify Lrpprc gene locus, including a missense variant (rs33393440, Lys466Glu). Mediation analysis shows an average 79% drop in LOD scores when conditioning on Lrpprc expression, confirming its causal role. This hotspot is specific to heart among five tissues surveyed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65, C119-C120 provide independent validation in a different mouse population (DO vs HMDP) with large sample size (~500 mice). The heart-specific nature of the hotspot (C59, C120) is demonstrated by comparison across five tissues. Mediation analysis (C63-C64) provides strong statistical evidence for causality, with substantial LOD score reductions (79% average). The identification of a missense variant (C62) provides a potential functional mechanism. The concordance between DO and HMDP results (C65) strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C104",
+      "C105"
+    ],
+    "result": "The chr7 locus regulates CoQ metabolism through COQ7. The peak SNP (rs32451909) controls COQ7 protein levels in cis. Strains with the GG allele have lower COQ7 levels, higher heart weights under DIO stress, and increased CoQ9/CoQ10 levels in heart lysates (but not mitochondrial fractions). Other COQ proteins (COQ3, COQ6) are co-regulated with COQ7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C66-C76, C104-C105 provide evidence through genetic mapping (C66-C67), phenotypic associations (C71-C72), and biochemical measurements (C75, C105). The co-regulation of COQ proteins (C73-C74) supports biological coherence. However, the observation of increased CoQ levels in lysates but not mitochondrial fractions (C105) is puzzling and requires mechanistic explanation. The sample size for CoQ measurements is modest (n=15 strains), which may limit statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C30",
+      "C31",
+      "C52",
+      "C72",
+      "C115",
+      "C116"
+    ],
+    "result": "All three loci (chr7, chr13, chr17) are associated with heart mass in at least one of two independent heart stress models (isoproterenol-induced heart failure and diet-induced obesity). However, the percent changes in heart mass are modest in magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C30-C31, C52, C72, C115-C116 demonstrate phenotypic relevance of the genetic loci. The use of two independent stress models strengthens the findings. Statistical significance is achieved for multiple associations. The authors acknowledge the modest effect sizes (C116), which is appropriate for complex traits. The consistency of associations across models and loci supports the biological relevance despite modest effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Two independent loci (chr13 and chr17) regulate mitochondrial complex I at different levels: chr13 via miR-27b/NDUFS4 affects protein levels, while chr17 via LRPPRC/SLIRP affects mRNA levels. NDUFS4 is an 18 kDa accessory subunit essential for complex I assembly, and its loss results in complex I deficiency. Heart-specific NDUFS4 knockout mice show upregulation of NDUFAF2, which partially stabilizes complex I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C87 synthesize findings about complex I regulation. The dual regulation at mRNA and protein levels (C79) is well-supported by the data. Background information about NDUFS4 (C80-C84) is appropriately cited. The knockout experiment (C85-C86) provides functional validation. The conclusion about natural variation affecting complex I (C87) is supported but represents an inference from the data rather than direct measurement of complex I activity in the HMDP strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C100",
+      "C101"
+    ],
+    "result": "LRPPRC/SLIRP complex regulates mitochondrial mRNA stability and translation. While LRPPRC mutations are typically associated with complex IV deficiency, the current study shows that complex I mRNAs are also strongly regulated by LRPPRC/SLIRP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96, C100-C101 provide context and novel findings. Background information (C94-C96, C100) is appropriately cited. The observation that complex I mRNAs are regulated by LRPPRC/SLIRP (C101) extends previous knowledge and is supported by the data (C54, C57). This finding has implications for understanding LRPPRC-related diseases beyond complex IV deficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C98"
+    ],
+    "result": "The authors propose that higher LRPPRC/SLIRP levels stabilize mitochondrial mRNAs, reducing the need for mitoribosomes. This explains the observation of increased mitochondrial mRNA with reduced mitoribosome protein levels in strains with higher LRPPRC/SLIRP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C99 represent a mechanistic hypothesis proposed by the authors. While the observation of increased mRNA and decreased mitoribosome levels is supported by data (C98), the proposed mechanism (C99) is speculative. The inverse relationship could have alternative explanations, such as feedback regulation or independent regulatory mechanisms. Direct experimental validation of this proposed mechanism is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors propose that reduced COQ7 protein levels lead to increased heart weights through increased ROS generation, with elevated CoQ levels in lysates representing a protective response. This interpretation is based on literature showing that Coq7 heterozygous knockout mice exhibit dysfunctional mitochondria with heterogeneous CoQ distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C113 combine established knowledge (C102-C103, C106-C110) with speculative mechanisms (C112-C113). The proposed mechanism linking reduced COQ7 to increased heart weights via ROS (C112) is not directly tested in this study. The observation of increased CoQ in lysates but not mitochondrial fractions (C105) is intriguing but difficult to interpret without additional measurements of ROS, mitochondrial function, or CoQ subcellular distribution. The reliance on literature from Coq7 knockout models may not fully apply to natural variation in COQ7 levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Prior literature shows conflicting roles for miR-27b in cardiac hypertrophy: cardiac overexpression promotes hypertrophy via PPARG but attenuates atrial fibrosis via ALK5, while whole-body knockout attenuates hypertrophy via FGF1. MiR-27b-3p also mediates adipocyte browning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28, C88-C91 accurately summarize prior literature with appropriate citations. The conflicting findings in the literature highlight the complexity of miR-27b function and the importance of context (cardiac-specific vs whole-body, overexpression vs knockout, different stress models). This background appropriately frames the current study's findings about miR-27b's protective role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Mitochondrial dysfunction plays a major role in metabolic syndrome traits and cardiovascular diseases, including heart failure. The primary mechanism linking mitochondrial dysfunction to heart failure is decreased oxidative respiration leading to contractile failure. Mitochondria are an attractive therapeutic target for heart failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 provide appropriate background context with citations to support each statement. These are well-established concepts in the field that motivate the current study. The claims accurately represent the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "The Hybrid Mouse Diversity Panel (HMDP) consists of 100 inbred mouse strains and offers superior mapping resolution compared to traditional genetic crosses, with the advantage of replicable biological measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 accurately describe the HMDP resource with appropriate citation. The stated advantages are well-established in the literature. This provides necessary methodological context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C117",
+      "C118"
+    ],
+    "result": "The three trans-regulatory loci were not detected in heart transcriptome, justifying proteomic studies. The findings suggest that common variations in mitochondrial proteins can act in trans to influence tissue-specific mitochondrial functions and contribute to heart hypertrophy. Heart failure and hypertrophy are complex traits influenced by many genetic factors with small to large effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114, C117-C118 provide important context and conclusions. The proteome-specific nature of the loci (C114) is a key finding that justifies the proteomic approach. The acknowledgment that complex traits involve many factors with varying effect sizes (C117) appropriately contextualizes the modest phenotypic effects. The overall conclusion (C118) is supported by the totality of evidence presented.",
+    "result_type": "MAJOR"
+  }
+]

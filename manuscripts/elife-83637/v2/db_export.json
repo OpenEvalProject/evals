@@ -1,0 +1,1420 @@
+{
+  "submission": {
+    "id": "9d4d15f1-a304-4cda-bcb3-7d1a17505a33",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:23:14.981572Z",
+    "updated_at": "2025-12-04T02:23:14.981572Z"
+  },
+  "content": [
+    {
+      "id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "submission_id": "9d4d15f1-a304-4cda-bcb3-7d1a17505a33",
+      "content_type": "manuscript",
+      "content_text": "# Spontaneous body wall contractions stabilize the fluid microenvironment that shapes host\u2013microbe associations\n\n## Authors\n\n- Janna C Nawroth<sup>1</sup> ([ORCID: 0000-0003-1898-3968](https://orcid.org/0000-0003-1898-3968))\n- Christoph Giez<sup>4</sup> ([ORCID: 0000-0002-8101-6498](https://orcid.org/0000-0002-8101-6498))\n- Alexander Klimovich<sup>4</sup> ([ORCID: 0000-0003-1764-0613](https://orcid.org/0000-0003-1764-0613))\n- Eva Kanso<sup>1</sup> ([ORCID: 0000-0003-0336-585X](https://orcid.org/0000-0003-0336-585X)) \u2020\n- Thomas CG Bosch<sup>4</sup> ([ORCID: 0000-0002-9488-5545](https://orcid.org/0000-0002-9488-5545)) \u2020\n\n### Affiliations\n\n1. Aerospace and Mechanical Engineering, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))\n2. Helmholtz Pioneer Campus and Institute of Biological and Medical Imaging (IBMI), Helmholtz Munich (GmbH) Neuherberg Germany\n3. Chair of Biological Imaging at the Central Institute for Translational Cancer Research (TranslaTUM), School of Medicine, Technical University of Munich Munich Germany ([ROR:02kkvpp62](https://ror.org/02kkvpp62))\n4. Zoological Institute, Kiel University Kiel Germany ([ROR:04v76ef78](https://ror.org/04v76ef78))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe freshwater polyp Hydra is a popular biological model system; however, we still do not understand one of its most salient behaviors, the generation of spontaneous body wall contractions. Here, by applying experimental fluid dynamics analysis and mathematical modeling, we provide functional evidence that spontaneous contractions of body walls enhance the transport of chemical compounds from and to the tissue surface where symbiotic bacteria reside. Experimentally, a reduction in the frequency of spontaneous body wall contractions is associated with a changed composition of the colonizing microbiota. Together, our findings suggest that spontaneous body wall contractions create an important fluid transport mechanism that (1) may shape and stabilize specific host\u2013microbe associations and (2) create fluid microhabitats that may modulate the spatial distribution of the colonizing microbes. This mechanism may be more broadly applicable to animal\u2013microbe interactions since research has shown that rhythmic spontaneous contractions in the gastrointestinal tracts are essential for maintaining normal microbiota.\n\n## Introduction\n\nThe millimeter-scale freshwater polyp Hydra with its simple tube-like body structure (Figure 1A) and stereotypic movement patterns is a popular biological model organism for immunology (Bosch and McFall-Ngai, 2021; Bosch, 2014; Bosch, 2013; Klimovich and Bosch, 2018a; Schr\u00f6der and Bosch, 2016), developmental and evolutionary biology, and neurobiology (Klimovich and Bosch, 2018a; Bosch et al., 2017). Despite Hydra\u2019s relevance for fundamental research, one of the animal\u2019s most salient behaviors remains a mystery since its first description in 1744 (Bayer et al., 1744): it is unclear why Hydra undergoes recurrent full-body contraction-relaxation cycles, approximately one every 10\u201330 min (Figure 1B), while attached to the substratum. Most, if not all, animals exhibit such spontaneous contractions of muscular organs and body walls to pump internal fluids, create mixing flows, feed, locomote, or clean surfaces (Schierwater et al., 1991; Kremien et al., 2013; Trojanowski et al., 2016; Rich, 2018; Kornder et al., 2022). Other animals perform rhythmic pulsations, which differ from spontaneous contractions by occurring in predictable intervals and usually serve similar functions. For example, rhythmic pulsation of tentacles in corals, first noted by Lamarck nearly 200 years ago, lead to increased turbulent mixing, which enhances photosynthesis via fast removal of excess oxygen and prevents refiltration of surrounding water by neighboring polyps (Kremien et al., 2013). However, Hydra\u2019s size, morphology, and spontaneous contraction characteristics do not fit any of the known functions of rhythmic or spontaneous contractions. In particular, Hydra\u2019s small dimensions likely prevent it from the generation of turbulent mixing (Purcell, 1977). Here, we sought to investigate the functional underpinnings of Hydra\u2019s spontaneous contractions from a fluid mechanics perspective. We hypothesized that the spontaneous contractions might generate fluid transport patterns of relevance to Hydra\u2019s microbial partners that colonize the so-called glycocalyx on the outer body wall (Schr\u00f6der and Bosch, 2016; Fraune et al., 2015; Figure 1C). Typically, the composition and distribution of symbiotic microbial communities residing at solid\u2013liquid interfaces, such as in the gut and lung, are regulated both by interaction with host cells and by the properties of the fluid medium (Fang et al., 2021; Franzenburg et al., 2013). Therefore, we asked whether Hydra\u2019s microbiome might be influenced by fluid flow associated with spontaneous contractions.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83637/elife-83637-fig1-v2.jpg)\n\n**Figure 1.:** (A) Polyp colonized with fluorescent labelled betaproteobacteria. (B) A representative contractile activity pattern of an individual polyp recorded over 8 hr (left). Each dash on the timeline represents an individual spontaneous contraction\u2013relaxation cycle (right). (C) Schematic representation of a Hydra with a fluid boundary layer surrounding the polyp with the glycocalyx layer adjacent to the polyp\u2019s tissue. Inset: tissue architecture covered outside by the mucus-like glycocalyx that provides the habitat for a specific bacterial community on the interface with the fluid boundary layer. (D) Dense community of fluorescently labeled bacteria (main colonizer Curvibacter sp.) colonizing the polyp\u2019s head. (E) The biogeography of Hydra\u2019s symbionts under undisturbed/control conditions follows a distinct spatial colonization pattern along the body column (n = 4). (F) Bacteria mostly colonizing the foot region include Pseudomonas, Flavobacterium, and Acidovorax (n = 4). Scale bar: 500 \u00b5m.\n\n## Results\n\nFirst, we mapped the abundance and distribution of microbiota that reside on the glycocalyx (Figure 1C and D). The glycocalyx is a multilayered extracellular cuticle covering Hydra\u2019s ectodermal epithelial cells, has mucus-like properties, and shapes the microbiome by providing food and antimicrobial peptides (Franzenburg et al., 2013). Regional differences in the glycocalyx have not been reported; however, using 16S rRNA profiling on different sections of Hydra, we found that different microbial species favor different regions along the body column, including foot- and head-dominating microbiota (Figure 1E and F). Based on these intriguing data and recent insights into how fluid flow shapes spatial distributions of bacteria (Wheeler et al., 2019), we hypothesized that the spontaneous contractions might generate fluidic microhabitats that facilitate the microbial biogeography along the body column.\n\n### Kinematics and flow physics of individual spontaneous contractions\n\nTo explore this hypothesis, we used video microscopy and analyzed the animal\u2019s body kinematics to assess the differential impact of spontaneous contractions on the fluid microenvironment. We examined the contraction activity (Figure 2A) of multiple animals over 8 hr and recorded an average contraction frequency of 2.5 spontaneous contractions per hour (Figure 2\u2014figure supplements 1 and 2, Figure 2\u2014figure supplement 3 control conditions), corresponding to an average duration ($T_{IC}$) of the inter-contraction intervals of 24 min. To arrive at estimates rooted in probability theory that take into consideration the distribution of $T_{IC}$, we collected the measured $T_{IC}$ from all animals in the form of a histogram (Figure 2\u2014figure supplement 3B, control condition). The resulting distribution of $T_{IC}$ is best fit by an exponential distribution, implying that contraction events of individual polyps follow a stochastic Poisson process. We computed the average frequency based on the exponential fit to these biological data. We found that the so-computed contraction frequency is equal to 2.9 contractions per hour, which is slightly larger than the 2.5 contractions per hour obtained by taking a direct average of the data.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83637/elife-83637-fig2-v2.jpg)\n\n**Figure 2.:** (A) Top: representative plot of the change in relative body length in Hydra as a function of time shows transition from an inter-contraction interval (IC) to a spontaneous contraction with two peak contraction events (PC, asterisks), and the return to an IC interval. Bottom: typical kinematic pattern associated with IC intervals and contractions. Arrows indicate distinct body trajectories during IC intervals (blue) compared to contractions (red). (B) Typical body trajectories in longitudinal and axial plane during IC intervals and spontaneous contractions visualized by time-lapse microscopy. Maximal speeds (log10 scale) are indicated by color-coded trajectories of the head (oral end or tentacles). Trajectories are slightly offset to avoid obscuring the animal. Asterisks denote PC events. (C) Comparison of maximal velocities near head reached during IC intervals (n = 3 animals) and PC (n = 5 animals). Lines: average curves. Shaded areas: interquartile range. Inset: relative scaling of PC duration ($T_{PC}$), IC interval duration ($T_{IC}$), PC velocity magnitudes ($U_{PC}$), and IC interval velocity magnitudes ($U_{IC}$). (D) Application of a fluorescent dye reveals existence of a FBL during the IC interval and its shedding upon a contraction event. A representative time-lapse series. White arrows indicate FBL shedding after PCs, that is, the growing separation between the original, stained FBL and Hydra\u2019s head. (E) Quantification of Hydra\u2019s flow velocity field during IC intervals and (F) during a typical PC with axial rotation (top view). Flow vectors and velocities are indicated by color-coded arrows. (G) Relative change of fluid flow speed as a function of distance from Hydra\u2019s surface measured along dotted lines in (E, F) during IC intervals (blue) and during PCs with rotation (red). Lines: average curves. Shaded areas: interquartile range. (H) FBL thickness, defined as distance from Hydra at which 90% freestream speed is reached, is inversely correlated to maximal flow speed ($U_{max}$).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83637/elife-83637-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** In control conditions (last row in A, B), Hydra was subjected to regular culture medium and light cycles. We used two different approaches to manipulate contractions rates in the treatment groups. (A) Use of ion channel inhibitors, which reduce spontaneous contractions. Animals were incubated for 48 hr at 18\u00b0C and 80% humidity with medium containing either lidocaine or menthol, or with medium alone (control). (B) The contractile behavior of Hydra is also light sensitive and was reduced under light\u2013light and dark\u2013dark conditions. In control conditions (last row), Hydra was subjected to regular light\u2013dark cycles. (A, B) Highlighted in red is the 8 hr time window when contractions were counted in all conditions. After the 48 hr treatment, the gDNA was extracted from the polyps and send for 16S rDNA sequencing for all conditions.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83637/elife-83637-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A, B) Quantification of the number of contractile behavior events over time. (A) The number of spontaneous contractions is reduced under the experimental treatment conditions compared to control. Menthol effectively abolishes all spontaneous contractions, whereas the other treatments are reducing the frequency (n=10-20). (B) Hydra somersault behavior is not affected by the different treatments and remains a rare event. (C) Percentage of time different Hydra behaviors occurred. The time a polyp spent in a spontaneous contraction event was reduced by the lidocaine and menthol treatment. In addition, time of floating at the surface is reduced in the menthol nd lidocaine treatments compared to the control (n=10-20). (Kruskal-Wallis, Wilcoxon test, * p\u22640.05; ** p\u22640.01; *** p\u22640.001).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/83637/elife-83637-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) The temporal distribution of spontaneous contraction events is shown for all treatment groups in a density plot (top) and a spike raster plot (bottom). (B) Characteristic for a Poisson-like process, the time measured between contractions (TIC) follows an exponential distribution for all conditions (except menthol), with lidocaine and light\u2013light treatments characterized by a longer tail compared to control, reflecting lower average contraction frequencies. Shown is the best exponential distribution fit. (C) Combined histogram density plot of the experimental TIC data in all conditions (left) compared to a typical simulated data set (right) that recapitulates key experimental observations, particularly the longer tails of the treatment groups (here we show just one data set per condition, and each data set contains 10,000 randomly sampled intervals).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/83637/elife-83637-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The light spot in the center marks the foot, which stayed fixed.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/83637/elife-83637-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A) Flow speed profiles during inter-contraction intervals (IC) and peak contraction events (PC) measured along the sections shown in Figure 2E and F starting at Hydra\u2019s head and ending in the free stream flow. As indicated, fluid boundary layer (FBL) thickness is defined as the distance at which the flow speed decreases to approximately 10% of the surface speed. (B) Flow speed profile during peak contraction measured along the body column from head towards the foot region. Towards the foot, the flow declines rapidly to a fraction of maximal speed.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/83637/elife-83637-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Over time, these rates decrease substantially and converge to 3 CPH or less, comparable to the baseline rate observed in our control conditions where animals were placed in a large fluid volume.\n\nEach stage of the inter-contraction intervals and spontaneous contraction cycle is characterized by stereotypic kinematic patterns of Hydra\u2019s motion trajectories and velocities (Figure 2A, bottom). During inter-contraction intervals, which on average last tens of minutes (Figure 2\u2014figure supplement 3B), Hydra\u2019s body column remains nearly fully extended and slowly revolves at full length around its foothold, tracing a cone-shaped volume over time (Figure 2B, Video 1). By contrast, spontaneous contraction events typically last a few seconds and are characterized by a stepwise shortening of the body column with one or more peak contraction events until the body column has shortened to 20% or less of its original length (Figure 2A\u2013C). A peak contraction is defined as any part of the spontaneous contraction during which Hydra contracts at a rate of 25% change in body length per second or more. spontaneous contractions are frequently accompanied by axial rotation in a spiraling downward motion (Figure 2A and B, Video 1) and are typically followed by slow re-extension to inter-contraction interval length (Figure 2A) in a random direction (Figure 2\u2014figure supplement 4). We quantified the speeds and timescales that different regions of Hydra\u2019s body column experience during inter-contraction intervals and spontaneous contractions. During spontaneous contractions, specifically during peak contractions characterized by simultaneous linear shortening and axial rotation, the oral region accelerates to peak velocities $U_{PC}$ of 10 mm/s. This is almost two orders of magnitude faster than maximal head speeds $U_{IC}$ during inter-contraction intervals, which are on the order of 0.1 mm/s in both longitudinal and axial directions (Figure 2B and C). Further, peak contraction rarely last longer than $T_{PC}=1s$ and hence operate at 1000-fold smaller timescales than inter-contraction intervals (with mean duration of ca. 24 min, i.e., 1440 s).\n\n![Video 1.](https://cdn.elifesciences.org/articles/83637/elife-83637-video1.mp4.jpg)\n\nTo assess the effects of Hydra\u2019s body kinematics on its fluid environment, we computed the Reynolds number Re = $\u2113\u2062U/\\mu$ at the tentacles near Hydra\u2019s mouth, where the tentacle diameter is $\u2113=0.1$ mm, the kinematic viscosity of water at 20\u00b0C is $\\mu=1.0034$ mm2/s, and the tentacle speed $U$ is in mm/s. The Re number compares the effects of fluid inertia to viscous drag forces. During inter-contraction intervals, $U=U_{I\u2062C}$ is on the order of 0.1 mm/s, and Re is on the order of 0.01. At such low Re number, fluid flow is dominated by viscous effects and distinguished by the presence of a laminar and expansive fluid boundary layer. The fluid boundary layer can be envisioned as an envelope of fluid enclosing Hydra and moving at the same velocity as Hydra\u2019s surface. The thickness of the fluid boundary layer is defined as the distance from the surface at which the fluid speed decreases by 90% compared to Hydra\u2019s speed, that is, the distance at which the fluid is no longer following Hydra\u2019s surface (Vogel, 2020). During peak contraction, Hydra\u2019s speed $U=U_{PC}$ is on the order of 10 mm/s, Re increases to the order of 1, which indicates greater inertial effects that result in thinning of the fluid boundary layer (Schlichting and Gersten, 2000).\n\nTo label the fluid boundary layer and assess the animal\u2013fluid interactions experimentally (Nawroth and Dabiri, 2014), we added fluorescent dye adjacent to Hydra\u2019s oral region while in the inter-contraction interval state. In one representative recording (Figure 2D, left, Video 2), the dye faithfully followed the fully extended animal\u2019s slow revolutions during the inter-contraction interval for more than 1 min, qualitatively confirming the presence of a stably attached fluid boundary layer. Intriguingly, as the animal underwent a spontaneous contraction (with two peak contraction events), the dye separated from the animal\u2019s surface and stayed behind as Hydra retracted, indicating shedding of the original fluid boundary layer (Figure 2D, right, Video 2). Since the animals tend to slowly re-extend into a random direction (Figure 2\u2014figure supplement 4), their chances of re-encountering the shed fluid are small. To confirm these observations quantitatively and to measure the dynamically changing fluid boundary layer thickness, we recorded the microscale fluid motion using particle imaging velocimetry (PIV) as described previously (Nawroth et al., 2017). During inter-contraction intervals, fluid parcels at distances far from the body column followed the animal\u2019s trajectory, reflecting an expansive fluid boundary layer of almost one full-body length in thickness (fluid boundary layer thickness = 5 mm) (Figure 2E and G, Figure 2\u2014figure supplement 5A, Video 3). In contrast, during peak contractions, only the fluid close to Hydra\u2019s surface accelerated with the body, whereas fluid at further distances remained unaffected (fluid boundary layer thickness = 1.5 mm) (Figure 2F and G, Figure 2\u2014figure supplement 5B, Video 3). The thickness of the fluid boundary layer correlated inversely with body speed (Figure 2H). These measurements demonstrate shedding of the fluid boundary layer during contractions and significant reduction in the thickness of the fluid boundary layer that had developed during the inter-contraction interval. Thus, recurrent spontaneous contractions result in regular shedding of the fluid boundary layer (as illustrated by the streak of dye left behind in Figure 2D), enabling Hydra to partially escape from its previous fluid environment and thereby transiently reshape the chemical microenvironment at the epithelial surface where the microbial symbionts are localized. Importantly, the contraction events form a brief perturbation of the inter-contraction interval flow regime at the oral region, while the foot region remains motionless even during peak contractions (Figure 2B) and experiences slow flow speeds of maximal values on the order of 0.1 mm/s (Figure 2\u2014figure supplement 5B). These flow speeds are comparable to flow speeds experienced at the head between contractions (Figure 2\u2014figure supplement 5A). Taken together, these results suggest that Hydra\u2019s spontaneous contractions lead to a maximal shedding of viscous boundary layers near the head\u2019s surface, and minimal shedding near the foot\u2019s surface. This differentiation in the fluid environment could be relevant because of our finding that Hydra\u2019s surface is colonized by foot- and head-dominating microbiota (Figure 1D and E). Contraction-induced fluid boundary layer shedding may enhance the transport of bacteria-relevant compounds, such as metabolites, antimicrobials, and extracellular vesicles (Fischbach and Segre, 2016; \u00d1ahui Palomino et al., 2021), between Hydra\u2019s head and the fluid environment, compared to lower transport near the foot, hence generating biochemical microhabitats that could promote the observed microbial biogeography. This hypothesis is not readily amenable to experimental interrogation. To date, there are no universal tools for experimentally identifying individual and combinations of the many chemical compounds released or absorbed by microbes (Thorn and Greenman, 2012). We therefore probed this hypothesis indirectly. We developed a simple mathematical model of chemical transport in a fluid environment that gets regularly reset by shedding events, as discussed next.\n\n![Video 2.](https://cdn.elifesciences.org/articles/83637/elife-83637-video2.mp4.jpg)\n\n![Video 3.](https://cdn.elifesciences.org/articles/83637/elife-83637-video3.mp4.jpg)\n\n### Physics-based model predicts that contractions increase the exchange rate of chemical compounds to and from the surface\n\nWe formulated a simple physics-based mathematical model of the transport of chemical compounds to and from Hydra\u2019s surface where the microbes reside. We exploited two key findings from our experimental data. First, between contractions, transport of chemical compounds to and from Hydra\u2019s surface is best described by molecular diffusion rather than fluid advection. Second, peak contractions are much shorter and faster than movement during inter-contraction intervals ($T_{PC}\u226aT_{IC}$ and $U_{PC}\u226bU_{IC}$, see Figure 2C), and each peak contraction causes intermittent shedding of the fluid boundary layer and re-extension of Hydra\u2019s head in a random direction. Thus, each contraction resets the fluid microenvironment and replenishes the chemical concentration around Hydra\u2019s head, while the fluid environment at Hydra\u2019s foot remains always at rest, akin to a permanent inter-contraction interval state.\n\nOur dye visualization and flow quantification showed no noticeable background flows between contraction events (Figure 2D). The fact that diffusion is dominant between contractions can be formally shown by computing the P\u00e9clet number Pe = $L\u2062U/D$, which compares the relative importance of advection versus diffusion for the transport of a given compound, such as oxygen. Using the length $L$ of Hydra\u2019s body column, the mean flow speed $U$ over 1 hr (averaging over both inter-contraction intervals and contracting periods), and the constant oxygen diffusion D at 15\u00b0C, we find that Pe is $0.005\u226a1$, implying that diffusion is dominant between contraction events, even when the flow speed $U$ is overestimated by averaging over both inter-contraction intervals and spontaneous contraction periods.\n\nTo reflect the different fluid microenvironments in the highly motile head and static foot, we approximated the respective head and foot surfaces by two non-interacting spheres of radii $a$ and $b$ separated by a distance $L$ (Figure 3A, box). When even a few percent of Hydra\u2019s head or foot surface are covered by living microbes or host cells, the diffusion-limited rate of absorption or emission of a chemical compound by these cells is well approximated by a uniformly covered surface (Berg and Purcell, 1977). Assuming equivalence of the transport of emitted and absorbed chemical substances (see \u2018Materials and methods\u2019), we focus here on absorption only. This implies zero concentration of the chemical compound of interest, say oxygen, at Hydra\u2019s surface. Starting in a compound-rich environment, a concentration boundary layer (CBL) depleted of that chemical compound forms and grows near the surface. In the absence of contractions, the concentration field reaches a steady state with zero rate of change of the compound concentration. Each spontaneous contraction event sheds the chemically depleted fluid boundary layer near the head and effectively resets the depletion zone growth process (Figure 3A). Accounting for unsteady diffusion following each spontaneous contraction, we computed the growth of the depletion boundary layer over time (stages 1\u20133 in Figure 3B), using as an example the diffusion coefficient $D$ of oxygen to derive a dimensional timescale $\\tau=a^{2}/D$ (see \u2018Materials and methods\u2019). In the absence of fluid boundary layer shedding, such as near Hydra\u2019s static foot, steady state is approached as time increases (stage 4 in Figure 3B). Near Hydra\u2019s head, however, each spontaneous contraction resets the CBL thickness to zero (Figure 3C, top), resulting in an instantaneous and increased uptake of molecules, such as oxygen, in the head region (blue) compared to the foot (orange). Consecutive contractions increase the maximal cumulative uptake of compounds near Hydra\u2019s head (blue) compared to the foot (orange) (Figure 3C, bottom).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83637/elife-83637-fig3-v2.jpg)\n\n**Figure 3.:** (A) Left, box: simplified animal geometry assumed in model consists of a sphere representing the head and a smaller sphere representing the basal foot. Right: by Fick\u2019s law, a chemically depleted concentration boundary layer (CBL) forms around Hydra\u2019s head and foot region through continuous uptake of chemical compounds at the surface during the inter-contraction interval (IC). The CBL is shed from the head region, but not the foot region, through spontaneous contractions (PC). (B) Computationally modeled growth of chemically depleted CBL around Hydra\u2019s head over time until steady state is reached (panel 4), assuming continuous uptake at surface and unlimited supply at far distance. (C) Top: growth of chemically depleted CBL as a function of time with and without contractions. Bottom: instantaneous and cumulative uptake rate, respectively, of a given chemical compound (here: oxygen) during the CBL dynamics above; (D) Predicted increase in cumulative uptake rate (as percentage of steady state) of a given chemical compound over 48 hr as a function of spontaneous contraction frequencies within the observed range (purple), and of increasing frequencies with unconstraint number of spontaneous contractions (magenta) compared to a constraint number of spontaneous contractions (blue graph).\n\nTo investigate the functional implications of experimentally observed temporal distribution of spontaneous contractions over many hours, we combined our physics-based model of chemical transport (Figure 3A) with a stochastic model of contraction events. Specifically, the temporal sequence of Hydra\u2019s spontaneous contractions can be estimated mathematically by a Poisson distribution of mean $\\lambda$, given that the distribution of inter-contraction intervals are best fitted by an exponential distribution of mean $1/\\lambda$ (Figure 2\u2014figure supplement 3B). We calculated analytically the expected mean and standard deviation of the cumulative uptake $J_{I\u2062C}$ over a single inter-contraction period $T_{IC}$ and of the cumulative uptake J over an extended period T (containing multiple $T_{IC}$) (see \u2018Materials and methods\u2019). We found that the expected mean value of $J_{IC}$, given by $\u27e8J_{IC}\u27e9=\\sqrt{(a^{2}/\\lambda\u2062D)}$, decreases with increasing contraction frequency $\\lambda$, while the expected mean value of J, given by $\u27e8J\u27e9=\\sqrt{(a^{2}\u2062\\lambda/D)}$, increases with increasing $\\lambda$. This is intuitive: as the contraction frequency increases, the inter-contraction time $T_{IC}$ decreases, so does the expected uptake $J_{IC}$ over a single inter-contraction period $T_{IC}$. However, the fluid environment gets reset more often, with each resetting event replenishing the chemical concentration, leading to an increase in the expected cumulative uptake $J$ over an extended period $T$ containing multiple contraction events.\n\nNext, we numerically simulated data sets of inter-contraction intervals $T_{IC}$ (Figure 2\u2014figure supplement 3C) drawn from exponential distributions of mean $1/\\lambda$, where we let $\\lambda$ range from 0 to 10 at 0.05 intervals. For each $\\lambda$, we conducted 10,000 numerical experiments, each lasting for a fixed total time period $T=48$ hr. The obtained number of contraction events in each numerical experiment consisted of one realization taken from a Poisson distribution of mean $\\lambda$. The total number of contraction events over all experiments was normally distributed, as expected from the law of large numbers (see \u2018Materials and methods\u2019). We computed numerically the cumulative oxygen uptake J over T = 48 hr for each realization (normalized by the cumulative uptake at steady state), and for each $\\lambda$, we calculated the mean and standard deviation of the computed $J$. Plotting the mean and standard deviation of $J$ as a function of $\\lambda$ (Figure 3D), we found that increasing \u03bb increases the cumulative uptake $J$ and that the mean (solid black line) and standard deviation (thick purple segment) are in excellent agreement with analytical predictions (see \u2018Materials and methods\u2019).\n\nSpontaneous contraction frequencies on the order of 10 contractions per hour and more have been reported in the Hydra (Murillo-Rincon et al., 2017, Yamamoto and Yuste, 2020), indicating that, in theory, increases in uptake rates are possible. In our experience, however, such high frequencies occur only transiently when Hydra has been stressed, for example, by transferring the animals into very small containers such as concave glass for imaging purposes. At later time points, the contraction frequency of animals in these conditions converge towards an spontaneous contraction rate around three contractions per hour (Figure 2\u2014figure supplement 6), similar to what we observed in our regular setup condition using a large beaker setup (Figure 2\u2014figure supplement 2A, control condition). This suggests that under unconstrained conditions, Hydra\u2019s baseline contraction rate per hour is near 3, rather than 10.\n\nWe used the model to test the effect of limiting the maximal number of contractions over 48 hr to 144 contractions, which is the total number of contractions at an average spontaneous contraction frequency $\\lambda=3$ contractions per hour. Effectively, this constraint means that once the maximum number of contractions is reached, no additional contractions are permitted during the remainder of the 48 hr, mimicking, for example, a finite energy budget for spontaneous contractions. Interestingly, imposing this constraint showed that maximal uptake gains are achieved at contractions frequencies consistent with the imposed constraint (Figure 3D, thick blue graph), and that increasing \u03bb beyond three contractions per hour decreases the cumulative uptake.\n\nWhen testing the effect of a constant-rate contraction activity, that is, with a constant $T_{IC}$ approximately equal to $48/\\lambda$ hours, the model predicts a slightly increased uptake compared to stochastic activity, indicating that a precise rhythm would only confer a small benefit over the stochastic mechanism (Figure 3D, thin purple and blue graphs). Analogous results hold for the removal for accumulated chemicals produced by microbes at Hydra\u2019s surface (see \u2018Materials and methods\u2019).\n\nOur model indicates that Hydra\u2019s spontaneous contractions facilitate a greater exchange rate \u2013 including both uptake and release \u2013 of chemical compounds in the oral region as compared to the static foot region. When spontaneous contraction frequency is reduced, the maximal exchange rate near the head is reduced as well and, in the extreme case of zero contractions, becomes almost identical to the steady state in the foot region.\n\nThe simplicity of the model should not distract from the universality of the mechanism it probes: the effect of stochastic contractions on the transport of chemicals to and from a surface exhibiting spontaneous wall contractions. To make analytical progress, we assumed the surface is spherical, but, by continuity arguments, the conclusions we arrived at are qualitatively valid even for non-spherical surfaces. These conclusions can be restated concisely as follows: fast spontaneous contractions of an otherwise slowly moving surface in a stagnant fluid medium cause impromptu shedding of the fluid boundary layer and lead to improved transport of chemicals to and from the surface between contraction events. Higher contraction frequencies are beneficial, but require additional, may be prohibitive, metabolic cost. A stochastic distribution of contraction events over time, following a Poisson process, produces benefits that are nearly as good as those produced by regular contractions, but without the need for a biological machinery to maintain a precise rhythm. Limiting the total number of contractions leads to decreased performance at contraction frequencies beyond what would allow the contraction events to be Poisson distributed.\n\nTaken together, our model suggests that changing the spontaneous contraction frequency will alter the fluid microenvironment and biochemical concentrations experienced by Hydra\u2019s microbial community; in particular, reducing the spontaneous contraction frequency would make the microenvironment near Hydra\u2019s head, where the greatest fluid boundary layer shedding occurs during spontaneous contractions, more similar to the foot, where minimal fluid boundary layer shedding occurs.\n\n### Reducing the spontaneous contraction frequency changes the colonizing microbiota\n\nTo directly probe the impact of spontaneous contractions on the associated microbial community, we decreased Hydra\u2019s spontaneous contraction frequency by two established methods: (1) continuous exposure to either light or darkness (Kanaya et al., 2019, Rushforth et al., 1963) and (2) chemical interference with the ion channel inhibitors menthol and lidocaine (Klimovich et al., 2020; Figure 2\u2014figure supplement 1). Continuous exposure to light and treatment with ion channel inhibitor lidocaine reduced the spontaneous contraction frequency slightly from an average value of 2.5 contractions per hour in control conditions to 2.3 contractions per hour in continuous light and to 2.0 contractions per hour in lidocaine treatment (Figure 2\u2014figure supplement 2A) (note that we were unable to make the measurements in the continuous dark condition). Treatment with ion channel inhibitor menthol almost completely abolished the occurrence of contractions. The treatments reduced spontaneous contraction frequency without significantly changing the frequency of other common fast contractile behaviors, such as somersaulting (Figure 2\u2014figure supplement 2B and C; Han et al., 2018). Consistent with earlier studies (Kanaya et al., 2019, Klimovich et al., 2020), lidocaine and constant light treatment increased the likelihood of longer TIC; the contraction events remained, however, Poisson-distributed and TIC remained exponentially distributed (Figure 2\u2014figure supplement 3B), as assumed in our mathematical model. Computing the average contraction frequency based on the best exponential fit to biological data, we found that it to be equal to 2.5, and 2.2 contractions per hour for the lidocaine, and continuous light treatments, respectively, as opposed to 2.9 contractions per hour for the control, again confirming the reduced contraction rate in the treatment groups.\n\nWe next investigated the effects of the altered spontaneous contraction frequency on Hydra\u2019s microbiota. A 48 hr exposure to either pharmacological agents (menthol and lidocaine) or exposure to different light regimes led to a similar and significant shift in the microbial community (Figure 4, Figure 4\u2014figure supplement 1). The relative abundance bar plot and principal coordinate analysis (PCoA) of the microbial composition showed a clustering of the different treatments in response to a disturbed contraction frequency. The extent of the shift was positively correlated with the magnitude of the decrease in contraction frequency and, consequently, was the greatest in menthol-treated animals. This shift consisted of a change in the relative abundance rather than a disappearance of bacterial taxa or bacterial load (Figure 4\u2014figure supplement 2). The fact that both light and pharmacological manipulations resulted in similar effects provides strong evidence that the change in relative bacterial abundance is related to the altered spontaneous contraction frequencies. We further verified by using a minimal inhibitory concentration (MIC) assay that there were no inhibitory effects of the pharmacological substances on the bacteria (Figure 4\u2014figure supplement 3).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83637/elife-83637-fig4-v2.jpg)\n\n**Figure 4.:** Reducing the spontaneous contraction frequency with 48 hr treatment of ion channel inhibitors (menthol and lidocaine), continuous light exposure (cont. light), or continuous dark (cont. dark) exposure significantly affects the bacterial community. Control is incubation in freshwater (Hydra medium) and 12 hr of light alternating with 12 hr of dark conditions. (A) Bar plot of the relative abundance on the genus level showing the effect of the ion channel inhibitors. (B) Bar plot of the relative abundance on the genus level showing the effect of the light treatments. (C, D) Analysis of the bacterial communities associated with the control and disturbed conditions using principal coordinate analysis of the Bray\u2013Curtis distance matrix. The polyps with disturbed contraction frequency show distinct clustering (ellipses added manually). (E\u2013G) Box plots displaying the fold change of the relative abundance compared to the control of Flavobacterium, Pseudomonas, and Acidovorax in response to the different treatments. (For all plots: n = 8-10) *p\u22640.05; **p\u22640.01; ***p\u22640.001 (ANOVA and Kruskal\u2013Wallis).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83637/elife-83637-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** A. The relative abundance of the microbiota after 48h of treatment shows that lidocaine/menthol and dark-dark/light-light treatments cause shifts in microbiota composition. Flavobacterium, Pseudomonas and Acidovorax increased in their relative abundance in the treatment groups (n=8-10). B. The spatial distribution of the microbiota along the body axis under normal/undisturbed condition (n=4). C\u2013E. The spatial distribution of the genera that are increasing in abundance after treatment. All three, Flavobacterium, Pseudomonas and Acidovorax, have a higher abundance in the foot region (n=4).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83637/elife-83637-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Different principal coordinate analyses (PCoA) of the bacterial communities using different distance matrixes. Here: Bray-Curtis, Binary Pearson and Weighted Unifrac. In all three PCoA plots, a shift of the bacterial communities is visible in respond to the different treatments. Table. Statistical analysis of the PCoAs using Anosim and Adonis. Experiment-1 and -2 are two independent experiments conducted in an identical way using either the ion channel inhibitor menthol and lidocaine or different light conditions (n = 8-10).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/83637/elife-83637-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** The bacterial load does not show a significant difference compared to control (Kruskal\u2013Wallis [non-parametric] and Dunn\u2019s multiple comparison test) tested by qRT-PCR using Eub-primer (bacterial load measure) and Elon-F (gDNA host measure). The data consist of two technical replicates (two runs) and 4\u20135 biological replicate. The error bars show the mean with SEM. The data are normalized to the mean of the respective control and shown as percentages.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/83637/elife-83637-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** We found that no bacteria are shed during a contraction cycle. Here, snapshots from video recording of Hydra vulgaris AEP recolonized with fluorescent Curvibacter AEP1.3 (white) and filmed over time (Videos 4 and 5). Here representative frames extracted from the videos are shown. (A, C, D) Tentacle in a relaxed state (A), contracting (C), and maximal contracted (D). No fluorescently labeled bacteria are seen to detach. (E\u2013G) The body column in different stages. (E) Relaxed stage, contracting (F), and maximal contracted (G). Again, no fluorescently labeled bacteria are seen to detach. d and g are close ups of (D) and (G), respectively. Scale bar: 100\u00b5m.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/83637/elife-83637-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** To visualize the glycocalyx on the surface of intact hydras and polyps incubated in menthol for 48 hr, transgenic polyps expressing GFP in the ectoderm were stained using a specific antibody against PPOD4 protein. Mid-body optical sections were made using confocal microscopy. Representative low-magnification snapshots are shown in (A, B). High-magnification images of three representative polyps for control (C\u2013E) and menthol-treated polyps (F\u2013H) are shown. To measure the glycocalyx thickness, the fluorescence profile across the ectoderm has been recorded and quantified (lower panel on [C\u2013H], each graph represents an average profile from 10 transects). Average distribution of the PPOD4 signal from control (black line, on I) and menthol-treated polyps (blue line, on I) provides clear evidence that the reduction in contraction frequency by menthol does not change the glycocalyx thickness.\n\nWe evaluated the differences between control and treatment groups for up- or downregulated bacteria using linear discriminant analysis effect size (LEfSe) (Segata et al., 2011). When spontaneous contractions were reduced, the foot-specific microbial colonizers Flavobacterium, Pseudomonas, and Acidovorax (Figure 1E and F) became more abundant (Figure 4E\u2013G). Taken together, these data suggest that a reduced spontaneous contraction frequency alters the microbial composition and potentially expands the biogeography of foot-associated bacteria.\n\nOur fluid and transport analysis suggests that these changes in the microbiota result from an altered biochemical microenvironment near Hydra\u2019s head, which is shaped by the spontaneous contraction frequency. In particular, our mathematical model, which faithfully mimics the distribution of inter-contraction intervals under control and disturbed conditions (Figure 2\u2014figure supplement 3B and C), predicts that the reduction in spontaneous contraction frequency seen in the experimental treatments (lidocaine, methanol, continuous light) decreases the cumulative uptake or release of any bacteria-relevant chemical compound near Hydra\u2019s head (Figure 3C), such that the head\u2019s biochemical microenvironment becomes more similar to the static foot region (Figure 3C).\n\nHowever, another explanation of the observed changes in the microbiota could be that the contractions are important for the direct displacement of the microbes to other parts of the body. To investigate whether spontaneous contraction have a direct physical impact on the microbiome, we first took video recordings of a normal Hydra polyp colonized with fluorescently labeled bacteria during a full contraction cycle. We could neither observe an overall change in the colonization pattern nor the physical detachment of labeled bacteria (Figure 4\u2014figure supplement 4, Videos 4 and 5). Thus, at short time scale (few seconds), an individual contraction cycle does not affect the biogeography of the microbiome. We also probed whether a lack of recurrent spontaneous contractions may lead to a remodeled glycocalyx, for example, by hindering its redistribution during spontaneous contractions, and thereby alter the growth conditions of bacteria. Here, we used an antibody specific for a component of Hydra\u2019s glycocalyx (B\u00f6ttger et al., 2012) and visualized the glycocalyx in animals immobilized for a prolonged (48 hr) time period (Figure 4\u2014figure supplement 5). Since we could not detect major changes in the glycocalyx layer, we concluded that the observed changes in the microbiota are unlikely the cause of glycocalyx remodeling. These results strongly suggest that the fluid boundary layer shedding and resultant chemical exchange by Hydra\u2019s spontaneous contractions stabilize microbial colonization and contribute to shaping the microbial biogeography along the body column (Figure 1D and E).\n\n![Video 4.](https://cdn.elifesciences.org/articles/83637/elife-83637-video4.mp4.jpg)\n\n![Video 5.](https://cdn.elifesciences.org/articles/83637/elife-83637-video5.mp4.jpg)\n\n## Discussion\n\nThe epithelia and microbial symbionts of Hydra\u2019s body walls interface with slow-moving or highly viscous fluids. They rely on diffusion for the transport of chemical compounds to and from the surface. Hydra cannot engage in more efficient transport mechanisms via fluid advection (Nawroth et al., 2017, Gilpin et al., 2017, Pepper et al., 2010) because it lacks the ciliary or muscular appendages used by other organisms in the low and intermediate Reynolds number regimes to generate unsteady flows and vortices. Soft corals, for example, operate at intermediate Reynolds numbers and use rhythmic pulsations of their tentacles to generate bulk flow that removes oxygen waste (Samson et al., 2019). Although individual corals reach diameters similar to that of fully extended Hydra (ca. 1 cm), they usually occur in dense clusters and contract rhythmically at 0.5 Hz, leading to collective fluid advection with P\u00e9clet numbers on the order of 10\u20131000, compared to Pe = 0.005 computed for a single Hydra with only a handful of contractions per hour, indicating that the two organisms represent different scenarios. Our study suggests that Hydra does not leverage fluid advection but instead facilitates the diffusion process through its spontaneous contractions, which cause transiently and locally higher flow rates and greatly improve the exchange of fluid near the epithelial surface by shedding the so-called fluid boundary layer. This is analogous to a recently discovered \u2018sneezing\u2019 mechanism by which marine sponges remove mucus from their surface by recurrent spontaneous contractions (Kornder et al., 2022). Combining high-throughput microbiota profiling, in vivo flow analysis, and mathematical modeling, we found that such exchange facilitates the transport of compounds, including nutrients, waste, antimicrobials, and gases, to and from surface-residing symbiotic microbiota and may take part in maintaining a specific microbiota biogeography along the Hydra\u2019s body column (Augustin et al., 2017). Interestingly, this distinct spatial colonization pattern along the body column could not only be essential for pathogen defense (Bosch, 2013, Fraune et al., 2015) but could also be important for modulating the frequency of Hydra\u2019s spontaneous contractions (Murillo-Rincon et al., 2017), suggesting a feedback loop that could be the focus of future studies.\n\nOur results may also have broader applicability. Hydra\u2019s mucous layer covering the epithelium \u2013 an inner layer with stratified organization devoid of bacteria, beneath an outer loose layer colonized by symbionts \u2013 is similar to the mammalian colon. Like Hydra, the peristaltic gut displays recurrent spontaneous contractions (Gill et al., 1986, Koch et al., 1988, Swaminathan et al., 2016) and a viscosity-dominated, low Reynolds number flow regime (Janssen et al., 2007). Disturbance of this contractile activity (e.g., intestinal dysmotility) is correlated with dysbiosis (Hadizadeh et al., 2017, Scott and Cahall, 1982, Vandeputte et al., 2016), which can lead to bacterial overgrowth in the small intestine and irritable bowel syndrome (Kostic et al., 2014, Toskes, 1993). Microfluidic models mimicking the viscous environment and laminar flow of the gut suggest that intestinal contractions mix the luminal content, which appears to modulate microbial density and composition (Cremer et al., 2016). These observations are consistent with our findings in Hydra and suggest that spontaneous contractions might both depend on microbial colonizers and also regulate host\u2013bacteria associations.\n\nFinally, our non-dimensional model enables the generalized prediction that body wall contractions, whether in Hydra, the gut, or other systems, cause relative improvement of transport for any compound that is produced or consumed near an epithelial surface in low Reynolds number conditions, thereby simultaneously preventing the build-up of metabolic waste and restoring depleted nutrients. Lowering the frequency of spontaneous contractions by 10\u201315%, as seen in our experiments, is predicted to reduce the uptake (or removal) rates of individual compounds by a similar order of magnitude. It is intriguing that such a relatively small change in spontaneous contraction rate altered the microbiome significantly and consistently across treatments. One explanation is that since fluid boundary layer shedding by contractions affects the transport of any chemical compound near the surface, decreasing the contraction rate might alter the uptake or removal of many compounds at once. As shown in a recent study on the response of microbial populations to altered soil properties, such combinatorial effects can greatly exceed, and complicate, the impact of any single factor (Rillig et al., 2019). Intuitively, and confirmed by our model, increasing the frequency of contractions results in greater transport to and from the surface. Since spontaneous contractions are energetically expensive processes, Hydra under normal conditions may get along well with a moderate rate of about three contractions per hour. Our computational model indicates that this rate still provides significant enhancement over purely diffusive transport, and our experimental data show that lower rates tend to destabilize the microbiome. Taken together, this suggests that Hydra\u2019s rhythm of spontaneous contractions might be operating at a sweet spot of efficiency. Furthermore, we demonstrate that a stochastic distribution of a limited number of contractions over time results in a more effective transport than other strategies, such as alternating periods with a higher frequency of contractions with periods that are static. While contractions at regular time intervals would be slightly more effective still, this would require the presence and maintenance of pacemaker circuits with precisely controlled firing frequency. Though future work is needed, our results suggest that Hydra \u2013 and possibly other contractile epithelial systems \u2013 achieve near optimal efficiency without the need for a costly high-precision pacemaker system.\n\nInspired by Dobzhansky\u2019s dictum that \u201cnothing in biology makes sense but in the light of evolution\u201d (Dobzhansky, 1964), we speculate that spontaneous contractions were critical early in the evolution of a gut system to maintain a stable microbiota. In this context, an observation in a new species of hydrothermal vent Yeti crabs, Kiwa puravida n.sp. is of interest (Thurber et al., 2011). The crabs farm symbiotic bacteria on the surface of their chelipeds (claws) and wave these chelipeds continuously in a constant rhythm. In search of an explanation, the authors stated: \u201cWe hypothesize that K. puravida n. sp. waves its chelipeds to shear off boundary layers formed by their epibionts productivity, increasing both the epibionts and, in turn, their own access to food\u201d (Thurber et al., 2011). Pointing in the same direction, a study on multiciliated surface cells in amphibian and some fish embryos ends with the hypothesis that the fluid flow generated by these cells may contribute to managing embryo-associated microbial consortia (Kerney, 2021). In light of these interesting hypotheses, well-controlled perturbation experiments in Hydra may offer a unique model to study both the mechanisms and the in vivo role of host generated water flow in maintaining a stable microbiome.\n\n## Materials and methods\n\n### Animal manipulation and data analysis\n\n#### Animal culture\n\nExperiments were carried out using Hydra vulgaris strain AEP. Animals were maintained under constant environmental conditions, including culture medium (Hydra medium; 0.28 mM CaCl2, 0.33 mM MgSO4, 0.5 mM NaHCO3, and 0.08 mM KCO3), temperature (18\u00b0C), and food according to standard procedures (Klimovich et al., 2019). Experimental animals were chosen randomly from clonally growing asexual Hydra cultures. The animals were typically fed three times a week with first-instar larvae of Artemia salina; however, they were not fed for 24 hr prior to pharmacological interference or light assays, or for 48 hr prior to RNA isolation.\n\n#### Pharmacological interference and light assays\n\nTo alter the contraction frequency of H. vulgaris AEP polyps, the animals were treated for 48 hr with either 200 \u00b5M menthol (Sigma, Cat# 15785) or 100 \u00b5M lidocaine (Sigma, Cat# L5647), or exposed to 48 hr of continuous light or darkness. Control polyps were incubated in Hydra medium and were exposed to a 12 hr light/12 hr dark cycle over the same time period. Water temperature remained stable at 18\u00b0C for all conditions. From hour 24 to hour 32 of the 48 hr experiment, that is, for 8 hr total, 10 polyps each were simultaneously video-recorded in a 50 mL glass beaker, using a frame rate of 20 frames per minute. For comparison with prior studies, single polyps were recorded for 8 hr in a concave slide with a medium volume of 200\u2013500 \u00b5L as previously described (Murillo-Rincon et al., 2017). Using the video recordings, we quantified the number of full-body contractions and somersaulting events in ImageJ/Fiji (Schindelin et al., 2012) and computed the average contraction frequency per hour.\n\n#### DNA extraction and 16S rRNA profiling\n\nTo investigate the effects of a reduced contraction frequency on the microbiota, we exposed normal H. vulgaris AEP polyps to different pharmacological agents and light conditions over a 48 hr time period. Polyps were treated with 200 \u00b5M menthol (Sigma, Cat# 15785), 100 \u00b5M lidocaine (Sigma, Cat# L5647), continuous light or continuous darkness for 48 hr at 18\u00b0C. Control polyps were incubated in Hydra medium and were exposed to a 12 hr light/12 hr dark cycle. Afterward the genomic DNA was extracted from individual polyps with the DNeasy Blood and Tissue Kit (QIAGEN) as described in the manufacturer\u2019s protocol. Elution was performed in 50 \u00b5L. Extracted DNA was stored at \u201320\u00b0C until sequencing. Prior to sequencing, the variable regions 1 and 2 (V1V2) of the bacterial 16S rRNA genes were amplified according to the previously established protocol using the primers 27F and 338R (Rausch et al., 2016). For bacterial 16S rRNA profiling, paired-end sequencing of 2 \u00d7 300 bp was performed on the Illumina MiSeq platform. The 16S rRNA sequencing raw data are deposited at the SRA and are available under the project ID PRJNA842888. The sequence analysis was conducted using the DADA2 pipeline in R 3.6.0 (Callahan et al., 2016). The downstream analysis of the 16S rRNA data (alpha diversity, relative abundance, and beta-diversity) was done in R including the packages phyolseq, vegan, DESeq2, and ggplot2 (McMurdie and Holmes, 2013; Oksanen et al., 2013; Love et al., 2014; Ginestet, 2011). ASVs with <10 reads were removed from the data set. The tables of bacterial abundance were further processed using LEfSe analysis to identify bacterial taxa that account for major differences between microbial communities (Segata et al., 2011). An effect size threshold of 3.0 (on a log10 scale) was used for all comparisons discussed in this study. The results of LEfSe analysis were visualized by plotting the phylogenetic distribution of the differentially abundant bacterial taxa on the Ribosomal Database Project (RDP) bacterial taxonomy.\n\n#### Statistics\n\nStatistical analyses were performed using two-tailed Student\u2019s t-test or Mann\u2013Whitney U-test where applicable. If multiple testing was performed, p-values were adjusted using Bonferroni correction.\n\n#### Quantitative real-time PCR analysis (qRT-PCR)\n\nIn order to investigate the bacterial community change and validate if there is an increase in the bacterial load, we performed quantitative real-time PCR analysis. The samples from the 16S rRNA profiling experiment were used. Amplification was performed as previously described (Klimovich et al., 2018b) using GoTaq qPCR Master Mix (Promega, Madison, USA) and specific oligonucleotide primers (EUB 27F, EUB 338R). Also, 4\u20135 biological replicates of each treatment (light, darkness, menthol, and lidocaine) and control with two technical replications were analyzed. The data were collected using ABI 7300 Real-Time PCR System (Applied Biosystems, Foster City, USA) and analyzed by the conventional \u0394\u0394Ct method.\n\n#### Minimal inhibitory concentration assay (MIC)\n\nTo test whether the ion channel inhibitors (menthol and lidocaine) have an antimicrobial activity, their effect was tested in the MIC assays as previously described (Augustin et al., 2017). The following bacterial strain isolates from the natural H. vulgaris strain AEP microbiota were used: Curvibacter sp., Acidovorax sp., Pelomonas sp., Undibacterium sp., and Duganella sp. (Franzenburg et al., 2013; Klimovich et al., 2020). Microdilution susceptibility assays were performed in 96-microtiter-well plates. We tested a range of concentrations of the ion channel inhibitors in Hydra medium (with an additional 10% concentration of R2A agar) to match the nutrient-poor conditions of the behavioral assay. The concentration range was chosen such that the dose used in the behavioral assay was the middle of the dilution series. The following concentration were tested (in \u00b5M): menthol: 400, 300, 200, 100, and 10; and lidocaine: 10,000, 5000, 2500, 1000, and 100. The inoculum of approximately 100 CFU per well was used. The plates were incubated with the inhibitors for 5\u20137 d at 18\u00b0C. The MIC was determined as the lowest concentration showing the absence of a bacterial cell pellet. The run was designed in a way that every concentration had four replicates.\n\n#### Immunochemical staining of the glycocalyx\n\nTo test whether alterations in the contraction frequency has any effect on the glycocalyx of Hydra, we incubated polyps for 48 hr in menthol solution or S-medium (control) and visualized the glycocalyx by immunochemical staining and confocal microscopy of whole-mount polyps. To facilitate the detection of the Hydra\u2019s epithelial surface, we used transgenic polyps expressing eGFP in the ectoderm (ecto-GFP line A8; Wittlieb et al., 2006). The glycocalyx was stained using a polyclonal antibody raised in chicken against the PPOD4 protein, generously provided by Prof. Angelika B\u00f6ttger. The PPOD4 protein has been previously shown to specifically localize to the glycocalyx layer adjacent to the membrane of ectodermal epithelial cells in Hydra (B\u00f6ttger et al., 2012). Polyclonal rabbit-anti-GFP antibody (AB3080, Merck) was used to amplify the GFP signal. Immunohistochemical detection was carried out as described previously (Klimovich et al., 2018b). Briefly, polyps were relaxed in ice-cold urethane, fixed in 4% paraformaldehyde, incubated in blocking solution for 1 hr, and incubated further with the primary antibodies diluted to 1.0 \u03bcg/mL in blocking solution at 4\u00b0C. Following the protocol of B\u00f6ttger and co-authors, tissue permeabilization steps were omitted to avoid detection of immature glycocalyx components within epithelial cells. Alexa Fluor 488-conjugated goat anti-rabbit antibodies (A11034, Thermo Fisher) and Alexa Fluor 546-conjugated goat anti-chicken antibodies (A11040, Thermo Fisher) were diluted to 2.0 \u03bcg/mL and incubations were carried out for 2 hr at room temperature. The samples were mounted into Mowiol supplemented with 1.0% DABCO antifade (D27802, Sigma). Confocal mid-body optical sections were captured using a Zeiss LSM900 laser scanning confocal microscope. To measure the glycocalyx thickness, the fluorescence profile across the ectoderm has been recorded and quantified for 10 transects, each 10 \u03bcm long, using Zen Blue v. 3.4.91 software (Zeiss).\n\n#### GFP labeling of Curvibacter sp. AEP1.3\n\nTo visualize the colonization and dynamics during contraction events of Curvibacter sp. AEP1.3, we chromosomally integrated sfGFP behind the glmS-operon via the miniTn7-system as previously established by Wiles et al., 2018. The protocol was modified in order to manipulate the freshwater bacterium Curvibacter sp. AEP1.3 as follows: instead of the Escherichia coli SM10, we used the strain E. coli MFDpir as delivery system because bi- and triparental mating was already observed (Wein et al., 2018; Ferri\u00e8res et al., 2010). In addition, the growth medium was changed to the routinely used medium of Curvibacter sp.R2A and antibiotic concentration of the selection media was adjusted to 2 \u03bcg/mL.\n\n### Kinematics and fluid flow analysis\n\n#### Fluid boundary layer visualization\n\nThe fluid boundary layer around Hydra was visualized as described previously (Nawroth et al., 2010; Nawroth and Dabiri, 2014). Briefly, animals were placed into custom-made cube-shaped acrylic containers filled with Hydra medium and allowed to acclimatize for 30 min. The fluid boundary layer was visualized using fluorescein dye (Sigma-Aldrich) added near Hydra\u2019s head during inter-contraction periods using a transfer pipette. An LED light source was used to illuminate the dye from the side. Videos were recorded using a Sony HDR-SR12 camcorder (1440 \u00d7 1080 pixels, 30 frames per second; Sony Electronics, San Diego, CA) mounted to a tripod in front of the custom container. Videos were processed to enhance the contrast of the dye with respect to the background using Adobe Premiere Pro (San Jose, CA).\n\n#### Fluid flow analysis\n\nFluid flow around H. vulgaris AEP polyps was quantified using particle image velocimetry under a stereo microscope as described previously (Nawroth et al., 2012). Briefly, H. vulgaris AEP polyps were placed in a custom-made acrylic containers with glass walls filled with Hydra-medium that contained 1 \u00b5m green-fluorescent microspheres (Invitrogen). A violet laser pointer mounted on a custom micromanipulator stage was aligned with a plano-concave cylindrical lens with a focal length of \u22124 mm (Thorlabs, Newton, MA) to create an excitation light sheet that captured the particles in ca. 1 mm thick plane across or along the animal\u2019s body column. The green-emitting particles were recorded from top or side using a stereo microscope equipped with a long pass filter (to remove the violet excitation wavelength) and a camera (same as above) mounted to the eyepiece. Videos were recorded at 60 frames per second. We used MATLAB (MathWorks, Natick, MA) with an open-source code package (PIVlab Thielicke and Stamhuis, 2014) to measure the particle displacement field across the illuminated plane at each time point and derive the instantaneous planar flow velocity field. From this vector field, the flow velocity magnitude (speed) profiles along lines extending perpendicular form hydra\u2019s surface (Figure 2E and F) were extracted to determine the fluid boundary layer thickness (Figure 2\u2014figure supplement 5), defined here as the distance normal from the surface to the point in the fluid where flow velocity has reached 90% of free stream velocity (here assumed zero), as commonly done in biological systems (Vogel, 2020).\n\n#### Body kinematics\n\nFrom the videos described above, body kinematics were extracted by manually labeling the head and the foot of Hydra in the video and then tracking the displacement of the labels over time using the open-source software Fiji (Schindelin et al., 2012) with plugin TrackMate (Tinevez et al., 2017). Using these displacement data, we computed Hydra body length and movement speed using MATLAB.\n\n### Physics-based modeling of chemical transport to Hydra\u2019s surface\n\n#### Concentration field surrounding an absorbing surface\n\nWe approximated Hydra\u2019s head by a sphere of radius $a$ for simplicity and analyzed the case in which only molecular diffusion in the suspending fluid governs transport (uptake) of a chemical species of diffusivity $D$ to Hydra\u2019s spherical head. Assuming axisymmetry, the concentration of the chemical compound $C\u2062(r,t)$ depends on radial distance $r$ from the center of Hydra\u2019s head and $t$ is time. The unsteady diffusion equation in spherical coordinates is given by Carslaw and Jaeger, 1959; Berg and Purcell, 1977.\n\n$$\n\\frac{\\partial\u2061C}{\\partial\u2061t}=D\u2062\\frac{1}{r^{2}}\u2062[\\frac{\\partial}{\\partial\u2061r}\u2062(r^{2}\u2062\\frac{\\partial\u2061C}{\\partial\u2061r})],\n$$\n\nsubject to absorbing boundary conditions $C\u2062(t,r=a)=0$ at Hydra\u2019s surface and constant concentration far from the Hydra $C\u2062(t,r\u2192\u221e)=C_{\u221e}$. The unsteady solution is given by\n\n$$\nC\u2062(t,r)=C_{\u221e}\u2062[1-\\frac{a}{r}+\\frac{a}{r}\u2062erf\u2062(\\frac{r-a}{\\sqrt{4\u2062D\u2062t}})].\n$$\n\nwhere $erf\u2062(\u22c5)$ is the error function with $erf\u2062(0)=0$ and $erf\u2062(\u221e)=1$. Note that this solution satisfies the boundary and initial conditions converges as $t\u2192\u221e$ to the steady-state solution $C=C_{\u221e}\u2062(1-a/r)$.\n\nThe radial concentration gradient is given by\n\n$$\n\\frac{\\partial\u2061C}{\\partial\u2061r}=C_{\u221e}\u2062[\\frac{a}{r^{2}}-\\frac{a}{r^{2}}\u2062erf\u2062(\\frac{r-a}{\\sqrt{4\u2062D\u2062t}})+\\frac{a}{r}\u2062\\frac{2}{\\sqrt{\\pi}}\u2062\\frac{1}{\\sqrt{4\u2062D\u2062t}}\u2062e^{-(r-a)^{2}/4\u2062D\u2062t}].\n$$\n\nThe unsteady uptake of a given chemical compound is defined by $I=\u2212\u222en\u22c5D\u2207CdS$, where $n$ is the unit normal, and $d\u2062S=2\u2062\\pi\u2062R^{2}\u2062sin\u2061\\theta\u2062d\u2062\\theta$ is the element of surface area of the sphere,\n\n$$\nI=\\int_{0}^{\\pi}2\\piD\\frac{\u2202C}{\u2202r}|_{r=a}a^{2}sin\u2061\\thetad\\theta=4\\piDC_{\u221e}a[1+\\frac{1}{\\sqrt{\\pi}}\\sqrt{\\frac{\\tau}{t}}],\n$$\n\nwhere $\\tau=a^{2}/D$ is the characteristic diffusion time scale.\n\nAt steady state, the concentration is given by $C_{s\u2062s}\u2062(r)=C_{\u221e}\u2062(1-a/r)$; the instantaneous uptake of a chemical compound is $I_{ss}=4\u2062\\pi\u2062D\u2062C_{\u221e}\u2062a$, and the cumulative uptake $J_{ss}$ over a time interval $T$ is $J_{ss}=I_{ss}\u2062T$.\n\n#### Concentration field surrounding an emitting surface\n\nThe transport of a chemical compound of diffusivity $D$ produced by emitters covering Hydra\u2019s head is equivalent but opposite to that of a compound absorbed at the surface. To verify this statement, let $C~\u2062(t,r)$ be the concentration field around an emitting surface. The concentration field $C~$ is governed by the unsteady diffusion equation in (Equation 1), albeit for a different set of boundary conditions. At the surface, the concentration is given by the boundary condition $C~\u2062(t,r=a)=C_{\u221e}$, and far from the surface the concentration is nil, $C~\u2062(t,r\u2192\u221e)=0$. Introducing the transformation $C~=C_{\u221e}-C$, and by linearity of (Equation 1), we get that the unsteady solution is $C~\u2062(t,r)=C_{\u221e}-C\u2062(t,r)$, where $C\u2062(t,r)$ is given in (Equation 2),\n\n$$\nC~=C_{\u221e}\u2062[\\frac{a}{r}-\\frac{a}{r}\u2062erf\u2062(\\frac{r-a}{\\sqrt{4\u2062D\u2062t}})].\n$$\n\nThe radial concentration gradient $\\partial\u2061C~/\\partial\u2061r=-\\partial\u2061C/\\partial\u2061r$ is the opposite of the absorbing gradient in (Equation 3), and the unsteady production of a given chemical compound $I~=-I$ is opposite to the unsteady uptake $I$ in (Equation 4). It thus suffices to study either chemical absorption or production, with the understanding that the two systems are equivalent. In the following, we focus on chemical absorption.\n\n#### Concentration uptake modified by contraction events\n\nConsidering a contraction event at $t=0$ and assuming no additional contractions during an interval $T_{i}$, corresponding to an inter-contraction time period, the cumulative uptake during this time period becomes\n\n$$\nJ_{i}=\\int_{0}^{T_{i}}Idt=4\\piDC_{\u221e}a\\int_{0}^{T_{i}}(1+\\frac{1}{\\sqrt{\\pi}}\\sqrt{\\frac{\\tau}{t}})dt.\n$$\n\nUpon integration, we get\n\n$$\nJ_{i}=I_{ss}\u2062T_{i}\u2062[1+\\frac{2}{\\sqrt{\\pi}}\u2062\\sqrt{\\frac{\\tau}{T_{i}}}].\n$$\n\nThe change in the cumulative intake over one inter-contraction period $T_{i}$ relative to the cumulative intake at steady state over the same time period $T_{i}$ is given by\n\n$$\n\\frac{\u0394J_{i}}{J_{iss}}=\\frac{J_{i}\u2212J_{iss}}{J_{iss}}=\\frac{2\\sqrt{\\tauT_{i}}}{\\sqrt{\\pi}}.\n$$\n\nIf we had $N$ contraction events during a time interval $T$, including the first event at $t=0$, with inter-contraction time periods $T_{i}$, $i=1,\u2026,N$, that are not necessarily equal, such that $T=\\sum_{i=1}^{N}T_{i}$, then the total uptake during that period would be (noting that $J_{ss}=I_{ss}\u2062T$)\n\n$$\nJ=4\\piDC_{\u221e}a\\sumi=1N[\\int_{0}^{T_{i}}(1+\\frac{1}{\\sqrt{\\pi}}\\sqrt{\\frac{\\tau}{t}})dt]=J_{ss}+J_{ss}\\frac{1}{T}\\sumi=1N\\frac{2\\sqrt{\\tauT_{i}}}{\\sqrt{\\pi}}.\n$$\n\nThe change in the total cumulative intake with multiple contraction events over the total time period $T$ relative to the cumulative intake at steady state over the same time period is given by\n\n$$\n\\frac{\u0394J}{J_{ss}}=\\frac{J\u2212J_{ss}}{J_{ss}}=\\frac{1}{T}\\sumi=1N\\frac{\u0394J_{i}}{J_{iss}}=\\frac{1}{T}\\sumi=1N\\frac{2\\sqrt{\\tauT_{i}}}{\\sqrt{\\pi}}.\n$$\n\n### Coupling chemical transport with stochastic contraction events\n\nWe have established in this work that the number of contraction events in a total time period $T$ is a Poisson process with expectation $\\lambda\u2062T$ and variance $\\sqrt{\\lambda\u2062T}$, and that the inter-contraction time $T_{i}$ is exponentially distributed with expectation $1/\\lambda$ and variance $1/\\lambda$. Here, $\\lambda$ is the number of contractions per time unit. Here, we derive analytical expressions of the expectations and variances of the incremental and cumulative uptake of a chemical compound between and across contraction events, respectively.\n\n### Expectation and variance of incremental and cumulative uptake\n\nBy definition, the change in cumulative uptake $\u0394\u2062J_{i}/J_{i\u2062ss}$ over an interval $T_{i}$, is a function of the inter-contraction time $T_{i}$, which is an exponentially distributed random variable. Therefore $\u0394\u2062J_{i}/J_{i\u2062ss}$ itself is a random variable. We wish to compute its probability distribution function. Using standard tools from stochastic calculus (Ross, 2014), we arrive at the probability distribution function of the random variable $\u0394\u2062J_{i}/J_{i\u2062ss}$,\n\n$$\nP(\\frac{\u0394J_{i}}{J_{iss}}=x)=\\frac{2\\lambdax}{\\alpha^{2}}e^{\u2212\\lambdax^{2}/\\alpha^{2}},\n$$\n\nwhere $\\alpha=\\frac{2\u2062\\sqrt{\\tau}}{\\sqrt{\\pi}}$ is a constant introduced for notational convenience.\n\nThe expectation of the change in incremental uptake over an interval $T_{i}$ is given by $E[\\frac{\u0394J_{i}}{J_{iss}}]=\\int_{0}^{\u221e}xP(x)dx$. Upon integration by parts, we arrive at\n\n$$\nE[\\frac{\u0394J_{i}}{J_{iss}}]=\\frac{\\sqrt{\\tau}}{\\sqrt{\\lambda}}.\n$$\n\nThe variance is defined as\n\n$$\nV[\\frac{\u0394J_{i}}{J_{ss}}]=E[(\\frac{\u0394J_{i}}{J_{ss}}\u2212E[\\frac{\u0394J_{i}}{J_{ss}}])^{2}]\u27f9V[\\frac{\u0394J_{i}}{J_{ss}}]=\\frac{(4\u2212\\pi)}{\\pi}\\frac{\\tau}{\\lambda}.\n$$\n\nThe change $\u0394\u2062J/J_{ss}$ in cumulative uptake over the time interval $T$ spanning several inter-contraction time periods $T_{i}$ is also a stochastic random variable defined as the random sum of the random variable $\u0394\u2062J_{i}/J_{ss}$ over a random number $N$ of contraction events within $T$, given in (Equation 10). While a closed-form expression of the probability distribution function of $\u0394\u2062J/J_{ss}$ is not readily available, analytical progress can be made by computing the expectation of $\u0394\u2062J/J_{ss}$\n\n$$\nE[\\frac{\u0394J}{J_{ss}}]=\\frac{1}{T}E[\\frac{\u0394J_{i}}{J_{iss}}]E[N].\n$$\n\nSince contraction events follow a Poisson process, the expectation of $N$ contraction events within a time period $T$ is given by $E[N]=\\lambdaT$. Therefore, we can express the expectation of the change in cumulative chemical uptake over an interval of time $T$ by\n\n$$\nE[\\frac{\u0394J}{J_{ss}}]=\\sqrt{\\tau\\lambda}\n$$\n\nThe variance of $\u0394\u2062J/J_{ss}$ conditional on $N$ contractions during a fixed interval $T$ is expressed by\n\n$$\nV[\\frac{\u0394J}{J_{ss}}]=\\frac{1}{T^{2}}E[N]V[\\frac{\u0394J_{i}}{J_{iss}}]\u27f9V[\\frac{\u0394J}{J_{ss}}]=\\frac{(4\u2212\\pi)\\tau}{\\piT}.\n$$\n\nTo summarize, all random variables and their corresponding probability distribution function, expectation (mean), and standard deviation (square root of variance) are listed in Table 1.\n\n**Table 1.**\n Random variables.The number of contraction events $N$ in a time period $T$ follows a Poisson distribution, and the inter-contraction times $T_{i}$ follow an exponential distribution. Combining this stochastic description of contraction events and inter-contraction times with physics-based models of chemical uptake over the interval $T$, we arrive at a stochastic model of incremental uptake over each inter-contraction period $T_{i}$ and cumulative uptake over the interval $T=\\sum_{i}^{N}T_{i}$. The p.d.f., mean (expectation) and standard deviation (stdev =square root of the variance) of the input $(N,T_{i})$ and output $(\\frac{\u0394J_{i}}{J_{iss}},\\frac{\u0394J}{J_{ss}})$ random variables are listed here.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Prob. dist. function</th>\n      <th>Mean</th>\n      <th>Stdev</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Contraction events</td>\n      <td>Poisson:P(N)=(\u03bbT)Ne\u03bbTN!</td>\n      <td>\u03bbT</td>\n      <td>\u03bbT</td>\n    </tr>\n    <tr>\n      <td>Inter-contraction time</td>\n      <td>Exponential:P(Ti)=\u03bbe\u2212\u03bbTi</td>\n      <td>1/\u03bb</td>\n      <td>1/\u03bb</td>\n    </tr>\n    <tr>\n      <td>Incremental uptake</td>\n      <td>P(\u0394JiJiss=x)=2\u03bbx\u03b12e\u2212\u03bbx2/\u03b12</td>\n      <td>\u03c4/\u03bb</td>\n      <td>(4\u2212\u03c0)\u03c0\u03c4\u03bb</td>\n    </tr>\n    <tr>\n      <td>Cumulative uptake</td>\n      <td>P(\u0394JJss)=P(1T\u2211i=1N\u0394JiJiss)</td>\n      <td>\u03bb\u03c4</td>\n      <td>(4\u2212\u03c0)\u03c4\u03c0T</td>\n    </tr>\n  </tbody>\n</table>\n\n### Numerical simulations\n\nIn addition to these analytical calculations of the expectation and variance of the incremental and cumulative uptake, that is, $\u0394\u2062J_{i}/J_{i\u2062ss}$ over $T_{i}$ and $\u0394\u2062J/J_{ss}$ over $T=\\sumT_{i}$, respectively, we also conducted numerical simulations of contraction events and inter-contraction times. We used a common algorithm that exploits the fact that inter-contraction times are exponentially distributed, and we also simulated inter-contraction times until the maximum time period $T$ is achieved. We checked the histograms, expectation, and variance of both contraction events and inter-contraction times obtained from the numerical simulations and verified that they are all in line with theory, with nearly machine precision error in the expectation values obtained from simulations and theory for the range of $\\lambda$ we examined.\n\nFor each value of $\\lambda$, we conducted 10,000 experiments over a time interval T = 48 hr, and for each experiment, we computed $\u0394\u2062J_{i}/J_{i\u2062ss}$ and $\u0394\u2062J/J_{ss}$. We then calculated the expectation (mean) and variance (square of the standard deviation) of $\u0394\u2062J/J_{ss}$ over all 10,000 experiments. Results are shown in the text as a function of $\\lambda$ and are in agreement with the theoretical predications in Table 1.\n",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "354d8fd0-56aa-4550-a57a-5740c689f5af",
+      "submission_id": "9d4d15f1-a304-4cda-bcb3-7d1a17505a33",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83637.sa0](https://doi.org/10.7554/eLife.83637.sa0)\n\nThis important work studies the spontaneous contractions (SC) of the Hydra body wall and presents a mathematical model of nutrient transport to hypothesize the role of SC on maintaining the microbiota. The solid evidence presented yields insights into the functional implications of the SC and the increased nutrient update obtained from mixing the local fluid environment through body wall contractions. The main result represents an important observation about the role of hydrodynamics on organism behavior and its relation to diffusive chemical transport processes.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83637.sa1](https://doi.org/10.7554/eLife.83637.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Spontaneous body wall contractions stabilize the fluid microenvironment that shapes host-microbe associations\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The reviewers have opted to remain anonymous. We regret the delay in furnishing this decision letter to you.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The current introduction and references to related work are quite sparse. Previous studies on marine animals such as coral polyps [Kremien et al., Benefit of pulsation in soft corals, PNAS (2013)] have also shown how periodic body contractions may play a role in mixing their local fluid environment to facilitate nutrient transport. The periodic contractions of Yeti crab chelipeds are mentioned, but this only appears in passing at the very end of the Discussion. The authors should expand the introduction/discussion to provide further background on what is known about mixing in other marine organisms. How do the SC of Hydra compare regarding timescales and the relevant dimensionless groups (e.g. Re, Pe)?\n\n2) The predicted formula for the uptake is in terms of the characteristic timescale \u03c4 of nutrient diffusion. How much variation does \u03c4 exhibit for the compounds required by the microbiota, and which microbes consume the compounds corresponding to the greatest value of \u03c4? In principle, it seems these microbes would be the most sensitive to changes in the SC. Is this consistent with what is observed in your experiments?\n\n3) The authors suggest that the exponential distribution of mean inter-contraction (IC) intervals implies an underlying Poisson stochastic process. But there are a number of ways for an exponential distribution to arise, the authors should soften this statement. (It seems perfectly reasonable to use a Poisson process in the model, however.) On the same point, is there any evidence that the authors can point to, perhaps in other organisms, that indicate that a Poisson process is in fact guiding the behavior?\n\n4) The hydrodynamic model is rather simplistic, the body geometry is essentially neglected, so we are really just looking at scaling laws. But it would seem that a more relevant simple calculation would involve, for instance, cylindrical surfaces. The lengths of the Hydra and its tentacles may play a much larger role than is currently given credit \u2013 for instance the difference in the nutrient uptake might be substantial, based on the logarithmic vs. 1/r scaling of the concentration in 2D vs 3D. Can the authors better justify the choice of a sphere as the most reasonable simple geometrical representation of Hydra, even for extracting scaling behaviors?\n",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "dfd85efa-9d13-4900-af54-ae836da39903",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C1",
+      "claim": "The freshwater polyp Hydra generates spontaneous body wall contractions approximately one every 10-30 minutes while attached to the substratum.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite Hydra's relevance for fundamental research, one of the animal's most salient behaviors remains a mystery since its first description in 1744 (Bayer et al., 1744): it is unclear why Hydra undergoes recurrent full-body contraction-relaxation cycles, approximately one every 10\u201330 min (Figure 1B), while attached to the substratum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the frequency of contractions and cites historical documentation (Bayer et al., 1744) and references Figure 1B showing the pattern.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "464fb2b5-e280-48b0-b118-034dfa29f519",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C2",
+      "claim": "Spontaneous contractions of body walls enhance the transport of chemical compounds from and to the tissue surface where symbiotic bacteria reside.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, by applying experimental fluid dynamics analysis and mathematical modeling, we provide functional evidence that spontaneous contractions of body walls enhance the transport of chemical compounds from and to the tissue surface where symbiotic bacteria reside.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding based on experimental fluid dynamics analysis and mathematical modeling conducted in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "2a1b0477-81d0-4b36-b3c7-7b9778326557",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C3",
+      "claim": "A reduction in the frequency of spontaneous body wall contractions is associated with a changed composition of the colonizing microbiota.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimentally, a reduction in the frequency of spontaneous body wall contractions is associated with a changed composition of the colonizing microbiota.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this experimental finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "c0d873a8-afa8-4408-9d9b-599fe6912c8e",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C4",
+      "claim": "Different microbial species favor different regions along Hydra's body column, including foot- and head-dominating microbiota.",
+      "claim_type": "EXPLICIT",
+      "source": "Regional differences in the glycocalyx have not been reported; however, using 16S rRNA profiling on different sections of Hydra, we found that different microbial species favor different regions along the body column, including foot- and head-dominating microbiota (Figure 1E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports findings from 16S rRNA profiling experiments and references Figures 1E and F showing the spatial distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "64dfb37d-3c00-4124-9ce0-2c963c9c4ede",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C7",
+      "claim": "During inter-contraction intervals, Hydra's body column remains nearly fully extended and slowly revolves at full length around its foothold, tracing a cone-shaped volume over time.",
+      "claim_type": "EXPLICIT",
+      "source": "During inter-contraction intervals, which on average last tens of minutes (Figure 2\u2014figure supplement 3B), Hydra's body column remains nearly fully extended and slowly revolves at full length around its foothold, tracing a cone-shaped volume over time (Figure 2B, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes observed kinematic patterns with reference to Figure 2B and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "cec441a8-fda7-4d27-b7d3-14df5f8c5fa4",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C11",
+      "claim": "At low Reynolds number (0.01), fluid flow is dominated by viscous effects and distinguished by the presence of a laminar and expansive fluid boundary layer.",
+      "claim_type": "EXPLICIT",
+      "source": "At such low Re number, fluid flow is dominated by viscous effects and distinguished by the presence of a laminar and expansive fluid boundary layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript applies established fluid mechanics principles to interpret the calculated Reynolds number.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "4381fd43-1172-4a8f-af60-d24e78c3ff2d",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C13",
+      "claim": "Fluorescent dye added adjacent to Hydra's oral region during inter-contraction intervals faithfully followed the animal's slow revolutions for more than 1 minute, confirming the presence of a stably attached fluid boundary layer.",
+      "claim_type": "EXPLICIT",
+      "source": "In one representative recording (Figure 2D, left, Video 2), the dye faithfully followed the fully extended animal's slow revolutions during the inter-contraction interval for more than 1 min, qualitatively confirming the presence of a stably attached fluid boundary layer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes experimental observations using fluorescent dye visualization with reference to Figure 2D and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "c6fc347f-392f-4f7d-9f64-f1a49c5bcf4c",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C14",
+      "claim": "During spontaneous contractions, the dye separated from the animal's surface and stayed behind as Hydra retracted, indicating shedding of the original fluid boundary layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, as the animal underwent a spontaneous contraction (with two peak contraction events), the dye separated from the animal's surface and stayed behind as Hydra retracted, indicating shedding of the original fluid boundary layer (Figure 2D, right, Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes experimental observations using fluorescent dye visualization with reference to Figure 2D and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "7c2e74c7-c84d-4092-8df9-fe85ce93f50a",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C15",
+      "claim": "During inter-contraction intervals, the fluid boundary layer thickness is almost one full-body length (5 mm).",
+      "claim_type": "EXPLICIT",
+      "source": "During inter-contraction intervals, fluid parcels at distances far from the body column followed the animal's trajectory, reflecting an expansive fluid boundary layer of almost one full-body length in thickness (fluid boundary layer thickness = 5 mm) (Figure 2E and G, Figure 2\u2014figure supplement 5A, Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports measurements from particle imaging velocimetry (PIV) with reference to supporting figures and video.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "c1d565a5-4102-4e8b-a532-89d9f442f7f8",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C16",
+      "claim": "During peak contractions, the fluid boundary layer thickness is 1.5 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, during peak contractions, only the fluid close to Hydra's surface accelerated with the body, whereas fluid at further distances remained unaffected (fluid boundary layer thickness = 1.5 mm) (Figure 2F and G, Figure 2\u2014figure supplement 5B, Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports measurements from particle imaging velocimetry (PIV) with reference to supporting figures and video.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "72436f56-4299-4c49-9987-e4727137dd9f",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C17",
+      "claim": "The thickness of the fluid boundary layer correlated inversely with body speed.",
+      "claim_type": "EXPLICIT",
+      "source": "The thickness of the fluid boundary layer correlated inversely with body speed (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports correlation analysis with reference to Figure 2H showing the relationship.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "90d4b380-ab48-4caf-92a7-5441e0b6a32a",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C18",
+      "claim": "The foot region remains motionless even during peak contractions and experiences slow flow speeds of maximal values on the order of 0.1 mm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the contraction events form a brief perturbation of the inter-contraction interval flow regime at the oral region, while the foot region remains motionless even during peak contractions (Figure 2B) and experiences slow flow speeds of maximal values on the order of 0.1 mm/s (Figure 2\u2014figure supplement 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports flow measurements at the foot region with reference to supporting figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "7fdb0458-e413-4967-b802-f508f65e96bd",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C22",
+      "claim": "Continuous exposure to light reduced the spontaneous contraction frequency from 2.5 to 2.3 contractions per hour.",
+      "claim_type": "EXPLICIT",
+      "source": "Continuous exposure to light and treatment with ion channel inhibitor lidocaine reduced the spontaneous contraction frequency slightly from an average value of 2.5 contractions per hour in control conditions to 2.3 contractions per hour in continuous light and to 2.0 contractions per hour in lidocaine treatment (Figure 2\u2014figure supplement 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports experimental measurements of contraction frequency under different light conditions with reference to supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "52c3ce3b-fa8a-4d51-8246-4346833f5ad2",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C23",
+      "claim": "Treatment with lidocaine reduced the spontaneous contraction frequency from 2.5 to 2.0 contractions per hour.",
+      "claim_type": "EXPLICIT",
+      "source": "Continuous exposure to light and treatment with ion channel inhibitor lidocaine reduced the spontaneous contraction frequency slightly from an average value of 2.5 contractions per hour in control conditions to 2.3 contractions per hour in continuous light and to 2.0 contractions per hour in lidocaine treatment (Figure 2\u2014figure supplement 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports experimental measurements of contraction frequency under lidocaine treatment with reference to supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "7e851c3a-9d50-45b5-ad2e-95d35a6d0068",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C24",
+      "claim": "Treatment with menthol almost completely abolished the occurrence of contractions.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with ion channel inhibitor menthol almost completely abolished the occurrence of contractions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports experimental observations of contraction frequency under menthol treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "80dc695a-251b-4fa0-89ad-e9d8fa257e6d",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C25",
+      "claim": "A 48 hr exposure to either pharmacological agents (menthol and lidocaine) or exposure to different light regimes led to a similar and significant shift in the microbial community.",
+      "claim_type": "EXPLICIT",
+      "source": "A 48 hr exposure to either pharmacological agents (menthol and lidocaine) or exposure to different light regimes led to a similar and significant shift in the microbial community (Figure 4, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports findings from 16S rRNA sequencing experiments with reference to Figure 4 and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "c78a2db6-6577-4c5e-b2a1-e6da4c1b2b2b",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C26",
+      "claim": "When spontaneous contractions were reduced, the foot-specific microbial colonizers Flavobacterium, Pseudomonas, and Acidovorax became more abundant.",
+      "claim_type": "EXPLICIT",
+      "source": "When spontaneous contractions were reduced, the foot-specific microbial colonizers Flavobacterium, Pseudomonas, and Acidovorax (Figure 1E and F) became more abundant (Figure 4E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports findings from LEfSe analysis of 16S rRNA data with reference to figures showing spatial distribution and abundance changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "401bc09f-08da-43df-a325-129b6670b9d7",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C27",
+      "claim": "No fluorescently labeled bacteria were observed to detach during a full contraction cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "We could neither observe an overall change in the colonization pattern nor the physical detachment of labeled bacteria (Figure 4\u2014figure supplement 4, Videos 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports observations from video recordings of fluorescently labeled bacteria during contractions with reference to supporting figure and videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "aea99b50-02cd-4bea-8949-089c0ebdc0e1",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C28",
+      "claim": "No major changes in the glycocalyx layer were detected in animals immobilized for a prolonged (48 hr) time period.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we could not detect major changes in the glycocalyx layer, we concluded that the observed changes in the microbiota are unlikely the cause of glycocalyx remodeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports findings from immunochemical staining experiments visualizing the glycocalyx.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "a6392d36-4111-4a4f-a676-dcb544476919",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C29",
+      "claim": "Hydra's spontaneous contractions were first described in 1744.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite Hydra's relevance for fundamental research, one of the animal's most salient behaviors remains a mystery since its first description in 1744 (Bayer et al., 1744)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites historical documentation (Bayer et al., 1744) for the first description.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "10e8aab9-0f50-47ba-8f7d-e055c8434a74",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C30",
+      "claim": "Rhythmic pulsation of tentacles in corals leads to increased turbulent mixing, which enhances photosynthesis via fast removal of excess oxygen.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, rhythmic pulsation of tentacles in corals, first noted by Lamarck nearly 200 years ago, lead to increased turbulent mixing, which enhances photosynthesis via fast removal of excess oxygen and prevents refiltration of surrounding water by neighboring polyps (Kremien et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published research (Kremien et al., 2013) on coral pulsation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "28d655e9-4c0a-4141-a948-80ae2927ccf8",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C31",
+      "claim": "Hydra's small dimensions likely prevent it from the generation of turbulent mixing.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, Hydra's small dimensions likely prevent it from the generation of turbulent mixing (Purcell, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites established fluid mechanics literature (Purcell, 1977) to support this inference about Hydra's size constraints.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "79f508b9-f22d-40fb-81d5-e9c24a6b2372",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C32",
+      "claim": "The glycocalyx is a multilayered extracellular cuticle covering Hydra's ectodermal epithelial cells and has mucus-like properties.",
+      "claim_type": "EXPLICIT",
+      "source": "The glycocalyx is a multilayered extracellular cuticle covering Hydra's ectodermal epithelial cells, has mucus-like properties, and shapes the microbiome by providing food and antimicrobial peptides (Franzenburg et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the glycocalyx structure and cites published research (Franzenburg et al., 2013).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "d6413dbd-ee0a-4d06-87e6-28272a700690",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C33",
+      "claim": "The composition and distribution of symbiotic microbial communities residing at solid-liquid interfaces are regulated both by interaction with host cells and by the properties of the fluid medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, the composition and distribution of symbiotic microbial communities residing at solid\u2013liquid interfaces, such as in the gut and lung, are regulated both by interaction with host cells and by the properties of the fluid medium (Fang et al., 2021; Franzenburg et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published research (Fang et al., 2021; Franzenburg et al., 2013) on microbial community regulation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "1d8432ea-1ba6-45ab-8c9e-7e08f8622da7",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C36",
+      "claim": "The treatments reduced spontaneous contraction frequency without significantly changing the frequency of other common fast contractile behaviors, such as somersaulting.",
+      "claim_type": "EXPLICIT",
+      "source": "The treatments reduced spontaneous contraction frequency without significantly changing the frequency of other common fast contractile behaviors, such as somersaulting (Figure 2\u2014figure supplement 2B and C; Han et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports experimental observations with reference to supporting figures and cites related work (Han et al., 2018).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "b3525323-186c-4a78-9d74-a3b21aeac2e8",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C37",
+      "claim": "There were no inhibitory effects of the pharmacological substances (menthol and lidocaine) on the bacteria as verified by minimal inhibitory concentration (MIC) assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We further verified by using a minimal inhibitory concentration (MIC) assay that there were no inhibitory effects of the pharmacological substances on the bacteria (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from MIC assays with reference to supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "275859c1-932a-4c63-9653-0d18e1e52a68",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C38",
+      "claim": "Hydra's mucous layer covering the epithelium is similar to the mammalian colon, with an inner layer with stratified organization devoid of bacteria beneath an outer loose layer colonized by symbionts.",
+      "claim_type": "EXPLICIT",
+      "source": "Hydra's mucous layer covering the epithelium \u2013 an inner layer with stratified organization devoid of bacteria, beneath an outer loose layer colonized by symbionts \u2013 is similar to the mammalian colon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript makes a comparative statement about structural similarities between Hydra and mammalian systems.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "71a3cccf-5d9c-49fc-8256-9c56b482a236",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C39",
+      "claim": "The peristaltic gut displays recurrent spontaneous contractions and a viscosity-dominated, low Reynolds number flow regime.",
+      "claim_type": "EXPLICIT",
+      "source": "Like Hydra, the peristaltic gut displays recurrent spontaneous contractions (Gill et al., 1986, Koch et al., 1988, Swaminathan et al., 2016) and a viscosity-dominated, low Reynolds number flow regime (Janssen et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple published studies on gut physiology and fluid dynamics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "00a57536-930e-41f9-b791-551af7cc9bb5",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C40",
+      "claim": "Disturbance of intestinal contractile activity (e.g., intestinal dysmotility) is correlated with dysbiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Disturbance of this contractile activity (e.g., intestinal dysmotility) is correlated with dysbiosis (Hadizadeh et al., 2017, Scott and Cahall, 1982, Vandeputte et al., 2016), which can lead to bacterial overgrowth in the small intestine and irritable bowel syndrome (Kostic et al., 2014, Toskes, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple published studies on the relationship between intestinal motility and microbiota.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "5c993e05-fa19-4d40-8973-77fe014c5487",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C41",
+      "claim": "Microfluidic models mimicking the viscous environment and laminar flow of the gut suggest that intestinal contractions mix the luminal content, which appears to modulate microbial density and composition.",
+      "claim_type": "EXPLICIT",
+      "source": "Microfluidic models mimicking the viscous environment and laminar flow of the gut suggest that intestinal contractions mix the luminal content, which appears to modulate microbial density and composition (Cremer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published research (Cremer et al., 2016) on microfluidic models of the gut.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "f4a346fd-9c36-4ec5-9d9c-c0b7c47e1230",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C42",
+      "claim": "Lowering the frequency of spontaneous contractions by 10-15% is predicted to reduce the uptake (or removal) rates of individual compounds by a similar order of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Lowering the frequency of spontaneous contractions by 10\u201315%, as seen in our experiments, is predicted to reduce the uptake (or removal) rates of individual compounds by a similar order of magnitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this prediction based on the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "36d0d8cc-e462-4a6d-be5b-b30556e6d413",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C43",
+      "claim": "Hydra vulgaris strain AEP was used for experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments were carried out using Hydra vulgaris strain AEP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Materials and methods section explicitly states the strain used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "cba88231-47e1-472b-a76d-0721fe677b31",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C44",
+      "claim": "Animals were maintained at 18\u00b0C temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Animals were maintained under constant environmental conditions, including culture medium (Hydra medium; 0.28 mM CaCl2, 0.33 mM MgSO4, 0.5 mM NaHCO3, and 0.08 mM KCO3), temperature (18\u00b0C), and food according to standard procedures (Klimovich et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Materials and methods section explicitly states the culture temperature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "10477f4a-eaad-46cf-a18b-f9e84c8d104d",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C45",
+      "claim": "The 16S rRNA sequencing raw data are deposited at the SRA and are available under the project ID PRJNA842888.",
+      "claim_type": "EXPLICIT",
+      "source": "The 16S rRNA sequencing raw data are deposited at the SRA and are available under the project ID PRJNA842888.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Materials and methods section explicitly states the data repository information.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "cbb3db63-f309-462c-b419-5c657ee0b25b",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C46",
+      "claim": "The PPOD4 protein specifically localizes to the glycocalyx layer adjacent to the membrane of ectodermal epithelial cells in Hydra.",
+      "claim_type": "EXPLICIT",
+      "source": "The PPOD4 protein has been previously shown to specifically localize to the glycocalyx layer adjacent to the membrane of ectodermal epithelial cells in Hydra (B\u00f6ttger et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published research (B\u00f6ttger et al., 2012) on PPOD4 protein localization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "5a615db4-cdbb-4340-b03b-4b6838cf70c4",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C47",
+      "claim": "Spontaneous contractions create fluid microhabitats that may modulate the spatial distribution of the colonizing microbes.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our findings suggest that spontaneous body wall contractions create an important fluid transport mechanism that (1) may shape and stabilize specific host\u2013microbe associations and (2) create fluid microhabitats that may modulate the spatial distribution of the colonizing microbes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this as a finding from the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "290e3216-9502-4dd6-b1b7-62b356682986",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C48",
+      "claim": "Rhythmic spontaneous contractions in the gastrointestinal tracts are essential for maintaining normal microbiota.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism may be more broadly applicable to animal\u2013microbe interactions since research has shown that rhythmic spontaneous contractions in the gastrointestinal tracts are essential for maintaining normal microbiota.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract cites research on gastrointestinal contractions and microbiota, though specific citations are not provided in this sentence.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "311a0f83-667f-4c8f-a648-8bb418f6a5fd",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C49",
+      "claim": "Hydra is a popular biological model organism for immunology, developmental and evolutionary biology, and neurobiology.",
+      "claim_type": "EXPLICIT",
+      "source": "The millimeter-scale freshwater polyp Hydra with its simple tube-like body structure (Figure 1A) and stereotypic movement patterns is a popular biological model organism for immunology (Bosch and McFall-Ngai, 2021; Bosch, 2014; Bosch, 2013; Klimovich and Bosch, 2018a; Schr\u00f6der and Bosch, 2016), developmental and evolutionary biology, and neurobiology (Klimovich and Bosch, 2018a; Bosch et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple published works establishing Hydra as a model organism in various fields.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "a6665b58-410a-4b09-b37a-ef8f51a30e37",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C50",
+      "claim": "The average contraction frequency based on the exponential fit to biological data is 2.9 contractions per hour.",
+      "claim_type": "EXPLICIT",
+      "source": "We computed the average frequency based on the exponential fit to these biological data. We found that the so-computed contraction frequency is equal to 2.9 contractions per hour, which is slightly larger than the 2.5 contractions per hour obtained by taking a direct average of the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the calculated contraction frequency based on statistical fitting of experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "9175b080-c30e-40ba-9fe8-e9f42d79973b",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C51",
+      "claim": "Spontaneous contraction events typically last a few seconds and are characterized by a stepwise shortening of the body column with one or more peak contraction events until the body column has shortened to 20% or less of its original length.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, spontaneous contraction events typically last a few seconds and are characterized by a stepwise shortening of the body column with one or more peak contraction events until the body column has shortened to 20% or less of its original length (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes observed kinematic patterns with reference to Figures 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "d4d4e7b0-491f-47ac-8943-e62c5878f6fb",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C52",
+      "claim": "A peak contraction is defined as any part of the spontaneous contraction during which Hydra contracts at a rate of 25% change in body length per second or more.",
+      "claim_type": "EXPLICIT",
+      "source": "A peak contraction is defined as any part of the spontaneous contraction during which Hydra contracts at a rate of 25% change in body length per second or more.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly defines the criterion for peak contraction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "cdde2493-2231-4f8a-b6d3-5a940c3e6f86",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C53",
+      "claim": "Spontaneous contractions are frequently accompanied by axial rotation in a spiraling downward motion.",
+      "claim_type": "EXPLICIT",
+      "source": "spontaneous contractions are frequently accompanied by axial rotation in a spiraling downward motion (Figure 2A and B, Video 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes observed kinematic patterns with reference to Figure 2A and B and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "ca69869b-2370-4c01-ab59-3416d757e325",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C54",
+      "claim": "Spontaneous contractions are typically followed by slow re-extension to inter-contraction interval length in a random direction.",
+      "claim_type": "EXPLICIT",
+      "source": "spontaneous contractions are frequently accompanied by axial rotation in a spiraling downward motion (Figure 2A and B, Video 1) and are typically followed by slow re-extension to inter-contraction interval length (Figure 2A) in a random direction (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes observed kinematic patterns with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "9b229030-8539-4416-8837-bffaf4b9d164",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C55",
+      "claim": "The fluid boundary layer thickness is defined as the distance from the surface at which the fluid speed decreases by 90% compared to Hydra's speed.",
+      "claim_type": "EXPLICIT",
+      "source": "The thickness of the fluid boundary layer is defined as the distance from the surface at which the fluid speed decreases by 90% compared to Hydra's speed, that is, the distance at which the fluid is no longer following Hydra's surface (Vogel, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript defines the fluid boundary layer thickness and cites a reference (Vogel, 2020) for this standard definition.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "dc4110c1-1da1-4481-ad97-2233716a28e6",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C56",
+      "claim": "Hydra's baseline contraction rate per hour under unconstrained conditions is near 3, rather than 10.",
+      "claim_type": "EXPLICIT",
+      "source": "At later time points, the contraction frequency of animals in these conditions converge towards an spontaneous contraction rate around three contractions per hour (Figure 2\u2014figure supplement 6), similar to what we observed in our regular setup condition using a large beaker setup (Figure 2\u2014figure supplement 2A, control condition). This suggests that under unconstrained conditions, Hydra's baseline contraction rate per hour is near 3, rather than 10.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports observations from experiments with reference to supporting figures and draws this conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "140f4fee-7cb9-4310-86cc-4a94faab242f",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C57",
+      "claim": "Fast spontaneous contractions of an otherwise slowly moving surface in a stagnant fluid medium cause impromptu shedding of the fluid boundary layer and lead to improved transport of chemicals to and from the surface between contraction events.",
+      "claim_type": "EXPLICIT",
+      "source": "These conclusions can be restated concisely as follows: fast spontaneous contractions of an otherwise slowly moving surface in a stagnant fluid medium cause impromptu shedding of the fluid boundary layer and lead to improved transport of chemicals to and from the surface between contraction events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the key conclusions from the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "6d1da34c-1127-4b26-9aac-84a3c2123a3f",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C58",
+      "claim": "Higher contraction frequencies are beneficial, but require additional, may be prohibitive, metabolic cost.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher contraction frequencies are beneficial, but require additional, may be prohibitive, metabolic cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this inference based on the model predictions and biological considerations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "6357e766-3b20-488d-a5a9-1c66ffb9cc85",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C59",
+      "claim": "A stochastic distribution of contraction events over time, following a Poisson process, produces benefits that are nearly as good as those produced by regular contractions, but without the need for a biological machinery to maintain a precise rhythm.",
+      "claim_type": "EXPLICIT",
+      "source": "A stochastic distribution of contraction events over time, following a Poisson process, produces benefits that are nearly as good as those produced by regular contractions, but without the need for a biological machinery to maintain a precise rhythm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this conclusion based on the mathematical model predictions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "8ba5d9d4-86b2-4f5f-b616-5d345e3bea88",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C60",
+      "claim": "Limiting the total number of contractions leads to decreased performance at contraction frequencies beyond what would allow the contraction events to be Poisson distributed.",
+      "claim_type": "EXPLICIT",
+      "source": "Limiting the total number of contractions leads to decreased performance at contraction frequencies beyond what would allow the contraction events to be Poisson distributed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this conclusion based on the mathematical model predictions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "02eebd71-54ab-4a07-8ae9-52a65cb95bb4",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C61",
+      "claim": "The extent of the microbiota shift was positively correlated with the magnitude of the decrease in contraction frequency and was the greatest in menthol-treated animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent of the shift was positively correlated with the magnitude of the decrease in contraction frequency and, consequently, was the greatest in menthol-treated animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports correlation analysis of experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "a5285269-4bc1-4fe8-ad08-d0abba37f6e2",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C62",
+      "claim": "The shift in microbial community consisted of a change in the relative abundance rather than a disappearance of bacterial taxa or bacterial load.",
+      "claim_type": "EXPLICIT",
+      "source": "This shift consisted of a change in the relative abundance rather than a disappearance of bacterial taxa or bacterial load (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports findings from 16S rRNA analysis with reference to supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "656bbd26-7ce5-4fb5-8ca6-805f424e885f",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C63",
+      "claim": "Both light and pharmacological manipulations resulted in similar effects on the microbiota, providing strong evidence that the change in relative bacterial abundance is related to the altered spontaneous contraction frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that both light and pharmacological manipulations resulted in similar effects provides strong evidence that the change in relative bacterial abundance is related to the altered spontaneous contraction frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws this inference from the consistency of results across different experimental manipulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "101982e7-c615-4ef5-a432-c78178be4c4a",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C64",
+      "claim": "At short time scale (few seconds), an individual contraction cycle does not affect the biogeography of the microbiome.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, at short time scale (few seconds), an individual contraction cycle does not affect the biogeography of the microbiome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws this conclusion from video observations of fluorescently labeled bacteria during contractions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "cce93ad4-2456-4e17-a66d-20fd5db7f146",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C65",
+      "claim": "The observed changes in the microbiota are unlikely the cause of glycocalyx remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we could not detect major changes in the glycocalyx layer, we concluded that the observed changes in the microbiota are unlikely the cause of glycocalyx remodeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws this conclusion from immunochemical staining experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "a2740ed6-c8a7-4cd5-bc15-5cfab5aeeaf5",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C66",
+      "claim": "The fluid boundary layer shedding and resultant chemical exchange by Hydra's spontaneous contractions stabilize microbial colonization and contribute to shaping the microbial biogeography along the body column.",
+      "claim_type": "EXPLICIT",
+      "source": "These results strongly suggest that the fluid boundary layer shedding and resultant chemical exchange by Hydra's spontaneous contractions stabilize microbial colonization and contribute to shaping the microbial biogeography along the body column (Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this conclusion based on the combined experimental and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "520c5031-5b76-41d7-b78b-f5a5f0e8cea1",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C67",
+      "claim": "Hydra cannot engage in more efficient transport mechanisms via fluid advection because it lacks the ciliary or muscular appendages used by other organisms in the low and intermediate Reynolds number regimes to generate unsteady flows and vortices.",
+      "claim_type": "EXPLICIT",
+      "source": "Hydra cannot engage in more efficient transport mechanisms via fluid advection (Nawroth et al., 2017, Gilpin et al., 2017, Pepper et al., 2010) because it lacks the ciliary or muscular appendages used by other organisms in the low and intermediate Reynolds number regimes to generate unsteady flows and vortices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published research and makes an inference about Hydra's anatomical constraints.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "e2cbc8fb-a91b-4e6f-833b-44a1bb62fa65",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C68",
+      "claim": "Soft corals operate at intermediate Reynolds numbers and use rhythmic pulsations of their tentacles to generate bulk flow that removes oxygen waste.",
+      "claim_type": "EXPLICIT",
+      "source": "Soft corals, for example, operate at intermediate Reynolds numbers and use rhythmic pulsations of their tentacles to generate bulk flow that removes oxygen waste (Samson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published research (Samson et al., 2019) on coral physiology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "c9537692-14fd-43e5-912f-a22a14cbc9f7",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C69",
+      "claim": "Individual corals reach diameters similar to that of fully extended Hydra (ca. 1 cm).",
+      "claim_type": "EXPLICIT",
+      "source": "Although individual corals reach diameters similar to that of fully extended Hydra (ca. 1 cm), they usually occur in dense clusters and contract rhythmically at 0.5 Hz, leading to collective fluid advection with P\u00e9clet numbers on the order of 10\u20131000",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript makes a comparative statement about coral and Hydra dimensions.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "deec4913-d5c2-4824-bcc9-ae6f740d9387",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C70",
+      "claim": "Corals contract rhythmically at 0.5 Hz, leading to collective fluid advection with P\u00e9clet numbers on the order of 10-1000.",
+      "claim_type": "EXPLICIT",
+      "source": "Although individual corals reach diameters similar to that of fully extended Hydra (ca. 1 cm), they usually occur in dense clusters and contract rhythmically at 0.5 Hz, leading to collective fluid advection with P\u00e9clet numbers on the order of 10\u20131000, compared to Pe = 0.005 computed for a single Hydra with only a handful of contractions per hour, indicating that the two organisms represent different scenarios.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript makes a comparative statement about coral fluid dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "9510c6c0-72ec-4f61-9e5b-a09037471717",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C71",
+      "claim": "Hydra does not leverage fluid advection but instead facilitates the diffusion process through its spontaneous contractions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study suggests that Hydra does not leverage fluid advection but instead facilitates the diffusion process through its spontaneous contractions, which cause transiently and locally higher flow rates and greatly improve the exchange of fluid near the epithelial surface by shedding the so-called fluid boundary layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this conclusion based on the combined experimental and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "51b9789f-344d-40f7-a2a7-d71d4869b31f",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C72",
+      "claim": "Marine sponges remove mucus from their surface by recurrent spontaneous contractions through a 'sneezing' mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "This is analogous to a recently discovered 'sneezing' mechanism by which marine sponges remove mucus from their surface by recurrent spontaneous contractions (Kornder et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published research (Kornder et al., 2022) on sponge behavior.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "e0fdfba7-0c10-44ef-848e-6f4e3a040f71",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C73",
+      "claim": "The distinct spatial colonization pattern along the body column could be essential for pathogen defense.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this distinct spatial colonization pattern along the body column could not only be essential for pathogen defense (Bosch, 2013, Fraune et al., 2015) but could also be important for modulating the frequency of Hydra's spontaneous contractions (Murillo-Rincon et al., 2017), suggesting a feedback loop that could be the focus of future studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published research (Bosch, 2013, Fraune et al., 2015) and speculates about the functional significance.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "cd0d5e69-20fd-4edb-9ad3-4b7ce9771c44",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C74",
+      "claim": "The spatial colonization pattern could be important for modulating the frequency of Hydra's spontaneous contractions, suggesting a feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this distinct spatial colonization pattern along the body column could not only be essential for pathogen defense (Bosch, 2013, Fraune et al., 2015) but could also be important for modulating the frequency of Hydra's spontaneous contractions (Murillo-Rincon et al., 2017), suggesting a feedback loop that could be the focus of future studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published research (Murillo-Rincon et al., 2017) and speculates about a potential feedback mechanism.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "de32a8a2-077b-4464-82b2-c984d4214df0",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C75",
+      "claim": "Hydra's rhythm of spontaneous contractions might be operating at a sweet spot of efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, this suggests that Hydra's rhythm of spontaneous contractions might be operating at a sweet spot of efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates about the optimality of Hydra's contraction frequency based on model predictions and experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "b67dbd33-0e6e-4b51-95dd-7d8232a2affc",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C76",
+      "claim": "Spontaneous contractions were critical early in the evolution of a gut system to maintain a stable microbiota.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspired by Dobzhansky's dictum that \"nothing in biology makes sense but in the light of evolution\" (Dobzhansky, 1964), we speculate that spontaneous contractions were critical early in the evolution of a gut system to maintain a stable microbiota.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this as speculation, citing Dobzhansky's principle.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "a58f7ffa-9e53-4866-8130-1a9d2451e672",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C77",
+      "claim": "Kiwa puravida n.sp. crabs farm symbiotic bacteria on the surface of their chelipeds and wave these chelipeds continuously in a constant rhythm.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, an observation in a new species of hydrothermal vent Yeti crabs, Kiwa puravida n.sp. is of interest (Thurber et al., 2011). The crabs farm symbiotic bacteria on the surface of their chelipeds (claws) and wave these chelipeds continuously in a constant rhythm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published research (Thurber et al., 2011) on crab behavior.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "3b74ef72-f0f7-42a4-8180-53c7cf83df8a",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C78",
+      "claim": "It is hypothesized that K. puravida n. sp. waves its chelipeds to shear off boundary layers formed by their epibionts productivity, increasing both the epibionts and their own access to food.",
+      "claim_type": "EXPLICIT",
+      "source": "In search of an explanation, the authors stated: \"We hypothesize that K. puravida n. sp. waves its chelipeds to shear off boundary layers formed by their epibionts productivity, increasing both the epibionts and, in turn, their own access to food\" (Thurber et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript quotes a hypothesis from published research (Thurber et al., 2011).",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "4acda75e-0309-4d05-a005-c661f3ec4abe",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "claim_id": "C79",
+      "claim": "Fluid flow generated by multiciliated surface cells in amphibian and some fish embryos may contribute to managing embryo-associated microbial consortia.",
+      "claim_type": "EXPLICIT",
+      "source": "Pointing in the same direction, a study on multiciliated surface cells in amphibian and some fish embryos ends with the hypothesis that the fluid flow generated by these cells may contribute to managing embryo-associated microbial consortia (Kerney, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a hypothesis from published research (Kerney, 2021).",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "429fcdcc-aec8-49d1-9865-a90e1142b46c",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Hydra exhibits spontaneous body wall contractions approximately every 10-30 minutes (2.5-2.9 contractions per hour), characterized by stereotypic kinematic patterns including slow revolving during inter-contraction intervals and rapid stepwise shortening during contractions, often accompanied by axial rotation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7, C50-C54 provide converging evidence from video microscopy, kinematic analysis, and statistical modeling. The contraction frequency is well-documented with both direct measurements (C1, C50) and exponential distribution fitting (C50). The kinematic patterns are described with quantitative metrics and referenced to supporting figures and videos.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "9f3f30a5-e179-4554-927b-8470a747c751",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Spontaneous contractions cause shedding of the fluid boundary layer (FBL) around Hydra's head. During inter-contraction intervals, the FBL thickness is ~5 mm at low Reynolds number (0.01), but reduces to ~1.5 mm during peak contractions, with FBL thickness inversely correlated with body speed. The foot region remains motionless with minimal flow.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C18, C55 are supported by multiple experimental approaches including fluorescent dye visualization (C13, C14), particle imaging velocimetry (C15, C16), and Reynolds number calculations (C11). The inverse correlation between FBL thickness and speed (C17) is quantitatively demonstrated. The differential flow regime between head and foot (C18) is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "1ece1174-7240-4c1c-9d95-7201c155c442",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A mathematical model predicts that spontaneous contractions enhance chemical transport to/from the tissue surface by shedding the fluid boundary layer. The model shows that stochastic Poisson-distributed contractions at ~3 contractions per hour provide near-optimal efficiency without requiring precise rhythmic control, and that reducing contraction frequency by 10-15% proportionally reduces uptake/removal rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C42, C57-C60, C66, C71 are supported by a detailed mathematical model of diffusion-dominated transport with boundary layer shedding. The model appropriately accounts for the low P\u00e9clet number regime, uses validated assumptions about exponentially distributed inter-contraction intervals, and provides analytical predictions confirmed by numerical simulations. The conclusion that Hydra operates at an efficiency 'sweet spot' (C58, C75) is well-justified by the modeling results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "9e85885a-cf2d-4926-a694-00c477258ac1",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Different microbial species show spatial preferences along Hydra's body column, with foot-dominating bacteria including Flavobacterium, Pseudomonas, and Acidovorax. Spontaneous contractions create fluid microhabitats that may modulate this spatial distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C26, C47 are supported by 16S rRNA profiling data showing distinct spatial colonization patterns (C4) and LEfSe analysis identifying foot-specific colonizers (C26). The connection to fluid microhabitats (C47) is a reasonable inference linking the spatial microbial distribution to the differential fluid dynamics between head and foot regions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "5d30861e-386d-421a-a5fe-e54f206c73e5",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Pharmacological treatments (lidocaine, menthol) and continuous light exposure reduce spontaneous contraction frequency without significantly affecting other contractile behaviors like somersaulting. Menthol almost completely abolished contractions, while lidocaine and continuous light reduced frequency from 2.5 to 2.0-2.3 contractions per hour.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24, C36 are supported by quantitative behavioral measurements across multiple treatment conditions with appropriate controls. The specificity of the effect to spontaneous contractions (C36) strengthens the interpretation. Sample sizes (n=10-20) appear adequate for behavioral measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "24390b78-0329-4049-8b9d-172b3502a730",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Reducing spontaneous contraction frequency through pharmacological or light manipulations causes significant shifts in microbial community composition, with the magnitude of shift positively correlated with the degree of contraction frequency reduction. The shift involves changes in relative abundance rather than loss of taxa, with foot-specific bacteria becoming more abundant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C25, C26, C61-C63 are supported by 16S rRNA sequencing data with appropriate statistical analyses (PCoA, LEfSe). The consistency of effects across different manipulation methods (C25, C63) provides strong evidence for causality. The correlation between contraction frequency reduction and microbiota shift magnitude (C61) is well-documented. Controls for direct antimicrobial effects (C37) strengthen the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "5a71e351-777c-4273-b58e-0b096a0e12b6",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Individual contraction cycles do not cause physical detachment of bacteria or major changes in glycocalyx structure at short timescales (seconds) or after prolonged immobilization (48 hours), indicating that microbiota changes are not due to direct mechanical displacement or glycocalyx remodeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C28, C64, C65 are supported by direct video observations of fluorescently labeled bacteria (C27) and immunochemical staining of glycocalyx (C28). These negative results are important controls that rule out alternative mechanisms and support the fluid transport hypothesis. The observations are appropriately qualified as ruling out major changes rather than claiming no changes whatsoever.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "73669431-e2bf-4831-894f-7e44fd232c0c",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Menthol and lidocaine at the concentrations used in behavioral experiments have no direct inhibitory effects on the bacterial species tested, as verified by minimal inhibitory concentration (MIC) assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is supported by MIC assays testing multiple bacterial isolates from Hydra's natural microbiota. This control experiment is essential for ruling out direct antimicrobial effects as an alternative explanation for the observed microbiota changes. The experimental design appropriately tested concentrations spanning the doses used in behavioral assays.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "2eaa192b-4e6d-411c-a810-6b17a53d69d3",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Under unconstrained conditions in large volume containers, Hydra's baseline contraction rate converges to approximately 3 contractions per hour rather than the higher rates (up to 10 per hour) observed in confined conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 is supported by longitudinal observations showing convergence to ~3 contractions per hour in large beaker setups. This finding is important for establishing the physiologically relevant contraction frequency and suggests that higher frequencies reported in some studies may reflect stress responses to confinement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "225a35c6-4b28-4bb7-80e3-e74ca7ec70ba",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript draws parallels between Hydra and mammalian gut systems, noting structural similarities in mucous layers, low Reynolds number flow regimes, and correlations between contractile activity and microbiota composition. Rhythmic spontaneous contractions in gastrointestinal tracts are essential for maintaining normal microbiota.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41, C48 are supported by appropriate citations to published literature on gut physiology, fluid dynamics, and microbiota. These comparative statements provide important context for the broader significance of the Hydra findings. However, these are primarily literature-based claims rather than new experimental findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "8001c0c2-161e-444e-a2f3-0ca0612c13db",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript contrasts Hydra's fluid transport mechanism with that of corals, which operate at intermediate Reynolds numbers and use rhythmic tentacle pulsations to generate turbulent mixing. Hydra's small size prevents turbulent mixing, and it lacks the appendages needed for advection-based transport mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C31, C67-C70 are supported by appropriate citations and fluid mechanics calculations. The comparison with corals (P\u00e9clet numbers 10-1000 vs 0.005 for Hydra) effectively illustrates why Hydra must use a different transport mechanism. The inference about size constraints (C31) is well-supported by established fluid mechanics principles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "a1d497c4-75cc-41d5-919b-595c2b1e46c9",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript draws an analogy to marine sponges, which remove mucus from their surface through a 'sneezing' mechanism involving recurrent spontaneous contractions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 is supported by citation to recent published work (Kornder et al., 2022). This comparison provides useful context for understanding Hydra's mechanism as part of a broader pattern in aquatic organisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "9d39c5a4-3d65-4d7d-a8c8-0252a05d5509",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript speculates that the spatial colonization pattern may be important for pathogen defense and could modulate contraction frequency through a feedback loop, that Hydra operates at an efficiency 'sweet spot', and that spontaneous contractions were critical early in gut evolution for maintaining stable microbiota.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C76 are explicitly presented as speculation or hypotheses for future work. While these are reasonable inferences based on the data and cited literature, they represent proposed mechanisms rather than demonstrated findings. The speculation about evolutionary origins (C76) is particularly difficult to test directly.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "7a3c763b-5985-4141-9a66-c3dfcc14fb3c",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript cites examples from other organisms (Yeti crabs, amphibian embryos) where rhythmic movements or fluid flows are hypothesized to manage microbial communities through boundary layer effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 accurately represent hypotheses from cited literature (Thurber et al., 2011; Kerney, 2021). These examples provide comparative context suggesting that boundary layer management for microbiota regulation may be a widespread phenomenon.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    },
+    {
+      "id": "7bf5eec6-1e26-4edf-b73f-d2aee521466e",
+      "content_id": "2a64ff44-cdac-4087-9bf3-ca7f7e8e96b7",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The manuscript provides methodological details and background information including the historical documentation of Hydra contractions (1744), Hydra's status as a model organism, glycocalyx structure, experimental strain and conditions, and data availability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C32, C33, C43-C46, C49 are supported by appropriate citations and explicit statements in the methods section. These provide essential context and methodological transparency but are not primary findings of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:23:14.981572Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dfd85efa-9d13-4900-af54-ae836da39903",
+      "result_id": "429fcdcc-aec8-49d1-9865-a90e1142b46c"
+    },
+    {
+      "claim_id": "64dfb37d-3c00-4124-9ce0-2c963c9c4ede",
+      "result_id": "429fcdcc-aec8-49d1-9865-a90e1142b46c"
+    },
+    {
+      "claim_id": "a6665b58-410a-4b09-b37a-ef8f51a30e37",
+      "result_id": "429fcdcc-aec8-49d1-9865-a90e1142b46c"
+    },
+    {
+      "claim_id": "9175b080-c30e-40ba-9fe8-e9f42d79973b",
+      "result_id": "429fcdcc-aec8-49d1-9865-a90e1142b46c"
+    },
+    {
+      "claim_id": "d4d4e7b0-491f-47ac-8943-e62c5878f6fb",
+      "result_id": "429fcdcc-aec8-49d1-9865-a90e1142b46c"
+    },
+    {
+      "claim_id": "cdde2493-2231-4f8a-b6d3-5a940c3e6f86",
+      "result_id": "429fcdcc-aec8-49d1-9865-a90e1142b46c"
+    },
+    {
+      "claim_id": "ca69869b-2370-4c01-ab59-3416d757e325",
+      "result_id": "429fcdcc-aec8-49d1-9865-a90e1142b46c"
+    },
+    {
+      "claim_id": "cec441a8-fda7-4d27-b7d3-14df5f8c5fa4",
+      "result_id": "9f3f30a5-e179-4554-927b-8470a747c751"
+    },
+    {
+      "claim_id": "4381fd43-1172-4a8f-af60-d24e78c3ff2d",
+      "result_id": "9f3f30a5-e179-4554-927b-8470a747c751"
+    },
+    {
+      "claim_id": "c6fc347f-392f-4f7d-9f64-f1a49c5bcf4c",
+      "result_id": "9f3f30a5-e179-4554-927b-8470a747c751"
+    },
+    {
+      "claim_id": "7c2e74c7-c84d-4092-8df9-fe85ce93f50a",
+      "result_id": "9f3f30a5-e179-4554-927b-8470a747c751"
+    },
+    {
+      "claim_id": "c1d565a5-4102-4e8b-a532-89d9f442f7f8",
+      "result_id": "9f3f30a5-e179-4554-927b-8470a747c751"
+    },
+    {
+      "claim_id": "72436f56-4299-4c49-9987-e4727137dd9f",
+      "result_id": "9f3f30a5-e179-4554-927b-8470a747c751"
+    },
+    {
+      "claim_id": "90d4b380-ab48-4caf-92a7-5441e0b6a32a",
+      "result_id": "9f3f30a5-e179-4554-927b-8470a747c751"
+    },
+    {
+      "claim_id": "9b229030-8539-4416-8837-bffaf4b9d164",
+      "result_id": "9f3f30a5-e179-4554-927b-8470a747c751"
+    },
+    {
+      "claim_id": "464fb2b5-e280-48b0-b118-034dfa29f519",
+      "result_id": "1ece1174-7240-4c1c-9d95-7201c155c442"
+    },
+    {
+      "claim_id": "f4a346fd-9c36-4ec5-9d9c-c0b7c47e1230",
+      "result_id": "1ece1174-7240-4c1c-9d95-7201c155c442"
+    },
+    {
+      "claim_id": "140f4fee-7cb9-4310-86cc-4a94faab242f",
+      "result_id": "1ece1174-7240-4c1c-9d95-7201c155c442"
+    },
+    {
+      "claim_id": "6d1da34c-1127-4b26-9aac-84a3c2123a3f",
+      "result_id": "1ece1174-7240-4c1c-9d95-7201c155c442"
+    },
+    {
+      "claim_id": "6357e766-3b20-488d-a5a9-1c66ffb9cc85",
+      "result_id": "1ece1174-7240-4c1c-9d95-7201c155c442"
+    },
+    {
+      "claim_id": "8ba5d9d4-86b2-4f5f-b616-5d345e3bea88",
+      "result_id": "1ece1174-7240-4c1c-9d95-7201c155c442"
+    },
+    {
+      "claim_id": "a2740ed6-c8a7-4cd5-bc15-5cfab5aeeaf5",
+      "result_id": "1ece1174-7240-4c1c-9d95-7201c155c442"
+    },
+    {
+      "claim_id": "9510c6c0-72ec-4f61-9e5b-a09037471717",
+      "result_id": "1ece1174-7240-4c1c-9d95-7201c155c442"
+    },
+    {
+      "claim_id": "c0d873a8-afa8-4408-9d9b-599fe6912c8e",
+      "result_id": "9e85885a-cf2d-4926-a694-00c477258ac1"
+    },
+    {
+      "claim_id": "c78a2db6-6577-4c5e-b2a1-e6da4c1b2b2b",
+      "result_id": "9e85885a-cf2d-4926-a694-00c477258ac1"
+    },
+    {
+      "claim_id": "5a615db4-cdbb-4340-b03b-4b6838cf70c4",
+      "result_id": "9e85885a-cf2d-4926-a694-00c477258ac1"
+    },
+    {
+      "claim_id": "7fdb0458-e413-4967-b802-f508f65e96bd",
+      "result_id": "5d30861e-386d-421a-a5fe-e54f206c73e5"
+    },
+    {
+      "claim_id": "52c3ce3b-fa8a-4d51-8246-4346833f5ad2",
+      "result_id": "5d30861e-386d-421a-a5fe-e54f206c73e5"
+    },
+    {
+      "claim_id": "7e851c3a-9d50-45b5-ad2e-95d35a6d0068",
+      "result_id": "5d30861e-386d-421a-a5fe-e54f206c73e5"
+    },
+    {
+      "claim_id": "1d8432ea-1ba6-45ab-8c9e-7e08f8622da7",
+      "result_id": "5d30861e-386d-421a-a5fe-e54f206c73e5"
+    },
+    {
+      "claim_id": "2a1b0477-81d0-4b36-b3c7-7b9778326557",
+      "result_id": "24390b78-0329-4049-8b9d-172b3502a730"
+    },
+    {
+      "claim_id": "80dc695a-251b-4fa0-89ad-e9d8fa257e6d",
+      "result_id": "24390b78-0329-4049-8b9d-172b3502a730"
+    },
+    {
+      "claim_id": "c78a2db6-6577-4c5e-b2a1-e6da4c1b2b2b",
+      "result_id": "24390b78-0329-4049-8b9d-172b3502a730"
+    },
+    {
+      "claim_id": "02eebd71-54ab-4a07-8ae9-52a65cb95bb4",
+      "result_id": "24390b78-0329-4049-8b9d-172b3502a730"
+    },
+    {
+      "claim_id": "a5285269-4bc1-4fe8-ad08-d0abba37f6e2",
+      "result_id": "24390b78-0329-4049-8b9d-172b3502a730"
+    },
+    {
+      "claim_id": "656bbd26-7ce5-4fb5-8ca6-805f424e885f",
+      "result_id": "24390b78-0329-4049-8b9d-172b3502a730"
+    },
+    {
+      "claim_id": "401bc09f-08da-43df-a325-129b6670b9d7",
+      "result_id": "5a71e351-777c-4273-b58e-0b096a0e12b6"
+    },
+    {
+      "claim_id": "aea99b50-02cd-4bea-8949-089c0ebdc0e1",
+      "result_id": "5a71e351-777c-4273-b58e-0b096a0e12b6"
+    },
+    {
+      "claim_id": "101982e7-c615-4ef5-a432-c78178be4c4a",
+      "result_id": "5a71e351-777c-4273-b58e-0b096a0e12b6"
+    },
+    {
+      "claim_id": "cce93ad4-2456-4e17-a66d-20fd5db7f146",
+      "result_id": "5a71e351-777c-4273-b58e-0b096a0e12b6"
+    },
+    {
+      "claim_id": "b3525323-186c-4a78-9d74-a3b21aeac2e8",
+      "result_id": "73669431-e2bf-4831-894f-7e44fd232c0c"
+    },
+    {
+      "claim_id": "dc4110c1-1da1-4481-ad97-2233716a28e6",
+      "result_id": "2eaa192b-4e6d-411c-a810-6b17a53d69d3"
+    },
+    {
+      "claim_id": "275859c1-932a-4c63-9653-0d18e1e52a68",
+      "result_id": "225a35c6-4b28-4bb7-80e3-e74ca7ec70ba"
+    },
+    {
+      "claim_id": "71a3cccf-5d9c-49fc-8256-9c56b482a236",
+      "result_id": "225a35c6-4b28-4bb7-80e3-e74ca7ec70ba"
+    },
+    {
+      "claim_id": "00a57536-930e-41f9-b791-551af7cc9bb5",
+      "result_id": "225a35c6-4b28-4bb7-80e3-e74ca7ec70ba"
+    },
+    {
+      "claim_id": "5c993e05-fa19-4d40-8973-77fe014c5487",
+      "result_id": "225a35c6-4b28-4bb7-80e3-e74ca7ec70ba"
+    },
+    {
+      "claim_id": "290e3216-9502-4dd6-b1b7-62b356682986",
+      "result_id": "225a35c6-4b28-4bb7-80e3-e74ca7ec70ba"
+    },
+    {
+      "claim_id": "10e8aab9-0f50-47ba-8f7d-e055c8434a74",
+      "result_id": "8001c0c2-161e-444e-a2f3-0ca0612c13db"
+    },
+    {
+      "claim_id": "28d655e9-4c0a-4141-a948-80ae2927ccf8",
+      "result_id": "8001c0c2-161e-444e-a2f3-0ca0612c13db"
+    },
+    {
+      "claim_id": "520c5031-5b76-41d7-b78b-f5a5f0e8cea1",
+      "result_id": "8001c0c2-161e-444e-a2f3-0ca0612c13db"
+    },
+    {
+      "claim_id": "e2cbc8fb-a91b-4e6f-833b-44a1bb62fa65",
+      "result_id": "8001c0c2-161e-444e-a2f3-0ca0612c13db"
+    },
+    {
+      "claim_id": "c9537692-14fd-43e5-912f-a22a14cbc9f7",
+      "result_id": "8001c0c2-161e-444e-a2f3-0ca0612c13db"
+    },
+    {
+      "claim_id": "deec4913-d5c2-4824-bcc9-ae6f740d9387",
+      "result_id": "8001c0c2-161e-444e-a2f3-0ca0612c13db"
+    },
+    {
+      "claim_id": "51b9789f-344d-40f7-a2a7-d71d4869b31f",
+      "result_id": "a1d497c4-75cc-41d5-919b-595c2b1e46c9"
+    },
+    {
+      "claim_id": "e0fdfba7-0c10-44ef-848e-6f4e3a040f71",
+      "result_id": "9d39c5a4-3d65-4d7d-a8c8-0252a05d5509"
+    },
+    {
+      "claim_id": "cd0d5e69-20fd-4edb-9ad3-4b7ce9771c44",
+      "result_id": "9d39c5a4-3d65-4d7d-a8c8-0252a05d5509"
+    },
+    {
+      "claim_id": "de32a8a2-077b-4464-82b2-c984d4214df0",
+      "result_id": "9d39c5a4-3d65-4d7d-a8c8-0252a05d5509"
+    },
+    {
+      "claim_id": "b67dbd33-0e6e-4b51-95dd-7d8232a2affc",
+      "result_id": "9d39c5a4-3d65-4d7d-a8c8-0252a05d5509"
+    },
+    {
+      "claim_id": "a58f7ffa-9e53-4866-8130-1a9d2451e672",
+      "result_id": "7a3c763b-5985-4141-9a66-c3dfcc14fb3c"
+    },
+    {
+      "claim_id": "3b74ef72-f0f7-42a4-8180-53c7cf83df8a",
+      "result_id": "7a3c763b-5985-4141-9a66-c3dfcc14fb3c"
+    },
+    {
+      "claim_id": "4acda75e-0309-4d05-a005-c661f3ec4abe",
+      "result_id": "7a3c763b-5985-4141-9a66-c3dfcc14fb3c"
+    },
+    {
+      "claim_id": "a6392d36-4111-4a4f-a676-dcb544476919",
+      "result_id": "7bf5eec6-1e26-4edf-b73f-d2aee521466e"
+    },
+    {
+      "claim_id": "79f508b9-f22d-40fb-81d5-e9c24a6b2372",
+      "result_id": "7bf5eec6-1e26-4edf-b73f-d2aee521466e"
+    },
+    {
+      "claim_id": "d6413dbd-ee0a-4d06-87e6-28272a700690",
+      "result_id": "7bf5eec6-1e26-4edf-b73f-d2aee521466e"
+    },
+    {
+      "claim_id": "36d0d8cc-e462-4a6d-be5b-b30556e6d413",
+      "result_id": "7bf5eec6-1e26-4edf-b73f-d2aee521466e"
+    },
+    {
+      "claim_id": "cba88231-47e1-472b-a76d-0721fe677b31",
+      "result_id": "7bf5eec6-1e26-4edf-b73f-d2aee521466e"
+    },
+    {
+      "claim_id": "10477f4a-eaad-46cf-a18b-f9e84c8d104d",
+      "result_id": "7bf5eec6-1e26-4edf-b73f-d2aee521466e"
+    },
+    {
+      "claim_id": "cbb3db63-f309-462c-b419-5c657ee0b25b",
+      "result_id": "7bf5eec6-1e26-4edf-b73f-d2aee521466e"
+    },
+    {
+      "claim_id": "311a0f83-667f-4c8f-a648-8bb418f6a5fd",
+      "result_id": "7bf5eec6-1e26-4edf-b73f-d2aee521466e"
+    }
+  ],
+  "comparisons": []
+}

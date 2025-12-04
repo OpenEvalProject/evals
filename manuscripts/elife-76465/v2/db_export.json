@@ -1,0 +1,1705 @@
+{
+  "submission": {
+    "id": "bc7450bf-6715-4ce6-b17e-5fee84dd3e45",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:29:08.273525Z",
+    "updated_at": "2025-12-04T03:29:08.273525Z"
+  },
+  "content": [
+    {
+      "id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "submission_id": "bc7450bf-6715-4ce6-b17e-5fee84dd3e45",
+      "content_type": "manuscript",
+      "content_text": "# Proteostasis is differentially modulated by inhibition of translation initiation or elongation\n\n## Authors\n\n- Khalyd J Clay<sup>1</sup> ([ORCID: 0000-0003-1381-5295](https://orcid.org/0000-0003-1381-5295))\n- Yongzhi Yang<sup>1</sup> ([ORCID: 0000-0002-9713-0009](https://orcid.org/0000-0002-9713-0009))\n- Christina Clark<sup>1</sup> ([ORCID: 0000-0002-5389-4373](https://orcid.org/0000-0002-5389-4373))\n- Michael Petrascheck<sup>1</sup> ([ORCID: 0000-0002-1010-145X](https://orcid.org/0000-0002-1010-145X)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Medicine, Department of Neuroscience, Scripps Research Institute La Jolla United States ([ROR:02dxx6824](https://ror.org/02dxx6824))\n\n\u2020 Corresponding author\n\n## Abstract\n\nRecent work has revealed an increasingly important role for mRNA translation in maintaining proteostasis. Here, we use chemical inhibitors targeting discrete steps of translation to compare how lowering the concentration of all or only translation initiation-dependent proteins rescues Caenorhabditis elegans from proteotoxic stress. We systematically challenge proteostasis and show that pharmacologically inhibiting translation initiation or elongation elicits a distinct protective profile. Inhibiting elongation protects from heat and proteasome dysfunction independently from HSF-1 but does not protect from age-associated protein aggregation. Conversely, inhibition of initiation protects from heat and age-associated protein aggregation and increases lifespan, dependent on hsf-1, but does not protect from proteotoxicity caused by proteasome dysfunction. Surprisingly, we find that the ability of the translation initiation machinery to control the concentration of newly synthesized proteins depends on HSF-1. Inhibition of translation initiation in wild-type animals reduces the concentration of newly synthesized proteins but increases it in hsf-1 mutants. Our findings suggest that the HSF-1 pathway is not only a downstream target of translation but also directly cooperates with the translation initiation machinery to control the concentration of newly synthesized proteins to restore proteostasis.\n\n## Introduction\n\nProtein synthesis is a highly regulated process involving the precise orchestration of many chaperones, co-factors, enzymes, and biomolecular building blocks. It is critical at every level of the life cycle, from development through aging, and is central to stress adaptation. Protein synthesis largely determines the folding load on the proteostasis network, which regulates protein production, folding, trafficking, and degradation to maintain a functional proteome. The imbalance of the proteostasis network caused by age-associated stress or acute environmental insults leads to misfolding of proteins, accumulation of aggregates, and eventually to disease (Balch et al., 2008).\n\nA substantial body of work has revealed that the protein synthesis machinery directly participates in protein folding or aggregation. For example, in mice, point mutations in specific tRNAs or components of the ribosomal quality control pathway can lead to protein aggregation and neurodegeneration (Vo et al., 2018; Yonashiro et al., 2016; Chu et al., 2009; Nollen et al., 2004; Nedialkova and Leidel, 2015). Similarly, early RNAi screens in the nematode Caenorhabditis elegans identified several ribosomal subunits whose knockdown increased the aggregation of polyglutamine (PolyQ) proteins (Nollen et al., 2004). These findings highlight the importance of translation in protein misfolding.\n\nHowever, subsequent studies reveal a more intricate role of translation in protein aggregation. Depending on how translation is modulated, it leads to either decreased or increased protein aggregation. For example, RNAi-mediated knockdown of translation initiation factors increases lifespan, improves proteostasis, and reduces protein aggregation in C. elegans (Balch et al., 2008; Rogers et al., 2011; McQuary et al., 2016; Lan et al., 2019; Howard et al., 2016). Similarly, work in yeast and cell culture shows that pharmacological inhibition of translation prior to a heat shock prevents proteins from aggregating (Medicherla and Goldberg, 2008; Choe et al., 2016; Xu et al., 2016; Riback et al., 2017). While studies in C. elegans, cell culture, and yeast agree that inhibition of translation reduces protein aggregation, their proposed underlying mechanisms differ. Overall, the proposed mechanisms can be categorized into two broad models on how lowering translation reduces protein aggregation.\n\nThe first model, referred to as the selective translation model, proposes that inhibition of translation is selective. In the selective translation model, the increased availability of ribosomes leads to differential translation of mRNAs coding for stress response factors and thus to increased folding capacity (Rogers et al., 2011; McQuary et al., 2016; Lan et al., 2019; Seo et al., 2013). In general, studies proposing a version of the selective translation model show that inhibiting translation requires HSF-1 to reduce protein aggregation (Howard et al., 2016; Tye and Churchman, 2021). In the selective translation model, protein aggregation is reduced by an HSF-1-dependent active generation of folding capacity to remodel the proteome.\n\nThe second model, referred to as the reduced folding load model, proposes that newly synthesized proteins are the primary aggregation-prone species of proteins. Therefore, newly synthesized proteins constitute the most significant folding load on the proteostasis machinery. Inhibition of translation reduces the concentration of newly synthesized proteins and, thus, the load on the folding machinery. In contrast to the selective translation model, which proposes selective protein synthesis of HSF-1-dependent stress response factors, the reduced folding load model does not depend on specific factors but generates folding capacity by reducing the overall folding load. A problem comparing previous studies has been their use of different model organisms, different proteostatic insults, and modes of inhibition. Furthermore, previous studies did not control how much protein synthesis was reduced by different modes of translation inhibition making direct comparisons between the selective translation model and the reduced folding load model difficult.\n\nIn this study, we systematically compared these two models in C. elegans using pharmacological agents to block various steps along the protein synthesis cycle but ensured to use inhibitors that achieve comparable reductions in the concentration of newly synthesized proteins across the different interventions. We characterize how lowering translation protects C. elegans from proteotoxic insults such as proteasome inactivation, heat shock, and aging. Our data reveal that the step inhibited in mRNA translation dictates which of the two protective mechanisms is activated. Furthermore, they uncover an unexpected link between translation initiation and HSF-1 and show that inhibition of translation initiation fails to lower the concentration of newly synthesized proteins in the absence of HSF-1.\n\n## Results\n\n### Characterizing mRNA translation inhibitors in C. elegans\n\nWe first set out to identify suitable pharmacological translation initiation (TI) and translation elongation (TE) inhibitors by screening a series of translation inhibitors for their ability to lower protein synthesis in C. elegans in a dose-dependent manner (Dmitriev et al., 2020). To monitor protein synthesis, we employed SUrface SEnsing of Translation (SUnSET) (Arnold et al., 2014). In this method, translating ribosomes incorporate puromycin into newly synthesized proteins. The level of puromycin incorporation serves as a quantitative measure for translation and is detected by western blotting using an anti-puromycin monoclonal antibody (Figure 1A). The six molecules examined all reduced puromycin incorporation relative to DMSO controls to varying degrees (Figure 1B and C). Based on their ability to lower the concentration of newly synthesized proteins by ~40\u201350% and their annotated targets (vide infra), we selected four structurally distinct inhibitors, anisomycin, lycorine, 4E1RCat, and salubrinal, to investigate further (Figure 1D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76465/elife-76465-fig1-v2.jpg)\n\n**Figure 1.:** (A) Monitoring changes in protein synthesis using the SUrface SEnsing of Translation (SUnSET) method. C. elegans were treated with solvent (DMSO) or the indicated inhibitors (100 \u03bcM) for 12 hr, followed by a 4 hr puromycin incorporation. Worms were lysed, and protein extracts were run on SDS-PAGE gels, followed by staining with a puromycin-specific antibody. (B) Six translation inhibitors reduce puromycin incorporation relative to DMSO control. GAPDH was used as a loading control. (C) Quantification of three independent SUnSET experiments, as shown in (B). Significance was determined by one-way ANOVA with Dunnett\u2019s multiple comparisons tests where **=p \u2264 0.01 for all treatments. Error bars indicate mean \u00b1 SD from three independent trials. (D) Chemical structures of anisomycin, lycorine, 4E1RCat, and salubrinal. Note each is structurally distinct. (E) Representative pictures showing the expression pattern of the bi-cistronic reporter in L4 stage animals. The image in the brightfield channel shows an L4 stage animal. Images in green and red channels show that GFP and tdtomato are expressed in body wall muscle. (F) Fluorescence of 500 transgenic animals treated with anisomycin, lycorine, 4E1RCat, and salubrinal. Each treatment reduced the GFP signal (green shading), but only anisomycin and lycorine reduced the dtTomato signal (red shading). Significance was determined by one-way ANOVA with Dunnett\u2019s multiple comparisons tests where ****=p \u2264 0.0001 for all treatments. Error bars indicate mean \u00b1 SD. The experiment was repeated four times with similar results. Inset: 4E1RCat emits red fluorescence; therefore, the expression of tdTomato needed to be tested by western blot. 4E1Rcat does not change myc expression on the protein level, GAPDH is used as a loading control, a representative image of three independent experiments.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76465/elife-76465-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Cycloheximide (100 \u03bc\u039c) unreliably reduces puromycin incorporation relative to DMSO control in N2 animals. All three experiments were conducted under identical conditions and run on the same blot to reduce technical batch effects but resulted in unreliable reductions of newly synthesized proteins. (B) Quantification of three independent SUrface SEnsing of Translation (SUnSET) experiments. Data are displayed as mean \u00b1 SEM and *=p \u2264 0.05 by two-tailed Student\u2019s t-test. Note the large error bars for cycloheximide treatment that led us to exclude it from the study, as cycloheximide does not allow precise control over the concentration of newly synthesized proteins. We note the p-value is higher than when anisomycin or lycorine are used. (C) Replicate experiment as in Figure 1F with cycloheximide and salubrinal. Each treatment reduced the GFP signal. Significance was determined by one-way ANOVA with Dunnett\u2019s multiple comparisons tests where **=p \u2264 0.01 and ****=p \u2264 0.0001. Error bars indicate mean \u00b1 SD. The experiment was repeated three times with similar results. We note the p-value was less significant for cycloheximide than for the same experiment using anisomycin or lycorine instead. (D) Replicate experiment as in Figure 1F with cycloheximide and salubrinal. Only the TE inhibitor cycloheximide reduced tdTomato signal while the initiation inhibitor salubrinal did not. Significance was determined by one-way ANOVA with Dunnett\u2019s multiple comparisons tests where **=p \u2264 0.01. Error bars indicate mean \u00b1 SD. The experiment was repeated three times with similar results. We note the p-value was less significant for cycloheximide than for the same experiment using anisomycin or lycorine instead.\n\nThe selected molecules have been extensively studied in yeast and cell culture to identify their purported mechanism of action\u2014broadly, anisomycin and lycorine inhibit TE, while 4E1RCat and salubrinal inhibit TI. To confirm their action as TI or TE inhibitors in C. elegans, we generated a bi-cistronic reporter to co-express both GFP and tdTomato under the control of the myo-3 promotor and an internal ribosomal entry site (IRES) (Figure 1E; Li and Wang, 2012). In transgenic worms carrying the myo3p::GFP-IRES-tdTomato construct, strong GFP and tdTomato fluorescence were observed primarily in the muscle tissue. Using this reporter, we measured the fluorescence of 500 L4 animals treated with one of the four translation inhibitors. As expected for the TE inhibitors, anisomycin and lycorine decreased fluorescence in both green and red channels.\n\nOn the other hand, the TI inhibitors 4E1RCat and salubrinal only decreased the fluorescence of the green channel, consistent with an initiation-dependent translation of the GFP mRNA sequence and the initiation-independent translation of the IRES-tdTomato sequence (Figure 1F). However, we observed a strong increase in red fluorescence in worms treated with 4E1RCat, but this is due to the red color of the molecule itself. We confirmed no change in tdTomato levels by western blot (Figure 1F, inset). The above results confirm that the four translation inhibitors function in distinct translation steps, consistent with previous reports in yeast and cell culture.\n\nWe also confirmed the mechanism of translation inhibition of cycloheximide. Although cycloheximide is a widely used inhibitor of translation throughout the literature, to our knowledge, it has not been shown to specifically act as a TE inhibitor in C. elegans. Using the SUnSET assay and our bi-cistronic reporter, we show that cycloheximide directly reduces the concentration of newly synthesized proteins (Figure 1\u2014figure supplement 1A, B) and functions as a TE inhibitor since we observed a reduction of both the GFP and the tdTomato signal. Salubrinal, which we included as a TI inhibitor control, only reduced translation promoted by myo-3 but not the IRES site as seen before (Figure 1\u2014figure supplement 1C, D). We noted that the inhibition of translation by cycloheximide across different trials was considerably more variable compared to anisomycin and lycorine (compare Figure 1B and C with Figure 1\u2014figure supplement 1A, B). We therefore decided to proceed with anisomycin and lycorine as TE inhibitors as they reliably reduced the concentration of newly synthesized proteins by 40\u201350%.\n\n### Initiation and elongation inhibitors protect from thermal stress by HSF-1-dependent and -independent mechanisms, respectively\n\nAfter confirming that the four translation inhibitors (Figure 1D) acted as TI or TE inhibitors in C. elegans as seen in mammals, we set out to investigate how pharmacologically targeting different steps of the translation cycle will affect stress-induced protein aggregation. We first chose thermal stress to induce protein aggregation and asked if both TI and TE inhibitors improve stress resistance. The animals were treated with either of the four inhibitors on day 1 of adulthood and, after a 72 hr treatment, moved to a non-permissive temperature of 36\u00b0C (Figure 2A). Hourly monitoring revealed that all four molecules significantly improved the survival of N2 animals (Figure 2B). These data show that both the inhibition of TI and TE protect from thermal stress.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76465/elife-76465-fig2-v2.jpg)\n\n**Figure 2.:** (A) Day 1 adult wild-type (N2) and hsf-1(sy441) animals were treated for 3 days, then transferred to NGM plates. They were then subjected to a constant, non-permissive temperature of 36\u00b0C (heat shock [HS]) and scored alive/dead every hour by movement. (B) Graph shows survival as a function of hours at 36\u00b0C of day 4 adult N2 animals pre-treated with 100 \u03bcM translation inhibitor. Data show the mean \u00b1 SEM from three independent trials where each measurement is at least: **=p \u2264 0.01, ***p\u22640.001, and ****p\u22640.0001 by row-matched two-way ANOVA with \u0160\u00edd\u00e1k multiple comparisons test. (C) Graph shows survival as a function of hours at 36\u00b0C of day 4 adult hsf-1(sy441) animals pre-treated with 100 \u03bcM translation inhibitor. Data show the mean \u00b1 SEM from three independent trials where each measurement is at least: *=p \u2264 0.05, **=p \u2264 0.01, and ***p\u22640.001 by row-matched two-way ANOVA with \u0160\u00edd\u00e1k multiple comparisons test. (D) Representative SDS-PAGE gel stained with the protein stain Coomassie blue for visualization. Anisomycin (Anis.) reduces the proportion of detergent-insoluble protein following a 2 hr HS of N2 animals. Proteins were detergent extracted, ultracentrifuged, and the insoluble pellet was resuspended in 8 M urea before running on the gel. (E) Quantification of four separate extractions shows anisomycin significantly reduces HS-induced aggregation in wild-type N2 animals. Gels were stained with Sypro Ruby. Data are displayed as mean \u00b1 SEM and *=p \u2264 0.05 by two-tailed Student\u2019s t-test.\n\nWe next asked if translation inhibitors require the canonical heat shock response (HSR) controlled by the transcription factor HSF-1 to protect from heat stress (HS). Previous work by us and others resulted in contradictory findings on whether protection from heat by translation inhibition depends on HSF-1 (Seo et al., 2013; Solis et al., 2018; Zhou et al., 2014). Therefore, to test if translation inhibition protects from HS in an HSF-1-dependent or -independent manner, we repeated the thermotolerance assay in HSR-deficient hsf-1(sy441) mutants. Only the TE inhibitors anisomycin and lycorine protected hsf-1(sy441) from HS-induced proteotoxicity, while the TI inhibitors 4E1RCat and salubrinal did not (Figure 2C). These results showed that different modes of translational inhibition protect by genetically separable mechanisms. However, this also reconciles previous contradictions as different groups inhibited translation using inhibitors or RNAi with specificity for either step.\n\nTo broadly confirm the ability of TE inhibitors to protect from thermal proteotoxicity through improved proteostasis, we conducted sequential detergent extractions to biochemically isolate and quantify soluble and insoluble proteins in wild-type (N2) animals (David et al., 2010; Reis-Rodrigues et al., 2012; Simonsen et al., 2008). Following a 2 hr HS at 36\u00b0C, we observed a substantial increase in insoluble protein compared to non-heat-shocked controls. Furthermore, pre-treatment with the TE inhibitor anisomycin suppressed the increase in protein insolubility (Figure 2D and E), consistent with the observed thermal protection. These results reveal that TI inhibitors trigger an HSR-dependent mechanism to protect from thermal stress, while TE inhibitors trigger an HSR-independent mechanism. We concluded that different modes of translation inhibition protect the proteome by genetically distinct mechanisms.\n\n### Translation elongation but not initiation inhibitors protect from heat shock-induced PolyQ aggregation\n\nTE inhibitors are reported to free up folding capacity by reducing overall protein synthesis. To monitor folding capacity in live imaging, we developed an experimental procedure to examine how translation inhibition will dynamically affect protein aggregation in real time in the PolyQ::YFP strain AM140 (Figure 3A). The AM140 strain expresses a stretch of 35 glutamine residues fused to YFP (PolyQ::YFP) in the muscle, which we used as an orthogonal model of reduced protein folding capacity. Expression of the aggregation-prone PolyQ stretch increases the protein folding load on the proteostasis system. Thus, its aggregation propensity acts as a sensor for protein folding capacity (Brignull et al., 2006; Moronetti Mazzeo et al., 2012). After a 2 hr HS, the initially diffuse PolyQ signal gradually localized into puncta (Figure 3B, Video 1). Aggregation foci formation resulted from a redistribution of the YFP signal into aggregation foci as the total level of YFP fluorescent signal for a given animal remained constant (Figure 3\u2014figure supplement 1A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76465/elife-76465-fig3-v2.jpg)\n\n**Figure 3.:** (A) Day 1 AM140 adult worms expressing the polyglutamine-YFP fusion protein (PolyQ::YFP) in their muscle were subjected to heat stress (HS) on NGM plates for 2 hr at 36\u00b0C followed by a 1\u20132 hr mounting/immobilization procedure in 384-well plates and subsequent live imaging for 15 hr. (B) Fluorescent time-lapse images of two animals expressing the PolyQ::YFP fusion protein in the body wall muscle. The animals were embedded in the hydrogel for immobilization. Following a 2 hr HS, animals were imaged over 15 hr; by 8 hr, the YFP signal began to localize into discrete puncta that persisted through the observation time. (C) Graph shows the mean number of PolyQ aggregates per worm as a function of time following heat shock. C. elegans (PolyQ::YFP) were pre-treated with lycorine, anisomycin (100 \u03bc\u039c), or DMSO. Lines indicate mean, and shading indicates 95% CI. (D) Representative images of control (top) and 100 \u03bc\u039c anisomycin-treated (bottom) PolyQ animals 15 hr after HS. The representative images shown have been uniformly modified using the \u20183D Surface Plot\u2019 plugin in ImageJ to visualize aggregates.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76465/elife-76465-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Total fluorescent YFP intensity in PolyQ transgenic animals does not change significantly within the 15 hr of imaging of the animals after the heat stress (HS), showing that the aggregate formation is a redistribution of soluble PolyQ::YFP into aggregation foci. Lines indicate mean, and shading indicates 95% CI. (B) Transgenic AM140 worms treated with indicated chemicals for 12 hr at the late L4 stage, then subjected to 36\u00b0C for 2 hr on day 1 of adulthood. Anisomycin and lycorine had suppressed aggregate formation as measured in our live imaging protocol. In addition, there was a non-significant tendency for 4ER1Cat. Lines indicate mean, and shading indicates 95% CI for DMSO, anisomycin, and lycorine. (C) 12 hr pre-treatment of anisomycin in PolyQ C. elegans was necessary to inhibit aggregation significantly. Lines indicate means, while DMSO and 12 hr treatment with anisomycin (100 \u03bc\u039c) includes 95% CI as indicated by shading.\n\n![Video 1.](https://cdn.elifesciences.org/articles/76465/elife-76465-video1.mp4.jpg)\n\n**Video 1.:** AM130 C. elegans expressing 35 glutamine residues fused to YFP (PolyQ::YFP) were treated with DMSO or anisomycin for 12 hr before subjecting the animals to a 2 hr heat shock at 36\u00b0C. The animals were embedded into a hydrogel physically immobilizing the worm and imaged over 15 hr. The representative images shown have been uniformly modified using the \u20183D Surface Plot\u2019 plugin in ImageJ to visualize aggregates.\n\nOnly TE inhibitors lycorine and anisomycin significantly reduced HS-induced PolyQ aggregation, while the TI inhibitors 4E1RCat had a small effect and salubrinal had no effect (Figure 3C, Figure 3\u2014figure supplement 1B). Pre-treatment with anisomycin and lycorine reduced the number of PolyQ aggregates per worm. However, pre-treatment did not change the onset of aggregation, the rate of formation, or the final size of the aggregation foci (Morley et al., 2002; Figure 3D). Furthermore, we found the effect of anisomycin or lycorine to be time-dependent. They strongly inhibited aggregation following a 12 hr preincubation period but less so following a 4 hr preincubation (Figure 3\u2014figure supplement 1C). Starting treatment with anisomycin after the HS did not reduce the number of aggregation foci (not shown). These results suggest that anisomycin and lycorine reduce the early formation of aggregate foci but do not alter the dynamics once aggregation begins.\n\n### Translation elongation but not initiation inhibitors protect from proteasome dysfunction\n\nThe data thus far suggest that inhibition of translation protects from folding stress by an HSF-1-dependent and -independent mechanism determined by the inhibited translation step. The proteasomal system is another critical proteostasis mechanism by which cells clear protein aggregates. The proteasomal system ubiquitinylates misfolded proteins by ubiquitin ligases to target them for degradation by the 26S proteasome. Blocking proteasome degradation by bortezomib, a specific inhibitor of the 20S subunit, results in the formation of protein aggregates and proteotoxic stress (Schrader et al., 2016).\n\nWe pre-treated both N2 and hsf-1(sy441) L4 animals with either TI or TE inhibitors for 12 hr, followed by the addition of bortezomib, and measured survival on day 8 of adulthood (Figure 4A). We chose to include the hsf-1(sy441) background because it serves as a proxy of reduced folding capacity given the defective HSR, allowing us to further investigate the relationship between reduced translation and its conditional dependency on hsf-1. Compared to non-treated controls, bortezomib decreased the survival of both genotypes. TE inhibitors improved the survival of the hsf-1(sy441) animal back to untreated levels but only showed a non-significant tendency to improve the survival of N2 wild-type animals (Figure 4B). In contrast, TI inhibitors enhanced the proteotoxicity elicited by bortezomib in both backgrounds. We also observed bortezomib-treated hsf-1(sy441) animals to shrink in size (sma phenotype) (Figure 4C). We quantified this effect after a 12 hr pre-treatment of anisomycin and successive co-incubation of bortezomib at day 3 of adulthood. Anisomycin substantially rescued sma phenotypes, almost completely reversing the animals back to normal size (Figure 4D). A similar rescue was observed for lycorine but not quantified.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76465/elife-76465-fig4-v2.jpg)\n\n**Figure 4.:** (A) Worms were pre-treated for 12 hr with DMSO or indicated inhibitors, followed by bortezomib (75 \u03bcM) treatment. The animals were then incubated with the combined treatment for 8 days and scored as alive/dead based on movement. (B) TE inhibitor treatment improved morphological features (not shown) and provided limited protection from bortezomib-induced proteotoxicity in N2 animals. TI inhibitor treatment enhanced toxicity. In hsf-1(sy441) animals, TE inhibitors protected from bortezomib-induced proteotoxicity, while TI inhibitors continued to sensitize worms to proteotoxicity. Data are displayed as mean \u00b1 SD and ****=p < 0.0001 by one-way ANOVA with Dunnet\u2019s multiple comparisons test. Total of three independent experiments. (C) Representative brightfield images of day 3 hsf-1(sy441) animals show anisomycin pre-treatment prevented the sma phenotype observed to be caused by proteasomal inhibition. (D) Measured length of hsf-1(sy441) worms at day 3 of adulthood. Anisomycin treatment almost completely rescued the sma phenotype induced by bortezomib. Data are displayed as mean \u00b1 SD and ****=p < 0.0001 by a one-way ANOVA with \u0160\u00edd\u00e1k multiple comparisons test. 30\u201342 animals per condition. Total of three independent experiments. (E) Representative fluorescent images of PolyQ worms treated with anisomycin at day 5. Bortezomib treatment caused morphological defects in animals (left panel), and anisomycin pre-treatment prevented these pathological defects (right panel). (F) Measured length of PolyQ worms at day 5 of adulthood. Anisomycin treatment almost entirely rescued the small (sma) phenotype induced by bortezomib. Data are displayed as mean \u00b1 SD and ****=p < 0.0001 by one-way ANOVA with Dunnet\u2019s multiple comparisons test. 42\u201357 animals per condition. Total of three independent experiments. (G) TI inhibitor treatment significantly reduced 20S proteasomal activity in N2 lysate. Compared to the wild-type, the proteasomal activity was lower in hsf-1(sy441) mutants, but TI inhibitors did not further reduce it. Positive control: 5 \u00b5L of 20S proteasome positive control (Chemicon Part No. 90205). Negative control: N2 lysate treated with 25 \u03bcM lactacystin, a 20S proteasome inhibitor (Chemicon Part No. 90208). Data are displayed as mean \u00b1 SD where **=p < 0.01 and ****=p < 0.0001 by one-way ANOVA with \u0160\u00edd\u00e1k multiple comparisons test. Three biological replicates.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76465/elife-76465-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Non-bortezomib-treated controls for Figure 4B. Treatment with inhibitor alone did not affect the lifespan of N2 worms when survival was measured at day 8. Interestingly, in hsf-1(sy441) animals, anisomycin alone significantly improves survival without bortezomib treatment, and similarly, lycorine trends toward significance (p=0.06). Data are displayed as mean \u00b1 SD and **=p < 0.01 and *=p < 0.05 by one-way ANOVA with Dunnet\u2019s multiple comparisons test. Total of three independent experiments.\n\nWe next asked if the induction of the sma phenotype was specific to hsf-1(sy441) animals or if the combination of proteasome toxicity with impaired protein folding capacity caused it. We, therefore, treated PolyQ35::YFP transgenic animals for 12 hr with the four different translation inhibitors, followed by bortezomib. As expected, treating PolyQ::YFP animals with bortezomib caused extensive protein aggregation. As before, the inhibition of TI exacerbated bortezomib toxicity and was not further quantified. As with hsf-1(sy441), bortezomib treatment also induced the sma phenotype in the PolyQ35::YFP transgenic animals, which was almost entirely rescued by anisomycin (Figure 4E and F).\n\nWe then directly tested the effect of each inhibitor on proteasome activity in both N2 and hsf-1(sy441) animals. TE inhibitors did not seem to affect proteasome activity in either strain. In contrast, TI inhibitors reduced N2 proteasome activity compared to DMSO-treated controls, providing a rationale for their increased toxicity in our proteasome survival assay (Figure 4G). hsf-1(sy441) mutants showed significantly decreased proteasome activity compared to N2 controls, which was not further reduced by TI inhibitors in hsf-1(sy441).\n\nTherefore, inhibition of TI exacerbates bortezomib-induced proteasome stress, while TE inhibition provides limited protection. However, TE inhibitors were highly protective in the context of reduced folding capacity. We concluded that there are distinct protective mechanisms that are employed depending on the way translation is inhibited and the type of stress challenging the animal.\n\n### Lifespan extension by translational elongation and initiation inhibitors is dictated by genetic background\n\nLowering translation is an established mechanism to extend lifespan and delay aging (Steffen and Dillin, 2016; Anisimova et al., 2018; Klaips et al., 2018; Hansen et al., 2007; Pan et al., 2007). Furthermore, aging is a well-known driver of protein aggregation. However, to our knowledge, it has never been investigated if the anti-aggregation and anti-aging effects of translational inhibition can be uncoupled and if the mode of translational inhibition influences these phenotypes. Inhibition of translation in wild-type animals using the two TE inhibitors, anisomycin and lycorine, showed no, or only a minor, lifespan extension in N2 animals (Figure 5A). In contrast, inhibition of TI by the inhibitors 4E1RCat and salubrinal dose-dependently extended lifespan of N2 animals (Figure 5B). This difference was observed despite all four translation inhibitors reducing protein translation to the same extent (Figure 1B). Thus, the difference in the effect on lifespan by TE and TI inhibitors cannot be explained by reducing overall protein synthesis alone.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76465/elife-76465-fig5-v2.jpg)\n\n**Figure 5.:** (A) Graphs show mean lifespan as a function of translation inhibitor concentration. TI inhibitors increase the lifespan of N2 but not hsf-1(sy441) animals, with a maximum effect at 100 \u03bcM. TE inhibitors increase the lifespan of hsf-1(sy441) but not N2 animals. Error bars indicate \u00b1 SEM. See Supplementary file 1 for the number of animals and repeats. (B) Survival curves from representative experiments show the fraction of wild-type (N2, solid line) or hsf-1 mutant (dashed line) animals when treated with 100 \u03bcM of the indicated compound. Black lines indicate DMSO treatment, and colored lines indicate inhibitor treatment. Data are displayed as a Kaplan-Meier survival curve, and significance was determined by the log-rank test. ID # refers to the unique entry within Supplementary file 1. (C) Experimental strategy for treating animals and isolating detergent-insoluble fractions. 10,000 animals were treated and allowed to age for 8 days before being washed with M9, frozen in liquid nitrogen, and mechanically lysed. Then proteins were extracted from the total lysate based on solubility, and an aliquot from each fraction was run on an SDS-PAGE gel. (D) Representative SDS-PAGE gel stained with Sypro Ruby. 4E1RCat and salubrinal reduce insoluble protein at day 8. (E) Quantification of two separate experiments shows 4E1RCat and salubrinal significantly reduce insoluble protein in wild-type (N2) animals. Data are displayed as mean \u00b1 SEM and **=p < 0.01 by two-tailed Student\u2019s t-test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76465/elife-76465-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Cycloheximide phenocopies other translation elongation (TE) inhibitors where it does not extend lifespan in N2 at 100 \u03bc\u039c while increasing lifespan in hsf-1(sy441) mutant animals. We note the p-value is less significant than when anisomycin or lycorine are used. See Supplementary File IDs: #95, #98, #103, #108.\n\nWhile investigating the effect of inhibiting different modes of translation in our proteasome survival assay, we noticed that anisomycin and lycorine appeared to improve the survival of hsf-1(sy441) animals (Figure 4\u2014figure supplement 1). We, therefore, tested the ability of all four translation inhibitors to extend lifespan in hsf-1(sy441) mutants. As expected, both 4E1RCat and salubrinal failed to extend lifespan in hsf-1(sy441) mutants significantly. This result is consistent with genetic work by both the Rodgers and Tavernarakis labs, which showed inhibition of TI extends lifespan dependent on HSF-1 (through ifg-1 and ife-2, respectively) (Howard et al., 2016; Rieckher et al., 2018).\n\nAs Figure 4\u2014figure supplement 1 hinted, treatment with the TE inhibitors anisomycin and lycorine significantly extended the lifespan of hsf-1(sy441) mutants by ~20% (Figure 5B). Similar results were obtained for the TE inhibitor cycloheximide (Figure 5\u2014figure supplement 1). We interpret this lifespan extension as a partial rescue of the protein folding defect in hsf-1(sy441) mutants, as the increase in lifespan did not reach the lifespan of wild-type animals. Taken together, however, our data demonstrate that longevity induced by translation inhibition, whether through targeting TE or TI, subsumes several different mechanisms that lead to longevity.\n\nWe next tested the ability of all four inhibitors to reduce age-associated protein aggregation. If inhibition of translation alone is sufficient to reduce protein aggregation independently of any downstream mechanisms, all four inhibitors should reduce age-associated protein aggregation. Conversely, if the reduction of age-associated protein aggregation is closely linked to longevity, then only the TI inhibitors should reduce protein aggregation. We treated day 1, N2 animals with 100 \u03bc\u039c of each of the four inhibitors and allowed the animals to age for 8 days, after which we separated proteins based on solubility (Figure 5C). We found that only the two TI inhibitors that extended lifespan caused significant decreases in the amount of SDS-insoluble aggregates and that the TE inhibitors failed to do so (Figure 5D and E).\n\nTaken together, our data suggest that inhibition of TE rescues proteostasis-compromised animals by the reduced folding load model without generating additional protein folding capacity. Separately, inhibition of TI protects and improves longevity by the selective translation model that depends on HSF-1.\n\n### Inhibition of translation initiation increases protein concentration in hsf-1(sy441) mutants\n\nThe canonical model that explains the requirement of HSF-1 to induce longevity by inhibiting TI suggests that blocking TI activates the HSR via HSF-1 that then initiates the transcription of HSP chaperones to increase folding capacity (Rogers et al., 2011; Howard et al., 2016). In contrast, work in cancer cells showed inhibition of translation to block HSF-1 binding to DNA and to specifically reduce the expression of HSP70 and DNAJA chaperones (Santagata et al., 2013), making it difficult to envision how HSF-1 could act as a downstream effector of TI.\n\nWe, therefore, tested if HSF-1 could act upstream of TI either by controlling the expression of transcripts that become translated upon inhibition of translation or that HSF-1 (or one of its targets) directly contributes to the proper function of the TI machinery. We treated N2 or hsf-1(sy441) animals with the four inhibitors and measured the resulting concentration of newly synthesized proteins. As before, all four inhibitors reduced the concentration of newly synthesized proteins in N2. In contrast, TI inhibitors increased the concentration of newly synthesized proteins by 1.5- to 2-fold in the hsf-1(sy441) animals (Figure 6A and B). We confirmed that this effect is not due to increased intake of puromycin, as inhibitor treatment did not affect food intake (Figure 6C). Furthermore, none of the translation inhibitors induced the HSF-1-activated heat shock reporter hsp-16.2::GFP (Figure 6D).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/76465/elife-76465-fig6-v2.jpg)\n\n**Figure 6.:** (A) C. elegans were treated with solvent (DMSO) or the indicated inhibitors (100 \u03bcM) for 12 hr, followed by a 4 hr puromycin incorporation in both N2 and hsf-1(sy441) background, which was immunoblotted against using an anti-puromycin antibody. hsf-1(sy441) mutant animals exhibited increased puromycin incorporation compared to N2 animals, which was further increased by both TI inhibitors 4E1RCat and salubrinal. (B) Quantification of four independent SUrface SEnsing of Translation (SUnSET) experiments in (A). Significance was determined by one-way ANOVA with \u0160\u00edd\u00e1k multiple comparisons test where *=p \u2264 0.05, **=p \u2264 0.01, and **** p\u22640.0001. Error bars indicate mean \u00b1 SD from four independent trials. (C) Food intake was quantified relative to DMSO-treated N2 controls measuring bacterial clearance from day 1 to day 4 of adulthood. Anisomycin and salubrinal significantly decrease food intake in wild-type N2. In hsf-1(sy441), no inhibitor statistically changes food intake. Loxapine was used as a positive control in both genotypes. Significance was determined by one-way ANOVA with \u0160\u00edd\u00e1k multiple comparisons test where *=p \u2264 0.05, **=p \u2264 0.01, and ****p\u22640.0001. Error bars indicate mean \u00b1 SD from four independent trials. Total of eight independent experiments. (D) Translation inhibitors suppressed the heat shock response (HSR) as measured by hsp-16.2::GFP fluorescence assay. After incubation with the inhibitors for 4 days, followed by a 1 hr heat shock (HS) at 36\u00b0C, little to no increase in GFP expression was observed for each inhibitor, indicating that all inhibitors block HSR activation at the tested concentration (100 \u03bcM). Lines indicate mean, and shading indicates 95% CI. Representative of three independent experiments. (E) N2 and hsf-1(sy441) C. elegans were fed HT115 empty vector or RNAi against ifg-1. ifg-1 depletion increased puromycin incorporation in hsf-1 mutants but decreased incorporation in N2 animals, similar to 4E1RCat treatment. GAPDH was used as a loading control. Immunoblot is representative of three independent experiments. (F) 4E1RCat significantly increases lifespan in N2 animals. Data are displayed as a Kaplan-Meier survival curve, and significance is determined by the log-rank test. See ID #111 and #112 for details in Supplementary file 1. (G) 4E1RCat does not increase lifespan in ifg-1(cxTi9279) animals. See ID #93 and #94 for details in Supplementary file 1. Data are displayed as a Kaplan-Meier survival curve, and significance is determined by the log-rank test.\n\nTo ensure that these results are indeed caused by the inhibition of TI and not an off-target effect, we knocked down the target of 4E1RCat, eIF4G/ifg-1, by RNAi in N2 and hsf-1(sy441) animals and measured the concentration of newly synthesized proteins. As seen for 4E1RCat, the knockdown of eIF4G/ifg-1 reduced the protein concentration in N2 but dramatically increased it in hsf-1(sy441) mutants (Figure 6E). Unfortunately, we could not determine the exact target for salubrinal in C. elegans.\n\nTo further confirm that the lifespan extension of 4E1RCat is caused by on-target action, we measured lifespan extension in N2 and ifg-1(cxTi9279) mutants which carry a splicing defect that results in an overall reduction of eIF4G/ifg-1 protein (Morrison et al., 2014). As we previously observed (Figure 5A and B) 4E1RCat treatment of N2 animals significantly extended lifespan (Figure 6F). However, no lifespan extension was observed in ifg-1(cxTi9279) animals (Figure 6G), showing that 4E1RCat extends lifespan by on-target action. Therefore, we concluded that inhibition of eIF4G/ifg-1 requires HSF-1 to lower the concentration of newly synthesized proteins. Consequently, the beneficial effects of 4E1RCat treatment are not observed in hsf-1(sy441) mutants as inhibition of eIF4G/ifg-1 fails to lower protein concentrations in this strain.\n\n## Discussion\n\nA substantial body of genetic and biochemical work suggests that lowering the concentration of newly synthesized proteins reduces the load on the proteostasis machinery. We asked if these effects could be pharmacologically replicated to exploit them for therapeutic purposes in disease models (Solis et al., 2018; Schubert et al., 2018).\n\nWe set out to study how pharmacological inhibition of TI or TE improves proteostasis and increases longevity in adult C. elegans. We intended to compare the selective translation model, in which the selective reduction of specific proteins and the selective translation of others protect from proteotoxicity to the reduced folding load model, in which the non-specific reduction of the concentration of newly synthesized proteins is protective.\n\nWe compared the non-selective lowering of protein concentration by TE inhibitors to the selective lowering of initiation-dependent proteins by TI inhibitors. Our studies reveal that pre-existing proteotoxicity, as might be observed in a disease state, dictates the mode of translation inhibition necessary to restore proteostasis. As a result, the mode of translation inhibition, either inhibiting TI or TE, results in distinct and sometimes opposing outcomes for the health of the animals.\n\nThe most striking dichotomy was seen when pre-existing proteotoxicity\u2014caused by the lack of either HSF-1 or the expression of the aggregation-prone PolyQ protein\u2014was combined with the inhibition of the proteasome. These combined insults led to increased protein aggregation, shrinking body size, and death of the animals (Figure 4). Inhibition of TE almost entirely rescued these phenotypes. In sharp contrast, inhibition of TI exacerbated proteotoxicity and increased mortality. The effects were consistent for both TE and TI inhibitors despite structural differences and different targets of the TI inhibitors.\n\nThe second example of this dichotomy was the reciprocal ability of TI and TE inhibitors to extend the lifespan of N2 wild-type animals or hsf-1(sy441) mutant animals, with each mode of inhibition only able to extend the lifespan in one of the strains. Overall, TE inhibition effectively rescued proteostasis in animals with pre-existing proteotoxicities, such as a compromised HSR, reduced proteasome activity, or the expression of aggregation-prone proteins. Conversely, inhibition of TI did little to rescue pre-existing proteotoxicity or worsen it but proved effective at preventing emerging proteotoxicity, for example, with age. Notably, both anisomycin and cycloheximide have previously been reported to extend lifespan in wild type animals (Tarkhov et al., 2019; Takauji et al., 2016) but these studies were conducted in either non-fully reproductive adults or the exact conditions were not specified (i.e. temperature, whether OP50 feeding bacteria was alive/dead and developmental stage; Takauji et al., 2016). In contrast, we focused on the effects of inhibitor treatment on the lifespan of fully reproductive adult animals\u2014thereby eliminating any partial dependency on developmental effects. Overall, our findings establish that inhibition of TI or TE has distinct consequences for proteostasis and that their mechanisms to control the concentration of newly synthesized proteins can be genetically separated.\n\nWe considered the following reasons to explain the different consequences for proteostasis. The increased mortality observed after combining bortezomib with TI inhibitors is likely to be the result of the lower expression of HSP90/daf-21 and HSP70/hsp-1, whose translation depends on eIF4G/ifg-1 (Rogers et al., 2011) and the ability of both treatments to lower proteasome activity independently (Figure 4). The lower proteasome activity induced by the TI inhibitors is likely to enhance the proteotoxicity of bortezomib. The lowered proteasome activity observed upon inhibition of TI was surprising as the short-term inhibition of translation increases proteasome activity (Zhao et al., 2015). However, compared to most other studies, we chose to reduce translation by only ~40%, as such a reduction is more likely to be tolerated chronically if translation inhibitors could be developed into therapeutics. In contrast, TE inhibitor treatment alone did not lower proteasome activity. More importantly, lowering the concentration of newly synthesized proteins by inhibiting TE rescued most bortezomib-induced proteotoxic effects. Thus, long-term inhibition of TI or TE differentially affects proteasomal activity and its proteotoxic effects.\n\nThe most unequivocal difference was the dependency of TI inhibitors on HSF-1, which was not observed for TE inhibitors. This dependency of the TI inhibitors on HSF-1 was initially explained by a model in which inhibition of TI activates the HSR via HSF-1. This model has been previously proposed for eIF4G/ifg-1 (Rogers et al., 2011; Howard et al., 2016).\n\nThis initial model is still likely valid, but our study shows that HSF-1 has a more immediate role. HSF-1, or one of its targets, is necessary for the TI machinery to control protein synthesis. Selective translation can only occur if TI itself is inhibited. As seen in Figure 6, inhibition of TI in the absence of HSF-1 increases, rather than decreases, the amount of newly synthesized proteins. This surprising increase in newly synthesized proteins upon 4ER1Cat treatment was not an off-target effect as it was replicated by RNAi-mediated knockdown of eIF4G/ifg-1 in an HSF-1 mutant background. Hence, HSF-1 activity directly or indirectly modulates the ability of TI components to control the concentration of newly synthesized proteins.\n\nAt the outset, we intended to compare the selective translation model to the reduced folding load model by comparing their effects on proteostasis under conditions in which inhibition of translation resulted in the same concentration of newly synthesized proteins, irrespective of the mode of translation inhibition. We observed apparent differences in proteostasis effects, supporting the reduced folding load model for inhibiting TE and the selective translation model for inhibiting TI.\n\nThe inability of TI inhibitors to reduce the concentration of newly synthesized proteins in hsf-1(sy441) mutants and the inability to extend their lifespan shows that lowering the concentration of newly synthesized proteins is necessary for the beneficial effects. On the other hand, the finding that TE inhibitors protect from proteotoxic stress but do not extend lifespan shows that lowering the concentration of newly synthesized proteins is sufficient to protect from proteotoxic stress but is not sufficient to extend lifespan in wild-type, which appears to require selective translation.\n\n### Ideas and speculation\n\nOur data show that HSF-1 or one of its targets controls the ability of TI to change the concentration of newly synthesized proteins. Previous work noted a surprising requirement for HSF-1 in the protection from ER stress elicited by the RNAi-mediated knockdown of eIF4G/ifg-1 (Howard et al., 2016). The authors note that further investigations will be required to determine the direct link between enhanced HSR amelioration of proteotoxicity and the endoplasmic reticulum. Our results provide a compelling explanation for their findings, in that the lack of HSF-1 abolishes the ability of ifg-1 RNAi to lower the concentration of newly synthesized proteins and thus the protection from tunicamycin toxicity.\n\nIn the context of TI inhibition, HSF-1 (or one of its targets) may influence the concentration of newly synthesized proteins by either modulating protein degradation or synthesis. Our data show that proteasome activity and, by extension, degradation are lowered by both inhibition of TI and lack of HSF-1. Hence, combining both may indirectly increase the concentration of newly synthesized proteins through reduced degradation. However, inhibition of TI did not further decrease the already low proteasome activity in HSF-1 mutants (Figure 4). Furthermore, salubrinal and 4ER1Cat lowered proteasome activity by the same amount, yet 4ER1Cat treatment increased the concentration of newly synthesized proteins much more in the HSF-1 background (Figure 6B and E). Thus, we concluded a model in which HSF-1 promotes degradation in response to the inhibition of the TI machinery less likely.\n\nAlternatively, HSF-1 (or one of its targets) cooperates with TI factors to form a checkpoint that prevents random unregulated translation. The TI factors are part of the checkpoint but also initiate regulated translation by giving ribosomes access to mRNA. Thus, when TI factors are inhibited or knocked down, HSF-1 or one of its targets maintains the checkpoint preventing uncontrolled translation. Without any TI activity, maintaining the checkpoint reduces protein synthesis. In the hsf-1(sy441) mutant, the TI machinery still prevents uncontrolled translation but less effectively, leading to a slight but detectable increase in newly synthesized proteins in HSF-1 mutants (Figure 6A). Once the TI and HSF-1 are removed, ribosomes gain access to many mRNAs leading to unregulated translation and a dramatic increase in newly synthesized proteins.\n\nBoth the degradation and the cooperative checkpoint model explain the observed results but need to invoke a speculative connection between HSF-1 to either TI or protein degradation. Our results unexpectantly couple the ability of the TI machinery to control the concentration of newly synthesized proteins to HSF-1, thereby explaining its requirement. However, our results do not provide a mechanism by which HSF-1 couples the concentration of newly synthesized proteins to TI.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Caenorhabditis elegans)</td>\n      <td>N2</td>\n      <td>Caenorhabditis Genetics Center (CGC)</td>\n      <td>RRID:WB-STRAIN:WBStrain00000003</td>\n      <td>Wild-type (Bristol)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Caenorhabditis elegans)</td>\n      <td>CL2070</td>\n      <td>CGC</td>\n      <td>RRID:WB-STRAIN:WBStrain00005096</td>\n      <td>dvIs70 [hsp-16.2p::GFP+rol-6(su1006)]</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Caenorhabditis elegans)</td>\n      <td>AM140</td>\n      <td>CGC</td>\n      <td>RRID:WB-STRAIN:WBStrain00000182</td>\n      <td>rmIs132Punc-54::q35::yfp</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Caenorhabditis elegans)</td>\n      <td>KX54</td>\n      <td>CGC</td>\n      <td>RRID:WB-STRAIN:WBStrain00024080</td>\n      <td>ifg-1(cxTi9279)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Caenorhabditis elegans)</td>\n      <td>PS3551</td>\n      <td>CGC</td>\n      <td>RRID:WB-STRAIN:WBStrain00007673</td>\n      <td>hsf-1(sy441)</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Caenorhabditis elegans)</td>\n      <td>myo3p::GFP-IRES-tdTomato</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Adapted from:DOI: 10.2144/000113821\u2009See Materials and methods, Method for making bi-cistronic vector</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-puromycin (Mouse monoclonal)</td>\n      <td>MilliporeSigma</td>\n      <td>Cat#: MABE343RRID:AB_2566826</td>\n      <td>1:5000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GAPDH(Rabbit polyclonal)</td>\n      <td>Proteintech</td>\n      <td>Cat#: 1094-1-APRRID:AB_2263076</td>\n      <td>1:5000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-myc (Mouse Monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>Cat#: 2276SRRID:AB_331783</td>\n      <td>1:2000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse\u2014HRP (secondary)</td>\n      <td>Cell Signaling</td>\n      <td>Cat#: 7076S, RRID:AB_330924</td>\n      <td>1:5000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-rabbit\u2014HRP (secondary)</td>\n      <td>Cell Signaling</td>\n      <td>Cat#: 7074S, RRID:AB_2099233</td>\n      <td>1:5000</td>\n    </tr>\n    <tr>\n      <td>Commercial Assay or kit</td>\n      <td>20S Proteasome Activity Assay Kit</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: APT280</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial Assay or kit</td>\n      <td>SYPRO Ruby Protein Gel Stain 1\u00d7</td>\n      <td>Bio-Rad</td>\n      <td>Cat#: 1703125</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Anisomycin</td>\n      <td>MedChemExpress</td>\n      <td>Cat#: HY-18982</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Lycorine hydrochloride</td>\n      <td>Combi-Blocks</td>\n      <td>Cat#: QW-2476</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>4E1RCat</td>\n      <td>MedChemExpress</td>\n      <td>Cat#: HY-14427</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Puromycin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: P8833</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Salubrinal</td>\n      <td>MedChemExpress</td>\n      <td>Cat#: HY-15486</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Bortezomib, free base</td>\n      <td>LC Laboratories</td>\n      <td>Cat#: B-1408</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Lead contact and materials availability\n\nMichael Petrascheck is the Lead Contact and may be contacted at pscheck@scripps.edu. This study did not generate new unique reagents; however, the natural product Amicoumacin C was obtained as a gift from Dr Shigefumi Kuwahara, Ph.D. (Tohoku University). This reagent is not available without total chemical synthesis.\n\n### C. elegans strains\n\nThe Bristol strain (N2) was used as the wild-type strain. In addition, the following worm strains used in this study were obtained from the Caenorhabditis Genetics Center (CGC; Minneapolis, MN, USA): CL2070 [dvIs70 [hsp-16.2p::GFP+rol-6(su1006)]], AM140 [rmIs132[Punc-54::q35::yfp]], KX54 [ifg-1(cxTi9279)] and PS3551 [hsf-1(sy441)].\n\n### Method details\n\n#### Worm maintenance\n\n1000\u20132000 age-synchronized animals were plated into 6 cm culture plates with liquid medium (S-complete medium with 50 mg/mL carbenicillin and 0.1 mg/mL fungizone [amphotericin B]) containing 6 mg/mL X-ray irradiated Escherichia coli OP50 (1.5\u00d7108 colony-forming units [cfu]/mL, carbenicillin resistant to exclude growth of other bacteria), freshly prepared 4 days in advance, as previously described (Solis and Petrascheck, 2011), and were maintained at 20\u00b0C. The final volume in each plate was 7 mL. To prevent self-fertilization, FUDR (5-fluoro-2\u2019-deoxyuridine, 0.12 mM final) (Sigma-Aldrich, Cat#: 856657) was added 42\u201445 hr after seeding. At the late L4 stage, either DMSO/drug treatment (100 \u03bc\u039c unless otherwise stated) was added to each strain.\n\n#### RNAi\n\nRNAi of ifg-1 was preformed using the feeding vector L4440 to express dsRNA of the respective genes, received as a gift from the Hansen lab. HT115 bacteria were as OP50 bacteria above, with the exception that prior to harvesting, 2 mM IPTG (isopropyl \u03b2-D-1-thiogalactopyranoside) was added, and the suspension was allowed to grow for 4 additional hours to induce dsRNA expression. Animals were grown and synchronized in liquid culture as previously described, being fed the relevant RNAi bacteria.\n\n#### SUnSET to analyze the effectiveness of translation inhibitors in C. elegans\n\nDay 1 adult N2 worms were bleached, and eggs were allowed to hatch in S-complete by shaking overnight. On the next day, 12,000 L1 worms were seeded in a 15 cm plate containing a total volume of 30 mL S-complete with 6 mg/mL OP50 bacteria, 50 \u03bcg/mL carbenicillin, and 0.1 \u03bcg/mL amphotericin B. Six mL of 0.6 mM FUDR were added to worms at L4 stage in each plate. 100 \u03bc\u039c translation inhibitor was added to worms 2 hr after adding FUDR. After 12 hr, worms were transferred into a 15 mL corning tube containing a total volume of 5 mL S-complete with 750 \u00b5L 6 mg/mL OP50 bacteria, 0.5 mg/mL puromycin, and 100 \u03bc\u039c translation inhibitors. After rotating the corning tubes for 4 hr, worms were collected into 2 mL cryotubes by washing them with M9 once and with cold PBS three times. Worms were flash-frozen in liquid nitrogen and subsequently broken with a beak mill homogenizer (Fisherbrand). Protein concentrations were determined by the Bradford protein assay. 50 mg protein from each sample was loaded for western blot analysis using antibodies against puromycin (Millipore, MABE343) and GAPDH (Proteintech, 10494-1-AP). Antibodies were diluted 1:5000 in 5% non-fat milk in TBST.\n\n#### Method for making bi-cistronic vector\n\nThe body wall muscle-specific promotor of the bi-cistronic vector is from 2 kb upstream of the start codon of gene myo-3. GFP coding sequence is after the promotor. The IRES element is from 285 bp upstream of the hsp-3 start codon (Li and Wang, 2012). The Tdtomato coding sequence is after the IRES fragment. A 3Xmyc fragment is inserted in front of the tdtomato sequence. All fragments were ligated together by Gibson Assembly method (New England Biolabs).\n\n#### Determination of GFP and tdTomato fluorescence\n\nDay 1 adult bi-cistronic reporter worms were bleached, and eggs were allowed to hatch in S-complete by shaking overnight. On the next day, 12,000 L1 worms were seeded in a 15 cm plate containing a total volume of 30 mL S-complete with 6 mg/mL OP50 bacteria, 50 \u03bcg/mL carbenicillin, and 0.1 \u03bcg/mL amphotericin B. Six mL of 0.6mM FUDR was added, and two hours later, the animals were treated with the indicated translation inhibitor at a final concentration of 100 \u03bcM or DMSO only. At the L4 stage, 500 GFP-positive animals per condition were sorted using the COPAS Biosorter (Union Biometric). The integral values for fluorescence on a corresponding channel (i.e. green or red) were used to determine simultaneous red and green measurements for each animal using the standard BioSorter software. Integral values are determined automatically by the BioSorter by integrating each signal when the threshold signal is above the threshold value. In essence, it determines intensity over the length of the worm to account for variations in size.\n\n#### Thermotolerance\n\nAge-synchronized N2 or PS3551 [hsf-1(sy441)] animals were prepared as above in 6 cm culture plates and treated with water or 100 \u03bcM lycorine/anisomycin on day 1. On day 4, 25\u201335 animals were transferred to 6 cm NGM plates in triplicate for each condition and were transferred to the non-permissive temperature of 36\u00b0C. Every hour, survival was scored by lightly touching animals with a worm pick and scoring for movement.\n\n#### C. elegans insoluble protein extraction\n\n10,000 N2 worms were sorted into a 15 cm liquid culture dish using the COPAS Biosorter (Union Biometrica). For heat shock-induced aggregation experiments, worms were treated with either DMSO or anisomycin (100 \u03bc\u039c) for 12 hr on day 1 of adulthood, then subjected to a 2 hr heat shock at 36\u00b0C. After 12 hr of recovery, the animals were washed three times with S-complete buffer, once with PBS, and then flash-frozen in liquid nitrogen. 500 \u00b5L of cold lysis buffer (20 mM Tris base, 100 mM NaCl, 1 mM MgCl2, pH = 7.4, with protease inhibitors [Roche, 11836153001]) was added, and animals homogenized mechanically. An aliquot of this total lysate was saved. In an ultracentrifuge tube, two volumes of SDS Extraction buffer (20 mM Tris base, 100 mM NaCl, 1 mM MgCl2, pH = 7.4, with protease inhibitors, and 1% SDS) were added to 1 volume of total lysate and was centrifuged at 20,000 \u00d7 g for 30 min. The extraction was repeated two times to remove all SDS-soluble proteins. The remaining insoluble pellet was suspended briefly in 20 \u00b5L urea buffer (8 M urea, 50 mM DTT, 2% SDS, 20 mM Tris base, pH = 7.4) and sonicated. 18 \u00b5L of the insoluble suspension was added to 6 \u00b5L 4\u00d7 Laemmli buffer (Bio-Rad, #161-0747) supplemented with 10% 2-mercaptoethanol (Sigma, 60-24-2) and boiled for 5 min, then directly loaded onto SDS-PAGE gel (Bio-Rad, 4569033). Gels were stained with Sypro Ruby according to the manufacturer\u2019s directions. Gels were quantified in ImageJ by dividing the integrated intensity of each full insoluble lane by the integrated intensity of the corresponding full total protein lane after subtracting a similar area background lane, then normalizing to the DMSO control.\n\nFor age-associated protein aggregation experiments, the above was repeated with the following changes: Day 1 worms were treated with 100 \u03bc\u039c of each compound and allowed to age in liquid culture until day 8 of adulthood. Following lysis, worms were washed several times with PBS to remove soluble protein.\n\n#### Proteasome dysfunction assay\u2014survival\n\nAnimals were prepared as above in 96-well plates. At the late L4 stage, animals were pre-treated with DMSO or 100 \u03bc\u039c anisomycin. After 12 hr, the animals were treated with 75 \u03bc\u039c bortezomib. On day 8 of adulthood, the percentage of animals alive was determined by movement in liquid culture.\n\n#### Proteasome dysfunction assay\u2014worm length\n\nAnimals were prepared as above in 6 cm liquid culture dishes. At the late L4 stage, animals were pre-treated with DMSO or 100 \u03bc\u039c anisomycin. After 12 hr, the animals were treated with 75 \u03bc\u039c bortezomib. Body length was measured on day 3 for hsf-1(sy441) or day 5 for PolyQ using the 10\u00d7 objective with the ImageXpress Micro XL and Metaexpress microscopy software.\n\n#### 20S proteasome activity assay\n\nThe Chemicon 20S Proteasome Activity Assay Kit (Cat. No APT280) was used according to the manufacturer\u2019s instructions. In short, 10,000 age-synchronized animals were grown in liquid culture on 10 cm plates. DMSO or inhibitors were added on day 1. On day 5, animals were collected and washed 3\u00d7 with cold DPBS, then once with 1\u00d7 assay buffer. Worms were flash-frozen in liquid nitrogen. After three biological replicates were harvested in this way, the frozen animals were broken open with a beak mill homogenizer (Fisherbrand). Protein concentrations were determined by the Bradford protein assay. 200 \u03bcg of sample was loaded with assay mixture into a 96-well plate and incubated for 1 hr at 37\u00b0C. Fluorescence was measured on the Tecan Safire II with a 380/460 nm filter set. Positive control: 5 \u00b5L of 20S proteasome positive control (Chemicon Part No. 90205). Negative control: N2 lysate treated with 25 mM lactacystin, a 20S proteasome inhibitor (Chemicon Part No. 90208).\n\n#### Heat shock-induced aggregation and stress response\n\nCL2070 [dvIs70 [hsp-16.2p::GFP+rol-6(su1006)]] or AM140 [rmIs132[Punc-54::q35::yfp]] age-synchronized animals were treated with DMSO or 100 \u03bc\u039c drug at late L4. 4\u201312 hr later, on day 1 of adulthood, 1.5 mL of the treated animals were transferred from liquid culture into an Eppendorf tube, washed twice with S-complete, pelleted, and then transferred to 6 cm NGM plates using S-complete. Once the animals were completely dry on the NGM plate, they were transferred to a 36\u00b0C incubator, plates upside down, for 1\u20132 hr.\n\n#### Hydrogel mounting\n\nAnimals were washed from NGM plates using 0.2% HHPPA (2-hydroxy-4\u2019-(2-hydroxyethoxy)-2-methylpropiophenone) (CAS[106797-53-9]) dissolved in S-complete into a 2 mL Eppendorf tube. Animals were washed twice with 0.2% HHPPA, then suspended in 0.3 mL 0.2% HHPPA. 2.5 \u00b5L of this solution was seeded into a single well of a 384-well plate containing 2.5 \u00b5L 30% PEG-DA (polyethylene glycol diacrylate, MW = 4000, Polysciences, Cat#: 15246-1) in S-complete. After 5 min, to allow the solutions to diffuse, the animals were immobilized by subjecting the 384-well plate UV light using a routine laboratory gel viewer (UVP Dual-Intensity Ultraviolet Transilluminator, high intensity) for 30 s. 45 \u00b5L S-complete buffer was added on top to prevent desiccation. In general, each well contained 5\u201310 worms.\n\n#### Imaging and analysis\n\nTime-lapse brightfield and fluorescence images were taken with a 10\u00d7 objective using the ImageXpress Micro XL over 15 hr. The number of PolyQ aggregates, or total YFP fluorescence, in the whole worm, was determined by analyzing images using a custom pipeline created in CellProfiler.\n\n#### Lifespan assay\n\nAge-synchronized C. elegans were prepared in a liquid medium, as described above, and seeded into flat-bottom, optically clear 96-well plates (Corning, 351172) containing 150 \u00b5L total volume per well, as previously described (Clay and Petrascheck, 2020). Plates contained ~10 animals per well in 6 mg/mL \u03b3-irradiated OP50. Age-synchronized animals were seeded as L1 larvae and grown at 20\u00b0C. Plates were covered with sealers to prevent evaporation. To prevent self-fertilization, FUDR (0.12 mM final) was added 42\u201445 hr after seeding. Drugs were added on day 1 of adulthood. DMSO was kept to a final concentration of 0.33% vol/vol when used.\n\n### Quantification and statistical analysis\n\n#### Aggregation and induction of the HSR\n\nThe number of n represents the total number of animals over three individual experiments. For the paired-time-lapse data generated, we chose to depict the 95% confidence interval, calculated by GraphPad Prism, to show differences in treatment.\n\n#### Quantification of western blot\n\nTo determine the relative intensities of each blot, the integrated intensity (pixel intensity divided by pixel area) was measured for each full lane using ImageJ. A similar-sized band with no signal was used to subtract the background, and then each intensity normalized to its corresponding GAPDH loading control. Finally, each band\u2019s integrated intensity was normalized to the wild-type DMSO control for quantification and statistics. Significance was determined by one-way ANOVA with \u0160\u00edd\u00e1k multiple comparisons test.\n\n#### Percent survival\u2014thermotolerance assay\n\nThe number of n represents the total number of animals over the three individual replicates shown as the average percentage survival and SEM, calculated using GraphPad Prism. Significance was determined by using a row-matched two-way ANOVA with \u0160\u00edd\u00e1k multiple comparisons test.\n\n#### Worm length\u2014proteasome dysfunction assay\n\nThe number of n represents the total number of animals whose length was measured in one experiment. Depicted are the mean and standard deviation calculated using GraphPad Prism. Significance was determined by the two-tailed unpaired t-test. Similar results were observed across three independent experiments.\n\n#### Lifespan assay\n\nSurvival was scored manually by visually monitoring worm movement using an inverted microscope thrice weekly. Statistical analysis was performed using the Mantel-Haenzel version of the log-rank test as outlined in Petrascheck and Miller, 2017.\n\n### Code availability\n\nThe software used in this study (Cell Profiler) is available at https://cellprofiler.org/.\n",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "0fb45152-85f4-4d75-9b37-7af4c7ad747d",
+      "submission_id": "bc7450bf-6715-4ce6-b17e-5fee84dd3e45",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Pankaj Kapahi, https://ror.org/050sv4x28 Buck Institute for Research on Aging United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76465.sa0](https://doi.org/10.7554/eLife.76465.sa0)\n\nInhibition of translation has been found as a conserved intervention to extend lifespan across a number of species. In this work, the authors systematically investigate the similarities and differences from pharmacological inhibition of protein synthesis at the initiation or elongation steps on longevity and stress resistance. These experiments are important for conceptualizing how translation inhibition actually extends lifespan and promotes proteostasis.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Pankaj Kapahi, https://ror.org/050sv4x28 Buck Institute for Research on Aging United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76465.sa1](https://doi.org/10.7554/eLife.76465.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Proteostasis is differentially modulated by inhibition of translation initiation or elongation\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor, Pankaj Kapahi, and James Manley as the Senior Editor. The following individual involved in review of your submission have agreed to reveal their identity: Brian M Zid (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nAfter consultation with the reviewers, and based on the detailed review below, we have decided that the presented work needs significant revisions to be considered for publication by eLife and is thus not suitable for publication in eLife in its current form. The Reviewing Editor would be glad to discuss beforehand it makes more sense to consider revision for eLife or whether you may want to consider submitting the work elsewhere.\n\nReviewer #1 (Recommendations for the authors):\n\nDo the authors believe that initiation inhibitors don't slow protein production in hsf-1 mutants? If so, this should be shown. Do the authors believe there is a toxic side effect from initiation inhibition in hsf-1 mutants which masks the benefit from reducing protein synthesis in this background? Either way they should discuss this and revise their conclusion for elongation inhibition, similarly to what they have done for initiation inhibition.\n\nOne potential alternative explanation for the effect of elongation inhibition in hsf-1 and on proteostasis is that as reduced elongation speed is important for nascent protein folding (Kim et al. Skach Science 2015, Zhou et al. Liu Nature 2013) and coding fidelity (Xie et al. Proud Current Biology 2019), that low doses of elongation inhibitor slow translation elongation speed leading to enhanced proteostasis, outside of just the changes in overall protein synthesis.\n\nReviewer #2 (Recommendations for the authors):\n\n1) Validation of the drugs. Using different compounds to inhibit translation at different states is an interesting approach and having these compounds validated for the C. elegans community is very useful. However, the effect of the compounds used in this study should be clearly shown in C. elegans, as the whole manuscript relies on the comparison of translation inhibition at selected steps. The effectivity of the drugs to inhibit translation initiation and elongation, respectively, was shown using puromycin incorporation (Figure 1A), which measures changes in overall protein synthesis and not changes in translation rates at selected steps. The analyzed compounds were studied in other systems such as mammalian cells and yeast, however, the source given in this manuscript does not show if they were previously used and validated in C. elegans. To make the claim more solid that these drugs do inhibit specific steps of translation in the nematode, the authors should have used additional ways to show how the compounds act on the translation process, such as polysome profiling. For example the proposed translation initiation inhibitor salubrinal is suggested to inhibit eIF2alpha phosphatases (hence inducing ISR and reducing translation initiation). However, to my best knowledge, its mechanism of action is unknown and, more importantly, the eIF2alpha phosphatases of C. elegans are not identified, making it speculative if salubrinal does inhibit initiation. Also, while both anisomycin and lycorine are supposed to inhibit elongation and were shown to inhibit overall translation to similar extends (Figure 1A), the strength of their effect on survival during heat shock is different between the drugs (Figure 1D; see also effect of PolyQ aggregation in Sup. Figure S2), raising the question if they indeed act similarly on translation or if they might have off-target effects. For example, anisomycin is discussed to have strong side effects (DOI: 10.1128/MCB.15.9.4930).\n\n2) Consistency of compounds and genotypes used throughout manuscript. Comparing the effects of the inhibition of different translation steps during selected external stresses and in different genetic models is a great approach. Unfortunately, because of the inconsistent use of genotype-treatment-combinations, the lack of Wildtype controls in some assays and splitting graphs based for example on treatment types, it is hard to interpret the results in a global way and to truly compare between initiation and elongation inhibition.\n\n3) Statement that elongation inhibitors reduce ongoing toxicity by reducing folding load independently of hsf-1. Some contradictions in the effect of elongation inhibition are not addressed. Elongation inhibition is discussed to reduce toxicity by reducing protein folding load. While it is shown that inhibition of elongation reduces protein aggregation upon heat shock (Figure 2D,E) and in a PolyQ model (Figure 4C), protein aggregation is not lowered by elongation inhibition in aged worms (Figure 5C,D,E). It is further claimed that elongation inhibition acts independently of hsf-1 in many of the observed phenotypes, but sometimes Wildtype controls are missing to rule out a partial dependency. Furthermore, there could be other factors than hsf-1 involved that are changed upon elongation inhibition and mediate the phenotypes instead of (or in addition to) the overall reduction of protein and hence the increase in folding capacity. Also the inhibition of initiation might reduce folding load (as indicated in Figure 5D,E). More direct data to compare protein aggregation upon inhibition of initiation with elongation during stresses are mainly missing. Translation itself is not compared on a molecular level between the different translation modulation modes.\n\n4) Effects on lifespan. The lifespan assays in Figure 5 are very interesting and underline the previous observations nicely, as they directly compare two initiation and elongation inhibitors in Wildtype and hsp-1 mutant contexts. With regards to elongation inhibition, there might be contradictions to other published data that found inhibition of elongation using cycloheximide to increase lifespan (DOI: 10.1038/srep18722). One more reason why it would be great to have the effect of the elongation inhibitors on translation used here validated.\n\n5) Given the high focus of the manuscript on the difference between the inhibition of translation initiation and elongation, translation itself could have been further analyzed using the different compounds and during selected stresses (for example polysome profiling or ribo seq). The authors claim that their results are consistent with a model proposed by Rogers et al. (2011), saying that lifespan extension through inhibition of translation initiation acts via translation of selected factors. Could the status of some of these factors be checked upon translation inhibitor treatment to verify this?\n\n6) Figure 2D,E; Figure 4C; Figure 5C,D,E pose multiple questions that remain unanswered: What is the difference between age-associated protein misfolding on the one hand and proteotoxicity caused by heat, proteasome dysfunction, and PolyQ stretches on the other hand, and why do animals react differently to it when treated with initiation or elongation inhibitors? Why does inhibition of initiation protect from age-associated protein toxicity but not from proteasome-misfunction-induced protein toxicity? Why does inhibition of elongation protect from proteasome-misfunction-induced protein toxicity but not from age-associated protein aggregation?\n\nReviewer #3 (Recommendations for the authors):\n\nhsf-1's role in EIs but not IIs protecting against proteasomal dysfunction: the data is Figure 3 make this a weak conclusion at best. In the paradigm used, the difference between WT and hsf-1 mutant survival is only 20% and the 'limited protection' vs. 'highly protective effects' of the respective chemical classes are not apparent. From the figure, the impact seems to be similar on both genotypes. The 'morphology' improvements brought about by EIs are not explained and the images in 3G cannot be used to measure 'unc' phenotypes.\n\nIn Figures 2B, C, the data for concluding hsf-1 dependence/independence of IIs and EIs thermotolerance is weak. The graphs look moderately different from each other but only one P value is provided (does it apply to both treatments? what is the comparison?) that is not very convincing (P 0.05 vs. 0.02). No details for means/SEM/number of animals and trials are provided either.\n\nData for lifespan (Figure 5A, B) and thermotolerance (Figures1D,E and 2B, C) survival assays are from one trial only and do not include details (mean, number of animals, SEM). Additional independent trials are critical for verification.\n\nHow were the protein quantifications performed for the Puromycin immunohistochemistry (1A) and the insoluble/soluble fractions (2D, E; 5D, E). Were specific regions or bands' intensity measured or the whole lane?\n\nIs the inhibitor treatment for 72h (3 days) or 4 days? The article mentions 72h (eg., line 26) but figures (Figure 1, 2) show 4 days.\n",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "43f88522-9e3f-4d35-80d6-d1fc8dde71fd",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C1",
+      "claim": "Six translation inhibitors (anisomycin, lycorine, 4E1RCat, salubrinal, homoharringtonine, and amicoumacin C) reduced puromycin incorporation relative to DMSO controls to varying degrees.",
+      "claim_type": "EXPLICIT",
+      "source": "The six molecules examined all reduced puromycin incorporation relative to DMSO controls to varying degrees (Figure 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot data showing reduced puromycin incorporation (Figure 1B) and quantification (Figure 1C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "e7e9a288-efd4-46b9-9258-ec7d6eae19ea",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C2",
+      "claim": "Anisomycin, lycorine, 4E1RCat, and salubrinal were selected based on their ability to lower the concentration of newly synthesized proteins by approximately 40-50%.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on their ability to lower the concentration of newly synthesized proteins by ~40\u201350% and their annotated targets (vide infra), we selected four structurally distinct inhibitors, anisomycin, lycorine, 4E1RCat, and salubrinal, to investigate further (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on SUnSET assay results showing comparable reductions in protein synthesis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "7a98d1a0-0357-462b-9b43-34743bca6e3d",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C3",
+      "claim": "Anisomycin and lycorine function as translation elongation (TE) inhibitors in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected for the TE inhibitors, anisomycin and lycorine decreased fluorescence in both green and red channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated using bi-cistronic reporter showing reduction of both cap-dependent (GFP) and IRES-dependent (tdTomato) translation (Figure 1F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "e087cb70-8cd9-466e-81d5-a0828f211ca7",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C4",
+      "claim": "4E1RCat and salubrinal function as translation initiation (TI) inhibitors in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the TI inhibitors 4E1RCat and salubrinal only decreased the fluorescence of the green channel, consistent with an initiation-dependent translation of the GFP mRNA sequence and the initiation-independent translation of the IRES-tdTomato sequence (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated using bi-cistronic reporter showing selective reduction of cap-dependent (GFP) but not IRES-dependent (tdTomato) translation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "2663d53b-c9fc-4015-bb6f-bf0287afe278",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C5",
+      "claim": "All four translation inhibitors (anisomycin, lycorine, 4E1RCat, and salubrinal) significantly improved the survival of N2 animals under thermal stress at 36\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Hourly monitoring revealed that all four molecules significantly improved the survival of N2 animals (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by thermotolerance assay data showing increased survival at 36\u00b0C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "94d809ff-413f-4237-8bca-7db44cb8d636",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C6",
+      "claim": "Translation elongation inhibitors (anisomycin and lycorine) protect hsf-1(sy441) mutants from heat stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Only the TE inhibitors anisomycin and lycorine protected hsf-1(sy441) from HS-induced proteotoxicity, while the TI inhibitors 4E1RCat and salubrinal did not (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by thermotolerance assay in hsf-1(sy441) mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "b05e404c-9fde-4331-a73b-f449368e2b54",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C7",
+      "claim": "Translation initiation inhibitors (4E1RCat and salubrinal) do not protect hsf-1(sy441) mutants from heat stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Only the TE inhibitors anisomycin and lycorine protected hsf-1(sy441) from HS-induced proteotoxicity, while the TI inhibitors 4E1RCat and salubrinal did not (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by thermotolerance assay in hsf-1(sy441) mutants showing no protection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "f6b395b3-5669-4c71-8787-30d985725d45",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C8",
+      "claim": "Pre-treatment with anisomycin suppressed the increase in protein insolubility following a 2 hr heat shock at 36\u00b0C in wild-type N2 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, pre-treatment with the TE inhibitor anisomycin suppressed the increase in protein insolubility (Figure 2D and E), consistent with the observed thermal protection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by sequential detergent extraction and quantification of insoluble proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "48e8d445-c08c-4bd9-ad6c-8e746125c948",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C9",
+      "claim": "Translation initiation inhibitors trigger an HSR-dependent mechanism to protect from thermal stress.",
+      "claim_type": "EXPLICIT",
+      "source": "These results reveal that TI inhibitors trigger an HSR-dependent mechanism to protect from thermal stress, while TE inhibitors trigger an HSR-independent mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the requirement of HSF-1 for TI inhibitor protection but not TE inhibitor protection from heat stress.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "7d585634-5da1-4726-ac76-b2879ad77ed6",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C10",
+      "claim": "Translation elongation inhibitors trigger an HSR-independent mechanism to protect from thermal stress.",
+      "claim_type": "EXPLICIT",
+      "source": "These results reveal that TI inhibitors trigger an HSR-dependent mechanism to protect from thermal stress, while TE inhibitors trigger an HSR-independent mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the ability of TE inhibitors to protect hsf-1(sy441) mutants from heat stress.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "5a91faab-0f26-4521-9b71-cad4231f62cc",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C11",
+      "claim": "Following a 2 hr heat shock, the initially diffuse PolyQ::YFP signal gradually localized into puncta in AM140 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "After a 2 hr HS, the initially diffuse PolyQ signal gradually localized into puncta (Figure 3B, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by live imaging time-lapse microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "734a509a-96fe-49c0-82e1-3bb6b7d0e78a",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C12",
+      "claim": "Aggregation foci formation resulted from a redistribution of the YFP signal into aggregation foci as the total level of YFP fluorescent signal for a given animal remained constant.",
+      "claim_type": "EXPLICIT",
+      "source": "Aggregation foci formation resulted from a redistribution of the YFP signal into aggregation foci as the total level of YFP fluorescent signal for a given animal remained constant (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by measuring total YFP fluorescence over time showing no significant change.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "8fee9b39-f530-4f2c-a31f-8c653178c2d1",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C13",
+      "claim": "Translation elongation inhibitors lycorine and anisomycin significantly reduced heat shock-induced PolyQ aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Only TE inhibitors lycorine and anisomycin significantly reduced HS-induced PolyQ aggregation, while the TI inhibitors 4E1RCat had a small effect and salubrinal had no effect (Figure 3C, Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by live imaging quantification of PolyQ aggregates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "ff5d6960-c00c-4c07-8380-a247707d9b89",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C14",
+      "claim": "Translation initiation inhibitor 4E1RCat had a small effect on heat shock-induced PolyQ aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Only TE inhibitors lycorine and anisomycin significantly reduced HS-induced PolyQ aggregation, while the TI inhibitors 4E1RCat had a small effect and salubrinal had no effect (Figure 3C, Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by live imaging quantification of PolyQ aggregates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "92832e77-f8de-4e1f-b87e-4ea1cd411911",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C15",
+      "claim": "Translation initiation inhibitor salubrinal had no effect on heat shock-induced PolyQ aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Only TE inhibitors lycorine and anisomycin significantly reduced HS-induced PolyQ aggregation, while the TI inhibitors 4E1RCat had a small effect and salubrinal had no effect (Figure 3C, Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by live imaging quantification of PolyQ aggregates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "0c1b3a0c-5744-42c0-9d7b-1313dc5dd64b",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C16",
+      "claim": "Pre-treatment with anisomycin and lycorine reduced the number of PolyQ aggregates per worm but did not change the onset of aggregation, the rate of formation, or the final size of the aggregation foci.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-treatment with anisomycin and lycorine reduced the number of PolyQ aggregates per worm. However, pre-treatment did not change the onset of aggregation, the rate of formation, or the final size of the aggregation foci (Morley et al., 2002; Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by time-lapse imaging analysis of PolyQ aggregation dynamics.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "44295274-dea8-40d2-a3fa-c20ae7c77b89",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C17",
+      "claim": "The effect of anisomycin or lycorine on PolyQ aggregation is time-dependent, with strong inhibition following 12 hr preincubation but less so following 4 hr preincubation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found the effect of anisomycin or lycorine to be time-dependent. They strongly inhibited aggregation following a 12 hr preincubation period but less so following a 4 hr preincubation (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by comparing aggregation with different preincubation times.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "91bbbdb0-7706-40f4-b183-86a57168473f",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C18",
+      "claim": "Starting treatment with anisomycin after the heat shock did not reduce the number of aggregation foci.",
+      "claim_type": "EXPLICIT",
+      "source": "Starting treatment with anisomycin after the HS did not reduce the number of aggregation foci (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as experimental observation without shown data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "d8df98ad-7131-4dc3-bc0f-e3f418231649",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C19",
+      "claim": "Bortezomib decreased the survival of both N2 and hsf-1(sy441) animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to non-treated controls, bortezomib decreased the survival of both genotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by survival assay with bortezomib treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "031f9c74-abde-4d70-a66a-b7a27658da31",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C20",
+      "claim": "Translation elongation inhibitors improved the survival of hsf-1(sy441) animals treated with bortezomib back to untreated levels.",
+      "claim_type": "EXPLICIT",
+      "source": "TE inhibitors improved the survival of the hsf-1(sy441) animal back to untreated levels but only showed a non-significant tendency to improve the survival of N2 wild-type animals (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by survival assay combining TE inhibitors with bortezomib.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "f8c24ef5-b777-41ff-9859-dde21db82b2f",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C21",
+      "claim": "Translation elongation inhibitors showed only a non-significant tendency to improve the survival of N2 wild-type animals treated with bortezomib.",
+      "claim_type": "EXPLICIT",
+      "source": "TE inhibitors improved the survival of the hsf-1(sy441) animal back to untreated levels but only showed a non-significant tendency to improve the survival of N2 wild-type animals (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by survival assay combining TE inhibitors with bortezomib.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "8d992aa5-314d-437c-80d0-46e17fe46042",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C22",
+      "claim": "Translation initiation inhibitors enhanced the proteotoxicity elicited by bortezomib in both N2 and hsf-1(sy441) backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, TI inhibitors enhanced the proteotoxicity elicited by bortezomib in both backgrounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by survival assay showing decreased survival with TI inhibitors plus bortezomib.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "b54ac0d0-9cce-43d5-893d-6467dff87253",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C23",
+      "claim": "Bortezomib-treated hsf-1(sy441) animals exhibited a sma (small) phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed bortezomib-treated hsf-1(sy441) animals to shrink in size (sma phenotype) (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by visual observation and imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "8f7cee17-4972-428d-9619-58dce09406bb",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C24",
+      "claim": "Anisomycin substantially rescued the sma phenotype in bortezomib-treated hsf-1(sy441) animals, almost completely reversing the animals back to normal size.",
+      "claim_type": "EXPLICIT",
+      "source": "Anisomycin substantially rescued sma phenotypes, almost completely reversing the animals back to normal size (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by quantification of worm length at day 3 of adulthood.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "517dd801-f624-402d-8b49-54339194e8e1",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C25",
+      "claim": "Treating PolyQ35::YFP animals with bortezomib caused extensive protein aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, treating PolyQ::YFP animals with bortezomib caused extensive protein aggregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as expected observation in PolyQ animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "41d80b84-ad0f-415d-8eae-af561b345cf9",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C26",
+      "claim": "Bortezomib treatment induced the sma phenotype in PolyQ35::YFP transgenic animals, which was almost entirely rescued by anisomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "As with hsf-1(sy441), bortezomib treatment also induced the sma phenotype in the PolyQ35::YFP transgenic animals, which was almost entirely rescued by anisomycin (Figure 4E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by measuring worm length at day 5 of adulthood.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "c5a723e5-3356-46d5-bcff-31f4c40094b8",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C27",
+      "claim": "Translation elongation inhibitors did not affect proteasome activity in either N2 or hsf-1(sy441) strains.",
+      "claim_type": "EXPLICIT",
+      "source": "TE inhibitors did not seem to affect proteasome activity in either strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by 20S proteasome activity assay (Figure 4G).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "498d0c7b-1131-4783-a1d0-364024c90b5f",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C28",
+      "claim": "Translation initiation inhibitors reduced N2 proteasome activity compared to DMSO-treated controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, TI inhibitors reduced N2 proteasome activity compared to DMSO-treated controls, providing a rationale for their increased toxicity in our proteasome survival assay (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by 20S proteasome activity assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "4aaf6706-1819-4e09-8281-80d8913eed7b",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C29",
+      "claim": "hsf-1(sy441) mutants showed significantly decreased proteasome activity compared to N2 controls.",
+      "claim_type": "EXPLICIT",
+      "source": "hsf-1(sy441) mutants showed significantly decreased proteasome activity compared to N2 controls, which was not further reduced by TI inhibitors in hsf-1(sy441).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by 20S proteasome activity assay (Figure 4G).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "332305d0-4499-492b-a22e-cf7307659bfc",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C30",
+      "claim": "Translation initiation inhibitors did not further reduce proteasome activity in hsf-1(sy441) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "hsf-1(sy441) mutants showed significantly decreased proteasome activity compared to N2 controls, which was not further reduced by TI inhibitors in hsf-1(sy441).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by 20S proteasome activity assay (Figure 4G).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "d536f63a-caf7-43b2-b9cd-35defd49401b",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C31",
+      "claim": "Inhibition of translation elongation using anisomycin and lycorine showed no, or only a minor, lifespan extension in N2 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of translation in wild-type animals using the two TE inhibitors, anisomycin and lycorine, showed no, or only a minor, lifespan extension in N2 animals (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by lifespan assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "28e00af6-b771-4cf2-b25d-ab1ca29d7b36",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C32",
+      "claim": "Inhibition of translation initiation by 4E1RCat and salubrinal dose-dependently extended lifespan of N2 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, inhibition of TI by the inhibitors 4E1RCat and salubrinal dose-dependently extended lifespan of N2 animals (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by lifespan assays at different concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "e9235490-b9b7-4399-9f05-4257d45b134f",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C33",
+      "claim": "The difference in the effect on lifespan by translation elongation and translation initiation inhibitors cannot be explained by reducing overall protein synthesis alone.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference was observed despite all four translation inhibitors reducing protein translation to the same extent (Figure 1B). Thus, the difference in the effect on lifespan by TE and TI inhibitors cannot be explained by reducing overall protein synthesis alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that all inhibitors reduce protein synthesis similarly but have different effects on lifespan.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "ece59a84-5215-4ad7-a158-fab10329c515",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C34",
+      "claim": "Translation initiation inhibitors 4E1RCat and salubrinal failed to significantly extend lifespan in hsf-1(sy441) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, both 4E1RCat and salubrinal failed to extend lifespan in hsf-1(sy441) mutants significantly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by lifespan assays in hsf-1(sy441) mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "94917a70-bacb-42c5-bc7d-e77c4e650fe2",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C35",
+      "claim": "Inhibition of translation initiation extends lifespan dependent on HSF-1.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with genetic work by both the Rodgers and Tavernarakis labs, which showed inhibition of TI extends lifespan dependent on HSF-1 (through ifg-1 and ife-2, respectively) (Howard et al., 2016; Rieckher et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited genetic studies and current experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "b6cd1d76-51e0-4332-b762-611203a526b0",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C36",
+      "claim": "Treatment with translation elongation inhibitors anisomycin and lycorine significantly extended the lifespan of hsf-1(sy441) mutants by approximately 20%.",
+      "claim_type": "EXPLICIT",
+      "source": "As Figure 4\u2014figure supplement 1 hinted, treatment with the TE inhibitors anisomycin and lycorine significantly extended the lifespan of hsf-1(sy441) mutants by ~20% (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by lifespan assays in hsf-1(sy441) mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "bbe7b876-f6b4-40c8-bdf5-8c6ffdce3fe4",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C37",
+      "claim": "The translation elongation inhibitor cycloheximide extended lifespan in hsf-1(sy441) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained for the TE inhibitor cycloheximide (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by lifespan assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "c9f955e4-14aa-4fc1-99db-cf3102f3b634",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C38",
+      "claim": "Only the two translation initiation inhibitors that extended lifespan caused significant decreases in the amount of SDS-insoluble aggregates in aged N2 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that only the two TI inhibitors that extended lifespan caused significant decreases in the amount of SDS-insoluble aggregates and that the TE inhibitors failed to do so (Figure 5D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by sequential detergent extraction of day 8 animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "8d9f41e6-feab-453d-88ef-b13b46ef86c6",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C39",
+      "claim": "Translation elongation inhibitors failed to reduce age-associated protein aggregation in N2 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that only the two TI inhibitors that extended lifespan caused significant decreases in the amount of SDS-insoluble aggregates and that the TE inhibitors failed to do so (Figure 5D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by sequential detergent extraction of day 8 animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "dc5850bc-48bb-43a8-ac00-8929c8073950",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C40",
+      "claim": "All four translation inhibitors reduced the concentration of newly synthesized proteins in N2 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "As before, all four inhibitors reduced the concentration of newly synthesized proteins in N2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by SUnSET assay (Figure 6A and B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "4f67ba1d-e8ac-45c2-ac31-3dac2b05a630",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C41",
+      "claim": "Translation initiation inhibitors increased the concentration of newly synthesized proteins by 1.5- to 2-fold in hsf-1(sy441) animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, TI inhibitors increased the concentration of newly synthesized proteins by 1.5- to 2-fold in the hsf-1(sy441) animals (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by SUnSET assay showing increased puromycin incorporation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "9e80503c-b2f4-4ad2-a6ad-dc5e95a5da41",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C42",
+      "claim": "The increased concentration of newly synthesized proteins in hsf-1(sy441) animals treated with translation initiation inhibitors is not due to increased intake of puromycin.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that this effect is not due to increased intake of puromycin, as inhibitor treatment did not affect food intake (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by food intake assay measuring bacterial clearance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "931b3b87-8e7d-490f-a4bc-bd5d0ca3c360",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C43",
+      "claim": "None of the translation inhibitors induced the HSF-1-activated heat shock reporter hsp-16.2::GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, none of the translation inhibitors induced the HSF-1-activated heat shock reporter hsp-16.2::GFP (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by fluorescence assay of hsp-16.2::GFP reporter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "8ceed656-454c-4a08-8521-85a71eaab26f",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C44",
+      "claim": "RNAi-mediated knockdown of eIF4G/ifg-1 reduced the concentration of newly synthesized proteins in N2 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen for 4E1RCat, the knockdown of eIF4G/ifg-1 reduced the protein concentration in N2 but dramatically increased it in hsf-1(sy441) mutants (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by SUnSET assay with ifg-1 RNAi.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "ce3fb07a-a9e9-4ba7-8981-e75f5fdd0bc2",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C45",
+      "claim": "RNAi-mediated knockdown of eIF4G/ifg-1 dramatically increased the concentration of newly synthesized proteins in hsf-1(sy441) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen for 4E1RCat, the knockdown of eIF4G/ifg-1 reduced the protein concentration in N2 but dramatically increased it in hsf-1(sy441) mutants (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by SUnSET assay with ifg-1 RNAi.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "3eaa1c8e-05ec-4856-acaa-66a88a69499c",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C46",
+      "claim": "4E1RCat treatment significantly extended lifespan in N2 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "As we previously observed (Figure 5A and B) 4E1RCat treatment of N2 animals significantly extended lifespan (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by lifespan assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "ef800055-114c-4378-af1e-16ac3c4f639d",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C47",
+      "claim": "4E1RCat treatment did not extend lifespan in ifg-1(cxTi9279) animals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no lifespan extension was observed in ifg-1(cxTi9279) animals (Figure 6G), showing that 4E1RCat extends lifespan by on-target action.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by lifespan assay in ifg-1 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "8e84ec4e-111c-49ad-8fbf-91ce00f53cec",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C48",
+      "claim": "4E1RCat extends lifespan by on-target action on eIF4G/ifg-1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no lifespan extension was observed in ifg-1(cxTi9279) animals (Figure 6G), showing that 4E1RCat extends lifespan by on-target action.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from lack of lifespan extension in ifg-1 mutants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "71647af1-4ff9-48ee-9c6f-70cda9f1557a",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C49",
+      "claim": "Inhibition of eIF4G/ifg-1 requires HSF-1 to lower the concentration of newly synthesized proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we concluded that inhibition of eIF4G/ifg-1 requires HSF-1 to lower the concentration of newly synthesized proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that ifg-1 inhibition increases protein synthesis in hsf-1 mutants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "e66b0bd6-8ab3-4238-9577-f5db421bf833",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C50",
+      "claim": "The beneficial effects of 4E1RCat treatment are not observed in hsf-1(sy441) mutants because inhibition of eIF4G/ifg-1 fails to lower protein concentrations in this strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the beneficial effects of 4E1RCat treatment are not observed in hsf-1(sy441) mutants as inhibition of eIF4G/ifg-1 fails to lower protein concentrations in this strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined observations of increased protein synthesis and lack of beneficial effects in hsf-1 mutants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "5c79f08e-5fad-4068-8591-8d5ef0d2a548",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C51",
+      "claim": "Inhibition of translation elongation rescues proteostasis in animals with pre-existing proteotoxicities such as a compromised heat shock response, reduced proteasome activity, or the expression of aggregation-prone proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, TE inhibition effectively rescued proteostasis in animals with pre-existing proteotoxicities, such as a compromised HSR, reduced proteasome activity, or the expression of aggregation-prone proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple experimental results showing TE inhibitor protection in compromised backgrounds.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "264832f6-72ed-4d93-85d3-336e44a2c499",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C52",
+      "claim": "Inhibition of translation initiation did little to rescue pre-existing proteotoxicity or worsened it but proved effective at preventing emerging proteotoxicity with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, inhibition of TI did little to rescue pre-existing proteotoxicity or worsen it but proved effective at preventing emerging proteotoxicity, for example, with age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple experimental results showing TI inhibitor effects on different proteotoxic conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "9e0745a8-5e22-477e-bf6d-ed4db05080c8",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C53",
+      "claim": "Inhibition of translation initiation or elongation has distinct consequences for proteostasis and their mechanisms to control the concentration of newly synthesized proteins can be genetically separated.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our findings establish that inhibition of TI or TE has distinct consequences for proteostasis and that their mechanisms to control the concentration of newly synthesized proteins can be genetically separated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the totality of experimental results showing differential effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "e0798097-be4a-4525-9853-de444ac7da3a",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C54",
+      "claim": "The increased mortality observed after combining bortezomib with translation initiation inhibitors is likely to be the result of the lower expression of HSP90/daf-21 and HSP70/hsp-1, whose translation depends on eIF4G/ifg-1, and the ability of both treatments to lower proteasome activity independently.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased mortality observed after combining bortezomib with TI inhibitors is likely to be the result of the lower expression of HSP90/daf-21 and HSP70/hsp-1, whose translation depends on eIF4G/ifg-1 (Rogers et al., 2011) and the ability of both treatments to lower proteasome activity independently (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Speculative explanation based on known dependencies and observed proteasome activity.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "ec5b23d3-653c-4dfd-a70d-920f91461176",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C55",
+      "claim": "The lower proteasome activity induced by translation initiation inhibitors is likely to enhance the proteotoxicity of bortezomib.",
+      "claim_type": "EXPLICIT",
+      "source": "The lower proteasome activity induced by the TI inhibitors is likely to enhance the proteotoxicity of bortezomib.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation based on observed proteasome activity data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "e3b21c6f-22f1-4b55-8c1d-3b37639bccca",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C56",
+      "claim": "Long-term inhibition of translation initiation or elongation differentially affects proteasomal activity and its proteotoxic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, long-term inhibition of TI or TE differentially affects proteasomal activity and its proteotoxic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from differential effects on proteasome activity and proteotoxicity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "ea680b5d-8e6b-4032-aecb-d752b6b2afda",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C57",
+      "claim": "HSF-1 or one of its targets is necessary for the translation initiation machinery to control protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This initial model is still likely valid, but our study shows that HSF-1 has a more immediate role. HSF-1, or one of its targets, is necessary for the TI machinery to control protein synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that TI inhibition increases protein synthesis in hsf-1 mutants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "82dbb21c-d2fc-40f0-8c45-f6a0c7bdd845",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C58",
+      "claim": "Selective translation can only occur if translation initiation itself is inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "Selective translation can only occur if TI itself is inhibited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the mechanism of selective translation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "9e371299-39af-4bc5-af91-e4f47ae8aa08",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C59",
+      "claim": "HSF-1 activity directly or indirectly modulates the ability of translation initiation components to control the concentration of newly synthesized proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, HSF-1 activity directly or indirectly modulates the ability of TI components to control the concentration of newly synthesized proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the requirement of HSF-1 for TI inhibitors to reduce protein synthesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "34152da9-5e7f-4a32-ab25-c28dafd90f9c",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C60",
+      "claim": "Lowering the concentration of newly synthesized proteins is necessary for the beneficial effects of translation initiation inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "The inability of TI inhibitors to reduce the concentration of newly synthesized proteins in hsf-1(sy441) mutants and the inability to extend their lifespan shows that lowering the concentration of newly synthesized proteins is necessary for the beneficial effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the correlation between inability to reduce protein synthesis and lack of beneficial effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "b0f057d0-ed8a-446d-8ba0-1b0f5cfd3c99",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C61",
+      "claim": "Lowering the concentration of newly synthesized proteins is sufficient to protect from proteotoxic stress but is not sufficient to extend lifespan in wild-type animals.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the finding that TE inhibitors protect from proteotoxic stress but do not extend lifespan shows that lowering the concentration of newly synthesized proteins is sufficient to protect from proteotoxic stress but is not sufficient to extend lifespan in wild-type, which appears to require selective translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the differential effects of TE inhibitors on proteotoxicity versus lifespan.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "aace79b7-a04e-4e36-bc52-3d15d2ada9ca",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C62",
+      "claim": "Extension of lifespan in wild-type animals appears to require selective translation.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the finding that TE inhibitors protect from proteotoxic stress but do not extend lifespan shows that lowering the concentration of newly synthesized proteins is sufficient to protect from proteotoxic stress but is not sufficient to extend lifespan in wild-type, which appears to require selective translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the requirement of TI inhibition (which enables selective translation) for lifespan extension.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "e3a27a4b-7435-4527-8e3f-974c5426bba5",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C63",
+      "claim": "The lack of HSF-1 abolishes the ability of ifg-1 RNAi to lower the concentration of newly synthesized proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide a compelling explanation for their findings, in that the lack of HSF-1 abolishes the ability of ifg-1 RNAi to lower the concentration of newly synthesized proteins and thus the protection from tunicamycin toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from current experimental results and cited previous findings (Howard et al., 2016).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "d4859fbf-60c5-47e2-aaa7-7fbfdbfe8567",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C64",
+      "claim": "Cycloheximide unreliably reduces puromycin incorporation relative to DMSO control in N2 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Cycloheximide (100 \u03bc\u039c) unreliably reduces puromycin incorporation relative to DMSO control in N2 animals. All three experiments were conducted under identical conditions and run on the same blot to reduce technical batch effects but resulted in unreliable reductions of newly synthesized proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by SUnSET assay showing variable results (Figure 1\u2014figure supplement 1A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "a6998cf2-994d-4cfc-b24d-561a71da62ab",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C65",
+      "claim": "Cycloheximide functions as a translation elongation inhibitor in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the SUnSET assay and our bi-cistronic reporter, we show that cycloheximide directly reduces the concentration of newly synthesized proteins (Figure 1\u2014figure supplement 1A, B) and functions as a TE inhibitor since we observed a reduction of both the GFP and the tdTomato signal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by bi-cistronic reporter showing reduction of both cap-dependent and IRES-dependent translation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "f50a1f80-d57d-43cf-b3b8-d49059bb63f2",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C66",
+      "claim": "The inhibition of translation by cycloheximide across different trials was considerably more variable compared to anisomycin and lycorine.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that the inhibition of translation by cycloheximide across different trials was considerably more variable compared to anisomycin and lycorine (compare Figure 1B and C with Figure 1\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by comparing variability in SUnSET assay results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "9f7a2562-7b56-4c96-b8b3-386c9e4485bf",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C67",
+      "claim": "Anisomycin and lycorine reliably reduced the concentration of newly synthesized proteins by 40-50%.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore decided to proceed with anisomycin and lycorine as TE inhibitors as they reliably reduced the concentration of newly synthesized proteins by 40\u201350%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by consistent SUnSET assay results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "cb817525-d297-4bbb-ae05-29733867c264",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C68",
+      "claim": "Protein synthesis largely determines the folding load on the proteostasis network.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein synthesis largely determines the folding load on the proteostasis network, which regulates protein production, folding, trafficking, and degradation to maintain a functional proteome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established understanding of proteostasis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "d86a226f-b367-44a0-9113-f083edc28159",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C69",
+      "claim": "The imbalance of the proteostasis network caused by age-associated stress or acute environmental insults leads to misfolding of proteins, accumulation of aggregates, and eventually to disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The imbalance of the proteostasis network caused by age-associated stress or acute environmental insults leads to misfolding of proteins, accumulation of aggregates, and eventually to disease (Balch et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited reference on proteostasis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "cb8bc9a0-0886-4ffa-936d-5c93c560b799",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C70",
+      "claim": "In mice, point mutations in specific tRNAs or components of the ribosomal quality control pathway can lead to protein aggregation and neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in mice, point mutations in specific tRNAs or components of the ribosomal quality control pathway can lead to protein aggregation and neurodegeneration (Vo et al., 2018; Yonashiro et al., 2016; Chu et al., 2009; Nollen et al., 2004; Nedialkova and Leidel, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "ad332fd9-9ce0-49f6-8659-958fe2ef782f",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C71",
+      "claim": "Early RNAi screens in C. elegans identified several ribosomal subunits whose knockdown increased the aggregation of polyglutamine proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, early RNAi screens in the nematode Caenorhabditis elegans identified several ribosomal subunits whose knockdown increased the aggregation of polyglutamine (PolyQ) proteins (Nollen et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "aaf86ea9-a634-4ca6-a462-77cba37fa76b",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C72",
+      "claim": "RNAi-mediated knockdown of translation initiation factors increases lifespan, improves proteostasis, and reduces protein aggregation in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, RNAi-mediated knockdown of translation initiation factors increases lifespan, improves proteostasis, and reduces protein aggregation in C. elegans (Balch et al., 2008; Rogers et al., 2011; McQuary et al., 2016; Lan et al., 2019; Howard et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "c4a2f2e9-5d8c-4873-91ef-2fbea1dcc6e7",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C73",
+      "claim": "Pharmacological inhibition of translation prior to a heat shock prevents proteins from aggregating in yeast and cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, work in yeast and cell culture shows that pharmacological inhibition of translation prior to a heat shock prevents proteins from aggregating (Medicherla and Goldberg, 2008; Choe et al., 2016; Xu et al., 2016; Riback et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "92c00957-04c2-4c2f-9be2-6b3af4ff447e",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C74",
+      "claim": "In the selective translation model, the increased availability of ribosomes leads to differential translation of mRNAs coding for stress response factors and thus to increased folding capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the selective translation model, the increased availability of ribosomes leads to differential translation of mRNAs coding for stress response factors and thus to increased folding capacity (Rogers et al., 2011; McQuary et al., 2016; Lan et al., 2019; Seo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple cited references describing the selective translation model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "0b3a3622-7fff-4aef-80ef-93d45b8976a2",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C75",
+      "claim": "Studies proposing a version of the selective translation model show that inhibiting translation requires HSF-1 to reduce protein aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, studies proposing a version of the selective translation model show that inhibiting translation requires HSF-1 to reduce protein aggregation (Howard et al., 2016; Tye and Churchman, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "791e6b41-045f-4762-9680-85e6a65e2b8e",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C76",
+      "claim": "In the reduced folding load model, newly synthesized proteins are the primary aggregation-prone species of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The second model, referred to as the reduced folding load model, proposes that newly synthesized proteins are the primary aggregation-prone species of proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the reduced folding load model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "71a06f3e-2470-4e47-a14a-3ea5ab29460c",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C77",
+      "claim": "In the reduced folding load model, newly synthesized proteins constitute the most significant folding load on the proteostasis machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, newly synthesized proteins constitute the most significant folding load on the proteostasis machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical consequence of the reduced folding load model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "aa33e213-a36b-4035-8274-2aacee508b7d",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C78",
+      "claim": "The reduced folding load model does not depend on specific factors but generates folding capacity by reducing the overall folding load.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the selective translation model, which proposes selective protein synthesis of HSF-1-dependent stress response factors, the reduced folding load model does not depend on specific factors but generates folding capacity by reducing the overall folding load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of the two models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "d0e5b477-d698-47a0-ab92-a2697a075266",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C79",
+      "claim": "Previous studies did not control how much protein synthesis was reduced by different modes of translation inhibition making direct comparisons between the selective translation model and the reduced folding load model difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, previous studies did not control how much protein synthesis was reduced by different modes of translation inhibition making direct comparisons between the selective translation model and the reduced folding load model difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Critique of previous studies identifying a gap in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "56ca52e2-8e4c-4126-8415-81931dd0884c",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C80",
+      "claim": "The HSF-1 pathway is not only a downstream target of translation but also directly cooperates with the translation initiation machinery to control the concentration of newly synthesized proteins to restore proteostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that the HSF-1 pathway is not only a downstream target of translation but also directly cooperates with the translation initiation machinery to control the concentration of newly synthesized proteins to restore proteostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that TI inhibition requires HSF-1 to reduce protein synthesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "5c62a67d-d3a9-44f1-a6d6-6e5788640d2f",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C81",
+      "claim": "Lowering translation is an established mechanism to extend lifespan and delay aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Lowering translation is an established mechanism to extend lifespan and delay aging (Steffen and Dillin, 2016; Anisimova et al., 2018; Klaips et al., 2018; Hansen et al., 2007; Pan et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "f69e09ad-ebbe-4a28-9bfd-1f159079a045",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C82",
+      "claim": "Aging is a well-known driver of protein aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, aging is a well-known driver of protein aggregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "272fa18c-9d11-46df-8c26-817157d80069",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C83",
+      "claim": "Work in cancer cells showed inhibition of translation to block HSF-1 binding to DNA and to specifically reduce the expression of HSP70 and DNAJA chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, work in cancer cells showed inhibition of translation to block HSF-1 binding to DNA and to specifically reduce the expression of HSP70 and DNAJA chaperones (Santagata et al., 2013), making it difficult to envision how HSF-1 could act as a downstream effector of TI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "bf1b0bcd-122a-4f93-bce1-3cef8849e6c2",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C84",
+      "claim": "Anisomycin and cycloheximide have previously been reported to extend lifespan in wild type animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, both anisomycin and cycloheximide have previously been reported to extend lifespan in wild type animals (Tarkhov et al., 2019; Takauji et al., 2016) but these studies were conducted in either non-fully reproductive adults or the exact conditions were not specified (i.e. temperature, whether OP50 feeding bacteria was alive/dead and developmental stage; Takauji et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited references with noted caveats about experimental conditions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "4f953dbc-a164-42b8-a191-72fb52b0a562",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "claim_id": "C85",
+      "claim": "Short-term inhibition of translation increases proteasome activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The lowered proteasome activity observed upon inhibition of TI was surprising as the short-term inhibition of translation increases proteasome activity (Zhao et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "355dd23e-1677-4dbb-9746-ca22c1c04ec5",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Four structurally distinct translation inhibitors were characterized: anisomycin and lycorine function as translation elongation (TE) inhibitors, while 4E1RCat and salubrinal function as translation initiation (TI) inhibitors in C. elegans. All four reduce newly synthesized proteins by ~40-50%, though cycloheximide showed high variability and was excluded from main analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The bi-cistronic reporter assay (C3, C4) provides clear mechanistic distinction between TI and TE inhibitors based on differential effects on cap-dependent vs. IRES-dependent translation. The SUnSET assay quantification (C1, C2, C67) demonstrates comparable reduction in protein synthesis across the selected inhibitors. The exclusion of cycloheximide due to variability (C64, C66) is appropriately justified by data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "ddea89f6-fde5-410b-9918-2846deb4bbf3",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "All four translation inhibitors protect wild-type N2 animals from thermal stress at 36\u00b0C, but only TE inhibitors (anisomycin, lycorine) protect hsf-1(sy441) mutants, demonstrating that TI inhibitors require HSF-1 for thermal protection while TE inhibitors act through an HSF-1-independent mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The thermotolerance assays in both N2 and hsf-1(sy441) backgrounds (C5-C7) provide clear genetic separation of mechanisms. The biochemical validation showing reduced protein insolubility with anisomycin treatment (C8) supports the functional consequence. The inference about HSF-1 dependence (C9, C10) is well-supported by the differential genetic requirements, though the exact molecular mechanism remains undefined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "ed6b27fb-35d8-47cd-ab09-26ef4a9c13fe",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "TE inhibitors (anisomycin, lycorine) significantly reduce heat shock-induced PolyQ aggregation in a time-dependent manner, while TI inhibitors show minimal (4E1RCat) or no effect (salubrinal). The TE inhibitors reduce the number of aggregates but do not alter aggregation kinetics (onset, rate, or final size).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The live imaging quantification (C13-C15) provides robust data with appropriate controls. The time-dependence observation (C17) and lack of effect when treatment starts post-heat shock (C18) support a preventive rather than remedial mechanism. The kinetic analysis (C16) adds mechanistic insight. However, C18 lacks shown data ('not shown'), which is a minor weakness but doesn't undermine the overall conclusion given consistency with other results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "eff54469-b707-4d6f-839f-0dc65132f9b2",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "TE inhibitors rescue proteotoxicity from proteasome dysfunction (bortezomib treatment) in hsf-1(sy441) and PolyQ backgrounds, including rescue of the sma phenotype, while TI inhibitors exacerbate toxicity. This correlates with differential effects on proteasome activity: TI inhibitors reduce proteasome activity in N2 but not further in hsf-1 mutants, while TE inhibitors have no effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The survival assays (C19-C22) and morphological rescue data (C23-C26) are well-documented with quantification. The proteasome activity measurements (C27-C30) provide a mechanistic explanation for the opposing effects. The finding that hsf-1 mutants already have low proteasome activity (C29) that isn't further reduced by TI inhibitors (C30) is internally consistent. However, the mechanistic link between TI inhibition and reduced proteasome activity could benefit from additional investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "dfdec5e9-7ebf-4a2c-9a2c-b29d4647c96a",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TI inhibitors (4E1RCat, salubrinal) dose-dependently extend lifespan in wild-type N2 animals but not in hsf-1(sy441) mutants, while TE inhibitors (anisomycin, lycorine, cycloheximide) show minimal lifespan extension in N2 but significantly extend lifespan (~20%) in hsf-1(sy441) mutants. This differential effect occurs despite all inhibitors reducing protein synthesis to similar extents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The lifespan data (C31, C32, C34, C36, C37) are comprehensive with appropriate statistical analysis. The key observation that equivalent reductions in protein synthesis yield different lifespan outcomes (C33) strongly supports that mechanism matters beyond simple reduction. The consistency with prior genetic studies (C35) strengthens confidence. The reciprocal pattern (TI extends N2 but not hsf-1; TE extends hsf-1 but not N2) is striking and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "e4be66d3-f220-4ade-b9b5-040656ae7b15",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Only TI inhibitors that extend lifespan reduce age-associated protein aggregation in N2 animals (measured as SDS-insoluble aggregates at day 8), while TE inhibitors fail to reduce age-associated aggregation despite protecting from acute proteotoxic stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The sequential detergent extraction data (C38, C39) clearly distinguish between TI and TE inhibitor effects on aging-related aggregation. This result is important because it demonstrates that protection from acute stress (which TE inhibitors provide) does not necessarily translate to protection from chronic age-related proteostasis decline. The experimental design appropriately controls for protein synthesis reduction levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "e836bba6-dd9e-4841-bab9-3176b683811e",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "TI inhibitors paradoxically increase (1.5-2 fold) the concentration of newly synthesized proteins in hsf-1(sy441) mutants while reducing it in wild-type N2 animals. This effect is replicated by RNAi knockdown of the TI inhibitor target eIF4G/ifg-1, confirming on-target action, and is not due to altered puromycin uptake or HSR activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is the most surprising and important mechanistic finding. The SUnSET data (C40, C41) are clear and quantified. The food intake control (C42) rules out a trivial explanation. The lack of HSR activation (C43) is important negative data. The genetic validation with ifg-1 RNAi (C44, C45) strongly supports that this is an on-target effect rather than off-target toxicity. This result fundamentally challenges the simple model that TI inhibition reduces protein synthesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "9c5e417a-320c-40f6-8611-084ec52e8763",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "4E1RCat extends lifespan in wild-type N2 animals but not in ifg-1(cxTi9279) mutants, demonstrating that lifespan extension occurs through on-target inhibition of eIF4G/ifg-1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The genetic epistasis experiment (C46, C47) provides strong evidence for on-target action. The lack of lifespan extension in ifg-1 mutants (C47) rules out off-target effects as the primary mechanism for longevity. This is a critical control that strengthens confidence in all other 4E1RCat results. The inference (C48) is well-justified by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "71382df7-bbe3-494e-bb35-b7126f3365da",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "HSF-1 is required for the translation initiation machinery to properly control protein synthesis levels. In the absence of functional HSF-1, inhibition of eIF4G/ifg-1 fails to reduce protein synthesis and instead increases it, explaining why TI inhibitors lose their beneficial effects in hsf-1 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This mechanistic model (C49, C57, C59) is well-supported by the convergent evidence from pharmacological inhibition (C41) and genetic knockdown (C45). The explanation for loss of beneficial effects (C50) logically follows from the inability to reduce protein synthesis. The connection to prior literature (C63) provides additional support. However, the exact molecular mechanism of HSF-1/TI machinery cooperation remains speculative and would benefit from further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "097b718f-719c-4ff0-80ae-543ad8937afb",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Inhibition of translation elongation rescues proteostasis in animals with pre-existing proteotoxicity (compromised HSR, reduced proteasome activity, aggregation-prone proteins), while inhibition of translation initiation is ineffective or detrimental for pre-existing proteotoxicity but effective at preventing emerging age-related proteotoxicity. These mechanisms can be genetically separated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary claims (C51-C53) accurately synthesize the experimental findings from multiple assays (heat stress, proteasome dysfunction, PolyQ aggregation, aging). The distinction between 'rescue' vs. 'prevention' is well-supported by the data patterns. The genetic separation is demonstrated through the differential HSF-1 requirements. These are appropriate high-level conclusions from the body of work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "101356ae-8322-4abf-9ec8-4f24ab03dfa3",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Lowering newly synthesized protein concentration is necessary but not sufficient for all beneficial effects: it is necessary for TI inhibitor benefits (as shown by loss of effect when protein synthesis increases in hsf-1 mutants), sufficient for protection from acute proteotoxic stress (as shown by TE inhibitor effects), but insufficient for lifespan extension in wild-type animals, which requires selective translation enabled by TI inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These mechanistic inferences (C60-C62) logically follow from the experimental data. The necessity argument (C60) is supported by the correlation between inability to reduce protein synthesis and loss of benefits in hsf-1 mutants. The sufficiency for acute stress but not lifespan (C61) is demonstrated by TE inhibitor effects. The requirement for selective translation for longevity (C62) is a reasonable inference from the TI-specific lifespan extension, though direct evidence of selective translation would strengthen this claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "7557123c-c007-4e35-9001-ac9f1ff27e79",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The enhanced toxicity of combining TI inhibitors with bortezomib likely results from reduced expression of HSP90/daf-21 and HSP70/hsp-1 (whose translation depends on eIF4G/ifg-1) combined with independent reductions in proteasome activity by both treatments, demonstrating that long-term TI or TE inhibition differentially affects proteasomal activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims (C54-C56) are explicitly speculative ('likely to be the result'). While the speculation is reasonable and based on prior knowledge about HSP translation dependence and observed proteasome activity data, direct evidence for the proposed mechanism is lacking. The authors appropriately present this as speculation rather than established fact. Additional experiments measuring HSP levels under these conditions would be needed to support this model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "539d1176-a7c7-45f2-a218-eadd91af3dda",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Selective translation can only occur if translation initiation itself is inhibited.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This logical inference (C58) follows from the mechanism of selective translation, where differential mRNA features (e.g., 5' UTR structure, IRES elements) allow some mRNAs to be preferentially translated when initiation is limiting. This is consistent with established models in the field and the experimental observations that only TI inhibitors enable certain beneficial effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "1c220f13-385c-4f7a-a89a-396a8cf17516",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The HSF-1 pathway not only acts as a downstream target of translation but also directly cooperates with the translation initiation machinery to control newly synthesized protein concentration and restore proteostasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This overarching conclusion (C80) appropriately synthesizes the key finding that HSF-1 is required for TI machinery to reduce protein synthesis. The bidirectional relationship (HSF-1 as both upstream and downstream of translation) is well-supported by the data, though the exact molecular mechanism of 'cooperation' remains to be elucidated. This represents a conceptual advance in understanding the relationship between these pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    },
+    {
+      "id": "b6dce61f-28b1-4ae0-8c34-f721ace32782",
+      "content_id": "b7d83c26-15c6-487f-b042-98f36513164b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The manuscript provides appropriate background context on proteostasis, prior work on translation and protein aggregation, the selective translation model, the reduced folding load model, and identifies gaps in previous studies that didn't control for the extent of protein synthesis reduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims (C68-C85) are appropriately supported by citations and represent accurate summaries of prior work and established concepts. The identification of the gap in previous studies (C79) provides good justification for the current work's experimental design. The citations appear appropriate and the characterization of prior models is fair.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:29:08.273525Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "43f88522-9e3f-4d35-80d6-d1fc8dde71fd",
+      "result_id": "355dd23e-1677-4dbb-9746-ca22c1c04ec5"
+    },
+    {
+      "claim_id": "e7e9a288-efd4-46b9-9258-ec7d6eae19ea",
+      "result_id": "355dd23e-1677-4dbb-9746-ca22c1c04ec5"
+    },
+    {
+      "claim_id": "7a98d1a0-0357-462b-9b43-34743bca6e3d",
+      "result_id": "355dd23e-1677-4dbb-9746-ca22c1c04ec5"
+    },
+    {
+      "claim_id": "e087cb70-8cd9-466e-81d5-a0828f211ca7",
+      "result_id": "355dd23e-1677-4dbb-9746-ca22c1c04ec5"
+    },
+    {
+      "claim_id": "d4859fbf-60c5-47e2-aaa7-7fbfdbfe8567",
+      "result_id": "355dd23e-1677-4dbb-9746-ca22c1c04ec5"
+    },
+    {
+      "claim_id": "a6998cf2-994d-4cfc-b24d-561a71da62ab",
+      "result_id": "355dd23e-1677-4dbb-9746-ca22c1c04ec5"
+    },
+    {
+      "claim_id": "f50a1f80-d57d-43cf-b3b8-d49059bb63f2",
+      "result_id": "355dd23e-1677-4dbb-9746-ca22c1c04ec5"
+    },
+    {
+      "claim_id": "9f7a2562-7b56-4c96-b8b3-386c9e4485bf",
+      "result_id": "355dd23e-1677-4dbb-9746-ca22c1c04ec5"
+    },
+    {
+      "claim_id": "2663d53b-c9fc-4015-bb6f-bf0287afe278",
+      "result_id": "ddea89f6-fde5-410b-9918-2846deb4bbf3"
+    },
+    {
+      "claim_id": "94d809ff-413f-4237-8bca-7db44cb8d636",
+      "result_id": "ddea89f6-fde5-410b-9918-2846deb4bbf3"
+    },
+    {
+      "claim_id": "b05e404c-9fde-4331-a73b-f449368e2b54",
+      "result_id": "ddea89f6-fde5-410b-9918-2846deb4bbf3"
+    },
+    {
+      "claim_id": "f6b395b3-5669-4c71-8787-30d985725d45",
+      "result_id": "ddea89f6-fde5-410b-9918-2846deb4bbf3"
+    },
+    {
+      "claim_id": "48e8d445-c08c-4bd9-ad6c-8e746125c948",
+      "result_id": "ddea89f6-fde5-410b-9918-2846deb4bbf3"
+    },
+    {
+      "claim_id": "7d585634-5da1-4726-ac76-b2879ad77ed6",
+      "result_id": "ddea89f6-fde5-410b-9918-2846deb4bbf3"
+    },
+    {
+      "claim_id": "5a91faab-0f26-4521-9b71-cad4231f62cc",
+      "result_id": "ed6b27fb-35d8-47cd-ab09-26ef4a9c13fe"
+    },
+    {
+      "claim_id": "734a509a-96fe-49c0-82e1-3bb6b7d0e78a",
+      "result_id": "ed6b27fb-35d8-47cd-ab09-26ef4a9c13fe"
+    },
+    {
+      "claim_id": "8fee9b39-f530-4f2c-a31f-8c653178c2d1",
+      "result_id": "ed6b27fb-35d8-47cd-ab09-26ef4a9c13fe"
+    },
+    {
+      "claim_id": "ff5d6960-c00c-4c07-8380-a247707d9b89",
+      "result_id": "ed6b27fb-35d8-47cd-ab09-26ef4a9c13fe"
+    },
+    {
+      "claim_id": "92832e77-f8de-4e1f-b87e-4ea1cd411911",
+      "result_id": "ed6b27fb-35d8-47cd-ab09-26ef4a9c13fe"
+    },
+    {
+      "claim_id": "0c1b3a0c-5744-42c0-9d7b-1313dc5dd64b",
+      "result_id": "ed6b27fb-35d8-47cd-ab09-26ef4a9c13fe"
+    },
+    {
+      "claim_id": "44295274-dea8-40d2-a3fa-c20ae7c77b89",
+      "result_id": "ed6b27fb-35d8-47cd-ab09-26ef4a9c13fe"
+    },
+    {
+      "claim_id": "91bbbdb0-7706-40f4-b183-86a57168473f",
+      "result_id": "ed6b27fb-35d8-47cd-ab09-26ef4a9c13fe"
+    },
+    {
+      "claim_id": "d8df98ad-7131-4dc3-bc0f-e3f418231649",
+      "result_id": "eff54469-b707-4d6f-839f-0dc65132f9b2"
+    },
+    {
+      "claim_id": "031f9c74-abde-4d70-a66a-b7a27658da31",
+      "result_id": "eff54469-b707-4d6f-839f-0dc65132f9b2"
+    },
+    {
+      "claim_id": "f8c24ef5-b777-41ff-9859-dde21db82b2f",
+      "result_id": "eff54469-b707-4d6f-839f-0dc65132f9b2"
+    },
+    {
+      "claim_id": "8d992aa5-314d-437c-80d0-46e17fe46042",
+      "result_id": "eff54469-b707-4d6f-839f-0dc65132f9b2"
+    },
+    {
+      "claim_id": "b54ac0d0-9cce-43d5-893d-6467dff87253",
+      "result_id": "eff54469-b707-4d6f-839f-0dc65132f9b2"
+    },
+    {
+      "claim_id": "8f7cee17-4972-428d-9619-58dce09406bb",
+      "result_id": "eff54469-b707-4d6f-839f-0dc65132f9b2"
+    },
+    {
+      "claim_id": "517dd801-f624-402d-8b49-54339194e8e1",
+      "result_id": "eff54469-b707-4d6f-839f-0dc65132f9b2"
+    },
+    {
+      "claim_id": "41d80b84-ad0f-415d-8eae-af561b345cf9",
+      "result_id": "eff54469-b707-4d6f-839f-0dc65132f9b2"
+    },
+    {
+      "claim_id": "c5a723e5-3356-46d5-bcff-31f4c40094b8",
+      "result_id": "eff54469-b707-4d6f-839f-0dc65132f9b2"
+    },
+    {
+      "claim_id": "498d0c7b-1131-4783-a1d0-364024c90b5f",
+      "result_id": "eff54469-b707-4d6f-839f-0dc65132f9b2"
+    },
+    {
+      "claim_id": "4aaf6706-1819-4e09-8281-80d8913eed7b",
+      "result_id": "eff54469-b707-4d6f-839f-0dc65132f9b2"
+    },
+    {
+      "claim_id": "332305d0-4499-492b-a22e-cf7307659bfc",
+      "result_id": "eff54469-b707-4d6f-839f-0dc65132f9b2"
+    },
+    {
+      "claim_id": "d536f63a-caf7-43b2-b9cd-35defd49401b",
+      "result_id": "dfdec5e9-7ebf-4a2c-9a2c-b29d4647c96a"
+    },
+    {
+      "claim_id": "28e00af6-b771-4cf2-b25d-ab1ca29d7b36",
+      "result_id": "dfdec5e9-7ebf-4a2c-9a2c-b29d4647c96a"
+    },
+    {
+      "claim_id": "e9235490-b9b7-4399-9f05-4257d45b134f",
+      "result_id": "dfdec5e9-7ebf-4a2c-9a2c-b29d4647c96a"
+    },
+    {
+      "claim_id": "ece59a84-5215-4ad7-a158-fab10329c515",
+      "result_id": "dfdec5e9-7ebf-4a2c-9a2c-b29d4647c96a"
+    },
+    {
+      "claim_id": "94917a70-bacb-42c5-bc7d-e77c4e650fe2",
+      "result_id": "dfdec5e9-7ebf-4a2c-9a2c-b29d4647c96a"
+    },
+    {
+      "claim_id": "b6cd1d76-51e0-4332-b762-611203a526b0",
+      "result_id": "dfdec5e9-7ebf-4a2c-9a2c-b29d4647c96a"
+    },
+    {
+      "claim_id": "bbe7b876-f6b4-40c8-bdf5-8c6ffdce3fe4",
+      "result_id": "dfdec5e9-7ebf-4a2c-9a2c-b29d4647c96a"
+    },
+    {
+      "claim_id": "c9f955e4-14aa-4fc1-99db-cf3102f3b634",
+      "result_id": "e4be66d3-f220-4ade-b9b5-040656ae7b15"
+    },
+    {
+      "claim_id": "8d9f41e6-feab-453d-88ef-b13b46ef86c6",
+      "result_id": "e4be66d3-f220-4ade-b9b5-040656ae7b15"
+    },
+    {
+      "claim_id": "dc5850bc-48bb-43a8-ac00-8929c8073950",
+      "result_id": "e836bba6-dd9e-4841-bab9-3176b683811e"
+    },
+    {
+      "claim_id": "4f67ba1d-e8ac-45c2-ac31-3dac2b05a630",
+      "result_id": "e836bba6-dd9e-4841-bab9-3176b683811e"
+    },
+    {
+      "claim_id": "9e80503c-b2f4-4ad2-a6ad-dc5e95a5da41",
+      "result_id": "e836bba6-dd9e-4841-bab9-3176b683811e"
+    },
+    {
+      "claim_id": "931b3b87-8e7d-490f-a4bc-bd5d0ca3c360",
+      "result_id": "e836bba6-dd9e-4841-bab9-3176b683811e"
+    },
+    {
+      "claim_id": "8ceed656-454c-4a08-8521-85a71eaab26f",
+      "result_id": "e836bba6-dd9e-4841-bab9-3176b683811e"
+    },
+    {
+      "claim_id": "ce3fb07a-a9e9-4ba7-8981-e75f5fdd0bc2",
+      "result_id": "e836bba6-dd9e-4841-bab9-3176b683811e"
+    },
+    {
+      "claim_id": "3eaa1c8e-05ec-4856-acaa-66a88a69499c",
+      "result_id": "9c5e417a-320c-40f6-8611-084ec52e8763"
+    },
+    {
+      "claim_id": "ef800055-114c-4378-af1e-16ac3c4f639d",
+      "result_id": "9c5e417a-320c-40f6-8611-084ec52e8763"
+    },
+    {
+      "claim_id": "8e84ec4e-111c-49ad-8fbf-91ce00f53cec",
+      "result_id": "9c5e417a-320c-40f6-8611-084ec52e8763"
+    },
+    {
+      "claim_id": "71647af1-4ff9-48ee-9c6f-70cda9f1557a",
+      "result_id": "71382df7-bbe3-494e-bb35-b7126f3365da"
+    },
+    {
+      "claim_id": "e66b0bd6-8ab3-4238-9577-f5db421bf833",
+      "result_id": "71382df7-bbe3-494e-bb35-b7126f3365da"
+    },
+    {
+      "claim_id": "ea680b5d-8e6b-4032-aecb-d752b6b2afda",
+      "result_id": "71382df7-bbe3-494e-bb35-b7126f3365da"
+    },
+    {
+      "claim_id": "9e371299-39af-4bc5-af91-e4f47ae8aa08",
+      "result_id": "71382df7-bbe3-494e-bb35-b7126f3365da"
+    },
+    {
+      "claim_id": "e3a27a4b-7435-4527-8e3f-974c5426bba5",
+      "result_id": "71382df7-bbe3-494e-bb35-b7126f3365da"
+    },
+    {
+      "claim_id": "5c79f08e-5fad-4068-8591-8d5ef0d2a548",
+      "result_id": "097b718f-719c-4ff0-80ae-543ad8937afb"
+    },
+    {
+      "claim_id": "264832f6-72ed-4d93-85d3-336e44a2c499",
+      "result_id": "097b718f-719c-4ff0-80ae-543ad8937afb"
+    },
+    {
+      "claim_id": "9e0745a8-5e22-477e-bf6d-ed4db05080c8",
+      "result_id": "097b718f-719c-4ff0-80ae-543ad8937afb"
+    },
+    {
+      "claim_id": "34152da9-5e7f-4a32-ab25-c28dafd90f9c",
+      "result_id": "101356ae-8322-4abf-9ec8-4f24ab03dfa3"
+    },
+    {
+      "claim_id": "b0f057d0-ed8a-446d-8ba0-1b0f5cfd3c99",
+      "result_id": "101356ae-8322-4abf-9ec8-4f24ab03dfa3"
+    },
+    {
+      "claim_id": "aace79b7-a04e-4e36-bc52-3d15d2ada9ca",
+      "result_id": "101356ae-8322-4abf-9ec8-4f24ab03dfa3"
+    },
+    {
+      "claim_id": "e0798097-be4a-4525-9853-de444ac7da3a",
+      "result_id": "7557123c-c007-4e35-9001-ac9f1ff27e79"
+    },
+    {
+      "claim_id": "ec5b23d3-653c-4dfd-a70d-920f91461176",
+      "result_id": "7557123c-c007-4e35-9001-ac9f1ff27e79"
+    },
+    {
+      "claim_id": "e3b21c6f-22f1-4b55-8c1d-3b37639bccca",
+      "result_id": "7557123c-c007-4e35-9001-ac9f1ff27e79"
+    },
+    {
+      "claim_id": "82dbb21c-d2fc-40f0-8c45-f6a0c7bdd845",
+      "result_id": "539d1176-a7c7-45f2-a218-eadd91af3dda"
+    },
+    {
+      "claim_id": "56ca52e2-8e4c-4126-8415-81931dd0884c",
+      "result_id": "1c220f13-385c-4f7a-a89a-396a8cf17516"
+    },
+    {
+      "claim_id": "cb817525-d297-4bbb-ae05-29733867c264",
+      "result_id": "b6dce61f-28b1-4ae0-8c34-f721ace32782"
+    },
+    {
+      "claim_id": "d86a226f-b367-44a0-9113-f083edc28159",
+      "result_id": "b6dce61f-28b1-4ae0-8c34-f721ace32782"
+    },
+    {
+      "claim_id": "cb8bc9a0-0886-4ffa-936d-5c93c560b799",
+      "result_id": "b6dce61f-28b1-4ae0-8c34-f721ace32782"
+    },
+    {
+      "claim_id": "ad332fd9-9ce0-49f6-8659-958fe2ef782f",
+      "result_id": "b6dce61f-28b1-4ae0-8c34-f721ace32782"
+    },
+    {
+      "claim_id": "aaf86ea9-a634-4ca6-a462-77cba37fa76b",
+      "result_id": "b6dce61f-28b1-4ae0-8c34-f721ace32782"
+    },
+    {
+      "claim_id": "c4a2f2e9-5d8c-4873-91ef-2fbea1dcc6e7",
+      "result_id": "b6dce61f-28b1-4ae0-8c34-f721ace32782"
+    },
+    {
+      "claim_id": "92c00957-04c2-4c2f-9be2-6b3af4ff447e",
+      "result_id": "b6dce61f-28b1-4ae0-8c34-f721ace32782"
+    },
+    {
+      "claim_id": "0b3a3622-7fff-4aef-80ef-93d45b8976a2",
+      "result_id": "b6dce61f-28b1-4ae0-8c34-f721ace32782"
+    },
+    {
+      "claim_id": "791e6b41-045f-4762-9680-85e6a65e2b8e",
+      "result_id": "b6dce61f-28b1-4ae0-8c34-f721ace32782"
+    },
+    {
+      "claim_id": "71a06f3e-2470-4e47-a14a-3ea5ab29460c",
+      "result_id": "b6dce61f-28b1-4ae0-8c34-f721ace32782"
+    },
+    {
+      "claim_id": "aa33e213-a36b-4035-8274-2aacee508b7d",
+      "result_id": "b6dce61f-28b1-4ae0-8c34-f721ace32782"
+    },
+    {
+      "claim_id": "d0e5b477-d698-47a0-ab92-a2697a075266",
+      "result_id": "b6dce61f-28b1-4ae0-8c34-f721ace32782"
+    },
+    {
+      "claim_id": "5c62a67d-d3a9-44f1-a6d6-6e5788640d2f",
+      "result_id": "b6dce61f-28b1-4ae0-8c34-f721ace32782"
+    },
+    {
+      "claim_id": "f69e09ad-ebbe-4a28-9bfd-1f159079a045",
+      "result_id": "b6dce61f-28b1-4ae0-8c34-f721ace32782"
+    },
+    {
+      "claim_id": "272fa18c-9d11-46df-8c26-817157d80069",
+      "result_id": "b6dce61f-28b1-4ae0-8c34-f721ace32782"
+    },
+    {
+      "claim_id": "bf1b0bcd-122a-4f93-bce1-3cef8849e6c2",
+      "result_id": "b6dce61f-28b1-4ae0-8c34-f721ace32782"
+    },
+    {
+      "claim_id": "4f953dbc-a164-42b8-a191-72fb52b0a562",
+      "result_id": "b6dce61f-28b1-4ae0-8c34-f721ace32782"
+    }
+  ],
+  "comparisons": []
+}

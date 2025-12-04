@@ -1,0 +1,667 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "MEMO1 is overexpressed in multiple cancer types, with particularly high expression in breast cancer (p<10\u207b\u00b2\u2079), colon, lung, and uterine cancers (p<0.0001), but not in kidney, head and neck squamous cell tumors, or melanoma. Within breast cancer, MEMO1 overexpression is more prominent in triple-negative (TNBC) and HER2+ subtypes than in luminal subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are supported by statistical analysis of TCGA data with appropriate p-values from Mann-Whitney U-tests and visual confirmation in Figure 1A-C. The sample sizes appear adequate (N values shown in Figure 1A), and the statistical approach is appropriate for comparing expression levels between tumor and normal tissue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "MEMO1's yeast homolog MHO1 (37% amino acid identity) shows genetic interaction profile similarity with iron-related proteins LSO1 and ARH1 in yeast genetic interaction networks, suggesting an evolutionary link between MEMO1 and iron metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 are supported by appropriate citations to published yeast genetic interaction data (Costanzo et al., 2016; An et al., 2015; Braymer and Lill, 2017). The sequence identity claim is verifiable, and the genetic interaction data comes from established databases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "MEMO1 displays genetic interactions enriched in known MEMO1 functional pathways including cell adhesion, insulin signaling, ERBB signaling, and focal adhesion (LOF-GIs), as well as ERBB2 signaling, microtubule organization, and estrogen signaling (GOF-GIs), with FDR values ranging from <1.00E-05 to 1.99E-02.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C18 are supported by gene set enrichment analysis with appropriate statistical corrections (FDR values) and validation against known MEMO1 functions. The methodology using Wilcoxon rank-sum test (p<0.05) across 1028 cancer cell lines is appropriate, and the enrichment results are consistent with prior literature (Schotanus and Van Otterloo, 2020).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "GSEA of MEMO1 GOF-GIs identified multiple overlapping gene sets related to mitochondrial energy metabolism and redox balance, including mitochondrial transport (FDR 5.64E-04), electron transport chain components (FDR 8.92E-04 to 1.54E-02), TCA cycle (FDR 5.99E-03), oxidative phosphorylation (FDR 4.32E-02), glutathione metabolism (FDR 1.45E-01), and oxidative stress-induced senescence (FDR 1.70E-02).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C19-C25 report GSEA results with FDR values, but C24 (glutathione metabolism, FDR 1.45E-01) does not meet conventional significance thresholds (typically FDR <0.05 or <0.1). While the other enrichments are statistically significant and biologically coherent, the inclusion of a non-significant result weakens confidence in the overall interpretation. The overlapping nature of these gene sets also raises concerns about multiple testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Database analysis identified 18 iron metabolism and transport genes showing statistically significant genetic interactions with MEMO1: 11 genes more essential in high-MEMO1 cell lines (GOF-GIs), 6 genes more essential in low-MEMO1 cell lines (LOF-GIs), and FTH1 showing inconsistent interactions across databases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are supported by systematic database screening with appropriate statistical criteria (Wilcoxon rank-sum test p<0.05) and are documented in Supplementary file 1 and Figure 1 supplements 3-4. The identification of inconsistent results for FTH1 demonstrates appropriate quality control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Knockout or knockdown of TFR2, SLC25A28, or ACO1 selectively suppresses proliferation of high-MEMO1 cell lines, while DMT1 knockout more strongly inhibits proliferation in low-MEMO1 cell lines, demonstrating differential genetic interactions based on MEMO1 expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are stated as examples from the database analysis and are consistent with the GOF-GI and LOF-GI classifications. These claims are supported by the systematic screening methodology and are later validated experimentally in subsequent figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "MEMO1 knockout in breast cancer cells results in loss of cell motility (wound healing assay) and decreased proliferation rates, while melanoma cells show no strong MEMO1-dependent effects on motility or proliferation, consistent with prior literature and differential MEMO1 expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by experimental data in Figure 1 supplement 5A-D with appropriate statistical comparisons. The results are consistent with cited literature (MacDonald et al., 2014; Marone et al., 2004) and align with the observation that melanoma does not overexpress MEMO1 relative to normal tissue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "TFR2, but not TFR1, exhibits genetic interaction with MEMO1. TFR1 shRNA causes >90% protein reduction and near-complete proliferation inhibition in all cell lines regardless of MEMO1 levels, indicating TFR1 is an essential protein whose lethality explains its absence from MEMO1 GI screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are supported by gene essentiality data (Figure 2A) and experimental validation (Figure 2B, Figure 2 supplement 1A-B). The interpretation that TFR1 essentiality prevents detection of genetic interactions is logical and well-supported by the data showing universal growth inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "TFR2 knockdown activates proliferation in high-MEMO1 breast cancer cells but has no effect in MEMO1 knockout/knockdown cells, demonstrating a GOF-GI between TFR2 and MEMO1. This MEMO1-dependent growth activation pattern is also observed in melanoma cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by proliferation data in Figure 2C and Figure 2 supplement 1C-D with appropriate statistical comparisons. The GOF-GI interpretation is consistent with the selective effect in high-MEMO1 cells. The observation in both breast cancer and melanoma strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "ACO1, SLC25A28, and PLOD1 show GOF interactions with MEMO1 in breast cancer cells, with ACO1 knockdown selectively inhibiting high-MEMO1 cells, while SLC25A28 and PLOD1 knockdowns show stronger effects in high-MEMO1 cells. None show GOF interactions in melanoma; ACO1 and PLOD1 display LOF interactions in melanoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 are supported by proliferation data in Figure 2D-F and supplements 2-3 with appropriate statistical comparisons. The differential effects between breast cancer and melanoma are consistent with MEMO1 expression patterns and strengthen the specificity of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "HSPA9 knockdown causes major proliferation inhibition regardless of MEMO1 levels (like TFR1), BOLA2 shows weak but statistically significant GOF interactions with MEMO1, and NCOA4 knockdown shows proliferation inhibition without clear MEMO1 correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by proliferation data in Figure 2 supplements 4-5. The HSPA9 result is consistent with it being an essential protein. The BOLA2 result aligns with database predictions. The NCOA4 result appropriately acknowledges lack of clear correlation, demonstrating appropriate interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Expression analysis across breast cancer cell lines reveals weak but highly significant correlations between MEMO1 and TFR1 (p=4.6E-18), TFR2 (p=1.8E-14), and PLOD1 (p=1.8E-33), while melanoma correlations do not exceed Spearman's R=0.2 threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by correlation analysis in Figure 3A and supplement 1A-B. The p-values are highly significant despite weak correlation coefficients, which is appropriate given large sample sizes. The differential pattern between breast cancer and melanoma is consistent with other findings. However, the R=0.2 threshold is acknowledged as arbitrary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Knockdown of TFR1, TFR2, ACO1, HSPA9, and PLOD1 in breast cancer cells decreases MEMO1 expression by 40-60%, with no effect in melanoma. Conversely, MEMO1 knockout/knockdown in breast cancer decreases TFR1, TFR2, ACO1, and SLC25A28 expression, while in melanoma only TFR2 is affected, suggesting co-regulation through a common mechanism in breast cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by western blot data in Figure 3C-F with appropriate statistical comparisons. The reciprocal effects on expression levels support the co-regulation interpretation. The differential effects between breast cancer and melanoma are consistent with other findings and strengthen the specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "MEMO1 knockout cells show significantly lower iron concentrations in both cytosolic and mitochondrial fractions, with 30-50% decreased ferritin levels at basal and elevated iron conditions. This suggests MEMO1 overexpression allows cells to accumulate higher iron levels to meet increased proliferation demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by ICP-MS measurements (Figure 4A-B) and western blot data (Figure 4 supplement 1A,B,E,F) with appropriate statistical comparisons. The interpretation linking iron accumulation to proliferation demands is reasonable given the observed correlation with TFR1 levels (Figure 3E).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "High-MEMO1 cells are more sensitive to both toxic iron levels and extreme iron deprivation (high concentrations of deferiprone and DFX) than MEMO1 knockout cells, while cell motility is unaffected by subtoxic iron chelator concentrations that create iron deficit without major viability effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by cell viability data (Figure 4C, Figure 4 supplement 2A-B) and wound healing assays (Figure 4 supplement 2C-D). The differential sensitivity to both iron excess and deficiency is consistent with MEMO1's role in iron homeostasis. The motility result appropriately distinguishes between toxic and subtoxic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Treatment with 1 \u00b5M DFX causes perinuclear mitochondrial clustering in MEMO1 knockout cells but not wild-type cells (detected by GRP75 and MitoTracker staining), indicating that iron depletion affects mitochondrial morphology only in MEMO1-deficient cells. This demonstrates MEMO1's specific involvement in mitochondrial iron regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by immunofluorescence microscopy data (Figure 4D). The differential effect of DFX on mitochondrial morphology between wild-type and knockout cells is clear and supports the interpretation of MEMO1's role in mitochondrial iron regulation. The use of two independent markers (GRP75 and MitoTracker) strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Elevated iron levels increase ferroptosis susceptibility. MEMO1 exhibits GOF-GI with most proteins involved in mitochondria-based ferroptosis (including aconitase, VDACs, SLC25A28, FXN, citrate synthase, and others), suggesting MEMO1 involvement in ferroptosis regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are supported by established knowledge (Dixon et al., 2012) and database analysis (Supplementary file 1C, citing Wang et al., 2020). The genetic interaction data with ferroptosis-related proteins is systematic and consistent with MEMO1's role in iron homeostasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Ferrostatin-1 significantly increases resistance of high-MEMO1 breast cancer cells to iron toxicity (IC50 from 38 \u00b5M to 495 \u00b5M), while MEMO1 knockout cells are inherently resistant (IC50=700 \u00b5M) with modest ferrostatin effect (IC50=2300 \u00b5M). This MEMO1-dependent iron toxicity is due to ferroptosis modulation, consistent with higher RSL3 sensitivity in high-MEMO1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 are supported by cell viability data (Figure 4C, 4E) with calculated IC50 values and 95% confidence intervals. The ferrostatin rescue experiment provides strong evidence for ferroptosis involvement. The consistency between iron toxicity and RSL3 sensitivity strengthens the interpretation. The wide confidence intervals for some IC50 values (e.g., 180-1360 \u00b5M, 449-11,900 \u00b5M) suggest some uncertainty in precise values but do not undermine the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "RSL3 (a specific GPX4 inhibitor) shows decreased cytotoxicity in MEMO1 knockout breast cancer cells. GPX4 levels are approximately twice higher in high-MEMO1 cells under basal conditions but decrease at elevated iron levels, eliminating differences between high- and low-MEMO1 cells. This indicates ferroptosis sensitivity is due to MEMO1-dependent iron differences, not GPX4 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C89 are supported by RSL3 cytotoxicity data (Figure 4E) and western blot analysis (Figure 4 supplement 2A-D). The interpretation that iron levels rather than GPX4 expression drive ferroptosis sensitivity is logical given the GPX4 expression patterns. However, the mechanism of GPX4 decrease at elevated iron is acknowledged as unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "MEMO1 knockdown/knockout breast cancer cells have significantly higher malondialdehyde (MDA) levels, suggesting increased ferroptosis resistance through reduced iron pools and higher tolerance to lipid oxidation products. Melanoma cells show smaller MEMO1-dependent MDA variations, consistent with smaller RSL3 sensitivity differences. Overall, MEMO1 overexpression sensitizes breast cancer cells to ferroptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 are supported by MDA assay data (Figure 4F) and are consistent with RSL3 sensitivity data (Figure 4E) and iron measurements (Figure 4A-B). The differential effects between breast cancer and melanoma strengthen the specificity of the findings. The interpretation integrating multiple lines of evidence is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Previous work identified a putative metal-binding site in MEMO1 structure and demonstrated copper-dependent redox activity, with recent confirmation of copper binding to MEMO1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are supported by appropriate citations to published work (Qiu et al., 2008; MacDonald et al., 2014; Zhang et al., 2022). These claims establish prior knowledge context for the current study's metal-binding investigations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Under redox conditions mimicking intracellular environment (9.5 mM GSH, 0.5 mM GSSG), MEMO1 binds stoichiometric iron (~1:1 ratio). In the absence of iron, MEMO1 binds Cu(I) at ~0.4 molar ratio. Under oxidative conditions without reducing agents, Cu(II) binds at ~0.7 molar ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 are supported by ICP-MS measurements under defined conditions. The stoichiometric ratios are clearly stated and the experimental conditions are well-defined. The use of physiologically relevant redox conditions (GSH/GSSG ratio) strengthens the relevance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Iron binding to MEMO1 in the presence of glutathione has Kd=5.0\u00b12.6\u00d710\u207b\u2076 M (ITC) and 2.4\u00b11.0\u00d710\u207b\u2076 M (microscale thermophoresis). Since glutathione binds iron with Kd~10\u207b\u2075 M, MEMO1's affinity for free Fe\u00b2\u207a may be much higher than the measured values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 are supported by ITC data (Figure 5A) and microscale thermophoresis (Figure 5 supplement 2), with good agreement between methods. The interpretation regarding competition with glutathione is logical and supported by citation (Hider and Kong, 2011). The acknowledgment that measured Kd values reflect competition is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "Copper(I) binding to MEMO1 was detected by ITC with estimated Kd~3\u00d710\u207b\u2076 M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is supported by ITC data (Figure 5 supplement 3). The use of \"estimated\" appropriately acknowledges uncertainty in the measurement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "MEMO1 structures with iron (2.15 \u00c5 resolution) and copper (2.5 \u00c5 resolution) were solved by molecular replacement using the metal-free structure (PDB 3BCZ). Both metal-bound forms are essentially identical to the metal-free structure (RMSD <0.17 \u00c5 for \u03b1-carbons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 are supported by crystallographic data (Supplementary file 1D) and structural analysis. The resolutions are appropriate for the conclusions drawn, and the low RMSD values support the claim of structural similarity. The use of molecular replacement with a known structure is standard practice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "In the MEMO1-Fe structure, iron is clearly visible with 40-60% occupancy (confirmed by anomalous diffraction) and is coordinated by H49, H81, and C244. This His-His-Cys coordination is an unusual variation of the His-His-Asp/Glu coordination common in non-heme dioxygenases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 are supported by crystallographic data including anomalous diffraction maps (Figure 5C). The coordination geometry is clearly defined, and the comparison to dioxygenases is supported by citation (Abu-Omar et al., 2005). The characterization as \"unusual\" is appropriate given the cysteine substitution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "A glutathione molecule was found in the MEMO1-Fe structure near the iron-binding site, with its glycine carboxyl forming an electrostatic interaction with H192. This finding is consistent with Fe-GSH binding observed by ITC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 are supported by crystal structure data and are consistent with ITC measurements. The presence of glutathione in the structure provides direct evidence for the Fe-GSH complex observed in solution studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "Copper crystallized with MEMO1 binds at the same site and is coordinated by the same residues (H49, H81, C244) as iron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 is supported by crystal structure data (Figure 5D). The shared binding site and coordination geometry for both metals is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "ITC analysis of MEMO1 mutants shows H192A and D189N retain iron-binding affinity, while H49A and C244S do not bind iron. Crystal structure of C244S shows no metal density. This confirms metal coordination by H49, H81, and C244, with H192 and D189 not participating in metal binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 are supported by ITC data (Figure 5A) and crystal structure (Figure 5E). The mutagenesis approach provides strong evidence for identifying coordinating residues. The consistency between ITC and crystallographic data strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "MEMO1 is an iron-binding protein that modulates iron homeostasis in cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 is a summary conclusion supported by the combined evidence from genetic interactions, biochemical measurements, structural data, and cellular iron measurements. This represents the central finding of the manuscript and is well-supported by multiple independent lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "The labile iron pool concentration in cells is within the low micromolar range. Given MEMO1's measured Kd, it would bind iron from this pool in the absence of competition with other metals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 are supported by citation (Epsztejn et al., 1997) and logical inference from the measured Kd values. The reasoning connecting cellular iron concentrations to MEMO1 binding is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "There is essentially no free copper in cells (all bound to proteins with Kd~10\u207b\u00b9\u00b3 M or less). Copper transfer requires specific protein-protein interactions and is kinetically limited. Therefore, without specific copper loading mechanisms, MEMO1 likely predominantly binds iron in living cells despite in vitro copper binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 are supported by citation (Banci et al., 2010) and established knowledge of copper trafficking. The reasoning distinguishing between thermodynamic and kinetic considerations is sophisticated and appropriate. The conclusion that MEMO1 likely binds iron in vivo is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "MEMO1 may bind copper under oxidative conditions in specific local cellular environments, potentially triggering a switch between different MEMO1 activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C124 is explicitly speculative (\"may bind,\" \"tempting to speculate\") and is not directly supported by experimental evidence. While consistent with prior reports (MacDonald et al., 2014; Zhang et al., 2022) and the observed in vitro copper binding, this remains a hypothesis requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "MEMO1's iron-binding site is structurally similar to iron-containing extradiol dioxygenases (with C244 replacing glutamate). No dioxygenase activity has been detected with standard substrates (gallate, protocatechuate, L-DOPA), but the structural similarity suggests MEMO1 may catalyze redox reactions involved in signaling molecule biosynthesis or breakdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C126 are supported by structural comparison and negative experimental results. However, C127 is speculative. While the structural similarity is compelling, the absence of detectable dioxygenase activity with standard substrates weakens the hypothesis. The true substrate, if any, remains unknown. The speculation is reasonable but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "TFR1 is essential for bulk iron uptake, while TFR2 plays a regulatory role. Selective activation of high-MEMO1 breast cancer cell proliferation by TFR2 knockdown and decreased cytosolic iron in MEMO1 knockout cells suggest MEMO1 maintains iron homeostasis in conjunction with TFR2. This MEMO1-TFR2 interaction is observed in both breast cancer and melanoma, suggesting a general role in iron regulation across cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C132 are supported by established knowledge (Kawabata, 2019), experimental data on TFR2 knockdown effects (Figure 2C), iron measurements (Figure 4A), and observations in multiple cell types. The interpretation of MEMO1-TFR2 interaction is well-supported by converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "ACO1 functions as iron response protein IRP1 in its iron-free state, binding mRNA iron-responsive elements and regulating iron-related protein expression. Upon iron binding, IRP1 becomes cytosolic aconitase, leading to TFR1 mRNA destabilization and decreased iron uptake. Selective suppression of high-MEMO1 cell proliferation by ACO1 knockdown indicates dysregulation of MEMO1-dependent iron homeostasis, possibly reflecting tighter control requirements in high-MEMO1/high-iron cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C135 are supported by established knowledge (Lane et al., 2015; Rouault et al., 1991). Claim C136 is supported by experimental data (Figure 2D). Claim C137 is speculative but represents a reasonable hypothesis based on the observed genetic interaction pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The link between MEMO1 and TFR2/ACO1 suggests possible MEMO1-TFR1 interaction, but TFR1 knockdown strongly inhibits all cell lines regardless of MEMO1 levels, consistent with TFR1's essential role. Detection of other ACO1-regulated genes (DMT1, FTH1, ACO2) in database screening indicates MEMO1 is an integral part of the cellular iron regulatory network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C141 are supported by experimental data (TFR1 knockdown effects) and database screening results. The reasoning about TFR1 essentiality preventing detection of genetic interactions is sound. The identification of multiple ACO1-regulated genes in the MEMO1 interaction network strengthens the conclusion about MEMO1's integration into iron regulatory pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Iron is a cofactor for abundant electron transport proteins and TCA cycle enzymes. Disruption of iron homeostasis by MEMO1 knockout is expected to affect mitochondrial functions. Indeed, iron chelator DFX causes major mitochondrial morphology changes in MEMO1 knockout cells at concentrations that do not affect high-MEMO1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C143 are based on established knowledge and logical inference. Claim C144 is supported by immunofluorescence microscopy data (Figure 4D). The progression from general principle to specific observation is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Perinuclear mitochondrial clustering is a manifestation of hypoxia, which may be caused by iron deficiency. Absence of clustering in high-MEMO1 cells combined with higher iron levels suggests MEMO1 specifically facilitates iron transport into mitochondria. MEMO1 overexpression may help maintain cancer cell metabolism by increasing mitochondrial iron under hypoxic tumor conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C146 are supported by citations (Agarwal and Ganesh, 2020; Lane et al., 2015; Renassia and Peyssonnaux, 2019). Claim C147 is a reasonable inference from the combined observations of mitochondrial morphology and iron levels. Claim C148 is speculative but represents a logical hypothesis based on the observed role of MEMO1 in mitochondrial iron homeostasis and the known hypoxic conditions in tumors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "TFR2 has been reported as part of a novel iron transport pathway to mitochondria in substantia nigra dopamine neurons and erythroid progenitor cells. The current data provide the first indication that MEMO1 and TFR2 may interact in iron transport to mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C150 are supported by appropriate citations (Mastroberardino et al., 2009; Khalil et al., 2017). Claim C151 appropriately characterizes the current findings as providing \"first indication\" while acknowledging that direct evidence for this pathway in breast cancer cells remains to be determined. The inference is reasonable based on genetic interactions and expression correlations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Several proteins involved in mitochondrial iron-containing cofactor biosynthesis show genetic interactions with MEMO1. SLC25A28 (mitoferrin-2), which mediates mitochondrial iron uptake, displays GOF-GI with MEMO1, with its knockdown selectively suppressing proliferation of MEMO1-overexpressing breast cancer cells. This may indicate that dysregulation of iron transport in high-MEMO1 cells increases ferroptosis susceptibility by diverting iron to damaging oxidative reactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 are supported by database screening and experimental validation (Figure 2E, Figure 2 supplement 2). Claim C155 is speculative but represents a reasonable hypothesis connecting the observed genetic interaction to ferroptosis susceptibility. The speculation is appropriately qualified with \"may indicate.\"",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "High-MEMO1 breast cancer cells are significantly more sensitive to ferroptosis inducer RSL3 and increased iron concentrations than MEMO1 knockouts. The MEMO1-PLOD1 genetic interaction is particularly notable, as PLOD1 is highly expressed in malignant tumors and contributes to epithelial-mesenchymal transition. PLOD1 is an iron-containing enzyme involved in collagen assembly and extracellular matrix remodeling, establishing a direct connection between iron, MEMO1, and cancer cell motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C160 are supported by experimental data (RSL3 and iron sensitivity) and citation (Wang et al., 2021). The connection between MEMO1, PLOD1, iron, and cell motility is well-supported by the genetic interaction data and the known functions of both proteins. This represents an important mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R43",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Genetic interactions between MEMO1 and iron-related proteins manifest in both MEMO1-dependent proliferation effects and expression level connections. Weak but highly significant correlations exist between MEMO1 and TFR1, TFR2, PLOD1 expression across breast cancer cell lines. TFR2 and SLC25A28 levels decrease in MEMO1 knockdown/knockout cells, while TFR1, TFR2, SLC25A28, and PLOD1 knockdowns decrease MEMO1 expression. These correlations indicate co-regulation of iron-related genes and MEMO1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C165 are supported by correlation analysis (Figure 3A, supplement 1A) and western blot data (Figure 3C-F). The reciprocal effects on expression levels provide strong evidence for co-regulation. The interpretation is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R44",
+    "claim_ids": [
+      "C166",
+      "C167"
+    ],
+    "result": "Comparison of MEMO1 genetic interactions and knockout effects between breast cancer and melanoma indicates that MEMO1 level variations have stronger effects in breast cancer. MEMO1 overexpression relative to normal tissue (rather than absolute levels) appears to be a hallmark of hypersensitivity to iron homeostasis disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C167 are supported by systematic comparison of effects across multiple experiments in both cell types. The interpretation that relative overexpression (not absolute levels) determines sensitivity is consistent with the observation that melanoma has high MEMO1 levels but no overexpression relative to normal tissue, yet shows weaker MEMO1-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R45",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "MEMO1 may serve as a biomarker for tumors sensitive to therapies targeting iron metabolism. MEMO1 genetic interactions may be targeted to suppress metastasis in breast cancer and other high-MEMO1 malignancies. MEMO1 structure and iron coordination suggest possible involvement in biosynthesis or processing of signaling molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C168-C170 are speculative statements about potential applications and functions. While they represent reasonable hypotheses based on the presented data, they are not directly supported by experimental evidence in this study. These are appropriate as discussion points and future directions but should not be considered established results.",
+    "result_type": "MINOR"
+  }
+]

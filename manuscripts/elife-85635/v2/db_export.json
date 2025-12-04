@@ -1,0 +1,1187 @@
+{
+  "submission": {
+    "id": "a7a08bc0-b455-4767-9b59-95128a3eac16",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T05:02:23.235851Z",
+    "updated_at": "2025-12-04T05:02:23.235851Z"
+  },
+  "content": [
+    {
+      "id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "submission_id": "a7a08bc0-b455-4767-9b59-95128a3eac16",
+      "content_type": "manuscript",
+      "content_text": "# Evaluating hippocampal replay without a ground truth\n\n## Authors\n\n- Masahiro Takigawa<sup>1</sup> ([ORCID: 0000-0002-0162-9017](https://orcid.org/0000-0002-0162-9017)) \u2020\n- Marta Huelin Gorriz<sup>1</sup> ([ORCID: 0000-0002-0281-0627](https://orcid.org/0000-0002-0281-0627))\n- Margot Tirole<sup>1</sup> ([ORCID: 0000-0003-0674-6690](https://orcid.org/0000-0003-0674-6690))\n- Daniel Bendor<sup>1</sup> ([ORCID: 0000-0001-6621-793X](https://orcid.org/0000-0001-6621-793X)) \u2020\n\n### Affiliations\n\n1. Institute of Behavioural Neuroscience (IBN), University College London (UCL) London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring rest and sleep, memory traces replay in the brain. The dialogue between brain regions during replay is thought to stabilize labile memory traces for long-term storage. However, because replay is an internally driven, spontaneous phenomenon, it does not have a ground truth - an external reference that can validate whether a memory has truly been replayed. Instead, replay detection is based on the similarity between the sequential neural activity comprising the replay event and the corresponding template of neural activity generated during active locomotion. If the statistical likelihood of observing such a match by chance is sufficiently low, the candidate replay event is inferred to be replaying that specific memory. However, without the ability to evaluate whether replay detection methods are successfully detecting true events and correctly rejecting non-events, the evaluation and comparison of different replay methods is challenging. To circumvent this problem, we present a new framework for evaluating replay, tested using hippocampal neural recordings from rats exploring two novel linear tracks. Using this two-track paradigm, our framework selects replay events based on their temporal fidelity (sequence-based detection), and evaluates the detection performance using each event\u2019s track discriminability, where sequenceless decoding across both tracks is used to quantify whether the track replaying is also the most likely track being reactivated.\n\n## Introduction\n\nThe hippocampus plays a central role in the encoding and consolidation of new memories (Eichenbaum, 2000; Frankland and Bontempi, 2005; Klinzing et al., 2019; Lewis and Bendor, 2019; Squire, 1992). During locomotion in rodents, hippocampal place cells are active in specific regions of the animal\u2019s environment (place fields), resulting in a sequential pattern of place cell firing when the animal runs along a spatial trajectory (O\u2019Keefe and Dostrovsky, 1971). During offline states, such as quiet restfulness and non-REM sleep, the sequential pattern of neural activity observed during behavior is spontaneously reactivated, a phenomenon referred to as \u2018hippocampal replay\u2019 (Lee and Wilson, 2002; Wilson and McNaughton, 1994). Offline replay of a neural memory trace is postulated to be a central mechanism by which memories recently encoded in the hippocampus can be consolidated by further stabilizing these memories in distributed cortico-hippocampal circuits for long-term storage (Buzs\u00e1ki, 1989; Klinzing et al., 2019).\n\nEvidence of replay was first discovered almost 30 years ago with the demonstration that during sleep, temporal correlations can be observed between the co-firing of place cell pairs with overlapping place fields (Wilson and McNaughton, 1994). Since then, methods for large-scale chronic extracellular neural recordings have become more advanced, allowing the simultaneous recording of tens and even hundreds of neurons (Ji and Wilson, 2007; Lee and Wilson, 2002; Pfeiffer and Foster, 2013; Widloski and Foster, 2022). In line with these developments, the analysis methods for replay have also become more sophisticated - shifting from the pairwise analysis of place cells to detecting sequential patterns within neuronal ensembles, using either spiking activity directly (Foster and Wilson, 2006) or decoding this activity to extrapolate the virtual spatial trajectories replaying (Davidson et al., 2009; Zhang et al., 1998). Commonly used replay scoring metrics for quantifying the fidelity of a replay sequence include: (1) a Spearman\u2019s rank-order correlation of spike times, which quantifies the ordinal relationship between the temporal order of place cell firing during behavior and a replay event\u2019s spike train (Foster and Wilson, 2006), but assumes that the place cell sequence is ordered accordingly to each place cell\u2019s peak firing rate location alone, (2) a weighted correlation of the decoded replay event, which quantifies a generalized linear correlation in time and position weighted by the decoded posterior probabilities without any assumption about the temporal rigidity of the replayed trajectory (Grosmark and Buzs\u00e1ki, 2016; Silva et al., 2015; Tirole et al., 2022), and (3) a linear fitting of the decoded replay event, which finds the linear path with the maximum summed decoded probability, assuming that the trajectory\u2019s slope is constant (Davidson et al., 2009; Gomperts et al., 2015; \u00d3lafsd\u00f3ttir et al., 2017). However, because replay is generated by an internal and spontaneous state of the brain, there is no external reference to indicate whether a given replay event is truly a reinstatement of a memory trace. Without a ground truth, the detection of replay events must be inferred based on whether the statistical likelihood of observing a match between the sequential structure of the replayed event and the original behavioral template is sufficiently low, by chance. To quantify this, each event\u2019s replay score is compared to a distribution of scores obtained using randomized data, permutated in either the spatial or temporal domain (i.e. a shuffled distribution), where statistically significant replay scores must be greater than a certain percentage of this shuffled distribution, typically 95% for an alpha level (\u03b1)<0.05.\n\nWhile recent replay studies have relied predominately on these three major methods of scoring replay (rank-order, weighted correlation, or linear fit), there are still many variations in how these scores can be calculated and how the subsequent statistical significance of these scores are measured. This can lead to issues in reproducibility and a greater difficulty in interpreting conflicting results between studies (Tingley and Peyrache, 2020). To overcome this problem, we need the ability to cross-check replay events (i.e. are the real events being correctly detected, and non-events being correctly rejected), in spite of not having a ground truth (Tingley and Peyrache, 2020; van der Meer et al., 2017; van der Meer et al., 2020). Hypothetically, any method of cross-checking should at the very least be able to pass a basic test of distinguishing between replay events detected from real data and spurious replay events detected from randomized data.\n\nGiven that we are detecting a replay sequence using a replay score (and its significance level \u03b1), we cannot use similar metrics for cross-checking due to a lack of independence. Here, we solve this problem by evaluating replay sequence events using a sequenceless decoding approach, which has been used in several recent replay studies when the rat\u2019s behavior involved running different trajectories, either on a T-maze with two arms or on two different linear tracks (Carey et al., 2019; Tirole et al., 2022). This framework quantifies how well the sequence-based replay detector discriminates between two track-specific sequences, with a greater difference in summed trajectory likelihoods indicating a higher discriminability.\n\nSeveral underlying assumptions are required for this framework: (1) for a given replay detection method, the proportion of spurious events (generated from randomized data) that are detected as significant events can be used to empirically estimate the proportion of non-replay events that are falsely labeled as significant replay events in real hippocampal data. However, this assumes that the null distribution used for creating randomized data is not used for detection, and that it does not underestimate the false-positive rates compared to the other null distribution(s) used for detection, (2) for neural data, pooled from multiple animals, with track-specific replay sequences but not spurious replay events, track discriminability should correlate with the sequenceness score of the track-specific replay, and (3) the empirically estimated false-positive rate can vary between methods, but can be adjusted by a scaling correction of the alpha level such that the performance of different replay methods can be evaluated and compared at an equivalent empirically estimated false-positive rate. Note that this method of scaling the alpha level is designed for method comparison only and should not be meant as a substitute for using appropriate shuffle methods to create a sufficient set of null distributions for detection.\n\nBased on replay data pooled from five rats running on two novel tracks, we validate this framework and demonstrate how measures of sequence fidelity combined with measures of sequenceless track discriminability provide the means to evaluate and compare the performance of different sequence-based replay detection strategies and methods.\n\n## Results\n\nExtracellular signals from the dorsal CA1 region of the hippocampus were recorded in rats running back and forth on two novel linear tracks (male Lister-hooded, n=5, 10 sessions, dataset from Tirole et al., 2022). In addition to running on two linear tracks (RUN), rats also had a rest/sleep session in a remote location both before (PRE) and afterward (POST) (Figure 1A). To demonstrate how this framework quantifies replay detection performance in terms of dataset-specific detection rate, false-positive rate, and track discriminability, we started by detecting replay events using the weighted correlation of the decoded event, a common sequence-based replay detection approach (Grosmark and Buzs\u00e1ki, 2016).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig1-v2.jpg)\n\n**Figure 1.:** (A) Experimental design. For each recording session, the animal ran back and forth on two novel linear tracks (RUN) with resting sessions before (PRE) and afterward (POST). Rat schematic in A was adapted with permission from SciDraw.io (Asiminas, 2020b; Asiminas, 2020a). (B\u2013E) Schematic of sequence-based and sequenceless decoding framework. (B) Each candidate replay event spike train was fed into a na\u00efve Bayesian decoder to calculate the decoded posterior probabilities across time and space. (C) Then, for the sequence-based analysis, the sequence score for each candidate event was determined from the weighted correlation of the posterior probability matrix. Significance was determined by comparing the replay score relative to a shuffled distribution (alpha level = 0.05). (D) For sequenceless decoding, a Bayesian decoding similar to sequence-based approach was used, with the exception that only place cells with stable place fields on both tracks were used as template to avoid any track discrimination bias. Then, the logarithmic ratio of the summed posterior probabilities within each replay event for each track is calculated (log odds). The event log odds were z-scored relative to a shuffled distribution where each place cell\u2019s track 1 and 2 place fields were randomly shuffled between tracks. (E) The difference between track 1 and track 2 replay events\u2019 log odds can be used as a metric to cross-check the performance of sequence-based replay detection. (F,G) The relationship between the mean log odds difference and mean replay score for the significant events detected at different alpha levels (0.2\u20130.001) using a weighted correlation replay scoring with two different shuffling procedures (place field circular shuffle and time bin permutation shuffle). The shaded region indicates the 95% bootstrap confidence interval for the mean log odds difference. The six dots with increasing color intensity for each distribution represent the data at an alpha level of 0.05, 0.02, 0.01, 0.005, 0.002, and 0.001. (F) Significant events detected during RUN using original candidate events (blue) and cell-id randomized spurious events (gray). (G) Significant events detected during POST using original candidate events (orange) and cell-id randomized spurious events (gray). (H) The relationship between the mean log odds difference and the proportion of significant events detected at different alpha levels (0.2\u20130.001) during RUN (blue) and POST (orange).The shaded region indicates the 95% bootstrap confidence interval for mean log odds difference. The six dots with increasing color intensity for each distribution represent the data at an alpha level of 0.05, 0.02, 0.01, 0.005, 0.002, and 0.001. (I) The mean proportion of significant cell-id randomized events (mean false-positive rate) at different alpha levels (0.2\u20130.001). The error bar indicates the 95% bootstrap confidence interval for mean false-positive rates. (J) The replay detection performance at the original alpha level = 0.05 and the FPR-matched alpha level when the mean false-positive rate was 5%. The shaded box indicates a 95% bootstrap confidence interval for both proportion of significant events detected and mean log odds difference. The box with a light outline represents the values at an alpha level = 0.05 and the box with black outline represents the values at the FPR-matched alpha level. (Number of candidate replay events: RUN n = 4643 and POST n = 15283). The 95% confidence interval for the proportion of significant events, mean log odds difference, mean false-positive rates, and the FPR-matched alpha level for replay events detected during RUN and POST are available in Figure 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Each panel is the posterior probabilities of a candidate event decoded against track 1 template (left) or track 2 template (right), with the y axis representing position and the x axis representing time (each pixel corresponds to 20 cm and 20 ms in space and time). The four panels are arranged such that the events on the bottom left have low track 1 reactivation bias and low sequence fidelity and top right have high track 1 reactivation bias and high sequence fidelity.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A,B) The proportion of significant events and mean log odds difference at (A) an alpha level of 0.05 and (B) an FPR-matched alpha level with a mean false-positive rate of 5%.The shaded box indicated 95% bootstrap confidence interval. Different colors are used to indicate different behavioral states: RUN (blue) and POST (orange). Different symbols are used to indicate different sessions. (Number of candidate replay events for sessions 1-10 : RUN n = 579, 559, 500, 388, 483, 400, 466, 459, 388 and 421 and POST n = 778, 1228, 969, 1770, 1578, 1986, 1793, 1687, 1278 and 1259, respectively)\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) A spike train circular shuffle (dark blue) in which each cell\u2019s spike train was independently circularly shifted in time by a random amount within each replay event. (B) A place field circular shuffle (light blue) in which each cell\u2019s ratemap was circularly shifted in space by a random amount. (C) A place bin circular shuffle (orange) in which the posterior probability distribution for each time bin was independently circularly shifted by a random amount. (D) A time bin permutation shuffle (red) in which the order of the time bin was permuted randomly.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** The detection during RUN and POST was based on single shuffle - (A) time bin permutation shuffle, (B) spike train circular shift shuffle, (C) place field circular shift shuffle, and (D) place bin circular shift shuffle. Methods for data randomization included - within experiment cell-id randomization (blue squares), and cross experiment cell-id randomization (orange squares), place field randomization (red squares) and spike train randomization (purple squares).\n\nCandidate replay events were population burst events (peak z-scored multi-unit activity [MUA]>3) that occurred during periods of inactivity, when the animal\u2019s velocity is less than 5 cm/s (see Methods). Across 10 sessions, we detected 8485, 4643, and 14,326 candidate events in PRE, RUN, and POST session, respectively. Detected replay events were required to also have a ripple power z-score greater than 3 and a significant replay score - i.e., higher than 95% of the scores obtained from each of two shuffle distributions, namely a place field circular shuffle and a time bin permutation shuffle (see Methods) (Grosmark and Buzs\u00e1ki, 2016). The replay score was obtained by performing a weighted correlation on the posterior probabilities (across place and time) obtained using a na\u00efve Bayesian decoder (Figure 1B and C). Because the dataset includes more than one track, the posterior probabilities across the two available tracks were normalized at each time bin such that their combined sum was one (Figure 1B; Bendor and Wilson, 2012; Carey et al., 2019).\n\n### Demonstrating a novel framework for cross-checking replay detection performance\n\nWe next developed a framework for evaluating and comparing replay detection methods, using a comparison between a replay event\u2019s sequence fidelity and its track discriminability. For each replay event detected using a sequence-based detection approach, we also quantified the log odds of reactivation between tracks, a sequenceless metric based on only place cells with place fields on both tracks, to avoid any potential bias in track discrimination (Figure 1D and E, see Methods) (Carey et al., 2019; Tirole et al., 2022). Sequenceless decoding involved three steps: (1) computing the summed posteriors (across time and space) within the replay event for each track, (2) calculating log of the ratio between the summed posteriors for each track, and (3) taking the z-score of this value, based on a distribution of log odds computed by a track ID shuffle (Carey et al., 2019; Tirole et al., 2022). For each place cell in the track ID shuffle, the corresponding track 1 and 2 place fields were randomly assigned to the correct track or swapped. As a result, a more positive z-scored log odds would indicate a greater likelihood of track 1 reactivation whereas a more negative value would indicate a greater likelihood of track 2 reactivation (Figure 1E and Figure 1\u2014figure supplement 1). To use sequenceless decoding to evaluate replay events, we computed the difference in mean log odds between track 1 and track 2 replay events across all sessions, which were originally detected using standard sequence-based replay detection methods. For this measurement, a more positive mean log odds difference would indicate a higher track discriminability in the replay content, and a higher confidence in replay quality. In contrast, a mean log odds difference of 0 would suggest that the quality of replay events is comparable to chance level track discriminability, and that the detected event population most likely consists of low fidelity events, indistinguishable from false-positives.\n\nAs mentioned earlier, any method of cross-checking should at least be able to pass a basic test of distinguishing between replay events detected from real data and spurious replay events detected from randomized data. We first compared the mean log-odds difference and mean weighted correlation score for replay events detected using our dataset and spurious replay events detected after the same dataset was randomized using a cell-id shuffle. Note that all sequence-based replay detection methods in this study did not use a cell-id shuffle, and as such this shuffling approach was sufficiently independent for generating random sequences as a negative control. When the alpha level, the significance level for detecting replay events, was varied from 0.2 to 0.001, we observed a close relationship between mean weighted correlation score and alpha level for both the original and randomized dataset (Figure 1F and G). However, there was a clear dissociation between the alpha level and mean log odds difference when using a randomized dataset, for both RUN and POST replay events. This demonstrated that while the weighted correlation score used for replay detection improved with alpha level even for the randomized dataset, the mean log odds difference (track discriminability) was able to still differentiate real from spurious replay events, acting independently from our selection criteria of replay events based on sequence fidelity.\n\nWhile an alpha level of 0.05 is usually the chosen threshold for whether a statistical test rejects the null hypothesis, we predicted that as the alpha level became stricter, the mean log odds difference should increase due to a lower rate of false-positive events, albeit at the cost of also fewer detected replay events overall. To study the trade-off between the track discriminability and detection rate of detected replay events, we first analyzed our POST and RUN replay events, comparing the number of significant events detected on both tracks to the mean log odds difference, as the alpha level was adjusted between 0.2 and 0.001 (Figure 1H). For both POST and RUN, the mean log odds difference increased (higher track discriminability) as the alpha level threshold decreased, which also corresponded to a decrease in the number of detected events. In addition, we observed RUN replay events to be comparatively more prevalent and yielding a higher track discriminability than POST replay events, in line with previous reports (Karlsson and Frank, 2009; Tirole et al., 2022). This might be partly due to the presence of immediate sensory or other external inputs helping to direct hippocampal place cell ensembles toward representing the local current environment during awake replay.\n\nTo determine if this decrease in the detection rate was also associated with a decrease in the false-positive rate, we empirically measured the mean fraction of spurious replay events detected across both tracks after the dataset was randomized (by permuting the cell-id of each place cell) as a proxy for false-positive rate. We observed that as the alpha level was gradually reduced, so was the estimated false-positive rate using cell-id randomization (Figure 1I). We also found that the estimated false-positive rate was higher than the alpha level: using an alpha level of 0.05, 7.5% (lower CI = 7.2% and higher CI = 7.8%) of RUN replay events were false-positives, while 8.7% (lower CI = 8.5% and higher CI = 8.9%) of POST replay events were false-positives. Using this information, we could quantify the proportion of significant events for both tracks using sequence-based detection, and the corresponding mean log odds difference at the original alpha level of 0.05 and an FPR (false-positive rate)-matched alpha level (RUN: \u03b1 = 0.032, POST: \u03b1 = 0.028) that adjusted the estimated mean false-positive rate to approximately 5% (Figure 1J). These results were generally consistent when applied to individual sessions (Figure 1\u2014figure supplement 2). Such adjustment of the alpha level based on a matching false-positive rate is an important part of this novel framework as it provides an opportunity to compare different replay detection strategies and methods in a more equitable manner.\n\nHowever, since most replay detection methods rely on comparing each event\u2019s sequence score to one or more null distributions, it is important to make sure that cell-id randomization was not underestimating the false-positive rate of replay detection in a way that was biased toward specific null distributions used for detection. Therefore, we examined the influence of data randomization on empirically estimated false-positive rates by comparing four sets of randomized data: (1) cell-id randomization, (2) spike train circular shifted dataset, (3) place field circular shifted dataset, and (4) a cross-experiment shuffled dataset (where place fields from a different recording session were randomly assigned to each place cell during Bayesian decoding). We next performed replay detection using a weighted correlation with four single shuffle methods including two pre-decoding shuffles (spike train circular shuffle, place field circular shuffle) and two post-decoding shuffles (place bin circular shuffle, time bin permutation shuffle) (Figure 1\u2014figure supplement 3). In most cases, both the cell-id randomized dataset and cross-experiment-shuffled dataset led to highest empirically estimated false-positive rates (Figure 1\u2014figure supplement 4). However, using a shuffling procedure during detection that randomized the data along the same dimension (time or place) as the randomized dataset led to a substantial underestimation of the empirically estimated false-positive rate (Figure 1\u2014figure supplement 4). Therefore, the cell-id randomization approach (and alternatively the cross-experiment shuffling approach) were the more optimal methods to create a randomized dataset for empirically estimating false-positive rates as the null distribution was not directly used in replay detection and was not underestimating the false-positive rates compared to alternative methods of data randomization.\n\nWe next used our framework to analyze and compare different strategies for replay detection. We did not attempt to precisely replicate any specific published replay detection method, as our goal was to see how general methodological differences can impact the track discriminability and quantity of detected events, and whether there is a preferred general approach for replay analysis. While it is important to note that there are many subtler, data-specific details to potentially consider (e.g. number of cells, smoothing of data, bin size, etc.) that can impact both the estimated false-positive rate and quality of detected replay events, our aim was to provide an overarching framework to help identify the more optimal replay detection approach.\n\n### Ripple power is an important criterion for replay event selection during POST\n\nDuring both quiet wakefulness and non-REM sleep, replay events preferentially occur during sharp-wave ripple events, transient high-frequency oscillations (150\u2013250 Hz) in the local field potential (LFP) recorded near the cell layer of CA1 (Buzs\u00e1ki, 2015; Foster and Wilson, 2006; Lee and Wilson, 2002). As such, a minimum ripple power has been used as a criterion for detecting candidate replay events prior to sequence detection, however the threshold has varied substantially across previous studies ranging from 2 SD (standard deviations) above baseline (Diba and Buzs\u00e1ki, 2007; Gillespie et al., 2021) to 7 SD above baseline (Csicsvari et al., 2007; Ji and Wilson, 2007). However, because many replay events consist of the spontaneous reactivation of a large proportion of place cells within a short time window (more than typically occurs during active behavior), a substantial increase in MUA during immobility also provides a reasonable criterion for detecting candidate replay events (Davidson et al., 2009). Because using only MUA as a threshold typically leads to more candidate replay events, and is believed to be more reliable for detecting both the start and end times of the replay event, many recent studies have opted to no longer use minimum ripple power as a criterion for candidate replay events (Gomperts et al., 2015; \u00d3lafsd\u00f3ttir et al., 2018; \u00d3lafsd\u00f3ttir et al., 2016; Silva et al., 2015).\n\nWe next applied our replay analysis framework to test how a stricter criterion for ripple power affects track discriminability. Candidate events were selected based on both elevated MUA (z-score>3) and ripple power limited to a specific range, measured in SD above baseline (i.e. a z-score of 0\u20133, 3\u20135, 5\u201310, or >10). For equivalent alpha levels, a stricter ripple threshold resulted in both a higher proportion of significant events and a higher mean log odds difference (Figure 2A and B). The increase in track discriminability observed with higher ripple power was not associated with a change in the number of active place cells or total place cell spiking activity (Figure 2\u2014figure supplement 1). However, one major difference between RUN and POST replay events was that even at the lowest ripple power threshold, RUN replay events had a non-zero mean log odds difference, which increased with stricter alpha levels. In contrast for POST replay events with a ripple power less than a z-score of 5, the mean log odds difference was near zero for all alpha levels tested. Furthermore, while the proportion of detected POST events with a ripple power less than a z-score of 5 was approximately 20% at an alpha level of 0.05, the proportion of detected POST events dropped to near chance levels of 10% when the alpha level was adjusted to match the mean false-positive rate of 5% (where 10% of spurious events were detected as significant events across both tracks) (Figure 2C and D and Figure 2\u2014figure supplement 2, see Methods). For ripple thresholds above 5, the log odds difference increased as the proportion of events and the alpha level decreased (Figure 2A and B). Similar results were observed if stricter criteria were used in detecting candidate replay events - either lowering the speed threshold criterion (<1 cm/s) or imposing an additional requirement for low theta power (z-score<0) (Figure 2\u2014figure supplement 3), suggesting that our finding was not confounded by the presence of other neuronal sequences during movement such as theta sequences. Next, we tested how shifting the ripple threshold (between 0 and 10 SD above baseline) could impact overall detection rates (Figure 2\u2014figure supplement 4), calculating the proportion of significant events out of all of the candidate events based on MUA criteria alone. Consistent with our main finding, while the proportion of significant events dropped as a result of ripple thresholding, only replay during POST but not RUN improved its log odds difference with a stricter ripple threshold. These results emphasize that a ripple power threshold is not necessary for RUN replay events in our dataset but may still be beneficial, as long as it does not reject too many good replay events with low ripple power. In other words, depending on the experimental design, it is possible that a stricter alpha level with no ripple threshold can be used to detect more replay events than using a less strict alpha level combined with a strict ripple power threshold. However, for POST replay events, a threshold at least in the range of a z-score of 3\u20135 is recommended based on our dataset, to reduce inclusion of potential false-positives within the pool of detected replay events. For the remainder of this study, we incorporated a strict, albeit less conservative ripple power threshold (z-score>3) for both RUN and POST, given the trade-off between an improved track discriminability and a decrease in the number of detected events. This also allowed a more direct comparison of awake and rest replay using identical criteria while still being consistent with previous replay studies (Karlsson and Frank, 2009; Pfeiffer and Foster, 2013; Todorova and Zugaro, 2019).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig2-v2.jpg)\n\n**Figure 2.:** (A,B) The proportion of significant events and mean log odds difference at different alpha levels (0.2\u20130.001) as ripple power increases (0\u20133, 3\u20135, 5\u201310, 10, and above). The shaded region indicates the 95% bootstrapped confidence interval for mean log odds difference. The six dots with increasing color intensity for each distribution represent the data at an alpha level of 0.05, 0.02, 0.01, 0.005, 0.002, and 0.001. (A) Replay events detected during RUN. (B) Replay events detected during POST. (C,D) The proportion of significant events and mean log odds differences at (C) an alpha level = 0.05 and (D) an FPR-matched alpha level with a mean false-positive rate of 5%. The shaded box indicates a 95% bootstrap confidence interval for both the proportion of significant events detected and mean log odds difference. The triangle symbol is used to represent replay events during RUN and the square symbol is used to represent replay events during POST. The dashed line represents the approximate chance level at mean false-positive rate of 5%. (Number of candidate replay events for ripple range 0-3, 3-5, 5-10 and 10 and above: RUN n = 782,1091,1982 and 788 and POST n = 1667, 2136, 4904 and 5619, respectively). The 95% confidence interval for the proportion of significant events, mean log odds difference, mean false-positive rates, and the FPR-matched alpha level for replay events with different ripple power range are available in Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The distribution of candidate replay events across different ripple powers. (B) The proportion of significant events (out of all candidate events) at p-value\u22640.05 at different ripple powers. (C) The mean number of active place cells during significant replay events. The shaded region indicated the standard deviation of the number of active place cells at each ripple power range. (D) The mean number of spikes fired by the active place cells during significant replay events. The shaded region indicated the standard deviation of the spike count at each ripple power range.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A,B) The mean false-positive rate calculated at different alpha levels (i.e. 0.05, 0.02, 0.01, 0.005, 0.002, 0.001) as ripple power increased (i.e. 0\u20133, 3\u20135, 5\u201310,10, and above). The error bar indicated the 95% bootstrap confidence interval. (A) Replay events detected during RUN. (B) Replay events detected during POST.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The proportion of significant events and mean log odds difference at different alpha levels (0.2\u20130.001) as ripple power increases (0\u20133, 3\u20135, 5\u201310, 10, and above). (A,B) A stricter replay event criterion for the animal\u2019s speed is used (<1 cm/s). (Number of candidate replay events for ripple range 0-3, 3-5, 5-10 and 10 and above: RUN n = 256, 435, 878 and 421 and POST n = 1214, 1736, 4203 and 4746, respectively) (C,D) An additional replay event criterion (z-score of theta power <0) is used. (Number of candidate replay events for ripple range 0-3, 3-5, 5-10 and 10 and above: RUN n = 389, 666, 1243 and 445 and POST n = 1061, 1287, 2347 and 2335, respectively). The shaded region indicates the 95% bootstrapped confidence interval for mean log odds difference. The six dots with increasing color intensity for each distribution represent the data at an alpha level of 0.05, 0.02, 0.01, 0.005, 0.002, and 0.001. (A,C) Replay events detected during RUN. (B,D) Replay events detected during POST.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A,B) The proportion of significant events (out of all candidate events based on multi-unit activity [MUA] criteria alone) and mean log odds difference at different alpha level (0.2\u20130.001) as ripple threshold increases (0, 3, 5, and 10). The shaded region indicates the 95% bootstrapped confidence interval for mean log odds difference. The six dots with increasing color intensity for each distribution represent the data at an alpha level of 0.05, 0.02, 0.01, 0.005, 0.002, and 0.001. (A) Replay events detected during RUN. (B) Replay events detected during POST. (C) The proportion of significant events (out of all candidate events based on MUA criteria alone) and mean log odds differences at the alpha level of 0.05. The shaded box indicates a 95% bootstrap confidence interval for both the proportion of significant events detected and mean log odds difference. The triangle symbol is used to represent replay events during RUN and the square symbol is used to represent replay events during POST. (Number of candidate replay events: RUN n = 4643 and POST n = 15283).\n\n### Replay detection is sensitive to the shuffle method used\n\nStatistical significance of each replay event is calculated by comparing the replay score to one or more Monte-Carlo shuffle distributions, with each shuffle designed to randomize a specific aspect of sequential place cell firing while attempting to keep other factors intact. Some shuffles are applied to randomize the place fields or the spike train of the original data prior to Bayesian decoding, while other shuffles are applied to the spatial or temporal dimension of the decoded posterior probabilities. Because place cells often fire bursts of spikes, this creates non-independent samples, which violate the assumption of having independent samples for a statistical test. Thus, it is important for a shuffle method to preserve such aspects of the data that are not independent, to avoid adding type 1 errors in the statistical analysis, leading to a false-positive rate that exceeds the alpha level. Given this, we next examined how different shuffling procedures impact replay detection performance. Using the weighted correlation scoring method, we examined four types of shuffling procedures to see if they differed in how they detected replay during RUN and POST epochs. These consisted of two pre-decoding shuffles (spike train circular shuffle, place field circular shuffle) and two post-decoding shuffles (place bin circular shuffle, time bin permutation shuffle) (Figure 3A\u2013D, Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig3-v2.jpg)\n\n**Figure 3.:** (A,B) The proportion of significant events and mean log odds difference at different alpha levels (0.2\u20130.001) when using four different shuffling methods: (1) spike train circular shuffle (dark blue), (2) place field circular shuffle (light blue), (3) place bin circular shuffle (orange), and (4) time bin permutation shuffle (red). The shaded region indicates the 95% bootstrapped confidence interval for mean log odds difference. The six dots with increasing color intensity for each distribution represent the data at an alpha level of 0.05, 0.02, 0.01, 0.005, 0.002, and 0.001. (A) Replay events detected during RUN. (B) Replay events detected during POST. (C,D) The proportion of significant events and mean log odds difference at (C) an alpha level = 0.05 and (D) an FPR-matched alpha level with a mean false-positive rate of 5%. The shaded box indicates the 95% bootstrap confidence interval for both the proportion of significant events detected and mean log odds difference. The triangle symbol is used to represent replay events during RUN and the square symbol is used to represent replay events during POST. The dashed line represents the approximate chance level at mean false-positive rate of 5%. (Number of candidate replay events: RUN n = 4643 and POST n = 15283). The 95% confidence interval for the proportion of significant events, mean log odds difference, mean false-positive rates, and the FPR-matched alpha level for replay events detected using different shuffling methods are available in Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) A spike train circular shuffle (dark blue) in which each cell\u2019s spike train was independently circularly shifted in time by a random amount within each replay event. (B) A place field circular shuffle (light blue) in which each cell\u2019s ratemap was circularly shifted in space by a random amount. (C) A place bin circular shuffle (orange) in which the posterior probability distribution for each time bin was independently circularly shifted by a random amount. (D) A time bin permutation shuffle (red) in which the order of the time bin was permuted randomly. (E,F) The mean false-positive rate calculated at different alpha levels (i.e. 0.05, 0.02, 0.01, 0.005, 0.002, 0.001) using four shuffles. The error bar indicated the 95% bootstrap confidence interval. (E) Replay events detected during RUN. (F) Replay events detected during POST.\n\nFor both RUN and POST, we observed that pre-decoding shuffles performed better than post-decoding shuffles, with the time bin permutation shuffle showing a significantly lower log odd difference compared to the other three shuffles (Figure 3A and B). Although the post-decoding time bin permutation shuffle seemingly led to the highest detection rate at an alpha level of 0.05 (Figure 3C), we observed that its mean false-positive rate at an alpha level of 0.05 was also substantially higher than other shuffling procedures. When we adjusted the alpha level to match a mean false-positive rate of 5%, the post-decoding time bin permutation shuffle had the poorest performance (the lowest proportion of significant events and the lowest mean log odds difference) across the four types of shuffles for both RUN and POST epochs (Figure 3D). For both the RUN and POST epochs, the remaining three shuffling procedures had a similar mean log odds difference when using an FPR-matched alpha level. However, while the proportion of significant events were similar across the three shuffling methods for POST, the two pre-decoding shuffling procedures had a higher proportion of significant events for RUN replay events. These results suggested that the shuffling procedures that directly manipulated the place field data or spike train data before decoding may be more efficacious than procedures that randomized the posterior probability distributions after decoding.\n\n### Replay detection can be improved by adding stricter detection criteria\n\nFollowing our comparison of different shuffling procedures, we next investigated how the inclusion of additional criteria in replay detection could further improve performance. Commonly this is accomplished by using multiple types of shuffling procedures, with the requirement that each shuffling method must independently pass the same alpha level for the replay event to be classified as statistically significant. An alternative approach to using multiple shuffling procedures is to impose a criteria of jump distance - the number of spatial bins the decoded estimated position is allowed to jump across neighboring time bins during a spatial trajectory, with candidate replay events rejected if they fail this criterion (Silva et al., 2015). One justification for using this metric is that a lower jump distance is correlated with a higher weighted correlation score, however not all events with higher scores are necessarily higher quality events.\n\nBased on this, we compared the performance of four replay detection methods varying in their shuffling procedures: (1) a single place field circular shuffle, (2) a place field circular shuffle with a jump distance threshold (40% of track) (Silva et al., 2015), (3) two shuffles (place field circular shuffle and time bin permutation shuffle) (Grosmark and Buzs\u00e1ki, 2016), and (4) three shuffles (place field circular shuffle, spike train circular shuffle, and place bin circular shuffle) (Tirole et al., 2022). For both RUN and POST epochs, increasing the number of shuffles increased the mean log odd difference and decreased the proportion of significant events and the estimated false-positive rate, for similar alpha levels (Figure 4A and B and Figure 4\u2014figure supplement 1A and B). Adding a jump distance threshold as an additional criterion also increased the mean log odd difference, although this was accompanied by a marked reduction in the proportion of significant replay events detected (Figure 4A and B). Before controlling for the estimated false-positive rates associated with each method, as expected, the stricter methods would detect fewer replay events than more permissive methods. For instance, at alpha level of 0.05, around 50% of candidate events would be detected as significant events when using single shuffle, as opposed to 40% when using two shuffles (Figure 4C). However, after adjusting the alpha level to a matching false-positive rate of 0.05, we found that stricter methods would detect more replay events. For example, at an FPR-matched alpha level, the proportion of significant events would reduce to 32% for a single shuffle (\u03b1 = 0.007) but 35% for the stricter two-shuffle method (\u03b1 = 0.032). This shows that controlling for the estimated false-positive rate can, almost paradoxically, result in stricter methods with additional shuffle types detecting more replay events. When using the original alpha level of 0.05, two methods (1 shuffle with a jump distance threshold and 3 shuffles) resulted in the highest mean log odd difference (Figure 4C). However, if an FPR-matched alpha level was used (with the estimated false-positive rate fixed at 0.05), only the use of 2 or more shuffles achieved both the highest proportion of events and largest mean log odds difference, for both RUN and POST epochs (Figure 4D). In contrast to this, a single shuffle with an added jump distance criterion performed the poorest (less events and lower track discriminability) out of the four methods when using the FPR-matched alpha level. This suggests that it is more beneficial to use a stricter alpha level than to impose a jump distance, an observation that extended to a range of different jump distances spanning 20\u201360% of the track (Figure 4\u2014figure supplement 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig4-v2.jpg)\n\n**Figure 4.:** (A,B) The proportion of significant events and mean log odds difference at different alpha levels (0.2\u20130.001) with four different detection criteria: (1) Only a post-decoding place bin circular shuffle, (2) a post-decoding place bin circular shuffle with jump distance threshold at normalized track length 0.4, (3) a pre-decoding place field circular shuffle and a post-decoding time bin permutation shuffle, (4) a pre-decoding place field circular shuffle, a pre-decoding spike train circular shuffle, and a post-decoding place bin circular shuffle. The shaded region indicates a 95% bootstrap confidence interval for mean log odds difference. The six dots with increasing color intensity for each distribution represent the data at an alpha level of 0.05, 0.02, 0.01, 0.005, 0.002, and 0.001. (A) Replay events detected during RUN. (B) Replay events detected during POST. (C,D) The proportion of significant events and mean log odds difference at (C) an alpha level = 0.05 and (D) an FPR-matched alpha level with a mean false-positive rate of 5%. The shaded box indicates a 95% bootstrap confidence interval for both the proportion of significant events detected and mean log odds difference. The triangle symbol represents replay events during RUN and the square symbol represents replay events during POST. The dashed line represents the approximate chance level at mean false-positive rate of 5%. (Number of candidate replay events: RUN n = 4643 and POST n = 15283). The 95% confidence interval for the proportion of significant events, mean log odds difference, mean false-positive rates, and the alpha level for replay events detected using different detection criteria are available in Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A,B) The mean false-positive rate calculated at different alpha levels (i.e. 0.05, 0.02, 0.01, 0.005, 0.002, 0.001) using four different detection criteria: (1) Only a place bin circular shuffle, (2) a place bin circular shuffle with jump distance threshold (40% of the track length), (3) a place field circular shuffle and a time bin permutation shuffle, (4) a place bin circular shuffle, a spike train circular shuffle, and a place bin circular shuffle. The error bar indicated 95% bootstrap confidence interval. (A) Replay events detected during RUN. (B) Replay events detected during POST.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A,B) The proportion of significant events and mean log odds difference at different alpha levels (0.2\u20130.001) using place bin circular shuffle plus jump distance threshold ranging from 0.2 to 1 (normalized track length). The shaded region indicated 95% bootstrap confidence interval. The six dots with increasing color intensity for each distribution represented the data at an alpha level of 0.05, 0.02, 0.01, 0.005, 0.002, and 0.001. (A) Replay events detected during RUN. (B) Replay events detected during POST. (C,D) The mean false-positive rate calculated at different alpha levels (i.e. 0.05, 0.02, 0.01, 0.005, 0.002, 0.001) using four different jump distance threshold. The error bar indicated 95% bootstrap confidence interval. For jump distance, due to the extremely low false-positive even at alpha level = 0.2, we quantified the replay detection performance up until alpha level = 1. (C) Replay events detected during RUN. (D) Replay events detected during POST. (E,F) The proportion of significant events and mean log odds difference at (E) an alpha level = 0.05 and (F) an FPR-matched alpha level with mean false-positive rate of 0.05. The shaded box indicated 95% bootstrap confidence interval. The triangle symbol was used to represent replay events during RUN and the square symbol was used to represent replay events during POST. The dashed line represented the approximate chance level at mean false-positive rate of 5%. (Number of candidate replay events: RUN n = 4643 and POST n = 15283). The 95% confidence interval for the proportion of significant events, mean log odds difference, mean false-positive rates, and the FPR-matched p-value across all methods are available in Figure 4\u2014figure supplement 2\u2014source data 1.\n\n### Rank-order-based replay detection is sensitive to spike selection\n\nWe next extended our framework to investigate other replay scoring methods - first focusing on the use of rank-order correlation. Instead of scoring the decoded trajectories, this approach directly quantifies the ordinal relationship within the spiking patterns (Foster and Wilson, 2006). In this method, the sequential order of place fields is ranked along the track, and compared with the corresponding rank of the spike times within the replay event. Rank-order correlation has been previously applied in several ways: (1) to all spikes within the replay event (Dragoi and Tonegawa, 2011), (2) to all proto-events, each representing a bursts of spikes (Foster and Wilson, 2006), or (3) only to one spike emitted by each place cell during a candidate replay event (e.g. median or first spike) (Tirole et al., 2022). However, as mentioned previously, place cells often fire bursts of spikes which in effect creates non-independent samples. Therefore, in theory, the inclusion of all spikes for the Spearman\u2019s rank-order based analysis would violate the statistical assumption of independent samples and lead to more type I errors (and a higher false-positive rate). We compared the rank-order-based analysis using either all spikes or median spike in our framework, and found that the estimated false-positive rate when using independent events (median spike time) remained around 5% (lower CI = 5.2% and upper CI = 5.8%), but increased to around 17% (lower CI = 16.3% and upper CI = 17.2%), when using all spikes (Figure 5 and Figure 5\u2014figure supplement 1). However, when using the FPR-matched alpha level (false-positive rate fixed at 5%), the trade-off between the proportion of significant events and their mean log odds difference was similar between the two methods (Figure 5D and Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig5-v2.jpg)\n\n**Figure 5.:** (A,B) The proportion of significant events and mean log odds difference at different alpha levels (0.2\u20130.001) when (1) all spikes or (2) only the median spike fired by each place cell was included for rank-order-based replay analysis. The shaded region indicated 95% bootstrap confidence interval for mean log odds difference. The six dots with increasing color intensity for each distribution represent the data at an alpha level of 0.05, 0.02, 0.01, 0.005, 0.002, and 0.001. (A) Replay events detected during RUN. (B) Replay events detected during POST. (C,D) The proportion of significant events and mean log odds difference at (C) an alpha level = 0.05 and (D) an FPR-matched alpha level with a mean false-positive rate of 5%. The shaded box indicates a 95% bootstrap confidence interval for both the proportion of significant events and mean log odds difference. The triangle symbol is used to represent replay events during RUN and the square symbol was is to represent replay events during POST. The dashed line represents the approximate chance level at mean false-positive rate of 5%. (Number of candidate replay events: RUN n = 4643 and POST n = 15283). The 95% confidence interval for the proportion of significant events, mean log odds difference, mean false-positive rates, and the FPR-matched alpha level for rank-order-based methods using all spikes or only median spike within the replay event are available in Figure 5\u2014source data 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A,B) The mean false-positive rate calculated at different alpha levels (i.e. 0.05, 0.02, 0.01, 0.005, 0.002, 0.001) when (1) all spikes or (2) only the median spike fired by each place cell was included for rank-order-based replay analysis. The error bar indicated the 95% bootstrap confidence interval. (A) Replay events detected during RUN. (B) Replay events detected during POST.\n\n### Replay events have a similar quality across different detection methods, when using an FPR-matched alpha level, but vary in their proportion\n\nFinally, we expanded our analysis to directly compare every replay scoring and shuffling method already implemented in this report, with the addition one more commonly used method - a linear fit-based score of decoded trajectories with either one and two types of shuffles (Davidson et al., 2009; Muessig et al., 2019; \u00d3lafsd\u00f3ttir et al., 2017). In the linear fit approach, the decoded posterior probability matrix, representing the probability of the virtual trajectory at each position on the track and at each time point, is compared to the best linear trajectory; the corresponding replay score is the sum of all posterior probabilities within a certain distance of this line, after maximizing this score across all possible lines that can pass through this matrix. While the linear fit approach is more stringent than the weighted correlation, it may also be less sensitive to non-linear replay trajectories (e.g. sigmoidal). When using a cell-id permuted randomized dataset to examine the chance-level detection for each method, we observed no bias in the mean log odds difference for every method, except for a linear fit approach with two shuffles (Figure 6\u2014figure supplement 1). To avoid any possible intrinsic bias in our calculation of the mean log odds, we calculated the adjusted mean log odds difference, by subtracting any potential bias in log odds difference measured using spurious replay events (Figure 6). Similar results were observed using an alternative within-track normalization approach in Bayesian decoding prior to replay detection (Figure 6\u2014figure supplement 2). Finally, to provide a more comprehensive comparison across methods, we also included replay events detected in the PRE epochs, a phenomenon referred to as de novo preplay where statistically significant sequences are detected prior to any knowledge or experience running on the track (Dragoi and Tonegawa, 2011).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig6-v2.jpg)\n\n**Figure 6.:** (A,B) The proportion of significant events and mean log odds difference at (A) an alpha level = 0.05 and (B) an FPR-matched alpha level with a mean false-positive rate of 5% using a range of different methods: (1) weighted correlation with place bin circular shuffle, (2) weighted correlation with place bin circular shuffle and jump distance threshold at normalized track length 0.4, (3) weighted correlation with place field circular shuffle and time bin permutation shuffle, (4) weighted correlation with place field circular shuffle, spike train circular shuffle, and time bin permutation, (5) Spearman\u2019s rank-order based correlation using only median spike fired by each place cell, (6) Spearman\u2019s rank-order based correlation using all spikes fired by each place cell, (7) linear fitting with place bin circular shuffle, (8) linear fitting with place field circular shuffle and time bin permutation shuffle. The shaded box indicated 95% bootstrap confidence interval. The circle symbol was used to represent replay events during PRE. The triangle symbol was used to represent replay events during RUN and the square symbol was used to represent replay events during POST. Inset plots are (A) the mean false-positive rate across shuffling methods and (B) the FPR-matched alpha level across shuffling methods. The dashed line in (B) represented the approximate chance level detection rate and track discriminability at mean false-positive rate of 5%. (Number of candidate replay events: PRE n = 8485, RUN n = 4643 and POST n = 15283). The 95% confidence interval for the proportion of significant events, mean shuffled-corrected log odds difference, mean false-positive rates, and the FPR-matched p-value across all methods are available in Figure 6\u2014source data 1.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A,B) The proportion of significant events and mean log odds difference at (A) an alpha level = 0.05 and (B) an FPR-matched alpha level with a mean false-positive rate of 5% using a range of different methods: (1) weighted correlation with place bin circular shuffle, (2) weighted correlation with place bin circular shuffle and jump distance threshold at normalized track length 0.4, (3) weighted correlation with place field circular shuffle and time bin permutation shuffle, (4) weighted correlation with place field circular shuffle, spike train circular shuffle, and time bin permutation, (5) Spearman\u2019s rank-order-based correlation using only median spike fired by each place cell, (6) Spearman\u2019s rank-order-based correlation using all spikes fired by each place cell, (7) linear fitting with place bin circular shuffle, (8) linear fitting with place field circular shuffle and time bin permutation shuffle. The shaded box indicated 95% bootstrap confidence interval. The circle symbol was used to represent replay events during PRE. The triangle symbol was used to represent replay events during RUN and the square symbol was used to represent replay events during POST. (Number of candidate replay events: PRE n = 8485, RUN n = 4643 and POST n = 15283).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A,B) The proportion of significant events and mean log odds difference at different alpha levels (0.2\u20130.001) when using weighted correlation and linear fitting where the posterior probabilities were normalized within track or across both tracks. The shaded region indicated 95% bootstrap confidence interval. The six dots with increasing color intensity for each distribution represented the data at an alpha level of 0.05, 0.02, 0.01, 0.005, 0.002, and 0.001. (A) Replay events detected during RUN. (B) Replay events detected during POST. (Number of candidate replay events: PRE n = 8485, RUN n = 4643 and POST n = 15283).\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A\u2013J) The proportion of significant events and mean log odds difference at different alpha levels (0.2\u20130.001) when using weighted correlation with different detection criteria. (A\u2013C) Only post-decoding place bin circular shuffle. (D\u2013F) Post-decoding place bin circular shuffle with jump distance threshold at normalized track length 0.4. (G\u2013I) Pre-decoding place field circular shuffle and post-decoding time bin permutation shuffle. (J\u2013L) Pre-decoding place field circular shuffle, pre-decoding spike train circular shuffle, and post-decoding time bin permutation. The shaded region indicated 95% bootstrap confidence interval. The six dots with increasing color intensity for each distribution represented the data at an alpha level of 0.05, 0.02, 0.01, 0.005, 0.002, and 0.001. (A,D,G,J) Replay events detected during PRE. (B,E,H,L) Replay events detected during RUN. (C,F,I,L) Replay events detected during POST. (Number of candidate replay events: PRE n = 8485, RUN n = 4643 and POST n = 15283)\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig6-figsupp4-v2.jpg)\n\n**Figure 6\u2014figure supplement 4.:** (A\u2013F) The proportion of significant events and mean log odds difference at different alpha levels (0.2\u20130.001) when (A\u2013C) all spikes or (D\u2013F) only the median spike fired by each place cell was included for rank-order-based replay analysis. The shaded region indicated 95% bootstrap confidence interval. The six dots with increasing color intensity for each distribution represented the data at an alpha level of 0.05, 0.02, 0.01, 0.005, 0.002, and 0.001. (A,D) Replay events detected during PRE. (B,E) Replay events detected during RUN. (C,F) Replay events detected during POST. (Number of candidate replay events: PRE n = 8485, RUN n = 4643 and POST n = 15283).\n\n![Figure 6\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig6-figsupp5-v2.jpg)\n\n**Figure 6\u2014figure supplement 5.:** (A\u2013F) The proportion of significant events and mean log odds difference at different alpha levels (0.2\u20130.001) when using linear fitting approach with (A\u2013C) only post-decoding place bin circular shuffle or (D\u2013F) both pre-decoding place field circular shuffle and post-decoding time bin permutation shuffle. The shaded region indicated 95% bootstrap confidence interval. The six dots with increasing color intensity for each distribution represented the data at an alpha level of 0.05, 0.02, 0.01, 0.005, 0.002, and 0.001. (A,D) Replay events detected during PRE. (B,E) Replay events detected during RUN. (C,F) Replay events detected during POST. (Number of candidate replay events: PRE n = 8485, RUN n = 4643 and POST n = 15283).\n\n![Figure 6\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/85635/elife-85635-fig6-figsupp6-v2.jpg)\n\n**Figure 6\u2014figure supplement 6.:** Multi-track events are replay events that pass all shuffling tests and/or additional replay criteria used for both tracks. At an alpha level = 0.05, shuffling methods tested include: (1) weighted correlation with place bin circular shuffle, (2) weighted correlation with place bin circular shuffle and jump distance threshold at normalized track length 0.4, (3) weighted correlation with place field circular shuffle and time bin permutation shuffle, (4) weighted correlation with place field circular shuffle, spike train circular shuffle, and time bin permutation, (5) Spearman\u2019s rank-order-based correlation using only median spike fired by each place cell, (6) Spearman\u2019s rank-order-based correlation using all spikes fired by each place cell, (7) linear fitting with place bin circular shuffle, (8) linear fitting with place field circular shuffle and time bin permutation shuffle. The shaded box indicated 95% bootstrap confidence interval. The circle symbol was used to represent replay events during PRE. The triangle symbol was used to represent replay events during RUN and the square symbol was used to represent replay events during POST. (Number of candidate replay events: PRE n = 8485, RUN n = 4643 and POST n = 15283)\n\nUsing our framework to compare replay detection methodologies, which incorporated (1) the corrected mean log odds difference, (2) the empirically estimated mean false-positive rate based on replay detection using a randomized dataset (cell-id permutation), and (3) the proportion of significant events on both tracks, we observed four main findings regarding replay during three different behavioral epochs (Figure 6 and Figure 6\u2014figure supplements 3\u20135). First, the proportion of significant events varied substantially across methods when using the original alpha level of 0.05, however this was consistent with the estimated false-positive rate, which ranged from 2% to 18%. Moreover, the proportion of mean false-positive rates estimated were also highly correlated with the proportion of events being classified as significant for both tracks (dual-track events), suggesting that most dual-track events we observed were likely due to false-positive detection on one of the two tracks rather than multiple track representations in a single replay event (Figure 6\u2014figure supplement 6). Second, using the FPR-matched alpha level, all methods had a proportion of significant preplay events close to 10%, which was similar to the proportion of false-positive events expected by chance for two tracks. Furthermore, the shuffle-subtracted mean log odds difference for preplay was approximately zero for all methods, suggesting that regardless of the method used, if used correctly, preplay is indistinguishable from randomly generated spurious replay events. Third, using the FPR-matched alpha level for POST replay events, all methods produced a corrected mean log odds difference near 1, however linear and weighted correlation methods with 2 or more shuffles detected a higher proportion of significant events. Finally, using the FPR-matched alpha level for RUN replay events, the majority of methods produced a corrected mean log odds difference near 2. Despite using the FPR-matched alpha level to achieve the same mean false-positive rate, we observed that using two or more shuffling procedures would lead to significant improvement in the overall replay detection performance for both weighted correlation and linear fitting method. Replay detection methods will continue to evolve and be refined in the future; the quantification of any improvements is now possible with the framework outlined here.\n\n## Discussion\n\nPrevious studies describing the phenomenon of replay have used a wide variety of methods and criteria for replay detection. The most common methods in the last decade have been a rank-order correlation (applied to spike trains), and the scoring of decoded trajectories (using a weighted correlation or linear fit) (Foster, 2017; Tingley and Peyrache, 2020; van der Meer et al., 2020). However, even within these two classes of methods, there is substantial variation in the parameters and strategies for statistical testing, including the type and number of shuffling procedures, and the use of ripple power or jump distance as a threshold. The diversity in replay methods prevents an unbiased comparison between different replay findings. In particular, while replay detection statistical tests are commonly used with an alpha level of 0.05, this value does not necessarily match the actual false-positive detection rate for all methods. This issue is not just limited to when the entire spike train is used to calculate the rank-order correlation (as discussed above), but also applies to all methods using decoded neural activity. The use of either spatially smoothed place fields or spike bursts spanning multiple time bins similarly violates the assumption of independent samples. While the shuffling of neural patterns comprising the replayed trajectory may compensate for non-independent samples, its effectiveness varies substantially, especially given the wide range of parameters used across the published replay literature. Furthermore, while imposing stricter criteria for replay detection would theoretically improve the average fidelity of the events and reduce the false-positive rate, it comes with the caveat of potentially increasing the rejection of true replay events.\n\nQuantifying and comparing replay detection performance has been an ongoing challenge due to the lack of a ground truth. Taking advantage of data collected from rats running on two linear tracks, here we introduce a novel framework for comparing different sequence-based replay detection methods - quantifying how well a given replay detection method correctly discriminates track-specific replay events. In particular, this framework quantifies the proportion of significant replay events (quantity) and the mean log odds difference (track discriminability) of a collection of track-specific replay events detected as well as adjusting the alpha level used for replay detection according to an estimated false-positive rate of 5% based on cell-id randomized dataset. Using this approach, we make six key observations: (1) For candidate events selected using an MUA threshold, the additional step of including a ripple power threshold is not necessary for RUN replay but is recommended for POST replay events. For our dataset, the POST replay events with ripple power below a z-score of 3\u20135 were indistinguishable from spurious events. While the exact ripple z-score threshold to implement may differ depending on the experimental condition (e.g. electrode placement, behavioral paradigm, noise level, etc.) and experimental aim, our findings highlight the benefit of using a ripple power threshold for detecting replay during POST. (2) More shuffles, with a preference for pre-decoding shuffles, lead to better replay detection, even after the alpha level is adjusted to match an estimated false-positive rate. (3) Without adjusting the alpha level, there is a very wide distribution of both the track discriminability and the proportion of significant events detected across methods. False-positive rates also vary substantially, and one should not assume that replay exists simply because the proportion of significant events detected is greater than the alpha level (typically 5%) used in detection. (4) After adjusting the alpha level to match an estimated false-positive rate, there is greater similarity observed between methods, however using either a weighted correlation or a linear fit replay scoring with only one shuffling procedure still results in the worst overall performance for our dataset. (5) Our metric for replay track discriminability yields a similar result across many methods once the alpha level is adjusted to fix the estimated false-positive rate at 5%, however the proportion of replay events detected remains more variable. (6) Regardless of the method used after the alpha level is adjusted, preplay events are at chance level for both track discriminability (mean log odds difference of 0) and proportion detected (10% of events across two tracks). Previous studies have used an alpha level of 0.05, which in our hands substantially changes the proportion of replay events detected across methods - overly strict methods such as weighted correlation with a jump distance criterion would have a proportion less than 5%, while more lenient methods such as rank-order correlation with all spikes included can have a proportion closer to 30%. Therefore, without actually measuring a false-positive rate, one cannot assume that a higher proportion of events relative to the alpha level is evidence, on its own, for the existence of replay. In all methods tested, we do not see any evidence of preplay events behaving differently from spurious replay events generated using randomized data. In contrast to this, both POST and RUN replay events have a proportion of significant events substantially above the chance level for detection, for any method used with an FPR-matched alpha level.\n\nHere, we have focused on a number of common replay scoring methods and criteria, however there are many variations and nuanced differences between published methods, that were beyond the scope of this study to test. For instance, we did not examine the impact of spatial smoothing (place fields) and temporal smoothing (posterior probability matrix and/or spike train) on replay detection. For this study, we avoided any Gaussian smoothing of the posterior probability matrix in our analysis but opted to use relatively large bin sizes for Bayesian decoding (10 cm by 20 ms). It is possible that with smaller bin sizes, replay detection could improve, or yield a different outcome when comparing methodologies. However, as the size of the decoding bin decreases, noise in the decoded trajectory will likely increase or alternatively must be removed using another smoothing method, which in turn may change the false-positive rate of detection. Replay experiments can often vary along many other parameters (e.g. number of neurons, distribution of place fields, length of track, etc.), and it is possible that these differences could also affect the false-positive rate. As such, it is critical for replay studies to independently verify and report an estimated false-positive rate even for the experiments involving only one spatial context.\n\nOne caveat associated with this framework is that use of any kind of randomized dataset may potentially underestimate the false-positive rate of replay detection in a way that is biased toward specific shuffling distributions (i.e. place-based or time-based shuffling). In case of a cell-id randomization, each cell\u2019s firing statistics of replay events is preserved, but the relationship between each cell\u2019s spike train and its place fields is randomly swapped, which may be potentially biased more toward place-based shuffling. Generally, we observed that the cell-id randomized dataset did not underestimate the empirically estimated false-positive rates compared to place field shifted dataset and spike train shifted dataset and performed similarly to the cross-experiment shuffled dataset (Figure 1\u2014figure supplement 4). Even for the case of place field shuffling where the spike train shifted dataset resulted in a higher false-positive rates when compared to the cell-id randomized dataset, the difference between cell-id randomized FPR and spike train randomized FPR is much smaller than that between the place field randomized and spike train randomized FPR at an alpha level of 0.05. This suggests that while cell-id randomization is relatively more sensitive to place-based shuffling compared to time-based shuffling, such bias was relatively minor. Taken together, our results suggest that, while imperfect, cell-id randomization (or alternatively a randomization using cross-experiment shuffled place fields) is the relatively more conservative and universally applicable null distribution for empirically estimating false-positive rates given the detection methods used here. Nevertheless, our finding about the performance of different replay detection methods should be interpreted with care. For example, while alpha level adjustment-based empirically estimated FPR allowed us to compare different detection methods, the comparison was made between distributions of candidate replay events rather than based on each individual event. Therefore, two methods with similar performance in terms of track discriminability and proportion of significant events do not necessarily detect the same sets of events as significant. It is also important to note that alpha-level adjustment implemented in this framework is not meant to be a way to optimize detection because it does not directly address method-specific issues and remove true false-positives caused by effects such as edge effects and neuronal spiking statistics.\n\nThe use of two linear tracks was critical for our current framework to calculate track discriminability. While this would limit the generality of our approach as most replay studies involved only one context rather than multiple contexts, with modification it is possible that this framework might be adapted to single-track data. For example, track discriminability could theoretically be calculated using a cell-id permutation to create a virtual second track or by comparing the discriminability across different portions of the track (depending on the experimental design), although exploring these options were beyond the scope of our current study.\n\nOne key consideration is that due to algorithmic constraints, some sequence detection methods may be biased to detecting certain types of replay trajectories. For instance, a linear fitting method may be more prone to detect linear replay trajectory compared to a sigmoidal-shaped or jumpy replay trajectory. On the other hand, a rank-order correlation analysis of spike trains is more relaxed in terms of the rigidity of the temporal structure, and therefore is more likely to include non-linear events with gaps. As such, there may be other factors to consider beyond track discriminability and the proportion of detected events when choosing a replay detection method. However, it is interesting to note that despite substantial differences in these algorithms used for replay detection, all methods had a similar track discriminability after adjusting the alpha level to a fixed estimated false-positive rate of 5%.\n\nLast but not least, in addition to comparing the performance of different replay quantification strategies, this framework can also be applied to compare replay events detected across different behavioral states or experimental conditions. Previously, differences in replay across conditions have been measured using the rate or number of replay events (Gillespie et al., 2021; Huelin Gorriz et al., 2023; \u00d3lafsd\u00f3ttir et al., 2015; Xu et al., 2019), or decoding track bias (Carey et al., 2019; Tirole et al., 2022). However, combining these two approaches creates a more comprehensive metric for understanding the difference in replay across different conditions.\n\n## Methods\n\nAll the behavioral and electrophysiological data used in this study were previously described in detail in Tirole et al., 2022.\n\n### Behavioral paradigm and electrophysiological recording\n\nFive male Lister-hooded rats (350\u2013450 g) were implanted with 24 independently movable tetrodes, using a custom-made microdrive. In three rats, the microdrive was split into two 12 tetrodes groups, aimed at the right and left dorsal CA1 regions of the hippocampus respectively (AP: \u20133.48 mm; ML: \u00b12.4 mm from Bregma). In the remaining two rats, right dorsal CA1 was targeted with 16 tetrodes (AP: 3.72 mm, ML: 2.5 mm from Bregma), with the remaining 8 tetrodes targeting visual cortex.\n\nBefore the experimental sessions, each animal was trained for approximately 2 days (30 min sessions) to run back and forth on a linear track. The animal was motivated to run by receiving a reward (chocolate-flavored soy milk) at each end of the track. The training took place in a different room and the track configuration used for training was distinct from the experimental linear tracks.\n\nEach recording session started with a 1 hr rest (PRE) epoch in which the rats were placed in a previously habituated rest pot at a remote location. The rest pot was made of circular enclosure (20 cm diameter) surrounded by a 50 cm tall black plastic wall, which prevented the rats from viewing rest of the environment. Following the PRE epoch, the rats went through one of the two protocols described below, for which both were followed by a POST rest epoch in the rest pot:\n\n### Place cell analysis\n\nPlace cells were required to have a minimum peak firing rate greater than 1 Hz, based on the unsmoothed ratemap. Spike trains used to compute the place field were speed filtered (4\u201350 cm/s).\n\n### Bayesian decoding of spatial location\n\nA na\u00efve Bayesian decoder was used to estimate the brain\u2019s estimation of animal\u2019s position during behavior and virtual position during a replay event, using non-overlapping 20 ms time bins, and 10 cm position bins.\n\n$$\nP(x|n)=CP(x)(\\prodi=1Nf_{i}(x)^{n_{i}})exp(\u2212\\tau\\sumi=1Nf_{i}(x))\n$$\n\nwhere P(x|n) is the probability of the animal being at a specific position given the observed spiking activity, C is a normalization constant, x is the animal\u2019s position, fi(x) is the firing rate of the ith place field at a given location x, and n is the number of spikes in the time window \u03c4. The normalization constant was defined as the summed posterior probabilities across both tracks.\n\n### Detection of candidate replay event\n\nCandidate replay events were first selected based on MUA, which was smoothed with a Gaussian kernel (sigma = 5 ms) and binned into 1 ms steps. Only events with MUA bursts with a maximum duration of 300 ms and z-scored activity over 3 were selected. Furthermore, ripple power was used as an additional criterion for candidate event selection. Ripple-band (125\u2013300 Hz) LFP signal was smoothed with a 0.1 s moving average filter. Unless it was mentioned otherwise, the candidate events were discarded if the peak ripple power was less than z-score of 3. Moreover, the candidate events were further thresholded such that only events where the animal\u2019s running speed was less than 5 cm/s, at least five active place cells and event duration over 100 ms and below 750 ms, were included for subsequent analysis. To maximize detection of replay events and avoid discarding minority events due to noisy probability decoding at the beginning or the end of the event, candidate replay events were split into two segments where the midpoint was determined based on the minimum MUA activity in the middle third of the candidate event. Both segments were decoded and analyzed for statistical significance independently with the alpha level adjusted to half of the alpha level used for \u2018full\u2019 event (e.g. \u03b1 = 0.05 \u2192 \u03b1 = 0.025). It should be noted that same criteria for candidate event inclusion such as minimum event duration and active place cell number still applied to these \u2018half\u2019 events. For this study, RUN replay was also defined as awake replay events when the animals were physically on the linear tracks (with moving speed less than 5 cm/s). PRE and POST replay was defined as replay events that took place during rest and sleep periods (not differentiated from each other) within the rest pot before and after experiencing both novel tracks, respectively.\n\n### Sequence-based replay scoring\n\nFor this study, two different sequence quantification methods were used to quantify the sequenceness of the decoded posterior probability matrix for each event.\n\n#### Weighted correlation\n\nWeighted correlation method calculated the correlation coefficient between the change in decoded posterior probability bins across position and time by weighing each estimated position by its decoded posterior probability:\n\nWeighted mean:\n\n$$\nm(x;prob)=\\frac{\\sumi=1M\\sumj=1Nprob_{ij}x_{i}}{\\sumi=1M\\sumj=1Nprob_{ij}}\n$$\n\nWeighted covariance:\n\n$$\ncov(x,t;prob)=\\frac{\\sumi=1M\\sumj=1Nprob_{ij}(x_{i}\u2212m(x;prob))(t_{j}\u2212m(y;prob))}{\\sumi=1M\\sumj=1Nprob_{ij}}\n$$\n\nWeighted correlation:\n\n$$\ncorr(x,t;prob)=\\frac{cov(x,t;prob)}{\\sqrt{cov(x,x;prob)cov(t,t;prob)}}\n$$\n\nwhere $x_{i}$ is the ith position bin, $t_{j}$ is the jth time bin, and $prob_{ij}$ is the probability at the position bin i and time bin j.\n\n#### Linear fitting\n\nThe linear fitting method finds the line of best fit that describes the decoded linear trajectory for each candidate event. In practice, this method would calculate all the possible linear kernel at different slopes (from 100 to 5000 cm/s) and intercept and then sum all the probabilities within 10 cm below or above each fitted line as a goodness of fit score:\n\n$$\nR(slope,intercept)=\\frac{1}{n}\\sumt=0n\u22121prob(|pos(t)\u2212(slope\\timest\\timesT+intercept)|<d)\n$$\n\nwhere t is each time bin, prob is the decoded posterior, pos is the position bin, T is the time bin, d the maximum distance from the line of fit.\n\nThe combination of slope and intercept that maximizes the posterior decoded probabilities along the potential linear trajectory would be considered as the line of best fit.\n\nA similar sequence-based analysis was applied to the randomized dataset (obtained by a cell-id permutation where the cell identity for each spike train in a candidate replay event was randomized before decoding). This shuffle was designed to preserve the firing statistics across place cells while randomizing the order of place fields along the track, in turn disrupting any relationship with the spike sequences produced during candidate events. For this study, to enhance the accuracy of our false-positive rate estimation, given that false-positive events were generally less frequent than replay events detected during POST and RUN in our original dataset, we generated three cell-id randomized candidate events for each real candidate event (with a new set of random seeds for every event) such that the total number of cell-id randomized events would equal three times the total number of real candidate events.\n\nFollowing obtaining a sequence score (either a weighted correlation or linear fit-based score) for each event, we then calculated the p-value by comparing the event sequence score relative to the four shuffled distributions, each designed to randomize certain aspects of the sequential place cell firing.\n\n### Pre-decoding shuffling procedures\n\nShuffle 1: Spike train circular shuffle, in which the spike count vectors for each cell were independently circularly shifted in time by a random amount within each replay event, prior to decoding. This shuffle was designed to degrade the temporal order of the neuronal spiking with minimal disruption of each neuron\u2019s spiking statistics and spatial template.\n\nShuffle 2: Place field circular shuffle, in which each ratemap was circularly shifted in space by a random amount of position bins prior to decoding. This shuffle was designed to randomize the preferred firing locations while preserving the temporal structure of the spiking patterns.\n\n### Post-decoding shuffling procedures\n\nShuffle 3: Place bin circular shuffle, in which posterior probability distribution for each time bin (column) was independently circularly shifted by a random amount. This shuffle was designed to shift the decoded position at each time bin while preserving each neuron\u2019s spiking properties.\n\nShuffle 4: Time bin permutation shuffle, in which the order of the time bins within each event was permutated randomly. This shuffle was designed to disrupt within-event temporal structure without interfering each neuron\u2019s place field template.\n\nEach type of shuffle was performed 1000 times for each event to obtain a shuffle distribution of sequence scores.\n\n### Rank-order correlation\n\nIn addition to a probabilistic decoding-based approach, a rank-order correlation approach (Spearman\u2019s correlation coefficient) was also performed directly to the spike train data during candidate replay events using all spikes (method 1) or only the median spike time (method 2) produced by each place cell:\n\n$$\n\u03c1(placecellorder,spiketime)=1\u2212\\frac{6\\sumd^{2}}{n(n^{2}\u22121)}\n$$\n\nwhere d is the difference between the ranks of order of place cells that are active during a given event and the observed spike time, n is the number of spikes included for analysis (i.e. all spikes or only median spike produced by each place cell), and $\u03c1$ is the Spearman\u2019s rank correlation coefficient.\n\nThe p-value for Spearman\u2019s $\u03c1$ was computed by comparing the original $\u03c1$ relative to the shuffled distribution where the order of spike was randomly permuted.\n\n### Quantification of significant event proportion and false-positive rate\n\nWhile standard replay analysis used p<0.05 (i.e. score greater than 95% of the shuffled distribution) as the cut-off point for statistical significance, we calculated the proportion of significant events using alpha level ranging from 0.2 to 0.001. When more than one shuffle type was used together for detection, the sequence score was required to be below the alpha level for each shuffle type used, in order for the event to be considered significant. In cases when more than one shuffle was used to calculate the p-value, the highest p-value would be used to represent the sequenceness of each significant replay event. In cases where the candidate replay event was detected as statistically significant for both tracks (referred to as \u2018multi-track event\u2019), the candidate event was assigned as both track 1 and track 2 events. However, each multi-track event would be only counted once when calculating the proportion of significant events to avoid double counting. Assuming false-positive rate at 5%, we would expect approximately 10% detection rate (significant events labeled as either track 1 or track 2) with the caveat that this value can potentially decrease in the case where a high number of multi-track events were detected.\n\n$$\nProportionofsignificantevent=\\frac{(n(significantTrack1event)+n(significantTrack2event)\u2212n(multitrackevent))}{n(allcanditateevents)}\n$$\n\nFor cell-id randomized replay events, similar analysis was performed to calculate mean false-positive rate across both tracks.\n\nThe mean estimated false-positive rates across both tracks (later used for alpha level adjustment) were calculated by adding the number of false-positive events on both tracks divided by 2 (i.e. number of tracks), which was then divided by the total number of candidate events:\n\n$$\nmeanfalsepositiverate=\\frac{n(falsepositiveTrack1event)+n(falsepositiveTrack2event)}{2\\timesn(allcanditateevents)}\n$$\n\n### Sequenceless decoding and quantification of track discriminability\n\nIn order to cross-check the quality of replay events detected based on sequence-based approach, we used an independent metric that measure reactivation bias based on sequenceless decoding (Carey et al., 2019; Tirole et al., 2022). Only cells with stable place fields in the first and second half of the behavioral episode on both tracks (peak in-field firing rate >1 Hz) were included in our sequenceless decoding analysis. Prior to Bayesian decoding, ratemaps for track 1 and track 2 were concatenated as a single matrix $[nCell\\times(nPos(Track1)+nPos(Track2))]$, where nPos is the number of position bin on each track (i.e. 20\u00d710 cm2 position bins for both tracks). For a given replay event, the decoded posterior probabilities for each time bin were normalized across all position bins from both tracks to sum to 1. We quantified the logarithmic ratio between the summed posterior probabilities of both tracks, and then z-scored this ratio relative to a shuffled distribution computed by Track ID shuffle.\n\n$$\nlogodds=log\\frac{\\sumi=1M\\sumj=1Nprob_{ij}(Track1)}{\\sumprob(Track2)}\n$$\n\n\n\n$$\nm(x;prob)=\\frac{\\sumi=1M\\sumj=1Nprob_{ij}(Track1)}{\\sumi=1M\\sumj=1Nprob_{ij}}\n$$\n\nFor each place cell in the track ID shuffle, its place field templates for track 1 and track 2 were randomly assigned (i.e. each cell\u2019s ratemap was either swapped or not swapped). Then, we quantify the track discriminability in terms of the difference in mean log odds between track 1 and track 2 replay events, originally detected using sequence-based replay detection methods, to cross-check the quality of replay content.\n\n### Alpha level adjustment based on mean false-positive rate across both tracks\n\nAfter calculating the mean false-positive rate across both tracks at alpha levels ranging from 0.2 to 0.001, we then identify the alpha level that leads to the mean false-positive rate closest to 0.05 for a given method, which would be referred to as FPR-matched alpha level. The log odds difference and proportion of significant events detected at the FPR-matched alpha level would be used for the subsequent method comparisons.\n\n### Statistics\n\n#### Bootstrapping for method comparisons\n\nTo determine if the differences between two methods (i.e. mean log odds or proportion of significant events) were statistically significant, we used a bootstrapping procedure where candidate replay events were resampled with replacement 1000 times. This created bootstrapped distributions of log odds differences, the proportion of significant events detected, and false-positive rates at each alpha level ranging from 0.2 to 0.001.\n\nWhen comparing the proportion of significant events and log odds difference at the original alpha level = 0.05, we calculated the 95% confidence interval for both metrics obtained at an alpha level = 0.05. When comparing the proportion of significant events and log odds difference at the FPR-matched alpha level, we calculated the 95% confidence interval for both metrics obtained at the alpha level when the mean false-positive rate was closest to 5%. The difference between the two bootstrapped distributions was only considered statistically significant when the 95% confidence intervals did not overlap.\n\n#### Bootstrapping for log odds significance\n\nTo determine if the log odds difference of the replay events detected during PRE, RUN, and POST by a given method was statistically significant from chance level track discriminability, we calculated the confidence interval for the difference between bootstrapped distribution of the original replay data and the cell-id randomized replay data. The mean difference between two bootstrapped distributions was only considered statistically significant when the 95% confidence interval did not overlap with 0.\n",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "0599cf35-ecbc-43cc-b606-0a6a04e05787",
+      "submission_id": "a7a08bc0-b455-4767-9b59-95128a3eac16",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Caleb Kemere, https://ror.org/008zs3103 Rice University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85635.sa0](https://doi.org/10.7554/eLife.85635.sa0)\n\nIn this valuable work, the authors present a case for a new standard in replay detection, tackling the formidable problem that different methods can produce in vastly different results. The authors show compelling evidence about the source of this problem (which is that the true false positive rate can vary wildly between methods). The authors present a solution to the challenge of underestimation of the false positive rate and leverage new experimental data and novel analysis techniques to provide solid evidence that \u2013 under specific assumptions \u2013 their approach is effective.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Caleb Kemere, https://ror.org/008zs3103 Rice University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85635.sa1](https://doi.org/10.7554/eLife.85635.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Evaluating hippocampal replay without a ground truth\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Laura Colgin as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another and multiple reviewing editors and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions (for the authors):\n\n(1) The reviewers were unanimous in disagreeing with the idea that the cell-ID shuffle could be used as a method to estimate a false positive rate, and thus generally opposed the prospective premise of the work.\n\n(1b) There was an opinion that \"it might still be a useful tool to compare popular replay scoring methods, as long as (1) instances where the threshold is incorrectly referred to as an \"adjusted p-value\" are removed and (2) it is not recommended as a novel replay detection approach but simply a tool to compare the methods.\n\n(2) However, the reviewers felt that there was value in comparing track discriminability vs. sequence detection, particularly for analysis and comparisons including the PRE-RUN data. Reviewers were moderately enthusiastic about an alternative presentation that concentrated on reporting effect sizes rather than p-values alone, and shifted towards understanding the relationships between the factors.\n\n(3) Towards this end, in the discussion, the reviewers were also concerned about the idea of restricting analyses only to those neurons that had fields in both environments. This makes sense as a potential way to avoid concerns about spike sorting, but a subsequent paper should include the obviously functionally important population of neurons that have place fields in only one environment.\n\nReviewer #1 (Recommendations for the authors):\n\n1. I would suggest showing the analysis on a single environment and three environments if possible for the log odds measure.\n\n2. It would be ideal for the functions used for the main analysis to be clearly documented in the code repository. At the very least highlighted in the README for use by others.\n\n3. Do these results hold over animals? It would be important to see the variability in conclusions if possible.\n\n4. Would the conclusions about p-values hold if you applied a multiple comparisons correction like the Benjamini and Hochberg procedure or Storey's q-value first? I would suggest clarifying why the empirically determined adjusted p-value works better than the other multiple comparison measures.\n\n5. I would clarify that the p-value threshold and significant events are determined by the replay score only in the text.\n\n6. \"computing the summed posteriors (across time bins) within the replay event for each track\" \u2013 Please clarify or correct this line because I believe the posterior is summed across time and position.\n\n7. \"difference in mean log odds between track 1 and track 2 replay events\" \u2013 It is unclear what this mean is over. Session? Over all animals?\n\n8. \" ripple power threshold is not necessary for RUN replay, but should be applied to POST replay events\" \u2013 It is my understanding that a multiunit threshold is still applied. It would be important to clarify this if this is the case.\n\n9. \"a more positive mean log odds difference would indicate a higher trajectory discriminability in the replay content, and a higher confidence in replay quality. In contrast, a mean log odds difference of 0 would suggest that the quality of replay events is comparable to chance level trajectory discriminability, and that the detected event population most likely consists of low fidelity events, indistinguishable from false-positives,\"- is there an absolute value being taken here? The measure can be both positive and negative, so unless the track selected by the replay score is always the positive going track, this cannot be quite correct. Please clarify if that is the case and note that the statistic can be negative.\n\n10. The term \"cross-validation\" is being used improperly. Cross-validation has a specific meaning in statistics, implying a test and training set. I would suggest using validation, or orthogonal validation instead.\n\n11. I would add individual examples of the log odds procedure and z-score (as in Tirole et al. 2022, Figure 4B) to help the readers understand the procedure better.\n\n12. \"Based on the desire to maximize the statistical independence of data, we avoided any smoothing in our analysis, as this could increase the false-positive rate of replay detection. Because we did not use spatial or temporal smoothing, we opted to use larger bin sizes for Bayesian decoding (10 cm by 20 ms).\" \u2013 Using bins of any kind is a form of \"smoothing\" and choice of bin edges will lead to different answers. Furthermore smoothing is not inherently bad as it can reduce variance and potentially lead to more statistical power. Choosing not to smooth with a gaussian is fine as a choice but I would change this sentence.\n\n13. \"To determine if the decrease in detection rate was associated with decrease in the false-positive rate for this detection method, we calculated the false-positive rate (mean fraction of spurious replay events detected across both tracks)\" \u2013 I would suggest clarifying that the spurious replay events detected are from the shuffled data. It is clear in the figure legend, but not in the main body of the text.\n\nReviewer #2 (Recommendations for the authors):\n\nI would recommend the authors focus on the analysis of preplay in their dataset. They can better analyze their observation that no reactivation is evident in events with high replay scores, which will be of interest to the field. I believe that the rest of the work is highly problematic.\n\nReviewer #3 (Recommendations for the authors):\n\nI have two fundamental suggestions.\n\n1) While I agree that the sequenceless decoding is important to cross-validate the main findings of the paper, reading the paper for the first time gave me the (false) impression that the proposed framework of detecting replay somehow uses this measure to select the final replay events. After reading the methods multiple times, it seems to me that first impression was untrue, and the proposed replay detection only depends on adjusting the p-value based on the empirical false positive estimate using a cell-ID shuffle. If this is correct, then the sequenceless decoding only provides an x-axis as additional evidence to help convince the reader of the conclusions of the comparisons.\n\nThe way the paper is written, I think most readers would make the same initial assumption as I did. The first time false positive estimates are mentioned in the results of the paper, we are directed to Figure 1D which describes the sequenceless cross-validation. Moreover, given the emphasis of this sequenceless approach in the abstract and the entire manuscript, it is easy to conclude that the false-positive rate is estimated as the number of events that don't show sequenceless log-odds higher than the shuffle.\n\nThis is problematic because many people in the field might dismiss the findings by thinking \"Well that's nice but I don't have two tracks, so I can't do any of that\". The only place in the manuscript that made me dig deeper was in the discussion, where the authors state \"As such, it is critical for replay studies to independently verify and report this false-positive rate even for the experiments involving only one spatial context.\" Only after reaching this sentence did I even consider that estimating the false positive rate might not require two tracks, and it took quite some time to make sure it doesn't, and yet even now a part of me is still unsure that I got it right. I would urge the authors to make it more clear that the false positive rate can be estimated readily using a simple shuffle and does not require having two tracks.\n\nIt is my opinion that estimating the false positive rate and taking it into account is very powerful and can be a game changer for replay detection, but it won't happen if people don't understand it was done and how it was done.\n\n2) In my initial reading of the paper, I was confused by Figure 4D (and all the figures like it). It sounds counter-intuitive that a more strict method (e.g. 2 shuffles vs 1 shuffle) can end up detecting *more* replay events. It is not trivial point to grasp, and it is easy for readers to get lost here (e.g. the y-axis \"proportion of significant events\" may be considered by some confused readers to mean some measure of specificity like \"among the events selected by each method, how many of them were true positives\"). I think something can be added to this section to better guide readers and explain what is being proposed.\n\nI'm thinking of something like \"Before controlling for the false positive rates associated with each method, as expected, stricter methods found fewer replay events than more permissive methods: for example, a single shuffle selected 50% of awake events as significant, as opposed to 40% that the stricter 2-shuffles method selected (Figure 4C). However, after adjusting the p-value to control for the false positive rate, we found that stricter methods actually resulted in detecting more replay events: the single shuffle awake replay adjusted p-value was 0.007 which brought down the proportion of significant events to 32%, while the stricter 2-shuffles awake replay adjusted p-value was 0.032, resulting in 35% of events detected as significant. This shows that controlling for the empirically measured false positive rate can, almost paradoxically, result in stricter methods detecting more replay events.\" The \"Place+jump distance\" is somewhat separate and can be presented after taking the time to explain this very critical point.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Evaluating hippocampal replay without a ground truth\" for further consideration by eLife. Your revised article has been evaluated by Laura Colgin (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nThe reviewers reached a consensus that the paper requires minor revisions. Please see individual reviewer comments below. In particular, there was a consensus that the discussion of the paper needs to clearly articulate a proper interpretation of the corrected p-values. Specifically, that using one shuffle (cell-ID) to correct the p-values of another (i.e., circular) on a collection of events is not the same as somehow correcting the replay detection for individual events.\n\nReviewer #1 (Recommendations for the authors):\n\nThank you to the authors for their thoughtful responses to the reviews. I do think the response clarified several aspects of the manuscript and improved the clarity of the manuscript overall. The documentation and improvement of the code associated with the manuscript is also improved.\n\nAs I understand the logic, the main claims of the framework to study sequence detection methods are:\n\n1. A good sequence detection method should assign the same track as track decoding.\n\n2. The significant replay events for a given method can be adjusted by matching the false positive rate resulting in greater track discriminability (and more conservatively identified replay events)\n\n3. This can be used to compare replay detection methods or quality of replay event\n\nThe strengths of the work are:\n\n1. it is more conservative in judging which sequence is a replay or \"spurious\" given that the two track model is true\n\n2. it makes some interesting conclusions about the use of the ripple power and multiunit as criterion for detecting replay events.\n\nThe weaknesses of the work are:\n\n1. The framework relies on an adjustment for track discriminability but, as the authors acknowledge, there are many ways in which the model can be misspecified. This only tests for a very specific way in which they are misspecified. And it doesn't seem to give one much insight into why a particular method is better. For example, the authors' response seems concerned about the lack of accounting for bursting in replay detection, but track discriminability does not circumvent this. The way to account for lack of independence in time bins is to explicitly account for the bursting, such as fitting the place field estimates with a self-history term. The track discriminability measure simply marginalizes over the time and position and already incorporates the misspecified encoding model.\n\n2. This framework relies on classifying aspects of the replay event as significant or not significant at a given significance threshold. This is reliant on the particular null distribution specified.\n\n3. The generality of the work is limited by their two track framing.\n\nThe work claims that their framework is a \"unifying approach to quantify and compare the replay detection performance\". The work falls short of doing this in general but I do think it accomplishes this with a much narrower scope, namely in adjusting methods that fail to discriminate between tracks appropriately in the case of two tracks.\n\n\u2013 Are the significant events being corrected for multiple comparisons? Could the authors explain why no corrections are needed?\n\n\u2013 I do not think the authors sufficiently addressed the question of what happens if the track discrimination model is misspecified in their response. For example, if there are truly three tracks but you only account for two?\n\nReviewer #2 (Recommendations for the authors):\n\nWhile I appreciate the conceptual novelty of using the log odds ratio as a metric for testing the noisiness of replay events and comparing this metric with results from sequence analyses, unfortunately, I was not persuaded by the arguments presented in the authors' rebuttal. I think the study would benefit greatly if the authors consulted or collaborated closely with an expert on statistical methods, particularly on the application of resampling methods, to enhance the rigor of their approach. Without this, I remain concerned that this work can cause further confusion (and noise) rather than clarity in these analyses.\n\nI believe I noted my concerns to great length in the initial review, but perhaps the authors will wish to look through the section \"The problem with replay decoding: shuffles\" section in Foster 2017 and note that each shuffle is permissive for some events and not others. E.g. if the circular shuffle is likely to pass through events that arise from edge effects, their study does not explain how a shift of the \u03b1 level is going to fix that issue and remove false positives. Each type of shuffle will pass through different subsets of events, some of which may be \"false positives,\" but they will be different events in each case. Simply adjusting the \u03b1 levels or p-values, the solution proposed by this study, will not fix the underlying reasons for the false positives, and lead to potentially mistaken confidence in the results.\n\nReviewer #3 (Recommendations for the authors):\n\nI find that the revised manuscript has considerably improved. I have one outstanding issue with the randomization shuffle, which can actually be alleviated if the authors update Figure D to include the 3 remaining shuffles, and a minor comment.\n\nOutstanding question regarding the randomization shuffle:\n\nMy concerns about the cell-id shuffle were that (1) any shuffle, including this one, may actually underestimate the true false positive rate, and (2) this tendency to underestimate the true false positive rate will be exacerbated when the randomization shuffle is similar to the shuffle used for detecting replay events, resulting in a biased comparison between methods.\n\nI think (1) is unavoidable as it would be hard to disprove any structure that could be inadvertently erased by any given shuffle. The true false positive rate may always be higher than our best estimates captured by our surrogate datasets, and our estimates are simply a lower bound of the true false positive rate. In particular for the cell-id shuffle (including the \"cross experiment cell-id\" shuffle), there may be some underlying structure in biological data which violates assumptions of independence that is not captured by place-field swapping. This would undoubtedly be the case when including a variety of cell types with generally different place field properties (e.g. along the dorsoventral axis or the deep/superficial sublayer). Even without different anatomical cell types, more excitable cells may be more likely to have multiple place fields as well as firing more spikes within candidate events \u2013 a potential structure that is not captured by the cell-id shuffle.\n\nWhile concern (1) only needs to be mentioned (in the discussion or in a public review), concern (2) is particularly problematic because the authors compare the (FRP-matched) performance of different methods to conclude which are best. Figure D shows a comparison of two methods: place field shifting and place field swapping (with place fields within the same dataset, the randomization used throughout the manuscript, or from a different dataset, which is almost identical to the original randomization) before trajectory decoding. Figure D convincingly argues that relative to field swapping (cell-id shuffle), field shifting (place field circular shifted shuffle) is a much poorer method of randomization as it considerably underestimates the false positive rate for detection methods using similar shuffles. Note that the bias is slightly attenuated for the \"place bin shuffle\" (it is worse for the \"place field shuffle\"), demonstrating that there is a confounding gradient with larger similarities between the randomization and the detection shuffles resulting in larger bias.\n\nAccording to the authors, Figure D shows that \"cell-id based randomization is sufficiently independent from both place-based and temporally-based shuffles for replay detection\". I cannot see how that can be concluded from the figure. The place field swapping methods may well be underestimating the false positive rate unevenly. Place field swapping is still a pre-decoding place-based shuffle, so the fact that its estimate agrees with the estimate of another pre-decoding place-based shuffle (place field shifting) does not demonstrate that these estimates are not a biased. I would like to stress that one of the authors' conclusions is that \"more shuffles, with a preference for pre-decoding shuffles, lead to better replay detection.\" All of the approaches using \"more shuffles, with a preference for pre-decoding shuffles\" included place field shifting, which in my opinion is similar to the place field swapping of the cell-id shuffle.\n\nI commend the authors for the approach of Figure D, which is a good way to address this key concern. I recommend this figure to be included in the manuscript. Moreover, if the authors were to include the other 3 shuffles (it currently includes \"Shuffle 2\" from the methods) and show that the cell-id does not underestimate the false positive rate more than those shuffles in a biased way, that would practically disprove this issue. Indeed, the concern is that the cell-id shuffle may be underestimating the false positive rate particularly for detection methods using pre-decoding and place-based shuffles, but if none of the other 3 shuffles produce higher false positive estimates for the lower row in Figure D, that would be convincing evidence that the cell-id randomization procedure is not biased towards detection methods employing pre-decoding place-based shuffles and strengthen the conclusions.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Evaluating hippocampal replay without a ground truth\" for further consideration by eLife. Your revised article has been evaluated by Laura Colgin (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nThe introduction of the manuscript has already been significantly revised. However, the final revision requested by the reviewers is to spend a few sentences outlining not only sequence scoring, but also the fact that the manuscript utilises multiple types of surrogate data sets to establish null distributions. In particular, it is suggested that some assumptions about the utility of the cell-id shuffle surrogate be described, as well as the importance of track discriminability. Reviewer #2 (see below) is quite proscriptive; please consider their points and update the introduction to at least mention these issues up front.\n\nReviewer #2 (Recommendations for the authors):\n\nThe revision added some text regarding the limitations of the study. I was hoping that the revised manuscript would also be more explicit regarding the underlying assumptions. While I don't think reviewers should do the authors work for them, after such a lengthy review, perhaps this is the only way short of a rejection.\n\nFrom what I can tell, these are the main assumptions. If I am wrong, perhaps the other reviewers, or the authors can correct me. Also perhaps there are others that I missed.\n\n1) After recording from two tracks, events with low discriminability between these two tracks cannot be said to be replays, regardless of their sequence scores.\n\n\u2013 Pooled across data, discriminability generally correlates with replay score, though this differs across datasets and timepoints of recording.\n\n2) The cell-id shuffle provides the best null distribution to test against for replay.\n\n\u2013 This is so because cell-id shuffled events show low discriminability even in instances where they have high sequence scores\n\n3) The proportion of cell-id shuffled events that qualify as replays in any given period is similar to the proportion of events generated in the real data from hippocampus network that are likewise not actual replay but are labeled as significantly ordered.\n\n\u2013 This therefore allows for a scaling correction to bring this proportion in line with the \u03b1 level.\n\n4) In the absence of performing cell-id shuffles, which is straightforward, the alternative prescription is to record from two tracks and adjust the apparent \u03b1 to match those of cell-id shuffled events obtained during the recording\n\n\u2013 This is so that the same relative number of events are labeled as replays, even though they may not be the actual replays.\n\nIn my view, these assumptions should be provided very clearly early in the manuscript, ideally in the introduction section, to guide readers towards a better understanding of the study.\n",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f3069258-0a81-41ab-a03a-1bb29b1b710e",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C1",
+      "claim": "During rest and sleep, memory traces replay in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "During rest and sleep, memory traces replay in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established scientific concept supported by extensive prior research in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "51f162d9-c9b0-4cf3-a887-0ea5d4ee756a",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C2",
+      "claim": "The dialogue between brain regions during replay is thought to stabilize labile memory traces for long-term storage.",
+      "claim_type": "EXPLICIT",
+      "source": "The dialogue between brain regions during replay is thought to stabilize labile memory traces for long-term storage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents a theoretical framework supported by the scientific literature on memory consolidation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "9a35e650-4340-40d5-b413-d32481f78b9f",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C3",
+      "claim": "Replay is an internally driven, spontaneous phenomenon that does not have a ground truth.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because replay is an internally driven, spontaneous phenomenon, it does not have a ground truth - an external reference that can validate whether a memory has truly been replayed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental characteristic of replay that is established through logical reasoning about the nature of the phenomenon.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "9a62caef-9796-4137-8c78-c251886a11be",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C4",
+      "claim": "Replay detection is based on the similarity between sequential neural activity during replay and the template from active locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, replay detection is based on the similarity between the sequential neural activity comprising the replay event and the corresponding template of neural activity generated during active locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the standard methodological approach used in the field of replay research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "9dd64735-448c-4ad8-acfc-a0415dfa6c96",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C5",
+      "claim": "The hippocampus plays a central role in the encoding and consolidation of new memories.",
+      "claim_type": "EXPLICIT",
+      "source": "The hippocampus plays a central role in the encoding and consolidation of new memories (Eichenbaum, 2000; Frankland and Bontempi, 2005; Klinzing et al., 2019; Lewis and Bendor, 2019; Squire, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "9cec7568-dfad-423e-90b7-138ae24bb355",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C6",
+      "claim": "During locomotion in rodents, hippocampal place cells are active in specific regions of the animal's environment (place fields).",
+      "claim_type": "EXPLICIT",
+      "source": "During locomotion in rodents, hippocampal place cells are active in specific regions of the animal's environment (place fields), resulting in a sequential pattern of place cell firing when the animal runs along a spatial trajectory (O'Keefe and Dostrovsky, 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to foundational research on place cells.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "7bd1a797-2d3c-4fdc-a0b1-3165de8bb1c6",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C7",
+      "claim": "During offline states such as quiet restfulness and non-REM sleep, the sequential pattern of neural activity observed during behavior is spontaneously reactivated.",
+      "claim_type": "EXPLICIT",
+      "source": "During offline states, such as quiet restfulness and non-REM sleep, the sequential pattern of neural activity observed during behavior is spontaneously reactivated, a phenomenon referred to as 'hippocampal replay' (Lee and Wilson, 2002; Wilson and McNaughton, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to seminal replay research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "4be7c02d-7919-401c-802d-6e7636d1c7a2",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C8",
+      "claim": "Offline replay of a neural memory trace is postulated to be a central mechanism by which memories recently encoded in the hippocampus can be consolidated.",
+      "claim_type": "EXPLICIT",
+      "source": "Offline replay of a neural memory trace is postulated to be a central mechanism by which memories recently encoded in the hippocampus can be consolidated by further stabilizing these memories in distributed cortico-hippocampal circuits for long-term storage (Buzs\u00e1ki, 1989; Klinzing et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This theoretical claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "80d141f2-14be-4b74-9e70-3370f8156ebf",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C9",
+      "claim": "Evidence of replay was first discovered almost 30 years ago with the demonstration that during sleep, temporal correlations can be observed between the co-firing of place cell pairs with overlapping place fields.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence of replay was first discovered almost 30 years ago with the demonstration that during sleep, temporal correlations can be observed between the co-firing of place cell pairs with overlapping place fields (Wilson and McNaughton, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This historical claim is supported by citation to the original discovery.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "e4857c5f-b8f7-4ffe-9105-f476e382952a",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C10",
+      "claim": "Methods for large-scale chronic extracellular neural recordings have become more advanced, allowing the simultaneous recording of tens and even hundreds of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Since then, methods for large-scale chronic extracellular neural recordings have become more advanced, allowing the simultaneous recording of tens and even hundreds of neurons (Ji and Wilson, 2007; Lee and Wilson, 2002; Pfeiffer and Foster, 2013; Widloski and Foster, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim about technological advancement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "4ffcfc3f-cd90-405d-b438-1b9c0bef002e",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C11",
+      "claim": "Analysis methods for replay have shifted from pairwise analysis of place cells to detecting sequential patterns within neuronal ensembles.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these developments, the analysis methods for replay have also become more sophisticated - shifting from the pairwise analysis of place cells to detecting sequential patterns within neuronal ensembles, using either spiking activity directly (Foster and Wilson, 2006) or decoding this activity to extrapolate the virtual spatial trajectories replaying (Davidson et al., 2009; Zhang et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This methodological evolution is supported by citations to relevant studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "31966d87-1ee1-4e06-aa9b-88d5d6397535",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C12",
+      "claim": "Spearman's rank-order correlation quantifies the ordinal relationship between the temporal order of place cell firing during behavior and a replay event's spike train.",
+      "claim_type": "EXPLICIT",
+      "source": "Commonly used replay scoring metrics for quantifying the fidelity of a replay sequence include: (1) a Spearman's rank-order correlation of spike times, which quantifies the ordinal relationship between the temporal order of place cell firing during behavior and a replay event's spike train (Foster and Wilson, 2006), but assumes that the place cell sequence is ordered accordingly to each place cell's peak firing rate location alone",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This methodological description is supported by citation to the relevant study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "12b09b27-0fdd-45b5-bcb0-772007597ba5",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C13",
+      "claim": "Weighted correlation quantifies a generalized linear correlation in time and position weighted by the decoded posterior probabilities without any assumption about the temporal rigidity of the replayed trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) a weighted correlation of the decoded replay event, which quantifies a generalized linear correlation in time and position weighted by the decoded posterior probabilities without any assumption about the temporal rigidity of the replayed trajectory (Grosmark and Buzs\u00e1ki, 2016; Silva et al., 2015; Tirole et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This methodological description is supported by citations to relevant studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "b6989f9f-53d4-463e-8cfd-117584924b72",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C14",
+      "claim": "Linear fitting finds the linear path with the maximum summed decoded probability, assuming that the trajectory's slope is constant.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) a linear fitting of the decoded replay event, which finds the linear path with the maximum summed decoded probability, assuming that the trajectory's slope is constant (Davidson et al., 2009; Gomperts et al., 2015; \u00d3lafsd\u00f3ttir et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This methodological description is supported by citations to relevant studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "0c012ff4-b3ee-4e9f-b905-815d097f90b1",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C15",
+      "claim": "Without a ground truth, the detection of replay events must be inferred based on whether the statistical likelihood of observing a match between the sequential structure of the replayed event and the original behavioral template is sufficiently low, by chance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because replay is generated by an internal and spontaneous state of the brain, there is no external reference to indicate whether a given replay event is truly a reinstatement of a memory trace. Without a ground truth, the detection of replay events must be inferred based on whether the statistical likelihood of observing a match between the sequential structure of the replayed event and the original behavioral template is sufficiently low, by chance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the logical inference required for replay detection given the lack of ground truth.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "1315a987-bf7c-42fe-abed-007c128d9651",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C16",
+      "claim": "Each event's replay score is compared to a distribution of scores obtained using randomized data, permutated in either the spatial or temporal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "To quantify this, each event's replay score is compared to a distribution of scores obtained using randomized data, permutated in either the spatial or temporal domain (i.e. a shuffled distribution), where statistically significant replay scores must be greater than a certain percentage of this shuffled distribution, typically 95% for an alpha level (\u03b1)<0.05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the standard statistical approach used in replay analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "599554c5-a8f6-4058-b05c-c46dc4144d1c",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C17",
+      "claim": "Recent replay studies have relied predominately on three major methods of scoring replay: rank-order, weighted correlation, or linear fit.",
+      "claim_type": "EXPLICIT",
+      "source": "While recent replay studies have relied predominately on these three major methods of scoring replay (rank-order, weighted correlation, or linear fit), there are still many variations in how these scores can be calculated and how the subsequent statistical significance of these scores are measured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the current state of the field based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "5c475e0d-c041-46c4-b9ae-b83a3afcceb4",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C18",
+      "claim": "Variations in replay scoring methods can lead to issues in reproducibility and difficulty in interpreting conflicting results between studies.",
+      "claim_type": "EXPLICIT",
+      "source": "This can lead to issues in reproducibility and a greater difficulty in interpreting conflicting results between studies (Tingley and Peyrache, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a relevant study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "63cd102a-9a6a-49ff-b886-e11795d58cd4",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C19",
+      "claim": "Extracellular signals from the dorsal CA1 region of the hippocampus were recorded in rats running on two novel linear tracks.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellular signals from the dorsal CA1 region of the hippocampus were recorded in rats running back and forth on two novel linear tracks (male Lister-hooded, n=5, 10 sessions, dataset from Tirole et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data used in the study, with citation to the source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "1ff5e8e3-ea31-44c3-bfc8-f8f02951d137",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C20",
+      "claim": "Rats had a rest/sleep session in a remote location both before (PRE) and afterward (POST) running on the tracks.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to running on two linear tracks (RUN), rats also had a rest/sleep session in a remote location both before (PRE) and afterward (POST) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "45fc8086-6215-4636-b80c-10d402c92ec2",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C21",
+      "claim": "Across 10 sessions, 8485 candidate events were detected in PRE, 4643 in RUN, and 14,326 in POST.",
+      "claim_type": "EXPLICIT",
+      "source": "Across 10 sessions, we detected 8485, 4643, and 14,326 candidate events in PRE, RUN, and POST session, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the data collected in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "2b5a9bb0-7c88-4874-8350-0191f7da9e57",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C22",
+      "claim": "Using an alpha level of 0.05, 7.5% of RUN replay events were false-positives.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the estimated false-positive rate was higher than the alpha level: using an alpha level of 0.05, 7.5% (lower CI = 7.2% and higher CI = 7.8%) of RUN replay events were false-positives, while 8.7% (lower CI = 8.5% and higher CI = 8.9%) of POST replay events were false-positives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the study's analysis with confidence intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "9729956d-295a-4db4-be7d-aea86b701a50",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C23",
+      "claim": "Using an alpha level of 0.05, 8.7% of POST replay events were false-positives.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the estimated false-positive rate was higher than the alpha level: using an alpha level of 0.05, 7.5% (lower CI = 7.2% and higher CI = 7.8%) of RUN replay events were false-positives, while 8.7% (lower CI = 8.5% and higher CI = 8.9%) of POST replay events were false-positives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the study's analysis with confidence intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "5f6920de-62d7-4aed-a030-16170116a6a1",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C24",
+      "claim": "RUN replay events were more prevalent and yielded higher track discriminability than POST replay events.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we observed RUN replay events to be comparatively more prevalent and yielding a higher track discriminability than POST replay events, in line with previous reports (Karlsson and Frank, 2009; Tirole et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation from the data is supported by citations to previous studies showing similar results.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "eecadc2b-ffee-43d1-a748-13fad8812078",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C25",
+      "claim": "The presence of immediate sensory or other external inputs may help direct hippocampal place cell ensembles toward representing the local current environment during awake replay.",
+      "claim_type": "EXPLICIT",
+      "source": "This might be partly due to the presence of immediate sensory or other external inputs helping to direct hippocampal place cell ensembles toward representing the local current environment during awake replay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed difference between RUN and POST replay.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "cf91b0e9-8b29-4930-b48f-8b9842a7bda7",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C26",
+      "claim": "During both quiet wakefulness and non-REM sleep, replay events preferentially occur during sharp-wave ripple events.",
+      "claim_type": "EXPLICIT",
+      "source": "During both quiet wakefulness and non-REM sleep, replay events preferentially occur during sharp-wave ripple events, transient high-frequency oscillations (150\u2013250 Hz) in the local field potential (LFP) recorded near the cell layer of CA1 (Buzs\u00e1ki, 2015; Foster and Wilson, 2006; Lee and Wilson, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "6fba2f0f-4361-41c2-a042-b787d8579919",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C27",
+      "claim": "A minimum ripple power threshold has varied substantially across previous studies ranging from 2 SD to 7 SD above baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, a minimum ripple power has been used as a criterion for detecting candidate replay events prior to sequence detection, however the threshold has varied substantially across previous studies ranging from 2 SD (standard deviations) above baseline (Diba and Buzs\u00e1ki, 2007; Gillespie et al., 2021) to 7 SD above baseline (Csicsvari et al., 2007; Ji and Wilson, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation about methodological variation is supported by citations to specific studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "e58f76ac-f728-4043-ab0d-06bc68c76b65",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C28",
+      "claim": "Many recent studies have opted to no longer use minimum ripple power as a criterion for candidate replay events.",
+      "claim_type": "EXPLICIT",
+      "source": "Because using only MUA as a threshold typically leads to more candidate replay events, and is believed to be more reliable for detecting both the start and end times of the replay event, many recent studies have opted to no longer use minimum ripple power as a criterion for candidate replay events (Gomperts et al., 2015; \u00d3lafsd\u00f3ttir et al., 2018; \u00d3lafsd\u00f3ttir et al., 2016; Silva et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This trend in the field is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "e28fb030-4928-41cc-8bf6-fc57ca341b8d",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C29",
+      "claim": "For POST replay events with a ripple power less than a z-score of 5, the mean log odds difference was near zero for all alpha levels tested.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast for POST replay events with a ripple power less than a z-score of 5, the mean log odds difference was near zero for all alpha levels tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "c77f8028-39b9-452f-a813-2f6a02ee044c",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C30",
+      "claim": "A ripple power threshold is not necessary for RUN replay events in our dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "These results emphasize that a ripple power threshold is not necessary for RUN replay events in our dataset but may still be beneficial, as long as it does not reject too many good replay events with low ripple power.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data analysis presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "f88f338e-274e-492a-b7e9-c0a9fbeef063",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C31",
+      "claim": "For POST replay events, a ripple power threshold at least in the range of a z-score of 3\u20135 is recommended based on our dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for POST replay events, a threshold at least in the range of a z-score of 3\u20135 is recommended based on our dataset, to reduce inclusion of potential false-positives within the pool of detected replay events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This recommendation is based on the data analysis presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "6a0a8169-f3cd-4267-aea0-e34870bcb38e",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C32",
+      "claim": "Pre-decoding shuffles performed better than post-decoding shuffles for both RUN and POST.",
+      "claim_type": "EXPLICIT",
+      "source": "For both RUN and POST, we observed that pre-decoding shuffles performed better than post-decoding shuffles, with the time bin permutation shuffle showing a significantly lower log odd difference compared to the other three shuffles (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the comparative analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "e4547ff5-d4e8-4a08-95b3-c85d80ccd8dd",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C33",
+      "claim": "The time bin permutation shuffle showed a significantly lower log odd difference compared to the other three shuffles.",
+      "claim_type": "EXPLICIT",
+      "source": "For both RUN and POST, we observed that pre-decoding shuffles performed better than post-decoding shuffles, with the time bin permutation shuffle showing a significantly lower log odd difference compared to the other three shuffles (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the comparative analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "8e456b06-4d37-4221-9a44-2179ed7cdbc2",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C34",
+      "claim": "The post-decoding time bin permutation shuffle had the poorest performance across the four types of shuffles for both RUN and POST epochs when using an FPR-matched alpha level.",
+      "claim_type": "EXPLICIT",
+      "source": "When we adjusted the alpha level to match a mean false-positive rate of 5%, the post-decoding time bin permutation shuffle had the poorest performance (the lowest proportion of significant events and the lowest mean log odds difference) across the four types of shuffles for both RUN and POST epochs (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the comparative analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "2a70d4ca-05da-4a06-bc3e-59eaa91e4f0b",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C35",
+      "claim": "Shuffling procedures that directly manipulated the place field data or spike train data before decoding may be more efficacious than procedures that randomized the posterior probability distributions after decoding.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggested that the shuffling procedures that directly manipulated the place field data or spike train data before decoding may be more efficacious than procedures that randomized the posterior probability distributions after decoding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the comparative analysis of different shuffling methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "95f75080-ecc6-4c06-aafe-1db591a3b72b",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C36",
+      "claim": "Increasing the number of shuffles increased the mean log odd difference and decreased the proportion of significant events and the estimated false-positive rate.",
+      "claim_type": "EXPLICIT",
+      "source": "For both RUN and POST epochs, increasing the number of shuffles increased the mean log odd difference and decreased the proportion of significant events and the estimated false-positive rate, for similar alpha levels (Figure 4A and B and Figure 4\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the comparative analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "b46bb76d-6da4-45ad-8019-cdd6a3207472",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C37",
+      "claim": "After adjusting the alpha level to a matching false-positive rate of 0.05, stricter methods would detect more replay events.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after adjusting the alpha level to a matching false-positive rate of 0.05, we found that stricter methods would detect more replay events. For example, at an FPR-matched alpha level, the proportion of significant events would reduce to 32% for a single shuffle (\u03b1 = 0.007) but 35% for the stricter two-shuffle method (\u03b1 = 0.032).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "ea0a8a61-f084-4e77-ad8f-d4f02cc51276",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C38",
+      "claim": "Only the use of 2 or more shuffles achieved both the highest proportion of events and largest mean log odds difference when using an FPR-matched alpha level.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if an FPR-matched alpha level was used (with the estimated false-positive rate fixed at 0.05), only the use of 2 or more shuffles achieved both the highest proportion of events and largest mean log odds difference, for both RUN and POST epochs (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the comparative analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "182d9361-dc10-48c2-a189-d4b6f2000248",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C39",
+      "claim": "A single shuffle with an added jump distance criterion performed the poorest out of the four methods when using the FPR-matched alpha level.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to this, a single shuffle with an added jump distance criterion performed the poorest (less events and lower track discriminability) out of the four methods when using the FPR-matched alpha level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the comparative analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "04f07ec4-4bfc-4b4e-bf14-44ede06375a9",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C40",
+      "claim": "It is more beneficial to use a stricter alpha level than to impose a jump distance.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that it is more beneficial to use a stricter alpha level than to impose a jump distance, an observation that extended to a range of different jump distances spanning 20\u201360% of the track (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is drawn from the comparative analysis shown in Figure 4 and its supplement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "c76d6385-9a2c-476c-9d0b-4858d1630f9f",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C41",
+      "claim": "The estimated false-positive rate when using independent events (median spike time) remained around 5%.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the rank-order-based analysis using either all spikes or median spike in our framework, and found that the estimated false-positive rate when using independent events (median spike time) remained around 5% (lower CI = 5.2% and upper CI = 5.8%), but increased to around 17% (lower CI = 16.3% and upper CI = 17.2%), when using all spikes (Figure 5 and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the comparative analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "208a1e88-85de-4619-b5df-2dbcafae0276",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C42",
+      "claim": "The estimated false-positive rate increased to around 17% when using all spikes for rank-order correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the rank-order-based analysis using either all spikes or median spike in our framework, and found that the estimated false-positive rate when using independent events (median spike time) remained around 5% (lower CI = 5.2% and upper CI = 5.8%), but increased to around 17% (lower CI = 16.3% and upper CI = 17.2%), when using all spikes (Figure 5 and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the comparative analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "789f993f-1915-405a-bfbc-572c3f9d0b3e",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C43",
+      "claim": "Using the FPR-matched alpha level, all methods had a proportion of significant preplay events close to 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, using the FPR-matched alpha level, all methods had a proportion of significant preplay events close to 10%, which was similar to the proportion of false-positive events expected by chance for two tracks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the comprehensive method comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "64c433a8-f435-4269-bb58-cfdae9fbabf4",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C44",
+      "claim": "The shuffle-subtracted mean log odds difference for preplay was approximately zero for all methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the shuffle-subtracted mean log odds difference for preplay was approximately zero for all methods, suggesting that regardless of the method used, if used correctly, preplay is indistinguishable from randomly generated spurious replay events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the comprehensive method comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "7cf4e849-6ff3-4dbc-a900-127c0f841bfa",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C45",
+      "claim": "Regardless of the method used, if used correctly, preplay is indistinguishable from randomly generated spurious replay events.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the shuffle-subtracted mean log odds difference for preplay was approximately zero for all methods, suggesting that regardless of the method used, if used correctly, preplay is indistinguishable from randomly generated spurious replay events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the data showing zero mean log odds difference for preplay.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "6a48ea9e-a291-4ba9-80c7-2ebf5a598a6e",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C46",
+      "claim": "Using the FPR-matched alpha level for POST replay events, all methods produced a corrected mean log odds difference near 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, using the FPR-matched alpha level for POST replay events, all methods produced a corrected mean log odds difference near 1, however linear and weighted correlation methods with 2 or more shuffles detected a higher proportion of significant events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the comprehensive method comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "464f60b9-56d9-4c52-972a-7eaac7c27bc9",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C47",
+      "claim": "Linear and weighted correlation methods with 2 or more shuffles detected a higher proportion of significant POST replay events.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, using the FPR-matched alpha level for POST replay events, all methods produced a corrected mean log odds difference near 1, however linear and weighted correlation methods with 2 or more shuffles detected a higher proportion of significant events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the comprehensive method comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "e3a91546-2bf8-4454-a819-9031d9311aa2",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C48",
+      "claim": "Using the FPR-matched alpha level for RUN replay events, the majority of methods produced a corrected mean log odds difference near 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, using the FPR-matched alpha level for RUN replay events, the majority of methods produced a corrected mean log odds difference near 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the comprehensive method comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "936bafce-e44d-4f42-a8c7-17e584560420",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C49",
+      "claim": "Using two or more shuffling procedures would lead to significant improvement in the overall replay detection performance for both weighted correlation and linear fitting method.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite using the FPR-matched alpha level to achieve the same mean false-positive rate, we observed that using two or more shuffling procedures would lead to significant improvement in the overall replay detection performance for both weighted correlation and linear fitting method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the comprehensive method comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "a75dd3ff-9a37-4b36-817b-79273a475a20",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C50",
+      "claim": "The use of either spatially smoothed place fields or spike bursts spanning multiple time bins violates the assumption of independent samples.",
+      "claim_type": "EXPLICIT",
+      "source": "This issue is not just limited to when the entire spike train is used to calculate the rank-order correlation (as discussed above), but also applies to all methods using decoded neural activity. The use of either spatially smoothed place fields or spike bursts spanning multiple time bins similarly violates the assumption of independent samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about statistical assumptions in the methods.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "0285924e-092a-4ac3-9310-dd638a6d4783",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C51",
+      "claim": "Five male Lister-hooded rats were implanted with 24 independently movable tetrodes using a custom-made microdrive.",
+      "claim_type": "EXPLICIT",
+      "source": "Five male Lister-hooded rats (350\u2013450 g) were implanted with 24 independently movable tetrodes, using a custom-made microdrive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental subjects and surgical procedures used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "d9911dcf-0aee-4d95-a8ad-eca59cc2d87a",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C52",
+      "claim": "In three rats, the microdrive was split into two 12 tetrodes groups, aimed at the right and left dorsal CA1 regions of the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "In three rats, the microdrive was split into two 12 tetrodes groups, aimed at the right and left dorsal CA1 regions of the hippocampus respectively (AP: \u20133.48 mm; ML: \u00b12.4 mm from Bregma).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the surgical targeting in a subset of experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "19f692a6-1131-422b-a187-503e31a60fc4",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C53",
+      "claim": "In two rats, right dorsal CA1 was targeted with 16 tetrodes, with the remaining 8 tetrodes targeting visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In the remaining two rats, right dorsal CA1 was targeted with 16 tetrodes (AP: 3.72 mm, ML: 2.5 mm from Bregma), with the remaining 8 tetrodes targeting visual cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the surgical targeting in the remaining experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "8f59eea3-f956-4a77-8a5c-e43cae6ede15",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C54",
+      "claim": "Place cells were required to have a minimum peak firing rate greater than 1 Hz based on the unsmoothed ratemap.",
+      "claim_type": "EXPLICIT",
+      "source": "Place cells were required to have a minimum peak firing rate greater than 1 Hz, based on the unsmoothed ratemap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological criterion used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "7aa00bae-f4df-4b8f-b8e9-57e5249ecf64",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C55",
+      "claim": "Candidate replay events were population burst events with peak z-scored multi-unit activity greater than 3 that occurred during periods of inactivity when the animal's velocity is less than 5 cm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Candidate replay events were population burst events (peak z-scored multi-unit activity [MUA]>3) that occurred during periods of inactivity, when the animal's velocity is less than 5 cm/s (see Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological criteria for identifying candidate replay events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "ad3dda69-d1cd-47a5-abbb-5125f4bfdd04",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C56",
+      "claim": "Detected replay events were required to have a ripple power z-score greater than 3 and a significant replay score.",
+      "claim_type": "EXPLICIT",
+      "source": "Detected replay events were required to also have a ripple power z-score greater than 3 and a significant replay score - i.e., higher than 95% of the scores obtained from each of two shuffle distributions, namely a place field circular shuffle and a time bin permutation shuffle (see Methods) (Grosmark and Buzs\u00e1ki, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological criteria for detecting significant replay events, with citation to a relevant study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "7ae19637-e56b-4b76-89c5-473286d2cddc",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "claim_id": "C57",
+      "claim": "A na\u00efve Bayesian decoder was used to estimate the brain's estimation of animal's position during behavior and virtual position during a replay event, using non-overlapping 20 ms time bins, and 10 cm position bins.",
+      "claim_type": "EXPLICIT",
+      "source": "A na\u00efve Bayesian decoder was used to estimate the brain's estimation of animal's position during behavior and virtual position during a replay event, using non-overlapping 20 ms time bins, and 10 cm position bins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the decoding methodology used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d4840168-3d65-4405-9171-e02e8b730926",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study used hippocampal recordings from 5 rats running on two novel linear tracks with rest sessions before (PRE) and after (POST), detecting 8485, 4643, and 14,326 candidate events in PRE, RUN, and POST respectively. Replay events were detected using weighted correlation with Bayesian decoding, requiring ripple power z-score >3 and significance based on two shuffle distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 and C51-C57 provide comprehensive methodological details including experimental design, subject information, surgical procedures, and analysis criteria. The data collection and detection methods are clearly described with specific parameters, providing a solid foundation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "b5543e8d-2634-4cdb-9101-6cabf365e210",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "At alpha level 0.05, the estimated false-positive rate was 7.5% for RUN and 8.7% for POST replay events, both higher than the nominal alpha level. RUN replay events were more prevalent and showed higher track discriminability than POST replay events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 report quantitative findings with confidence intervals showing that actual false-positive rates exceed the nominal alpha level. The observation about RUN vs POST differences is supported by data and consistent with prior literature (C24 cites supporting studies).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "7c1e2fe4-4ba6-41c9-99e1-72e2e313a583",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "For POST replay events with ripple power below z-score 5, mean log odds difference was near zero across all alpha levels tested. A ripple power threshold is not necessary for RUN replay but a threshold of z-score 3-5 is recommended for POST replay to reduce false-positives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 present data-driven conclusions about ripple power thresholds. The finding that low ripple power POST events are indistinguishable from spurious events (C29) logically supports the differential recommendations for RUN vs POST (C30-C31), backed by the analysis shown in Figure 2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "9752c7a5-a498-4be3-bdef-45e523b88742",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Pre-decoding shuffles (spike train and place field circular shuffles) performed better than post-decoding shuffles for both RUN and POST. The time bin permutation shuffle showed significantly lower log odds difference and had the poorest performance when using FPR-matched alpha levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 present comparative analysis results shown in Figure 3. The conclusion that pre-decoding shuffles are more efficacious (C35) is directly supported by the quantitative comparisons (C32-C34) with appropriate statistical controls (FPR-matched alpha levels).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "1455c603-f521-46ff-b6f6-328958db6f33",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Increasing the number of shuffles increased mean log odds difference and decreased false-positive rates. After FPR-matching to 5%, stricter methods (2+ shuffles) detected more replay events than single shuffle methods. Using 2+ shuffles achieved the highest proportion of events and largest mean log odds difference, while adding jump distance criteria performed poorly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 present a coherent set of findings from Figure 4 showing that multiple shuffles improve detection performance when properly controlled for false-positive rates. The counterintuitive finding that stricter methods detect more events after FPR-matching (C37) is well-explained and supported by specific quantitative examples.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "4ad8f051-0876-499d-aae8-3feeb610518d",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "For rank-order correlation analysis, using independent events (median spike time) maintained false-positive rate around 5%, while using all spikes increased it to around 17%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 report quantitative results with confidence intervals from Figure 5. The substantial difference in false-positive rates (5% vs 17%) demonstrates the importance of maintaining statistical independence assumptions, with clear implications for methodological choices.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "67f21e6a-d0fe-480e-add3-446c85c0bfd5",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Using FPR-matched alpha levels, all methods detected preplay events at approximately 10% (chance level for two tracks) with mean log odds difference near zero, indicating that preplay is indistinguishable from randomly generated spurious replay events regardless of detection method used.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 present a consistent finding across all tested methods that preplay events show no evidence of true replay. The convergence of multiple independent methods on the same null result (C43-C44) strongly supports the conclusion that preplay is indistinguishable from chance (C45).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "6f377c0c-69a1-4007-9037-20efc5080e27",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Using FPR-matched alpha levels, all methods produced similar track discriminability for POST (log odds ~1) and RUN (log odds ~2) replay events. However, linear and weighted correlation methods with 2+ shuffles detected higher proportions of significant events, showing significant improvement in overall detection performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 synthesize the comprehensive method comparison from Figure 6. The finding that track discriminability converges across methods after FPR-matching (C46, C48) while detection rates still vary (C47) provides important insights into method performance, with the conclusion about 2+ shuffles (C49) well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "4f3ae326-adbe-4628-920b-a02dafba606f",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The use of spatially smoothed place fields or spike bursts spanning multiple time bins violates the assumption of independent samples in statistical tests.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 presents a valid statistical concern that is fundamental to the interpretation of the results. This is a logical inference about statistical assumptions that is well-established in statistical theory and directly relevant to understanding why false-positive rates exceed nominal alpha levels.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "3311c4a6-291e-499b-a231-0e62222b0e23",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The introduction establishes that hippocampal replay is a well-documented phenomenon where sequential neural activity patterns from behavior spontaneously reactivate during rest/sleep, thought to support memory consolidation. However, replay lacks a ground truth for validation, requiring statistical inference based on comparison to shuffled distributions. Current methods (rank-order, weighted correlation, linear fit) vary substantially in implementation, leading to reproducibility issues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C18 provide comprehensive background supported by extensive citations to established literature. The characterization of the field's current state and methodological challenges (C17-C18) accurately frames the motivation for the study. These are well-established facts and observations from prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "653aaa49-ac8b-41ae-91c8-1ce8eaa041fc",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The presence of immediate sensory or other external inputs may help direct hippocampal place cell ensembles toward representing the local current environment during awake replay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C25 is explicitly speculative (marked as SPECULATION in evidence_type) and offers a potential explanation for observed differences between RUN and POST replay. While plausible, this mechanistic hypothesis is not directly tested in the study and remains uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    },
+    {
+      "id": "2653d61d-c1b8-4523-a3db-c0e0201d1b52",
+      "content_id": "3cf4db8d-b1f8-43a7-9695-d42eff4af318",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Replay events preferentially occur during sharp-wave ripples (150-250 Hz oscillations). Previous studies have used varying ripple power thresholds (2-7 SD above baseline), though many recent studies have opted not to use ripple power as a criterion, relying instead on multi-unit activity alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 accurately describe established findings and methodological trends in the field, supported by appropriate citations. These provide important context for understanding the study's investigation of ripple power thresholds.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T05:02:23.235851Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "63cd102a-9a6a-49ff-b886-e11795d58cd4",
+      "result_id": "d4840168-3d65-4405-9171-e02e8b730926"
+    },
+    {
+      "claim_id": "1ff5e8e3-ea31-44c3-bfc8-f8f02951d137",
+      "result_id": "d4840168-3d65-4405-9171-e02e8b730926"
+    },
+    {
+      "claim_id": "45fc8086-6215-4636-b80c-10d402c92ec2",
+      "result_id": "d4840168-3d65-4405-9171-e02e8b730926"
+    },
+    {
+      "claim_id": "0285924e-092a-4ac3-9310-dd638a6d4783",
+      "result_id": "d4840168-3d65-4405-9171-e02e8b730926"
+    },
+    {
+      "claim_id": "d9911dcf-0aee-4d95-a8ad-eca59cc2d87a",
+      "result_id": "d4840168-3d65-4405-9171-e02e8b730926"
+    },
+    {
+      "claim_id": "19f692a6-1131-422b-a187-503e31a60fc4",
+      "result_id": "d4840168-3d65-4405-9171-e02e8b730926"
+    },
+    {
+      "claim_id": "8f59eea3-f956-4a77-8a5c-e43cae6ede15",
+      "result_id": "d4840168-3d65-4405-9171-e02e8b730926"
+    },
+    {
+      "claim_id": "7aa00bae-f4df-4b8f-b8e9-57e5249ecf64",
+      "result_id": "d4840168-3d65-4405-9171-e02e8b730926"
+    },
+    {
+      "claim_id": "ad3dda69-d1cd-47a5-abbb-5125f4bfdd04",
+      "result_id": "d4840168-3d65-4405-9171-e02e8b730926"
+    },
+    {
+      "claim_id": "7ae19637-e56b-4b76-89c5-473286d2cddc",
+      "result_id": "d4840168-3d65-4405-9171-e02e8b730926"
+    },
+    {
+      "claim_id": "2b5a9bb0-7c88-4874-8350-0191f7da9e57",
+      "result_id": "b5543e8d-2634-4cdb-9101-6cabf365e210"
+    },
+    {
+      "claim_id": "9729956d-295a-4db4-be7d-aea86b701a50",
+      "result_id": "b5543e8d-2634-4cdb-9101-6cabf365e210"
+    },
+    {
+      "claim_id": "5f6920de-62d7-4aed-a030-16170116a6a1",
+      "result_id": "b5543e8d-2634-4cdb-9101-6cabf365e210"
+    },
+    {
+      "claim_id": "e28fb030-4928-41cc-8bf6-fc57ca341b8d",
+      "result_id": "7c1e2fe4-4ba6-41c9-99e1-72e2e313a583"
+    },
+    {
+      "claim_id": "c77f8028-39b9-452f-a813-2f6a02ee044c",
+      "result_id": "7c1e2fe4-4ba6-41c9-99e1-72e2e313a583"
+    },
+    {
+      "claim_id": "f88f338e-274e-492a-b7e9-c0a9fbeef063",
+      "result_id": "7c1e2fe4-4ba6-41c9-99e1-72e2e313a583"
+    },
+    {
+      "claim_id": "6a0a8169-f3cd-4267-aea0-e34870bcb38e",
+      "result_id": "9752c7a5-a498-4be3-bdef-45e523b88742"
+    },
+    {
+      "claim_id": "e4547ff5-d4e8-4a08-95b3-c85d80ccd8dd",
+      "result_id": "9752c7a5-a498-4be3-bdef-45e523b88742"
+    },
+    {
+      "claim_id": "8e456b06-4d37-4221-9a44-2179ed7cdbc2",
+      "result_id": "9752c7a5-a498-4be3-bdef-45e523b88742"
+    },
+    {
+      "claim_id": "2a70d4ca-05da-4a06-bc3e-59eaa91e4f0b",
+      "result_id": "9752c7a5-a498-4be3-bdef-45e523b88742"
+    },
+    {
+      "claim_id": "95f75080-ecc6-4c06-aafe-1db591a3b72b",
+      "result_id": "1455c603-f521-46ff-b6f6-328958db6f33"
+    },
+    {
+      "claim_id": "b46bb76d-6da4-45ad-8019-cdd6a3207472",
+      "result_id": "1455c603-f521-46ff-b6f6-328958db6f33"
+    },
+    {
+      "claim_id": "ea0a8a61-f084-4e77-ad8f-d4f02cc51276",
+      "result_id": "1455c603-f521-46ff-b6f6-328958db6f33"
+    },
+    {
+      "claim_id": "182d9361-dc10-48c2-a189-d4b6f2000248",
+      "result_id": "1455c603-f521-46ff-b6f6-328958db6f33"
+    },
+    {
+      "claim_id": "04f07ec4-4bfc-4b4e-bf14-44ede06375a9",
+      "result_id": "1455c603-f521-46ff-b6f6-328958db6f33"
+    },
+    {
+      "claim_id": "c76d6385-9a2c-476c-9d0b-4858d1630f9f",
+      "result_id": "4ad8f051-0876-499d-aae8-3feeb610518d"
+    },
+    {
+      "claim_id": "208a1e88-85de-4619-b5df-2dbcafae0276",
+      "result_id": "4ad8f051-0876-499d-aae8-3feeb610518d"
+    },
+    {
+      "claim_id": "789f993f-1915-405a-bfbc-572c3f9d0b3e",
+      "result_id": "67f21e6a-d0fe-480e-add3-446c85c0bfd5"
+    },
+    {
+      "claim_id": "64c433a8-f435-4269-bb58-cfdae9fbabf4",
+      "result_id": "67f21e6a-d0fe-480e-add3-446c85c0bfd5"
+    },
+    {
+      "claim_id": "7cf4e849-6ff3-4dbc-a900-127c0f841bfa",
+      "result_id": "67f21e6a-d0fe-480e-add3-446c85c0bfd5"
+    },
+    {
+      "claim_id": "6a48ea9e-a291-4ba9-80c7-2ebf5a598a6e",
+      "result_id": "6f377c0c-69a1-4007-9037-20efc5080e27"
+    },
+    {
+      "claim_id": "464f60b9-56d9-4c52-972a-7eaac7c27bc9",
+      "result_id": "6f377c0c-69a1-4007-9037-20efc5080e27"
+    },
+    {
+      "claim_id": "e3a91546-2bf8-4454-a819-9031d9311aa2",
+      "result_id": "6f377c0c-69a1-4007-9037-20efc5080e27"
+    },
+    {
+      "claim_id": "936bafce-e44d-4f42-a8c7-17e584560420",
+      "result_id": "6f377c0c-69a1-4007-9037-20efc5080e27"
+    },
+    {
+      "claim_id": "a75dd3ff-9a37-4b36-817b-79273a475a20",
+      "result_id": "4f3ae326-adbe-4628-920b-a02dafba606f"
+    },
+    {
+      "claim_id": "f3069258-0a81-41ab-a03a-1bb29b1b710e",
+      "result_id": "3311c4a6-291e-499b-a231-0e62222b0e23"
+    },
+    {
+      "claim_id": "51f162d9-c9b0-4cf3-a887-0ea5d4ee756a",
+      "result_id": "3311c4a6-291e-499b-a231-0e62222b0e23"
+    },
+    {
+      "claim_id": "9a35e650-4340-40d5-b413-d32481f78b9f",
+      "result_id": "3311c4a6-291e-499b-a231-0e62222b0e23"
+    },
+    {
+      "claim_id": "9a62caef-9796-4137-8c78-c251886a11be",
+      "result_id": "3311c4a6-291e-499b-a231-0e62222b0e23"
+    },
+    {
+      "claim_id": "9dd64735-448c-4ad8-acfc-a0415dfa6c96",
+      "result_id": "3311c4a6-291e-499b-a231-0e62222b0e23"
+    },
+    {
+      "claim_id": "9cec7568-dfad-423e-90b7-138ae24bb355",
+      "result_id": "3311c4a6-291e-499b-a231-0e62222b0e23"
+    },
+    {
+      "claim_id": "7bd1a797-2d3c-4fdc-a0b1-3165de8bb1c6",
+      "result_id": "3311c4a6-291e-499b-a231-0e62222b0e23"
+    },
+    {
+      "claim_id": "4be7c02d-7919-401c-802d-6e7636d1c7a2",
+      "result_id": "3311c4a6-291e-499b-a231-0e62222b0e23"
+    },
+    {
+      "claim_id": "80d141f2-14be-4b74-9e70-3370f8156ebf",
+      "result_id": "3311c4a6-291e-499b-a231-0e62222b0e23"
+    },
+    {
+      "claim_id": "e4857c5f-b8f7-4ffe-9105-f476e382952a",
+      "result_id": "3311c4a6-291e-499b-a231-0e62222b0e23"
+    },
+    {
+      "claim_id": "4ffcfc3f-cd90-405d-b438-1b9c0bef002e",
+      "result_id": "3311c4a6-291e-499b-a231-0e62222b0e23"
+    },
+    {
+      "claim_id": "31966d87-1ee1-4e06-aa9b-88d5d6397535",
+      "result_id": "3311c4a6-291e-499b-a231-0e62222b0e23"
+    },
+    {
+      "claim_id": "12b09b27-0fdd-45b5-bcb0-772007597ba5",
+      "result_id": "3311c4a6-291e-499b-a231-0e62222b0e23"
+    },
+    {
+      "claim_id": "b6989f9f-53d4-463e-8cfd-117584924b72",
+      "result_id": "3311c4a6-291e-499b-a231-0e62222b0e23"
+    },
+    {
+      "claim_id": "0c012ff4-b3ee-4e9f-b905-815d097f90b1",
+      "result_id": "3311c4a6-291e-499b-a231-0e62222b0e23"
+    },
+    {
+      "claim_id": "1315a987-bf7c-42fe-abed-007c128d9651",
+      "result_id": "3311c4a6-291e-499b-a231-0e62222b0e23"
+    },
+    {
+      "claim_id": "599554c5-a8f6-4058-b05c-c46dc4144d1c",
+      "result_id": "3311c4a6-291e-499b-a231-0e62222b0e23"
+    },
+    {
+      "claim_id": "5c475e0d-c041-46c4-b9ae-b83a3afcceb4",
+      "result_id": "3311c4a6-291e-499b-a231-0e62222b0e23"
+    },
+    {
+      "claim_id": "eecadc2b-ffee-43d1-a748-13fad8812078",
+      "result_id": "653aaa49-ac8b-41ae-91c8-1ce8eaa041fc"
+    },
+    {
+      "claim_id": "cf91b0e9-8b29-4930-b48f-8b9842a7bda7",
+      "result_id": "2653d61d-c1b8-4523-a3db-c0e0201d1b52"
+    },
+    {
+      "claim_id": "6fba2f0f-4361-41c2-a042-b787d8579919",
+      "result_id": "2653d61d-c1b8-4523-a3db-c0e0201d1b52"
+    },
+    {
+      "claim_id": "e58f76ac-f728-4043-ab0d-06bc68c76b65",
+      "result_id": "2653d61d-c1b8-4523-a3db-c0e0201d1b52"
+    }
+  ],
+  "comparisons": []
+}

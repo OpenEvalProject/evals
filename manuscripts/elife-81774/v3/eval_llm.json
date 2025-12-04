@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C41",
+      "C96"
+    ],
+    "result": "Mice perform more accurate auditory judgments when baseline activity in the auditory cortex is elevated and desynchronized before stimulus onset, but only after error trials. This relationship is occluded when previous trial outcome is ignored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C41, and C96 collectively establish the main finding. The GLMM analysis in Figure 3C-F demonstrates significant positive effects of FRI and negative effects of SynchI on accuracy after errors (p=0.0056 and p=0.0124), while Figure 3A shows no effect when outcome is not considered. The psychometric analysis in Figure 3D shows 68% larger slope in favorable baseline states after errors (p=0.04).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C60",
+      "C97",
+      "C98"
+    ],
+    "result": "The outcome-dependent effect of cortical state on accuracy is not explained by slow signal trends or by unique cortical states present only after errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C60, C97, and C98 rule out alternative explanations. The innovation analysis (Figure 2, Figure 3\u2014figure supplement 5) removes slow trends, and Figure 4B-C shows overlapping distributions of FRI and SynchI after errors and correct trials. Figure 3H demonstrates no predictive power when conditioning on next trial outcome, ruling out the epoch hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C54",
+      "C56",
+      "C57"
+    ],
+    "result": "Errors gate the effect of cortical state fluctuations on discrimination accuracy, as evidenced by asymmetric temporal relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C54, C56, and C57 establish the gating mechanism. Figure 3H-I shows that baseline fluctuations predict accuracy only when the previous trial was an error, not when the next trial is an error. This temporal asymmetry supports a causal gating role for errors rather than marking epochs of correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Facial movements and pupil size during baseline were not associated with discrimination accuracy but predicted measures of responsivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 are supported by GLMM analyses. Figure 3C,E shows no significant effects of OpticFI or PupilSI on accuracy (p>0.05), while Figure 5D,F demonstrates significant associations with premature responses and skips. The dissociation between accuracy and responsivity measures is clearly established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C123"
+    ],
+    "result": "SynchI is weakly correlated with OpticFI and PupilSI, and cortical fluctuations are shaped by multiple factors including neuromodulation, locomotion, and arousal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is directly shown in Figure 2C-D with weak correlations between SynchI and both OpticFI and PupilSI. Claim C123 is supported by multiple citations to previous literature establishing the diverse influences on cortical state. The innovation analysis successfully decorrelates these signals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C64"
+    ],
+    "result": "Stimulus category can be decoded from evoked neuronal responses, and the favorable cortical state after errors is associated with better stimulus discriminability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C62, and C64 are supported by the GLMM analysis in Figure 3\u2014figure supplement 6D. The main effect of stimulus projection is significant regardless of outcome, and the positive interaction between FRI and stimulus projection after errors is significant (p=0.002), though the SynchI interaction does not reach significance (p=0.4).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Choice-related signals in the evoked activity of recorded neurons were too weak to be detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C66 are supported by Figure 3\u2014figure supplement 6E showing no main effect of choice projection. The authors appropriately acknowledge this limitation and provide reasonable explanations related to small effect sizes and limited trial numbers, particularly after errors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C73",
+      "C74"
+    ],
+    "result": "The distributions of cortical state measures (SynchI and FRI) largely overlap after errors and correct trials, and trial outcome has no effect on baseline synchrony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C68, C73, and C74 are directly supported by Figure 4B-C showing overlapping distributions and Figure 4E showing SynchI cannot predict previous outcome. The d' analysis in Figure 4D shows no significant differences. This establishes that errors do not create unique cortical states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Previous-trial outcome is best explained by pupil size in the subsequent baseline, as correct trials are followed by licking which causes pupil dilation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C71 are supported by the GLMM analysis in Figure 4E and the cross-correlation in Figure 4F. The relationship is mechanistically explained by the citation to Cazettes et al., 2021 linking licking to pupil dilation. This provides a clear physiological explanation for the pupil-outcome relationship.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Choice accuracy varied as a function of reaction time, with very premature responses being most inaccurate and accuracy increasing with RT during the delay period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are directly shown in Figure 5C. The relationship between RT and accuracy is clearly visualized, showing the expected pattern for a delayed response task. This descriptive result is well-supported by the data presentation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C86"
+    ],
+    "result": "Baseline pupil size and synchronization were associated with premature responses, which were more likely when the baseline was more synchronized and the pupil was smaller.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140, C141, and C86 are supported by GLMM analysis in Figure 5D (p=0.02 for PupilSI, p=0.09 for SynchI). The finding is contextualized with citations linking pupil dilation to inhibitory control (Wang et al., 2015; van der Wel and van Steenbergen, 2018), providing theoretical support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C138",
+      "C139"
+    ],
+    "result": "Cortical desynchronization had no association with engagement, but facial movement during baseline significantly predicted skips, indicating mice move their faces more when distracted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C138, and C139 are supported by GLMM analysis in Figure 5F showing no effect of SynchI (p=0.90) but significant effect of OpticFI (p=0.0006) on skips. The inference that facial movement indicates distraction is reasonable given the behavioral context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Post-error slowing was observed despite the delayed response task structure, suggesting a strong connection between errors and subsequent reaction time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88 and C89 are supported by GLMM analysis in Figure 5\u2014figure supplement 1B. The observation of post-error slowing in a delayed response task is notable and the inference about the strength of the error-RT connection is reasonable, though the magnitude of the effect is not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Cortical state affected sensitivity (not criterion) and only after errors, with a monotonic but accelerating dependence of accuracy on FRI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C50 are supported by supplementary analyses. Figure 3\u2014figure supplement 1B shows cortical state is only predictive as an interaction term after errors. Figure 3\u2014figure supplement 2A-B demonstrates the only significant quadratic term is for FRI after errors, revealing the accelerating relationship.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The predictive power of FRI and SynchI on accuracy degrades with smaller or displaced time windows, suggesting baseline state changes on a timescale of seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C53 are supported by Figure 3\u2014figure supplement 3 showing gradual degradation with window manipulation. The inference about the timescale of baseline state changes is reasonable given the systematic relationship between window parameters and predictive power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The task samples a wide range of pupil sizes and cortical states regardless of inter-trial interval, with distributions reaching steady state at ITIs of approximately 10 seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 are supported by analyses in Figure 1\u2014figure supplement 1H-J. The quantile linear regression provides statistical support for the steady-state conclusion (95% CIs include zero for ITIs >9s). The comparison with the foraging task demonstrates overlapping constricted pupil ranges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "Electrophysiological recordings were made in an acute configuration, targeting the same location in the auditory cortex of each hemisphere for three consecutive days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 describes the recording methodology. This is supported by the Methods section and Figure 1\u2014figure supplement 1A showing probe placement. The acute recording strategy is clearly documented, though the authors acknowledge it limits spatial resolution analysis (C99).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C17"
+    ],
+    "result": "Prior literature establishes that sensory responses are more discriminable with desynchronized baseline activity, but desynchronization has not generally been associated with more accurate perceptual decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C17 summarize prior literature with appropriate citations. These claims establish the context and motivation for the study. The citations are appropriate and the characterization of the literature appears accurate based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C107",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The mechanistic implementation of outcome-dependent gating likely involves anterior cingulate and medial frontal areas, with errors producing changes in functional connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107, C114, C115, and C116 are speculative mechanistic interpretations supported by citations to relevant literature (Norman et al., 2021; Botvinick et al., 2001) but not directly tested in this study. The speculation is reasonable and well-grounded in prior work, but remains a hypothesis requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Mice might operate in a 'flow'-like state during correct trials where cortical state fluctuations are not relevant for accurate choices, contrasting with error-triggered cognitive control states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C151, C152, and C153 propose a speculative framework to explain the outcome-dependent effects. While the 'flow' hypothesis is creative and supported by citations to relevant human literature (Csikszentmihalyi, 1990; Ulrich et al., 2016), it remains speculative and would require additional experiments to test directly.",
+    "result_type": "MINOR"
+  }
+]

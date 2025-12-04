@@ -1,0 +1,391 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C45",
+      "C46"
+    ],
+    "result": "TCMDC-125334 demonstrates collateral sensitivity against DSM265-resistant DHODH mutants. The compound showed activity against all eight DHODH mutant lines tested, with varying degrees of sensitivity (1.3-fold to 12-fold more sensitive than wildtype), while all mutant lines were at least 10-fold resistant to DSM265.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39, C45, and C46 are well-supported by dose-response assay data presented in Figure 1 and Table 1. The hierarchical clustering analysis and EC50 measurements provide clear evidence of collateral sensitivity patterns. The experimental design includes appropriate controls and multiple biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C51",
+      "C52",
+      "C53",
+      "C58",
+      "C59",
+      "C99",
+      "C100"
+    ],
+    "result": "Copy number variation (CNV) of the dhodh locus is the most common resistance mechanism to TCMDC-125334. In selections with wildtype parasites, CNV was observed in multiple independent populations, conferring 2- to 3-fold resistance after two rounds of treatment and 5- to 8-fold resistance after extended selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C51-C53, C58-C59, C99-C100 are supported by qPCR and whole-genome sequencing data from multiple independent selection experiments (Figure 2, Figure 2\u2014figure supplements 1-2). The correlation between CNV levels and resistance phenotypes is well-documented. However, the claim that CNV is the \"most common\" mechanism is based on limited sample size (6 selections total).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C55",
+      "C56",
+      "C57",
+      "C127"
+    ],
+    "result": "The DHODH I263S mutation confers selective resistance to TCMDC-125334 but not DSM265. This mutation resulted in 3-fold resistance to TCMDC-125334 and 13-fold resistance to IDI-6273, while maintaining sensitivity to DSM265, contrasting with the DHODH I263F mutation at the same position which confers ~100-fold resistance to DSM265.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C55-C57, C127 are well-supported by dose-response assays and whole-genome sequencing data (Figure 2, Table 1). The position-specific effects of different amino acid substitutions at I263 are clearly demonstrated. Statistical significance is appropriately assessed with Kruskal-Wallis tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Sequential selection of DSM265-resistant DHODH C276Y parasites with TCMDC-125334 yields additional genetic changes rather than reversion to wildtype. Parasites acquired either increased dhodh copy number or the F227Y point mutation, resulting in decreased sensitivity to TCMDC-125334 while maintaining high-level resistance to DSM265 (EC50 >200 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C66-C74 are supported by sequential selection experiments with dose-response assays and whole-genome sequencing (Figure 3, Table 2). The data clearly show that parasites retained the C276Y mutation and acquired additional changes. However, the conclusion that this \"does not restore sensitivity to DSM265\" (C73) is somewhat circular given the experimental design selected for resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C112",
+      "C113",
+      "C117"
+    ],
+    "result": "The DHODH C276Y/F227Y double mutant exhibits additive epistasis, resulting in extreme resistance to DSM265 (~1000-fold) while maintaining collateral sensitivity to TCMDC-125334 (~2-fold). The phenotype of the double mutant is consistent with the sum of individual mutation effects, ruling out negative epistatic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79, C112-C113, C117 are well-supported by dose-response data comparing single and double mutants (Figure 3F-I, Table 3). The additivity analysis is appropriate and clearly presented. However, the claim of \"additivity\" would be strengthened by quantitative epistasis calculations rather than qualitative assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C80",
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C95",
+      "C121",
+      "C122"
+    ],
+    "result": "Combination treatment with DSM265 and TCMDC-125334 delays but does not prevent resistance emergence. After three treatment cycles (63-73 days), cross-resistant parasites with the DHODH V532A mutation emerged, showing 4- to 6-fold resistance to TCMDC-125334 and 16- to 20-fold resistance to DSM265.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C80, C83, C85-C87, C95, C121-C122 are supported by combination selection experiments with dose-response assays and sequencing data (Figure 4, Table 4). The delayed emergence compared to single-drug treatment is documented. However, the conclusion that the strategy \"fails\" is based on only two successful selections out of three attempts, limiting generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C92",
+      "C93",
+      "C94",
+      "C98"
+    ],
+    "result": "The DHODH V532A mutation does not exhibit a fitness cost in vitro. Competitive growth assays showed the V532A mutant maintained ~50% frequency over 28 days when mixed 1:1 with wildtype parasites, with consistent intermediate dose-response phenotypes throughout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C92-C94, C98 are supported by competitive growth assay data using both genotypic (whole-genome sequencing) and phenotypic (dose-response) measurements (Figure 6). The experimental design is appropriate for assessing relative fitness. However, in vitro fitness may not reflect in vivo fitness in the human host.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C131",
+      "C133"
+    ],
+    "result": "Molecular docking simulations suggest TCMDC-125334 binds in the same hydrophobic pocket as DSM265 and other DHODH inhibitors. The V532A mutation is predicted to disrupt hydrophobic interactions, consistent with observed resistance, while the C276Y mutation is predicted to increase binding affinity, consistent with collateral sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C91, C131, C133 are based on in silico molecular docking simulations (Figure 5). While the predictions are consistent with experimental observations, computational docking has known limitations and the results are not experimentally validated. Crystal structures with TCMDC-125334 bound would be needed to confirm the binding mode. The claim about C276Y increased affinity (C91) is particularly speculative without experimental binding data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Hierarchical clustering of cross-resistance profiles reveals structure-activity relationships among DHODH inhibitors. Related triazolopyrimidine compounds cluster together, as do structurally similar compounds TCMDC-123823, TCMDC-123545, and TCMDC-123566, while certain mutants like DHODH L531F show unique sensitivity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by hierarchical clustering analysis of dose-response data (Figure 1B, Figure 1\u2014figure supplement 1). The clustering methodology is appropriate (Euclidean distance, average linkage). However, the structure-activity relationship claims would be strengthened by quantitative chemical similarity analysis rather than visual inspection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "TCMDC-125334 specifically targets DHODH, as confirmed by target validation experiments. Expression of Saccharomyces cerevisiae DHODH (ScDHODH) ablates TCMDC-125334 activity, and proguanil co-treatment does not restore activity, distinguishing DHODH inhibition from cytochrome bc1 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by citations to prior work (Ross et al., 2018; Dong et al., 2011; Painter et al., 2007). The ScDHODH bypass system is an established method for target validation. However, these are not new results from the current study but rather confirmatory citations to previous work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "DSM265 resistance emerges rapidly in vitro, with resistant parasites appearing after just one treatment round (7 days in compound-free media). This rapid emergence is consistent with the minimum inoculation of resistance (10^5.5) being much lower than the starting population (10^8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by experimental data (Figure 2\u2014figure supplement 3) and citation to prior work (Mandt et al., 2019; Duffey et al., 2021). The rapid emergence is well-documented. However, this serves primarily as a control experiment rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C138"
+    ],
+    "result": "CNV confers only moderate cross-resistance across DHODH inhibitor classes and is less evolutionarily stable than point mutations. Additional dhodh copies are lost over time in culture, and CNV appears to be a general resistance mechanism for multiple DHODH inhibitor chemical classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105, C138 are supported by dose-response data from CNV-containing parasites and citation to prior work (Guler et al., 2013). The moderate resistance levels are clearly documented. However, the evolutionary stability claim relies primarily on a single citation rather than data from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The evolutionary outcome of sequential selection (reversion vs. secondary mutation) may depend on the fitness cost of the initial resistance mutation. The fit DHODH C276Y line acquired additional mutations rather than reverting to wildtype, contrasting with the less fit DHODH E182D line which reverted when treated with a mutant-selective inhibitor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C111 are supported by comparison of current results with prior work (citations to Lukens et al., 2014; Ross et al., 2014; Mandt et al., 2019; Barbosa et al., 2019). The fitness-dependent evolutionary trajectory hypothesis is reasonable but based on comparing only two examples. More systematic testing would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Epistasis is an important factor in determining the evolution of resistance and cross-resistance/collateral sensitivity. Negative epistasis constrains pathways to higher-level resistance and favors re-sensitization to wildtype, while additive or positive epistasis can open pathways to multidrug resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 are supported by multiple citations to the literature (Rosenkilde et al., 2019; Barbosa et al., 2019; Apjok et al., 2019; Lozovsky et al., 2009; Dellus-Gur et al., 2015). These are well-established concepts in evolutionary biology applied to the current context. However, these are primarily literature-based claims rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C124"
+    ],
+    "result": "The diversity of evolutionarily competitive dhodh mutations enables resistance to emerge despite collateral sensitivity patterns. Cross-resistant variants eventually emerge with sufficient population size or repeated selection attempts, and the parasite burden in infected humans (10^10-10^13) likely provides sufficient population size for cross-resistance to emerge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C120, C124 combine experimental observations with extrapolation to clinical settings. While the experimental data on diverse resistance pathways is solid, the inference about clinical relevance (C124) is speculative. The comparison of in vitro population size (10^8) to in vivo burden (10^10-10^13) is logical but not experimentally validated in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C130",
+      "C137"
+    ],
+    "result": "The DHODH inhibitor binding pocket exhibits high mutational flexibility. Prior to this work, 13 individual point mutations and 2 double mutations were known; this study identified two additional point mutations (I263S and V532A) and the C276Y/F227Y double mutant, demonstrating that the pocket accommodates diverse chemical structures while tolerating numerous resistance mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127, C130, C137 are supported by the cumulative resistance data from this and prior studies. The identification of new mutations is well-documented. However, the conclusion about \"high mutational flexibility\" and \"resistance liability\" (C130, C137) is somewhat subjective and would benefit from quantitative comparison to other drug targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12"
+    ],
+    "result": "Drug resistance is a major obstacle to malaria control and a significant public health threat. Resistance has emerged to all antimalarial drugs in clinical use, including artemisinin combination therapies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C12 are general background statements supported by citations (Jee et al., 2018; Haldar et al., 2018). These are well-established facts in the field rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "DHODH is a validated antimalarial drug target. The enzyme catalyzes the rate-limiting step of pyrimidine biosynthesis, is essential for parasite survival due to lack of salvage pathways, and has been identified in multiple high-throughput screens. DSM265 was developed as a clinical candidate and showed promising activity in pre-clinical and clinical studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 are background information supported by multiple citations. These establish the rationale for studying DHODH inhibitors but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Resistance to DSM265 emerges rapidly both in vitro and in vivo, primarily through point mutations in dhodh. Clinical trials showed 2 of 24 patients failed treatment with mutations including C276Y, C276F, and G181S, which were also observed in laboratory selections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 are supported by citations to prior work (Mandt et al., 2019; Llanos-Cuentas et al., 2018; Phillips et al., 2015; White et al., 2019). These provide important context but are not new findings from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Combination therapy is a common strategy to counter resistance evolution, based on the principle that simultaneous resistance mutations are less probable than individual mutations. However, multidrug resistance has emerged in major pathogens, and some inhibitor combinations can accelerate resistance emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 are general principles supported by multiple citations. These provide the conceptual framework for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Collateral sensitivity has been observed across various antimicrobial classes and can be exploited through sequential cycling or simultaneous combination strategies. In Plasmodium, collateral sensitivity has been documented for multiple drug targets including PfCRT, proteasome subunits, PfATP4, cytochrome b, and DHODH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C38 are background information supported by extensive citations. These establish the rationale for the collateral sensitivity approach but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "Crystal structures show that DSM265, Genz669178, and IDI-6273 all bind within the same flexible pocket of the DHODH enzyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 are supported by citations to prior structural work (Phillips et al., 2015; Lukens et al., 2014) and Figure 1A. This is established structural knowledge used to interpret the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C132",
+      "C135",
+      "C136"
+    ],
+    "result": "Future work is needed to understand collateral sensitivity mechanisms, test combination strategies in vivo, and identify additional resistance mutations through further selections or deep mutational scanning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132, C135-C136 are statements about study limitations and future directions. These are reasonable suggestions but not results from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C139"
+    ],
+    "result": "Targeting DHODH with antimalarial drugs has a high risk of resistance emergence, bringing into question the usefulness of pursuing further DHODH inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C139 is a broad conclusion that extends beyond the data presented. While the study demonstrates diverse resistance pathways to two DHODH inhibitors, the conclusion that the entire target class should be abandoned is not fully supported. The study does not compare DHODH to other antimalarial targets, and the clinical relevance of in vitro resistance frequencies is uncertain. This represents speculation rather than a data-driven conclusion.",
+    "result_type": "MAJOR"
+  }
+]

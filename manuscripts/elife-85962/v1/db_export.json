@@ -1,0 +1,2178 @@
+{
+  "submission": {
+    "id": "a4317cc2-240d-414a-9c1b-c031e96c1c3f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T04:24:54.919390Z",
+    "updated_at": "2025-12-04T04:24:54.919390Z"
+  },
+  "content": [
+    {
+      "id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "submission_id": "a4317cc2-240d-414a-9c1b-c031e96c1c3f",
+      "content_type": "manuscript",
+      "content_text": "# The ER tether VAPA is required for proper cell motility and anchors ER-PM contact sites to focal adhesions\n\n## Authors\n\n- Hugo Siegfried<sup>1</sup>\n- Georges Farkouh<sup>1</sup>\n- R\u00e9mi Le Borgne<sup>1</sup>\n- Catherine Pioche-Durieu<sup>1</sup> ([ORCID: 0000-0003-0988-1169](https://orcid.org/0000-0003-0988-1169))\n- Tha\u00efs De Azevedo Laplace<sup>1</sup>\n- Agathe Verraes<sup>1</sup>\n- Lucien Daunas<sup>1</sup>\n- Jean-Marc Verbavatz<sup>1</sup> \u2020\n- M\u00e9lina L Heuz\u00e9<sup>1</sup> ([ORCID: 0000-0002-4271-2706](https://orcid.org/0000-0002-4271-2706)) \u2020\n\n### Affiliations\n\n1. Universit\u00e9 Paris Cit\u00e9, CNRS, Institut Jacques Monod, F-75013 Paris France ([ROR:02c5gc203](https://ror.org/02c5gc203))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCell motility processes highly depend on the membrane distribution of Phosphoinositides, giving rise to cytoskeleton reshaping and membrane trafficking events. Membrane contact sites serve as platforms for direct lipid exchange and calcium fluxes between two organelles. Here, we show that VAPA, an ER transmembrane contact site tether, plays a crucial role during cell motility. CaCo2 adenocarcinoma epithelial cells depleted for VAPA exhibit several collective and individual motility defects, disorganized actin cytoskeleton and altered protrusive activity. During migration, VAPA is required for the maintenance of PI(4)P and PI(4,5)P2 levels at the plasma membrane, but not for PI(4)P homeostasis in the Golgi and endosomal compartments. Importantly, we show that VAPA regulates the dynamics of focal adhesions (FA) through its MSP domain, is essential to stabilize and anchor ventral ER-PM contact sites to FA, and mediates microtubule-dependent FA disassembly. To conclude, our results reveal unknown functions for VAPA-mediated membrane contact sites during cell motility and provide a dynamic picture of ER-PM contact sites connection with FA mediated by VAPA.\n\n## Introduction\n\nThe lipid identity of membrane compartments is highly regulated within cells and plays a key role in a diversity of cellular processes. During cell motility, lipids, in particular Phosphoinositides (PInst), are local determinants of molecular events leading to cell polarization, the formation of actin-driven protrusions and turnover of focal adhesions (FA) (Hammond and Burke, 2020; Tsujita and Itoh, 2015). PI(4,5)P2, the most abundant PInst at the plasma membrane, controls FA dynamics by regulating the binding of talin to integrins (Martel et al., 2001; Thapa et al., 2012) and the polarized trafficking of integrins (Nader et al., 2016). PI(4,5)P2 is described as a modulator of actin cytoskeleton organization and dynamics, either directly through the recruitment of several actin-binding proteins (Senju et al., 2017), or indirectly by regulating the activation of RhoA (Lacalle et al., 2007; Xu et al., 2010) and Cdc42 GTPases (Daste et al., 2017). The product of PI(4,5)P2 phosphorylation, PI(3,4,5)P3, also plays a crucial role in cell motility at the plasma membrane (PM). Several in vitro and in vivo studies have shown that PI(3,4,5)P3 acts as a \u2018compass lipid\u2019 that stabilizes the direction of migration (Funamoto et al., 2002; Hannigan et al., 2002; Lam et al., 2012) through the activation of Rac1 (Kunisaki et al., 2006; Welch et al., 2002; Yoshii et al., 1999).\n\nMembrane lipids are transported through vesicular transport, but also through non-vesicular transport at so-named membrane contact sites (MCS; Jackson et al., 2016). MCS are sites of close apposition between two membranes, often the endoplasmic reticulum (ER) membrane and the membrane of another organelle, at a distance of less than 80 nm, where exchanges of lipids, Ca2 +and metabolites take place (Prinz et al., 2020; Scorrano et al., 2019; Wu et al., 2018). While the activity of lipid transfer at MCS was observed decades ago (Vance, 1990), their implication in patho-physiological processes such as cell motility has gained interest only recently (Prinz et al., 2020).\n\nIn this work, we studied the role of VAPA, a tethering protein at ER-mediated MCS during cell motility. VAPA is a member of the highly conserved VAP family of proteins, together with VAPB. VAP proteins are integral ER membrane proteins bridging the ER membrane to the membrane of other compartments by assembling with numerous partners including lipid transfer proteins that bind the target membrane, such as Nir proteins and OSBP-related (ORP) proteins. The assembly of most of VAP complexes relies on the interaction between the conserved N-terminal MSP (Major Sperm Protein) domain of VAPs and the FFAT (2 phenyl alanines in an acidic tract) motif on their partner. VAPs also contain a central coiled-coil dimerization domain and an ER transmembrane domain in their C-terminus (Murphy and Levine, 2016). VAP proteins are involved in several cellular functions such as lipid transport, membrane trafficking, the unfolded protein response pathway and microtubules organization (Kamemura and Chihara, 2019; Lev et al., 2008). VAP complexes with lipid transfer proteins control the homeostasis of PInst and sterols at various intracellular locations. At ER-PM contact sites, the VAP/Nir2 and VAP/ORP3 complexes regulate the transport of Phosphoinositol (PI) and PI(4)P respectively. Together with membrane-associated kinases and phosphatases, they contribute to modulating locally the pool of PI(4)P, PI(4,5)P2 and PI(3,4,5)P3 at the PM (Chang and Liou, 2015; Guly\u00e1s et al., 2020; Kim et al., 2013). In addition, the association of VAPs with OSBP-related proteins modifies the level of PI(4)P at endosomal membranes and at the Golgi, therefore regulating trafficking events in these two compartments (Dong et al., 2016; Kawasaki et al., 2022; Mesmin et al., 2013). Moreover, VAP proteins mediate cholesterol transport at ER-Golgi, ER-endosome and ER-peroxisome MCS (Dong et al., 2019; Hua et al., 2017; Mesmin et al., 2013; Wilhelm et al., 2017). Depending on the cell type and organism, the loss of VAP proteins can lead to either a reduction (Peretti et al., 2008) or an accumulation (Mao et al., 2019; Wakana et al., 2021; Subra et al., 2023) of PI(4)P levels in the Golgi membranes and its redistribution on endosomes (Dong et al., 2016). In yeast, depleting VAP orthologs results in the accumulation of PI(4)P at the plasma membrane (Stefan et al., 2011).\n\nAltogether, these observations prompted us to hypothesize that VAPs, by regulating PInst homeostasis, could contribute to cell motility processes. Importantly, two partners of VAPs at ER-PM contact sites, ORP3 and Nir2, have been shown to regulate cell motility processes through different pathways (D\u2019Souza et al., 2020; Keinan et al., 2014; Lehto et al., 2008; Weber-Boyvat et al., 2015). As a first-line approach, we decided to investigate the effects of VAPA depletion alone on the motility of human adenocarcinoma Caco2 cells. We observed strong motility defects, suggesting that VAPA is required for proper cell motility and that VAPB is not sufficient to compensate for the loss of VAPA. We then aimed to understand the precise function of VAPA in this process. Here, we show that the depletion of VAPA strongly impacts the organization of the actin cytoskeleton, the dynamics of protrusions and the turnover of FA during migration. The role of VAPA stands mainly at the PM where it regulates PI(4)P and PI(4,5)P2 homeostasis, the stability of ER-PM contact sites and their local anchoring at FA, thereby regulating FA disassembly.\n\n## Results\n\n### VAPA is required for proper cell migration and cell spreading\n\nTo assess the role of VAPA during cell motility, we generated, using CRISPR/Cas9 gene editing, stable Caco-2 cells either depleted for VAPA (VAPA KO), or expressing non-targeting sequences (Control). VAPA KO cells exhibited a complete and specific depletion of VAPA protein (Figure 1A and B). In VAPA KO cells, VAPB was well distributed throughout the ER and its levels were slightly increased, albeit non significant (Figure 1\u2014figure supplement 1). We first assessed the capacity of VAPA KO and Control monolayers to migrate collectively upon space release on fibronectin-coated glass. In order to avoid any proliferation bias, we treated the cells with mitomycin. In these conditions, VAPA KO monolayers filled the open space less efficiently than Control monolayers (Figure 1D and E, Video 1). The analysis of leader cells trajectories revealed that VAPA KO leader cells were displacing faster but with a remarkable lack of directionality compared to Control leader cells (Figure 1F and G), which could account for the slower colonization capacity VAPA KO monolayers. This collective migration impairment was at least partially cell-intrinsic, as single VAPA KO cells displacing on a 2D surface exhibited identical defects compared to VAPA KO leader cells in monolayers (Figure 1H\u2013J). Moreover, upon plating, VAPA KO cells were spreading much faster than Control cells, also indicating a cell-autonomous defect arising in these cells (Figure 1K and L). In order to determine the contribution of the MSP domain of VAPA in these phenotypes, we generated stable VAPA KO cell lines expressing a Wild-type form of VAPA (named VAPA KO +WT) or an MSP-mutated form of VAPA (named VAPA KO +KDMD) bearing the K94D M96D mutation that was previously shown to abolish FFAT binding (Kaiser et al., 2005). Both VAPA constructs, fused to mCherry, localized to the ER (Figure 1C). The expression of mCherry-VAPA WT restored either partially or totally the collective migration capacity of VAPA KO cells (Figure 1D\u2013G and Video 1) and their spreading behaviour (Figure 1K and L), indicating that the loss of VAPA was indeed responsible for the defects observed in VAPA KO cells. Importantly, the VAPA KDMD mutant failed to rescue these phenotypes in VAPA KO cells (Figure 1D\u2013G , and K\u2013L and Video 1). Altogether, our results identify VAPA as a novel actor of collective and individual cell motility processes, and point to a determinant role of the FFAT-binding MSP domain in VAPA protein.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85962/elife-85962-fig1-v1.jpg)\n\n**Figure 1.:** (A) Left panel: Representative immunoblots showing the levels of VAPA and Tubulin in Control and VAPA KO cells. Tubulin expression level was used as loading control. Right panel: quantification of relative VAPA density in Control and VAPA KO cells normalized to Tubulin levels (mean \u00b1 SEM from three independent experiments). Data were analysed using a single-sample Student t-test. (B) Confocal images of Control and VAPA KO cells immunostained for VAPA. Scale bar 20 \u00b5m. (C) Confocal images of VAPA KO leader cells expressing wild-type mCherry-VAPA (VAPA KO +WT) or mCherry-VAPA KD/MD (VAPA KO +KDMD). Scale bar 10 \u00b5m. (D) Phase contrast images of Control, VAPA KO, VAPA KO +WT and VAPA KO +KDMD cells migrating collectively 48 hr after space release. For each condition, the trajectory of a leader cell over 20 hr is shown in green. Scale bar: 100 \u00b5m. (E) Analysis of relative colonized surface within the last 20 h by Control, VAPA KO, VAPA KO +WT and VAPA KO +KDMD cells (mean \u00b1 SEM from three independent experiments). Data were analysed using a One-way Anova paired test. (F, G) Analysis of Control, VAPA KO, VAPA KO +WT and VAPA KO +KDMD leader cell velocity (F) n=40, 40, 3,9 and 39 cells respectively from three independent experiments and directionality coefficient (G) n=34, 36, 32, and 26 cells respectively from three independent experiments. Data were analysed using a One-way Anova Kruskal-Wallis test. (H) Phase contrast images of a Control and VAPA KO individual cell displacing on fibronectin-coated glass during 5 minutes. The cell trajectory is shown in blue. Scale bar: 20 \u00b5m. (I, J) Analysis of cell velocity (I) and directionality coefficient (J) of Control and VAPA KO individual cells displacing on fibronectin-coated glass during at least 3 h (mean \u00b1 SEM; Control: n=64 cells; VAPA KO: n=33 cells from two independent experiments). data were analysed using non parametric Mann-Whitney t-test. (K) Epifluorescence images of Control, VAPA KO, VAPA KO +WT and VAPA KO +KDMD cells after 1 hour spreading on fibronectin-coated glass and stained as indicated. Scale bar: 50 \u00b5m. (L) Analysis of cells area after 1 hour spreading on fibronectin-coated glass (mean \u00b1 SEM; n=117, 134, 113, and 128 cells respectively from three independent experiments). Data were analysed using a One-way Anova Kruskal-Wallis test. (ns: non significant, ***p-values <0.001, **p-values <0.01, *p-values <0.05).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85962/elife-85962-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Left panel: representative immunoblots showing the levels of VAPB and Tubulin in Control and VAPA KO cells. Tubulin level was used as loading control. Right panel: quantification of relative VAPB density in Control and VAPA KO cells normalized to Tubulin levels (mean \u00b1 SEM from three independent experiments). Data were analysed using a single-sample Student t-test (ns: non significant). (B) Confocal images of Control and VAPA KO leader cells immunostained for VAPB. Scale bar: 20 \u00b5m (5 \u00b5m in insets).\n\n![Video 1.](https://cdn.elifesciences.org/articles/85962/elife-85962-video1.mp4.jpg)\n\n**Video 1.:** Scale bar: 100 \u00b5m. Time stamp is hour:min.\n\n### VAPA regulates focal adhesions and actin cytoskeleton through its MSP domain\n\nIn order to characterize the motility defects of VAPA KO cells, we studied the organization of cell-matrix adhesions and actin cytoskeleton in these cells. To facilitate the analysis, we decided to focus on leader cells, standing at the leading edge of migrating monolayers (24\u201348 hr after insert removal), as these cells move in a given direction with a polarized and reproducible morphology. We observed an alteration of cell-matrix adhesions in VAPA KO cells that formed larger central FA compared to Control cells (Figure 2A and B). Peripheral FA, located at the leading edge tip where nascent adhesions form, exhibited the same size in Control and VAPA KO cells (Figure 2A and C). The expression of VAPA WT in VAPA KO cells restored the size of central FA, but it was not the case with VAPA KDMD, indicating that VAPA regulates FA size through its association with proteins containing an FFAT motif (Figure 2A\u2013C). We then compared the organization of actin cytoskeleton in the four cell lines. In Control cells, the F-actin and cortactin stainings revealed the presence of numerous and thick parallel transverse actin arcs at the front, accompanied by cortactin-rich subdomains of branched actin standing at the front edge corresponding to lamellipodial extensions (Figure 2D and E). We indeed observed periodic waves of protrusion-retraction arising in these cells every 15 min in average (Figure 2E and H). By contrast, VAPA KO cells exhibited disorganized and thinner transverse actin arcs, wider cortactin-rich subdomains occupying most of the leading edge (Figure 2D and F\u2013G) and giving rise to long-lasting protrusions (Figure 2E and H). Similarly to the FA phenotype, we were able to recover the organization of actin, the size of cortactin-rich domains and the frequency of protrusions by expressing VAPA WT but not the MSP mutant VAPA KDMD (Figure 2D and F\u2013H). To conclude, we show that VAPA controls different aspects of cell motility, namely the maintenance of FA size and the preservation of the spatial and temporal organization of the actin cytoskeleton. These functions depend on the association of VAPA with FFAT-motif containing proteins such as lipid transfer proteins, suggesting that lipid transfer is probably required.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85962/elife-85962-fig2-v1.jpg)\n\n**Figure 2.:** (A) Confocal images with zoom boxes of central (green squares) and peripheral (blue squares) paxillin-labeled focal adhesions from Control, VAPA KO, VAPA KO +WT and VAPA KO +KDMD leader cells in migrating monolayers 24 -48hr after insert removal. Scale bar: 20 \u00b5m (2 \u00b5m in insets). (B, C) Analysis of central (B) and peripheral (C) focal adhesion area quantified from images in A, in Control, VAPA KO, VAPA KO +WT and VAPA KO +KDMD leader cells (Control: n=2968 central and 353 peripheral focal adhesions from 20 cells, VAPA KO: n=4329 central and 293 peripheral focal adhesions from 22 cells, VAPA KO +WT: n=3818 central and 336 peripheral focal adhesions from 24 cells, VAPA KO +KDMD: n=2801 central and 297 peripheral focal adhesions from 19 cells, from three independent experiments). Data were analysed using a One-way Anova Kruskal-Wallis test.( D) Confocal images of actin cytoskeleton network in Control, VAPA KO, VAPA KO +WT and VAPA KO +KDMD leader cells stained for cortactin and F-actin. Green arrows point to F-Actin transversal arcs. Plot profiles of the cortactin signal along the leading edge are shown on the right. Pink lines highlight the cortactin-rich protrusive subdomains. Scale bar: 20 \u00b5m.( E) Differential Interference Contrast (DIC) images (left) and kymographs (right) along the yellow lines of Control and VAPA KO leader cells from a 30 min movie at 1 frame every 3 seconds, showing protrusion and retraction phases of the leading edge. Scale bar: 20 \u00b5m (left) and 5 \u00b5m (right). (F, G) Analysis of proportion of the leading edge enriched with cortactin (F) and mean size of cortactin-enriched domains at the leading edge normalized to the length of the leading edge (G) quantified from images in D (mean \u00b1 SEM; n=29 cells for each cell line, from three independent experiments). Data were analysed using a One-way Anova Kruskal-Wallis test. (H) Quantification of protrusion phases frequency per 30 min quantified from the kymographs in E, in Control, VAPA KO, VAPA KO +WT and VAPA KO +KDMD leader cells (mean \u00b1 SEM; n=16, 21, 17 and 12 cells respectively, from three independent experiments). Data were analysed using a non parametric Mann-Whitney t-test. (ns: non significant, ***p-values <0.001, **p-values <0.01, *p-values <0.05).\n\n### VAPA controls the levels of PI(4)P and PI(4,5)P2 at the PM, but is not essential for PI(4)P homeostasis in the Golgi and endosomal compartments\n\nWe then intended to decipher the mechanisms by which VAPA could regulate FA size, the actin cytoskeleton and cell motility. To test the lipid transfer hypothesis, we first characterized to which extend its deletion affected PInst homeostasis. Previous studies have shown that depleting both VAPA and VAPB affected the levels of PI(4)P at the Golgi and PM (Mao et al., 2019; Stefan et al., 2011), and induced the accumulation of PI(4)P in early endosomes (Dong et al., 2016). Using a GFP-PH-OSBP probe, we detected a major intra-cellular pool of PI(4)P at similar levels in the Golgi compartment in Control and VAPA KO cells (Figure 3A\u2013C). Importantly, the depletion of VAPA alone was not sufficient to observe an accumulation of PI(4)P in early endosomes (Figure 3B and C) which is in agreement with the SupFig. S1D by Dong et al., 2016 showing no effect on intra-cellular PI(4)P distribution when only VAPA is depleted in HeLa cells. This result suggests that VAPB, which is slightly more abondant in VAPA KO cells, can compensate for the absence of VAPA at ER-Golgi and ER-endosome contact sites thus maintaining PI(4)P homeostasis at the Golgi and endosomes in VAPA KO Caco-2 cells. We then analyzed the amount of PI(4)P and PI(4,5)P2 at the PM using the mCherry-P4M SidM (Hammond et al., 2014) and the RFP-PH-PLC\u03b41 probes respectively. The depletion of VAPA induced a decrease of the PM/cytosol ratio for both PI(4)P and PI(4,5)P2 in protrusive sub-domains of the leading edge (Figure 3D, E, H and I). The decrease of PI(4,5)P2 in VAPA KO cells was also observed at the dorsal side of the PM by immunofluorescence staining with anti-PI(4,5)P2 antibodies (Figure 3F and G). Altogether, these results show that in Caco-2 cells, VAPA is required to maintain a certain level of PI(4)P and PI(4,5)P2 specifically at the plasma membrane, but is dispensable for PI(4)P homeostasis at the Golgi and endosomal compartments.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85962/elife-85962-fig3-v1.jpg)\n\n**Figure 3.:** (A, B) Confocal images and zoom boxes of PI(4)P distribution in Control and VAPA KO leader cells expressing GFP-PH-OSBP and immunostained for TGN46 (A) or EEA1 (B). Scale Bar: 10 \u00b5m. (C) Analysis of Golgi(TGN46)/cytosol (left panel) and Early endosomes(EEA1)/Cytosol (right panel) ratio of GFP-PH-OSBP signal, quantified from images in A and B, in Control and VAPA KO leader cells (Left panel: n=24\u201325 cells, Right panel: n=13 cells; from three independent experiments). (D, H) Top: Sum projection of confocal images of PI(4)P (D) and PI(4,5)P2 (H) distribution in Control and VAPA KO leader cells expressing mCherry-P4M SidM or RFP-PH-PLC\u03b41 respectively, represented as a color-coded heat map. Scale bar: 10 \u00b5m. Bottom: Plot profiles of normalized grey levels along the pink lines. (E, I) Analysis of PM/Cytosol ratio of mCherry-P4M SidM (E) and RFP-PH-PLC\u03b41 (I), quantified from plot profiles represented in D and H respectively, in protrusive domains at the leading edge of Control and VAPA KO leader cells (E: n=14\u201316 cells, I: n=26\u201327 cells; from three independent experiments). (F) XZ view of confocal images of Control and VAPA KO cells immunostained for PI(4,5)P2. Scale Bar: 5 \u00b5m. (G) Analysis of PI(4,5)P2 peak intensity, quantified from images in F, in Control and VAPA KO leader cells (Control: n=58 cells; VAPA KO: n=53 cells, from three independent experiments). All data were analysed using non parametric Mann-Whitney t-test (ns: non significant, ***p-values <0.001, **p-values <0.01, *p-values <0.05).\n\n### VAPA stabilizes ventral ER-PM contact sites at the front of migrating cells\n\nBased on our observation pointing to a specific role of VAPA in PInst homeostasis at the PM, we questioned the spatio-temporal distribution of ER-PM contacts sites during cell migration and the role of VAPA in this organization. To this aim, we took advantage of a fluorescent probe, GFP-MAPPER, which selectively labels ER-PM contact sites (Chang et al., 2013). When expressed in Caco-2 cells, GFP-MAPPER distributed as foci along ER tubules both in Control and VAPA KO cells (Figure 4A) and appeared at ER-PM appositions detected by TIRF microscopy (Figure 4B and Video 2). Moreover, we could observe GFP-MAPPER foci along VAPA-containing ER tubules highlighted with an exogenous mCherry-VAPA WT protein expressed in Control cells (Figure 4C) or with an anti-VAPA antibody (Figure 4\u2014figure supplement 1A). At the front of leader cells, GFP-MAPPER foci divided in two subpools: the dorsal subpool ongoing forward movement with the migrating cell and the ventral subpool remaining immobile relative to the substrate, suggesting that ventral ER-PM contact sites might be anchored to cell-matrix adhesions (Figure 4\u2014figure supplement 1B and Video 3). Using electron microscopy, we were indeed able to identify numerous ER-PM contact sites sitting at the ventral leading edge of migrating cells (Figure 4D). At the ultrastructural level, the depletion of VAPA had no significant effect on ER-PM contact sites regardless of their location (Figure 4\u2014figure supplement 1C\u2013E). However, the dynamic analysis of GFP-MAPPER foci revealed that ventral ER-PM contact sites, which barely moved (400 nm/min on average) and persisted generally more than 10 min in Control cells, were significantly less stable both spatially and temporally in VAPA KO cells (Figure 4E\u2013G and Video 4). To conclude, our results identify a sub-pool of ER-PM contact sites docked to the substrate at the front of migrating cells, and whose spatio-temporal stability requires VAPA. Together with the alteration of FA size in VAPA KO cells, these results prompted us to hypothesize that VAPA might accomplish a function at FA.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85962/elife-85962-fig4-v1.jpg)\n\n**Figure 4.:** (A) TIRF microscopy images of GFP-MAPPER foci distribution along the ER in Control and VAPA KO leader cells expressing GFP-MAPPER and RFP-KDEL. Scale bar: 5 \u00b5m. (B) Sequential TIRF microscopy images of ER and GFP-MAPPER foci accumulation at the front of a Control leader cell expressing GFP-MAPPER and RFP-KDEL. Scale bar: 1 \u00b5m. (C) Confocal images of GFP-MAPPER foci distribution along Cherry-VAPA containing ER in Control cells transiently expressing Cherry-VAPA. Scale bar: 1 \u00b5m. (D) Transmission Electron Microscopy images of transversal cuts of a Control leader cell, showing the leading edge. Arrows point to ER-PM contact sites at the bottom of the cell. Scale bar: 1 \u00b5m (top) and 100 nm in insets 1 and 2. (E) Sequential TIRF microscopy images of GFP-MAPPER foci at the front of Control and VAPA KO leader cells expressing GFP-MAPPER. Individual GFP-MAPPER foci at each time point are pictured in the frames below images. Scale bar: 1 \u00b5m. (F, G). Analysis of the lifetime (F) and the speed (G) of ventral GFP-MAPPER foci, quantified from images in E, in Control and VAPA KO leader cells (Control: n=92 and 52 foci from 8 cells; VAPA KO: n=77 and 58 foci from 6 cells, from four independent experiments). All data were analysed using non parametric Mann-Whitney t-test (***p-values <0.001).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85962/elife-85962-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Confocal images of GFP-MAPPER foci distribution along anti-VAPA-stained ER in Control cells. On the right: plot profiles of normalized gray values along the two lines depicted in yellow. Scale bar: 1 \u00b5m. (B) Sequential spinning disk images of dorsal (magenta) and ventral (green) GFP-MAPPER foci at the front of a Control leader cell expressing GFP-MAPPER. Top and bottom plane images were color-coded in magenta and green respectively. Circles highlight single GFP-MAPPER foci at the dorsal (blue) and ventral (red) sides. Scale bar: 3 \u00b5m. (C) Representative Transmission Electron Microscopy images of a Control and a VAPA KO cell showing ER-PM contact sites. Scale bar: 0.3 \u00b5m. The ER compartment and the PM are pictured in the right framebox. (D, E). Analysis of the ER portion in contact with the PM (D) and the percentage of the PM in contact with the ER (E), quantified from images in A, in Control and VAPA KO leader cells (mean \u00b1 SEM; Control: n=25 cells: VAPA KO: n=14 cells, from three independent experiments). All data were analysed using non parametric Mann-Whitney t-test (ns: non significant).\n\n![Video 2.](https://cdn.elifesciences.org/articles/85962/elife-85962-video2.mp4.jpg)\n\n**Video 2.:** Scale bar: 1 \u00b5m.Time stamp is min:sec.\n\n![Video 3.](https://cdn.elifesciences.org/articles/85962/elife-85962-video3.mp4.jpg)\n\n**Video 3.:** Circles highlight single GFP-MAPPER foci at the dorsal (blue) and ventral (red) sides.Scale bar: 2 \u00b5m. Time stamp is min:s.\n\n![Video 4.](https://cdn.elifesciences.org/articles/85962/elife-85962-video4.mp4.jpg)\n\n**Video 4.:** Scale bar: 1 \u00b5m. Time stamp is min:s.\n\n### VAPA promotes microtubule-dependent FA disassembly\n\nTo further investigate the role of VAPA in FA turnover, we studied more precisely FA dynamics in Control and VAPA KO cells during cell migration by TIRF microscopy. While the assembly rate of FA was similar in both cell lines, their disassembly rate was slower in VAPA KO cells (Figure 5A\u2013C). In addition, VAPA KO FA exhibited a longer lifetime in average, with a majority lasting at least 40 min, instead of 30 min in Control cells (Figure 5A and D). The expression of VAPA WT in VAPA KO cells restored the lifetime of FA, unlike VAPA KDMD mutant, indicating that not only the size of FA but also their lifetime depended on the interaction of VAPA with FFAT-containing proteins (Figure 5D). One way to disassemble FA is through clathrin-mediated endocytosis of integrins which has been shown to depend on microtubules (Ezratty et al., 2009; Ezratty et al., 2005). To test whether VAPA-mediated disassembly of FA relied on the microtubule network, we synchronized FA disassembly by nocodazole wash-out experiment in migrating cells and measured the evolution of FA size, as described previously. In Control cells, nocodazole wash-out induced the fast recovery of the microtubule network after 15 min (Figure 5\u2014figure supplement 1A) concomitantly to the disassembly of FA attested by a 50% reduction of FA size. However, in VAPA KO cells, FA failed to disassemble upon microtubule recovery (Figure 5E and F). These results demonstrate that VAPA is required for microtubule-dependent FA disassembly during migration of Caco2 cells.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/85962/elife-85962-fig5-v1.jpg)\n\n**Figure 5.:** (A) Sequential TIRF microscopy images of focal adhesions in Control and VAPA KO leader cells expressing mCherry-Vinculin. Scale Bar: 1 \u00b5m. (B, C) Analysis of assembly rate (B) and disassembly rate (C) of focal adhesions (FA), quantified from time-lapse images in A, in Control and VAPA KO leader cells (whisker plots with 10\u201390 percentile; Control: n=217 FA from 9 cells; VAPA KO: n=342 FA from 8 cells, from three independent experiments). Data were analysed using non parametric Mann-Whitney t-test. (D) Distribution of focal adhesion life times in Control, VAPA KO, VAPA KO +WT and VAPA KO +KDMD leader cells (Control: n=98 FA from 10 cells; VAPA KO: n=120 FA from 12 cells, VAPA KO +WT: n=79 FA from 8 cells, VAPA KO +KDMD: n=90 FA from 9 cells, from three independent experiments). Data were analysed using a One-way Anova Kruskal-Wallis test. (E) Confocal images of focal adhesions after nocodazole treatment and wash-out in migrating Control and VAPA KO leader cells immunostained for paxillin. Scale bar: 10 \u00b5m (2 \u00b5m in insets). (F) Analysis of relative focal adhesions (FA) size, quantified from images in E, in Control and VAPA KO leader cells after 0 min, 15 min, 30 min, and 60 min after nocodazole wash-out (FA from 22 to 25 cells were analysed, from 3 independent experiments. Control T0min: n=6053 FA; Control T15 min: n=5146 FA; Control T30 min: n=5543 FA; Control T60 min: n=3913 FA; VAPA KO T0 min: n=4481 FA, VAPA KO T15 min: n=3878 FA, VAPA KO T30 min: n=4165 FA; T60 min: n=4889 FA). Data were analysed using non parametric Mann-Whitney t-test. (ns: non significant, ***p-values <0.001, **p-values <0.01, *p-values <0.05).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85962/elife-85962-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Sequential Confocal images of microtubules before and after 2 hr treatment with nocodazole, followed by wash-out during indicated time in Control leader cells immunostained for tubulin.Scale bar: 10 \u00b5m.\n\n### VAPA mediates the stable anchoring of ER-PM contact sites to FA before their disassembly\n\nTo understand the function of VAPA at FA, we analysed the repartition and the dynamic of ventral ER-PM contact sites relative to FA by TIRF microscopy. In Control cells, the majority of central FA (75%) exhibited one or more GFP-MAPPER foci in their vicinity (Figure 6A and B). Using super-resolutive Structured Illumination Microscopy (SIM), we could determine that the peaks of the most proximal GFP-MAPPER foci partially superposed on the peaks of FA, with a distance of around 50\u2013150 nm at 50% of the peaks, suggesting that the two elements were either in contact or in close proximity. Some GFP-MAPPER foci were even found inside the perimeter of FA (Figure 6\u2014figure supplement 1A). In VAPA KO cells, only 30% of central FA were standing proximal to at least one GFP-MAPPER foci (Figure 6A and B). The expression of VAPA WT or the mutant VAPA KDMD in VAPA KO cells restored the high percentage of central FA proximal to GFP-MAPPER foci (Figure 6B), indicating that the MSP domain of VAPA was not required for the physical proximity between central FA and ER-PM contact sites. Unlike central FA, almost none of the peripheral FA were proximal to GFP-MAPPER foci (Figure 6B), suggesting that ER-PM contact sites are probably getting closer to FA after their assembly. Indeed, when we monitored the time course of mCherry-Vinculin and GFP-MAPPER signals within the perimeter of single FA by TIRF microscopy, we could establish that in Control cells, for most FA (71,4%), the first GFP-MAPPER foci appearing in the FA vicinity was detected after FA assembly and before its disassembly, with a preferential arrival within the 10 min preceding disassembly (Figure 6C\u2013E). Once detected, this first GFP-MAPPER foci seemed to anchor to the pre-existing FA, as it was persisting 6 min on average in the FA vicinity (Figure 6C and F). In VAPA KO cells, where only 30% of FA were found in proximity to GFP-MAPPER foci (Figure 6A\u2013B), there was no preferential time distribution of arrival of the first GFP-MAPPER foci, with 47,6% of them arriving before FA disassembly and 52.4% after FA disassembly (Figure 6C\u2013E). Once detected, these foci were rapidly moving away (Figure 6C and F). These results show that VAPA is required for the stable anchoring of ER-PM contact sites to pre-existing FA before and at the time of FA disassembly. Imporantly, we were able to detect by TIRF microscopy the presence of VAPA at GFP-MAPPER foci proximal to FA (Figure 6G and H) reinforcing the idea that VAPA is indeed playing a role there.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/85962/elife-85962-fig6-v1.jpg)\n\n**Figure 6.:** (A) TIRF microscopy images of GFP-MAPPER and focal adhesions in Control and VAPA KO leader cells expressing GFP-MAPPER and mCherry-Vinculin. Scale bars: 10 \u00b5m (1 \u00b5m in insets). (B) Analysis of the percentage of central (top) or peripheral (bottom) focal adhesions in contact with GFP-MAPPER foci in Control, VAPA KO, VAPA KO +WT and VAPA KO +KDMD leader cells (n=10\u201312 cells, from three independent experiments). Data were analysed using a One-way Anova Kruskal-Wallis test. (C) Sequential TIRF microscopy images of GFP-MAPPER foci and focal adhesions before and after its disassembly in a Control and 2 representative VAPA KO leader cells expressing GFP-MAPPER and mCherry-Vinculin. Scale bar: 1 \u00b5m. (D) Time course of GFP-MAPPER (green) and mCherry-Vinculin (magenta) signals during the lifetime of focal adhesions in the yellow ROI depicted in C. The signals were smoothed, readjusted to the minimal value and expressed as % of the maximal value. (E) Histogram representing the repartition of first anchoring time of GFP-MAPPER foci relative to focal adhesion disassembly in Control and VAPA KO leader cells, quantified from images in D (n=21 focal adhesions from 7 cells from three independent experiments). (F) Analysis of duration of the first anchoring of GFP-MAPPER foci to focal adhesions in Control and VAPA KO leader cells, from images in D (n=21 focal adhesions from 7 cells from three independent experiments). Data were analysed using a non parametric Mann-Whitney t-test. (G) TIRF microscopy images of iRFP-Vinculin, GFP-MAPPER and Cherry-VAPA WT in a VAPA KO leader cell. Scale bar: 2 \u00b5m. (H) Plot profiles of normalized grey levels along the two lines depicted in G. (ns: non significant, ***p-values <0.001, **p-values <0.01, *p-values <0.05).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85962/elife-85962-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Two examples of images obtained by epifluorescence and structured illumination microscopy (SIM), in Control leader cells expressing GFP-MAPPER and mCherry-Vinculin. Scale bar: 0.5 \u03bcm (100 nm in insets). The proximity between focal adhesions and GFP-MAPPER foci obtained by SIM is illustrated in plot profiles of normalized gray values along the blue lines.\n\n## Discussion\n\nIn this work, we identify VAPA as an essential player in cell motility, with implications in different aspects of this process. We show that VAPA is required for both single and collective cell migration, cell spreading, protrusive waves, actin cytoskeleton dynamics and FA turnover. These processes require the MSP domain of VAPA, suggesting that they are regulated through VAPA-mediated lipid transfer mechanisms.\n\nOur study reveals a non-redundant function for VAPA in cell motility among the VAP family of proteins in Caco2 cells. Indeed, the presence of endogenous VAPB in VAPA KO cells, even at slightly higher levels, was not sufficient to compensate the loss of VAPA. The function of VAPA in cell migration seems to arise from its specific role at ER-PM contact sites where it was necessary to maintain high levels of PI(4)P and PI(4,5)P2 independently of VAPB. It was not the case at the Golgi or endosomes, where the depletion of VAPA alone had no effect on PI(4)P levels, which is in agreement with previous observations by Dong et al in HeLa cells depleted for VAPA only (SupFigS1D of Dong et al., 2016). This suggests that VAPB might compensate for the absence of VAPA at ER-Golgi and ER-endosomes contact sites and that migration defects in VAPA KO cells were not a result of a dysfunction of lipid transfer in the secretory pathway. Together with previous studies (Dong et al., 2016; Mao et al., 2019; Peretti et al., 2008; Stefan et al., 2011), our results converge to the idea that VAPA and VAPB might fulfill both redundant and specific tasks in lipid homeostasis and cellular functions.\n\nPI(4,5)P2 and its phosphorylation product PI(3,4,5)P3 have been described for decades as central orchestrators of cell motility through regulation of actin dynamics, FA maturation and turnover, membrane organization and curvature, and intracellular trafficking (Mandal, 2020; Tsujita and Itoh, 2015). Notably, several previous studies have shown that altering the global synthesis of PI(4,5)P2, either by knockdown of certain isoforms of the PIPKI kinase which phosphorylates PI(4)P (Chao et al., 2010a, Chao et al., 2010b; Thapa et al., 2012), or by optogenetic approaches (Idevall-Hagren et al., 2012; Xiong et al., 2016), results in defects that are comparable to the ones observed in VAPA KO cells \u2013 namely disorganization of actin, protrusion defects, FA persistence and loss of directional movement. Thus, the phenotypes of VAPA KO cells could be solely explained by a global reduction in PI(4,5)P2 levels at the PM. However, our results clearly show that VAPA not only regulates PI(4,5)P2 homeostasis at the PM, but also fulfills a function at FA where it stably anchors ER-PM contact sites and promotes microtubule-dependent FA disassembly. Importantly, we provide for the first time a quantitative spatio-temporal connection between ER-PM contact sites and FA dynamics in polarized and migrating cells.\n\n### Ideas and speculation\n\nBased on these results, we propose a hypothetical model in which VAPA, through local regulation of lipid transfer in the vicinity of FA would induce the internalization of integrins through clathrin-mediated endocytosis which depends on PI(4,5)P2 levels (Chao et al., 2010a, Chao et al., 2010b; Nader et al., 2016) and on microtubule polymerization (Ezratty et al., 2009). Interestingly, MCS have already been shown to directly regulate endocytosis in yeast (Encinar Del Dedo et al., 2017).\n\nThrough which mechanisms could VAPA control the dynamics of FA and their close proximity with ER-PM contact sites? Our results show that the MSP domain of VAPA is required for the regulation of FA dynamics. Importantly, two lipid transfer proteins interacting with VAPA at ER-PM contact sites, Nir2 and ORP3, have been previously described as regulators of FA dynamics and cell motility, establishing them as potential drivers for the specific function of VAPA at FA. Nir2, which interacts with VAPs at ER-PM and ER-Golgi contact sites and regulates PI transport (Chang and Liou, 2015; Kim et al., 2013; Peretti et al., 2008), favors epithelial-mesenchymal transition and tumor metastasis (Keinan et al., 2014). Similarly to VAPA KO cells, the depletion of Nir2 in HeLa cells induces a decrease of PI(4,5)P2 levels at the PM (Kim et al., 2013), indicating that a part of VAPA effect on PInst homeostasis could be supported by VAPA/Nir2-mediated lipid transfer. ORP3, which extracts PI(4)P from the PM at ER-PM contact sites (Guly\u00e1s et al., 2020), positively regulates the R-Ras pathway promoting cell-matrix adhesion (Lehto et al., 2008; Weber-Boyvat et al., 2015). More recently, ORP3 was found to be recruited to disassembling FA upon calcium influx and to favour their turnover through lipid exchange and crosstalk with STIM1/Orai1-mediated calcium influx (D\u2019Souza et al., 2020).\n\nBut VAPA might not act at FA just through its MSP domain. Indeed, we show that VAPA favours the proximity between FA and ER-PM contact sites independently of its MSP domain. Thus, we could imagine that VAPA also associates to FFAT-lacking proteins that would mediate the anchoring of ER to FA. Previous studies have highlighted the role of ER proteins in FA turnover and maturation that could be potential candidates. Kinectin, an integral ER membrane protein interacting with kinesin, has been shown to control the apposition of ER to FA through a microtubule-dependent transport (Guadagno et al., 2020; Ng et al., 2016). Another protein, the phosphatase PTP1B, which localizes to the cytoplasmic face of the ER and was identified as a partner of VAPA using a BioID approach (Antonicka et al., 2020), is targeted to newly formed FA and contributes to their maturation through dephosphorylation of its substrate p130Cas (Dadke and Chernoff, 2002; Herna\u0301ndez et al., 2006; Liu et al., 1998).\n\nTherefore, the role of VAPA-mediated contact sites at FA could not only be the local modulation of lipid transfer, but also the establishment of a common platform mediating the anchoring of ER and microtubules close to FA where several processes, like lipid transfer, calcium exchange and vesicular transport could converge and participate to FA dynamics.\n\nTo conclude, our study reveals unknown functions for VAPA in cell motility processes and in local anchoring of ER-PM contact sites to FA. For a long time, we have assumed that PInst regulation at FA will principally be mediated by the interplay of lipid kinases and phosphatases. Our work reinforces the idea that lipid transfer would be an additional pathway for lipids to be controlled at FA and provides evidences for a spatio-temporal connection between MCS and FA mediated by VAPA. Finally, this work opens new roads to decipher the precise molecular determinants of VAPA function and to explore the role of VAPA during cancerogenesis.\n\n## Materials and methods\n\nThe complete list of materials is provided in Supplementary file 1.\n\n### Cell culture\n\nCaCo-2 cells, originally acquired from ATCC, were kindly provided by Dr. D. Delacour (IBDM, Marseille). No mycoplasma contamination was detected. CaCo-2 CRISPR control and VAPA knock-out cell lines were maintained in culture in DMEM (1 x) GlutMax 5 g/L D-glucose +pyruvate medium (Gibco) supplemented with 20% fetal bovine serum (Gibco), 100 units/mL penicillin, 100 \u00b5g/mL streptomycin and 2 \u00b5g/Ml (Gibco) puromycin in 5% CO2 at 37 \u00b0C.\n\n### Antibodies, reagents, and plasmids\n\nThe following primary antibodies were used: mouse anti-EEA1 monoclonal antibody (BD transduction), rabbit anti-VAPB polyclonal antibody (Atlas antibody), mouse anti-VAPA monoclonal antibody and rabbit anti-VAPA polyclonal antibody for the immunoblot (Sigma), rabbit anti-TGN46 polyclonal antibody (Abcam), mouse anti-paxilline monoclonal antibody (Merck), mouse anti-cortactin monoclonal antibody (Merck), mouse anti-tubulin monoclonal antibody (GeneTex), mouse anti-PI(4,5)P2 monoclonal IgM antibody (Echelon). The following secondary antibodies were used: goat anti-mouse IgM Alexa fluor 555 or Alexa fluor 488, goat anti-mouse IgG Alexa fluor 555 or Alexa fluor 488, goat anti-rabbit IgG Alexa fluor 555 or Alexa fluor 488 (Invitrogen).\n\nThe following reagents were used: Hu Plasma Fibronectin (Sigma); Methanol-free formaldehyde (Thermofisher); Fluoromont-G with DAPI (Invitrogen); Alexa fluor 647-conjugated Phalloidin (Invitrogen).\n\nThe following plasmids were used; pEGFP-MAPPER (long version, containing the two flexible helical linkers, (EAAAR) 4 and (EAAAR) 6, upstream and downstream flanking regions of the FRB, respectively) was a kind gift from Jen Liou (UT Southwestern Medical Center, USA) (Chang et al., 2013), pmCherry-Vinculin was a gift from Chinten James Lim (Addgene plasmid # 80024; http://n2t.net/addgene:80024; RRID:Addgene_80024; Lee et al., 2013); iRFP-Vinculin was a gift from Mathieu Coppey (Institut Curie, CNRS UMR168) (Valon et al., 2017); pEGFP-PH-OSBP was a gift from Marci Scidmore (Addgene plasmid # 49571; http://n2t.net/addgene:49571; RRID:Addgene_49571; Moorhead et al., 2010) pmRFP-PH-PLC\u03b41 was a kind gift from Francesca Giordano (Institute for Integrative Biology of the Cell, France) Giordano et al., 2013; mCherry-P4M-SidM was a gift from Tamas Balla (Addgene plasmid # 51471; http://n2t.net/addgene:51471; RRID:Addgene_51471; Hammond et al., 2014) pmRFP-KDEL plasmid was a kind gift from Nihal Altan-Bonnet (National Heart Lung and Blood Institute, NIH, USA) Altan-Bonnet et al., 2006; pmCherry-VAPA and pmCherry-VAPA KD/MD, obtained from pEGFP-VAPA and pEGFP-VAPA KD/MD, were kind gifts from Fabien Alpy (IGBMC, France) Alpy et al., 2013; CRISPR-Cas9-resistant pmCherry-VAPA and pmCherry-VAPA KD/MD plasmids were obtained by mutagenesis of pmCherry-VAPA and pmCherry-VAPA KD/MD plasmids. Briefly, pmCherry-VAPA and pmCherry-VAPA KD/MD plasmids were amplified by PCR (30 cycles of 10 s at 94 \u00b0C, 5 s at 55 \u00b0C and 6 min at 72 \u00b0C) using the forward 5\u2019TAAGACCGAATTCCGGTATCATCGATCCAGGGTCAACTGTGACTGTTTCAGT 3\u2019 and reverse 5\u2019 CGGAATTCGGTCTTACGCAATATCGTCGAGGTGCTGTAGTCTTCACTTTGA 3\u2019 primers. PCR products were digested by DpnI enzyme for 2 hr at 37 \u00b0C (Agilent) and loaded on a 1% Agarose Gel. PCR amplicons were extracted, purified using the NucleoSpin Gel and PCR clean up kit (Macherey-Nagel) and ligated using the NEBuilder HiFi DNA assembly kit (BioLabs).\n\n### Transfection\n\nFor each transfection, 0.5 million Caco2 cells were nucleofected with 2 \u00b5g of DNA in 100 \u00b5L of T solution using the B024 program on Amaxa Nuclefector II machine, as recommended by the manufacturer (Lonza). CaCo-2 transfected cells were then re-suspended in warm culture medium, replaced 24 hr later.\n\n### Production of CRISPR Cas9 cell lines\n\nCells were transfected as described above with the double nickase CRISPR Cas9 plasmid targeting human VAPA (Santa Cruz) or a double nickase CRISPR Cas9 Control plasmid (Santa Cruz). The following day, cells were incubated with puromycin at 2 \u00b5g/mL. After antibiotic selection, single GFP positive cells were sorted by flow cytometry. Clonal cells were maintained in culture with puromycin and the amount of VAPA protein was detected by western blot and immunofluorescence. VAPA KO cell lines expressing exogenous Cherry-VAPA and Cherry-VAPAKDMD were obtained by transfection of VAPA KO cells with CRISPR-Cas9-resistant pmCherry-VAPA and pmCherry-VAPA KD/MD plasmids. Stable cell lines were generated by selection with Geneticin (Gibco) and sorting of Cherry-positive populations by flow cytometry.\n\n### Western blotting\n\nConfluent cells were lysed in 100 mM Tris pH 7.5, 150 mM NaCl, 0.5% NP40, 0.5% triton-X100, 10% glycerol,1X protease inhibitor cocktail (Roche) and 1 X phosphatase inhibitor (Roche) for 20 min at 4 \u00b0C. After 15 min centrifugation at 13,000 g, solubilized proteins were recovered in the supernatant. Protein concentration was measured using Bradford assay (Bio-Rad). For SDS PAGE, 50 \u00b5g protein extracts were loaded in 4\u201312% Bis-Tris gel (Invitrogen) or poly-acrylamide gels and proteins were transferred overnight at 4 \u00b0C on a nitrocellulose membrane using a liquid transfer system (Bio-Rad). Non-specific sites were blocked with 5% non-fat dry milk in PBS 0.1% Tween 20. Primary antibodies were diluted (1/1000 to 1/500) in PBS 0.1% Tween 20 and incubated overnight at 4 \u00b0C. After three washes in PBS 0.1% Tween 20, secondary HRP antibodies diluted in PBS 0.1% Tween 20 (1/10,000) were incubated for 1 hr and washed three times with PBS 0.1% Tween 20. Immunocomplexes of interest were detected using Supersignal west femto maximum sensitivity substrate (Thermo Fisher Scientific) and visualized with ChemiDoc chemoluminescence detection system (Bio-Rad). Quantification of Western blots by densitometry was performed using the Gel analyzer plug in from Image J.\n\n### Immunofluorescence\n\nCells were fixed with pre-warmed 4% formaldehyde in PBS for 15 min at RT and then washed three times with PBS. For anti-tubulin immunostaining, cells were fixed with frozen Methanol for 15 min at RT. Permeabilization and blocking were performed in 0.05% saponin/0.2% BSA in PBS for 15 min at RT. The primary antibodies diluted in Saponin/BSA buffer were then incubated overnight at 4 \u00b0C. After three washes in saponin/BSA buffer, the samples were incubated with secondary antibodies and, when indicated, Alexa-coupled phalloidin to stain F-Actin in the same buffer for 1 hr at RT. The preparations were washed twice in saponin/BSA buffer, once in PBS, and then mounted with the DAPI Fluoromount-G mounting media.\n\nImmunostaining with anti-PI(4,5)P2 antibody was performed as described by Kim et al., 2013. Briefly, cells were fixed at 4 \u00b0C for 1 hr in 3.7% formaldehyde / 0.1% glutaraldehyde and incubated in PBS containing 0.1 M glycine for 15 min. Permeabilization, blocking and staining were performed as described above, at 4 \u00b0C.\n\n### Cell migration assays\n\nCollective migration assays were performed using 2-well silicon inserts (Ibidi). Glass coverslips were coated with fibronectin solution at 20 \u00b5g/mL in water, for 1 hr at room temperature. The cover slip surface was washed with sterile water and air-dried. Ibidi inserts were deposited on the fibronectin coated surface and 40,000\u201350,000 cells were loaded per well. For fluorescence live imaging, cells were directly plated after transfection in the well. After 3\u20134 hr of incubation, cell division was blocked using mitomycin at 10 \u00b5g/mL in CaCo-2 culture medium, for 1 hr. After overnight incubation in a fresh CaCo-2 culture medium, the insert was removed. Experiments were performed 24 hr to 48 hr after insert removal.\n\nFor individual cell migration, cell division was blocked using mitomycin at 10 \u00b5g/mL in CaCo-2 culture medium, for 1 hr. After overnight incubation in a fresh CaCo-2 culture medium, cells were detached and plated on a glass coverslip coated with 20 \u00b5g/mL fibronectin. After 6 hr, cells were imaged for 24 hr.\n\nCollective and individual cell migration assays were performed using a Zeiss Wide-Field Microscope and imaged at 1 frame every 10 min. Cell trajectories were analysed using Manual Tracking from Fiji. Cell directionality was calculated as the ratio between the net displacement and the trajectory length within the last 20 hr of collective migration.\n\n### Cell spreading assay\n\nCells were incubated for 1 hr on fibronectin-coated coverslips and fixed with formaldehyde 4% solution as described in the immuno labelling section. Coverslips were mounted on slides and samples were imaged using a Zeiss Apotome fluorescence microscope equipped with a 10 x objective. The spreading area was determined based on Phalloidin-segmented ROI in Fiji/ImageJ.\n\n### Nocodazole experiment\n\nThe nocodazole wash-out experiment was adapted from Ezratty et al., 2005. Briefly, cells were collected and resuspended in starvation medium (DMEM GlutaMax medium containing 1% fetal bovine serum and 1% of penicillin/streptomycin) and plated in the silicon insert, as described in the Migration assay section. Twenty-four hours later, the insert was removed and cells were left migrating in the starvation medium during 24 hr. Cells were then treated during 2 hr with 10 \u00b5M nocodazole diluted in starvation medium. Then, nocodazole was washed-out with starvation medium and cells were fixed either immediately (\u20180 min Wash-out\u2019) or after 15, 30, or 60 min wash-out, using 4% formaldehyde. Focal adhesions and microtubules were labelled as described above.\n\n### Electron microscopy\n\nMigrating cells were fixed in a 2% formaldehyde/1% glutaraldehyde in PBS solution for 1 hr at room temperature, then washed in PBS. Cells were embedded in a gel of 10% BSA and 10% gelatin. Post fixation was performed in reduced osmium (1% OsO4 +1% K3Fe(CN)6) in water at 4 \u00b0C for 1 hr. After extensive washes, cells were incubated in 1% Thiocarbohydrazine in water for 20 min at room temperature and then washed and incubated with 2% OsO4 in water for 30 min at room temperature. After washes, cells were contrasted with 1% uranyl acetate overnight at 4 \u00b0C. The following day, the uranyl acetate solution was removed and the samples washed using pure water. Cells were incubated with a pH 5.5 lead nitrate in aspartic acid solution for 30 min at room temperature, washed in water and dehydrated in successive ethanol baths. Cells were embedded in Agar Low Viscosity Resin (Agar Scientific). 70 nm-thick thin sections were cut using a UC6 ultramicrotome from Leica and deposited on EM grids. Electron microscopy acquisitions were performed using a 120kV Tecnai 12 electron microscope (ThermoFisher) equiped with a OneView 4 K camera (Gatan).\n\n### Analysis of protrusive activity\n\nThe analysis of protrusive activity was performed on DIC images acquired every 3 s for 30 min. Kymographs representing the evolution of the leading edge in time along a line were generated and analysed with Fiji. Positive slopes were considered as protrusions and negative slopes as retractions. For each cell, the mean time spent in protrusion and the mean frequency of protrusions.was calculated from 2 to 4 kymographs.\n\n### Measurement of focal adhesion assembly and disassembly\n\nCells were transfected as described above using the mCherry-Vinculine plasmid and migration assays were performed on fibronectin coated 1.5 H Glass bottom Dishes (Ibidi). Cells were imaged using a TIRF microscope at 1 frame every minute for 1\u20132 h. Focal adhesion assembly and disassembly rates were obtained using the focal adhesion analysis server (https://faas.bme.unc.edu/; Berginski and Gomez, 2013). Focal adhesion assembly and disassembly rate tracks were generated. The tracks with a R-squared equal to or greater than 0.8 were used for the analysis.\n\n### Quantification of PI(4)P and PI(4,5)P2 levels\n\nTo characterize the intracellular pool of PI(4)P at the Golgi and on endosomes, colocalization between the GFP-PH-OSBP and TGN46 or EEA1 signals were obtained using Fiji Pearson coefficient plugins. The relative levels of PI(4)P in the Golgi or in endosomes were calculated as the ratio between GFP-PH-OSBP signal in the Golgi or endosomes masks and GFP-PH-OSBP signal in the cytosol, using segmentation tools in Fiji.\n\nThe PM to cytosol signal ratios of Ch-P4M-SidM and RFP-PH-PLC\u03b41 were measured along lines of 5\u201315 microns at the leading edge of migrating cells, in protrusive domains where the signal was the most enriched. The ratio was calculated as the maximal peak intensity along the line divided by the mean intensity value of RFP-PH-PLC\u03b41 in the cytosol. The plots on the graph represent the mean of 3 ratios at 3 different locations per cell.\n\nFor the quantification of endogenous PI(4,5)P2, cells were immnuno-stained with anti-PI(4,5)P2 antibodies. Confocal imaging was performed using the same acquisition parameters between control and VAPA KO cells. For one z-section, three lines were drawn per cell and the mean of maximal fluorescence intensity at the peak was plotted.\n\n### Analysis of ER-PM contact sites on electron microscopy images\n\nElectron microscopy images were analysed using Fiji/ImageJ. For the analysis, only ER-PM appositions of less than 30 nm distance were considered as ER-PM contact sites.\n\n### Analysis of GFP-MAPPER foci dynamics\n\nGFP-MAPPER foci on TIRF images were tracked using the Manual Tracking plugin from Fiji. The speed corresponds to the mean of instantaneous speeds for each foci. The lifetime was determined visually on the basis of the intensity levels and corresponds the time spent between the first visual appearance of a foci and its visual disappearance.\n\n### Quantification of FA in contact with ER-PM contact sites\n\nThe quantification of FA in contact with ER-PM contact sites was performed on TIRF microscopy acquisitions. Ten to 30 FA were randomly selected per cell. An FA was considered to be in contact with an ER-PM contact sites if there was at least one pixel recovery between GFP-MAPPER signal and mCherry-vinculin signal.\n\n### Plot profiles quantification\n\nThe normalized grey levels represented in the plot profiles were obtained by first subtracting the minimal grey level to all raw grey levels, and then, by normalizing to the maximal grey level.\n\n### Images acquisition and analysis\n\nFor live-microscopy experiments, the samples were placed in a chamber equilibrated at 37 \u00b0C under 5% CO2 atmosphere.\n\nConfocal live microscopy imaging was acquired using a Yokogawa CSU-X1 Spinning Disk confocal mounted on an inverted motorized Axio Observer Z1 (Zeiss) and equipped with a sCMOS PRIME 95 (photometrics) camera, using a 63 x/1.4 Plan-Apochromat Oil DIC objective.\n\nTIRF and Super resolution 3D Lattice SIM images were acquired on a ELYRA 7 Zeiss microscope equipped with Two cameras Edge 4.2 CLHS (PCO), using 63 x/1,4 Plan-Apochromat Oil DIC M27 objective. Images were acquired and processed with SW ZEN Black 3.4 software.\n\nFor fixed samples, images were acquired with a Zeiss Apotome fluorescence microscope equipped with a 63 X oil immersion objective or with a Zeiss LSM 780 confocal microscope equipped with a 63 X/1.4 Plan-Apochromat Oil DIC objective at a resolution of 0.3 \u03bcm z-stacks. Image processing and analysis were done on Fiji software.\n",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "599b915a-33d4-4ea6-92a9-eb2913bb38e5",
+      "submission_id": "a4317cc2-240d-414a-9c1b-c031e96c1c3f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Felix Campelo, https://ror.org/03g5ew477 Institute of Photonic Sciences Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85962.sa0](https://doi.org/10.7554/eLife.85962.sa0)\n\nThis manuscript presents important findings that bring together two important topics in cell biology: the function of membrane contact sites and cell migration. The authors present compelling evidence to support a role of the ER tether protein VAP-A in focal adhesion dynamics and cell motility. This paper will be of interest to those cell biologists and biophysicists working on adhesion, migration, and membrane contact site biology.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Felix Campelo, https://ror.org/03g5ew477 Institute of Photonic Sciences Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85962.sa1](https://doi.org/10.7554/eLife.85962.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The ER tether VAPA is required for proper cell motility and anchors ER-PM contact sites to focal adhesions\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Felix Campelo as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Suzanne Pfeffer as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions:\n\nWe all agree that this manuscript reports potentially very interesting findings, but we also think that additional data will be needed to support the claims. The essential revisions requested are the following (1-3 will require new experiments, 4-6 might not, but additional discussion is requested):\n\n1) Show additional rescue experiments (and/or test some of the findings with other KO clones). Especially regarding those experiments presented in Figures 1,5, and 6. We all agreed that this is perhaps the major gap in the paper. See detailed reviews below.\n\n2) Show VAP-A localization by IF together with the localization of GFP-MAPPER MCS.\n\n3) Test how peripheral vs. more centrally organized FAs behave with respect to VAP-A.\n\n4) Improve their assessment/discussion on the PI4P and PIP2 results.\n\n5) Improve on the method explanation/statistics description, etc.\n\n6) The model is very speculative with respect to the data presented in the manuscript. This is in principle OK, but then it really needs to be discussed more as a speculative/working hypothesis rather than a summary model. While it would be great to be able to experimentally test some of the model's predictions (e.g., test some of the observed effects by KO Nir2, ORP3, or monitor integrin trafficking), we are not requesting any additional experiments in this regard.\n\nReviewer #1 (Recommendations for the authors):\n\nAs mentioned in the public review, I think that this is a very interesting paper, with potentially major findings that will help us understand better the process of cell migration. However, I think that, although parts of the paper are based on solid evidence, there are some important points of the paper that would require additional, stronger, and more compelling evidence.\n\n\u2013 The VAP-A KO cell line is produced by single clonal selection. I really appreciate the experiments shown in Figure 2A, where the phenotype in the KO was rescued by the expression of WT and not mutant VAP-A. However, similar rescue experiments are not performed elsewhere in the manuscript. I am of course not saying that the rescues are presented in every single experiment, but in some of the key experiments, additional evidence about the specificity of the VAP-A effect should be provided (e.g. have the authors generated additional clonal KOs and tested the effects in those cell lines?)\n\n\u2013 It was not clear to me, based on the image in Figure 2B, that the cortactin signal in the KOs is different from Control. Could the authors quantify that?\n\n\u2013 Line 109: the title of the section reads as \"VAPA regulates FAs and actin cytoskeleton through its MSP domain\". However, the authors have not tested the role of the MSP domain in the actin effects. Hence, a rescue experiment with the WT and mutant VAP-A would be necessary here.\n\n\u2013 Figure 6: This is a potentially quite cool finding. However, based only on this I'm not sure that the claims in the paper are sustained by the evidence. For instance, is a similar effect as that presented in panel E seen for those FAs, not in contact with an ER-PM MCS (according to panel B, there are about 25% of those)? Similarly, doing this experiment in the KO cells, where there is a fraction (>30%) of FAs proximal to an MCS, would determine whether MCS are enough for this effect or whether VAP-A is indeed playing a role there.\n\n\u2013 The model is interesting and I think it presents a lot of possibilities for future work. However, as it is now, I think it is very hypothetical (which the authors already state in the legends), and mostly based on published work. This is fine, however, I feel that, given some of the cell-specific differences seen in this report (e.g. Golgi PI4P changes), the ideas in the cartoon might not be 100% extrapolated to their system. Of course, it would be great if the authors test the effects of depleting other ER-PM MCS proteins (Nir2, ORP3), or study integrin uptake, etc. However, I think this would be too much to ask for this paper (so it is not necessary in my opinion), but then this section might need to be integrated as an \"Ideas and Speculation\" section, according to eLife editorial: https://elifesciences.org/inside-eLife/e3e52a93/eLife-latest-including-ideas-and-speculation-in-eLife-papers\n\nOther important points:\n\n\u2013 Regarding the results in Figure 1C, I, J: The KOs look overall to be larger cells. Is this true? Is this due to clonal selection or because of the KO of VAP-A? Would the authors rescue the phenotype with the re-expression of the WT VAP-A? I think it would be informative to measure the final area/single cell after 24 h of spreading (steady state) and/or measure the nuclear area to be sure these effects are not due to size variability but to VAP-A depletion. Also, images in panel (I) are very pixelated in my PDF.\n\n\u2013 The values plotted in Figure 3C are surprisingly small if they are indeed reporting at the fluorescence intensity density in the Golgi region relative to the same quantity measured elsewhere in the cytosol. Could the authors double-check if the quantification is done correctly, or maybe I am missing something?\n\n\u2013 Figure 4E: I think the results are clear, but their representation of them could be improved to help the readers. I'd suggest that the tracking performed in the panels below the TIRF frames are showily more data points, and linked through connecting trajectory lines. Also, explain in the methods how this tracking and the lifetime and speed (panels F, G) have been measured.\n\n\u2013 This might be something obvious for the authors/other experts in the field, but why is it that VAP-AKO cells move faster (single cell velocity) if FAs are longer lived?\n\n\u2013 Work in HeLa cells has shown that VAP-A depletion leads to higher PI4P levels at the Golgi region (Y. Wakana et al.). Do you think that the observed changes are cell type (CACO2) specific? Have the authors considered the possibility to use other means to measure PI4P levels at the Golgi (e.g. antibody staining)?\n\n\u2013 GFP-MAPPER: As I understand it from the reference, there are versions of the GFP-MAPPER plasmid with different lengths of the cytosolic linker part. Could the authors specify which one they used?\n\n\u2013 The description of the nocodazole washout experiment is a bit difficult to follow and understand properly in the methods, I think it will help the readers if the authors could explain it a bit clearer.\n\nReviewer #2 (Recommendations for the authors):\n\nThe conclusions raised by the authors are convincing. I have listed here some comments, which I hope will strengthen some results and help to improve the manuscript.\n\nFigure 1C: As VAPA KO cells filled the open space slower than control cells and that cell density is obviously lower in VAPA KO cell monolayer, it might be necessary to measure (or discuss) the proliferation rate of VAPA KO cells compared to control cells.\n\nIs there any effect of VAPA depletion on cell-cell contacts required for collective migration?\n\nFigure 2A: the authors focus on the larger FA observed in VAPA KO cells compared to the control cells in the \"interior\" of the cell. However, from the pictures displayed in Figure 2A, it seems that there is more paxillin signal in the cell periphery of control and VAPA KO + mCh-VAPA KDMD. Is there any effect of VAPA depletion on adhesive structures at the cell contour?\n\nThe same comment can be raised for results shown in Figure 5F. Did the authors measure FA dynamics both at the cell center and at the cell periphery? Do the different FA populations have the same behavior in VAPA depletion conditions?\n\nFigure 2C: remove the \"e\" to \"cortactin\".\n\nUsing data presented in Figure6, the authors claim (lines 201-203) \" Thus, we show that VAPA is required for the anchoring of ER-PM contact sites to FA, which happens at the time of FA disassembly\"\n\nTo consolidate their interpretation, performing the same experiments as the ones conducted for Fig6 C-E but in VAPA KO cells and in VAPA KO cells expressing VAPA construct (rescue experiment) would be necessary.\n\nIn the discussion (lines 232-237) and in Figure 7, the authors discuss the role of VAPA-mediated ER-PM contact sites and FA in integrin trafficking. However, in this manuscript, no experiments regarding integrin trafficking were performed. To my opinion, other possible mechanisms might be added to Figure 7 such as the role of VAPA for calcium influx, STIM1 and ORP3.\n\nReviewer #3 (Recommendations for the authors):\n\nMain recommendations\n\n1) Results and hypotheses arising from VAPA KO should be tested by rescue experiments with WT and mutants (such as in Figure 2A). VAPA should be shown at ER-PM contacts in Figure 4 and Fig6 and in the recommended rescue experiments.\n\n2) The data in the paper are from a single Crispr/Cas9 clone of VAPA KO. It is important to confirm some findings with other clones.\n\n3) The direct link between VAPA, PI(4,5P)2 and FA disassembly is missing. The Nir2 (/ORP/lipid transfer pathway) hypothesis should be tested, by KO or siRNA, in cell motility or FA turnover experiment. Integrin endocytosis should be tested in VAPA KO and in rescue experiments. VAPA should be shown at ER-PM contacts near FA with Nir2 or another protein acting on PI(4,5)P2.\n\n4) The authors assessed PI(4)P levels at Golgi and endosomes but not at the PM. As for PI(4,5)P2, it was tested at dorsal PM, but not at the ventral area where FA disassembly occurs. These measurements should be done. For PI(4)P, it would be wise to use the P4M-SiDM probe (PMID 24711504), rather than OSBP-PH which seems highly recruited to the Golgi but not to other membranes. Moreover, previous studies showed that not only VAPB but also VAPA is present at ER-Golgi and ER-endosome contacts in different cell types (by binding to CERT, OSBP, ORPs), with striking effects on PI(4)P modulation. How do the authors explain this apparent discrepancy?\n\n5) For statistics it is highly recommended to use superplots (PMID 32346721). In addition, showing data with only ~10 cells analyzed per condition, as in Figure 3, is hardly acceptable.\n\nOther points:\n\n6) The two sets of images in Fig5E are difficult to compare because the starting point of FA formation is different. The rate of FA assembly appears to be 10 min longer in VAPA KO than in the control, which is not consistent with quantification. It is also difficult to judge the delay in disassembly. The time-lapse images should be comparable by showing the same acquisition times.\n\n7) The authors claim that \"contacts\" are created between ER-PM contact sites and FA based on a one-pixel overlap (Fig6A, B), but whether the resolution of the image used here allows going that far is questionable.\n\n8) The authors must show the effect on microtubule network during the washout experiment in Fig5F. The loss of FA size is difficult to see based on the images. The bar chart should be replaced by a panel in which individual measurements are shown (see point 5).\n\n\u2013 Line 55. VAP not only binds to lipid transfer proteins.\n\n\u2013 Line 185. To a non-specialist, it can be difficult to understand why the microtubule network comes into play here.\n",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "01920da2-6256-47ec-b8a9-e66b44c6fb5b",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C1",
+      "claim": "VAPA KO cells exhibit a complete and specific depletion of VAPA protein.",
+      "claim_type": "EXPLICIT",
+      "source": "VAPA KO cells exhibited a complete and specific depletion of VAPA protein (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot and immunofluorescence data shown in Figure 1A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "83dc0e60-0c20-4ba3-a8ba-70aa3d3558d5",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C2",
+      "claim": "In VAPA KO cells, VAPB was well distributed throughout the ER and its levels were slightly increased, albeit non significant.",
+      "claim_type": "EXPLICIT",
+      "source": "In VAPA KO cells, VAPB was well distributed throughout the ER and its levels were slightly increased, albeit non significant (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence and Western blot data in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "84f394eb-3c0d-4fb8-b1ab-f41ebdbe7871",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C3",
+      "claim": "VAPA KO monolayers filled the open space less efficiently than Control monolayers in collective migration assays.",
+      "claim_type": "EXPLICIT",
+      "source": "In these conditions, VAPA KO monolayers filled the open space less efficiently than Control monolayers (Figure 1D and E, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phase contrast imaging and quantification of colonized surface shown in Figure 1D and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "913dd5fc-48d3-44e9-b5c1-cb2c2e90c08b",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C4",
+      "claim": "VAPA KO leader cells were displacing faster but with a remarkable lack of directionality compared to Control leader cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of leader cells trajectories revealed that VAPA KO leader cells were displacing faster but with a remarkable lack of directionality compared to Control leader cells (Figure 1F and G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by trajectory analysis data shown in Figure 1F and G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "c2950c13-9c85-45f0-bffd-b1ec005c676b",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C5",
+      "claim": "Single VAPA KO cells displacing on a 2D surface exhibited identical defects compared to VAPA KO leader cells in monolayers.",
+      "claim_type": "EXPLICIT",
+      "source": "This collective migration impairment was at least partially cell-intrinsic, as single VAPA KO cells displacing on a 2D surface exhibited identical defects compared to VAPA KO leader cells in monolayers (Figure 1H\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by single cell migration data shown in Figure 1H-J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "d4353d3a-1e4c-4da1-8c86-6eb12c0d0b83",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C6",
+      "claim": "VAPA KO cells were spreading much faster than Control cells upon plating.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, upon plating, VAPA KO cells were spreading much faster than Control cells, also indicating a cell-autonomous defect arising in these cells (Figure 1K and L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cell spreading assay data shown in Figure 1K and L",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "af12394e-4877-44ca-9f64-0d19579428bf",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C7",
+      "claim": "The expression of mCherry-VAPA WT restored either partially or totally the collective migration capacity of VAPA KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of mCherry-VAPA WT restored either partially or totally the collective migration capacity of VAPA KO cells (Figure 1D\u2013G and Video 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by rescue experiment data shown in Figure 1D-G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "ce08b7ea-fbd5-4322-a340-2c8e2f4ddf02",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C8",
+      "claim": "The VAPA KDMD mutant failed to rescue the collective migration phenotypes in VAPA KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the VAPA KDMD mutant failed to rescue these phenotypes in VAPA KO cells (Figure 1D\u2013G , and K\u2013L and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by rescue experiment data with MSP mutant shown in Figure 1D-G and K-L",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "3cd4abe5-359e-4381-967e-fd964c63aff6",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C9",
+      "claim": "VAPA is a novel actor of collective and individual cell motility processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our results identify VAPA as a novel actor of collective and individual cell motility processes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the collective migration and single cell migration defects observed in VAPA KO cells",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "7c2e5d3a-2465-4b70-99b8-f6a2aa96c7ef",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C10",
+      "claim": "The FFAT-binding MSP domain plays a determinant role in VAPA protein function during cell motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our results identify VAPA as a novel actor of collective and individual cell motility processes, and point to a determinant role of the FFAT-binding MSP domain in VAPA protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the failure of VAPA KDMD mutant to rescue motility phenotypes",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "78490c82-6e5f-46a7-a719-ec728177fa26",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C11",
+      "claim": "VAPA KO cells formed larger central FA compared to Control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed an alteration of cell-matrix adhesions in VAPA KO cells that formed larger central FA compared to Control cells (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by focal adhesion size quantification shown in Figure 2A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "3a05b061-6512-45a7-9f22-1e5d9568b639",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C12",
+      "claim": "Peripheral FA exhibited the same size in Control and VAPA KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Peripheral FA, located at the leading edge tip where nascent adhesions form, exhibited the same size in Control and VAPA KO cells (Figure 2A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by peripheral focal adhesion size quantification shown in Figure 2A and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "04ee0177-bf18-49c3-8f32-bc96b5a68f97",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C13",
+      "claim": "The expression of VAPA WT in VAPA KO cells restored the size of central FA, but VAPA KDMD did not.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of VAPA WT in VAPA KO cells restored the size of central FA, but it was not the case with VAPA KDMD, indicating that VAPA regulates FA size through its association with proteins containing an FFAT motif (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by rescue experiment data shown in Figure 2A-C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "facb18ba-0209-49a2-9fbf-71ba85fc0c0c",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C14",
+      "claim": "VAPA regulates FA size through its association with proteins containing an FFAT motif.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of VAPA WT in VAPA KO cells restored the size of central FA, but it was not the case with VAPA KDMD, indicating that VAPA regulates FA size through its association with proteins containing an FFAT motif (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the failure of VAPA KDMD mutant to rescue FA size phenotype",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "14476787-acfe-4766-8442-f376143e2eba",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C15",
+      "claim": "Control cells exhibit numerous and thick parallel transverse actin arcs at the front.",
+      "claim_type": "EXPLICIT",
+      "source": "In Control cells, the F-actin and cortactin stainings revealed the presence of numerous and thick parallel transverse actin arcs at the front, accompanied by cortactin-rich subdomains of branched actin standing at the front edge corresponding to lamellipodial extensions (Figure 2D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by F-actin and cortactin staining shown in Figure 2D and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "bcb27c41-ef27-4be2-b14a-c28868ce9f53",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C16",
+      "claim": "Control cells exhibit periodic waves of protrusion-retraction arising every 15 min in average.",
+      "claim_type": "EXPLICIT",
+      "source": "We indeed observed periodic waves of protrusion-retraction arising in these cells every 15 min in average (Figure 2E and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by kymograph analysis shown in Figure 2E and H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "4abefc0f-c962-4f3f-82cb-4478c43da722",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C17",
+      "claim": "VAPA KO cells exhibited disorganized and thinner transverse actin arcs.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, VAPA KO cells exhibited disorganized and thinner transverse actin arcs, wider cortactin-rich subdomains occupying most of the leading edge (Figure 2D and F\u2013G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by F-actin and cortactin staining shown in Figure 2D and F-G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "ec09acde-da1b-4ac6-949d-7123fdf96535",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C18",
+      "claim": "VAPA KO cells exhibit wider cortactin-rich subdomains occupying most of the leading edge.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, VAPA KO cells exhibited disorganized and thinner transverse actin arcs, wider cortactin-rich subdomains occupying most of the leading edge (Figure 2D and F\u2013G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cortactin staining and quantification shown in Figure 2D and F-G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "d455a2ad-cb5e-4446-9909-8b06f48167fa",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C19",
+      "claim": "VAPA KO cells give rise to long-lasting protrusions.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, VAPA KO cells exhibited disorganized and thinner transverse actin arcs, wider cortactin-rich subdomains occupying most of the leading edge (Figure 2D and F\u2013G) and giving rise to long-lasting protrusions (Figure 2E and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by kymograph analysis shown in Figure 2E and H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "9aeaed42-07f2-4e2d-9d1e-0d04cdbf62bf",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C20",
+      "claim": "VAPA controls the maintenance of FA size and the preservation of the spatial and temporal organization of the actin cytoskeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "To conclude, we show that VAPA controls different aspects of cell motility, namely the maintenance of FA size and the preservation of the spatial and temporal organization of the actin cytoskeleton.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the FA size and actin organization defects observed in VAPA KO cells",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "75d22d8f-e9c1-4119-bbfd-219b027c80e6",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C21",
+      "claim": "VAPA functions in FA size and actin organization depend on the association of VAPA with FFAT-motif containing proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "These functions depend on the association of VAPA with FFAT-motif containing proteins such as lipid transfer proteins, suggesting that lipid transfer is probably required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the failure of VAPA KDMD mutant to rescue phenotypes",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "27200984-4ac4-46f1-89c6-4ea5c84e15a7",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C22",
+      "claim": "The depletion of VAPA alone was not sufficient to observe an accumulation of PI(4)P in early endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the depletion of VAPA alone was not sufficient to observe an accumulation of PI(4)P in early endosomes (Figure 3B and C) which is in agreement with the SupFig. S1D by Dong et al., 2016 showing no effect on intra-cellular PI(4)P distribution when only VAPA is depleted in HeLa cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GFP-PH-OSBP probe data shown in Figure 3B and C, and consistent with published data from Dong et al., 2016",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "dfedf2bd-6a0a-4b3a-ab73-24ff0fd9b46b",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C23",
+      "claim": "VAPB can compensate for the absence of VAPA at ER-Golgi and ER-endosome contact sites thus maintaining PI(4)P homeostasis at the Golgi and endosomes in VAPA KO Caco-2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that VAPB, which is slightly more abondant in VAPA KO cells, can compensate for the absence of VAPA at ER-Golgi and ER-endosome contact sites thus maintaining PI(4)P homeostasis at the Golgi and endosomes in VAPA KO Caco-2 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the lack of PI(4)P accumulation in Golgi and endosomes despite VAPA depletion",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "4d29cabd-649e-4efe-bd2f-a244fe0ea10a",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C24",
+      "claim": "The depletion of VAPA induced a decrease of the PM/cytosol ratio for both PI(4)P and PI(4,5)P2 in protrusive sub-domains of the leading edge.",
+      "claim_type": "EXPLICIT",
+      "source": "The depletion of VAPA induced a decrease of the PM/cytosol ratio for both PI(4)P and PI(4,5)P2 in protrusive sub-domains of the leading edge (Figure 3D, E, H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mCherry-P4M SidM and RFP-PH-PLC\u03b41 probe data shown in Figure 3D, E, H and I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "e3c1c77c-99df-417c-b9d5-b014a361b145",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C25",
+      "claim": "The decrease of PI(4,5)P2 in VAPA KO cells was also observed at the dorsal side of the PM by immunofluorescence staining with anti-PI(4,5)P2 antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease of PI(4,5)P2 in VAPA KO cells was also observed at the dorsal side of the PM by immunofluorescence staining with anti-PI(4,5)P2 antibodies (Figure 3F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by anti-PI(4,5)P2 immunofluorescence data shown in Figure 3F and G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "3f7035c1-e5c9-42ed-bd54-2493a6806384",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C26",
+      "claim": "In Caco-2 cells, VAPA is required to maintain a certain level of PI(4)P and PI(4,5)P2 specifically at the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results show that in Caco-2 cells, VAPA is required to maintain a certain level of PI(4)P and PI(4,5)P2 specifically at the plasma membrane",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the decreased PI(4)P and PI(4,5)P2 levels at the PM in VAPA KO cells",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "ef7d0ca1-b4dd-4926-b4dc-83e935219f23",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C27",
+      "claim": "VAPA is dispensable for PI(4)P homeostasis at the Golgi and endosomal compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results show that in Caco-2 cells, VAPA is required to maintain a certain level of PI(4)P and PI(4,5)P2 specifically at the plasma membrane, but is dispensable for PI(4)P homeostasis at the Golgi and endosomal compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the lack of PI(4)P changes at Golgi and endosomes in VAPA KO cells",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "56890105-95c2-4134-975c-fb241e73e008",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C28",
+      "claim": "GFP-MAPPER selectively labels ER-PM contact sites.",
+      "claim_type": "EXPLICIT",
+      "source": "To this aim, we took advantage of a fluorescent probe, GFP-MAPPER, which selectively labels ER-PM contact sites (Chang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chang et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "48a6e7c8-d5ef-48e7-af70-02b88e0d2720",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C29",
+      "claim": "GFP-MAPPER distributed as foci along ER tubules both in Control and VAPA KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "When expressed in Caco-2 cells, GFP-MAPPER distributed as foci along ER tubules both in Control and VAPA KO cells (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by TIRF microscopy data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "fb09d6a7-abe7-4226-92c5-485bf7a35306",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C30",
+      "claim": "GFP-MAPPER appeared at ER-PM appositions detected by TIRF microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "When expressed in Caco-2 cells, GFP-MAPPER distributed as foci along ER tubules both in Control and VAPA KO cells (Figure 4A) and appeared at ER-PM appositions detected by TIRF microscopy (Figure 4B and Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by TIRF microscopy data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "a2648a45-e345-4fb6-943c-ff3ed209a717",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C31",
+      "claim": "GFP-MAPPER foci are found along VAPA-containing ER tubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we could observe GFP-MAPPER foci along VAPA-containing ER tubules highlighted with an exogenous mCherry-VAPA WT protein expressed in Control cells (Figure 4C) or with an anti-VAPA antibody (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by confocal microscopy data shown in Figure 4C and Figure 4\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "4318a7bd-d6f1-455c-96b4-ec2bc4284694",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C32",
+      "claim": "At the front of leader cells, GFP-MAPPER foci divided in two subpools: the dorsal subpool ongoing forward movement with the migrating cell and the ventral subpool remaining immobile relative to the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "At the front of leader cells, GFP-MAPPER foci divided in two subpools: the dorsal subpool ongoing forward movement with the migrating cell and the ventral subpool remaining immobile relative to the substrate, suggesting that ventral ER-PM contact sites might be anchored to cell-matrix adhesions (Figure 4\u2014figure supplement 1B and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by spinning disk microscopy data shown in Figure 4\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "59490243-b3c8-42e1-ab21-1830cdb97b4b",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C33",
+      "claim": "Ventral ER-PM contact sites might be anchored to cell-matrix adhesions.",
+      "claim_type": "EXPLICIT",
+      "source": "At the front of leader cells, GFP-MAPPER foci divided in two subpools: the dorsal subpool ongoing forward movement with the migrating cell and the ventral subpool remaining immobile relative to the substrate, suggesting that ventral ER-PM contact sites might be anchored to cell-matrix adhesions (Figure 4\u2014figure supplement 1B and Video 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the immobility of ventral GFP-MAPPER foci relative to the substrate",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "a620e371-88df-4a1a-8b56-26a8a38cd49a",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C34",
+      "claim": "Numerous ER-PM contact sites sit at the ventral leading edge of migrating cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using electron microscopy, we were indeed able to identify numerous ER-PM contact sites sitting at the ventral leading edge of migrating cells (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by transmission electron microscopy data shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "1ed036f5-a49a-49f0-bb7b-7fcefb8c11e1",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C35",
+      "claim": "At the ultrastructural level, the depletion of VAPA had no significant effect on ER-PM contact sites regardless of their location.",
+      "claim_type": "EXPLICIT",
+      "source": "At the ultrastructural level, the depletion of VAPA had no significant effect on ER-PM contact sites regardless of their location (Figure 4\u2014figure supplement 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by electron microscopy quantification shown in Figure 4\u2014figure supplement 1C-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "73413e8b-46a7-4ef0-bd51-f3f70bab9d66",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C36",
+      "claim": "Ventral ER-PM contact sites barely moved (400 nm/min on average) and persisted generally more than 10 min in Control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the dynamic analysis of GFP-MAPPER foci revealed that ventral ER-PM contact sites, which barely moved (400 nm/min on average) and persisted generally more than 10 min in Control cells, were significantly less stable both spatially and temporally in VAPA KO cells (Figure 4E\u2013G and Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GFP-MAPPER foci tracking data shown in Figure 4E-G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "9705dd16-32e8-41e2-a14a-db9ecabf857c",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C37",
+      "claim": "Ventral ER-PM contact sites were significantly less stable both spatially and temporally in VAPA KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the dynamic analysis of GFP-MAPPER foci revealed that ventral ER-PM contact sites, which barely moved (400 nm/min on average) and persisted generally more than 10 min in Control cells, were significantly less stable both spatially and temporally in VAPA KO cells (Figure 4E\u2013G and Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GFP-MAPPER foci tracking data showing increased speed and decreased lifetime in VAPA KO cells shown in Figure 4E-G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "72492858-13f2-4fcc-9a2d-fda195920b22",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C38",
+      "claim": "There is a sub-pool of ER-PM contact sites docked to the substrate at the front of migrating cells, whose spatio-temporal stability requires VAPA.",
+      "claim_type": "EXPLICIT",
+      "source": "To conclude, our results identify a sub-pool of ER-PM contact sites docked to the substrate at the front of migrating cells, and whose spatio-temporal stability requires VAPA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the decreased stability of ventral ER-PM contact sites in VAPA KO cells",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "0deac885-c130-4e09-80ef-949778b87706",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C39",
+      "claim": "The assembly rate of FA was similar in both Control and VAPA KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While the assembly rate of FA was similar in both cell lines, their disassembly rate was slower in VAPA KO cells (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FA dynamics analysis shown in Figure 5A-C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "958edcc8-6cf7-4e11-940b-5897e54b66e4",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C40",
+      "claim": "The disassembly rate of FA was slower in VAPA KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While the assembly rate of FA was similar in both cell lines, their disassembly rate was slower in VAPA KO cells (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FA dynamics analysis shown in Figure 5A-C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "7cbcee9b-b7f4-4748-8b75-a3cc62a22b68",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C41",
+      "claim": "VAPA KO FA exhibited a longer lifetime in average, with a majority lasting at least 40 min, instead of 30 min in Control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, VAPA KO FA exhibited a longer lifetime in average, with a majority lasting at least 40 min, instead of 30 min in Control cells (Figure 5A and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FA lifetime distribution analysis shown in Figure 5A and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "a04bd9df-9f14-4c8f-ad90-c4c7b3d2d8fa",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C42",
+      "claim": "The expression of VAPA WT in VAPA KO cells restored the lifetime of FA, unlike VAPA KDMD mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of VAPA WT in VAPA KO cells restored the lifetime of FA, unlike VAPA KDMD mutant, indicating that not only the size of FA but also their lifetime depended on the interaction of VAPA with FFAT-containing proteins (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by rescue experiment data shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "52162f08-2cf0-472a-aadd-9c5d763210cd",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C43",
+      "claim": "Not only the size of FA but also their lifetime depended on the interaction of VAPA with FFAT-containing proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of VAPA WT in VAPA KO cells restored the lifetime of FA, unlike VAPA KDMD mutant, indicating that not only the size of FA but also their lifetime depended on the interaction of VAPA with FFAT-containing proteins (Figure 5D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the failure of VAPA KDMD mutant to rescue FA lifetime phenotype",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "87f3a1a1-190e-4670-bb75-477ccf45a480",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C44",
+      "claim": "Clathrin-mediated endocytosis of integrins has been shown to depend on microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "One way to disassemble FA is through clathrin-mediated endocytosis of integrins which has been shown to depend on microtubules (Ezratty et al., 2009; Ezratty et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ezratty et al., 2009 and Ezratty et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "9f878c2b-8e5e-4b1a-9aed-46a5249996e5",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C45",
+      "claim": "In Control cells, nocodazole wash-out induced the fast recovery of the microtubule network after 15 min.",
+      "claim_type": "EXPLICIT",
+      "source": "In Control cells, nocodazole wash-out induced the fast recovery of the microtubule network after 15 min (Figure 5\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by tubulin immunostaining shown in Figure 5\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "d3933d4a-094a-4ad5-a19f-c0834451a1aa",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C46",
+      "claim": "In Control cells, microtubule recovery was concomitant to the disassembly of FA attested by a 50% reduction of FA size.",
+      "claim_type": "EXPLICIT",
+      "source": "In Control cells, nocodazole wash-out induced the fast recovery of the microtubule network after 15 min (Figure 5\u2014figure supplement 1A) concomitantly to the disassembly of FA attested by a 50% reduction of FA size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the temporal correlation between microtubule recovery and FA size reduction",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "bd549074-f905-4d63-b6eb-4a6f16608ae1",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C47",
+      "claim": "In VAPA KO cells, FA failed to disassemble upon microtubule recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in VAPA KO cells, FA failed to disassemble upon microtubule recovery (Figure 5E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by nocodazole wash-out experiment data shown in Figure 5E and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "68428dcb-5a2c-4b95-bcef-6b3ede6e5e40",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C48",
+      "claim": "VAPA is required for microtubule-dependent FA disassembly during migration of Caco2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that VAPA is required for microtubule-dependent FA disassembly during migration of Caco2 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the failure of FA to disassemble upon microtubule recovery in VAPA KO cells",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "cc90697f-584d-4663-8094-77c09a70f0e8",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C49",
+      "claim": "In Control cells, the majority of central FA (75%) exhibited one or more GFP-MAPPER foci in their vicinity.",
+      "claim_type": "EXPLICIT",
+      "source": "In Control cells, the majority of central FA (75%) exhibited one or more GFP-MAPPER foci in their vicinity (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by TIRF microscopy quantification shown in Figure 6A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "99d86ad3-f509-4250-b7d7-eae0d86a1e44",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C50",
+      "claim": "The peaks of the most proximal GFP-MAPPER foci partially superposed on the peaks of FA, with a distance of around 50\u2013150 nm at 50% of the peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Using super-resolutive Structured Illumination Microscopy (SIM), we could determine that the peaks of the most proximal GFP-MAPPER foci partially superposed on the peaks of FA, with a distance of around 50\u2013150 nm at 50% of the peaks, suggesting that the two elements were either in contact or in close proximity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SIM data shown in Figure 6\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "2d6d935d-eefc-4d05-a60f-9e99d4335c36",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C51",
+      "claim": "GFP-MAPPER foci and FA are either in contact or in close proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "Using super-resolutive Structured Illumination Microscopy (SIM), we could determine that the peaks of the most proximal GFP-MAPPER foci partially superposed on the peaks of FA, with a distance of around 50\u2013150 nm at 50% of the peaks, suggesting that the two elements were either in contact or in close proximity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the 50-150 nm distance measured by SIM",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "3d22d66a-f275-44ec-b83c-a4973d89e364",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C52",
+      "claim": "Some GFP-MAPPER foci were found inside the perimeter of FA.",
+      "claim_type": "EXPLICIT",
+      "source": "Some GFP-MAPPER foci were even found inside the perimeter of FA (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SIM data shown in Figure 6\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "74a8dc3d-8760-48ef-b6b9-2ce4cb51b833",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C53",
+      "claim": "In VAPA KO cells, only 30% of central FA were standing proximal to at least one GFP-MAPPER foci.",
+      "claim_type": "EXPLICIT",
+      "source": "In VAPA KO cells, only 30% of central FA were standing proximal to at least one GFP-MAPPER foci (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by TIRF microscopy quantification shown in Figure 6A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "f1a7bdb2-7172-4799-9d5d-a054da76ec85",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C54",
+      "claim": "The expression of VAPA WT or the mutant VAPA KDMD in VAPA KO cells restored the high percentage of central FA proximal to GFP-MAPPER foci.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of VAPA WT or the mutant VAPA KDMD in VAPA KO cells restored the high percentage of central FA proximal to GFP-MAPPER foci (Figure 6B), indicating that the MSP domain of VAPA was not required for the physical proximity between central FA and ER-PM contact sites.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by rescue experiment data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "df34ce17-8461-41bc-a53c-834d53fabe40",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C55",
+      "claim": "The MSP domain of VAPA was not required for the physical proximity between central FA and ER-PM contact sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of VAPA WT or the mutant VAPA KDMD in VAPA KO cells restored the high percentage of central FA proximal to GFP-MAPPER foci (Figure 6B), indicating that the MSP domain of VAPA was not required for the physical proximity between central FA and ER-PM contact sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the ability of VAPA KDMD mutant to rescue the proximity phenotype",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "74a24a81-d001-46af-ae90-e5b7fdda212b",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C56",
+      "claim": "Almost none of the peripheral FA were proximal to GFP-MAPPER foci.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike central FA, almost none of the peripheral FA were proximal to GFP-MAPPER foci (Figure 6B), suggesting that ER-PM contact sites are probably getting closer to FA after their assembly.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by TIRF microscopy quantification shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "9ee34acf-cb8c-4ecc-907f-4fed2e4c07a6",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C57",
+      "claim": "ER-PM contact sites are probably getting closer to FA after their assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike central FA, almost none of the peripheral FA were proximal to GFP-MAPPER foci (Figure 6B), suggesting that ER-PM contact sites are probably getting closer to FA after their assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the lack of GFP-MAPPER foci near peripheral FA",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "bd3485be-0d20-479e-ba15-f17550e32ca4",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C58",
+      "claim": "In Control cells, for most FA (71.4%), the first GFP-MAPPER foci appearing in the FA vicinity was detected after FA assembly and before its disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when we monitored the time course of mCherry-Vinculin and GFP-MAPPER signals within the perimeter of single FA by TIRF microscopy, we could establish that in Control cells, for most FA (71,4%), the first GFP-MAPPER foci appearing in the FA vicinity was detected after FA assembly and before its disassembly, with a preferential arrival within the 10 min preceding disassembly (Figure 6C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time-lapse TIRF microscopy analysis shown in Figure 6C-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "dd0c0c2e-75c5-4d22-b804-2f960e0e462d",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C59",
+      "claim": "In Control cells, the first GFP-MAPPER foci has a preferential arrival within the 10 min preceding FA disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when we monitored the time course of mCherry-Vinculin and GFP-MAPPER signals within the perimeter of single FA by TIRF microscopy, we could establish that in Control cells, for most FA (71,4%), the first GFP-MAPPER foci appearing in the FA vicinity was detected after FA assembly and before its disassembly, with a preferential arrival within the 10 min preceding disassembly (Figure 6C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time-lapse TIRF microscopy analysis shown in Figure 6C-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "9f698307-faaa-4545-9c54-ed8fd522704c",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C60",
+      "claim": "Once detected, the first GFP-MAPPER foci seemed to anchor to the pre-existing FA, as it was persisting 6 min on average in the FA vicinity in Control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Once detected, this first GFP-MAPPER foci seemed to anchor to the pre-existing FA, as it was persisting 6 min on average in the FA vicinity (Figure 6C and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time-lapse TIRF microscopy analysis shown in Figure 6C and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "dac941d4-9ef6-460d-a6aa-b1a79cc88fec",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C61",
+      "claim": "In VAPA KO cells, there was no preferential time distribution of arrival of the first GFP-MAPPER foci, with 47.6% of them arriving before FA disassembly and 52.4% after FA disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "In VAPA KO cells, where only 30% of FA were found in proximity to GFP-MAPPER foci (Figure 6A\u2013B), there was no preferential time distribution of arrival of the first GFP-MAPPER foci, with 47,6% of them arriving before FA disassembly and 52.4% after FA disassembly (Figure 6C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time-lapse TIRF microscopy analysis shown in Figure 6C-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "9da17089-5d85-45c4-9909-b27e99c7efd9",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C62",
+      "claim": "In VAPA KO cells, once detected, GFP-MAPPER foci were rapidly moving away from FA.",
+      "claim_type": "EXPLICIT",
+      "source": "Once detected, these foci were rapidly moving away (Figure 6C and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time-lapse TIRF microscopy analysis shown in Figure 6C and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "36653e21-8e00-4095-ba26-7678ff9f18ed",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C63",
+      "claim": "VAPA is required for the stable anchoring of ER-PM contact sites to pre-existing FA before and at the time of FA disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that VAPA is required for the stable anchoring of ER-PM contact sites to pre-existing FA before and at the time of FA disassembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the decreased stability and altered timing of GFP-MAPPER foci at FA in VAPA KO cells",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "0099ed25-e541-49c3-8ee2-d038474e22a0",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C64",
+      "claim": "VAPA is present at GFP-MAPPER foci proximal to FA.",
+      "claim_type": "EXPLICIT",
+      "source": "Imporantly, we were able to detect by TIRF microscopy the presence of VAPA at GFP-MAPPER foci proximal to FA (Figure 6G and H) reinforcing the idea that VAPA is indeed playing a role there.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by TIRF microscopy data showing colocalization shown in Figure 6G and H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "f4d9e2d2-a9d1-4361-b454-89a36cfcea9f",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C65",
+      "claim": "The function of VAPA in cell migration seems to arise from its specific role at ER-PM contact sites where it was necessary to maintain high levels of PI(4)P and PI(4,5)P2 independently of VAPB.",
+      "claim_type": "EXPLICIT",
+      "source": "The function of VAPA in cell migration seems to arise from its specific role at ER-PM contact sites where it was necessary to maintain high levels of PI(4)P and PI(4,5)P2 independently of VAPB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the specific decrease of PI(4)P and PI(4,5)P2 at the PM but not at Golgi/endosomes in VAPA KO cells",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "8d28d358-e133-4545-a85d-6512e3b02840",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C66",
+      "claim": "Migration defects in VAPA KO cells were not a result of a dysfunction of lipid transfer in the secretory pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that VAPB might compensate for the absence of VAPA at ER-Golgi and ER-endosomes contact sites and that migration defects in VAPA KO cells were not a result of a dysfunction of lipid transfer in the secretory pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the lack of PI(4)P changes at Golgi and endosomes in VAPA KO cells",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "643baf79-984d-47b4-9663-71f99fc36b61",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C67",
+      "claim": "VAPA and VAPB might fulfill both redundant and specific tasks in lipid homeostasis and cellular functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with previous studies (Dong et al., 2016; Mao et al., 2019; Peretti et al., 2008; Stefan et al., 2011), our results converge to the idea that VAPA and VAPB might fulfill both redundant and specific tasks in lipid homeostasis and cellular functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the differential effects of VAPA depletion at different cellular locations and supported by citations",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "ce677785-c8ce-44f0-b886-ba1edb2fb041",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C68",
+      "claim": "PI(4,5)P2 and its phosphorylation product PI(3,4,5)P3 have been described for decades as central orchestrators of cell motility through regulation of actin dynamics, FA maturation and turnover, membrane organization and curvature, and intracellular trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "PI(4,5)P2 and its phosphorylation product PI(3,4,5)P3 have been described for decades as central orchestrators of cell motility through regulation of actin dynamics, FA maturation and turnover, membrane organization and curvature, and intracellular trafficking (Mandal, 2020; Tsujita and Itoh, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mandal, 2020 and Tsujita and Itoh, 2015",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "5893be13-922b-4378-b51f-a365049c1c63",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C69",
+      "claim": "Altering the global synthesis of PI(4,5)P2 results in defects that are comparable to the ones observed in VAPA KO cells \u2013 namely disorganization of actin, protrusion defects, FA persistence and loss of directional movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, several previous studies have shown that altering the global synthesis of PI(4,5)P2, either by knockdown of certain isoforms of the PIPKI kinase which phosphorylates PI(4)P (Chao et al., 2010a, Chao et al., 2010b; Thapa et al., 2012), or by optogenetic approaches (Idevall-Hagren et al., 2012; Xiong et al., 2016), results in defects that are comparable to the ones observed in VAPA KO cells \u2013 namely disorganization of actin, protrusion defects, FA persistence and loss of directional movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chao et al., 2010a, Chao et al., 2010b, Thapa et al., 2012, Idevall-Hagren et al., 2012, and Xiong et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "547bde07-29bd-4303-b3ec-84b58c3ef7ab",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C70",
+      "claim": "The phenotypes of VAPA KO cells could be solely explained by a global reduction in PI(4,5)P2 levels at the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the phenotypes of VAPA KO cells could be solely explained by a global reduction in PI(4,5)P2 levels at the PM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the similarity between VAPA KO phenotypes and phenotypes caused by PI(4,5)P2 reduction",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "c843fef4-14a8-4b90-8d39-7e653b73becd",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C71",
+      "claim": "VAPA not only regulates PI(4,5)P2 homeostasis at the PM, but also fulfills a function at FA where it stably anchors ER-PM contact sites and promotes microtubule-dependent FA disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our results clearly show that VAPA not only regulates PI(4,5)P2 homeostasis at the PM, but also fulfills a function at FA where it stably anchors ER-PM contact sites and promotes microtubule-dependent FA disassembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined observations of PI(4,5)P2 regulation, ER-PM contact site anchoring, and FA disassembly defects",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "7435e1eb-9f9e-408c-8a12-eeb5a4ca0b43",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C72",
+      "claim": "This work provides for the first time a quantitative spatio-temporal connection between ER-PM contact sites and FA dynamics in polarized and migrating cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we provide for the first time a quantitative spatio-temporal connection between ER-PM contact sites and FA dynamics in polarized and migrating cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the novel quantitative analysis of GFP-MAPPER foci dynamics relative to FA",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "34997462-3633-4409-9ad2-12a9b1143729",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C73",
+      "claim": "VAPA, through local regulation of lipid transfer in the vicinity of FA would induce the internalization of integrins through clathrin-mediated endocytosis which depends on PI(4,5)P2 levels and on microtubule polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, we propose a hypothetical model in which VAPA, through local regulation of lipid transfer in the vicinity of FA would induce the internalization of integrins through clathrin-mediated endocytosis which depends on PI(4,5)P2 levels (Chao et al., 2010a, Chao et al., 2010b; Nader et al., 2016) and on microtubule polymerization (Ezratty et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative model based on the observed data and supported by citations to Chao et al., 2010a, Chao et al., 2010b, Nader et al., 2016, and Ezratty et al., 2009",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "0f90f878-d678-407e-9c0a-2c32aa84b03d",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C74",
+      "claim": "MCS have been shown to directly regulate endocytosis in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, MCS have already been shown to directly regulate endocytosis in yeast (Encinar Del Dedo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Encinar Del Dedo et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "d9163cb7-6ad7-4509-ab09-f958130cea5b",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C75",
+      "claim": "The MSP domain of VAPA is required for the regulation of FA dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Through which mechanisms could VAPA control the dynamics of FA and their close proximity with ER-PM contact sites? Our results show that the MSP domain of VAPA is required for the regulation of FA dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the failure of VAPA KDMD mutant to rescue FA dynamics phenotypes",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "6ef9caef-92d3-45c9-a404-24d3c8a4dbdf",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C76",
+      "claim": "Nir2 and ORP3 are potential drivers for the specific function of VAPA at FA.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, two lipid transfer proteins interacting with VAPA at ER-PM contact sites, Nir2 and ORP3, have been previously described as regulators of FA dynamics and cell motility, establishing them as potential drivers for the specific function of VAPA at FA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the known interactions of Nir2 and ORP3 with VAPA and their roles in FA dynamics",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "ce78c004-ee1c-4e23-9cfc-9c81319d6ef8",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C77",
+      "claim": "Nir2 interacts with VAPs at ER-PM and ER-Golgi contact sites and regulates PI transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Nir2, which interacts with VAPs at ER-PM and ER-Golgi contact sites and regulates PI transport (Chang and Liou, 2015; Kim et al., 2013; Peretti et al., 2008), favors epithelial-mesenchymal transition and tumor metastasis (Keinan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chang and Liou, 2015, Kim et al., 2013, Peretti et al., 2008, and Keinan et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "337c66a5-fa4f-4220-b871-bbc0a04a967a",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C78",
+      "claim": "The depletion of Nir2 in HeLa cells induces a decrease of PI(4,5)P2 levels at the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly to VAPA KO cells, the depletion of Nir2 in HeLa cells induces a decrease of PI(4,5)P2 levels at the PM (Kim et al., 2013), indicating that a part of VAPA effect on PInst homeostasis could be supported by VAPA/Nir2-mediated lipid transfer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kim et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "b0a2f959-5b4d-4f5e-8e43-6bc7ee2ce8b6",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C79",
+      "claim": "A part of VAPA effect on PInst homeostasis could be supported by VAPA/Nir2-mediated lipid transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly to VAPA KO cells, the depletion of Nir2 in HeLa cells induces a decrease of PI(4,5)P2 levels at the PM (Kim et al., 2013), indicating that a part of VAPA effect on PInst homeostasis could be supported by VAPA/Nir2-mediated lipid transfer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the similarity between VAPA KO and Nir2 depletion phenotypes",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "1443fd8f-8707-45df-a67b-652cccce9d28",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C80",
+      "claim": "ORP3 extracts PI(4)P from the PM at ER-PM contact sites.",
+      "claim_type": "EXPLICIT",
+      "source": "ORP3, which extracts PI(4)P from the PM at ER-PM contact sites (Guly\u00e1s et al., 2020), positively regulates the R-Ras pathway promoting cell-matrix adhesion (Lehto et al., 2008; Weber-Boyvat et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Guly\u00e1s et al., 2020, Lehto et al., 2008, and Weber-Boyvat et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "8f8c32cf-5d1c-4273-9aed-2c2d0999e9f5",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C81",
+      "claim": "ORP3 was found to be recruited to disassembling FA upon calcium influx and to favour their turnover through lipid exchange and crosstalk with STIM1/Orai1-mediated calcium influx.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, ORP3 was found to be recruited to disassembling FA upon calcium influx and to favour their turnover through lipid exchange and crosstalk with STIM1/Orai1-mediated calcium influx (D'Souza et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to D'Souza et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "d70b6e8d-ca98-4330-94dc-cf6fd0eb6d9d",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C82",
+      "claim": "VAPA might also associate to FFAT-lacking proteins that would mediate the anchoring of ER to FA.",
+      "claim_type": "EXPLICIT",
+      "source": "But VAPA might not act at FA just through its MSP domain. Indeed, we show that VAPA favours the proximity between FA and ER-PM contact sites independently of its MSP domain. Thus, we could imagine that VAPA also associates to FFAT-lacking proteins that would mediate the anchoring of ER to FA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the MSP-independent rescue of FA-ER-PM contact site proximity",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "96fc6927-f14a-4d13-8e85-eb0dc976324f",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C83",
+      "claim": "Kinectin has been shown to control the apposition of ER to FA through a microtubule-dependent transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinectin, an integral ER membrane protein interacting with kinesin, has been shown to control the apposition of ER to FA through a microtubule-dependent transport (Guadagno et al., 2020; Ng et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Guadagno et al., 2020 and Ng et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "1690da62-c650-4a66-85a6-c60a91c7d77a",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C84",
+      "claim": "PTP1B localizes to the cytoplasmic face of the ER and was identified as a partner of VAPA using a BioID approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Another protein, the phosphatase PTP1B, which localizes to the cytoplasmic face of the ER and was identified as a partner of VAPA using a BioID approach (Antonicka et al., 2020), is targeted to newly formed FA and contributes to their maturation through dephosphorylation of its substrate p130Cas (Dadke and Chernoff, 2002; Hern\u00e1ndez et al., 2006; Liu et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Antonicka et al., 2020, Dadke and Chernoff, 2002, Hern\u00e1ndez et al., 2006, and Liu et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "c0c4f54f-1a8b-4238-b0e5-83ffcf0a3619",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C85",
+      "claim": "The role of VAPA-mediated contact sites at FA could be the establishment of a common platform mediating the anchoring of ER and microtubules close to FA where several processes, like lipid transfer, calcium exchange and vesicular transport could converge and participate to FA dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the role of VAPA-mediated contact sites at FA could not only be the local modulation of lipid transfer, but also the establishment of a common platform mediating the anchoring of ER and microtubules close to FA where several processes, like lipid transfer, calcium exchange and vesicular transport could converge and participate to FA dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative model based on the observed data and known functions of ER proteins at FA",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "79c92d89-0786-4b93-9a5d-11d1073befae",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C86",
+      "claim": "This study reveals unknown functions for VAPA in cell motility processes and in local anchoring of ER-PM contact sites to FA.",
+      "claim_type": "EXPLICIT",
+      "source": "To conclude, our study reveals unknown functions for VAPA in cell motility processes and in local anchoring of ER-PM contact sites to FA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the novel findings presented in the study",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "729a29b2-e46b-49be-ba6b-3de10eab159e",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C87",
+      "claim": "Lipid transfer would be an additional pathway for lipids to be controlled at FA.",
+      "claim_type": "EXPLICIT",
+      "source": "For a long time, we have assumed that PInst regulation at FA will principally be mediated by the interplay of lipid kinases and phosphatases. Our work reinforces the idea that lipid transfer would be an additional pathway for lipids to be controlled at FA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the role of VAPA-mediated lipid transfer at FA",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "27b1e63c-a379-45c7-aa26-76237b3ac74b",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C88",
+      "claim": "This work provides evidences for a spatio-temporal connection between MCS and FA mediated by VAPA.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work reinforces the idea that lipid transfer would be an additional pathway for lipids to be controlled at FA and provides evidences for a spatio-temporal connection between MCS and FA mediated by VAPA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the quantitative analysis of ER-PM contact site dynamics relative to FA",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "2099db17-c581-417f-9dc3-ebe84d113cbf",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C89",
+      "claim": "PI(4,5)P2 controls FA dynamics by regulating the binding of talin to integrins.",
+      "claim_type": "EXPLICIT",
+      "source": "PI(4,5)P2, the most abundant PInst at the plasma membrane, controls FA dynamics by regulating the binding of talin to integrins (Martel et al., 2001; Thapa et al., 2012) and the polarized trafficking of integrins (Nader et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Martel et al., 2001 and Thapa et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "9bcd7f05-980f-4481-bdef-7926f072d627",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C90",
+      "claim": "PI(4,5)P2 controls the polarized trafficking of integrins.",
+      "claim_type": "EXPLICIT",
+      "source": "PI(4,5)P2, the most abundant PInst at the plasma membrane, controls FA dynamics by regulating the binding of talin to integrins (Martel et al., 2001; Thapa et al., 2012) and the polarized trafficking of integrins (Nader et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nader et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "e5d68631-378d-4c06-b2ee-b787dd3b04fb",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C91",
+      "claim": "PI(4,5)P2 is described as a modulator of actin cytoskeleton organization and dynamics, either directly through the recruitment of several actin-binding proteins, or indirectly by regulating the activation of RhoA and Cdc42 GTPases.",
+      "claim_type": "EXPLICIT",
+      "source": "PI(4,5)P2 is described as a modulator of actin cytoskeleton organization and dynamics, either directly through the recruitment of several actin-binding proteins (Senju et al., 2017), or indirectly by regulating the activation of RhoA (Lacalle et al., 2007; Xu et al., 2010) and Cdc42 GTPases (Daste et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Senju et al., 2017, Lacalle et al., 2007, Xu et al., 2010, and Daste et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "cfebc604-d83c-476d-9823-568110a24db0",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C93",
+      "claim": "PI(3,4,5)P3 acts as a 'compass lipid' that stabilizes the direction of migration through the activation of Rac1.",
+      "claim_type": "EXPLICIT",
+      "source": "Several in vitro and in vivo studies have shown that PI(3,4,5)P3 acts as a 'compass lipid' that stabilizes the direction of migration (Funamoto et al., 2002; Hannigan et al., 2002; Lam et al., 2012) through the activation of Rac1 (Kunisaki et al., 2006; Welch et al., 2002; Yoshii et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Funamoto et al., 2002, Hannigan et al., 2002, Lam et al., 2012, Kunisaki et al., 2006, Welch et al., 2002, and Yoshii et al., 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "5059c5a4-bbeb-4e5a-a1e0-f450044b9cc9",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C94",
+      "claim": "MCS are sites of close apposition between two membranes, often the endoplasmic reticulum (ER) membrane and the membrane of another organelle, at a distance of less than 80 nm, where exchanges of lipids, Ca2+ and metabolites take place.",
+      "claim_type": "EXPLICIT",
+      "source": "MCS are sites of close apposition between two membranes, often the endoplasmic reticulum (ER) membrane and the membrane of another organelle, at a distance of less than 80 nm, where exchanges of lipids, Ca2 +and metabolites take place (Prinz et al., 2020; Scorrano et al., 2019; Wu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Prinz et al., 2020, Scorrano et al., 2019, and Wu et al., 2018",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "8504fc74-0225-457f-82d9-e0892e852b6b",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C95",
+      "claim": "The activity of lipid transfer at MCS was observed decades ago.",
+      "claim_type": "EXPLICIT",
+      "source": "While the activity of lipid transfer at MCS was observed decades ago (Vance, 1990), their implication in patho-physiological processes such as cell motility has gained interest only recently (Prinz et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Vance, 1990 and Prinz et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "47037542-aa13-475c-b018-5fb29d583f81",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C96",
+      "claim": "VAPA is a member of the highly conserved VAP family of proteins, together with VAPB.",
+      "claim_type": "EXPLICIT",
+      "source": "VAPA is a member of the highly conserved VAP family of proteins, together with VAPB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about VAP protein family",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "b7f495e9-cb6e-45a5-84de-98570f0d3322",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C97",
+      "claim": "VAP proteins are integral ER membrane proteins bridging the ER membrane to the membrane of other compartments by assembling with numerous partners including lipid transfer proteins that bind the target membrane, such as Nir proteins and OSBP-related (ORP) proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "VAP proteins are integral ER membrane proteins bridging the ER membrane to the membrane of other compartments by assembling with numerous partners including lipid transfer proteins that bind the target membrane, such as Nir proteins and OSBP-related (ORP) proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about VAP protein function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "45471aa7-0e55-4460-ad70-4760125dcf61",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C98",
+      "claim": "The assembly of most of VAP complexes relies on the interaction between the conserved N-terminal MSP (Major Sperm Protein) domain of VAPs and the FFAT (2 phenyl alanines in an acidic tract) motif on their partner.",
+      "claim_type": "EXPLICIT",
+      "source": "The assembly of most of VAP complexes relies on the interaction between the conserved N-terminal MSP (Major Sperm Protein) domain of VAPs and the FFAT (2 phenyl alanines in an acidic tract) motif on their partner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about VAP protein interactions",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "c8f05ddd-30b9-44a5-bbf7-e7a85b400093",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C99",
+      "claim": "VAPs contain a central coiled-coil dimerization domain and an ER transmembrane domain in their C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "VAPs also contain a central coiled-coil dimerization domain and an ER transmembrane domain in their C-terminus (Murphy and Levine, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Murphy and Levine, 2016",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "1abeece0-4a4c-4f5b-b351-c3eef4e8cc84",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C100",
+      "claim": "VAP proteins are involved in several cellular functions such as lipid transport, membrane trafficking, the unfolded protein response pathway and microtubules organization.",
+      "claim_type": "EXPLICIT",
+      "source": "VAP proteins are involved in several cellular functions such as lipid transport, membrane trafficking, the unfolded protein response pathway and microtubules organization (Kamemura and Chihara, 2019; Lev et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kamemura and Chihara, 2019 and Lev et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "b4e6095e-1364-4c37-ac33-e8f13ac0367a",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C101",
+      "claim": "At ER-PM contact sites, the VAP/Nir2 and VAP/ORP3 complexes regulate the transport of Phosphoinositol (PI) and PI(4)P respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "At ER-PM contact sites, the VAP/Nir2 and VAP/ORP3 complexes regulate the transport of Phosphoinositol (PI) and PI(4)P respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about VAP complexes at ER-PM contact sites",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "92acaa51-4d71-4a5a-88a2-767df107dbdf",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C102",
+      "claim": "VAP complexes with membrane-associated kinases and phosphatases contribute to modulating locally the pool of PI(4)P, PI(4,5)P2 and PI(3,4,5)P3 at the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with membrane-associated kinases and phosphatases, they contribute to modulating locally the pool of PI(4)P, PI(4,5)P2 and PI(3,4,5)P3 at the PM (Chang and Liou, 2015; Guly\u00e1s et al., 2020; Kim et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chang and Liou, 2015, Guly\u00e1s et al., 2020, and Kim et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "ff551d19-fe2c-4284-8274-7fb9a2dda29a",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C103",
+      "claim": "The association of VAPs with OSBP-related proteins modifies the level of PI(4)P at endosomal membranes and at the Golgi, therefore regulating trafficking events in these two compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the association of VAPs with OSBP-related proteins modifies the level of PI(4)P at endosomal membranes and at the Golgi, therefore regulating trafficking events in these two compartments (Dong et al., 2016; Kawasaki et al., 2022; Mesmin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dong et al., 2016, Kawasaki et al., 2022, and Mesmin et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "41fb11ea-47c0-43ae-9521-1410d30f2cc4",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C104",
+      "claim": "VAP proteins mediate cholesterol transport at ER-Golgi, ER-endosome and ER-peroxisome MCS.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, VAP proteins mediate cholesterol transport at ER-Golgi, ER-endosome and ER-peroxisome MCS (Dong et al., 2019; Hua et al., 2017; Mesmin et al., 2013; Wilhelm et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dong et al., 2019, Hua et al., 2017, Mesmin et al., 2013, and Wilhelm et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "499b04ac-6c69-4519-a2ec-b7d0fe9d5701",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C105",
+      "claim": "Depending on the cell type and organism, the loss of VAP proteins can lead to either a reduction or an accumulation of PI(4)P levels in the Golgi membranes and its redistribution on endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Depending on the cell type and organism, the loss of VAP proteins can lead to either a reduction (Peretti et al., 2008) or an accumulation (Mao et al., 2019; Wakana et al., 2021; Subra et al., 2023) of PI(4)P levels in the Golgi membranes and its redistribution on endosomes (Dong et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Peretti et al., 2008, Mao et al., 2019, Wakana et al., 2021, Subra et al., 2023, and Dong et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "85116146-dbf0-4369-8bbd-892e80522c21",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C106",
+      "claim": "In yeast, depleting VAP orthologs results in the accumulation of PI(4)P at the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, depleting VAP orthologs results in the accumulation of PI(4)P at the plasma membrane (Stefan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Stefan et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "80f11cab-db10-40aa-b9d9-10443b3bb4a2",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C107",
+      "claim": "Two partners of VAPs at ER-PM contact sites, ORP3 and Nir2, have been shown to regulate cell motility processes through different pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, two partners of VAPs at ER-PM contact sites, ORP3 and Nir2, have been shown to regulate cell motility processes through different pathways (D'Souza et al., 2020; Keinan et al., 2014; Lehto et al., 2008; Weber-Boyvat et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to D'Souza et al., 2020, Keinan et al., 2014, Lehto et al., 2008, and Weber-Boyvat et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "36bcdd0d-8f92-4a64-95d3-b2284527f4f4",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C108",
+      "claim": "VAPB is not sufficient to compensate for the loss of VAPA in cell motility.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed strong motility defects, suggesting that VAPA is required for proper cell motility and that VAPB is not sufficient to compensate for the loss of VAPA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the motility defects observed in VAPA KO cells despite the presence of VAPB",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "7ba371d4-5a34-46d6-ba76-506e5776a220",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C109",
+      "claim": "VAPA regulates the dynamics of focal adhesions (FA) through its MSP domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we show that VAPA regulates the dynamics of focal adhesions (FA) through its MSP domain",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the failure of VAPA KDMD mutant to rescue FA dynamics phenotypes",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "c048bac4-a0f9-45e2-92b6-2672c69b949c",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C110",
+      "claim": "VAPA is essential to stabilize and anchor ventral ER-PM contact sites to FA.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we show that VAPA regulates the dynamics of focal adhesions (FA) through its MSP domain, is essential to stabilize and anchor ventral ER-PM contact sites to FA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the decreased stability and altered anchoring of ER-PM contact sites to FA in VAPA KO cells",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "7276d880-5011-4f9e-8eb5-36d8ee5d45be",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C111",
+      "claim": "VAPA mediates microtubule-dependent FA disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we show that VAPA regulates the dynamics of focal adhesions (FA) through its MSP domain, is essential to stabilize and anchor ventral ER-PM contact sites to FA, and mediates microtubule-dependent FA disassembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the failure of FA to disassemble upon microtubule recovery in VAPA KO cells",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "53078cfd-ccd3-4c81-a0fd-094f20729c8e",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C112",
+      "claim": "The depletion of VAPA strongly impacts the organization of the actin cytoskeleton, the dynamics of protrusions and the turnover of FA during migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that the depletion of VAPA strongly impacts the organization of the actin cytoskeleton, the dynamics of protrusions and the turnover of FA during migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the actin disorganization, protrusion defects, and FA turnover defects observed in VAPA KO cells",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "927766b9-12ae-498b-a6fb-baa13b482a40",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "claim_id": "C113",
+      "claim": "The role of VAPA stands mainly at the PM where it regulates PI(4)P and PI(4,5)P2 homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of VAPA stands mainly at the PM where it regulates PI(4)P and PI(4,5)P2 homeostasis, the stability of ER-PM contact sites and their local anchoring at FA, thereby regulating FA disassembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the specific decrease of PI(4)P and PI(4,5)P2 at the PM but not at other compartments in VAPA KO cells",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "01c97840-7cfa-4461-bf8d-151eeb4ae2ac",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "VAPA KO cells exhibit complete and specific depletion of VAPA protein, while VAPB levels remain unchanged and well-distributed throughout the ER.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 are supported by Western blot and immunofluorescence data (Figure 1A-B and Figure 1\u2014figure supplement 1). The complete depletion of VAPA is demonstrated, and VAPB shows no significant change in levels, establishing the specificity of the knockout.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "d73d364a-977e-4ce1-9f63-671462b97d09",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "VAPA is required for proper collective and individual cell migration, with VAPA KO cells showing reduced colonization efficiency, increased speed but decreased directionality, and faster spreading. These defects are rescued by wild-type VAPA but not by the MSP domain mutant VAPA KDMD, indicating the FFAT-binding MSP domain is essential for VAPA function in cell motility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C10 are well-supported by comprehensive migration assays, trajectory analysis, and rescue experiments (Figure 1D-L). The data demonstrate both collective and single-cell migration defects in VAPA KO cells. The rescue experiments with WT and KDMD mutant provide strong evidence for the MSP domain's role. However, the claim that defects are 'at least partially cell-intrinsic' (C5) could be more rigorously tested with additional controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "7b0ca27c-2083-4587-9cb7-61a75e6e6f66",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "VAPA regulates focal adhesion size through its MSP domain, with VAPA KO cells forming larger central focal adhesions while peripheral focal adhesions remain unchanged. VAPA also controls the spatial and temporal organization of the actin cytoskeleton through FFAT-motif containing proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14, C20-C21 are supported by quantitative focal adhesion analysis and rescue experiments (Figure 2A-C). The differential effect on central versus peripheral FA is well-documented. The MSP domain requirement is demonstrated by the failure of VAPA KDMD to rescue the phenotype. The inference that lipid transfer is required (C21) is reasonable but remains speculative without direct lipid transfer measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "0e306399-7bd0-4904-8098-2fb8ae76cadd",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "VAPA KO cells exhibit disorganized actin cytoskeleton with thinner transverse actin arcs, wider cortactin-rich domains, and long-lasting protrusions, contrasting with the organized periodic protrusion-retraction waves in control cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 are supported by F-actin and cortactin staining, along with kymograph analysis (Figure 2D-H). The quantitative measurements of cortactin domain size and protrusion frequency provide strong evidence. The temporal analysis of protrusion dynamics is particularly well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "25b8843a-3775-460d-9610-973f0b163f1e",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "VAPA is specifically required to maintain PI(4)P and PI(4,5)P2 levels at the plasma membrane but is dispensable for PI(4)P homeostasis at the Golgi and endosomes, suggesting VAPB can compensate at ER-Golgi and ER-endosome contact sites but not at ER-PM contact sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23, C26-C27, C65-C67 are supported by lipid probe measurements at different cellular locations (Figure 3A-C). The lack of PI(4)P accumulation at Golgi/endosomes is consistent with published data (Dong et al., 2016). However, the compensation hypothesis (C23, C66) is inferential and would benefit from direct VAPB knockdown experiments in VAPA KO cells to confirm this mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "f5cecc18-06db-44cb-a35c-ee69894597ee",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "VAPA depletion causes a decrease in PM/cytosol ratio for both PI(4)P and PI(4,5)P2 at the leading edge and dorsal plasma membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 are supported by multiple complementary approaches using fluorescent lipid probes and immunofluorescence (Figure 3D-I). The use of different probes and methods strengthens the conclusion. The measurements are quantitative and show statistical significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "4451909c-f528-450a-9094-d850aa1a75c3",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "GFP-MAPPER labels ER-PM contact sites that are present at the ventral leading edge of migrating cells, with two distinct subpools: dorsal foci moving with the cell and ventral foci remaining immobile relative to the substrate, suggesting anchoring to cell-matrix adhesions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C34 are supported by TIRF microscopy, confocal imaging, and electron microscopy (Figure 4A-D). The characterization of GFP-MAPPER distribution is thorough. However, the inference that ventral ER-PM contact sites are anchored to cell-matrix adhesions (C33) is speculative and requires direct experimental validation, such as co-localization with FA markers or disruption experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "98021ea8-3385-4020-a24e-457c414e43af",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "VAPA is required for the spatio-temporal stability of ventral ER-PM contact sites at the front of migrating cells. While VAPA depletion does not affect the ultrastructure of ER-PM contact sites, it significantly reduces their spatial and temporal stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 are supported by electron microscopy quantification and dynamic tracking of GFP-MAPPER foci (Figure 4E-G and Figure 4\u2014figure supplement 1C-E). The distinction between structural presence and dynamic stability is important and well-documented. The quantitative measurements of speed and lifetime provide strong evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "211ec6cb-fe23-4200-93ba-9eefc7139a28",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "VAPA regulates focal adhesion dynamics through its MSP domain, specifically controlling FA disassembly rate and lifetime without affecting assembly rate. The MSP domain is required for this function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43, C75, C109 are supported by time-lapse TIRF microscopy and quantitative FA dynamics analysis (Figure 5A-D). The differential effect on assembly versus disassembly is well-documented. The rescue experiments with WT and KDMD mutant provide strong evidence for MSP domain requirement. The sample sizes are adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "cfa8f2de-e8f7-4a1a-9455-b5f011f37d92",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "VAPA is required for microtubule-dependent focal adhesion disassembly. In VAPA KO cells, focal adhesions fail to disassemble upon microtubule recovery after nocodazole washout, unlike control cells where FA disassembly is concomitant with microtubule recovery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48, C111 are supported by nocodazole washout experiments (Figure 5E-F and Figure 5\u2014figure supplement 1A). The temporal correlation between microtubule recovery and FA disassembly in control cells, and the failure of this process in VAPA KO cells, provides strong evidence. However, the claim of 'concomitance' (C46) is inferential based on timing and would benefit from simultaneous imaging of both microtubules and FA.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "bbdc773e-e147-486c-9424-4e1c410475a2",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In control cells, the majority of central focal adhesions (75%) are proximal to ER-PM contact sites (GFP-MAPPER foci) at distances of 50-150 nm, while peripheral FA lack this proximity. In VAPA KO cells, only 30% of central FA are proximal to ER-PM contact sites. The MSP domain is not required for this physical proximity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C57 are supported by TIRF microscopy and super-resolution SIM imaging (Figure 6A-B and Figure 6\u2014figure supplement 1A). The quantitative measurements are robust. The rescue with both WT and KDMD mutant (C54-C55) provides strong evidence that MSP domain is not required for proximity. However, the inference that ER-PM contact sites approach FA after assembly (C57) is speculative and requires time-lapse validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "043c67a6-9de3-4b69-93ef-a269d628b50b",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "VAPA is required for stable anchoring of ER-PM contact sites to pre-existing focal adhesions before disassembly. In control cells, GFP-MAPPER foci arrive preferentially within 10 minutes before FA disassembly and persist for ~6 minutes. In VAPA KO cells, this temporal coordination is lost and foci rapidly move away.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C64, C110 are supported by time-lapse TIRF microscopy with dual-color imaging (Figure 6C-H). The temporal analysis is sophisticated and provides strong evidence for VAPA's role in anchoring. The detection of VAPA at GFP-MAPPER foci near FA (C64) strengthens the conclusion. The sample size (n=21 FA from 7 cells) is modest but adequate for this type of analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "9f469120-9047-4b33-ad1b-fba0b1d227c5",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "VAPA functions in cell motility through multiple mechanisms: regulating PI(4,5)P2 homeostasis at the PM, stabilizing and anchoring ER-PM contact sites to focal adhesions, and mediating microtubule-dependent FA disassembly. This work provides the first quantitative spatio-temporal connection between ER-PM contact sites and FA dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72, C86-C88, C112-C113 represent the synthesis of the major findings. The claims are well-supported by the collective evidence from multiple experimental approaches. The comparison to prior work on PI(4,5)P2 manipulation (C69) is appropriate. However, the claim that phenotypes 'could be solely explained' by PI(4,5)P2 reduction (C70) is immediately contradicted by C71, which is more accurate. The novelty claim (C72) appears justified based on the comprehensive temporal analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "b8d1672a-d527-4373-8254-73a6ea416f74",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors propose a hypothetical model where VAPA regulates FA disassembly through local lipid transfer involving potential partners Nir2 and ORP3, and possibly through FFAT-lacking proteins like Kinectin and PTP1B that could mediate ER anchoring to FA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C85 are largely speculative and represent proposed mechanisms rather than demonstrated results. While the speculation is well-informed by literature (supported by appropriate citations), these claims lack direct experimental validation in this study. The model is plausible but requires testing through direct manipulation of proposed partners (Nir2, ORP3, Kinectin, PTP1B) in the VAPA KO background.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "e92ae432-d31b-4061-b03b-3658cb90ac94",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background information on phosphoinositides, membrane contact sites, and VAP proteins, including their known functions in lipid homeostasis and cell motility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C107 represent established background knowledge supported by appropriate citations. These claims provide context for the study but are not novel findings. The citations appear accurate and comprehensive.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    },
+    {
+      "id": "4c067408-5309-48d8-8522-58a6338099a2",
+      "content_id": "32a41b9b-6d8a-4eb9-8ad5-97ed807cfe6f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "VAPB is not sufficient to compensate for the loss of VAPA in cell motility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C108 is supported by the observation of motility defects in VAPA KO cells despite the presence of VAPB. However, this is an inferential claim that would be strengthened by direct VAPB overexpression experiments in VAPA KO cells or by examining VAPB localization at ER-PM contact sites in VAPA KO cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T04:24:54.919390Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "01920da2-6256-47ec-b8a9-e66b44c6fb5b",
+      "result_id": "01c97840-7cfa-4461-bf8d-151eeb4ae2ac"
+    },
+    {
+      "claim_id": "83dc0e60-0c20-4ba3-a8ba-70aa3d3558d5",
+      "result_id": "01c97840-7cfa-4461-bf8d-151eeb4ae2ac"
+    },
+    {
+      "claim_id": "84f394eb-3c0d-4fb8-b1ab-f41ebdbe7871",
+      "result_id": "d73d364a-977e-4ce1-9f63-671462b97d09"
+    },
+    {
+      "claim_id": "913dd5fc-48d3-44e9-b5c1-cb2c2e90c08b",
+      "result_id": "d73d364a-977e-4ce1-9f63-671462b97d09"
+    },
+    {
+      "claim_id": "c2950c13-9c85-45f0-bffd-b1ec005c676b",
+      "result_id": "d73d364a-977e-4ce1-9f63-671462b97d09"
+    },
+    {
+      "claim_id": "d4353d3a-1e4c-4da1-8c86-6eb12c0d0b83",
+      "result_id": "d73d364a-977e-4ce1-9f63-671462b97d09"
+    },
+    {
+      "claim_id": "af12394e-4877-44ca-9f64-0d19579428bf",
+      "result_id": "d73d364a-977e-4ce1-9f63-671462b97d09"
+    },
+    {
+      "claim_id": "ce08b7ea-fbd5-4322-a340-2c8e2f4ddf02",
+      "result_id": "d73d364a-977e-4ce1-9f63-671462b97d09"
+    },
+    {
+      "claim_id": "3cd4abe5-359e-4381-967e-fd964c63aff6",
+      "result_id": "d73d364a-977e-4ce1-9f63-671462b97d09"
+    },
+    {
+      "claim_id": "7c2e5d3a-2465-4b70-99b8-f6a2aa96c7ef",
+      "result_id": "d73d364a-977e-4ce1-9f63-671462b97d09"
+    },
+    {
+      "claim_id": "78490c82-6e5f-46a7-a719-ec728177fa26",
+      "result_id": "7b0ca27c-2083-4587-9cb7-61a75e6e6f66"
+    },
+    {
+      "claim_id": "3a05b061-6512-45a7-9f22-1e5d9568b639",
+      "result_id": "7b0ca27c-2083-4587-9cb7-61a75e6e6f66"
+    },
+    {
+      "claim_id": "04ee0177-bf18-49c3-8f32-bc96b5a68f97",
+      "result_id": "7b0ca27c-2083-4587-9cb7-61a75e6e6f66"
+    },
+    {
+      "claim_id": "facb18ba-0209-49a2-9fbf-71ba85fc0c0c",
+      "result_id": "7b0ca27c-2083-4587-9cb7-61a75e6e6f66"
+    },
+    {
+      "claim_id": "9aeaed42-07f2-4e2d-9d1e-0d04cdbf62bf",
+      "result_id": "7b0ca27c-2083-4587-9cb7-61a75e6e6f66"
+    },
+    {
+      "claim_id": "75d22d8f-e9c1-4119-bbfd-219b027c80e6",
+      "result_id": "7b0ca27c-2083-4587-9cb7-61a75e6e6f66"
+    },
+    {
+      "claim_id": "14476787-acfe-4766-8442-f376143e2eba",
+      "result_id": "0e306399-7bd0-4904-8098-2fb8ae76cadd"
+    },
+    {
+      "claim_id": "bcb27c41-ef27-4be2-b14a-c28868ce9f53",
+      "result_id": "0e306399-7bd0-4904-8098-2fb8ae76cadd"
+    },
+    {
+      "claim_id": "4abefc0f-c962-4f3f-82cb-4478c43da722",
+      "result_id": "0e306399-7bd0-4904-8098-2fb8ae76cadd"
+    },
+    {
+      "claim_id": "ec09acde-da1b-4ac6-949d-7123fdf96535",
+      "result_id": "0e306399-7bd0-4904-8098-2fb8ae76cadd"
+    },
+    {
+      "claim_id": "d455a2ad-cb5e-4446-9909-8b06f48167fa",
+      "result_id": "0e306399-7bd0-4904-8098-2fb8ae76cadd"
+    },
+    {
+      "claim_id": "27200984-4ac4-46f1-89c6-4ea5c84e15a7",
+      "result_id": "25b8843a-3775-460d-9610-973f0b163f1e"
+    },
+    {
+      "claim_id": "dfedf2bd-6a0a-4b3a-ab73-24ff0fd9b46b",
+      "result_id": "25b8843a-3775-460d-9610-973f0b163f1e"
+    },
+    {
+      "claim_id": "3f7035c1-e5c9-42ed-bd54-2493a6806384",
+      "result_id": "25b8843a-3775-460d-9610-973f0b163f1e"
+    },
+    {
+      "claim_id": "ef7d0ca1-b4dd-4926-b4dc-83e935219f23",
+      "result_id": "25b8843a-3775-460d-9610-973f0b163f1e"
+    },
+    {
+      "claim_id": "f4d9e2d2-a9d1-4361-b454-89a36cfcea9f",
+      "result_id": "25b8843a-3775-460d-9610-973f0b163f1e"
+    },
+    {
+      "claim_id": "8d28d358-e133-4545-a85d-6512e3b02840",
+      "result_id": "25b8843a-3775-460d-9610-973f0b163f1e"
+    },
+    {
+      "claim_id": "643baf79-984d-47b4-9663-71f99fc36b61",
+      "result_id": "25b8843a-3775-460d-9610-973f0b163f1e"
+    },
+    {
+      "claim_id": "4d29cabd-649e-4efe-bd2f-a244fe0ea10a",
+      "result_id": "f5cecc18-06db-44cb-a35c-ee69894597ee"
+    },
+    {
+      "claim_id": "e3c1c77c-99df-417c-b9d5-b014a361b145",
+      "result_id": "f5cecc18-06db-44cb-a35c-ee69894597ee"
+    },
+    {
+      "claim_id": "56890105-95c2-4134-975c-fb241e73e008",
+      "result_id": "4451909c-f528-450a-9094-d850aa1a75c3"
+    },
+    {
+      "claim_id": "48a6e7c8-d5ef-48e7-af70-02b88e0d2720",
+      "result_id": "4451909c-f528-450a-9094-d850aa1a75c3"
+    },
+    {
+      "claim_id": "fb09d6a7-abe7-4226-92c5-485bf7a35306",
+      "result_id": "4451909c-f528-450a-9094-d850aa1a75c3"
+    },
+    {
+      "claim_id": "a2648a45-e345-4fb6-943c-ff3ed209a717",
+      "result_id": "4451909c-f528-450a-9094-d850aa1a75c3"
+    },
+    {
+      "claim_id": "4318a7bd-d6f1-455c-96b4-ec2bc4284694",
+      "result_id": "4451909c-f528-450a-9094-d850aa1a75c3"
+    },
+    {
+      "claim_id": "59490243-b3c8-42e1-ab21-1830cdb97b4b",
+      "result_id": "4451909c-f528-450a-9094-d850aa1a75c3"
+    },
+    {
+      "claim_id": "a620e371-88df-4a1a-8b56-26a8a38cd49a",
+      "result_id": "4451909c-f528-450a-9094-d850aa1a75c3"
+    },
+    {
+      "claim_id": "1ed036f5-a49a-49f0-bb7b-7fcefb8c11e1",
+      "result_id": "98021ea8-3385-4020-a24e-457c414e43af"
+    },
+    {
+      "claim_id": "73413e8b-46a7-4ef0-bd51-f3f70bab9d66",
+      "result_id": "98021ea8-3385-4020-a24e-457c414e43af"
+    },
+    {
+      "claim_id": "9705dd16-32e8-41e2-a14a-db9ecabf857c",
+      "result_id": "98021ea8-3385-4020-a24e-457c414e43af"
+    },
+    {
+      "claim_id": "72492858-13f2-4fcc-9a2d-fda195920b22",
+      "result_id": "98021ea8-3385-4020-a24e-457c414e43af"
+    },
+    {
+      "claim_id": "0deac885-c130-4e09-80ef-949778b87706",
+      "result_id": "211ec6cb-fe23-4200-93ba-9eefc7139a28"
+    },
+    {
+      "claim_id": "958edcc8-6cf7-4e11-940b-5897e54b66e4",
+      "result_id": "211ec6cb-fe23-4200-93ba-9eefc7139a28"
+    },
+    {
+      "claim_id": "7cbcee9b-b7f4-4748-8b75-a3cc62a22b68",
+      "result_id": "211ec6cb-fe23-4200-93ba-9eefc7139a28"
+    },
+    {
+      "claim_id": "a04bd9df-9f14-4c8f-ad90-c4c7b3d2d8fa",
+      "result_id": "211ec6cb-fe23-4200-93ba-9eefc7139a28"
+    },
+    {
+      "claim_id": "52162f08-2cf0-472a-aadd-9c5d763210cd",
+      "result_id": "211ec6cb-fe23-4200-93ba-9eefc7139a28"
+    },
+    {
+      "claim_id": "d9163cb7-6ad7-4509-ab09-f958130cea5b",
+      "result_id": "211ec6cb-fe23-4200-93ba-9eefc7139a28"
+    },
+    {
+      "claim_id": "7ba371d4-5a34-46d6-ba76-506e5776a220",
+      "result_id": "211ec6cb-fe23-4200-93ba-9eefc7139a28"
+    },
+    {
+      "claim_id": "87f3a1a1-190e-4670-bb75-477ccf45a480",
+      "result_id": "cfa8f2de-e8f7-4a1a-9455-b5f011f37d92"
+    },
+    {
+      "claim_id": "9f878c2b-8e5e-4b1a-9aed-46a5249996e5",
+      "result_id": "cfa8f2de-e8f7-4a1a-9455-b5f011f37d92"
+    },
+    {
+      "claim_id": "d3933d4a-094a-4ad5-a19f-c0834451a1aa",
+      "result_id": "cfa8f2de-e8f7-4a1a-9455-b5f011f37d92"
+    },
+    {
+      "claim_id": "bd549074-f905-4d63-b6eb-4a6f16608ae1",
+      "result_id": "cfa8f2de-e8f7-4a1a-9455-b5f011f37d92"
+    },
+    {
+      "claim_id": "68428dcb-5a2c-4b95-bcef-6b3ede6e5e40",
+      "result_id": "cfa8f2de-e8f7-4a1a-9455-b5f011f37d92"
+    },
+    {
+      "claim_id": "7276d880-5011-4f9e-8eb5-36d8ee5d45be",
+      "result_id": "cfa8f2de-e8f7-4a1a-9455-b5f011f37d92"
+    },
+    {
+      "claim_id": "cc90697f-584d-4663-8094-77c09a70f0e8",
+      "result_id": "bbdc773e-e147-486c-9424-4e1c410475a2"
+    },
+    {
+      "claim_id": "99d86ad3-f509-4250-b7d7-eae0d86a1e44",
+      "result_id": "bbdc773e-e147-486c-9424-4e1c410475a2"
+    },
+    {
+      "claim_id": "2d6d935d-eefc-4d05-a60f-9e99d4335c36",
+      "result_id": "bbdc773e-e147-486c-9424-4e1c410475a2"
+    },
+    {
+      "claim_id": "3d22d66a-f275-44ec-b83c-a4973d89e364",
+      "result_id": "bbdc773e-e147-486c-9424-4e1c410475a2"
+    },
+    {
+      "claim_id": "74a8dc3d-8760-48ef-b6b9-2ce4cb51b833",
+      "result_id": "bbdc773e-e147-486c-9424-4e1c410475a2"
+    },
+    {
+      "claim_id": "f1a7bdb2-7172-4799-9d5d-a054da76ec85",
+      "result_id": "bbdc773e-e147-486c-9424-4e1c410475a2"
+    },
+    {
+      "claim_id": "df34ce17-8461-41bc-a53c-834d53fabe40",
+      "result_id": "bbdc773e-e147-486c-9424-4e1c410475a2"
+    },
+    {
+      "claim_id": "74a24a81-d001-46af-ae90-e5b7fdda212b",
+      "result_id": "bbdc773e-e147-486c-9424-4e1c410475a2"
+    },
+    {
+      "claim_id": "9ee34acf-cb8c-4ecc-907f-4fed2e4c07a6",
+      "result_id": "bbdc773e-e147-486c-9424-4e1c410475a2"
+    },
+    {
+      "claim_id": "bd3485be-0d20-479e-ba15-f17550e32ca4",
+      "result_id": "043c67a6-9de3-4b69-93ef-a269d628b50b"
+    },
+    {
+      "claim_id": "dd0c0c2e-75c5-4d22-b804-2f960e0e462d",
+      "result_id": "043c67a6-9de3-4b69-93ef-a269d628b50b"
+    },
+    {
+      "claim_id": "9f698307-faaa-4545-9c54-ed8fd522704c",
+      "result_id": "043c67a6-9de3-4b69-93ef-a269d628b50b"
+    },
+    {
+      "claim_id": "dac941d4-9ef6-460d-a6aa-b1a79cc88fec",
+      "result_id": "043c67a6-9de3-4b69-93ef-a269d628b50b"
+    },
+    {
+      "claim_id": "9da17089-5d85-45c4-9909-b27e99c7efd9",
+      "result_id": "043c67a6-9de3-4b69-93ef-a269d628b50b"
+    },
+    {
+      "claim_id": "36653e21-8e00-4095-ba26-7678ff9f18ed",
+      "result_id": "043c67a6-9de3-4b69-93ef-a269d628b50b"
+    },
+    {
+      "claim_id": "0099ed25-e541-49c3-8ee2-d038474e22a0",
+      "result_id": "043c67a6-9de3-4b69-93ef-a269d628b50b"
+    },
+    {
+      "claim_id": "c048bac4-a0f9-45e2-92b6-2672c69b949c",
+      "result_id": "043c67a6-9de3-4b69-93ef-a269d628b50b"
+    },
+    {
+      "claim_id": "ce677785-c8ce-44f0-b886-ba1edb2fb041",
+      "result_id": "9f469120-9047-4b33-ad1b-fba0b1d227c5"
+    },
+    {
+      "claim_id": "5893be13-922b-4378-b51f-a365049c1c63",
+      "result_id": "9f469120-9047-4b33-ad1b-fba0b1d227c5"
+    },
+    {
+      "claim_id": "547bde07-29bd-4303-b3ec-84b58c3ef7ab",
+      "result_id": "9f469120-9047-4b33-ad1b-fba0b1d227c5"
+    },
+    {
+      "claim_id": "c843fef4-14a8-4b90-8d39-7e653b73becd",
+      "result_id": "9f469120-9047-4b33-ad1b-fba0b1d227c5"
+    },
+    {
+      "claim_id": "7435e1eb-9f9e-408c-8a12-eeb5a4ca0b43",
+      "result_id": "9f469120-9047-4b33-ad1b-fba0b1d227c5"
+    },
+    {
+      "claim_id": "79c92d89-0786-4b93-9a5d-11d1073befae",
+      "result_id": "9f469120-9047-4b33-ad1b-fba0b1d227c5"
+    },
+    {
+      "claim_id": "729a29b2-e46b-49be-ba6b-3de10eab159e",
+      "result_id": "9f469120-9047-4b33-ad1b-fba0b1d227c5"
+    },
+    {
+      "claim_id": "27b1e63c-a379-45c7-aa26-76237b3ac74b",
+      "result_id": "9f469120-9047-4b33-ad1b-fba0b1d227c5"
+    },
+    {
+      "claim_id": "53078cfd-ccd3-4c81-a0fd-094f20729c8e",
+      "result_id": "9f469120-9047-4b33-ad1b-fba0b1d227c5"
+    },
+    {
+      "claim_id": "927766b9-12ae-498b-a6fb-baa13b482a40",
+      "result_id": "9f469120-9047-4b33-ad1b-fba0b1d227c5"
+    },
+    {
+      "claim_id": "34997462-3633-4409-9ad2-12a9b1143729",
+      "result_id": "b8d1672a-d527-4373-8254-73a6ea416f74"
+    },
+    {
+      "claim_id": "0f90f878-d678-407e-9c0a-2c32aa84b03d",
+      "result_id": "b8d1672a-d527-4373-8254-73a6ea416f74"
+    },
+    {
+      "claim_id": "6ef9caef-92d3-45c9-a404-24d3c8a4dbdf",
+      "result_id": "b8d1672a-d527-4373-8254-73a6ea416f74"
+    },
+    {
+      "claim_id": "ce78c004-ee1c-4e23-9cfc-9c81319d6ef8",
+      "result_id": "b8d1672a-d527-4373-8254-73a6ea416f74"
+    },
+    {
+      "claim_id": "337c66a5-fa4f-4220-b871-bbc0a04a967a",
+      "result_id": "b8d1672a-d527-4373-8254-73a6ea416f74"
+    },
+    {
+      "claim_id": "b0a2f959-5b4d-4f5e-8e43-6bc7ee2ce8b6",
+      "result_id": "b8d1672a-d527-4373-8254-73a6ea416f74"
+    },
+    {
+      "claim_id": "1443fd8f-8707-45df-a67b-652cccce9d28",
+      "result_id": "b8d1672a-d527-4373-8254-73a6ea416f74"
+    },
+    {
+      "claim_id": "8f8c32cf-5d1c-4273-9aed-2c2d0999e9f5",
+      "result_id": "b8d1672a-d527-4373-8254-73a6ea416f74"
+    },
+    {
+      "claim_id": "d70b6e8d-ca98-4330-94dc-cf6fd0eb6d9d",
+      "result_id": "b8d1672a-d527-4373-8254-73a6ea416f74"
+    },
+    {
+      "claim_id": "96fc6927-f14a-4d13-8e85-eb0dc976324f",
+      "result_id": "b8d1672a-d527-4373-8254-73a6ea416f74"
+    },
+    {
+      "claim_id": "1690da62-c650-4a66-85a6-c60a91c7d77a",
+      "result_id": "b8d1672a-d527-4373-8254-73a6ea416f74"
+    },
+    {
+      "claim_id": "c0c4f54f-1a8b-4238-b0e5-83ffcf0a3619",
+      "result_id": "b8d1672a-d527-4373-8254-73a6ea416f74"
+    },
+    {
+      "claim_id": "2099db17-c581-417f-9dc3-ebe84d113cbf",
+      "result_id": "e92ae432-d31b-4061-b03b-3658cb90ac94"
+    },
+    {
+      "claim_id": "9bcd7f05-980f-4481-bdef-7926f072d627",
+      "result_id": "e92ae432-d31b-4061-b03b-3658cb90ac94"
+    },
+    {
+      "claim_id": "e5d68631-378d-4c06-b2ee-b787dd3b04fb",
+      "result_id": "e92ae432-d31b-4061-b03b-3658cb90ac94"
+    },
+    {
+      "claim_id": "cfebc604-d83c-476d-9823-568110a24db0",
+      "result_id": "e92ae432-d31b-4061-b03b-3658cb90ac94"
+    },
+    {
+      "claim_id": "5059c5a4-bbeb-4e5a-a1e0-f450044b9cc9",
+      "result_id": "e92ae432-d31b-4061-b03b-3658cb90ac94"
+    },
+    {
+      "claim_id": "8504fc74-0225-457f-82d9-e0892e852b6b",
+      "result_id": "e92ae432-d31b-4061-b03b-3658cb90ac94"
+    },
+    {
+      "claim_id": "47037542-aa13-475c-b018-5fb29d583f81",
+      "result_id": "e92ae432-d31b-4061-b03b-3658cb90ac94"
+    },
+    {
+      "claim_id": "b7f495e9-cb6e-45a5-84de-98570f0d3322",
+      "result_id": "e92ae432-d31b-4061-b03b-3658cb90ac94"
+    },
+    {
+      "claim_id": "45471aa7-0e55-4460-ad70-4760125dcf61",
+      "result_id": "e92ae432-d31b-4061-b03b-3658cb90ac94"
+    },
+    {
+      "claim_id": "c8f05ddd-30b9-44a5-bbf7-e7a85b400093",
+      "result_id": "e92ae432-d31b-4061-b03b-3658cb90ac94"
+    },
+    {
+      "claim_id": "1abeece0-4a4c-4f5b-b351-c3eef4e8cc84",
+      "result_id": "e92ae432-d31b-4061-b03b-3658cb90ac94"
+    },
+    {
+      "claim_id": "b4e6095e-1364-4c37-ac33-e8f13ac0367a",
+      "result_id": "e92ae432-d31b-4061-b03b-3658cb90ac94"
+    },
+    {
+      "claim_id": "92acaa51-4d71-4a5a-88a2-767df107dbdf",
+      "result_id": "e92ae432-d31b-4061-b03b-3658cb90ac94"
+    },
+    {
+      "claim_id": "ff551d19-fe2c-4284-8274-7fb9a2dda29a",
+      "result_id": "e92ae432-d31b-4061-b03b-3658cb90ac94"
+    },
+    {
+      "claim_id": "41fb11ea-47c0-43ae-9521-1410d30f2cc4",
+      "result_id": "e92ae432-d31b-4061-b03b-3658cb90ac94"
+    },
+    {
+      "claim_id": "499b04ac-6c69-4519-a2ec-b7d0fe9d5701",
+      "result_id": "e92ae432-d31b-4061-b03b-3658cb90ac94"
+    },
+    {
+      "claim_id": "85116146-dbf0-4369-8bbd-892e80522c21",
+      "result_id": "e92ae432-d31b-4061-b03b-3658cb90ac94"
+    },
+    {
+      "claim_id": "80f11cab-db10-40aa-b9d9-10443b3bb4a2",
+      "result_id": "e92ae432-d31b-4061-b03b-3658cb90ac94"
+    },
+    {
+      "claim_id": "36bcdd0d-8f92-4a64-95d3-b2284527f4f4",
+      "result_id": "4c067408-5309-48d8-8522-58a6338099a2"
+    }
+  ],
+  "comparisons": []
+}

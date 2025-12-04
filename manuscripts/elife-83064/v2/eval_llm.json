@@ -1,0 +1,343 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "LPS-induced systemic inflammation triggers profound transcriptomic and proteomic changes in the adrenal cortex, including enrichment of inflammatory response pathways and downregulation of metabolic pathways including carbohydrate metabolism, TCA cycle, and oxidative phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5, C6, C15, C16, and C17 are well-supported by RNA-Seq data (2,609 differentially expressed genes), GSEA analysis showing inflammatory pathway enrichment, and EGSEA pathway analysis demonstrating downregulation of multiple metabolic pathways at both transcriptomic and proteomic levels. The multi-omics approach provides converging evidence for inflammation-induced metabolic reprogramming.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "CD31-CD45- sorted cells represent a purified population of steroidogenic adrenocortical cells that respond to inflammatory stimuli, as evidenced by high Star expression, absence of endothelial and immune cell markers, and enrichment of innate immune response proteins after LPS treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, and C9 are supported by cell sorting validation data (qPCR for Star, Cd31, Cd45) and proteomic analysis showing immune response protein enrichment. This establishes that the sorted population is appropriate for studying inflammation-specific effects in steroidogenic cells, though the purity assessment could be strengthened with additional markers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "LPS treatment increases plasma corticosterone levels through HPA axis activation, accompanied by mixed transcriptional changes in steroidogenic enzymes, with Star and Cyp11b1 upregulated but Hsd3b2 and Cyp21a1 downregulated, and SF-1 protein somewhat reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 are supported by citations to previous work and qPCR/immunofluorescence data. However, the mixed pattern of steroidogenic enzyme expression changes suggests complex regulation that may not be fully explained by HPA axis activation alone. The authors acknowledge this complexity, noting that transcriptional changes cannot solely explain glucocorticoid level changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Inflammation disrupts the TCA cycle in adrenocortical cells, with downregulation of key enzymes (IDH and SDH) at transcriptomic and proteomic levels, reduced enzymatic activities, and accumulation of their substrates isocitrate and succinate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 are strongly supported by converging evidence from RNA-Seq, proteomics, qPCR, enzyme activity assays, LC-MS/MS metabolite measurements, MALDI-MSI, and immunofluorescence. The multi-level validation (gene expression, protein levels, enzyme activity, metabolite accumulation) provides robust evidence for TCA cycle disruption at the IDH and SDH steps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Inflammation reduces oxidative phosphorylation in adrenocortical cells, as evidenced by downregulation of oxidative phosphorylation genes and proteins, reduced ATP levels, and decreased mitochondrial membrane potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are well-supported by GSEA analysis of RNA-Seq and proteomic data, ATP measurements, and TMRE staining for mitochondrial membrane potential. The data consistently demonstrate impaired mitochondrial oxidative function. However, the mechanistic link between TCA cycle disruption and oxidative phosphorylation impairment could be more directly established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Inflammation increases oxidative stress in the adrenal cortex, with enrichment of oxidative stress response pathways, increased 4-HNE staining, and decreased NADPH levels and glutathione metabolism gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are supported by EGSEA pathway analysis, immunofluorescence for 4-HNE, and NADPH measurements. The citation to macrophage studies (C30) provides mechanistic context. However, direct ROS measurements in adrenocortical cells from LPS-treated mice would strengthen the conclusion. The connection between SDH disruption and ROS production is inferred from other cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Pharmacological SDH inhibition (DMM) or succinate analog treatment (DES) in adrenocortical cells increases succinate levels, decreases oxygen consumption and ATP production, reduces mitochondrial membrane potential, increases ROS, and decreases NADPH/NADP+ ratio, suggesting succinate repurposes mitochondrial metabolism from oxidative phosphorylation toward ROS production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 are well-supported by LC-MS/MS metabolite measurements, Seahorse OCR analysis, ATP/ADP ratio measurements, TMRE staining, ROS measurements, and NADPH/NADP+ ratio measurements. The experimental design using both SDH inhibitor and succinate analog provides complementary evidence. The inference about metabolic repurposing (C40) is reasonable based on the data and comparison to macrophages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "IDH inhibition with AG221 increases isocitrate and the isocitrate/\u03b1-ketoglutarate ratio but does not affect oxygen consumption rate or mitochondrial membrane potential, contrasting with the effects of SDH inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by metabolite measurements, OCR analysis, and TMRE staining. This negative control is important for demonstrating specificity of the SDH effect. However, the lack of effect could also reflect insufficient IDH inhibition or compensatory mechanisms, which are not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "SDH inhibition (pharmacological or genetic) and increased succinate levels impair glucocorticoid and progesterone production in mouse and human adrenocortical cells and explants, demonstrating that intact mitochondrial membrane potential and ATP generation are required for steroidogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50 are strongly supported by LC-MS/MS steroid hormone measurements across multiple experimental systems (primary cells, explants, cell lines) and multiple perturbations (DMM, DES, siRNA). The use of FCCP and oligomycin (C48-C49) provides mechanistic validation that mitochondrial function is required. The consistency across systems strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Increased ROS contributes to impairment of steroidogenesis upon SDH blockage, as evidenced by partial rescue with the antioxidant Trolox and downregulation of Cyp11a1 and Cyp11b1 expression by DMM and DES.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by ROS measurements, Trolox rescue experiments, and qPCR data. The partial rescue by Trolox provides evidence for ROS involvement, though the incomplete rescue suggests additional mechanisms. The downregulation of steroidogenic enzyme expression provides a potential mechanism, though the causal relationship between ROS and gene expression changes is not directly established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "LPS treatment of adrenal explants reduces ACTH-stimulated corticosterone secretion similar to DMM or DES, but neither Sdhb silencing nor LPS treatment affects the corticosterone/11-deoxycorticosterone ratio, suggesting effects upstream of CYP11B1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by LC-MS/MS steroid measurements and ratio calculations. The preserved ratio suggests the primary defect is not at the CYP11B1 step but earlier in the pathway, consistent with effects on CYP11A1 (first step). However, the interpretation is somewhat limited by the complexity of steroidogenic regulation and potential compensatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "IDH inhibition (pharmacological with AG221 or genetic with Idh2 silencing) does not alter glucocorticoid production in mouse or human adrenocortical cells or explants, demonstrating that SDH but not IDH activity is specifically required for adrenocortical steroidogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by LC-MS/MS steroid measurements across multiple systems with both pharmacological and genetic IDH inhibition. This negative control is critical for establishing specificity of the SDH requirement. However, the conclusion (C59) is an inference that could be strengthened by demonstrating that IDH inhibition does not affect ATP or mitochondrial function in these cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Itaconate is not produced in adrenocortical cells (Acod1 expression is restricted to CD45+ cells) and exogenous itaconate does not affect succinate levels, SDH activity, or steroidogenesis, ruling out itaconate as a mediator of SDH inhibition in adrenocortical cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are well-supported by qPCR in sorted cell populations, LC-MS/MS itaconate measurements, metabolite measurements with 4-OI treatment, steroid measurements, and SDH activity assays in Acod1-KO mice. This comprehensive negative result is important for distinguishing the mechanism in adrenocortical cells from that in macrophages. The multiple lines of evidence (expression, metabolite levels, functional assays, genetic knockout) provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Systemic inflammation induces IL-1\u03b2 production in the adrenal gland, and adrenocortical cells express the IL-1\u03b2 receptor Il1r1 and show enrichment of IL-1\u03b2 signaling proteins after LPS treatment, suggesting IL-1\u03b2 as a potential mediator of inflammation effects on adrenocortical cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are supported by citations to previous work, RNA-Seq data showing increased Il1b expression, GSEA showing enrichment of IL-1\u03b2 secretion genes, qPCR showing Il1r1 expression and upregulation, and proteomic GSEA showing IL-1\u03b2 signaling protein enrichment. The data establish that adrenocortical cells can respond to IL-1\u03b2, setting up the mechanistic studies that follow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "IL-1\u03b2, but not IL-6 or TNF\u03b1, reduces SDHB expression, decreases ATP/ADP ratio, and impairs ACTH-induced steroidogenesis in adrenocortical cells, mimicking the effects of LPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by qPCR comparing effects of different cytokines, ATP/ADP ratio measurements, and LC-MS/MS steroid measurements. The specificity for IL-1\u03b2 (versus IL-6 and TNF\u03b1) is important for establishing the mechanism. The similarity to LPS effects provides validation. However, the experiments are in vitro and may not fully recapitulate the in vivo complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "IL-1\u03b2 increases DNMT1 expression and SDHB promoter methylation, leading to reduced Sdhb expression, increased succinate/fumarate ratio, decreased OCR, and impaired steroidogenesis, all of which are reversed by DNMT1 silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 are strongly supported by proteomic data, western blot, bisulfite conversion and PCR, qPCR with Dnmt1 knockdown, LC-MS/MS metabolite measurements, Seahorse OCR measurements, and steroid measurements. The rescue experiments with DNMT1 silencing provide strong evidence for causality. This establishes the IL-1\u03b2\u2192DNMT1\u2192SDHB methylation\u2192SDHB downregulation pathway. However, direct demonstration that DNMT1 binds the SDHB promoter would strengthen the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "In vivo IL-1 receptor antagonism with Raleukin in LPS-treated mice increases SDH activity, reduces succinate levels and succinate/fumarate ratio, and increases corticosterone plasma levels, validating that IL-1\u03b2 negatively regulates SDH function and steroidogenesis in the inflamed adrenal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 are supported by SDH activity assays, LC-MS/MS metabolite measurements, and corticosterone measurements in Raleukin-treated mice. This in vivo validation is critical for demonstrating physiological relevance of the IL-1\u03b2 mechanism identified in vitro. However, the sample sizes are small (n=3-7) and Raleukin is a systemic treatment that may have indirect effects beyond blocking IL-1\u03b2 in the adrenal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Glucocorticoid production in response to inflammation is essential for survival, and while the adrenal gland shows resilience due to regenerative capacity, severe sepsis is associated with adrenocortical impairment. The LPS model has limitations compared to clinical sepsis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by citations to previous literature. These claims provide important context for the study, establishing the clinical relevance and acknowledging limitations of the LPS model. The authors appropriately note that LPS-induced inflammation differs from clinical sepsis in kinetics and complexity, which is important for interpreting the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Inflammation promotes DNA methylation and gene expression regulation, with IL-1\u03b2 specifically shown to increase DNA methylation in a cell type-specific manner, and DNMT1 expression shown to increase upon acute inflammation in various cell types. Reduced SDHB promoter methylation associates with enhanced SDHB expression in other contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 are supported by citations to multiple previous studies. These claims provide important mechanistic context from the literature, establishing precedent for the IL-1\u03b2\u2192DNMT1\u2192gene methylation pathway observed in this study. The citation to SDHB promoter methylation in recurrent spontaneous abortion (C93) provides additional support for the regulatory mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Previous studies have shown that itaconate reduces SDH activity in macrophages, intact SDH function is required for CYP11A1 activation in steroidogenesis, and SDH inhibition or increased succinate augments ROS generation in tumors and macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are supported by citations to previous literature. These claims provide important mechanistic context, establishing what is known about SDH regulation and function in other cell types. The contrast with itaconate (C94) is particularly important given the negative results in adrenocortical cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Adrenocortical disorders such as triple A syndrome and familial glucocorticoid deficiency can be driven by increased oxidative stress, with mutations in antioxidant protection genes implicated. SDH dysfunction leading to oxidative stress may be an important component of adrenocortical insufficiency pathophysiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97 and C98 are supported by citation to previous work, but C99 is speculative (\"may be\") and acknowledged by the authors as requiring further investigation. While the speculation is reasonable based on the findings, it represents a hypothesis rather than a demonstrated result. The connection between the acute inflammation model and chronic adrenocortical disorders is not directly established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The IL-1\u03b2-DNMT1-SDHB-succinate axis disrupts steroidogenesis, tight regulation of succinate levels is essential for normal steroidogenesis, and disruption of SDH expression through the IL-1\u03b2-DNMT1 axis contributes to adrenocortical dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 represent the main conclusions of the study, summarizing the mechanistic pathway established through the multiple lines of evidence presented. These conclusions are well-supported by the comprehensive data including transcriptomics, proteomics, metabolomics, functional assays, genetic manipulations, and in vivo validation. The pathway is established through multiple independent approaches and validated at each step.",
+    "result_type": "MAJOR"
+  }
+]

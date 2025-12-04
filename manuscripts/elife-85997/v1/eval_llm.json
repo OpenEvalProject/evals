@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C30",
+      "C31",
+      "C76"
+    ],
+    "result": "Single TF binding site mutations in the snail distal enhancer cause drastic reduction in mRNA production. Mutations in any single Dl or Twi binding site reduce mRNA production by ~65% uniformly across the expression domain, regardless of which TF or binding affinity is mutated. This effect persists even in the full distal enhancer with additional binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C23-C27, C30-C31, and C76 collectively demonstrate through MS2-MCP live imaging that single binding site mutations drastically reduce transcriptional output. The quantitative data (65% reduction, Figure 1G) and consistency across different mutations and enhancer contexts provide strong experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C70",
+      "C71",
+      "C77",
+      "C98"
+    ],
+    "result": "The reduction in mRNA production is primarily caused by decreased transcriptional amplitude due to lower Pol II loading rate, with minor contributions from shortened transcription windows. The timing of activation and number of active nuclei are not significantly affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38, C70-C71, C77, and C98 provide comprehensive mechanistic analysis showing that transcriptional amplitude (C35) and Pol II loading rate (C70) are the primary drivers of reduced mRNA output, supported by quantitative data in Figures 2 and 4H. The dissection of multiple parameters strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C99"
+    ],
+    "result": "Mutant embryos exhibit shallower expression gradients and less sharp boundaries compared to wildtype, potentially affecting robustness of germ layer formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C99 are supported by quantitative measurements of gradient sharpness shown in Figures 1H and 1K. However, the connection to germ layer formation (C29) remains speculative without direct phenotypic analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C59",
+      "C60",
+      "C82",
+      "C83"
+    ],
+    "result": "TF binding sites work cooperatively to drive proper gene expression. Thermodynamic modeling shows that cooperativity among binding sites is necessary to recapitulate experimental data, with key cooperativity parameters \u03c91, \u03c96, and \u03c911 required for stable solutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C46-C49, C59-C60, C82-C83 demonstrate through thermodynamic modeling (Figures 3B-C, Tables 2-3) that cooperativity is essential. The model without cooperativity fails to predict experimental data (C46), while inclusion of cooperativity terms qualitatively recapitulates observations (C47). Promoter occupancy calculations (C48) provide quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Sensitivity analysis reveals the thermodynamic model is robust to moderate changes in cooperativity parameters \u03c91 and \u03c96, but more sensitive to changes in \u03c911, which represents interactions among all TFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by sensitivity analysis shown in Figure 3\u2014figure supplement 1. The differential sensitivity to \u03c911 versus \u03c91/\u03c96 is clearly demonstrated, providing insight into the relative importance of different cooperative interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C85",
+      "C86"
+    ],
+    "result": "The thermodynamic model predicts that low-affinity binding sites require high Dl concentrations for activity, while increasing binding affinity leads to ectopic expression. This explains why the sna enhancer contains only weak Dl binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57, C85-C86 are supported by modeling results in Figure 3\u2014figure supplement 2. The model predictions are internally consistent and align with biological understanding of sna expression patterns. However, experimental validation of these predictions is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Modeling shows that weaker binding sites require higher cooperativity values to maintain normal expression, while stronger sites require lower cooperativity. This suggests cooperativity among weak sites is a mechanism to maintain specific expression domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 are supported by modeling results in Table 2 and Figure 3\u2014figure supplement 2A-B. The inverse relationship between binding affinity and required cooperativity is clearly demonstrated, though experimental validation is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C74",
+      "C95",
+      "C96"
+    ],
+    "result": "TF binding site mutations increase the rate of promoter inactivation (koff) and reduce burst durations, while having minimal effect on activation rate (kon). This causes more stochastic transcriptional activity with fewer active nuclei at any given time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C63-C69, C74, C95-C96 are supported by Hidden Markov Model analysis (Figures 4D-G). The differential effects on koff versus kon are clearly demonstrated, and the connection to stochastic activity is well-supported by imaging data (Figure 4A, Videos 3-4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "The HMM analysis provides only partial explanation for the reduction in transcriptional activity, as changes in kon and koff are less drastic than changes in transcriptional output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is an honest acknowledgment of the model's limitations, supported by comparison of the magnitude of changes in bursting parameters versus transcriptional output. This demonstrates appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The Dl1 mutation causes earlier transcriptional activation than wildtype, possibly due to improved steric conformation when Dl1 is mutated, but this earlier activation does not compensate for reduced amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C40 is supported by data in Figures 2C and 2F. However, the mechanistic explanation in C41 is speculative without structural or binding data. The observation is interesting but the interpretation requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C72",
+      "C73"
+    ],
+    "result": "In the full distal enhancer, mutations affect timing of activation and transcription window in addition to amplitude, showing different regulatory mechanisms compared to the minimal enhancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45, C72-C73 are supported by data in Figure 2\u2014figure supplement 2 and Figure 4\u2014figure supplement 2. The differential effects between minimal and full enhancers are clearly demonstrated, though the mechanistic basis for these differences is not fully explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Unlike previous findings with repressor binding sites, additional TF binding sites in the full distal enhancer do not buffer against mutations in activator sites. The minimal enhancer is the core region needed for normal sna expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are supported by comparison of minimal and full enhancer data (Figures 1I-J). The contrast with previous work (L\u00f3pez-Rivera et al., 2020) is noted, though the explanation in C79 (activator vs. repressor) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C100",
+      "C105",
+      "C106"
+    ],
+    "result": "TF-DNA binding regulates spatiotemporal gene expression by modulating transcriptional kinetics and tuning bursting rates. Multiple TF binding sites are imperative for pattern formation and eliminating developmental variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C100, C105-C106 represent the main conclusions synthesizing experimental and modeling results. These are well-supported by the collective evidence from live imaging, thermodynamic modeling, and HMM analysis presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background information on enhancer function, Drosophila development, and snail gene regulation is established through citations to previous literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C7, C13-C22 provide established background knowledge supported by appropriate citations. These claims accurately represent prior work and provide necessary context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C39",
+      "C84",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C94"
+    ],
+    "result": "Previous studies have shown varied effects of TF binding site mutations, with some enhancers showing buffering and others showing sensitivity. Low-affinity sites are important for specific expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12, C39, C84, C87-C90, C94 accurately summarize relevant prior work through appropriate citations. These provide important context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Transcriptional bursting is an established phenomenon that drives heterogeneity in gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 accurately represent established knowledge about transcriptional bursting, supported by appropriate citations to previous literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C29",
+      "C103"
+    ],
+    "result": "Shallower sna expression may affect germ layer formation, and it would be interesting to characterize phenotypic effects of these mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C29 and C103 are speculative suggestions for future work. While biologically plausible, these remain untested hypotheses without supporting experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C104",
+      "C107"
+    ],
+    "result": "The minimal enhancer is a useful model system for studying transcription regulation, though generalizing from reporter constructs to endogenous settings has limitations. Live imaging approaches are important for capturing kinetic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102, C104, C107 represent appropriate discussion of the experimental system's strengths and limitations. These demonstrate scientific rigor in acknowledging both the utility and constraints of the approach.",
+    "result_type": "MINOR"
+  }
+]

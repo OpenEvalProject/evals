@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The study employed two rhesus macaques in an experimental paradigm with execution and observation tasks involving three visually identical objects that could be lifted, twisted, or shifted. The experimental setup, behavioral tasks, and recording methods are described in detail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 and C89-C98 provide comprehensive methodological details about subjects, experimental design, apparatus, and recording techniques. These are standard methodological descriptions supported by the figures and consistent with established neuroscience practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Behavioral validation showed that monkeys used the LED cue for action selection (longer manipulation duration without informative cues) and that approach duration differed between actions for both monkeys and the human actor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are supported by experimental data in Figures 1D-F with appropriate statistical comparisons. This validates that the task design worked as intended and that actions were distinguishable during the approach phase.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "The monkey's gaze was directed toward the action area but did not differ significantly between the three actions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is supported by eye-tracking data and MANOVA statistical analysis (p=0.81), confirming that monkeys attended to the observed actions without systematic gaze differences between action types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C99"
+    ],
+    "result": "177 out of 240 recorded F5 neurons (74%) met established mirror neuron criteria based on motor and visual responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20 and C99 describe the neuron selection criteria and sample size. The criteria are based on established methods (cited as Pomper et al., 2020) and the proportion of mirror neurons is reasonable for F5.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Mirror neurons showed time-dependent encoding of observed actions, with 22% of time bins (458/2124) encoding observed actions, and the percentage varying from 0-45% across time bins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 are supported by systematic analysis across time bins shown in Figure 3A. The time-dependent nature of action encoding is demonstrated with appropriate statistical testing (Kruskal-Wallis tests with correction).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Of bins encoding observed actions, 60% also encoded actions during execution, and 72% of mirror neurons encoded observed actions in at least one time bin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 provide important quantification of the overlap between observation and execution encoding. The data are clearly presented in Figure 3 and support the subsequent analyses of shared coding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33"
+    ],
+    "result": "Three methods for detecting shared action codes revealed that 80-95% of bins encoding observed actions do NOT have a shared code, though the proportion with shared codes (using preference and LDA methods) exceeded chance levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 and C33 present the core finding using three complementary methods with appropriate statistical controls including permutation tests against a null hypothesis. The convergence of methods strengthens the conclusion that non-shared codes predominate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C48",
+      "C84"
+    ],
+    "result": "Bins with shared codes formed a distinct, non-random cluster where execution-trained and observation-trained classifiers achieved similar accuracy in predicting observed actions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C48, and C84 are supported by the two-Gaussian fitting analysis in Figure 4, which demonstrates a statistically identifiable cluster of shared-code bins. The bootstrapping analysis provides confidence intervals supporting non-randomness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C47",
+      "C53"
+    ],
+    "result": "Pure mirror neurons (with exclusively shared code bins) were extremely rare (2-3 neurons depending on method), and most neurons with shared codes also contained non-shared code bins at other times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C47, and C53 are supported by the single-neuron analysis in Figure 5A showing the temporal distribution of shared and non-shared bins. This demonstrates that shared coding is a dynamic, time-limited property rather than a stable neuronal characteristic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Population-level analysis showed that observed actions were discriminated optimally when the object reached its target position, with observation-trained classifiers performing better than execution-trained classifiers, and within-task classifiers achieving 100% accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 and C42-C44 are supported by population classification results in Figure 6A-B. The temporal dynamics and optimal discrimination at target position are clearly demonstrated with appropriate cross-validation methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C49",
+      "C61",
+      "C82",
+      "C85"
+    ],
+    "result": "While action-specific population states during observation were somewhat similar to execution states, they were not similar enough for execution-trained classifiers to match observation-trained classifiers. Subpopulations with shared codes performed worse than the whole population with non-shared codes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C49, C61, C82, and C85 present the key population-level finding. Figure 6 demonstrates that even optimally selected subpopulations with shared codes (panels C-F) cannot match the performance of the whole population using non-shared codes (panel B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C63"
+    ],
+    "result": "Neurons with only shared bins and those with only non-shared bins showed largely overlapping anatomical locations, providing no evidence for anatomical segregation of these subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41 and C63 are supported by Figure 7 showing recording locations. However, the spatial resolution is limited by the recording technique, and more refined anatomical methods might reveal finer-scale organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C54"
+    ],
+    "result": "The proportion of mirror neurons with shared codes (0.8-16% depending on criteria) is comparable to the 5.5% 'strictly congruent' neurons reported by Gallese et al. 1996, but the crucial difference is that incongruent neurons form the clear majority in the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 and C54 appropriately contextualize the findings relative to prior work. The comparison is fair and highlights the key methodological difference: examining discharge rates rather than just response presence/absence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C79",
+      "C86"
+    ],
+    "result": "The findings provide evidence against the representation hypothesis (that F5 mirror neurons represent observed actions as if the observer were performing them) for the whole population, though this hypothesis might hold for small subsets of neurons at restricted time periods with time-resolved readout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57, C79, and C86 present the main theoretical conclusion. This is well-supported by the empirical findings (C28-C33, C45-C49, C82, C85) showing predominance of non-shared codes and better performance of observation-trained classifiers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "About 20% of mirror neurons contained time bins with shared codes meeting requirements for motor representation according to the strictly defined mirror mechanism, and F5 mirror neurons may comprise functionally different subsets given their differences in anatomical connections and cellular identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C58 is supported by the data (C46, C83), but claims C59-C60 are more speculative, relying on citations to other studies about anatomical and cellular heterogeneity. The functional significance of the 20% subset with shared codes remains unclear given their poor performance (C49, C61).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Comparison of duration and starting position of action segments with shared versus non-shared codes did not provide convincing evidence that shared code segments represent specific action aspects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by Figure 5E showing similar distributions of segment duration and starting position between shared and non-shared codes, with only minor differences. This argues against the hypothesis that shared codes represent specific action components.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64",
+      "C80",
+      "C81",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors propose that F5 mirror neurons represent goal pursuit from the observer's viewpoint during observation, potentially allowing the observer to use expectations to intervene in or learn from another's action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64 is well-supported by data, but C80-C81 and C87-C88 are speculative proposals for alternative interpretations. While these proposals are thoughtful and consider prior literature, they require additional experimental validation as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Multiple prior studies support that F5 mirror neuron activity during observation is influenced by factors beyond sensory properties, including reachability, expected reward value, viewpoint, and goal value, with lesion studies showing necessity for action goal mapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C78 appropriately cite and interpret prior literature to support alternative conceptual frameworks. The citations appear accurate and relevant, particularly the Ninomiya et al. 2020 lesion study (C75-C77) which provides causal evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The introduction reviews the history and definitions of mirror neurons, including their discovery, properties, proposed functions, and controversies about shared action codes and the mirror mechanism concept.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 provide appropriate background from cited literature. The citations appear accurate and the authors clearly distinguish between different interpretations of 'mirror mechanism' (C7-C9), which is important for framing their study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "In about 20% of neurons there were time periods with a shared code.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is directly supported by the data presented in Figure 3D and Figure 5A, showing that 18-21% of mirror neurons (depending on method) contained at least one time bin with shared code.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "Linear discriminant analysis was used to classify actions from single neuron and population discharge rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 describes the analytical approach with appropriate citation (Fisher, 1936) and implementation details (MATLAB function). The method is standard and appropriately applied with cross-validation.",
+    "result_type": "MINOR"
+  }
+]

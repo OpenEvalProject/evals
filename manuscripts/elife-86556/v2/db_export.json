@@ -1,0 +1,1697 @@
+{
+  "submission": {
+    "id": "70af502a-fd3f-454c-b835-5753cb04c526",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T01:38:42.263626Z",
+    "updated_at": "2025-12-04T01:38:42.263626Z"
+  },
+  "content": [
+    {
+      "id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "submission_id": "70af502a-fd3f-454c-b835-5753cb04c526",
+      "content_type": "manuscript",
+      "content_text": "# Annexin A6 mediates calcium-dependent exosome secretion during plasma membrane repair\n\n## Authors\n\n- Justin Krish Williams<sup>1</sup> ([ORCID: 0000-0002-9447-5554](https://orcid.org/0000-0002-9447-5554))\n- Jordan Matthew Ngo<sup>1</sup> ([ORCID: 0000-0002-6566-3919](https://orcid.org/0000-0002-6566-3919))\n- Isabelle Madeline Lehman<sup>1</sup> ([ORCID: 0009-0008-8667-401X](https://orcid.org/0009-0008-8667-401X))\n- Randy Schekman<sup>2</sup> ([ORCID: 0000-0001-8615-6409](https://orcid.org/0000-0001-8615-6409)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n2. Department of Molecular and Cell Biology, Howard Hughes Medical Institute, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n\n\u2020 Corresponding author\n\n## Abstract\n\nExosomes are an extracellular vesicle (EV) subtype that is secreted upon the fusion of multivesicular bodies (MVBs) with the plasma membrane. Exosomes may participate in intercellular communication and have utility as disease biomarkers; however, little is known regarding the physiological stimuli that induce their secretion. Ca2+ influx promotes exosome secretion, raising the possibility that exosomes are secreted during the Ca2+-dependent plasma membrane repair of tissues damaged by mechanical stress in vivo. To determine whether exosomes are secreted upon plasma membrane damage, we developed sensitive assays to measure exosome secretion in intact and permeabilized cells. Our results suggest that exosome secretion is coupled to Ca2+-dependent plasma membrane repair. We find that annexin A6 (ANXA6), a well-known plasma membrane repair protein, is recruited to MVBs in the presence of Ca2+ and required for Ca2+-dependent exosome secretion, both in intact and in permeabilized cells. ANXA6 depletion stalls MVBs at the cell periphery, and ANXA6 truncations localize to different membranes, suggesting that ANXA6 may serve to tether MVBs to the plasma membrane. We find that cells secrete exosomes and other EVs upon plasma membrane damage and propose that repair-induced secretion may contribute to the pool of EVs present within biological fluids.\n\n## Introduction\n\nProtein secretion is an essential process that prokaryotes and eukaryotes utilize for intercellular communication. In eukaryotic cells, most secretory proteins are exported by the conventional secretory pathway which consists of co-translational signal peptide recognition by the signal recognition particle, polypeptide translocation through the Sec61 translocon, and anterograde transport from the endoplasmic reticulum (ER) to the Golgi apparatus via COPII vesicles (Park and Rapoport, 2012; Shan and Walter, 2005; Zanetti et al., 2011). However, eukaryotic cells have also developed alternative secretory processes that bypass the conventional pathway (Malhotra, 2013). Some well-documented examples include the secretion of leaderless cargoes (proteins that lack a signal peptide), such as interleukin-1\u03b2, and the egress of cytoplasmic proteins and RNAs within extracellular vesicles (EVs; Colombo et al., 2014; O\u2019Brien et al., 2020; Zhang et al., 2020).\n\nEVs are membrane-enclosed compartments that are exported to the extracellular milieu of cells in culture and in vivo. Eukaryotic cells secrete EV subpopulations that can be classified broadly into two major categories with distinct biogenesis pathways: microvesicles and exosomes (Colombo et al., 2014; van Niel et al., 2018). Microvesicles form by outward budding from the plasma membrane (Cocucci et al., 2009; Tricarico et al., 2017). Exosomes are 30\u2013150 nm vesicles formed by inward budding of the limiting membrane of late endosomes to produce multivesicular bodies (MVBs) that contain intraluminal vesicles (ILVs). Upon fusion of MVBs with the plasma membrane, ILVs are released to the extracellular space as exosomes (Harding et al., 1983). Exosomes have potential utility as biomarkers for disease progression because they contain protein and small RNA molecules specific to their cell type of origin (Driedonks and Nolte-\u2019t Hoen, 2018; Shurtleff et al., 2017; Upton et al., 2021).\n\nLittle is known about the physiological circumstances that could elevate exosome secretion. Interestingly, elevation of cytosolic Ca2+ with ionophores has been demonstrated to induce rapid exosome secretion in a Rab27a, Munc13-4-dependent manner (Messenger et al., 2018; Savina et al., 2003). These results raise the possibility that exosomes may be secreted as a byproduct of the Ca2+-dependent plasma membrane repair process that occurs after membrane disruption in vivo. Perforation of the plasma membrane results in an influx of extracellular Ca2+ into the cytoplasm and triggers a repair cascade that includes mobilization and fusion of lysosomes with the plasma membrane (Andrews and Corrotte, 2018). Given the similarity of lysosomes and MVBs, it is plausible to suggest that exosomes are secreted as a byproduct of Ca2+-dependent plasma membrane repair. However, some reports have suggested that, unlike lysosomes, MVBs do not undergo Ca2+-dependent exocytosis (Jaiswal et al., 2004; Jaiswal et al., 2002).\n\nTo determine if exosomes are secreted during Ca2+-dependent plasma membrane repair, we developed an improved nanoluciferase (Nluc) reporter system to quantify exosome secretion that is sensitive, linear, and amenable to high throughput. Using this assay, we established that a Ca2+ ionophore, a pore-forming cytolysin, and physiological mechanical stress all stimulated exosome secretion in an extracellular Ca2+-dependent manner. We showed that annexin A6 (ANXA6), a well-characterized plasma membrane repair protein, is recruited to MVBs in the presence of Ca2+ and demonstrated that ANXA6 is required for Ca2+-dependent exosome secretion. We then observed that depletion of ANXA6 stalls MVBs at the periphery of cells treated with a Ca2+ ionophore. Next, we developed a streptolysin O (SLO)-permeabilized cell reaction that recapitulates Ca2+- and ANXA6-dependent exosome secretion. Finally, we demonstrated that the two annexin domains of ANXA6 become enriched at different membranes upon elevation of cytosolic Ca2+. Our results demonstrate that exosome secretion is coupled to Ca2+-dependent plasma membrane repair and that ANXA6 may serve as a potential tether for the recruitment of MVBs to the plasma membrane.\n\n## Results\n\n### Design and validation of an endogenous CD63-Nluc exosome secretion assay\n\nWe sought to develop a cell-based exosome secretion assay that is quantitative, sensitive, amenable to high-throughput, and able to distinguish cell debris and bona fide exosomes. A previous study developed a luminescence-based assay to quantify exosome secretion by inserting Nluc into the endogenous locus of the tetraspanin protein CD63 (Hikita et al., 2018). We obtained the HCT116 CD63Nluc-KI #17 cell line (referred to herein as CD63-Nluc cells) from this group and built upon their assay.\n\nSequestration of CD63 during ILV biogenesis results in the amino- and carboxyl-termini oriented to the exosome lumen. We leveraged this topology along with the relative membrane permeabilities of the substrate and an inhibitor of Nluc to develop a quantitative cellular assay to monitor the secretion of exosomes (Figure 1A). Furimazine, the substrate of Nluc, permeates through cellular membranes and enables luminescence from both cellular debris and intact CD63-Nluc exosomes present within the conditioned medium of cultured CD63-Nluc cells. The addition of a membrane-impermeable Nluc inhibitor eliminates luminescence derived from cellular debris where Nluc is readily accessible, while not affecting the luminescence derived from intact CD63-Nluc exosomes incubated with furimazine (Walker et al., 2017). Finally, solubilization of cellular membranes by the addition of the non-ionic detergent Triton X-100 (TX-100) exposes all CD63-Nluc to the inhibitor. The addition of the membrane-impermeable Nluc inhibitor depleted a significant portion of luminescence derived from the conditioned medium of CD63-Nluc cells (~30%) and membrane solubilization by TX-100 reduced luminescence to background levels (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/86556/elife-86556-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic illustrating the topology of CD63-Nluc in different membranes and the cellular CD63-Nluc secretion assay. (B) Luminescence from the conditioned medium of CD63-Nluc cells with or without furimazine, the membrane-impermeable Nluc inhibitor, and 0.1% TX-100 are shown. (C) Luminescence derived from the supernatant fraction of CD63-Nluc conditioned medium subjected to differential centrifugation (1k, 10k, and 100k) with or without 0.1% TX-100 are shown. (D) Membrane-protected luminescence (in blue circles) and buoyant density (in black squares) of CD63-Nluc conditioned medium subjected to a high-resolution linear density gradient are shown. (E) Membrane-protected luminescence from CD63-Nluc conditioned medium collected over 24 hr with (blue circles) or without 0.1% TX-100 (black squares). Data plotted represent the means of three independent experiments, and error bars represent SDs. Note, for Figure 1D and E, the error bars are smaller than the dots in the image.\n\nTo further validate the localization of the CD63-Nluc luminescence signal to sedimentable vesicles, we subjected the conditioned medium fraction to differential centrifugation and found that CD63-Nluc luminescence was removed after high-speed sedimentation or upon the addition of TX-100 (Figure 1C). Next, we obtained a partially clarified conditioned medium fraction by differential centrifugation and fractionated the material on a linear iodixanol gradient (Figure 1D). CD63-Nluc vesicles equilibrated at a density of 1.11 g/ml, a buoyancy similar to published reports (Jeppesen et al., 2019). In a time course over 24 hr, we measured secreted CD63-Nluc luminescence in the presence of Nluc inhibitor alone or with TX-100 and found the signal increased linearly, consistent with exosome secretion over time (Figure 1E). The luminescence signal in the presence of the Nluc inhibitor and TX-100 remained constant, consistent with cell rupture/detachment during medium change. Thus, our modified CD63-Nluc assay faithfully reported the secretion of bona fide CD63-positive exosomes, and we have used this method to assess the molecular requirements for exosome secretion.\n\n### Elevation of cytosolic Ca2+ during plasma membrane damage stimulates exosome secretion\n\nWe investigated the relationship between elevation of cytosolic Ca2+ levels and exosome secretion. In agreement with previous reports (Messenger et al., 2018), influx of Ca2+ into the cytoplasm using the Ca2+ ionophore ionomycin (5 \u00b5M, 30 min) induced robust exosome secretion compared to the level of secretion of the vehicle control (Figure 2A). Exosome secretion initiated within 2 min of ionomycin treatment and was complete by 10 min (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/86556/elife-86556-fig2-v2.jpg)\n\n**Figure 2.:** (A) Normalized exosome production from CD63-nanoluciferase (Nluc) cells treated with 5 \u00b5M ionomycin or DMSO (ionomycin vehicle) are shown. (B) Relative rate of exosome secretion over time is shown. CD63-Nluc cells were treated with DMSO or 5 \u00b5M ionomycin for the indicated times, and the normalized exosome production index was calculated. (C) Normalized exosome production from CD63-Nluc cells treated for 30 min with increasing concentrations of streptolysin O (SLO), with or without 1.8 mM extracellular Ca2+. Note, error bars are smaller than the dots in the image. (D) Relative rate of exosome secretion over time is shown. CD63-Nluc cells were treated with PBS or 250 ng/ml SLO for the indicated time points, and the normalized exosome production index was calculated. (E) Normalized luminescence derived from CD63-Nluc cells treated with a high or low dose of mechanical stress, with or without 1.8 mM extracellular Ca2+. (F) Iodixanol gradient fractionation of conditioned medium 100k \u00d7 g pellet fraction is shown. Conditioned medium from cells treated for 30 min with 5 \u00b5M ionomycin or 24 hr vehicle is compared. Line graphs show distribution of CD63-Nluc luminescence (with membrane-impermeable inhibitor added) across the linear gradient. Immunoblots show distribution of several extracellular vesicle (EV) markers across the linear gradient. (G) Iodixanol gradient fractionation of conditioned medium 10k \u00d7 g supernatant fractions are shown. Conditioned medium from cells treated for 4 hr with 5 \u00b5M ionomycin or 4 hr vehicle is compared. Line graphs show distribution of CD63-Nluc luminescence (with membrane-impermeable inhibitor added) across the linear gradient. (H) Normalized exosome production from 30 min of 5 \u00b5M ionomycin or DMSO vehicle, co-treated with DMSO vehicle, 1 \u00b5M latrunculin A (LatA), or 10 \u00b5M nocodazole (Noco) is shown. Data plotted represent the means from three independent experiments, and error bars represent SDs. Statistical significance was performed using a Student\u2019s T-test (**p<0.01).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86556/elife-86556-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Normalized luminescence derived from the 10k \u00d7 g conditioned medium supernatant from CD63-nanoluciferase (Nluc) cells with or without the addition of the membrane-impermeable Nluc inhibitor, as a function of increasing streptolysin O (SLO) concentrations, is shown. (B) Normalized exosome production from HEK293T FLAG-Nluc-CD63 cells treated for 20 min with increasing concentrations of SLO, with or without 1.8 mM extracellular Ca2+. (C) PARP and GAPDH immunoblots from HCT116 CD63-Nluc cells during a 4 hr ionomycin (5 \u00b5M) time course. (D) Phalloidin staining after treatment with 1 \u00b5M latrunculin A or (E) tubulin immunofluorescence after treatment with 10 \u00b5M nocodazole. Data plotted represent the means from three independent experiments, and error bars represent SDs.\n\nAn influx of extracellular Ca2+ triggers lysosome exocytosis as a means to repair plasma membrane damage (Andrews and Corrotte, 2018; Corrotte et al., 2015; Corrotte and Castro-Gomes, 2019; Demonbreun and McNally, 2016). A similar process is elicited in cells treated with a Ca2+ ionophore (Jaiswal et al., 2002). We reasoned that MVBs, like lysosomes, might fuse with the plasma membrane to facilitate membrane repair. Upon treatment with the pore-forming toxin, SLO, exosomes were secreted in a Ca2+-dependent manner (Figure 2C). Treatment with 400 ng/ml or 800 ng/ml of SLO significantly increased exosome production, dependent on the presence of extracellular CaCl2 (1.8 mM). Similar to ionomycin, SLO induced exosome secretion 2 min after initial application and was complete after 10\u201320 min (Figure 2D). In SLO time course experiments, pore formation was synchronized by pre-incubating cells with SLO on ice (Corrotte et al., 2015). We noted that SLO permeabilized exosomes as well as cells. SLO treatment of conditioned medium decreased the CD63-Nluc signal when the membrane-impermeable Nluc inhibitor was present (Figure 2\u2014figure supplement 1A). Thus, our assay likely underestimates SLO-induced exosome secretion. To test whether plasma membrane damage also elicits exosome secretion in a different cell line, we generated a HEK293T reporter cell line that expresses FLAG-Nluc-CD63 under expression of the weak L30 promoter. We observed an increase in FLAG-Nluc-CD63 exosome secretion from this reporter cell line in a SLO dose- and Ca2+-dependent manner (Figure 2\u2014figure supplement 1B). Application of a physiological mechanical stress also induced exosome secretion in a Ca2+-dependent manner (Figure 2E). HCT116 CD63-Nluc cells were pumped slowly through a narrow-gauge needle to simulate a capillary. In the low mechanical stress regime, cells transiently experienced ~89 dyn/cm2 maximum fluid shear stress, whereas in the high-mechanical stress regime, cells transiently experienced ~178 dyn/cm2 maximum fluid shear stress (Barnes et al., 2012). This form of mechanical stress increased exosome production but only when CaCl2 was present in the conditioned medium. Endothelium and circulating lymphocytes routinely experience mechanical stress of ~95 dyn/cm2 and transiently experience up to ~3000 dyn/cm2 (Barnes et al., 2012).\n\nNext, we used linear iodixanol density gradient fractionation to assess if the Ca2+-dependent increase in extracellular CD63 was attributable to exosomes as opposed to the secretion of intact endosomes contained within plasma membrane-derived vesicles (Jeppesen et al., 2019). EVs from cells treated with ionomycin for 30 min or vehicle for 24 hr were separated on a high-resolution linear iodixanol gradient. A 30 min ionomycin treatment induced the secretion of low-buoyant density, ANXA2- and FLOT2-positive vesicles (Figure 2F, Fraction #8) compared to the 24 hr vehicle control. ANXA2 is a marker for a subpopulation of plasma membrane-derived EVs (Jeppesen et al., 2019). Alternatively, CD63 and Nluc signals equilibrated to higher buoyant density fractions corresponding to the position expected for exosomes (Figure 2F, Fraction #10). A comparison of ionomycin- and vehicle-treated samples showed drug treatment over equivalent times (4 hr) increased the Nluc luminescence in putative exosome fractions (Figure 2G, Fraction #10). Treatment of cells with ionomycin for 4 hr did not induce apoptotic cell death (Figure 2\u2014figure supplement 1C; Gil-Parrado et al., 2002).\n\nMVBs traffic toward the cell periphery on microtubules or actin filaments (Mittelbrunn et al., 2015). We considered the possibility that Ca2+-dependent exosome secretion depended on MVB traffic on microtubules or actin filaments. Treatment with nocodazole, a microtubule polymerization inhibitor, but not latrunculin A, an actin polymerization inhibitor, reduced vehicle- and ionomycin-induced exosome secretion (Figure 2H, Figure 2\u2014figure supplement 1D and E).\n\nWe conclude that the influx of extracellular Ca2+ caused by several inducers of plasma membrane lesions triggers exosome secretion and that this secretion is dependent on the anterograde trafficking of MVBs on microtubules.\n\n### Identification of candidate proteins involved in Ca2+-dependent exosome secretion\n\nNext, we sought to identify cytosolic proteins that are recruited in a Ca2+-dependent manner to MVBs. Such proteins may be involved in Ca2+-dependent exosome secretion and plasma membrane repair. CD63-Nluc cells were ruptured by homogenization, and a post-nuclear supernatant fraction was supplemented with 1 mM CaCl2 or 1 mM EGTA and mixed with immobilized Nluc antibody in order to immunoprecipitate (IP) MVBs and associated peripheral membrane proteins. After washing the immunoprecipitated MVBs to remove other organelles, Ca2+-dependent MVB binding proteins were eluted from the IP fraction using 2 mM EGTA. MVB proteins retained after the EGTA elution were solubilized using 0.2% TX-100 (Figure 3A). The 0.2% TX-100 elution fractions were significantly enriched in LAMP1 and diminished in GAPDH compared to the input, regardless of the presence of CaCl2 or EGTA in the elution (Figure 3B). A gel stained for total protein showed four intense protein bands unique to the EGTA-eluted sample (Figure 3C). These proteins were absent when the Nluc antibody was omitted or when the post-nuclear supernatant was treated with 1 mM EGTA instead of 1 mM CaCl2. Three sections of the gel were excised and analyzed by mass spectrometry (Figure 3D). We identified annexin A6 (ANXA6) and copine 3 (CPNE3) in the upper gel slice, annexin A2 (ANXA2) in the middle gel slice, and S100 Ca2+-binding protein A10 (S100A10) in the lower gel slice.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/86556/elife-86556-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic illustrating the isolation of Ca2+-dependent multivesicular body (MVB)/lysosome binding proteins (Ab: antibody; gray-beads, blue-MVB, green-mitochondria, orange-ER, red-proteins, and gold-Ca2+). (B) Immunoblot analysis of LAMP1 and GAPDH from the TX-100 elutions, relative to the input, is shown. (C) Total protein gel (Sypro Ruby stained) of eluted fractions is shown. Red boxes indicate gel cuts sent for proteomic analysis. (D) Table depicting the top four proteomic hits from each gel cut are shown, excluding keratin family proteins.\n\n### ANXA6 depletion blocks Ca2+-dependent exosome secretion and stalls MVBs at the cell periphery\n\nWe tested the effect of knocking-down genes encoding the Ca2+-dependent MVB-binding proteins identified in our proteomic analysis. We were unable to knock down ANXA2 using two different shRNAs. However, we were able to efficiently knock down ANXA6 and CPNE3 with two different shRNAs (Figure 4A and B), and in each case, Ca2+-dependent exosome secretion decreased relative to a GFP knockdown control (Figure 4C and D). One of the ANXA6 shRNAs also slightly decreased constitutive exosome secretion relative to the GFP control, although the effect was relatively small (Figure 4C). A polyclonal knockout of ANXA6 also decreased exosome secretion relative to a non-targeting control (Figure 4\u2014figure supplement 1A and B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/86556/elife-86556-fig4-v2.jpg)\n\n**Figure 4.:** (A) Immunoblot analysis of ANXA6 and GAPDH expression from GFP, ANXA6-I, and ANXA6-II shRNA CD63-nanoluciferase (Nluc) cells is shown. (B) Immunoblot analysis of CPNE3 and GAPDH expression from GFP, CPNE3-I, and CPNE3-II shRNA CD63-Nluc cells are shown. (C) Normalized exosome production derived from GFP, ANXA6-I, ANXA6-II, CPNE3-I, and CPNE3-II shRNA CD63-Nluc cells grown in conditioned medium for 24 hr are shown. (D) Normalized exosome production derived from GFP, ANXA6-I, ANXA6-II, CPNE3-I, and CPNE3-II shRNA CD63-Nluc cells treated with 5 \u00b5M ionomycin for 30 min are shown. Data plotted represent the means from three independent experiments, and error bars represent SDs. Statistical significance was performed using an ANOVA (*p<0.05, ****p<0.0001, and ns = not significant). (E) CD63 immunofluorescence and phalloidin staining of GFP or ANXA6-I shRNA CD63-Nluc cells after 30 min of DMSO or 5 \u00b5M ionomycin treatment are shown. White arrows indicate peripheral CD63 puncta. Scale bars: 10 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86556/elife-86556-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Immunoblot analysis of ANXA6 and vinculin expression from sgNT and sgANXA6 CD63-Nluc cells are shown. (B) Normalized exosome production derived from sgNT and sgANXA6 CD63-Nluc cells treated with 5 \u00b5M ionomycin for 30 min is shown. Data plotted represent the means from three independent experiments, and error bars represent SDs. Statistical significance was performed using a Student\u2019s T-test (**p<0.01).\n\nIn order to assess how ANXA6 depletion affected exosome secretion, we visualized CD63-positive compartments after Ca2+ influx. CD63-Nluc cells were treated with ionomycin or vehicle control for 30 min, fixed, and analyzed using immunofluorescence microscopy. We observed an accumulation of CD63-positive vesicles at the cell periphery, particularly in ionomycin-treated ANXA6 knockdown cells (Figure 4E). We suggest that ANXA6 may be necessary for Ca2+-dependent exosome secretion, possibly at the point of docking between the MVB and the plasma membrane.\n\n### Biochemical reconstitution of Ca2+- and ANXA6-dependent exosome secretion in permeabilized cells\n\nMany studies probing genes that may contribute to exosome secretion have relied on depletion or overexpression experiments in live cells. We sought to develop an assay in permeabilized cells to allow a direct assessment of the roles of different gene products in exosome secretion.\n\nSLO is a potent bacterial toxin secreted by group A streptococci that forms stable pores within cholesterol-containing biological membranes in a temperature-dependent manner (Alouf, 1980). SLO has been used to permeabilize cells to reconstitute various intracellular membrane trafficking and organelle exocytosis reactions because it forms stable pores that are large enough to allow the diffusion of large proteins, but not intact organelles, across the plasma membrane (Apodaca et al., 1996; Funato et al., 1997; Martys et al., 1995). We leveraged the cholesterol- and temperature-dependent properties of SLO to establish a permeabilized cell reaction that would allow us to study exosome secretion upon plasma membrane damage.\n\nReaction components including an ATP regeneration system (ATPr), GTP, cytosol, and Ca2+ were mixed with SLO-permeabilized cells and incubated at 30\u00b0C and evaluated for exosome secretion just as in the cell-based exosome secretion assay (Figure 5A). We observed that addition of either rat liver cytosol or Ca2+ promoted exosome secretion slightly and that the addition of both rat liver cytosol and Ca2+ promoted exosome secretion ~12-fold over the control condition (Figure 5B). The addition of HCT116 WT cytosol and Ca2+ promoted exosome secretion ~15-fold over the control condition (Figure 5C). To assess the energy dependence of this reaction, we repeated the experiment using nucleotide-depleted cytosol in either the absence or presence of the ATPr and GTP (Figure 5D). We observed that the Ca2+-only reaction was stimulated by the addition of the ATPr and GTP (columns 3 and 7), whereas the stimulatory effect obtained with cytosol alone appeared to be nucleotide-independent (columns 2 and 6). The Ca2+ conditional and partial ATP dependence of the reaction may reflect distinct pools of MVBs, some perhaps already bound to the plasma membrane.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/86556/elife-86556-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic illustrating the permeabilized cell exosome secretion assay. (B) Permeabilized cell exosome secretion reactions with or without SLO, ATP regeneration system (ATPr)/GTP, rat liver cytosol, and Ca2+ are indicated. (C) Permeabilized exosome secretion assays with or without HCT116 WT cytosol and Ca2+ are shown. (D) ATP requirements for the permeabilized exosome secretion assay. Reactions with or without nucleotide-depleted rat liver cytosol, Ca2+, and ATPr/GTP are indicated. (E) Requirement of ANXA6 in the permeabilized exosome secretion assay. Reactions with or without HCT116 WT cytosol, an anti-GFP rabbit IgG antibody, and an anti-ANXA6 rabbit IgG antibody are depicted. Data plotted represent the means from three independent experiments, and error bars represent SDs. Statistical significance was performed using an ANOVA (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, and ns = not significant).\n\nThe participation of ANXA6 in the reconstitution was assessed with blocking IgG antibodies targeting epitopes on either GFP or ANXA6. Addition of an anti-GFP antibody slightly decreased exosome secretion whereas the equivalent addition of an anti-ANXA6 antibody (whose specificity was validated by immunoblot analysis in Figure 4A and Figure 4\u2014figure supplement 1A) decreased exosome secretion to a background level seen in a reaction without added cytosol (Figure 5E). These results suggest a direct role of ANXA6 in the docking of MVBs at the cell surface.\n\n### ANXA6 truncations localize to different membranes upon ionomycin treatment\n\nAfter demonstrating that ANXA6 is required for Ca2+-dependent exosome secretion in intact and permeabilized cells, we sought to probe the membrane recruitment of distinct domains of ANXA6 upon Ca2+ influx. Previous studies have demonstrated that ANXA6 is recruited to a peripheral \u2018repair cap\u2019 that is formed at the site of plasma membrane lesions (Demonbreun et al., 2016). Unlike other members of the annexin protein family, ANXA6 contains two complete annexin domains, ANXA6(N) and ANXA6(C). To probe the roles of these domains, we generated fluorescent ANXA6 full length (FL), ANXA6(N), and ANXA6(C) fusion constructs and probed their localization in U-2 OS cells by superresolution microscopy.\n\nWe observed that ANXA6(FL) maintains a diffuse cytoplasmic distribution in unperturbed cells (Figure 6A). However, upon addition of ionomycin, ANXA6(FL) was recruited to both the plasma membrane (as indicated by wheat germ agglutinin [WGA] counterstain) and to intracellular vesicles, a portion of which were CD63-positive (Figure 6A). We also observed the budding of plasma membrane-derived vesicles in the presence of ionomycin. These may correlate to the low-buoyant density vesicles marked by ANXA2 and FLOT2 that were released from ionomycin-treated cells (Figure 2F, Fraction #8). Next, we expressed fluorescently tagged ANXA6(N) and ANXA6(C) constructs and assessed their localization upon the addition of DMSO or ionomycin, relative to the plasma membrane and CD63, respectively (Figure 6B and C). Similar to ANXA6(FL), ANXA6(N) and ANXA6(C) displayed cytoplasmic localization in unstimulated cells. Upon ionomycin treatment, we observed recruitment of ANXA6(N), but not ANXA6(C) to the cell periphery, relative to the WGA counterstain (Figure 6B). In contrast to ANXA6(N), we observed that ANXA6(C) became enriched at intracellular membrane structures, a portion of which were positive for CD63 (Figure 6C). These two domains may serve to dock MVBs to the plasma membrane.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/86556/elife-86556-fig6-v2.jpg)\n\n**Figure 6.:** (A) Airyscan 3D projection of U-2 OS cells expressing ANXA6(FL)-mNG with endogenous CD63 and wheat germ agglutinin (WGA) counterstain upon treatment with DMSO or 1 \u00b5M ionomycin for 10 min. Green: ANXA6(FL)-mNG; magenta: endogenous CD63 immunofluorescence; blue: WGA CF640R conjugate. Scale bars: 10 \u00b5m. (B) Airyscan 3D projection of U-2 OS cells expressing ANXA6(N)-mNG and ANXA6(C)-mSc with WGA counterstain upon treatment with DMSO or 1 \u00b5M ionomycin for 10 min. Green: ANXA6(N)-mNG; magenta: ANXA6(C)-mSc; blue: WGA CF640R conjugate. Scale bars: 10 \u00b5m. (C) Airyscan 3D projection of U-2 OS cells expressing ANXA6(N)-mNG and ANXA6(C)-mSc with endogenous CD63 upon treatment with DMSO or 1 \u00b5M ionomycin for 10 min. Green: ANXA6(N)-mNG; magenta: ANXA6(C)-mSc; blue: endogenous CD63 immunofluorescence. Scale bars: 10 \u00b5m.\n\n## Discussion\n\nOur results suggest that exosome secretion is coupled to Ca2+-dependent plasma membrane repair in HCT116 and HEK293T cells (Figure 7). We established cellular and biochemical exosome secretion assays to recapitulate and interrogate this process. Targeted proteomics was used to demonstrate that ANXA6 is recruited to MVBs in the presence of Ca2+. We show, both in intact and permeabilized cells, that ANXA6 is required for Ca2+-dependent exosome secretion. We then provide evidence that that ANXA6 depletion stalls MVBs at the cell periphery upon Ca2+ ionophore treatment. Finally, we demonstrate that truncations of ANXA6 are enriched at different cellular membranes upon cytosolic Ca2+ elevation.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/86556/elife-86556-fig7-v2.jpg)\n\n**Figure 7.:** (A) Upon physiological mechanical stress or bacterial infection, plasma membrane lesions form. This results in the flow of Ca2+ from the extracellular space into the cytoplasm. (B) This influx of Ca2+ mediates the recruitment of ANXA6 to multivesicular bodies (MVBs), which are then transported on microtubules to a plasma membrane lesion. (C) The MVBs then dock at the plasma membrane (with ANXA6 serving as a putative membrane tether) and undergo fusion, resulting in plasma membrane repair and exosome secretion.\n\n### Exosomes are secreted upon damage to the plasma membrane\n\nWe demonstrate that SLO-treated or mechanically stressed HCT116 CD63-Nluc and SLO-treated HEK293T FLAG-Nluc-CD63 cells secrete exosomes in response to Ca2+-dependent plasma membrane repair (Figure 2 and Figure 2\u2014figure supplement 1B). Such treatments may mimic conditions of physiologic stress in vivo and lead to wound-induced EV secretion. This may contribute to the diversity of EVs present in biological fluids, including in samples used for liquid biopsy. Plasma membrane repair is common, especially in certain tissues. In rats, 6.5% of cells in the vascular endothelium of the aorta undergo plasma membrane repair at a given time (Yu and McNeil, 1992); 20% of muscle cells repair their membrane after muscle contractions (McNeil and Khakee, 1992). Motile cancer cells also have high rates of plasma membrane repair (Bouvet et al., 2020).\n\nInterestingly, Whitham, 2018 demonstrated that exercise stimulates the release of EV-associated proteins and myokines into circulating plasma (Whitham, 2018). In this study, a cohort of human participants had blood drawn from their femoral artery before and after 60 min of acute exercise on a cycle ergometer. Label-free quantitative proteomic analysis showed an increase in proteins such as CD63, TSG101, CD9, and ANXA2 within EVs isolated from plasma by differential centrifugation postexercise. It is tempting to speculate that the increase in EV secretion is caused by increased plasma membrane repair. We postulate that exosome secretion during plasma membrane repair may allow for simple detection of tissue-specific damage during the routine clinical analysis of blood or urine samples.\n\nThe biological functions of exosomes released during Ca2+-stimulated secretion remain unclear. Much attention has focused on the role of exosomes in intercellular communication (Meldolesi, 2018). A recent study from our laboratory established quantitative assays to measure the functional delivery of exosome cargo to recipient cells (Zhang and Schekman, 2023). Functional transfer of exosome cargo was inefficient, whereas functional intercellular transfer occurred quite effectively through the formation of open-ended membrane tubular connections. However, we do not exclude the possibility that exosomes and other EVs may functionally convey their cargo to recipient cells in specific physiological contexts (Ridder et al., 2014). Alternatively, a recent study showed that exosomes act as \u2018decoys\u2019 for pore-forming toxins such as \u03b1-toxin (Keller et al., 2020). During staphylococcus infection, cells upregulate exosome production. Instead of binding to the plasma membrane, \u03b1-toxin binds to exosomes. Correspondingly, we find that SLO binds exosomes at concentrations that may compete with plasma membrane binding (Figure 2\u2014figure supplement 1A). Ca2+-dependent exosome secretion allows for the rapid secretion of high levels of exosomes and may serve as a defense against bacterial toxins that perforate the plasma membrane.\n\nAlthough our focus has been on exosome secretion, others have reported plasma membrane-derived vesicle secretion stimulated by plasma membrane disruptions (Horn and Jaiswal, 2018). Such shedded vesicles may correspond to the low-buoyant density vesicles marked by ANXA2 and FLOT2 which we find in the EV fraction produced by ionomycin treatment (Figure 2D).\n\n### Do MVBs participate in plasma membrane repair?\n\nThe egress of CD63-positive exosomes from HCT116 and HEK293T cells suggests that MVBs participate in the Ca2+-dependent repair of plasma membrane lesions. Microinjection studies in echinoderm eggs were the first to demonstrate that metazoan cells repair wounds to the plasma membrane and that this repair process is dependent upon the presence of extracellular Ca2+ (Chambers, 1917; Heilbrunn, 1930a; Heilbrunn, 1930b). Since then, a variety of mechanisms by which metazoan cells repair their plasma membrane (e.g. membrane shedding, organelle exocytosis, clot formation/wound constriction, and membrane internalization) has been proposed (Andrews and Corrotte, 2018; Cooper and McNeil, 2015; Demonbreun and McNally, 2016; Horn and Jaiswal, 2018).\n\nJaiswal et al., 2002 used total internal reflection fluorescence microscopy to identify the primary membrane compartment responsible for Ca2+-dependent exocytosis in non-secretory cells. In their studies, the addition of a Ca2+ ionophore elicited the fusion of plasma membrane-proximal lysosomes with little or no evidence of involvement of early endosomes, late endosomes/MVBs, or vesicles derived from either the endoplasmic reticulum or Golgi apparatus. Our data that CD63-positive compartments fuse at the plasma membrane upon Ca2+ influx is consistent with their findings. However, our results also suggest that endosomes/MVBs can undergo Ca2+-dependent exocytosis. We conclude this based on the secretion of MVB cargo vesicles (exosomes) upon Ca2+ influx elicited by a Ca2+ ionophore, a pore-forming toxin, or physiological levels of mechanical stress. Our results also suggest that both free and pre-docked late endosomes/MVBs participate in plasma membrane repair as exosome secretion induced by Ca2+ ionophore treatment is partially microtubule-dependent. The markers used by Jaiswal et al., 2002 to differentiate between late endosomes (Rab7) and lysosomes (CD63) have now been demonstrated to be present in both membrane compartments (Humphries et al., 2011). The combined data suggest that, in addition to lysosomes, late endosomes/MVBs can undergo Ca2+-dependent exocytosis.\n\nOur results are consistent with published studies conducted in sea urchin eggs and cytotoxic T lymphocytes (Keefe et al., 2005; Steinhardt et al., 1994). Ca2+-dependent plasma membrane repair of sea urchin eggs after micropuncture with glass micropipettes has been demonstrated to be both fusion- and microtubule-dependent as suggested by sensitivity to either botulinum toxins or antibodies that block kinesin-mediated microtubule transport (Ingold et al., 1988; Poulain et al., 1988; Schiavo et al., 1992; Steinhardt et al., 1994). Endosomes pre-loaded with Alexa-488-conjugated transferrin traffic toward the plasma membrane upon treatment of cytotoxic T lymphocytes with perforin (Keefe et al., 2005). This result is consistent with our finding that MVBs undergo exocytosis in cells treated with SLO.\n\nGiven our findings, we propose that both MVBs and lysosomes undergo Ca2+-dependent exocytosis during plasma membrane repair, resulting in the concurrent secretion of exosomes (Figure 7).\n\n### Role of ANXA6 in exosome secretion\n\nWe find that ANXA6 is required for Ca2+-dependent fusion of MVBs with the plasma membrane (Figure 4). Annexin proteins are known to be required for plasma membrane repair (Blazek et al., 2015; Bouter et al., 2015; Boye and Nylandsted, 2016; Croissant et al., 2021; Gerke and Moss, 2002; Koerdt et al., 2019). Depletion of ANXA6 compromises plasma membrane repair, and the N-terminal domain of ANXA6 is insufficient for membrane repair (Croissant et al., 2020; Potez et al., 2011; Swaggart et al., 2014). In addition to lysosome exocytosis, plasma membrane repair is accompanied by shedding of damaged membrane at the cell surface (Andrews and Corrotte, 2018). Annexins have been invoked in the capping and shedding of plasma membrane lesions (Demonbreun et al., 2016). Our results extend these conclusions to the fusion of MVBs at the cell surface.\n\nOur data favors a model where ANXA6 is directly involved in tethering an MVB to the plasma membrane during exocytosis. ANXA6 is recruited to CD63-positive compartments in a Ca2+-dependent manner (Figure 3). Additionally, CD63-positive membrane compartments stall near the plasma membrane in Ca2+-stimulated, ANXA6-depleted cells (Figure 4E). This conclusion is strengthened by our observation that an anti-ANXA6 antibody blocks exosome secretion in permeabilized cells (Figure 5E). Unlike other members of the annexin family, ANXA6 contains two distinct annexin domains, possibly one for each membrane partner of a fusion pair. Upon ionomycin stimulation, we observed that the N-terminal annexin domain, but not the C-terminal annexin domain, was recruited to the plasma membrane and that the C-terminal annexin domain became enriched at intracellular membrane structures, a portion of which were CD63-positive (Figure 6B and C). ANXA6 has also been demonstrated to tether liposomes in vitro in the presence of Ca2+ (Buzhynskyy et al., 2009). Alternative roles in docking, such as SNARE interactions or actin remodeling as seen for other annexins, remain possible (Gabel et al., 2015; Gerelsaikhan et al., 2012). Additionally, a recent study has demonstrated that the annexin isoform ANXA11 serves as a molecular tether that allows RNA granules to \u2018hitchhike\u2019 on moving lysosomes for their transport (Liao et al., 2019).\n\nAlthough we focused on the role of ANXA6 in Ca2+-dependent exosome secretion, ANXA2 and CPNE3 were both recruited to MVBs and lysosomes in the presence of Ca2+ and knockdown of CPNE3 inhibited MVB exocytosis (Figures 3 and 4D). Thus, we hypothesize that these proteins could also be involved in the docking of MVBs and lysosomes at the plasma membrane during repair.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>ANXA6</td>\n      <td>Addgene</td>\n      <td>RRID: Addgene_29509</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>CPNE3</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-ANXA2(rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>Catalog #: ab178677</td>\n      <td>WB: (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-ANXA6(rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>Catalog #: ab201024</td>\n      <td>WB: (1:1000), see Materials and methods for further details.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD9(rabbit monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>RRID: AB_2798139</td>\n      <td>WB: (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD63(mouse monoclonal)</td>\n      <td>BD Biosciences</td>\n      <td>RRID: AB_396297</td>\n      <td>WB: (1:1000), IF: (1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CPNE3(rabbit polyclonal)</td>\n      <td>Sigma</td>\n      <td>RRID: AB_10600703</td>\n      <td>WB: (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Flotillin-2(mouse monoclonal)</td>\n      <td>BD Biosciences</td>\n      <td>RRID: AB_397766</td>\n      <td>WB: (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GAPDH(rabbit monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>RRID: AB_561053</td>\n      <td>WB: (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP(rabbit polyclonal)</td>\n      <td>Torrey Pines Biolabs</td>\n      <td>RRID: AB_10013661</td>\n      <td>See Materials and methods for further details.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-LAMP1(rabbit monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>RRID: AB_2687579</td>\n      <td>WB: (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Nluc(mouse monoclonal)</td>\n      <td>Promega</td>\n      <td>Catalog #: N7000</td>\n      <td>See Materials and methods for further details.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Tubulin(mouse monoclonal)</td>\n      <td>Abcam</td>\n      <td>RRID: AB_2241126</td>\n      <td>IF: (1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-TSG101(mouse monoclonal)</td>\n      <td>GeneTex</td>\n      <td>RRID: AB_373239</td>\n      <td>WB: (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Vinculin(rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>RRID: AB_11144129</td>\n      <td>WB: (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Cell line(Homo sapiens)</td>\n      <td>HCT116 CD63Nluc-KI #17</td>\n      <td>Hikita et al., 2018</td>\n      <td>N/A</td>\n      <td>Dr. Chitose Oneyama (Aichi Cancer Center Research Institute)</td>\n    </tr>\n    <tr>\n      <td>Cell Line(Homo sapiens)</td>\n      <td>HCT116</td>\n      <td>Other</td>\n      <td>N/A</td>\n      <td>Cell culture facility at UC Berkeley</td>\n    </tr>\n    <tr>\n      <td>Cell line(Homo sapiens)</td>\n      <td>HEK293T</td>\n      <td>Other</td>\n      <td>N/A</td>\n      <td>Cell culture facility at UC Berkeley</td>\n    </tr>\n    <tr>\n      <td>Cell line(Homo sapiens)</td>\n      <td>HEK293TFLAG-Nluc-CD63</td>\n      <td>This study</td>\n      <td>N/A</td>\n      <td>To assess exosome secretion in HEK293T cells</td>\n    </tr>\n    <tr>\n      <td>Cell line(Homo sapiens)</td>\n      <td>U-2 OS</td>\n      <td>Other</td>\n      <td>N/A</td>\n      <td>Cell culture facility at UC Berkeley</td>\n    </tr>\n    <tr>\n      <td>Chemical compound and drug</td>\n      <td>Ionomycin</td>\n      <td>Cayman Chemical</td>\n      <td>Catalog #: 10004974</td>\n      <td>See Materials and Methods for further details.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLKO.1_Hygro GFP shRNA</td>\n      <td>This study</td>\n      <td>N/A</td>\n      <td>shRNA target sequence: ACAACAGCCACAACGTCTAT</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLKO.1_Hygro ANXA2-1 shRNA</td>\n      <td>This study</td>\n      <td>N/A</td>\n      <td>shRNA target sequence: ACTTTAGAAACACGTACTTTG</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLKO.1_Hygro ANXA2-2 shRNA</td>\n      <td>This study</td>\n      <td>N/A</td>\n      <td>shRNA target sequence: TGAGGGTGACGTTAGCATTAC</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLKO.1_Hygro ANXA6-1 shRNA</td>\n      <td>This study</td>\n      <td>N/A</td>\n      <td>shRNA target sequence: AGTTGGACATGCTCGACATTC</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLKO.1_Hygro ANXA6-2 shRNA</td>\n      <td>This study</td>\n      <td>N/A</td>\n      <td>shRNA target sequence: CGAAGACACAATCATCGATAT</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLKO.1_Hygro CPNE3-1 shRNA</td>\n      <td>This study</td>\n      <td>N/A</td>\n      <td>shRNA target sequence: ACTCTATGGACCAACTAATTT</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLKO.1_Hygro CPNE3-2 shRNA</td>\n      <td>This study</td>\n      <td>N/A</td>\n      <td>shRNA target sequence: AGCATTCTTTCTAGGTTATTT</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>lentiCRISPR v2-Blast sgNT(non-targeting)</td>\n      <td>This study</td>\n      <td>N/A</td>\n      <td>Protospacer sequence: GCCCCGCCGCCCTCCCCTCC</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>lentiCRISPR v2-Blast sgANXA6</td>\n      <td>This study</td>\n      <td>N/A</td>\n      <td>Protospacer sequence: AGCCTCCAGGTCCCGCTCGT</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLJM1-L30-FLAG-Nluc-CD63-hPGK-BlastR</td>\n      <td>This study</td>\n      <td>N/A</td>\n      <td>To express FLAG-Nluc-CD63 in various cell lines under control of the low-expression L30 promoter</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pN1-mNeonGreen (mNG)</td>\n      <td>This study</td>\n      <td>N/A</td>\n      <td>To assess the localization of mNeonGreen-tagged proteins</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pN1-mScarlet-i (mSc)</td>\n      <td>This study</td>\n      <td>N/A</td>\n      <td>To assess the localization of mScarlet-i-tagged proteins</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pN1_ANXA6(FL; aa1-673)-mNG</td>\n      <td>This study</td>\n      <td>N/A</td>\n      <td>To assess localization of full-length ANXA6</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pN1_ANXA6(N; aa1-322)-mNG</td>\n      <td>This study</td>\n      <td>N/A</td>\n      <td>To assess localization of N-terminal truncation of ANXA6</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pN1_ANXA6(C; aa323-673)-mSc</td>\n      <td>This study</td>\n      <td>N/A</td>\n      <td>To assess localization of C-terminal truncation of ANXA6</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism 9</td>\n      <td>GraphPad</td>\n      <td>RRID:SCR_002798</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Alexa Fluor 680 Phalloidin</td>\n      <td>Invitrogen</td>\n      <td>N/A</td>\n      <td>IF: (1:400)</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>CF640R Wheat Germ Agglutinin Conjugate</td>\n      <td>Biotium</td>\n      <td>N/A</td>\n      <td>IF: (5 \u00b5g/ml)</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Streptolysin O (SLO)</td>\n      <td>Sigma-Aldrich</td>\n      <td>N/A</td>\n      <td>See Materials and methods for further details.</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell lines, media, and general chemicals\n\nHCT116, HCT116 CD63-Nluc, HEK293T, HEK293T FLAG-Nluc-CD63, and U-2 OS cells were cultured at 37\u00b0C in 5% CO2 and maintained in Dulbecco\u2019s Modified Eagle\u2019s Medium (DMEM) supplemented with 10% fetal bovine serum (FBS) (Thermo Fisher Scientific, Waltham, MA, USA). Cells were routinely tested (negative) for mycoplasma contamination using the MycoAlert Mycoplasma Detection Kit (Lonza Biosciences). HCT116, HEK293T, and U-2 OS cells were authenticated using STR profiling at the UC Berkeley Cell Culture Facility. For the experiments detailed in Figure 2B and C and Figure 2\u2014figure supplement 1B, we cultured HCT116 CD63-Nluc and HEK293T FLAG-Nluc-CD63 cells in Ca2+-free DMEM (Thermo Fisher Scientific). For Figure 2F, HCT116 CD63-Nluc cells were incubated in EV-depleted medium. EV-depleted medium was produced by ultracentrifugation at 186,000 \u00d7 g (40,000 RPM) for 24 hr using a Type 45Ti rotor. Ionomycin was purchased from Cayman Chemicals. Unless otherwise noted, all other chemicals were purchased from Sigma-Aldrich (St. Louis, MO, USA).\n\n### Lentivirus production and transduction\n\nHEK293T cells at 40% confluence within a 6-well plate were transfected with 165 ng of pMD2.G, 1.35 \u00b5g of psPAX2, and 1.5 \u00b5g of a pLKO.1-Hygro, lentiCRISPR v2-Blast, or pLJM1 plasmid using the TransIT-LT1 Transfection Reagent (Mirus Bio) as per the manufacturer\u2019s protocol. At 48 hr post-transfection, 1 ml of fresh DMEM supplemented with 10% FBS was added to each well. The lentivirus-containing medium was harvested 72 hr post-transfection by filtration through a 0.45 \u03bcm polyethersulfone (PES) filter (VWR Sciences). The filtered lentivirus was distributed in aliquots, snap-frozen in liquid nitrogen, and stored at \u201380\u00b0C. For lentiviral transductions, we infected HCT116 CD63-Nluc cells with filtered lentivirus in the presence of 8 \u03bcg/ml polybrene for 24 hr, and the medium was replaced. HCT116 CD63-Nluc cells were selected using 200 \u03bcg/ml hygromycin B or 4 \u03bcg/ml blasticidin S for 8 days and 6 days, respectively. The efficiency of each gene knockdown was assessed by immunoblot analysis.\n\n### Immunoblotting\n\nCells were lysed in PBS containing 1% TX-100 and a protease inhibitor cocktail (1 mM 4-aminobenzamidine dihydrochloride, 1 \u00b5g/ml antipain dihydrochloride, 1 \u00b5g/ml aprotinin, 1 \u00b5g/ml leupeptin, 1 \u00b5g/ml chymostatin, 1 mM phenylmethylsulfonyl fluoride, 50 \u00b5M N-tosyl-L-phenylalanine chloromethyl ketone, and 1 \u00b5g/ml pepstatin) and incubated on ice for 15 min. The whole cell lysate was centrifuged at 15,000 \u00d7 g for 10 min at 4\u00b0C and the post-nuclear supernatant was diluted with 6\u00d7 Laemmli buffer (without DTT) to a 1\u00d7 final concentration. Samples were heated at 95\u00b0C for 5 min and proteins resolved on 4\u201320% acrylamide Tris-glycine gradient gels (Life Technologies). Proteins were then transferred to polyvinylidene difluoride membranes (EMD Millipore, Darmstadt, Germany), blocked with 5% dry milk in TBS, washed 3\u00d7 with TBS-T and incubated overnight with primary antibodies in 5% bovine serum albumin in TBS-T. The membranes were then washed again 3\u00d7 with TBS-T, incubated for 1 hr at room temperature with 1:10,000 dilutions of anti-rabbit or anti-mouse secondary antibodies (GE Healthcare Life Sciences, Pittsburgh, PA, USA), washed 3\u00d7 with TBS-T, washed once with TBS and then detected with ECL-2 or PicoPLUS reagents (Thermo Fisher Scientific) for proteins from cell lysates or EV isolations, respectively.\n\n### Immunofluorescence microscopy\n\nFor immunofluorescence, we grew cells on Poly-D-Lysine (PDL)-coated coverslips which were then washed once with PBS, fixed in 4% EM-grade paraformaldehyde (PFA; Electron Microscopy Science Hatfield, PA, USA) for 15 min at room temperature, washed 3\u00d7 with PBS and permeabilized/blocked in blocking buffer (2% BSA and 0.02% saponin in PBS) for 30 min at room temperature. Cells were then incubated with a 1:250 dilution of primary antibody and/or phalloidin stain overnight at 4\u00b0C, washed 3\u00d7 with PBS, incubated with a 1:1000 dilution of fluorophore-conjugated secondary antibody for 1 hr at room temperature and washed 3\u00d7 with PBS. Coverslips were then mounted overnight in ProLong-Gold antifade mountant with DAPI (Thermo Fisher Scientific) and sealed with clear nail polish before imaging. For microtubule visualization, cells were fixed using ice cold methanol and processed as above.\n\nFor Figure 6, we transfected U-2 OS cells grown on PDL-coated coverslips with the indicated plasmids using Lipofectamine 2000 as per the manufacturer\u2019s protocol. The medium containing the transfection mixture was removed ~5 hr post-transfection and replaced with DMEM supplemented with 10% FBS. Cells were treated 16 hr post-transfection with DMSO or 1 \u00b5M ionomycin with or without 5 \u00b5g/ml CF640R WGA conjugate (Biotium) as indicated for 10 min at 37\u00b0C. Treated cells were then washed with PBS, fixed in 4% EM-grade PFA for 15 min at room temperature, and processed as above. The concentrations utilized for each plasmid transfection were as follows: pN1-ANXA6(FL)-mNeonGreen (200 ng/ml), pN1-ANXA6(N)-mNeonGreen (200 ng/ml), and pN1-ANXA6(C)-mScarlet (200 ng/ml).\n\nThe images in Figure 2\u2014figure supplement 1 and Figure 4 were acquired on an Echo Revolve Microscope using the 60\u00d7 Apo Oil Phase, NA 1.42 objective. The images in Figure 6 were acquired using an LSM900 confocal microscope system (ZEISS) using Airyscan 2 superresolution mode and a 63\u00d7 Plan-Apochromat, NA 1.40 objective.\n\n### EV isolation and fractionation by iodixanol buoyant density gradient equilibration\n\nFresh aliquots of 5, 7.5, 10, 12.5, 15, 17.5, 20, 22.5, and 25% (v/v) iodixanol solutions were prepared by mixing appropriate volumes of Solution B (0.25 M sucrose, 2 mM MgCl2, 1 mM EDTA, 20 mM Tris-HCl, and pH 7.4) and Solution D (41.7 mM sucrose, 2 mM MgCl2, 1 mM EDTA, 20 mM Tris-HCl, pH 7.4, and 50% (w/v) iodixanol). Iodixanol gradients were prepared by sequential 500 \u00b5l overlays of each iodixanol solution in a 5 ml SW55 tube, starting with the 25% iodixanol solution and finishing with the 5% iodixanol solution. After the addition of each iodixanol solution, the SW55 tube was flash frozen in liquid nitrogen. Complete iodixanol gradients were stored at \u201320\u00b0C and thawed at room temperature for 45 min prior to use.\n\nFor the iodixanol gradients detailed in Figure 2F, conditioned medium (240 ml) was harvested from vehicle- or ionomycin-treated HCT116 CD63-Nluc cells. All subsequent manipulations were completed at 4\u00b0C. Cells and large debris were removed by low-speed sedimentation at 1,000 \u00d7 g for 15 min in a Sorvall R6 +centrifuge (Thermo Fisher Scientific) followed by medium-speed sedimentation at 10,000 \u00d7 g for 15 min using a fixed angle FIBERlite F14\u22126\u00d7500 y rotor (Thermo Fisher Scientific). The supernatant fraction was then centrifuged at 29,500 RPM for 1.25 hr in a SW32 rotor. The high-speed pellet fractions were resuspended in PBS, pooled, loaded at the top of a prepared iodixanol gradient, and centrifuged in a SW55 rotor at 36,500 RPM for 16 hr with minimum acceleration and no brake. Fractions (200 \u00b5l) were collected from top to bottom. An aliquot of each fraction was saved for luminescence analysis, and the rest was diluted in 6\u00d7 Laemmli buffer (without DTT) for immunoblot analysis. Density measurements were taken using a refractometer.\n\nFor the iodixanol gradients detailed in Figure 2G, we harvested conditioned medium from vehicle- or ionomycin-treated HCT116 CD63-Nluc cells grown in a 12-well plate. All subsequent manipulations were completed at 4\u00b0C. Cells and large debris were removed by low-speed sedimentation at 1000 \u00d7 g for 15 min followed by medium-speed sedimentation at 10,000 \u00d7 g for 15 min in an Eppendorf 5430 R centrifuge (Eppendorf, Hamburg, Germany). Aliquots (200 \u00b5l) of conditioned medium from the supernatant of the medium-speed centrifugation were loaded at the top of a prepared iodixanol gradient and centrifuged in a SW55 rotor at 36,500 RPM for 16 hr with minimum acceleration and no brake. Fractions (200 \u00b5l) were collected from top to bottom and analyzed for luminescence. Density measurements were taken using a refractometer.\n\n### Immunoisolation of MVBs and Ca2+-dependent binding proteins\n\nHCT116 CD63-Nluc cells were grown to ~90% confluence in 7\u00d7150 mm dishes. Cells were scraped into 5 ml of cold PBS per plate and centrifuged at 200 \u00d7 g for 5 min at 4\u00b0C. The cold PBS was aspirated, and the cell pellet was resuspended in two volumes of cold lysis buffer (136 mM KCl, 10 mM KH2PO4 pH 7.4, 1 mM DTT, protease inhibitor cocktail [see Immunoblotting section], and 6% Optiprep [w/v]). The cell slurry was passed 14 times through a 25-gauge syringe in a cold room, and the post-nuclear supernatant was prepared by centrifugation of lysed cells at 1000 \u00d7 g for 10 min at 4\u00b0C. The post-nuclear supernatant was diluted 1:2 with lysis buffer.\n\nBeads from 300 \u00b5l of magnetic Protein G Dynabeads (Thermo Fisher Scientific) slurry were sedimented with a magnetic tube rack and resuspended in lysis buffer. The bead slurry was split evenly into three tubes and then re-centrifuged. The diluted post-nuclear supernatant was divided between the three tubes. Tube #1 also received 1 mM CaCl2 (Beads only control), tube #2 also received 1 mM CaCl2 and 5 \u00b5g anti-Nluc antibody (Ca2+-treated), and tube #3 also received 1 mM EGTA and 5 \u00b5g anti-Nluc antibody (EGTA treated). The reaction was incubated for 15 min at room temperature. Beads were washed three times with lysis buffer. A beads only control and Ca2+-treated samples both had 2 mM CaCl2 added to the wash buffer. The EGTA-treated sample was washed with lysis buffer containing 2 mM EGTA. The beads only control and Ca2+-treated samples were eluted with 50 \u00b5l lysis buffer containing 2 mM EGTA, and the EGTA-treated sample was eluted with lysis buffer containing 2 mM CaCl2. All three samples were eluted again with 50 \u00b5l lysis buffer containing 0.2% TX-100.\n\n### CD63-Nluc exosome secretion assay\n\nHCT116 CD63-Nluc cells were grown to ~80% confluence in 24-well plates. All subsequent manipulations were performed at 4\u00b0C. Conditioned medium (200 \u00b5l) was taken from the appropriate wells, added to a microcentrifuge tube, and centrifuged at 1000 \u00d7 g for 15 min in an Eppendorf 5430 R centrifuge (Eppendorf, Hamburg, Germany) to remove intact cells. Supernatant fractions (150 \u00b5l) from the low-speed sedimentation were moved to a new microcentrifuge tube and centrifuged at 10,000 \u00d7 g for 15 min to remove cellular debris. Supernatant fractions (50 \u00b5l) from this medium-speed centrifugation were then utilized to measure CD63-Nluc exosome luminescence. During these centrifugation steps, the cells were placed on ice, washed once with cold PBS, and lysed in 200 \u00b5l of PBS containing 1% TX-100 and protease inhibitor cocktail.\n\nTo measure CD63-Nluc exosome secretion, we prepared a master mix containing the membrane-permeable Nluc substrate and a membrane-impermeable Nluc inhibitor using a 1:1000 dilution of Extracellular NanoLuc Inhibitor and a 1:333 dilution of NanoBRET Nano-Glo Substrate into PBS (Promega, Madison, WI, USA). Aliquots of the Nluc substrate/inhibitor master mix (100 \u00b5l) were added to 50 \u00b5l of the supernatant fraction from the medium-speed centrifugation and vortexed briefly, and luminescence was measured using a Promega GlowMax 20/20 Luminometer (Promega, Madison, WI, USA). An aliquot (1.5 \u00b5l) of 10% TX-100 was then added to each reaction tube for a final concentration of 0.1% TX-100, and the sample was briefly vortexed before luminescence was measured again. For the intracellular normalization measurement, the luminescence of 50 \u00b5l of cell lysate was measured using the Nano-Glo Luciferase Assay kit (Promega, Madison, WI, USA) as per the manufacturer\u2019s protocol. The exosome production index (EPI) for each sample is calculated as follows: EPI = ([medium] \u2013 [medium + 0.1% TX-100])/cell lysate.\n\nFor the CD63-Nluc exosome secretion assays in Figure 2C and D and Figure 2\u2014figure supplement 1B, cytosol was not depleted as in the biochemical reconstitution assays detailed in Figure 5.\n\n### SLO time courses\n\nHCT116 CD63-Nluc cells were grown to ~80% confluence in 24-well PDL-coated plates. Cells were washed with 200 \u00b5l of cold PBS and incubated with 200 \u00b5l of cold (4\u00b0C) 250 ng/ml SLO in Ca2+-free DMEM with 1 mM EGTA. The cold, SLO-containing medium was aspirated, and 200 \u00b5l of pre-warmed (37\u00b0C) Ca2+-free DMEM with 1.8 mM CaCl2 was added. Cells were incubated at 37\u00b0C for the indicated times after which exosome secretion was measured as described in paragraph 2 of \u2018CD63-Nluc exosome secretion assay\u2019.\n\n### Mechanical stress experiments\n\nTwo 15 cm plates of HCT116 CD63-Nluc cells were harvested with 10 ml of Accutase and diluted with 40 ml of Ca2+-free DMEM. A cell slurry (16 ml) was added to three tubes and centrifuged at 300 \u00d7 g for 5 min at room temperature. Cells were gently resuspended in either 0.5 ml Ca2+-free DMEM or Ca2+-free DMEM +2 mM Ca2+ (final). Cells were pumped through a 30-gauge needle at a flow rate of 3.5 \u00b5l/s (\u03c4=4Q\u03b7/\u03c0R3 = ~89 dyn/cm2, where Q=0.0035 cm3/s, \u03b7=0.01 dyn*s/cm2, 30 G average internal radius = 7.94\u00d710\u22123 cm) or twice the flow rate of 7 \u00b5l/s (\u03c4=4Q\u03b7/\u03c0R3=178 dyn/cm2, where Q=0.0035 cm3/s, \u03b7=0.01 dyn*s/cm2, 30 G average internal radius = 7.94\u00d710\u22123 cm) using a Harvard Apparatus syringe pump (Catalog No. 98\u20134730). Cells were incubated for 5 min at 37\u00b0C before being placed back on ice. The cell suspension was centrifuged at 300 \u00d7 g for 5 min, and the supernatant fraction was then filtered through a 0.45 \u00b5m PES filter. Exosome secretion was measured as described in paragraph 2 of \u2018CD63-Nluc exosome secretion assay,\u2019 in this assay without a cell lysate measurement.\n\n### Isolation of cytosol from cultured human cells\n\nHCT116 WT cells were grown to ~90% confluence in 20\u00d7150 mm dishes. All subsequent manipulations were performed at 4\u00b0C. Each 150 mm dish was washed once with 10 ml of cold PBS and then harvested by scraping into 5 ml of cold PBS. The 5 ml cell suspension was then used to harvest cells from four additional 150 mm dishes, and this process was repeated until all the cells were harvested. Cells were then collected by centrifugation at 200 \u00d7 g for 5 min, and the supernatant fraction was discarded. The cell pellet was resuspended in 3 ml of cold hypotonic lysis buffer (20 mM HEPES, pH 7.4, 10 mM KCl, 1 mM EGTA, 1 mM DTT, and protease inhibitor cocktail) and placed on ice. After 15 min, the cell suspension was transferred to a pre-chilled 7 ml Dounce homogenizer, and the cells were mechanically lysed by ~80 strokes with a tight-fitting Dounce pestle. The lysed cells were centrifuged at 1000 \u00d7 g for 15 min to sediment intact cells and nuclei, and the post-nuclear supernatant was then centrifuged at 32,500 RPM (~128,000 \u00d7 g) for 30 min in an Optima XE-90 ultracentrifuge (Beckman Coulter). The supernatant (cytosol fraction) was collected conservatively without disturbing the pellet and then concentrated using a 4 ml Amicon\u20133 k concentrator to a final protein concentration of ~40 mg/ml. The cytosol was distributed in aliquots, snap-frozen in liquid nitrogen, and stored at \u201380\u00b0C until use. The rat liver cytosol was prepared as described in Tang et al., 2020.\n\n### Reconstitution of CD63-Nluc exosome secretion in permeabilized cells\n\nSLO was pre-activated in PBS containing 10 mM DTT at 37\u00b0C for 2 hr, distributed in aliquots into low-retention microcentrifuge tubes, snap-frozen in liquid nitrogen, and stored at \u201380\u00b0C until use. The protein concentration of each SLO batch was determined by a Bradford assay.\n\nHCT116 CD63-Nluc cells were grown to ~80% confluence in 24-well PDL-coated plates. The PDL plate was placed on ice, and the cells were washed once with PBS containing 1 mM EGTA. The PBS wash was aspirated, replaced with 200 \u00b5l of cold transport buffer (20 mM HEPES, pH 7.4, 250 mM D-sorbitol, 120 mM KCl, 10 mM NaCl, 2 mM MgCl2, 1.2 mM KH2PO4, 1 mM EGTA, and protease inhibitor cocktail), supplemented with 0.6 \u00b5g/ml of pre-activated SLO, and incubated at 4\u00b0C for 15 min. Unbound SLO was aspirated, and the cells were washed once with cold transport buffer. Cells were then permeabilized by the addition of pre-warmed transport buffer containing 2 mM DTT followed by a 10 min incubation at 37\u00b0C. Permeabilized CD63-Nluc cells were then washed at 4\u00b0C in transport buffer, high-salt transport buffer (containing 1 M KOAc) and finally transport buffer (10 min each wash) to deplete cytosol.\n\nComplete permeabilized cell exosome secretion assays (200 \u00b5l) consisted of permeabilized CD63-Nluc cells, cytosol (4 mg/ml final concentration), 20 \u00b5l 10\u00d7 ATPr (10 mM ATP, 400 mM creatine phosphate, 2 mg/ml creatine phosphokinase, 20 mM HEPES, pH 7.2, 250 mM D-sorbitol, 150 mM KOAc, and 5 mM MgOAc), 3 \u00b5l of 10 mM GTP, 4 \u00b5l of 100 mM CaCl2 (2 mM final concentration), and cold transport buffer. The concentration of blocking IgG antibodies utilized in Figure 5E was 25 \u00b5g/ml. The assembled reaction mixes were added to the permeabilized CD63-Nluc cells for 5 min on ice prior to placing the entire 24-well PDL coated plate in a 30\u00b0C water bath for 2 min to stimulate exosome secretion. Permeabilized cells were then placed back on ice, and 100 \u00b5l of each reaction supernatant was loaded into a 0.4 \u00b5m AcroPrep filter plate (Pall Corporation) and centrifuged at 1500 \u00d7 g for 1 min in an Eppendorf 5810 R centrifuge (Eppendorf, Hamburg, Germany) to collect CD63-Nluc exosomes. During this centrifugation step, 100 \u00b5l of cold transport buffer containing 2% TX-100 and protease inhibitor cocktail was added to each well of the 24-well PDL coated plate to lyse the cells and bring the volume up to 200 \u00b5l. Filtrate aliquots (50 \u00b5l) and 50 \u00b5l of the cell lysate were used to measure exosome secretion and normalized to the number of cells per reaction, respectively, using the cell-based CD63-Nluc exosome secretion assay protocol detailed above.\n\nFor the permeabilized cell exosome secretion assay detailed in Figure 5D, the nucleotide-depleted rat liver cytosol was generated by using a HiTrap Sephadex G-25 Desalting Column (Cytiva Life Sciences) as per the manufacturer\u2019s protocol.\n",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "57123e88-c146-49c5-af61-4e2f4224f249",
+      "submission_id": "70af502a-fd3f-454c-b835-5753cb04c526",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Suzanne R Pfeffer, https://ror.org/00f54p054 Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86556.sa0](https://doi.org/10.7554/eLife.86556.sa0)\n\nThis compelling study brings together two earlier observations: that Ca2+ influx can trigger exosome release from multivesicular bodies, and that plasma membrane repair after wounding requires Ca2+ and involves Ca2+-binding annexin proteins. This important work takes these earlier findings in an interesting new direction by showing that exosome release from MVBs is also triggered by Ca2+ influx during plasma membrane wounding and requires the annexin isoform ANX6. The study raises the interesting possibility that cell injury and repair may contribute to the release of exosomes into biological fluids.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Suzanne R Pfeffer, https://ror.org/00f54p054 Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86556.sa1](https://doi.org/10.7554/eLife.86556.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Annexin A6 mediates calcium-dependent secretion of exosomes\" for consideration by eLife. Your article has been favorably reviewed by 3 peer reviewers, and the evaluation has been overseen by Suzanne Pfeffer as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Senior Editor has drafted this to help you prepare a revised submission. You will see from the comments that the reviewers are favorable and they would like to see the story presented in eLife. It is not necessary to address all the comments but some are essential, for example: please provide additional data on the kinetics of the process after ionomycin and please include additional compartment-specific markers in the immunofluorescence experiments. We leave it to you to decide which other points you wish to address.\n\nReviewer #1 (Recommendations for the authors):\n\nExperimental request:\n\nLines 24, 78, 267, 381. The authors report that N- and C-terminal domains of Annexin A6 localize to \"different membranes\". Please use organelle/compartment-specific markers to determine the identity of at least some of the structures. Is the different localization due to one domain preferring PS more than the other? Where is the CD63 construct in these cells in relation to the two constructs? What does it look like upon SLO addition?\n\nAlso, it would be useful to the field if the authors could report, from IF data, the fraction of total MVBs that bind annexin A6 before and after ionomycin \u2013 this could lead to the search for a molecular distinction explaining why all MVBs are not capable of plasma membrane exocytosis. (For the before ionomycin condition, it may be possible to briefly permeabilize cells with digitonin to leach out cytoplasm to enable detection of any membrane-bound annexin).\n\nReviewer #2 (Recommendations for the authors):\n\n1) Exosome release triggered by ionomycin was characterized as \"rapid and robust\", but this cannot be concluded with such long 30 min time points. For example, lysosome exocytosis triggered by Ca2+ influx is only linearly sustained for up to 10 min. The very nice permeabilized-cell reconstitution assay indicates that the exosome detection assay is sensitive enough to detect exocytosis in 2 min. This is much more consistent with the time course of PM repair (completed in 1-2 min in most cells) and, importantly, would strengthen the data by reducing concerns with ionomycin cytotoxicity.\n\nSo my suggestion is that the first part of Figure 2 includes a time course of exosome release after ionomycin with several shorter time points. If 30 min is in the linear range the results would be strengthened. If not, the main assays should be repeated. An ionomycin dose-dependent curve would also help to find the lowest effective concentration and reduce concerns about cytotoxicity.\n\n2) As mentioned in the public review, most studies implicating ANX6 in PM repair were performed using a non-physiological form of PM wounding, using lasers. Lasers, although convenient and thus extensively used in PM repair assays, can cause drastic localized temperature increases with associated membrane protein denaturation, potentially leading to misleading results. So it would be important (and easy) to perform simple PM repair essays (propidium iodide exclusion, for example) in the ANX6-depleted cells used in this study, to confirm that ANX6 is an essential player in PM repair in this system.\n\n3) The imaging data in Figure 4E is not strong enough to support the conclusion that MVBs are stalled at the periphery, since CD63 is also present in lysosomes. TIRF-based live imaging of exocytosis showing sudden release and diffusion into the supernatant of CD63-containing material (a behavior that should not occur with ANX6), in control but not ANX6-depleted cells, would significantly strengthen the conclusions \u2013 and also allow quantification by counting exocytosis events.\n\n4) The imaging data in Figure 5 is also not convincing, lacking side-by-side comparisons of the same imaging mode and a PM-specific marker. The tilting images shown do not add much information \u2013 maybe rotating movies of 3D reconstructions would be more informative. Part C of Figure 5 does show an apparently different localization for each truncated ANX6 construct, but the authors seem to use this as evidence for PM tethering, while none of the individual images suggest a PM localization. Again, a PM marker would be essential here, as some form of quantification.\n\n5) The levels of exosome release after mechanical wounding seem to be lower than with SLO \u2013 although this is hard to assess since results are expressed as an exosome production index. This could be an interesting avenue to explore since it has been suggested that PM lesions caused by pore-forming toxins or by mechanical wounds are repaired by different mechanisms, perhaps involving different organelles. Also, it could be argued that mechanical injury is more important because it occurs more frequently in vivo. Simple assays for propidium iodide or Ca2+ influx (to compare the extent of cell permeabilization) and for lysosomal enzyme release after each form of wounding might add interesting information here.\n\n6) The Methods section does not provide enough information on several procedures, such as how the knockdowns were performed or how the inhibitory capacity of the anti-ANX6 antibody used in the permeabilized cell assay was validated (the table seems to suggest this was the same as used in westerns, but there is no comment on the 'knockdown validation' mentioned in the text).\n\n7) It is not clear why the Lamp1 IF (Figure 2 Figure supplement E) was done \u2013 the results are just mentioned but not discussed. This same condition (ionomycin) was shown decades ago to trigger massive exocytosis of lysosomes, detected as punctate PM-associated Lamp1. So the peripheral punctate signal seen is likely to include Lamp1 transferred to the PM, and not only a peripheral displacement as mentioned.\n\nReviewer #3 (Recommendations for the authors):\n\nIn the manuscript \"Annexin A6 mediates calcium-dependent secretion of exosomes,\" Williams et al., report that secretion of endosome-derived exosomes is enhanced by a calcium-dependent response to damage to the plasma membrane of cells. The authors present convincing evidence that in response to the influx of calcium that follows damage to the plasma membrane annexin A6 is recruited to multivesicular bodies (MVBs) and likely serves to tether the MVBs to the plasma membrane causing a concomitant release of exosomes.\n\n1. In the first sentence of the Discussion, the authors specify that their results suggest that exosome secretion is coupled to calcium-dependent plasma membrane repair in HCT116 cells and indeed they present strong evidence that this is the case. Although the authors did use U2-OS cells to investigate the role of annexin A6 domains, it is not clear if this process is restricted to HCT116 cancer cells or a more general phenomenon for both normal and neoplastic cells. This reviewer is not suggesting that every experiment needs to be performed in multiple cell lines but rather that a few key experiments be repeated in at least one other cell line, perhaps normal epithelial cells or fibroblasts. This would strengthen the manuscript.\n\n2. The authors state (sentence 262, page 10) that \"\u2026ANXA6(FL) was localized to the plasma membrane and to intracellular vesicles (Figure 6B)\" and also note (sentence 268, page 11) that \"\u2026ANXA6(C) was observed on intracellular vesicles\". What are these intracellular vesicles? Are they referring to intracellular compartments such as MVBs or are they referring to the intraluminal vesicles inside MVBs that are destined to be released as exosomes? From the model (Figure 7), it is suggested that annexin A6 binds to MVBs so presumably, the implication from Figure 6 is that annexin A6 localizes to MVBs following ionomycin treatment. But that is not demonstrated. It would improve the quality of the data in Figure 6 if cells labeled for both annexin A6 and CD63 (or other MVB marker) were imaged to see the extent of co-association with MVB structures.\n\n3. Please clarify if annexin A6 itself is present in/on exosomes themselves or is absent from these.\n\n4. Related to the question above, as annexin A6 can localize to the plasma membrane in ionomycin-treated cells, this would imply that microvesicles that bud off from the plasma membrane may also contain annexin A6. Thus, it is possible that annexin A6-positive microvesicles are released after plasma membrane damage or perturbation of the intracellular calcium level. The authors should comment on this possibility. The authors state that in response to ionomycin treatment, they observe the budding of plasma membrane-derived vesicles. If annexin A6 is present outside the cell, where does it partition after iodixanol density gradient fractionation \u2013 with CD63 or with annexin A2 and FLOT2?\n\n5. Also related to the questions above, the authors use their endogenous CD63-Nluc system to convincingly demonstrate that specifically exosome secretion is enhanced as a consequence of plasma membrane repair but what about other types of extracellular vesicles such as plasma membrane-derived microvesicles? Is the release of microvesicles also enhanced by the plasma membrane repair process?\n\n6. Although not directly addressed in the Discussion, this reviewer is left with the impression that the authors are hinting that exosome secretion is more a byproduct of plasma membrane repair rather than a means of intercellular communication. In other words, the cell needs the membrane material from the MVB to patch and repair holes in the plasma membrane and exosome ejection from the cell is a secondary (perhaps even irrelevant) consequence. Obviously, these two possibilities are not mutually exclusive. Nevertheless, the authors are encouraged to speculate about which possibility they favor and how their findings might change our understanding of the cell biology of exosome secretion.\n\n7. The authors might consider placing their findings in the context of Annexin A11 acting as a tether for the transport of RNA granules (Y-C Liao et al., Cell 179:147-164, 2019).\n",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8366e07b-0790-4229-9ad7-9f1f38a8d74c",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C1",
+      "claim": "Exosomes are 30\u2013150 nm vesicles formed by inward budding of the limiting membrane of late endosomes to produce multivesicular bodies (MVBs) that contain intraluminal vesicles (ILVs).",
+      "claim_type": "EXPLICIT",
+      "source": "Exosomes are 30\u2013150 nm vesicles formed by inward budding of the limiting membrane of late endosomes to produce multivesicular bodies (MVBs) that contain intraluminal vesicles (ILVs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about exosome biogenesis, supported by citation to Harding et al., 1983 in the following sentence.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "164c775a-0ac2-4a1e-9cf2-0ce238db6e56",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C2",
+      "claim": "Upon fusion of MVBs with the plasma membrane, ILVs are released to the extracellular space as exosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon fusion of MVBs with the plasma membrane, ILVs are released to the extracellular space as exosomes (Harding et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Harding et al., 1983.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "bc3396f4-b4c7-41cb-b820-f20474b53d9a",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C3",
+      "claim": "Elevation of cytosolic Ca2+ with ionophores induces rapid exosome secretion in a Rab27a, Munc13-4-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, elevation of cytosolic Ca2+ with ionophores has been demonstrated to induce rapid exosome secretion in a Rab27a, Munc13-4-dependent manner (Messenger et al., 2018; Savina et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Messenger et al., 2018 and Savina et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "f2aa417a-5af8-4896-807f-39ad471a8122",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C4",
+      "claim": "Perforation of the plasma membrane results in an influx of extracellular Ca2+ into the cytoplasm and triggers a repair cascade that includes mobilization and fusion of lysosomes with the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Perforation of the plasma membrane results in an influx of extracellular Ca2+ into the cytoplasm and triggers a repair cascade that includes mobilization and fusion of lysosomes with the plasma membrane (Andrews and Corrotte, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Andrews and Corrotte, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "6ca21f51-43db-4030-bb03-816118dfbe39",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C5",
+      "claim": "Some reports have suggested that, unlike lysosomes, MVBs do not undergo Ca2+-dependent exocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some reports have suggested that, unlike lysosomes, MVBs do not undergo Ca2+-dependent exocytosis (Jaiswal et al., 2004; Jaiswal et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Jaiswal et al., 2004 and Jaiswal et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "46328f90-ad8b-4df3-8b4c-98c5f85160d3",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C6",
+      "claim": "Furimazine permeates through cellular membranes and enables luminescence from both cellular debris and intact CD63-Nluc exosomes present within the conditioned medium of cultured CD63-Nluc cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furimazine, the substrate of Nluc, permeates through cellular membranes and enables luminescence from both cellular debris and intact CD63-Nluc exosomes present within the conditioned medium of cultured CD63-Nluc cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the assay design based on the known properties of furimazine.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "1da0e366-0961-42b4-a3c0-8e98416901c7",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C7",
+      "claim": "The addition of a membrane-impermeable Nluc inhibitor eliminates luminescence derived from cellular debris where Nluc is readily accessible, while not affecting the luminescence derived from intact CD63-Nluc exosomes incubated with furimazine.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of a membrane-impermeable Nluc inhibitor eliminates luminescence derived from cellular debris where Nluc is readily accessible, while not affecting the luminescence derived from intact CD63-Nluc exosomes incubated with furimazine (Walker et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Walker et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "666b3f87-06fb-4b53-b793-81fe65589e24",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C8",
+      "claim": "The addition of the membrane-impermeable Nluc inhibitor depleted approximately 30% of luminescence derived from the conditioned medium of CD63-Nluc cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of the membrane-impermeable Nluc inhibitor depleted a significant portion of luminescence derived from the conditioned medium of CD63-Nluc cells (~30%) and membrane solubilization by TX-100 reduced luminescence to background levels (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "26111c90-489a-4b5a-aec0-7e18441846f7",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C9",
+      "claim": "Membrane solubilization by TX-100 reduced luminescence to background levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of the membrane-impermeable Nluc inhibitor depleted a significant portion of luminescence derived from the conditioned medium of CD63-Nluc cells (~30%) and membrane solubilization by TX-100 reduced luminescence to background levels (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "096e6cf7-c721-4fb9-917e-3fd25dfaf318",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C10",
+      "claim": "CD63-Nluc luminescence was removed after high-speed sedimentation or upon the addition of TX-100.",
+      "claim_type": "EXPLICIT",
+      "source": "To further validate the localization of the CD63-Nluc luminescence signal to sedimentable vesicles, we subjected the conditioned medium fraction to differential centrifugation and found that CD63-Nluc luminescence was removed after high-speed sedimentation or upon the addition of TX-100 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "6b1c04c2-18da-440f-8c4e-836c7cd4844c",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C11",
+      "claim": "CD63-Nluc vesicles equilibrated at a density of 1.11 g/ml on a linear iodixanol gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "CD63-Nluc vesicles equilibrated at a density of 1.11 g/ml, a buoyancy similar to published reports (Jeppesen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data (Figure 1D) and comparison to published reports (Jeppesen et al., 2019).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "3ed431b6-1cfe-402c-bb13-a7234ad1fc7a",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C12",
+      "claim": "Secreted CD63-Nluc luminescence increased linearly over 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In a time course over 24 hr, we measured secreted CD63-Nluc luminescence in the presence of Nluc inhibitor alone or with TX-100 and found the signal increased linearly, consistent with exosome secretion over time (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "cea91bc7-ae87-4454-9daa-4e6df04187dc",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C13",
+      "claim": "Influx of Ca2+ into the cytoplasm using the Ca2+ ionophore ionomycin (5 \u00b5M, 30 min) induced robust exosome secretion compared to the level of secretion of the vehicle control.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous reports (Messenger et al., 2018), influx of Ca2+ into the cytoplasm using the Ca2+ ionophore ionomycin (5 \u00b5M, 30 min) induced robust exosome secretion compared to the level of secretion of the vehicle control (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A and citation to Messenger et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "b65bfc1d-8142-4cb8-8b91-22508ecd02ab",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C14",
+      "claim": "Exosome secretion initiated within 2 min of ionomycin treatment and was complete by 10 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Exosome secretion initiated within 2 min of ionomycin treatment and was complete by 10 min (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "469d9d9d-6c87-4952-9227-8d145043f3a9",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C15",
+      "claim": "Treatment with 400 ng/ml or 800 ng/ml of SLO significantly increased exosome production, dependent on the presence of extracellular CaCl2 (1.8 mM).",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with 400 ng/ml or 800 ng/ml of SLO significantly increased exosome production, dependent on the presence of extracellular CaCl2 (1.8 mM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "dd346bc8-2860-4e2b-a202-6cd65683500b",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C16",
+      "claim": "SLO induced exosome secretion 2 min after initial application and was complete after 10\u201320 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to ionomycin, SLO induced exosome secretion 2 min after initial application and was complete after 10\u201320 min (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "2817fe3a-a680-4ce9-a498-f3711b9eb75c",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C17",
+      "claim": "Application of a physiological mechanical stress induced exosome secretion in a Ca2+-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of a physiological mechanical stress also induced exosome secretion in a Ca2+-dependent manner (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "d4f6294f-4fd3-4a2d-b4ed-ca4b98014c13",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C18",
+      "claim": "A 30 min ionomycin treatment induced the secretion of low-buoyant density, ANXA2- and FLOT2-positive vesicles compared to the 24 hr vehicle control.",
+      "claim_type": "EXPLICIT",
+      "source": "A 30 min ionomycin treatment induced the secretion of low-buoyant density, ANXA2- and FLOT2-positive vesicles (Figure 2F, Fraction #8) compared to the 24 hr vehicle control.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "844bf5e1-87c0-4459-9df1-40568021438a",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C19",
+      "claim": "CD63 and Nluc signals equilibrated to higher buoyant density fractions corresponding to the position expected for exosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, CD63 and Nluc signals equilibrated to higher buoyant density fractions corresponding to the position expected for exosomes (Figure 2F, Fraction #10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "534dc089-d815-4de0-9068-d90d75ff5df2",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C20",
+      "claim": "Treatment with nocodazole, a microtubule polymerization inhibitor, but not latrunculin A, an actin polymerization inhibitor, reduced vehicle- and ionomycin-induced exosome secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with nocodazole, a microtubule polymerization inhibitor, but not latrunculin A, an actin polymerization inhibitor, reduced vehicle- and ionomycin-induced exosome secretion (Figure 2H, Figure 2\u2014figure supplement 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2H and Figure 2\u2014figure supplement 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "1f822a23-3e42-416d-8ec3-b2b86a5ecb7c",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C21",
+      "claim": "The 0.2% TX-100 elution fractions were significantly enriched in LAMP1 and diminished in GAPDH compared to the input, regardless of the presence of CaCl2 or EGTA in the elution.",
+      "claim_type": "EXPLICIT",
+      "source": "The 0.2% TX-100 elution fractions were significantly enriched in LAMP1 and diminished in GAPDH compared to the input, regardless of the presence of CaCl2 or EGTA in the elution (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "8376c6d1-1691-4523-88b9-bad1cffe907f",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C22",
+      "claim": "A gel stained for total protein showed four intense protein bands unique to the EGTA-eluted sample.",
+      "claim_type": "EXPLICIT",
+      "source": "A gel stained for total protein showed four intense protein bands unique to the EGTA-eluted sample (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "75595cf2-a332-4cf2-ad61-a8d3b3cd0458",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C23",
+      "claim": "Mass spectrometry identified annexin A6 (ANXA6) and copine 3 (CPNE3) in the upper gel slice, annexin A2 (ANXA2) in the middle gel slice, and S100 Ca2+-binding protein A10 (S100A10) in the lower gel slice.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified annexin A6 (ANXA6) and copine 3 (CPNE3) in the upper gel slice, annexin A2 (ANXA2) in the middle gel slice, and S100 Ca2+-binding protein A10 (S100A10) in the lower gel slice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mass spectrometry data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "d6079024-5dee-478f-88ba-4d27f906d51f",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C24",
+      "claim": "Knockdown of ANXA6 and CPNE3 decreased Ca2+-dependent exosome secretion relative to a GFP knockdown control.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we were able to efficiently knock down ANXA6 and CPNE3 with two different shRNAs (Figure 4A and B), and in each case, Ca2+-dependent exosome secretion decreased relative to a GFP knockdown control (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A, B, C, and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "67843ec5-96ac-4cfa-b356-5b8499872a2d",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C25",
+      "claim": "One of the ANXA6 shRNAs slightly decreased constitutive exosome secretion relative to the GFP control.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the ANXA6 shRNAs also slightly decreased constitutive exosome secretion relative to the GFP control, although the effect was relatively small (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "c0f857c8-2df8-4345-89ec-f82f456eb039",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C26",
+      "claim": "A polyclonal knockout of ANXA6 decreased exosome secretion relative to a non-targeting control.",
+      "claim_type": "EXPLICIT",
+      "source": "A polyclonal knockout of ANXA6 also decreased exosome secretion relative to a non-targeting control (Figure 4\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "ba69c98f-8ad2-4e79-a049-ac020c2addd5",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C27",
+      "claim": "An accumulation of CD63-positive vesicles at the cell periphery was observed, particularly in ionomycin-treated ANXA6 knockdown cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed an accumulation of CD63-positive vesicles at the cell periphery, particularly in ionomycin-treated ANXA6 knockdown cells (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "b7f4d1f9-34da-4676-84fd-cd1b7837e93f",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C28",
+      "claim": "Addition of either rat liver cytosol or Ca2+ promoted exosome secretion slightly and the addition of both rat liver cytosol and Ca2+ promoted exosome secretion ~12-fold over the control condition.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that addition of either rat liver cytosol or Ca2+ promoted exosome secretion slightly and that the addition of both rat liver cytosol and Ca2+ promoted exosome secretion ~12-fold over the control condition (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "5213ed32-2291-420f-a695-ac141f94f77b",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C29",
+      "claim": "The addition of HCT116 WT cytosol and Ca2+ promoted exosome secretion ~15-fold over the control condition.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of HCT116 WT cytosol and Ca2+ promoted exosome secretion ~15-fold over the control condition (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "cb560e6b-8e38-476b-b958-0855050e4331",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C30",
+      "claim": "The Ca2+-only reaction was stimulated by the addition of the ATPr and GTP, whereas the stimulatory effect obtained with cytosol alone appeared to be nucleotide-independent.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the Ca2+-only reaction was stimulated by the addition of the ATPr and GTP (columns 3 and 7), whereas the stimulatory effect obtained with cytosol alone appeared to be nucleotide-independent (columns 2 and 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "fbf01367-cf32-41dd-9dc8-f37e88e7c891",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C31",
+      "claim": "Addition of an anti-GFP antibody slightly decreased exosome secretion whereas the equivalent addition of an anti-ANXA6 antibody decreased exosome secretion to a background level seen in a reaction without added cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of an anti-GFP antibody slightly decreased exosome secretion whereas the equivalent addition of an anti-ANXA6 antibody (whose specificity was validated by immunoblot analysis in Figure 4A and Figure 4\u2014figure supplement 1A) decreased exosome secretion to a background level seen in a reaction without added cytosol (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "44302c25-ca30-411a-8cbb-146703571aad",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C32",
+      "claim": "ANXA6(FL) maintains a diffuse cytoplasmic distribution in unperturbed cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that ANXA6(FL) maintains a diffuse cytoplasmic distribution in unperturbed cells (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "0ec753f2-d5bb-4333-9bea-86909be7ee90",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C33",
+      "claim": "Upon addition of ionomycin, ANXA6(FL) was recruited to both the plasma membrane and to intracellular vesicles, a portion of which were CD63-positive.",
+      "claim_type": "EXPLICIT",
+      "source": "However, upon addition of ionomycin, ANXA6(FL) was recruited to both the plasma membrane (as indicated by wheat germ agglutinin [WGA] counterstain) and to intracellular vesicles, a portion of which were CD63-positive (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "59dd9a38-3d04-4e94-aa1b-a6d3c642cdcc",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C34",
+      "claim": "Upon ionomycin treatment, ANXA6(N), but not ANXA6(C) was recruited to the cell periphery, relative to the WGA counterstain.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon ionomycin treatment, we observed recruitment of ANXA6(N), but not ANXA6(C) to the cell periphery, relative to the WGA counterstain (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "47f93b15-acfa-4429-a811-6dbdc71abd60",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C35",
+      "claim": "ANXA6(C) became enriched at intracellular membrane structures, a portion of which were positive for CD63.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to ANXA6(N), we observed that ANXA6(C) became enriched at intracellular membrane structures, a portion of which were positive for CD63 (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "07e494eb-0c07-45af-bf4b-360c5a10d04b",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C36",
+      "claim": "Exosome secretion is coupled to Ca2+-dependent plasma membrane repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that exosome secretion is coupled to Ca2+-dependent plasma membrane repair in HCT116 and HEK293T cells (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary claim based on multiple experimental results presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "e26ed569-383a-4164-981c-06145699297a",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C37",
+      "claim": "ANXA6 is recruited to MVBs in the presence of Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeted proteomics was used to demonstrate that ANXA6 is recruited to MVBs in the presence of Ca2+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "33521c77-cf7d-4325-80b0-3337aff14216",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C38",
+      "claim": "ANXA6 is required for Ca2+-dependent exosome secretion, both in intact and permeabilized cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We show, both in intact and permeabilized cells, that ANXA6 is required for Ca2+-dependent exosome secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "18ba5729-3e61-4e03-8c70-3d8188ecb183",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C39",
+      "claim": "ANXA6 depletion stalls MVBs at the cell periphery upon Ca2+ ionophore treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We then provide evidence that that ANXA6 depletion stalls MVBs at the cell periphery upon Ca2+ ionophore treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "5261f006-9a83-4d2c-933c-f4e81f46dbc3",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C40",
+      "claim": "Truncations of ANXA6 are enriched at different cellular membranes upon cytosolic Ca2+ elevation.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we demonstrate that truncations of ANXA6 are enriched at different cellular membranes upon cytosolic Ca2+ elevation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "b0c06cd9-e71a-4538-a22f-112c295cd7f5",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C41",
+      "claim": "Both MVBs and lysosomes undergo Ca2+-dependent exocytosis during plasma membrane repair, resulting in the concurrent secretion of exosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Given our findings, we propose that both MVBs and lysosomes undergo Ca2+-dependent exocytosis during plasma membrane repair, resulting in the concurrent secretion of exosomes (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "17552d6f-02c8-4ea4-b817-d6395359270b",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C42",
+      "claim": "ANXA6 is directly involved in tethering an MVB to the plasma membrane during exocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data favors a model where ANXA6 is directly involved in tethering an MVB to the plasma membrane during exocytosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on multiple experimental observations including ANXA6 recruitment to MVBs, stalling of MVBs at the periphery upon ANXA6 depletion, and differential localization of ANXA6 domains.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "1f4b1f02-f885-47a0-88c2-2f27695a25d1",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C43",
+      "claim": "The two annexin domains of ANXA6 may serve to dock MVBs to the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "These two domains may serve to dock MVBs to the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the observation that the two domains localize to different membranes upon Ca2+ influx.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "18e53037-1129-453d-9851-de495747ac62",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C44",
+      "claim": "In rats, 6.5% of cells in the vascular endothelium of the aorta undergo plasma membrane repair at a given time.",
+      "claim_type": "EXPLICIT",
+      "source": "In rats, 6.5% of cells in the vascular endothelium of the aorta undergo plasma membrane repair at a given time (Yu and McNeil, 1992); 20% of muscle cells repair their membrane after muscle contractions (McNeil and Khakee, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Yu and McNeil, 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "e87ac66e-0d8a-4da1-8004-b0d7da8f0ebc",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C45",
+      "claim": "20% of muscle cells repair their membrane after muscle contractions.",
+      "claim_type": "EXPLICIT",
+      "source": "In rats, 6.5% of cells in the vascular endothelium of the aorta undergo plasma membrane repair at a given time (Yu and McNeil, 1992); 20% of muscle cells repair their membrane after muscle contractions (McNeil and Khakee, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to McNeil and Khakee, 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "fba29275-c48d-4f6e-a617-2f9605032e12",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C46",
+      "claim": "Exercise stimulates the release of EV-associated proteins and myokines into circulating plasma.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Whitham, 2018 demonstrated that exercise stimulates the release of EV-associated proteins and myokines into circulating plasma (Whitham, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Whitham, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "731321b1-9e80-40dc-bb12-6095396410fb",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C47",
+      "claim": "Exosomes act as 'decoys' for pore-forming toxins such as \u03b1-toxin.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, a recent study showed that exosomes act as 'decoys' for pore-forming toxins such as \u03b1-toxin (Keller et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Keller et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "2ce589c1-7a63-4bda-9444-81b9a9d9a13f",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C48",
+      "claim": "During staphylococcus infection, cells upregulate exosome production.",
+      "claim_type": "EXPLICIT",
+      "source": "During staphylococcus infection, cells upregulate exosome production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the study by Keller et al., 2020 mentioned in the previous sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "af99ebdd-8c16-49d9-b6fd-188448ccf62c",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C49",
+      "claim": "SLO binds exosomes at concentrations that may compete with plasma membrane binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, we find that SLO binds exosomes at concentrations that may compete with plasma membrane binding (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "98f0b12f-af86-4dc8-9d2c-94bbf2a795d7",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C50",
+      "claim": "Microinjection studies in echinoderm eggs were the first to demonstrate that metazoan cells repair wounds to the plasma membrane and that this repair process is dependent upon the presence of extracellular Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Microinjection studies in echinoderm eggs were the first to demonstrate that metazoan cells repair wounds to the plasma membrane and that this repair process is dependent upon the presence of extracellular Ca2+ (Chambers, 1917; Heilbrunn, 1930a; Heilbrunn, 1930b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Chambers, 1917; Heilbrunn, 1930a; Heilbrunn, 1930b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "f2a8b4ea-d7ae-45e5-a7c0-c035b74d7455",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C51",
+      "claim": "The addition of a Ca2+ ionophore elicited the fusion of plasma membrane-proximal lysosomes with little or no evidence of involvement of early endosomes, late endosomes/MVBs, or vesicles derived from either the endoplasmic reticulum or Golgi apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "In their studies, the addition of a Ca2+ ionophore elicited the fusion of plasma membrane-proximal lysosomes with little or no evidence of involvement of early endosomes, late endosomes/MVBs, or vesicles derived from either the endoplasmic reticulum or Golgi apparatus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the work of Jaiswal et al., 2002 mentioned in the previous sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "ff7085e0-6bc9-401f-abb4-c576bda2ca0d",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C52",
+      "claim": "The markers used by Jaiswal et al., 2002 to differentiate between late endosomes (Rab7) and lysosomes (CD63) have now been demonstrated to be present in both membrane compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "The markers used by Jaiswal et al., 2002 to differentiate between late endosomes (Rab7) and lysosomes (CD63) have now been demonstrated to be present in both membrane compartments (Humphries et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Humphries et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "d5216fe5-3467-4456-8a3d-401ce9070003",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C53",
+      "claim": "Ca2+-dependent plasma membrane repair of sea urchin eggs after micropuncture with glass micropipettes has been demonstrated to be both fusion- and microtubule-dependent as suggested by sensitivity to either botulinum toxins or antibodies that block kinesin-mediated microtubule transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Ca2+-dependent plasma membrane repair of sea urchin eggs after micropuncture with glass micropipettes has been demonstrated to be both fusion- and microtubule-dependent as suggested by sensitivity to either botulinum toxins or antibodies that block kinesin-mediated microtubule transport (Ingold et al., 1988; Poulain et al., 1988; Schiavo et al., 1992; Steinhardt et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ingold et al., 1988; Poulain et al., 1988; Schiavo et al., 1992; Steinhardt et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "d286883b-4675-4626-8f0e-358ceb7a0862",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C54",
+      "claim": "Endosomes pre-loaded with Alexa-488-conjugated transferrin traffic toward the plasma membrane upon treatment of cytotoxic T lymphocytes with perforin.",
+      "claim_type": "EXPLICIT",
+      "source": "Endosomes pre-loaded with Alexa-488-conjugated transferrin traffic toward the plasma membrane upon treatment of cytotoxic T lymphocytes with perforin (Keefe et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Keefe et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "aa54dc82-8f0c-4327-b202-1a55dc9d991a",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C55",
+      "claim": "Annexin proteins are known to be required for plasma membrane repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Annexin proteins are known to be required for plasma membrane repair (Blazek et al., 2015; Bouter et al., 2015; Boye and Nylandsted, 2016; Croissant et al., 2021; Gerke and Moss, 2002; Koerdt et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Blazek et al., 2015; Bouter et al., 2015; Boye and Nylandsted, 2016; Croissant et al., 2021; Gerke and Moss, 2002; Koerdt et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "92ad1d70-29a5-4cb1-9db7-93f25a4f0d3f",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C56",
+      "claim": "Depletion of ANXA6 compromises plasma membrane repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of ANXA6 compromises plasma membrane repair, and the N-terminal domain of ANXA6 is insufficient for membrane repair (Croissant et al., 2020; Potez et al., 2011; Swaggart et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Croissant et al., 2020; Potez et al., 2011; Swaggart et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "89ac65c3-27f4-4d8f-9661-6a4b62dd61df",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C57",
+      "claim": "The N-terminal domain of ANXA6 is insufficient for membrane repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of ANXA6 compromises plasma membrane repair, and the N-terminal domain of ANXA6 is insufficient for membrane repair (Croissant et al., 2020; Potez et al., 2011; Swaggart et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Croissant et al., 2020; Potez et al., 2011; Swaggart et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "95d2c93a-5d1a-4dfe-b66e-48492e182906",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C58",
+      "claim": "ANXA6 is recruited to a peripheral 'repair cap' that is formed at the site of plasma membrane lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated that ANXA6 is recruited to a peripheral 'repair cap' that is formed at the site of plasma membrane lesions (Demonbreun et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Demonbreun et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "f49da498-8765-43b3-a457-a7e5cf228763",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C59",
+      "claim": "ANXA6 has been demonstrated to tether liposomes in vitro in the presence of Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "ANXA6 has also been demonstrated to tether liposomes in vitro in the presence of Ca2+ (Buzhynskyy et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Buzhynskyy et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "facba519-85b9-46a5-90fd-c8cba2e54503",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C60",
+      "claim": "The annexin isoform ANXA11 serves as a molecular tether that allows RNA granules to 'hitchhike' on moving lysosomes for their transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, a recent study has demonstrated that the annexin isoform ANXA11 serves as a molecular tether that allows RNA granules to 'hitchhike' on moving lysosomes for their transport (Liao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Liao et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "1d8f80c0-a999-4907-838d-c75646c70200",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C61",
+      "claim": "ANXA2 and CPNE3 were both recruited to MVBs and lysosomes in the presence of Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we focused on the role of ANXA6 in Ca2+-dependent exosome secretion, ANXA2 and CPNE3 were both recruited to MVBs and lysosomes in the presence of Ca2+ and knockdown of CPNE3 inhibited MVB exocytosis (Figures 3 and 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3 and 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "572c0ca2-3cb8-4835-aa3e-cd8c702ba823",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C62",
+      "claim": "Knockdown of CPNE3 inhibited MVB exocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we focused on the role of ANXA6 in Ca2+-dependent exosome secretion, ANXA2 and CPNE3 were both recruited to MVBs and lysosomes in the presence of Ca2+ and knockdown of CPNE3 inhibited MVB exocytosis (Figures 3 and 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3 and 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "92ae557f-7574-4467-88bd-b7d997f50b72",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C63",
+      "claim": "Exosomes have potential utility as biomarkers for disease progression because they contain protein and small RNA molecules specific to their cell type of origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Exosomes have potential utility as biomarkers for disease progression because they contain protein and small RNA molecules specific to their cell type of origin (Driedonks and Nolte-'t Hoen, 2018; Shurtleff et al., 2017; Upton et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Driedonks and Nolte-'t Hoen, 2018; Shurtleff et al., 2017; Upton et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "188699a0-a905-4b3c-96f8-e8f141aeb42e",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C64",
+      "claim": "MVBs traffic toward the cell periphery on microtubules or actin filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "MVBs traffic toward the cell periphery on microtubules or actin filaments (Mittelbrunn et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Mittelbrunn et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "cb55ce57-147c-41e0-9871-df672bde2b48",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C65",
+      "claim": "The influx of extracellular Ca2+ caused by several inducers of plasma membrane lesions triggers exosome secretion and this secretion is dependent on the anterograde trafficking of MVBs on microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the influx of extracellular Ca2+ caused by several inducers of plasma membrane lesions triggers exosome secretion and that this secretion is dependent on the anterograde trafficking of MVBs on microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on multiple experimental results presented in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "883d9eec-8678-40ef-8d25-cc5aae3b03ae",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C66",
+      "claim": "The modified CD63-Nluc assay faithfully reported the secretion of bona fide CD63-positive exosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our modified CD63-Nluc assay faithfully reported the secretion of bona fide CD63-positive exosomes, and we have used this method to assess the molecular requirements for exosome secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the validation experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "635c2137-584e-4827-a3df-0f5964b4a046",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C67",
+      "claim": "Exosomes may participate in intercellular communication.",
+      "claim_type": "EXPLICIT",
+      "source": "Exosomes may participate in intercellular communication and have utility as disease biomarkers; however, little is known regarding the physiological stimuli that induce their secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the potential functions of exosomes, representing established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "2f16377c-19db-43b5-a43c-10f0f53cb503",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C68",
+      "claim": "Little is known regarding the physiological stimuli that induce exosome secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Exosomes may participate in intercellular communication and have utility as disease biomarkers; however, little is known regarding the physiological stimuli that induce their secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field at the time of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "23b479b4-099a-4e60-b314-09e6b8e2c6b6",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C69",
+      "claim": "Cells secrete exosomes and other EVs upon plasma membrane damage.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that cells secrete exosomes and other EVs upon plasma membrane damage and propose that repair-induced secretion may contribute to the pool of EVs present within biological fluids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the experimental results presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "e181f7d5-1015-4a97-8402-dda90330f89a",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C70",
+      "claim": "Repair-induced secretion may contribute to the pool of EVs present within biological fluids.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that cells secrete exosomes and other EVs upon plasma membrane damage and propose that repair-induced secretion may contribute to the pool of EVs present within biological fluids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed hypothesis based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "10ea35a4-01ec-4868-8a7c-3edce338c6e9",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C71",
+      "claim": "ANXA6 may serve as a potential tether for the recruitment of MVBs to the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that exosome secretion is coupled to Ca2+-dependent plasma membrane repair and that ANXA6 may serve as a potential tether for the recruitment of MVBs to the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "d229327d-ca05-4804-ba4f-124aeb843dd9",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C72",
+      "claim": "Unlike other members of the annexin protein family, ANXA6 contains two complete annexin domains, ANXA6(N) and ANXA6(C).",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike other members of the annexin protein family, ANXA6 contains two complete annexin domains, ANXA6(N) and ANXA6(C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the structure of ANXA6.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "175335ac-6a4f-4f5d-bc79-eeb6b3424c09",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C73",
+      "claim": "Endothelium and circulating lymphocytes routinely experience mechanical stress of ~95 dyn/cm2 and transiently experience up to ~3000 dyn/cm2.",
+      "claim_type": "EXPLICIT",
+      "source": "Endothelium and circulating lymphocytes routinely experience mechanical stress of ~95 dyn/cm2 and transiently experience up to ~3000 dyn/cm2 (Barnes et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Barnes et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "79452aa6-bf8d-41ff-852a-0818c064122f",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C74",
+      "claim": "ANXA2 is a marker for a subpopulation of plasma membrane-derived EVs.",
+      "claim_type": "EXPLICIT",
+      "source": "ANXA2 is a marker for a subpopulation of plasma membrane-derived EVs (Jeppesen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Jeppesen et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "46c7f7e3-692f-4f8a-addb-79fa0f460727",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C75",
+      "claim": "Treatment of cells with ionomycin for 4 hr did not induce apoptotic cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of cells with ionomycin for 4 hr did not induce apoptotic cell death (Figure 2\u2014figure supplement 1C; Gil-Parrado et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1C and citation to Gil-Parrado et al., 2002.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "3ad943ea-85b6-40a7-8ad5-3cae2fe00763",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C76",
+      "claim": "SLO treatment of conditioned medium decreased the CD63-Nluc signal when the membrane-impermeable Nluc inhibitor was present.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that SLO permeabilized exosomes as well as cells. SLO treatment of conditioned medium decreased the CD63-Nluc signal when the membrane-impermeable Nluc inhibitor was present (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "a8bb00fe-007e-4057-a513-c584c4c8ce38",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C77",
+      "claim": "The assay likely underestimates SLO-induced exosome secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our assay likely underestimates SLO-induced exosome secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that SLO permeabilizes exosomes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "bf5c8ada-c9f4-4d7d-b18e-e04e442f2eb6",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C78",
+      "claim": "HEK293T FLAG-Nluc-CD63 cells showed an increase in exosome secretion in a SLO dose- and Ca2+-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed an increase in FLAG-Nluc-CD63 exosome secretion from this reporter cell line in a SLO dose- and Ca2+-dependent manner (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "8b851e6d-ccf3-4d0c-91c6-48841b3b04a2",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C79",
+      "claim": "In the low mechanical stress regime, cells transiently experienced ~89 dyn/cm2 maximum fluid shear stress.",
+      "claim_type": "EXPLICIT",
+      "source": "In the low mechanical stress regime, cells transiently experienced ~89 dyn/cm2 maximum fluid shear stress, whereas in the high-mechanical stress regime, cells transiently experienced ~178 dyn/cm2 maximum fluid shear stress (Barnes et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the experimental setup and citation to Barnes et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "686d04c4-ef19-4851-a1fc-f9b1253e5912",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C80",
+      "claim": "In the high-mechanical stress regime, cells transiently experienced ~178 dyn/cm2 maximum fluid shear stress.",
+      "claim_type": "EXPLICIT",
+      "source": "In the low mechanical stress regime, cells transiently experienced ~89 dyn/cm2 maximum fluid shear stress, whereas in the high-mechanical stress regime, cells transiently experienced ~178 dyn/cm2 maximum fluid shear stress (Barnes et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the experimental setup and citation to Barnes et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "67a9c776-9123-49f5-97d8-6a00f30a386a",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C81",
+      "claim": "A comparison of ionomycin- and vehicle-treated samples showed drug treatment over equivalent times (4 hr) increased the Nluc luminescence in putative exosome fractions.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of ionomycin- and vehicle-treated samples showed drug treatment over equivalent times (4 hr) increased the Nluc luminescence in putative exosome fractions (Figure 2G, Fraction #10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "726e1ab9-2a72-40d7-9d06-300f0603ba13",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C82",
+      "claim": "The Ca2+ conditional and partial ATP dependence of the reaction may reflect distinct pools of MVBs, some perhaps already bound to the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ca2+ conditional and partial ATP dependence of the reaction may reflect distinct pools of MVBs, some perhaps already bound to the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental results shown in Figure 5D.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "b606a48c-b35d-40b5-bcb4-3166ece050b3",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C83",
+      "claim": "The participation of ANXA6 in the reconstitution was assessed with blocking IgG antibodies targeting epitopes on either GFP or ANXA6.",
+      "claim_type": "EXPLICIT",
+      "source": "The participation of ANXA6 in the reconstitution was assessed with blocking IgG antibodies targeting epitopes on either GFP or ANXA6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach used in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "9e6b54a1-5ed4-4dee-a218-7fb1abcc40e2",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C84",
+      "claim": "The results suggest a direct role of ANXA6 in the docking of MVBs at the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest a direct role of ANXA6 in the docking of MVBs at the cell surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the antibody blocking experiments shown in Figure 5E.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "21c04573-244a-4352-942f-cf0ff34ca39a",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C85",
+      "claim": "Budding of plasma membrane-derived vesicles was observed in the presence of ionomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed the budding of plasma membrane-derived vesicles in the presence of ionomycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the microscopy data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "d01d9c2f-eed0-493b-93f1-4f059586e3d7",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C86",
+      "claim": "Plasma membrane-derived vesicles observed in ionomycin-treated cells may correlate to the low-buoyant density vesicles marked by ANXA2 and FLOT2 that were released from ionomycin-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These may correlate to the low-buoyant density vesicles marked by ANXA2 and FLOT2 that were released from ionomycin-treated cells (Figure 2F, Fraction #8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative connection between observations from different experiments.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "b1cb9541-57b2-4a3f-8fe1-acf8a8dc91de",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "claim_id": "C87",
+      "claim": "ANXA6 may serve to tether MVBs to the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "ANXA6 depletion stalls MVBs at the cell periphery, and ANXA6 truncations localize to different membranes, suggesting that ANXA6 may serve to tether MVBs to the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on multiple experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6424b379-3dc5-4cdf-9b24-32c2c874da7c",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed and validated a CD63-Nluc exosome secretion assay that uses a membrane-impermeable Nluc inhibitor to distinguish intact exosomes from cellular debris. The assay showed that CD63-Nluc vesicles sediment at high speed, equilibrate at a density of 1.11 g/ml on iodixanol gradients, and increase linearly over 24 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C12 and C66 provide comprehensive validation of the assay through multiple orthogonal approaches including differential centrifugation (C10), density gradient fractionation (C11), time course analysis (C12), and comparison to published reports. The experimental data in Figures 1B-E support the specificity and quantitative nature of the assay.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "af08cadd-18f8-4d0e-a1de-9b7d3634c793",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Elevation of cytosolic Ca2+ by ionomycin, SLO treatment, or mechanical stress induces rapid exosome secretion in a Ca2+-dependent manner. Exosome secretion initiates within 2 minutes and is complete by 10-20 minutes. The response was observed in both HCT116 and HEK293T cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 demonstrate Ca2+-dependent exosome secretion through multiple independent stimuli (ionophore, pore-forming toxin, mechanical stress) with consistent kinetics. The data in Figures 2A-E provide strong support. Claims C75-C80 provide important controls showing the treatments do not induce apoptosis and that the assay may underestimate SLO-induced secretion due to exosome permeabilization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "db6c21b1-5f7e-44f6-b927-8228762fb8f4",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ionomycin treatment induces secretion of both low-buoyant density ANXA2/FLOT2-positive vesicles and higher density CD63-positive exosomes. Exosome secretion is microtubule-dependent but not actin-dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 are supported by density gradient fractionation data in Figures 2F-G showing distinct vesicle populations. The microtubule dependence (C20) is demonstrated by nocodazole sensitivity but not latrunculin A sensitivity, consistent with known MVB trafficking mechanisms (C64). The data support the conclusion that multiple EV types are secreted upon Ca2+ influx.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "4e6569f3-d3e9-4d87-b04d-76c17bb20af8",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Using immunoprecipitation of MVBs followed by Ca2+-dependent elution and mass spectrometry, the authors identified ANXA6, CPNE3, ANXA2, and S100A10 as Ca2+-dependent MVB-binding proteins. Both ANXA2 and CPNE3 were recruited to MVBs and lysosomes in the presence of Ca2+, and CPNE3 knockdown inhibited MVB exocytosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 describe a well-designed biochemical fractionation approach with appropriate controls (Figure 3). The enrichment of LAMP1 and depletion of GAPDH validate the MVB/lysosome isolation. Mass spectrometry identification (C23) is supported by Figure 3D. Claims C61-C62 extend these findings with functional data showing CPNE3 knockdown effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "17b63b43-2ed6-451c-9dac-a64400325e5d",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Knockdown of ANXA6 using two independent shRNAs or CRISPR-mediated knockout decreased Ca2+-dependent exosome secretion. One ANXA6 shRNA also slightly decreased constitutive exosome secretion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 demonstrate ANXA6 requirement using multiple independent genetic approaches (two shRNAs and CRISPR knockout) with consistent results shown in Figures 4A-D and Figure 4\u2014figure supplement 1. The use of multiple independent perturbations strengthens the conclusion. The effect on constitutive secretion (C25) is noted as small, appropriately qualifying the claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "f85537e5-0ba3-4068-990a-d49de5c82af5",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ANXA6 depletion causes accumulation of CD63-positive vesicles at the cell periphery upon ionomycin treatment, suggesting MVBs stall at the plasma membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27 and C39 are supported by immunofluorescence microscopy data in Figure 4E showing peripheral CD63 accumulation specifically in ANXA6 knockdown cells treated with ionomycin. This phenotype is consistent with a defect in the final fusion step and supports the proposed tethering role of ANXA6.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "075242c2-2eb5-4861-8a5b-ebfec70f834a",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In permeabilized cells, exosome secretion requires both cytosol and Ca2+, with partial ATP dependence. Anti-ANXA6 antibodies block exosome secretion in this reconstituted system, suggesting a direct role for ANXA6 in MVB docking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 describe a well-controlled biochemical reconstitution system (Figure 5) with appropriate controls including GFP antibody. The ~12-15 fold stimulation by cytosol plus Ca2+ (C28-C29) and the specific blocking by anti-ANXA6 antibody (C31) provide strong evidence for direct ANXA6 involvement. The partial ATP dependence (C30) is appropriately noted and discussed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "5e25516f-8f4d-4c83-b4ca-e52255c1f9bf",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Full-length ANXA6 is recruited to both plasma membrane and CD63-positive vesicles upon ionomycin treatment. The N-terminal annexin domain localizes to the plasma membrane while the C-terminal domain localizes to intracellular CD63-positive structures, suggesting the two domains may tether MVBs to the plasma membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 are supported by high-resolution Airyscan microscopy data in Figure 6 showing differential localization of ANXA6 domains. The observation that the two annexin domains (C72) localize to different membranes upon Ca2+ influx provides strong support for the tethering model. The imaging quality and controls (DMSO vs ionomycin) are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "97f53c91-b0de-436f-ad52-f6a35b027154",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose that exosome secretion is coupled to Ca2+-dependent plasma membrane repair, with both MVBs and lysosomes undergoing Ca2+-dependent exocytosis. ANXA6 may serve as a tether between MVBs and the plasma membrane during this process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C41-C43, C69, C71, and C87 represent the main conclusions and proposed model. These are well-supported by the collective experimental evidence including: (1) Ca2+-dependent exosome secretion upon membrane damage, (2) ANXA6 recruitment to MVBs, (3) requirement for ANXA6 in exosome secretion, (4) MVB stalling at periphery upon ANXA6 depletion, and (5) differential localization of ANXA6 domains. While the tethering model is speculative, it is appropriately qualified and well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background claims establishing prior knowledge about exosome biogenesis, Ca2+-dependent secretion, plasma membrane repair, and ANXA6 function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C5, C44-C48, C50-C60, C63, C67-C68, C73-C74) represent established knowledge from the literature, appropriately cited throughout. They provide necessary context for interpreting the current findings. The authors correctly note contradictions in prior work (C5, C51-C52) regarding whether MVBs undergo Ca2+-dependent exocytosis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "ea5d18be-6c7b-47ff-9d9d-0eef022f06a6",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "SLO binds exosomes at concentrations that may compete with plasma membrane binding. Budding of plasma membrane-derived vesicles was observed in ionomycin-treated cells, which may correlate with low-buoyant density ANXA2/FLOT2-positive vesicles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 is supported by data in Figure 2\u2014figure supplement 1A showing SLO effects on exosomes. Claims C85-C86 are observational findings from microscopy (Figure 6A) with appropriate speculation about correlation to density gradient data. These are minor supporting observations that add context to the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    },
+    {
+      "id": "ac32eecc-9e9d-45b8-bc1e-df35c10a3540",
+      "content_id": "e3a3dd1a-5707-4ee1-92f4-834f45648ba8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors speculate that repair-induced secretion may contribute to EVs in biological fluids and that distinct MVB pools may exist with different ATP dependencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70 and C82 are explicitly speculative interpretations. While C70 is a reasonable hypothesis given the data on plasma membrane damage-induced secretion, it lacks direct experimental support in biological fluids. Claim C82 attempts to explain the partial ATP dependence observed in Figure 5D but remains speculative without additional experiments to distinguish MVB pools.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T01:38:42.263626Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "46328f90-ad8b-4df3-8b4c-98c5f85160d3",
+      "result_id": "6424b379-3dc5-4cdf-9b24-32c2c874da7c"
+    },
+    {
+      "claim_id": "1da0e366-0961-42b4-a3c0-8e98416901c7",
+      "result_id": "6424b379-3dc5-4cdf-9b24-32c2c874da7c"
+    },
+    {
+      "claim_id": "666b3f87-06fb-4b53-b793-81fe65589e24",
+      "result_id": "6424b379-3dc5-4cdf-9b24-32c2c874da7c"
+    },
+    {
+      "claim_id": "26111c90-489a-4b5a-aec0-7e18441846f7",
+      "result_id": "6424b379-3dc5-4cdf-9b24-32c2c874da7c"
+    },
+    {
+      "claim_id": "096e6cf7-c721-4fb9-917e-3fd25dfaf318",
+      "result_id": "6424b379-3dc5-4cdf-9b24-32c2c874da7c"
+    },
+    {
+      "claim_id": "6b1c04c2-18da-440f-8c4e-836c7cd4844c",
+      "result_id": "6424b379-3dc5-4cdf-9b24-32c2c874da7c"
+    },
+    {
+      "claim_id": "3ed431b6-1cfe-402c-bb13-a7234ad1fc7a",
+      "result_id": "6424b379-3dc5-4cdf-9b24-32c2c874da7c"
+    },
+    {
+      "claim_id": "883d9eec-8678-40ef-8d25-cc5aae3b03ae",
+      "result_id": "6424b379-3dc5-4cdf-9b24-32c2c874da7c"
+    },
+    {
+      "claim_id": "cea91bc7-ae87-4454-9daa-4e6df04187dc",
+      "result_id": "af08cadd-18f8-4d0e-a1de-9b7d3634c793"
+    },
+    {
+      "claim_id": "b65bfc1d-8142-4cb8-8b91-22508ecd02ab",
+      "result_id": "af08cadd-18f8-4d0e-a1de-9b7d3634c793"
+    },
+    {
+      "claim_id": "469d9d9d-6c87-4952-9227-8d145043f3a9",
+      "result_id": "af08cadd-18f8-4d0e-a1de-9b7d3634c793"
+    },
+    {
+      "claim_id": "dd346bc8-2860-4e2b-a202-6cd65683500b",
+      "result_id": "af08cadd-18f8-4d0e-a1de-9b7d3634c793"
+    },
+    {
+      "claim_id": "2817fe3a-a680-4ce9-a498-f3711b9eb75c",
+      "result_id": "af08cadd-18f8-4d0e-a1de-9b7d3634c793"
+    },
+    {
+      "claim_id": "cb55ce57-147c-41e0-9871-df672bde2b48",
+      "result_id": "af08cadd-18f8-4d0e-a1de-9b7d3634c793"
+    },
+    {
+      "claim_id": "46c7f7e3-692f-4f8a-addb-79fa0f460727",
+      "result_id": "af08cadd-18f8-4d0e-a1de-9b7d3634c793"
+    },
+    {
+      "claim_id": "3ad943ea-85b6-40a7-8ad5-3cae2fe00763",
+      "result_id": "af08cadd-18f8-4d0e-a1de-9b7d3634c793"
+    },
+    {
+      "claim_id": "a8bb00fe-007e-4057-a513-c584c4c8ce38",
+      "result_id": "af08cadd-18f8-4d0e-a1de-9b7d3634c793"
+    },
+    {
+      "claim_id": "bf5c8ada-c9f4-4d7d-b18e-e04e442f2eb6",
+      "result_id": "af08cadd-18f8-4d0e-a1de-9b7d3634c793"
+    },
+    {
+      "claim_id": "8b851e6d-ccf3-4d0c-91c6-48841b3b04a2",
+      "result_id": "af08cadd-18f8-4d0e-a1de-9b7d3634c793"
+    },
+    {
+      "claim_id": "686d04c4-ef19-4851-a1fc-f9b1253e5912",
+      "result_id": "af08cadd-18f8-4d0e-a1de-9b7d3634c793"
+    },
+    {
+      "claim_id": "d4f6294f-4fd3-4a2d-b4ed-ca4b98014c13",
+      "result_id": "db6c21b1-5f7e-44f6-b927-8228762fb8f4"
+    },
+    {
+      "claim_id": "844bf5e1-87c0-4459-9df1-40568021438a",
+      "result_id": "db6c21b1-5f7e-44f6-b927-8228762fb8f4"
+    },
+    {
+      "claim_id": "534dc089-d815-4de0-9068-d90d75ff5df2",
+      "result_id": "db6c21b1-5f7e-44f6-b927-8228762fb8f4"
+    },
+    {
+      "claim_id": "188699a0-a905-4b3c-96f8-e8f141aeb42e",
+      "result_id": "db6c21b1-5f7e-44f6-b927-8228762fb8f4"
+    },
+    {
+      "claim_id": "67a9c776-9123-49f5-97d8-6a00f30a386a",
+      "result_id": "db6c21b1-5f7e-44f6-b927-8228762fb8f4"
+    },
+    {
+      "claim_id": "1f822a23-3e42-416d-8ec3-b2b86a5ecb7c",
+      "result_id": "4e6569f3-d3e9-4d87-b04d-76c17bb20af8"
+    },
+    {
+      "claim_id": "8376c6d1-1691-4523-88b9-bad1cffe907f",
+      "result_id": "4e6569f3-d3e9-4d87-b04d-76c17bb20af8"
+    },
+    {
+      "claim_id": "75595cf2-a332-4cf2-ad61-a8d3b3cd0458",
+      "result_id": "4e6569f3-d3e9-4d87-b04d-76c17bb20af8"
+    },
+    {
+      "claim_id": "e26ed569-383a-4164-981c-06145699297a",
+      "result_id": "4e6569f3-d3e9-4d87-b04d-76c17bb20af8"
+    },
+    {
+      "claim_id": "1d8f80c0-a999-4907-838d-c75646c70200",
+      "result_id": "4e6569f3-d3e9-4d87-b04d-76c17bb20af8"
+    },
+    {
+      "claim_id": "572c0ca2-3cb8-4835-aa3e-cd8c702ba823",
+      "result_id": "4e6569f3-d3e9-4d87-b04d-76c17bb20af8"
+    },
+    {
+      "claim_id": "d6079024-5dee-478f-88ba-4d27f906d51f",
+      "result_id": "17b63b43-2ed6-451c-9dac-a64400325e5d"
+    },
+    {
+      "claim_id": "67843ec5-96ac-4cfa-b356-5b8499872a2d",
+      "result_id": "17b63b43-2ed6-451c-9dac-a64400325e5d"
+    },
+    {
+      "claim_id": "c0f857c8-2df8-4345-89ec-f82f456eb039",
+      "result_id": "17b63b43-2ed6-451c-9dac-a64400325e5d"
+    },
+    {
+      "claim_id": "33521c77-cf7d-4325-80b0-3337aff14216",
+      "result_id": "17b63b43-2ed6-451c-9dac-a64400325e5d"
+    },
+    {
+      "claim_id": "ba69c98f-8ad2-4e79-a049-ac020c2addd5",
+      "result_id": "f85537e5-0ba3-4068-990a-d49de5c82af5"
+    },
+    {
+      "claim_id": "18ba5729-3e61-4e03-8c70-3d8188ecb183",
+      "result_id": "f85537e5-0ba3-4068-990a-d49de5c82af5"
+    },
+    {
+      "claim_id": "b7f4d1f9-34da-4676-84fd-cd1b7837e93f",
+      "result_id": "075242c2-2eb5-4861-8a5b-ebfec70f834a"
+    },
+    {
+      "claim_id": "5213ed32-2291-420f-a695-ac141f94f77b",
+      "result_id": "075242c2-2eb5-4861-8a5b-ebfec70f834a"
+    },
+    {
+      "claim_id": "cb560e6b-8e38-476b-b958-0855050e4331",
+      "result_id": "075242c2-2eb5-4861-8a5b-ebfec70f834a"
+    },
+    {
+      "claim_id": "fbf01367-cf32-41dd-9dc8-f37e88e7c891",
+      "result_id": "075242c2-2eb5-4861-8a5b-ebfec70f834a"
+    },
+    {
+      "claim_id": "b606a48c-b35d-40b5-bcb4-3166ece050b3",
+      "result_id": "075242c2-2eb5-4861-8a5b-ebfec70f834a"
+    },
+    {
+      "claim_id": "9e6b54a1-5ed4-4dee-a218-7fb1abcc40e2",
+      "result_id": "075242c2-2eb5-4861-8a5b-ebfec70f834a"
+    },
+    {
+      "claim_id": "44302c25-ca30-411a-8cbb-146703571aad",
+      "result_id": "5e25516f-8f4d-4c83-b4ca-e52255c1f9bf"
+    },
+    {
+      "claim_id": "0ec753f2-d5bb-4333-9bea-86909be7ee90",
+      "result_id": "5e25516f-8f4d-4c83-b4ca-e52255c1f9bf"
+    },
+    {
+      "claim_id": "59dd9a38-3d04-4e94-aa1b-a6d3c642cdcc",
+      "result_id": "5e25516f-8f4d-4c83-b4ca-e52255c1f9bf"
+    },
+    {
+      "claim_id": "47f93b15-acfa-4429-a811-6dbdc71abd60",
+      "result_id": "5e25516f-8f4d-4c83-b4ca-e52255c1f9bf"
+    },
+    {
+      "claim_id": "5261f006-9a83-4d2c-933c-f4e81f46dbc3",
+      "result_id": "5e25516f-8f4d-4c83-b4ca-e52255c1f9bf"
+    },
+    {
+      "claim_id": "d229327d-ca05-4804-ba4f-124aeb843dd9",
+      "result_id": "5e25516f-8f4d-4c83-b4ca-e52255c1f9bf"
+    },
+    {
+      "claim_id": "07e494eb-0c07-45af-bf4b-360c5a10d04b",
+      "result_id": "97f53c91-b0de-436f-ad52-f6a35b027154"
+    },
+    {
+      "claim_id": "b0c06cd9-e71a-4538-a22f-112c295cd7f5",
+      "result_id": "97f53c91-b0de-436f-ad52-f6a35b027154"
+    },
+    {
+      "claim_id": "17552d6f-02c8-4ea4-b817-d6395359270b",
+      "result_id": "97f53c91-b0de-436f-ad52-f6a35b027154"
+    },
+    {
+      "claim_id": "1f4b1f02-f885-47a0-88c2-2f27695a25d1",
+      "result_id": "97f53c91-b0de-436f-ad52-f6a35b027154"
+    },
+    {
+      "claim_id": "23b479b4-099a-4e60-b314-09e6b8e2c6b6",
+      "result_id": "97f53c91-b0de-436f-ad52-f6a35b027154"
+    },
+    {
+      "claim_id": "10ea35a4-01ec-4868-8a7c-3edce338c6e9",
+      "result_id": "97f53c91-b0de-436f-ad52-f6a35b027154"
+    },
+    {
+      "claim_id": "b1cb9541-57b2-4a3f-8fe1-acf8a8dc91de",
+      "result_id": "97f53c91-b0de-436f-ad52-f6a35b027154"
+    },
+    {
+      "claim_id": "8366e07b-0790-4229-9ad7-9f1f38a8d74c",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "164c775a-0ac2-4a1e-9cf2-0ce238db6e56",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "bc3396f4-b4c7-41cb-b820-f20474b53d9a",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "f2aa417a-5af8-4896-807f-39ad471a8122",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "6ca21f51-43db-4030-bb03-816118dfbe39",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "18e53037-1129-453d-9851-de495747ac62",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "e87ac66e-0d8a-4da1-8004-b0d7da8f0ebc",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "fba29275-c48d-4f6e-a617-2f9605032e12",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "731321b1-9e80-40dc-bb12-6095396410fb",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "2ce589c1-7a63-4bda-9444-81b9a9d9a13f",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "98f0b12f-af86-4dc8-9d2c-94bbf2a795d7",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "f2a8b4ea-d7ae-45e5-a7c0-c035b74d7455",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "ff7085e0-6bc9-401f-abb4-c576bda2ca0d",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "d5216fe5-3467-4456-8a3d-401ce9070003",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "d286883b-4675-4626-8f0e-358ceb7a0862",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "aa54dc82-8f0c-4327-b202-1a55dc9d991a",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "92ad1d70-29a5-4cb1-9db7-93f25a4f0d3f",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "89ac65c3-27f4-4d8f-9661-6a4b62dd61df",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "95d2c93a-5d1a-4dfe-b66e-48492e182906",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "f49da498-8765-43b3-a457-a7e5cf228763",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "facba519-85b9-46a5-90fd-c8cba2e54503",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "92ae557f-7574-4467-88bd-b7d997f50b72",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "635c2137-584e-4827-a3df-0f5964b4a046",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "2f16377c-19db-43b5-a43c-10f0f53cb503",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "175335ac-6a4f-4f5d-bc79-eeb6b3424c09",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "79452aa6-bf8d-41ff-852a-0818c064122f",
+      "result_id": "5f8ce729-559f-4c37-8fab-b7adc3c7fca1"
+    },
+    {
+      "claim_id": "af99ebdd-8c16-49d9-b6fd-188448ccf62c",
+      "result_id": "ea5d18be-6c7b-47ff-9d9d-0eef022f06a6"
+    },
+    {
+      "claim_id": "21c04573-244a-4352-942f-cf0ff34ca39a",
+      "result_id": "ea5d18be-6c7b-47ff-9d9d-0eef022f06a6"
+    },
+    {
+      "claim_id": "d01d9c2f-eed0-493b-93f1-4f059586e3d7",
+      "result_id": "ea5d18be-6c7b-47ff-9d9d-0eef022f06a6"
+    },
+    {
+      "claim_id": "e181f7d5-1015-4a97-8402-dda90330f89a",
+      "result_id": "ac32eecc-9e9d-45b8-bc1e-df35c10a3540"
+    },
+    {
+      "claim_id": "726e1ab9-2a72-40d7-9d06-300f0603ba13",
+      "result_id": "ac32eecc-9e9d-45b8-bc1e-df35c10a3540"
+    }
+  ],
+  "comparisons": []
+}

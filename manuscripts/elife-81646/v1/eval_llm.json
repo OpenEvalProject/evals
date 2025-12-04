@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C34",
+      "C35",
+      "C39",
+      "C40",
+      "C73"
+    ],
+    "result": "ABM simulations predict that weakly homodimerizing catenators (KD ~100 \u03bcM) can enhance nanomolar antibody binding avidity to picomolar levels in a density-dependent manner. For regular arrays of binding sites, 41-93 fold enhancements were predicted depending on connectivity, with the effect sensitively dependent on binding site density for random distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The ABM model makes several acknowledged simplifying assumptions (C104, C105) including uniform catenator density within spheres and fixed binding sites, which may not accurately reflect biological systems. The model lacks experimental validation of its quantitative predictions, and the authors acknowledge that molecular dynamics simulations would provide more accurate predictions (C106). While the qualitative trends are likely valid, the specific fold-enhancement values should be treated as approximations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "ABM simulations for randomly distributed binding sites showed dramatic density-dependent effects, with maximum fold enhancements ranging from 15-fold (\u03c1=1.47) to ~29,000-fold (\u03c1=58.8), where the higher density roughly corresponds to 1/200th of HER2 receptor density on overexpressing cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the simulations show clear density dependence (C74, C75), the extreme fold-enhancements at high density (C10) are model predictions without experimental validation. The comparison to HER2 receptor density (C76) relies on a citation but the simulation density is 200-fold lower, limiting direct biological relevance. The model's simplifying assumptions become more problematic at high densities where cooperative effects and steric constraints may be important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C77",
+      "C78"
+    ],
+    "result": "ABM simulations varying [catAb]/KD from 0.01 to 1.0 showed 85-900 fold avidity enhancement, suggesting broad applicability across KD values. However, varying antibody concentration alone (0.1-10 nM) produced less than 100-fold enhancement, indicating that catenator affinity is more important than antibody concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These simulation results (C41, C77, C78) provide clear parameter sensitivity analysis showing that the catenation effect depends more strongly on catenator homodimerization affinity than on antibody concentration (C42). This is internally consistent with the model's mechanism and helps define optimal design parameters. However, these remain computational predictions requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C33",
+      "C86"
+    ],
+    "result": "SAM-Trz(2m)/HetFc-SDF-1\u03b1 exhibited at least 110-fold higher binding avidity compared to Trastuzumab(N30A/H91A) (KD <0.01 nM vs 1.1 nM) in BLI experiments. The catenator-fused antibody showed similar association kinetics (ka ~2.9\u00d710\u2075 vs 1.9\u00d710\u2075 Ms\u207b\u00b9) but dramatically reduced dissociation (kd <1.0\u00d710\u207b\u2077 vs 2.2\u00d710\u207b\u2074 Ms\u207b\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The BLI data (C15-C18) consistently demonstrate enhanced avidity through reduced dissociation rates while maintaining similar association rates (C17, C86), which is consistent with the catenation mechanism (C33). The experiments were performed in triplicate and the kinetic parameters are clearly reported. The KD measurement is limited by instrumental sensitivity (<0.01 nM), so the actual enhancement may be greater than 110-fold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C87"
+    ],
+    "result": "SAM-glCV30/HetFc-SDF-1\u03b1 increased binding avidity by at least 130-fold compared to glCV30, with similar association and dissociation kinetics to the Trastuzumab pair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result (C19, C87) demonstrates reproducibility of the catenation effect across different antibody-antigen systems (anti-SARS-CoV-2 RBD vs anti-HER2), strengthening the generalizability of the approach. The similar kinetic behavior to the Trastuzumab system supports a common mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C88",
+      "C89"
+    ],
+    "result": "SAM-Trz(3m)/HetFc-SDF-1\u03b1 (L-mScarlet) with two catenator arms showed 304-fold enhanced avidity (KD 0.8 nM vs 243 nM for the triple mutant), while the single-arm control SAM-Trz(3m)/HetFc (L-mScarlet) showed no enhancement (KD 373 nM), supporting that avidity enhancement arises from catenation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a well-designed control experiment (C20-C22, C88) where the single catenator arm construct cannot form intermolecular catenation and shows no avidity enhancement (C22), directly supporting the catenation mechanism (C89). The triple mutant was specifically designed to avoid instrumental sensitivity limits (C20), allowing accurate KD measurement. This is strong evidence for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C90",
+      "C91"
+    ],
+    "result": "SAM-Obz(Y101L)/HetFc-SDF-1\u03b1 showed 234-fold enhanced binding avidity for CD20 (KD 0.13 nM vs 30.4 nM) with similar association but dramatically different dissociation kinetics, and bound SU-DHL5 cells much more effectively than the parent antibody, indicating catenation on cell surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Obinutuzumab results (C23-C27) extend the findings to a third antibody-antigen system and importantly demonstrate enhanced binding to actual cells (C27), not just immobilized antigens. The construct was monomeric in solution (C90), ruling out solution oligomerization. The inference of cell surface catenation (C91) is reasonable given the consistent kinetic behavior and enhanced cell binding. Flow cytometry provides functional validation beyond BLI.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The homodimeric glCV30-SDF-1\u03b1 construct showed at least 5120-fold enhanced binding avidity and ~15-fold lower IC50 (0.21 \u03bcg/ml) compared to glCV30 (3.22 \u03bcg/ml) in SARS-CoV-2 pseudovirus neutralization, with potency comparable to the affinity-matured CV30 (IC50 0.25 \u03bcg/ml).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the neutralization data (C29-C31, C98, C99) show impressive functional activity, the authors acknowledge this construct likely formed reversible oligomers in solution (C44, C81, C96), confounding interpretation. The extreme avidity enhancement (C28) and similar kinetics to dual-catenator constructs (C97) suggest oligomerization contributes significantly. The comparison to CV30 (C100) is useful but the mechanism is unclear. This demonstrates proof-of-concept for functional enhancement but doesn't cleanly validate the catenation-only mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C101"
+    ],
+    "result": "The homodimeric glCV30-SDF-1\u03b1 showed three size-exclusion chromatography fractions including a broad peak that was highly soluble (>200 \u03bcM) and likely in dynamic equilibrium between monomeric and oligomeric species, with avidity enhancement reflecting both catenation and reversible oligomerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The size-exclusion chromatography data (C93-C95) clearly show heterogeneous oligomerization. The authors' interpretation (C44, C96, C101) that both catenation and oligomerization contribute is reasonable given the data. The speculation about structural changes during purification (C45) is plausible but unproven. This honestly acknowledges a limitation of the homodimeric approach and motivates the heterodimeric design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The conceptual mechanism proposes that antibody catenation is induced by proximity effects on target surfaces where local catAb concentration increases due to antibody-antigen binding, leading to increased catenator homodimerization and enhanced effective binding avidity that depends on the degree of catenation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conceptual framework (C36-C37, C56-C60) is logically sound and supported by the experimental observations of reduced dissociation without enhanced association. The structural reasoning about preventing intramolecular homodimerization (C56) is valid given the 23 \u00c5 C-terminal separation (C3). The mechanism is consistent with all experimental results, though the quantitative relationship between catenation degree and avidity enhancement remains to be precisely determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The ABM model is based on three rules: (1) intrinsic antibody-antigen binding with relative likelihood [catAb]/KD, (2) catenation between adjacent complexes within reach length L with relative likelihood f(d)/(KD)catenator, and (3) restricted dissociation where catenated antibodies cannot dissociate. The model assumes uniform catenator sampling, excess antibody, and fixed binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The ABM rules (C61-C71) are clearly defined and mathematically formulated, but several assumptions are oversimplifications. The restricted dissociation rule (C69, C70) is supported by citation (C38) but is a strong assumption. The uniform sampling assumption (C66) and fixed binding sites ignore important biological dynamics. The model provides useful qualitative insights (C107) but quantitative predictions should be validated experimentally. The assumptions are acknowledged (C104, C105) but limit confidence in specific numerical predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C108"
+    ],
+    "result": "SDF-1\u03b1 (Mr = 8 kDa, KD = 150 \u03bcM) and SAM domain of SLy1 (Mr = 7.4 kDa, KD = 117 \u03bcM) were selected as catenators based on simulation predictions, both being small, weakly homodimerizing proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The catenator selection (C11, C12, C108) is well-justified by the simulation results and supported by literature citations. The KD values (~100-150 \u03bcM) fall within the range predicted by simulations to be effective. The small size minimizes steric issues. This represents rational design informed by computational predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Dual fusion of different catenators (SDF-1\u03b1 and SAM) to knobs-into-holes heterodimeric Fc obviated oligomerization problems while enabling catenation on target surfaces, though with potentially reduced efficiency. This design also enables generation of single-catenator controls that cannot catenate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The heterodimeric Fc strategy (C82-C84) is a clever solution to the oligomerization problem observed with homodimeric constructs. The purification of homogeneous heterodimers (C85) demonstrates technical feasibility despite incomplete heterodimer formation. The ability to generate matched controls (C84) is methodologically important. The prediction of reduced efficiency (C83) is reasonable but not quantitatively validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C112",
+      "C113"
+    ],
+    "result": "C-terminal Fc fusion should not affect Fc\u03b3 receptor or FcRn binding sites. The ideal catenator should prevent intramolecular homodimerization, exhibit fast association kinetics, and withstand low pH purification. Homodimeric IgGs should show equal or better catenation than heterodimeric constructs but require more robust catenators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inference about preserved Fc effector function (C46) is structurally reasonable given C-terminal fusion away from receptor binding sites. The design criteria for ideal catenators (C47) are well-justified by the experimental challenges encountered (oligomerization, purification issues). The prediction about homodimeric IgGs (C112, C113) is logical but remains to be experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C103",
+      "C111"
+    ],
+    "result": "Proposed applications include therapeutic antibodies against viruses, sandwich biosensors, detection of scarce biomarkers, targeted cancer therapy with reduced side effects due to density-dependent binding, and reduced toxicity of antibody-drug conjugates. The oligomerization observations suggest approaches for noncovalent antibody multimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "These are speculative applications (C49-C53, C103, C111) that, while logical extensions of the demonstrated mechanism, lack experimental validation. The cancer therapy application (C52) assumes differential antigen density between normal and cancer cells (C110) but this is not validated for the specific antibodies tested. The density-dependent selectivity is predicted but not demonstrated. These represent promising future directions requiring substantial additional work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The ABM model has acknowledged limitations including oversimplified catenator dynamics (uniform density assumption) and fixed binding sites that don't reflect antigen mobility on cell membranes. Advanced molecular dynamics simulations could provide more accurate predictions, but despite caveats, the simulations provided valuable insights into parameter ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors honestly acknowledge model limitations (C104, C105) with appropriate citations. The suggestion for improved modeling (C106) is reasonable. The balanced assessment (C107) that simulations provided valuable insights despite limitations is appropriate. This transparent discussion of model assumptions strengthens rather than weakens the overall work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C13",
+      "C14"
+    ],
+    "result": "Background information establishes IgG structure (homodimer of heterodimers with Fab and Fc regions, C-termini ~23 \u00c5 apart), therapeutic antibody requirements (KD <10 nM), and prior work showing irreversibly dimerized binders enhance binding. The parent antibodies used have KD values of 353-407 nM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This background information (C1-C5, C13-C14) is well-established knowledge supported by appropriate citations. The structural details (C3) are accurate and relevant to the design rationale. The parent antibody affinities (C13, C14) are properly cited and provide important context for the magnitude of enhancement achieved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Cell lines were validated as mycoplasma-negative and authenticated by STR profiling. Initial homodimeric constructs using (G4S)2 linkers showed enhanced binding but likely formed reversible oligomers, leading to the heterodimeric approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quality control measures (C54, C55) are appropriate and properly documented. The honest acknowledgment that initial constructs were problematic (C80, C81) and the pivot to heterodimeric designs demonstrates good scientific practice. The methodological details (C79) are clearly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C92",
+      "C109"
+    ],
+    "result": "The overall conclusion is that noncovalent antibody catenation on target surfaces greatly enhances antigen-binding avidity through drastically reduced dissociation rates when catenators are fused to antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion (C92, C109) is well-supported by the experimental data from multiple antibody-antigen systems showing consistent kinetic behavior (reduced kd, similar ka) and functional enhancement. The mechanism is validated by appropriate controls. While quantitative predictions from simulations remain uncertain, the qualitative phenomenon and mechanism are convincingly demonstrated.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Four structurally distinct translation inhibitors were characterized: anisomycin and lycorine function as translation elongation (TE) inhibitors, while 4E1RCat and salubrinal function as translation initiation (TI) inhibitors in C. elegans. All four reduce newly synthesized proteins by ~40-50%, though cycloheximide showed high variability and was excluded from main analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bi-cistronic reporter assay (C3, C4) provides clear mechanistic distinction between TI and TE inhibitors based on differential effects on cap-dependent vs. IRES-dependent translation. The SUnSET assay quantification (C1, C2, C67) demonstrates comparable reduction in protein synthesis across the selected inhibitors. The exclusion of cycloheximide due to variability (C64, C66) is appropriately justified by data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "All four translation inhibitors protect wild-type N2 animals from thermal stress at 36\u00b0C, but only TE inhibitors (anisomycin, lycorine) protect hsf-1(sy441) mutants, demonstrating that TI inhibitors require HSF-1 for thermal protection while TE inhibitors act through an HSF-1-independent mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The thermotolerance assays in both N2 and hsf-1(sy441) backgrounds (C5-C7) provide clear genetic separation of mechanisms. The biochemical validation showing reduced protein insolubility with anisomycin treatment (C8) supports the functional consequence. The inference about HSF-1 dependence (C9, C10) is well-supported by the differential genetic requirements, though the exact molecular mechanism remains undefined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "TE inhibitors (anisomycin, lycorine) significantly reduce heat shock-induced PolyQ aggregation in a time-dependent manner, while TI inhibitors show minimal (4E1RCat) or no effect (salubrinal). The TE inhibitors reduce the number of aggregates but do not alter aggregation kinetics (onset, rate, or final size).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The live imaging quantification (C13-C15) provides robust data with appropriate controls. The time-dependence observation (C17) and lack of effect when treatment starts post-heat shock (C18) support a preventive rather than remedial mechanism. The kinetic analysis (C16) adds mechanistic insight. However, C18 lacks shown data ('not shown'), which is a minor weakness but doesn't undermine the overall conclusion given consistency with other results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "TE inhibitors rescue proteotoxicity from proteasome dysfunction (bortezomib treatment) in hsf-1(sy441) and PolyQ backgrounds, including rescue of the sma phenotype, while TI inhibitors exacerbate toxicity. This correlates with differential effects on proteasome activity: TI inhibitors reduce proteasome activity in N2 but not further in hsf-1 mutants, while TE inhibitors have no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The survival assays (C19-C22) and morphological rescue data (C23-C26) are well-documented with quantification. The proteasome activity measurements (C27-C30) provide a mechanistic explanation for the opposing effects. The finding that hsf-1 mutants already have low proteasome activity (C29) that isn't further reduced by TI inhibitors (C30) is internally consistent. However, the mechanistic link between TI inhibition and reduced proteasome activity could benefit from additional investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "TI inhibitors (4E1RCat, salubrinal) dose-dependently extend lifespan in wild-type N2 animals but not in hsf-1(sy441) mutants, while TE inhibitors (anisomycin, lycorine, cycloheximide) show minimal lifespan extension in N2 but significantly extend lifespan (~20%) in hsf-1(sy441) mutants. This differential effect occurs despite all inhibitors reducing protein synthesis to similar extents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lifespan data (C31, C32, C34, C36, C37) are comprehensive with appropriate statistical analysis. The key observation that equivalent reductions in protein synthesis yield different lifespan outcomes (C33) strongly supports that mechanism matters beyond simple reduction. The consistency with prior genetic studies (C35) strengthens confidence. The reciprocal pattern (TI extends N2 but not hsf-1; TE extends hsf-1 but not N2) is striking and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Only TI inhibitors that extend lifespan reduce age-associated protein aggregation in N2 animals (measured as SDS-insoluble aggregates at day 8), while TE inhibitors fail to reduce age-associated aggregation despite protecting from acute proteotoxic stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequential detergent extraction data (C38, C39) clearly distinguish between TI and TE inhibitor effects on aging-related aggregation. This result is important because it demonstrates that protection from acute stress (which TE inhibitors provide) does not necessarily translate to protection from chronic age-related proteostasis decline. The experimental design appropriately controls for protein synthesis reduction levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "TI inhibitors paradoxically increase (1.5-2 fold) the concentration of newly synthesized proteins in hsf-1(sy441) mutants while reducing it in wild-type N2 animals. This effect is replicated by RNAi knockdown of the TI inhibitor target eIF4G/ifg-1, confirming on-target action, and is not due to altered puromycin uptake or HSR activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the most surprising and important mechanistic finding. The SUnSET data (C40, C41) are clear and quantified. The food intake control (C42) rules out a trivial explanation. The lack of HSR activation (C43) is important negative data. The genetic validation with ifg-1 RNAi (C44, C45) strongly supports that this is an on-target effect rather than off-target toxicity. This result fundamentally challenges the simple model that TI inhibition reduces protein synthesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "4E1RCat extends lifespan in wild-type N2 animals but not in ifg-1(cxTi9279) mutants, demonstrating that lifespan extension occurs through on-target inhibition of eIF4G/ifg-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic epistasis experiment (C46, C47) provides strong evidence for on-target action. The lack of lifespan extension in ifg-1 mutants (C47) rules out off-target effects as the primary mechanism for longevity. This is a critical control that strengthens confidence in all other 4E1RCat results. The inference (C48) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C57",
+      "C59",
+      "C63"
+    ],
+    "result": "HSF-1 is required for the translation initiation machinery to properly control protein synthesis levels. In the absence of functional HSF-1, inhibition of eIF4G/ifg-1 fails to reduce protein synthesis and instead increases it, explaining why TI inhibitors lose their beneficial effects in hsf-1 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic model (C49, C57, C59) is well-supported by the convergent evidence from pharmacological inhibition (C41) and genetic knockdown (C45). The explanation for loss of beneficial effects (C50) logically follows from the inability to reduce protein synthesis. The connection to prior literature (C63) provides additional support. However, the exact molecular mechanism of HSF-1/TI machinery cooperation remains speculative and would benefit from further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Inhibition of translation elongation rescues proteostasis in animals with pre-existing proteotoxicity (compromised HSR, reduced proteasome activity, aggregation-prone proteins), while inhibition of translation initiation is ineffective or detrimental for pre-existing proteotoxicity but effective at preventing emerging age-related proteotoxicity. These mechanisms can be genetically separated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C51-C53) accurately synthesize the experimental findings from multiple assays (heat stress, proteasome dysfunction, PolyQ aggregation, aging). The distinction between 'rescue' vs. 'prevention' is well-supported by the data patterns. The genetic separation is demonstrated through the differential HSF-1 requirements. These are appropriate high-level conclusions from the body of work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Lowering newly synthesized protein concentration is necessary but not sufficient for all beneficial effects: it is necessary for TI inhibitor benefits (as shown by loss of effect when protein synthesis increases in hsf-1 mutants), sufficient for protection from acute proteotoxic stress (as shown by TE inhibitor effects), but insufficient for lifespan extension in wild-type animals, which requires selective translation enabled by TI inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These mechanistic inferences (C60-C62) logically follow from the experimental data. The necessity argument (C60) is supported by the correlation between inability to reduce protein synthesis and loss of benefits in hsf-1 mutants. The sufficiency for acute stress but not lifespan (C61) is demonstrated by TE inhibitor effects. The requirement for selective translation for longevity (C62) is a reasonable inference from the TI-specific lifespan extension, though direct evidence of selective translation would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The enhanced toxicity of combining TI inhibitors with bortezomib likely results from reduced expression of HSP90/daf-21 and HSP70/hsp-1 (whose translation depends on eIF4G/ifg-1) combined with independent reductions in proteasome activity by both treatments, demonstrating that long-term TI or TE inhibition differentially affects proteasomal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C54-C56) are explicitly speculative ('likely to be the result'). While the speculation is reasonable and based on prior knowledge about HSP translation dependence and observed proteasome activity data, direct evidence for the proposed mechanism is lacking. The authors appropriately present this as speculation rather than established fact. Additional experiments measuring HSP levels under these conditions would be needed to support this model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Selective translation can only occur if translation initiation itself is inhibited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This logical inference (C58) follows from the mechanism of selective translation, where differential mRNA features (e.g., 5' UTR structure, IRES elements) allow some mRNAs to be preferentially translated when initiation is limiting. This is consistent with established models in the field and the experimental observations that only TI inhibitors enable certain beneficial effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "The HSF-1 pathway not only acts as a downstream target of translation but also directly cooperates with the translation initiation machinery to control newly synthesized protein concentration and restore proteostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion (C80) appropriately synthesizes the key finding that HSF-1 is required for TI machinery to reduce protein synthesis. The bidirectional relationship (HSF-1 as both upstream and downstream of translation) is well-supported by the data, though the exact molecular mechanism of 'cooperation' remains to be elucidated. This represents a conceptual advance in understanding the relationship between these pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The manuscript provides appropriate background context on proteostasis, prior work on translation and protein aggregation, the selective translation model, the reduced folding load model, and identifies gaps in previous studies that didn't control for the extent of protein synthesis reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C68-C85) are appropriately supported by citations and represent accurate summaries of prior work and established concepts. The identification of the gap in previous studies (C79) provides good justification for the current work's experimental design. The citations appear appropriate and the characterization of prior models is fair.",
+    "result_type": "MINOR"
+  }
+]

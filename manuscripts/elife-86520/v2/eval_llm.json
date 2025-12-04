@@ -1,0 +1,170 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Biphasic dose-responses are widely encountered in biological systems at all levels, particularly in cell signaling and post-translational modification systems, where they serve as safeguards against overactivation or overexpression. These responses have been documented in key signaling pathways (Ras, PI3K/Akt, MAPK/Erk, p53) and specific regulatory contexts, and provide functional advantages including built-in attenuation mechanisms and optimal activation zones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 collectively establish the widespread occurrence and functional significance of biphasic responses through extensive citation of prior experimental work (C7-C12) and established knowledge in the field (C1-C6, C13). The claims are well-supported by literature references and represent accepted knowledge about biphasic responses in biological systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The simple covalent modification cycle (M0) cannot exhibit biphasic responses, but adding a protein-protein interaction (dead-end complex formation between modified substrate and kinase, model M1) enables enzyme biphasic responses for any choice of intrinsic kinetic parameters, though substrate biphasic responses remain impossible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 are supported by analytical work presented in Supplementary file 1 and computational bifurcation analysis (Figure 2B). The analytical proofs establish both the impossibility of biphasic responses in M0 and the conditions enabling enzyme biphasic responses in M1, with explicit characterization that this occurs across all kinetic parameter space.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "The double site phosphorylation (DSP) system with common kinase and common phosphatase (M2) exhibits both substrate and enzyme biphasic responses. Substrate biphasic responses are guaranteed for any intrinsic kinetic parameters, while enzyme biphasic responses require specific kinetic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 are supported by computational bifurcation analysis (Figure 2C), analytical work establishing parameter-independent substrate biphasic responses, and prior work (Suwanmajo and Krishnan, 2013). The analytical characterization provides necessary and sufficient conditions for the behaviors observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "In DSP systems, enzyme specificity affects biphasic response capacity: common kinase with separate phosphatases (M3) enables only substrate biphasic responses (guaranteed for any kinetic parameters); separate kinases with common phosphatase (M4) enables only enzyme biphasic responses (with kinetic constraints, only for second kinase variation); separate kinases and phosphatases (M5) precludes all biphasic responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 are supported by computational bifurcation analysis (Figures 2D, 2E) and analytical work in Supplementary file 1, section 3. The results systematically demonstrate how enzyme sharing patterns determine biphasic response capacity, with explicit analytical proofs for impossibility results and parameter characterizations for possible behaviors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "In two-tier enzymatic cascades, separate phosphatases (M6a) preclude all biphasic responses, while common phosphatases (M6) enable substrate biphasic responses only in the second-tier substrate, with first-tier substrate and enzyme biphasic responses remaining impossible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by analytical work (Supplementary file 1, section 4) and computational bifurcation analysis (Figure 2G). The analytical proofs establish both impossibility results and the specific conditions under which second-tier substrate biphasic responses occur.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Coupled covalent modification cycles with common kinase and common phosphatase (M7) can exhibit substrate biphasic responses in one (but not both) modification cycles, guaranteed for some parameter values, but cannot exhibit enzyme biphasic responses. Separate enzymes (M7a, M7b) preclude substrate biphasic responses entirely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by computational bifurcation analysis (Figure 2I) and analytical work (Supplementary file 1, section 4). The analytical work establishes the guaranteed existence of substrate biphasic responses in one cycle and provides explicit criteria determining which cycle exhibits the behavior, while proving impossibility with separate enzymes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Biphasic signal regulation of a covalent modification cycle can convert a saturated response into a biphasic response with prolonged homeostatic regions, demonstrating how simple network considerations and biphasic interactions can generate complex signaling behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is supported by computational analysis of model N0, demonstrating the transformation of response characteristics through biphasic regulation. The result is clearly shown through bifurcation analysis, though the mechanistic explanation could benefit from more detailed analytical characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Biphasic interactions fundamentally alter network motif behavior: in incoherent feedforward networks, they can destroy expected biphasic responses or create multiphasic responses; in positive feedback motifs, they can destroy multistability; in negative feedback motifs, they can erode homeostasis and enable multistability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by computational analysis shown in Figures 3D-F and analytical work in Supplementary file 1, section 5. The results demonstrate how biphasic interactions can completely subvert expected network behavior, with analytical proofs establishing conditions for these alterations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The Erk pathway exhibits both substrate and enzyme biphasic responses in doubly phosphorylated Erk (pYpTErk), with both responses possible simultaneously for the same kinetic parameters. Substrate biphasic responses are guaranteed to exist for some total amounts of Mek and phosphatase, irrespective of intrinsic kinetic parameter values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by computational bifurcation analysis (Figures 4A-C) and analytical work establishing parameter-independent substrate biphasic responses. The demonstration of simultaneous biphasic responses and the analytical guarantee of substrate biphasic responses across kinetic parameter space represent strong evidence, though the sufficient (but not necessary) condition for enzyme biphasic responses indicates incomplete characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Ubiquitous biochemical building blocks intrinsically exhibit biphasic behaviors arising from key ingredients: enzyme sharing (common in cellular networks due to kinase-phosphatase imbalance) and sequestration of enzymes/substrates in complexes. In multisite modification systems, kinase commonality promotes substrate biphasic responses while phosphatase commonality promotes enzyme biphasic responses, with both enabling dual biphasic capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 represent synthesis conclusions supported by the collective analytical and computational results across models M0-M7. The mechanistic interpretations (C43-C46) are well-grounded in the systematic analysis of different enzyme-sharing architectures, with C42 supported by citation. These represent valid generalizations from the detailed results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Biphasic responses at the network level reveal that biphasic interactions between nodes can significantly alter network behavior, potentially mimicking different network structures. Biphasic responses from different sources (network topology vs. substrate modification) may reinforce or cancel each other, requiring careful systems-level analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by the network-level computational analysis (models N0-N5, Figures 3A-F) demonstrating how biphasic interactions alter expected motif behaviors. The results show concrete examples of reinforcement, cancellation, and generation of unexpected behaviors, validating these synthesis conclusions.",
+    "result_type": "MAJOR"
+  }
+]

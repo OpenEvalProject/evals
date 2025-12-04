@@ -1,0 +1,357 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C44",
+      "C45"
+    ],
+    "result": "The motor system combines different coordinate system representations (Cartesian, joint, object-based) based on their reliability, with weights determined by how much neural noise affects force execution in each representation. The Re-Dyn mechanism calculates these weights using inverse variance of noise-corrupted force predictions rather than fitting them to data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C13-C15, C44-C45 establish the core theoretical framework and are supported by experimental data from four experiments (C16-C40) showing that weighted combinations predict force compensation patterns better than individual coordinate systems. The Re-Dyn model outperforms alternative models (C38-C40) and explains previous conflicting results (C41-C43).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "In Experiment 1, participants adapted to a scaled curl force field and showed leftward shifts in force compensation curves in test workspaces (-23.0\u00b14.8\u00b0 for workspace 1, -6.3\u00b14.8\u00b0 for workspace 2). Individual coordinate systems could not predict these shifts, but the Re-Dyn model accurately predicted the patterns using only amplitude scaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 provide experimental measurements with quantified shifts and standard deviations. C22-C24 demonstrate that Re-Dyn predictions match experimental data without fitting parameters (except amplitude). The convergence of experimental observations and model predictions with minimal free parameters strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "In Experiment 2, participants showed rightward shifts in force compensation curves (34.5\u00b11.2\u00b0 for workspace 1, 15.4\u00b14.4\u00b0 for workspace 2), with different weight patterns compared to Experiment 1 reflecting changes in noise sensitivity due to different arm configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 provide quantified experimental measurements. C28 demonstrates that the Re-Dyn model predicts different weights for different arm configurations, supporting the reliability-based framework. The systematic variation in shifts across workspaces and experiments supports the model's predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "In Experiment 3, despite no change in arm posture between training and test workspaces, participants showed rightward shifts in force compensation (17\u00b15.7\u00b0 for workspace 1, 4.5\u00b13.6\u00b0 for workspace 2). Cartesian and joint-based representations predicted no shift, while object-based representation predicted the observed shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 provide experimental data showing shifts despite constant arm configuration. C33 establishes theoretical predictions. The experimental results contradict Cartesian/joint predictions but align with object-based predictions, supporting the multi-representation framework. However, the authors note they could not fully capture the amplitude shift in workspace 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "In Experiment 4, with constant hand orientation but varying arm configuration, participants showed small shifts in force compensation (-3.7\u00b13.1\u00b0 for workspace 1, 6.8\u00b11.8\u00b0 for workspace 2). Cartesian and object-based representations were more dominant than joint-based representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 provide experimental measurements. C37 shows Re-Dyn model predictions match the dominance of Cartesian/object-based representations. The small shifts and weight patterns are consistent with the experimental design where hand orientation was constant, supporting the reliability-based weighting framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The Re-Dyn model had lower prediction error and better phase shift prediction compared to energy-based and smoothness-based alternative models across all eight test workspaces. BIC analysis showed Re-Dyn was superior even when accounting for degrees of freedom.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 provide quantitative comparisons across multiple metrics (RMSE, phase shift, BIC) and all test conditions. The Re-Dyn model outperforms alternatives including a fitted optimal model when penalized for complexity. Statistical rigor through BIC analysis strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C3"
+    ],
+    "result": "The Re-Dyn model can explain results from Shadmehr and Mussa-Ivaldi 1994, where joint and object-based coordinate systems predicted similar force patterns. The original study could not differentiate between these representations, explaining why they concluded joint-based representation was used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 demonstrate through simulation that Re-Dyn can retrospectively explain previous experimental results. C3 establishes this as a general capability. The analysis reveals that experimental design limitations prevented differentiation between coordinate systems, providing a parsimonious explanation for conflicting literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Previous studies have provided inconsistent views of dynamics representation, with different studies supporting Cartesian-based, joint-based, object-based, or mixed representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 accurately summarize the state of the literature with appropriate citations. This establishes the motivation for the current work and is supported by the citations provided. The characterization of inconsistency is validated by the subsequent demonstration that Re-Dyn can explain these disparate findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "There are three main reference frames for representing dynamic mapping: Cartesian (forces as vectors in external coordinates), joint-based (forces as joint torques), and object-based (forces relative to hand/object orientation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 describe established theoretical frameworks in motor control with appropriate citations. These are well-accepted coordinate systems in the field and form the basis for the experimental tests. The characterization is consistent with prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "Signal-dependent noise could change the weighting between coordinate systems as a function of movement direction, as different reference frames predict different force levels for different directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C46 is theoretical speculation about an alternative noise model not tested in the experiments. While the reasoning is sound, the authors explicitly used additive noise rather than signal-dependent noise in their simulations. This remains an untested hypothesis requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The cerebellum has been proposed to host both forward and inverse internal models, and changes in premotor cortex activity are evident during force field adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 accurately cite previous neurophysiological findings. These are well-established results in the literature and provide neural context for the behavioral findings, though they are not directly tested in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Force representation relies on all three coordinate systems (Cartesian, joint, object) with specific weights that change between generalization scenarios, as combinations with fewer coordinate systems cannot explain all results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by the experimental results across all four experiments and the model comparison analyses. The authors demonstrate that single or two-coordinate system models fail to capture the full pattern of results, while the three-system Re-Dyn model succeeds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Thirty-two right-handed participants (8 per experiment, 14 females, aged 22-35) participated after providing informed consent. The study was approved by the Ethics Committee of the Medical Faculty of the Technical University of Munich.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 provide standard methodological information about participants and ethical approval. The sample size of 8 per experiment is modest but typical for motor control studies. Ethical approval is documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The experimental setup used a vBOT robotic device recording at 1 kHz with force transducer measurements, air sled support for frictionless movement, and specific force channel parameters (4000 N/m stiffness, 2 Ns/m damping). Movements were between 16 equally spaced locations on a 10 cm diameter circle at 50 cm/s peak speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C62 provide detailed methodological specifications. The equipment and parameters are standard for motor control research. The force channel method is well-established. Wrist fixation approach is justified by citations showing negligible effects (C55-C56).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The four experiments used different workspace configurations with specific shoulder and elbow joint angles. Experiment 3 used a virtual pole to maintain constant arm posture while varying workspace location. Experiment 4 kept hand orientation constant while varying arm configuration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C73 provide precise experimental design specifications. The systematic variation of workspace configurations across experiments allows testing of different coordinate system predictions. The designs are appropriate for dissociating the contributions of different reference frames.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Maximum perpendicular error measured kinematic perturbation from straight-line movement. Force compensation was calculated as regression slope between perfect compensation signal and recorded forces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 describe standard analysis methods in motor adaptation research with appropriate citation (C75). These are well-validated measures for quantifying adaptation and generalization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "For Cartesian representation, forces are invariant to arm orientation. For joint-based representation, generalized forces differ when arm configuration changes. For object-based representation, forces are calculated according to object/hand orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 describe the theoretical properties of each coordinate system that generate distinct predictions for generalization. These are mathematically derived properties that form the basis for experimental tests.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C84",
+      "C85"
+    ],
+    "result": "The Re-Dyn model defined reliability as susceptibility to noise corruption. Additive noise was drawn from normal distribution with 1\u00b0 variance for joint/object systems, corresponding to ~1.7 mm variance in Cartesian coordinates for 10 cm radius movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C84-C85 describe the noise modeling approach. The calculation converting angular to linear variance (C85) is mathematically correct using arc length formula. The choice to equate noise levels across coordinate systems is reasonable for comparison, though the assumption of additive rather than signal-dependent noise is a simplification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "A decay factor was used to match amplitude between predicted and experimental force compensation profiles, accounting for force magnitude reduction with distance from training workspace.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 describes the single free parameter in the Re-Dyn model. This is justified by previous findings (C21) showing amplitude decay with workspace distance. The approach maintains relative weights while scaling overall magnitude, which is appropriate for testing phase shift predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Alternative models were tested: energy-based (weighting by inverse mean force magnitude) and smoothness-based (weighting by inverse third derivative of force profile).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 describe alternative models based on established motor control principles. The implementations are appropriate for testing these hypotheses. These models serve as important controls showing that Re-Dyn's superiority is not simply due to having a computational model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "The optimal fitted model constrained weights to positive values summing to \u22641.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 describes reasonable constraints for the fitted model. The constraint that weights sum to \u22641 allows for amplitude decay while maintaining interpretability. This provides an upper bound for model performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "To predict weights for previous studies, simulations used the same methods but with workspace locations and force field types from each cited study, using arm lengths from Shadmehr and Mussa-Ivaldi 1994 (33 cm upper arm, 34 cm forearm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 describe the retrospective analysis methodology. The approach appropriately adapts the Re-Dyn framework to previous experimental designs, allowing direct comparison with published results. This demonstrates the model's generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Decrease in generalized force magnitude may be due to distance between training and test workspaces, based on previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 cites previous work (Gandolfo et al., 1996; Berniker et al., 2014) showing amplitude decay with workspace distance. This justifies the use of a decay factor in the Re-Dyn model and is a well-established phenomenon in motor generalization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "Different patterns of weights were found in Experiment 2 compared to Experiment 1, representing changes in noise sensitivity due to different arm configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 is supported by the Re-Dyn model predictions showing different weight patterns across experiments. This demonstrates that the model appropriately adapts to different arm configurations, supporting the reliability-based framework. The systematic variation validates the model's core mechanism.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Cas forms clusters that precede vinculin and integrin \u03b21 recruitment during focal adhesion assembly. Initial Cas clusters contain inactive (bent-closed) integrin \u03b21, and Cas clustering precedes vinculin recruitment by approximately 45-60 seconds in spreading MCF10A and HeLa cells. Integrin \u03b21 clusters approximately one minute after Cas, at roughly the same time as vinculin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by multiple lines of experimental evidence including time-lapse TIRF microscopy (C38-C40), quantitative kinetic analysis with statistical validation (C42-C46), and conformation-specific antibody staining (C4). The temporal sequence is consistently demonstrated across different cell types (MCF10A and HeLa) and experimental conditions (spreading and migration). The use of endogenously tagged proteins (C36, C37) and multiple independent measurements strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Crk is rapidly recruited to Cas clusters within approximately 6 seconds, and this recruitment requires SFK activity. This indicates that Cas is phosphorylated immediately upon clustering when integrin and vinculin density is still low.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rapid Crk recruitment (C53, C54) is demonstrated through time-lapse imaging of endogenously tagged proteins. The requirement for SFK activity is shown through pharmacological inhibition with eCF506 (C55), which significantly delays Crk recruitment. The inference that Cas is activated immediately (C56) is well-supported by the known requirement of Cas phosphorylation for Crk binding and the rapid kinetics observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Spatial analysis reveals a two-zone organization within Cas-vinculin clusters: an outer zone (~0.5-0.75 \u03bcm from edge) enriched in phosphorylated Cas, CrkL, inactive integrin \u03b21, and SFK-phosphorylated FAK; and an inner zone (~1.5 \u03bcm from edge) enriched in vinculin, talin, kindlin, paxillin, active integrin \u03b21, and F-actin. This spatial pattern suggests a temporal progression from nascent adhesions with inactive integrins to mature focal adhesions with active integrins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial distribution is rigorously characterized using immunofluorescence with multiple antibodies including conformation-specific integrin antibodies (C67-C69) and phospho-specific antibodies (C60, C62). The use of both live imaging (C57) and fixed cell analysis (C59) provides complementary evidence. The inference of temporal progression from spatial patterns (C71, C73) is reasonable given the established dynamics from time-lapse experiments, though the authors appropriately note potential caveats regarding differential antibody access.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Biochemical fractionation shows that phosphorylated Cas (pY410, pY249) and pY861 FAK are highly enriched (~73%) in the adhesome fraction relative to their total protein levels (~25%), indicating that these phosphorylations occur locally within adhesions and are rapidly lost upon dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The adhesome fractionation approach with cross-linking is well-established (C75-C77 cite appropriate methods). The differential enrichment of phosphorylated versus total proteins (C78) provides strong evidence for local phosphorylation. However, the inference about rapid loss upon dissociation (C79) is reasonable but indirect - it would be strengthened by direct kinetic measurements of dephosphorylation rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Cas is required for cell spreading and focal adhesion assembly, and this requirement depends on the YxxP phosphorylation sites in the substrate domain. Cas depletion inhibits spreading, adhesion formation, and recruitment of vinculin, talin, kindlin, and FAK. Vinculin depletion does not affect Cas clustering, indicating Cas acts upstream of vinculin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The requirement for Cas is demonstrated through siRNA knockdown with appropriate controls (C81-C84). The directional relationship between Cas and vinculin is established through reciprocal depletion experiments (C85, C86). The rescue experiments with wildtype and mutant Cas (C87, C88) provide strong evidence for the specific requirement of the phosphorylation sites. The use of mouse Cas to rescue human Cas knockdown is an appropriate control for off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Cas cluster formation requires Cas, Crk/CrkL, SFKs (specifically Yes1), and Rac1, but not vinculin, FAK, talin1, or kindlin2. Yes1 has a specific role in Cas phosphorylation and adhesion assembly that is not shared by Src or Fyn. Talin1 and kindlin2 are required for vinculin recruitment downstream of Cas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The requirements are systematically tested through siRNA knockdown and pharmacological inhibition (C89-C94). The specific requirement for Yes1 among SFKs (C91) is a notable finding, though the mechanism is not fully elucidated. The hierarchical relationship (C95) is well-supported by the differential effects of depleting different components. However, the functional redundancy between Crk and CrkL (C89) suggests some complexity in the pathway that may require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Cas phosphorylation is required for both inside-out and outside-in integrin activation. Mn2+-induced integrin activation (outside-in) cannot rescue adhesion assembly in Cas-depleted cells, and this rescue requires the YxxP phosphorylation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experiments with Mn2+ provide a clever test of outside-in signaling (C96). The rescue with wildtype but not mutant Cas (C97) controls for off-target effects and confirms the requirement for phosphorylation sites. However, the conclusion about Cas being 'rate limiting' (C98) may be overstated - the data show Cas is required, but do not definitively establish it as the rate-limiting step versus being one of several required components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Cas regulates focal adhesion assembly on both collagen I and fibronectin, in both epithelial cells and fibroblasts. On collagen I, Cas regulates \u03b21-dependent adhesions (specifically \u03b12\u03b21), while on fibronectin, Cas regulates both \u03b21 (specifically \u03b15\u03b21) and \u03b1v-dependent adhesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The generality of Cas function is demonstrated across different ECM substrates (C99-C101) and cell types (C102). The integrin specificity is established through siRNA knockdown (C103-C105) and blocking antibodies (C106). The inference about specific integrin heterodimers (C107) is well-supported by the combination of knockdown and blocking experiments, though direct biochemical evidence for Cas-integrin interactions would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Rac1 is activated during cell adhesion and is required for cell spreading and vinculin recruitment but not Cas clustering. Rac1 activation requires Cas and Yes1, consistent with activation through the SFK-Cas-Crk/CrkL pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Rac1 activity is measured using a FRET biosensor (C108), providing direct evidence of activation. The requirement for Rac1 is shown through pharmacological inhibition (C109), and the upstream requirement for Cas and Yes1 is demonstrated through depletion experiments (C110). The pathway inference (C111) is well-supported by the data and consistent with prior literature. However, the specific Rac1 GEF involved is not definitively identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "There is positive feedback from Rac1 to Cas through reactive oxygen species (ROS). Active Rac1 requires Cas for inducing spreading, and ROS inhibition blocks Rac1 activity and delays vinculin recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutual requirement of Cas and Rac1 (C112) suggests positive feedback, though the exact mechanism is not fully elucidated. The role of ROS is demonstrated through pharmacological inhibition with DPI (C114, C115). However, the connection between ROS and Cas phosphorylation is inferred rather than directly demonstrated - direct measurements of Cas phosphorylation levels in response to ROS modulation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Negative feedback through the CRL5SOCS6 ubiquitin-proteasome system opposes positive feedback in Cas signaling. Inhibiting CRL5SOCS6 accelerates vinculin recruitment to Cas clusters. The model proposes that nascent clusters grow through positive feedback involving SFKs, Cas, Crk/CrkL, Rac1, and ROS, opposed by CRL5SOCS6-mediated negative feedback, followed by integrin activation and recruitment of mechanosensing proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The role of CRL5SOCS6 is demonstrated through both siRNA knockdown and pharmacological inhibition (C116). The proposed model (C117, C118) integrates multiple lines of evidence from the study. However, the model is largely based on correlative and loss-of-function data - direct demonstration of the feedback loops (e.g., through gain-of-function experiments or direct measurement of signaling dynamics) would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "A two-step model for focal adhesion assembly is proposed: Step 1 involves clustering of phosphorylated Cas, Crk/CrkL, and inactive integrin \u03b21, with growth through positive feedback involving SFKs, Rac1, and ROS, opposed by CRL5SOCS6. Step 2 involves integrin activation and accumulation of mechanosensing proteins (talin, kindlin, vinculin), with declining Cas levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The two-step model (C122-C131) is well-supported by the temporal and spatial data presented throughout the study. The model integrates multiple experimental observations including protein recruitment kinetics, spatial distributions, integrin conformational states, and perturbation experiments. However, the transition mechanism between steps is not fully elucidated - the speculation about critical cluster size (C127) is reasonable but not directly tested. The model represents a significant conceptual advance but would benefit from additional mechanistic details about the step 1 to step 2 transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The two-step model applies to both epithelial cells on collagen and fibroblasts on fibronectin, reconciling apparent discrepancies with previous studies that used different cell types and ECM substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the authors demonstrate that Cas is required in fibroblasts on fibronectin (C137, C138), the evidence that the full two-step model applies to this system is described as 'preliminary' (C136). The speculation about why previous studies did not observe Cas requirements (C139) is reasonable but not directly tested. More comprehensive characterization of the temporal and spatial dynamics in fibroblasts on fibronectin would be needed to definitively establish the generality of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Yes1's preference for membrane microdomains (lipid rafts) and higher affinity for integrin \u03b21 cytoplasmic tails may explain its specific role in Cas-dependent integrin clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is largely speculation (C144) based on prior literature about Yes1 properties (C141, C142) and the poorly understood role of lipid rafts in integrin clustering (C143). While the hypothesis is plausible and consistent with the observed Yes1 requirement, it is not directly tested in this study. Experiments examining lipid raft involvement or direct Yes1-integrin interactions would be needed to support this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "SFK-Cas-Crk/CrkL-Rac1 signaling initiates both focal adhesion formation and cell spreading through positive feedback involving Rac1-dependent ROS generation. This positive feedback may amplify and spread the signal, allowing initial integrin-Cas clusters to grow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dual role in adhesion and spreading is demonstrated (C145, C146). The ROS-mediated positive feedback mechanism (C147) is supported by pharmacological inhibition experiments and is consistent with prior literature on ROS activation of SFKs. However, the proposed function of positive feedback (C148) is somewhat speculative - while plausible, direct demonstration of signal amplification and spreading would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The loss of Cas from clusters may be important for locally decreasing Rac1 activity to allow force generation and focal adhesion maturation, consistent with prior observations that Rac1-induced focal complexes only mature when Rac1 is inhibited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is largely speculation (C152) based on the observed Cas dynamics and prior literature (C150, C151). While the hypothesis is consistent with the data and prior observations, it is not directly tested. The limitation acknowledged by the authors (C149) about difficulty identifying exact mechanisms due to positive feedback is appropriate. Direct measurements of local Rac1 activity dynamics during adhesion maturation would be needed to test this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Phospho-Cas may form protein condensates or networks similar to those observed in vitro, potentially contributing to integrin clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is speculation (C155) based on recent in vitro studies (C153, C154). While the hypothesis is plausible and provides a potential molecular mechanism for Cas-mediated integrin clustering, there is no direct evidence in this study for condensate formation in cells. Experiments using approaches to detect phase separation or condensate formation in vivo would be needed to test this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The mechanism by which Cas associates with integrins in initial clusters differs from the established SH3/FAT domain-mediated localization to mature focal adhesions. Potential mechanisms include Yes1-mediated bridging or membrane microdomain-mediated co-clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation that FAK, vinculin, and paxillin are low in initial Cas clusters (C158) suggests an alternative localization mechanism, which is a valid inference. However, the proposed mechanisms (C159, C160) are speculative and not directly tested. The prior literature on Cas localization (C156, C157) establishes the SH3/FAT domain mechanism for mature adhesions, but the mechanism for initial clustering remains unclear and would require additional investigation.",
+    "result_type": "MINOR"
+  }
+]

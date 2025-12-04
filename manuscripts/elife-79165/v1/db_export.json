@@ -1,0 +1,1888 @@
+{
+  "submission": {
+    "id": "849f38b0-07f7-419b-b790-a709e8fa63a8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T02:35:08.743415Z",
+    "updated_at": "2025-12-04T02:35:08.743415Z"
+  },
+  "content": [
+    {
+      "id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "submission_id": "849f38b0-07f7-419b-b790-a709e8fa63a8",
+      "content_type": "manuscript",
+      "content_text": "# Inhibitory IL-10-producing CD4+ T cells are T-bet-dependent and facilitate cytomegalovirus persistence via coexpression of arginase-1\n\n## Authors\n\n- Mathew Clement<sup>1</sup> ([ORCID: 0000-0002-9280-5281](https://orcid.org/0000-0002-9280-5281)) \u2020\n- Kristin Ladell<sup>1</sup>\n- Kelly L Miners<sup>1</sup>\n- Morgan Marsden<sup>1</sup>\n- Lucy Chapman<sup>1</sup>\n- Anna Cardus Figueras<sup>1</sup>\n- Jake Scott<sup>1</sup>\n- Robert Andrews<sup>1</sup>\n- Simon Clare<sup>3</sup>\n- Valeriia V Kriukova<sup>4</sup>\n- Ksenia R Lupyr<sup>4</sup>\n- Olga V Britanova<sup>5</sup>\n- David R Withers<sup>8</sup>\n- Simon A Jones<sup>1</sup>\n- Dmitriy M Chudakov<sup>4</sup>\n- David A Price<sup>1</sup> ([ORCID: 0000-0001-9416-2737](https://orcid.org/0000-0001-9416-2737))\n- Ian R Humphreys<sup>1</sup> ([ORCID: 0000-0002-9512-5337](https://orcid.org/0000-0002-9512-5337))\n\n### Affiliations\n\n1. Division of Infection and Immunity, School of Medicine, Cardiff University Cardiff United Kingdom ([ROR:03kk7td41](https://ror.org/03kk7td41))\n2. Systems Immunity Research Institute, School of Medicine, Cardiff University Cardiff United Kingdom ([ROR:03kk7td41](https://ror.org/03kk7td41))\n3. Wellcome Sanger Institute, Wellcome Genome Campus Hinxton United Kingdom ([ROR:05cy4wa09](https://ror.org/05cy4wa09))\n4. Center of Life Sciences, Skolkovo Institute of Science and Technology Moscow Russian Federation ([ROR:03f9nc143](https://ror.org/03f9nc143))\n5. Genomics of Adaptive Immunity Department, Shemyakin-Ovchinnikov Institute of Bioorganic Chemistry, Russian Academy of Sciences Moscow Russian Federation ([ROR:05qrfxd25](https://ror.org/05qrfxd25))\n6. Institute of Clinical Molecular Biology, Christian-Albrecht-University of Kiel Kiel Germany ([ROR:04v76ef78](https://ror.org/04v76ef78))\n7. Institute of Translational Medicine, Center for Precision Genome Editing and Genetic Technologies for Biomedicine, Pirogov Russian National Research Medical University Moscow Russian Federation ([ROR:018159086](https://ror.org/018159086))\n8. Institute of Immunology and Immunotherapy, University of Birmingham Birmingham United Kingdom ([ROR:03angcq70](https://ror.org/03angcq70))\n9. Abu Dhabi Stem Cell Center Al Muntazah United Arab Emirates\n\n\u2020 Corresponding author\n\n## Abstract\n\nInhibitory CD4+ T cells have been linked with suboptimal immune responses against cancer and pathogen chronicity. However, the mechanisms that underpin the development of these regulatory cells, especially in the context of ongoing antigen exposure, have remained obscure. To address this knowledge gap, we undertook a comprehensive functional, phenotypic, and transcriptomic analysis of interleukin (IL)-10-producing CD4+ T cells induced by chronic infection with murine cytomegalovirus (MCMV). We identified these cells as clonally expanded and highly differentiated TH1-like cells that developed in a T-bet-dependent manner and coexpressed arginase-1 (Arg1), which promotes the catalytic breakdown of L-arginine. Mice lacking Arg1-expressing CD4+ T cells exhibited more robust antiviral immunity and were better able to control MCMV. Conditional deletion of T-bet in the CD4+ lineage suppressed the development of these inhibitory cells and also enhanced immune control of MCMV. Collectively, these data elucidated the ontogeny of IL-10-producing CD4+ T cells and revealed a previously unappreciated mechanism of immune regulation, whereby viral persistence was facilitated by the site-specific delivery of Arg1.\n\n## Introduction\n\nImmune dysregulation occurs during many persistent viral infections. High levels of ongoing viral replication, which characterize human immunodeficiency virus (HIV), hepatitis B virus (HBV), and, in mice, lymphocytic choriomeningitis virus (LCMV), typically lead to T cell exhaustion, defined by impaired effector functions, the expression of inhibitory cytokines and receptors (Wherry, 2011), and substantial alterations in cellular gene expression (Doering et al., 2012). Moreover, inducible and naturally occurring FoxP3+ regulatory T cells accumulate during many chronic viral infections, presumably to limit excessive immune activation (Veiga-Parga et al., 2013), and T helper (TH)1-like cells that express the immunosuppressive cytokine interleukin (IL)-10 can be induced by LCMV (Parish et al., 2014), HIV (Graziosi et al., 1994), and human/murine cytomegalovirus (HCMV/MCMV) (Clement et al., 2016; Jones et al., 2010; Mason et al., 2013). Evidence from parasitic infections suggests that IL-10-producing TH1-like cells protect against immune pathology, akin to classical FoxP3+ regulatory T cells (Anderson et al., 2007; Jankovic et al., 2007). However, experimental deletion of IL-10 production in T cells has been shown to promote the clearance of LCMV without any obvious collateral effects (Clement et al., 2016; Parish et al., 2014; Richter et al., 2013), suggesting a potential therapeutic role for similar manipulations in humans, albeit with the possibility of an attendant risk to the development of CD8+ T cell memory (Laidlaw et al., 2015).\n\nThe mechanisms that induce IL-10 expression in T cells require further clarification, despite proposed roles for costimulatory receptors, cytokines, transcription factors, and signals delivered via the T cell receptor (TCR) (Saraiva and O\u2019Garra, 2010). For example, chronic antigen exposure and the transcription factor Blimp-1 appear to be important for the development of IL-10-producing CD4+ T cells in mice infected with LCMV (Parish et al., 2014), and the inhibitory receptor TIGIT is known to act upstream of IL-10 (Schorer et al., 2020). However, it is clear that viral persistence can be facilitated by IL-10, exemplified in the context of MCMV infection by ongoing replication in the salivary glands (SGs) (Humphreys et al., 2007; Mandaric et al., 2012).\n\nInterferon (IFN)\u03b3-expressing CD4+ T cells have been shown to limit viral replication in the SGs of mice infected with MCMV (Jonji\u0107 et al., 1989; Lucin et al., 1992; Walton et al., 2011). Nonetheless, CD4+ T cells also represent an important source of IL-10 (Clement et al., 2016; Humphreys et al., 2007), the production of which is promoted by IL-27 during acute infection with MCMV. In contrast, less is known about the mucosal IL-10-producing CD4+ T cells that appear during chronic infection with MCMV, which are phenotypically distinct from type 1 regulatory T (Tr1) cells, specifically lacking concurrent expression of CD49d and LAG-3, and develop independently of IL-27 (Clement et al., 2016). These cells express high levels of various transcription factors, such as c-Maf and T-bet (Clement et al., 2016), and often coexpress other molecules with putative inhibitory functions, such as PD-1, TIM-3, and IL-21 (Apetoh et al., 2010; Awasthi et al., 2007; Chihara et al., 2018; Pot et al., 2009; Zhu et al., 2015). However, the functional relevance of these characteristics has remained obscure, along with the ontogeny of IL-10-producing CD4+ T cells during chronic infection with MCMV.\n\nTo address these issues, we performed a comprehensive functional, phenotypic, and transcriptomic analysis of IL-10-producing CD4+ T cells isolated from the SGs of mice infected with MCMV. Our data revealed that these cells were clonally expanded and highly differentiated TH1-like cells with gene expression signatures that indicated a key developmental role for T-bet. In addition, we identified an inhibitory effect attributable to arginase-1 (Arg1), which was upregulated among IL-10-producing CD4+ T cells during viral chronicity and facilitated the site-specific persistence of MCMV.\n\n## Results\n\n### IL-10-producing CD4+ T cells display a TH1-like profile\n\nTo better understand the development and functionality of inhibitory CD4+ T cells that develop during viral chronicity, we infected MCMV IL-10 reporter (10BiT) mice with MCMV. These mice express Thy1.1 under the Il10 promoter (Maynard et al., 2007). Unlike mucosal sites in the respiratory tract (Zhang et al., 2019), ongoing viral replication in this model occurs primarily in the SGs, facilitated by the induction of CD4+ T cells that produce IL-10 (Humphreys et al., 2007), which peak on day 14 post-infection (p.i.) (Clement et al., 2016). At this time point, we found that approximately 10\u201330% of CD4+ T cells in the SGs were Thy1.1+, of which ~95% displayed an effector memory phenotype (CD44hi CD62Llo) (Figure 1\u2014figure supplement 1A). IL-10-producing CD4+ T cells were also induced by polyclonal stimulation and universally expressed Thy1.1 (Figure 1\u2014figure supplement 1B).\n\nWe then compared the transcriptional profiles of endogenously generated IL-10+ and IL-10\u2212 CD4+ T cells, isolated via fluorescence-activated cell sorting (FACS) as Thy1.1+ (IL-10+) and Thy1.1\u2212 (IL-10\u2212) CD44hi CD62Llo CD4+ T cells (Figure 1\u2014figure supplement 1A). Principal component analysis (PCA) of the RNA-seq data revealed that Thy1.1+ CD4+ T cells were transcriptionally distinct from Thy1.1\u2212 CD4+ T cells (Figure 1\u2014figure supplement 1C). As expected, Il10 was highly upregulated in Thy1.1+ CD4+ T cells (Figure 1A), and chromatin was more open in the Il10 promoter region compared with Thy1.1\u2212 CD4+ T cells (Figure 1B). Genes associated with localization and cell migration (Ccl7, Cxcl2, Cxcl12, Ccl5, Cxcl14, Ccl28, Ccl12, Ccr1, and Ccr5), cell signaling (Ceacam1, Havcr2, Tigit, Lag3, Cd40, Cd36, and Itgb4), regulation of cellular processes (Prdm1, Gata2, Yes1, Card10, and Il33), and metabolism (Elovl7, Galnt3, Car13, Aldh1l1, and Ildrl), including glycolysis and the tricarboxylic acid cycle (Fbp2 and Sdhc), oxidative phosphorylation (Osgin1), and the mitochondrial respiratory chain (Mt-Nd1, Ndufs6, Ndufb8, Uqcrfs1, and Uqcr11), were also upregulated in Thy1.1+ CD4+ T cells, alongside genes associated with activation (Fgl2, Cxcr2, and Nfil3) and antiviral effector functions (Gzmb, Prf1, Gzmk, and Lyz2) (Figure 1A, C, D and Figure 1\u2014figure supplement 1D). These latter gene profiles suggested the potential for cytolytic activity, but we found no evidence of a concomitant increase in the expression levels of granzyme B protein among Thy1.1+ CD4+ T cells (data not shown), which also lacked gene signatures classically associated with cytotoxic CD4+ T cells, such as the upregulation of Klrc1 and Crtam (https://doi.org/10.5281/zenodo.7243956).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79165/elife-79165-fig1-v1.jpg)\n\n**Figure 1.:** 10BiT mice were infected with 3 \u00d7 104 pfu of murine cytomegalovirus (MCMV). Leukocytes were isolated from the salivary glands (SGs) on day 14 p.i. and sorted as CD4+ CD44+ CD62L\u2212 CD90/90.1+ (Thy1.1+) or CD90/90.1\u2212 (Thy1.1\u2212) populations via fluorescence-activated cell sorting (FACS). (A) Volcano plot highlighting differentially upregulated genes in Thy1.1+ CD4+ T cells (red) versus Thy1.1\u2212 CD4+ T cells (blue). (B) ATAC-seq profiles showing accessible chromatin regions in the Il10 gene for Thy1.1+ CD4+ T cells (red) and Thy1.1\u2212 CD4+ T cells (blue). Data are shown as normalized values accounting for the total number of reads per lane. The black box indicates a major difference in chromatin accessibility. Black arrows indicate binding motifs for Tbx21. (C) Gene ontology analysis of data from (A) indicating the top six modules that were upregulated (red) or downregulated (blue) in Thy1.1+ CD4+ T cells. (D) Heatmap comparing data from (A) (left column) with published data from T-bet+ versus T-bet-knockout CD4+ T cells (middle column, GSE38808) and TH1 versus naive CD4+ T cells (right column, E-MTAB-2582). Displayed genes were selected according to relevant pathways identified via gene ontology analysis and tabulated against respective functions (all p < 0.05). (E) Venn diagram showing the overlap between genes enriched in Thy1.1+ CD4+ T cells (A, D) and genes enriched in TH1-like CD4+ T cells (E-MTAB-2582). Data in (A\u2013E) are shown as pooled analyses from a minimum of n = 5 mice per group representing three independent experiments. (F) Representative histograms (top) and summary bar graphs (bottom) showing the expression of IL-7R and TCF1/7 among Thy1.1+ CD4+ T cells (red) and Thy1.1\u2212 CD4+ T cells (blue). The fluorescence-minus-one control is shown in sky blue (top). Bottom: data are shown as mean \u00b1 standard error of the mean (SEM; n = 10 mice per group representing two independent experiments). ****p < 0.0001 (Mann\u2013Whitney U test). (G) Representative flow cytometry plots showing the expression of CD39 and TIM-3 among Thy1.1+ CD4+ T cells (red) and Thy1.1\u2212 CD4+ T cells (blue). Data are shown as pooled analyses from a minimum of n = 10 mice per group representing two independent experiments.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79165/elife-79165-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** 10BiT mice were infected with 3 \u00d7 104 pfu of MCMV. Leukocytes were isolated from the SGs on day 14 p.i. (A) Flow cytometric gating strategy. Leukocytes were identified as CD4+ CD44+ CD62L\u2212 CD90/90.1+ (Thy1.1+) or CD90/90.1\u2212 (Thy1.1\u2212) populations for downstream molecular analyses (ATAC-seq, RNA-seq, and TCR-seq). (B) Representative flow cytometry plots showing the expression of interleukin (IL)-10 versus Thy1.1 among CD4+ T cells cultured briefly ex vivo in the absence (left) or presence of phorbol myristate acetate (PMA) and ionomycin (right). (C) Principal component analysis (PCA) plots from (A) after RNA-seq analysis. (D) Gene expression levels identifying the location of gene clusters from the gene ontology analysis (Figure 1C). (E) Representative flow cytometry plot (left) and summary bar graphs (right) showing the expression of PD-1 and LAG-3 among CD4+ T cells expressing interferon (IFN)\u03b3 after stimulation with PMA and ionomycin. Data are shown as mean \u00b1 standard error of the mean (SEM; n = 5 mice per group representing two independent experiments). **p < 0.01 (Mann\u2013Whitney U test). (F) Summary bar graph showing the expression of TIM-3, TIGIT, LAG-3, and PD-1 among Thy1.1+ CD4+ T cells (red) and Thy1.1\u2212 CD4+ T cells (blue) measured via flow cytometry. Data are shown as mean \u00b1 SEM (n = 6\u20139 mice per group representing two independent experiments). **p < 0.01, ****p < 0.0001 (Mann\u2013Whitney U test).\n\nThy1.1+ CD4+ T cells are known to express the TH1-associated chemokine receptors CXCR3 and CCR5 (Clement et al., 2016). We found that MCMV-induced Thy1.1+ CD4+ T cells shared many transcripts with CD4+ TH1 cells generated in vitro (Stubbington et al., 2015; Figure 1E), encompassing genes associated with numerous cellular and immunological processes (https://doi.org/10.5281/zenodo.7447477), and further expressed IFN\u03b3 in response to polyclonal stimulation at a population frequency of ~25% (Figure 1\u2014figure supplement 1E). These data suggested that Thy1.1+ CD4+ T cells were commonly derived from antigen-specific TH1 cells, especially given that IFN\u03b3 detection via flow cytometry likely underestimates the composite frequency of CD4+ T cells that specifically recognize MCMV (Jeitziner et al., 2013). However, genes associated with the induction of IFN\u03b3, including Il18r1 and il18rap, were actually downregulated in Thy1.1+ CD4+ T cells (Figure 1A, C, D), and in two of three replicates, a similar pattern was observed for Ifng (https://doi.org/10.5281/zenodo.7243956). Comparable findings were reported previously in functional studies of IFN\u03b3 expression at the protein level among IL-10-producing CD4+ T cells specific for HCMV or MCMV (Clement et al., 2016; Mason et al., 2013).\n\nOther genes that were downregulated in Thy1.1+ CD4+ T cells included Il7 and Tcf1/7 (Figure 1A, D), which extended to the protein level (Figure 1F). The relative underexpression of these cell survival-associated factors coincided temporally with the rapid contraction of virus-specific IL-10-producing CD4+ T cells that typically occurs during the early stages of viral chronicity (Clement et al., 2016). In contrast, Thy1.1+ and Thy1.1\u2212 CD4+ T cells expressed similar levels of transcripts encoding DR5 (https://doi.org/10.5281/zenodo.7243956), which engages natural killer (NK) cell-expressed TRAIL and induces CD4+ T cell death in the SGs (Schuster et al., 2014).\n\nIL-10 production among CD4+ T cells has been associated with the expression of inhibitory molecules and markers of exhaustion (Saraiva and O\u2019Garra, 2010). Counterintuitively, we found that MCMV-induced Thy1.1+ CD4+ T cells downregulated the exhaustion-associated transcription factor Tox1 but nonetheless expressed a module of inhibitory genes, including Lag3, Fgl2, Havcr2, and Entpd1 (Figure 1D). These inhibitory molecules were also expressed at the protein level, alongside PD-1 (Figure 1G and Figure 1\u2014figure supplement 1F). In addition, differential bystander activation seemed unlikely, because Thy1.1+ CD4+ T cells expressed LAG-3 and PD-1 more commonly than Thy1.1\u2212 CD4+ T cells after preselection based on the induction of IFN\u03b3 (Figure 1\u2014figure supplement 1E).\n\nCollectively, these data showed that IL-10-producing CD4+ T cells exhibited a highly differentiated TH1-like profile, characterized by the upregulation of various inhibitory molecules and the downmodulation of IFN\u03b3 expression lacking concordance with known signatures of exhaustion, during chronic infection with MCMV.\n\n### IL-10-producing CD4+ T cells exhibit prominent clonal structures\n\nIL-10-producing CD4+ T cells recognize a broad range of viral antigens during chronic infection with MCMV (Clement et al., 2016). To characterize these interactions in more detail and evaluate the clonal relationship between IL-10+ (Thy1.1+) and IL-10\u2212 (Thy1.1\u2212) CD4+ T cells, we used a next-generation approach to sequence the corresponding TCRs.\n\nThe repertoires of Thy1.1+ CD4+ T cells were less diverse and incorporated more prominent clonal expansions compared with the repertoires of Thy1.1\u2212 CD4+ T cells (Figure 2A, B and Figure 2\u2014figure supplement 1A). Several features also indicated that these expansions represented antigen-focused responses confined largely to Thy1.1+ CD4+ T cells (Figure 2C\u2013G). First, the number of nucleotide variants that encoded each complementarity-determining region (CDR)3\u03b1 and CDR3\u03b2 amino acid sequence, an indicator of antigen-specific convergence (Logunova et al., 2020), was higher overall among Thy1.1+ CD4+ T cells versus Thy1.1\u2212 CD4+ T cells (Figure 2C). Second, there were some differences in Trbv gene use that distinguished Thy1.1+ CD4+ T cells from Thy1.1\u2212 CD4+ T cells, albeit with a general preference for Trbv3, Trbv5, and Trbv31 (Figure 2D). Third, clusters of homologous TCR\u03b2 variants, identified using the statistical model ALICE (Pogorelyy et al., 2019), were detected predominantly among Thy1.1+ CD4+ T cells (Figure 2E\u2013G). Importantly, this latter model accounts for generation probabilities, reliably separating immunologically relevant and irrelevant public TCRs.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79165/elife-79165-fig2-v1.jpg)\n\n**Figure 2.:** 10BiT mice were infected with 3 \u00d7 104 pfu of murine cytomegalovirus (MCMV). Leukocytes were isolated from the salivary glands (SGs) on day 14 p.i. and sorted as CD4+ CD44+ CD62L\u2212 CD90/90.1+ (Thy1.1+) or CD90/90.1\u2212 (Thy1.1\u2212) populations via fluorescence-activated cell sorting (FACS). (A) Clonality and (B) diversity metrics calculated for the T cell receptor (TCR)\u03b1 (top) and TCR\u03b2 repertoires (bottom) derived from Thy1.1+ CD4+ T cells and Thy1.1\u2212 CD4+ T cells. (C) TCR convergence measured as the average number of nucleotide sequences encoding amino acid-identical complementarity-determining region (CDR)3\u03b1 (top) and CDR3\u03b2 loops (bottom) across the 2000 most prevalent clonotypes. (A\u2013C) p values were calculated using a paired t-test with Benjamini\u2013Hochberg correction. ns, not significant. (D) Hierarchical clustering of Trbv gene use weighted by clonotype frequency. (E\u2013G) Cluster analysis of the 500 most prevalent TCR\u03b2 clonotypes using the tcrgrapher pipeline. (E) The cumulative frequency of tcrgrapher hits per sample is shown in gray. The frequency of each cluster comprising at least two tcrgrapher hits was calculated for each sample and averaged across all six repertoires. The five most prevalent clusters are shown in color. (F) Amino acid logos for each of the five most prevalent clusters. (G) Visual representation of clusters comprising at least two tcrgrapher hits. Nodes represent unique amino acid sequences. Edges connect sequences with a single amino acid mismatch. Amino acid sequences present only in Thy1.1+ CD4+ T cells are shown in red, amino acid sequences present only in Thy1.1\u2212 CD4+ T cells are shown in blue, and amino acid sequences present in both Thy1.1+ CD4+ T cells and Thy1.1\u2212 CD4+ T cells are shown in gray. Data are shown as pooled analyses from n = 4 mice per group representing three independent experiments (groups 1\u20133).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79165/elife-79165-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Visual representation of repertoire diversity. The inner rings indicate the frequencies of clonotypes sampled once, twice, or more often. The middle rings indicate the 20th, 40th, 60th, 80th, and 100th percentiles (Q1\u2013Q5, respectively). The outer rings indicate the frequencies of the top five most abundant clonotypes with corresponding sequence information. Left: TCR\u03b2. Right: TCR\u03b1. (B) F2 overlap metrics for the 2000 most prevalent clonotypes showing pairwise calculations to estimate the sharing of amino acid sequences with identical V genes. Left: TCR\u03b2. Right: TCR\u03b1. (C) Mean physicochemical properties of the central five amino acids in the complementarity-determining region (CDR)3\u03b2 (top) and CDR3\u03b1 loops (bottom) weighted by clonotype frequency. Right: averaged and weighted nucleotide lengths for CDR3\u03b2 (top) and CDR3\u03b1 (bottom). Significance was evaluated using a paired t-test with Benjamini\u2013Hochberg correction. ns, not significant.\n\nIt should be noted that none of these differences were absolute. For example, the clusters of TCR\u03b2 variants identified among Thy1.1+ CD4+ T cells also occurred at lower cumulative frequencies among Thy1.1\u2212 CD4+ T cells (Figure 2E\u2013G), and the TCR\u03b1 and TCR\u03b2 repertoires overlapped considerably between Thy1.1+ CD4+ T cells and Thy1.1\u2212 CD4+ T cells (Figure 2\u2014figure supplement 1B). Moreover, there were no prominent differences in the physicochemical properties of amino acids in the central parts of the CDR3\u03b1 and CDR3\u03b2 loops, which generally differ among functionally discrete subsets of CD4+ T cells (Kasatskaya et al., 2020), to indicate an ontogenetic divergence between Thy1.1+ CD4+ T cells and Thy1.1\u2212 CD4+ T cells (Figure 2\u2014figure supplement 1C).\n\nCollectively, these data revealed the presence of common molecular signatures that predominated among Thy1.1+ CD4+ T cells, consistent with the notion of an antigen-driven process of differentiation leading to the production of IL-10.\n\n### IL-10-producing CD4+ T cells are enriched for expression of Arg1\n\nOur analysis of inhibitory gene expression revealed one particularly intriguing feature, namely that Thy1.1+ CD4+ T cells significantly upregulated Arg1 (Figure 1D). Arg1 promotes the catalytic breakdown of L-arginine (Munder, 2009) and has been shown to inhibit the proliferation of T cells (Czystowska-Kuzmicz et al., 2019; Rodriguez et al., 2004; Rodriguez et al., 2002). A previous study also reported that T cells could express Arg1 (Washburn et al., 2019), although the functional relevance of this observation has remained obscure.\n\nTo address this knowledge gap, we first confirmed expression at the protein level via Western blotting (Figure 3A) in experiments incorporating control mice lacking the ability to express Arg1 in the CD4+ lineage (Cd4Cre/+Arg1flox/flox). We then revealed the open chromatin structure around Arg1 in Thy1.1+ CD4+ T cells (Figure 3B) and further probed the expression of Arg1 versus Thy1.1 among CD4+ T cells via flow cytometry (Figure 3C). Our data showed that Arg1 was expressed by CD4+ T cells almost exclusively in the SGs (Figure 3A, C). Of note, Arg1 expression was also detected among CD8+ T cells but not among NK T cells via flow cytometry, although intracellular discrimination was subtle (Figure 3\u2014figure supplement 1A). Depletion experiments nonetheless revealed that only CD4+ T cells contributed significantly to Arg1 protein concentrations in SG homogenates during chronic infection with MCMV (Figure 3\u2014figure supplement 1B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/79165/elife-79165-fig3-v1.jpg)\n\n**Figure 3.:** (A) Expression of Arg1 among leukocytes isolated via magnetic separation from the salivary glands (SGs) and spleens of Cd4+/+Arg1flox/flox or Cd4Cre/+Arg1flox/flox mice on day 14 p.i. detected by Western blot. (B, C) 10BiT mice were infected with 3 \u00d7 104 pfu of murine cytomegalovirus (MCMV). (B) Leukocytes were isolated from the SGs on day 14 p.i. and sorted as CD4+ CD44+ CD62L\u2212 CD90/90.1+ (Thy1.1+) or CD90/90.1\u2212 (Thy1.1\u2212) populations via fluorescence-activated cell sorting (FACS). ATAC-seq profiles show accessible chromatin regions in the Arg1 gene for Thy1.1+ CD4+ T cells (red) and Thy1.1\u2212 CD4+ T cells (blue). Data are shown as normalized values accounting for the total number of reads per lane. The black box indicates a major difference in chromatin accessibility. Black arrows indicate binding motifs for Tbx21. Data are shown as pooled analyses from a minimum of n = 5 mice per group representing three independent experiments. (C) Representative flow cytometry plots showing the expression of Arg1 versus Thy1.1 among CD4+ T cells isolated from the SGs and spleens on day 14 p.i. (A, C) Data are shown as pooled analyses from a minimum of n = 7 mice per group representing three independent experiments. (D) Representative flow cytometry plots showing the expression of Arg1 versus IL-10 among OT-II-specific CD4+ T cells generated in vitro in the absence or presence of IL-12 (3 ng/ml) \u00b1 OVA323\u2013339 for 7 days and then stimulated with anti-CD3/CD28 for 4 hr. (E) Summary bar graph showing Arg1 protein concentrations in culture supernatants from (D) after stimulation with anti-CD3/CD28 for 48 hr. Up arrows indicate the higher concentration of OVA323\u2013339 (0.5 \u03bcM), and down arrows indicate the lower concentration of OVA323\u2013339 (0.01 \u03bcM). Data are shown as mean \u00b1 standard error of the mean (SEM).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79165/elife-79165-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Cd4+/+Arg1flox/flox and Cd4Cre/+Arg1flox/flox mice were infected with 3 \u00d7 104 pfu of murine cytomegalovirus (MCMV). Leukocytes were isolated from the salivary glands (SGs) on day 14 p.i. Representative flow cytometry plots show the expression of CD8 versus Arg1 (top) and NKT1.1 versus Arg1 (bottom). (B) C57BL/6 mice were infected with 3 \u00d7 104 pfu of MCMV. Isotype control, anti-CD4, anti-CD8, or anti-CD4 and anti-CD8 antibodies were administered on days 6 and 8 p.i. SG homogenates were prepared on day 14 p.i. Arg1 protein concentrations were measured via ELISA. Data are shown as mean \u00b1 standard error of the mean (SEM; n = 5\u201312 mice per group representing one independent experiment). Significance was evaluated using the Mann\u2013Whitney U test. (C, D) Splenocytes were harvested from naive Cd4+/+Arg1flox/flox and Cd4Cre/+Arg1flox/flox mice. (C) Summary bar graph showing the overall frequencies of naive, central memory (CM), and effector memory (EM) CD4+ T cells. Data are shown as mean \u00b1 SEM (n = 3\u20134 mice per group representing two independent experiments). (D) Summary bar graph showing the expression of interferon (IFN)\u03b3 among CD4+ T cells after ex vivo stimulation with PMA and ionomycin. Data are shown as mean \u00b1 SEM (n = 5 mice per group representing two independent experiments).\n\nIL-10-producing TH1 cells can be induced experimentally via high-dose antigen stimulation in the presence of IL-12 (Saraiva et al., 2009). Accordingly, we hypothesized that Arg1+ IL-10-producing CD4+ T cells might develop under similar conditions in vitro, given the corresponding TH1-like profile observed during chronic infection with MCMV. To test this notion, we stimulated ovalbumin (OVA)-specific transgenic CD4+ T cells from OT-II mice with high or low doses of the cognate peptide (OVA323\u2013339) in the absence or presence of IL-12. Despite constitutively high expression levels of Arg1, only high-dose OVA323\u2013339 in combination with IL-12 induced the development of CD4+ T cells that expressed Arg1 and IL-10, and importantly, all IL-10-producing CD4+ T cells coexpressed Arg1 (Figure 3D). Arg1 protein concentrations in culture supernatants also increased substantially after stimulation with high-dose OVA323\u2013339 in the presence of IL-12 (Figure 3E).\n\nCollectively, these data suggested that Arg1 expression was a hallmark of IL-10-producing CD4+ T cells, which developed almost exclusively in the SGs during chronic infection with MCMV.\n\n### CD4+ T cells promote viral persistence via expression of Arg1\n\nTo explore the biological relevance of our findings, we infected Cd4+/+Arg1flox/flox and Cd4Cre/+Arg1flox/flox mice with MCMV. Lineage-specific deletion of Arg1 did not impact the function or phenotype of CD4+ T cells in naive mice (Figure 3\u2014figure supplement 1C, D). Higher numbers of IFN\u03b3-expressing CD4+ T cells (Figure 4A) and higher frequencies of proliferating (Ki-67+) CD4+ T cells (Figure 4B) were nonetheless observed after viral antigen stimulation in the SGs of Cd4Cre/+Arg1flox/flox versus Cd4+/+Arg1flox/flox mice during the chronic phase of infection with MCMV. These data suggested that Arg1 inhibited the proliferation of CD4+ T cells in vivo, consistent with a previous in vitro study (Munder et al., 2006). Similarly, higher numbers of virus-specific CD8+ T cells, quantified using tetrameric antigen probes, were detected in the spleens of Cd4Cre/+Arg1flox/flox versus Cd4+/+Arg1flox/flox mice on day 30 p.i. (Figure 4C). In contrast, Arg1 deletion had no significant impact on the development of virus-specific IL-10-producing CD4+ T cells in the SGs (Figure 4D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/79165/elife-79165-fig4-v1.jpg)\n\n**Figure 4.:** Cd4+/+Arg1flox/flox and Cd4Cre/+Arg1flox/flox mice were infected with 3 \u00d7 104 pfu of murine cytomegalovirus (MCMV). (A) MCMV-specific CD4+ T cell responses in the salivary glands (SGs) on days 7 and 14 p.i. measured using flow cytometry to detect interferon (IFN)\u03b3. Immunodominant peptides were pooled for stimulation. Data are shown as mean \u00b1 standard error of the mean (SEM; n = 4\u20136 mice per group representing three independent experiments). (B) Expression of Ki-67 among CD4+ T cells isolated from the SGs on day 14 p.i. measured via flow cytometry. Data are shown as mean \u00b1 SEM (n = 4\u20135 mice per group representing two independent experiments). (C) MCMV tetramer+ CD8+ T cells quantified in spleens on day 30 p.i. via flow cytometry. Data are shown as mean \u00b1 SEM (n = 4 mice per group representing two independent experiments). (D) MCMV-specific CD4+ T cell responses in the SGs on days 7 and 14 p.i. measured using flow cytometry to detect interleukin (IL)-10. Immunodominant peptides were pooled for stimulation. Data are shown as mean \u00b1 SEM (n = 8\u201310 mice per group representing two independent experiments). (A\u2013D) *p < 0.05 (Mann\u2013Whitney U test). (E) Viral genomes in saliva on days 7, 14, 21, and 28 p.i. measured via qPCR. Data are shown as mean \u00b1 SEM (n = 8 mice per group representing two independent experiments). *p < 0.05 (Mann\u2013Whitney U test). (F) MCMV replication in SG homogenates on day 30 p.i. measured via plaque assay. Data are shown as individual points with median values (n = 6\u20137 mice per group representing two or three independent experiments). **p < 0.01 (Mann\u2013Whitney U test).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79165/elife-79165-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Cd4Cre/+Arg1flox/flox and Cd4Cre/+ mice were infected with 3 \u00d7 104 pfu of MCMV. (B, C) Lyz2+/+Arg1flox/flox and Lyz2Cre/+Arg1flox/flox mice were infected with 3 \u00d7 104 pfu of MCMV. (D) Cd4+/+Arg1flox/flox and Cd4Cre/+Arg1flox/flox mice were infected with 3 \u00d7 104 pfu of MCMV. (A) MCMV replication in salivary gland (SG) homogenates on day 14 p.i. measured via plaque assay. Data are shown as individual points with median values (n = 6 mice per group representing one independent experiment). (B) MCMV replication in SG homogenates on day 28 p.i. measured via plaque assay. Data are shown as individual points with median values (n = 3\u20134 mice per group representing two independent experiments). (C) Viral genomes in saliva on days 14, 21, and 28 p.i. measured via qPCR. Data are shown as individual points with median values (n = 3\u20134 mice per group representing two independent experiments). (D) Cardiac punctures were performed on day 30 p.i. Anti-SSA IgG titers were measured in plasma samples via ELISA. Data are shown as mean \u00b1 standard error of the mean (SEM; n=10 mice per group representing two independent experiments).\n\nIFN\u03b3-expressing CD4+ T cells are known to restrict MCMV replication in the SGs (Walton et al., 2011). Accordingly, we found that viral shedding in the saliva (Figure 4E) and viral replication in the SGs (Figure 4F) were reduced in Cd4Cre/+Arg1flox/flox versus Cd4+/+Arg1flox/flox mice during the chronic phase of infection with MCMV. Importantly, no differences in viral replication were observed between Cd4Cre/+Arg1flox/flox and control mice at an earlier time point (day 14 p.i.) (Figure 4\u2014figure supplement 1A), and deletion of Arg1 in myeloid cells, achieved using Lyz2Cre/+Arg1flox/flox mice, had no impact on viral shedding in the saliva or viral replication in the SGs (Figure 4\u2014figure supplement 1B, C). Of note, there was also no evidence that Cd4Cre/+Arg1flox/flox mice were more susceptible to virus-induced autoimmunity, as indicated by anti-Sj\u00f6grens syndrome antigen (SSA) titers comparable to those observed in Cd4+/+Arg1flox/flox mice (Figure 4\u2014figure supplement 1D).\n\nCollectively, these data indicated that Arg1 expression by CD4+ T cells selectively inhibited the accumulation of virus-specific CD4+ and CD8+ T cells in the SGs, leading to suboptimal immune control of viral replication during chronic infection with MCMV.\n\n### IL-10-producing CD4+ T cells develop in a T-bet-dependent manner\n\nIn line with our previous work (Clement et al., 2016), we noted that Thy1.1+ CD4+ T cells expressed higher amounts of T-bet at the protein level than Thy1.1\u2212 CD4+ T cells (Figure 5A), and concordantly, we found that open chromatin was enriched in the Tbx21 region of Thy1.1+ CD4+ T cells versus Thy1.1\u2212 CD4+ T cells (Figure 5B). No such differences in expression intensity were observed for the related T-box transcription factor Eomesodermin (Eomes) (Figure 5\u2014figure supplement 1A, B), which promotes the development of Tr1 cells (Roessner et al., 2021; Zhang et al., 2017). We also detected considerable overlap between the gene expression profiles of Thy1.1+ CD4+ T cells and T-bet-orchestrated CD4+ TH1 cells generated in vitro (Zhu et al., 2012; Figure 5C). Moreover, T-bet suppresses the expression of TCF1/7 and IL-7R (Dominguez et al., 2015; Oestreich et al., 2011), mimicking key phenotypic features of Thy1.1+ CD4+ T cells (Figure 1D, F). On the basis of these observations, we hypothesized that T-bet promoted the development of Arg1+ IL-10-producing CD4+ T cells during chronic infection with MCMV.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/79165/elife-79165-fig5-v1.jpg)\n\n**Figure 5.:** (A, B) 10BiT mice were infected with 3 \u00d7 104 pfu of murine cytomegalovirus (MCMV). (A) Leukocytes were isolated from the salivary glands (SGs) on day 14 p.i. Representative histograms (left) and summary bar graph (right) show the expression of T-bet among Thy1.1+ CD4+ T cells (red) and Thy1.1\u2212 CD4+ T cells (blue). Data are shown as mean \u00b1 standard error of the mean (SEM; n = 5\u20136 mice per group pooled from two independent experiments). MFI, median fluorescence intensity. **p < 0.01 (Mann\u2013Whitney U test). (B) Leukocytes were isolated from the SGs on day 14 p.i. and sorted as CD4+ CD44+ CD62L\u2212 CD90/90.1+ (Thy1.1+) or CD90/90.1\u2212 (Thy1.1\u2212) populations via fluorescence-activated cell sorting (FACS). ATAC-seq profiles show accessible chromatin regions in the Tbx21 gene for Thy1.1+ CD4+ T cells (red) and Thy1.1\u2212 CD4+ T cells (blue). Data are shown as normalized values accounting for the total number of reads per lane. The black boxes indicate major differences in chromatin accessibility. Data are shown as pooled analyses from a minimum of n = 5 mice per group representing three independent experiments. (C) Venn diagram showing the overlap between genes enriched in Thy1.1+ CD4+ T cells (A, D) and genes enriched in T-bet+ CD4+ T cells (GSE38808). (D) Cd4+/+Tbx21flox/flox (Cd4+/+) and Cd4CreERT2/+Tbx21flox/flox (Cd4Cre/+) mice were infected with 3 \u00d7 104 pfu of MCMV. Tamoxifen was administered (+Tam) or withheld (\u2212Tam) from days 7 to 12 p.i. Leukocytes were isolated from the SGs on day 14 p.i. Representative flow cytometry plots show the expression of CD4 versus RFP (left) and CD44 versus T-bet for the gated populations (right). Data in the bar graph are shown as mean \u00b1 SEM (n = 4\u20135 mice per group representing four or five independent experiments). *p < 0.05, **p < 0.01 (Mann\u2013Whitney U test).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79165/elife-79165-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Representative flow cytometry plots (A) and histograms (B) showing the expression of Eomes versus Thy1.1. (C, D) Cd4+/+Tbx21flox/flox and Cd4CreERT2/+Tbx21flox/flox mice were infected with 3 \u00d7 104 pfu of murine cytomegalovirus (MCMV). Tamoxifen was administered (+Tam) or withheld (\u2212Tam) from days 7 to 12 p.i. (C) Leukocytes were isolated from the salivary glands (SGs) on day 14 p.i. The expression of T-bet was measured via flow cytometry. Data are shown as mean \u00b1 standard error of the mean (SEM; n = 4\u20135 mice per group representing four or five independent experiments). MFI, median fluorescence intensity. **p < 0.01 (Mann\u2013Whitney U test). (D) MCMV replication in SG homogenates on day 28 p.i. measured via plaque assay. Data are shown as individual points with median values (n = 5 mice per group representing three independent experiments).\n\nTo test this notion, we crossed tamoxifen-inducible Cd4CreERT2/+ mice with Tbx21flox/flox mice (Intlekofer et al., 2008), allowing us to suppress T-bet expression at the onset of viral chronicity (day 7 p.i.). These mice were further crossed to incorporate a Rosa26flSTOPtdRFP allele (Luche et al., 2007), enabling the identification of cells in which Cre was expressed via the detection of tandem-dimer red fluorescent protein (tdRFP). Mice were then infected with MCMV. Tamoxifen was administered daily for 5 days from day 7 p.i. to deplete T-bet after initial antigen exposure in a CD4-dependent manner, an effect that clearly associated with the coincident expression of RFP (Figure 5D and Figure 5\u2014figure supplement 1C).\n\nCD4-specific T-bet depletion reduced the accumulation of virus-specific IL-10-producing CD4+ T cells (Figure 6A) and Arg1+ CD4+ T cells by day 14 p.i. (Figure 6B, C). However, it seemed unlikely that T-bet directly stimulated the expression of IL-10 and Arg1, because the corresponding binding motifs were not preferentially accessible in the Il10 and Arg1 regions (Figure 1B and Figure 3B). Instead, we observed a shift toward a less differentiated phenotype in Cd4CreERT2/+Tbx21flox/flox mice (Figure 6D\u2013G), with decreased expression of CD44 (Figure 6D) and PD-1 (Figure 6E) and increased expression of CD62L (Figure 6F) and IL-7R (Figure 6G) in the absence of T-bet. In addition, T-bet depletion was associated with increased numbers of virus-specific IFN\u03b3-expressing CD4+ T cells (Figure 6H) and enhanced control of viral replication in the SGs (Figure 6I), as well as reduced salivary shedding of MCMV (Figure 6J). In accordance with the observation that IL-10-producing CD4+ T cells occur transiently during the early stages of viral chronicity (Clement et al., 2016), we also found that CD4-specific T-bet depletion was no longer protective by day 28 p.i. (Figure 6J and Figure 5\u2014figure supplement 1D).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/79165/elife-79165-fig6-v1.jpg)\n\n**Figure 6.:** (A\u2013J) Cd4+/+Tbx21flox/flox (Cd4+/+) and Cd4CreERT2/+Tbx21flox/flox (Cd4Cre/+) mice were infected with 3 \u00d7 104 pfu of murine cytomegalovirus (MCMV). Tamoxifen was administered (+Tam) or withheld (\u2212Tam) from days 7 to 12 p.i. Leukocytes were isolated from the salivary glands (SGs) on day 14 p.i. (A) MCMV-specific CD4+ T cell responses in the SGs measured using flow cytometry to detect IL-10. Immunodominant peptides were pooled for stimulation. Data are shown as mean \u00b1 standard error of the mean (SEM; n = 4\u20135 mice per group representing two independent experiments). **p < 0.01 (Mann\u2013Whitney U test). Summary bar graph (B) and representative histograms (C) showing the expression of arginase-1 (Arg1) among CD4+ T cells measured via flow cytometry. Data are shown as mean \u00b1 SEM (n = 5 mice per group representing two independent experiments). ***p < 0.001 (Mann\u2013Whitney U test). Summary bar graphs (left) and representative histograms (right) showing the expression of CD44 (D), PD-1 (E), CD62L (F), and IL-7R (G) among CD4+ T cells measured via flow cytometry. Data in (D\u2013F) are shown as mean \u00b1 SEM (n = 5 mice per group representing two independent experiments). Data in (G) are shown as mean \u00b1 SEM (n = 3\u20134 mice per group representing two independent experiments). *p < 0.05, **p < 0.01 (Mann\u2013Whitney U test). (H) MCMV-specific CD4+ T cell responses in the SGs measured using flow cytometry to detect interferon (IFN)\u03b3. Immunodominant peptides were pooled for stimulation. Data are shown as mean \u00b1 SEM (n = 4\u20135 mice per group representing two independent experiments). *p < 0.05 (Mann\u2013Whitney U test). (I) MCMV replication in SG homogenates on day 14 p.i. measured via plaque assay. Data are shown as individual points with median values (n = 10\u201314 mice per group pooled from three independent experiments). **p < 0.01 (Mann\u2013Whitney U test). (J) Viral genomes in saliva on days 7, 14, 21, and 28 p.i. measured via qPCR. Data are shown as mean \u00b1 SEM (n = 5 mice per group representing two independent experiments). **p < 0.01 (Mann\u2013Whitney U test). Data in (A\u2013I) show all groups after the administration of tamoxifen.\n\nCollectively, these results suggested that T-bet exhibited dual functionality under conditions of recurrent antigen stimulation, concurrently driving the accumulation of virus-specific TH1 responses and promoting the development of Arg1+ IL-10-producing CD4+ T cells, which together shaped immune control of viral replication during the early stages of chronic infection with MCMV.\n\n## Discussion\n\nIn this study, we identified IL-10-producing CD4+ T cells as highly differentiated TH1-like cells, which occurred transiently at mucosal sites of viral persistence under the strict governance of T-bet. These cells also expressed the metabolic enzyme Arg1. Further investigation revealed that Arg1 expression was a critical immune regulatory function of CD4+ T cells, suppressing antiviral immunity and facilitating viral chronicity in the context of infection with MCMV.\n\nOur finding that Arg1 was one of the putative immune regulatory genes expressed by IL-10-producing CD4+ T cells was initially counterintuitive, given the reported lack of Arg1 protein expression by human CD4+ T cells in vitro (Geiger et al., 2016). However, Arg1 expression by CD4+ and CD8+ T cells has been described in patients with sepsis (Washburn et al., 2019), indicating a potential role for generic infectious stimuli and/or an antigen-driven process mediated via the TCR. The latter possibility is consistent with our repertoire data, which revealed that prominent clonal expansions were associated with the production of IL-10. Importantly, we demonstrated that Arg1 was expressed at the protein level, both in secreted form and intracellularly. It should be noted that relatively weak intracellular signals were detected in flow cytometric analyses of C57BL/6 mice, akin to an earlier study of patients infected with HBV (Pallett et al., 2015). Western blotting experiments nonetheless clearly showed that CD4+ T cells expressed Arg1 in the SGs of mice chronically infected with MCMV. Our flow cytometry experiments also suggested that CD8+ T cells could express Arg1, albeit with the caveat of suboptimal visualization, but importantly, CD4+ T cells secreted far greater amounts of soluble Arg1, at least in the milieu of the SGs.\n\nL-arginine deficiency results in cell cycle arrest via the downregulation of CD3\u03b6, a key component of the TCR (Rodriguez et al., 2002), and T cell proliferation is impaired in the absence of L-arginine (Rodriguez et al., 2007). In line with these observations, we found that improved control of viral replication in mice lacking Arg1+ CD4+ T cells was associated with increased numbers of MCMV-specific effector CD4+ T cells, which are known to limit viral replication in the SGs (Lucin et al., 1992; Walton et al., 2011). Accordingly, the acquisition of Arg1 expression by highly differentiated CD4+ T cells impinges on antiviral immunity, representing an inhibitory mechanism that operates alongside the production of IL-10 (Clement et al., 2016; Humphreys et al., 2007). It is also notable here that regulatory T cells may act similarly via the expression of Arg2 (Lowe et al., 2019).\n\nIL-10 is regulated by a number of transcription factors, including those required for T cell differentiation, and is induced downstream of the TCR (Saraiva et al., 2020). Our discovery that T-bet promotes the development of IL-10-producing CD4+ T cells aligns with the concept that chronic antigen stimulation can trigger a negative feedback loop via these mechanisms, which concurrently drive activation and differentiation. It nonetheless remains less clear to what extent T-bet directly orchestrates the expression of other inhibitory molecules by CD4+ T cells. There was no notable increase in chromatin-accessible binding motifs for T-bet within either the Il10 or Arg1 genes in IL-10-producing CD4+ T cells. However, we did find that deletion of T-bet after acute infection limited the accumulation of highly differentiated CD4+ T cells, including those expressing Arg1 and IL-10. In line with this observation, which suggested a differentiation-linked process of functional remodeling driven by chronic antigen exposure, T-bet is known to promote the differentiation of CD8+ T cells (Dominguez et al., 2015; Omilusik et al., 2015) and inhibit the expression of TCF1/7 (Omilusik et al., 2015) and IL-7R (Intlekofer et al., 2007), both of which were downregulated among Arg1+ IL-10-producing CD4+ T cells induced by MCMV.\n\nThe relationship between mucosal IL-10-producing CD4+ T cells and classical Tr1 cells requires further clarification. In contrast to Tr1 cells (Gagliani et al., 2013), IL-10-producing CD4+ T cells in the SGs do not coexpress CD49b and LAG-3 (Clement et al., 2016), highlighting the diverse nature of regulatory CD4+ T cells defined by the secretion of IL-10 (Brockmann et al., 2018). However, these cells do express multiple inhibitory receptors, including LAG-3, alongside other markers that typically characterize Tr1 cells, such as CCR5 and granzyme K (Brockmann et al., 2018; Roessner et al., 2021; Thelen et al., 2023). In our model, Thy1.1+ CD4+ T cells also expressed Eomes, akin to clonally expanded T-bet-dependent Tr1 cells (Thelen et al., 2023). Accordingly, mucosal IL-10-producing CD4+ T cells may develop along similar lines to conventional Tr1 cells, which differentiate under the control of Eomes in conjunction with Blimp-1 (Roessner et al., 2021; Zhang et al., 2017).\n\nThe mechanisms that directly induce the expression of Il10 and Arg1 in CD4+ T cells remain obscure. Although IL-10-producing CD4+ T cells were characterized by prominent clonal expansions, repertoire analysis revealed no obvious determinative role for the TCR. However, the transcription factor c-Maf, which promotes the expression of IL-10 in multiple TH cell subsets (Gabry\u0161ov\u00e1 et al., 2018), is known to be upregulated in IL-10-producing CD4+ T cells during chronic infection with MCMV (Clement et al., 2016). We also demonstrated previously that ICOS signaling promotes the accumulation of IL-10-producing CD4+ T cells under the same conditions (Clement et al., 2016), and c-Maf acts downstream of ICOS (Bauquet et al., 2009; Nurieva et al., 2003). It therefore seems likely that an ICOS\u2013c-Maf axis participates in the direct induction of Il10, although it is less clear how this applies to Arg1. Moreover, we found that Arg1+ IL-10-producing CD4+ T cells developed optimally in vitro in response to high-dose antigen stimulation in the presence of IL-12, suggesting determinative roles for ERK MAP kinase and the transcription factor STAT4 (Saraiva et al., 2009).\n\nThe evolutionary advantage of a mechanism that leads to the production of immune regulatory molecules and consequently facilitates viral persistence without impacting autoimmunity is difficult to explain. One possibility is that some of these molecules, potentially including Arg1, serve to maintain tissue health in the presence of ongoing inflammation. It would be informative in this context to evaluate how Arg1 delivery via CD4+ T cells impacts mucosal pathology over time at sites beyond the SGs. Alternatively, local immune suppression may somehow limit the emergence of more pathogenic viral strains under conditions of persistent replication, thereby protecting the host and the wider population. Irrespective of the precise explanation, it seems clear that viral persistence can be facilitated by this intrinsic regulatory mechanism, a phenomenon that could feasibly extend to pathogens other than MCMV.\n\nIn summary, we have demonstrated that T-bet activity during a chronic viral infection can impede antiviral immune control by driving the development of highly differentiated TH1-like cells that express genes encoding inhibitory molecules, including IL-10 and Arg1. Importantly, these Arg1+ IL-10-producing CD4+ T cells developed in vitro under conditions of extreme antigen stimulation, especially in the presence of IL-12, and the expression of Arg1, which was also secreted in vivo as a soluble immune regulatory protein, facilitated viral replication during the chronic phase of infection with MCMV. These observations are conceivably important not only from a biological perspective but also from a translational perspective, revealing a previously unappreciated mechanism through which CD4+ T cells can suppress potentially harmful immune responses via the regulation of L-arginine.\n\n## Materials and methods\n\n### Mice\n\n10BiT reporter mice were originally derived by Padraic Fallon (Trinity College Dublin, Republic of Ireland). These mice express CD90/CD90.1 (Thy1.1) under the control of the Il10 promoter and retain endogenous expression of IL-10 (Maynard et al., 2007). Cd4+/+Tbx21flox/flox mice and Cd4CreERT2/+Tbx21flox/flox mice were generated by crossing Rosa26flSTOPtdRFP mice (Luche et al., 2007) with Tbx21flox/flox mice (Intlekofer et al., 2008). Arg1flox/flox mice (JAX stock #008817) and Lyz2Cre/+ mice (JAX stock #004871) were purchased from The Jackson Laboratory. These mice were bred to generate Lyz2+/+Arg1flox/flox mice and Lyz2Cre/+Arg1flox/flox mice. Arg1flox/flox mice were further bred with Cd4Cre/+ mice to generate Cd4+/+Arg1flox/flox mice and Cd4Cre/+Arg1flox/flox mice. C57BL/6 WT mice (JAX stock #000664) were purchased from Charles River or Envigo. OT-II mice (JAX stock #004194) were purchased from The Jackson Laboratory. Cd4Cre/+ mice (JAX stock #022071) were a kind gift from Sarah Dimeloe (University of Birmingham, UK).\n\n### Infections and treatments\n\nMCMV was prepared via sorbital gradient purification as described previously (Stacey et al., 2014). Mice were infected with 3 \u00d7 104 pfu of MCMV intraperitoneally. Cd4+/+ and Cd4Cre/+ mice were injected intraperitoneally with tamoxifen (Sigma-Aldrich) as indicated for 5 days from day 7 p.i. at a daily dose of 75 mg/kg (20 mg/ml). In some experiments, mice were injected intraperitoneally with anti-CD4 (100 \u03bcg of clone GK1.5 and 100 \u03bcg of clone YTS191) and/or anti-CD8 (100 \u03bcg of clone YTS169.4 and 100 \u03bcg of clone YTS156.7.7) or an isotype control, rat IgG2b anti-keyhole limpet hemocyanin (400 \u03bcg of clone LTF-2), on days 6 and 8 p.i. (all from BioXell).\n\n### Next-generation sequencing\n\nLeukocytes were isolated directly ex vivo from the SGs of 10BiT mice on day 14 p.i. (minimum n = 5 mice per group with three replicates). Pooled cells were labeled using a Zombie Aqua Fixable Viability Kit (BioLegend) and stained with anti-CD16/CD32 (Fc block, BioLegend) followed by anti-CD4\u2013BV605 (clone RM4-5, BioLegend), anti-CD44\u2013FITC (clone IM7, BioLegend), anti-CD62L\u2013PE-Cy7 (clone MEL-14, BioLegend), and anti-CD90/90.1\u2013PE (clone OX-7, BioLegend). Cells were sorted as CD4+ CD44+ CD62L\u2212 CD90/90.1+ (Thy1.1+) or CD90/90.1\u2212 (Thy1.1\u2212) populations directly into Buffer RLT or Buffer RLT Plus (QIAGEN) using a modified FACS Aria II (BD Biosciences). Total RNA was extracted using an RNeasy Micro Kit or an RNeasy Mini Kit (QIAGEN), and RNA integrity scores were determined using an RNA 6000 Pico Kit (Agilent).\n\n### RNA-seq\n\nMultiplexed mRNA libraries were obtained using a TruSeq RNA Library Prep Kit v2 (Illumina) and analyzed using a Bioanalyzer High Sensitivity DNA Chip (Agilent). Libraries were sequenced using a HiSeq 2500 System (Illumina). Paired-end reads (100 bp) were trimmed using Trim Galore (https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/) and assessed for quality using FastQC (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/). Reads were mapped to the mouse GRCm38 reference genome using STAR (Dobin et al., 2013). Counts were assigned to transcripts using featureCounts (Liao et al., 2014) with the GRCm38.84 Ensembl gene build GTF (http://www.ensembl.org/info/data/ftp/index.html/). Differential gene expression analyses were performed using DESeq2 (Love et al., 2014). Genes were discarded from the analysis if differential expression failed to reach significance (adjusted p < 0.05 with Benjamini\u2013Hochberg correction).\n\n### ATAC-seq\n\nATAC-seq was performed as described previously (Buenrostro et al., 2013) using a Nextera DNA Sample Preparation Kit (Illumina). DNA was isolated after library preparation using a MiniElute PCR Purification Kit (QIAGEN). Size selection was performed using a BluePippin System (Sage Science) with 2% Agarose Gel Cassettes (Sage Science). Libraries were sequenced using a HiSeq 4000 System (Illumina). Paired-end reads (100 bp) were trimmed using Trim Galore (https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/) and assessed for quality using FastQC (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/). Reads were mapped to the mouse GRCm38 reference genome using BWA (Li and Durbin, 2009). Duplicate reads were removed using MarkDuplicates (http://broadinstitute.github.io/picard/). Peaks were called using MACS2 (Zhang et al., 2008) in BAMPE mode (adjusted p < 0.05 with Benjamini\u2013Hochberg correction). Differential analysis of open regions was performed using DiffBind (http://bioconductor.org/packages/release/bioc/vignettes/DiffBind/inst/doc/DiffBind.pdf).\n\n### TCR-seq\n\nUnique molecular identifier (UMI)-labeled 5\u2032-RACE TCR cDNA libraries were synthesized using a Mouse TCR Profiling Kit (MiLaboratories). Indexed samples were pooled and sequenced using a MiSeq System (Illumina). Paired-end reads (150 bp) were extracted and clustered by UMI using MiGEC (Shugay et al., 2014). Sequences were discarded from the analysis if the read count was <4 per cDNA. Error correction was performed using MiGEC. Repertoires were extracted using MiXCR (Bolotin et al., 2015). The weighted average use of bulky, charged, and strongly interacting (aromatic and hydrophobic) amino acids positioned centrally in the CDR3\u03b1/\u03b2 sequences and Trbv gene use (weighted by frequency) were calculated using VDJtools (Shugay et al., 2015). Diversity was calculated by downsampling the repertoires to an equal number of UMIs (n = 4300 for TCR\u03b1 and n = 3900 for TCR\u03b2) three separate times and plotting the mean Chao1 index, reflecting lower bound total diversity, and (1 \u2212 normalized Shannon\u2013Wiener index), reflecting clonality. Visualization was achieved using PlotQuantileStats in VDJtools. The mean number of unique nucleotide sequences encoding the same amino acid sequence (convergence) was calculated for the 2000 most prevalent clonotypes in each sample using VDJtools. Overlap was calculated for the 2000 most prevalent clonotypes using F2 metrics to estimate sharing at the amino acid level among V gene-matched sequences in each sample. Cluster analysis was performed using the 500 most prevalent clonotypes in pooled samples (Thy1.1+ versus Thy1.1\u2212). These datasets were analyzed using tcrgrapher (https://github.com/KseniaMIPT/tcrgrapher), an R library based on ALICE (Pogorelyy et al., 2019). The real and expected numbers of neighbors were calculated for each clonotype with a maximum of n = 1 amino acid mismatch. Clonotypes with a significantly higher number of neighbors than expected on statistical grounds (adjusted p < 0.0001 with Benjamini\u2013Hochberg correction) were identified as tcrgrapher hits. The expected number of neighbors was estimated via generation probabilities calculated for each clonotype using OLGA (Sethna et al., 2019), with the selection factor set at Q = 6.27 (Elhanati et al., 2018).\n\n### Bioinformatics\n\nRNA-seq analysis was performed using DESeq2/1.32.0, dplyr/1.0.7, and GenomicRanges/1.44.0. Volcano plots were drawn using ggplot2/3.3.5 and ggrepel/0.9.1. TCR-seq analysis was performed using MiGEC/1.2.9, MiXCR/3.0.13, VDJtools/1.2.1, tidyverse/1.3.1, igraph/1.2.6, ggnetwork/0.5.10, msa/1.22.0, tcrgrapher/0.0.09000, stringdist/0.9.6.3, and ggseqlogo/0.1. Other software packages used across next-generation sequencing platforms included Nextflow (https://www.nextflow.io/) (Di Tommaso et al., 2017), trimgalore/0.6.4 (https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/), FastQC/0.11.8 (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/), multiqc/1.7 (https://multiqc.info/) (Ewels et al., 2016), STAR/2.7.3 (https://github.com/alexdobin/STAR) (Dobin et al., 2013), BWA/0.7.10 (http://bio-bwa.sourceforge.net/) (Li and Durbin, 2009), picard/2.20.2 (http://broadinstitute.github.io/picard/), samtools/1.9 (http://www.htslib.org/) (Danecek et al., 2021), bamtools/2.5.1 (https://github.com/pezmaster31/bamtools) (Barnett et al., 2011), featurecounts/2.0.0 (http://subread.sourceforge.net/) (Liao et al., 2014), and MACS2/2.1.2 (https://pypi.org/project/MACS2/) (Zhang et al., 2008). Venn diagrams were drawn using InteractiVenn (http://www.interactivenn.net) (Heberle et al., 2015). Heatmaps were drawn using Morpheus (https://software.broadinstitute.org/morpheus). ATACseq data were visualized using Integrative Genomics Viewer (Robinson et al., 2011). Gene ontology analysis was performed using GOTermFinder (https://go.princeton.edu/cgi-bin/GOTermFinder). ATAC-seq motif analysis was performed using The MEME Suite (https://meme-suite.org/meme/doc/cite.html?man_type=web) (Bailey et al., 2015). Tbx21 binding motifs were obtained using JASPAR2020 (Fornes et al., 2020).\n\n### Quantification of MCMV\n\nInfectious virus was quantified in organs via plaque assay as described previously (Stack et al., 2015). 3T3 cells were purchased directly from the American Type Culture Collection. Mycoplasma infection was excluded prior to assay. Viral loads in oral lavage were quantified via qPCR (Clement et al., 2016; Kamimura and Lanier, 2014).\n\n### Western blotting\n\nLeukocytes were isolated from SGs and spleens as described previously (Stacey et al., 2011). CD4+ T cells were purified via magnetic separation using a MagniSort Mouse CD4 Positive Selection Kit (Thermo Fisher Scientific). Cell lysates were generated from equal numbers of cells using NuPAGE LDS Sample Buffer (Thermo Fisher Scientific) supplemented with 100 mM dithiothreitol (Sigma-Aldrich). Samples were loaded onto 4\u201312% NuPAGE Bis-Tris Gels (Thermo Fisher Scientific) after boiling and transferred to a PVDF membrane using an XCell II Blot Module (Thermo Fisher Scientific). Blots were probed with anti-arginase-1 (rabbit polyclonal, Thermo Fisher Scientific) and developed using anti-rabbit IgG\u2013HRP (Bio-Rad). Band intensity was determined using a G:BOX Gel Imaging System (Syngene). Blots were then stripped using Restore PLUS Western Blot Stripping Buffer (Thermo Fisher Scientific) and probed again with anti-actin (rabbit polyclonal, Abcam).\n\n### Flow cytometry\n\nLeukocytes were isolated from SGs and spleens as described previously (Stacey et al., 2011). Cells were labeled using a Zombie Aqua Fixable Viability Kit (BioLegend) and stained with anti-CD16/CD32 (Fc block, BioLegend) followed by combinations of anti-CD4\u2013APC-Cy7, anti-CD4\u2013BV605, or anti-CD4\u2013Pacific Blue (clone RM4-5, BioLegend), anti-CD8\u2013BV605 (clone 53.6.7, BioLegend), anti-CD39\u2013Alexa Fluor 647 (clone Duha59, BioLegend), anti-CD44\u2013FITC (clone IM7, BioLegend), anti-CD62L\u2013BV711 or anti-CD62L\u2013PE-Cy7 (clone MEL-14, BioLegend), anti-CD90/90.1\u2013APC, anti-CD90/90.1\u2013BV605, or anti-CD90/90.1\u2013PE (clone OX-7, BioLegend), anti-CD127\u2013BV711 (clone A7R34, BioLegend), anti-CD223\u2013PE (LAG-3) (clone C9B7W, BioLegend), anti-NK1.1\u2013PE (clone PK136, BioLegend), anti-PD-1\u2013BV421 (clone 29F.1A12, BioLegend), anti-TIGIT\u2013APC (clone 1G9, BioLegend), and anti-TIM-3\u2013BV711 or anti-TIM-3\u2013PerCP-Cy5.5 (clone RMT3-23, BioLegend). Tetramer staining was performed as described previously (Clement et al., 2016). The following specificities were used in this study: H-2Db M45 residues 985\u2013993 (HGIRNASFI), H-2Kb IE3 residues 416\u2013423 (RALEYKNL), H-2Kb M38 residues 316\u2013323 (SSPPMFRV), and H-2Kb m139 residues 419\u2013426 (TVYGFCLL) (National Institutes of Health Tetramer Core Facility). Internal antigen expression was determined after fixation/permeabilization in BD Cytofix/Cytoperm Solution (BD Biosciences) or FoxP3/Transcription Factor Staining Buffer (eBioscience). Cells were stained with combinations of anti-arginase-1\u2013APC (clone Met1-Lys322, Bio-Techne) or anti-arginase-1\u2013PE-Cy7 (clone A1ex5, eBioscience), anti-Ki-67\u2013Alexa Fluor 488 (clone 11F6, BioLegend), anti-T-bet\u2013BV605 or anti-T-bet\u2013Pacific Blue (clone 4B10, BioLegend), and anti-TCF1/7\u2013Alexa Fluor 647 (clone C63D9, Cell Signaling Technology). Cells were acquired using an Attune NxT (Thermo Fisher Scientific) or an LSR Fortessa (BD Biosciences). All flow cytometry data were analyzed using FlowJo v10.5.3 or v10.8.1 (FlowJo LLC).\n\n### Quantification of anti-SSA\n\nPlasma samples were obtained from cardiac punctures and assessed for anti-SSA/Ro 60 IgG levels via ELISA (Alpha Diagnostics).\n\n### In vitro induction of Arg1\n\nSpleens were harvested from OT-II mice (n = 13) and digested for 30 min via the injection of collagenase-D (Thermo Fisher Scientific). Cells were isolated and purified via magnetic separation using a Pan Dendritic Cell Isolation Kit (Miltenyi Biotec) and a MagniSort Mouse CD4 Positive Selection Kit (Thermo Fisher Scientific). Cultures were established using 2 \u00d7 104 purified CD11c+ dendritic cells/ml and 1 \u00d7 105 purified CD4+ T cells/ml as described previously (Saraiva et al., 2009). Cells were cultured in the absence or presence of IL-12 (3 ng/ml, PeproTech) without or with the OVA peptide ISQAVHAAHAEINEAGR (residues 323\u2013339, GenScript) at a concentration of 0.01 or 0.5 \u03bcM in RPMI medium supplemented with 100 U/ml penicillin, 100 \u03bcg/ml streptomycin, 2 mM L-glutamine, and 10% heat-inactivated fetal calf serum (all from Thermo Fisher Scientific). On day 7, cells were unexposed (medium control) or exposed to plate-bound anti-CD3 (2 \u03bcg/ml, clone 145-2C11, BioLegend) and anti-CD28 (2 \u03bcg/ml, clone 37.51, BioLegend). After 2 hr, the cultures were supplemented without or with brefeldin A (2 \u03bcg/ml, Sigma-Aldrich), and after a further 2 hr, cells were labeled using a Zombie Aqua Fixable Viability Kit (BioLegend) and stained with anti-CD16/CD32 (Fc block, BioLegend) followed by anti-CD4\u2013Pacific Blue (clone RM4-5, BioLegend) and anti-CD8\u2013BV605 (clone 53.6.7, BioLegend). Internal antigen expression was determined after fixation/permeabilization in BD Cytofix/Cytoperm Solution (BD Biosciences). Cells were stained with anti-arginase-1\u2013PE-Cy7 (clone A1ex5, eBioscience), anti-IFN\u03b3\u2013FITC (clone XMG1.2, BioLegend), and anti-IL-10\u2013APC (clone JES5-16E3, eBioscience). Cells were acquired using an Attune NxT (Thermo Fisher Scientific), and data were analyzed using FlowJo v10.5.3 (FlowJo LLC). Supernatants were harvested from cultures that lacked brefeldin A after a further 48 hr and analyzed for Arg1 protein expression via ELISA (Aviva Systems Biology).\n\n### Functional assays\n\nLeukocytes from SGs and spleens were stimulated with peptides at a final concentration of 3 \u03bcg/ml for 2 hr at 37\u00b0C. The following peptides were used to stimulate CD4+ T cells: m09 residues 133\u2013147 (GYLYIYPSAGNSFDL), M25 residues 409\u2013423 (NHLYETPISATAMVI), m139 residues 560\u2013574 (TRPYRYPRVCDASLS), and m142 residues 24\u201338 (RSRYLTAAAVTAVLQ). The cultures were then supplemented with brefeldin A (2 \u03bcg/ml, Sigma-Aldrich) and incubated for a further 4 hr at 37\u00b0C. After stimulation, cells were labeled using a Zombie Aqua Fixable Viability Kit (BioLegend) and stained with anti-CD16/CD32 (Fc block, BioLegend) followed by anti-CD4\u2013APC-Cy7 or anti-CD4\u2013BV605 (clone RM4-5, BioLegend). Internal antigen expression was determined after fixation/permeabilization in BD Cytofix/Cytoperm Solution (BD Biosciences). Cells were stained with combinations of anti-IFN\u03b3\u2013APC-Cy7, anti-IFN\u03b3\u2013FITC, or anti-IFN\u03b3\u2013Pacific Blue (clone XMG1.2, BioLegend), anti-IL-10\u2013APC or anti-IL-10\u2013FITC (clone JES5-16E3, eBioscience), and anti-T-bet\u2013BV605 (clone 4B10, BioLegend). Cells were acquired using an Attune NxT (Thermo Fisher Scientific), and data were analyzed using FlowJo v10.5.3 (FlowJo LLC).\n\n### Statistics\n\nSample sizes for next-generation sequencing experiments were calculated using G*Power (https://www.psychologie.hhu.de/arbeitsgruppen/allgemeine-psychologie-und-arbeitspsychologie/gpower.html), where a minimum of n = 5 pooled mice per group was used to detect a difference in means with 90% power and an \u03b1 value set at 0.05 across a minimum of three replicates. All outliers were included in the final datasets. Comparisons between two groups were performed using the Mann\u2013Whitney U test. Significance across all tests is reported as *p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001.\n",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "ee88a9e4-8d34-453e-b7a4-51473dc070b8",
+      "submission_id": "849f38b0-07f7-419b-b790-a709e8fa63a8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stipan Jonjic, https://ror.org/05r8dqr10 University of Rijeka Croatia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79165.sa0](https://doi.org/10.7554/eLife.79165.sa0)\n\nThis study analyzes the development and functional relevance of IL-10-producing regulatory T cells in a mouse model of cytomegalovirus infection. The results indicate that IL-10-producing CD4+ T cells express genes associated with chronically activated TH1-like cells, undergo clonal expansion, and inhibit antiviral T cell responses via the secretion of arginase, an enzyme that breaks down an amino acid required for T cell activation and proliferation. These findings reveal a novel and important immunoregulatory mechanism that facilitates viral persistence.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Stipan Jonjic, https://ror.org/05r8dqr10 University of Rijeka Croatia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79165.sa1](https://doi.org/10.7554/eLife.79165.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Inhibitory IL-10-producing CD4+ T cells are T-bet-dependent and facilitate cytomegalovirus persistence via coexpression of arginase-1\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Satyajit Rath as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and since they raise distinct crucial questions, it is requested that you respond, either with additional evidence and/or with clarifications, to the individual reviews below.\n\nReviewer #1 (Recommendations for the authors):\n\nAlthough the results of the present study are interesting and potentially relevant, some questions remained unanswered.\n\n1. Although it is well known that CD4 T cells, rather than CD8 cells, are pivotal in controlling MCMV in the SG, the use of Cd4cre mice might have also affected the functionality of CD8 cells. This question should be experimentally addressed.\n\n2. It remains unclear how Arg-1 expression was regulated and whether this effect is specific/limited to the salivary gland. What is the experimental evidence that frequent antigen exposure triggers Arg1 expression?\n\n3. Does Arg1 causes MCMV persistence, or does the virus persistence in the SG trigger the formation of IL-10-producing Arg1 positive CD4 T cells? Since MCMV can persist for months in the salivary glands, even in immunocompetent mice, the dynamics of IL-10-producing CD4 T cells during and after the resolution of persistent infection should be investigated.\n\n4. It is well established that a single passage of tissue-culture-derived MCMV is sufficient to result in a highly virulent MCMV. Therefore, comparing the virulence of salivary gland-derived MCMV from Arg1 positive and Arg1 negative mice would be informative.\n\nReviewer #2 (Recommendations for the authors):\n\nThe novelty of the findings are limited by a recent paper (JCI Insight. 2019 Dec 19; 4(24): e129756) that shows that Arginase-2 in FOXP3+Tregs contributes to suppression. This study has to be quoted and discussed.\n\nIl-10-T-cells in Figure 1 and 2 might contain bystander cells that could even be entirely responsible for the differences in gene expression and clonal expansions. This needs to be ruled out. IFN-g producing Il-10- cells would have been much more convincing. A list of differentially expressed genes is missing, how were the shown genes selected, by p-value, fold expression or arbitrarily?\n\nFigure 3: Inducible CD4 Cre mice would have been much more convincing to rule out a contribution of CD8+T-cells (it is stated in the Discussion that CD8+T-cells do not express arginase, but this data needs to be shown). It must also be controlled if arginase is expressed in IL-10- cells, otherwise the Figure title is simply an overstatement. CD4-Cre mice without the floxed alleles need to be analysed as controls.\n\nFigure 4//5: Based on the literature a similar role could be expected for the related T-box transcription factor Eomesodermin, the choice of T-bet seems a bit arbitrary. T-bet ko cells fail to differentiate to effector cells, the molecular mechanism of arginase-1 induction remains therefore unclear, as also admitted by the authors.\n\nReviewer #3 (Recommendations for the authors):\n\nFigure 1:\n\nTo which extent Thy1.1 expression correlates with IL-10 protein staining in the SG of MCMV-infected mice? This should be provided in the supplement. Are all of these, or the majority of these cells, antigen-specific, i.e. what would be the correlation with for example available M25 tetramer staining or peptide pool restimulation?\n\nIt remains unclear to which extent the phenotype of in vivo generated IL-10+CD4+T cells overlaps with conventional in vivo generated Th1 cells (maybe even ones of acutely MCMV-infected mice), cytotoxic Th1 cells (for example lung cytotoxic Th1 cells) and Tr1-like cells (either generated in vitro with IL-27 and TGFb or isolated from an in vivo setting). Which gene families constitute 1646 DEG in Figure 1E.\n\nThe authors could also co-stain IFN\u03b3 and GzmB with Thy1.1 after polyclonal or even antigen-stimulation in vitro.\n\nSome genes associated with the induction of IFN-g, including Il18r1 and il18rap, were downregulated in Thy1.1+ CD4+ T cells, however IFN\u03b3 does not seem to be differentially regulated, or? While Thy1.1+ cells express a module of inhibitory genes, their expression of Tcf1/Tcf7 seems to be downregulated? Is any difference in the expression of Tox observed?\n\nFigure 2:\n\nThe authors show that the Thy1.1+ pool shows a narrower and more convergent repertoire, which could be an indication of a clonally expanded population. VDJtools, which the authors use, offers a more comprehensive diversity estimation with PlotQuantileStats. This would enable the authors to visualize the repertoire clonality of Thy1.1+ vs Thy1.1- pools.\n\nFor better understanding, is the clonality analysis performed on a sample derived of several pooled mice? Have the authors had the opportunity to assess the degree of clone sharing between e.g., splenic and salivary gland cells?\n\nFigure 3:\n\nThe authors demonstrate higher transcript levels and open chromatin structures of Arg1 in Thy1.1+ cells. They should provide a co-staining of Arg-1 and Thy1.1 on a protein level.\n\nAlthough CD4 T cells are critical in controlling MCMV in the SG, Cd4cre mice target also CD8 and NKT cells can the authors confirm there is no Arginase-1 expression in these cells as well that could contribute to MCMV control in SG? This could potentially be solved by adoptive transfer of WT vs. Arg1-/- CD4 T cells. Otherwise, conclusion of this figure should be downplayed as it is not clear that Arg1 expression by CD4+ t cells selectively inhibit accumulation of virus-specific CD4+ and CD8+ T cells.\n\nIs there any impact on the IL-10 expression by CD4+ T cells observed in the SG of CD4Cre Arg1flox mice infected with MCMV?\n\nNK cells are known to contribute to the viral control in SG and TRAIL+ NK cells capable of killing activated CD4+ T cells accumulate in the SG during CMV infection (Schuster et al. 2011). Do the authors observe any differences in the expression of DR5 in relation to Thy1.1?\n\nAre there any functional and phenotypical advantages in the CD4+ T cell compartment of uninfected mice?\n\nThe proliferation effect observed in CD4CreArg1flox mice \u2013 can it be reversed by Arginase-1 supplementation?\n\nFigure 4:\n\nIn figure 3A, are the CD4 T cells pre-gated on CD44? One would assume that the majority of CD4+ T cells in the SG during CMV infection would be T-bet+, i.e., of Th1 phenotype. Can this be attributed to the technical issue of T-bet staining? Also does the FMO/Ab staining come from the same mouse as the % of Thy1.1 cells seem to increase from upper (11.9%) to lower (19.43%) plot?\n\nFigure 5:\n\nIn this figure the authors demonstrate that IFN\u03b3-expressing cells are increased with T-bet deficiency and as a result the virus is cleared better. What is the correlation between IFN-g and Arg-1 expression? Are the virus specific IFN\u03b3-producing cells in T-bet-deficient mice also of CD44loPD-1loCD62Lhi phenotype? The title of the figure says that IL-10-producing CD4+ T cells develop in a T-bet-dependent manner, however the authors do not probe for IL-10 expression here.\n\nWhat formal proof demonstrates that repetitive antigen exposure results in Arginase-1 upregulation? This could potentially be mimicked in vitro (Saraiva et al., 2009).\n\nIn Figure 5H, significance in viral clearance seems to be driven by a number of plaques observed in a sample of one mouse. Even like that, the difference does not reach even half a log a difference. I suggest increasing n to strengthen this result. In contrast to Cd4Cre Tbet-flox mice which seem to compensate for the lack of T-bet by day 28 there is no protective effect, viral control is still observed in Cd4Cre Arg1flox (this paper) and CD4Cre IL10-flox (author\u00b4s previous publication Clement et al., 2016). How do the authors comment on this?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Inhibitory IL-10-producing CD4+ T cells are T-bet-dependent and facilitate cytomegalovirus persistence via coexpression of arginase-1\" for further consideration by eLife. Your revised article has been evaluated by 2 reviewers, Satyajit Rath (Senior Editor) and a Reviewing Editor.\n\nAlthough the conclusion was that the manuscript has been improved, there are some remaining issues that need to be addressed, as outlined below. Please note that we do not expect you to add new data, but to discuss your findings in the light of suggestions which can be found below.\n\nReviewer #2 (Recommendations for the authors):\n\nIn the revision, the authors have performed all requested experiments.\n\nI do however not think that the interpretation of their data is acceptable in its current form, because they ignore a large body of published evidence on IL-10 producing T-cells that is highly relevant to their study. There is already a lot of confusion in the field, and ignoring seminal work performed by others does not contribute to reaching a general consensus on the molecular identity of these cells.\n\nThe authors show in supplementary Figure 5 that IL-10 producing regulatory T-cells express high levels of Eomesodermin, a rather surprising finding for CD4+T-cells, but comment on this data only briefly on p11: \"No such difference in expression frequency were observed for the related transcription factor Eomesodermin (Eomes)\". This is really a misleading statement since the authors do show that the MFI of Eomes is higher in IL-10 producing T-cells. However, no statistical analysis is provided, and a control with CD4+T-cells in the absence of CMV infection (presumably Eomes-negative) is also missing. In any case, the large majority of IL-10+ T-cells express high levels of Eomesodermin, while the staining of T-bet suggests that T-bet expression may be actually lower (of course this may be due to technical issues). Thus, the choice to focus on T-bet rather than on Eomes is in my opinion an arbitrary one. I understand that it would take too much work to perform all relevant experiments both with T-bet and Eomes-deficient T-cells in a revision, but ignoring all the published evidence on Eomesodermin-expressing, IL-10 producing CD4+T-cells is simply unacceptable. The authors state moreover in the Introduction that IL-10 producing T-cells in their system \"are phenotypically different from type 1 regulatory T-cells (Clement 2016)\" In their cited work I could not find a detailed phenotypic characterization, so it is unclear to me how the authors came to this conclusion. Moreover, in the revised article, they document in contrast that the IL-10 producing \"inhibitory\" T-cells they study do express all markers that are well-known to be associated with Tr1-cells, namely LAG3, PD1 and other checkpoint receptors, CCR5, GzmK etc etc.(Brockmann, Soukou et al. 2018, Roessner, Llao Cid et al. 2021, Thelen, Schipperges et al. 2023) Thus, the relationship of the IL-10 producing \"inhibitory\" T-cells to Tr1-cells, in particular those that express Eomes, needs to be discussed in detail and the relevant articles have to be cited. Notably, also Eomes-expressing Tr1-cells are T-bet dependent (Zhang, Lee et al. 2017) and clonally expanded (Bonnal, Rossetti et al. 2021).\n\nBonnal, R. J. P., G. Rossetti, E. Lugli, M, et. al. (2021). \"Clonally expanded EOMES(+) Tr1-like cells in primary and metastatic tumors are associated with disease progression.\" Nat Immunol 22(6): 735-745.\n\nBrockmann, L., S. Soukou, B. Steglich, et. al. (2018). \"Molecular and functional heterogeneity of IL-10-producing CD4(+) T cells.\" Nat Commun 9(1): 5457.\n\nRoessner, P. M., L. Llao Cid, E. Lupar, T, et. al. (2021). \"EOMES and IL-10 regulate antitumor activity of T regulatory type 1 CD4(+) T cells in chronic lymphocytic leukemia.\" Leukemia 35(8): 2311-2324.\n\nThelen, B., V. Schipperges, P. Knorlein, J. F, et. al. (2023). \"Eomes is sufficient to regulate IL-10 expression and cytotoxic effector molecules in murine CD4(+) T cells.\" Front Immunol 14: 1058267.\n\nZhang, P., J. S. Lee, K. H. Gartlan, I. S, et. al. (2017). \"Eomesodermin promotes the development of type 1 regulatory T (TR1) cells.\" Sci Immunol 2(10).\n",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "86f4b31a-f23c-4307-9b13-c2644225c55d",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C1",
+      "claim": "IL-10-producing CD4+ T cells in the salivary glands during chronic MCMV infection peak on day 14 post-infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike mucosal sites in the respiratory tract (Zhang et al., 2019), ongoing viral replication in this model occurs primarily in the SGs, facilitated by the induction of CD4+ T cells that produce IL-10 (Humphreys et al., 2007), which peak on day 14 post-infection (p.i.) (Clement et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Clement et al., 2016, which provides published evidence for the timing of IL-10-producing CD4+ T cell peak.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "97e6c043-7629-4b3b-8c08-df4e98a11986",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C2",
+      "claim": "Approximately 10-30% of CD4+ T cells in the salivary glands are Thy1.1+ at day 14 post-infection with MCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "At this time point, we found that approximately 10\u201330% of CD4+ T cells in the SGs were Thy1.1+, of which ~95% displayed an effector memory phenotype (CD44hi CD62Llo) (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in Figure 1\u2014figure supplement 1A, which shows flow cytometry measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "c4683927-890b-41a4-a727-4600fd84afd4",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C3",
+      "claim": "Approximately 95% of Thy1.1+ CD4+ T cells display an effector memory phenotype (CD44hi CD62Llo).",
+      "claim_type": "EXPLICIT",
+      "source": "At this time point, we found that approximately 10\u201330% of CD4+ T cells in the SGs were Thy1.1+, of which ~95% displayed an effector memory phenotype (CD44hi CD62Llo) (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in Figure 1\u2014figure supplement 1A showing phenotypic characterization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "ca89f972-3400-47f1-8684-d276bba2fc00",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C4",
+      "claim": "IL-10-producing CD4+ T cells universally express Thy1.1 after polyclonal stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "IL-10-producing CD4+ T cells were also induced by polyclonal stimulation and universally expressed Thy1.1 (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data shown in Figure 1\u2014figure supplement 1B demonstrating IL-10 and Thy1.1 coexpression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "0019754c-13c4-40fc-9f23-499a8947abf0",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C5",
+      "claim": "Thy1.1+ CD4+ T cells are transcriptionally distinct from Thy1.1\u2212 CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Principal component analysis (PCA) of the RNA-seq data revealed that Thy1.1+ CD4+ T cells were transcriptionally distinct from Thy1.1\u2212 CD4+ T cells (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data analyzed via PCA and shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "33d31d89-0483-4a7d-a749-e1d3689e0722",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C6",
+      "claim": "Il10 is highly upregulated in Thy1.1+ CD4+ T cells compared to Thy1.1\u2212 CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Il10 was highly upregulated in Thy1.1+ CD4+ T cells (Figure 1A), and chromatin was more open in the Il10 promoter region compared with Thy1.1\u2212 CD4+ T cells (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data shown in Figure 1A and ATAC-seq data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "2d05e89b-45ad-4198-a308-9d6f93426eba",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C7",
+      "claim": "Chromatin is more open in the Il10 promoter region in Thy1.1+ CD4+ T cells compared with Thy1.1\u2212 CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Il10 was highly upregulated in Thy1.1+ CD4+ T cells (Figure 1A), and chromatin was more open in the Il10 promoter region compared with Thy1.1\u2212 CD4+ T cells (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ATAC-seq data shown in Figure 1B demonstrating chromatin accessibility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "6daa8a7e-3cf1-4e54-94f1-d2dc5664e152",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C8",
+      "claim": "Genes associated with localization and cell migration are upregulated in Thy1.1+ CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes associated with localization and cell migration (Ccl7, Cxcl2, Cxcl12, Ccl5, Cxcl14, Ccl28, Ccl12, Ccr1, and Ccr5), cell signaling (Ceacam1, Havcr2, Tigit, Lag3, Cd40, Cd36, and Itgb4), regulation of cellular processes (Prdm1, Gata2, Yes1, Card10, and Il33), and metabolism (Elovl7, Galnt3, Car13, Aldh1l1, and Ildrl), including glycolysis and the tricarboxylic acid cycle (Fbp2 and Sdhc), oxidative phosphorylation (Osgin1), and the mitochondrial respiratory chain (Mt-Nd1, Ndufs6, Ndufb8, Uqcrfs1, and Uqcr11), were also upregulated in Thy1.1+ CD4+ T cells, alongside genes associated with activation (Fgl2, Cxcr2, and Nfil3) and antiviral effector functions (Gzmb, Prf1, Gzmk, and Lyz2) (Figure 1A, C, D and Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data shown in multiple figures (1A, C, D and supplement 1D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "d1a64480-8365-4e01-ac1e-a60c657abca6",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C9",
+      "claim": "Genes associated with antiviral effector functions (Gzmb, Prf1, Gzmk, and Lyz2) are upregulated in Thy1.1+ CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes associated with localization and cell migration (Ccl7, Cxcl2, Cxcl12, Ccl5, Cxcl14, Ccl28, Ccl12, Ccr1, and Ccr5), cell signaling (Ceacam1, Havcr2, Tigit, Lag3, Cd40, Cd36, and Itgb4), regulation of cellular processes (Prdm1, Gata2, Yes1, Card10, and Il33), and metabolism (Elovl7, Galnt3, Car13, Aldh1l1, and Ildrl), including glycolysis and the tricarboxylic acid cycle (Fbp2 and Sdhc), oxidative phosphorylation (Osgin1), and the mitochondrial respiratory chain (Mt-Nd1, Ndufs6, Ndufb8, Uqcrfs1, and Uqcr11), were also upregulated in Thy1.1+ CD4+ T cells, alongside genes associated with activation (Fgl2, Cxcr2, and Nfil3) and antiviral effector functions (Gzmb, Prf1, Gzmk, and Lyz2) (Figure 1A, C, D and Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data showing upregulation of effector genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "9063c61b-f2dc-416e-b702-0490b0f3916a",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C10",
+      "claim": "Thy1.1+ CD4+ T cells lack gene signatures classically associated with cytotoxic CD4+ T cells, such as upregulation of Klrc1 and Crtam.",
+      "claim_type": "EXPLICIT",
+      "source": "These latter gene profiles suggested the potential for cytolytic activity, but we found no evidence of a concomitant increase in the expression levels of granzyme B protein among Thy1.1+ CD4+ T cells (data not shown), which also lacked gene signatures classically associated with cytotoxic CD4+ T cells, such as the upregulation of Klrc1 and Crtam (https://doi.org/10.5281/zenodo.7243956).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq data deposited at the provided DOI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "a841af1c-dc63-4c8b-9910-b4fe65c29a1b",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C11",
+      "claim": "Il7 and Tcf1/7 are downregulated in Thy1.1+ CD4+ T cells at both the transcript and protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Other genes that were downregulated in Thy1.1+ CD4+ T cells included Il7 and Tcf1/7 (Figure 1A, D), which extended to the protein level (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data (Figure 1A, D) and flow cytometry data (Figure 1F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "78742fb5-c066-48bb-8fb5-171b56d72233",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C12",
+      "claim": "The downregulation of IL-7R and TCF1/7 in Thy1.1+ CD4+ T cells coincides temporally with the rapid contraction of virus-specific IL-10-producing CD4+ T cells during early stages of viral chronicity.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative underexpression of these cell survival-associated factors coincided temporally with the rapid contraction of virus-specific IL-10-producing CD4+ T cells that typically occurs during the early stages of viral chronicity (Clement et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by inference from the data and citation to Clement et al., 2016.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "c97780fb-8e52-4ab6-944e-6abaf8cdc8a4",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C13",
+      "claim": "Thy1.1+ and Thy1.1\u2212 CD4+ T cells express similar levels of transcripts encoding DR5.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Thy1.1+ and Thy1.1\u2212 CD4+ T cells expressed similar levels of transcripts encoding DR5 (https://doi.org/10.5281/zenodo.7243956), which engages natural killer (NK) cell-expressed TRAIL and induces CD4+ T cell death in the SGs (Schuster et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq data deposited at the provided DOI and citation to Schuster et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "07e0d606-82dc-453e-ae98-4fca2d7355af",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C14",
+      "claim": "MCMV-induced Thy1.1+ CD4+ T cells downregulate the exhaustion-associated transcription factor Tox1.",
+      "claim_type": "EXPLICIT",
+      "source": "Counterintuitively, we found that MCMV-induced Thy1.1+ CD4+ T cells downregulated the exhaustion-associated transcription factor Tox1 but nonetheless expressed a module of inhibitory genes, including Lag3, Fgl2, Havcr2, and Entpd1 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "69f96371-8999-463f-8f35-8e5c03ee16dd",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C15",
+      "claim": "MCMV-induced Thy1.1+ CD4+ T cells express a module of inhibitory genes, including Lag3, Fgl2, Havcr2, and Entpd1.",
+      "claim_type": "EXPLICIT",
+      "source": "Counterintuitively, we found that MCMV-induced Thy1.1+ CD4+ T cells downregulated the exhaustion-associated transcription factor Tox1 but nonetheless expressed a module of inhibitory genes, including Lag3, Fgl2, Havcr2, and Entpd1 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "d7f0d078-8810-42d3-a3bf-c266cedda387",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C16",
+      "claim": "Inhibitory molecules LAG-3, PD-1, TIM-3, CD39, and TIGIT are expressed at the protein level in Thy1.1+ CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These inhibitory molecules were also expressed at the protein level, alongside PD-1 (Figure 1G and Figure 1\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 1G and Figure 1\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "74ac9711-8222-4b30-85d2-0e7bfd083e92",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C17",
+      "claim": "Thy1.1+ CD4+ T cells express LAG-3 and PD-1 more commonly than Thy1.1\u2212 CD4+ T cells after preselection based on IFN\u03b3 induction.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, differential bystander activation seemed unlikely, because Thy1.1+ CD4+ T cells expressed LAG-3 and PD-1 more commonly than Thy1.1\u2212 CD4+ T cells after preselection based on the induction of IFN\u03b3 (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 1\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "4fb624bb-2d66-42ed-b4ce-074ce60196e2",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C18",
+      "claim": "IL-10-producing CD4+ T cells exhibit a highly differentiated TH1-like profile during chronic infection with MCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data showed that IL-10-producing CD4+ T cells exhibited a highly differentiated TH1-like profile, characterized by the upregulation of various inhibitory molecules and the downmodulation of IFN\u03b3 expression lacking concordance with known signatures of exhaustion, during chronic infection with MCMV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary inference from multiple data types presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "60599914-53b3-48e7-b1bc-2994d2bbd61f",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C19",
+      "claim": "IL-10-producing CD4+ T cells recognize a broad range of viral antigens during chronic infection with MCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "IL-10-producing CD4+ T cells recognize a broad range of viral antigens during chronic infection with MCMV (Clement et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Clement et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "0a5a15b1-dd77-42e7-bc79-c58df0f32fda",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C20",
+      "claim": "The repertoires of Thy1.1+ CD4+ T cells are less diverse than the repertoires of Thy1.1\u2212 CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The repertoires of Thy1.1+ CD4+ T cells were less diverse and incorporated more prominent clonal expansions compared with the repertoires of Thy1.1\u2212 CD4+ T cells (Figure 2A, B and Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by TCR-seq data shown in Figure 2A, B and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "ba349ecf-a4e2-454c-ac23-87e81c4145de",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C21",
+      "claim": "Thy1.1+ CD4+ T cells incorporate more prominent clonal expansions compared with Thy1.1\u2212 CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The repertoires of Thy1.1+ CD4+ T cells were less diverse and incorporated more prominent clonal expansions compared with the repertoires of Thy1.1\u2212 CD4+ T cells (Figure 2A, B and Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by TCR-seq data showing clonality metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "f28358b0-8287-4339-aa55-050571d88217",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C22",
+      "claim": "The number of nucleotide variants encoding each CDR3\u03b1 and CDR3\u03b2 amino acid sequence is higher overall among Thy1.1+ CD4+ T cells versus Thy1.1\u2212 CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the number of nucleotide variants that encoded each complementarity-determining region (CDR)3\u03b1 and CDR3\u03b2 amino acid sequence, an indicator of antigen-specific convergence (Logunova et al., 2020), was higher overall among Thy1.1+ CD4+ T cells versus Thy1.1\u2212 CD4+ T cells (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by TCR-seq data shown in Figure 2C and citation to Logunova et al., 2020.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "351ff9e1-c85b-46bc-9def-4ed431a9442b",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C23",
+      "claim": "There are differences in Trbv gene use that distinguish Thy1.1+ CD4+ T cells from Thy1.1\u2212 CD4+ T cells, with a general preference for Trbv3, Trbv5, and Trbv31.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, there were some differences in Trbv gene use that distinguished Thy1.1+ CD4+ T cells from Thy1.1\u2212 CD4+ T cells, albeit with a general preference for Trbv3, Trbv5, and Trbv31 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by TCR-seq data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "d67557ed-0f1c-4b65-8b1a-4c6d24de5d83",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C24",
+      "claim": "Clusters of homologous TCR\u03b2 variants are detected predominantly among Thy1.1+ CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, clusters of homologous TCR\u03b2 variants, identified using the statistical model ALICE (Pogorelyy et al., 2019), were detected predominantly among Thy1.1+ CD4+ T cells (Figure 2E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by TCR-seq data analyzed using ALICE and shown in Figure 2E\u2013G, with citation to Pogorelyy et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "d168da1a-ff53-49c2-9a08-8432f92b4eb8",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C25",
+      "claim": "The TCR\u03b1 and TCR\u03b2 repertoires overlap considerably between Thy1.1+ CD4+ T cells and Thy1.1\u2212 CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that none of these differences were absolute. For example, the clusters of TCR\u03b2 variants identified among Thy1.1+ CD4+ T cells also occurred at lower cumulative frequencies among Thy1.1\u2212 CD4+ T cells (Figure 2E\u2013G), and the TCR\u03b1 and TCR\u03b2 repertoires overlapped considerably between Thy1.1+ CD4+ T cells and Thy1.1\u2212 CD4+ T cells (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by TCR-seq data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "c1b491fc-e0c0-42b0-a965-94819ee894fb",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C26",
+      "claim": "There are no prominent differences in the physicochemical properties of amino acids in the central parts of the CDR3\u03b1 and CDR3\u03b2 loops between Thy1.1+ CD4+ T cells and Thy1.1\u2212 CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, there were no prominent differences in the physicochemical properties of amino acids in the central parts of the CDR3\u03b1 and CDR3\u03b2 loops, which generally differ among functionally discrete subsets of CD4+ T cells (Kasatskaya et al., 2020), to indicate an ontogenetic divergence between Thy1.1+ CD4+ T cells and Thy1.1\u2212 CD4+ T cells (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by TCR-seq data shown in Figure 2\u2014figure supplement 1C and citation to Kasatskaya et al., 2020.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "f2f82169-e472-469d-af41-562a06eacaa0",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C27",
+      "claim": "Common molecular signatures predominate among Thy1.1+ CD4+ T cells, consistent with an antigen-driven process of differentiation leading to IL-10 production.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data revealed the presence of common molecular signatures that predominated among Thy1.1+ CD4+ T cells, consistent with the notion of an antigen-driven process of differentiation leading to the production of IL-10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the TCR-seq data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "bca243cc-9091-49d9-82da-51821e9310a3",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C28",
+      "claim": "Thy1.1+ CD4+ T cells significantly upregulate Arg1.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis of inhibitory gene expression revealed one particularly intriguing feature, namely that Thy1.1+ CD4+ T cells significantly upregulated Arg1 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "54c2b72b-23c1-4f5f-accc-2678ea534ab8",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C29",
+      "claim": "Arg1 promotes the catalytic breakdown of L-arginine.",
+      "claim_type": "EXPLICIT",
+      "source": "Arg1 promotes the catalytic breakdown of L-arginine (Munder, 2009) and has been shown to inhibit the proliferation of T cells (Czystowska-Kuzmicz et al., 2019; Rodriguez et al., 2004; Rodriguez et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Munder, 2009 and other studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "100787af-0ee7-4ca9-a9d6-52ae0aa835a7",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C30",
+      "claim": "Arg1 has been shown to inhibit the proliferation of T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Arg1 promotes the catalytic breakdown of L-arginine (Munder, 2009) and has been shown to inhibit the proliferation of T cells (Czystowska-Kuzmicz et al., 2019; Rodriguez et al., 2004; Rodriguez et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "6e74c2fd-ab6b-45a6-a5a4-333c5005480a",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C31",
+      "claim": "Arg1 is expressed at the protein level by CD4+ T cells in the salivary glands during chronic MCMV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this knowledge gap, we first confirmed expression at the protein level via Western blotting (Figure 3A) in experiments incorporating control mice lacking the ability to express Arg1 in the CD4+ lineage (Cd4Cre/+Arg1flox/flox).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "a4f41afe-9684-45cf-8c4a-e2bbf047c172",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C32",
+      "claim": "Chromatin is open around Arg1 in Thy1.1+ CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We then revealed the open chromatin structure around Arg1 in Thy1.1+ CD4+ T cells (Figure 3B) and further probed the expression of Arg1 versus Thy1.1 among CD4+ T cells via flow cytometry (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ATAC-seq data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "d3005232-1b4e-4e65-a2e5-0d2ef1291b78",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C33",
+      "claim": "Arg1 is expressed by CD4+ T cells almost exclusively in the salivary glands.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data showed that Arg1 was expressed by CD4+ T cells almost exclusively in the SGs (Figure 3A, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot and flow cytometry data shown in Figure 3A and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "f34d30c6-85d7-4f32-b6b5-8d47797bfff0",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C34",
+      "claim": "Only CD4+ T cells contribute significantly to Arg1 protein concentrations in SG homogenates during chronic infection with MCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion experiments nonetheless revealed that only CD4+ T cells contributed significantly to Arg1 protein concentrations in SG homogenates during chronic infection with MCMV (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by depletion experiments shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "05896b5a-e001-47bf-9b81-dbd7764cfa2f",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C35",
+      "claim": "High-dose OVA323\u2013339 in combination with IL-12 induces the development of CD4+ T cells that express Arg1 and IL-10 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite constitutively high expression levels of Arg1, only high-dose OVA323\u2013339 in combination with IL-12 induced the development of CD4+ T cells that expressed Arg1 and IL-10, and importantly, all IL-10-producing CD4+ T cells coexpressed Arg1 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vitro culture data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "5387af7b-f0da-4100-b8f7-96363cd66581",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C36",
+      "claim": "All IL-10-producing CD4+ T cells coexpress Arg1 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite constitutively high expression levels of Arg1, only high-dose OVA323\u2013339 in combination with IL-12 induced the development of CD4+ T cells that expressed Arg1 and IL-10, and importantly, all IL-10-producing CD4+ T cells coexpressed Arg1 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vitro culture data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "b68e05de-5b14-4101-aafc-2841d5c5b25d",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C37",
+      "claim": "Arg1 protein concentrations in culture supernatants increase substantially after stimulation with high-dose OVA323\u2013339 in the presence of IL-12.",
+      "claim_type": "EXPLICIT",
+      "source": "Arg1 protein concentrations in culture supernatants also increased substantially after stimulation with high-dose OVA323\u2013339 in the presence of IL-12 (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ELISA data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "635e91ec-a892-4fb2-b953-6a50628775eb",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C38",
+      "claim": "Arg1 expression is a hallmark of IL-10-producing CD4+ T cells, which develop almost exclusively in the salivary glands during chronic infection with MCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data suggested that Arg1 expression was a hallmark of IL-10-producing CD4+ T cells, which developed almost exclusively in the SGs during chronic infection with MCMV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "201d0427-743a-4046-9141-f013dcdffaee",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C39",
+      "claim": "Lineage-specific deletion of Arg1 does not impact the function or phenotype of CD4+ T cells in naive mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Lineage-specific deletion of Arg1 did not impact the function or phenotype of CD4+ T cells in naive mice (Figure 3\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 3\u2014figure supplement 1C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "6ad288e0-a110-433f-a65f-7cb9979cfc2d",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C40",
+      "claim": "Higher numbers of IFN\u03b3-expressing CD4+ T cells are observed in the salivary glands of Cd4Cre/+Arg1flox/flox versus Cd4+/+Arg1flox/flox mice during chronic MCMV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher numbers of IFN\u03b3-expressing CD4+ T cells (Figure 4A) and higher frequencies of proliferating (Ki-67+) CD4+ T cells (Figure 4B) were nonetheless observed after viral antigen stimulation in the SGs of Cd4Cre/+Arg1flox/flox versus Cd4+/+Arg1flox/flox mice during the chronic phase of infection with MCMV.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "d2fe400f-0311-4504-a22a-b958fb2235f0",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C41",
+      "claim": "Higher frequencies of proliferating (Ki-67+) CD4+ T cells are observed in the salivary glands of Cd4Cre/+Arg1flox/flox versus Cd4+/+Arg1flox/flox mice during chronic MCMV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher numbers of IFN\u03b3-expressing CD4+ T cells (Figure 4A) and higher frequencies of proliferating (Ki-67+) CD4+ T cells (Figure 4B) were nonetheless observed after viral antigen stimulation in the SGs of Cd4Cre/+Arg1flox/flox versus Cd4+/+Arg1flox/flox mice during the chronic phase of infection with MCMV.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "4b9a2616-9730-4dbe-b6b8-495d618b7dc9",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C42",
+      "claim": "Arg1 inhibits the proliferation of CD4+ T cells in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggested that Arg1 inhibited the proliferation of CD4+ T cells in vivo, consistent with a previous in vitro study (Munder et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the data and supported by citation to Munder et al., 2006.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "819d7d7a-2c74-4c7f-af06-1c41105e86a3",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C43",
+      "claim": "Higher numbers of virus-specific CD8+ T cells are detected in the spleens of Cd4Cre/+Arg1flox/flox versus Cd4+/+Arg1flox/flox mice on day 30 post-infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, higher numbers of virus-specific CD8+ T cells, quantified using tetrameric antigen probes, were detected in the spleens of Cd4Cre/+Arg1flox/flox versus Cd4+/+Arg1flox/flox mice on day 30 p.i. (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by tetramer staining data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "1d956a7e-1600-46f7-9658-148c16da39aa",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C44",
+      "claim": "Arg1 deletion has no significant impact on the development of virus-specific IL-10-producing CD4+ T cells in the salivary glands.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Arg1 deletion had no significant impact on the development of virus-specific IL-10-producing CD4+ T cells in the SGs (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "a52c9a29-407a-4d74-9d27-b581189ae7f0",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C45",
+      "claim": "Viral shedding in the saliva is reduced in Cd4Cre/+Arg1flox/flox versus Cd4+/+Arg1flox/flox mice during the chronic phase of infection with MCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we found that viral shedding in the saliva (Figure 4E) and viral replication in the SGs (Figure 4F) were reduced in Cd4Cre/+Arg1flox/flox versus Cd4+/+Arg1flox/flox mice during the chronic phase of infection with MCMV.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "912cdfe6-954a-4dd2-9e27-ecdb270437d4",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C46",
+      "claim": "Viral replication in the salivary glands is reduced in Cd4Cre/+Arg1flox/flox versus Cd4+/+Arg1flox/flox mice during the chronic phase of infection with MCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we found that viral shedding in the saliva (Figure 4E) and viral replication in the SGs (Figure 4F) were reduced in Cd4Cre/+Arg1flox/flox versus Cd4+/+Arg1flox/flox mice during the chronic phase of infection with MCMV.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by plaque assay data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "0520fdee-87f7-4d9b-98f6-5fabaa743568",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C47",
+      "claim": "No differences in viral replication are observed between Cd4Cre/+Arg1flox/flox and control mice at day 14 post-infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, no differences in viral replication were observed between Cd4Cre/+Arg1flox/flox and control mice at an earlier time point (day 14 p.i.) (Figure 4\u2014figure supplement 1A), and deletion of Arg1 in myeloid cells, achieved using Lyz2Cre/+Arg1flox/flox mice, had no impact on viral shedding in the saliva or viral replication in the SGs (Figure 4\u2014figure supplement 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by plaque assay data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "08553c5b-d3bc-4d2b-8a65-4b2f903f6784",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C48",
+      "claim": "Deletion of Arg1 in myeloid cells has no impact on viral shedding in the saliva or viral replication in the salivary glands.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, no differences in viral replication were observed between Cd4Cre/+Arg1flox/flox and control mice at an earlier time point (day 14 p.i.) (Figure 4\u2014figure supplement 1A), and deletion of Arg1 in myeloid cells, achieved using Lyz2Cre/+Arg1flox/flox mice, had no impact on viral shedding in the saliva or viral replication in the SGs (Figure 4\u2014figure supplement 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 4\u2014figure supplement 1B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "f2f6254f-cf15-4c86-877d-e8a3eade0d57",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C49",
+      "claim": "There is no evidence that Cd4Cre/+Arg1flox/flox mice are more susceptible to virus-induced autoimmunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, there was also no evidence that Cd4Cre/+Arg1flox/flox mice were more susceptible to virus-induced autoimmunity, as indicated by anti-Sj\u00f6grens syndrome antigen (SSA) titers comparable to those observed in Cd4+/+Arg1flox/flox mice (Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ELISA data shown in Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "e7648040-e3f8-4c35-b257-87f2e433a819",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C50",
+      "claim": "Arg1 expression by CD4+ T cells selectively inhibits the accumulation of virus-specific CD4+ and CD8+ T cells in the salivary glands, leading to suboptimal immune control of viral replication during chronic infection with MCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data indicated that Arg1 expression by CD4+ T cells selectively inhibited the accumulation of virus-specific CD4+ and CD8+ T cells in the SGs, leading to suboptimal immune control of viral replication during chronic infection with MCMV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "a51814ac-f87d-4931-b030-bab0a09f6004",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C51",
+      "claim": "Thy1.1+ CD4+ T cells express higher amounts of T-bet at the protein level than Thy1.1\u2212 CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our previous work (Clement et al., 2016), we noted that Thy1.1+ CD4+ T cells expressed higher amounts of T-bet at the protein level than Thy1.1\u2212 CD4+ T cells (Figure 5A), and concordantly, we found that open chromatin was enriched in the Tbx21 region of Thy1.1+ CD4+ T cells versus Thy1.1\u2212 CD4+ T cells (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 5A and citation to Clement et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "7e5646de-6b5b-450c-a51f-908911beedb4",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C52",
+      "claim": "Open chromatin is enriched in the Tbx21 region of Thy1.1+ CD4+ T cells versus Thy1.1\u2212 CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our previous work (Clement et al., 2016), we noted that Thy1.1+ CD4+ T cells expressed higher amounts of T-bet at the protein level than Thy1.1\u2212 CD4+ T cells (Figure 5A), and concordantly, we found that open chromatin was enriched in the Tbx21 region of Thy1.1+ CD4+ T cells versus Thy1.1\u2212 CD4+ T cells (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ATAC-seq data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "a861f35d-0ba9-4b87-8ef4-9a2e9041a541",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C53",
+      "claim": "No differences in expression intensity are observed for Eomesodermin (Eomes) between Thy1.1+ and Thy1.1\u2212 CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "No such differences in expression intensity were observed for the related T-box transcription factor Eomesodermin (Eomes) (Figure 5\u2014figure supplement 1A, B), which promotes the development of Tr1 cells (Roessner et al., 2021; Zhang et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 5\u2014figure supplement 1A, B and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "01af2814-0a92-4da2-adb4-37d0f4dc7add",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C54",
+      "claim": "There is considerable overlap between the gene expression profiles of Thy1.1+ CD4+ T cells and T-bet-orchestrated CD4+ TH1 cells generated in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We also detected considerable overlap between the gene expression profiles of Thy1.1+ CD4+ T cells and T-bet-orchestrated CD4+ TH1 cells generated in vitro (Zhu et al., 2012; Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of RNA-seq data shown in Figure 5C and citation to Zhu et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "c3880dca-aa44-4321-b31a-7b58dc17cd0d",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C55",
+      "claim": "T-bet suppresses the expression of TCF1/7 and IL-7R.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, T-bet suppresses the expression of TCF1/7 and IL-7R (Dominguez et al., 2015; Oestreich et al., 2011), mimicking key phenotypic features of Thy1.1+ CD4+ T cells (Figure 1D, F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Dominguez et al., 2015 and Oestreich et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "bcc0801a-a382-45e0-a6dc-7f91bc0940e9",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C56",
+      "claim": "CD4-specific T-bet depletion reduces the accumulation of virus-specific IL-10-producing CD4+ T cells by day 14 post-infection.",
+      "claim_type": "EXPLICIT",
+      "source": "CD4-specific T-bet depletion reduced the accumulation of virus-specific IL-10-producing CD4+ T cells (Figure 6A) and Arg1+ CD4+ T cells by day 14 p.i. (Figure 6B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "d253daa4-4e9a-4b2f-9f23-ce9290a56a50",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C57",
+      "claim": "CD4-specific T-bet depletion reduces the accumulation of Arg1+ CD4+ T cells by day 14 post-infection.",
+      "claim_type": "EXPLICIT",
+      "source": "CD4-specific T-bet depletion reduced the accumulation of virus-specific IL-10-producing CD4+ T cells (Figure 6A) and Arg1+ CD4+ T cells by day 14 p.i. (Figure 6B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 6B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "5ff623a8-96ad-413d-9550-2c800ff8c14f",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C58",
+      "claim": "T-bet does not directly stimulate the expression of IL-10 and Arg1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it seemed unlikely that T-bet directly stimulated the expression of IL-10 and Arg1, because the corresponding binding motifs were not preferentially accessible in the Il10 and Arg1 regions (Figure 1B and Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is an inference from ATAC-seq data shown in Figure 1B and Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "155c9c1d-ddc3-4733-8c2a-e5886830b41b",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C59",
+      "claim": "T-bet depletion is associated with a shift toward a less differentiated phenotype in CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we observed a shift toward a less differentiated phenotype in Cd4CreERT2/+Tbx21flox/flox mice (Figure 6D\u2013G), with decreased expression of CD44 (Figure 6D) and PD-1 (Figure 6E) and increased expression of CD62L (Figure 6F) and IL-7R (Figure 6G) in the absence of T-bet.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 6D\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "fc359435-18f7-45e9-9b7b-7bfcf9bfcf46",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C60",
+      "claim": "T-bet depletion is associated with increased numbers of virus-specific IFN\u03b3-expressing CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, T-bet depletion was associated with increased numbers of virus-specific IFN\u03b3-expressing CD4+ T cells (Figure 6H) and enhanced control of viral replication in the SGs (Figure 6I), as well as reduced salivary shedding of MCMV (Figure 6J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 6H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "21ce8f63-b05d-413c-9259-512e10690d7b",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C61",
+      "claim": "T-bet depletion is associated with enhanced control of viral replication in the salivary glands.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, T-bet depletion was associated with increased numbers of virus-specific IFN\u03b3-expressing CD4+ T cells (Figure 6H) and enhanced control of viral replication in the SGs (Figure 6I), as well as reduced salivary shedding of MCMV (Figure 6J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by plaque assay data shown in Figure 6I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "a559344c-c966-404d-8fe2-a2902a115072",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C62",
+      "claim": "T-bet depletion is associated with reduced salivary shedding of MCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, T-bet depletion was associated with increased numbers of virus-specific IFN\u03b3-expressing CD4+ T cells (Figure 6H) and enhanced control of viral replication in the SGs (Figure 6I), as well as reduced salivary shedding of MCMV (Figure 6J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data shown in Figure 6J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "ca00fc6f-29a9-4558-b1f0-ece8f6a00c2d",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C63",
+      "claim": "CD4-specific T-bet depletion is no longer protective by day 28 post-infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with the observation that IL-10-producing CD4+ T cells occur transiently during the early stages of viral chronicity (Clement et al., 2016), we also found that CD4-specific T-bet depletion was no longer protective by day 28 p.i. (Figure 6J and Figure 5\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 6J and Figure 5\u2014figure supplement 1D, and citation to Clement et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "b4b41df9-6a3c-4cf3-8af2-88b65dd07ac7",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C64",
+      "claim": "T-bet exhibits dual functionality under conditions of recurrent antigen stimulation, concurrently driving the accumulation of virus-specific TH1 responses and promoting the development of Arg1+ IL-10-producing CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results suggested that T-bet exhibited dual functionality under conditions of recurrent antigen stimulation, concurrently driving the accumulation of virus-specific TH1 responses and promoting the development of Arg1+ IL-10-producing CD4+ T cells, which together shaped immune control of viral replication during the early stages of chronic infection with MCMV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "dd98d194-4028-4d67-a4e0-bde521b67378",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C65",
+      "claim": "IL-10-producing CD4+ T cells are highly differentiated TH1-like cells that occur transiently at mucosal sites of viral persistence under the strict governance of T-bet.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we identified IL-10-producing CD4+ T cells as highly differentiated TH1-like cells, which occurred transiently at mucosal sites of viral persistence under the strict governance of T-bet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "39f9182f-9e7f-4a16-b96a-a77b185af02e",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C66",
+      "claim": "IL-10-producing CD4+ T cells express the metabolic enzyme Arg1.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells also expressed the metabolic enzyme Arg1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "5f4cd632-cba7-41f0-a0f3-632f62996e6e",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C67",
+      "claim": "Arg1 expression is a critical immune regulatory function of CD4+ T cells, suppressing antiviral immunity and facilitating viral chronicity in the context of infection with MCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "Further investigation revealed that Arg1 expression was a critical immune regulatory function of CD4+ T cells, suppressing antiviral immunity and facilitating viral chronicity in the context of infection with MCMV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "ce5f58a2-7828-4b25-b3a8-bfd33e5bb0e4",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C68",
+      "claim": "Arg1 expression by human CD4+ T cells in vitro has been reported to be lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that Arg1 was one of the putative immune regulatory genes expressed by IL-10-producing CD4+ T cells was initially counterintuitive, given the reported lack of Arg1 protein expression by human CD4+ T cells in vitro (Geiger et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Geiger et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "7745d33b-d2b7-4f8a-9df2-5129a357caef",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C69",
+      "claim": "Arg1 expression by CD4+ and CD8+ T cells has been described in patients with sepsis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Arg1 expression by CD4+ and CD8+ T cells has been described in patients with sepsis (Washburn et al., 2019), indicating a potential role for generic infectious stimuli and/or an antigen-driven process mediated via the TCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Washburn et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "409660f8-d032-49e4-b532-73a499d1b2c3",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C70",
+      "claim": "CD4+ T cells secrete Arg1 in soluble form in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we demonstrated that Arg1 was expressed at the protein level, both in secreted form and intracellularly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "b083d78c-e40a-4160-8297-4ff75bf1b927",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C71",
+      "claim": "CD4+ T cells secrete far greater amounts of soluble Arg1 than CD8+ T cells in the milieu of the salivary glands.",
+      "claim_type": "EXPLICIT",
+      "source": "Our flow cytometry experiments also suggested that CD8+ T cells could express Arg1, albeit with the caveat of suboptimal visualization, but importantly, CD4+ T cells secreted far greater amounts of soluble Arg1, at least in the milieu of the SGs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from flow cytometry and depletion experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "b7458b14-2c17-494e-aad2-50ae098b08d6",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C72",
+      "claim": "L-arginine deficiency results in cell cycle arrest via the downregulation of CD3\u03b6, a key component of the TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "L-arginine deficiency results in cell cycle arrest via the downregulation of CD3\u03b6, a key component of the TCR (Rodriguez et al., 2002), and T cell proliferation is impaired in the absence of L-arginine (Rodriguez et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Rodriguez et al., 2002 and 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "d381dcf7-278f-482f-82fd-571bcb59893e",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C73",
+      "claim": "T cell proliferation is impaired in the absence of L-arginine.",
+      "claim_type": "EXPLICIT",
+      "source": "L-arginine deficiency results in cell cycle arrest via the downregulation of CD3\u03b6, a key component of the TCR (Rodriguez et al., 2002), and T cell proliferation is impaired in the absence of L-arginine (Rodriguez et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Rodriguez et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "30db7fca-8af2-4c13-be22-b85eef4c26b5",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C74",
+      "claim": "Improved control of viral replication in mice lacking Arg1+ CD4+ T cells is associated with increased numbers of MCMV-specific effector CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these observations, we found that improved control of viral replication in mice lacking Arg1+ CD4+ T cells was associated with increased numbers of MCMV-specific effector CD4+ T cells, which are known to limit viral replication in the SGs (Lucin et al., 1992; Walton et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the data and supported by citations to Lucin et al., 1992 and Walton et al., 2011.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "12749a36-fcb0-4df4-9768-abdbf2df79c2",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C75",
+      "claim": "The acquisition of Arg1 expression by highly differentiated CD4+ T cells impinges on antiviral immunity, representing an inhibitory mechanism that operates alongside the production of IL-10.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the acquisition of Arg1 expression by highly differentiated CD4+ T cells impinges on antiviral immunity, representing an inhibitory mechanism that operates alongside the production of IL-10 (Clement et al., 2016; Humphreys et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the data and supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "ef0ee10f-cec9-4834-af60-abeef889ddc5",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C76",
+      "claim": "Regulatory T cells may act similarly to Arg1+ CD4+ T cells via the expression of Arg2.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also notable here that regulatory T cells may act similarly via the expression of Arg2 (Lowe et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Lowe et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "8727c66f-0aea-43f2-8481-66a51e3207d2",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C77",
+      "claim": "IL-10 is regulated by a number of transcription factors, including those required for T cell differentiation, and is induced downstream of the TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "IL-10 is regulated by a number of transcription factors, including those required for T cell differentiation, and is induced downstream of the TCR (Saraiva et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Saraiva et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "f8b4c554-7c69-4f0a-848e-f326003e7802",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C78",
+      "claim": "T-bet promotes the development of IL-10-producing CD4+ T cells during chronic infection with MCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "Our discovery that T-bet promotes the development of IL-10-producing CD4+ T cells aligns with the concept that chronic antigen stimulation can trigger a negative feedback loop via these mechanisms, which concurrently drive activation and differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "d8982015-11db-46f5-a7d5-485d72710c39",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C79",
+      "claim": "Deletion of T-bet after acute infection limits the accumulation of highly differentiated CD4+ T cells, including those expressing Arg1 and IL-10.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did find that deletion of T-bet after acute infection limited the accumulation of highly differentiated CD4+ T cells, including those expressing Arg1 and IL-10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "0060aa5b-0a0a-43f5-831d-a51f3952ff2f",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C80",
+      "claim": "T-bet promotes the differentiation of CD8+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this observation, which suggested a differentiation-linked process of functional remodeling driven by chronic antigen exposure, T-bet is known to promote the differentiation of CD8+ T cells (Dominguez et al., 2015; Omilusik et al., 2015) and inhibit the expression of TCF1/7 (Omilusik et al., 2015) and IL-7R (Intlekofer et al., 2007), both of which were downregulated among Arg1+ IL-10-producing CD4+ T cells induced by MCMV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Dominguez et al., 2015 and Omilusik et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "77580505-4887-4fe9-9110-4cee3a635c4e",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C81",
+      "claim": "T-bet inhibits the expression of TCF1/7.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this observation, which suggested a differentiation-linked process of functional remodeling driven by chronic antigen exposure, T-bet is known to promote the differentiation of CD8+ T cells (Dominguez et al., 2015; Omilusik et al., 2015) and inhibit the expression of TCF1/7 (Omilusik et al., 2015) and IL-7R (Intlekofer et al., 2007), both of which were downregulated among Arg1+ IL-10-producing CD4+ T cells induced by MCMV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Omilusik et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "425ab381-21f2-4f13-87b0-88e92b87b8d4",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C82",
+      "claim": "T-bet inhibits the expression of IL-7R.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this observation, which suggested a differentiation-linked process of functional remodeling driven by chronic antigen exposure, T-bet is known to promote the differentiation of CD8+ T cells (Dominguez et al., 2015; Omilusik et al., 2015) and inhibit the expression of TCF1/7 (Omilusik et al., 2015) and IL-7R (Intlekofer et al., 2007), both of which were downregulated among Arg1+ IL-10-producing CD4+ T cells induced by MCMV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Intlekofer et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "e032cbc0-57a8-40a6-81ea-da6f7da87b13",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C83",
+      "claim": "Mucosal IL-10-producing CD4+ T cells do not coexpress CD49b and LAG-3, unlike classical Tr1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to Tr1 cells (Gagliani et al., 2013), IL-10-producing CD4+ T cells in the SGs do not coexpress CD49b and LAG-3 (Clement et al., 2016), highlighting the diverse nature of regulatory CD4+ T cells defined by the secretion of IL-10 (Brockmann et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Gagliani et al., 2013, Clement et al., 2016, and Brockmann et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "930bf092-a0f4-4e79-b3cd-bdb5e33fe694",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C84",
+      "claim": "IL-10-producing CD4+ T cells in the salivary glands express multiple inhibitory receptors, including LAG-3.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these cells do express multiple inhibitory receptors, including LAG-3, alongside other markers that typically characterize Tr1 cells, such as CCR5 and granzyme K (Brockmann et al., 2018; Roessner et al., 2021; Thelen et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data in the manuscript and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "f41f11e8-48c5-44ea-9f8e-6db7557100b4",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C85",
+      "claim": "Thy1.1+ CD4+ T cells express Eomes, akin to clonally expanded T-bet-dependent Tr1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, Thy1.1+ CD4+ T cells also expressed Eomes, akin to clonally expanded T-bet-dependent Tr1 cells (Thelen et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data in the manuscript and citation to Thelen et al., 2023.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "fa96f73e-60e3-460c-a373-8ffcd8bc43f8",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C86",
+      "claim": "Mucosal IL-10-producing CD4+ T cells may develop along similar lines to conventional Tr1 cells, which differentiate under the control of Eomes in conjunction with Blimp-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, mucosal IL-10-producing CD4+ T cells may develop along similar lines to conventional Tr1 cells, which differentiate under the control of Eomes in conjunction with Blimp-1 (Roessner et al., 2021; Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative and supported by citations to Roessner et al., 2021 and Zhang et al., 2017.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "9310ca14-83c3-42dd-a877-e663d59829e9",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C87",
+      "claim": "The transcription factor c-Maf promotes the expression of IL-10 in multiple TH cell subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the transcription factor c-Maf, which promotes the expression of IL-10 in multiple TH cell subsets (Gabry\u0161ov\u00e1 et al., 2018), is known to be upregulated in IL-10-producing CD4+ T cells during chronic infection with MCMV (Clement et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Gabry\u0161ov\u00e1 et al., 2018 and Clement et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "90f2966e-a20f-478b-87f1-125f8ab8d7f4",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C88",
+      "claim": "ICOS signaling promotes the accumulation of IL-10-producing CD4+ T cells during chronic infection with MCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "We also demonstrated previously that ICOS signaling promotes the accumulation of IL-10-producing CD4+ T cells under the same conditions (Clement et al., 2016), and c-Maf acts downstream of ICOS (Bauquet et al., 2009; Nurieva et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Clement et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "22323aba-071b-4237-9492-d37aab4468f4",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C89",
+      "claim": "c-Maf acts downstream of ICOS.",
+      "claim_type": "EXPLICIT",
+      "source": "We also demonstrated previously that ICOS signaling promotes the accumulation of IL-10-producing CD4+ T cells under the same conditions (Clement et al., 2016), and c-Maf acts downstream of ICOS (Bauquet et al., 2009; Nurieva et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bauquet et al., 2009 and Nurieva et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "4237ecbc-919d-4cb9-8727-a207460a6b05",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C90",
+      "claim": "An ICOS\u2013c-Maf axis likely participates in the direct induction of Il10.",
+      "claim_type": "EXPLICIT",
+      "source": "It therefore seems likely that an ICOS\u2013c-Maf axis participates in the direct induction of Il10, although it is less clear how this applies to Arg1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative based on inference from cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "e09082da-9dcb-45cf-ade2-e427414bb019",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C91",
+      "claim": "Arg1+ IL-10-producing CD4+ T cells develop optimally in vitro in response to high-dose antigen stimulation in the presence of IL-12.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that Arg1+ IL-10-producing CD4+ T cells developed optimally in vitro in response to high-dose antigen stimulation in the presence of IL-12, suggesting determinative roles for ERK MAP kinase and the transcription factor STAT4 (Saraiva et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by in vitro data and citation to Saraiva et al., 2009.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "7dc11294-61be-41e6-8d28-26cc5c65665a",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C92",
+      "claim": "T-bet activity during chronic viral infection can impede antiviral immune control by driving the development of highly differentiated TH1-like cells that express genes encoding inhibitory molecules, including IL-10 and Arg1.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we have demonstrated that T-bet activity during a chronic viral infection can impede antiviral immune control by driving the development of highly differentiated TH1-like cells that express genes encoding inhibitory molecules, including IL-10 and Arg1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "21d476d9-4a6b-4ca9-ba51-ddbc7b3e5ae3",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C93",
+      "claim": "Arg1+ IL-10-producing CD4+ T cells develop in vitro under conditions of extreme antigen stimulation, especially in the presence of IL-12.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these Arg1+ IL-10-producing CD4+ T cells developed in vitro under conditions of extreme antigen stimulation, especially in the presence of IL-12, and the expression of Arg1, which was also secreted in vivo as a soluble immune regulatory protein, facilitated viral replication during the chronic phase of infection with MCMV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by in vitro data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "965655f9-ab0c-48f2-8f1e-96be8c0a082a",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C94",
+      "claim": "Arg1 is secreted in vivo as a soluble immune regulatory protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these Arg1+ IL-10-producing CD4+ T cells developed in vitro under conditions of extreme antigen stimulation, especially in the presence of IL-12, and the expression of Arg1, which was also secreted in vivo as a soluble immune regulatory protein, facilitated viral replication during the chronic phase of infection with MCMV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "6d7203cc-ab32-4ca4-b4a6-f9248618379a",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C95",
+      "claim": "The expression of Arg1 facilitated viral replication during the chronic phase of infection with MCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these Arg1+ IL-10-producing CD4+ T cells developed in vitro under conditions of extreme antigen stimulation, especially in the presence of IL-12, and the expression of Arg1, which was also secreted in vivo as a soluble immune regulatory protein, facilitated viral replication during the chronic phase of infection with MCMV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "d634b4f4-79f2-44e8-894a-5b99c874cb46",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "claim_id": "C96",
+      "claim": "CD4+ T cells can suppress potentially harmful immune responses via the regulation of L-arginine.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are conceivably important not only from a biological perspective but also from a translational perspective, revealing a previously unappreciated mechanism through which CD4+ T cells can suppress potentially harmful immune responses via the regulation of L-arginine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f44679b6-f976-4b0f-aa90-fca7beeb3423",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "IL-10-producing CD4+ T cells (Thy1.1+) in the salivary glands during chronic MCMV infection are transcriptionally distinct from Thy1.1\u2212 CD4+ T cells, display an effector memory phenotype, and exhibit a highly differentiated TH1-like profile characterized by upregulation of Il10 and various inhibitory molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C7 and C18 are supported by multiple complementary data types including flow cytometry (C2, C3, C4), RNA-seq (C5, C6), ATAC-seq (C7), and PCA analysis. The data consistently demonstrate that Thy1.1+ CD4+ T cells represent a distinct, highly differentiated population with open chromatin at the Il10 locus and elevated Il10 expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "a00dbcfa-d4e0-4614-ad6f-575dafc0189e",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Thy1.1+ CD4+ T cells upregulate genes associated with cell migration, metabolism, and antiviral effector functions, while downregulating Il7 and Tcf1/7 at both transcript and protein levels. These cells also express inhibitory molecules including LAG-3, PD-1, TIM-3, CD39, and TIGIT, but downregulate the exhaustion marker Tox1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C9, C11, C14-C17 are supported by RNA-seq data (Figures 1A, C, D) and flow cytometry (Figures 1F, G, 1\u2014figure supplement 1E, F). The data show consistent upregulation of effector and inhibitory genes alongside downregulation of survival factors. Claim C12 is an inference supported by citation to prior work. The phenotype is distinct from classical exhaustion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "ee2f4ea8-812d-466d-806b-c7ec6c45085c",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Thy1.1+ CD4+ T cells lack gene signatures classically associated with cytotoxic CD4+ T cells (Klrc1, Crtam) and express similar levels of DR5 transcripts as Thy1.1\u2212 CD4+ T cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10 and C13 are supported by RNA-seq data deposited at the provided DOI and citation to Schuster et al., 2014. These negative findings help define the phenotype of Thy1.1+ cells by excluding alternative differentiation states.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "52a3aa5d-1583-431c-aa6f-56cb6f0b85fc",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Thy1.1+ CD4+ T cells exhibit less diverse TCR repertoires with more prominent clonal expansions compared to Thy1.1\u2212 CD4+ T cells, showing features of antigen-driven differentiation including increased nucleotide convergence, differential Trbv gene use, and clusters of homologous TCR\u03b2 variants, despite considerable repertoire overlap between the two populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C27 are supported by comprehensive TCR-seq analysis (Figure 2A-G) using multiple metrics including diversity indices, clonality, convergence analysis, and ALICE clustering. The data consistently indicate antigen-driven clonal expansion in Thy1.1+ cells. Claims C25 and C26 appropriately note that differences are not absolute, acknowledging repertoire overlap and similar physicochemical properties.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "efb5a46e-cde4-4bc7-80a1-ef751e6bc55c",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Thy1.1+ CD4+ T cells significantly upregulate Arg1 at both transcript and protein levels, with open chromatin around the Arg1 locus. Arg1 expression occurs almost exclusively in the salivary glands, where CD4+ T cells are the primary cellular source during chronic MCMV infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C31-C34, and C38 are supported by multiple complementary techniques: RNA-seq (C28, Figure 1D), Western blot (C31, Figure 3A), ATAC-seq (C32, Figure 3B), flow cytometry (C33, Figure 3C), and depletion experiments (C34, Figure 3\u2014figure supplement 1B). The tissue-specific expression and cellular source are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "deb1f2a9-399a-4413-8acd-56e62626d8d2",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "High-dose antigen stimulation (OVA323\u2013339) in combination with IL-12 induces the development of CD4+ T cells that coexpress Arg1 and IL-10 in vitro, with all IL-10-producing cells coexpressing Arg1 and increased Arg1 protein secretion in culture supernatants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 and C93 are supported by in vitro culture experiments using OT-II transgenic CD4+ T cells (Figure 3D, E). Flow cytometry demonstrates coexpression of Arg1 and IL-10, and ELISA confirms increased Arg1 secretion. The data establish that extreme antigen stimulation with IL-12 can recapitulate the Arg1+IL-10+ phenotype observed in vivo.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "0d5a0285-7cad-482a-9a6c-138c876df4a0",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Lineage-specific deletion of Arg1 in CD4+ T cells does not affect naive T cell function but results in increased numbers of IFN\u03b3-expressing and proliferating CD4+ T cells, higher numbers of virus-specific CD8+ T cells, and reduced viral replication and shedding during chronic MCMV infection, without affecting IL-10-producing CD4+ T cell development or increasing susceptibility to autoimmunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C50 are supported by comprehensive in vivo experiments using Cd4Cre/+Arg1flox/flox mice (Figures 3\u2014figure supplement 1C-D, 4A-F, 4\u2014figure supplement 1A-D). Flow cytometry, tetramer staining, plaque assays, qPCR, and ELISA data consistently demonstrate that CD4+ T cell-specific Arg1 deletion enhances antiviral immunity without adverse effects. Controls with Lyz2Cre/+Arg1flox/flox mice (C48) and timing experiments (C47) strengthen the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "5d9f617c-171b-4f36-b403-b31bdf6260ae",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Thy1.1+ CD4+ T cells express higher levels of T-bet protein and show enriched open chromatin in the Tbx21 region compared to Thy1.1\u2212 CD4+ T cells, with considerable overlap in gene expression profiles with T-bet-orchestrated TH1 cells generated in vitro, while showing no differences in Eomes expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 are supported by flow cytometry (Figure 5A), ATAC-seq (Figure 5B), RNA-seq comparison (Figure 5C), and citations to prior literature. The data establish T-bet as a key transcription factor in Thy1.1+ cells. Claim C53 appropriately notes the lack of differential Eomes expression, distinguishing these cells from some Tr1 populations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "d85479e8-d460-4364-a3ab-736ccdf07a64",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CD4-specific T-bet depletion after acute infection reduces accumulation of IL-10-producing and Arg1+ CD4+ T cells, shifts CD4+ T cells toward a less differentiated phenotype, increases virus-specific IFN\u03b3-expressing CD4+ T cells, and enhances viral control during early chronic infection (day 14), with protection lost by day 28. T-bet does not directly stimulate IL-10 and Arg1 expression but promotes differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C64 are supported by experiments using tamoxifen-inducible Cd4CreERT2/+Tbx21flox/flox mice (Figures 6A-J, 5D, 5\u2014figure supplement 1D). Flow cytometry, plaque assays, and qPCR data demonstrate that T-bet depletion reduces regulatory cell accumulation and enhances antiviral immunity. Claim C58 is an appropriate inference from ATAC-seq data showing lack of T-bet binding motif accessibility at Il10 and Arg1 loci. The temporal limitation (C63) is consistent with the transient nature of IL-10+ cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "dc5eeaab-c17a-4523-8332-55d0ae070cec",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "IL-10-producing CD4+ T cells are highly differentiated TH1-like cells that occur transiently at mucosal sites under T-bet governance, coexpress Arg1, and represent a critical immune regulatory mechanism that suppresses antiviral immunity and facilitates viral chronicity during MCMV infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67, C78, C79, and C92 represent summary statements of the study's major findings. These are supported by the comprehensive data presented throughout the manuscript, including transcriptomic, phenotypic, functional, and genetic deletion experiments. The claims integrate multiple lines of evidence into coherent conclusions about the ontogeny and function of these regulatory cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "ef891cc2-b79d-41d5-9824-fd7bf7768593",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior literature establishes that Arg1 catalyzes L-arginine breakdown and inhibits T cell proliferation, that Arg1 expression by human T cells has been reported in sepsis but not in vitro cultures, that L-arginine deficiency impairs T cell function, that T-bet regulates CD8+ T cell differentiation and suppresses TCF1/7 and IL-7R expression, and that c-Maf and ICOS signaling promote IL-10 production in CD4+ T cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C30, C68, C69, C72, C73, C76, C77, C80-C82, C87-C89 are supported by appropriate citations to published literature. These claims provide necessary context for interpreting the current findings and are accurately attributed to prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "9c17d995-3a38-486e-837a-352446ae1b0a",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CD4+ T cells secrete Arg1 in soluble form in vivo, with CD4+ T cells secreting far greater amounts than CD8+ T cells in the salivary glands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70, C71, and C94 are supported by Western blot data (Figure 3A), depletion experiments (Figure 3\u2014figure supplement 1B), and in vitro ELISA data (Figure 3E). The inference that CD4+ T cells are the primary source (C71) is reasonable given the depletion data, though the authors acknowledge suboptimal visualization of intracellular Arg1 by flow cytometry.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "1627111a-7f80-490c-a780-09ab03437018",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Improved viral control in mice lacking Arg1+ CD4+ T cells is associated with increased MCMV-specific effector CD4+ T cells. Arg1 expression by highly differentiated CD4+ T cells represents an inhibitory mechanism operating alongside IL-10 production, revealing a mechanism through which CD4+ T cells suppress immune responses via L-arginine regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74, C75, and C96 are supported by data from Arg1 deletion experiments (Figures 4A-F) and appropriate citations to prior work on CD4+ T cell antiviral functions. The inference that Arg1 acts alongside IL-10 (C75) is reasonable given the coexpression data and functional outcomes. Claim C96 represents a valid synthesis of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "5d818fe8-1f9d-4545-8364-af6c8d93b734",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Mucosal IL-10-producing CD4+ T cells differ from classical Tr1 cells in lacking CD49b/LAG-3 coexpression but share other markers including LAG-3, CCR5, granzyme K, and Eomes. These cells may develop similarly to conventional Tr1 cells under Eomes/Blimp-1 control, potentially involving an ICOS\u2013c-Maf axis for IL-10 induction and requiring high-dose antigen stimulation with IL-12.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C83-C85 are supported by data and appropriate citations. However, claims C86, C90, and C91 are speculative inferences about developmental mechanisms. While C91 is supported by in vitro data (Figure 3D, E), the mechanistic claims about Eomes/Blimp-1 (C86) and ICOS\u2013c-Maf (C90) are based primarily on cited literature and inference rather than direct experimental evidence in this study. The authors appropriately use cautious language ('may develop,' 'seems likely').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    },
+    {
+      "id": "bba4169a-ecd0-4035-95b0-d7e1bf77f945",
+      "content_id": "0b2be30f-f918-408b-b18b-98407444c675",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "IL-10-producing CD4+ T cells in the salivary glands peak on day 14 post-infection and recognize a broad range of viral antigens during chronic MCMV infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C19 are supported by citations to Clement et al., 2016, which provides published evidence for the timing and antigen specificity of IL-10-producing CD4+ T cells. These claims establish important context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T02:35:08.743415Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "97e6c043-7629-4b3b-8c08-df4e98a11986",
+      "result_id": "f44679b6-f976-4b0f-aa90-fca7beeb3423"
+    },
+    {
+      "claim_id": "c4683927-890b-41a4-a727-4600fd84afd4",
+      "result_id": "f44679b6-f976-4b0f-aa90-fca7beeb3423"
+    },
+    {
+      "claim_id": "ca89f972-3400-47f1-8684-d276bba2fc00",
+      "result_id": "f44679b6-f976-4b0f-aa90-fca7beeb3423"
+    },
+    {
+      "claim_id": "0019754c-13c4-40fc-9f23-499a8947abf0",
+      "result_id": "f44679b6-f976-4b0f-aa90-fca7beeb3423"
+    },
+    {
+      "claim_id": "33d31d89-0483-4a7d-a749-e1d3689e0722",
+      "result_id": "f44679b6-f976-4b0f-aa90-fca7beeb3423"
+    },
+    {
+      "claim_id": "2d05e89b-45ad-4198-a308-9d6f93426eba",
+      "result_id": "f44679b6-f976-4b0f-aa90-fca7beeb3423"
+    },
+    {
+      "claim_id": "4fb624bb-2d66-42ed-b4ce-074ce60196e2",
+      "result_id": "f44679b6-f976-4b0f-aa90-fca7beeb3423"
+    },
+    {
+      "claim_id": "6daa8a7e-3cf1-4e54-94f1-d2dc5664e152",
+      "result_id": "a00dbcfa-d4e0-4614-ad6f-575dafc0189e"
+    },
+    {
+      "claim_id": "d1a64480-8365-4e01-ac1e-a60c657abca6",
+      "result_id": "a00dbcfa-d4e0-4614-ad6f-575dafc0189e"
+    },
+    {
+      "claim_id": "a841af1c-dc63-4c8b-9910-b4fe65c29a1b",
+      "result_id": "a00dbcfa-d4e0-4614-ad6f-575dafc0189e"
+    },
+    {
+      "claim_id": "78742fb5-c066-48bb-8fb5-171b56d72233",
+      "result_id": "a00dbcfa-d4e0-4614-ad6f-575dafc0189e"
+    },
+    {
+      "claim_id": "07e0d606-82dc-453e-ae98-4fca2d7355af",
+      "result_id": "a00dbcfa-d4e0-4614-ad6f-575dafc0189e"
+    },
+    {
+      "claim_id": "69f96371-8999-463f-8f35-8e5c03ee16dd",
+      "result_id": "a00dbcfa-d4e0-4614-ad6f-575dafc0189e"
+    },
+    {
+      "claim_id": "d7f0d078-8810-42d3-a3bf-c266cedda387",
+      "result_id": "a00dbcfa-d4e0-4614-ad6f-575dafc0189e"
+    },
+    {
+      "claim_id": "74ac9711-8222-4b30-85d2-0e7bfd083e92",
+      "result_id": "a00dbcfa-d4e0-4614-ad6f-575dafc0189e"
+    },
+    {
+      "claim_id": "9063c61b-f2dc-416e-b702-0490b0f3916a",
+      "result_id": "ee2f4ea8-812d-466d-806b-c7ec6c45085c"
+    },
+    {
+      "claim_id": "c97780fb-8e52-4ab6-944e-6abaf8cdc8a4",
+      "result_id": "ee2f4ea8-812d-466d-806b-c7ec6c45085c"
+    },
+    {
+      "claim_id": "0a5a15b1-dd77-42e7-bc79-c58df0f32fda",
+      "result_id": "52a3aa5d-1583-431c-aa6f-56cb6f0b85fc"
+    },
+    {
+      "claim_id": "ba349ecf-a4e2-454c-ac23-87e81c4145de",
+      "result_id": "52a3aa5d-1583-431c-aa6f-56cb6f0b85fc"
+    },
+    {
+      "claim_id": "f28358b0-8287-4339-aa55-050571d88217",
+      "result_id": "52a3aa5d-1583-431c-aa6f-56cb6f0b85fc"
+    },
+    {
+      "claim_id": "351ff9e1-c85b-46bc-9def-4ed431a9442b",
+      "result_id": "52a3aa5d-1583-431c-aa6f-56cb6f0b85fc"
+    },
+    {
+      "claim_id": "d67557ed-0f1c-4b65-8b1a-4c6d24de5d83",
+      "result_id": "52a3aa5d-1583-431c-aa6f-56cb6f0b85fc"
+    },
+    {
+      "claim_id": "d168da1a-ff53-49c2-9a08-8432f92b4eb8",
+      "result_id": "52a3aa5d-1583-431c-aa6f-56cb6f0b85fc"
+    },
+    {
+      "claim_id": "c1b491fc-e0c0-42b0-a965-94819ee894fb",
+      "result_id": "52a3aa5d-1583-431c-aa6f-56cb6f0b85fc"
+    },
+    {
+      "claim_id": "f2f82169-e472-469d-af41-562a06eacaa0",
+      "result_id": "52a3aa5d-1583-431c-aa6f-56cb6f0b85fc"
+    },
+    {
+      "claim_id": "bca243cc-9091-49d9-82da-51821e9310a3",
+      "result_id": "efb5a46e-cde4-4bc7-80a1-ef751e6bc55c"
+    },
+    {
+      "claim_id": "6e74c2fd-ab6b-45a6-a5a4-333c5005480a",
+      "result_id": "efb5a46e-cde4-4bc7-80a1-ef751e6bc55c"
+    },
+    {
+      "claim_id": "a4f41afe-9684-45cf-8c4a-e2bbf047c172",
+      "result_id": "efb5a46e-cde4-4bc7-80a1-ef751e6bc55c"
+    },
+    {
+      "claim_id": "d3005232-1b4e-4e65-a2e5-0d2ef1291b78",
+      "result_id": "efb5a46e-cde4-4bc7-80a1-ef751e6bc55c"
+    },
+    {
+      "claim_id": "f34d30c6-85d7-4f32-b6b5-8d47797bfff0",
+      "result_id": "efb5a46e-cde4-4bc7-80a1-ef751e6bc55c"
+    },
+    {
+      "claim_id": "635e91ec-a892-4fb2-b953-6a50628775eb",
+      "result_id": "efb5a46e-cde4-4bc7-80a1-ef751e6bc55c"
+    },
+    {
+      "claim_id": "05896b5a-e001-47bf-9b81-dbd7764cfa2f",
+      "result_id": "deb1f2a9-399a-4413-8acd-56e62626d8d2"
+    },
+    {
+      "claim_id": "5387af7b-f0da-4100-b8f7-96363cd66581",
+      "result_id": "deb1f2a9-399a-4413-8acd-56e62626d8d2"
+    },
+    {
+      "claim_id": "b68e05de-5b14-4101-aafc-2841d5c5b25d",
+      "result_id": "deb1f2a9-399a-4413-8acd-56e62626d8d2"
+    },
+    {
+      "claim_id": "21d476d9-4a6b-4ca9-ba51-ddbc7b3e5ae3",
+      "result_id": "deb1f2a9-399a-4413-8acd-56e62626d8d2"
+    },
+    {
+      "claim_id": "201d0427-743a-4046-9141-f013dcdffaee",
+      "result_id": "0d5a0285-7cad-482a-9a6c-138c876df4a0"
+    },
+    {
+      "claim_id": "6ad288e0-a110-433f-a65f-7cb9979cfc2d",
+      "result_id": "0d5a0285-7cad-482a-9a6c-138c876df4a0"
+    },
+    {
+      "claim_id": "d2fe400f-0311-4504-a22a-b958fb2235f0",
+      "result_id": "0d5a0285-7cad-482a-9a6c-138c876df4a0"
+    },
+    {
+      "claim_id": "4b9a2616-9730-4dbe-b6b8-495d618b7dc9",
+      "result_id": "0d5a0285-7cad-482a-9a6c-138c876df4a0"
+    },
+    {
+      "claim_id": "819d7d7a-2c74-4c7f-af06-1c41105e86a3",
+      "result_id": "0d5a0285-7cad-482a-9a6c-138c876df4a0"
+    },
+    {
+      "claim_id": "1d956a7e-1600-46f7-9658-148c16da39aa",
+      "result_id": "0d5a0285-7cad-482a-9a6c-138c876df4a0"
+    },
+    {
+      "claim_id": "a52c9a29-407a-4d74-9d27-b581189ae7f0",
+      "result_id": "0d5a0285-7cad-482a-9a6c-138c876df4a0"
+    },
+    {
+      "claim_id": "912cdfe6-954a-4dd2-9e27-ecdb270437d4",
+      "result_id": "0d5a0285-7cad-482a-9a6c-138c876df4a0"
+    },
+    {
+      "claim_id": "0520fdee-87f7-4d9b-98f6-5fabaa743568",
+      "result_id": "0d5a0285-7cad-482a-9a6c-138c876df4a0"
+    },
+    {
+      "claim_id": "08553c5b-d3bc-4d2b-8a65-4b2f903f6784",
+      "result_id": "0d5a0285-7cad-482a-9a6c-138c876df4a0"
+    },
+    {
+      "claim_id": "f2f6254f-cf15-4c86-877d-e8a3eade0d57",
+      "result_id": "0d5a0285-7cad-482a-9a6c-138c876df4a0"
+    },
+    {
+      "claim_id": "e7648040-e3f8-4c35-b257-87f2e433a819",
+      "result_id": "0d5a0285-7cad-482a-9a6c-138c876df4a0"
+    },
+    {
+      "claim_id": "a51814ac-f87d-4931-b030-bab0a09f6004",
+      "result_id": "5d9f617c-171b-4f36-b403-b31bdf6260ae"
+    },
+    {
+      "claim_id": "7e5646de-6b5b-450c-a51f-908911beedb4",
+      "result_id": "5d9f617c-171b-4f36-b403-b31bdf6260ae"
+    },
+    {
+      "claim_id": "a861f35d-0ba9-4b87-8ef4-9a2e9041a541",
+      "result_id": "5d9f617c-171b-4f36-b403-b31bdf6260ae"
+    },
+    {
+      "claim_id": "01af2814-0a92-4da2-adb4-37d0f4dc7add",
+      "result_id": "5d9f617c-171b-4f36-b403-b31bdf6260ae"
+    },
+    {
+      "claim_id": "c3880dca-aa44-4321-b31a-7b58dc17cd0d",
+      "result_id": "5d9f617c-171b-4f36-b403-b31bdf6260ae"
+    },
+    {
+      "claim_id": "bcc0801a-a382-45e0-a6dc-7f91bc0940e9",
+      "result_id": "d85479e8-d460-4364-a3ab-736ccdf07a64"
+    },
+    {
+      "claim_id": "d253daa4-4e9a-4b2f-9f23-ce9290a56a50",
+      "result_id": "d85479e8-d460-4364-a3ab-736ccdf07a64"
+    },
+    {
+      "claim_id": "5ff623a8-96ad-413d-9550-2c800ff8c14f",
+      "result_id": "d85479e8-d460-4364-a3ab-736ccdf07a64"
+    },
+    {
+      "claim_id": "155c9c1d-ddc3-4733-8c2a-e5886830b41b",
+      "result_id": "d85479e8-d460-4364-a3ab-736ccdf07a64"
+    },
+    {
+      "claim_id": "fc359435-18f7-45e9-9b7b-7bfcf9bfcf46",
+      "result_id": "d85479e8-d460-4364-a3ab-736ccdf07a64"
+    },
+    {
+      "claim_id": "21ce8f63-b05d-413c-9259-512e10690d7b",
+      "result_id": "d85479e8-d460-4364-a3ab-736ccdf07a64"
+    },
+    {
+      "claim_id": "a559344c-c966-404d-8fe2-a2902a115072",
+      "result_id": "d85479e8-d460-4364-a3ab-736ccdf07a64"
+    },
+    {
+      "claim_id": "ca00fc6f-29a9-4558-b1f0-ece8f6a00c2d",
+      "result_id": "d85479e8-d460-4364-a3ab-736ccdf07a64"
+    },
+    {
+      "claim_id": "b4b41df9-6a3c-4cf3-8af2-88b65dd07ac7",
+      "result_id": "d85479e8-d460-4364-a3ab-736ccdf07a64"
+    },
+    {
+      "claim_id": "dd98d194-4028-4d67-a4e0-bde521b67378",
+      "result_id": "dc5eeaab-c17a-4523-8332-55d0ae070cec"
+    },
+    {
+      "claim_id": "39f9182f-9e7f-4a16-b96a-a77b185af02e",
+      "result_id": "dc5eeaab-c17a-4523-8332-55d0ae070cec"
+    },
+    {
+      "claim_id": "5f4cd632-cba7-41f0-a0f3-632f62996e6e",
+      "result_id": "dc5eeaab-c17a-4523-8332-55d0ae070cec"
+    },
+    {
+      "claim_id": "f8b4c554-7c69-4f0a-848e-f326003e7802",
+      "result_id": "dc5eeaab-c17a-4523-8332-55d0ae070cec"
+    },
+    {
+      "claim_id": "d8982015-11db-46f5-a7d5-485d72710c39",
+      "result_id": "dc5eeaab-c17a-4523-8332-55d0ae070cec"
+    },
+    {
+      "claim_id": "7dc11294-61be-41e6-8d28-26cc5c65665a",
+      "result_id": "dc5eeaab-c17a-4523-8332-55d0ae070cec"
+    },
+    {
+      "claim_id": "54c2b72b-23c1-4f5f-accc-2678ea534ab8",
+      "result_id": "ef891cc2-b79d-41d5-9824-fd7bf7768593"
+    },
+    {
+      "claim_id": "100787af-0ee7-4ca9-a9d6-52ae0aa835a7",
+      "result_id": "ef891cc2-b79d-41d5-9824-fd7bf7768593"
+    },
+    {
+      "claim_id": "ce5f58a2-7828-4b25-b3a8-bfd33e5bb0e4",
+      "result_id": "ef891cc2-b79d-41d5-9824-fd7bf7768593"
+    },
+    {
+      "claim_id": "7745d33b-d2b7-4f8a-9df2-5129a357caef",
+      "result_id": "ef891cc2-b79d-41d5-9824-fd7bf7768593"
+    },
+    {
+      "claim_id": "b7458b14-2c17-494e-aad2-50ae098b08d6",
+      "result_id": "ef891cc2-b79d-41d5-9824-fd7bf7768593"
+    },
+    {
+      "claim_id": "d381dcf7-278f-482f-82fd-571bcb59893e",
+      "result_id": "ef891cc2-b79d-41d5-9824-fd7bf7768593"
+    },
+    {
+      "claim_id": "ef0ee10f-cec9-4834-af60-abeef889ddc5",
+      "result_id": "ef891cc2-b79d-41d5-9824-fd7bf7768593"
+    },
+    {
+      "claim_id": "8727c66f-0aea-43f2-8481-66a51e3207d2",
+      "result_id": "ef891cc2-b79d-41d5-9824-fd7bf7768593"
+    },
+    {
+      "claim_id": "0060aa5b-0a0a-43f5-831d-a51f3952ff2f",
+      "result_id": "ef891cc2-b79d-41d5-9824-fd7bf7768593"
+    },
+    {
+      "claim_id": "77580505-4887-4fe9-9110-4cee3a635c4e",
+      "result_id": "ef891cc2-b79d-41d5-9824-fd7bf7768593"
+    },
+    {
+      "claim_id": "425ab381-21f2-4f13-87b0-88e92b87b8d4",
+      "result_id": "ef891cc2-b79d-41d5-9824-fd7bf7768593"
+    },
+    {
+      "claim_id": "9310ca14-83c3-42dd-a877-e663d59829e9",
+      "result_id": "ef891cc2-b79d-41d5-9824-fd7bf7768593"
+    },
+    {
+      "claim_id": "90f2966e-a20f-478b-87f1-125f8ab8d7f4",
+      "result_id": "ef891cc2-b79d-41d5-9824-fd7bf7768593"
+    },
+    {
+      "claim_id": "22323aba-071b-4237-9492-d37aab4468f4",
+      "result_id": "ef891cc2-b79d-41d5-9824-fd7bf7768593"
+    },
+    {
+      "claim_id": "409660f8-d032-49e4-b532-73a499d1b2c3",
+      "result_id": "9c17d995-3a38-486e-837a-352446ae1b0a"
+    },
+    {
+      "claim_id": "b083d78c-e40a-4160-8297-4ff75bf1b927",
+      "result_id": "9c17d995-3a38-486e-837a-352446ae1b0a"
+    },
+    {
+      "claim_id": "965655f9-ab0c-48f2-8f1e-96be8c0a082a",
+      "result_id": "9c17d995-3a38-486e-837a-352446ae1b0a"
+    },
+    {
+      "claim_id": "30db7fca-8af2-4c13-be22-b85eef4c26b5",
+      "result_id": "1627111a-7f80-490c-a780-09ab03437018"
+    },
+    {
+      "claim_id": "12749a36-fcb0-4df4-9768-abdbf2df79c2",
+      "result_id": "1627111a-7f80-490c-a780-09ab03437018"
+    },
+    {
+      "claim_id": "d634b4f4-79f2-44e8-894a-5b99c874cb46",
+      "result_id": "1627111a-7f80-490c-a780-09ab03437018"
+    },
+    {
+      "claim_id": "e032cbc0-57a8-40a6-81ea-da6f7da87b13",
+      "result_id": "5d818fe8-1f9d-4545-8364-af6c8d93b734"
+    },
+    {
+      "claim_id": "930bf092-a0f4-4e79-b3cd-bdb5e33fe694",
+      "result_id": "5d818fe8-1f9d-4545-8364-af6c8d93b734"
+    },
+    {
+      "claim_id": "f41f11e8-48c5-44ea-9f8e-6db7557100b4",
+      "result_id": "5d818fe8-1f9d-4545-8364-af6c8d93b734"
+    },
+    {
+      "claim_id": "fa96f73e-60e3-460c-a373-8ffcd8bc43f8",
+      "result_id": "5d818fe8-1f9d-4545-8364-af6c8d93b734"
+    },
+    {
+      "claim_id": "4237ecbc-919d-4cb9-8727-a207460a6b05",
+      "result_id": "5d818fe8-1f9d-4545-8364-af6c8d93b734"
+    },
+    {
+      "claim_id": "e09082da-9dcb-45cf-ade2-e427414bb019",
+      "result_id": "5d818fe8-1f9d-4545-8364-af6c8d93b734"
+    },
+    {
+      "claim_id": "86f4b31a-f23c-4307-9b13-c2644225c55d",
+      "result_id": "bba4169a-ecd0-4035-95b0-d7e1bf77f945"
+    },
+    {
+      "claim_id": "60599914-53b3-48e7-b1bc-2994d2bbd61f",
+      "result_id": "bba4169a-ecd0-4035-95b0-d7e1bf77f945"
+    }
+  ],
+  "comparisons": []
+}

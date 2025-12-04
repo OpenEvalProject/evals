@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "COEWS was developed and validated using multicontinental cohorts from Spain (Hospital 12 de Octubre) and Argentina (Argentinian COVID-19 Network), comprising 15,903 hospitalized COVID-19 patients between January 2020 and March 2022. The model predicts death or mechanical ventilation within 48 hours using laboratory parameters and oxygen saturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C70 provide comprehensive documentation of the study population, data sources, inclusion criteria, outcome definitions, and sample sizes. The multicontinental validation approach with adequate sample sizes (7507 training, 2502 internal test, 5894 external validation) and sufficient outcome events (>200 per database) supports the development and validation design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "COEWS was developed using stable iterative variable selection (SIVS) with Lasso regularization on a 75/25 train-test split of Spanish data, with 10-fold cross-validation and blinded predictions. The Argentinian database served as external validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C44 describe appropriate statistical methodology with adequate sample size justification (10-20 events per variable), proper train-test splitting, cross-validation, and blinded evaluation. The use of SIVS with Lasso is well-cited and appropriate for the imbalanced outcome data. External validation on a geographically distinct cohort strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C91"
+    ],
+    "result": "The final COEWS model includes seven features (sex, oxygen saturation, neutrophils, hemoglobin, platelets, lymphocytes, glucose) transformed into a practical scoring system with risk categories based on NEWS2 thresholds (low <10%, moderate 10-20%, high 20-30%, critical >30%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C91 describe the model features and transformation to a clinical score. The selection based on both statistical coefficients and clinical availability is reasonable. However, the transformation from continuous coefficients to discrete scores (C74, C91) may reduce predictive performance, which the authors acknowledge and evaluate (C115-C116).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C84"
+    ],
+    "result": "COEWS demonstrated good discrimination in external validation with AUROC 0.743 (95% CI: 0.703-0.784) for the coefficient-based model and 0.700 (95% CI: 0.654-0.745) for the score-based model. Calibration was good for training/internal validation and moderate for external validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C84 report discrimination and calibration metrics with confidence intervals. The AUROC values indicate moderate-to-good discrimination. The drop in performance from coefficient-based to score-based model (0.743 to 0.700) is expected and acknowledged. Calibration assessment using RMSE and decile stratification (Figure 1) is appropriate, though 'moderate' calibration in external validation warrants caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C53",
+      "C103",
+      "C101",
+      "C102",
+      "C104",
+      "C117"
+    ],
+    "result": "COEWS showed similar predictive performance in vaccinated and unvaccinated patients, representing the first EWS to compare performance across vaccination status. This suggests hospitalized COVID-19 patients show similar clinical manifestations before adverse events regardless of vaccination status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C117 report similar AUROC across vaccination status and interpret this as evidence of similar clinical manifestations. However, the claim of being 'first' (C101, C117) is based on literature review without systematic evidence. The inference that similar predictive performance implies similar clinical manifestations (C104) is speculative. The low vaccination rates (4.7% Spain, 11.4% Argentina) and potential misclassification (C121-C122) limit confidence in this subgroup analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C54",
+      "C55",
+      "C56",
+      "C105",
+      "C106"
+    ],
+    "result": "COEWS maintained good discrimination in patients hospitalized after July 2021 (AUROC 0.718 unvaccinated, 0.677 vaccinated), suggesting consistent performance despite therapeutic changes introduced by the Recovery Trial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C106 report temporal validation with reasonable AUROC values. However, the wide confidence intervals (e.g., 0.569-0.867 for unvaccinated) suggest limited precision. The inference that laboratory/clinical signs remained consistent (C106) is speculative and not directly tested. The July 2021 cutoff is justified by Recovery Trial publication (C55-C56), but the actual therapeutic changes and their impact are not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C99",
+      "C100",
+      "C57",
+      "C80",
+      "C81"
+    ],
+    "result": "COEWS outperformed NEWS2 in predicting the combined outcome of death or mechanical ventilation, with NEWS2 showing AUROC of 0.677 (vaccinated) and 0.648 (unvaccinated) compared to COEWS AUROC of 0.700-0.743.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C100 report comparative performance with NEWS2. The AUROC values show COEWS superiority (0.700-0.743 vs 0.648-0.677). However, the comparison is limited by: (1) NEWS2 was not specifically designed for the 48-hour prediction window or combined death/MV outcome, (2) no statistical testing of AUROC differences is reported, and (3) NEWS2 requires vital signs that may be altered by MV (C98), creating an unfair comparison for the combined outcome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "Missing data was addressed using median imputation for Spanish data and multiple imputation by chained equations (20 imputations) for Argentinian data, assuming data was missing completely at random (MCAR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C119 describe missing data handling. The MCAR assumption is stated but not tested. Different imputation methods for different cohorts (median vs. multiple imputation) is inconsistent and could introduce bias. The high missingness for some variables (e.g., 98% for lactate, 68% for respiration rate per Table 1) raises concerns about the validity of the MCAR assumption and the impact on model performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C111",
+      "C112"
+    ],
+    "result": "COEWS enables simple, fast triage without physical examination, reducing healthcare workload and can be integrated into Electronic Health Records for automated risk calculation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C86-C112 make assertions about clinical utility and workload reduction that are not empirically tested in this study. These are speculative benefits based on the model's design features (laboratory-only inputs) rather than demonstrated outcomes. No implementation study, time-motion analysis, or clinical impact assessment was performed to support claims of reduced workload or improved care.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Study limitations include potential misclassification of vaccination status in Spanish data (particularly late in follow-up) and questions about generalizability beyond European and South American populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C126 appropriately acknowledge limitations. The vaccination misclassification issue is transparently discussed with context (early vaccinations at hospital, close cohort). The geographic limitation to Spain and Argentina is acknowledged. However, the authors' mitigation arguments (similar results across cohorts C126, hospital-based vaccination C123) are somewhat circular and don't fully address the concerns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The introduction establishes the clinical context: new SARS-CoV-2 variants, waning immunity, and low vaccine uptake forecast new hospitalization waves, creating urgent need for Early Warning Scores. Existing models have limitations including lack of testing across populations with varying immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 provide appropriate background and rationale. The citations support the existence of immune-evasive variants (C1), waning immunity (C2), and published predictive models (C5-C7). The identified gap regarding testing across populations with varying immunity (C17) is reasonable, though the claim of 'no models' may be overstated without systematic review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Existing COVID-19 predictive models and EWS have limitations: they predict outcomes during entire hospitalization rather than short time horizons, haven't been tested in vaccinated vs. unvaccinated patients, and don't account for mechanical ventilation as an outcome despite vital signs being altered by MV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 critique existing models with appropriate citations. The limitation regarding time horizon (C93) is valid and well-articulated. The point about MV altering vital signs (C98) is clinically sound. However, the claim that 'no models' tested vaccinated vs. unvaccinated (C96) may be overstated without systematic review, and the characterization of NEWS2 discrimination as 'poor' (C99) is subjective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The proportion of vaccinated hospitalized patients was lower in Europe (4.7%) than Argentina (11.4%), possibly due to higher use of BIBP-CorV (Sinopharm) vaccine in Argentina, which has lower efficacy in reducing hospitalizations compared to BNT162b2 (Pfizer).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C110 present an observation and speculative explanation. The vaccination rate difference is factual (C107), but the explanation involving vaccine types (C108-C110) is speculative and not directly tested. The cited vaccine efficacy differences (C109-C110) don't necessarily explain hospitalization rates without data on vaccine distribution, timing, and population characteristics. This tangential observation adds little to the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C127"
+    ],
+    "result": "COEWS was developed with a large temporal dataset (2020-2022) and externally validated on a larger intercontinental cohort. The study evaluated both coefficient-based and score-based performance, acknowledging the trade-off between usability and performance. These features position COEWS as a reference tool for clinical decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C127 summarize study strengths appropriately. The large sample size, temporal breadth, external validation, and evaluation of both model forms are genuine strengths. However, the claim that COEWS is positioned as 'a new tool of reference' (C127) is aspirational rather than demonstrated, as no implementation or comparative effectiveness study was conducted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The study received ethical approval from Hospital 12 de Octubre and Hospital Italiano de Buenos Aires, with informed consent waived per CIOMS 2019 guidelines due to minimal risk from retrospective data analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 document appropriate ethical approvals and justify consent waiver. The retrospective observational design and minimal risk rationale are appropriate for the CIOMS guideline exception.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C13",
+      "C29",
+      "C30",
+      "C31",
+      "C76",
+      "C77",
+      "C78",
+      "C83"
+    ],
+    "result": "Efficiency (\u03b7) is defined as the ratio of agonist efficacy to high-affinity binding energy (\u03b7 = (\u0394GHA-\u0394GLA)/\u0394GHA), representing the fraction of agonist binding energy applied to the 'hold' rearrangement that initiates gating. This parameter links binding and gating energies through a conversion factor, calibrating the fundamental connection between agonist binding and receptor activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C13, C29-C31 provide consistent mathematical definitions of efficiency supported by Equation 2. Claims C76-C78, C83 demonstrate that this definition is operationalized through experimental measurements of KdC and KdO from concentration-response curves (C43-C47, C49). The theoretical framework is internally consistent and experimentally testable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C51",
+      "C56",
+      "C57",
+      "C58",
+      "C74",
+      "C86",
+      "C87"
+    ],
+    "result": "Efficiency measurements from 23 agonists segregate into five discrete classes with mean values of 0.56 (17%), 0.51 (31%), 0.45 (13%), 0.41 (26%), and 0.31 (12%), implying the existence of five distinct C versus O binding site structural pairs. Within each class, affinity and efficacy are significantly correlated (p<0.0001 for \u03b7=0.41 and 0.51; p=0.019 for \u03b7=0.56), and the slopes are significantly different (ANCOVA, F=129, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C51, C56 report consistent efficiency distributions from both x-means cluster analysis and slope-based calculations. Statistical support is provided by C57-C58 with appropriate tests (Pearson correlation, ANCOVA). The experimental data (C43-C47) and cluster analysis (Figure 4) support the existence of discrete classes. However, the inference of five structural pairs (C6) is speculative and requires structural validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C111",
+      "C112"
+    ],
+    "result": "Mutations of binding site residues (53 mutations) segregate into the same five efficiency classes as agonists (0.33\u00b10.03, 0.40\u00b10.02, 0.44\u00b10.01, 0.49\u00b10.01, 0.56\u00b10.03), with all slopes significantly different (ANCOVA, F=63.35, p<0.0001). This supports the idea that bound agonists behave similarly to side chains in terms of their energetic contributions to receptor activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C72-C73 report mutation efficiency distributions with appropriate statistical analysis. The observation that mutations produce the same five classes as agonists (C111) is well-supported by experimental data (Table 2, Figure 7). The inference that agonists behave like side chains (C112) is reasonable but somewhat speculative. The mutation data strengthen the case for discrete efficiency classes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C103",
+      "C105"
+    ],
+    "result": "Within each efficiency class, log affinity and log efficacy are linearly correlated, but the presence of multiple classes obscures this relationship when all agonists are considered together. This explains the apparent lack of a global correlation between affinity and efficacy in AChRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C57, C61 demonstrate linear correlations within classes supported by statistical tests. Claims C8, C60, C62, C103, C105 show that combining classes eliminates the correlation, which is clearly demonstrated in Figure 4B. This is a logical consequence of having multiple classes with different slopes and represents an important insight into receptor pharmacology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C89",
+      "C90",
+      "C91",
+      "C121",
+      "C154"
+    ],
+    "result": "Binding and gating are composite reactions involving intermediate states (AC, ACLA, ACHA) connected by two agonist-dependent induced fit rearrangements called 'catch' (AC\u21c4ACLA) and 'hold' (ACLA\u21c4ACHA). These stages are linked in a linear free energy relationship (LFER), with \u03b7 representing the fraction of binding energy applied to hold (and 1-\u03b7 to catch), indicating that binding and gating are energetically entangled rather than independent processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34, C36-C37 propose intermediate states that are explicitly stated as 'too short-lived to be detected individually and directly.' The LFER relationship (C39, C89-C91) is inferred from the observation of discrete efficiency classes but lacks direct structural or kinetic evidence for the intermediate states. While the model is internally consistent and explains the data, it remains a hypothesis requiring validation through structural studies or advanced kinetic measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C69"
+    ],
+    "result": "The mutation \u03b1D200A reduces efficiency to 0.33\u00b10.04 for four of five tested agonists (exception: TMA at 0.48), while \u03b1K145A reduces efficiency to 0.41\u00b10.03 for all five agonists. Mutations at \u03b1G153 reduce efficiency by approximately 25% for multiple agonists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 report experimental measurements from Table 2 with appropriate sample sizes (n=3-5). The differential effects of mutations on different agonists (C64, C66) are interesting observations. Claims C68-C69 include both reanalysis of published data and new measurements. The data are internally consistent and support the conclusion that specific binding site residues modulate efficiency in distinct ways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Efficiency can be calculated from a single concentration-response curve given knowledge of L0, with errors minimized because \u03b7 is the ratio of two logarithms. Experimental measurements show SCh (\u03b7=0.45) is 10% more efficient than Dec (\u03b7=0.41), explaining the mismatch between their similar POmax values but different potencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 report experimental measurements with appropriate error estimates (Table 1, Figure 3). Claim C49 demonstrates the practical utility of the method. The mathematical property that errors are small (C50) is valid and supported by citation. The comparison between SCh and Dec (C48) illustrates how efficiency explains pharmacological differences not apparent from traditional parameters alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C149",
+      "C150"
+    ],
+    "result": "The neurotransmitter ACh and related compounds (choline, CCh, nicotine) belong to the \u03b7~0.51 class. Small ligands (e.g., TriMA, MW 60) appear most efficient while large rigid ligands (e.g., varenicline, MW 211) appear least efficient, with a trend for agonists with smaller cationic centers to have greater \u03b7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by cluster analysis and experimental measurements (Figures 4-5). The observations about ligand size (C54-C55, C149-C150) represent trends in the data supported by citation (C149). However, the mechanistic interpretation (C150) is somewhat speculative. The classification of agonists into efficiency classes is well-supported, though the structural basis requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "The association rate constant to the closed state (kon to C) is slower than diffusion and correlated with agonist potency, while kon to O approaches the diffusion limit and is weakly agonist-dependent. When unliganded receptors open constitutively, kon increases to the diffusion limit, suggesting that the hold rearrangement removes a barrier to ligand entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 report experimental observations supported by citations. The inference that hold removes an entry barrier (C130, C166) is logical given the kinetic data. Claim C167 demonstrates long-range coupling between binding and gating through mutation effects. However, the nature and location of the barrier (C131) remain unknown, limiting mechanistic understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C144"
+    ],
+    "result": "The existence of five discrete efficiency classes implies at least five distinct ACLA/ACHA binding site structural pairs, suggesting that the C and O end states represent ensembles of structures rather than single conformations. The discrete distribution suggests structural changes are discrete rather than continuous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C138-C139 make reasonable inferences from the energy-structure relationship, but lack direct structural evidence. Claim C140 speculates about possible structural combinations without experimental support. Claims C141, C144 are logical inferences from the discrete efficiency distribution, but require structural validation through crystallography, cryo-EM, or computational methods to be confirmed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C156",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C176"
+    ],
+    "result": "The entire AChR activation cascade from encounter complex to gate (AC to AO) may be linked as an extended, multi-stage LFER where each domain rearrangement influences its neighbors bidirectionally. This hypothesis is supported by efficiency measurements, \u03a6-value analysis, and the observation that kon to O reveals a reverse cascade from gate to binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C156, C168-C173 propose an extended LFER hypothesis based on multiple lines of evidence (\u03b7, \u03a6, kon). While the hypothesis is intellectually appealing and consistent with available data (C167, C174, C176), it remains speculative. The bidirectional coupling (C169, C171) is inferred rather than directly demonstrated. This represents an important theoretical framework requiring extensive experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "While an empirical \u03b7 value can be calculated for any agonist-receptor pair, the generality of efficiency classes beyond AChRs is uncertain. Some evidence from other receptors suggests catch-and-hold induced fits with LFER relationships may be common, including observations of clamshell closure, increased opening rates, and ACHA intermediate states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C92 is logically sound given the universal two-affinity model. Claims C94-C98, C100-C101 cite evidence from other receptor systems suggesting similar mechanisms. However, C93, C102 appropriately acknowledge that limited data exist for other receptors. The generality of efficiency classes requires systematic investigation across receptor families and cannot be concluded from the current evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C125",
+      "C131",
+      "C157",
+      "C158"
+    ],
+    "result": "The structural changes underlying catch and hold rearrangements are not known with certainty. While structures exist for apo-C and desensitized states, the intermediate states AC, ACLA, and ACHA have not been structurally characterized. The site of the encounter complex and nature of the entry barrier are also unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118, C125, C131, C157-C158 appropriately acknowledge limitations in structural knowledge. These are honest assessments of what is and is not known, supported by citations to available structures (C117). This transparency about limitations is important for evaluating the overall strength of the mechanistic model and identifying priorities for future research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "The unliganded gating equilibrium constant L0 is 7.4\u00d710\u207b\u2077 at -100 mV, reduced e-fold by 60 mV depolarization, yielding L0=5.2\u00d710\u207b\u2077 at -70 mV and in experiments at +70 mV with \u03b5S450W background mutation. Background mutations \u03b5L269F and \u03b5E181W increase L0 by 179- and 5.5-fold respectively without affecting KdC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-C182 report experimental measurements and calculations with appropriate citations and controls. The voltage dependence (C180) and background mutation effects (C182) are well-characterized. The calculation of L0 at experimental conditions (C181) is straightforward. These methodological details are essential for interpreting the efficiency measurements and demonstrate appropriate experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "If efficiency classes prove common across receptors, the consensus view that affinity and efficacy are uncorrelated may need reexamination. Five efficiency classes have been detected in AChRs, though additional experiments could reveal more. The ability to classify 76 agonist-receptor combinations into five classes represents significant complexity reduction, and \u03b7 provides a useful classification scheme and analytical tool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104, C106-C107 appropriately qualify conclusions as conditional and acknowledge uncertainty. Claim C108 accurately summarizes the data reduction achieved. Claims C109-C110 make reasonable assertions about the practical utility of efficiency measurements. These represent fair assessments of the implications and limitations of the work, balancing enthusiasm with appropriate caution.",
+    "result_type": "MINOR"
+  }
+]

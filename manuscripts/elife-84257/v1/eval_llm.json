@@ -1,0 +1,540 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The Octopus vulgaris vertical lobe (VL) contains approximately 25 \u00d7 10^6 neurons, which is comparable to the human hippocampus and orders of magnitude larger than insect mushroom bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 cite established literature (Young 1963, West and Gundersen 1990, Aso et al. 2014, Jortner et al. 2007) for neuron counts in the VL and comparative structures. These are well-documented anatomical facts from prior work and provide appropriate context for the study's significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Prior anatomical work proposed the VL network consists of two neuron types (25 \u00d7 10^6 small amacrine neurons and 65 \u00d7 10^3 large efferent neurons) with 1.8 \u00d7 10^6 SFL axons providing input via en passant synapses, converging 400:1 onto output neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 accurately summarize prior anatomical understanding from Young (1963) and related work. These claims establish the historical context that the current study challenges and refines, and are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Prior physiological studies established that SFL-to-AM synapses are glutamatergic with NMDA-independent LTP, AM-to-LN connections are cholinergic, and LTP maintenance involves a novel NO-dependent molecular switch mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 cite appropriate prior physiological work (Hochner et al. 2003, 2006; Shomrat et al. 2011; Turchetti-Maia et al. 2017, 2018). These establish the functional context for interpreting the anatomical findings and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Recent evidence suggested the VL is more complex than previously thought, with some LNs receiving inhibitory inputs and AMs potentially divided into cholinergic and GABAergic groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 cite recent work (Shomrat et al. 2011, Stern-Mentch et al. 2022) that motivated the current detailed connectomic study. These provide appropriate justification for the need for higher-resolution anatomical analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The study used serial section electron microscopy to analyze a 260 \u00d7 390 \u00d7 27 \u00b5m volume of the VL lateral lobule, collecting 892 sections and reconstructing 516 cell processes with 13,434 postsynaptic and 2,472 presynaptic sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C30-C36 describe the core methodology and dataset. The dimensions, section counts, and reconstruction statistics are clearly stated and supported by Figure 1. The methods are standard for connectomics studies and appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Amacrine interneurons are divided into two groups: simple AMs (SAMs, 89.3% of VL cells) that receive single SFL inputs, with each SFL neuron represented in ~12 \u00b1 3.4 SAMs, and the SFL-to-SAM synapse is a likely 'memory site' with LTP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 present a major finding supported by extensive EM reconstruction data (Figures 3-6). The 89.3% proportion is derived from cell body classification (C69, Figure 4), the 1:1 SFL-to-SAM connectivity is demonstrated in C63, and the ~12 SAM estimate follows from the expansion ratio calculation (C71-C72). The LTP designation (C21) is supported by prior physiological work cited in C10-C11.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Complex AMs (CAMs) comprise 1.6% of VL cells and integrate multiple inputs from SFL axons, SAMs, and CAM-specific input neurons (CINs) via bifurcating dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C124-C128 describe the discovery of CAMs, a novel cell type. The 1.6% proportion is supported by cell body classification (C69, Figure 4), and the integration of multiple inputs is demonstrated by reconstruction data (C86-C88, Figures 6-8). This is a major novel finding well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C37",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The VL is organized as two parallel interconnected feedforward networks: SAMs provide sparse memorizable sensory representations while CAMs monitor global activity and provide balancing inhibition to sharpen VL output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C24-C26, C37, C143-C145 propose a functional model based on anatomical connectivity. While the feedforward architecture is well-supported by connectivity data (C57-C60, Figure 2), the functional interpretations (SAMs as 'memorizable' representations, CAMs as inhibitory balancing) are inferences. The inhibitory nature of CAMs is suggested by GABA labeling (C139) and physiological recordings (C140) but not definitively proven in this study. The model is plausible but requires additional functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "SFL axons do not bifurcate and innervate two distinct AM populations (SAMs and CAMs) with different morphologies and connectivity patterns, both converging onto LN processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C48 describe core anatomical findings supported by extensive EM reconstruction (Figures 2-7). The lack of SFL bifurcation (C38), distinct SAM/CAM morphologies (C41-C44), and convergence patterns (C47-C48) are directly demonstrated in the data. These are well-supported structural observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "CAM-input neurons (CINs) exclusively innervate CAMs via polyadic synapses with small vesicles, potentially providing inhibitory feedback to regulate VL output and suppress attack behavior in emergencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49, C94-C100, C183-C191 describe CINs and propose their function. The anatomical observations (exclusive CAM innervation, polyadic synapses, small vesicles) are well-supported by reconstruction data (Figure 8). However, the functional interpretations (C187-C191) are speculative. The inhibitory nature is inferred from vesicle morphology (C186) but not proven. The proposed role in 'panic' responses (C191) is entirely speculative without functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The VL contains two types of putative neuromodulatory elements: ascending fibers (AF-Nm and AF-Mix) with menorah-shaped morphology receiving SAM input, and widespread neuromodulatory fibers (NMs) with large vesicles lacking typical synaptic outputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56, C101-C115 describe neuromodulatory systems. The anatomical observations (morphology, vesicle sizes, connectivity patterns) are well-supported by reconstruction data (Figure 9). The neuromodulatory designation is appropriately inferred from large vesicle sizes (60-200 nm) and lack of typical synaptic outputs, consistent with volume transmission in other systems (cited in C55, C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The VL forms a feedforward neural network with fast synaptic transmission without feedback loops, confirmed by statistical analysis showing significantly fewer feedback synapses than expected by chance (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 describe the feedforward architecture supported by connectivity analysis. The lack of feedback loops is demonstrated by graph analysis (C60) with appropriate statistical testing. The only exception is AF-to-AF connections (C59), which are noted. This is a well-supported architectural finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "SFL axons make two types of synaptic contacts: large boutons (LBs, 6.41 \u00b1 2.1 \u00b5m\u00b3) that innervate SAM 'palms' in dyadic/triadic arrangements, and small boutons (SBs) that innervate single CAM twigs, suggesting functional specialization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C68, C129-C133 describe SFL bouton types supported by detailed EM analysis (Figure 3). The bimodal size distribution (C3C), distinct postsynaptic targets, and multisynaptic arrangements are well-documented. The functional specialization inference (C132) is reasonable given the structural differences. The comparison to hippocampal mossy fibers (C133) provides useful context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Cell body classification estimates 89.3% SAMs and 1.6% CAMs in the sampled volume, extrapolating to ~22.3 \u00d7 10^6 SAMs and <1.4 \u00d7 10^6 CAMs in the entire VL, with a 1:12 SFL-to-SAM expansion ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 present quantitative estimates based on SVM classification of 1,472 cell bodies (Figure 4). The classifier achieved 94.55% training accuracy with 4.01% validation error. The extrapolation to the entire VL assumes the sampled region is representative, which is reasonable but should be noted as an assumption. The 1:12 expansion ratio follows logically from the cell counts and 1:1 connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "SAM-to-CAM connections occur within synaptic glomeruli containing SFL LBs, SAM palms, and CAM twigs in multisynaptic motifs (monads, dyads, triads), with SAM palms functioning as bifunctional pre- and postsynaptic compartments containing up to 1,500 vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 describe synaptic glomeruli supported by high-resolution EM (Figure 5). The multisynaptic motifs are well-documented, and the bifunctional nature of SAM palms (82% forming serial connections, C75) is quantified. The vesicle counts (C78) come from 1 nm/pixel imaging. These are detailed structural observations well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "SAM seed cells receive only one SFL LB input (89.3% have no other inputs) and distribute outputs to three targets: LNs (35%), CAMs (25%), and AFs (26%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 describe SAM connectivity from analysis of 28 seed cells (Figure 6). The single SFL input is consistently observed (C80-C81), and the output distribution is quantified from 271 presynaptic sites (C83-C84). These are direct observations from the reconstruction data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "CAMs were not identified in earlier studies due to their sparseness (1.6%) and receive dozens to hundreds of inputs (up to 514 postsynaptic sites) from SFL (48%), SAMs (42%), and CINs (5%), with outputs exclusively to LNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 describe CAM connectivity from analysis of 53 CAMs (Figure 6). The input diversity and numbers are well-documented, with the most extreme case showing 514 postsynaptic sites over 1.4 mm (C86). The exclusive LN output (C89) is a clear observation. The explanation for why CAMs were missed previously (C85) is reasonable inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "SAMs and CAMs converge onto LN processes, which display the highest postsynaptic density (162 sites/100 \u00b5m), with ~90% of inputs from SAMs and only 3% from CAMs distributed in a 'salt and pepper' pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 describe LN innervation patterns supported by analysis of 24 LN processes (Figure 7). The postsynaptic density measurements (C91) and input proportions (C92) are quantified from 184 postsynaptic sites on one reconstructed LN dendrite. The sparse, even distribution of CAM inputs (C93) is directly observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "SAMs are highly input-specific, receiving single SFL inputs with each SFL neuron represented in ~12 SAMs distributed sparsely (1.03 \u00b1 0.73 LBs per 100 \u00b5m), providing a dedicated synaptic site for gain control and plasticity rather than computational integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C123 synthesize anatomical findings with functional interpretation. The anatomical observations (single input, sparse distribution) are well-supported. The comparison to cerebellum/mushroom body (C120) and the gain control interpretation (C123) are reasonable inferences given the linear input/output relationship from prior physiology (C137) and the presence of LTP at this synapse (C122).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The SFL-to-SAM synapse is the site of LTP, with the large SFL-LB volume suggesting it dominates recorded field potentials; electrotonically compact SAMs (\u03bb>147 \u00b5m) can activate transmitter release without action potentials, providing synaptic gain-control relay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C138 integrate anatomical findings with prior physiological data. The LTP site designation (C134) is supported by cited work (Hochner et al. 2003, Shomrat et al. 2011). The electrotonic compactness calculation (C136) uses measured morphological dimensions and prior resistance measurements. The gain-control interpretation (C138) is reasonable inference combining anatomy and physiology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "CAMs are likely inhibitory based on GABA immunolabeling and recorded IPSPs in LNs, with sparse LN innervation suggesting they provide balancing inhibition to sharpen stimulus-specific SAM inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-C142 propose CAMs are inhibitory. The GABA labeling (C139, citing Stern-Mentch et al. 2022) and physiological recordings (C140, Figure 7 supplement 1) support this but are not definitive. The functional interpretation (C142) is reasonable inference from the connectivity pattern but requires additional validation. The inhibitory nature is plausible but not conclusively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "SAM synapses onto AF-Nm boutons suggest a mechanism for activity-dependent local serotonin release that could trigger NOS activation in strongly activated SAMs, resembling heterosynaptic facilitation in Aplysia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C146-C153 propose a 'self-LTP' mechanism involving serotonin. The anatomical observations (SAM-to-AF synapses, rosette structures) are well-supported (Figure 9). The serotonergic identity of AF-Nm is inferred from similarity to immunolabeled processes (C148) but not directly proven. The proposed mechanism (C149-C150) is speculative, though supported by prior 5-HT effects on LTP (C151). This is an interesting hypothesis requiring functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "LTP expression involves NO-dependent presynaptic facilitation, with the SAM palm wrapping the SFL LB ensuring synaptic specificity through steep NO gradients, and LTP maintenance via an NO-dependent NOS activation feedback loop enabling associativity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C159 integrate anatomical findings with prior mechanistic work. The NO-dependent LTP is established by cited work (C154-C155, Turchetti-Maia et al. 2018). The anatomical arrangement (palm wrapping LB, C157) provides a structural basis for specificity consistent with NO diffusion properties (citing Hall and Garthwaite 2009). The molecular switch mechanism (C158) is from prior work. The integration of anatomy and mechanism is well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "SAMs and CAMs are organized in 'association modules' with compact bundles of thin neurites facilitating NO buildup, creating correlation between presynaptic SAM coactivity (NO) and postsynaptic LN responses (EPSP), enabling Hebbian-type associativity in a feedforward network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C160-C164 propose 'association modules' as functional units. The anatomical observation of bundled neurites (C160, Figure 7A) is supported. The facilitation of NO buildup (C161) is reasonable inference given the spatial arrangement and NOS expression (citing Turchetti-Maia et al. 2018). However, the proposed correlation between NO and EPSP (C163) and Hebbian associativity (C163) are speculative inferences requiring functional validation. The model is plausible but unproven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "During avoidance learning, AF systems transmit serotonergic 'punishment' signals that facilitate long-term associations, with trained SAMs producing stronger LN activation that inhibits attack behavior via GABAergic output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C165-C174 propose a learning model. The behavioral dependence on SFL-VL integrity and LTP (C166, citing Shomrat et al. 2008) is established. However, the proposed mechanism (C171-C174) is largely speculative. The serotonergic 'punishment' signal (C171), the training effects on SAMs (C173), and the behavioral output (C174) are reasonable inferences but lack direct experimental support in this study. This is a plausible model requiring validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "Widespread NM processes with large dense-core vesicles (60-200 nm) suggest extrasynaptic volume transmission; TH-labeled processes indicate dopaminergic neuromodulation from a 'deep nucleus' at the SFL-VL border, with dopamine suppressing LTP maintenance unlike serotonin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C182 describe neuromodulatory systems. The anatomical observations (NM distribution, vesicle sizes, TH labeling) are well-supported by reconstruction data and immunohistochemistry (C177-C180, citing Stern-Mentch et al. 2022). The dopamine effects on LTP (C182) are from unpublished results, which limits evaluation but the authors appropriately note this. The extrasynaptic transmission inference (C177) is reasonable given vesicle characteristics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "SAM and CAM neurites form quasi-columnar 'association modules' that may respond to combinatorial sensory features, with each module equivalent to a single interneuron in classical fan-out fan-in networks, achieved through microcircuits of many simple neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C192-C198 propose association modules as functional units. The anatomical observation of columnar organization (C192, Figures 7A, 9A) is supported. However, the functional interpretations (C194, C196-C198) are speculative. The equivalence to classical network interneurons (C197) and the combinatorial coding (C194, C196) are reasonable inferences but lack direct functional evidence. This is an interesting hypothesis requiring validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "The fundamental circuit motifs of fast transmission are likely conserved across all five VL lobuli based on observations in a second dataset, shared morphological/histological features, and similar physiological properties across lobuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C199-C205 argue for generalizability. The evidence includes: (1) similar motifs in a second dataset (C200), (2) shared morphology/neurotransmitter distribution across lobuli (C201-C202, citing Gray and Young 1964, Stern-Mentch et al. 2022), and (3) similar physiological properties (C203-C204, citing Hochner et al. 2003, Shomrat et al. 2011). This multi-level evidence reasonably supports generalization of the fast transmission circuit, though the authors appropriately note this as anticipation (C205).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C206",
+      "C207",
+      "C208",
+      "C209"
+    ],
+    "result": "Neuromodulators show distinct neurochemical signatures across VL lobuli, with differential NO involvement and dopamine/octopamine effects on LTP, suggesting functional compartmentalization through differential neuromodulation superimposed on conserved connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C206-C209 propose functional compartmentalization. The distinct neuromodulator distributions (C206, citing Shigeno and Ragsdale 2015, Stern-Mentch et al. 2022) and differential NO/dopamine/octopamine effects (C207-C208) support this. The hypothesis of compartmentalization through differential neuromodulation (C209) is reasonable inference from the data, appropriately citing Bargmann 2012 for this organizational principle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C210",
+      "C211"
+    ],
+    "result": "The VL circuitry comprises two parallel interconnected feedforward networks assembled in association modules, with SFL axons fanning out to SAMs and fanning in to CAMs, providing stimulus-specific excitation and global balancing inhibition to LN output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C210-C211 summarize the main organizational findings. The two-network architecture is well-supported by extensive connectivity data (Figures 2-7). The feedforward nature is statistically validated (C60). The fan-out/fan-in pattern is quantified (C71, C143). The functional interpretation (stimulus-specific vs. global) is reasonable inference from connectivity patterns, though the inhibitory nature of CAMs remains to be definitively proven. This is a well-supported major conclusion.",
+    "result_type": "MAJOR"
+  }
+]

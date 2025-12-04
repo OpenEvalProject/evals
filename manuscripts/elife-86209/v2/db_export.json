@@ -1,0 +1,1741 @@
+{
+  "submission": {
+    "id": "37b9fd93-b59d-4d28-bafa-c33bf78bc13a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:45:54.453089Z",
+    "updated_at": "2025-12-04T03:45:54.453089Z"
+  },
+  "content": [
+    {
+      "id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "submission_id": "37b9fd93-b59d-4d28-bafa-c33bf78bc13a",
+      "content_type": "manuscript",
+      "content_text": "# Tissue-derived exosome proteomics identifies promising diagnostic biomarkers for esophageal cancer\n\n## Authors\n\n- Dingyu Rao<sup>1</sup> ([ORCID: 0000-0002-2182-2682](https://orcid.org/0000-0002-2182-2682))\n- Hua Lu<sup>2</sup> ([ORCID: 0009-0005-7776-0766](https://orcid.org/0009-0005-7776-0766))\n- Xiongwei Wang<sup>3</sup>\n- Zhonghong Lai<sup>4</sup>\n- Jiali Zhang<sup>5</sup>\n- Zhixian Tang<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Cardiothoracic Surgery, First Affiliated Hospital of Gannan Medical University Ganzhou China ([ROR:040gnq226](https://ror.org/040gnq226))\n2. The First Clinical School of Medicine of Southern Medical University Guangzhou China\n3. Department of Anesthesiology, Longhua District Central Hospital Shenzhen China ([ROR:00p0n9a62](https://ror.org/00p0n9a62))\n4. Department of Traumatology, First Affiliated Hospital of Gannan Medical University Ganzhou China ([ROR:040gnq226](https://ror.org/040gnq226))\n5. The First School of Clinical Medicine, Gannan Medical University Ganzhou China ([ROR:01tjgw469](https://ror.org/01tjgw469))\n\n\u2020 Corresponding author\n\n## Abstract\n\nEsophageal cancer (EC) is a fatal digestive disease with a poor prognosis and frequent lymphatic metastases. Nevertheless, reliable biomarkers for EC diagnosis are currently unavailable. Accordingly, we have performed a comparative proteomics analysis on cancer and paracancer tissue-derived exosomes from eight pairs of EC patients using label-free quantification proteomics profiling and have analyzed the differentially expressed proteins through bioinformatics. Furthermore, nano-flow cytometry (NanoFCM) was used to validate the candidate proteins from plasma-derived exosomes in 122 EC patients. Of the 803 differentially expressed proteins discovered in cancer and paracancer tissue-derived exosomes, 686 were up-regulated and 117 were down-regulated. Intercellular adhesion molecule-1 (CD54) was identified as an up-regulated candidate for further investigation, and its high expression in cancer tissues of EC patients was validated using immunohistochemistry, real-time quantitative PCR (RT-qPCR), and western blot analyses. In addition, plasma-derived exosome NanoFCM data from 122 EC patients concurred with our proteomic analysis. The receiver operating characteristic (ROC) analysis demonstrated that the AUC, sensitivity, and specificity values for CD54 were 0.702, 66.13%, and 71.31%, respectively, for EC diagnosis. Small interference (si)RNA was employed to silence the CD54 gene in EC cells. A series of assays, including cell counting kit-8, adhesion, wound healing, and Matrigel invasion, were performed to investigate EC viability, adhesive, migratory, and invasive abilities, respectively. The results showed that CD54 promoted EC proliferation, migration, and invasion. Collectively, tissue-derived exosomal proteomics strongly demonstrates that CD54 is a promising biomarker for EC diagnosis and a key molecule for EC development.\n\n## Introduction\n\nEsophageal cancer (EC) is the seventh most prevalent malignancy and the sixth leading cause of cancer-related death globally, accounting for 509,000 deaths yearly (Bray et al., 2018). Despite fast advances in medical technology, EC incidence is expected to rise (Napier et al., 2014). The 5-year survival rate for EC patients has seen very modest improvement over the last five decades. Specifically, it has increased from a mere 4% in the 1950s to 17% in 2010 (Baiu and Backhus, 2020). The significance of early detection and immediate symptomatic intervention in enhancing EC survival rates necessitates developing a straightforward, effective, and non-invasive method for diagnosing the disease, consequently facilitating its screening process. Imaging techniques, tissue biopsies, and serum tumor markers, including carcinoembryonic antigen (CEA) and CA-199, are now the primary tools for identifying esophageal malignancies (Siegel et al., 2017; Kosugi et al., 2004). Despite their limited sensitivity in detecting small lesions, imaging techniques remain the prevailing method for cancer diagnosis and surveillance, posing challenges in the early detection of recurrent locations (Becker et al., 2013). Similarly, serum biomarkers, including CEA and squamous cell carcinoma antigen, have low sensitivity and specificity for early diagnosis or recurrence detection (Xu et al., 2014). Therefore, more potent diagnostic markers for EC are urgently required to enhance diagnosis and non-invasive approaches.\n\nExosomes, which are small vesicles enclosed by a double membrane and measuring between 40 and 200 nm in diameter, were initially discovered in sheep reticulocytes by Pan and Johnstone, 1983; Kalluri and LeBleu, 2020. These vesicles are produced through the endosomal pathway and are expelled into the extracellular space (Latifkar et al., 2019; Harding et al., 2013). Exosomes, extracellular vesicles, are produced by many cells, such as blood, immune, cancer, and stem cells (Kimiz-Gebologlu and Oncel, 2022; Wei et al., 2022; Xu et al., 2022). These exosomes can be secreted into different physiological fluids, including blood, urine, breast milk, ascites, amniotic fluid, saliva, and cerebrospinal fluid (Ha et al., 2016; Li et al., 2014; L\u00e4sser et al., 2011). The tumor cell molecular markers are enriched in exosomes transferred between the tumor and normal cells (Attaran and Bissell, 2022). Protein expression in tumor patient-derived small extracellular vesicles (sEVs) differs significantly from healthy donors (HD). Accordingly, these differentially expressed sEVs proteins emerge as potential tumor diagnosis biomarkers (Huang and Deng, 2019).\n\nIntercellular adhesion molecule-1 (ICAM-1), also known as CD54, is a transmembrane glycoprotein in the immunoglobulin superfamily that is present in a wide range of cell types and is up-regulated in response to a variety of inflammatory mediators. Recent research on acute myeloid leukemia discovered a correlation between CD54 expression and other differentiation-related molecules (e.g., CD34 and HLA-DR) and a significant correlation to French-American-British Cooperative Group (FAB) morphological classification. Moreover, high CD54 expression was associated with germinal center lymphoma in lymphoproliferative disorders (Maio and Del Vecchio, 1992; Wang et al., 2021). CD54 is also believed to play an important role in several malignancies. In breast, gastric, and colorectal cancers, increased CD54 expression in the cancer cells has been correlated with more favorable prognosis, suggesting a role of CD54 in enhancement of immune surveillance (Ogawa et al., 1998; Fujihara et al., 1999; Tachimori et al., 2005). Previous studies have shown that CD54 can predict the progression and metastasis of gastric cancer (G\u00f3mez-Gallegos et al., 2023). Fang et al., 2016 identified circulating tumor cells as a biomarker of treatment selection and liver metastasis in patients with colorectal cancer. However, exosomal CD54 has not been reported in EC.\n\nHerein, the candidate molecule CD54 in EC tissue-derived exosomes was identified using proteomics and validated in plasma exosomes from 122 EC patients. A series of assays, including cell counting kit-8, adhesion, wound healing, and Matrigel invasion, were performed to investigate EC viability, adhesive, migratory, and invasive capabilities. The results showed that CD54 promoted EC proliferation, migration, and invasion. The findings strongly demonstrate that CD54 is a promising biomarker for EC diagnosis and a key molecule for its development.\n\n## Results\n\n### Exosome identification\n\nThe aim of this project is to find effective diagnostic indicators for EC. The overall workflow is presented in Figure 1A. The nano-flow cytometry (NanoFCM) results revealed that the isolated exosome diameters ranged from 50 to 200 nm (Figure 1B). Exosomes appeared as concave hemispherical bilayer structures with a diameter of approximately 120 nm under a transmission electron microscope (Figure 1C). Furthermore, western blot analysis revealed the presence of exosomal protein markers, CD9, CD63, and TSG101, but not a control protein, GM130, in isolated exosomes (Figure 1D). These findings are consistent with the definition of exosomes by the International Extracellular Vesicle Society Extracellular Vesicle Society.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/86209/elife-86209-fig1-v2.jpg)\n\n**Figure 1.:** (A) Overview of the entire experimental design of this study. (B) Nano-flow cytometry (NanoFCM) results show isolated exosome diameters ranging from 50 to 200 nm. (C) Transmission electron microscope of exosomes showing round\u2010shaped structures with diameters of approximately 120 nm; scale bar: 100 \u03bcm. (D) Western blot analysis of CD9, CD63, TSG101, and GM130 exosomal biomarkers.\n\n### Identification of differentially expressed proteins\n\nLabel-free quantitative proteomics profiling was performed on eight cancer and paracancer tissue-derived exosome pairs. The screening criterion to analyze the differentially expressed proteins was as follows: |log2(FC)|\u22651.0000000; p\u22640.01; fold change (FC) denoted the ratio of expression between two samples (groups). Of the 803 identified proteins, 686 were up-regulated and 117 were down-regulated in EC (Figure 2A). Correlation heatmap clustering separated samples from the two groups, indicating a significant difference between cancer proteomes and paracancer tissue-derived exosomes (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/86209/elife-86209-fig2-v2.jpg)\n\n**Figure 2.:** (A) The volcano plot was drawn using two factors, the fold change (log2) between the two groups of samples and the p-value (\u2212log10) obtained from the t-test, to show the significance of differences in the data between the two groups of samples. The red and blue dots in the figure denote significantly up-regulated and down-regulated proteins, respectively; the gray dots denote proteins with insignificant differences. (B) Differentially expressed protein clustering diagram; columns represent different samples, rows represent different proteins, clustered by log10 (protein expression value+1) value, data in each row is normalized, red indicates high expression protein, green indicates low expression protein.\n\n### Functional enrichment analysis of differentially expressed proteins\n\nA GO enrichment analysis was performed to reveal the significantly enriched biological functions; p<0.05 denoted statistically significant enrichment results. Figure 3A sequentially displays the statistically significant items in biological process (BP), cellular component (CC), and molecular function (MF). These differentially expressed proteins in BPs were mainly related to cellular, single-organism, and metabolic processes. EC-related proteins in MFs were mainly associated with binding, catalytic activity, and structural molecule activity. The differentially expressed proteins in CCs were mainly enriched in cells, cell parts, and organelles, among other components. The KEGG analysis revealed that these proteins play a role in the catabolic process of nuclear-transcribed mRNA, viral transcription, translational initiation, and signal recognition particle-dependent cotranslational modification (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/86209/elife-86209-fig3-v2.jpg)\n\n**Figure 3.:** (A) Classification of 801 differentially expressed proteins based on biological processes, cellular components, and molecular functions. The horizontal axis is the GO classification, the left side of the vertical axis is the percentage of the number of proteins, and the right side is the number of proteins. (B) The abscissa is the enrichment factor; the ordinate is the name of the GO term; the size of the dot indicates the number of proteins annotated to this term; and the color indicates the Q value of the significant p-value corrected by multiple hypothesis testing.\n\n### CD54 expression is up-regulated in EC tissues\n\nCD54 expression was assessed by immunohistochemistry in the eight sequenced tissue sample pairs. The results revealed that CD54 was highly expressed in cancer tissues (Figure 4A) and at the gene level (Figure 4B). Similarly, western blot analysis of the eight tissue sample pairs demonstrated a higher CD54 expression in cancer tissues than adjacent tissues (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/86209/elife-86209-fig4-v2.jpg)\n\n**Figure 4.:** (A) Immunohistochemical detection of CD54 expression in EC and paracancer tissues; magnification \u00d7100. (B) Real-time quantitative PCR detection of CD54 mRNA expression in eight EC and adjacent tissue pairs. (C) Western blot detection of CD54 expression in eight EC and adjacent tissue pairs. (D) Quantification analysis of representative western blot images using ImageJ software. *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.\n\n### CD54 expression in plasma-derived exosomes\n\nExosomes were recovered from the plasma of 122 EC patients and 62 HDs using ultracentrifugation. NanoFCM analysis of CD54 expression in exosomes showed that CD54 levels were significantly higher in plasma-derived exosomes in EC patients than in HDs (Figure 5A\u2013C). CD54 levels increased as the disease progressed (Figure 5D); CD54 expression decreased following resectioning of the patient\u2019s mass (7\u201310 days) (Figure 5E).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/86209/elife-86209-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013B) The bivariate dot plots of CD54 FITC fluorescence (y-axis) vs. SSC (x-axis) for exosomes isolated from plasmas of healthy donors (HDs) (A) and esophageal cancer (EC) (HCC) (B) patients. (C) The ratios of CD54+ exosomes vs. total exosomes (CD54+/total) significantly differed between HD and EC groups. (D) Exosomal CD54 levels were significantly higher in stage III\u2013IV patients than in stages I\u2013II. (E) Changes in plasma exosomal CD54 levels in EC patients (n=19) before (preoperation) and after (7\u201310 days postoperation) surgical removal of the tumor. ****p<0.0001.\n\n### Correlation analysis between plasma exosomal CD54 levels and clinical characteristics of EC patients\n\nTable 1 depicts the connection between plasma exosomal CD54 levels and clinical characteristics in EC patients. Plasma exosomal CD54 expression levels were closely related to tumor size (p=0.0308), distant metastasis (p<0.0001), smoking history (p<0.0004), drinking history (p<0.0002), and clinical stage (p<0.0001), regardless of age (p=0.449) and gender (p=0.349).\n\n**Table 1.**\n The relationship between plasma exosomes CD54 levels and clinical characteristics of esophageal cancer (EC) patients.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Clinicopathological characteristics</th>\n      <th></th>\n      <th>N (122)</th>\n      <th>CD54+ exosomes (%)</th>\n      <th>p</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Age (years)</td>\n      <td>&lt;50\u226550</td>\n      <td>4973</td>\n      <td>11.56\u00b14.9912.24\u00b14.77</td>\n      <td>= 0.4490</td>\n    </tr>\n    <tr>\n      <td>Gender</td>\n      <td>MaleFemale</td>\n      <td>8237</td>\n      <td>12.59\u00b14.8611.69\u00b14.83</td>\n      <td>= 0.3490</td>\n    </tr>\n    <tr>\n      <td>Tumor size</td>\n      <td>&lt;4 cm\u22654 cm</td>\n      <td>4874</td>\n      <td>10.33\u00b14.5412.93\u00b14.81</td>\n      <td>= 0.0307</td>\n    </tr>\n    <tr>\n      <td>Distant metastasis</td>\n      <td>AbsentPresent</td>\n      <td>5072</td>\n      <td>9.86\u00b14.5713.38\u00b14.54</td>\n      <td>&lt;0.0001</td>\n    </tr>\n    <tr>\n      <td>Smoking history</td>\n      <td>AbsentPresent</td>\n      <td>4973</td>\n      <td>10.11\u00b14.5813.21\u00b14.68</td>\n      <td>= 0.0004</td>\n    </tr>\n    <tr>\n      <td>Drinking history</td>\n      <td>AbsentPresent</td>\n      <td>4676</td>\n      <td>9.91\u00b14.3413.21\u00b14.71</td>\n      <td>= 0.0002</td>\n    </tr>\n    <tr>\n      <td>Clinical stage</td>\n      <td>I\u2013IIIII\u2013IV</td>\n      <td>4874</td>\n      <td>9.13\u00b14.1513.80\u00b14.38</td>\n      <td>&lt;0.0001</td>\n    </tr>\n  </tbody>\n</table>\n\n### The diagnostic efficiency of plasma exosomal CD54 for determination of EC\n\nThe diagnostic efficiency of CD54+ exosomes in identifying EC was evaluated using receiver operating characteristic (ROC) curve analysis (Table 2). The results revealed that diagnostic sensitivity, specificity, and AUC were 66.13%, 71.31%, and 0.702, respectively (Figure 6A). Patients with tumor size \u22654 cm performed better in diagnostics than patients with <4 cm (Figure 6B\u2013C). These data strongly suggest that early diagnosis of patients is ineffective. Similarly, the assessment of the diagnostic performance of different stages showed 32.26% sensitivity, 52.38% specificity, and an AUC value of 0.513 in stage I (Figure 7A\u2013D).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/86209/elife-86209-fig6-v2.jpg)\n\n**Figure 6.:** (A) The diagnostic efficiency to distinguish EC patients from healthy donors (HDs). (B) The diagnostic efficiency to distinguish EC patients with tumor size <4 cm from HD. (C) The diagnostic efficiency to distinguish EC patients with tumor size \u22654 cm from HD.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/86209/elife-86209-fig7-v2.jpg)\n\n**Figure 7.:** (A) The diagnostic efficiency to distinguish EC patients with stage I from healthy donors (HDs). (B) The diagnostic efficiency to distinguish EC patients with stage II from HDs. (C) The diagnostic efficiency to distinguish EC patients with stage III from HDs. (D) The diagnostic efficiency to distinguish EC patients with stage IV from HDs.\n\n**Table 2.**\n Main parameters of receiver operating characteristic (ROC) curve analysis results.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Variable</th>\n      <th>AUC</th>\n      <th>95% CI</th>\n      <th>Sensitivity (%)</th>\n      <th>Specificity (%)</th>\n      <th>Youden index</th>\n      <th>p</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>HD-EC</td>\n      <td>0.702</td>\n      <td>0.630\u20130.767</td>\n      <td>66.13</td>\n      <td>71.31</td>\n      <td>0.3744</td>\n      <td>&lt;0.0001</td>\n    </tr>\n    <tr>\n      <td>HD-EC (\uff1c4 cm)</td>\n      <td>0.600</td>\n      <td>0.501\u20130.694</td>\n      <td>75.81</td>\n      <td>44.44</td>\n      <td>0.2025</td>\n      <td>= 0.0733</td>\n    </tr>\n    <tr>\n      <td>HD-EC (\u22654 cm)</td>\n      <td>0.761</td>\n      <td>0.682\u20130.830</td>\n      <td>66.13</td>\n      <td>81.82</td>\n      <td>0.4795</td>\n      <td>&lt;0.0001</td>\n    </tr>\n    <tr>\n      <td>HD-EC (stage I)</td>\n      <td>0.513</td>\n      <td>0.401\u20130.625</td>\n      <td>32.26</td>\n      <td>52.38</td>\n      <td>0.1536</td>\n      <td>= 0.8631</td>\n    </tr>\n    <tr>\n      <td>HD-EC (stage II)</td>\n      <td>0.534</td>\n      <td>0.425\u20130.640</td>\n      <td>20.97</td>\n      <td>92.59</td>\n      <td>0.1356</td>\n      <td>= 0.6080</td>\n    </tr>\n    <tr>\n      <td>HD-EC (stage III)</td>\n      <td>0.830</td>\n      <td>0.74\u20130.898</td>\n      <td>61.29</td>\n      <td>97.37</td>\n      <td>0.5866</td>\n      <td>&lt;0.0001</td>\n    </tr>\n    <tr>\n      <td>HD-EC (stage IV)</td>\n      <td>0.803</td>\n      <td>0.711\u20130.877</td>\n      <td>66.13</td>\n      <td>86.11</td>\n      <td>0.5224</td>\n      <td>&lt;0.0001</td>\n    </tr>\n  </tbody>\n</table>\n\n### Reduced CD54 reduces EC proliferation and migration\n\nWe used real-time quantitative PCR (RT-qPCR) (Figure 8A) and western blot (Figure 8B\u2013C) to detect CD54 expression in normal human normal esophageal epithelial cell (HEEC) and EC cells TE-1, OE19, and KYSE-510. The results showed that CD54 was highly expressed in EC cells compared with normal esophageal epithelial cells, especially TE-1 and KYSE-510 (Figure 8A\u2013C). Similarly, immunofluorescence results showed that CD54 was highly expressed in TE-1 and KYSE-510 than in HEEC (Figure 8D). Next, we used siRNA specific for CD54 (si-CD54) sequences transfected into EC cells, revealing that CD54 expression was reduced (Figure 8E\u2013F). Cell viability (Figure 8G\u2013H), wound healing (Figure 8I\u2013J and M\u2013N), and cell migration (Figure 8K\u2013L and O\u2013P) results show that the knocked-down CD54 significantly reduced the proliferative and migratory capacities of EC cells TE-1 and KYSE-510. These results strongly suggest that CD54 is important in EC development.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/86209/elife-86209-fig8-v2.jpg)\n\n**Figure 8.:** (A) The relative mRNA expression of CD54 was significantly increased in TE-1 and KYSE-510 cells. (B) The protein expression of CD54 was significantly increased in TE-1 and KYSE-510 cells. (C) Quantification analysis of representative western blot images using ImageJ software. (D) Representative images of CD54 immunofluorescence staining in human normal esophageal epithelial cell (HEEC), TE-1, and KYSE-510. Nuclei were stained with DAPI; scale bar: 100 \u00b5m. (E) The relative protein expression of CD54 was significantly decreased in TE-1 cells using specific siRNA against CD54. (F) Quantification analysis of representative western blot images using ImageJ software. (G\u2013H) The cell viability was significantly decreased in (G) TE-1 and (H) KYSE-510 cells using specific siRNA against CD54. (I\u2013L) Cell migratory abilities were significantly decreased in (I, K) TE-1 and (J, L) KYSE-510 cells using specific siRNA against CD54; magnification, \u00d7100. (M\u2013P) Histograms showing that CD54 siRNA significantly decreased the migration abilities of (M\u2013N, K) TE-1 and (O\u2013P) KYSE-510 cells, as demonstrated by the wound healing and cell migration assays, respectively. ns: no significant; **p<0.01; ***p<0.001; ****p<0.0001.\n\n## Discussion\n\nEarly cancer detection continues to be of utmost importance in cancer management, given that prompt initiation of clinical interventions is associated with a more favorable outcome (Whiteside, 2016). EC is a malignant tumor with a high propensity for metastasis and recurrence. It is commonly diagnosed at later stages, resulting in a poor prognosis. This is mostly due to the delayed onset of clinical symptoms and the absence of early biomarkers for the disease. When distant metastases are detected at the time of diagnosis, the overall 5-year survival rate of EC decreases to less than 5%, as opposed to the 18% survival rate observed in cases where distant metastases are absent (Jamel et al., 2019). Endoscopy is widely regarded as the preferred method for detecting and diagnosing BE and EC. However, it is important to note that this approach is not considered cost-effective, practical, or non-invasive for screening purposes. Therefore, it is imperative to implement screening measures that facilitate early detection and diagnosis to mitigate the death rate among EC patients.\n\nHerein, of the eight pairs of EC and paracancer tissues exosomes collected for proteomic analysis, we discovered 803 differentially expressed proteins; 686 were up-regulated, and 117 were down-regulated. CD54, intracellular adhesion molecule-1, is an Ig superfamily surface receptor found in leukocytes, endothelial cells, and smooth muscle cells (van de Stolpe, 1996); it is an adhesive and co-stimulatory molecule with five extracellular Ig-like domains. Proteomics indicated a substantial increase in CD54 expression in EC-derived exosomes. CD54 was identified as an up-regulated candidate for subsequent investigation. Immunohistochemistry, RT-qPCR, and western blot assessment of C54 expression in EC-derived exosomes yielded comparable results to proteomics. Moreover, NanoFCM evaluation of plasma-derived exosomes demonstrated higher CD54 expression in 122 EC patients than in HDs and increased with disease progression. Notably, low CD54 expression was detected in 12 tumor-resected patients. Further analysis of the relationship between plasma exosome CD54 levels and clinical characteristics of EC patients revealed that CD54 expression was independent of patient gender and age but was associated with tumor size, distant metastasis, smoking history, drinking history, and clinical stage. Evaluation of the diagnostic performance of exosomal CD54 in EC yielded the following results: sensitivity, 66.13%; specificity, 71.31; AUC value, 0.702. Nevertheless, the efficacy of CD54 in the early diagnosis of EC was insignificant. These specific characteristics of patient cohorts in different regions, sample sizes, and potential confounders affect diagnostic accuracy. Therefore, it is necessary to expand the sample size for further study. Additionally, we conducted a functional study of CD54 on EC cells, revealing that CD54 expression of TE-1 and KYSE-510 in EC cells was higher than that in normal HEEC. CD54 knocked down significantly reduced EC proliferation and migration. These results indicate that CD54 plays a key role in EC development.\n\nThrough proteomics, we discovered high CD54 expression in EC tissue-derived exosomes; this finding was subsequently validated using patient tissue samples and multiple plasma samples. The presented data indicate that exosomal CD54 holds promise as a potential diagnostic marker for EC. However, the sample size in this study was limited, and further investigation with a larger number of samples is necessary to establish the effectiveness of exosomal CD54 in EC diagnosing. Furthermore, experimental investigations on cellular function have demonstrated that CD54 plays a crucial part in EC development. This study offers a foundation for identifying novel targets for EC diagnosis and therapy.\n\n## Materials and methods\n\n### Sample collection\n\nThis study investigated EC patients in the First Affiliated Hospital of Gannan Medical College between February 2021 and July 2021. Eight pairs of surgically resected cancer and paracancer tissues identified as having EC besides plasma from 122 patients and 62 HDs were collected. CT examinations were performed on all patients, and clinical signs, symptoms, and features were obtained from electronic medical records. Patients and HDs completed informed consent forms. This study followed the Declaration of Helsinki and was approved by the First Affiliated Hospital of Gannan Medical College local ethics committee.\n\n### Cell lines and culture\n\nHEEC was purchased from the BeNa Culture collection Co., Ltd (Suzhou, China). TE-1 was purchased from the Fenghui Biotechnology Co., Ltd (Changsha, China), OE19 and KYSE-510 were purchased from the Procell Life Science & Technology Co., Ltd (Wuhan, China). All cells were identified by short tandem repeat (STR) and tested negative for mycoplasma. STR appraisal certificates are uploaded in the supplementary materials. Cells were cultured in Dulbecco\u2019s modified eagle medium (DMEM) (Biological Industries) containing 10% fetal bovine serum (FBS; Biochrom, Co., Ltd.) and 1% penicillin/streptomycin (Invitrogen; Thermo Fisher Scientific, Inc) in a humidified 5% CO2 at 37\u00b0C.\n\n### RNA interference\n\nSmall interfering (si)RNA specific for CD54 sequences and scrambled negative control (NC) siRNA with CD54 analog nonsense sequences (Sangon Biotech Co., Ltd.) were as follows: CD54 (sense: 5'-GCCAGCUUAUACACAAGAATT'; antisense: 5'- UUCUUGUGUAUAAGCUGGCTT-3') and NC (sense: 5'-UUCUCCGAACGUGUCACGUTT-3'; antisense: 5'- ACGUGACACGUUCGGAGAATT \u20133'). Cells were seeded into six-well plates and cultured to 80% confluence. The cells were then transfected with 50 nmol/L of NC siRNA and 100 nmol/L of CD54 for 24 hr at 37\u00baC using Lipofectamine 2000 (Invitrogen; Thermo Fisher Scientific, Inc) following the protocols. Briefly, cells were divided into two groups: A blank control (CTRL) group (only treated with serum-free medium), an NC group (transfected with NC siRNA), and a 100 nmol/L CD54 group. All subsequent experiments were performed 24 hr post-transfection.\n\n### Exosome isolation\n\nTissue exosome isolation: The tissue was cut into 1\u20132 mm pieces, placed in 2 mL of Roswell Park Memorial Institute 1640 (RIPA-1640) (2 mL of collagenase, 40 U/mL of deoxyribonuclease I), and incubated in a shaker at 37\u00b0C for 30 min. The culture supernatant was filtered through 70 \u03bcm and centrifuged at 300 \u00d7 g for 10 min. The supernatant was re-centrifuged at 2000 \u00d7 g for 20 min. The resultant supernatant was collected, re-centrifuged at 16500 \u00d7 g for 20 min, and filtered through a 0.22 \u03bcm filter membrane. The filtrate was centrifuged at 110,000 \u00d7 g for 42 min, and the supernatant was discarded. The precipitate was suspended in 1 mL phosphate buffer saline (PBS). The exosome fraction was collected using a size exclusion column and condensed to 100 \u03bcL using a 100 kD ultrafiltration tube. All centrifugations were performed at 4\u00b0C.\n\nPlasma exosome isolation: Blood was collected in an EDTA anticoagulant tube and centrifuged at 1500 \u00d7 g for 20 min to remove cells and debris. The supernatant was collected and centrifuged at 3000 \u00d7 g for 15 min to collect the plasma. If the exosomes did not separate immediately, the separated plasma was stored at \u201380\u00b0C for subsequent processing. Subsequently, 400 \u03bcL of the above plasma was transferred into a 2 mL Eppendorf tube, diluted with 1.6 mL PBS, and centrifuged at 10,000 \u00d7 g for 30 min. The resultant supernatant was collected and centrifuged at 110,000 \u00d7 g for 64 min, and the supernatant was then gently aspirated. The pellet was resuspended in PBS and centrifuged at 110,000 \u00d7 g for 64 min. The supernatant was gently aspirated, and the pellet was resuspended in 100 \u03bcL PBS to obtain exosomes. The isolated exosomes were stored at \u201380\u00b0C for later applications. All centrifugations were performed at 4\u00b0C.\n\n### Trypsin treatment and mass spectrometry analysis\n\nThe exosome protein was quantified with a Pierce BCA protein quantification kit (Thermo Fisher Scientific, Inc). Each protein sample received 3 \u03bcL of 1 \u03bcg/\u03bcL of trypsin and 500 \u03bcL of 100 mM triethyl ammonium bicarbonate buffer, followed by overnight digestion at 37\u00b0C. The digested sample was combined with an equal volume of 1% formic acid and centrifuged at 12,000 \u00d7 g for 5 min at room temperature. The supernatant was gradually loaded onto a C18 desalting column, washed three times with 1 mL of washing solution (0.1% formic acid and 4% acetonitrile), and eluted twice with 0.4 mL of elution buffer (0.1% formic acid and 75% acetonitrile). The eluents were combined and lyophilized. The lyophilized protein powder was dissolved in 10 \u03bcL of 0.1% formic acid in water (solvent A) and injected into a homemade C18 Nano-Trap column (2 cm\u00d775 \u03bcm, 3 \u03bcm). Peptides were separated in a homemade analytical column (15 cm\u00d7150 \u03bcm, 1.9 \u03bcm) with a mobile phrase of 0.1% formic in 80% acetonitrile (solvent B). The sample was eluted at 600 nL/min flow rate, with the concentration of solvent B increasing from 6% to 100% in 60 min. The peptides were analyzed using a Q Exactive HF-X mass spectrometer (Thermo Fisher Scientific, Inc) equipped with a Nanospray Flex (ESI) ion source and a spray voltage of 2.3 kV. Following GO analysis, the Clusters of Orthologous Groups databases and KEGG were used to annotate the protein family and pathway.\n\n### Western blot\n\nProteins from tissues were extracted using tissue lysates. Proteins were separated using 10% SDS-PAGE and transferred to a polyvinylidene fluoride membrane (Millipore). The membrane was blocked with 5% skim milk and incubated overnight with an anti-ICAM1 antibody (Abcam) at 4\u00b0C. The membrane was then incubated with a secondary antibody (1:5000) for 1 hr. The protein band was visualized using a fluorescent kit (P0018S, Beyotime) and a chemiluminescence imaging system (T-4600, Tanon). Protein bands were quantified with ImageJ; samples were normalized to \u03b2-actin protein levels.\n\n### Real-time quantitative PCR\n\nTotal RNA was extracted from EC and paracancer tissues using TRIzol reagent (Thermo Fisher Scientific, Inc). Then, 5 \u00b5g RNA was reverse transcribed to complementary DNA (cDNA) using a RevertAid First Strand cDNA synthesis kit (Thermo Fisher Scientific, Inc). qPCR was performed on an ABI 7500 Real-time PCR system (Thermo Fisher Scientific, Inc) using FastStart Universal SYBR-Green Master (Thermo Fisher Scientific, Inc), following the protocol. The thermocycling conditions were as follows: 95\u00b0C denaturation for 15 min, followed by 40 cycles of 95\u00b0C for 10 s and 60\u00b0C for 30 s. The relative mRNA expression levels of target genes were normalized to \u03b2-actin and calculated using the 2-\u0394\u0394Ct method. The specific sequences of primers were as follows: CD54 forward: 5'-ATGCCCAGACATCTGTGTCC-3', reverse: 5'-GGGGTCTCTATGCCCAACAA-3'; \u03b2-actin forward: 5'-GTGGACATCCGCAAAGAC-3', reverse: 5'-GAAAGGGTGTAACGCAACT-3'. All experiments were performed in triplicate.\n\n### Immunohistochemistry\n\nCD54 tissue expression was evaluated using a Strept Actividin-Biotin Complex of immunohistochemistry techniques (SABC kit, Bostere Biotech Company) and the SABC kit protocol. A rabbit anti-human CD54 monoclonal antibody (1:100) was used as the primary antibody. The positive staining sections provided by the antibody kit served as a positive control, while the first antibody was replaced with the same PBS volume as an NC.\n\n### Nano-flow cytometry\n\nNanoFCM (N30E) was used to examine particle concentration, particle size distribution, and surface proteins of exosome samples. Exosomal CD54 expression was evaluated using NanoFCM. Exosomes (50 \u03bcL) were mixed with 5 \u03bcL of Alexa Fluor 488 anti-human CD54 antibody (Biolegend) and incubated at 37\u00b0C for 30 min. Then, exosomes were washed twice by centrifugation at 4\u00b0C for 30 min at 110,000 \u00d7 g. The exosome pellet was resuspended in 50 \u03bcL of PBS after the final wash, and the CD54-positive exosome proportion was determined using NanoFCM.\n\n### Immunofluorescence staining\n\nThe cells were fixed in 4% paraformaldehyde/PBS for 15 min at \u221220\u00b0C and then washed three times using PBS containing 0.1% Triton X-100 (PBST) for 15 min at room temperature. Following blocking in PBS containing 5% BSA for 30 min at 37\u00b0C, cells were incubated with the primary antibodies rabbit anti-CD54 (Proteintech; 1:100) for 1 hr at room temperature. The labeled cells were washed three times with PBST and then incubated with Alexa Fluor 594 (goat anti-rabbit IgG; Abcam; 1:100) for 1 hr at room temperature in darkness. After washing three times with PBST, the cell nuclei were stained with DAPI (1 \u00b5g/mL, Abcam) for 10 min at room temperature in darkness and detected with a confocal laser scanning microscope (LSM 880; Zeiss AG) at \u00d763 magnification.\n\n### Cell viability assay\n\nCell viability was determined by cell counting kit (CCK)-8 assay (HYCEZMBIO) per the manufacturer\u2019s instructions. Briefly, EC cells with or without transfection of si-CD54 were incubated in a 96-plate for 24 hr at 37\u00b0C. Then, cells were added to 10 \u00b5L CCK-8 staining reagent and incubated for another 4 hr at 37\u00b0C. Absorbance at 450 nm was measured using a microplate reader (Thermo Fisher Scientific, Inc).\n\n### Wound healing assay\n\nCell migratory abilities were detected using a wound healing assay. The prepared cells treated with or without si-CD54 were cultured in a six-well plate to approximately 90% confluence using a serum-free medium. The confluent monolayer cells were scratched gently with a 100 \u00b5L pipette tip, and images were captured using an inverted microscope (Nikon; magnification, \u00d7100) at 0 and 24 hr. The wound distance was quantified using ImageJ software.\n\n### Cell migration assay\n\nCell migration assay was performed using 24-well transwell plates with 8 \u00b5m pore filters (FALCON) at 37\u00b0C for 24 hr following the manufacturer\u2019s protocols. Briefly, 1\u00d7105 cells were suspended in 100 \u00b5L of serum-free medium and added to the upper chamber, and 600 \u00b5L DMEM supplemented with 20% FBS was loaded into the lower chamber. After 24 hr of incubation, the non-invaded cells in the top chamber were removed with a cotton swab, and the cells were fixed with 100% methanol for 20 min at room temperature and stained with 0.1% crystal violet (Solarbio Science & Technology Co., Ltd.) for 30 min at room temperature. The stained cells were imaged under an inverted light microscope (Nikon; magnification, \u00d7100) and analyzed using ImageJ software.\n\n### Statistical analysis\n\nGraphPad Prism 8.0 software was employed for statistical analysis, and all quantitative data were presented as the mean\u00b1SE. The t-test was used for statistical analysis between the two groups while using one-way analysis of variance (ANOVA) for multiple groups. Nano-flow scatter plot was processed using Flowjo 10.6. The ROC curve was plotted using MedCalc 18.0. p<0.05 denoted statistical significance.\n",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "2218b0ae-63c4-41a3-9b2d-461e65e24027",
+      "submission_id": "37b9fd93-b59d-4d28-bafa-c33bf78bc13a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yongliang Yang, https://ror.org/00g2ypp58 Dalian University of Technology China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86209.sa0](https://doi.org/10.7554/eLife.86209.sa0)\n\nThis study advances our understanding of the predictive role of tissue-derived biomarkers for esophageal cancer. The evidence supporting the conclusions is solid. However, there are a few areas in which the article may be improved through further analysis and validation of the clinical usefulness of CD54 as diagnostic biomarkers for esophageal cancer. The work will be of broad interest to clinicians, medical researchers and scientists working in esophageal cancer.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Yongliang Yang, https://ror.org/00g2ypp58 Dalian University of Technology China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86209.sa1](https://doi.org/10.7554/eLife.86209.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Tissue-derived exosome proteomics identifies promising diagnostic biomarkers for esophageal cancer\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Caigang Liu as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The manuscript lacks an in-depth description and discussion of the results. The authors should elaborate in the Discussion section.\n\n2) The authors need to conduct a cellular functional assay to clarify how CD54 can impact the occurrence and development of esophageal cancer.\n\n3) The manuscript needs extensive language editing as well.\n\nReviewer #1 (Recommendations for the authors):\n\nComparative proteomic analysis of exosomes derived from cancerous and paracancer tissues in eight pairs of patients with esophageal cancer was performed to identify the candidate protein CD54. In addition, the study demonstrated that CD54 is a potential diagnostic marker for esophageal cancer. The study makes sense.\n\n1. The manuscript lacks a visual flow chart of the entire research, which is necessary to make it easier for readers to understand.\n\n2. The discussion part is not deep enough, and more content is needed to explore the significance of this research.\n\n3. The writing of the whole manuscript still needs to be revised, focussing on areas such as grammar, and some other writing mistakes.\n\nReviewer #2 (Recommendations for the authors):\n\nThis study provides a new idea for liquid biopsy of esophageal cancer. As the information carrier of cell secretion, exosomes can well reflect the changes in the tumor microenvironment. And compared to tissue biopsy, liquid biopsy has the advantages of repeatability and being non-invasive. However, this study only focuses on diagnostic value, and the mechanism of action of extracellular vesicle CD54 on esophageal cancer cells is still unclear.\n\n1. The inclusion and exclusion criteria for collecting plasma from patients were not reflected in the manuscript.\n\n2. The discussion in the article did not provide a more in-depth description of the experimental results, which needs to be supplemented.\n\n3. If researchers can complement the cell function assays, it will make the experimental results more convincing to further clarify how CD54 influences the occurrence and development of esophageal cancer.\n",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ada81a0c-57ec-4ae2-be24-5a5c77555724",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C1",
+      "claim": "Esophageal cancer (EC) is the seventh most prevalent malignancy globally.",
+      "claim_type": "EXPLICIT",
+      "source": "Esophageal cancer (EC) is the seventh most prevalent malignancy and the sixth leading cause of cancer-related death globally, accounting for 509,000 deaths yearly (Bray et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Bray et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "f311e109-d3a1-428f-b88a-adc725fc0bee",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C2",
+      "claim": "Esophageal cancer is the sixth leading cause of cancer-related death globally.",
+      "claim_type": "EXPLICIT",
+      "source": "Esophageal cancer (EC) is the seventh most prevalent malignancy and the sixth leading cause of cancer-related death globally, accounting for 509,000 deaths yearly (Bray et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Bray et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "7eee808e-d51c-49d9-a8ed-fb4f0006056b",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C3",
+      "claim": "Esophageal cancer accounts for 509,000 deaths yearly.",
+      "claim_type": "EXPLICIT",
+      "source": "Esophageal cancer (EC) is the seventh most prevalent malignancy and the sixth leading cause of cancer-related death globally, accounting for 509,000 deaths yearly (Bray et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Bray et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "d118a685-c3b3-41be-9d18-cf6c6822fc9e",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C4",
+      "claim": "EC incidence is expected to rise.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite fast advances in medical technology, EC incidence is expected to rise (Napier et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Napier et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "8692129d-f125-4971-bd69-af49c0a78c45",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C5",
+      "claim": "The 5-year survival rate for EC patients increased from 4% in the 1950s to 17% in 2010.",
+      "claim_type": "EXPLICIT",
+      "source": "The 5-year survival rate for EC patients has seen very modest improvement over the last five decades. Specifically, it has increased from a mere 4% in the 1950s to 17% in 2010 (Baiu and Backhus, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Baiu and Backhus, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "2b852150-91cf-4bed-b5bc-65611d941f07",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C6",
+      "claim": "Imaging techniques, tissue biopsies, and serum tumor markers including CEA and CA-199 are the primary tools for identifying esophageal malignancies.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging techniques, tissue biopsies, and serum tumor markers, including carcinoembryonic antigen (CEA) and CA-199, are now the primary tools for identifying esophageal malignancies (Siegel et al., 2017; Kosugi et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Siegel et al., 2017 and Kosugi et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "4900919c-d410-4bfc-8045-da42f4681018",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C7",
+      "claim": "Imaging techniques have limited sensitivity in detecting small lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite their limited sensitivity in detecting small lesions, imaging techniques remain the prevailing method for cancer diagnosis and surveillance, posing challenges in the early detection of recurrent locations (Becker et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Becker et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "3db86141-290c-4c48-b328-1cdb8cb79eab",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C8",
+      "claim": "Serum biomarkers including CEA and squamous cell carcinoma antigen have low sensitivity and specificity for early diagnosis or recurrence detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, serum biomarkers, including CEA and squamous cell carcinoma antigen, have low sensitivity and specificity for early diagnosis or recurrence detection (Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Xu et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "5a0a4127-3269-4a85-a8c3-37a9e055a324",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C9",
+      "claim": "Exosomes are small vesicles enclosed by a double membrane and measuring between 40 and 200 nm in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Exosomes, which are small vesicles enclosed by a double membrane and measuring between 40 and 200 nm in diameter, were initially discovered in sheep reticulocytes by Pan and Johnstone, 1983; Kalluri and LeBleu, 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Pan and Johnstone, 1983 and Kalluri and LeBleu, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "4b7dd60d-4cd9-48e3-95e7-cb348f437ae1",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C10",
+      "claim": "Exosomes were initially discovered in sheep reticulocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Exosomes, which are small vesicles enclosed by a double membrane and measuring between 40 and 200 nm in diameter, were initially discovered in sheep reticulocytes by Pan and Johnstone, 1983; Kalluri and LeBleu, 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Pan and Johnstone, 1983 and Kalluri and LeBleu, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "0921fac8-02ab-4450-9c43-e9f2686c3d49",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C11",
+      "claim": "Exosomes are produced through the endosomal pathway and are expelled into the extracellular space.",
+      "claim_type": "EXPLICIT",
+      "source": "These vesicles are produced through the endosomal pathway and are expelled into the extracellular space (Latifkar et al., 2019; Harding et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Latifkar et al., 2019 and Harding et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "3fcdf3c1-33e7-46ab-aa34-9d62bc1d774b",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C12",
+      "claim": "Exosomes are produced by many cells, such as blood, immune, cancer, and stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Exosomes, extracellular vesicles, are produced by many cells, such as blood, immune, cancer, and stem cells (Kimiz-Gebologlu and Oncel, 2022; Wei et al., 2022; Xu et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kimiz-Gebologlu and Oncel, 2022; Wei et al., 2022; and Xu et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "530ffc7c-21fa-46ce-985f-818126adfb15",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C13",
+      "claim": "Exosomes can be secreted into different physiological fluids, including blood, urine, breast milk, ascites, amniotic fluid, saliva, and cerebrospinal fluid.",
+      "claim_type": "EXPLICIT",
+      "source": "These exosomes can be secreted into different physiological fluids, including blood, urine, breast milk, ascites, amniotic fluid, saliva, and cerebrospinal fluid (Ha et al., 2016; Li et al., 2014; L\u00e4sser et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ha et al., 2016; Li et al., 2014; and L\u00e4sser et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "475d71ec-748a-44a8-8823-eff8b4f89e82",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C14",
+      "claim": "Tumor cell molecular markers are enriched in exosomes transferred between tumor and normal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The tumor cell molecular markers are enriched in exosomes transferred between the tumor and normal cells (Attaran and Bissell, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Attaran and Bissell, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "cbe36648-84b4-48ab-aed6-7b5f94daad27",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C15",
+      "claim": "Protein expression in tumor patient-derived small extracellular vesicles (sEVs) differs significantly from healthy donors (HD).",
+      "claim_type": "EXPLICIT",
+      "source": "Protein expression in tumor patient-derived small extracellular vesicles (sEVs) differs significantly from healthy donors (HD). Accordingly, these differentially expressed sEVs proteins emerge as potential tumor diagnosis biomarkers (Huang and Deng, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Huang and Deng, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "10b069da-8d8a-4f1f-9a62-4b9f0c1cf94b",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C16",
+      "claim": "Differentially expressed sEVs proteins emerge as potential tumor diagnosis biomarkers.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein expression in tumor patient-derived small extracellular vesicles (sEVs) differs significantly from healthy donors (HD). Accordingly, these differentially expressed sEVs proteins emerge as potential tumor diagnosis biomarkers (Huang and Deng, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Huang and Deng, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "ff06026b-b2ef-4988-abe4-e8dda950825c",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C17",
+      "claim": "CD54 is a transmembrane glycoprotein in the immunoglobulin superfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "Intercellular adhesion molecule-1 (ICAM-1), also known as CD54, is a transmembrane glycoprotein in the immunoglobulin superfamily that is present in a wide range of cell types and is up-regulated in response to a variety of inflammatory mediators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as established knowledge about CD54.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "dfa14729-6fc3-4d25-b529-a78c9e74a4e7",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C18",
+      "claim": "CD54 is present in a wide range of cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Intercellular adhesion molecule-1 (ICAM-1), also known as CD54, is a transmembrane glycoprotein in the immunoglobulin superfamily that is present in a wide range of cell types and is up-regulated in response to a variety of inflammatory mediators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as established knowledge about CD54.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "443c3566-00ad-4a57-aa0f-92952715da07",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C19",
+      "claim": "CD54 is up-regulated in response to a variety of inflammatory mediators.",
+      "claim_type": "EXPLICIT",
+      "source": "Intercellular adhesion molecule-1 (ICAM-1), also known as CD54, is a transmembrane glycoprotein in the immunoglobulin superfamily that is present in a wide range of cell types and is up-regulated in response to a variety of inflammatory mediators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as established knowledge about CD54.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "01f89685-15a2-4512-b9c9-8a5953be5e80",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C20",
+      "claim": "High CD54 expression was associated with germinal center lymphoma in lymphoproliferative disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, high CD54 expression was associated with germinal center lymphoma in lymphoproliferative disorders (Maio and Del Vecchio, 1992; Wang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Maio and Del Vecchio, 1992 and Wang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "c0f7003a-f7de-4924-ba32-c0ea05410542",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C21",
+      "claim": "In breast, gastric, and colorectal cancers, increased CD54 expression in cancer cells has been correlated with more favorable prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In breast, gastric, and colorectal cancers, increased CD54 expression in the cancer cells has been correlated with more favorable prognosis, suggesting a role of CD54 in enhancement of immune surveillance (Ogawa et al., 1998; Fujihara et al., 1999; Tachimori et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ogawa et al., 1998; Fujihara et al., 1999; and Tachimori et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "30c6adcd-7653-4404-8937-b6a9d0d29ba6",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C22",
+      "claim": "CD54 can predict the progression and metastasis of gastric cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that CD54 can predict the progression and metastasis of gastric cancer (G\u00f3mez-Gallegos et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to G\u00f3mez-Gallegos et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "d4357c09-b2c1-43f2-9cd9-82de21383365",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C23",
+      "claim": "Circulating tumor cells were identified as a biomarker of treatment selection and liver metastasis in patients with colorectal cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Fang et al., 2016 identified circulating tumor cells as a biomarker of treatment selection and liver metastasis in patients with colorectal cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Fang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "dfecce79-32ae-47db-b5e1-9a744cf71084",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C24",
+      "claim": "Exosomal CD54 has not been reported in EC.",
+      "claim_type": "EXPLICIT",
+      "source": "However, exosomal CD54 has not been reported in EC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a gap in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "cf3dd500-73dd-496e-882c-c519f95f5c3b",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C25",
+      "claim": "The isolated exosome diameters ranged from 50 to 200 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The nano-flow cytometry (NanoFCM) results revealed that the isolated exosome diameters ranged from 50 to 200 nm (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from nano-flow cytometry shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "d9391b8d-d66f-4936-bac3-1ac6ab85213a",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C26",
+      "claim": "Exosomes appeared as concave hemispherical bilayer structures with a diameter of approximately 120 nm under a transmission electron microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "Exosomes appeared as concave hemispherical bilayer structures with a diameter of approximately 120 nm under a transmission electron microscope (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from transmission electron microscopy shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "ee753684-1c4e-40a0-813b-22324fe8625f",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C27",
+      "claim": "Western blot analysis revealed the presence of exosomal protein markers, CD9, CD63, and TSG101, but not a control protein, GM130, in isolated exosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, western blot analysis revealed the presence of exosomal protein markers, CD9, CD63, and TSG101, but not a control protein, GM130, in isolated exosomes (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from western blot analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "ba634c64-5d6a-40b2-93c3-2b0eb54590fd",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C28",
+      "claim": "Of the 803 identified proteins, 686 were up-regulated and 117 were down-regulated in EC.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 803 identified proteins, 686 were up-regulated and 117 were down-regulated in EC (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from label-free quantitative proteomics profiling shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "546aa533-fd71-4d53-ae56-f63cb7fbc50a",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C29",
+      "claim": "Correlation heatmap clustering separated samples from the two groups, indicating a significant difference between cancer proteomes and paracancer tissue-derived exosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlation heatmap clustering separated samples from the two groups, indicating a significant difference between cancer proteomes and paracancer tissue-derived exosomes (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from correlation heatmap clustering shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "306444d7-4d93-4b8e-b87a-d5e73726f717",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C30",
+      "claim": "Differentially expressed proteins in biological processes were mainly related to cellular, single-organism, and metabolic processes.",
+      "claim_type": "EXPLICIT",
+      "source": "These differentially expressed proteins in BPs were mainly related to cellular, single-organism, and metabolic processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by GO enrichment analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "5356d6ef-5cd0-4a5d-946c-13d096b5a4ee",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C31",
+      "claim": "EC-related proteins in molecular functions were mainly associated with binding, catalytic activity, and structural molecule activity.",
+      "claim_type": "EXPLICIT",
+      "source": "EC-related proteins in MFs were mainly associated with binding, catalytic activity, and structural molecule activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by GO enrichment analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "673f03df-93c4-4e02-8174-e9a32d1e1fec",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C32",
+      "claim": "Differentially expressed proteins in cellular components were mainly enriched in cells, cell parts, and organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "The differentially expressed proteins in CCs were mainly enriched in cells, cell parts, and organelles, among other components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by GO enrichment analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "6551be5c-c368-467c-9546-f4cab360571d",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C33",
+      "claim": "These proteins play a role in the catabolic process of nuclear-transcribed mRNA, viral transcription, translational initiation, and signal recognition particle-dependent cotranslational modification.",
+      "claim_type": "EXPLICIT",
+      "source": "The KEGG analysis revealed that these proteins play a role in the catabolic process of nuclear-transcribed mRNA, viral transcription, translational initiation, and signal recognition particle-dependent cotranslational modification (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by KEGG analysis results shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "85032b9a-95ae-4040-bf5a-871b4138507f",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C34",
+      "claim": "CD54 was highly expressed in cancer tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "The results revealed that CD54 was highly expressed in cancer tissues (Figure 4A) and at the gene level (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemistry data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "8f453e16-6d02-48d4-ba53-42cc022b4b97",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C35",
+      "claim": "CD54 was highly expressed at the gene level in cancer tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "The results revealed that CD54 was highly expressed in cancer tissues (Figure 4A) and at the gene level (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RT-qPCR data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "58ec488b-6ee9-491d-9da7-be4ac54d7331",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C36",
+      "claim": "Western blot analysis of the eight tissue sample pairs demonstrated a higher CD54 expression in cancer tissues than adjacent tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, western blot analysis of the eight tissue sample pairs demonstrated a higher CD54 expression in cancer tissues than adjacent tissues (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "58e2cbb6-64e2-4c40-8c77-dee8a3e51a99",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C37",
+      "claim": "CD54 levels were significantly higher in plasma-derived exosomes in EC patients than in HDs.",
+      "claim_type": "EXPLICIT",
+      "source": "NanoFCM analysis of CD54 expression in exosomes showed that CD54 levels were significantly higher in plasma-derived exosomes in EC patients than in HDs (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by NanoFCM data shown in Figures 5A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "b4f65cad-a595-4109-9fcb-27052a7bcda3",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C38",
+      "claim": "CD54 levels increased as the disease progressed.",
+      "claim_type": "EXPLICIT",
+      "source": "CD54 levels increased as the disease progressed (Figure 5D);",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by NanoFCM data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "05913019-5bd0-47f9-b6d1-12b6bef1a332",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C39",
+      "claim": "CD54 expression decreased following resectioning of the patient's mass (7\u201310 days).",
+      "claim_type": "EXPLICIT",
+      "source": "CD54 expression decreased following resectioning of the patient's mass (7\u201310 days) (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by NanoFCM data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "1bfc2022-85ca-40a9-a9d8-4475d2c16a8f",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C40",
+      "claim": "Plasma exosomal CD54 expression levels were closely related to tumor size (p=0.0308).",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma exosomal CD54 expression levels were closely related to tumor size (p=0.0308), distant metastasis (p<0.0001), smoking history (p<0.0004), drinking history (p<0.0002), and clinical stage (p<0.0001), regardless of age (p=0.449) and gender (p=0.349).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of clinical data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "f2894ec4-f47c-4c3a-959d-768ebf42e204",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C41",
+      "claim": "Plasma exosomal CD54 expression levels were closely related to distant metastasis (p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma exosomal CD54 expression levels were closely related to tumor size (p=0.0308), distant metastasis (p<0.0001), smoking history (p<0.0004), drinking history (p<0.0002), and clinical stage (p<0.0001), regardless of age (p=0.449) and gender (p=0.349).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of clinical data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "27806c8f-199a-4665-92af-ee3e4820067c",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C42",
+      "claim": "Plasma exosomal CD54 expression levels were closely related to smoking history (p<0.0004).",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma exosomal CD54 expression levels were closely related to tumor size (p=0.0308), distant metastasis (p<0.0001), smoking history (p<0.0004), drinking history (p<0.0002), and clinical stage (p<0.0001), regardless of age (p=0.449) and gender (p=0.349).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of clinical data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "c9cb2f13-951d-4d0f-b20d-2d19ca023596",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C43",
+      "claim": "Plasma exosomal CD54 expression levels were closely related to drinking history (p<0.0002).",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma exosomal CD54 expression levels were closely related to tumor size (p=0.0308), distant metastasis (p<0.0001), smoking history (p<0.0004), drinking history (p<0.0002), and clinical stage (p<0.0001), regardless of age (p=0.449) and gender (p=0.349).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of clinical data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "434c9c83-15ad-48d0-8e3f-b3a26429fc13",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C44",
+      "claim": "Plasma exosomal CD54 expression levels were closely related to clinical stage (p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma exosomal CD54 expression levels were closely related to tumor size (p=0.0308), distant metastasis (p<0.0001), smoking history (p<0.0004), drinking history (p<0.0002), and clinical stage (p<0.0001), regardless of age (p=0.449) and gender (p=0.349).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of clinical data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "8dd74f48-f50e-4acc-b82d-7e384d88ef07",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C45",
+      "claim": "Plasma exosomal CD54 expression levels were independent of age (p=0.449).",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma exosomal CD54 expression levels were closely related to tumor size (p=0.0308), distant metastasis (p<0.0001), smoking history (p<0.0004), drinking history (p<0.0002), and clinical stage (p<0.0001), regardless of age (p=0.449) and gender (p=0.349).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of clinical data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "f3e4357e-bd85-4faf-8add-c2223fdd6bd2",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C46",
+      "claim": "Plasma exosomal CD54 expression levels were independent of gender (p=0.349).",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma exosomal CD54 expression levels were closely related to tumor size (p=0.0308), distant metastasis (p<0.0001), smoking history (p<0.0004), drinking history (p<0.0002), and clinical stage (p<0.0001), regardless of age (p=0.449) and gender (p=0.349).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of clinical data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "d26e541c-5783-4ccd-91e2-1eb8547db3e4",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C47",
+      "claim": "The diagnostic sensitivity, specificity, and AUC for CD54 were 66.13%, 71.31%, and 0.702, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The results revealed that diagnostic sensitivity, specificity, and AUC were 66.13%, 71.31%, and 0.702, respectively (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ROC curve analysis data shown in Figure 6A and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "585ccb7b-6878-48b0-b0b1-db3e5ec099ee",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C48",
+      "claim": "Patients with tumor size \u22654 cm performed better in diagnostics than patients with <4 cm.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with tumor size \u22654 cm performed better in diagnostics than patients with <4 cm (Figure 6B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ROC curve analysis data shown in Figures 6B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "3fda8987-015d-4797-8e9d-bcb2e7e19c21",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C49",
+      "claim": "The efficacy of CD54 in the early diagnosis of EC was insignificant.",
+      "claim_type": "EXPLICIT",
+      "source": "These data strongly suggest that early diagnosis of patients is ineffective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the diagnostic performance data showing poor performance in early stages.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "879ef873-3c27-4314-b7fa-eca77391ea72",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C50",
+      "claim": "The assessment of the diagnostic performance of different stages showed 32.26% sensitivity, 52.38% specificity, and an AUC value of 0.513 in stage I.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the assessment of the diagnostic performance of different stages showed 32.26% sensitivity, 52.38% specificity, and an AUC value of 0.513 in stage I (Figure 7A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ROC curve analysis data shown in Figure 7A and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "2e7c96d1-7a84-459c-9b62-97569638a007",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C51",
+      "claim": "CD54 was highly expressed in EC cells compared with normal esophageal epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that CD54 was highly expressed in EC cells compared with normal esophageal epithelial cells, especially TE-1 and KYSE-510 (Figure 8A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RT-qPCR and western blot data shown in Figures 8A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "6b27bf65-e110-4c02-bf0f-d8c30646e4b6",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C52",
+      "claim": "CD54 was especially highly expressed in TE-1 and KYSE-510 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that CD54 was highly expressed in EC cells compared with normal esophageal epithelial cells, especially TE-1 and KYSE-510 (Figure 8A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RT-qPCR and western blot data shown in Figures 8A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "30ca7cb0-e15e-49ad-ab3c-5ef5ead18be8",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C53",
+      "claim": "Immunofluorescence results showed that CD54 was highly expressed in TE-1 and KYSE-510 than in HEEC.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, immunofluorescence results showed that CD54 was highly expressed in TE-1 and KYSE-510 than in HEEC (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "24b244b3-b0e8-47db-8bc5-bb6d86698cf4",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C54",
+      "claim": "siRNA specific for CD54 sequences transfected into EC cells reduced CD54 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we used siRNA specific for CD54 (si-CD54) sequences transfected into EC cells, revealing that CD54 expression was reduced (Figure 8E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data shown in Figures 8E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "e501823b-6af7-4890-b7d5-82e459db3286",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C55",
+      "claim": "Knocked-down CD54 significantly reduced the proliferative and migratory capacities of EC cells TE-1 and KYSE-510.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell viability (Figure 8G\u2013H), wound healing (Figure 8I\u2013J and M\u2013N), and cell migration (Figure 8K\u2013L and O\u2013P) results show that the knocked-down CD54 significantly reduced the proliferative and migratory capacities of EC cells TE-1 and KYSE-510.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell viability, wound healing, and cell migration assay data shown in Figures 8G-P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "e5d26cc9-32d1-44d1-95b9-de5b710dc536",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C56",
+      "claim": "CD54 is important in EC development.",
+      "claim_type": "EXPLICIT",
+      "source": "These results strongly suggest that CD54 is important in EC development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the functional assay results showing CD54's role in proliferation and migration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "a4c55a7b-e081-477d-a161-3db4861417b4",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C57",
+      "claim": "Early cancer detection is associated with a more favorable outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "Early cancer detection continues to be of utmost importance in cancer management, given that prompt initiation of clinical interventions is associated with a more favorable outcome (Whiteside, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Whiteside, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "4f7e9fc3-7ef0-4aaf-bad1-fc14e9e0c97f",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C58",
+      "claim": "EC is commonly diagnosed at later stages, resulting in a poor prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "EC is a malignant tumor with a high propensity for metastasis and recurrence. It is commonly diagnosed at later stages, resulting in a poor prognosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as established knowledge about EC.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "01ebec77-c7d4-4b94-835e-79e7f190bb07",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C59",
+      "claim": "When distant metastases are detected at the time of diagnosis, the overall 5-year survival rate of EC decreases to less than 5%.",
+      "claim_type": "EXPLICIT",
+      "source": "When distant metastases are detected at the time of diagnosis, the overall 5-year survival rate of EC decreases to less than 5%, as opposed to the 18% survival rate observed in cases where distant metastases are absent (Jamel et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Jamel et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "a3c7e077-3c73-407e-86d4-dcf683399cae",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C60",
+      "claim": "The overall 5-year survival rate of EC is 18% in cases where distant metastases are absent.",
+      "claim_type": "EXPLICIT",
+      "source": "When distant metastases are detected at the time of diagnosis, the overall 5-year survival rate of EC decreases to less than 5%, as opposed to the 18% survival rate observed in cases where distant metastases are absent (Jamel et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Jamel et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "893f5fd3-dc0b-47d6-aee3-f403893f2055",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C61",
+      "claim": "Endoscopy is widely regarded as the preferred method for detecting and diagnosing BE and EC.",
+      "claim_type": "EXPLICIT",
+      "source": "Endoscopy is widely regarded as the preferred method for detecting and diagnosing BE and EC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as established knowledge about endoscopy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "98e0b568-039f-49a4-b047-f1621ab9980a",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C62",
+      "claim": "Endoscopy is not considered cost-effective, practical, or non-invasive for screening purposes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is important to note that this approach is not considered cost-effective, practical, or non-invasive for screening purposes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as established knowledge about endoscopy limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "c1277373-4ef3-4403-9964-670aa14dfd88",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C63",
+      "claim": "CD54 is an adhesive and co-stimulatory molecule with five extracellular Ig-like domains.",
+      "claim_type": "EXPLICIT",
+      "source": "CD54, intracellular adhesion molecule-1, is an Ig superfamily surface receptor found in leukocytes, endothelial cells, and smooth muscle cells (van de Stolpe, 1996); it is an adhesive and co-stimulatory molecule with five extracellular Ig-like domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to van de Stolpe, 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "2efb93b4-6870-4ca4-8f3e-f27237962c9e",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C64",
+      "claim": "Proteomics indicated a substantial increase in CD54 expression in EC-derived exosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteomics indicated a substantial increase in CD54 expression in EC-derived exosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by proteomic analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "e2361f12-43b7-4739-92b2-abe9d71f3c0b",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C65",
+      "claim": "Immunohistochemistry, RT-qPCR, and western blot assessment of C54 expression in EC-derived exosomes yielded comparable results to proteomics.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunohistochemistry, RT-qPCR, and western blot assessment of C54 expression in EC-derived exosomes yielded comparable results to proteomics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple experimental validation methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "1c2376a0-149f-4820-8d24-8931a3b0170a",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C66",
+      "claim": "NanoFCM evaluation of plasma-derived exosomes demonstrated higher CD54 expression in 122 EC patients than in HDs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, NanoFCM evaluation of plasma-derived exosomes demonstrated higher CD54 expression in 122 EC patients than in HDs and increased with disease progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by NanoFCM data from 122 EC patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "9ea53867-2d50-4417-98b2-f1cd22e6abe8",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C67",
+      "claim": "CD54 expression increased with disease progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, NanoFCM evaluation of plasma-derived exosomes demonstrated higher CD54 expression in 122 EC patients than in HDs and increased with disease progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by NanoFCM data from 122 EC patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "a85c233b-666d-45b8-85c6-73c4b6029c6e",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C68",
+      "claim": "Low CD54 expression was detected in 12 tumor-resected patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, low CD54 expression was detected in 12 tumor-resected patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by NanoFCM data from tumor-resected patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "dc233442-369a-4088-813d-977736d8547d",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C69",
+      "claim": "CD54 expression was independent of patient gender and age but was associated with tumor size, distant metastasis, smoking history, drinking history, and clinical stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis of the relationship between plasma exosome CD54 levels and clinical characteristics of EC patients revealed that CD54 expression was independent of patient gender and age but was associated with tumor size, distant metastasis, smoking history, drinking history, and clinical stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of clinical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "4fb18a09-4eb5-42d6-b99e-c088f34fa7b6",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C70",
+      "claim": "The efficacy of CD54 in the early diagnosis of EC was insignificant.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the efficacy of CD54 in the early diagnosis of EC was insignificant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the diagnostic performance data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "098b3407-8354-4e5e-8472-b62066f464ff",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C71",
+      "claim": "CD54 expression of TE-1 and KYSE-510 in EC cells was higher than that in normal HEEC.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we conducted a functional study of CD54 on EC cells, revealing that CD54 expression of TE-1 and KYSE-510 in EC cells was higher than that in normal HEEC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RT-qPCR, western blot, and immunofluorescence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "b994659c-320e-4e99-805c-f070aecdc4c1",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C72",
+      "claim": "CD54 knocked down significantly reduced EC proliferation and migration.",
+      "claim_type": "EXPLICIT",
+      "source": "CD54 knocked down significantly reduced EC proliferation and migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by cell viability, wound healing, and migration assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "7e8028cd-4af3-4da6-b19c-bbf93def3ae7",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C73",
+      "claim": "CD54 plays a key role in EC development.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that CD54 plays a key role in EC development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the functional assay results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "2dff9390-afae-4ae1-9bf5-9e368f2a336f",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C74",
+      "claim": "Exosomal CD54 holds promise as a potential diagnostic marker for EC.",
+      "claim_type": "EXPLICIT",
+      "source": "The presented data indicate that exosomal CD54 holds promise as a potential diagnostic marker for EC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined proteomic and validation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "09089b4b-9f94-48c4-834f-c259dbc7068e",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C75",
+      "claim": "CD54 promoted EC proliferation, migration, and invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that CD54 promoted EC proliferation, migration, and invasion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by cell functional assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "351f761f-3506-4114-9049-fe67752501a9",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C76",
+      "claim": "Tissue-derived exosomal proteomics strongly demonstrates that CD54 is a promising biomarker for EC diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, tissue-derived exosomal proteomics strongly demonstrates that CD54 is a promising biomarker for EC diagnosis and a key molecule for EC development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined proteomic, validation, and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "890671c7-6240-401b-bfb5-1fffc91b04f2",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C77",
+      "claim": "CD54 is a key molecule for EC development.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, tissue-derived exosomal proteomics strongly demonstrates that CD54 is a promising biomarker for EC diagnosis and a key molecule for EC development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined proteomic, validation, and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "39ec190f-b74c-408a-a788-50ac4fa38ffa",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C78",
+      "claim": "Eight pairs of surgically resected cancer and paracancer tissues identified as having EC besides plasma from 122 patients and 62 HDs were collected.",
+      "claim_type": "EXPLICIT",
+      "source": "Eight pairs of surgically resected cancer and paracancer tissues identified as having EC besides plasma from 122 patients and 62 HDs were collected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the sample collection for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "d89c7e46-137c-4768-9520-9ef82e12aefc",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C79",
+      "claim": "This study followed the Declaration of Helsinki and was approved by the First Affiliated Hospital of Gannan Medical College local ethics committee.",
+      "claim_type": "EXPLICIT",
+      "source": "This study followed the Declaration of Helsinki and was approved by the First Affiliated Hospital of Gannan Medical College local ethics committee.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "a808f246-f069-4d8e-b3e2-c0022add8407",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C80",
+      "claim": "All cells were identified by short tandem repeat (STR) and tested negative for mycoplasma.",
+      "claim_type": "EXPLICIT",
+      "source": "All cells were identified by short tandem repeat (STR) and tested negative for mycoplasma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the cell line authentication methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "ea2479f0-3f45-489d-9352-64c5a2572ed4",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C81",
+      "claim": "The AUC, sensitivity, and specificity values for CD54 were 0.702, 66.13%, and 71.31%, respectively, for EC diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The receiver operating characteristic (ROC) analysis demonstrated that the AUC, sensitivity, and specificity values for CD54 were 0.702, 66.13%, and 71.31%, respectively, for EC diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ROC analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "c1fdd134-3297-4162-aab1-c7817c4a4efe",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C82",
+      "claim": "Of the 803 differentially expressed proteins discovered in cancer and paracancer tissue-derived exosomes, 686 were up-regulated and 117 were down-regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 803 differentially expressed proteins discovered in cancer and paracancer tissue-derived exosomes, 686 were up-regulated and 117 were down-regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by proteomic analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "48d77a23-b169-4dc4-9e9d-085355ac7370",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C83",
+      "claim": "Intercellular adhesion molecule-1 (CD54) was identified as an up-regulated candidate for further investigation.",
+      "claim_type": "EXPLICIT",
+      "source": "Intercellular adhesion molecule-1 (CD54) was identified as an up-regulated candidate for further investigation, and its high expression in cancer tissues of EC patients was validated using immunohistochemistry, real-time quantitative PCR (RT-qPCR), and western blot analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by proteomic analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "3e03ad40-c093-4ddd-844c-3e9e401d3882",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C84",
+      "claim": "CD54's high expression in cancer tissues of EC patients was validated using immunohistochemistry, real-time quantitative PCR (RT-qPCR), and western blot analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Intercellular adhesion molecule-1 (CD54) was identified as an up-regulated candidate for further investigation, and its high expression in cancer tissues of EC patients was validated using immunohistochemistry, real-time quantitative PCR (RT-qPCR), and western blot analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple validation methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "11943e21-efe4-4afe-a73c-95e7dc518f74",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C85",
+      "claim": "Plasma-derived exosome NanoFCM data from 122 EC patients concurred with proteomic analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, plasma-derived exosome NanoFCM data from 122 EC patients concurred with our proteomic analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by NanoFCM data from 122 EC patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "dcb8a607-66ef-4e3a-9400-1b35d74c9a1b",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C86",
+      "claim": "CD54 is an Ig superfamily surface receptor found in leukocytes, endothelial cells, and smooth muscle cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CD54, intracellular adhesion molecule-1, is an Ig superfamily surface receptor found in leukocytes, endothelial cells, and smooth muscle cells (van de Stolpe, 1996);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to van de Stolpe, 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "d3e85c96-f310-44b4-b857-7aef02974605",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C87",
+      "claim": "There is a correlation between CD54 expression and other differentiation-related molecules (e.g., CD34 and HLA-DR) in acute myeloid leukemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent research on acute myeloid leukemia discovered a correlation between CD54 expression and other differentiation-related molecules (e.g., CD34 and HLA-DR) and a significant correlation to French-American-British Cooperative Group (FAB) morphological classification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a finding from recent research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "7f8859c3-5c4c-4781-9c75-01e27f8106da",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C88",
+      "claim": "There is a significant correlation between CD54 expression and French-American-British Cooperative Group (FAB) morphological classification in acute myeloid leukemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent research on acute myeloid leukemia discovered a correlation between CD54 expression and other differentiation-related molecules (e.g., CD34 and HLA-DR) and a significant correlation to French-American-British Cooperative Group (FAB) morphological classification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a finding from recent research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "b23233c2-8dd5-4d85-9bc1-789dcc1517ad",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "claim_id": "C89",
+      "claim": "CD54 plays a role in enhancement of immune surveillance in breast, gastric, and colorectal cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "In breast, gastric, and colorectal cancers, increased CD54 expression in the cancer cells has been correlated with more favorable prognosis, suggesting a role of CD54 in enhancement of immune surveillance (Ogawa et al., 1998; Fujihara et al., 1999; Tachimori et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the correlation between CD54 expression and favorable prognosis, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f0779c2f-5ac4-41f5-bca7-f32cee84e339",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Exosomes were successfully isolated from tissue samples with characteristic size (50-200 nm diameter), morphology (concave hemispherical bilayer structures ~120 nm), and marker expression (CD9, CD63, TSG101 positive; GM130 negative).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 provide converging evidence from multiple orthogonal methods (NanoFCM, TEM, Western blot) demonstrating successful exosome isolation meeting ISEV criteria. The presence of canonical exosomal markers and absence of cellular contaminant marker GM130 validates the preparation quality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "d602da9c-2a97-46fd-a02f-a366f8bbd029",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Proteomic profiling identified 803 differentially expressed proteins between EC and paracancer tissue-derived exosomes, with 686 up-regulated and 117 down-regulated in EC, showing clear separation between sample groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C29, and C82 are internally consistent and supported by volcano plot (Figure 2A) and heatmap clustering (Figure 2B) data. The statistical criteria (|log2(FC)|\u22651.0, p\u22640.01) are clearly defined, though sample size (n=8 pairs) is modest for proteomic discovery.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "deac9202-560e-45ba-9e6e-93d6569c2cba",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "GO and KEGG enrichment analyses revealed that differentially expressed proteins are involved in cellular/metabolic processes, binding/catalytic activities, and pathways including mRNA catabolism, viral transcription, and translational initiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 describe standard bioinformatics enrichment analyses with results shown in Figure 3. However, the biological interpretation is descriptive and lacks specificity\u2014many of these terms are generic cellular processes. The connection to EC biology is not mechanistically explored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "6df47f1f-e651-4044-804c-f29b88e8f30e",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CD54 was identified as up-regulated in EC tissue-derived exosomes by proteomics and validated to be highly expressed in EC cancer tissues compared to adjacent tissues using immunohistochemistry, RT-qPCR, and western blot.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 and C64-C65 demonstrate consistent CD54 upregulation across multiple validation methods (IHC, RT-qPCR, Western blot) in tissue samples. The convergence of proteomic discovery (C83-C84) with orthogonal validation techniques strengthens confidence, though sample size remains limited (n=8 pairs).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "d66d1a91-c6b0-4cbf-8b66-a5e3d3691d1d",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Plasma exosomal CD54 levels were significantly elevated in EC patients (n=122) compared to healthy donors (n=62), increased with disease progression, and decreased following tumor resection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 and C66-C68 are supported by NanoFCM data from a reasonably sized cohort (122 EC patients, 62 controls). The correlation with disease stage (C38, C67) and post-surgical decrease (C39, C68, n=12) provide biological plausibility. Statistical significance is demonstrated (p<0.0001 in Figure 5C).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "b16faef3-77de-471c-8855-980cbd0ec1d4",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Plasma exosomal CD54 expression correlated significantly with tumor size, distant metastasis, smoking history, drinking history, and clinical stage, but was independent of age and gender.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C46 and C69 are supported by statistical analysis in Table 1 with appropriate p-values. However, the associations with smoking (p=0.0004) and drinking (p=0.0002) history raise questions about confounding, as these are risk factors for EC rather than direct consequences of tumor biology. Multiple testing correction is not mentioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "a3d8e261-e201-4c82-8ada-bd57fca50008",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CD54 showed modest diagnostic performance for EC overall (AUC=0.702, sensitivity=66.13%, specificity=71.31%), with better performance in larger tumors (\u22654cm) but poor performance in early-stage disease (Stage I AUC=0.513).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 and C70 are supported by ROC analysis data (Figures 6-7, Table 2). The authors appropriately acknowledge poor early-stage diagnostic performance (C49, C70), which is a critical limitation. The AUC of 0.702 is modest and below typical clinical utility thresholds (>0.80), limiting translational potential as a standalone biomarker.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "78e1d996-c01c-4bd7-9011-29666c1fb8d8",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CD54 expression was elevated in EC cell lines (TE-1, KYSE-510) compared to normal esophageal epithelial cells (HEEC) as measured by RT-qPCR, western blot, and immunofluorescence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 and C71 are supported by multiple orthogonal methods (RT-qPCR, Western blot, immunofluorescence) shown in Figure 8A-D. The convergence of techniques strengthens the finding. However, only one normal cell line (HEEC) is used as control, and cell line authentication is mentioned (C80) but OE19 data is shown but not discussed in results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "70c03ab4-c0ba-4cd8-bd55-1014ee01bd35",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "siRNA-mediated knockdown of CD54 in EC cells (TE-1, KYSE-510) significantly reduced cell proliferation and migration as demonstrated by CCK-8, wound healing, and transwell migration assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 and C72 are supported by functional assay data (Figure 8E-P) showing reduced CD54 expression upon siRNA treatment and corresponding decreases in proliferation and migration. Multiple functional readouts strengthen the conclusion. However, only knockdown experiments are shown\u2014overexpression or rescue experiments would strengthen causality claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "9b9138a3-bf5e-486d-896e-28b5aa8e92d5",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CD54 plays a key role in EC development by promoting proliferation, migration, and invasion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C56, C73, C75, and C77 represent interpretive conclusions based on knockdown experiments (C54-C55). While the functional data support a role for CD54 in proliferation and migration, the claim of a 'key role in EC development' is overstated. No invasion assays are actually shown despite C75's claim. Mechanistic understanding is lacking, and the in vitro findings require in vivo validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "9d2f7d79-d61c-469d-bf0e-34e7c7ed7a3e",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Exosomal CD54 is a promising biomarker for EC diagnosis and a key molecule for EC development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claims C74 and C76 represent the main conclusions but are overstated given the data. The diagnostic performance is modest (AUC=0.702) and poor for early-stage disease where biomarkers are most needed (C49-C50). While CD54 shows functional effects in vitro, calling it a 'key molecule' without mechanistic studies or in vivo validation is premature. The biomarker would require validation in independent cohorts and likely combination with other markers for clinical utility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "4fd8ce22-b09d-4363-be5f-b5e8735a2120",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "EC is a major global health burden with poor prognosis, rising incidence, and limitations in current diagnostic approaches including imaging and serum biomarkers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 establish the clinical context through appropriate citations. These are background claims from prior literature that provide rationale for the study. The citations appear appropriate for establishing EC epidemiology and diagnostic challenges.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "fa9085b5-fd39-4c97-b552-aa4e30d54b3b",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Exosomes are small extracellular vesicles (40-200 nm) produced by various cell types, secreted into body fluids, and enriched in tumor markers, making them potential diagnostic biomarkers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C16 provide background on exosome biology and their potential as biomarkers, supported by appropriate citations. These establish the scientific rationale for investigating exosomal proteins in cancer diagnosis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "f9c8fedd-1c59-4147-a098-bee267392136",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "CD54 (ICAM-1) is a transmembrane glycoprotein involved in inflammation and immune responses, with variable prognostic associations across different cancers and no prior reports in EC exosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C23 and C86-C89 provide background on CD54 biology and its roles in various cancers through appropriate citations. Claim C24 establishes the novelty gap. However, C89's inference about immune surveillance role is speculative based on correlation data from other cancers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    },
+    {
+      "id": "b8b1b689-9483-420a-bf46-ee6217caaa4b",
+      "content_id": "be688d8b-0130-4886-a76f-b71f9b37514b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study collected 8 paired tissue samples and plasma from 122 EC patients and 62 healthy donors, with appropriate ethical approval and cell line authentication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 describe study design and quality control measures. Ethical approval (C79) and cell authentication (C80) are appropriate. However, the tissue sample size (n=8 pairs) for proteomic discovery is modest, potentially limiting statistical power and generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:45:54.453089Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cf3dd500-73dd-496e-882c-c519f95f5c3b",
+      "result_id": "f0779c2f-5ac4-41f5-bca7-f32cee84e339"
+    },
+    {
+      "claim_id": "d9391b8d-d66f-4936-bac3-1ac6ab85213a",
+      "result_id": "f0779c2f-5ac4-41f5-bca7-f32cee84e339"
+    },
+    {
+      "claim_id": "ee753684-1c4e-40a0-813b-22324fe8625f",
+      "result_id": "f0779c2f-5ac4-41f5-bca7-f32cee84e339"
+    },
+    {
+      "claim_id": "ba634c64-5d6a-40b2-93c3-2b0eb54590fd",
+      "result_id": "d602da9c-2a97-46fd-a02f-a366f8bbd029"
+    },
+    {
+      "claim_id": "546aa533-fd71-4d53-ae56-f63cb7fbc50a",
+      "result_id": "d602da9c-2a97-46fd-a02f-a366f8bbd029"
+    },
+    {
+      "claim_id": "c1fdd134-3297-4162-aab1-c7817c4a4efe",
+      "result_id": "d602da9c-2a97-46fd-a02f-a366f8bbd029"
+    },
+    {
+      "claim_id": "306444d7-4d93-4b8e-b87a-d5e73726f717",
+      "result_id": "deac9202-560e-45ba-9e6e-93d6569c2cba"
+    },
+    {
+      "claim_id": "5356d6ef-5cd0-4a5d-946c-13d096b5a4ee",
+      "result_id": "deac9202-560e-45ba-9e6e-93d6569c2cba"
+    },
+    {
+      "claim_id": "673f03df-93c4-4e02-8174-e9a32d1e1fec",
+      "result_id": "deac9202-560e-45ba-9e6e-93d6569c2cba"
+    },
+    {
+      "claim_id": "6551be5c-c368-467c-9546-f4cab360571d",
+      "result_id": "deac9202-560e-45ba-9e6e-93d6569c2cba"
+    },
+    {
+      "claim_id": "85032b9a-95ae-4040-bf5a-871b4138507f",
+      "result_id": "6df47f1f-e651-4044-804c-f29b88e8f30e"
+    },
+    {
+      "claim_id": "8f453e16-6d02-48d4-ba53-42cc022b4b97",
+      "result_id": "6df47f1f-e651-4044-804c-f29b88e8f30e"
+    },
+    {
+      "claim_id": "58ec488b-6ee9-491d-9da7-be4ac54d7331",
+      "result_id": "6df47f1f-e651-4044-804c-f29b88e8f30e"
+    },
+    {
+      "claim_id": "2efb93b4-6870-4ca4-8f3e-f27237962c9e",
+      "result_id": "6df47f1f-e651-4044-804c-f29b88e8f30e"
+    },
+    {
+      "claim_id": "e2361f12-43b7-4739-92b2-abe9d71f3c0b",
+      "result_id": "6df47f1f-e651-4044-804c-f29b88e8f30e"
+    },
+    {
+      "claim_id": "48d77a23-b169-4dc4-9e9d-085355ac7370",
+      "result_id": "6df47f1f-e651-4044-804c-f29b88e8f30e"
+    },
+    {
+      "claim_id": "3e03ad40-c093-4ddd-844c-3e9e401d3882",
+      "result_id": "6df47f1f-e651-4044-804c-f29b88e8f30e"
+    },
+    {
+      "claim_id": "58e2cbb6-64e2-4c40-8c77-dee8a3e51a99",
+      "result_id": "d66d1a91-c6b0-4cbf-8b66-a5e3d3691d1d"
+    },
+    {
+      "claim_id": "b4f65cad-a595-4109-9fcb-27052a7bcda3",
+      "result_id": "d66d1a91-c6b0-4cbf-8b66-a5e3d3691d1d"
+    },
+    {
+      "claim_id": "05913019-5bd0-47f9-b6d1-12b6bef1a332",
+      "result_id": "d66d1a91-c6b0-4cbf-8b66-a5e3d3691d1d"
+    },
+    {
+      "claim_id": "1c2376a0-149f-4820-8d24-8931a3b0170a",
+      "result_id": "d66d1a91-c6b0-4cbf-8b66-a5e3d3691d1d"
+    },
+    {
+      "claim_id": "9ea53867-2d50-4417-98b2-f1cd22e6abe8",
+      "result_id": "d66d1a91-c6b0-4cbf-8b66-a5e3d3691d1d"
+    },
+    {
+      "claim_id": "a85c233b-666d-45b8-85c6-73c4b6029c6e",
+      "result_id": "d66d1a91-c6b0-4cbf-8b66-a5e3d3691d1d"
+    },
+    {
+      "claim_id": "11943e21-efe4-4afe-a73c-95e7dc518f74",
+      "result_id": "d66d1a91-c6b0-4cbf-8b66-a5e3d3691d1d"
+    },
+    {
+      "claim_id": "1bfc2022-85ca-40a9-a9d8-4475d2c16a8f",
+      "result_id": "b16faef3-77de-471c-8855-980cbd0ec1d4"
+    },
+    {
+      "claim_id": "f2894ec4-f47c-4c3a-959d-768ebf42e204",
+      "result_id": "b16faef3-77de-471c-8855-980cbd0ec1d4"
+    },
+    {
+      "claim_id": "27806c8f-199a-4665-92af-ee3e4820067c",
+      "result_id": "b16faef3-77de-471c-8855-980cbd0ec1d4"
+    },
+    {
+      "claim_id": "c9cb2f13-951d-4d0f-b20d-2d19ca023596",
+      "result_id": "b16faef3-77de-471c-8855-980cbd0ec1d4"
+    },
+    {
+      "claim_id": "434c9c83-15ad-48d0-8e3f-b3a26429fc13",
+      "result_id": "b16faef3-77de-471c-8855-980cbd0ec1d4"
+    },
+    {
+      "claim_id": "8dd74f48-f50e-4acc-b82d-7e384d88ef07",
+      "result_id": "b16faef3-77de-471c-8855-980cbd0ec1d4"
+    },
+    {
+      "claim_id": "f3e4357e-bd85-4faf-8add-c2223fdd6bd2",
+      "result_id": "b16faef3-77de-471c-8855-980cbd0ec1d4"
+    },
+    {
+      "claim_id": "dc233442-369a-4088-813d-977736d8547d",
+      "result_id": "b16faef3-77de-471c-8855-980cbd0ec1d4"
+    },
+    {
+      "claim_id": "d26e541c-5783-4ccd-91e2-1eb8547db3e4",
+      "result_id": "a3d8e261-e201-4c82-8ada-bd57fca50008"
+    },
+    {
+      "claim_id": "585ccb7b-6878-48b0-b0b1-db3e5ec099ee",
+      "result_id": "a3d8e261-e201-4c82-8ada-bd57fca50008"
+    },
+    {
+      "claim_id": "3fda8987-015d-4797-8e9d-bcb2e7e19c21",
+      "result_id": "a3d8e261-e201-4c82-8ada-bd57fca50008"
+    },
+    {
+      "claim_id": "879ef873-3c27-4314-b7fa-eca77391ea72",
+      "result_id": "a3d8e261-e201-4c82-8ada-bd57fca50008"
+    },
+    {
+      "claim_id": "4fb18a09-4eb5-42d6-b99e-c088f34fa7b6",
+      "result_id": "a3d8e261-e201-4c82-8ada-bd57fca50008"
+    },
+    {
+      "claim_id": "ea2479f0-3f45-489d-9352-64c5a2572ed4",
+      "result_id": "a3d8e261-e201-4c82-8ada-bd57fca50008"
+    },
+    {
+      "claim_id": "2e7c96d1-7a84-459c-9b62-97569638a007",
+      "result_id": "78e1d996-c01c-4bd7-9011-29666c1fb8d8"
+    },
+    {
+      "claim_id": "6b27bf65-e110-4c02-bf0f-d8c30646e4b6",
+      "result_id": "78e1d996-c01c-4bd7-9011-29666c1fb8d8"
+    },
+    {
+      "claim_id": "30ca7cb0-e15e-49ad-ab3c-5ef5ead18be8",
+      "result_id": "78e1d996-c01c-4bd7-9011-29666c1fb8d8"
+    },
+    {
+      "claim_id": "098b3407-8354-4e5e-8472-b62066f464ff",
+      "result_id": "78e1d996-c01c-4bd7-9011-29666c1fb8d8"
+    },
+    {
+      "claim_id": "24b244b3-b0e8-47db-8bc5-bb6d86698cf4",
+      "result_id": "70c03ab4-c0ba-4cd8-bd55-1014ee01bd35"
+    },
+    {
+      "claim_id": "e501823b-6af7-4890-b7d5-82e459db3286",
+      "result_id": "70c03ab4-c0ba-4cd8-bd55-1014ee01bd35"
+    },
+    {
+      "claim_id": "b994659c-320e-4e99-805c-f070aecdc4c1",
+      "result_id": "70c03ab4-c0ba-4cd8-bd55-1014ee01bd35"
+    },
+    {
+      "claim_id": "e5d26cc9-32d1-44d1-95b9-de5b710dc536",
+      "result_id": "9b9138a3-bf5e-486d-896e-28b5aa8e92d5"
+    },
+    {
+      "claim_id": "7e8028cd-4af3-4da6-b19c-bbf93def3ae7",
+      "result_id": "9b9138a3-bf5e-486d-896e-28b5aa8e92d5"
+    },
+    {
+      "claim_id": "09089b4b-9f94-48c4-834f-c259dbc7068e",
+      "result_id": "9b9138a3-bf5e-486d-896e-28b5aa8e92d5"
+    },
+    {
+      "claim_id": "890671c7-6240-401b-bfb5-1fffc91b04f2",
+      "result_id": "9b9138a3-bf5e-486d-896e-28b5aa8e92d5"
+    },
+    {
+      "claim_id": "2dff9390-afae-4ae1-9bf5-9e368f2a336f",
+      "result_id": "9d2f7d79-d61c-469d-bf0e-34e7c7ed7a3e"
+    },
+    {
+      "claim_id": "351f761f-3506-4114-9049-fe67752501a9",
+      "result_id": "9d2f7d79-d61c-469d-bf0e-34e7c7ed7a3e"
+    },
+    {
+      "claim_id": "ada81a0c-57ec-4ae2-be24-5a5c77555724",
+      "result_id": "4fd8ce22-b09d-4363-be5f-b5e8735a2120"
+    },
+    {
+      "claim_id": "f311e109-d3a1-428f-b88a-adc725fc0bee",
+      "result_id": "4fd8ce22-b09d-4363-be5f-b5e8735a2120"
+    },
+    {
+      "claim_id": "7eee808e-d51c-49d9-a8ed-fb4f0006056b",
+      "result_id": "4fd8ce22-b09d-4363-be5f-b5e8735a2120"
+    },
+    {
+      "claim_id": "d118a685-c3b3-41be-9d18-cf6c6822fc9e",
+      "result_id": "4fd8ce22-b09d-4363-be5f-b5e8735a2120"
+    },
+    {
+      "claim_id": "8692129d-f125-4971-bd69-af49c0a78c45",
+      "result_id": "4fd8ce22-b09d-4363-be5f-b5e8735a2120"
+    },
+    {
+      "claim_id": "2b852150-91cf-4bed-b5bc-65611d941f07",
+      "result_id": "4fd8ce22-b09d-4363-be5f-b5e8735a2120"
+    },
+    {
+      "claim_id": "4900919c-d410-4bfc-8045-da42f4681018",
+      "result_id": "4fd8ce22-b09d-4363-be5f-b5e8735a2120"
+    },
+    {
+      "claim_id": "3db86141-290c-4c48-b328-1cdb8cb79eab",
+      "result_id": "4fd8ce22-b09d-4363-be5f-b5e8735a2120"
+    },
+    {
+      "claim_id": "5a0a4127-3269-4a85-a8c3-37a9e055a324",
+      "result_id": "fa9085b5-fd39-4c97-b552-aa4e30d54b3b"
+    },
+    {
+      "claim_id": "4b7dd60d-4cd9-48e3-95e7-cb348f437ae1",
+      "result_id": "fa9085b5-fd39-4c97-b552-aa4e30d54b3b"
+    },
+    {
+      "claim_id": "0921fac8-02ab-4450-9c43-e9f2686c3d49",
+      "result_id": "fa9085b5-fd39-4c97-b552-aa4e30d54b3b"
+    },
+    {
+      "claim_id": "3fcdf3c1-33e7-46ab-aa34-9d62bc1d774b",
+      "result_id": "fa9085b5-fd39-4c97-b552-aa4e30d54b3b"
+    },
+    {
+      "claim_id": "530ffc7c-21fa-46ce-985f-818126adfb15",
+      "result_id": "fa9085b5-fd39-4c97-b552-aa4e30d54b3b"
+    },
+    {
+      "claim_id": "475d71ec-748a-44a8-8823-eff8b4f89e82",
+      "result_id": "fa9085b5-fd39-4c97-b552-aa4e30d54b3b"
+    },
+    {
+      "claim_id": "cbe36648-84b4-48ab-aed6-7b5f94daad27",
+      "result_id": "fa9085b5-fd39-4c97-b552-aa4e30d54b3b"
+    },
+    {
+      "claim_id": "10b069da-8d8a-4f1f-9a62-4b9f0c1cf94b",
+      "result_id": "fa9085b5-fd39-4c97-b552-aa4e30d54b3b"
+    },
+    {
+      "claim_id": "ff06026b-b2ef-4988-abe4-e8dda950825c",
+      "result_id": "f9c8fedd-1c59-4147-a098-bee267392136"
+    },
+    {
+      "claim_id": "dfa14729-6fc3-4d25-b529-a78c9e74a4e7",
+      "result_id": "f9c8fedd-1c59-4147-a098-bee267392136"
+    },
+    {
+      "claim_id": "443c3566-00ad-4a57-aa0f-92952715da07",
+      "result_id": "f9c8fedd-1c59-4147-a098-bee267392136"
+    },
+    {
+      "claim_id": "01f89685-15a2-4512-b9c9-8a5953be5e80",
+      "result_id": "f9c8fedd-1c59-4147-a098-bee267392136"
+    },
+    {
+      "claim_id": "c0f7003a-f7de-4924-ba32-c0ea05410542",
+      "result_id": "f9c8fedd-1c59-4147-a098-bee267392136"
+    },
+    {
+      "claim_id": "30c6adcd-7653-4404-8937-b6a9d0d29ba6",
+      "result_id": "f9c8fedd-1c59-4147-a098-bee267392136"
+    },
+    {
+      "claim_id": "d4357c09-b2c1-43f2-9cd9-82de21383365",
+      "result_id": "f9c8fedd-1c59-4147-a098-bee267392136"
+    },
+    {
+      "claim_id": "dcb8a607-66ef-4e3a-9400-1b35d74c9a1b",
+      "result_id": "f9c8fedd-1c59-4147-a098-bee267392136"
+    },
+    {
+      "claim_id": "d3e85c96-f310-44b4-b857-7aef02974605",
+      "result_id": "f9c8fedd-1c59-4147-a098-bee267392136"
+    },
+    {
+      "claim_id": "7f8859c3-5c4c-4781-9c75-01e27f8106da",
+      "result_id": "f9c8fedd-1c59-4147-a098-bee267392136"
+    },
+    {
+      "claim_id": "b23233c2-8dd5-4d85-9bc1-789dcc1517ad",
+      "result_id": "f9c8fedd-1c59-4147-a098-bee267392136"
+    },
+    {
+      "claim_id": "39ec190f-b74c-408a-a788-50ac4fa38ffa",
+      "result_id": "b8b1b689-9483-420a-bf46-ee6217caaa4b"
+    },
+    {
+      "claim_id": "d89c7e46-137c-4768-9520-9ef82e12aefc",
+      "result_id": "b8b1b689-9483-420a-bf46-ee6217caaa4b"
+    },
+    {
+      "claim_id": "a808f246-f069-4d8e-b3e2-c0022add8407",
+      "result_id": "b8b1b689-9483-420a-bf46-ee6217caaa4b"
+    }
+  ],
+  "comparisons": []
+}

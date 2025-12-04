@@ -1,0 +1,433 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "A genetic screen of COPD candidate genes in Drosophila validated that 56% (17/33 genes) of candidate gene perturbations impact epithelial barrier function, with 52% showing enhancement of barrier dysfunction and 12% showing suppression. Of the 16 Drosophila hits with available human eQTL data, 56% were consistent with the direction of effect inferred from COPD risk allele associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C122, C123, and C124 provide consistent quantitative results from the screen with clear experimental design and readout (smurf assay). The validation rate of 56% and the concordance with human eQTL data (also 56%) are directly supported by experimental data shown in Figure 1 and Supplementary files.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Multiple nAchR subunits are required for intestinal barrier integrity in Drosophila. Ubiquitous or enterocyte-specific knockdown of various nAchR subunits leads to mild barrier dysfunction under homeostatic conditions and greatly enhanced barrier dysfunction after Paraquat challenge, suggesting sensitization of the epithelium to stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C33-C37 are supported by consistent experimental data across multiple drivers (da-GS, NP1ts, 5966-GS) and multiple nAchR subunits (\u03b14, \u03b23, \u03b21, \u03b12), shown in Figure 2A-D and supplementary figures. The interpretation of stress sensitization (C35) is a reasonable inference from the enhanced response to Paraquat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Knockdown of nAchR in enterocytes induces hallmarks of epithelial stress including ISC proliferation, activation of JAK/STAT signaling, and ER stress signaling. The ISC proliferation is presumably due to stress signals released by enterocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C40, and C41 are directly supported by experimental data using established reporters (pH3 for proliferation, 2xSTAT::GFP, Xbp1-eGFP) shown in Figure 2E-G. Claim C39 is an inference supported by citation to prior work (Biteau et al., 2011) and is consistent with established mechanisms of ISC activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C85"
+    ],
+    "result": "Epithelial junctions remain largely intact after nAchR knockdown, as visualized by septate junction markers (Dlg, Coracle) and arm-GFP localization in immunofluorescence and confirmed by electron microscopy, suggesting barrier dysfunction occurs through a mechanism independent of junctional disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C85 are supported by immunofluorescence data (Figure 2H-I, Figure 2\u2014figure supplement 2A) and electron microscopy observations. The inference in C43 that barrier dysfunction is caused by a separate mechanism is reasonable given the intact junctions and lack of junctional protein changes in RNAseq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Knockdown of nAchR subunits in intestinal stem cells increases barrier dysfunction and decreases survival after bacterial infection, but does not impair stem cell proliferation, suggesting barrier dysfunction is not due to regenerative failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by experimental data using ISC-specific driver (ISCts) shown in Figure 2\u2014figure supplement 2B-D. The inference in C47 is logical given that stem cell mitosis rates are unaffected. However, the mechanism of barrier dysfunction in this context remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "MARCM clones lacking nAChR\u03b12 produce significantly fewer enteroendocrine cells (32% vs 72% of clones containing at least 1 EE), suggesting nAchR may be required for proper EE differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C49 are supported by quantitative MARCM clone analysis data shown in Figure 2J. The inference in C50 is reasonable given the reduced EE numbers, though the mechanism remains unclear. Similar trends were observed with nAchR\u03b11 clones (Figure 2\u2014figure supplement 2E).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C27"
+    ],
+    "result": "ChAT is expressed by a subset of enteroendocrine cells in the fly intestine, predominantly in the R4 and R5 regions, as well as by cholinergic enteric neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C52, and C27 are supported by GFP expression under ChAT-Gal4 control and ChAT antibody staining shown in Figure 3A-D and supplementary figures. Multiple independent ChAT-Gal4 drivers and antibody staining provide convergent evidence for ChAT expression in both neurons and EEs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Depletion of ChAT in enteroendocrine cells or neurons renders flies more susceptible to barrier dysfunction after Paraquat exposure, supporting a critical role for Ach-mediated crosstalk between cholinergic neurons/EEs and enterocytes in maintaining intestinal epithelial homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C56 are supported by experimental data using prosts and ChATts drivers shown in Figure 3E-F. The conclusion in C57 is a reasonable inference integrating results from both nAchR and ChAT depletion experiments, though the inability to cleanly separate neuronal and EE contributions (acknowledged in supplementary figures) limits mechanistic certainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "RNAseq analysis reveals that nAchR knockdown in enterocytes causes distinct transcriptional changes with 240 upregulated and 215 downregulated genes. Synaptotagmin 4 (Syt4) is the most significantly downregulated gene, and 171 genes are differentially expressed in both nAchR \u03b21 and \u03b23 knockdowns, supporting partially overlapping functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are directly supported by RNAseq data shown in Figure 4A-D with appropriate statistical thresholds (FDR \u2264 0.1, log2FC >1 or <-1). The PCA clearly separates knockdown from control samples, and the overlap analysis supports functional redundancy between subunits. RT-qPCR validation of Syt4 downregulation is shown in Figure 4\u2014figure supplement 1B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Gene ontology analysis of nAchR knockdown transcriptomes reveals increased expression of glucosidases and hydrolases, and downregulation of genes involved in immune responses (lysozymes) and chitin binding/metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by GO term enrichment analysis shown in Figure 4C and Figure 4\u2014figure supplement 1C-D, F. The enrichment of chitin-related terms is particularly important as it motivated subsequent investigation of the peritrophic matrix. The downregulation of immune genes is consistent with the observed dysbiosis phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "ChAT depletion in enteroendocrine cells produces transcriptional changes with Syt4 as the most significantly downregulated gene and chitin-related GO terms trending toward enrichment. Direct comparison reveals 56 genes overlap between nAchR depletion in ECs and ChAT depletion in EEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by RNAseq data shown in Figure 4E-I. The overlap of 56 genes and the consistent downregulation of Syt4 in both conditions support a common pathway. However, the ChAT knockdown shows fewer differentially expressed genes overall, which may reflect incomplete driver coverage (C53) or indirect effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "nAchR depletion disrupts the peritrophic matrix (PM) as evidenced by reduced transcript levels of PM component CG32302, decreased survival after PE infection, abnormal bead feeding assay results, and electron microscopy showing disruption of the thin PM layer in 56% of samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76, C82-C84 are supported by multiple complementary approaches: RNAseq (Figure 5\u2014figure supplement 1A), survival assays (Figure 5A), bead feeding assays (Figure 5B, Figure 5\u2014figure supplement 1D), and electron microscopy (Figure 5C). The convergent evidence from multiple methods strongly supports PM disruption as a consequence of nAchR loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Loss of nAchR signaling causes dysbiosis and loss of gut compartmentalization, as shown by increased commensal CFUs, disturbed gut acidity patterns, and similar phenotypes after ChAT depletion in EEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by CFU counting (Figure 5D, G), Bromophenol blue pH indicator assays (Figure 5E), and PE infection survival (Figure 5F). The consistent phenotypes across nAchR and ChAT depletion support a common pathway. The dysbiosis is likely secondary to PM defects and barrier dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "PE infection induces nAchR \u03b23 transcript levels and reduces Ace levels, suggesting dynamic pathway regulation in response to infection, while ChAT transcript levels and ChAT-expressing cell numbers remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are supported by RT-qPCR data (Figure 5\u2014figure supplement 1B) and cell counting (Figure 5\u2014figure supplement 1C). The inference in C79 about pathway activation is reasonable given the reciprocal changes in nAchR and Ace. The unchanged ChAT expression suggests constitutive rather than infection-induced Ach production.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "RNAi-mediated silencing of Syt4 in enterocytes reduces survival after PE infection, causes PM defects, increases commensal numbers, disrupts gut compartmentalization, and causes disorganization and flattening of gastric units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 are supported by survival assays (Figure 6A, Figure 6\u2014figure supplement 1A), bead feeding assays (Figure 6B), CFU counting (Figure 6\u2014figure supplement 1B), pH indicator assays (Figure 6\u2014figure supplement 1C), and anti-cut staining (Figure 6\u2014figure supplement 1D). The phenotypes closely resemble those of nAchR knockdown, supporting an epistatic relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Genetic validation using Syt4 null mutants confirms enhanced susceptibility to PE infection and fragmented PM with enlarged WGA-positive structures. Combined knockdown of Syt4 and nAchR shows no additive effect, consistent with an epistatic relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by survival assays with CRISPR mutants and deficiency crosses (Figure 6C), microscopy (Figure 6D), and epistasis testing (Figure 6\u2014figure supplement 1E). The lack of additivity strongly supports Syt4 acting downstream of nAchR. The use of both CRISPR mutants and deficiency crosses controls for off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Overexpression of 3xFLAG-mCherry-Syt4 has a protective effect on survival after PE challenge but cannot rescue PE sensitivity when nAchR subunits are knocked down simultaneously, suggesting Syt4 expression is not sufficient for barrier protection in an nAchR loss-of-function context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101 and C102 are supported by survival assays (Figure 6E, Figure 6\u2014figure supplement 1I). The inability of Syt4 overexpression to rescue nAchR knockdown supports Syt4 acting downstream and suggests additional nAchR-dependent factors are required. This is consistent with the transcriptional regulation model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Syt4-mCherry-positive vesicles significantly colocalize with WGA staining in immunofluorescence, and immunogold electron microscopy confirms colocalization of mCherry-Syt4 and WGA in vesicular structures containing highly folded membrane swirls and amorphous cargo, suggesting Syt4 vesicles contain chitin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103 and C104 are supported by immunofluorescence (Figure 6F) and immunogold EM (Figure 6G). The colocalization of Syt4 with WGA (a chitin-binding lectin) provides strong evidence that Syt4-containing vesicles carry chitin or chitin-containing PM components. The EM provides ultrastructural confirmation of this colocalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C28",
+      "C30",
+      "C32",
+      "C107"
+    ],
+    "result": "nAchR signaling in enterocytes promotes epithelial barrier function and homeostasis by regulating peritrophic matrix production through transcriptional regulation of Syt4, which maintains secretion of chitin vesicles to maintain the PM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C28, C30, C32, and C107 represent the central mechanistic model supported by the integrated evidence: nAchR knockdown causes barrier dysfunction (C4), affects PM (C5, C28), requires Syt4 expression (C30, C32), and the mechanism involves Syt4-mediated chitin vesicle secretion (C107). This model is supported by RNAseq, genetic epistasis, and colocalization data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The study identified 22 candidate COPD genes that modulate barrier integrity in the fly and demonstrates the utility of Drosophila for screening candidate disease genes from human GWAS to provide mechanistic insight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105 and C106 summarize the overall approach and findings. The 56% validation rate (C3) and concordance with human eQTL data (C124) support the utility of the approach. The detailed mechanistic characterization of nAchR signaling demonstrates the value of the model system for functional validation and mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background context establishes that epithelial barrier disruption is common in chronic diseases, COPD is a major health burden with genetic risk factors including CHRNA3/5 loci, and CHRNA5 has been shown to play a role in COPD-like lesions independently of cigarette smoke.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 provide background context supported by appropriate citations to established literature. These claims set up the rationale for the study but do not represent novel findings. The citations appear appropriate and the statements are consistent with current understanding of COPD genetics and pathophysiology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background on acetylcholine signaling and Drosophila intestinal biology establishes that Ach is produced by ChAT in neurons and epithelial cells including brush/tuft cells, and that the fly intestinal epithelium resembles mammalian airway epithelia and can model COPD-like pathophysiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 provide additional background supported by appropriate citations. The comparison between fly intestine and mammalian airways (C23, C25) is supported by citations to Biteau et al., 2011 and others, establishing the rationale for using Drosophila as a model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C29",
+      "C31",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C92"
+    ],
+    "result": "Background information on the peritrophic matrix and Synaptotagmin 4 establishes that the PM is a protective chitinous structure in insects that protects against pathogens, and Syt4 is a vesicular Ca2+-binding protein involved in exocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C31, C69-C74, and C92 provide background on PM biology and Syt4 function supported by appropriate citations. This background is essential for interpreting the experimental findings but does not represent novel discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Depletion of nAchR subunits in enterocytes does not affect the number of enteroendocrine cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is supported by quantification shown in Figure 3\u2014figure supplement 1C. This negative result is important for distinguishing the EC-autonomous role of nAchR from effects on EE differentiation observed in stem cell clones (C48-C50).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Overexpression of ChAT promotes survival after bacterial infection, and Ach signaling is required to maintain a healthy microbiome and protect against pathogenic infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is supported by survival data (Figure 5\u2014figure supplement 1G). Claim C91 is a reasonable conclusion integrating the dysbiosis, infection susceptibility, and ChAT overexpression results. However, the mechanism linking Ach signaling to microbiome regulation (likely via PM maintenance) could be more explicitly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Discussion points suggest that neuronal Ach is the main driver of regeneration after injury, both neurons and EEs may contribute to homeostatic maintenance, the pathway is dynamically regulated by infection, Ca2+ signaling may promote Syt4-mediated vesicle fusion, and nAchR signaling mildly impacts regenerative processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C112 are speculative discussion points. C108 is supported by citation to Petsakou et al., 2023. C109 is explicitly speculative. C110 is an inference from the RNAseq data. C111 is speculative but supported by citation. C112 is based on the MARCM data but the interpretation is limited. These require additional experiments for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Discussion of translational relevance notes that muscarinic Ach receptors are therapeutic targets in COPD, tuft cells have important functions in airways and intestine, CHRNA5 risk alleles cause epithelial dysfunction independently of smoke, the fly PM is analogous to mammalian mucus/surfactant, and nAchR signaling is critical under homeostatic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C121 discuss translational implications supported by appropriate citations. C121 provides supporting evidence from the current study. These discussion points appropriately contextualize the findings but represent interpretation rather than novel experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "ChAT antibody staining labels more cells than ChAT-Gal4, suggesting incomplete driver coverage of ChAT-expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is a reasonable inference from the comparison of antibody staining and driver expression. This technical limitation is important for interpreting the ChAT depletion experiments and explains why the authors could not cleanly separate neuronal and EE contributions to Ach signaling.",
+    "result_type": "MINOR"
+  }
+]

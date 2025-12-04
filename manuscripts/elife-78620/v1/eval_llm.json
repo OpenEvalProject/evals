@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Chemogenetic excitation of D1 MSNs in CPdm increased contraversive rotations, decreased ipsiversive rotations, and increased total distance moved, while inhibition had opposite effects on rotational behavior. These behavioral changes replicate prior findings for unilateral D1 MSN modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 provide converging behavioral evidence with appropriate statistical tests (MANOVA with p<0.01) and are consistent with cited prior work. The behavioral validation confirms successful DREADD manipulation and provides a functional readout of the intervention.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Classification analysis of BOLD dynamics in the virally transfected CPdm region (CPvirus) showed significant differences between D1 excitation vs control (75.4% accuracy, p=0.02) and D1 inhibition vs control (71.1% accuracy, p=0.03), while non-transfected CP regions showed no significant changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 demonstrate that BOLD dynamics changed specifically in the transfected region with appropriate statistical significance (p<0.05) and proper negative control (CPoth). The permutation testing approach with 5000 permutations provides robust statistical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C2",
+      "C40",
+      "C41"
+    ],
+    "result": "CPdm neuromodulation altered BOLD dynamics in multiple thalamic regions (PF, LD, LP, MD, VM|CM), with significantly higher classification accuracies in thalamic regions that have reciprocal anatomical connections to CPdm compared to other thalamic regions. These regions also displayed more autocorrelated dynamics after neuromodulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18, C2, C40-C41 provide strong evidence linking anatomical connectivity to functional changes. The Mann-Whitney U-tests show significant differences (p<0.001 for excitation, p=0.04 for inhibition) between anatomically connected vs non-connected thalamic regions, supporting a structure-function relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C3"
+    ],
+    "result": "Cortical regions showing altered BOLD dynamics after D1 MSN modulation were primarily unimodal (SSp, VIS, MOp, PTLp), with classification accuracy strongly correlated with cortical hierarchical position (\u03c1=0.93 for excitation, \u03c1=0.69 for inhibition). Changes were strongest in unimodal regions and weakened toward transmodal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 and C3 demonstrate a clear hierarchical gradient effect with strong statistical support (p<0.001 for excitation correlation). The use of the Fulcher et al. 2019 hierarchy provides an independent anatomical framework, strengthening the interpretation. However, the mechanism underlying this gradient effect remains correlational.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C46",
+      "C47",
+      "C5"
+    ],
+    "result": "Time-series feature analysis revealed that D1 excitation increased autocorrelation properties of BOLD signals in thalamic regions (VM|CM: 344 features, LD: 284 features). Multiple methods sensitive to autocorrelation structure (linear autocorrelation, Fourier power spectrum, AR models) showed high similarity (Spearman distance \u22640.43) and successfully distinguished D1 stimulation from control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28, C46-C47, and C5 provide comprehensive characterization of BOLD dynamics changes using diverse time-series methods. The convergence of multiple independent feature types on autocorrelation changes strengthens the conclusion. FDR correction was appropriately applied across 6588 features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Feature scores between VM|CM and other significant thalamic, cortical, and striatal regions showed positive correlations (\u03c1=0.38-0.58), indicating broadly similar changes in BOLD time-series properties across the striato-thalamo-cortical circuit after D1 excitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 demonstrate coordinated changes across the circuit using a novel permutation-based correlation approach with 5000 shuffles. The moderate correlations (\u03c1=0.38-0.58) suggest related but not identical changes across regions, which is biologically plausible for a distributed circuit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C4"
+    ],
+    "result": "Functional connectivity analysis showed baseline positive correlations between CPdm and cortical regions (ACA, PL, MOp, RSP) and negative correlations with some thalamic/pallidal regions. D1 excitation significantly decreased FC between CPdm-ACA and CPdm-MOp (p<0.05, FDR-corrected), while inhibition showed trends toward increased FC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 and C4 provide FC results with appropriate statistical testing (Wilcoxon tests, permutation testing with 5000 permutations, FDR correction). The bidirectional effects of excitation vs inhibition on FC are internally consistent. However, the lack of significant thalamo-cortical FC changes (C35) is noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Individual animal behavioral changes (rotational asymmetry) correlated strongly with FC changes between CPdm and ACA or MOp (r\u22650.681, p<0.0001), but not with regions showing limited FC changes despite high classification accuracy (r\u22640.054, p\u22650.768).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 establish a brain-behavior relationship at the individual subject level. The strong correlations for ACA/MOp and lack of correlation for other regions provide specificity. However, this is correlational evidence and does not establish causality between FC changes and behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "Classification of D1 excitation vs D1 inhibition showed no statistically significant differences after multiple comparison correction, indicating that activation versus deactivation does not result in distinguishable changes in BOLD dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 reports a negative result with appropriate statistical rigor (FDR correction). This finding is important for understanding the specificity of the manipulation effects, though it contrasts with the FC results showing bidirectional effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "No significant FC changes were found among all ROIs of the striato-thalamo-cortical circuit, including thalamostriatal and thalamo-cortical connections, after DREADD activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 reports a negative result with appropriate correction (FDR, p<0.05). The authors acknowledge this finding and discuss potential explanations related to anesthesia effects and weak baseline thalamic connectivity (C60). This represents a limitation but is transparently reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C50"
+    ],
+    "result": "The study provides causal evidence that modulating D1 MSN activity in CPdm causes changes in BOLD dynamics that propagate through polysynaptically connected circuits and shapes temporal autocorrelation of anatomically connected regions at the macroscale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C50 represent major interpretive conclusions supported by the convergence of multiple lines of evidence (behavioral validation, anatomical specificity, time-series changes, FC alterations). The chemogenetic manipulation provides causal leverage, though the specific cellular mechanisms remain to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Regions with the strongest FC changes were not the same as regions whose local dynamics were most affected by stimulation, indicating dissociation between local dynamics and inter-regional coupling measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 highlights an important methodological observation that FC and local dynamics capture different aspects of brain function. This is well-supported by the data showing thalamic regions with high classification accuracy but no significant FC changes, and vice versa for some cortical regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C83"
+    ],
+    "result": "The study used 38 D1Cre mice (13 excitation, 15 inhibition, 10 control) with stereotactic viral injection of DREADDs in CPdm, behavioral testing, and rsfMRI at 7T with appropriate acquisition parameters. Histological analysis confirmed no significant differences in transfection between excitatory and inhibitory groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 and C83 describe the experimental design and methods. Sample sizes are reasonable for fMRI studies (n=10-15 per group). The confirmation of equivalent viral transfection (C83) is important for ruling out confounds. Methods are described in sufficient detail for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The study employed rigorous analytical methods including Allen Brain Atlas-based ROI definition, hctsa feature extraction (6588 features), linear SVM classification with cross-validation, permutation testing (5000 permutations), and FDR correction for multiple comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C82 describe comprehensive and appropriate analytical methods. The use of established atlases (Allen Brain), validated toolboxes (hctsa v1.04), proper cross-validation, and rigorous statistical correction demonstrates methodological rigor. The permutation testing approach is particularly strong for small sample sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The manuscript contextualizes findings within extensive prior literature on structure-function relationships, cortical hierarchies, BOLD dynamics, basal ganglia circuitry, and autocorrelation properties across species and scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9, C42-C45, C48-C49, C51-C53, C55-C58, C60-C65 represent citations to prior work that appropriately contextualize the current findings. The citations appear accurate and relevant, though detailed verification of each cited claim is beyond the scope of this review. The integration of prior work strengthens the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "The authors speculate that D1 CPdm neuromodulation alters neuronal autocorrelation at the population level, shaping fMRI signal dynamics characterized by increased autocorrelated fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C54 is explicitly presented as speculation. While the fMRI data show increased autocorrelation, the link to neuronal population dynamics is inferential. Direct neuronal recordings would be needed to test this hypothesis. The speculation is reasonable but remains unvalidated.",
+    "result_type": "MINOR"
+  }
+]

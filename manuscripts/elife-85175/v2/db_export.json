@@ -1,0 +1,2037 @@
+{
+  "submission": {
+    "id": "df7d5cf3-203c-45d3-9dff-a0bdee13ae5b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:36:04.200889Z",
+    "updated_at": "2025-12-04T03:36:04.200889Z"
+  },
+  "content": [
+    {
+      "id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "submission_id": "df7d5cf3-203c-45d3-9dff-a0bdee13ae5b",
+      "content_type": "manuscript",
+      "content_text": "# Two human brain systems micro-structurally associated with obesity\n\n## Authors\n\n- Manfred G Kitzbichler<sup>1</sup> ([ORCID: 0000-0002-4494-0753](https://orcid.org/0000-0002-4494-0753))\n- Daniel Martins<sup>2</sup> ([ORCID: 0000-0002-0239-8206](https://orcid.org/0000-0002-0239-8206))\n- Richard AI Bethlehem<sup>1</sup> ([ORCID: 0000-0002-0714-0685](https://orcid.org/0000-0002-0714-0685))\n- Richard Dear<sup>1</sup>\n- Rafael Romero-Garcia<sup>1</sup>\n- Varun Warrier<sup>1</sup>\n- Jakob Seidlitz<sup>5</sup>\n- Ottavia Dipasquale<sup>2</sup>\n- Federico Turkheimer<sup>2</sup>\n- Mara Cercignani<sup>8</sup> ([ORCID: 0000-0002-4550-2456](https://orcid.org/0000-0002-4550-2456))\n- Edward T Bullmore<sup>1</sup>\n- Neil A Harrison<sup>8</sup> ([ORCID: 0000-0002-9584-3769](https://orcid.org/0000-0002-9584-3769)) \u2020\n\n### Affiliations\n\n1. Department of Psychiatry, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))\n2. Institute of Psychiatry, Psychology and Neuroscience, King\u2019s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))\n3. Department of Medical Physiology and Biophysics, Instituto deBiomedicina de Sevilla (IBiS) HUVR/CSIC Universidad de Sevilla/CIBERSAM, ISCIII Sevilla Spain ([ROR:031zwx660](https://ror.org/031zwx660))\n4. Department of Psychology, University of Cambridge Cambridge United States ([ROR:013meh722](https://ror.org/013meh722))\n5. Lifespan Brain Institute, The Children\u2019s Hospital of Philadelphia and Penn Medicine Philadelphia United States ([ROR:01z7r7q48](https://ror.org/01z7r7q48))\n6. Department of Child and Adolescent Psychiatry and Behavioral Science,The Children\u2019s Hospital of Philadelphia Philadelphia United States ([ROR:01z7r7q48](https://ror.org/01z7r7q48))\n7. Department of Psychiatry, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n8. Brain Research Imaging Centre, Cardiff University Cardiff United Kingdom ([ROR:03kk7td41](https://ror.org/03kk7td41))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe relationship between obesity and human brain structure is incompletely understood. Using diffusion-weighted MRI from \u223c30,000 UK Biobank participants, we test the hypothesis that obesity (waist-to-hip ratio, WHR) is associated with regional differences in two micro-structural MRI metrics: isotropic volume fraction (ISOVF), an index of free water, and intra-cellular volume fraction (ICVF), an index of neurite density. We observed significant associations with obesity in two coupled but distinct brain systems: a prefrontal/temporal/striatal system associated with ISOVF and a medial temporal/occipital/striatal system associated with ICVF. The ISOVF~WHR system colocated with expression of genes enriched for innate immune functions, decreased glial density, and high mu opioid (MOR) and other neurotransmitter receptor density. Conversely, the ICVF~WHR system co-located with expression of genes enriched for G-protein coupled receptors and decreased density of MOR and other receptors. To test whether these distinct brain phenotypes might differ in terms of their underlying shared genetics or relationship to maps of the inflammatory marker C-reactive Protein (CRP), we estimated the genetic correlations between WHR and ISOVF (rg = 0.026, P = 0.36) and ICVF (rg = 0.112, P < 9\u00d710\u22124) as well as comparing correlations between WHR maps and equivalent CRP maps for ISOVF and ICVF (P<0.05). These correlational results are consistent with a two-way mechanistic model whereby genetically determined differences in neurite density in the medial temporal system may contribute to obesity, whereas water content in the prefrontal system could reflect a consequence of obesity mediated by innate immune system activation.\n\n## Introduction\n\nObesity has long been recognised as a preventable risk factor for cardiovascular and metabolic disorders such as heart disease and type-2 diabetes. More recently, it has also emerged as an important risk factor for neurodegenerative disorders, linked to both an increased risk of dementia and accelerated age-associated cognitive decline (Sellbom and Gunstad, 2012). Defined as the excessive accumulation of adipose tissue in the body (Gonz\u00e1lez-Muniesa et al., 2017), the worldwide prevalence of obesity has more than doubled in the last thirty years, making it one of the most important global public health challenges (Yatsuya et al., 2014).\n\nTo date, cross-sectional and longitudinal studies investigating effects of obesity on the brain have focused almost exclusively on macroscopic aspects of brain structure such as total grey matter volume and cortical thickness. Results in this field were often contradictory: although studies tended to report lower gray matter volume in relation to obesity, some have also observed null or positive associations as described in a meta-analysis by Garc\u00eda-Garc\u00eda et al., 2019, who noted that the likely reasons for this were heterogeneities in brain and obesity metrics, a wide variation in sample size, and poor statistical methodology.\n\nHowever, the emerging consensus indicates that typically studies are reporting negative associations between obesity (particularly visceral obesity indexed by waist to hip ratio: WHR) and (smaller) total grey matter volume (Cox et al., 2019) and (thinner) cortical thickness (Caunca et al., 2019). Notably, this negative association between body mass index (BMI) and global grey matter volume has been substantiated in a recent large-scale study conducted in the UK Biobank involving 9652 participants (Hamer and Batty, 2019). Recent meta-analysis of voxel-based morphometry studies, including data from 5882 participants and a mega-analysis of 6,420 participants from the ENIGMA MDD working group, have also identified a consistent association of obesity with reductions in grey matter volume and cortical thickness in the medial prefrontal and orbitofrontal cortex and the temporal pole (Garc\u00eda-Garc\u00eda et al., 2022; Opel et al., 2021).\n\nThese associations between obesity and macroscopic features of grey matter structure have also been supported by longitudinal studies. For example, Franz et al. showed that by the age of 64 years, participants whose BMI steadily increased over forty years had thinner cortex in several frontal and temporal brain regions compared to those whose BMI was stable (Franz et al., 2019). Other longitudinal studies have shown associations between age-associated increases in BMI and grey matter reductions in the medial temporal lobe (entorhinal cortex and hippocampus) and cingulate cortex (Arnoldussen et al., 2019; Bobb et al., 2014). Together with the finding (Opel et al., 2021) of a significant age-by-obesity interaction on cortical thickness driven by lower thickness in older participants, this suggests that the negative impact of obesity on the brain accumulates over time.\n\nTogether, these studies provide robust evidence for an association between obesity and macro-structural features of brain anatomy such as grey matter volume and cortical thickness. However, changes in grey matter volume and cortical thickness can be driven by multiple different underlying processes and our understanding of the microstructural features that underpin this relationship remain largely unknown (Westwater et al., 2022). For example, it is currently not known whether obesity-associated differences in grey matter volume relate to changes in the size, shape or number of neurons e.g. neurite density or orientation dispersion within that region or alternately to differences in tissue water content. To date, the only studies to have investigated associations of obesity with brain microstructure have focused on white matter. Interestingly, these have identified obesity-associated differences in a number of different microstructural features of white matter including (1) obesity-related increases in white matter water content, (2) reduced myelination, and (3) lower fractional anisotropy (Zhang et al., 2018; Kullmann et al., 2016). However, whether comparable differences in cortical and subcortical grey matter micro-structure can be observed with obesity are yet to be reported.\n\nWe hypothesized that obesity would be associated with diffusion-MRI measures of grey matter tissue microstructure at 180 cortical regions and 8 subcortical structures (bilaterally) produced using neurite orientation dispersion and density imaging (NODDI) modelling of data from \u223c30,000 participants in the UK Biobank MRI cohort. Unlike conventional diffusion MRI which models data acquired at a single diffusion weighting (shell), NODDI requires data collected at multiple different diffusion weightings (shells) then exploits the diffusion characteristics that can be observed in different tissue compartments to quantify their respective volume fractions. In this model, diffusion is modelled as isotropic in free water, restricted within neurites, and hindered in the extracellular space resulting in three microstructural metrics: Intracellular Volume Fraction (ICVF), which captures the volume fraction occupied by neurites (axons and dendrites) but not cell bodies; Orientation Dispersion Index (OD), which captures the spatial distribution of these processes; and isotropic volume fraction (ISOVF), which provides a measure of free water index.\n\nGiven previous findings of significant association between macroscopic differences in brain structure and visceral obesity, we elected to report associations with WHR in the main text and report complementary results for BMI as a measure of whole body obesity in the SI. Specifically, we tested each metric at each region for association with waist-to-hip ratio (WHR), and identified two anatomically and functionally distinct brain systems associated with obesity, using prior maps of gene expression, cellular composition and neurotransmitter receptor density to refine functional characterization of each obesity-associated system.\n\nFinally, we then completed two further analyses to explore the potential directionality of the relationship between obesity and brain microstructure. In the first, we we used genome-wide association statistics (GWAS) for brain ISOVF and ICVF (Warrier et al., 2022), and for WHR (Pulit et al., 2019), to estimate the genetic correlations between each MRI metric and WHR, and test the secondary hypothesis that the WHR would have a tighter genetic correlation with ICVF than ISOVF. In the second, we produced brain maps for the association of ISOVF and ICVF with C-reactive protein (CRP), a measure of systemic inflammation. Given the pro-inflammatory properties of adipose (particularly visceral adipose) tissue we predicted tighter correlations between maps of CRP and ISOVF than maps of CRP with ICVF.\n\n## Results\n\n### Sample data\n\nWe used data provided by the UK Biobank, a population-based cohort of >500,000 subjects aged between 39 and 73 years (Sudlow et al., 2015) and focused on a subset of participants for whom complete multi-modal MRI data were available. Excluding participants with incomplete MRI data resulted in N \u223c30,000 participants for each dataset. For further details on participant numbers see Appendix 2\u2014table 2.\n\n### Association of waist-to-hip ratio with multimodal MRI measures of brain structure\n\nSix MRI metrics of brain structure were used for correlational analysis with two measures of obesity (WHR and BMI) in N\u223c30,000 participants from UK Biobank. WHR and BMI were strongly positively correlated with each other ($r=0.428\\pm0.009$, $P<2\\times10^{\u221216}$) and we therefore focus here on WHR although similar results are reported for BMI in Supplemental Information (see comparisons in Appendix 2\u2014figures 2 and 3 and Appendix 2\u2014figures 4 and 5 as well as Appendix 2\u2014figure 9). Of the MRI metrics, there was one macro-structural measure (GM, grey matter volume) and five micro-structural measures (MD, mean diffusivity; FA, fractional anisotropy; OD, orientation dispersion; ICVF, intra-cellular volume fraction; and ISOVF, isotropic volume fraction). As illustrated in Figure 1a, some of these metrics were strongly correlated, indicating that they represented similar aspects of the underlying cortical micro-structure or tissue composition. For example, FA, OD, and ICVF metrics of neurite density were more strongly correlated with each other than with ISOVF, which is typically interpreted as a marker of tissue free water rather than cytoarchitectonics (Kamiya et al., 2020).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85175/elife-85175-fig1-v2.jpg)\n\n**Figure 1.:** (a) Correlation matrix for six macro- and micro/structural MRI metrics demonstrating that ISOVF (free-water) is essentially orthogonal to ICVF (neurite density) and OD, which instead form a cluster with FA. (b) Cortical and subcortical t-score map (left lateral and medial hemispheres) of ISOVF~WHR, representing the association of regional ISOVF with WHR, thresholded for significance at FDR = 5%. Circles indicate regions for which scatterplots are shown on the right. (c) Scatterplot of ISOVF in left inferior premotor region 6 r (y-axis) versus WHR (x-axis). (d) Cortical and subcortical t-score map of ICVF~WHR, thresholded at FDR = 5%. (e) Scatterplot of ICVF in the right hippocampus versus WHR. The maps of ISOVF~WHR and ICVF~WHR were negatively correlated ($r=\u22120.366$, $P=2.3\\times10^{\u221213}$). Colors in (b and d) refer to t-scores, colors in (c and e) denote normalised density. GM = Grey Matter; MD = Mean Diffusivity; FA = Fractional Anisotropy; OD = Orientation Dispersion Index; ISOVF = isotropic volume fraction; ICVF = intra-cellular volume fraction.\n\nTo address this potential redundancy, we performed a preliminary correlational analysis of all 6 MRI metrics with WHR then focused our subsequent analyses on ICVF and ISOVF, the two complementary MRI metrics that were most strongly associated with WHR. Comparable results for the other 4 metrics are reported in the Supplemental Information Appendix 2\u2014figure 2.\n\nTissue free water (ISOVF) was significantly positively correlated with WHR (FDR = 5%) in 136 bilateral regions, concentrated in a prefrontal-temporal-striatal system comprising the prefrontal cortex (37 regions), superior temporal (primary auditory) cortex (21 regions), basal ganglia (caudate, putamen, pallidum, accumbens), hypothalamus and thalamus. Referencing a database of prior task-related fMRI studies, this anatomical pattern of fMRI activations has been activated by tasks involving reward, auditory and musical functions (see Appendix 2\u2014figure 3b, c). There were also some areas of significant negative correlation between ISOVF and WHR in the lateral and medial secondary visual cortex (see Figure 1b).\n\nIn contrast, neurite density (ICVF) was significantly positively correlated with WHR (FDR = 5%) in 152 bilateral regions concentrated in a medial temporal-occipital-striatal system comprising medial and lateral occipital cortex (26 regions), medial temporal lobe (hippocampus and amygdala), basal ganglia (putamen, pallidum, accumbens), hypothalamus and thalamus (see Figure 1d). This anatomical pattern has previously been activated by fMRI tasks involving episodic memory and navigation (see Appendix 2\u2014figure 3d, e).\n\nMaps of ISOVF~WHR and ICVF~WHR were negatively correlated ($r=\u22120.366,P=2.3\\times10^{\u221213}$); see Supplemental Information for correlation matrix of all MRI~WHR maps. This suggests that obesity is associated with coupled but anatomically distinct changes in measures of brain water and neurite density.\n\n### Enrichment analysis of genes transcriptionally co-located with brain maps of association between obesity and brain water content, ISOVF\u2013WHR, and between obesity and neurite density, ICVF\u2013WHR\n\nTo investigate the basis for these associations of WHR with tissue water content (measured by ISOVF) and neurite density (measured by ICVF), we used human brain gene expression data from the Allen Brain Atlas to identify the individual gene transcripts that were most strongly co-located with each map. To do this, we independently tested 13,561 gene transcripts for significant spatial correlation with each map, that is ISOVF~WHR or ICVF~WHR, controlling for multiple comparisons entailed by whole genome analysis with FDR = 5% (Figure 2). Similar results were obtained by sensitivity analyses of co-location of weighted whole genome expression with maps of the correlations between MRI metrics and BMI instead of WHR; see Appendix 2\u2014figure 7.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85175/elife-85175-fig2-v2.jpg)\n\n**Figure 2.:** (a) Results using the ISOVF~WHR maps (free water vs adiposity). Bar graph of significant gene ontologies showing normalized enrichment score on the x-axis. (b) Results using the ICVF~WHR maps (neurite density vs adiposity). In both cases, p-values for enrichment were tested by permutation taking into account the smoothness of cortical maps (using spin permutation correction; see Appendix 2\u2014figure 6).\n\nThe tissue water content map (ISOVF~WHR) was significantly positively co-located with 1,031 gene transcripts and significantly negatively co-located with 1140 transcripts (FDR = 5%; spin permutation corrected). Enrichment analysis of the genes weighted by their spatial co-location with ISOVF~WHR identified 15 biological processes that were significantly under-represented, and 1 class that was positively enriched, with FDR = 5% to control for 29,687 biological processes and 11,110 molecular functions tested for enrichment. The most under-represented process was \u2018response to interleukin-6\u2019 and the most enriched process was \u2018pattern recognition receptor activity\u2019, both processes linked to the innate immune system. Other under-represented processes involved \u2018protein localisation to the Golgi apparatus\u2019, \u2018mitochondrial metabolism\u2019, \u2018taste receptor activity\u2019, and \u2018tau protein kinase activity\u2019.\n\nIn contrast, the neurite density map (ICVF~WHR) was significantly positively co-located with 1,242 gene transcripts and significantly negatively co-located with 1354 transcripts (FDR = 5%; spin permutation corrected). Enrichment analysis of the genes weighted by their spatial co-location with ICVF~WHR identified 20 biological processes that were significantly negatively enriched, and 6 classes that were positively enriched, with FDR = 5% to control for 29,687 biological processes and 11,110 molecular functions tested for enrichment. The most negatively enriched process was \u2018peptidyl-asparagine modification\u2019 and the most positively enriched process was \u2018taste receptor activity\u2019. Other negatively enriched processes included \u2018protein kinase C-activating G-protein-coupled receptor (GPCR) signalling pathway\u2019, \u2018fatty acid derivative binding\u2019, and \u2018glutamate receptor activity\u2019.\n\nThe whole genome weights of association (vectors of correlations per gene) with ISOVF~WHR and ICVF~WHR were negatively correlated ($r=\u22120.615,P<2.2\\times10^{\u221216}$). Thus, the gene transcripts spatially co-located with ISOVF~WHR and ICVF~WHR maps are coupled but biologically distinct. The prefrontal-temporal-striatal system where ISOVF was positively correlated with WHR was co-located with gene transcripts enriched for innate immune and metabolic processes, whereas the medial temporal-occipital-striatal system where ICVF was positively correlated with WHR was co-located with transcripts enriched fo \u2018G-protein coupled receptor signalling\u2019, \u2018fatty acid derivative binding\u2019, and \u2018glutamate receptor activity\u2019.\n\n### Co-location of neurotransmitter and cellular atlases with brain maps of association between obesity and brain water content, ISOVF\u2013WHR, and between obesity and neurite density, ICVF\u2013WHR\n\nTo further investigate the brain systems where obesity was strongly associated with brain micro-structure measured by ISOVF or ICVF, we used prior data on human brain distribution of multiple neurotransmitter receptors Hansen et al., 2022. Cortical maps of each of 37 neurotransmitter receptors, for example, mu opioid receptor (MOR), were independently tested for spatial co-location with the ISOVF~WHR and ICVF~WHR maps, controlling for multiple comparisons with FDR = 5%.\n\nThe prefrontal-temporal-striatal system (ISOVF~WHR) was significantly (positively) co-located with the atlas distribution of five neurotransmitter receptors/transporters: 5HTT, serotonin transporter; D1, dopamine receptor; H3, histamine receptor; Mu, opioid receptor; and VAChT, acetyl-choline transporter.\n\nIn contrast, the medial temporal-occipital-striatal system (ICVF~WHR) was significantly (negatively) co-located with four neurotransmitter receptors/transporters: H3 histamine receptor; Mu opioid receptor; CB1 cannabinoid receptor; and A4B2, \u03b14, \u03b22 nicotinic acetyl-choline receptor.\n\nInterestingly, the mu opioid receptor distribution was the most strongly correlated with both ISOVF~WHR and ICVF~WHR, but with opposite signs of association, meaning that regions where WHR correlated with neurite density typically expressed low mu opioid receptor density, whereas regions showing correlations between WHR and tissue water content typically expressed high mu opioid receptor density.\n\nWe likewise identified the cell-type distributions that were most strongly co-located with each of the ISOVF~WHR or ICVF~WHR maps. We independently tested 31 cell distributions atlases, provided by Lake et al., 2018, for significant spatial correlation with each map, controlling for multiple comparisons with FDR = 5%. The ISOVF~WHR map was significantly (positively) co-located with the atlas distribution of three glial cell classes: astrocytes, oligodendrocyte progenitor cells, and microglia. The ICVF~WHR map was not significantly co-located with any specific cell-type distribution.\n\n### Genetic correlation analysis of obesity and micro-structural MRI phenotypes\n\nThe results reported above (and summarised in Table 1) indicate that obesity is associated with coupled changes in two anatomically, transcriptionally and neurobiologically differentiated brain systems, measured using ISOVF and ICVF micro-structural MRI metrics, respectively. On this basis we tested the hypothesis that genome-wide association statistics (GWAS) for normal variation in ISOVF or ICVF (Warrier et al., 2022) were correlated with prior GWAS results for obesity (Pulit et al., 2019), indexed by WHR (see Shungin et al., 2015). We used linkage disequilibrium score (LDSC) analysis to estimate genetic correlations between WHR and ISOVF or ICVF. We found a modest, statistically significant positive genetic correlation between ICVF and WHR ($r_{g}=0.11\\pm0.030,P<9\\times10^{\u22124}$), but no genetic correlation between ISOVF and WHR ($r_{g}=\u22120.026\\pm0.03,P=0.3$); see Appendix 2\u2014table 2 for details. These results indicate shared effects of genetic variation on obesity (WHR) and neurite density (ICVF), but no shared genetic effects on obesity and brain water content (ISOVF).\n\n**Table 1.**\n Summary of differences between two obesity-associated micro-structural MRI phenotypes in terms of their associations with other brain phenotypes (gene ontology, receptor expression, and cell types) and their genetic correlations with obesity.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Scaling with obesity (WHR)</th>\n      <th>Gene ontology</th>\n      <th>Neurotransmitter receptors or transporters</th>\n      <th>Cell types</th>\n      <th>Genetic correlation with WHR</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ISOVF (free water)</td>\n      <td>prefrontal-temporo-striatal system</td>\n      <td>pattern recognition receptors (PRR) receptors for fatty acid derivatives IL-6 responses</td>\n      <td>H3, Mu, D1 and 5HTT</td>\n      <td>astrocytes, microglia and oligodendrocyte precursor cells (not any class of neurons)</td>\n      <td>not significant</td>\n    </tr>\n    <tr>\n      <td>ICVF (neurite density)</td>\n      <td>medial temporal-occipito-striatal system</td>\n      <td>taste receptor activity fatty acid receptors, glutamate receptor activity and GPCR signalling</td>\n      <td>H3, Mu, CB1 and A4B2</td>\n      <td>not significant</td>\n      <td>significant (positive)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Relationship with peripheral inflammation\n\nIn the final analysis we compared the effects on microstructure of three variables of interest at the same time, WHR, BMI, and specifically CRP, a measure of systemic inflammation. To this end we looked at the pairwise relationships of the maps ISOVF~CRP vs ISOVF~WHR, ICVF~CRP vs ICVF~WHR, etc. (see Appendix 2\u2014figure 13). Given the pro-inflammatory properties of adipose (particularly visceral adipose) tissue, for CRP we expected tighter correlations between ISOVF maps than ICVF maps. This hypothesis is indeed supported by our findings, the correlation is significantly stronger for the ISOVF maps than the ICVF maps (CRP-BMI: $P<1.2\\times10^{\u22125}$, CRP-WHR: $P<0.024$, one-tailed). We also find that the WHR and BMI maps are different (WHR-BMI: $P<0.05$, two-tailed).\n\n## Discussion\n\nHere, we have reported evidence, consistent with our first hypothesis, that obesity is associated with coupled changes in two micro-structural MRI metrics (ISOVF, free water; and ICVF, neurite density) in two anatomically, transcriptionally and neurobiologically differentiated brain systems. We have also reported genetic correlation analysis that was consistent with our secondary hypothesis, that these two distinct brain phenotypes have different genetic relationships with obesity.\n\n### Obesity and brain MRI phenotypes\n\nPrevious well-powered studies have identified associations between obesity and a pattern of reduced grey matter volume or cortical thickness centred on fronto-temporal cortex and sub-cortical structures. Here, using NODDI modelling of diffusion-weighted MRI data from \u223c30,000 participants in the UK Biobank we have extended these findings to demonstrate associations between obesity (WHR) and two measures of grey matter microstucture, ISOVF (an index of tissue water content) and ICVF an index of neurite density (see Table 1 for a summary).\n\nSimilar to previously reported associations with brain grey matter macrostructure, positive scaling of WHR and tissue water content (i.e. oedema) was most pronounced within frontal and temporal cortices and subcortical structures. In contrast, we observed a more anterior-posterior pattern of association between WHR and neurite density, with more obese individuals having higher neurite density in posterior compared to anterior brain regions. By relating obesity associated grey matter microstructure maps to gene expression data from the Allen Brain Atlas, we show that regions where WHR was more tightly linked to tissue water content had greater expression of pattern recognition receptors (PRR) and receptors for binding fatty acid derivatives, and reduced expression of genes associated with biological processes linked to interleukin-6 (IL-6) responses. Interestingly, these regions were also richer in astrocytes, microglia and oligodendrocyte precursor cells but not any class of neurons; and had high concentrations of some but not all neurotransmitter receptors or transporters tested, for example, histamine (H3), mu-opioid, D1, and 5HTT.\n\nIn contrast, the medial temporal-occipital-striatal system where obesity was associated with increased neurite density was co-located with expression of transcripts positively enriched for taste receptor activity and lower fatty acid binding, glutamate receptor activity and other biological processes linked to protein kinase C-activating G-protein-coupled receptor signalling. Interestingly, this system was not co-located with any specific cell class but it was co-located with specific neurotransmitter receptor maps including H3, Mu, CB1, and A4B2, meaning that regions showing the greatest positive scaling between neurite density and WHR showed relatively low expression of receptors linked to feeding, appetite, and energy expenditure.\n\n### What are the potential causal relationships between obesity and brain MRI phenotypes?\n\nISOVF and ICVF are weakly correlated (i.e. independent) markers of free water and neurite density, respectively. Both are significantly and mostly positively correlated with WHR in brain systems. Obesity-related differences in ISOVF and ICVF were coupled (negatively correlated) but also anatomically, transcriptionally, and neurobiologically differentiated from each other (Table 1). This raises the question: Could these two brain phenotypes have a different causal relationship with obesity?\n\nFor example, it is conceivable that the changes in brain water associated with obesity could represent an effect of obesity on the brain, that is WHR\u2192ISOVF, whereas the obesity-related changes in neurite density could represent an effect of the brain on obesity, that is ICVF\u2192WHR. Such a bi-directional mechanistic model of the relationships between obesity and the brain seems somewhat plausible. Obesity is usually caused by changes in eating behaviour and physical activity, which are controlled by brain systems enriched for opioid, dopamine and cannabinoid receptor-mediated signalling. So changes in the brain, indexed by neurite density, could conceivably cause adipogenic eating behaviours and thus obesity. Obesity in turn causes a pro-inflammatory state systemically and blood concentrations of CRP, IL-6 and other cytokines have previously been associated with changed (increased) micro-structural MRI metrics of free water (Kitzbichler et al., 2021). So inflammation could potentially mediate effects of obesity on the brain tissue water content (see also Turkheimer et al., 2022). Our finding that the CRP-WHR map correlation is significantly stronger for the ISOVF maps than the ICVF maps would be consistent with this hypothesis.\n\nUsing novel techniques for analysis of spatial co-location of whole genome transcript maps and MRI phenotypes to optimise subsequent enrichment analysis of strongly co-located gene transcripts, we found that transcripts co-located with ISOVF~WHR were enriched for IL6 and pattern recognition receptors (PRRs), both implicated in innate immune signalling; whereas transcripts co-located with ICVF~WHR were enriched for taste receptors. This pattern of results is consistent with the model that changes in neurite density associated with obesity might reflect primary brain changes in taste sensation and reward processing that drive consummatory behaviours leading to obesity; whereas changes in brain free water associated with obesity might reflect effects of pro-inflammatory cytokines produced by adipose tissue that drive extravasation and oedema in some brain regions.\n\nOne limitation of this study is that data was collected at multiple centres and even though we used site as a nuisance regressor there might be unaccounted for non-linear effects. However Duff et al., 2022 showed that quantities derived from UK Biobank scans at different sites are reliable.\n\nIt should also be mentioned that the age range of the AHBA donors (24-57 years) is only partially overlapping with the participants in the UK Biobank (44-80 years). Future studies will hopefully provide a more comprehensive picture of whole brain gene expression as a function of age so that the powerful strategy for linking transcriptional and imaging data that the AHBA dataset has enabled can be extended to gene expression datasets more closely aligned demographically with the neuroimaging dataset of interest. These and other methodological issues relating to alignment of AHBA gene expression data with MRI phenotypes have been rigorously reviewed in detail (Fornito et al., 2019; Arnatkeviciute et al., 2023).\n\nConcerning the question whether both brain systems are in operation in the same individual at the same time, we are not aware of any currently available tools that would allow us to actually test this assumption, but it could be an interesting avenue for future work. Another limitation of our study is that it is based on a cross-sectional dataset, and it is therefore impossible to disentangle causally directed relationships with certainty from correlations between MRI and transcriptional phenotypes. We also approached this question by using GWAS data on obesity and each of the two MRI metrics to estimate and test genetic correlations between obesity and ISOVF or ICVF. We found that ICVF was genetically correlated with obesity, but not ISOVF. This result is consistent with the bidirectional mechanistic model, whereby changes in neurite density (but not brain water) cause obesity, but it does not prove it. There are many other possible interpretations of a genetic correlation between phenotypes, that is pleiotropic genetic effects on both phenotypes, which do not entail a causal relationship between phenotypes. Further work will be needed to validate this and other causal models of the directional relationships between obesity and the brain, which could be important for future prevention, diagnosis, and treatment of obesity.\n\n## Materials and methods\n\n### Data available in UK Biobank\n\n#### Participants\n\nData were provided by the UK Biobank (application IDs 20904 & 48943), a population-based cohort of >500,000 subjects aged between 39 and 73 years (Sudlow et al., 2015). We focused on a subset of N = 40,680 participants for each of whom complete multimodal MRI data were available for download (February 2020). We excluded participants with incomplete MRI data resulting in the numbers for each dataset shown in Appendix 2\u2014table 2.\n\n### Imaging data acquisiton\n\nMinimally processed T1- and T2-FLAIR- weighted MRI data (and DWI data) were downloaded from UK Biobank (https://biobank.ctsu.ox.ac.uk/crystal/crystal/docs/brain_mri.pdf). The acquisition of these MRI data has been described in detail in Alfaro-Almagro et al., 2018, and is summarised here. MRI data at all three sites were collected on a 3T Siemens Skyra scanner (Siemens, Munich, Germany) using a 32-channel receive head coil. T1-weighted images were acquired using a 3D MPRAGE sequence with the following key parameters; voxel size 1mm \u00d7 1mm \u00d7 1mm, TI/TR = 880/2000 ms, field-of-view = 208 \u00d7 256 \u00d7 256 matrix, scanning duration = 5 min. The diffusion weighted imaging data were acquired using a monopolar Steejskal-Tanner pulse sequence and multi-shell acquisition (b=0 s/mm2, b=1.000 s/mm2, b=2.000 s/mm2) with the following key parameters; voxel size 2mm \u00d7 2mm \u00d7 2mm, TE/TR = 92/3600 ms, field-of-view = 104 \u00d7 104 \u00d7 72 matrix, and scanning duration = 7 minutes (Alfaro-Almagro et al., 2018).\n\n### Imaging pre-processing\n\n#### Structural MRI\n\nMinimal processing for T1-weighted data included defacing, cutting down the field-of-view and gradient distortion correction using Brain Extraction Tool (Smith, 2002) and FLIRT (FMRIB\u2019s Linear Image Registration Tool) (Jenkinson et al., 2002). The data were then nonlinearly warped to MNI152 space using FNIRT (FMRIB\u2019s Nonlinear Image Registration Tool) (Andersson and Sotiropoulos, 2016). Next, tissue-type segmentation was done using FAST (FMRIB\u2019s Automated Segmentation Tool) (Zhang et al., 2001) and a bias-field-corrected version of the T1 was generated (Alfaro-Almagro et al., 2018).\n\n##### Further processing\n\nWe used these data as input to Freesurfer V6.0.1 (Fischl et al., 2004) using the T2-FLAIR weighted images to improve pial surface reconstruction. Following reconstruction, the Human Connectome Project (HCP) parcellation (Glasser et al., 2016) was aligned to each individual image and regional metrics were estimated for 180 bilateral cortical areas and eight bilateral subcortical structures (giving a total of 376 areas).\n\n### Diffusion weighted MRI\n\nMinimal processing for diffusion weighted imaging (DWI) data included correction for eddy currents (Andersson and Sotiropoulos, 2015; Andersson and Sotiropoulos, 2016), head motion, outlier-slices removal and gradient distortion correction (Alfaro-Almagro et al., 2018).\n\n#### Further processing\n\nWe then co-registered the DWI data with the T1-aligned parcellation template to estimate fractional anisotropy (FA) and mean diffusivity (MD) at each region using DTIFIT [https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FDT/UserGuide#DTIFIT]. For each scan, the first B0 image of the diffusion-sensitive sequence was linearly coregistered to the T1 image with FLIRT. The resulting inverse transformation was used to map the parcellation into the DWI space. Neurite orientation dispersion and density imaging (NODDI) reconstruction was done using the AMICO pipeline (Daducci et al., 2015). Documentation and code for these processing pipelines is available on Github (https://github.com/ucam-department-of-psychiatry/UKB, copy archived at Romero-Garcia, 2023).\n\n### Imaging quality control\n\nWe used T1-weighted and T2-weighted scans for the Freesurfer anatomical image reconstruction, because this approach improves anatomical reconstruction (Glasser et al., 2013). However, subjects without T2 scans had cortical thickness systematically biased towards lower values compared to subjects with both T1 and T2 images. Thus, we excluded participants without T2 scans from all analyses. In order to avoid spurious effects from pathologies causing systemic inflammation, we also excluded subjects with high CRP (>). We repeated the analysis without subjects who had reported an episode of stroke or diagnosis of dementia, producing identical results.\n\n### Analysis pipeline\n\nA detailed description of the full processing pipeline can be found in Supplemental Information Appendix 2; briefly, it comprised the following steps: Load and match UKB imaging data with sociodemographic and health data. Regress imaging modalities from NODDI dataset onto waist-to-hip ratio (WHR) with age, sex, scan quality, and scan site as nuisance regressors. This is done for males and females at the same time, but including sex as a covariate (for sensitivity analysis separating by sex see Appendix 2\u2014figure 3). Adopting the pseudo-code format used by the R statistical language, the regression formula was: $ISOVF+ICVF\u223cWHR+Age+Sex+Quality+Site$ where Quality is quantified by the Freesurfer Euler number (a higher number means more surface reconstruction errors) and Site was one of three sites encoded as categorical variable.\n\nThe terms on the left can be represented as matrices having $N_{subjects}$ rows and $N_{ROIs}$ columns, whereas the terms on the right are vectors with $N_{subjects}$ entries. Then for each term on the left (ie. imaging modality) the result is a matrix of t-statistics or p-values with dimension $N_{covariates}\\timesN_{ROIs}$. The relevant row from this matrix is the one relating to the WHR coefficient which can be plotted as a brain map as shown in Figure 1 and Appendix 2\u2014figure 3 for each imaging modality, respectively.\n\n#### ABAGEN gene expression maps\n\nWe then related these maps to anatomically localized gene expression data from the Allen Brain Atlas (Hawrylycz et al., 2012) using the ABAGEN package (Markello et al., 2021) to map gene expression onto the same parcellation as the imaging data (Glasser HCP). The 43 (predominantly small) regions without gene expression data were excluded from analysis and are grayed out on the brain maps. Subsequently, we performed a correlation analysis with the ABAGEN maps (\u223c13,500 maps, one for each gene) as predictors and the NODDI-WHR maps as responses. We then repeated this step 1000 times for spin-permuted versions of the NODDI-WHR maps to generate a set of 1000 surrogate gene correlations. This was done separately but in parallel for both ISOVF and ICVF. The resulting real and surrogate data loadings were input to the gene enrichment analysis tool Webgestalt (Wang et al., 2017), which was modified to incorporate the spin permutation process instead the default process of random permutations to calculate p-values. This yielded a number of significantly enriched gene ontology categories with FDR corrected $P_{FDR}<0.05$, as shown in Figure 2. Supplemental Information Appendix 2\u2014figure 6 contains a schematic of the analysis pipeline.\n\n### Neurotransmitter maps\n\nHansen et al., 2022 compiled 37 neurotransmitter receptor atlases from the literature and provided them as 3D volumes in MNI space. These were then parcellated in the same way as the imaging data (using the Glasser HCP template). We independently tested the resulting 37 neurotransmitter maps (Appendix 2\u2014figure 11) for significant spatial correlation with the MRI~WHR maps, controlling for spatial autocorrelation using 10,000 spin permutations and correcting for multiple comparisons with FDR = 5%. Maps for the same receptor from different literature sources were correlated independently but the results were combined, resulting in the 19 separate receptors shown in Figure 3 (see Appendix 2\u2014figure 9 for a sensitivity analysis using the original 37 maps individually).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85175/elife-85175-fig3-v2.jpg)\n\n**Figure 3.:** Left: Correlations of cortical neurotransmitter maps with the ISOVF~WHR and ICVF~WHR maps shown above (same color scale as in Figure 1). Significance is indicated by shading (based on spin permutation and Bonferroni correction). The Mu and H3 receptors show the maximum (absolute) correlation with the ISOVF and ICVF maps of microstructural effect of obesity (top right). Bottom right: scatter plots of raw data.\n\n#### Cell type maps\n\nLake et al., 2018 provided 31 brain cell distributions atlases based on single-cell DNA transcription analysis. These were then parcellated in the same way as the imaging data (using the Glasser HCP template). We independently tested the resulting 31 cell-type maps (Appendix 2\u2014figure 12) for significant spatial correlation with the MRI~WHR maps, controlling for spatial autocorrelation using 10,000 spin permutations and for multiple comparisons with FDR = 5%. We concentrated on the seven categories at the highest level (Astro, Endo, Micro, Neuro.Ex, Neuro.In, Oligo, OPC; Figure 4) and did not separately analyse the individual excitatory and inhibitory neuronal sub-types (Ex1-8 and In1-8).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85175/elife-85175-fig4-v2.jpg)\n\n**Figure 4.:** Left: Correlations of brain cell type maps for seven cell type categories from Lake et al., 2018 with the ISOVF~WHR map shown above (same color scale as in Figure 1). Significance is indicated by shading (based on spin permutation and Bonferroni correction). The astrocytes, microglia, and OPC cell type maps show the maximum (absolute) correlation with the ISOVF~WHR maps (central panel). Right: scatter plots of raw data. (Results for ICVF were not significant for any category and are only shown in the Supplemental Information.).\n\n### Genetic correlation analysis\n\nWe used genome-wide association statistics for ICVF and ISOVF (Warrier et al., 2022), and for waist-to-hip ratio (plain and adjusted for BMI; Pulit et al., 2019). Genetic correlations were estimated using linkage disequilibrium (LD) score regression (Bulik-Sullivan et al., 2015) based on LD information from North-West European populations.\n",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "28c7c7f7-3f1a-424a-b8cd-358b2a2e2e9d",
+      "submission_id": "df7d5cf3-203c-45d3-9dff-a0bdee13ae5b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Susie Y Huang, https://ror.org/002pd6e78 Massachusetts General Hospital United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85175.sa0](https://doi.org/10.7554/eLife.85175.sa0)\n\nKitzbichler et al. conducted a valuable large-scale study using the UK Biobank data to explore the relationship between brain tissue microstructure and obesity and provided convincing evidence for two coupled yet distinct brain systems mediating relationships between free water and neurite density as markers of inflammation with the genes enriched for innate immunity and specific neurotransmitter receptors. Major strengths include the innovative and expansive approach to understanding the genetic factors, neurotransmitters and potential mechanisms underlying observed alterations in cortical thickness and gray matter volume in obesity. The scope of the work goes beyond most standard neuroimaging analyses and reveals coherent patterns linking neurite density and free water to relevant neuroinflammatory and neurotransmitter pathways.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Susie Y Huang, https://ror.org/002pd6e78 Massachusetts General Hospital United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85175.sa1](https://doi.org/10.7554/eLife.85175.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting the paper \"Two differentiated brain systems micro-structurally associated with obesity\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Annette Horstmann (Reviewer #1).\n\nComments to the Authors:\n\nWe are sorry to say that, after consultation with the reviewers, we have decided that this work will not be considered further for publication by eLife.\n\nI am sorry to convey this disappointing news. This is clearly an interesting work. As you will see below, the reviewers had mixed opinions, with one reviewer considering the work to be an important advance with some methodological limitations, and the other finding the approach to be too exploratory with major methodological flows. Given the reservations regarding the methodology, the article does not represent an advance with sufficient rigor to merit publication in eLife.\n\nReviewer #1 (Recommendations for the authors):\n\nThe study uses a large and well-suited human dataset to investigate the relationship between brain microstructure, as determined by in vivo MRI, and obesity, as measured by waist-to-hip ratio, in humans. The authors identify two brain systems that are individually associated with two different markers of brain structure: Neurite density (ICVF) and free water (ISOVF), a potential indicator of inflammatory processes. The authors link the identified associations to biological processes and in particular to neurotransmitter systems using publicly available expression atlases. This is a definite strength as it paves the way to a deeper and mechanistic understanding of the observed associations. Finally, they use GWAS analyses to investigate the influence of genetic variation on the associations between brain microstructure and obesity. They find that only one of the associations is linked to genetic variation and conclude that the structural differences in the two brain systems could be interpreted as a cause or consequence of obesity, respectively.\n\nThe analyses reported in the main manuscript are limited to the waist-to-hip ratio. This measure of obesity is correlated with BMI but primarily captures visceral obesity. The complementary results suggest that the results obtained using BMI are much more influenced by gender. The motivation to look at one and not the other is not well established. The same applies to the choice of MRI markers: the decision to use neurite density and free water as the main dependent variables is based on the strength of their association with the predictors. It is not clear from the data whether the associations with the two brain systems are present in the same individuals or whether these results come from two different subgroups within the data set. The authors do not support their interpretation with further (potentially available) data, e.g. on inflammatory status.\n\nOverall, the data are of great interest and the technical methods are sound. Some methodological choices and selective reporting of results weaken the validity of the conclusions at this stage.\n\n\u2013 The sole focus on WHR is not well justified. Although BMI and WHR share a large proportion of the variance, the correlation is only r = 0.428. Furthermore, the supplementary figures show that the association between MRI and BMI varies much more by gender than WHR. Please point out in the manuscript that WHR is primarily a measure of central, i.e. visceral obesity, which is metabolically less favourable but also has gender differences, and discuss the choice of predictor more thoroughly. It would be even more interesting if both measures could be analysed, as WHR may be more closely associated with low-grade inflammation than BMI.\n\n\u2013 The motivation to study the specific measures of microstructure is insufficiently justified. The stated motivation does not go far beyond stating that \"no one has done this before\" and that these metrics were most strongly correlated with WHR, i.e. 'To address this potential redundancy, we performed a preliminary correlational analysis of all 6 MRI metrics with WHR then focused our subsequent analyses on ICVF and ISOVF, the two complementary MRI metrics that were most strongly associated with WHR.' Please explain in more detail what these metrics contribute in addition to the other metrics reported in the literature.\n\n\u2013 Are the 'distinct brain phenotypes' present in the same individuals or do they represent different subgroups?\n\n\u2013 What does it mean that 'The maps of ISOVF~WHR and ICVF~WHR were negatively correlated with r = -0:366'? This indicates that these systems (or the underlying measures/analyses) are not independent. How can this be explained? Does this not weaken the interpretation of differential association?\n\n\u2013 Why was GM but not cortical thickness included in the MRI measurements? This would be informative as results have already been published on the relationship between cortical thickness and obesity.\n\n\u2013 What does it mean that \"taste receptor activity is under-represented in the enrichment analysis for one but positively enriched in the analysis for the other MRI marker? If both are valid findings, please report both and not selectively report one.\n\n\u2013 Have inflammatory markers been investigated? For example, if IL-6 was associated with MRI markers in the same way as WHR, this would support the authors' interpretation of the data.\n\nReviewer #2 (Recommendations for the authors):\n\nStrengths\n\nThe article takes an expansive, whole-brain approach to addressing the question of interest. While the methodology is simple (i.e., correlations), the rigor of the statistical method ensures that some of the results are plausible and are likely to be replicated. While I disagree with the range of techniques used, there is a comprehensive quality to them which for some reviewers and readers will be impressive.\n\nFinally, the figures are all high-quality and very well made, though incorrect or overreaching elements do cloud this otherwise rosy picture.\n\nWeaknesses\n\nIn the introduction, the authors take a straightforward approach to address what is terrible literature, as I describe at length in a previous article. There are inconsistencies in how the brain is assessed, measures that are used to gauge obesity, the wide variance in sample size, poor statistical analysis of many brain regions, and so on. It is much less \"pat\" than the authors describe, and they really need to spend more time describing the non-significant and inconsistent findings over several brain regions described. The transition to discussing DTI is also incomplete. Finally, I think it is odd to examine 180 cortical regions in a systematic fashion, rather than limiting analyses to larger regions and focusing on smaller regions based on initial analyses. This approach is faulty and prone to error, one which is exacerbated by FDR which looks great on paper but in practice is highly prone to type 1 error given enough comparisons.\n\nFor methods, describe the final sample size in the main article. Do not relegate it to supplemental, as the sample size is really around 31,500 instead of 34,000 for most indices. I do not understand why people with high CRP values were excluded, yet scans were kept with participants that had all-cause dementia, heart failure, stroke, and a variety of other conditions that reliably show differences in the frontal lobe and other volumes. Only one scanner is described for UK Biobank but this is not correct. Three scanners were used, as described later on in the analysis pipeline. While the site can be added as a covariate, some studies looking at the effect of scanner units have been done and should be included. The use of the Allen Brain Atlas for gene expression data is unwise. Last I checked, a literal few participants in the same age range as the UK Biobank participants had been scanned using this technique.\n\nFor results, BMI is not a good representation of central obesity and should be ignored. That it is relegated to supplemental is wise. WHR is better, but a correlation of r=0.428 is not \"strong.\" It is a small-moderate effect size and should be treated appropriately. I find the use of volumetrics, DTI, and DTI-NODDI to be strange. For each region, technically, there should be 4 standard DTI metrics and 3 NODDI metrics.\n\nFigure 1 is slick. I do not see the point of having a correlation matrix like Figure 1a. For Figures 1b and 1c, as well as Figures 1d and 1e, what I am struck by is the small correlation found in the areas that show the strongest association. That higher WHR is related to greater ICVF in the hippocampus is important, for example, but a correlation of 0.32 is hardly something to worry about. I demand a range of correlation matrices besides what looks best. Further, I find the associations with the occipital lobe hard to believe. This region rarely shows significant associations with obesity. Likewise, I find the frontal and in particular prefrontal areas showing no association to be surprising. In comparing all participants aged 40-70 years, perhaps comparisons by binned age groups would be better.\n\nI do not see the point of using the Allen Brain Atlas, as described. It is not only non-representative of gene expression given its very small sample size, but a lack of suitability to the British population versus the handful of younger to a literal few older Americans used to make the maps. Use Bonferroni correction to truly take into account the number of comparisons made and get back to me. What I most strongly object to is the lack of actual metrics (i.e., r, R^2, Cohen's D, etc.) describing any of the correlations. We are shown plots but are not given correlations in many cases (e.g., Figure 4). This makes for more slick figures, but to what end and for what purpose? I am not going to win over by glam and type-setting.\n\nThe discussion is off-putting. To be clear, the authors focused on two DTI-NODDI indices and relegated three other metrics to supplemental because they were less impressive. This is not a hypothesis. There was no a priori determination that ISOVF and ICVF would show impressive results. This was the result of an FDR-corrected smorgasbord of analyses that the authors hoped would win over reviewers because of how nice everything looked. I do machine learning and limited computational biology techniques every day. I am not impressed. The rest of the discussion is based on a corpus of findings that are either not appropriate (e.g., Allen Brain Atlas) or many series of FDR-corrected findings that I do not believe.\n\n[Editors\u2019 note: what follows is the reviewers\u2019 response to the second round of review.]\n\nReviewer #3 (Recommendations for the authors):\n\nKitzbichler et al. performed a large-scale study using UK Biobank data to explore the relationship between brain tissue microstructure and obesity. The authors uncover two coupled yet distinct brain systems mediating relationships between free water and neurite density as markers of inflammation with the genes enriched for innate immunity and specific neurotransmitter receptors. This paper offers an innovative and expansive approach to understanding the genetic factors, neurotransmitters, and potential mechanisms underlying observed alterations in cortical thickness and gray matter volume in obesity. The scope of the work goes well beyond most neuroimaging analyses and reveals coherent patterns linking neurite density and free water to relevant neuroinflammatory and neurotransmitter pathways.\n\nStrengths of the paper include the use of a large and well-substantiated human dataset alongside rigorous, albeit limited, gene expression data derived from the Allen Brain Atlas. The GWAS analyses are well integrated and provide insights into the impact of genetic variation on associations between gray matter microstructure and obesity, thereby offering a more comprehensive understanding of the observed relationships. While it would be helpful to include additional data to support the interpretations, the manuscript presents a sufficiently comprehensive body of evidence to indicate the presence of distinct brain systems mediating the effect of obesity on brain tissue microstructure and macrostructure.\n\nThe results support an intriguing mechanistic model in which neurite density in the medial temporal-occipital-striatal system may contribute to obesity, while free water in the prefrontal-temporal striatal system may reflect the consequences of obesity mediated by innate immune system function. The findings provide evidence that microstructural imaging measures derived from diffusion MRI may offer more specific insights into the biological mechanisms underlying previously observed alterations in cortical thickness and gray matter volume in obesity. The work offers a notable advance in understanding the link between obesity, neuroinflammation, and alterations in brain tissue microscopic structure and provides a framework for deriving further mechanistic insights through this approach that may be applied to other neurological diseases and systemic disorders.\n\nThe authors have addressed the critiques from the previous round of review thoroughly. All major criticisms have been mitigated by additional data and appropriate responses. While the critiques from the second reviewer were phrased strongly, the authors have done their best to address the most salient comments objectively. As a result, the revisions to the manuscript have greatly strengthened its presentation and provide a more comprehensive and well-reasoned paper.\n",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fdea6fb7-9da2-4cfc-a051-f7cc10224b0e",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C1",
+      "claim": "The worldwide prevalence of obesity has more than doubled in the last thirty years.",
+      "claim_type": "EXPLICIT",
+      "source": "the worldwide prevalence of obesity has more than doubled in the last thirty years, making it one of the most important global public health challenges (Yatsuya et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yatsuya et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "b834de29-0aa0-41b2-ab17-e52f125cb2ed",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C2",
+      "claim": "Obesity is a preventable risk factor for cardiovascular and metabolic disorders such as heart disease and type-2 diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "Obesity has long been recognised as a preventable risk factor for cardiovascular and metabolic disorders such as heart disease and type-2 diabetes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific consensus",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "2e40a63c-a2b6-4353-a91b-0fedd781646d",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C3",
+      "claim": "Obesity is an important risk factor for neurodegenerative disorders, linked to both an increased risk of dementia and accelerated age-associated cognitive decline.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, it has also emerged as an important risk factor for neurodegenerative disorders, linked to both an increased risk of dementia and accelerated age-associated cognitive decline (Sellbom and Gunstad, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sellbom and Gunstad, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "316221ba-b45e-4919-b3b1-cfc3d0304963",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C4",
+      "claim": "Obesity is defined as the excessive accumulation of adipose tissue in the body.",
+      "claim_type": "EXPLICIT",
+      "source": "Defined as the excessive accumulation of adipose tissue in the body (Gonz\u00e1lez-Muniesa et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gonz\u00e1lez-Muniesa et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "bbee6d0e-11af-4d1b-9594-3153c0500e4e",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C5",
+      "claim": "Studies investigating effects of obesity on the brain have focused almost exclusively on macroscopic aspects of brain structure such as total grey matter volume and cortical thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, cross-sectional and longitudinal studies investigating effects of obesity on the brain have focused almost exclusively on macroscopic aspects of brain structure such as total grey matter volume and cortical thickness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on review of existing literature",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "ab61aa89-1f9c-4cf4-b871-39476ca2ceec",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C6",
+      "claim": "Results in the field of obesity and brain structure were often contradictory, with studies tending to report lower gray matter volume in relation to obesity, but some also observing null or positive associations.",
+      "claim_type": "EXPLICIT",
+      "source": "Results in this field were often contradictory: although studies tended to report lower gray matter volume in relation to obesity, some have also observed null or positive associations as described in a meta-analysis by Garc\u00eda-Garc\u00eda et al., 2019",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Garc\u00eda-Garc\u00eda et al., 2019 meta-analysis",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "962342e5-48e7-4679-bde2-fd7152fcd634",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C7",
+      "claim": "The likely reasons for contradictory results in obesity-brain studies were heterogeneities in brain and obesity metrics, a wide variation in sample size, and poor statistical methodology.",
+      "claim_type": "EXPLICIT",
+      "source": "as described in a meta-analysis by Garc\u00eda-Garc\u00eda et al., 2019, who noted that the likely reasons for this were heterogeneities in brain and obesity metrics, a wide variation in sample size, and poor statistical methodology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Garc\u00eda-Garc\u00eda et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "ae7e818c-7d37-4edd-973b-a93b3b08af1c",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C8",
+      "claim": "The emerging consensus indicates that studies are reporting negative associations between obesity (particularly visceral obesity indexed by waist to hip ratio: WHR) and (smaller) total grey matter volume.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the emerging consensus indicates that typically studies are reporting negative associations between obesity (particularly visceral obesity indexed by waist to hip ratio: WHR) and (smaller) total grey matter volume (Cox et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cox et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "0ce8f4f8-0b13-4246-9518-f81a9cc13c13",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C9",
+      "claim": "The emerging consensus indicates that studies are reporting negative associations between obesity and (thinner) cortical thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the emerging consensus indicates that typically studies are reporting negative associations between obesity (particularly visceral obesity indexed by waist to hip ratio: WHR) and (smaller) total grey matter volume (Cox et al., 2019) and (thinner) cortical thickness (Caunca et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Caunca et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "2ae76e4f-aa44-4e27-9157-f1896fbed7e2",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C10",
+      "claim": "The negative association between body mass index (BMI) and global grey matter volume has been substantiated in a recent large-scale study conducted in the UK Biobank involving 9652 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, this negative association between body mass index (BMI) and global grey matter volume has been substantiated in a recent large-scale study conducted in the UK Biobank involving 9652 participants (Hamer and Batty, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hamer and Batty, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "e51fd018-8fa2-4894-be3d-fd7e94ac9b42",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C11",
+      "claim": "Recent meta-analysis of voxel-based morphometry studies, including data from 5882 participants and a mega-analysis of 6,420 participants from the ENIGMA MDD working group, have identified a consistent association of obesity with reductions in grey matter volume and cortical thickness in the medial prefrontal and orbitofrontal cortex and the temporal pole.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent meta-analysis of voxel-based morphometry studies, including data from 5882 participants and a mega-analysis of 6,420 participants from the ENIGMA MDD working group, have also identified a consistent association of obesity with reductions in grey matter volume and cortical thickness in the medial prefrontal and orbitofrontal cortex and the temporal pole (Garc\u00eda-Garc\u00eda et al., 2022; Opel et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Garc\u00eda-Garc\u00eda et al., 2022 and Opel et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "b5631617-ae03-4bf2-a7fc-e540feffdc8b",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C12",
+      "claim": "Franz et al. showed that by the age of 64 years, participants whose BMI steadily increased over forty years had thinner cortex in several frontal and temporal brain regions compared to those whose BMI was stable.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Franz et al. showed that by the age of 64 years, participants whose BMI steadily increased over forty years had thinner cortex in several frontal and temporal brain regions compared to those whose BMI was stable (Franz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Franz et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "8ae7f8ba-2fc7-46b0-8422-e3ac55d82b3b",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C13",
+      "claim": "Longitudinal studies have shown associations between age-associated increases in BMI and grey matter reductions in the medial temporal lobe (entorhinal cortex and hippocampus) and cingulate cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Other longitudinal studies have shown associations between age-associated increases in BMI and grey matter reductions in the medial temporal lobe (entorhinal cortex and hippocampus) and cingulate cortex (Arnoldussen et al., 2019; Bobb et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Arnoldussen et al., 2019 and Bobb et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "4535f62c-061e-42bd-abbf-065d233ce906",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C14",
+      "claim": "There is a significant age-by-obesity interaction on cortical thickness driven by lower thickness in older participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the finding (Opel et al., 2021) of a significant age-by-obesity interaction on cortical thickness driven by lower thickness in older participants",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Opel et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "22524d7c-6e3a-4fdb-b6ab-fe6983e5dc63",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C15",
+      "claim": "The negative impact of obesity on the brain accumulates over time.",
+      "claim_type": "EXPLICIT",
+      "source": "this suggests that the negative impact of obesity on the brain accumulates over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from longitudinal studies and age-by-obesity interaction findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "b0cff8c4-39e5-4c17-99e6-1c79ddcfb0c2",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C16",
+      "claim": "There is robust evidence for an association between obesity and macro-structural features of brain anatomy such as grey matter volume and cortical thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these studies provide robust evidence for an association between obesity and macro-structural features of brain anatomy such as grey matter volume and cortical thickness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on synthesis of multiple cited studies",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "ef82927b-952a-4b63-a9ca-5f722b8f7863",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C17",
+      "claim": "Our understanding of the microstructural features that underpin the relationship between obesity and brain structure remain largely unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, changes in grey matter volume and cortical thickness can be driven by multiple different underlying processes and our understanding of the microstructural features that underpin this relationship remain largely unknown (Westwater et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Westwater et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "fb5303e9-8b3f-4c06-a94f-e9650b0f4245",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C18",
+      "claim": "It is currently not known whether obesity-associated differences in grey matter volume relate to changes in the size, shape or number of neurons, neurite density or orientation dispersion, or alternately to differences in tissue water content.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it is currently not known whether obesity-associated differences in grey matter volume relate to changes in the size, shape or number of neurons e.g. neurite density or orientation dispersion within that region or alternately to differences in tissue water content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about current knowledge gap",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "15134d01-9ab1-4bb4-94e2-b519f4699b1c",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C19",
+      "claim": "Studies investigating associations of obesity with brain microstructure have focused on white matter.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, the only studies to have investigated associations of obesity with brain microstructure have focused on white matter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Review of existing literature",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "e472baa4-54c3-465c-9bdf-4461d9a41acc",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C20",
+      "claim": "Studies have identified obesity-associated differences in white matter including obesity-related increases in white matter water content, reduced myelination, and lower fractional anisotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these have identified obesity-associated differences in a number of different microstructural features of white matter including (1) obesity-related increases in white matter water content, (2) reduced myelination, and (3) lower fractional anisotropy (Zhang et al., 2018; Kullmann et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Zhang et al., 2018 and Kullmann et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "d1548318-48bb-4338-ae0e-2864b8342120",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C21",
+      "claim": "Whether comparable differences in cortical and subcortical grey matter micro-structure can be observed with obesity are yet to be reported.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whether comparable differences in cortical and subcortical grey matter micro-structure can be observed with obesity are yet to be reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about current knowledge gap",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "87e58029-9afe-488a-bb43-27d19c076250",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C22",
+      "claim": "The study used data from approximately 30,000 participants in the UK Biobank MRI cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that obesity would be associated with diffusion-MRI measures of grey matter tissue microstructure at 180 cortical regions and 8 subcortical structures (bilaterally) produced using neurite orientation dispersion and density imaging (NODDI) modelling of data from \u223c30,000 participants in the UK Biobank MRI cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study sample",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "c0ef1bc5-11c6-4368-a759-9bca793857b2",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C23",
+      "claim": "NODDI requires data collected at multiple different diffusion weightings (shells).",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike conventional diffusion MRI which models data acquired at a single diffusion weighting (shell), NODDI requires data collected at multiple different diffusion weightings (shells)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of NODDI methodology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "3637e21f-6123-434a-88e2-12e2d2f59c7d",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C24",
+      "claim": "In the NODDI model, diffusion is modelled as isotropic in free water, restricted within neurites, and hindered in the extracellular space.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, diffusion is modelled as isotropic in free water, restricted within neurites, and hindered in the extracellular space",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of NODDI model",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "004279d4-89e4-458d-ae4a-b4a9bc1ea322",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C25",
+      "claim": "Intracellular Volume Fraction (ICVF) captures the volume fraction occupied by neurites (axons and dendrites) but not cell bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellular Volume Fraction (ICVF), which captures the volume fraction occupied by neurites (axons and dendrites) but not cell bodies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition of ICVF metric",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "145b6d8f-252a-4c94-bdb5-e368be2f4f08",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C26",
+      "claim": "Orientation Dispersion Index (OD) captures the spatial distribution of neurites.",
+      "claim_type": "EXPLICIT",
+      "source": "Orientation Dispersion Index (OD), which captures the spatial distribution of these processes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition of OD metric",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "b2a4dd23-dce8-411b-a2f5-c9b733ddc765",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C27",
+      "claim": "Isotropic volume fraction (ISOVF) provides a measure of free water index.",
+      "claim_type": "EXPLICIT",
+      "source": "isotropic volume fraction (ISOVF), which provides a measure of free water index.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition of ISOVF metric",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "f1a9e552-92a9-45b9-89a8-80a354761aaf",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C29",
+      "claim": "FA, OD, and ICVF metrics of neurite density were more strongly correlated with each other than with ISOVF.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, FA, OD, and ICVF metrics of neurite density were more strongly correlated with each other than with ISOVF",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in correlation matrix Figure 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "80aec4f3-19a3-440c-a57a-4b1745ef43ea",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C30",
+      "claim": "ISOVF is typically interpreted as a marker of tissue free water rather than cytoarchitectonics.",
+      "claim_type": "EXPLICIT",
+      "source": "which is typically interpreted as a marker of tissue free water rather than cytoarchitectonics (Kamiya et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kamiya et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "bafba275-f048-43b0-8687-2d282ea7d0e3",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C31",
+      "claim": "Tissue free water (ISOVF) was significantly positively correlated with WHR (FDR = 5%) in 136 bilateral regions, concentrated in a prefrontal-temporal-striatal system.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue free water (ISOVF) was significantly positively correlated with WHR (FDR = 5%) in 136 bilateral regions, concentrated in a prefrontal-temporal-striatal system comprising the prefrontal cortex (37 regions), superior temporal (primary auditory) cortex (21 regions), basal ganglia (caudate, putamen, pallidum, accumbens), hypothalamus and thalamus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis results shown in Figure 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "6500f978-c983-48ea-94ae-d3085a62cc57",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C32",
+      "claim": "The anatomical pattern of ISOVF~WHR has been activated by tasks involving reward, auditory and musical functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Referencing a database of prior task-related fMRI studies, this anatomical pattern of fMRI activations has been activated by tasks involving reward, auditory and musical functions (see Appendix 2\u2014figure 3b, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reference to prior fMRI task database and supplementary figure",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "c5c5e18a-5167-4e11-838e-7fb96dcfca36",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C33",
+      "claim": "There were areas of significant negative correlation between ISOVF and WHR in the lateral and medial secondary visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "There were also some areas of significant negative correlation between ISOVF and WHR in the lateral and medial secondary visual cortex (see Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "a912976d-f73b-402a-a675-2de9ee9901b1",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C34",
+      "claim": "Neurite density (ICVF) was significantly positively correlated with WHR (FDR = 5%) in 152 bilateral regions concentrated in a medial temporal-occipital-striatal system.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, neurite density (ICVF) was significantly positively correlated with WHR (FDR = 5%) in 152 bilateral regions concentrated in a medial temporal-occipital-striatal system comprising medial and lateral occipital cortex (26 regions), medial temporal lobe (hippocampus and amygdala), basal ganglia (putamen, pallidum, accumbens), hypothalamus and thalamus (see Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis results shown in Figure 1d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "9dfb1133-8f8e-43b3-b1d7-546062b36f11",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C35",
+      "claim": "The anatomical pattern of ICVF~WHR has previously been activated by fMRI tasks involving episodic memory and navigation.",
+      "claim_type": "EXPLICIT",
+      "source": "This anatomical pattern has previously been activated by fMRI tasks involving episodic memory and navigation (see Appendix 2\u2014figure 3d, e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reference to prior fMRI task database and supplementary figure",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "e54987fd-4a76-4ad4-bd4e-3265a3bcb189",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C37",
+      "claim": "Obesity is associated with coupled but anatomically distinct changes in measures of brain water and neurite density.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that obesity is associated with coupled but anatomically distinct changes in measures of brain water and neurite density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from negative correlation between ISOVF~WHR and ICVF~WHR maps",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "ea597948-1795-42ad-bc0e-b1753dc3935e",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C38",
+      "claim": "The tissue water content map (ISOVF~WHR) was significantly positively co-located with 1,031 gene transcripts and significantly negatively co-located with 1140 transcripts (FDR = 5%; spin permutation corrected).",
+      "claim_type": "EXPLICIT",
+      "source": "The tissue water content map (ISOVF~WHR) was significantly positively co-located with 1,031 gene transcripts and significantly negatively co-located with 1140 transcripts (FDR = 5%; spin permutation corrected).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of gene expression co-location",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "e8578f49-8fd8-49f3-b82b-f57befc51512",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C39",
+      "claim": "The most under-represented process in ISOVF~WHR enrichment analysis was 'response to interleukin-6'.",
+      "claim_type": "EXPLICIT",
+      "source": "The most under-represented process was 'response to interleukin-6'",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Gene ontology enrichment analysis results shown in Figure 2a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "8463142d-c74a-46f9-870c-f3fca32ac492",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C40",
+      "claim": "The most enriched process in ISOVF~WHR enrichment analysis was 'pattern recognition receptor activity'.",
+      "claim_type": "EXPLICIT",
+      "source": "and the most enriched process was 'pattern recognition receptor activity', both processes linked to the innate immune system.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Gene ontology enrichment analysis results shown in Figure 2a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "f5c9a2f1-b8b8-43b8-8af4-576b44a45db9",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C41",
+      "claim": "The neurite density map (ICVF~WHR) was significantly positively co-located with 1,242 gene transcripts and significantly negatively co-located with 1354 transcripts (FDR = 5%; spin permutation corrected).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the neurite density map (ICVF~WHR) was significantly positively co-located with 1,242 gene transcripts and significantly negatively co-located with 1354 transcripts (FDR = 5%; spin permutation corrected).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of gene expression co-location",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "fdafa275-0c94-488c-ba7b-aba1ab616918",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C42",
+      "claim": "The most negatively enriched process in ICVF~WHR enrichment analysis was 'peptidyl-asparagine modification'.",
+      "claim_type": "EXPLICIT",
+      "source": "The most negatively enriched process was 'peptidyl-asparagine modification'",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Gene ontology enrichment analysis results shown in Figure 2b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "545a0374-db7d-4e8c-a2f3-998250717067",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C43",
+      "claim": "The most positively enriched process in ICVF~WHR enrichment analysis was 'taste receptor activity'.",
+      "claim_type": "EXPLICIT",
+      "source": "and the most positively enriched process was 'taste receptor activity'.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Gene ontology enrichment analysis results shown in Figure 2b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "d754bae4-b655-4365-b702-19b30a348ffb",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C45",
+      "claim": "The gene transcripts spatially co-located with ISOVF~WHR and ICVF~WHR maps are coupled but biologically distinct.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the gene transcripts spatially co-located with ISOVF~WHR and ICVF~WHR maps are coupled but biologically distinct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from negative correlation of gene expression weights",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "eb37f0d2-d116-4385-aab8-68e5e84f75f0",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C46",
+      "claim": "The prefrontal-temporal-striatal system where ISOVF was positively correlated with WHR was co-located with gene transcripts enriched for innate immune and metabolic processes.",
+      "claim_type": "EXPLICIT",
+      "source": "The prefrontal-temporal-striatal system where ISOVF was positively correlated with WHR was co-located with gene transcripts enriched for innate immune and metabolic processes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of gene ontology enrichment results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "929fef83-71d5-47e1-852f-c655b418bc14",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C47",
+      "claim": "The medial temporal-occipital-striatal system where ICVF was positively correlated with WHR was co-located with transcripts enriched for 'G-protein coupled receptor signalling', 'fatty acid derivative binding', and 'glutamate receptor activity'.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the medial temporal-occipital-striatal system where ICVF was positively correlated with WHR was co-located with transcripts enriched fo 'G-protein coupled receptor signalling', 'fatty acid derivative binding', and 'glutamate receptor activity'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of gene ontology enrichment results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "fef856f6-b6d5-45e0-a9d4-80c9beda0d9a",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C48",
+      "claim": "The prefrontal-temporal-striatal system (ISOVF~WHR) was significantly (positively) co-located with the atlas distribution of five neurotransmitter receptors/transporters: 5HTT, serotonin transporter; D1, dopamine receptor; H3, histamine receptor; Mu, opioid receptor; and VAChT, acetyl-choline transporter.",
+      "claim_type": "EXPLICIT",
+      "source": "The prefrontal-temporal-striatal system (ISOVF~WHR) was significantly (positively) co-located with the atlas distribution of five neurotransmitter receptors/transporters: 5HTT, serotonin transporter; D1, dopamine receptor; H3, histamine receptor; Mu, opioid receptor; and VAChT, acetyl-choline transporter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of neurotransmitter receptor co-location shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "31a79242-23af-4986-bc3b-fffe507f6ad8",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C49",
+      "claim": "The medial temporal-occipital-striatal system (ICVF~WHR) was significantly (negatively) co-located with four neurotransmitter receptors/transporters: H3 histamine receptor; Mu opioid receptor; CB1 cannabinoid receptor; and A4B2, \u03b14, \u03b22 nicotinic acetyl-choline receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the medial temporal-occipital-striatal system (ICVF~WHR) was significantly (negatively) co-located with four neurotransmitter receptors/transporters: H3 histamine receptor; Mu opioid receptor; CB1 cannabinoid receptor; and A4B2, \u03b14, \u03b22 nicotinic acetyl-choline receptor.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of neurotransmitter receptor co-location shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "6db42d19-d808-49e9-8a4a-f16ff0b6d89d",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C50",
+      "claim": "The mu opioid receptor distribution was the most strongly correlated with both ISOVF~WHR and ICVF~WHR, but with opposite signs of association.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the mu opioid receptor distribution was the most strongly correlated with both ISOVF~WHR and ICVF~WHR, but with opposite signs of association",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of neurotransmitter receptor co-location shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "0491f516-4fe7-45b5-b9b8-fd04fb5ecac6",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C51",
+      "claim": "Regions where WHR correlated with neurite density typically expressed low mu opioid receptor density, whereas regions showing correlations between WHR and tissue water content typically expressed high mu opioid receptor density.",
+      "claim_type": "EXPLICIT",
+      "source": "meaning that regions where WHR correlated with neurite density typically expressed low mu opioid receptor density, whereas regions showing correlations between WHR and tissue water content typically expressed high mu opioid receptor density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of neurotransmitter receptor co-location results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "cd133ccf-72e7-4616-87c6-f22f807df19f",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C52",
+      "claim": "The ISOVF~WHR map was significantly (positively) co-located with the atlas distribution of three glial cell classes: astrocytes, oligodendrocyte progenitor cells, and microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "The ISOVF~WHR map was significantly (positively) co-located with the atlas distribution of three glial cell classes: astrocytes, oligodendrocyte progenitor cells, and microglia.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of cell-type co-location shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "354225fc-a9da-4074-aeff-b721efaea5ba",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C53",
+      "claim": "The ICVF~WHR map was not significantly co-located with any specific cell-type distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The ICVF~WHR map was not significantly co-located with any specific cell-type distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of cell-type co-location",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "c0f40e0f-4dc2-4424-9a19-37f8ae0ebd2d",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C56",
+      "claim": "The genetic correlation results indicate shared effects of genetic variation on obesity (WHR) and neurite density (ICVF), but no shared genetic effects on obesity and brain water content (ISOVF).",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate shared effects of genetic variation on obesity (WHR) and neurite density (ICVF), but no shared genetic effects on obesity and brain water content (ISOVF).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of genetic correlation results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "295ed2bb-8844-480a-8723-de0d1dc883ed",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C59",
+      "claim": "Obesity is associated with coupled changes in two micro-structural MRI metrics (ISOVF, free water; and ICVF, neurite density) in two anatomically, transcriptionally and neurobiologically differentiated brain systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have reported evidence, consistent with our first hypothesis, that obesity is associated with coupled changes in two micro-structural MRI metrics (ISOVF, free water; and ICVF, neurite density) in two anatomically, transcriptionally and neurobiologically differentiated brain systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of main findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "3efcca89-ff24-4165-971f-dc757871592d",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C60",
+      "claim": "The two distinct brain phenotypes have different genetic relationships with obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "We have also reported genetic correlation analysis that was consistent with our secondary hypothesis, that these two distinct brain phenotypes have different genetic relationships with obesity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of genetic correlation findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "24b60402-1a0a-4df7-8cfd-15b1392f19b6",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C61",
+      "claim": "Previous well-powered studies have identified associations between obesity and a pattern of reduced grey matter volume or cortical thickness centred on fronto-temporal cortex and sub-cortical structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous well-powered studies have identified associations between obesity and a pattern of reduced grey matter volume or cortical thickness centred on fronto-temporal cortex and sub-cortical structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Review of prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "0513d880-11a0-4d11-bfdb-97f42767affa",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C62",
+      "claim": "Positive scaling of WHR and tissue water content (i.e. oedema) was most pronounced within frontal and temporal cortices and subcortical structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to previously reported associations with brain grey matter macrostructure, positive scaling of WHR and tissue water content (i.e. oedema) was most pronounced within frontal and temporal cortices and subcortical structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of ISOVF~WHR findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "2e69a239-60b8-42fb-9e86-165ef61827dd",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C63",
+      "claim": "More obese individuals have higher neurite density in posterior compared to anterior brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we observed a more anterior-posterior pattern of association between WHR and neurite density, with more obese individuals having higher neurite density in posterior compared to anterior brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of ICVF~WHR findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "c29ccae2-c417-41da-a27b-d0f72ca99c98",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C64",
+      "claim": "Regions where WHR was more tightly linked to tissue water content had greater expression of pattern recognition receptors (PRR) and receptors for binding fatty acid derivatives.",
+      "claim_type": "EXPLICIT",
+      "source": "By relating obesity associated grey matter microstructure maps to gene expression data from the Allen Brain Atlas, we show that regions where WHR was more tightly linked to tissue water content had greater expression of pattern recognition receptors (PRR) and receptors for binding fatty acid derivatives",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Gene expression co-location analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "16f75328-b5cd-42a2-98b2-808a27680510",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C65",
+      "claim": "Regions where WHR was more tightly linked to tissue water content had reduced expression of genes associated with biological processes linked to interleukin-6 (IL-6) responses.",
+      "claim_type": "EXPLICIT",
+      "source": "and reduced expression of genes associated with biological processes linked to interleukin-6 (IL-6) responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Gene expression co-location analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "f9439053-4866-4f23-a909-60afdec94723",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C66",
+      "claim": "Regions where WHR was more tightly linked to tissue water content were richer in astrocytes, microglia and oligodendrocyte precursor cells but not any class of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these regions were also richer in astrocytes, microglia and oligodendrocyte precursor cells but not any class of neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cell-type co-location analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "95a3f64f-91a3-446f-b047-6c29016c9c7d",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C67",
+      "claim": "Regions where WHR was more tightly linked to tissue water content had high concentrations of histamine (H3), mu-opioid, D1, and 5HTT receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "and had high concentrations of some but not all neurotransmitter receptors or transporters tested, for example, histamine (H3), mu-opioid, D1, and 5HTT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Neurotransmitter receptor co-location analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "ef9d5ff3-c525-479c-bccd-d4218db1c4da",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C68",
+      "claim": "The medial temporal-occipital-striatal system where obesity was associated with increased neurite density was co-located with expression of transcripts positively enriched for taste receptor activity and lower fatty acid binding, glutamate receptor activity and other biological processes linked to protein kinase C-activating G-protein-coupled receptor signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the medial temporal-occipital-striatal system where obesity was associated with increased neurite density was co-located with expression of transcripts positively enriched for taste receptor activity and lower fatty acid binding, glutamate receptor activity and other biological processes linked to protein kinase C-activating G-protein-coupled receptor signalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Gene expression co-location analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "2bb3d5be-2e36-4561-a33d-bc6406d6d0ef",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C69",
+      "claim": "Regions showing the greatest positive scaling between neurite density and WHR showed relatively low expression of receptors linked to feeding, appetite, and energy expenditure (H3, Mu, CB1, and A4B2).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this system was not co-located with any specific cell class but it was co-located with specific neurotransmitter receptor maps including H3, Mu, CB1, and A4B2, meaning that regions showing the greatest positive scaling between neurite density and WHR showed relatively low expression of receptors linked to feeding, appetite, and energy expenditure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Neurotransmitter receptor co-location analysis results with interpretation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "d975363c-10d5-4366-ba48-493af6997fce",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C70",
+      "claim": "ISOVF and ICVF are weakly correlated (i.e. independent) markers of free water and neurite density, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "ISOVF and ICVF are weakly correlated (i.e. independent) markers of free water and neurite density, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on correlation analysis shown in Figure 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "1eab4f61-43ae-44e8-abd7-413247e6a6bd",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C71",
+      "claim": "Both ISOVF and ICVF are significantly and mostly positively correlated with WHR in brain systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Both are significantly and mostly positively correlated with WHR in brain systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of main findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "91cf7c42-d932-43f6-9527-55252d87c4e4",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C72",
+      "claim": "Obesity-related differences in ISOVF and ICVF were coupled (negatively correlated) but also anatomically, transcriptionally, and neurobiologically differentiated from each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Obesity-related differences in ISOVF and ICVF were coupled (negatively correlated) but also anatomically, transcriptionally, and neurobiologically differentiated from each other (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings across multiple analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "1ddf9baa-238b-4bb2-bfb6-8e1130fd0f90",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C73",
+      "claim": "The changes in brain water associated with obesity could represent an effect of obesity on the brain (WHR\u2192ISOVF).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it is conceivable that the changes in brain water associated with obesity could represent an effect of obesity on the brain, that is WHR\u2192ISOVF",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "6650dac0-4f61-4eec-bc8f-d367efcb3efe",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C74",
+      "claim": "The obesity-related changes in neurite density could represent an effect of the brain on obesity (ICVF\u2192WHR).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the obesity-related changes in neurite density could represent an effect of the brain on obesity, that is ICVF\u2192WHR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "6ac2c9c8-0323-4dfd-9038-c9790ecc5bc9",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C75",
+      "claim": "Obesity is usually caused by changes in eating behaviour and physical activity, which are controlled by brain systems enriched for opioid, dopamine and cannabinoid receptor-mediated signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Obesity is usually caused by changes in eating behaviour and physical activity, which are controlled by brain systems enriched for opioid, dopamine and cannabinoid receptor-mediated signalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "80400444-02d0-4e25-b2b8-cbf7f8291b32",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C76",
+      "claim": "Changes in the brain, indexed by neurite density, could conceivably cause adipogenic eating behaviours and thus obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "So changes in the brain, indexed by neurite density, could conceivably cause adipogenic eating behaviours and thus obesity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on known mechanisms",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "17eb828c-6346-46be-bd7f-b50cec7a9b4c",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C77",
+      "claim": "Obesity causes a pro-inflammatory state systemically.",
+      "claim_type": "EXPLICIT",
+      "source": "Obesity in turn causes a pro-inflammatory state systemically",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "1618d4a4-04c9-4af1-958d-479a12cd153b",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C78",
+      "claim": "Blood concentrations of CRP, IL-6 and other cytokines have previously been associated with changed (increased) micro-structural MRI metrics of free water.",
+      "claim_type": "EXPLICIT",
+      "source": "and blood concentrations of CRP, IL-6 and other cytokines have previously been associated with changed (increased) micro-structural MRI metrics of free water (Kitzbichler et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kitzbichler et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "4a99a0a3-a54e-4f2b-92c2-1b848da6f2e9",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C79",
+      "claim": "Inflammation could potentially mediate effects of obesity on the brain tissue water content.",
+      "claim_type": "EXPLICIT",
+      "source": "So inflammation could potentially mediate effects of obesity on the brain tissue water content (see also Turkheimer et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation supported by citation to Turkheimer et al., 2022",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "9a230223-d5a7-41d8-8292-a18b47dc148c",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C80",
+      "claim": "The finding that the CRP-WHR map correlation is significantly stronger for the ISOVF maps than the ICVF maps is consistent with the hypothesis that inflammation mediates effects of obesity on brain water content.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that the CRP-WHR map correlation is significantly stronger for the ISOVF maps than the ICVF maps would be consistent with this hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from CRP analysis results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "a8212713-2b90-4df0-af2c-f4f0736a9dd0",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C81",
+      "claim": "Transcripts co-located with ISOVF~WHR were enriched for IL6 and pattern recognition receptors (PRRs), both implicated in innate immune signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "we found that transcripts co-located with ISOVF~WHR were enriched for IL6 and pattern recognition receptors (PRRs), both implicated in innate immune signalling",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Gene ontology enrichment analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "7ee253b0-ef29-4ab5-b1e3-7706bed5fbba",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C82",
+      "claim": "Transcripts co-located with ICVF~WHR were enriched for taste receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas transcripts co-located with ICVF~WHR were enriched for taste receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Gene ontology enrichment analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "8a835cc4-ac7c-4918-9be6-4ac44d9b2a44",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C83",
+      "claim": "Changes in neurite density associated with obesity might reflect primary brain changes in taste sensation and reward processing that drive consummatory behaviours leading to obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern of results is consistent with the model that changes in neurite density associated with obesity might reflect primary brain changes in taste sensation and reward processing that drive consummatory behaviours leading to obesity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of gene ontology results",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "641420c4-87e8-4bd3-953b-6ae982743c53",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C84",
+      "claim": "Changes in brain free water associated with obesity might reflect effects of pro-inflammatory cytokines produced by adipose tissue that drive extravasation and oedema in some brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas changes in brain free water associated with obesity might reflect effects of pro-inflammatory cytokines produced by adipose tissue that drive extravasation and oedema in some brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of gene ontology results",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "acbdd7cf-ced4-4f58-a634-371a5415303a",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C85",
+      "claim": "Data was collected at multiple centres and site was used as a nuisance regressor.",
+      "claim_type": "EXPLICIT",
+      "source": "One limitation of this study is that data was collected at multiple centres and even though we used site as a nuisance regressor there might be unaccounted for non-linear effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study limitation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "57c06b85-110c-47be-a5d8-4a04c17c155a",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C86",
+      "claim": "Duff et al., 2022 showed that quantities derived from UK Biobank scans at different sites are reliable.",
+      "claim_type": "EXPLICIT",
+      "source": "However Duff et al., 2022 showed that quantities derived from UK Biobank scans at different sites are reliable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Duff et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "b99113fb-248c-40f4-9d02-b229b8eae4f8",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C87",
+      "claim": "The age range of the AHBA donors (24-57 years) is only partially overlapping with the participants in the UK Biobank (44-80 years).",
+      "claim_type": "EXPLICIT",
+      "source": "It should also be mentioned that the age range of the AHBA donors (24-57 years) is only partially overlapping with the participants in the UK Biobank (44-80 years).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study limitation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "1f2aeaf6-04dd-42ab-83b8-1dfccc8217f2",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C88",
+      "claim": "The study is based on a cross-sectional dataset, making it impossible to disentangle causally directed relationships with certainty from correlations between MRI and transcriptional phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Another limitation of our study is that it is based on a cross-sectional dataset, and it is therefore impossible to disentangle causally directed relationships with certainty from correlations between MRI and transcriptional phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study limitation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "0cff477f-c24b-4641-89e3-7ed90b787619",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C89",
+      "claim": "The genetic correlation result (ICVF correlated with obesity, but not ISOVF) is consistent with the bidirectional mechanistic model, whereby changes in neurite density (but not brain water) cause obesity, but it does not prove it.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with the bidirectional mechanistic model, whereby changes in neurite density (but not brain water) cause obesity, but it does not prove it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of genetic correlation results with caution",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "06b972b0-f6d2-4b97-b989-f3eb4f88910f",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C90",
+      "claim": "There are many possible interpretations of a genetic correlation between phenotypes, including pleiotropic genetic effects on both phenotypes, which do not entail a causal relationship between phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "There are many other possible interpretations of a genetic correlation between phenotypes, that is pleiotropic genetic effects on both phenotypes, which do not entail a causal relationship between phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about genetic correlations",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "68ededda-3ffc-405c-bec8-e6806c801925",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C92",
+      "claim": "The study focused on a subset of N = 40,680 participants for whom complete multimodal MRI data were available for download (February 2020).",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on a subset of N = 40,680 participants for each of whom complete multimodal MRI data were available for download (February 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study sample",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "b8ec53e4-73e2-433b-8669-7d82cf028da5",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C93",
+      "claim": "MRI data at all three sites were collected on a 3T Siemens Skyra scanner using a 32-channel receive head coil.",
+      "claim_type": "EXPLICIT",
+      "source": "MRI data at all three sites were collected on a 3T Siemens Skyra scanner (Siemens, Munich, Germany) using a 32-channel receive head coil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of MRI acquisition parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "54de56ab-ccd8-4760-92da-6b5858dda04f",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C94",
+      "claim": "The acquisition of MRI data has been described in detail in Alfaro-Almagro et al., 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "The acquisition of these MRI data has been described in detail in Alfaro-Almagro et al., 2018",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to detailed methods in prior publication",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "64ccad78-7e8f-4c8f-9d2e-ea3c48cdf0b8",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C95",
+      "claim": "The study used Freesurfer V6.0.1 for structural MRI processing.",
+      "claim_type": "EXPLICIT",
+      "source": "We used these data as input to Freesurfer V6.0.1 (Fischl et al., 2004) using the T2-FLAIR weighted images to improve pial surface reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of processing methods with citation to Fischl et al., 2004",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "0ac682a7-8069-4c08-a092-5ca9184f8066",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C96",
+      "claim": "The Human Connectome Project (HCP) parcellation was aligned to each individual image and regional metrics were estimated for 180 bilateral cortical areas and eight bilateral subcortical structures (giving a total of 376 areas).",
+      "claim_type": "EXPLICIT",
+      "source": "Following reconstruction, the Human Connectome Project (HCP) parcellation (Glasser et al., 2016) was aligned to each individual image and regional metrics were estimated for 180 bilateral cortical areas and eight bilateral subcortical structures (giving a total of 376 areas).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of parcellation method with citation to Glasser et al., 2016",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "3422449c-a411-4345-b509-9acf46d24161",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C97",
+      "claim": "NODDI reconstruction was done using the AMICO pipeline.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurite orientation dispersion and density imaging (NODDI) reconstruction was done using the AMICO pipeline (Daducci et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of processing method with citation to Daducci et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "cc4e6583-8fbb-4bb4-b0fd-b3ca0e36ad94",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C98",
+      "claim": "Using T1-weighted and T2-weighted scans for Freesurfer anatomical image reconstruction improves anatomical reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "We used T1-weighted and T2-weighted scans for the Freesurfer anatomical image reconstruction, because this approach improves anatomical reconstruction (Glasser et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Glasser et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "f4e1b285-724b-43b3-bc90-90dad284fdc5",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C99",
+      "claim": "Subjects without T2 scans had cortical thickness systematically biased towards lower values compared to subjects with both T1 and T2 images.",
+      "claim_type": "EXPLICIT",
+      "source": "However, subjects without T2 scans had cortical thickness systematically biased towards lower values compared to subjects with both T1 and T2 images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from quality control analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "8448df6e-79db-4c96-8c3a-b220c91d2461",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C100",
+      "claim": "Participants without T2 scans were excluded from all analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we excluded participants without T2 scans from all analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of exclusion criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "2bed5a73-b568-48e3-a129-ddbdfcc5c1cf",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C101",
+      "claim": "Subjects with high CRP were excluded to avoid spurious effects from pathologies causing systemic inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to avoid spurious effects from pathologies causing systemic inflammation, we also excluded subjects with high CRP (>).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of exclusion criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "0484d473-b106-4f1c-9775-059972e59010",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C102",
+      "claim": "The analysis was repeated without subjects who had reported an episode of stroke or diagnosis of dementia, producing identical results.",
+      "claim_type": "EXPLICIT",
+      "source": "We repeated the analysis without subjects who had reported an episode of stroke or diagnosis of dementia, producing identical results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Sensitivity analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "3647bfec-13a0-48fc-acfc-14bdc4e4dc8a",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C103",
+      "claim": "The regression analysis included age, sex, scan quality, and scan site as nuisance regressors.",
+      "claim_type": "EXPLICIT",
+      "source": "Regress imaging modalities from NODDI dataset onto waist-to-hip ratio (WHR) with age, sex, scan quality, and scan site as nuisance regressors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical analysis method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "6e5caf96-b1af-48f4-897a-b4186d81fb7f",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C104",
+      "claim": "Quality was quantified by the Freesurfer Euler number (a higher number means more surface reconstruction errors).",
+      "claim_type": "EXPLICIT",
+      "source": "where Quality is quantified by the Freesurfer Euler number (a higher number means more surface reconstruction errors)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of quality metric",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "b628c6de-2e01-48d0-b9a5-d4d599555408",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C105",
+      "claim": "The study used the ABAGEN package to map gene expression onto the same parcellation as the imaging data (Glasser HCP).",
+      "claim_type": "EXPLICIT",
+      "source": "We then related these maps to anatomically localized gene expression data from the Allen Brain Atlas (Hawrylycz et al., 2012) using the ABAGEN package (Markello et al., 2021) to map gene expression onto the same parcellation as the imaging data (Glasser HCP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of gene expression analysis method with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "73ec08b0-94aa-40b2-8ce4-05ef6813cfb4",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C106",
+      "claim": "43 (predominantly small) regions without gene expression data were excluded from analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The 43 (predominantly small) regions without gene expression data were excluded from analysis and are grayed out on the brain maps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data exclusion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "7738a2e0-484f-47de-861e-cdea59af426b",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C107",
+      "claim": "The study performed 1000 spin permutations to generate surrogate gene correlations for statistical testing.",
+      "claim_type": "EXPLICIT",
+      "source": "We then repeated this step 1000 times for spin-permuted versions of the NODDI-WHR maps to generate a set of 1000 surrogate gene correlations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "75909ffc-25a5-434e-ad8b-6b65a119c351",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C108",
+      "claim": "The gene enrichment analysis tool Webgestalt was modified to incorporate the spin permutation process instead of the default process of random permutations to calculate p-values.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting real and surrogate data loadings were input to the gene enrichment analysis tool Webgestalt (Wang et al., 2017), which was modified to incorporate the spin permutation process instead the default process of random permutations to calculate p-values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of modified analysis method with citation to Wang et al., 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "c9b5adc7-65da-4814-b3a4-3c979f875cd8",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C109",
+      "claim": "Hansen et al., 2022 compiled 37 neurotransmitter receptor atlases from the literature and provided them as 3D volumes in MNI space.",
+      "claim_type": "EXPLICIT",
+      "source": "Hansen et al., 2022 compiled 37 neurotransmitter receptor atlases from the literature and provided them as 3D volumes in MNI space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of neurotransmitter atlas source with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "542735ef-c8d9-4b1a-8fa1-9ea1c819d1fb",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C110",
+      "claim": "The study independently tested 37 neurotransmitter maps for significant spatial correlation with the MRI~WHR maps, controlling for spatial autocorrelation using 10,000 spin permutations and correcting for multiple comparisons with FDR = 5%.",
+      "claim_type": "EXPLICIT",
+      "source": "We independently tested the resulting 37 neurotransmitter maps (Appendix 2\u2014figure 11) for significant spatial correlation with the MRI~WHR maps, controlling for spatial autocorrelation using 10,000 spin permutations and correcting for multiple comparisons with FDR = 5%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical analysis method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "b3826bbb-00cf-43e0-a8c3-8f275e103e94",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C111",
+      "claim": "Lake et al., 2018 provided 31 brain cell distributions atlases based on single-cell DNA transcription analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Lake et al., 2018 provided 31 brain cell distributions atlases based on single-cell DNA transcription analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of cell-type atlas source with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "2fe52f73-1dd8-4283-ae93-859047a0dae5",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C112",
+      "claim": "The study independently tested 31 cell-type maps for significant spatial correlation with the MRI~WHR maps, controlling for spatial autocorrelation using 10,000 spin permutations and for multiple comparisons with FDR = 5%.",
+      "claim_type": "EXPLICIT",
+      "source": "We independently tested the resulting 31 cell-type maps (Appendix 2\u2014figure 12) for significant spatial correlation with the MRI~WHR maps, controlling for spatial autocorrelation using 10,000 spin permutations and for multiple comparisons with FDR = 5%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical analysis method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "c4838b94-7b79-46b6-a138-29552203d349",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C113",
+      "claim": "The study used genome-wide association statistics for ICVF and ISOVF from Warrier et al., 2022.",
+      "claim_type": "EXPLICIT",
+      "source": "We used genome-wide association statistics for ICVF and ISOVF (Warrier et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of GWAS data source with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "f79e3b01-ac9a-44c5-8ae4-7818a80737e4",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C114",
+      "claim": "The study used genome-wide association statistics for waist-to-hip ratio from Pulit et al., 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "and for waist-to-hip ratio (plain and adjusted for BMI; Pulit et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of GWAS data source with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "8492b9b6-e017-4a60-ab6a-933134f5f1c7",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "claim_id": "C115",
+      "claim": "Genetic correlations were estimated using linkage disequilibrium (LD) score regression based on LD information from North-West European populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic correlations were estimated using linkage disequilibrium (LD) score regression (Bulik-Sullivan et al., 2015) based on LD information from North-West European populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of genetic correlation method with citation to Bulik-Sullivan et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8b6c45a7-47d0-49bb-87ff-f358c2c417b8",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Obesity (WHR) is associated with two coupled but anatomically distinct brain systems: a prefrontal-temporal-striatal system showing increased tissue water content (ISOVF) and a medial temporal-occipital-striatal system showing increased neurite density (ICVF). These two systems are negatively correlated with each other (r=-0.366) but both positively correlated with WHR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims provide converging evidence from ~30,000 participants showing statistically significant associations (FDR=5%) in anatomically distinct regions. The correlation analysis (C29, C70) establishes that ISOVF and ICVF are independent metrics, and the spatial mapping (C31, C34) with functional characterization (C32, C35) demonstrates anatomical differentiation. The negative correlation between systems (C37) supports the coupling interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "c17f96b0-e278-4d34-bd3e-c738493778f5",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Gene expression analysis reveals that the ISOVF~WHR system is enriched for innate immune processes (pattern recognition receptors, IL-6 responses) while the ICVF~WHR system is enriched for taste receptor activity and G-protein coupled receptor signaling. The gene expression weights for the two systems are negatively correlated (r=-0.615).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The gene expression co-location analysis uses appropriate spatial permutation methods (spin permutation with FDR=5%) to control for spatial autocorrelation. The enrichment analysis identifies biologically plausible pathways that differentiate the two systems. However, the age mismatch between AHBA donors (24-57 years) and UK Biobank participants (44-80 years) noted in C87 introduces some uncertainty about the generalizability of these transcriptional associations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "dbe1a1e1-60f9-49e8-a3f0-8630182b37d5",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Neurotransmitter receptor mapping shows that the ISOVF~WHR system co-localizes with high densities of 5HTT, D1, H3, Mu, and VAChT receptors, while the ICVF~WHR system shows negative co-location with H3, Mu, CB1, and A4B2 receptors. The mu opioid receptor shows the strongest correlation with both systems but with opposite signs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The neurotransmitter receptor analysis uses rigorous spatial correlation methods with 10,000 spin permutations and FDR correction (C110). The opposite signs of association for the mu opioid receptor (C50, C51) provide strong evidence for functional differentiation between the two systems. The receptors identified are biologically relevant to feeding, reward, and appetite regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "9454695d-35ee-47c3-8243-040644de2c6b",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cell-type analysis reveals that the ISOVF~WHR system is significantly co-located with astrocytes, oligodendrocyte progenitor cells, and microglia, but not neurons. The ICVF~WHR system shows no significant co-location with any specific cell type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The cell-type analysis uses appropriate spatial correlation methods with 10,000 spin permutations and FDR correction (C112). The finding that ISOVF associates with glial cells but not neurons is consistent with the interpretation that this metric reflects tissue water content and inflammatory processes. The lack of cell-type specificity for ICVF may reflect limitations in the cell-type atlas resolution or suggest that neurite density changes involve multiple cell types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "1dd280fc-0e92-4936-9b2e-067d42d309f7",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Genetic correlation analysis shows that ICVF is significantly genetically correlated with WHR (rg=0.112, P<9\u00d710\u207b\u2074) while ISOVF shows no genetic correlation with WHR (rg=-0.026, P=0.36). This suggests shared genetic effects between neurite density and obesity but not between brain water content and obesity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The genetic correlation analysis uses established LDSC methods (C115) with published GWAS data (C113, C114). The statistical significance for ICVF and lack of significance for ISOVF is clearly reported. However, the authors appropriately caution (C89, C90) that genetic correlations can arise from pleiotropy and do not prove causal relationships. The interpretation requires additional validation through methods like Mendelian randomization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "20817dc4-d3eb-4372-b44f-9cdaae966d79",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CRP analysis shows that the correlation between CRP-WHR maps is significantly stronger for ISOVF than ICVF (P<0.024), consistent with the hypothesis that inflammation mediates effects of obesity on brain water content.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The CRP analysis provides supporting evidence for the inflammatory hypothesis by showing differential associations with the two microstructural systems. The statistical comparison is appropriate, though the p-value is modest (P<0.024). This result is consistent with prior literature (C78) linking inflammatory markers to free water metrics and with the gene expression findings showing immune enrichment in the ISOVF system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "49417d77-e6d4-44d4-a322-c5eb1e528059",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose a bidirectional mechanistic model where changes in neurite density (ICVF) may cause obesity through effects on taste sensation and reward processing (ICVF\u2192WHR), while obesity may cause changes in brain water content (WHR\u2192ISOVF) through inflammatory mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is explicitly presented as a speculative model (C73, C74, C76, C83, C84 all marked as SPECULATION). While the model is consistent with the observed patterns of gene expression, receptor distributions, and genetic correlations, the cross-sectional design (C88) prevents causal inference. The authors appropriately acknowledge these limitations (C89, C90) and note that alternative explanations exist. Longitudinal data or causal inference methods would be needed to validate this model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "c91c2714-25bf-4512-abe7-5bc135000ba5",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study used rigorous MRI acquisition and processing methods including NODDI reconstruction, Freesurfer processing with T1 and T2 images, HCP parcellation, and appropriate quality control including exclusion of subjects without T2 scans and those with high CRP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methodological claims describe standard, well-validated processing pipelines with appropriate citations (C94, C95, C96, C97, C98). The quality control measures (C99, C100, C101) are appropriate and the sensitivity analysis (C102) demonstrates robustness. The regression model (C103) includes appropriate covariates (age, sex, scan quality, scan site). The methods are sufficiently detailed and use established tools.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "f700a777-7cb9-4f60-bdae-f1b952293dbb",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Gene expression, neurotransmitter receptor, and cell-type analyses used appropriate spatial correlation methods with spin permutation testing (1,000-10,000 permutations) to control for spatial autocorrelation and FDR correction for multiple comparisons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The analytical methods are state-of-the-art for spatial transcriptomics-imaging integration. The use of spin permutation (C107, C110, C112) appropriately controls for spatial autocorrelation, which is critical for brain mapping studies. The modification of Webgestalt to incorporate spin permutation (C108) is methodologically sound. The exclusion of 43 regions without gene expression data (C106) is appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "22b3fe98-a320-42ea-913a-ad96fc2c5125",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Study limitations include multi-site data collection (though site was included as a covariate and prior work shows reliability), age mismatch between AHBA donors and UK Biobank participants, and cross-sectional design preventing causal inference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The authors appropriately acknowledge key limitations. The multi-site concern (C85) is partially addressed by citing reliability evidence (C86) and including site as a covariate. The age mismatch (C87) is a genuine limitation that could affect the gene expression findings. The cross-sectional design limitation (C88) is critical and appropriately emphasized, as it fundamentally limits causal interpretation despite the genetic correlation analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "bfe21593-7bcc-496a-9890-66fd01b1ce02",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior literature establishes that obesity is a major public health challenge associated with cardiovascular, metabolic, and neurodegenerative disorders. Previous studies have shown associations between obesity and reduced grey matter volume/cortical thickness, though results were initially contradictory due to methodological heterogeneity. The microstructural basis of these macrostructural changes remains largely unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately summarize the prior literature with appropriate citations. The characterization of contradictory early findings (C6, C7) and emerging consensus (C8, C9, C10, C11) is well-supported. The identification of the knowledge gap regarding microstructural features (C17, C18, C21) appropriately motivates the current study. The claims about white matter microstructure studies (C19, C20) correctly note that grey matter microstructure has not been previously investigated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    },
+    {
+      "id": "471854b6-656d-43d7-8f2c-9f8dc7d838ef",
+      "content_id": "1f65252c-b69a-45bd-a4c3-3a591a789b42",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "NODDI modeling uses multi-shell diffusion MRI data to estimate three microstructural metrics: ICVF (neurite density), OD (orientation dispersion), and ISOVF (free water content), based on modeling diffusion as isotropic in free water, restricted within neurites, and hindered in extracellular space.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately describe the NODDI model and its derived metrics. The definitions are consistent with the established literature on NODDI (referenced in C30 as Kamiya et al., 2020). The distinction between ICVF capturing neurite density (but not cell bodies) and ISOVF capturing free water is correctly stated and forms the basis for the study's interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:36:04.200889Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "87e58029-9afe-488a-bb43-27d19c076250",
+      "result_id": "8b6c45a7-47d0-49bb-87ff-f358c2c417b8"
+    },
+    {
+      "claim_id": "f1a9e552-92a9-45b9-89a8-80a354761aaf",
+      "result_id": "8b6c45a7-47d0-49bb-87ff-f358c2c417b8"
+    },
+    {
+      "claim_id": "80aec4f3-19a3-440c-a57a-4b1745ef43ea",
+      "result_id": "8b6c45a7-47d0-49bb-87ff-f358c2c417b8"
+    },
+    {
+      "claim_id": "bafba275-f048-43b0-8687-2d282ea7d0e3",
+      "result_id": "8b6c45a7-47d0-49bb-87ff-f358c2c417b8"
+    },
+    {
+      "claim_id": "6500f978-c983-48ea-94ae-d3085a62cc57",
+      "result_id": "8b6c45a7-47d0-49bb-87ff-f358c2c417b8"
+    },
+    {
+      "claim_id": "c5c5e18a-5167-4e11-838e-7fb96dcfca36",
+      "result_id": "8b6c45a7-47d0-49bb-87ff-f358c2c417b8"
+    },
+    {
+      "claim_id": "a912976d-f73b-402a-a675-2de9ee9901b1",
+      "result_id": "8b6c45a7-47d0-49bb-87ff-f358c2c417b8"
+    },
+    {
+      "claim_id": "9dfb1133-8f8e-43b3-b1d7-546062b36f11",
+      "result_id": "8b6c45a7-47d0-49bb-87ff-f358c2c417b8"
+    },
+    {
+      "claim_id": "e54987fd-4a76-4ad4-bd4e-3265a3bcb189",
+      "result_id": "8b6c45a7-47d0-49bb-87ff-f358c2c417b8"
+    },
+    {
+      "claim_id": "295ed2bb-8844-480a-8723-de0d1dc883ed",
+      "result_id": "8b6c45a7-47d0-49bb-87ff-f358c2c417b8"
+    },
+    {
+      "claim_id": "0513d880-11a0-4d11-bfdb-97f42767affa",
+      "result_id": "8b6c45a7-47d0-49bb-87ff-f358c2c417b8"
+    },
+    {
+      "claim_id": "2e69a239-60b8-42fb-9e86-165ef61827dd",
+      "result_id": "8b6c45a7-47d0-49bb-87ff-f358c2c417b8"
+    },
+    {
+      "claim_id": "d975363c-10d5-4366-ba48-493af6997fce",
+      "result_id": "8b6c45a7-47d0-49bb-87ff-f358c2c417b8"
+    },
+    {
+      "claim_id": "1eab4f61-43ae-44e8-abd7-413247e6a6bd",
+      "result_id": "8b6c45a7-47d0-49bb-87ff-f358c2c417b8"
+    },
+    {
+      "claim_id": "91cf7c42-d932-43f6-9527-55252d87c4e4",
+      "result_id": "8b6c45a7-47d0-49bb-87ff-f358c2c417b8"
+    },
+    {
+      "claim_id": "ea597948-1795-42ad-bc0e-b1753dc3935e",
+      "result_id": "c17f96b0-e278-4d34-bd3e-c738493778f5"
+    },
+    {
+      "claim_id": "e8578f49-8fd8-49f3-b82b-f57befc51512",
+      "result_id": "c17f96b0-e278-4d34-bd3e-c738493778f5"
+    },
+    {
+      "claim_id": "8463142d-c74a-46f9-870c-f3fca32ac492",
+      "result_id": "c17f96b0-e278-4d34-bd3e-c738493778f5"
+    },
+    {
+      "claim_id": "f5c9a2f1-b8b8-43b8-8af4-576b44a45db9",
+      "result_id": "c17f96b0-e278-4d34-bd3e-c738493778f5"
+    },
+    {
+      "claim_id": "fdafa275-0c94-488c-ba7b-aba1ab616918",
+      "result_id": "c17f96b0-e278-4d34-bd3e-c738493778f5"
+    },
+    {
+      "claim_id": "545a0374-db7d-4e8c-a2f3-998250717067",
+      "result_id": "c17f96b0-e278-4d34-bd3e-c738493778f5"
+    },
+    {
+      "claim_id": "d754bae4-b655-4365-b702-19b30a348ffb",
+      "result_id": "c17f96b0-e278-4d34-bd3e-c738493778f5"
+    },
+    {
+      "claim_id": "eb37f0d2-d116-4385-aab8-68e5e84f75f0",
+      "result_id": "c17f96b0-e278-4d34-bd3e-c738493778f5"
+    },
+    {
+      "claim_id": "929fef83-71d5-47e1-852f-c655b418bc14",
+      "result_id": "c17f96b0-e278-4d34-bd3e-c738493778f5"
+    },
+    {
+      "claim_id": "c29ccae2-c417-41da-a27b-d0f72ca99c98",
+      "result_id": "c17f96b0-e278-4d34-bd3e-c738493778f5"
+    },
+    {
+      "claim_id": "16f75328-b5cd-42a2-98b2-808a27680510",
+      "result_id": "c17f96b0-e278-4d34-bd3e-c738493778f5"
+    },
+    {
+      "claim_id": "ef9d5ff3-c525-479c-bccd-d4218db1c4da",
+      "result_id": "c17f96b0-e278-4d34-bd3e-c738493778f5"
+    },
+    {
+      "claim_id": "a8212713-2b90-4df0-af2c-f4f0736a9dd0",
+      "result_id": "c17f96b0-e278-4d34-bd3e-c738493778f5"
+    },
+    {
+      "claim_id": "7ee253b0-ef29-4ab5-b1e3-7706bed5fbba",
+      "result_id": "c17f96b0-e278-4d34-bd3e-c738493778f5"
+    },
+    {
+      "claim_id": "fef856f6-b6d5-45e0-a9d4-80c9beda0d9a",
+      "result_id": "dbe1a1e1-60f9-49e8-a3f0-8630182b37d5"
+    },
+    {
+      "claim_id": "31a79242-23af-4986-bc3b-fffe507f6ad8",
+      "result_id": "dbe1a1e1-60f9-49e8-a3f0-8630182b37d5"
+    },
+    {
+      "claim_id": "6db42d19-d808-49e9-8a4a-f16ff0b6d89d",
+      "result_id": "dbe1a1e1-60f9-49e8-a3f0-8630182b37d5"
+    },
+    {
+      "claim_id": "0491f516-4fe7-45b5-b9b8-fd04fb5ecac6",
+      "result_id": "dbe1a1e1-60f9-49e8-a3f0-8630182b37d5"
+    },
+    {
+      "claim_id": "95a3f64f-91a3-446f-b047-6c29016c9c7d",
+      "result_id": "dbe1a1e1-60f9-49e8-a3f0-8630182b37d5"
+    },
+    {
+      "claim_id": "2bb3d5be-2e36-4561-a33d-bc6406d6d0ef",
+      "result_id": "dbe1a1e1-60f9-49e8-a3f0-8630182b37d5"
+    },
+    {
+      "claim_id": "cd133ccf-72e7-4616-87c6-f22f807df19f",
+      "result_id": "9454695d-35ee-47c3-8243-040644de2c6b"
+    },
+    {
+      "claim_id": "354225fc-a9da-4074-aeff-b721efaea5ba",
+      "result_id": "9454695d-35ee-47c3-8243-040644de2c6b"
+    },
+    {
+      "claim_id": "f9439053-4866-4f23-a909-60afdec94723",
+      "result_id": "9454695d-35ee-47c3-8243-040644de2c6b"
+    },
+    {
+      "claim_id": "c0f40e0f-4dc2-4424-9a19-37f8ae0ebd2d",
+      "result_id": "1dd280fc-0e92-4936-9b2e-067d42d309f7"
+    },
+    {
+      "claim_id": "3efcca89-ff24-4165-971f-dc757871592d",
+      "result_id": "1dd280fc-0e92-4936-9b2e-067d42d309f7"
+    },
+    {
+      "claim_id": "0cff477f-c24b-4641-89e3-7ed90b787619",
+      "result_id": "1dd280fc-0e92-4936-9b2e-067d42d309f7"
+    },
+    {
+      "claim_id": "06b972b0-f6d2-4b97-b989-f3eb4f88910f",
+      "result_id": "1dd280fc-0e92-4936-9b2e-067d42d309f7"
+    },
+    {
+      "claim_id": "c4838b94-7b79-46b6-a138-29552203d349",
+      "result_id": "1dd280fc-0e92-4936-9b2e-067d42d309f7"
+    },
+    {
+      "claim_id": "f79e3b01-ac9a-44c5-8ae4-7818a80737e4",
+      "result_id": "1dd280fc-0e92-4936-9b2e-067d42d309f7"
+    },
+    {
+      "claim_id": "8492b9b6-e017-4a60-ab6a-933134f5f1c7",
+      "result_id": "1dd280fc-0e92-4936-9b2e-067d42d309f7"
+    },
+    {
+      "claim_id": "17eb828c-6346-46be-bd7f-b50cec7a9b4c",
+      "result_id": "20817dc4-d3eb-4372-b44f-9cdaae966d79"
+    },
+    {
+      "claim_id": "1618d4a4-04c9-4af1-958d-479a12cd153b",
+      "result_id": "20817dc4-d3eb-4372-b44f-9cdaae966d79"
+    },
+    {
+      "claim_id": "4a99a0a3-a54e-4f2b-92c2-1b848da6f2e9",
+      "result_id": "20817dc4-d3eb-4372-b44f-9cdaae966d79"
+    },
+    {
+      "claim_id": "9a230223-d5a7-41d8-8292-a18b47dc148c",
+      "result_id": "20817dc4-d3eb-4372-b44f-9cdaae966d79"
+    },
+    {
+      "claim_id": "1ddf9baa-238b-4bb2-bfb6-8e1130fd0f90",
+      "result_id": "49417d77-e6d4-44d4-a322-c5eb1e528059"
+    },
+    {
+      "claim_id": "6650dac0-4f61-4eec-bc8f-d367efcb3efe",
+      "result_id": "49417d77-e6d4-44d4-a322-c5eb1e528059"
+    },
+    {
+      "claim_id": "6ac2c9c8-0323-4dfd-9038-c9790ecc5bc9",
+      "result_id": "49417d77-e6d4-44d4-a322-c5eb1e528059"
+    },
+    {
+      "claim_id": "80400444-02d0-4e25-b2b8-cbf7f8291b32",
+      "result_id": "49417d77-e6d4-44d4-a322-c5eb1e528059"
+    },
+    {
+      "claim_id": "8a835cc4-ac7c-4918-9be6-4ac44d9b2a44",
+      "result_id": "49417d77-e6d4-44d4-a322-c5eb1e528059"
+    },
+    {
+      "claim_id": "641420c4-87e8-4bd3-953b-6ae982743c53",
+      "result_id": "49417d77-e6d4-44d4-a322-c5eb1e528059"
+    },
+    {
+      "claim_id": "68ededda-3ffc-405c-bec8-e6806c801925",
+      "result_id": "c91c2714-25bf-4512-abe7-5bc135000ba5"
+    },
+    {
+      "claim_id": "b8ec53e4-73e2-433b-8669-7d82cf028da5",
+      "result_id": "c91c2714-25bf-4512-abe7-5bc135000ba5"
+    },
+    {
+      "claim_id": "54de56ab-ccd8-4760-92da-6b5858dda04f",
+      "result_id": "c91c2714-25bf-4512-abe7-5bc135000ba5"
+    },
+    {
+      "claim_id": "64ccad78-7e8f-4c8f-9d2e-ea3c48cdf0b8",
+      "result_id": "c91c2714-25bf-4512-abe7-5bc135000ba5"
+    },
+    {
+      "claim_id": "0ac682a7-8069-4c08-a092-5ca9184f8066",
+      "result_id": "c91c2714-25bf-4512-abe7-5bc135000ba5"
+    },
+    {
+      "claim_id": "3422449c-a411-4345-b509-9acf46d24161",
+      "result_id": "c91c2714-25bf-4512-abe7-5bc135000ba5"
+    },
+    {
+      "claim_id": "cc4e6583-8fbb-4bb4-b0fd-b3ca0e36ad94",
+      "result_id": "c91c2714-25bf-4512-abe7-5bc135000ba5"
+    },
+    {
+      "claim_id": "f4e1b285-724b-43b3-bc90-90dad284fdc5",
+      "result_id": "c91c2714-25bf-4512-abe7-5bc135000ba5"
+    },
+    {
+      "claim_id": "8448df6e-79db-4c96-8c3a-b220c91d2461",
+      "result_id": "c91c2714-25bf-4512-abe7-5bc135000ba5"
+    },
+    {
+      "claim_id": "2bed5a73-b568-48e3-a129-ddbdfcc5c1cf",
+      "result_id": "c91c2714-25bf-4512-abe7-5bc135000ba5"
+    },
+    {
+      "claim_id": "0484d473-b106-4f1c-9775-059972e59010",
+      "result_id": "c91c2714-25bf-4512-abe7-5bc135000ba5"
+    },
+    {
+      "claim_id": "3647bfec-13a0-48fc-acfc-14bdc4e4dc8a",
+      "result_id": "c91c2714-25bf-4512-abe7-5bc135000ba5"
+    },
+    {
+      "claim_id": "6e5caf96-b1af-48f4-897a-b4186d81fb7f",
+      "result_id": "c91c2714-25bf-4512-abe7-5bc135000ba5"
+    },
+    {
+      "claim_id": "b628c6de-2e01-48d0-b9a5-d4d599555408",
+      "result_id": "f700a777-7cb9-4f60-bdae-f1b952293dbb"
+    },
+    {
+      "claim_id": "73ec08b0-94aa-40b2-8ce4-05ef6813cfb4",
+      "result_id": "f700a777-7cb9-4f60-bdae-f1b952293dbb"
+    },
+    {
+      "claim_id": "7738a2e0-484f-47de-861e-cdea59af426b",
+      "result_id": "f700a777-7cb9-4f60-bdae-f1b952293dbb"
+    },
+    {
+      "claim_id": "75909ffc-25a5-434e-ad8b-6b65a119c351",
+      "result_id": "f700a777-7cb9-4f60-bdae-f1b952293dbb"
+    },
+    {
+      "claim_id": "c9b5adc7-65da-4814-b3a4-3c979f875cd8",
+      "result_id": "f700a777-7cb9-4f60-bdae-f1b952293dbb"
+    },
+    {
+      "claim_id": "542735ef-c8d9-4b1a-8fa1-9ea1c819d1fb",
+      "result_id": "f700a777-7cb9-4f60-bdae-f1b952293dbb"
+    },
+    {
+      "claim_id": "b3826bbb-00cf-43e0-a8c3-8f275e103e94",
+      "result_id": "f700a777-7cb9-4f60-bdae-f1b952293dbb"
+    },
+    {
+      "claim_id": "2fe52f73-1dd8-4283-ae93-859047a0dae5",
+      "result_id": "f700a777-7cb9-4f60-bdae-f1b952293dbb"
+    },
+    {
+      "claim_id": "acbdd7cf-ced4-4f58-a634-371a5415303a",
+      "result_id": "22b3fe98-a320-42ea-913a-ad96fc2c5125"
+    },
+    {
+      "claim_id": "57c06b85-110c-47be-a5d8-4a04c17c155a",
+      "result_id": "22b3fe98-a320-42ea-913a-ad96fc2c5125"
+    },
+    {
+      "claim_id": "b99113fb-248c-40f4-9d02-b229b8eae4f8",
+      "result_id": "22b3fe98-a320-42ea-913a-ad96fc2c5125"
+    },
+    {
+      "claim_id": "1f2aeaf6-04dd-42ab-83b8-1dfccc8217f2",
+      "result_id": "22b3fe98-a320-42ea-913a-ad96fc2c5125"
+    },
+    {
+      "claim_id": "fdea6fb7-9da2-4cfc-a051-f7cc10224b0e",
+      "result_id": "bfe21593-7bcc-496a-9890-66fd01b1ce02"
+    },
+    {
+      "claim_id": "b834de29-0aa0-41b2-ab17-e52f125cb2ed",
+      "result_id": "bfe21593-7bcc-496a-9890-66fd01b1ce02"
+    },
+    {
+      "claim_id": "2e40a63c-a2b6-4353-a91b-0fedd781646d",
+      "result_id": "bfe21593-7bcc-496a-9890-66fd01b1ce02"
+    },
+    {
+      "claim_id": "316221ba-b45e-4919-b3b1-cfc3d0304963",
+      "result_id": "bfe21593-7bcc-496a-9890-66fd01b1ce02"
+    },
+    {
+      "claim_id": "bbee6d0e-11af-4d1b-9594-3153c0500e4e",
+      "result_id": "bfe21593-7bcc-496a-9890-66fd01b1ce02"
+    },
+    {
+      "claim_id": "ab61aa89-1f9c-4cf4-b871-39476ca2ceec",
+      "result_id": "bfe21593-7bcc-496a-9890-66fd01b1ce02"
+    },
+    {
+      "claim_id": "962342e5-48e7-4679-bde2-fd7152fcd634",
+      "result_id": "bfe21593-7bcc-496a-9890-66fd01b1ce02"
+    },
+    {
+      "claim_id": "ae7e818c-7d37-4edd-973b-a93b3b08af1c",
+      "result_id": "bfe21593-7bcc-496a-9890-66fd01b1ce02"
+    },
+    {
+      "claim_id": "0ce8f4f8-0b13-4246-9518-f81a9cc13c13",
+      "result_id": "bfe21593-7bcc-496a-9890-66fd01b1ce02"
+    },
+    {
+      "claim_id": "2ae76e4f-aa44-4e27-9157-f1896fbed7e2",
+      "result_id": "bfe21593-7bcc-496a-9890-66fd01b1ce02"
+    },
+    {
+      "claim_id": "e51fd018-8fa2-4894-be3d-fd7e94ac9b42",
+      "result_id": "bfe21593-7bcc-496a-9890-66fd01b1ce02"
+    },
+    {
+      "claim_id": "b5631617-ae03-4bf2-a7fc-e540feffdc8b",
+      "result_id": "bfe21593-7bcc-496a-9890-66fd01b1ce02"
+    },
+    {
+      "claim_id": "8ae7f8ba-2fc7-46b0-8422-e3ac55d82b3b",
+      "result_id": "bfe21593-7bcc-496a-9890-66fd01b1ce02"
+    },
+    {
+      "claim_id": "4535f62c-061e-42bd-abbf-065d233ce906",
+      "result_id": "bfe21593-7bcc-496a-9890-66fd01b1ce02"
+    },
+    {
+      "claim_id": "22524d7c-6e3a-4fdb-b6ab-fe6983e5dc63",
+      "result_id": "bfe21593-7bcc-496a-9890-66fd01b1ce02"
+    },
+    {
+      "claim_id": "b0cff8c4-39e5-4c17-99e6-1c79ddcfb0c2",
+      "result_id": "bfe21593-7bcc-496a-9890-66fd01b1ce02"
+    },
+    {
+      "claim_id": "ef82927b-952a-4b63-a9ca-5f722b8f7863",
+      "result_id": "bfe21593-7bcc-496a-9890-66fd01b1ce02"
+    },
+    {
+      "claim_id": "fb5303e9-8b3f-4c06-a94f-e9650b0f4245",
+      "result_id": "bfe21593-7bcc-496a-9890-66fd01b1ce02"
+    },
+    {
+      "claim_id": "15134d01-9ab1-4bb4-94e2-b519f4699b1c",
+      "result_id": "bfe21593-7bcc-496a-9890-66fd01b1ce02"
+    },
+    {
+      "claim_id": "e472baa4-54c3-465c-9bdf-4461d9a41acc",
+      "result_id": "bfe21593-7bcc-496a-9890-66fd01b1ce02"
+    },
+    {
+      "claim_id": "d1548318-48bb-4338-ae0e-2864b8342120",
+      "result_id": "bfe21593-7bcc-496a-9890-66fd01b1ce02"
+    },
+    {
+      "claim_id": "24b60402-1a0a-4df7-8cfd-15b1392f19b6",
+      "result_id": "bfe21593-7bcc-496a-9890-66fd01b1ce02"
+    },
+    {
+      "claim_id": "c0ef1bc5-11c6-4368-a759-9bca793857b2",
+      "result_id": "471854b6-656d-43d7-8f2c-9f8dc7d838ef"
+    },
+    {
+      "claim_id": "3637e21f-6123-434a-88e2-12e2d2f59c7d",
+      "result_id": "471854b6-656d-43d7-8f2c-9f8dc7d838ef"
+    },
+    {
+      "claim_id": "004279d4-89e4-458d-ae4a-b4a9bc1ea322",
+      "result_id": "471854b6-656d-43d7-8f2c-9f8dc7d838ef"
+    },
+    {
+      "claim_id": "145b6d8f-252a-4c94-bdb5-e368be2f4f08",
+      "result_id": "471854b6-656d-43d7-8f2c-9f8dc7d838ef"
+    },
+    {
+      "claim_id": "b2a4dd23-dce8-411b-a2f5-c9b733ddc765",
+      "result_id": "471854b6-656d-43d7-8f2c-9f8dc7d838ef"
+    }
+  ],
+  "comparisons": []
+}

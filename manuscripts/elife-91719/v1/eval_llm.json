@@ -1,0 +1,398 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "A stochastic computational simulation incorporating tubulin assembly dynamics and EB1 binding/unbinding successfully recapitulates experimental EB1 tip tracking. The simulation includes differential EB1 on-rates for protofilament-edge versus closed-lattice sites (~70-fold faster for edge sites) and hydrolysis-state-dependent off-rates (higher for GDP-tubulin). The model reproduces key experimental observations including peak EB1 position (~128 nm vs ~144 nm experimental), microtubule tip taper, growth rates, and time to catastrophe without requiring a predetermined exclusion zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C24-C55 collectively establish that the simulation successfully reproduces experimental EB1 tip tracking behavior. The model is parameterized using previously published experimental values (C47) with modifications to match experimental growth rates (C37-C39). Quantitative agreement is demonstrated for multiple metrics: peak EB1 position (C50-C51), tip standard deviation (C55), and microtubule dynamics (C52). The simulation's ability to recapitulate experimental observations across multiple independent measures provides strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The simulation correctly predicts that slower GTP-tubulin hydrolysis rates increase EB1 binding along the microtubule lattice. A hydrolysis rate of 0.05 s\u207b\u00b9 (versus baseline 0.55 s\u207b\u00b9) led to a ~twofold increase in lattice-bound EB1, matching previously reported experimental results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 demonstrate that the simulation reproduces the experimentally observed relationship between hydrolysis rate and EB1 lattice binding. The quantitative agreement (~twofold increase) between simulation and published experimental data (C58, referencing Roostalu et al., 2020) validates this aspect of the model. This provides additional evidence that the simulation captures key mechanistic features of EB1-microtubule interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The simulation predicts that EB1 monomers exhibit reduced tip tracking compared to dimers. By increasing all off-rates fourfold to simulate monomers, tip tracking decreased by ~threefold, consistent with previous experimental reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 show that the model can account for differences between EB1 monomers and dimers by adjusting off-rates based on published measurements (C61). The ~threefold reduction in tip tracking matches previous experimental observations (C62), providing further validation of the model's predictive capability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The simulation reproduces the experimentally observed relationship between microtubule growth rate and EB1 comet length, with faster growth rates producing longer comets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 demonstrate that the simulation captures another well-established experimental phenomenon. The qualitative agreement with multiple published studies (C63) provides additional validation of the model's ability to reproduce diverse aspects of EB1 behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Increasing the EB1 closed-lattice on-rate in simulations reduces tip tracking specificity by causing EB1 accumulation along the microtubule length. A 32-fold increase in closed-lattice on-rate led to only ~1.6-fold increase at the tip but ~25-fold increase along the lattice, decreasing the tip:lattice ratio. Shutting off closed-lattice binding during simulations had minimal effect on tip tracking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C72 establish through systematic simulation experiments that closed-lattice binding is not sufficient for efficient tip tracking. The quantitative measurements (C69-C70) show that increasing closed-lattice on-rates disproportionately increases lattice binding versus tip binding. The dynamic simulation (C72) confirms that closed-lattice binding contributes minimally to tip tracking specificity. These results are internally consistent and support the model's predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Increasing the EB1 protofilament-edge on-rate in simulations enhances tip tracking specificity by selectively increasing EB1 at the microtubule tip without increasing lattice binding. A 32-fold increase in edge on-rate led to ~2.2-fold increase at the tip with no change along the lattice. Dynamically shutting off edge binding rapidly diminished tip tracking, which returned when edge binding was restored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C73-C78 demonstrate through systematic simulation that protofilament-edge binding is critical for efficient tip tracking. The quantitative data (C75-C76) show selective enhancement of tip binding without lattice accumulation. The dynamic simulation (C78) provides strong evidence that edge binding is necessary for tip tracking, as its removal causes rapid loss of tip localization. These results are internally consistent and mechanistically coherent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The simulation demonstrates that both rapid protofilament-edge binding (50-100:1 edge:lattice on-rate ratio) and differential GDP:GTP off-rates (6-12:1) are critical for robust EB1 tip tracking. Without edge binding, experimentally measured GDP:GTP off-rate ratios alone do not reproduce tip tracking. Including both factors produces robust tip tracking across the experimentally measured parameter ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 establish through systematic parameter exploration that the model requires both mechanisms (differential on-rates and off-rates) to reproduce experimental tip tracking. The use of experimentally measured parameter ranges (C79-C80) grounds the analysis in empirical data. The demonstration that GDP:GTP off-rate differences alone are insufficient (C81) but become effective when combined with edge binding (C82) provides strong mechanistic insight. This represents a key prediction of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Simulations predict that split comets (with extended tapered tips) should exhibit increased EB1 intensity due to additional protofilament-edge binding sites on exposed protofilament sides. Simulated split comets showed ~40% increase in summed EB1-GFP intensity compared to single comets on the same growth events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 present a clear prediction from the model (C87-C88) that is tested through simulation (C89). The ~40% increase in EB1 intensity for split comets is statistically significant (p<0.001, paired t-test) and mechanistically consistent with the model's emphasis on protofilament-edge binding. The use of paired comparisons (same growth event) controls for other variables. This represents a testable prediction of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Experimental measurements confirm that split comets exhibit increased EB1 (Mal3) intensity. Split comets showed ~80% increase in summed Mal3-mCherry intensity compared to single comets on the same microtubule growth events, consistent with simulation predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 provide experimental validation of the simulation prediction. The ~80% increase is statistically significant (p<0.0001, paired t-test) and qualitatively consistent with the simulation prediction of ~40% increase (C89). The use of paired measurements on the same growth events is methodologically sound. While the magnitude differs somewhat from simulation, the directional agreement and statistical significance support the model's prediction that increased protofilament-edge sites enhance EB1 recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "DARPin D1 specifically blocks Mal3-GFP binding to protofilament-edge sites on damaged microtubules. On CaCl\u2082-damaged GMPCPP microtubules (which have increased edge sites), 1 \u03bcM DARPin reduced Mal3-GFP binding area by ~2.7-fold (p<0.001). On undamaged GMPCPP microtubules (fewer edge sites), DARPin had no significant effect (p=0.58).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C100 establish through well-controlled experiments that DARPin specifically blocks edge-site binding. The use of damaged versus undamaged microtubules as positive and negative controls (C97-C99) is methodologically sound. The statistical significance of the effect on damaged microtubules (p<0.001) combined with the lack of effect on undamaged microtubules (p=0.58) provides strong evidence for specificity. The ~2.7-fold reduction is substantial and the conclusion (C100) is well-supported. This validates DARPin as a tool to test the model's predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "DARPin disrupts Mal3 tip tracking on dynamic microtubules in a dose-dependent manner. Simulations predicted that a ~twofold reduction in edge on-rate would cause ~25% reduction in tip specificity. Experimentally, 1 \u03bcM DARPin caused ~25% reduction in tip specificity (p<0.001, Kruskal-Wallis), matching the simulation prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 demonstrate quantitative agreement between simulation prediction and experimental observation. The simulation establishes a specific quantitative prediction (C101), which is then tested experimentally (C102-C103). The match between predicted and observed ~25% reduction in tip specificity provides strong validation of the model. The dose-dependent effect (C102) and statistical significance support the conclusion. This represents successful experimental validation of a model prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "DARPin suppresses Mal3 tip tracking by blocking protofilament-edge binding rather than through indirect effects on microtubule structure or dynamics. The suppression of tip tracking was greater than expected from small changes in growth rate (p<0.001). Time to catastrophe was unchanged (p=0.09-0.4), indicating no effect on GTP-cap size. Despite a ~40% increase in tip taper (more edge sites available), tip tracking was still suppressed, indicating direct blocking of edge sites by DARPin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 systematically rule out alternative explanations for DARPin's effect. The analysis of growth rate (C104), catastrophe time (C105), and tip taper (C106-C107) demonstrates that DARPin does not work through indirect effects on microtubule dynamics or structure. The observation that tip tracking is suppressed despite increased edge site availability (C106-C107) is particularly compelling evidence for direct competitive blocking. The logic is sound and the conclusion (C108-C109) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "DARPin suppresses EB1 tip tracking in live LLC-Pk1 cells. DARPin-transfected cells showed reduced microtubule density (p=0.017) and ~31% lower EB1 tip:lattice intensity ratio compared to non-transfected cells (p<0.0001). Microtubule growth rates were similar between conditions (p=0.027), indicating the effect was not due to altered growth dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 demonstrate that DARPin's effect on EB1 tip tracking extends to living cells. The reduction in microtubule density (C110) is consistent with DARPin blocking tubulin addition at edge sites. The ~31% reduction in tip:lattice ratio (C111) is statistically significant and substantial. The control for growth rate (C112-C113) rules out an indirect mechanism. The use of transfected versus non-transfected cells as internal controls is methodologically sound. This validates the model's predictions in a physiologically relevant context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C168",
+      "C169"
+    ],
+    "result": "The study concludes that rapid EB1 binding to protofilament-edge sites contributes to efficient tip tracking at growing microtubule plus-ends. This conclusion is supported by computational simulations showing edge binding enhances tip tracking, and experimental evidence that blocking edge sites with DARPin disrupts tip tracking both in vitro and in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117, C168-C169 represent the main conclusions of the study. These conclusions are well-supported by the convergence of computational predictions (simulation results showing edge binding is critical) and experimental validation (DARPin blocking edge sites disrupts tip tracking in multiple experimental systems). The agreement between simulation predictions and experimental observations across multiple independent tests provides strong support for the central conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors acknowledge limitations and alternative explanations. While DARPin is unlikely to suppress tip tracking by altering tip conformation or hydrolysis rate based on their data, they note it remains possible that DARPin could alter tubulin conformation to indirectly affect EB1 binding. They also acknowledge that other end-specific features not considered in the model may contribute to tip tracking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 represent appropriate scientific caveats. The authors acknowledge that while their data (C118, referencing Figure 5C) suggest DARPin does not work through indirect mechanisms, alternative explanations cannot be completely excluded (C119). They also acknowledge the model's limitations (C121). These caveats are reasonable and demonstrate appropriate scientific caution. The acknowledgment of limitations does not undermine the main conclusions but rather demonstrates scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The current model differs from the previous Maurer et al. 2014 model primarily by including explicit tubulin assembly dynamics and rapid protofilament-edge binding. These features eliminate the need for a predetermined EB1 exclusion zone at the microtubule tip. The new model proposes that EB1 rapidly binds to edge sites, gets 'locked in' to stable 4-tubulin pockets upon tubulin addition, accumulates on the GTP-cap, and dissociates upon GTP hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C133 provide a detailed comparison between the current and previous models. The comparison is fair and identifies key mechanistic differences (C132-C133). The proposed mechanism (C128-C131) is clearly articulated and consistent with the simulation results. The claim that these features eliminate the need for an exclusion zone (C133) is supported by the simulation results (C53-C54). This represents a clear advance over previous models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Analysis of the simulation reveals that while most EB1 molecules at the tip are bound to closed-lattice GTP-tubulin sites (~twofold more than edge sites), approximately 50% of binding events initially occur at protofilament-edge sites. These edge-bound EB1 molecules are concentrated at the growing tip and are rapidly 'locked in' to closed-lattice configurations by incoming tubulin. The peak EB1 position slightly distal from the tip reflects stable binding to closed-lattice GTP-tubulin sites and binding to edge sites along exposed protofilament sides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C151 provide detailed mechanistic insights from the simulation. The quantitative data on binding site occupancy (C140) and binding event locations (C149-C150) are internally consistent. The explanation for the peak EB1 position (C138-C139, C142) is mechanistically coherent. The 'lock-in' mechanism (C147-C148) reconciles the observation that most EB1 is bound to closed-lattice sites despite rapid edge binding. This analysis provides important mechanistic detail supporting the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The model is robust because it relies on two independent mechanisms: rapid protofilament-edge binding (50-100:1 edge:lattice) and differential GDP:GTP off-rates (6-12:1). Because both factors contribute, the model does not require narrow parameter ranges for either mechanism and does not require an EB1 binding exclusion zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 articulate an important feature of the model: its robustness. The claim that both mechanisms contribute (C152) is supported by the parameter exploration results (C79-C83). The assertion that this leads to robustness (C153) is supported by the observation that tip tracking occurs across a range of parameter values (Figure 2G-I). This represents a strength of the model compared to previous models requiring narrow parameter ranges or predetermined exclusion zones.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The model predicts that various microtubule tip configurations (tapered, curved, or flared) that increase protofilament separation would enhance EB1 tip tracking by creating additional protofilament-edge binding sites. This prediction applies broadly to different tip structures observed in cells and in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C160 extend the model's predictions to diverse tip structures. The reasoning is mechanistically sound: any configuration that separates protofilaments (C158-C159) would create more edge sites and thus enhance EB1 binding (C156-C157). The claim that this applies broadly (C160) is a reasonable inference from the model. The support from published observations of diverse tip structures (C155) grounds this prediction in experimental reality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The model provides a mechanistic explanation for published observations that XMAP215 increases EB1 intensity at growing tips. XMAP215 increases the range of protofilament lengths (tip taper), which would create more protofilament-edge sites, thereby enhancing EB1 recruitment. This suggests EB1 recruitment may be sensitive to the number of edge sites at the tip.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C165 reinterpret published experimental results (C161-C162) in light of the current model. The interpretation (C163-C164) is mechanistically consistent with the model and provides a plausible explanation for the experimental observations. The broader implication (C165) is a reasonable inference. This demonstrates the model's explanatory power for existing data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C166",
+      "C167"
+    ],
+    "result": "The model provides a mechanistic explanation for published observations that mechanical stress redistributes EB1 from microtubule tips to the lattice. Microtubule bending could create lattice openings and new protofilament-edge sites along the microtubule length, causing EB1 redistribution from tips to the lattice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C167 reinterpret another published observation (C166) in light of the current model. The proposed mechanism (C167) is consistent with the model's emphasis on edge-site binding and provides a plausible explanation for the experimental observation. This further demonstrates the model's explanatory power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C170"
+    ],
+    "result": "The study suggests that altering the number of protofilament-edge sites at growing microtubule tips or along the lattice may provide a new mechanism to regulate EB1 localization in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C170 represents a speculative proposal for future investigation. While the model and experimental results support the importance of edge sites for EB1 localization, the claim that this could serve as a regulatory mechanism in cells requires additional experimental validation. The proposal is reasonable and mechanistically grounded, but remains speculative without direct evidence of cellular regulation through this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "The authors propose future work examining effects of slower tubulin association rates on EB1-occupied edge sites and whether EB1 edge binding assists protofilament zippering. They also suggest that microtubule-targeting drugs like Taxol might disrupt EB1 tip tracking by slowing EB1 'lock-in' to 4-tubulin pockets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C136 represent proposals for future research. These are reasonable hypotheses based on the model, but remain speculative without experimental testing. The Taxol prediction (C136) is mechanistically plausible given the model's emphasis on rapid tubulin addition for EB1 lock-in, but requires experimental validation.",
+    "result_type": "MINOR"
+  }
+]

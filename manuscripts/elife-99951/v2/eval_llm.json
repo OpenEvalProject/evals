@@ -1,0 +1,220 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C25",
+      "C26"
+    ],
+    "result": "Analysis of 41,862 studies comprising 471,693 interactions among 17,865 proteins reveals that most single-study PPI networks are not power law (PL)-distributed. When considering networks of size 200 or larger, non-PL-distributed networks outnumber PL-distributed networks by approximately 3.5 to 1, though smaller networks (\u226420 PPIs) are predominantly classified as PL-distributed (84%), likely due to poor fit quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C25, and C26 provide consistent empirical evidence from a large-scale analysis. The observation that the ratio of non-PL to PL networks depends on network size is appropriately qualified, with the authors acknowledging that small network classifications may be artifacts. The data directly supports the conclusion that individual studies typically do not exhibit PL distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Aggregation of non-PL studies can produce PL-distributed networks. Random merging of 100, 200, and 300 non-PL studies yielded PL aggregated networks in more than 50% of cases, with the fraction increasing from 53% to 83% as more studies were merged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C28 present results from systematic randomization experiments (1000 iterations each) showing that PL properties emerge through aggregation. The dose-response relationship (more studies \u2192 higher PL fraction) strengthens the causal inference. The experimental design appropriately tests the aggregation hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Correcting for bait usage asymmetry converted PL degree distributions to non-PL distributions in 9 out of 27 cases (33%) among single-study networks with PL distribution, more than 200 PPIs, and available bait/prey information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 reports a specific empirical result from applying a defined correction method. The result is quantified and the denominator is clearly specified. However, the evaluation would be strengthened by statistical testing of whether networks that switched differ systematically from those that didn't (addressed in C5 with p=0.038).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Prey hubs (corrected for bait usage bias) are most strongly enriched for protein folding and chaperone-mediated protein folding functions. This enrichment is biologically plausible given that most human proteins require chaperone assistance for folding, and chaperones compose 10% of cellular proteome mass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 present functional enrichment results with biological context. The enrichment analysis (C36) is supported by cited biological facts (C37, C38) that provide mechanistic plausibility. The authors appropriately considered and ruled out protein abundance as a confounding factor (Figure 6\u2014figure supplement 1), strengthening the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Disease enrichment patterns differ dramatically between corrected and uncorrected hub definitions. Uncorrected hubs are strongly associated with cancer, prey hubs show weak enrichment for nervous system diseases, while normalized and Y2H hubs show no significant disease enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 present consistent disease enrichment results across different hub definitions. The contrasting patterns support the hypothesis that study bias inflates disease associations. However, the claim that this \"challenges the idea that disease genes per se have a higher connectivity\" (C41) is somewhat overstated\u2014it shows that the METHOD of identifying hubs matters, not necessarily that disease genes lack higher connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "The enrichment of nervous system diseases among prey hubs is explained by the role of chaperones in preventing protein misfolding, which is a hallmark of many nervous system diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 provides a mechanistic explanation supported by citations and is consistent with the observed enrichment of both chaperones and nervous system diseases among prey hubs. The overlap analysis (Figure 6\u2014figure supplement 3) showing significant enrichment of chaperones among schizophrenia and psychotic disorder genes provides additional support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C47"
+    ],
+    "result": "Mathematical models and simulations demonstrate that study bias and technical bias are sufficient to produce observed PL distributions in PPI networks, and that observed PL behavior in empirical networks tells us very little about the topology of the ground truth interactome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C47 represent the central conclusion supported by Proposition 1 (mathematical proof), simulations showing PL emergence from empty or binomial ground truths, and empirical analyses of bait usage and aggregation effects. The mathematical framework is rigorous, though simplified. The simulation results consistently show that PL-distributed and binomially distributed ground truths become indistinguishable at realistic false positive rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Simulation results for Y2H testing show similar patterns to AP-MS, with even smaller tipping points in false positive rates. The aggregated Y2H network from IntAct is not PL-distributed (p=0), and false negative rates had minimal effect on simulation outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C49 present simulation results for Y2H as a complementary analysis to AP-MS. The observation that the Y2H aggregated network is not PL-distributed provides a plausible explanation for the lower tipping points. The robustness to false negative rate variation (shown by small row-wise variance in heatmaps) strengthens confidence in the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The field widely believes that PPI networks follow power law distributions, with this assumption codified in textbooks and supported by biological explanations including preferential attachment through gene duplication and the promiscuity of proteins involved in general cellular processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C14 establish the current state of knowledge in the field through multiple citations. These are appropriately characterized as beliefs and assumptions rather than proven facts. The claims accurately represent the mainstream view that the manuscript challenges, providing necessary context for the study's motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The PL assumption has practical consequences in network biology, with tools like WGCNA and CEMiTool using PL-distributed network assumptions to inform automated parameter choices. WGCNA's widespread use (>17,000 citations) means this assumption has potentially shaped thousands of studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 document the practical impact of the PL assumption with specific examples and verifiable citation counts. The description of how WGCNA and CEMiTool use the PL assumption is supported by citations to the tools' documentation. This establishes the importance of critically examining the PL assumption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Critical voices have challenged the PL assumption in PPI networks through two main approaches: (1) demonstrating that empirical networks often fail goodness-of-fit tests or are better fit by non-PL models, and (2) arguing that even if empirical networks are PL-distributed, this doesn't prove the ground truth interactome has the same property.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 accurately summarize prior critical work through multiple citations. The categorization into two groups of criticism is logical and well-supported. This literature review appropriately positions the current work within ongoing debates about network topology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Technical and study biases affect PPI detection procedures, including disproportionate attention to cancer-associated proteins and false-positive interaction partners for bait proteins in large-scale experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 state known issues in the field that motivate the study. These are presented as established knowledge rather than novel findings. The claims are reasonable characterizations of recognized biases in PPI detection, though C4 could benefit from more specific quantification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "It is problematic to derive hypotheses about the topology of the true biological interactome from PL distributions in observed PPI networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 represents the main conclusion of the manuscript, supported by the convergence of multiple lines of evidence: mathematical proofs, simulations, empirical analyses of aggregation effects, and bait usage corrections. The conclusion is appropriately cautious, stating it is \"problematic\" rather than \"impossible\" to make such inferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Active module discovery methods perform equally well on real and random networks where node degree is preserved, suggesting these methods learn from node degree rather than network structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 cites a specific finding from Lazareva et al., 2021. This is appropriately used to support the broader argument about the importance of understanding degree distributions. The claim is accurately represented as a cited finding rather than a result of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Y2H and AP-MS account for more than 70% of reported interactions in the analyzed network. Unlike these methods which require bait selection, XL-MS employs chemical cross-linkers on protein complexes and identifies peptides in close spatial proximity without bait selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 provide methodological context about PPI detection methods. C52 is a verifiable statistic from the study's data. C53-C54 accurately describe XL-MS methodology as an alternative approach. These claims appropriately contextualize the scope and limitations of the study's focus on bait-dependent methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Future strategies to reduce bias include employing techniques with FDR as low as 1% to reduce technical bias, and systematic unbiased approaches like the HuRI project that study PPIs without prior evidence for protein relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 propose future directions based on the study's findings and cite relevant examples. These are appropriately framed as suggestions rather than tested solutions. The proposals are logical extensions of the identified problems, though their effectiveness remains to be demonstrated.",
+    "result_type": "MINOR"
+  }
+]

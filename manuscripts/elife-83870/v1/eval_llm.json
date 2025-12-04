@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "MPI-KO human cancer cell lines (HT1080 and HeLa) were successfully generated and exhibit mannose auxotrophy and sensitivity. These cells proliferate under physiological mannose concentrations (50 \u03bcM) but show suppressed proliferation under mannose starvation or high mannose (5 mM), phenotypes that are rescued by MPI gene reintroduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C18 provide converging evidence from multiple independent clones and cell types showing consistent mannose-dependent phenotypes. The rescue experiments (C18) with MPI reintroduction control for off-target effects, and the data are presented with appropriate statistical analysis across multiple figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Mannose challenge causes dramatic accumulation of hexose-6-phosphate in MPI-KO cells. Mannose starvation severely decreases N-glycosylation, but mannose challenge has negligible effects on N-glycosylation, indicating that the antiproliferative effects of mannose challenge operate through mechanisms distinct from N-glycosylation defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 are supported by metabolomic data (C19) and lectin blot analysis (C20, C21). The distinction between mannose starvation and challenge effects on N-glycosylation is clearly demonstrated and provides important mechanistic insight. The data are consistent with the known role of mannose in N-glycan biosynthesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Mannose challenge increases the sensitivity of MPI-KO cancer cells (HT1080 and HeLa) to DNA replication inhibitors (cisplatin and doxorubicin) when cells are preconditioned with excess mannose prior to drug treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are supported by cell viability assays across multiple cell lines and drug treatments. The requirement for preconditioning is an important experimental detail that suggests time-dependent metabolic changes are necessary for chemosensitization. The data are reproducible across independent clones.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Mannose challenge generates slow-cycling cells with severely impaired cell cycle progression. Time-lapse imaging with Fucci reporters reveals diverse atypical cell cycle profiles including G1 arrest (26.7%), loss of G2-M phase (40.6%), and cytokinesis failure. These cells can enter a quiescent state but retain proliferative capacity upon mannose withdrawal, and show early accumulation of cell cycle inhibitors p21 and p27.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C34 are supported by extensive time-lapse imaging data with Fucci reporters, BrdU incorporation assays, and western blots. The classification of cell cycle phenotypes is quantitative and systematic. The reversibility experiment (C31) is particularly strong evidence that cells enter quiescence rather than undergoing irreversible damage. The data are internally consistent across multiple assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Proteomic analysis reveals that mannose challenge downregulates proteins related to cell cycle and DNA replication, particularly the MCM2-7 complex and associated origin licensing factors CDC6 and CDT1. The MCM2-7 complex is a core component of DNA helicase and plays a central role in licensing replication origins in G1 phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by label-free proteomics, western blots, and qPCR data. The functional annotation analysis is appropriate, and the downregulation of MCM2-7 proteins is confirmed by orthogonal methods. Claims C37-C38 about MCM2-7 function are well-established knowledge supported by appropriate citations. The ORC2 stability (C39) provides an important control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Chromatin flow cytometry shows that mannose challenge does not severely impair origin licensing but causes accumulation of MCM2-positive chromatin in S phase. Mannose-challenged cells show reduced BrdU incorporation, suggesting that ongoing replication forks are stalled on chromatin with limited DNA synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by chromatin flow cytometry data across two cell lines (HT1080 and HeLa). The interpretation that forks are stalled is reasonable given the combination of MCM2 retention on chromatin and reduced BrdU incorporation. The data are consistent with the cell cycle phenotypes described in earlier claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Mannose challenge impairs dormant origin firing during replication stress. In mannose-unchallenged cells, ATR inhibition restores BrdU incorporation and CDC45 loading after cisplatin treatment, indicating functional dormant origin activation. However, in mannose-challenged cells, ATR inhibition fails to restore BrdU incorporation or CDC45 dynamics, and this deficiency is associated with increased cisplatin-induced \u03b3H2AX.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 are supported by flow cytometry and western blot data showing BrdU incorporation, RPA2 phosphorylation, CDC45 dynamics, and \u03b3H2AX levels. The experimental design using ATR inhibition to force dormant origin activation is appropriate and well-controlled. The data are consistent across HT1080 and HeLa cells. The mechanistic link between dormant origin failure and DNA damage is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C80",
+      "C81"
+    ],
+    "result": "The antiproliferative effect of mannose is largely dependent on MPI expression levels, while mannose-driven genomic instability (enhanced cisplatin-induced \u03b3H2AX) is a unique phenotype observed only in the absence of MPI. Mannose challenge did not enhance cisplatin-induced \u03b3H2AX in cancer cell lines expressing varying levels of MPI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C80, and C81 are supported by data from multiple cancer cell lines with varying MPI expression. This is an important finding that distinguishes the antiproliferative effects (MPI-dependent) from genomic instability (MPI-KO specific). The data clarify the mechanism and potential therapeutic implications of mannose treatment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Endogenous \u03b3H2AX is detected in S phase of both mannose-challenged and unchallenged MPI-KO cells, and cisplatin strongly induces \u03b3H2AX throughout S phase even in mannose-challenged cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by triple-staining chromatin flow cytometry data. The detection of endogenous \u03b3H2AX in S phase is consistent with normal replication stress, and the cisplatin-induced increase demonstrates that the DNA damage response is functional in these cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Mannose challenge causes bioenergetic imbalance with steep drops in ECAR, faint increases in OCR, and marked reductions in ATP production rates. ATP pools decrease in multiple MPI-KO cell types, and the remaining ATP is almost completely depleted by OXPHOS inhibition with IACS-010759, which increases necrosis. Mannose challenge ablates glycolytic capacity required to buffer OXPHOS defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by Seahorse bioenergetics data, ATP assays, and LDH release assays across multiple cell types. The data demonstrate that mannose-challenged cells become highly dependent on OXPHOS for ATP production. The oligomycin A experiment (C56) provides strong evidence for loss of glycolytic capacity. The IACS-010759 experiments confirm OXPHOS dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Metabolomic profiling reveals that mannose challenge creates a distinct metabolic landscape: increased Fruc-6-P with decreased lower glycolysis metabolites, relatively unchanged PPP metabolites (except 6-phosphogluconoate accumulation), severely decreased TCA cycle intermediates, moderately decreased ribonucleoside di- and triphosphates, and substantially decreased dNTPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by comprehensive metabolomic profiling using CE-TOF-MS. The data are internally consistent and reveal a coherent metabolic phenotype. The distinction between ribonucleoside monophosphates (unchanged) and di/triphosphates (decreased) is particularly informative. The dNTP depletion (C63) is a key finding linking metabolism to DNA replication defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "13C-glucose tracing reveals that mannose challenge impairs purine nucleotide biosynthesis. PRPP fractional enrichment is slower in mannose-challenged cells despite similar pool sizes, suggesting reduced utilization for nucleotide biosynthesis. Purine metabolic intermediates (IMP, AMP, GMP) show marked reductions in both fractional enrichment and pool size. The glycolysis-serine-folate (GSF) axis is compromised, as evidenced by decreased 13C-glycine (M+2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by 13C-glucose tracing experiments with appropriate time-course measurements. The interpretation that reduced PRPP utilization (C65) explains the purine defects is reasonable given the data. The GSF axis impairment (C67) is an important mechanistic insight, though the inference is based on glycine labeling rather than direct measurement of serine or folate intermediates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "13C-glucose tracing reveals that mannose challenge severely impairs pyrimidine nucleotide biosynthesis. Fractional enrichment of 13C-Asp and 13C-carbamoyl Asp is severely decreased, while 13C-Asp pool size remains unchanged but 13C-carbamoyl Asp pool size greatly decreases, indicating reduced utilization of Asp in pyrimidine metabolism. 13C-UMP shows substantial reductions in both fractional enrichment and pool size. dNTPs show little to very low 13C enrichment in mannose-challenged cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by 13C-glucose tracing data. The distinction between Asp pool size (unchanged) and carbamoyl Asp pool size (decreased) provides strong evidence for reduced flux through pyrimidine biosynthesis rather than substrate limitation. The UMP and dNTP data are consistent with impaired de novo synthesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Pharmacological inhibition of de novo dNTP biosynthesis with hydroxyurea (HU) recapitulates key aspects of mannose challenge. HU combined with cisplatin reduces cell viability more than cisplatin alone (independent of MPI status) and induces \u03b3H2AX. HU arrests cells in S phase (0.25 mM) or at G1/S boundary (1 mM). ATR inhibition fails to increase BrdU uptake in HU-treated cells, indicating that dormant origin DNA synthesis is highly sensitive to dNTP pool size. Unlike mannose challenge, HU does not severely impair CDC45 dynamics, suggesting that insufficient dNTP is the major cause of dormant origin disengagement from DNA synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 are supported by cell viability assays, western blots, chromatin flow cytometry, and BrdU incorporation assays. The HU experiments provide strong pharmacological validation that dNTP depletion is sufficient to cause the key phenotypes observed with mannose challenge. The distinction between HU and mannose effects on CDC45 dynamics (C76) is an important mechanistic insight, though it suggests additional complexity beyond simple dNTP depletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "Supplementation with hypoxanthine/thymidine or deoxyribonucleoside mixture was not sufficient to improve proliferation defects in mannose-challenged MPI-KO HT1080 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is supported by cell proliferation data. This negative result is important as it suggests that salvage pathway supplementation cannot overcome the metabolic defects caused by mannose challenge, supporting the conclusion that de novo synthesis impairment is critical. However, the experiment does not rule out that higher concentrations or different delivery methods might be effective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Background on mannose metabolism and anticancer activity: MPI catalyzes interconversion of Fruc-6-P and Man-6-P; Man-6-P is converted to GDP-mannose for N-glycan biosynthesis; extracellular mannose (30-130 \u03bcM in blood) is taken up and efficiently directed to glycolysis; large mannose influx suppresses proliferation and enhances chemotherapy efficacy, particularly in low-MPI cancer cells; in honeybees (negligible MPI), mannose feeding is lethal due to Man-6-P accumulation, glucose metabolism inhibition, and ATP depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C11 represent established knowledge supported by appropriate citations. These claims provide essential background context for the study but do not represent novel findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The study demonstrates that large mannose influx exceeding metabolic capacity induces metabolic remodeling leading to slow-cycling cells with limited dNTPs. This metabolic remodeling impairs dormant origin firing required to rescue cisplatin-stalled forks, exacerbating replication stress. Pharmacological inhibition of de novo dNTP biosynthesis is sufficient to retard cell cycle progression, sensitize cells to cisplatin, and inhibit dormant origin firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 represent the main conclusions of the study and are well-supported by the comprehensive experimental data described in the other claim groups. The metabolic remodeling (C2) is demonstrated by metabolomics and bioenergetics data; the dormant origin impairment (C3) is shown by BrdU incorporation and CDC45 dynamics; and the dNTP loss mechanism (C4) is validated by HU experiments. These conclusions are logically derived from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The study concludes that MPI-mediated conversion of Man-6-P to Fruc-6-P functions as a genome guard by maintaining metabolic integrity against dietary mannose intake. The induction of ATP insufficiency by honeybee syndrome coincides with abnormal cell cycle progression, indicating the critical role of normal mannose catabolism in balancing bioenergetic states and cell cycle progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 represent interpretive conclusions drawn from the study's findings. These are reasonable inferences based on the data showing that MPI deficiency leads to metabolic disruption, ATP depletion, and cell cycle defects. However, these are conceptual frameworks rather than directly tested hypotheses. The \"genome guard\" concept (C78) is a useful interpretive model but would benefit from additional evolutionary or physiological evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "DNA synthesis from dormant origins during replication stress is highly sensitive to dNTP pool size, consistent with therapeutic advantages of RNR inhibition in enhancing radiochemotherapy efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is supported by the HU experiments and is consistent with cited literature (Kunos and Ivy, 2018). This conclusion integrates the study's findings with broader therapeutic implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Mannose challenge rapidly increases RRM2B expression (a rate-limiting RNR subunit), indicating a shift toward dNTP biosynthesis at the protein level. However, mannose challenge also causes substantial ATP reductions, which impairs RNR catalysis since ATP is a key allosteric regulator. 13C-glucose tracing clearly shows that mannose challenge severely impairs early stages of de novo purine and pyrimidine nucleotide synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by proteomic data, ATP assays, and 13C-glucose tracing. These claims provide mechanistic insight into why dNTP pools are depleted despite compensatory RRM2B upregulation. The data suggest multiple converging mechanisms: impaired de novo synthesis and insufficient ATP for RNR activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Proteomic analysis reveals that mannose challenge downregulates MCM2-7 proteins (supporting the hypothesis that honeybee syndrome impairs dormant origins and causes genomic instability) and upregulates proteins involved in ferroptosis and necroptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by proteomic data. The MCM2-7 downregulation (C87) is consistent with the dormant origin defects observed functionally. The upregulation of ferroptosis and necroptosis proteins (C88) is an interesting observation that suggests additional mechanisms of cell death, though these pathways are not functionally validated in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "In humans, replication origins are licensed far more than actually used for DNA replication. Excess origins remain dormant under physiological conditions but are activated when nearby forks stall upon encountering DNA lesions, preventing permanent replication arrest and cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 represent established knowledge about dormant origin biology, supported by appropriate citations. These provide essential background for interpreting the study's findings but are not novel results.",
+    "result_type": "MINOR"
+  }
+]

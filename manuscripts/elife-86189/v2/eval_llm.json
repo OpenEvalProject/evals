@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C5"
+    ],
+    "result": "Kinase inhibitors are clinically successful but face selectivity challenges due to high sequence conservation of the catalytic domain, leading to significant off-target activity even for relatively selective inhibitors, which can result in mischaracterization of drug mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the clinical context and fundamental challenge addressed by this work. The claims are well-supported by established knowledge (C1, C2), multiple literature citations (C4, C5), and data from Figure 1a showing widespread off-target activity in screening campaigns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "No PKIS2-645 inhibitor achieves even twofold selectivity between primary and secondary targets, but combining inhibitors with divergent off-target profiles can retain on-target inhibition while diluting off-target effects, with activity changes being most significant within tenfold of the Ki.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C7, and C8 are supported by data analysis (Figure 1A, Figure 1\u2014figure supplement 1) and established binding kinetics. Claim C6 presents the conceptual basis illustrated in Figure 1B. Together these establish the rationale for the MMS approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C14",
+      "C15",
+      "C9"
+    ],
+    "result": "The MMS method successfully identifies potent inhibitor combinations with better selectivity than the most selective single inhibitor for both single and multiple kinase targets, greatly enhancing selectivity in rational multitargeting applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 and C9 summarize the main findings validated throughout the manuscript. The claims are supported by computational predictions (Figures 3-4) and experimental validation (Figures 5-6), demonstrating both the method's utility and its experimental confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C57",
+      "C58"
+    ],
+    "result": "The JSD score metric quantifies selectivity as the Jensen-Shannon distance between off-target and penalty distributions, with high scores (closer to 1) indicating high selectivity. The metric shows similar behavior to other selectivity metrics and demonstrates good reproducibility across different penalty distribution structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 and C57-C58 describe and validate the JSD scoring metric. The metric definition is clear (C40-C41), its performance is validated against other metrics (C42, C57, Figure 2\u2014figure supplement 2), and its scale is illustrated with imatinib examples (C43-C44, Figure 2\u2014figure supplement 3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The MMS method's performance is robust to parameter variations: increasing penalty distribution broadness decreases average JSD scores as expected, increasing Gaussian variance decreases reproducibility with minimal impact on scoring trends, and changing the underlying penalty distribution shape does not substantially impact reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 describe parameter sensitivity analysis supported by Figure 2\u2014figure supplement 1. The systematic parameter scans demonstrate the method's robustness and provide guidance for parameter selection. The results are internally consistent and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Simulations demonstrate that as inhibitor set size increases, the likelihood of finding highly selective single inhibitors increases, but more importantly, the percentage of kinase targets that can be more selectively inhibited with combinations also increases across all selectivity profiles, suggesting MMS utility will improve with larger datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by simulated data analysis in Figure 3b and 3d. The simulations systematically vary dataset size and demonstrate consistent trends. The inference about future utility (C38) is reasonable given the simulation results, though it remains a prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C39"
+    ],
+    "result": "MMS analysis of existing chemogenomic datasets (PKIS2-645, Davis et al., Karaman et al.) predicts that combinations of 2-3 inhibitors can significantly improve selectivity for 24, 17, and 6 kinase targets respectively, including improved selectivity for EPH family kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 and C39 are supported by computational analysis shown in Figure 4 and Figure 4\u2014figure supplement 1. The predictions meet both statistical and absolute \u0394JSD cutoffs. However, these are computational predictions requiring experimental validation, which is provided for selected cases in subsequent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "Multiple FLT3 alterations are predicted to be more selectively inhibited using combinations of inhibitors different from those most selective for wild-type FLT3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is supported by data in Table 1 showing different optimal inhibitor combinations for various FLT3 mutants. This is a computational prediction that has not been experimentally validated in this work, but the analysis is sound and the finding is potentially clinically relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C45",
+      "C46"
+    ],
+    "result": "NanoBRET validation of MAPK14 inhibitor combinations shows that EC50 values diverged from published Kd values, but the cumulative activity of equimolar combinations matched predictions based on single-compound EC50 values, and the combination modestly improved selectivity over the most selective single inhibitor TPKI-108.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by experimental NanoBRET data (Figure 5). The divergence between assay formats (C24, C45, C46) is documented and discussed. The accurate prediction of combination activity (C25) and modest selectivity improvement (C26) validate the MMS approach, though the improvement is limited because TPKI-108 is already highly selective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C47"
+    ],
+    "result": "For multiple kinase targets, MMS predictions show substantially greater selectivity improvements than for single targets. Mixture A (masitinib, dasatinib, PD-173955) targeting ABL1(F317L), FYN, and LYN achieved on-target Kd values within twofold of predictions, off-target Kd values within fivefold of predictions, and was 28.7-fold more selective than dasatinib alone, reducing mean off-target inhibition from 82% to 30%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 and C47 are supported by computational predictions (Figure 6a) and experimental validation (Figure 6d-f). The predicted improvements are substantial (\u0394JSD >0.01), and experimental validation confirms both on-target potency and off-target selectivity improvements. The fold-selectivity advantage is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C48"
+    ],
+    "result": "Mixture B (AST-487, ABT-869, EXEL-2880/GSK-1363089) targeting CDC2L5 and TRKC achieved on-target Kd values within twofold of predictions, off-target Kd values with 2.6-fold average difference from predictions, provided 171-fold selectivity advantage over AST-487, and reduced mean off-target activity from 96% to 37%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 and C48 are supported by experimental validation data (Figure 6d-f). The prediction accuracy is excellent (2.6-fold average difference for off-targets), and the selectivity improvement is dramatic (171-fold advantage). This represents strong validation of the MMS approach for multiple target inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C55",
+      "C56"
+    ],
+    "result": "Inhibitor combinations can more selectively inhibit kinase targets than available single inhibitors, and MMS predictions of cumulative target activity are very accurate, with less than twofold difference for on-targets and three- to fivefold difference for off-targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 and C55-C56 summarize the validation results from Mixtures A and B. The accuracy of predictions is well-documented across multiple experimental validations. The close agreement between predicted and observed values for both on-targets and off-targets strongly supports the MMS methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C65",
+      "C66"
+    ],
+    "result": "The commercial Kd assay shows high reproducibility with less than fourfold difference from values published 12 years ago. Error propagation analysis indicates the maximum expected error in combination Kd predictions is the greatest single-compound error, with upper limit of fourfold in all cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C65, and C66 address assay reproducibility and error propagation. C51 is supported by experimental validation comparing current to published measurements. C65-C66 are supported by simulation analysis (Figure 6\u2014figure supplement 1) showing how errors propagate in combinations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C49",
+      "C50",
+      "C54"
+    ],
+    "result": "Prior work establishes that allosteric inhibitors can have excellent selectivity but are difficult to engineer and may still bind multiple targets; rational multitargeting is a major objective but often leads to off-target inhibition and toxicity; and specific kinase relationships (FYN-ABL1, LYN resistance, sorafenib multitargeting) provide biological context for validation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19, C49-C50, and C54 establish context from prior literature. All claims are supported by appropriate citations. These provide rationale for the MMS approach and biological justification for the validation target selections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The study utilizes four major chemogenomic datasets: PKIS2-645 (645 inhibitors, 406 targets), Karaman et al. (38 inhibitors, 317 targets), Davis et al. (72 inhibitors, 442 targets), and Klaeger et al. (243 inhibitors, 343 targets), each with different methodologies and coverage characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C67-C71 describe the datasets used in the study. All are supported by citations to the original publications. The dataset descriptions are accurate and provide necessary context for interpreting the MMS predictions and their limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "MMS may propose combinations with chemical probes that are not the most selective or potent against particular targets, and the most selective inhibitor combination does not necessarily consist of the most selective single inhibitors against each respective kinase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 describe important insights about MMS behavior based on the analysis results. These observations are supported by the data (e.g., Table 1 showing different inhibitors for FLT3 mutants) and represent conceptually important findings about the method's approach to selectivity optimization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The cumulative activity of multiple compounds against a single target is calculated using the equation activity = 100% \u00d7 (1 - \u220f(Ki/(Ki + [IT]))), and a threshold of 90% activity (corresponding to Ki/Kd/Kdapp of 111 nM at 1 \u00b5M) defines sufficiently potent inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 describe core methodological definitions. C63 presents the mathematical equation for cumulative activity calculation, which is standard binding theory. C64 defines the potency threshold used throughout the study. Both are clearly stated and consistently applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "HEK293T cells from ATCC (#CRL-3216) were used, with identity confirmed via STR profiling and negative mycoplasma testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 provide methodological details about cell line authentication. These are standard quality control measures that are appropriately documented. The information supports the validity of the cellular assay results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "The MMS framework is generalizable to other non-kinase biological targets where compound selectivity is a challenge and diverse compound libraries are available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C10 is speculative about the method's applicability beyond kinases. While the conceptual framework could apply to other target classes, no experimental validation for non-kinase targets is provided. The claim is reasonable but remains untested.",
+    "result_type": "MINOR"
+  }
+]

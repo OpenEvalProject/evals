@@ -1,0 +1,1404 @@
+{
+  "submission": {
+    "id": "73220ffa-d20b-448c-b4bb-2c532de3bfb8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:42:38.919107Z",
+    "updated_at": "2025-12-04T03:42:38.919107Z"
+  },
+  "content": [
+    {
+      "id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "submission_id": "73220ffa-d20b-448c-b4bb-2c532de3bfb8",
+      "content_type": "manuscript",
+      "content_text": "# History information emerges in the cortex during learning\n\n## Authors\n\n- Odeya Marmor<sup>1</sup> ([ORCID: 0000-0002-0290-5888](https://orcid.org/0000-0002-0290-5888)) \u2020\n- Yael Pollak<sup>1</sup>\n- Chen Doron<sup>1</sup>\n- Fritjof Helmchen<sup>2</sup> ([ORCID: 0000-0002-8867-9569](https://orcid.org/0000-0002-8867-9569))\n- Ariel Gilad<sup>1</sup> ([ORCID: 0000-0001-8802-8611](https://orcid.org/0000-0001-8802-8611)) \u2020\n\n### Affiliations\n\n1. Department of Medical Neurobiology, Faculty of Medicine, The Institute for Medical Research Israel-Canada (IMRIC), The Hebrew University of Jerusalem Jerusalem Israel ([ROR:03qxff017](https://ror.org/03qxff017))\n2. Brain Research Institute, University of Zurich Zurich Switzerland ([ROR:02crff812](https://ror.org/02crff812))\n3. Neuroscience Center Zurich Zurich Switzerland ([ROR:02crff812](https://ror.org/02crff812))\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe learn from our experience but the underlying neuronal mechanisms incorporating past information to facilitate learning is relatively unknown. Specifically, which cortical areas encode history-related information and how is this information modulated across learning? To study the relationship between history and learning, we continuously imaged cortex-wide calcium dynamics as mice learn to use their whiskers to discriminate between two different textures. We mainly focused on comparing the same trial type with different trial history, that is, a different preceding trial. We found trial history information in barrel cortex (BC) during stimulus presentation. Importantly, trial history in BC emerged only as the mouse learned the task. Next, we also found learning-dependent trial history information in rostrolateral (RL) association cortex that emerges before stimulus presentation, preceding activity in BC. Trial history was also encoded in other cortical areas and was not related to differences in body movements. Interestingly, a binary classifier could discriminate trial history at the single trial level just as well as current information both in BC and RL. These findings suggest that past experience emerges in the cortex around the time of learning, starting from higher-order association area RL and propagating down (i.e., top-down projection) to lower-order BC where it can be integrated with incoming sensory information. This integration between the past and present may facilitate learning.\n\n## Introduction\n\nLearning is a process of acquiring new knowledge required for appropriate behavior and is highly dependent on our previous experience. Our brain integrates incoming sensory information with history information of previous stimuli to form a knowledgeable association of the current stimulus. Although the strong link between history (i.e., past experience) and learning, the underlying cortex-wide dynamics are relatively unknown, partially because most previous studies separately focus either on learning or history (Hattori et al., 2019). Learning-related neuronal dynamics are broadly observed across the whole cortex, including primary sensory and motor areas (Blake et al., 2002; Chen et al., 2015; Gilad and Helmchen, 2020; Jurjut et al., 2017; Komiyama et al., 2010; Li et al., 2008; Poort et al., 2015; Makino and Komiyama, 2015; Yan et al., 2014), higher-order association areas (Driscoll et al., 2017; Gilad and Helmchen, 2020), and prefrontal cortex (Le Merre et al., 2018; Pasupathy and Miller, 2005). But do these areas that participate in the learning process also carry trial history information?\n\nEncoding of information carried on from the previous trial (i.e., trial history) has been reported mainly in higher-order cortical areas such as the posterior parietal cortex (PPC) (Akrami et al., 2018; Harvey et al., 2012; Hwang et al., 2017; Morcos and Harvey, 2016; Scott et al., 2017; Suzuki et al., 2022), retrosplenial cortex (Hattori et al., 2019; Vann et al., 2009), and prefrontal cortex (Banerjee et al., 2020; Johnson et al., 2016; Kawai et al., 2015; Scott et al., 2017; Sul et al., 2010; Tsutsui et al., 2016), and to a smaller extent in lower-order primary sensory areas such as BC (Banerjee et al., 2020; Ch\u00e9reau et al., 2020; Rodgers et al., 2021). It is still unknown on how different cortical areas encode trial history with regard to learning. In other words, does trial history encoding in the cortex change as a function of learning? Another important aspect of the history learning is the temporal relationship between trial history encoding and the current stimulus. For example, does trial history emerge in cortex before the current incoming stimulus, or maybe both past and present information emerge simultaneously in a certain cortical area? From the temporal aspect, optogenetic silencing of PPC area during the inter-trial interval affected performance, highlighting that higher-order cortical areas may maintain history information before the incoming current stimulus (Akrami et al., 2018; Hwang et al., 2017).\n\nTo study the history-learning relationship, we use wide-field cortical imaging of mice learning to discriminate between two textures and focus on the cortex-wide dynamics of trial history. In a previous study using the same dataset, we showed that mice learning a whisker-based texture discrimination task, increase activity in task-related areas (e.g., BC and rostrolateral association cortex [RL]) as they become experts (Gilad and Helmchen, 2020). RL is part of the PPC and is located within the cluster of higher-order association areas surrounding V1. RL plays pivotal roles in cross-modal sensory integration, learning, and history, but the relationship between history and learning in RL is relatively unknown (Akrami et al., 2018; Driscoll et al., 2017; Hattori et al., 2019; Hwang et al., 2017; Khodagholy et al., 2017; Morcos and Harvey, 2016; Save and Poucet, 2009). By classifying trials according to the preceding trial, we were able to detect trial history information that emerges only as the mouse gains expertise. Specifically, trial history emerges in RL, before stimulus presentation and then is transferred to BC during stimulus presentation, which may aid in learning the rewarded stimulus.\n\n## Results\n\nIn this study, we investigate trial history dynamics across the whole dorsal cortex and its emergence during learning in transgenic mice expressing a calcium indicator (GCaMP6f) in L2/3 excitatory neurons (n = 7 mice). This dataset is identical to the one published in Gilad and Helmchen, 2020 where we focused only on learning dynamics. Using wide-field calcium imaging through the intact skull (Gallero-Salas et al., 2021; Gilad et al., 2018; Gilad and Helmchen, 2020; Vanni and Murphy, 2014), we chronically measured large-scale neocortical L2/3 activity in the contralateral hemisphere as mice learned a go/no-go whisker-dependent texture discrimination task (Gilad and Helmchen, 2020). Whisker movements and body movements were video monitored and synchronized to the calcium imaging data (Materials and methods). To map the dorsal cortex, we functionally mapped sensory areas for each mouse during anesthesia (see Materials and methods). Based on these maps (and skull coordinates) we registered all images to the 2D topview Allen reference atlas (Oh et al., 2014) and defined 25 areas of interest, further divided into four groups (Figure 1c; Gilad and Helmchen, 2020).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83702/elife-83702-fig1-v1.jpg)\n\n**Figure 1.:** (a) Behavioral setup for head-fixed texture discrimination with simultaneous wide-field calcium imaging and video monitoring of whisker motion and body movement. (b) Trial structure and possible trial outcomes. pre and stim periods are marked in gray and light gray colors, respectively. (c) Twenty-five cortical areas used in this study grouped into auditory areas (green), association areas (pink), somatosensory + V1 areas (blue), and motor areas (red). (d) Top: Example mean activation map (averaged during the stim period) for the Hit condition. BC \u2013 barrel cortex. Color denotes normalized fluorescence. Bottom: Time course of activity in BC for Hit (green) and correct rejection (CR; purple). Error bars are mean \u00b1 standard error of the mean (SEM) across trials (n = 376 and 333 for Hit and CR, respectively). (e) Example of a learning curve (d\u2032 as a function of trial number) of one mouse, fitted with a sigmoid function (solid black line). Red dashed vertical line indicates the learning threshold. gray rectangles mark the naive, learning, and expert phases. (f) Schematic diagram of the different trial types for a Hit trial preceded by a different trial (i.e., history): Hit-Hit (blue), CR-Hit (orange), and FA-Hit (gray). (g) Probability of the different trial types along with the distribution of history for the Hit trial during the na\u00efve, learning, and expert phases (averaged across seven mice).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83702/elife-83702-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Performance (d\u2032) for all mice across the entire learning profile (50-trial bins), fitted with a sigmoid function. The inflection point of the sigmoid fit is defined as the learning threshold, and indicated by open circle for each mouse.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83702/elife-83702-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Learning curves for each mouse (d\u2032 as a function of trials) calculated separately based on the previous trial (either a Hit or correct rejection [CR]). (b) Average performance during the expert phase for either a previous Hit (blue) or CR (orange).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/83702/elife-83702-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Each point depicts one mouse. There is no significant difference between the different pairs (p > 0.05; Wilcoxon signed-rank test).\n\nMice were trained on a head-fixed, whisker-based go/no-go texture discrimination task (Chen et al., 2013; Gilad and Helmchen, 2020; Figure 1a; Materials and methods). Each trial started with an auditory cue (stimulus cue), signaling the approach of either two types of sandpapers (grit size P100: rough texture; P1200: smooth texture; 3M) to the mouse\u2019s whiskers as \u2018go\u2019 or \u2018no-go\u2019 textures. The texture stayed in touch with the whiskers for 2 s, and then it was moved out after which an additional auditory cue (response cue) signaled the start of a 2-s response period (Figure 1b) followed by a 6-s break until the next trial auditory cue. Five mice were trained to lick for the P100 and two mice were trained to lick for the P1200 texture. Mice were rewarded in \u2018Hit\u2019 trials for correctly licking after the go texture and punished with white noise for incorrectly licking for the no-go texture (\u2018false alarm\u2019 trials, FA). Mice were neither rewarded nor punished when they withheld licking for the go and no-go textures (\u2018Miss\u2019 and \u2018correct-rejection\u2019, CR, trials, respectively). We defined two time windows within the trial structure: the \u2018pre period\u2019 when the texture approaches the whiskers (\u22121 to \u22120.6 s relative to the texture stop; mainly before the first whisker-texture touch); and the \u2018stim period\u2019 during texture touch (\u22120.2 to 0.2 s relative to texture stop; Figure 1b).\n\nThe performance of all mice increased with training (5\u201311 days; ~500 trials/day) and eventually reached high discrimination levels (quantified by d\u2032; Figure 1\u2014figure supplement 1; Gilad et al., 2018; Materials and methods). We defined the \u2018learning threshold\u2019 of reaching expert level for each mouse by crossing the inflection point of the sigmoid fit for the learning curve (in units of \u2018trial number\u2019; Figure 1e, Figure 1\u2014figure supplement 1). The fastest learning mouse reached threshold in slightly less than thousand trials whereas mouse #4 took substantially longer (Figure 1\u2014figure supplement 1). In addition, we defined a naive (first day of recording), learning (day of crossing the learning threshold; second or third day), and expert (last recording day) phases for each mouse (Figure 1e). All mice, after gaining expertise, showed strong activation in the BC (Figure 1d, upper panel). This activation was during stimulus representation, stronger in Hit trials compared to CR trials (Figure 1d, lower panel), not dependent on the texture type (i.e., if the hit was P100 or P1200).\n\nHere, we focus on the trial history content for each trial type. We subgrouped all the Hit trials (i.e., the current trial type) based on the previous trial type (i.e., trial history): CR (\u2018CR-Hit\u2019; n = 423 \u00b1 74, mean \u00b1 standard error of the mean [SEM]), Hit (\u2018Hit-Hit\u2019; n = 585 \u00b1 42), FA (\u2018FA-Hit\u2019; n = 217 \u00b1 24), or Miss (\u2018Miss-Hit\u2019; n = 55 \u00b1 24; Figure 1f, g). \u2018Miss-Hit\u2019 were not analyzed due to a small number of trials. Our main analysis will compare \u2018CR-Hit\u2019 (orange) and \u2018Hit-Hit\u2019 (blue) trial pairs, since they are present in large numbers during all phases in each mouse separately (Figure 1g; but see Figure 2\u2014figure supplement 7 for a comparison of other trial pairs). We note that learning curves that are calculated separately for each pair (i.e., either a preceding Hit or CR trial) were not significantly different (Figure 1\u2014figure supplement 2). We further note FA probabilities did not significantly differ based on the preceding trial type (Figure 1\u2014figure supplement 3). In addition, the lick reaction time (but not the lick rate) between Hit-Hit and CR-Hit were significantly different (p < 0.05; Wilcoxon signed-rank test). We emphasize that in this comparison, the current trial type is identical (i.e., Hit) whereas only the pervious trial (i.e., the history, CR, or Hit) differed, therefore eliminating activity differences due to the current stimulus.\n\n### Trial history in BC emerges during learning\n\nFirst, we focused on trial history encoding in BC, specifically during the stim period. BC displayed higher activity during CR-Hit compared to Hit-Hit only during learning and expert phases, but not during the naive period (Figure 2a, Figure 2\u2014figure supplement 1). This difference was significant during the stim period in learning and expert phases across mice (Figure 2b; two-way analysis of variance [ANOVA] with repeated measures; DF(1-6) F = 51 p < 0.001, DF(2-12) F = 18 p < 0.001, DF(2-12) F = 5 p < 0.05 for trial history, learning, and the interaction between trial history and learning; post hoc Tukey analysis p < 0.05 for trial history in learning and expert phases; p > 0.05 in the naive phase). In addition, a statistical comparison between CR-Hit and Hit-Hit responses within each mouse separately maintained significance for expert (7/7 mice; Mann\u2013Whitney U-test p < 0.05) and learning (6/7 mice) but not for naive (0/7 mice) (Figure 2\u2014figure supplement 1). We further report that responses during the reward period in cortex and specifically in BC went back to baseline 4\u20135 s after the start of the reward period and 6\u20138 s before the presentation of the next stimulus (total inter-trial interval ranged between 10 and 12 s). In addition, responses in BC during the reward period were not consistently modulated as a function of learning (p > 0.05; Wilcoxon signed-rank test between naive and expert, BC response averaged during the reward period, 2\u20134 s after stimulus onset; n = 7 mice). Taken together, we find that direct responses from the reward period do not affect history-related responses during the next trial.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83702/elife-83702-fig2-v1.jpg)\n\n**Figure 2.:** (a) Example of average BC response of Hit-Hit (blue) and CR-Hit (orange) from two mice (upper and lower rows) in the naive, learning, and expert phases. Shaded bar depicts the stim period. Error bars are mean \u00b1 standard error of the mean (SEM) across trials (mouse 1: n = 86/66, 90/70, and 166/173 Hit-Hit/CR-Hit for naive, learning, and expert phases, respectively; mouse 6: n = 94/80, 86/121, and 99/135). (b) Grand average of BC activity during the stim period (\u22120.2:0.6 ms) for the naive, learning, and expert phases. Error bars are mean \u00b1 SEM across mice (n = 7). (c) Same as (a) but for body and whisker movements in the Hit-Hit (light gray) and CR-Hit (dark gray) trials. (d) Same as (b) but for body (top) and whisker (bottom) movements. *p < 0.05; n.s. \u2013 not significant; Wilcoxon signed-rank test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83702/elife-83702-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Average BC response of Hit-Hit (blue) and CR-Hit (orange) for each of the seven mice (similar to Figure 2a) in the naive (top row), learning (middle row), and expert (bottom row) phases. Shaded bar depicts the stim period. Error bars are mean \u00b1 standard error of the mean (SEM) across trials (trial numbers indicated in each inset). (b) Average activity in each mouse for the CR-Hit (orange) and Hit-Hit (blue) conditions within the stim period (\u22120.2 to \u22120.8 s with exception for m2 = 0.75\u20131, m3 = 0.8\u20131.55, m4 = 0.55\u20131.1). *p < 0.05; n.s. \u2013 not significant. Mann\u2013Whitney U-test.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83702/elife-83702-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Response in barrel cortex (BC) during expert performance (m3) for Hit-Hit (blue) and CR-Hit (orange) during 473 nm excitation (left), 510 nm (middle), and corrected for hemodynamics (right; 473 signal minus 510 signal). The corrected signal maintains the results of the uncorrected signal, that is, higher response for CR-Hit compared to Hit-Hit. (b) Hit-Hit (blue) and CR-Hit (orange) average response in BC during the stim period (\u22120.2 to 0.2 s) before and after hemodynamic correction presented separately for two different mice. Error bars are standard error of the mean (SEM) over trials. Mann\u2013Whitney U-test. *p<0.05.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/83702/elife-83702-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) We trained three additional mice while using an imaging protocol of interleaved 473 nm (blue) and 405 nm (violet, used as a control light for non-calcium dynamics). In these mice, we used a cranial window of 5 mm that covers large parts of the posterior cortex (right). (b) Example activity maps corrected for hemodynamic responses (473 minus 405 signals) averaged during the stim period for the CR-Hit (left) and Hit-Hit (right) conditions. (c) Responses for the CR-Hit (orange) and Hit-Hit (blue) in barrel cortex (BC) for the 473 nm, 405 nm and corrected signal (473 minus 405; Expert mouse). Error bars depict standard error of the mean (SEM) across trials (n = 75 and 91 trials for CR-Hit and Hit-Hit conditions). (d) Grand average responses for the CR-Hit and Hit-Hit conditions in BC during the stim period and rostrolateral (RL) during the pre period in the naive, learning, and expert phases. Each mouse is presented separately. Error bars depict SEM across trials (at least 10 trials for each condition). Mann\u2013Whitney U-test. *p < 0.05, **p < 0.01, ***p < 0.001, n.s. \u2013 not significant.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/83702/elife-83702-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (a) Three mice with a cranial window were imaged in barrel cortex (BC) and rostrolateral (RL) using a two-photon microscope. Mice performed the task during expert phase. (b) Mean response of example single neurons in BC for Hit-Hit (blue) and CR-Hit (orange) conditions. (c) Average response during the stim period for the three mice separately for Hit-Hit (blue) and CR-Hit (orange) conditions. Error bars depict standard error of the mean (SEM) across cells (number of cells shown under each bar). The results from single cells, that are not affected from hemodynamic signal, are similar to the wide-field signal. (d, e) Same as a, b but for RL during the pre period. Wilcoxon Signed-rank test. *p < 0.05, **p < 0.01, ***p < 0.001, n.s. \u2013 not significant.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/83702/elife-83702-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (a) A snapshot of the body camera and 22 tracking point along the mouse body. (b) Time course in an example mouse for each tracking point during CR-Hit (orange) and Hit-Hit (blue) conditions. Shaded areas depict standard error of the mean (SEM) across trials (n = 170 and 159 for CR-Hit and Hit-Hit conditions, respectively). Shaded vertical areas mark the stim period and baseline periods. (c) Average Euclidian distance (frame-to-frame) during the stim period for each tracking point in the CR-Hit (orange) and Hit-Hit (blue) conditions in the naive, learning, and expert phases. Each point depicts a mouse (n = 7). (d) Same as in c but for the baseline period. There was no significant difference between CR-Hit (orange) and Hit-Hit (blue) conditions for each tracking point in each phase. p > 0.05 Wilcoxon signed-rank phase. *p<0.05.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/83702/elife-83702-fig2-figsupp6-v1.jpg)\n\n**Figure 2\u2014figure supplement 6.:** (a) Example video frames of the whisker camera (sampled at 250 Hz in three mice). Single whiskers were tracked using DeepLabCut. We focused on the whisker which displayed the most contact with the texture. The curvature was defined for each two adjacent tracking points as the local slope divided by the general slope between the proximal and distal tracking point. (b) Curvature for each two adjacent points as a function of time (example expert mouse) for CR-Hit (orange) and Hit-Hit (blue) conditions. Shaded area depicts the stim period. (c) Average curvature during the stim period for CR-Hit (orange) and Hit-Hit (blue) conditions during naive, learning, and expert phases. Three mice shown separately. Error bars depict standard error of the mean (SEM) across trials. In general, we found no consistent difference in curvature between CR-Hit (orange) and Hit-Hit (blue) conditions. *p < 0.05; n.s. \u2013 not significant; Mann\u2013Whitney U-test.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/83702/elife-83702-fig2-figsupp7-v1.jpg)\n\n**Figure 2\u2014figure supplement 7.:** Grand average of BC activity of different trial pairs in the learning phase during the stim period (\u22120.2:0.6 ms). Error bars are mean \u00b1 standard error of the mean (SEM) across mice (n = 7). *p < 0.05; n.s. \u2013 not significant; Wilcoxon signed-rank test.\n\nTo control for the possible contamination of non-calcium-related signals such as hemodynamics, we performed a battery of additional experiments (see Materials and methods). First, two mice performed the task (expert) while we excited the cortex with a control light (510 nm, isosbestic wavelength). Correcting the original signal with the control light maintained significant difference in trial history (Figure 2\u2014figure supplement 2). Second, we trained an additional three mice on the same task and imaged their cortex using an interleaved protocol of 473 (calcium signal) and 405 (control signal, isosbestic wavelength) nm lights. The corrected signal (473 signal minus the 405 signal; see Materials and methods) maintained a significant trial history difference between CR-Hit and Hit-Hit conditions during learning and expert phases, but not during the naive phase (Figure 2\u2014figure supplement 3). Finally, we further performed two photon imaging of single cells in BC and RL during the expert phase and found significant trial history differences, that is, higher response in CR-Hit compared to Hit-Hit in BC (during the stim period) and RL (Figure 2\u2014figure supplement 4; during the pre period). Taken together, non-calcium dynamics such as hemodynamics have a minor effect the results, specifically regarding trial history differences.\n\nTo check whether this effect is not due to difference in body or whisker movements between the two pair types, we calculated the body movements (1 \u2212 frame-to-frame correlation in mouth, forelimb and hindlimb areas) and whisker envelope as a function of time (see Materials and methods). Both body movements and whisker envelope were similar between CR-Hit and Hit-Hit pairs (Figure 2c) and there was no significant difference across mice during the stim period for neither naive, learning, or expert phases (Figure 2d, p > 0.05; signed-rank test) nor during the pre period (p > 0.05, signed-rank test, data not shown). A within mouse statistical comparison between body or whisker parameters in CR-Hit and Hit-Hit maintained a non-significant difference in expert (1/7 mice were significantly different; Mann\u2013Whitney U-test p > 0.05), learning (2/7 mice) and naive (0/7 mice). In addition, we performed a more detailed body and whisker analysis, for example, decomposing the movement to different body parts and obtaining single whisker dynamics. These analyses did not find significant differences in movement parameters between CR-Hit and Hit-Hit conditions (Figure 2\u2014figure supplement 5 and Figure 2\u2014figure supplement 6). These results, along with the fact that the current trial type in both conditions is identical, strongly indicate the presence of trial history information in BC.\n\nWe next quantified the emergence of trial history with regard to the different time scales, the trial structure (within seconds) or the learning profile (across days). We first show 2D activity plots in BC for each trial pair (i.e., CR-Hit and Hit-Hit; showing activity of only the Hit trial), where trial time is plotted on the x-axis and trial number across learning time on the y-axis (Figure 3a; 100-trial bins regardless of trial pair). Both trial pairs display an increase in activity during the stim period slightly after passing the learning threshold. We defined a history modulation index as the difference in activity for BC between the two pair types (Hit-CR minus Hit-Hit). History modulation increased around the stim period only in learning and expert phases but not in the naive case (Figure 3b, c). A significant history modulation was defined as values exceeding mean \u00b1 2 standard deviation (SD) of a trial-shuffled sample distribution (n = 1000 iterations) and was performed for each mouse separately (Figure 3b). The onset of the history modulation was defined as the first-time frame reaching significant values (red arrows in Figure 3b) and was found in BC within the stim period (Figure 3d; 0.08 \u00b1 0.28 s, \u22120.32 \u00b1 0.28 s, median \u00b1 SEM relative to texture stop in learning and expert phases, respectively). We note that in the expert phase there is also a small peak exceeding the significance around the cue, indicating history information in BC may be present to some extent before stimulus presentation. Next, we quantified the history modulation in BC during the stim period as a function of the learning profile. History modulation in BC had the steepest increase after mice crossed their learning threshold (Figure 3e, f). The onset of the history modulation was defined as the first trial bin exceeding mean \u00b1 2 standard deviation of trial-shuffled sample distribution and was found to occur shortly after the learning threshold, highly correlated with the learning threshold indicating strong relationship between history emergence and learning of each individual mouse (Figure 3g, h; 500 \u00b1 221 trials, median \u00b1 SEM, r = 0.97, p < 0.001, Spearman correlation). Note that our definition of significance is relatively strict and an increase in history information can be observed shortly (i.e., tens of trials) after crossing the learning threshold (Figure 3e).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83702/elife-83702-fig3-v1.jpg)\n\n**Figure 3.:** (a) 2D plot of BC responses for Hit-Hit (top) and CR-Hit (bottom; trial structure on x-axis; trial number across learning in bins of 100 trials) on the y-axis. Red horizontal dashed line indicates learning threshold. Black dashed vertical line indicates the time of texture stop. (b) Example from one mouse of the history modulation (activity in CR-Hit minus activity in Hit-Hit) in BC along the trial structure in the naive, learning, and expert phases. Dashed gray line is the mean \u00b1 2 standard deviation (SD) of the trial-shuffled data (n = 1000 iterations). The first-time frame crossing the shuffle data is defined as the onset and is marked in red. (c) Mean history modulation in BC along trial time. Error bars depict mean \u00b1 standard error of the mean (SEM) across mice (n = 7). (d) Median onset of history modulation. Error bars depict median \u00b1 SEM across mice (n = 7). (e) Example from one mouse of the history modulation along learning dimension. Dashed gray line is the mean \u00b1 2 SD of the trial-shuffled data (n = 1000 iterations). The first-time frame crossing the shuffle data is defined as the onset for learning and is marked in red. The vertical red dashed line (trial 0) marks the learning threshold. (f) Mean history modulation in BC along the learning profile aligned to the learning threshold of each mouse (time 0). Error bars depict mean \u00b1 SEM across mice (n = 7). (g) Onset of the history modulation for learning as a function of the learning threshold. Each point is one mouse (n = 7). (h) Median onset of history modulation relative to the learning threshold. Error bars depict median \u00b1 SEM across mice (n = 7).\n\nWe expanded our trial history analysis also for the other pair types other than CR-Hit and Hit-Hit. For sufficient trial numbers, we focused on the learning phase. First, we compare FA-Hit to Hit-Hit and CR-Hit, that is, the same current trial type but preceded by an error trial (FA). Response in BC for FA-Hit was similar to Hit-Hit and significantly lower compared to CR-Hit (Figure 2\u2014figure supplement 7; p < 0.05 signed-rank test). This result highlights that specifically a correct rejection (CR), rather than the stimulus (i.e., texture) type, has a strong history effect. Next, we compared FA-CR, Hit-CR, and CR-CR, that is, similar to the previous comparison differing only in the current trial type (CR instead of Hit). There was no significant difference between the different pairs, indicating that the current trial type, that is, Hit in this case, has a strong effect along with the history of the CR (Figure 2\u2014figure supplement 7; p > 0.05, signed-rank test). A comparison of FA-FA, Hit-FA, and CR-FA did not show a significant difference (Figure 2\u2014figure supplement 7; p > 0.05, signed-rank test). In general, a preceding CR trial resulted in higher activation independent of the current trial type (i.e., Hit, CR, or FA; not significant for CR and FA), indicating that history information is present at the current time independently of incoming sensory information (Figure 2\u2014figure supplement 7; compare orange bars to the blue bars). In conclusion, we found that the CR-Hit pair displayed a specific enhancement in BC which is related both to the preceding and current trial type (see Discussion).\n\nNext, we expanded our analysis to the whole dorsal cortex during the stim period. Mean activation maps for both CR-Hit and Hit-Hit pairs (i.e., activity for the current Hit trial whereas only the preceding trial was different) during the stim period displayed a pronounced activation patch in BC during naive, learning, and expert phases (Figure 4a). BC activity was higher in CR-Hit compared to Hit-Hit especially during learning and expert phases. The grand average activity for all 25 cortical areas highlights history-dependent information that emerges during learning (Figure 4b). We note that other areas, for example, different association areas, also encoded trial history information especially during learning and expert phases. In addition, we present activity difference maps between CR-Hit and Hit-Hit conditions during the stim period (Figure 4\u2014figure supplement 1a). These maps clearly show the highest trial history information (i.e., difference in activity) in BC. Taken together, these results indicate that BC encodes trial history information that emerges during the stim period and just after learning. These results gave us the motivation to examine history-dependent information at time periods before texture touch.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83702/elife-83702-fig4-v1.jpg)\n\n**Figure 4.:** (a) Mean activity maps averaged within the stim period (\u22120.2 to 0 s relative to texture stop) of CR-Hit (left) Hit-Hit (right) during the naive (top), learning (middle), and expert (bottom) phases. Color bar denotes normalized fluorescence (\u2206F/F). 2D top-view atlas is superimposed in gray. (b) Grand average neuronal activity during the stim period (\u22120.2:0.2 s) for Hit-Hit (blue) and CR-Hit (orange) in all 25 areas for the naive (top), learning (middle), and expert (bottom) phases. Error bars depict mean \u00b1 standard error of the mean (SEM) across mice (n = 7).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83702/elife-83702-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Example activity difference maps (activity in CR-Hit minus activity in Hit-Hit conditions) averaged within the stim period for five example expert mice. Color denotes difference in \u0394F/F. (b) Same as in A but during the pre period.\n\n### Trial history in RL before sensation\n\nWe next focused our analysis on the pre period, just before texture touch (\u22121 to \u22120.6 s before texture stop). Mean activity maps during the pre period highlight activity in association area RL that is present for both CR-Hit and Hit-Hit pairs during the naive, learning, and expert phases (Figure 5a; Gilad and Helmchen, 2020). RL pre period activity is higher in CR-Hit compared to Hit-Hit mostly during learning and expert phases. In addition, higher RL activity in CR-Hit pair starts even before the pre period, indicating that trial history is not directly related to the current stimulus (Figure 5b). The grand average of all 25 cortical areas, highlights the emergence of trial history during learning, especially in RL, but also in other association and sensory areas (Figure 5c). In addition, we present activity difference maps between CR-Hit and Hit-Hit conditions during the pre period (Figure 4\u2014figure supplement 1b). These maps localize trial history information to RL which also spreads to other adjacent association areas. Moreover, activity patches slightly vary across the different mice which may affect the grand average (averaged across mice) of each area.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/83702/elife-83702-fig5-v1.jpg)\n\n**Figure 5.:** (a) Mean activity maps averaged within the pre period (\u22121 to \u22120.8 s relative to texture stop) of CR-Hit (left) Hit-Hit (right) during the naive (top), learning (middle), and expert (bottom) phases. Color bar denotes normalized fluorescence (\u2206F/F). 2D top-view atlas is superimposed in gray. (b) Example from one mouse of average RL response of Hit-Hit (blue) and CR-Hit (orange) in the naive (top), learning (middle), and expert (bottom) phases. Shaded gray bar depicts the pre period (\u22121 to \u22120.6). Error bars are mean \u00b1 standard error of the mean (SEM) across trials (n = 51/54, 92/78, and 168/173 Hit-Hit/CR-Hit for naive, learning, and expert phases, respectively). (c) Grand average neuronal activity during the pre period (\u22121 to \u22120.6) for Hit-Hit (blue) and CR-Hit (orange) in all 25 areas for the naive (top), learning (middle), and expert (bottom) phases. Error bars depict mean \u00b1 SEM across mice (n = 7).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83702/elife-83702-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Grand average of RL activity for Hit-Hit (blue) and CR-Hit (orange) during the pre period (\u22121 to \u22120.6 ms) for the naive, learning and expert phases. Error bars are mean \u00b1 standard error of the mean (SEM) across mice (n = 7). *p < 0.05; n.s. \u2013 not significant; Wilcoxon signed-rank test.\n\nRL activity was significantly higher in CR-Hit compared to Hit-Hit trials in the pre period during the expert phase (Figure 5\u2014figure supplement 1; signed-rank test, p < 0.05, similar trend for the learning phase but insignificant; not significant for the naive phase). In addition, a statistical comparison between CR-Hit and Hit-Hit responses in RL within each mouse separately maintained significance for expert phase (5/7 mice; Mann\u2013Whitney U-test p < 0.05). Body movements and whisker parameters did not significantly differ between CR-Hit and Hit-Hit conditions during the pre period (Similar to the stim period. Across and within mice. p > 0.05; Mann\u2013Whitney U-test). The onset of history modulation within the trial structure (as in Figure 3d) was earlier in RL compared to BC in both learning (\u22120.15 \u00b1 0.85 and 0.05 \u00b1 0.86 s, median \u00b1 SD in RL and BC, respectively) and expert phases (\u22120.75 \u00b1 0.53 and \u22120.1 \u00b1 0.74 s, median \u00b1 SD in RL and BC, respectively) but not significantly different (p > 0.05, signed-rank test). The onset for the history modulation with relation to the learning profile in RL (similar to Figure 3h; During the pre period) was also earlier than BC, but not significantly different (200 \u00b1 431 trials after crossing threshold compared to 500 \u00b1 221 in BC; median \u00b1 SD, p > 0.05 singed rank test). Taken together, these results indicate that as mice gain expertise, prior to the sensation period, RL encodes history information, which may be later projected down onto BC where it is integrated with information of the current incoming texture.\n\n### Past versus present discrimination power in BC and RL\n\nHow well can BC and RL activity discriminate at the single trial level past information compared to the information of the current stimulus? To do this, we computed the receiver operating characteristics (ROC) analysis between specific trial types (Gilad et al., 2020; Gilad and Helmchen, 2020), along with the area under the curve (AUC) quantifying the discrimination power at the single trial level (Materials and methods). We calculated the AUC between two types of trials (Figure 6a): (1) Activity between CR-Hit and Hit-Hit pairs based on the activity during the Hit trial. This is defined as History AUC since only the previous trial is different. (2) Activity between the current Hit and CR trials. This is defined as the current AUC because the current trial types are different (both in terms of stimulus type and action). Both history and current AUCs are calculated for BC and RL for each time frame along the trial structure and for naive, learning, and expert phases. Intuitively, one would assume that the current AUC will display higher discrimination power compared to the history AUC because the latter AUC measure compares the same previous trial type which should be harder to discriminate. Interestingly, during the expert phase, history AUC in both BC and RL has a discrimination power in the stim period that is not significantly different than that of the current AUC (Figure 6b, c; p > 0.05; singed rank test). In other words, we found that BC and RL discriminate past stimuli just as well as the current stimuli. In addition, during the learning phase, RL and to some extent BC, display a significantly higher history AUC compared to the current AUC, specifically in the pre period (Figure 6d, e; p < 0.05; singed rank test). This indicates that history information is discriminative at the single trial level before stimulus onset. Taken together, we find that BC and RL can encode the past just as well as the present.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/83702/elife-83702-fig6-v1.jpg)\n\n**Figure 6.:** (a) Schematic diagram for the two types of area under the curve (AUC) measures (derived from a receiver operating characteristics [ROC] analysis): history AUC between the Hit responses for Hit-Hit and CR-Hit trial types. Current AUC between Hit and CR trial types regardless of their history. (b) Grand average of the history (red) and current (blue) AUC measures in barrel cortex (BC; left) and rostrolateral (RL; right) along the trial structure during the expert phase. Error bars depict mean \u00b1 standard error of the mean (SEM) across mice (n = 7 ). Values significantly differ from chance (0.5) in history AUC (p < 0.05, two-tailed t-test, for both BC and RL). (c) Grand average of history and current AUC measures during the stim period in the expert phase. Error bars as in a. (d) Same as in a but for the learning phase. Error bars as in a, values significantly differ from chance (0.5) for history AUC (p < 0.05, two-tailed t-test, for both BC and RL), but not for the current AUC in RL. (e) Same as in c, but for the pre period during the learning phase. *p < 0.05; n.s. \u2013 not significant; Wilcoxon signed-rank test. (f) History AUC map examples within the pre period. Each pixel in the map depicts the history AUC value, that is, the classifier accuracy between Hit-Hit and CR-Hit conditions. (g) Same as in f but average within the stim period. (h) History AUC values during the pre period for all the 25 cortical areas. Error bars depict number of mice (seven mice). (i) Same as in h, but for the stim period.\n\nWe next calculated the history AUC for each pixel during either the pre or stim period (during expert phase). The history AUC maps during the pre period display AUC values around the RL areas (Figure 6f). In contrast, the history AUC maps during the stim period display AUC values mostly in BC (Figure 6g). Quantified across 25 areas and averaged across mice, RL displays the highest history AUC during the pre period, whereas BC displays the highest history AUC values during the stim period (Figure 6h, i). We note that additional cortical areas such as other association areas also display high history AUC values. In summary, we find that trial history emerges in RL before the texture arrives and then shifts to BC during stimulus presentation.\n\n## Discussion\n\n### History information is trial-type specific\n\nWe have identified cortex wide encoding of trial history information that emerges as mice learn to discriminate between two textures. Trial history encoding was not dependent on the current stimulus and emerged at RL association area before texture touch. Our results indicate that a previous CR trial will lead to higher activity in BC and RL compared to a previous Hit trial. This difference is probably not due to pure sensory differences in the previous trial since the effect was not present after FA trials (sup Figure 2\u2014figure supplement 7, left panel). In addition, mice trained to lick the P1200 texture displayed a similar bias to the CR-Hit, further indicating that these differences are not purely sensory related. Moreover, this difference is probably not related to the previous motor action (e.g., either lick or no-lick). During the current trial, body and whisker movements were not significantly different, emphasizing that there are no motor-related differences based on the previous trial (Figure 2c, d). The fact that these differences emerged only after learning implies that these differences are not purely sensory or motor related but rather reflect internal history-related information. It may be that in a go/no-go discrimination task the mouse mainly learns not to lick for the no-go texture (i.e., CR), making the information of a CR trials more pronounced relatively to Hit trials. Another possibility is that a previous CR will cause a pronounced anticipatory state for the incoming texture, leading to enhanced cortical activity. Again, we did not find any consistent differences in motor movements based on the previous trials making this possibility less likely. In summary, our results indicate that history-dependent information emerges internally in cortex as mice learn to discriminate between two stimuli.\n\n### Trial history emerges in RL and transferred to BC\n\nBC is considered a lower-order sensory area but encodes not only lower-order stimulus features (Chen et al., 2013; Estebanez et al., 2012; Garion et al., 2014; Safaai et al., 2013) but also higher-order information such as choice and reward value (Ch\u00e9reau et al., 2020; Rodgers et al., 2021; Zuo and Diamond, 2019). We additionally found that BC carries trial history information during the sensation period which is related to the previous trial several seconds back. The presence of trial history information in lower-order areas such as BC is interesting by itself, but also raises the question of where is its origin. Interestingly, we show that trial history information emerges in RL before texture touch, implying that RL may transfer past experience in a top-down manner to BC for optimal sensory integration.\n\nThe presence of trial history in RL before the sensation period implies that RL may play a crucial role in linking past experience to ongoing sensory integration. RL is the lateral part of the PPC adjacent to BC, within the cluster of higher-order association areas surrounding V1 (Hovde et al., 2019; Lyamzin and Benucci, 2019). Previous studies showed that trial history of choice outcome is encoded by PPC neurons (Harvey et al., 2012; Hwang et al., 2017; Morcos and Harvey, 2016; Pho et al., 2018), as well as history of sensory information (Akrami et al., 2018). Silencing the PPC specifically during the inter-trial interval affected the behavioral performance of rats (Akrami et al., 2018; Hwang et al., 2017), whereas silencing during the stimulus presentation did not affected performance. The PPC is also reciprocally connected to hippocampus via entorhinal and retrosplenial cortices (Save and Poucet, 2009; Whitlock et al., 2008) and to basolateral amygdala via the anterior cingulate cortex (Suzuki et al., 2022), giving fast access to the different memory hubs. (Khodagholy et al., 2017) showed coupling of PPC and hippocampal ripples that strengthen in non-REM (Rapid eye movement) sleep after rats learned a spatial exploration task, further indicating that RL may relay history information from subcortical memory hubs to cortex.\n\nThe fact that trial history emerges only after learning, implies that it encodes a subjective value or association of a certain past stimulus. It may be that only once the value of a certain stimulus is established, for example, by strengthening indirect connections between basolateral amygdala (that has a role in associative memory) and RL, history information can aid in efficiently encoding the incoming stimulus. In light of this discussion, we suggest that the consolidation of a certain association (in our case a CR), induces long-term synaptic plasticity of top-down projections from higher-order association area (e.g., RL) to a lower-order sensory area (e.g., BC). This projection-specific potentiation may facilitate the recruitment sensory cortex in the context of the immediate previous history.\n\n### Mechanisms for integrating past and present\n\nThe wide-field signal measured in our study reports bulk population activity specifically in L2/3 excitatory cells. Are neuronal populations encoding past and present information in the BC overlapping or distinct? On the one side, it could be that the same cell in BC encodes both the current stimulus and additionally receives top-down input from RL carrying the past stimulus identity. This additional top-down information may amplify sensory integration and optimize discrimination of the current stimulus. On the other side, previous studies that measured single cell activity in the BC showed that single cells tend to respond to one information type (Ch\u00e9reau et al., 2020; Estebanez et al., 2012; Rodgers et al., 2021). In this case, we hypothesize that different populations in BC encode current and history information, which leads to a larger fraction of neurons in BC that are active for the CR-Hit pair. A larger number of active neurons in BC may facilitate sensorimotor integration involving downstream areas such as the motor cortex, further resulting in gaining expertise (Zuo and Diamond, 2019).\n\nIt is probable that both history and learning involve other circuit elements such as deep cortical layers (Pasupathy and Miller, 2005; Roelfsema and Holtmaat, 2018; Vecchia et al., 2020), inhibitory subtypes, other pathways (Lacefield et al., 2019; Mohan et al., 2022; Musall et al., 2023; Petreanu et al., 2012; Williams and Holtmaat, 2019), and subcortical areas (Fu et al., 2015; Garrett et al., 2020; Pasupathy and Miller, 2005; Pfeffer et al., 2013). Future work may aim to dissect specific subpopulations that carry history information using similar behavioral tasks, for example, imaging of cortex-wide layer 5 dynamics. Layer 5 neurons may be ideal in integrating past information arriving onto the apical dendrites in layer 1 (Petreanu et al., 2012) with incoming information arriving from the thalamus. In addition, similar task with reward after CR trails, or tasks that better differentiate between choice and outcome (decision tasks, giving different probabilities of outcome to each choice), or tasks with a dynamic inter-trial interval may shed light on the meaning of this history-learning effect. In summary, our results imply that as we learn, the cortex learns to better integrate past and present information resulting in expert performance.\n\n## Materials and methods\n\n### Animals and surgical procedures\n\nMethods were carried out according to the guidelines of the Veterinary Office of Switzerland and following approval by the Cantonal Veterinary Office in Zurich and by the Institutional Animal Care and Use Committee (IACUC) at the Hebrew University of Jerusalem, Israel (Permit Number: MD-20-16065-4). A total of seven adult male mice (1\u20134 months old) were used in this study. These mice were triple transgenic Rasgrf2-2A-dCre; CamK2a-tTA;TITL-GCaMP6f animals, expressing GCaMP6f in excitatory neocortical layer 2/3 neurons (Gilad and Helmchen, 2020). The dataset used here is identical to our previous study (Gilad and Helmchen, 2020), but here we have applied a completely novel history analysis. To generate triple transgenic animals, double transgenic mice carrying CamK2a-Tta62 and TITL-GCaMP6f63 were crossed with a Rasgrf2-2A-dCre line (64; individual lines are available from The Jackson Laboratory as JAX# 016198, JAX#024103, and JAX# 22864, respectively). The Rasgrf2-2A-dCre;CamK2a-tTA;TITL-GCaMP6f line contains a tet-off system, by which transgene expression can be suppressed upon doxycycline treatment (Garner et al., 2012; Gossen and Bujard, 1992). However, doxycycline treatment is not necessary in these animals, since the Rasgrf2-2A-dCre line holds an inducible system of its own, given that the destabilized Cre (dCre) expressed under the control of the Rasgrf2-2A promoter needs to be stabilized by trimethoprim (TMP) to be fully functional. TMP (Sigma T7883) was reconstituted in Dimethyl sulfoxide (DMSO, Sigma 34869) at a saturation level of 100 mg/ml, freshly prepared for each experiment. For TMP induction, mice were given a single intraperitoneal injection (150 \u00b5g TMP/g body weight; 29 g needle; 3\u20135 days post-surgery), diluted in 0.9% saline solution. We used an intact skull preparation (Silasi et al., 2016) for chronic wide-field calcium imaging of neocortical activity (Gilad et al., 2018). Mice were anesthetized with 2% isoflurane (in pure O2) and body temperature was maintained at 37\u00b0C. We applied local analgesia (lidocaine 1%), exposed and cleaned the skull, and removed some muscles to access the entire dorsal surface of the left hemisphere (Figure 2a; ~6 \u00d7 8 mm2 from ~3 mm anterior to bregma to ~1 mm posterior to lambda; from the midline to at least 5 mm laterally). We built a wall around the hemisphere with adhesive material (iBond; UV-cured) and dental cement \u2018worms\u2019 (Charisma). Then, we applied transparent dental cement homogenously over the imaging field (Tetric EvoFlow T1). Finally, a metal post for head fixation was glued on the back of the right hemisphere. This minimally invasive preparation enabled high-quality chronic imaging with high success rate.\n\n### Texture discrimination task\n\nMice were trained on a go/no-go discrimination task (Figure 1a) using a data acquisition interface (USB-6008; National Instruments) and custom-written LabVIEW software (National Instruments) available as a source code file (Gilad, 2016). Each trial started with an auditory cue (stimulus cue; 2 beeps at 2 kHz, 100 ms duration with 50 ms interval), signaling the approach of either two types of sandpapers (grit size P100: rough texture; P1200: smooth texture; 3M) to the mouse\u2019s whiskers as \u2018go\u2019 or \u2018no-go\u2019 textures (Figure 1a; pseudo-randomly presented with no more than three repetitions). Sandpapers were mounted onto panels attached to a stepper motor (T-NM17A04; Zaber) mounted onto a motorized linear stage (T-LSM100A; Zaber) to move textures in and out of reach of whiskers. The texture stayed in touch with the whiskers for 2 s, and then it was moved out after which an additional auditory cue (response cue; 4 beeps at 4 kHz, 50 ms duration with 25 ms interval) signaled the start of a 2-s response period. The stimulus and response cues were identical in both textures. The interval between the trails was 6 s (8 s from response to next cue). A water reward (~3 \u00b5l) was given to the mouse for licking for the go texture only after the response cue (\u2018Hit\u2019), that is for the first correct lick during the response period (Figure 1a; lick were detected using a piezo sensor). Punishment with white noise was given for licking for the no-go texture (\u2018false alarms\u2019; FA). Licking before the response cue was neither rewarded nor punished. Reward and punishment were omitted when mice withheld licking for the no-go (\u2018correct-rejections\u2019, CR) or go (\u2018Misses\u2019) textures.\n\n### Training and performance\n\nFive mice were trained to lick for the P100 texture (mice #1\u20134 and 6) and two mice were trained to lick for the P1200 texture (mice #5 and 7). Mice were first handled and accustomed to head fixation before starting water scheduling. Before imaging began mice were conditioned to lick for reward after the go texture (presented within a similar trial structure as the task itself). Imaging began only after mice reliably licked for the response cue (typically after the first day; 200\u2013400 trials). On the first day of imaging, mice were presented with the \u2018go\u2019 texture and after 50 trials the \u2018no-go\u2019 texture was gradually introduced (starting from 10% and increasing by 10% approximately every 50 trials; Guo et al., 2014) until reaching 50% probability for the no-go texture by the end of the day. Six out of the seven mice learned the task within 3\u20134 days after around a thousand trials (Supplementary Fig. 1). Mouse #4 learned the task within 10 days. An effort was made to maintain a constant position of the texture and cameras across imaging days in order to maintain similar stimulation and imaging parameters.\n\n### Wide-field calcium imaging\n\nWe used a wide-field approach to image large parts of the dorsal cortex while mice learned to perform the task (Gilad et al., 2018). A sensitive CMOS camera (Hamamatsu Orca Flash 4.0) was mounted on top of a dual objective setup. Two objectives (Navitar; top objective: D-5095, 50 mm f0.95; bottom objective inverted: D-2595, 25 mm f0.95) were interfaced with a dichroic (510 nm; AHF; Beamsplitter T510LPXRXT) filter cube (Thorlabs). This combination allowed a ~9 mm field-of-view, covering most of the dorsal cortex of the hemisphere contralateral to texture presentation. Blue LED light (Thorlabs; M470L3) was guided through an excitation filter (480/40 nm BrightLine HC), a diffuser, collimated, reflected from the dichroic mirror, and focused through the bottom objective ~100 \u00b5m below the blood vessels. Green light emitted from the preparation passed through both objectives and an emission filter (514/30 nm BrightLine HC) before reaching the camera. The total power of blue light on the preparation was <5 mW; that is, <0.1 mW/mm2. At this illumination power we did not observe any photobleaching. Data were collected with a temporal resolution of 20 Hz and a spatial sampling of 512 \u00d7 512 pixels, resulting in a spatial resolution of ~20 \u03bcm/pixel. On each imaging day a green reflectance image was taken as reference to enable registration across different imaging days using the blood vessel pattern (fibercoupled LED illuminated from the side; Thorlabs).\n\n### Mapping and area selection\n\nEach mouse underwent a mapping session under anesthesia (1% isoflurane), in which we presented five different sensory stimuli (contra-lateral side) (Garion et al., 2014). Next, we registered each imaging day to the mapping day using skull coordinates from the green images. Finally, we registered each mouse onto a 2D top view mouse atlas using both functional patches from the mapping and skull coordinates (Garion et al., 2014; 2004 Allen Institute for Brain Science. Allen Mouse Brain Atlas. Available from http://mouse.brain-map.org/29). Within the atlas borders, we defined 25 areas of interest, with some manual modifications within these borders to fit the functional activity for each mouse. Motor cortex areas were defined based on stereotaxic coordinates and functional patches for each mouse (see below). Thus, all mice had similar regions of interest that were comparable within and across mice. We grouped these 25 areas into auditory (green), association (pink), somatosensory + V1 (blue), and motor (red) areas (Figure 1d ). Auditory areas: primary auditory (A1), auditory dorsal (AD), and temporal association area (TEA). Sensory areas: somatosensory mouth (Mo), somatosensory nose (No), somtosensory hindlimb (HL), somtosensory forelimb (FL), barrel cortex (BC; primary somatosensory whisker); secondary somatosensory whisker (S2), somtosensory trunk (Tr), and primary visual cortex (V1). Motor areas: whisker-related primary motor cortex (M1; 1.5 anterior and 1 mm lateral from bregma, corresponding to the whisker evoked activation patch in M1 from the mapping session), anterior lateral motor cortex (ALM; 2.5 anterior and 1.5 mm lateral from bregma) and secondary motor cortex (M2; 1.5 anterior and 0.5 mm lateral from bregma corresponding; Gilad et al., 2018). Association cortex: rostrolateral (RL), anterior (A), anterior lateral (AL), anterior medial (AM), posterior medial (PM), lateral medial (LM), lateral intermediate (LI), posterior lateral (PL), post-rhinal (PR), retrosplenial dorsal (RD), and retrosplenial angular (RA). We note that our definition of association cortex is broad and may include or exclude areas that are not necessarily classical association areas.\n\n### Control for non-calcium-dependent signals\n\nThe data collected in this study used a single wavelength (473 nm) to image calcium dynamics (similar to Gallero-Salas et al., 2021; Gilad et al., 2018; Gilad and Helmchen, 2020). This protocol may additionally collect non-calcium-dependent signal, such as hemodynamic signal, which may affect the results. To control for this, we performed several steps:\n\nTaken together, we were able to replicate our finding by either controlling for non-calcium contamination or directly imaging single cells in BC and RL.\n\n### Whisker and body tracking\n\nIn addition to wide-field imaging, we tracked movements of the whiskers and the body of the mouse during the task (Figure 1a). The mouse was illuminated with a 940-nm infrared LED. Whiskers were imaged at 50 Hz (500 \u00d7 500 pixels) using a high-speed CMOS camera (A504k; Basler), from which we calculated time course of whisking envelope and the time of first touch (see below). An additional camera monitored the movements of the mouse at 30 Hz (The imaging source; DMK 22BUC03; 720 \u00d748 0 pixels). We used movements of both forelimbs and the head/neck region to assess body movements, to reliably detect large movements (Figure 1a; see Data analysis).\n\n### Calculating body movements\n\nWe used a body camera to detect general movements of the mouse (30 Hz frame rate). For each imaging day, we first outlined the forelimbs and the neck areas (one area of interest for each), which were reliable areas to detect general movements. Next, we calculated the body movement (1 minus frame-to-frame correlation) within these areas as a function of time for each trial. We than averaged all the defined body areas to one \u2018body\u2019 vector. As a more detailed analysis, we tracked 22 individual body points using DeepLabCut (Mathis et al., 2018; Figure 2\u2014figure supplement 5a; Mathis et al., 2018). For each tracking point we calculated the Euclidian distance between consecutive frames and compared trial history during naive, learning, and expert phases.\n\n### Whisker tracking\n\nThe average whisker angle across all imaged whiskers was measured using automated whisker tracking software (Knutsen et al., 2005). The mean whisker envelope was calculated as the difference between maximum and minimum whisker angles along a sliding window equal to the imaging frame duration (50 ms; Gilad et al., 2018). Whisker envelope was normalized just before the auditory cue similar to wide-field data (Frame zero). In a more detailed analysis, we tracked single whiskers using DeepLabCut (Mathis et al., 2018) and calculated single whisker kinematics (Figure 2\u2014figure supplement 6). Single whisker parameters were compared between CR-Hit and Hit-Hit conditions (Figure 2\u2014figure supplement 6). In addition, we manually detected the first frame, in which any whisker touched the upcoming texture, using the movies from the whisker camera (LabVIEW custom program). The first touch occurred on average 0.33 and 0.34 s before the texture stopped for naive and expert mice, respectively. Time of first touch did not differ between expert and naive mice (p > 0.05; Mann\u2013Whitney U-test; n = 7 mice). We note that the first touch occurred mostly (but not exclusively) in the pre period from \u22121 to \u22120.5 relative to texture stop.\n\n### Data analysis\n\nData analysis was performed using Matlab software (Mathworks). All mice were continuously imaged during learning (5\u201311 days). Wide-field fluorescence images were sampled down to 256 \u00d7 256 pixels and pixels outside the imaging area were discarded. This resulted in a spatial resolution of ~40 \u03bcm/pixel and was sufficient to determine cortical borders, despite further scattering of emitted light through the tissue and skull. Each pixel and each trial were normalized to baseline several frames before the stimulus cue (frame 0 division). Our main focus was on the history effect. Because the hit trails had the largest portion from all trails, we focused on the hit trials. We subgrouped all the Hit trials based on the type of the preceding trial as follows: CR-Hit \u2013 Hit trials that were preceded by CR trial. Hit-Hit \u2013 Hit trials that were preceded by a Hit trial. FA-Hit \u2013 hit trials that were preceded by an FA trial. We mainly focused on comparing Hit-Hit and CR-Hit pairs since they had a large proportion in naive, learning, and expert phases (but see Figure 2\u2014figure supplement 7). We defined two time periods within the trial structure: pre (\u22121 to 0.6 s relative to texture stop) and stim (\u22120.2 to 0.2 relative to texture stop; Figure 1a).\n\n### Calculation of learning curves\n\nTrials were binned (n = 100 trials with no overlap) across learning (at the stimulus time, adjusted for each mouse) and the performance (defined as d\u2032 = Z(Hit/(Hit + Miss)) \u2212 Z(FA/(FA + CR)), where Z denotes the inverse of the cumulative distribution function) was calculated for each bin. Next, each behavioral learning curve was fitted with a sigmoid function $s(t)=a\\frac{1}{1+e^{\\frac{\u2212(t\u2212b)}{c}}}$, where a denotes the amplitude, b the time point (in trial numbers) of the inflection point, and c the steepness of the sigmoid.\n\nA learning threshold was defined as the bin in which the d\u2032 crossed the inflection point (half point) of the learning curve sigmoid fit (Figure 1\u2014figure supplement 1).\n\n### Defining the learning phases\n\nWe defined the naive, learning, and expert phase each as 1 day of recordings, the naive day was defined as the first day to have enough CRs that the performance is still before the crossing threshold (typically the second recording day). The learning day was defined as the day that the mouse crossed the learning threshold, and the expert was defined as the last day of the mouse (usually the fifth day).\n\n### Calculating history modulation and onset\n\nWe defined the \u2018history modulation\u2019 as the difference between the average activation of all CR-Hit and Hit-Hit trials. To calculate significance of history modulation, we calculated the sample distribution by trial shuffling between CR-Hit and Hit-Hit trials (n = 1000 iterations). We than defined the onset of the history modulation as the first bin exceeding mean \u00b1 2 SD of the sample distribution. We calculated this history modulation and significance across the trial dimension (every frame) and across learning dimension (every 100 trials). In the learning dimension, we calculated the average activity in the stim period (\u22120.2:0.2) of all the CR-Hit and Hit-Hit trials that were falling within each 100 trials bin.\n\n### Discrimination power between hit trials subgrouped by history\n\nTo measure how well could neuronal populations discriminate between go and no-go textures, we calculated an ROC curve and calculated its AUC (with a value of 0.5 indicating no discrimination power). This can be done for a given area, each time frame within each learning phase separately (Figure 6).\n\n### Statistical analysis\n\nIn general, the Wilcoxon signed-rank test was used to compare a population\u2019s median to zero (or between two paired populations). For non-paired populations we used a Mann\u2013Whitney U-test to compare between medians. A two-way repeated measure ANOVA was used to relate between learning and history in BC and RL separately. Multiple group correction was used when comparing between more than two groups.\n",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "4d54d83a-45b8-4a23-88f5-4dfcb89224c9",
+      "submission_id": "73220ffa-d20b-448c-b4bb-2c532de3bfb8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jennifer L Raymond, https://ror.org/00f54p054 Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83702.sa0](https://doi.org/10.7554/eLife.83702.sa0)\n\nThis is important work analyzing the trial-by-trial progression of learning, and how the outcome of one trial influences cortex-wide neural responses on the next trial. The strength of the evidence is compelling, with control experiments provided to rule out potential confounds of hemodynamic effects and extensive analyses provided to address the challenging issue of potential behavioral changes induced by the previous trial.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jennifer L Raymond, https://ror.org/00f54p054 Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83702.sa1](https://doi.org/10.7554/eLife.83702.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting the paper \"History information emerges in the cortex during learning\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nComments to the Authors:\n\nWe are sorry to say that, after consultation with the reviewers, we have decided that this work will not be considered further for publication by eLife.\n\nThe analysis of trial history on neural responses across the cortex, and how they emerge over the course of learning is a scientific area of broad interest. However several potential confounds call into question the central finding about the effect of the preceding trial on neural responses during the next trial :\n\n1) Slow timescale hemodynamics can potentially explain the Hit-Hit/CR-Hit difference and need to be controlled for.\n\n2) Body movements may well differ on rewarded and unrewarded trials can also potentially account for the Hit-Hit/Cr-Hit difference and need to be controlled for (and unfortunately this can drive hemodynamic differences that could account for the result \u2013 for instance, if whisker posture is different after a rewarded and unrewarded trial, which is very common, one could imagine sustained greater blood flow to BC in one case and not the other).\n\n3) Statistical analyses need improvement \u2013 both because a small sample size makes insignificant outcomes highly likely even when in fact things are significant, and because in several places two sample tests are inappropriate.\n\nReviewer #1 (Recommendations for the authors):\n\n1) I found the second paragraph of the introduction a bit hard to follow, especially with regard to what the outstanding questions in the field are. For instance, what does it mean to \"link history information with the learning process\"? What about the \"temporal aspect that enables integration of past information with present sensory information\"?\n\n2) Line 57. Typo. \"Does history information emerges \u2026?\" (Should be emerge).\n\nReviewer #2 (Recommendations for the authors):\n\n1. Whisker plots with n=7 seem a bit excessive; perhaps just show the raw data points and a central tendency? (Figures S3, S4).\n\n2. In several cases, points seem to be superimposed \u2013 if points overlap, as seems to be the case in Figure 2d, please separate them horizontally so that it does not appear that data is missing. If n=5, you will never get p <.05 in which case n.s. in 2d is trivial.\n\n3. Perhaps use the term \"trial history\"/\"sensory history\"/\"reward history\" instead of history information \u2013 \"history information\" is less precise.\n",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6c66208d-ccaa-41ea-8363-9b0b055eb4d0",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C1",
+      "claim": "Seven adult male mice (1\u20134 months old) were used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of seven adult male mice (1\u20134 months old) were used in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the Materials and methods section describing the animals used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "c6342b21-4035-49f1-bd18-67cbe632c627",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C2",
+      "claim": "The mice used were triple transgenic Rasgrf2-2A-dCre; CamK2a-tTA;TITL-GCaMP6f animals expressing GCaMP6f in excitatory neocortical layer 2/3 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These mice were triple transgenic Rasgrf2-2A-dCre; CamK2a-tTA;TITL-GCaMP6f animals, expressing GCaMP6f in excitatory neocortical layer 2/3 neurons (Gilad and Helmchen, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the Materials and methods section with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "4fc83ee3-3ed4-4060-8b23-a5ef993fb690",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C3",
+      "claim": "The dataset used in this study is identical to the one published in Gilad and Helmchen, 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "This dataset is identical to the one published in Gilad and Helmchen, 2020 where we focused only on learning dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicitly stated in the Results section with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "389b0326-db68-4bd5-91bd-50cd3270a1af",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C4",
+      "claim": "Trial history information in barrel cortex (BC) emerges only as the mouse learned the task.",
+      "claim_type": "EXPLICIT",
+      "source": "We found trial history information in barrel cortex (BC) during stimulus presentation. Importantly, trial history in BC emerged only as the mouse learned the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Abstract as a main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "2a74165a-2592-4805-b92f-0b3d57ad834a",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C5",
+      "claim": "Trial history information in rostrolateral (RL) association cortex emerges before stimulus presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we also found learning-dependent trial history information in rostrolateral (RL) association cortex that emerges before stimulus presentation, preceding activity in BC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Abstract as a main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "a5da186b-aebe-4ad5-b7ee-944a9dbc6b31",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C6",
+      "claim": "BC displayed higher activity during CR-Hit compared to Hit-Hit only during learning and expert phases, but not during the naive period.",
+      "claim_type": "EXPLICIT",
+      "source": "BC displayed higher activity during CR-Hit compared to Hit-Hit only during learning and expert phases, but not during the naive period (Figure 2a, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in Results section with reference to figures showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "254ea95c-43fc-4d2a-9f8f-f495081b96be",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C7",
+      "claim": "The difference in BC activity between CR-Hit and Hit-Hit was significant during the stim period in learning and expert phases across mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference was significant during the stim period in learning and expert phases across mice (Figure 2b; two-way analysis of variance [ANOVA] with repeated measures; DF(1-6) F = 51 p < 0.001, DF(2-12) F = 18 p < 0.001, DF(2-12) F = 5 p < 0.05 for trial history, learning, and the interaction between trial history and learning; post hoc Tukey analysis p < 0.05 for trial history in learning and expert phases; p > 0.05 in the naive phase).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis results are provided with specific test parameters and p-values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "6b8a9011-eb6b-476b-b616-50f6cd46bf68",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C8",
+      "claim": "Body movements and whisker envelope were similar between CR-Hit and Hit-Hit pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Both body movements and whisker envelope were similar between CR-Hit and Hit-Hit pairs (Figure 2c) and there was no significant difference across mice during the stim period for neither naive, learning, or expert phases (Figure 2d, p > 0.05; signed-rank test) nor during the pre period (p > 0.05, signed-rank test, data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated with statistical test results and figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "fc775ae8-e704-40d5-8715-513168132029",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C9",
+      "claim": "Responses during the reward period in cortex and specifically in BC went back to baseline 4\u20135 s after the start of the reward period.",
+      "claim_type": "EXPLICIT",
+      "source": "We further report that responses during the reward period in cortex and specifically in BC went back to baseline 4\u20135 s after the start of the reward period and 6\u20138 s before the presentation of the next stimulus (total inter-trial interval ranged between 10 and 12 s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the Results section describing temporal dynamics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "0d8f484b-697b-4760-a522-daec713aa3df",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C10",
+      "claim": "Responses in BC during the reward period were not consistently modulated as a function of learning.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, responses in BC during the reward period were not consistently modulated as a function of learning (p > 0.05; Wilcoxon signed-rank test between naive and expert, BC response averaged during the reward period, 2\u20134 s after stimulus onset; n = 7 mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test results provided showing no significant modulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "43f9e540-bc7a-4ad7-b5b9-d08cd17b97e4",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C11",
+      "claim": "Direct responses from the reward period do not affect history-related responses during the next trial.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we find that direct responses from the reward period do not affect history-related responses during the next trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the temporal analysis of reward period responses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "f5ad0b27-5296-4736-8a5e-d16e0fc455f8",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C12",
+      "claim": "The corrected signal (473 signal minus the 405 signal) maintained a significant trial history difference between CR-Hit and Hit-Hit conditions during learning and expert phases, but not during the naive phase.",
+      "claim_type": "EXPLICIT",
+      "source": "The corrected signal (473 signal minus the 405 signal; see Materials and methods) maintained a significant trial history difference between CR-Hit and Hit-Hit conditions during learning and expert phases, but not during the naive phase (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from hemodynamic correction experiments with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "1c9b0a2f-feab-4e3b-bc97-7f4703d2f005",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C13",
+      "claim": "Two photon imaging of single cells in BC and RL during the expert phase found significant trial history differences.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we further performed two photon imaging of single cells in BC and RL during the expert phase and found significant trial history differences, that is, higher response in CR-Hit compared to Hit-Hit in BC (during the stim period) and RL (Figure 2\u2014figure supplement 4; during the pre period).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from two-photon imaging experiments with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "f64f4fc2-106e-42a9-b019-28951c984b2f",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C14",
+      "claim": "Non-calcium dynamics such as hemodynamics have a minor effect on the results, specifically regarding trial history differences.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, non-calcium dynamics such as hemodynamics have a minor effect the results, specifically regarding trial history differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple control experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "f807a36a-7388-412a-a6ed-f969e3dd7885",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C15",
+      "claim": "History modulation in BC had the steepest increase after mice crossed their learning threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "History modulation in BC had the steepest increase after mice crossed their learning threshold (Figure 3e, f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in Results with figure reference showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "a4546dcb-c68d-45d3-b9e6-852944db7654",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C16",
+      "claim": "The onset of the history modulation was found to occur shortly after the learning threshold, highly correlated with the learning threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "The onset of the history modulation was defined as the first trial bin exceeding mean \u00b1 2 standard deviation of trial-shuffled sample distribution and was found to occur shortly after the learning threshold, highly correlated with the learning threshold indicating strong relationship between history emergence and learning of each individual mouse (Figure 3g, h; 500 \u00b1 221 trials, median \u00b1 SEM, r = 0.97, p < 0.001, Spearman correlation).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical correlation analysis provided with specific values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "bf881129-3733-46cb-8a1b-8bd058ae8ce0",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C17",
+      "claim": "Response in BC for FA-Hit was similar to Hit-Hit and significantly lower compared to CR-Hit.",
+      "claim_type": "EXPLICIT",
+      "source": "Response in BC for FA-Hit was similar to Hit-Hit and significantly lower compared to CR-Hit (Figure 2\u2014figure supplement 7; p < 0.05 signed-rank test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison results with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "4dd26f81-d89a-4ed9-8aec-25d88b80aa64",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C18",
+      "claim": "A preceding CR trial resulted in higher activation independent of the current trial type.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, a preceding CR trial resulted in higher activation independent of the current trial type (i.e., Hit, CR, or FA; not significant for CR and FA), indicating that history information is present at the current time independently of incoming sensory information (Figure 2\u2014figure supplement 7; compare orange bars to the blue bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Pattern observed across different trial type comparisons with figure reference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "42cda108-4bbf-4b0c-9427-348fbeaf7766",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C19",
+      "claim": "RL activity was significantly higher in CR-Hit compared to Hit-Hit trials in the pre period during the expert phase.",
+      "claim_type": "EXPLICIT",
+      "source": "RL activity was significantly higher in CR-Hit compared to Hit-Hit trials in the pre period during the expert phase (Figure 5\u2014figure supplement 1; signed-rank test, p < 0.05, similar trend for the learning phase but insignificant; not significant for the naive phase).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical test results with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "bfcb6b84-91c9-4a62-80e9-812af8325f28",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C20",
+      "claim": "The onset of history modulation within the trial structure was earlier in RL compared to BC in both learning and expert phases but not significantly different.",
+      "claim_type": "EXPLICIT",
+      "source": "The onset of history modulation within the trial structure (as in Figure 3d) was earlier in RL compared to BC in both learning (\u22120.15 \u00b1 0.85 and 0.05 \u00b1 0.86 s, median \u00b1 SD in RL and BC, respectively) and expert phases (\u22120.75 \u00b1 0.53 and \u22120.1 \u00b1 0.74 s, median \u00b1 SD in RL and BC, respectively) but not significantly different (p > 0.05, signed-rank test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Temporal comparison with statistical test results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "73bb25a3-2442-455a-9840-2cfa780a2bab",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C21",
+      "claim": "During the expert phase, history AUC in both BC and RL has a discrimination power in the stim period that is not significantly different than that of the current AUC.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, during the expert phase, history AUC in both BC and RL has a discrimination power in the stim period that is not significantly different than that of the current AUC (Figure 6b, c; p > 0.05; singed rank test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison of AUC values with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "20132cbd-bd24-44f8-bee5-2f79ee6b9d38",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C22",
+      "claim": "BC and RL discriminate past stimuli just as well as the current stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, we found that BC and RL discriminate past stimuli just as well as the current stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the AUC comparison results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "018dfb70-1a52-438c-957b-bfe494eabb1c",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C23",
+      "claim": "During the learning phase, RL and to some extent BC, display a significantly higher history AUC compared to the current AUC, specifically in the pre period.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, during the learning phase, RL and to some extent BC, display a significantly higher history AUC compared to the current AUC, specifically in the pre period (Figure 6d, e; p < 0.05; singed rank test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "63fd2df6-6868-4cbc-867f-559a3680457e",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C24",
+      "claim": "History information is discriminative at the single trial level before stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that history information is discriminative at the single trial level before stimulus onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the pre-period AUC results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "6fe3078e-8a2c-4010-9008-265c3990efab",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C25",
+      "claim": "RL displays the highest history AUC during the pre period, whereas BC displays the highest history AUC values during the stim period.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantified across 25 areas and averaged across mice, RL displays the highest history AUC during the pre period, whereas BC displays the highest history AUC values during the stim period (Figure 6h, i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative comparison across cortical areas with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "811a4947-c2e7-4b0a-a511-81ccfea37c76",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C26",
+      "claim": "Trial history emerges in RL before the texture arrives and then shifts to BC during stimulus presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we find that trial history emerges in RL before the texture arrives and then shifts to BC during stimulus presentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from the temporal and spatial analysis of trial history.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "b3adf770-972d-420f-ad44-cbe9b6a35623",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C27",
+      "claim": "Trial history encoding was not dependent on the current stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Trial history encoding was not dependent on the current stimulus and emerged at RL association area before texture touch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion as a main finding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "b1e28efb-d17f-4076-92f6-ab6cadfef33b",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C28",
+      "claim": "A previous CR trial will lead to higher activity in BC and RL compared to a previous Hit trial.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that a previous CR trial will lead to higher activity in BC and RL compared to a previous Hit trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the main finding in the Discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "4e0bba64-77f6-42bb-8a94-20ac1c9c4d9b",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C29",
+      "claim": "The difference in activity between CR-Hit and Hit-Hit is probably not due to pure sensory differences in the previous trial since the effect was not present after FA trials.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference is probably not due to pure sensory differences in the previous trial since the effect was not present after FA trials (sup Figure 2\u2014figure supplement 7, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference based on comparison with FA trials with figure reference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "62639483-f316-496b-a52c-b602d39f0e9d",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C31",
+      "claim": "The fact that these differences emerged only after learning implies that these differences are not purely sensory or motor related but rather reflect internal history-related information.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that these differences emerged only after learning implies that these differences are not purely sensory or motor related but rather reflect internal history-related information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the learning-dependent emergence of trial history.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "7365947d-43e1-4199-9595-d7efacfc6310",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C32",
+      "claim": "BC carries trial history information during the sensation period which is related to the previous trial several seconds back.",
+      "claim_type": "EXPLICIT",
+      "source": "We additionally found that BC carries trial history information during the sensation period which is related to the previous trial several seconds back.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement in the Discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "025b60fb-dec9-4f3a-a9fd-53ab4fbb6b69",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C33",
+      "claim": "Trial history information emerges in RL before texture touch, implying that RL may transfer past experience in a top-down manner to BC for optimal sensory integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we show that trial history information emerges in RL before texture touch, implying that RL may transfer past experience in a top-down manner to BC for optimal sensory integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the temporal relationship between RL and BC activity.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "566b3def-7a9d-44a6-b516-4bfd49916100",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C34",
+      "claim": "RL is the lateral part of the PPC adjacent to BC, within the cluster of higher-order association areas surrounding V1.",
+      "claim_type": "EXPLICIT",
+      "source": "RL is the lateral part of the PPC adjacent to BC, within the cluster of higher-order association areas surrounding V1 (Hovde et al., 2019; Lyamzin and Benucci, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Anatomical description with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "a7873068-8d2b-4305-bdd1-2d9b4ab0eaeb",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C35",
+      "claim": "Previous studies showed that trial history of choice outcome is encoded by PPC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies showed that trial history of choice outcome is encoded by PPC neurons (Harvey et al., 2012; Hwang et al., 2017; Morcos and Harvey, 2016; Pho et al., 2018), as well as history of sensory information (Akrami et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of previous literature with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "856529fe-9a7b-47ab-9cbe-f3ada1c75586",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C36",
+      "claim": "Silencing the PPC specifically during the inter-trial interval affected the behavioral performance of rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing the PPC specifically during the inter-trial interval affected the behavioral performance of rats (Akrami et al., 2018; Hwang et al., 2017), whereas silencing during the stimulus presentation did not affected performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of previous experimental findings with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "ab5cac35-a485-433e-a61a-908e67ec18f6",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C37",
+      "claim": "The PPC is reciprocally connected to hippocampus via entorhinal and retrosplenial cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "The PPC is also reciprocally connected to hippocampus via entorhinal and retrosplenial cortices (Save and Poucet, 2009; Whitlock et al., 2008) and to basolateral amygdala via the anterior cingulate cortex (Suzuki et al., 2022), giving fast access to the different memory hubs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Anatomical connectivity information with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "ed876991-9e5c-4190-80c5-d301b4d6ab1a",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C38",
+      "claim": "Khodagholy et al. showed coupling of PPC and hippocampal ripples that strengthen in non-REM sleep after rats learned a spatial exploration task.",
+      "claim_type": "EXPLICIT",
+      "source": "(Khodagholy et al., 2017) showed coupling of PPC and hippocampal ripples that strengthen in non-REM (Rapid eye movement) sleep after rats learned a spatial exploration task, further indicating that RL may relay history information from subcortical memory hubs to cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of previous findings with citation and interpretation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "70949a25-7487-4ebb-97d0-ae7ee3e45237",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C39",
+      "claim": "The fact that trial history emerges only after learning implies that it encodes a subjective value or association of a certain past stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that trial history emerges only after learning, implies that it encodes a subjective value or association of a certain past stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the learning-dependent emergence.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "f8e392c8-49ce-49a4-a5b7-16244493281f",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C40",
+      "claim": "The consolidation of a certain association induces long-term synaptic plasticity of top-down projections from higher-order association area to a lower-order sensory area.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of this discussion, we suggest that the consolidation of a certain association (in our case a CR), induces long-term synaptic plasticity of top-down projections from higher-order association area (e.g., RL) to a lower-order sensory area (e.g., BC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "23ff7424-484d-4b14-a861-99661cfeec50",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C41",
+      "claim": "This projection-specific potentiation may facilitate the recruitment sensory cortex in the context of the immediate previous history.",
+      "claim_type": "EXPLICIT",
+      "source": "This projection-specific potentiation may facilitate the recruitment sensory cortex in the context of the immediate previous history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed functional consequence of the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "03d8544b-a4ba-4af6-b78c-a60773fe1459",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C42",
+      "claim": "The wide-field signal measured in this study reports bulk population activity specifically in L2/3 excitatory cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The wide-field signal measured in our study reports bulk population activity specifically in L2/3 excitatory cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the measurement method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "e4fa8519-b25c-434e-a486-a2dfa04c8e4e",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C43",
+      "claim": "Previous studies that measured single cell activity in the BC showed that single cells tend to respond to one information type.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other side, previous studies that measured single cell activity in the BC showed that single cells tend to respond to one information type (Ch\u00e9reau et al., 2020; Estebanez et al., 2012; Rodgers et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of previous findings with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "b6327dc6-4264-4501-8fc3-548fe24ebbed",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C44",
+      "claim": "Different populations in BC encode current and history information, which leads to a larger fraction of neurons in BC that are active for the CR-Hit pair.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, we hypothesize that different populations in BC encode current and history information, which leads to a larger fraction of neurons in BC that are active for the CR-Hit pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis proposed based on previous findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "52331044-cda4-4b34-938b-a4316d47762c",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C45",
+      "claim": "A larger number of active neurons in BC may facilitate sensorimotor integration involving downstream areas such as the motor cortex, further resulting in gaining expertise.",
+      "claim_type": "EXPLICIT",
+      "source": "A larger number of active neurons in BC may facilitate sensorimotor integration involving downstream areas such as the motor cortex, further resulting in gaining expertise (Zuo and Diamond, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism with citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "c0e14064-160c-4dfe-bfa4-2af426b378aa",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C46",
+      "claim": "Both history and learning involve other circuit elements such as deep cortical layers, inhibitory subtypes, other pathways, and subcortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "It is probable that both history and learning involve other circuit elements such as deep cortical layers (Pasupathy and Miller, 2005; Roelfsema and Holtmaat, 2018; Vecchia et al., 2020), inhibitory subtypes, other pathways (Lacefield et al., 2019; Mohan et al., 2022; Musall et al., 2023; Petreanu et al., 2012; Williams and Holtmaat, 2019), and subcortical areas (Fu et al., 2015; Garrett et al., 2020; Pasupathy and Miller, 2005; Pfeffer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discussion of broader circuit involvement with citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "20b58f1b-9bd8-403c-b5af-b16f14e3aa79",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C47",
+      "claim": "As we learn, the cortex learns to better integrate past and present information resulting in expert performance.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our results imply that as we learn, the cortex learns to better integrate past and present information resulting in expert performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "19784c5b-5a60-490c-a3bd-353f9600ceda",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C48",
+      "claim": "Five mice were trained to lick for the P100 texture and two mice were trained to lick for the P1200 texture.",
+      "claim_type": "EXPLICIT",
+      "source": "Five mice were trained to lick for the P100 and two mice were trained to lick for the P1200 texture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental design details stated in Results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "260db612-a275-4334-a4db-cd575856db18",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C49",
+      "claim": "Mice were rewarded in 'Hit' trials for correctly licking after the go texture and punished with white noise for incorrectly licking for the no-go texture.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were rewarded in 'Hit' trials for correctly licking after the go texture and punished with white noise for incorrectly licking for the no-go texture ('false alarm' trials, FA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Task structure description.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "19318626-4a75-46dc-9a92-6058136ebf81",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C50",
+      "claim": "The performance of all mice increased with training and eventually reached high discrimination levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The performance of all mice increased with training (5\u201311 days; ~500 trials/day) and eventually reached high discrimination levels (quantified by d\u2032; Figure 1\u2014figure supplement 1; Gilad et al., 2018; Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Behavioral results with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "b675ba66-bce7-46a5-8d7b-50a41e23474b",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C51",
+      "claim": "Six out of the seven mice learned the task within 3\u20134 days after around a thousand trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Six out of the seven mice learned the task within 3\u20134 days after around a thousand trials (Supplementary Fig. 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Learning timeline data with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "31e5a647-11f4-4061-8d9c-de6348ffab54",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C52",
+      "claim": "Mouse #4 learned the task within 10 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse #4 learned the task within 10 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Individual mouse learning data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "91ec606b-a202-45d8-a1aa-2fe9dec8e6a4",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C53",
+      "claim": "All mice, after gaining expertise, showed strong activation in the BC during stimulus representation, stronger in Hit trials compared to CR trials.",
+      "claim_type": "EXPLICIT",
+      "source": "All mice, after gaining expertise, showed strong activation in the BC (Figure 1d, upper panel). This activation was during stimulus representation, stronger in Hit trials compared to CR trials (Figure 1d, lower panel), not dependent on the texture type (i.e., if the hit was P100 or P1200).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Imaging results with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "4dbac826-0ba1-4b14-b470-c90c6c5c9985",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C54",
+      "claim": "Learning curves that are calculated separately for each pair (i.e., either a preceding Hit or CR trial) were not significantly different.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that learning curves that are calculated separately for each pair (i.e., either a preceding Hit or CR trial) were not significantly different (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "5dd1ffd5-0ec3-4304-b598-35bb02c0e8ed",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C55",
+      "claim": "FA probabilities did not significantly differ based on the preceding trial type.",
+      "claim_type": "EXPLICIT",
+      "source": "We further note FA probabilities did not significantly differ based on the preceding trial type (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "1c164681-c943-4a73-a2f1-62e694c667a3",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C56",
+      "claim": "The lick reaction time (but not the lick rate) between Hit-Hit and CR-Hit were significantly different.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the lick reaction time (but not the lick rate) between Hit-Hit and CR-Hit were significantly different (p < 0.05; Wilcoxon signed-rank test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "1a8120ec-6215-4d9f-af87-3d9a8320c9ce",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C57",
+      "claim": "The first touch occurred on average 0.33 and 0.34 s before the texture stopped for naive and expert mice, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The first touch occurred on average 0.33 and 0.34 s before the texture stopped for naive and expert mice, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Timing measurement from whisker tracking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "059d584f-2742-4da3-a9c7-c953a06660cd",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C58",
+      "claim": "Time of first touch did not differ between expert and naive mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Time of first touch did not differ between expert and naive mice (p > 0.05; Mann\u2013Whitney U-test; n = 7 mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "bf98716c-0c0c-4c7a-93df-658cdb737564",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C59",
+      "claim": "The first touch occurred mostly (but not exclusively) in the pre period from \u22121 to \u22120.5 relative to texture stop.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the first touch occurred mostly (but not exclusively) in the pre period from \u22121 to \u22120.5 relative to texture stop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Temporal analysis of whisker-texture contact.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "5050fd48-b913-44a5-9721-334169627a43",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C60",
+      "claim": "A statistical comparison between CR-Hit and Hit-Hit responses within each mouse separately maintained significance for expert (7/7 mice) and learning (6/7 mice) but not for naive (0/7 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a statistical comparison between CR-Hit and Hit-Hit responses within each mouse separately maintained significance for expert (7/7 mice; Mann\u2013Whitney U-test p < 0.05) and learning (6/7 mice) but not for naive (0/7 mice) (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Within-mouse statistical analysis with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "041a0be3-be29-4139-8b52-dae890fb90ba",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C61",
+      "claim": "A statistical comparison between CR-Hit and Hit-Hit responses in RL within each mouse separately maintained significance for expert phase (5/7 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a statistical comparison between CR-Hit and Hit-Hit responses in RL within each mouse separately maintained significance for expert phase (5/7 mice; Mann\u2013Whitney U-test p < 0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Within-mouse statistical analysis for RL.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "a4c2fbad-a49c-4963-83fa-d78794d32a47",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C62",
+      "claim": "Body movements and whisker parameters did not significantly differ between CR-Hit and Hit-Hit conditions during the pre period.",
+      "claim_type": "EXPLICIT",
+      "source": "Body movements and whisker parameters did not significantly differ between CR-Hit and Hit-Hit conditions during the pre period (Similar to the stim period. Across and within mice. p > 0.05; Mann\u2013Whitney U-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of movement parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "371d2bd9-8ad8-4e12-846f-048d2b741f72",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C63",
+      "claim": "A within mouse statistical comparison between body or whisker parameters in CR-Hit and Hit-Hit maintained a non-significant difference in expert (1/7 mice were significantly different), learning (2/7 mice) and naive (0/7 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "A within mouse statistical comparison between body or whisker parameters in CR-Hit and Hit-Hit maintained a non-significant difference in expert (1/7 mice were significantly different; Mann\u2013Whitney U-test p > 0.05), learning (2/7 mice) and naive (0/7 mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Within-mouse movement analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "b051fa7e-a2c0-4516-b5ce-a75b5bc5a467",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C64",
+      "claim": "Additional cortical areas such as other association areas also display high history AUC values.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that additional cortical areas such as other association areas also display high history AUC values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from AUC analysis across cortical areas.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "73cc3587-5bb2-4deb-a738-edcfc7a4f201",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "claim_id": "C65",
+      "claim": "The onset for the history modulation with relation to the learning profile in RL was earlier than BC, but not significantly different.",
+      "claim_type": "EXPLICIT",
+      "source": "The onset for the history modulation with relation to the learning profile in RL (similar to Figure 3h; During the pre period) was also earlier than BC, but not significantly different (200 \u00b1 431 trials after crossing threshold compared to 500 \u00b1 221 in BC; median \u00b1 SD, p > 0.05 singed rank test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Temporal comparison with statistical test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0410ea7e-b0cc-432b-a1d4-68553664a017",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Seven triple transgenic mice expressing GCaMP6f in L2/3 excitatory neurons were trained on a go/no-go whisker-based texture discrimination task. Six mice learned within 3-4 days (~1000 trials), while one mouse (mouse #4) took 10 days. The dataset is identical to that published in Gilad and Helmchen, 2020.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C48-C52 provide clear experimental design details including animal numbers, genotype, task structure, and learning timelines with figure references. The methods are well-documented and the behavioral results are quantified with d' measures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "c8df26ae-5271-46b1-80c3-3f5210386b50",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Trial history information in barrel cortex (BC) emerges only during learning and expert phases. BC displayed significantly higher activity during CR-Hit compared to Hit-Hit trials during the stim period in learning and expert phases (p<0.001, two-way ANOVA), but not during the naive phase. This effect was significant in 7/7 mice during expert phase and 6/7 mice during learning phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C6, C7, and C60 collectively demonstrate learning-dependent emergence of trial history in BC with appropriate statistical tests (two-way ANOVA with post-hoc analysis) and within-mouse validation. The effect is robust across mice and phases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "a14058aa-ce96-40d2-8bd3-d73689b0cf34",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Body movements and whisker parameters were similar between CR-Hit and Hit-Hit trial pairs across all learning phases. No significant differences were found during either the stim or pre periods (p>0.05), with only 1/7 mice showing significant differences in expert phase and 2/7 in learning phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C62, and C63 provide comprehensive motor control analyses with statistical tests and within-mouse comparisons. The lack of motor differences strengthens the interpretation that observed neural differences reflect internal history information rather than behavioral confounds.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "c0f16890-2008-4509-8505-106abc437bf7",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Responses in BC during the reward period returned to baseline 4-5 seconds after reward onset and were not consistently modulated as a function of learning (p>0.05). Direct responses from the reward period do not affect history-related responses during the next trial.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11 establish temporal independence between reward period activity and subsequent trial history effects through timing analysis and statistical testing. This addresses a potential confound regarding carry-over effects from the previous trial's reward period.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "a7eff129-0daf-4229-ae52-6f5727b397a2",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Multiple control experiments demonstrate that non-calcium dynamics such as hemodynamics have minimal effect on trial history results. Hemodynamic-corrected signals (473nm minus 405nm or 510nm) maintained significant trial history differences, and two-photon imaging of single cells confirmed the findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 describe rigorous controls using isosbestic wavelengths and two-photon imaging. The convergence of evidence from wide-field corrected signals and single-cell imaging strongly supports that the observed effects are calcium-dependent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "79294f4d-ee12-4426-a18d-48ef8a4646ce",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "History modulation in BC increased most steeply after mice crossed their learning threshold. The onset of history modulation occurred 500\u00b1221 trials after the learning threshold and was highly correlated with the learning threshold (r=0.97, p<0.001, Spearman correlation).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 quantify the temporal relationship between learning and history emergence with clear statistical measures. The strong correlation (r=0.97) between history onset and learning threshold across individual mice provides compelling evidence for their relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "29a029c1-7af1-4247-ae56-5546f3d44321",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Trial history effects are specific to correct rejection (CR) trials and emerge only after learning. FA-Hit responses were similar to Hit-Hit and lower than CR-Hit (p<0.05). A preceding CR trial resulted in higher activation independent of current trial type, and this effect was not present after FA trials, indicating the differences are not purely sensory or motor related but reflect internal history information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18, C29, and C31 systematically rule out sensory and motor explanations through comparison of different trial type combinations. The specificity to CR trials and learning-dependent emergence support an internal representation interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "4bf00df9-e679-40f0-88f0-9c5994e75ff1",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Trial history information in rostrolateral (RL) association cortex emerges before stimulus presentation. RL activity was significantly higher in CR-Hit compared to Hit-Hit trials during the pre period in the expert phase (p<0.05), with significance maintained in 5/7 mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C19, and C61 establish that RL encodes trial history before sensory input arrives. Statistical significance across mice and within-mouse validation support this temporal precedence, though the effect is somewhat less robust than in BC (5/7 vs 7/7 mice).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "8c069326-efe1-4010-b6df-deae774257fb",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The onset of history modulation was earlier in RL compared to BC in both learning and expert phases, though not significantly different (p>0.05). Within trial structure, RL onset was -0.15\u00b10.85s vs 0.05\u00b10.86s in learning, and -0.75\u00b10.53s vs -0.1\u00b10.74s in expert. Across learning profile, RL onset was 200\u00b1431 trials vs 500\u00b1221 trials in BC after threshold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C20 and C65 show consistent trends for earlier RL onset but lack statistical significance. The large variability (SD values comparable to or exceeding means) and non-significant p-values prevent definitive conclusions about temporal precedence, though the trend is suggestive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "2f99559b-7e0b-4bae-b43d-26000039e099",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "During the expert phase, history AUC in both BC and RL has discrimination power in the stim period that is not significantly different from current AUC (p>0.05). BC and RL discriminate past stimuli just as well as current stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 demonstrate equivalent single-trial discrimination of history and current information using ROC analysis. The lack of significant difference between history and current AUC is well-supported statistically, indicating robust encoding of past information.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "ef6b6cb2-3e2e-4a0b-ab78-1d5ca3b465f6",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "During the learning phase, RL and to some extent BC display significantly higher history AUC compared to current AUC specifically in the pre period (p<0.05), indicating that history information is discriminative at the single trial level before stimulus onset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 show that during learning, history information can be more discriminative than current information before stimulus presentation. This is supported by statistical testing and suggests a functional role for predictive history signals during skill acquisition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "097507e3-564b-4c13-aa3d-71027780fc54",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Across 25 cortical areas, RL displays the highest history AUC during the pre period, whereas BC displays the highest history AUC during the stim period. Trial history emerges in RL before texture arrival and then shifts to BC during stimulus presentation. Additional association areas also display high history AUC values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 and C64 provide cortex-wide spatial and temporal characterization of history encoding. The systematic comparison across 25 areas with clear temporal dissociation between RL (pre) and BC (stim) periods supports a hierarchical processing model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "7bc6ba54-b867-463b-8248-ffa3509ac2b6",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Trial history encoding is not dependent on the current stimulus and emerges at RL before texture touch. A previous CR trial leads to higher activity in BC and RL compared to a previous Hit trial. RL may transfer past experience in a top-down manner to BC for optimal sensory integration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28, C32-C33 synthesize the main findings into a coherent model. The independence from current stimulus is supported by the experimental design (same current trial type), and the temporal precedence of RL supports the top-down interpretation, though the directionality is inferred rather than directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "c6f770ec-a688-4fa2-a67f-6217487ddf9e",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "RL is part of the posterior parietal cortex (PPC) adjacent to BC. Previous studies showed PPC encodes trial history of choice outcomes and sensory information, and that silencing PPC during inter-trial intervals affects performance. PPC is connected to hippocampus and shows learning-related coupling with hippocampal ripples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 provide anatomical and functional context from prior literature with appropriate citations. These establish the plausibility of RL's role in history encoding based on known PPC properties, though they represent background knowledge rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "f3126b32-2834-4531-bbad-08bb52e5176b",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The learning-dependent emergence of trial history implies it encodes subjective value or association of past stimuli. The consolidation of associations may induce long-term synaptic plasticity of top-down projections from RL to BC, facilitating recruitment of sensory cortex in the context of immediate previous history.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C39-C41 are explicitly speculative (marked as SPECULATION in evidence_type). While the proposed mechanism is plausible and consistent with the data, it lacks direct experimental validation of synaptic plasticity or causal manipulation of RL-to-BC projections.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "36637aad-61eb-4be4-8346-950b874bc295",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Wide-field imaging reports bulk L2/3 excitatory population activity. Previous single-cell studies show individual BC neurons respond to one information type. Different populations in BC may encode current and history information, leading to more active neurons for CR-Hit pairs, which may facilitate sensorimotor integration and expertise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42-C45 acknowledge methodological limitations and propose hypotheses about population vs. single-cell encoding. C42 is supported, C43 cites prior work appropriately, but C44-C45 are speculative without direct evidence for distinct populations or their functional consequences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "51f80731-9803-4243-b66e-c98296a32aa7",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "History and learning likely involve other circuit elements including deep layers, inhibitory subtypes, other pathways, and subcortical areas. As mice learn, the cortex learns to better integrate past and present information resulting in expert performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 provide appropriate caveats about circuit complexity and summarize the main conclusion. C46 acknowledges limitations with citations, while C47 represents a reasonable inference from the collective findings about learning-dependent integration of history and current information.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "8ed6ef19-05d5-4487-9ae6-2131fa02ba25",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "After gaining expertise, all mice showed strong BC activation during stimulus presentation, stronger for Hit than CR trials. Learning curves calculated separately for Hit-Hit and CR-Hit pairs were not significantly different. FA probabilities did not differ by preceding trial type. Lick reaction time (but not rate) differed significantly between Hit-Hit and CR-Hit (p<0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 characterize behavioral and neural responses during expert performance. The findings are well-documented with statistical tests. The small difference in reaction time (C56) is noted but does not undermine the main conclusions given the lack of other motor differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    },
+    {
+      "id": "bfb1a54c-fb5c-49ab-8f29-0c015ae38e16",
+      "content_id": "cc583bbb-c1d0-441d-bb72-5f1764eddfc5",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "First whisker-texture touch occurred on average 0.33-0.34s before texture stop for naive and expert mice, with no significant difference between phases (p>0.05). First touch occurred mostly in the pre period from -1 to -0.5s relative to texture stop.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 provide important temporal information about whisker-texture contact timing. This establishes that the pre period largely precedes sensory input, supporting the interpretation that RL activity reflects anticipatory rather than sensory-driven signals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:42:38.919107Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6c66208d-ccaa-41ea-8363-9b0b055eb4d0",
+      "result_id": "0410ea7e-b0cc-432b-a1d4-68553664a017"
+    },
+    {
+      "claim_id": "c6342b21-4035-49f1-bd18-67cbe632c627",
+      "result_id": "0410ea7e-b0cc-432b-a1d4-68553664a017"
+    },
+    {
+      "claim_id": "4fc83ee3-3ed4-4060-8b23-a5ef993fb690",
+      "result_id": "0410ea7e-b0cc-432b-a1d4-68553664a017"
+    },
+    {
+      "claim_id": "19784c5b-5a60-490c-a3bd-353f9600ceda",
+      "result_id": "0410ea7e-b0cc-432b-a1d4-68553664a017"
+    },
+    {
+      "claim_id": "260db612-a275-4334-a4db-cd575856db18",
+      "result_id": "0410ea7e-b0cc-432b-a1d4-68553664a017"
+    },
+    {
+      "claim_id": "19318626-4a75-46dc-9a92-6058136ebf81",
+      "result_id": "0410ea7e-b0cc-432b-a1d4-68553664a017"
+    },
+    {
+      "claim_id": "b675ba66-bce7-46a5-8d7b-50a41e23474b",
+      "result_id": "0410ea7e-b0cc-432b-a1d4-68553664a017"
+    },
+    {
+      "claim_id": "31e5a647-11f4-4061-8d9c-de6348ffab54",
+      "result_id": "0410ea7e-b0cc-432b-a1d4-68553664a017"
+    },
+    {
+      "claim_id": "389b0326-db68-4bd5-91bd-50cd3270a1af",
+      "result_id": "c8df26ae-5271-46b1-80c3-3f5210386b50"
+    },
+    {
+      "claim_id": "a5da186b-aebe-4ad5-b7ee-944a9dbc6b31",
+      "result_id": "c8df26ae-5271-46b1-80c3-3f5210386b50"
+    },
+    {
+      "claim_id": "254ea95c-43fc-4d2a-9f8f-f495081b96be",
+      "result_id": "c8df26ae-5271-46b1-80c3-3f5210386b50"
+    },
+    {
+      "claim_id": "5050fd48-b913-44a5-9721-334169627a43",
+      "result_id": "c8df26ae-5271-46b1-80c3-3f5210386b50"
+    },
+    {
+      "claim_id": "6b8a9011-eb6b-476b-b616-50f6cd46bf68",
+      "result_id": "a14058aa-ce96-40d2-8bd3-d73689b0cf34"
+    },
+    {
+      "claim_id": "a4c2fbad-a49c-4963-83fa-d78794d32a47",
+      "result_id": "a14058aa-ce96-40d2-8bd3-d73689b0cf34"
+    },
+    {
+      "claim_id": "371d2bd9-8ad8-4e12-846f-048d2b741f72",
+      "result_id": "a14058aa-ce96-40d2-8bd3-d73689b0cf34"
+    },
+    {
+      "claim_id": "fc775ae8-e704-40d5-8715-513168132029",
+      "result_id": "c0f16890-2008-4509-8505-106abc437bf7"
+    },
+    {
+      "claim_id": "0d8f484b-697b-4760-a522-daec713aa3df",
+      "result_id": "c0f16890-2008-4509-8505-106abc437bf7"
+    },
+    {
+      "claim_id": "43f9e540-bc7a-4ad7-b5b9-d08cd17b97e4",
+      "result_id": "c0f16890-2008-4509-8505-106abc437bf7"
+    },
+    {
+      "claim_id": "f5ad0b27-5296-4736-8a5e-d16e0fc455f8",
+      "result_id": "a7eff129-0daf-4229-ae52-6f5727b397a2"
+    },
+    {
+      "claim_id": "1c9b0a2f-feab-4e3b-bc97-7f4703d2f005",
+      "result_id": "a7eff129-0daf-4229-ae52-6f5727b397a2"
+    },
+    {
+      "claim_id": "f64f4fc2-106e-42a9-b019-28951c984b2f",
+      "result_id": "a7eff129-0daf-4229-ae52-6f5727b397a2"
+    },
+    {
+      "claim_id": "f807a36a-7388-412a-a6ed-f969e3dd7885",
+      "result_id": "79294f4d-ee12-4426-a18d-48ef8a4646ce"
+    },
+    {
+      "claim_id": "a4546dcb-c68d-45d3-b9e6-852944db7654",
+      "result_id": "79294f4d-ee12-4426-a18d-48ef8a4646ce"
+    },
+    {
+      "claim_id": "bf881129-3733-46cb-8a1b-8bd058ae8ce0",
+      "result_id": "29a029c1-7af1-4247-ae56-5546f3d44321"
+    },
+    {
+      "claim_id": "4dd26f81-d89a-4ed9-8aec-25d88b80aa64",
+      "result_id": "29a029c1-7af1-4247-ae56-5546f3d44321"
+    },
+    {
+      "claim_id": "4e0bba64-77f6-42bb-8a94-20ac1c9c4d9b",
+      "result_id": "29a029c1-7af1-4247-ae56-5546f3d44321"
+    },
+    {
+      "claim_id": "62639483-f316-496b-a52c-b602d39f0e9d",
+      "result_id": "29a029c1-7af1-4247-ae56-5546f3d44321"
+    },
+    {
+      "claim_id": "2a74165a-2592-4805-b92f-0b3d57ad834a",
+      "result_id": "4bf00df9-e679-40f0-88f0-9c5994e75ff1"
+    },
+    {
+      "claim_id": "42cda108-4bbf-4b0c-9427-348fbeaf7766",
+      "result_id": "4bf00df9-e679-40f0-88f0-9c5994e75ff1"
+    },
+    {
+      "claim_id": "041a0be3-be29-4139-8b52-dae890fb90ba",
+      "result_id": "4bf00df9-e679-40f0-88f0-9c5994e75ff1"
+    },
+    {
+      "claim_id": "bfcb6b84-91c9-4a62-80e9-812af8325f28",
+      "result_id": "8c069326-efe1-4010-b6df-deae774257fb"
+    },
+    {
+      "claim_id": "73cc3587-5bb2-4deb-a738-edcfc7a4f201",
+      "result_id": "8c069326-efe1-4010-b6df-deae774257fb"
+    },
+    {
+      "claim_id": "73bb25a3-2442-455a-9840-2cfa780a2bab",
+      "result_id": "2f99559b-7e0b-4bae-b43d-26000039e099"
+    },
+    {
+      "claim_id": "20132cbd-bd24-44f8-bee5-2f79ee6b9d38",
+      "result_id": "2f99559b-7e0b-4bae-b43d-26000039e099"
+    },
+    {
+      "claim_id": "018dfb70-1a52-438c-957b-bfe494eabb1c",
+      "result_id": "ef6b6cb2-3e2e-4a0b-ab78-1d5ca3b465f6"
+    },
+    {
+      "claim_id": "63fd2df6-6868-4cbc-867f-559a3680457e",
+      "result_id": "ef6b6cb2-3e2e-4a0b-ab78-1d5ca3b465f6"
+    },
+    {
+      "claim_id": "6fe3078e-8a2c-4010-9008-265c3990efab",
+      "result_id": "097507e3-564b-4c13-aa3d-71027780fc54"
+    },
+    {
+      "claim_id": "811a4947-c2e7-4b0a-a511-81ccfea37c76",
+      "result_id": "097507e3-564b-4c13-aa3d-71027780fc54"
+    },
+    {
+      "claim_id": "b051fa7e-a2c0-4516-b5ce-a75b5bc5a467",
+      "result_id": "097507e3-564b-4c13-aa3d-71027780fc54"
+    },
+    {
+      "claim_id": "b3adf770-972d-420f-ad44-cbe9b6a35623",
+      "result_id": "7bc6ba54-b867-463b-8248-ffa3509ac2b6"
+    },
+    {
+      "claim_id": "b1e28efb-d17f-4076-92f6-ab6cadfef33b",
+      "result_id": "7bc6ba54-b867-463b-8248-ffa3509ac2b6"
+    },
+    {
+      "claim_id": "7365947d-43e1-4199-9595-d7efacfc6310",
+      "result_id": "7bc6ba54-b867-463b-8248-ffa3509ac2b6"
+    },
+    {
+      "claim_id": "025b60fb-dec9-4f3a-a9fd-53ab4fbb6b69",
+      "result_id": "7bc6ba54-b867-463b-8248-ffa3509ac2b6"
+    },
+    {
+      "claim_id": "566b3def-7a9d-44a6-b516-4bfd49916100",
+      "result_id": "c6f770ec-a688-4fa2-a67f-6217487ddf9e"
+    },
+    {
+      "claim_id": "a7873068-8d2b-4305-bdd1-2d9b4ab0eaeb",
+      "result_id": "c6f770ec-a688-4fa2-a67f-6217487ddf9e"
+    },
+    {
+      "claim_id": "856529fe-9a7b-47ab-9cbe-f3ada1c75586",
+      "result_id": "c6f770ec-a688-4fa2-a67f-6217487ddf9e"
+    },
+    {
+      "claim_id": "ab5cac35-a485-433e-a61a-908e67ec18f6",
+      "result_id": "c6f770ec-a688-4fa2-a67f-6217487ddf9e"
+    },
+    {
+      "claim_id": "ed876991-9e5c-4190-80c5-d301b4d6ab1a",
+      "result_id": "c6f770ec-a688-4fa2-a67f-6217487ddf9e"
+    },
+    {
+      "claim_id": "70949a25-7487-4ebb-97d0-ae7ee3e45237",
+      "result_id": "f3126b32-2834-4531-bbad-08bb52e5176b"
+    },
+    {
+      "claim_id": "f8e392c8-49ce-49a4-a5b7-16244493281f",
+      "result_id": "f3126b32-2834-4531-bbad-08bb52e5176b"
+    },
+    {
+      "claim_id": "23ff7424-484d-4b14-a861-99661cfeec50",
+      "result_id": "f3126b32-2834-4531-bbad-08bb52e5176b"
+    },
+    {
+      "claim_id": "03d8544b-a4ba-4af6-b78c-a60773fe1459",
+      "result_id": "36637aad-61eb-4be4-8346-950b874bc295"
+    },
+    {
+      "claim_id": "e4fa8519-b25c-434e-a486-a2dfa04c8e4e",
+      "result_id": "36637aad-61eb-4be4-8346-950b874bc295"
+    },
+    {
+      "claim_id": "b6327dc6-4264-4501-8fc3-548fe24ebbed",
+      "result_id": "36637aad-61eb-4be4-8346-950b874bc295"
+    },
+    {
+      "claim_id": "52331044-cda4-4b34-938b-a4316d47762c",
+      "result_id": "36637aad-61eb-4be4-8346-950b874bc295"
+    },
+    {
+      "claim_id": "c0e14064-160c-4dfe-bfa4-2af426b378aa",
+      "result_id": "51f80731-9803-4243-b66e-c98296a32aa7"
+    },
+    {
+      "claim_id": "20b58f1b-9bd8-403c-b5af-b16f14e3aa79",
+      "result_id": "51f80731-9803-4243-b66e-c98296a32aa7"
+    },
+    {
+      "claim_id": "91ec606b-a202-45d8-a1aa-2fe9dec8e6a4",
+      "result_id": "8ed6ef19-05d5-4487-9ae6-2131fa02ba25"
+    },
+    {
+      "claim_id": "4dbac826-0ba1-4b14-b470-c90c6c5c9985",
+      "result_id": "8ed6ef19-05d5-4487-9ae6-2131fa02ba25"
+    },
+    {
+      "claim_id": "5dd1ffd5-0ec3-4304-b598-35bb02c0e8ed",
+      "result_id": "8ed6ef19-05d5-4487-9ae6-2131fa02ba25"
+    },
+    {
+      "claim_id": "1c164681-c943-4a73-a2f1-62e694c667a3",
+      "result_id": "8ed6ef19-05d5-4487-9ae6-2131fa02ba25"
+    },
+    {
+      "claim_id": "1a8120ec-6215-4d9f-af87-3d9a8320c9ce",
+      "result_id": "bfb1a54c-fb5c-49ab-8f29-0c015ae38e16"
+    },
+    {
+      "claim_id": "059d584f-2742-4da3-a9c7-c953a06660cd",
+      "result_id": "bfb1a54c-fb5c-49ab-8f29-0c015ae38e16"
+    },
+    {
+      "claim_id": "bf98716c-0c0c-4c7a-93df-658cdb737564",
+      "result_id": "bfb1a54c-fb5c-49ab-8f29-0c015ae38e16"
+    }
+  ],
+  "comparisons": []
+}

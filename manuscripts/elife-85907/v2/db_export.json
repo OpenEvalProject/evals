@@ -1,0 +1,2054 @@
+{
+  "submission": {
+    "id": "58eb5293-327d-4399-9dd6-668f181ce0a3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-04T03:22:53.709150Z",
+    "updated_at": "2025-12-04T03:22:53.709150Z"
+  },
+  "content": [
+    {
+      "id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "submission_id": "58eb5293-327d-4399-9dd6-668f181ce0a3",
+      "content_type": "manuscript",
+      "content_text": "# Diversity and evolution of cerebellar folding in mammals\n\n## Authors\n\n- Katja Heuer<sup>1</sup> ([ORCID: 0000-0002-7237-0196](https://orcid.org/0000-0002-7237-0196)) \u2020\n- Nicolas Traut<sup>1</sup>\n- Alexandra Allison de Sousa<sup>2</sup> ([ORCID: 0000-0003-2379-3894](https://orcid.org/0000-0003-2379-3894))\n- Sofie Louise Valk<sup>3</sup> ([ORCID: 0000-0003-2998-6849](https://orcid.org/0000-0003-2998-6849))\n- Julien Clavel<sup>6</sup>\n- Roberto Toro<sup>1</sup> ([ORCID: 0000-0002-6671-858X](https://orcid.org/0000-0002-6671-858X)) \u2020\n\n### Affiliations\n\n1. Institut Pasteur, Universit\u00e9 Paris Cit\u00e9, Unit\u00e9 de Neuroanatomie Appliqu\u00e9e et Th\u00e9orique Paris France ([ROR:05f82e368](https://ror.org/05f82e368))\n2. Centre for Health and Cognition, Bath Spa University Bath United Kingdom ([ROR:0038jbq24](https://ror.org/0038jbq24))\n3. Otto Hahn Group Cognitive Neurogenetics, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany ([ROR:0387jng26](https://ror.org/0387jng26))\n4. Institute of Neuroscience and Medicine, Brain & Behaviour (INM-7), Research Centre J\u00fclich, FZ J\u00fclich J\u00fclich Germany ([ROR:02nv7yv05](https://ror.org/02nv7yv05))\n5. Institute of Systems Neuroscience, Medical Faculty, Heinrich Heine University D\u00fcsseldorf D\u00fcsseldorf Germany ([ROR:024z2rq82](https://ror.org/024z2rq82))\n6. Universit\u00e9 Lyon, Universit\u00e9 Claude Bernard Lyon 1, CNRS, ENTPE, UMR 5023 LEHNA Villeurbanne France ([ROR:029brtt94](https://ror.org/029brtt94))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe process of brain folding is thought to play an important role in the development and organisation of the cerebrum and the cerebellum. The study of cerebellar folding is challenging due to the small size and abundance of its folia. In consequence, little is known about its anatomical diversity and evolution. We constituted an open collection of histological data from 56 mammalian species and manually segmented the cerebrum and the cerebellum. We developed methods to measure the geometry of cerebellar folia and to estimate the thickness of the molecular layer. We used phylogenetic comparative methods to study the diversity and evolution of cerebellar folding and its relationship with the anatomy of the cerebrum. Our results show that the evolution of cerebellar and cerebral anatomy follows a stabilising selection process. We observed two groups of phenotypes changing concertedly through evolution: a group of \u2018diverse\u2019 phenotypes \u2013 varying over several orders of magnitude together with body size, and a group of \u2018stable\u2019 phenotypes varying over less than 1 order of magnitude across species. Our analyses confirmed the strong correlation between cerebral and cerebellar volumes across species, and showed in addition that large cerebella are disproportionately more folded than smaller ones. Compared with the extreme variations in cerebellar surface area, folial anatomy and molecular layer thickness varied only slightly, showing a much smaller increase in the larger cerebella. We discuss how these findings could provide new insights into the diversity and evolution of cerebellar folding, the mechanisms of cerebellar and cerebral folding, and their potential influence on the organisation of the brain across species.\n\n## Introduction\n\nBrain folding may play an important role in facilitating and inducing a variety of anatomical and functional organisation patterns (Welker, 1990; Toro, 2012). Among the many folded structures of the mammalian brain, the cortices of the cerebrum and the cerebellum are the two largest ones. In humans, the cerebellum has ~80% of the surface area of the cerebral cortex (Sereno et al., 2020), and contains ~80% of all brain neurons, although it represents only ~10% of the brain mass (Azevedo et al., 2009). Both cortices are organised in layers, with neuronal cell bodies occupying a superficial position and principal neurons \u2013 pyramidal neurons in the cerebral cortex, Purkinje cells in the cerebellum \u2013 sending axons towards an internal white matter. Many aspects of the organisation, development, and evolution of the cerebral and cerebellar cortex are, however, very different. While the cerebral cortex is unique to mammals, the cerebellum is present in all vertebrates, with cerebellum-like structures which can be even identified in invertebrates such as octopuses (Nieuwenhuys et al., 1998; Shigeno et al., 2018). While the main target of pyramidal cells is the cerebral cortex itself (through profuse cortico-cortical connections), Purkinje cell afferents are mostly feedforward (Ramnani, 2006; Nieuwenhuys et al., 2008; Yamamoto et al., 2012). While dendritic trees of pyramidal neurons can be found in all cortical layers, those of Purkinje cells are restricted to the molecular layer \u2013 their nuclei forming a boundary between the molecular and granular layers. While the cortex is only folded in relatively large mammals, the cerebellum is folded in all of them, and is also folded in birds (Cunha et al., 2020; Cunha et al., 2021), some fish (Yopak et al., 2007) but not in reptiles (Larsell, 1926; Nieuwenhuys et al., 1998). It is interesting then to compare folding in both structures as a first step towards understanding how the mechanics of folding could influence the organisation in these two different types of tissue (Franze, 2013; Kroenke and Bayly, 2018; Foubet et al., 2019; Heuer and Toro, 2019).\n\nHere, we aimed at characterising the folding of the cerebellar cortex using histological data from a sample of 56 mammalian species. The analysis of cerebellar folding is made difficult by the small size of the folia. Magnetic resonance imaging, the main tool for studying the folding of the cerebral cortex, does not provide the resolution required to distinguish and reconstruct cerebellar folding. Histological data, even at low scanning resolution, can provide sufficient information to distinguish folia as well as cerebellar cortical layers. However, data is only 2D, and sectioning often induces non-trivial deformations which make it challenging to create full 3D reconstructions (see, however, the work of Sereno et al., 2020, and Zheng et al., 2023). Using histological data, Ashwell, 2020, was able to estimate the surface area in 90 species of marsupials and 57 species of eutherian mammals, but did not study folia, of which the measurement remains challenging.\n\nIn our analyses we manually segmented the surface of the cerebellum and developed a method to automatically detect the boundary between the molecular and granular layers, allowing us to estimate the median thickness of the molecular layer. We also developed a method to detect individual folia, and to measure their median width and perimeter. Buckling models of brain folding suggest an inverse relationship between folding frequency and cortical thickness, with thicker cortices leading to lower frequency folding (Toro and Burnod, 2005). This has been verified in the mammalian cerebrum (Mota and Herculano-Houzel, 2015), and we aimed at studying it in the cerebellum. The analysis of phylogenetic data is challenging, because different species share a varying degree of genetic relationship. We used phylogenetic comparative methods to condition our analyses on the phylogenetic tree and tested different evolutionary scenarios, which allowed us to study the evolution of the cerebellum and its relationship with the cerebrum and with body size.\n\nOur results showed two very different groups of phenotypes: those like brain size, that changed over several orders of magnitude, and those like folial width which were much more conserved. We confirm the strong allometry between the size of the cerebellum and the cerebrum across mammals (Barton and Harvey, 2000; Barton, 2002; Whiting and Barton, 2003; Herculano-Houzel, 2010; Barton, 2012; Smaers et al., 2018; Ashwell, 2020; Magielse et al., 2023) and show similarly strong relationships for the width of cerebellar folds and the thickness of the molecular layer, although with a much narrower range of variation. This deeply conserved pattern suggests the presence of a common mechanism underlying the development of the cerebellum and cerebellar folding across mammals. All our data and code are openly available online.\n\n## Materials and methods\n\n### Histological data\n\nMost of the data used in this study comes from the Brain Museum website (https://brainmuseum.org) \u2013 the Comparative Mammalian Brain Collection initiated by Wally Welker, John Irwin Johnson, and Adrianne Noe from the University of Wisconsin, Michigan State University, and the National Museum of Health and Medicine. This is the same eutherian mammal data used by Ashwell, 2020, through the Neuroscience Library website (https://neurosciencelibrary.org, offline since June 2022). The human brain data comes from the BigBrain Project (https://bigbrainproject.org) led by teams from Forschungszentrum J\u00fclich and McGill University (Amunts et al., 2013). The rhesus macaque data is part of the BrainMaps project (http://brainmaps.org) by Edward G Jones at UC Davis (Figure 1 and Supplementary file 1 for a detailed list).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85907/elife-85907-fig1-v2.jpg)\n\n**Figure 1.:** All coronal cerebellar mid-sections for the different species analysed, at the same scale. This dataset is available online for interactive visualisation and annotation: https://microdraw.pasteur.fr/project/brainmuseum-cb. Image available at https://doi.org/10.5281/zenodo.8020178.\n\nWe used our Web tool MicroDraw to visualise and segment the histological data online (https://microdraw.pasteur.fr). We downloaded the Brain Museum data, and used the vips library (https://www.libvips.org) to convert it to deep zoom image format \u2013 the multi-scale image format required by MicroDraw. The data from the BigBrain and BrainMaps projects is already encoded in multi-scale format, and we only wrote translation functions to allow access through MicroDraw. The Brain Museum Cerebellum project can be accessed at https://microdraw.pasteur.fr/project/brainmuseum-cb.\n\nThe resolution of the histological images in the Brain Museum was very variable. We considered that image resolution was in all cases sufficient to estimate the length and area of the cerebellum sections, however, we excluded some species from our estimation of molecular layer thickness when resolution was deemed insufficient. For this, we plotted the total number of pixels of the image versus cerebellum size, and excluded species where the density of pixels per mm2 was lower than 3.5 \u2013 a threshold determined by visual inspection. The datasets from the BrainMaps (rhesus macaque), and the BigBrain project (human) were all high resolution (1\u201320 \u00b5m).\n\n### Segmentation\n\nWe used MicroDraw to draw the scale bar, and the contour of the coronal mid-section of the cerebellum (Figure 1), and the cerebrum (for each numbered series of coronal sections spanning the length of the structure, the section with the median number for that particular structure). In the case of the human brain from the BigBrain project, and the rhesus macaque from the BrainMaps project, where no scale bar is present directly in the sections, we obtained scale information from their websites (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85907/elife-85907-fig2-v2.jpg)\n\n**Figure 2.:** All datasets were indexed in our collaborative Web application MicroDraw (https://microdraw.pasteur.fr) to interactively view and annotate the sections. The contour of the cerebellum was drawn manually using MicroDraw (black contour). The example image shows the human cerebellum from the BigBrain 20 \u00b5m dataset (Amunts et al., 2013).\n\n### Measurement of section area and length of the cerebral and cerebellar cortex\n\nTable 1 summarises the variables used in our analyses and their sources. We used the Python package microdraw.py (https://github.com/neuroanatomy/microdraw.py; Heuer et al., 2023a) to query MicroDraw\u2019s API and programmatically download all vectorial segmentations and images. We computed the length of the cerebral and cerebellar segmentation contours, and used the scale bar information to convert the data to millimetres. We used an artificial calibration image to ensure that our algorithms produce the correct measurements. Measurements were not modified to account for shrinkage, and reflect the raw data obtained from the images (see Ashwell, 2020, for a discussion of shrinkage in the Brain Museum collection). All measurements were log10 converted to facilitate their comparison.\n\n**Table 1.**\n Definition of the variables used in the current study and their sources.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Variable name</th>\n      <th>Definition</th>\n      <th>Source</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cerebellar section area</td>\n      <td>Area of the cerebellar mid-section (mm\u00b2)</td>\n      <td>Measured</td>\n    </tr>\n    <tr>\n      <td>Cerebellar section length</td>\n      <td>Perimeter around the cerebellar pial surface of mid-section (mm)</td>\n      <td>Measured</td>\n    </tr>\n    <tr>\n      <td>Folial width (cerebellum)</td>\n      <td>Euclidean distance between the two flanking sulci of a folium, averaged for all folia in the mid-section (mm; Figure 3b)</td>\n      <td>Measured</td>\n    </tr>\n    <tr>\n      <td>Folial perimeter (cerebellum)</td>\n      <td>Perimeter along the cerebellar pial surface between the two flanking sulci of a folium, averaged for all folia in the mid section (mm; Figure 3c)</td>\n      <td>Measured</td>\n    </tr>\n    <tr>\n      <td>Thickness (cerebellum)</td>\n      <td>Thickness of the molecular layer for the cerebellar mid section, averaged from the lengths profile lines that bisect the molecular layer from its border with the pial surface to its border with the granular surface (mm; Figure 4)</td>\n      <td>Measured</td>\n    </tr>\n    <tr>\n      <td>Cerebral section area</td>\n      <td>Area of the cerebral mid-section (mm\u00b2)</td>\n      <td>Measured</td>\n    </tr>\n    <tr>\n      <td>Cerebral section length</td>\n      <td>Perimeter around the cerebral pial surface of mid-section (mm)</td>\n      <td>Measured</td>\n    </tr>\n    <tr>\n      <td>Brain weight</td>\n      <td>Weight of the whole brain, including cerebrum and cerebellum (g)</td>\n      <td>Ballarin et al., 2016; Burger et al., 2019; Smaers et al., 2021</td>\n    </tr>\n    <tr>\n      <td>Body weight</td>\n      <td>Weight of the whole body (g)</td>\n      <td>Ballarin et al., 2016; Burger et al., 2019; Smaers et al., 2021</td>\n    </tr>\n    <tr>\n      <td>Cerebellar volume</td>\n      <td>Volume of the entire cerebellum, estimated from 2D histological sections or MRI (mm\u00b3)</td>\n      <td>Smaers et al., 2018</td>\n    </tr>\n    <tr>\n      <td>Cerebral volume</td>\n      <td>Volume of the entire cerebrum, estimated from 2D histological sections or MRI (mm\u00b3)</td>\n      <td>Smaers et al., 2018</td>\n    </tr>\n    <tr>\n      <td>Sultan\u2019s folial width</td>\n      <td>Length of a cerebellar fold in a cross-section orthogonal to the fold axis: each fold may contain several individual folia</td>\n      <td>Sultan and Braitenberg, 1993</td>\n    </tr>\n  </tbody>\n</table>\n\n### Measurement of folial width and perimeter\n\nWe defined two measures of folding \u2013 folding width and folding perimeter \u2013 which are closely related to folding frequency and amplitude (Figure 3a\u2013c). As shown in Figure 3d, they allow us to differentiate among contours with the same gyrification index \u2013 a method introduced by Zilles et al., 1988, which has been widely used to study the degree of cerebellar folding.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85907/elife-85907-fig3-v2.jpg)\n\n**Figure 3.:** Sulci were automatically detected using mean curvature filtered at different scales (a). From this, we computed folial width (b) and folial perimeter (c). (d) Folial width and perimeter allow to distinguish folding patterns with the same gyrification index. The three rows of contours have the same gyrification index (top g=1.5, middle g=2.0, bottom g=3.0), however, the gyrification index does not allow distinguishing between contours with many shallow folds and those with few deep ones.\n\nTo compute folding width and folding perimeter we resampled the manual segmentations to have a homogeneous density of vertices and automatically detected sulci (Figure 3a). At each vertex we measured the mean curvature of the segmentation path. We smoothed the mean curvature measurements at 10 different scales, which produced for each vertex a 10D signature. We used a random forest algorithm to automatically distinguish three classes of vertices: gyri, sulci, and walls. We measured the width of each folium as the Euclidean distance between its two flanking sulci (Figure 3b). We measured the perimeter of each folium as the distance along the cerebellar surface between its two flanking sulci (Figure 3c). For each species we used the median width and the median perimeter across all folia, to make our estimations robust to outliers. The code for computing folial width and perimeter is provided in the accompanying GitHub repository.\n\n### Measurement of molecular layer thickness\n\nWe estimated the thickness of the molecular layer automatically (Figure 4). We processed the histological images to convert them to grey levels, denoise them, and equalise their histograms, using functions from the Scikit-image package (van der Walt et al., 2014). Starting from the manual segmentation (blue line in Figure 4a), we created a binary mask and masked out the non-cerebellar regions (e.g., the neighbouring cerebrum). The molecular layer of the cerebellum appears as a light band followed by the granular layer which appears as a dark band. We applied a Laplacian smoothing to the masked image, which created a gradual change in grey level going from white close to the surface of the cerebellum to black towards the granular layer. We computed the gradient of the image, which produced a vector field from the outside to the inside. We integrated this vector field to produce a series of lines, one for every vertex in the manual cerebellar segmentation. The vector field was integrated only if the grey values decreased, and if a minimum was reached, the vector field was continued linearly. At the end of this procedure, all lines had the same length, computed so as to cover the whole range from the surface of the cerebellum to the granular layer. The grey levels in the original image were sampled along each scan line, producing a grey level profile. The grey level profiles were derived, and a peak detection function was used to determine the point of maximum white/grey contrast (Figure 4c, where the red dot shows the detected boundary), indicating the boundary between the molecular and granular layers. Figure 4b shows the part of the profile lines starting at the cerebellar surface and ending at the detected boundary. For each scan line the corresponding thickness of the molecular layer was defined as the length from the manual cerebellar segmentation until the maximum contrast point (red point). Finally, for each species, a single thickness value was computed as the median of the thickness measured for each profile line, to make our estimation robust to outliers. See the accompanying source code for further implementation details.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85907/elife-85907-fig4-v2.jpg)\n\n**Figure 4.:** The thickness of the molecular layer was measured automatically from the surface segmentation. (a) Zoom into a manually annotated surface contour. (b) Automatically computed profile lines. (c) Grey level profile gradients and border detection for the whole slice. Red dots indicate detected borders (maximum gradient).\n\n### Phylogenetic comparative analyses\n\nWe obtained the phylogenetic tree for our 56 species from the TimeTree website (Figure 5a, https://www.timetree.org, Kumar et al., 2017). The analysis of neuroanatomical variation across species and through evolution requires taking these phylogenetic relationships into account, and naively comparing different clades may lead to misinterpretations because the measurements are not independent. Phenotypic differences between clades can reflect different adaptations, but they can also reflect their different phylogenetic relationships.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/85907/elife-85907-fig5-v2.jpg)\n\n**Figure 5.:** (a) The phylogenetic tree for 56 species used in our study was downloaded from the TimeTree website (http://www.timetree.org, Kumar et al., 2017) and coloured in eight groups based on hierarchical clustering of the tree. (b) Not accounting for phylogenetic information can lead to misinterpretations of cross-species relationships. Consider the case of eight species descending from two recent ancestors as in the tree ($\u0394t_{2}\u226a\u0394t_{1}$, adapted from Felsenstein, 1985). Even if their phenotypes evolved randomly (Brownian motion [BM] process in the phenogram to the right), they will seem to be more similar within each group. (c) If the time of split from their common ancestor were more distant ($\u0394t_{2}\u226b\u0394t_{1}$), this difference would not exist. Real phylogenetic trees embed a complex hierarchical structure of such relationships.\n\nConsider for example a phenotype varying randomly. Species descending from a recent common ancestor would be expected to be more similar simply because not enough time has passed for them to drift apart (Figure 5b, adapted from Felsenstein, 1985). This would not be the case if the split from their common ancestor had been more distant in time, and their phenotype would be much more different (Figure 5c). A more rigorous approach takes into account the whole hierarchy of relationships, as described by a phylogenetic tree, which is used to condition the structure of variation across species.\n\nIn addition to the tree structure, the variation of phenotypes along its branches can be modelled by different evolutionary processes, which can be explicitly formulated, fitted to the data, and compared. We tested three different models. First, the randomly varying phenotype that we mentioned could be modelled as a Brownian motion (BM) process. BM can be used to model fluctuating selection and genetic drift, for example. Once an ancestral species splits into two new species, their phenotypes will become progressively decorrelated: $dXt=\\sigmadBt$ , where $dXt$ indicates an infinitesimal change in the trait X at time t, $\\sigma$ is the magnitude of change in $X(t)$, and $dB(t)$ is a scatter generator (Cavalli-Sforza and Edwards, 1967). Second, the Ornstein-Uhlenbeck (OU) model extends the BM model by including the idea of an optimal trait value: $dX(t)=\\alpha(\\theta\u2212X(t))dt+\\sigmadB(t)$, where \u03b8 is the optimum trait value, and \u03b1 is the strength of attraction to \u03b8. Traits will vary with a random component, as in the BM model, but will also be attracted to the optimum value, which has been used to model stabilising selection (Felsenstein, 1988; Hansen and Martins, 1996). Finally, the early burst (EB) model (Harmon et al., 2010), also known as the accelerating-decelerating or ACDC model, (Blomberg et al., 2003) is an alternative extension of the BM model where the magnitude of random change is modulated by an exponential function: $dX(t)=\\sigmae^{rt/2}dB(t)$, where r is the strength of exponential change. EB models a rapid diversification of species in the early stages of their evolution, followed by a slowdown in the rate of diversification (Blomberg et al., 2003; Harmon et al., 2010).\n\nMultivariate models were fitted using the mvMORPH package (Clavel et al., 2015). We selected the best fitting model using the Akaike information criterion (AIC), corrected for small sample sizes (AICc). AIC takes into account the number of parameters $p$ in the model: $AIC=-2loglikelihood+2p$. This approximation is insufficient when the sample size is small, in which case an additional correction is required, leading to the corrected AIC: $AICc=AIC+2p^{2}+2p/n-p-1$, where $n$ is the sample size.\n\nThe analysis of phylogenetic data is challenging especially when the number of species is reduced, the number of traits studied is large and the models to fit are complex. Cooper et al., 2016, have warned in particular about fitting OU models using likelihood-based methods, and the possibility of incorrectly selecting them even when data was generated from a BM process. These difficulties can be addressed, for example, through the use of AICc instead of likelihood for model selection, as well as the use of penalised likelihood frameworks, which is the approach implemented in mvMORPH (Clavel et al., 2015; Clavel et al., 2019). To better understand our ability to decide among different models, we estimated our statistical power through simulations. We ran 1000 simulations where each time we generated nine correlated traits following a BM process, and counted the number of times the BM model was selected over the OU model based on their AICc.\n\n### Correlation structure, bivariate, and multivariate allometry\n\nWe aimed at describing the main patterns of variation among our phenotypes by looking at their matrix of correlations, partial correlations, principal components, and allometry. Our measurements were not independent because species are linked by different phylogenetic relationships. Our analyses used the phylogenetic tree to model covariance structure, as well as the model selected using the methods described in the previous subsection.\n\nAll our phenotypes were strongly correlated. We used partial correlations to better understand pairwise relationships. The partial correlation between two vectors of measurements a and b is the correlation between their residuals after the influence of all other measurements has been covaried out. Even if the correlation between a and b is strong and positive, their partial correlation could be 0 or even negative. Consider, for example, three vectors of measurements a, b, c, which result from the combination of uncorrelated random vectors x, y, z. Suppose that a=0.5x+0.2y+0.1z, b=0.5x - 0.2y+0.1z, and c=x. The measurements a and b will be positively correlated because of the effect of x and z. However, if we compute the residuals of a and b after covarying the effect of c (i.e., x), their partial correlation will be negative because of the opposite effect of y on a and b. The statistical significance of each partial correlation being different from 0 was estimated using the edge exclusion test introduced by Whittaker, 1990. We evaluated our statistical power to detect partial correlations of different strengths using simulations. Code is included in the accompanying source code along with a Jupyter notebook providing an executable version of our partial correlations example together with further details on our power analysis. A non-executable version of this notebook is provided as Supplementary file 2.\n\nThe main patterns of correlation among phenotypes, that is, the way in which different groups of phenotypes vary together, can be further studied using principal component analysis (PCA). The first principal component (PC1) is a vector of loadings showing how much each variable contributes to the main pattern of variation. The loadings of the second principal component (PC2) show the contribution of each variable to the second most important pattern of variation, etc. Each principal component captures a certain amount of variance, which indicates the importance of the pattern of variation it represents. By construction, the different principal components are orthogonal (another way of understanding PCA is as the rigid rotation of the data that will produce the best alignment with a set of orthogonal axes). Since species are non-independent data points due to evolutionary relatedness, it is important to take phylogenetic tree structure into account. For example, in the case of traits generated by a BM process, the main axis of variation could be due to traits being different because of biological reasons, or just because the species where they were measured had diverged a long time ago as in Figure 5c (Felsenstein, 1985; Revell, 2012; Clavel et al., 2015).\n\nFinally, we also use allometry to study the relationships between measurements in organisms of different shape and size. Consider, for example, the case of isometry: when a series of objects have identical shapes but different sizes. Their surface area will increase proportionally to the second power of their length, and volume will increase as the third power of their length. A measurement is said to be hypo-allometric or to have negative allometry relative to another if it changes less than what would be expected by isometry. This is the case of brain volume, which increases proportionally less than body volume across species. A measurement is said to be hyper-allometric or to have positive allometry relative to another if its changes are larger than what would be expected by isometry. For example, cortical surface area increases disproportionately when brain volume increases: in the case of isometry, we would expect the surface area of an object to increase proportionally to the \u2154 power of its volume. In mammals, however, the increase is almost linear (which is explained by the presence of brain folding, see Toro et al., 2008). The allometric scaling between two measurements is often estimated by considering the slope of their linear regression in a log-log scale. More accurately, orthogonal regression can be used, which distributes errors across both variables. The orthogonal regression approach can be also easily extended to the case of multivariate allometry: the loadings of the first principal component of the log-converted measurements allow us to estimate the allometric scaling of all variables at the same time (Jolicoeur, 1963). Consider the case of volumetric measurements of different brain regions (log-converted). The loadings of PC1 will indicate the contribution of the corresponding brain region to the main pattern of variation, and the scaling between any pair of regions can be obtained as the ratio between their corresponding loadings (see, for example, Toro et al., 2009).\n\nIn what follows we report allometric slopes obtained using linear regression and orthogonal regression for selected pairs of variables, as well as the slopes obtained using multivariate allometry (i.e., ratios of loadings from their phylogeny-controlled PC1).\n\n### Estimation of ancestral phenotypes\n\nFitting of evolutionary models allows us to obtain estimation of the ancestral states of the phenotypes under study. Our phenotypes showed a strong correlation pattern. Instead of estimating ancestral states for each of them independently, we estimated the ancestral state of the first two principal components for all nine phenotypes, and also for a reduced set of phenotypes including only neuroanatomical measurements.\n\nAll the code necessary to reproduce our analyses is available at https://github.com/neuroanatomy/comp-cb-folding (copy archived at Heuer et al., 2023b).\n\n## Results\n\nThe presentation of our results is structured as follows: (1) we validate our measurements by comparing them with the literature, (2) we show the results of the fit of the three different evolutionary models to our data, and decide on the one which will be used in the following analyses to constrain the variance structure, (3) we describe the structure of correlations among our phenotypes and present their main multivariate patterns of variation, two different sets of phenotypes appeared, a first set showing large variation across several orders of magnitude, and a second set which is much more conserved in comparison. (4) We present bivariate allometry results to illustrate these relationships, (5) finally we estimate the ancestral states of the two main patterns of variation in the data, which provides us with an idea of their evolutionary history.\n\n### Validation of measurements\n\n#### Cerebellar and cerebral section area\n\nOur measurements were a good proxy for total volume and correlated well with those reported in the literature. We segmented the coronal mid-section of the cerebellum and the cerebrum. These section areas should scale as the 2/3 power of the volume. We confirmed that this was the case by comparing our measurements with the volume measurements reported by Smaers et al., 2018: the correlation captured ~96% of the variance (Figure 6a and b). Smaers et al., 2018, report separate values for the medial cerebellum (the vermal region) (based on measurements from MacLeod et al., 2003; Maseko et al., 2012; Smaers et al., 2011). Our cerebellum section area measurement also correlated strongly with their medial cerebellum volume measurement, a fact that could be eventually used in the future for imputing missing data, although we do not use medial cerebellar measurements in our analyses. See Figure 6\u2014figure supplement 1 for correlation with measurements in Ashwell, 2020.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/85907/elife-85907-fig6-v2.jpg)\n\n**Figure 6.:** Comparison of our cortical section area measurement (a) and cerebellar section area (b) with volume measurements from Smaers et al., 2018. (c) Comparison of our folial width measurement with folial width from Sultan and Braitenberg, 1993. The folial width measurement reported by Sultan and Braitenberg, which may include several folia, do not correlate significantly with our measurements (two-tailed p=0.112). LR: linear regression with 95% confidence interval in grey. OR: orthogonal regression.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85907/elife-85907-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Comparison of our cerebellar section area measurement (a) and cerebellar section length (b) with cerebellar volume and surface measurements from Ashwell, 2020. Measurements correlate significantly (two-tailed p<1e-20). LR: linear regression with 95% confidence interval in grey. OR: orthogonal regression.\n\n#### Folding frequency\n\nThere are no comparative analyses of the frequency of cerebellar folding, to our knowledge. The closest is the measurements reported by Sultan and Braitenberg, 1993, measuring the length of structures which may include several individual folia. Our measurements of cerebellar folial width and folial perimeter, however, do not correlate significantly with Sultan and Braitenberg\u2019s measurements (Figure 6c). Ashwell, 2020, studied cerebellar folding through a foliation index, defined as the ratio of the cerebellar pial surface over the external cerebellar surface. This method, however, does not provide information about folding frequency, and would be unable to distinguish a cerebellum with many shallow folds from one with a few deep ones, which could both produce a similar foliation index (e.g., Figure 3d).\n\n#### Molecular layer thickness\n\nAlthough several previous works report volume of the molecular layer, we were unable to find data on molecular layer thickness across species. Zheng et al., 2023, reported 0.32 mm (\u00b10.08) for humans, and our estimation was of 0.29 mm, which is well within the confidence interval.\n\n### Evolutionary model selection\n\n#### The evolution of cerebellar and cerebral neuroanatomy follows a stabilising selection process\n\nWe compared three different models of the evolution of cerebellar and cerebral neuroanatomical measurements: BM, Ornstein-Uhlenbeck (OU), and early burst (EB). Comparing the goodness of fit of the three models, we observed substantial evidence in favour of the OU model (Table 2, smaller values indicate a better fit). The second most likely model was EB, and finally BM.\n\n**Table 2.**\n Ranking of phylogenetic comparative models.Results based on the Akaike information criterion corrected for small sample sizes (AICc). The best fit to the data (smallest AICc value) was obtained for the Ornstein-Uhlenbeck model.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Ranking</th>\n      <th>Model</th>\n      <th>AICc</th>\n      <th>Log-likelihood</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>Ornstein-Uhlenbeck (OU)</td>\n      <td>\u2212360.64</td>\n      <td>252.48</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>Early burst (EB)</td>\n      <td>\u2212254.03</td>\n      <td>188.89</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>Brownian motion (BM)</td>\n      <td>\u2212227.73</td>\n      <td>174.62</td>\n    </tr>\n  </tbody>\n</table>\n\nThe $\\theta$ parameters in the selected OU model (optimal trait values) were close to the mean of our sample and the $\\alpha$ values were relatively strong, suggesting a process that dampens extreme phenotypic values. The $\\alpha$ values can be transformed into a \u2018halflife\u2019 which can be interpreted as the time it would take the evolutionary process to bring a trait to half of the optimal trait value. The average halflife = log(2)/\u03b1 was 20 million years.\n\nTo address the concern of a bias in the selection of OU models (Cooper et al., 2016), we used simulations to study our ability to correctly detect a BM process (the most parsimonious of our three models) through simulation, using our phylogenetic tree and nine randomly generated correlated phenotypes. In 1000 simulations, the BM model was correctly selected over the OU model 99.3% of the times (see Supplemental Methods for details). The analyses of relationships among phenotypes that follow use the OU model to control for phylogenetic structure (otherwise, the observation would not be evolutionarily independent).\n\n### Correlation structure\n\n#### Anatomical phenotypes segregate into \u2018diverse\u2019 and \u2018stable\u2019 groups\n\nAll measurements were strongly positively correlated (Figure 7a). To better understand the global structure of these correlations, we computed partial correlations, which are the correlations between pairs of variables after controlling for the effect of all other variables. Two groups of phenotypes appeared: First, a group of \u2018diverse\u2019 phenotypes that varied widely across species, including body weight, brain weight, cerebellar, and cerebral section area and length, characterised by strong positive partial correlations in the range from 0.3 to 0.7. Cerebellar section area, for example, varies over ~2.5 orders of magnitude, and body weight over 10.8 orders of magnitude. Second, a group of \u2018stable\u2019 phenotypes that showed much less variation in comparison, including folial width, folial period, and thickness of the molecular layer, with positive partial correlations in the range from 0.4 to 0.6. There was only a <4-fold variation in these phenotypes across species (~0.5 order of magnitude).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/85907/elife-85907-fig7-v2.jpg)\n\n**Figure 7.:** (a) Correlation matrix among all phenotypes (all values log10 transformed). (b) Partial correlation matrix. (c) Graph representation of the strongest positive (red) and negative (blue) partial correlations. All correlations are conditional to phylogenetic tree data. Partial correlation significance is indicated by asterisks, *** for p<0.001, ** for p<0.01, * for p<0.05. Partial correlations without asterisks are not significant.\n\nPhenotypes within the diverse and stable groups showed significant positive within-group partial correlations. Within the diverse group, the most important positive partial correlation between cerebellum and cerebrum was between cerebral section area (a 2D section of cerebral volume) and cerebellar section area (a 2D section of cerebellar volume). The diverse and the stable groups were linked through significant negative correlations, which were the largest we observed. They linked (1) cerebellar section length and folial perimeter and (2) cerebellar section length and thickness of the molecular layer (p-values <10\u20132), indicating that larger cerebella tend to have relatively smaller and thinner folia than what could be expected for their size.\n\nOur simulations showed that, because of the strength of the allometric pattern in our data, we had excellent statistical power to detect large and medium partial correlations (90\u2013100%) and good statistical power to detect small partial correlations (~78%, see Supplementary file 2 for details).\n\n#### The strongest pattern of variation concerned phenotypes from the diverse group, followed by those in the stable group\n\nWe performed a phylogenetic PCA to explore further the main patterns of neuroanatomical variability.\n\nThe phylogenetic PCA of all cerebellar and cerebral measurements produced a PC1 which captured the largest part of the variance: 96.4% (Figure 8b). PC1 described a strong concerted change in body size and brain size, cerebellar and cerebral section area and length, and loaded weakly on folial width, folial perimeter, and molecular layer thickness. PC1 describes the most important pattern of coordinated allometric variation (Jolicoeur, 1963), which will be studied further in the next subsection.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/85907/elife-85907-fig8-v2.jpg)\n\n**Figure 8.:** Primates, and especially humans, show particularly large brains given their body size. (a) Pattern of neuroanatomical diversity (PC1 vs. PC2), including body and brain weight. (b) Loadings of the PC1 and PC2 axes displayed in panel a. (c) Pattern of neuroanatomical diversity (PC1 vs. PC2), excluding body and brain weight. (d) Loadings of the PC1 and PC2 axes displayed in panel c.\n\nPC2 conveys the main way in which individuals deviate from the dominant allometric pattern. The proportion of variance captured by PC2 was 2.6%. Because of the prominent role of body weight in PC1, PC2 mostly allowed uncoupling body size from changes in brain anatomy (Figure 8b). Plotting all species in PC1/PC2 space (Figure 8a) showed that humans were here an important exception, with a small body size relative to brain size. To some extent, this was also the case for other primate species in our sample (chimpanzee, rhesus macaque, etc.).\n\nTo better understand the patterns of neuroanatomical variation, we performed an additional PCA excluding body and brain weight. This is because the large variation in body weight, in particular, obscured patterns of variation specific to the brain. This time, PC1 captured 92.1% of the variance while PC2 captured 3.0%. The allometric pattern described by PC1 was similar to the previous one, with strong concerted changes in cerebellar and cerebral section area and length, and less strong changes in folial width, folial perimeter, and molecular layer thickness. PC2 was different, and allowed to uncouple changes in folial width and folial perimeter from changes in molecular layer thickness. Here, humans appeared among the species having the highest frequency of cerebellar folia (smaller folial width and perimeter).\n\n### Allometry\n\nAllometry is the study of the relationships between size and shape. As we mentioned earlier, when objects change only in size without changing shape, the length, surface area, and volume of their parts change in a characteristic way: length as the square root of surface area, surface area as the \u2154 power of the volume, etc. The multivariate allometry pattern of all our measurements, given by PC1, is shown in Table 3 (also shown in Figure 8b). Pairwise allometric scaling factors can be obtained from this table as the ratio between the loadings of the respective measurements.\n\n**Table 3.**\n Multivariate allometry pattern.The pattern is represented by the loadings of each measurement in the first principal component (PC1, same as Figure 8b). Allometric slopes for each pair of variables can be obtained by dividing their loadings. For example, the slope for the cerebellum section length versus cerebellum section area reported in Figure 9a is 0.1138/0.1519 ~ 0.749.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Body weight</th>\n      <th>Brain weight</th>\n      <th>Cerebellar section area</th>\n      <th>Cerebral section area</th>\n      <th>Cerebellar section length</th>\n      <th>Cerebral section length</th>\n      <th>Folial width</th>\n      <th>Folial period</th>\n      <th>Thickness</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>0.7923</td>\n      <td>0.5453</td>\n      <td>0.1519</td>\n      <td>0.1563</td>\n      <td>0.1138</td>\n      <td>0.1117</td>\n      <td>0.0237</td>\n      <td>0.0187</td>\n      <td>0.0336</td>\n    </tr>\n  </tbody>\n</table>\n\nThe following analyses use bivariate allometry to focus into particular pairs of phenotypes. First, we focus on those belonging to the \u2018diverse\u2019 group, and then on those belonging to the \u2018stable\u2019 group.\n\n#### Cerebellar folding increases with cerebellar size in a similar manner as cerebral folding increases with cerebral size\n\nThe bivariate analyses Figures 9 and 10 zoom into the allometry of cerebellar and cerebral folding. In both cases, our measurement of length \u2013 a section of the cerebellar and cerebral surface \u2013 correlated strongly with the corresponding measurement of section area \u2013 a section of cerebellar and cerebral volume. As we indicated previously, their partial correlations were also strong, suggesting a direct link between both phenotypes. The scaling slopes were clearly higher than 0.5 (the slope of isometric scaling of length versus area), indicating that cerebellar and cerebral cortices are increasingly folded when larger (hyper-allometric scaling). The increase of folding with size followed a similar law for both structures, with a scaling slope of 0.75\u20130.77 and overlapping 95% confidence intervals. The multivariate allometric slopes were similar to the bivariate slopes: 0.75 for the cerebellum and 0.72 for the cerebrum. In the case of the cerebrum, we confirmed that the Florida manatee was exceptionally unfolded: three times less cortical length than expected. For the cerebellum, we observed that humans had a particularly folded cerebellum: 1.5 times more cerebellar length than expected.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/85907/elife-85907-fig9-v2.jpg)\n\n**Figure 9.:** The cerebellar and cerebral cortices are disproportionately larger than their volumes, as shown by their hyper-allometry. The cerebellum is slightly but statistically significantly hypo-allometric compared to the cerebrum. (a) Allometry of cerebellum section length vs. cerebellum section area. (b) Allometry of cerebrum length vs. cerebrum section area. (c) Allometry of cerebellum section area vs. cerebrum section area. MA: multivariate allometry. LR: linear regression with 95% confidence interval in grey. OR: orthogonal regression.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/85907/elife-85907-fig10-v2.jpg)\n\n**Figure 10.:** The geometry of cerebellar folia and molecular layer thickness were largely conserved when compared with changes in total cerebellar size, as revealed by the small allometric slopes. (a) Allometry of folial width vs. cerebellar section area (two-tailed p<1e-5). (b) Allometry of folial perimeter vs. cerebellar section area (two-tailed p=0.005). (c) Allometry of the thickness of the molecular layer vs. cerebellar section area (two-tailed p<1e-12). MA: multivariate allometry. LR: linear regression with 95% confidence interval in grey. OR: orthogonal regression.\n\nThe bivariate plot of cerebellar versus cerebral section area (Figure 9c) showed a strong correlation, however, their moderate partial correlation indicates that an important part of this correlation is mediated (including a significant negative partial correlation between cerebellar section area and cerebral section length, Figure 7c). The allometric scaling slope suggested that the cerebellum may be slightly proportionally smaller in species with large brains. In the case of isometry, the scaling slope should be 1. The observed scaling slope was slightly smaller than the isometric slope which was nevertheless at the margin of the 95% confidence interval (grey region in the figures), indicating a potential hypo-allometry of the cerebellum.\n\n#### Folial width, folial perimeter, and the thickness of the molecular layer increase slightly with cerebellar size\n\nFolial width, folial perimeter, and molecular layer thickness are all measurements of length which should also scale as the square root of cerebellar section area in case of isometry. We observed a much smaller scaling factor, indicating that when comparing small and large brains, those measurements increase substantially less than what could be expected from increases in cerebellar size (hypo-allometric scaling). The width and perimeter of cerebellar folia increased only slightly with cerebellar size (Figure 10). The scaling was markedly hypo-allometric: 0.10 for folial perimeter and 0.14 for folial width where isometric scaling should be 0.5. The scaling of the molecular layer\u2019s thickness was also hypo-allometric, but with a slightly higher scaling slope of 0.2. Folial width and perimeter appeared to be more heterogeneous than molecular layer thickness: linear regression with cerebellar section area captured only 28% of folial width variance, and 14% of folial perimeter variance, while it captured 64% of molecular layer thickness variance (Figure 10c).\n\n### Ancestral phenotype estimation\n\nOur ancestral phenotype estimations suggest evolutionary trajectories for the increases in brain size as well as for the decoupling between \u2018diverse\u2019 phenotypes (cerebellar and cerebral section area and length) and \u2018stable\u2019 phenotypes (folial width, folial perimeter, and thickness of the molecular layer). We made estimations of the ancestral states of our phenotypes based on the OU model fit. Our findings are presented for the evolution of PC1 and PC2, which provide a condensed representation of the concerted changes in the nine phenotypes studied. As indicated previously, the large variations in body weight make it the dominating feature in PC1. To zoom into the main patterns of neuroanatomical variation, we also show estimations of ancestral states excluding body and brain weight.\n\n#### The increase in body size and brain size have decoupled in primates\n\nWhen body and brain weight are included, PC1 (capturing 96.4% of the variance) showed the evolution of increasing body weight together with the brain phenotypes in the \u2018diverse\u2019 group (Figure 11a). These increases were estimated to appear first among the clade Scrotifera (harbour seal, zebu, pig, etc.) and later among primates. This set of phenotypes also decreased relative to the predicted common ancestor, for example, among Glires (rabbit, guinea pig, etc.) and Pilosa (eastern mole, common shrew, etc.). PC2 described the main deviations from this pattern, highlighting very particularly the group of primates, where brain sizes increased while body sizes stayed small. The common ancestor of mammals is predicted to have had a folded cerebrum with a correspondingly folded cerebellum, similar to that of a Rock hyrax.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/85907/elife-85907-fig11-v2.jpg)\n\n**Figure 11.:** Our analyses show a concerted change in body and brain size, and specific increase in cerebral and cerebellar volume in primates concomitant with an increased number of smaller folia. (a) Ancestral estimation of PC1 and PC2 for neuroanatomical variables plus brain volume. PC1 captures 96.4% of the variance, PC2 captures 2.4%. (b) Ancestral estimation of PC1 and PC2 for neuroanatomical variables, without brain volume. PC1 captures 91.4% of phenotypic variance, PC2 captures 3.6%.\n\n#### Diverse and stable phenotypes have decoupled in several branches of the phylogenetic tree\n\nWhen excluding body and brain weight, PC1 loaded strongly on brain phenotypes from the \u2018diverse\u2019 group (Figure 11b). The ancestral estimation of PC1 (92.8% of the variance) appeared very similar to the previous one, highlighting the early concerted increase in cerebellar and cerebral size among Scrotifera, followed later by primates. The pattern of PC2, however, was now different from the previous PC2. It described an early decoupling of the group of \u2018diverse\u2019 and \u2018stable\u2019 brain phenotypes among primates, as well as a more recent decoupling among Scrotifera, especially Mustelida (harbour seal, ringtail cat, etc.). The cerebrum of the manatee is a well-known exception to the allometric relationship between brain size and folding: despite its large volume, it is almost completely lissencephalic. The evolutionary trajectory of the increase in manatee brain size (cerebrum and cerebellum) is clear in both PC1 ancestral estimations, however, the decoupling between diverse and stable phenotypes is not present.\n\n## Discussion\n\n\u2018Despite the impressive beauty of its wiring diagrams, the \u201cneuronal machine\u201d concept of the cerebellum remained vaguely defined as \u201ca relatively simple machine devoted to some essential information processing.\u201d I was frustrated enough at the Salishan meeting to ask what else experimentalists would need to uncover before we would be able to understand the meaning of these wiring diagrams. Someone equally frustrated replied that the available diagrams were too simple to construct even a primitive radio, so more information was urgently needed before any meaningful model could be conceived.\u2019- M Ito, The Cerebellum (2011)\n\nWhereas the circuits of the cerebral cortex are characterised by the presence of profuse re-entering loops (most connections of the cerebral cortex originate in other regions of the same cerebral cortex), the cerebellum exhibits an almost perfect feedforward structure, with an organisation whose regularity and simplicity has baffled generations of experimentalists and theoreticians. The impressive multi-scale regularity of cerebellar structure led to the idea of the \u2018neuronal machine\u2019 (Eccles et al., 1967). The quote from Yamamoto et al., 2012, illustrates the challenge of imagining how the obstinate repetition of a single interconnection pattern among a reduced number of components could lead to the complex cerebellar function. However, its impressive evolutionary conservation suggests that its function has to fulfil an important role, for motion and cognition (Whiting and Barton, 2003; Ramnani, 2006; Barton and Venditti, 2014; Magielse et al., 2022).\n\nOne possibility is that the complexity of cerebellar function should not be found at the level of the individual circuits \u2013 as would be the case for a radio \u2013 but that those circuits would provide the substrate over which complexity would emerge, as waves in the ocean or patterns in a vibrating Chladni plate. A deeper understanding of the mesoscopic and macroscopic scales of organisation would be probably more appropriate to understanding phenomena unique to this level of organisation, complementing the extensive exploration of microscopic circuits and molecular properties of cerebellar cells.\n\nOur results provide a closer look into the nature of macroscopic cerebellar anatomy, its relationship with cerebral anatomy, its diversity across mammalian species, and its evolution. First, we showed that our computational neuroanatomy workflow, for which code and data have been made available open source, produces reliable results comparable with those of the literature. Second, we showed that the OU model, often used to model stabilising selection, is the one that fits phenotypic diversity the best. The OU model tended to dampen extreme variation, driving phenotypes towards the mean faster than the BM model would. Third, we showed that brain phenotypes segregated into a group of \u2018diverse\u2019 phenotypes, which increased over several orders of magnitude together with body size, and a second group of \u2018stable\u2019 phenotypes, which increased only slightly with brain size. Both groups were linked by significant negative partial correlations. The stable phenotypes were related to the local shape of cerebellar folding: folial width, folial perimeter, and thickness of the molecular layer. They changed over only ~0.5 order of magnitude between species with differences in brain size of ~2.5 orders of magnitude and difference in body size of ~11 orders of magnitude. Fourth, our allometric analyses confirmed the strong correlation between cerebellar and cerebral size (Barton and Harvey, 2000; Barton, 2002; Whiting and Barton, 2003; Herculano-Houzel, 2010; Barton, 2012; Smaers et al., 2018; Ashwell, 2020), and we extended these results to show that the same strong relationship holds for cerebellar folding: larger cerebella appear to be disproportionately more folded than smaller ones. Additionally, the allometric law for the increase of cerebellar folding was the same as for the increase of cerebral folding. Fifth, we estimated the evolutionary trajectories which may have led to the current phenotypic diversity. The main evolutionary trajectory showed the concerted increases and decreases in body size, brain size, cerebellar and cerebral size. Primates appeared as an outlier to this trend, with large brains relative to their body sizes. Focusing on brain phenotypes, our results showed a decoupling between diverse and stable phenotypes operating in several branches of the phylogenetic tree. This second pattern was, however, much more subtle than the global concerted increase in body and brain size.\n\nOur results are influenced by a series of methodological choices. We will discuss the most important ones. First, we use a single cerebellar section and a single cerebral section for each species. More sections would increase the accuracy of our measurements, but would require a substantial manual segmentation effort. For our research question, having global measurements for many species was more relevant than having dense measurements for a few species. The previous work of Sultan and Braitenberg, 1993, is remarkable in this respect, providing beautiful representations of the unfolded cerebellar surface for 15 different species. However, their method produced smaller cerebellar surface areas than in the same species using a more precise method, suggesting that it underestimates the actual values (Sereno et al., 2020; Zheng et al., 2023), and hence the magnitude of cerebellar folding. Producing complete reconstructions of the cerebellar surface remains challenging, and as far as we know, only three cerebella have been precisely reconstructed: two from humans and one from a macaque (Sereno et al., 2020; Zheng et al., 2023). Second, we decided to use global measurements of brain anatomy. Although we computed folial width and folial perimeter for each folium (Figure 3a\u2013c), and molecular layer thickness at numerous points for each brain section (Figure 4), we condensed all these local measurements into three median values. The cerebrum and the cerebellum show significant regional variability, but using local measurements would increase the number of phenotypes, largely exceeding the number of species. Fitting phylogenetic models with a significantly greater number of phenotypes than species is challenging (in particular, there is an ongoing debate regarding the use of OU models, see the work of Cooper et al., 2016; Grabowski et al., 2023). The use of penalisation techniques and constraints in the model\u2019s structure holds great promise and will enable the exploration of new hypotheses regarding the evolution of complex phenotypes (Clavel et al., 2015; Clavel et al., 2019). Finally, we decided to measure the raw material without aiming at correcting for shrinkage. Our reasoning was that if the relationships were sufficiently robust, we should still be able to see them despite shrinkage. This appeared to be the case: accounting for shrinkage should enhance the accuracy of our measurements making our correlations even stronger and our estimations more precise, but should not change our conclusions. Shrinkage correction is often performed using correction factors obtained from the literature, which introduces a new source of methodological variability. A more precise account of shrinkage would require, for example, acquiring MRI data before and after fixation for each species (see Wehrl et al., 2015). Sections could be then registered to the undeformed MRI, allowing us to estimate deformation due to slicing and shrinkage.\n\n### The measurement of folding\n\nPrevious studies of cerebellar folding have relied either on a qualitative visual score (Yopak et al., 2007; Lisney et al., 2008) or a \u2018gyrification index\u2019 based on the method introduced by Zilles et al., 1988; Zilles et al., 1989, for the study of cerebral folding (Iwaniuk et al., 2007; Cunha et al., 2020; Cunha et al., 2021). Zilles\u2019s gyrification index is the ratio between the length of the outer contour of the cortex and the length of an idealised envelope meant to reflect the length of the cortex if it were not folded. For instance, a completely lissencephalic cortex would have a gyrification index close to 1, while a human cerebral cortex typically has a gyrification index of ~2.5 (Zilles et al., 1988). This method has certain limitations, as highlighted by various researchers (Germanaud et al., 2012; Germanaud et al., 2014; Stankovi\u0107 and Sejdi\u0107, 2019; Schaer et al., 2008; Toro et al., 2008; Heuer et al., 2019). One important drawback is that the gyrification index produces the same value for contours with wide variations in folding frequency and amplitude, as illustrated in Figure 3d. In reality, folding frequency (inverse of folding wavelength) and folding amplitude represent two distinct dimensions of folding that cannot be adequately captured by a single number confusing both dimensions. To address this issue we introduced two measurements of folding: folial width and folial perimeter. These measurements can be directly linked to folding frequency and amplitude, and are comparable to the folding depth and folding wavelength we introduced previously for cerebral 3D meshes (Heuer et al., 2019). By using these measurements, we can differentiate folding patterns that could be confused when using a single value such as the gyrification index (Figure 3d). Additionally, these two dimensions of folding are important, because they can be related to the predictions made by biomechanical models of cortical folding, as we will discuss now.\n\n### Modelling of cortical folding\n\nBased on our results, we hypothesise that the process leading to cerebellar and cerebral folding is the same. In both cases, partial correlations showed strong direct links between section area and length. The allometric scaling slopes for section area and length \u2013 which describe the increase in degree of folding with size \u2013 were also the same. The conservation of folial width and perimeter is similar to the conservation of folding wavelength that we have reported previously in primates (Heuer et al., 2019).\n\nThe folding of the cerebral cortex has been the focus of intense research, both from the perspective of neurobiology (Borrell, 2018; Llinares-Benadero and Borrell, 2019; Fern\u00e1ndez and Borrell, 2023) and physics (Toro and Burnod, 2005; Tallinen et al., 2014; Kroenke and Bayly, 2018). Current biomechanical models suggest that cortical folding should result from a buckling instability triggered by the growth of the cortical grey matter on top of the white matter core. In such systems, the growing layer should first expand without folding, increasing the stress in the core. But this configuration is unstable, and if growth continues, stress is released through cortical folding. The wavelength of folding depends on cortical thickness, and folding models such as the one by Tallinen et al., 2014, predict a neocortical folding wavelength which corresponds well with the one observed in real cortices. Tallinen et al., 2014, provided a prediction for the relationship between folding wavelength $\\lambda$ and the mean thickness ($t$) of the cortical layer: $\\lambda=2\\pit(\\mu/(3\\mu_{s}))^{1/3}$. If we consider the stiffness of the cortex (\u03bc) and the substrate ($\\mu_{s}$) to be similar ($\\mu/\\mu_{s}\u22481$), we obtain in the case of humans, with an average cortical thickness of 2.5 mm (Fischl and Dale, 2000), a prediction of $\\lambda$~10.9 mm. This corresponds well with the human folding wavelength of ~11.2 mm reported in Heuer et al., 2019.\n\nIn the case of the cerebellum, it has been suggested that the transitory external granular layer may play the role of the expanding cortical layer in the models of cerebral cortical folding (Lawton et al., 2019). During development, the external granular layer produces an astonishingly large number of small granule cells. These cells migrate towards the inside of the cerebellum past the Purkinje cells to constitute the granular layer (Leto et al., 2016). This idea was expanded by Van Essen, 2020; Van Essen et al., 2018, who proposed in particular that tangential tension along parallel fibres (axons of granule cells) constrains the orientation of folds and may be the reason for their accordion-like orientation.\n\nWe hypothesise alternatively that the expanding layer leading to cerebellar folding is the molecular layer, that growth is not driven by granule cell proliferation but by the growth of the dendritic arborization of Purkinje cells \u2013 the orientation of cerebellar folding resulting from their characteristic expansion: the dendritic trees of Purkinje cells grow mostly in 2D (Kaneko et al., 2011), which could result in anisotropic cortical growth leading to the observed parallel folds. Indeed, in the cerebrum the growth of dendritic trees seems to be the main factor leading to cortical expansion (Welker, 1990; Rash et al., 2023). By the end of neuronal migration from the ventricular and outer subventricular zones, the cerebral cortex is still largely lissencephalic (Welker, 1990). Most cerebral cortical folding starts after the end of neuronal migration and is concomitant with the development of cortico-cortical connectivity and the elaboration of neuronal dendritic trees. If the expansion of the molecular layer were the main driving force for cerebellar folding, we would expect folial width to be proportional to the thickness of the molecular layer according to the same formula as for the cerebral cortex. This appears to be the case, and we observe that (1) in our data folial width and molecular layer thickness are, as expected, related by a significant positive partial correlation (Figure 7c); and (2) for a molecular layer thickness estimation across species of t~200 \u00b5m, the wavelength expected from Tallinen et al.\u2019s formula of $\\lambda$~0.87 mm corresponds well with our observed mean folial width across species of ~1 mm.\n\n### Role of cerebellar folding: a constraint for modularity?\n\nA striking characteristic of cerebellar anatomy is the multi-scale nature of its folding: in small cerebella we can observe only a first level of folding, but a pattern of folding within folding appears progressively as cerebellar size increases. For example, in humans (Figure 1), we can distinguish at least three such levels of folding. The addition of new levels of folding could be the reason why we observed relatively smaller folial width in larger cerebella (Figure 7c) such as those of humans, as new smaller folds develop atop existing ones. In the human cerebrum, folding has been reported to show one level of folds on top of folds, or \u2018frequency doubling\u2019 (Germanaud et al., 2012). This phenomenon has also been observed in swelling gels and mechanical models of folding (Mora and Boudaoud, 2006). We expect that such mechanical models should be able to produce additional levels of folding if more growth were allowed or if cortices were made thinner.\n\nFor both the cerebellum and the cerebrum, the thickness of the expanding layer appears to be very stable compared with the large diversity in total volume, which could reflect to some extent a conservation of local circuits across species. Regarding the cerebellum, we could speculate that the hierarchical organisation induced by folding promotes a similar hierarchical functional organisation on top of conserved local circuits. The addition of an increasing number of folial \u2018modules\u2019 and the constitution of a nested hierarchy of super modules should induce a similar modularity of white matter connections. Cerebellar folding could then constrain the cerebellum to develop a regular, hierarchical pattern of variation in fibre length with an associated modular pattern in timing of neuronal spikes. Then, through synaptic plasticity, this could lead to a preferential potentiation of neurons within the same folium, and next within their super-folium, etc. The timing of the development of cerebellar folding could also have an influence on the constitution of cerebellar networks, reinforcing the influence of early modules (trees) on late modules (leafs).\n",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "a1bbda84-50a6-4ad6-bdd8-78878d6e74a4",
+      "submission_id": "58eb5293-327d-4399-9dd6-668f181ce0a3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jessica Dubois, https://ror.org/05f82e368 Inserm Unit\u00e9 NeuroDiderot, Universit\u00e9 Paris Cit\u00e9 France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85907.sa0](https://doi.org/10.7554/eLife.85907.sa0)\n\nThis fundamental study gives novel insight into the folding diversity of the cerebellum compared to the cerebrum among 56 mammalian species. Based on impressive data, a variety of convincing analyses are performed, in particular for anatomical descriptions, phylogenetic comparisons and allometry investigations. This study will be of great interest to biologists, especially evolutionary and comparative neuroscientists, and physicists interested in biomechanics, as these observations provide a basis for models of brain folding mechanisms.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jessica Dubois, https://ror.org/05f82e368 Inserm Unit\u00e9 NeuroDiderot, Universit\u00e9 Paris Cit\u00e9 France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85907.sa1](https://doi.org/10.7554/eLife.85907.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Diversity and evolution of cerebellar folding in mammals\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Jessica Dubois as the Reviewing Editor, and the evaluation has been overseen by Floris de Lange as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Felipe Cunha (Reviewer # 1); H\u00e9lo\u00efse de Vareilles (Reviewer #2); Robert A Barton (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAll reviewers acknowledged the importance and originality of your study. But they also raised a number of important concerns to consider.\n\nThe most critical one concerns the statistical analyses performed (see Reviewer #3's comments). Further evidence should be provided regarding the superiority of the Ornstein-Uhlenbeck model. Besides, the objectives and relevance of the partial correlations and principal component analyses to all included variables should also be better argued given the possible over-fitting and the underlying theoretical hypotheses which are not always clear.\n\nThe reviewers were also concerned about the global presentation of the manuscript. Additional description of some methods is required. The different results should be better linked, and potentially reordered. The discussion should also be reviewed in depth. Better highlighting the methodological novelties should also be considered.\n\nWe hope that you will be able to take all these general comments into account, as well as the more detailed comments of the reviewers (see below).\n\nReviewer #2 (Recommendations for the authors):\n\nThis study is both rich and generous, and I thank the authors for the beautiful work presented and shared with the community. The investigation of the cerebellum is both essential to our general understanding of the brain and under-explored, making the efforts developed in this article essential.\n\nI find the analyses well-led. Nevertheless, I think the reach of the current work would gain from a better emphasis on why the analyses have been conducted and what they imply. There are also aspects of the structure of the article which I find unconventional and potentially confusing for the reader.\n\nI will address my general recommendations following the current structure of the article.\n\nI will not address more specific concerns (specific wording, punctuation marks\u2026) that I have in this step of the review for two reasons:\n\n1) I believe the more general recommendations may lead to a restructuring of the article which would make some of the specific concerns irrelevant.\n\n2) The current draft does not include line numbers, making it challenging to address line-specific recommendations (please add line numbering to the next version if possible).\n\nIntroduction:\n\n\u2013 I have identified that the last three paragraphs match an Aims (bottom of p.2) \u2013 Methods (first paragraph p.3) \u2013 Results (second paragraph p.3). Then, the buckling models consideration of the Methods paragraph is rather an aim than a method and should be addressed in the previous paragraph.\n\n\u2013 In my opinion, the results should not be addressed in the introduction, as there is yet no information to support them. They should be summarized at the start of the discussion instead.\n\nMethods:\n\n\u2013 Histological data: the microdraw.pasteur.fr/project/brainmuseum-cb webpage was not publicly available at the time of writing of this review (Not authorized to view project \u2013 14.03.23). Please ensure that you make it available.\n\n\u2013 Histological data: what are the anatomical criteria to identify the mid-cerebellar slice? Do these criteria ensure that you are looking at comparable structures between species? (this can either be addressed in methods or in discussion).\n\n\u2013 Histological data: exclusion threshold \u2013 It would be nice if you included it in supp. Mat. An example of images that are just under and just over this threshold for the reader to get a grasp of the image quality requirement of the study.\n\n\u2013 Measurement of section area and length of the cerebral and cerebellar cortex: The implications of measurements not being modified to account for shrinkage should be briefly addressed in the discussion.\n\n\u2013 Figure 2/Table 1: the cerebellar section area/length would gain from its boundary being more explicitly defined in Figure 2's legend: is it the black contour in both cases? Is there a difference between \"cerebellar mid-slice section\" and \"cerebellar pial surface of mid-slice section\" as a boundary for those two items?\n\n\u2013 Measurement of molecular layer thickness: From \"We applied a Laplacian smoothing [\u2026]\" to \"from the outside of the image.\" Is it the same concept with two different wordings? Maybe blend the two sentences together or delete one as it may appear that two different gradients are computed.\n\n\u2013 Figure 4: I find image 4c confusing: is it related to images 4a and 4b? If so, why are the red dots creating such an angular curve when the black region's boundary appears very smooth on 4a and 4b? Please add more details to the legend.\n\n\u2013 Please address all the numerical analyses led in the Results section within the methods section.\n\n1) It would be helpful if some of the more complex types of results were introduced in the methods section, such as partial correlations conditional to all remaining measurements, or multivariate allometric scaling slopes.\n\n2) It would be helpful if the impact of genetic model choice on the other analyses was clarified (as in, which subsequent analyses rely on this model selection).\n\nResults:\n\nI could not find the common thread linking all the results together. Can you either make the logical structure of the results explicit or change it so that it follows a logical order? As an example, it could go from simpler to more complex analyses.\n\nIn addition, I would move some results to the discussion. This could lead to the following structure: \u2013 statement of numerical results (including section areas if relevant and mean thickness of the molecular layer) \u2013 correlation structure \u2013 allometries \u2013 genetic models assessment \u2013 phylogenetic PCA \u2013 Ancestor character state estimation.\n\nI suggest moving comparisons with anterior studies in the discussion, both for the very first and very last section of the results.\n\n\u2013 Correlation structure: p.9 \u2013 please detail partial correlations and their meaning in methods.\n\n\u2013 Correlation structure: p.9 \u2013 please detail \"phylogenetic\" PCA in methods.\n\n\u2013 Correlation structure: p.10 \u2013 The PCA analyses should have their own subsection.\n\n\u2013 Correlation structure: p.11 \u2013 please detail allometric slopes and multivariate allometric slopes in methods (are they used anywhere?).\n\n\u2013 Figure 8: the method for creating coloured clusters for each group should be briefly explained, maybe in the methods section?\n\n\u2013 Allometry: p.14 \u2013 you could re-quote the grey area in figure 10 when mentioning significance since it is not very visible and it may not be obvious to the reader that it is present in the figure.\n\nDiscussion:\n\nIn my opinion, the discussion needs to be thoroughly reworked. The current content of the discussion is very general and seems to address questions related to the work proposed rather than the work in itself. Discussing related topics is interesting and relevant, but should only take a subsection of the discussion.\n\nHere is a list of subsections that I would expect in a discussion (the order can be changed):\n\n\u2013 summary of the results demonstrated.\n\n\u2013 considerations about the work in a link to the state of the art (maybe 1st section of the results, considerations about coherence with the Tallinen model, and considerations about limits of the Sultan and Braitenberg pioneer study).\n\n\u2013 discussion of methodological decisions and potential limitations (not taking into account shrinkage, comparability of mid-cerebellar slice between species, the necessity of a sophisticated method for measurement of molecular layer thickness, \u2026).\n\n\u2013 discussion about the interpretation of the results, ideally creating an overall link about the different results and what they tell. This is essential to convey the overall meaning of the results reported.\n\n\u2013 relation of the current report to broader questions and considerations (has to come after the interpretation of results, or it can be confusing for the reader).\n\nReviewer #3 (Recommendations for the authors):\n\nResults/stats\n\n\u2013 Please either remove the OU models or at least discuss these issues and justify conclusions about model fit with more caution.\n\n\u2013 Please provide more justification for variable inclusion in the partial correlation and PC analyses, clarify the theoretical motivation for and inferences from the analyses, and discuss statistical issues of statistical power and collinearity.\n\n\u2013 Please consider testing the hypothesis of cortico-cerebellar correlated evolution by running models something like [cerebellar measure ~ cortical measure + rest of the brain measure]; and/or if this is not possible, clarify the claims you are making about correlated evolution of cortex and cerebellum (why the patterns indicate something more specific than overall size).\n\n\u2013 Figure 6 a: please at least present the CIs on the coefficients to show that the observed values include the predicted one.\n\nReferencing/discussion/attribution of previous findings:\n\n\u2013 Please revise/discuss/add citations as appropriate, based on my comments and references provided in the public review\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Diversity and evolution of cerebellar folding in mammals\" for further consideration by eLife. Your revised article has been evaluated by Floris de Lange (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below.\n\nAmong the reviewers' recommendations (detailed below), the main criticisms are as follows:\n\n\u2013 Following the second comment from the third reviewer (see below), all reviewers and the editor agree that the partial correlation analyses may be problematic in view of the sample size, and that they need to be better justified and interpreted to guarantee the robustness of the results.\n\n\u2013 The justification of the phylogenetic model still raises questions.\n\n\u2013 The section about the measurement of molecular layer thickness could be further clarified.\n\nReviewer #2 (Recommendations for the authors):\n\nI thank the authors for addressing most of the concerns issued thoroughly. Overall, the aims, methods and meanings of the results are clearer and my understanding was hence improved. In my opinion, only two points remain unresolved.\n\nUnresolved points:\n\nI. Accessibility of the Brain Museum Cerebellum project:\n\nWhen trying to access it, I still get an error: \"Not authorized to view project\".\n\nII. I still don't understand the section about the measurement of molecular layer thickness. (p.6)\n\nThis section has not been modified since the previous version of the article, and I find it challenging because it presents a rather complex methodology with not very clear context. In particular, the sentence \"In mature cerebella, the molecular layer appears as a light band followed by the granular layer which appears as a dark band\" with no additional comment is confusing in my opinion: are you dealing with only mature cerebella which makes the boundary between molecular and granular layer easy to detect or is it this not-so-obvious boundary that makes this complex method necessary? what does the boundary detection in Figure 4.c represent regarding Figure 4.b? I guess the molecular layer thickness results from averaging the length of the profile lines from figure 4.b?\n\nTo sum up, I have difficulties understanding what the problem is and hence what the method solves. I think this paragraph would gain from being more explicit in the reasons for both the whole and subparts of the process.\n\nApart from that, I found the current version much clearer than the previous one.\n\nReviewer #3 (Recommendations for the authors):\n\nIn general, I am happy with the responses of the authors and the changes they have made. There are still two statistical issues requiring a response:\n\n1. The justification for the OU model. Grabowski et al. do not actually demonstrate that the critique by Cooper et al. is misleading \u2013 mainly they just show that Cooper et al. were correct! That is not to say that the OU model can never be justified (although some query its basis in biological reality), but that instances of its superiority over BM need to be treated very cautiously. I don't think their simulation solves the problem \u2013 the reason the OU is biased is because it does not conform to the data distributions assumptions of AIC (which has strong assumptions about normality or AICc) \u2013 this would be the same for other tree transforms like \u03b4 (Pagel). This results in the OU being statistically favoured when the 'pull' parameter is so weak it is essentially the same as the Brownian model.\n\n2. The authors reject the criticism of overfitting by stating that their analyses do not involve fitting models. This is technically correct in strict terms but misleading. Exactly the same issues around small sample sizes per parameter (or variable) arise in partial correlation networks as in fitting a multiple regression model. Partial regression coefficients and partial correlation coefficients are susceptible to the same problem- neither can be estimated accurately without sufficient statistical power. Say you have 20 variables and 20 data points \u2013 no one would (hopefully) run a partial correlation on the 20 variables, or even 10 variables, or 5 \u2013 maybe just 2 could be justified. Here, the authors have 9 variables and 56 data points \u2013 with only 6 data points per variable, they don't have the statistical power to tease apart the relationships as they imply. Added to this, even with large samples, throwing in a bunch of variables without some explicit model that you are testing does indeed result in a correlational salad. Typically, such a partial correlation network would be liable to instability, and the more variables you add the harder it is to make sense of the individual relationships between them. Their explanation of how a negative correlation can arise between variables after controlling for their relationship to other variables is not necessary \u2013 this is obvious. What is not so obvious is why in principle there should be a negative (partial) correlation within their network \u2013 what is its interpretation? If they started with a model that predicted this or had some compelling explanation, I would be more impressed, but as it is I suspect it is an artefact for the reasons stated above.\n",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7b776be2-99ce-4e96-8138-05e806d84327",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C1",
+      "claim": "The cerebellum has ~80% of the surface area of the cerebral cortex in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, the cerebellum has ~80% of the surface area of the cerebral cortex (Sereno et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sereno et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "8a38c1b6-2e88-44f6-959a-0ecaa1bdb9b1",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C2",
+      "claim": "The cerebellum contains ~80% of all brain neurons in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "and contains ~80% of all brain neurons, although it represents only ~10% of the brain mass (Azevedo et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Azevedo et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "d589af2f-bd23-42be-a262-5067cd3b2b28",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C3",
+      "claim": "The cerebellum represents only ~10% of the brain mass in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "and contains ~80% of all brain neurons, although it represents only ~10% of the brain mass (Azevedo et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Azevedo et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "040a4fa1-19d9-479c-91ce-7caacc7bf66a",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C4",
+      "claim": "The cerebral cortex is unique to mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "While the cerebral cortex is unique to mammals, the cerebellum is present in all vertebrates",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the manuscript",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "f0333e94-ad51-46e7-9ceb-5b1af0729be5",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C5",
+      "claim": "The cerebellum is present in all vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "While the cerebral cortex is unique to mammals, the cerebellum is present in all vertebrates, with cerebellum-like structures which can be even identified in invertebrates such as octopuses (Nieuwenhuys et al., 1998; Shigeno et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nieuwenhuys et al., 1998 and Shigeno et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "d08fb864-bd56-4a41-82b3-5db15e5ea144",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C6",
+      "claim": "Cerebellum-like structures can be identified in invertebrates such as octopuses.",
+      "claim_type": "EXPLICIT",
+      "source": "with cerebellum-like structures which can be even identified in invertebrates such as octopuses (Nieuwenhuys et al., 1998; Shigeno et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nieuwenhuys et al., 1998 and Shigeno et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "611af38b-6cdc-4ae2-89d3-3a0df1953460",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C7",
+      "claim": "The main target of pyramidal cells is the cerebral cortex itself through profuse cortico-cortical connections.",
+      "claim_type": "EXPLICIT",
+      "source": "While the main target of pyramidal cells is the cerebral cortex itself (through profuse cortico-cortical connections), Purkinje cell afferents are mostly feedforward (Ramnani, 2006; Nieuwenhuys et al., 2008; Yamamoto et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "a5675b08-8116-4357-904c-fa77e925dc28",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C8",
+      "claim": "Purkinje cell afferents are mostly feedforward.",
+      "claim_type": "EXPLICIT",
+      "source": "While the main target of pyramidal cells is the cerebral cortex itself (through profuse cortico-cortical connections), Purkinje cell afferents are mostly feedforward (Ramnani, 2006; Nieuwenhuys et al., 2008; Yamamoto et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ramnani, 2006; Nieuwenhuys et al., 2008; Yamamoto et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "5713cf99-fbe2-48fa-916c-586817fefbeb",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C9",
+      "claim": "Dendritic trees of pyramidal neurons can be found in all cortical layers.",
+      "claim_type": "EXPLICIT",
+      "source": "While dendritic trees of pyramidal neurons can be found in all cortical layers, those of Purkinje cells are restricted to the molecular layer \u2013 their nuclei forming a boundary between the molecular and granular layers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established neuroanatomical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "14394210-07a9-42c5-b059-d7c58c204bcb",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C10",
+      "claim": "Dendritic trees of Purkinje cells are restricted to the molecular layer.",
+      "claim_type": "EXPLICIT",
+      "source": "While dendritic trees of pyramidal neurons can be found in all cortical layers, those of Purkinje cells are restricted to the molecular layer \u2013 their nuclei forming a boundary between the molecular and granular layers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established neuroanatomical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "a33661b6-96f1-4081-9053-39fd9debe2e1",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C11",
+      "claim": "Purkinje cell nuclei form a boundary between the molecular and granular layers.",
+      "claim_type": "EXPLICIT",
+      "source": "those of Purkinje cells are restricted to the molecular layer \u2013 their nuclei forming a boundary between the molecular and granular layers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established neuroanatomical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "7067a2f6-e1cd-447d-ae3e-d10371c3261a",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C12",
+      "claim": "The cortex is only folded in relatively large mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "While the cortex is only folded in relatively large mammals, the cerebellum is folded in all of them",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established comparative neuroanatomical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "bc8e1327-e963-414f-8f24-b433c319333c",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C13",
+      "claim": "The cerebellum is folded in all mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "While the cortex is only folded in relatively large mammals, the cerebellum is folded in all of them",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established comparative neuroanatomical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "cfb9ad0c-02eb-4853-891a-1b56b10914dc",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C14",
+      "claim": "The cerebellum is folded in birds.",
+      "claim_type": "EXPLICIT",
+      "source": "and is also folded in birds (Cunha et al., 2020; Cunha et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cunha et al., 2020 and Cunha et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "d53997be-5c62-4b6c-8c5f-201e91d8b960",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C15",
+      "claim": "The cerebellum is folded in some fish.",
+      "claim_type": "EXPLICIT",
+      "source": "some fish (Yopak et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yopak et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "1f5b1442-d37a-4db1-b184-f0c2425fcb08",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C16",
+      "claim": "The cerebellum is not folded in reptiles.",
+      "claim_type": "EXPLICIT",
+      "source": "but not in reptiles (Larsell, 1926; Nieuwenhuys et al., 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Larsell, 1926 and Nieuwenhuys et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "bef4dcb3-eb06-4f19-8669-3bbab3da1167",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C17",
+      "claim": "The study used histological data from 56 mammalian species.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we aimed at characterising the folding of the cerebellar cortex using histological data from a sample of 56 mammalian species",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as the study's methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "b08207cd-fa73-4963-a521-bd82c2a3fe86",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C18",
+      "claim": "Magnetic resonance imaging does not provide the resolution required to distinguish and reconstruct cerebellar folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Magnetic resonance imaging, the main tool for studying the folding of the cerebral cortex, does not provide the resolution required to distinguish and reconstruct cerebellar folding",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a methodological limitation based on technical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "6ec529d1-9461-416f-a119-ca3b6c3a22a3",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C19",
+      "claim": "Histological data, even at low scanning resolution, can provide sufficient information to distinguish folia as well as cerebellar cortical layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Histological data, even at low scanning resolution, can provide sufficient information to distinguish folia as well as cerebellar cortical layers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as methodological rationale based on technical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "240301cf-28ea-4d2a-a4e9-c6b977da1996",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C20",
+      "claim": "Ashwell, 2020, was able to estimate the surface area in 90 species of marsupials and 57 species of eutherian mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Using histological data, Ashwell, 2020, was able to estimate the surface area in 90 species of marsupials and 57 species of eutherian mammals, but did not study folia, of which the measurement remains challenging",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ashwell, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "e68d80f8-98a6-4bcc-b404-010629f8fd06",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C21",
+      "claim": "Ashwell, 2020, did not study folia.",
+      "claim_type": "EXPLICIT",
+      "source": "Using histological data, Ashwell, 2020, was able to estimate the surface area in 90 species of marsupials and 57 species of eutherian mammals, but did not study folia, of which the measurement remains challenging",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ashwell, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "ffec50f9-6596-4a6d-a33d-f46ca63d9298",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C22",
+      "claim": "Buckling models of brain folding suggest an inverse relationship between folding frequency and cortical thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "Buckling models of brain folding suggest an inverse relationship between folding frequency and cortical thickness, with thicker cortices leading to lower frequency folding (Toro and Burnod, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Toro and Burnod, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "3f65e5f8-a7d8-4c06-98ae-06ccd9a800f6",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C23",
+      "claim": "Thicker cortices lead to lower frequency folding according to buckling models.",
+      "claim_type": "EXPLICIT",
+      "source": "Buckling models of brain folding suggest an inverse relationship between folding frequency and cortical thickness, with thicker cortices leading to lower frequency folding (Toro and Burnod, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Toro and Burnod, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "f250f921-5213-4f3d-8763-25576c2a5e6c",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C24",
+      "claim": "The inverse relationship between folding frequency and cortical thickness has been verified in the mammalian cerebrum.",
+      "claim_type": "EXPLICIT",
+      "source": "This has been verified in the mammalian cerebrum (Mota and Herculano-Houzel, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mota and Herculano-Houzel, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "f5d1ec7d-6948-4f5a-9866-71178d9468c5",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C25",
+      "claim": "The study confirmed the strong allometry between the size of the cerebellum and the cerebrum across mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirm the strong allometry between the size of the cerebellum and the cerebrum across mammals (Barton and Harvey, 2000; Barton, 2002; Whiting and Barton, 2003; Herculano-Houzel, 2010; Barton, 2012; Smaers et al., 2018; Ashwell, 2020; Magielse et al., 2023)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study and multiple citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "1ad84fb1-3f7e-4b38-ae3d-9d2819f71470",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C26",
+      "claim": "The width of cerebellar folds shows strong relationships with cerebellar size, although with a much narrower range of variation.",
+      "claim_type": "EXPLICIT",
+      "source": "and show similarly strong relationships for the width of cerebellar folds and the thickness of the molecular layer, although with a much narrower range of variation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data analysis presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "838135f6-5f41-4a3c-bf85-191d956dc846",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C27",
+      "claim": "The thickness of the molecular layer shows strong relationships with cerebellar size, although with a much narrower range of variation.",
+      "claim_type": "EXPLICIT",
+      "source": "and show similarly strong relationships for the width of cerebellar folds and the thickness of the molecular layer, although with a much narrower range of variation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data analysis presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "fe566ae7-285d-4bb8-bde4-3d2a1f791214",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C28",
+      "claim": "Most of the data used in this study comes from the Brain Museum website.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the data used in this study comes from the Brain Museum website (https://brainmuseum.org) \u2013 the Comparative Mammalian Brain Collection initiated by Wally Welker, John Irwin Johnson, and Adrianne Noe from the University of Wisconsin, Michigan State University, and the National Museum of Health and Medicine",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as the data source for the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "c77b87ae-9083-4f60-a4f5-731b81987833",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C29",
+      "claim": "The human brain data comes from the BigBrain Project.",
+      "claim_type": "EXPLICIT",
+      "source": "The human brain data comes from the BigBrain Project (https://bigbrainproject.org) led by teams from Forschungszentrum J\u00fclich and McGill University (Amunts et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as the data source with citation to Amunts et al., 2013",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "5f9df576-929c-4c3a-b7de-c05c33fe59bb",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C30",
+      "claim": "The rhesus macaque data is part of the BrainMaps project.",
+      "claim_type": "EXPLICIT",
+      "source": "The rhesus macaque data is part of the BrainMaps project (http://brainmaps.org) by Edward G Jones at UC Davis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as the data source",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "d9d60cf2-d914-4c01-b8fd-696b7ab2ec0c",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C31",
+      "claim": "The study used MicroDraw to visualise and segment the histological data online.",
+      "claim_type": "EXPLICIT",
+      "source": "We used our Web tool MicroDraw to visualise and segment the histological data online (https://microdraw.pasteur.fr)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as the methodology used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "b4e644c6-7dbc-43fa-b4e9-beeb9e301dbf",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C32",
+      "claim": "The resolution of the histological images in the Brain Museum was very variable.",
+      "claim_type": "EXPLICIT",
+      "source": "The resolution of the histological images in the Brain Museum was very variable",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation about the data quality",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "0d239d5d-7f4b-471e-ac10-14e8205d78f9",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C33",
+      "claim": "Some species were excluded from the estimation of molecular layer thickness when resolution was deemed insufficient.",
+      "claim_type": "EXPLICIT",
+      "source": "We considered that image resolution was in all cases sufficient to estimate the length and area of the cerebellum sections, however, we excluded some species from our estimation of molecular layer thickness when resolution was deemed insufficient",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as a methodological decision based on data quality",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "b8481791-54bf-4424-aa00-d2580a46b3c1",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C34",
+      "claim": "Species where the density of pixels per mm\u00b2 was lower than 3.5 were excluded from molecular layer thickness estimation.",
+      "claim_type": "EXPLICIT",
+      "source": "For this, we plotted the total number of pixels of the image versus cerebellum size, and excluded species where the density of pixels per mm2 was lower than 3.5 \u2013 a threshold determined by visual inspection",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as a methodological criterion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "2730808c-d99e-4538-8e76-35eabc914d53",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C35",
+      "claim": "The study measured the length of the cerebral and cerebellar segmentation contours.",
+      "claim_type": "EXPLICIT",
+      "source": "We computed the length of the cerebral and cerebellar segmentation contours, and used the scale bar information to convert the data to millimetres",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as the measurement methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "a149b4b8-9f11-44f2-80a5-27e1a16b9748",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C36",
+      "claim": "Measurements were not modified to account for shrinkage.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurements were not modified to account for shrinkage, and reflect the raw data obtained from the images (see Ashwell, 2020, for a discussion of shrinkage in the Brain Museum collection)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as a methodological decision with citation to Ashwell, 2020",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "6a865f2a-36d3-4ce1-9b4c-0498d975b9c6",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C37",
+      "claim": "All measurements were log10 converted to facilitate their comparison.",
+      "claim_type": "EXPLICIT",
+      "source": "All measurements were log10 converted to facilitate their comparison",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as a data processing step",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "51fe865b-d14c-47f4-a5ff-16f240729d8e",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C38",
+      "claim": "The study measured folial width as the Euclidean distance between the two flanking sulci of a folium.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the width of each folium as the Euclidean distance between its two flanking sulci (Figure 3b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Described as the measurement methodology with reference to Figure 3b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "8341e3a4-f652-4b48-85fd-addfa579dcdb",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C39",
+      "claim": "The study measured folial perimeter as the distance along the cerebellar surface between the two flanking sulci of a folium.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the perimeter of each folium as the distance along the cerebellar surface between its two flanking sulci (Figure 3c)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Described as the measurement methodology with reference to Figure 3c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "ddfb02e5-610d-41ea-8c58-56cddefc2198",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C40",
+      "claim": "For each species, the study used the median width and the median perimeter across all folia to make estimations robust to outliers.",
+      "claim_type": "EXPLICIT",
+      "source": "For each species we used the median width and the median perimeter across all folia, to make our estimations robust to outliers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as a methodological decision",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "5bb2d8aa-9582-41bb-8aea-ccf3c2694826",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C41",
+      "claim": "The study estimated the thickness of the molecular layer automatically.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated the thickness of the molecular layer automatically (Figure 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Described as the methodology with reference to Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "1644d8af-a5fc-4f1c-b7ef-1c340dd8acf7",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C42",
+      "claim": "The molecular layer of the cerebellum appears as a light band followed by the granular layer which appears as a dark band.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular layer of the cerebellum appears as a light band followed by the granular layer which appears as a dark band",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation about histological appearance",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "b7ad3d13-c414-4b74-89bf-ad1a110c23f4",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C43",
+      "claim": "For each species, a single thickness value was computed as the median of the thickness measured for each profile line.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, for each species, a single thickness value was computed as the median of the thickness measured for each profile line, to make our estimation robust to outliers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as a methodological decision",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "7cbcf06b-7cfb-4027-9fc7-04a222508b11",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C44",
+      "claim": "The study obtained the phylogenetic tree for 56 species from the TimeTree website.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained the phylogenetic tree for our 56 species from the TimeTree website (Figure 5a, https://www.timetree.org, Kumar et al., 2017)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Described as the data source with citation to Kumar et al., 2017 and reference to Figure 5a",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "8e559f90-b39a-43c4-b316-a1e564f99c70",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C45",
+      "claim": "The study tested three different evolutionary models: Brownian motion (BM), Ornstein-Uhlenbeck (OU), and early burst (EB).",
+      "claim_type": "EXPLICIT",
+      "source": "We tested three different models. First, the randomly varying phenotype that we mentioned could be modelled as a Brownian motion (BM) process... Second, the Ornstein-Uhlenbeck (OU) model... Finally, the early burst (EB) model",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as the analytical approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "622c93ef-db05-49d7-acdb-ed17b6974f04",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C46",
+      "claim": "The Brownian motion model can be used to model fluctuating selection and genetic drift.",
+      "claim_type": "EXPLICIT",
+      "source": "BM can be used to model fluctuating selection and genetic drift, for example",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about evolutionary models",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "53e4265e-5ef4-4cf0-96d2-6a1c3cad28c9",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C47",
+      "claim": "The Ornstein-Uhlenbeck model has been used to model stabilising selection.",
+      "claim_type": "EXPLICIT",
+      "source": "which has been used to model stabilising selection (Felsenstein, 1988; Hansen and Martins, 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Felsenstein, 1988 and Hansen and Martins, 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "13480d93-dcd3-4ecd-8673-043d38de8b08",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C48",
+      "claim": "The early burst model models a rapid diversification of species in the early stages of their evolution, followed by a slowdown in the rate of diversification.",
+      "claim_type": "EXPLICIT",
+      "source": "EB models a rapid diversification of species in the early stages of their evolution, followed by a slowdown in the rate of diversification (Blomberg et al., 2003; Harmon et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Blomberg et al., 2003 and Harmon et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "f387864f-b825-4100-8c61-214a2be96580",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C49",
+      "claim": "Multivariate models were fitted using the mvMORPH package.",
+      "claim_type": "EXPLICIT",
+      "source": "Multivariate models were fitted using the mvMORPH package (Clavel et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as the analytical tool with citation to Clavel et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "8ae3ffc5-235c-4860-b835-9e3a36a3caa7",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C50",
+      "claim": "The study selected the best fitting model using the Akaike information criterion (AIC), corrected for small sample sizes (AICc).",
+      "claim_type": "EXPLICIT",
+      "source": "We selected the best fitting model using the Akaike information criterion (AIC), corrected for small sample sizes (AICc)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as the model selection methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "9c19de42-04eb-4bae-96c2-a7ebb0bc871d",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C51",
+      "claim": "The study's measurements of cerebellar and cerebral section area correlated well with volume measurements reported in the literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Our measurements were a good proxy for total volume and correlated well with those reported in the literature",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison with literature data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "9668879e-0849-4920-b081-144581a9dec5",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C52",
+      "claim": "The correlation between the study's section area measurements and Smaers et al., 2018 volume measurements captured ~96% of the variance.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that this was the case by comparing our measurements with the volume measurements reported by Smaers et al., 2018: the correlation captured ~96% of the variance (Figure 6a and b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on data analysis with reference to Figure 6a and b and citation to Smaers et al., 2018",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "40051734-52ee-4b38-899b-d4f1df26d0d6",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C53",
+      "claim": "The study's folial width measurements do not correlate significantly with Sultan and Braitenberg's measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Our measurements of cerebellar folial width and folial perimeter, however, do not correlate significantly with Sultan and Braitenberg's measurements (Figure 6c)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on data analysis with reference to Figure 6c and citation to Sultan and Braitenberg, 1993",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "1d2ad130-71c0-4b14-a518-441382e96899",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C54",
+      "claim": "Zheng et al., 2023, reported molecular layer thickness of 0.32 mm (\u00b10.08) for humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Zheng et al., 2023, reported 0.32 mm (\u00b10.08) for humans",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zheng et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "8c1fe964-a8af-44b5-b66e-a4b52a67f6cc",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C55",
+      "claim": "The study's estimation of human molecular layer thickness was 0.29 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "and our estimation was of 0.29 mm, which is well within the confidence interval",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data analysis from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "0307dfc1-ffed-4e6b-a793-aadbbb942a86",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C56",
+      "claim": "The Ornstein-Uhlenbeck model provided the best fit to the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the goodness of fit of the three models, we observed substantial evidence in favour of the OU model (Table 2, smaller values indicate a better fit)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on model comparison analysis with reference to Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "4dd81807-1ab8-4c82-9d7f-712e3c4bec04",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C57",
+      "claim": "The average halflife in the selected OU model was 20 million years.",
+      "claim_type": "EXPLICIT",
+      "source": "The average halflife = log(2)/\u03b1 was 20 million years",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on calculation from the fitted OU model parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "3590a9d2-90f2-410a-90f9-a7ec1a31b5cb",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C58",
+      "claim": "In 1000 simulations, the BM model was correctly selected over the OU model 99.3% of the times.",
+      "claim_type": "EXPLICIT",
+      "source": "In 1000 simulations, the BM model was correctly selected over the OU model 99.3% of the times",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on simulation analysis to assess statistical power",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "7423ca42-b9ae-45fb-8bfd-15d972c477ca",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C59",
+      "claim": "All measurements were strongly positively correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "All measurements were strongly positively correlated (Figure 7a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on correlation analysis with reference to Figure 7a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "8f0f1e39-e561-4136-9cc6-b53f1c90595f",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C60",
+      "claim": "Anatomical phenotypes segregate into 'diverse' and 'stable' groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Two groups of phenotypes appeared: First, a group of 'diverse' phenotypes that varied widely across species... Second, a group of 'stable' phenotypes that showed much less variation in comparison",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on partial correlation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "e2bd4ce2-22dc-4837-afb4-4c26deffc8fa",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C61",
+      "claim": "Cerebellar section area varies over ~2.5 orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Cerebellar section area, for example, varies over ~2.5 orders of magnitude",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "5c78c2bc-7b15-4844-8135-0a2efdacbb16",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C62",
+      "claim": "Body weight varies over 10.8 orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "and body weight over 10.8 orders of magnitude",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "85fd7f8b-e84b-4d14-876d-f1a0d08b8983",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C63",
+      "claim": "There was only a <4-fold variation in stable phenotypes across species (~0.5 order of magnitude).",
+      "claim_type": "EXPLICIT",
+      "source": "There was only a <4-fold variation in these phenotypes across species (~0.5 order of magnitude)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "d1a36b56-d3a5-49d5-bbfb-c1a6fd74f990",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C64",
+      "claim": "The most important positive partial correlation between cerebellum and cerebrum was between cerebral section area and cerebellar section area.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the diverse group, the most important positive partial correlation between cerebellum and cerebrum was between cerebral section area (a 2D section of cerebral volume) and cerebellar section area (a 2D section of cerebellar volume)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on partial correlation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "0ca9ed87-7395-4b6d-aee0-a3187d66facf",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C65",
+      "claim": "Larger cerebella tend to have relatively smaller and thinner folia than what could be expected for their size.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that larger cerebella tend to have relatively smaller and thinner folia than what could be expected for their size",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from negative partial correlations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "144b3244-a1fa-4b46-8997-0edc39e0eda2",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C66",
+      "claim": "PC1 captured 96.4% of the variance in the phylogenetic PCA of all cerebellar and cerebral measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "The phylogenetic PCA of all cerebellar and cerebral measurements produced a PC1 which captured the largest part of the variance: 96.4% (Figure 8b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on PCA analysis with reference to Figure 8b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "5bb7d601-c118-4b93-a356-1765e9cf5a0f",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C67",
+      "claim": "PC1 described a strong concerted change in body size and brain size, cerebellar and cerebral section area and length.",
+      "claim_type": "EXPLICIT",
+      "source": "PC1 described a strong concerted change in body size and brain size, cerebellar and cerebral section area and length, and loaded weakly on folial width, folial perimeter, and molecular layer thickness",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on PCA analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "8181e30f-046c-48b5-8faf-03f581139292",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C68",
+      "claim": "PC2 captured 2.6% of the variance.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of variance captured by PC2 was 2.6%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on PCA analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "3d9b8289-0dba-4cbb-888e-4bca8ea38c9c",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C69",
+      "claim": "Humans show a small body size relative to brain size.",
+      "claim_type": "EXPLICIT",
+      "source": "Plotting all species in PC1/PC2 space (Figure 8a) showed that humans were here an important exception, with a small body size relative to brain size",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on PCA analysis with reference to Figure 8a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "0b581434-d345-4381-b8da-89324063bbde",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C70",
+      "claim": "Other primate species in the sample (chimpanzee, rhesus macaque, etc.) also show small body size relative to brain size to some extent.",
+      "claim_type": "EXPLICIT",
+      "source": "To some extent, this was also the case for other primate species in our sample (chimpanzee, rhesus macaque, etc.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on PCA analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "f65135df-92b4-4261-8f62-5a58aed4268c",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C71",
+      "claim": "In the PCA excluding body and brain weight, PC1 captured 92.1% of the variance while PC2 captured 3.0%.",
+      "claim_type": "EXPLICIT",
+      "source": "This time, PC1 captured 92.1% of the variance while PC2 captured 3.0%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on PCA analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "816760ba-ce3f-4c17-b034-f422491bb02d",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C72",
+      "claim": "Humans appeared among the species having the highest frequency of cerebellar folia (smaller folial width and perimeter).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, humans appeared among the species having the highest frequency of cerebellar folia (smaller folial width and perimeter)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on PCA analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "acf81a42-3baa-4b7b-a9f3-43db32b261c4",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C73",
+      "claim": "The allometric law for the increase of cerebellar folding was the same as for the increase of cerebral folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the allometric law for the increase of cerebellar folding was the same as for the increase of cerebral folding",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on allometric analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "02ac89bc-971f-4ea9-b68e-ef3393ba8306",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C74",
+      "claim": "The scaling slopes for cerebellar and cerebral folding were 0.75-0.77 with overlapping 95% confidence intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase of folding with size followed a similar law for both structures, with a scaling slope of 0.75\u20130.77 and overlapping 95% confidence intervals",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on allometric analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "b0dfe613-79ec-4a17-bde2-0f6d710ff84f",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C75",
+      "claim": "The Florida manatee was exceptionally unfolded: three times less cortical length than expected.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of the cerebrum, we confirmed that the Florida manatee was exceptionally unfolded: three times less cortical length than expected",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on allometric analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "37e06b19-045e-403d-ba61-0be29aa8228a",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C76",
+      "claim": "Humans had a particularly folded cerebellum: 1.5 times more cerebellar length than expected.",
+      "claim_type": "EXPLICIT",
+      "source": "For the cerebellum, we observed that humans had a particularly folded cerebellum: 1.5 times more cerebellar length than expected",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on allometric analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "1ebafac9-44fc-43e7-825a-671369daccb0",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C77",
+      "claim": "The allometric scaling slope for cerebellum versus cerebrum suggested that the cerebellum may be slightly proportionally smaller in species with large brains.",
+      "claim_type": "EXPLICIT",
+      "source": "The allometric scaling slope suggested that the cerebellum may be slightly proportionally smaller in species with large brains",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on allometric analysis and inference",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "bfc54b8a-589c-4d4b-8db9-72748c286ff4",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C78",
+      "claim": "The scaling of folial width with cerebellar size was markedly hypo-allometric: 0.14.",
+      "claim_type": "EXPLICIT",
+      "source": "The scaling was markedly hypo-allometric: 0.10 for folial perimeter and 0.14 for folial width where isometric scaling should be 0.5",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on allometric analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "f41d4191-ced3-43a1-ba6b-ef9b90e5940e",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C79",
+      "claim": "The scaling of folial perimeter with cerebellar size was markedly hypo-allometric: 0.10.",
+      "claim_type": "EXPLICIT",
+      "source": "The scaling was markedly hypo-allometric: 0.10 for folial perimeter and 0.14 for folial width where isometric scaling should be 0.5",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on allometric analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "84f4c64b-aa68-496e-8428-36ba6b0bc3e1",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C80",
+      "claim": "The scaling of the molecular layer's thickness was hypo-allometric, with a scaling slope of 0.2.",
+      "claim_type": "EXPLICIT",
+      "source": "The scaling of the molecular layer's thickness was also hypo-allometric, but with a slightly higher scaling slope of 0.2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on allometric analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "e8735168-b0bd-463b-a4ea-2aa96430d5ca",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C81",
+      "claim": "Linear regression with cerebellar section area captured only 28% of folial width variance.",
+      "claim_type": "EXPLICIT",
+      "source": "linear regression with cerebellar section area captured only 28% of folial width variance",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on regression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "570cd690-2fbe-45f1-add8-51d5cc215af9",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C82",
+      "claim": "Linear regression with cerebellar section area captured only 14% of folial perimeter variance.",
+      "claim_type": "EXPLICIT",
+      "source": "and 14% of folial perimeter variance",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on regression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "f13b4982-83af-467b-9364-2c1f54df3af5",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C83",
+      "claim": "Linear regression with cerebellar section area captured 64% of molecular layer thickness variance.",
+      "claim_type": "EXPLICIT",
+      "source": "while it captured 64% of molecular layer thickness variance (Figure 10c)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on regression analysis with reference to Figure 10c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "abad2a0b-2d28-4aff-bd5b-5cc1781cc1dc",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C84",
+      "claim": "The common ancestor of mammals is predicted to have had a folded cerebrum with a correspondingly folded cerebellum, similar to that of a Rock hyrax.",
+      "claim_type": "EXPLICIT",
+      "source": "The common ancestor of mammals is predicted to have had a folded cerebrum with a correspondingly folded cerebellum, similar to that of a Rock hyrax",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on ancestral state estimation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "27977144-0642-431c-9e54-810aa96dcf63",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C85",
+      "claim": "The cerebellum is present in all vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "While the cerebral cortex is unique to mammals, the cerebellum is present in all vertebrates",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established comparative neuroanatomical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "e22ceab3-71d2-4307-bcad-1a18324c6862",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C86",
+      "claim": "The circuits of the cerebral cortex are characterised by the presence of profuse re-entering loops.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the circuits of the cerebral cortex are characterised by the presence of profuse re-entering loops (most connections of the cerebral cortex originate in other regions of the same cerebral cortex)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established neuroanatomical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "dbe991d3-7956-4ee7-a260-e98854290081",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C87",
+      "claim": "The cerebellum exhibits an almost perfect feedforward structure.",
+      "claim_type": "EXPLICIT",
+      "source": "the cerebellum exhibits an almost perfect feedforward structure",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established neuroanatomical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "d079e73e-cb9f-4114-9d36-c51a5b14f022",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C88",
+      "claim": "The study hypothesizes that the process leading to cerebellar and cerebral folding is the same.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our results, we hypothesise that the process leading to cerebellar and cerebral folding is the same",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis based on the study's findings",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "c16b243d-bcfd-4f78-a45a-5700bb344230",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C91",
+      "claim": "The human folding wavelength is ~11.2 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "This corresponds well with the human folding wavelength of ~11.2 mm reported in Heuer et al., 2019",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Heuer et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "efc46659-f2a1-48ce-9df9-ed3549b2f80b",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C92",
+      "claim": "It has been suggested that the transitory external granular layer may play the role of the expanding cortical layer in models of cerebral cortical folding.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of the cerebellum, it has been suggested that the transitory external granular layer may play the role of the expanding cortical layer in the models of cerebral cortical folding (Lawton et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lawton et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "cbb17444-a3d0-47fa-a888-c2be7373afca",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C93",
+      "claim": "During development, the external granular layer produces an astonishingly large number of small granule cells.",
+      "claim_type": "EXPLICIT",
+      "source": "During development, the external granular layer produces an astonishingly large number of small granule cells. These cells migrate towards the inside of the cerebellum past the Purkinje cells to constitute the granular layer (Leto et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Leto et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "869ec457-c4bb-44cb-a95b-72b1ed4e386b",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C94",
+      "claim": "Van Essen proposed that tangential tension along parallel fibres constrains the orientation of folds and may be the reason for their accordion-like orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "This idea was expanded by Van Essen, 2020; Van Essen et al., 2018, who proposed in particular that tangential tension along parallel fibres (axons of granule cells) constrains the orientation of folds and may be the reason for their accordion-like orientation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Van Essen, 2020 and Van Essen et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "b45946aa-76ce-456a-a0f1-5f76566b30f8",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C95",
+      "claim": "The study hypothesizes that the expanding layer leading to cerebellar folding is the molecular layer.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesise alternatively that the expanding layer leading to cerebellar folding is the molecular layer",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis proposed by the authors",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "bd8fd0b7-b1fa-45cf-9a3b-b4e1088be19e",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C96",
+      "claim": "The study hypothesizes that growth is driven by the growth of the dendritic arborization of Purkinje cells.",
+      "claim_type": "EXPLICIT",
+      "source": "that growth is not driven by granule cell proliferation but by the growth of the dendritic arborization of Purkinje cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis proposed by the authors",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "6ad3fb2b-7fe5-4c0e-80a4-fb291027cb85",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C97",
+      "claim": "The dendritic trees of Purkinje cells grow mostly in 2D.",
+      "claim_type": "EXPLICIT",
+      "source": "the dendritic trees of Purkinje cells grow mostly in 2D (Kaneko et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kaneko et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "08df3952-bc92-4d3b-bb4b-fe92c04c2cf4",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C98",
+      "claim": "In the cerebrum, the growth of dendritic trees seems to be the main factor leading to cortical expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in the cerebrum the growth of dendritic trees seems to be the main factor leading to cortical expansion (Welker, 1990; Rash et al., 2023)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Welker, 1990 and Rash et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "a54cb4f0-686b-4024-8957-adbf6b35e8d6",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C99",
+      "claim": "By the end of neuronal migration from the ventricular and outer subventricular zones, the cerebral cortex is still largely lissencephalic.",
+      "claim_type": "EXPLICIT",
+      "source": "By the end of neuronal migration from the ventricular and outer subventricular zones, the cerebral cortex is still largely lissencephalic (Welker, 1990)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Welker, 1990",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "5d306e41-320a-4895-9214-38d2a77e3f74",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C100",
+      "claim": "Most cerebral cortical folding starts after the end of neuronal migration and is concomitant with the development of cortico-cortical connectivity and the elaboration of neuronal dendritic trees.",
+      "claim_type": "EXPLICIT",
+      "source": "Most cerebral cortical folding starts after the end of neuronal migration and is concomitant with the development of cortico-cortical connectivity and the elaboration of neuronal dendritic trees",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established developmental neuroscience knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "b22b759d-cbe0-4eb9-9e68-e7e48a5ab6ac",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C101",
+      "claim": "Folial width and molecular layer thickness are related by a significant positive partial correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "This appears to be the case, and we observe that (1) in our data folial width and molecular layer thickness are, as expected, related by a significant positive partial correlation (Figure 7c)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on partial correlation analysis with reference to Figure 7c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "be1b7712-05b3-4db4-b6a9-35d2c5903f4b",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C103",
+      "claim": "The observed mean folial width across species is ~1 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "corresponds well with our observed mean folial width across species of ~1 mm",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "e97c23cd-7e99-444b-8151-e4699e9c3bd7",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C104",
+      "claim": "In small cerebella, only a first level of folding can be observed.",
+      "claim_type": "EXPLICIT",
+      "source": "in small cerebella we can observe only a first level of folding",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on observation of the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "4a987638-1dcc-4b35-98ff-3a65287433cb",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C105",
+      "claim": "A pattern of folding within folding appears progressively as cerebellar size increases.",
+      "claim_type": "EXPLICIT",
+      "source": "but a pattern of folding within folding appears progressively as cerebellar size increases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on observation of the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "9a6ba782-831d-49a5-9833-8cf285e375bf",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C106",
+      "claim": "In humans, at least three levels of folding can be distinguished.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in humans (Figure 1), we can distinguish at least three such levels of folding",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on observation with reference to Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "9361fc0f-6a16-4d7b-9e30-fa6fa5cd658e",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C107",
+      "claim": "In the human cerebrum, folding has been reported to show one level of folds on top of folds, or 'frequency doubling'.",
+      "claim_type": "EXPLICIT",
+      "source": "In the human cerebrum, folding has been reported to show one level of folds on top of folds, or 'frequency doubling' (Germanaud et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Germanaud et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "c142fc42-48d0-4429-8ea1-a98128d9dbff",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C108",
+      "claim": "Frequency doubling has been observed in swelling gels and mechanical models of folding.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon has also been observed in swelling gels and mechanical models of folding (Mora and Boudaoud, 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mora and Boudaoud, 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "52388d2b-2d56-4f93-8dfb-8a782374f027",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C109",
+      "claim": "The evolution of cerebellar and cerebral anatomy follows a stabilising selection process.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that the evolution of cerebellar and cerebral anatomy follows a stabilising selection process",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on model selection showing OU model as best fit",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "09d0b4c0-8e2b-493b-895a-7f47831055c7",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C110",
+      "claim": "Large cerebella are disproportionately more folded than smaller ones.",
+      "claim_type": "EXPLICIT",
+      "source": "and showed in addition that large cerebella are disproportionately more folded than smaller ones",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on allometric analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "1017979b-4616-45b8-a963-2c08ccc29ae2",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "claim_id": "C111",
+      "claim": "Compared with the extreme variations in cerebellar surface area, folial anatomy and molecular layer thickness varied only slightly.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the extreme variations in cerebellar surface area, folial anatomy and molecular layer thickness varied only slightly, showing a much smaller increase in the larger cerebella",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data analysis showing hypo-allometric scaling",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9bd9ffc6-1048-45fb-ae05-22f625363c8e",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study developed and validated methods to measure cerebellar folding characteristics from histological data across 56 mammalian species. Measurements included cerebellar section area and length, folial width and perimeter, and molecular layer thickness using automated and semi-automated approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C43 describe a comprehensive methodological approach with clear documentation of data sources, measurement procedures, and quality control steps. The methods are reproducible and appropriate for the research questions, though some limitations (e.g., single sections per species, variable image resolution) are acknowledged.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "6db2a59e-1c1a-4f38-a0cc-ca34806c1791",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study validated its measurements by comparing cerebellar and cerebral section areas with published volume data, showing ~96% variance captured. The molecular layer thickness estimate for humans (0.29 mm) fell within the confidence interval of published values (0.32 \u00b1 0.08 mm).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 demonstrate appropriate validation against independent literature sources. The strong correlation (96% variance) with Smaers et al. 2018 and agreement with Zheng et al. 2023 for molecular layer thickness provide confidence in the measurement approach, though the lack of correlation with Sultan and Braitenberg's measurements (C53) suggests methodological differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "8cfe0f09-272c-49fa-a06d-2f631a888fd6",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Phylogenetic comparative analysis using three evolutionary models (Brownian motion, Ornstein-Uhlenbeck, and early burst) identified the Ornstein-Uhlenbeck model as the best fit, indicating that cerebellar and cerebral anatomy evolution follows a stabilizing selection process with a halflife of 20 million years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C58 and C109 describe rigorous phylogenetic comparative methods with appropriate model selection using AICc. The power analysis (C58) showing 99.3% correct BM model selection addresses concerns about OU model bias. The conclusion of stabilizing selection is well-supported by the model comparison results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "67290870-68c0-420c-ac5c-bd16c7acb74a",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Anatomical phenotypes segregate into two groups: 'diverse' phenotypes (body weight, brain size, cerebellar and cerebral section area/length) varying over multiple orders of magnitude, and 'stable' phenotypes (folial width/perimeter, molecular layer thickness) varying less than 4-fold across species. Larger cerebella tend to have relatively smaller and thinner folia than expected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C65 present a clear pattern from partial correlation analysis showing distinct groups of phenotypes. The quantification of variation ranges (C61-C63) and the negative partial correlations linking diverse and stable groups (C65) are well-documented. The statistical power analysis mentioned in the text supports the reliability of these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "9d9023aa-e19f-44bc-b628-d1449243ee8c",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Principal component analysis revealed that PC1 captured 96.4% of variance, describing concerted changes in body/brain size and cerebellar/cerebral dimensions. PC2 (2.6% variance) highlighted primates, especially humans, as having large brains relative to body size. When excluding body/brain weight, humans showed the highest frequency of cerebellar folia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C72 describe PCA results that are internally consistent and well-supported by the phylogenetically-controlled analysis. The high variance captured by PC1 and the identification of primate-specific patterns in PC2 are clearly documented with appropriate statistical methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "ae578a8e-2c9b-40d6-b265-a4af20d94464",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study confirmed strong allometry between cerebellar and cerebral size across mammals. Cerebellar and cerebral folding follow the same allometric law with scaling slopes of 0.75-0.77, indicating that large cerebella are disproportionately more folded than smaller ones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27, C73-C74, and C110 present consistent allometric relationships supported by multiple analytical approaches (bivariate and multivariate). The overlapping confidence intervals for cerebellar and cerebral folding slopes strengthen the conclusion of a common scaling law. The findings replicate and extend previous literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "9f107ba5-be59-4a8c-930a-011c1b500a64",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Folial width, folial perimeter, and molecular layer thickness show markedly hypo-allometric scaling with cerebellar size (slopes 0.10-0.20 vs. isometric expectation of 0.5). These stable phenotypes varied only slightly (~0.5 order of magnitude) compared to extreme variations in cerebellar surface area (~2.5 orders of magnitude).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C83 and C111 demonstrate clear hypo-allometric scaling with appropriate statistical analysis. The low R\u00b2 values for folial measurements (C81-C82) indicate high variability, which is acknowledged. The contrast between stable and diverse phenotypes is quantitatively well-established and represents a key finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "35d215c9-9823-4ba0-b267-844b28c33752",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Specific species showed exceptional folding patterns: the Florida manatee had three times less cerebral cortical length than expected, while humans had 1.5 times more cerebellar length than expected. The cerebellum may be slightly proportionally smaller in species with large brains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 identify specific deviations from allometric expectations. The manatee finding confirms previous literature, while the human cerebellar folding observation is novel. The suggestion of slight cerebellar hypo-allometry (C77) is appropriately cautious given the marginal statistical significance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "c432556c-9070-4fca-add9-036554341ba6",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Ancestral state estimation predicts that the common ancestor of mammals had a folded cerebrum with a correspondingly folded cerebellum, similar to that of a Rock hyrax.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C84 presents an ancestral state estimation based on the fitted OU model. While this is a model-based inference rather than direct observation, it follows appropriately from the phylogenetic comparative analysis and is presented with appropriate caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "40390fb2-95dc-4e91-96b2-82b242e61ae6",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study hypothesizes that cerebellar and cerebral folding share the same underlying process, with the molecular layer (rather than the external granular layer) serving as the expanding layer driven by Purkinje cell dendritic growth. This is supported by the positive partial correlation between folial width and molecular layer thickness, and agreement between predicted (~0.87 mm) and observed (~1 mm) folial width.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88, C95-C96, C101, and C103 present a mechanistic hypothesis that extends beyond the data. While the partial correlation (C101) and the agreement between predicted and observed folial width (C103) provide some support, these are correlational observations that do not establish causation. The hypothesis is plausible but requires experimental validation through developmental studies or biomechanical modeling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "0cb32095-65c0-4aa5-bf30-3a0d596ef255",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Cerebellar folding shows hierarchical organization with multiple levels: small cerebella show only first-level folding, while larger cerebella progressively develop folding-within-folding patterns. Humans show at least three levels of folding, similar to frequency doubling observed in the cerebrum and physical models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C108 describe a qualitative pattern of hierarchical folding organization supported by visual observation of the data and comparison with literature on cerebral folding and physical models. While not quantitatively analyzed in detail, the pattern is clearly documented and represents an important descriptive finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    },
+    {
+      "id": "765baebb-3533-4395-bfc2-d73451f39244",
+      "content_id": "89c63ceb-c65e-4baa-98e7-adafa8f81c4d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge about cerebellar and cerebral anatomy, including comparative neuroanatomy across vertebrates, cellular organization, connectivity patterns, and previous findings on folding mechanisms and scaling relationships.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C24 and C85-C100 present established knowledge from the literature, appropriately cited. These provide necessary context for the study but do not represent novel findings. The citations appear appropriate and the knowledge claims are consistent with the neuroscience literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-04T03:22:53.709150Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bef4dcb3-eb06-4f19-8669-3bbab3da1167",
+      "result_id": "9bd9ffc6-1048-45fb-ae05-22f625363c8e"
+    },
+    {
+      "claim_id": "fe566ae7-285d-4bb8-bde4-3d2a1f791214",
+      "result_id": "9bd9ffc6-1048-45fb-ae05-22f625363c8e"
+    },
+    {
+      "claim_id": "c77b87ae-9083-4f60-a4f5-731b81987833",
+      "result_id": "9bd9ffc6-1048-45fb-ae05-22f625363c8e"
+    },
+    {
+      "claim_id": "5f9df576-929c-4c3a-b7de-c05c33fe59bb",
+      "result_id": "9bd9ffc6-1048-45fb-ae05-22f625363c8e"
+    },
+    {
+      "claim_id": "d9d60cf2-d914-4c01-b8fd-696b7ab2ec0c",
+      "result_id": "9bd9ffc6-1048-45fb-ae05-22f625363c8e"
+    },
+    {
+      "claim_id": "b4e644c6-7dbc-43fa-b4e9-beeb9e301dbf",
+      "result_id": "9bd9ffc6-1048-45fb-ae05-22f625363c8e"
+    },
+    {
+      "claim_id": "0d239d5d-7f4b-471e-ac10-14e8205d78f9",
+      "result_id": "9bd9ffc6-1048-45fb-ae05-22f625363c8e"
+    },
+    {
+      "claim_id": "b8481791-54bf-4424-aa00-d2580a46b3c1",
+      "result_id": "9bd9ffc6-1048-45fb-ae05-22f625363c8e"
+    },
+    {
+      "claim_id": "2730808c-d99e-4538-8e76-35eabc914d53",
+      "result_id": "9bd9ffc6-1048-45fb-ae05-22f625363c8e"
+    },
+    {
+      "claim_id": "a149b4b8-9f11-44f2-80a5-27e1a16b9748",
+      "result_id": "9bd9ffc6-1048-45fb-ae05-22f625363c8e"
+    },
+    {
+      "claim_id": "6a865f2a-36d3-4ce1-9b4c-0498d975b9c6",
+      "result_id": "9bd9ffc6-1048-45fb-ae05-22f625363c8e"
+    },
+    {
+      "claim_id": "51fe865b-d14c-47f4-a5ff-16f240729d8e",
+      "result_id": "9bd9ffc6-1048-45fb-ae05-22f625363c8e"
+    },
+    {
+      "claim_id": "8341e3a4-f652-4b48-85fd-addfa579dcdb",
+      "result_id": "9bd9ffc6-1048-45fb-ae05-22f625363c8e"
+    },
+    {
+      "claim_id": "ddfb02e5-610d-41ea-8c58-56cddefc2198",
+      "result_id": "9bd9ffc6-1048-45fb-ae05-22f625363c8e"
+    },
+    {
+      "claim_id": "5bb2d8aa-9582-41bb-8aea-ccf3c2694826",
+      "result_id": "9bd9ffc6-1048-45fb-ae05-22f625363c8e"
+    },
+    {
+      "claim_id": "1644d8af-a5fc-4f1c-b7ef-1c340dd8acf7",
+      "result_id": "9bd9ffc6-1048-45fb-ae05-22f625363c8e"
+    },
+    {
+      "claim_id": "b7ad3d13-c414-4b74-89bf-ad1a110c23f4",
+      "result_id": "9bd9ffc6-1048-45fb-ae05-22f625363c8e"
+    },
+    {
+      "claim_id": "9c19de42-04eb-4bae-96c2-a7ebb0bc871d",
+      "result_id": "6db2a59e-1c1a-4f38-a0cc-ca34806c1791"
+    },
+    {
+      "claim_id": "9668879e-0849-4920-b081-144581a9dec5",
+      "result_id": "6db2a59e-1c1a-4f38-a0cc-ca34806c1791"
+    },
+    {
+      "claim_id": "40051734-52ee-4b38-899b-d4f1df26d0d6",
+      "result_id": "6db2a59e-1c1a-4f38-a0cc-ca34806c1791"
+    },
+    {
+      "claim_id": "1d2ad130-71c0-4b14-a518-441382e96899",
+      "result_id": "6db2a59e-1c1a-4f38-a0cc-ca34806c1791"
+    },
+    {
+      "claim_id": "8c1fe964-a8af-44b5-b66e-a4b52a67f6cc",
+      "result_id": "6db2a59e-1c1a-4f38-a0cc-ca34806c1791"
+    },
+    {
+      "claim_id": "7cbcf06b-7cfb-4027-9fc7-04a222508b11",
+      "result_id": "8cfe0f09-272c-49fa-a06d-2f631a888fd6"
+    },
+    {
+      "claim_id": "8e559f90-b39a-43c4-b316-a1e564f99c70",
+      "result_id": "8cfe0f09-272c-49fa-a06d-2f631a888fd6"
+    },
+    {
+      "claim_id": "622c93ef-db05-49d7-acdb-ed17b6974f04",
+      "result_id": "8cfe0f09-272c-49fa-a06d-2f631a888fd6"
+    },
+    {
+      "claim_id": "53e4265e-5ef4-4cf0-96d2-6a1c3cad28c9",
+      "result_id": "8cfe0f09-272c-49fa-a06d-2f631a888fd6"
+    },
+    {
+      "claim_id": "13480d93-dcd3-4ecd-8673-043d38de8b08",
+      "result_id": "8cfe0f09-272c-49fa-a06d-2f631a888fd6"
+    },
+    {
+      "claim_id": "f387864f-b825-4100-8c61-214a2be96580",
+      "result_id": "8cfe0f09-272c-49fa-a06d-2f631a888fd6"
+    },
+    {
+      "claim_id": "8ae3ffc5-235c-4860-b835-9e3a36a3caa7",
+      "result_id": "8cfe0f09-272c-49fa-a06d-2f631a888fd6"
+    },
+    {
+      "claim_id": "0307dfc1-ffed-4e6b-a793-aadbbb942a86",
+      "result_id": "8cfe0f09-272c-49fa-a06d-2f631a888fd6"
+    },
+    {
+      "claim_id": "4dd81807-1ab8-4c82-9d7f-712e3c4bec04",
+      "result_id": "8cfe0f09-272c-49fa-a06d-2f631a888fd6"
+    },
+    {
+      "claim_id": "3590a9d2-90f2-410a-90f9-a7ec1a31b5cb",
+      "result_id": "8cfe0f09-272c-49fa-a06d-2f631a888fd6"
+    },
+    {
+      "claim_id": "52388d2b-2d56-4f93-8dfb-8a782374f027",
+      "result_id": "8cfe0f09-272c-49fa-a06d-2f631a888fd6"
+    },
+    {
+      "claim_id": "7423ca42-b9ae-45fb-8bfd-15d972c477ca",
+      "result_id": "67290870-68c0-420c-ac5c-bd16c7acb74a"
+    },
+    {
+      "claim_id": "8f0f1e39-e561-4136-9cc6-b53f1c90595f",
+      "result_id": "67290870-68c0-420c-ac5c-bd16c7acb74a"
+    },
+    {
+      "claim_id": "e2bd4ce2-22dc-4837-afb4-4c26deffc8fa",
+      "result_id": "67290870-68c0-420c-ac5c-bd16c7acb74a"
+    },
+    {
+      "claim_id": "5c78c2bc-7b15-4844-8135-0a2efdacbb16",
+      "result_id": "67290870-68c0-420c-ac5c-bd16c7acb74a"
+    },
+    {
+      "claim_id": "85fd7f8b-e84b-4d14-876d-f1a0d08b8983",
+      "result_id": "67290870-68c0-420c-ac5c-bd16c7acb74a"
+    },
+    {
+      "claim_id": "d1a36b56-d3a5-49d5-bbfb-c1a6fd74f990",
+      "result_id": "67290870-68c0-420c-ac5c-bd16c7acb74a"
+    },
+    {
+      "claim_id": "0ca9ed87-7395-4b6d-aee0-a3187d66facf",
+      "result_id": "67290870-68c0-420c-ac5c-bd16c7acb74a"
+    },
+    {
+      "claim_id": "144b3244-a1fa-4b46-8997-0edc39e0eda2",
+      "result_id": "9d9023aa-e19f-44bc-b628-d1449243ee8c"
+    },
+    {
+      "claim_id": "5bb7d601-c118-4b93-a356-1765e9cf5a0f",
+      "result_id": "9d9023aa-e19f-44bc-b628-d1449243ee8c"
+    },
+    {
+      "claim_id": "8181e30f-046c-48b5-8faf-03f581139292",
+      "result_id": "9d9023aa-e19f-44bc-b628-d1449243ee8c"
+    },
+    {
+      "claim_id": "3d9b8289-0dba-4cbb-888e-4bca8ea38c9c",
+      "result_id": "9d9023aa-e19f-44bc-b628-d1449243ee8c"
+    },
+    {
+      "claim_id": "0b581434-d345-4381-b8da-89324063bbde",
+      "result_id": "9d9023aa-e19f-44bc-b628-d1449243ee8c"
+    },
+    {
+      "claim_id": "f65135df-92b4-4261-8f62-5a58aed4268c",
+      "result_id": "9d9023aa-e19f-44bc-b628-d1449243ee8c"
+    },
+    {
+      "claim_id": "816760ba-ce3f-4c17-b034-f422491bb02d",
+      "result_id": "9d9023aa-e19f-44bc-b628-d1449243ee8c"
+    },
+    {
+      "claim_id": "f5d1ec7d-6948-4f5a-9866-71178d9468c5",
+      "result_id": "ae578a8e-2c9b-40d6-b265-a4af20d94464"
+    },
+    {
+      "claim_id": "1ad84fb1-3f7e-4b38-ae3d-9d2819f71470",
+      "result_id": "ae578a8e-2c9b-40d6-b265-a4af20d94464"
+    },
+    {
+      "claim_id": "838135f6-5f41-4a3c-bf85-191d956dc846",
+      "result_id": "ae578a8e-2c9b-40d6-b265-a4af20d94464"
+    },
+    {
+      "claim_id": "acf81a42-3baa-4b7b-a9f3-43db32b261c4",
+      "result_id": "ae578a8e-2c9b-40d6-b265-a4af20d94464"
+    },
+    {
+      "claim_id": "02ac89bc-971f-4ea9-b68e-ef3393ba8306",
+      "result_id": "ae578a8e-2c9b-40d6-b265-a4af20d94464"
+    },
+    {
+      "claim_id": "09d0b4c0-8e2b-493b-895a-7f47831055c7",
+      "result_id": "ae578a8e-2c9b-40d6-b265-a4af20d94464"
+    },
+    {
+      "claim_id": "bfc54b8a-589c-4d4b-8db9-72748c286ff4",
+      "result_id": "9f107ba5-be59-4a8c-930a-011c1b500a64"
+    },
+    {
+      "claim_id": "f41d4191-ced3-43a1-ba6b-ef9b90e5940e",
+      "result_id": "9f107ba5-be59-4a8c-930a-011c1b500a64"
+    },
+    {
+      "claim_id": "84f4c64b-aa68-496e-8428-36ba6b0bc3e1",
+      "result_id": "9f107ba5-be59-4a8c-930a-011c1b500a64"
+    },
+    {
+      "claim_id": "e8735168-b0bd-463b-a4ea-2aa96430d5ca",
+      "result_id": "9f107ba5-be59-4a8c-930a-011c1b500a64"
+    },
+    {
+      "claim_id": "570cd690-2fbe-45f1-add8-51d5cc215af9",
+      "result_id": "9f107ba5-be59-4a8c-930a-011c1b500a64"
+    },
+    {
+      "claim_id": "f13b4982-83af-467b-9364-2c1f54df3af5",
+      "result_id": "9f107ba5-be59-4a8c-930a-011c1b500a64"
+    },
+    {
+      "claim_id": "1017979b-4616-45b8-a963-2c08ccc29ae2",
+      "result_id": "9f107ba5-be59-4a8c-930a-011c1b500a64"
+    },
+    {
+      "claim_id": "b0dfe613-79ec-4a17-bde2-0f6d710ff84f",
+      "result_id": "35d215c9-9823-4ba0-b267-844b28c33752"
+    },
+    {
+      "claim_id": "37e06b19-045e-403d-ba61-0be29aa8228a",
+      "result_id": "35d215c9-9823-4ba0-b267-844b28c33752"
+    },
+    {
+      "claim_id": "1ebafac9-44fc-43e7-825a-671369daccb0",
+      "result_id": "35d215c9-9823-4ba0-b267-844b28c33752"
+    },
+    {
+      "claim_id": "abad2a0b-2d28-4aff-bd5b-5cc1781cc1dc",
+      "result_id": "c432556c-9070-4fca-add9-036554341ba6"
+    },
+    {
+      "claim_id": "d079e73e-cb9f-4114-9d36-c51a5b14f022",
+      "result_id": "40390fb2-95dc-4e91-96b2-82b242e61ae6"
+    },
+    {
+      "claim_id": "b45946aa-76ce-456a-a0f1-5f76566b30f8",
+      "result_id": "40390fb2-95dc-4e91-96b2-82b242e61ae6"
+    },
+    {
+      "claim_id": "bd8fd0b7-b1fa-45cf-9a3b-b4e1088be19e",
+      "result_id": "40390fb2-95dc-4e91-96b2-82b242e61ae6"
+    },
+    {
+      "claim_id": "b22b759d-cbe0-4eb9-9e68-e7e48a5ab6ac",
+      "result_id": "40390fb2-95dc-4e91-96b2-82b242e61ae6"
+    },
+    {
+      "claim_id": "be1b7712-05b3-4db4-b6a9-35d2c5903f4b",
+      "result_id": "40390fb2-95dc-4e91-96b2-82b242e61ae6"
+    },
+    {
+      "claim_id": "e97c23cd-7e99-444b-8151-e4699e9c3bd7",
+      "result_id": "0cb32095-65c0-4aa5-bf30-3a0d596ef255"
+    },
+    {
+      "claim_id": "4a987638-1dcc-4b35-98ff-3a65287433cb",
+      "result_id": "0cb32095-65c0-4aa5-bf30-3a0d596ef255"
+    },
+    {
+      "claim_id": "9a6ba782-831d-49a5-9833-8cf285e375bf",
+      "result_id": "0cb32095-65c0-4aa5-bf30-3a0d596ef255"
+    },
+    {
+      "claim_id": "9361fc0f-6a16-4d7b-9e30-fa6fa5cd658e",
+      "result_id": "0cb32095-65c0-4aa5-bf30-3a0d596ef255"
+    },
+    {
+      "claim_id": "c142fc42-48d0-4429-8ea1-a98128d9dbff",
+      "result_id": "0cb32095-65c0-4aa5-bf30-3a0d596ef255"
+    },
+    {
+      "claim_id": "7b776be2-99ce-4e96-8138-05e806d84327",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "8a38c1b6-2e88-44f6-959a-0ecaa1bdb9b1",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "d589af2f-bd23-42be-a262-5067cd3b2b28",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "040a4fa1-19d9-479c-91ce-7caacc7bf66a",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "f0333e94-ad51-46e7-9ceb-5b1af0729be5",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "d08fb864-bd56-4a41-82b3-5db15e5ea144",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "611af38b-6cdc-4ae2-89d3-3a0df1953460",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "a5675b08-8116-4357-904c-fa77e925dc28",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "5713cf99-fbe2-48fa-916c-586817fefbeb",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "14394210-07a9-42c5-b059-d7c58c204bcb",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "a33661b6-96f1-4081-9053-39fd9debe2e1",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "7067a2f6-e1cd-447d-ae3e-d10371c3261a",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "bc8e1327-e963-414f-8f24-b433c319333c",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "cfb9ad0c-02eb-4853-891a-1b56b10914dc",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "d53997be-5c62-4b6c-8c5f-201e91d8b960",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "1f5b1442-d37a-4db1-b184-f0c2425fcb08",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "b08207cd-fa73-4963-a521-bd82c2a3fe86",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "6ec529d1-9461-416f-a119-ca3b6c3a22a3",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "240301cf-28ea-4d2a-a4e9-c6b977da1996",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "e68d80f8-98a6-4bcc-b404-010629f8fd06",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "ffec50f9-6596-4a6d-a33d-f46ca63d9298",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "3f65e5f8-a7d8-4c06-98ae-06ccd9a800f6",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "f250f921-5213-4f3d-8763-25576c2a5e6c",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "27977144-0642-431c-9e54-810aa96dcf63",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "e22ceab3-71d2-4307-bcad-1a18324c6862",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "dbe991d3-7956-4ee7-a260-e98854290081",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "c16b243d-bcfd-4f78-a45a-5700bb344230",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "efc46659-f2a1-48ce-9df9-ed3549b2f80b",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "cbb17444-a3d0-47fa-a888-c2be7373afca",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "869ec457-c4bb-44cb-a95b-72b1ed4e386b",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "6ad3fb2b-7fe5-4c0e-80a4-fb291027cb85",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "08df3952-bc92-4d3b-bb4b-fe92c04c2cf4",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "a54cb4f0-686b-4024-8957-adbf6b35e8d6",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    },
+    {
+      "claim_id": "5d306e41-320a-4895-9214-38d2a77e3f74",
+      "result_id": "765baebb-3533-4395-bfc2-d73451f39244"
+    }
+  ],
+  "comparisons": []
+}

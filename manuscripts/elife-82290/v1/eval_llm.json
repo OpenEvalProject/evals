@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The authors identified 813 human 'elusive genes' whose orthologs were lost in multiple mammalian lineages and 8,050 'non-elusive genes' retained across mammals through comprehensive phylogenetic analysis of 101 mammalian and 90 non-mammalian vertebrate species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C20-C24 describe a rigorous methodological pipeline for identifying elusive and non-elusive genes. The integration of multiple gene annotation sources (C21), quality filtering via BUSCO (C22), ortholog clustering resulting in 50,768 groups (C23), and phylogenetic tree inference yielding 17,495 mammalian ortholog groups (C24) provide strong methodological support for the identification of 813 elusive and 8,050 non-elusive genes (C1, C20). The methods include multiple validation steps to reduce false discovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Elusive genes are located in genomic regions with distinct characteristics including higher nucleotide substitution rates (KA, KS, KI), higher GC content, shorter gene lengths, and higher gene density compared to non-elusive genes in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 provide statistical evidence from multiple comparisons showing that elusive genes have significantly higher KA, KS, and KI values (C25-C27), higher GC content (C30), shorter gene lengths (C29), and are located in regions of higher gene density (C31). The interpretation (C28) that higher KS and KI indicate susceptibility to genomic characteristics independent of functional constraints is logically sound. All comparisons are supported by figures with statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The genomic characteristics of elusive genes (high GC content, compact gene bodies, high gene density, elevated substitution rates) originated before the emergence of gnathostomes approximately 500 million years ago and have been retained throughout vertebrate evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 demonstrate that elusive gene characteristics are conserved across vertebrates including non-mammalian species. The data show that ~40% of elusive genes vs ~90% of non-elusive genes were retained by non-mammalian vertebrates (C34-C35), and that orthologs of elusive genes in coelacanth, gar, and shark exhibit the same genomic characteristics (C38-C40). The interpretation that these features originated before gnathostomes ~500 million years ago (C3, C41) is well-supported by the comparative data, though the exact timing relies on phylogenetic inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Elusive genes contain abundant genetic variants including rare SNVs and CNVs (both deletions and duplications), have lower Z-scores for missense and loss-of-function mutations, and are more functionally dispensable than non-elusive genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 report statistically significant enrichment of rare SNVs and CNVs in elusive genes with supporting figures. Claims C46-C47 show lower Z-scores for missense and loss-of-function mutations, indicating reduced purifying selection. The interpretation that elusive genes are more functionally dispensable (C48) is supported by the Z-score data. Claim C49-C50 connecting synonymous mutation Z-scores to high mutability is consistent with the KS data. All claims are supported by statistical comparisons with appropriate databases (dbSNP, DGV, gnomAD).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C64",
+      "C65"
+    ],
+    "result": "Some elusive genes exhibit low-level and spatially restricted expression profiles in both adult tissues and fetal cells, with 150 elusive genes (H' < 1) showing expression in few or no tissues, while most non-elusive genes are ubiquitously expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 describe expression patterns supported by GTEx and single-cell RNA-seq data shown in Figure 5. The classification of elusive genes into two groups based on Shannon's diversity index (C64-C65) is clearly defined and quantified. The concordance between adult and fetal expression patterns (C54) strengthens the finding. The interpretation that some elusive genes have restricted expression (C55) is directly supported by the density plots showing distinct expression patterns compared to non-elusive genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C66",
+      "C67"
+    ],
+    "result": "Genomic regions containing elusive genes exhibit repressive epigenetic features including fewer ATAC-seq peaks, location outside or in shorter TADs, late replication timing, and enrichment in LADs, with these features being more pronounced in elusive genes with restricted expression (H' < 1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 report consistent epigenetic patterns across multiple cell lines (8 for ATAC-seq, 11 for TADs, 15 for replication timing, 4 for LADs) with statistical significance. The interpretation that elusive genes reside in inaccessible regions (C57) and are unlikely to be regulated by distant elements (C60) is supported by the ATAC-seq and TAD data. Claim C66 shows that all four epigenetic features are more pronounced in low-pleiotropy elusive genes, and C67 connects these features to restricted expression. The consistency across multiple independent datasets and cell lines strongly supports these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The depleted epigenomic features in elusive gene regions are unlikely to be technical artifacts from high GC content causing underrepresentation of sequencing reads, as only 3-9% of elusive genes are in extremely high GC regions (>60%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 provide specific percentages showing that very few elusive genes are in extremely high GC regions, and paradoxically, the low-pleiotropy elusive genes (H' < 1) have lower GC content than high-pleiotropy ones. This control analysis (C70) effectively addresses a potential technical confound and strengthens the validity of the epigenomic findings. The statistical comparison (p=0.0176) supports the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Human elusive genes overlap with genomic regions whose chicken orthologs are on microchromosomes, but unlike in mammals, chicken orthologs of elusive genes show no epigenetic repression, no expression differences from non-elusive genes, and no elevated KA/KS values, suggesting lineage-specific relaxation of 'elusive' features in chicken.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 establish the chromosomal correspondence between human elusive genes and chicken microchromosomes with statistical support (p=0.0175). Claims C76-C78 show that in chicken, elusive gene orthologs have more ATAC-seq peaks (in 4/8 samples) and no expression differences, contrasting with the mammalian pattern. Claims C80-C81 show avian orthologs lack elevated KA/KS and that low pleiotropy persists in some non-mammalian vertebrates but not frog. The interpretation of lineage-specific relaxation in chicken (C83) is speculative but supported by the data. This represents an important comparative finding showing that genomic features don't always correlate with expression patterns (C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Genomic regions rich in elusive genes were traced back to microchromosomes of ancestral gnathostomes through ancestral genome reconstruction, indicating that the disparity of genomic regions allowing 'elusiveness' has been retained during vertebrate evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 reports ancestral chromosome reconstruction showing elusive genes trace to ancestral microchromosomes, supported by Figure 7b. Claim C94 interprets this as evidence for long-term retention of genomic disparities. This finding is consistent with the earlier claims about ancient origin of elusive gene characteristics (C3, C41) and provides chromosomal-scale evidence. The reconstruction methodology is not fully detailed in the claims, but the interpretation is logically consistent with the comparative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C101"
+    ],
+    "result": "Heterogeneous genomic characteristics including high GC content, late replication timing, and LAD localization contribute to elevated mutation rates in elusive genes, and these disparities in genomic regions have been retained for hundreds of millions of years, affecting gene fate through both mutational and epigenetic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 connect specific genomic features to mutation rate mechanisms with supporting citations. Claim C88 links epigenetic marks to expression suppression with citation and data support. Claims C84 and C101 provide integrative interpretations that heterogeneous genomic characteristics affect gene fate and have been retained over evolutionary time. These interpretations are well-supported by the cumulative evidence from multiple analyses (substitution rates, genetic variants, epigenetic features, comparative genomics). The mechanistic explanations are supported by prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Prior research has established that gene retention/loss depends on functional importance, with genes in structurally unstable genomic regions being prone to loss, and that loss-prone genes in reptiles showed elevated substitution rates and were located in regions with high GC content and gene density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C17 summarize prior literature with appropriate citations establishing the conceptual framework for the study. Claims C18-C19 reference the authors' own prior work showing similar patterns in reptiles. These background claims are well-supported by citations and provide context for the current findings. They represent established knowledge rather than new findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The discrepancy between elusive genes having high GC/gene density but repressive epigenetic marks (which typically associate with low GC/gene density) may be explained by local heterochromatin formation for transposable element suppression, as observed in human chromosome region 19p12 where KRAB zinc finger genes colocalize with L1 retrotransposons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C89 correctly notes the discrepancy between typical epigenetic mark characteristics and elusive gene features, supported by citations. Claims C90-C91 propose a speculative mechanism involving heterochromatin and transposable element suppression with supporting citations. Claim C92 provides a specific example (19p12) with citation and figure reference. However, C90 is explicitly marked as speculation, and no direct evidence is provided in this study to test this hypothesis. The mechanism is plausible and supported by prior literature, but remains speculative without additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Chicken orthologs of human elusive genes have acquired diverse expressions that may correlate with abundant ATAC-seq peaks, suggesting increased pleiotropy and lineage-specific acquisition of functional indispensability in chicken.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C95 reports that chicken orthologs acquired diverse expressions based on Figure 5 supplement 1. Claim C96 suggests correlation with ATAC-seq peaks, and C97 interprets this as increased pleiotropy leading to functional indispensability. However, C96 and C97 are marked as speculative interpretations. The expression data comparison is limited by different tissue sampling between human and chicken (noted in manuscript), and the correlation between ATAC-seq and expression is not rigorously tested. The interpretation is plausible but requires more direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Lowly expressed genes are associated with low functional essentiality, and elusive genes with reduced pleiotropy may have limited opportunities to function, potentially leading to loss of important roles, consistent with recent findings in Arabidopsis linking mutation rates to epigenetic features and functional essentiality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is supported by citations to prior research. Claim C99 is a speculative interpretation connecting reduced pleiotropy to functional loss, which is logically consistent with the expression data and Z-score findings. Claim C100 cites recent Arabidopsis work showing similar associations, providing cross-species support for the general principle. While C99 is speculative, it represents a reasonable interpretation supported by the data and consistent with prior literature.",
+    "result_type": "MINOR"
+  }
+]
