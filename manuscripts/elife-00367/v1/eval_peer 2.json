@@ -1,0 +1,217 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The authors engineered three strategies to allow yeast growth on low sucrose: forming multicellular clumps, importing sucrose before hydrolyzing it, and increasing invertase expression. All three engineered strains outcompeted the ancestor in 1 mM sucrose, though the high invertase strain was a much worse competitor than the other two.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers explicitly acknowledge these engineered strategies and their outcomes, stating 'the authors have previously shown that if cells are engineered to clump together they can grow in this condition.' The reviewers accept the experimental design and do not question these findings."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C14",
+      "C15",
+      "C17"
+    ],
+    "result": "Ten independent populations were evolved by serial dilution in 1 mM sucrose, resulting in 12 clones where 11 of 12 formed multicellular clumps through incomplete cell separation. Each evolved clone strongly outcompeted the ancestor, eliminating it within two passages.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers explicitly confirm this finding, stating 'They find that this condition does indeed result in selection for clumpy cells.' The reviewers accept the experimental evolution results and fitness data without questioning the methodology or conclusions."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C18",
+      "C8",
+      "C19",
+      "C20"
+    ],
+    "result": "RNA sequencing revealed that 10 of 12 evolved clones elevated invertase (SUC2) expression 3- to 21-fold, and 11 of 12 clones increased hexose transporter expression, particularly HXT4 (high-affinity glucose transporter) in 10 clones.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers acknowledge these findings, noting 'most of the clones that they analyze have increased expression of the invertase gene (SUC2) and, surprisingly, increased expression of a large number of hexose transporter genes.' The surprise element indicates acceptance of the data while noting it was unexpected."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C22"
+    ],
+    "result": "None of the evolved clones imported sucrose, and all evolved clones depend on secreted invertase for growth, as demonstrated by competition experiments where clones lacking invertase secretion were quickly outcompeted.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers accept this finding as part of the overall dataset. They note the authors 'demonstrate that the fitness increase is unique to a low sucrose environment,' which is consistent with dependence on secreted invertase rather than sucrose import."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C43"
+    ],
+    "result": "Each evolved clone outcompeted the ancestor in low sucrose but lost to the ancestor in high glucose. Four clones also lost on low monosaccharide while others had similar fitness to the ancestor. This demonstrates that multicellular clumps were specifically selected by low sucrose rather than being a general response to low sugar.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers explicitly acknowledge this as compelling evidence, stating 'The most compelling being the demonstration that the evolved clones have no fitness difference (or slightly reduced fitness) compared with wild type in a low glucose/fructose environment.' This addresses their concern about specificity of selection."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Four genes involved in cell separation (AMN1, CTS1, DSE2, and SCW11) had significantly reduced expression levels in all 11 clumpy evolved clones.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers do not question this RNA sequencing data. They accept the molecular characterization of the evolved clones and focus their comments on requesting additional genetic validation rather than challenging the expression data itself."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Bulk segregant analysis identified 80 putative causal mutations across 53 genes in the 12 clones. Two genes (ACE2 and UBR1) were mutated in at least half the clones. ACE2 had 8 mutations (6 nonsense), UBR1 had 6 mutations (4 nonsense), Rgt1 pathway genes were mutated in 8 clones, IRA1/IRA2 in 4 clones, and Mediator complex genes in multiple clones.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers praise the bulk segregant analysis as 'impressive' but express concern that 'something is being missed' because recreated strains are less fit than evolved clones. They request additional validation through 'simple tetrad dissection' to 'make more definitive statements about the effect of ace2 mutations on clumpiness and Rgt1 pathway mutations' HXT expression,' indicating the causal relationships need stronger support."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Recreated strains containing identified mutations outcompeted the ancestor in 1-2 passages but were slightly less fit than evolved counterparts. Bulk segregant analysis of recreated strains showed most mutations were strongly selected, with some mutations selected specifically in sucrose but not monosaccharide.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers note 'The fact that the \"recreated\" strains are less fit than the evolved clones suggests that something is being missed.' They propose copy number variation as a possible explanation and request analysis of sequencing data for CNVs at SUC2 and HXT loci, indicating uncertainty about whether all causal factors have been identified."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C47",
+      "C48"
+    ],
+    "result": "An ace2\u0394 strain is morphologically similar to EvoClone2, and a triple mutant (mck1-G227Vfs249 irc8-G57V gin4-W19*) is morphologically similar to EvoClone9. ACE2 loss of function was likely the primary contributor to clumpiness in at least 6 of 11 multicellular clones.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While reviewers accept the morphological observations, they specifically request 'simple tetrad dissection would enable the authors to make more definitive statements about the effect of ace2 mutations on clumpiness,' indicating that the current evidence, while suggestive, is not considered definitive proof of causality."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Clumpiness alone was not sufficient to match evolved strain fitness in sucrose. The MTH1 loss of function mutation causes increased HXT4 expression, while SUC2 expression is a complex phenotype under quantitative control of multiple genes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers do not question these findings and accept the complexity of the evolved phenotypes. Their request for additional tetrad analysis is to strengthen rather than challenge these conclusions, indicating acceptance of the basic findings."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "None of the clones became clumpy by restoring function to AMN1, the gene whose loss of function was selected during laboratory domestication of budding yeast.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers explicitly note this finding in their comment that 'Many wild S. cerevisiae strains are clumpy and loss of clumpiness is likely a lab-adapted trait,' accepting the authors' observation about AMN1 and requesting broader discussion of clumpiness in yeast populations."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C16",
+      "C60"
+    ],
+    "result": "The authors conclude that efficient use of public goods liberated through extracellular hydrolysis selects for the evolution of undifferentiated multicellularity, and that sharing of public goods was the initial selection for undifferentiated multicellularity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers express concern about the lack of a critical control experiment: 'a population of cells propagated in parallel in a non-sucrose environment.' They state this would 'provide the proof that the observed outcome is unique to the sucrose selection.' While they note the post hoc analyses are compelling, they consider the absence of this control a limitation, though 'not a fatal flaw.'"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The authors propose mechanistic explanations for how increased invertase expression, hexose transporters, and clumping act together to increase fitness, including how mutations in UBR1, RGT1 pathway genes, and IRA1/IRA2 affect sugar harvesting and cell growth control.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers do not challenge these mechanistic interpretations. They accept the logic connecting the observed mutations to the phenotypes, focusing their critiques on requesting additional validation experiments rather than questioning the proposed mechanisms."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors argue that for organisms with rigid cell walls, the large target size for mutations in cell separation enzymes makes it easy to evolve undifferentiated multicellularity. Lab yeast strains were selected to be unicellular during domestication, but clumpiness varies in wild isolates and may be recurrently selected for nutrient harvesting or stress protection.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers explicitly support this interpretation, stating 'Many wild S. cerevisiae strains are clumpy and loss of clumpiness is likely a lab-adapted trait.' They request the authors 'make it clear that loss and gain of clumpiness is likely to have occurred many times in yeast populations and provide other explanations for why clumpiness in yeast cells might be recurrently selected.'"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors speculate about broader evolutionary implications: organisms without cell walls would need innovations like cadherins to evolve multicellular clumps; undifferentiated multicellularity appeared 2 billion years ago but complex multicellularity arose over a billion years later; and simple division of labor may have been the precursor to complex multicellularity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers explicitly request more discussion of these broader implications, noting 'There is little discussion about the general implications of the findings. Hence, the reader is left with the impression that it would have been rather easy to evolve the first steps to multicellularity, but would ask him or herself why it took such a long time until the first multicellular organisms emerged.' They acknowledge such discussion would be 'rather speculative, but it might nonetheless be worthwhile.'"
+  }
+]

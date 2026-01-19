@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Bottleneck width is a crucial factor determining resource allocation in sensory systems. For narrow bottlenecks (<10% of input neurons), higher density regions are exclusively or disproportionately represented. For intermediate bottlenecks, low-density regions expand beyond proportional allocation, causing contraction of high-density regions. For negative exponential covariance functions, allocation converges to 1/(1+d) at wider bottlenecks, where d is the density ratio. This nonlinear effect persists across different density ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C14-C18 provide converging analytical and computational evidence for the nonlinear relationship between bottleneck width and resource allocation. The analytical derivation (C16) provides mathematical rigor, while computational results (C14, C15, C18) demonstrate the effect across parameter ranges. The logic is internally consistent and the mathematical framework appears sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C24",
+      "C26"
+    ],
+    "result": "Both receptor density and stimulus statistics jointly determine neural allocation, with convergence at wider bottlenecks following 1/(1+ad), where a is activation ratio and d is density ratio. For 2D sensory sheets, activation ratio more strongly determines allocation than density ratio. When both factors are elevated in the same region, they reinforce each other and drive allocation further from proportional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C23, C24, C26 present a coherent theoretical framework with analytical derivations (C23) and computational demonstrations (C24, C26). The mathematical formulation is explicit and the comparative analysis between activation and density effects is well-supported by model calculations shown in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Heterogeneous receptor activation produces qualitatively similar but quantitatively distinct allocations compared to heterogeneous density. While allocations remain nonlinear with bottleneck width, representations are solely expanded for higher activation regions across all bottleneck widths, with convergence to 1/(1+a) where a is the activation ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are well-supported by model calculations shown in Figure 2D and analytical derivations. The distinction between activation and density effects is clearly demonstrated, with the key difference being that activation produces only expansion rather than both expansion and contraction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "The spatial extent of correlations (controlled by decay constant \u03b3) determines allocation at narrow bottlenecks and convergence speed, but does not affect the convergence limit itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is supported by model calculations with varying \u03b3 values shown in Figure 2C. The finding is consistent with the analytical framework where \u03b3 affects the eigenvalue decay rate but not the asymptotic ratio.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Changes in stimulus statistics (increased receptor activation) lead to reallocation of neurons, with the magnitude of change depending on bottleneck width. The largest effects occur for narrow bottlenecks, suggesting that plasticity should be stronger under extreme resource constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are supported by model calculations shown in Figure 4B demonstrating differential plasticity effects across bottleneck widths. The inference about plasticity (C29) follows logically from the computational results, though it remains a prediction rather than empirically validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Monotonically decreasing covariance functions from the Mat\u00e9rn class produce qualitatively similar allocations to negative exponential functions, but smoother covariance functions lead to less extreme allocation differences and convergence points closer to uniform allocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 are supported by numerical calculations for Mat\u00e9rn functions with different smoothness parameters (\u03bd) shown in Figure 5. The authors appropriately note numerical instability at wider bottlenecks and restrict analysis to stable regimes. The qualitative similarity and quantitative differences are clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The model predictions closely match empirical cortical allocations in the star-nosed mole. Models including receptor activation ('usage only' and 'full' models) predict cortical representation sizes more accurately than density-only models, suggesting the mole may employ an efficient coding strategy based on decorrelation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C32-C42 present a comparison between model predictions and empirical data. While C41 shows that activation-inclusive models fit better, several concerns arise: (1) the bottleneck width is unknown and was selected to minimize RMSE, which could lead to overfitting; (2) the baseline random model comparison (R\u00b2=-0.09) provides some validation but is limited; (3) the block matrix approximation may be problematic for the star-nosed mole's geometry; (4) the close match could reflect model flexibility rather than biological validity. The result is suggestive but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C48"
+    ],
+    "result": "The strength of cortical magnification depends on resource limits, with magnification being more extreme for tighter bottlenecks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C48 are well-supported by the comprehensive modeling results showing systematic variation in magnification with bottleneck width (C14-C18, C21, C28). This represents a key synthesis of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The mathematical framework establishes that optimal decorrelation under a bottleneck is achieved through W=\u039b^(-1/2)\u03a6^T, where eigenvalues can be calculated analytically for negative exponential covariance functions. Density affects the spatial decay of covariance while activation scales the function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 present the core mathematical framework. The derivation from PCA/efficient coding theory is standard and well-established (C72). The covariance formulation (C73) and its interpretation (C74) are mathematically sound. The analytical solution (C75) is demonstrated in the Methods with full derivations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Topographic sensory representations exhibit non-proportional scaling, with cortical magnification of the fovea in vision and fingertips in touch. These regions show both higher receptor densities and higher stimulus statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C8-C10 present established knowledge about sensory systems, supported by appropriate citations. These provide the empirical motivation for the theoretical work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Receptor density alone poorly predicts magnification, cortical regions can expand/contract dynamically with usage, and efficient coding theory suggests neural populations maximize information by removing redundancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 present established knowledge from prior literature with appropriate citations. These provide the theoretical motivation and context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Both receptor density and stimulus statistics drive allocation in neural populations, with evidence from primates showing that receptor densities alone cannot fully explain cortical magnification and that magnification depends on experience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 synthesize evidence from prior literature (citations) and the current study's star-nosed mole analysis. The claims are well-supported by empirical studies, though the integration with the current model remains somewhat qualitative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C63"
+    ],
+    "result": "The optic nerve serves as a narrow bottleneck (12-27%) and the fovea has much higher cone density than periphery. Spatial resolution in vision declines faster than expected with eccentricity, consistent with a narrow bottleneck.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50, C63 present empirical data from cited studies. The bottleneck calculation (C49) is based on published cell counts and appears reasonable. The interpretation of spatial resolution decline (C63) as evidence for a narrow bottleneck is plausible but indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C64"
+    ],
+    "result": "Changing tactile inputs affects cortical representations, with increased contact statistics leading to cortical expansion. Spatial discrimination in touch improves with training or passive stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52, C64 present established findings from plasticity and training studies, supported by appropriate citations. These provide empirical context for the model's predictions about plasticity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The optic nerve undergoes fiber loss during development and aging, and touch receptor densities decrease with aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 present established developmental and aging findings supported by appropriate citations. These provide context for discussing dynamic changes in bottleneck width.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Magnification occurs throughout the sensory hierarchy from brainstem to cortex, with foveal magnification increasing from V1 to V4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 present established knowledge about hierarchical sensory processing supported by citations. This provides context for where the model might best apply.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C43"
+    ],
+    "result": "Decorrelation is a driving principle for efficient coding in low-noise settings, which characterizes low-level sensory processing in touch, vision, and audition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59, C43 present established theoretical principles supported by appropriate citations. These justify the model's focus on decorrelation for early sensory processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Allocating more neurons to a region should increase perceptual spatial acuity, and cortical magnification correlates with perceptual acuity in vision and touch, though absolute limits are determined by receptor density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 connect the model to perceptual consequences. C60 is a reasonable inference, C61 is supported by citations, and C62 is established knowledge. The logical connection is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Non-uniform tuning curves across a population lead to characteristic biases in perceptual tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 presents established theoretical work supported by citation, providing context for potential perceptual consequences of non-uniform allocation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "PCA is widely used for decorrelation and dimensionality reduction, and independent component analysis relies on PCA-based whitening in the undercomplete case, so the results generalize to multiple methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 present established knowledge about PCA and ICA with appropriate citations. The generalization argument is valid since allocation depends only on eigenvalue ordering, not the specific orthogonal transformation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Response nonlinearities and noise structure in nonlinear models can affect decorrelation and efficient coding strategies, representing limitations of the current linear model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 acknowledge model limitations with appropriate citations to prior work. This represents appropriate scientific caution about the scope of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "The block matrix approximation may be problematic for many small adjacent regions with far-ranging correlations, but receptive fields in early somatosensory cortex are strongly localized to single appendages, supporting the approximation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 acknowledge a key assumption and provide empirical justification. C71 is supported by citations showing localized receptive fields. However, the approximation's validity for the star-nosed mole specifically could be questioned given the radial arrangement of rays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "Regions with higher receptor densities likely show greater activation than lower density regions, as seen in touch where high-density fingertips are most likely to contact objects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 presents a reasonable inference supported by citation to empirical contact statistics. This motivates examining combined effects of density and activation.",
+    "result_type": "MINOR"
+  }
+]

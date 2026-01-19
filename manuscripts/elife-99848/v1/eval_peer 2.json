@@ -1,0 +1,128 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C36",
+      "C37",
+      "C38",
+      "C66",
+      "C67",
+      "C68",
+      "C70"
+    ],
+    "result": "The authors developed CellSeg3D, a custom Python toolbox and napari plugin for direct-3D supervised and self-supervised cell segmentation, including the novel WNet3D model inspired by WNet with modifications for 3D architecture, and made all code and data open-source.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "The editor states 'This important work presents a self-supervised method for the segmentation of 3D cells in fluorescent microscopy images, conveniently packaged as a Napari plugin.' The reviewers acknowledge the comprehensive evaluation and do not challenge the development or availability of the toolbox and plugin."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C22",
+      "C23",
+      "C69",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors provide the first human-annotated ground truth 3D dataset from mesoSPIM samples containing 2632 neurons labeled by TPH2-tdTomato, created using a custom 3D annotator built in napari, intended for benchmarking 3D cell segmentation algorithms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "The editor notes the work is 'tested on an annotated dataset' and reviewers acknowledge the dataset without raising concerns. The comprehensive evaluation across multiple datasets implicitly validates the quality of the annotated data."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C32",
+      "C33",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "On the mesoSPIM dataset, the authors' supervised models (SwinUNetR and SegResNet) have comparable performance to Cellpose and StarDist, with WNet3D achieving performance as good as or better than supervised models especially in the low data regime, with specific F1-scores reported for different training data percentages and significant statistical differences between models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While the editor states the method 'compares favorably to other learning-based methods,' Reviewer 2 raises significant concerns: 'CellPose and StarDist perform poorly in all the experiments performed by the authors. In almost all cases they underperform Otsu thresholding...This is surprising and contradicts the collective expertise of the community.' The reviewer suggests 'these methods were not trained in an optimal way' and states 'the reported results should by no means be taken as a fair assessment of the capabilities of StarDist or CellPose.'"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "WNet3D generalizes favorably across three additional benchmark datasets (Platynereis-ISH-Nuclei-CBG, Platynereis-Nuclei-CBG, and Mouse-Skull-Nuclei-CBG) with varying cell sizes and densities, achieving on average the highest F1-Score on each dataset when compared to Cellpose, StarDist, and Otsu thresholding.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "The editor acknowledges the method was 'tested on...four datasets' and 'compares favorably,' but Reviewer 2 questions the validity of comparisons, noting that 'CellPose and StarDist perform poorly in all the experiments' and 'In almost all cases they underperform Otsu thresholding, which is in most cases on par with the WNet results (except for Mouse Skull Nuclei CBG).' The reviewer suggests the baseline methods may not have been optimally trained, casting doubt on the claimed superiority."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C86"
+    ],
+    "result": "A SwinUNetR trained using WNet3D self-supervised generated labels can be nearly as good as a fully supervised model that required human 3D labels, with no significant difference across F1 vs. IoU thresholds (Kruskal-Wallis H test H=4.91, p=0.085, n=9).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers acknowledge the comprehensive evaluation including active learning approaches. Reviewer 1 notes 'Figure 2b shows results on an unnamed dataset...comparing StarDist, CellPose, SegResNet, SwinUNetR with different levels of training data against WNet3D' without challenging these specific results."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "WNet3D cannot inherently discriminate cells vs. artifacts as it has no notion of a 'cell,' but can be used to generate 3D labels for active learning by correcting them and training a supervised model.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewer 1 raises concerns about post-processing: 'It is unclear whether the Otsu thresholding baseline was given the same post-processing as the WNet3D...Given that post-processing (or artifact removal) seems to have a substantial impact on accuracy, the authors should clarify whether the Otsu thresholding results were treated in the same way.' Reviewer 2 similarly asks 'Why don't you also report the score for Otsu thresholding - No Artifacts?' suggesting the impact of artifact handling on performance comparisons needs clarification."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "StarDist and Cellpose were retrained using default parameters with specific adjustments (mean diameter 3.3 for Cellpose, cell probability threshold -9 after tuning), with no pretrained Cellpose model found suitable for the authors' data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewer 2 directly challenges the training approach: 'Perhaps these methods were not trained in an optimal way. Seems unlikely that it is not possible to get much better CellPose or StarDist models for these tasks (current versions are on par or much worse than Otsu!)...it seems unlikely that the developers of CellPose or StarDist would obtain similarly poor scores on the same data.' This suggests the training methodology may not have been optimal."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The authors tested their pre-trained WNet3D on mouse whole-brain tissue that was cleared and stained with cFOS then imaged with a mesoSPIM microscope as a worked example.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "The editor notes the work will be 'of interest to a wide variety of laboratories analysing fluorescently labeled images,' implicitly supporting the practical application. Reviewers do not challenge this application example."
+  }
+]

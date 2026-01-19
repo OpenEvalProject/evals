@@ -33,25 +33,58 @@ from pathlib import Path
 from typing import Dict, Any, Optional, List
 import argparse
 import sys
+import pdb
 
 
 def find_manuscripts_with_required_files(manuscripts_dir: Path) -> List[Path]:
-    """Find all manuscript directories that have v1 subdirectories with the required JSON files."""
+    """Find all manuscript directories that have v1 subdirectories with the required JSON files.
+    
+    Also keep track of which required files are missing per manuscript (for diagnostic purposes).
+    Prints information about missing files if any manuscripts lack required files.
+    """
     manuscripts = []
+    missing_files_per_manuscript = {}
+    required_files = ["eval_llm.json", "eval_peer.json", "cmp.json", "claims.json"]
     
     for manuscript_dir in manuscripts_dir.iterdir():
         if not manuscript_dir.is_dir():
             continue
-            
+
         v1_dir = manuscript_dir / "v1"
         if not v1_dir.exists():
+            # Track that all required files are missing if v1 doesn't exist
+            missing_files_per_manuscript[manuscript_dir.name] = required_files.copy()
             continue
-            
-        # Check for required files in the v1 directory
-        required_files = ["eval_llm.json", "eval_peer.json", "cmp.json", "claims.json"]
-        if all((v1_dir / file).exists() for file in required_files):
+
+        missing_files = [file for file in required_files if not (v1_dir / file).exists()]
+        if not missing_files:
             manuscripts.append(manuscript_dir)
-    
+        else:
+            missing_files_per_manuscript[manuscript_dir.name] = missing_files
+
+    if missing_files_per_manuscript:
+        print("[DEBUG] Some manuscripts are missing required files:")
+        for manuscript, files in missing_files_per_manuscript.items():
+            print(f"  {manuscript}: missing {', '.join(files)}")
+
+        debug_missing_path = "missing_required_files_debug.json"
+        try:
+            with open(debug_missing_path, "w") as f:
+                json.dump(missing_files_per_manuscript, f, indent=2)
+            print(f"[DEBUG] Missing files information saved to {debug_missing_path}")
+        except Exception as e:
+            print(f"[ERROR] Could not write missing files JSON: {e}")
+    else:
+        print("[DEBUG] All manuscripts have the required files.")
+
+    print(f"Found {len(manuscripts)} manuscripts with required files".format(len(manuscripts)))
+    print(f"Found {len(missing_files_per_manuscript)} manuscripts missing required files")
+
+    # Print info about manuscripts missing only some files (instead of all)
+    for manuscript, files in missing_files_per_manuscript.items():
+        if 1 <= len(files) <= 2:
+            print(f"[INFO] Manuscript '{manuscript}' is missing only {len(files)} file(s): {', '.join(files)}")
+
     return sorted(manuscripts)
 
 

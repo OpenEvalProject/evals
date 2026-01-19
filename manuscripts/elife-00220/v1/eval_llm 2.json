@@ -1,0 +1,427 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C65",
+      "C66",
+      "C105"
+    ],
+    "result": "APP physically interacts with LRP4. This interaction was demonstrated through multiple biochemical approaches including pull-down assays showing MBP-LRP4LBD binding to APP-Fc-bead conjugates (C65), cell aggregation assays showing increased aggregate formation when APP- and LRP4-expressing cells are mixed (C66), and co-immunoprecipitation experiments (C31, C105).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Multiple independent biochemical assays (pull-down, cell aggregation, co-IP) consistently demonstrate direct physical interaction between APP and LRP4. The convergence of evidence from different experimental approaches strongly supports this result."
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C82",
+      "C83",
+      "C90",
+      "C91",
+      "C107"
+    ],
+    "result": "APP binds directly to agrin, though with lower affinity than LRP4. All three agrin isoforms (Z0, Z8, Z19) interact with APP, with Z0 showing weaker binding than Z8 or Z19. LRP4-Fc binds agrin at much lower concentrations than APP-Fc, while the control protein RAP-Fc does not interact with agrin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Protein interaction assays (Figure 8B, 8D) demonstrate APP-agrin binding with appropriate controls (RAP-Fc negative control). The differential affinity between LRP4 and APP for agrin is quantitatively shown, and isoform-specific binding patterns are documented. The data are internally consistent."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C108"
+    ],
+    "result": "Agrin cooperatively enhances the APP-LRP4 interaction in a dose-dependent manner, with optimal enhancement at 30 ng/ml (3-fold increase), but inhibits the interaction at higher concentrations (60% at 100 ng/ml, 10% at 300 ng/ml, complete abolishment at 1000 ng/ml). This biphasic response suggests LRP4 and APP bind agrin through different epitopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The dose-response data (Figure 8C) clearly demonstrate biphasic modulation of APP-LRP4 interaction by agrin. The cooperative enhancement at low concentrations followed by competitive inhibition at high concentrations is well-documented and supports the inference about different binding epitopes."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C67",
+      "C68"
+    ],
+    "result": "APP synergistically increases agrin-induced AChR clustering in cultured myotubes. APP-Fc beads induce clustering, and both monomeric and divalent APP fusion proteins are equally effective in promoting AChR clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "AChR clustering assays (Figure 7A, 7B) demonstrate that APP enhances agrin-induced clustering. The equivalence of monomeric and divalent forms suggests the effect is not simply due to avidity, supporting a genuine functional interaction."
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C106"
+    ],
+    "result": "APP can activate MuSK phosphorylation independent of agrin, though less effectively than agrin alone. APP-Fc induces MuSK phosphorylation in a dose-dependent manner (2.4-4.3 fold over baseline), while agrin alone induces 5.4-fold increase. APP and agrin cooperatively enhance MuSK phosphorylation at low to intermediate concentrations (0.1-1 nM), but this effect diminishes at higher concentrations (10 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "MuSK phosphorylation assays (Figure 7C, 7D) provide quantitative dose-response data with appropriate controls (RAP-Fc shows no effect). The biphasic cooperative effect mirrors the binding data, providing mechanistic consistency. Statistical significance is reported for the cooperative enhancement."
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "APP requires both LRP4 and MuSK to induce AChR clustering. Recombinant APP-Fc fails to induce detectable AChR clustering in either LRP4-deficient or MuSK-deficient myotubes, indicating APP can enhance but not bypass the essential activities of LRP4 and MuSK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Genetic epistasis experiments (Figure 7E) using knockout myotubes clearly demonstrate APP's dependence on LRP4 and MuSK. This establishes APP as a modulator rather than an independent inducer of NMJ formation, which is consistent with the biochemical interaction data."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "LRP4, APP, and MuSK exist as a preformed stable complex in embryonic muscle. Co-immunoprecipitation experiments show that LRP4 co-precipitates with both APP and MuSK from wild-type muscle, while other LRP family members (Apoer2, LRP1) do not co-precipitate with APP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Co-IP data (Figure 8A) demonstrate specific complex formation between LRP4, APP, and MuSK in vivo. The specificity is established by negative results with other LRP family members, and supernatant depletion confirms efficient immunoprecipitation."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Complete loss of LRP4 (Lrp4\u2212/\u2212) results in complete absence of AChR clusters and failure of NMJ formation. In contrast, Lrp4ECD/ECD mice (lacking the transmembrane domain) show AChR clustering along the central region juxtaposed to nerve terminals at E16.5, with properly apposed presynaptic terminals, though AChR density appears reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Immunofluorescence data (Figure 2A) clearly distinguish the null phenotype (no clusters) from the ECD phenotype (reduced but present clusters). This establishes that the LRP4 extracellular domain retains partial function when secreted."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Deletion of only the LRP4 intracellular domain (Lrp4\u0394ICD/\u0394ICD) results in normal NMJ development with synapse size indistinguishable from wild-type. This is consistent with cattle carrying a natural Lrp4 mutation causing loss of the cytoplasmic domain (Mulefoot disease) lacking an obvious neuromuscular phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Morphological analysis (Figure 2B, Figure 3B) demonstrates normal NMJ formation in Lrp4\u0394ICD/\u0394ICD mice. The consistency with the natural cattle mutation strengthens the conclusion that the intracellular domain is dispensable for NMJ formation."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C39",
+      "C40",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Deletion of the LRP4 transmembrane domain (Lrp4ECD/ECD) results in growth retardation of the NMJ. At 3 months, NMJs are markedly smaller than wild-type, though ultrastructural features (synaptic vesicles, mitochondria, junctional folds) are present. Synapse elimination and \u03b3-\u03b5 AChR subunit switching occur normally. These findings indicate the LRP4 intracellular domain is not essential for NMJ formation, but membrane anchoring is required for postnatal growth and maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Multiple lines of evidence (immunofluorescence, electron microscopy, quantitative analysis, molecular markers) consistently show that Lrp4ECD/ECD mice form NMJs with normal developmental processes but impaired growth. The comparison with Lrp4\u0394ICD/\u0394ICD mice (normal) establishes that membrane anchoring, not the ICD, is critical."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C62",
+      "C63"
+    ],
+    "result": "NMJ defects in Lrp4ECD/ECD mice are markedly enhanced in APP\u2212/\u2212;Lrp4ECD/ECD double mutants. Double mutant NMJs are significantly reduced in size and number, with numerous terminal sprouts, resulting in perinatal lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Quantitative morphological analysis (Figure 4) demonstrates synergistic genetic interaction between APP and LRP4. The double mutant phenotype is more severe than either single mutant, and the perinatal lethality provides functional validation of the severe NMJ defect."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C112"
+    ],
+    "result": "Lrp4ECD/ECD;Aplp2\u2212/\u2212 double mutants show markedly reduced nerve terminals and AChR clusters (both in number and size) compared to single mutants. Functional NMJ formation is significantly compromised as evidenced by greatly impaired postnatal survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Morphological data (Figure 5) and survival analysis (Table 2) demonstrate genetic interaction between LRP4 and APLP2. The significant reduction in postnatal survival (p<0.01) provides functional evidence for compromised NMJ formation."
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "AChR prepatterning (confinement to central muscle regions) is maintained in App\u2212/\u2212;Aplp2\u2212/\u2212 double mutants, indicating this process is independent of APP and APLP2. However, individual AChR clusters appear less robust in double mutants compared to wild-type or single mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Immunofluorescence data (Figure 9) show that AChR clusters remain centrally localized in all genotypes, establishing independence of prepatterning from APP/APLP2. The qualitative observation of reduced cluster robustness is consistent with a modulatory role for these proteins."
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "LRP4 expression is developmentally regulated, appearing at low levels at E14.5-E16.5 and becoming highly concentrated at the NMJ by E18.5 in wild-type muscle. APP is also localized at the NMJ. In Lrp4ECD/ECD and App\u2212/\u2212;Aplp2\u2212/\u2212 mice, LRP4 is detected at the NMJ but appears more diffuse, with significantly decreased staining intensity compared to wild-type (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Immunofluorescence data (Figure 10A-D) document developmental changes in LRP4 localization and quantitative differences between genotypes. The diffuse distribution in mutants is consistent with loss of membrane anchoring (Lrp4ECD/ECD) or reduced stabilization (App\u2212/\u2212;Aplp2\u2212/\u2212)."
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C119"
+    ],
+    "result": "LRP4 protein expression is increased in Lrp4ECD/ECD and Lrp4WT/ECD muscle compared to wild-type, representing partial compensation for reduced signal strength in mutants lacking membrane-anchored LRP4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "Western blot and qPCR data (Figure 10E, F) demonstrate increased LRP4 expression in mutants. This compensatory upregulation is consistent with the observation that Lrp4ECD/ECD mice can form initial NMJs despite lacking membrane anchoring."
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C109",
+      "C114"
+    ],
+    "result": "Simultaneous stoichiometric interaction of APP, LRP4, and agrin favors formation of a hetero-oligomeric complex that serves to focus MuSK activation and spatially restrict NMJ formation at the muscle surface. LRP4 integrates agrin through cooperative binding into this signaling complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The cooperative binding data (Figure 8C), functional assays showing synergistic effects on AChR clustering and MuSK phosphorylation, and genetic epistasis experiments collectively support the formation and functional significance of this hetero-oligomeric complex. The model is consistent with all biochemical and genetic data."
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C59",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Secretion of the LRP4 extracellular domain is sufficient to initiate AChR clustering and formation of immature NMJs. The oligomeric interaction of LRP4 ECD with APP, APLP2, MuSK, and agrin explains its residual function. However, membrane anchoring is required to maintain signal strength for postnatal NMJ growth, as loss of the transmembrane segment results in reduced NMJ size and number despite partial compensation by other interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "The phenotypic comparison between Lrp4ECD/ECD (forms initial NMJs but impaired growth) and Lrp4\u0394ICD/\u0394ICD (normal) mice, combined with biochemical evidence of multi-protein complex formation, supports this model. The increased LRP4 expression in mutants provides additional evidence for compensatory mechanisms."
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "ApoE \u03b54 genotype is the strongest risk factor for late-onset AD (increasing risk ~10-fold in individuals >65 years), mutations in APP cause early-onset AD, and ApoE receptors regulate both glutamatergic neurotransmission in the CNS and neuromuscular synapse formation in the periphery. APP and \u03b2-amyloid physically and functionally interact with ApoE receptors on multiple levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These claims are well-established in the literature and supported by multiple citations to seminal papers (Corder et al., 1993; Schmechel et al., 1993; Goate et al., 1991; Herz and Chen, 2006). They represent accepted background knowledge for the study."
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "LRP4 and APP are required for normal formation and function of the NMJ. APP is expressed at the NMJ, and APP family members are required for normal NMJ formation and contribute to synaptic function in the CNS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These claims are supported by citations to prior work (Akaaboune et al., 2000; Torroja et al., 1999; Wang et al., 2005, 2009; Weyer et al., 2011) and represent established knowledge that motivates the current study."
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Impaired cholinergic neurotransmission is implicated in AD. Agrin is abundantly expressed in the CNS, MuSK localizes to excitatory synapses and mediates cholinergic responses, synaptic plasticity and memory formation, and agrin regulates synaptogenesis and prevents synapse loss in the cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These claims are supported by citations to relevant literature and represent established knowledge about the expression and function of these proteins in the CNS, providing rationale for studying NMJ as a model system for AD-relevant processes."
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C41",
+      "C60",
+      "C61"
+    ],
+    "result": "Presynaptic nerve terminals progressively accumulate synaptic vesicles juxtaposed to AChR clusters during NMJ formation. Conditional MuSK inactivation in postnatal muscle results in NMJ disassembly, indicating continuous MuSK activity is required in postnatal muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These claims represent established knowledge about NMJ development and are supported by citations (Sanes and Lichtman, 1999; Wu et al., 2010; Hesser et al., 2006). They provide important context for interpreting the LRP4 ECD phenotype."
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C113"
+    ],
+    "result": "APP and its homologues are expressed pre- and post-synaptically. Loss of both APP and APLP2 (but not either alone) critically reduces trans-synaptic interaction, resulting in aberrant apposition of nerve terminals and AChR clusters. APP and APLP2 are important for establishing trans-synaptic contact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These claims are supported by citations to prior work (Wang et al., 2005, 2009; Soba et al., 2005) and immunofluorescence data showing APP localization (Figure 10B). The genetic requirement for both APP and APLP2 is established in the literature."
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C120"
+    ],
+    "result": "Z0 agrin is expressed by non-neural tissues (muscle), while Z8 and Z19 are neural-specific. Non-neural Z0 agrin cannot efficiently promote AChR clustering at physiological levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These claims represent established knowledge about agrin isoforms and are supported by citations (Kim et al., 2008a). This provides important context for interpreting the differential binding of agrin isoforms to APP."
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "A naturally occurring splice site mutation in Lrp4 in cattle with Mulefoot disease results in truncation of the protein and nearly complete loss of the cytoplasmic domain. These cattle lack an obvious neuromuscular phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "This claim is supported by citation (Johnson et al., 2006) and provides independent validation from a natural mutation that the LRP4 intracellular domain is dispensable for NMJ function."
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "LRP4 can interact with several modulators of Wnt pathways (Wise, Dkk, Sost) that bind to the homologous \u03b2-propeller domain in LRP5. These interactions might potentially contribute to modulation of NMJ development or function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While the interaction of LRP4 with Wnt modulators is supported by citations (Dietrich et al., 2010; Karner et al., 2010), the potential role in NMJ development is explicitly speculative (C125). No experimental data are provided to test this hypothesis."
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "Muscle agrin (Z0) serves to suppress formation of aberrant signaling complexes by blocking LRP4 and APP with the inactive form, and this inhibition would be overcome by higher concentrations of neural agrin at nerve terminals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "This is explicitly speculative reasoning about the potential role of muscle agrin. While the binding data show Z0 interacts with APP (C90, C91), the proposed regulatory mechanism is not directly tested. The model is plausible given the data but requires experimental validation."
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "The findings are consistent with recent findings from the Burden and Mei laboratories regarding NMJ formation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While citations are provided (Wu et al., 2012; Yumoto et al., 2012; Zong et al., 2012), the specific nature of the consistency is not detailed. Without access to these concurrent publications, the degree of agreement cannot be fully evaluated."
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "Agrin, MuSK, APP, and LRP4 are all expressed in the CNS, where they might work together in an analogous manner to regulate synaptogenesis and promote neuronal survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While CNS expression is established knowledge (C127), the proposed analogous function in the CNS (C128) is explicitly speculative. No CNS-specific experiments are presented to test whether these proteins function similarly in central synapses."
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "LRP4 belongs to an evolutionarily conserved class of ApoE receptors with functions in glutamatergic neurotransmission. ApoE impairs ApoE receptor recycling at central synapses in an AD-associated manner, impairing prevention of \u03b2-amyloid-induced synaptic suppression. Perturbed APP synaptic adhesion may contribute to AD pathogenesis. The NMJ is a useful model system for investigating ApoE, APP, and ApoE receptor trafficking at synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "status": "SUPPORTED",
+    "status_reasoning": "These claims synthesize prior work (supported by citations: Herz and Chen, 2006; Chen et al., 2010b; Durakoglugil et al., 2009; Wang et al., 2009) with the current findings to argue for the NMJ as a model system. The current study's demonstration of APP-LRP4 interactions at the NMJ supports this conclusion."
+  }
+]

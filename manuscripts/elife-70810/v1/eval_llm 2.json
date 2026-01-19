@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C74"
+    ],
+    "result": "Activation of EGFR signaling in adult hub cells is sufficient to induce their proliferation. Over-expression of EGFR pathway components (Pointed P1/P2, constitutively active EGFR, or constitutively active Ras) in hub cells resulted in 4-11% of testes with PH3-positive hub cells, compared to 0% in negative controls and 29-32% in positive controls (Rbf knockdown). This percentage is similar to that observed during recovery from CySC ablation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 provide quantitative experimental data showing PH3-positive hub cells upon EGFR pathway activation, with appropriate positive and negative controls. The statistical significance is demonstrated by comparison to controls (C29), and the effect appears specific to EGFR as other receptor tyrosine kinases did not produce significant results (C36). The data converge to support the sufficiency claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Activation of EGFR signaling in adult hub cells is sufficient to induce their transdifferentiation into CySCs. G-TRACE lineage tracing showed GFP-marked cells outside the hub in testes over-expressing EGFR pathway components, with most cells losing RFP expression, indicating loss of hub cell identity and conversion to cyst lineage cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The G-TRACE lineage tracing experiment (C39-C42) provides direct evidence of cell fate conversion. The system appropriately marks cells with current (RFP) and permanent (GFP) expression of the hub driver, and the observation that GFP+ cells outside the hub lose RFP expression strongly supports transdifferentiation rather than other mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C44",
+      "C45",
+      "C46",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "EGFR signaling is actively inhibited in adult hub cells by cell-autonomous inhibitors Sprouty and PTEN. Knockdown of either Sprouty or PTEN in hub cells resulted in 3% of testes with PH3-positive hub cells and caused hub cell conversion to cyst lineage cells. Both knockdowns significantly increased dpERK levels in the hub, confirming EGFR pathway upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The convergent evidence from loss-of-function experiments (C44, C48), lineage tracing (C46, C49), and dpERK quantification (C52-C54) strongly supports active inhibition of EGFR in hub cells. The dpERK data provides molecular confirmation of pathway activation upon inhibitor knockdown, strengthening the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "EGFR signaling is non-cell-autonomously inhibited in hub cells by Argos secreted from cyst lineage cells. Knockdown of Argos in cyst lineage cells resulted in 2% of testes with PH3-positive hub cells, supporting a role for Argos in maintaining hub cell quiescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 provides experimental data showing PH3-positive hub cells upon Argos knockdown in cyst cells (not hub cells), demonstrating non-cell-autonomous regulation. The percentage (2%) is lower than cell-autonomous inhibitor knockdowns but statistically significant compared to controls. The interpretation is consistent with Argos being a secreted inhibitor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "EGFR signaling is upregulated in hub cells after CySC ablation. dpERK immunostaining showed significantly higher levels in hub cells 2 days after CySC ablation compared to control testes, while dpERK levels remained high in cyst lineage cells but low in hub cells under normal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 provide direct experimental evidence with quantification (Figure 4C) showing statistically significant upregulation of dpERK in hub cells after ablation. The use of dpERK as a readout for EGFR pathway activation is well-established (C100), and appropriate controls are included.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C77",
+      "C89"
+    ],
+    "result": "EGFR signaling is important for recovery of CySCs after ablation. Egfr-/+ flies showed significantly reduced recovery compared to Egfr+/+ controls: at 7 days post-ablation, only 45% of Egfr-/+ testes had regained CySCs versus 80% of controls; at 14 days, 55% versus 81% had recovered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gene dosage experiment (C65-C67) provides quantitative evidence with appropriate sample sizes and statistical analysis (Chi-square test, p<0.001). The persistent difference at both 7 and 14 days strengthens the conclusion. However, the incomplete block of recovery in Egfr-/+ flies suggests EGFR is important but may not be the only pathway involved, consistent with C78.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C89"
+    ],
+    "result": "EGFR signaling is important for ectopic niche formation during recovery from CySC ablation. The percentage of recovered testes with ectopic niches was significantly lower in Egfr-/+ flies (12%) compared to Egfr+/+ controls (29%, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 provides quantitative data with statistical significance and adequate sample sizes (n=270 and n=487). The result is internally consistent with the role of EGFR in hub cell transdifferentiation. However, the mechanism linking EGFR signaling to ectopic niche formation versus simple recovery remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C90",
+      "C93",
+      "C94"
+    ],
+    "result": "Activation of EGFR signaling alone is not sufficient to promote ectopic niche formation. While EGFR activation drives hub cell transdifferentiation, no ectopic niches were observed upon EGFR pathway activation in otherwise unperturbed testes, suggesting additional factors are required for ectopic niche formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative result (no ectopic niches with EGFR activation alone) is supported by experimental data and contrasts with the positive result for transdifferentiation (C90). The comparison with other conditions (C91-C92) strengthens the interpretation that transdifferentiation and ectopic niche formation are separable processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "EGFR is not cell-autonomously required in adult hub cells under normal conditions. Knockdown of EGFR in hub cells using dominant-negative or RNAi constructs produced no detectable phenotype, while the same constructs caused expected phenotypes when expressed in cyst lineage cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by negative results with multiple independent RNAi lines and a dominant-negative construct (Table 2), with validation that these constructs work in cyst cells. This supports the model that EGFR signaling is actively suppressed rather than simply absent in hub cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Notch does not play a role in maintaining hub cell quiescence in the adult testis. No PH3-positive hub cells were detected after manipulation of Notch signaling (constitutively active, dominant negative, or RNAi knockdown) in adult hub cells, and Notch manipulation did not affect EGFR-induced hub cell proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is supported by negative results with multiple Notch constructs (Table 2) and epistasis experiments with EGFR. While Notch is important during embryonic hub specification (C21-C22), these data support that it does not maintain hub quiescence in adults, contrasting with its embryonic role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Over-expression of EGF ligands is not sufficient to trigger loss of hub cell quiescence. Over-expression of Vein or secreted forms of other EGF ligands in hub cells or cyst lineage cells did not result in significant numbers of PH3-positive hub cells, even when combined with Argos knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by experimental data (Table 4) showing negative results with multiple ligands and expression patterns. However, the authors acknowledge uncertainty about why ligand over-expression is insufficient despite pathway activation being sufficient. This suggests either insufficient ligand levels or additional regulatory mechanisms not yet understood.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "PTEN acts in hub cells by inhibiting EGFR rather than by regulating the PI3K pathway. This is supported by the lack of phenotype with other PI3K pathway components and increased dpERK levels upon PTEN knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by negative results with other PI3K components (mentioned in text, Appendix 1) and positive dpERK data (C52). The inference is reasonable given that PTEN can inhibit EGFR through receptor degradation (C47), though direct demonstration of this mechanism in hub cells is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors propose a model where after CySC ablation, EGF ligands from germ cells are received by hub cells instead of cyst cells, and loss of Argos from ablated cyst cells removes inhibition, together driving hub cell transdifferentiation. Once CySCs recover, Argos returns and EGFR signaling in the hub diminishes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This model (C81, C84, C85) is largely speculative and based on indirect evidence. While C82 shows testes rarely recover without germ cells and C83 shows hub cells don't convert after partial ablation, these observations are consistent with but do not prove the proposed mechanism. Direct evidence for ligand source switching or temporal dynamics of Argos expression is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background on the Drosophila testis niche: Hub cells are normally quiescent but can proliferate and transdifferentiate into CySCs after complete genetic ablation of CySCs. This transdifferentiation can also be induced by over-expression of Cdk4/Cyclin D or knockdown of Rbf or Escargot in hub cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the biological context and are supported by appropriate citations to prior work (Hardy et al., 1979; H\u00e9ti\u00e9 et al., 2014; Greenspan and Matunis, 2018; Voog et al., 2014) and by control experiments in this study (C28). This provides the foundation for investigating EGFR's role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C43",
+      "C47",
+      "C56",
+      "C57",
+      "C58",
+      "C79",
+      "C80",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Background on EGFR/MAPK signaling: The EGFR/MAPK pathway regulates development and is essential for cyst cell formation and function in Drosophila testes. During embryogenesis, EGFR signaling represses hub cell fate and promotes cyst lineage differentiation. In adults, EGFR signaling is required in cyst cells for germ cell encapsulation and in GSCs for division regulation. The pathway has multiple negative regulators including Sprouty, PTEN, and Argos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide established knowledge about EGFR signaling, supported by numerous appropriate citations. This background is essential for interpreting the novel findings and is accurately represented based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Cellular plasticity in stem cell niches is observed across organisms. Similar examples include escort cells converting to FSCs in Drosophila ovary and Paneth cells replacing Lgr5+ stem cells in mouse intestine, suggesting this is a general feature of adult stem cell niches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by appropriate citations (Rust et al., 2020; Schmitt et al., 2018; Yu et al., 2018). Claim C88 is a reasonable inference from these examples, though the generalization is somewhat speculative given the limited number of systems examined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Signaling pathways other than EGFR could also be involved in driving hub cells out of quiescence after CySC ablation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This speculation (C78) is reasonable given the incomplete block of recovery in Egfr-/+ flies, but no experimental evidence is provided to identify or test other pathways. This represents an appropriate acknowledgment of limitations and direction for future work.",
+    "result_type": "MINOR"
+  }
+]

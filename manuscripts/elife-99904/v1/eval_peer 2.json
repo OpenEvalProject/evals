@@ -1,0 +1,170 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The authors cite established literature showing that electrically coupled neural networks in the mammalian inferior olive nucleus generate synchronized rhythmic activity through subthreshold oscillations, with inferior olivary cells connected only by electrical synapses.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "These background claims about the inferior olive are not challenged by any reviewer. The reviewers acknowledge the authors 'provide a good introduction and motivation for studying the propagation of subthreshold oscillations in the inferior olive nuclei' and note the work addresses 'an interesting and important question: the basic mechanisms underlying subthreshold intrinsic oscillations in the inferior olive.'"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C11",
+      "C12",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors used the recently completed C. elegans connectome data (Cook et al., 2019) which identifies 1433 electrical synapses among 469 cells with connectivity weights proportional to structural synapse size.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Reviewers do not question the use of the C. elegans connectome data itself or its characteristics. The data source is accepted as valid, though reviewers question the choice to use C. elegans rather than directly studying the inferior olive system."
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C57"
+    ],
+    "result": "The authors state that no subthreshold oscillations have been confirmed in C. elegans, either through direct observation or indirect evidence.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "Multiple reviewers explicitly confirm this limitation, with one stating 'No subthreshold oscillations were identified in the C-elegans' and another noting the authors 'chose to use the C elegans connectome for their study' despite this absence. This is treated as an acknowledged fact rather than a disputed claim."
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors inserted two virtual nodes (VNs) between cells connected by gap junctions in their circuit model, with specific weight assignments for Cell-to-VN edges (weight=1) and VN-to-VN edges (processed weight based on anatomical data).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNSUPPORTED",
+    "status_reasoning": "Multiple reviewers directly challenge this methodological choice. One reviewer states the authors 'give little to no motivation' for including virtual nodes and requests they 'explain the motivation for their inclusion in the model and should discuss their consequences on the transmission properties.' Another reviewer explicitly asks 'Equally spaced two virtual nodes were added between cells connected by a gap junction. Why?' indicating this is seen as altering 'the original network structure of the connectome without a clear justification.'"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors adapted the quantum percolation model and tight-binding Anderson Hamiltonian from condensed matter physics to model subthreshold wave propagation in the neural network, replacing electron probability waves with classical wave signals representing membrane potential waves.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "Reviewers express significant doubt about this methodological choice. One reviewer questions whether 'this approximation is justified in the current system' and notes 'the presence of two mobility edges in the transmission coefficient calculated in this work is unmistakably due to the discrete nature of the system, coming from the tight-binding approximation.' Another reviewer repeatedly asks 'Instead of representing electrical coupling via resistors that connect neurons, the authors use a quantum formalism and introduce the tight-binding Anderson Hamiltonian. Why?' and notes in revised comments that 'the authors have not tested this direction.'"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The authors set the binding energy parameter \u03b3 to 5, justifying this choice as providing a wide enough energy range to check signal mobility edge while keeping data points sufficiently dense.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNSUPPORTED",
+    "status_reasoning": "This parameter choice is criticized as part of broader methodological concerns. The editor's summary states there is 'little motivation for the choice of numerical parameters values that were used,' and reviewers question the arbitrary nature of parameter selections throughout the model."
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C29"
+    ],
+    "result": "The authors found that signal transmission disappeared beyond a threshold wavenumber (signal mobility edge at E=\u00b15.650), with all cells becoming isolated at this wavenumber.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "While the computational results themselves are not directly disputed, one reviewer states 'the presence of two mobility edges in the transmission coefficient calculated in this work is unmistakably due to the discrete nature of the system, coming from the tight-binding approximation, and it is unclear to me if this approximation is justified.' This suggests the finding may be an artifact of the modeling approach rather than a meaningful biological result."
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors identified wavenumber-dependent transmission maps showing that long-distance and regular patterned transmission existed in body-wall muscles, with different patterns at different energy values.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "One reviewer notes 'it is possible that the wavenumber-dependent transmission observed depends strongly on the addition of a large number of virtual nodes (VNs) in the network' and that the authors should 'discuss their consequences on the transmission properties of the network.' The finding itself is not rejected but its validity is questioned due to methodological concerns about the model construction."
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C45",
+      "C46",
+      "C48",
+      "C50",
+      "C51"
+    ],
+    "result": "The authors identified major hub cell-pairs for transmission across many wavenumber conditions, including intra-strand body-wall muscle pairs, hmc-muscle pairs, and pairs among sensory neurons and organ cells (PVDL/R, CANL/R, exc_cell).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "These findings are computational results from the model, but their biological significance is questioned. The editor states 'The strength of the evidence presented in favor of interference effects being a major component in subthreshold wave dynamics is inadequate and the approach is flawed,' suggesting these hub cell-pair identifications may not be meaningful given the methodological issues."
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors conclude that regular connections in body-wall muscles suppress destructive interference leading to strong transmission, and that wave signals are effectively delivered only within very strongly or very regularly connected cell groups when considering interference.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNCERTAIN",
+    "status_reasoning": "The editor states 'The strength of the evidence presented in favor of interference effects being a major component in subthreshold wave dynamics is inadequate,' directly challenging the central interference-based interpretation. One reviewer notes 'the preprint falls short of relating its numerical results to any phenomena which could be observed in the lab,' indicating these conclusions lack empirical grounding."
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The authors speculate that synchronized rhythmic activation in the mammalian inferior olive nucleus might be generated by constructive interference of subthreshold waves in a network with very strong or very regular connections.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "UNSUPPORTED",
+    "status_reasoning": "One reviewer explicitly states 'The authors should also give more evidence for the claim that their study may give a mechanism for synchronized rhythmic activity in the mammalian inferior olive nucleus, or refrain from making this conclusion.' Another reviewer notes 'the implications of this work for C elegans neuroscience remain unclear' and 'I think the work would only have a very limited impact on the understanding of subthreshold oscillations in the rat or in C elegans,' indicating the extrapolation from C. elegans modeling to inferior olive mechanisms is not supported."
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The authors cite established physics literature showing that subthreshold oscillations have wave properties and experience interference, and that Anderson localization is a general wave phenomenon involving constructive or destructive interference.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "status": "SUPPORTED",
+    "status_reasoning": "These are established physics principles that reviewers do not dispute. One reviewer acknowledges 'The primary strength of the work is in trying to use theoretical tools from a far-away corner of fundamental physics to shed light on the properties of a real neural system,' indicating acceptance of the underlying physics concepts, even while questioning their application."
+  }
+]

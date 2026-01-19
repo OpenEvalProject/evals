@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "ImageNet-trained CNNs (ResNet-50 and VGG-16) can classify physical stability within individual scenarios (60.1-75% accuracy) but fail to generalize across different scenarios (near-chance performance in cross-scenario tests). This demonstrates that CNN features do not carry abstract, generalizable information about physical stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide converging evidence from multiple CNN architectures showing within-scenario classification success but cross-scenario failure. The bootstrap statistical tests (p < 0.05 within, p > 0.15 across) and replication across two networks strengthen the conclusion. However, the study only tests two CNN architectures and one training dataset (ImageNet).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "VTC contains scenario-specific information about physical stability for Physical-Objects and Physical-People scenarios but not for Animals-People scenarios, as demonstrated by significantly higher within-condition than between-condition pattern correlations with a significant interaction between scenario type and stability information (F1,12 = 72.2, p = 0.000002).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 provide consistent multivoxel pattern analysis results showing selective representation of physical (but not animate) stability in VTC. The statistical tests are appropriate and the interaction effect confirms the specificity. The n=13 sample size is modest but typical for fMRI studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The Physics Network contains scenario-specific information about physical stability for Physical-Objects and Physical-People scenarios but not for Animals-People scenarios, with a significant interaction between scenario type and stability information (F1,12 = 22.9, p = 0.0004).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 parallel the VTC findings but in the Physics Network. The pattern analysis methodology is sound and the interaction effect confirms scenario-specificity. This result alone does not distinguish the Physics Network from VTC in terms of abstraction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The Physics Network, but not VTC, shows generalizable representations of physical stability across Physical-Objects and Physical-People scenarios, with significantly higher within-condition than between-condition pattern correlations across scenarios and a significant interaction between brain region and cross-scenario stability information (F1,12 = 6.29, p = 0.027).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 provide the critical evidence for abstract stability representation in the Physics Network. The cross-scenario pattern correlation analysis is well-designed and the region \u00d7 generalization interaction directly tests the key hypothesis. This is the central finding distinguishing the two brain systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Eye movement patterns and interestingness ratings show minimal differences between stable and unstable conditions that do not interact with scenario type, ruling out these factors as confounds for the observed brain activation differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C18-C21 provide important control analyses, but the eye-tracking data were only collected from 6 of 13 subjects, limiting statistical power. While one significant effect was found (C18), the lack of interactions (C19, C21) supports the authors' interpretation. However, the interestingness ratings were collected from a separate group of subjects, which is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "The generalization of stability information across physical scenarios in the Physics Network does not differ significantly between hemispheres (F1,12 = 2.75, p = 0.12) or lobes (F1,12 = 0.24, p = 0.63).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 provide anatomical specificity analyses showing distributed representation across the Physics Network. The non-significant interactions indicate the effect is not localized to specific subregions, though the text notes parietal regions showed stronger effects. These are appropriate control analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Early visual regions V1 and LOC show significant stability decoding only within the Physical-Objects scenario but no cross-scenario generalization, with significant interactions when contrasted with the Physics Network (F1,12 = 6.31, p = 0.027 for V1; F1,12 = 5.63, p = 0.035 for LOC).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 demonstrate that abstract stability representation is specific to the Physics Network and not a general property of visual cortex. The interaction analyses appropriately test regional specificity. This strengthens the main conclusion by ruling out alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The Physics Network shows significantly greater univariate responses to physically unstable than stable conditions in Physical-Objects (p = 0.02) and Physical-People (p = 0.04) scenarios but not in Animals-People scenarios (p = 0.66).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 provide univariate evidence consistent with the forward simulation hypothesis. The selective response to physical (not animate) instability parallels the pattern analysis results. However, the authors acknowledge this is only preliminary evidence for simulation, as higher activity could reflect other processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The univariate response difference between unstable and stable conditions in the Physics Network shows significant interactions with lobe (parietal vs. frontal) for both Physical-Objects (F1,12 = 8.28, p = 0.014) and Physical-People (F1,12 = 8.53, p = 0.013) scenarios, and significant interactions with visual regions (V1, VTC, LOC) across scenarios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 provide anatomical specificity for the univariate effects, showing they are stronger in parietal than frontal regions and specific to the Physics Network versus visual regions. The multiple interaction analyses appropriately test regional specificity, though post-hoc analyses would benefit from correction for multiple comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Visual motion area MT shows significantly higher univariate responses to unstable/perilous than stable/safe scenes across all three scenario types without showing significant stability information in multivoxel pattern activations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 demonstrate that MT responds to predicted motion regardless of whether it is physical or animate, distinguishing it from the Physics Network. The dissociation between univariate and pattern responses is interesting but the interpretation regarding predicted versus implied motion requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Images were selected such that stability classification accuracy on early CNN features (pool_1 from VGG-16) was near chance both within scenarios (42.9-53.6%) and across scenarios (41.1-51.8%), controlling for low-level visual feature confounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 describe an important stimulus control procedure to minimize low-level visual confounds. The near-chance performance on early CNN layers suggests the stimuli were well-controlled, though this approach assumes early CNN layers capture all relevant low-level features, which may not be fully accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C101"
+    ],
+    "result": "The fMRI experiment included 13 right-handed participants with normal vision who performed a physics localizer task and four runs of the main stability experiment with carefully controlled stimulus presentation and task design, though the study was cut short due to COVID-19.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C72 and C101 provide methodological details that are clearly stated and appropriate for the study design. The sample size of n=13 is modest but acceptable for fMRI studies with within-subject designs. The COVID-19 interruption is transparently reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Brain regions of interest were defined using a combination of group-level parcellation (derived from 27 subjects) and individual functional localizers with appropriate statistical thresholds (p < 0.001 uncorrected), with two occipital parcels excluded based on prior findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 describe a rigorous ROI definition procedure combining group constraints with individual localization. The use of uncorrected p < 0.001 is standard for ROI definition in fMRI. However, the exclusion of occipital parcels based on prior findings could introduce bias if those regions actually contain relevant information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C73",
+      "C74",
+      "C75",
+      "C83",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The study employed standard fMRI data acquisition and preprocessing methods, including appropriate scanner parameters, software tools (FreeSurfer, MATLAB), and analysis procedures (motion correction, GLM with nuisance regressors, pattern correlation analysis across even/odd runs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C73-C75, C83, and C103-C107 describe standard and appropriate fMRI methods. The even/odd run split for pattern analysis is a good practice to avoid temporal drift confounds. Eye-tracking was only available for 6 subjects, which is a limitation but transparently reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C54",
+      "C55"
+    ],
+    "result": "Prior work has established that CNNs trained on ImageNet support multiple visual tasks and have been claimed to predict stability, that the ventral pathway is well-modeled by such CNNs, and that frontoparietal regions are engaged in physical inference, though CNNs have only been tested in narrow domains and there is debate about whether stability judgments require simulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C48, C54-C55 accurately summarize relevant prior literature with appropriate citations. The characterization of the debate between pattern recognition and simulation accounts is fair and well-documented. These claims provide essential context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The authors hypothesize that abstract physical stability representation requires forward simulation rather than pattern classification, predicting that the Physics Network rather than VTC would contain such representations, and that unstable scenes would evoke higher responses due to greater simulation demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 and C56-C58 present clear, testable hypotheses logically derived from prior work and computational considerations. The reasoning connecting simulation demands to neural activity is plausible though not definitive. These hypotheses appropriately guide the experimental design and analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The observed MT activation for predicted motion extends prior findings on implied motion, and the Physics Network findings are consistent with prior work showing these regions are engaged in physical tasks, represent physical concepts and mass, and overlap with action and tool use regions, though they also overlap with the multiple demand system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 appropriately contextualize the current findings within prior literature. The distinction between implied and predicted motion (C85) is interesting but would benefit from direct experimental comparison. The acknowledgment that the Physics Network overlaps with multiple demand regions (C91) is an important caveat.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors discuss how their findings relate to ongoing debates about pattern recognition versus simulation in physical inference, propose that VTC provides input to the Physics Network for simulation-based inference, and suggest that mental physics may involve compressed representations enabling fast simulation, though many questions remain about implementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C100 present reasonable interpretations and hypotheses based on the data, but many are speculative (C95, C97, C99, C100). The proposed integration of ventral visual input with Physics Network simulation (C95) is plausible but not directly tested. The discussion appropriately acknowledges limitations and open questions (C98).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C66",
+      "C102"
+    ],
+    "result": "The interestingness rating validation showed that subjects rated high arousal IAPS images as more interesting than low arousal images (p < 0.000005), and the study received appropriate ethical approval from MIT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C102 provide methodological validation and ethical compliance information. The IAPS validation (C66) supports the use of interestingness ratings as a proxy for attention, though this is an indirect measure. Ethical approval is appropriately documented.",
+    "result_type": "MINOR"
+  }
+]
