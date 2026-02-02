@@ -2,5 +2,75 @@
   "doi": "10.7554/eLife.91597",
   "title": "Optimal transport for automatic alignment of untargeted metabolomic data",
   "abstract": "Untargeted metabolomic profiling through liquid chromatography-mass spectrometry (LC-MS) measures a vast array of metabolites within biospecimens, advancing drug development, disease diagnosis, and risk prediction. However, the low throughput of LC-MS poses a major challenge for biomarker discovery, annotation, and experimental comparison, necessitating the merging of multiple datasets. Current data pooling methods encounter practical limitations due to their vulnerability to data variations and hyperparameter dependence. Here, we introduce GromovMatcher, a flexible and user-friendly algorithm that automatically combines LC-MS datasets using optimal transport. By capitalizing on feature intensity correlation structures, GromovMatcher delivers superior alignment accuracy and robustness compared to existing approaches. This algorithm scales to thousands of features requiring minimal hyperparameter tuning. Manually curated datasets for validating alignment algorithms are limited in the field of untargeted metabolomics, and hence we develop a dataset split procedure to generate pairs of validation datasets to test the alignments produced by GromovMatcher and other methods. Applying our method to experimental patient studies of liver and pancreatic cancer, we discover shared metabolic features related to patient alcohol intake, demonstrating how GromovMatcher facilitates the search for biomarkers associated with lifestyle risk factors linked to several cancer types.",
-  "pub_date": "2024-06-18"
+  "pub_date": "2024-06-18",
+  "authors": [
+    {
+      "given_names": "Marie",
+      "surname": "Breeur",
+      "orcid": "0000-0003-1251-8360",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "George",
+      "surname": "Stepaniants",
+      "orcid": "0000-0002-7834-7536",
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Pekka",
+      "surname": "Keski-Rahkonen",
+      "orcid": "0000-0001-9437-3040",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Philippe",
+      "surname": "Rigollet",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Vivian",
+      "surname": "Viallon",
+      "orcid": "0000-0002-9799-4421",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 5
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Nutrition and Metabolism Branch, International Agency for Research on Cancer",
+      "department": null,
+      "city": "Lyon",
+      "country": "France",
+      "ror": "00v452281"
+    },
+    {
+      "id": "aff2",
+      "institution": "Massachusetts Institute of Technology, Department of Mathematics",
+      "department": null,
+      "city": "Boston",
+      "country": "United States",
+      "ror": "042nb2s44"
+    }
+  ]
 }

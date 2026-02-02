@@ -2,5 +2,106 @@
   "doi": "10.7554/eLife.84296",
   "title": "Using adversarial networks to extend brain computer interface decoding accuracy over time",
   "abstract": "Existing intracortical brain computer interfaces (iBCIs) transform neural activity into control signals capable of restoring movement to persons with paralysis. However, the accuracy of the ‘decoder’ at the heart of the iBCI typically degrades over time due to turnover of recorded neurons. To compensate, decoders can be recalibrated, but this requires the user to spend extra time and effort to provide the necessary data, then learn the new dynamics. As the recorded neurons change, one can think of the underlying movement intent signal being expressed in changing coordinates. If a mapping can be computed between the different coordinate systems, it may be possible to stabilize the original decoder’s mapping from brain to behavior without recalibration. We previously proposed a method based on Generalized Adversarial Networks (GANs), called ‘Adversarial Domain Adaptation Network’ (ADAN), which aligns the distributions of latent signals within underlying low-dimensional neural manifolds. However, we tested ADAN on only a very limited dataset. Here we propose a method based on Cycle-Consistent Adversarial Networks (Cycle-GAN), which aligns the distributions of the full-dimensional neural recordings. We tested both Cycle-GAN and ADAN on data from multiple monkeys and behaviors and compared them to a third, quite different method based on Procrustes alignment of axes provided by Factor Analysis. All three methods are unsupervised and require little data, making them practical in real life. Overall, Cycle-GAN had the best performance and was easier to train and more robust than ADAN, making it ideal for stabilizing iBCI systems over time.",
-  "pub_date": "2023-08-23"
+  "pub_date": "2023-08-23",
+  "authors": [
+    {
+      "given_names": "Xuan",
+      "surname": "Ma",
+      "orcid": "0000-0003-3352-1905",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Fabio",
+      "surname": "Rizzoglio",
+      "orcid": "0000-0002-6744-4605",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Kevin L",
+      "surname": "Bodkin",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Eric",
+      "surname": "Perreault",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2",
+        "aff3",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Lee E",
+      "surname": "Miller",
+      "orcid": "0000-0001-8675-7140",
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Ann",
+      "surname": "Kennedy",
+      "orcid": "0000-0002-3782-0518",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 6
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Department of Neuroscience, Northwestern University",
+      "department": null,
+      "city": "Chicago",
+      "country": "United States",
+      "ror": "000e0be47"
+    },
+    {
+      "id": "aff2",
+      "institution": "Department of Biomedical Engineering, Northwestern University",
+      "department": null,
+      "city": "Evanston",
+      "country": "United States",
+      "ror": "000e0be47"
+    },
+    {
+      "id": "aff3",
+      "institution": "Department of Physical Medicine and Rehabilitation, Northwestern University",
+      "department": null,
+      "city": "Chicago",
+      "country": "United States",
+      "ror": "000e0be47"
+    },
+    {
+      "id": "aff4",
+      "institution": "Shirley Ryan AbilityLab",
+      "department": null,
+      "city": "Chicago",
+      "country": "United States",
+      "ror": null
+    }
+  ]
 }

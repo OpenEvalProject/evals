@@ -1,6 +1,334 @@
 {
   "doi": "10.7554/eLife.81849",
   "title": "Quantifying the impact of immune history and variant on SARS-CoV-2 viral kinetics and infection rebound: A retrospective cohort study",
-  "abstract": "The combined impact of immunity and SARS-CoV-2 variants on viral kinetics during infections has been unclear. We characterized 1,280 infections from the National Basketball Association occupational health cohort identified between June 2020 and January 2022 using serial RT-qPCR testing. Logistic regression and semi-mechanistic viral RNA kinetics models were used to quantify the effect of age, variant, symptom status, infection history, vaccination status and antibody titer to the founder SARS-CoV-2 strain on the duration of potential infectiousness and overall viral kinetics. The frequency of viral rebounds was quantified under multiple cycle threshold (Ct) value-based definitions. Among individuals detected partway through their infection, 51.0% (95% credible interval [CrI]: 48.3–53.6%) remained potentially infectious (Ct <30) 5 days post detection, with small differences across variants and vaccination status. Only seven viral rebounds (0.7%; N=999) were observed, with rebound defined as 3+days with Ct <30 following an initial clearance of 3+days with Ct ≥30. High antibody titers against the founder SARS-CoV-2 strain predicted lower peak viral loads and shorter durations of infection. Among Omicron BA.1 infections, boosted individuals had lower pre-booster antibody titers and longer clearance times than non-boosted individuals. SARS-CoV-2 viral kinetics are partly determined by immunity and variant but dominated by individual-level variation. Since booster vaccination protects against infection, longer clearance times for BA.1-infected, boosted individuals may reflect a less effective immune response, more common in older individuals, that increases infection risk and reduces viral RNA clearance rate. The shifting landscape of viral kinetics underscores the need for continued monitoring to optimize isolation policies and to contextualize the health impacts of therapeutics and vaccines. Supported in part by CDC contract #200-2016-91779, a sponsored research agreement to Yale University from the National Basketball Association contract #21-003529, and the National Basketball Players Association.",
-  "pub_date": "2022-11-16"
+  "abstract": "Background:The combined impact of immunity and SARS-CoV-2 variants on viral kinetics during infections has been unclear.Methods:We characterized 1,280 infections from the National Basketball Association occupational health cohort identified between June 2020 and January 2022 using serial RT-qPCR testing. Logistic regression and semi-mechanistic viral RNA kinetics models were used to quantify the effect of age, variant, symptom status, infection history, vaccination status and antibody titer to the founder SARS-CoV-2 strain on the duration of potential infectiousness and overall viral kinetics. The frequency of viral rebounds was quantified under multiple cycle threshold (Ct) value-based definitions.Results:Among individuals detected partway through their infection, 51.0% (95% credible interval [CrI]: 48.3–53.6%) remained potentially infectious (Ct <30) 5 days post detection, with small differences across variants and vaccination status. Only seven viral rebounds (0.7%; N=999) were observed, with rebound defined as 3+days with Ct <30 following an initial clearance of 3+days with Ct ≥30. High antibody titers against the founder SARS-CoV-2 strain predicted lower peak viral loads and shorter durations of infection. Among Omicron BA.1 infections, boosted individuals had lower pre-booster antibody titers and longer clearance times than non-boosted individuals.Conclusions:SARS-CoV-2 viral kinetics are partly determined by immunity and variant but dominated by individual-level variation. Since booster vaccination protects against infection, longer clearance times for BA.1-infected, boosted individuals may reflect a less effective immune response, more common in older individuals, that increases infection risk and reduces viral RNA clearance rate. The shifting landscape of viral kinetics underscores the need for continued monitoring to optimize isolation policies and to contextualize the health impacts of therapeutics and vaccines.Funding:Supported in part by CDC contract #200-2016-91779, a sponsored research agreement to Yale University from the National Basketball Association contract #21-003529, and the National Basketball Players Association.",
+  "pub_date": "2022-11-16",
+  "authors": [
+    {
+      "given_names": "James A",
+      "surname": "Hay",
+      "orcid": "0000-0002-1998-1844",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Stephen M",
+      "surname": "Kissler",
+      "orcid": "0000-0003-3062-7800",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Joseph R",
+      "surname": "Fauver",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Christina",
+      "surname": "Mack",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Caroline G",
+      "surname": "Tai",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Radhika M",
+      "surname": "Samant",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Sarah",
+      "surname": "Connolly",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Deverick J",
+      "surname": "Anderson",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Gaurav",
+      "surname": "Khullar",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Matthew",
+      "surname": "MacKay",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Miral",
+      "surname": "Patel",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Shannan",
+      "surname": "Kelly",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "April",
+      "surname": "Manhertz",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Isaac",
+      "surname": "Eiter",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Daisy",
+      "surname": "Salgado",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Tim",
+      "surname": "Baker",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Ben",
+      "surname": "Howard",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Joel T",
+      "surname": "Dudley",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Christopher E",
+      "surname": "Mason",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Manoj",
+      "surname": "Nair",
+      "orcid": "0000-0002-5994-3957",
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Yaoxing",
+      "surname": "Huang",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "John",
+      "surname": "DiFiori",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8",
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 22
+    },
+    {
+      "given_names": "David D",
+      "surname": "Ho",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 23
+    },
+    {
+      "given_names": "Nathan D",
+      "surname": "Grubaugh",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": true,
+      "position": 24
+    },
+    {
+      "given_names": "Yonatan H",
+      "surname": "Grad",
+      "orcid": "0000-0001-5646-1314",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 25
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Harvard TH Chan School of Public Health",
+      "department": null,
+      "city": "Boston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Yale School of Public Health",
+      "department": null,
+      "city": "New Haven",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "University of Nebraska Medical Center",
+      "department": null,
+      "city": "Omaha",
+      "country": "United States",
+      "ror": "00thqtb16"
+    },
+    {
+      "id": "aff4",
+      "institution": "IQVIA, Real World Solutions",
+      "department": null,
+      "city": "Durham",
+      "country": "United States",
+      "ror": "01mk44223"
+    },
+    {
+      "id": "aff5",
+      "institution": "Duke Center for Antimicrobial Stewardship and Infection Prevention",
+      "department": null,
+      "city": "Durham",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "Tempus Labs",
+      "department": null,
+      "city": "Chicago",
+      "country": "United States",
+      "ror": "01gbymr57"
+    },
+    {
+      "id": "aff7",
+      "institution": "Vagelos College of Physicians and Surgeons, Columbia University",
+      "department": null,
+      "city": "New York",
+      "country": "United States",
+      "ror": "00hj8s172"
+    },
+    {
+      "id": "aff8",
+      "institution": "Hospital for Special Surgery",
+      "department": null,
+      "city": "New York",
+      "country": "United States",
+      "ror": "03zjqec80"
+    },
+    {
+      "id": "aff9",
+      "institution": "National Basketball Association",
+      "department": null,
+      "city": "New York",
+      "country": "United States",
+      "ror": null
+    }
+  ]
 }

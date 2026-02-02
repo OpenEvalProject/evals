@@ -2,5 +2,94 @@
   "doi": "10.7554/eLife.96217",
   "title": "Convolutional networks can model the functional modulation of the MEG responses associated with feed-forward processes during visual word recognition",
   "abstract": "Traditional models of reading lack a realistic simulation of the early visual processing stages, taking input in the form of letter banks and predefined line segments, making them unsuitable for modeling early brain responses. We used variations of the VGG-11 convolutional neural network (CNN) to create models of visual word recognition that starts from the pixel-level and performs the macro-scale computations needed for the detection and segmentation of letter shapes to word-form identification of large vocabulary of 10k Finnish words, regardless of letter size, shape, or rotation. The models were evaluated based on an existing magnetoencephalography (MEG) study where participants viewed regular words, pseudowords, noise-embedded words, symbol strings, and consonant strings. The original images used in the study were presented to the models and the activity in the layers was compared to MEG evoked response amplitudes. Through a few alterations to make the network more biologically plausible, we found an CNN architecture that can correctly simulate the behavior of three prominent responses, namely the type I (early visual response), type II (the ‘letter string’ response), and the N400m. In conclusion, starting a model of reading with convolution-and-pooling steps enables the flexibility and realism crucial for a direct model-to-brain comparison.",
-  "pub_date": "2025-05-13"
+  "pub_date": "2025-05-13",
+  "authors": [
+    {
+      "given_names": "Marijn",
+      "surname": "van Vliet",
+      "orcid": "0000-0002-6537-6899",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Oona",
+      "surname": "Rinkinen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Takao",
+      "surname": "Shimizu",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Anni-Mari",
+      "surname": "Niskanen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Barry",
+      "surname": "Devereux",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Riitta",
+      "surname": "Salmelin",
+      "orcid": "0000-0003-2499-193X",
+      "affiliation_ids": [
+        "aff1",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 6
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Department of Neuroscience and Biomedical Engineering, Aalto University",
+      "department": null,
+      "city": "Espoo",
+      "country": "Finland",
+      "ror": "020hwjq30"
+    },
+    {
+      "id": "aff2",
+      "institution": "School of Electronics, Electrical Engineering and Computer Science, Queen’s University Belfast",
+      "department": null,
+      "city": "Belfast",
+      "country": "United Kingdom",
+      "ror": "00hswnk62"
+    },
+    {
+      "id": "aff3",
+      "institution": "Aalto NeuroImaging, Aalto University",
+      "department": null,
+      "city": "Espo",
+      "country": "Finland",
+      "ror": "020hwjq30"
+    }
+  ]
 }

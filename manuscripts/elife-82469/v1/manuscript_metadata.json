@@ -1,6 +1,360 @@
 {
   "doi": "10.7554/eLife.82469",
   "title": "Estimating the contribution of subclinical tuberculosis disease to transmission: An individual patient data analysis from prevalence surveys",
-  "abstract": "Individuals with bacteriologically confirmed pulmonary tuberculosis (TB) disease who do not report symptoms (subclinical TB) represent around half of all prevalent cases of TB, yet their contribution to Mycobacterium tuberculosis ( Mtb ) transmission is unknown, especially compared to individuals who report symptoms at the time of diagnosis (clinical TB). Relative infectiousness can be approximated by cumulative infections in household contacts, but such data are rare. We reviewed the literature to identify studies where surveys of Mtb infection were linked to population surveys of TB disease. We collated individual-level data on representative populations for analysis and used literature on the relative durations of subclinical and clinical TB to estimate relative infectiousness through a cumulative hazard model, accounting for sputum-smear status. Relative prevalence of subclinical and clinical disease in high-burden settings was used to estimate the contribution of subclinical TB to global Mtb transmission. We collated data on 414 index cases and 789 household contacts from three prevalence surveys (Bangladesh, the Philippines, and Viet Nam) and one case-finding trial in Viet Nam. The odds ratio for infection in a household with a clinical versus subclinical index case (irrespective of sputum smear status) was 1.2 (0.6–2.3, 95% confidence interval). Adjusting for duration of disease, we found a per-unit-time infectiousness of subclinical TB relative to clinical TB of 1.93 (0.62–6.18, 95% prediction interval [PrI]). Fourteen countries across Asia and Africa provided data on relative prevalence of subclinical and clinical TB, suggesting an estimated 68% (27–92%, 95% PrI) of global transmission is from subclinical TB. Our results suggest that subclinical TB contributes substantially to transmission and needs to be diagnosed and treated for effective progress towards TB elimination. JCE, KCH, ASR, NS, and RH have received funding from the European Research Council (ERC) under the Horizon 2020 research and innovation programme (ERC Starting Grant No. 757699) KCH is also supported by UK FCDO (Leaving no-one behind: transforming gendered pathways to health for TB). This research has been partially funded by UK aid from the UK government (to KCH); however, the views expressed do not necessarily reflect the UK government’s official policies. PJD was supported by a fellowship from the UK Medical Research Council (MR/P022081/1); this UK-funded award is part of the EDCTP2 programme supported by the European Union. RGW is funded by the Wellcome Trust (218261/Z/19/Z), NIH (1R01AI147321-01), EDTCP (RIA208D-2505B), UK MRC (CCF17-7779 via SET Bloomsbury), ESRC (ES/P008011/1), BMGF (OPP1084276, OPP1135288 and INV-001754), and the WHO (2020/985800-0).",
-  "pub_date": "2023-12-18"
+  "abstract": "Background:Individuals with bacteriologically confirmed pulmonary tuberculosis (TB) disease who do not report symptoms (subclinical TB) represent around half of all prevalent cases of TB, yet their contribution to Mycobacterium tuberculosis (Mtb) transmission is unknown, especially compared to individuals who report symptoms at the time of diagnosis (clinical TB). Relative infectiousness can be approximated by cumulative infections in household contacts, but such data are rare.Methods:We reviewed the literature to identify studies where surveys of Mtb infection were linked to population surveys of TB disease. We collated individual-level data on representative populations for analysis and used literature on the relative durations of subclinical and clinical TB to estimate relative infectiousness through a cumulative hazard model, accounting for sputum-smear status. Relative prevalence of subclinical and clinical disease in high-burden settings was used to estimate the contribution of subclinical TB to global Mtb transmission.Results:We collated data on 414 index cases and 789 household contacts from three prevalence surveys (Bangladesh, the Philippines, and Viet Nam) and one case-finding trial in Viet Nam. The odds ratio for infection in a household with a clinical versus subclinical index case (irrespective of sputum smear status) was 1.2 (0.6–2.3, 95% confidence interval). Adjusting for duration of disease, we found a per-unit-time infectiousness of subclinical TB relative to clinical TB of 1.93 (0.62–6.18, 95% prediction interval [PrI]). Fourteen countries across Asia and Africa provided data on relative prevalence of subclinical and clinical TB, suggesting an estimated 68% (27–92%, 95% PrI) of global transmission is from subclinical TB.Conclusions:Our results suggest that subclinical TB contributes substantially to transmission and needs to be diagnosed and treated for effective progress towards TB elimination.Funding:JCE, KCH, ASR, NS, and RH have received funding from the European Research Council (ERC) under the Horizon 2020 research and innovation programme (ERC Starting Grant No. 757699) KCH is also supported by UK FCDO (Leaving no-one behind: transforming gendered pathways to health for TB). This research has been partially funded by UK aid from the UK government (to KCH); however, the views expressed do not necessarily reflect the UK government’s official policies. PJD was supported by a fellowship from the UK Medical Research Council (MR/P022081/1); this UK-funded award is part of the EDCTP2 programme supported by the European Union. RGW is funded by the Wellcome Trust (218261/Z/19/Z), NIH (1R01AI147321-01), EDTCP (RIA208D-2505B), UK MRC (CCF17-7779 via SET Bloomsbury), ESRC (ES/P008011/1), BMGF (OPP1084276, OPP1135288 and INV-001754), and the WHO (2020/985800-0).",
+  "pub_date": "2023-12-18",
+  "authors": [
+    {
+      "given_names": "Jon C",
+      "surname": "Emery",
+      "orcid": "0000-0001-6644-7604",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Peter J",
+      "surname": "Dodd",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Sayera",
+      "surname": "Banu",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Beatrice",
+      "surname": "Frascella",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Frances L",
+      "surname": "Garden",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5",
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Katherine C",
+      "surname": "Horton",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Shahed",
+      "surname": "Hossain",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Irwin",
+      "surname": "Law",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Frank",
+      "surname": "van Leth",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9",
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Guy B",
+      "surname": "Marks",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5",
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Hoa Binh",
+      "surname": "Nguyen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Hai Viet",
+      "surname": "Nguyen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Ikushi",
+      "surname": "Onozaki",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Maria Imelda D",
+      "surname": "Quelapio",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff14"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Alexandra S",
+      "surname": "Richards",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Nabila",
+      "surname": "Shaikh",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff15"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Edine W",
+      "surname": "Tiemersma",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff16"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Richard G",
+      "surname": "White",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Khalequ",
+      "surname": "Zaman",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Frank",
+      "surname": "Cobelens",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff17"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Rein MGJ",
+      "surname": "Houben",
+      "orcid": "0000-0003-4132-7467",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 21
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "TB Modelling Group, TB Centre and Centre for Mathematical Modelling of Infectious Diseases, Department of Infectious Disease Epidemiology, London School of Hygiene & Tropical Medicine",
+      "department": null,
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": "00a0jsq62"
+    },
+    {
+      "id": "aff2",
+      "institution": "School of Health and Related Research, University of Sheffield",
+      "department": null,
+      "city": "Sheffield",
+      "country": "United Kingdom",
+      "ror": "05krs5044"
+    },
+    {
+      "id": "aff3",
+      "institution": "International Centre for Diarrhoeal Disease Research",
+      "department": null,
+      "city": "Dhaka",
+      "country": "Bangladesh",
+      "ror": "04vsvr128"
+    },
+    {
+      "id": "aff4",
+      "institution": "School of Public Health, Vita-Salute San Raffaele University",
+      "department": null,
+      "city": "Milan",
+      "country": "Italy",
+      "ror": "01gmqr298"
+    },
+    {
+      "id": "aff5",
+      "institution": "South West Sydney Clinical Campuses, University of New South Wales",
+      "department": null,
+      "city": "Sydney",
+      "country": "Australia",
+      "ror": "03r8z3t63"
+    },
+    {
+      "id": "aff6",
+      "institution": "Ingham Institute of Applied Medical Research",
+      "department": null,
+      "city": "Sydney",
+      "country": "Australia",
+      "ror": "03y4rnb63"
+    },
+    {
+      "id": "aff7",
+      "institution": "James P. Grant School of Public Health, BRAC University",
+      "department": null,
+      "city": "Dhaka",
+      "country": "Bangladesh",
+      "ror": "00sge8677"
+    },
+    {
+      "id": "aff8",
+      "institution": "Global Tuberculosis Programme, World Health Organization",
+      "department": null,
+      "city": "Geneva",
+      "country": "Switzerland",
+      "ror": "01f80g185"
+    },
+    {
+      "id": "aff9",
+      "institution": "Department of Health Sciences, VU University",
+      "department": null,
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "ror": "008xxew50"
+    },
+    {
+      "id": "aff10",
+      "institution": "Amsterdam Public Health Research Institute",
+      "department": null,
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "ror": null
+    },
+    {
+      "id": "aff11",
+      "institution": "Woolcock Institute of Medical Research",
+      "department": null,
+      "city": "Sydney",
+      "country": "Australia",
+      "ror": "04hy0x592"
+    },
+    {
+      "id": "aff12",
+      "institution": "National Lung Hospital, National Tuberculosis Control Program",
+      "department": null,
+      "city": "Ha Noi",
+      "country": "Viet Nam",
+      "ror": null
+    },
+    {
+      "id": "aff13",
+      "institution": "Research Institute of Tuberculosis, Japan Anti-Tuberculosis Association",
+      "department": null,
+      "city": "Tokyo",
+      "country": "Japan",
+      "ror": "012daep68"
+    },
+    {
+      "id": "aff14",
+      "institution": "Tropical Disease Foundation",
+      "department": null,
+      "city": "Makati City",
+      "country": "Philippines",
+      "ror": "05jxxs868"
+    },
+    {
+      "id": "aff15",
+      "institution": "Sanofi Pasteur",
+      "department": null,
+      "city": "Reading",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff16",
+      "institution": "KNCV Tuberculosis Foundation",
+      "department": null,
+      "city": "The Hague",
+      "country": "Netherlands",
+      "ror": "0287mpm73"
+    },
+    {
+      "id": "aff17",
+      "institution": "Department of Global Health and Amsterdam Institute for Global Health and Development, Amsterdam University Medical Centers, University of Amsterdam",
+      "department": null,
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "ror": "037n2rm85"
+    }
+  ]
 }

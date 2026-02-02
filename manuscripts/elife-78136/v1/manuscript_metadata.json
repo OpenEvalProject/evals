@@ -1,6 +1,392 @@
 {
   "doi": "10.7554/eLife.78136",
   "title": "Activation of targetable inflammatory immune signaling is seen in myelodysplastic syndromes with SF3B1 mutations",
-  "abstract": "Mutations in the SF3B1 splicing factor are commonly seen in myelodysplastic syndromes (MDS) and acute myeloid leukemia (AML), yet the specific oncogenic pathways activated by mis-splicing have not been fully elucidated. Inflammatory immune pathways have been shown to play roles in the pathogenesis of MDS, though the exact mechanisms of their activation in splicing mutant cases are not well understood. RNA-seq data from SF3B1 mutant samples was analyzed and functional roles of interleukin-1 receptor-associated kinase 4 ( IRAK4) isoforms were determined. Efficacy of IRAK4 inhibition was evaluated in preclinical models of MDS/AML. RNA-seq splicing analysis of SF3B1 mutant MDS samples revealed retention of full-length exon 6 of IRAK4 , a critical downstream mediator that links the Myddosome to inflammatory NF-kB activation. Exon 6 retention leads to a longer isoform, encoding a protein (IRAK4-long) that contains the entire death domain and kinase domain, leading to maximal activation of NF-kB. Cells with wild-type SF3B1 contain smaller IRAK4 isoforms that are targeted for proteasomal degradation. Expression of IRAK4-long in SF3B1 mutant cells induces TRAF6 activation leading to K63-linked ubiquitination of CDK2, associated with a block in hematopoietic differentiation. Inhibition of IRAK4 with CA-4948, leads to reduction in NF-kB activation, inflammatory cytokine production, enhanced myeloid differentiation in vitro and reduced leukemic growth in xenograft models. SF3B1 mutation leads to expression of a therapeutically targetable, longer, oncogenic IRAK4 isoform in AML/MDS models. This work was supported by Cincinnati Children’s Hospital Research Foundation, Leukemia Lymphoma Society, and National Institute of Health (R35HL135787, RO1HL111103, RO1DK102759, RO1HL114582), Gabrielle’s Angel Foundation for Cancer Research, and Edward P. Evans Foundation grants to DTS. AV is supported by Edward P. Evans Foundation, National Institute of Health (R01HL150832, R01HL139487, R01CA275007), Leukemia and Lymphoma Society, Curis and a gift from the Jane and Myles P. Dempsey family. AP and JB are supported by Blood Cancer UK (grants 13042 and 19004). GC is supported by a training grant from NYSTEM. We acknowledge support of this research from The Einstein Training Program in Stem Cell Research from the Empire State Stem Cell Fund through New York State Department of Health Contract C34874GG. MS is supported by a National Institute of Health Research Training and Career Development Grant (F31HL132420).",
-  "pub_date": "2022-08-30"
+  "abstract": "Background:Mutations in the SF3B1 splicing factor are commonly seen in myelodysplastic syndromes (MDS) and acute myeloid leukemia (AML), yet the specific oncogenic pathways activated by mis-splicing have not been fully elucidated. Inflammatory immune pathways have been shown to play roles in the pathogenesis of MDS, though the exact mechanisms of their activation in splicing mutant cases are not well understood.Methods:RNA-seq data from SF3B1 mutant samples was analyzed and functional roles of interleukin-1 receptor-associated kinase 4 (IRAK4) isoforms were determined. Efficacy of IRAK4 inhibition was evaluated in preclinical models of MDS/AML.Results:RNA-seq splicing analysis of SF3B1 mutant MDS samples revealed retention of full-length exon 6 of IRAK4, a critical downstream mediator that links the Myddosome to inflammatory NF-kB activation. Exon 6 retention leads to a longer isoform, encoding a protein (IRAK4-long) that contains the entire death domain and kinase domain, leading to maximal activation of NF-kB. Cells with wild-type SF3B1 contain smaller IRAK4 isoforms that are targeted for proteasomal degradation. Expression of IRAK4-long in SF3B1 mutant cells induces TRAF6 activation leading to K63-linked ubiquitination of CDK2, associated with a block in hematopoietic differentiation. Inhibition of IRAK4 with CA-4948, leads to reduction in NF-kB activation, inflammatory cytokine production, enhanced myeloid differentiation in vitro and reduced leukemic growth in xenograft models.Conclusions:SF3B1 mutation leads to expression of a therapeutically targetable, longer, oncogenic IRAK4 isoform in AML/MDS models.Funding:This work was supported by Cincinnati Children’s Hospital Research Foundation, Leukemia Lymphoma Society, and National Institute of Health (R35HL135787, RO1HL111103, RO1DK102759, RO1HL114582), Gabrielle’s Angel Foundation for Cancer Research, and Edward P. Evans Foundation grants to DTS. AV is supported by Edward P. Evans Foundation, National Institute of Health (R01HL150832, R01HL139487, R01CA275007), Leukemia and Lymphoma Society, Curis and a gift from the Jane and Myles P. Dempsey family. AP and JB are supported by Blood Cancer UK (grants 13042 and 19004). GC is supported by a training grant from NYSTEM. We acknowledge support of this research from The Einstein Training Program in Stem Cell Research from the Empire State Stem Cell Fund through New York State Department of Health Contract C34874GG. MS is supported by a National Institute of Health Research Training and Career Development Grant (F31HL132420).",
+  "pub_date": "2022-08-30",
+  "authors": [
+    {
+      "given_names": "Gaurav S",
+      "surname": "Choudhary",
+      "orcid": "0000-0001-5365-6706",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Andrea",
+      "surname": "Pellagatti",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Bogos",
+      "surname": "Agianian",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Molly A",
+      "surname": "Smith",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Tushar D",
+      "surname": "Bhagat",
+      "orcid": "0000-0002-4527-5505",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Shanisha",
+      "surname": "Gordon-Mitchell",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Srabani",
+      "surname": "Sahu",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Sanjay",
+      "surname": "Pandey",
+      "orcid": "0000-0003-2948-1816",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Nishi",
+      "surname": "Shah",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Srinivas",
+      "surname": "Aluri",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Ritesh",
+      "surname": "Aggarwal",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Sarah",
+      "surname": "Aminov",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Leya",
+      "surname": "Schwartz",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Violetta",
+      "surname": "Steeples",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Robert N",
+      "surname": "Booher",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Murali",
+      "surname": "Ramachandra",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Maria",
+      "surname": "Samson",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Milagros",
+      "surname": "Carbajal",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Kith",
+      "surname": "Pradhan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Teresa V",
+      "surname": "Bowman",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Manoj M",
+      "surname": "Pillai",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "Britta",
+      "surname": "Will",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 22
+    },
+    {
+      "given_names": "Amittha",
+      "surname": "Wickrema",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 23
+    },
+    {
+      "given_names": "Aditi",
+      "surname": "Shastri",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 24
+    },
+    {
+      "given_names": "Robert K",
+      "surname": "Bradley",
+      "orcid": "0000-0002-8046-1063",
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 25
+    },
+    {
+      "given_names": "Robert E",
+      "surname": "Martell",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 26
+    },
+    {
+      "given_names": "Ulrich G",
+      "surname": "Steidl",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 27
+    },
+    {
+      "given_names": "Evripidis",
+      "surname": "Gavathiotis",
+      "orcid": "0000-0001-6319-8331",
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 28
+    },
+    {
+      "given_names": "Jacqueline",
+      "surname": "Boultwood",
+      "orcid": "0000-0002-4330-2928",
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": true,
+      "position": 29
+    },
+    {
+      "given_names": "Daniel T",
+      "surname": "Starczynowski",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": true,
+      "position": 30
+    },
+    {
+      "given_names": "Amit",
+      "surname": "Verma",
+      "orcid": "0000-0002-5408-1673",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 31
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Blood Cancer Institute, Albert Einstein College of Medicine, Montefiore Medical Center",
+      "department": null,
+      "city": "The Bronx",
+      "country": "United States",
+      "ror": "044ntvm43"
+    },
+    {
+      "id": "aff2",
+      "institution": "Nuffield Division of Clinical Laboratory Sciences, Radcliffe Department of Medicine, University of Oxford",
+      "department": null,
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": "052gg0110"
+    },
+    {
+      "id": "aff3",
+      "institution": "Department of Biochemistry, Albert Einstein College of Medicine",
+      "department": null,
+      "city": "The Bronx",
+      "country": "United States",
+      "ror": "05cf8a891"
+    },
+    {
+      "id": "aff4",
+      "institution": "Experimental Hematology and Cancer Biology, Cincinnati Children’s Hospital Medical Center",
+      "department": null,
+      "city": "Cincinnati",
+      "country": "United States",
+      "ror": "04j36h363"
+    },
+    {
+      "id": "aff5",
+      "institution": "Curis Inc",
+      "department": null,
+      "city": "Lexington",
+      "country": "United States",
+      "ror": "02g6ngv74"
+    },
+    {
+      "id": "aff6",
+      "institution": "Aurigene Inc",
+      "department": null,
+      "city": "Bangalore",
+      "country": "India",
+      "ror": null
+    },
+    {
+      "id": "aff7",
+      "institution": "Yale University",
+      "department": null,
+      "city": "New Haven",
+      "country": "United States",
+      "ror": "03v76x132"
+    },
+    {
+      "id": "aff8",
+      "institution": "University of Chicago",
+      "department": null,
+      "city": "Chicago",
+      "country": "United States",
+      "ror": "024mw5h28"
+    },
+    {
+      "id": "aff9",
+      "institution": "Fred Hutchinson Cancer Center",
+      "department": null,
+      "city": "Seattle",
+      "country": "United States",
+      "ror": "007ps6h72"
+    }
+  ]
 }

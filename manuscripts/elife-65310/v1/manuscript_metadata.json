@@ -1,6 +1,385 @@
 {
   "doi": "10.7554/eLife.65310",
   "title": "Identification of autosomal cis expression quantitative trait methylation (cis eQTMs) in children’s blood",
-  "abstract": "The identification of expression quantitative trait methylation (eQTMs), defined as associations between DNA methylation levels and gene expression, might help the biological interpretation of epigenome-wide association studies (EWAS). We aimed to identify autosomal cis eQTMs in children’s blood, using data from 832 children of the Human Early Life Exposome (HELIX) project. Blood DNA methylation and gene expression were measured with the Illumina 450K and the Affymetrix HTA v2 arrays, respectively. The relationship between methylation levels and expression of nearby genes (1 Mb window centered at the transcription start site, TSS) was assessed by fitting 13.6 M linear regressions adjusting for sex, age, cohort, and blood cell composition. We identified 39,749 blood autosomal cis eQTMs, representing 21,966 unique CpGs (eCpGs, 5.7% of total CpGs) and 8,886 unique transcript clusters (eGenes, 15.3% of total transcript clusters, equivalent to genes). In 87.9% of these cis eQTMs, the eCpG was located at <250 kb from eGene’s TSS; and 58.8% of all eQTMs showed an inverse relationship between the methylation and expression levels. Only around half of the autosomal cis-eQTMs eGenes could be captured through annotation of the eCpG to the closest gene. eCpGs had less measurement error and were enriched for active blood regulatory regions and for CpGs reported to be associated with environmental exposures or phenotypic traits. In 40.4% of the eQTMs, the CpG and the eGene were both associated with at least one genetic variant. The overlap of autosomal cis eQTMs in children’s blood with those described in adults was small (13.8%), and age-shared cis eQTMs tended to be proximal to the TSS and enriched for genetic variants. This catalogue of autosomal cis eQTMs in children’s blood can help the biological interpretation of EWAS findings and is publicly available at https://helixomics.isglobal.org/ and at Dryad (doi: 10.5061/dryad.fxpnvx0t0 ). The study has received funding from the European Community’s Seventh Framework Programme (FP7/2007-206) under grant agreement no 308333 (HELIX project); the H2020-EU.3.1.2. - Preventing Disease Programme under grant agreement no 874583 (ATHLETE project); from the European Union’s Horizon 2020 research and innovation programme under grant agreement no 733206 (LIFECYCLE project), and from the European Joint Programming Initiative “A Healthy Diet for a Healthy Life” (JPI HDHL and Instituto de Salud Carlos III) under the grant agreement no AC18/00006 (NutriPROGRAM project). The genotyping was supported by the projects PI17/01225 and PI17/01935, funded by the Instituto de Salud Carlos III and co-funded by European Union (ERDF, “A way to make Europe”) and the Centro Nacional de Genotipado-CEGEN (PRB2-ISCIII). BiB received core infrastructure funding from the Wellcome Trust (WT101597MA) and a joint grant from the UK Medical Research Council (MRC) and Economic and Social Science Research Council (ESRC) (MR/N024397/1). INMA data collections were supported by grants from the Instituto de Salud Carlos III, CIBERESP, and the Generalitat de Catalunya-CIRIT. KANC was funded by the grant of the Lithuanian Agency for Science Innovation and Technology (6-04-2014_31V-66). The Norwegian Mother, Father and Child Cohort Study is supported by the Norwegian Ministry of Health and Care Services and the Ministry of Education and Research. The Rhea project was financially supported by European projects (EU FP6-2003-Food-3-NewGeneris, EU FP6. STREP Hiwate, EU FP7 ENV.2007.1.2.2.2. Project No 211250 Escape, EU FP7-2008-ENV-1.2.1.4 Envirogenomarkers, EU FP7-HEALTH-2009- single stage CHICOS, EU FP7 ENV.2008.1.2.1.6. Proposal No 226285 ENRIECO, EU- FP7- HEALTH-2012 Proposal No 308333 HELIX), and the Greek Ministry of Health (Program of Prevention of obesity and neurodevelopmental disorders in preschool children, in Heraklion district, Crete, Greece: 2011-2014; “Rhea Plus”: Primary Prevention Program of Environmental Risk Factors for Reproductive Health, and Child Health: 2012-15). We acknowledge support from the Spanish Ministry of Science and Innovation through the “Centro de Excelencia Severo Ochoa 2019-2023” Program (CEX2018-000806-S), and support from the Generalitat de Catalunya through the CERCA Program. MV-U and CR-A were supported by a FI fellowship from the Catalan Government (FI-DGR 2015 and #016FI_B 00272). MC received funding from Instituto Carlos III (Ministry of Economy and Competitiveness) (CD12/00563 and MS16/00128).",
-  "pub_date": "2022-03-18"
+  "abstract": "Background:The identification of expression quantitative trait methylation (eQTMs), defined as associations between DNA methylation levels and gene expression, might help the biological interpretation of epigenome-wide association studies (EWAS). We aimed to identify autosomal cis eQTMs in children’s blood, using data from 832 children of the Human Early Life Exposome (HELIX) project.Methods:Blood DNA methylation and gene expression were measured with the Illumina 450K and the Affymetrix HTA v2 arrays, respectively. The relationship between methylation levels and expression of nearby genes (1 Mb window centered at the transcription start site, TSS) was assessed by fitting 13.6 M linear regressions adjusting for sex, age, cohort, and blood cell composition.Results:We identified 39,749 blood autosomal cis eQTMs, representing 21,966 unique CpGs (eCpGs, 5.7% of total CpGs) and 8,886 unique transcript clusters (eGenes, 15.3% of total transcript clusters, equivalent to genes). In 87.9% of these cis eQTMs, the eCpG was located at <250 kb from eGene’s TSS; and 58.8% of all eQTMs showed an inverse relationship between the methylation and expression levels. Only around half of the autosomal cis-eQTMs eGenes could be captured through annotation of the eCpG to the closest gene. eCpGs had less measurement error and were enriched for active blood regulatory regions and for CpGs reported to be associated with environmental exposures or phenotypic traits. In 40.4% of the eQTMs, the CpG and the eGene were both associated with at least one genetic variant. The overlap of autosomal cis eQTMs in children’s blood with those described in adults was small (13.8%), and age-shared cis eQTMs tended to be proximal to the TSS and enriched for genetic variants.Conclusions:This catalogue of autosomal cis eQTMs in children’s blood can help the biological interpretation of EWAS findings and is publicly available at https://helixomics.isglobal.org/ and at Dryad (doi:10.5061/dryad.fxpnvx0t0).Funding:The study has received funding from the European Community’s Seventh Framework Programme (FP7/2007-206) under grant agreement no 308333 (HELIX project); the H2020-EU.3.1.2. - Preventing Disease Programme under grant agreement no 874583 (ATHLETE project); from the European Union’s Horizon 2020 research and innovation programme under grant agreement no 733206 (LIFECYCLE project), and from the European Joint Programming Initiative “A Healthy Diet for a Healthy Life” (JPI HDHL and Instituto de Salud Carlos III) under the grant agreement no AC18/00006 (NutriPROGRAM project). The genotyping was supported by the projects PI17/01225 and PI17/01935, funded by the Instituto de Salud Carlos III and co-funded by European Union (ERDF, “A way to make Europe”) and the Centro Nacional de Genotipado-CEGEN (PRB2-ISCIII). BiB received core infrastructure funding from the Wellcome Trust (WT101597MA) and a joint grant from the UK Medical Research Council (MRC) and Economic and Social Science Research Council (ESRC) (MR/N024397/1). INMA data collections were supported by grants from the Instituto de Salud Carlos III, CIBERESP, and the Generalitat de Catalunya-CIRIT. KANC was funded by the grant of the Lithuanian Agency for Science Innovation and Technology (6-04-2014_31V-66). The Norwegian Mother, Father and Child Cohort Study is supported by the Norwegian Ministry of Health and Care Services and the Ministry of Education and Research. The Rhea project was financially supported by European projects (EU FP6-2003-Food-3-NewGeneris, EU FP6. STREP Hiwate, EU FP7 ENV.2007.1.2.2.2. Project No 211250 Escape, EU FP7-2008-ENV-1.2.1.4 Envirogenomarkers, EU FP7-HEALTH-2009- single stage CHICOS, EU FP7 ENV.2008.1.2.1.6. Proposal No 226285 ENRIECO, EU- FP7- HEALTH-2012 Proposal No 308333 HELIX), and the Greek Ministry of Health (Program of Prevention of obesity and neurodevelopmental disorders in preschool children, in Heraklion district, Crete, Greece: 2011-2014; “Rhea Plus”: Primary Prevention Program of Environmental Risk Factors for Reproductive Health, and Child Health: 2012-15). We acknowledge support from the Spanish Ministry of Science and Innovation through the “Centro de Excelencia Severo Ochoa 2019-2023” Program (CEX2018-000806-S), and support from the Generalitat de Catalunya through the CERCA Program. MV-U and CR-A were supported by a FI fellowship from the Catalan Government (FI-DGR 2015 and #016FI_B 00272). MC received funding from Instituto Carlos III (Ministry of Economy and Competitiveness) (CD12/00563 and MS16/00128).",
+  "pub_date": "2022-03-18",
+  "authors": [
+    {
+      "given_names": "Carlos",
+      "surname": "Ruiz-Arenas",
+      "orcid": "0000-0002-6014-3498",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Carles",
+      "surname": "Hernandez-Ferrer",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2",
+        "aff3",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Marta",
+      "surname": "Vives-Usano",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2",
+        "aff4",
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Sergi",
+      "surname": "Marí",
+      "orcid": "0000-0003-2023-195X",
+      "affiliation_ids": [
+        "aff2",
+        "aff4",
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Ines",
+      "surname": "Quintela",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Dan",
+      "surname": "Mason",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Solène",
+      "surname": "Cadiou",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Maribel",
+      "surname": "Casas",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Sandra",
+      "surname": "Andrusaityte",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Kristine Bjerve",
+      "surname": "Gutzkow",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Marina",
+      "surname": "Vafeiadi",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2",
+        "aff4",
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "John",
+      "surname": "Wright",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Johanna",
+      "surname": "Lepeule",
+      "orcid": "0000-0001-8907-197X",
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Regina",
+      "surname": "Grazuleviciene",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Leda",
+      "surname": "Chatzi",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Ángel",
+      "surname": "Carracedo",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff14",
+        "aff15"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Xavier",
+      "surname": "Estivill",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff16"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Eulàlia",
+      "surname": "Marti",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6",
+        "aff17"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Geòrgia",
+      "surname": "Escaramís",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6",
+        "aff17"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Martine",
+      "surname": "Vrijheid",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2",
+        "aff4",
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Juan R",
+      "surname": "González",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2",
+        "aff4",
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "Mariona",
+      "surname": "Bustamante",
+      "orcid": "0000-0003-0127-2860",
+      "affiliation_ids": [
+        "aff2",
+        "aff4",
+        "aff6"
+      ],
+      "corresponding": true,
+      "position": 22
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Centro de Investigación Biomédica en Red de Enfermedades Raras (CIBERER)",
+      "department": null,
+      "city": "Barcelona",
+      "country": "Spain",
+      "ror": "01ygm5w19"
+    },
+    {
+      "id": "aff2",
+      "institution": "Universitat Pompeu Fabra (UPF)",
+      "department": null,
+      "city": "Barcelona",
+      "country": "Spain",
+      "ror": "04n0g0b29"
+    },
+    {
+      "id": "aff3",
+      "institution": "Centro Nacional de Análisis Genómico (CNAG-CRG), Center for Genomic Regulation, Barcelona Institute of Science and Technology (BIST)",
+      "department": null,
+      "city": "Barcelona",
+      "country": "Spain",
+      "ror": "03kpps236"
+    },
+    {
+      "id": "aff4",
+      "institution": "ISGlobal",
+      "department": null,
+      "city": "Barcelona",
+      "country": "Spain",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "Center for Genomic Regulation (CRG), Barcelona Institute of Science and Technology",
+      "department": null,
+      "city": "Barcelona",
+      "country": "Spain",
+      "ror": "03kpps236"
+    },
+    {
+      "id": "aff6",
+      "institution": "CIBER Epidemiología y Salud Pública (CIBERESP)",
+      "department": null,
+      "city": "Barcelona",
+      "country": "Spain",
+      "ror": "02g87qh62"
+    },
+    {
+      "id": "aff7",
+      "institution": "Medicine Genomics Group, University of Santiago de Compostela",
+      "department": null,
+      "city": "Santiago de Compostela",
+      "country": "Spain",
+      "ror": "030eybx10"
+    },
+    {
+      "id": "aff8",
+      "institution": "Bradford Institute for Health Research, Bradford Teaching Hospitals NHS Foundation Trust",
+      "department": null,
+      "city": "Bradford",
+      "country": "United Kingdom",
+      "ror": "05gekvn04"
+    },
+    {
+      "id": "aff9",
+      "institution": "University Grenoble Alpes, Inserm, CNRS, Team of Environmental Epidemiology Applied to Reproduction and Respiratory Health",
+      "department": null,
+      "city": "Grenoble",
+      "country": "France",
+      "ror": "02rx3b187"
+    },
+    {
+      "id": "aff10",
+      "institution": "Department of Environmental Science, Vytautas Magnus University",
+      "department": null,
+      "city": "Kaunas",
+      "country": "Lithuania",
+      "ror": "04y7eh037"
+    },
+    {
+      "id": "aff11",
+      "institution": "Department of Environmental Health, Norwegian Institute of Public Health",
+      "department": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "ror": "046nvst19"
+    },
+    {
+      "id": "aff12",
+      "institution": "Department of Social Medicine, University of Crete",
+      "department": null,
+      "city": "Crete",
+      "country": "Greece",
+      "ror": "00dr28g20"
+    },
+    {
+      "id": "aff13",
+      "institution": "Department of Preventive Medicine, Keck School of Medicine, University of Southern California, Los Angeles",
+      "department": null,
+      "city": "Los Angeles",
+      "country": "United States",
+      "ror": "03taz7m60"
+    },
+    {
+      "id": "aff14",
+      "institution": "Medicine Genomics Group, CIBERER, University of Santiago de Compostela",
+      "department": null,
+      "city": "Santiago de Compostela",
+      "country": "Spain",
+      "ror": "030eybx10"
+    },
+    {
+      "id": "aff15",
+      "institution": "Galician Foundation of Genomic Medicine",
+      "department": null,
+      "city": "Santiago de Compostela",
+      "country": "Spain",
+      "ror": null
+    },
+    {
+      "id": "aff16",
+      "institution": "Quantitative Genomics Medicine Laboratories (qGenomics), Esplugues del Llobrega",
+      "department": null,
+      "city": "Barcelona",
+      "country": "Spain",
+      "ror": "025h0r574"
+    },
+    {
+      "id": "aff17",
+      "institution": "Departament de Biomedicina, Institut de Neurociències, Universitat de Barcelona",
+      "department": null,
+      "city": "Barcelona",
+      "country": "Spain",
+      "ror": "021018s57"
+    }
+  ]
 }

@@ -1,6 +1,224 @@
 {
   "doi": "10.7554/eLife.78775",
   "title": "High resolution species assignment of Anopheles mosquitoes using k-mer distances on targeted sequences",
-  "abstract": "The ANOSPP amplicon panel is a genus-wide targeted sequencing panel to facilitate large-scale monitoring of Anopheles species diversity. Combining information from the 62 nuclear amplicons present in the ANOSPP panel allows for a more nuanced species assignment than single gene (e.g. COI) barcoding, which is desirable in the light of permeable species boundaries. Here, we present NNoVAE, a method using Nearest Neighbours (NN) and Variational Autoencoders (VAE), which we apply to k- mers resulting from the ANOSPP amplicon sequences in order to hierarchically assign species identity. The NN step assigns a sample to a species-group by comparing the k -mers arising from each haplotype’s amplicon sequence to a reference database. The VAE step is required to distinguish between closely related species, and also has sufficient resolution to reveal population structure within species. In tests on independent samples with over 80% amplicon coverage, NNoVAE correctly classifies to species level 98% of samples within the An. gambiae complex and 89% of samples outside the complex. We apply NNoVAE to over two thousand new samples from Burkina Faso and Gabon, identifying unexpected species in Gabon. NNoVAE presents an approach that may be of value to other targeted sequencing panels, and is a method that will be used to survey Anopheles species diversity and Plasmodium transmission patterns through space and time on a large scale, with plans to analyse half a million mosquitoes in the next five years.",
-  "pub_date": "2022-10-12"
+  "abstract": "The ANOSPP amplicon panel is a genus-wide targeted sequencing panel to facilitate large-scale monitoring of Anopheles species diversity. Combining information from the 62 nuclear amplicons present in the ANOSPP panel allows for a more nuanced species assignment than single gene (e.g. COI) barcoding, which is desirable in the light of permeable species boundaries. Here, we present NNoVAE, a method using Nearest Neighbours (NN) and Variational Autoencoders (VAE), which we apply to k-mers resulting from the ANOSPP amplicon sequences in order to hierarchically assign species identity. The NN step assigns a sample to a species-group by comparing the k-mers arising from each haplotype’s amplicon sequence to a reference database. The VAE step is required to distinguish between closely related species, and also has sufficient resolution to reveal population structure within species. In tests on independent samples with over 80% amplicon coverage, NNoVAE correctly classifies to species level 98% of samples within the An. gambiae complex and 89% of samples outside the complex. We apply NNoVAE to over two thousand new samples from Burkina Faso and Gabon, identifying unexpected species in Gabon. NNoVAE presents an approach that may be of value to other targeted sequencing panels, and is a method that will be used to survey Anopheles species diversity and Plasmodium transmission patterns through space and time on a large scale, with plans to analyse half a million mosquitoes in the next five years.",
+  "pub_date": "2022-10-12",
+  "authors": [
+    {
+      "given_names": "Marilou",
+      "surname": "Boddé",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Alex",
+      "surname": "Makunin",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Diego",
+      "surname": "Ayala",
+      "orcid": "0000-0003-4726-580X",
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Lemonde",
+      "surname": "Bouafou",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Abdoulaye",
+      "surname": "Diabaté",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Uwem Friday",
+      "surname": "Ekpo",
+      "orcid": "0000-0002-0543-5463",
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Mahamadi",
+      "surname": "Kientega",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Gilbert",
+      "surname": "Le Goff",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Boris Kevin",
+      "surname": "Makanga",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Marc F",
+      "surname": "Ngangue",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Olaitan Olamide",
+      "surname": "Omitola",
+      "orcid": "0000-0003-3827-6320",
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Nil",
+      "surname": "Rahola",
+      "orcid": "0000-0003-4067-6438",
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Frederic",
+      "surname": "Tripet",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Richard",
+      "surname": "Durbin",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Mara KN",
+      "surname": "Lawniczak",
+      "orcid": "0000-0002-3006-2080",
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": true,
+      "position": 15
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "University of Cambridge",
+      "department": "Department of Genetics",
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Wellcome Sanger Institute",
+      "department": null,
+      "city": "Hinxton",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "Institut de Recherche pour le Développement",
+      "department": "MIVEGEC, IRD, CNRS",
+      "city": "Montpellier",
+      "country": "France",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "Institut de Recherche en Sciences de la Santé",
+      "department": null,
+      "city": "Bobo-Dioulasso",
+      "country": "Burkina Faso",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "Federal University of Agriculture",
+      "department": null,
+      "city": "Abeokuta",
+      "country": "Nigeria",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "Institut de Recherche en Ecologie Tropicale",
+      "department": null,
+      "city": "Libreville",
+      "country": "Gabon",
+      "ror": null
+    },
+    {
+      "id": "aff7",
+      "institution": "Centre International de Recherches Medicales de Franceville",
+      "department": null,
+      "city": "Franceville",
+      "country": "Gabon",
+      "ror": null
+    },
+    {
+      "id": "aff8",
+      "institution": "Keele University",
+      "department": "Centre for Applied Entomology and Parasitology",
+      "city": "Newcastle",
+      "country": "United Kingdom",
+      "ror": null
+    }
+  ]
 }

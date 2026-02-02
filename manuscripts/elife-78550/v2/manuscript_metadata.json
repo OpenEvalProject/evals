@@ -2,5 +2,616 @@
   "doi": "10.7554/eLife.78550",
   "title": "Autoantibody discovery across monogenic, acquired, and COVID-19-associated autoimmunity with scalable PhIP-seq",
   "abstract": "Phage immunoprecipitation sequencing (PhIP-seq) allows for unbiased, proteome-wide autoantibody discovery across a variety of disease settings, with identification of disease-specific autoantigens providing new insight into previously poorly understood forms of immune dysregulation. Despite several successful implementations of PhIP-seq for autoantigen discovery, including our previous work (Vazquez et al., 2020), current protocols are inherently difficult to scale to accommodate large cohorts of cases and importantly, healthy controls. Here, we develop and validate a high throughput extension of PhIP-seq in various etiologies of autoimmune and inflammatory diseases, including APS1, IPEX, RAG1/2 deficiency, Kawasaki disease (KD), multisystem inflammatory syndrome in children (MIS-C), and finally, mild and severe forms of COVID-19. We demonstrate that these scaled datasets enable machine-learning approaches that result in robust prediction of disease status, as well as the ability to detect both known and novel autoantigens, such as prodynorphin (PDYN) in APS1 patients, and intestinally expressed proteins BEST4 and BTNL8 in IPEX patients. Remarkably, BEST4 antibodies were also found in two patients with RAG1/2 deficiency, one of whom had very early onset IBD. Scaled PhIP-seq examination of both MIS-C and KD demonstrated rare, overlapping antigens, including CGNL1, as well as several strongly enriched putative pneumonia-associated antigens in severe COVID-19, including the endosomal protein EEA1. Together, scaled PhIP-seq provides a valuable tool for broadly assessing both rare and common autoantigen overlap between autoimmune diseases of varying origins and etiologies.",
-  "pub_date": "2022-10-27"
+  "pub_date": "2022-10-27",
+  "authors": [
+    {
+      "given_names": "Sara E",
+      "surname": "Vazquez",
+      "orcid": "0000-0002-0601-7001",
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Sabrina A",
+      "surname": "Mann",
+      "orcid": "0000-0002-4970-1073",
+      "affiliation_ids": [
+        "aff1",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Aaron",
+      "surname": "Bodansky",
+      "orcid": "0000-0001-8943-8233",
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Andrew F",
+      "surname": "Kung",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Zoe",
+      "surname": "Quandt",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2",
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Elise MN",
+      "surname": "Ferré",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Nils",
+      "surname": "Landegren",
+      "orcid": "0000-0002-6163-9540",
+      "affiliation_ids": [
+        "aff8",
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Daniel",
+      "surname": "Eriksson",
+      "orcid": "0000-0001-5473-3312",
+      "affiliation_ids": [
+        "aff10",
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Paul",
+      "surname": "Bastard",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff12",
+        "aff13",
+        "aff14",
+        "aff15"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Shen-Ying",
+      "surname": "Zhang",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff12",
+        "aff13",
+        "aff14"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Jamin",
+      "surname": "Liu",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff16"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Anthea",
+      "surname": "Mitchell",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Irina",
+      "surname": "Proekt",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "David",
+      "surname": "Yu",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Caleigh",
+      "surname": "Mandel-Brehm",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Chung-Yu",
+      "surname": "Wang",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Brenda",
+      "surname": "Miao",
+      "orcid": "0000-0002-3393-9837",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Gavin",
+      "surname": "Sowa",
+      "orcid": "0000-0002-2089-8116",
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Kelsey",
+      "surname": "Zorn",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Alice Y",
+      "surname": "Chan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff17"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Veronica M",
+      "surname": "Tagi",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff18"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "Chisato",
+      "surname": "Shimizu",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff19"
+      ],
+      "corresponding": false,
+      "position": 22
+    },
+    {
+      "given_names": "Adriana",
+      "surname": "Tremoulet",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff19"
+      ],
+      "corresponding": false,
+      "position": 23
+    },
+    {
+      "given_names": "Kara",
+      "surname": "Lynch",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff20",
+        "aff21"
+      ],
+      "corresponding": false,
+      "position": 24
+    },
+    {
+      "given_names": "Michael R",
+      "surname": "Wilson",
+      "orcid": "0000-0002-8705-5084",
+      "affiliation_ids": [
+        "aff22"
+      ],
+      "corresponding": false,
+      "position": 25
+    },
+    {
+      "given_names": "Olle",
+      "surname": "Kämpe",
+      "orcid": "0000-0001-6091-9914",
+      "affiliation_ids": [
+        "aff8",
+        "aff23",
+        "aff24"
+      ],
+      "corresponding": false,
+      "position": 26
+    },
+    {
+      "given_names": "Kerry",
+      "surname": "Dobbs",
+      "orcid": "0000-0002-3432-3137",
+      "affiliation_ids": [
+        "aff25"
+      ],
+      "corresponding": false,
+      "position": 27
+    },
+    {
+      "given_names": "Ottavia M",
+      "surname": "Delmonte",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff25"
+      ],
+      "corresponding": false,
+      "position": 28
+    },
+    {
+      "given_names": "Rosa",
+      "surname": "Bacchetta",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff18"
+      ],
+      "corresponding": false,
+      "position": 29
+    },
+    {
+      "given_names": "Luigi D",
+      "surname": "Notarangelo",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff25"
+      ],
+      "corresponding": false,
+      "position": 30
+    },
+    {
+      "given_names": "Jane C",
+      "surname": "Burns",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff19"
+      ],
+      "corresponding": false,
+      "position": 31
+    },
+    {
+      "given_names": "Jean-Laurent",
+      "surname": "Casanova",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff12",
+        "aff13",
+        "aff14",
+        "aff15",
+        "aff26"
+      ],
+      "corresponding": false,
+      "position": 32
+    },
+    {
+      "given_names": "Michail S",
+      "surname": "Lionakis",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 33
+    },
+    {
+      "given_names": "Troy R",
+      "surname": "Torgerson",
+      "orcid": "0000-0003-3489-5036",
+      "affiliation_ids": [
+        "aff27",
+        "aff28"
+      ],
+      "corresponding": false,
+      "position": 34
+    },
+    {
+      "given_names": "Mark S",
+      "surname": "Anderson",
+      "orcid": "0000-0002-3093-4758",
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": true,
+      "position": 35
+    },
+    {
+      "given_names": "Joseph L",
+      "surname": "DeRisi",
+      "orcid": "0000-0002-4611-9205",
+      "affiliation_ids": [
+        "aff1",
+        "aff4"
+      ],
+      "corresponding": true,
+      "position": 36
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Department of Biochemistry and Biophysics, University of California, San Francisco",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": "043mz5j54"
+    },
+    {
+      "id": "aff2",
+      "institution": "Diabetes Center, University of California, San Francisco",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": "043mz5j54"
+    },
+    {
+      "id": "aff3",
+      "institution": "School of Medicine, University of California, San Francisco",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": "043mz5j54"
+    },
+    {
+      "id": "aff4",
+      "institution": "Chan Zuckerberg Biohub",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "Department of Pediatric Critical Care Medicine, University of California, San Francisco",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": "043mz5j54"
+    },
+    {
+      "id": "aff6",
+      "institution": "Department of Medicine, University of California, San Francisco",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": "043mz5j54"
+    },
+    {
+      "id": "aff7",
+      "institution": "Fungal Pathogenesis Unit, Laboratory of Clinical Immunology & Microbiology, National Institute of Allergy and Infectious Diseases, National Institutes of Health",
+      "department": null,
+      "city": "Bethesda",
+      "country": "United States",
+      "ror": "01cwqze88"
+    },
+    {
+      "id": "aff8",
+      "institution": "Department of Medicine, Karolinska University Hospital, Karolinska Institute",
+      "department": null,
+      "city": "Stockholm",
+      "country": "Sweden",
+      "ror": "056d84691"
+    },
+    {
+      "id": "aff9",
+      "institution": "Science for life Laboratory, Department of Medical Sciences, Uppsala University",
+      "department": null,
+      "city": "Uppsala",
+      "country": "Sweden",
+      "ror": "048a87296"
+    },
+    {
+      "id": "aff10",
+      "institution": "Department of Medical Biochemistry and Microbiology, Uppsala University",
+      "department": null,
+      "city": "Uppsala",
+      "country": "Sweden",
+      "ror": "048a87296"
+    },
+    {
+      "id": "aff11",
+      "institution": "Centre for Molecular Medicine, Department of Medicine, Karolinska Institutet",
+      "department": null,
+      "city": "Stockholm",
+      "country": "Sweden",
+      "ror": "056d84691"
+    },
+    {
+      "id": "aff12",
+      "institution": "St. Giles Laboratory of Human Genetics of Infectious Diseases, Rockefeller University",
+      "department": null,
+      "city": "New York",
+      "country": "United States",
+      "ror": "0420db125"
+    },
+    {
+      "id": "aff13",
+      "institution": "Laboratory of Human Genetics of Infectious Diseases, Necker Branch, INSERM U1163, Necker Hospital for Sick Children",
+      "department": null,
+      "city": "Paris",
+      "country": "France",
+      "ror": "05tr67282"
+    },
+    {
+      "id": "aff14",
+      "institution": "Imagine Institute, University of Paris",
+      "department": null,
+      "city": "Paris",
+      "country": "France",
+      "ror": "05f82e368"
+    },
+    {
+      "id": "aff15",
+      "institution": "Department of Pediatrics, Necker Hospital for Sick Children",
+      "department": null,
+      "city": "Paris",
+      "country": "France",
+      "ror": "05tr67282"
+    },
+    {
+      "id": "aff16",
+      "institution": "Berkeley-University of California, San Francisco Graduate Program in Bioengineering, University of California, San Francisco",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": "043mz5j54"
+    },
+    {
+      "id": "aff17",
+      "institution": "Department of Pediatrics, Division of Pediatric Allergy, Immunology, Bone and Marrow Transplantation, Division of Pediatric Rheumatology, University of California, San Francisco",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": "043mz5j54"
+    },
+    {
+      "id": "aff18",
+      "institution": "Division of Stem Cell Transplantation and Regenerative Medicine, Stanford University School of Medicine",
+      "department": null,
+      "city": "Stanford",
+      "country": "United States",
+      "ror": "00f54p054"
+    },
+    {
+      "id": "aff19",
+      "institution": "Kawasaki Disease Research Center, Rady Children’s Hospital and Department of Pediatrics, University of California, San Diego",
+      "department": null,
+      "city": "La Jolla",
+      "country": "United States",
+      "ror": "0168r3w48"
+    },
+    {
+      "id": "aff20",
+      "institution": "Department of Laboratory Medicine, University of California, San Francisco",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": "043mz5j54"
+    },
+    {
+      "id": "aff21",
+      "institution": "Zuckerberg San Francisco General",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff22",
+      "institution": "Weill Institute for Neurosciences, University of California, San Francisco",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": "043mz5j54"
+    },
+    {
+      "id": "aff23",
+      "institution": "Department of Clinical Science and KG Jebsen Center for Autoimmune Disorders, University of Bergen",
+      "department": null,
+      "city": "Bergen",
+      "country": "Norway",
+      "ror": "03zga2b32"
+    },
+    {
+      "id": "aff24",
+      "institution": "Center of Molecular Medicine, and Department of Endocrinology, Metabolism and Diabetes, Karolinska University Hospital",
+      "department": null,
+      "city": "Stockholm",
+      "country": "Sweden",
+      "ror": "00m8d6786"
+    },
+    {
+      "id": "aff25",
+      "institution": "Laboratory of Clinical Immunology and Microbiology, National Institute of Allergy and Infectious Diseases, National Institutes of Health",
+      "department": null,
+      "city": "Bethesda",
+      "country": "United States",
+      "ror": "01cwqze88"
+    },
+    {
+      "id": "aff26",
+      "institution": "Howard Hughes Medical Institute",
+      "department": null,
+      "city": "New York",
+      "country": "United States",
+      "ror": "006w34k90"
+    },
+    {
+      "id": "aff27",
+      "institution": "Seattle Children's Research Institute",
+      "department": null,
+      "city": "Seattle",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff28",
+      "institution": "Department of Pediatrics, University of Washington",
+      "department": null,
+      "city": "Seattle",
+      "country": "United States",
+      "ror": "00cvxb145"
+    }
+  ]
 }

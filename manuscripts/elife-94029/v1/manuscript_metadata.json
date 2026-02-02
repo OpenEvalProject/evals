@@ -1,6 +1,66 @@
 {
   "doi": "10.7554/eLife.94029",
   "title": "Reliable protein–protein docking with AlphaFold, Rosetta, and replica exchange",
-  "abstract": "Despite the recent breakthrough of AlphaFold (AF) in the field of protein sequence-to-structure prediction, modeling protein interfaces and predicting protein complex structures remains challenging, especially when there is a significant conformational change in one or both binding partners. Prior studies have demonstrated that AF-multimer (AFm) can predict accurate protein complexes in only up to 43% of cases (Yin et al., 2022). In this work, we combine AF as a structural template generator with a physics-based replica exchange docking algorithm to better sample conformational changes. Using a curated collection of 254 available protein targets with both unbound and bound structures, we first demonstrate that AF confidence measures (pLDDT) can be repurposed for estimating protein flexibility and docking accuracy for multimers. We incorporate these metrics within our ReplicaDock 2.0 protocol to complete a robust in silico pipeline for accurate protein complex structure prediction. AlphaRED (AlphaFold-initiated Replica Exchange Docking) successfully docks failed AF predictions, including 97 failure cases in Docking Benchmark Set 5.5. AlphaRED generates CAPRI acceptable-quality or better predictions for 63% of benchmark targets. Further, on a subset of antigen-antibody targets, which is challenging for AFm (20% success rate), AlphaRED demonstrates a success rate of 43%. This new strategy demonstrates the success possible by integrating deep learning-based architectures trained on evolutionary information with physics-based enhanced sampling. The pipeline is available at https://github.com/Graylab/AlphaRED .",
-  "pub_date": "2025-05-27"
+  "abstract": "Despite the recent breakthrough of AlphaFold (AF) in the field of protein sequence-to-structure prediction, modeling protein interfaces and predicting protein complex structures remains challenging, especially when there is a significant conformational change in one or both binding partners. Prior studies have demonstrated that AF-multimer (AFm) can predict accurate protein complexes in only up to 43% of cases (Yin et al., 2022). In this work, we combine AF as a structural template generator with a physics-based replica exchange docking algorithm to better sample conformational changes. Using a curated collection of 254 available protein targets with both unbound and bound structures, we first demonstrate that AF confidence measures (pLDDT) can be repurposed for estimating protein flexibility and docking accuracy for multimers. We incorporate these metrics within our ReplicaDock 2.0 protocol to complete a robust in silico pipeline for accurate protein complex structure prediction. AlphaRED (AlphaFold-initiated Replica Exchange Docking) successfully docks failed AF predictions, including 97 failure cases in Docking Benchmark Set 5.5. AlphaRED generates CAPRI acceptable-quality or better predictions for 63% of benchmark targets. Further, on a subset of antigen-antibody targets, which is challenging for AFm (20% success rate), AlphaRED demonstrates a success rate of 43%. This new strategy demonstrates the success possible by integrating deep learning-based architectures trained on evolutionary information with physics-based enhanced sampling. The pipeline is available at https://github.com/Graylab/AlphaRED.",
+  "pub_date": "2025-05-27",
+  "authors": [
+    {
+      "given_names": "Ameya",
+      "surname": "Harmalkar",
+      "orcid": "0000-0001-6863-9634",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Sergey",
+      "surname": "Lyskov",
+      "orcid": "0000-0001-6380-6712",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Jeffrey J",
+      "surname": "Gray",
+      "orcid": "0000-0001-6380-2324",
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": true,
+      "position": 3
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Department of Chemical and Biomolecular Engineering, The Johns Hopkins University",
+      "department": null,
+      "city": "Baltimore",
+      "country": "United States",
+      "ror": "00za53h95"
+    },
+    {
+      "id": "aff2",
+      "institution": "Program in Molecular Biophysics, The Johns Hopkins University",
+      "department": null,
+      "city": "Baltimore",
+      "country": "United States",
+      "ror": "00za53h95"
+    },
+    {
+      "id": "aff3",
+      "institution": "Data Science and AI Institute, Johns Hopkins University",
+      "department": null,
+      "city": "Baltimore",
+      "country": "United States",
+      "ror": "00za53h95"
+    }
+  ]
 }

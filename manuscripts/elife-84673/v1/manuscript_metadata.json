@@ -1,6 +1,579 @@
 {
   "doi": "10.7554/eLife.84673",
   "title": "Eleven key measures for monitoring general practice clinical activity during COVID-19: A retrospective cohort study using 48 million adults’ primary care records in England through OpenSAFELY",
-  "abstract": "The COVID-19 pandemic has had a significant impact on delivery of NHS care. We have developed the OpenSAFELY Service Restoration Observatory (SRO) to develop key measures of primary care activity and describe the trends in these measures throughout the COVID-19 pandemic. With the approval of NHS England, we developed an open source software framework for data management and analysis to describe trends and variation in clinical activity across primary care electronic health record (EHR) data on 48 million adults. We developed SNOMED-CT codelists for key measures of primary care clinical activity such as blood pressure monitoring and asthma reviews, selected by an expert clinical advisory group and conducted a population cohort-based study to describe trends and variation in these measures January 2019-December 2021, and pragmatically classified their level of recovery one year into the pandemic using the percentage change in the median practice level rate. We produced 11 measures reflective of clinical activity in general practice. A substantial drop in activity was observed in all measures at the outset of the COVID-19 pandemic. By April 2021, the median rate had recovered to within 15% of the median rate in April 2019 in six measures. The remaining measures showed a sustained drop, ranging from a 18.5% reduction in medication reviews to a 42.0% reduction in blood pressure monitoring. Three measures continued to show a sustained drop by December 2021. The COVID-19 pandemic was associated with a substantial change in primary care activity across the measures we developed, with recovery in most measures. We delivered an open source software framework to describe trends and variation in clinical activity across an unprecedented scale of primary care data. We will continue to expand the set of key measures to be routinely monitored using our publicly available NHS OpenSAFELY SRO dashboards with near real-time data. This research used data assets made available as part of the Data and Connectivity National Core Study, led by Health Data Research UK in partnership with the Office for National Statistics and funded by UK Research and Innovation (grant ref MC_PC_20058).The OpenSAFELY Platform is supported by grants from the Wellcome Trust (222097/Z/20/Z); MRC (MR/V015757/1, MC_PC-20059, MR/W016729/1); NIHR (NIHR135559, COV-LT2-0073), and Health Data Research UK (HDRUK2021.000, 2021.0157).",
-  "pub_date": "2023-07-27"
+  "abstract": "Background:The COVID-19 pandemic has had a significant impact on delivery of NHS care. We have developed the OpenSAFELY Service Restoration Observatory (SRO) to develop key measures of primary care activity and describe the trends in these measures throughout the COVID-19 pandemic.Methods:With the approval of NHS England, we developed an open source software framework for data management and analysis to describe trends and variation in clinical activity across primary care electronic health record (EHR) data on 48 million adults.We developed SNOMED-CT codelists for key measures of primary care clinical activity such as blood pressure monitoring and asthma reviews, selected by an expert clinical advisory group and conducted a population cohort-based study to describe trends and variation in these measures January 2019-December 2021, and pragmatically classified their level of recovery one year into the pandemic using the percentage change in the median practice level rate.Results:We produced 11 measures reflective of clinical activity in general practice. A substantial drop in activity was observed in all measures at the outset of the COVID-19 pandemic. By April 2021, the median rate had recovered to within 15% of the median rate in April 2019 in six measures. The remaining measures showed a sustained drop, ranging from a 18.5% reduction in medication reviews to a 42.0% reduction in blood pressure monitoring. Three measures continued to show a sustained drop by December 2021.Conclusions:The COVID-19 pandemic was associated with a substantial change in primary care activity across the measures we developed, with recovery in most measures. We delivered an open source software framework to describe trends and variation in clinical activity across an unprecedented scale of primary care data. We will continue to expand the set of key measures to be routinely monitored using our publicly available NHS OpenSAFELY SRO dashboards with near real-time data.Funding:This research used data assets made available as part of the Data and Connectivity National Core Study, led by Health Data Research UK in partnership with the Office for National Statistics and funded by UK Research and Innovation (grant ref MC_PC_20058).The OpenSAFELY Platform is supported by grants from the Wellcome Trust (222097/Z/20/Z); MRC (MR/V015757/1, MC_PC-20059, MR/W016729/1); NIHR (NIHR135559, COV-LT2-0073), and Health Data Research UK (HDRUK2021.000, 2021.0157).",
+  "pub_date": "2023-07-27",
+  "authors": [
+    {
+      "given_names": "Louis",
+      "surname": "Fisher",
+      "orcid": "0000-0002-0295-3812",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Helen J",
+      "surname": "Curtis",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Richard",
+      "surname": "Croker",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Milan",
+      "surname": "Wiedemann",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Victoria",
+      "surname": "Speed",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Christopher",
+      "surname": "Wood",
+      "orcid": "0000-0001-5184-0606",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Andrew",
+      "surname": "Brown",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Lisa EM",
+      "surname": "Hopcroft",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Rose",
+      "surname": "Higgins",
+      "orcid": "0000-0002-5295-4370",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Jon",
+      "surname": "Massey",
+      "orcid": "0000-0002-2497-4040",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Peter",
+      "surname": "Inglesby",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Caroline E",
+      "surname": "Morton",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Alex J",
+      "surname": "Walker",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Jessica",
+      "surname": "Morley",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Amir",
+      "surname": "Mehrkar",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Seb",
+      "surname": "Bacon",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "George",
+      "surname": "Hickman",
+      "orcid": "0000-0002-6691-4046",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Orla",
+      "surname": "Macdonald",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Tom",
+      "surname": "Lewis",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Marion",
+      "surname": "Wood",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Martin",
+      "surname": "Myers",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "Miriam",
+      "surname": "Samuel",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 22
+    },
+    {
+      "given_names": "Robin",
+      "surname": "Conibere",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 23
+    },
+    {
+      "given_names": "Wasim",
+      "surname": "Baqir",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 24
+    },
+    {
+      "given_names": "Harpreet",
+      "surname": "Sood",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 25
+    },
+    {
+      "given_names": "Charles",
+      "surname": "Drury",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 26
+    },
+    {
+      "given_names": "Kiren",
+      "surname": "Collison",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 27
+    },
+    {
+      "given_names": "Chris",
+      "surname": "Bates",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 28
+    },
+    {
+      "given_names": "David",
+      "surname": "Evans",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 29
+    },
+    {
+      "given_names": "Iain",
+      "surname": "Dillingham",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 30
+    },
+    {
+      "given_names": "Tom",
+      "surname": "Ward",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 31
+    },
+    {
+      "given_names": "Simon",
+      "surname": "Davy",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 32
+    },
+    {
+      "given_names": "Rebecca M",
+      "surname": "Smith",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 33
+    },
+    {
+      "given_names": "William",
+      "surname": "Hulme",
+      "orcid": "0000-0002-9162-4999",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 34
+    },
+    {
+      "given_names": "Amelia",
+      "surname": "Green",
+      "orcid": "0000-0002-7246-2074",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 35
+    },
+    {
+      "given_names": "John",
+      "surname": "Parry",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 36
+    },
+    {
+      "given_names": "Frank",
+      "surname": "Hester",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 37
+    },
+    {
+      "given_names": "Sam",
+      "surname": "Harper",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 38
+    },
+    {
+      "given_names": "Jonathan",
+      "surname": "Cockburn",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 39
+    },
+    {
+      "given_names": "Shaun",
+      "surname": "O'Hanlon",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 40
+    },
+    {
+      "given_names": "Alex",
+      "surname": "Eavis",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 41
+    },
+    {
+      "given_names": "Richard",
+      "surname": "Jarvis",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 42
+    },
+    {
+      "given_names": "Dima",
+      "surname": "Avramov",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 43
+    },
+    {
+      "given_names": "Paul",
+      "surname": "Griffiths",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 44
+    },
+    {
+      "given_names": "Aaron",
+      "surname": "Fowles",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 45
+    },
+    {
+      "given_names": "Nasreen",
+      "surname": "Parkes",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 46
+    },
+    {
+      "given_names": "Brian",
+      "surname": "MacKenna",
+      "orcid": "0000-0002-3786-9063",
+      "affiliation_ids": [
+        "aff1",
+        "aff4"
+      ],
+      "corresponding": true,
+      "position": 47
+    },
+    {
+      "given_names": "Ben",
+      "surname": "Goldacre",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 48
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "The Bennett Institute for Applied Data Science, Nuffield Department of Primary Care Health Sciences, University of Oxford",
+      "department": null,
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": "052gg0110"
+    },
+    {
+      "id": "aff2",
+      "institution": "Oxford Health Foundation Trust, Warneford Hospital",
+      "department": null,
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": "03we1zb10"
+    },
+    {
+      "id": "aff3",
+      "institution": "Royal Devon University Healthcare NHS Foundation Trust",
+      "department": null,
+      "city": "Barnstaple",
+      "country": "United Kingdom",
+      "ror": "02wnqcb97"
+    },
+    {
+      "id": "aff4",
+      "institution": "NHS England",
+      "department": null,
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": "02wnqcb97"
+    },
+    {
+      "id": "aff5",
+      "institution": "Lancashire Teaching Hospitals NHS Foundation Trust",
+      "department": null,
+      "city": "Chorley",
+      "country": "United Kingdom",
+      "ror": "02j7n9748"
+    },
+    {
+      "id": "aff6",
+      "institution": "Queen Mary University of London",
+      "department": null,
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": "026zzn846"
+    },
+    {
+      "id": "aff7",
+      "institution": "Beacon Medical Group",
+      "department": null,
+      "city": "Plymouth",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff8",
+      "institution": "Sternhall Lane Surgery",
+      "department": null,
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff9",
+      "institution": "Herefordshire and Worcestershire Health and Care NHS Trust",
+      "department": null,
+      "city": "Worcester",
+      "country": "United Kingdom",
+      "ror": "03nkk3987"
+    },
+    {
+      "id": "aff10",
+      "institution": "TPP",
+      "department": null,
+      "city": "Leeds",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff11",
+      "institution": "EMIS",
+      "department": null,
+      "city": "Leeds",
+      "country": "United Kingdom",
+      "ror": null
+    }
+  ]
 }

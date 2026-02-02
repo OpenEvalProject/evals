@@ -1,6 +1,104 @@
 {
   "doi": "10.7554/eLife.66410",
   "title": "Fast deep neural correspondence for tracking and identifying neurons in C. elegans using semi-synthetic training",
-  "abstract": "We present an automated method to track and identify neurons in C. elegans , called ‘fast Deep Neural Correspondence’ or fDNC, based on the transformer network architecture. The model is trained once on empirically derived semi-synthetic data and then predicts neural correspondence across held-out real animals. The same pre-trained model both tracks neurons across time and identifies corresponding neurons across individuals. Performance is evaluated against hand-annotated datasets, including NeuroPAL (Yemini et al., 2021). Using only position information, the method achieves 79.1% accuracy at tracking neurons within an individual and 64.1% accuracy at identifying neurons across individuals. Accuracy at identifying neurons across individuals is even higher (78.2%) when the model is applied to a dataset published by another group (Chaudhary et al., 2021). Accuracy reaches 74.7% on our dataset when using color information from NeuroPAL. Unlike previous methods, fDNC does not require straightening or transforming the animal into a canonical coordinate system. The method is fast and predicts correspondence in 10 ms making it suitable for future real-time applications.",
-  "pub_date": "2021-07-14"
+  "abstract": "We present an automated method to track and identify neurons in C. elegans, called ‘fast Deep Neural Correspondence’ or fDNC, based on the transformer network architecture. The model is trained once on empirically derived semi-synthetic data and then predicts neural correspondence across held-out real animals. The same pre-trained model both tracks neurons across time and identifies corresponding neurons across individuals. Performance is evaluated against hand-annotated datasets, including NeuroPAL (Yemini et al., 2021). Using only position information, the method achieves 79.1% accuracy at tracking neurons within an individual and 64.1% accuracy at identifying neurons across individuals. Accuracy at identifying neurons across individuals is even higher (78.2%) when the model is applied to a dataset published by another group (Chaudhary et al., 2021). Accuracy reaches 74.7% on our dataset when using color information from NeuroPAL. Unlike previous methods, fDNC does not require straightening or transforming the animal into a canonical coordinate system. The method is fast and predicts correspondence in 10 ms making it suitable for future real-time applications.",
+  "pub_date": "2021-07-14",
+  "authors": [
+    {
+      "given_names": "Xinwei",
+      "surname": "Yu",
+      "orcid": "0000-0002-8699-3546",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Matthew S",
+      "surname": "Creamer",
+      "orcid": "0000-0002-9458-0629",
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Francesco",
+      "surname": "Randi",
+      "orcid": "0000-0002-6200-7254",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Anuj K",
+      "surname": "Sharma",
+      "orcid": "0000-0001-5061-9731",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Scott W",
+      "surname": "Linderman",
+      "orcid": "0000-0002-3878-9073",
+      "affiliation_ids": [
+        "aff3",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Andrew M",
+      "surname": "Leifer",
+      "orcid": "0000-0002-5362-5093",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": true,
+      "position": 6
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Department of Physics, Princeton University",
+      "department": null,
+      "city": "Princeton",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Princeton Neuroscience Institute, Princeton University",
+      "department": null,
+      "city": "Princeton",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "Department of Statistics, Stanford University",
+      "department": null,
+      "city": "Stanford",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "Wu Tsai Neurosciences Institute, Stanford University",
+      "department": null,
+      "city": "Stanford",
+      "country": "United States",
+      "ror": null
+    }
+  ]
 }

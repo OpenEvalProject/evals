@@ -2,5 +2,87 @@
   "doi": "10.7554/eLife.106557",
   "title": "Unsupervised pipeline for the identification of cortical excitatory and inhibitory neurons in high-density multielectrode arrays with ground-truth validation",
   "abstract": "Large-scale extracellular recording techniques have advanced the study of neuronal circuits but lack methods to reliably identify cell types while scaling to thousands of neurons. We introduce spikeMAP, a pipeline for analyzing large-scale in vitro cortical recordings that combines spike sorting with cell-type identification using viral and optogenetic validation. SpikeMAP integrates data analysis with optogenetic, viral, and pharmacological protocols to dynamically probe distinct cell types while recording from large populations. The pipeline fits spike waveforms using spline interpolation to measure half-amplitude and peak-to-peak durations, applies principal component analysis and k-means clustering to isolate single-neuron signals, and uses linear discriminant analysis to optimize cluster separability. Channel source locations are determined through spatiotemporal spike waveform characteristics. Applied to mouse prefrontal cortex slices recorded on a 4096-channel array, spikeMAP effectively distinguishes regular-spiking excitatory neurons from fast-spiking inhibitory interneurons via action potential waveform, Fano factor, and spatial cross-correlations. This validated toolbox enables comprehensive characterization of neuronal activity across cell types in high-density recordings, offering a scalable approach to study microcircuit interactions in the brain.",
-  "pub_date": "2025-08-28"
+  "pub_date": "2025-08-28",
+  "authors": [
+    {
+      "given_names": "Eloise",
+      "surname": "Giraud",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Michael",
+      "surname": "Lynn",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Philippe",
+      "surname": "Vincent-Lamarre",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Jean-Claude",
+      "surname": "Beique",
+      "orcid": "0000-0001-7278-4906",
+      "affiliation_ids": [
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Jean-Philippe",
+      "surname": "Thivierge",
+      "orcid": "0000-0003-2457-7173",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": true,
+      "position": 5
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "School of Psychology, University of Ottawa",
+      "department": null,
+      "city": "Ottawa",
+      "country": "Canada",
+      "ror": "03c4mmv16"
+    },
+    {
+      "id": "aff2",
+      "institution": "uOttawa Brain and Mind Research Institute Center for Neural Dynamics, University of Ottawa",
+      "department": null,
+      "city": "Ottawa",
+      "country": "Canada",
+      "ror": "036s2ns10"
+    },
+    {
+      "id": "aff3",
+      "institution": "Department of Cellular and Molecular Medicine, Faculty of Medicine, University of Ottawa",
+      "department": null,
+      "city": "Ottawa",
+      "country": "Canada",
+      "ror": "03c4mmv16"
+    }
+  ]
 }

@@ -1,6 +1,358 @@
 {
   "doi": "10.7554/eLife.68015",
   "title": "Topological network analysis of patient similarity for precision management of acute blood pressure in spinal cord injury",
-  "abstract": "Predicting neurological recovery after spinal cord injury (SCI) is challenging. Using topological data analysis, we have previously shown that mean arterial pressure (MAP) during SCI surgery predicts long-term functional recovery in rodent models, motivating the present multicenter study in patients. Intra-operative monitoring records and neurological outcome data were extracted (n = 118 patients). We built a similarity network of patients from a low-dimensional space embedded using a non-linear algorithm, Isomap, and ensured topological extraction using persistent homology metrics. Confirmatory analysis was conducted through regression methods. Network analysis suggested that time outside of an optimum MAP range (hypotension or hypertension) during surgery was associated with lower likelihood of neurological recovery at hospital discharge. Logistic and LASSO (least absolute shrinkage and selection operator) regression confirmed these findings, revealing an optimal MAP range of 76–[104-117] mmHg associated with neurological recovery. We show that deviation from this optimal MAP range during SCI surgery predicts lower probability of neurological recovery and suggest new targets for therapeutic intervention. NIH/NINDS: R01NS088475 (ARF); R01NS122888 (ARF); UH3NS106899 (ARF); Department of Veterans Affairs: 1I01RX002245 (ARF), I01RX002787 (ARF); Wings for Life Foundation (ATE, ARF); Craig H. Neilsen Foundation (ARF); and DOD: SC150198 (MSB); SC190233 (MSB); DOE: DE-AC02-05CH11231 (DM).",
-  "pub_date": "2021-11-16"
+  "abstract": "Background:Predicting neurological recovery after spinal cord injury (SCI) is challenging. Using topological data analysis, we have previously shown that mean arterial pressure (MAP) during SCI surgery predicts long-term functional recovery in rodent models, motivating the present multicenter study in patients.Methods:Intra-operative monitoring records and neurological outcome data were extracted (n = 118 patients). We built a similarity network of patients from a low-dimensional space embedded using a non-linear algorithm, Isomap, and ensured topological extraction using persistent homology metrics. Confirmatory analysis was conducted through regression methods.Results:Network analysis suggested that time outside of an optimum MAP range (hypotension or hypertension) during surgery was associated with lower likelihood of neurological recovery at hospital discharge. Logistic and LASSO (least absolute shrinkage and selection operator) regression confirmed these findings, revealing an optimal MAP range of 76–[104-117] mmHg associated with neurological recovery.Conclusions:We show that deviation from this optimal MAP range during SCI surgery predicts lower probability of neurological recovery and suggest new targets for therapeutic intervention.Funding:NIH/NINDS: R01NS088475 (ARF); R01NS122888 (ARF); UH3NS106899 (ARF); Department of Veterans Affairs: 1I01RX002245 (ARF), I01RX002787 (ARF); Wings for Life Foundation (ATE, ARF); Craig H. Neilsen Foundation (ARF); and DOD: SC150198 (MSB); SC190233 (MSB); DOE: DE-AC02-05CH11231 (DM).",
+  "pub_date": "2021-11-16",
+  "authors": [
+    {
+      "given_names": "Abel",
+      "surname": "Torres-Espín",
+      "orcid": "0000-0002-9787-8738",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Jenny",
+      "surname": "Haefeli",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Reza",
+      "surname": "Ehsanian",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Dolores",
+      "surname": "Torres",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Carlos A",
+      "surname": "Almeida",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "J Russell",
+      "surname": "Huie",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Austin",
+      "surname": "Chou",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Dmitriy",
+      "surname": "Morozov",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Nicole",
+      "surname": "Sanderson",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Benjamin",
+      "surname": "Dirlikov",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Catherine G",
+      "surname": "Suen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Jessica L",
+      "surname": "Nielson",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7",
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Nikos",
+      "surname": "Kyritsis",
+      "orcid": "0000-0001-7801-5796",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Debra D",
+      "surname": "Hemmerle",
+      "orcid": "0000-0003-2796-6107",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Jason F",
+      "surname": "Talbott",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Geoffrey T",
+      "surname": "Manley",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Sanjay S",
+      "surname": "Dhall",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "William D",
+      "surname": "Whetstone",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Jacqueline C",
+      "surname": "Bresnahan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Michael S",
+      "surname": "Beattie",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Stephen L",
+      "surname": "McKenna",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff11",
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "Jonathan Z",
+      "surname": "Pan",
+      "orcid": "0000-0001-5814-3707",
+      "affiliation_ids": [
+        "aff13"
+      ],
+      "corresponding": true,
+      "position": 22
+    },
+    {
+      "given_names": "Adam R",
+      "surname": "Ferguson",
+      "orcid": "0000-0001-7102-1608",
+      "affiliation_ids": [
+        "aff1",
+        "aff3"
+      ],
+      "corresponding": true,
+      "position": 23
+    },
+    {
+      "given_names": "MS",
+      "surname": "Beattie",
+      "orcid": null,
+      "affiliation_ids": [],
+      "corresponding": false,
+      "position": 24
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Weill Institute for Neurosciences; Brain and Spinal Injury Center (BASIC), Department of Neurological Surgery, University of California, San Francisco; Zuckerberg San Francisco General Hospital and Trauma Center",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Division of Physical Medicine and Rehabilitation, Department of Orthopaedics and Rehabilitation, University of New Mexico School of Medicine",
+      "department": null,
+      "city": "Albuquerque",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "San Francisco Veterans Affairs Healthcare System",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "Computational Research Division, Lawrence Berkeley National Laboratory",
+      "department": null,
+      "city": "Berkeley",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "Lawrence Berkeley National Laboratory",
+      "department": null,
+      "city": "Berkeley",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "Rehabilitation Research Center, Santa Clara Valley Medical Center",
+      "department": null,
+      "city": "San Jose",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff7",
+      "institution": "Department of Psychiatry and Behavioral Science, and University of Minnesota",
+      "department": null,
+      "city": "Minneapolis",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff8",
+      "institution": "Institute for Health Informatics, University of Minnesota",
+      "department": null,
+      "city": "Minneapolis",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff9",
+      "institution": "Department of Radiology and Biomedical Imaging, University of California, San Francisco",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff10",
+      "institution": "Department of Emergency Medicine, University of California, San Francisco; Zuckerberg San Francisco General Hospital and Trauma Center",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff11",
+      "institution": "Department of Physical Medicine and Rehabilitation, Santa Clara Valley Medical Center",
+      "department": null,
+      "city": "San Jose",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff12",
+      "institution": "Department of Neurosurgery, Stanford University",
+      "department": null,
+      "city": "Stanford",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff13",
+      "institution": "Department of Anesthesia and Perioperative Care, University of California, San Francisco; Zuckerberg San Francisco General Hospital and Trauma Center",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": null
+    }
+  ]
 }

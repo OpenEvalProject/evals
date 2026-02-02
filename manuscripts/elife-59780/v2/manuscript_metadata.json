@@ -2,5 +2,266 @@
   "doi": "10.7554/eLife.59780",
   "title": "On the objectivity, reliability, and validity of deep learning enabled bioimage analyses",
   "abstract": "Bioimage analysis of fluorescent labels is widely used in the life sciences. Recent advances in deep learning (DL) allow automating time-consuming manual image analysis processes based on annotated training data. However, manual annotation of fluorescent features with a low signal-to-noise ratio is somewhat subjective. Training DL models on subjective annotations may be instable or yield biased models. In turn, these models may be unable to reliably detect biological effects. An analysis pipeline integrating data annotation, ground truth estimation, and model training can mitigate this risk. To evaluate this integrated process, we compared different DL-based analysis approaches. With data from two model organisms (mice, zebrafish) and five laboratories, we show that ground truth estimation from multiple human annotators helps to establish objectivity in fluorescent feature annotations. Furthermore, ensembles of multiple models trained on the estimated ground truth establish reliability and validity. Our research provides guidelines for reproducible DL-based bioimage analyses.",
-  "pub_date": "2020-10-19"
+  "pub_date": "2020-10-19",
+  "authors": [
+    {
+      "given_names": "Dennis",
+      "surname": "Segebarth",
+      "orcid": "0000-0002-3806-9324",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Matthias",
+      "surname": "Griebel",
+      "orcid": "0000-0003-1959-0242",
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Nikolai",
+      "surname": "Stein",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Cora R",
+      "surname": "von Collenberg",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Corinna",
+      "surname": "Martin",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Dominik",
+      "surname": "Fiedler",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Lucas B",
+      "surname": "Comeras",
+      "orcid": "0000-0003-2445-3605",
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Anupam",
+      "surname": "Sah",
+      "orcid": "0000-0001-8298-6501",
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Victoria",
+      "surname": "Schoeffler",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Teresa",
+      "surname": "Lüffe",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Alexander",
+      "surname": "Dürr",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Rohini",
+      "surname": "Gupta",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Manju",
+      "surname": "Sasi",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Christina",
+      "surname": "Lillesaar",
+      "orcid": "0000-0002-5166-2851",
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Maren D",
+      "surname": "Lange",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Ramon O",
+      "surname": "Tasan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Nicolas",
+      "surname": "Singewald",
+      "orcid": "0000-0002-0166-3370",
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Hans-Christian",
+      "surname": "Pape",
+      "orcid": "0000-0001-6874-8224",
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Christoph M",
+      "surname": "Flath",
+      "orcid": "0000-0002-1761-9833",
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": true,
+      "position": 19
+    },
+    {
+      "given_names": "Robert",
+      "surname": "Blum",
+      "orcid": "0000-0002-5270-3854",
+      "affiliation_ids": [
+        "aff1",
+        "aff7"
+      ],
+      "corresponding": true,
+      "position": 20
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Institute of Clinical Neurobiology, University Hospital Würzburg",
+      "department": null,
+      "city": "Würzburg",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Department of Business and Economics, University of Würzburg",
+      "department": null,
+      "city": "Würzburg",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "Institute of Physiology I, Westfälische Wilhlems-Universität",
+      "department": null,
+      "city": "Münster",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "Department of Pharmacology, Medical University of Innsbruck",
+      "department": null,
+      "city": "Innsbruck",
+      "country": "Austria",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "Department of Pharmacology and Toxicology, Institute of Pharmacy and Center for Molecular Biosciences Innsbruck, University of Innsbruck",
+      "department": null,
+      "city": "Innsbruck",
+      "country": "Austria",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "Department of Child and Adolescent Psychiatry, Center of Mental Health, University Hospital Würzburg",
+      "department": null,
+      "city": "Würzburg",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff7",
+      "institution": "Comprehensive Anxiety Center",
+      "department": null,
+      "city": "Würzburg",
+      "country": "Germany",
+      "ror": null
+    }
+  ]
 }

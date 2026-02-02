@@ -2,5 +2,446 @@
   "doi": "10.7554/eLife.59811",
   "title": "Characterization and prediction of clinical pathways of vulnerability to psychosis through graph signal processing",
   "abstract": "Causal interactions between specific psychiatric symptoms could contribute to the heterogenous clinical trajectories observed in early psychopathology. Current diagnostic approaches merge clinical manifestations that co-occur across subjects and could significantly hinder our understanding of clinical pathways connecting individual symptoms. Network analysis techniques have emerged as alternative approaches that could help shed light on the complex dynamics of early psychopathology. The present study attempts to address the two main limitations that have in our opinion hindered the application of network approaches in the clinical setting. Firstly, we show that a multi-layer network analysis approach, can move beyond a static view of psychopathology, by providing an intuitive characterization of the role of specific symptoms in contributing to clinical trajectories over time. Secondly, we show that a Graph-Signal-Processing approach, can exploit knowledge of longitudinal interactions between symptoms, to predict clinical trajectories at the level of the individual. We test our approaches in two independent samples of individuals with genetic and clinical vulnerability for developing psychosis. Novel network approaches can allow to embrace the dynamic complexity of early psychopathology and help pave the way towards a more a personalized approach to clinical care.",
-  "pub_date": "2021-09-27"
+  "pub_date": "2021-09-27",
+  "authors": [
+    {
+      "given_names": "Corrado",
+      "surname": "Sandini",
+      "orcid": "0000-0003-2933-1607",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Daniela",
+      "surname": "Zöller",
+      "orcid": "0000-0002-7049-0696",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Maude",
+      "surname": "Schneider",
+      "orcid": "0000-0001-7147-8915",
+      "affiliation_ids": [
+        "aff1",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Anjali",
+      "surname": "Tarun",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Marco",
+      "surname": "Armando",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Barnaby",
+      "surname": "Nelson",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4",
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Paul G",
+      "surname": "Amminger",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4",
+        "aff5",
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Hok Pan",
+      "surname": "Yuen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4",
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Connie",
+      "surname": "Markulev",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4",
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Monica R",
+      "surname": "Schäffer",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5",
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Nilufar",
+      "surname": "Mossaheb",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Monika",
+      "surname": "Schlögelhofer",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Stefan",
+      "surname": "Smesny",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Ian B",
+      "surname": "Hickie",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Gregor Emanuel",
+      "surname": "Berger",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Eric YH",
+      "surname": "Chen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Lieuwe",
+      "surname": "de Haan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Dorien H",
+      "surname": "Nieman",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Merete",
+      "surname": "Nordentoft",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Anita",
+      "surname": "Riecher-Rössler",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Swapna",
+      "surname": "Verma",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff14"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "Andrew",
+      "surname": "Thompson",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4",
+        "aff5",
+        "aff15",
+        "aff16"
+      ],
+      "corresponding": false,
+      "position": 22
+    },
+    {
+      "given_names": "Alison Ruth",
+      "surname": "Yung",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4",
+        "aff5",
+        "aff17",
+        "aff18"
+      ],
+      "corresponding": false,
+      "position": 23
+    },
+    {
+      "given_names": "Patrick D",
+      "surname": "McGorry",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4",
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 24
+    },
+    {
+      "given_names": "Dimitri",
+      "surname": "Van De Ville",
+      "orcid": "0000-0002-2879-3861",
+      "affiliation_ids": [
+        "aff2",
+        "aff19"
+      ],
+      "corresponding": false,
+      "position": 25
+    },
+    {
+      "given_names": "Stephan",
+      "surname": "Eliez",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff20"
+      ],
+      "corresponding": false,
+      "position": 26
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Developmental Imaging and Psychopathology Laboratory, University of Geneva School of Medicine",
+      "department": null,
+      "city": "Geneva",
+      "country": "Switzerland",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Institute of Bioengineering, Ecole Polytechnique Fédérale de Lausanne",
+      "department": null,
+      "city": "Lausanne",
+      "country": "Switzerland",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "Center for Contextual Psychiatry, Research Group Psychiatry, Department of Neuroscience, KU Leuven",
+      "department": null,
+      "city": "Leuven",
+      "country": "Belgium",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "Orygen",
+      "department": null,
+      "city": "Parkville",
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "The Centre for Youth Mental Health, The University of Melbourne",
+      "department": null,
+      "city": "Melbourne",
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "Department of Psychiatry and Psychotherapy, Clinical Division of Social Psychiatry, Medical University Vienna",
+      "department": null,
+      "city": "Vienna",
+      "country": "Austria",
+      "ror": null
+    },
+    {
+      "id": "aff7",
+      "institution": "Department of Psychiatry, University Hospital Jena",
+      "department": null,
+      "city": "Jena",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff8",
+      "institution": "Brain and Mind Centre, University of Sydney",
+      "department": null,
+      "city": "Sydney",
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "aff9",
+      "institution": "Child and Adolescent Psychiatric Service of the Canton of Zurich",
+      "department": null,
+      "city": "Zurich",
+      "country": "Switzerland",
+      "ror": null
+    },
+    {
+      "id": "aff10",
+      "institution": "Department of Psychiatry, University of Hong Kong",
+      "department": null,
+      "city": "Hong Kong",
+      "country": "China",
+      "ror": null
+    },
+    {
+      "id": "aff11",
+      "institution": "Department of Psychiatry, Amsterdam University Medical Centers",
+      "department": null,
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "ror": null
+    },
+    {
+      "id": "aff12",
+      "institution": "Psychiatric Centre Bispebjerg",
+      "department": null,
+      "city": "Copenhagen",
+      "country": "Denmark",
+      "ror": null
+    },
+    {
+      "id": "aff13",
+      "institution": "University of Basel",
+      "department": null,
+      "city": "Basel",
+      "country": "Switzerland",
+      "ror": null
+    },
+    {
+      "id": "aff14",
+      "institution": "Institute of Mental Health",
+      "department": null,
+      "city": "Singapore",
+      "country": "Singapore",
+      "ror": null
+    },
+    {
+      "id": "aff15",
+      "institution": "Division of Mental Health and Wellbeing, Warwick Medical School, University of Warwick",
+      "department": null,
+      "city": "Coventry",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff16",
+      "institution": "North Warwickshire Early Intervention in Psychosis Service, Conventry and Warwickshire National Health Service Partnership Trust",
+      "department": null,
+      "city": "Coventry",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff17",
+      "institution": "Division of Psychology and Mental Health, University of Manchester",
+      "department": null,
+      "city": "Manchester",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff18",
+      "institution": "Greater Manchester Mental Health NHS Foundation Trust",
+      "department": null,
+      "city": "Manchester",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff19",
+      "institution": "Department of Radiology and Medical Informatics, University of Geneva",
+      "department": null,
+      "city": "Geneva",
+      "country": "Switzerland",
+      "ror": null
+    },
+    {
+      "id": "aff20",
+      "institution": "Department of Genetic Medicine and Development, University of Geneva School of Medicine",
+      "department": null,
+      "city": "Geneva",
+      "country": "Switzerland",
+      "ror": null
+    }
+  ]
 }

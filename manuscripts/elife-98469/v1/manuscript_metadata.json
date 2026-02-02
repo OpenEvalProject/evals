@@ -1,6 +1,269 @@
 {
   "doi": "10.7554/eLife.98469",
   "title": "Artificial intelligence approaches for tumor phenotype stratification from single-cell transcriptomic data",
-  "abstract": "Single-cell RNA-sequencing (scRNA-seq) coupled with robust computational analysis facilitates the characterization of phenotypic heterogeneity within tumors. Current scRNA-seq analysis pipelines are capable of identifying a myriad of malignant and non-malignant cell subtypes from single-cell profiling of tumors. However, given the extent of intra-tumoral heterogeneity, it is challenging to assess the risk associated with individual cell subpopulations, primarily due to the complexity of the cancer phenotype space and the lack of clinical annotations associated with tumor scRNA-seq studies. To this end, we introduce SCellBOW, a scRNA-seq analysis framework inspired by document embedding techniques from the domain of Natural Language Processing (NLP). SCellBOW is a novel computational approach that facilitates effective identification and high-quality visualization of single-cell subpopulations. We compared SCellBOW with existing best practice methods for its ability to precisely represent phenotypically divergent cell types across multiple scRNA-seq datasets, including our in-house generated human splenocyte and matched peripheral blood mononuclear cell (PBMC) dataset. For tumor cells, SCellBOW estimates the relative risk associated with each cluster and stratifies them based on their aggressiveness. This is achieved by simulating how the presence or absence of a specific cell subpopulation influences disease prognosis. Using SCellBOW, we identified a hitherto unknown and pervasive AR−/NE low (androgen-receptor-negative, neuroendocrine-low) malignant subpopulation in metastatic prostate cancer with conspicuously high aggressiveness. Overall, the risk-stratification capabilities of SCellBOW hold promise for formulating tailored therapeutic interventions by identifying clinically relevant tumor subpopulations and their impact on prognosis.",
-  "pub_date": "2025-06-13"
+  "abstract": "Single-cell RNA-sequencing (scRNA-seq) coupled with robust computational analysis facilitates the characterization of phenotypic heterogeneity within tumors. Current scRNA-seq analysis pipelines are capable of identifying a myriad of malignant and non-malignant cell subtypes from single-cell profiling of tumors. However, given the extent of intra-tumoral heterogeneity, it is challenging to assess the risk associated with individual cell subpopulations, primarily due to the complexity of the cancer phenotype space and the lack of clinical annotations associated with tumor scRNA-seq studies. To this end, we introduce SCellBOW, a scRNA-seq analysis framework inspired by document embedding techniques from the domain of Natural Language Processing (NLP). SCellBOW is a novel computational approach that facilitates effective identification and high-quality visualization of single-cell subpopulations. We compared SCellBOW with existing best practice methods for its ability to precisely represent phenotypically divergent cell types across multiple scRNA-seq datasets, including our in-house generated human splenocyte and matched peripheral blood mononuclear cell (PBMC) dataset. For tumor cells, SCellBOW estimates the relative risk associated with each cluster and stratifies them based on their aggressiveness. This is achieved by simulating how the presence or absence of a specific cell subpopulation influences disease prognosis. Using SCellBOW, we identified a hitherto unknown and pervasive AR−/NElow (androgen-receptor-negative, neuroendocrine-low) malignant subpopulation in metastatic prostate cancer with conspicuously high aggressiveness. Overall, the risk-stratification capabilities of SCellBOW hold promise for formulating tailored therapeutic interventions by identifying clinically relevant tumor subpopulations and their impact on prognosis.",
+  "pub_date": "2025-06-13",
+  "authors": [
+    {
+      "given_names": "Namrata",
+      "surname": "Bhattacharya",
+      "orcid": "0000-0002-5666-2551",
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Anja",
+      "surname": "Rockstroh",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Sanket Suhas",
+      "surname": "Deshpande",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Sam Koshy",
+      "surname": "Thomas",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Anunay",
+      "surname": "Yadav",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Chitrita",
+      "surname": "Goswami",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Smriti",
+      "surname": "Chawla",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Pierre",
+      "surname": "Solomon",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Cynthia",
+      "surname": "Fourgeux",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Gaurav",
+      "surname": "Ahuja",
+      "orcid": "0000-0002-2837-9361",
+      "affiliation_ids": [
+        "aff4",
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Brett",
+      "surname": "Hollier",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Himanshu",
+      "surname": "Kumar",
+      "orcid": "0000-0001-5246-2694",
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Antoine",
+      "surname": "Roquilly",
+      "orcid": "0000-0002-1029-6242",
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Jeremie",
+      "surname": "Poschmann",
+      "orcid": "0000-0002-9613-5297",
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Melanie",
+      "surname": "Lehman",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Colleen C",
+      "surname": "Nelson",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff3"
+      ],
+      "corresponding": true,
+      "position": 16
+    },
+    {
+      "given_names": "Debarka",
+      "surname": "Sengupta",
+      "orcid": "0000-0002-6353-5411",
+      "affiliation_ids": [
+        "aff2",
+        "aff4",
+        "aff8"
+      ],
+      "corresponding": true,
+      "position": 17
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Australian Prostate Cancer Research Centre-Queensland, Faculty of Health, School of Biomedical Sciences, Centre for Genomics and Personalised Health, Queensland University of Technology",
+      "department": null,
+      "city": "Brisbane",
+      "country": "Australia",
+      "ror": "03pnv4752"
+    },
+    {
+      "id": "aff2",
+      "institution": "Department of Computer Science and Engineering, Indraprastha Institute of Information Technology-Delhi (IIIT-Delhi), Okhla, Phase III",
+      "department": null,
+      "city": "New Delhi",
+      "country": "India",
+      "ror": "03vfp4g33"
+    },
+    {
+      "id": "aff3",
+      "institution": "Translational Research Institute, Princess Alexandra Hospital",
+      "department": null,
+      "city": "Woolloongabba",
+      "country": "Australia",
+      "ror": "00v807439"
+    },
+    {
+      "id": "aff4",
+      "institution": "Department of Computational Biology, Indraprastha Institute of Information Technology-Delhi (IIIT-Delhi), Okhla, Phase III",
+      "department": null,
+      "city": "New Delhi",
+      "country": "India",
+      "ror": "03vfp4g33"
+    },
+    {
+      "id": "aff5",
+      "institution": "School of Mathematical Sciences, The University of Adelaide",
+      "department": null,
+      "city": "Adelaide",
+      "country": "Australia",
+      "ror": "00892tw58"
+    },
+    {
+      "id": "aff6",
+      "institution": "Center for Computational Biomedicine, Harvard Medical School",
+      "department": null,
+      "city": "Boston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff7",
+      "institution": "Nantes Université, CHU Nantes, INSERM, Center for Research in Transplantation and Translational Immunology, UMR",
+      "department": null,
+      "city": "Nantes",
+      "country": "France",
+      "ror": "01165k395"
+    },
+    {
+      "id": "aff8",
+      "institution": "Centre for Artificial Intelligence, Indraprastha Institute of Information Technology-Delhi (IIIT-Delhi), Okhla, Phase III",
+      "department": null,
+      "city": "New Delhi",
+      "country": "India",
+      "ror": "03vfp4g33"
+    },
+    {
+      "id": "aff9",
+      "institution": "Laboratory of Immunology and Infectious Disease Biology, Department of Biological Sciences, Indian Institute of Science Education and Research (IISER)",
+      "department": null,
+      "city": "Bhopal",
+      "country": "India",
+      "ror": "02rb21j89"
+    },
+    {
+      "id": "aff10",
+      "institution": "Vancouver Prostate Centre, Department of Urologic Sciences, University of British Columbia",
+      "department": null,
+      "city": "Vancouver",
+      "country": "Canada",
+      "ror": "03rmrcq20"
+    }
+  ]
 }

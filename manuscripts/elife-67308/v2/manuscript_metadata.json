@@ -2,5 +2,535 @@
   "doi": "10.7554/eLife.67308",
   "title": "Superspreaders drive the largest outbreaks of hospital onset COVID-19 infections",
   "abstract": "SARS-CoV-2 is notable both for its rapid spread, and for the heterogeneity of its patterns of transmission, with multiple published incidences of superspreading behaviour. Here, we applied a novel network reconstruction algorithm to infer patterns of viral transmission occurring between patients and health care workers (HCWs) in the largest clusters of COVID-19 infection identified during the first wave of the epidemic at Cambridge University Hospitals NHS Foundation Trust, UK. Based upon dates of individuals reporting symptoms, recorded individual locations, and viral genome sequence data, we show an uneven pattern of transmission between individuals, with patients being much more likely to be infected by other patients than by HCWs. Further, the data were consistent with a pattern of superspreading, whereby 21% of individuals caused 80% of transmission events. Our study provides a detailed retrospective analysis of nosocomial SARS-CoV-2 transmission, and sheds light on the need for intensive and pervasive infection control procedures.",
-  "pub_date": "2021-08-24"
+  "pub_date": "2021-08-24",
+  "authors": [
+    {
+      "given_names": "Christopher JR",
+      "surname": "Illingworth",
+      "orcid": "0000-0002-0030-2784",
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "William L",
+      "surname": "Hamilton",
+      "orcid": "0000-0002-3330-353X",
+      "affiliation_ids": [
+        "aff4",
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Ben",
+      "surname": "Warne",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4",
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Matthew",
+      "surname": "Routledge",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5",
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Ashley",
+      "surname": "Popay",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Chris",
+      "surname": "Jackson",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Tom",
+      "surname": "Fieldman",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4",
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Luke W",
+      "surname": "Meredith",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Charlotte J",
+      "surname": "Houldcroft",
+      "orcid": "0000-0002-1833-5285",
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Myra",
+      "surname": "Hosmillo",
+      "orcid": "0000-0002-3514-7681",
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Aminu S",
+      "surname": "Jahun",
+      "orcid": "0000-0002-4585-1701",
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Laura G",
+      "surname": "Caller",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Sarah L",
+      "surname": "Caddy",
+      "orcid": "0000-0002-9790-7420",
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Anna",
+      "surname": "Yakovleva",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Grant",
+      "surname": "Hall",
+      "orcid": "0000-0003-3928-3979",
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Fahad A",
+      "surname": "Khokhar",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4",
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Theresa",
+      "surname": "Feltwell",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Malte L",
+      "surname": "Pinckert",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Iliana",
+      "surname": "Georgana",
+      "orcid": "0000-0002-8976-1177",
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Yasmin",
+      "surname": "Chaudhry",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Martin D",
+      "surname": "Curran",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "Surendra",
+      "surname": "Parmar",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 22
+    },
+    {
+      "given_names": "Dominic",
+      "surname": "Sparkes",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5",
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 23
+    },
+    {
+      "given_names": "Lucy",
+      "surname": "Rivett",
+      "orcid": "0000-0002-2781-9345",
+      "affiliation_ids": [
+        "aff5",
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 24
+    },
+    {
+      "given_names": "Nick K",
+      "surname": "Jones",
+      "orcid": "0000-0003-4475-7761",
+      "affiliation_ids": [
+        "aff5",
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 25
+    },
+    {
+      "given_names": "Sushmita",
+      "surname": "Sridhar",
+      "orcid": "0000-0001-7453-7482",
+      "affiliation_ids": [
+        "aff4",
+        "aff9",
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 26
+    },
+    {
+      "given_names": "Sally",
+      "surname": "Forrest",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 27
+    },
+    {
+      "given_names": "Tom",
+      "surname": "Dymond",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 28
+    },
+    {
+      "given_names": "Kayleigh",
+      "surname": "Grainger",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 29
+    },
+    {
+      "given_names": "Chris",
+      "surname": "Workman",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 30
+    },
+    {
+      "given_names": "Mark",
+      "surname": "Ferris",
+      "orcid": "0000-0001-5040-4263",
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 31
+    },
+    {
+      "given_names": "Effrossyni",
+      "surname": "Gkrania-Klotsas",
+      "orcid": "0000-0002-0930-8330",
+      "affiliation_ids": [
+        "aff5",
+        "aff11",
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 32
+    },
+    {
+      "given_names": "Nicholas M",
+      "surname": "Brown",
+      "orcid": "0000-0002-6657-300X",
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 33
+    },
+    {
+      "given_names": "Michael P",
+      "surname": "Weekes",
+      "orcid": "0000-0003-3196-5545",
+      "affiliation_ids": [
+        "aff4",
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 34
+    },
+    {
+      "given_names": "Stephen",
+      "surname": "Baker",
+      "orcid": "0000-0003-1308-5755",
+      "affiliation_ids": [
+        "aff4",
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 35
+    },
+    {
+      "given_names": "Sharon J",
+      "surname": "Peacock",
+      "orcid": "0000-0002-1718-2782",
+      "affiliation_ids": [
+        "aff4",
+        "aff10",
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 36
+    },
+    {
+      "given_names": "Ian G",
+      "surname": "Goodfellow",
+      "orcid": "0000-0002-9483-510X",
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 37
+    },
+    {
+      "given_names": "Theodore",
+      "surname": "Gouliouris",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4",
+        "aff5",
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 38
+    },
+    {
+      "given_names": "Daniela",
+      "surname": "de Angelis",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2",
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 39
+    },
+    {
+      "given_names": "M Estée",
+      "surname": "Török",
+      "orcid": "0000-0001-9098-8590",
+      "affiliation_ids": [
+        "aff4",
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 40
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "MRC Biostatistics Unit, University of Cambridge, East Forvie Building, Forvie Site, Robinson Way",
+      "department": null,
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Institut für Biologische Physik, Universität zu Köln",
+      "department": null,
+      "city": "Köln",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "Department of Applied Mathematics and Theoretical Physics, Centre for Mathematical Sciences",
+      "department": null,
+      "city": "Cambridge",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "University of Cambridge, Department of Medicine, Cambridge Biomedical Campus",
+      "department": null,
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "Cambridge University Hospitals NHS Foundation Trust, Cambridge Biomedical Campus",
+      "department": null,
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "Public Health England Clinical Microbiology and Public Health Laboratory, Cambridge Biomedical Campus",
+      "department": null,
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff7",
+      "institution": "Public Health England Field Epidemiology Unit, Cambridge Institute of Public Health, Forvie Site, Cambridge Biomedical Campus",
+      "department": null,
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff8",
+      "institution": "University of Cambridge, Department of Pathology, Division of Virology, Cambridge Biomedical Campus",
+      "department": null,
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff9",
+      "institution": "Cambridge Institute for Therapeutic Immunology and Infectious Disease, Jeffrey Cheah Biomedical Centre",
+      "department": null,
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff10",
+      "institution": "Wellcome Sanger Institute, Wellcome Trust Genome Campus",
+      "department": null,
+      "city": "Hinxton",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff11",
+      "institution": "MRC Epidemiology Unit, University of Cambridge, Level 3 Institute of Metabolic Science",
+      "department": null,
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff12",
+      "institution": "University of Cambridge, School of Clinical Medicine, Cambridge Biomedical Campus",
+      "department": null,
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff13",
+      "institution": "Public Health England, National Infection Service",
+      "department": null,
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": null
+    }
+  ]
 }

@@ -1,6 +1,371 @@
 {
   "doi": "10.7554/eLife.70130",
   "title": "Early prediction of clinical response to checkpoint inhibitor therapy in human solid tumors through mathematical modeling",
-  "abstract": "Checkpoint inhibitor therapy of cancer has led to markedly improved survival of a subset of patients in multiple solid malignant tumor types, yet the factors driving these clinical responses or lack thereof are not known. We have developed a mechanistic mathematical model for better understanding these factors and their relations in order to predict treatment outcome and optimize personal treatment strategies. Here, we present a translational mathematical model dependent on three key parameters for describing efficacy of checkpoint inhibitors in human cancer: tumor growth rate ( α ), tumor-immune infiltration ( Λ ), and immunotherapy-mediated amplification of anti-tumor response ( µ ). The model was calibrated by fitting it to a compiled clinical tumor response dataset (n = 189 patients) obtained from published anti-PD-1 and anti-PD-L1 clinical trials, and then validated on an additional validation cohort (n = 64 patients) obtained from our in-house clinical trials. The derived parameters Λ and µ were both significantly different between responding versus nonresponding patients. Of note, our model appropriately classified response in 81.4% of patients by using only tumor volume measurements and within 2 months of treatment initiation in a retrospective analysis. The model reliably predicted clinical response to the PD-1/PD-L1 class of checkpoint inhibitors across multiple solid malignant tumor types. Comparison of model parameters to immunohistochemical measurement of PD-L1 and CD8+ T cells confirmed robust relationships between model parameters and their underlying biology. These results have demonstrated reliable methods to inform model parameters directly from biopsy samples, which are conveniently obtainable as early as the start of treatment. Together, these suggest that the model parameters may serve as early and robust biomarkers of the efficacy of checkpoint inhibitor therapy on an individualized per-patient basis. We gratefully acknowledge support from the Andrew Sabin Family Fellowship, Center for Radiation Oncology Research, Sheikh Ahmed Center for Pancreatic Cancer Research, GE Healthcare, Philips Healthcare, and institutional funds from the University of Texas M.D. Anderson Cancer Center. We have also received Cancer Center Support Grants from the National Cancer Institute (P30CA016672 to the University of Texas M.D. Anderson Cancer Center and P30CA072720 the Rutgers Cancer Institute of New Jersey). This research has also been supported in part by grants from the National Science Foundation Grant DMS-1930583 (ZW, VC), the National Institutes of Health (NIH) 1R01CA253865 (ZW, VC), 1U01CA196403 (ZW, VC), 1U01CA213759 (ZW, VC), 1R01CA226537 (ZW, RP, WA, VC), 1R01CA222007 (ZW, VC), U54CA210181 (ZW, VC), and the University of Texas System STARS Award (VC). BC acknowledges support through the SER Cymru II Programme, funded by the European Commission through the Horizon 2020 Marie Skłodowska-Curie Actions (MSCA) COFUND scheme and the Welsh European Funding Office (WEFO) under the European Regional Development Fund (ERDF). EK has also received support from the Project Purple, NIH (U54CA210181, U01CA200468, and U01CA196403), and the Pancreatic Cancer Action Network (16-65-SING). MF was supported through NIH/NCI center grant U54CA210181, R01CA222959, DoD Breast Cancer Research Breakthrough Level IV Award W81XWH-17-1-0389, and the Ernest Cockrell Jr. Presidential Distinguished Chair at Houston Methodist Research Institute. RP and WA received serial research awards from AngelWorks, the Gillson-Longenbaugh Foundation, and the Marcus Foundation. This work was also supported in part by grants from the National Cancer Institute to SHC (R01CA109322, R01CA127483, R01CA208703, and U54CA210181 CITO pilot grant) and to PYP (R01CA140243, R01CA188610, and U54CA210181 CITO pilot grant). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.",
-  "pub_date": "2021-11-09"
+  "abstract": "Background:Checkpoint inhibitor therapy of cancer has led to markedly improved survival of a subset of patients in multiple solid malignant tumor types, yet the factors driving these clinical responses or lack thereof are not known. We have developed a mechanistic mathematical model for better understanding these factors and their relations in order to predict treatment outcome and optimize personal treatment strategies.Methods:Here, we present a translational mathematical model dependent on three key parameters for describing efficacy of checkpoint inhibitors in human cancer: tumor growth rate (α), tumor-immune infiltration (Λ), and immunotherapy-mediated amplification of anti-tumor response (µ). The model was calibrated by fitting it to a compiled clinical tumor response dataset (n = 189 patients) obtained from published anti-PD-1 and anti-PD-L1 clinical trials, and then validated on an additional validation cohort (n = 64 patients) obtained from our in-house clinical trials.Results:The derived parameters Λ and µ were both significantly different between responding versus nonresponding patients. Of note, our model appropriately classified response in 81.4% of patients by using only tumor volume measurements and within 2 months of treatment initiation in a retrospective analysis. The model reliably predicted clinical response to the PD-1/PD-L1 class of checkpoint inhibitors across multiple solid malignant tumor types. Comparison of model parameters to immunohistochemical measurement of PD-L1 and CD8+ T cells confirmed robust relationships between model parameters and their underlying biology.Conclusions:These results have demonstrated reliable methods to inform model parameters directly from biopsy samples, which are conveniently obtainable as early as the start of treatment. Together, these suggest that the model parameters may serve as early and robust biomarkers of the efficacy of checkpoint inhibitor therapy on an individualized per-patient basis.Funding:We gratefully acknowledge support from the Andrew Sabin Family Fellowship, Center for Radiation Oncology Research, Sheikh Ahmed Center for Pancreatic Cancer Research, GE Healthcare, Philips Healthcare, and institutional funds from the University of Texas M.D. Anderson Cancer Center. We have also received Cancer Center Support Grants from the National Cancer Institute (P30CA016672 to the University of Texas M.D. Anderson Cancer Center and P30CA072720 the Rutgers Cancer Institute of New Jersey). This research has also been supported in part by grants from the National Science Foundation Grant DMS-1930583 (ZW, VC), the National Institutes of Health (NIH) 1R01CA253865 (ZW, VC), 1U01CA196403 (ZW, VC), 1U01CA213759 (ZW, VC), 1R01CA226537 (ZW, RP, WA, VC), 1R01CA222007 (ZW, VC), U54CA210181 (ZW, VC), and the University of Texas System STARS Award (VC). BC acknowledges support through the SER Cymru II Programme, funded by the European Commission through the Horizon 2020 Marie Skłodowska-Curie Actions (MSCA) COFUND scheme and the Welsh European Funding Office (WEFO) under the European Regional Development Fund (ERDF). EK has also received support from the Project Purple, NIH (U54CA210181, U01CA200468, and U01CA196403), and the Pancreatic Cancer Action Network (16-65-SING). MF was supported through NIH/NCI center grant U54CA210181, R01CA222959, DoD Breast Cancer Research Breakthrough Level IV Award W81XWH-17-1-0389, and the Ernest Cockrell Jr. Presidential Distinguished Chair at Houston Methodist Research Institute. RP and WA received serial research awards from AngelWorks, the Gillson-Longenbaugh Foundation, and the Marcus Foundation. This work was also supported in part by grants from the National Cancer Institute to SHC (R01CA109322, R01CA127483, R01CA208703, and U54CA210181 CITO pilot grant) and to PYP (R01CA140243, R01CA188610, and U54CA210181 CITO pilot grant). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.",
+  "pub_date": "2021-11-09",
+  "authors": [
+    {
+      "given_names": "Joseph D",
+      "surname": "Butner",
+      "orcid": "0000-0003-0608-2580",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Geoffrey V",
+      "surname": "Martin",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Zhihui",
+      "surname": "Wang",
+      "orcid": "0000-0001-6262-700X",
+      "affiliation_ids": [
+        "aff1",
+        "aff3"
+      ],
+      "corresponding": true,
+      "position": 3
+    },
+    {
+      "given_names": "Bruna",
+      "surname": "Corradetti",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4",
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Mauro",
+      "surname": "Ferrari",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Nestor",
+      "surname": "Esnaola",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Caroline",
+      "surname": "Chung",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "David S",
+      "surname": "Hong",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "James W",
+      "surname": "Welsh",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Naomi",
+      "surname": "Hasegawa",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Elizabeth A",
+      "surname": "Mittendorf",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Steven A",
+      "surname": "Curley",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Shu-Hsia",
+      "surname": "Chen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Ping-Ying",
+      "surname": "Pan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff11",
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Steven K",
+      "surname": "Libutti",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff13",
+        "aff14"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Shridar",
+      "surname": "Ganesan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Richard L",
+      "surname": "Sidman",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff15"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Renata",
+      "surname": "Pasqualini",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff16",
+        "aff17"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Wadih",
+      "surname": "Arap",
+      "orcid": "0000-0002-8686-4584",
+      "affiliation_ids": [
+        "aff16",
+        "aff18"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Eugene J",
+      "surname": "Koay",
+      "orcid": "0000-0001-7675-3461",
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": true,
+      "position": 20
+    },
+    {
+      "given_names": "Vittorio",
+      "surname": "Cristini",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 21
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Mathematics in Medicine Program, Houston Methodist Research Institute",
+      "department": null,
+      "city": "Houston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Department of Radiation Oncology, The University of Texas M.D. Anderson Cancer Center",
+      "department": null,
+      "city": "Houston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "Department of Imaging Physics, The University of Texas M.D. Anderson Cancer Center",
+      "department": null,
+      "city": "Houston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "Department of Nanomedicine, Houston Methodist Research Institute",
+      "department": null,
+      "city": "Houston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "Swansea University Medical School, Singleton Park",
+      "department": null,
+      "city": "Swansea",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "Department of Surgery, Houston Methodist Cancer Center",
+      "department": null,
+      "city": "Houston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff7",
+      "institution": "Department of Investigational Cancer Therapeutics, The University of Texas M.D. Anderson Cancer Center",
+      "department": null,
+      "city": "Houston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff8",
+      "institution": "University of Texas Health Science Center (UTHealth), McGovern Medical School",
+      "department": null,
+      "city": "Houston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff9",
+      "institution": "Breast Oncology Program, Dana Farber/Brigham and Women's Cancer Center",
+      "department": null,
+      "city": "Boston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff10",
+      "institution": "Michael E. DeBakey Department of Surgery, Baylor College of Medicine",
+      "department": null,
+      "city": "Houston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff11",
+      "institution": "Immunotherapy Research Center, Houston Methodist Research Institute",
+      "department": null,
+      "city": "Houston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff12",
+      "institution": "Cancer Center, Houston Methodist Research Institute",
+      "department": null,
+      "city": "Houston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff13",
+      "institution": "Rutgers Cancer Institute of New Jersey",
+      "department": null,
+      "city": "New Brunswick",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff14",
+      "institution": "Department of Surgery, Rutgers Robert Wood Johnson Medical School",
+      "department": null,
+      "city": "New Brunswick",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff15",
+      "institution": "Department of Neurology, Harvard Medical School",
+      "department": null,
+      "city": "Boston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff16",
+      "institution": "Rutgers Cancer Institute of New Jersey",
+      "department": null,
+      "city": "Newark",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff17",
+      "institution": "Division of Cancer Biology, Department of Radiation Oncology, Rutgers New Jersey Medical School",
+      "department": null,
+      "city": "Newark",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff18",
+      "institution": "Division of Hematology/Oncology, Department of Medicine, Rutgers New Jersey Medical School",
+      "department": null,
+      "city": "Newark",
+      "country": "United States",
+      "ror": null
+    }
+  ]
 }

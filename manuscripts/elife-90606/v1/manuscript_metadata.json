@@ -1,6 +1,162 @@
 {
   "doi": "10.7554/eLife.90606",
   "title": "Automated multiconformer model building for X-ray crystallography and cryo-EM",
-  "abstract": "In their folded state, biomolecules exchange between multiple conformational states that are crucial for their function. Traditional structural biology methods, such as X-ray crystallography and cryogenic electron microscopy (cryo-EM), produce density maps that are ensemble averages, reflecting molecules in various conformations. Yet, most models derived from these maps explicitly represent only a single conformation, overlooking the complexity of biomolecular structures. To accurately reflect the diversity of biomolecular forms, there is a pressing need to shift toward modeling structural ensembles that mirror the experimental data. However, the challenge of distinguishing signal from noise complicates manual efforts to create these models. In response, we introduce the latest enhancements to qFit, an automated computational strategy designed to incorporate protein conformational heterogeneity into models built into density maps. These algorithmic improvements in qFit are substantiated by superior R free and geometry metrics across a wide range of proteins. Importantly, unlike more complex multicopy ensemble models, the multiconformer models produced by qFit can be manually modified in most major model building software (e.g., Coot) and fit can be further improved by refinement using standard pipelines (e.g., Phenix, Refmac, Buster). By reducing the barrier of creating multiconformer models, qFit can foster the development of new hypotheses about the relationship between macromolecular conformational dynamics and function.",
-  "pub_date": "2024-06-21"
+  "abstract": "In their folded state, biomolecules exchange between multiple conformational states that are crucial for their function. Traditional structural biology methods, such as X-ray crystallography and cryogenic electron microscopy (cryo-EM), produce density maps that are ensemble averages, reflecting molecules in various conformations. Yet, most models derived from these maps explicitly represent only a single conformation, overlooking the complexity of biomolecular structures. To accurately reflect the diversity of biomolecular forms, there is a pressing need to shift toward modeling structural ensembles that mirror the experimental data. However, the challenge of distinguishing signal from noise complicates manual efforts to create these models. In response, we introduce the latest enhancements to qFit, an automated computational strategy designed to incorporate protein conformational heterogeneity into models built into density maps. These algorithmic improvements in qFit are substantiated by superior Rfree and geometry metrics across a wide range of proteins. Importantly, unlike more complex multicopy ensemble models, the multiconformer models produced by qFit can be manually modified in most major model building software (e.g., Coot) and fit can be further improved by refinement using standard pipelines (e.g., Phenix, Refmac, Buster). By reducing the barrier of creating multiconformer models, qFit can foster the development of new hypotheses about the relationship between macromolecular conformational dynamics and function.",
+  "pub_date": "2024-06-21",
+  "authors": [
+    {
+      "given_names": "Stephanie A",
+      "surname": "Wankowicz",
+      "orcid": "0000-0002-4225-7459",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Ashraya",
+      "surname": "Ravikumar",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Shivani",
+      "surname": "Sharma",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Blake",
+      "surname": "Riley",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Akshay",
+      "surname": "Raju",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Daniel W",
+      "surname": "Hogan",
+      "orcid": "0000-0003-3375-408X",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Jessica",
+      "surname": "Flowers",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Henry",
+      "surname": "van den Bedem",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Daniel A",
+      "surname": "Keedy",
+      "orcid": "0000-0002-9184-7586",
+      "affiliation_ids": [
+        "aff2",
+        "aff5",
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "James S",
+      "surname": "Fraser",
+      "orcid": "0000-0002-5080-2859",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 10
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Department of Bioengineering and Therapeutic Sciences, University of California, San Francisco",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": "043mz5j54"
+    },
+    {
+      "id": "aff2",
+      "institution": "Structural Biology Initiative, CUNY Advanced Science Research Center",
+      "department": null,
+      "city": "New York",
+      "country": "United States",
+      "ror": "01gdjt538"
+    },
+    {
+      "id": "aff3",
+      "institution": "Ph.D. Program in Biology, The Graduate Center, City University of New York",
+      "department": null,
+      "city": "New York",
+      "country": "United States",
+      "ror": "00453a208"
+    },
+    {
+      "id": "aff4",
+      "institution": "Atomwise Inc",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "Department of Chemistry and Biochemistry, City College of New York",
+      "department": null,
+      "city": "New York",
+      "country": "United States",
+      "ror": "00wmhkr98"
+    },
+    {
+      "id": "aff6",
+      "institution": "Ph.D. Programs in Biochemistry, Biology and Chemistry, The Graduate Center, City University of New York",
+      "department": null,
+      "city": "New York",
+      "country": "United States",
+      "ror": "00453a208"
+    }
+  ]
 }

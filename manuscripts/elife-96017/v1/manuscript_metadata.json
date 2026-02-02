@@ -2,5 +2,361 @@
   "doi": "10.7554/eLife.96017",
   "title": "A deep learning approach for automated scoring of the Rey–Osterrieth complex figure",
   "abstract": "Memory deficits are a hallmark of many different neurological and psychiatric conditions. The Rey–Osterrieth complex figure (ROCF) is the state-of-the-art assessment tool for neuropsychologists across the globe to assess the degree of non-verbal visual memory deterioration. To obtain a score, a trained clinician inspects a patient’s ROCF drawing and quantifies deviations from the original figure. This manual procedure is time-consuming, slow and scores vary depending on the clinician’s experience, motivation, and tiredness. Here, we leverage novel deep learning architectures to automatize the rating of memory deficits. For this, we collected more than 20k hand-drawn ROCF drawings from patients with various neurological and psychiatric disorders as well as healthy participants. Unbiased ground truth ROCF scores were obtained from crowdsourced human intelligence. This dataset was used to train and evaluate a multihead convolutional neural network. The model performs highly unbiased as it yielded predictions very close to the ground truth and the error was similarly distributed around zero. The neural network outperforms both online raters and clinicians. The scoring system can reliably identify and accurately score individual figure elements in previously unseen ROCF drawings, which facilitates explainability of the AI-scoring system. To ensure generalizability and clinical utility, the model performance was successfully replicated in a large independent prospective validation study that was pre-registered prior to data collection. Our AI-powered scoring system provides healthcare institutions worldwide with a digital tool to assess objectively, reliably, and time-efficiently the performance in the ROCF test from hand-drawn images.",
-  "pub_date": "2024-11-28"
+  "pub_date": "2024-11-28",
+  "authors": [
+    {
+      "given_names": "Nicolas",
+      "surname": "Langer",
+      "orcid": "0000-0002-6038-9471",
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Maurice",
+      "surname": "Weber",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Bruno",
+      "surname": "Hebling Vieira",
+      "orcid": "0000-0002-8770-7396",
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Dawid",
+      "surname": "Strzelczyk",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Lukas",
+      "surname": "Wolf",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Andreas",
+      "surname": "Pedroni",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Jonathan",
+      "surname": "Heitz",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Stephan",
+      "surname": "Müller",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Christoph",
+      "surname": "Schultheiss",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Marius",
+      "surname": "Troendle",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Juan Carlos Arango",
+      "surname": "Lasprilla",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Diego",
+      "surname": "Rivera",
+      "orcid": "0000-0001-7477-1893",
+      "affiliation_ids": [
+        "aff6",
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Federica",
+      "surname": "Scarpina",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8",
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Qianhua",
+      "surname": "Zhao",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Rico",
+      "surname": "Leuthold",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Flavia",
+      "surname": "Wehrle",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Oskar",
+      "surname": "Jenni",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Peter",
+      "surname": "Brugger",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Tino",
+      "surname": "Zaehle",
+      "orcid": "0000-0003-3673-4869",
+      "affiliation_ids": [
+        "aff14"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Romy",
+      "surname": "Lorenz",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff15",
+        "aff16"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Ce",
+      "surname": "Zhang",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 21
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Methods of Plasticity Research, Department of Psychology, University of Zurich",
+      "department": null,
+      "city": "Zurich",
+      "country": "Switzerland",
+      "ror": "02crff812"
+    },
+    {
+      "id": "aff2",
+      "institution": "University Research Priority Program (URPP) Dynamics of Healthy Aging",
+      "department": null,
+      "city": "Zurich",
+      "country": "Switzerland",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "Neuroscience Center Zurich (ZNZ), University of Zurich and ETH Zurich",
+      "department": null,
+      "city": "Zurich",
+      "country": "Switzerland",
+      "ror": "02crff812"
+    },
+    {
+      "id": "aff4",
+      "institution": "Department of Computer Science, ETH Zurich",
+      "department": null,
+      "city": "Zurich",
+      "country": "Switzerland",
+      "ror": "05a28rw58"
+    },
+    {
+      "id": "aff5",
+      "institution": "Virginia Commonwealth University",
+      "department": null,
+      "city": "Richmond",
+      "country": "United States",
+      "ror": "02nkdxk79"
+    },
+    {
+      "id": "aff6",
+      "institution": "Department of Health Science, Public University of Navarre",
+      "department": null,
+      "city": "Pamplona",
+      "country": "Spain",
+      "ror": "02z0cah89"
+    },
+    {
+      "id": "aff7",
+      "institution": "Instituto de Investigación Sanitaria de Navarra (IdiSNA)",
+      "department": null,
+      "city": "Pamplona",
+      "country": "Spain",
+      "ror": "023d5h353"
+    },
+    {
+      "id": "aff8",
+      "institution": "'Rita Levi Montalcini' Department of Neurosciences, University of Turin",
+      "department": null,
+      "city": "Turin",
+      "country": "Italy",
+      "ror": "048tbm396"
+    },
+    {
+      "id": "aff9",
+      "institution": "IRCCS Istituto Auxologico Italiano, UO di Neurologia e Neuroriabilitazione, Ospedale San Giuseppe",
+      "department": null,
+      "city": "Piancavallo",
+      "country": "Italy",
+      "ror": "033qpss18"
+    },
+    {
+      "id": "aff10",
+      "institution": "Huashan Hospital",
+      "department": null,
+      "city": "Shanghai",
+      "country": "China",
+      "ror": "05201qm87"
+    },
+    {
+      "id": "aff11",
+      "institution": "Smartcode",
+      "department": null,
+      "city": "Zurich",
+      "country": "Switzerland",
+      "ror": null
+    },
+    {
+      "id": "aff12",
+      "institution": "University Children's Hospital Zurich, Child Development Center",
+      "department": null,
+      "city": "Zurich",
+      "country": "Switzerland",
+      "ror": "035vb3h42"
+    },
+    {
+      "id": "aff13",
+      "institution": "Rehabilitation Center",
+      "department": null,
+      "city": "Valens",
+      "country": "Switzerland",
+      "ror": null
+    },
+    {
+      "id": "aff14",
+      "institution": "University Hospital Magdeburg University Department of Neurology",
+      "department": null,
+      "city": "Magdeburg",
+      "country": "Germany",
+      "ror": "03m04df46"
+    },
+    {
+      "id": "aff15",
+      "institution": "Max Planck Institute for Biological Cybernetics",
+      "department": null,
+      "city": "Tübingen",
+      "country": "Germany",
+      "ror": "026nmvv73"
+    },
+    {
+      "id": "aff16",
+      "institution": "Max Planck Institute for Human Cognitive and Brain Sciences",
+      "department": null,
+      "city": "Leipzig",
+      "country": "Germany",
+      "ror": "0387jng26"
+    }
+  ]
 }

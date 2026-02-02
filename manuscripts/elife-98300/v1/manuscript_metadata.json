@@ -2,5 +2,146 @@
   "doi": "10.7554/eLife.98300",
   "title": "Benchmarking reveals superiority of deep learning variant callers on bacterial nanopore sequence data",
   "abstract": "Variant calling is fundamental in bacterial genomics, underpinning the identification of disease transmission clusters, the construction of phylogenetic trees, and antimicrobial resistance detection. This study presents a comprehensive benchmarking of variant calling accuracy in bacterial genomes using Oxford Nanopore Technologies (ONT) sequencing data. We evaluated three ONT basecalling models and both simplex (single-strand) and duplex (dual-strand) read types across 14 diverse bacterial species. Our findings reveal that deep learning-based variant callers, particularly Clair3 and DeepVariant, significantly outperform traditional methods and even exceed the accuracy of Illumina sequencing, especially when applied to ONT’s super-high accuracy model. ONT’s superior performance is attributed to its ability to overcome Illumina’s errors, which often arise from difficulties in aligning reads in repetitive and variant-dense genomic regions. Moreover, the use of high-performing variant callers with ONT’s super-high accuracy data mitigates ONT’s traditional errors in homopolymers. We also investigated the impact of read depth on variant calling, demonstrating that 10× depth of ONT super-accuracy data can achieve precision and recall comparable to, or better than, full-depth Illumina sequencing. These results underscore the potential of ONT sequencing, combined with advanced variant calling algorithms, to replace traditional short-read sequencing methods in bacterial genomics, particularly in resource-limited settings.",
-  "pub_date": "2024-10-10"
+  "pub_date": "2024-10-10",
+  "authors": [
+    {
+      "given_names": "Michael B",
+      "surname": "Hall",
+      "orcid": "0000-0003-3683-6208",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Ryan R",
+      "surname": "Wick",
+      "orcid": "0000-0001-8349-0778",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Louise M",
+      "surname": "Judd",
+      "orcid": "0000-0003-3613-4839",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "An N",
+      "surname": "Nguyen",
+      "orcid": "0000-0003-4893-6636",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Eike J",
+      "surname": "Steinig",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Ouli",
+      "surname": "Xie",
+      "orcid": "0000-0002-5032-1932",
+      "affiliation_ids": [
+        "aff3",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Mark",
+      "surname": "Davies",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Torsten",
+      "surname": "Seemann",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Timothy P",
+      "surname": "Stinear",
+      "orcid": "0000-0003-0150-123X",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Lachlan",
+      "surname": "Coin",
+      "orcid": "0000-0002-4300-455X",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 10
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Department of Microbiology and Immunology, The University of Melbourne, at the Peter Doherty Institute for Infection and Immunity",
+      "department": null,
+      "city": "Melbourne",
+      "country": "Australia",
+      "ror": "01ej9dk98"
+    },
+    {
+      "id": "aff2",
+      "institution": "Centre for Pathogen Genomics, The University of Melbourne",
+      "department": null,
+      "city": "Melbourne",
+      "country": "Australia",
+      "ror": "01ej9dk98"
+    },
+    {
+      "id": "aff3",
+      "institution": "Department of Infectious Diseases, The University of Melbourne, at the Peter Doherty Institute for Infection and Immunity",
+      "department": null,
+      "city": "Melbourne",
+      "country": "Australia",
+      "ror": "01ej9dk98"
+    },
+    {
+      "id": "aff4",
+      "institution": "Monash Infectious Diseases, Monash Health",
+      "department": null,
+      "city": "Melbourne",
+      "country": "Australia",
+      "ror": "02t1bej08"
+    }
+  ]
 }

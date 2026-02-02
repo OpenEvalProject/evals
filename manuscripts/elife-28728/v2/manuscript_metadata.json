@@ -1,6 +1,330 @@
 {
   "doi": "10.7554/eLife.28728",
   "title": "Efficient and accurate extraction of in vivo calcium signals from microendoscopic video data",
-  "abstract": "10.7554/eLife.28728.001 In vivo calcium imaging through microendoscopic lenses enables imaging of previously inaccessible neuronal populations deep within the brains of freely moving animals. However, it is computationally challenging to extract single-neuronal activity from microendoscopic data, because of the very large background fluctuations and high spatial overlaps intrinsic to this recording modality. Here, we describe a new constrained matrix factorization approach to accurately separate the background and then demix and denoise the neuronal signals of interest. We compared the proposed method against previous independent components analysis and constrained nonnegative matrix factorization approaches. On both simulated and experimental data recorded from mice, our method substantially improved the quality of extracted cellular signals and detected more well-isolated neural signals, especially in noisy data regimes. These advances can in turn significantly enhance the statistical power of downstream analyses, and ultimately improve scientific conclusions derived from microendoscopic data.",
-  "pub_date": "2018-02-22"
+  "abstract": "In vivo calcium imaging through microendoscopic lenses enables imaging of previously inaccessible neuronal populations deep within the brains of freely moving animals. However, it is computationally challenging to extract single-neuronal activity from microendoscopic data, because of the very large background fluctuations and high spatial overlaps intrinsic to this recording modality. Here, we describe a new constrained matrix factorization approach to accurately separate the background and then demix and denoise the neuronal signals of interest. We compared the proposed method against previous independent components analysis and constrained nonnegative matrix factorization approaches. On both simulated and experimental data recorded from mice, our method substantially improved the quality of extracted cellular signals and detected more well-isolated neural signals, especially in noisy data regimes. These advances can in turn significantly enhance the statistical power of downstream analyses, and ultimately improve scientific conclusions derived from microendoscopic data.",
+  "pub_date": "2018-02-22",
+  "authors": [
+    {
+      "given_names": "Pengcheng",
+      "surname": "Zhou",
+      "orcid": "0000-0003-1237-3931",
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3",
+        "aff4",
+        "aff5"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Shanna L",
+      "surname": "Resendez",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Jose",
+      "surname": "Rodriguez-Romaguera",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Jessica C",
+      "surname": "Jimenez",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7",
+        "aff8",
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Shay Q",
+      "surname": "Neufeld",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Andrea",
+      "surname": "Giovannucci",
+      "orcid": "0000-0002-7850-444X",
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Johannes",
+      "surname": "Friedrich",
+      "orcid": "0000-0002-1321-5866",
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Eftychios A",
+      "surname": "Pnevmatikakis",
+      "orcid": "0000-0003-1509-6394",
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Garret D",
+      "surname": "Stuber",
+      "orcid": "0000-0003-1730-4855",
+      "affiliation_ids": [
+        "aff6",
+        "aff12",
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Rene",
+      "surname": "Hen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7",
+        "aff8",
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Mazen A",
+      "surname": "Kheirbek",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff14",
+        "aff15",
+        "aff16",
+        "aff17"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Bernardo L",
+      "surname": "Sabatini",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Robert E",
+      "surname": "Kass",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff3",
+        "aff18"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Liam",
+      "surname": "Paninski",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2",
+        "aff4",
+        "aff5",
+        "aff7",
+        "aff19",
+        "aff20"
+      ],
+      "corresponding": false,
+      "position": 14
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Carnegie Mellon University",
+      "department": "Center for the Neural Basis of Cognition",
+      "city": "Pittsburgh",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Columbia University",
+      "department": "Department of Statistics",
+      "city": "New York",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "Carnegie Mellon University",
+      "department": "Machine Learning Department",
+      "city": "Pittsburgh",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "Columbia University",
+      "department": "Grossman Center for the Statistics of Mind",
+      "city": "New York",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "Columbia University",
+      "department": "Center for Theoretical Neuroscience",
+      "city": "New York",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "University of North Carolina at Chapel Hill",
+      "department": "Department of Psychiatry",
+      "city": "Chapel Hill",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff7",
+      "institution": "Columbia University",
+      "department": "Department of Neuroscience",
+      "city": "New York",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff8",
+      "institution": "New York State Psychiatric Institute",
+      "department": "Division of Integrative Neuroscience, Department of Psychiatry",
+      "city": "New York",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff9",
+      "institution": "Columbia University",
+      "department": "Department of Psychiatry & Pharmacology",
+      "city": "New York",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff10",
+      "institution": "Harvard Medical School, Howard Hughes Medical Institute",
+      "department": "Department of Neurobiology",
+      "city": "Boston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff11",
+      "institution": "Flatiron Institute, Simons Foundation",
+      "department": "Center for Computational Biology",
+      "city": "New York",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff12",
+      "institution": "University of North Carolina at Chapel Hill",
+      "department": "Department of Cell Biology and Physiology",
+      "city": "Chapel Hill",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff13",
+      "institution": "University of North Carolina at Chapel Hill",
+      "department": "Neuroscience Center",
+      "city": "Chapel Hill",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff14",
+      "institution": "University of California, San Francisco",
+      "department": "Weill Institute for Neurosciences",
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff15",
+      "institution": "University of California",
+      "department": "Neuroscience Graduate Program",
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff16",
+      "institution": "University of California, San Francisco",
+      "department": "Kavli Institute for Fundamental Neuroscience",
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff17",
+      "institution": "University of California, San Francisco",
+      "department": "Department of Psychiatry",
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff18",
+      "institution": "Carnegie Mellon University",
+      "department": "Department of Statistics",
+      "city": "Pittsburgh",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff19",
+      "institution": "Columbia University",
+      "department": "Kavli Institute for Brain Science",
+      "city": "New York",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff20",
+      "institution": "Columbia University",
+      "department": "Neurotechnology Center",
+      "city": "New York",
+      "country": "United States",
+      "ror": null
+    }
+  ]
 }

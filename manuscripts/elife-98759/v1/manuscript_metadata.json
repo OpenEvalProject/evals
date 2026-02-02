@@ -1,6 +1,177 @@
 {
   "doi": "10.7554/eLife.98759",
   "title": "Predictive models for secondary epilepsy in patients with acute ischemic stroke within one year",
-  "abstract": "Post-stroke epilepsy (PSE) is a critical complication that worsens both prognosis and quality of life in patients with ischemic stroke. An interpretable machine learning model was developed to predict PSE using medical records from four hospitals in Chongqing. Medical records, imaging reports, and laboratory test results from 21,459 ischemic stroke patients were collected and analyzed. Univariable and multivariable statistical analyses identified key predictive factors. The dataset was split into a 70% training set and a 30% testing set. To address the class imbalance, the Synthetic Minority Oversampling Technique combined with Edited Nearest Neighbors was employed. Nine widely used machine learning algorithms were evaluated using relevant prediction metrics, with SHAP (SHapley Additive exPlanations) used to interpret the model and assess the contributions of different features. Regression analyses revealed that complications such as hydrocephalus, cerebral hernia, and deep vein thrombosis, as well as specific brain regions (frontal, parietal, and temporal lobes), significantly contributed to PSE. Factors such as age, gender, NIH Stroke Scale (NIHSS) scores, and laboratory results like WBC count and D-dimer levels were associated with increased PSE risk. Tree-based methods like Random Forest, XGBoost, and LightGBM showed strong predictive performance, achieving an AUC of 0.99. The model accurately predicts PSE risk, with tree-based models demonstrating superior performance. NIHSS score, WBC count, and D-dimer were identified as the most crucial predictors. The research is funded by Central University basic research young teachers and students research ability promotion sub-projec t(2023CDJYGRH-ZD06), and by Emergency Medicine Chongqing Key Laboratory Talent Innovation and development joint fund project (2024RCCX10).",
-  "pub_date": "2024-11-14"
+  "abstract": "Background:Post-stroke epilepsy (PSE) is a critical complication that worsens both prognosis and quality of life in patients with ischemic stroke. An interpretable machine learning model was developed to predict PSE using medical records from four hospitals in Chongqing.Methods:Medical records, imaging reports, and laboratory test results from 21,459 ischemic stroke patients were collected and analyzed. Univariable and multivariable statistical analyses identified key predictive factors. The dataset was split into a 70% training set and a 30% testing set. To address the class imbalance, the Synthetic Minority Oversampling Technique combined with Edited Nearest Neighbors was employed. Nine widely used machine learning algorithms were evaluated using relevant prediction metrics, with SHAP (SHapley Additive exPlanations) used to interpret the model and assess the contributions of different features.Results:Regression analyses revealed that complications such as hydrocephalus, cerebral hernia, and deep vein thrombosis, as well as specific brain regions (frontal, parietal, and temporal lobes), significantly contributed to PSE. Factors such as age, gender, NIH Stroke Scale (NIHSS) scores, and laboratory results like WBC count and D-dimer levels were associated with increased PSE risk. Tree-based methods like Random Forest, XGBoost, and LightGBM showed strong predictive performance, achieving an AUC of 0.99.Conclusions:The model accurately predicts PSE risk, with tree-based models demonstrating superior performance. NIHSS score, WBC count, and D-dimer were identified as the most crucial predictors.Funding:The research is funded by Central University basic research young teachers and students research ability promotion sub-projec t(2023CDJYGRH-ZD06), and by Emergency Medicine Chongqing Key Laboratory Talent Innovation and development joint fund project (2024RCCX10).",
+  "pub_date": "2024-11-14",
+  "authors": [
+    {
+      "given_names": "Jinxin",
+      "surname": "Liu",
+      "orcid": "0009-0003-8923-2536",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Haoyue",
+      "surname": "He",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Yanglingxi",
+      "surname": "Wang",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Jun",
+      "surname": "Du",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Kaixin",
+      "surname": "Liang",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Jun",
+      "surname": "Xue",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Yidan",
+      "surname": "Liang",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Peng",
+      "surname": "Chen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Shanshan",
+      "surname": "Tian",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": true,
+      "position": 9
+    },
+    {
+      "given_names": "Yongbing",
+      "surname": "Deng",
+      "orcid": "0000-0002-8581-5748",
+      "affiliation_ids": [
+        "aff1",
+        "aff7",
+        "aff8"
+      ],
+      "corresponding": true,
+      "position": 10
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Department of Neurosurgery, Chongqing Emergency Medical Center, Chongqing University Central Hospital, School of Medicine, Chongqing University",
+      "department": null,
+      "city": "Chongqing",
+      "country": "China",
+      "ror": "023rhb549"
+    },
+    {
+      "id": "aff2",
+      "institution": "Bioengineering College of Chongqing University",
+      "department": null,
+      "city": "Chongqing",
+      "country": "China",
+      "ror": "023rhb549"
+    },
+    {
+      "id": "aff3",
+      "institution": "Department of Neurosurgery, Chongqing University Qianjiang Hospital",
+      "department": null,
+      "city": "Chongqing",
+      "country": "China",
+      "ror": "023rhb549"
+    },
+    {
+      "id": "aff4",
+      "institution": "Department of Neurosurgery, Yubei District Hospital of Traditional Chinese Medicine",
+      "department": null,
+      "city": "Chongqing",
+      "country": "China",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "Department of Neurosurgery, Bishan hospital of Chongqing Medical University",
+      "department": null,
+      "city": "Chongqing",
+      "country": "China",
+      "ror": "017z00e58"
+    },
+    {
+      "id": "aff6",
+      "institution": "Department of Prehospital Emergency, Chongqing University Central Hospital, Chongqing Emergency Medical Center",
+      "department": null,
+      "city": "Chongqing",
+      "country": "China",
+      "ror": "023rhb549"
+    },
+    {
+      "id": "aff7",
+      "institution": "Chongqing Key Laboratory of Emergency Medicine",
+      "department": null,
+      "city": "Chongqing",
+      "country": "China",
+      "ror": null
+    },
+    {
+      "id": "aff8",
+      "institution": "Jinfeng Laboratory",
+      "department": null,
+      "city": "Chongqing",
+      "country": "China",
+      "ror": null
+    }
+  ]
 }

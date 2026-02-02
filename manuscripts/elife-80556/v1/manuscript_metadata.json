@@ -1,6 +1,851 @@
 {
   "doi": "10.7554/eLife.80556",
   "title": "An international observational study to assess the impact of the Omicron variant emergence on the clinical epidemiology of COVID-19 in hospitalised patients",
-  "abstract": "Whilst timely clinical characterisation of infections caused by novel SARS-CoV-2 variants is necessary for evidence-based policy response, individual-level data on infecting variants are typically only available for a minority of patients and settings. Here, we propose an innovative approach to study changes in COVID-19 hospital presentation and outcomes after the Omicron variant emergence using publicly available population-level data on variant relative frequency to infer SARS-CoV-2 variants likely responsible for clinical cases. We apply this method to data collected by a large international clinical consortium before and after the emergence of the Omicron variant in different countries. Our analysis, that includes more than 100,000 patients from 28 countries, suggests that in many settings patients hospitalised with Omicron variant infection less often presented with commonly reported symptoms compared to patients infected with pre-Omicron variants. Patients with COVID-19 admitted to hospital after Omicron variant emergence had lower mortality compared to patients admitted during the period when Omicron variant was responsible for only a minority of infections (odds ratio in a mixed-effects logistic regression adjusted for likely confounders, 0.67 [95% confidence interval 0.61–0.75]). Qualitatively similar findings were observed in sensitivity analyses with different assumptions on population-level Omicron variant relative frequencies, and in analyses using available individual-level data on infecting variant for a subset of the study population. Although clinical studies with matching viral genomic information should remain a priority, our approach combining publicly available data on variant frequency and a multi-country clinical characterisation dataset with more than 100,000 records allowed analysis of data from a wide range of settings and novel insights on real-world heterogeneity of COVID-19 presentation and clinical outcome. Bronner P. Gonçalves, Peter Horby, Gail Carson, Piero L. Olliaro, Valeria Balan, Barbara Wanjiru Citarella, and research costs were supported by the UK Foreign, Commonwealth and Development Office (FCDO) and Wellcome [215091/Z/18/Z, 222410/Z/21/Z, 225288/Z/22/Z]; and Janice Caoili and Madiha Hashmi were supported by the UK FCDO and Wellcome [222048/Z/20/Z]. Peter Horby, Gail Carson, Piero L. Olliaro, Kalynn Kennon and Joaquin Baruch were supported by the Bill & Melinda Gates Foundation [OPP1209135]; Laura Merson was supported by University of Oxford’s COVID-19 Research Response Fund - with thanks to its donors for their philanthropic support. Matthew Hall was supported by a Li Ka Shing Foundation award to Christophe Fraser. Moritz U.G. Kraemer was supported by the Branco Weiss Fellowship, Google.org, the Oxford Martin School, the Rockefeller Foundation, and the European Union Horizon 2020 project MOOD (#874850). The contents of this publication are the sole responsibility of the authors and do not necessarily reflect the views of the European Commission. Contributions from Srinivas Murthy, Asgar Rishu, Rob Fowler, James Joshua Douglas, François Martin Carrier were supported by CIHR Coronavirus Rapid Research Funding Opportunity OV2170359 and coordinated out of Sunnybrook Research Institute. Contributions from Evert-Jan Wils and David S.Y. Ong were supported by a grant from foundation Bevordering Onderzoek Franciscus; and Andrea Angheben by the Italian Ministry of Health “Fondi Ricerca corrente–L1P6” to IRCCS Ospedale Sacro Cuore–Don Calabria. The data contributions of J.Kenneth Baillie, Malcolm G. Semple, and Ewen M. Harrison were supported by grants from the National Institute for Health Research (NIHR; award CO-CIN-01), the Medical Research Council (MRC; grant MC_PC_19059), and by the NIHR Health Protection Research Unit (HPRU) in Emerging and Zoonotic Infections at University of Liverpool in partnership with Public Health England (PHE) (award 200907), NIHR HPRU in Respiratory Infections at Imperial College London with PHE (award 200927), Liverpool Experimental Cancer Medicine Centre (grant C18616/A25153), NIHR Biomedical Research Centre at Imperial College London (award IS-BRC-1215-20013), and NIHR Clinical Research Network providing infrastructure support. All funders of the ISARIC Clinical Characterisation Group are listed in the appendix.",
-  "pub_date": "2022-10-05"
+  "abstract": "Background:Whilst timely clinical characterisation of infections caused by novel SARS-CoV-2 variants is necessary for evidence-based policy response, individual-level data on infecting variants are typically only available for a minority of patients and settings.Methods:Here, we propose an innovative approach to study changes in COVID-19 hospital presentation and outcomes after the Omicron variant emergence using publicly available population-level data on variant relative frequency to infer SARS-CoV-2 variants likely responsible for clinical cases. We apply this method to data collected by a large international clinical consortium before and after the emergence of the Omicron variant in different countries.Results:Our analysis, that includes more than 100,000 patients from 28 countries, suggests that in many settings patients hospitalised with Omicron variant infection less often presented with commonly reported symptoms compared to patients infected with pre-Omicron variants. Patients with COVID-19 admitted to hospital after Omicron variant emergence had lower mortality compared to patients admitted during the period when Omicron variant was responsible for only a minority of infections (odds ratio in a mixed-effects logistic regression adjusted for likely confounders, 0.67 [95% confidence interval 0.61–0.75]). Qualitatively similar findings were observed in sensitivity analyses with different assumptions on population-level Omicron variant relative frequencies, and in analyses using available individual-level data on infecting variant for a subset of the study population.Conclusions:Although clinical studies with matching viral genomic information should remain a priority, our approach combining publicly available data on variant frequency and a multi-country clinical characterisation dataset with more than 100,000 records allowed analysis of data from a wide range of settings and novel insights on real-world heterogeneity of COVID-19 presentation and clinical outcome.Funding:Bronner P. Gonçalves, Peter Horby, Gail Carson, Piero L. Olliaro, Valeria Balan, Barbara Wanjiru Citarella, and research costs were supported by the UK Foreign, Commonwealth and Development Office (FCDO) and Wellcome [215091/Z/18/Z, 222410/Z/21/Z, 225288/Z/22/Z]; and Janice Caoili and Madiha Hashmi were supported by the UK FCDO and Wellcome [222048/Z/20/Z]. Peter Horby, Gail Carson, Piero L. Olliaro, Kalynn Kennon and Joaquin Baruch were supported by the Bill & Melinda Gates Foundation [OPP1209135]; Laura Merson was supported by University of Oxford’s COVID-19 Research Response Fund - with thanks to its donors for their philanthropic support. Matthew Hall was supported by a Li Ka Shing Foundation award to Christophe Fraser. Moritz U.G. Kraemer was supported by the Branco Weiss Fellowship, Google.org, the Oxford Martin School, the Rockefeller Foundation, and the European Union Horizon 2020 project MOOD (#874850). The contents of this publication are the sole responsibility of the authors and do not necessarily reflect the views of the European Commission. Contributions from Srinivas Murthy, Asgar Rishu, Rob Fowler, James Joshua Douglas, François Martin Carrier were supported by CIHR Coronavirus Rapid Research Funding Opportunity OV2170359 and coordinated out of Sunnybrook Research Institute. Contributions from Evert-Jan Wils and David S.Y. Ong were supported by a grant from foundation Bevordering Onderzoek Franciscus; and Andrea Angheben by the Italian Ministry of Health “Fondi Ricerca corrente–L1P6” to IRCCS Ospedale Sacro Cuore–Don Calabria. The data contributions of J.Kenneth Baillie, Malcolm G. Semple, and Ewen M. Harrison were supported by grants from the National Institute for Health Research (NIHR; award CO-CIN-01), the Medical Research Council (MRC; grant MC_PC_19059), and by the NIHR Health Protection Research Unit (HPRU) in Emerging and Zoonotic Infections at University of Liverpool in partnership with Public Health England (PHE) (award 200907), NIHR HPRU in Respiratory Infections at Imperial College London with PHE (award 200927), Liverpool Experimental Cancer Medicine Centre (grant C18616/A25153), NIHR Biomedical Research Centre at Imperial College London (award IS-BRC-1215-20013), and NIHR Clinical Research Network providing infrastructure support. All funders of the ISARIC Clinical Characterisation Group are listed in the appendix.",
+  "pub_date": "2022-10-05",
+  "authors": [
+    {
+      "given_names": "Bronner P",
+      "surname": "Gonçalves",
+      "orcid": "0000-0002-3329-6050",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Matthew",
+      "surname": "Hall",
+      "orcid": "0000-0002-2671-3864",
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Waasila",
+      "surname": "Jassat",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Valeria",
+      "surname": "Balan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Srinivas",
+      "surname": "Murthy",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Christiana",
+      "surname": "Kartsonaki",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Malcolm G",
+      "surname": "Semple",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6",
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Amanda",
+      "surname": "Rojek",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff8",
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Joaquín",
+      "surname": "Baruch",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Luis Felipe",
+      "surname": "Reyes",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff10",
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Abhishek",
+      "surname": "Dasgupta",
+      "orcid": "0000-0003-4420-0656",
+      "affiliation_ids": [
+        "aff12",
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Jake",
+      "surname": "Dunning",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Barbara Wanjiru",
+      "surname": "Citarella",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Mark",
+      "surname": "Pritchard",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Alejandro",
+      "surname": "Martín-Quiros",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff14"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Uluhan",
+      "surname": "Sili",
+      "orcid": "0000-0002-9939-9298",
+      "affiliation_ids": [
+        "aff15"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "J Kenneth",
+      "surname": "Baillie",
+      "orcid": "0000-0001-5258-793X",
+      "affiliation_ids": [
+        "aff16",
+        "aff17"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Diptesh",
+      "surname": "Aryal",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff18"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Yaseen",
+      "surname": "Arabi",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff19"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Aasiyah",
+      "surname": "Rashan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff20"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Andrea",
+      "surname": "Angheben",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff21"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "Janice",
+      "surname": "Caoili",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff22"
+      ],
+      "corresponding": false,
+      "position": 22
+    },
+    {
+      "given_names": "François Martin",
+      "surname": "Carrier",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff23",
+        "aff24",
+        "aff25",
+        "aff26"
+      ],
+      "corresponding": false,
+      "position": 23
+    },
+    {
+      "given_names": "Ewen M",
+      "surname": "Harrison",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff27"
+      ],
+      "corresponding": false,
+      "position": 24
+    },
+    {
+      "given_names": "Joan",
+      "surname": "Gómez-Junyent",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff28"
+      ],
+      "corresponding": false,
+      "position": 25
+    },
+    {
+      "given_names": "Claudia",
+      "surname": "Figueiredo-Mello",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff29"
+      ],
+      "corresponding": false,
+      "position": 26
+    },
+    {
+      "given_names": "James Joshua",
+      "surname": "Douglas",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff30"
+      ],
+      "corresponding": false,
+      "position": 27
+    },
+    {
+      "given_names": "Mohd Basri",
+      "surname": "Mat Nor",
+      "orcid": "0000-0002-5433-6357",
+      "affiliation_ids": [
+        "aff31"
+      ],
+      "corresponding": false,
+      "position": 28
+    },
+    {
+      "given_names": "Yock Ping",
+      "surname": "Chow",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff32"
+      ],
+      "corresponding": false,
+      "position": 29
+    },
+    {
+      "given_names": "Xin Ci",
+      "surname": "Wong",
+      "orcid": "0000-0002-1036-8023",
+      "affiliation_ids": [
+        "aff33"
+      ],
+      "corresponding": false,
+      "position": 30
+    },
+    {
+      "given_names": "Silvia",
+      "surname": "Bertagnolio",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff34"
+      ],
+      "corresponding": false,
+      "position": 31
+    },
+    {
+      "given_names": "Soe Soe",
+      "surname": "Thwin",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff34"
+      ],
+      "corresponding": false,
+      "position": 32
+    },
+    {
+      "given_names": "Anca",
+      "surname": "Streinu-Cercel",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff35",
+        "aff36"
+      ],
+      "corresponding": false,
+      "position": 33
+    },
+    {
+      "given_names": "Leonardo",
+      "surname": "Salazar",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff37"
+      ],
+      "corresponding": false,
+      "position": 34
+    },
+    {
+      "given_names": "Asgar",
+      "surname": "Rishu",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff38"
+      ],
+      "corresponding": false,
+      "position": 35
+    },
+    {
+      "given_names": "Rajavardhan",
+      "surname": "Rangappa",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff39"
+      ],
+      "corresponding": false,
+      "position": 36
+    },
+    {
+      "given_names": "David SY",
+      "surname": "Ong",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff40"
+      ],
+      "corresponding": false,
+      "position": 37
+    },
+    {
+      "given_names": "Madiha",
+      "surname": "Hashmi",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff41"
+      ],
+      "corresponding": false,
+      "position": 38
+    },
+    {
+      "given_names": "Gail",
+      "surname": "Carson",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 39
+    },
+    {
+      "given_names": "Janet",
+      "surname": "Diaz",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff34"
+      ],
+      "corresponding": false,
+      "position": 40
+    },
+    {
+      "given_names": "Rob",
+      "surname": "Fowler",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff42"
+      ],
+      "corresponding": false,
+      "position": 41
+    },
+    {
+      "given_names": "Moritz UG",
+      "surname": "Kraemer",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff13",
+        "aff43"
+      ],
+      "corresponding": false,
+      "position": 42
+    },
+    {
+      "given_names": "Evert-Jan",
+      "surname": "Wils",
+      "orcid": "0000-0002-2868-0920",
+      "affiliation_ids": [
+        "aff44"
+      ],
+      "corresponding": false,
+      "position": 43
+    },
+    {
+      "given_names": "Peter",
+      "surname": "Horby",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 44
+    },
+    {
+      "given_names": "Laura",
+      "surname": "Merson",
+      "orcid": "0000-0002-4168-1960",
+      "affiliation_ids": [
+        "aff1",
+        "aff45"
+      ],
+      "corresponding": false,
+      "position": 45
+    },
+    {
+      "given_names": "Piero L",
+      "surname": "Olliaro",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 46
+    },
+    {
+      "given_names": "Sheryl Ann",
+      "surname": "Abdukahil",
+      "orcid": null,
+      "affiliation_ids": [],
+      "corresponding": false,
+      "position": 47
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "ISARIC, Pandemic Sciences Institute, University of Oxford",
+      "department": null,
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": "00e372137"
+    },
+    {
+      "id": "aff2",
+      "institution": "Big Data Institute, Nuffield Department of Medicine, University of Oxford",
+      "department": null,
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": "052gg0110"
+    },
+    {
+      "id": "aff3",
+      "institution": "National Institute for Communicable Diseases, South Africa; Right to Care",
+      "department": null,
+      "city": "Johannesburg",
+      "country": "South Africa",
+      "ror": "052gvyf59"
+    },
+    {
+      "id": "aff4",
+      "institution": "Faculty of Medicine, University of British Columbia",
+      "department": null,
+      "city": "Vancouver",
+      "country": "Canada",
+      "ror": "03rmrcq20"
+    },
+    {
+      "id": "aff5",
+      "institution": "MRC Population Health Research Unit, Clinical Trials Service Unit and Epidemiological Studies Unit, Nuffield Department of Population Health, University of Oxford",
+      "department": null,
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": "01p4s0142"
+    },
+    {
+      "id": "aff6",
+      "institution": "Institute of Infection, Veterinary and Ecological Sciences, Faculty of Health and Life Sciences, University of Liverpool",
+      "department": null,
+      "city": "Liverpool",
+      "country": "United Kingdom",
+      "ror": "04xs57h96"
+    },
+    {
+      "id": "aff7",
+      "institution": "Respiratory Medicine, Alder Hey Children's Hospital, University of Liverpool",
+      "department": null,
+      "city": "Liverpool",
+      "country": "United Kingdom",
+      "ror": "04xs57h96"
+    },
+    {
+      "id": "aff8",
+      "institution": "Royal Melbourne Hospital",
+      "department": null,
+      "city": "Melbourne",
+      "country": "Australia",
+      "ror": "005bvs909"
+    },
+    {
+      "id": "aff9",
+      "institution": "Centre for Integrated Critical Care, University of Melbourne",
+      "department": null,
+      "city": "Melbourne",
+      "country": "Australia",
+      "ror": "01ej9dk98"
+    },
+    {
+      "id": "aff10",
+      "institution": "Universidad de La Sabana",
+      "department": null,
+      "city": "Chia",
+      "country": "Colombia",
+      "ror": "02sqgkj21"
+    },
+    {
+      "id": "aff11",
+      "institution": "Clinica Universidad de La Sabana",
+      "department": null,
+      "city": "Chia",
+      "country": "Colombia",
+      "ror": "02sqgkj21"
+    },
+    {
+      "id": "aff12",
+      "institution": "Department of Computer Science, University of Oxford",
+      "department": null,
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": "052gg0110"
+    },
+    {
+      "id": "aff13",
+      "institution": "Department of Biology, University of Oxford",
+      "department": null,
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": "052gg0110"
+    },
+    {
+      "id": "aff14",
+      "institution": "Emergency Department. Hospital Universitario La Paz – IdiPAZ",
+      "department": null,
+      "city": "Madrid",
+      "country": "Spain",
+      "ror": "01s1q0w69"
+    },
+    {
+      "id": "aff15",
+      "institution": "Department of Infectious Diseases and Clinical Microbiology, School of Medicine, Marmara University",
+      "department": null,
+      "city": "Istanbul",
+      "country": "Turkey",
+      "ror": "02kswqa67"
+    },
+    {
+      "id": "aff16",
+      "institution": "Roslin Institute, University of Edinburgh",
+      "department": null,
+      "city": "Edinburgh",
+      "country": "United Kingdom",
+      "ror": "01nrxwf90"
+    },
+    {
+      "id": "aff17",
+      "institution": "Intensive Care Unit, Royal Infirmary of Edinburgh",
+      "department": null,
+      "city": "Edinburgh",
+      "country": "United Kingdom",
+      "ror": "009bsy196"
+    },
+    {
+      "id": "aff18",
+      "institution": "Critical Care and Anesthesia, Nepal Mediciti Hospital",
+      "department": null,
+      "city": "Lalitpur",
+      "country": "Nepal",
+      "ror": null
+    },
+    {
+      "id": "aff19",
+      "institution": "King Abdullah International Medical Research Center and King Saud Bin Abdulaziz University for Health Sciences",
+      "department": null,
+      "city": "Riyadh",
+      "country": "Saudi Arabia",
+      "ror": "009p8zv69"
+    },
+    {
+      "id": "aff20",
+      "institution": "Network for Improving Critical care Systems and Training",
+      "department": null,
+      "city": "Colombo",
+      "country": "Sri Lanka",
+      "ror": null
+    },
+    {
+      "id": "aff21",
+      "institution": "Department of Infectious, Tropical Diseases and Microbiology (DITM), IRCCS Sacro Cuore Don Calabria Hospital, Negrar di Valpolicella",
+      "department": null,
+      "city": "Verona",
+      "country": "Italy",
+      "ror": "04tfzc498"
+    },
+    {
+      "id": "aff22",
+      "institution": "Makati Medical Center, Makati City",
+      "department": null,
+      "city": "Makati",
+      "country": "Philippines",
+      "ror": "02jy1hx10"
+    },
+    {
+      "id": "aff23",
+      "institution": "Department of Anesthesiology, Centre hospitalier de l'Université de Montréal",
+      "department": null,
+      "city": "Montréal",
+      "country": "Canada",
+      "ror": "0161xgx34"
+    },
+    {
+      "id": "aff24",
+      "institution": "Department of Medicine, Critical Care Division, Centre hospitalier de l'Université de Montréal",
+      "department": null,
+      "city": "Montréal",
+      "country": "Canada",
+      "ror": "0410a8y51"
+    },
+    {
+      "id": "aff25",
+      "institution": "Carrefour de l'innovation et santé des populations, Centre de recherche du Centre hospitalier de l'Université de Montréal (CRCHUM)",
+      "department": null,
+      "city": "Montréal",
+      "country": "Canada",
+      "ror": "0161xgx34"
+    },
+    {
+      "id": "aff26",
+      "institution": "Department of Anesthesiology and Pain Medicine, Université de Montréal",
+      "department": null,
+      "city": "Montréal",
+      "country": "Canada",
+      "ror": "0161xgx34"
+    },
+    {
+      "id": "aff27",
+      "institution": "Centre for Medical Informatics, The University of Edinburgh, Usher Institute of Population Health Sciences and Informatics",
+      "department": null,
+      "city": "Edinburgh",
+      "country": "United Kingdom",
+      "ror": "01nrxwf90"
+    },
+    {
+      "id": "aff28",
+      "institution": "Department of Infectious Diseases, Hospital del Mar, Infectious Pathology and Antimicrobial Research Group (IPAR), Institut Hospital del Mar d'Investigacions Mèdiques (IMIM), Universitat Autònoma de Barcelona (UAB), CEXS-Universitat Pompeu Fabra",
+      "department": null,
+      "city": "Barcelona",
+      "country": "Spain",
+      "ror": "042nkmz09"
+    },
+    {
+      "id": "aff29",
+      "institution": "Instituto de Infectologia Emílio Ribas",
+      "department": null,
+      "city": "São Paulo",
+      "country": "Brazil",
+      "ror": "00em27a94"
+    },
+    {
+      "id": "aff30",
+      "institution": "Lions Gate Hospital",
+      "department": null,
+      "city": "North Vancouver",
+      "country": "Canada",
+      "ror": "02pyp8h55"
+    },
+    {
+      "id": "aff31",
+      "institution": "International Islamic University Malaysia",
+      "department": null,
+      "city": "Selangor",
+      "country": "Malaysia",
+      "ror": "03s9hs139"
+    },
+    {
+      "id": "aff32",
+      "institution": "Clinical Research Centre, Sunway Medical Centre, Selangor Darul Ehsan",
+      "department": null,
+      "city": "Selangor",
+      "country": "Malaysia",
+      "ror": null
+    },
+    {
+      "id": "aff33",
+      "institution": "Digital Health Research and Innovation Unit, Institute for Clinical Research, National Institutes of Health (NIH)",
+      "department": null,
+      "city": "Selangor",
+      "country": "Malaysia",
+      "ror": null
+    },
+    {
+      "id": "aff34",
+      "institution": "World Health Organization",
+      "department": null,
+      "city": "Genève",
+      "country": "Switzerland",
+      "ror": "01f80g185"
+    },
+    {
+      "id": "aff35",
+      "institution": "Carol Davila University of Medicine and Pharmacy",
+      "department": null,
+      "city": "Bucharest",
+      "country": "Romania",
+      "ror": "04fm87419"
+    },
+    {
+      "id": "aff36",
+      "institution": "National Institute for Infectious Diseases \"Prof. Dr. Matei Bals\"",
+      "department": null,
+      "city": "Bucharest",
+      "country": "Romania",
+      "ror": null
+    },
+    {
+      "id": "aff37",
+      "institution": "Fundación Cardiovascular de Colombia",
+      "department": null,
+      "city": "Santander",
+      "country": "Colombia",
+      "ror": "00q67qp92"
+    },
+    {
+      "id": "aff38",
+      "institution": "Department of Critical Care Medicine, Sunnybrook Health Sciences Centre",
+      "department": null,
+      "city": "Toronto",
+      "country": "Canada",
+      "ror": "03wefcv03"
+    },
+    {
+      "id": "aff39",
+      "institution": "Department of Critical Care Medicine, Manipal Hospital Whitefield",
+      "department": null,
+      "city": "Bengaluru",
+      "country": "India",
+      "ror": "05mryn396"
+    },
+    {
+      "id": "aff40",
+      "institution": "Department of Medical Microbiology and Infection Control, Franciscus Gasthuis & Vlietland",
+      "department": null,
+      "city": "Rotterdam",
+      "country": "Netherlands",
+      "ror": "007xmz366"
+    },
+    {
+      "id": "aff41",
+      "institution": "Critical Care Asia and Ziauddin University",
+      "department": null,
+      "city": "Karachi",
+      "country": "Pakistan",
+      "ror": "03vz8ns51"
+    },
+    {
+      "id": "aff42",
+      "institution": "Department of Critical Care Medicine, Sunnybrook Health Sciences Centre",
+      "department": null,
+      "city": "Toronto",
+      "country": "Canada",
+      "ror": "03wefcv03"
+    },
+    {
+      "id": "aff43",
+      "institution": "Pandemic Sciences Institute, University of Oxford",
+      "department": null,
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": "052gg0110"
+    },
+    {
+      "id": "aff44",
+      "institution": "Department of Intensive Care, Franciscus Gasthuis & Vlietland",
+      "department": null,
+      "city": "Rotterdam",
+      "country": "Netherlands",
+      "ror": "007xmz366"
+    },
+    {
+      "id": "aff45",
+      "institution": "Infectious Diseases Data Observatory, Centre for Tropical Medicine and Global Health, University of Oxford",
+      "department": null,
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": "04tp3cz81"
+    }
+  ]
 }

@@ -2,5 +2,75 @@
   "doi": "10.7554/eLife.77220",
   "title": "Flexible and efficient simulation-based inference for models of decision-making",
   "abstract": "Inferring parameters of computational models that capture experimental data is a central task in cognitive neuroscience. Bayesian statistical inference methods usually require the ability to evaluate the likelihood of the model—however, for many models of interest in cognitive neuroscience, the associated likelihoods cannot be computed efficiently. Simulation-based inference (SBI) offers a solution to this problem by only requiring access to simulations produced by the model. Previously, Fengler et al. introduced likelihood approximation networks (LANs, Fengler et al., 2021) which make it possible to apply SBI to models of decision-making but require billions of simulations for training. Here, we provide a new SBI method that is substantially more simulation efficient. Our approach, mixed neural likelihood estimation (MNLE), trains neural density estimators on model simulations to emulate the simulator and is designed to capture both the continuous (e.g., reaction times) and discrete (choices) data of decision-making models. The likelihoods of the emulator can then be used to perform Bayesian parameter inference on experimental data using standard approximate inference methods like Markov Chain Monte Carlo sampling. We demonstrate MNLE on two variants of the drift-diffusion model and show that it is substantially more efficient than LANs: MNLE achieves similar likelihood accuracy with six orders of magnitude fewer training simulations and is significantly more accurate than LANs when both are trained with the same budget. Our approach enables researchers to perform SBI on custom-tailored models of decision-making, leading to fast iteration of model design for scientific discovery.",
-  "pub_date": "2022-07-27"
+  "pub_date": "2022-07-27",
+  "authors": [
+    {
+      "given_names": "Jan",
+      "surname": "Boelts",
+      "orcid": "0000-0003-4979-7092",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Jan-Matthis",
+      "surname": "Lueckmann",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Richard",
+      "surname": "Gao",
+      "orcid": "0000-0001-5916-6433",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Jakob H",
+      "surname": "Macke",
+      "orcid": "0000-0001-5154-8912",
+      "affiliation_ids": [
+        "aff1",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 4
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Machine Learning in Science, Excellence Cluster Machine Learning, University of Tübingen",
+      "department": null,
+      "city": "Tübingen",
+      "country": "Germany",
+      "ror": "03a1kwz48"
+    },
+    {
+      "id": "aff2",
+      "institution": "Technical University of Munich",
+      "department": null,
+      "city": "Munich",
+      "country": "Germany",
+      "ror": "02kkvpp62"
+    },
+    {
+      "id": "aff3",
+      "institution": "Max Planck Institute for Intelligent Systems Tübingen",
+      "department": null,
+      "city": "Tübingen",
+      "country": "Germany",
+      "ror": "04fq9j139"
+    }
+  ]
 }

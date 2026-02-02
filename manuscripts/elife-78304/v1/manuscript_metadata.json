@@ -1,6 +1,520 @@
 {
   "doi": "10.7554/eLife.78304",
   "title": "Validation of a multi-ancestry polygenic risk score and age-specific risks of prostate cancer: a meta-analysis within diverse populations",
-  "abstract": "Background: We recently developed a multi-ancestry polygenic risk score (PRS) that effectively stratifies prostate cancer risk across populations. In this study, we validated the performance of the PRS in the multi-ancestry Million Veteran Program (MVP) and additional independent studies. Methods: Within each ancestry population, the association of PRS with prostate cancer risk was evaluated separately in each case-control study and then combined in a fixed-effects inverse-variance-weighted meta-analysis. We further assessed the effect modification by age and estimated the age-specific absolute risk of prostate cancer for each ancestry population. Results: The PRS was evaluated in 31,925 cases and 490,507 controls, including men from European (22,049 cases, 414,249 controls), African (8,794 cases, 55,657 controls), and Hispanic (1,082 cases, 20,601 controls) populations. Comparing men in the top decile (90-100% of the PRS) to the average 40-60% PRS category, the prostate cancer odds ratio (OR) was 3.8-fold in European ancestry men (95% CI=3.62-3.96), 2.8-fold in African ancestry men (95% CI=2.59-3.03), and 3.2-fold in Hispanic men (95% CI=2.64-3.92). The PRS did not discriminate risk of aggressive versus non-aggressive prostate cancer. However, the OR diminished with advancing age (European ancestry men in the top decile: ≤55 years, OR=7.11; 55-60 years, OR=4.26; >70 years, OR=2.79). Men in the top PRS decile reached 5% absolute prostate cancer risk ~10 years younger than men in the 40-60% PRS category. Conclusions: Our findings validate the multi-ancestry PRS as an effective prostate cancer risk stratification tool across populations. A clinical study of PRS is warranted to determine if the PRS could be used for risk-stratified screening and early detection. Funding: This work was supported by the National Cancer Institute at the National Institutes of Health (grant numbers U19 CA214253 to C.A.H., U01 CA257328 to C.A.H., U19 CA148537 to C.A.H., R01 CA165862 to C.A.H., K99 CA246063 to B.F.D, and T32CA229110 to F.C), the Prostate Cancer Foundation (grants 21YOUN11 to B.F.D. and 20CHAS03 to C.A.H.), the Achievement Rewards for College Scientists Foundation Los Angeles Founder Chapter to B.F.D, and the Million Veteran Program-MVP017. This research has been conducted using the UK Biobank Resource under application number 42195. This research is based on data from the Million Veteran Program, Office of Research and Development, and the Veterans Health Administration. This publication does not represent the views of the Department of Veteran Affairs or the United States Government.",
-  "pub_date": "2022-07-08"
+  "abstract": "Background: We recently developed a multi-ancestry polygenic risk score (PRS) that effectively stratifies prostate cancer risk across populations. In this study, we validated the performance of the PRS in the multi-ancestry Million Veteran Program (MVP) and additional independent studies.Methods: Within each ancestry population, the association of PRS with prostate cancer risk was evaluated separately in each case-control study and then combined in a fixed-effects inverse-variance-weighted meta-analysis. We further assessed the effect modification by age and estimated the age-specific absolute risk of prostate cancer for each ancestry population.Results: The PRS was evaluated in 31,925 cases and 490,507 controls, including men from European (22,049 cases, 414,249 controls), African (8,794 cases, 55,657 controls), and Hispanic (1,082 cases, 20,601 controls) populations. Comparing men in the top decile (90-100% of the PRS) to the average 40-60% PRS category, the prostate cancer odds ratio (OR) was 3.8-fold in European ancestry men (95% CI=3.62-3.96), 2.8-fold in African ancestry men (95% CI=2.59-3.03), and 3.2-fold in Hispanic men (95% CI=2.64-3.92). The PRS did not discriminate risk of aggressive versus non-aggressive prostate cancer. However, the OR diminished with advancing age (European ancestry men in the top decile: ≤55 years, OR=7.11; 55-60 years, OR=4.26; >70 years, OR=2.79). Men in the top PRS decile reached 5% absolute prostate cancer risk ~10 years younger than men in the 40-60% PRS category.Conclusions: Our findings validate the multi-ancestry PRS as an effective prostate cancer risk stratification tool across populations. A clinical study of PRS is warranted to determine if the PRS could be used for risk-stratified screening and early detection.Funding: This work was supported by the National Cancer Institute at the National Institutes of Health (grant numbers U19 CA214253 to C.A.H., U01 CA257328 to C.A.H., U19 CA148537 to C.A.H., R01 CA165862 to C.A.H., K99 CA246063 to B.F.D, and T32CA229110 to F.C), the Prostate Cancer Foundation (grants 21YOUN11 to B.F.D. and 20CHAS03 to C.A.H.), the Achievement Rewards for College Scientists Foundation Los Angeles Founder Chapter to B.F.D, and the Million Veteran Program-MVP017. This research has been conducted using the UK Biobank Resource under application number 42195. This research is based on data from the Million Veteran Program, Office of Research and Development, and the Veterans Health Administration. This publication does not represent the views of the Department of Veteran Affairs or the United States Government.",
+  "pub_date": "2022-07-08",
+  "authors": [
+    {
+      "given_names": "Fei",
+      "surname": "Chen",
+      "orcid": "0000-0002-1679-9932",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Burcu F",
+      "surname": "Darst",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Ravi K",
+      "surname": "Madduri",
+      "orcid": "0000-0003-2130-2887",
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Alex A",
+      "surname": "Rodriguez",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Xin",
+      "surname": "Sheng",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Christopher T",
+      "surname": "Rentsch",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Caroline",
+      "surname": "Andrews",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Wei",
+      "surname": "Tang",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Adam S",
+      "surname": "Kibel",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Anna",
+      "surname": "Plym",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Kelly",
+      "surname": "Cho",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Mohamed",
+      "surname": "Jalloh",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Serigne Magueye",
+      "surname": "Gueye",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Lamine",
+      "surname": "Niang",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Olufemi J",
+      "surname": "Ogunbiyi",
+      "orcid": "0000-0002-8748-2879",
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Olufemi",
+      "surname": "Popoola",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Akindele O",
+      "surname": "Adebiyi",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Oseremen I",
+      "surname": "Aisuodionoe-Shadrach",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Hafees O",
+      "surname": "Ajibola",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Mustapha A",
+      "surname": "Jamda",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Olabode P",
+      "surname": "Oluwole",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "Maxwell",
+      "surname": "Nwegbu",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 22
+    },
+    {
+      "given_names": "Ben",
+      "surname": "Adusei",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 23
+    },
+    {
+      "given_names": "Sunny",
+      "surname": "Mante",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 24
+    },
+    {
+      "given_names": "Afua",
+      "surname": "Darkwa-Abrahams",
+      "orcid": "0000-0003-0649-3996",
+      "affiliation_ids": [
+        "aff14"
+      ],
+      "corresponding": false,
+      "position": 25
+    },
+    {
+      "given_names": "James E",
+      "surname": "Mensah",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff14"
+      ],
+      "corresponding": false,
+      "position": 26
+    },
+    {
+      "given_names": "Andrew Anthony",
+      "surname": "Adjei",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff14"
+      ],
+      "corresponding": false,
+      "position": 27
+    },
+    {
+      "given_names": "Halimatou",
+      "surname": "Diop",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff15"
+      ],
+      "corresponding": false,
+      "position": 28
+    },
+    {
+      "given_names": "Joseph",
+      "surname": "Lachance",
+      "orcid": "0000-0002-4650-3741",
+      "affiliation_ids": [
+        "aff16"
+      ],
+      "corresponding": false,
+      "position": 29
+    },
+    {
+      "given_names": "Timothy R",
+      "surname": "Rebbeck",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff17"
+      ],
+      "corresponding": false,
+      "position": 30
+    },
+    {
+      "given_names": "Stefan",
+      "surname": "Ambs",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 31
+    },
+    {
+      "given_names": "J Michael",
+      "surname": "Gaziano",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff18"
+      ],
+      "corresponding": false,
+      "position": 32
+    },
+    {
+      "given_names": "Amy C",
+      "surname": "Justice",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff19"
+      ],
+      "corresponding": false,
+      "position": 33
+    },
+    {
+      "given_names": "David V",
+      "surname": "Conti",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff20"
+      ],
+      "corresponding": false,
+      "position": 34
+    },
+    {
+      "given_names": "Christopher A",
+      "surname": "Haiman",
+      "orcid": "0000-0002-0097-9971",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 35
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "University of Southern California",
+      "department": "Department of Population and Public Health Sciences",
+      "city": "Los Angeles",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Fred Hutchinson Cancer Research Center",
+      "department": "Public Health Sciences",
+      "city": "Seattle",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "Argonne National Laboratory",
+      "department": null,
+      "city": "Lemont",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "Yale School of Medicine",
+      "department": null,
+      "city": "New Haven",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "Dana-Farber Cancer Institute",
+      "department": "Harvard TH Chan School of Public Health and Division of Population Sciences",
+      "city": "Boston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "National Institutes of Health",
+      "department": "Molecular Epidemiology Section, Laboratory of Human Carcinogenesis, National Cancer Institute",
+      "city": "Bethesda",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff7",
+      "institution": "Brigham and Women's Hospital",
+      "department": "Department of Surgery",
+      "city": "Boston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff8",
+      "institution": "Harvard TH Chan School of Public Health",
+      "department": "Department of Epidemiology",
+      "city": "Boston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff9",
+      "institution": "VA Boston Healthcare System",
+      "department": null,
+      "city": "Boston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff10",
+      "institution": "Hôpital Général Idrissa Pouye",
+      "department": null,
+      "city": "Dakar",
+      "country": "Senegal",
+      "ror": null
+    },
+    {
+      "id": "aff11",
+      "institution": "University of Ibadan",
+      "department": "College of Medicine",
+      "city": "Ibadan",
+      "country": "Nigeria",
+      "ror": null
+    },
+    {
+      "id": "aff12",
+      "institution": "University of Abuja Teaching Hospital",
+      "department": "College of Health Sciences",
+      "city": "Abuja",
+      "country": "Nigeria",
+      "ror": null
+    },
+    {
+      "id": "aff13",
+      "institution": "37 Military Hospital",
+      "department": null,
+      "city": "Accra",
+      "country": "Ghana",
+      "ror": null
+    },
+    {
+      "id": "aff14",
+      "institution": "Korle-Bu Teaching Hospital",
+      "department": null,
+      "city": "Accra",
+      "country": "Ghana",
+      "ror": null
+    },
+    {
+      "id": "aff15",
+      "institution": "Hôpital Aristide Le Dantec",
+      "department": "Laboratoires Bacteriologie et Virologie",
+      "city": "Dakar",
+      "country": "Senegal",
+      "ror": null
+    },
+    {
+      "id": "aff16",
+      "institution": "Georgia Institute of Technology",
+      "department": "School of Biological Sciences",
+      "city": "Atlanta",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff17",
+      "institution": "Dana-Farber Cancer Institute",
+      "department": "Harvard TH Chan School of Public Health",
+      "city": "Boston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff18",
+      "institution": "Brigham and Women's Hospital",
+      "department": "Division of Aging",
+      "city": "Boston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff19",
+      "institution": "VA Connecticut Healthcare System",
+      "department": null,
+      "city": "New Haven",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff20",
+      "institution": "University of Southern California",
+      "department": "Department of Population and Public Health Sciences",
+      "city": "Los Angeles",
+      "country": "Spain",
+      "ror": null
+    }
+  ]
 }

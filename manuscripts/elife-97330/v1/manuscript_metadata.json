@@ -1,6 +1,237 @@
 {
   "doi": "10.7554/eLife.97330",
   "title": "Exploring the repository of de novo-designed bifunctional antimicrobial peptides through deep learning",
-  "abstract": "Antimicrobial peptides (AMPs) are attractive candidates to combat antibiotic resistance for their capability to target biomembranes and restrict a wide range of pathogens. It is a daunting challenge to discover novel AMPs due to their sparse distributions in a vast peptide universe, especially for peptides that demonstrate potencies for both bacterial membranes and viral envelopes. Here, we establish a de novo AMP design framework by bridging a deep generative module and a graph-encoding activity regressor. The generative module learns hidden ‘grammars’ of AMP features and produces candidates sequentially pass antimicrobial predictor and antiviral classifiers. We discovered 16 bifunctional AMPs and experimentally validated their abilities to inhibit a spectrum of pathogens in vitro and in animal models. Notably, P076 is a highly potent bactericide with the minimal inhibitory concentration of 0.21 μM against multidrug-resistant Acinetobacter baumannii , while P002 broadly inhibits five enveloped viruses. Our study provides feasible means to uncover the sequences that simultaneously encode antimicrobial and antiviral activities, thus bolstering the function spectra of AMPs to combat a wide range of drug-resistant infections.",
-  "pub_date": "2025-03-13"
+  "abstract": "Antimicrobial peptides (AMPs) are attractive candidates to combat antibiotic resistance for their capability to target biomembranes and restrict a wide range of pathogens. It is a daunting challenge to discover novel AMPs due to their sparse distributions in a vast peptide universe, especially for peptides that demonstrate potencies for both bacterial membranes and viral envelopes. Here, we establish a de novo AMP design framework by bridging a deep generative module and a graph-encoding activity regressor. The generative module learns hidden ‘grammars’ of AMP features and produces candidates sequentially pass antimicrobial predictor and antiviral classifiers. We discovered 16 bifunctional AMPs and experimentally validated their abilities to inhibit a spectrum of pathogens in vitro and in animal models. Notably, P076 is a highly potent bactericide with the minimal inhibitory concentration of 0.21 μM against multidrug-resistant Acinetobacter baumannii, while P002 broadly inhibits five enveloped viruses. Our study provides feasible means to uncover the sequences that simultaneously encode antimicrobial and antiviral activities, thus bolstering the function spectra of AMPs to combat a wide range of drug-resistant infections.",
+  "pub_date": "2025-03-13",
+  "authors": [
+    {
+      "given_names": "Ruihan",
+      "surname": "Dong",
+      "orcid": "0009-0001-5862-8410",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Rongrong",
+      "surname": "Liu",
+      "orcid": "0000-0002-9725-3463",
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Ziyu",
+      "surname": "Liu",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Yangang",
+      "surname": "Liu",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Gaomei",
+      "surname": "Zhao",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Honglei",
+      "surname": "Li",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Shiyuan",
+      "surname": "Hou",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Xiaohan",
+      "surname": "Ma",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Huarui",
+      "surname": "Kang",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Jing",
+      "surname": "Liu",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Fei",
+      "surname": "Guo",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Ping",
+      "surname": "Zhao",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Junping",
+      "surname": "Wang",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Cheng",
+      "surname": "Wang",
+      "orcid": "0000-0002-6690-6433",
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": true,
+      "position": 14
+    },
+    {
+      "given_names": "Xingan",
+      "surname": "Wu",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": true,
+      "position": 15
+    },
+    {
+      "given_names": "Sheng",
+      "surname": "Ye",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 16
+    },
+    {
+      "given_names": "Cheng",
+      "surname": "Zhu",
+      "orcid": "0000-0003-0260-6287",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 17
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Frontiers Science Center for Synthetic Biology (Ministry of Education), Tianjin Key Laboratory of Function and Application of Biological Macromolecular Structures, School of Life Sciences, Faculty of Medicine, Tianjin University",
+      "department": null,
+      "city": "Tianjin",
+      "country": "China",
+      "ror": "012tb2g32"
+    },
+    {
+      "id": "aff2",
+      "institution": "Center for Quantitative Biology, Academy for Advanced Interdisciplinary Studies, Peking University",
+      "department": null,
+      "city": "Beijing",
+      "country": "China",
+      "ror": "02v51f717"
+    },
+    {
+      "id": "aff3",
+      "institution": "Department of Microbiology, School of Basic Medicine, Fourth Military Medical University",
+      "department": null,
+      "city": "Shaanxi",
+      "country": "China",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "Department of Microbiology, Second Military Medical University",
+      "department": null,
+      "city": "Shanghai",
+      "country": "China",
+      "ror": "04tavpn47"
+    },
+    {
+      "id": "aff5",
+      "institution": "State Key Laboratory of Trauma and Chemical Poisoning, Institute of Combined Injury of PLA, College of Preventive Medicine, Third Military Medical University (Army Medical University)",
+      "department": null,
+      "city": "Chongqing",
+      "country": "China",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "Tianjin Cancer Hospital Airport Hospital",
+      "department": null,
+      "city": "Tianjin",
+      "country": "China",
+      "ror": null
+    },
+    {
+      "id": "aff7",
+      "institution": "School of Computer Science and Engineering, Central South University",
+      "department": null,
+      "city": "Changsha",
+      "country": "China",
+      "ror": "00f1zfq44"
+    }
+  ]
 }

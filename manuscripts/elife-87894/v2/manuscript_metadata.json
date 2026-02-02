@@ -1,6 +1,451 @@
 {
   "doi": "10.7554/eLife.87894",
   "title": "Identifying metabolic features of colorectal cancer liability using Mendelian randomization",
-  "abstract": "Recognizing the early signs of cancer risk is vital for informing prevention, early detection, and survival. To investigate whether changes in circulating metabolites characterize the early stages of colorectal cancer (CRC) development, we examined the associations between a genetic risk score (GRS) associated with CRC liability (72 single-nucleotide polymorphisms) and 231 circulating metabolites measured by nuclear magnetic resonance spectroscopy in the Avon Longitudinal Study of Parents and Children (N = 6221). Linear regression models were applied to examine the associations between genetic liability to CRC and circulating metabolites measured in the same individuals at age 8 y, 16 y, 18 y, and 25 y. The GRS for CRC was associated with up to 28% of the circulating metabolites at FDR-P < 0.05 across all time points, particularly with higher fatty acids and very-low- and low-density lipoprotein subclass lipids. Two-sample reverse Mendelian randomization (MR) analyses investigating CRC liability (52,775 cases, 45,940 controls) and metabolites measured in a random subset of UK Biobank participants (N = 118,466, median age 58 y) revealed broadly consistent effect estimates with the GRS analysis. In conventional (forward) MR analyses, genetically predicted polyunsaturated fatty acid concentrations were most strongly associated with higher CRC risk. These analyses suggest that higher genetic liability to CRC can cause early alterations in systemic metabolism and suggest that fatty acids may play an important role in CRC development. This work was supported by the Elizabeth Blackwell Institute for Health Research, University of Bristol, the Wellcome Trust, the Medical Research Council, Diabetes UK, the University of Bristol NIHR Biomedical Research Centre, and Cancer Research UK. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. This work used the computational facilities of the Advanced Computing Research Centre, University of Bristol - http://www.bristol.ac.uk/acrc/ .",
-  "pub_date": "2023-12-21"
+  "abstract": "Background:Recognizing the early signs of cancer risk is vital for informing prevention, early detection, and survival.Methods:To investigate whether changes in circulating metabolites characterize the early stages of colorectal cancer (CRC) development, we examined the associations between a genetic risk score (GRS) associated with CRC liability (72 single-nucleotide polymorphisms) and 231 circulating metabolites measured by nuclear magnetic resonance spectroscopy in the Avon Longitudinal Study of Parents and Children (N = 6221). Linear regression models were applied to examine the associations between genetic liability to CRC and circulating metabolites measured in the same individuals at age 8 y, 16 y, 18 y, and 25 y.Results:The GRS for CRC was associated with up to 28% of the circulating metabolites at FDR-P < 0.05 across all time points, particularly with higher fatty acids and very-low- and low-density lipoprotein subclass lipids. Two-sample reverse Mendelian randomization (MR) analyses investigating CRC liability (52,775 cases, 45,940 controls) and metabolites measured in a random subset of UK Biobank participants (N = 118,466, median age 58 y) revealed broadly consistent effect estimates with the GRS analysis. In conventional (forward) MR analyses, genetically predicted polyunsaturated fatty acid concentrations were most strongly associated with higher CRC risk.Conclusions:These analyses suggest that higher genetic liability to CRC can cause early alterations in systemic metabolism and suggest that fatty acids may play an important role in CRC development.Funding:This work was supported by the Elizabeth Blackwell Institute for Health Research, University of Bristol, the Wellcome Trust, the Medical Research Council, Diabetes UK, the University of Bristol NIHR Biomedical Research Centre, and Cancer Research UK. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. This work used the computational facilities of the Advanced Computing Research Centre, University of Bristol - http://www.bristol.ac.uk/acrc/.",
+  "pub_date": "2023-12-21",
+  "authors": [
+    {
+      "given_names": "Caroline",
+      "surname": "Bull",
+      "orcid": "0000-0002-2176-5120",
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Emma",
+      "surname": "Hazelwood",
+      "orcid": "0000-0002-4888-6037",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Joshua A",
+      "surname": "Bell",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Vanessa",
+      "surname": "Tan",
+      "orcid": "0000-0001-7938-127X",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Andrei-Emil",
+      "surname": "Constantinescu",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Carolina",
+      "surname": "Borges",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Danny",
+      "surname": "Legge",
+      "orcid": "0000-0002-3897-5861",
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Kimberley",
+      "surname": "Burrows",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Jeroen R",
+      "surname": "Huyghe",
+      "orcid": "0000-0001-6027-9806",
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Hermann",
+      "surname": "Brenner",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5",
+        "aff6",
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Sergi",
+      "surname": "Castellvi-Bel",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Andrew T",
+      "surname": "Chan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9",
+        "aff10",
+        "aff11",
+        "aff12",
+        "aff13",
+        "aff14"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Sun-Seog",
+      "surname": "Kweon",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff15",
+        "aff16"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Loic",
+      "surname": "Le Marchand",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff17"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Li",
+      "surname": "Li",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff18"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Iona",
+      "surname": "Cheng",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff19",
+        "aff20"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Rish K",
+      "surname": "Pai",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff21"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Jane C",
+      "surname": "Figueiredo",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff22"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Neil",
+      "surname": "Murphy",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff23"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Marc J",
+      "surname": "Gunter",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff24",
+        "aff25"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Nicholas J",
+      "surname": "Timpson",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "Emma E",
+      "surname": "Vincent",
+      "orcid": "0000-0002-8917-7384",
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": true,
+      "position": 22
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "MRC Integrative Epidemiology Unit at the University of Bristol",
+      "department": null,
+      "city": "Bristol",
+      "country": "United Kingdom",
+      "ror": "0524sp257"
+    },
+    {
+      "id": "aff2",
+      "institution": "Population Health Sciences, Bristol Medical School, University of Bristol",
+      "department": null,
+      "city": "Bristol",
+      "country": "United Kingdom",
+      "ror": "0524sp257"
+    },
+    {
+      "id": "aff3",
+      "institution": "Translational Health Sciences, Bristol Medical School, University of Bristol",
+      "department": null,
+      "city": "Bristol",
+      "country": "United Kingdom",
+      "ror": "0524sp257"
+    },
+    {
+      "id": "aff4",
+      "institution": "Public Health Sciences Division, Fred Hutchinson Cancer Center",
+      "department": null,
+      "city": "Seattle",
+      "country": "United States",
+      "ror": "007ps6h72"
+    },
+    {
+      "id": "aff5",
+      "institution": "Division of Clinical Epidemiology and Aging Research, German Cancer Research Center (DKFZ)",
+      "department": null,
+      "city": "Heidelberg",
+      "country": "Germany",
+      "ror": "04cdgtt98"
+    },
+    {
+      "id": "aff6",
+      "institution": "Division of Preventive Oncology, German Cancer Research Center (DKFZ) and National Center for Tumor Diseases (NCT)",
+      "department": null,
+      "city": "Heidelberg",
+      "country": "Germany",
+      "ror": "01txwsw02"
+    },
+    {
+      "id": "aff7",
+      "institution": "German Cancer Consortium (DKTK), German Cancer Research Center (DKFZ)",
+      "department": null,
+      "city": "Heidelberg",
+      "country": "Germany",
+      "ror": "04cdgtt98"
+    },
+    {
+      "id": "aff8",
+      "institution": "Gastroenterology Department, Hospital Clínic, Institut d'Investigacions Biomèdiques August Pi i Sunyer (IDIBAPS), Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas (CIBEREHD), University of Barcelona",
+      "department": null,
+      "city": "Barcelona",
+      "country": "Spain",
+      "ror": "021018s57"
+    },
+    {
+      "id": "aff9",
+      "institution": "Division of Gastroenterology, Massachusetts General Hospital and Harvard Medical School",
+      "department": null,
+      "city": "Boston",
+      "country": "United States",
+      "ror": "002pd6e78"
+    },
+    {
+      "id": "aff10",
+      "institution": "Channing Division of Network Medicine, Brigham and Women's Hospital and Harvard Medical School",
+      "department": null,
+      "city": "Boston",
+      "country": "United States",
+      "ror": "04b6nzv94"
+    },
+    {
+      "id": "aff11",
+      "institution": "Clinical and Translational Epidemiology Unit, Massachusetts General Hospital and Harvard Medical School",
+      "department": null,
+      "city": "Boston",
+      "country": "United States",
+      "ror": "002pd6e78"
+    },
+    {
+      "id": "aff12",
+      "institution": "Broad Institute of Harvard and MIT",
+      "department": null,
+      "city": "Cambridge",
+      "country": "United States",
+      "ror": "042nb2s44"
+    },
+    {
+      "id": "aff13",
+      "institution": "Department of Epidemiology, Harvard T.H. Chan School of Public Health, Harvard University",
+      "department": null,
+      "city": "Boston",
+      "country": "United States",
+      "ror": "03vek6s52"
+    },
+    {
+      "id": "aff14",
+      "institution": "Department of Immunology and Infectious Diseases, Harvard T.H. Chan School of Public Health, Harvard University",
+      "department": null,
+      "city": "Boston",
+      "country": "United States",
+      "ror": "03vek6s52"
+    },
+    {
+      "id": "aff15",
+      "institution": "Department of Preventive Medicine, Chonnam National University Medical School",
+      "department": null,
+      "city": "Gwangju",
+      "country": "Republic of Korea",
+      "ror": "05kzjxq56"
+    },
+    {
+      "id": "aff16",
+      "institution": "Jeonnam Regional Cancer Center, Chonnam National University Hwasun Hospital",
+      "department": null,
+      "city": "Hwasun",
+      "country": "Republic of Korea",
+      "ror": "054gh2b75"
+    },
+    {
+      "id": "aff17",
+      "institution": "University of Hawaii Cancer Center",
+      "department": null,
+      "city": "Honolulu",
+      "country": "United States",
+      "ror": "00kt3nk56"
+    },
+    {
+      "id": "aff18",
+      "institution": "Department of Family Medicine, University of Virginia",
+      "department": null,
+      "city": "Charlottesville",
+      "country": "United States",
+      "ror": "0153tk833"
+    },
+    {
+      "id": "aff19",
+      "institution": "Department of Epidemiology and Biostatistics, University of California, San Francisco",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": "043mz5j54"
+    },
+    {
+      "id": "aff20",
+      "institution": "University of California, San Francisco Helen Diller Family Comprehensive Cancer Center, San Francisco",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": "043mz5j54"
+    },
+    {
+      "id": "aff21",
+      "institution": "Department of Pathology and Laboratory Medicine, Mayo Clinic",
+      "department": null,
+      "city": "Scottsdale",
+      "country": "United States",
+      "ror": "03jp40720"
+    },
+    {
+      "id": "aff22",
+      "institution": "Department of Medicine, Samuel Oschin Comprehensive Cancer Institute, Cedars-Sinai Medical Center",
+      "department": null,
+      "city": "Los Angeles",
+      "country": "United States",
+      "ror": "02pammg90"
+    },
+    {
+      "id": "aff23",
+      "institution": "Nutrition and Metabolism Branch, International Agency for Research on Cancer",
+      "department": null,
+      "city": "Lyon",
+      "country": "France",
+      "ror": "03zb6nw87"
+    },
+    {
+      "id": "aff24",
+      "institution": "Nutrition and Metabolism Branch, International Agency for Research on Cancer",
+      "department": null,
+      "city": "Lyon",
+      "country": "France",
+      "ror": "03zb6nw87"
+    },
+    {
+      "id": "aff25",
+      "institution": "Department of Epidemiology and Biostatistics, School of Public Health, Imperial College London",
+      "department": null,
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": "041kmwe10"
+    }
+  ]
 }

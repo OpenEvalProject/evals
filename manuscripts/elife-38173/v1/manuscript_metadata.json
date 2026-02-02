@@ -1,6 +1,226 @@
 {
   "doi": "10.7554/eLife.38173",
   "title": "CaImAn an open source tool for scalable calcium imaging data analysis",
-  "abstract": "10.7554/eLife.38173.001 Advances in fluorescence microscopy enable monitoring larger brain areas in-vivo with finer time resolution. The resulting data rates require reproducible analysis pipelines that are reliable, fully automated, and scalable to datasets generated over the course of months. We present C a I m A n , an open-source library for calcium imaging data analysis. C a I m A n provides automatic and scalable methods to address problems common to pre-processing, including motion correction, neural activity identification, and registration across different sessions of data collection. It does this while requiring minimal user intervention, with good scalability on computers ranging from laptops to high-performance computing clusters. C a I m A n is suitable for two-photon and one-photon imaging, and also enables real-time analysis on streaming data. To benchmark the performance of C a I m A n we collected and combined a corpus of manual annotations from multiple labelers on nine mouse two-photon datasets. We demonstrate that C a I m A n achieves near-human performance in detecting locations of active neurons.",
-  "pub_date": "2019-01-17"
+  "abstract": "Advances in fluorescence microscopy enable monitoring larger brain areas in-vivo with finer time resolution. The resulting data rates require reproducible analysis pipelines that are reliable, fully automated, and scalable to datasets generated over the course of months. We present CaImAn, an open-source library for calcium imaging data analysis. CaImAn provides automatic and scalable methods to address problems common to pre-processing, including motion correction, neural activity identification, and registration across different sessions of data collection. It does this while requiring minimal user intervention, with good scalability on computers ranging from laptops to high-performance computing clusters. CaImAn is suitable for two-photon and one-photon imaging, and also enables real-time analysis on streaming data. To benchmark the performance of CaImAn we collected and combined a corpus of manual annotations from multiple labelers on nine mouse two-photon datasets. We demonstrate that CaImAn achieves near-human performance in detecting locations of active neurons.",
+  "pub_date": "2019-01-17",
+  "authors": [
+    {
+      "given_names": "Andrea",
+      "surname": "Giovannucci",
+      "orcid": "0000-0002-7850-444X",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Johannes",
+      "surname": "Friedrich",
+      "orcid": "0000-0002-1321-5866",
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Pat",
+      "surname": "Gunn",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Jérémie",
+      "surname": "Kalfon",
+      "orcid": "0000-0002-2818-9728",
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Brandon L",
+      "surname": "Brown",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Sue Ann",
+      "surname": "Koay",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Jiannis",
+      "surname": "Taxidis",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Farzaneh",
+      "surname": "Najafi",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Jeffrey L",
+      "surname": "Gauthier",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Pengcheng",
+      "surname": "Zhou",
+      "orcid": "0000-0003-1237-3931",
+      "affiliation_ids": [
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Baljit S",
+      "surname": "Khakh",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5",
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "David W",
+      "surname": "Tank",
+      "orcid": "0000-0002-9423-4267",
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Dmitri B",
+      "surname": "Chklovskii",
+      "orcid": "0000-0002-4781-2546",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Eftychios A",
+      "surname": "Pnevmatikakis",
+      "orcid": "0000-0003-1509-6394",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 14
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Flatiron Institute, Simons Foundation",
+      "department": "Center for Computational Biology",
+      "city": "New York",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Columbia University",
+      "department": "Department of Statistics",
+      "city": "New York",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "Columbia University",
+      "department": "Center for Theoretical Neuroscience",
+      "city": "New York",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "ECE Paris",
+      "department": null,
+      "city": "Paris",
+      "country": "France",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "University of California, Los Angeles",
+      "department": "Department of Physiology",
+      "city": "Los Angeles",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "Princeton University",
+      "department": "Princeton Neuroscience Institute",
+      "city": "Princeton",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff7",
+      "institution": "University of California, Los Angeles",
+      "department": "Department of Neurology",
+      "city": "Los Angeles",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff8",
+      "institution": "Cold Spring Harbor Laboratory",
+      "department": null,
+      "city": "New York",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff9",
+      "institution": "University of California, Los Angeles",
+      "department": "Department of Neurobiology",
+      "city": "Los Angeles",
+      "country": "United States",
+      "ror": null
+    }
+  ]
 }

@@ -2,5 +2,65 @@
   "doi": "10.7554/eLife.97107",
   "title": "A dynamic generative model can extract interpretable oscillatory components from multichannel neurophysiological recordings",
   "abstract": "Modern neurophysiological recordings are performed using multichannel sensor arrays that are able to record activity in an increasingly high number of channels numbering in the 100s to 1000s. Often, underlying lower-dimensional patterns of activity are responsible for the observed dynamics, but these representations are difficult to reliably identify using existing methods that attempt to summarize multivariate relationships in a post hoc manner from univariate analyses or using current blind source separation methods. While such methods can reveal appealing patterns of activity, determining the number of components to include, assessing their statistical significance, and interpreting them requires extensive manual intervention and subjective judgment in practice. These difficulties with component selection and interpretation occur in large part because these methods lack a generative model for the underlying spatio-temporal dynamics. Here, we describe a novel component analysis method anchored by a generative model where each source is described by a bio-physically inspired state-space representation. The parameters governing this representation readily capture the oscillatory temporal dynamics of the components, so we refer to it as oscillation component analysis. These parameters – the oscillatory properties, the component mixing weights at the sensors, and the number of oscillations – all are inferred in a data-driven fashion within a Bayesian framework employing an instance of the expectation maximization algorithm. We analyze high-dimensional electroencephalography and magnetoencephalography recordings from human studies to illustrate the potential utility of this method for neuroscience data.",
-  "pub_date": "2024-08-15"
+  "pub_date": "2024-08-15",
+  "authors": [
+    {
+      "given_names": "Proloy",
+      "surname": "Das",
+      "orcid": "0000-0002-8807-042X",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Mingjian",
+      "surname": "He",
+      "orcid": "0000-0002-6688-8693",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Patrick L",
+      "surname": "Purdon",
+      "orcid": "0000-0003-0080-3340",
+      "affiliation_ids": [
+        "aff1",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 3
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Department of Anesthesiology, Perioperative and Pain Medicine, Stanford University",
+      "department": null,
+      "city": "Stanford",
+      "country": "United States",
+      "ror": "00f54p054"
+    },
+    {
+      "id": "aff2",
+      "institution": "Department of Psychology, Stanford University",
+      "department": null,
+      "city": "Stanford",
+      "country": "United States",
+      "ror": "00f54p054"
+    },
+    {
+      "id": "aff3",
+      "institution": "Department of Bioengineering, Stanford University",
+      "department": null,
+      "city": "Stanford",
+      "country": "United States",
+      "ror": "00f54p054"
+    }
+  ]
 }

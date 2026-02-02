@@ -1,6 +1,514 @@
 {
   "doi": "10.7554/eLife.03883",
   "title": "Improving pandemic influenza risk assessment",
-  "abstract": "10.7554/eLife.03883.001 Assessing the pandemic risk posed by specific non-human influenza A viruses is an important goal in public health research. As influenza virus genome sequencing becomes cheaper, faster, and more readily available, the ability to predict pandemic potential from sequence data could transform pandemic influenza risk assessment capabilities. However, the complexities of the relationships between virus genotype and phenotype make such predictions extremely difficult. The integration of experimental work, computational tool development, and analysis of evolutionary pathways, together with refinements to influenza surveillance, has the potential to transform our ability to assess the risks posed to humans by non-human influenza viruses and lead to improved pandemic preparedness and response. DOI: http://dx.doi.org/10.7554/eLife.03883.001",
-  "pub_date": "2014-10-16"
+  "abstract": "Assessing the pandemic risk posed by specific non-human influenza A viruses is an important goal in public health research. As influenza virus genome sequencing becomes cheaper, faster, and more readily available, the ability to predict pandemic potential from sequence data could transform pandemic influenza risk assessment capabilities. However, the complexities of the relationships between virus genotype and phenotype make such predictions extremely difficult. The integration of experimental work, computational tool development, and analysis of evolutionary pathways, together with refinements to influenza surveillance, has the potential to transform our ability to assess the risks posed to humans by non-human influenza viruses and lead to improved pandemic preparedness and response.",
+  "pub_date": "2014-10-16",
+  "authors": [
+    {
+      "given_names": "Colin A",
+      "surname": "Russell",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Peter M",
+      "surname": "Kasson",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Ruben O",
+      "surname": "Donis",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Steven",
+      "surname": "Riley",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "John",
+      "surname": "Dunbar",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Andrew",
+      "surname": "Rambaut",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Jason",
+      "surname": "Asher",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Stephen",
+      "surname": "Burke",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "C Todd",
+      "surname": "Davis",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Rebecca J",
+      "surname": "Garten",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Sandrasegaram",
+      "surname": "Gnanakaran",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Simon I",
+      "surname": "Hay",
+      "orcid": "0000-0002-0611-7272",
+      "affiliation_ids": [
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Sander",
+      "surname": "Herfst",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Nicola S",
+      "surname": "Lewis",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff14"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "James O",
+      "surname": "Lloyd-Smith",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff15"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Catherine A",
+      "surname": "Macken",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff16"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Sebastian",
+      "surname": "Maurer-Stroh",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff17"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Elizabeth",
+      "surname": "Neuhaus",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff18"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Colin R",
+      "surname": "Parrish",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff19"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Kim M",
+      "surname": "Pepin",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff20"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Samuel S",
+      "surname": "Shepard",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff21"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "David L",
+      "surname": "Smith",
+      "orcid": "0000-0003-4367-3849",
+      "affiliation_ids": [
+        "aff22"
+      ],
+      "corresponding": false,
+      "position": 22
+    },
+    {
+      "given_names": "David L",
+      "surname": "Suarez",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff23"
+      ],
+      "corresponding": false,
+      "position": 23
+    },
+    {
+      "given_names": "Susan C",
+      "surname": "Trock",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff24"
+      ],
+      "corresponding": false,
+      "position": 24
+    },
+    {
+      "given_names": "Marc-Alain",
+      "surname": "Widdowson",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff25"
+      ],
+      "corresponding": false,
+      "position": 25
+    },
+    {
+      "given_names": "Dylan B",
+      "surname": "George",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff26"
+      ],
+      "corresponding": false,
+      "position": 26
+    },
+    {
+      "given_names": "Marc",
+      "surname": "Lipsitch",
+      "orcid": "0000-0003-1504-9213",
+      "affiliation_ids": [
+        "aff27"
+      ],
+      "corresponding": false,
+      "position": 27
+    },
+    {
+      "given_names": "Jesse D",
+      "surname": "Bloom",
+      "orcid": "0000-0003-1267-3408",
+      "affiliation_ids": [
+        "aff28"
+      ],
+      "corresponding": false,
+      "position": 28
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "University of Cambridge",
+      "department": "Department of Veterinary Medicine",
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "University of Virginia",
+      "department": "Department of Biomedical Engineering",
+      "city": "Charlottesville",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "Centers for Disease Control and Prevention",
+      "department": "Influenza Division",
+      "city": "Atlanta",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "School of Public Health, Imperial College London, National Institutes of Health",
+      "department": "Fogarty International Center",
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "Los Alamos National Laboratory",
+      "department": "Bioscience Division",
+      "city": "Los Alamos",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "National Institutes of Health, University of Edinburgh",
+      "department": "Institute of Evolutionary Biology",
+      "city": "Bethesda",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff7",
+      "institution": "Biomedical Advanced Research and Development Authority, Department of Health and Human Services",
+      "department": "Leidos contract support to the Division of Analytic Decision Support",
+      "city": "Washington",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff8",
+      "institution": "Centers for Disease Control and Prevention",
+      "department": "Influenza Division",
+      "city": "Atlanta",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff9",
+      "institution": "Centers for Disease Control and Prevention",
+      "department": "Influenza Division",
+      "city": "Atlanta",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff10",
+      "institution": "Centers for Disease Control and Prevention",
+      "department": "Influenza Division",
+      "city": "Atlanta",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff11",
+      "institution": "Los Alamos National Laboratory",
+      "department": "Bioscience Division",
+      "city": "Los Alamos",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff12",
+      "institution": "University of Oxford",
+      "department": "Spatial Ecology and Epidemiology Group, Department of Zoology",
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff13",
+      "institution": "Postgraduate School of Molecular Medicine, Erasmus Medical Center",
+      "department": "Department of Viroscience",
+      "city": "Rotterdam",
+      "country": "Netherlands",
+      "ror": null
+    },
+    {
+      "id": "aff14",
+      "institution": "University of Cambridge",
+      "department": "Department of Zoology",
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff15",
+      "institution": "National Institutes of Health, University of California, Los Angeles",
+      "department": "Department of Ecology and Evolutionary Biology",
+      "city": "Bethesda",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff16",
+      "institution": "Los Alamos National Laboratory",
+      "department": "Bioscience Division",
+      "city": "Los Alamos",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff17",
+      "institution": "Agency for Science Technology and Research, Ministry of Health, Nanyang Technological University",
+      "department": "School of Biological Sciences",
+      "city": "Singapore",
+      "country": "Singapore",
+      "ror": null
+    },
+    {
+      "id": "aff18",
+      "institution": "Centers for Disease Control and Prevention",
+      "department": "Influenza Division",
+      "city": "Atlanta",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff19",
+      "institution": "College of Veterinary Medicine, Cornell University",
+      "department": "James A Baker Institute",
+      "city": "Ithaca",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff20",
+      "institution": "National Institutes of Health, United States Department of Agriculture",
+      "department": "National Wildlife Research Center",
+      "city": "Bethesda",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff21",
+      "institution": "Centers for Disease Control and Prevention",
+      "department": "Influenza Division",
+      "city": "Atlanta",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff22",
+      "institution": "National Institutes of Health, University of Oxford, Sanaria Institute for Global Health and Tropical Medicine",
+      "department": "Spatial Ecology and Epidemiology Group, Department of Zoology",
+      "city": "Bethesda",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff23",
+      "institution": "United States Department of Agriculture",
+      "department": "Exotic and Emerging Avian Viral Diseases Research Unit, Southeast Poultry Research Laboratories",
+      "city": "Athens",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff24",
+      "institution": "Centers for Disease Control and Prevention",
+      "department": "Influenza Division",
+      "city": "Atlanta",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff25",
+      "institution": "Centers for Disease Control and Prevention",
+      "department": "Influenza Division",
+      "city": "Atlanta",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff26",
+      "institution": "National Institutes of Health, Assistant Secretary for Preparedness and Response, Department of Health and Human Services",
+      "department": "Division of Analytic Decision Support, Biomedical Advanced Research and Development Authority",
+      "city": "Bethesda",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff27",
+      "institution": "Harvard School of Public Health, Harvard School of Public Health",
+      "department": "Department of Immunology and Infectious Diseases",
+      "city": "Boston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff28",
+      "institution": "Fred Hutchinson Cancer Research Center",
+      "department": "Division of Basic Sciences",
+      "city": "Seattle",
+      "country": "United States",
+      "ror": null
+    }
+  ]
 }

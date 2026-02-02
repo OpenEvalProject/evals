@@ -2,5 +2,76 @@
   "doi": "10.7554/eLife.65074",
   "title": "Likelihood approximation networks (LANs) for fast inference of simulation models in cognitive neuroscience",
   "abstract": "In cognitive neuroscience, computational modeling can formally adjudicate between theories and affords quantitative fits to behavioral/brain data. Pragmatically, however, the space of plausible generative models considered is dramatically limited by the set of models with known likelihood functions. For many models, the lack of a closed-form likelihood typically impedes Bayesian inference methods. As a result, standard models are evaluated for convenience, even when other models might be superior. Likelihood-free methods exist but are limited by their computational cost or their restriction to particular inference scenarios. Here, we propose neural networks that learn approximate likelihoods for arbitrary generative models, allowing fast posterior sampling with only a one-off cost for model simulations that is amortized for future inference. We show that these methods can accurately recover posterior parameter distributions for a variety of neurocognitive process models. We provide code allowing users to deploy these methods for arbitrary hierarchical model instantiations without further training.",
-  "pub_date": "2021-04-06"
+  "pub_date": "2021-04-06",
+  "authors": [
+    {
+      "given_names": "Alexander",
+      "surname": "Fengler",
+      "orcid": "0000-0002-0104-3905",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Lakshmi N",
+      "surname": "Govindarajan",
+      "orcid": "0000-0002-0936-2919",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Tony",
+      "surname": "Chen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Michael J",
+      "surname": "Frank",
+      "orcid": "0000-0001-8451-0523",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": true,
+      "position": 4
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Department of Cognitive, Linguistic and Psychological Sciences, Brown University",
+      "department": null,
+      "city": "Providence",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Carney Institute for Brain Science, Brown University",
+      "department": null,
+      "city": "Providence",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "Psychology and Neuroscience Department, Boston College",
+      "department": null,
+      "city": "Chestnut Hill",
+      "country": "United States",
+      "ror": null
+    }
+  ]
 }

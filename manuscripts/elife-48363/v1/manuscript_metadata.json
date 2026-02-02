@@ -1,6 +1,211 @@
 {
   "doi": "10.7554/eLife.48363",
   "title": "Implementation of an antibody characterization procedure and application to the major ALS/FTD disease gene C9ORF72",
-  "abstract": "10.7554/eLife.48363.001 Antibodies are a key resource in biomedical research yet there are no community-accepted standards to rigorously characterize their quality. Here we develop a procedure to validate pre-existing antibodies. Human cell lines with high expression of a target, determined through a proteomics database, are modified with CRISPR/Cas9 to knockout (KO) the corresponding gene. Commercial antibodies against the target are purchased and tested by immunoblot comparing parental and KO. Validated antibodies are used to definitively identify the most highly expressing cell lines, new KOs are generated if needed, and the lines are screened by immunoprecipitation and immunofluorescence. Selected antibodies are used for more intensive procedures such as immunohistochemistry. The pipeline is easy to implement and scalable. Application to the major ALS disease gene C9ORF72 identified high-quality antibodies revealing C9ORF72 localization to phagosomes/lysosomes. Antibodies that do not recognize C9ORF72 have been used in highly cited papers, raising concern over previously reported C9ORF72 properties.",
-  "pub_date": "2019-10-15"
+  "abstract": "Antibodies are a key resource in biomedical research yet there are no community-accepted standards to rigorously characterize their quality. Here we develop a procedure to validate pre-existing antibodies. Human cell lines with high expression of a target, determined through a proteomics database, are modified with CRISPR/Cas9 to knockout (KO) the corresponding gene. Commercial antibodies against the target are purchased and tested by immunoblot comparing parental and KO. Validated antibodies are used to definitively identify the most highly expressing cell lines, new KOs are generated if needed, and the lines are screened by immunoprecipitation and immunofluorescence. Selected antibodies are used for more intensive procedures such as immunohistochemistry. The pipeline is easy to implement and scalable. Application to the major ALS disease gene C9ORF72 identified high-quality antibodies revealing C9ORF72 localization to phagosomes/lysosomes. Antibodies that do not recognize C9ORF72 have been used in highly cited papers, raising concern over previously reported C9ORF72 properties.",
+  "pub_date": "2019-10-15",
+  "authors": [
+    {
+      "given_names": "Carl",
+      "surname": "Laflamme",
+      "orcid": "0000-0001-5906-025X",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Paul M",
+      "surname": "McKeever",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Rahul",
+      "surname": "Kumar",
+      "orcid": "0000-0002-1061-5194",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Julie",
+      "surname": "Schwartz",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Mahshad",
+      "surname": "Kolahdouzan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Carol X",
+      "surname": "Chen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Zhipeng",
+      "surname": "You",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Faiza",
+      "surname": "Benaliouad",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Opher",
+      "surname": "Gileadi",
+      "orcid": "0000-0001-6886-898X",
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Heidi M",
+      "surname": "McBride",
+      "orcid": "0000-0003-4666-2280",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Thomas M",
+      "surname": "Durcan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Aled M",
+      "surname": "Edwards",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Luke M",
+      "surname": "Healy",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Janice",
+      "surname": "Robertson",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Peter S",
+      "surname": "McPherson",
+      "orcid": "0000-0001-7806-5662",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 15
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "McGill University",
+      "department": "Tanenbaum Open Science Institute, Montreal Neurological Institute",
+      "city": "Montreal",
+      "country": "Canada",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "University of Toronto",
+      "department": "Tanz Centre for Research in Neurodegenerative Diseases",
+      "city": "Toronto",
+      "country": "Canada",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "University of Toronto",
+      "department": "Department of Laboratory Medicine and Pathobiology",
+      "city": "Toronto",
+      "country": "Canada",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "McGill University",
+      "department": "Neuroimmunology Unit, Montreal Neurological Institute",
+      "city": "Montreal",
+      "country": "Canada",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "University of Toronto",
+      "department": "Structural Genomics Consortium",
+      "city": "Toronto",
+      "country": "Canada",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "University of Oxford",
+      "department": "Structural Genomics Consortium, Nuffield Department of Clinical Medicine",
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": null
+    }
+  ]
 }

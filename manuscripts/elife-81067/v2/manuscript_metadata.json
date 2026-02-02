@@ -1,6 +1,466 @@
 {
   "doi": "10.7554/eLife.81067",
   "title": "Biological brain age prediction using machine learning on structural neuroimaging data: Multi-cohort validation against biomarkers of Alzheimer’s disease and neurodegeneration stratified by sex",
-  "abstract": "Brain-age can be inferred from structural neuroimaging and compared to chronological age (brain-age delta) as a marker of biological brain aging. Accelerated aging has been found in neurodegenerative disorders like Alzheimer’s disease (AD), but its validation against markers of neurodegeneration and AD is lacking. Here, imaging-derived measures from the UK Biobank dataset (N=22,661) were used to predict brain-age in 2,314 cognitively unimpaired (CU) individuals at higher risk of AD and mild cognitive impaired (MCI) patients from four independent cohorts with available biomarker data: ALFA+, ADNI, EPAD, and OASIS. Brain-age delta was associated with abnormal amyloid-β, more advanced stages (AT) of AD pathology and APOE -ε4 status. Brain-age delta was positively associated with plasma neurofilament light, a marker of neurodegeneration, and sex differences in the brain effects of this marker were found. These results validate brain-age delta as a non-invasive marker of biological brain aging in non-demented individuals with abnormal levels of biomarkers of AD and axonal injury.",
-  "pub_date": "2023-04-17"
+  "abstract": "Brain-age can be inferred from structural neuroimaging and compared to chronological age (brain-age delta) as a marker of biological brain aging. Accelerated aging has been found in neurodegenerative disorders like Alzheimer’s disease (AD), but its validation against markers of neurodegeneration and AD is lacking. Here, imaging-derived measures from the UK Biobank dataset (N=22,661) were used to predict brain-age in 2,314 cognitively unimpaired (CU) individuals at higher risk of AD and mild cognitive impaired (MCI) patients from four independent cohorts with available biomarker data: ALFA+, ADNI, EPAD, and OASIS. Brain-age delta was associated with abnormal amyloid-β, more advanced stages (AT) of AD pathology and APOE-ε4 status. Brain-age delta was positively associated with plasma neurofilament light, a marker of neurodegeneration, and sex differences in the brain effects of this marker were found. These results validate brain-age delta as a non-invasive marker of biological brain aging in non-demented individuals with abnormal levels of biomarkers of AD and axonal injury.",
+  "pub_date": "2023-04-17",
+  "authors": [
+    {
+      "given_names": "Irene",
+      "surname": "Cumplido-Mayoral",
+      "orcid": "0000-0002-1967-7025",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Marina",
+      "surname": "García-Prat",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Grégory",
+      "surname": "Operto",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff3",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Carles",
+      "surname": "Falcon",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff3",
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Mahnaz",
+      "surname": "Shekari",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Raffaele",
+      "surname": "Cacciaglia",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff3",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Marta",
+      "surname": "Milà-Alomà",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Luigi",
+      "surname": "Lorenzini",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Silvia",
+      "surname": "Ingala",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Alle",
+      "surname": "Meije Wink",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Henk JMM",
+      "surname": "Mutsaerts",
+      "orcid": "0000-0003-0894-0307",
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Carolina",
+      "surname": "Minguillón",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff3",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Karine",
+      "surname": "Fauria",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "José Luis",
+      "surname": "Molinuevo",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Sven",
+      "surname": "Haller",
+      "orcid": "0000-0001-7433-0203",
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Gael",
+      "surname": "Chetelat",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Adam",
+      "surname": "Waldman",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Adam J",
+      "surname": "Schwarz",
+      "orcid": "0000-0002-9743-6171",
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Frederik",
+      "surname": "Barkhof",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6",
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Ivonne",
+      "surname": "Suridjan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Gwendlyn",
+      "surname": "Kollmorgen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "Anna",
+      "surname": "Bayfield",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 22
+    },
+    {
+      "given_names": "Henrik",
+      "surname": "Zetterberg",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff14",
+        "aff15",
+        "aff16",
+        "aff17",
+        "aff18"
+      ],
+      "corresponding": false,
+      "position": 23
+    },
+    {
+      "given_names": "Kaj",
+      "surname": "Blennow",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff14",
+        "aff15"
+      ],
+      "corresponding": false,
+      "position": 24
+    },
+    {
+      "given_names": "Marc",
+      "surname": "Suárez-Calvet",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff3",
+        "aff4",
+        "aff19"
+      ],
+      "corresponding": false,
+      "position": 25
+    },
+    {
+      "given_names": "Verónica",
+      "surname": "Vilaplana",
+      "orcid": "0000-0001-6924-9961",
+      "affiliation_ids": [
+        "aff20"
+      ],
+      "corresponding": true,
+      "position": 26
+    },
+    {
+      "given_names": "Juan Domingo",
+      "surname": "Gispert",
+      "orcid": "0000-0002-6155-0642",
+      "affiliation_ids": [
+        "aff1",
+        "aff3",
+        "aff5"
+      ],
+      "corresponding": true,
+      "position": 27
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Barcelonaβeta Brain Research Center, Pasqual Maragall Foundation",
+      "department": null,
+      "city": "Barcelona",
+      "country": "Spain",
+      "ror": "01nry9c15"
+    },
+    {
+      "id": "aff2",
+      "institution": "Universitat Pompeu Fabra",
+      "department": null,
+      "city": "Barcelona",
+      "country": "Spain",
+      "ror": "04n0g0b29"
+    },
+    {
+      "id": "aff3",
+      "institution": "IMIM (Hospital del Mar Medical Research Institute)",
+      "department": null,
+      "city": "Barcelona",
+      "country": "Spain",
+      "ror": "03a8gac78"
+    },
+    {
+      "id": "aff4",
+      "institution": "CIBER Fragilidad y Envejecimiento Saludable (CIBERFES)",
+      "department": null,
+      "city": "Madrid",
+      "country": "France",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "Centro de Investigación Biomédica en Red de Bioingeniería, Biomateriales y Nanomedicina (CIBER-BBN)",
+      "department": null,
+      "city": "Madrid",
+      "country": "Spain",
+      "ror": "02g87qh62"
+    },
+    {
+      "id": "aff6",
+      "institution": "Department of Radiology and Nuclear Medicine, Amsterdam Neuroscience, Vrije Universiteit Amsterdam",
+      "department": null,
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "ror": "008xxew50"
+    },
+    {
+      "id": "aff7",
+      "institution": "CIRD Centre d'Imagerie Rive Droite",
+      "department": null,
+      "city": "Geneva",
+      "country": "Switzerland",
+      "ror": null
+    },
+    {
+      "id": "aff8",
+      "institution": "Normandie Univ, UNICAEN, INSERM, U1237, PhIND \"Physiopathology and Imaging of Neurological Disorders\", Institut Blood and Brain",
+      "department": null,
+      "city": "Cyceron",
+      "country": "France",
+      "ror": "02vjkv261"
+    },
+    {
+      "id": "aff9",
+      "institution": "Centre for Dementia Prevention, Edinburgh Imaging, and UK Dementia Research Institute at The University of Edinburgh",
+      "department": null,
+      "city": "Edinburgh",
+      "country": "United Kingdom",
+      "ror": "01nrxwf90"
+    },
+    {
+      "id": "aff10",
+      "institution": "Takeda Pharmaceutical Company Ltd",
+      "department": null,
+      "city": "Cambridge",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff11",
+      "institution": "Institutes of Neurology and Healthcare Engineering, University College London",
+      "department": null,
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": "02jx3x895"
+    },
+    {
+      "id": "aff12",
+      "institution": "Roche Diagnostics International Ltd",
+      "department": null,
+      "city": "Rotkreuz",
+      "country": "Switzerland",
+      "ror": null
+    },
+    {
+      "id": "aff13",
+      "institution": "Roche Diagnostics GmbH",
+      "department": null,
+      "city": "Penzberg",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff14",
+      "institution": "Institute of Neuroscience and Physiology, University of Gothenburg",
+      "department": null,
+      "city": "Mölndal",
+      "country": "Sweden",
+      "ror": "01tm6cn81"
+    },
+    {
+      "id": "aff15",
+      "institution": "Clinical Neurochemistry Laboratory, Sahlgrenska University Hospital",
+      "department": null,
+      "city": "Mölndal",
+      "country": "Sweden",
+      "ror": "04vgqjj36"
+    },
+    {
+      "id": "aff16",
+      "institution": "Department of Neurodegenerative Disease, UCL Queen Square Institute of Neurology",
+      "department": null,
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": "02jx3x895"
+    },
+    {
+      "id": "aff17",
+      "institution": "Hong Kong Center for Neurodegenerative Diseases",
+      "department": null,
+      "city": "Hong Kong",
+      "country": "China",
+      "ror": null
+    },
+    {
+      "id": "aff18",
+      "institution": "UK Dementia Research Institute at UCL",
+      "department": null,
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": "02jx3x895"
+    },
+    {
+      "id": "aff19",
+      "institution": "Servei de Neurologia, Hospital del Mar",
+      "department": null,
+      "city": "Barcelona",
+      "country": "Spain",
+      "ror": "03a8gac78"
+    },
+    {
+      "id": "aff20",
+      "institution": "Department of Signal Theory and Communications, Universitat Politècnica de Catalunya",
+      "department": null,
+      "city": "Barcelona",
+      "country": "Spain",
+      "ror": "03mb6wj31"
+    }
+  ]
 }

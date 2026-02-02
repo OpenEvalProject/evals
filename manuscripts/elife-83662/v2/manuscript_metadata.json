@@ -1,6 +1,189 @@
 {
   "doi": "10.7554/eLife.83662",
   "title": "Development and evaluation of a live birth prediction model for evaluating human blastocysts from a retrospective study",
-  "abstract": "In infertility treatment, blastocyst morphological grading is commonly used in clinical practice for blastocyst evaluation and selection, but has shown limited predictive power on live birth outcomes of blastocysts. To improve live birth prediction, a number of artificial intelligence (AI) models have been established. Most existing AI models for blastocyst evaluation only used images for live birth prediction, and the area under the receiver operating characteristic (ROC) curve (AUC) achieved by these models has plateaued at ~0.65. This study proposed a multimodal blastocyst evaluation method using both blastocyst images and patient couple’s clinical features (e.g., maternal age, hormone profiles, endometrium thickness, and semen quality) to predict live birth outcomes of human blastocysts. To utilize the multimodal data, we developed a new AI model consisting of a convolutional neural network (CNN) to process blastocyst images and a multilayer perceptron to process patient couple’s clinical features. The data set used in this study consists of 17,580 blastocysts with known live birth outcomes, blastocyst images, and patient couple’s clinical features. This study achieved an AUC of 0.77 for live birth prediction, which significantly outperforms related works in the literature. Sixteen out of 103 clinical features were identified to be predictors of live birth outcomes and helped improve live birth prediction. Among these features, maternal age, the day of blastocyst transfer, antral follicle count, retrieved oocyte number, and endometrium thickness measured before transfer are the top five features contributing to live birth prediction. Heatmaps showed that the CNN in the AI model mainly focuses on image regions of inner cell mass and trophectoderm (TE) for live birth prediction, and the contribution of TE-related features was greater in the CNN trained with the inclusion of patient couple's clinical features compared with the CNN trained with blastocyst images alone. The results suggest that the inclusion of patient couple’s clinical features along with blastocyst images increases live birth prediction accuracy. Natural Sciences and Engineering Research Council of Canada and the Canada Research Chairs Program.",
-  "pub_date": "2023-02-22"
+  "abstract": "Background:In infertility treatment, blastocyst morphological grading is commonly used in clinical practice for blastocyst evaluation and selection, but has shown limited predictive power on live birth outcomes of blastocysts. To improve live birth prediction, a number of artificial intelligence (AI) models have been established. Most existing AI models for blastocyst evaluation only used images for live birth prediction, and the area under the receiver operating characteristic (ROC) curve (AUC) achieved by these models has plateaued at ~0.65.Methods:This study proposed a multimodal blastocyst evaluation method using both blastocyst images and patient couple’s clinical features (e.g., maternal age, hormone profiles, endometrium thickness, and semen quality) to predict live birth outcomes of human blastocysts. To utilize the multimodal data, we developed a new AI model consisting of a convolutional neural network (CNN) to process blastocyst images and a multilayer perceptron to process patient couple’s clinical features. The data set used in this study consists of 17,580 blastocysts with known live birth outcomes, blastocyst images, and patient couple’s clinical features.Results:This study achieved an AUC of 0.77 for live birth prediction, which significantly outperforms related works in the literature. Sixteen out of 103 clinical features were identified to be predictors of live birth outcomes and helped improve live birth prediction. Among these features, maternal age, the day of blastocyst transfer, antral follicle count, retrieved oocyte number, and endometrium thickness measured before transfer are the top five features contributing to live birth prediction. Heatmaps showed that the CNN in the AI model mainly focuses on image regions of inner cell mass and trophectoderm (TE) for live birth prediction, and the contribution of TE-related features was greater in the CNN trained with the inclusion of patient couple's clinical features compared with the CNN trained with blastocyst images alone.Conclusions:The results suggest that the inclusion of patient couple’s clinical features along with blastocyst images increases live birth prediction accuracy.Funding:Natural Sciences and Engineering Research Council of Canada and the Canada Research Chairs Program.",
+  "pub_date": "2023-02-22",
+  "authors": [
+    {
+      "given_names": "Hang",
+      "surname": "Liu",
+      "orcid": "0000-0001-7948-4236",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Zhuoran",
+      "surname": "Zhang",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Yifan",
+      "surname": "Gu",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Changsheng",
+      "surname": "Dai",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Guanqiao",
+      "surname": "Shan",
+      "orcid": "0000-0002-2570-769X",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Haocong",
+      "surname": "Song",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Daniel",
+      "surname": "Li",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Wenyuan",
+      "surname": "Chen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Ge",
+      "surname": "Lin",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3",
+        "aff4",
+        "aff6",
+        "aff7"
+      ],
+      "corresponding": true,
+      "position": 9
+    },
+    {
+      "given_names": "Yu",
+      "surname": "Sun",
+      "orcid": "0000-0001-7895-0741",
+      "affiliation_ids": [
+        "aff1",
+        "aff5",
+        "aff8",
+        "aff9"
+      ],
+      "corresponding": true,
+      "position": 10
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Department of Mechanical Engineering, University of Toronto",
+      "department": null,
+      "city": "Toronto",
+      "country": "Canada",
+      "ror": "03dbr7087"
+    },
+    {
+      "id": "aff2",
+      "institution": "School of Science and Engineering, The Chinese University of Hong Kong-Shenzhen",
+      "department": null,
+      "city": "Shenzhen",
+      "country": "China",
+      "ror": "00t33hh48"
+    },
+    {
+      "id": "aff3",
+      "institution": "Institute of Reproductive and Stem Cell Engineering, School of Basic Medical Science, Central South University",
+      "department": null,
+      "city": "Changsha",
+      "country": "China",
+      "ror": "00f1zfq44"
+    },
+    {
+      "id": "aff4",
+      "institution": "Reproductive and Genetic Hospital of CITIC-Xiangya",
+      "department": null,
+      "city": "Changsha",
+      "country": "China",
+      "ror": "01ar3e651"
+    },
+    {
+      "id": "aff5",
+      "institution": "Department of Electrical and Computer Engineering",
+      "department": null,
+      "city": "Toronto",
+      "country": "Canada",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "Key Laboratory of Reproductive and Stem Cell Engineering, National Health and Family Planning Commission",
+      "department": null,
+      "city": "Changsha",
+      "country": "China",
+      "ror": "052eegr76"
+    },
+    {
+      "id": "aff7",
+      "institution": "National Engineering Research Center of Human Stem Cells",
+      "department": null,
+      "city": "Changsha",
+      "country": "China",
+      "ror": "02khfyc93"
+    },
+    {
+      "id": "aff8",
+      "institution": "Institute of Biomedical Engineering, University of Toronto",
+      "department": null,
+      "city": "Toronto",
+      "country": "Canada",
+      "ror": "03dbr7087"
+    },
+    {
+      "id": "aff9",
+      "institution": "Department of Computer Science, University of Toronto",
+      "department": null,
+      "city": "Toronto",
+      "country": "Canada",
+      "ror": "03dbr7087"
+    }
+  ]
 }

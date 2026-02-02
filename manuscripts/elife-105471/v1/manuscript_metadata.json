@@ -2,5 +2,129 @@
   "doi": "10.7554/eLife.105471",
   "title": "Thrifty wide-context models of B cell receptor somatic hypermutation",
   "abstract": "Somatic hypermutation (SHM) is the diversity-generating process in antibody affinity maturation. Probabilistic models of SHM are needed for analyzing rare mutations, understanding the selective forces guiding affinity maturation, and understanding the underlying biochemical process. High-throughput data offers the potential to develop and fit models of SHM on relevant data sets. In this article, we model SHM using modern frameworks. We are motivated by recent work suggesting the importance of a wider context for SHM; however, assigning an independent rate to each k-mer leads to an exponential proliferation of parameters. Thus, using convolutions on 3-mer embeddings, we develop ‘thrifty’ models of SHM of various sizes; these can have fewer free parameters than a 5-mer model and yet have a significantly wider context. These offer a slight performance improvement over a 5-mer model, and other modern model elaborations worsen performance. We also find that a per-site effect is not necessary to explain SHM patterns given nucleotide context. Also, the two current methods for fitting an SHM model—on out-of-frame sequence data and on synonymous mutations—produce significantly different results, and augmenting out-of-frame data with synonymous mutations does not aid out-of-sample performance.",
-  "pub_date": "2025-08-29"
+  "pub_date": "2025-08-29",
+  "authors": [
+    {
+      "given_names": "Kevin",
+      "surname": "Sung",
+      "orcid": "0000-0002-7289-845X",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Mackenzie M",
+      "surname": "Johnson",
+      "orcid": "0000-0002-3915-2023",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Will",
+      "surname": "Dumm",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Noah",
+      "surname": "Simon",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Hugh",
+      "surname": "Haddox",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Julia",
+      "surname": "Fukuyama",
+      "orcid": "0000-0002-7590-5563",
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Frederick A",
+      "surname": "Matsen",
+      "orcid": "0000-0003-0607-6025",
+      "affiliation_ids": [
+        "aff4",
+        "aff5",
+        "aff6"
+      ],
+      "corresponding": true,
+      "position": 7
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Computational Biology Program, Fred Hutchinson Cancer Center",
+      "department": null,
+      "city": "Seattle",
+      "country": "United States",
+      "ror": "007ps6h72"
+    },
+    {
+      "id": "aff2",
+      "institution": "Department of Biostatistics, University of Washington",
+      "department": null,
+      "city": "Seattle",
+      "country": "United States",
+      "ror": "00cvxb145"
+    },
+    {
+      "id": "aff3",
+      "institution": "Department of Statistics, Indiana University",
+      "department": null,
+      "city": "Bloomington",
+      "country": "United States",
+      "ror": "01kg8sb98"
+    },
+    {
+      "id": "aff4",
+      "institution": "Howard Hughes Medical Institute",
+      "department": null,
+      "city": "Seattle",
+      "country": "United States",
+      "ror": "006w34k90"
+    },
+    {
+      "id": "aff5",
+      "institution": "Department of Genome Sciences, University of Washington",
+      "department": null,
+      "city": "Seattle",
+      "country": "United States",
+      "ror": "00cvxb145"
+    },
+    {
+      "id": "aff6",
+      "institution": "Department of Statistics, University of Washington",
+      "department": null,
+      "city": "Seattle",
+      "country": "United States",
+      "ror": "00cvxb145"
+    }
+  ]
 }

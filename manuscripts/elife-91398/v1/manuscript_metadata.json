@@ -1,6 +1,339 @@
 {
   "doi": "10.7554/eLife.91398",
   "title": "Machine learning of dissection photographs and surface scanning for quantitative 3D neuropathology",
-  "abstract": "We present open-source tools for three-dimensional (3D) analysis of photographs of dissected slices of human brains, which are routinely acquired in brain banks but seldom used for quantitative analysis. Our tools can: (1) 3D reconstruct a volume from the photographs and, optionally, a surface scan; and (2) produce a high-resolution 3D segmentation into 11 brain regions per hemisphere (22 in total), independently of the slice thickness. Our tools can be used as a substitute for ex vivo magnetic resonance imaging (MRI), which requires access to an MRI scanner, ex vivo scanning expertise, and considerable ﬁnancial resources. We tested our tools on synthetic and real data from two NIH Alzheimer’s Disease Research Centers. The results show that our methodology yields accurate 3D reconstructions, segmentations, and volumetric measurements that are highly correlated to those from MRI. Our method also detects expected diﬀerences between post mortem conﬁrmed Alzheimer’s disease cases and controls. The tools are available in our widespread neuroimaging suite ‘FreeSurfer’ ( https://surfer.nmr.mgh.harvard.edu/fswiki/PhotoTools ).",
-  "pub_date": "2024-06-19"
+  "abstract": "We present open-source tools for three-dimensional (3D) analysis of photographs of dissected slices of human brains, which are routinely acquired in brain banks but seldom used for quantitative analysis. Our tools can: (1) 3D reconstruct a volume from the photographs and, optionally, a surface scan; and (2) produce a high-resolution 3D segmentation into 11 brain regions per hemisphere (22 in total), independently of the slice thickness. Our tools can be used as a substitute for ex vivo magnetic resonance imaging (MRI), which requires access to an MRI scanner, ex vivo scanning expertise, and considerable ﬁnancial resources. We tested our tools on synthetic and real data from two NIH Alzheimer’s Disease Research Centers. The results show that our methodology yields accurate 3D reconstructions, segmentations, and volumetric measurements that are highly correlated to those from MRI. Our method also detects expected diﬀerences between post mortem conﬁrmed Alzheimer’s disease cases and controls. The tools are available in our widespread neuroimaging suite ‘FreeSurfer’ (https://surfer.nmr.mgh.harvard.edu/fswiki/PhotoTools).",
+  "pub_date": "2024-06-19",
+  "authors": [
+    {
+      "given_names": "Harshvardhan",
+      "surname": "Gazula",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Henry FJ",
+      "surname": "Tregidgo",
+      "orcid": "0000-0002-3509-8154",
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Benjamin",
+      "surname": "Billot",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Yael",
+      "surname": "Balbastre",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Jonathan",
+      "surname": "Williams-Ramirez",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Rogeny",
+      "surname": "Herisse",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Lucas J",
+      "surname": "Deden-Binder",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Adria",
+      "surname": "Casamitjana",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Erica J",
+      "surname": "Melief",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Caitlin S",
+      "surname": "Latimer",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Mitchell D",
+      "surname": "Kilgore",
+      "orcid": "0000-0003-1101-6924",
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Mark",
+      "surname": "Montine",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Eleanor",
+      "surname": "Robinson",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Emily",
+      "surname": "Blackburn",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Michael S",
+      "surname": "Marshall",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Theresa R",
+      "surname": "Connors",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Derek H",
+      "surname": "Oakley",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Matthew P",
+      "surname": "Frosch",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Sean I",
+      "surname": "Young",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Koen",
+      "surname": "Van Leemput",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Adrian V",
+      "surname": "Dalca",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "Bruce",
+      "surname": "Fischl",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 22
+    },
+    {
+      "given_names": "Christine L",
+      "surname": "MacDonald",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 23
+    },
+    {
+      "given_names": "C Dirk",
+      "surname": "Keene",
+      "orcid": "0000-0002-5291-1469",
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 24
+    },
+    {
+      "given_names": "Bradley T",
+      "surname": "Hyman",
+      "orcid": "0000-0002-7959-9401",
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 25
+    },
+    {
+      "given_names": "Juan E",
+      "surname": "Iglesias",
+      "orcid": "0000-0001-7569-173X",
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": true,
+      "position": 26
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Martinos Center for Biomedical Imaging, MGH and Harvard Medical School",
+      "department": null,
+      "city": "Charlestown",
+      "country": "United States",
+      "ror": "002pd6e78"
+    },
+    {
+      "id": "aff2",
+      "institution": "Centre for Medical Image Computing, University College London",
+      "department": null,
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": "02jx3x895"
+    },
+    {
+      "id": "aff3",
+      "institution": "Computer Science and Artificial Intelligence Laboratory, MIT",
+      "department": null,
+      "city": "Cambridge",
+      "country": "United States",
+      "ror": "042nb2s44"
+    },
+    {
+      "id": "aff4",
+      "institution": "Biomedical Imaging Group, Universitat Politècnica de Catalunya",
+      "department": null,
+      "city": "Barcelona",
+      "country": "Spain",
+      "ror": "03mb6wj31"
+    },
+    {
+      "id": "aff5",
+      "institution": "BioRepository and Integrated Neuropathology (BRaIN) Laboratory and Precision Neuropathology Core, UW School of Medicine",
+      "department": null,
+      "city": "Seattle",
+      "country": "United States",
+      "ror": "00cvxb145"
+    },
+    {
+      "id": "aff6",
+      "institution": "Massachusetts Alzheimer Disease Research Center, MGH and Harvard Medical School",
+      "department": null,
+      "city": "Charlestown",
+      "country": "United States",
+      "ror": "002pd6e78"
+    },
+    {
+      "id": "aff7",
+      "institution": "Neuroscience and Biomedical Engineering, Aalto University",
+      "department": null,
+      "city": "Espoo",
+      "country": "Finland",
+      "ror": "020hwjq30"
+    },
+    {
+      "id": "aff8",
+      "institution": "Department of Neurological Surgery, UW School of Medicine",
+      "department": null,
+      "city": "Seattle",
+      "country": "United States",
+      "ror": "00cvxb145"
+    }
+  ]
 }

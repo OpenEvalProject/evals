@@ -1,6 +1,48 @@
 {
   "doi": "10.7554/eLife.65894",
   "title": "CEM500K, a large-scale heterogeneous unlabeled cellular electron microscopy image dataset for deep learning",
-  "abstract": "Automated segmentation of cellular electron microscopy (EM) datasets remains a challenge. Supervised deep learning (DL) methods that rely on region-of-interest (ROI) annotations yield models that fail to generalize to unrelated datasets. Newer unsupervised DL algorithms require relevant pre-training images, however, pre-training on currently available EM datasets is computationally expensive and shows little value for unseen biological contexts, as these datasets are large and homogeneous. To address this issue, we present CEM500K, a nimble 25 GB dataset of 0.5 × 10 6 unique 2D cellular EM images curated from nearly 600 three-dimensional (3D) and 10,000 two-dimensional (2D) images from >100 unrelated imaging projects. We show that models pre-trained on CEM500K learn features that are biologically relevant and resilient to meaningful image augmentations. Critically, we evaluate transfer learning from these pre-trained models on six publicly available and one newly derived benchmark segmentation task and report state-of-the-art results on each. We release the CEM500K dataset, pre-trained models and curation pipeline for model building and further expansion by the EM community. Data and code are available at https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10592/ and https://git.io/JLLTz .",
-  "pub_date": "2021-04-08"
+  "abstract": "Automated segmentation of cellular electron microscopy (EM) datasets remains a challenge. Supervised deep learning (DL) methods that rely on region-of-interest (ROI) annotations yield models that fail to generalize to unrelated datasets. Newer unsupervised DL algorithms require relevant pre-training images, however, pre-training on currently available EM datasets is computationally expensive and shows little value for unseen biological contexts, as these datasets are large and homogeneous. To address this issue, we present CEM500K, a nimble 25 GB dataset of 0.5 × 106 unique 2D cellular EM images curated from nearly 600 three-dimensional (3D) and 10,000 two-dimensional (2D) images from >100 unrelated imaging projects. We show that models pre-trained on CEM500K learn features that are biologically relevant and resilient to meaningful image augmentations. Critically, we evaluate transfer learning from these pre-trained models on six publicly available and one newly derived benchmark segmentation task and report state-of-the-art results on each. We release the CEM500K dataset, pre-trained models and curation pipeline for model building and further expansion by the EM community. Data and code are available at https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10592/ and https://git.io/JLLTz.",
+  "pub_date": "2021-04-08",
+  "authors": [
+    {
+      "given_names": "Ryan",
+      "surname": "Conrad",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Kedar",
+      "surname": "Narayan",
+      "orcid": "0000-0001-7982-6494",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": true,
+      "position": 2
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Center for Molecular Microscopy, Center for Cancer Research, National Cancer Institute, National Institutes of Health",
+      "department": null,
+      "city": "Bethesda",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Cancer Research Technology Program, Frederick National Laboratory for Cancer Research",
+      "department": null,
+      "city": "Frederick",
+      "country": "United States",
+      "ror": null
+    }
+  ]
 }

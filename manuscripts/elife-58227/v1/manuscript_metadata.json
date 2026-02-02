@@ -1,6 +1,464 @@
 {
   "doi": "10.7554/eLife.58227",
   "title": "Augmented curation of clinical notes from a massive EHR system reveals symptoms of impending COVID-19 diagnosis",
-  "abstract": "Understanding temporal dynamics of COVID-19 patient symptoms could provide fine-grained resolution to guide clinical decision-making. Here, we use deep neural networks over an institution-wide platform for the augmented curation of clinical notes from 77,167 patients subjected to COVID-19 PCR testing. By contrasting Electronic Health Record (EHR)-derived symptoms  of COVID-19-positive (COVID ; n=2,317) versus COVID-19-negative (COVID pos ; n=74,850) patients for the week preceding the PCR testing date, we identify anosmia/dysgeusia (27.1-fold), fever/chills (2.6-fold), respiratory difficulty (2.2-fold), cough (2.2-fold), myalgia/arthralgia (2-fold), and diarrhea (1.4-fold) as significantly amplified in COVID neg over COVID pos patients. The combination of cough and fever/chills has 4.2-fold amplification in COVID neg patients during the week prior to PCR testing, and along with anosmia/dysgeusia, constitutes the earliest EHR-derived signature of COVID-19. This study introduces an pos Augmented Intelligence platform for the real-time synthesis of institutional biomedical knowledge. The platform holds tremendous potential for scaling up curation throughput, thus enabling EHR-powered early disease diagnosis.",
-  "pub_date": "2020-07-07"
+  "abstract": "Understanding temporal dynamics of COVID-19 patient symptoms could provide fine-grained resolution to guide clinical decision-making. Here, we use deep neural networks over an institution-wide platform for the augmented curation of clinical notes from 77,167 patients subjected to COVID-19 PCR testing. By contrasting Electronic Health Record (EHR)-derived symptoms  of COVID-19-positive (COVIDpos; n=2,317) versus COVID-19-negative (COVIDneg; n=74,850) patients for the week preceding the PCR testing date, we identify anosmia/dysgeusia (27.1-fold), fever/chills (2.6-fold), respiratory difficulty (2.2-fold), cough (2.2-fold), myalgia/arthralgia (2-fold), and diarrhea (1.4-fold) as significantly amplified in COVIDpos over COVIDneg patients. The combination of cough and fever/chills has 4.2-fold amplification in COVIDpos patients during the week prior to PCR testing, and along with anosmia/dysgeusia, constitutes the earliest EHR-derived signature of COVID-19. This study introduces an Augmented Intelligence platform for the real-time synthesis of institutional biomedical knowledge. The platform holds tremendous potential for scaling up curation throughput, thus enabling EHR-powered early disease diagnosis.",
+  "pub_date": "2020-07-07",
+  "authors": [
+    {
+      "given_names": "Tyler",
+      "surname": "Wagner",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "FNU",
+      "surname": "Shweta",
+      "orcid": "0000-0001-6634-6272",
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Karthik",
+      "surname": "Murugadoss",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Samir",
+      "surname": "Awasthi",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "AJ",
+      "surname": "Venkatakrishnan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Sairam",
+      "surname": "Bade",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Arjun",
+      "surname": "Puranik",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Martin",
+      "surname": "Kang",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Brian W",
+      "surname": "Pickering",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "John C",
+      "surname": "O'Horo",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Philippe R",
+      "surname": "Bauer",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Raymund R",
+      "surname": "Razonable",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Paschalis",
+      "surname": "Vergidis",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Zelalem",
+      "surname": "Temesgen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Stacey",
+      "surname": "Rizza",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Maryam",
+      "surname": "Mahmood",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Walter R",
+      "surname": "Wilson",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Douglas",
+      "surname": "Challener",
+      "orcid": "0000-0002-6964-9639",
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Praveen",
+      "surname": "Anand",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Matt",
+      "surname": "Liebers",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Zainab",
+      "surname": "Doctor",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "Eli",
+      "surname": "Silvert",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 22
+    },
+    {
+      "given_names": "Hugo",
+      "surname": "Solomon",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 23
+    },
+    {
+      "given_names": "Akash",
+      "surname": "Anand",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff14"
+      ],
+      "corresponding": false,
+      "position": 24
+    },
+    {
+      "given_names": "Rakesh",
+      "surname": "Barve",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff15"
+      ],
+      "corresponding": false,
+      "position": 25
+    },
+    {
+      "given_names": "Gregory",
+      "surname": "Gores",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 26
+    },
+    {
+      "given_names": "Amy W",
+      "surname": "Williams",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff16"
+      ],
+      "corresponding": true,
+      "position": 27
+    },
+    {
+      "given_names": "William G",
+      "surname": "Morice",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff17"
+      ],
+      "corresponding": false,
+      "position": 28
+    },
+    {
+      "given_names": "John",
+      "surname": "Halamka",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff18"
+      ],
+      "corresponding": false,
+      "position": 29
+    },
+    {
+      "given_names": "Andrew",
+      "surname": "Badley, MD",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff18"
+      ],
+      "corresponding": true,
+      "position": 30
+    },
+    {
+      "given_names": "Venky",
+      "surname": "Soundararajan",
+      "orcid": "0000-0001-7434-9211",
+      "affiliation_ids": [
+        "aff13"
+      ],
+      "corresponding": true,
+      "position": 31
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "nference",
+      "department": "R and D",
+      "city": "Cambridge",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Mayo Clinic",
+      "department": "Department of Medicine",
+      "city": "Rochester",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "nference",
+      "department": "Data Sciences",
+      "city": "Cambridge",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "nference Labs",
+      "department": "Data Sciences",
+      "city": "Bangalore",
+      "country": "India",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "nference",
+      "department": "Data Science",
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "Mayo Clinic",
+      "department": "Department of Anesthesiology and Perioperative Medicine",
+      "city": "Rochester",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff7",
+      "institution": "Mayo Clinic",
+      "department": "Division of Infectious Diseases, Division of Pulmonary and Critical Care Medicine, Department of Internal Medicine",
+      "city": "Rochester",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff8",
+      "institution": "Mayo Clinic",
+      "department": "Division of Pulmonary and Critical Care Medicine, Department of Internal Medicine",
+      "city": "Rochester",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff9",
+      "institution": "Mayo Clinic",
+      "department": "Division of Infectious Diseases, Department of Internal Medicine",
+      "city": "Rochester",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff10",
+      "institution": "Mayo Clinic",
+      "department": "Infectious Diseases",
+      "city": "Rochester",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff11",
+      "institution": "Mayo Clinic",
+      "department": "Department of Orthopedic Surgery, Division of Infectious Diseases, Department of Internal Medicine",
+      "city": "Rochester",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff12",
+      "institution": "nference",
+      "department": "R and D",
+      "city": "Bangalore",
+      "country": "India",
+      "ror": null
+    },
+    {
+      "id": "aff13",
+      "institution": "nference",
+      "department": "R&D",
+      "city": "Cambridge",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff14",
+      "institution": "nference",
+      "department": "Data Science",
+      "city": "Bangalore",
+      "country": "India",
+      "ror": null
+    },
+    {
+      "id": "aff15",
+      "institution": "nference",
+      "department": "Data Sciences",
+      "city": "Bangalore",
+      "country": "India",
+      "ror": null
+    },
+    {
+      "id": "aff16",
+      "institution": "Mayo Clinic",
+      "department": "Division of Nephrology & Internal Medicine, Department of Internal Medicine",
+      "city": "Rochester",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff17",
+      "institution": "Mayo Clinic Laboratories",
+      "department": "Division of Hematopathology, Department of Laboratory Medicine and Pathology",
+      "city": "Rochester",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff18",
+      "institution": "Mayo Clinic",
+      "department": "Mayo Clinic Platform",
+      "city": "Rochester",
+      "country": "United States",
+      "ror": null
+    }
+  ]
 }

@@ -2,5 +2,764 @@
   "doi": "10.7554/eLife.89083",
   "title": "Multimodal analysis of methylomics and fragmentomics in plasma cell-free DNA for multi-cancer early detection and localization",
   "abstract": "Despite their promise, circulating tumor DNA (ctDNA)-based assays for multi-cancer early detection face challenges in test performance, due mostly to the limited abundance of ctDNA and its inherent variability. To address these challenges, published assays to date demanded a very high-depth sequencing, resulting in an elevated price of test. Herein, we developed a multimodal assay called SPOT-MAS (screening for the presence of tumor by methylation and size) to simultaneously profile methylomics, fragmentomics, copy number, and end motifs in a single workflow using targeted and shallow genome-wide sequencing (~0.55×) of cell-free DNA. We applied SPOT-MAS to 738 non-metastatic patients with breast, colorectal, gastric, lung, and liver cancer, and 1550 healthy controls. We then employed machine learning to extract multiple cancer and tissue-specific signatures for detecting and locating cancer. SPOT-MAS successfully detected the five cancer types with a sensitivity of 72.4% at 97.0% specificity. The sensitivities for detecting early-stage cancers were 73.9% and 62.3% for stages I and II, respectively, increasing to 88.3% for non-metastatic stage IIIA. For tumor-of-origin, our assay achieved an accuracy of 0.7. Our study demonstrates comparable performance to other ctDNA-based assays while requiring significantly lower sequencing depth, making it economically feasible for population-wide screening.",
-  "pub_date": "2023-10-11"
+  "pub_date": "2023-10-11",
+  "authors": [
+    {
+      "given_names": "Van Thien Chi",
+      "surname": "Nguyen",
+      "orcid": "0000-0002-4449-9216",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Trong Hieu",
+      "surname": "Nguyen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Nhu Nhat Tan",
+      "surname": "Doan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Thi Mong Quynh",
+      "surname": "Pham",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Giang Thi Huong",
+      "surname": "Nguyen",
+      "orcid": "0000-0001-5156-4904",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Thanh Dat",
+      "surname": "Nguyen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Thuy Thi Thu",
+      "surname": "Tran",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Duy Long",
+      "surname": "Vo",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Thanh Hai",
+      "surname": "Phan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Thanh Xuan",
+      "surname": "Jasmine",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Van Chu",
+      "surname": "Nguyen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5",
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Huu Thinh",
+      "surname": "Nguyen",
+      "orcid": "0000-0002-0981-7274",
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Trieu Vu",
+      "surname": "Nguyen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Thi Hue Hanh",
+      "surname": "Nguyen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Le Anh Khoa",
+      "surname": "Huynh",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Trung Hieu",
+      "surname": "Tran",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Quang Thong",
+      "surname": "Dang",
+      "orcid": "0000-0003-1206-8881",
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Thuy Nguyen",
+      "surname": "Doan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Anh Minh",
+      "surname": "Tran",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Viet Hai",
+      "surname": "Nguyen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Vu Tuan Anh",
+      "surname": "Nguyen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "Le Minh Quoc",
+      "surname": "Ho",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 22
+    },
+    {
+      "given_names": "Quang Dat",
+      "surname": "Tran",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 23
+    },
+    {
+      "given_names": "Thi Thu Thuy",
+      "surname": "Pham",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 24
+    },
+    {
+      "given_names": "Tan Dat",
+      "surname": "Ho",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 25
+    },
+    {
+      "given_names": "Bao Toan",
+      "surname": "Nguyen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 26
+    },
+    {
+      "given_names": "Thanh Nhan Vo",
+      "surname": "Nguyen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 27
+    },
+    {
+      "given_names": "Thanh Dang",
+      "surname": "Nguyen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 28
+    },
+    {
+      "given_names": "Dung Thai Bieu",
+      "surname": "Phu",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 29
+    },
+    {
+      "given_names": "Boi Hoan Huu",
+      "surname": "Phan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 30
+    },
+    {
+      "given_names": "Thi Loan",
+      "surname": "Vo",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 31
+    },
+    {
+      "given_names": "Thi Huong Thoang",
+      "surname": "Nai",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 32
+    },
+    {
+      "given_names": "Thuy Trang",
+      "surname": "Tran",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 33
+    },
+    {
+      "given_names": "My Hoang",
+      "surname": "Truong",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 34
+    },
+    {
+      "given_names": "Ngan Chau",
+      "surname": "Tran",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 35
+    },
+    {
+      "given_names": "Trung Kien",
+      "surname": "Le",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 36
+    },
+    {
+      "given_names": "Thanh Huong Thi",
+      "surname": "Tran",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5",
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 37
+    },
+    {
+      "given_names": "Minh Long",
+      "surname": "Duong",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5",
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 38
+    },
+    {
+      "given_names": "Hoai Phuong Thi",
+      "surname": "Bach",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5",
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 39
+    },
+    {
+      "given_names": "Van Vu",
+      "surname": "Kim",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5",
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 40
+    },
+    {
+      "given_names": "The Anh",
+      "surname": "Pham",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5",
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 41
+    },
+    {
+      "given_names": "Duc Huy",
+      "surname": "Tran",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 42
+    },
+    {
+      "given_names": "Trinh Ngoc An",
+      "surname": "Le",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 43
+    },
+    {
+      "given_names": "Truong Vinh Ngoc",
+      "surname": "Pham",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 44
+    },
+    {
+      "given_names": "Minh Triet",
+      "surname": "Le",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 45
+    },
+    {
+      "given_names": "Dac Ho",
+      "surname": "Vo",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 46
+    },
+    {
+      "given_names": "Thi Minh Thu",
+      "surname": "Tran",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 47
+    },
+    {
+      "given_names": "Minh Nguyen",
+      "surname": "Nguyen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 48
+    },
+    {
+      "given_names": "Thi Tuong Vi",
+      "surname": "Van",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 49
+    },
+    {
+      "given_names": "Anh Nhu",
+      "surname": "Nguyen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 50
+    },
+    {
+      "given_names": "Thi Trang",
+      "surname": "Tran",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 51
+    },
+    {
+      "given_names": "Vu Uyen",
+      "surname": "Tran",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 52
+    },
+    {
+      "given_names": "Minh Phong",
+      "surname": "Le",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 53
+    },
+    {
+      "given_names": "Thi Thanh",
+      "surname": "Do",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 54
+    },
+    {
+      "given_names": "Thi Van",
+      "surname": "Phan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 55
+    },
+    {
+      "given_names": "Hong-Dang Luu",
+      "surname": "Nguyen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 56
+    },
+    {
+      "given_names": "Duy Sinh",
+      "surname": "Nguyen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 57
+    },
+    {
+      "given_names": "Van Thinh",
+      "surname": "Cao",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 58
+    },
+    {
+      "given_names": "Thanh-Thuy Thi",
+      "surname": "Do",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 59
+    },
+    {
+      "given_names": "Dinh Kiet",
+      "surname": "Truong",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 60
+    },
+    {
+      "given_names": "Hung Sang",
+      "surname": "Tang",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 61
+    },
+    {
+      "given_names": "Hoa",
+      "surname": "Giang",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 62
+    },
+    {
+      "given_names": "Hoai-Nghia",
+      "surname": "Nguyen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 63
+    },
+    {
+      "given_names": "Minh-Duy",
+      "surname": "Phan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": true,
+      "position": 64
+    },
+    {
+      "given_names": "Le Son",
+      "surname": "Tran",
+      "orcid": "0000-0002-5382-3903",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": true,
+      "position": 65
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Gene Solutions",
+      "department": null,
+      "city": "Ho Chi Minh City",
+      "country": "Viet Nam",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Medical Genetics Institute",
+      "department": null,
+      "city": "Ho Chi Minh City",
+      "country": "Viet Nam",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "University Medical Center",
+      "department": null,
+      "city": "Ho Chi Minh City",
+      "country": "Viet Nam",
+      "ror": "0154qvp54"
+    },
+    {
+      "id": "aff4",
+      "institution": "MEDIC Medical Center",
+      "department": null,
+      "city": "Ho Chi Minh City",
+      "country": "Viet Nam",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "National Cancer Hospital",
+      "department": null,
+      "city": "Hanoi",
+      "country": "Viet Nam",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "Hanoi Medical University",
+      "department": null,
+      "city": "Hanoi",
+      "country": "Viet Nam",
+      "ror": "01n2t3x97"
+    },
+    {
+      "id": "aff7",
+      "institution": "Thu Duc City Hospital",
+      "department": null,
+      "city": "Ho Chi Minh City",
+      "country": "Viet Nam",
+      "ror": "04g2thr40"
+    },
+    {
+      "id": "aff8",
+      "institution": "Department of Biostatistics, Virginia Commonwealth University, School of Medicine",
+      "department": null,
+      "city": "Richmond",
+      "country": "United States",
+      "ror": "02nkdxk79"
+    },
+    {
+      "id": "aff9",
+      "institution": "Pham Ngoc Thach University of Medicine",
+      "department": null,
+      "city": "Ho Chi Minh City",
+      "country": "Viet Nam",
+      "ror": "003g49r03"
+    }
+  ]
 }

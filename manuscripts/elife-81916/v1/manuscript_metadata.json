@@ -1,6 +1,1772 @@
 {
   "doi": "10.7554/eLife.81916",
   "title": "Predictive performance of multi-model ensemble forecasts of COVID-19 across European nations",
-  "abstract": "Background: Short-term forecasts of infectious disease contribute to situational awareness and capacity planning. Based on best practice in other fields and recent insights in infectious disease epidemiology, one can maximise forecasts’ predictive performance by combining independent models into an ensemble. Here we report the performance of ensemble predictions of COVID-19 cases and deaths across Europe from March 2021 to March 2022. Methods: We created the European COVID-19 Forecast Hub, an online open-access platform where modellers upload weekly forecasts for 32 countries with results publicly visualised and evaluated. We created a weekly ensemble forecast from the equally-weighted average across individual models' predictive quantiles. We measured forecast accuracy using a baseline and relative Weighted Interval Score (rWIS). We retrospectively explored ensemble methods, including weighting by past performance. Results: We collected weekly forecasts from 48 models, of which we evaluated 29 models alongside the ensemble model. The ensemble had a consistently strong performance across countries over time, performing better on rWIS than 91% of forecasts for deaths (N=763 predictions from 20 models), and 83% forecasts for cases (N=886 predictions from 23 models). Performance remained stable over a 4-week horizon for death forecasts but declined with longer horizons for cases. Among ensemble methods, the most influential choice came from using a median average instead of the mean, regardless of weighting component models. Conclusions: Our results support combining independent models into an ensemble forecast to improve epidemiological predictions, and suggest that median averages yield better performance than methods based on means. We highlight that forecast consumers should place more weight on incident death forecasts than case forecasts at horizons greater than two weeks. Funding: European Commission, Ministerio de Ciencia, Innovación y Universidades, FEDER; Agència de Qualitat i Avaluació Sanitàries de Catalunya; Netzwerk Universitätsmedizin; Health Protection Research Unit; Wellcome Trust; European Centre for Disease Prevention and Control; Ministry of Science and Higher Education of Poland; Federal Ministry of Education and Research; Los Alamos National Laboratory; German Free State of Saxony; NCBiR; FISR 2020 Covid-19 I Fase; Spanish Ministry of Health / REACT-UE (FEDER); National Institutes of General Medical Sciences; Ministerio de Sanidad/ISCIII; PERISCOPE European H2020; PERISCOPE European H2021; InPresa; National Institutes of Health, NSF, US Centers for Disease Control and Prevention, Google, University of Virginia, Defense Threat Reduction Agency.",
-  "pub_date": "2023-04-21"
+  "abstract": "Background: Short-term forecasts of infectious disease contribute to situational awareness and capacity planning. Based on best practice in other fields and recent insights in infectious disease epidemiology, one can maximise forecasts’ predictive performance by combining independent models into an ensemble. Here we report the performance of ensemble predictions of COVID-19 cases and deaths across Europe from March 2021 to March 2022.Methods: We created the European COVID-19 Forecast Hub, an online open-access platform where modellers upload weekly forecasts for 32 countries with results publicly visualised and evaluated. We created a weekly ensemble forecast from the equally-weighted average across individual models' predictive quantiles. We measured forecast accuracy using a baseline and relative Weighted Interval Score (rWIS). We retrospectively explored ensemble methods, including weighting by past performance.Results: We collected weekly forecasts from 48 models, of which we evaluated 29 models alongside the ensemble model. The ensemble had a consistently strong performance across countries over time, performing better on rWIS than 91% of forecasts for deaths (N=763 predictions from 20 models), and 83% forecasts for cases (N=886 predictions from 23 models). Performance remained stable over a 4-week horizon for death forecasts but declined with longer horizons for cases. Among ensemble methods, the most influential choice came from using a median average instead of the mean, regardless of weighting component models.Conclusions: Our results support combining independent models into an ensemble forecast to improve epidemiological predictions, and suggest that median averages yield better performance than methods based on means. We highlight that forecast consumers should place more weight on incident death forecasts than case forecasts at horizons greater than two weeks.Funding: European Commission, Ministerio de Ciencia, Innovación y Universidades, FEDER; Agència de Qualitat i Avaluació Sanitàries de Catalunya; Netzwerk Universitätsmedizin; Health Protection Research Unit; Wellcome Trust; European Centre for Disease Prevention and Control; Ministry of Science and Higher Education of Poland; Federal Ministry of Education and Research; Los Alamos National Laboratory; German Free State of Saxony; NCBiR; FISR 2020 Covid-19 I Fase; Spanish Ministry of Health / REACT-UE (FEDER); National Institutes of General Medical Sciences; Ministerio de Sanidad/ISCIII; PERISCOPE European H2020; PERISCOPE European H2021; InPresa; National Institutes of Health, NSF, US Centers for Disease Control and Prevention, Google, University of Virginia, Defense Threat Reduction Agency.",
+  "pub_date": "2023-04-21",
+  "authors": [
+    {
+      "given_names": "Katharine",
+      "surname": "Sherratt",
+      "orcid": "0000-0003-2049-3423",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Hugo",
+      "surname": "Gruson",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Rok",
+      "surname": "Grah",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Helen",
+      "surname": "Johnson",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Rene",
+      "surname": "Niehus",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Bastian",
+      "surname": "Prasse",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Frank",
+      "surname": "Sandmann",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Jannik",
+      "surname": "Deuschel",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Daniel",
+      "surname": "Wolffram",
+      "orcid": "0000-0003-0318-3669",
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Sam",
+      "surname": "Abbott",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Alexander",
+      "surname": "Ullrich",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Graham",
+      "surname": "Gibson",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Evan L",
+      "surname": "Ray",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Nicholas G",
+      "surname": "Reich",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Daniel",
+      "surname": "Sheldon",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Yijin",
+      "surname": "Wang",
+      "orcid": "0000-0003-4438-6366",
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Nutcha",
+      "surname": "Wattanachit",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Lijing",
+      "surname": "Wang",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Jan",
+      "surname": "Trnka",
+      "orcid": "0000-0002-1786-7562",
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Guillaume",
+      "surname": "Obozinski",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Tao",
+      "surname": "Sun",
+      "orcid": "0000-0001-6357-6726",
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "Dorina",
+      "surname": "Thanou",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 22
+    },
+    {
+      "given_names": "Loic",
+      "surname": "Pottier",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 23
+    },
+    {
+      "given_names": "Ekaterina",
+      "surname": "Krymova",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 24
+    },
+    {
+      "given_names": "Jan H",
+      "surname": "Meinke",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 25
+    },
+    {
+      "given_names": "Maria Vittoria",
+      "surname": "Barbarossa",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 26
+    },
+    {
+      "given_names": "Neele",
+      "surname": "Leithäuser",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 27
+    },
+    {
+      "given_names": "Jan",
+      "surname": "Mohring",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 28
+    },
+    {
+      "given_names": "Johanna",
+      "surname": "Schneider",
+      "orcid": "0000-0002-9330-2838",
+      "affiliation_ids": [
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 29
+    },
+    {
+      "given_names": "Jaroslaw",
+      "surname": "Włazło",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 30
+    },
+    {
+      "given_names": "Jan",
+      "surname": "Fuhrmann",
+      "orcid": "0000-0002-7091-3740",
+      "affiliation_ids": [
+        "aff14"
+      ],
+      "corresponding": false,
+      "position": 31
+    },
+    {
+      "given_names": "Berit",
+      "surname": "Lange",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff15"
+      ],
+      "corresponding": false,
+      "position": 32
+    },
+    {
+      "given_names": "Isti",
+      "surname": "Rodiah",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff15"
+      ],
+      "corresponding": false,
+      "position": 33
+    },
+    {
+      "given_names": "Prasith",
+      "surname": "Baccam",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff16"
+      ],
+      "corresponding": false,
+      "position": 34
+    },
+    {
+      "given_names": "Heidi",
+      "surname": "Gurung",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff16"
+      ],
+      "corresponding": false,
+      "position": 35
+    },
+    {
+      "given_names": "Steven",
+      "surname": "Stage",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff17"
+      ],
+      "corresponding": false,
+      "position": 36
+    },
+    {
+      "given_names": "Bradley",
+      "surname": "Suchoski",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff17"
+      ],
+      "corresponding": false,
+      "position": 37
+    },
+    {
+      "given_names": "Jozef",
+      "surname": "Budzinski",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff18"
+      ],
+      "corresponding": false,
+      "position": 38
+    },
+    {
+      "given_names": "Robert",
+      "surname": "Walraven",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff19"
+      ],
+      "corresponding": false,
+      "position": 39
+    },
+    {
+      "given_names": "Inmaculada",
+      "surname": "Villanueva",
+      "orcid": "0000-0003-4940-085X",
+      "affiliation_ids": [
+        "aff20"
+      ],
+      "corresponding": false,
+      "position": 40
+    },
+    {
+      "given_names": "Vit",
+      "surname": "Tucek",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff21"
+      ],
+      "corresponding": false,
+      "position": 41
+    },
+    {
+      "given_names": "Martin",
+      "surname": "Smid",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff22"
+      ],
+      "corresponding": false,
+      "position": 42
+    },
+    {
+      "given_names": "Milan",
+      "surname": "Zajíček",
+      "orcid": "0000-0002-3226-7266",
+      "affiliation_ids": [
+        "aff22"
+      ],
+      "corresponding": false,
+      "position": 43
+    },
+    {
+      "given_names": "Cesar",
+      "surname": "Pérez Álvarez",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff23"
+      ],
+      "corresponding": false,
+      "position": 44
+    },
+    {
+      "given_names": "Borja",
+      "surname": "Reina",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff24"
+      ],
+      "corresponding": false,
+      "position": 45
+    },
+    {
+      "given_names": "Nikos I",
+      "surname": "Bosse",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 46
+    },
+    {
+      "given_names": "Sophie R",
+      "surname": "Meakin",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 47
+    },
+    {
+      "given_names": "Lauren",
+      "surname": "Castro",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff25"
+      ],
+      "corresponding": false,
+      "position": 48
+    },
+    {
+      "given_names": "Geoffrey",
+      "surname": "Fairchild",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff25"
+      ],
+      "corresponding": false,
+      "position": 49
+    },
+    {
+      "given_names": "Isaac",
+      "surname": "Michaud",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff25"
+      ],
+      "corresponding": false,
+      "position": 50
+    },
+    {
+      "given_names": "Dave",
+      "surname": "Osthus",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff25"
+      ],
+      "corresponding": false,
+      "position": 51
+    },
+    {
+      "given_names": "Pierfrancesco",
+      "surname": "Alaimo Di Loro",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff26"
+      ],
+      "corresponding": false,
+      "position": 52
+    },
+    {
+      "given_names": "Antonello",
+      "surname": "Maruotti",
+      "orcid": "0000-0001-8377-9950",
+      "affiliation_ids": [
+        "aff26"
+      ],
+      "corresponding": false,
+      "position": 53
+    },
+    {
+      "given_names": "Veronika",
+      "surname": "Eclerová",
+      "orcid": "0000-0001-8476-7740",
+      "affiliation_ids": [
+        "aff27"
+      ],
+      "corresponding": false,
+      "position": 54
+    },
+    {
+      "given_names": "Andrea",
+      "surname": "Kraus",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff27"
+      ],
+      "corresponding": false,
+      "position": 55
+    },
+    {
+      "given_names": "David",
+      "surname": "Kraus",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff27"
+      ],
+      "corresponding": false,
+      "position": 56
+    },
+    {
+      "given_names": "Lenka",
+      "surname": "Pribylova",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff27"
+      ],
+      "corresponding": false,
+      "position": 57
+    },
+    {
+      "given_names": "Bertsimas",
+      "surname": "Dimitris",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff28"
+      ],
+      "corresponding": false,
+      "position": 58
+    },
+    {
+      "given_names": "Michael Lingzhi",
+      "surname": "Li",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff28"
+      ],
+      "corresponding": false,
+      "position": 59
+    },
+    {
+      "given_names": "Soni",
+      "surname": "Saksham",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff28"
+      ],
+      "corresponding": false,
+      "position": 60
+    },
+    {
+      "given_names": "Jonas",
+      "surname": "Dehning",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff29"
+      ],
+      "corresponding": false,
+      "position": 61
+    },
+    {
+      "given_names": "Sebastian",
+      "surname": "Mohr",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff29"
+      ],
+      "corresponding": false,
+      "position": 62
+    },
+    {
+      "given_names": "Viola",
+      "surname": "Priesemann",
+      "orcid": "0000-0001-8905-5873",
+      "affiliation_ids": [
+        "aff30"
+      ],
+      "corresponding": false,
+      "position": 63
+    },
+    {
+      "given_names": "Grzegorz",
+      "surname": "Redlarski",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff31"
+      ],
+      "corresponding": false,
+      "position": 64
+    },
+    {
+      "given_names": "Benjamin",
+      "surname": "Bejar",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff32"
+      ],
+      "corresponding": false,
+      "position": 65
+    },
+    {
+      "given_names": "Giovanni",
+      "surname": "Ardenghi",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff33"
+      ],
+      "corresponding": false,
+      "position": 66
+    },
+    {
+      "given_names": "Nicola",
+      "surname": "Parolini",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff33"
+      ],
+      "corresponding": false,
+      "position": 67
+    },
+    {
+      "given_names": "Giovanni",
+      "surname": "Ziarelli",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff33"
+      ],
+      "corresponding": false,
+      "position": 68
+    },
+    {
+      "given_names": "Wolfgang",
+      "surname": "Bock",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff34"
+      ],
+      "corresponding": false,
+      "position": 69
+    },
+    {
+      "given_names": "Stefan",
+      "surname": "Heyder",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff35"
+      ],
+      "corresponding": false,
+      "position": 70
+    },
+    {
+      "given_names": "Thomas",
+      "surname": "Hotz",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff35"
+      ],
+      "corresponding": false,
+      "position": 71
+    },
+    {
+      "given_names": "David E",
+      "surname": "Singh",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff36"
+      ],
+      "corresponding": false,
+      "position": 72
+    },
+    {
+      "given_names": "Miguel",
+      "surname": "Guzman-Merino",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff36"
+      ],
+      "corresponding": false,
+      "position": 73
+    },
+    {
+      "given_names": "Jose L",
+      "surname": "Aznarte",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff37"
+      ],
+      "corresponding": false,
+      "position": 74
+    },
+    {
+      "given_names": "David",
+      "surname": "Moriña",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff38"
+      ],
+      "corresponding": false,
+      "position": 75
+    },
+    {
+      "given_names": "Sergio",
+      "surname": "Alonso",
+      "orcid": "0000-0002-3989-8757",
+      "affiliation_ids": [
+        "aff39"
+      ],
+      "corresponding": false,
+      "position": 76
+    },
+    {
+      "given_names": "Enric",
+      "surname": "Álvarez",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff39"
+      ],
+      "corresponding": false,
+      "position": 77
+    },
+    {
+      "given_names": "Daniel",
+      "surname": "López",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff39"
+      ],
+      "corresponding": false,
+      "position": 78
+    },
+    {
+      "given_names": "Clara",
+      "surname": "Prats",
+      "orcid": "0000-0002-1398-7559",
+      "affiliation_ids": [
+        "aff39"
+      ],
+      "corresponding": false,
+      "position": 79
+    },
+    {
+      "given_names": "Jan Pablo",
+      "surname": "Burgard",
+      "orcid": "0000-0002-5771-6179",
+      "affiliation_ids": [
+        "aff40"
+      ],
+      "corresponding": false,
+      "position": 80
+    },
+    {
+      "given_names": "Arne",
+      "surname": "Rodloff",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff41"
+      ],
+      "corresponding": false,
+      "position": 81
+    },
+    {
+      "given_names": "Tom",
+      "surname": "Zimmermann",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff41"
+      ],
+      "corresponding": false,
+      "position": 82
+    },
+    {
+      "given_names": "Alexander",
+      "surname": "Kuhlmann",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff42"
+      ],
+      "corresponding": false,
+      "position": 83
+    },
+    {
+      "given_names": "Janez",
+      "surname": "Zibert",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff43"
+      ],
+      "corresponding": false,
+      "position": 84
+    },
+    {
+      "given_names": "Fulvia",
+      "surname": "Pennoni",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff44"
+      ],
+      "corresponding": false,
+      "position": 85
+    },
+    {
+      "given_names": "Fabio",
+      "surname": "Divino",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff45"
+      ],
+      "corresponding": false,
+      "position": 86
+    },
+    {
+      "given_names": "Marti",
+      "surname": "Català",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff46"
+      ],
+      "corresponding": false,
+      "position": 87
+    },
+    {
+      "given_names": "Gianfranco",
+      "surname": "Lovison",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff47"
+      ],
+      "corresponding": false,
+      "position": 88
+    },
+    {
+      "given_names": "Paolo",
+      "surname": "Giudici",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff48"
+      ],
+      "corresponding": false,
+      "position": 89
+    },
+    {
+      "given_names": "Barbara",
+      "surname": "Tarantino",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff48"
+      ],
+      "corresponding": false,
+      "position": 90
+    },
+    {
+      "given_names": "Francesco",
+      "surname": "Bartolucci",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff49"
+      ],
+      "corresponding": false,
+      "position": 91
+    },
+    {
+      "given_names": "Giovanna",
+      "surname": "Jona Lasinio",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff50"
+      ],
+      "corresponding": false,
+      "position": 92
+    },
+    {
+      "given_names": "Marco",
+      "surname": "Mingione",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff50"
+      ],
+      "corresponding": false,
+      "position": 93
+    },
+    {
+      "given_names": "Alessio",
+      "surname": "Farcomeni",
+      "orcid": "0000-0002-7104-5826",
+      "affiliation_ids": [
+        "aff51"
+      ],
+      "corresponding": false,
+      "position": 94
+    },
+    {
+      "given_names": "Ajitesh",
+      "surname": "Srivastava",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff52"
+      ],
+      "corresponding": false,
+      "position": 95
+    },
+    {
+      "given_names": "Pablo",
+      "surname": "Montero-Manso",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff53"
+      ],
+      "corresponding": false,
+      "position": 96
+    },
+    {
+      "given_names": "Aniruddha",
+      "surname": "Adiga",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff54"
+      ],
+      "corresponding": false,
+      "position": 97
+    },
+    {
+      "given_names": "Benjamin",
+      "surname": "Hurt",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff54"
+      ],
+      "corresponding": false,
+      "position": 98
+    },
+    {
+      "given_names": "Bryan",
+      "surname": "Lewis",
+      "orcid": "0000-0003-0793-6082",
+      "affiliation_ids": [
+        "aff54"
+      ],
+      "corresponding": false,
+      "position": 99
+    },
+    {
+      "given_names": "Madhav",
+      "surname": "Marathe",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff54"
+      ],
+      "corresponding": false,
+      "position": 100
+    },
+    {
+      "given_names": "Przemyslaw",
+      "surname": "Porebski",
+      "orcid": "0000-0001-8012-5791",
+      "affiliation_ids": [
+        "aff54"
+      ],
+      "corresponding": false,
+      "position": 101
+    },
+    {
+      "given_names": "Srinivasan",
+      "surname": "Venkatramanan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff54"
+      ],
+      "corresponding": false,
+      "position": 102
+    },
+    {
+      "given_names": "Rafal P",
+      "surname": "Bartczuk",
+      "orcid": "0000-0002-0433-7327",
+      "affiliation_ids": [
+        "aff55"
+      ],
+      "corresponding": false,
+      "position": 103
+    },
+    {
+      "given_names": "Filip",
+      "surname": "Dreger",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff55"
+      ],
+      "corresponding": false,
+      "position": 104
+    },
+    {
+      "given_names": "Anna",
+      "surname": "Gambin",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff55"
+      ],
+      "corresponding": false,
+      "position": 105
+    },
+    {
+      "given_names": "Krzysztof",
+      "surname": "Gogolewski",
+      "orcid": "0000-0001-5523-5198",
+      "affiliation_ids": [
+        "aff55"
+      ],
+      "corresponding": false,
+      "position": 106
+    },
+    {
+      "given_names": "Magdalena",
+      "surname": "Gruziel-Słomka",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff55"
+      ],
+      "corresponding": false,
+      "position": 107
+    },
+    {
+      "given_names": "Bartosz",
+      "surname": "Krupa",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff55"
+      ],
+      "corresponding": false,
+      "position": 108
+    },
+    {
+      "given_names": "Antoni",
+      "surname": "Moszyński",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff55"
+      ],
+      "corresponding": false,
+      "position": 109
+    },
+    {
+      "given_names": "Karol",
+      "surname": "Niedzielewski",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff55"
+      ],
+      "corresponding": false,
+      "position": 110
+    },
+    {
+      "given_names": "Jedrzej",
+      "surname": "Nowosielski",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff55"
+      ],
+      "corresponding": false,
+      "position": 111
+    },
+    {
+      "given_names": "Maciej",
+      "surname": "Radwan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff55"
+      ],
+      "corresponding": false,
+      "position": 112
+    },
+    {
+      "given_names": "Franciszek",
+      "surname": "Rakowski",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff55"
+      ],
+      "corresponding": false,
+      "position": 113
+    },
+    {
+      "given_names": "Marcin",
+      "surname": "Semeniuk",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff55"
+      ],
+      "corresponding": false,
+      "position": 114
+    },
+    {
+      "given_names": "Ewa",
+      "surname": "Szczurek",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff55"
+      ],
+      "corresponding": false,
+      "position": 115
+    },
+    {
+      "given_names": "Jakub",
+      "surname": "Zieliński",
+      "orcid": "0000-0001-8935-8137",
+      "affiliation_ids": [
+        "aff55"
+      ],
+      "corresponding": false,
+      "position": 116
+    },
+    {
+      "given_names": "Jan",
+      "surname": "Kisielewski",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff55"
+      ],
+      "corresponding": false,
+      "position": 117
+    },
+    {
+      "given_names": "Barbara",
+      "surname": "Pabjan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff56"
+      ],
+      "corresponding": false,
+      "position": 118
+    },
+    {
+      "given_names": "Holger",
+      "surname": "Kirsten",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff57"
+      ],
+      "corresponding": false,
+      "position": 119
+    },
+    {
+      "given_names": "Yuri",
+      "surname": "Kheifetz",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff57"
+      ],
+      "corresponding": false,
+      "position": 120
+    },
+    {
+      "given_names": "Markus",
+      "surname": "Scholz",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff57"
+      ],
+      "corresponding": false,
+      "position": 121
+    },
+    {
+      "given_names": "Przemyslaw",
+      "surname": "Biecek",
+      "orcid": "0000-0001-8423-1823",
+      "affiliation_ids": [
+        "aff58"
+      ],
+      "corresponding": false,
+      "position": 122
+    },
+    {
+      "given_names": "Marcin",
+      "surname": "Bodych",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff59"
+      ],
+      "corresponding": false,
+      "position": 123
+    },
+    {
+      "given_names": "Maciej",
+      "surname": "Filinski",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff59"
+      ],
+      "corresponding": false,
+      "position": 124
+    },
+    {
+      "given_names": "Radoslaw",
+      "surname": "Idzikowski",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff59"
+      ],
+      "corresponding": false,
+      "position": 125
+    },
+    {
+      "given_names": "Tyll",
+      "surname": "Krueger",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff59"
+      ],
+      "corresponding": false,
+      "position": 126
+    },
+    {
+      "given_names": "Tomasz",
+      "surname": "Ozanski",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff59"
+      ],
+      "corresponding": false,
+      "position": 127
+    },
+    {
+      "given_names": "Johannes",
+      "surname": "Bracher",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 128
+    },
+    {
+      "given_names": "Sebastian",
+      "surname": "Funk",
+      "orcid": "0000-0002-2842-3406",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 129
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "London School of Hygiene and Tropical Medicine",
+      "department": "Centre for the Mathematical Modelling of Infectious Diseases",
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "European Centre for Disease Prevention and Control",
+      "department": null,
+      "city": "Stockholm",
+      "country": "Sweden",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "Karlsruhe Institute of Technology",
+      "department": null,
+      "city": "Karlsruhe",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "Robert Koch Institute",
+      "department": null,
+      "city": "Berlin",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "University of Massachusetts Amherst",
+      "department": null,
+      "city": "Amherst",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "Boston Children's Hospital",
+      "department": null,
+      "city": "Boston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff7",
+      "institution": "Charles University",
+      "department": "Department of Biochemistry, Cell and Molecular Biology",
+      "city": "Prague",
+      "country": "Czech Republic",
+      "ror": null
+    },
+    {
+      "id": "aff8",
+      "institution": "École Polytechnique Fédérale de Lausanne",
+      "department": null,
+      "city": "Lausanne",
+      "country": "Switzerland",
+      "ror": null
+    },
+    {
+      "id": "aff9",
+      "institution": "Éducation Nationale",
+      "department": null,
+      "city": "Valbonne",
+      "country": "France",
+      "ror": null
+    },
+    {
+      "id": "aff10",
+      "institution": "Eidgenössische Technische Hochschule Zürich",
+      "department": null,
+      "city": "Zurich",
+      "country": "Switzerland",
+      "ror": null
+    },
+    {
+      "id": "aff11",
+      "institution": "Forschungszentrum Jülich",
+      "department": null,
+      "city": "Jülich",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff12",
+      "institution": "Frankfurt Institute for Advanced Studies",
+      "department": null,
+      "city": "Frankfurt",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff13",
+      "institution": "Fraunhofer Institute for Industrial Mathematics",
+      "department": null,
+      "city": "Kaiserslautern",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff14",
+      "institution": "Heidelberg University",
+      "department": null,
+      "city": "Heidelberg",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff15",
+      "institution": "Helmholtz Centre for Infection Research",
+      "department": null,
+      "city": "Braunschweig",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff16",
+      "institution": "IEM Inc",
+      "department": null,
+      "city": "Bel Air",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff17",
+      "institution": "IEM Inc",
+      "department": null,
+      "city": "Baton Rouge",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff18",
+      "institution": "Independent",
+      "department": null,
+      "city": "Vienna",
+      "country": "Austria",
+      "ror": null
+    },
+    {
+      "id": "aff19",
+      "institution": "Independent",
+      "department": null,
+      "city": "Davis",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff20",
+      "institution": "Universitat Pompeu Fabra",
+      "department": "Institut d'Investigacions Biomediques August Pi i Sunyer",
+      "city": "Barcelona",
+      "country": "Spain",
+      "ror": null
+    },
+    {
+      "id": "aff21",
+      "institution": "Institute of Computer Science",
+      "department": null,
+      "city": "Prague",
+      "country": "Czech Republic",
+      "ror": null
+    },
+    {
+      "id": "aff22",
+      "institution": "Institute of Information Theory and Automation",
+      "department": null,
+      "city": "Prague",
+      "country": "Czech Republic",
+      "ror": null
+    },
+    {
+      "id": "aff23",
+      "institution": "Inverence",
+      "department": null,
+      "city": "Madrid",
+      "country": "Spain",
+      "ror": null
+    },
+    {
+      "id": "aff24",
+      "institution": "Inverence",
+      "department": null,
+      "city": "Madrud",
+      "country": "Spain",
+      "ror": null
+    },
+    {
+      "id": "aff25",
+      "institution": "Los Alamos National Laboratory",
+      "department": null,
+      "city": "Los Alamos",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff26",
+      "institution": "LUMSA University",
+      "department": null,
+      "city": "Rome",
+      "country": "Italy",
+      "ror": null
+    },
+    {
+      "id": "aff27",
+      "institution": "Masaryk University",
+      "department": null,
+      "city": "Brno",
+      "country": "Czech Republic",
+      "ror": null
+    },
+    {
+      "id": "aff28",
+      "institution": "Massachusetts Institute of Technology",
+      "department": null,
+      "city": "Cambridge",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff29",
+      "institution": "Max-Planck-Institut fur Dynamik und Selbstorganisation",
+      "department": null,
+      "city": "Göttingen",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff30",
+      "institution": "Max Planck Institute for Dynamics and Self-Organization",
+      "department": "MPRG Priesemann",
+      "city": "Göttingen",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff31",
+      "institution": "Medical University of Gdansk",
+      "department": null,
+      "city": "Gdańsk",
+      "country": "Poland",
+      "ror": null
+    },
+    {
+      "id": "aff32",
+      "institution": "Paul Scherrer Institute",
+      "department": null,
+      "city": "Villigen",
+      "country": "Switzerland",
+      "ror": null
+    },
+    {
+      "id": "aff33",
+      "institution": "Politecnico di Milano",
+      "department": null,
+      "city": "Milan",
+      "country": "Italy",
+      "ror": null
+    },
+    {
+      "id": "aff34",
+      "institution": "Technical University of Kaiserlautern",
+      "department": null,
+      "city": "Kaiserslautern",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff35",
+      "institution": "Technische Universitat Ilmenau",
+      "department": null,
+      "city": "Ilmenau",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff36",
+      "institution": "Universidad Carlos III de Madrid",
+      "department": null,
+      "city": "Leganes",
+      "country": "Spain",
+      "ror": null
+    },
+    {
+      "id": "aff37",
+      "institution": "Universidad Nacional de Educacion a Distancia",
+      "department": null,
+      "city": "Madrid",
+      "country": "Spain",
+      "ror": null
+    },
+    {
+      "id": "aff38",
+      "institution": "Universitat de Barcelona",
+      "department": null,
+      "city": "Barcelona",
+      "country": "Spain",
+      "ror": null
+    },
+    {
+      "id": "aff39",
+      "institution": "Universitat Politecnica de Catalunya",
+      "department": null,
+      "city": "Barcelona",
+      "country": "Spain",
+      "ror": null
+    },
+    {
+      "id": "aff40",
+      "institution": "Universitat Trier",
+      "department": null,
+      "city": "Trier",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff41",
+      "institution": "University of Cologne",
+      "department": null,
+      "city": "Cologne",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff42",
+      "institution": "University of Halle",
+      "department": null,
+      "city": "Halle",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff43",
+      "institution": "University of Ljubljana",
+      "department": null,
+      "city": "Ljubljana",
+      "country": "Slovenia",
+      "ror": null
+    },
+    {
+      "id": "aff44",
+      "institution": "University of Milano-Bicocca",
+      "department": null,
+      "city": "Milano",
+      "country": "Italy",
+      "ror": null
+    },
+    {
+      "id": "aff45",
+      "institution": "University of Molise",
+      "department": null,
+      "city": "Pesche",
+      "country": "Italy",
+      "ror": null
+    },
+    {
+      "id": "aff46",
+      "institution": "University of Oxford",
+      "department": null,
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff47",
+      "institution": "University of Palermo",
+      "department": null,
+      "city": "Palermo",
+      "country": "Italy",
+      "ror": null
+    },
+    {
+      "id": "aff48",
+      "institution": "University of Pavia",
+      "department": null,
+      "city": "Pavia",
+      "country": "Italy",
+      "ror": null
+    },
+    {
+      "id": "aff49",
+      "institution": "University of Perugia",
+      "department": null,
+      "city": "Perugia",
+      "country": "Italy",
+      "ror": null
+    },
+    {
+      "id": "aff50",
+      "institution": "University of Rome La Sapienza",
+      "department": null,
+      "city": "Rome",
+      "country": "Italy",
+      "ror": null
+    },
+    {
+      "id": "aff51",
+      "institution": "University of Rome Tor Vergata",
+      "department": null,
+      "city": "Rome",
+      "country": "Italy",
+      "ror": null
+    },
+    {
+      "id": "aff52",
+      "institution": "University of Southern California",
+      "department": null,
+      "city": "Los Angeles",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff53",
+      "institution": "University of Sydney",
+      "department": null,
+      "city": "Sydney",
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "aff54",
+      "institution": "University of Virginia",
+      "department": null,
+      "city": "Charlottesville",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff55",
+      "institution": "University of Warsaw",
+      "department": null,
+      "city": "Warsaw",
+      "country": "Poland",
+      "ror": null
+    },
+    {
+      "id": "aff56",
+      "institution": "University of Wrocla",
+      "department": null,
+      "city": "Wroclaw",
+      "country": "Poland",
+      "ror": null
+    },
+    {
+      "id": "aff57",
+      "institution": "Universtat Leipzig",
+      "department": null,
+      "city": "Leipzig",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff58",
+      "institution": "Wroclaw University of Technology",
+      "department": null,
+      "city": "Warsaw",
+      "country": "Poland",
+      "ror": null
+    },
+    {
+      "id": "aff59",
+      "institution": "Wroclaw University of Science and Technology",
+      "department": null,
+      "city": "Wroclaw",
+      "country": "Poland",
+      "ror": null
+    }
+  ]
 }

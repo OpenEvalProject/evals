@@ -1,6 +1,323 @@
 {
   "doi": "10.7554/eLife.67667",
   "title": "Unifying the known and unknown microbial coding sequence space",
-  "abstract": "Genes of unknown function are among the biggest challenges in molecular biology, especially in microbial systems, where 40–60% of the predicted genes are unknown. Despite previous attempts, systematic approaches to include the unknown fraction into analytical workflows are still lacking. Here, we present a conceptual framework, its translation into the computational workflow AGNOSTOS and a demonstration on how we can bridge the known-unknown gap in genomes and metagenomes. By analyzing 415,971,742 genes predicted from 1749 metagenomes and 28,941 bacterial and archaeal genomes, we quantify the extent of the unknown fraction, its diversity, and its relevance across multiple organisms and environments. The unknown sequence space is exceptionally diverse, phylogenetically more conserved than the known fraction and predominantly taxonomically restricted at the species level. From the 71 M genes identified to be of unknown function, we compiled a collection of 283,874 lineage-specific genes of unknown function for Cand . Patescibacteria (also known as Candidate Phyla Radiation, CPR), which provides a significant resource to expand our understanding of their unusual biology. Finally, by identifying a target gene of unknown function for antibiotic resistance, we demonstrate how we can enable the generation of hypotheses that can be used to augment experimental data.",
-  "pub_date": "2022-03-31"
+  "abstract": "Genes of unknown function are among the biggest challenges in molecular biology, especially in microbial systems, where 40–60% of the predicted genes are unknown. Despite previous attempts, systematic approaches to include the unknown fraction into analytical workflows are still lacking. Here, we present a conceptual framework, its translation into the computational workflow AGNOSTOS and a demonstration on how we can bridge the known-unknown gap in genomes and metagenomes. By analyzing 415,971,742 genes predicted from 1749 metagenomes and 28,941 bacterial and archaeal genomes, we quantify the extent of the unknown fraction, its diversity, and its relevance across multiple organisms and environments. The unknown sequence space is exceptionally diverse, phylogenetically more conserved than the known fraction and predominantly taxonomically restricted at the species level. From the 71 M genes identified to be of unknown function, we compiled a collection of 283,874 lineage-specific genes of unknown function for Cand. Patescibacteria (also known as Candidate Phyla Radiation, CPR), which provides a significant resource to expand our understanding of their unusual biology. Finally, by identifying a target gene of unknown function for antibiotic resistance, we demonstrate how we can enable the generation of hypotheses that can be used to augment experimental data.",
+  "pub_date": "2022-03-31",
+  "authors": [
+    {
+      "given_names": "Chiara",
+      "surname": "Vanni",
+      "orcid": "0000-0002-1124-1147",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Matthew S",
+      "surname": "Schechter",
+      "orcid": "0000-0002-8435-3203",
+      "affiliation_ids": [
+        "aff1",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Silvia G",
+      "surname": "Acinas",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Albert",
+      "surname": "Barberán",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Pier Luigi",
+      "surname": "Buttigieg",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Emilio O",
+      "surname": "Casamayor",
+      "orcid": "0000-0001-7074-3318",
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Tom O",
+      "surname": "Delmont",
+      "orcid": "0000-0001-7053-7848",
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Carlos M",
+      "surname": "Duarte",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "A Murat",
+      "surname": "Eren",
+      "orcid": "0000-0001-9013-4827",
+      "affiliation_ids": [
+        "aff3",
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Robert D",
+      "surname": "Finn",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Renzo",
+      "surname": "Kottmann",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Alex",
+      "surname": "Mitchell",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Pablo",
+      "surname": "Sánchez",
+      "orcid": "0000-0003-2787-822X",
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Kimmo",
+      "surname": "Siren",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Martin",
+      "surname": "Steinegger",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff13",
+        "aff14"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Frank Oliver",
+      "surname": "Gloeckner",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2",
+        "aff15",
+        "aff16"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Antonio",
+      "surname": "Fernàndez-Guerra",
+      "orcid": "0000-0002-8679-490X",
+      "affiliation_ids": [
+        "aff1",
+        "aff17"
+      ],
+      "corresponding": true,
+      "position": 17
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Microbial Genomics and Bioinformatics Research G, Max Planck Institute for Marine Microbiology",
+      "department": null,
+      "city": "Bremen",
+      "country": "Germany",
+      "ror": "02385fa51"
+    },
+    {
+      "id": "aff2",
+      "institution": "Jacobs University Bremen",
+      "department": null,
+      "city": "Bremen",
+      "country": "Germany",
+      "ror": "02yrs2n53"
+    },
+    {
+      "id": "aff3",
+      "institution": "Department of Medicine, University of Chicago",
+      "department": null,
+      "city": "Chicago",
+      "country": "United States",
+      "ror": "024mw5h28"
+    },
+    {
+      "id": "aff4",
+      "institution": "Department of Marine Biology and Oceanography, Institut de Ciències del Mar (CSIC)",
+      "department": null,
+      "city": "Barcelona",
+      "country": "Spain",
+      "ror": "05ect0289"
+    },
+    {
+      "id": "aff5",
+      "institution": "Department of Environmental Science, University of Arizona",
+      "department": null,
+      "city": "Tucson",
+      "country": "United States",
+      "ror": "03m2x1q45"
+    },
+    {
+      "id": "aff6",
+      "institution": "Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research, Alfred Wegener Institute",
+      "department": null,
+      "city": "Bremerhaven",
+      "country": "Germany",
+      "ror": "032e6b942"
+    },
+    {
+      "id": "aff7",
+      "institution": "Center for Advanced Studies of Blanes CEAB-CSIC, Spanish Council for Research",
+      "department": null,
+      "city": "Blanes",
+      "country": "Spain",
+      "ror": "019pzjm43"
+    },
+    {
+      "id": "aff8",
+      "institution": "Génomique Métabolique, Genoscope, Institut François Jacob, CEA, CNRS, Univ Evry, Université Paris-Saclay",
+      "department": null,
+      "city": "Evry",
+      "country": "France",
+      "ror": "00xc55v17"
+    },
+    {
+      "id": "aff9",
+      "institution": "Red Sea Research Centre and Computational Bioscience Research Center, King Abdullah University of Science and Technology",
+      "department": null,
+      "city": "Thuwal",
+      "country": "Saudi Arabia",
+      "ror": "01q3tbs38"
+    },
+    {
+      "id": "aff10",
+      "institution": "Josephine Bay Paul Center, Marine Biological Laboratory",
+      "department": null,
+      "city": "Woods Hole",
+      "country": "United States",
+      "ror": "046dg4z72"
+    },
+    {
+      "id": "aff11",
+      "institution": "European Molecular Biology Laboratory, European Bioinformatics Institute (EMBL-EBI), Wellcome Genome Campus",
+      "department": null,
+      "city": "Hinxton",
+      "country": "United Kingdom",
+      "ror": "02catss52"
+    },
+    {
+      "id": "aff12",
+      "institution": "Section for Evolutionary Genomics, The GLOBE Institute, University of Copenhagen",
+      "department": null,
+      "city": "Copenhagen",
+      "country": "Denmark",
+      "ror": "035b05819"
+    },
+    {
+      "id": "aff13",
+      "institution": "School of Biological Sciences, Seoul National University",
+      "department": null,
+      "city": "Seoul",
+      "country": "Republic of Korea",
+      "ror": "04h9pn542"
+    },
+    {
+      "id": "aff14",
+      "institution": "Institute of Molecular Biology and Genetics, Seoul National University",
+      "department": null,
+      "city": "Seoul",
+      "country": "Republic of Korea",
+      "ror": "04h9pn542"
+    },
+    {
+      "id": "aff15",
+      "institution": "University of Bremen and Life Sciences and Chemistry",
+      "department": null,
+      "city": "Bremen",
+      "country": "Germany",
+      "ror": "04ers2y35"
+    },
+    {
+      "id": "aff16",
+      "institution": "Computing Center, Helmholtz Center for Polar and Marine Research",
+      "department": null,
+      "city": "Bremerhaven",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff17",
+      "institution": "Lundbeck Foundation GeoGenetics Centre, GLOBE Institute, University of Copenhagen",
+      "department": null,
+      "city": "Copenhagen",
+      "country": "Denmark",
+      "ror": "035b05819"
+    }
+  ]
 }

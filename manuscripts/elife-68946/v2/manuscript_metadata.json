@@ -1,6 +1,103 @@
 {
   "doi": "10.7554/eLife.68946",
   "title": "Locating macromolecular assemblies in cells by 2D template matching with cisTEM",
-  "abstract": "For a more complete understanding of molecular mechanisms, it is important to study macromolecules and their assemblies in the broader context of the cell. This context can be visualized at nanometer resolution in three dimensions (3D) using electron cryo-tomography, which requires tilt series to be recorded and computationally aligned, currently limiting throughput. Additionally, the high-resolution signal preserved in the raw tomograms is currently limited by a number of technical difficulties, leading to an increased false-positive detection rate when using 3D template matching to find molecular complexes in tomograms. We have recently described a 2D template matching approach that addresses these issues by including high-resolution signal preserved in single-tilt images. A current limitation of this approach is the high computational cost that limits throughput. We describe here a GPU-accelerated implementation of 2D template matching in the image processing software cis TEM that allows for easy scaling and improves the accessibility of this approach. We apply 2D template matching to identify ribosomes in images of frozen-hydrated Mycoplasma pneumoniae cells with high precision and sensitivity, demonstrating that this is a versatile tool for in situ visual proteomics and in situ structure determination. We benchmark the results with 3D template matching of tomograms acquired on identical sample locations and identify strengths and weaknesses of both techniques, which offer complementary information about target localization and identity.",
-  "pub_date": "2021-06-11"
+  "abstract": "For a more complete understanding of molecular mechanisms, it is important to study macromolecules and their assemblies in the broader context of the cell. This context can be visualized at nanometer resolution in three dimensions (3D) using electron cryo-tomography, which requires tilt series to be recorded and computationally aligned, currently limiting throughput. Additionally, the high-resolution signal preserved in the raw tomograms is currently limited by a number of technical difficulties, leading to an increased false-positive detection rate when using 3D template matching to find molecular complexes in tomograms. We have recently described a 2D template matching approach that addresses these issues by including high-resolution signal preserved in single-tilt images. A current limitation of this approach is the high computational cost that limits throughput. We describe here a GPU-accelerated implementation of 2D template matching in the image processing software cisTEM that allows for easy scaling and improves the accessibility of this approach. We apply 2D template matching to identify ribosomes in images of frozen-hydrated Mycoplasma pneumoniae cells with high precision and sensitivity, demonstrating that this is a versatile tool for in situ visual proteomics and in situ structure determination. We benchmark the results with 3D template matching of tomograms acquired on identical sample locations and identify strengths and weaknesses of both techniques, which offer complementary information about target localization and identity.",
+  "pub_date": "2021-06-11",
+  "authors": [
+    {
+      "given_names": "Bronwyn A",
+      "surname": "Lucas",
+      "orcid": "0000-0001-9162-0421",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Benjamin A",
+      "surname": "Himes",
+      "orcid": "0000-0001-7777-0298",
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Liang",
+      "surname": "Xue",
+      "orcid": "0000-0003-4368-2526",
+      "affiliation_ids": [
+        "aff3",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Timothy",
+      "surname": "Grant",
+      "orcid": "0000-0002-4855-8703",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Julia",
+      "surname": "Mahamid",
+      "orcid": "0000-0001-6968-041X",
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Nikolaus",
+      "surname": "Grigorieff",
+      "orcid": "0000-0002-1506-909X",
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": true,
+      "position": 6
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Howard Hughes Medical Institute, Janelia Research Campus",
+      "department": null,
+      "city": "Ashburn",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Howard Hughes Medical Institute, RNA Therapeutics Institute, The University of Massachusetts Medical School",
+      "department": null,
+      "city": "Worcester",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "Structural and Computational Biology Unit, European Molecular Biology Laboratory (EMBL)",
+      "department": null,
+      "city": "Heidelberg",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "Collaboration for joint PhD degree between EMBL and Heidelberg University, Faculty of Biosciences",
+      "department": null,
+      "city": "Heidelberg",
+      "country": "Germany",
+      "ror": null
+    }
+  ]
 }

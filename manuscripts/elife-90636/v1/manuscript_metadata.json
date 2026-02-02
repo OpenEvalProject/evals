@@ -1,6 +1,123 @@
 {
   "doi": "10.7554/eLife.90636",
   "title": "Efficient estimation for large-scale linkage disequilibrium patterns of the human genome",
-  "abstract": "In this study, we proposed an efficient algorithm (X-LD) for estimating linkage disequilibrium (LD) patterns for a genomic grid, which can be of inter-chromosomal scale or of small segments. Compared with conventional methods, the proposed method was significantly faster, dropped from O(nm 2 ) to O(n 2 m) — n the sample size and m the number of SNPs, and consequently we were permitted to explore in depth unknown or reveal long-anticipated LD features of the human genome. Having applied the algorithm for 1000 Genome Project (1KG), we found (1) the extended LD, driven by population structure, universally existed, and the strength of inter-chromosomal LD was about 10% of their respective intra-chromosomal LD in relatively homogeneous cohorts, such as FIN, and to nearly 56% in admixed cohort, such as ASW. (2) After splitting each chromosome into upmost of more than a half million grids, we elucidated the LD of the HLA region was nearly 42 folders higher than chromosome 6 in CEU and 11.58 in ASW; on chromosome 11, we observed that the LD of its centromere was nearly 94.05 folders higher than chromosome 11 in YRI and 42.73 in ASW. (3) We uncovered the long-anticipated inversely proportional linear relationship between the length of a chromosome and the strength of chromosomal LD, and their Pearson’s correlation was on average over 0.80 for 26 1KG cohorts. However, this linear norm was so far perturbed by chromosome 11 given its more completely sequenced centromere region. Uniquely chromosome 8 of ASW was found most deviated from the linear norm than any other autosomes. The proposed algorithm has been realized in C++ (called X-LD) and is available at https://github.com/gc5k/gear2 , and can be applied to explore LD features in any sequenced populations.",
-  "pub_date": "2023-12-27"
+  "abstract": "In this study, we proposed an efficient algorithm (X-LD) for estimating linkage disequilibrium (LD) patterns for a genomic grid, which can be of inter-chromosomal scale or of small segments. Compared with conventional methods, the proposed method was significantly faster, dropped from O(nm2) to O(n2m)—n the sample size and m the number of SNPs, and consequently we were permitted to explore in depth unknown or reveal long-anticipated LD features of the human genome. Having applied the algorithm for 1000 Genome Project (1KG), we found (1) the extended LD, driven by population structure, universally existed, and the strength of inter-chromosomal LD was about 10% of their respective intra-chromosomal LD in relatively homogeneous cohorts, such as FIN, and to nearly 56% in admixed cohort, such as ASW. (2) After splitting each chromosome into upmost of more than a half million grids, we elucidated the LD of the HLA region was nearly 42 folders higher than chromosome 6 in CEU and 11.58 in ASW; on chromosome 11, we observed that the LD of its centromere was nearly 94.05 folders higher than chromosome 11 in YRI and 42.73 in ASW. (3) We uncovered the long-anticipated inversely proportional linear relationship between the length of a chromosome and the strength of chromosomal LD, and their Pearson’s correlation was on average over 0.80 for 26 1KG cohorts. However, this linear norm was so far perturbed by chromosome 11 given its more completely sequenced centromere region. Uniquely chromosome 8 of ASW was found most deviated from the linear norm than any other autosomes. The proposed algorithm has been realized in C++ (called X-LD) and is available at https://github.com/gc5k/gear2, and can be applied to explore LD features in any sequenced populations.",
+  "pub_date": "2023-12-27",
+  "authors": [
+    {
+      "given_names": "Xin",
+      "surname": "Huang",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Tian-Neng",
+      "surname": "Zhu",
+      "orcid": "0009-0007-7507-4521",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Ying-Chao",
+      "surname": "Liu",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Guo-An",
+      "surname": "Qi",
+      "orcid": "0000-0002-2412-3932",
+      "affiliation_ids": [
+        "aff1",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Jian-Nan",
+      "surname": "Zhang",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Guo-Bo",
+      "surname": "Chen",
+      "orcid": "0000-0001-5475-8237",
+      "affiliation_ids": [
+        "aff2",
+        "aff3",
+        "aff6"
+      ],
+      "corresponding": true,
+      "position": 6
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Institute of Bioinformatics, Zhejiang University",
+      "department": null,
+      "city": "Hangzhou",
+      "country": "China",
+      "ror": "00a2xv884"
+    },
+    {
+      "id": "aff2",
+      "institution": "Center for General Practice Medicine, Department of General Practice Medicine, Zhejiang Provincial People’s Hospital, People’s Hospital of Hangzhou Medical College",
+      "department": null,
+      "city": "Hangzhou",
+      "country": "China",
+      "ror": "03k14e164"
+    },
+    {
+      "id": "aff3",
+      "institution": "Center for Reproductive Medicine, Department of Genetic and Genomic Medicine, and Clinical Research Institute, Zhejiang Provincial People’s Hospital, People’s Hospital of Hangzhou Medical College",
+      "department": null,
+      "city": "Zhejiang",
+      "country": "China",
+      "ror": "03k14e164"
+    },
+    {
+      "id": "aff4",
+      "institution": "Hainan Institute of Zhejiang University",
+      "department": null,
+      "city": "Hainan",
+      "country": "China",
+      "ror": "00a2xv884"
+    },
+    {
+      "id": "aff5",
+      "institution": "Alibaba Group",
+      "department": null,
+      "city": "Hangzhou",
+      "country": "China",
+      "ror": "00k642b80"
+    },
+    {
+      "id": "aff6",
+      "institution": "Key Laboratory of Endocrine Gland Diseases of Zhejiang Province",
+      "department": null,
+      "city": "Hangzhou",
+      "country": "China",
+      "ror": null
+    }
+  ]
 }

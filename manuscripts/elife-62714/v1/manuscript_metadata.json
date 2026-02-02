@@ -2,5 +2,65 @@
   "doi": "10.7554/eLife.62714",
   "title": "Bayesian inference of kinetic schemes for ion channels by Kalman filtering",
   "abstract": "Inferring adequate kinetic schemes for ion channel gating from ensemble currents is a daunting task due to limited information in the data. We address this problem by using a parallelized Bayesian filter to specify hidden Markov models for current and fluorescence data. We demonstrate the flexibility of this algorithm by including different noise distributions. Our generalized Kalman filter outperforms both a classical Kalman filter and a rate equation approach when applied to patch-clamp data exhibiting realistic open-channel noise. The derived generalization also enables inclusion of orthogonal fluorescence data, making unidentifiable parameters identifiable and increasing the accuracy of the parameter estimates by an order of magnitude. By using Bayesian highest credibility volumes, we found that our approach, in contrast to the rate equation approach, yields a realistic uncertainty quantification. Furthermore, the Bayesian filter delivers negligibly biased estimates for a wider range of data quality. For some data sets it identifies more parameters than the rate equation approach. These results also demonstrate the power of assessing the validity of algorithms by Bayesian credibility volumes in general. Finally, we show that our Bayesian filter is more robust against errors induced by either analog filtering before analog-to-digital conversion or by limited time resolution of fluorescence data than a rate equation approach.",
-  "pub_date": "2022-05-04"
+  "pub_date": "2022-05-04",
+  "authors": [
+    {
+      "given_names": "Jan L",
+      "surname": "Münch",
+      "orcid": "0000-0002-9177-6466",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Fabian",
+      "surname": "Paul",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Ralf",
+      "surname": "Schmauder",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Klaus",
+      "surname": "Benndorf",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 4
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Friedrich Schiller University Jena",
+      "department": "Institut für Physiologie II",
+      "city": "Jena",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "University of Chicago",
+      "department": "Department of Biochemistry and Molecular Biology",
+      "city": "Chicago",
+      "country": "United States",
+      "ror": null
+    }
+  ]
 }

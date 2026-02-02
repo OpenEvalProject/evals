@@ -2,5 +2,75 @@
   "doi": "10.7554/eLife.99702",
   "title": "Empowering AlphaFold2 for protein conformation selective drug discovery with AlphaFold2-RAVE",
   "abstract": "Small-molecule drug design hinges on obtaining co-crystallized ligand-protein structures. Despite AlphaFold2’s strides in protein native structure prediction, its focus on apo structures overlooks ligands and associated holo structures. Moreover, designing selective drugs often benefits from the targeting of diverse metastable conformations. Therefore, direct application of AlphaFold2 models in virtual screening and drug discovery remains tentative. Here, we demonstrate an AlphaFold2-based framework combined with all-atom enhanced sampling molecular dynamics and Induced Fit docking, named AF2RAVE-Glide, to conduct computational model-based small-molecule binding of metastable protein kinase conformations, initiated from protein sequences. We demonstrate the AF2RAVE-Glide workflow on three different mammalian protein kinases and their type I and II inhibitors, with special emphasis on binding of known type II kinase inhibitors which target the metastable classical DFG-out state. These states are not easy to sample from AlphaFold2. Here, we demonstrate how with AF2RAVE these metastable conformations can be sampled for different kinases with high enough accuracy to enable subsequent docking of known type II kinase inhibitors with more than 50% success rates across docking calculations. We believe the protocol should be deployable for other kinases and more proteins generally.",
-  "pub_date": "2024-09-06"
+  "pub_date": "2024-09-06",
+  "authors": [
+    {
+      "given_names": "Xinyu",
+      "surname": "Gu",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Akashnathan",
+      "surname": "Aranganathan",
+      "orcid": "0000-0001-7938-2141",
+      "affiliation_ids": [
+        "aff1",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Pratyush",
+      "surname": "Tiwary",
+      "orcid": "0000-0002-2412-6922",
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff4"
+      ],
+      "corresponding": true,
+      "position": 3
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Institute for Physical Science and Technology, University of Maryland",
+      "department": null,
+      "city": "College Park",
+      "country": "United States",
+      "ror": "047s2c258"
+    },
+    {
+      "id": "aff2",
+      "institution": "University of Maryland Institute for Health Computing",
+      "department": null,
+      "city": "Bethesda",
+      "country": "United States",
+      "ror": "047s2c258"
+    },
+    {
+      "id": "aff3",
+      "institution": "Biophysics Program, University of Maryland",
+      "department": null,
+      "city": "College Park",
+      "country": "United States",
+      "ror": "047s2c258"
+    },
+    {
+      "id": "aff4",
+      "institution": "Department of Chemistry and Biochemistry, University of Maryland",
+      "department": null,
+      "city": "College Park",
+      "country": "United States",
+      "ror": "047s2c258"
+    }
+  ]
 }

@@ -1,6 +1,75 @@
 {
   "doi": "10.7554/eLife.80942",
   "title": "ProteInfer, deep neural networks for protein functional inference",
-  "abstract": "Predicting the function of a protein from its amino acid sequence is a long-standing challenge in bioinformatics. Traditional approaches use sequence alignment to compare a query sequence either to thousands of models of protein families or to large databases of individual protein sequences. Here we introduce ProteInfer, which instead employs deep convolutional neural networks to directly predict a variety of protein functions – Enzyme Commission (EC) numbers and Gene Ontology (GO) terms – directly from an unaligned amino acid sequence. This approach provides precise predictions which complement alignment-based methods, and the computational efficiency of a single neural network permits novel and lightweight software interfaces, which we demonstrate with an in-browser graphical interface for protein function prediction in which all computation is performed on the user’s personal computer with no data uploaded to remote servers. Moreover, these models place full-length amino acid sequences into a generalised functional space, facilitating downstream analysis and interpretation. To read the interactive version of this paper, please visit https://google-research.github.io/proteinfer/ .",
-  "pub_date": "2023-02-27"
+  "abstract": "Predicting the function of a protein from its amino acid sequence is a long-standing challenge in bioinformatics. Traditional approaches use sequence alignment to compare a query sequence either to thousands of models of protein families or to large databases of individual protein sequences. Here we introduce ProteInfer, which instead employs deep convolutional neural networks to directly predict a variety of protein functions – Enzyme Commission (EC) numbers and Gene Ontology (GO) terms – directly from an unaligned amino acid sequence. This approach provides precise predictions which complement alignment-based methods, and the computational efficiency of a single neural network permits novel and lightweight software interfaces, which we demonstrate with an in-browser graphical interface for protein function prediction in which all computation is performed on the user’s personal computer with no data uploaded to remote servers. Moreover, these models place full-length amino acid sequences into a generalised functional space, facilitating downstream analysis and interpretation. To read the interactive version of this paper, please visit https://google-research.github.io/proteinfer/.",
+  "pub_date": "2023-02-27",
+  "authors": [
+    {
+      "given_names": "Theo",
+      "surname": "Sanderson",
+      "orcid": "0000-0003-4177-2851",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Maxwell L",
+      "surname": "Bileschi",
+      "orcid": "0000-0001-6771-0590",
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "David",
+      "surname": "Belanger",
+      "orcid": "0000-0001-7115-9009",
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Lucy J",
+      "surname": "Colwell",
+      "orcid": "0000-0003-3148-0337",
+      "affiliation_ids": [
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": true,
+      "position": 4
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "The Francis Crick Institute",
+      "department": null,
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": "04tnbqb63"
+    },
+    {
+      "id": "aff2",
+      "institution": "Google AI",
+      "department": null,
+      "city": "Boston",
+      "country": "United States",
+      "ror": "00njsd438"
+    },
+    {
+      "id": "aff3",
+      "institution": "University of Cambridge",
+      "department": null,
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "ror": "013meh722"
+    }
+  ]
 }

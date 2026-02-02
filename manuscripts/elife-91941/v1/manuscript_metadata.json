@@ -1,6 +1,217 @@
 {
   "doi": "10.7554/eLife.91941",
   "title": "Machine learning and biological validation identify sphingolipids as potential mediators of paclitaxel-induced neuropathy in cancer patients",
-  "abstract": "Chemotherapy-induced peripheral neuropathy (CIPN) is a serious therapy-limiting side effect of commonly used anticancer drugs. Previous studies suggest that lipids may play a role in CIPN. Therefore, the present study aimed to identify the particular types of lipids that are regulated as a consequence of paclitaxel administration and may be associated with the occurrence of post-therapeutic neuropathy. High-resolution mass spectrometry lipidomics was applied to quantify d=255 different lipid mediators in the blood of n=31 patients drawn before and after paclitaxel therapy for breast cancer treatment. A variety of supervised statistical and machine-learning methods was applied to identify lipids that were regulated during paclitaxel therapy or differed among patients with and without post-therapeutic neuropathy. Twenty-seven lipids were identified that carried relevant information to train machine learning algorithms to identify, in new cases, whether a blood sample was drawn before or after paclitaxel therapy with a median balanced accuracy of up to 90%. One of the top hits, sphinganine-1-phosphate (SA1P), was found to induce calcium transients in sensory neurons via the transient receptor potential vanilloid 1 (TRPV1) channel and sphingosine-1-phosphate receptors.SA1P also showed different blood concentrations between patients with and without neuropathy. Present findings suggest a role for sphinganine-1-phosphate in paclitaxel-induced biological changes associated with neuropathic side effects. The identified SA1P, through its receptors, may provide a potential drug target for co-therapy with paclitaxel to reduce one of its major and therapy-limiting side effects. This work was supported by the Deutsche Forschungsgemeinschaft (German Research Foundation, DFG, Grants SFB1039 A09 and Z01) and by the Fraunhofer Foundation Project: Neuropathic Pain as well as the Fraunhofer Cluster of Excellence for Immune-Mediated Diseases (CIMD). This work was also supported by the Leistungszentrum Innovative Therapeutics (TheraNova) funded by the Fraunhofer Society and the Hessian Ministry of Science and Arts. Jörn Lötsch was supported by the Deutsche Forschungsgemeinschaft (DFG LO 612/16-1).",
-  "pub_date": "2024-09-30"
+  "abstract": "Background:Chemotherapy-induced peripheral neuropathy (CIPN) is a serious therapy-limiting side effect of commonly used anticancer drugs. Previous studies suggest that lipids may play a role in CIPN. Therefore, the present study aimed to identify the particular types of lipids that are regulated as a consequence of paclitaxel administration and may be associated with the occurrence of post-therapeutic neuropathy.Methods:High-resolution mass spectrometry lipidomics was applied to quantify d=255 different lipid mediators in the blood of n=31 patients drawn before and after paclitaxel therapy for breast cancer treatment. A variety of supervised statistical and machine-learning methods was applied to identify lipids that were regulated during paclitaxel therapy or differed among patients with and without post-therapeutic neuropathy.Results:Twenty-seven lipids were identified that carried relevant information to train machine learning algorithms to identify, in new cases, whether a blood sample was drawn before or after paclitaxel therapy with a median balanced accuracy of up to 90%. One of the top hits, sphinganine-1-phosphate (SA1P), was found to induce calcium transients in sensory neurons via the transient receptor potential vanilloid 1 (TRPV1) channel and sphingosine-1-phosphate receptors.SA1P also showed different blood concentrations between patients with and without neuropathy.Conclusions:Present findings suggest a role for sphinganine-1-phosphate in paclitaxel-induced biological changes associated with neuropathic side effects. The identified SA1P, through its receptors, may provide a potential drug target for co-therapy with paclitaxel to reduce one of its major and therapy-limiting side effects.Funding:This work was supported by the Deutsche Forschungsgemeinschaft (German Research Foundation, DFG, Grants SFB1039 A09 and Z01) and by the Fraunhofer Foundation Project: Neuropathic Pain as well as the Fraunhofer Cluster of Excellence for Immune-Mediated Diseases (CIMD). This work was also supported by the Leistungszentrum Innovative Therapeutics (TheraNova) funded by the Fraunhofer Society and the Hessian Ministry of Science and Arts. Jörn Lötsch was supported by the Deutsche Forschungsgemeinschaft (DFG LO 612/16-1).",
+  "pub_date": "2024-09-30",
+  "authors": [
+    {
+      "given_names": "Jörn",
+      "surname": "Lötsch",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Khayal",
+      "surname": "Gasimli",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Sebastian",
+      "surname": "Malkusch",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Lisa",
+      "surname": "Hahnefeld",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Carlo",
+      "surname": "Angioni",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Yannick",
+      "surname": "Schreiber",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Sandra",
+      "surname": "Trautmann",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Saskia",
+      "surname": "Wedel",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Dominique",
+      "surname": "Thomas",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Nerea",
+      "surname": "Ferreiros Bouzas",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Christian H",
+      "surname": "Brandts",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4",
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Benjamin",
+      "surname": "Schnappauf",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Christine",
+      "surname": "Solbach",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Gerd",
+      "surname": "Geisslinger",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Marco",
+      "surname": "Sisignano",
+      "orcid": "0000-0002-7581-0951",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": true,
+      "position": 15
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Institute of Clinical Pharmacology, Goethe - University",
+      "department": null,
+      "city": "Frankfurt",
+      "country": "Germany",
+      "ror": "04cvxnb49"
+    },
+    {
+      "id": "aff2",
+      "institution": "Fraunhofer Institute for Translational Medicine and Pharmacology ITMP, and Fraunhofer Cluster of Excellence for Immune Mediated Diseases CIMD",
+      "department": null,
+      "city": "Frankfurt",
+      "country": "Germany",
+      "ror": "01s1h3j07"
+    },
+    {
+      "id": "aff3",
+      "institution": "Goethe University, Department of Gynecology and Obstetrics",
+      "department": null,
+      "city": "Frankfurt",
+      "country": "Germany",
+      "ror": "04cvxnb49"
+    },
+    {
+      "id": "aff4",
+      "institution": "German Cancer Consortium (DKTK) and German Cancer Research Center (DKFZ)",
+      "department": null,
+      "city": "Heidelberg",
+      "country": "Germany",
+      "ror": "02pqn3g31"
+    },
+    {
+      "id": "aff5",
+      "institution": "Goethe University, University Cancer Center Frankfurt (UCT), Goethe University Hospital",
+      "department": null,
+      "city": "Frankfurt",
+      "country": "Germany",
+      "ror": "04cvxnb49"
+    },
+    {
+      "id": "aff6",
+      "institution": "Oncology Center, Sana-Klinikum Offenbach",
+      "department": null,
+      "city": "Starkenburgring",
+      "country": "Germany",
+      "ror": "04k4vsv28"
+    }
+  ]
 }

@@ -2,5 +2,178 @@
   "doi": "10.7554/eLife.91911",
   "title": "Neural network emulation of the human ventricular cardiomyocyte action potential for more efficient computations in pharmacological studies",
   "abstract": "Computer models of the human ventricular cardiomyocyte action potential (AP) have reached a level of detail and maturity that has led to an increasing number of applications in the pharmaceutical sector. However, interfacing the models with experimental data can become a significant computational burden. To mitigate the computational burden, the present study introduces a neural network (NN) that emulates the AP for given maximum conductances of selected ion channels, pumps, and exchangers. Its applicability in pharmacological studies was tested on synthetic and experimental data. The NN emulator potentially enables massive speed-ups compared to regular simulations and the forward problem (find drugged AP for pharmacological parameters defined as scaling factors of control maximum conductances) on synthetic data could be solved with average root-mean-square errors (RMSE) of 0.47 mV in normal APs and of 14.5 mV in abnormal APs exhibiting early afterdepolarizations (72.5% of the emulated APs were alining with the abnormality, and the substantial majority of the remaining APs demonstrated pronounced proximity). This demonstrates not only very fast and mostly very accurate AP emulations but also the capability of accounting for discontinuities, a major advantage over existing emulation strategies. Furthermore, the inverse problem (find pharmacological parameters for control and drugged APs through optimization) on synthetic data could be solved with high accuracy shown by a maximum RMSE of 0.22 in the estimated pharmacological parameters. However, notable mismatches were observed between pharmacological parameters estimated from experimental data and distributions obtained from the Comprehensive in vitro Proarrhythmia Assay initiative. This reveals larger inaccuracies which can be attributed particularly to the fact that small tissue preparations were studied while the emulator was trained on single cardiomyocyte data. Overall, our study highlights the potential of NN emulators as powerful tool for an increased efficiency in future quantitative systems pharmacology studies.",
-  "pub_date": "2024-04-10"
+  "pub_date": "2024-04-10",
+  "authors": [
+    {
+      "given_names": "Thomas",
+      "surname": "Grandits",
+      "orcid": "0000-0001-7441-8002",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Christoph M",
+      "surname": "Augustin",
+      "orcid": "0000-0001-6341-4014",
+      "affiliation_ids": [
+        "aff3",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Gundolf",
+      "surname": "Haase",
+      "orcid": "0000-0002-3439-6117",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Norbert",
+      "surname": "Jost",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5",
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Gary R",
+      "surname": "Mirams",
+      "orcid": "0000-0002-4569-4312",
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Steven A",
+      "surname": "Niederer",
+      "orcid": "0000-0002-4612-6982",
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Gernot",
+      "surname": "Plank",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "András",
+      "surname": "Varró",
+      "orcid": "0000-0003-0745-3603",
+      "affiliation_ids": [
+        "aff5",
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "László",
+      "surname": "Virág",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Alexander",
+      "surname": "Jung",
+      "orcid": "0000-0002-0723-4403",
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": true,
+      "position": 10
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Department of Mathematics and Scientific Computing, University of Graz",
+      "department": null,
+      "city": "Graz",
+      "country": "Austria",
+      "ror": "01faaaf77"
+    },
+    {
+      "id": "aff2",
+      "institution": "NAWI Graz, University of Graz",
+      "department": null,
+      "city": "Graz",
+      "country": "Austria",
+      "ror": "01faaaf77"
+    },
+    {
+      "id": "aff3",
+      "institution": "Gottfried Schatz Research Center for Cell Signaling, Metabolism and Aging - Division of Medical Physics and Biophysics, Medical University of Graz",
+      "department": null,
+      "city": "Graz",
+      "country": "Austria",
+      "ror": "01faaaf77"
+    },
+    {
+      "id": "aff4",
+      "institution": "BioTechMed-Graz",
+      "department": null,
+      "city": "Graz",
+      "country": "Austria",
+      "ror": "02jfbm483"
+    },
+    {
+      "id": "aff5",
+      "institution": "Department of Pharmacology and Pharmacotherapy, University of Szeged",
+      "department": null,
+      "city": "Szeged",
+      "country": "Hungary",
+      "ror": "01pnej532"
+    },
+    {
+      "id": "aff6",
+      "institution": "HUN-REN-TKI, Research Group of Pharmacology",
+      "department": null,
+      "city": "Budapest",
+      "country": "Hungary",
+      "ror": null
+    },
+    {
+      "id": "aff7",
+      "institution": "Centre for Mathematical Medicine & Biology, School of Mathematical Sciences, University of Nottingham",
+      "department": null,
+      "city": "Nottingham",
+      "country": "United Kingdom",
+      "ror": "01ee9ar58"
+    },
+    {
+      "id": "aff8",
+      "institution": "Division of Imaging Sciences & Biomedical Engineering, King’s College London",
+      "department": null,
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": "0220mzb33"
+    }
+  ]
 }

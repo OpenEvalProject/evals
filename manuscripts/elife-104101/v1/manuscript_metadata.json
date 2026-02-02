@@ -2,5 +2,103 @@
   "doi": "10.7554/eLife.104101",
   "title": "Online reinforcement learning of state representation in recurrent network supported by the power of random feedback and biological constraints",
   "abstract": "Representation of external and internal states in the brain plays a critical role in enabling suitable behavior. Recent studies suggest that state representation and state value can be simultaneously learned through Temporal-Difference-Reinforcement-Learning (TDRL) and Backpropagation-Through-Time (BPTT) in recurrent neural networks (RNNs) and their readout. However, neural implementation of such learning remains unclear as BPTT requires offline update using transported downstream weights, which is suggested to be biologically implausible. We demonstrate that simple online training of RNNs using TD reward prediction error and random feedback, without additional memory or eligibility trace, can still learn the structure of tasks with cue–reward delay and timing variability. This is because TD learning itself is a solution for temporal credit assignment, and feedback alignment, a mechanism originally proposed for supervised learning, enables gradient approximation without weight transport. Furthermore, we show that biologically constraining downstream weights and random feedback to be non-negative not only preserves learning but may even enhance it because the non-negative constraint ensures loose alignment—allowing the downstream and feedback weights to roughly align from the beginning. These results provide insights into the neural mechanisms underlying the learning of state representation and value, highlighting the potential of random feedback and biological constraints.",
-  "pub_date": "2025-09-24"
+  "pub_date": "2025-09-24",
+  "authors": [
+    {
+      "given_names": "Takayuki",
+      "surname": "Tsurumi",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Ayaka",
+      "surname": "Kato",
+      "orcid": "0000-0002-6306-6600",
+      "affiliation_ids": [
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Arvind",
+      "surname": "Kumar",
+      "orcid": "0000-0002-8044-9195",
+      "affiliation_ids": [
+        "aff2",
+        "aff4",
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Kenji",
+      "surname": "Morita",
+      "orcid": "0000-0003-2192-4248",
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff6"
+      ],
+      "corresponding": true,
+      "position": 4
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Physical and Health Education, Graduate School of Education, The University of Tokyo",
+      "department": null,
+      "city": "Tokyo",
+      "country": "Japan",
+      "ror": "057zh3y96"
+    },
+    {
+      "id": "aff2",
+      "institution": "Theoretical Sciences Visiting Program, Okinawa Institute of Science and Technology",
+      "department": null,
+      "city": "Okinawa",
+      "country": "Japan",
+      "ror": "02qg15b79"
+    },
+    {
+      "id": "aff3",
+      "institution": "Department of Psychiatry, Icahn School of Medicine at Mount Sinai",
+      "department": null,
+      "city": "New York",
+      "country": "United States",
+      "ror": "04a9tmd77"
+    },
+    {
+      "id": "aff4",
+      "institution": "Division of Computational Science and Technology, School of Electrical Engineering and Computer Science, KTH Royal Institute of Technology",
+      "department": null,
+      "city": "Stockholm",
+      "country": "Sweden",
+      "ror": "026vcq606"
+    },
+    {
+      "id": "aff5",
+      "institution": "Science for Life Laboratory",
+      "department": null,
+      "city": "Solna, Stockholm",
+      "country": "Sweden",
+      "ror": "04ev03g22"
+    },
+    {
+      "id": "aff6",
+      "institution": "International Research Center for Neurointelligence (WPI-IRCN), The University of Tokyo",
+      "department": null,
+      "city": "Tokyo",
+      "country": "Japan",
+      "ror": "057zh3y96"
+    }
+  ]
 }

@@ -1,6 +1,118 @@
 {
   "doi": "10.7554/eLife.98033",
   "title": "Semantical and geometrical protein encoding toward enhanced bioactivity and thermostability",
-  "abstract": "Protein engineering is a pivotal aspect of synthetic biology, involving the modification of amino acids within existing protein sequences to achieve novel or enhanced functionalities and physical properties. Accurate prediction of protein variant effects requires a thorough understanding of protein sequence, structure, and function. Deep learning methods have demonstrated remarkable performance in guiding protein modification for improved functionality. However, existing approaches predominantly rely on protein sequences, which face challenges in efficiently encoding the geometric aspects of amino acids’ local environment and often fall short in capturing crucial details related to protein folding stability, internal molecular interactions, and bio-functions. Furthermore, there lacks a fundamental evaluation for developed methods in predicting protein thermostability, although it is a key physical property that is frequently investigated in practice. To address these challenges, this article introduces a novel pre-training framework that integrates sequential and geometric encoders for protein primary and tertiary structures. This framework guides mutation directions toward desired traits by simulating natural selection on wild-type proteins and evaluates variant effects based on their fitness to perform specific functions. We assess the proposed approach using three benchmarks comprising over 300 deep mutational scanning assays. The prediction results showcase exceptional performance across extensive experiments compared to other zero-shot learning methods, all while maintaining a minimal cost in terms of trainable parameters. This study not only proposes an effective framework for more accurate and comprehensive predictions to facilitate efficient protein engineering, but also enhances the in silico assessment system for future deep learning models to better align with empirical requirements. The PyTorch implementation is available at https://github.com/ai4protein/ProtSSN .",
-  "pub_date": "2025-05-02"
+  "abstract": "Protein engineering is a pivotal aspect of synthetic biology, involving the modification of amino acids within existing protein sequences to achieve novel or enhanced functionalities and physical properties. Accurate prediction of protein variant effects requires a thorough understanding of protein sequence, structure, and function. Deep learning methods have demonstrated remarkable performance in guiding protein modification for improved functionality. However, existing approaches predominantly rely on protein sequences, which face challenges in efficiently encoding the geometric aspects of amino acids’ local environment and often fall short in capturing crucial details related to protein folding stability, internal molecular interactions, and bio-functions. Furthermore, there lacks a fundamental evaluation for developed methods in predicting protein thermostability, although it is a key physical property that is frequently investigated in practice. To address these challenges, this article introduces a novel pre-training framework that integrates sequential and geometric encoders for protein primary and tertiary structures. This framework guides mutation directions toward desired traits by simulating natural selection on wild-type proteins and evaluates variant effects based on their fitness to perform specific functions. We assess the proposed approach using three benchmarks comprising over 300 deep mutational scanning assays. The prediction results showcase exceptional performance across extensive experiments compared to other zero-shot learning methods, all while maintaining a minimal cost in terms of trainable parameters. This study not only proposes an effective framework for more accurate and comprehensive predictions to facilitate efficient protein engineering, but also enhances the in silico assessment system for future deep learning models to better align with empirical requirements. The PyTorch implementation is available at https://github.com/ai4protein/ProtSSN.",
+  "pub_date": "2025-05-02",
+  "authors": [
+    {
+      "given_names": "Yang",
+      "surname": "Tan",
+      "orcid": "0009-0004-7261-1705",
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Bingxin",
+      "surname": "Zhou",
+      "orcid": "0000-0002-3897-9766",
+      "affiliation_ids": [
+        "aff1",
+        "aff3",
+        "aff5",
+        "aff6"
+      ],
+      "corresponding": true,
+      "position": 2
+    },
+    {
+      "given_names": "Lirong",
+      "surname": "Zheng",
+      "orcid": "0000-0001-6803-5048",
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Guisheng",
+      "surname": "Fan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Liang",
+      "surname": "Hong",
+      "orcid": "0000-0003-0107-336X",
+      "affiliation_ids": [
+        "aff1",
+        "aff3",
+        "aff4",
+        "aff5",
+        "aff6"
+      ],
+      "corresponding": true,
+      "position": 5
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Shanghai-Chongqing Institute of Artificial Intelligence, Shanghai Jiao Tong University",
+      "department": null,
+      "city": "Chongqing",
+      "country": "China",
+      "ror": "0220qvk04"
+    },
+    {
+      "id": "aff2",
+      "institution": "School of Information Science and Engineering, East China University of Science and Technology",
+      "department": null,
+      "city": "Shanghai",
+      "country": "China",
+      "ror": "01vyrm377"
+    },
+    {
+      "id": "aff3",
+      "institution": "Zhangjiang Institute for Advanced Study, Shanghai Jiao Tong University",
+      "department": null,
+      "city": "Shanghai",
+      "country": "China",
+      "ror": "0220qvk04"
+    },
+    {
+      "id": "aff4",
+      "institution": "Shanghai Artificial Intelligence Laboratory",
+      "department": null,
+      "city": "Shanghai",
+      "country": "China",
+      "ror": "03wkvpx79"
+    },
+    {
+      "id": "aff5",
+      "institution": "Shanghai Jiao Tong University, Institute of Natural Sciences",
+      "department": null,
+      "city": "Shanghai",
+      "country": "China",
+      "ror": "0220qvk04"
+    },
+    {
+      "id": "aff6",
+      "institution": "Shanghai National Center for Applied Mathematics (SJTU Center), Shanghai Jiao Tong University",
+      "department": null,
+      "city": "Shanghai",
+      "country": "China",
+      "ror": "0220qvk04"
+    }
+  ]
 }

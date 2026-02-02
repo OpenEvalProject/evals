@@ -2,5 +2,82 @@
   "doi": "10.7554/eLife.61927",
   "title": "Fast and flexible estimation of effective migration surfaces",
   "abstract": "Spatial population genetic data often exhibits ‘isolation-by-distance,’ where genetic similarity tends to decrease as individuals become more geographically distant. The rate at which genetic similarity decays with distance is often spatially heterogeneous due to variable population processes like genetic drift, gene flow, and natural selection. Petkova et al., 2016 developed a statistical method called Estimating Effective Migration Surfaces (EEMS) for visualizing spatially heterogeneous isolation-by-distance on a geographic map. While EEMS is a powerful tool for depicting spatial population structure, it can suffer from slow runtimes. Here, we develop a related method called Fast Estimation of Effective Migration Surfaces (FEEMS). FEEMS uses a Gaussian Markov Random Field model in a penalized likelihood framework that allows for efficient optimization and output of effective migration surfaces. Further, the efficient optimization facilitates the inference of migration parameters per edge in the graph, rather than per node (as in EEMS). With simulations, we show conditions under which FEEMS can accurately recover effective migration surfaces with complex gene-flow histories, including those with anisotropy. We apply FEEMS to population genetic data from North American gray wolves and show it performs favorably in comparison to EEMS, with solutions obtained orders of magnitude faster. Overall, FEEMS expands the ability of users to quickly visualize and interpret spatial structure in their data.",
-  "pub_date": "2021-07-30"
+  "pub_date": "2021-07-30",
+  "authors": [
+    {
+      "given_names": "Joseph",
+      "surname": "Marcus",
+      "orcid": "0000-0002-0923-9881",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Wooseok",
+      "surname": "Ha",
+      "orcid": "0000-0002-9069-854X",
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": true,
+      "position": 2
+    },
+    {
+      "given_names": "Rina Foygel",
+      "surname": "Barber",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": true,
+      "position": 3
+    },
+    {
+      "given_names": "John",
+      "surname": "Novembre",
+      "orcid": "0000-0001-5345-0214",
+      "affiliation_ids": [
+        "aff1",
+        "aff4"
+      ],
+      "corresponding": true,
+      "position": 4
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Department of Human Genetics, University of Chicago",
+      "department": null,
+      "city": "Chicago",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Department of Statistics, University of California, Berkeley",
+      "department": null,
+      "city": "Berkeley",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "Department of Statistics, University of Chicago",
+      "department": null,
+      "city": "Chicago",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "Department of Ecology and Evolution, University of Chicago",
+      "department": null,
+      "city": "Chicago",
+      "country": "United States",
+      "ror": null
+    }
+  ]
 }

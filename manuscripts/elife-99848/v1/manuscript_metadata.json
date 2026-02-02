@@ -2,5 +2,125 @@
   "doi": "10.7554/eLife.99848",
   "title": "CellSeg3D, Self-supervised 3D cell segmentation for fluorescence microscopy",
   "abstract": "Understanding the complex three-dimensional structure of cells is crucial across many disciplines in biology and especially in neuroscience. Here, we introduce a set of models including a 3D transformer (SwinUNetR) and a novel 3D self-supervised learning method (WNet3D) designed to address the inherent complexity of generating 3D ground truth data and quantifying nuclei in 3D volumes. We developed a Python package called CellSeg3D that provides access to these models in Jupyter Notebooks and in a napari GUI plugin. Recognizing the scarcity of high-quality 3D ground truth data, we created a fully human-annotated mesoSPIM dataset to advance evaluation and benchmarking in the field. To assess model performance, we benchmarked our approach across four diverse datasets: the newly developed mesoSPIM dataset, a 3D platynereis-ISH-Nuclei confocal dataset, a separate 3D Platynereis-Nuclei light-sheet dataset, and a challenging and densely packed Mouse-Skull-Nuclei confocal dataset. We demonstrate that our self-supervised model, WNet3D – trained without any ground truth labels – achieves performance on par with state-of-the-art supervised methods, paving the way for broader applications in label-scarce biological contexts.",
-  "pub_date": "2025-06-24"
+  "pub_date": "2025-06-24",
+  "authors": [
+    {
+      "given_names": "Cyril",
+      "surname": "Achard",
+      "orcid": "0009-0003-6992-6928",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Timokleia",
+      "surname": "Kousi",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Markus",
+      "surname": "Frey",
+      "orcid": "0000-0003-0291-3391",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Maxime",
+      "surname": "Vidal",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Yves",
+      "surname": "Paychere",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Colin",
+      "surname": "Hofmann",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Asim",
+      "surname": "Iqbal",
+      "orcid": "0000-0003-2174-4554",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Sebastien B",
+      "surname": "Hausmann",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Stéphane",
+      "surname": "Pagès",
+      "orcid": "0000-0003-0618-777X",
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Mackenzie Weygandt",
+      "surname": "Mathis",
+      "orcid": "0000-0001-7368-4456",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 10
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Brain Mind Institute and Neuro X, École Polytechnique Fédérale de Lausanne (EPFL)",
+      "department": null,
+      "city": "Geneva",
+      "country": "Switzerland",
+      "ror": "02s376052"
+    },
+    {
+      "id": "aff2",
+      "institution": "Wyss Center for Bio and Neuroengineering",
+      "department": null,
+      "city": "Geneva",
+      "country": "Switzerland",
+      "ror": "05tg4dc47"
+    }
+  ]
 }

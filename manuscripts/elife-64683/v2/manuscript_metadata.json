@@ -1,6 +1,347 @@
 {
   "doi": "10.7554/eLife.64683",
   "title": "Ct threshold values, a proxy for viral load in community SARS-CoV-2 cases, demonstrate wide variation across populations and over time",
-  "abstract": "Information on SARS-CoV-2 in representative community surveillance is limited, particularly cycle threshold (Ct) values (a proxy for viral load). We included all positive nose and throat swabs 26 April 2020 to 13 March 2021 from the UK’s national COVID-19 Infection Survey, tested by RT-PCR for the N, S, and ORF1ab genes. We investigated predictors of median Ct value using quantile regression. Of 3,312,159 nose and throat swabs, 27,902 (0.83%) were RT-PCR-positive, 10,317 (37%), 11,012 (40%), and 6550 (23%) for 3, 2, or 1 of the N, S, and ORF1ab genes, respectively, with median Ct = 29.2 (~215 copies/ml; IQR Ct = 21.9–32.8, 14–56,400 copies/ml). Independent predictors of lower Cts (i.e. higher viral load) included self-reported symptoms and more genes detected, with at most small effects of sex, ethnicity, and age. Single-gene positives almost invariably had Ct > 30, but Cts varied widely in triple-gene positives, including without symptoms. Population-level Cts changed over time, with declining Ct preceding increasing SARS-CoV-2 positivity. Of 6189 participants with IgG S-antibody tests post-first RT-PCR-positive, 4808 (78%) were ever antibody-positive; Cts were significantly higher in those remaining antibody negative. Marked variation in community SARS-CoV-2 Ct values suggests that they could be a useful epidemiological early-warning indicator. Department of Health and Social Care, National Institutes of Health Research, Huo Family Foundation, Medical Research Council UK; Wellcome Trust.",
-  "pub_date": "2021-07-12"
+  "abstract": "Background:Information on SARS-CoV-2 in representative community surveillance is limited, particularly cycle threshold (Ct) values (a proxy for viral load).Methods:We included all positive nose and throat swabs 26 April 2020 to 13 March 2021 from the UK’s national COVID-19 Infection Survey, tested by RT-PCR for the N, S, and ORF1ab genes. We investigated predictors of median Ct value using quantile regression.Results:Of 3,312,159 nose and throat swabs, 27,902 (0.83%) were RT-PCR-positive, 10,317 (37%), 11,012 (40%), and 6550 (23%) for 3, 2, or 1 of the N, S, and ORF1ab genes, respectively, with median Ct = 29.2 (~215 copies/ml; IQR Ct = 21.9–32.8, 14–56,400 copies/ml). Independent predictors of lower Cts (i.e. higher viral load) included self-reported symptoms and more genes detected, with at most small effects of sex, ethnicity, and age. Single-gene positives almost invariably had Ct > 30, but Cts varied widely in triple-gene positives, including without symptoms. Population-level Cts changed over time, with declining Ct preceding increasing SARS-CoV-2 positivity. Of 6189 participants with IgG S-antibody tests post-first RT-PCR-positive, 4808 (78%) were ever antibody-positive; Cts were significantly higher in those remaining antibody negative.Conclusions:Marked variation in community SARS-CoV-2 Ct values suggests that they could be a useful epidemiological early-warning indicator.Funding:Department of Health and Social Care, National Institutes of Health Research, Huo Family Foundation, Medical Research Council UK; Wellcome Trust.",
+  "pub_date": "2021-07-12",
+  "authors": [
+    {
+      "given_names": "A Sarah",
+      "surname": "Walker",
+      "orcid": "0000-0002-0412-8509",
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3",
+        "aff4"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Emma",
+      "surname": "Pritchard",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Thomas",
+      "surname": "House",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5",
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Julie V",
+      "surname": "Robotham",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2",
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Paul J",
+      "surname": "Birrell",
+      "orcid": "0000-0001-8131-4893",
+      "affiliation_ids": [
+        "aff7",
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Iain",
+      "surname": "Bell",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "John I",
+      "surname": "Bell",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "John N",
+      "surname": "Newton",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Jeremy",
+      "surname": "Farrar",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Ian",
+      "surname": "Diamond",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Ruth",
+      "surname": "Studley",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Jodie",
+      "surname": "Hay",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff13",
+        "aff14"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Karina-Doris",
+      "surname": "Vihta",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Timothy EA",
+      "surname": "Peto",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3",
+        "aff15"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Nicole",
+      "surname": "Stoesser",
+      "orcid": "0000-0002-4508-7969",
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3",
+        "aff15"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Philippa C",
+      "surname": "Matthews",
+      "orcid": "0000-0002-4036-4269",
+      "affiliation_ids": [
+        "aff1",
+        "aff15"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "David W",
+      "surname": "Eyre",
+      "orcid": "0000-0001-5095-6367",
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff14",
+        "aff16"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Koen B",
+      "surname": "Pouwels",
+      "orcid": "0000-0001-7097-8950",
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff17"
+      ],
+      "corresponding": false,
+      "position": 18
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Nuffield Department of Medicine, University of Oxford",
+      "department": null,
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "The National Institute for Health Research Health Protection Research Unit in Healthcare Associated Infections and Antimicrobial Resistance at the University of Oxford",
+      "department": null,
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "The National Institute for Health Research Oxford Biomedical Research Centre, University of Oxford",
+      "department": null,
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "MRC Clinical Trials Unit at UCL, UCL",
+      "department": null,
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "Department of Mathematics, University of Manchester",
+      "department": null,
+      "city": "Manchester",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "IBM Research, Hartree Centre",
+      "department": null,
+      "city": "Sci-Tech Daresbury",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff7",
+      "institution": "National Infection Service, Public Health England",
+      "department": null,
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff8",
+      "institution": "MRC Biostatistics Unit, University of Cambridge, Cambridge Institute of Public Health",
+      "department": null,
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff9",
+      "institution": "Office for National Statistics",
+      "department": null,
+      "city": "Newport",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff10",
+      "institution": "Office of the Regius Professor of Medicine, University of Oxford",
+      "department": null,
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff11",
+      "institution": "Health Improvement Directorate, Public Health England",
+      "department": null,
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff12",
+      "institution": "Wellcome Trust",
+      "department": null,
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff13",
+      "institution": "University of Glasgow",
+      "department": null,
+      "city": "Glasgow",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff14",
+      "institution": "Lighthouse Laboratory in Glasgow, Queen Elizabeth University Hospital",
+      "department": null,
+      "city": "Glasgow",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff15",
+      "institution": "Department of Infectious Diseases and Microbiology, Oxford University Hospitals NHS Foundation Trust, John Radcliffe Hospital",
+      "department": null,
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff16",
+      "institution": "Big Data Institute, Nuffield Department of Population Health, University of Oxford",
+      "department": null,
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff17",
+      "institution": "Health Economics Research Centre, Nuffield Department of Population Health, University of Oxford",
+      "department": null,
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": null
+    }
+  ]
 }

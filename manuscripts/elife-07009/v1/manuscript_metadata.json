@@ -1,6 +1,388 @@
 {
   "doi": "10.7554/eLife.07009",
   "title": "Anatomy of BioJS, an open source community for the life sciences",
-  "abstract": "10.7554/eLife.07009.001 BioJS is an open source software project that develops visualization tools for different types of biological data. Here we report on the factors that influenced the growth of the BioJS user and developer community, and outline our strategy for building on this growth. The lessons we have learned on BioJS may also be relevant to other open source software projects. DOI: http://dx.doi.org/10.7554/eLife.07009.001",
-  "pub_date": "2015-07-08"
+  "abstract": "BioJS is an open source software project that develops visualization tools for different types of biological data. Here we report on the factors that influenced the growth of the BioJS user and developer community, and outline our strategy for building on this growth. The lessons we have learned on BioJS may also be relevant to other open source software projects.",
+  "pub_date": "2015-07-08",
+  "authors": [
+    {
+      "given_names": "Guy",
+      "surname": "Yachdav",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Tatyana",
+      "surname": "Goldberg",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Sebastian",
+      "surname": "Wilzbach",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "David",
+      "surname": "Dao",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Iris",
+      "surname": "Shih",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Saket",
+      "surname": "Choudhary",
+      "orcid": "0000-0001-5202-7633",
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Steve",
+      "surname": "Crouch",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Max",
+      "surname": "Franz",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Alexander",
+      "surname": "García",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Leyla J",
+      "surname": "García",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Björn A",
+      "surname": "Grüning",
+      "orcid": "0000-0002-3079-6586",
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Devasena",
+      "surname": "Inupakutika",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Ian",
+      "surname": "Sillitoe",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Anil S",
+      "surname": "Thanki",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff14"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Bruno",
+      "surname": "Vieira",
+      "orcid": "0000-0002-4878-6431",
+      "affiliation_ids": [
+        "aff15"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "José M",
+      "surname": "Villaveces",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff16"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Maria V",
+      "surname": "Schneider",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff17"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Suzanna",
+      "surname": "Lewis",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff18"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Steve",
+      "surname": "Pettifer",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff19"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Burkhard",
+      "surname": "Rost",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff20"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Manuel",
+      "surname": "Corpas",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff21"
+      ],
+      "corresponding": true,
+      "position": 21
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Technische Universität München, Technische Universität München, Biosof LLC",
+      "department": "TUM Graduate School, Center of Doctoral Studies in Informatics and its Applications",
+      "city": "Garching",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Technische Universität München, Technische Universität München",
+      "department": "TUM Graduate School, Center of Doctoral Studies in Informatics and its Applications",
+      "city": "Garching",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "Technische Universität München",
+      "department": "Bioinformatik",
+      "city": "Garching",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "Technische Universität München",
+      "department": "Bioinformatik",
+      "city": "Garching",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "Technische Universität München",
+      "department": "Bioinformatik",
+      "city": "Garching",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "University of Southern California",
+      "department": "Molecular and Computational Biology",
+      "city": "Los Angeles",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff7",
+      "institution": "University of Southampton",
+      "department": "Web and Internet Science",
+      "city": "Southampton",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff8",
+      "institution": "University of Toronto",
+      "department": "Banting and Best Department of Medical Research, Donnelly Centre for Cellular and Biomolecular Research",
+      "city": "Toronto",
+      "country": "Canada",
+      "ror": null
+    },
+    {
+      "id": "aff9",
+      "institution": "Linkingdata I/O LLC",
+      "department": null,
+      "city": "Austin",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff10",
+      "institution": "European Molecular Biology Laboratory-European Bioinformatics Institute",
+      "department": null,
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff11",
+      "institution": "University of Freiburg",
+      "department": "Bioinformatics Group, Department of Computer Science and Centre for Biological Systems Analysis",
+      "city": "Freiburg",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff12",
+      "institution": "University of Southampton",
+      "department": "Web and Internet Science",
+      "city": "Southampton",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff13",
+      "institution": "University College London",
+      "department": "Institute of Structure and Molecular Biology",
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff14",
+      "institution": "The Genome Analysis Centre",
+      "department": null,
+      "city": "Norwich",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff15",
+      "institution": "Queen Mary University of London",
+      "department": "School of Biological and Chemical Sciences",
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff16",
+      "institution": "Max Planck Institute of Biochemistry",
+      "department": null,
+      "city": "Planegg",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff17",
+      "institution": "The Genome Analysis Centre",
+      "department": null,
+      "city": "Norwich",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff18",
+      "institution": "Lawrence Berkeley National Laboratory",
+      "department": null,
+      "city": "Berkeley",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff19",
+      "institution": "The University of Manchester",
+      "department": "School of Computer Science",
+      "city": "Manchester",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff20",
+      "institution": "Technische Universität München, Technische Universität München, Biosof LLC",
+      "department": "TUM Graduate School, Center of Doctoral Studies in Informatics and its Applications",
+      "city": "Garching",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff21",
+      "institution": "The Genome Analysis Centre",
+      "department": null,
+      "city": "Norwich",
+      "country": "United Kingdom",
+      "ror": null
+    }
+  ]
 }

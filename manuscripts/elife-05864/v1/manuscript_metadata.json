@@ -1,6 +1,390 @@
 {
   "doi": "10.7554/eLife.05864",
   "title": "MorphoGraphX: A platform for quantifying morphogenesis in 4D",
-  "abstract": "10.7554/eLife.05864.001 Morphogenesis emerges from complex multiscale interactions between genetic and mechanical processes. To understand these processes, the evolution of cell shape, proliferation and gene expression must be quantified. This quantification is usually performed either in full 3D, which is computationally expensive and technically challenging, or on 2D planar projections, which introduces geometrical artifacts on highly curved organs. Here we present MorphoGraphX ( www.MorphoGraphX.org ), a software that bridges this gap by working directly with curved surface images extracted from 3D data. In addition to traditional 3D image analysis, we have developed algorithms to operate on curved surfaces, such as cell segmentation, lineage tracking and fluorescence signal quantification. The software's modular design makes it easy to include existing libraries, or to implement new algorithms. Cell geometries extracted with MorphoGraphX can be exported and used as templates for simulation models, providing a powerful platform to investigate the interactions between shape, genes and growth. DOI: http://dx.doi.org/10.7554/eLife.05864.001",
-  "pub_date": "2015-05-06"
+  "abstract": "Morphogenesis emerges from complex multiscale interactions between genetic and mechanical processes. To understand these processes, the evolution of cell shape, proliferation and gene expression must be quantified. This quantification is usually performed either in full 3D, which is computationally expensive and technically challenging, or on 2D planar projections, which introduces geometrical artifacts on highly curved organs. Here we present MorphoGraphX (www.MorphoGraphX.org), a software that bridges this gap by working directly with curved surface images extracted from 3D data. In addition to traditional 3D image analysis, we have developed algorithms to operate on curved surfaces, such as cell segmentation, lineage tracking and fluorescence signal quantification. The software's modular design makes it easy to include existing libraries, or to implement new algorithms. Cell geometries extracted with MorphoGraphX can be exported and used as templates for simulation models, providing a powerful platform to investigate the interactions between shape, genes and growth.",
+  "pub_date": "2015-05-06",
+  "authors": [
+    {
+      "given_names": "Pierre",
+      "surname": "Barbier de Reuille",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Anne-Lise",
+      "surname": "Routier-Kierzkowska",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Daniel",
+      "surname": "Kierzkowski",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "George W",
+      "surname": "Bassel",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Thierry",
+      "surname": "Schüpbach",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Gerardo",
+      "surname": "Tauriello",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Namrata",
+      "surname": "Bajpai",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Sören",
+      "surname": "Strauss",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Alain",
+      "surname": "Weber",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Annamaria",
+      "surname": "Kiss",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6",
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Agata",
+      "surname": "Burian",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Hugo",
+      "surname": "Hofhuis",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Aleksandra",
+      "surname": "Sapala",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Marcin",
+      "surname": "Lipowczan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Maria B",
+      "surname": "Heimlicher",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Sarah",
+      "surname": "Robinson",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Emmanuelle M",
+      "surname": "Bayer",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Konrad",
+      "surname": "Basler",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Petros",
+      "surname": "Koumoutsakos",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Adrienne HK",
+      "surname": "Roeder",
+      "orcid": "0000-0001-6685-2984",
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Tinri",
+      "surname": "Aegerter-Wilmsen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "Naomi",
+      "surname": "Nakayama",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 22
+    },
+    {
+      "given_names": "Miltos",
+      "surname": "Tsiantis",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 23
+    },
+    {
+      "given_names": "Angela",
+      "surname": "Hay",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 24
+    },
+    {
+      "given_names": "Dorota",
+      "surname": "Kwiatkowska",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 25
+    },
+    {
+      "given_names": "Ioannis",
+      "surname": "Xenarios",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 26
+    },
+    {
+      "given_names": "Cris",
+      "surname": "Kuhlemeier",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 27
+    },
+    {
+      "given_names": "Richard S",
+      "surname": "Smith",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": true,
+      "position": 28
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "University of Bern",
+      "department": "Institute of Plant Sciences",
+      "city": "Bern",
+      "country": "Switzerland",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Max Planck Institute for Plant Breeding Research",
+      "department": "Department of Comparative Development and Genetics",
+      "city": "Cologne",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "University of Birmingham",
+      "department": "School of Biosciences",
+      "city": "Birmingham",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "Swiss Institute of Bioinformatics",
+      "department": null,
+      "city": "Lausanne",
+      "country": "Switzerland",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "ETH Zurich",
+      "department": "Chair of Computational Science",
+      "city": "Zurich",
+      "country": "Switzerland",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "Ecole Normale Supérieure de Lyon",
+      "department": "Reproduction et Développement des Plantes",
+      "city": "Lyon",
+      "country": "France",
+      "ror": null
+    },
+    {
+      "id": "aff7",
+      "institution": "Ecole Normale Supérieure de Lyon",
+      "department": "Laboratoire Joliot Curie",
+      "city": "Lyon",
+      "country": "France",
+      "ror": null
+    },
+    {
+      "id": "aff8",
+      "institution": "University of Silesia",
+      "department": "Department of Biophysics and Morphogenesis of Plants",
+      "city": "Katowice",
+      "country": "Poland",
+      "ror": null
+    },
+    {
+      "id": "aff9",
+      "institution": "Institute of Molecular Life Sciences",
+      "department": null,
+      "city": "Zurich",
+      "country": "Switzerland",
+      "ror": null
+    },
+    {
+      "id": "aff10",
+      "institution": "University of Bordeaux",
+      "department": "Laboratory of Membrane Biogenesis",
+      "city": "Bordeaux",
+      "country": "France",
+      "ror": null
+    },
+    {
+      "id": "aff11",
+      "institution": "Cornell University",
+      "department": "Weill Institute for Cell and Molecular Biology and School of Integrative Plant Science, Section of Plant Biology",
+      "city": "Ithaca",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff12",
+      "institution": "University of Edinburgh",
+      "department": "Institute of Molecular Plant Sciences",
+      "city": "Edinburgh",
+      "country": "United Kingdom",
+      "ror": null
+    }
+  ]
 }

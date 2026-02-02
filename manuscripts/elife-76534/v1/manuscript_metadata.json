@@ -1,6 +1,278 @@
 {
   "doi": "10.7554/eLife.76534",
   "title": "A scalable and modular automated pipeline for stitching of large electron microscopy datasets",
-  "abstract": "Serial-section electronmicroscopy (ssEM) is themethod of choice for studyingmacroscopic biological samples at extremely high resolution in three dimensions. In the nervous system, nanometer-scale images are necessary to reconstruct dense neural wiring diagrams in the brain, so called connectomes. In order to use this data, consisting of up to 10 8 individual EM images, it must be assembled into a volume, requiring seamless 2D stitching from each physical section followed by 3D alignment of the stitched sections. The high throughput of ssEM necessitates 2D stitching to be done at the pace of imaging, which currently produces tens of terabytes per day. To achieve this, we present a modular volume assembly software pipeline ASAP (Assembly Stitching and Alignment Pipeline) that is scalable to datasets containing petabytes of data and parallelized to work in a distributed computational environment. The pipeline is built on top of the Render (27) services used in the volume assembly of the brain of adult Drosophilamelanogaster (30). It achieves high throughput by operating on themeta-data and transformations of each image stored in a database, thus eliminating the need to render intermediate output. ASAP ismodular, allowing for easy incorporation of new algorithms without significant changes in the workflow. The entire software pipeline includes a complete set of tools for stitching, automated quality control, 3D section alignment, and final rendering of the assembled volume to disk. ASAP has been deployed for continuous stitching of several large-scale datasets of the mouse visual cortex and human brain samples including one cubic millimeter of mouse visual cortex (28; 8) at speeds that exceed imaging. The pipeline also has multi-channel processing capabilities and can be applied to fluorescence and multi-modal datasets like array tomography.",
-  "pub_date": "2022-07-26"
+  "abstract": "Serial-section electronmicroscopy (ssEM) is themethod of choice for studyingmacroscopic biological samples at extremely high resolution in three dimensions. In the nervous system, nanometer-scale images are necessary to reconstruct dense neural wiring diagrams in the brain, so called connectomes. In order to use this data, consisting of up to 108 individual EM images, it must be assembled into a volume, requiring seamless 2D stitching from each physical section followed by 3D alignment of the stitched sections. The high throughput of ssEM necessitates 2D stitching to be done at the pace of imaging, which currently produces tens of terabytes per day. To achieve this, we present a modular volume assembly software pipeline ASAP (Assembly Stitching and Alignment Pipeline) that is scalable to datasets containing petabytes of data and parallelized to work in a distributed computational environment. The pipeline is built on top of the Render (27) services used in the volume assembly of the brain of adult Drosophilamelanogaster (30). It achieves high throughput by operating on themeta-data and transformations of each image stored in a database, thus eliminating the need to render intermediate output. ASAP ismodular, allowing for easy incorporation of new algorithms without significant changes in the workflow. The entire software pipeline includes a complete set of tools for stitching, automated quality control, 3D section alignment, and final rendering of the assembled volume to disk. ASAP has been deployed for continuous stitching of several large-scale datasets of the mouse visual cortex and human brain samples including one cubic millimeter of mouse visual cortex (28; 8) at speeds that exceed imaging. The pipeline also has multi-channel processing capabilities and can be applied to fluorescence and multi-modal datasets like array tomography.",
+  "pub_date": "2022-07-26",
+  "authors": [
+    {
+      "given_names": "Gayathri",
+      "surname": "Mahalingam",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Russel",
+      "surname": "Torres",
+      "orcid": "0000-0002-2876-4382",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Daniel",
+      "surname": "Kapner",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Eric T",
+      "surname": "Trautman",
+      "orcid": "0000-0001-8588-0569",
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Tim",
+      "surname": "Fliss",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Shamishtaa",
+      "surname": "Seshamani",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Eric",
+      "surname": "Perlman",
+      "orcid": "0000-0001-5542-1302",
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Rob",
+      "surname": "Young",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Samuel",
+      "surname": "Kinn",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "JoAnn",
+      "surname": "Buchanan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Marc M",
+      "surname": "Takeno",
+      "orcid": "0000-0002-8384-7500",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Wenjing",
+      "surname": "Yin",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Daniel J",
+      "surname": "Bumbarger",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Ryder P",
+      "surname": "Gwinn",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Julie",
+      "surname": "Nyhus",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Ed",
+      "surname": "Lein",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Steven J",
+      "surname": "Smith",
+      "orcid": "0000-0002-2290-8701",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "R Clay",
+      "surname": "Reid",
+      "orcid": "0000-0002-8697-6797",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Khaled A",
+      "surname": "Khairy",
+      "orcid": "0000-0002-9274-5928",
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Stephan",
+      "surname": "Saalfeld",
+      "orcid": "0000-0002-4106-1761",
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Forrest",
+      "surname": "Collman",
+      "orcid": "0000-0002-0280-7022",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "Nuno",
+      "surname": "Macarico da Costa",
+      "orcid": "0000-0003-2001-4568",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 22
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Allen Institute for Brain Science",
+      "department": null,
+      "city": "Seattle",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Janelia Research Campus",
+      "department": "Scientific Computing",
+      "city": "Ashburn",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "Yikes LLC",
+      "department": null,
+      "city": "Baltimore",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "Swedish Neuroscience Institute",
+      "department": "Epilepsy Surgery and Functional Neurosurgery",
+      "city": "Seattle",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "St. Jude Children's Research Hospital",
+      "department": null,
+      "city": "Memphis",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "Janelia Research Campus",
+      "department": "Saalfeld Lab",
+      "city": "Ashburn",
+      "country": "United States",
+      "ror": null
+    }
+  ]
 }

@@ -1,6 +1,84 @@
 {
   "doi": "10.7554/eLife.71069",
   "title": "Simplifying the development of portable, scalable, and reproducible workflows",
-  "abstract": "Command-line software plays a critical role in biology research. However, processes for installing and executing software differ widely. The Common Workflow Language (CWL) is a community standard that addresses this problem. Using CWL, tool developers can formally describe a tool’s inputs, outputs, and other execution details. CWL documents can include instructions for executing tools inside software containers. Accordingly, CWL tools are portable—they can be executed on diverse computers—including personal workstations, high-performance clusters, or the cloud. CWL also supports workflows, which describe dependencies among tools and using outputs from one tool as inputs to others. To date, CWL has been used primarily for batch processing of large datasets, especially in genomics. But it can also be used for analytical steps of a study. This article explains key concepts about CWL and software containers and provides examples for using CWL in biology research. CWL documents are text-based, so they can be created manually, without computer programming. However, ensuring that these documents conform to the CWL specification may prevent some users from adopting it. To address this gap, we created ToolJig, a Web application that enables researchers to create CWL documents interactively. ToolJig validates information provided by the user to ensure it is complete and valid. After creating a CWL tool or workflow, the user can create ‘input-object’ files, which store values for a particular invocation of a tool or workflow. In addition, ToolJig provides examples of how to execute the tool or workflow via a workflow engine. ToolJig and our examples are available at https://github.com/srp33/ToolJig .",
-  "pub_date": "2021-10-13"
+  "abstract": "Command-line software plays a critical role in biology research. However, processes for installing and executing software differ widely. The Common Workflow Language (CWL) is a community standard that addresses this problem. Using CWL, tool developers can formally describe a tool’s inputs, outputs, and other execution details. CWL documents can include instructions for executing tools inside software containers. Accordingly, CWL tools are portable—they can be executed on diverse computers—including personal workstations, high-performance clusters, or the cloud. CWL also supports workflows, which describe dependencies among tools and using outputs from one tool as inputs to others. To date, CWL has been used primarily for batch processing of large datasets, especially in genomics. But it can also be used for analytical steps of a study. This article explains key concepts about CWL and software containers and provides examples for using CWL in biology research. CWL documents are text-based, so they can be created manually, without computer programming. However, ensuring that these documents conform to the CWL specification may prevent some users from adopting it. To address this gap, we created ToolJig, a Web application that enables researchers to create CWL documents interactively. ToolJig validates information provided by the user to ensure it is complete and valid. After creating a CWL tool or workflow, the user can create ‘input-object’ files, which store values for a particular invocation of a tool or workflow. In addition, ToolJig provides examples of how to execute the tool or workflow via a workflow engine. ToolJig and our examples are available at https://github.com/srp33/ToolJig.",
+  "pub_date": "2021-10-13",
+  "authors": [
+    {
+      "given_names": "Stephen R",
+      "surname": "Piccolo",
+      "orcid": "0000-0003-2001-5640",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Zachary E",
+      "surname": "Ence",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Elizabeth C",
+      "surname": "Anderson",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Jeffrey T",
+      "surname": "Chang",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Andrea H",
+      "surname": "Bild",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 5
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Department of Biology, Brigham Young University",
+      "department": null,
+      "city": "Provo",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Department of Integrative Biology and Pharmacology, University of Texas Health Science Center at Houston",
+      "department": null,
+      "city": "Houston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "Department of Medical Oncology and Therapeutics, City of Hope Comprehensive Cancer Institute",
+      "department": null,
+      "city": "Monrovia",
+      "country": "United States",
+      "ror": null
+    }
+  ]
 }

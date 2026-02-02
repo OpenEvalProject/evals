@@ -1,6 +1,234 @@
 {
   "doi": "10.7554/eLife.44494",
   "title": "NetPyNE, a tool for data-driven multiscale modeling of brain circuits",
-  "abstract": "10.7554/eLife.44494.001 Biophysical modeling of neuronal networks helps to integrate and interpret rapidly growing and disparate experimental datasets at multiple scales. The NetPyNE tool ( www.netpyne.org ) provides both programmatic and graphical interfaces to develop data-driven multiscale network models in NEURON. NetPyNE clearly separates model parameters from implementation code. Users provide specifications at a high level via a standardized declarative language, for example connectivity rules, to create millions of cell-to-cell connections. NetPyNE then enables users to generate the NEURON network, run efficiently parallelized simulations, optimize and explore network parameters through automated batch runs, and use built-in functions for visualization and analysis – connectivity matrices, voltage traces, spike raster plots, local field potentials, and information theoretic measures. NetPyNE also facilitates model sharing by exporting and importing standardized formats (NeuroML and SONATA). NetPyNE is already being used to teach computational neuroscience students and by modelers to investigate brain regions and phenomena.",
-  "pub_date": "2019-04-26"
+  "abstract": "Biophysical modeling of neuronal networks helps to integrate and interpret rapidly growing and disparate experimental datasets at multiple scales. The NetPyNE tool (www.netpyne.org) provides both programmatic and graphical interfaces to develop data-driven multiscale network models in NEURON. NetPyNE clearly separates model parameters from implementation code. Users provide specifications at a high level via a standardized declarative language, for example connectivity rules, to create millions of cell-to-cell connections. NetPyNE then enables users to generate the NEURON network, run efficiently parallelized simulations, optimize and explore network parameters through automated batch runs, and use built-in functions for visualization and analysis – connectivity matrices, voltage traces, spike raster plots, local field potentials, and information theoretic measures. NetPyNE also facilitates model sharing by exporting and importing standardized formats (NeuroML and SONATA). NetPyNE is already being used to teach computational neuroscience students and by modelers to investigate brain regions and phenomena.",
+  "pub_date": "2019-04-26",
+  "authors": [
+    {
+      "given_names": "Salvador",
+      "surname": "Dura-Bernal",
+      "orcid": "0000-0002-8561-5324",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Benjamin A",
+      "surname": "Suter",
+      "orcid": "0000-0002-9885-6936",
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Padraig",
+      "surname": "Gleeson",
+      "orcid": "0000-0001-5963-8576",
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Matteo",
+      "surname": "Cantarelli",
+      "orcid": "0000-0002-0054-226X",
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Adrian",
+      "surname": "Quintana",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Facundo",
+      "surname": "Rodriguez",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "David J",
+      "surname": "Kedziora",
+      "orcid": "0000-0002-0673-182X",
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "George L",
+      "surname": "Chadderdon",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Cliff C",
+      "surname": "Kerr",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Samuel A",
+      "surname": "Neymotin",
+      "orcid": "0000-0003-3646-5195",
+      "affiliation_ids": [
+        "aff1",
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Robert A",
+      "surname": "McDougal",
+      "orcid": "0000-0001-6394-3127",
+      "affiliation_ids": [
+        "aff8",
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Michael",
+      "surname": "Hines",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Gordon MG",
+      "surname": "Shepherd",
+      "orcid": "0000-0002-1455-8262",
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "William W",
+      "surname": "Lytton",
+      "orcid": "0000-0002-3727-2849",
+      "affiliation_ids": [
+        "aff1",
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 14
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "State University of New York Downstate Medical Center",
+      "department": "Department of Physiology & Pharmacology",
+      "city": "Brooklyn",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Northwestern University",
+      "department": "Department of Physiology",
+      "city": "Chicago",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "University College London",
+      "department": "Department of Neuroscience, Physiology and Pharmacology",
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "MetaCell LLC",
+      "department": null,
+      "city": "Boston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "EyeSeeTea Ltd",
+      "department": null,
+      "city": "Cheltenham",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "University of Sydney",
+      "department": "Complex Systems Group, School of Physics",
+      "city": "Sydney",
+      "country": "Australia",
+      "ror": null
+    },
+    {
+      "id": "aff7",
+      "institution": "Nathan Kline Institute for Psychiatric Research",
+      "department": null,
+      "city": "Orangeburg",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff8",
+      "institution": "Yale University",
+      "department": "Department of Neuroscience and School of Medicine",
+      "city": "New Haven",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff9",
+      "institution": "Yale University",
+      "department": "Center for Medical Informatics",
+      "city": "New Haven",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff10",
+      "institution": "Kings County Hospital",
+      "department": "Department of Neurology",
+      "city": "Brooklyn",
+      "country": "United States",
+      "ror": null
+    }
+  ]
 }

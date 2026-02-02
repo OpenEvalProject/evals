@@ -1,6 +1,322 @@
 {
   "doi": "10.7554/eLife.88149",
   "title": "Risk factors affecting polygenic score performance across diverse cohorts",
-  "abstract": "Apart from ancestry, personal or environmental covariates may contribute to differences in polygenic score (PGS) performance. We analyzed the effects of covariate stratification and interaction on body mass index (BMI) PGS (PGS BMI ) across four cohorts of European (N = 491,111) and African (N = 21,612) ancestry. Stratifying on binary covariates and quintiles for continuous covariates, 18/62 covariates had significant and replicable R 2 differences among strata. Covariates with the largest differences included age, sex, blood lipids, physical activity, and alcohol consumption, with R 2 being nearly double between best- and worst-performing quintiles for certain covariates. Twenty-eight covariates had significant PGS BMI –covariate interaction effects, modifying PGS BMI effects by nearly 20% per standard deviation change. We observed overlap between covariates that had significant R 2 differences among strata and interaction effects – across all covariates, their main effects on BMI were correlated with their maximum R 2 differences and interaction effects (0.56 and 0.58, respectively), suggesting high-PGS BMI individuals have highest R 2 and increase in PGS effect. Using quantile regression, we show the effect of PGS BMI increases as BMI itself increases, and that these differences in effects are directly related to differences in R 2 when stratifying by different covariates. Given significant and replicable evidence for context-specific PGS BMI performance and effects, we investigated ways to increase model performance taking into account nonlinear effects. Machine learning models (neural networks) increased relative model R 2 (mean 23%) across datasets. Finally, creating PGS BMI directly from GxAge genome-wide association studies effects increased relative R 2 by 7.8%. These results demonstrate that certain covariates, especially those most associated with BMI, significantly affect both PGS BMI performance and effects across diverse cohorts and ancestries, and we provide avenues to improve model performance that consider these effects.",
-  "pub_date": "2025-01-24"
+  "abstract": "Apart from ancestry, personal or environmental covariates may contribute to differences in polygenic score (PGS) performance. We analyzed the effects of covariate stratification and interaction on body mass index (BMI) PGS (PGSBMI) across four cohorts of European (N = 491,111) and African (N = 21,612) ancestry. Stratifying on binary covariates and quintiles for continuous covariates, 18/62 covariates had significant and replicable R2 differences among strata. Covariates with the largest differences included age, sex, blood lipids, physical activity, and alcohol consumption, with R2 being nearly double between best- and worst-performing quintiles for certain covariates. Twenty-eight covariates had significant PGSBMI–covariate interaction effects, modifying PGSBMI effects by nearly 20% per standard deviation change. We observed overlap between covariates that had significant R2 differences among strata and interaction effects – across all covariates, their main effects on BMI were correlated with their maximum R2 differences and interaction effects (0.56 and 0.58, respectively), suggesting high-PGSBMI individuals have highest R2 and increase in PGS effect. Using quantile regression, we show the effect of PGSBMI increases as BMI itself increases, and that these differences in effects are directly related to differences in R2 when stratifying by different covariates. Given significant and replicable evidence for context-specific PGSBMI performance and effects, we investigated ways to increase model performance taking into account nonlinear effects. Machine learning models (neural networks) increased relative model R2 (mean 23%) across datasets. Finally, creating PGSBMI directly from GxAge genome-wide association studies effects increased relative R2 by 7.8%. These results demonstrate that certain covariates, especially those most associated with BMI, significantly affect both PGSBMI performance and effects across diverse cohorts and ancestries, and we provide avenues to improve model performance that consider these effects.",
+  "pub_date": "2025-01-24",
+  "authors": [
+    {
+      "given_names": "Daniel",
+      "surname": "Hui",
+      "orcid": "0000-0002-8023-7352",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 1
+    },
+    {
+      "given_names": "Scott",
+      "surname": "Dudek",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Krzysztof",
+      "surname": "Kiryluk",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Theresa L",
+      "surname": "Walunas",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Iftikhar J",
+      "surname": "Kullo",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Wei-Qi",
+      "surname": "Wei",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Hemant",
+      "surname": "Tiwari",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Josh F",
+      "surname": "Peterson",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Wendy K",
+      "surname": "Chung",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Brittney H",
+      "surname": "Davis",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Atlas",
+      "surname": "Khan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Leah C",
+      "surname": "Kottyan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Nita A",
+      "surname": "Limdi",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Qiping",
+      "surname": "Feng",
+      "orcid": "0000-0002-6213-793X",
+      "affiliation_ids": [
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Megan J",
+      "surname": "Puckelwartz",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Chunhua",
+      "surname": "Weng",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Johanna L",
+      "surname": "Smith",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Elizabeth W",
+      "surname": "Karlson",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Gail P",
+      "surname": "Jarvik",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff14"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "Marylyn D",
+      "surname": "Ritchie",
+      "orcid": "0000-0002-1208-1720",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 22
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Department of Genetics, Perelman School of Medicine, University of Pennsylvania",
+      "department": null,
+      "city": "Philadelphia",
+      "country": "United States",
+      "ror": "00b30xv10"
+    },
+    {
+      "id": "aff2",
+      "institution": "Division of Nephrology, Department of Medicine, Columbia University",
+      "department": null,
+      "city": "New York",
+      "country": "United States",
+      "ror": "00hj8s172"
+    },
+    {
+      "id": "aff3",
+      "institution": "Department of Preventive Medicine, Northwestern University Feinberg School of Medicine",
+      "department": null,
+      "city": "Chicago",
+      "country": "United States",
+      "ror": "04fzwnh64"
+    },
+    {
+      "id": "aff4",
+      "institution": "Department of Cardiovascular Medicine, Mayo Clinic",
+      "department": null,
+      "city": "Rochester",
+      "country": "United States",
+      "ror": "02qp3tb03"
+    },
+    {
+      "id": "aff5",
+      "institution": "Department of Biomedical Informatics, Vanderbilt University Medical Center",
+      "department": null,
+      "city": "Nashville",
+      "country": "United States",
+      "ror": "05dq2gs74"
+    },
+    {
+      "id": "aff6",
+      "institution": "Department of Pediatrics, University of Alabama at Birmingham",
+      "department": null,
+      "city": "Birmingham",
+      "country": "United States",
+      "ror": "008s83205"
+    },
+    {
+      "id": "aff7",
+      "institution": "Departments of Pediatrics and Medicine, Columbia University Irving Medical Center, Columbia University",
+      "department": null,
+      "city": "New York",
+      "country": "United States",
+      "ror": "00hj8s172"
+    },
+    {
+      "id": "aff8",
+      "institution": "Department of Neurology, School of Medicine, University of Alabama at Birmingham",
+      "department": null,
+      "city": "Birmingham",
+      "country": "United States",
+      "ror": "008s83205"
+    },
+    {
+      "id": "aff9",
+      "institution": "The Center for Autoimmune Genomics and Etiology, Division of Human Genetics, Cincinnati Children's Hospital Medical Center",
+      "department": null,
+      "city": "Cincinnati",
+      "country": "United States",
+      "ror": "01hcyya48"
+    },
+    {
+      "id": "aff10",
+      "institution": "Division of Clinical Pharmacology, Department of Medicine, Vanderbilt University Medical Center",
+      "department": null,
+      "city": "Nashville",
+      "country": "United States",
+      "ror": "05dq2gs74"
+    },
+    {
+      "id": "aff11",
+      "institution": "Center for Genetic Medicine, Northwestern University Feinberg School of Medicine",
+      "department": null,
+      "city": "Chicago",
+      "country": "United States",
+      "ror": "04fzwnh64"
+    },
+    {
+      "id": "aff12",
+      "institution": "Department of Biomedical Informatics, Vagelos College of Physicians & Surgeons, Columbia University",
+      "department": null,
+      "city": "New York",
+      "country": "United States",
+      "ror": "00hj8s172"
+    },
+    {
+      "id": "aff13",
+      "institution": "Division of Rheumatology, Inflammation, and Immunity, Department of Medicine, Brigham and Women's Hospital and Harvard Medical School",
+      "department": null,
+      "city": "Boston",
+      "country": "United States",
+      "ror": "04b6nzv94"
+    },
+    {
+      "id": "aff14",
+      "institution": "Departments of Medicine (Medical Genetics) and Genome Sciences, University of Washington Medical Center",
+      "department": null,
+      "city": "Seattle",
+      "country": "United States",
+      "ror": "00wbzw723"
+    }
+  ]
 }

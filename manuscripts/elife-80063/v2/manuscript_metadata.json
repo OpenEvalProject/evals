@@ -1,6 +1,86 @@
 {
   "doi": "10.7554/eLife.80063",
   "title": "Sparse dimensionality reduction approaches in Mendelian randomisation with highly correlated exposures",
-  "abstract": "Multivariable Mendelian randomisation (MVMR) is an instrumental variable technique that generalises the MR framework for multiple exposures. Framed as a regression problem, it is subject to the pitfall of multicollinearity. The bias and efficiency of MVMR estimates thus depends heavily on the correlation of exposures. Dimensionality reduction techniques such as principal component analysis (PCA) provide transformations of all the included variables that are effectively uncorrelated. We propose the use of sparse PCA (sPCA) algorithms that create principal components of subsets of the exposures with the aim of providing more interpretable and reliable MR estimates. The approach consists of three steps. We first apply a sparse dimension reduction method and transform the variant-exposure summary statistics to principal components. We then choose a subset of the principal components based on data-driven cutoffs, and estimate their strength as instruments with an adjusted F -statistic. Finally, we perform MR with these transformed exposures. This pipeline is demonstrated in a simulation study of highly correlated exposures and an applied example using summary data from a genome-wide association study of 97 highly correlated lipid metabolites. As a positive control, we tested the causal associations of the transformed exposures on coronary heart disease (CHD). Compared to the conventional inverse-variance weighted MVMR method and a weak instrument robust MVMR method (MR GRAPPLE), sparse component analysis achieved a superior balance of sparsity and biologically insightful grouping of the lipid traits.",
-  "pub_date": "2023-04-19"
+  "abstract": "Multivariable Mendelian randomisation (MVMR) is an instrumental variable technique that generalises the MR framework for multiple exposures. Framed as a regression problem, it is subject to the pitfall of multicollinearity. The bias and efficiency of MVMR estimates thus depends heavily on the correlation of exposures. Dimensionality reduction techniques such as principal component analysis (PCA) provide transformations of all the included variables that are effectively uncorrelated. We propose the use of sparse PCA (sPCA) algorithms that create principal components of subsets of the exposures with the aim of providing more interpretable and reliable MR estimates. The approach consists of three steps. We first apply a sparse dimension reduction method and transform the variant-exposure summary statistics to principal components. We then choose a subset of the principal components based on data-driven cutoffs, and estimate their strength as instruments with an adjusted F-statistic. Finally, we perform MR with these transformed exposures. This pipeline is demonstrated in a simulation study of highly correlated exposures and an applied example using summary data from a genome-wide association study of 97 highly correlated lipid metabolites. As a positive control, we tested the causal associations of the transformed exposures on coronary heart disease (CHD). Compared to the conventional inverse-variance weighted MVMR method and a weak instrument robust MVMR method (MR GRAPPLE), sparse component analysis achieved a superior balance of sparsity and biologically insightful grouping of the lipid traits.",
+  "pub_date": "2023-04-19",
+  "authors": [
+    {
+      "given_names": "Vasileios",
+      "surname": "Karageorgiou",
+      "orcid": "0000-0002-7173-9967",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Dipender",
+      "surname": "Gill",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff3",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Jack",
+      "surname": "Bowden",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Verena",
+      "surname": "Zuber",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 4
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Department of Epidemiology and Biostatistics, School of Public Health, Faculty of Medicine, Imperial College London",
+      "department": null,
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": "041kmwe10"
+    },
+    {
+      "id": "aff2",
+      "institution": "University of Exeter",
+      "department": null,
+      "city": "Exeter",
+      "country": "United Kingdom",
+      "ror": "03yghzc09"
+    },
+    {
+      "id": "aff3",
+      "institution": "Department of Clinical Pharmacology and Therapeutics, Institute for Infection and Immunity, St George’s, University of London",
+      "department": null,
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": "04cw6st05"
+    },
+    {
+      "id": "aff4",
+      "institution": "Genetics Department, Novo Nordisk Research Centre Oxford",
+      "department": null,
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": null
+    }
+  ]
 }

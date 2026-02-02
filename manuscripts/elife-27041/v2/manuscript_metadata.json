@@ -1,6 +1,1195 @@
 {
   "doi": "10.7554/eLife.27041",
   "title": "The Human Cell Atlas",
-  "abstract": "10.7554/eLife.27041.001 The recent advent of methods for high-throughput single-cell molecular profiling has catalyzed a growing sense in the scientific community that the time is ripe to complete the 150-year-old effort to identify all cell types in the human body. The Human Cell Atlas Project is an international collaborative effort that aims to define all human cell types in terms of distinctive molecular profiles (such as gene expression profiles) and to connect this information with classical cellular descriptions (such as location and morphology). An open comprehensive reference map of the molecular state of cells in healthy human tissues would propel the systematic study of physiological states, developmental trajectories, regulatory circuitry and interactions of cells, and also provide a framework for understanding cellular dysregulation in human disease. Here we describe the idea, its potential utility, early proofs-of-concept, and some design considerations for the Human Cell Atlas, including a commitment to open data, code, and community.",
-  "pub_date": "2017-12-05"
+  "abstract": "The recent advent of methods for high-throughput single-cell molecular profiling has catalyzed a growing sense in the scientific community that the time is ripe to complete the 150-year-old effort to identify all cell types in the human body. The Human Cell Atlas Project is an international collaborative effort that aims to define all human cell types in terms of distinctive molecular profiles (such as gene expression profiles) and to connect this information with classical cellular descriptions (such as location and morphology). An open comprehensive reference map of the molecular state of cells in healthy human tissues would propel the systematic study of physiological states, developmental trajectories, regulatory circuitry and interactions of cells, and also provide a framework for understanding cellular dysregulation in human disease. Here we describe the idea, its potential utility, early proofs-of-concept, and some design considerations for the Human Cell Atlas, including a commitment to open data, code, and community.",
+  "pub_date": "2017-12-05",
+  "authors": [
+    {
+      "given_names": "Aviv",
+      "surname": "Regev",
+      "orcid": "0000-0003-3293-3158",
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Sarah A",
+      "surname": "Teichmann",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4",
+        "aff5",
+        "aff6"
+      ],
+      "corresponding": true,
+      "position": 2
+    },
+    {
+      "given_names": "Eric S",
+      "surname": "Lander",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff7"
+      ],
+      "corresponding": true,
+      "position": 3
+    },
+    {
+      "given_names": "Ido",
+      "surname": "Amit",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Christophe",
+      "surname": "Benoist",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Ewan",
+      "surname": "Birney",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Bernd",
+      "surname": "Bodenmiller",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5",
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Peter",
+      "surname": "Campbell",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4",
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Piero",
+      "surname": "Carninci",
+      "orcid": "0000-0001-7202-7243",
+      "affiliation_ids": [
+        "aff6",
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Menna",
+      "surname": "Clatworthy",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Hans",
+      "surname": "Clevers",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff14"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Bart",
+      "surname": "Deplancke",
+      "orcid": "0000-0001-9935-843X",
+      "affiliation_ids": [
+        "aff15"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Ian",
+      "surname": "Dunham",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "James",
+      "surname": "Eberwine",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff16"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Roland",
+      "surname": "Eils",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff17",
+        "aff18"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Wolfgang",
+      "surname": "Enard",
+      "orcid": "0000-0002-4056-0550",
+      "affiliation_ids": [
+        "aff19"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Andrew",
+      "surname": "Farmer",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff20"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Lars",
+      "surname": "Fugger",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff21"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Berthold",
+      "surname": "Göttgens",
+      "orcid": "0000-0001-6302-5705",
+      "affiliation_ids": [
+        "aff11",
+        "aff22"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Nir",
+      "surname": "Hacohen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff23"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Muzlifah",
+      "surname": "Haniffa",
+      "orcid": "0000-0002-3927-2084",
+      "affiliation_ids": [
+        "aff24"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "Martin",
+      "surname": "Hemberg",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 22
+    },
+    {
+      "given_names": "Seung",
+      "surname": "Kim",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff25"
+      ],
+      "corresponding": false,
+      "position": 23
+    },
+    {
+      "given_names": "Paul",
+      "surname": "Klenerman",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff26",
+        "aff27"
+      ],
+      "corresponding": false,
+      "position": 24
+    },
+    {
+      "given_names": "Arnold",
+      "surname": "Kriegstein",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff28"
+      ],
+      "corresponding": false,
+      "position": 25
+    },
+    {
+      "given_names": "Ed",
+      "surname": "Lein",
+      "orcid": "0000-0001-9012-6552",
+      "affiliation_ids": [
+        "aff29"
+      ],
+      "corresponding": false,
+      "position": 26
+    },
+    {
+      "given_names": "Sten",
+      "surname": "Linnarsson",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff30"
+      ],
+      "corresponding": false,
+      "position": 27
+    },
+    {
+      "given_names": "Emma",
+      "surname": "Lundberg",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff31",
+        "aff32"
+      ],
+      "corresponding": false,
+      "position": 28
+    },
+    {
+      "given_names": "Joakim",
+      "surname": "Lundeberg",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff33"
+      ],
+      "corresponding": false,
+      "position": 29
+    },
+    {
+      "given_names": "Partha",
+      "surname": "Majumder",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff34"
+      ],
+      "corresponding": false,
+      "position": 30
+    },
+    {
+      "given_names": "John C",
+      "surname": "Marioni",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4",
+        "aff5",
+        "aff35"
+      ],
+      "corresponding": false,
+      "position": 31
+    },
+    {
+      "given_names": "Miriam",
+      "surname": "Merad",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff36"
+      ],
+      "corresponding": false,
+      "position": 32
+    },
+    {
+      "given_names": "Musa",
+      "surname": "Mhlanga",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff37"
+      ],
+      "corresponding": false,
+      "position": 33
+    },
+    {
+      "given_names": "Martijn",
+      "surname": "Nawijn",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff38"
+      ],
+      "corresponding": false,
+      "position": 34
+    },
+    {
+      "given_names": "Mihai",
+      "surname": "Netea",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff39"
+      ],
+      "corresponding": false,
+      "position": 35
+    },
+    {
+      "given_names": "Garry",
+      "surname": "Nolan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff40"
+      ],
+      "corresponding": false,
+      "position": 36
+    },
+    {
+      "given_names": "Dana",
+      "surname": "Pe'er",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff41"
+      ],
+      "corresponding": false,
+      "position": 37
+    },
+    {
+      "given_names": "Anthony",
+      "surname": "Phillipakis",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 38
+    },
+    {
+      "given_names": "Chris P",
+      "surname": "Ponting",
+      "orcid": "0000-0003-0202-7816",
+      "affiliation_ids": [
+        "aff42"
+      ],
+      "corresponding": false,
+      "position": 39
+    },
+    {
+      "given_names": "Stephen",
+      "surname": "Quake",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff43",
+        "aff44"
+      ],
+      "corresponding": false,
+      "position": 40
+    },
+    {
+      "given_names": "Wolf",
+      "surname": "Reik",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4",
+        "aff45",
+        "aff46"
+      ],
+      "corresponding": false,
+      "position": 41
+    },
+    {
+      "given_names": "Orit",
+      "surname": "Rozenblatt-Rosen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 42
+    },
+    {
+      "given_names": "Joshua",
+      "surname": "Sanes",
+      "orcid": "0000-0001-8926-8836",
+      "affiliation_ids": [
+        "aff47"
+      ],
+      "corresponding": false,
+      "position": 43
+    },
+    {
+      "given_names": "Rahul",
+      "surname": "Satija",
+      "orcid": "0000-0001-9448-8833",
+      "affiliation_ids": [
+        "aff48",
+        "aff49"
+      ],
+      "corresponding": false,
+      "position": 44
+    },
+    {
+      "given_names": "Ton N",
+      "surname": "Schumacher",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff50"
+      ],
+      "corresponding": false,
+      "position": 45
+    },
+    {
+      "given_names": "Alex",
+      "surname": "Shalek",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff51",
+        "aff52"
+      ],
+      "corresponding": false,
+      "position": 46
+    },
+    {
+      "given_names": "Ehud",
+      "surname": "Shapiro",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff53"
+      ],
+      "corresponding": false,
+      "position": 47
+    },
+    {
+      "given_names": "Padmanee",
+      "surname": "Sharma",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff54"
+      ],
+      "corresponding": false,
+      "position": 48
+    },
+    {
+      "given_names": "Jay W",
+      "surname": "Shin",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 49
+    },
+    {
+      "given_names": "Oliver",
+      "surname": "Stegle",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 50
+    },
+    {
+      "given_names": "Michael",
+      "surname": "Stratton",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 51
+    },
+    {
+      "given_names": "Michael J T",
+      "surname": "Stubbington",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 52
+    },
+    {
+      "given_names": "Fabian J",
+      "surname": "Theis",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff55",
+        "aff56"
+      ],
+      "corresponding": false,
+      "position": 53
+    },
+    {
+      "given_names": "Matthias",
+      "surname": "Uhlen",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff57",
+        "aff58"
+      ],
+      "corresponding": false,
+      "position": 54
+    },
+    {
+      "given_names": "Alexander",
+      "surname": "van Oudenaarden",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff59"
+      ],
+      "corresponding": false,
+      "position": 55
+    },
+    {
+      "given_names": "Allon",
+      "surname": "Wagner",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff60"
+      ],
+      "corresponding": false,
+      "position": 56
+    },
+    {
+      "given_names": "Fiona",
+      "surname": "Watt",
+      "orcid": "0000-0001-9151-5154",
+      "affiliation_ids": [
+        "aff61"
+      ],
+      "corresponding": false,
+      "position": 57
+    },
+    {
+      "given_names": "Jonathan",
+      "surname": "Weissman",
+      "orcid": "0000-0003-2445-670X",
+      "affiliation_ids": [
+        "aff3",
+        "aff62",
+        "aff63",
+        "aff64"
+      ],
+      "corresponding": false,
+      "position": 58
+    },
+    {
+      "given_names": "Barbara",
+      "surname": "Wold",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff65"
+      ],
+      "corresponding": false,
+      "position": 59
+    },
+    {
+      "given_names": "Ramnik",
+      "surname": "Xavier",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1",
+        "aff66",
+        "aff67",
+        "aff68"
+      ],
+      "corresponding": false,
+      "position": 60
+    },
+    {
+      "given_names": "Nir",
+      "surname": "Yosef",
+      "orcid": "0000-0001-9004-1225",
+      "affiliation_ids": [
+        "aff52",
+        "aff60"
+      ],
+      "corresponding": false,
+      "position": 61
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Broad Institute of MIT and Harvard",
+      "department": null,
+      "city": "Cambridge",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Massachusetts Institute of Technology",
+      "department": "Department of Biology",
+      "city": "Cambridge",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "Howard Hughes Medical Institute",
+      "department": null,
+      "city": "Chevy Chase",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "Wellcome Trust Sanger Institute, Wellcome Genome Campus",
+      "department": null,
+      "city": "Hinxton",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "Wellcome Genome Campus",
+      "department": "EMBL-European Bioinformatics Institute",
+      "city": "Hinxton",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "University of Cambridge",
+      "department": "Cavendish Laboratory, Department of Physics",
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff7",
+      "institution": "Harvard Medical School",
+      "department": "Department of Systems Biology",
+      "city": "Boston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff8",
+      "institution": "Weizmann Institute of Science",
+      "department": "Department of Immunology",
+      "city": "Rehovot",
+      "country": "Israel",
+      "ror": null
+    },
+    {
+      "id": "aff9",
+      "institution": "Harvard Medical School",
+      "department": "Division of Immunology, Department of Microbiology and Immunobiology",
+      "city": "Boston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff10",
+      "institution": "University of Zürich",
+      "department": "Institute of Molecular Life Sciences",
+      "city": "Zürich",
+      "country": "Switzerland",
+      "ror": null
+    },
+    {
+      "id": "aff11",
+      "institution": "University of Cambridge",
+      "department": "Department of Haematology",
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff12",
+      "institution": "RIKEN Center for Life Science Technologies",
+      "department": "Division of Genomic Technologies",
+      "city": "Yokohama",
+      "country": "Japan",
+      "ror": null
+    },
+    {
+      "id": "aff13",
+      "institution": "University of Cambridge",
+      "department": "Molecular Immunity Unit, Department of Medicine, MRC Laboratory of Molecular Biology",
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff14",
+      "institution": "Hubrecht Institute, Princess Maxima Center for Pediatric Oncology and University Medical Center Utrecht",
+      "department": null,
+      "city": "Utrecht",
+      "country": "The Netherlands",
+      "ror": null
+    },
+    {
+      "id": "aff15",
+      "institution": "Swiss Federal Institute of Technology (EPFL)",
+      "department": "Institute of Bioengineering, School of Life Sciences",
+      "city": "Lausanne",
+      "country": "Switzerland",
+      "ror": null
+    },
+    {
+      "id": "aff16",
+      "institution": "Perelman School of Medicine, University of Pennsylvania",
+      "department": "Department of Systems Pharmacology and Translational Therapeutics",
+      "city": "Philadelphia",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff17",
+      "institution": "German Cancer Research Center (DKFZ)",
+      "department": "Division of Theoretical Bioinformatics (B080)",
+      "city": "Heidelberg",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff18",
+      "institution": "Heidelberg University",
+      "department": "Department for Bioinformatics and Functional Genomics, Institute for Pharmacy and Molecular Biotechnology (IPMB) and BioQuant",
+      "city": "Heidelberg",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff19",
+      "institution": "Ludwig Maximilian University Munich",
+      "department": "Department of Biology II",
+      "city": "Martinsried",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff20",
+      "institution": "Takara Bio United States, Inc.",
+      "department": null,
+      "city": "Mountain View",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff21",
+      "institution": "John Radcliffe Hospital, University of Oxford",
+      "department": "Oxford Centre for Neuroinflammation, Nuffield Department of Clinical Neurosciences, and MRC Human Immunology Unit, Weatherall Institute of Molecular Medicine",
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff22",
+      "institution": "University of Cambridge",
+      "department": "Wellcome Trust-MRC Cambridge Stem Cell Institute",
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff23",
+      "institution": "Massachusetts General Hospital Cancer Center",
+      "department": null,
+      "city": "Boston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff24",
+      "institution": "Newcastle University",
+      "department": "Institute of Cellular Medicine",
+      "city": "Newcastle upon Tyne",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff25",
+      "institution": "Stanford University School of Medicine",
+      "department": "Departments of Developmental Biology and of Medicine",
+      "city": "Stanford",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff26",
+      "institution": "University of Oxford",
+      "department": "Peter Medawar Building for Pathogen Research and the Translational Gastroenterology Unit, Nuffield Department of Clinical Medicine",
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff27",
+      "institution": "John Radcliffe Hospital",
+      "department": "Oxford NIHR Biomedical Research Centre",
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff28",
+      "institution": "University of California, San Francisco",
+      "department": "Eli and Edythe Broad Center of Regeneration Medicine and Stem Cell Research",
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff29",
+      "institution": "Allen Institute for Brain Science",
+      "department": null,
+      "city": "Seattle",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff30",
+      "institution": "Karolinska Institutet",
+      "department": "Laboratory for Molecular Neurobiology, Department of Medical Biochemistry and Biophysics",
+      "city": "Stockholm",
+      "country": "Sweden",
+      "ror": null
+    },
+    {
+      "id": "aff31",
+      "institution": "KTH Royal Institute of Technology",
+      "department": "Science for Life Laboratory, School of Biotechnology",
+      "city": "Stockholm",
+      "country": "Sweden",
+      "ror": null
+    },
+    {
+      "id": "aff32",
+      "institution": "Stanford University",
+      "department": "Department of Genetics",
+      "city": "Stanford",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff33",
+      "institution": "KTH Royal Institute of Technology",
+      "department": "Science for Life Laboratory, Department of Gene Technology",
+      "city": "Stockholm",
+      "country": "Sweden",
+      "ror": null
+    },
+    {
+      "id": "aff34",
+      "institution": "National Institute of Biomedical Genomics",
+      "department": null,
+      "city": "Kalyani",
+      "country": "India",
+      "ror": null
+    },
+    {
+      "id": "aff35",
+      "institution": "University of Cambridge",
+      "department": "Cancer Research UK Cambridge Institute",
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff36",
+      "institution": "Icahn School of Medicine at Mount Sinai",
+      "department": "Precision Immunology Institute",
+      "city": "New York",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff37",
+      "institution": "University of Cape Town",
+      "department": "Division of Chemical, Systems & Synthetic Biology, Institute for Infectious Disease & Molecular Medicine (IDM), Department of Integrative Biomedical Sciences, Faculty of Health Sciences",
+      "city": "Cape Town",
+      "country": "South Africa",
+      "ror": null
+    },
+    {
+      "id": "aff38",
+      "institution": "University of Groningen, University Medical Center Groningen",
+      "department": "Department of Pathology and Medical Biology, GRIAC Research Institute",
+      "city": "Groningen",
+      "country": "The Netherlands",
+      "ror": null
+    },
+    {
+      "id": "aff39",
+      "institution": "Radboud University Medical Center",
+      "department": "Department of Internal Medicine and Radboud Center for Infectious Diseases",
+      "city": "Nijmegen",
+      "country": "The Netherlands",
+      "ror": null
+    },
+    {
+      "id": "aff40",
+      "institution": "Stanford University",
+      "department": "Department of Microbiology and Immunology",
+      "city": "Stanford",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff41",
+      "institution": "Sloan Kettering Institute",
+      "department": "Computational and Systems Biology Program",
+      "city": "New York",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff42",
+      "institution": "University of Edinburgh",
+      "department": "MRC Human Genetics Unit, MRC Institute of Genetics & Molecular Medicine",
+      "city": "Edinburgh",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff43",
+      "institution": "Stanford University",
+      "department": "Department of Applied Physics and Department of Bioengineering",
+      "city": "Stanford",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff44",
+      "institution": "Chan Zuckerberg Biohub",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff45",
+      "institution": "The Babraham Institute",
+      "department": "Epigenetics Programme",
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff46",
+      "institution": "University of Cambridge",
+      "department": "Centre for Trophoblast Research",
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff47",
+      "institution": "Harvard University",
+      "department": "Center for Brain Science and Department of Molecular and Cellular Biology",
+      "city": "Cambridge",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff48",
+      "institution": "New York University",
+      "department": "Department of Biology",
+      "city": "New York",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff49",
+      "institution": "New York University",
+      "department": "New York Genome Center",
+      "city": "New York",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff50",
+      "institution": "The Netherlands Cancer Institute",
+      "department": "Division of Immunology",
+      "city": "Amsterdam",
+      "country": "The Netherlands",
+      "ror": null
+    },
+    {
+      "id": "aff51",
+      "institution": "Massachusetts Institute of Technology",
+      "department": "Institute for Medical Engineering & Science (IMES) and Department of Chemistry",
+      "city": "Cambridge",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff52",
+      "institution": "Ragon Institute of MGH, MIT and Harvard",
+      "department": null,
+      "city": "Cambridge",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff53",
+      "institution": "Weizmann Institute of Science",
+      "department": "Department of Computer Science and Department of Biomolecular Sciences",
+      "city": "Rehovot",
+      "country": "Israel",
+      "ror": null
+    },
+    {
+      "id": "aff54",
+      "institution": "University of Texas",
+      "department": "Department of Genitourinary Medical Oncology, Department of Immunology, MD Anderson Cancer Center",
+      "city": "Houston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff55",
+      "institution": "German Research Center for Environmental Health, Helmholtz Center Munich",
+      "department": "Institute of Computational Biology",
+      "city": "Neuherberg",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff56",
+      "institution": "Technical University of Munich",
+      "department": "Department of Mathematics",
+      "city": "Garching",
+      "country": "Germany",
+      "ror": null
+    },
+    {
+      "id": "aff57",
+      "institution": "KTH Royal Institute of Technology",
+      "department": "Science for Life Laboratory and Department of Proteomics",
+      "city": "Stockholm",
+      "country": "Sweden",
+      "ror": null
+    },
+    {
+      "id": "aff58",
+      "institution": "Danish Technical University",
+      "department": "Novo Nordisk Foundation Center for Biosustainability",
+      "city": "Lyngby",
+      "country": "Denmark",
+      "ror": null
+    },
+    {
+      "id": "aff59",
+      "institution": "Hubrecht Institute and University Medical Center Utrecht",
+      "department": null,
+      "city": "Utrecht",
+      "country": "The Netherlands",
+      "ror": null
+    },
+    {
+      "id": "aff60",
+      "institution": "University of California, Berkeley",
+      "department": "Department of Electrical Engineering and Computer Science and the Center for Computational Biology",
+      "city": "Berkeley",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff61",
+      "institution": "King's College London",
+      "department": "Centre for Stem Cells and Regenerative Medicine",
+      "city": "London",
+      "country": "United Kingdom",
+      "ror": null
+    },
+    {
+      "id": "aff62",
+      "institution": "University of California, San Francisco",
+      "department": "Department of Cellular & Molecular Pharmacology",
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff63",
+      "institution": "University of California, San Francisco",
+      "department": "California Institute for Quantitative Biomedical Research",
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff64",
+      "institution": "University of California, San Francisco",
+      "department": "Center for RNA Systems Biology",
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff65",
+      "institution": "California Institute of Technology",
+      "department": "Division of Biology and Biological Engineering",
+      "city": "Pasadena",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff66",
+      "institution": "Massachusetts General Hospital",
+      "department": "Center for Computational and Integrative Biology",
+      "city": "Boston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff67",
+      "institution": "Massachusetts General Hospital",
+      "department": "Gastrointestinal Unit and Center for the Study of Inflammatory Bowel Disease",
+      "city": "Boston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff68",
+      "institution": "Massachusetts Institute of Technology",
+      "department": "Center for Microbiome Informatics and Therapeutics",
+      "city": "Cambridge",
+      "country": "United States",
+      "ror": null
+    }
+  ]
 }

@@ -2,5 +2,101 @@
   "doi": "10.7554/eLife.88591",
   "title": "MotorNet, a Python toolbox for controlling differentiable biomechanical effectors with artificial neural networks",
   "abstract": "Artificial neural networks (ANNs) are a powerful class of computational models for unravelling neural mechanisms of brain function. However, for neural control of movement, they currently must be integrated with software simulating biomechanical effectors, leading to limiting impracticalities: (1) researchers must rely on two different platforms and (2) biomechanical effectors are not generally differentiable, constraining researchers to reinforcement learning algorithms despite the existence and potential biological relevance of faster training methods. To address these limitations, we developed MotorNet, an open-source Python toolbox for creating arbitrarily complex, differentiable, and biomechanically realistic effectors that can be trained on user-defined motor tasks using ANNs. MotorNet is designed to meet several goals: ease of installation, ease of use, a high-level user-friendly application programming interface, and a modular architecture to allow for flexibility in model building. MotorNet requires no dependencies outside Python, making it easy to get started with. For instance, it allows training ANNs on typically used motor control models such as a two joint, six muscle, planar arm within minutes on a typical desktop computer. MotorNet is built on PyTorch and therefore can implement any network architecture that is possible using the PyTorch framework. Consequently, it will immediately benefit from advances in artificial intelligence through PyTorch updates. Finally, it is open source, enabling users to create and share their own improvements, such as new effector and network architectures or custom task designs. MotorNet’s focus on higher-order model and task design will alleviate overhead cost to initiate computational projects for new researchers by providing a standalone, ready-to-go framework, and speed up efforts of established computational teams by enabling a focus on concepts and ideas over implementation.",
-  "pub_date": "2024-07-30"
+  "pub_date": "2024-07-30",
+  "authors": [
+    {
+      "given_names": "Olivier",
+      "surname": "Codol",
+      "orcid": "0000-0003-0796-5457",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Jonathan A",
+      "surname": "Michaels",
+      "orcid": "0000-0002-5179-3181",
+      "affiliation_ids": [
+        "aff1",
+        "aff3",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Mehrdad",
+      "surname": "Kashefi",
+      "orcid": "0000-0001-5981-5923",
+      "affiliation_ids": [
+        "aff1",
+        "aff3",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "J Andrew",
+      "surname": "Pruszynski",
+      "orcid": "0000-0003-0786-0081",
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3",
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Paul L",
+      "surname": "Gribble",
+      "orcid": "0000-0002-1368-032X",
+      "affiliation_ids": [
+        "aff1",
+        "aff2",
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 5
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Western Institute for Neuroscience, University of Western Ontario",
+      "department": null,
+      "city": "Ontario",
+      "country": "Canada",
+      "ror": "02grkyz14"
+    },
+    {
+      "id": "aff2",
+      "institution": "Department of Psychology, University of Western Ontario",
+      "department": null,
+      "city": "Ontario",
+      "country": "Canada",
+      "ror": "02grkyz14"
+    },
+    {
+      "id": "aff3",
+      "institution": "Department of Physiology & Pharmacology, Schulich School of Medicine & Dentistry, University of Western Ontario",
+      "department": null,
+      "city": "Ontario",
+      "country": "Canada",
+      "ror": "02grkyz14"
+    },
+    {
+      "id": "aff4",
+      "institution": "Robarts Research Institute, University of Western Ontario",
+      "department": null,
+      "city": "Ontario",
+      "country": "Canada",
+      "ror": "02grkyz14"
+    }
+  ]
 }

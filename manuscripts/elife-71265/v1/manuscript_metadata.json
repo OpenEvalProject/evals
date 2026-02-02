@@ -1,6 +1,204 @@
 {
   "doi": "10.7554/eLife.71265",
   "title": "Extent, impact, and mitigation of batch effects in tumor biomarker studies using tissue microarrays",
-  "abstract": "Tissue microarrays (TMAs) have been used in thousands of cancer biomarker studies. To what extent batch effects, measurement error in biomarker levels between slides, affects TMA-based studies has not been assessed systematically. We evaluated 20 protein biomarkers on 14 TMAs with prospectively collected tumor tissue from 1,448 primary prostate cancers. In half of the biomarkers, more than 10% of biomarker variance was attributable to between-TMA differences (range, 1-48%). We implemented different methods to mitigate batch effects (R package batchtma ), tested in plasmode simulation. Biomarker levels were more similar between mitigation approaches compared to uncorrected values. For some biomarkers, associations with clinical features changed substantially after addressing batch effects. Batch effects and resulting bias are not an error of an individual study but an inherent feature of TMA-based protein biomarker studies. They always need to be considered during study design and addressed analytically in studies using more than one TMA.",
-  "pub_date": "2021-12-23"
+  "abstract": "Tissue microarrays (TMAs) have been used in thousands of cancer biomarker studies. To what extent batch effects, measurement error in biomarker levels between slides, affects TMA-based studies has not been assessed systematically. We evaluated 20 protein biomarkers on 14 TMAs with prospectively collected tumor tissue from 1,448 primary prostate cancers. In half of the biomarkers, more than 10% of biomarker variance was attributable to between-TMA differences (range, 1-48%). We implemented different methods to mitigate batch effects (R package batchtma), tested in plasmode simulation. Biomarker levels were more similar between mitigation approaches compared to uncorrected values. For some biomarkers, associations with clinical features changed substantially after addressing batch effects. Batch effects and resulting bias are not an error of an individual study but an inherent feature of TMA-based protein biomarker studies. They always need to be considered during study design and addressed analytically in studies using more than one TMA.",
+  "pub_date": "2021-12-23",
+  "authors": [
+    {
+      "given_names": "Konrad H",
+      "surname": "Stopsack",
+      "orcid": "0000-0002-0722-1311",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Svitlana",
+      "surname": "Tyekucheva",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Molin",
+      "surname": "Wang",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Travis A",
+      "surname": "Gerke",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "J Bailey",
+      "surname": "Vaselkiv",
+      "orcid": "0000-0001-7702-9504",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Kathryn L.#",
+      "surname": "Penney",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Philip W",
+      "surname": "Kantoff",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Stephen P",
+      "surname": "Finn",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Michelangelo",
+      "surname": "Fiorentino",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Massimo",
+      "surname": "Loda",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Tamara L",
+      "surname": "Lotan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Giovanni",
+      "surname": "Parmigiani",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff2"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Lorelei A",
+      "surname": "Mucci",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 13
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Harvard T.H. Chan School of Public Health",
+      "department": "Department of Epidemiology",
+      "city": "Boston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff2",
+      "institution": "Dana-Farber Cancer Institute",
+      "department": "Department of Data Science",
+      "city": "Boston",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff3",
+      "institution": "Moffitt Cancer Center",
+      "department": "Department of Cancer Epidemiology",
+      "city": "Tampa",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff4",
+      "institution": "Memorial Sloan Kettering Cancer Center",
+      "department": "Department of Medicine",
+      "city": "New York",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff5",
+      "institution": "Trinity College",
+      "department": null,
+      "city": "Dublin",
+      "country": "Ireland",
+      "ror": null
+    },
+    {
+      "id": "aff6",
+      "institution": "University of Bologna",
+      "department": "Pathology Unit, Addarii Institute",
+      "city": "Bologna",
+      "country": "Italy",
+      "ror": null
+    },
+    {
+      "id": "aff7",
+      "institution": "Weill Cornell Medical Center",
+      "department": "Department of Pathology",
+      "city": "New York",
+      "country": "United States",
+      "ror": null
+    },
+    {
+      "id": "aff8",
+      "institution": "Johns Hopkins University",
+      "department": "Department of Pathology",
+      "city": "Baltimore",
+      "country": "United States",
+      "ror": null
+    }
+  ]
 }

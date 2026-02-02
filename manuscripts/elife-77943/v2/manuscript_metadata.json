@@ -1,6 +1,403 @@
 {
   "doi": "10.7554/eLife.77943",
   "title": "Early immune markers of clinical, virological, and immunological outcomes in patients with COVID-19: a multi-omics study",
-  "abstract": "The great majority of severe acute respiratory syndrome-related coronavirus 2 (SARS-CoV-2) infections are mild and uncomplicated, but some individuals with initially mild COVID-19 progressively develop more severe symptoms. Furthermore, there is substantial heterogeneity in SARS-CoV-2-specific memory immune responses following infection. There remains a critical need to identify host immune biomarkers predictive of clinical and immunological outcomes in SARS-CoV-2-infected patients. Leveraging longitudinal samples and data from a clinical trial (N=108) in SARS-CoV-2-infected outpatients, we used host proteomics and transcriptomics to characterize the trajectory of the immune response in COVID-19 patients. We characterized the association between early immune markers and subsequent disease progression, control of viral shedding, and SARS-CoV-2-specific T cell and antibody responses measured up to 7 months after enrollment. We further compared associations between early immune markers and subsequent T cell and antibody responses following natural infection with those following mRNA vaccination. We developed machine-learning models to predict patient outcomes and validated the predictive model using data from 54 individuals enrolled in an independent clinical trial. We identify early immune signatures, including plasma RIG-I levels, early IFN signaling, and related cytokines (CXCL10, MCP1, MCP-2, and MCP-3) associated with subsequent disease progression, control of viral shedding, and the SARS-CoV-2-specific T cell and antibody response measured up to 7 months after enrollment. We found that several biomarkers for immunological outcomes are shared between individuals receiving BNT162b2 (Pfizer–BioNTech) vaccine and COVID-19 patients. Finally, we demonstrate that machine-learning models using 2–7 plasma protein markers measured early within the course of infection are able to accurately predict disease progression, T cell memory, and the antibody response post-infection in a second, independent dataset. Early immune signatures following infection can accurately predict clinical and immunological outcomes in outpatients with COVID-19 using validated machine-learning models. Support for the study was provided from National Institute of Health/National Institute of Allergy and Infectious Diseases (NIH/NIAID) (U01 AI150741-01S1 and T32-AI052073), the Stanford’s Innovative Medicines Accelerator, National Institutes of Health/National Institute on Drug Abuse (NIH/NIDA) DP1DA046089, and anonymous donors to Stanford University. Peginterferon lambda provided by Eiger BioPharmaceuticals.",
-  "pub_date": "2022-10-14"
+  "abstract": "Background:The great majority of severe acute respiratory syndrome-related coronavirus 2 (SARS-CoV-2) infections are mild and uncomplicated, but some individuals with initially mild COVID-19 progressively develop more severe symptoms. Furthermore, there is substantial heterogeneity in SARS-CoV-2-specific memory immune responses following infection. There remains a critical need to identify host immune biomarkers predictive of clinical and immunological outcomes in SARS-CoV-2-infected patients.Methods:Leveraging longitudinal samples and data from a clinical trial (N=108) in SARS-CoV-2-infected outpatients, we used host proteomics and transcriptomics to characterize the trajectory of the immune response in COVID-19 patients. We characterized the association between early immune markers and subsequent disease progression, control of viral shedding, and SARS-CoV-2-specific T cell and antibody responses measured up to 7 months after enrollment. We further compared associations between early immune markers and subsequent T cell and antibody responses following natural infection with those following mRNA vaccination. We developed machine-learning models to predict patient outcomes and validated the predictive model using data from 54 individuals enrolled in an independent clinical trial.Results:We identify early immune signatures, including plasma RIG-I levels, early IFN signaling, and related cytokines (CXCL10, MCP1, MCP-2, and MCP-3) associated with subsequent disease progression, control of viral shedding, and the SARS-CoV-2-specific T cell and antibody response measured up to 7 months after enrollment. We found that several biomarkers for immunological outcomes are shared between individuals receiving BNT162b2 (Pfizer–BioNTech) vaccine and COVID-19 patients. Finally, we demonstrate that machine-learning models using 2–7 plasma protein markers measured early within the course of infection are able to accurately predict disease progression, T cell memory, and the antibody response post-infection in a second, independent dataset.Conclusions:Early immune signatures following infection can accurately predict clinical and immunological outcomes in outpatients with COVID-19 using validated machine-learning models.Funding:Support for the study was provided from National Institute of Health/National Institute of Allergy and Infectious Diseases (NIH/NIAID) (U01 AI150741-01S1 and T32-AI052073), the Stanford’s Innovative Medicines Accelerator, National Institutes of Health/National Institute on Drug Abuse (NIH/NIDA) DP1DA046089, and anonymous donors to Stanford University. Peginterferon lambda provided by Eiger BioPharmaceuticals.",
+  "pub_date": "2022-10-14",
+  "authors": [
+    {
+      "given_names": "Zicheng",
+      "surname": "Hu",
+      "orcid": "0000-0002-4168-1725",
+      "affiliation_ids": [
+        "aff1",
+        "aff2"
+      ],
+      "corresponding": true,
+      "position": 1
+    },
+    {
+      "given_names": "Kattria",
+      "surname": "van der Ploeg",
+      "orcid": "0000-0002-3183-3190",
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 2
+    },
+    {
+      "given_names": "Saborni",
+      "surname": "Chakraborty",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 3
+    },
+    {
+      "given_names": "Prabhu S",
+      "surname": "Arunachalam",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff4"
+      ],
+      "corresponding": false,
+      "position": 4
+    },
+    {
+      "given_names": "Diego AM",
+      "surname": "Mori",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 5
+    },
+    {
+      "given_names": "Karen B",
+      "surname": "Jacobson",
+      "orcid": "0000-0003-3050-4595",
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 6
+    },
+    {
+      "given_names": "Hector",
+      "surname": "Bonilla",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 7
+    },
+    {
+      "given_names": "Julie",
+      "surname": "Parsonnet",
+      "orcid": "0000-0001-7342-5366",
+      "affiliation_ids": [
+        "aff3",
+        "aff5"
+      ],
+      "corresponding": false,
+      "position": 8
+    },
+    {
+      "given_names": "Jason R",
+      "surname": "Andrews",
+      "orcid": "0000-0002-5967-251X",
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 9
+    },
+    {
+      "given_names": "Marisa",
+      "surname": "Holubar",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 10
+    },
+    {
+      "given_names": "Aruna",
+      "surname": "Subramanian",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 11
+    },
+    {
+      "given_names": "Chaitan",
+      "surname": "Khosla",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff6"
+      ],
+      "corresponding": false,
+      "position": 12
+    },
+    {
+      "given_names": "Yvonne",
+      "surname": "Maldonado",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff7"
+      ],
+      "corresponding": false,
+      "position": 13
+    },
+    {
+      "given_names": "Haley",
+      "surname": "Hedlin",
+      "orcid": "0000-0002-0757-7959",
+      "affiliation_ids": [
+        "aff8"
+      ],
+      "corresponding": false,
+      "position": 14
+    },
+    {
+      "given_names": "Lauren",
+      "surname": "de la Parte",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 15
+    },
+    {
+      "given_names": "Kathleen",
+      "surname": "Press",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 16
+    },
+    {
+      "given_names": "Maureen",
+      "surname": "Ty",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3"
+      ],
+      "corresponding": false,
+      "position": 17
+    },
+    {
+      "given_names": "Gene S",
+      "surname": "Tan",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff9",
+        "aff10"
+      ],
+      "corresponding": false,
+      "position": 18
+    },
+    {
+      "given_names": "Catherine",
+      "surname": "Blish",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3",
+        "aff11"
+      ],
+      "corresponding": false,
+      "position": 19
+    },
+    {
+      "given_names": "Saki",
+      "surname": "Takahashi",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 20
+    },
+    {
+      "given_names": "Isabel",
+      "surname": "Rodriguez-Barraquer",
+      "orcid": "0000-0001-6784-1021",
+      "affiliation_ids": [
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 21
+    },
+    {
+      "given_names": "Bryan",
+      "surname": "Greenhouse",
+      "orcid": "0000-0003-0287-9111",
+      "affiliation_ids": [
+        "aff11",
+        "aff12"
+      ],
+      "corresponding": false,
+      "position": 22
+    },
+    {
+      "given_names": "Atul J",
+      "surname": "Butte",
+      "orcid": "0000-0002-7433-2740",
+      "affiliation_ids": [
+        "aff1"
+      ],
+      "corresponding": false,
+      "position": 23
+    },
+    {
+      "given_names": "Upinder",
+      "surname": "Singh",
+      "orcid": "0000-0003-0630-0306",
+      "affiliation_ids": [
+        "aff3",
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 24
+    },
+    {
+      "given_names": "Bali",
+      "surname": "Pulendran",
+      "orcid": "0000-0001-6517-4333",
+      "affiliation_ids": [
+        "aff4",
+        "aff13",
+        "aff14"
+      ],
+      "corresponding": false,
+      "position": 25
+    },
+    {
+      "given_names": "Taia T",
+      "surname": "Wang",
+      "orcid": null,
+      "affiliation_ids": [
+        "aff3",
+        "aff11",
+        "aff13"
+      ],
+      "corresponding": false,
+      "position": 26
+    },
+    {
+      "given_names": "Prasanna",
+      "surname": "Jagannathan",
+      "orcid": "0000-0001-6305-758X",
+      "affiliation_ids": [
+        "aff3",
+        "aff11"
+      ],
+      "corresponding": true,
+      "position": 27
+    }
+  ],
+  "affiliations": [
+    {
+      "id": "aff1",
+      "institution": "Bakar Computational Health Sciences Institute, University of California",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": "043mz5j54"
+    },
+    {
+      "id": "aff2",
+      "institution": "Department of Microbiology and Immunology, University of California",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": "043mz5j54"
+    },
+    {
+      "id": "aff3",
+      "institution": "Department of Medicine, Stanford University",
+      "department": null,
+      "city": "Stanford",
+      "country": "United States",
+      "ror": "00f54p054"
+    },
+    {
+      "id": "aff4",
+      "institution": "Institute for Immunity, Transplantation, and Infection, Stanford University",
+      "department": null,
+      "city": "Stanford",
+      "country": "United States",
+      "ror": "00f54p054"
+    },
+    {
+      "id": "aff5",
+      "institution": "Department of Epidemiology and Population Health, Stanford University",
+      "department": null,
+      "city": "Stanford",
+      "country": "United States",
+      "ror": "00f54p054"
+    },
+    {
+      "id": "aff6",
+      "institution": "ChEM-H, Stanford University",
+      "department": null,
+      "city": "Stanford",
+      "country": "United States",
+      "ror": "00f54p054"
+    },
+    {
+      "id": "aff7",
+      "institution": "Department of Pediatrics, Stanford University",
+      "department": null,
+      "city": "Stanford",
+      "country": "United States",
+      "ror": "00f54p054"
+    },
+    {
+      "id": "aff8",
+      "institution": "Quantitative Sciences Unit, Stanford University",
+      "department": null,
+      "city": "Stanford",
+      "country": "United States",
+      "ror": "00f54p054"
+    },
+    {
+      "id": "aff9",
+      "institution": "J. Craig Venter Institute",
+      "department": null,
+      "city": "San Diego",
+      "country": "United States",
+      "ror": "049r1ts75"
+    },
+    {
+      "id": "aff10",
+      "institution": "Division of Infectious Diseases, Department of Medicine, University of California",
+      "department": null,
+      "city": "San Diego",
+      "country": "United States",
+      "ror": "0168r3w48"
+    },
+    {
+      "id": "aff11",
+      "institution": "Chan Zuckerberg Biohub",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": "032h4fk17"
+    },
+    {
+      "id": "aff12",
+      "institution": "Department of Medicine, University of California",
+      "department": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "ror": "043mz5j54"
+    },
+    {
+      "id": "aff13",
+      "institution": "Department of Microbiology and Immunology, Stanford University",
+      "department": null,
+      "city": "Stanford",
+      "country": "United States",
+      "ror": "00f54p054"
+    },
+    {
+      "id": "aff14",
+      "institution": "Department of Pathology, Stanford University",
+      "department": null,
+      "city": "Stanford",
+      "country": "United States",
+      "ror": "00f54p054"
+    }
+  ]
 }
