@@ -8,7 +8,7 @@ This repo processes 16,000+ eLife manuscripts through the complete OpenEval work
 
 1. **Organization** – XML manuscripts organized by article ID with version support  
 2. **Conversion** – JATS XML converted to Markdown format with peer reviews extracted using [`jats`](https://github.com/OpenEvalProject/jats)  
-3. **CLLM Analysis** – Claims extracted and evaluated by both LLM and peer reviewers using [`CLLM`](https://github.com/OpenEvalProject/cllm)   
+3. **CLLM Analysis** – Claims extracted and evaluated by both LLM and peer reviewers (for paper with available peer reviews) using [`CLLM`](https://github.com/OpenEvalProject/cllm)   
 4. **Database Export** – Results formatted for database import  
 
 ## Repository Structure
