@@ -1,14 +1,14 @@
 # eLife Manuscript Evaluations
 
-This repository contains processed eLife manuscripts with CLLM (Claim LLM) evaluations for scientific claim verification.
+This repository contains the full eLife corpus processed with OpenEval, along with the code used to process the entire corpus.
 
 ## Overview
 
-This repo processes 18,455+ eLife manuscripts through a complete workflow:
+This repo processes 16,000+ eLife manuscripts through the complete OpenEval workflow:
 
 1. **Organization** – XML manuscripts organized by article ID with version support  
-2. **Conversion** – JATS XML converted to Markdown format with peer reviews extracted  
-3. **CLLM Analysis** – Claims extracted and evaluated by both LLM and peer reviewers  
+2. **Conversion** – JATS XML converted to Markdown format with peer reviews extracted using [`jats`](https://github.com/OpenEvalProject/jats)  
+3. **CLLM Analysis** – Claims extracted and evaluated by both LLM and peer reviewers using [`CLLM`](https://github.com/OpenEvalProject/cllm)   
 4. **Database Export** – Results formatted for database import  
 
 ## Repository Structure
