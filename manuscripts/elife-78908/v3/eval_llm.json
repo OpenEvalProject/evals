@@ -1,0 +1,187 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C13",
+      "C14",
+      "C15",
+      "C81",
+      "C87",
+      "C88"
+    ],
+    "result": "Isolated P. carolinus fireflies exhibit no intrinsic periodicity in their flash bursts, with interburst intervals varying randomly from a few seconds to several minutes. This was demonstrated through controlled experiments where individual fireflies were placed in visually isolated enclosures and observed for extended periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7, C13, C14, C15, C81, C87, and C88 collectively provide strong experimental evidence from controlled observations of 10 individual fireflies over durations of 5-85 minutes, showing irregular interburst intervals. The data is presented in Figure 1B-D and is consistent with prior work (Sarfati et al., 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C6",
+      "C11",
+      "C12",
+      "C16",
+      "C89",
+      "C90"
+    ],
+    "result": "P. carolinus fireflies in natural swarms exhibit synchronized, periodic flash bursts with a well-defined period of approximately 12 seconds. As the number of fireflies in controlled enclosures increases from 1 to 20, regularity in interburst intervals emerges, with collective burst flashing appearing at approximately 15 fireflies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C6, C11, C12, C16, C89, and C90 are supported by both field observations of natural swarms and controlled experiments with varying numbers of fireflies (N=5, 10, 15, 20). The experimental data in Figures 1D-E and 2 demonstrate the transition from irregular to regular flashing as group size increases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C24",
+      "C25",
+      "C26",
+      "C32",
+      "C70"
+    ],
+    "result": "The authors propose a theoretical mechanism where fireflies instantly trigger all others to flash upon their own flashing, and each firefly waits a random time drawn from a distribution before flashing again. This mechanism predicts that as the number of fireflies increases, the interburst interval converges to the minimum value set by physiological constraints, guaranteeing emergent periodicity and synchrony for any input distribution shape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C24, C25, C26, C32, and C70 describe the core theoretical principle and its mathematical consequences. The theoretical framework is rigorously derived in the Methods section with mathematical proofs showing convergence to a Dirac Delta function at the minimum interburst interval as N\u2192\u221e. The principle is validated by comparison with experimental data in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C54"
+    ],
+    "result": "The analytic theoretical framework, using only the experimentally measured single firefly interburst distribution as input with no fitting parameters, quantitatively predicts the sharpening of interburst distributions and decreasing variance as the number of fireflies increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C54 are strongly supported by Figure 3, which shows excellent agreement between parameter-free theoretical predictions and experimental data for N=5, 10, 15, and 20 fireflies. The standard deviation predictions (Figure 3F) match experimental trends quantitatively without any parameter fitting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34",
+      "C39",
+      "C40",
+      "C43",
+      "C48",
+      "C98"
+    ],
+    "result": "An agent-based computational model incorporating a tunable coupling parameter \u03b2 successfully reproduces experimental phenomenology and exhibits a transition to group periodicity as coupling strength increases. The model reduces to the analytic framework in the high coupling limit and requires incorporation of the theoretical insights to reproduce emergent periodicity from non-oscillating individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33, C34, C39, C40, C43, C48, and C98 describe the computational approach and its validation. Figure 5 demonstrates the transition to periodicity with increasing \u03b2, and Figure 3B-E shows quantitative agreement with experimental data using fitted \u03b2 values (0.16, 0.16, 0.20, 0.30 for N=5, 10, 15, 20). The claim that traditional models fail without theoretical insights (C33) is stated but not rigorously demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C63",
+      "C65",
+      "C67",
+      "C68"
+    ],
+    "result": "The synchronization mechanism follows a decentralized follow-the-leader pattern where non-oscillatory individuals use coupling to produce emergent oscillatory behavior, converging on the fastest frequency in the repertoire, which is itself an emergent phenomenon formed from collective minimum interburst intervals rather than any individual's intrinsic frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C63, C65, C67, and C68 provide a coherent interpretation of the mechanism that is consistent with the theoretical framework and experimental observations. The distinction from traditional oscillator models is well-supported by the data showing non-periodic isolated individuals and the mathematical framework demonstrating convergence to minimum interburst intervals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "The fitting landscape for the coupling parameter \u03b2 is flat, implying that several \u03b2 values could achieve satisfactory fits to the experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by Figure 7, which shows the Kolmogorov-Smirnov test results across \u03b2 values. The relatively flat regions in the fitting curves indicate that multiple \u03b2 values provide statistically acceptable fits, though the authors acknowledge they lack an explanation for the specific optimal values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The theoretical prediction that the smallest interburst interval always occurs in large swarms conflicts with observations that natural swarms do not exhibit the 5-second periods seen in some isolated firefly data. The authors propose several explanations including behavioral mode switching in confined environments, swarm buffering against perturbations, and limited connectivity in natural swarms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71, C72, C73, C74, C75, C76, and C77 identify a discrepancy between theory and observation and propose speculative explanations. While the discrepancy is clearly documented (C71, C72), the proposed explanations (C73, C74, C75) are speculative without direct experimental validation. The claim about limited connectivity (C76) is supported by citation to previous work, but the consequences (C77) remain theoretical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C62",
+      "C64",
+      "C66"
+    ],
+    "result": "The P. carolinus system differs fundamentally from traditional synchronization models (Kuramoto, integrate-and-fire, elliptic bursters) which assume individuals are intrinsically oscillatory. Traditional models address how oscillators with different periods synchronize, whereas P. carolinus involves non-oscillatory individuals achieving periodicity through coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C10, C49, C50, C51, C52, C62, C64, and C66 accurately characterize existing models based on well-cited literature and correctly identify the conceptual distinction between traditional approaches and the P. carolinus system. The characterization is consistent with the experimental evidence showing non-periodic isolated individuals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C78"
+    ],
+    "result": "The theoretical framework has limitations when the number of fireflies increases indefinitely or visual obstacles are present, as finite time delays in perception could shift interburst intervals. Future experiments using artificial LED entrainment could test and extend the framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C61, and C78 appropriately identify limitations of the current framework and propose reasonable future directions. These are logical extensions based on the assumptions of the model (instantaneous perception, all-to-all connectivity) and represent appropriate scientific speculation about model boundaries and experimental tests.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C83",
+      "C84",
+      "C85",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Experimental data were collected during 10 nights in June 2020 in Great Smoky Mountains National Park using 360\u00b0 cameras at 30-60 fps. Flashes were detected by intensity thresholding and bursts identified as connected components of flashes <2s apart. A small subset of data was corrected after acceptance, but all analyses were repeated and findings remained unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C83, C84, C85, C91, C92, and C93 describe the experimental methodology and data handling. The methods are clearly documented, and the transparency about data corrections (C91-C93) with confirmation that findings are unaffected strengthens confidence in the results. Both original and corrected datasets are publicly available.",
+    "result_type": "MINOR"
+  }
+]
